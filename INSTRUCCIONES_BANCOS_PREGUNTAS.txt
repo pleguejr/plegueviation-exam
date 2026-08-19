@@ -1,17 +1,65 @@
 ================================================================================
            PLEGUEVIATION EXAM - GUÍA OFICIAL PARA LA CREACIÓN,
-       AMPLIACIÓN, REVISIÓN DE BANCOS Y USO EN DISPOSITIVOS MÓVILES
+   AMPLIACIÓN, SINCRONIZACIÓN AUTOMÁTICA (GITHUB + VERCEL) Y USO EN MÓVILES
 ================================================================================
 
 Este documento contiene las instrucciones exactas para:
-1. Generar, ampliar y validar bancos de preguntas con NotebookLM o Gemini.
-2. Evitar duplicados y mantener la numeración correlativa.
-3. Instalar y usar la aplicación en tu iPhone o iPad (100% Offline).
-4. Actualizar el banco de preguntas en todos tus dispositivos cuando lo amplíes.
+1. Generar y ampliar bancos de preguntas con NotebookLM o Gemini sin duplicados.
+2. Cómo funciona el ciclo automático de sincronización (GitHub + Vercel).
+3. Cómo actualizar tus dispositivos con un solo clic o a través del asistente.
+4. Instalar y usar la aplicación en tu iPhone o iPad (100% Offline).
 
 
 --------------------------------------------------------------------------------
-1. FLUJO GENERAL DE CREACIÓN DESDE CERO (PASO A PASO)
+1. CÓMO FUNCIONA EL CICLO ACTUAL DE ACTUALIZACIÓN (LOCAL -> GITHUB -> VERCEL -> IPAD)
+--------------------------------------------------------------------------------
+
+El sistema está configurado para que la actualización sea en cadena y automática:
+
+  [TUS PREGUNTAS JSON]
+          │
+          ▼
+  1. Guardar en 'banks/...'
+          │
+          ▼
+  2. Sincronizar con GitHub (git push)
+          │
+          ▼
+  3. Vercel detecta el cambio automáticamente en la nube (~20 segundos)
+          │
+          ▼
+  4. Tu iPad / iPhone / PC se actualiza solo en cuanto abre la app con internet
+     y guarda las preguntas para seguir usándolas 100% OFFLINE en modo avión.
+
+
+--------------------------------------------------------------------------------
+2. ¿EL "GIT PUSH" ES AUTOMÁTICO O TIENES QUE HACERLO TÚ?
+--------------------------------------------------------------------------------
+
+Depende de cómo estés trabajando en ese momento:
+
+CASO A: Si estás trabajando conmigo en este chat:
+  - ¡Es 100% AUTOMÁTICO!
+  - Cada vez que me pidas crear preguntas, modificar el diseño o importar un lote,
+    yo mismo ejecuto los comandos 'build_banks.py', 'git add', 'git commit'
+    y 'git push' por ti. No tienes que tocar ninguna consola.
+
+CASO B: Si creas los archivos JSON tú por tu cuenta en tu PC:
+  - Tienes un acceso directo de 1 solo clic:
+    Haz doble clic en: 'actualizar_banco.bat'
+  - Este archivo hace automáticamente:
+    1. Recompila todo el catálogo de preguntas.
+    2. Hace 'git add', 'git commit' y 'git push' a tu GitHub privado.
+    3. En 20 segundos tu Vercel y tu iPad estarán actualizados.
+
+CASO C: Si estás en movilidad en tu iPad o iPhone (sin PC):
+  - En la propia app del iPad, pulsa el botón "Importar IA", pega el JSON
+    generado por NotebookLM y pulsa "Validar e Importar".
+  - Se guardará al instante en la memoria de tu iPad sin necesidad de PC ni GitHub.
+
+
+--------------------------------------------------------------------------------
+3. FLUJO GENERAL DE CREACIÓN DESDE CERO (PASO A PASO)
 --------------------------------------------------------------------------------
 
 PASO 1: Subir manuales a NotebookLM (o adjuntar en Gemini)
@@ -20,29 +68,21 @@ PASO 1: Subir manuales a NotebookLM (o adjuntar en Gemini)
   - Sube los PDFs correspondientes de tus manuales.
 
 PASO 2: Solicitar el lote de preguntas a la IA
-  - Copia la "PLANTILLA DE PROMPT MAESTRO" (ver Sección 4 de este documento).
+  - Copia la "PLANTILLA DE PROMPT MAESTRO" (ver Sección 5 de este documento).
   - Pega el prompt en el chat de NotebookLM / Gemini indicando el tema y capítulo.
   - Ejemplo de solicitud:
     "Analiza el MOA Capítulo 8 (Gestión de Combustible) y genera 10 preguntas
      con subject_id: 'binter_moa' e IDs del 'BIN-MOA-001' al 'BIN-MOA-010'."
 
-PASO 3: Importar a la aplicación (Elige tu método preferido)
-  - MÉTODO A (Desde la App Web - El más rápido):
-      1. Abre la aplicación (doble clic en 'start_exam.bat').
-      2. Clic en el botón superior "Importar IA".
-      3. Pega el JSON devuelto por la IA y pulsa "Validar & Guardar Reactivos".
-  
-  - MÉTODO B (Guardando archivo en disco):
-      1. Guarda el JSON en la carpeta correspondiente dentro de 'banks/'.
-         (Ejemplo: 'banks/binter-ops/moa/lote_01.json').
-      2. Ejecuta: .\.venv\Scripts\python.exe cli/bin/build_banks.py
+PASO 3: Guardar y Sincronizar
+  - Guarda el JSON en la carpeta correspondiente dentro de 'banks/'.
+    (Ejemplo: 'banks/binter-ops/moa/lote_01.json').
+  - Haz doble clic en 'actualizar_banco.bat' (o pídemelo a mí en el chat).
 
 
 --------------------------------------------------------------------------------
-2. CÓMO AMPLIAR PREGUNTAS DE UN TEMA / SUBCAPÍTULO EXISTENTE
+4. CÓMO AMPLIAR PREGUNTAS DE UN TEMA EXISTENTE (SIN REPETIR CONTENIDO)
 --------------------------------------------------------------------------------
-
-Cuando ya tengas preguntas de un tema y quieras añadir más sin repetir contenido:
 
 REGLA 1: Usa numeración correlativa en los IDs
   Si ya tienes creadas las preguntas BIN-MOA-001 a BIN-MOA-010:
@@ -57,37 +97,14 @@ REGLA 2: Pide a la IA escenarios específicos o casos avanzados
    - Usar IDs del BIN-MOA-011 al BIN-MOA-020 y subject_id: 'binter_moa'."
 
 REGLA 3: Organización de archivos en disco (Multi-archivo)
-  El sistema permite tener múltiples archivos .json dentro de una misma carpeta.
-  El compilador leerá y unirá todos automáticamente. Ejemplo:
+  El sistema permite tener múltiples archivos .json dentro de una misma carpeta:
     banks/binter-ops/moa/combustible_basico.json
     banks/binter-ops/moa/combustible_ampliacion_01.json
     banks/binter-ops/moa/combustible_casos_especiales.json
 
 
 --------------------------------------------------------------------------------
-3. CÓMO REVISAR Y VERIFICAR LA INTEGRIDAD DE LOS BANCOS
---------------------------------------------------------------------------------
-
-1. Verificación automática contra el esquema:
-   Ejecuta en tu terminal de PowerShell:
-   .\.venv\Scripts\python.exe .antigravity/skills/bank_validator.py banks cli/schema/question.schema.json
-
-   El validador comprobará automáticamente:
-   - Que todos los IDs sean únicos y no existan duplicados.
-   - Que cada pregunta tenga exactamente 1 opción con "is_correct": true.
-   - Que existan los campos obligatorios (stem, options, explanation, references).
-
-2. Revisión de estadísticas y rendimiento en la App Web:
-   - Entra en la pestaña "Questions" o "Reports" dentro de la App Web.
-   - Usa las sub-pestañas:
-     * "Difficult": Reactivos con fallos frecuentes o alta dificultad técnica.
-     * "Search": Buscador general por texto o ID.
-     * "Flagged": Preguntas que guardaste con la bandera/favorito.
-     * "No Vistas": Preguntas aún pendientes (para asegurar 100% de cobertura).
-
-
---------------------------------------------------------------------------------
-4. PLANTILLA DE PROMPT MAESTRO PARA COPIAR Y PEGAR EN NOTEBOOKLM / GEMINI
+5. PLANTILLA DE PROMPT MAESTRO PARA NOTEBOOKLM / GEMINI
 --------------------------------------------------------------------------------
 
 [COPIA DESDE AQUÍ]
@@ -139,7 +156,7 @@ INSTRUCCIÓN ESPECÍFICA PARA ESTE LOTE:
 
 
 --------------------------------------------------------------------------------
-5. TABLA DE REFERENCIA DE SUBJECT_ID, PREFIJOS Y CARPETAS
+6. TABLA DE REFERENCIA DE SUBJECT_ID, PREFIJOS Y CARPETAS
 --------------------------------------------------------------------------------
 
 CATEGORÍA: BINTER OPS
@@ -208,66 +225,14 @@ Preguntas Habituales Examen | cmd_habituales         | CMD-HAB-   | banks/comman
 
 
 --------------------------------------------------------------------------------
-6. CÓMO USAR E INSTALAR LA APLICACIÓN EN IPHONE E IPAD (100% OFFLINE)
+7. ARCHIVOS EJECUTABLES EN TU ORDENADOR (1 SOLO CLIC)
 --------------------------------------------------------------------------------
 
-La aplicación es una PWA (Progressive Web App) que se instala en iPad/iPhone como
-una app nativa sin necesidad de cables ni App Store.
+1. 'start_exam.bat':
+   Inicia el servidor local para practicar en el PC o en la red Wi-Fi de casa.
 
-PASO A PASO:
-1. Asegúrate de que el iPhone/iPad esté conectado a la MISMA RED WI-FI que tu PC.
-2. Inicia el servidor en tu PC haciendo doble clic en:
-   'start_exam.bat'
-3. En la consola negra de tu PC verás una línea con la dirección de red:
-   [iPad / iPhone]: http://192.168.X.X:3000  (ej: http://192.168.1.35:3000)
-4. En tu iPhone o iPad, abre SAFARI y escribe esa dirección.
-5. Pulsa el botón "Compartir" de Safari (el icono de un cuadrado con una flecha hacia arriba).
-6. Desplázate hacia abajo y selecciona "Añadir a la pantalla de inicio" (Add to Home Screen).
-7. Pulsa "Añadir".
-
-¡LISTO!
-Se creará un icono de Plegueviation Exam en tu pantalla de inicio.
-Una vez abierta por primera vez, todos los bancos quedan guardados en la memoria interna
-(IndexedDB de tu iPad), por lo que podrás usarla en MODO AVIÓN o cuando apagues el PC.
-
-
---------------------------------------------------------------------------------
-7. CÓMO ACTUALIZAR EL BANCO DE PREGUNTAS EN TUS DISPOSITIVOS (IPHONE/IPAD/PC)
---------------------------------------------------------------------------------
-
-Cuando crees más preguntas y el banco crezca, tienes dos formas sencillas de actualizar:
-
-OPCIÓN A: Si guardaste las preguntas en el PC (en la carpeta 'banks/'):
-1. Inicia 'start_exam.bat' en el PC (esto compila automáticamente las nuevas preguntas).
-2. Con el iPad/iPhone conectado al mismo Wi-Fi del PC:
-   - Abre la aplicación en tu iPad o desliza la pantalla hacia abajo para refrescar.
-   - La app detectará automáticamente el catálogo actualizado y descargará las nuevas
-     preguntas a la memoria interna de tu iPad.
-   - A partir de ese momento, ya puedes apagar el PC o activar el Modo Avión.
-
-OPCIÓN B: Si generas las preguntas directamente desde el iPad / iPhone (Sin encender el PC):
-1. En tu iPad/iPhone, entra en NotebookLM o Gemini en Safari y genera el lote de preguntas.
-2. Copia el bloque de código JSON devuelto por la IA.
-3. Abre tu app Plegueviation Exam en el iPad.
-4. Toca el botón superior "Importar IA" (o el icono circular con estrellas).
-5. Pega el JSON y pulsa "Validar e Importar".
-6. Las preguntas se guardarán inmediatamente en la memoria de tu iPad sin necesidad de PC.
-
-
---------------------------------------------------------------------------------
-8. COMANDOS ÚTILES DE CONSOLA (POWERSHELL EN PC)
---------------------------------------------------------------------------------
-
-1. Iniciar la App Web PWA y servidor para móviles:
-   .\.venv\Scripts\python.exe cli/bin/serve.py
-
-2. Recompilar todos los bancos tras añadir archivos .json en disco:
-   .\.venv\Scripts\python.exe cli/bin/build_banks.py
-
-3. Importar un archivo nuevo con autoubicación por subject_id:
-   .\.venv\Scripts\python.exe cli/bin/import_bank.py ruta/a/tu_archivo.json
-
-4. Validar todos los bancos contra el esquema oficial:
-   .\.venv\Scripts\python.exe .antigravity/skills/bank_validator.py banks cli/schema/question.schema.json
+2. 'actualizar_banco.bat':
+   Compila todas las preguntas de 'banks/' y hace 'git push' a GitHub y Vercel
+   automáticamente para que tu iPad/iPhone se actualice en la nube.
 
 ================================================================================
