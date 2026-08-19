@@ -7,16 +7,21 @@ import { ExamResults } from './components/ExamResults';
 import { QuestionExplorer } from './components/QuestionExplorer';
 import { ReportsScreen } from './components/ReportsScreen';
 import { BankImporterModal } from './components/BankImporterModal';
+import { SyncModal } from './components/SyncModal';
 import { Question, BankManifest, QuestionStats, ExamConfig, ExamSession, ExamMode, ExamSelectionStrategy } from './types';
 import { loadAllQuestions, loadManifest, generateExamQuestions, randomizeQuestionOptions } from './services/questionsService';
 import { getAllStatsMap, saveExamSession, recordAnswerStat, exportFullBackup, restoreFullBackup, db } from './services/db';
+import { getStoredSyncPin, syncWithCloud } from './services/sync';
 import { 
   User, 
   RotateCcw, 
   Trash2,
   ArrowLeft,
   Download,
-  Upload
+  Upload,
+  Cloud,
+  RefreshCw,
+  Key
 } from 'lucide-react';
 
 export function App() {
@@ -28,6 +33,7 @@ export function App() {
   // Modals state
   const [isConfigModalOpen, setIsConfigModalOpen] = useState(false);
   const [isImporterOpen, setIsImporterOpen] = useState(false);
+  const [isSyncModalOpen, setIsSyncModalOpen] = useState(false);
   const [modalDefaults, setModalDefaults] = useState<{
     category?: string;
     mode?: ExamMode;
@@ -48,8 +54,34 @@ export function App() {
     setStatsMap(sm || {});
   };
 
+  // Carga inicial y Sincronización Automática en segundo plano
   useEffect(() => {
     refreshData();
+
+    // Si hay un PIN configurado, sincronizar automáticamente con la nube
+    const pin = getStoredSyncPin();
+    if (pin && navigator.onLine) {
+      syncWithCloud(pin).then((res) => {
+        if (res.success) {
+          refreshData();
+        }
+      });
+    }
+
+    // Al reconectarse a internet, sincronizar automáticamente
+    const handleOnline = () => {
+      const activePin = getStoredSyncPin();
+      if (activePin) {
+        syncWithCloud(activePin).then((res) => {
+          if (res.success) {
+            refreshData();
+          }
+        });
+      }
+    };
+
+    window.addEventListener('online', handleOnline);
+    return () => window.removeEventListener('online', handleOnline);
   }, []);
 
   // Register service worker for offline PWA
@@ -177,6 +209,12 @@ export function App() {
     await saveExamSession(completedSession);
     await refreshData();
     setCurrentView('results');
+
+    // Sincronización automática a la nube al finalizar examen si hay PIN configurado
+    const activePin = getStoredSyncPin();
+    if (activePin && navigator.onLine) {
+      syncWithCloud(activePin).catch((err) => console.warn('Background sync on exam finish:', err));
+    }
   };
 
   const handleRestartSameExam = () => {
@@ -234,6 +272,7 @@ export function App() {
         onSelectTab={(tab) => setCurrentView(tab)}
         onOpenNewExam={() => handleOpenConfigModal()}
         onOpenImporter={() => setIsImporterOpen(true)}
+        onOpenSyncModal={() => setIsSyncModalOpen(true)}
       />
 
       {/* Main Content Area */}
@@ -302,14 +341,63 @@ export function App() {
                 </div>
               </div>
 
-              {/* Copia de Seguridad y Sincronización Google Drive / Archivo */}
+              {/* Sincronización Automática en la Nube con PIN */}
+              <div className="p-5 rounded-2xl bg-gradient-to-br from-[#0c1c3d] to-[#091224] border border-sky-500/40 space-y-4 shadow-lg">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2.5 text-sky-400 font-bold text-sm">
+                    <Cloud className="w-5 h-5" />
+                    <span>Sincronización en la Nube Multi-Dispositivo (iPad, iPhone, PC)</span>
+                  </div>
+                  {getStoredSyncPin() && (
+                    <span className="text-[11px] font-mono px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-bold">
+                      PIN: {getStoredSyncPin()}
+                    </span>
+                  )}
+                </div>
+
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Enlaza tus dispositivos con un único PIN personal. Tus simulacros, exámenes completados y preguntas falladas se sincronizarán automáticamente en segundo plano cuando estés conectado a internet o cuando recuperes la conexión.
+                </p>
+
+                <div className="flex flex-wrap items-center gap-3 pt-1">
+                  <button
+                    onClick={() => setIsSyncModalOpen(true)}
+                    className="px-4 py-2.5 rounded-xl text-xs font-bold bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white shadow-glow-sky transition-all active:scale-95 flex items-center gap-2"
+                  >
+                    <Key className="w-4 h-4" />
+                    <span>{getStoredSyncPin() ? 'Gestionar Enlace de Dispositivos' : 'Configurar PIN de Sincronización'}</span>
+                  </button>
+
+                  {getStoredSyncPin() && (
+                    <button
+                      onClick={async () => {
+                        const pin = getStoredSyncPin();
+                        if (!pin) return;
+                        const res = await syncWithCloud(pin);
+                        if (res.success) {
+                          await refreshData();
+                          alert('✅ ¡Sincronizado con éxito con la nube!');
+                        } else {
+                          alert(`❌ ${res.message}`);
+                        }
+                      }}
+                      className="px-4 py-2.5 rounded-xl text-xs font-bold bg-slate-800 hover:bg-slate-700 text-sky-300 border border-slate-700 transition-all active:scale-95 flex items-center gap-2"
+                    >
+                      <RefreshCw className="w-4 h-4 text-sky-400" />
+                      <span>Sincronizar Ahora</span>
+                    </button>
+                  )}
+                </div>
+              </div>
+
+              {/* Copia de Seguridad y Sincronización Manual Archivo JSON */}
               <div className="p-5 rounded-2xl bg-[#091224] border border-sky-500/30 space-y-4">
                 <div className="flex items-center gap-2 text-sky-400 font-bold text-sm">
                   <Download className="w-5 h-5" />
-                  <span>Copia de Seguridad & Sincronización (Google Drive / Archivo)</span>
+                  <span>Copia de Seguridad Manual (Archivo JSON / Google Drive)</span>
                 </div>
                 <p className="text-xs text-slate-300 leading-relaxed">
-                  Exporta tu historial de exámenes, aciertos, fallos y preguntas guardadas en un archivo JSON para tener una copia de respaldo en tu Google Drive o transferir tus datos a otro dispositivo (iPad, iPhone o PC).
+                  Exporta una copia de seguridad en un archivo JSON local si deseas guardarlo manualmente en tus carpetas de Google Drive.
                 </p>
 
                 <div className="flex flex-wrap items-center gap-3 pt-1">
@@ -325,15 +413,15 @@ export function App() {
                       a.click();
                       URL.revokeObjectURL(url);
                     }}
-                    className="px-4 py-2.5 rounded-xl text-xs font-bold bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white shadow-glow-sky transition-all active:scale-95 flex items-center gap-2"
+                    className="px-4 py-2.5 rounded-xl text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-all active:scale-95 flex items-center gap-2"
                   >
                     <Download className="w-4 h-4" />
-                    <span>Descargar Copia de Seguridad (.json)</span>
+                    <span>Descargar Backup (.json)</span>
                   </button>
 
                   <label className="px-4 py-2.5 rounded-xl text-xs font-bold bg-cockpit-surface hover:bg-slate-800 text-sky-300 border border-sky-500/30 cursor-pointer transition-all active:scale-95 flex items-center gap-2">
                     <Upload className="w-4 h-4 text-emerald-400" />
-                    <span>Restaurar Copia desde Archivo</span>
+                    <span>Restaurar Backup (.json)</span>
                     <input
                       type="file"
                       accept=".json"
@@ -413,8 +501,17 @@ export function App() {
           refreshData();
         }}
       />
+
+      <SyncModal
+        isOpen={isSyncModalOpen}
+        onClose={() => setIsSyncModalOpen(false)}
+        onSyncComplete={() => {
+          refreshData();
+        }}
+      />
     </div>
   );
 }
 
 export default App;
+
