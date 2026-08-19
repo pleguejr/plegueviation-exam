@@ -1,0 +1,424 @@
+[
+  {
+    "id": "C172N-SYS-001",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Independencia del Sistema de Encendido por Magnetos",
+    "stem": "¿Por qué el sistema de encendido del motor Lycoming O-320-H2AD continúa funcionando aunque se corte el Master Switch o se descargue por completo la batería en vuelo?",
+    "options": [
+      { "id": "A", "text": "Porque las dos magnetos son generadores autónomos de alta tensión accionados mecánicamente por el motor, totalmente independientes de la batería y del alternador", "is_correct": true },
+      { "id": "B", "text": "Porque disponen de una batería secundaria de litio oculta en el panel de fusibles", "is_correct": false },
+      { "id": "C", "text": "Porque la energía se obtiene de la bomba de vacío mecánica", "is_correct": false },
+      { "id": "D", "text": "Porque las bujías funcionan por autoencendido diésel al calentarse", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "El sistema de encendido consta de dos magnetos accionadas por el engranaje del motor. Cada magneto genera su propia corriente de alta tensión para sus 4 bujías asociadas sin requerir ningún suministro eléctrico del avión. Cortar el Master Switch no detiene el motor.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Ignition System (Page 7-9)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "C172N-SYS-002",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Arquitectura del Sistema Eléctrico",
+    "stem": "¿Cómo está constituido el sistema eléctrico básico de la Cessna 172N (modelos 1978 y posteriores)?",
+    "options": [
+      { "id": "A", "text": "Sistema de 28 Voltios DC alimentado por un alternador accionado por correa de 28V (60A) y una batería de 24 Voltios (14 Ah)", "is_correct": true },
+      { "id": "B", "text": "Sistema de 12 Voltios DC con generador de dinamo de 30A", "is_correct": false },
+      { "id": "C", "text": "Sistema de corriente alterna trifásica a 115V / 400Hz", "is_correct": false },
+      { "id": "D", "text": "Sistema de 48 Voltios con doble alternador en paralelo", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "A partir del modelo 1978, la Cessna 172N incorporó el sistema eléctrico moderno de 28 VDC con alternador de 60 Amperios y batería de 24V situada en el cortafuegos, protegido por disyuntores de pulsar/tirar (Circuit Breakers).",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Electrical System (Page 7-16)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172N-SYS-003",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Funcionamiento del Interruptor Maestro Doble (Split Master Switch)",
+    "stem": "En el interruptor maestro basculante doble (Split Master Switch), ¿qué circuito controla cada una de las dos mitades independientes?",
+    "options": [
+      { "id": "A", "text": "El lado izquierdo (ALT) controla el campo del alternador y el lado derecho (BAT) conecta la batería al bus principal", "is_correct": true },
+      { "id": "B", "text": "El lado izquierdo controla las luces y el lado derecho la radio", "is_correct": false },
+      { "id": "C", "text": "El lado izquierdo controla la bomba de combustible y el lado derecho las magnetos", "is_correct": false },
+      { "id": "D", "text": "El lado izquierdo activa el cebador y el lado derecho la calefacción de pitot", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "El Master Switch es un interruptor doble partido: la mitad derecha 'BAT' conecta la batería al sistema eléctrico principal y la mitad izquierda 'ALT' conecta el circuito de excitación del alternador, permitiendo aislar el alternador en caso de fallo eléctrico sin desconectar la batería.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Master Switch (Page 7-16)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172N-SYS-004",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Indicación del Amperímetro (Ammeter)",
+    "stem": "¿Qué mide exactamente el amperímetro del panel de instrumentos en la Cessna 172N?",
+    "options": [
+      { "id": "A", "text": "Mide la corriente neta de carga (hacia la batería) o de descarga (desde la batería hacia los sistemas)", "is_correct": true },
+      { "id": "B", "text": "Mide la producción total de corriente que genera el alternador", "is_correct": false },
+      { "id": "C", "text": "Mide el voltaje instantáneo de las bujías de encendido", "is_correct": false },
+      { "id": "D", "text": "Mide la resistencia interna del motor de arranque", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "El amperímetro está intercalado en la línea entre la batería y el bus principal. Con el alternador operativo marca una pequeña deflexión positiva (tasa de recarga de batería tras el arranque); si marca cero o deflexión negativa, la batería está suministrando corriente al sistema por fallo de generación.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Ammeter"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172N-SYS-005",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Sistema de Flaps Ranurados Accionados Eléctricamente",
+    "stem": "¿Cómo funciona el mecanismo de accionamiento de los flaps de ala en la Cessna 172N?",
+    "options": [
+      { "id": "A", "text": "Flaps de tipo ranurado (Single-slot) accionados por un motor eléctrico reversible situado en el plano derecho, transmitido mediante cables y poleas con selector de 0° a 40°", "is_correct": true },
+      { "id": "B", "text": "Flaps hidráulicos accionados por una palanca manual de bombeo entre los asientos", "is_correct": false },
+      { "id": "C", "text": "Flaps neumáticos alimentados por la bomba de vacío", "is_correct": false },
+      { "id": "D", "text": "Flaps de accionamiento mecánico manual directo por palanca de 3 posiciones", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "Los flaps de la C172N son de tipo ranurado único accionados por un motor eléctrico de 28V instalado en el interior de la semiala derecha, sincronizados mediante cables de acero a ambas alas con selector graduado en el panel.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Wing Flap System (Page 7-8)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172N-SYS-006",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Sistema de Alimentación por Carburador de Flotador",
+    "stem": "¿Qué modelo de carburador equipa el motor Lycoming O-320-H2AD y qué dispositivo incorpora para evitar formación de hielo?",
+    "options": [
+      { "id": "A", "text": "Carburador de flotador de tiro ascendente Marvel-Schebler MA-4SPA equipado con una válvula de calefacción de aire alternativo caliente tomado de la camisa del silenciador (Carb Heat)", "is_correct": true },
+      { "id": "B", "text": "Inyección continua Bendix RSA-5 con bomba de combustible rotativa", "is_correct": false },
+      { "id": "C", "text": "Carburador de membrana tipo diafragma con inyección de alcohol", "is_correct": false },
+      { "id": "D", "text": "Inyección monopunto FADEC electrónica", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "El motor monta un carburador de flotador convencional Marvel-Schebler MA-4SPA bajo el motor. Al tirar del mando Carb Heat, una compuerta desvía el aire de admisión haciéndolo pasar por una camisa que rodea el tubo de escape para descongelar el venturi.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Carburetor & Carburetor Heat"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172N-SYS-007",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Válvula Selectora de Combustible y Líneas de Venteo",
+    "stem": "En el sistema de combustible de la C172N, ¿cómo se ventilan los depósitos alares para evitar el vacío que impediría el flujo por gravedad?",
+    "options": [
+      { "id": "A", "text": "A través de un tubo de venteo exterior protegido detrás del montante del ala izquierda y una línea de intercomunicación de gases entre ambos tanques", "is_correct": true },
+      { "id": "B", "text": "A través de tapones de combustible con orificios abiertos en ambas alas sin conducto interior", "is_correct": false },
+      { "id": "C", "text": "Mediante una válvula de presurización eléctrica en el fuselaje", "is_correct": false },
+      { "id": "D", "text": "Los depósitos son flexibles autosellantes y no requieren venteo exterior", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "El venteo principal se realiza a través del tubo de ventilación del tanque izquierdo bajo el montante. Un conducto que conecta la parte superior de ambos tanques asegura la ecualización de presiones para que fluya por gravedad.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Fuel System (Page 7-10)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "C172N-SYS-008",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Dirección de Rueda de Morro en Tierra (Nose Gear Steering)",
+    "stem": "¿Cómo se orienta la rueda de morro en tierra durante el rodaje en la Cessna 172N?",
+    "options": [
+      { "id": "A", "text": "Mediante varillas mecánicas y un muelle amortiguador (bungee) conectado a los pedales del timón (hasta 10° a cada lado) y hasta 30° con frenado diferencial", "is_correct": true },
+      { "id": "B", "text": "Mediante un volante director hidráulico (tiller) exclusivo de la mano izquierda", "is_correct": false },
+      { "id": "C", "text": "Es una rueda loca 360° no orientable que gira exclusivamente por frenos", "is_correct": false },
+      { "id": "D", "text": "Mediante servomotor eléctrico gobernado por los cuernos de mando", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "La pata de morro tiene conexión elástica (bungee) a los pedales, permitiendo una orientación de 10° a izquierda/derecha con pedales solos y hasta 30° cuando se combina con el freno de disco diferencial de ese lado.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Nose Gear Steering (Page 7-7)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172N-SYS-009",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Sistema de Calefacción de Cabina y Desempañado (Cabin Heat)",
+    "stem": "¿Cómo se calienta el aire para la calefacción y el desempañado del parabrisas en la Cessna 172N?",
+    "options": [
+      { "id": "A", "text": "Haciendo pasar aire exterior limpio a través de una camisa metálica sellada que rodea el colector de escape del motor (Muffler Shroud)", "is_correct": true },
+      { "id": "B", "text": "A través de un intercambiador de calor de refrigerante líquido de motor", "is_correct": false },
+      { "id": "C", "text": "Mediante resistencias eléctricas de alta potencia alimentadas por el alternador", "is_correct": false },
+      { "id": "D", "text": "Mediante aire comprimido procedente de la bomba de vacío", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "Al ser un motor refrigerado por aire, la calefacción se obtiene canalizando aire ambiente por la camisa envolvente del silenciador de escape. Por ello, una fisura en el silenciador puede provocar entrada de monóxido de carbono (CO) en cabina.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Cabin Heating, Ventilating & Defrosting (Page 7-18)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172N-SYS-010",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Avisador de Pérdida Neumático (Stall Warning Horn)",
+    "stem": "¿Cómo funciona el sistema avisador de pérdida (Stall Warning) en la Cessna 172N?",
+    "options": [
+      { "id": "A", "text": "Sistema neumático accionado por succión a través de una ranura calibrada en el borde de ataque del ala izquierda, que hace sonar una bocina acústica entre 5 y 10 nudos antes de la pérdida", "is_correct": true },
+      { "id": "B", "text": "Paleta eléctrica conectada a un zumbador electrónico en el panel", "is_correct": false },
+      { "id": "C", "text": "Empujador de palanca (Stick Pusher) hidráulico", "is_correct": false },
+      { "id": "D", "text": "Sensor óptico láser de ángulo de ataque en el morro", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "La C172N utiliza un avisador neumático pasivo (no requiere electricidad): al aumentar el ángulo de ataque, el punto de remanso se desplaza, creando una baja presión en la ranura alar izquierda que aspira aire a través de la bocina de cabina 5-10 nudos antes de la entrada en pérdida.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Stall Warning System"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172N-SYS-011",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Sistema de Vaciado de Combustible y Colector",
+    "stem": "¿Cuántos puntos de drenaje de combustible accesibles para el piloto existen en la Cessna 172N estándar?",
+    "options": [
+      { "id": "A", "text": "3 puntos de purga: uno bajo el tanque alar izquierdo, uno bajo el tanque alar derecho y el drenaje principal del colector/filtro de morro (Fuel Strainer)", "is_correct": true },
+      { "id": "B", "text": "Solamente 1 punto de purga central bajo la panza", "is_correct": false },
+      { "id": "C", "text": "5 puntos de purga en cada semiala", "is_correct": false },
+      { "id": "D", "text": "No dispone de drenajes accesibles en prevuelo", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "La C172N estándar dispone de 3 drenajes: un drenaje rápido bajo cada tanque alar de gravedad y un drenaje de vaso de decantación (gascolator) accesible mediante el tirador de morro en el compartimento motor.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Fuel System",
+        "C-172N Mini Checklist - Preflight (Pág. 4)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "C172N-SYS-012",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Alimentación del Coordinador de Viraje (Turn Coordinator)",
+    "stem": "En el cuadro de instrumentos estándar de la Cessna 172N, ¿qué fuente de energía alimenta el giróscopo del Coordinador de Viraje (Turn Coordinator)?",
+    "options": [
+      { "id": "A", "text": "Energía eléctrica DC procedente del bus eléctrico principal (independiente de la bomba de vacío neumática)", "is_correct": true },
+      { "id": "B", "text": "La bomba de vacío mecánica de motor", "is_correct": false },
+      { "id": "C", "text": "Presión dinámica procedente del tubo pitot", "is_correct": false },
+      { "id": "D", "text": "Un tubo venturi exterior de reserva", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "Para asegurar redundancia giroscópica ante un fallo de la bomba de vacío (que mueve horizonte y direccional), el giróscopo del Coordinador de Viraje está alimentado por un motor eléctrico de 28V (marcado 'ELEC' en la esfera).",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Turn Coordinator"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172N-SYS-013",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Mandos de Vuelo y Compensador de Profundidad",
+    "stem": "¿Cómo se transmiten los movimientos desde los mandos de cabina (volante y pedales) hacia las superficies de control primarias en la Cessna 172N?",
+    "options": [
+      { "id": "A", "text": "Mediante cables de acero aeronáutico galvanizado, poleas, sectores y varillas de empuje directo (Push-pull rods)", "is_correct": true },
+      { "id": "B", "text": "Mediante sistema de control fly-by-wire con actuadores electrohidráulicos", "is_correct": false },
+      { "id": "C", "text": "Mediante servomandos hidráulicos de circuito cerrado", "is_correct": false },
+      { "id": "D", "text": "Mediante tubos de torsión neumáticos de alta presión", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "Los mandos de vuelo de la Cessna 172N son 100% mecánicos manuales tradicionales accionados mediante sistemas de cableado de acero continuo sobre poleas de baquelita hacia los alerones, timón de profundidad y timón de dirección.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Flight Control System (Page 7-7)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "C172N-SYS-014",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Bomba de Vacío Neumático de Motor (Engine-Driven Vacuum Pump)",
+    "stem": "¿Qué tipo de bomba de vacío equipa el motor de la Cessna 172N y qué instrumentos alimenta?",
+    "options": [
+      { "id": "A", "text": "Bomba de paletas secas de carbono accionada por engranajes del motor, regulada por una válvula de alivio para proporcionar 4.5 a 5.4 inHg al Horizonte Artificial y Direccional", "is_correct": true },
+      { "id": "B", "text": "Bomba hidráulica de pistones axiales que alimenta los tres giróscopos de vuelo", "is_correct": false },
+      { "id": "C", "text": "Compresor eléctrico de diafragma montado bajo el panel de radio", "is_correct": false },
+      { "id": "D", "text": "Tubo venturi supersónico instalado en el borde de ataque", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "Monta una bomba de vacío de paletas de carbono secas en la carcasa de accesorios del motor Lycoming, con válvula reguladora que mantiene la succión en el arco verde para los giróscopos de actitud y rumbo.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Vacuum System (Page 7-22)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172N-SYS-015",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Sistema de Calefacción del Tubo Pitot (Pitot Heat)",
+    "stem": "¿Qué protege el sistema de calefacción de pitot (Pitot Heat) y qué barra eléctrica lo alimenta?",
+    "options": [
+      { "id": "A", "text": "Un elemento calefactor de resistencia eléctrica de 28V integrado en el tubo pitot del ala izquierda para evitar la formación de hielo en la toma dinámica de velocidad, alimentado por el bus eléctrico primario y protegido por disyuntor", "is_correct": true },
+      { "id": "B", "text": "Un conducto de aire caliente tomado del silenciador de escape", "is_correct": false },
+      { "id": "C", "text": "Una resistencia alimentada directamente por las magnetos del motor", "is_correct": false },
+      { "id": "D", "text": "El sistema pitot no dispone de calefacción en la Cessna 172N", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "El Pitot Heat es una resistencia eléctrica en el tubo pitot bajo el ala izquierda, accionada por el interruptor basculante PITOT HEAT del panel para garantizar la lectura de velocidad indicada en vuelo en lluvia o frío.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Pitot-Static System (Page 7-21)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172N-SYS-016",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Cebador Manual de Inyección a los Cilindros (Engine Primer)",
+    "stem": "En el motor Lycoming O-320-H2AD, ¿a dónde inyecta directamente el combustible la bomba manual del cebador (Primer)?",
+    "options": [
+      { "id": "A", "text": "Inyecta combustible pulverizado directamente en las tomas de admisión de los cilindros (típicamente 3 cilindros) para facilitar la explosión inicial en frío", "is_correct": true },
+      { "id": "B", "text": "Inyecta combustible directamente en la cuba del carburador", "is_correct": false },
+      { "id": "C", "text": "Inyecta combustible en el colector de escape caliente", "is_correct": false },
+      { "id": "D", "text": "Inyecta combustible en el cárter de aceite del motor", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "La bomba del Primer toma combustible filtrado y lo envía a través de tuberías delgadas directamente a los puertos de admisión de los cilindros, proporcionando una mezcla altamente volátil que no depende de la velocidad de paso de aire por el carburador.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Fuel System / Engine Starting"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172N-SYS-017",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Compensador de Dirección Ajustable en Tierra",
+    "stem": "¿Cómo se ajusta el compensador del timón de dirección (Rudder Trim) en la Cessna 172N estándar?",
+    "options": [
+      { "id": "A", "text": "Mediante una aleta metálica doblable en el borde de salida del timón de dirección ajustable únicamente en tierra por el piloto o mecánico", "is_correct": true },
+      { "id": "B", "text": "Mediante una rueda de compensador de timón de dirección en la consola central en cabina", "is_correct": false },
+      { "id": "C", "text": "Mediante servo eléctrico gobernado por un pulsador en el volante", "is_correct": false },
+      { "id": "D", "text": "El timón de dirección no dispone de ninguna aleta compensadora", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "A diferencia del compensador de profundidad (que se acciona en vuelo con rueda de cabina), el timón de dirección de la C172N estándar dispone de una aleta de compensación fija ajustable doblando ligeramente la chapa en tierra para compensar la guiñada a potencia de crucero.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Flight Controls (Page 7-7)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172N-SYS-018",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Tren Principal en Ballesta de Acero Elástico",
+    "stem": "¿Qué tipo de suspensión y material utilizan las patas principales del tren de aterrizaje de la Cessna 172N?",
+    "options": [
+      { "id": "A", "text": "Ballestas de acero forjado elástico al cromo-vanadio sin amortiguadores oleoneumáticos", "is_correct": true },
+      { "id": "B", "text": "Puntales telescópicos con amortiguador de aceite y nitrógeno a presión", "is_correct": false },
+      { "id": "C", "text": "Cordones elásticos de goma (bungees) como los aviones clásicos", "is_correct": false },
+      { "id": "D", "text": "Brazos basculantes de fibra de carbono", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "El tren principal de la C172N está formado por dos ballestas de acero cónico de alta resistencia elástica ('Land-O-Matic') que absorben los impactos de aterrizaje por flexión mecánica del acero, requiriendo un mantenimiento mínimo.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Landing Gear"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "C172N-SYS-019",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Disyuntores Térmicos (Circuit Breakers)",
+    "stem": "En caso de que un disyuntor (Circuit Breaker) salte en vuelo por sobrecarga térmica, ¿cuál es la regla de seguridad estipulada en el POH?",
+    "options": [
+      { "id": "A", "text": "Esperar de 2 a 3 minutos para que se enfríe y rearmarlo UNA sola vez; si vuelve a saltar, no rearmar y dar por averiado el circuito", "is_correct": true },
+      { "id": "B", "text": "Mantenerlo presionado con el dedo a la fuerza durante todo el vuelo", "is_correct": false },
+      { "id": "C", "text": "Rearmarlo repetidamente hasta que se mantenga dentro", "is_correct": false },
+      { "id": "D", "text": "Cortar el interruptor de magnetos de inmediato", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "Los disyuntores protegen el cableado contra incendios por cortocircuito. Se permite un único rearmado tras enfriarse; si salta por segunda vez, existe un cortocircuito permanente y forzarlo causaría fuego en cabina.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Circuit Breakers & Fuses",
+        "C-172N Mini Checklist (Pág. 17)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172N-SYS-020",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Luces Estroboscópicas y Faros Anticolisión",
+    "stem": "¿Cuándo deben apagarse las luces estroboscópicas de alta intensidad (Strobe Lights) según las buenas prácticas operacionales de Cessna?",
+    "options": [
+      { "id": "A", "text": "Durante el rodaje en tierra cerca de otras aeronaves y cuando se vuela dentro de nubes, niebla o bruma densa para evitar desorientación espacial por retrodispersión de destellos en la cabina", "is_correct": true },
+      { "id": "B", "text": "Deben permanecer encendidas siempre que el motor esté en marcha sin excepción", "is_correct": false },
+      { "id": "C", "text": "Solo se encienden en caso de fallo de motor en vuelo", "is_correct": false },
+      { "id": "D", "text": "Deben apagarse en todos los despegues nocturnos", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "Las luces estroboscópicas no deben usarse durante el rodaje para no deslumbrar a otros pilotos. Asimismo, al volar en IMC o niebla densa, los destellos reflejados en las gotas de agua pueden provocar ilusión óptica y desorientación espacial.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Exterior Lighting (Page 7-17)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  }
+]

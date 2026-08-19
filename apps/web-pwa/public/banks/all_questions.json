@@ -1,5 +1,3757 @@
 [
   {
+    "id": "C172N-EMG-001",
+    "subject_id": "c172n_emergency",
+    "learning_objective": "POH Sección 3 - Velocidad de Mejor Planeo (Best Glide Speed)",
+    "stem": "En caso de fallo de motor en vuelo en la Cessna 172N a MTOW (2300 lbs) en configuración limpia (Flaps UP), ¿cuál es la velocidad de mejor planeo recomendada por el POH?",
+    "options": [
+      {
+        "id": "A",
+        "text": "65 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "75 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "55 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "80 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La Sección 3 (Emergency Procedures) del POH de la Cessna 172N establece que la velocidad de mejor planeo (Maximum Glide Speed) en configuración limpia con hélice en molinete a 2300 lbs es de 65 KIAS, proporcionando una relación de planeo aproximada de 9:1 (1.5 NM por cada 1000 pies de altura).",
+      "references": [
+        "Cessna 172N POH - Section 3: Emergency Procedures - Engine Failure in Flight (Page 3-3)",
+        "C-172N Mini Checklist - Forced Landing (Pág. 13)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "C172N-EMG-002",
+    "subject_id": "c172n_emergency",
+    "learning_objective": "POH Sección 3 - Fallo de Motor en Carrera de Despegue",
+    "stem": "Si se produce un fallo de motor durante la carrera de despegue antes de ir al aire, ¿cuál es la secuencia correcta e inmediata de acciones según la lista de emergencia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Throttle: IDLE; Frenos: APLICAR; Flaps: RETRAER; Mezcla: CORTADA (Idle cut-off); Ignition: OFF; Master: OFF",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Aplicar Carburetor Heat ON y continuar el despegue con flaps a 10°",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cortar el Master Switch inmediatamente antes de tocar los frenos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Girar la válvula selectora a la posición LEFT",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La secuencia inmediata ante fallo en carrera de despegue es: 1) Gases a ralentí (IDLE), 2) Frenar con firmeza, 3) Retraer flaps para aumentar el peso sobre las ruedas y maximizar el frenado, 4) Cortar mezcla, 5) Cortar contacto (Ignition OFF) y 6) Cortar batería (Master OFF) una vez detenida la aeronave.",
+      "references": [
+        "Cessna 172N POH - Section 3: Emergency Procedures - Engine Failure During Takeoff Roll",
+        "C-172N Mini Checklist (Pág. 13)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "C172N-EMG-003",
+    "subject_id": "c172n_emergency",
+    "learning_objective": "POH Sección 3 - Fallo Inmediatamente Tras el Despegue (Sectores de Toma)",
+    "stem": "Ante un fallo de motor inmediatamente después del despegue entre 300 y 400 ft AGL, ¿cuál es la pauta operacional estricta de pilotaje?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mantener 65 KIAS (flaps UP) o 60 KIAS (flaps DOWN) y buscar aterrizaje de emergencia recto hacia adelante en un sector máximo de 45° a cada lado del eje de pista, prohibiendo virajes de retorno",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Efectuar un viraje de 180° hacia la pista manteniendo 80 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Accionar el estárter de inmediato mientras se mantiene la actitud de ascenso",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Extender flaps a 40° inmediatamente a 300 pies",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "A baja cota tras el despegue (300-400 ft AGL) no hay margen de altura ni energía para regresar a la pista de salida. Se debe mantener la velocidad de planeo y tomar tierra en el terreno más despejado dentro de un cono de 45° al frente.",
+      "references": [
+        "Cessna 172N POH - Section 3: Emergency Procedures - Engine Failure After Takeoff",
+        "Airpull C-172N Manual de Maniobras (Pág. 54)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "C172N-EMG-004",
+    "subject_id": "c172n_emergency",
+    "learning_objective": "POH Sección 3 - Intento de Reencendido de Motor en Vuelo (Restart)",
+    "stem": "¿Cuáles son los pasos inmediatos para intentar el reencendido de motor en vuelo si se dispone de altitud suficiente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1) Airspeed: 65 KIAS; 2) Carb Heat: ON; 3) Fuel Selector: BOTH; 4) Mixture: RICH; 5) Ignition: BOTH (o START si hélice parada); 6) Primer: IN and LOCKED",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "1) Airspeed: 100 KIAS; 2) Carb Heat: COLD; 3) Fuel Selector: OFF; 4) Mixture: IDLE CUT-OFF",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "1) Master Switch: OFF; 2) Ignition: OFF; 3) Primer: Bombear 5 veces en vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "1) Seleccionar tanque LEFT; 2) Acelerar a Vno (128 KIAS); 3) Flaps: 10°",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El procedimiento estándar de reencendido es: establecer planeo a 65 KIAS, conectar calefacción de carburador (Carb Heat ON) por si la causa fuera engelamiento de carburador, asegurar combustible en BOTH, mezcla rica, comprobar magnetos en BOTH (o accionar estárter si la hélice se detuvo) y verificar cebador bloqueado.",
+      "references": [
+        "Cessna 172N POH - Section 3: Emergency Procedures - Engine Failure During Flight",
+        "C-172N Mini Checklist (Pág. 13)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "C172N-EMG-005",
+    "subject_id": "c172n_emergency",
+    "learning_objective": "POH Sección 3 - Aterrizaje Forzoso sin Potencia (Secuencia de Cabina)",
+    "stem": "Durante la aproximación final a una toma de emergencia en campo no preparado sin potencia de motor, ¿cuándo se deben desblocar las puertas de cabina (Doors Unlatch)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antes de la toma de contacto (Prior to touchdown), para evitar que la deformación estructural del fuselaje bloquee las puertas impidiendo la evacuación",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Solo una vez que el avión esté completamente detenido",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Inmediatamente al fallar el motor a 5000 pies",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Las puertas deben permanecer trabadas con cerrojo hasta que lleguen los bomberos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El paso 7 del procedimiento 'Forced Landing' del POH exige expresamente 'Doors - UNLATCH PRIOR TO TOUCHDOWN'. Si el fuselaje sufre una deceleración brusca o torsión al tocar tierra, las puertas podrían atascarse en sus marcos si están cerradas.",
+      "references": [
+        "Cessna 172N POH - Section 3: Emergency Procedures - Forced Landings (Page 3-11)",
+        "C-172N Mini Checklist (Pág. 14)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "C172N-EMG-006",
+    "subject_id": "c172n_emergency",
+    "learning_objective": "POH Sección 3 - Fuego de Motor Durante la Puesta en Marcha en Tierra",
+    "stem": "Si se produce fuego en el carburador/motor durante la puesta en marcha en tierra (Start on ground), ¿cuál es la primera acción recomendada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Continuar accionando el motor de arranque (Cranking) para intentar arrancar el motor y que el flujo de inducción aspire las llamas hacia los cilindros",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cortar inmediatamente el contacto y abandonar el avión corriendo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cebar el motor con el Primer tres veces adicionales",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Poner la calefacción de carburador en ON",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La primera acción es seguir accionando el estárter (Cranking). Si el motor arranca, se mantiene a 1700 RPM unos instantes para aspirar el combustible encendido al interior de los cilindros y luego se apaga. Si no arranca tras unos segundos, se corta mezcla, combustible, contacto y se utiliza el extintor.",
+      "references": [
+        "Cessna 172N POH - Section 3: Emergency Procedures - Fires During Start",
+        "C-172N Mini Checklist (Pág. 16)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "C172N-EMG-007",
+    "subject_id": "c172n_emergency",
+    "learning_objective": "POH Sección 3 - Fuego de Motor en Vuelo (Engine Fire in Flight)",
+    "stem": "Ante la confirmación de fuego de motor en vuelo en la Cessna 172N, ¿cuál es la velocidad indicada recomendada por el POH para intentar extinguir las llamas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "100 KIAS (y si el fuego no se extingue, incrementar la velocidad de planeo para apagarlo por flujo de aire antes del aterrizaje)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "65 KIAS estrictos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Vno (128 KIAS)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "50 KIAS con flaps a 40°",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Tras cortar mezcla (Idle cut-off), combustible (OFF), batería (Master OFF) y cerrar calefacción/ventilación, el POH indica establecer 100 KIAS. Si el fuego persiste, se puede aumentar la velocidad para crear una corriente de aire incombustible y sofocar el fuego.",
+      "references": [
+        "Cessna 172N POH - Section 3: Emergency Procedures - Engine Fire in Flight",
+        "C-172N Mini Checklist (Pág. 16)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "C172N-EMG-008",
+    "subject_id": "c172n_emergency",
+    "learning_objective": "POH Sección 3 - Fuego Eléctrico en Cabina (Electrical Fire in Flight)",
+    "stem": "Ante la presencia de humo denso y olor a aislamiento eléctrico quemado en cabina, ¿cuáles son los tres primeros pasos de la lista de emergencia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1) Master Switch: OFF; 2) Avionics Power Switch: OFF; 3) Todos los demás interruptores: OFF; 4) Ventilación y calefacción: CERRADAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "1) Abrir todas las ventanillas; 2) Cortar la mezcla; 3) Seleccionar flaps a 40°",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "1) Encender la luz de aterrizaje; 2) Poner magnetos en OFF; 3) Tirar del Primer",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "1) Resetear todos los Circuit Breakers empujándolos hacia dentro",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para sofocar un fuego eléctrico se desenergiza la totalidad de la red: Master OFF, Avionics OFF y resto de interruptores en OFF, cerrando ventilación para aislar el oxígeno. El motor continuará funcionando de forma autónoma gracias a las magnetos.",
+      "references": [
+        "Cessna 172N POH - Section 3: Emergency Procedures - Electrical Fire in Flight",
+        "C-172N Mini Checklist (Pág. 17)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "C172N-EMG-009",
+    "subject_id": "c172n_emergency",
+    "learning_objective": "POH Sección 3 - Fuego en el Ala (Wing Fire)",
+    "stem": "Si se declara un fuego en el ala (Wing Fire - luces de navegación, cableado o tanque), ¿qué maniobra de vuelo recomienda el manual para proteger la cabina y el combustible restante?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apagar luces de navegación, estrobos y pitot heat; efectuar un resbale (sideslip) manteniendo el ala incendiada hacia el lado de sotavento para alejar las llamas del fuselaje y del tanque",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Efectuar una barrena intencionada hacia el lado del ala con fuego",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Acelerar a Vne para desprender el ala dañada",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Apagar inmediatamente las magnetos del motor en vuelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El POH instruye apagar interruptores eléctricos del ala y realizar un resbale aerodinámico coordinado (sideslip) de modo que el flujo de aire sople las llamas hacia afuera, lejos de la cabina y del depósito de combustible.",
+      "references": [
+        "Cessna 172N POH - Section 3: Emergency Procedures - Wing Fire",
+        "C-172N Mini Checklist (Pág. 18)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "C172N-EMG-010",
+    "subject_id": "c172n_emergency",
+    "learning_objective": "POH Sección 3 - Amperímetro Marca Tasa de Carga Excesiva (Excessive Charge Rate)",
+    "stem": "Si en vuelo el amperímetro se desvía a fondo de escala positivo indicando una sobrecarga continua de la batería, ¿qué acción exige el procedimiento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alternator switch: OFF; Tirar del Circuit Breaker del alternador; Desconectar cargas eléctricas no esenciales y terminar el vuelo aterrizando lo antes posible",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Encender todos los equipos eléctricos para consumir el exceso de corriente",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Apagar la mitad izquierda de las magnetos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Acelerar el motor a 2700 RPM para equilibrar la tensión",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Una tasa excesiva de carga en el amperímetro significa que el regulador de voltaje ha fallado, sobrecargando la batería y pudiendo generar ebullición del electrolito y gases explosivos. Se debe apagar el alternador (OFF), abrir su breaker y aterrizar.",
+      "references": [
+        "Cessna 172N POH - Section 3: Emergency Procedures - Ammeter Shows Excessive Rate of Charge",
+        "C-172N Mini Checklist (Pág. 19)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "C172N-EMG-011",
+    "subject_id": "c172n_emergency",
+    "learning_objective": "POH Sección 3 - Luz de Bajo Voltaje (Low-Voltage Light Illuminates)",
+    "stem": "Si la luz 'LOW VOLTAGE' se enciende en vuelo y el amperímetro marca cero o descarga, ¿cuál es el procedimiento de rearmado permitido?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apagar interruptor de aviónica (Avionics OFF), reciclar el Master Switch (OFF y luego ON) para rearmar el relé de sobrevoltaje; si la luz permanece encendida, alternador a OFF y aterrizar",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Resetear el disyuntor de la batería tres veces consecutivas con el motor a tope",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Tirar de la palanca de calefacción de carburador",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Apagar el interruptor de encendido de magnetos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El sensor de sobrevoltaje puede haberse disparado por un pico transitorio. Se apaga la aviónica para protegerla de transitorios, se cicla el Master (OFF/ON) para rearmar el sensor y se conecta el alternador. Si no recupera, se gestiona el vuelo solo con la batería disponible.",
+      "references": [
+        "Cessna 172N POH - Section 3: Emergency Procedures - Low-Voltage Light",
+        "C-172N Mini Checklist (Pág. 19)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "C172N-EMG-012",
+    "subject_id": "c172n_emergency",
+    "learning_objective": "POH Sección 3 - Bloqueo de la Toma Estática Primaria (Alternate Static Source)",
+    "stem": "Si la toma estática exterior se bloquea por hielo o suciedad afectando al anemómetro, altímetro y VSI, ¿qué acción debe realizar el piloto?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tirar de la válvula de fuente estática alterna (Alternate Static Source Valve: PULL ON) y consultar las tablas de calibración de la Sección 5",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Romper el cristal del horizonte artificial de reserva",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Conectar el Pitot Heat durante 5 minutos para calentar la toma estática",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Abrir la compuerta de drenaje del filtro de combustible",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La C172N cuenta con una válvula de toma estática alterna bajo el panel de instrumentos. Al tirar de ella (PULL ON), el sistema toma presión estática del interior de la cabina de vuelo.",
+      "references": [
+        "Cessna 172N POH - Section 3: Emergency Procedures - Static Source Blockage",
+        "C-172N Mini Checklist (Pág. 20)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "C172N-EMG-013",
+    "subject_id": "c172n_emergency",
+    "learning_objective": "POH Sección 3 - Recuperación Estándar de Barrena Inadvertida (Spin Recovery)",
+    "stem": "¿Cuál es la secuencia estándar de recuperación de una barrena (Spin Recovery) según el POH de la Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1) Throttle: IDLE; 2) Timón de dirección: A FONDO en sentido OPUESTO al giro; 3) Palanca/volante: ENÉRGICAMENTE ADELANTE; 4) Alerones: NEUTRALES; 5) Detenido el giro: centrar timón y recuperar de la picada suavemente",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "1) Throttle: FULL; 2) Tirar del volante hacia atrás a fondo; 3) Meter alerón a favor del giro",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "1) Extender flaps a 40°; 2) Cortar mezcla; 3) Soltar los mandos de vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "1) Meter pie a favor del giro; 2) Mantener palanca atrás; 3) Tirar de la mezcla",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La técnica universal PARE de Cessna estipula: Power IDLE, Ailerons NEUTRAL, Rudder FULL OPPOSITE al sentido del giro y Elevator FORWARD con firmeza para romper la pérdida. Tras cesar la rotación, se neutraliza el timón y se sale de la picada sin exceder Vne ni sobrecargar la estructura.",
+      "references": [
+        "Cessna 172N POH - Section 3: Emergency Procedures - Inadvertent Spin Recovery (Page 3-13)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "C172N-EMG-014",
+    "subject_id": "c172n_emergency",
+    "learning_objective": "POH Sección 3 - Amaraje de Emergencia en el Agua (Ditching)",
+    "stem": "En un amaraje forzoso (Ditching) sin potencia disponible, ¿cuál es la configuración de flaps y la velocidad de planeo recomendada por el POH?",
+    "options": [
+      {
+        "id": "A",
+        "text": "65 KIAS con Flaps UP o 60 KIAS con 10° de flaps; desblocar puertas antes del contacto y evacuar e inflar chalecos salvavidas FUERA del avión",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "45 KIAS con Flaps 40° e inflar los chalecos salvavidas en el interior de la cabina antes de la toma",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "85 KIAS con flaps retraídos y puertas cerradas con seguro",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "50 KIAS con motor al 100% Load",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Sin potencia, la aproximación se realiza a 65 KIAS (Flaps UP) o 60 KIAS (Flaps 10°). Con viento fuerte/oleaje perpendicular se toma contra el viento; con olas altas y viento flojo, paralelo al oleaje. Las puertas se desblaban y los chalecos se inflan SIEMPRE fuera del habitáculo.",
+      "references": [
+        "Cessna 172N POH - Section 3: Emergency Procedures - Ditching (Page 3-12)",
+        "C-172N Mini Checklist (Pág. 15)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "C172N-EMG-015",
+    "subject_id": "c172n_emergency",
+    "learning_objective": "POH Sección 3 - Puerta Abierta Inadvertidamente en Vuelo",
+    "stem": "Si una puerta de cabina se abre en vuelo por mal enclavamiento, ¿qué peligro real entraña para la seguridad del vuelo y cómo se debe proceder?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No afecta a las características de vuelo ni al control; para cerrarla, reducir a 75 KIAS, abrir la ventanilla, empujar la puerta y cerrarla con firmeza",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Provoca una pérdida aerodinámica inmediata del plano de cola; se debe declarar Mayday",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Obliga a apagar el motor y realizar un aterrizaje forzoso en el primer campo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se debe acelerar a Vne para que el viento cierre la puerta por presión exterior",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Una puerta abierta en una C172 no altera la sustentación ni la estabilidad de forma crítica (solo produce ruido y ligera corriente). El procedimiento es volar el avión con calma, reducir a 75 KIAS, abrir la ventanilla para ecualizar presión y tirar firmemente de la manilla para trabarla.",
+      "references": [
+        "Airpull C-172N Manual de Maniobras - Puerta Abierta en Vuelo (Pág. 60)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "C172N-EMG-016",
+    "subject_id": "c172n_emergency",
+    "learning_objective": "POH Sección 3 - Encuentro Inadvertido con Engelamiento",
+    "stem": "Ante un encuentro inadvertido con condiciones de hielo en vuelo, ¿cuál es la primera e inmediata acción que debe tomar el piloto?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Conectar inmediatamente el calefactor de pitot (Pitot Heat ON), poner calefacción de carburador (Carb Heat ON) y virar o cambiar de altitud para abandonar la zona de engelamiento de inmediato",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Extender flaps a 40° para aumentar la superficie de sustentación",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cortar la mezcla a ralentí para enfriar las alas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Acelerar a Vne para desprender el hielo por vibración",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Al detectar formación de hielo se debe encender Pitot Heat para preservar el anemómetro, aplicar Carb Heat para evitar que el hielo bloquee la inducción y modificar rumbo o altitud de inmediato para buscar aire más cálido o seco.",
+      "references": [
+        "Cessna 172N POH - Section 3: Emergency Procedures - Inadvertent Icing Encounter"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "C172N-EMG-017",
+    "subject_id": "c172n_emergency",
+    "learning_objective": "POH Sección 3 - Temperatura de Aceite Excesiva y Caída de Presión",
+    "stem": "Si el indicador de temperatura de aceite supera la línea roja (245°F) y simultáneamente la presión de aceite desciende por debajo de 25 PSI, ¿qué acción debe tomarse?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Asumir fallo inminente de motor por falta de lubricación; reducir potencia al mínimo indispensable y planificar aterrizaje forzoso inmediato sin potencia",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Aumentar revoluciones a 2700 RPM para bombear más aceite",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Conectar la toma estática alternativa",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Apagar el interruptor de aviónica y continuar el vuelo a destino",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La combinación de alta temperatura y baja presión de aceite confirma una avería mecánica grave o pérdida de lubricante. El motor puede griparse en cualquier momento, por lo que se debe buscar campo de inmediato.",
+      "references": [
+        "Cessna 172N POH - Section 3: Emergency Procedures - Engine Malfunctions",
+        "Airpull C-172N Manual de Maniobras (Pág. 58-59)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "C172N-EMG-018",
+    "subject_id": "c172n_emergency",
+    "learning_objective": "POH Sección 3 - Aterrizaje de Precaución con Motor Operativo (Precautionary Landing)",
+    "stem": "Al realizar un aterrizaje de precaución con motor operativo en un campo no preparado (por meteorología marginal o fallo de sistemas), ¿cuál es la configuración de sobrevuelo inicial recomendada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flaps en posición intermedia (20°), velocidad de 60 KIAS, sobrevolar el campo para inspeccionar terreno y obstáculos, y en aproximación final configurar Flaps 40° a 60 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Sobrevolar a 120 KIAS con flaps arriba y cortar el motor en la vertical",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Sobrevolar a 40 KIAS con flaps a 40° al límite de la pérdida",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aterrizar directamente en la primera pasada sin inspección previa",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En el aterrizaje precautorio se vuela sobre el campo a 60 KIAS con Flaps 20° para evaluar longitud, surcos, cables y obstáculos; luego se hace circuito y se entra con Flaps 40° a 60 KIAS cortando Master justo antes de la toma.",
+      "references": [
+        "Cessna 172N POH - Section 3: Emergency Procedures - Precautionary Landing With Engine Power",
+        "C-172N Mini Checklist (Pág. 14)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "C172N-EMG-019",
+    "subject_id": "c172n_emergency",
+    "learning_objective": "POH Sección 3 - Fallo de Bomba de Vacío en Vuelo (Vacuum Failure)",
+    "stem": "Si la bomba mecánica de vacío falla en vuelo (manómetro de succión cae a 0 inHg), ¿qué dos instrumentos de la cabina básica 'Six-Pack' dejarán de ser fiables?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El Horizonte Artificial (Attitude Indicator) y el Giróscopo Direccional (Heading Indicator)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El Anemómetro y el Altímetro",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El Coordinador de Viraje (Turn Coordinator) y el Tacómetro",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El Variómetro (VSI) y la Brújula Magnética",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En la Cessna 172N, la bomba de vacío impulsa exclusivamente los giróscopos del Horizonte Artificial y del Direccional. El Coordinador de Viraje es alimentado eléctricamente (DC), y los instrumentos de presión estática/pitot son barométricos mecánicos.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Vacuum System"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "C172N-EMG-020",
+    "subject_id": "c172n_emergency",
+    "learning_objective": "POH Sección 3 - Tiempo de Respuesta al Cambiar de Depósito por Falta de Gasolina",
+    "stem": "Si el motor se detiene en vuelo por apurar o vaciar un tanque de combustible, ¿cuánto tiempo aproximado puede tardar la gasolina en llegar al carburador tras conmutar la selectora?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aproximadamente hasta 10 segundos para que el flujo por gravedad llene el conducto y la cuba del carburador",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El reencendido es instantáneo en menos de 0.5 segundos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Más de 2 minutos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No se puede reencender sin cebar manualmente con el Primer",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La nota técnica del manual advierte que al vaciarse un depósito y conmutar al otro, pueden transcurrir hasta 10 segundos antes de que el combustible por gravedad alcance y llene la cuba del carburador, debiendo el piloto mantener la calma y la velocidad de planeo.",
+      "references": [
+        "Airpull C-172N Manual de Maniobras - Fallo de Motor en Despegue / Vuelo (Pág. 54)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "C172N-GEN-001",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 1 - Motor Lycoming O-320-H2AD",
+    "stem": "¿Cuál es el modelo de motor, configuración y potencia nominal que equipa de serie a la Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lycoming O-320-H2AD; 4 cilindros horizontalmente opuestos, refrigerado por aire, atmosférico, 160 BHP a 2700 RPM",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Continental O-300-D; 6 cilindros opuestos, 145 BHP a 2700 RPM",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Lycoming IO-360-L2A; 4 cilindros con inyección directa, 180 BHP a 2700 RPM",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Lycoming O-320-E2D; 4 cilindros opuestos, 150 BHP a 2700 RPM",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La Cessna 172N monta el motor Lycoming O-320-H2AD de cuatro cilindros opuestos (bóxer), tracción directa, refrigerado por aire con carburador, que rinde 160 BHP a 2700 RPM al nivel del mar.",
+      "references": [
+        "Cessna 172N POH - Section 1: General - Engine (Page 1-3)",
+        "Airpull Aviation Academy - Manual de Procedimientos y Maniobras C-172N (Pág. 1)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-GEN-002",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 1 - Dimensiones Exteriores (Envergadura y Longitud)",
+    "stem": "¿Cuáles son las dimensiones exteriores principales (envergadura alar y longitud total) de la Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Envergadura alar: 36 ft 0 in (10.97 m); Longitud total: 26 ft 11 in (8.20 m)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Envergadura alar: 33 ft 9 in (10.30 m); Longitud total: 25 ft 11 in (7.91 m)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Envergadura alar: 38 ft 6 in (11.73 m); Longitud total: 28 ft 2 in (8.58 m)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Envergadura alar: 30 ft 0 in (9.14 m); Longitud total: 24 ft 0 in (7.31 m)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con el plano de tres vistas de la Sección 1 del POH, la envergadura alar (Wing Span) es de 36 pies (10.97 m), la longitud total es de 26 pies y 11 pulgadas (8.20 m) y la altura máxima al empenaje es de 8 pies y 9.5 pulgadas (2.68 m).",
+      "references": [
+        "Cessna 172N POH - Section 1: General - Principal Dimensions (Page 1-2)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-GEN-003",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 1 - Hélice de Paso Fijo McCauley",
+    "stem": "¿Qué modelo y características tiene la hélice instalada en la Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "McCauley 1C160/DTM7557; metálica de aluminio forjado monobloque, bipala, de paso fijo con un diámetro de 75 pulgadas (1.90 m)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Hartzell bipala de velocidad constante y paso variable",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "MT-Propeller tripala de madera compuesta con gobernador hidráulico",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Sensenich tripala de paso fijo de 68 pulgadas",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La Cessna 172N equipa una hélice bipala de aleación de aluminio de paso fijo fabricada por McCauley, modelo 1C160/DTM7557, con un diámetro estándar de 75 pulgadas (mínimo permitido por desgaste: 74 pulgadas).",
+      "references": [
+        "Cessna 172N POH - Section 1: General - Propeller (Page 1-3)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-GEN-004",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 1 - Capacidad de Combustible (Tanques Estándar)",
+    "stem": "¿Cuál es la capacidad total y utilizable de combustible en la Cessna 172N con depósitos estándar (Standard Tanks)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Capacidad total: 43 US gal (162.8 L); Capacidad utilizable: 40 US gal (151.4 L)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Capacidad total: 54 US gal; Capacidad utilizable: 50 US gal",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Capacidad total: 38 US gal; Capacidad utilizable: 35 US gal",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Capacidad total: 48 US gal; Capacidad utilizable: 44 US gal",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En la configuración de tanques estándar, la C172N cuenta con dos depósitos alares de 21.5 US gal cada uno (43 US gal totales / 162.8 L), de los cuales 40 US gal (151.4 L / 20 gal por tanque) son utilizables en todas las condiciones de vuelo certificadas.",
+      "references": [
+        "Cessna 172N POH - Section 1: General - Fuel (Page 1-4)",
+        "C-172N Mini Checklist - Technical Data"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-GEN-005",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 1 - Capacidad de Aceite de Motor (Oil Capacity)",
+    "stem": "¿Cuál es la capacidad máxima de cárter de aceite y el nivel mínimo operativo certificado para el vuelo en la Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Capacidad máxima: 6 US quarts (5.7 L); Mínimo operativo para vuelo: 4 US quarts (3.8 L)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Capacidad máxima: 8 US quarts; Mínimo operativo para vuelo: 6 US quarts",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Capacidad máxima: 5 US quarts; Mínimo operativo para vuelo: 3 US quarts",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Capacidad máxima: 10 US quarts; Mínimo operativo para vuelo: 7 US quarts",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El motor Lycoming O-320-H2AD tiene un cárter con capacidad de 6 US quarts (5.7 litros). El manual estipula que no se debe operar el motor con menos de 4 US quarts en la varilla (4 a 5 quarts para vuelos locales cortos, 6 quarts para navegación prolongada).",
+      "references": [
+        "Cessna 172N POH - Section 1: General - Oil (Page 1-4)",
+        "C-172N Mini Checklist - Preflight Inspection (Pág. 4)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-GEN-006",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 1 - Grados de Combustible de Aviación Aprobados",
+    "stem": "¿Cuáles son los grados de combustible de aviación aprobados para el motor Lycoming O-320-H2AD de la Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "100LL Grado de Aviación (color Azul) o 100 Grado de Aviación (color Verde)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "80/87 Grado de Aviación (color Rojo) exclusivamente",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "JET A-1 y Diésel EN 590",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Gasolina de automoción MOGAS 95 sin aditivos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El motor O-320-H2AD de alta compresión requiere combustible con un octanaje mínimo de 100/130: 100LL (Azul) o 100 estándar (Verde). El uso de combustible 80/87 (Rojo) está terminantemente prohibido.",
+      "references": [
+        "Cessna 172N POH - Section 1: General - Fuel Specifications",
+        "Section 2: Limitations - Fuel Limitations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-GEN-007",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 1 - Superficie Alar y Carga Alar",
+    "stem": "¿Cuál es la superficie alar total y la carga alar a Peso Máximo de Despegue (2300 lbs) en la Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Superficie alar: 174.0 sq ft (16.16 m²); Carga alar: 13.2 lbs/sq ft (64.5 kg/m²)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Superficie alar: 149.6 sq ft; Carga alar: 17.1 lbs/sq ft",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Superficie alar: 195.0 sq ft; Carga alar: 10.5 lbs/sq ft",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Superficie alar: 160.0 sq ft; Carga alar: 14.8 lbs/sq ft",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La Cessna 172N dispone de una superficie alar de 174 pies cuadrados (16.16 m²), lo que resulta en una carga alar de 13.2 lbs/pie² a su peso máximo certificado de 2300 lbs.",
+      "references": [
+        "Cessna 172N POH - Section 1: General - Wing Area & Specific Loadings"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-GEN-008",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 1 - Relación Peso/Potencia (Power Loading)",
+    "stem": "A Peso Máximo al Despegue (2300 lbs) con motor de 160 BHP, ¿cuál es la relación peso/potencia (Power Loading) de la Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "14.4 lbs/BHP (6.53 kg/BHP)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "11.2 lbs/BHP",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "16.8 lbs/BHP",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "9.5 lbs/BHP",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Dividiendo el MTOW (2300 lbs) entre los 160 BHP del motor Lycoming, se obtiene una relación peso/potencia de 14.375 lbs/BHP (14.4 lbs/BHP).",
+      "references": [
+        "Cessna 172N POH - Section 1: General - Specific Loadings"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-GEN-009",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 1 - Dimensiones del Tren de Aterrizaje",
+    "stem": "¿Cuál es el ancho de vía del tren de aterrizaje principal (Wheel Track) y la distancia entre ejes (Wheelbase) de la Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ancho de vía (Track): 7 ft 2 in (2.18 m); Batalla (Wheelbase): 5 ft 5 in (1.65 m)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Ancho de vía: 9 ft 0 in; Batalla: 6 ft 8 in",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Ancho de vía: 6 ft 0 in; Batalla: 4 ft 9 in",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Ancho de vía: 8 ft 4 in; Batalla: 5 ft 0 in",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las cotas del tren triciclo en la Sección 1 indican un ancho de vía entre ruedas principales de 7 pies y 2 pulgadas (2.18 m) y una distancia entre la rueda de morro y el eje principal de 5 pies y 5 pulgadas (1.65 m).",
+      "references": [
+        "Cessna 172N POH - Section 1: General - Principal Dimensions (Page 1-2)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-GEN-010",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 1 - Capacidad de los Compartimentos de Equipaje",
+    "stem": "¿Cuál es la capacidad máxima de carga autorizada en el Área de Equipaje 1 y en el Área de Equipaje 2 de la Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Área 1: 120 lbs (54.4 kg); Área 2: 50 lbs (22.7 kg); Máximo combinado total: 120 lbs (54.4 kg)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Área 1: 80 lbs; Área 2: 80 lbs; Máximo combinado: 160 lbs",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Área 1: 150 lbs; Área 2: 75 lbs; Máximo combinado: 200 lbs",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Área 1: 100 lbs; Área 2: 50 lbs; Máximo combinado: 150 lbs",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El compartimento de equipaje trasero está dividido en Área 1 (hasta 120 lbs) y Área 2 (hasta 50 lbs detrás del tabique). La carga combinada de ambas áreas nunca debe exceder de 120 lbs totales.",
+      "references": [
+        "Cessna 172N POH - Section 1: General / Section 2: Limitations - Baggage Space",
+        "Airpull C-172N Manual de Procedimientos (Pág. 4)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-GEN-011",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 1 - Tanques de Combustible de Largo Alcance (Long Range Tanks)",
+    "stem": "En las aeronaves Cessna 172N equipadas con depósitos de largo alcance opcionales (Long Range Fuel Tanks), ¿cuál es la capacidad total y utilizable?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Capacidad total: 54 US gal (204.4 L); Capacidad utilizable: 50 US gal (189.3 L)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Capacidad total: 64 US gal; Capacidad utilizable: 60 US gal",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Capacidad total: 50 US gal; Capacidad utilizable: 46 US gal",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Capacidad total: 58 US gal; Capacidad utilizable: 52 US gal",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Con la opción de depósitos de largo alcance instalada de fábrica, la C172N dispone de dos tanques de 27 galones cada uno (54 US gal totales), de los cuales 50 US gal son utilizables (25 gal utilizables por semiala).",
+      "references": [
+        "Cessna 172N POH - Section 1: General - Optional Fuel Tanks (Page 1-4)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-GEN-012",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 1 - Sistema de Frenos Hidráulicos",
+    "stem": "¿Qué tipo de fluido hidráulico utiliza el sistema de frenos de disco de la Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fluido hidráulico mineral base petróleo MIL-H-5606 (color Rojo)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Líquido de frenos sintético automotriz DOT 3 o DOT 4",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Fluido de éster de fosfato sintético tipo Skydrol",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aceite de motor SAE 10W-30",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El sistema de frenos de disco diferencial de Cessna utiliza exclusivamente fluido hidráulico mineral aeronáutico especificación MIL-H-5606 (o MIL-PRF-5606) característico por su color rojo brillante.",
+      "references": [
+        "Cessna 172N POH - Section 8: Handling, Service & Maintenance - Brake System"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-GEN-013",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 1 - Presiones de Inflado de Neumáticos",
+    "stem": "¿Cuáles son las presiones de inflado estándar recomendadas para el neumático de morro y los neumáticos principales de la Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rueda de morro (5.00-5): 34 PSI; Ruedas principales (6.00-6): 29 PSI",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Rueda de morro: 45 PSI; Ruedas principales: 45 PSI",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Rueda de morro: 20 PSI; Ruedas principales: 35 PSI",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Rueda de morro: 25 PSI; Ruedas principales: 25 PSI",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Sección 8 del POH, la presión de servicio para el neumático de la rueda de morro (5.00x5 de 4 telas) es de 34 PSI (2.34 bar) y para los neumáticos principales (6.00x6 de 4 telas) es de 29 PSI (2.00 bar).",
+      "references": [
+        "Cessna 172N POH - Section 8: Handling, Service & Maintenance - Tire Pressures"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-GEN-014",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 1 - Sistema de Alimentación por Gravedad",
+    "stem": "En el diseño del sistema de combustible de la Cessna 172N (ala alta), ¿cómo se suministra el combustible desde los tanques al carburador?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Por gravedad directa (Gravity Feed) desde los tanques alares hacia la válvula selectora, filtro colector y carburador sin necesidad de bombas mecánicas ni eléctricas en vuelo normal",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mediante una bomba mecánica de baja presión accionada por el árbol de levas",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mediante dos bombas eléctricas sumergidas en cada depósito alar",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mediante presurización de aire sangrado del escape",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Al ser un avión de ala alta, la carga estática de combustible sobre el carburador permite un sistema de alimentación 100% por gravedad simple, eliminando la necesidad de bombas de combustible mecánicas o auxiliares de refuerzo.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Fuel System (Page 7-10)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-GEN-015",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 1 - Cuerda Media Geométrica y Perfil Alar",
+    "stem": "¿Cuál es el perfil aerodinámico de ala utilizado en la Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "NACA 2412 modificado con borde de ataque cambered (cuffed wing design)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "NACA 0012 simétrico puro",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "NACA 64-215 laminar de alta velocidad",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Clark Y clásico",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La familia Cessna 172 utiliza el perfil de ala cambered NACA 2412 modificado con caída de borde de ataque para proporcionar un comportamiento dócil y seguro en la pérdida con excelente control de alerones.",
+      "references": [
+        "Cessna 172N POH - Section 1: General Description - Airfoil",
+        "FAA Type Certificate Data Sheet (TCDS) 3A12"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-LIM-001",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 2 - Velocidad de Nunca Exceder (Vne)",
+    "stem": "En la Cessna 172N, ¿cuál es la Velocidad de Nunca Exceder (Vne) expresada en velocidad indicada (KIAS)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "160 KIAS (182 MPH)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "145 KIAS (167 MPH)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "128 KIAS (145 MPH)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "175 KIAS (201 MPH)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Sección 2 (Limitaciones) del POH de la Cessna 172N, la velocidad Vne (Never Exceed Speed) representada por la línea radial roja en el anemómetro es de 160 KIAS (182 MPH). Superar esta velocidad puede provocar fallos estructurales catastróficos.",
+      "references": [
+        "Cessna 172N POH - Section 2: Limitations - Airspeed Limitations (Page 2-3)",
+        "Airpull C-172N Manual de Maniobras - Resumen de Velocidades (Pág. 61)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-LIM-002",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 2 - Velocidad Máxima de Crucero Estructural (Vno)",
+    "stem": "¿Cuál es la Velocidad Máxima de Crucero Estructural (Vno), que delimita el inicio del arco amarillo en el anemómetro de la Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "128 KIAS (145 MPH)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "110 KIAS (127 MPH)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "140 KIAS (161 MPH)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "97 KIAS (112 MPH)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La Vno (Maximum Structural Cruising Speed) es de 128 KIAS (145 MPH). El rango comprendido entre 128 KIAS y 160 KIAS es el arco amarillo (rango de precaución), donde solo se debe volar en aire completamente en calma.",
+      "references": [
+        "Cessna 172N POH - Section 2: Limitations - Airspeed Limitations (Page 2-3)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-LIM-003",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 2 - Velocidad de Maniobra (Va) según el Peso",
+    "stem": "¿Cuáles son las velocidades de maniobra de diseño (Va) certificadas en la Cessna 172N para los pesos de 2300 lbs, 1950 lbs y 1600 lbs?",
+    "options": [
+      {
+        "id": "A",
+        "text": "2300 lbs: 97 KIAS; 1950 lbs: 89 KIAS; 1600 lbs: 80 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "2300 lbs: 110 KIAS; 1950 lbs: 95 KIAS; 1600 lbs: 85 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "2300 lbs: 85 KIAS; 1950 lbs: 75 KIAS; 1600 lbs: 65 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La velocidad Va es constante a 97 KIAS independientemente del peso",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La velocidad de maniobra (Va) disminuye a medida que el peso se reduce para proteger la estructura: a 2300 lbs (MTOW) es de 97 KIAS, a 1950 lbs es de 89 KIAS y a 1600 lbs es de 80 KIAS. Por encima de esta velocidad no se deben realizar deflexiones completas de los mandos de vuelo.",
+      "references": [
+        "Cessna 172N POH - Section 2: Limitations - Maneuvering Speed (Page 2-3)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-LIM-004",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 2 - Velocidad Máxima de Flaps (Vfe)",
+    "stem": "En la Cessna 172N, ¿cuál es la velocidad máxima con flaps extendidos (Vfe) para 10° de flap y para 10° a 40° de flap?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flaps 10°: hasta 110 KIAS; Flaps 10° a 40° (arco blanco): hasta 85 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Flaps en cualquier posición: 100 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Flaps 10°: 85 KIAS; Flaps 40°: 65 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Flaps 10°: 95 KIAS; Flaps 40°: 80 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En el modelo 172N, el límite superior del arco blanco (Vfe para flaps completos de 10° a 40°) es de 85 KIAS, permitiéndose la extensión inicial de 10° de flaps hasta 110 KIAS para facilitar la deceleración en el circuito de tráfico.",
+      "references": [
+        "Cessna 172N POH - Section 2: Limitations - Airspeed Indicator Markings (Page 2-4)",
+        "Airpull C-172N Manual de Maniobras (Pág. 7)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-LIM-005",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 2 - Pesos Máximos en Categoría Normal y Utilitaria",
+    "stem": "¿Cuáles son los Pesos Máximos de Despegue y Aterrizaje (MTOW / MLW) autorizados en Categoría Normal y Categoría Utilitaria (Utility Category) en la Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Categoría Normal: 2300 lbs (1043 kg); Categoría Utilitaria: 2000 lbs (907 kg)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Categoría Normal: 2550 lbs; Categoría Utilitaria: 2200 lbs",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Categoría Normal: 2300 lbs; Categoría Utilitaria: 2300 lbs",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Categoría Normal: 2150 lbs; Categoría Utilitaria: 1800 lbs",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La Cessna 172N está certificada con un MTOW/MLW de 2300 lbs (1043 kg) en Categoría Normal (máximo 4 ocupantes) y de 2000 lbs (907 kg) en Categoría Utilitaria (para instrucción de barrenas y maniobras acrobáticas limitadas, sin pasajeros traseros).",
+      "references": [
+        "Cessna 172N POH - Section 2: Limitations - Weight Limits (Page 2-5)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-LIM-006",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 2 - Factores de Carga Límite (G-Limits)",
+    "stem": "¿Cuáles son los factores de carga límite de vuelo (Flight Load Factors) en Categoría Normal con flaps arriba (Flaps UP) y flaps abajo (Flaps DOWN)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flaps UP: +3.8 g y -1.52 g; Flaps DOWN (cualquier posición): +3.0 g y 0 g",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Flaps UP: +4.4 g y -1.76 g; Flaps DOWN: +2.0 g",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Flaps UP: +3.5 g y -1.0 g; Flaps DOWN: +2.5 g",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Flaps UP: +2.5 g y -1.0 g; Flaps DOWN: +1.5 g",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En Categoría Normal (a 2300 lbs), los límites estructurales son +3.8 g positivo y -1.52 g negativo con Flaps UP. Con flaps extendidos (Flaps DOWN), el límite positivo es +3.0 g. En Categoría Utilitaria (a 2000 lbs con Flaps UP), los límites son +4.4 g y -1.76 g.",
+      "references": [
+        "Cessna 172N POH - Section 2: Limitations - Flight Load Factors (Page 2-6)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-LIM-007",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 2 - Límites de Motor Lycoming (RPM)",
+    "stem": "En el motor Lycoming O-320-H2AD de la Cessna 172N, ¿cuál es el régimen máximo de revoluciones continuas del motor (línea roja de tacómetro)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "2700 RPM continuo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "2500 RPM continuo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "2300 RPM continuo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "2900 RPM con límite de 5 minutos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El límite máximo de revoluciones por minuto para el motor Lycoming O-320-H2AD es de 2700 RPM, marcando el final del arco verde (2200-2700 RPM) y la línea roja fija del tacómetro.",
+      "references": [
+        "Cessna 172N POH - Section 2: Limitations - Powerplant Instrument Markings (Page 2-4)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-LIM-008",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 2 - Límites de Presión de Aceite (Oil Pressure)",
+    "stem": "¿Cuáles son los límites de presión de aceite del motor en la Cessna 172N (mínimo, rango normal de arco verde y máximo)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mínimo (línea roja): 25 PSI; Rango normal (arco verde): 60 a 90 PSI; Máximo (línea roja): 115 PSI",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mínimo: 10 PSI; Rango normal: 30 a 60 PSI; Máximo: 100 PSI",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mínimo: 35 PSI; Rango normal: 50 a 80 PSI; Máximo: 130 PSI",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mínimo: 15 PSI; Rango normal: 40 a 75 PSI; Máximo: 90 PSI",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las marcas del indicador de presión de aceite de la C172N son: Presión mínima en ralentí (línea roja inferior) = 25 PSI, Rango operativo normal (arco verde) = 60 a 90 PSI, y Presión máxima en arranque en frío (línea roja superior) = 115 PSI.",
+      "references": [
+        "Cessna 172N POH - Section 2: Limitations - Engine Instrument Markings (Page 2-4)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-LIM-009",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 2 - Temperatura Máxima de Aceite (Oil Temp)",
+    "stem": "¿Cuál es la temperatura máxima de aceite de motor (línea roja superior) permitida en la Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "245°F (118°C)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "200°F (93°C)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "260°F (127°C)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "225°F (107°C)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La temperatura máxima absoluta de aceite para el motor O-320-H2AD es de 245°F (118°C). El rango operativo normal (arco verde) está comprendido entre 100°F y 245°F (38°C a 118°C).",
+      "references": [
+        "Cessna 172N POH - Section 2: Limitations - Engine Instrument Markings (Page 2-4)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-LIM-010",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 2 - Limitación del Selector de Combustible",
+    "stem": "Según las limitaciones de operación del sistema de combustible de la Cessna 172N, ¿cuándo es OBLIGATORIO colocar el selector de combustible en la posición 'BOTH'?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En el despegue, ascenso, aterrizaje y en todas las maniobras de vuelo; la selección de un solo tanque (LEFT o RIGHT) solo está permitida en vuelo recto y nivelado de crucero",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Únicamente en el despegue; durante el resto del vuelo debe seleccionarse LEFT o RIGHT",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo cuando la cantidad de combustible en ambos tanques sea idéntica",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En vuelo por debajo de 3000 pies exclusivamente",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El POH prohíbe el uso de un solo tanque (LEFT o RIGHT) durante despegues, ascensos, aproximaciones y maniobras para evitar riesgo de inanición de combustible por actitudes no niveladas. La posición BOTH es obligatoria en todas las fases críticas.",
+      "references": [
+        "Cessna 172N POH - Section 2: Limitations - Fuel Limitations (Page 2-6)",
+        "C-172N Mini Checklist - Normal Procedures (Pág. 7)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-LIM-011",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 2 - Maniobras Prohibidas en Categoría Normal",
+    "stem": "En la Cessna 172N operando en Categoría Normal (hasta 2300 lbs), ¿cuáles de las siguientes maniobras están expresamente PROHIBIDAS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Maniobras acrobáticas de cualquier tipo, barrenas intencionadas (intentional spins) y virajes escarpados con más de 60° de alabeo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Virajes de 45° de alabeo y pérdidas convencionales",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Despegues con viento cruzado superior a 10 nudos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aterrizajes en pistas no pavimentadas",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En Categoría Normal no se permite ninguna maniobra acrobática ni barrenas intencionadas. Las barrenas intencionadas solo están aprobadas si el avión se opera en Categoría Utilitaria (peso < 2000 lbs, CG adecuado y sin pasajeros ni equipaje trasero).",
+      "references": [
+        "Cessna 172N POH - Section 2: Limitations - Maneuver Limits (Page 2-5)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-LIM-012",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 2 - Viento Cruzado Máximo Demostrado",
+    "stem": "¿Cuál es la componente máxima demostrada de viento cruzado (Maximum Demonstrated Crosswind) en la Cessna 172N para despegue y aterrizaje?",
+    "options": [
+      {
+        "id": "A",
+        "text": "15 nudos (28 km/h)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "20 nudos (37 km/h)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "12 nudos (22 km/h)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "18 nudos (33 km/h)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La componente máxima demostrada de viento cruzado para despegue y aterrizaje en la Cessna 172N es de 15 nudos, valor verificado durante las pruebas de certificación de vuelo de Cessna.",
+      "references": [
+        "Cessna 172N POH - Section 4: Normal Procedures - Crosswind Takeoff / Landing",
+        "Airpull C-172N Manual de Maniobras (Pág. 10)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-LIM-013",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 2 - Vuelo en Condiciones de Engelamiento (Icing)",
+    "stem": "¿Cuál es la limitación oficial de la Cessna 172N respecto al vuelo en condiciones de hielo (Icing Conditions)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El vuelo en condiciones de engelamiento conocido o pronosticado (Known Icing) está totalmente PROHIBIDO",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se autoriza el vuelo en engelamiento ligero si se conecta el calefactor de pitot (Pitot Heat)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se autoriza el vuelo en engelamiento hasta 10.000 pies",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo se prohíbe el vuelo en engelamiento severo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La Cessna 172N carece de sistemas de deshielo alar y en empenajes de borde de ataque certificados (FIKI). El vuelo en condiciones de formación de hielo conocidas está terminantemente prohibido por el fabricante.",
+      "references": [
+        "Cessna 172N POH - Section 2: Limitations - Kinds of Operation (Page 2-8)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-LIM-014",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 2 - Rango de Succión del Sistema de Vacío (Suction Gage)",
+    "stem": "¿Cuál es el rango operativo normal (arco verde) del manómetro de succión del sistema de vacío neumático en la Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "4.5 a 5.4 pulgadas de mercurio (inHg)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "2.0 a 3.5 pulgadas de mercurio (inHg)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "6.0 a 8.0 pulgadas de mercurio (inHg)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "3.0 a 4.0 pulgadas de mercurio (inHg)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El manómetro de succión (Suction Gage), que alimenta los giróscopos del horizonte artificial y del giróscopo direccional, debe marcar entre 4.5 y 5.4 inHg en el arco verde para garantizar la rigidez y precisión giroscópica.",
+      "references": [
+        "Cessna 172N POH - Section 2: Limitations - Instrument Markings",
+        "C-172N Mini Checklist - Run-up (Pág. 7)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-LIM-015",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 2 - Barrenas Intencionadas en Categoría Utilitaria (Flaps Limit)",
+    "stem": "Al realizar barrenas intencionadas autorizadas en Categoría Utilitaria, ¿cuál es la limitación estricta respecto a los flaps?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Los flaps deben estar completamente retraídos en posición UP (0°); las barrenas con flaps extendidos están totalmente prohibidas",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se pueden realizar con 10° de flaps para facilitar la recuperación",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se deben extender a 40° antes de entrar en barrena",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La posición de flaps es indiferente si el peso no supera las 2000 lbs",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La extensión de flaps en barrena modifica radicalmente el flujo aerodinámico sobre los empenajes y puede provocar una barrena plana o esfuerzos asimétricos no recuperables. Las barrenas con flaps extendidos están estrictamente prohibidas.",
+      "references": [
+        "Cessna 172N POH - Section 2: Limitations - Maneuver Limits / Spins (Page 2-5)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-LIM-016",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 2 - Velocidad de Pérdida en Configuración Sucia (Vso)",
+    "stem": "¿Cuál es la velocidad de pérdida en configuración de aterrizaje (Vso - Flaps 40°, motor al ralentí a 2300 lbs)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "44 KIAS (33 KCAS)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "50 KIAS (44 KCAS)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "55 KIAS (50 KCAS)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "40 KIAS (30 KCAS)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La velocidad de pérdida en configuración de aterrizaje (Vso, inicio inferior del arco blanco) a MTOW (2300 lbs) con Flaps 40° y motor en IDLE es de 44 KIAS (equivalente a 33 nudos de velocidad calibrada KCAS).",
+      "references": [
+        "Cessna 172N POH - Section 2: Limitations - Airspeed Markings / Section 5: Performance"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-LIM-017",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 2 - Velocidad de Pérdida en Configuración Limpia (Vs1)",
+    "stem": "¿Cuál es la velocidad de pérdida en configuración limpia (Vs1 - Flaps UP, motor al ralentí a 2300 lbs)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "50 KIAS (44 KCAS)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "44 KIAS (33 KCAS)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "58 KIAS (52 KCAS)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "65 KIAS (58 KCAS)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La velocidad de pérdida en configuración limpia (Vs1, inicio inferior del arco verde) a 2300 lbs con Flaps 0° y palanca en IDLE es de 50 KIAS (44 KCAS).",
+      "references": [
+        "Cessna 172N POH - Section 2: Limitations - Airspeed Markings (Page 2-4)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-LIM-018",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 2 - Límite de Tiempo de Motor de Arranque (Starter)",
+    "stem": "¿Cuál es el límite máximo de accionamiento continuo del motor de arranque (Starter Crank Limit) en la Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Máximo 30 segundos continuos, seguido de un periodo de enfriamiento de al menos 2 minutos antes de un nuevo intento",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Máximo 60 segundos continuos sin enfriamiento",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Máximo 10 segundos y 5 minutos de enfriamiento",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No existe límite si la batería tiene carga suficiente",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para evitar el sobrecalentamiento del inducido del motor de arranque y la descarga profunda de la batería, no se deben superar los 30 segundos continuos de estárter, debiendo esperar 2 minutos de enfriamiento antes de reintentar.",
+      "references": [
+        "Cessna 172N POH - Section 4: Normal Procedures - Engine Starting Notes"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-LIM-019",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 2 - Límites de Comprobación de Magnetos en Prueba de Motor",
+    "stem": "Durante la prueba de motor (Run-up) a 1700 RPM, ¿cuáles son las caídas máximas de RPM admisibles al seleccionar cada magneto por separado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Caída máxima en cualquier magneto: 125 RPM (o 175 RPM según modelo); Diferencia máxima entre magnetos: 50 RPM",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Caída máxima: 250 RPM; Diferencia máxima: 100 RPM",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Caída máxima: 50 RPM; Diferencia máxima: 10 RPM",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No debe haber ninguna caída de RPM al pasar a una sola magneto",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Al probar las magnetos a 1700 RPM, la caída máxima de revoluciones al conmutar de BOTH a LEFT o RIGHT no debe exceder de 125-175 RPM, y la diferencia entre ambas magnetos no debe superar las 50 RPM.",
+      "references": [
+        "Cessna 172N POH - Section 4: Normal Procedures - Before Takeoff (Run-up)",
+        "C-172N Mini Checklist (Pág. 7)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-LIM-020",
+    "subject_id": "c172n_limitations",
+    "learning_objective": "POH Sección 2 - Sobrevoltaje y Protección del Alternador",
+    "stem": "En el sistema eléctrico de 28V de la Cessna 172N, ¿a qué voltaje se dispara el sensor de sobrevoltaje (Overvoltage Sensor) desacoplando el alternador?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aproximadamente 31.5 Voltios (o 16.5 V en sistemas de 14V)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Aproximadamente 24.0 Voltios",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aproximadamente 40.0 Voltios",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aproximadamente 28.5 Voltios",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El relé de control del alternador incorpora un circuito sensor de sobrevoltaje que abre el disyuntor/campo del alternador e ilumina la luz roja/ámbar 'LOW VOLTAGE / OVERVOLTAGE' si la tensión del bus supera los 31.5V (o 16.5V en sistemas de 14V) para proteger la aviónica.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Electrical System (Page 7-16)",
+        "Airpull C-172N Manual de Maniobras (Pág. 60)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "C172N-NORM-001",
+    "subject_id": "c172n_normal",
+    "learning_objective": "POH Sección 4 - Protección de la Aviónica en la Puesta en Marcha",
+    "stem": "Durante la lista de 'Antes de Poner en Marcha' (Before Start), ¿por qué es obligatorio que el interruptor de aviónica (Avionics Power Switch) esté en posición OFF?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Para proteger los equipos de radio y aviónica de transitorios de alto voltaje y picos inductivos generados por el motor de arranque",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Para evitar que se descargue la batería antes de que el motor gire",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Porque las radios interfieren con la chispa de las magnetos de encendido",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Para evitar que el transponder transmita en tierra de forma involuntaria",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La precaución (CAUTION) de la Sección 4 del POH indica: 'The avionics power switch must be off during engine start to prevent possible damage to avionics'. El accionamiento del motor de arranque induce picos de sobretensión en la barra que pueden destruir microprocesadores de la aviónica.",
+      "references": [
+        "Cessna 172N POH - Section 4: Normal Procedures - Before Starting Engine (Page 4-4)",
+        "C-172N Mini Checklist (Pág. 5)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "C172N-NORM-002",
+    "subject_id": "c172n_normal",
+    "learning_objective": "POH Sección 4 - Comprobación de Presión de Aceite tras el Arranque",
+    "stem": "Tras la puesta en marcha del motor en frío, ¿en qué plazo máximo debe indicar presión positiva el manómetro de aceite en la Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dentro de los primeros 30 segundos (o hasta 60 segundos en condiciones de frío extremo); si no hay indicación, parar el motor inmediatamente",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Dentro de los primeros 2 minutos de calentamiento en ralentí",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Únicamente después de acelerar el motor a 1700 RPM",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La presión de aceite no sube hasta que se conecta el alternador",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Si el indicador de presión de aceite no entra en el arco verde en un plazo máximo de 30 segundos (o 60 segundos en invierno severo), se debe cortar la mezcla a IDLE CUT-OFF de inmediato para evitar daños catastróficos por fricción sin lubricante.",
+      "references": [
+        "Cessna 172N POH - Section 4: Normal Procedures - Starting Engine Notes",
+        "Airpull C-172N Manual de Maniobras (Pág. 5)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "C172N-NORM-003",
+    "subject_id": "c172n_normal",
+    "learning_objective": "POH Sección 4 - Purga del Colector de Combustible en Inspección Pre-vuelo",
+    "stem": "Durante la inspección de morro previa al primer vuelo del día o tras cada repostaje, ¿durante cuántos segundos se debe tirar del mando de drenaje del filtro de combustible (Strainer Drain Knob)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tirar durante unos 4 segundos comprobando que el combustible drenado esté limpio y libre de agua",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Tirar durante 30 segundos continuos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Basta con una pulsación de medio segundo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El drenaje de morro solo se abre en revisiones de 50 horas por el mecánico",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La lista de prevuelo en la sección de morro establece: 'Before first flight of the day and after each refueling, pull out strainer drain knob for about four seconds' para purgar el agua o sedimentos acumulados en el vaso de decantación del cortafuegos.",
+      "references": [
+        "Cessna 172N POH - Section 4: Normal Procedures - Preflight Inspection (Page 4-3)",
+        "C-172N Mini Checklist (Pág. 4)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "C172N-NORM-004",
+    "subject_id": "c172n_normal",
+    "learning_objective": "POH Sección 4 - Velocidades de Despegue Normal (Vr y Ascenso)",
+    "stem": "En un despegue normal sin obstáculos a 2300 lbs con Flaps 0°-10°, ¿a qué velocidad indicada se levanta la rueda de morro y cuál es la velocidad recomendada de ascenso inicial?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rotación (Lift nose wheel): 55-60 KIAS; Velocidad de ascenso inicial: 65-75 KIAS (Vy = 73-75 KIAS)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Rotación: 70 KIAS; Velocidad de ascenso: 85-90 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Rotación: 45 KIAS; Velocidad de ascenso: 55 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Rotación: 65 KIAS; Velocidad de ascenso: 60 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En el despegue normal, la rueda de morro se alivia suavemente a 55-60 KIAS y la aeronave se deja ir al aire acelerando al régimen de ascenso óptimo de 73-75 KIAS con flaps arriba.",
+      "references": [
+        "Cessna 172N POH - Section 4: Normal Procedures - Normal Takeoff (Page 4-5)",
+        "C-172N Mini Checklist (Pág. 8)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "C172N-NORM-005",
+    "subject_id": "c172n_normal",
+    "learning_objective": "POH Sección 4 - Despegue en Campo Corto (Short Field Takeoff)",
+    "stem": "¿Cuál es la configuración de flaps, técnica de frenos y velocidad de franqueamiento en un despegue en campo corto (Short Field Takeoff)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flaps: 10°; Aplicar frenos, acelerar a fondo (Full Throttle), soltar frenos y ascender a 55 KIAS (Vx) hasta librar los obstáculos",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Flaps: 40°; Iniciar carrera sin frenos y ascender a 45 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Flaps: 0°; Frenar a medio gas y rotar a 70 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Flaps: 20°; Calefacción de carburador en ON y ascender a 75 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En campo corto se seleccionan Flaps 10°, se pisa el freno mientras se mete motor a fondo para comprobar parámetros, se sueltan frenos, se mantiene actitud ligeramente baja de cola y se asciende a 55 KIAS hasta franquear la barrera de 50 pies.",
+      "references": [
+        "Cessna 172N POH - Section 4: Normal Procedures - Short Field Takeoff",
+        "C-172N Mini Checklist (Pág. 8)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "C172N-NORM-006",
+    "subject_id": "c172n_normal",
+    "learning_objective": "POH Sección 4 - Despegue en Campo Blando / Hierba (Soft Field Takeoff)",
+    "stem": "En un despegue en pista blanda o hierba irregular (Soft Field Takeoff), ¿cuál es la técnica de mandos requerida durante toda la carrera de rodaje y despegue?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flaps 10°, mantener el volante a fondo atrás para levantar la rueda de morro lo antes posible, despegar en efecto suelo (Ground Effect), acelerar nivelado y ascender a Vx/Vy",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Flaps 0°, volante completamente adelante para cargar peso en la rueda delantera",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Flaps 40°, rodar a máxima velocidad y tirar bruscamente a 40 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aplicar frenos intermitentes para no patinar en el barro",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En campo blando se alivian las cargas de la rueda delantera tirando de la palanca atrás, permitiendo que el avión flote en efecto suelo a baja velocidad antes de iniciar el ascenso positivo una vez alcanzada una velocidad segura (> 65 KIAS).",
+      "references": [
+        "Cessna 172N POH - Section 4: Normal Procedures - Soft-Field Takeoffs",
+        "Airpull C-172N Manual de Maniobras (Pág. 13)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "C172N-NORM-007",
+    "subject_id": "c172n_normal",
+    "learning_objective": "POH Sección 4 - Empobrecimiento de Mezcla en Ascenso y Crucero (Leaning)",
+    "stem": "Según las recomendaciones de operación del motor Lycoming en la Cessna 172N, ¿a partir de qué altitud se debe empobrecer la mezcla (Leaning) durante el ascenso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Por encima de 3000 pies de altitud para restaurar la potencia y suavidad del motor",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Desde el mismo momento del despegue a nivel del mar",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Únicamente por encima de 10.000 pies",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Nunca se debe empobrecer en ascenso continuo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La nota de la Sección 4 estipula: 'Mixture: RICH (ABOVE 3000 FT - LEAN)'. Al ascender por encima de 3000 pies la menor densidad del aire enriquece excesivamente la mezcla, reduciendo la potencia y ensuciando bujías si no se ajusta la palanca roja.",
+      "references": [
+        "Cessna 172N POH - Section 4: Normal Procedures - Climb (Page 4-6)",
+        "C-172N Mini Checklist (Pág. 9)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "C172N-NORM-008",
+    "subject_id": "c172n_normal",
+    "learning_objective": "POH Sección 4 - Régimen de Potencia de Crucero Normal (RPM Range)",
+    "stem": "¿Cuál es el rango normal de revoluciones por minuto recomendado en vuelo de crucero (Cruise) en la Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "2200 a 2700 RPM",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "1800 a 2100 RPM",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "2700 a 2900 RPM",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "1500 a 2000 RPM",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El rango normal de potencia de crucero (55% a 75% BHP) corresponde a regímenes de entre 2200 y 2700 RPM en la hélice de paso fijo McCauley.",
+      "references": [
+        "Cessna 172N POH - Section 4: Normal Procedures - Cruise",
+        "C-172N Mini Checklist (Pág. 9)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "C172N-NORM-009",
+    "subject_id": "c172n_normal",
+    "learning_objective": "POH Sección 4 - Uso de Calefacción de Carburador en Descenso",
+    "stem": "Durante descensos prolongados con potencia de motor reducida (por ejemplo por debajo de 2000 RPM), ¿qué precaución es obligatoria regarding al carburador?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aplicar calefacción de carburador completa (Carburetor Heat: FULL ON) para prevenir la formación de hielo en la mariposa y venturi",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mantener la calefacción de carburador en COLD para no sobrecalentar el motor",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cebar el motor con el Primer cada 2 minutos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cortar el alternador para evitar sobretensión",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Con bajas aperturas de acelerador la caída de presión en el venturi unida a la vaporización de la gasolina provoca una intensa caída de temperatura. En descensos con gases retrasados se debe llevar siempre Carb Heat en FULL ON.",
+      "references": [
+        "Cessna 172N POH - Section 4: Normal Procedures - Descent (Page 4-7)",
+        "C-172N Mini Checklist (Pág. 9)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "C172N-NORM-010",
+    "subject_id": "c172n_normal",
+    "learning_objective": "POH Sección 4 - Procedimiento de Motor y al Aire (Balked Landing / Go-Around)",
+    "stem": "¿Cuál es la secuencia estricta de acciones inmediatas para ejecutar una frustrada / motor y al aire (Balked Landing) en la Cessna 172N con flaps a 40°?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1) Throttle: FULL OPEN; 2) Carb Heat: COLD; 3) Flaps: RETRAER INMEDIATAMENTE A 20°; 4) Velocidad de ascenso: 60 KIAS; 5) Flaps: 10° tras librar obstáculos y retraer a UP por encima de 65 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "1) Retraer todos los flaps a 0° antes de tocar los gases; 2) Acelerar a 90 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "1) Throttle: FULL; 2) Mantener Flaps a 40° durante todo el ascenso hasta 1000 pies",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "1) Carb Heat: ON; 2) Throttle: IDLE; 3) Tirar de la mezcla",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Al frustrar, los flaps a 40° generan demasiada resistencia para permitir una tasa de ascenso positiva. La lista de chequeo exige: Throttle FULL, Carb Heat COLD, retraer INMEDIATAMENTE a 20°, ascender a 60 KIAS, pasar a 10° y luego a UP al alcanzar velocidad y altitud seguras.",
+      "references": [
+        "Cessna 172N POH - Section 4: Normal Procedures - Balked Landing (Page 4-8)",
+        "C-172N Mini Checklist (Pág. 11)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "C172N-NORM-011",
+    "subject_id": "c172n_normal",
+    "learning_objective": "POH Sección 4 - Velocidades en el Circuito de Tráfico Visual (Traffic Pattern)",
+    "stem": "Según los procedimientos estándar de la Cessna 172N, ¿cuáles son las velocidades indicadas y ajustes de flaps recomendados en viento en cola, base y final corta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Viento en cola: 90 KIAS (Flaps 0°); Base: 75 KIAS (Flaps 20°); Final corta: 65 KIAS (Flaps 40°)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Viento en cola: 110 KIAS; Base: 95 KIAS; Final corta: 80 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Viento en cola: 70 KIAS; Base: 60 KIAS; Final corta: 50 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Viento en cola: 80 KIAS con flaps a 40° en todo el circuito",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El manual de procedimientos de maniobras estipula: Tramo de viento en cola a 90 KIAS con Flaps 0°, través de cabecera a 80 KIAS (Flaps 10°), tramo base a 75 KIAS (Flaps 20°) y final corta a 65 KIAS con Flaps 40°.",
+      "references": [
+        "Airpull C-172N Manual de Procedimientos y Maniobras - Circuito de Tráfico Visual (Pág. 62)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "C172N-NORM-012",
+    "subject_id": "c172n_normal",
+    "learning_objective": "POH Sección 4 - Aterrizaje en Campo Corto (Short Field Landing)",
+    "stem": "¿Cuál es la velocidad de aproximación final y configuración requerida para un aterrizaje de precisión en pista corta (Short Field Landing)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flaps en posición FULL (40°), velocidad de aproximación final de 60 KIAS, contacto en ruedas principales y aplicación enérgica de frenos retrayendo flaps tras la toma",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Flaps 10°, velocidad de aproximación 75 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Flaps 0°, velocidad de aproximación 55 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Flaps 20°, mantener frenos bloqueados en el aire antes del contacto",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En campo corto se configuran Flaps 40° a 60 KIAS con motor ajustado para mantener la pendiente, cortando gases justo sobre el umbral para posar en ruedas principales y frenar con firmeza retrayendo flaps para transferir peso a las ruedas.",
+      "references": [
+        "Cessna 172N POH - Section 4: Normal Procedures - Short Field Landing",
+        "C-172N Mini Checklist (Pág. 10)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "C172N-NORM-013",
+    "subject_id": "c172n_normal",
+    "learning_objective": "POH Sección 4 - Aterrizaje en Campo Blando (Soft Field Landing)",
+    "stem": "Al realizar una toma de tierra en pista blanda o hierba no compactada (Soft Field Landing), ¿cómo debe efectuarse el contacto y la carrera posterior?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flaps 40° a 60-65 KIAS con un ligero toque de potencia para posar con máxima suavidad, manteniendo la rueda de morro en el aire el mayor tiempo posible con el volante atrás sin frenar bruscamente",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Picar para posar primero la rueda de morro e iniciar frenado enérgico",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cortar el Master Switch a 200 pies y aterrizar sin flaps",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aterrizar con viento en cola para reducir la fricción con la hierba",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En pista blanda se realiza una toma muy suave con motor residual y se mantiene el morro elevado durante la carrera de deceleración para evitar que la rueda delantera se hunda en el barro o terreno blando.",
+      "references": [
+        "Airpull C-172N Manual de Maniobras - Aterrizaje en Pista Blanda (Pág. 48-49)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "C172N-NORM-014",
+    "subject_id": "c172n_normal",
+    "learning_objective": "POH Sección 4 - Parada de Motor y Aseguramiento (Securing Airplane)",
+    "stem": "¿Cuál es la forma correcta de apagar el motor Lycoming O-320-H2AD para evitar autoencendido y detonación?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tirar de la palanca de mezcla a la posición CORTADA (Idle Cut-Off); una vez que el motor se detenga por completo, poner el contacto de magnetos en OFF y luego el Master Switch en OFF",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Girar la llave de magnetos directamente a OFF con la mezcla rica",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cortar la válvula de combustible y esperar 5 minutos a que se vacíe el conducto",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Apagar primero el Master Switch manteniendo el motor a 1500 RPM",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los motores de aviación se apagan cortando la mezcla (Idle Cut-Off) para consumir el combustible de los conductos y cilindros. Si se apagan cortando el contacto con mezcla rica, el combustible residual caliente puede provocar autoencendido (dieseling).",
+      "references": [
+        "Cessna 172N POH - Section 4: Normal Procedures - Securing Airplane",
+        "C-172N Mini Checklist (Pág. 11)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "C172N-NORM-015",
+    "subject_id": "c172n_normal",
+    "learning_objective": "POH Sección 4 - Posición de Mandos durante el Rodaje con Viento (Taxi Wind Corrections)",
+    "stem": "Durante el rodaje (Taxiing) con viento cruzado procedente del cuadrante trasero izquierdo (viento de cola izquierda), ¿cuál es la posición correcta de mandos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alerón izquierdo abajo (volante girado a la derecha) y timón de profundidad completamente picado / adelante (Dive away from the wind)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Alerón izquierdo arriba y volante completamente tirado atrás",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mandos centrados neutrales",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Volante girado a la izquierda y timón de profundidad atrás",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Con viento de cola de un lado, el viento golpea las superficies desde atrás: se deflexiona el alerón de ese lado hacia abajo (girando volante al lado opuesto) y el timón de profundidad hacia abajo (volante adelante) para evitar que el viento levante el ala o la cola.",
+      "references": [
+        "Cessna 172N POH - Section 4: Normal Procedures - Taxiing (Wind Deflections)",
+        "Airpull C-172N Manual de Maniobras (Pág. 9)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "C172N-NORM-016",
+    "subject_id": "c172n_normal",
+    "learning_objective": "POH Sección 4 - Puesta en Marcha con Motor Ahogado (Flooded Engine)",
+    "stem": "Si el motor se ahoga por exceso de cebador durante la puesta en marcha, ¿cuál es el procedimiento estándar de arranque?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mezcla: CORTADA (Idle Cut-Off); Gases (Throttle): ABIERTO 1/2 a fondo; Accionar estárter; Al arrancar el motor, reducir gases a 1000 RPM y avanzar la mezcla suavemente a RICA",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Bombear el Primer 6 veces adicionales con la mezcla rica",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Poner la calefacción de carburador en ON y cerrar totalmente los gases",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Esperar 2 horas sin tocar ningún mando",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para despejar el exceso de gasolina líquida en los cilindros, se corta la mezcla (Idle Cut-Off) y se abren los gases (1/2 a FULL) para introducir aire fresco mientras gira el estárter. Al dar la primera explosión, se retrasa el acelerador y se introduce mezcla rica.",
+      "references": [
+        "Cessna 172N POH - Section 4: Normal Procedures - Starting Engine (Flooded Engine)",
+        "Airpull C-172N Manual de Maniobras (Pág. 2)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "C172N-NORM-017",
+    "subject_id": "c172n_normal",
+    "learning_objective": "POH Sección 4 - Precaución con la Hélice al Conectar el Master",
+    "stem": "De acuerdo con el aviso (WARNING) de la inspección de cabina, ¿cómo debe tratarse la hélice al conectar el Master Switch o moverla manualmente en tierra?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tratar siempre la hélice como si el interruptor de encendido de magnetos estuviera en ON, evitando que cualquier persona permanezca en su arco de giro (un cable suelto o fallo de masa puede encender el motor)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se puede girar libremente sin peligro si las llaves no están en el cuadro",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo entraña peligro si la palanca de gases está abierta a fondo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La hélice solo puede girar si se acciona el estárter eléctrico",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El aviso del POH advierte expresamente: 'treat the propeller as if the ignition switch were on. Do not stand, nor allow anyone else to stand, within the arc of the propeller, since a loose or broken P-lead wire could cause the propeller to rotate'.",
+      "references": [
+        "Cessna 172N POH - Section 4: Normal Procedures - Cabin Preflight Warning",
+        "C-172N Mini Checklist (Pág. 3)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "C172N-NORM-018",
+    "subject_id": "c172n_normal",
+    "learning_objective": "POH Sección 4 - Velocidades de Maniobras Instrumentales IFR",
+    "stem": "Según el manual de procedimientos, ¿cuáles son las velocidades estándar para el ascenso en ruta IFR y para la velocidad de espera (Holding Speed) en la C172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ascenso en ruta IFR: 80 KIAS (Flaps 0°); Velocidad de espera / holding: 90 KIAS (Flaps 0°)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Ascenso en ruta IFR: 65 KIAS; Velocidad de espera: 110 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Ascenso en ruta IFR: 95 KIAS; Velocidad de espera: 70 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Ascenso en ruta IFR: 70 KIAS; Velocidad de espera: 120 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En el apartado 8.2 (Velocidades Maniobras IFR) se establece: Ascenso en ruta = 80 KIAS, Eses/espirales = 80 KIAS, y Velocidad de espera y aproximación inicial = 90 KIAS en configuración limpia.",
+      "references": [
+        "Airpull C-172N Manual de Maniobras - Velocidades Maniobras IFR (Pág. 62)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "C172N-NORM-019",
+    "subject_id": "c172n_normal",
+    "learning_objective": "POH Sección 4 - Ajuste de Compensador de Profundidad para Despegue",
+    "stem": "Durante la lista 'Antes del Despegue' (Before Takeoff), ¿dónde debe colocarse el indicador de la rueda del compensador de profundidad (Elevator Trim)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alineado en la marca 'TAKEOFF' (rango de despegue)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "A fondo hacia morro arriba (Full Nose UP)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "A fondo hacia morro abajo (Full Nose DOWN)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En el extremo superior de la escala",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El compensador longitudinal debe situarse en la posición 'TAKEOFF' para asegurar fuerzas de mando neutras durante la carrera de aceleración y rotación suave a 55-60 KIAS.",
+      "references": [
+        "Cessna 172N POH - Section 4: Normal Procedures - Before Takeoff Checklist",
+        "C-172N Mini Checklist (Pág. 7)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "C172N-NORM-020",
+    "subject_id": "c172n_normal",
+    "learning_objective": "POH Sección 4 - Uso del Cebador Manual (Primer)",
+    "stem": "¿Cómo debe asegurarse el cebador manual (Engine Primer) tras completar la secuencia de arranque del motor?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Completamente empujado hacia adentro y girado para bloquear el cerrojo (IN and LOCKED)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Tirado hacia afuera a mitad de recorrido durante el vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Desbloqueado para permitir alimentación auxiliar de combustible",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Girar el cebador en sentido horario sin empujarlo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Si el cebador no queda enclavado en posición IN and LOCKED, la succión del motor puede aspirar gasolina cruda a través de la bomba de cebado hacia los cilindros, enriqueciendo incontroladamente la mezcla y pudiendo provocar fallos de motor.",
+      "references": [
+        "Cessna 172N POH - Section 4: Normal Procedures - Starting Engine",
+        "C-172N Mini Checklist (Pág. 5)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "C172N-SYS-001",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Independencia del Sistema de Encendido por Magnetos",
+    "stem": "¿Por qué el sistema de encendido del motor Lycoming O-320-H2AD continúa funcionando aunque se corte el Master Switch o se descargue por completo la batería en vuelo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Porque las dos magnetos son generadores autónomos de alta tensión accionados mecánicamente por el motor, totalmente independientes de la batería y del alternador",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Porque disponen de una batería secundaria de litio oculta en el panel de fusibles",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Porque la energía se obtiene de la bomba de vacío mecánica",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Porque las bujías funcionan por autoencendido diésel al calentarse",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El sistema de encendido consta de dos magnetos accionadas por el engranaje del motor. Cada magneto genera su propia corriente de alta tensión para sus 4 bujías asociadas sin requerir ningún suministro eléctrico del avión. Cortar el Master Switch no detiene el motor.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Ignition System (Page 7-9)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "C172N-SYS-002",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Arquitectura del Sistema Eléctrico",
+    "stem": "¿Cómo está constituido el sistema eléctrico básico de la Cessna 172N (modelos 1978 y posteriores)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sistema de 28 Voltios DC alimentado por un alternador accionado por correa de 28V (60A) y una batería de 24 Voltios (14 Ah)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Sistema de 12 Voltios DC con generador de dinamo de 30A",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Sistema de corriente alterna trifásica a 115V / 400Hz",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Sistema de 48 Voltios con doble alternador en paralelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "A partir del modelo 1978, la Cessna 172N incorporó el sistema eléctrico moderno de 28 VDC con alternador de 60 Amperios y batería de 24V situada en el cortafuegos, protegido por disyuntores de pulsar/tirar (Circuit Breakers).",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Electrical System (Page 7-16)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "C172N-SYS-003",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Funcionamiento del Interruptor Maestro Doble (Split Master Switch)",
+    "stem": "En el interruptor maestro basculante doble (Split Master Switch), ¿qué circuito controla cada una de las dos mitades independientes?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El lado izquierdo (ALT) controla el campo del alternador y el lado derecho (BAT) conecta la batería al bus principal",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El lado izquierdo controla las luces y el lado derecho la radio",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El lado izquierdo controla la bomba de combustible y el lado derecho las magnetos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El lado izquierdo activa el cebador y el lado derecho la calefacción de pitot",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El Master Switch es un interruptor doble partido: la mitad derecha 'BAT' conecta la batería al sistema eléctrico principal y la mitad izquierda 'ALT' conecta el circuito de excitación del alternador, permitiendo aislar el alternador en caso de fallo eléctrico sin desconectar la batería.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Master Switch (Page 7-16)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "C172N-SYS-004",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Indicación del Amperímetro (Ammeter)",
+    "stem": "¿Qué mide exactamente el amperímetro del panel de instrumentos en la Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mide la corriente neta de carga (hacia la batería) o de descarga (desde la batería hacia los sistemas)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mide la producción total de corriente que genera el alternador",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mide el voltaje instantáneo de las bujías de encendido",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mide la resistencia interna del motor de arranque",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El amperímetro está intercalado en la línea entre la batería y el bus principal. Con el alternador operativo marca una pequeña deflexión positiva (tasa de recarga de batería tras el arranque); si marca cero o deflexión negativa, la batería está suministrando corriente al sistema por fallo de generación.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Ammeter"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "C172N-SYS-005",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Sistema de Flaps Ranurados Accionados Eléctricamente",
+    "stem": "¿Cómo funciona el mecanismo de accionamiento de los flaps de ala en la Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flaps de tipo ranurado (Single-slot) accionados por un motor eléctrico reversible situado en el plano derecho, transmitido mediante cables y poleas con selector de 0° a 40°",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Flaps hidráulicos accionados por una palanca manual de bombeo entre los asientos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Flaps neumáticos alimentados por la bomba de vacío",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Flaps de accionamiento mecánico manual directo por palanca de 3 posiciones",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los flaps de la C172N son de tipo ranurado único accionados por un motor eléctrico de 28V instalado en el interior de la semiala derecha, sincronizados mediante cables de acero a ambas alas con selector graduado en el panel.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Wing Flap System (Page 7-8)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "C172N-SYS-006",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Sistema de Alimentación por Carburador de Flotador",
+    "stem": "¿Qué modelo de carburador equipa el motor Lycoming O-320-H2AD y qué dispositivo incorpora para evitar formación de hielo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Carburador de flotador de tiro ascendente Marvel-Schebler MA-4SPA equipado con una válvula de calefacción de aire alternativo caliente tomado de la camisa del silenciador (Carb Heat)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Inyección continua Bendix RSA-5 con bomba de combustible rotativa",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Carburador de membrana tipo diafragma con inyección de alcohol",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Inyección monopunto FADEC electrónica",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El motor monta un carburador de flotador convencional Marvel-Schebler MA-4SPA bajo el motor. Al tirar del mando Carb Heat, una compuerta desvía el aire de admisión haciéndolo pasar por una camisa que rodea el tubo de escape para descongelar el venturi.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Carburetor & Carburetor Heat"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "C172N-SYS-007",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Válvula Selectora de Combustible y Líneas de Venteo",
+    "stem": "En el sistema de combustible de la C172N, ¿cómo se ventilan los depósitos alares para evitar el vacío que impediría el flujo por gravedad?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A través de un tubo de venteo exterior protegido detrás del montante del ala izquierda y una línea de intercomunicación de gases entre ambos tanques",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "A través de tapones de combustible con orificios abiertos en ambas alas sin conducto interior",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mediante una válvula de presurización eléctrica en el fuselaje",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Los depósitos son flexibles autosellantes y no requieren venteo exterior",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El venteo principal se realiza a través del tubo de ventilación del tanque izquierdo bajo el montante. Un conducto que conecta la parte superior de ambos tanques asegura la ecualización de presiones para que fluya por gravedad.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Fuel System (Page 7-10)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "C172N-SYS-008",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Dirección de Rueda de Morro en Tierra (Nose Gear Steering)",
+    "stem": "¿Cómo se orienta la rueda de morro en tierra durante el rodaje en la Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mediante varillas mecánicas y un muelle amortiguador (bungee) conectado a los pedales del timón (hasta 10° a cada lado) y hasta 30° con frenado diferencial",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mediante un volante director hidráulico (tiller) exclusivo de la mano izquierda",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Es una rueda loca 360° no orientable que gira exclusivamente por frenos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mediante servomotor eléctrico gobernado por los cuernos de mando",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La pata de morro tiene conexión elástica (bungee) a los pedales, permitiendo una orientación de 10° a izquierda/derecha con pedales solos y hasta 30° cuando se combina con el freno de disco diferencial de ese lado.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Nose Gear Steering (Page 7-7)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "C172N-SYS-009",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Sistema de Calefacción de Cabina y Desempañado (Cabin Heat)",
+    "stem": "¿Cómo se calienta el aire para la calefacción y el desempañado del parabrisas en la Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Haciendo pasar aire exterior limpio a través de una camisa metálica sellada que rodea el colector de escape del motor (Muffler Shroud)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "A través de un intercambiador de calor de refrigerante líquido de motor",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mediante resistencias eléctricas de alta potencia alimentadas por el alternador",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mediante aire comprimido procedente de la bomba de vacío",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Al ser un motor refrigerado por aire, la calefacción se obtiene canalizando aire ambiente por la camisa envolvente del silenciador de escape. Por ello, una fisura en el silenciador puede provocar entrada de monóxido de carbono (CO) en cabina.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Cabin Heating, Ventilating & Defrosting (Page 7-18)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "C172N-SYS-010",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Avisador de Pérdida Neumático (Stall Warning Horn)",
+    "stem": "¿Cómo funciona el sistema avisador de pérdida (Stall Warning) en la Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sistema neumático accionado por succión a través de una ranura calibrada en el borde de ataque del ala izquierda, que hace sonar una bocina acústica entre 5 y 10 nudos antes de la pérdida",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Paleta eléctrica conectada a un zumbador electrónico en el panel",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Empujador de palanca (Stick Pusher) hidráulico",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Sensor óptico láser de ángulo de ataque en el morro",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La C172N utiliza un avisador neumático pasivo (no requiere electricidad): al aumentar el ángulo de ataque, el punto de remanso se desplaza, creando una baja presión en la ranura alar izquierda que aspira aire a través de la bocina de cabina 5-10 nudos antes de la entrada en pérdida.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Stall Warning System"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "C172N-SYS-011",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Sistema de Vaciado de Combustible y Colector",
+    "stem": "¿Cuántos puntos de drenaje de combustible accesibles para el piloto existen en la Cessna 172N estándar?",
+    "options": [
+      {
+        "id": "A",
+        "text": "3 puntos de purga: uno bajo el tanque alar izquierdo, uno bajo el tanque alar derecho y el drenaje principal del colector/filtro de morro (Fuel Strainer)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Solamente 1 punto de purga central bajo la panza",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "5 puntos de purga en cada semiala",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No dispone de drenajes accesibles en prevuelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La C172N estándar dispone de 3 drenajes: un drenaje rápido bajo cada tanque alar de gravedad y un drenaje de vaso de decantación (gascolator) accesible mediante el tirador de morro en el compartimento motor.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Fuel System",
+        "C-172N Mini Checklist - Preflight (Pág. 4)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "C172N-SYS-012",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Alimentación del Coordinador de Viraje (Turn Coordinator)",
+    "stem": "En el cuadro de instrumentos estándar de la Cessna 172N, ¿qué fuente de energía alimenta el giróscopo del Coordinador de Viraje (Turn Coordinator)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Energía eléctrica DC procedente del bus eléctrico principal (independiente de la bomba de vacío neumática)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "La bomba de vacío mecánica de motor",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Presión dinámica procedente del tubo pitot",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Un tubo venturi exterior de reserva",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para asegurar redundancia giroscópica ante un fallo de la bomba de vacío (que mueve horizonte y direccional), el giróscopo del Coordinador de Viraje está alimentado por un motor eléctrico de 28V (marcado 'ELEC' en la esfera).",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Turn Coordinator"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "C172N-SYS-013",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Mandos de Vuelo y Compensador de Profundidad",
+    "stem": "¿Cómo se transmiten los movimientos desde los mandos de cabina (volante y pedales) hacia las superficies de control primarias en la Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mediante cables de acero aeronáutico galvanizado, poleas, sectores y varillas de empuje directo (Push-pull rods)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mediante sistema de control fly-by-wire con actuadores electrohidráulicos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mediante servomandos hidráulicos de circuito cerrado",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mediante tubos de torsión neumáticos de alta presión",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los mandos de vuelo de la Cessna 172N son 100% mecánicos manuales tradicionales accionados mediante sistemas de cableado de acero continuo sobre poleas de baquelita hacia los alerones, timón de profundidad y timón de dirección.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Flight Control System (Page 7-7)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "C172N-SYS-014",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Bomba de Vacío Neumático de Motor (Engine-Driven Vacuum Pump)",
+    "stem": "¿Qué tipo de bomba de vacío equipa el motor de la Cessna 172N y qué instrumentos alimenta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bomba de paletas secas de carbono accionada por engranajes del motor, regulada por una válvula de alivio para proporcionar 4.5 a 5.4 inHg al Horizonte Artificial y Direccional",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Bomba hidráulica de pistones axiales que alimenta los tres giróscopos de vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Compresor eléctrico de diafragma montado bajo el panel de radio",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Tubo venturi supersónico instalado en el borde de ataque",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Monta una bomba de vacío de paletas de carbono secas en la carcasa de accesorios del motor Lycoming, con válvula reguladora que mantiene la succión en el arco verde para los giróscopos de actitud y rumbo.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Vacuum System (Page 7-22)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "C172N-SYS-015",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Sistema de Calefacción del Tubo Pitot (Pitot Heat)",
+    "stem": "¿Qué protege el sistema de calefacción de pitot (Pitot Heat) y qué barra eléctrica lo alimenta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Un elemento calefactor de resistencia eléctrica de 28V integrado en el tubo pitot del ala izquierda para evitar la formación de hielo en la toma dinámica de velocidad, alimentado por el bus eléctrico primario y protegido por disyuntor",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Un conducto de aire caliente tomado del silenciador de escape",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Una resistencia alimentada directamente por las magnetos del motor",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El sistema pitot no dispone de calefacción en la Cessna 172N",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El Pitot Heat es una resistencia eléctrica en el tubo pitot bajo el ala izquierda, accionada por el interruptor basculante PITOT HEAT del panel para garantizar la lectura de velocidad indicada en vuelo en lluvia o frío.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Pitot-Static System (Page 7-21)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "C172N-SYS-016",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Cebador Manual de Inyección a los Cilindros (Engine Primer)",
+    "stem": "En el motor Lycoming O-320-H2AD, ¿a dónde inyecta directamente el combustible la bomba manual del cebador (Primer)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inyecta combustible pulverizado directamente en las tomas de admisión de los cilindros (típicamente 3 cilindros) para facilitar la explosión inicial en frío",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Inyecta combustible directamente en la cuba del carburador",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Inyecta combustible en el colector de escape caliente",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Inyecta combustible en el cárter de aceite del motor",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La bomba del Primer toma combustible filtrado y lo envía a través de tuberías delgadas directamente a los puertos de admisión de los cilindros, proporcionando una mezcla altamente volátil que no depende de la velocidad de paso de aire por el carburador.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Fuel System / Engine Starting"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "C172N-SYS-017",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Compensador de Dirección Ajustable en Tierra",
+    "stem": "¿Cómo se ajusta el compensador del timón de dirección (Rudder Trim) en la Cessna 172N estándar?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mediante una aleta metálica doblable en el borde de salida del timón de dirección ajustable únicamente en tierra por el piloto o mecánico",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mediante una rueda de compensador de timón de dirección en la consola central en cabina",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mediante servo eléctrico gobernado por un pulsador en el volante",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El timón de dirección no dispone de ninguna aleta compensadora",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "A diferencia del compensador de profundidad (que se acciona en vuelo con rueda de cabina), el timón de dirección de la C172N estándar dispone de una aleta de compensación fija ajustable doblando ligeramente la chapa en tierra para compensar la guiñada a potencia de crucero.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Flight Controls (Page 7-7)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "C172N-SYS-018",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Tren Principal en Ballesta de Acero Elástico",
+    "stem": "¿Qué tipo de suspensión y material utilizan las patas principales del tren de aterrizaje de la Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ballestas de acero forjado elástico al cromo-vanadio sin amortiguadores oleoneumáticos",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Puntales telescópicos con amortiguador de aceite y nitrógeno a presión",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cordones elásticos de goma (bungees) como los aviones clásicos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Brazos basculantes de fibra de carbono",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El tren principal de la C172N está formado por dos ballestas de acero cónico de alta resistencia elástica ('Land-O-Matic') que absorben los impactos de aterrizaje por flexión mecánica del acero, requiriendo un mantenimiento mínimo.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Landing Gear"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "C172N-SYS-019",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Disyuntores Térmicos (Circuit Breakers)",
+    "stem": "En caso de que un disyuntor (Circuit Breaker) salte en vuelo por sobrecarga térmica, ¿cuál es la regla de seguridad estipulada en el POH?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Esperar de 2 a 3 minutos para que se enfríe y rearmarlo UNA sola vez; si vuelve a saltar, no rearmar y dar por averiado el circuito",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mantenerlo presionado con el dedo a la fuerza durante todo el vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Rearmarlo repetidamente hasta que se mantenga dentro",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cortar el interruptor de magnetos de inmediato",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los disyuntores protegen el cableado contra incendios por cortocircuito. Se permite un único rearmado tras enfriarse; si salta por segunda vez, existe un cortocircuito permanente y forzarlo causaría fuego en cabina.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Circuit Breakers & Fuses",
+        "C-172N Mini Checklist (Pág. 17)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "C172N-SYS-020",
+    "subject_id": "c172n_systems",
+    "learning_objective": "POH Sección 7 - Luces Estroboscópicas y Faros Anticolisión",
+    "stem": "¿Cuándo deben apagarse las luces estroboscópicas de alta intensidad (Strobe Lights) según las buenas prácticas operacionales de Cessna?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Durante el rodaje en tierra cerca de otras aeronaves y cuando se vuela dentro de nubes, niebla o bruma densa para evitar desorientación espacial por retrodispersión de destellos en la cabina",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Deben permanecer encendidas siempre que el motor esté en marcha sin excepción",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo se encienden en caso de fallo de motor en vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Deben apagarse en todos los despegues nocturnos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las luces estroboscópicas no deben usarse durante el rodaje para no deslumbrar a otros pilotos. Asimismo, al volar en IMC o niebla densa, los destellos reflejados en las gotas de agua pueden provocar ilusión óptica y desorientación espacial.",
+      "references": [
+        "Cessna 172N POH - Section 7: Airplane & Systems Description - Exterior Lighting (Page 7-17)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
     "id": "P2010-EMG-001",
     "subject_id": "p2010_emergency",
     "learning_objective": "AFM Sección 3 - Velocidad de Mejor Planeo (Vglide)",
