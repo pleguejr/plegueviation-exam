@@ -1,12 +1,11 @@
 // apps/web-pwa/api/sync.js - Vercel Serverless Function para Sincronización Multi-Dispositivo de Plegueviation Exam
 
-// Almacén global en memoria persistente entre invocaciones del contenedor
 if (!globalThis._plegueSyncStore) {
   globalThis._plegueSyncStore = new Map();
 }
 
 export default async function handler(req, res) {
-  // Configuración de CORS universal para iPad, iPhone, Safari, Chrome, GitHub Pages y Localhost
+  // Encabezados CORS universales
   res.setHeader('Access-Control-Allow-Credentials', 'true');
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
@@ -19,7 +18,7 @@ export default async function handler(req, res) {
     return res.status(200).end();
   }
 
-  const { pin } = req.query;
+  const pin = req.query?.pin || (req.body && req.body.pin);
 
   // GET: Obtener datos de sincronización del PIN
   if (req.method === 'GET') {
@@ -27,22 +26,21 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: 'Falta el parámetro pin' });
     }
 
-    const cleanPin = pin.trim().toLowerCase();
+    const cleanPin = String(pin).trim().toLowerCase();
     const data = globalThis._plegueSyncStore.get(cleanPin);
 
     if (data) {
       return res.status(200).json({ found: true, data });
     } else {
-      // Devolver 200 con found: false para evitar errores de red en el cliente en PINs nuevos
       return res.status(200).json({ found: false, data: null });
     }
   }
 
-  // POST: Guardar o actualizar progreso para el PIN
-  if (req.method === 'POST') {
+  // POST / PUT: Guardar o actualizar progreso para el PIN
+  if (req.method === 'POST' || req.method === 'PUT') {
     const body = req.body || {};
-    const targetPin = (body.pin || pin || '').trim().toLowerCase();
-    const payload = body.data || body;
+    const targetPin = String(body.pin || pin || '').trim().toLowerCase();
+    const payload = body.data !== undefined ? body.data : body;
 
     if (!targetPin) {
       return res.status(400).json({ error: 'PIN no proporcionado en la petición' });

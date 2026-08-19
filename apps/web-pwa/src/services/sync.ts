@@ -4,9 +4,9 @@ import { QuestionStats, ExamSession, Question } from '../types';
 const SYNC_PIN_STORAGE_KEY = 'plegue_sync_pin';
 const LAST_SYNC_STORAGE_KEY = 'plegue_last_sync_timestamp';
 
-// Infraestructura de Cloud Sync Global (API REST directa con alta disponibilidad y soporte CORS completo)
-const REST_API_BASE = 'https://api.restful-api.dev/objects';
-const MASTER_REGISTRY_ID = 'ff8081819ff5b11001a01b65c491544b';
+// Endpoints de sincronización (relativo para la PWA en Vercel, absoluto como fallback para Safari/iOS/GitHub Pages)
+const PRIMARY_ENDPOINT = '/api/sync';
+const VERCEL_FALLBACK_ENDPOINT = 'https://plegueviation-exam.vercel.app/api/sync';
 
 export function getStoredSyncPin(): string | null {
   return localStorage.getItem(SYNC_PIN_STORAGE_KEY);
@@ -31,7 +31,7 @@ export function setLastSyncTimestamp(ts: number): void {
 }
 
 /**
- * Empaqueta todos los datos locales actuales para subir a la nube.
+ * Empaqueta todos los datos locales actuales en un formato ligero y optimizado.
  */
 export async function getLocalPayload() {
   const [stats, sessions, custom] = await Promise.all([
@@ -40,12 +40,24 @@ export async function getLocalPayload() {
     db.customQuestions.toArray()
   ]);
 
+  // Optimización de sesiones: no duplicar el texto completo de las preguntas del catálogo
+  const compactSessions = sessions.map((sess) => ({
+    sessionId: sess.sessionId,
+    config: sess.config,
+    startTime: sess.startTime,
+    endTime: sess.endTime,
+    isCompleted: sess.isCompleted,
+    score: sess.score,
+    questionIds: (sess.questions || []).map((q) => q.id),
+    answers: sess.answers || {}
+  }));
+
   return {
     app: 'Plegueviation Exam',
     version: '2.0.0',
     syncedAt: Date.now(),
     questionStats: stats,
-    examSessions: sessions,
+    examSessions: compactSessions,
     customQuestions: custom
   };
 }
@@ -76,7 +88,6 @@ export async function mergeRemoteData(remoteData: any): Promise<{
         await db.questionStats.put(remoteStat);
         mergedStatsCount++;
       } else {
-        // Combinar historiales sin duplicados por timestamp
         const combinedHistory = [...(localStat.history || []), ...(remoteStat.history || [])];
         const uniqueHistoryMap = new Map();
         for (const h of combinedHistory) {
@@ -109,10 +120,28 @@ export async function mergeRemoteData(remoteData: any): Promise<{
       if (!remoteSess.sessionId) continue;
       const localSess = await db.examSessions.get(remoteSess.sessionId);
       if (!localSess) {
-        await db.examSessions.put(remoteSess);
+        // Reconstruir sesión si viene en formato compacto
+        const fullSession: ExamSession = {
+          sessionId: remoteSess.sessionId,
+          config: remoteSess.config || { categories: [], count: 20, mode: 'practice', strategy: 'random' },
+          startTime: remoteSess.startTime || Date.now(),
+          endTime: remoteSess.endTime || null,
+          currentIndex: 0,
+          questions: remoteSess.questions || [],
+          answers: remoteSess.answers || {},
+          isCompleted: remoteSess.isCompleted !== false,
+          score: remoteSess.score || null
+        };
+        await db.examSessions.put(fullSession);
         mergedSessionsCount++;
       } else if (remoteSess.isCompleted && !localSess.isCompleted) {
-        await db.examSessions.put(remoteSess);
+        await db.examSessions.put({
+          ...localSess,
+          isCompleted: true,
+          endTime: remoteSess.endTime,
+          score: remoteSess.score,
+          answers: remoteSess.answers || localSess.answers
+        });
         mergedSessionsCount++;
       }
     }
@@ -134,7 +163,7 @@ export async function mergeRemoteData(remoteData: any): Promise<{
 }
 
 /**
- * Realiza una petición fetch con timeout de seguridad (8s)
+ * Realiza una petición fetch con timeout seguro (8s)
  */
 async function apiFetch(url: string, options: RequestInit = {}, timeoutMs = 8000): Promise<Response> {
   const controller = new AbortController();
@@ -174,107 +203,80 @@ export async function syncWithCloud(pin?: string): Promise<{
     return { success: false, message: 'Sin conexión a internet. Se sincronizará automáticamente al reconectar.' };
   }
 
-  try {
-    // Paso 1: Consultar el Registro Maestro de PINs en la nube
-    let masterPinsMap: Record<string, string> = {};
+  const endpoints = [
+    PRIMARY_ENDPOINT,
+    VERCEL_FALLBACK_ENDPOINT
+  ];
+
+  let remotePayload: any = null;
+  let successfulGetEndpoint: string | null = null;
+
+  // Paso 1: Intentar leer datos de la nube
+  for (const ep of endpoints) {
     try {
-      const regRes = await apiFetch(`${REST_API_BASE}/${MASTER_REGISTRY_ID}`, { method: 'GET' });
-      if (regRes.ok) {
-        const regJson = await regRes.json();
-        masterPinsMap = regJson.data?.pins || {};
+      const url = `${ep}?pin=${encodeURIComponent(activePin)}`;
+      const res = await apiFetch(url, { method: 'GET' });
+
+      const ct = res.headers.get('content-type') || '';
+      if (res.ok && ct.includes('application/json')) {
+        const json = await res.json();
+        if (json && json.found && json.data) {
+          remotePayload = json.data;
+        }
+        successfulGetEndpoint = ep;
+        break;
       }
     } catch (e) {
-      console.warn('Error reading master registry:', e);
+      // Probar siguiente endpoint
     }
+  }
 
-    let docId = masterPinsMap[activePin];
-    let remotePayload: any = null;
+  // Paso 2: Si encontramos datos remotos en la nube, fusionarlos con los locales
+  if (remotePayload) {
+    await mergeRemoteData(remotePayload);
+  }
 
-    // Paso 2: Si el PIN ya existe en la nube, descargar y fusionar sus datos
-    if (docId) {
-      try {
-        const docRes = await apiFetch(`${REST_API_BASE}/${docId}`, { method: 'GET' });
-        if (docRes.ok) {
-          const docJson = await docRes.json();
-          remotePayload = docJson.data;
-        }
-      } catch (e) {
-        console.warn('Error reading remote data doc:', e);
-      }
-    }
+  // Paso 3: Obtener el estado local final (fusionado) y subirlo a la nube
+  const finalPayload = await getLocalPayload();
+  let uploadSuccess = false;
 
-    if (remotePayload) {
-      await mergeRemoteData(remotePayload);
-    }
+  const targetEndpoints = successfulGetEndpoint ? [successfulGetEndpoint] : endpoints;
 
-    // Paso 3: Obtener el estado local final (fusionado) y subirlo a la nube
-    const finalPayload = await getLocalPayload();
-    let savedSuccessfully = false;
-
-    if (docId) {
-      // Actualizar documento existente
-      const putRes = await apiFetch(`${REST_API_BASE}/${docId}`, {
-        method: 'PUT',
-        body: JSON.stringify({
-          name: `plegue-sync-${activePin}`,
-          data: finalPayload
-        })
-      });
-      if (putRes.ok) {
-        savedSuccessfully = true;
-      }
-    }
-
-    // Si no existía o falló el PUT, crear nuevo documento y registrarlo
-    if (!savedSuccessfully) {
-      const postRes = await apiFetch(REST_API_BASE, {
+  for (const ep of targetEndpoints) {
+    try {
+      const res = await apiFetch(ep, {
         method: 'POST',
         body: JSON.stringify({
-          name: `plegue-sync-${activePin}`,
+          pin: activePin,
           data: finalPayload
         })
       });
 
-      if (postRes.ok) {
-        const newDocJson = await postRes.json();
-        docId = newDocJson.id;
-        savedSuccessfully = true;
-
-        // Actualizar el Registro Maestro con el nuevo PIN -> docId
-        masterPinsMap[activePin] = docId;
-        try {
-          await apiFetch(`${REST_API_BASE}/${MASTER_REGISTRY_ID}`, {
-            method: 'PUT',
-            body: JSON.stringify({
-              name: 'plegueviation-master-registry-v1',
-              data: { pins: masterPinsMap }
-            })
-          });
-        } catch (regErr) {
-          console.warn('Error updating master registry with new PIN:', regErr);
+      const ct = res.headers.get('content-type') || '';
+      if (res.ok && ct.includes('application/json')) {
+        const json = await res.json();
+        if (json && json.success) {
+          uploadSuccess = true;
+          break;
         }
       }
+    } catch (e) {
+      // Probar siguiente endpoint
     }
+  }
 
-    if (savedSuccessfully) {
-      const now = Date.now();
-      setLastSyncTimestamp(now);
-      return {
-        success: true,
-        message: 'Sincronización completada exitosamente.',
-        syncedAt: now
-      };
-    } else {
-      return {
-        success: false,
-        message: 'No se pudo guardar los datos en la nube. Revisa tu conexión a internet.'
-      };
-    }
-  } catch (err: any) {
-    console.error('Error during cloud sync:', err);
+  if (uploadSuccess) {
+    const now = Date.now();
+    setLastSyncTimestamp(now);
+    return {
+      success: true,
+      message: 'Sincronización completada exitosamente.',
+      syncedAt: now
+    };
+  } else {
     return {
       success: false,
-      message: `Error al sincronizar: ${err?.message || err}`
+      message: 'No se pudo conectar con el servidor de sincronización. Vercel se está actualizando; prueba de nuevo en unos segundos.'
     };
   }
 }
