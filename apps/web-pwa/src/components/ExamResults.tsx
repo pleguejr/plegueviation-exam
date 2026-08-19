@@ -15,6 +15,7 @@ import {
   Flame
 } from 'lucide-react';
 import { ExamSession, Question } from '../types';
+import { SpeedSummaryTable } from './SpeedSummaryTable';
 
 interface ExamResultsProps {
   session: ExamSession;
@@ -260,10 +261,28 @@ export const ExamResults: React.FC<ExamResultsProps> = ({
                     </div>
 
                     {/* Explanation */}
-                    <div className="p-4 rounded-xl bg-aviation-950/90 border border-slate-800 text-xs space-y-2">
+                    <div className="p-4 rounded-xl bg-aviation-950/90 border border-slate-800 text-xs space-y-3">
                       <span className="font-bold text-slate-300 uppercase tracking-wide text-[11px]">Explicación Técnica:</span>
-                      <p className="text-slate-300 leading-relaxed">{q.explanation.text}</p>
+                      <p className="text-slate-300 leading-relaxed whitespace-pre-line">{q.explanation.text}</p>
                       
+                      {/* Cuadro Resumen de Velocidades si aplica */}
+                      {(q.id.includes('SPD') ||
+                        q.subject_id.includes('velocidad') ||
+                        q.subject_id.includes('limitaciones') ||
+                        q.stem.toLowerCase().includes('kias') ||
+                        q.stem.toLowerCase().includes('velocidad') ||
+                        q.stem.toLowerCase().includes('planeo')) && (
+                        <SpeedSummaryTable
+                          aircraftType={
+                            q.id.startsWith('P2010') || q.stem.includes('P2010') || q.stem.includes('Tecnam')
+                              ? 'p2010'
+                              : q.id.startsWith('C172') || q.stem.includes('172') || q.stem.includes('Cessna')
+                              ? 'c172n'
+                              : 'p2010'
+                          }
+                        />
+                      )}
+
                       {q.explanation.references && (
                         <div className="pt-2 border-t border-slate-800 flex flex-wrap gap-2">
                           {q.explanation.references.map((ref, rIdx) => (

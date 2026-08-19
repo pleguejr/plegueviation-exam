@@ -19,6 +19,7 @@ import {
 } from 'lucide-react';
 import { Question, ExamSession, ExamSessionAnswer, Option, QuestionStats } from '../types';
 import { recordAnswerStat, toggleQuestionFlag, getQuestionStat } from '../services/db';
+import { SpeedSummaryTable } from './SpeedSummaryTable';
 
 interface ExamScreenProps {
   session: ExamSession;
@@ -455,7 +456,25 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
               </div>
 
               <div className="p-4 rounded-xl bg-black/40 border border-slate-800 text-slate-200 text-sm leading-relaxed space-y-3">
-                <p>{currentQuestion.explanation.text}</p>
+                <p className="whitespace-pre-line">{currentQuestion.explanation.text}</p>
+
+                {/* Cuadro Resumen de Velocidades si la pregunta es de velocidades o limitaciones */}
+                {(currentQuestion.id.includes('SPD') ||
+                  currentQuestion.subject_id.includes('velocidad') ||
+                  currentQuestion.subject_id.includes('limitaciones') ||
+                  currentQuestion.stem.toLowerCase().includes('kias') ||
+                  currentQuestion.stem.toLowerCase().includes('velocidad') ||
+                  currentQuestion.stem.toLowerCase().includes('planeo')) && (
+                  <SpeedSummaryTable
+                    aircraftType={
+                      currentQuestion.id.startsWith('P2010') || currentQuestion.stem.includes('P2010') || currentQuestion.stem.includes('Tecnam')
+                        ? 'p2010'
+                        : currentQuestion.id.startsWith('C172') || currentQuestion.stem.includes('172') || currentQuestion.stem.includes('Cessna')
+                        ? 'c172n'
+                        : 'p2010'
+                    }
+                  />
+                )}
 
                 {currentQuestion.explanation.references && currentQuestion.explanation.references.length > 0 && (
                   <div className="pt-3 border-t border-slate-800 space-y-2">
