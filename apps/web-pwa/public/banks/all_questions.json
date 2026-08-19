@@ -1,1 +1,2352 @@
-[]
+[
+  {
+    "id": "P2010-EMG-001",
+    "subject_id": "p2010_emergency",
+    "learning_objective": "AFM Sección 3 - Velocidad de Mejor Planeo (Vglide)",
+    "stem": "En caso de fallo total de motor en vuelo en la Tecnam P2010 TDI, ¿cuál es la velocidad de mejor planeo (Best Glide Speed) a Peso Máximo (1160 kg) en configuración limpia (Flaps UP)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "84 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "73 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "95 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "65 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Sección 3 (Procedimientos de Emergencia) del AFM de la Tecnam P2010 TDI, la velocidad recomendada para obtener el máximo alcance en planeo (Best Glide Speed) con Flaps UP a MTOW es de 84 KIAS, lo que proporciona un ratio de planeo aproximado de 11:1.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - Engine Failure in Flight"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "P2010-EMG-002",
+    "subject_id": "p2010_emergency",
+    "learning_objective": "AFM Sección 3 - Fallo de Motor en Carrera de Despegue",
+    "stem": "Si se produce un fallo o pérdida de potencia de motor durante la carrera de despegue antes de la rotación, ¿cuál es la acción inmediata inicial según los procedimientos de emergencia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Palanca de Potencia (Power Lever) a ralentí (IDLE), aplicar frenos de forma proporcional, mantener control de dirección en pista",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Pulsar el interruptor FADEC TEST inmediatamente y continuar el despegue",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Seleccionar flaps en posición LAND y cortar la válvula de combustible en carrera",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Apagar inmediatamente el Master Switch antes de comenzar a frenar",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La primera e inmediata acción ante un fallo durante la carrera de despegue es reducir la palanca de gases a IDLE, frenar con firmeza y mantener el eje de pista. Una vez la aeronave se detiene o se tiene control del frenado, se corta el Engine Master, la bomba de combustible (Fuel Pump OFF) y el Master Switch.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - Engine Failure During Takeoff Roll"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "P2010-EMG-003",
+    "subject_id": "p2010_emergency",
+    "learning_objective": "AFM Sección 3 - Fallo de Motor Inmediatamente Tras el Despegue",
+    "stem": "Ante un fallo de motor inmediatamente después del despegue a baja altura (< 400 ft AGL), ¿cuál es la regla fundamental de pilotaje indicada en el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Adoptar actitud de planeo para mantener 84 KIAS y aterrizar recto hacia adelante dentro de un sector de +/- 30°, evitando virajes bruscos de regreso a la pista",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Efectuar un viraje escarpado de 180° para regresar a la pista de salida a cualquier altitud",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Activar el interruptor de arranque (Starter) mientras se mantiene la actitud de ascenso",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Extender inmediatamente flaps a 40° sin ajustar la actitud de cabeceo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "A baja cota tras el despegue, la prioridad absoluta es controlar la velocidad de planeo (84 KIAS) y aterrizar en el terreno más despejado enfrente dentro de un cono de +/- 30°. El viraje de 180° a baja altura (el viraje imposible) tiene un riesgo crítico de pérdida/barrena por pérdida de sustentación y factor de carga.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - Engine Failure Immediately After Takeoff"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "P2010-EMG-004",
+    "subject_id": "p2010_emergency",
+    "learning_objective": "AFM Sección 3 - Reencendido en Vuelo por Molinete (Windmilling Restart)",
+    "stem": "Para intentar un reencendido de motor en vuelo por efecto molinete (Windmilling) sin asistencia del estárter en la Tecnam P2010 TDI, ¿cuál es la velocidad mínima de aire requerida?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Al menos 95-100 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "65 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "130 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "80 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para que el flujo de aire sea suficiente para hacer girar la hélice de paso variable y vencer la compresión del motor diésel CD-170 sin usar la batería de arranque, se requiere picar para acelerar a una velocidad mínima de 95 a 100 KIAS con el Engine Master en ON.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - In-Flight Engine Restart"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "P2010-EMG-005",
+    "subject_id": "p2010_emergency",
+    "learning_objective": "AFM Sección 3 - Aviso FADEC A o FADEC B Parpadeando (Blinking)",
+    "stem": "En vuelo, si la luz de aviso 'FADEC A' o 'FADEC B' parpadea (blinking) en el panel de avisos del Garmin G1000 NXi, ¿qué indica este estado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indica que se ha detectado una degradación o fallo menor en ese canal, pero el motor continúa operando con control redundante. Se debe pulsar FADEC TEST brevemente para intentar resetear",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Indica parada inminente del motor en los próximos 60 segundos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Indica que el alternador principal ha fallado por completo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Obliga a apagar inmediatamente el motor y planear",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Una luz FADEC parpadeando indica un fallo no crítico o fallo menor en uno de los sensores/canales. El sistema FADEC es dual y conmuta automáticamente. Pulsar el botón FADEC TEST durante 1-2 segundos permite confirmar o resetear fallos transitorios.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - FADEC Warning Lights",
+        "Continental CD-170 Operation Manual - FADEC Annunciations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "P2010-EMG-006",
+    "subject_id": "p2010_emergency",
+    "learning_objective": "AFM Sección 3 - Aviso FADEC Fijo y Pérdida de Control Automático",
+    "stem": "Si ambas luces FADEC A y FADEC B se encienden fijas y se experimenta una anomalía de empuje, ¿qué acción contempla el AFM mediante el interruptor de respaldo de FADEC?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Seleccionar el interruptor 'FADEC FORCE B' para forzar la operación a través del Canal B si el Canal A estuviera bloqueado o degradado",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Desconectar la batería principal y continuar sin FADEC",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mover la palanca de potencia repetidamente de IDLE a FULL para calibrar",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Tirar de la mezcla para empobrecer el motor",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La aeronave dispone de un interruptor protegido para forzar la operación del Canal B (FADEC Force B Switch) en caso de que el canal maestro A sufra una anomalía grave y la conmutación automática no se haya completado adecuadamente.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - FADEC Dual Failure"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "P2010-EMG-007",
+    "subject_id": "p2010_emergency",
+    "learning_objective": "AFM Sección 3 - Fallo Eléctrico y Batería de Respaldo FADEC (E-Bus)",
+    "stem": "En caso de fallo total de ambos alternadores en vuelo, ¿cuál es la autonomía garantizada que proporciona la batería de respaldo de emergencia del FADEC (Emergency Battery) para mantener el motor en marcha?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Al menos 30 minutos de operación continua del motor y FADEC",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "10 minutos máximos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "60 minutos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El motor diésel no requiere electricidad para funcionar tras el arranque",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "A diferencia de un motor de gasolina tradicional con magnetos, el motor diésel common-rail Continental CD-170 requiere suministro eléctrico continuo para los inyectores y la ECU del FADEC. Por certificación, dispone de una batería de respaldo de emergencia dedicada que garantiza un mínimo de 30 minutos de alimentación para el motor y FADEC.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - Total Electrical Failure",
+        "Section 7: Description of the Airplane and its Systems - Electrical System"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "P2010-EMG-008",
+    "subject_id": "p2010_emergency",
+    "learning_objective": "AFM Sección 3 - Fuego de Motor en Vuelo (Engine Fire in Flight)",
+    "stem": "Ante una indicación o confirmación visual de fuego de motor en vuelo en la Tecnam P2010 TDI, ¿cuáles son los pasos inmediatos del procedimiento de emergencia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fuel Selector Valve: OFF; Engine Master: OFF; Cabin Heat / Defrost: OFF; Establecer velocidad de planeo (84 KIAS) y proceder a aterrizaje forzoso",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Acelerar a 100% Load para consumir rápidamente el combustible restante del motor",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Encender la bomba eléctrica auxiliar (Fuel Pump ON) y abrir la calefacción de cabina al máximo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Efectuar un viraje escarpado de 360° para apagar las llamas con el viento",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En caso de fuego de motor, las prioridades son: 1) Cortar el suministro de combustible (Fuel Selector OFF), 2) Cortar la inyección y el motor (Engine Master OFF), 3) Cerrar la calefacción/ventilación (Cabin Heat OFF) para evitar la entrada de humo y gases tóxicos en cabina, y 4) Planear hacia el aterrizaje forzoso.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - Engine Fire in Flight"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "P2010-EMG-009",
+    "subject_id": "p2010_emergency",
+    "learning_objective": "AFM Sección 3 - Temperatura Alta de Refrigerante (High Coolant Temp > 105°C)",
+    "stem": "Si en crucero la temperatura de refrigerante de motor (Coolant Temp) entra en el arco rojo (> 105°C), ¿cuál es el procedimiento operacional recomendado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reducir potencia de motor, aumentar la velocidad indicada para mejorar el flujo de aire de refrigeración y vigilar la temperatura de aceite; si no se normaliza, planificar aterrizaje en el aeródromo más próximo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Apagar inmediatamente el motor y efectuar planeo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Poner la palanca de gases al 100% Load para aumentar el régimen de la bomba de agua",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Conmutar el selector de combustible a la posición OFF durante 10 segundos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Una temperatura de refrigerante excesiva se gestiona reduciendo la potencia demandada al motor y bajando el morro para incrementar la velocidad indicada de aire a través del radiador. Si la temperatura no desciende, se debe aterrizar en el aeródromo más cercano antes de sufrir daños térmicos.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - High Coolant Temperature"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "P2010-EMG-010",
+    "subject_id": "p2010_emergency",
+    "learning_objective": "AFM Sección 3 - Pérdida de Presión de Aceite en Vuelo (Low Oil Pressure)",
+    "stem": "Si el indicador de presión de aceite cae por debajo de 1.0 bar (línea roja) acompañado de un incremento de la temperatura de aceite, ¿qué contingencia operacional debe asumirse?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fallo inminente de motor por pérdida o fuga de lubricante; reducir potencia al mínimo indispensable y prepararse para un aterrizaje forzoso inmediato",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Fallo exclusivo del sensor eléctrico de presión sin riesgo mecánico alguno",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aumentar potencia para restablecer la presión hidráulica del FADEC",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Descender inmediatamente a nivel del mar para aumentar la presión atmosférica del cárter",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Una caída drástica de presión de aceite acompañada de aumento de temperatura de aceite es síntoma inequívoco de fallo inminente del motor por falta de lubricación. El piloto debe reducir potencia para prolongar la vida útil del motor el tiempo que tarde en colocarse en planeo hacia un campo seguro.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - Low Oil Pressure"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "P2010-EMG-011",
+    "subject_id": "p2010_emergency",
+    "learning_objective": "AFM Sección 3 - Descenso de Emergencia (Emergency Descent)",
+    "stem": "Para ejecutar un descenso de emergencia rápido (Emergency Descent) en la Tecnam P2010 TDI en aire en calma, ¿cuál es la configuración recomendada por el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Power Lever: IDLE; Flaps: UP; Velocidad: hasta Vno (130 KIAS) o Vne en aire completamente en calma",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Flaps: LAND (40°); Velocidad: 130 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Power Lever: 100%; Flaps: T/O; Velocidad: 70 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cortar el Engine Master y planear a 60 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para un descenso rápido de emergencia en configuración limpia, se reduce la potencia a IDLE y se mantiene una velocidad de hasta 130 KIAS (Vno). Con flaps extendidos no se debe superar su Vfe (96 KIAS para Flaps LAND).",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - Emergency Descent"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "P2010-EMG-012",
+    "subject_id": "p2010_emergency",
+    "learning_objective": "AFM Sección 3 - Fallo de Pantalla PFD / Reversionary Mode",
+    "stem": "En caso de fallo de la pantalla principal de vuelo (PFD) del sistema Garmin G1000 NXi, ¿cómo se recuperan los instrumentos de vuelo y parámetros de motor?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El sistema activa automáticamente el modo de reversión (Reversionary Mode) en el MFD, o el piloto puede forzarlo pulsando el botón rojo 'DISPLAY BACKUP' en el panel de audio",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Los datos de vuelo solo se pueden consultar en los instrumentos analógicos de reserva situados en la parte inferior",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se debe reiniciar el interruptor AVIONICS MASTER en vuelo durante 30 segundos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El motor se apaga automáticamente al perder el PFD",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El Garmin G1000 NXi dispone del botón rojo 'DISPLAY BACKUP' en el panel de audio GMA 1360. Al pulsarlo (o automáticamente por detección de fallo), el MFD muestra una pantalla combinada con horizonte artificial, anemómetro, altímetro e instrumentos de motor (EIS).",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - Avionics System Failures",
+        "Garmin G1000 NXi Cockpit Reference Guide for Tecnam P2010"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "P2010-EMG-013",
+    "subject_id": "p2010_emergency",
+    "learning_objective": "AFM Sección 3 - Aterrizaje Forzoso sin Potencia (Forced Landing)",
+    "stem": "Durante la fase final de un aterrizaje de emergencia sin potencia (Forced Landing), ¿cuándo se deben extender los Flaps a posición LAND (40°)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Únicamente cuando el aterrizaje en el campo seleccionado esté completamente asegurado",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Inmediatamente al comenzar el planeo a 3000 ft AGL",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Nunca se deben usar flaps en un aterrizaje forzoso",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Antes de virar a tramo de viento en cola",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En una aproximación forzada sin motor, los flaps generan una gran resistencia aerodinámica que degrada el ratio de planeo. Por tanto, se mantienen en posición UP (o T/O) y solo se pasa a LAND (40°) en corta final cuando el toque dentro del campo esté 100% asegurado.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - Forced Landing Without Engine Power"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "P2010-EMG-014",
+    "subject_id": "p2010_emergency",
+    "learning_objective": "AFM Sección 3 - Recuperación de Pérdida Inadvertida (Stall Recovery)",
+    "stem": "¿Cuál es el procedimiento estándar de recuperación ante el aviso de pérdida (Stall Warning Horn / Buffet) en la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reducir ángulo de ataque (morro abajo con timón de profundidad), nivelar planos con timón de dirección/alerones y aplicar potencia de forma suave y progresiva",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Tirar de la palanca hacia atrás con fuerza y meter pie contrario a fondo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Extender flaps a 40° inmediatamente antes de bajar el morro",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cortar potencia a IDLE y mantener el morro alto",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La primera y primordial acción ante la pérdida es reducir el ángulo de ataque bajando el morro. Seguidamente se nivelan las alas coordinando con timón y se aplica potencia de manera suave para evitar guiñadas inducidas por el par motor del CD-170.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - Stall Recovery"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "P2010-EMG-015",
+    "subject_id": "p2010_emergency",
+    "learning_objective": "AFM Sección 3 - Fallo del Alternador Principal (Main Alternator Failure)",
+    "stem": "Si el aviso 'MAIN ALT' se ilumina en ámbar indicando fallo del alternador principal (70A), ¿qué medida de gestión eléctrica debe tomar el piloto?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Comprobar el disyuntor (Circuit Breaker) del alternador, desconectar cargas eléctricas no esenciales (deshielo de pitot si no está en IMC, luces exteriores secundarias) y monitorizar el voltaje del sistema",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Apagar inmediatamente la batería principal",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Poner la palanca de potencia al 100% para reactivar el alternador",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cortar el Engine Master",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Ante un fallo de alternador principal, el piloto debe reducir el consumo eléctrico (shedding no esencial) para preservar la carga de la batería y asegurar la alimentación del sistema de aviónica y FADEC hasta el aterrizaje.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - Electrical System Malfunctions"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "P2010-LIM-001",
+    "subject_id": "p2010_limitations",
+    "learning_objective": "AFM Sección 2 - Velocidades Límite de Estructura",
+    "stem": "En la Tecnam P2010 TDI, ¿cuál es la Velocidad de Nunca Exceder (Vne) expresada en velocidad indicada (KIAS)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "166 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "145 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "130 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "180 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Sección 2 (Limitaciones) del AFM de la Tecnam P2010 TDI, la Vne (Never Exceed Speed) es de 166 KIAS. Superar esta velocidad puede causar daños estructurales catastróficos o fallo aeroelástico (flutter).",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 2: Limitations - Airspeed Limitations (Table 2-1)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "P2010-LIM-002",
+    "subject_id": "p2010_limitations",
+    "learning_objective": "AFM Sección 2 - Velocidades Límite de Flaps (Vfe)",
+    "stem": "¿Cuáles son las velocidades máximas de operación de flaps (Vfe) para las posiciones T/O (15°) y LAND (40°) en la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flaps T/O (15°): 106 KIAS; Flaps LAND (40°): 96 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Flaps T/O (15°): 115 KIAS; Flaps LAND (40°): 85 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Flaps T/O (15°): 100 KIAS; Flaps LAND (40°): 90 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Flaps T/O (15°): 90 KIAS; Flaps LAND (40°): 75 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En la Tecnam P2010 TDI, la velocidad máxima con flaps en posición de despegue (Flaps T/O 15°) es de 106 KIAS, mientras que la velocidad máxima con flaps en configuración de aterrizaje (Flaps LAND 40°) es de 96 KIAS.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 2: Limitations - Airspeed Limitations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "P2010-LIM-003",
+    "subject_id": "p2010_limitations",
+    "learning_objective": "AFM Sección 2 - Velocidad de Maniobra (Va)",
+    "stem": "¿Cuál es la Velocidad de Maniobra de Diseño (Va) de la Tecnam P2010 TDI a Peso Máximo al Despegue (MTOW 1160 kg)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "120 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "105 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "135 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "95 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La velocidad de maniobra (Va) a MTOW (1160 kg) es de 120 KIAS. Por encima de esta velocidad, las deflexiones completas o bruscas de los mandos de vuelo pueden inducir cargas estructurales superiores a los límites certificados.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 2: Limitations - Airspeed Limitations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "P2010-LIM-004",
+    "subject_id": "p2010_limitations",
+    "learning_objective": "AFM Sección 2 - Velocidad Máxima de Crucero Estructural (Vno)",
+    "stem": "En la Tecnam P2010 TDI, la Velocidad Máxima de Crucero Estructural (Vno), que marca el inicio del arco amarillo en el anemómetro, es de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "130 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "145 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "120 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "155 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La Vno (Maximum Structural Cruising Speed) es de 130 KIAS. Esta velocidad no debe excederse excepto en aire en calma y con precaución (rango de precaución / arco amarillo entre 130 y 166 KIAS).",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 2: Limitations - Airspeed Indicator Markings"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "P2010-LIM-005",
+    "subject_id": "p2010_limitations",
+    "learning_objective": "AFM Sección 2 - Limitaciones de Peso (MTOW / MZFW / MLW)",
+    "stem": "¿Cuál es el Peso Máximo de Despegue (MTOW) y el Peso Máximo de Aterrizaje (MLW) certificado para la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "MTOW: 1160 kg (2557 lb); MLW: 1160 kg (2557 lb)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "MTOW: 1200 kg; MLW: 1100 kg",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "MTOW: 1160 kg; MLW: 1050 kg",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "MTOW: 1100 kg; MLW: 1100 kg",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La Tecnam P2010 TDI tiene un Peso Máximo al Despegue (MTOW) de 1160 kg (2557 lb) y un Peso Máximo al Aterrizaje (MLW) idéntico de 1160 kg (2557 lb), lo que permite aterrizar inmediatamente tras el despegue sin restricciones estructurales por sobrepeso.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 2: Limitations - Weights and Loading"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "P2010-LIM-006",
+    "subject_id": "p2010_limitations",
+    "learning_objective": "AFM Sección 2 - Factores de Carga Límite (G-limits)",
+    "stem": "¿Cuáles son los factores de carga límite (Load Factor Limits) certificados para la Tecnam P2010 TDI en configuración limpia (Flaps UP)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "+3.8 g y -1.52 g",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "+4.4 g y -2.0 g",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "+3.5 g y -1.0 g",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "+2.5 g y -1.0 g",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Como aeronave certificada en categoría Normal (CS-23 / FAR 23), los límites de factor de carga con Flaps UP son +3.8 g positivo y -1.52 g negativo. Con Flaps DOWN en cualquier posición, el límite positivo es +2.0 g y 0 g negativo.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 2: Limitations - Flight Load Factors"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "P2010-LIM-007",
+    "subject_id": "p2010_limitations",
+    "learning_objective": "AFM Sección 2 - Límites de Motor Continental CD-170 (Potencia y RPM)",
+    "stem": "En el motor Continental CD-170 que equipa la Tecnam P2010 TDI, ¿cuál es la potencia máxima al despegue (Takeoff Power) y el límite de tiempo continuo asociado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "170 HP (125 kW) a 2300 RPM de hélice, límite máximo de 5 minutos (100% Load)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "180 HP a 2700 RPM sin límite de tiempo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "155 HP a 2300 RPM, límite máximo de 10 minutos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "170 HP a 2500 RPM de hélice continuo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El motor Continental CD-170 produce 170 HP (125 kW) a 2300 RPM en la hélice al 100% de carga (Load) con una limitación temporal de Takeoff Power de 5 minutos máximos. La potencia máxima continua (Max Continuous Power) es de 155 HP (114 kW) al 91% Load.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 2: Limitations - Powerplant Limitations",
+        "Continental Aerospace Technologies CD-170 Engine Manual - Operating Limits"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "P2010-LIM-008",
+    "subject_id": "p2010_limitations",
+    "learning_objective": "AFM Sección 2 - Temperatura de Aceite de Motor (Oil Temp)",
+    "stem": "En la Tecnam P2010 TDI, ¿cuál es el rango operativo normal (arco verde) y la temperatura máxima permisible de aceite de motor (Oil Temp)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rango normal: 50°C a 135°C; Temperatura máxima: 140°C",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Rango normal: 70°C a 110°C; Temperatura máxima: 120°C",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Rango normal: 40°C a 100°C; Temperatura máxima: 115°C",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Rango normal: 60°C a 150°C; Temperatura máxima: 160°C",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En el motor diésel Continental CD-170, la temperatura mínima de aceite para el arranque es -30°C, la temperatura mínima para el despegue es 50°C, el rango operativo normal es de 50°C a 135°C y la temperatura máxima absoluta de aceite es de 140°C.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 2: Limitations - Engine Instrument Markings"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "P2010-LIM-009",
+    "subject_id": "p2010_limitations",
+    "learning_objective": "AFM Sección 2 - Temperatura de Refrigerante (Coolant Temp)",
+    "stem": "¿Cuál es la temperatura máxima de refrigerante de motor (Coolant Temperature) autorizada en la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "105°C",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "120°C",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "95°C",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "135°C",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La temperatura de refrigerante de motor (Coolant Temp) tiene un límite máximo absoluto de 105°C (línea roja). El rango operativo normal en el EIS del Garmin G1000 NXi es de 60°C a 100°C.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 2: Limitations - Engine Instrument Markings"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "P2010-LIM-010",
+    "subject_id": "p2010_limitations",
+    "learning_objective": "AFM Sección 2 - Presión de Aceite de Motor (Oil Pressure)",
+    "stem": "Durante la operación continua del motor Continental CD-170 en vuelo, ¿cuál es el rango normal de presión de aceite (Oil Pressure)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "2.3 bar a 6.0 bar (33 a 87 PSI)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "1.0 bar a 3.5 bar (15 a 50 PSI)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "4.5 bar a 8.0 bar (65 a 115 PSI)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "0.8 bar a 2.0 bar (12 a 29 PSI)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El rango operativo normal de presión de aceite del CD-170 es de 2.3 a 6.0 bar (33 a 87 PSI). La presión mínima en ralentí es 1.0 bar (14.5 PSI) y la presión máxima permitida en arranque en frío es 6.5 bar (94 PSI).",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 2: Limitations - Powerplant Instrument Markings"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "P2010-LIM-011",
+    "subject_id": "p2010_limitations",
+    "learning_objective": "AFM Sección 2 - Capacidad y Límites de Combustible",
+    "stem": "¿Cuál es la capacidad total y la capacidad utilizable de combustible en la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Capacidad total: 240 litros (63.4 US gal); Capacidad utilizable: 231 litros (61.0 US gal)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Capacidad total: 200 litros; Capacidad utilizable: 190 litros",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Capacidad total: 260 litros; Capacidad utilizable: 255 litros",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Capacidad total: 210 litros; Capacidad utilizable: 205 litros",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La Tecnam P2010 TDI dispone de dos tanques alares de 120 litros cada uno (240 litros totales / 63.4 US gal), de los cuales 231 litros en total (115.5 litros por tanque / 61.0 US gal) son utilizables en todas las actitudes de vuelo.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 2: Limitations - Fuel Limitations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "P2010-LIM-012",
+    "subject_id": "p2010_limitations",
+    "learning_objective": "AFM Sección 2 - Combustibles Aprobados y Desbalance",
+    "stem": "¿Cuáles son los tipos de combustible aprobados y el desbalance máximo de combustible entre tanques en la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Combustibles: JET A-1, JET A, Diesel Automoción (EN 590); Desbalance máximo: 30 litros (7.9 US gal)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Combustibles: Solo AVGAS 100LL; Desbalance máximo: 15 litros",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Combustibles: JET A-1 y MOGAS 98; Desbalance máximo: 50 litros",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Combustibles: Solo JET A-1; Desbalance máximo: 10 litros",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El motor CD-170 está certificado para operar con combustibles de aviación basados en queroseno (Jet A-1, Jet A según ASTM D1655) y diésel de automoción estándar (EN 590). El desbalance máximo de combustible permitido entre el tanque izquierdo y derecho es de 30 litros (7.9 US gal).",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 2: Limitations - Fuel Limitations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "P2010-LIM-013",
+    "subject_id": "p2010_limitations",
+    "learning_objective": "AFM Sección 2 - Techo de Servicio y Altitud Operativa",
+    "stem": "¿Cuál es la altitud operativa máxima certificada (Maximum Operating Altitude) de la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "18.000 ft (5.486 m)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "14.000 ft (4.267 m)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "12.500 ft (3.810 m)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "25.000 ft (7.620 m)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La altitud operativa máxima de la Tecnam P2010 TDI está limitada a 18.000 ft (5.486 m). Para operaciones por encima de 10.000 ft se deben cumplir los requisitos operacionales de suministro suplementario de oxígeno.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 2: Limitations - Altitude Limitations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "P2010-LIM-014",
+    "subject_id": "p2010_limitations",
+    "learning_objective": "AFM Sección 2 - Componente Demostrado de Viento Cruzado",
+    "stem": "¿Cuál es la componente máxima demostrada de viento cruzado (Maximum Demonstrated Crosswind) en despegue y aterrizaje para la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "15 nudos",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "20 nudos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "12 nudos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "25 nudos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La componente máxima demostrada de viento cruzado para despegue y aterrizaje en la Tecnam P2010 TDI es de 15 nudos (28 km/h).",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 2: Limitations - Crosswind"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "P2010-LIM-015",
+    "subject_id": "p2010_limitations",
+    "learning_objective": "AFM Sección 2 - Tipos de Operación y Vuelo en Hielo",
+    "stem": "De acuerdo con el AFM, ¿qué tipos de operación están autorizados y cuál es la limitación referente a engelamiento conocido (Known Icing Conditions)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Autorizado: VFR Día/Noche e IFR Día/Noche; Prohibido: Vuelo en condiciones de engelamiento conocido (Flight into Known Icing - FIKI)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Autorizado: Solo VFR Día; Prohibido: IFR y vuelo nocturno",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Autorizado: VFR, IFR y Vuelo en Engelamiento Ligero (Light Icing)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Autorizado: Solo VFR Día y VFR Noche; Prohibido: IFR",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La Tecnam P2010 TDI equipada con Garmin G1000 NXi está certificada para vuelos VFR Día/Noche e IFR Día/Noche. Está terminantemente PROHIBIDO el vuelo en condiciones de engelamiento conocido o pronosticado (Known Icing Conditions), debiendo abandonarse la zona de inmediato en caso de encuentro inadvertido.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 2: Limitations - Kinds of Operation"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "P2010-NORM-001",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Procedimiento de Arranque de Motor (Glow Plugs)",
+    "stem": "Durante la secuencia de arranque en frío del motor Continental CD-170 en la Tecnam P2010 TDI, ¿qué indicación debe esperar el piloto antes de accionar el estárter (START)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Activar el Engine Master y esperar a que la luz indicadora de calentadores (Glow Plugs / GLOW) se apague en el panel antes de accionar el interruptor de arranque",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Accionar el arranque inmediatamente mientras la luz de calentadores parpadea a alta velocidad",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Bombear la palanca de potencia 3 veces hacia adelante y hacia atrás",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mantener pulsado el interruptor FADEC TEST mientras se gira la llave de contacto",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Al poner el Engine Master en ON, el FADEC activa automáticamente las bujías de precalentamiento (Glow Plugs) para calentar las cámaras de combustión del motor diésel. El piloto debe esperar a que la luz 'GLOW' se extinga antes de dar ignición con el estárter.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 4: Normal Procedures - Engine Starting",
+        "Continental CD-170 Engine Operation Manual - Cold Starting"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "P2010-NORM-002",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Limitación de Tiempo del Estárter",
+    "stem": "¿Cuál es el límite máximo de tiempo continuo de accionamiento del motor de arranque (Starter Limit) y el periodo de enfriamiento requerido en el motor CD-170?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Máximo 10 segundos continuos de accionamiento, seguido de al menos 20 segundos de enfriamiento (máximo 3 intentos consecutivos antes de 15 minutos de descanso)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Máximo 30 segundos continuos sin periodo de enfriamiento",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Máximo 5 segundos de accionamiento y 5 minutos de espera",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El motor diésel no tiene límites de tiempo para el motor de arranque",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para evitar el sobrecalentamiento y deterioro del motor de arranque y preservar la carga de la batería principal de 24V, no se deben superar los 10 segundos por intento de arranque, dejando enfriar el estárter entre ciclos.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 4: Normal Procedures - Engine Starting Limitations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "P2010-NORM-003",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Prueba Obligatoria de FADEC en Tierra (FADEC Test)",
+    "stem": "Durante la prueba obligatoria de FADEC antes del despegue en tierra (FADEC Self-Test), ¿cómo se realiza la prueba y qué comportamiento automático debe observar el piloto?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Con motor en ralentí y parámetros en arco verde, pulsar y mantener el botón 'FADEC TEST'; el sistema incrementa automáticamente las RPM a ~2300 (100% Load), conmuta entre el Canal A y Canal B verificando ambos, y retorna automáticamente a ralentí",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Acelerar manualmente al 100% y apagar el Engine Master durante 3 segundos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La prueba de FADEC se realiza exclusivamente en vuelo durante el ascenso inicial",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mover la palanca de paso de hélice manualmente de fino a bandera",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El FADEC Self-Test en tierra es una comprobación automática integral. Con la palanca en IDLE, al mantener presionado el botón FADEC TEST, el sistema toma el control del motor, acelera al 100% Load verificando la conmutación entre el Canal A y B y las luces de aviso, y restablece el ralentí. Si la prueba falla, el despegue está prohibido.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 4: Normal Procedures - Before Takeoff / Run-up Check",
+        "Continental CD-170 Operation Manual - FADEC Ground Test"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "P2010-NORM-004",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Velocidades de Despegue (Vr y Vy)",
+    "stem": "En la Tecnam P2010 TDI a MTOW (1160 kg) con Flaps en posición T/O (15°), ¿cuál es la velocidad de rotación (Vr) y la velocidad de mejor régimen de ascenso (Vy)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vr: 60 KIAS; Vy: 82 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Vr: 70 KIAS; Vy: 95 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Vr: 52 KIAS; Vy: 70 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Vr: 65 KIAS; Vy: 75 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según el AFM de la Tecnam P2010 TDI, a peso máximo de 1160 kg, la rotación (Vr) se realiza a 60 KIAS con Flaps T/O (15°). La velocidad de mejor régimen de ascenso (Vy) con flaps retraídos (Flaps UP) es de 82 KIAS.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 4: Normal Procedures - Takeoff and Climb"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "P2010-NORM-005",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Velocidad de Mejor Ángulo de Ascenso (Vx)",
+    "stem": "¿Cuál es la velocidad de mejor ángulo de ascenso (Vx) para franqueamiento de obstáculos tras el despegue en la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "75 KIAS (con Flaps T/O)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "85 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "60 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "90 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La velocidad de mejor ángulo de ascenso (Vx) con Flaps en posición T/O (15°) es de 75 KIAS. Esta velocidad proporciona la mayor ganancia de altitud en la menor distancia horizontal recorrida.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 4: Normal Procedures - Takeoff Performance"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "P2010-NORM-006",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Ascenso en Ruta (En-route Climb)",
+    "stem": "¿Cuáles son los ajustes recomendados para el ascenso en ruta (En-route Climb / Cruise Climb) una vez superados los obstáculos y franqueados los 1000 ft AGL?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flaps: UP; Velocidad: 88-92 KIAS; Potencia: 91% Load (Max Continuous Power); Fuel Pump: OFF",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Flaps: T/O; Velocidad: 70 KIAS; Potencia: 100% Load continuo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Flaps: UP; Velocidad: 120 KIAS; Potencia: 60% Load",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Flaps: LAND; Velocidad: 80 KIAS; Potencia: 80% Load",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para ascenso en crucero eficiente se limpia el avión (Flaps UP), se acelera a 88-92 KIAS para mejorar refrigeración y visibilidad frontal, se reduce la potencia al 91% Load (máximo continuo) y se apaga la bomba auxiliar de combustible (Fuel Pump OFF).",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 4: Normal Procedures - En-route Climb"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "P2010-NORM-007",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Ajustes y Consumo en Vuelo de Crucero (Cruise)",
+    "stem": "En régimen de crucero estándar económico al 70%-75% de carga (Load) a FL080-FL100, ¿cuál es el consumo aproximado de combustible Jet A-1 del motor Continental CD-170?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aproximadamente 24 a 28 litros por hora (6.3 a 7.4 US gal/h)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Aproximadamente 45 a 55 litros por hora",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aproximadamente 12 a 15 litros por hora",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aproximadamente 38 a 42 litros por hora",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Una de las grandes ventajas de eficiencia del ciclo diésel turboalimentado Continental CD-170 es su consumo específico: en crucero normal al 70-75% Load consume entre 24 y 28 l/h (aprox. 6.5 gal/h), proporcionando una autonomía superior a 7 horas con los 231L utilizables.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 5: Performance - Cruise Performance Tables"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "P2010-NORM-008",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Velocidades de Aproximación Final y Aterrizaje",
+    "stem": "En configuración de aterrizaje con Flaps en posición LAND (40°) a MTOW (1160 kg), ¿cuál es la velocidad de referencia de aproximación final (Vref)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "65 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "78 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "55 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "85 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La velocidad de aproximación final recomendada en el AFM con Flaps LAND (40°) a 1160 kg es de 65 KIAS (1.3 Vso). Con viento racheado se añade la mitad del factor de racha.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 4: Normal Procedures - Approach and Landing"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "P2010-NORM-009",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Procedimiento de Motor y al Aire (Go-Around / Balked Landing)",
+    "stem": "¿Cuáles son las acciones inmediatas para ejecutar una frustrada / motor y al aire (Go-Around) en la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Power Lever: FULL (100% Load); Retraer flaps inmediatamente de LAND a T/O (15°); Acelerar y ascender a Vx/Vy (75/82 KIAS); Con tasa positiva, retraer Flaps a UP",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Retraer todos los flaps a UP antes de aplicar potencia",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mantener Flaps a 40° durante todo el ascenso hasta la altitud del patrón",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Apagar la bomba de combustible antes de aplicar potencia",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Al frustrar, se aplica máxima potencia (100% Load), se establece actitud de ascenso y se retrae el flap de inmediato a posición intermedia T/O (15°) para reducir la enorme resistencia del flap 40°. Tras verificar tasa positiva y velocidad segura (> 75 KIAS), se seleccionan Flaps UP.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 4: Normal Procedures - Go-Around / Balked Landing"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "P2010-NORM-010",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Enfriamiento de Turbocompresor antes de Parada de Motor",
+    "stem": "Antes de cortar el Engine Master para apagar el motor Continental CD-170 tras el rodaje, ¿qué procedimiento de enfriamiento exige el manual?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mantener el motor en ralentí (IDLE) durante al menos 1 a 2 minutos para permitir la estabilización y enfriamiento del turbocompresor",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Acelerar al 80% Load durante 30 segundos y cortar el contacto de inmediato",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Apagar el motor inmediatamente al detenerse el avión en el estacionamiento",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Apagar la bomba eléctrica y esperar a que el motor se detenga por inanición",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Como todo motor turboalimentado de altas prestaciones, el turbocompresor gira a más de 100.000 RPM y alcanza temperaturas elevadas. Apagar el motor bruscamente detiene el flujo de aceite lubricante, carbonizando el aceite en los cojinetes del turbo. El enfriamiento de 1-2 minutos en IDLE es mandatorio.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 4: Normal Procedures - Engine Shutdown",
+        "Continental CD-170 Operation Manual - Turbocharger Cooldown"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "P2010-NORM-011",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Gestión de la Válvula Selectora de Combustible",
+    "stem": "Durante la operación normal en vuelo de la Tecnam P2010 TDI, ¿cómo se gestiona la válvula selectora de combustible (Fuel Selector)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se selecciona LEFT o RIGHT alternando periódicamente para mantener el desbalance de tanques por debajo del límite de 30 litros (7.9 US gal). No existe posición 'BOTH'",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se coloca en la posición 'BOTH' durante todas las fases de vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se debe consumir siempre la totalidad del tanque izquierdo antes de pasar al derecho",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La válvula conmuta automáticamente mediante un solenoide eléctrico gobernado por el G1000",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El sistema de combustible de la Tecnam P2010 TDI cuenta con una válvula selectora de 3 posiciones: LEFT, RIGHT y OFF (no existe posición BOTH). El piloto debe gestionar el consumo cambiando de tanque regularmente para no superar los 30L de desbalance.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 4: Normal Procedures - Cruise / Fuel Management"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "P2010-NORM-012",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Uso de la Bomba Eléctrica Auxiliar (Fuel Pump)",
+    "stem": "¿En qué fases de vuelo es obligatorio mantener activada la bomba eléctrica auxiliar de combustible (Electric Fuel Pump ON) según las listas de chequeo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En el arranque de motor, despegue, ascenso inicial, aproximación, aterrizaje y siempre que se cambie de tanque de combustible",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Únicamente durante el arranque de motor; en vuelo debe permanecer siempre en OFF",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Debe permanecer encendida de forma ininterrumpida durante el 100% del vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo se enciende si falla la bomba mecánica de alta presión",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La bomba eléctrica auxiliar (Fuel Pump) se utiliza como respaldo redundante en todas las fases críticas de vuelo (despegue, aterrizaje, frustrada y conmutación de tanque) para garantizar la presión de alimentación positiva a la bomba de alta presión del common rail.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 4: Normal Procedures - Checklists"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "P2010-NORM-013",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Comprobación de Contaminación y Purga de Combustible",
+    "stem": "Durante la inspección exterior pre-vuelo (Walkaround), ¿cuántos puntos de purga de combustible (Fuel Drains) deben drenarse y comprobarse en la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "3 puntos de purga: uno bajo el tanque alar izquierdo, uno bajo el tanque alar derecho y uno en el decantador/filtro principal de gases de fondo de fuselaje",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Solamente 1 punto de purga central en el cortafuegos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "5 puntos de purga en cada semiala",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El combustible diésel no requiere purga de agua por su densidad",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La aeronave dispone de 3 drenajes de combustible: 2 drenajes en los puntos más bajos de cada tanque alar y 1 drenaje en el colector de filtro principal bajo el fuselaje, indispensables para verificar la ausencia de agua o partículas en el Jet A-1 / diésel.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 4: Normal Procedures - Preflight Inspection"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "P2010-NORM-014",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Despegue en Pistas Cortas (Short Field Takeoff)",
+    "stem": "¿Cuál es la técnica recomendada por el AFM para despegue en campo corto (Short Field Takeoff) con la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flaps: T/O (15°); Aplicar frenos, acelerar al 100% Load verificando parámetros de motor estables; Soltar frenos, rotar a 58-60 KIAS y mantener 65 KIAS hasta franquear 50 ft",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Flaps: LAND (40°); Despegar sin frenos a 45 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Flaps: UP; Acelerar en carrera continua y rotar a 75 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar la carrera con el FADEC TEST presionado",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En pista corta se ajustan Flaps T/O (15°), se aplican frenos mientras se demanda el 100% de potencia para asegurar la presión del turbo, se liberan frenos y se rota a 58-60 KIAS manteniendo 65 KIAS hasta librar los obstáculos de 50 pies.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 4: Normal Procedures - Short Field Takeoff"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "P2010-NORM-015",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Comprobación de Nivel de Aceite de Motor",
+    "stem": "Al realizar la inspección prevuelo del nivel de aceite de motor en la varilla (Dipstick) del Continental CD-170, ¿cuáles son las marcas mínima y máxima admisibles?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mínimo: 4.5 litros; Máximo: 6.0 litros (no despachar por debajo de la marca de mínimo)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mínimo: 2.0 litros; Máximo: 8.0 litros",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mínimo: 6.0 cuartos; Máximo: 12.0 cuartos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El nivel de aceite solo se puede comprobar electrónicamente en el MFD con motor en marcha",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La capacidad del cárter del motor Continental CD-170 es de 6.0 litros máximos y el nivel mínimo operativo antes de cualquier vuelo es de 4.5 litros según la varilla graduada accesible por la compuerta del capó del motor.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 4: Normal Procedures - Preflight Inspection (Powerplant)",
+        "Section 8: Airplane Handling, Servicing and Maintenance"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "P2010-SYS-001",
+    "subject_id": "p2010_systems",
+    "learning_objective": "AFM Sección 7 - Arquitectura del Motor Continental CD-170",
+    "stem": "¿Cuáles son las características principales de diseño y arquitectura del motor Continental CD-170 que equipa la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Motor diésel de 4 cilindros en línea, 4 tiempos, refrigeración líquida, turbocompresor con intercooler, inyección directa Common Rail a alta presión y doble árbol de levas (DOHC)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Motor bóxer de 6 cilindros atmosférico con carburador y refrigeración por aire",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Motor rotativo Wankel con inyección indirecta multipunto",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Motor turbohélice con turbina libre y reductora planetaria",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El Continental CD-170 es un motor aeronáutico turbo diésel de última generación de 4 cilindros en línea, ciclo diésel de 4 tiempos con refrigeración líquida integral (refrigerante y aceite), inyección directa por raíl común (Common Rail) a más de 1600 bar, turbocompresor con intercooler y control digital FADEC redundante.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Description of the Airplane and its Systems - Powerplant",
+        "Continental Aerospace Technologies CD-170 Description"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "P2010-SYS-002",
+    "subject_id": "p2010_systems",
+    "learning_objective": "AFM Sección 7 - Control Monopalanca (Single Lever Power Control)",
+    "stem": "¿Cómo se controla la potencia, la mezcla y el paso de la hélice en la cabina de la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mediante una única palanca de potencia (Power Lever / Single Lever); el FADEC ajusta automáticamente la inyección de combustible, la presión del turbo y el paso de la hélice de forma electrónica e integrada",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mediante tres palancas tradicionales independientes: Potencia (negra), Paso de Hélice (azul) y Mezcla (roja)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mediante dos palancas: Potencia y Mezcla con ajuste manual de EGT",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mediante un mando giratorio en el teclado del piloto automático",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La Tecnam P2010 TDI dispone de control monopalanca (Single Lever Control). No existen mandos de mezcla ni de hélice en cabina. El piloto selecciona el porcentaje de carga (Load %) y el FADEC calcula y ajusta simultáneamente el caudal de combustible, presión de admisión y paso de hélice constante.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Description of the Airplane and its Systems - Engine Controls"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "P2010-SYS-003",
+    "subject_id": "p2010_systems",
+    "learning_objective": "AFM Sección 7 - Caja Reductora y Sistema de Hélice (Gearbox)",
+    "stem": "En la transmisión del Continental CD-170, ¿qué función cumple la caja reductora (Gearbox) y qué tipo de lubricación utiliza?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reduce las RPM del cigüeñal a las RPM operativas de la hélice (ratio ~1:1.66), incorpora un embrague amortiguador de torsión y dispone de un circuito de lubricación con aceite independiente del aceite de motor",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Conecta directamente el cigüeñal a la hélice sin reducción (accionamiento directo 1:1)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Utiliza el mismo aceite de motor con cárter compartido",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Es una caja de cambios de 3 velocidades conmutable en vuelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El cigüeñal del motor diésel gira hasta ~3900 RPM y la reductora baja las RPM a 2300 en la hélice. La caja reductora incorpora embrague torsional y tiene su propio aceite de engranajes con indicador de temperatura y nivel independiente del aceite de motor.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Description of the Airplane and its Systems - Gearbox and Propeller"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "P2010-SYS-004",
+    "subject_id": "p2010_systems",
+    "learning_objective": "AFM Sección 7 - Retorno de Combustible Caliente y Antihielo",
+    "stem": "En el sistema de combustible de la Tecnam P2010 TDI, ¿qué ocurre con el exceso de combustible no inyectado que retorna del circuito Common Rail?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Retorna precalentado a través de una línea de retorno al tanque seleccionado, lo que ayuda a calentar el combustible de las alas y previene la formación de cristales de parafina (waxing) en bajas temperaturas",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se expulsa al exterior por un tubo de venteo bajo el fuselaje",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se almacena en un tanque de recogida no reutilizable de 5 litros",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se inyecta directamente en el escape para quemar los residuos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La bomba de alta presión de inyección continua bombea un caudal superior al necesario. El combustible sobrante, tras absorber calor en el motor, retorna al tanque de combustible seleccionado, elevando la temperatura del Jet A-1 en las alas y previniendo la congelación o cristalización de parafinas en altitud.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Description of the Airplane and its Systems - Fuel System"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "P2010-SYS-005",
+    "subject_id": "p2010_systems",
+    "learning_objective": "AFM Sección 7 - Sistema Eléctrico de 28V y Alternadores",
+    "stem": "¿Cómo está constituido el sistema de generación eléctrica principal en la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sistema de 28 VDC compuesto por una Batería Principal de 24V, un Alternador Principal de 28V (70A) accionado por correa y una Batería de Respaldo de Emergencia para el FADEC",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Sistema de 12 VDC con un único alternador de 40A",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Sistema de corriente alterna trifásica a 115V / 400Hz",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Sistema de 24 VDC sin alternador, operado exclusivamente por paneles solares alares",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La Tecnam P2010 TDI opera con una red de 28 Voltios DC alimentada por un alternador principal de 70 Amperios, una batería principal de plomo-ácido de 24V (13.6 Ah) y una batería auxiliar de respaldo exclusiva para salvaguardar la alimentación de la ECU del FADEC.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Description of the Airplane and its Systems - Electrical System"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "P2010-SYS-006",
+    "subject_id": "p2010_systems",
+    "learning_objective": "AFM Sección 7 - Suite de Aviónica Garmin G1000 NXi",
+    "stem": "En la suite Garmin G1000 NXi de la Tecnam P2010 TDI, ¿qué unidad procesa las señales de los sensores de motor, combustible y parámetros de aeronave para presentarlas en el EIS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "GEA 71B (Engine and Airframe Interface Unit)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "GRS 79 (Attitude and Heading Reference System - AHRS)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "GDC 72 (Air Data Computer - ADC)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "GMA 1360 (Audio Panel)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La unidad GEA 71B de Garmin es la interfaz central que recibe las señales analógicas y digitales de presión, temperatura, RPM, flujo de combustible y FADEC del motor CD-170 y las envía vía bus de datos digital para su visualización gráfica en el EIS (Engine Indication System) del MFD.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Description of the Airplane and its Systems - Avionics Garmin G1000 NXi",
+        "Garmin G1000 NXi Line Maintenance Manual"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "P2010-SYS-007",
+    "subject_id": "p2010_systems",
+    "learning_objective": "AFM Sección 7 - Computador de Datos de Aire (ADC - GDC 72)",
+    "stem": "¿Qué parámetros de vuelo son calculados por el Air Data Computer (GDC 72) del Garmin G1000 NXi a partir de las tomas de presión estática y pitot?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Velocidad indicada (IAS), Velocidad verdadera (TAS), Altitud barométrica, Velocidad vertical (VSI) y Temperatura total de aire (OAT)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Actitud de cabeceo, alabeo y rumbo magnético",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Posición GPS y perfiles de aproximación RNAV",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Caudal de inyección y presión de sobrealimentación",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El GDC 72 procesa las presiones pitot, estática y temperatura exterior para computar velocidad anemométrica (IAS/TAS), altitud, régimen de ascenso/descenso (VSI) y número Mach.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Avionics Suite G1000 NXi"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "P2010-SYS-008",
+    "subject_id": "p2010_systems",
+    "learning_objective": "AFM Sección 7 - Estructura Híbrida de Fuselaje y Alas",
+    "stem": "¿Cuál es la tipología constructiva estructural del fuselaje y las alas de la Tecnam P2010?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estructura híbrida: Cabina y fuselaje en fibra de carbono monocasco de alta resistencia, con alas y empenajes estabilizadores en aleación de aluminio tradicional",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Estructura 100% de tubo de acero soldado entelado en dacrón",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Estructura 100% en madera y contrachapado aeronáutico",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Estructura 100% remachada en titanio",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El diseño de la Tecnam P2010 combina una cabina de seguridad en fibra de carbono (composite) para máxima ligereza, aerodinámica y protección a impactos, unida a alas y planos de cola de aleación de aluminio para facilidad de mantenimiento y durabilidad.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Description of the Airplane and its Systems - Airframe"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "P2010-SYS-009",
+    "subject_id": "p2010_systems",
+    "learning_objective": "AFM Sección 7 - Tren de Aterrizaje y Sistema de Frenos",
+    "stem": "¿Qué tipo de tren de aterrizaje y sistema de amortiguación equipa la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tren triciclo fijo; pata de morro con amortiguador óleo-neumático y dirección por pedales, y patas principales en ballesta de acero elástico con frenos hidráulicos de disco independientes",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Tren retráctil electrohidráulico",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Tren clásico patín de cola con amortiguadores de goma elástica (bungees)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Tren fijo con amortiguadores de resorte helicoidal en las tres ruedas sin freno diferencial",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La Tecnam P2010 monta un tren de aterrizaje triciclo fijo robusto. La rueda de morro orientable (+/- 20° con timón y hasta 52° con frenado diferencial) cuenta con amortiguador óleo-neumático, mientras que el tren principal está formado por ballestas de acero con frenos de disco hidráulicos diferenciales en los pedales.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Description of the Airplane and its Systems - Landing Gear"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "P2010-SYS-010",
+    "subject_id": "p2010_systems",
+    "learning_objective": "AFM Sección 7 - Mandos de Vuelo y Compensador de Profundidad",
+    "stem": "En el sistema de control de vuelo de la Tecnam P2010, ¿cómo se acciona el compensador de profundidad (Pitch Trim)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mediante una rueda manual en la consola central y mediante pulsadores eléctricos en las palancas de mando (Stick Trim Switch)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Únicamente mediante servo hidráulico automático sin mando manual en cabina",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mediante una manivela en el techo de cabina",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La aeronave no dispone de compensador de profundidad",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El compensador longitudinal de la Tecnam P2010 cuenta con accionamiento dual: control manual mediante rueda graduada en la consola central y control eléctrico mediante interruptores basculantes tipo 'Coolie Hat' en los cuernos/mandos de piloto y copiloto.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Description of the Airplane and its Systems - Flight Controls"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "P2010-SYS-011",
+    "subject_id": "p2010_systems",
+    "learning_objective": "AFM Sección 7 - Hélice MT-Propeller de Paso Variable",
+    "stem": "¿Qué modelo y características tiene la hélice montada en la Tecnam P2010 TDI con motor Continental CD-170?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hélice tripala MT-Propeller (MTV-6-A/190-69) de paso variable y velocidad constante con palas de madera compuesta y borde de ataque de acero inoxidable, gobernada electrohidráulicamente por el FADEC",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Hélice bipala de paso fijo de aluminio monobloque",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Hélice de cuatro palas con reversa de empuje para frenado en pista",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Hélice tripala de paso ajustable únicamente en tierra con el motor parado",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La Tecnam P2010 TDI equipa una hélice tripala MT-Propeller de velocidad constante con palas construidas en núcleo de madera de alta densidad laminada y recubrimiento epoxi reforzado con fibra de vidrio y protección metálica en el borde de ataque, gobernada automáticamente por la válvula electrohidráulica del FADEC.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Description of the Airplane and its Systems - Propeller"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "P2010-SYS-012",
+    "subject_id": "p2010_systems",
+    "learning_objective": "AFM Sección 7 - Piloto Automático Garmin GFC 700",
+    "stem": "En las aeronaves equipadas con el piloto automático integrado Garmin GFC 700, ¿cuál es la limitación de desacoplamiento mínimo en aproximaciones de precisión ILS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El piloto automático debe desacoplarse a no menos de 200 ft AGL en aproximaciones de precisión",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Permite aterrizajes automáticos (Autoland) hasta el toque en pista",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Debe desacoplarse a no menos de 1000 ft AGL en cualquier aproximación",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No se puede utilizar en modo aproximación acoplado al Glide Slope",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El suplemento del Garmin GFC 700 para la Tecnam P2010 establece una altitud mínima de desacoplamiento de 200 ft AGL en aproximaciones de precisión (ILS) y 400 ft AGL en aproximaciones de no precisión o durante ascenso/crucero.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 9: Supplements - Garmin GFC 700 Autopilot Supplement"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "P2010-SYS-013",
+    "subject_id": "p2010_systems",
+    "learning_objective": "AFM Sección 7 - Sistema de Calefacción y Desempañado (Cabin Heat / Defrost)",
+    "stem": "¿Cómo obtiene el aire caliente el sistema de calefacción y desempañado de cabina en la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A través de un intercambiador de calor de aire-refrigerante conectado al circuito de refrigeración líquida del motor (similar a un radiador de calefacción de automóvil)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mediante una camisa envolvente alrededor del tubo de escape tradicional",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mediante un calefactor de combustión de gasolina en el cono de cola",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mediante resistencias eléctricas alimentadas directamente por el alternador",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Al ser un motor diésel con refrigeración líquida, la calefacción se obtiene mediante un intercambiador de calor que utiliza el líquido refrigerante caliente del motor. Esto elimina el riesgo clásico de intoxicación por monóxido de carbono (CO) asociado a las camisas de escape agrietadas de los motores de gasolina.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Description of the Airplane and its Systems - Cabin Environmental Control"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "P2010-SYS-014",
+    "subject_id": "p2010_systems",
+    "learning_objective": "AFM Sección 7 - Luces Exteriores LED y Alimentación",
+    "stem": "¿Qué tecnología utilizan las luces exteriores de navegación, estroboscópicas y de aterrizaje/taxi en la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tecnología 100% LED de bajo consumo integrada en las puntas de plano y capó de motor",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Lámparas halógenas incandescentes con balastros de alta tensión",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Tubos de descarga de xenón que requieren ventilación forzada",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Lámparas de filamento de tungsteno estándar",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Toda la iluminación exterior e interior de la Tecnam P2010 TDI está basada en tecnología LED de estado sólido de alta fiabilidad y bajo consumo, reduciendo la carga del alternador de 28V.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Description of the Airplane and its Systems - Lighting System"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "P2010-SYS-015",
+    "subject_id": "p2010_systems",
+    "learning_objective": "AFM Sección 7 - Capacidad del Maletero y Puerta de Acceso Trasera",
+    "stem": "¿Cuál es la masa máxima de equipaje permitida en el maletero (Baggage Compartment) de la Tecnam P2010 y cómo se accede a él?",
+    "options": [
+      {
+        "id": "A",
+        "text": "40 kg (88 lb), accesible mediante una puerta exterior independiente en el costado izquierdo del fuselaje y desde el interior de la cabina tras los asientos traseros",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "100 kg, accesible exclusivamente desde el interior de la cabina",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "25 kg con red de retención solo para equipaje de mano",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "70 kg accesible por la parte inferior del fuselaje",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La Tecnam P2010 cuenta con una puerta exterior de maletero en el lado izquierdo del fuselaje trasero con una capacidad máxima autorizada de carga de 40 kg (88 lb) convenientemente ubicada dentro de los límites del centro de gravedad.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Description of the Airplane and its Systems - Baggage Compartment"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "sistemas-aeronave"
+  }
+]

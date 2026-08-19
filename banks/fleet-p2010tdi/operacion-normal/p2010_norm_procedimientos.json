@@ -1,0 +1,321 @@
+[
+  {
+    "id": "P2010-NORM-001",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Procedimiento de Arranque de Motor (Glow Plugs)",
+    "stem": "Durante la secuencia de arranque en frío del motor Continental CD-170 en la Tecnam P2010 TDI, ¿qué indicación debe esperar el piloto antes de accionar el estárter (START)?",
+    "options": [
+      { "id": "A", "text": "Activar el Engine Master y esperar a que la luz indicadora de calentadores (Glow Plugs / GLOW) se apague en el panel antes de accionar el interruptor de arranque", "is_correct": true },
+      { "id": "B", "text": "Accionar el arranque inmediatamente mientras la luz de calentadores parpadea a alta velocidad", "is_correct": false },
+      { "id": "C", "text": "Bombear la palanca de potencia 3 veces hacia adelante y hacia atrás", "is_correct": false },
+      { "id": "D", "text": "Mantener pulsado el interruptor FADEC TEST mientras se gira la llave de contacto", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "Al poner el Engine Master en ON, el FADEC activa automáticamente las bujías de precalentamiento (Glow Plugs) para calentar las cámaras de combustión del motor diésel. El piloto debe esperar a que la luz 'GLOW' se extinga antes de dar ignición con el estárter.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 4: Normal Procedures - Engine Starting",
+        "Continental CD-170 Engine Operation Manual - Cold Starting"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-NORM-002",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Limitación de Tiempo del Estárter",
+    "stem": "¿Cuál es el límite máximo de tiempo continuo de accionamiento del motor de arranque (Starter Limit) y el periodo de enfriamiento requerido en el motor CD-170?",
+    "options": [
+      { "id": "A", "text": "Máximo 10 segundos continuos de accionamiento, seguido de al menos 20 segundos de enfriamiento (máximo 3 intentos consecutivos antes de 15 minutos de descanso)", "is_correct": true },
+      { "id": "B", "text": "Máximo 30 segundos continuos sin periodo de enfriamiento", "is_correct": false },
+      { "id": "C", "text": "Máximo 5 segundos de accionamiento y 5 minutos de espera", "is_correct": false },
+      { "id": "D", "text": "El motor diésel no tiene límites de tiempo para el motor de arranque", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "Para evitar el sobrecalentamiento y deterioro del motor de arranque y preservar la carga de la batería principal de 24V, no se deben superar los 10 segundos por intento de arranque, dejando enfriar el estárter entre ciclos.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 4: Normal Procedures - Engine Starting Limitations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-NORM-003",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Prueba Obligatoria de FADEC en Tierra (FADEC Test)",
+    "stem": "Durante la prueba obligatoria de FADEC antes del despegue en tierra (FADEC Self-Test), ¿cómo se realiza la prueba y qué comportamiento automático debe observar el piloto?",
+    "options": [
+      { "id": "A", "text": "Con motor en ralentí y parámetros en arco verde, pulsar y mantener el botón 'FADEC TEST'; el sistema incrementa automáticamente las RPM a ~2300 (100% Load), conmuta entre el Canal A y Canal B verificando ambos, y retorna automáticamente a ralentí", "is_correct": true },
+      { "id": "B", "text": "Acelerar manualmente al 100% y apagar el Engine Master durante 3 segundos", "is_correct": false },
+      { "id": "C", "text": "La prueba de FADEC se realiza exclusivamente en vuelo durante el ascenso inicial", "is_correct": false },
+      { "id": "D", "text": "Mover la palanca de paso de hélice manualmente de fino a bandera", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "El FADEC Self-Test en tierra es una comprobación automática integral. Con la palanca en IDLE, al mantener presionado el botón FADEC TEST, el sistema toma el control del motor, acelera al 100% Load verificando la conmutación entre el Canal A y B y las luces de aviso, y restablece el ralentí. Si la prueba falla, el despegue está prohibido.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 4: Normal Procedures - Before Takeoff / Run-up Check",
+        "Continental CD-170 Operation Manual - FADEC Ground Test"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-NORM-004",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Velocidades de Despegue (Vr y Vy)",
+    "stem": "En la Tecnam P2010 TDI a MTOW (1160 kg) con Flaps en posición T/O (15°), ¿cuál es la velocidad de rotación (Vr) y la velocidad de mejor régimen de ascenso (Vy)?",
+    "options": [
+      { "id": "A", "text": "Vr: 60 KIAS; Vy: 82 KIAS", "is_correct": true },
+      { "id": "B", "text": "Vr: 70 KIAS; Vy: 95 KIAS", "is_correct": false },
+      { "id": "C", "text": "Vr: 52 KIAS; Vy: 70 KIAS", "is_correct": false },
+      { "id": "D", "text": "Vr: 65 KIAS; Vy: 75 KIAS", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "Según el AFM de la Tecnam P2010 TDI, a peso máximo de 1160 kg, la rotación (Vr) se realiza a 60 KIAS con Flaps T/O (15°). La velocidad de mejor régimen de ascenso (Vy) con flaps retraídos (Flaps UP) es de 82 KIAS.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 4: Normal Procedures - Takeoff and Climb"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-NORM-005",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Velocidad de Mejor Ángulo de Ascenso (Vx)",
+    "stem": "¿Cuál es la velocidad de mejor ángulo de ascenso (Vx) para franqueamiento de obstáculos tras el despegue en la Tecnam P2010 TDI?",
+    "options": [
+      { "id": "A", "text": "75 KIAS (con Flaps T/O)", "is_correct": true },
+      { "id": "B", "text": "85 KIAS", "is_correct": false },
+      { "id": "C", "text": "60 KIAS", "is_correct": false },
+      { "id": "D", "text": "90 KIAS", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "La velocidad de mejor ángulo de ascenso (Vx) con Flaps en posición T/O (15°) es de 75 KIAS. Esta velocidad proporciona la mayor ganancia de altitud en la menor distancia horizontal recorrida.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 4: Normal Procedures - Takeoff Performance"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-NORM-006",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Ascenso en Ruta (En-route Climb)",
+    "stem": "¿Cuáles son los ajustes recomendados para el ascenso en ruta (En-route Climb / Cruise Climb) una vez superados los obstáculos y franqueados los 1000 ft AGL?",
+    "options": [
+      { "id": "A", "text": "Flaps: UP; Velocidad: 88-92 KIAS; Potencia: 91% Load (Max Continuous Power); Fuel Pump: OFF", "is_correct": true },
+      { "id": "B", "text": "Flaps: T/O; Velocidad: 70 KIAS; Potencia: 100% Load continuo", "is_correct": false },
+      { "id": "C", "text": "Flaps: UP; Velocidad: 120 KIAS; Potencia: 60% Load", "is_correct": false },
+      { "id": "D", "text": "Flaps: LAND; Velocidad: 80 KIAS; Potencia: 80% Load", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "Para ascenso en crucero eficiente se limpia el avión (Flaps UP), se acelera a 88-92 KIAS para mejorar refrigeración y visibilidad frontal, se reduce la potencia al 91% Load (máximo continuo) y se apaga la bomba auxiliar de combustible (Fuel Pump OFF).",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 4: Normal Procedures - En-route Climb"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-NORM-007",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Ajustes y Consumo en Vuelo de Crucero (Cruise)",
+    "stem": "En régimen de crucero estándar económico al 70%-75% de carga (Load) a FL080-FL100, ¿cuál es el consumo aproximado de combustible Jet A-1 del motor Continental CD-170?",
+    "options": [
+      { "id": "A", "text": "Aproximadamente 24 a 28 litros por hora (6.3 a 7.4 US gal/h)", "is_correct": true },
+      { "id": "B", "text": "Aproximadamente 45 a 55 litros por hora", "is_correct": false },
+      { "id": "C", "text": "Aproximadamente 12 a 15 litros por hora", "is_correct": false },
+      { "id": "D", "text": "Aproximadamente 38 a 42 litros por hora", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "Una de las grandes ventajas de eficiencia del ciclo diésel turboalimentado Continental CD-170 es su consumo específico: en crucero normal al 70-75% Load consume entre 24 y 28 l/h (aprox. 6.5 gal/h), proporcionando una autonomía superior a 7 horas con los 231L utilizables.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 5: Performance - Cruise Performance Tables"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-NORM-008",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Velocidades de Aproximación Final y Aterrizaje",
+    "stem": "En configuración de aterrizaje con Flaps en posición LAND (40°) a MTOW (1160 kg), ¿cuál es la velocidad de referencia de aproximación final (Vref)?",
+    "options": [
+      { "id": "A", "text": "65 KIAS", "is_correct": true },
+      { "id": "B", "text": "78 KIAS", "is_correct": false },
+      { "id": "C", "text": "55 KIAS", "is_correct": false },
+      { "id": "D", "text": "85 KIAS", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "La velocidad de aproximación final recomendada en el AFM con Flaps LAND (40°) a 1160 kg es de 65 KIAS (1.3 Vso). Con viento racheado se añade la mitad del factor de racha.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 4: Normal Procedures - Approach and Landing"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-NORM-009",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Procedimiento de Motor y al Aire (Go-Around / Balked Landing)",
+    "stem": "¿Cuáles son las acciones inmediatas para ejecutar una frustrada / motor y al aire (Go-Around) en la Tecnam P2010 TDI?",
+    "options": [
+      { "id": "A", "text": "Power Lever: FULL (100% Load); Retraer flaps inmediatamente de LAND a T/O (15°); Acelerar y ascender a Vx/Vy (75/82 KIAS); Con tasa positiva, retraer Flaps a UP", "is_correct": true },
+      { "id": "B", "text": "Retraer todos los flaps a UP antes de aplicar potencia", "is_correct": false },
+      { "id": "C", "text": "Mantener Flaps a 40° durante todo el ascenso hasta la altitud del patrón", "is_correct": false },
+      { "id": "D", "text": "Apagar la bomba de combustible antes de aplicar potencia", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "Al frustrar, se aplica máxima potencia (100% Load), se establece actitud de ascenso y se retrae el flap de inmediato a posición intermedia T/O (15°) para reducir la enorme resistencia del flap 40°. Tras verificar tasa positiva y velocidad segura (> 75 KIAS), se seleccionan Flaps UP.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 4: Normal Procedures - Go-Around / Balked Landing"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-NORM-010",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Enfriamiento de Turbocompresor antes de Parada de Motor",
+    "stem": "Antes de cortar el Engine Master para apagar el motor Continental CD-170 tras el rodaje, ¿qué procedimiento de enfriamiento exige el manual?",
+    "options": [
+      { "id": "A", "text": "Mantener el motor en ralentí (IDLE) durante al menos 1 a 2 minutos para permitir la estabilización y enfriamiento del turbocompresor", "is_correct": true },
+      { "id": "B", "text": "Acelerar al 80% Load durante 30 segundos y cortar el contacto de inmediato", "is_correct": false },
+      { "id": "C", "text": "Apagar el motor inmediatamente al detenerse el avión en el estacionamiento", "is_correct": false },
+      { "id": "D", "text": "Apagar la bomba eléctrica y esperar a que el motor se detenga por inanición", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "Como todo motor turboalimentado de altas prestaciones, el turbocompresor gira a más de 100.000 RPM y alcanza temperaturas elevadas. Apagar el motor bruscamente detiene el flujo de aceite lubricante, carbonizando el aceite en los cojinetes del turbo. El enfriamiento de 1-2 minutos en IDLE es mandatorio.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 4: Normal Procedures - Engine Shutdown",
+        "Continental CD-170 Operation Manual - Turbocharger Cooldown"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-NORM-011",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Gestión de la Válvula Selectora de Combustible",
+    "stem": "Durante la operación normal en vuelo de la Tecnam P2010 TDI, ¿cómo se gestiona la válvula selectora de combustible (Fuel Selector)?",
+    "options": [
+      { "id": "A", "text": "Se selecciona LEFT o RIGHT alternando periódicamente para mantener el desbalance de tanques por debajo del límite de 30 litros (7.9 US gal). No existe posición 'BOTH'", "is_correct": true },
+      { "id": "B", "text": "Se coloca en la posición 'BOTH' durante todas las fases de vuelo", "is_correct": false },
+      { "id": "C", "text": "Se debe consumir siempre la totalidad del tanque izquierdo antes de pasar al derecho", "is_correct": false },
+      { "id": "D", "text": "La válvula conmuta automáticamente mediante un solenoide eléctrico gobernado por el G1000", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "El sistema de combustible de la Tecnam P2010 TDI cuenta con una válvula selectora de 3 posiciones: LEFT, RIGHT y OFF (no existe posición BOTH). El piloto debe gestionar el consumo cambiando de tanque regularmente para no superar los 30L de desbalance.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 4: Normal Procedures - Cruise / Fuel Management"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-NORM-012",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Uso de la Bomba Eléctrica Auxiliar (Fuel Pump)",
+    "stem": "¿En qué fases de vuelo es obligatorio mantener activada la bomba eléctrica auxiliar de combustible (Electric Fuel Pump ON) según las listas de chequeo?",
+    "options": [
+      { "id": "A", "text": "En el arranque de motor, despegue, ascenso inicial, aproximación, aterrizaje y siempre que se cambie de tanque de combustible", "is_correct": true },
+      { "id": "B", "text": "Únicamente durante el arranque de motor; en vuelo debe permanecer siempre en OFF", "is_correct": false },
+      { "id": "C", "text": "Debe permanecer encendida de forma ininterrumpida durante el 100% del vuelo", "is_correct": false },
+      { "id": "D", "text": "Solo se enciende si falla la bomba mecánica de alta presión", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "La bomba eléctrica auxiliar (Fuel Pump) se utiliza como respaldo redundante en todas las fases críticas de vuelo (despegue, aterrizaje, frustrada y conmutación de tanque) para garantizar la presión de alimentación positiva a la bomba de alta presión del common rail.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 4: Normal Procedures - Checklists"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-NORM-013",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Comprobación de Contaminación y Purga de Combustible",
+    "stem": "Durante la inspección exterior pre-vuelo (Walkaround), ¿cuántos puntos de purga de combustible (Fuel Drains) deben drenarse y comprobarse en la Tecnam P2010 TDI?",
+    "options": [
+      { "id": "A", "text": "3 puntos de purga: uno bajo el tanque alar izquierdo, uno bajo el tanque alar derecho y uno en el decantador/filtro principal de gases de fondo de fuselaje", "is_correct": true },
+      { "id": "B", "text": "Solamente 1 punto de purga central en el cortafuegos", "is_correct": false },
+      { "id": "C", "text": "5 puntos de purga en cada semiala", "is_correct": false },
+      { "id": "D", "text": "El combustible diésel no requiere purga de agua por su densidad", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "La aeronave dispone de 3 drenajes de combustible: 2 drenajes en los puntos más bajos de cada tanque alar y 1 drenaje en el colector de filtro principal bajo el fuselaje, indispensables para verificar la ausencia de agua o partículas en el Jet A-1 / diésel.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 4: Normal Procedures - Preflight Inspection"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-NORM-014",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Despegue en Pistas Cortas (Short Field Takeoff)",
+    "stem": "¿Cuál es la técnica recomendada por el AFM para despegue en campo corto (Short Field Takeoff) con la Tecnam P2010 TDI?",
+    "options": [
+      { "id": "A", "text": "Flaps: T/O (15°); Aplicar frenos, acelerar al 100% Load verificando parámetros de motor estables; Soltar frenos, rotar a 58-60 KIAS y mantener 65 KIAS hasta franquear 50 ft", "is_correct": true },
+      { "id": "B", "text": "Flaps: LAND (40°); Despegar sin frenos a 45 KIAS", "is_correct": false },
+      { "id": "C", "text": "Flaps: UP; Acelerar en carrera continua y rotar a 75 KIAS", "is_correct": false },
+      { "id": "D", "text": "Iniciar la carrera con el FADEC TEST presionado", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "En pista corta se ajustan Flaps T/O (15°), se aplican frenos mientras se demanda el 100% de potencia para asegurar la presión del turbo, se liberan frenos y se rota a 58-60 KIAS manteniendo 65 KIAS hasta librar los obstáculos de 50 pies.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 4: Normal Procedures - Short Field Takeoff"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-NORM-015",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 4 - Comprobación de Nivel de Aceite de Motor",
+    "stem": "Al realizar la inspección prevuelo del nivel de aceite de motor en la varilla (Dipstick) del Continental CD-170, ¿cuáles son las marcas mínima y máxima admisibles?",
+    "options": [
+      { "id": "A", "text": "Mínimo: 4.5 litros; Máximo: 6.0 litros (no despachar por debajo de la marca de mínimo)", "is_correct": true },
+      { "id": "B", "text": "Mínimo: 2.0 litros; Máximo: 8.0 litros", "is_correct": false },
+      { "id": "C", "text": "Mínimo: 6.0 cuartos; Máximo: 12.0 cuartos", "is_correct": false },
+      { "id": "D", "text": "El nivel de aceite solo se puede comprobar electrónicamente en el MFD con motor en marcha", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "La capacidad del cárter del motor Continental CD-170 es de 6.0 litros máximos y el nivel mínimo operativo antes de cualquier vuelo es de 4.5 litros según la varilla graduada accesible por la compuerta del capó del motor.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 4: Normal Procedures - Preflight Inspection (Powerplant)",
+        "Section 8: Airplane Handling, Servicing and Maintenance"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  }
+]
