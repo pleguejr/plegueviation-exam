@@ -1,9 +1,12 @@
-# METAPROMPT MAESTRO: EXTRACCIÓN Y GENERACIÓN DE BANCOS DE PREGUNTAS (PLEGUEVIATION EXAM)
+# METAPROMPT MAESTRO: POLÍTICA ESTRICTA DE CREACIÓN DE PREGUNTAS (PLEGUEVIATION EXAM)
 
-> **Instrucciones de uso**:
-> 1. En **NotebookLM**: Sube tus manuales en PDF (MOA, MOB, SOPs Binter, FCOM E195-E2, QRH, DDPM, MEL, POH C172N / P2010 TDI, normativa SERA/EASA, DGR, etc.).
-> 2. Pega este prompt en el chat de NotebookLM o Gemini especificando el tema y capítulo exacto a extraer.
-> 3. Copia el bloque JSON devuelto e impórtalo directamente en la **App Web PWA** (botón "Importar IA") o ejecuta `python cli/bin/import_bank.py`.
+> **POLÍTICA DE CALIDAD Y EXCLUSIVIDAD DOCUMENTAL (GROUND-TRUTH)**:
+> 1. **Cero invención**: Toda pregunta debe ser extraída EXCLUSIVAMENTE del manual de vuelo y documentación oficial aportada (AFM, FCOM, QRH, SOPM, DDPM, MEL, MOA, MOB, Normativa).
+> 2. **Profesionalismo aeronáutico de nivel Comandante / TRE**: Terminología exacta, procedimientos vigentes y rigor operacional.
+> 3. **Estructura 1 Correcta + 3 Distractores Realistas**:
+>    - 1 Opción verdadera ("is_correct": true).
+>    - 3 Distractores plausibles ("is_correct": false) basados en errores reales de pilotaje, límites de otra fase de vuelo, o confusión habitual de sistemas.
+> 4. **Trazabilidad y Citas Exactas**: Referencia obligatoria a: Manual, Edición/Revisión, Capítulo/Sección, Párrafo y Página física.
 
 ---
 
@@ -14,15 +17,17 @@ Tu objetivo es formular un lote de reactivos de examen de opción múltiple con 
 
 ---
 
-### 1. REGLAS DE ORO DE GENERACIÓN:
-1. **Fidelidad Absoluta a la Fuente**: Toda pregunta, opción correcta y distractor debe estar 100% justificada en los manuales de compañía (MOA, MOB, SOPs), manuales de aeronave (FCOM, QRH, DDPM, MEL, POH) o normativa (EASA / SERA / DGR / Seguridad).
-2. **Estructura de Opciones**:
+### 1. REGLAS DE ORO DE GENERACIÓN (POLÍTICA ESTRICTA):
+1. **Fidelidad Absoluta a la Fuente (Zero Hallucination)**:
+   - Prohibido inventar datos, cifras o procedimientos que no aparezcan de forma explícita en los manuales de referencia.
+   - Toda limitación, velocidad, tiempo de respuesta, presión, temperatura o flujo de decisión debe coincidir al milímetro con el texto del manual.
+2. **Estructura de Opciones (1 Correcta + 3 Distractores Realistas)**:
    - Exactamente 4 opciones por pregunta (identificadas como `"A"`, `"B"`, `"C"`, `"D"`).
    - EXACTAMENTE UNA opción con `"is_correct": true`, las otras 3 con `"is_correct": false`.
-   - Distractores técnicamente plausibles (evitar opciones ridículas; utilizar confusiones comunes de límites, tiempos de respuesta o procedimientos).
-3. **Explicación Didáctica y Citas Exactas**:
-   - Explicar detalladamente por qué la opción correcta es la adecuada y por qué fallan los distractores clave.
-   - Incluir la cita y referencia documental precisa en el array `"references"` (ej. `"Binter MOA Cap. 8.1.3 - Gestión de Combustible"`, `"E195-E2 DDPM ATA 21"`, `"ICAO Doc 9284 DGR"`).
+   - Distractores técnicamente plausibles y realistas: basados en confusiones operacionales habituales, limitaciones adyacentes o valores de configuraciones alternativas. Prohibido incluir opciones absurdas o inverosímiles.
+3. **Explicación Didáctica y Citas Exactas con Página**:
+   - Explicar detalladamente por qué la opción correcta es la adecuada y citar textualmente el fundamento del manual.
+   - Indicar en el array `"references"` la cita exacta: Manual, Edición/Revisión, Capítulo, Subcapítulo, Párrafo y Página física (ej: `"Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 5: Performance - Paragraph 9 (Page 5-10)"`, `"Binter MOA ED06 RN25 - Cap. 8.1.3 (Pág. 8-12)"`).
 4. **Formato JSON Estricto**:
    - Devuelve ÚNICAMENTE un array JSON válido sin texto introductorio ni conclusiones fuera del bloque de código.
 
@@ -77,89 +82,47 @@ Tu objetivo es formular un lote de reactivos de examen de opción múltiple con 
 
 ---
 
-### 3. EJEMPLOS DE FORMATO (Few-Shot Examples):
+### 3. EJEMPLO ESTRUCTURAL ESTRICTO (Few-Shot):
 
 ```json
 [
   {
-    "id": "CMD-MNEM-001",
-    "subject_id": "cmd_mnemonicos",
-    "learning_objective": "Mnemónicos de Compañía - Briefing y Decisión: RETSE",
-    "stem": "En la operativa de vuelo de Binter, ¿qué significado tienen los elementos que componen el mnemónico operacional 'RETSE' utilizado para la estructuración del análisis y briefing?",
+    "id": "P2010-PERF-001",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 5 - Velocidades de Pérdida a MTOW",
+    "stem": "De acuerdo con la tabla de Stall Speeds del AFM (Sección 5) a MTOW (1160 kg, CG delantero en 23%), ¿cuáles son las velocidades de pérdida indicadas (KIAS) en vuelo recto y nivelado (0° de alabeo) para Flaps 0°, Flaps T/O y Flaps FULL?",
     "options": [
       {
         "id": "A",
-        "text": "R: Razón/Rutas, E: Estado del avión (Combustible/MEL), T: Terreno/Tiempo meteorológico, S: Servicios/SOPs, E: Expectativas/Estrategia.",
+        "text": "Flaps 0°: 61 KIAS; Flaps T/O: 54 KIAS; Flaps FULL: 48 KIAS",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "R: Runway, E: Engine, T: Terrain, S: Speed, E: Emergency.",
+        "text": "Flaps 0°: 66 KIAS; Flaps T/O: 58 KIAS; Flaps FULL: 52 KIAS",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "R: Radar, E: Elevation, T: Transition, S: Sector, E: Entry point.",
+        "text": "Flaps 0°: 58 KIAS; Flaps T/O: 50 KIAS; Flaps FULL: 42 KIAS",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "R: Restrictions, E: ETOPS, T: Traffic, S: Separation, E: ETA.",
+        "text": "Flaps 0°: 61 KIAS; Flaps T/O: 58 KIAS; Flaps FULL: 54 KIAS",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "El mnemónico RETSE es una regla nemotécnica estructurada en la compañía para garantizar un análisis holístico de la situación: Razón/Rutas, Estado del avión (Sistemas/MEL/Combustible), Terreno y Meteorología, Servicios ATS/Aeroportuarios y Expectativas/Estrategia de la maniobra.",
+      "text": "Según la tabla oficial de Stall Speeds del AFM (Página 5-7) a 1160 kg con palanca en IDLE y centro de gravedad en 23%, las velocidades de pérdida a 0° de viraje son: Flaps 0° = 61 KIAS, Flaps T/O = 54 KIAS, y Flaps FULL = 48 KIAS. Las opciones distractores reflejan valores correspondientes a 30° de alabeo o extrapolaciones no certificadas.",
       "references": [
-        "Binter Manual de Operaciones / Guía de Preparación de Comandante",
-        "CRM & TEM Procedimientos Operativos Binter"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 5: Performance - Paragraph 7: Stall Speed (Page 5-7)"
       ]
     },
     "metadata": {
       "difficulty": 0.4
     }
-  },
-  {
-    "id": "E195E2-DDPM-001",
-    "subject_id": "e195e2_ddpm",
-    "learning_objective": "E195-E2 DDPM - Procedimientos de Mantenimiento y Operacionales (M) y (O)",
-    "stem": "En el Dispatch Deviations Procedures Manual (DDPM) del Embraer 195-E2, ¿qué indica el símbolo (O) asociado a un ítem diferido?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Indica un procedimiento operacional específico que debe ser completado por la tripulación de vuelo antes del despegue o durante el vuelo.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Indica que el equipo es de uso Opcional y no requiere ninguna acción.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "Indica una tarea de mantenimiento obligatorio que solo puede realizar el personal TMA certificado.",
-        "is_correct": false
-      },
-      {
-        "id": "D",
-        "text": "Indica que el avión solo puede operar en vuelos de traslado (Overhaul flight).",
-        "is_correct": false
-      }
-    ],
-    "explanation": {
-      "text": "El símbolo (O) designa procedimientos operacionales que debe ejecutar la tripulación de vuelo. El símbolo (M) designa tareas técnicas que deben ser ejecutadas por personal de mantenimiento.",
-      "references": [
-        "Embraer 195-E2 DDPM General Information Section",
-        "Binter MOB Sección Despacho Técnico"
-      ]
-    },
-    "metadata": {
-      "difficulty": 0.3
-    }
   }
 ]
 ```
-
-### ACCIÓN REQUERIDA:
-Analiza los documentos adjuntos y genera el lote de reactivos técnicos solicitados respetando esta estructura JSON.
 ```

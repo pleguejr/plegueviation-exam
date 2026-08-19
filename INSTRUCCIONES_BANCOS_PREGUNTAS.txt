@@ -3,15 +3,42 @@
    AMPLIACIÓN, SINCRONIZACIÓN AUTOMÁTICA (GITHUB + VERCEL) Y USO EN MÓVILES
 ================================================================================
 
-Este documento contiene las instrucciones exactas para:
-1. Generar y ampliar bancos de preguntas con NotebookLM o Gemini sin duplicados.
+Este documento contiene las instrucciones exactas y la POLÍTICA OFICIAL para:
+1. Generar bancos de preguntas con rigor técnico basados EXCLUSIVAMENTE en manuales.
 2. Cómo funciona el ciclo automático de sincronización (GitHub + Vercel).
 3. Cómo actualizar tus dispositivos con un solo clic o a través del asistente.
 4. Instalar y usar la aplicación en tu iPhone o iPad (100% Offline).
 
 
 --------------------------------------------------------------------------------
-1. CÓMO FUNCIONA EL CICLO ACTUAL DE ACTUALIZACIÓN (LOCAL -> GITHUB -> VERCEL -> IPAD)
+1. POLÍTICA ESTRICTA DE CREACIÓN DE PREGUNTAS (ESTÁNDAR TRE / COMANDANTE)
+--------------------------------------------------------------------------------
+
+Para garantizar la máxima calidad técnica para el entrenamiento operacional:
+
+1. EXCLUSIVIDAD DOCUMENTAL (GROUND TRUTH):
+   - Queda terminantemente PROHIBIDO inventar o extrapolar preguntas, límites o cifras.
+   - Toda pregunta, opción y distractor debe estar extraída LITERALMENTE de los
+     manuales de referencia aportados (AFM, FCOM, QRH, SOPM, DDPM, MEL, MOA, MOB, Normativa).
+
+2. ESTRUCTURA DE OPCIONES (1 CORRECTA + 3 DISTRACTORES REALISTAS):
+   - Exactamente 4 opciones ("A", "B", "C", "D").
+   - Exactamente UNA opción con "is_correct": true.
+   - Exactamente TRES distractores realistas ("is_correct": false) basados en:
+     * Confusiones operacionales habituales en auditorías o simulador.
+     * Límites correspondientes a otra fase de vuelo o configuración adyacente.
+     * Cifras o umbrales técnicos verosímiles (prohibidas opciones absurdas).
+
+3. CITAS Y REFERENCIAS OBLIGATORIAS CON PÁGINA:
+   - Toda explicación debe incluir en el array "references":
+     * Manual y edición/revisión exacta.
+     * Capítulo, Sección y Párrafo.
+     * Número de Página física del documento.
+     Ejemplo: "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 5: Performance (Pág. 5-10)"
+
+
+--------------------------------------------------------------------------------
+2. CÓMO FUNCIONA EL CICLO ACTUAL DE ACTUALIZACIÓN (LOCAL -> GITHUB -> VERCEL -> IPAD)
 --------------------------------------------------------------------------------
 
 El sistema está configurado para que la actualización sea en cadena y automática:
@@ -33,78 +60,25 @@ El sistema está configurado para que la actualización sea en cadena y automát
 
 
 --------------------------------------------------------------------------------
-2. ¿EL "GIT PUSH" ES AUTOMÁTICO O TIENES QUE HACERLO TÚ?
+3. ¿EL "GIT PUSH" ES AUTOMÁTICO O TIENES QUE HACERLO TÚ?
 --------------------------------------------------------------------------------
-
-Depende de cómo estés trabajando en ese momento:
 
 CASO A: Si estás trabajando conmigo en este chat:
   - ¡Es 100% AUTOMÁTICO!
   - Cada vez que me pidas crear preguntas, modificar el diseño o importar un lote,
-    yo mismo ejecuto los comandos 'build_banks.py', 'git add', 'git commit'
-    y 'git push' por ti. No tienes que tocar ninguna consola.
+    yo mismo ejecuto 'build_banks.py', 'git commit' y 'git push' por ti.
 
 CASO B: Si creas los archivos JSON tú por tu cuenta en tu PC:
-  - Tienes un acceso directo de 1 solo clic:
-    Haz doble clic en: 'actualizar_banco.bat'
-  - Este archivo hace automáticamente:
-    1. Recompila todo el catálogo de preguntas.
-    2. Hace 'git add', 'git commit' y 'git push' a tu GitHub privado.
-    3. En 20 segundos tu Vercel y tu iPad estarán actualizados.
+  - Haz doble clic en: 'actualizar_banco.bat'.
+  - Compila y sube a GitHub y Vercel en 2 segundos.
 
 CASO C: Si estás en movilidad en tu iPad o iPhone (sin PC):
   - En la propia app del iPad, pulsa el botón "Importar IA", pega el JSON
-    generado por NotebookLM y pulsa "Validar e Importar".
-  - Se guardará al instante en la memoria de tu iPad sin necesidad de PC ni GitHub.
+    y pulsa "Validar e Importar".
 
 
 --------------------------------------------------------------------------------
-3. FLUJO GENERAL DE CREACIÓN DESDE CERO (PASO A PASO)
---------------------------------------------------------------------------------
-
-PASO 1: Subir manuales a NotebookLM (o adjuntar en Gemini)
-  - Entra en https://notebooklm.google.com
-  - Crea un cuaderno temático (ej: "Binter Ops MOA/MOB", "E195-E2 FCOM y QRH", etc.).
-  - Sube los PDFs correspondientes de tus manuales.
-
-PASO 2: Solicitar el lote de preguntas a la IA
-  - Copia la "PLANTILLA DE PROMPT MAESTRO" (ver Sección 5 de este documento).
-  - Pega el prompt en el chat de NotebookLM / Gemini indicando el tema y capítulo.
-  - Ejemplo de solicitud:
-    "Analiza el MOA Capítulo 8 (Gestión de Combustible) y genera 10 preguntas
-     con subject_id: 'binter_moa' e IDs del 'BIN-MOA-001' al 'BIN-MOA-010'."
-
-PASO 3: Guardar y Sincronizar
-  - Guarda el JSON en la carpeta correspondiente dentro de 'banks/'.
-    (Ejemplo: 'banks/binter-ops/moa/lote_01.json').
-  - Haz doble clic en 'actualizar_banco.bat' (o pídemelo a mí en el chat).
-
-
---------------------------------------------------------------------------------
-4. CÓMO AMPLIAR PREGUNTAS DE UN TEMA EXISTENTE (SIN REPETIR CONTENIDO)
---------------------------------------------------------------------------------
-
-REGLA 1: Usa numeración correlativa en los IDs
-  Si ya tienes creadas las preguntas BIN-MOA-001 a BIN-MOA-010:
-  - En tu siguiente prompt pide: "IDs del BIN-MOA-011 al BIN-MOA-020".
-
-REGLA 2: Pide a la IA escenarios específicos o casos avanzados
-  En lugar de pedir "más preguntas generales", dile en el chat:
-  "Ya tengo cubiertos los conceptos básicos de combustible. Ahora genera
-   10 preguntas de AMPLIACIÓN sobre el subcapítulo 8.1 enfocadas en:
-   - Desvío con MINIMUM FUEL y MAYDAY FUEL.
-   - Procedimiento de recálculo de reserva en vuelo y aeródromo aislado.
-   - Usar IDs del BIN-MOA-011 al BIN-MOA-020 y subject_id: 'binter_moa'."
-
-REGLA 3: Organización de archivos en disco (Multi-archivo)
-  El sistema permite tener múltiples archivos .json dentro de una misma carpeta:
-    banks/binter-ops/moa/combustible_basico.json
-    banks/binter-ops/moa/combustible_ampliacion_01.json
-    banks/binter-ops/moa/combustible_casos_especiales.json
-
-
---------------------------------------------------------------------------------
-5. PLANTILLA DE PROMPT MAESTRO PARA NOTEBOOKLM / GEMINI
+4. PLANTILLA DE PROMPT MAESTRO PARA NOTEBOOKLM / GEMINI
 --------------------------------------------------------------------------------
 
 [COPIA DESDE AQUÍ]
@@ -114,30 +88,30 @@ Tu objetivo es formular un lote de preguntas de opción múltiple con máxima
 precisión técnica y operacional basadas EXCLUSIVAMENTE en las fuentes adjuntas.
 
 REGLAS ESTRICTAS:
-1. Exactamente 4 opciones por pregunta ("A", "B", "C", "D").
-2. Exactamente UNA opción con "is_correct": true y tres con "is_correct": false.
-3. Distractores técnicamente plausibles (evitar opciones absurdas).
-4. Explicación didáctica completa indicando el porqué y las referencias
-   exactas del manual (Capítulo, Sección, Manual) en el array "references".
-5. Devuelve ÚNICAMENTE un bloque de código JSON válido, sin texto introductorio.
+1. FIDELIDAD ABSOLUTA: Cero invención. Extrae los datos literalmente del texto adjunto.
+2. 4 OPCIONES: Exactamente UNA opción con "is_correct": true y TRES distractores
+   realistas ("is_correct": false) basados en errores comunes o límites adyacentes.
+3. REFERENCIA OBLIGATORIA: Cita en "references" el Manual, Edición, Capítulo,
+   Párrafo y Número de Página exacta de la fuente.
+4. Devuelve ÚNICAMENTE un bloque de código JSON válido, sin texto introductorio.
 
 ESTRUCTURA DEL JSON:
 [
   {
     "id": "PREFIJO-NUMERO",
     "subject_id": "CODIGO_TEMA",
-    "learning_objective": "Capítulo y Tema del Manual",
-    "stem": "Enunciado claro de la pregunta...",
+    "learning_objective": "Capítulo, Párrafo y Tema del Manual",
+    "stem": "Enunciado claro y profesional de la pregunta...",
     "options": [
       { "id": "A", "text": "Texto opción A...", "is_correct": true },
-      { "id": "B", "text": "Texto opción B...", "is_correct": false },
-      { "id": "C", "text": "Texto opción C...", "is_correct": false },
-      { "id": "D", "text": "Texto opción D...", "is_correct": false }
+      { "id": "B", "text": "Texto opción B (distractor realista)...", "is_correct": false },
+      { "id": "C", "text": "Texto opción C (distractor realista)...", "is_correct": false },
+      { "id": "D", "text": "Texto opción D (distractor realista)...", "is_correct": false }
     ],
     "explanation": {
-      "text": "Explicación detallada de la respuesta correcta...",
+      "text": "Explicación técnica detallada citando el porqué según el manual...",
       "references": [
-        "Manual / Capítulo / Sección exacta"
+        "Manual / Edición / Capítulo / Párrafo / Página exacta"
       ]
     },
     "metadata": {
@@ -147,16 +121,16 @@ ESTRUCTURA DEL JSON:
 ]
 
 INSTRUCCIÓN ESPECÍFICA PARA ESTE LOTE:
-- Tema/Sección a extraer: [ESCRIBE AQUÍ EL CAPÍTULO O TEMA]
+- Tema/Sección a extraer: [ESCRIBE AQUÍ EL CAPÍTULO O PÁGINAS]
 - subject_id a utilizar: [ESCRIBE AQUÍ EL SUBJECT_ID DE LA TABLA]
-- Rango de IDs: [EJEMPLO: BIN-MOA-001 al BIN-MOA-010]
-- Cantidad de preguntas: [EJEMPLO: 10 preguntas]
+- Rango de IDs: [EJEMPLO: P2010-LIM-001 al P2010-LIM-015]
+- Cantidad de preguntas: [EJEMPLO: 15 preguntas]
 --------------------------------------------------------------------------------
 [HASTA AQUÍ]
 
 
 --------------------------------------------------------------------------------
-6. TABLA DE REFERENCIA DE SUBJECT_ID, PREFIJOS Y CARPETAS
+5. TABLA DE REFERENCIA DE SUBJECT_ID, PREFIJOS Y CARPETAS
 --------------------------------------------------------------------------------
 
 CATEGORÍA: BINTER OPS
@@ -222,17 +196,5 @@ Reglas del Aire y Normativa | cmd_air_law            | CMD-LAW-   | banks/comman
 Performance y Pistas        | cmd_performance        | CMD-PERF-  | banks/command-upgrade/performance
 Mnemónicos (RETSE, E-DALTA) | cmd_mnemonicos         | CMD-MNEM-  | banks/command-upgrade/mnemonicos-flujos-compania
 Preguntas Habituales Examen | cmd_habituales         | CMD-HAB-   | banks/command-upgrade/preguntas-habituales-examen
-
-
---------------------------------------------------------------------------------
-7. ARCHIVOS EJECUTABLES EN TU ORDENADOR (1 SOLO CLIC)
---------------------------------------------------------------------------------
-
-1. 'start_exam.bat':
-   Inicia el servidor local para practicar en el PC o en la red Wi-Fi de casa.
-
-2. 'actualizar_banco.bat':
-   Compila todas las preguntas de 'banks/' y hace 'git push' a GitHub y Vercel
-   automáticamente para que tu iPad/iPhone se actualice en la nube.
 
 ================================================================================
