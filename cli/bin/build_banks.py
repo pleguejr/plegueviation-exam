@@ -108,6 +108,7 @@ def compile_banks() -> int:
         "partes-aplicables-moa-mob": "Partes Aplicables MOA / MOB",
         "flujo-despacho-mel-ddpm-cdl": "Flujo de Despacho MEL / DDPM / CDL",
         "gestion-emergencias-mando": "Gestión de Emergencias y Mando",
+        "examen-oficial": "Examen Oficial de Mando (FOR-ENT-006)",
         "pasajeros-conflictivos": "Pasajeros Conflictivos (Disruptive Pax)",
         "preparacion-planificacion-vuelo": "Preparación y Planificación de Vuelo",
         "procedimientos-operativos-vuelo-tierra": "Procedimientos en Vuelo y en Tierra",

@@ -1,0 +1,1873 @@
+[
+  {
+    "id": "CMD-E2-001",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AOM E195-E2 - Arquitectura del Motor PW1900G Geared Turbofan",
+    "stem": "En la arquitectura motopropulsor del Embraer 195-E2 con motores Pratt & Whitney PW1900G Geared Turbofan (GTF), ¿qué función desempeña la caja reductora Fan Drive Gear System (FDGS)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Permite que el Fan frontal gire a menor velocidad óptima mientras la turbina de baja presión gira a alta velocidad óptima (ratio ~3:1), reduciendo ruido, emisiones y consumo de combustible",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Conecta el motor al generador eléctrico exclusivamente",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Es una transmisión manual sincronizada para empuje inverso",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Acciona la bomba mecánica de combustible sin relación con el fan",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El sistema FDGS desacopla la velocidad del fan y de la turbina de baja presión, permitiendo al gran fan girar más despacio y a la turbina a régimen óptimo de máxima eficiencia térmica y acústica.",
+      "references": [
+        "AOM E195-E2 Capítulo 14 Powerplant",
+        "Pratt & Whitney PW1900G Engine Manual"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-002",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "SOPM / AOM E195-E2 - Enfriamiento de Motores PW1900G (3 minutos)",
+    "stem": "Tras el aterrizaje en el Embraer 195-E2, ¿cuál es el tiempo mínimo requerido de funcionamiento de los motores en ralentí (IDLE) antes de cortar el Master para su apagado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1 minuto",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "3 minutos de funcionamiento en ralentí (o ralentí de rodaje) para permitir la estabilización térmica homogénea de los rotores y el enfriamiento de los cojinetes",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "5 minutos continuos sin aplicar frenos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No requiere tiempo de enfriamiento por ser motor moderno",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los motores PW1900G exigen al menos 3 minutos de operación a ralentí antes del corte para prevenir el arqueamiento térmico del rotor (Rotor Bow) y la carbonización de aceite en cojinetes.",
+      "references": [
+        "SOPM E195-E2 Normal Procedures - Engine Shutdown",
+        "AOM Sección Motores"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-003",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AOM E195-E2 - Mensaje EICAS FUEL LO LEVEL (~300 kg / tanque)",
+    "stem": "¿A qué cantidad de combustible restante en cada tanque alar se activa el mensaje de precaución EICAS \"FUEL LO LEVEL\" en el Embraer 195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aproximadamente 100 kg (220 lb) en cada tanque",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Aproximadamente 550 kg (1210 lb) en cada tanque",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aproximadamente 300 kg (660 lb) en el tanque alar correspondiente (suministrando ~30 minutos de reserva final)",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Aproximadamente 800 kg en total",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El aviso amarillo FUEL LO LEVEL se ilumina en el EICAS cuando la cantidad en un tanque alar desciende por debajo de aproximadamente 300 kg (660 lb).",
+      "references": [
+        "AOM E195-E2 Capítulo 12 Fuel System",
+        "QRH E195-E2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-004",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AOM E195-E2 - Mensaje EICAS FUEL IMBALANCE (360 kg / 800 lb)",
+    "stem": "¿Cuál es el valor límite de desbalance de combustible entre tanques alares que dispara el mensaje de precaución EICAS \"FUEL IMBALANCE\" en el E195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "100 kg (220 lb)",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "200 kg (440 lb)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "500 kg (1100 lb)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aproximadamente 360 kg (800 lb) de diferencia entre tanques",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "El sistema de combustible activa FUEL IMBALANCE cuando la diferencia entre el tanque alar izquierdo y derecho supera los 360 kg (800 lb). Se extingue al reducir el desbalance a menos de 45 kg (100 lb).",
+      "references": [
+        "AOM E195-E2 Capítulo 12 Fuel System"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-005",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AOM E195-E2 - Ram Air Turbine (RAT) y Pérdida Total AC",
+    "stem": "En caso de fallo total de generación eléctrica de corriente alterna (All AC Power Loss), ¿qué fuente de energía de emergencia se despliega automáticamente en el Embraer 195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "La Ram Air Turbine (RAT: Turbina de Impacto de Aire), que genera potencia eléctrica de 115 VAC para las barras esenciales y presuriza el Sistema Hidráulico de emergencia",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Un motor auxiliar de gasolina en el cono de cola",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Paneles fotovoltaicos en el extradós alar",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El alternador de imanes permanentes del FADEC",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La RAT se despliega automáticamente en el flujo de aire al perderse todas las fuentes AC principales, alimentando las barras esenciales y el sistema de mandos críticos.",
+      "references": [
+        "AOM E195-E2 Capítulo 7 Electrical System"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-006",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AOM E195-E2 - Presión Nominal del Sistema Hidráulico (3000 psi)",
+    "stem": "¿Cuál es la presión nominal operativa de trabajo de los tres sistemas hidráulicos independientes del Embraer 195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1500 psi",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "3000 psi",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "5000 psi",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "2100 psi",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los Sistemas Hidráulicos 1, 2 y 3 del Embraer 195-E2 operan a una presión de trabajo estándar de 3000 psi.",
+      "references": [
+        "AOM E195-E2 Capítulo 13 Hydraulic System"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-007",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AOM E195-E2 - Función de la PTU Hidráulica",
+    "stem": "¿Qué función cumple la Unidad de Transferencia de Potencia (Power Transfer Unit - PTU) en el sistema hidráulico del E195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mezcla el líquido hidráulico del Sistema 1 con el Sistema 2 en caso de fuga",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Alimenta el tren de morro exclusivamente con aire a presión",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Transfiere potencia mecánica de presurización entre el Sistema Hidráulico 1 y el Sistema Hidráulico 2 sin transferir ni mezclar fluido hidráulico entre ambos",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Refrigera el líquido hidráulico de los frenos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La PTU utiliza la presión del Sistema 1 para mover una bomba en el Sistema 2 (o viceversa) asistiendo en la retracción del tren tras fallo de motor sin mezcla de fluidos.",
+      "references": [
+        "AOM E195-E2 Capítulo 13 Hydraulic System"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-008",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AOM E195-E2 - Modos de Control FBW (Normal Mode vs Direct Mode)",
+    "stem": "En el sistema de Mandos de Vuelo Fly-By-Wire (FBW) del Embraer 195-E2, ¿cuál es la diferencia fundamental entre el Modo Normal (Normal Mode) y el Modo Directo (Direct Mode)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En Modo Directo el avión solo puede ser pilotado por el piloto automático",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "En Modo Normal los mandos están conectados por cables de acero mecánicos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En Modo Directo no funcionan los alerones",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En Modo Normal los FCMs proporcionan protección activa de envolvente de vuelo (alta/baja velocidad, alabeo y factor de carga), mientras que en Modo Directo los actuadores responden directamente a las palancas sin protecciones de envolvente",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "El Normal Mode procesa las leyes de control a través de los FCMs garantizando protecciones completas de envolvente; el Direct Mode degrada el control a través de las ACEs con respuesta lineal sin protecciones.",
+      "references": [
+        "AOM E195-E2 Capítulo 9 Flight Controls"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-009",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AFM / AOM E195-E2 - Techo Máximo Operativo (FL410)",
+    "stem": "¿Cuál es el techo máximo de altitud operativa certificado para el Embraer 195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "41.000 ft (FL410)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "37.000 ft (FL370)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "45.000 ft (FL450)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "33.000 ft (FL330)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La altitud máxima operativa de servicio certificada en el AFM del Embraer 195-E2 es de 41.000 pies.",
+      "references": [
+        "AFM E195-E2 Sección 2 Limitaciones",
+        "AOM Capítulo 2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-010",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AOM E195-E2 - Despliegue Automático de Máscaras de Pasaje (14.000 ft)",
+    "stem": "¿A qué altitud de cabina (Cabin Altitude) se produce el despliegue automático de las máscaras de oxígeno de los pasajeros en la cabina del Embraer 195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "10.000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Entre 14.000 ft y 14.750 ft de altitud de cabina",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "18.000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "25.000 ft",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las compuertas de las cajas PSU de pasaje se abren automáticamente liberando las máscaras de oxígeno cuando la altitud de presión en cabina supera los 14.000 ft.",
+      "references": [
+        "AOM E195-E2 Capítulo 17 Oxygen System"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-011",
+    "subject_id": "cmd_dispatch_mel",
+    "learning_objective": "MEL EMB BA RN24 / DDPM - Despacho con APU Inoperativo",
+    "stem": "En el despacho técnico con la MEL del Embraer 195-E2, si la Unidad de Potencia Auxiliar (APU) está inoperativa (Diferido Cat C):",
+    "options": [
+      {
+        "id": "A",
+        "text": "El avión no puede ser despachado comercialmente",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Se requiere despresurizar el avión antes del despegue",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se permite el despacho requiriendo arranque de motor en tierra con unidad neumática externa (Air Starter Unit / Huffer) y fuente eléctrica GPU, y arranque cruzado (Crossbleed Start) para el segundo motor",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Se restringe el techo de vuelo a FL150",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La MEL autoriza el despacho con APU inoperativa mediante los procedimientos (M) y (O) correspondientes de arranque asistido por medios de tierra y crossbleed.",
+      "references": [
+        "MEL EMB BA RN24 ATA 49 APU",
+        "DDPM Sección 3"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-012",
+    "subject_id": "cmd_dispatch_mel",
+    "learning_objective": "MEL EMB BA RN24 - Despacho con Reversa Inoperativa (ATA 78)",
+    "stem": "¿Qué limitación operacional en el cálculo de performance de despegue y aterrizaje aplica si se despacha el avión con un inversor de empuje (Thrust Reverser) inoperativo según la MEL?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No se permite despegar con peso superior a 40 toneladas",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Se reduce la velocidad Vne en 30 nudos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El viento cruzado se limita a 5 nudos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se debe bloquear mecánicamente el inversor en posición plegada/forward (M), no tomar crédito de reversa en los cálculos de rendimiento (O) y aplicar las penalizaciones de distancia en pista mojada o contaminada",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "La MEL exige bloqueo físico del inversor inop, cálculo sin reversas y penalizaciones adicionales en pistas con coeficiente de frenado reducido.",
+      "references": [
+        "MEL EMB BA RN24 ATA 78",
+        "DDPM Sección 3"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-013",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AOM E195-E2 - Detección Automática de Hielo",
+    "stem": "¿Cómo está constituido el sistema de detección de hielo en vuelo del Embraer 195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dos sensores ultrasónicos de vibración en el fuselaje delantero que detectan la frecuencia de resonancia al acumularse masa de hielo en su superficie",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cámaras térmicas ópticas en las alas",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Sensores de presión pitot modificados",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Observación visual obligatoria por los pilotos con foco de plano",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los detectores de hielo constan de sondas que vibran a frecuencia ultrasónica. La masa de hielo depositada cambia su frecuencia natural disparando la señal y activando automáticamente el antihielo.",
+      "references": [
+        "AOM E195-E2 Capítulo 11 Ice & Rain Protection"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-014",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AOM E195-E2 - Zonas Protegidas por Aire Térmico",
+    "stem": "¿Qué superficies de la aeronave reciben protección antihielo por aire caliente de sangrado (Thermal Bleed Air Anti-ice) en el E195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Los bordes de ataque de los flaps y el timón de profundidad",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Los bordes de ataque alares externos (Slats 2, 3 y 4) y las tomas de aire de los motores (Engine Cowl Inlets)",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "El estabilizador vertical y cono de morro",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El tren de aterrizaje y compuertas de bodega",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El aire caliente de sangrado protege térmicamente las tomas de admisión del motor (Cowls) y los slats exteriores del borde de ataque alar.",
+      "references": [
+        "AOM E195-E2 Capítulo 11"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-015",
+    "subject_id": "cmd_performance",
+    "learning_objective": "AFM E195-E2 - Límite Máximo Demostrado de Viento Cruzado en Pista Seca",
+    "stem": "¿Cuál es la limitación máxima demostrada de componente de viento cruzado (Crosswind) para despegue y aterrizaje en pista seca en el Embraer 195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "20 nudos",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "25 nudos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "35 nudos (o hasta 38 nudos según versión del AFM / certificado)",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "50 nudos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El límite máximo demostrado de viento cruzado en pista seca para el Embraer 195-E2 está establecido en 35-38 nudos según el AFM y manual de operaciones.",
+      "references": [
+        "AFM E195-E2 Sección 2 Limitaciones",
+        "SOPM E195-E2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-016",
+    "subject_id": "cmd_performance",
+    "learning_objective": "MOA 8.1.4 / SOPM E195-E2 - Viento Cruzado en Pistas Contaminadas",
+    "stem": "En pista contaminada con nieve compactada o hielo (RWY CC 1 / Frenado Pobre o Acción de Frenado reducida), ¿cuál es el límite operativo máximo de viento cruzado recomendado en el E195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "30 nudos",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "25 nudos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "20 nudos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "10 a 15 nudos máximo",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "Con coeficientes de rozamiento muy bajos o acción de frenado reducida, el viento cruzado se restringe a un máximo de 10-15 nudos para evitar excursiones de pista.",
+      "references": [
+        "MOA Binter 8.1.4.3",
+        "Manual de Operación Invernal"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-017",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AOM / SOPM E195-E2 - Despegue con Empuje Flexible (Assumed Temperature)",
+    "stem": "¿Qué función cumple la función de despegue con empuje reducido (Flex Takeoff / Reduced Thrust Takeoff) mediante temperatura asumida en el E195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reduce el desgaste térmico y mecánico del motor alargando su vida útil y disminuyendo los costes de mantenimiento cuando la longitud de pista y el peso lo permiten",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Aumenta el consumo de combustible para evitar sobrepeso",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Permite despegar con un generador apagado",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Es obligatoria en pistas con nieve contaminada",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El empuje flexible reduce el estrés térmico en las turbinas de alta presión del motor cuando el avión no está limitado por longitud de pista o franqueamiento de obstáculos.",
+      "references": [
+        "AOM E195-E2 Performance",
+        "SOPM Takeoff Procedures"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-018",
+    "subject_id": "cmd_flight_ground_ops",
+    "learning_objective": "AFM / SOPM E195-E2 - Prohibición de Despegue Flexible (Flex Takeoff)",
+    "stem": "¿Bajo qué condiciones está PROHIBIDO realizar un despegue con empuje reducido (Flex Takeoff)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Con temperatura ambiente inferior a 20°C",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "En pistas contaminadas (agua estancada, aguanieve, nieve o hielo) o cuando los frenos o el sistema de antiskid estén inoperativos",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "En aeropuertos al nivel del mar",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Con viento en calma",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El despegue con empuje reducido está estrictamente prohibido en pistas contaminadas o cuando existen averías en antiskid/frenos.",
+      "references": [
+        "AFM E195-E2 Sección 2",
+        "SOPM E195-E2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-019",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AOM E195-E2 - Sistema de Control de Frenos (BCM / Carbon Brakes)",
+    "stem": "En el sistema de frenos y antiskid del Embraer 195-E2, ¿qué sistema proporciona la protección contra hidroplaneo (Locked Wheel Protection) y control diferencial de frenado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Las palancas de mando mecánicas",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "La palanca de flaps exclusivamente",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El módulo digital BCM (Brake Control Module) que modula electrohidráulicamente la presión en cada conjunto de frenos de disco de carbono",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "El piloto automático GFC",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El BCM monitoriza la velocidad angular de cada rueda mediante transductores de tacómetro, aliviando la presión para evitar bloqueos y optimizar la parada.",
+      "references": [
+        "AOM E195-E2 Capítulo 15 Landing Gear & Brakes"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-020",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AOM E195-E2 - Modo Autobrake RTO",
+    "stem": "¿Qué función cumple el sistema de frenado automático (Autobrake) en el modo RTO (Rejected Takeoff)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aplica frenado suave para no asustar al pasaje",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Solo frena la rueda de morro",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Acelera los motores al máximo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aplica automáticamente la máxima presión hidráulica de frenado disponible tan pronto como los mandos de potencia se retrasan a ralentí a velocidades superiores a 60 KIAS",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "Al seleccionar RTO en el despegue, si se aborta por encima de 60 KIAS y se cortan gases, el sistema aplica inmediatamente la máxima fuerza de frenado hidráulico.",
+      "references": [
+        "AOM E195-E2 Capítulo 15"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-021",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "SOPM / QRH E195-E2 - Gestión Térmica de Frenos tras RTO",
+    "stem": "En caso de abortar el despegue (RTO) a alta velocidad (cerca de V1) en el Embraer 195-E2, ¿qué precaución crítica debe tener la tripulación respecto a la temperatura de frenos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Monitorizar la indicación de temperatura de frenos en la sinóptica del MFD y coordinar con los bomberos de pista (RFFS), no aplicando el freno de estacionamiento a menos que sea imprescindible para evitar la soldadura de discos",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Despegar de inmediato para enfriar los frenos en el aire",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Regar los frenos con cubos de agua fría inmediatamente",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Apagar todos los generadores eléctricos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Tras un RTO de alta energía los frenos de carbono alcanzan cientos de grados. Se debe evitar el parking brake para no fusionar los conjuntos y solicitar asistencia RFFS.",
+      "references": [
+        "SOPM E195-E2 Emergency Procedures - High Energy RTO",
+        "QRH E195-E2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-022",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AOM E195-E2 - Pulsador CABIN DUMP",
+    "stem": "¿Cuál es la función del sistema de presurización en modo \"DUMP\" activado mediante el pulsador de cabina en el E195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Llenar los depósitos de agua de los lavabos",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Abre completamente la válvula de escape de flujo (Outflow Valve) y apaga la recirculación para igualar rápidamente la presión de cabina con la exterior (hasta 12.400 ft) en caso de humo o evacuación",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Lanza combustible fuera del avión",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Dispara los extintores de motor",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El pulsador DUMP despresuriza rápidamente la cabina abriendo la Outflow Valve para evacuación de humo o apertura de puertas en emergencia.",
+      "references": [
+        "AOM E195-E2 Capítulo 6 Air Conditioning & Pressurization"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-023",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AOM E195-E2 - Arquitectura de Pantallas Primus Epic 2 (4 DUs)",
+    "stem": "En la suite de aviónica Honeywell Primus Epic 2 del Embraer 195-E2, ¿qué pantallas componen el panel de instrumentos principal de la cabina de pilotaje?",
+    "options": [
+      {
+        "id": "A",
+        "text": "6 pantallas de tubo de rayos catódicos tradicionales",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "2 relojes analógicos y 1 iPad",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "4 pantallas LCD panorámicas de gran formato (DU 1 a DU 4) de 13x10 pulgadas de alta resolución",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "8 pantallas táctiles pequeñas",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La cabina dispone de 4 pantallas panorámicas de cristal líquido (Display Units) que presentan PFD y MFD de forma flexible y redundante.",
+      "references": [
+        "AOM E195-E2 Capítulo 16 Avionics Suite Primus Epic 2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-024",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AOM E195-E2 - Visión Sintética (SVS)",
+    "stem": "¿Qué función cumple la Synthetic Vision System (SVS) integrada en el PFD del Primus Epic 2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Controla la potencia de los motores",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Calcula la masa y centrado en vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Sustituye a la tripulación en el aterrizaje",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Presenta una representación gráfica tridimensional en tiempo real del terreno, obstáculos, pistas y entorno exterior basada en base de datos topográfica y posición GPS/IRS",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "La Visión Sintética proyecta el relieve del terreno y la pista en 3D en el PFD para aumentar la consciencia situacional nocturna y en IMC.",
+      "references": [
+        "AOM E195-E2 Capítulo 16 Avionics"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-025",
+    "subject_id": "cmd_dispatch_mel",
+    "learning_objective": "DDPM Sección 4 - Despacho de Descargadores Estáticos en la CDL",
+    "stem": "Si durante la inspección prevuelo exterior se detecta que falta una descarga estática (Static Discharger) en el empenaje o ala del E195-E2, ¿qué documento técnico regula su despacho?",
+    "options": [
+      {
+        "id": "A",
+        "text": "La Lista de Desviaciones de Configuración (CDL - Configuration Deviation List) contenida en el DDPM / AFM",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El manual de catering",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El manual de ventas de pasaje",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El libro de quejas de cabina",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los elementos aerodinámicos o secundarios faltantes en el exterior de la aeronave (como descargadores de estática o tapas) se despachan a través de la CDL.",
+      "references": [
+        "DDPM Sección 4 CDL ATA 23 Static Dischargers",
+        "AFM E195-E2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-026",
+    "subject_id": "cmd_dispatch_mel",
+    "learning_objective": "DDPM Sección 4 - Penalizaciones CDL (Weight & Fuel Drag Penalties)",
+    "stem": "En la CDL del Embraer 195-E2, ¿qué tipo de penalizaciones operacionales se asocian habitualmente a los elementos exteriores faltantes?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reducción del número de pasajeros a la mitad",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Penalizaciones de masa máxima de despegue/aterrizaje (Weight Penalty) o incrementos porcentuales en el consumo de combustible de crucero (Fuel Burn Penalty) debido al aumento de resistencia parásita",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Prohibición de aterrizar con viento de cara",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Obligación de volar con el tren extendido",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los ítems CDL imponen reducciones en los límites de peso o incrementos de consumo por aumento de resistencia aerodinámica.",
+      "references": [
+        "DDPM Sección 4 CDL Preamble"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-027",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AOM E195-E2 - Procedimiento de Crossfeed de Combustible",
+    "stem": "¿Cómo se abastece y conmuta la alimentación de combustible entre los motores en vuelo si se produce un desbalance en el E195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mediante trasvase directo de combustible de un tanque alar al otro mediante bombas de trasvase alar",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Abriendo la válvula de vertido al exterior",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Abriendo la válvula de alimentación cruzada (Crossfeed Valve a LOW 1 o LOW 2), alimentando ambos motores desde el tanque que contiene mayor cantidad de combustible",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Apagando el motor del lado con menos combustible",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El E195-E2 no trasvasa combustible entre alas; el crossfeed alimenta ambos motores desde el tanque con más combustible hasta corregir el desbalance.",
+      "references": [
+        "AOM E195-E2 Capítulo 12 Fuel System"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-028",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AOM E195-E2 - Sistema de Extinción de Bodega (High-Rate / Metered Discharge)",
+    "stem": "¿Qué tipo de extintores fijos de fuego equipa el compartimento de carga (bodegas) del Embraer 195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Extintores de agua a presión",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Extintores de CO2 manuales únicamente",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Sistema de espuma química en polvo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Sistema de extinción por gas Halón con dos botellas: una de descarga rápida inmediata (High-Rate Bottle) y una de descarga lenta dosificada continua (Low-Rate Metered Bottle) para mantener la concentración durante el vuelo hasta el aterrizaje",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "El sistema de bodegas cuenta con 2 botellas de halón: descarga inicial rápida para extinguir la llama y descarga lenta continua para evitar la reignición durante el desvío.",
+      "references": [
+        "AOM E195-E2 Capítulo 8 Fire Protection"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-029",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AOM E195-E2 - Protección contra Incendios en Motores y APU",
+    "stem": "En la protección contra el fuego de motores y APU en el Embraer 195-E2:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Los motores disponen de 2 botellas extintoras de halón compartidas y el APU dispone de 1 botella extintora dedicada con capacidad de descarga automática en tierra",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El APU no tiene extintor",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Los motores tienen 6 botellas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo se apagan cortando el combustible",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Cada motor puede recibir hasta 2 disparos de las botellas de halón compartidas; el APU tiene 1 botella que se dispara automáticamente si detecta fuego en tierra con motores parados.",
+      "references": [
+        "AOM E195-E2 Capítulo 8 Fire Protection"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-030",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AOM E195-E2 - TCAS II Versión 7.1",
+    "stem": "¿Qué función cumple el sistema TCAS II Versión 7.1 instalado en el Embraer 195-E2 ante un encuentro de tráfico conflictivo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Maniobra el timón de dirección para virar a la derecha automáticamente",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Genera avisos de tráfico (TA) sonoros y visuales y avisos de resolución (RA) verticales en el PFD instruyendo regímenes específicos de ascenso o descenso (o inversión de maniobra) para garantizar separación vertical",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Apaga el transpondedor del avión intruso",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Frena el avión en el aire",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El TCAS 7.1 emite TAs preventivos y RAs verticales coordinados entre aeronaves para evitar colisiones aéreas.",
+      "references": [
+        "AOM E195-E2 Capítulo 16 Navigation"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-031",
+    "subject_id": "cmd_performance",
+    "learning_objective": "Performance E195-E2 / CS-25 - Definición Operacional de V1",
+    "stem": "¿Cómo se define la velocidad de decisión de despegue (V1) en la certificación de reactores de transporte como el E195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "La velocidad a la que el avión empieza a volar",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "La velocidad máxima a la que se pueden extender los flaps",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La velocidad máxima a la que el piloto puede iniciar la primera acción de frenado/aborto de despegue y la velocidad mínima a la que el despegue debe continuarse con seguridad en caso de fallo del motor crítico",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "La velocidad de contacto de la rueda de morro",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "V1 es la velocidad límite de decisión: antes de V1 se aborta ante cualquier fallo grave; superada V1 el despegue se continúa obligatoriamente.",
+      "references": [
+        "AFM E195-E2 Sección 1 Performance",
+        "SOPM Takeoff Briefing"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-032",
+    "subject_id": "cmd_performance",
+    "learning_objective": "Performance E195-E2 - Definición de Vr y V2",
+    "stem": "¿Qué define la velocidad de rotación (Vr) y la velocidad de seguridad en el despegue (V2) en el Embraer 195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vr es la velocidad de parada y V2 es la de crucero",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Vr es la velocidad de flaps y V2 la de tren",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Vr es la velocidad de turbulencia y V2 la de planeo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Vr es la velocidad a la que se inicia la maniobra de rotación para adoptar la actitud de ascenso, y V2 es la velocidad mínima que se debe alcanzar a 35 ft sobre la pista con un motor inoperativo (Takeoff Safety Speed)",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "Vr inicia la rotación a régimen constante (aprox. 3°/s); V2 garantiza el gradiente de ascenso reglamentario en el segundo segmento con N-1.",
+      "references": [
+        "AFM E195-E2 Sección 1",
+        "AOM Performance"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-033",
+    "subject_id": "cmd_flight_ground_ops",
+    "learning_objective": "MOA 8.2.1 / EASA - Repostaje con Pasaje a Bordo",
+    "stem": "En la operativa de reabastecimiento de combustible con pasajeros embarcando o a bordo:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Debe estar informada la tripulación, la señal de no fumar encendida, la señal de cinturones apagada, los pasillos despejados, las puertas principales practicables con medios de evacuación listos y comunicación establecida con el personal de repostaje",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Los pasajeros deben permanecer con cinturones abrochados",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se prohíbe terminantemente el repostaje con pasajeros a bordo en todos los casos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Los motores deben estar encendidos al ralentí",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Se autoriza el repostaje con pasaje asegurando cinturones desabrochados, pasillos libres, salidas operativas y coordinación constante con el operador de combustible.",
+      "references": [
+        "MOA Binter 8.2.1 Procedimientos de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-034",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AOM E195-E2 - Protección Eléctrica de Sensores de Aire (ADSPs / Sondas)",
+    "stem": "¿Qué elementos calefactores eléctricos (Electrical Ice Protection) están activos permanentemente en el suelo y en vuelo en el Embraer 195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Los bordes de ataque de las alas",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Los tubos Pitot primarios y secundarios, tomas de presión estática, sondas de ángulo de ataque (AOA) y sensores TAT (Total Air Temperature) gobernados automáticamente por los ADSPs",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Las luces de navegación",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Los neumáticos del tren de aterrizaje",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las sondas de datos de aire inteligentes (ADSPs), sensores AOA y TAT cuentan con calefacción eléctrica automática para prevenir bloqueos de presión en cualquier fase de vuelo.",
+      "references": [
+        "AOM E195-E2 Capítulo 11 Ice & Rain Protection"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-035",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AOM E195-E2 - Control Manual de Presurización",
+    "stem": "¿Cuál es la función del sistema de presurización en modo manual (Manual Pressurization Control)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Abre las puertas de pasaje en vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Apaga los packs de aire acondicionado",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Permite a los pilotos controlar directamente la apertura y cierre de la Outflow Valve mediante el mando basculante manual en el panel superior si fallan ambos controladores automáticos (ECMs)",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Inyecta oxígeno en los motores",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El modo manual se utiliza en caso de fallo de ambos canales automáticos de presurización, accionando directamente la válvula de escape.",
+      "references": [
+        "AOM E195-E2 Capítulo 6 Air Conditioning & Pressurization"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-036",
+    "subject_id": "cmd_dispatch_mel",
+    "learning_objective": "MEL / DDPM - Procedimientos de Mantenimiento (M)",
+    "stem": "En la MEL del Embraer 195-E2, ¿qué indica la presencia de una marca (M) junto al código de un ítem diferido?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Que es un procedimiento exclusivo para el comandante",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Que solo aplica en condiciones meteorológicas de niebla",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Que el ítem puede permanecer inoperativo durante 1 año",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Que el ítem requiere una acción técnica previa obligatoria por parte del personal de mantenimiento cualificado (como bloqueo mecánico, desconexión eléctrica o precintado) antes del despacho",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "Los procedimientos (M) exigen tareas físicas de mantenimiento por personal de TMA certificado con registro previo en el ATL antes del vuelo.",
+      "references": [
+        "MEL EMB BA RN24 Preámbulo",
+        "DDPM Sección 3"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-037",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AOM E195-E2 - Radar Meteorológico 3D RDR-4000",
+    "stem": "En la operación del radar meteorológico Honeywell RDR-4000 con tecnología 3D Volumetric Scanning en el E195-E2:",
+    "options": [
+      {
+        "id": "A",
+        "text": "El radar escanea automáticamente el volumen atmosférico frontal desde 0 hasta 60.000 ft y almacena los datos en memoria, mostrando cortes transversales de tormentas, cizalladura (Windshear) y turbulencia sin necesidad de ajustar manualmente la inclinación de antena (Tilt)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El piloto debe girar la antena con manivela manual",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo detecta nubes si llueve en el aeropuerto",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Requiere apagar el piloto automático",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El RDR-4000 realiza barridos volumétricos automáticos continuos generando mapas tridimensionales de reflectividad, cizalladura predictiva y turbulencia.",
+      "references": [
+        "AOM E195-E2 Capítulo 16 Avionics"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-038",
+    "subject_id": "cmd_flight_planning",
+    "learning_objective": "MOA 8.1.7 - Cómputo del Combustible de Alternativo (Alternate Fuel)",
+    "stem": "¿Cuál es la función del cálculo de combustible de reserva para desvío a alternativo (Alternate Fuel)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Volar durante 2 horas en espera sobre el alternativo",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Cubrir la frustrada en el destino (Go-Around), el ascenso, crucero en ruta hasta el alternativo, el descenso, la aproximación instrumental completa y el aterrizaje en el aeródromo alternativo seleccionado",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Alimentar únicamente la APU en tierra",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cubrir el rodaje en el alternativo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El Alternate Fuel incluye el perfil completo: frustrada desde DA/MDA en destino, ascenso en ruta, crucero a FL óptimo, descenso y aproximación en el alternativo.",
+      "references": [
+        "MOA Binter 8.1.7 Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-039",
+    "subject_id": "cmd_emergency",
+    "learning_objective": "QRH E195-E2 - Memory Items: Despresurización Rápida de Cabina",
+    "stem": "Ante un fallo de presurización rápido (Rapid Depressurization) en altitud de crucero en el E195-E2, ¿cuál es la primera acción de memoria (Memory Item) inmediata de los pilotos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Buscar el manual de vuelo en la cartera",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Declarar emergencia por radio antes de colocarse la máscara",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Colocarse de inmediato las máscaras de oxígeno al 100% de flujo y establecer comunicación entre ambos tripulantes de vuelo vía interfono (OXYGEN MASKS: DON, 100%, CREW COMM: ESTABLISH)",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Desconectar el piloto automático y picar a fondo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El tiempo de conciencia útil a FL410 es de segundos; el primer paso ineludible es colocarse y asegurarse la máscara de oxígeno al 100% y verificar comunicación.",
+      "references": [
+        "QRH E195-E2 Emergency Procedures - Cabin Altitude Hi",
+        "SOPM E195-E2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-040",
+    "subject_id": "cmd_emergency",
+    "learning_objective": "QRH / SOPM E195-E2 - Procedimiento de Descenso de Emergencia",
+    "stem": "Durante el descenso de emergencia (Emergency Descent) en el Embraer 195-E2:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se seleccionan Flaps Full y tren de aterrizaje abajo a 400 nudos",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Se apagan los motores",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se vira 180° a velocidad de pérdida",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se seleccionan palancas de potencia en IDLE, se extienden completamente los Speed Brakes (aerofrenos), se ajusta velocidad máxima Vmo/Mmo (o velocidad estructural si hay daño) y se desciende hacia 10.000 ft o la MEA/MORA",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "El descenso de emergencia busca perder altitud al máximo régimen seguro mediante aerofrenos extendidos, gases cortados y velocidad de penetración máxima.",
+      "references": [
+        "QRH E195-E2 Emergency Descent",
+        "SOPM Normal/Emergency Procedures"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-041",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AOM E195-E2 - Sistema Neumático y Crossbleed Valve",
+    "stem": "¿Qué función cumple la válvula de aislamiento de purga de aire (Bleed Crossbleed Valve) en el sistema neumático del E195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Permite interconectar los conductos neumáticos izquierdo y derecho para suministrar aire a ambos packs o permitir el arranque cruzado de motor (Crossbleed Engine Start)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Expulsa el aire sobrante fuera del ala",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Presuriza el tanque de combustible",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Refrigera los frenos del tren principal",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La válvula crossbleed comunica los colectores de sangrado de ambos motores permitiendo alimentar el sistema neumático con un solo motor o APU.",
+      "references": [
+        "AOM E195-E2 Capítulo 10 Pneumatic System"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-042",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "QRH / SOPM E195-E2 - Aterrizaje N-1 (Flaps 5 / Flap 4)",
+    "stem": "En caso de aproximación con fallo de un motor (Single Engine Approach / N-1) en el Embraer 195-E2, ¿cuál es la configuración de flaps estándar de aterrizaje recomendada por el fabricante y el SOPM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flaps FULL únicamente",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Flaps 5 (o Flaps 4 según manual de operaciones para optimizar el margen de ascenso en frustrada con un motor)",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Aterrizaje sin flaps obligatorio",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Flaps 1",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En aproximación monomotor se utiliza Flap 5 (o Flap 4) para reducir la resistencia aerodinámica y asegurar el gradiente reglamentario de motor y al aire con N-1.",
+      "references": [
+        "QRH E195-E2 Single Engine Procedures",
+        "SOPM E195-E2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-043",
+    "subject_id": "cmd_flight_planning",
+    "learning_objective": "MOA 8.1.7 - Discrecionalidad del Comandante en Extra Fuel",
+    "stem": "¿Cuál es la política operacional de Binter respecto al combustible adicional (\"Extra Fuel\" / \"Captain Discretionary Fuel\")?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Está terminantemente prohibido añadir combustible adicional al plan de vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Debe solicitarse por escrito al Director General 24 horas antes",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El comandante tiene la potestad de añadir combustible extra justificado por meteorología adversa, esperas previstas, contingencias operacionales o limitaciones de aeródromo",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Solo se permite en vuelos internacionales de más de 3 horas",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El comandante tiene la autoridad última y responsabilidad de cargar combustible adicional en función de las condiciones operacionales previstas.",
+      "references": [
+        "MOA Binter 8.1.7 Política de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-044",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AOM E195-E2 - Aviso de Sobrevelocidad (Overspeed Warning)",
+    "stem": "En la protección de sobrevelocidad de la aeronave, ¿qué aviso acústico y visual genera el sistema EICAS si se supera la velocidad máxima operativa (Vmo / Mmo)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Un mensaje informativo blanco sin sonido",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Una campana suave",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Una luz verde en el pedestal central",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aviso visual en rojo de sobrevelocidad en la cinta del anemómetro del PFD y tono acústico continuo tipo \"Overspeed Clacker / Siren\" en los auriculares y altavoces de cabina",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "Al superar Vmo/Mmo se dispara inmediatamente el clacker sonoro de alta prioridad y la advertencia roja en el velocímetro hasta reducir la velocidad.",
+      "references": [
+        "AOM E195-E2 Capítulo 3 Warning System"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-045",
+    "subject_id": "cmd_flight_ground_ops",
+    "learning_objective": "AFM E195-E2 - Limitación Máxima de Viento en Cola (10 / 15 kts)",
+    "stem": "En el procedimiento de despegue con viento en cola (Tailwind Takeoff), ¿cuál es la limitación máxima de viento en cola permitida por el AFM en el Embraer 195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "10 nudos de viento en cola (o hasta 15 nudos si está específicamente certificado en el suplemento del AFM)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "20 nudos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "25 nudos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No está permitido el despegue con viento en cola bajo ningún concepto",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El límite operativo estándar certificado para componentes de viento en cola en despegue y aterrizaje es de 10 nudos (ampliable a 15 kts con suplemento del AFM).",
+      "references": [
+        "AFM E195-E2 Sección 2 Limitaciones"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-046",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AOM E195-E2 - Stick Pusher y Protección contra la Pérdida",
+    "stem": "¿Qué función desempeña el sistema Stick Pusher (Empujador de Palanca) en el sistema de protección contra la pérdida (Stall Protection) del E195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tira de la palanca hacia atrás cuando el avión aterriza",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Aplica una fuerza automática y decidida hacia adelante en las palancas de mando de ambos pilotos para reducir el ángulo de ataque si se alcanzan valores críticos de pérdida aerodinámica inminente",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Bloquea el timón de dirección",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Extiende los aerofrenos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El Stick Pusher interviene activamente empujando los mandos hacia adelante para reducir el ángulo de ataque y recuperar el flujo laminar sobre el ala antes de la pérdida completa.",
+      "references": [
+        "AOM E195-E2 Capítulo 9 Flight Controls"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-047",
+    "subject_id": "cmd_dispatch_mel",
+    "learning_objective": "MOA 8.1.1 / EASA - Filosofía de Fallos antes del Despegue",
+    "stem": "Si durante el rodaje previo al despegue aparece un fallo en el EICAS de un sistema que NO está en la MEL:",
+    "options": [
+      {
+        "id": "A",
+        "text": "El comandante puede continuar el despegue si el destino tiene buen tiempo",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Se puede ignorar el mensaje apagando la pantalla MFD",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El avión no está en condiciones de aeronavegabilidad legal para el despegue; se debe regresar a calzos o consultar con mantenimiento/CCO antes de iniciar la carrera de despegue",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Se puede anotar en el ATL al aterrizar en destino",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Aparecido un fallo antes del inicio de la carrera de despegue, si el elemento no es diferible por la MEL o requiere acciones no cumplidas, el despegue está prohibido.",
+      "references": [
+        "MOA Binter 8.1.1",
+        "MEL Preámbulo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-048",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AOM E195-E2 / MGNT 30 - Sistema Data Link (CPDLC / ACARS)",
+    "stem": "En la arquitectura de comunicaciones por enlace de datos (Data Link / CPDLC / ACARS) en el Embraer 195-E2:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solo funciona con conexión Bluetooth en tierra",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Solo se utiliza para enviar correos electrónicos personales",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Sustituye a los mandos de vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Permite la recepción de planes de vuelo, partes meteorológicos D-ATIS/METAR, autorizaciones de salida DCL, comunicaciones ATC por CPDLC y reportes automáticos de mantenimiento OOOI (Out-Off-On-In) a la compañía",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "El sistema Data Link integra comunicaciones de texto ATS con el control aéreo y mensajes automáticos operacionales ACARS con el CCO de Binter.",
+      "references": [
+        "MGNT 30 Data Link Binter",
+        "AOM E195-E2 Capítulo 5 Communications"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-049",
+    "subject_id": "cmd_performance",
+    "learning_objective": "Performance E195-E2 - Efecto de Sangrados (Bleeds) en el Despegue",
+    "stem": "¿Qué efecto tiene el sangrado de aire de los motores para aire acondicionado y antihielo (Bleeds ON / Anti-Ice ON) sobre las prestaciones de despegue?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reduce el empuje neto disponible del motor, incrementando la carrera de despegue y penalizando el peso máximo admisible de despegue (MTOW)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Aumenta el empuje en un 10%",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No produce ningún efecto en las prestaciones",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Reduce la temperatura de gases de escape (EGT)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La extracción de aire comprimido del compresor disminuye el caudal de masa de gas para la turbina, reduciendo el empuje y aumentando las distancias de pista requeridas.",
+      "references": [
+        "AFM E195-E2 Performance",
+        "AOM Performance"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-E2-050",
+    "subject_id": "cmd_e2_systems",
+    "learning_objective": "AOM E195-E2 - Sistema de Dirección del Tren de Morro (Rudder +/-8° / Tiller +/-76°)",
+    "stem": "¿Cuál es la función del sistema de orientación de la rueda de morro (Nosewheel Steering) en el E195-E2 y cuáles son sus límites de deflexión con los pedales y con el volante de mano (Tiller)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pedales +/- 20° y Tiller +/- 30°",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Control por pedales de +/- 8° (para control direccional en carrera de despegue y toma) y control por volante de mano (Tiller) de hasta +/- 76° para maniobras de giro cerrado en rodaje",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Pedales +/- 45° y Tiller +/- 90°",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El tren de morro no es orientable por pedales",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La dirección electrohidráulica de morro ofrece +/- 8° con los pedales de timón para alta velocidad y hasta +/- 76° con el volante de rodaje (Tiller) en plataforma.",
+      "references": [
+        "AOM E195-E2 Capítulo 15 Landing Gear"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  }
+]
