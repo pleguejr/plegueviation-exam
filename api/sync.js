@@ -1,13 +1,19 @@
 // api/sync.js - Vercel Serverless Function para Sincronización Multi-Dispositivo de Plegueviation Exam
 
-// Almacén en memoria persistido en warm-containers
-const inMemoryStore = new Map();
+// Almacén global en memoria persistente entre invocaciones del contenedor
+if (!globalThis._plegueSyncStore) {
+  globalThis._plegueSyncStore = new Map();
+}
 
 export default async function handler(req, res) {
-  // Configuración de CORS para permitir peticiones desde cualquier origen (iPad, iPhone, Localhost, Vercel)
+  // Configuración de CORS universal para iPad, iPhone, Safari, Chrome, GitHub Pages y Localhost
+  res.setHeader('Access-Control-Allow-Credentials', 'true');
   res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
+  res.setHeader(
+    'Access-Control-Allow-Headers',
+    'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
+  );
 
   if (req.method === 'OPTIONS') {
     return res.status(200).end();
@@ -15,21 +21,24 @@ export default async function handler(req, res) {
 
   const { pin } = req.query;
 
+  // GET: Obtener datos de sincronización del PIN
   if (req.method === 'GET') {
     if (!pin) {
       return res.status(400).json({ error: 'Falta el parámetro pin' });
     }
 
     const cleanPin = pin.trim().toLowerCase();
-    const data = inMemoryStore.get(cleanPin);
+    const data = globalThis._plegueSyncStore.get(cleanPin);
 
     if (data) {
-      return res.status(200).json(data);
+      return res.status(200).json({ found: true, data });
     } else {
-      return res.status(404).json({ error: 'No se encontraron datos para este PIN' });
+      // Devolver 200 con found: false para evitar errores de red en el cliente en PINs nuevos
+      return res.status(200).json({ found: false, data: null });
     }
   }
 
+  // POST: Guardar o actualizar progreso para el PIN
   if (req.method === 'POST') {
     const body = req.body || {};
     const targetPin = (body.pin || pin || '').trim().toLowerCase();
@@ -39,7 +48,8 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: 'PIN no proporcionado en la petición' });
     }
 
-    inMemoryStore.set(targetPin, payload);
+    globalThis._plegueSyncStore.set(targetPin, payload);
+
     return res.status(200).json({ 
       success: true, 
       message: 'Progreso sincronizado en la nube con éxito',

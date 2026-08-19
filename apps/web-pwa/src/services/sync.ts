@@ -4,16 +4,9 @@ import { QuestionStats, ExamSession, Question } from '../types';
 const SYNC_PIN_STORAGE_KEY = 'plegue_sync_pin';
 const LAST_SYNC_STORAGE_KEY = 'plegue_last_sync_timestamp';
 
-// URL base de sincronización (utiliza el endpoint serverless de Vercel con fallback a KV público)
-const SYNC_API_ENDPOINT = '/api/sync';
-const FALLBACK_KV_BASE = 'https://kvdb.io/4y27V3K9w9g2p8W4pZ2h7x/'; // Free global KV store
-
-export interface SyncStatus {
-  pin: string | null;
-  lastSyncedAt: number | null;
-  isSyncing: boolean;
-  error: string | null;
-}
+// Endpoints de sincronización (relativo para Vercel, absoluto como fallback para GitHub Pages y Localhost)
+const PRIMARY_ENDPOINT = '/api/sync';
+const VERCEL_PRODUCTION_ENDPOINT = 'https://plegueviation-exam.vercel.app/api/sync';
 
 export function getStoredSyncPin(): string | null {
   return localStorage.getItem(SYNC_PIN_STORAGE_KEY);
@@ -141,6 +134,25 @@ export async function mergeRemoteData(remoteData: any): Promise<{
 }
 
 /**
+ * Realiza una petición fetch con timeout seguro.
+ */
+async function safeFetch(url: string, options: RequestInit, timeoutMs = 8000): Promise<Response> {
+  const controller = new AbortController();
+  const id = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const response = await fetch(url, {
+      ...options,
+      signal: controller.signal
+    });
+    clearTimeout(id);
+    return response;
+  } catch (err) {
+    clearTimeout(id);
+    throw err;
+  }
+}
+
+/**
  * Realiza una sincronización completa en la nube usando el PIN especificado.
  */
 export async function syncWithCloud(pin?: string): Promise<{
@@ -157,101 +169,83 @@ export async function syncWithCloud(pin?: string): Promise<{
     return { success: false, message: 'Sin conexión a internet. Se sincronizará automáticamente al reconectar.' };
   }
 
-  try {
-    // Paso 1: Intentar leer datos remotos existentes
-    let remotePayload: any = null;
-    let readSuccess = false;
+  const endpointsToTry = [
+    PRIMARY_ENDPOINT,
+    VERCEL_PRODUCTION_ENDPOINT
+  ];
 
-    // Intento 1: API de Vercel
+  let remotePayload: any = null;
+  let successfulEndpoint: string | null = null;
+
+  // Paso 1: Intentar leer datos de la nube
+  for (const endpoint of endpointsToTry) {
     try {
-      const res = await fetch(`${SYNC_API_ENDPOINT}?pin=${encodeURIComponent(activePin)}`, {
+      const url = `${endpoint}?pin=${encodeURIComponent(activePin)}`;
+      const res = await safeFetch(url, {
         method: 'GET',
         headers: { 'Accept': 'application/json' }
       });
-      if (res.ok) {
-        remotePayload = await res.json();
-        readSuccess = true;
+
+      const contentType = res.headers.get('content-type') || '';
+      if (res.ok && contentType.includes('application/json')) {
+        const json = await res.json();
+        // Si la API devuelve { found: true, data: {...} } o directamente el payload
+        remotePayload = json.data !== undefined ? json.data : json;
+        successfulEndpoint = endpoint;
+        break;
       }
     } catch (e) {
-      // Continuar con fallback
+      // Probar siguiente endpoint
     }
+  }
 
-    // Intento 2 (Fallback si API local no responde, ej. en GitHub Pages o static): KV Store
-    if (!readSuccess) {
-      try {
-        const res = await fetch(`${FALLBACK_KV_BASE}${encodeURIComponent(activePin)}`, {
-          method: 'GET',
-          headers: { 'Accept': 'application/json' }
-        });
-        if (res.ok) {
-          const text = await res.text();
-          if (text) {
-            remotePayload = JSON.parse(text);
-            readSuccess = true;
-          }
-        }
-      } catch (e) {
-        // Puede ser primer uso sin datos previos
-      }
-    }
+  // Paso 2: Si encontramos datos remotos, fusionarlos con los locales
+  if (remotePayload) {
+    await mergeRemoteData(remotePayload);
+  }
 
-    // Paso 2: Si hay datos remotos, fusionarlos con los locales
-    if (remotePayload) {
-      await mergeRemoteData(remotePayload);
-    }
+  // Paso 3: Obtener el estado local final (fusionado) y subirlo a la nube
+  const finalPayload = await getLocalPayload();
+  let uploadSuccess = false;
 
-    // Paso 3: Obtener el estado fusionado final y subirlo a la nube
-    const finalPayload = await getLocalPayload();
-    const payloadStr = JSON.stringify(finalPayload);
-    let writeSuccess = false;
+  const targetEndpoints = successfulEndpoint ? [successfulEndpoint] : endpointsToTry;
 
-    // Subida a API Vercel
+  for (const endpoint of targetEndpoints) {
     try {
-      const res = await fetch(SYNC_API_ENDPOINT, {
+      const res = await safeFetch(endpoint, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ pin: activePin, data: finalPayload })
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({ 
+          pin: activePin, 
+          data: finalPayload 
+        })
       });
-      if (res.ok) {
-        writeSuccess = true;
+
+      const contentType = res.headers.get('content-type') || '';
+      if (res.ok && contentType.includes('application/json')) {
+        uploadSuccess = true;
+        break;
       }
     } catch (e) {
-      // Continuar con fallback
+      // Probar siguiente endpoint
     }
+  }
 
-    // Subida a KV Store
-    try {
-      const res = await fetch(`${FALLBACK_KV_BASE}${encodeURIComponent(activePin)}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: payloadStr
-      });
-      if (res.ok) {
-        writeSuccess = true;
-      }
-    } catch (e) {
-      // Error de subida fallback
-    }
-
-    if (writeSuccess || readSuccess) {
-      const now = Date.now();
-      setLastSyncTimestamp(now);
-      return {
-        success: true,
-        message: 'Sincronización completada exitosamente.',
-        syncedAt: now
-      };
-    } else {
-      return {
-        success: false,
-        message: 'No se pudo contactar con el servidor de sincronización.'
-      };
-    }
-  } catch (err: any) {
-    console.warn('Error during cloud sync:', err);
+  if (uploadSuccess) {
+    const now = Date.now();
+    setLastSyncTimestamp(now);
+    return {
+      success: true,
+      message: 'Sincronización completada exitosamente.',
+      syncedAt: now
+    };
+  } else {
     return {
       success: false,
-      message: `Error al sincronizar: ${err?.message || err}`
+      message: 'No se pudo conectar con el servidor de sincronización. Vercel se está actualizando; prueba de nuevo en unos segundos.'
     };
   }
 }
