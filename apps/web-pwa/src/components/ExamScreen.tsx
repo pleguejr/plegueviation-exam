@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { 
   CheckCircle2, 
   XCircle, 
@@ -14,7 +14,8 @@ import {
   TrendingUp,
   HelpCircle,
   Keyboard,
-  RotateCcw
+  RotateCcw,
+  Zap
 } from 'lucide-react';
 import { Question, ExamSession, ExamSessionAnswer, Option, QuestionStats } from '../types';
 import { recordAnswerStat, toggleQuestionFlag, getQuestionStat } from '../services/db';
@@ -40,6 +41,13 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
   const [elapsedSeconds, setElapsedSeconds] = useState(0);
   const [questionStartTime, setQuestionStartTime] = useState(Date.now());
   const [currentStat, setCurrentStat] = useState<QuestionStats | null>(null);
+  
+  // Auto-advance toggle (activo por defecto y persistente en localStorage)
+  const [autoAdvance, setAutoAdvance] = useState<boolean>(() => {
+    const saved = localStorage.getItem('plegue_auto_advance');
+    return saved !== null ? saved === 'true' : true;
+  });
+  const autoAdvanceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const currentQuestion: Question | undefined = session.questions[currentIndex];
   const currentAnswer: ExamSessionAnswer | undefined = currentQuestion 
@@ -48,6 +56,28 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
 
   const isPracticeMode = session.config.mode === 'practice' || session.config.mode === 'smart_review';
   const isAnswered = currentAnswer && currentAnswer.selectedOptionId !== null;
+
+  const navigateTo = (newIndex: number) => {
+    if (autoAdvanceTimerRef.current) {
+      clearTimeout(autoAdvanceTimerRef.current);
+    }
+    setCurrentIndex(newIndex);
+  };
+
+  const handleToggleAutoAdvance = () => {
+    const nextVal = !autoAdvance;
+    setAutoAdvance(nextVal);
+    localStorage.setItem('plegue_auto_advance', String(nextVal));
+  };
+
+  // Limpieza de timer al desmontar
+  useEffect(() => {
+    return () => {
+      if (autoAdvanceTimerRef.current) {
+        clearTimeout(autoAdvanceTimerRef.current);
+      }
+    };
+  }, []);
 
   // Cargar estadísticas históricas de la pregunta actual
   useEffect(() => {
@@ -88,9 +118,9 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
       if (['INPUT', 'TEXTAREA'].includes((e.target as HTMLElement)?.tagName)) return;
 
       if (e.key === 'ArrowLeft') {
-        if (currentIndex > 0) setCurrentIndex((prev) => prev - 1);
+        if (currentIndex > 0) navigateTo(currentIndex - 1);
       } else if (e.key === 'ArrowRight') {
-        if (currentIndex < session.questions.length - 1) setCurrentIndex((prev) => prev + 1);
+        if (currentIndex < session.questions.length - 1) navigateTo(currentIndex + 1);
       } else if (['1', '2', '3', '4', 'a', 'b', 'c', 'd', 'A', 'B', 'C', 'D'].includes(e.key)) {
         if (!currentQuestion) return;
         const keyMap: Record<string, number> = {
@@ -110,7 +140,7 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [currentIndex, currentQuestion, isAnswered, session]);
+  }, [currentIndex, currentQuestion, isAnswered, session, autoAdvance]);
 
   if (!currentQuestion) {
     return (
@@ -149,9 +179,8 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
 
     onUpdateSession(updatedSession);
 
-    // En modo práctica, abrir automáticamente la pestaña de explicación tras responder
+    // En modo práctica, registrar estadísticas
     if (isPracticeMode) {
-      setActiveTab('explanation');
       const updatedStat = await recordAnswerStat(
         currentQuestion.id,
         option.id,
@@ -160,6 +189,22 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
         session.config.mode
       );
       setCurrentStat(updatedStat);
+    }
+
+    // Auto-advance automático a la siguiente pregunta
+    if (autoAdvance && currentIndex < session.questions.length - 1) {
+      if (autoAdvanceTimerRef.current) {
+        clearTimeout(autoAdvanceTimerRef.current);
+      }
+      const delayMs = isPracticeMode ? 600 : 250;
+      autoAdvanceTimerRef.current = setTimeout(() => {
+        setCurrentIndex((prev) => {
+          if (prev < session.questions.length - 1) {
+            return prev + 1;
+          }
+          return prev;
+        });
+      }, delayMs);
     }
   };
 
@@ -201,8 +246,8 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
   return (
     <div className="max-w-7xl mx-auto space-y-4 pb-20 animate-fade-in font-sans">
       
-      {/* 1. Sub-Header estilo AviationExam: < Study Test / Modo */}
-      <div className="flex items-center justify-between py-1 border-b border-sky-500/20 text-xs">
+      {/* 1. Sub-Header estilo AviationExam: < Study Test / Modo / Auto-Advance Toggle */}
+      <div className="flex flex-wrap items-center justify-between py-1 border-b border-sky-500/20 text-xs gap-2">
         <button
           onClick={onExitExam}
           className="flex items-center gap-1.5 font-bold text-sky-400 hover:text-sky-300 text-sm transition-colors"
@@ -211,8 +256,23 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
           <span>Study Test</span>
         </button>
 
-        <div className="flex items-center gap-4 text-xs">
-          <span className="font-mono text-slate-300 font-semibold uppercase tracking-wider">
+        <div className="flex items-center gap-3 sm:gap-4 text-xs">
+          {/* Botón Auto-Avanzar */}
+          <button
+            onClick={handleToggleAutoAdvance}
+            className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg border text-xs font-mono font-bold transition-all ${
+              autoAdvance
+                ? 'bg-sky-500/20 border-sky-400/60 text-sky-300 shadow-sm'
+                : 'bg-slate-800/80 border-slate-700 text-slate-400 hover:text-slate-200'
+            }`}
+            title="Avanzar automáticamente a la siguiente pregunta al responder"
+          >
+            <Zap className={`w-3.5 h-3.5 ${autoAdvance ? 'text-sky-400 fill-sky-400' : 'text-slate-500'}`} />
+            <span>Auto-avance: <strong className={autoAdvance ? 'text-sky-300' : 'text-slate-400'}>{autoAdvance ? 'ON' : 'OFF'}</strong></span>
+          </button>
+
+          <span className="text-slate-600 hidden sm:inline">|</span>
+          <span className="font-mono text-slate-300 font-semibold uppercase tracking-wider hidden sm:inline">
             {session.config.mode === 'simulation' ? 'Simulacro Examen Oficial' : session.config.mode === 'smart_review' ? 'Repaso de Falladas' : 'Modo Práctica'}
           </span>
           <span className="text-slate-600">|</span>
@@ -453,7 +513,7 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
           {/* Prev / Next Footer Buttons */}
           <div className="flex items-center justify-between pt-2">
             <button
-              onClick={() => currentIndex > 0 && setCurrentIndex(currentIndex - 1)}
+              onClick={() => currentIndex > 0 && navigateTo(currentIndex - 1)}
               disabled={currentIndex === 0}
               className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold bg-[#112347] text-slate-200 border border-slate-700 hover:bg-[#162d59] disabled:opacity-30 disabled:pointer-events-none transition-all"
             >
@@ -471,7 +531,7 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
               </button>
             ) : (
               <button
-                onClick={() => currentIndex < session.questions.length - 1 && setCurrentIndex(currentIndex + 1)}
+                onClick={() => currentIndex < session.questions.length - 1 && navigateTo(currentIndex + 1)}
                 className="flex items-center gap-2 px-6 py-2.5 rounded-xl text-xs font-bold bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white shadow-glow-sky transition-all active:scale-95"
               >
                 <span>Siguiente</span>
@@ -537,7 +597,7 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
                   return (
                     <button
                       key={q.id}
-                      onClick={() => setCurrentIndex(idx)}
+                      onClick={() => navigateTo(idx)}
                       className={`h-9 rounded-lg border text-xs font-mono flex items-center justify-center transition-all duration-150 relative cursor-pointer ${cellStyle}`}
                       title={`Pregunta ${idx + 1}: ${q.id}`}
                     >
