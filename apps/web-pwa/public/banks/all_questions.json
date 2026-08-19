@@ -5991,35 +5991,34 @@
   {
     "id": "CMD-MGT-001",
     "subject_id": "cmd_mnemonicos_mando",
-    "learning_objective": "Mnemónicos Binter - RETSE Briefing Estructurado",
-    "stem": "En la sistemática de briefings operacionales de Binter, ¿qué elementos evalúa el mnemónico RETSE?",
+    "learning_objective": "MOB 2.0.6.1 - Secuencia RETSE en Briefing de Despegue (MCDU & LIDO)",
+    "stem": "Según el MOB 2.0.6.1 (Procedimientos Normales E195-E2), ¿cómo se estructura la secuencia RETSE en la MCDU y LIDO para el Briefing de Despegue?",
     "options": [
       {
         "id": "A",
-        "text": "R: Rutas y SID/STAR; E: Estado de la aeronave (MEL/diferidos/combustible); T: Terreno y Meteorología; S: Servicios y dependencias ATC; E: Expectativas, amenazas y gestión de errores (TEM)",
+        "text": "R: ROUTE (RTE, PERF INIT, PROG); E: ENGINE START & PUSH BACK (Tipo de arranque y retroceso); T: TAXI (Ruta de rodaje en LIDO); S: SID (Salida instrumental, puntos, cursos, restricciones); E: EOSID / Emergency Briefing (Fallo de motor en despegue conforme a EOSID en PLAN / FIX INFO)",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "R: Radio; E: Emergencia; T: Torre; S: Salida; E: Espera",
+        "text": "R: Radar; E: Estado; T: Terreno; S: Salida; E: Espera",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "R: Ruedas; E: Equipaje; T: Tanques; S: Sobrecargo; E: Escala",
+        "text": "R: Rutas; E: Emergencia; T: Torre; S: Senda; E: Elevación",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "R: Radar; E: Empuje; T: Tráfico; S: Senda; E: Elevación",
+        "text": "R: Ruedas; E: Equipaje; T: Tanques; S: Sobrecargo; E: Escala",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "RETSE estructura el briefing previo al vuelo: Rutas, Estado de la aeronave, Terreno/Meteo, Servicios y Expectativas/Amenazas TEM.",
+      "text": "En el E195-E2 de Binter, tras el TWIN, el PF continúa el briefing de despegue con RETSE: R (Route: RTE/PERF/PROG), E (Engine Start & Push Back), T (Taxi en LIDO), S (SID en NAV/FPL) y E (EOSID / Emergency Briefing en PLAN/FIX INFO).",
       "references": [
-        "SOPM Binter Briefing Guide",
-        "MOA 8.3 CRM & TEM"
+        "MOB Binter E195-E2 Sección 2.0.6.1 (Pág. 2-19)"
       ]
     },
     "metadata": {
@@ -6031,35 +6030,34 @@
   {
     "id": "CMD-MGT-002",
     "subject_id": "cmd_mnemonicos_mando",
-    "learning_objective": "CRM / Emergencias - Briefing NITS a la Tripulación de Cabina",
-    "stem": "En la comunicación de contingencias entre el Comandante y la Sobrecargo / Tripulación de Cabina, ¿qué estructura sigue el briefing NITS?",
+    "learning_objective": "MOB 3.1.1 / 3.1.14 - Briefing TELSI a la Tripulación de Cabina",
+    "stem": "En la operativa de Binter Airlines, ante una anormalidad o emergencia que requiera coordinar con la Sobrecargo (SCC), ¿qué mnemónico oficial se utiliza para estructurar el Briefing a la Tripulación de Cabina (MOB 3.1.1)?",
     "options": [
       {
         "id": "A",
-        "text": "Nivel de vuelo, Instrumentos, Tiempo estimado, Salidas",
+        "text": "NITS (Nature, Intentions, Time, Special instructions)",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "N: Nature (Naturaleza de la anomalía); I: Intentions (Intenciones del Comandante); T: Time (Tiempo disponible hasta la toma/contacto); S: Special instructions (Instrucciones especiales de preparación de cabina o evacuación)",
+        "text": "TELSI: T: Tipo de Emergencia (Prevista/Imprevista/Aterrizaje Inseguro); E: Estimated Time of Arrival (Cuánto tiempo queda); L: Lugar de Aterrizaje (Pista, campo, agua); S: Señales de Protección convenidas (\"PROTECCIÓN\" a 30s); I: Instrucciones Especiales (Coordinación y Callouts)",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "Novedades, Información técnica, Turbulencia, Servicios",
+        "text": "GRADE (Gather, Review, Analyze, Decide, Execute)",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Notificación, Identificación, Temperatura, Señales",
+        "text": "PIOSEE (Problem, Information, Options, Select, Execute, Evaluate)",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "El formato NITS asegura la transmisión clara y concisa de la situación crítica a la sobrecargo: Naturaleza, Intenciones, Tiempo e Instrucciones especiales.",
+      "text": "En Binter Airlines NO se utiliza NITS; el protocolo oficial del Comandante para informar a la Sobrecargo es TELSI (Tipo de Emergencia, Estimated Time of Arrival, Lugar de Aterrizaje, Señales de Protección e Instrucciones Especiales).",
       "references": [
-        "MOA 8.3 / MOB Procedimientos de Emergencia",
-        "ICAO Doc 9683 Human Factors"
+        "MOB Binter E195-E2 Sección 3.1.1 (Pág. 3.1-1), 3.1.14 (Pág. 3.1-26 y 3.1-28)"
       ]
     },
     "metadata": {
@@ -6071,35 +6069,34 @@
   {
     "id": "CMD-MGT-003",
     "subject_id": "cmd_mnemonicos_mando",
-    "learning_objective": "Toma de Decisiones de Mando (Aeronautical Decision Making - PIOSEE)",
-    "stem": "En el modelo de toma de decisiones aeronáuticas para comandantes PIOSEE (o DODAR/FORDEC), ¿cuáles son las etapas secuenciales del proceso?",
+    "learning_objective": "MOB 2.0.6.1 & 2.0.6.2 - Secuencia TWIN en Briefings de Despegue y Llegada",
+    "stem": "Según el MOB 2.0.6.1 y 2.0.6.2, ¿qué elementos evalúa la Secuencia TWIN con la que el PF inicia obligatoriamente tanto el Briefing de Despegue como el de Aproximación?",
     "options": [
       {
         "id": "A",
-        "text": "Planificar, Ignorar, Ordenar, Salir, Entrar, Evaluar",
+        "text": "T: Tiempo; W: Waypoints; I: Instrumentos; N: Navegación",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Pilotar, Informar, Operar, Sintonizar, Estabilizar, Esperar",
+        "text": "T: Torre; W: Wind; I: ILS; N: Nivel",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "P: Problem (Identificar el problema); I: Information (Recopilar datos); O: Options (Generar alternativas); S: Select (Elegir la mejor opción); E: Execute (Ejecutar); E: Evaluate (Evaluar los resultados continuamente)",
+        "text": "T: TEM (Threat & Error Management: amenazas generales, tráficos, hot spots, cizalladura, pájaros, terreno, conflicto); W: WEATHER (Meteo, LVP, alternativo, deshielo); I: INOP ITEMS (Diferidos MEL/DDPM); N: NOTAM/SNOWTAMS (RWYCC, calles cerradas, ayudas inservibles, obstáculos)",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "Prevenir, Iniciar, Organizar, Solicitar, Exigir, Entregar",
+        "text": "T: Tanques; W: Peso; I: Inercial; N: Nudos",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "PIOSEE guía el razonamiento estructurado del comandante ante situaciones imprevistas complejas: Problema, Información, Opciones, Selección, Ejecución y Evaluación.",
+      "text": "La secuencia TWIN (TEM, Weather, Inop Items, NOTAM/SNOWTAMs) es la apertura obligatoria del PF para evaluar todas las amenazas operacionales antes de pasar a la programación de sistemas.",
       "references": [
-        "EASA AMC1 ORO.FC.115 CRM",
-        "MOA Capítulo 3 / 8 CRM"
+        "MOB Binter E195-E2 Sección 2.0.6.1 (Pág. 2-18) y 2.0.6.2 (Pág. 2-20)"
       ]
     },
     "metadata": {
@@ -6110,36 +6107,35 @@
   },
   {
     "id": "CMD-MGT-004",
-    "subject_id": "cmd_disruptive_pax",
-    "learning_objective": "Seguridad / Disruptive Pax - Clasificación de Amenazas (Nivel 2)",
-    "stem": "De acuerdo con la clasificación ICAO/EASA de Pasajeros Conflictivos (Disruptive / Unruly Passengers), ¿cómo se define el Nivel 2 de amenaza?",
+    "subject_id": "cmd_mnemonicos_mando",
+    "learning_objective": "MOB 2.0.6.2 - Secuencia E-DALTA en Briefing de Aproximación (MCDU & LIDO)",
+    "stem": "Según el MOB 2.0.6.2 (Pág. 2-21), ¿cómo se estructura la secuencia E-DALTA en la MCDU y LIDO para el Briefing de Aproximación y Aterrizaje?",
     "options": [
       {
         "id": "A",
-        "text": "Conducta verbalmente abusiva o desafiante sin violencia física",
+        "text": "E: Emergencia; D: Descenso; A: Altitud; L: Luces; T: Torre; A: Aproximación",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Intento de asalto o intrusión en la cabina de pilotaje",
+        "text": "E: Elevación; D: Distancia; A: Autoland; L: Localizador; T: Terreno; A: Aeropuerto",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Amenaza con arma de fuego o artefacto explosivo",
+        "text": "E: Engine; D: Direct; A: Arrival; L: Level; T: Turn; A: ATC",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Violencia física directa (empujones, forcejeos, agresiones físicas a tripulantes o pasajeros o daños intencionados a elementos de la cabina)",
+        "text": "E: ePerf (Performance de aterrizaje InFlight Landing con chequeo cruzado); D: DESCENT (TRANS LVL y SPD/ALT LIM en PERF); A: ARRIVAL (STAR e IAC en NAV/FPL con briefing de frustrada); L: LANDING (PERF LANDING INIT: peso, viento, flap, autobrake, velocidades Vref/Vap/Vac/Vfs, MAP MIN); T: TAXI (Ruta de rodaje post-aterrizaje); A: APRON (Tipo de parking remoto/finger y APU/GPU)",
         "is_correct": true
       }
     ],
     "explanation": {
-      "text": "Nivel 1: Insubordinación verbal; Nivel 2: Violencia física / agresión; Nivel 3: Amenaza vital / exhibición de armas; Nivel 4: Intento de asalto a la cabina de vuelo.",
+      "text": "La secuencia E-DALTA en el E195-E2 cubre: E (ePerf), D (Descent), A (Arrival / STAR / Frustrada), L (Landing en MCDU), T (Taxi) y A (Apron / Parking).",
       "references": [
-        "ICAO Cir 288",
-        "MOA Capítulo 10 Security"
+        "MOB Binter E195-E2 Sección 2.0.6.2 (Pág. 2-21)"
       ]
     },
     "metadata": {
@@ -6150,36 +6146,35 @@
   },
   {
     "id": "CMD-MGT-005",
-    "subject_id": "cmd_disruptive_pax",
-    "learning_objective": "MOA Cap. 10 Security - Protocolo ante Amenazas Nivel 3 y 4",
-    "stem": "Ante un incidente de Pasajero Conflictivo clasificado como Nivel 3 o Nivel 4 a bordo en vuelo:",
+    "subject_id": "cmd_mnemonicos_mando",
+    "learning_objective": "MOB 3.1.10 - Acrónimo IMFLOCC para Toma de Decisiones en Desvíos Técnicos",
+    "stem": "En el proceso de toma de decisiones para determinar el aeropuerto de desvío ante fallos técnicos graves (MOB 3.1.10), ¿qué pasos sigue el acrónimo IMFLOCC?",
     "options": [
       {
         "id": "A",
-        "text": "El comandante debe mantener la puerta de cabina blindada bloqueada en modo LOCK, declarar emergencia a ATC con transponder 7500 (o 7700), coordinar la inmovilización/contención del agresor con tripulantes y ABPs y proceder al aterrizaje no programado más inmediato",
+        "text": "I: Inoperative Items / Incidents (Evaluar sistemas inoperativos o gravedad); M: Meteorological Report (Meteo de aeropuertos adecuados cercanos); F: Fuel Management (Combustible utilizable y tiempo de vuelo); L: Landing Performance (Cálculo ePerf Inflight Landing); O: Options (Opciones que cumplen meteo y pista); C: Choose an Option (1° Salida/Destino, 2° Alternativos Binter, 3° Adecuado); C: Communications (ATC, SCC vía TELSI, PA y ACARS FREE TEXT > EMR o INC / VHF)",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "El comandante debe salir a la cabina de pasaje para negociar personalmente con el agresor",
+        "text": "I: Instrumentos; M: Motores; F: Flaps; L: Luces; O: Oxígeno; C: Cabina; C: Checklist",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Se debe continuar el vuelo hasta el destino programado sin avisar a las autoridades",
+        "text": "I: Identificar; M: Maniobrar; F: Frenar; L: Limpiar; O: Operar; C: Calzos; C: Cerrar",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Se deben apagar las luces de emergencia",
+        "text": "I: Iniciar; M: Mantener; F: Finalizar; L: Liberar; O: Ordenar; C: Coordinar; C: Cortar",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "La puerta blindada no se abre bajo ningún concepto; los pilotos permanecen a los mandos, declaran emergencia y ejecutan el desvío inmediato mientras la cabina es contenida por TCPs y ABPs.",
+      "text": "IMFLOCC es el proceso estructurado de Binter: Inop items, Meteorological report, Fuel management, Landing performance (ePerf), Options, Choose an option y Communications (ATC, SCC vía TELSI, PA, ACARS).",
       "references": [
-        "MOA Capítulo 10 Security",
-        "EASA Part-CAT Security"
+        "MOB Binter E195-E2 Sección 3.1.10 (Pág. 3.1-22 y 3.1-23)"
       ]
     },
     "metadata": {
@@ -6190,36 +6185,35 @@
   },
   {
     "id": "CMD-MGT-006",
-    "subject_id": "cmd_emergency",
-    "learning_objective": "CRM / Incapacitación de Tripulante en Vuelo",
-    "stem": "En caso de incapacitación súbita de uno de los pilotos en vuelo (Pilot Incapacitation), ¿cuál es la primera prioridad del piloto superviviente?",
+    "subject_id": "cmd_mnemonicos_mando",
+    "learning_objective": "MOB 3.1.0 - Orden de Aplicación de Listas de Chequeo (MEANA)",
+    "stem": "Según el MOB 3.1.0 (Pág. 3.1-2), cuando se produce una anormalidad en vuelo y se ha verificado que no aplica FOL ni OB, ¿cuál es el orden estricto de aplicación de las listas de comprobación según el acrónimo MEANA?",
     "options": [
       {
         "id": "A",
-        "text": "Administrar reanimación cardiopulmonar abandonando los mandos",
+        "text": "M: Mantenimiento, E: Emergencia, A: ATC, N: Navegación, A: Aproximación",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Asumir el control unívoco de la aeronave (\"I HAVE CONTROLS\"), enganchar el Piloto Automático y asegurar la trayectoria de vuelo segura y la altitud antes de solicitar auxilio médico",
+        "text": "M: Memo Items (Pasos de memoria); E: Emergency Checklist; A: Abnormal Checklist; N: Normal Checklist; A: Abnormal Checklist (restantes)",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "Desconectar todos los generadores",
+        "text": "M: Master Warning, E: EICAS, A: Alertas, N: Notificaciones, A: Acciones",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Apagar los motores",
+        "text": "M: Motores, E: Eléctrico, A: Aire, N: Navegación, A: Alabeo",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "La regla de oro es volar el avión: asumir mandos, conectar automatismos, llamar a la sobrecargo para retirar al piloto incapacitado y reclinar/bloquear su asiento fuera de los controles.",
+      "text": "El acrónimo MEANA define el orden reglamentario: 1° Memo Items, 2° Emergency Checklist, 3° Abnormal Checklist inicial, 4° Normal Checklist y 5° Abnormal Checklist adicionales.",
       "references": [
-        "SOPM Emergency Procedures - Crew Incapacitation",
-        "MOA 8.3"
+        "MOB Binter E195-E2 Sección 3.1.0 (Pág. 3.1-2)"
       ]
     },
     "metadata": {
@@ -6230,36 +6224,35 @@
   },
   {
     "id": "CMD-MGT-007",
-    "subject_id": "cmd_performance",
-    "learning_objective": "MOA 8.1.3 / SOPM - Criterios de Aproximación Estabilizada (1000 ft IMC / 500 ft VMC)",
-    "stem": "¿Cuáles son los parámetros y compuertas obligatorias de la Política de Aproximación Estabilizada (Stabilized Approach Criteria) en condiciones IMC y VMC en la compañía?",
+    "subject_id": "cmd_emergency",
+    "learning_objective": "MOB 3.0-6 / 3.1-27 - Callouts de Cabina Previos al Impacto (5 min y 30 seg)",
+    "stem": "En la coordinación de cabina ante un aterrizaje forzoso o amerizaje (Ditching), ¿qué Callouts oficiales realiza el PM por el PA a los 5 minutos y a los 30 segundos del impacto (MOB 3.0-6 / 3.1-27)?",
     "options": [
       {
         "id": "A",
-        "text": "Estar estabilizado a 200 ft AGL en cualquier condición",
+        "text": "A los 5 min: \"ATENCIÓN A SUS PUESTOS\"; a los 30s: \"BRACE FOR IMPACT\"",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Estar en velocidad de pérdida y flaps arriba",
+        "text": "A los 5 min: \"TRIPULACIÓN PREPÁRENSE\"; a los 30s: \"AGÁCHENSE\"",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Estar completamente estabilizado a no menos de 1000 ft AAL en IMC y 500 ft AAL en VMC: en senda y localizador correctos, velocidad Vref a Vref+10 KT, configuración de aterrizaje completa, potencia estabilizada y régimen de descenso <= 1000 fpm",
+        "text": "A los 5 minutos: \"TRIPULACIÓN DE CABINA FINALIZAR PREPARACIÓN\"; a los 30 segundos: \"PROTECCIÓN, PROTECCIÓN, PROTECCIÓN\" (la tripulación de cabina grita: \"¡Inclínense y protéjanse la cabeza! / Bend Forward and protect your head!\")",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "No existe criterio fijo de altitud si la pista está a la vista",
+        "text": "A los 5 min: \"SOBRECARGO A CABINA\"; a los 30s: \"EVACUACIÓN\"",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Si a 1000 ft en IMC o a 500 ft en VMC no se cumplen todos los parámetros de velocidad, senda, configuración y potencia, la frustrada (Go-Around) es obligatoria e ineludible.",
+      "text": "A 5 min del aterrizaje forzoso: \"TRIPULACIÓN DE CABINA FINALIZAR PREPARACIÓN\". A 30 seg: \"PROTECCIÓN, PROTECCIÓN, PROTECCIÓN\", adoptando la postura de impacto.",
       "references": [
-        "MOA Binter 8.1.3.8",
-        "SOPM Stabilized Approach Criteria"
+        "MOB Binter E195-E2 Sección 3.0-6 (Pág. 3.0-6) y 3.1-27 (Pág. 3.1-27)"
       ]
     },
     "metadata": {
@@ -6270,36 +6263,35 @@
   },
   {
     "id": "CMD-MGT-008",
-    "subject_id": "cmd_reporting",
-    "learning_objective": "SMS / MOA Cap. 3 - Principios de Cultura Justa (Just Culture)",
-    "stem": "En la filosofía de Cultura Justa (Just Culture) y Gestión de Seguridad Operacional (SMS):",
+    "subject_id": "cmd_emergency",
+    "learning_objective": "MOB 3.1.4.2.1 - Procedimiento y Callouts de Descenso de Emergencia con AP/AT",
+    "stem": "En el procedimiento de Descenso de Emergencia con piloto automático en el E195-E2 (MOB 3.1.4.2.1), ¿cuál es el Callout del LSP por el PA y qué modo vertical se selecciona?",
     "options": [
       {
         "id": "A",
-        "text": "Todo error humano involuntario es sancionado económicamente",
+        "text": "Callout: \"EMERGENCY DIVE\"; modo vertical VS en rojo",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Los tripulantes tienen prohibido reportar incidencias técnicas",
+        "text": "Callout: \"DESCENDIENDO\"; modo vertical PITCH",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Solo se investigan los accidentes con daños mortales",
+        "text": "Callout: \"MAYDAY CABINA\"; modo vertical VNAV",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Se garantiza la no adopción de medidas punitivas ante errores humanos honestos o fallos involuntarios notificados de buena fe, distinguiéndolos claramente de la negligencia grave o el dolo deliberado",
+        "text": "Callout por PA: \"DESCENSO DE EMERGENCIA, DESCENSO DE EMERGENCIA, DESCENSO DE EMERGENCIA\"; modo vertical FLCH en VERDE seleccionando 10.000 ft o la MEA (la que sea mayor), gases en IDLE y SPEEDBRAKES en FULL",
         "is_correct": true
       }
     ],
     "explanation": {
-      "text": "La cultura justa promueve el reporte abierto de sucesos para mejorar la seguridad global protegiendo al informante salvo ante actos deliberados o temeridad temeraria.",
+      "text": "El LSP avisa tres veces \"DESCENSO DE EMERGENCIA\" por PA, selecciona FLCH verde, MEA o 10.000 ft, gases a ralentí y aerofrenos en FULL.",
       "references": [
-        "EASA Reg (UE) 376/2014",
-        "MOA Capítulo 3 SMS"
+        "MOB Binter E195-E2 Sección 3.1.4.2.1 (Pág. 3.1-10 y 3.1-11)"
       ]
     },
     "metadata": {
@@ -6311,35 +6303,34 @@
   {
     "id": "CMD-MGT-009",
     "subject_id": "cmd_emergency",
-    "learning_objective": "Emergencias Mayores - Regla de Oro en Fuego en Vuelo (Toma < 15 min)",
-    "stem": "Ante una indicación o sospecha de fuego o humo no controlable en la cabina de pasaje o bodega en vuelo (Uncontrollable Fire / Smoke):",
+    "learning_objective": "MOB 3.1.4.2.1 - Callouts de Altitud del PM durante Descenso de Emergencia",
+    "stem": "Durante el Descenso de Emergencia en el E195-E2, ¿qué Callouts periódicos de altitud realiza en voz alta el PM para monitorizar el perfil (MOB 3.1.4.2.1)?",
     "options": [
       {
         "id": "A",
-        "text": "El comandante debe iniciar inmediatamente el descenso de emergencia y proceder a tomar tierra en el aeropuerto adecuado más próximo en un tiempo máximo preferible no superior a 15 minutos",
+        "text": "Cada 10.000 ft: \"THIRTY THOUSAND FT\", \"TWENTY THOUSAND FT\", \"TEN THOUSAND FT\"; a 2000 ft de la altitud de nivelada: \"TWO THOUSAND TO LEVEL OFF\"; a 1000 ft: \"ONE THOUSAND TO LEVEL OFF\" (momento en que se cierran los Speedbrakes)",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Continuar el vuelo al destino para no generar retrasos comerciales",
+        "text": "Solo llama a 10.000 ft",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Abrir las ventanillas de cabina a FL300",
+        "text": "Llama cada 1000 ft desde el inicio del descenso",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Desconectar todas las bombas de combustible",
+        "text": "No realiza callouts de altitud para no interferir con el ATC",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Las estadísticas históricas demuestran que un fuego no extinguido puede causar fallo estructural o de control en menos de 15-20 minutos. La prioridad es aterrizar de inmediato.",
+      "text": "El PM canta en voz alta a 30.000, 20.000 y 10.000 ft, a 2000 ft para nivelar (\"TWO THOUSAND TO LEVEL OFF\") y a 1000 ft (\"ONE THOUSAND TO LEVEL OFF\"), retrayendo aerofrenos a 1000 ft.",
       "references": [
-        "QRH E195-E2 Fire & Smoke Procedures",
-        "MOA 8.3"
+        "MOB Binter E195-E2 Sección 3.1-11 y 3.1-12"
       ]
     },
     "metadata": {
@@ -6350,36 +6341,35 @@
   },
   {
     "id": "CMD-MGT-010",
-    "subject_id": "cmd_moa_mob",
-    "learning_objective": "EASA CAT.GEN.MPA.105 - Autoridad y Deberes del Comandante",
-    "stem": "¿Cuál es la autoridad legal del Comandante sobre la operación y seguridad de la aeronave según el Reglamento EASA CAT.GEN.MPA.105 y las Leyes de Navegación Aérea?",
+    "subject_id": "cmd_emergency",
+    "learning_objective": "MOB 3.1-12 - Callout al Alcanzar Altitud Segura tras Descenso de Emergencia",
+    "stem": "Una vez alcanzada la altitud segura y confirmado que la respiración es efectiva sin oxígeno tras un Descenso de Emergencia, ¿qué aviso transmite el LSP a la cabina de pasaje (MOB 3.1-12)?",
     "options": [
       {
         "id": "A",
-        "text": "Solo puede decidir sobre el menú de a bordo",
+        "text": "\"TRIPULACIÓN DE CABINA PERMANEZCAN SENTADOS\"",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Ostenta la autoridad definitiva sobre la aeronave, su tripulación, pasajeros y carga, con potestad para desembarcar a cualquier persona que comprometa la seguridad, negarse a transportar carga insegura y tomar cualquier acción necesaria para la seguridad del vuelo",
+        "text": "\"TRIPULACIÓN DE CABINA, DESCENSO FINALIZADO\"",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "Está subordinado a las instrucciones comerciales del handling en tierra",
+        "text": "\"EMERGENCIA TERMINADA\"",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No puede desviar el vuelo sin aprobación previa del Consejo de Administración",
+        "text": "\"PUEDEN QUITARSE LOS CINTURONES\"",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "El comandante tiene la potestad suprema y responsabilidad directa sobre la operación, seguridad y disciplina de la aeronave desde el cierre de puertas hasta la apertura final.",
+      "text": "Al alcanzar altitud segura y recuperar comunicaciones normales, el LSP avisa por PA a los TCPs: \"TRIPULACIÓN DE CABINA, DESCENSO FINALIZADO\".",
       "references": [
-        "EASA Part-CAT CAT.GEN.MPA.105",
-        "MOA Capítulo 1 Organización y Responsabilidades"
+        "MOB Binter E195-E2 Sección 3.1-12 (Pág. 3.1-12)"
       ]
     },
     "metadata": {
@@ -6390,36 +6380,35 @@
   },
   {
     "id": "CMD-MGT-011",
-    "subject_id": "cmd_mnemonicos_mando",
-    "learning_objective": "Mnemónicos Operacionales - IMFLOCC para Aproximación",
-    "stem": "En la preparación de llegadas complejas y aproximaciones instrumentales, ¿qué aspectos cubre el mnemónico IMFLOCC?",
+    "subject_id": "cmd_flight_ground_ops",
+    "learning_objective": "MOB 3.1.1 - Callout Obligatorio MANUAL BRAKES en RTO",
+    "stem": "En la maniobra de Aborto de Despegue (RTO) en el E195-E2 (MOB 3.1.1), ¿qué Callout obligatorio debe realizar el LSP antes de desconectar la frenada automática Autobrake RTO para pasar a frenos de pedal?",
     "options": [
       {
         "id": "A",
-        "text": "Instrucción, Mando, Frenos, Luces, Oxígeno, Compensador, Checklist",
+        "text": "\"I HAVE BRAKES\"",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Indicadores, Motores, Fuselaje, Llantas, OAT, Calzos, Cabina",
+        "text": "\"AUTOBRAKE OFF\"",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "I: Identificación de la carta; M: Mínimos meteorológicos y MSA; F: Frecuencias de radioayudas; L: Límites de velocidad/altitud en STAR; O: Obstáculos y terreno; C: Configuración y frustrada; C: Comunicaciones ATC",
+        "text": "\"MANUAL BRAKES\"",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "Inercial, Magnético, Flaps, Luces, Outflow, Combustible, Contacto",
+        "text": "\"STOPPING MANUAL\"",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "IMFLOCC asegura un repaso metódico de todos los elementos críticos de la ficha de aproximación y la trayectoria de descenso.",
+      "text": "Si se va a desactivar la frenada automática RTO para aplicar frenos de pedal manualmente, es mandatorio cantar \"MANUAL BRAKES\" antes de la desconexión.",
       "references": [
-        "SOPM Briefing Standards",
-        "MOA 8.3"
+        "MOB Binter E195-E2 Sección 3.1.1 (Pág. 3.1-3 y 3.1-4)"
       ]
     },
     "metadata": {
@@ -6430,36 +6419,35 @@
   },
   {
     "id": "CMD-MGT-012",
-    "subject_id": "cmd_emergency",
-    "learning_objective": "QRH / SOPM E195-E2 - EGPWS Warning Recovery Escape Maneuver",
-    "stem": "En una aproximación visual o por instrumentos, si se produce una alarma EGPWS / TAWS de tipo \"PULL UP\" o \"TERRAIN, TERRAIN, PULL UP\":",
+    "subject_id": "cmd_flight_ground_ops",
+    "learning_objective": "MOB 3.1.1 - Tres Funciones Primordiales del Callout de 80 Nudos",
+    "stem": "Durante la carrera de despegue en el E195-E2, ¿cuáles son las 3 funciones primordiales del Callout de \"80 KNOTS\" realizado por el PM (MOB 3.1.1)?",
     "options": [
       {
         "id": "A",
-        "text": "El piloto debe buscar visualmente el terreno antes de actuar",
+        "text": "Encender luces, mirar flaps y pedir autorización",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Preguntar a ATC si hay obstáculos en la zona",
+        "text": "Trimado de morro, conexión de AP y ajuste de altitud",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Acelerar suavemente manteniendo la altitud",
+        "text": "Calibrar la velocidad de pérdida, conectar bombas y desconectar frenos",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Ejecutar inmediatamente la maniobra de escape EGPWS de memoria: desconectar AP/AT, aplicar empuje máximo MAX THRUST de inmediato, levantar morro a la actitud de máximo ángulo de ascenso (Pitch to Stick Shaker) y mantener alas niveladas",
+        "text": "1° Comprobar y detectar una posible incapacitación de uno de los pilotos durante la carrera; 2° Comprobación cruzada de indicación de velocidad anemométrica; 3° Comprobar que el Autothrottle (A/T) ha pasado a modo HOLD",
         "is_correct": true
       }
     ],
     "explanation": {
-      "text": "Una advertencia PULL UP no admite demora: se aplica empuje máximo y se vuela al límite de sustentación (Pitch to Shaker) para librar el terreno inmediatamente.",
+      "text": "A 80 nudos se valida la respuesta verbal (incapacitación sutil), la concordancia de anemómetros y el paso del FMA de potencia a modo HOLD.",
       "references": [
-        "QRH E195-E2 Terrain Warning",
-        "SOPM E195-E2"
+        "MOB Binter E195-E2 Sección 3.1.1 (Pág. 3.1-3)"
       ]
     },
     "metadata": {
@@ -6470,36 +6458,35 @@
   },
   {
     "id": "CMD-MGT-013",
-    "subject_id": "cmd_performance",
-    "learning_objective": "QRH / SOPM E195-E2 - Maniobra de Escape de Windshear",
-    "stem": "Ante un aviso de cizalladura reactiva (Windshear Warning) generado por el sistema de alerta durante el despegue o aproximación:",
+    "subject_id": "cmd_emergency",
+    "learning_objective": "MOB 3.1.8.2 / AOM E195-E2 - Función Best Beta en Fallo de Motor",
+    "stem": "En caso de Fallo de Motor en despegue a o por encima de V1 en el E195-E2 (MOB 3.1.8.2), ¿qué función automática de guiñada se activa tras la retracción del tren de aterrizaje?",
     "options": [
       {
         "id": "A",
-        "text": "Desconectar piloto automático, aplicar empuje máximo MAX THRUST (avanzando palancas al tope mecánico), seguir la guía del Flight Director de escape o volar al ángulo de ataque de protección contra pérdida, sin cambiar la configuración de flaps ni tren hasta librar la cizalladura",
+        "text": "La función Best Beta (el indicador Slip/Skid del PFD se vuelve color CIAN), debiendo utilizar el timón y el compensador de guiñada para centrar el trapezoide con un ligero banqueo hacia el motor operativo",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Retraer el tren y los flaps inmediatamente",
+        "text": "El piloto automático toma el mando a 50 ft",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Picar el morro para ganar velocidad",
+        "text": "Se desconecta el timón de dirección",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Cortar motores",
+        "text": "El timón de profundidad baja 5 grados automáticamente",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "En Windshear Warning se demanda máxima potencia, se sigue la guía de escape manteniendo la configuración fija (no tocar tren ni flaps) para no degradar sustentación.",
+      "text": "Al retraer el tren con motor inoperativo, el índice de resbale pasa a color cian (Best Beta); centrarlo optimiza la resistencia aerodinámica de guiñada/alabeo.",
       "references": [
-        "QRH E195-E2 Windshear Escape Maneuver",
-        "SOPM E195-E2"
+        "MOB Binter E195-E2 Sección 3.1.8.2 (Pág. 3.1-18)"
       ]
     },
     "metadata": {
@@ -6510,36 +6497,35 @@
   },
   {
     "id": "CMD-MGT-014",
-    "subject_id": "cmd_moa_mob",
-    "learning_objective": "EASA ORO.FTL.235 / MOA Cap. 7 - Requisitos Mínimos de Descanso",
-    "stem": "En la gestión de tiempos de descanso y fatiga de la tripulación (EASA ORO.FTL.235):",
+    "subject_id": "cmd_emergency",
+    "learning_objective": "MOB 3.1.8.2 - Altitud Mínima para Acciones de Memoria en Fallo de Motor (400 ft AGL)",
+    "stem": "Según el MOB 3.1.8.2, en salidas con altitudes de aceleración superiores a 1000 ft AAL, si ocurre un fallo o fuego de motor que requiera acciones de memoria:",
     "options": [
       {
         "id": "A",
-        "text": "El descanso en la base puede ser de 6 horas",
+        "text": "Las acciones de memoria deben iniciarse inmediatamente en la rotación",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "El período mínimo de descanso en la base de operaciones debe ser al menos tan largo como el período de actividad precedente, o un mínimo de 12 horas (el que sea mayor)",
+        "text": "Las acciones se pueden ordenar a una altitud inferior a la de aceleración pero NUNCA por debajo de 400 ft AGL, con el avión estabilizado y en el perfil (limitando el alabeo a 15° en V2 - Low Bank)",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "El descanso fuera de base puede reducirse a 8 horas sin justificación",
+        "text": "Se deben esperar obligatoriamente a los 3000 ft",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No se computa descanso si el hotel está en el aeropuerto",
+        "text": "Nunca se tocan los mandos de motor hasta nivelar en crucero",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "El descanso en base debe igualar el FDP previo con un mínimo de 12 horas; fuera de base el descanso mínimo es de 10 horas garantizando 8 horas de sueño ininterrumpido.",
+      "text": "Por debajo de 400 ft AGL la prioridad absoluta es volar y mantener control y trayectoria; nunca se ejecutan memory items o paradas de motor por debajo de 400 ft.",
       "references": [
-        "MOA Capítulo 7 FTL",
-        "EASA ORO.FTL.235"
+        "MOB Binter E195-E2 Sección 3.1.8.2 (Pág. 3.1-18)"
       ]
     },
     "metadata": {
@@ -6550,36 +6536,35 @@
   },
   {
     "id": "CMD-MGT-015",
-    "subject_id": "cmd_flight_planning",
-    "learning_objective": "MOA 8.1.7 - Procedimiento de Replanificación en Vuelo (RCF / Decision Point)",
-    "stem": "¿Qué es el Punto de Decisión / Punto de Replanificación en Ruta (Reduced Contingency Fuel Procedure / Decision Point)?",
+    "subject_id": "cmd_emergency",
+    "learning_objective": "MOB 3.1.8.3 - Velocidad Green Dot en Driftdown",
+    "stem": "En el procedimiento de Driftdown tras fallo de motor en crucero en el E195-E2 (MOB 3.1.8.3), ¿qué velocidad óptima representa el GREEN DOT en el anemómetro?",
     "options": [
       {
         "id": "A",
-        "text": "El punto donde se enciende el radar",
+        "text": "La velocidad de máxima aceleración en picado",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "El punto donde se avisa a los pasajeros",
+        "text": "La velocidad de desplome",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Un punto predeterminado en la ruta donde el comandante evalúa el combustible remanente real para decidir si continúa al destino principal con contingencia reducida o se desvía a un aeródromo en ruta",
+        "text": "La velocidad de máxima eficiencia aerodinámica (L/D max) que reduce el gradiente absoluto de descenso, proporcionando el descenso más suave y permitiendo que el avión se nivele a la mayor altitud posible (Service Ceiling OEI)",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "El punto de aceleración en despegue",
+        "text": "La velocidad de extensión de flaps",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "El Decision Point permite optimizar el combustible cargado evaluando en vuelo el cumplimiento de mínimos para destino o desvío a la alternativa planificada.",
+      "text": "El Green Dot representa la velocidad de mejor relación sustentación/resistencia en configuración limpia, maximizando el techo remanente monomotor.",
       "references": [
-        "MOA Binter 8.1.7",
-        "EASA AMC1 CAT.OP.MPA.181"
+        "MOB Binter E195-E2 Sección 3.1.8.3 (Pág. 3.1-19)"
       ]
     },
     "metadata": {
@@ -6590,36 +6575,35 @@
   },
   {
     "id": "CMD-MGT-016",
-    "subject_id": "cmd_disruptive_pax",
-    "learning_objective": "MOA Cap. 9 & 10 - Transporte de Armas de Fuego y Munición",
-    "stem": "En el transporte de armas de fuego y munición pertenecientes a particulares o deportistas:",
+    "subject_id": "cmd_emergency",
+    "learning_objective": "MOB 3.0-2 - Jerarquía y Prioridad de Mensajes EICAS (Golden Chevron Messages)",
+    "stem": "En la clasificación de mensajes EICAS y prioridad de atención en cabina de vuelo (MOB 3.0-2), ¿cuál es el criterio jerárquico de resolución?",
     "options": [
       {
         "id": "A",
-        "text": "Pueden llevarse en el bolsillo del pasajero",
+        "text": "Advisory cyan, Caution ámbar, Warning rojo",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Se guardan en el armario de cabina",
+        "text": "Alfabéticamente por orden de aparición",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Solo se permite en vuelos sin pasaje",
+        "text": "A discreción de quien lleve los mandos",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Las armas deben viajar descargadas, desmontadas o precintadas en bodega de carga dentro de estuches rígidos bloqueados, separadas de la munición (división 1.4S máx 5 kg) y con guía de circulación de la Guardia Civil",
+        "text": "1° WARNING (Rojo) con chevron '>'; 2° WARNING (Rojo); 3° CAUTION (Ámbar) con chevron '>'; 4° CAUTION (Ámbar); 5° ADVISORY (Cyan) con chevron; 6° ADVISORY (Cyan). Los mensajes con chevron son los mensajes raíz causantes",
         "is_correct": true
       }
     ],
     "explanation": {
-      "text": "Las armas de particulares viajan exclusivamente en bodega, descargadas, con la documentación de la intervención de armas y la munición embalada según la división 1.4S.",
+      "text": "Los mensajes precedidos por el símbolo de chevron \">\" (Golden CAS Messages) identifican la causa raíz y deben resolverse en primer lugar dentro de su jerarquía de color.",
       "references": [
-        "MOA Binter Capítulo 9 / 10",
-        "Programa Nacional de Seguridad"
+        "MOB Binter E195-E2 Sección 3.0-2 (Pág. 3.0-2)"
       ]
     },
     "metadata": {
@@ -6631,35 +6615,34 @@
   {
     "id": "CMD-MGT-017",
     "subject_id": "cmd_emergency",
-    "learning_objective": "OACI / SERA - Códigos Transponder de Emergencia (7700)",
-    "stem": "¿Cuál es el código transponder estándar internacional a seleccionar en caso de Emergencia General no especificada?",
+    "learning_objective": "MOB 3.0-2 - Tipos de Emergencia (Imprevista, Prevista, Aterrizaje Inseguro)",
+    "stem": "¿Qué clasificación establece el MOB 3.0-2 para coordinar una eventualidad con la Tripulación de Cabina?",
     "options": [
       {
         "id": "A",
-        "text": "Código 7700",
+        "text": "Emergencia Imprevista (en despegue/toma/descenso sin tiempo de preparación), Emergencia Prevista (aterrizaje en condiciones marginales con preparación de cabina), y Aterrizaje Inseguro (circunstancias anormales sin evacuación prevista inicial pero cabina prevenida)",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Código 7600",
+        "text": "Emergencia Grado 1, 2 y 3",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Código 7500",
+        "text": "Fallo técnico leve y fallo grave",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Código 2000",
+        "text": "Emergencia comercial y técnica",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "7700 indica emergencia general; 7600 fallo de comunicaciones de radio; 7500 acto de interferencia ilícita o secuestro.",
+      "text": "El MOB clasifica las contingencias en Emergencia Imprevista, Emergencia Prevista o Aterrizaje Inseguro para coordinar el tipo de preparación del pasaje.",
       "references": [
-        "SERA.4001",
-        "MOA Capítulo 12 Reglas del Aire"
+        "MOB Binter E195-E2 Sección 3.0-2 (Pág. 3.0-2)"
       ]
     },
     "metadata": {
@@ -6671,35 +6654,34 @@
   {
     "id": "CMD-MGT-018",
     "subject_id": "cmd_emergency",
-    "learning_objective": "OACI / SERA - Código Transponder de Secuestro (7500)",
-    "stem": "¿Cuál es el código transponder a seleccionar en caso de Acto de Interferencia Ilícita (Secuestro de la aeronave)?",
+    "learning_objective": "MOB 3.1.7 Tabla de Comunicaciones de Emergencia (Fallo de Motor)",
+    "stem": "En la tabla de llamadas y comunicaciones de socorro/alerta (MOB 3.1.7 / Pág. 3.1-16), ante un fallo de motor en vuelo, ¿qué llamada se efectúa a ATC y qué condición se comunica a la Tripulación de Cabina?",
     "options": [
       {
         "id": "A",
-        "text": "Código 7700",
+        "text": "Llamada a ATC: PAN-PAN; Llamada a Cabin Crew: Emergencia Imprevista",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Código 7500",
+        "text": "Llamada a ATC: MAYDAY inicialmente (revertido a PAN-PAN si se recupera o estabiliza); Llamada a Cabin Crew: Aterrizaje Inseguro",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "Código 7600",
+        "text": "Llamada a ATC: Ninguna; Llamada a Cabin Crew: Evacuación",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Código 1200",
+        "text": "Llamada a ATC: SECURITE; Llamada a Cabin Crew: Normal",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "El código 7500 alerta discretamente a todos los centros de control y defensa aérea sobre una situación de interferencia ilícita a bordo.",
+      "text": "Ante fallo de motor se emite MAYDAY inicial a ATC (pudiendo pasar a PAN-PAN) y se declara Aterrizaje Inseguro a la tripulación de cabina vía TELSI.",
       "references": [
-        "SERA.4001",
-        "MOA Capítulo 10 Security"
+        "MOB Binter E195-E2 Sección 3.1.7 (Pág. 3.1-16)"
       ]
     },
     "metadata": {
@@ -6710,36 +6692,36 @@
   },
   {
     "id": "CMD-MGT-019",
-    "subject_id": "cmd_flight_planning",
-    "learning_objective": "SOPM / Masa y Centrado - Tolerancia de Peso en Hoja de Carga (LMC)",
-    "stem": "¿Cuál es la tolerancia máxima permitida de desviación en peso entre el Loadsheet final y los datos introducidos en el FMS / Takeoff Data para no requerir un recálculo de prestaciones?",
+    "subject_id": "cmd_emergency",
+    "learning_objective": "MOB 3.1.3.3 / QRH E195-E2 - Procedimiento ante Engine Tailpipe Fire (Torching)",
+    "stem": "Ante una indicación de Fuego en el escape del motor en tierra sin indicación de fuego en la nacelle ni ITT anormal (Tailpipe Fire / Torching - MOB 3.1.3.3):",
     "options": [
       {
         "id": "A",
-        "text": "50 kg",
+        "text": "Disparar las botellas de halón del motor de inmediato",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "200 kg",
+        "text": "Acelerar el motor al 100% de potencia",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Tolerancia estándar de +/- 500 kg en el TOW (o el límite especificado en el SOPM de la compañía)",
+        "text": "Proceder según la checklist QRH NAP1 ENGINE TAILPIPE FIRE (cortar combustible y molinetear el motor con el arrancador sin aplicar extintores de halón a la nacelle)",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "2000 kg",
+        "text": "Despegar inmediatamente",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Las variaciones de última hora (LMC) que superen las tolerancias autorizadas (+/- 500 kg en peso o variaciones significativas de CG) obligan a recalcular velocidades V1, Vr, V2 y empuje.",
+      "text": "El fuego de escape se debe a combustible no quemado en la tobera. El halón no llega a la tobera; se extingue cortando combustible y molineteando con el starter.",
       "references": [
-        "SOPM E195-E2 Performance",
-        "MOA 8.1.8"
+        "MOB Binter E195-E2 Sección 3.1.3.3 (Pág. 3.1-6)",
+        "QRH NAP1"
       ]
     },
     "metadata": {
@@ -6750,35 +6732,35 @@
   },
   {
     "id": "CMD-MGT-020",
-    "subject_id": "cmd_flight_ground_ops",
-    "learning_objective": "MOA 8.1.3 - Aproximaciones Visuales Nocturnas",
-    "stem": "En la gestión de la aproximación visual nocturna (Night Visual Approach):",
+    "subject_id": "cmd_emergency",
+    "learning_objective": "MOB 3.1.4.2 / AOM Capítulo 17 - Modos de Máscara de Oxígeno QDM (EMER)",
+    "stem": "En la operativa con máscaras de oxígeno de tripulación de vuelo Eros/QDM (MOB 3.1.4.2), ¿qué características tiene el modo EMER?",
     "options": [
       {
         "id": "A",
-        "text": "No se requiere ninguna ayuda visual",
+        "text": "Suministra oxígeno diluido al 50% con aire de cabina",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Se puede descender por debajo de la MSA en cualquier momento",
+        "text": "Apaga los micrófonos de la máscara",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Solo se permite en vuelos de entrenamiento",
+        "text": "Es obligatorio durante el rodaje",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Requiere que la pista cuente con iluminación de borde y sistema visual indicador de pendiente de aproximación operativo (PAPI o VASI), manteniendo la senda visual hasta la toma",
+        "text": "Suministra oxígeno al 100% no diluido con sobrepresión positiva continua para expulsar humos y gases tóxicos del interior de la máscara (debiendo volver a 100% o NORM una vez despejada la máscara para facilitar las comunicaciones)",
         "is_correct": true
       }
     ],
     "explanation": {
-      "text": "Las aproximaciones visuales de noche exigen iluminación completa de pista y guía vertical PAPI/VASI para mitigar ilusiones ópticas como el efecto agujero negro (Black Hole Effect).",
+      "text": "El modo EMER genera presión positiva continua para evitar la entrada de humo; una vez libre de gases se retorna a 100% para evitar dificultades de comunicación.",
       "references": [
-        "MOA Binter 8.1.3.5 Aproximaciones Visuales"
+        "MOB Binter E195-E2 Sección 3.1.4.2 (Pág. 3.1-9 y 3.1-10)"
       ]
     },
     "metadata": {
@@ -6789,36 +6771,35 @@
   },
   {
     "id": "CMD-MGT-021",
-    "subject_id": "cmd_mnemonicos_mando",
-    "learning_objective": "CRM / TEM - Definición de Amenazas Ambientales",
-    "stem": "En la gestión de amenazas y errores (Threat & Error Management - TEM), ¿cómo se clasifican las amenazas externas (Latent / Environmental Threats)?",
+    "subject_id": "cmd_emergency",
+    "learning_objective": "MOB 3.1.6.2 - Procedimiento ante Impacto con Aves o Granizo (No retraer flaps)",
+    "stem": "Si se sospecha de un impacto con aves o granizo en vuelo durante la aproximación o aterrizaje (MOB 3.1.6.2):",
     "options": [
       {
         "id": "A",
-        "text": "Eventos fuera del control directo de la tripulación como meteorología adversa, congestión ATC, terreno montañoso o contaminación de pista",
+        "text": "No retraer los flaps al abandonar la pista y rodar con los flaps extendidos hasta el estacionamiento para que mantenimiento realice la inspección exterior previa",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Errores cometidos por el propio piloto en la selección de botones",
+        "text": "Retraer los flaps a toda velocidad",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Averías del FMS exclusivamente",
+        "text": "Apagar los motores en la pista",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Falta de combustible por mala planificación",
+        "text": "Declarar emergencia y evacuar por toboganes",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Las amenazas son factores externos al cockpit que aumentan la complejidad operativa; su identificación proactiva en el briefing permite implementar contramedidas.",
+      "text": "No se deben retraer los flaps para evitar dañar los mecanismos si hay restos atrapados en los carriles hasta que mantenimiento verifique las superficies.",
       "references": [
-        "ICAO Doc 9803 Line Operations Safety Audit",
-        "MOA 8.3"
+        "MOB Binter E195-E2 Sección 3.1.6.2 (Pág. 3.1-14)"
       ]
     },
     "metadata": {
@@ -6829,36 +6810,35 @@
   },
   {
     "id": "CMD-MGT-022",
-    "subject_id": "cmd_reporting",
-    "learning_objective": "MOA Cap. 11 - Notificación Obligatoria de Alertas EGPWS / CFIT",
-    "stem": "¿Qué suceso operacional relativo a la proximidad con el terreno exige la emisión prioritaria de un informe de seguridad ASR y notificación a la autoridad?",
+    "subject_id": "cmd_emergency",
+    "learning_objective": "MOB 3.1.5 / SOPM 3-40 - Aterrizaje con Sobrepeso (Máx 300 fpm en toma)",
+    "stem": "En un aterrizaje con sobrepeso (Overweight Landing - MOB 3.1.5), ¿cuál es el régimen máximo admisible de descenso en el momento de la toma de contacto?",
     "options": [
       {
         "id": "A",
-        "text": "Sobrevolar una montaña a FL300",
+        "text": "600 pies/minuto",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Cualquier activación de aviso de advertencia EGPWS/TAWS (Warning: \"PULL UP\", \"TERRAIN\") que requiera maniobra evasiva o aviso de proximidad no previsto",
+        "text": "300 pies/minuto (no intentar una toma excesivamente suave flotando en pista, usar máxima reversa hasta 60 kts y anotar el peso y régimen en el parte de vuelo para inspección de mantenimiento)",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "Ver el terreno en una aproximación visual diurna",
+        "text": "100 pies/minuto",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "El encendido de las luces de aterrizaje",
+        "text": "500 pies/minuto",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Toda activación de alerta de proximidad al terreno de nivel Warning es un incidente grave que debe ser investigado por el departamento de Safety y reportado a la autoridad.",
+      "text": "En sobrepeso la tasa máxima de toma es 300 fpm sin flotar; se usa reversa máxima hasta 60 kts y se requiere inspección técnica obligatoria post-aterrizaje.",
       "references": [
-        "MOA Capítulo 11 Safety Management",
-        "EASA Reg 376/2014"
+        "MOB Binter E195-E2 Sección 3.1.5 (Pág. 3.1-14)"
       ]
     },
     "metadata": {
@@ -6869,36 +6849,35 @@
   },
   {
     "id": "CMD-MGT-023",
-    "subject_id": "cmd_performance",
-    "learning_objective": "GRF / ICAO - Códigos de Condición de Pista (RWY CC 5 Wet)",
-    "stem": "En la operación con pista mojada (Wet Runway), ¿qué coeficiente de fricción o Runway Condition Code (RWY CC) se asocia habitualmente según el Global Reporting Format (GRF)?",
+    "subject_id": "cmd_emergency",
+    "learning_objective": "MOB 3.1.11 / SOPM 3-35 - EGPWS Warning Recovery (Mantener configuración)",
+    "stem": "Ante una alerta de proximidad al terreno EGPWS WARNING (\"PULL UP\" / \"TERRAIN TERRAIN PULL UP\"), ¿cuál es la acción de los pilotos respecto a la configuración de la aeronave (MOB 3.1.11)?",
     "options": [
       {
         "id": "A",
-        "text": "RWY CC 6",
+        "text": "Retraer el tren y los flaps inmediatamente",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "RWY CC 1",
+        "text": "Extender todos los aerofrenos",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "RWY CC 5 (Frenado Bueno / Good)",
+        "text": "Mantener la configuración actual de la aeronave (tren y flaps sin tocar) hasta asegurar la separación completa con el terreno y alcanzar la MSA o MORA",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "RWY CC 0",
+        "text": "Apagar los mandos de vuelo",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "En el sistema GRF, una pista mojada (hasta 3 mm de agua) se clasifica como RWY CC 5 con acción de frenado buena (Good).",
+      "text": "Durante el escape de EGPWS no se cambia la configuración de flaps ni tren para no generar pérdidas transitorias de sustentación.",
       "references": [
-        "ICAO Doc 9981 GRF",
-        "MOA 8.1.4.3"
+        "MOB Binter E195-E2 Sección 3.1.11 (Pág. 3.1-24)"
       ]
     },
     "metadata": {
@@ -6909,36 +6888,35 @@
   },
   {
     "id": "CMD-MGT-024",
-    "subject_id": "cmd_performance",
-    "learning_objective": "GRF / ICAO - Código RWY CC 2 (Standing Water / Slush)",
-    "stem": "¿Qué condición de pista se codifica como RWY CC 2 según el sistema GRF?",
+    "subject_id": "cmd_emergency",
+    "learning_objective": "MOB 3.1.12 / SOPM 3-05 - Acciones Inmediatas ante TCAS RA (Fly-to-Zone)",
+    "stem": "En la ejecución de una maniobra de escape ante un TCAS RA (MOB 3.1.12), ¿qué acción manual inmediata debe realizar el PF?",
     "options": [
       {
         "id": "A",
-        "text": "Pista seca y limpia",
+        "text": "Picar a fondo",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Pista mojada con 1 mm de agua",
+        "text": "Esperar la confirmación del controlador ATC",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Hielo húmedo con frenado POOR",
+        "text": "Apagar el transpondedor",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Agua estancada (Standing Water > 3 mm) o aguanieve (Slush > 3 mm) con acción de frenado Medio a Pobre (Medium to Poor)",
+        "text": "Desconectar inmediatamente el AP y el AT cantando \"MY CONTROLS\" y guiar suavemente el símbolo FPA (Flight Path Angle) dentro del rectángulo verde de la FLY-TO-ZONE del PFD",
         "is_correct": true
       }
     ],
     "explanation": {
-      "text": "El agua estancada o aguanieve de más de 3 mm de espesor genera riesgo severo de aquaplaning y se codifica como RWY CC 2.",
+      "text": "El PF toma mandos desconectando AP y AT y ajusta el símbolo FPA dentro del área verde del PFD, mientras el PM canta \"TCAS RA\" a ATC y enciende luces y señal de cinturones.",
       "references": [
-        "ICAO Doc 9981",
-        "Manual de Operación Invernal"
+        "MOB Binter E195-E2 Sección 3.1.12 (Pág. 3.1-25)"
       ]
     },
     "metadata": {
@@ -6949,36 +6927,35 @@
   },
   {
     "id": "CMD-MGT-025",
-    "subject_id": "cmd_flight_planning",
-    "learning_objective": "Navegación PBN - Especificación RNP 1 (SID / STAR)",
-    "stem": "En la navegación PBN (Performance Based Navigation), ¿qué precisión de contención lateral en millas náuticas exige la especificación RNP 1?",
+    "subject_id": "cmd_emergency",
+    "learning_objective": "MOB 3.1.14.2 / SOPM 3-40 - Procedimiento de Ditching (Paralelo a las Olas)",
+    "stem": "En el procedimiento de Amerizaje de Emergencia (Ditching - MOB 3.1.14.2), ¿cómo se debe orientar la toma de contacto sobre el agua?",
     "options": [
       {
         "id": "A",
-        "text": "El avión debe mantenerse dentro de +/- 1,0 NM del eje de la ruta durante al menos el 95% del tiempo de vuelo",
+        "text": "Aterrizar PARALELO al oleaje (a lo largo de la cresta del oleaje o en la depresión), con tren de aterrizaje ARRIBA (UP), flaps máximos disponibles, variómetro de 200 a 300 pies/min y velocidad Vref",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Dentro de +/- 5 NM",
+        "text": "Aterrizar perpendicularmente cruzando las olas con tren abajo",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Dentro de +/- 10 NM",
+        "text": "Amerizar a 250 nudos sin flaps",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Dentro de 100 metros",
+        "text": "Lanzar las balsas salvavidas antes del impacto",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "RNP 1 requiere que el sistema FMS/GPS garantice contención lateral de 1 milla náutica en salidas y llegadas terminales.",
+      "text": "El amerizaje se efectúa paralelo a las crestas del oleaje con tren arriba para evitar que el morro o ala se claven en el agua.",
       "references": [
-        "ICAO Doc 9613 PBN Manual",
-        "MOA 8.1.3 Navegación"
+        "MOB Binter E195-E2 Sección 3.1.14.2 (Pág. 3.1-28 y 3.1-29)"
       ]
     },
     "metadata": {
