@@ -3,17 +3,17 @@
     "id": "P2010-EMG-001",
     "subject_id": "p2010_emergency",
     "learning_objective": "AFM Sección 3 - Velocidad de Mejor Planeo (Vglide)",
-    "stem": "En caso de fallo total de motor en vuelo en la Tecnam P2010 TDI, ¿cuál es la velocidad de mejor planeo (Best Glide Speed) a Peso Máximo (1160 kg) en configuración limpia (Flaps UP)?",
+    "stem": "En caso de fallo total de motor en vuelo en la Tecnam P2010 TDI estándar a MTOW (1160 kg) en configuración limpia (Flaps UP), ¿cuál es la velocidad de mejor planeo (Best Glide Speed) recomendada en el AFM?",
     "options": [
-      { "id": "A", "text": "84 KIAS", "is_correct": true },
+      { "id": "A", "text": "84 KIAS (y 88 KIAS para aeronaves con MOD 2010/269)", "is_correct": true },
       { "id": "B", "text": "73 KIAS", "is_correct": false },
       { "id": "C", "text": "95 KIAS", "is_correct": false },
       { "id": "D", "text": "65 KIAS", "is_correct": false }
     ],
     "explanation": {
-      "text": "De acuerdo con la Sección 3 (Procedimientos de Emergencia) del AFM de la Tecnam P2010 TDI, la velocidad recomendada para obtener el máximo alcance en planeo (Best Glide Speed) con Flaps UP a MTOW es de 84 KIAS, lo que proporciona un ratio de planeo aproximado de 11:1.",
+      "text": "De acuerdo con el Párrafo 1.1 (Reference Airspeeds for Emergency Procedures, Página 3-2) del AFM, la velocidad de mejor planeo (Best Glide Speed - Vglide) con Flaps UP a MTOW estándar es de 84 KIAS (88 KIAS con MOD 2010/269). La velocidad de aproximación sin flaps es 82 KIAS.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - Engine Failure in Flight"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 3: Emergency Procedures - Paragraph 1.1: Reference Airspeeds (Page 3-2)"
       ]
     },
     "metadata": {
@@ -34,7 +34,7 @@
     "explanation": {
       "text": "La primera e inmediata acción ante un fallo durante la carrera de despegue es reducir la palanca de gases a IDLE, frenar con firmeza y mantener el eje de pista. Una vez la aeronave se detiene o se tiene control del frenado, se corta el Engine Master, la bomba de combustible (Fuel Pump OFF) y el Master Switch.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - Engine Failure During Takeoff Roll"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 3: Emergency Procedures - Engine Failure During Takeoff Roll"
       ]
     },
     "metadata": {
@@ -53,9 +53,9 @@
       { "id": "D", "text": "Extender inmediatamente flaps a 40° sin ajustar la actitud de cabeceo", "is_correct": false }
     ],
     "explanation": {
-      "text": "A baja cota tras el despegue, la prioridad absoluta es controlar la velocidad de planeo (84 KIAS) y aterrizar en el terreno más despejado enfrente dentro de un cono de +/- 30°. El viraje de 180° a baja altura (el viraje imposible) tiene un riesgo crítico de pérdida/barrena por pérdida de sustentación y factor de carga.",
+      "text": "A baja cota tras el despegue, la prioridad absoluta es controlar la velocidad de planeo (84 KIAS) y aterrizar en el terreno más despejado enfrente dentro de un cono de +/- 30°. El viraje de 180° a baja altura tiene un riesgo crítico de pérdida/barrena por pérdida de sustentación y factor de carga.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - Engine Failure Immediately After Takeoff"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 3: Emergency Procedures - Engine Failure Immediately After Takeoff"
       ]
     },
     "metadata": {
@@ -76,7 +76,7 @@
     "explanation": {
       "text": "Para que el flujo de aire sea suficiente para hacer girar la hélice de paso variable y vencer la compresión del motor diésel CD-170 sin usar la batería de arranque, se requiere picar para acelerar a una velocidad mínima de 95 a 100 KIAS con el Engine Master en ON.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - In-Flight Engine Restart"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 3: Emergency Procedures - In-Flight Engine Restart"
       ]
     },
     "metadata": {
@@ -97,7 +97,7 @@
     "explanation": {
       "text": "Una luz FADEC parpadeando indica un fallo no crítico o fallo menor en uno de los sensores/canales. El sistema FADEC es dual y conmuta automáticamente. Pulsar el botón FADEC TEST durante 1-2 segundos permite confirmar o resetear fallos transitorios.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - FADEC Warning Lights",
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 3: Emergency Procedures - FADEC Warning Lights",
         "Continental CD-170 Operation Manual - FADEC Annunciations"
       ]
     },
@@ -119,7 +119,7 @@
     "explanation": {
       "text": "La aeronave dispone de un interruptor protegido para forzar la operación del Canal B (FADEC Force B Switch) en caso de que el canal maestro A sufra una anomalía grave y la conmutación automática no se haya completado adecuadamente.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - FADEC Dual Failure"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 3: Emergency Procedures - FADEC Dual Failure"
       ]
     },
     "metadata": {
@@ -140,7 +140,7 @@
     "explanation": {
       "text": "A diferencia de un motor de gasolina tradicional con magnetos, el motor diésel common-rail Continental CD-170 requiere suministro eléctrico continuo para los inyectores y la ECU del FADEC. Por certificación, dispone de una batería de respaldo de emergencia dedicada que garantiza un mínimo de 30 minutos de alimentación para el motor y FADEC.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - Total Electrical Failure",
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 3: Emergency Procedures - Total Electrical Failure",
         "Section 7: Description of the Airplane and its Systems - Electrical System"
       ]
     },
@@ -162,7 +162,7 @@
     "explanation": {
       "text": "En caso de fuego de motor, las prioridades son: 1) Cortar el suministro de combustible (Fuel Selector OFF), 2) Cortar la inyección y el motor (Engine Master OFF), 3) Cerrar la calefacción/ventilación (Cabin Heat OFF) para evitar la entrada de humo y gases tóxicos en cabina, y 4) Planear hacia el aterrizaje forzoso.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - Engine Fire in Flight"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 3: Emergency Procedures - Engine Fire in Flight"
       ]
     },
     "metadata": {
@@ -183,7 +183,7 @@
     "explanation": {
       "text": "Una temperatura de refrigerante excesiva se gestiona reduciendo la potencia demandada al motor y bajando el morro para incrementar la velocidad indicada de aire a través del radiador. Si la temperatura no desciende, se debe aterrizar en el aeródromo más cercano antes de sufrir daños térmicos.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - High Coolant Temperature"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 3: Emergency Procedures - High Coolant Temperature"
       ]
     },
     "metadata": {
@@ -204,7 +204,7 @@
     "explanation": {
       "text": "Una caída drástica de presión de aceite acompañada de aumento de temperatura de aceite es síntoma inequívoco de fallo inminente del motor por falta de lubricación. El piloto debe reducir potencia para prolongar la vida útil del motor el tiempo que tarde en colocarse en planeo hacia un campo seguro.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - Low Oil Pressure"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 3: Emergency Procedures - Low Oil Pressure"
       ]
     },
     "metadata": {
@@ -217,15 +217,15 @@
     "learning_objective": "AFM Sección 3 - Descenso de Emergencia (Emergency Descent)",
     "stem": "Para ejecutar un descenso de emergencia rápido (Emergency Descent) en la Tecnam P2010 TDI en aire en calma, ¿cuál es la configuración recomendada por el AFM?",
     "options": [
-      { "id": "A", "text": "Power Lever: IDLE; Flaps: UP; Velocidad: hasta Vno (130 KIAS) o Vne en aire completamente en calma", "is_correct": true },
+      { "id": "A", "text": "Power Lever: IDLE; Flaps: UP; Velocidad: hasta Vno (130 KIAS) o Vne (163 KIAS) en aire completamente en calma", "is_correct": true },
       { "id": "B", "text": "Flaps: LAND (40°); Velocidad: 130 KIAS", "is_correct": false },
       { "id": "C", "text": "Power Lever: 100%; Flaps: T/O; Velocidad: 70 KIAS", "is_correct": false },
       { "id": "D", "text": "Cortar el Engine Master y planear a 60 KIAS", "is_correct": false }
     ],
     "explanation": {
-      "text": "Para un descenso rápido de emergencia en configuración limpia, se reduce la potencia a IDLE y se mantiene una velocidad de hasta 130 KIAS (Vno). Con flaps extendidos no se debe superar su Vfe (96 KIAS para Flaps LAND).",
+      "text": "Para un descenso rápido de emergencia en configuración limpia, se reduce la potencia a IDLE y se mantiene una velocidad de hasta 130 KIAS (Vno). Si se despliegan flaps no se debe superar su Vfe (90 KIAS para Flap LAND).",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - Emergency Descent"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 3: Emergency Procedures - Emergency Descent"
       ]
     },
     "metadata": {
@@ -246,7 +246,7 @@
     "explanation": {
       "text": "El Garmin G1000 NXi dispone del botón rojo 'DISPLAY BACKUP' en el panel de audio GMA 1360. Al pulsarlo (o automáticamente por detección de fallo), el MFD muestra una pantalla combinada con horizonte artificial, anemómetro, altímetro e instrumentos de motor (EIS).",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - Avionics System Failures",
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 3: Emergency Procedures - Avionics System Failures",
         "Garmin G1000 NXi Cockpit Reference Guide for Tecnam P2010"
       ]
     },
@@ -268,7 +268,7 @@
     "explanation": {
       "text": "En una aproximación forzada sin motor, los flaps generan una gran resistencia aerodinámica que degrada el ratio de planeo. Por tanto, se mantienen en posición UP (o T/O) y solo se pasa a LAND (40°) en corta final cuando el toque dentro del campo esté 100% asegurado.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - Forced Landing Without Engine Power"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 3: Emergency Procedures - Forced Landing Without Engine Power"
       ]
     },
     "metadata": {
@@ -289,7 +289,7 @@
     "explanation": {
       "text": "La primera y primordial acción ante la pérdida es reducir el ángulo de ataque bajando el morro. Seguidamente se nivelan las alas coordinando con timón y se aplica potencia de manera suave para evitar guiñadas inducidas por el par motor del CD-170.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - Stall Recovery"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 3: Emergency Procedures - Stall Recovery"
       ]
     },
     "metadata": {
@@ -310,7 +310,7 @@
     "explanation": {
       "text": "Ante un fallo de alternador principal, el piloto debe reducir el consumo eléctrico (shedding no esencial) para preservar la carga de la batería y asegurar la alimentación del sistema de aviónica y FADEC hasta el aterrizaje.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 3: Emergency Procedures - Electrical System Malfunctions"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 3: Emergency Procedures - Electrical System Malfunctions"
       ]
     },
     "metadata": {

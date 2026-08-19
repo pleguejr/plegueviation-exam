@@ -2,18 +2,18 @@
   {
     "id": "P2010-LIM-001",
     "subject_id": "p2010_limitations",
-    "learning_objective": "AFM Sección 2 - Velocidades Límite de Estructura",
-    "stem": "En la Tecnam P2010 TDI, ¿cuál es la Velocidad de Nunca Exceder (Vne) expresada en velocidad indicada (KIAS)?",
+    "learning_objective": "AFM Sección 2 - Velocidad de Nunca Exceder (Vne)",
+    "stem": "En la Tecnam P2010 TDI estándar (MTOW 1160 kg), ¿cuál es la Velocidad de Nunca Exceder (Vne) expresada en velocidad indicada (KIAS)?",
     "options": [
-      { "id": "A", "text": "166 KIAS", "is_correct": true },
-      { "id": "B", "text": "145 KIAS", "is_correct": false },
-      { "id": "C", "text": "130 KIAS", "is_correct": false },
-      { "id": "D", "text": "180 KIAS", "is_correct": false }
+      { "id": "A", "text": "163 KIAS (164 KCAS)", "is_correct": true },
+      { "id": "B", "text": "145 KIAS (146 KCAS)", "is_correct": false },
+      { "id": "C", "text": "130 KIAS (130 KCAS)", "is_correct": false },
+      { "id": "D", "text": "175 KIAS (176 KCAS)", "is_correct": false }
     ],
     "explanation": {
-      "text": "De acuerdo con la Sección 2 (Limitaciones) del AFM de la Tecnam P2010 TDI, la Vne (Never Exceed Speed) es de 166 KIAS. Superar esta velocidad puede causar daños estructurales catastróficos o fallo aeroelástico (flutter).",
+      "text": "De acuerdo con la Tabla 2-1 (Speeds Limitations) de la Sección 2 (Página 2-4) del AFM de la Tecnam P2010 TDI, la velocidad Vne (Never Exceed Speed) representada por la línea roja del anemómetro es de 163 KIAS (164 KCAS). Está terminantemente prohibido superar esta velocidad en cualquier condición de vuelo.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 2: Limitations - Airspeed Limitations (Table 2-1)"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 2: Limitations - Table 2-1: Speeds Limitations (Page 2-4)"
       ]
     },
     "metadata": {
@@ -23,18 +23,18 @@
   {
     "id": "P2010-LIM-002",
     "subject_id": "p2010_limitations",
-    "learning_objective": "AFM Sección 2 - Velocidades Límite de Flaps (Vfe)",
-    "stem": "¿Cuáles son las velocidades máximas de operación de flaps (Vfe) para las posiciones T/O (15°) y LAND (40°) en la Tecnam P2010 TDI?",
+    "learning_objective": "AFM Sección 2 - Velocidades Máximas con Flaps Extendidos (Vfe)",
+    "stem": "¿Cuáles son las velocidades máximas de operación con flaps extendidos (Vfe) para Flap TO y Flap LAND en la Tecnam P2010 TDI estándar?",
     "options": [
-      { "id": "A", "text": "Flaps T/O (15°): 106 KIAS; Flaps LAND (40°): 96 KIAS", "is_correct": true },
-      { "id": "B", "text": "Flaps T/O (15°): 115 KIAS; Flaps LAND (40°): 85 KIAS", "is_correct": false },
-      { "id": "C", "text": "Flaps T/O (15°): 100 KIAS; Flaps LAND (40°): 90 KIAS", "is_correct": false },
-      { "id": "D", "text": "Flaps T/O (15°): 90 KIAS; Flaps LAND (40°): 75 KIAS", "is_correct": false }
+      { "id": "A", "text": "Flap TO: 100 KIAS (101 KCAS); Flap LAND: 90 KIAS (92 KCAS)", "is_correct": true },
+      { "id": "B", "text": "Flap TO: 110 KIAS; Flap LAND: 85 KIAS", "is_correct": false },
+      { "id": "C", "text": "Flap TO: 106 KIAS; Flap LAND: 96 KIAS", "is_correct": false },
+      { "id": "D", "text": "Flap TO: 95 KIAS; Flap LAND: 80 KIAS", "is_correct": false }
     ],
     "explanation": {
-      "text": "En la Tecnam P2010 TDI, la velocidad máxima con flaps en posición de despegue (Flaps T/O 15°) es de 106 KIAS, mientras que la velocidad máxima con flaps en configuración de aterrizaje (Flaps LAND 40°) es de 96 KIAS.",
+      "text": "Según la Tabla 2-1 del AFM (Página 2-4), las limitaciones de flaps son: Vfe para Flap TO = 100 KIAS (101 KCAS) y Vfe para Flap LAND = 90 KIAS (92 KCAS). En aeronaves con modificación MOD2010/207 los valores son 102/92 KIAS y con MOD2010/269 son 104/93 KIAS.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 2: Limitations - Airspeed Limitations"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 2: Limitations - Table 2-1: Speeds Limitations (Page 2-4)"
       ]
     },
     "metadata": {
@@ -44,18 +44,18 @@
   {
     "id": "P2010-LIM-003",
     "subject_id": "p2010_limitations",
-    "learning_objective": "AFM Sección 2 - Velocidad de Maniobra (Va)",
-    "stem": "¿Cuál es la Velocidad de Maniobra de Diseño (Va) de la Tecnam P2010 TDI a Peso Máximo al Despegue (MTOW 1160 kg)?",
+    "learning_objective": "AFM Sección 2 - Velocidad de Maniobra de Diseño (Va / Vo)",
+    "stem": "¿Cuál es la Velocidad de Maniobra de Diseño (Va) y de Maniobra Operativa (Vo) en la Tecnam P2010 TDI estándar?",
     "options": [
-      { "id": "A", "text": "120 KIAS", "is_correct": true },
+      { "id": "A", "text": "119 KIAS (119 KCAS)", "is_correct": true },
       { "id": "B", "text": "105 KIAS", "is_correct": false },
-      { "id": "C", "text": "135 KIAS", "is_correct": false },
+      { "id": "C", "text": "130 KIAS", "is_correct": false },
       { "id": "D", "text": "95 KIAS", "is_correct": false }
     ],
     "explanation": {
-      "text": "La velocidad de maniobra (Va) a MTOW (1160 kg) es de 120 KIAS. Por encima de esta velocidad, las deflexiones completas o bruscas de los mandos de vuelo pueden inducir cargas estructurales superiores a los límites certificados.",
+      "text": "La Tabla 2-1 del AFM certifica la velocidad Va (Design Manoeuvring Speed) y Vo (Operating Manoeuvring Speed) en 119 KIAS (119 KCAS). Por encima de esta velocidad no deben realizarse deflexiones completas ni bruscas de los mandos de vuelo.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 2: Limitations - Airspeed Limitations"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 2: Limitations - Table 2-1 (Page 2-4)"
       ]
     },
     "metadata": {
@@ -68,15 +68,15 @@
     "learning_objective": "AFM Sección 2 - Velocidad Máxima de Crucero Estructural (Vno)",
     "stem": "En la Tecnam P2010 TDI, la Velocidad Máxima de Crucero Estructural (Vno), que marca el inicio del arco amarillo en el anemómetro, es de:",
     "options": [
-      { "id": "A", "text": "130 KIAS", "is_correct": true },
+      { "id": "A", "text": "130 KIAS (130 KCAS)", "is_correct": true },
       { "id": "B", "text": "145 KIAS", "is_correct": false },
       { "id": "C", "text": "120 KIAS", "is_correct": false },
       { "id": "D", "text": "155 KIAS", "is_correct": false }
     ],
     "explanation": {
-      "text": "La Vno (Maximum Structural Cruising Speed) es de 130 KIAS. Esta velocidad no debe excederse excepto en aire en calma y con precaución (rango de precaución / arco amarillo entre 130 y 166 KIAS).",
+      "text": "La Vno (Maximum Structural Cruising Speed) es de 130 KIAS (130 KCAS). El rango comprendido entre 130 KIAS y 163 KIAS constituye el arco amarillo de precaución, donde solo se debe volar en aire en calma.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 2: Limitations - Airspeed Indicator Markings"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 2: Limitations - Table 2-1 (Page 2-4) & Table 2-4 (Page 2-7)"
       ]
     },
     "metadata": {
@@ -86,8 +86,8 @@
   {
     "id": "P2010-LIM-005",
     "subject_id": "p2010_limitations",
-    "learning_objective": "AFM Sección 2 - Limitaciones de Peso (MTOW / MZFW / MLW)",
-    "stem": "¿Cuál es el Peso Máximo de Despegue (MTOW) y el Peso Máximo de Aterrizaje (MLW) certificado para la Tecnam P2010 TDI?",
+    "learning_objective": "AFM Sección 2 - Pesos Máximos Certificados (MTOW / MLW)",
+    "stem": "¿Cuál es el Peso Máximo al Despegue (MTOW) y el Peso Máximo al Aterrizaje (MLW) en la configuración básica estándar de la Tecnam P2010 TDI?",
     "options": [
       { "id": "A", "text": "MTOW: 1160 kg (2557 lb); MLW: 1160 kg (2557 lb)", "is_correct": true },
       { "id": "B", "text": "MTOW: 1200 kg; MLW: 1100 kg", "is_correct": false },
@@ -95,9 +95,9 @@
       { "id": "D", "text": "MTOW: 1100 kg; MLW: 1100 kg", "is_correct": false }
     ],
     "explanation": {
-      "text": "La Tecnam P2010 TDI tiene un Peso Máximo al Despegue (MTOW) de 1160 kg (2557 lb) y un Peso Máximo al Aterrizaje (MLW) idéntico de 1160 kg (2557 lb), lo que permite aterrizar inmediatamente tras el despegue sin restricciones estructurales por sobrepeso.",
+      "text": "De acuerdo con el AFM (Párrafo 6.1, Página 1-7 y Sección 2), el MTOW estándar es de 1160 kg (2557 lb) y el MLW es de 1160 kg (2557 lb). Con MOD2010/207 el MTOW/MLW es 1200 kg (2645 lb) y con MOD2010/269 es 1220 kg (2690 lb).",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 2: Limitations - Weights and Loading"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 1 (Page 1-7) & Section 2: Limitations (Page 2-15)"
       ]
     },
     "metadata": {
@@ -107,18 +107,18 @@
   {
     "id": "P2010-LIM-006",
     "subject_id": "p2010_limitations",
-    "learning_objective": "AFM Sección 2 - Factores de Carga Límite (G-limits)",
-    "stem": "¿Cuáles son los factores de carga límite (Load Factor Limits) certificados para la Tecnam P2010 TDI en configuración limpia (Flaps UP)?",
+    "learning_objective": "AFM Sección 2 - Factores de Carga Límite (G-Limits)",
+    "stem": "¿Cuáles son los factores de carga límite de vuelo (Flight Load Factors) en la Tecnam P2010 TDI con flaps arriba (Flaps UP) y flaps abajo (Flaps DOWN)?",
     "options": [
-      { "id": "A", "text": "+3.8 g y -1.52 g", "is_correct": true },
-      { "id": "B", "text": "+4.4 g y -2.0 g", "is_correct": false },
-      { "id": "C", "text": "+3.5 g y -1.0 g", "is_correct": false },
-      { "id": "D", "text": "+2.5 g y -1.0 g", "is_correct": false }
+      { "id": "A", "text": "Flaps UP: +3.8 g y -1.52 g; Flaps DOWN: +2.0 g y 0.0 g", "is_correct": true },
+      { "id": "B", "text": "Flaps UP: +4.4 g y -2.0 g; Flaps DOWN: +2.5 g", "is_correct": false },
+      { "id": "C", "text": "Flaps UP: +3.5 g y -1.0 g; Flaps DOWN: +1.5 g", "is_correct": false },
+      { "id": "D", "text": "Flaps UP: +2.5 g y -1.0 g; Flaps DOWN: +1.0 g", "is_correct": false }
     ],
     "explanation": {
-      "text": "Como aeronave certificada en categoría Normal (CS-23 / FAR 23), los límites de factor de carga con Flaps UP son +3.8 g positivo y -1.52 g negativo. Con Flaps DOWN en cualquier posición, el límite positivo es +2.0 g y 0 g negativo.",
+      "text": "En Categoría Normal, los límites estructurales certificados son: con Flaps UP = +3.8 g positivo y -1.52 g negativo. Con Flaps DOWN en cualquier posición de extensión = +2.0 g positivo y 0.0 g negativo.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 2: Limitations - Flight Load Factors"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 2: Limitations - Paragraph 6: Flight Load Factor Limits (Page 2-17)"
       ]
     },
     "metadata": {
@@ -128,40 +128,39 @@
   {
     "id": "P2010-LIM-007",
     "subject_id": "p2010_limitations",
-    "learning_objective": "AFM Sección 2 - Límites de Motor Continental CD-170 (Potencia y RPM)",
-    "stem": "En el motor Continental CD-170 que equipa la Tecnam P2010 TDI, ¿cuál es la potencia máxima al despegue (Takeoff Power) y el límite de tiempo continuo asociado?",
+    "learning_objective": "AFM Sección 2 - Límites de Potencia y RPM del Motor CD-170",
+    "stem": "En el motor Continental TAE 125-02-125 (CD-170), ¿cuál es la potencia máxima de despegue y la potencia máxima continua certificada en el AFM?",
     "options": [
-      { "id": "A", "text": "170 HP (125 kW) a 2300 RPM de hélice, límite máximo de 5 minutos (100% Load)", "is_correct": true },
-      { "id": "B", "text": "180 HP a 2700 RPM sin límite de tiempo", "is_correct": false },
-      { "id": "C", "text": "155 HP a 2300 RPM, límite máximo de 10 minutos", "is_correct": false },
-      { "id": "D", "text": "170 HP a 2500 RPM de hélice continuo", "is_correct": false }
+      { "id": "A", "text": "Máxima de despegue: 125 kW / 168 hp (100%) a 2300 RPM (límite 5 min); Máxima continua: 114 kW / 153 hp (91%) a 2250 RPM", "is_correct": true },
+      { "id": "B", "text": "Máxima de despegue: 180 hp a 2700 RPM; Máxima continua: 160 hp a 2500 RPM", "is_correct": false },
+      { "id": "C", "text": "Máxima de despegue: 135 kW a 2500 RPM; Máxima continua: 125 kW a 2300 RPM", "is_correct": false },
+      { "id": "D", "text": "Máxima de despegue: 155 hp a 2200 RPM continuo", "is_correct": false }
     ],
     "explanation": {
-      "text": "El motor Continental CD-170 produce 170 HP (125 kW) a 2300 RPM en la hélice al 100% de carga (Load) con una limitación temporal de Takeoff Power de 5 minutos máximos. La potencia máxima continua (Max Continuous Power) es de 155 HP (114 kW) al 91% Load.",
+      "text": "El AFM Sección 2, Párrafo 3.3 (Página 2-9) establece textualmente: Max. take-off power (max. 5 min) = 125 kW / 168 hp (100%) @ 2300 rpm; Max. continuous power = 114 kW / 153 hp (91%) @ 2250 rpm.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 2: Limitations - Powerplant Limitations",
-        "Continental Aerospace Technologies CD-170 Engine Manual - Operating Limits"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 2: Limitations - Paragraph 3.3: Powerplant Limitations (Page 2-9)"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.4
     }
   },
   {
     "id": "P2010-LIM-008",
     "subject_id": "p2010_limitations",
-    "learning_objective": "AFM Sección 2 - Temperatura de Aceite de Motor (Oil Temp)",
-    "stem": "En la Tecnam P2010 TDI, ¿cuál es el rango operativo normal (arco verde) y la temperatura máxima permisible de aceite de motor (Oil Temp)?",
+    "learning_objective": "AFM Sección 2 - Límites de Temperatura de Aceite de Motor (Oil Temp)",
+    "stem": "En la Tecnam P2010 TDI, ¿cuáles son los límites mínimo y máximo de temperatura de aceite de motor (Oil Temp)?",
     "options": [
-      { "id": "A", "text": "Rango normal: 50°C a 135°C; Temperatura máxima: 140°C", "is_correct": true },
-      { "id": "B", "text": "Rango normal: 70°C a 110°C; Temperatura máxima: 120°C", "is_correct": false },
-      { "id": "C", "text": "Rango normal: 40°C a 100°C; Temperatura máxima: 115°C", "is_correct": false },
-      { "id": "D", "text": "Rango normal: 60°C a 150°C; Temperatura máxima: 160°C", "is_correct": false }
+      { "id": "A", "text": "Mínima operativa: 50°C (122°F); Máxima permisible: 120°C (248°F)", "is_correct": true },
+      { "id": "B", "text": "Mínima operativa: 30°C; Máxima permisible: 140°C", "is_correct": false },
+      { "id": "C", "text": "Mínima operativa: 60°C; Máxima permisible: 105°C", "is_correct": false },
+      { "id": "D", "text": "Mínima operativa: 40°C; Máxima permisible: 135°C", "is_correct": false }
     ],
     "explanation": {
-      "text": "En el motor diésel Continental CD-170, la temperatura mínima de aceite para el arranque es -30°C, la temperatura mínima para el despegue es 50°C, el rango operativo normal es de 50°C a 135°C y la temperatura máxima absoluta de aceite es de 140°C.",
+      "text": "De acuerdo con el Párrafo 3.3 (Página 2-10), la temperatura de funcionamiento de aceite tiene como límite mínimo 50°C (122°F) y límite máximo 120°C (248°F).",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 2: Limitations - Engine Instrument Markings"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 2: Limitations - Oil Temperature (Page 2-10)"
       ]
     },
     "metadata": {
@@ -171,18 +170,18 @@
   {
     "id": "P2010-LIM-009",
     "subject_id": "p2010_limitations",
-    "learning_objective": "AFM Sección 2 - Temperatura de Refrigerante (Coolant Temp)",
-    "stem": "¿Cuál es la temperatura máxima de refrigerante de motor (Coolant Temperature) autorizada en la Tecnam P2010 TDI?",
+    "learning_objective": "AFM Sección 2 - Límites de Temperatura de Refrigerante de Motor (Coolant Temp)",
+    "stem": "¿Cuáles son los límites mínimo y máximo de temperatura del refrigerante líquido del motor (Coolant Temperature) en la Tecnam P2010 TDI?",
     "options": [
-      { "id": "A", "text": "105°C", "is_correct": true },
-      { "id": "B", "text": "120°C", "is_correct": false },
-      { "id": "C", "text": "95°C", "is_correct": false },
-      { "id": "D", "text": "135°C", "is_correct": false }
+      { "id": "A", "text": "Mínima operativa: 60°C (140°F); Máxima permisible: 105°C (221°F)", "is_correct": true },
+      { "id": "B", "text": "Mínima operativa: 40°C; Máxima permisible: 120°C", "is_correct": false },
+      { "id": "C", "text": "Mínima operativa: 50°C; Máxima permisible: 95°C", "is_correct": false },
+      { "id": "D", "text": "Mínima operativa: 70°C; Máxima permisible: 115°C", "is_correct": false }
     ],
     "explanation": {
-      "text": "La temperatura de refrigerante de motor (Coolant Temp) tiene un límite máximo absoluto de 105°C (línea roja). El rango operativo normal en el EIS del Garmin G1000 NXi es de 60°C a 100°C.",
+      "text": "El refrigerante del motor (Coolant) debe encontrarse entre un mínimo de 60°C (140°F) y un máximo absoluto de 105°C (221°F) según la Sección 2 (Página 2-10).",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 2: Limitations - Engine Instrument Markings"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 2: Limitations - Coolant Temperature (Page 2-10)"
       ]
     },
     "metadata": {
@@ -192,22 +191,22 @@
   {
     "id": "P2010-LIM-010",
     "subject_id": "p2010_limitations",
-    "learning_objective": "AFM Sección 2 - Presión de Aceite de Motor (Oil Pressure)",
-    "stem": "Durante la operación continua del motor Continental CD-170 en vuelo, ¿cuál es el rango normal de presión de aceite (Oil Pressure)?",
+    "learning_objective": "AFM Sección 2 - Límites de Presión de Aceite de Motor (Oil Pressure)",
+    "stem": "En el motor Continental CD-170, ¿cuáles son los límites mínimo, normal y máximo de presión de aceite según el AFM?",
     "options": [
-      { "id": "A", "text": "2.3 bar a 6.0 bar (33 a 87 PSI)", "is_correct": true },
-      { "id": "B", "text": "1.0 bar a 3.5 bar (15 a 50 PSI)", "is_correct": false },
-      { "id": "C", "text": "4.5 bar a 8.0 bar (65 a 115 PSI)", "is_correct": false },
-      { "id": "D", "text": "0.8 bar a 2.0 bar (12 a 29 PSI)", "is_correct": false }
+      { "id": "A", "text": "Mínimo: 1.0 bar; Presión normal de operación: 2.3 a 6.0 bar; Máximo: 6.5 bar", "is_correct": true },
+      { "id": "B", "text": "Mínimo: 0.5 bar; Presión normal: 1.5 a 4.0 bar; Máximo: 5.0 bar", "is_correct": false },
+      { "id": "C", "text": "Mínimo: 2.0 bar; Presión normal: 3.5 a 7.0 bar; Máximo: 8.5 bar", "is_correct": false },
+      { "id": "D", "text": "Mínimo: 1.5 bar; Presión normal: 2.0 a 5.0 bar; Máximo: 6.0 bar", "is_correct": false }
     ],
     "explanation": {
-      "text": "El rango operativo normal de presión de aceite del CD-170 es de 2.3 a 6.0 bar (33 a 87 PSI). La presión mínima en ralentí es 1.0 bar (14.5 PSI) y la presión máxima permitida en arranque en frío es 6.5 bar (94 PSI).",
+      "text": "El AFM Sección 2 (Página 2-9) especifica: Oil pressure normal operating pressure = 2.3 - 6.0 bar; min. 1.0 bar; max. 6.5 bar.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 2: Limitations - Powerplant Instrument Markings"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 2: Limitations - Oil Pressure (Page 2-9)"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.4
     }
   },
   {
@@ -216,36 +215,36 @@
     "learning_objective": "AFM Sección 2 - Capacidad y Límites de Combustible",
     "stem": "¿Cuál es la capacidad total y la capacidad utilizable de combustible en la Tecnam P2010 TDI?",
     "options": [
-      { "id": "A", "text": "Capacidad total: 240 litros (63.4 US gal); Capacidad utilizable: 231 litros (61.0 US gal)", "is_correct": true },
+      { "id": "A", "text": "Capacidad total: 240 litros (63.4 USG); Capacidad utilizable: 231 litros (61.0 USG)", "is_correct": true },
       { "id": "B", "text": "Capacidad total: 200 litros; Capacidad utilizable: 190 litros", "is_correct": false },
       { "id": "C", "text": "Capacidad total: 260 litros; Capacidad utilizable: 255 litros", "is_correct": false },
       { "id": "D", "text": "Capacidad total: 210 litros; Capacidad utilizable: 205 litros", "is_correct": false }
     ],
     "explanation": {
-      "text": "La Tecnam P2010 TDI dispone de dos tanques alares de 120 litros cada uno (240 litros totales / 63.4 US gal), de los cuales 231 litros en total (115.5 litros por tanque / 61.0 US gal) son utilizables en todas las actitudes de vuelo.",
+      "text": "Dispone de dos depósitos integrales en las alas de 120 L cada uno (240 L totales / 63.4 USG), siendo el combustible utilizable de 231 L totales (115.5 L por tanque / 61.0 USG), con 9 L de combustible no utilizable.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 2: Limitations - Fuel Limitations"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 2: Limitations - Fuel & Section 7 (Page 7-21)"
       ]
     },
     "metadata": {
-      "difficulty": 0.4
+      "difficulty": 0.3
     }
   },
   {
     "id": "P2010-LIM-012",
     "subject_id": "p2010_limitations",
-    "learning_objective": "AFM Sección 2 - Combustibles Aprobados y Desbalance",
-    "stem": "¿Cuáles son los tipos de combustible aprobados y el desbalance máximo de combustible entre tanques en la Tecnam P2010 TDI?",
+    "learning_objective": "AFM Sección 2 - Combustibles Aprobados y Temperatura de Combustible",
+    "stem": "¿Cuáles son los tipos de combustible aprobados y la temperatura máxima de combustible en el tanque en la Tecnam P2010 TDI?",
     "options": [
-      { "id": "A", "text": "Combustibles: JET A-1, JET A, Diesel Automoción (EN 590); Desbalance máximo: 30 litros (7.9 US gal)", "is_correct": true },
-      { "id": "B", "text": "Combustibles: Solo AVGAS 100LL; Desbalance máximo: 15 litros", "is_correct": false },
-      { "id": "C", "text": "Combustibles: JET A-1 y MOGAS 98; Desbalance máximo: 50 litros", "is_correct": false },
-      { "id": "D", "text": "Combustibles: Solo JET A-1; Desbalance máximo: 10 litros", "is_correct": false }
+      { "id": "A", "text": "JET A-1 (ASTM D 1655) y Diesel (EN 590); Temperatura máxima de combustible en tanque: +75°C (167°F)", "is_correct": true },
+      { "id": "B", "text": "Solo AVGAS 100LL; Temperatura máxima: +50°C", "is_correct": false },
+      { "id": "C", "text": "JET A-1 y MOGAS 95; Temperatura máxima: +60°C", "is_correct": false },
+      { "id": "D", "text": "Solo Diésel de automoción; Temperatura máxima: +90°C", "is_correct": false }
     ],
     "explanation": {
-      "text": "El motor CD-170 está certificado para operar con combustibles de aviación basados en queroseno (Jet A-1, Jet A según ASTM D1655) y diésel de automoción estándar (EN 590). El desbalance máximo de combustible permitido entre el tanque izquierdo y derecho es de 30 litros (7.9 US gal).",
+      "text": "Los combustibles aprobados son JET A-1 y Diésel EN 590. La temperatura máxima de combustible en los depósitos es de +75°C (167°F). Con JET A-1 la temperatura mínima de arranque es -25°C y de apertura de gases (opening-up) es -30°C. Con Diésel el despegue no está permitido por debajo de -5°C en el tanque.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 2: Limitations - Fuel Limitations"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 2: Limitations - Fuel Temperature (Page 2-10)"
       ]
     },
     "metadata": {
@@ -255,60 +254,60 @@
   {
     "id": "P2010-LIM-013",
     "subject_id": "p2010_limitations",
-    "learning_objective": "AFM Sección 2 - Techo de Servicio y Altitud Operativa",
-    "stem": "¿Cuál es la altitud operativa máxima certificada (Maximum Operating Altitude) de la Tecnam P2010 TDI?",
+    "learning_objective": "AFM Sección 2 - Marcación del Anemómetro (Arco Blanco y Verde)",
+    "stem": "En el anemómetro de la Tecnam P2010 TDI estándar, ¿cuáles son los rangos de velocidad del Arco Blanco y del Arco Verde?",
     "options": [
-      { "id": "A", "text": "18.000 ft (5.486 m)", "is_correct": true },
-      { "id": "B", "text": "14.000 ft (4.267 m)", "is_correct": false },
-      { "id": "C", "text": "12.500 ft (3.810 m)", "is_correct": false },
-      { "id": "D", "text": "25.000 ft (7.620 m)", "is_correct": false }
+      { "id": "A", "text": "Arco Blanco (Flap Operating Range): 48 a 90 KIAS; Arco Verde (Normal Operating Range): 61 a 130 KIAS", "is_correct": true },
+      { "id": "B", "text": "Arco Blanco: 40 a 85 KIAS; Arco Verde: 55 a 125 KIAS", "is_correct": false },
+      { "id": "C", "text": "Arco Blanco: 52 a 96 KIAS; Arco Verde: 66 a 135 KIAS", "is_correct": false },
+      { "id": "D", "text": "Arco Blanco: 45 a 100 KIAS; Arco Verde: 60 a 140 KIAS", "is_correct": false }
     ],
     "explanation": {
-      "text": "La altitud operativa máxima de la Tecnam P2010 TDI está limitada a 18.000 ft (5.486 m). Para operaciones por encima de 10.000 ft se deben cumplir los requisitos operacionales de suministro suplementario de oxígeno.",
+      "text": "Según la Tabla 2-4 (Airspeed Indicator Markings, Página 2-7): Arco blanco (Vso a Vfe Land) = 48-90 KIAS; Arco verde (Vs1 a Vno) = 61-130 KIAS; Arco amarillo = 130-163 KIAS; Línea roja (Vne) = 163 KIAS.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 2: Limitations - Altitude Limitations"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 2: Limitations - Table 2-4 (Page 2-7)"
       ]
     },
     "metadata": {
-      "difficulty": 0.3
+      "difficulty": 0.4
     }
   },
   {
     "id": "P2010-LIM-014",
     "subject_id": "p2010_limitations",
     "learning_objective": "AFM Sección 2 - Componente Demostrado de Viento Cruzado",
-    "stem": "¿Cuál es la componente máxima demostrada de viento cruzado (Maximum Demonstrated Crosswind) en despegue y aterrizaje para la Tecnam P2010 TDI?",
+    "stem": "¿Cuál es la componente máxima demostrada de viento cruzado (Maximum Demonstrated Crosswind) para despegue y aterrizaje en la Tecnam P2010 TDI?",
     "options": [
-      { "id": "A", "text": "15 nudos", "is_correct": true },
-      { "id": "B", "text": "20 nudos", "is_correct": false },
-      { "id": "C", "text": "12 nudos", "is_correct": false },
-      { "id": "D", "text": "25 nudos", "is_correct": false }
+      { "id": "A", "text": "15 nudos (28 km/h)", "is_correct": true },
+      { "id": "B", "text": "20 nudos (37 km/h)", "is_correct": false },
+      { "id": "C", "text": "12 nudos (22 km/h)", "is_correct": false },
+      { "id": "D", "text": "25 nudos (46 km/h)", "is_correct": false }
     ],
     "explanation": {
-      "text": "La componente máxima demostrada de viento cruzado para despegue y aterrizaje en la Tecnam P2010 TDI es de 15 nudos (28 km/h).",
+      "text": "La componente máxima de viento cruzado demostrada en certificación para despegue y aterrizaje es de 15 nudos (28 km/h).",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 2: Limitations - Crosswind"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 2: Limitations - Crosswind / Section 4 & 5"
       ]
     },
     "metadata": {
-      "difficulty": 0.3
+      "difficulty": 0.2
     }
   },
   {
     "id": "P2010-LIM-015",
     "subject_id": "p2010_limitations",
-    "learning_objective": "AFM Sección 2 - Tipos de Operación y Vuelo en Hielo",
-    "stem": "De acuerdo con el AFM, ¿qué tipos de operación están autorizados y cuál es la limitación referente a engelamiento conocido (Known Icing Conditions)?",
+    "learning_objective": "AFM Sección 2 - Tipos de Operación Autorizados y Engelamiento",
+    "stem": "De acuerdo con el AFM, ¿qué tipos de operación están aprobados y cuál es la limitación referente a engelamiento conocido (Flight into Known Icing)?",
     "options": [
-      { "id": "A", "text": "Autorizado: VFR Día/Noche e IFR Día/Noche; Prohibido: Vuelo en condiciones de engelamiento conocido (Flight into Known Icing - FIKI)", "is_correct": true },
-      { "id": "B", "text": "Autorizado: Solo VFR Día; Prohibido: IFR y vuelo nocturno", "is_correct": false },
-      { "id": "C", "text": "Autorizado: VFR, IFR y Vuelo en Engelamiento Ligero (Light Icing)", "is_correct": false },
-      { "id": "D", "text": "Autorizado: Solo VFR Día y VFR Noche; Prohibido: IFR", "is_correct": false }
+      { "id": "A", "text": "Aprobado: VFR Día/Noche e IFR Día/Noche; Prohibido: Vuelo en condiciones de engelamiento conocido o pronosticado (Known Icing)", "is_correct": true },
+      { "id": "B", "text": "Aprobado: Solo VFR Día; Prohibido: IFR y vuelo nocturno", "is_correct": false },
+      { "id": "C", "text": "Aprobado: VFR, IFR y Vuelo en Engelamiento Ligero", "is_correct": false },
+      { "id": "D", "text": "Aprobado: Solo VFR Día y Noche; Prohibido: IFR", "is_correct": false }
     ],
     "explanation": {
-      "text": "La Tecnam P2010 TDI equipada con Garmin G1000 NXi está certificada para vuelos VFR Día/Noche e IFR Día/Noche. Está terminantemente PROHIBIDO el vuelo en condiciones de engelamiento conocido o pronosticado (Known Icing Conditions), debiendo abandonarse la zona de inmediato en caso de encuentro inadvertido.",
+      "text": "La Tecnam P2010 TDI está aprobada para VFR Día/Noche e IFR Día/Noche en espacio aéreo no engelante. El vuelo en condiciones de hielo conocidas o pronosticadas está terminantemente prohibido.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 2: Limitations - Kinds of Operation"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 2: Limitations - Kinds of Operation (Page 2-18)"
       ]
     },
     "metadata": {

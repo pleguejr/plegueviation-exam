@@ -11,10 +11,9 @@
       { "id": "D", "text": "Motor turbohélice con turbina libre y reductora planetaria", "is_correct": false }
     ],
     "explanation": {
-      "text": "El Continental CD-170 es un motor aeronáutico turbo diésel de última generación de 4 cilindros en línea, ciclo diésel de 4 tiempos con refrigeración líquida integral (refrigerante y aceite), inyección directa por raíl común (Common Rail) a más de 1600 bar, turbocompresor con intercooler y control digital FADEC redundante.",
+      "text": "El Continental CD-170 (TAE 125-02-125) es un motor aeronáutico turbo diésel de 4 cilindros en línea, 4 tiempos con refrigeración líquida integral, inyección directa Common Rail a alta presión, turbocompresor con intercooler y control FADEC redundante.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 7: Description of the Airplane and its Systems - Powerplant",
-        "Continental Aerospace Technologies CD-170 Description"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 7: Description of the Airplane and its Systems - Powerplant (Page 7-18)"
       ]
     },
     "metadata": {
@@ -35,7 +34,7 @@
     "explanation": {
       "text": "La Tecnam P2010 TDI dispone de control monopalanca (Single Lever Control). No existen mandos de mezcla ni de hélice en cabina. El piloto selecciona el porcentaje de carga (Load %) y el FADEC calcula y ajusta simultáneamente el caudal de combustible, presión de admisión y paso de hélice constante.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 7: Description of the Airplane and its Systems - Engine Controls"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 7: Description of the Airplane and its Systems - Engine Controls"
       ]
     },
     "metadata": {
@@ -54,9 +53,9 @@
       { "id": "D", "text": "Es una caja de cambios de 3 velocidades conmutable en vuelo", "is_correct": false }
     ],
     "explanation": {
-      "text": "El cigüeñal del motor diésel gira hasta ~3900 RPM y la reductora baja las RPM a 2300 en la hélice. La caja reductora incorpora embrague torsional y tiene su propio aceite de engranajes con indicador de temperatura y nivel independiente del aceite de motor.",
+      "text": "El cigüeñal del motor diésel gira hasta ~3900 RPM y la reductora baja las RPM a 2300 en la hélice. La caja reductora incorpora embrague torsional y tiene su propio aceite de engranajes (Centurion Gearbox Oil N1) independiente del aceite de motor.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 7: Description of the Airplane and its Systems - Gearbox and Propeller"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 7: Description of the Airplane and its Systems - Gearbox"
       ]
     },
     "metadata": {
@@ -75,9 +74,9 @@
       { "id": "D", "text": "Se inyecta directamente en el escape para quemar los residuos", "is_correct": false }
     ],
     "explanation": {
-      "text": "La bomba de alta presión de inyección continua bombea un caudal superior al necesario. El combustible sobrante, tras absorber calor en el motor, retorna al tanque de combustible seleccionado, elevando la temperatura del Jet A-1 en las alas y previniendo la congelación o cristalización de parafinas en altitud.",
+      "text": "La bomba de alta presión bombea más combustible del requerido por los inyectores. El exceso de combustible precalentado en el bloque motor retorna al tanque de combustible seleccionado, manteniendo el Jet A-1/diésel templado y previniendo la formación de parafina a bajas temperaturas.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 7: Description of the Airplane and its Systems - Fuel System"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 7: Description of the Airplane and its Systems - Fuel System (Page 7-21)"
       ]
     },
     "metadata": {
@@ -96,9 +95,9 @@
       { "id": "D", "text": "Sistema de 24 VDC sin alternador, operado exclusivamente por paneles solares alares", "is_correct": false }
     ],
     "explanation": {
-      "text": "La Tecnam P2010 TDI opera con una red de 28 Voltios DC alimentada por un alternador principal de 70 Amperios, una batería principal de plomo-ácido de 24V (13.6 Ah) y una batería auxiliar de respaldo exclusiva para salvaguardar la alimentación de la ECU del FADEC.",
+      "text": "La Tecnam P2010 TDI opera con una red de 28 Voltios DC alimentada por un alternador principal de 70 Amperios, una batería principal de 24V (13.6 Ah) y una batería auxiliar de respaldo exclusiva para salvaguardar la alimentación de la ECU del FADEC (Emergency Battery).",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 7: Description of the Airplane and its Systems - Electrical System"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 7: Description of the Airplane and its Systems - Electrical System (Page 7-24)"
       ]
     },
     "metadata": {
@@ -117,10 +116,9 @@
       { "id": "D", "text": "GMA 1360 (Audio Panel)", "is_correct": false }
     ],
     "explanation": {
-      "text": "La unidad GEA 71B de Garmin es la interfaz central que recibe las señales analógicas y digitales de presión, temperatura, RPM, flujo de combustible y FADEC del motor CD-170 y las envía vía bus de datos digital para su visualización gráfica en el EIS (Engine Indication System) del MFD.",
+      "text": "La unidad GEA 71B de Garmin es la interfaz central que recibe las señales de sensores de motor, presiones, temperaturas y FADEC del CD-170 para su presentación en la franja del EIS del MFD.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 7: Description of the Airplane and its Systems - Avionics Garmin G1000 NXi",
-        "Garmin G1000 NXi Line Maintenance Manual"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 7: Description of the Airplane and its Systems - Avionics Garmin G1000 NXi"
       ]
     },
     "metadata": {
@@ -139,9 +137,9 @@
       { "id": "D", "text": "Caudal de inyección y presión de sobrealimentación", "is_correct": false }
     ],
     "explanation": {
-      "text": "El GDC 72 procesa las presiones pitot, estática y temperatura exterior para computar velocidad anemométrica (IAS/TAS), altitud, régimen de ascenso/descenso (VSI) y número Mach.",
+      "text": "El GDC 72 procesa presiones de aire (pitot y estática) y temperatura exterior para suministrar al PFD la velocidad indicada, velocidad verdadera, altitud barométrica y régimen de ascenso.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 7: Avionics Suite G1000 NXi"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 7: Avionics Suite G1000 NXi"
       ]
     },
     "metadata": {
@@ -160,9 +158,9 @@
       { "id": "D", "text": "Estructura 100% remachada en titanio", "is_correct": false }
     ],
     "explanation": {
-      "text": "El diseño de la Tecnam P2010 combina una cabina de seguridad en fibra de carbono (composite) para máxima ligereza, aerodinámica y protección a impactos, unida a alas y planos de cola de aleación de aluminio para facilidad de mantenimiento y durabilidad.",
+      "text": "El diseño de la Tecnam P2010 combina una cabina de seguridad en fibra de carbono (composite) para máxima ligereza y protección a impactos, unida a alas y planos de cola de aleación de aluminio para facilidad de mantenimiento.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 7: Description of the Airplane and its Systems - Airframe"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 7: Description of the Airplane and its Systems - Airframe"
       ]
     },
     "metadata": {
@@ -181,9 +179,9 @@
       { "id": "D", "text": "Tren fijo con amortiguadores de resorte helicoidal en las tres ruedas sin freno diferencial", "is_correct": false }
     ],
     "explanation": {
-      "text": "La Tecnam P2010 monta un tren de aterrizaje triciclo fijo robusto. La rueda de morro orientable (+/- 20° con timón y hasta 52° con frenado diferencial) cuenta con amortiguador óleo-neumático, mientras que el tren principal está formado por ballestas de acero con frenos de disco hidráulicos diferenciales en los pedales.",
+      "text": "La Tecnam P2010 monta un tren triciclo fijo. La rueda de morro cuenta con amortiguador óleo-neumático y orientación por pedales (+/- 20° y hasta 52° con frenos diferenciales), mientras que el tren principal son ballestas de acero elástico con frenos de disco hidráulicos independientes.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 7: Description of the Airplane and its Systems - Landing Gear"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 7: Description of the Airplane and its Systems - Landing Gear"
       ]
     },
     "metadata": {
@@ -202,9 +200,9 @@
       { "id": "D", "text": "La aeronave no dispone de compensador de profundidad", "is_correct": false }
     ],
     "explanation": {
-      "text": "El compensador longitudinal de la Tecnam P2010 cuenta con accionamiento dual: control manual mediante rueda graduada en la consola central y control eléctrico mediante interruptores basculantes tipo 'Coolie Hat' en los cuernos/mandos de piloto y copiloto.",
+      "text": "El compensador longitudinal de la Tecnam P2010 cuenta con accionamiento dual: control manual mediante rueda graduada en la consola central y control eléctrico mediante pulsadores tipo coolie hat en las palancas de mando.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 7: Description of the Airplane and its Systems - Flight Controls"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 7: Description of the Airplane and its Systems - Flight Controls"
       ]
     },
     "metadata": {
@@ -217,15 +215,15 @@
     "learning_objective": "AFM Sección 7 - Hélice MT-Propeller de Paso Variable",
     "stem": "¿Qué modelo y características tiene la hélice montada en la Tecnam P2010 TDI con motor Continental CD-170?",
     "options": [
-      { "id": "A", "text": "Hélice tripala MT-Propeller (MTV-6-A/190-69) de paso variable y velocidad constante con palas de madera compuesta y borde de ataque de acero inoxidable, gobernada electrohidráulicamente por el FADEC", "is_correct": true },
+      { "id": "A", "text": "Hélice tripala MT-Propeller (MTV-6-R/190-69) de paso variable y velocidad constante con palas de madera compuesta laminada y borde de ataque de acero inoxidable, gobernada electrohidráulicamente por el FADEC", "is_correct": true },
       { "id": "B", "text": "Hélice bipala de paso fijo de aluminio monobloque", "is_correct": false },
       { "id": "C", "text": "Hélice de cuatro palas con reversa de empuje para frenado en pista", "is_correct": false },
       { "id": "D", "text": "Hélice tripala de paso ajustable únicamente en tierra con el motor parado", "is_correct": false }
     ],
     "explanation": {
-      "text": "La Tecnam P2010 TDI equipa una hélice tripala MT-Propeller de velocidad constante con palas construidas en núcleo de madera de alta densidad laminada y recubrimiento epoxi reforzado con fibra de vidrio y protección metálica en el borde de ataque, gobernada automáticamente por la válvula electrohidráulica del FADEC.",
+      "text": "La Tecnam P2010 TDI equipa la hélice tripala MT-Propeller modelo MTV-6-R/190-69 de velocidad constante con palas construidas en madera laminada compuesta y protección metálica en el borde de ataque, gobernada automáticamente por la válvula electrohidráulica del FADEC.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 7: Description of the Airplane and its Systems - Propeller"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 1: General (Page 1-6) & Section 7: Description of Systems - Propeller"
       ]
     },
     "metadata": {
@@ -246,7 +244,7 @@
     "explanation": {
       "text": "El suplemento del Garmin GFC 700 para la Tecnam P2010 establece una altitud mínima de desacoplamiento de 200 ft AGL en aproximaciones de precisión (ILS) y 400 ft AGL en aproximaciones de no precisión o durante ascenso/crucero.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 9: Supplements - Garmin GFC 700 Autopilot Supplement"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 9: Supplements - Garmin GFC 700 Autopilot Supplement"
       ]
     },
     "metadata": {
@@ -265,9 +263,9 @@
       { "id": "D", "text": "Mediante resistencias eléctricas alimentadas directamente por el alternador", "is_correct": false }
     ],
     "explanation": {
-      "text": "Al ser un motor diésel con refrigeración líquida, la calefacción se obtiene mediante un intercambiador de calor que utiliza el líquido refrigerante caliente del motor. Esto elimina el riesgo clásico de intoxicación por monóxido de carbono (CO) asociado a las camisas de escape agrietadas de los motores de gasolina.",
+      "text": "Al ser un motor con refrigeración líquida, la calefacción se obtiene mediante un intercambiador de calor que utiliza el líquido refrigerante caliente del motor, eliminando el riesgo de monóxido de carbono (CO) de las camisas de escape agrietadas.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 7: Description of the Airplane and its Systems - Cabin Environmental Control"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 7: Description of the Airplane and its Systems - Cabin Environmental Control"
       ]
     },
     "metadata": {
@@ -288,7 +286,7 @@
     "explanation": {
       "text": "Toda la iluminación exterior e interior de la Tecnam P2010 TDI está basada en tecnología LED de estado sólido de alta fiabilidad y bajo consumo, reduciendo la carga del alternador de 28V.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 7: Description of the Airplane and its Systems - Lighting System"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 7: Description of the Airplane and its Systems - Lighting System"
       ]
     },
     "metadata": {
@@ -309,7 +307,7 @@
     "explanation": {
       "text": "La Tecnam P2010 cuenta con una puerta exterior de maletero en el lado izquierdo del fuselaje trasero con una capacidad máxima autorizada de carga de 40 kg (88 lb) convenientemente ubicada dentro de los límites del centro de gravedad.",
       "references": [
-        "Tecnam P2010 TDI AFM - Section 7: Description of the Airplane and its Systems - Baggage Compartment"
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 7: Description of the Airplane and its Systems - Baggage Compartment"
       ]
     },
     "metadata": {
