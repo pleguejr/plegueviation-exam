@@ -16045,6 +16045,201 @@
     "_subtopic": "limitaciones"
   },
   {
+    "id": "P2010-SPD-016",
+    "subject_id": "p2010_velocidades",
+    "learning_objective": "AFM Sección 5 - Velocidad de Pérdida en Viraje con Banqueo (Stall Speeds in Turns)",
+    "stem": "En la Tecnam P2010 TDI (MTOW 1160 kg, Flap 0°), ¿cómo varía la velocidad de pérdida indicada (Vs) al realizar un viraje coordinado a 60° de banqueo (factor de carga n = 2.0G)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumenta de 58 KIAS a aproximadamente 82 KIAS (factor √(2) ≈ 1.41)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Permanece constante en 58 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aumenta solo a 65 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se duplica a 116 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la tabla de pérdidas de la Sección 5 (Página 5-9) y la física del vuelo, la velocidad de pérdida aumenta con la raíz cuadrada del factor de carga (Vs_turn = Vs * √(n)). A 60° de viraje (n = 2G), la velocidad de pérdida en limpia pasa de 58 KIAS a 58 * 1.414 ≈ 82 KIAS.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 5: Performance - Stall Speeds (Page 5-9)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "P2010-SPD-017",
+    "subject_id": "p2010_velocidades",
+    "learning_objective": "AFM Sección 4 y 5 - Despegue de Campo Corto y Franqueamiento de Obstáculos (Short Field Takeoff)",
+    "stem": "En un despegue de campo corto (Short Field Takeoff) con Flap T/O para franquear un obstáculo de 50 pies (15 m), ¿cuál es la velocidad de subida sobre el obstáculo según el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "65 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "60 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "72 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "82 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En la Sección 4 y tablas de despegue de la Sección 5 (Takeoff Distance, Pág. 5-10 a 5-15), la velocidad requerida al cruzar el obstáculo de 50 ft en despegue de máxima performance con Flap T/O es de 65 KIAS.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 4 & Section 5: Performance - Takeoff Distance (Pages 5-10 to 5-15)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "P2010-SPD-018",
+    "subject_id": "p2010_velocidades",
+    "learning_objective": "AFM Sección 4 y 5 - Aterrizaje de Campo Corto (Short Field Landing)",
+    "stem": "En el procedimiento de aterrizaje de campo corto (Short Field Landing) con Flap LAND, ¿a qué velocidad indicada se debe cruzar el umbral a 50 pies según el AFM de la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "60 KIAS (aproximadamente 1.15 Vso)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "65 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "70 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "52 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las tablas de distancia de aterrizaje de la Sección 5 (Landing Distance, Pág. 5-20) certifican las distancias mínimas de toma cruzando el obstáculo de 50 ft a 60 KIAS con Flap LAND antes del toque suave y frenada máxima.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 5: Performance - Landing Distance Table (Page 5-20)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "P2010-SPD-019",
+    "subject_id": "p2010_velocidades",
+    "learning_objective": "AFM Sección 4 - Corrección de Velocidad de Aproximación por Viento Racheado",
+    "stem": "En aproximación final con viento turbulento y racheado (Gust Factor), ¿cuál es la técnica estándar de corrección de velocidad recomendada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Añadir a la Vref la mitad del incremento de racha (Gust Factor / 2), hasta un máximo de 10 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Volar exactamente a Vfe LAND en todo momento",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Añadir el 100% de la velocidad del viento a la Vref",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Reducir la velocidad 5 KIAS por debajo de Vref para tocar antes",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En operaciones con viento racheado o turbulento en final, se incrementa la Vref sumando la mitad del valor de la ráfaga (por ejemplo, con viento 12G20, la racha es de 8 kts, por lo que se añaden 4 KIAS a la Vref de 65 KIAS = 69 KIAS), con un límite usual de 10 KIAS para evitar flotamiento excesivo.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 4: Flight in Rough Air & Approach Operations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "P2010-SPD-020",
+    "subject_id": "p2010_velocidades",
+    "learning_objective": "AFM Sección 3 - Razón de Planeo (Glide Ratio)",
+    "stem": "A la mejor velocidad de planeo (84 KIAS, Flap 0°, hélice en molinete/parada), ¿cuál es el ratio de planeo (Glide Ratio) y la distancia horizontal aproximada por cada 1.000 pies de pérdida de altitud en la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ratio 1:12 (aproximadamente 2.0 Millas Náuticas por cada 1.000 ft de altitud)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Ratio 1:6 (1.0 NM por cada 1.000 ft)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Ratio 1:18 (3.0 NM por cada 1.000 ft)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Ratio 1:9 (1.5 NM por cada 1.000 ft)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con el AFM Sección 3 (Página 3-12), el ratio de planeo de la Tecnam P2010 TDI es de aproximadamente 1:12 a 84 KIAS. Esto equivale a 12.000 pies de avance horizontal por cada 1.000 pies de descenso, es decir, ~1.97 NM (~2 NM) por cada 1.000 ft AGL.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 3: Emergency Procedures - Forced Landing Glide Characteristics (Page 3-12)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "limitaciones"
+  },
+  {
     "id": "P2010-NORM-001",
     "subject_id": "p2010_normal",
     "learning_objective": "AFM Sección 4 - Procedimiento de Arranque de Motor (Glow Plugs)",
