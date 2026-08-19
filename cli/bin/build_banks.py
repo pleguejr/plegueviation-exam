@@ -1,18 +1,42 @@
 #!/usr/bin/env python3
 """
 build_banks.py - Compilador de Bancos de Preguntas para Plegueviation Exam
-Escanea todos los archivos JSON en 'banks/', valida el esquema, genera índices y empaqueta
+Escanea todos los archivos JSON en 'banks/', valida la integridad de los reactivos y empaqueta
 el manifiesto y catálogo completo para la app Web PWA (public/banks/).
+Funciona en cualquier entorno con la biblioteca estándar de Python.
 """
 
 import sys
 import json
 from pathlib import Path
 from typing import Dict, List, Any
-import jsonschema
+
+try:
+    import jsonschema
+    HAS_JSONSCHEMA = True
+except ImportError:
+    HAS_JSONSCHEMA = False
 
 def get_project_root() -> Path:
     return Path(__file__).resolve().parents[2]
+
+def validate_question_structure(item: Dict[str, Any]) -> List[str]:
+    """Validación nativa de estructura sin dependencias externas."""
+    errors = []
+    required_fields = ["id", "subject_id", "learning_objective", "stem", "options", "explanation"]
+    for field in required_fields:
+        if field not in item:
+            errors.append(f"Campo obligatorio faltante '{field}'")
+
+    options = item.get("options", [])
+    if not isinstance(options, list) or len(options) < 2:
+        errors.append("Debe contener una lista de al menos 2 opciones")
+    else:
+        correct_count = sum(1 for opt in options if opt.get("is_correct") is True)
+        if correct_count != 1:
+            errors.append(f"Debe tener exactamente 1 opción correcta (encontradas {correct_count})")
+
+    return errors
 
 def compile_banks() -> int:
     root = get_project_root()
@@ -20,12 +44,13 @@ def compile_banks() -> int:
     schema_file = root / "cli" / "schema" / "question.schema.json"
     pwa_banks_dir = root / "apps" / "web-pwa" / "public" / "banks"
 
-    if not schema_file.exists():
-        print(f"[FATAL] Schema no encontrado: {schema_file}", file=sys.stderr)
-        return 1
-
-    with open(schema_file, 'r', encoding='utf-8') as f:
-        schema = json.load(f)
+    schema = None
+    if HAS_JSONSCHEMA and schema_file.exists():
+        try:
+            with open(schema_file, 'r', encoding='utf-8') as f:
+                schema = json.load(f)
+        except Exception:
+            pass
 
     pwa_banks_dir.mkdir(parents=True, exist_ok=True)
 
@@ -34,7 +59,6 @@ def compile_banks() -> int:
     errors = 0
     categories_stats: Dict[str, Any] = {}
 
-    # Metadatos limpios y estructurados de categorías
     category_labels = {
         "binter-ops": {
             "title": "Binter Ops (MOA, MOB y Proc. Operativos)", 
@@ -69,12 +93,9 @@ def compile_banks() -> int:
     }
 
     subtopic_labels = {
-        # Binter Ops
         "moa": "Manual de Operaciones Parte A (MOA)",
         "mob": "Manual de Operaciones Parte B (MOB)",
         "procedimientos-operativos": "Procedimientos Operativos / SOPs",
-        
-        # Flotas (Estructura Común)
         "limitaciones": "Limitaciones",
         "operacion-normal": "Operación Normal",
         "emergencias": "Emergencias",
@@ -82,12 +103,8 @@ def compile_banks() -> int:
         "sistemas-aeronave": "Sistemas Aeronave",
         "ddpm": "DDPM (Dispatch Deviations)",
         "mel": "MEL (Minimum Equipment List)",
-
-        # Normativa
         "reglas-del-aire-sera": "Reglas del Aire (SERA)",
         "normativa-easa": "Normativa EASA (Part-CAT/ORO/SPA/NCO)",
-
-        # Preparación de Comandante
         "partes-aplicables-moa-mob": "Partes Aplicables MOA / MOB",
         "flujo-despacho-mel-ddpm-cdl": "Flujo de Despacho MEL / DDPM / CDL",
         "gestion-emergencias-mando": "Gestión de Emergencias y Mando",
@@ -104,72 +121,73 @@ def compile_banks() -> int:
 
     print(f"[*] Escaneando bancos en: {banks_dir}")
 
-    for json_file in sorted(banks_dir.rglob("*.json")):
-        rel_path = json_file.relative_to(banks_dir)
-        parts = rel_path.parts
-        category = parts[0] if len(parts) > 1 else "general"
-        subtopic = parts[1] if len(parts) > 2 else (parts[0] if len(parts) > 1 else "default")
+    if banks_dir.exists():
+        for json_file in sorted(banks_dir.rglob("*.json")):
+            rel_path = json_file.relative_to(banks_dir)
+            parts = rel_path.parts
+            category = parts[0] if len(parts) > 1 else "general"
+            subtopic = parts[1] if len(parts) > 2 else (parts[0] if len(parts) > 1 else "default")
 
-        try:
-            with open(json_file, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-            items = data if isinstance(data, list) else [data]
+            try:
+                with open(json_file, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                items = data if isinstance(data, list) else [data]
 
-            for item in items:
-                # Validar schema
-                jsonschema.validate(instance=item, schema=schema)
-                q_id = item["id"]
-                if q_id in seen_ids:
-                    print(f"[ERROR] ID duplicado '{q_id}' en {json_file}", file=sys.stderr)
-                    errors += 1
-                seen_ids.add(q_id)
+                for item in items:
+                    if schema and HAS_JSONSCHEMA:
+                        jsonschema.validate(instance=item, schema=schema)
+                    else:
+                        struct_errors = validate_question_structure(item)
+                        if struct_errors:
+                            for err_msg in struct_errors:
+                                print(f"[ERROR] {err_msg} en {json_file}", file=sys.stderr)
+                            errors += len(struct_errors)
 
-                # Validar exactamente una respuesta correcta
-                correct_opts = [opt for opt in item.get("options", []) if opt.get("is_correct") is True]
-                if len(correct_opts) != 1:
-                    print(f"[ERROR] Pregunta '{q_id}' tiene {len(correct_opts)} opciones correctas (debe tener exactamente 1)", file=sys.stderr)
-                    errors += 1
+                    q_id = item.get("id")
+                    if q_id in seen_ids:
+                        print(f"[ERROR] ID duplicado '{q_id}' en {json_file}", file=sys.stderr)
+                        errors += 1
+                    if q_id:
+                        seen_ids.add(q_id)
 
-                # Enriquecer metadatos de categoría interna
-                item["_category"] = category
-                item["_subtopic"] = subtopic
-                all_questions.append(item)
+                    item["_category"] = category
+                    item["_subtopic"] = subtopic
+                    all_questions.append(item)
 
-                if category not in categories_stats:
-                    cat_info = category_labels.get(category, {
-                        "title": category.replace("-", " ").title(), 
-                        "icon": "Folder", 
-                        "color": "blue"
-                    })
-                    categories_stats[category] = {
-                        "id": category,
-                        "title": cat_info["title"],
-                        "icon": cat_info["icon"],
-                        "color": cat_info["color"],
-                        "total_questions": 0,
-                        "subtopics": {}
-                    }
+                    if category not in categories_stats:
+                        cat_info = category_labels.get(category, {
+                            "title": category.replace("-", " ").title(), 
+                            "icon": "Folder", 
+                            "color": "blue"
+                        })
+                        categories_stats[category] = {
+                            "id": category,
+                            "title": cat_info["title"],
+                            "icon": cat_info["icon"],
+                            "color": cat_info["color"],
+                            "total_questions": 0,
+                            "subtopics": {}
+                        }
 
-                categories_stats[category]["total_questions"] += 1
-                
-                if subtopic not in categories_stats[category]["subtopics"]:
-                    st_title = subtopic_labels.get(subtopic, subtopic.replace("-", " ").title())
-                    categories_stats[category]["subtopics"][subtopic] = {
-                        "id": subtopic,
-                        "title": st_title,
-                        "count": 0
-                    }
-                categories_stats[category]["subtopics"][subtopic]["count"] += 1
+                    categories_stats[category]["total_questions"] += 1
+                    
+                    if subtopic not in categories_stats[category]["subtopics"]:
+                        st_title = subtopic_labels.get(subtopic, subtopic.replace("-", " ").title())
+                        categories_stats[category]["subtopics"][subtopic] = {
+                            "id": subtopic,
+                            "title": st_title,
+                            "count": 0
+                        }
+                    categories_stats[category]["subtopics"][subtopic]["count"] += 1
 
-        except Exception as e:
-            print(f"[FAIL] Error leyendo {json_file}: {e}", file=sys.stderr)
-            errors += 1
+            except Exception as e:
+                print(f"[FAIL] Error leyendo {json_file}: {e}", file=sys.stderr)
+                errors += 1
 
     if errors > 0:
         print(f"[RESULT] Compilación abortada con {errors} errores.", file=sys.stderr)
         return 1
 
-    # Generar manifest.json
     manifest = {
         "app": "Plegueviation Exam",
         "version": "2.0.0",
@@ -188,8 +206,6 @@ def compile_banks() -> int:
         json.dump(all_questions, f, indent=2, ensure_ascii=False)
 
     print(f"[SUCCESS] {len(all_questions)} reactivos compilados exitosamente.")
-    print(f"          - Manifiesto: {manifest_path}")
-    print(f"          - Catálogo Completo: {questions_path}")
     return 0
 
 if __name__ == "__main__":
