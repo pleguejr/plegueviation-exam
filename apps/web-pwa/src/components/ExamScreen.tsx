@@ -20,6 +20,8 @@ import {
 import { Question, ExamSession, ExamSessionAnswer, Option, QuestionStats } from '../types';
 import { recordAnswerStat, toggleQuestionFlag, getQuestionStat } from '../services/db';
 import { SpeedSummaryTable } from './SpeedSummaryTable';
+import { PlanningMinimaTable } from './PlanningMinimaTable';
+import { FormattedText } from './FormattedText';
 
 interface ExamScreenProps {
   session: ExamSession;
@@ -456,12 +458,27 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
               </div>
 
               <div className="p-4 rounded-xl bg-black/40 border border-slate-800 text-slate-200 text-sm leading-relaxed space-y-3">
-                <p className="whitespace-pre-line">{currentQuestion.explanation.text}</p>
+                <FormattedText text={currentQuestion.explanation.text} />
+
+                {/* Cuadro de Mínimos de Planificación o Combustible si aplica */}
+                {(currentQuestion.subject_id?.includes('aerodromos') ||
+                  currentQuestion.subject_id?.includes('minimos') ||
+                  currentQuestion.stem.toLowerCase().includes('mínimos de planificación') ||
+                  currentQuestion.stem.toLowerCase().includes('plan básico con variaciones')) && (
+                  <PlanningMinimaTable type="variaciones" />
+                )}
+
+                {(currentQuestion.subject_id?.includes('combustible') ||
+                  currentQuestion.stem.toLowerCase().includes('minimum fuel') ||
+                  currentQuestion.stem.toLowerCase().includes('mayday fuel') ||
+                  currentQuestion.stem.toLowerCase().includes('reserva final')) && (
+                  <PlanningMinimaTable type="fuel_calls" />
+                )}
 
                 {/* Cuadro Resumen de Velocidades si la pregunta es de velocidades o limitaciones */}
                 {(currentQuestion.id.includes('SPD') ||
-                  currentQuestion.subject_id.includes('velocidad') ||
-                  currentQuestion.subject_id.includes('limitaciones') ||
+                  currentQuestion.subject_id?.includes('velocidad') ||
+                  currentQuestion.subject_id?.includes('limitaciones') ||
                   currentQuestion.stem.toLowerCase().includes('kias') ||
                   currentQuestion.stem.toLowerCase().includes('velocidad') ||
                   currentQuestion.stem.toLowerCase().includes('planeo')) && (

@@ -16,6 +16,8 @@ import {
 } from 'lucide-react';
 import { ExamSession, Question } from '../types';
 import { SpeedSummaryTable } from './SpeedSummaryTable';
+import { PlanningMinimaTable } from './PlanningMinimaTable';
+import { FormattedText } from './FormattedText';
 
 interface ExamResultsProps {
   session: ExamSession;
@@ -263,12 +265,27 @@ export const ExamResults: React.FC<ExamResultsProps> = ({
                     {/* Explanation */}
                     <div className="p-4 rounded-xl bg-aviation-950/90 border border-slate-800 text-xs space-y-3">
                       <span className="font-bold text-slate-300 uppercase tracking-wide text-[11px]">Explicación Técnica:</span>
-                      <p className="text-slate-300 leading-relaxed whitespace-pre-line">{q.explanation.text}</p>
+                      <FormattedText text={q.explanation.text} />
                       
+                      {/* Cuadro de Mínimos de Planificación o Combustible si aplica */}
+                      {(q.subject_id?.includes('aerodromos') ||
+                        q.subject_id?.includes('minimos') ||
+                        q.stem.toLowerCase().includes('mínimos de planificación') ||
+                        q.stem.toLowerCase().includes('plan básico con variaciones')) && (
+                        <PlanningMinimaTable type="variaciones" />
+                      )}
+
+                      {(q.subject_id?.includes('combustible') ||
+                        q.stem.toLowerCase().includes('minimum fuel') ||
+                        q.stem.toLowerCase().includes('mayday fuel') ||
+                        q.stem.toLowerCase().includes('reserva final')) && (
+                        <PlanningMinimaTable type="fuel_calls" />
+                      )}
+
                       {/* Cuadro Resumen de Velocidades si aplica */}
                       {(q.id.includes('SPD') ||
-                        q.subject_id.includes('velocidad') ||
-                        q.subject_id.includes('limitaciones') ||
+                        q.subject_id?.includes('velocidad') ||
+                        q.subject_id?.includes('limitaciones') ||
                         q.stem.toLowerCase().includes('kias') ||
                         q.stem.toLowerCase().includes('velocidad') ||
                         q.stem.toLowerCase().includes('planeo')) && (
