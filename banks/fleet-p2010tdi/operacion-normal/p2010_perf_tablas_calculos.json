@@ -1,0 +1,422 @@
+[
+  {
+    "id": "P2010-PERF-001",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 5 - Velocidades de Pérdida (Stall Speeds a 1160 kg)",
+    "stem": "De acuerdo con la tabla de Stall Speeds del AFM (Sección 5) a MTOW (1160 kg, CG delantero), ¿cuáles son las velocidades de pérdida indicadas (KIAS) en vuelo recto y nivelado (0° de alabeo) para Flaps 0°, Flaps T/O y Flaps FULL?",
+    "options": [
+      { "id": "A", "text": "Flaps 0°: 61 KIAS; Flaps T/O: 54 KIAS; Flaps FULL (LAND): 48 KIAS", "is_correct": true },
+      { "id": "B", "text": "Flaps 0°: 65 KIAS; Flaps T/O: 58 KIAS; Flaps FULL (LAND): 52 KIAS", "is_correct": false },
+      { "id": "C", "text": "Flaps 0°: 58 KIAS; Flaps T/O: 50 KIAS; Flaps FULL (LAND): 42 KIAS", "is_correct": false },
+      { "id": "D", "text": "Flaps 0°: 70 KIAS; Flaps T/O: 60 KIAS; Flaps FULL (LAND): 55 KIAS", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "Según la tabla oficial de Stall Speeds del AFM (Página 5-7) a 1160 kg con palanca en IDLE y centro de gravedad más adelantado (23%), las velocidades de pérdida a 0° de alabeo son: Flaps 0° = 61 KIAS (60 KCAS), Flaps T/O = 54 KIAS (55 KCAS), y Flaps FULL = 48 KIAS (52 KCAS).",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 5: Performance - Paragraph 7: Stall Speed (Table Page 5-7)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-PERF-002",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 5 - Incremento de Velocidad de Pérdida con Alabeo",
+    "stem": "En un viraje coordinado con 60° de alabeo (factor de carga 2.0g) en configuración limpia (Flaps 0°) a MTOW (1160 kg), ¿cuál es la velocidad de pérdida indicada (KIAS)?",
+    "options": [
+      { "id": "A", "text": "86 KIAS", "is_correct": true },
+      { "id": "B", "text": "72 KIAS", "is_correct": false },
+      { "id": "C", "text": "96 KIAS", "is_correct": false },
+      { "id": "D", "text": "66 KIAS", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "Al aumentar el alabeo a 60°, el factor de carga se duplica (2g), incrementando la velocidad de pérdida proporcionalmente a la raíz cuadrada de n. En la tabla del AFM, a 60° de viraje con Flaps 0° la velocidad de pérdida pasa de 61 KIAS a 86 KIAS.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 5: Performance - Paragraph 7: Stall Speed"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-PERF-003",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 5 - Factor de Corrección por Viento de Cara en Despegue",
+    "stem": "Al calcular la distancia de despegue según la Sección 5 del AFM, ¿cuál es la corrección aplicable por cada nudo de viento de cara (Headwind)?",
+    "options": [
+      { "id": "A", "text": "Reducción de 10 metros (33 ft) de distancia de despegue por cada nudo de viento de cara", "is_correct": true },
+      { "id": "B", "text": "Reducción de 4 metros (13 ft) por cada nudo de viento de cara", "is_correct": false },
+      { "id": "C", "text": "Reducción de 20 metros (66 ft) por cada nudo de viento de cara", "is_correct": false },
+      { "id": "D", "text": "No se aplica corrección por viento de cara por debajo de 10 nudos", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "La tabla de Take-Off Performance (Página 5-10) establece expresamente en sus notas de corrección: 'Headwind: - 10 m (33 ft) for each kts'.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 5: Performance - Paragraph 9: Take-Off Performance"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-PERF-004",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 5 - Factor de Corrección por Viento en Cola en Despegue",
+    "stem": "¿Cuál es la penalización en la distancia de despegue por cada nudo de viento en cola (Tailwind) según las notas de rendimiento del AFM?",
+    "options": [
+      { "id": "A", "text": "Incremento de 20 metros (66 ft) de distancia de despegue por cada nudo de viento en cola", "is_correct": true },
+      { "id": "B", "text": "Incremento de 10 metros (33 ft) por cada nudo de viento en cola", "is_correct": false },
+      { "id": "C", "text": "Incremento del 5% fijo independientemente de la intensidad", "is_correct": false },
+      { "id": "D", "text": "Incremento de 35 metros por cada nudo", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "El viento en cola penaliza el despegue al doble del beneficio del viento de cara: las notas del AFM indican 'Tailwind: +20 m (66 ft) for each kts'.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 5: Performance - Paragraph 9: Take-Off Performance"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-PERF-005",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 5 - Corrección por Pista de Hierba (Grass Runway)",
+    "stem": "Si se opera en una pista no pavimentada de hierba seca (Grass Runway), ¿qué porcentaje de incremento debe añadirse a la carrera en tierra (Ground Roll) de despegue y aterrizaje?",
+    "options": [
+      { "id": "A", "text": "+10% a la distancia de carrera en tierra (Ground Roll)", "is_correct": true },
+      { "id": "B", "text": "+25% a la distancia total", "is_correct": false },
+      { "id": "C", "text": "+5% a la carrera en tierra", "is_correct": false },
+      { "id": "D", "text": "+15% solo si la hierba supera los 10 cm", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "Tanto en las tablas de despegue como en las de aterrizaje del AFM, la corrección estándar para pista de hierba es: 'Grass Runway: + 10% to Ground Roll'.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 5: Performance - Paragraph 9 & 13"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-PERF-006",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 5 - Corrección por Pendiente de Pista (Runway Slope) en Despegue",
+    "stem": "¿Cómo afecta una pendiente ascendente (Uphill slope) a la carrera en tierra de despegue según el AFM de la Tecnam P2010 TDI?",
+    "options": [
+      { "id": "A", "text": "+10% a la carrera en tierra por cada +1% de pendiente ascendente", "is_correct": true },
+      { "id": "B", "text": "+5% por cada +1% de pendiente", "is_correct": false },
+      { "id": "C", "text": "+2% por cada grado de inclinación", "is_correct": false },
+      { "id": "D", "text": "No se aplica corrección para pendientes menores del 2%", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "El AFM estipula en las correcciones de despegue: 'Runway slope: +10% to Ground Roll for each +1%'. Una pendiente positiva incrementa notablemente la carrera requerida para alcanzar Vr (60 KIAS).",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 5: Performance - Paragraph 9: Take-Off Performance"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-PERF-007",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 5 - Reducción de Distancia de Despegue por Peso",
+    "stem": "Por cada 100 kg (220 lb) de reducción de peso por debajo de MTOW (1160 kg), ¿cuánto disminuye la distancia total de despegue sobre obstáculo de 50 ft?",
+    "options": [
+      { "id": "A", "text": "Aproximadamente 110 metros (361 ft) de reducción de distancia de despegue", "is_correct": true },
+      { "id": "B", "text": "Aproximadamente 50 metros (164 ft)", "is_correct": false },
+      { "id": "C", "text": "Aproximadamente 200 metros (656 ft)", "is_correct": false },
+      { "id": "D", "text": "Aproximadamente 20 metros (66 ft)", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "La nota de peso del AFM indica: 'Consider about 110 m (361 ft) of take-off distance reduction for each 100 kg (220 lb) of weight reduction'.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 5: Performance - Paragraph 9: Take-Off Performance"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-PERF-008",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 5 - Carrera de Despegue al Nivel del Mar ISA (1160 kg)",
+    "stem": "En condiciones estándar ISA (15°C, QNH 1013 hPa) al nivel del mar (0 ft) en pista seca pavimentada y a MTOW (1160 kg), ¿cuál es la carrera en tierra (Ground Roll) y la distancia total sobre obstáculo de 50 ft en despegue?",
+    "options": [
+      { "id": "A", "text": "Carrera en tierra (GR): 389 m (1276 ft); Distancia total sobre 50 ft: 618 m (2028 ft)", "is_correct": true },
+      { "id": "B", "text": "Carrera en tierra (GR): 250 m; Distancia total sobre 50 ft: 450 m", "is_correct": false },
+      { "id": "C", "text": "Carrera en tierra (GR): 500 m; Distancia total sobre 50 ft: 800 m", "is_correct": false },
+      { "id": "D", "text": "Carrera en tierra (GR): 315 m; Distancia total sobre 50 ft: 510 m", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "En la tabla de Take-Off Performance (Página 5-10), a 0 ft y 15°C (ISA), la carrera en tierra (GR) es de 389 m (1276 ft) y la distancia sobre el obstáculo de 50 ft (V50ft = 65 KIAS) es de 618 m (2028 ft).",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 5: Performance - Paragraph 9: Take-Off Performance Table"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "P2010-PERF-009",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 5 - Tasa de Ascenso en Despegue (Take-Off Rate of Climb)",
+    "stem": "Con potencia máxima continua (MCP 2250 RPM / 91% Load) y Flaps en posición T/O a Vy = 67 KIAS al nivel del mar ISA (1160 kg), ¿cuál es el régimen de ascenso (Rate of Climb)?",
+    "options": [
+      { "id": "A", "text": "648 ft/min", "is_correct": true },
+      { "id": "B", "text": "850 ft/min", "is_correct": false },
+      { "id": "C", "text": "500 ft/min", "is_correct": false },
+      { "id": "D", "text": "1050 ft/min", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "La tabla de Take-Off Rate of Climb (Página 5-13) indica que a 0 ft de altitud de presión en condiciones ISA (15°C) a 1160 kg, el régimen de ascenso con flaps T/O a 67 KIAS es de 648 ft/min.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 5: Performance - Paragraph 10: Take-Off Rate of Climb"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-PERF-010",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 5 - Crucero al 91% Load (Max Continuous Power)",
+    "stem": "En vuelo de crucero a 10.000 ft en condiciones ISA a MTOW (1160 kg) al 91% de potencia (Max Continuous Power), ¿cuál es la velocidad verdadera (TAS) y el consumo horario de combustible?",
+    "options": [
+      { "id": "A", "text": "140 KTAS y 33 L/h (8.7 US gal/h)", "is_correct": true },
+      { "id": "B", "text": "125 KTAS y 26 L/h (6.8 US gal/h)", "is_correct": false },
+      { "id": "C", "text": "155 KTAS y 42 L/h (11.1 US gal/h)", "is_correct": false },
+      { "id": "D", "text": "130 KTAS y 22 L/h (5.8 US gal/h)", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la tabla de Cruise Performance (Página 5-19) a 10.000 ft en condiciones ISA, con el 91% Load (MCP), el motor consume 33 litros/hora (8.7 US gal/h) alcanzando una TAS de 140 nudos.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 5: Performance - Paragraph 12: Cruise Performance (Table 10000 ft)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-PERF-011",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 5 - Crucero Económico al 75% Load a 5.000 ft",
+    "stem": "En crucero estándar al 75% de potencia a 5.000 ft en atmósfera ISA a MTOW, ¿cuál es la velocidad verdadera (TAS) y el flujo de combustible (Fuel Consumption)?",
+    "options": [
+      { "id": "A", "text": "119 KTAS y 26 L/h (6.8 US gal/h)", "is_correct": true },
+      { "id": "B", "text": "130 KTAS y 33 L/h (8.7 US gal/h)", "is_correct": false },
+      { "id": "C", "text": "110 KTAS y 20 L/h (5.3 US gal/h)", "is_correct": false },
+      { "id": "D", "text": "125 KTAS y 29 L/h (7.6 US gal/h)", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "En la tabla de crucero a 5000 ft (Página 5-19) en ISA, al 75% Load se obtienen 119 KTAS con un consumo de 26 litros por hora (6.8 gal/h).",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 5: Performance - Paragraph 12: Cruise Performance"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-PERF-012",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 5 - Crucero de Largo Alcance (Long Range Cruise) al 55% Load",
+    "stem": "Al 55% de potencia de motor a 5.000 ft ISA, ¿cuál es el consumo horario del Continental CD-170?",
+    "options": [
+      { "id": "A", "text": "18 L/h (4.7 US gal/h) con 99 KTAS", "is_correct": true },
+      { "id": "B", "text": "24 L/h (6.3 US gal/h) con 110 KTAS", "is_correct": false },
+      { "id": "C", "text": "14 L/h (3.7 US gal/h) con 85 KTAS", "is_correct": false },
+      { "id": "D", "text": "22 L/h (5.8 US gal/h) con 105 KTAS", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "Al 55% Load en crucero a 5000 ft ISA, el consumo es de tan solo 18 L/h (4.7 US gal/h) manteniendo 99 KTAS, lo que permite alcances y autonomías excepcionales superiores a las 8 horas de vuelo continuo.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 5: Performance - Paragraph 12: Cruise Performance"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-PERF-013",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 5 - Carrera de Aterrizaje al Nivel del Mar ISA (1160 kg)",
+    "stem": "En condiciones estándar ISA al nivel del mar con Flaps LAND (40°), Vref = 65 KIAS y palanca en IDLE a 1160 kg, ¿cuál es la carrera en tierra (Ground Roll) y la distancia total desde 50 ft en aterrizaje?",
+    "options": [
+      { "id": "A", "text": "Carrera en tierra (GR): 261 m (856 ft); Distancia total desde 50 ft: 547 m (1795 ft)", "is_correct": true },
+      { "id": "B", "text": "Carrera en tierra (GR): 180 m; Distancia total desde 50 ft: 390 m", "is_correct": false },
+      { "id": "C", "text": "Carrera en tierra (GR): 350 m; Distancia total desde 50 ft: 700 m", "is_correct": false },
+      { "id": "D", "text": "Carrera en tierra (GR): 300 m; Distancia total desde 50 ft: 600 m", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "La tabla de Landing Performance (Página 5-20) indica que a 0 ft ISA (15°C) a 1160 kg, la carrera en tierra es de 261 m (856 ft) y la distancia total sobre el obstáculo de 50 pies es de 547 m (1795 ft).",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 5: Performance - Paragraph 13: Landing Performance"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "P2010-PERF-014",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 5 - Corrección de Viento en Aterrizaje",
+    "stem": "¿Cuáles son los factores de corrección por viento de cara y en cola en la distancia de aterrizaje según la Sección 5?",
+    "options": [
+      { "id": "A", "text": "Viento de cara (Headwind): - 4 m (-13 ft) por nudo; Viento en cola (Tailwind): + 13 m (+43 ft) por nudo", "is_correct": true },
+      { "id": "B", "text": "Viento de cara: - 10 m por nudo; Viento en cola: + 20 m por nudo", "is_correct": false },
+      { "id": "C", "text": "Viento de cara: - 8 m por nudo; Viento en cola: + 8 m por nudo", "is_correct": false },
+      { "id": "D", "text": "Viento de cara: - 2 m por nudo; Viento en cola: + 25 m por nudo", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "En las notas de la tabla de aterrizaje (Página 5-20), las correcciones exactas son: 'Headwind: - 4 m (-13 ft) for each kts' y 'Tailwind: +13 m (+43 ft) for each kts'.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 5: Performance - Paragraph 13: Landing Performance"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-PERF-015",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 5 - Corrección por Pendiente de Pista en Aterrizaje",
+    "stem": "En el cálculo de aterrizaje, ¿cómo afecta una pendiente ascendente de pista (+1% Uphill) a la carrera en tierra?",
+    "options": [
+      { "id": "A", "text": "Reduce la carrera en tierra en un 3% (-3% to Ground Roll for each +1% slope)", "is_correct": true },
+      { "id": "B", "text": "Aumenta la carrera en tierra en un 10%", "is_correct": false },
+      { "id": "C", "text": "Reduce la carrera en tierra en un 10%", "is_correct": false },
+      { "id": "D", "text": "No produce ninguna variación en el frenado", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "Una pista cuesta arriba ayuda a frenar la aeronave por gravedad. La nota del AFM indica textualmente: 'Runway slope: -3% to Ground Roll for each +1%'.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 5: Performance - Paragraph 13: Landing Performance"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-PERF-016",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 5 - Gradiente de Ascenso en Frustrada (Balked Landing Gradient)",
+    "stem": "En una maniobra de motor y al aire / frustrada con Flaps en posición LAND (40°), máxima potencia y Vref = 65 KIAS al nivel del mar ISA a 1160 kg, ¿cuál es el gradiente neto de ascenso estabilizado (Steady Gradient of Climb)?",
+    "options": [
+      { "id": "A", "text": "7.5% de gradiente neto", "is_correct": true },
+      { "id": "B", "text": "2.5% de gradiente neto", "is_correct": false },
+      { "id": "C", "text": "12.0% de gradiente neto", "is_correct": false },
+      { "id": "D", "text": "4.5% de gradiente neto", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "La tabla de Balked Landing Performance (Página 5-23) establece que a 0 ft ISA (15°C) a MTOW (1160 kg) con flaps completamente extendidos en LAND (40°) y potencia al 100%, el gradiente neto de ascenso es del 7.5% (superando ampliamente el mínimo regulatorio CS-23).",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 5: Performance - Paragraph 14: Balked Landing Performance"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-PERF-017",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 5 - Velocidad de Toque en Pista (Touchdown Speed - Vtd)",
+    "stem": "De acuerdo con los parámetros de la tabla de aterrizaje a MTOW (1160 kg) con Flaps LAND, ¿cuál es la velocidad de toma de contacto / toque en pista (Touchdown Speed - Vtd)?",
+    "options": [
+      { "id": "A", "text": "56 KIAS", "is_correct": true },
+      { "id": "B", "text": "65 KIAS", "is_correct": false },
+      { "id": "C", "text": "48 KIAS", "is_correct": false },
+      { "id": "D", "text": "60 KIAS", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "En las notas de la tabla de aterrizaje (Página 5-20) se especifica: Vref = 65 KIAS y Vtd (Touchdown Speed) = 56 KIAS.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 5: Performance - Paragraph 13: Landing Performance"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-PERF-018",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 5 - Reducción de Distancia de Aterrizaje por Peso",
+    "stem": "¿Cuánto se reduce la distancia total de aterrizaje por cada 100 kg (220 lb) de peso por debajo de los 1160 kg?",
+    "options": [
+      { "id": "A", "text": "Aproximadamente 20 metros (66 ft) de reducción de distancia de aterrizaje", "is_correct": true },
+      { "id": "B", "text": "Aproximadamente 110 metros (361 ft)", "is_correct": false },
+      { "id": "C", "text": "Aproximadamente 50 metros (164 ft)", "is_correct": false },
+      { "id": "D", "text": "Aproximadamente 5 metros (16 ft)", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "La nota de aterrizaje en la Sección 5 indica: 'Consider about 20 m (66 ft) of landing distance reduction for each 100 kg (220 lb) of weight reduction'.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 5: Performance - Paragraph 13: Landing Performance"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-PERF-019",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 5 - Demostración de Temperatura Operativa",
+    "stem": "¿Cuál es el rango de temperatura exterior demostrada en vuelo (Demonstrated Operating Temperature) según la Sección 5?",
+    "options": [
+      { "id": "A", "text": "-30°C a +50°C", "is_correct": true },
+      { "id": "B", "text": "-15°C a +35°C", "is_correct": false },
+      { "id": "C", "text": "-40°C a +40°C", "is_correct": false },
+      { "id": "D", "text": "0°C a +45°C", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "El apartado 3 de la Sección 5 (Demonstrated Operating Temperature) certifica que la aeronave y su sistema motopropulsor han demostrado operación satisfactoria en un rango térmico exterior desde -30°C (-22°F) hasta +50°C (+122°F).",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 5: Performance - Paragraph 3: Demonstrated Operating Temperature"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-PERF-020",
+    "subject_id": "p2010_normal",
+    "learning_objective": "AFM Sección 5 - Tasa de Ascenso en Crucero a 10.000 ft ISA",
+    "stem": "En ascenso en ruta con Flaps UP a Vy = 82 KIAS al 91% Load (Max Continuous Power) a 10.000 ft en atmósfera ISA a 1160 kg, ¿cuál es el régimen de ascenso residual aproximado?",
+    "options": [
+      { "id": "A", "text": "531 ft/min", "is_correct": true },
+      { "id": "B", "text": "200 ft/min", "is_correct": false },
+      { "id": "C", "text": "800 ft/min", "is_correct": false },
+      { "id": "D", "text": "350 ft/min", "is_correct": false }
+    ],
+    "explanation": {
+      "text": "Gracias a la sobrealimentación constante del turbocompresor del motor Continental CD-170, a 10.000 ft en ISA el motor sigue entregando potencia suficiente para mantener una tasa de ascenso de 531 ft/min a 1160 kg.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 5: Performance - Paragraph 11: En-Route Rate of Climb"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  }
+]
