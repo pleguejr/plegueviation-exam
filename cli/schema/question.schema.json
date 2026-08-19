@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PlegueviationExamQuestionItem",
+  "type": "object",
+  "required": ["id", "subject_id", "learning_objective", "stem", "options", "explanation"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[A-Z0-9_-]+$" },
+    "subject_id": { "type": "string" },
+    "learning_objective": { "type": "string" },
+    "stem": { "type": "string" },
+    "annexes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "src", "title"],
+        "properties": {
+          "id": { "type": "string" },
+          "src": { "type": "string" },
+          "title": { "type": "string" }
+        }
+      }
+    },
+    "options": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["id", "text", "is_correct"],
+        "properties": {
+          "id": { "type": "string" },
+          "text": { "type": "string" },
+          "is_correct": { "type": "boolean" }
+        }
+      }
+    },
+    "explanation": {
+      "type": "object",
+      "required": ["text"],
+      "properties": {
+        "text": { "type": "string" },
+        "references": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "easa_ecqb_ref": { "type": "string" },
+        "difficulty": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    }
+  }
+}

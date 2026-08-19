@@ -1,0 +1,17 @@
+{
+  "task_id": "plegueviation_bank_build",
+  "name": "Plegueviation Exam Auto Build & Validate",
+  "triggers": [
+    {
+      "event": "file_modify",
+      "pattern": "banks/**/*.json"
+    }
+  ],
+  "actions": [
+    {
+      "type": "execute_skill",
+      "script": ".antigravity/skills/bank_validator.py",
+      "args": ["banks", "cli/schema/question.schema.json"]
+    }
+  ]
+}
