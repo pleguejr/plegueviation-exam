@@ -1,4 +1,4 @@
-const CACHE_NAME = 'plegueviation-cache-v1';
+const CACHE_NAME = 'plegueviation-cache-v2';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
@@ -31,6 +31,11 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
+  // Las llamadas a la API de sincronización nunca se cachean en el Service Worker
+  if (event.request.url.includes('/api/')) {
+    return;
+  }
+
   if (event.request.method !== 'GET') return;
   event.respondWith(
     caches.match(event.request).then((cached) => {
