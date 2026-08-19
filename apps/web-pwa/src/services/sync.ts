@@ -4,9 +4,9 @@ import { QuestionStats, ExamSession, Question } from '../types';
 const SYNC_PIN_STORAGE_KEY = 'plegue_sync_pin';
 const LAST_SYNC_STORAGE_KEY = 'plegue_last_sync_timestamp';
 
-// Endpoints de sincronización (relativo para Vercel, absoluto como fallback para GitHub Pages y Localhost)
-const PRIMARY_ENDPOINT = '/api/sync';
-const VERCEL_PRODUCTION_ENDPOINT = 'https://plegueviation-exam.vercel.app/api/sync';
+// Infraestructura de Cloud Sync Global (API REST directa con alta disponibilidad y soporte CORS completo)
+const REST_API_BASE = 'https://api.restful-api.dev/objects';
+const MASTER_REGISTRY_ID = 'ff8081819ff5b11001a01b65c491544b';
 
 export function getStoredSyncPin(): string | null {
   return localStorage.getItem(SYNC_PIN_STORAGE_KEY);
@@ -134,18 +134,23 @@ export async function mergeRemoteData(remoteData: any): Promise<{
 }
 
 /**
- * Realiza una petición fetch con timeout seguro.
+ * Realiza una petición fetch con timeout de seguridad (8s)
  */
-async function safeFetch(url: string, options: RequestInit, timeoutMs = 8000): Promise<Response> {
+async function apiFetch(url: string, options: RequestInit = {}, timeoutMs = 8000): Promise<Response> {
   const controller = new AbortController();
   const id = setTimeout(() => controller.abort(), timeoutMs);
   try {
-    const response = await fetch(url, {
+    const res = await fetch(url, {
       ...options,
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        ...(options.headers || {})
+      },
       signal: controller.signal
     });
     clearTimeout(id);
-    return response;
+    return res;
   } catch (err) {
     clearTimeout(id);
     throw err;
@@ -169,83 +174,107 @@ export async function syncWithCloud(pin?: string): Promise<{
     return { success: false, message: 'Sin conexión a internet. Se sincronizará automáticamente al reconectar.' };
   }
 
-  const endpointsToTry = [
-    PRIMARY_ENDPOINT,
-    VERCEL_PRODUCTION_ENDPOINT
-  ];
-
-  let remotePayload: any = null;
-  let successfulEndpoint: string | null = null;
-
-  // Paso 1: Intentar leer datos de la nube
-  for (const endpoint of endpointsToTry) {
+  try {
+    // Paso 1: Consultar el Registro Maestro de PINs en la nube
+    let masterPinsMap: Record<string, string> = {};
     try {
-      const url = `${endpoint}?pin=${encodeURIComponent(activePin)}`;
-      const res = await safeFetch(url, {
-        method: 'GET',
-        headers: { 'Accept': 'application/json' }
-      });
-
-      const contentType = res.headers.get('content-type') || '';
-      if (res.ok && contentType.includes('application/json')) {
-        const json = await res.json();
-        // Si la API devuelve { found: true, data: {...} } o directamente el payload
-        remotePayload = json.data !== undefined ? json.data : json;
-        successfulEndpoint = endpoint;
-        break;
+      const regRes = await apiFetch(`${REST_API_BASE}/${MASTER_REGISTRY_ID}`, { method: 'GET' });
+      if (regRes.ok) {
+        const regJson = await regRes.json();
+        masterPinsMap = regJson.data?.pins || {};
       }
     } catch (e) {
-      // Probar siguiente endpoint
+      console.warn('Error reading master registry:', e);
     }
-  }
 
-  // Paso 2: Si encontramos datos remotos, fusionarlos con los locales
-  if (remotePayload) {
-    await mergeRemoteData(remotePayload);
-  }
+    let docId = masterPinsMap[activePin];
+    let remotePayload: any = null;
 
-  // Paso 3: Obtener el estado local final (fusionado) y subirlo a la nube
-  const finalPayload = await getLocalPayload();
-  let uploadSuccess = false;
+    // Paso 2: Si el PIN ya existe en la nube, descargar y fusionar sus datos
+    if (docId) {
+      try {
+        const docRes = await apiFetch(`${REST_API_BASE}/${docId}`, { method: 'GET' });
+        if (docRes.ok) {
+          const docJson = await docRes.json();
+          remotePayload = docJson.data;
+        }
+      } catch (e) {
+        console.warn('Error reading remote data doc:', e);
+      }
+    }
 
-  const targetEndpoints = successfulEndpoint ? [successfulEndpoint] : endpointsToTry;
+    if (remotePayload) {
+      await mergeRemoteData(remotePayload);
+    }
 
-  for (const endpoint of targetEndpoints) {
-    try {
-      const res = await safeFetch(endpoint, {
+    // Paso 3: Obtener el estado local final (fusionado) y subirlo a la nube
+    const finalPayload = await getLocalPayload();
+    let savedSuccessfully = false;
+
+    if (docId) {
+      // Actualizar documento existente
+      const putRes = await apiFetch(`${REST_API_BASE}/${docId}`, {
+        method: 'PUT',
+        body: JSON.stringify({
+          name: `plegue-sync-${activePin}`,
+          data: finalPayload
+        })
+      });
+      if (putRes.ok) {
+        savedSuccessfully = true;
+      }
+    }
+
+    // Si no existía o falló el PUT, crear nuevo documento y registrarlo
+    if (!savedSuccessfully) {
+      const postRes = await apiFetch(REST_API_BASE, {
         method: 'POST',
-        headers: { 
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify({ 
-          pin: activePin, 
-          data: finalPayload 
+        body: JSON.stringify({
+          name: `plegue-sync-${activePin}`,
+          data: finalPayload
         })
       });
 
-      const contentType = res.headers.get('content-type') || '';
-      if (res.ok && contentType.includes('application/json')) {
-        uploadSuccess = true;
-        break;
-      }
-    } catch (e) {
-      // Probar siguiente endpoint
-    }
-  }
+      if (postRes.ok) {
+        const newDocJson = await postRes.json();
+        docId = newDocJson.id;
+        savedSuccessfully = true;
 
-  if (uploadSuccess) {
-    const now = Date.now();
-    setLastSyncTimestamp(now);
-    return {
-      success: true,
-      message: 'Sincronización completada exitosamente.',
-      syncedAt: now
-    };
-  } else {
+        // Actualizar el Registro Maestro con el nuevo PIN -> docId
+        masterPinsMap[activePin] = docId;
+        try {
+          await apiFetch(`${REST_API_BASE}/${MASTER_REGISTRY_ID}`, {
+            method: 'PUT',
+            body: JSON.stringify({
+              name: 'plegueviation-master-registry-v1',
+              data: { pins: masterPinsMap }
+            })
+          });
+        } catch (regErr) {
+          console.warn('Error updating master registry with new PIN:', regErr);
+        }
+      }
+    }
+
+    if (savedSuccessfully) {
+      const now = Date.now();
+      setLastSyncTimestamp(now);
+      return {
+        success: true,
+        message: 'Sincronización completada exitosamente.',
+        syncedAt: now
+      };
+    } else {
+      return {
+        success: false,
+        message: 'No se pudo guardar los datos en la nube. Revisa tu conexión a internet.'
+      };
+    }
+  } catch (err: any) {
+    console.error('Error during cloud sync:', err);
     return {
       success: false,
-      message: 'No se pudo conectar con el servidor de sincronización. Vercel se está actualizando; prueba de nuevo en unos segundos.'
+      message: `Error al sincronizar: ${err?.message || err}`
     };
   }
 }
