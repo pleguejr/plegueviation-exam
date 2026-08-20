@@ -3,12 +3,14 @@ name: binter-operations-auditor
 description: >-
   Expert verification and operational knowledge base for Binter Canarias Operations (MOA, MOB, SOP, Embraer 195-E2).
   Enforces strict fidelity to company mnemonics (TWIN, RETSE, E-DALTA, TELSI, IMFLOCC, MEANA),
-  callouts, emergency procedures, dispatch tables (RFFS 1A/1B), and FTL regulations.
+  callouts, emergency procedures, dispatch tables (RFFS 1A/1B), authority/responsibilities (MOA 1.4/1.5), and FTL regulations (MOA 7).
 ---
 
 # Binter Canarias Operations & Emergency Procedures Auditor
 
-This skill enforces strict adherence to Binter Canarias operational manuals, specifically the **MOB (Manual de Operaciones – Parte B: Avión E195-E2 - Ed.06 RN21/RN22)** and **MOA (Manual de Operaciones – Parte A: Generalidades y Despacho)**.
+This skill enforces strict adherence to Binter Canarias operational manuals, specifically the **MOB (Manual de Operaciones – Parte B: Avión E195-E2 - Ed.06 RN21/RN22)** and **MOA (Manual de Operaciones – Parte A: Generalidades y Despacho - Ed.06 RN14/RN15)**.
+
+---
 
 ## 1. Company Briefing Mnemonics
 
@@ -69,3 +71,49 @@ In Binter Canarias, NITS is strictly forbidden; **`TELSI`** is the only authoriz
 - **Engine Failure on Takeoff (>V1)**: *"CHECK THRUST"*, *"THRUST CHECKED"*, Best Beta cian tras Gear UP, acciones de memoria nunca por debajo de 400 ft AGL.
 - **Driftdown Speed**: *GREEN DOT*.
 - **MOA Dispatch with Degraded RFFS**: Tablas 1A (Aeropuertos principales) y 1B (Alternativos). Despacho permitido con RFFS degradado hasta 1 categoría durante un periodo máximo de 72 horas previa evaluación de riesgos.
+
+---
+
+## 3. MOA 1.4 & 1.5: Authority & Crew Responsibilities
+
+- **MOA 1.4 Commander Authority (4F Philosophy: Safe, Fit, Fair, Fast)**:
+  * El Comandante ostenta la autoridad suprema desde que toma a cargo el avión antes del vuelo hasta su entrega formal tras el servicio (CAT.GEN.MPA.105).
+  * Potestad de desviación de cualquier norma en caso de emergencia.
+  * Potestad de denegación de embarque / desembarque de pasajeros disruptivos o no aptos.
+  * Firma obligatoria de ATL, OFP, Loadsheet y NOTOC.
+- **MOA 1.5.1 General & CRM**:
+  * Subordinación jerárquica y funcional de toda la tripulación al Comandante.
+  * Cooperación, monitorización cruzada (*Cross-Monitoring*) y regla de los dos avisos (*Two-Challenge Rule*).
+  * Cabina Estéril (*Sterile Cockpit*): llamadas a cabina técnica prohibidas < 10.000 ft salvo estricta emergencia.
+- **MOA 1.5.2 Copiloto**: Asunción automática del mando como PIC ante incapacitación del Comandante; comprobación cruzada independiente de ePerf, FMS y MEL.
+- **MOA 1.5.3 Piloto de Relevo (Cruise Relief Pilot)**: Relevo del copiloto exclusivamente en crucero (> FL200). Prohibido actuar en mandos durante despegue, < FL200 o aproximación/toma.
+- **MOA 1.5.4 TCPs**: Seguridad de cabina y ocupantes, chequeo prevuelo de equipo de emergencia (LOPA), protocolo de lucha contra incendios (Bombero, Comunicador, Asistente).
+- **MOA 1.5.5 Sobrecargo (SCCM)**: Enlace único con cabina técnica, recepción del briefing `TELSI`, reporte de *"Cabina Lista"* (*Cabin Ready*) con puertas armadas (*Cross-check*), supervisión de SCPs (PMR, UM, custodias).
+- **MOA 1.5.6 Tripulantes en Posicionamiento / Deadhead**: Considerados pasajeros a efectos operativos; subordinados al Comandante de servicio; inspectores de aviación (AESA/EASA) requieren autorización del PIC para entrar a cabina si se compromete la seguridad.
+
+---
+
+## 4. MOA 7: Flight and Duty Time Limitations (FTL) & Rest
+
+- **Definiciones**:
+  * **Tiempo de vuelo (Flight Time / Block Time)**: Calzo a calzo por fuerza motriz propia para despegar hasta calzos finales.
+  * **Período de Actividad de Vuelo (FDP)**: Desde hora de presentación hasta calzos del último sector operativo.
+  * **WOCL (Window of Circadian Low)**: 02:00 a 05:59 horas en el huso de aclimatación.
+- **Límites Máximos de Tiempo de Vuelo**:
+  * $100\text{ horas}$ en 28 días consecutivos.
+  * $900\text{ horas}$ en 12 meses consecutivos.
+  * $1.000\text{ horas}$ en año civil calendario.
+- **Límites Máximos de Actividad (Duty Periods)**:
+  * $60\text{ horas}$ en 7 días consecutivos ($168\text{ h}$).
+  * $110\text{ horas}$ en 14 días consecutivos ($336\text{ h}$).
+  * $190\text{ horas}$ en 28 días consecutivos ($672\text{ h}$).
+- **Descansos Mínimos**:
+  * **En Base (Home Base)**: El mayor entre la actividad precedente o $12\text{ horas}$.
+  * **Fuera de Base (Away from Base)**: El mayor entre la actividad precedente o $10\text{ horas}$ (garantizando $8\text{ horas}$ de sueño).
+  * **Descanso Semanal Extendido (ERRP)**: $\ge 36\text{ horas}$ continuas que incluyan $2\text{ noches locales}$ en cualquier período de $168\text{ horas}$.
+  * **Actividad Dividida (Split Duty)**: Pausa en tierra $\ge 3\text{ horas}$ continuas en alojamiento adecuado.
+- **Discrecionalidad del Comandante (Commander's Discretion - MOA 7.2)**:
+  * Extensión máxima de FDP antes del despegue: hasta $+2\text{ horas}$ (tripulación estándar) o $+3\text{ horas}$ (reforzada), previa consulta individual de fatiga (*Fit for Duty*).
+  * Extensión tras despegue del último sector: lo necesario hasta aterrizar seguro en destino o alternativo.
+  * Reducción máxima de descanso fuera de base: máximo $-1\text{ hora}$ (mínimo absoluto $10\text{ horas}$).
+  * Notificación oficial a AESA: plazo máximo de $28\text{ días}$ si la extensión o reducción supera $1\text{ hora}$. Registro obligatorio en ATL y formulario FOR-DISC / ASR.
