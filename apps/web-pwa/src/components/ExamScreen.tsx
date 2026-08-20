@@ -194,8 +194,12 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
       setCurrentStat(updatedStat);
     }
 
-    // Auto-advance automático a la siguiente pregunta
-    if (autoAdvance && currentIndex < session.questions.length - 1) {
+    // Auto-advance automático a la siguiente pregunta:
+    // Solo avanza si se acierta la pregunta o en modo simulación (sin feedback inmediato).
+    // Si se falla en modo práctica/smart_review, NO avanza para permitir revisar el error y la explicación.
+    const shouldAutoAdvance = autoAdvance && currentIndex < session.questions.length - 1 && (!isPracticeMode || isCorrect);
+
+    if (shouldAutoAdvance) {
       if (autoAdvanceTimerRef.current) {
         clearTimeout(autoAdvanceTimerRef.current);
       }
@@ -268,7 +272,7 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
                 ? 'bg-sky-500/20 border-sky-400/60 text-sky-300 shadow-sm'
                 : 'bg-slate-800/80 border-slate-700 text-slate-400 hover:text-slate-200'
             }`}
-            title="Avanzar automáticamente a la siguiente pregunta al responder"
+            title="Avanzar automáticamente solo al acertar (se detiene en caso de fallo para permitir estudiar la explicación)"
           >
             <Zap className={`w-3.5 h-3.5 ${autoAdvance ? 'text-sky-400 fill-sky-400' : 'text-slate-500'}`} />
             <span>Auto-avance: <strong className={autoAdvance ? 'text-sky-300' : 'text-slate-400'}>{autoAdvance ? 'ON' : 'OFF'}</strong></span>
@@ -445,6 +449,44 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
                   );
                 })}
               </div>
+
+              {/* Feedback explicativo inline en modo práctica */}
+              {isPracticeMode && isAnswered && !currentAnswer?.isCorrect && (
+                <div className="mt-4 p-4 rounded-xl bg-rose-950/40 border border-rose-500/40 space-y-3 animate-fade-in shadow-glow-rose">
+                  <div className="flex items-center justify-between gap-2">
+                    <div className="flex items-center gap-2 text-rose-400 font-bold text-sm">
+                      <XCircle className="w-5 h-5 flex-shrink-0" />
+                      <span>Respuesta incorrecta — Revisa la explicación</span>
+                    </div>
+                    <button
+                      onClick={() => setActiveTab('explanation')}
+                      className="px-3 py-1 bg-sky-500/20 hover:bg-sky-500/30 text-sky-300 border border-sky-400/40 rounded-lg text-xs font-bold transition-all flex items-center gap-1 flex-shrink-0"
+                    >
+                      <FileText className="w-3.5 h-3.5" />
+                      <span>Ver Cuadros y Referencias</span>
+                    </button>
+                  </div>
+                  <div className="text-xs text-slate-300 leading-relaxed border-t border-rose-500/20 pt-2 font-normal">
+                    <FormattedText text={currentQuestion.explanation.text} />
+                  </div>
+                </div>
+              )}
+
+              {isPracticeMode && isAnswered && currentAnswer?.isCorrect && (
+                <div className="mt-4 p-3 rounded-xl bg-emerald-950/40 border border-emerald-500/40 flex items-center justify-between text-emerald-400 font-bold text-sm animate-fade-in shadow-glow-emerald">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-5 h-5 flex-shrink-0" />
+                    <span>¡Respuesta correcta! {autoAdvance && currentIndex < session.questions.length - 1 ? 'Avanzando a la siguiente...' : ''}</span>
+                  </div>
+                  <button
+                    onClick={() => setActiveTab('explanation')}
+                    className="px-2.5 py-1 bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-500/30 rounded-lg text-xs font-bold transition-all flex items-center gap-1"
+                  >
+                    <FileText className="w-3.5 h-3.5" />
+                    <span>Ver Explicación</span>
+                  </button>
+                </div>
+              )}
 
             </div>
           )}
