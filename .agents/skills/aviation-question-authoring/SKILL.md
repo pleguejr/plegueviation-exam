@@ -21,13 +21,17 @@ This skill governs the creation, review, and verification of multiple-choice que
    - State the aircraft model, engine type, weight configuration (e.g., MTOW standard vs modified), and flight condition explicitly in the stem.
    - Use direct, affirmative phrasing whenever possible. If negative phrasing is unavoidable, capitalize and bold: **NO**, **EXCEPTO**, **INCORRECTA**.
 
-3. **High-Quality Distractors (Plausible Alternatives)**:
+3. **High-Quality Distractors & Psychometric Balance**:
+   - Strictly follow the `easa-distractor-engineering` skill.
+   - Maintain strict length and grammatical symmetry across all 4 options ($\pm 15\%$).
+   - Never place parenthetical explanations, version notes, or justifications exclusively in the correct option (move them to `explanation.text`).
    - Distractors must represent real-world pilot misconceptions, adjacent configuration values, or related phase-of-flight figures (e.g., confusing $V_X$ with $V_Y$, Flap T/O with Flap LAND, or standard MTOW with modified MTOW).
-   - Never use "Todas las anteriores" or "Ninguna de las anteriores".
+   - Never use "Todas las anteriores", "Ninguna de las anteriores", or "A y B son correctas".
    - Keep options approximately equal in length, grammatical structure, and precision.
 
 4. **Detailed Explanations & Citations**:
    - Explanations must not only identify why the correct answer is right, but briefly clarify why key distractors are incorrect.
+   - Use Markdown tables or component references (`SpeedSummaryTable`, `PlanningMinimaTable`) inside explanations to provide rich visual summaries.
    - Exact references must cite: Document Name, Edition/Revision, Chapter/Section, Paragraph, and Page Number.
 
 ---

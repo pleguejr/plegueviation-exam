@@ -19,3 +19,9 @@ When generating or editing aviation questions, flight manuals, operations checkl
    * $V_{NE} = 160\text{ KIAS}$, $V_{NO} = 128\text{ KIAS}$, $V_A = 97\text{ KIAS}$, $V_{FE} = 85\text{ KIAS}$, $V_{SO} = 40\text{ KIAS}$, $V_{S1} = 47\text{ KIAS}$.
    * $V_R = 55\text{ KIAS}$, $V_X = 59\text{ KIAS}$, $V_Y = 73\text{ KIAS}$, $V_{GLIDE} = 65\text{ KIAS}$.
    * **Aproximación final**: Flaps 40° = `60-70 KIAS`, Short Field = `61 KIAS`.
+
+4. **Reglas Psicométricas de Redacción de Opciones y Distractores (EASA)**:
+   * **Simetría de longitud estricta**: Las 4 opciones ($A, B, C, D$) deben tener la misma longitud ($\pm 15\%$) y estructura gramatical idéntica.
+   * **Prohibidas las pistas en la opción correcta**: NUNCA incluir aclaraciones parentéticas exclusivas en la opción correcta (ej. notas de manual, conversiones o versiones). Todo el detalle técnico y cuadros deben residir en `explanation.text`.
+   * **Distractores realistas y competitivos**: Usar valores limítrofes reales (velocidades adyacentes, pesos de MTOW vs MLW, mínimos operacionales o umbrales FTL).
+   * **Prohibidas las meta-opciones**: Nunca usar *"Todas las anteriores"*, *"Ninguna de las anteriores"* ni *"A + B son correctas"*.
