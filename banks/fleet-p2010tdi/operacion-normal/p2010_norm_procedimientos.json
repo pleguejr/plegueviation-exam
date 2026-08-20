@@ -553,5 +553,375 @@
     "metadata": {
       "difficulty": 0.4
     }
+  },
+  {
+    "id": "P2010-NORM-016",
+    "subject_id": "p2010_normal_procedures",
+    "learning_objective": "AFM Sección 4 - Prueba de FADEC en Prueba de Motor (Run-Up)",
+    "stem": "Durante la prueba de motor en tierra (Engine Run-Up), ¿cuál es el procedimiento correcto y la respuesta esperada al pulsar el botón FADEC TEST?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mantener pulsado FADEC TEST: las RPM aumentan automáticamente a ~1900 RPM y conmutan los canales A y B",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Pulsar brevemente: el motor se apaga durante 3 segundos para calibrar los inyectores piezoeléctricos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Avanzar palanca al 100% y pulsar: la presión de admisión se reduce a cero para verificar el turbo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mantener pulsado con palanca en IDLE: las RPM se reducen a 500 RPM para comprobar el ralentí mínimo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El AFM Sección 4 (Párrafo 4.5 Before Takeoff) describe la prueba de FADEC: con la palanca de potencia en ralentí (IDLE), se presiona y mantiene presionado el botón FADEC TEST. La ECU aumenta automáticamente las RPM a unas 1900-2000 RPM, conmuta alternativamente entre el Canal A y el Canal B verificando sensores e inyectores, y las luces de aviso parpadean para confirmar el autotest antes de regresar a ralentí.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 4: Normal Procedures - Paragraph 4.5 Before Takeoff (Page 4-8)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-NORM-017",
+    "subject_id": "p2010_normal_procedures",
+    "learning_objective": "AFM Sección 4 - Procedimiento de Enfriamiento de Turbo antes del Apagado",
+    "stem": "¿Cuál es el procedimiento y tiempo de enfriamiento del turbocompresor antes de cortar el motor según el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mantener el motor en ralentí durante al menos 2 minutos antes de seleccionar Engine Master en OFF",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Apagar inmediatamente el motor tras estacionar sin necesidad de período de enfriamiento",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Acelerar a 1.500 RPM durante 5 minutos con la calefacción de cabina abierta al máximo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Desconectar la bomba eléctrica y apagar el alternador manteniendo el motor a 1.200 RPM",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El AFM (Sección 4, Párrafo 4.10 Engine Shutdown) exige mantener el motor en ralentí (IDLE) durante al menos 2 minutos continuados antes de apagarlo (el tiempo de rodaje a bajo régimen computa para este período). Esto evita el sobrecalentamiento residual en los cojinetes del turbocompresor y la carbonización del aceite.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 4: Normal Procedures - Paragraph 4.10 Engine Shutdown (Page 4-14)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-NORM-018",
+    "subject_id": "p2010_normal_procedures",
+    "learning_objective": "AFM Sección 4 - Procedimiento de Despegue en Campo Corto (Short Field Takeoff)",
+    "stem": "¿Cuál es la técnica y velocidades recomendadas para un despegue en campo corto (Short Field Takeoff) en la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flap T/O, frenos aplicados al 100% Load, soltar frenos, rotar a 55 KIAS y franquear obstáculo a 65 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Flap UP, carrera rodante continua sin frenos, rotar a 65 KIAS y mantener 82 KIAS en ascenso",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Flap LAND, frenos aplicados al 70% Load, soltar frenos, rotar a 50 KIAS y mantener 60 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Flap T/O, aplicar potencia progresiva en 20 segundos, rotar a 60 KIAS y ascender a 90 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según el AFM Sección 4 (Párrafo 4.6 Takeoff), para despegues en campo corto: se selecciona Flap T/O, se aplican frenos mientras se avanza la palanca al 100% Load comprobando parámetros de motor; se sueltan los frenos, se inicia rotación a 55 KIAS y se mantiene 65 KIAS hasta franquear el obstáculo de 50 ft.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 4: Normal Procedures - Short Field Takeoff (Page 4-9)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "P2010-NORM-019",
+    "subject_id": "p2010_normal_procedures",
+    "learning_objective": "AFM Sección 4 - Procedimiento de Aterrizaje en Campo Corto (Short Field Landing)",
+    "stem": "¿Cuál es la configuración y velocidad de aproximación final recomendada para un aterrizaje en campo corto (Short Field Landing)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flap LAND, aproximación a 60 KIAS sobre el umbral y frenada máxima tras toma de ruedas principales",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Flap T/O, aproximación a 70 KIAS sobre el umbral con toques suaves de frenos intermitentes",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Flap 0° (limpia), aproximación a 75 KIAS sobre el umbral para mantener mayor control aerodinámico",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Flap LAND, aproximación a 50 KIAS con motor al ralentí desde 500 ft AGL de altitud",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El AFM Sección 4 especifica para aterrizaje en campo corto: Flap LAND (posición completa), velocidad de aproximación de 60 KIAS (obstáculo de 50 ft), cortar potencia al cruzar el umbral, tomar contacto firme con ruedas principales y aplicar frenada máxima proporcional sin bloquear ruedas.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 4: Normal Procedures - Short Field Landing (Page 4-13)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-NORM-020",
+    "subject_id": "p2010_normal_procedures",
+    "learning_objective": "AFM Sección 4 - Procedimiento de Motor y al Aire (Go-Around / Balked Landing)",
+    "stem": "Al iniciar una maniobra de motor y al aire (Balked Landing) en aproximación final, ¿cuál es la secuencia correcta de pilotaje?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Palanca de potencia al 100% Load, Flap en posición T/O, ascender a 65 KIAS y retraer a Flap UP a 75 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Retraer inmediatamente flaps a 0°, aplicar 100% Load y mantener velocidad constante de 90 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mantener Flap LAND, acelerar a 82 KIAS en vuelo nivelado y luego iniciar viraje escarpado",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pulsar FADEC FORCE B, ascender a 60 KIAS con Flap LAND hasta alcanzar la altitud de crucero",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con el procedimiento de Balked Landing (AFM Sección 4, Párrafo 4.9): 1) Palanca de potencia a 100% Load, 2) Flaps inmediatamente a posición T/O, 3) Establecer velocidad de 65 KIAS hasta alcanzar altitud segura y obstáculos franqueados, 4) Acelerar a 75 KIAS y retraer flaps a posición UP (0°).",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 4: Normal Procedures - Balked Landing (Page 4-13)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-NORM-021",
+    "subject_id": "p2010_normal_procedures",
+    "learning_objective": "AFM Sección 4 - Operación de Bomba Eléctrica Auxiliar de Combustible",
+    "stem": "¿En qué fases de vuelo es obligatorio mantener la bomba eléctrica auxiliar de combustible (Electric Fuel Pump) en posición ON?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Despegue, aterrizaje, conmutación de tanque de combustible y maniobras a baja cota",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Únicamente durante el arranque inicial en frío antes de encender el generador",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Durante todo el vuelo de crucero de forma continua desde el despegue al corte",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo cuando la indicación de presión de combustible en cabina entre en arco rojo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las listas de chequeo normales del AFM establecen que la bomba auxiliar eléctrica (Fuel Pump) debe seleccionarse en ON para: arranque, rodaje, despegue, ascenso inicial, conmutación de depósito de combustible (Left/Right) y aproximación/aterrizaje, para garantizar presión continua ante cualquier fluctuación mecánica.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 4: Normal Procedures - Checklists (Pages 4-6 to 4-12)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-NORM-022",
+    "subject_id": "p2010_normal_procedures",
+    "learning_objective": "AFM Sección 4 - Gestión del Selector de Depósitos de Combustible en Crucero",
+    "stem": "¿Cuál es la recomendación del AFM sobre la alternancia del selector de combustible (Fuel Selector) durante el vuelo de crucero?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alternar entre tanque LEFT y RIGHT periódicamente (cada 30-40 minutos) para evitar desequilibrio lateral",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Consumir completamente el tanque LEFT antes de conmutar por primera vez al tanque RIGHT",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mantener el selector en posición BOTH durante todo el vuelo sin manipular la válvula",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Conmutar de tanque únicamente en el descenso final antes de iniciar la aproximación",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La Tecnam P2010 TDI dispone de un selector con posiciones LEFT, RIGHT y OFF (no dispone de posición BOTH). El AFM recomienda alternar entre los tanques izquierdo y derecho aproximadamente cada 30 a 40 minutos para mantener el equilibrio lateral del centro de gravedad de la aeronave.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 4: Normal Procedures - Cruise (Page 4-11)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-NORM-023",
+    "subject_id": "p2010_normal_procedures",
+    "learning_objective": "AFM Sección 4 - Despegue con Viento Cruzado",
+    "stem": "Durante la carrera de despegue con viento cruzado en la Tecnam P2010 TDI, ¿cuál es la técnica de mandos correcta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deflexión de alerones hacia el lado del viento, corregir guiñada con timón de dirección y rotar limpiamente a 60 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Deflexión de alerones en contra del viento y aplicar freno de la rueda contraria durante toda la aceleración",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mantener mandos en posición neutral y retrasar la rotación hasta alcanzar la velocidad de maniobra Va (119 KIAS)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Seleccionar Flap LAND para aumentar la estabilidad direccional del avión sobre el pavimento de pista",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El AFM Sección 4 (Crosswind Takeoff) instruye: deflexión de alerones hacia el lado de procedencia del viento para contrarrestar la tendencia a levantar el plano de barlovento, mantener el eje de pista con timón de dirección y realizar una rotación decidida a 60 KIAS para evitar saltos laterales.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 4: Normal Procedures - Paragraph 4.6 (Page 4-9)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-NORM-024",
+    "subject_id": "p2010_normal_procedures",
+    "learning_objective": "AFM Sección 4 - Calentamiento de Motor y Temperaturas Mínimas para Despegue",
+    "stem": "¿Cuáles son las temperaturas mínimas de refrigerante y aceite requeridas para poder aplicar potencia de despegue en la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Temperatura de refrigerante mínima: 60°C | Temperatura de aceite mínima: 50°C",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Temperatura de refrigerante mínima: 40°C | Temperatura de aceite mínima: 30°C",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Temperatura de refrigerante mínima: 75°C | Temperatura de aceite mínima: 70°C",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Temperatura de refrigerante mínima: 50°C | Temperatura de aceite mínima: 60°C",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Antes de aplicar potencia de despegue (100% Load), el AFM exige verificar que los parámetros de motor hayan alcanzado su rango operativo mínimo: temperatura de refrigerante (Coolant Temp) de al menos 60°C y temperatura de aceite (Oil Temp) de al menos 50°C.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 4: Normal Procedures - Before Takeoff (Page 4-8)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-NORM-025",
+    "subject_id": "p2010_normal_procedures",
+    "learning_objective": "AFM Sección 4 - Procedimiento de Rodaje (Taxiing)",
+    "stem": "Durante el rodaje de la Tecnam P2010 TDI en días calurosos, ¿qué precaución operacional se debe observar respecto a la calefacción de cabina?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mantener Cabin Heat / Defrost en OFF para evitar introducir aire caliente y optimizar la refrigeración del motor",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Abrir la calefacción al máximo para disipar el calor del radiador hacia la cabina en todo momento",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Conectar el interruptor FADEC FORCE B para acelerar el régimen de la bomba de agua del motor",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Apagar el alternador principal durante el rodaje para reducir la carga térmica del compartimento",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El AFM Sección 4 recomienda mantener los mandos de Cabin Heat y Defrost cerrados (OFF) durante el rodaje para garantizar una ventilación limpia y evitar elevar innecesariamente la temperatura de cabina antes del vuelo.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 4: Normal Procedures - Taxi (Page 4-7)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
   }
 ]

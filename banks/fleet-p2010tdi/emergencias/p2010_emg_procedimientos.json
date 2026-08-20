@@ -556,5 +556,375 @@
     "metadata": {
       "difficulty": 0.4
     }
+  },
+  {
+    "id": "P2010-EMG-016",
+    "subject_id": "p2010_emergency_procedures",
+    "learning_objective": "AFM Sección 3 - Fallo del Gobernador de Hélice (Propeller Governor Failure)",
+    "stem": "En caso de fallo del gobernador de hélice en vuelo con la hélice fija en paso bajo (alta RPM y sobrevelocidad potencial), ¿cuál es el procedimiento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reducir palanca de potencia para mantener RPM dentro de límites (máx 2300 RPM) y volar a velocidad reducida",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Avanzar palanca de potencia al 100% Load y picar el morro para aprovechar el empuje remanente",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cortar el Engine Master inmediatamente y prepararse para un aterrizaje forzoso en planeo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Desconectar la batería principal y ciclar los disyuntores térmicos del panel de fusibles",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El AFM Sección 3 (Párrafo 3.7 Propeller Malfunctions) indica que si la hélice queda bloqueada en paso bajo, el piloto debe modular la palanca de potencia hacia atrás para mantener las RPM por debajo de la línea roja de 2300 RPM y reducir la velocidad indicada para evitar sobrevelocidad de motor, aterrizando en el aeródromo más próximo.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 3: Emergency Procedures - Paragraph 3.7 (Page 3-9)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "P2010-EMG-017",
+    "subject_id": "p2010_emergency_procedures",
+    "learning_objective": "AFM Sección 3 - Reencendido de Motor en Vuelo por Molinete (Windmilling Restart)",
+    "stem": "Para ejecutar un reencendido de motor en vuelo por molinete de la hélice (Windmilling Restart) sin utilizar el arrancador eléctrico, ¿qué velocidad debe mantenerse?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mantener al menos 84 KIAS con el Engine Master en ON y palanca de potencia al ralentí",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mantener 60 KIAS con flaps en posición LAND y palanca de potencia al 100% Load",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mantener 130 KIAS (Vno) en picado pronunciado con el selector de combustible en OFF",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mantener 52 KIAS cerca de la pérdida con el disyuntor de FADEC desconectado",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El AFM Sección 3 (In-Flight Engine Restart - Windmilling) especifica: 1) Selector de combustible en el tanque con mayor cantidad, 2) Bomba eléctrica ON, 3) Palanca de potencia IDLE, 4) Engine Master ON, 5) Mantener velocidad de planeo de 84 KIAS para permitir que el flujo de aire haga girar la hélice e inicie la inyección.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 3: Emergency Procedures - Paragraph 3.4 In-Flight Restart (Page 3-5)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "P2010-EMG-018",
+    "subject_id": "p2010_emergency_procedures",
+    "learning_objective": "AFM Sección 3 - Aterrizaje sin Flaps (Flap Inoperative Landing)",
+    "stem": "En caso de fallo total del actuador de flaps quedando trabados en posición UP (0°), ¿cuál es la velocidad de referencia final (Vref) y el incremento de carrera de pista?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aproximación a 75 KIAS y prever un incremento aproximado del 35% en la distancia de aterrizaje",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Aproximación a 60 KIAS sin ninguna variación en la distancia de frenado calculada",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aproximación a 90 KIAS y prever una duplicación obligatoria de la longitud de pista",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aproximación a 52 KIAS manteniendo un ángulo de cabeceo pronunciado sobre el umbral",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según el AFM Sección 3 (Párrafo 3.10 Flap System Failure): en aterrizajes sin flaps (Flaps UP), la velocidad de aproximación recomendada es de 75 KIAS (frente a los 65 KIAS normales de Flap LAND) y la distancia de aterrizaje en tierra se incrementa aproximadamente un 35% debido a la mayor velocidad de toma.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 3: Emergency Procedures - Paragraph 3.10 (Page 3-12)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-EMG-019",
+    "subject_id": "p2010_emergency_procedures",
+    "learning_objective": "AFM Sección 3 - Desvío o Bloqueo del Compensador de Profundidad (Elevator Trim Runaway)",
+    "stem": "Si se experimenta un movimiento descontrolado o bloqueo del compensador de profundidad (Elevator Trim Runaway), ¿cuál es la acción inmediata?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sujetar firmemente la palanca de mandos, desconectar el disyuntor (Circuit Breaker) del Trim y compensar manualmente",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Soltar la palanca de mandos para permitir que el compensador alcance su tope mecánico final",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Extender inmediatamente flaps a posición LAND para equilibrar las fuerzas aerodinámicas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Apagar los alternadores y la batería principal para desenergizar todo el sistema eléctrico",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El AFM Sección 3 instruye: ante un trim runaway o fallo del compensador eléctrico, el piloto debe sujetar con firmeza la palanca para contrarrestar la fuerza aerodinámica, tirar inmediatamente del disyuntor 'PITCH TRIM' en el panel de breakers y utilizar la rueda de compensación manual para ajustar el esfuerzo.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 3: Emergency Procedures - Trim Malfunction (Page 3-13)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-EMG-020",
+    "subject_id": "p2010_emergency_procedures",
+    "learning_objective": "AFM Sección 3 - Humo o Fuego Eléctrico en Cabina (Electrical Fire in Flight)",
+    "stem": "Ante la presencia de humo denso o fuego de origen eléctrico en cabina durante el vuelo, ¿cuál es la secuencia inmediata de la checklist?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Emergency Switch: OFF | Master Switch: OFF | Cabin Vents: OPEN | Aterrizar en el aeródromo más próximo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cerrar todas las tomas de aire de cabina, encender la calefacción al máximo y ascender a FL100",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cortar el Engine Master inmediatamente y realizar un descenso de emergencia en barrena",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pulsar el botón FADEC TEST durante 30 segundos para resetear el bus de aviónica",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "AFM Sección 3 (Electrical Smoke / Fire in Flight): 1) Emergency Switch / Master Switch: OFF (cortar alimentación de sistemas no esenciales), 2) Cabin Heat: OFF, 3) Ventilaciones y tomas de aire: OPEN para disipar humo, 4) Usar extintor portátil si las llamas son visibles, 5) Aterrizar tan pronto como sea posible.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 3: Emergency Procedures - Paragraph 3.6 Fire in Flight (Page 3-7)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-EMG-021",
+    "subject_id": "p2010_emergency_procedures",
+    "learning_objective": "AFM Sección 3 - Apertura Inadvertida de Puerta de Cabina en Vuelo",
+    "stem": "Si una puerta de cabina se abre inadvertidamente tras el despegue o en vuelo, ¿cuál es la conducta recomendada por el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mantener control de vuelo a velocidad moderada (< 84 KIAS), no intentar cerrarla forzadamente y aterrizar con normalidad",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Realizar un viraje escarpado de 60° hacia el lado de la puerta para que la presión dinámica la cierre",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Apagar inmediatamente el motor y declarar emergencia Mayday para efectuar un aterrizaje forzoso",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Acelerar a la velocidad máxima Vne (163 KIAS) para reducir la resistencia parásita del fuselaje",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El AFM indica que una puerta abierta en vuelo no compromete la integridad estructural ni el control de la aeronave. El piloto debe priorizar el vuelo del avión (Aviate), mantener una velocidad reducida y segura (~84 KIAS), evitar distracciones intentando cerrarla con fuerza en vuelo y completar el circuito de tránsito para aterrizar.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 3: Emergency Procedures - Inadvertent Door Opening (Page 3-14)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-EMG-022",
+    "subject_id": "p2010_emergency_procedures",
+    "learning_objective": "AFM Sección 3 - Encuentro Inadvertido con Condiciones de Engelamiento (Icing)",
+    "stem": "En caso de entrar inadvertidamente en condiciones de formación de hielo en vuelo, ¿qué acciones contempla el procedimiento de escape del AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pitot Heat: ON, Cabin Heat/Defrost: ON, virar 180° para abandonar la zona y descender a aire más cálido",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Extender flaps a posición LAND para desprender el hielo acumulado en el borde de ataque del ala",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Reducir la velocidad por debajo de 52 KIAS para evitar el impacto de gotas superenfriadas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Apagar el alternador principal para evitar sobrecargas térmicas en el sistema de deshielo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La Tecnam P2010 TDI no está certificada para vuelo en condiciones de hielo conocidas (FIKI). Ante engelamiento inadvertido: 1) Calefacción de Pitot: ON, 2) Calefacción de cabina y desempañador: ON, 3) Ajustar potencia para mantener velocidad alta sin exceder límites, 4) Abandonar de inmediato el área de engelamiento (viraje de 180° o cambio de altitud).",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 3: Emergency Procedures - Inadvertent Icing (Page 3-15)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-EMG-023",
+    "subject_id": "p2010_emergency_procedures",
+    "learning_objective": "AFM Sección 3 - Fallo Total de Sistema Eléctrico y Garmin G1000 NXi",
+    "stem": "Ante un fallo eléctrico total que inhabilite las pantallas PFD y MFD del Garmin G1000 NXi, ¿qué instrumentos de respaldo proporcionan guiado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El instrumento de respaldo integrado electrónico (MD302 Standby Instrument) con su batería interna",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El receptor GPS portátil auxiliar instalado en el mamparo trasero de la cabina",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El panel de alarmas analógicas accionado por el tubo Pitot secundario",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No se dispone de ningún instrumento de actitud una vez que se apagan las pantallas",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La Tecnam P2010 TDI equipa un instrumento electrónico de respaldo independiente (Midi-SAM MD302 Standby Attitude Module o similar) con sensores inerciales y batería interna autónoma, que proporciona actitud de vuelo, velocidad indicada y altitud barométrica ante la pérdida de los buses principales.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 3: Emergency Procedures - Dual AHRS/Display Failure (Page 3-11)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-EMG-024",
+    "subject_id": "p2010_emergency_procedures",
+    "learning_objective": "AFM Sección 3 - Parada Involuntaria de Motor en Vuelo a Gran Altitud",
+    "stem": "Si el motor se apaga súbitamente a 12.000 ft sobre terreno montañoso, ¿qué radio de planeo aproximado (Glide Distance) ofrece la aeronave?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aproximadamente 2.0 NM por cada 1.000 ft de pérdida de altitud (ratio de planeo 1:12 a 84 KIAS)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Aproximadamente 0.5 NM por cada 1.000 ft de pérdida de altitud (ratio de planeo 1:3 a 65 KIAS)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aproximadamente 4.0 NM por cada 1.000 ft de pérdida de altitud (ratio de planeo 1:24 a 100 KIAS)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aproximadamente 1.0 NM por cada 1.000 ft de pérdida de altitud (ratio de planeo 1:6 a 52 KIAS)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La Tecnam P2010 TDI en configuración limpia (Flaps UP) a su velocidad de mejor planeo de 84 KIAS tiene una razón de planeo certificada de 1:12. Esto equivale a una distancia horizontal de aproximadamente 2 millas náuticas por cada 1.000 pies de altitud perdida en aire en calma.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 3: Emergency Procedures - Paragraph 3.3 Best Glide (Page 3-4)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-EMG-025",
+    "subject_id": "p2010_emergency_procedures",
+    "learning_objective": "AFM Sección 3 - FADEC Warning en Vuelo con Pérdida de Respuesta de Potencia",
+    "stem": "Si en vuelo ambas luces FADEC A y FADEC B parpadean simultáneamente y la palanca no responde, ¿cuál es la acción con el switch FADEC Backup?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Conmutar el selector a la posición 'FADEC FORCE B' para transferir manualmente el control de inyección",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Conmutar el interruptor a OFF y restablecer la palanca de gases a la posición de despegue",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Desconectar la batería de emergencia de FADEC y volar con control por gravedad",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mantener pulsado FADEC TEST durante 60 segundos hasta resetear los disyuntores de aviónica",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El AFM Sección 3 indica que ante un fallo de control o congelación de empuje con advertencia FADEC dual, se debe utilizar el interruptor de respaldo 'FADEC FORCE B' para forzar la toma de control por parte del Canal B de la ECU, asegurando la continuidad del suministro de combustible.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 3: Emergency Procedures - Dual FADEC Warning (Page 3-6)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
   }
 ]

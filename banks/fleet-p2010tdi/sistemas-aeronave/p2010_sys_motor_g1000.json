@@ -553,5 +553,375 @@
     "metadata": {
       "difficulty": 0.3
     }
+  },
+  {
+    "id": "P2010-SYS-016",
+    "subject_id": "p2010_aircraft_systems",
+    "learning_objective": "AFM Sección 7 - Arquitectura del Motor Continental CD-170",
+    "stem": "¿Cuáles son las características constructivas y ciclo de funcionamiento del motor Continental CD-170 instalado en la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "4 cilindros en línea, ciclo diésel 4 tiempos, inyección Common Rail, turbocompresor y refrigeración líquida",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "4 cilindros horizontalmente opuestos, ciclo Otto, carburador de flotador y refrigeración por aire",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "6 cilindros en V, inyección mecánica continua indirecta, doble turbo y lubricación por cárter seco",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "2 rotores Wankel, inyección electrónica monopunto y refrigeración mixta por aceite y aire",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El Continental CD-170 (anteriormente Centurion) es un motor aeronáutico de 4 cilindros en línea, 4 tiempos, ciclo diésel con encendido por compresión, inyección directa a alta presión tipo Common Rail, sobrealimentado por turbocompresor con intercooler y sistema de refrigeración líquida con circuito cerrado.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 7: Aircraft & Systems Description - Powerplant (Page 7-8)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-017",
+    "subject_id": "p2010_aircraft_systems",
+    "learning_objective": "AFM Sección 7 - Sistema Eléctrico de 28V DC y Batería de Emergencia",
+    "stem": "¿Cómo está configurada la arquitectura eléctrica de 28V DC y qué función cumple la Batería de Emergencia del FADEC?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alternador principal de 28V/70A, batería principal de 24V y batería de emergencia exclusiva para 30 min de FADEC",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Dos generadores de 12V conectados en paralelo con una sola batería de plomo para todo el avión",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Alternador de 115V AC con transformador rectificador y batería de níquel-cadmio de 12V",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Sistema de 14V DC sin batería de reserva, alimentado por dinamo mecánica de hélice",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El sistema eléctrico de la Tecnam P2010 TDI opera a 28V DC suministrados por un alternador principal accionado por motor (28V, 70A) y una batería principal de 24V (13.6 Ah). Adicionalmente dispone de una batería de respaldo de emergencia que asegura al menos 30 minutos de suministro eléctrico ininterrumpido al sistema FADEC ante fallo total de generación.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 7: Systems - Electrical System (Page 7-12)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-SYS-018",
+    "subject_id": "p2010_aircraft_systems",
+    "learning_objective": "AFM Sección 7 - Sistema de Refrigeración Líquida e Intercambiador de Calor",
+    "stem": "¿Cómo se refrigera el motor Continental CD-170 y cómo se suministra la calefacción a la cabina de pasaje?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Circuito cerrado de refrigerante (agua/glicol al 50:50) cuyo intercambiador térmico alimenta la calefacción de cabina",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Refrigeración por aire directo sobre las aletas de los cilindros y manguito de escape para la calefacción",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Circuito de aceite presurizado sin agua que utiliza un quemador eléctrico auxiliar para la cabina",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Refrigeración por evaporación de combustible Jet A-1 y resistencias cerámicas de 28V para la cabina",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El motor dispone de refrigeración líquida de circuito cerrado con una mezcla 50:50 de agua y anticongelante BASF Glysantin G48. El calor del refrigerante pasa por un radiador frontal con válvula termostática y por un intercambiador de calor de cabina (Cabin Heat), eliminando el riesgo de intoxicación por monóxido de carbono típico de los manguitos de escape.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 7: Systems - Cooling System (Page 7-10)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-SYS-019",
+    "subject_id": "p2010_aircraft_systems",
+    "learning_objective": "AFM Sección 7 - Modo de Reversión de la Suite de Aviónica Garmin G1000 NXi",
+    "stem": "En la suite de aviónica Garmin G1000 NXi, ¿qué ocurre al presionar el botón rojo 'DISPLAY BACKUP' en el panel de audio GMA 1360?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fuerza el modo de reversión presentando instrumentos de vuelo e instrumentos de motor combinados en una pantalla",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Apaga ambas pantallas y transfiere la navegación al transponder GTX 345R",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Reinicia el sistema operativo de los dos procesadores gráficos en vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Conecta el piloto automático en modo de descenso de emergencia automático",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El botón rojo 'DISPLAY BACKUP' (Reversionary Mode) en el panel de audio GMA 1360 permite forzar el modo de reversión: en caso de fallo de una de las pantallas (PFD o MFD), la pantalla operativa restante muestra un formato compuesto que integra la instrumentación primaria de vuelo (PFD) y la franja de parámetros de motor (EIS).",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 7: Systems - Garmin G1000 NXi Avionics (Page 7-15)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-020",
+    "subject_id": "p2010_aircraft_systems",
+    "learning_objective": "AFM Sección 7 - Sistema de Retorno de Combustible a los Tanques Alares",
+    "stem": "¿Por qué el sistema de combustible del Continental CD-170 retorna combustible caliente desde la bomba de alta presión?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El exceso de combustible comprimido absorbe calor del motor y se recircula al tanque seleccionado para atemperarlo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Para evitar que el tanque de combustible opuesto se vacíe más rápidamente por gravedad",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Para purgar continuamente el agua acumulada en el fondo de los depósitos alares",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Para lubricar mecánicamente el sensor de flujo de combustible antes de la inyección",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La bomba de alta presión del sistema Common Rail bombea más combustible del que se inyecta en los cilindros. El combustible excedente absorbe calor del motor y se retorna al depósito alar seleccionado a través de una línea de retorno, lo que ayuda a calentar el combustible del tanque y previene la cristalización de parafina a bajas temperaturas en altitud.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 7: Systems - Fuel System (Page 7-11)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "P2010-SYS-021",
+    "subject_id": "p2010_aircraft_systems",
+    "learning_objective": "AFM Sección 7 - Sistema de Hélice MT-Propeller y Gobernador Electrónico",
+    "stem": "¿Qué tipo de hélice equipa la Tecnam P2010 TDI y cómo se controla el paso de las palas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hélice tripala de madera/composite MT-Propeller con paso variable controlado automáticamente por el FADEC",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Hélice bipala de aluminio de paso fijo sin posibilidad de variación de paso",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Hélice cuadripala de paso variable con palanca de control de paso azul manual en cabina",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Hélice reversible para frenado hidrodinámico accionada por motor eléctrico de 24V",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Equipa una hélice MT-Propeller MTV-6-A/190-69 de 3 palas fabricada en madera laminada y recubierta de material compuesto de fibra de vidrio con borde de ataque de acero inoxidable. El paso de la hélice se regula de forma continua y automática mediante una válvula electrohidráulica gobernada por el FADEC mediante presión de aceite de motor (Single Lever Control).",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 7: Systems - Propeller System (Page 7-9)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-SYS-022",
+    "subject_id": "p2010_aircraft_systems",
+    "learning_objective": "AFM Sección 7 - Sistema de Flaps Eléctricos y Mandos de Vuelo",
+    "stem": "¿Cómo se accionan las superficies hipersustentadoras (Flaps) en la Tecnam P2010 TDI y qué posiciones disponen?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Accionamiento electromecánico con posiciones fijas: UP (0°), T/O (15°) y LAND (40°)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Accionamiento hidráulico continuo regulable entre 0° y 50° mediante palanca de piso",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Accionamiento manual por palanca de trinquete con posiciones de 10°, 20° y 30°",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Accionamiento neumático automático que se despliega según la velocidad anemométrica",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los flaps de la Tecnam P2010 TDI son accionados por un actuador lineal eléctrico controlado por un selector de palanca en la consola central, disponiendo de tres posiciones preseleccionadas e indicación en el PFD/instrumento: Flap UP (0°), Flap T/O (15°) y Flap LAND (40°).",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 7: Systems - Flight Controls (Page 7-5)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-023",
+    "subject_id": "p2010_aircraft_systems",
+    "learning_objective": "AFM Sección 7 - Sistema de Frenos Hidráulicos y Freno de Estacionamiento",
+    "stem": "¿Cómo funciona el sistema de frenado y el freno de estacionamiento (Parking Brake) en la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Frenos de disco hidráulicos independientes en ruedas principales accionados por los pedales y válvula de bloqueo de presión",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Frenos de tambor mecánicos accionados por varillas de acero conectadas a una sola palanca central",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Frenos neumáticos que requieren presurización previa del circuito mediante botella de nitrógeno",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Frenos electromagnéticos regenerativos que recargan la batería principal durante la desaceleración",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El sistema de frenos cuenta con dos circuitos hidráulicos independientes con líquido hidráulico de aviación (MIL-PRF-5606), accionados mediante las puntas de los pedales del timón (Toe Brakes) sobre los frenos de disco de las ruedas del tren principal. El freno de mano retiene la presión hidráulica en los bombines mediante una válvula mecánica.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 7: Systems - Brake System (Page 7-7)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-024",
+    "subject_id": "p2010_aircraft_systems",
+    "learning_objective": "AFM Sección 7 - Sistema de Tubo Pitot y Estática Calefactada",
+    "stem": "¿Dónde se ubica la toma Pitot-Estática en la Tecnam P2010 TDI y cómo se protege contra la formación de hielo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mástil Pitot-estático calefactado eléctricamente (Pitot Heat) ubicado bajo el semiala izquierda",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Tubo Pitot sin calefacción ubicado en el cono de morro junto a la hélice",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Tomas de presión estática en el empenaje vertical calentadas por sangrado de motor",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Sondas acústicas ultrasónicas instaladas en los bordes marginales de ambas alas",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El sistema Pitot-Estático primario se encuentra integrado en un mástil montado bajo el intradós del semiala izquierda. El mástil cuenta con un elemento calefactor eléctrico de 28V accionado por el interruptor 'PITOT HEAT' en el panel de interruptores para evitar el bloqueo por hielo.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 7: Systems - Pitot-Static System (Page 7-14)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-025",
+    "subject_id": "p2010_aircraft_systems",
+    "learning_objective": "AFM Sección 7 - Transponder ADS-B y Vigilancia de Tráfico TIS",
+    "stem": "¿Qué capacidades de vigilancia y tráfico proporciona el transponder Garmin GTX 345R integrado con el G1000 NXi?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Modo S con ADS-B Out (1090 MHz Extended Squitter) y recepción de tráfico ADS-B In en el MFD",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Modo A/C exclusivamente sin capacidad de emisión de datos de altitud de presión ni GPS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Interrogador activo de radar secundario TCAS II con capacidad de generar maniobras de resolución",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Sistema de enlace de datos militar Link 16 para comunicaciones tácticas cifradas",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El transponder integrado Garmin GTX 345R es un equipo Modo S que cumple con el mandato ADS-B Out transmitiendo posición GPS de alta integridad, altitud barométrica e identificación de vuelo, e incorpora receptor ADS-B In / TIS-B para visualizar blancos de tráfico circundantes y alertas de proximidad en el PFD y MFD.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 7: Systems - Transponder & Traffic System (Page 7-16)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
   }
 ]

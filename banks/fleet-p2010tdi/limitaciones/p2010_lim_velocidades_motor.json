@@ -553,5 +553,375 @@
     "metadata": {
       "difficulty": 0.3
     }
+  },
+  {
+    "id": "P2010-LIM-016",
+    "subject_id": "p2010_limitations",
+    "learning_objective": "AFM Sección 2 - Factores de Carga Límite (G-Limits)",
+    "stem": "¿Cuáles son los factores de carga límite certificados en la Tecnam P2010 TDI con flaps en posición UP (limpia) y con flaps extendidos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flaps UP: +3.8g / -1.52g | Flaps extendidos: +2.0g / 0g",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Flaps UP: +4.4g / -1.76g | Flaps extendidos: +2.5g / 0g",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Flaps UP: +3.5g / -1.00g | Flaps extendidos: +1.5g / -0.5g",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Flaps UP: +6.0g / -3.00g | Flaps extendidos: +3.0g / 0g",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con el AFM de la Tecnam P2010 TDI (Sección 2, Párrafo 2.11), los factores de carga límite en categoría Normal son: con flaps recogidos (Flaps UP) de +3.8g a -1.52g, y con flaps extendidos (Flap T/O o Flap LAND) de +2.0g a 0g. Las maniobras acrobáticas y las barrenas intencionadas están terminantemente prohibidas.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 2: Limitations - Paragraph 2.11 Maneuvring Load Factors (Page 2-11)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-LIM-017",
+    "subject_id": "p2010_limitations",
+    "learning_objective": "AFM Sección 2 - Techo Máximo Operativo de Servicio",
+    "stem": "¿Cuál es el techo máximo operativo de servicio (Maximum Operating Altitude) certificado para la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "18.000 ft de altitud de presión",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "14.000 ft de altitud de presión",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "12.500 ft de altitud de presión",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "25.000 ft de altitud de presión",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 2 (Párrafo 2.14) del AFM, el techo máximo de servicio operativo para la Tecnam P2010 TDI equipada con el motor Continental CD-170 turboalimentado es de 18.000 ft de altitud de presión.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 2: Limitations - Paragraph 2.14 Operating Altitudes (Page 2-13)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-LIM-018",
+    "subject_id": "p2010_limitations",
+    "learning_objective": "AFM Sección 2 - Temperatura Límite de Combustible en Tanque Alimentador",
+    "stem": "¿Cuál es el límite máximo y mínimo de temperatura de combustible en el tanque alimentador para el motor Continental CD-170?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mínima: -30°C | Máxima: +55°C",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mínima: -15°C | Máxima: +70°C",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mínima: -40°C | Máxima: +45°C",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mínima: 0°C | Máxima: +60°C",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El AFM (Sección 2, Tabla 2-3 Engine Limitations) establece que la temperatura de combustible en el tanque alimentador debe encontrarse entre un mínimo de -30°C y un máximo de +55°C para garantizar la correcta viscosidad y atomización en el sistema de inyección Common Rail.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 2: Limitations - Table 2-3 Powerplant Limitations (Page 2-6)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "P2010-LIM-019",
+    "subject_id": "p2010_limitations",
+    "learning_objective": "AFM Sección 2 - Limitaciones de Tiempo de Uso de Arrancador",
+    "stem": "¿Cuál es la limitación de ciclo de trabajo del motor de arranque (Starter Duty Cycle) en la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Máximo 10 segundos de accionamiento continuo, seguido de 20 segundos de enfriamiento",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Máximo 30 segundos de accionamiento continuo, seguido de 60 segundos de enfriamiento",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Máximo 20 segundos de accionamiento continuo, seguido de 10 segundos de enfriamiento",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Máximo 5 segundos de accionamiento continuo, seguido de 2 minutos de enfriamiento",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con las limitaciones de motor del AFM, el motor de arranque eléctrico tiene un límite de 10 segundos de giro continuado. Tras cada intento se debe esperar un período de enfriamiento de al menos 20 segundos antes del siguiente accionamiento (máximo 6 intentos antes de un descanso prolongado).",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 2: Limitations - Starter Limits (Page 2-8)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-LIM-020",
+    "subject_id": "p2010_limitations",
+    "learning_objective": "AFM Sección 2 - Altitudes Mínimas de Conexión del Piloto Automático GFC 700",
+    "stem": "En aeronaves con piloto automático Garmin GFC 700 instalado, ¿cuál es la altitud mínima de uso autorizada durante el despegue y en aproximación de precisión?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Despegue: 400 ft AGL | Aproximación de precisión (ILS): 80 ft AGL",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Despegue: 200 ft AGL | Aproximación de precisión (ILS): 200 ft AGL",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Despegue: 500 ft AGL | Aproximación de precisión (ILS): 50 ft AGL",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Despegue: 1.000 ft AGL | Aproximación de precisión (ILS): 150 ft AGL",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El Suplemento S03 del AFM relativo al Garmin GFC 700 establece las siguientes altitudes mínimas de desacoplamiento/uso: 400 ft AGL tras el despegue/ascenso inicial, 80 ft AGL en aproximaciones de precisión ILS con senda de planeo activa, y 200 ft AGL en aproximaciones de no precisión o en crucero.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 9: Supplements - Supplement S03 Garmin GFC 700 Autopilot"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "P2010-LIM-021",
+    "subject_id": "p2010_limitations",
+    "learning_objective": "AFM Sección 2 - Limitaciones de Temperatura Exterior (OAT)",
+    "stem": "¿Cuál es el rango de temperatura ambiente exterior (OAT) certificado para la operación normal de la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mínima: -40°C | Máxima: +50°C",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mínima: -20°C | Máxima: +40°C",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mínima: -30°C | Máxima: +45°C",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mínima: -10°C | Máxima: +55°C",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El AFM Sección 2 certifica la aeronave para operar en un rango de temperatura ambiente exterior comprendido entre -40°C (mínima) y +50°C (máxima). Operar fuera de estos límites puede degradar la electrónica de los FADEC y las tolerancias de los fluidos hidráulicos.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 2: Limitations - Paragraph 2.15 Ambient Temperature Limitations (Page 2-14)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-LIM-022",
+    "subject_id": "p2010_limitations",
+    "learning_objective": "AFM Sección 2 - Viento en Cola Máximo Demostrado",
+    "stem": "¿Cuál es la componente máxima de viento en cola (Tailwind Component) autorizada para el despegue y aterrizaje en la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "5 nudos",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "10 nudos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "15 nudos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "2 nudos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con el AFM (Sección 2 y Sección 5), la componente máxima admisible de viento en cola para operaciones normales de despegue y aterrizaje es de 5 nudos. Superar este valor incrementa notablemente las distancias de pista requeridas.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 2: Limitations - Wind Limitations (Page 2-12)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-LIM-023",
+    "subject_id": "p2010_limitations",
+    "learning_objective": "AFM Sección 2 - Presión de Aceite de Motor Continental CD-170",
+    "stem": "¿Cuáles son los límites de presión de aceite (mínimo, rango normal y máximo) del motor Continental CD-170 en vuelo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mínima: 1.0 bar | Rango normal: 2.5 a 6.0 bar | Máxima: 6.5 bar",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mínima: 0.5 bar | Rango normal: 1.5 a 4.0 bar | Máxima: 5.0 bar",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mínima: 2.0 bar | Rango normal: 4.0 a 8.0 bar | Máxima: 9.0 bar",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mínima: 1.5 bar | Rango normal: 3.0 a 5.0 bar | Máxima: 7.5 bar",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según la Tabla 2-3 (Powerplant Limitations) del AFM, la presión de aceite del Continental CD-170 tiene un mínimo de 1.0 bar (línea roja inferior), un rango normal de operación continua de 2.5 a 6.0 bar (arco verde), y un límite máximo permisible de 6.5 bar (línea roja superior).",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 2: Limitations - Table 2-3 Powerplant Limitations (Page 2-6)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "P2010-LIM-024",
+    "subject_id": "p2010_limitations",
+    "learning_objective": "AFM Sección 2 - Tipo de Combustibles de Aviación Autorizados",
+    "stem": "¿Cuáles son los tipos y especificaciones de combustible aprobados para su uso en la Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Jet A-1 (ASTM D1655), Jet A y Diésel automoción (EN 590)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "100LL Avgas exclusivamente con aditivo antihielo aprobado",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Gasolina de automoción 95/98 octanos (MOGAS EN 228)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Jet B y combustible sintético militar JP-4 sin aditivos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El motor Continental CD-170 es un motor ciclo diésel certificado para operar con combustible de turbina de aviación Jet A-1 (ASTM D1655), Jet A (ASTM D1655) y combustible diésel para automoción conforme a la norma europea EN 590. El uso de gasolinas tipo Avgas 100LL o MOGAS está terminantemente prohibido.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 2: Limitations - Approved Fuel Grades (Page 2-7)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-LIM-025",
+    "subject_id": "p2010_limitations",
+    "learning_objective": "AFM Sección 2 - Temperatura de Caja de Engranajes (Gearbox Temp)",
+    "stem": "¿Cuál es la temperatura máxima permisible de la caja reductora de engranajes (Gearbox Temperature) en el Continental CD-170?",
+    "options": [
+      {
+        "id": "A",
+        "text": "120°C de temperatura máxima en la caja reductora",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "140°C de temperatura máxima en la caja reductora",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "95°C de temperatura máxima en la caja reductora",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "105°C de temperatura máxima en la caja reductora",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La Tabla 2-3 del AFM establece que la temperatura máxima de la caja reductora de la hélice (Gearbox Temperature) es de 120°C. Si se supera este límite en vuelo, se debe reducir potencia para evitar el deterioro del embrague y los engranajes de reducción.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 2: Limitations - Table 2-3 (Page 2-6)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
   }
 ]
