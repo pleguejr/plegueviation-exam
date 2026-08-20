@@ -22,7 +22,7 @@
       },
       {
         "id": "D",
-        "text": "Techo: Mínimos de CAT I puros",
+        "text": "Techo: DA/H + 130 ft ; Visibilidad/RVR: RVR + 330 m",
         "is_correct": false
       }
     ],
@@ -82,22 +82,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Flota 100% reactor y dos pilotos de mando en cabina",
+        "text": "Requiere aprobación expresa del CCO y cumplimiento estricto de las limitaciones del MOA",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Sistema de Seguimiento de Vuelo (Flight Monitoring), aprobación de operaciones LVO y sistema automatizado de planificación de vuelos",
+        "text": "Sistema de Seguimiento de Vuelo, aprobación de operaciones LVO y sistema automatizado de planificación de vuelos",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "Autorización de ETOPS 120 minutos y radar meteorológico Doppler",
+        "text": "Se prohíbe el despacho en operaciones comerciales regulares de transporte de pasajeros, requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Contar con despachador presencial en todos los aeropuertos de destino",
+        "text": "Se autoriza únicamente como vuelo de posicionamiento técnico sin pasajeros a bordo, manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       }
     ],
@@ -157,23 +157,23 @@
     "options": [
       {
         "id": "A",
-        "text": "DA/H + 100 ft y RVR + 300 m",
-        "is_correct": false
+        "text": "DA/H o MDA/H + 400 ft | RVR/VIS + 1500 m",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "DA/H + 200 ft y RVR + 800 m",
+        "text": "DA/H + 200 ft | RVR/VIS + 800 m",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "MDA/H + 200 ft y VIS + 1000 m",
+        "text": "DA/H o MDA/H + 200 ft | RVR/VIS + 1000 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "DA/H o MDA/H + 400 ft y RVR/VIS + 1500 m",
-        "is_correct": true
+        "text": "DA/H + 100 ft | RVR + 300 m",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -194,7 +194,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Categoría RFFS 7 (RFFS >= 7)",
+        "text": "Categoría RFFS 7",
         "is_correct": true
       },
       {
@@ -232,7 +232,7 @@
     "options": [
       {
         "id": "A",
-        "text": "RFFS 4 en cualquier caso",
+        "text": "RFFS 8 si el NOTAM es > 82h ; RFFS 6 si el NOTAM es <= 82h (con alternativo RFFS >= 9 y sin diferidos en ATA 28, 29 y 34)",
         "is_correct": false
       },
       {
@@ -242,12 +242,12 @@
       },
       {
         "id": "C",
-        "text": "RFFS 5 si NOTAM > 72h; RFFS 4 si NOTAM <= 72h",
+        "text": "RFFS 2 si el NOTAM es > 52h ; RFFS 3 si el NOTAM es <= 52h (con alternativo RFFS >= 3 y sin diferidos en ATA 22, 23 y 28)",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No se permite ninguna reducción de categoría RFFS en destino",
+        "text": "RFFS 12 si el NOTAM es > 102h ; RFFS 8 si el NOTAM es <= 102h (con alternativo RFFS >= 13 y sin diferidos en ATA 32, 33 y 38)",
         "is_correct": false
       }
     ],
@@ -269,12 +269,12 @@
     "options": [
       {
         "id": "A",
-        "text": "RFFS 6 si NOTAM > 72h; RFFS 5 si NOTAM <= 72h",
+        "text": "RFFS 6 si NOTAM > 82h ; RFFS 5 si NOTAM <= 82h (cumpliendo condicionantes de origen/destino y sistemas no diferidos)",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "RFFS 7 en todos los casos",
+        "text": "RFFS 3 si NOTAM > 52h ; RFFS 2 si NOTAM <= 52h (cumpliendo condicionantes de origen/destino y sistemas no diferidos)",
         "is_correct": false
       },
       {
@@ -284,7 +284,7 @@
       },
       {
         "id": "D",
-        "text": "RFFS 3 con preaviso",
+        "text": "RFFS 8 si NOTAM > 102h ; RFFS 7 si NOTAM <= 102h (cumpliendo condicionantes de origen/destino y sistemas no diferidos)",
         "is_correct": false
       }
     ],
@@ -343,22 +343,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Sistema de Protección contra Incendios (ATA 26), Mandos de Vuelo (ATA 27) y Tren de Aterrizaje / Frenos (ATA 32)",
+        "text": "Sistema de Protección contra Incendios, Mandos de Vuelo y Tren de Aterrizaje / Frenos",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Sistema Eléctrico (ATA 24) y Sistema de Combustible (ATA 28)",
+        "text": "Requiere aprobación expresa del CCO y cumplimiento estricto de las limitaciones del MOA",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Sistema de Oxígeno (ATA 35) y Luces (ATA 33)",
+        "text": "Se prohíbe el despacho en operaciones comerciales regulares de transporte de pasajeros",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Piloto Automático (ATA 22) y Radar Meteorológico (ATA 34)",
+        "text": "Se autoriza únicamente como vuelo de posicionamiento técnico sin pasajeros a bordo",
         "is_correct": false
       }
     ],
@@ -380,7 +380,7 @@
     "options": [
       {
         "id": "A",
-        "text": "La altitud máxima a la que se puede volar en espera",
+        "text": "Requiere aprobación expresa del CCO y cumplimiento estricto de las limitaciones del MOA",
         "is_correct": false
       },
       {
@@ -390,12 +390,12 @@
       },
       {
         "id": "C",
-        "text": "La altitud de decisión barométrica en un ILS CAT II",
+        "text": "Se prohíbe el despacho en operaciones comerciales regulares de transporte de pasajeros, requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "La altitud donde se desconecta el radar primario",
+        "text": "Se autoriza únicamente como vuelo de posicionamiento técnico sin pasajeros a bordo, manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       }
     ],
@@ -417,22 +417,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Separación visual con otras aeronaves en VFR",
-        "is_correct": false
+        "text": "Garantiza recepción de radioayudas en la aerovía y franqueamiento de 1.000 ft sobre obstáculos",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "Cobertura de comunicaciones HF transoceánicas únicamente",
+        "text": "Garantiza cobertura de radar ATC continua y comunicación VHF bidireccional en espacio aéreo clase G",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Garantiza la adecuada recepción de las radioayudas a la navegación en la aerovía y asegura un franqueamiento de obstáculos de 1000 ft dentro de un corredor de 5 NM a cada lado del eje",
-        "is_correct": true
+        "text": "Garantiza franqueamiento de 500 ft sobre obstáculos en vuelo visual diurno a lo largo de la ruta",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "Garantiza la velocidad óptima de crucero económico",
+        "text": "Garantiza separación vertical mínima de 2.000 ft respecto a cualquier tráfico no controlado en la aerovía",
         "is_correct": false
       }
     ],
@@ -454,17 +454,17 @@
     "options": [
       {
         "id": "A",
-        "text": "La altitud del circuito de tránsito estándar",
+        "text": "Requiere aprobación expresa del CCO y cumplimiento estricto de las limitaciones del MOA",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "La altitud de transición en espacio aéreo no controlado",
+        "text": "Se prohíbe el despacho en operaciones comerciales regulares de transporte de pasajeros, requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "La altitud de nivel de crucero asignada por ATC",
+        "text": "Se autoriza únicamente como vuelo de posicionamiento técnico sin pasajeros a bordo, manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       },
       {
@@ -567,22 +567,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Se reduce al 1% del Trip Fuel",
-        "is_correct": false
+        "text": "Se reduce del 5% al 3% del Trip Fuel si se designa un Alternativo en Ruta adecuado",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "Se elimina totalmente la contingencia",
+        "text": "Se reduce del 10% al 5% del Trip Fuel si el vuelo se realiza en espacio aéreo clase A",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Se reduce del 5% al 3% del Trip Fuel (siempre respetando los 5 min de espera en destino: 51 kg ATR / 166 kg E195-E2)",
-        "is_correct": true
+        "text": "Se reduce del 5% al 0% del Trip Fuel si las condiciones en destino son de cielo despejado",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "Se reduce al 2% fijo",
+        "text": "Se reduce a una cantidad fija de 100 kg independientemente de la duración del trayecto",
         "is_correct": false
       }
     ],
@@ -642,22 +642,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Máximo de 2 aproximaciones sucesivas (solo salvable por una mejora clara y contrastada de las condiciones)",
+        "text": "Máximo de 2 aproximaciones sucesivas",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Máximo de 4 aproximaciones si hay combustible suficiente",
+        "text": "Requiere aprobación expresa del CCO y cumplimiento estricto de las limitaciones del MOA",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "1 única aproximación sin posibilidad de segundo intento",
+        "text": "Se prohíbe el despacho en operaciones comerciales regulares de transporte de pasajeros",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "A discreción libre de ATC",
+        "text": "Se autoriza únicamente como vuelo de posicionamiento técnico sin pasajeros a bordo",
         "is_correct": false
       }
     ],
@@ -680,7 +680,7 @@
     "options": [
       {
         "id": "A",
-        "text": "El RVR del punto de parada únicamente",
+        "text": "El RVR de la zona de toma de contacto (Touchdown Zone RVR) ; si no está reportado, el del punto medio (Midpoint RVR) será el valor de referencia",
         "is_correct": false
       },
       {
@@ -690,12 +690,12 @@
       },
       {
         "id": "C",
-        "text": "La visibilidad meteorológica general de la estación",
+        "text": "El RVR de la zona de toma de contacto (Touchdown Zone RVR) ; si no está reportado, el del punto medio (Midpoint RVR) será el valor de referencia",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "El valor visual estimado por la tripulación a 2000 ft",
+        "text": "El RVR de la zona de toma de contacto (Touchdown Zone RVR) ; si no está reportado, el del punto medio (Midpoint RVR) será el valor de referencia",
         "is_correct": false
       }
     ],
@@ -717,12 +717,12 @@
     "options": [
       {
         "id": "A",
-        "text": "1.000.000 €",
+        "text": "1.000.000 € (o valor equivalente en otra divisa)",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "5.500.000 €",
+        "text": "5.500.000 € (o valor equivalente en otra divisa)",
         "is_correct": false
       },
       {
@@ -732,7 +732,7 @@
       },
       {
         "id": "D",
-        "text": "15.000.000 €",
+        "text": "15.000.000 € (o valor equivalente en otra divisa)",
         "is_correct": false
       }
     ],
@@ -755,22 +755,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Solo se permite en bodega trasera hasta 50 kg",
+        "text": "Requiere aprobación expresa del CCO y cumplimiento estricto de las limitaciones del MOA",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Se puede transportar junto a animales vivos en la misma bodega",
+        "text": "Se prohíbe el despacho en operaciones comerciales regulares de transporte de pasajeros, requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Está completamente prohibido en aviones de pasaje",
+        "text": "Se autoriza únicamente como vuelo de posicionamiento técnico sin pasajeros a bordo, manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Hasta 200 kg en la bodega delantera siempre que NO viajen animales vivos en ella (o máx 60 kg si se desconoce la tasa de sublimación)",
+        "text": "Hasta 200 kg en la bodega delantera siempre que NO viajen animales vivos en ella",
         "is_correct": true
       }
     ],
@@ -798,7 +798,7 @@
       },
       {
         "id": "B",
-        "text": "En la bodega delantera hasta 200 kg",
+        "text": "Requiere aprobación expresa del CCO y cumplimiento estricto de las limitaciones del MOA",
         "is_correct": false
       },
       {
@@ -831,7 +831,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Máximo 10 contenedores y 12 kg por animal",
+        "text": "peso máx 8 kg incluido transportín, Máximo 6 contenedores por avión (máx 2 por cabina/compartimento con 1 fila de separación salvo convivientes), y máx 3 animales por contenedor",
         "is_correct": false
       },
       {
@@ -841,12 +841,12 @@
       },
       {
         "id": "C",
-        "text": "Máximo 4 contenedores de hasta 10 kg en cualquier asiento",
+        "text": "Máximo 6 contenedores por avión (máx 2 por cabina/compartimento con 1 fila de separación salvo convivientes), peso máx 8 kg incluido transportín, Carga comercial no declarada",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Ilimitado en asientos de ventanilla",
+        "text": "Máximo 6 contenedores por avión (máx 2 por cabina/compartimento con 1 fila de separación salvo convivientes), Inspección técnica diferida, y máx 3 animales por contenedor",
         "is_correct": false
       }
     ],
@@ -869,12 +869,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Únicamente perros y gatos",
+        "text": "Requiere aprobación expresa del CCO y cumplimiento estricto de las limitaciones del MOA",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Perros, gatos y serpientes no venenosas",
+        "text": "Se prohíbe el despacho en operaciones comerciales regulares de transporte de pasajeros",
         "is_correct": false
       },
       {
@@ -884,7 +884,7 @@
       },
       {
         "id": "D",
-        "text": "Cualquier mamífero de menos de 5 kg",
+        "text": "Se autoriza únicamente como vuelo de posicionamiento técnico sin pasajeros a bordo",
         "is_correct": false
       }
     ],
@@ -907,17 +907,17 @@
     "options": [
       {
         "id": "A",
-        "text": "Deben viajar siempre en bodega facturados como AVIH",
+        "text": "Requiere aprobación expresa del CCO y cumplimiento estricto de las limitaciones del MOA",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Computan dentro del límite máximo de PETC de la cabina",
+        "text": "Se prohíbe el despacho en operaciones comerciales regulares de transporte de pasajeros, requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Deben abonar billete de pasaje independiente",
+        "text": "Se autoriza únicamente como vuelo de posicionamiento técnico sin pasajeros a bordo, manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       },
       {
@@ -983,22 +983,22 @@
     "options": [
       {
         "id": "A",
-        "text": "En la bodega trasera exclusivamente",
+        "text": "Requiere aprobación expresa del CCO y cumplimiento estricto de las limitaciones del MOA",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "En la bodega delantera H1 (y si fuera necesario H2 asegurando ventilación adecuada)",
+        "text": "En la bodega delantera H1",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "En el compartimento de aviónica",
+        "text": "Se prohíbe el despacho en operaciones comerciales regulares de transporte de pasajeros",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "En la bodega de granel trasera",
+        "text": "Se autoriza únicamente como vuelo de posicionamiento técnico sin pasajeros a bordo",
         "is_correct": false
       }
     ],
@@ -1021,22 +1021,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Equipaje no acompañado en bodega de 32 kg",
+        "text": "Requiere aprobación expresa del CCO y cumplimiento estricto de las limitaciones del MOA",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Instrumentos musicales en bodega de 50 kg",
+        "text": "Se prohíbe el despacho en operaciones comerciales regulares de transporte de pasajeros, requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Equipaje voluminoso o frágil transportado en un asiento de cabina de pasaje (Cabin Baggage), con peso máximo de 75 kg asegurado con cinturón",
+        "text": "Equipaje voluminoso o frágil transportado en un asiento de cabina de pasaje, con peso máximo de 75 kg asegurado con cinturón",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "Carga comercial de 100 kg",
+        "text": "Se autoriza únicamente como vuelo de posicionamiento técnico sin pasajeros a bordo, manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       }
     ],
@@ -1059,22 +1059,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Pasajero que camina perfectamente pero lleva silla plegada",
+        "text": "RFFS categoría 6 si NOTAM > 72h; RFFS categoría 5 si NOTAM ≤ 72h",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Pasajero que solo necesita silla para subir escalones",
+        "text": "RFFS categoría 5 si NOTAM > 48h; RFFS categoría 4 si NOTAM ≤ 48h, requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Pasajero que puede caminar por el pasillo del avión",
+        "text": "RFFS categoría 7 publicado en AIP sin admisin de degradación temporal, manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Pasajero completamente inmóvil que requiere ser transportado en silla de cabina estrecha hasta su asiento (la categoría más limitativa)",
+        "text": "Pasajero completamente inmóvil que requiere ser transportado en silla de cabina estrecha hasta su asiento",
         "is_correct": true
       }
     ],
@@ -1102,17 +1102,17 @@
       },
       {
         "id": "B",
-        "text": "Pasajero en camilla",
+        "text": "Requiere aprobación expresa del CCO y cumplimiento estricto de las limitaciones del MOA",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Pasajero invidente que viaja con perro guía",
+        "text": "Se prohíbe el despacho en operaciones comerciales regulares de transporte de pasajeros, requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Pasajero con fractura de brazo",
+        "text": "Se autoriza únicamente como vuelo de posicionamiento técnico sin pasajeros a bordo, manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       }
     ],
@@ -1134,22 +1134,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Máximo 500 Wh por batería",
+        "text": "Requiere aprobación expresa del CCO y cumplimiento estricto de las limitaciones del MOA",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Batería principal desmontada de máximo 300 Wh (con bornes aislados en cabina), permitiéndose un repuesto de máx 300 Wh o dos repuestos de máx 160 Wh cada uno",
+        "text": "Batería principal desmontada de máximo 300 Wh, permitiéndose un repuesto de máx 300 Wh o dos repuestos de máx 160 Wh cada uno",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "No se permiten baterías de litio desmontables",
+        "text": "Se prohíbe el despacho en operaciones comerciales regulares de transporte de pasajeros, requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Hasta 1000 Wh sin restricción",
+        "text": "Se autoriza únicamente como vuelo de posicionamiento técnico sin pasajeros a bordo, manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       }
     ],
@@ -1172,12 +1172,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Pasajeros VIP con preferencia de evacuación",
+        "text": "Requiere aprobación expresa del CCO y cumplimiento estricto de las limitaciones del MOA",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Personal de tierra que viaja en salto de servicio",
+        "text": "Se prohíbe el despacho en operaciones comerciales regulares de transporte de pasajeros, requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       },
       {
@@ -1187,7 +1187,7 @@
       },
       {
         "id": "D",
-        "text": "Fuerzas de seguridad del Estado armadas exclusivamente",
+        "text": "Se autoriza únicamente como vuelo de posicionamiento técnico sin pasajeros a bordo, manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       }
     ],
@@ -1210,22 +1210,22 @@
     "options": [
       {
         "id": "A",
-        "text": "A partir de los 8 años",
+        "text": "RFFS categoría 6 si NOTAM > 72h; RFFS categoría 5 si NOTAM ≤ 72h",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "A partir de los 10 años",
+        "text": "RFFS categoría 5 si NOTAM > 48h; RFFS categoría 4 si NOTAM ≤ 48h",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "A partir de los 16 años",
+        "text": "RFFS categoría 7 publicado en AIP sin admisin de degradación temporal",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "A partir de los 12 años cumplidos (la categoría UM aplica de 5 a 11 años cumplidos)",
+        "text": "A partir de los 12 años cumplidos",
         "is_correct": true
       }
     ],
@@ -1253,7 +1253,7 @@
       },
       {
         "id": "B",
-        "text": "En la primera fila de la cabina (Fila 1)",
+        "text": "Requiere aprobación expresa del CCO y cumplimiento estricto de las limitaciones del MOA",
         "is_correct": false
       },
       {
@@ -1263,7 +1263,7 @@
       },
       {
         "id": "D",
-        "text": "En cualquier asiento de pasillo al azar",
+        "text": "Se autoriza únicamente como vuelo de posicionamiento técnico sin pasajeros a bordo",
         "is_correct": false
       }
     ],
@@ -1291,7 +1291,7 @@
       },
       {
         "id": "B",
-        "text": "2 FAKs (precintados, con etiqueta y fecha vigente) y 1 MEK (requerido en rutas a más de 60 min de asistencia médica cualificada)",
+        "text": "2 FAKs y 1 MEK",
         "is_correct": true
       },
       {
@@ -1363,23 +1363,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Llamada a cabina de pilotaje cada 30 min y recordatorio de no fumar cada 90 min",
-        "is_correct": false
+        "text": "Llamada a cabina cada 30 min, recordatorio no fumar cada 90 min, check lavabo cada 30 min",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "Comprobación visual de lavabos cada 30 min",
+        "text": "Llamada a cabina cada 60 min, recordatorio no fumar cada 120 min, check lavabo cada 60 min",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Recordatorio de cinturones cada 15 min si la señal luminosa continúa encendida",
+        "text": "Llamada a cabina cada 15 min, recordatorio no fumar cada 45 min, check lavabo cada 15 min",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Todas son correctas",
-        "is_correct": true
+        "text": "Llamada a cabina únicamente en descenso y check de lavabo una sola vez al alcanzar crucero",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -1439,7 +1439,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Suministro continuo de 30 minutos",
+        "text": "Requiere aprobación expresa del CCO y cumplimiento estricto de las limitaciones del MOA",
         "is_correct": false
       },
       {
@@ -1449,12 +1449,12 @@
       },
       {
         "id": "C",
-        "text": "Suministro continuo de 45 minutos",
+        "text": "Se prohíbe el despacho en operaciones comerciales regulares de transporte de pasajeros",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Suministro de 10 minutos exclusivamente",
+        "text": "Se autoriza únicamente como vuelo de posicionamiento técnico sin pasajeros a bordo",
         "is_correct": false
       }
     ],
@@ -1478,22 +1478,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Cuando supera los 15 kg",
+        "text": "Requiere aprobación expresa del CCO y cumplimiento estricto de las limitaciones del MOA",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Cuando supera los 20 kg",
+        "text": "Se prohíbe el despacho en operaciones comerciales regulares de transporte de pasajeros",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Cuando su peso supera los 23 kg (hasta el límite máximo laboral de 32 kg)",
+        "text": "Cuando su peso supera los 23 kg",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "Cuando supera los 40 kg",
+        "text": "Se autoriza únicamente como vuelo de posicionamiento técnico sin pasajeros a bordo",
         "is_correct": false
       }
     ],
@@ -1516,22 +1516,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Máximo +/- 60 grados",
+        "text": "Requiere aprobación expresa del CCO y cumplimiento estricto de las limitaciones del MOA",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Máximo +/- 90 grados",
+        "text": "Se prohíbe el despacho en operaciones comerciales regulares de transporte de pasajeros",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Máximo +/- 120 grados",
+        "text": "Se autoriza únicamente como vuelo de posicionamiento técnico sin pasajeros a bordo",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Máximo +/- 170 grados (utilizando la línea roja de la puerta del tren a 95° como referencia visual)",
+        "text": "Máximo +/- 170 grados",
         "is_correct": true
       }
     ],
@@ -1559,17 +1559,17 @@
       },
       {
         "id": "B",
-        "text": "Dejar ambos motores encendidos al 50% de potencia mientras se desembarca",
+        "text": "Detener avión por completo, apagar motor 2 dejando motor 3 a ralentí, apagar beacon, calzar tren de morro y conectar GPU ; no calzar tren principal hasta que ambos motores estén parados",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Calzar inmediatamente el tren principal con motor 2 encendido",
+        "text": "Detener avión por completo, apagar motor 1 dejando motor 1 a ralentí, apagar beacon, calzar tren de morro y conectar GPU ; no calzar tren principal hasta que ambos motores estén parados",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Desembarcar al pasaje por la puerta trasera con motores en marcha",
+        "text": "Detener avión por completo, apagar motor 4 dejando motor 5 a ralentí, apagar beacon, calzar tren de morro y conectar GPU ; no calzar tren principal hasta que ambos motores estén parados",
         "is_correct": false
       }
     ],
@@ -1592,7 +1592,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Por motivos de presurización de bodega",
+        "text": "Requiere aprobación expresa del CCO y cumplimiento estricto de las limitaciones del MOA",
         "is_correct": false
       },
       {
@@ -1602,12 +1602,12 @@
       },
       {
         "id": "C",
-        "text": "Por restricciones de aduanas en vuelos insulares",
+        "text": "Se prohíbe el despacho en operaciones comerciales regulares de transporte de pasajeros, requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Por limitaciones de centrado en cola",
+        "text": "Se autoriza únicamente como vuelo de posicionamiento técnico sin pasajeros a bordo, manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       }
     ],
@@ -1630,22 +1630,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Los asientos de ventanilla",
+        "text": "Requiere aprobación expresa del CCO y cumplimiento estricto de las limitaciones del MOA",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Los asientos de pasillo",
+        "text": "Se prohíbe el despacho en operaciones comerciales regulares de transporte de pasajeros, requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Los asientos situados en las filas de salidas de emergencia sobre el plano (Tipo III) y filas adyacentes a salidas de emergencia principales",
+        "text": "Los asientos situados en las filas de salidas de emergencia sobre el plano y filas adyacentes a salidas de emergencia principales",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "Las últimas dos filas de la cabina",
+        "text": "Se autoriza únicamente como vuelo de posicionamiento técnico sin pasajeros a bordo, manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       }
     ],
@@ -1668,22 +1668,22 @@
     "options": [
       {
         "id": "A",
-        "text": "11 kg por maleta",
+        "text": "Requiere aprobación expresa del CCO y cumplimiento estricto de las limitaciones del MOA",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "13 kg por maleta",
+        "text": "Se prohíbe el despacho en operaciones comerciales regulares de transporte de pasajeros",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "20 kg por maleta",
+        "text": "Se autoriza únicamente como vuelo de posicionamiento técnico sin pasajeros a bordo",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "15 kg por maleta (frente a 11 kg en doméstico y 13 kg en europeo)",
+        "text": "15 kg por maleta",
         "is_correct": true
       }
     ],
@@ -1744,22 +1744,22 @@
     "options": [
       {
         "id": "A",
-        "text": "La altitud sobre la senda de planeo ILS",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "La altitud más baja utilizable para volar fuera de rutas publicadas en una cuadrícula geográfica, garantizando 1000 ft de franqueamiento en terreno llano y 2000 ft en terreno montañoso",
+        "text": "Altitud más baja para volar fuera de ruta con franqueamiento de 1.000 ft sobre obstáculos",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "Altitud mínima asignada por el radar de control para vectorizar aeronaves en aproximación inicial",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "La altitud mínima para entrar en espacio aéreo RVSM",
+        "text": "Altitud calculada por el FMS para optimizar el consumo de combustible de crucero en la aerovía",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "La altitud de patrón visual de aeródromo",
+        "text": "Altitud mínima de seguridad para realizar esperas instrumentales sobre el punto de recorrido inicial",
         "is_correct": false
       }
     ],
@@ -1782,12 +1782,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Hasta 4 pasajeros",
+        "text": "Máximo 4 pasajeros de alta peligrosidad (debidamente escoltados)",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Hasta 7 pasajeros",
+        "text": "Máximo 7 pasajeros de alta peligrosidad (debidamente escoltados)",
         "is_correct": false
       },
       {
@@ -1797,7 +1797,7 @@
       },
       {
         "id": "D",
-        "text": "No se admite ningún pasajero de alta peligrosidad",
+        "text": "Máximo 17 pasajeros de alta peligrosidad (debidamente escoltados)",
         "is_correct": false
       }
     ],
@@ -1820,23 +1820,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Certificado del ginecólogo confirmando fecha prevista de parto y aptitud para el vuelo",
-        "is_correct": false
+        "text": "Certificado médico de aptitud, semanas de gestación y descargo de responsabilidad firmado",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "Firma de exención de responsabilidad hacia la compañía aérea",
+        "text": "Autorización policial de embarque y póliza de seguro de viaje internacional contratada",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Número de semanas de gestación",
+        "text": "Informe de la compañía aseguradora y confirmación de plaza en primera fila de cabina",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Todas son correctas",
-        "is_correct": true
+        "text": "Certificado de vacunación internacional y prescripción de medicación para el trayecto",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -1872,7 +1872,7 @@
       },
       {
         "id": "D",
-        "text": "Mínimos de CAT I puros",
+        "text": "Techo: DA/H + 230 ft ; Visibilidad: RVR/VIS + 830 m",
         "is_correct": false
       }
     ],

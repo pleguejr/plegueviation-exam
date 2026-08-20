@@ -7,7 +7,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Taxi fuel + Trip fuel + Contingency fuel + Alternate fuel + Final Reserve fuel + Additional fuel (si aplica) + Extra fuel (a criterio del comandante)",
+        "text": "Taxi fuel + Trip fuel + Contingency fuel + Alternate fuel + Final Reserve fuel + Additional fuel + Extra fuel",
         "is_correct": true
       },
       {
@@ -17,12 +17,12 @@
       },
       {
         "id": "C",
-        "text": "Taxi fuel + Trip fuel + Reserva de contingencia del 10% fija sin alternativo",
+        "text": "Taxi fuel + Trip fuel + Reserva de contingencia del 10% fija sin alternativo, requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Trip fuel + Final Reserve fuel de 60 minutos sin combustible de rodaje",
+        "text": "Trip fuel + Final Reserve fuel de 60 minutos sin combustible de rodaje, manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       }
     ],
@@ -50,17 +50,17 @@
       },
       {
         "id": "B",
-        "text": "10% del Trip Fuel fijo para todos los vuelos; no puede ser reducido",
+        "text": "6% del Trip Fuel (o cantidad suficiente para 6 min de espera a 2.510 ft ISA) ; puede reducirse al 4% si se designa un Alternativo en Ruta adecuado (ERA o Fuel ERA)",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "15 minutos de combustible a régimen de crucero en todos los casos",
+        "text": "3% del Trip Fuel (o cantidad suficiente para 3 min de espera a 1.480 ft ISA) ; puede reducirse al 1% si se designa un Alternativo en Ruta adecuado (ERA o Fuel ERA)",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "3% del Trip Fuel por defecto sin necesidad de alternativo en ruta",
+        "text": "8% del Trip Fuel (o cantidad suficiente para 8 min de espera a 4.530 ft ISA) ; puede reducirse al 6% si se designa un Alternativo en Ruta adecuado (ERA o Fuel ERA)",
         "is_correct": false
       }
     ],
@@ -83,22 +83,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Combustible necesario para volar durante 30 minutos a velocidad de espera a 1.500 ft (450 m) sobre la elevación del aeródromo alternativo (o destino si no se requiere alternativo) en condiciones estándar (ISA)",
+        "text": "30 minutos a 1.500 ft sobre el alternativo en condiciones ISA a velocidad de espera",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Combustible necesario para 45 minutos a nivel de crucero FL150",
+        "text": "45 minutos a 1.500 ft sobre el alternativo (o destino si no requiere alternativo) en condiciones ISA a velocidad de crucero",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Combustible para 20 minutos a potencia máxima continua a nivel del mar",
+        "text": "30 minutos a nivel de crucero FL150 sobre el punto de aproximación frustrada (MAPt) en condiciones reales",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Combustible necesario para realizar 2 aproximaciones frustradas en el alternativo",
+        "text": "20 minutos a 1.000 ft sobre el alternativo más el combustible estimado para realizar dos aproximaciones frustradas",
         "is_correct": false
       }
     ],
@@ -121,22 +121,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Cuando se opere hacia un aeródromo aislado (Isolated Aerodrome) o cuando el combustible requerido para descenso y crucero tras fallo de motor/despresurización en el punto crítico supere el plan estándar",
+        "text": "Al operar a aeródromo aislado o si el combustible tras fallo de motor/despresurización en punto crítico supera el plan estándar",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Siempre que el vuelo tenga una duración superior a 45 minutos",
+        "text": "Al operar en espacio aéreo no controlado clase G o cuando la duración total del vuelo supere los 90 minutos de crucero",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Únicamente cuando el aeropuerto de destino tenga una pista de longitud inferior a 1.800 metros",
+        "text": "Al despachar con dos alternativos de destino o cuando el pronóstico meteorológico indique visibilidad inferior a 5 km",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Solo cuando se vuele en espacio aéreo no controlado clase G",
+        "text": "Al realizar vuelos nocturnos internacionales o cuando la pista de aterrizaje en destino no disponga de luces de aproximación",
         "is_correct": false
       }
     ],
@@ -158,22 +158,22 @@
     "options": [
       {
         "id": "A",
-        "text": "El combustible de contingencia solo se calcula para el tramo comprendido entre el Punto de Decisión (DP) y el Destino Comercial, permitiendo despegar con menor carga de combustible que si se calculara desde el origen",
+        "text": "El contingency solo se calcula desde el Punto de Decisión hasta el Destino, reduciendo la carga total de combustible al despegue",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Se elimina totalmente el combustible de reserva final y de alternativo",
+        "text": "Se elimina totalmente el combustible de reserva final y de alternativo al alcanzar el Punto de Decisión en ruta",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Permite volar sin alternativo de destino independientemente de la meteorología",
+        "text": "Permite volar sin aeródromo alternativo de destino independientemente de las condiciones meteorológicas previstas",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Solo es aplicable cuando el aeropuerto de salida y destino están en el mismo FIR",
+        "text": "Se calcula el combustible de viaje a régimen de máxima potencia continua desde el origen hasta el punto de decisión",
         "is_correct": false
       }
     ],
@@ -195,22 +195,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Distancia equivalente a 1 hora de vuelo a velocidad de crucero con un motor inoperativo (OEI) en aire en calma (aprox. 320–380 NM); la previsión meteorológica debe estar en o por encima de los mínimos de aterrizaje desde 1h antes hasta 1h después de la ETA",
+        "text": "Distancia equivalente a 1 hora de vuelo a velocidad de crucero con un motor inoperativo en aire en calma; la previsión meteorológica debe estar en o por encima de los mínimos de aterrizaje desde 1h antes hasta 1h después de la ETA",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Distancia equivalente a 2 horas de vuelo con ambos motores operativos; la meteo debe ser CAVOK",
+        "text": "Distancia equivalente a 2 hora de vuelo a velocidad de crucero con un motor inoperativo en aire en calma ; la previsión meteorológica debe estar en o por encima de los mínimos de aterrizaje desde 2h antes hasta 2h después de la ETA",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Máximo 150 NM del origen sin importar las condiciones meteorológicas",
+        "text": "Distancia equivalente a 1 hora de vuelo a velocidad de crucero con un motor inoperativo en aire en calma ; la previsión meteorológica debe estar en o por encima de los mínimos de aterrizaje desde 1h antes hasta 1h después de la ETA",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Cualquier aeródromo en un radio de 500 NM sin considerar fallos de motor",
+        "text": "Distancia equivalente a 4 hora de vuelo a velocidad de crucero con un motor inoperativo en aire en calma ; la previsión meteorológica debe estar en o por encima de los mínimos de aterrizaje desde 4h antes hasta 4h después de la ETA",
         "is_correct": false
       }
     ],
@@ -233,22 +233,22 @@
     "options": [
       {
         "id": "A",
-        "text": "1) Cuando los informes o pronósticos meteorológicos para el destino indiquen condiciones por debajo de los mínimos de planificación aplicables, O 2) Cuando no se disponga de información meteorológica fiable del aeródromo de destino",
+        "text": "Meteo en destino bajo mínimos de planificación O falta de información meteorológica fiable en destino",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Siempre que el vuelo se realice en horario nocturno",
+        "text": "Destino con una sola pista operativa O vuelo regular comercial con duración programada superior a 2 horas",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Únicamente cuando el avión tenga un elemento de la MEL en Categoría A",
+        "text": "Aeronave despachada con un ítem de la MEL en Categoría A O viento cruzado superior a 15 nudos en destino",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Cuando el tiempo de vuelo hacia el destino sea superior a 2 horas",
+        "text": "Operación en horario nocturno O cuando el aeródromo alternativo principal esté situado a más de 320 NM",
         "is_correct": false
       }
     ],
@@ -271,22 +271,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Duración de vuelo inferior a 6 horas Y el destino dispone de 2 pistas separadas utilizables con meteo favorable (techo ≥ 2.000 ft o MDA/H + 500 ft, y visibilidad ≥ 5 km) desde ETA -1h hasta ETA +1h",
+        "text": "Vuelo < 6h Y destino con 2 pistas separadas utilizables con meteo favorable",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Vuelo de menos de 1 hora con viento inferior a 10 nudos en destino",
+        "text": "Vuelo < 4h Y destino con aproximación ILS CAT III operativa independientemente del número de pistas y del techo",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Solo se permite en vuelos ferry sin pasajeros a bordo",
+        "text": "Vuelo < 2h Y destino con categoría RFFS ≥ 7 y viento en calma en todas las cabeceras utilizables del campo",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Destino con ILS CAT III operativo sin importar el número de pistas",
+        "text": "Vuelo < 8h Y destino con dos procedimientos RNP AR independientes autorizados para la tripulación técnica",
         "is_correct": false
       }
     ],
@@ -314,17 +314,17 @@
       },
       {
         "id": "B",
-        "text": "1) Tripulación reforzada, 2) Flota con menos de 5 años de antigüedad, y 3) Vuelos diurnos exclusivamente",
+        "text": "2) Aprobación LVO (Operaciones Todo Tiempo / Baja Visibilidad), 1) Flight Monitoring (seguimiento operacional de vuelos), y 3) Sistema automático de planificación de vuelos",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "1) ETOPS 120 min, 2) RNP AR 0.1, y 3) Dos comandantes a bordo",
+        "text": "1) Flight Monitoring (seguimiento operacional de vuelos), 2) Aprobación LVO (Operaciones Todo Tiempo / Baja Visibilidad), Carga comercial no declarada",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "1) Contrato de mantenimiento en línea, 2) Combustible JET A-1 aditivado, y 3) Pistas con longitud superior a 2.500 m",
+        "text": "1) Flight Monitoring (seguimiento operacional de vuelos), Inspección técnica diferida, y 3) Sistema automático de planificación de vuelos",
         "is_correct": false
       }
     ],
@@ -474,7 +474,7 @@
       },
       {
         "id": "D",
-        "text": "Ambos tipos requieren únicamente los mínimos de aterrizaje publicados sin incrementos",
+        "text": "Tipo B: DA/H + 230 ft y RVR/VIS + 830 m | Tipo A: DA/H o MDA/H + 430 ft y RVR/VIS + 1530 m",
         "is_correct": false
       }
     ],
@@ -497,7 +497,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Desde 1 hora antes hasta 1 hora después de la hora estimada de llegada (ETA -1h a ETA +1h)",
+        "text": "Desde 1 hora antes hasta 1 hora después de la hora estimada de llegada",
         "is_correct": true
       },
       {
@@ -507,12 +507,12 @@
       },
       {
         "id": "C",
-        "text": "Desde el momento del despegue hasta la ETA",
+        "text": "Desde el momento del despegue hasta la ETA, requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Desde 2 horas antes hasta 2 horas después de la ETA",
+        "text": "Desde 2 horas antes hasta 2 horas después de la ETA, manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       }
     ],
@@ -535,22 +535,22 @@
     "options": [
       {
         "id": "A",
-        "text": "A intervalos regulares no superiores a 30-60 minutos y en cada punto de notificación / waypoint principal del plan de vuelo, comparando el combustible real a bordo con el planificado",
+        "text": "A intervalos de 30-60 min y en cada punto de notificación principal del plan de vuelo",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Únicamente en el Top of Climb y en el Top of Descent",
+        "text": "Únicamente en el Top of Climb y en el punto de inicio de descenso (Top of Descent)",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Solo cuando se encienda el aviso de bajo nivel de combustible en el EICAS",
+        "text": "Solo cuando se encienda el aviso de bajo nivel de combustible en el panel EICAS",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Una sola vez a mitad del vuelo",
+        "text": "Una sola vez a mitad del vuelo comparando el FMS con la cantidad total cargada",
         "is_correct": false
       }
     ],
@@ -573,22 +573,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Combustible desde la posición actual hasta el aeródromo alternativo (incluyendo frustrada en destino y aproximación en el alternativo) + Combustible de Reserva Final (30 minutos)",
+        "text": "Combustible desde la posición actual hasta el alternativo + Reserva Final",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Combustible de rodaje + 15 minutos de espera",
+        "text": "Combustible desde la posición actual hasta el destino + 15 minutos de espera en circuito",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "El Trip Fuel original del plan de vuelo",
+        "text": "Combustible de contingencia restante más el combustible de rodaje en el aeródromo alternativo",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Combustible de reserva final únicamente (30 minutos)",
+        "text": "Combustible necesario para volar durante 45 minutos a velocidad de crucero en altitud óptima",
         "is_correct": false
       }
     ],
@@ -615,17 +615,17 @@
       },
       {
         "id": "B",
-        "text": "Cuando el combustible esté por debajo de la contingencia; confiere prioridad inmediata para aterrizar",
+        "text": "Cuando el combustible utilizable previsto al aterrizar en el aeródromo previsto pueda ser inferior a la Reserva Final ante cualquier demora imprevista ; informa a ATC del estado de combustible pero NO confiere prioridad de tráfico",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Cuando se apague un motor por falta de combustible",
+        "text": "Cuando el combustible utilizable previsto al aterrizar en el aeródromo previsto pueda ser inferior a la Reserva Final ante cualquier demora imprevista ; informa a ATC del estado de combustible pero NO confiere prioridad de tráfico",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Solo cuando se declare emergencia con código transponder 7700",
+        "text": "Cuando el combustible utilizable previsto al aterrizar en el aeródromo previsto pueda ser inferior a la Reserva Final ante cualquier demora imprevista ; informa a ATC del estado de combustible pero NO confiere prioridad de tráfico",
         "is_correct": false
       }
     ],
@@ -648,22 +648,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Cuando la cantidad calculada de combustible utilizable que se prevé que quede a bordo tras aterrizar en el aeródromo más cercano donde pueda realizarse un aterrizaje seguro sea inferior a la Reserva Final (30 minutos)",
+        "text": "Cuando el combustible utilizable previsto al aterrizar en el alternativo sea inferior a 30 min",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Cuando se haya consumido el 50% del combustible de contingencia",
+        "text": "Cuando se haya consumido la totalidad del combustible de contingencia en el crucero",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Cuando se deba proceder al aeródromo alternativo por meteorología en destino",
+        "text": "Cuando el tiempo de espera en el circuito de tráfico supere los 15 minutos asignados",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Cuando quede menos de 1 hora de combustible total en los tanques",
+        "text": "Cuando se deba proceder al aeródromo alternativo por visibilidad inferior a mínimos",
         "is_correct": false
       }
     ],
@@ -691,17 +691,17 @@
       },
       {
         "id": "B",
-        "text": "Declarar inmediatamente MAYDAY FUEL y descender en emergencia",
+        "text": "Verificar que el combustible previsto al llegar al destino permita aún proceder al alternativo y aterrizar con la Reserva Final ; de no ser así, seleccionar un nuevo alternativo más cercano o reevaluar la ruta antes de continuar",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Apagar un motor para reducir el consumo específico de combustible",
+        "text": "Verificar que el combustible previsto al llegar al destino permita aún proceder al alternativo y aterrizar con la Reserva Final ; de no ser así, seleccionar un nuevo alternativo más cercano o reevaluar la ruta antes de continuar",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Continuar a destino sin realizar ninguna comprobación adicional ya que la contingencia está para usarse",
+        "text": "Verificar que el combustible previsto al llegar al destino permita aún proceder al alternativo y aterrizar con la Reserva Final ; de no ser así, seleccionar un nuevo alternativo más cercano o reevaluar la ruta antes de continuar",
         "is_correct": false
       }
     ],
@@ -738,7 +738,7 @@
       },
       {
         "id": "D",
-        "text": "No se permite planificar un alternativo con aproximación en circuito bajo ningún concepto",
+        "text": "Techo: MDA/H + 430 ft | Visibilidad: VIS + 1530 m",
         "is_correct": false
       }
     ],

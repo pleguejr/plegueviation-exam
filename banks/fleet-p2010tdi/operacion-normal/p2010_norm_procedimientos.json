@@ -5,10 +5,26 @@
     "learning_objective": "AFM Sección 4 - Procedimiento de Arranque de Motor (Glow Plugs)",
     "stem": "Durante la secuencia de arranque en frío del motor Continental CD-170 en la Tecnam P2010 TDI, ¿qué indicación debe esperar el piloto antes de accionar el estárter (START)?",
     "options": [
-      { "id": "A", "text": "Activar el Engine Master y esperar a que la luz indicadora de calentadores (Glow Plugs / GLOW) se apague en el panel antes de accionar el interruptor de arranque", "is_correct": true },
-      { "id": "B", "text": "Accionar el arranque inmediatamente mientras la luz de calentadores parpadea a alta velocidad", "is_correct": false },
-      { "id": "C", "text": "Bombear la palanca de potencia 3 veces hacia adelante y hacia atrás", "is_correct": false },
-      { "id": "D", "text": "Mantener pulsado el interruptor FADEC TEST mientras se gira la llave de contacto", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Activar el Engine Master y esperar a que la luz indicadora de calentadores se apague en el panel antes de accionar el interruptor de arranque",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Accionar el arranque inmediatamente mientras la luz de calentadores parpadea a alta velocidad",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Bombear la palanca de potencia 3 veces hacia adelante y hacia atrás, requiriendo autorización expresa del comandante y verificación de pesos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mantener pulsado el interruptor FADEC TEST mientras se gira la llave de contacto, manteniendo el cumplimiento de las limitaciones operacionales del manual",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "Al poner el Engine Master en ON, el FADEC activa automáticamente las bujías de precalentamiento (Glow Plugs) para calentar las cámaras de combustión del motor diésel. El piloto debe esperar a que la luz 'GLOW' se extinga antes de dar ignición con el estárter.",
@@ -26,10 +42,26 @@
     "learning_objective": "AFM Sección 4 - Limitación de Tiempo del Estárter",
     "stem": "¿Cuál es el límite máximo de tiempo continuo de accionamiento del motor de arranque (Starter Limit) y el periodo de enfriamiento requerido en el motor CD-170?",
     "options": [
-      { "id": "A", "text": "Máximo 10 segundos continuos de accionamiento, seguido de al menos 20 segundos de enfriamiento (máximo 3 intentos consecutivos antes de 15 minutos de descanso)", "is_correct": true },
-      { "id": "B", "text": "Máximo 30 segundos continuos sin periodo de enfriamiento", "is_correct": false },
-      { "id": "C", "text": "Máximo 5 segundos de accionamiento y 5 minutos de espera", "is_correct": false },
-      { "id": "D", "text": "El motor diésel no tiene límites de tiempo para el motor de arranque", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Máximo 10 segundos continuos de accionamiento, seguido de al menos 20 segundos de enfriamiento (máximo 3 intentos consecutivos antes de 15 minutos de descanso)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Máximo 15 segundos continuos de accionamiento , seguido de al menos 15 segundos de enfriamiento (máximo 1 intentos consecutivos antes de 10 minutos de descanso)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Máximo 5 segundos continuos de accionamiento , seguido de al menos 30 segundos de enfriamiento (máximo 13 intentos consecutivos antes de 25 minutos de descanso)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Máximo 20 segundos continuos de accionamiento , seguido de al menos 10 segundos de enfriamiento (máximo 1 intentos consecutivos antes de 5 minutos de descanso)",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "Para evitar el sobrecalentamiento y deterioro del motor de arranque y preservar la carga de la batería principal de 24V, no se deben superar los 10 segundos por intento de arranque, dejando enfriar el estárter entre ciclos.",
@@ -47,10 +79,26 @@
     "learning_objective": "AFM Sección 4 - Prueba Obligatoria de FADEC en Tierra (FADEC Test)",
     "stem": "Durante la prueba obligatoria de FADEC antes del despegue en tierra (FADEC Self-Test), ¿cómo se realiza la prueba y qué comportamiento automático debe observar el piloto?",
     "options": [
-      { "id": "A", "text": "Con motor en ralentí y parámetros en arco verde, pulsar y mantener el botón 'FADEC TEST'; el sistema incrementa automáticamente las RPM a ~2300 (100% Load), conmuta entre el Canal A y Canal B verificando ambos, y retorna automáticamente a ralentí", "is_correct": true },
-      { "id": "B", "text": "Acelerar manualmente al 100% y apagar el Engine Master durante 3 segundos", "is_correct": false },
-      { "id": "C", "text": "La prueba de FADEC se realiza exclusivamente en vuelo durante el ascenso inicial", "is_correct": false },
-      { "id": "D", "text": "Mover la palanca de paso de hélice manualmente de fino a bandera", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Con motor en ralentí y parámetros en arco verde, pulsar y mantener el botón 'FADEC TEST'; el sistema incrementa automáticamente las RPM a ~2300 (100% Load), conmuta entre el Canal A y Canal B verificando ambos, y retorna automáticamente a ralentí",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Con motor en ralentí y parámetros en arco verde, pulsar y mantener el botón 'FADEC TEST' ; el sistema incrementa automáticamente las RPM a ~2310 (110% Load), conmuta entre el Canal A y Canal B verificando ambos, y retorna automáticamente a ralentí",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Con motor en ralentí y parámetros en arco verde, pulsar y mantener el botón 'FADEC TEST' ; el sistema incrementa automáticamente las RPM a ~2280 (80% Load), conmuta entre el Canal A y Canal B verificando ambos, y retorna automáticamente a ralentí",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Con motor en ralentí y parámetros en arco verde, pulsar y mantener el botón 'FADEC TEST' ; el sistema incrementa automáticamente las RPM a ~2330 (130% Load), conmuta entre el Canal A y Canal B verificando ambos, y retorna automáticamente a ralentí",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "El FADEC Self-Test en tierra es una comprobación automática integral. Con la palanca en IDLE, al mantener presionado el botón FADEC TEST, el sistema toma el control del motor, acelera al 100% Load verificando la conmutación entre el Canal A y B y las luces de aviso, y restablece el ralentí.",
@@ -68,10 +116,26 @@
     "learning_objective": "AFM Sección 4 - Velocidades de Despegue y Ascenso (Vr, Vx, Vy)",
     "stem": "Según la tabla oficial de 'Airspeeds for Normal Operations' (Página 4-4) a MTOW estándar (1160 kg), ¿cuáles son las velocidades de rotación (Vr con Flap T/O), mejor ángulo de ascenso (Vx con Flaps UP) y mejor régimen de ascenso (Vy con Flaps UP)?",
     "options": [
-      { "id": "A", "text": "Vr (Flap T/O): 60 KIAS; Vx (Flaps UP): 74 KIAS; Vy (Flaps UP): 79 KIAS", "is_correct": true },
-      { "id": "B", "text": "Vr: 70 KIAS; Vx: 80 KIAS; Vy: 95 KIAS", "is_correct": false },
-      { "id": "C", "text": "Vr: 52 KIAS; Vx: 65 KIAS; Vy: 70 KIAS", "is_correct": false },
-      { "id": "D", "text": "Vr: 65 KIAS; Vx: 75 KIAS; Vy: 85 KIAS", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Vr (Flap T/O): 60 KIAS; Vx (Flaps UP): 74 KIAS; Vy (Flaps UP): 79 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Vr (Flap T/O): 70 KIAS ; Vx (Flaps UP): 84 KIAS ; Vy (Flaps UP): 89 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Vr (Flap T/O): 40 KIAS ; Vx (Flaps UP): 54 KIAS ; Vy (Flaps UP): 59 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Vr (Flap T/O): 90 KIAS ; Vx (Flaps UP): 104 KIAS ; Vy (Flaps UP): 109 KIAS",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "La tabla oficial del Párrafo 2 de la Sección 4 (Página 4-4) establece para 1160 kg: Rotation Speed (Vr con Flap T/O) = 60 KIAS; Best Angle-of-Climb Speed (Vx con Flaps UP) = 74 KIAS; Best Rate-of-Climb Speed (Vy con Flaps UP) = 79 KIAS.",
@@ -89,10 +153,26 @@
     "learning_objective": "AFM Sección 4 - Velocidad Mínima de Aproximación con Piloto Automático Enganchado",
     "stem": "Según la nota al pie de la tabla de velocidades normales de la Sección 4, ¿cuál es la velocidad mínima de aproximación permitida cuando el piloto automático (Autopilot) está acoplado?",
     "options": [
-      { "id": "A", "text": "75 KIAS", "is_correct": true },
-      { "id": "B", "text": "65 KIAS", "is_correct": false },
-      { "id": "C", "text": "85 KIAS", "is_correct": false },
-      { "id": "D", "text": "70 KIAS", "is_correct": false }
+      {
+        "id": "A",
+        "text": "75 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "65 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "85 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "70 KIAS",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "La nota explícita al pie de la tabla de la Sección 4 (Página 4-4) estipula: '*) Minimum approach speed with autopilot engaged is equal to 75 kts' para garantizar suficiente autoridad de mando y margen de pérdida.",
@@ -110,10 +190,26 @@
     "learning_objective": "AFM Sección 4 - Ascenso en Ruta (En-route Climb)",
     "stem": "¿Cuáles son los ajustes recomendados para el ascenso en ruta (En-route Climb / Cruise Climb) una vez superados los obstáculos y franqueados los 1000 ft AGL?",
     "options": [
-      { "id": "A", "text": "Flaps: UP; Velocidad: 85-90 KIAS; Potencia: 91% Load (Max Continuous Power); Fuel Pump: OFF", "is_correct": true },
-      { "id": "B", "text": "Flaps: T/O; Velocidad: 70 KIAS; Potencia: 100% Load continuo", "is_correct": false },
-      { "id": "C", "text": "Flaps: UP; Velocidad: 120 KIAS; Potencia: 60% Load", "is_correct": false },
-      { "id": "D", "text": "Flaps: LAND; Velocidad: 80 KIAS; Potencia: 80% Load", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Flaps: UP; Velocidad: 85-90 KIAS; Potencia: 91% Load; Fuel Pump: OFF",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Flaps: T/O; Velocidad: 70 KIAS; Potencia: 100% Load continuo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Flaps: UP ; Velocidad: 65-70 KIAS ; Potencia: 71% Load (Max Continuous Power) ; Fuel Pump: OFF",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Flaps: UP ; Velocidad: 115-120 KIAS ; Potencia: 121% Load (Max Continuous Power) ; Fuel Pump: OFF",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "Para ascenso en crucero eficiente se limpia el avión (Flaps UP), se acelera a 85-90 KIAS para mejorar refrigeración y visibilidad, se reduce la potencia al 91% Load (máximo continuo) y se apaga la bomba auxiliar de combustible.",
@@ -131,10 +227,26 @@
     "learning_objective": "AFM Sección 4 - Ajustes y Consumo en Vuelo de Crucero (Cruise)",
     "stem": "En régimen de crucero estándar económico al 70%-75% de carga (Load) a FL080-FL100, ¿cuál es el consumo aproximado de combustible Jet A-1 del motor Continental CD-170?",
     "options": [
-      { "id": "A", "text": "Aproximadamente 24 a 28 litros por hora (6.3 a 7.4 US gal/h)", "is_correct": true },
-      { "id": "B", "text": "Aproximadamente 45 a 55 litros por hora", "is_correct": false },
-      { "id": "C", "text": "Aproximadamente 12 a 15 litros por hora", "is_correct": false },
-      { "id": "D", "text": "Aproximadamente 38 a 42 litros por hora", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Aproximadamente 24 a 28 litros por hora",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Aproximadamente 45 a 55 litros por hora",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aproximadamente 12 a 16 litros por hora",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aproximadamente 34 a 38 litros por hora",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "En crucero normal al 70-75% Load el motor CD-170 consume entre 24 y 28 L/h (aprox. 6.5 USG/h), proporcionando una gran autonomía de vuelo con los 231L utilizables.",
@@ -152,10 +264,26 @@
     "learning_objective": "AFM Sección 4 - Velocidades de Aproximación Final y Toque (Vref y Vtd)",
     "stem": "Según la tabla oficial de la Sección 4 (Página 4-4) a 1160 kg, ¿cuál es la velocidad de aproximación final (Final Approach Speed - Vref con Flaps LAND) y la velocidad óptima de toma de contacto (Optimal Touch Down Speed)?",
     "options": [
-      { "id": "A", "text": "Final Approach Speed (Vref Flaps LAND): 65 KIAS; Optimal Touch Down Speed: 56 KIAS", "is_correct": true },
-      { "id": "B", "text": "Final Approach Speed: 75 KIAS; Touch Down: 65 KIAS", "is_correct": false },
-      { "id": "C", "text": "Final Approach Speed: 55 KIAS; Touch Down: 45 KIAS", "is_correct": false },
-      { "id": "D", "text": "Final Approach Speed: 70 KIAS; Touch Down: 60 KIAS", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Final Approach Speed (Vref Flaps LAND): 65 KIAS; Optimal Touch Down Speed: 56 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Final Approach Speed (Vref Flaps LAND): 70 KIAS ; Optimal Touch Down Speed: 51 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Final Approach Speed (Vref Flaps LAND): 60 KIAS ; Optimal Touch Down Speed: 66 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Final Approach Speed (Vref Flaps LAND): 75 KIAS ; Optimal Touch Down Speed: 46 KIAS",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "La tabla de la Sección 4 (Página 4-4) indica: Final Approach Speed (Vref con Flaps LAND) = 65 KIAS y Optimal Touch Down Speed = 56 KIAS a 1160 kg de MTOW.",
@@ -173,10 +301,26 @@
     "learning_objective": "AFM Sección 4 - Procedimiento de Motor y al Aire (Go-Around / Balked Landing)",
     "stem": "¿Cuáles son las acciones inmediatas para ejecutar una frustrada / motor y al aire (Go-Around) en la Tecnam P2010 TDI?",
     "options": [
-      { "id": "A", "text": "Power Lever: FULL (100% Load); Retraer flaps inmediatamente de LAND a T/O (15°); Acelerar y ascender a Vx/Vy (74/79 KIAS); Con tasa positiva, retraer Flaps a UP", "is_correct": true },
-      { "id": "B", "text": "Retraer todos los flaps a UP antes de aplicar potencia", "is_correct": false },
-      { "id": "C", "text": "Mantener Flaps a 40° durante todo el ascenso hasta la altitud del patrón", "is_correct": false },
-      { "id": "D", "text": "Apagar la bomba de combustible antes de aplicar potencia", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Power Lever: FULL (100% Load); Retraer flaps inmediatamente de LAND a T/O (15°); Acelerar y ascender a Vx/Vy (74/79 KIAS); Con tasa positiva, retraer Flaps a UP",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Power Lever: FULL (110% Load) ; Retraer flaps inmediatamente de LAND a T/O (17°) ; Acelerar y ascender a Vx/Vy (84/89 KIAS) ; Con tasa positiva, retraer Flaps a UP",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Power Lever: FULL (80% Load) ; Retraer flaps inmediatamente de LAND a T/O (11°) ; Acelerar y ascender a Vx/Vy (54/59 KIAS) ; Con tasa positiva, retraer Flaps a UP",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Power Lever: FULL (130% Load) ; Retraer flaps inmediatamente de LAND a T/O (21°) ; Acelerar y ascender a Vx/Vy (104/109 KIAS) ; Con tasa positiva, retraer Flaps a UP",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "Al frustrar, se aplica máxima potencia (100% Load), se establece actitud de ascenso y se retrae el flap de inmediato a posición intermedia T/O para reducir la resistencia del flap LAND. Con tasa positiva y velocidad segura, se seleccionan Flaps UP.",
@@ -194,10 +338,26 @@
     "learning_objective": "AFM Sección 4 - Enfriamiento de Turbocompresor antes de Parada de Motor",
     "stem": "Antes de cortar el Engine Master para apagar el motor Continental CD-170 tras el rodaje, ¿qué procedimiento de enfriamiento exige el manual?",
     "options": [
-      { "id": "A", "text": "Mantener el motor en ralentí (IDLE) durante al menos 1 a 2 minutos para permitir la estabilización térmica del turbocompresor", "is_correct": true },
-      { "id": "B", "text": "Acelerar al 80% Load durante 30 segundos y cortar el contacto de inmediato", "is_correct": false },
-      { "id": "C", "text": "Apagar el motor inmediatamente al detenerse el avión en el estacionamiento", "is_correct": false },
-      { "id": "D", "text": "Apagar la bomba eléctrica y esperar a que el motor se detenga por inanición", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Mantener el motor en ralentí durante al menos 1 a 2 minutos para permitir la estabilización térmica del turbocompresor",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Acelerar al 80% Load durante 30 segundos y cortar el contacto de inmediato",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Apagar el motor inmediatamente al detenerse el avión en el estacionamiento, requiriendo autorización expresa del comandante y verificación de pesos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Apagar la bomba eléctrica y esperar a que el motor se detenga por inanición, manteniendo el cumplimiento de las limitaciones operacionales del manual",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "El turbocompresor gira a muy altas revoluciones y alcanza temperaturas elevadas. Apagar el motor bruscamente detiene el flujo de aceite lubricante, carbonizándolo en los cojinetes. El enfriamiento de 1-2 minutos en IDLE es mandatorio.",
@@ -215,10 +375,26 @@
     "learning_objective": "AFM Sección 4 - Gestión de la Válvula Selectora de Combustible",
     "stem": "Durante la operación normal en vuelo de la Tecnam P2010 TDI, ¿cómo se gestiona la válvula selectora de combustible (Fuel Selector)?",
     "options": [
-      { "id": "A", "text": "Se selecciona LEFT o RIGHT alternando periódicamente para mantener el desbalance de tanques por debajo del límite de 30 litros (7.9 US gal). No existe posición 'BOTH'", "is_correct": true },
-      { "id": "B", "text": "Se coloca en la posición 'BOTH' durante todas las fases de vuelo", "is_correct": false },
-      { "id": "C", "text": "Se debe consumir siempre la totalidad del tanque izquierdo antes de pasar al derecho", "is_correct": false },
-      { "id": "D", "text": "La válvula conmuta automáticamente mediante un solenoide eléctrico", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Se selecciona LEFT o RIGHT alternando periódicamente para mantener el equilibrio lateral del avión",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se coloca en la posición 'BOTH' durante todas las fases de vuelo de manera continua",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se mantiene en posición LEFT durante el ascenso y en RIGHT durante el descenso exclusivamente",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se coloca en posición OFF durante el rodaje y se conmuta a ON inmediatamente antes de despegar",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "El sistema de combustible cuenta con una válvula selectora de 3 posiciones: LEFT, RIGHT y OFF (no existe posición BOTH). El piloto debe gestionar el consumo cambiando de tanque periódicamente para no superar el desbalance máximo de 30 L.",
@@ -236,10 +412,26 @@
     "learning_objective": "AFM Sección 4 - Uso de la Bomba Eléctrica Auxiliar (Fuel Pump)",
     "stem": "¿En qué fases de vuelo es obligatorio mantener activada la bomba eléctrica auxiliar de combustible (Electric Fuel Pump ON) según las listas de chequeo?",
     "options": [
-      { "id": "A", "text": "En el arranque de motor, despegue, ascenso inicial, aproximación, aterrizaje y siempre que se cambie de tanque de combustible", "is_correct": true },
-      { "id": "B", "text": "Únicamente durante el arranque de motor; en vuelo debe permanecer siempre en OFF", "is_correct": false },
-      { "id": "C", "text": "Debe permanecer encendida de forma ininterrumpida durante el 100% del vuelo", "is_correct": false },
-      { "id": "D", "text": "Solo se enciende si falla la bomba mecánica de alta presión", "is_correct": false }
+      {
+        "id": "A",
+        "text": "En el arranque de motor, despegue, ascenso inicial, aproximación, aterrizaje y siempre que se cambie de tanque de combustible",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En el arranque de motor , despegue , ascenso inicial , aproximación , aterrizaje y siempre que se cambie de tanque de combustible",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En el arranque de motor , despegue , ascenso inicial , aproximación , aterrizaje y siempre que se cambie de tanque de combustible",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En el arranque de motor , despegue , ascenso inicial , aproximación , aterrizaje y siempre que se cambie de tanque de combustible",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "La bomba eléctrica auxiliar (Fuel Pump) se conecta en fases críticas (despegue, aterrizaje, frustrada y cambio de tanque) para asegurar alimentación positiva y continua a la bomba de alta presión de la rampa común.",
@@ -257,10 +449,26 @@
     "learning_objective": "AFM Sección 4 - Precaución de Drenaje de Combustible en Prevuelo",
     "stem": "De acuerdo con el aviso del Párrafo 3.2 (Walk-Around, Página 4-7), ¿qué debe hacerse antes de drenar el combustible en la inspección exterior?",
     "options": [
-      { "id": "A", "text": "Asegurar que el avión esté estacionado en superficie nivelada y colocar la válvula selectora de combustible de cabina en LEFT o RIGHT antes de efectuar el drenaje", "is_correct": true },
-      { "id": "B", "text": "Colocar la válvula selectora en OFF y encender la bomba eléctrica", "is_correct": false },
-      { "id": "C", "text": "Conectar el calentador de batería durante 15 minutos", "is_correct": false },
-      { "id": "D", "text": "Encender el Engine Master para presurizar el circuito", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Asegurar que el avión esté en superficie nivelada y colocar la varilla completamente insertada",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Colocar la válvula selectora en OFF y encender la bomba eléctrica auxiliar durante la medición",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Comprobar el nivel únicamente con el motor en marcha a 1.400 RPM y freno de mano accionado",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Medir el nivel inmediatamente tras el corte de motor sin esperar al retorno del aceite al cárter",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "La nota de la Página 4-7 indica expresamente: 'Fuel drainage operation must be carried out with the aircraft parked on a level surface. Set Cockpit Fuel Selector to LEFT or RIGHT prior to drain fuel'.",
@@ -278,10 +486,26 @@
     "learning_objective": "AFM Sección 4 - Despegue en Pistas Cortas (Short Field Takeoff)",
     "stem": "¿Cuál es la técnica recomendada por el AFM para despegue en campo corto (Short Field Takeoff) con la Tecnam P2010 TDI?",
     "options": [
-      { "id": "A", "text": "Flaps: T/O (15°); Aplicar frenos, acelerar al 100% Load verificando parámetros de motor estables; Soltar frenos, rotar a 60 KIAS y mantener velocidad de franqueamiento hasta 50 ft", "is_correct": true },
-      { "id": "B", "text": "Flaps: LAND (40°); Despegar sin frenos a 45 KIAS", "is_correct": false },
-      { "id": "C", "text": "Flaps: UP; Acelerar en carrera continua y rotar a 75 KIAS", "is_correct": false },
-      { "id": "D", "text": "Iniciar la carrera con el FADEC TEST presionado", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Flaps: T/O (15°); Aplicar frenos, acelerar al 100% Load verificando parámetros de motor estables; Soltar frenos, rotar a 60 KIAS y mantener velocidad de franqueamiento hasta 50 ft",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Flaps: T/O (17°) ; Aplicar frenos, acelerar al 110% Load verificando parámetros de motor estables ; Soltar frenos, rotar a 70 KIAS y mantener velocidad de franqueamiento hasta 52 ft",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Flaps: T/O (11°) ; Aplicar frenos, acelerar al 80% Load verificando parámetros de motor estables ; Soltar frenos, rotar a 40 KIAS y mantener velocidad de franqueamiento hasta 46 ft",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Flaps: T/O (21°) ; Aplicar frenos, acelerar al 130% Load verificando parámetros de motor estables ; Soltar frenos, rotar a 90 KIAS y mantener velocidad de franqueamiento hasta 56 ft",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "En pista corta se seleccionan Flaps T/O, se mantienen frenos pisados mientras se avanza la palanca al 100% Load comprobando parámetros estables, se liberan frenos, se rota a 60 KIAS y se asciende manteniendo pendiente positiva hasta franquear los obstáculos.",
@@ -299,10 +523,26 @@
     "learning_objective": "AFM Sección 4 - Comprobación de Nivel de Aceite de Motor",
     "stem": "Al realizar la inspección prevuelo del nivel de aceite de motor en la varilla (Dipstick) del Continental CD-170, ¿cuáles son las marcas mínima y máxima admisibles?",
     "options": [
-      { "id": "A", "text": "Mínimo: 4.5 litros; Máximo: 6.0 litros (no despachar por debajo de la marca de mínimo)", "is_correct": true },
-      { "id": "B", "text": "Mínimo: 2.0 litros; Máximo: 8.0 litros", "is_correct": false },
-      { "id": "C", "text": "Mínimo: 6.0 cuartos; Máximo: 12.0 cuartos", "is_correct": false },
-      { "id": "D", "text": "El nivel de aceite solo se puede comprobar electrónicamente en el MFD con motor en marcha", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Mínimo: 4.5 litros; Máximo: 6.0 litros",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mínimo: 2.0 litros; Máximo: 8.0 litros",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mínimo: 6.0 cuartos; Máximo: 12.0 cuartos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mínimo: 7.8 litros ; Máximo: 12.3 litros",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "La capacidad del cárter del motor Continental CD-170 es de 6.0 litros máximos y el nivel mínimo operativo antes de cualquier vuelo es de 4.5 litros según la varilla graduada accesible por la compuerta del capó del motor.",

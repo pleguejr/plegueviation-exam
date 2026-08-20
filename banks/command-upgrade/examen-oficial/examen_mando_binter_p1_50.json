@@ -84,22 +84,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Comprobar que la documentación legal del vuelo esté en fecha",
+        "text": "Comprobar que la documentación legal del vuelo está en fecha y en vigor, siempre que se notifique previamente a la autoridad competente y al CCO",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "El que todos los diferidos estén cerrados o en fecha y que pueden ser despachados acorde a la Minimum Equipment List (MEL)",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "B + el comprobar que se han realizado las inspecciones rutinarias y específicas que deben realizarse a la aeronave (line check por ejemplo)",
+        "text": "Verificar que los diferidos estén cerrados o vigentes según la MEL, y que se han realizado las inspecciones de mantenimiento requeridas",
         "is_correct": true
       },
       {
+        "id": "C",
+        "text": "Revisar que no existan discrepancias entre el plan de vuelo operacional y el peso básico en vacío",
+        "is_correct": false
+      },
+      {
         "id": "D",
-        "text": "Ninguna es correcta",
+        "text": "Comprobar exclusivamente las firmas de la tripulación técnica del vuelo del día anterior, manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       }
     ],
@@ -352,22 +352,22 @@
     "options": [
       {
         "id": "A",
-        "text": "45 minutos a 1500 FT",
+        "text": "45 minutos a 1.500 ft sobre la elevación del aeródromo de destino",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "30 minutos at 1500 FT sobre la elevación del aeródromo de alternativo",
+        "text": "30 minutos a 1.500 ft sobre la elevación del aeródromo de alternativo",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "30 minutos at 1500 FT sobre la elevación del aeródromo de destino",
+        "text": "30 minutos a 1.500 ft sobre la elevación del aeródromo de destino",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Combustible para el alternativo + Combustible de contingencia",
+        "text": "45 minutos a 1.500 ft sobre la elevación del aeródromo de alternativo",
         "is_correct": false
       }
     ],
@@ -390,23 +390,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Payload únicamente",
+        "text": "Payload comercial únicamente (pasajeros facturados y su equipaje)",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Valores de peso como: \"Comail, Comat, Valijas\"",
-        "is_correct": false
+        "text": "Carga de pago comercial más la carga no comercial",
+        "is_correct": true
       },
       {
         "id": "C",
-        "text": "Peso de pasajeros y equipaje de mano DAA",
+        "text": "Carga no comercial exclusivamente (Comail, Comat, Valijas y correo oficial)",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Payload (carga comercial) más la carga no comercial (Comail, Comat, Valijas)",
-        "is_correct": true
+        "text": "Peso total de pasajeros, equipaje de cabina y combustible remanente en bloque",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -504,23 +504,23 @@
     "options": [
       {
         "id": "A",
-        "text": "A partir de las 25 semanas",
+        "text": "A partir de la semana 24 de gestación y hasta 3 días tras el parto",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Siempre será necesario",
-        "is_correct": false
+        "text": "A partir de la semana 28 de gestación y hasta 7 días tras el parto",
+        "is_correct": true
       },
       {
         "id": "C",
-        "text": "Solo es necesario en caso de prescripción médica",
+        "text": "A partir de la semana 32 de gestación y hasta 14 días tras el parto",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Cuando pasa de las 28 semanas e incluso después de 7 días después del parto",
-        "is_correct": true
+        "text": "A partir de la semana 36 de gestación y hasta 21 días tras el parto",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -542,22 +542,22 @@
     "options": [
       {
         "id": "A",
-        "text": "No es necesario efectuarlo están exentos los pasajeros DEAF, BLND y WCHR",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Si, es necesario siempre",
+        "text": "Sí, es obligatorio en todos los casos para cualquier pasajero con discapacidad sensorial",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "No es necesario; los pasajeros DEAF, BLND y WCHR están exentos de formalizar pliego de descargo",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "Solo en caso de no llevar acompañante válido",
+        "text": "Solo es necesario en caso de que el pasajero viaje sin acompañante mayor de 18 años",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No es necesario si lleva perro de acompañamiento o lazarillo",
+        "text": "Solo es necesario si el vuelo tiene una duración programada superior a dos horas",
         "is_correct": false
       }
     ],
@@ -810,22 +810,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Cuando las condiciones del aeródromo de destino estén por debajo de mínimos una hora antes y una hora después de la hora estimada de uso o no se disponga información meteorológica del mismo",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Siempre",
+        "text": "Siempre que el destino esté situado fuera del espacio aéreo español peninsular",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Cuando la meteo de destino esté bajo mínimos o no haya información meteorológica",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "El aeródromo de destino sea de CAT B en materia de requisitos de calificación para el comandante",
+        "text": "Cuando el destino disponga de una única pista operativa sin aproximación de precisión Tipo B",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "B es correcta siempre que el aeródromo alternativo a destino esté a más de 60 minutos del aeródromo de destino e incluyendo un punto de replanificación",
+        "text": "Cuando el alternativo principal esté situado a más de 60 minutos de vuelo con ambos motores",
         "is_correct": false
       }
     ],
@@ -924,7 +924,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Al inicio (00:00) del día siguiente del descubrimiento",
+        "text": "Al inicio del día siguiente del descubrimiento",
         "is_correct": true
       },
       {
@@ -963,23 +963,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Disponer de NOTOC debidamente cumplimentado",
-        "is_correct": false
+        "text": "Disponer del documento NOTOC debidamente firmado y verificar su correcta estiba",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "Asegurarse de que están cargadas debidamente",
+        "text": "Revisar que la mercancía viaje siempre en la cabina de pasaje bajo custodia directa",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Dar un briefing a la tripulación haciendo hincapié en el código de respuesta",
+        "text": "Solicitar autorización verbal a la torre de control antes de cerrar puertas",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Todas son correctas",
-        "is_correct": true
+        "text": "Delegar la supervisión exclusivamente en el despachador de vuelo sin firmar NOTOC",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -1077,22 +1077,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Solo con el mínimo Fuel Policy",
+        "text": "Se puede despegar con combustible por debajo del REQD si la meteo en destino es CAVOK",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "No podemos despachar ni despegar un vuelo por debajo del combustible mínimo requerido (REQD)",
+        "text": "No se puede despachar ni despegar por debajo del combustible mínimo requerido",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "Sí podemos despachar un vuelo con menos del combustible mínimo requerido (REQD)",
+        "text": "Se puede despachar por debajo de REQD reduciendo el contingency fuel en cabina",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No podemos despachar un vuelo por debajo del combustible mínimo al MAP (MAP MIN)",
+        "text": "Solo se puede despachar por debajo de REQD si se cancela el aeródromo alternativo",
         "is_correct": false
       }
     ],
@@ -1153,22 +1153,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Todas son correctas (para el despegue, para mínimos RVR < 800m y cuando se disponga de RVR reportado)",
+        "text": "En despegues con baja visibilidad, aproximaciones LVO o cuando se disponga de RVR reportado",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Para el despegue únicamente",
+        "text": "En aproximaciones visuales diurnas con visibilidad reportada superior a 5 kilómetros",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Para valores mínimos de RVR inferiores a 800 m únicamente",
+        "text": "En vuelos de entrenamiento sin pasajeros con techo de nubes superior a 1.000 pies",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Cuando dispongamos de un reporte de RVR únicamente",
+        "text": "En cualquier aproximación RNAV/RNP donde no existan radioayudas terrestres convencionales",
         "is_correct": false
       }
     ],
@@ -1191,22 +1191,22 @@
     "options": [
       {
         "id": "A",
-        "text": "RVR 800 al Norte",
+        "text": "RVR 800 metros con tendencia a mejorar",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "RVR 800 sin cambios esperados (No change)",
+        "text": "RVR 800 metros sin cambios esperados",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "RVR 800 pero \"NO\" reportado",
+        "text": "RVR 800 metros en la cabecera Norte",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "RVR 800 no por niebla",
+        "text": "RVR 800 metros no reportado oficialmente",
         "is_correct": false
       }
     ],
@@ -1229,22 +1229,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Niebla presente",
+        "text": "Niebla presente en todo el aeródromo",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Niebla en las proximidades",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "Parcialmente con niebla (bancos de niebla)",
+        "text": "Bancos parciales de niebla",
         "is_correct": true
       },
       {
+        "id": "C",
+        "text": "Niebla en las proximidades del aeródromo",
+        "is_correct": false
+      },
+      {
         "id": "D",
-        "text": "Niebla previamente al reporte",
+        "text": "Niebla previa en proceso de disipación rápida",
         "is_correct": false
       }
     ],
@@ -1305,23 +1305,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Formulario SA-09 cumplimentado",
-        "is_correct": false
+        "text": "Formulario SA-09 debidamente cumplimentado e identificación oficial autorizada",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "Formulario SA-14 cumplimentado",
+        "text": "Formulario SA-14 cumplimentado sin necesidad de identificación profesional",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Identificación como POLICÍA, miembro de seguridad del Estado o escolta",
+        "text": "Notificación verbal previa al comandante sin soporte documental escrito",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "A + C son correctas (Formulario SA-09 cumplimentado e identificación oficial)",
-        "is_correct": true
+        "text": "Autorización expresa emitida por el despachador de vuelo en el plan de vuelo",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -1343,7 +1343,7 @@
     "options": [
       {
         "id": "A",
-        "text": "En el Airplane Flight Manual (AFM)",
+        "text": "En el Airplane Flight Manual",
         "is_correct": true
       },
       {
@@ -1382,22 +1382,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Se admiten todo tipo de mercancías de clase 1",
+        "text": "Se admiten todas las divisiones de la Clase 1 sin limitación",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Se admiten todo tipo de mercancías de clase 1 siempre que se tenga aprobación de la autoridad competente",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "Solo se admite la división 1.4S",
+        "text": "Solo se admite el transporte de la división 1.4S",
         "is_correct": true
       },
       {
+        "id": "C",
+        "text": "Se admiten divisiones 1.1 y 1.2 previa autorización de AESA",
+        "is_correct": false
+      },
+      {
         "id": "D",
-        "text": "El transporte de mercancías de clase 1 viene regulado por la reglamentación local de cada país",
+        "text": "No se permite ninguna división de mercancías de Clase 1",
         "is_correct": false
       }
     ],
@@ -1420,22 +1420,22 @@
     "options": [
       {
         "id": "A",
-        "text": "El mayor valor entre: 5 minutos de espera a 1500 ft en destino (51 kg ATR / 166 kg E195-E2) y el 5% del Trip Fuel (o 3% con Fuel ERA)",
+        "text": "El mayor entre: 5 min de espera a 1.500 ft en destino y el 5% del Trip Fuel",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "5 minutos a velocidad de espera a 1500 ft sobre el aeródromo de destino",
+        "text": "El menor entre: 10 min de espera a 1.500 ft en destino y el 10% del Trip Fuel planificado",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "5 minutos a velocidad de espera a 1500 ft sobre el aeródromo alternativo",
+        "text": "Una cantidad fija de 15 minutos de combustible calculada al régimen de crucero en FL150",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "5% del trip fuel o bien 3% del trip fuel",
+        "text": "El 5% del combustible total de bloque independientemente de la duración del trayecto",
         "is_correct": false
       }
     ],
@@ -1496,23 +1496,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Vuelos de muy corta duración",
+        "text": "Vuelos de muy larga distancia con baja carga de pasaje y viento de cola",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Alta carga de pago (High Payload)",
-        "is_correct": false
+        "text": "Vuelos de muy corta duración combinados con una alta carga de pago",
+        "is_correct": true
       },
       {
         "id": "C",
-        "text": "Vuelos de larga duración con poco pasaje",
+        "text": "Vuelos ferry de traslado de aeronave sin pasaje ni equipaje facturado",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "A + B son correctas (vuelos de muy corta duración con alta carga de pago)",
-        "is_correct": true
+        "text": "Vuelos con aeródromos aislados donde se requiere combustible adicional de 2 horas",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -1545,12 +1545,12 @@
       },
       {
         "id": "C",
-        "text": "AVI (AVIH) va en la bodega y PET (PETC) va en la cabina de pasaje",
+        "text": "AVI va en la bodega y PET va en la cabina de pasaje",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "Todas son incorrectas",
+        "text": "Todas son incorrectas, manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       }
     ],
@@ -1611,22 +1611,22 @@
     "options": [
       {
         "id": "A",
-        "text": "No podemos comenzar una aproximación en ningún caso si el aeródromo está bajo mínimos",
+        "text": "No se puede iniciar la aproximación si la visibilidad reportada está por debajo de mínimos",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Podemos efectuar la aproximación hasta 1000 ft AGL (o hasta el FAF / último segmento de aproximación si la DA/MDA es superior a 1000 ft)",
+        "text": "Se puede iniciar la aproximación y continuar más allá de 1.000 ft AGL si la visibilidad reportada está en mínimos",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "Se podrá comenzar la aproximación solo si el RVR de la zona de touchdown está por encima del mínimo requerido",
+        "text": "Se debe frustrar inmediatamente antes del punto FAF si el techo de nubes desciende de 1.500 ft",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Solo en caso que el RVR esté por encima de 550 metros (ILS CAT I)",
+        "text": "Se puede descender por debajo de la DA/MDA sin disponer de referencias visuales de la pista",
         "is_correct": false
       }
     ],
@@ -1725,22 +1725,22 @@
     "options": [
       {
         "id": "A",
-        "text": "No son necesarios para el despacho del vuelo",
+        "text": "No son necesarios para el despacho del vuelo, siempre que se notifique previamente a la autoridad competente y al CCO",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Son estrictamente requeridos para el despacho del vuelo (deben estar operativos)",
+        "text": "Son estrictamente requeridos para el despacho del vuelo",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "Están contenidos en la CDL",
+        "text": "Están contenidos en la CDL, requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Su despacho queda a discreción exclusiva del comandante",
+        "text": "Su despacho queda a discreción exclusiva del comandante, manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       }
     ],
@@ -1778,7 +1778,7 @@
       },
       {
         "id": "D",
-        "text": "3 tomas y 3 despegues en los últimos tres meses (90 días)",
+        "text": "3 tomas y 3 despegues en los últimos tres meses",
         "is_correct": true
       }
     ],
@@ -1816,7 +1816,7 @@
       },
       {
         "id": "D",
-        "text": "B y C son correctas",
+        "text": "B y C son correctas, manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       }
     ],
@@ -1839,22 +1839,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Un aeródromo de destino a menos de 1h de vuelo con N-1 puede servir como alternativo de despegue",
-        "is_correct": false
+        "text": "Un aeródromo a menos de 1h con N-1 puede ser alternativo de despegue, y el de origen puede ser alternativo de destino",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "El aeródromo de origen puede ser seleccionado como alternativo de destino si reúne los requisitos",
+        "text": "Un aeródromo militar puede ser seleccionado como alternativo de destino sin autorización previa del CCO",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Las afirmaciones A y B son correctas",
-        "is_correct": true
+        "text": "El aeródromo alternativo de destino debe disponer obligatoriamente de una pista con longitud superior a 3.000 m",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "Ninguna es correcta",
+        "text": "No se permite designar ningún alternativo de destino que esté situado a más de 30 minutos de vuelo de crucero",
         "is_correct": false
       }
     ],
@@ -1877,22 +1877,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Mínimos de No Precisión + 200 ft de techo / 1000 m de visibilidad (o MDA/H + 400 ft / 1500 m en plan básico)",
+        "text": "Mínimos de No Precisión + 200 ft de techo / 1000 m de visibilidad",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Mínimos de No Precisión puros sin incremento",
+        "text": "Mínimos de No Precisión puros sin incremento, siempre que se notifique previamente a la autoridad competente y al CCO",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Mínimos de CAT I estándar",
+        "text": "Mínimos de CAT I estándar, requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Mínimos de aproximación en circuito (Circling)",
+        "text": "Mínimos de aproximación en circuito (Circling), manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       }
     ],

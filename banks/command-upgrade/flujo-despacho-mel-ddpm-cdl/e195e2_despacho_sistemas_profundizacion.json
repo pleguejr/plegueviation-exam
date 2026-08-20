@@ -12,17 +12,17 @@
       },
       {
         "id": "B",
-        "text": "Conecta el motor al generador eléctrico exclusivamente",
+        "text": "reduciendo ruido, Permite que el Fan frontal gire a menor velocidad óptima mientras la turbina de baja presión gira a alta velocidad óptima (ratio ~3:1), emisiones y consumo de combustible",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Es una transmisión manual sincronizada para empuje inverso",
+        "text": "Permite que el Fan frontal gire a menor velocidad óptima mientras la turbina de baja presión gira a alta velocidad óptima (ratio ~3:1), reduciendo ruido, Carga comercial no declarada",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Acciona la bomba mecánica de combustible sin relación con el fan",
+        "text": "Permite que el Fan frontal gire a menor velocidad óptima mientras la turbina de baja presión gira a alta velocidad óptima (ratio ~3:1), Inspección técnica diferida, emisiones y consumo de combustible",
         "is_correct": false
       }
     ],
@@ -45,22 +45,22 @@
     "options": [
       {
         "id": "A",
-        "text": "1 minuto",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "3 minutos de funcionamiento en ralentí (o ralentí de rodaje) para permitir la estabilización térmica homogénea de los rotores y el enfriamiento de los cojinetes",
+        "text": "3 minutos en ralentí de rodaje para permitir la estabilización térmica del motor antes de la parada",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "1 minuto en ralentí inmediatamente tras abandonar la pista activa de aterrizaje",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "5 minutos continuos sin aplicar frenos",
+        "text": "5 minutos manteniendo la palanca de gases por encima del ralentí de vuelo",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No requiere tiempo de enfriamiento por ser motor moderno",
+        "text": "No se requiere enfriamiento si el aterrizaje se realizó sin reversa de empuje",
         "is_correct": false
       }
     ],
@@ -83,22 +83,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Aproximadamente 100 kg (220 lb) en cada tanque",
+        "text": "Aproximadamente 100 kg en cada tanque",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Aproximadamente 550 kg (1210 lb) en cada tanque",
+        "text": "Aproximadamente 550 kg en cada tanque, requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Aproximadamente 300 kg (660 lb) en el tanque alar correspondiente (suministrando ~30 minutos de reserva final)",
+        "text": "Aproximadamente 300 kg en el tanque alar correspondiente",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "Aproximadamente 800 kg en total",
+        "text": "Aproximadamente 800 kg en total, manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       }
     ],
@@ -121,22 +121,22 @@
     "options": [
       {
         "id": "A",
-        "text": "100 kg (220 lb)",
+        "text": "100 kg",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "200 kg (440 lb)",
+        "text": "200 kg, requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "500 kg (1100 lb)",
+        "text": "500 kg, manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Aproximadamente 360 kg (800 lb) de diferencia entre tanques",
+        "text": "Aproximadamente 360 kg de diferencia entre tanques",
         "is_correct": true
       }
     ],
@@ -158,22 +158,22 @@
     "options": [
       {
         "id": "A",
-        "text": "La Ram Air Turbine (RAT: Turbina de Impacto de Aire), que genera potencia eléctrica de 115 VAC para las barras esenciales y presuriza el Sistema Hidráulico de emergencia",
+        "text": "La Ram Air Turbine, que genera potencia hidráulica para la bomba y alimenta el bus esencial",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Un motor auxiliar de gasolina en el cono de cola",
+        "text": "El generador de emergencia accionado mecánicamente por la rueda del tren principal",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Paneles fotovoltaicos en el extradós alar",
+        "text": "Las baterías principales exclusivamente mediante inversores estáticos sin generación eólica",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "El alternador de imanes permanentes del FADEC",
+        "text": "Un alternador de reserva accionado por el flujo de aire de los conductos de sangrado",
         "is_correct": false
       }
     ],
@@ -232,22 +232,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Mezcla el líquido hidráulico del Sistema 1 con el Sistema 2 en caso de fuga",
-        "is_correct": false
+        "text": "Transfiere potencia mecánica de presurización entre Sistema Hidráulico 1 y 2 sin mezclar fluidos",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "Alimenta el tren de morro exclusivamente con aire a presión",
+        "text": "Mezcla el líquido hidráulico del Sistema 1 con el Sistema 2 en caso de fuga en circuito",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Transfiere potencia mecánica de presurización entre el Sistema Hidráulico 1 y el Sistema Hidráulico 2 sin transferir ni mezclar fluido hidráulico entre ambos",
-        "is_correct": true
+        "text": "Acciona eléctricamente las bombas hidráulicas principales utilizando energía de las baterías",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "Refrigera el líquido hidráulico de los frenos",
+        "text": "Presuriza exclusivamente los acumuladores de frenos de emergencia del tren principal",
         "is_correct": false
       }
     ],
@@ -269,17 +269,17 @@
     "options": [
       {
         "id": "A",
-        "text": "En Modo Directo el avión solo puede ser pilotado por el piloto automático",
+        "text": "alabeo y factor de carga), En Modo Normal los FCMs proporcionan protección activa de envolvente de vuelo (alta/baja velocidad, mientras que en Modo Directo los actuadores responden directamente a las palancas sin protecciones de envolvente",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "En Modo Normal los mandos están conectados por cables de acero mecánicos",
+        "text": "En Modo Normal los FCMs proporcionan protección activa de envolvente de vuelo (alta/baja velocidad, alabeo y factor de carga), Carga comercial no declarada",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "En Modo Directo no funcionan los alerones",
+        "text": "En Modo Normal los FCMs proporcionan protección activa de envolvente de vuelo (alta/baja velocidad, Inspección técnica diferida, mientras que en Modo Directo los actuadores responden directamente a las palancas sin protecciones de envolvente",
         "is_correct": false
       },
       {
@@ -354,12 +354,12 @@
       },
       {
         "id": "C",
-        "text": "18.000 ft",
+        "text": "18.000 ft, requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "25.000 ft",
+        "text": "25.000 ft, manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       }
     ],
@@ -381,12 +381,12 @@
     "options": [
       {
         "id": "A",
-        "text": "El avión no puede ser despachado comercialmente",
+        "text": "Es permite el despacho requiriendo arranque de motor en tierra con unidad neumática externa (Air Starter Unit / Huffer) y fuente eléctrica GPU, y arranque cruzado (Crossbleed Start) para el segundo motor",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Se requiere despresurizar el avión antes del despegue",
+        "text": "Solo permite el despacho requiriendo arranque de motor en tierra con unidad neumática externa (Air Starter Unit / Huffer) y fuente eléctrica GPU, y arranque cruzado (Crossbleed Start) para el segundo motor",
         "is_correct": false
       },
       {
@@ -396,7 +396,7 @@
       },
       {
         "id": "D",
-        "text": "Se restringe el techo de vuelo a FL150",
+        "text": "Se permite el despacho requiriendo arranque de motor en tierra con unidad neumática externa (Air Starter Unit / Huffer) y fuente eléctrica GPU, y arranque cruzado (Crossbleed Start) para el segundo motor",
         "is_correct": false
       }
     ],
@@ -419,23 +419,23 @@
     "options": [
       {
         "id": "A",
-        "text": "No se permite despegar con peso superior a 40 toneladas",
-        "is_correct": false
+        "text": "Bloqueo mecánico en posición plegada y penalización de performance en despegue y aterrizaje en pista mojada",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "Se reduce la velocidad Vne en 30 nudos",
+        "text": "Desconexión eléctrica del inversor sin penalización alguna en las distancias de pista calculadas",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "El viento cruzado se limita a 5 nudos",
+        "text": "Prohibición total de despegue con peso superior al 80% del peso máximo certificado de despegue",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Se debe bloquear mecánicamente el inversor en posición plegada/forward (M), no tomar crédito de reversa en los cálculos de rendimiento (O) y aplicar las penalizaciones de distancia en pista mojada o contaminada",
-        "is_correct": true
+        "text": "Limitación exclusiva para operar en pistas con longitud superior a 3.000 metros en condiciones secas",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -457,22 +457,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Dos sensores ultrasónicos de vibración en el fuselaje delantero que detectan la frecuencia de resonancia al acumularse masa de hielo en su superficie",
+        "text": "Dos sensores ultrasónicos de vibración en el fuselaje delantero que detectan acumulación de hielo",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Cámaras térmicas ópticas en las alas",
+        "text": "Cámaras ópticas térmicas situadas en los planos para monitorizar la superficie alar en vuelo",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Sensores de presión pitot modificados",
+        "text": "Detectores de presión diferencial instalados en los conductos de admisión de los motores",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Observación visual obligatoria por los pilotos con foco de plano",
+        "text": "Sensores de temperatura exterior combinados exclusivamente con la señal de limpiaparabrisas",
         "is_correct": false
       }
     ],
@@ -499,17 +499,17 @@
       },
       {
         "id": "B",
-        "text": "Los bordes de ataque alares externos (Slats 2, 3 y 4) y las tomas de aire de los motores (Engine Cowl Inlets)",
+        "text": "Los bordes de ataque alares externos y las tomas de aire de los motores",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "El estabilizador vertical y cono de morro",
+        "text": "El estabilizador vertical y cono de morro, requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "El tren de aterrizaje y compuertas de bodega",
+        "text": "El tren de aterrizaje y compuertas de bodega, manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       }
     ],
@@ -541,7 +541,7 @@
       },
       {
         "id": "C",
-        "text": "35 nudos (o hasta 38 nudos según versión del AFM / certificado)",
+        "text": "35 nudos",
         "is_correct": true
       },
       {
@@ -607,22 +607,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Reduce el desgaste térmico y mecánico del motor alargando su vida útil y disminuyendo los costes de mantenimiento cuando la longitud de pista y el peso lo permiten",
+        "text": "Reduce el desgaste térmico y mecánico del motor alargando su vida útil cuando el peso y la pista lo permiten",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Aumenta el consumo de combustible para evitar sobrepeso",
+        "text": "Aumenta la aceleración inicial en pista corta para alcanzar la velocidad V1 con mayor rapidez",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Permite despegar con un generador apagado",
+        "text": "Compensa la pérdida de sustentación producida por la activación del sistema de antihielo de motor",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Es obligatoria en pistas con nieve contaminada",
+        "text": "Permite despegar con viento en cola superior a 15 nudos manteniendo los márgenes de pista",
         "is_correct": false
       }
     ],
@@ -645,7 +645,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Con temperatura ambiente inferior a 20°C",
+        "text": "aguanieve, En pistas contaminadas (agua estancada, nieve o hielo) o cuando los frenos o el sistema de antiskid estén inoperativos",
         "is_correct": false
       },
       {
@@ -655,12 +655,12 @@
       },
       {
         "id": "C",
-        "text": "En aeropuertos al nivel del mar",
+        "text": "En pistas contaminadas (agua estancada, aguanieve, Carga comercial no declarada",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Con viento en calma",
+        "text": "En pistas contaminadas (agua estancada, Inspección técnica diferida, nieve o hielo) o cuando los frenos o el sistema de antiskid estén inoperativos",
         "is_correct": false
       }
     ],
@@ -683,22 +683,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Las palancas de mando mecánicas",
-        "is_correct": false
+        "text": "Módulo digital BCM que modula electrohidráulicamente la presión de frenada",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "La palanca de flaps exclusivamente",
+        "text": "Válvulas mecánicas accionadas por cables conectados directamente a los pedales del piloto",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "El módulo digital BCM (Brake Control Module) que modula electrohidráulicamente la presión en cada conjunto de frenos de disco de carbono",
-        "is_correct": true
+        "text": "Sensor barométrico que ajusta la frenada en función de la altitud de presión del aeródromo",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "El piloto automático GFC",
+        "text": "Gobernador centrífugo instalado en el eje de la rueda de morro para evitar patinamientos",
         "is_correct": false
       }
     ],
@@ -720,23 +720,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Aplica frenado suave para no asustar al pasaje",
-        "is_correct": false
+        "text": "Aplica automáticamente la máxima presión hidráulica disponible al detectar deceleración de despegue abortado",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "Solo frena la rueda de morro",
+        "text": "Aplica frenado suave y progresivo regulado para no generar incomodidad en el pasaje de cabina",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Acelera los motores al máximo",
+        "text": "Mantiene el régimen de frenada constante mediante el despliegue automático de spoilers de tierra",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Aplica automáticamente la máxima presión hidráulica de frenado disponible tan pronto como los mandos de potencia se retrasan a ralentí a velocidades superiores a 60 KIAS",
-        "is_correct": true
+        "text": "Bloquea las ruedas principales de forma intermitente para disipar la energía térmica del conjunto",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -757,22 +757,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Monitorizar la indicación de temperatura de frenos en la sinóptica del MFD y coordinar con los bomberos de pista (RFFS), no aplicando el freno de estacionamiento a menos que sea imprescindible para evitar la soldadura de discos",
+        "text": "Monitorizar la temperatura de frenos en la sinóptica y evitar aplicar freno de estacionamiento si están calientes",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Despegar de inmediato para enfriar los frenos en el aire",
+        "text": "Despegar de inmediato para refrigerar los conjuntos de frenos con el flujo de aire exterior en vuelo",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Regar los frenos con cubos de agua fría inmediatamente",
+        "text": "Aplicar agua a presión directamente sobre las llantas para enfriar rápidamente los discos de carbono",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Apagar todos los generadores eléctricos",
+        "text": "Rodar a alta velocidad por las calles de rodaje para generar ventilación forzada en los neumáticos",
         "is_correct": false
       }
     ],
@@ -795,22 +795,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Llenar los depósitos de agua de los lavabos",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "Abre completamente la válvula de escape de flujo (Outflow Valve) y apaga la recirculación para igualar rápidamente la presión de cabina con la exterior (hasta 12.400 ft) en caso de humo o evacuación",
+        "text": "Abre completamente la Outflow Valve y apaga los packs para despresurizar la cabina en emergencia o humo",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "Aumenta la presurización al valor máximo admisible para sellar herméticamente todas las puertas",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "Lanza combustible fuera del avión",
+        "text": "Descarga automáticamente los tanques de agua potable y residuales hacia el exterior del avión",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Dispara los extintores de motor",
+        "text": "Conecta el aire acondicionado en modo de refrigeración forzada a nivel de mar sin ventilar la cabina",
         "is_correct": false
       }
     ],
@@ -837,17 +837,17 @@
       },
       {
         "id": "B",
-        "text": "2 relojes analógicos y 1 iPad",
+        "text": "2 relojes analógicos y 1 iPad, requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "4 pantallas LCD panorámicas de gran formato (DU 1 a DU 4) de 13x10 pulgadas de alta resolución",
+        "text": "4 pantallas LCD panorámicas de gran formato de 13x10 pulgadas de alta resolución",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "8 pantallas táctiles pequeñas",
+        "text": "8 pantallas táctiles pequeñas, manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       }
     ],
@@ -869,17 +869,17 @@
     "options": [
       {
         "id": "A",
-        "text": "Controla la potencia de los motores",
+        "text": "obstáculos, Presenta una representación gráfica tridimensional en tiempo real del terreno, pistas y entorno exterior basada en base de datos topográfica y posición GPS/IRS",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Calcula la masa y centrado en vuelo",
+        "text": "Presenta una representación gráfica tridimensional en tiempo real del terreno, obstáculos, Carga comercial no declarada",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Sustituye a la tripulación en el aterrizaje",
+        "text": "Presenta una representación gráfica tridimensional en tiempo real del terreno, Inspección técnica diferida, pistas y entorno exterior basada en base de datos topográfica y posición GPS/IRS",
         "is_correct": false
       },
       {
@@ -906,22 +906,22 @@
     "options": [
       {
         "id": "A",
-        "text": "La Lista de Desviaciones de Configuración (CDL - Configuration Deviation List) contenida en el DDPM / AFM",
+        "text": "La Lista de Desviaciones de Configuración para verificar si se permite volar sin esa pieza exterior",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "El manual de catering",
+        "text": "El manual de catering y servicio de a bordo para comprobar el equipamiento interior de cabina",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "El manual de ventas de pasaje",
+        "text": "El plan de vuelo operacional únicamente para verificar el consumo de combustible de contingencia",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "El libro de quejas de cabina",
+        "text": "El libro de mantenimiento del aeropuerto de salida para solicitar la sustitución de la pieza en línea",
         "is_correct": false
       }
     ],
@@ -944,22 +944,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Reducción del número de pasajeros a la mitad",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "Penalizaciones de masa máxima de despegue/aterrizaje (Weight Penalty) o incrementos porcentuales en el consumo de combustible de crucero (Fuel Burn Penalty) debido al aumento de resistencia parásita",
+        "text": "2 botellas de halón para motores y 1 botella exclusiva para APU",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "1 botella de halón para cada motor (independientes) y 2 botellas para el APU",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "Prohibición de aterrizar con viento de cara",
+        "text": "2 botellas de halón para cada motor y el APU utiliza descarga de nitrógeno",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Obligación de volar con el tren extendido",
+        "text": "3 botellas de halón compartidas indiferentemente entre ambos motores y el APU",
         "is_correct": false
       }
     ],
@@ -981,22 +981,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Mediante trasvase directo de combustible de un tanque alar al otro mediante bombas de trasvase alar",
-        "is_correct": false
+        "text": "Abriendo la válvula de alimentación cruzada para equilibrar los tanques alares",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "Abriendo la válvula de vertido al exterior",
+        "text": "Mediante trasvase directo de combustible de un tanque alar al otro utilizando bombas de transferencia",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Abriendo la válvula de alimentación cruzada (Crossfeed Valve a LOW 1 o LOW 2), alimentando ambos motores desde el tanque que contiene mayor cantidad de combustible",
-        "is_correct": true
+        "text": "Apagando todas las bombas eléctricas de combustible y permitiendo alimentación por gravedad continua",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "Apagando el motor del lado con menos combustible",
+        "text": "Descargando combustible por las válvulas de vaciado rápido (Fuel Jettison) del ala más pesada",
         "is_correct": false
       }
     ],
@@ -1018,23 +1018,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Extintores de agua a presión",
-        "is_correct": false
+        "text": "Sistema de gas Halón con dos botellas: una de descarga rápida inicial y otra de descarga lenta temporizada",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "Extintores de CO2 manuales únicamente",
+        "text": "Extintores de agua a presión accionados manualmente por la tripulación desde la cabina de pasaje",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Sistema de espuma química en polvo",
+        "text": "Sistema de inertización por nitrógeno con descarga instantánea al detectar incremento de temperatura",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Sistema de extinción por gas Halón con dos botellas: una de descarga rápida inmediata (High-Rate Bottle) y una de descarga lenta dosificada continua (Low-Rate Metered Bottle) para mantener la concentración durante el vuelo hasta el aterrizaje",
-        "is_correct": true
+        "text": "Generadores pirotécnicos de aerosol de potasio ubicados en el suelo de los compartimentos de carga",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -1055,22 +1055,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Los motores disponen de 2 botellas extintoras de halón compartidas y el APU dispone de 1 botella extintora dedicada con capacidad de descarga automática en tierra",
+        "text": "Los motores disponen de 2 botellas extintoras compartidas y el APU dispone de 1 botella extintora exclusiva",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "El APU no tiene extintor",
+        "text": "Cada motor dispone de 1 botella independiente y el APU comparte la botella con el compartimento de carga",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Los motores tienen 6 botellas",
+        "text": "Los motores y el APU comparten una única botella central de gran capacidad para toda la aeronave",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Solo se apagan cortando el combustible",
+        "text": "Los motores disponen de extintores de espuma química y el APU dispone de extinción por corte de aire",
         "is_correct": false
       }
     ],
@@ -1092,22 +1092,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Maniobra el timón de dirección para virar a la derecha automáticamente",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "Genera avisos de tráfico (TA) sonoros y visuales y avisos de resolución (RA) verticales en el PFD instruyendo regímenes específicos de ascenso o descenso (o inversión de maniobra) para garantizar separación vertical",
+        "text": "Genera avisos de tráfico y avisos de resolución en el plano vertical",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "Genera avisos de tráfico (TA) y maniobras de escape automáticas en el plano horizontal",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "Apaga el transpondedor del avión intruso",
+        "text": "Controla el piloto automático para virar 90° hacia el rumbo de escape asignado",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Frena el avión en el aire",
+        "text": "Emite avisos sonoros de proximidad al terreno basados en la base de datos EGPWS",
         "is_correct": false
       }
     ],
@@ -1129,22 +1129,22 @@
     "options": [
       {
         "id": "A",
-        "text": "La velocidad a la que el avión empieza a volar",
-        "is_correct": false
+        "text": "Velocidad máxima para iniciar la primera acción de parada y detener el avión en pista",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "La velocidad máxima a la que se pueden extender los flaps",
+        "text": "Velocidad mínima a la que el avión empieza a despegar de la pista con un motor parado",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "La velocidad máxima a la que el piloto puede iniciar la primera acción de frenado/aborto de despegue y la velocidad mínima a la que el despegue debe continuarse con seguridad en caso de fallo del motor crítico",
-        "is_correct": true
+        "text": "Velocidad calculada para iniciar la rotación de morro hacia la actitud de ascenso",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "La velocidad de contacto de la rueda de morro",
+        "text": "Velocidad a la que se garantiza el franqueamiento de 35 ft sobre el extremo de pista",
         "is_correct": false
       }
     ],
@@ -1167,23 +1167,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Vr es la velocidad de parada y V2 es la de crucero",
-        "is_correct": false
+        "text": "Vr es la velocidad de rotación; V2 es la velocidad de seguridad de subida inicial monomotor a 35 ft",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "Vr es la velocidad de flaps y V2 la de tren",
+        "text": "Vr es la velocidad de decisión de parada; V2 es la velocidad de mejor régimen de ascenso Vy",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Vr es la velocidad de turbulencia y V2 la de planeo",
+        "text": "Vr es la velocidad de pérdida en despegue; V2 es la velocidad de aceleración en crucero",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Vr es la velocidad a la que se inicia la maniobra de rotación para adoptar la actitud de ascenso, y V2 es la velocidad mínima que se debe alcanzar a 35 ft sobre la pista con un motor inoperativo (Takeoff Safety Speed)",
-        "is_correct": true
+        "text": "Vr es la velocidad de retracción de flaps; V2 es la velocidad de maniobra en turbulencia severa",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -1210,17 +1210,17 @@
       },
       {
         "id": "B",
-        "text": "Los pasajeros deben permanecer con cinturones abrochados",
+        "text": "la señal de no fumar encendida, Debe estar informada la tripulación, la señal de cinturones apagada, los pasillos despejados, las puertas principales practicables con medios de evacuación listos y comunicación establecida con el personal de repostaje",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Se prohíbe terminantemente el repostaje con pasajeros a bordo en todos los casos",
+        "text": "Debe estar informada la tripulación, la señal de no fumar encendida, la señal de cinturones apagada, los pasillos despejados, Carga comercial no declarada",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Los motores deben estar encendidos al ralentí",
+        "text": "Debe estar informada la tripulación, Inspección técnica diferida, la señal de cinturones apagada, los pasillos despejados, las puertas principales practicables con medios de evacuación listos y comunicación establecida con el personal de repostaje",
         "is_correct": false
       }
     ],
@@ -1242,22 +1242,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Los bordes de ataque de las alas",
+        "text": "tomas de presión estática, Los tubos Pitot primarios y secundarios, sondas de ángulo de ataque (AOA) y sensores TAT (Total Air Temperature) gobernados automáticamente por los ADSPs",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Los tubos Pitot primarios y secundarios, tomas de presión estática, sondas de ángulo de ataque (AOA) y sensores TAT (Total Air Temperature) gobernados automáticamente por los ADSPs",
+        "text": "Los tubos Pitot primarios y secundarios, tomas de presión estática, sondas de ángulo de ataque y sensores TAT gobernados automáticamente por los ADSPs",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "Las luces de navegación",
+        "text": "Los tubos Pitot primarios y secundarios, tomas de presión estática, Carga comercial no declarada",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Los neumáticos del tren de aterrizaje",
+        "text": "Los tubos Pitot primarios y secundarios, Inspección técnica diferida, sondas de ángulo de ataque (AOA) y sensores TAT (Total Air Temperature) gobernados automáticamente por los ADSPs",
         "is_correct": false
       }
     ],
@@ -1279,22 +1279,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Abre las puertas de pasaje en vuelo",
-        "is_correct": false
+        "text": "Permite controlar directamente la válvula de salida mediante el interruptor manual",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "Apaga los packs de aire acondicionado",
+        "text": "Abre automáticamente todas las válvulas de alivio de seguridad de presión diferencial de cabina",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Permite a los pilotos controlar directamente la apertura y cierre de la Outflow Valve mediante el mando basculante manual en el panel superior si fallan ambos controladores automáticos (ECMs)",
-        "is_correct": true
+        "text": "Despresuriza la cabina a razón fija de 2.000 ft/min hasta igualar la presión exterior",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "Inyecta oxígeno en los motores",
+        "text": "Bloquea los packs de aire acondicionado en modo de refrigeración forzada a nivel de mar",
         "is_correct": false
       }
     ],
@@ -1316,23 +1316,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Que es un procedimiento exclusivo para el comandante",
-        "is_correct": false
+        "text": "Indica un procedimiento técnico de mantenimiento previo y obligatorio antes del vuelo",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "Que solo aplica en condiciones meteorológicas de niebla",
+        "text": "Indica un procedimiento exclusivo de operación de vuelo (O) a realizar por los pilotos",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Que el ítem puede permanecer inoperativo durante 1 año",
+        "text": "Indica que el ítem puede ser diferido por la tripulación sin intervención de mantenimiento",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Que el ítem requiere una acción técnica previa obligatoria por parte del personal de mantenimiento cualificado (como bloqueo mecánico, desconexión eléctrica o precintado) antes del despacho",
-        "is_correct": true
+        "text": "Indica que la aeronave queda restringida exclusivamente a vuelos de traslado sin pasaje",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -1354,22 +1354,22 @@
     "options": [
       {
         "id": "A",
-        "text": "El radar escanea automáticamente el volumen atmosférico frontal desde 0 hasta 60.000 ft y almacena los datos en memoria, mostrando cortes transversales de tormentas, cizalladura (Windshear) y turbulencia sin necesidad de ajustar manualmente la inclinación de antena (Tilt)",
+        "text": "El radar escanea automáticamente el volumen atmosférico frontal desde 0 hasta 60.000 ft y almacena los datos en memoria, mostrando cortes transversales de tormentas, cizalladura y turbulencia sin necesidad de ajustar manualmente la inclinación de antena",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "El piloto debe girar la antena con manivela manual",
+        "text": "mostrando cortes transversales de tormentas, El radar escanea automáticamente el volumen atmosférico frontal desde 0 hasta 60.000 ft y almacena los datos en memoria, cizalladura (Windshear) y turbulencia sin necesidad de ajustar manualmente la inclinación de antena (Tilt)",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Solo detecta nubes si llueve en el aeropuerto",
+        "text": "El radar escanea automáticamente el volumen atmosférico frontal desde 0 hasta 60.000 ft y almacena los datos en memoria, mostrando cortes transversales de tormentas, Carga comercial no declarada",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Requiere apagar el piloto automático",
+        "text": "El radar escanea automáticamente el volumen atmosférico frontal desde 0 hasta 60.000 ft y almacena los datos en memoria, Inspección técnica diferida, cizalladura (Windshear) y turbulencia sin necesidad de ajustar manualmente la inclinación de antena (Tilt)",
         "is_correct": false
       }
     ],
@@ -1391,7 +1391,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Volar durante 2 horas en espera sobre el alternativo",
+        "text": "el ascenso, Cubrir la frustrada en el destino (Go-Around), crucero en ruta hasta el alternativo, el descenso, la aproximación instrumental completa y el aterrizaje en el aeródromo alternativo seleccionado",
         "is_correct": false
       },
       {
@@ -1401,12 +1401,12 @@
       },
       {
         "id": "C",
-        "text": "Alimentar únicamente la APU en tierra",
+        "text": "Cubrir la frustrada en el destino (Go-Around), el ascenso, crucero en ruta hasta el alternativo, el descenso, Carga comercial no declarada",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Cubrir el rodaje en el alternativo",
+        "text": "Cubrir la frustrada en el destino (Go-Around), Inspección técnica diferida, crucero en ruta hasta el alternativo, el descenso, la aproximación instrumental completa y el aterrizaje en el aeródromo alternativo seleccionado",
         "is_correct": false
       }
     ],
@@ -1428,12 +1428,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Buscar el manual de vuelo en la cartera",
+        "text": "100%, Colocarse de inmediato las máscaras de oxígeno al 100% de flujo y establecer comunicación entre ambos tripulantes de vuelo vía interfono (OXYGEN MASKS: DON, CREW COMM: ESTABLISH)",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Declarar emergencia por radio antes de colocarse la máscara",
+        "text": "Colocarse de inmediato las máscaras de oxígeno al 100% de flujo y establecer comunicación entre ambos tripulantes de vuelo vía interfono (OXYGEN MASKS: DON, 100%, Carga comercial no declarada",
         "is_correct": false
       },
       {
@@ -1443,7 +1443,7 @@
       },
       {
         "id": "D",
-        "text": "Desconectar el piloto automático y picar a fondo",
+        "text": "Colocarse de inmediato las máscaras de oxígeno al 100% de flujo y establecer comunicación entre ambos tripulantes de vuelo vía interfono (OXYGEN MASKS: DON, Inspección técnica diferida, CREW COMM: ESTABLISH)",
         "is_correct": false
       }
     ],
@@ -1466,17 +1466,17 @@
     "options": [
       {
         "id": "A",
-        "text": "Se seleccionan Flaps Full y tren de aterrizaje abajo a 400 nudos",
+        "text": "se extienden completamente los Speed Brakes (aerofrenos), Se seleccionan palancas de potencia en IDLE, se ajusta velocidad máxima Vmo/Mmo (o velocidad estructural si hay daño) y se desciende hacia 10.000 ft o la MEA/MORA",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Se apagan los motores",
+        "text": "Se seleccionan palancas de potencia en IDLE, se extienden completamente los Speed Brakes (aerofrenos), Carga comercial no declarada",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Se vira 180° a velocidad de pérdida",
+        "text": "Se seleccionan palancas de potencia en IDLE, Inspección técnica diferida, se ajusta velocidad máxima Vmo/Mmo (o velocidad estructural si hay daño) y se desciende hacia 10.000 ft o la MEA/MORA",
         "is_correct": false
       },
       {
@@ -1504,22 +1504,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Permite interconectar los conductos neumáticos izquierdo y derecho para suministrar aire a ambos packs o permitir el arranque cruzado de motor (Crossbleed Engine Start)",
+        "text": "Permite interconectar conductos neumáticos izquierdo y derecho para arranque cruzado o deshielo",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Expulsa el aire sobrante fuera del ala",
+        "text": "Expulsa el aire sobrante de los packs de aire acondicionado fuera del fuselaje en vuelo",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Presuriza el tanque de combustible",
+        "text": "Aísla el sistema hidráulico principal del sistema de frenado de emergencia en la pista",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Refrigera los frenos del tren principal",
+        "text": "Regula la presión del combustible suministrado desde los tanques centrales al APU",
         "is_correct": false
       }
     ],
@@ -1541,22 +1541,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Flaps FULL únicamente",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "Flaps 5 (o Flaps 4 según manual de operaciones para optimizar el margen de ascenso en frustrada con un motor)",
+        "text": "Flaps 5",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "Flaps FULL obligatoriamente para reducir la distancia de parada en la pista de aterrizaje",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "Aterrizaje sin flaps obligatorio",
+        "text": "Flaps 1 exclusivamente para mantener la mayor velocidad de aproximación posible en final",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Flaps 1",
+        "text": "Flaps 0° (limpia) para eliminar totalmente la resistencia parásita durante el descenso",
         "is_correct": false
       }
     ],
@@ -1579,12 +1579,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Está terminantemente prohibido añadir combustible adicional al plan de vuelo",
+        "text": "esperas previstas, El comandante tiene la potestad de añadir combustible extra justificado por meteorología adversa, contingencias operacionales o limitaciones de aeródromo",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Debe solicitarse por escrito al Director General 24 horas antes",
+        "text": "El comandante tiene la potestad de añadir combustible extra justificado por meteorología adversa, esperas previstas, Carga comercial no declarada",
         "is_correct": false
       },
       {
@@ -1594,7 +1594,7 @@
       },
       {
         "id": "D",
-        "text": "Solo se permite en vuelos internacionales de más de 3 horas",
+        "text": "El comandante tiene la potestad de añadir combustible extra justificado por meteorología adversa, Inspección técnica diferida, contingencias operacionales o limitaciones de aeródromo",
         "is_correct": false
       }
     ],
@@ -1616,23 +1616,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Un mensaje informativo blanco sin sonido",
-        "is_correct": false
+        "text": "Aviso visual en rojo en el anemómetro, clacker sonoro continuo y alerta de voz 'OVERSPEED'",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "Una campana suave",
+        "text": "Mensaje informativo blanco en el EICAS sin aviso sonoro ni cambios en el anemómetro",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Una luz verde en el pedestal central",
+        "text": "Vibración de palanca (Stick Shaker) acompañada de aviso de voz 'STALL, STALL'",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Aviso visual en rojo de sobrevelocidad en la cinta del anemómetro del PFD y tono acústico continuo tipo \"Overspeed Clacker / Siren\" en los auriculares y altavoces de cabina",
-        "is_correct": true
+        "text": "Desconexión automática instantánea de los mandos Fly-by-Wire pasando a modo directo",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -1653,7 +1653,7 @@
     "options": [
       {
         "id": "A",
-        "text": "10 nudos de viento en cola (o hasta 15 nudos si está específicamente certificado en el suplemento del AFM)",
+        "text": "10 nudos de viento en cola",
         "is_correct": true
       },
       {
@@ -1690,22 +1690,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Tira de la palanca hacia atrás cuando el avión aterriza",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "Aplica una fuerza automática y decidida hacia adelante en las palancas de mando de ambos pilotos para reducir el ángulo de ataque si se alcanzan valores críticos de pérdida aerodinámica inminente",
+        "text": "Empuja la palanca hacia adelante antes de la pérdida para reducir el ángulo de ataque",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "Tira de la palanca hacia atrás durante el aterrizaje para suavizar la toma en la pista",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "Bloquea el timón de dirección",
+        "text": "Bloquea los mandos de vuelo en posición neutral cuando el piloto automático está activo",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Extiende los aerofrenos",
+        "text": "Aplica deflexión de timón de dirección para contrarrestar el par motor en el despegue",
         "is_correct": false
       }
     ],
@@ -1727,12 +1727,12 @@
     "options": [
       {
         "id": "A",
-        "text": "El comandante puede continuar el despegue si el destino tiene buen tiempo",
+        "text": "El avión no está en condiciones de aeronavegabilidad legal para el despegue ; se debe regresar a calzos o consultar con mantenimiento/CCO antes de iniciar la carrera de despegue",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Se puede ignorar el mensaje apagando la pantalla MFD",
+        "text": "El avión no está en condiciones de aeronavegabilidad legal para el despegue ; se debe regresar a calzos o consultar con mantenimiento/CCO antes de iniciar la carrera de despegue",
         "is_correct": false
       },
       {
@@ -1742,7 +1742,7 @@
       },
       {
         "id": "D",
-        "text": "Se puede anotar en el ATL al aterrizar en destino",
+        "text": "El avión no está en condiciones de aeronavegabilidad legal para el despegue ; se debe regresar a calzos o consultar con mantenimiento/CCO antes de iniciar la carrera de despegue",
         "is_correct": false
       }
     ],
@@ -1765,22 +1765,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Solo funciona con conexión Bluetooth en tierra",
+        "text": "partes meteorológicos D-ATIS/METAR, Permite la recepción de planes de vuelo, autorizaciones de salida DCL, comunicaciones ATC por CPDLC y reportes automáticos de mantenimiento OOOI (Out-Off-On-In) a la compañía",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Solo se utiliza para enviar correos electrónicos personales",
+        "text": "Permite la recepción de planes de vuelo, partes meteorológicos D-ATIS/METAR, autorizaciones de salida DCL, Carga comercial no declarada",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Sustituye a los mandos de vuelo",
+        "text": "Permite la recepción de planes de vuelo, Inspección técnica diferida, autorizaciones de salida DCL, comunicaciones ATC por CPDLC y reportes automáticos de mantenimiento OOOI (Out-Off-On-In) a la compañía",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Permite la recepción de planes de vuelo, partes meteorológicos D-ATIS/METAR, autorizaciones de salida DCL, comunicaciones ATC por CPDLC y reportes automáticos de mantenimiento OOOI (Out-Off-On-In) a la compañía",
+        "text": "Permite la recepción de planes de vuelo, partes meteorológicos D-ATIS/METAR, autorizaciones de salida DCL, comunicaciones ATC por CPDLC y reportes automáticos de mantenimiento OOOI a la compañía",
         "is_correct": true
       }
     ],
@@ -1803,22 +1803,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Reduce el empuje neto disponible del motor, incrementando la carrera de despegue y penalizando el peso máximo admisible de despegue (MTOW)",
+        "text": "Reduce el empuje neto disponible del motor, incrementando la carrera de despegue y reduciendo el gradiente",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Aumenta el empuje en un 10%",
+        "text": "Aumenta el empuje en un 10% al incrementar el régimen de giro del compresor de alta presión",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "No produce ningún efecto en las prestaciones",
+        "text": "No produce ningún efecto en las prestaciones de despegue al estar regulado por el FADEC",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Reduce la temperatura de gases de escape (EGT)",
+        "text": "Reduce la temperatura de gases de escape (EGT) permitiendo aumentar el peso máximo de despegue",
         "is_correct": false
       }
     ],
@@ -1841,22 +1841,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Pedales +/- 20° y Tiller +/- 30°",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "Control por pedales de +/- 8° (para control direccional en carrera de despegue y toma) y control por volante de mano (Tiller) de hasta +/- 76° para maniobras de giro cerrado en rodaje",
+        "text": "Control por pedales de ±8° y por volante Tiller de ±76°",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "Control por pedales de ±25° (carrera de despegue/toma) y por volante Tiller de ±45° (rodaje)",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "Pedales +/- 45° y Tiller +/- 90°",
+        "text": "Control por pedales de ±15° (carrera de despegue/toma) sin volante Tiller disponible en cabina",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "El tren de morro no es orientable por pedales",
+        "text": "Control exclusivo por volante Tiller de ±90° tanto en rodaje como en carrera de despegue",
         "is_correct": false
       }
     ],

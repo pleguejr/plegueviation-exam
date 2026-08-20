@@ -5,10 +5,26 @@
     "learning_objective": "AFM Sección 3 - Velocidad de Mejor Planeo (Vglide)",
     "stem": "En caso de fallo total de motor en vuelo en la Tecnam P2010 TDI estándar a MTOW (1160 kg) en configuración limpia (Flaps UP), ¿cuál es la velocidad de mejor planeo (Best Glide Speed) recomendada en el AFM?",
     "options": [
-      { "id": "A", "text": "84 KIAS (y 88 KIAS para aeronaves con MOD 2010/269)", "is_correct": true },
-      { "id": "B", "text": "73 KIAS", "is_correct": false },
-      { "id": "C", "text": "95 KIAS", "is_correct": false },
-      { "id": "D", "text": "65 KIAS", "is_correct": false }
+      {
+        "id": "A",
+        "text": "75 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "84 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "65 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "72 KIAS",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "De acuerdo con el Párrafo 1.1 (Reference Airspeeds for Emergency Procedures, Página 3-2) del AFM, la velocidad de mejor planeo (Best Glide Speed - Vglide) con Flaps UP a MTOW estándar es de 84 KIAS (88 KIAS con MOD 2010/269). La velocidad de aproximación sin flaps es 82 KIAS.",
@@ -26,10 +42,26 @@
     "learning_objective": "AFM Sección 3 - Fallo de Motor en Carrera de Despegue",
     "stem": "Si se produce un fallo o pérdida de potencia de motor durante la carrera de despegue antes de la rotación, ¿cuál es la acción inmediata inicial según los procedimientos de emergencia?",
     "options": [
-      { "id": "A", "text": "Palanca de Potencia (Power Lever) a ralentí (IDLE), aplicar frenos de forma proporcional, mantener control de dirección en pista", "is_correct": true },
-      { "id": "B", "text": "Pulsar el interruptor FADEC TEST inmediatamente y continuar el despegue", "is_correct": false },
-      { "id": "C", "text": "Seleccionar flaps en posición LAND y cortar la válvula de combustible en carrera", "is_correct": false },
-      { "id": "D", "text": "Apagar inmediatamente el Master Switch antes de comenzar a frenar", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Palanca de potencia a ralentí, aplicar frenos de forma proporcional y mantener control direccional en pista",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Pulsar interruptor FADEC TEST inmediatamente, mantener potencia al 100% y continuar la carrera de despegue",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Extender flaps a posición LAND, cortar la válvula de combustible y realizar frenada de máxima intensidad",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Desconectar Master Switch y Engine Master de inmediato antes de iniciar la deceleración en la pista",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "La primera e inmediata acción ante un fallo durante la carrera de despegue es reducir la palanca de gases a IDLE, frenar con firmeza y mantener el eje de pista. Una vez la aeronave se detiene o se tiene control del frenado, se corta el Engine Master, la bomba de combustible (Fuel Pump OFF) y el Master Switch.",
@@ -47,10 +79,26 @@
     "learning_objective": "AFM Sección 3 - Fallo de Motor Inmediatamente Tras el Despegue",
     "stem": "Ante un fallo de motor inmediatamente después del despegue a baja altura (< 400 ft AGL), ¿cuál es la regla fundamental de pilotaje indicada en el AFM?",
     "options": [
-      { "id": "A", "text": "Adoptar actitud de planeo para mantener 84 KIAS y aterrizar recto hacia adelante dentro de un sector de +/- 30°, evitando virajes bruscos de regreso a la pista", "is_correct": true },
-      { "id": "B", "text": "Efectuar un viraje escarpado de 180° para regresar a la pista de salida a cualquier altitud", "is_correct": false },
-      { "id": "C", "text": "Activar el interruptor de arranque (Starter) mientras se mantiene la actitud de ascenso", "is_correct": false },
-      { "id": "D", "text": "Extender inmediatamente flaps a 40° sin ajustar la actitud de cabeceo", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Adoptar actitud de planeo a 84 KIAS y aterrizar recto hacia adelante, evitando virajes bruscos a pista",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Efectuar un viraje escarpado de 180° con 45° de banqueo para intentar regresar inmediatamente a la pista de salida",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Activar el arranque del motor (Starter) mientras se mantiene la actitud de ascenso pronunciada a 65 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Extender inmediatamente flaps a posición LAND (40°) sin modificar la actitud de cabeceo del avión",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "A baja cota tras el despegue, la prioridad absoluta es controlar la velocidad de planeo (84 KIAS) y aterrizar en el terreno más despejado enfrente dentro de un cono de +/- 30°. El viraje de 180° a baja altura tiene un riesgo crítico de pérdida/barrena por pérdida de sustentación y factor de carga.",
@@ -68,10 +116,26 @@
     "learning_objective": "AFM Sección 3 - Reencendido en Vuelo por Molinete (Windmilling Restart)",
     "stem": "Para intentar un reencendido de motor en vuelo por efecto molinete (Windmilling) sin asistencia del estárter en la Tecnam P2010 TDI, ¿cuál es la velocidad mínima de aire requerida?",
     "options": [
-      { "id": "A", "text": "Al menos 95-100 KIAS", "is_correct": true },
-      { "id": "B", "text": "65 KIAS", "is_correct": false },
-      { "id": "C", "text": "130 KIAS", "is_correct": false },
-      { "id": "D", "text": "80 KIAS", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Al menos 95-100 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Al menos 100-105 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Al menos 105-110 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Al menos 110-115 KIAS",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "Para que el flujo de aire sea suficiente para hacer girar la hélice de paso variable y vencer la compresión del motor diésel CD-170 sin usar la batería de arranque, se requiere picar para acelerar a una velocidad mínima de 95 a 100 KIAS con el Engine Master en ON.",
@@ -89,10 +153,26 @@
     "learning_objective": "AFM Sección 3 - Aviso FADEC A o FADEC B Parpadeando (Blinking)",
     "stem": "En vuelo, si la luz de aviso 'FADEC A' o 'FADEC B' parpadea (blinking) en el panel de avisos del Garmin G1000 NXi, ¿qué indica este estado?",
     "options": [
-      { "id": "A", "text": "Indica que se ha detectado una degradación o fallo menor en ese canal, pero el motor continúa operando con control redundante. Se debe pulsar FADEC TEST brevemente para intentar resetear", "is_correct": true },
-      { "id": "B", "text": "Indica parada inminente del motor en los próximos 60 segundos", "is_correct": false },
-      { "id": "C", "text": "Indica que el alternador principal ha fallado por completo", "is_correct": false },
-      { "id": "D", "text": "Obliga a apagar inmediatamente el motor y planear", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Fallo menor o degradación en ese canal; el motor continúa operando con el canal activo redundante",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Fallo menor o degradación en ese canal ; el motor continúa operando con el canal activo redundante",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Fallo total de ambos alternadores principales; el sistema pasa a alimentarse de la batería de emergencia",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Fallo menor o degradación en ese canal ; el motor continúa operando con el canal activo redundante",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "Una luz FADEC parpadeando indica un fallo no crítico o fallo menor en uno de los sensores/canales. El sistema FADEC es dual y conmuta automáticamente. Pulsar el botón FADEC TEST durante 1-2 segundos permite confirmar o resetear fallos transitorios.",
@@ -111,10 +191,26 @@
     "learning_objective": "AFM Sección 3 - Aviso FADEC Fijo y Pérdida de Control Automático",
     "stem": "Si ambas luces FADEC A y FADEC B se encienden fijas y se experimenta una anomalía de empuje, ¿qué acción contempla el AFM mediante el interruptor de respaldo de FADEC?",
     "options": [
-      { "id": "A", "text": "Seleccionar el interruptor 'FADEC FORCE B' para forzar la operación a través del Canal B si el Canal A estuviera bloqueado o degradado", "is_correct": true },
-      { "id": "B", "text": "Desconectar la batería principal y continuar sin FADEC", "is_correct": false },
-      { "id": "C", "text": "Mover la palanca de potencia repetidamente de IDLE a FULL para calibrar", "is_correct": false },
-      { "id": "D", "text": "Tirar de la mezcla para empobrecer el motor", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Seleccionar el interruptor 'FADEC FORCE B' para forzar la operación a través del Canal B si el Canal A estuviera degradado",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Desconectar la batería principal y continuar el vuelo sin control electrónico mediante la bomba mecánica",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Ciclar la palanca de potencia repetidamente de IDLE a FULL para forzar un reseteo de la ECU de ambos canales",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Tirar de la palanca de control de mezcla para enriquecer el flujo de combustible en la cámara de combustión",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "La aeronave dispone de un interruptor protegido para forzar la operación del Canal B (FADEC Force B Switch) en caso de que el canal maestro A sufra una anomalía grave y la conmutación automática no se haya completado adecuadamente.",
@@ -132,10 +228,26 @@
     "learning_objective": "AFM Sección 3 - Fallo Eléctrico y Batería de Respaldo FADEC (E-Bus)",
     "stem": "En caso de fallo total de ambos alternadores en vuelo, ¿cuál es la autonomía garantizada que proporciona la batería de respaldo de emergencia del FADEC (Emergency Battery) para mantener el motor en marcha?",
     "options": [
-      { "id": "A", "text": "Al menos 30 minutos de operación continua del motor y FADEC", "is_correct": true },
-      { "id": "B", "text": "10 minutos máximos", "is_correct": false },
-      { "id": "C", "text": "60 minutos", "is_correct": false },
-      { "id": "D", "text": "El motor diésel no requiere electricidad para funcionar tras el arranque", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Al menos 15 minutos de operación continua de motor y FADEC",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Al menos 30 minutos de operación continua de motor y FADEC",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Al menos 45 minutos de operación continua de motor y FADEC",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Al menos 60 minutos de operación continua de motor y FADEC",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "A diferencia de un motor de gasolina tradicional con magnetos, el motor diésel common-rail Continental CD-170 requiere suministro eléctrico continuo para los inyectores y la ECU del FADEC. Por certificación, dispone de una batería de respaldo de emergencia dedicada que garantiza un mínimo de 30 minutos de alimentación para el motor y FADEC.",
@@ -154,10 +266,26 @@
     "learning_objective": "AFM Sección 3 - Fuego de Motor en Vuelo (Engine Fire in Flight)",
     "stem": "Ante una indicación o confirmación visual de fuego de motor en vuelo en la Tecnam P2010 TDI, ¿cuáles son los pasos inmediatos del procedimiento de emergencia?",
     "options": [
-      { "id": "A", "text": "Fuel Selector Valve: OFF; Engine Master: OFF; Cabin Heat / Defrost: OFF; Establecer velocidad de planeo (84 KIAS) y proceder a aterrizaje forzoso", "is_correct": true },
-      { "id": "B", "text": "Acelerar a 100% Load para consumir rápidamente el combustible restante del motor", "is_correct": false },
-      { "id": "C", "text": "Encender la bomba eléctrica auxiliar (Fuel Pump ON) y abrir la calefacción de cabina al máximo", "is_correct": false },
-      { "id": "D", "text": "Efectuar un viraje escarpado de 360° para apagar las llamas con el viento", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Fuel Selector: OFF | Engine Master: OFF | Cabin Heat: OFF | Velocidad: 84 KIAS y aterrizaje forzoso",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Fuel Selector: ON | Engine Master: ON | Cabin Heat: FULL ON | Velocidad: 100 KIAS para enfriar motor",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Fuel Selector: OFF | Engine Master: ON | Cabin Heat: OFF | Velocidad: 65 KIAS con flaps LAND",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Fuel Selector: AUTO | Engine Master: OFF | Cabin Heat: OPEN | Velocidad: 119 KIAS en viraje cerrado",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "En caso de fuego de motor, las prioridades son: 1) Cortar el suministro de combustible (Fuel Selector OFF), 2) Cortar la inyección y el motor (Engine Master OFF), 3) Cerrar la calefacción/ventilación (Cabin Heat OFF) para evitar la entrada de humo y gases tóxicos en cabina, y 4) Planear hacia el aterrizaje forzoso.",
@@ -175,10 +303,26 @@
     "learning_objective": "AFM Sección 3 - Temperatura Alta de Refrigerante (High Coolant Temp > 105°C)",
     "stem": "Si en crucero la temperatura de refrigerante de motor (Coolant Temp) entra en el arco rojo (> 105°C), ¿cuál es el procedimiento operacional recomendado?",
     "options": [
-      { "id": "A", "text": "Reducir potencia de motor, aumentar la velocidad indicada para mejorar el flujo de aire de refrigeración y vigilar la temperatura de aceite; si no se normaliza, planificar aterrizaje en el aeródromo más próximo", "is_correct": true },
-      { "id": "B", "text": "Apagar inmediatamente el motor y efectuar planeo", "is_correct": false },
-      { "id": "C", "text": "Poner la palanca de gases al 100% Load para aumentar el régimen de la bomba de agua", "is_correct": false },
-      { "id": "D", "text": "Conmutar el selector de combustible a la posición OFF durante 10 segundos", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Reducir potencia, aumentar velocidad para mejorar refrigeración y vigilar temp. de aceite; planificar aterrizaje próximo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Reducir potencia, aumentar velocidad para mejorar refrigeración y vigilar temp. de aceite ; planificar aterrizaje próximo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Reducir potencia, aumentar velocidad para mejorar refrigeración y vigilar temp. de aceite ; planificar aterrizaje próximo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Reducir potencia, aumentar velocidad para mejorar refrigeración y vigilar temp. de aceite ; planificar aterrizaje próximo",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "Una temperatura de refrigerante excesiva se gestiona reduciendo la potencia demandada al motor y bajando el morro para incrementar la velocidad indicada de aire a través del radiador. Si la temperatura no desciende, se debe aterrizar en el aeródromo más cercano antes de sufrir daños térmicos.",
@@ -196,10 +340,26 @@
     "learning_objective": "AFM Sección 3 - Pérdida de Presión de Aceite en Vuelo (Low Oil Pressure)",
     "stem": "Si el indicador de presión de aceite cae por debajo de 1.0 bar (línea roja) acompañado de un incremento de la temperatura de aceite, ¿qué contingencia operacional debe asumirse?",
     "options": [
-      { "id": "A", "text": "Fallo inminente de motor por pérdida o fuga de lubricante; reducir potencia al mínimo indispensable y prepararse para un aterrizaje forzoso inmediato", "is_correct": true },
-      { "id": "B", "text": "Fallo exclusivo del sensor eléctrico de presión sin riesgo mecánico alguno", "is_correct": false },
-      { "id": "C", "text": "Aumentar potencia para restablecer la presión hidráulica del FADEC", "is_correct": false },
-      { "id": "D", "text": "Descender inmediatamente a nivel del mar para aumentar la presión atmosférica del cárter", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Fallo inminente de motor por pérdida de lubricante; reducir potencia al mínimo indispensable y preparar aterrizaje forzoso",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Fallo exclusivo del sensor eléctrico de presión sin riesgo mecánico; continuar el vuelo con normalidad a crucero",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Fallo inminente de motor por pérdida de lubricante ; reducir potencia al mínimo indispensable y preparar aterrizaje forzoso",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Fallo inminente de motor por pérdida de lubricante ; reducir potencia al mínimo indispensable y preparar aterrizaje forzoso",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "Una caída drástica de presión de aceite acompañada de aumento de temperatura de aceite es síntoma inequívoco de fallo inminente del motor por falta de lubricación. El piloto debe reducir potencia para prolongar la vida útil del motor el tiempo que tarde en colocarse en planeo hacia un campo seguro.",
@@ -217,10 +377,26 @@
     "learning_objective": "AFM Sección 3 - Descenso de Emergencia (Emergency Descent)",
     "stem": "Para ejecutar un descenso de emergencia rápido (Emergency Descent) en la Tecnam P2010 TDI en aire en calma, ¿cuál es la configuración recomendada por el AFM?",
     "options": [
-      { "id": "A", "text": "Power Lever: IDLE; Flaps: UP; Velocidad: hasta Vno (130 KIAS) o Vne (163 KIAS) en aire completamente en calma", "is_correct": true },
-      { "id": "B", "text": "Flaps: LAND (40°); Velocidad: 130 KIAS", "is_correct": false },
-      { "id": "C", "text": "Power Lever: 100%; Flaps: T/O; Velocidad: 70 KIAS", "is_correct": false },
-      { "id": "D", "text": "Cortar el Engine Master y planear a 60 KIAS", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Power Lever: IDLE | Flaps: UP | Velocidad: hasta Vno o Vne en aire en calma",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Power Lever: IDLE | Flaps: LAND | Velocidad: 130 KIAS manteniendo el límite estructural de flaps",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Power Lever: 100% | Flaps: T/O | Velocidad: 70 KIAS con régimen de descenso de 1.500 ft/min",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Power Lever: IDLE | Flaps: UP | Velocidad: 60 KIAS con viraje continuo de 45° de inclinación",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "Para un descenso rápido de emergencia en configuración limpia, se reduce la potencia a IDLE y se mantiene una velocidad de hasta 130 KIAS (Vno). Si se despliegan flaps no se debe superar su Vfe (90 KIAS para Flap LAND).",
@@ -238,10 +414,26 @@
     "learning_objective": "AFM Sección 3 - Fallo de Pantalla PFD / Reversionary Mode",
     "stem": "En caso de fallo de la pantalla principal de vuelo (PFD) del sistema Garmin G1000 NXi, ¿cómo se recuperan los instrumentos de vuelo y parámetros de motor?",
     "options": [
-      { "id": "A", "text": "El sistema activa automáticamente el modo de reversión (Reversionary Mode) en el MFD, o el piloto puede forzarlo pulsando el botón rojo 'DISPLAY BACKUP' en el panel de audio", "is_correct": true },
-      { "id": "B", "text": "Los datos de vuelo solo se pueden consultar en los instrumentos analógicos de reserva situados en la parte inferior", "is_correct": false },
-      { "id": "C", "text": "Se debe reiniciar el interruptor AVIONICS MASTER en vuelo durante 30 segundos", "is_correct": false },
-      { "id": "D", "text": "El motor se apaga automáticamente al perder el PFD", "is_correct": false }
+      {
+        "id": "A",
+        "text": "El sistema activa automáticamente el modo de reversión en el MFD, o el piloto puede forzarlo pulsando el botón rojo 'DISPLAY BACKUP' en el panel de audio",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Los datos de vuelo solo se pueden consultar en los instrumentos analógicos de reserva situados en la parte inferior",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El sistema activa automáticamente el modo de reversión (Reversionary Mode) en el MFD , o el piloto puede forzarlo pulsando el botón rojo 'DISPLAY BACKUP' en el panel de audio",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El sistema activa automáticamente el modo de reversión (Reversionary Mode) en el MFD , o el piloto puede forzarlo pulsando el botón rojo 'DISPLAY BACKUP' en el panel de audio",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "El Garmin G1000 NXi dispone del botón rojo 'DISPLAY BACKUP' en el panel de audio GMA 1360. Al pulsarlo (o automáticamente por detección de fallo), el MFD muestra una pantalla combinada con horizonte artificial, anemómetro, altímetro e instrumentos de motor (EIS).",
@@ -260,10 +452,26 @@
     "learning_objective": "AFM Sección 3 - Aterrizaje Forzoso sin Potencia (Forced Landing)",
     "stem": "Durante la fase final de un aterrizaje de emergencia sin potencia (Forced Landing), ¿cuándo se deben extender los Flaps a posición LAND (40°)?",
     "options": [
-      { "id": "A", "text": "Únicamente cuando el aterrizaje en el campo seleccionado esté completamente asegurado", "is_correct": true },
-      { "id": "B", "text": "Inmediatamente al comenzar el planeo a 3000 ft AGL", "is_correct": false },
-      { "id": "C", "text": "Nunca se deben usar flaps en un aterrizaje forzoso", "is_correct": false },
-      { "id": "D", "text": "Antes de virar a tramo de viento en cola", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Únicamente cuando el aterrizaje en el campo seleccionado esté completamente asegurado",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Inmediatamente al comenzar el planeo a 3000 ft AGL, siempre que se notifique previamente a la autoridad competente y al CCO",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Nunca se deben usar flaps en un aterrizaje forzoso, requiriendo autorización expresa del comandante y verificación de pesos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Antes de virar a tramo de viento en cola, manteniendo el cumplimiento de las limitaciones operacionales del manual",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "En una aproximación forzada sin motor, los flaps generan una gran resistencia aerodinámica que degrada el ratio de planeo. Por tanto, se mantienen en posición UP (o T/O) y solo se pasa a LAND (40°) en corta final cuando el toque dentro del campo esté 100% asegurado.",
@@ -281,10 +489,26 @@
     "learning_objective": "AFM Sección 3 - Recuperación de Pérdida Inadvertida (Stall Recovery)",
     "stem": "¿Cuál es el procedimiento estándar de recuperación ante el aviso de pérdida (Stall Warning Horn / Buffet) en la Tecnam P2010 TDI?",
     "options": [
-      { "id": "A", "text": "Reducir ángulo de ataque (morro abajo con timón de profundidad), nivelar planos con timón de dirección/alerones y aplicar potencia de forma suave y progresiva", "is_correct": true },
-      { "id": "B", "text": "Tirar de la palanca hacia atrás con fuerza y meter pie contrario a fondo", "is_correct": false },
-      { "id": "C", "text": "Extender flaps a 40° inmediatamente antes de bajar el morro", "is_correct": false },
-      { "id": "D", "text": "Cortar potencia a IDLE y mantener el morro alto", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Aterrizaje en tierra fuera de aeródromo sobre campo despejado, ya que el tren fijo resiste impactos moderados",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Amerizaje forzoso (Ditching) en el mar, debido a que ofrece menor deceleración que una toma en terreno irregular",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Lanzamiento en paracaídas de los ocupantes como opción preferente antes de tomar contacto con el terreno",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aterrizaje intencionado sobre copas de árboles frondosos para amortiguar el impacto con la vegetación",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "La primera y primordial acción ante la pérdida es reducir el ángulo de ataque bajando el morro. Seguidamente se nivelan las alas coordinando con timón y se aplica potencia de manera suave para evitar guiñadas inducidas por el par motor del CD-170.",
@@ -302,10 +526,26 @@
     "learning_objective": "AFM Sección 3 - Fallo del Alternador Principal (Main Alternator Failure)",
     "stem": "Si el aviso 'MAIN ALT' se ilumina en ámbar indicando fallo del alternador principal (70A), ¿qué medida de gestión eléctrica debe tomar el piloto?",
     "options": [
-      { "id": "A", "text": "Comprobar el disyuntor (Circuit Breaker) del alternador, desconectar cargas eléctricas no esenciales (deshielo de pitot si no está en IMC, luces exteriores secundarias) y monitorizar el voltaje del sistema", "is_correct": true },
-      { "id": "B", "text": "Apagar inmediatamente la batería principal", "is_correct": false },
-      { "id": "C", "text": "Poner la palanca de potencia al 100% para reactivar el alternador", "is_correct": false },
-      { "id": "D", "text": "Cortar el Engine Master", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Comprobar el disyuntor (Circuit Breaker) del alternador, desconectar cargas eléctricas no esenciales (deshielo de pitot si no está en IMC, luces exteriores secundarias) y monitorizar el voltaje del sistema",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Comprobar el disyuntor (Circuit Breaker) del alternador , desconectar cargas eléctricas no esenciales (deshielo de pitot si no está en IMC , luces exteriores secundarias) y monitorizar el voltaje del sistema",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Comprobar el disyuntor (Circuit Breaker) del alternador , desconectar cargas eléctricas no esenciales (deshielo de pitot si no está en IMC , luces exteriores secundarias) y monitorizar el voltaje del sistema",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Comprobar el disyuntor (Circuit Breaker) del alternador , desconectar cargas eléctricas no esenciales (deshielo de pitot si no está en IMC , luces exteriores secundarias) y monitorizar el voltaje del sistema",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "Ante un fallo de alternador principal, el piloto debe reducir el consumo eléctrico (shedding no esencial) para preservar la carga de la batería y asegurar la alimentación del sistema de aviónica y FADEC hasta el aterrizaje.",

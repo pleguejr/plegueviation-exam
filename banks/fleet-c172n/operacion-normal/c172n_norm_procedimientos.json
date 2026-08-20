@@ -5,10 +5,26 @@
     "learning_objective": "POH Sección 4 - Protección de la Aviónica en la Puesta en Marcha",
     "stem": "Durante la lista de 'Antes de Poner en Marcha' (Before Start), ¿por qué es obligatorio que el interruptor de aviónica (Avionics Power Switch) esté en posición OFF?",
     "options": [
-      { "id": "A", "text": "Para proteger los equipos de radio y aviónica de transitorios de alto voltaje y picos inductivos generados por el motor de arranque", "is_correct": true },
-      { "id": "B", "text": "Para evitar que se descargue la batería antes de que el motor gire", "is_correct": false },
-      { "id": "C", "text": "Porque las radios interfieren con la chispa de las magnetos de encendido", "is_correct": false },
-      { "id": "D", "text": "Para evitar que el transponder transmita en tierra de forma involuntaria", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Para proteger los equipos de radio y aviónica de transitorios de alto voltaje y picos inductivos generados por el motor de arranque",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Para evitar que se descargue la batería antes de que el motor gire, siempre que se notifique previamente a la autoridad competente y al CCO",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Porque las radios interfieren con la chispa de las magnetos de encendido, requiriendo autorización expresa del comandante y verificación de pesos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Para evitar que el transponder transmita en tierra de forma involuntaria, manteniendo el cumplimiento de las limitaciones operacionales del manual",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "La precaución (CAUTION) de la Sección 4 del POH indica: 'The avionics power switch must be off during engine start to prevent possible damage to avionics'. El accionamiento del motor de arranque induce picos de sobretensión en la barra que pueden destruir microprocesadores de la aviónica.",
@@ -27,10 +43,26 @@
     "learning_objective": "POH Sección 4 - Comprobación de Presión de Aceite tras el Arranque",
     "stem": "Tras la puesta en marcha del motor en frío, ¿en qué plazo máximo debe indicar presión positiva el manómetro de aceite en la Cessna 172N?",
     "options": [
-      { "id": "A", "text": "Dentro de los primeros 30 segundos (o hasta 60 segundos en condiciones de frío extremo); si no hay indicación, parar el motor inmediatamente", "is_correct": true },
-      { "id": "B", "text": "Dentro de los primeros 2 minutos de calentamiento en ralentí", "is_correct": false },
-      { "id": "C", "text": "Únicamente después de acelerar el motor a 1700 RPM", "is_correct": false },
-      { "id": "D", "text": "La presión de aceite no sube hasta que se conecta el alternador", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Dentro de los primeros 30 segundos; si no hay indicación, parar el motor inmediatamente",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Dentro de los primeros 32 segundos ; si no hay indicación, parar el motor inmediatamente",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Dentro de los primeros 26 segundos ; si no hay indicación, parar el motor inmediatamente",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Dentro de los primeros 36 segundos ; si no hay indicación, parar el motor inmediatamente",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "Si el indicador de presión de aceite no entra en el arco verde en un plazo máximo de 30 segundos (o 60 segundos en invierno severo), se debe cortar la mezcla a IDLE CUT-OFF de inmediato para evitar daños catastróficos por fricción sin lubricante.",
@@ -49,10 +81,26 @@
     "learning_objective": "POH Sección 4 - Purga del Colector de Combustible en Inspección Pre-vuelo",
     "stem": "Durante la inspección de morro previa al primer vuelo del día o tras cada repostaje, ¿durante cuántos segundos se debe tirar del mando de drenaje del filtro de combustible (Strainer Drain Knob)?",
     "options": [
-      { "id": "A", "text": "Tirar durante unos 4 segundos comprobando que el combustible drenado esté limpio y libre de agua", "is_correct": true },
-      { "id": "B", "text": "Tirar durante 30 segundos continuos", "is_correct": false },
-      { "id": "C", "text": "Basta con una pulsación de medio segundo", "is_correct": false },
-      { "id": "D", "text": "El drenaje de morro solo se abre en revisiones de 50 horas por el mecánico", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Tirar durante unos 4 segundos comprobando que el combustible drenado esté limpio y libre de agua",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Tirar durante 30 segundos continuos, siempre que se notifique previamente a la autoridad competente y al CCO",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Basta con una pulsación de medio segundo, requiriendo autorización expresa del comandante y verificación de pesos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El drenaje de morro solo se abre en revisiones de 50 horas por el mecánico",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "La lista de prevuelo en la sección de morro establece: 'Before first flight of the day and after each refueling, pull out strainer drain knob for about four seconds' para purgar el agua o sedimentos acumulados en el vaso de decantación del cortafuegos.",
@@ -71,10 +119,26 @@
     "learning_objective": "POH Sección 4 - Velocidades de Despegue Normal (Vr y Ascenso)",
     "stem": "En un despegue normal sin obstáculos a 2300 lbs con Flaps 0°-10°, ¿a qué velocidad indicada se levanta la rueda de morro y cuál es la velocidad recomendada de ascenso inicial?",
     "options": [
-      { "id": "A", "text": "Rotación (Lift nose wheel): 55-60 KIAS; Velocidad de ascenso inicial: 65-75 KIAS (Vy = 73-75 KIAS)", "is_correct": true },
-      { "id": "B", "text": "Rotación: 70 KIAS; Velocidad de ascenso: 85-90 KIAS", "is_correct": false },
-      { "id": "C", "text": "Rotación: 45 KIAS; Velocidad de ascenso: 55 KIAS", "is_correct": false },
-      { "id": "D", "text": "Rotación: 65 KIAS; Velocidad de ascenso: 60 KIAS", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Rotación (Lift nose wheel): 55-60 KIAS; Velocidad de ascenso inicial: 65-75 KIAS (Vy = 73-75 KIAS)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Rotación (Lift nose wheel): 65-70 KIAS ; Velocidad de ascenso inicial: 75-85 KIAS (Vy = 83-85 KIAS)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Rotación (Lift nose wheel): 35-40 KIAS ; Velocidad de ascenso inicial: 45-55 KIAS (Vy = 53-55 KIAS)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Rotación (Lift nose wheel): 85-90 KIAS ; Velocidad de ascenso inicial: 95-105 KIAS (Vy = 103-105 KIAS)",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "En el despegue normal, la rueda de morro se alivia suavemente a 55-60 KIAS y la aeronave se deja ir al aire acelerando al régimen de ascenso óptimo de 73-75 KIAS con flaps arriba.",
@@ -93,10 +157,26 @@
     "learning_objective": "POH Sección 4 - Despegue en Campo Corto (Short Field Takeoff)",
     "stem": "¿Cuál es la configuración de flaps, técnica de frenos y velocidad de franqueamiento en un despegue en campo corto (Short Field Takeoff)?",
     "options": [
-      { "id": "A", "text": "Flaps: 10°; Aplicar frenos, acelerar a fondo (Full Throttle), soltar frenos y ascender a 55 KIAS (Vx) hasta librar los obstáculos", "is_correct": true },
-      { "id": "B", "text": "Flaps: 40°; Iniciar carrera sin frenos y ascender a 45 KIAS", "is_correct": false },
-      { "id": "C", "text": "Flaps: 0°; Frenar a medio gas y rotar a 70 KIAS", "is_correct": false },
-      { "id": "D", "text": "Flaps: 20°; Calefacción de carburador en ON y ascender a 75 KIAS", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Flaps: 10°; Aplicar frenos, acelerar a fondo (Full Throttle), soltar frenos y ascender a 55 KIAS (Vx) hasta librar los obstáculos",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Flaps: 12° ; Aplicar frenos, acelerar a fondo (Full Throttle), soltar frenos y ascender a 65 KIAS (Vx) hasta librar los obstáculos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Flaps: 6° ; Aplicar frenos, acelerar a fondo (Full Throttle), soltar frenos y ascender a 35 KIAS (Vx) hasta librar los obstáculos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Flaps: 16° ; Aplicar frenos, acelerar a fondo (Full Throttle), soltar frenos y ascender a 85 KIAS (Vx) hasta librar los obstáculos",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "En campo corto se seleccionan Flaps 10°, se pisa el freno mientras se mete motor a fondo para comprobar parámetros, se sueltan frenos, se mantiene actitud ligeramente baja de cola y se asciende a 55 KIAS hasta franquear la barrera de 50 pies.",
@@ -115,10 +195,26 @@
     "learning_objective": "POH Sección 4 - Despegue en Campo Blando / Hierba (Soft Field Takeoff)",
     "stem": "En un despegue en pista blanda o hierba irregular (Soft Field Takeoff), ¿cuál es la técnica de mandos requerida durante toda la carrera de rodaje y despegue?",
     "options": [
-      { "id": "A", "text": "Flaps 10°, mantener el volante a fondo atrás para levantar la rueda de morro lo antes posible, despegar en efecto suelo (Ground Effect), acelerar nivelado y ascender a Vx/Vy", "is_correct": true },
-      { "id": "B", "text": "Flaps 0°, volante completamente adelante para cargar peso en la rueda delantera", "is_correct": false },
-      { "id": "C", "text": "Flaps 40°, rodar a máxima velocidad y tirar bruscamente a 40 KIAS", "is_correct": false },
-      { "id": "D", "text": "Aplicar frenos intermitentes para no patinar en el barro", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Flaps 10°, mantener el volante a fondo atrás para levantar la rueda de morro lo antes posible, despegar en efecto suelo (Ground Effect), acelerar nivelado y ascender a Vx/Vy",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Flaps 15° , mantener el volante a fondo atrás para levantar la rueda de morro lo antes posible , despegar en efecto suelo (Ground Effect) , acelerar nivelado y ascender a Vx/Vy",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Flaps 5° , mantener el volante a fondo atrás para levantar la rueda de morro lo antes posible , despegar en efecto suelo (Ground Effect) , acelerar nivelado y ascender a Vx/Vy",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Flaps 20° , mantener el volante a fondo atrás para levantar la rueda de morro lo antes posible , despegar en efecto suelo (Ground Effect) , acelerar nivelado y ascender a Vx/Vy",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "En campo blando se alivian las cargas de la rueda delantera tirando de la palanca atrás, permitiendo que el avión flote en efecto suelo a baja velocidad antes de iniciar el ascenso positivo una vez alcanzada una velocidad segura (> 65 KIAS).",
@@ -137,10 +233,26 @@
     "learning_objective": "POH Sección 4 - Empobrecimiento de Mezcla en Ascenso y Crucero (Leaning)",
     "stem": "Según las recomendaciones de operación del motor Lycoming en la Cessna 172N, ¿a partir de qué altitud se debe empobrecer la mezcla (Leaning) durante el ascenso?",
     "options": [
-      { "id": "A", "text": "Por encima de 3000 pies de altitud para restaurar la potencia y suavidad del motor", "is_correct": true },
-      { "id": "B", "text": "Desde el mismo momento del despegue a nivel del mar", "is_correct": false },
-      { "id": "C", "text": "Únicamente por encima de 10.000 pies", "is_correct": false },
-      { "id": "D", "text": "Nunca se debe empobrecer en ascenso continuo", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Por encima de 3000 pies de altitud para restaurar la potencia y suavidad del motor",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Desde el mismo momento del despegue a nivel del mar, siempre que se notifique previamente a la autoridad competente y al CCO",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Únicamente por encima de 10.000 pies, requiriendo autorización expresa del comandante y verificación de pesos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Nunca se debe empobrecer en ascenso continuo, manteniendo el cumplimiento de las limitaciones operacionales del manual",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "La nota de la Sección 4 estipula: 'Mixture: RICH (ABOVE 3000 FT - LEAN)'. Al ascender por encima de 3000 pies la menor densidad del aire enriquece excesivamente la mezcla, reduciendo la potencia y ensuciando bujías si no se ajusta la palanca roja.",
@@ -159,10 +271,26 @@
     "learning_objective": "POH Sección 4 - Régimen de Potencia de Crucero Normal (RPM Range)",
     "stem": "¿Cuál es el rango normal de revoluciones por minuto recomendado en vuelo de crucero (Cruise) en la Cessna 172N?",
     "options": [
-      { "id": "A", "text": "2200 a 2700 RPM", "is_correct": true },
-      { "id": "B", "text": "1800 a 2100 RPM", "is_correct": false },
-      { "id": "C", "text": "2700 a 2900 RPM", "is_correct": false },
-      { "id": "D", "text": "1500 a 2000 RPM", "is_correct": false }
+      {
+        "id": "A",
+        "text": "2200 a 2700 RPM",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "1800 a 2100 RPM",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "2700 a 2900 RPM",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "1500 a 2000 RPM",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "El rango normal de potencia de crucero (55% a 75% BHP) corresponde a regímenes de entre 2200 y 2700 RPM en la hélice de paso fijo McCauley.",
@@ -181,10 +309,26 @@
     "learning_objective": "POH Sección 4 - Uso de Calefacción de Carburador en Descenso",
     "stem": "Durante descensos prolongados con potencia de motor reducida (por ejemplo por debajo de 2000 RPM), ¿qué precaución es obligatoria regarding al carburador?",
     "options": [
-      { "id": "A", "text": "Aplicar calefacción de carburador completa (Carburetor Heat: FULL ON) para prevenir la formación de hielo en la mariposa y venturi", "is_correct": true },
-      { "id": "B", "text": "Mantener la calefacción de carburador en COLD para no sobrecalentar el motor", "is_correct": false },
-      { "id": "C", "text": "Cebar el motor con el Primer cada 2 minutos", "is_correct": false },
-      { "id": "D", "text": "Cortar el alternador para evitar sobretensión", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Aplicar calefacción de carburador completa para prevenir la formación de hielo en la mariposa y venturi",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mantener la calefacción de carburador en COLD para no sobrecalentar el motor, siempre que se notifique previamente a la autoridad competente y al CCO",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cebar el motor con el Primer cada 2 minutos, requiriendo autorización expresa del comandante y verificación de pesos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cortar el alternador para evitar sobretensión, manteniendo el cumplimiento de las limitaciones operacionales del manual",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "Con bajas aperturas de acelerador la caída de presión en el venturi unida a la vaporización de la gasolina provoca una intensa caída de temperatura. En descensos con gases retrasados se debe llevar siempre Carb Heat en FULL ON.",
@@ -203,10 +347,26 @@
     "learning_objective": "POH Sección 4 - Procedimiento de Motor y al Aire (Balked Landing / Go-Around)",
     "stem": "¿Cuál es la secuencia estricta de acciones inmediatas para ejecutar una frustrada / motor y al aire (Balked Landing) en la Cessna 172N con flaps a 40°?",
     "options": [
-      { "id": "A", "text": "1) Throttle: FULL OPEN; 2) Carb Heat: COLD; 3) Flaps: RETRAER INMEDIATAMENTE A 20°; 4) Velocidad de ascenso: 60 KIAS; 5) Flaps: 10° tras librar obstáculos y retraer a UP por encima de 65 KIAS", "is_correct": true },
-      { "id": "B", "text": "1) Retraer todos los flaps a 0° antes de tocar los gases; 2) Acelerar a 90 KIAS", "is_correct": false },
-      { "id": "C", "text": "1) Throttle: FULL; 2) Mantener Flaps a 40° durante todo el ascenso hasta 1000 pies", "is_correct": false },
-      { "id": "D", "text": "1) Carb Heat: ON; 2) Throttle: IDLE; 3) Tirar de la mezcla", "is_correct": false }
+      {
+        "id": "A",
+        "text": "1) Throttle: FULL OPEN; 2) Carb Heat: COLD; 3) Flaps: RETRAER INMEDIATAMENTE A 20°; 4) Velocidad de ascenso: 60 KIAS; 5) Flaps: 10° tras librar obstáculos y retraer a UP por encima de 65 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "2) Throttle: FULL OPEN ; 3) Carb Heat: COLD ; 4) Flaps: RETRAER INMEDIATAMENTE A 22° ; 5) Velocidad de ascenso: 70 KIAS ; 6) Flaps: 12° tras librar obstáculos y retraer a UP por encima de 75 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "1) Throttle: FULL OPEN ; 1) Carb Heat: COLD ; 1) Flaps: RETRAER INMEDIATAMENTE A 16° ; 2) Velocidad de ascenso: 40 KIAS ; 3) Flaps: 6° tras librar obstáculos y retraer a UP por encima de 45 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "4) Throttle: FULL OPEN ; 5) Carb Heat: COLD ; 6) Flaps: RETRAER INMEDIATAMENTE A 26° ; 7) Velocidad de ascenso: 90 KIAS ; 8) Flaps: 16° tras librar obstáculos y retraer a UP por encima de 95 KIAS",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "Al frustrar, los flaps a 40° generan demasiada resistencia para permitir una tasa de ascenso positiva. La lista de chequeo exige: Throttle FULL, Carb Heat COLD, retraer INMEDIATAMENTE a 20°, ascender a 60 KIAS, pasar a 10° y luego a UP al alcanzar velocidad y altitud seguras.",
@@ -225,10 +385,26 @@
     "learning_objective": "POH Sección 4 - Velocidades en el Circuito de Tráfico Visual (Traffic Pattern)",
     "stem": "Según los procedimientos estándar de la Cessna 172N, ¿cuáles son las velocidades indicadas y ajustes de flaps recomendados en viento en cola, base y final corta?",
     "options": [
-      { "id": "A", "text": "Viento en cola: 90 KIAS (Flaps 0°); Base: 75 KIAS (Flaps 20°); Final corta: 65 KIAS (Flaps 40°)", "is_correct": true },
-      { "id": "B", "text": "Viento en cola: 110 KIAS; Base: 95 KIAS; Final corta: 80 KIAS", "is_correct": false },
-      { "id": "C", "text": "Viento en cola: 70 KIAS; Base: 60 KIAS; Final corta: 50 KIAS", "is_correct": false },
-      { "id": "D", "text": "Viento en cola: 80 KIAS con flaps a 40° en todo el circuito", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Viento en cola: 90 KIAS; Base: 75 KIAS; Final corta: 65 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Viento en cola: 110 KIAS; Base: 95 KIAS; Final corta: 80 KIAS, siempre que se notifique previamente a la autoridad competente y al CCO",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Viento en cola: 70 KIAS; Base: 60 KIAS; Final corta: 50 KIAS, requiriendo autorización expresa del comandante y verificación de pesos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Viento en cola: 120 KIAS (Flaps 3°) ; Base: 105 KIAS (Flaps 26°) ; Final corta: 95 KIAS (Flaps 46°)",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "El manual de procedimientos de maniobras estipula: Tramo de viento en cola a 90 KIAS con Flaps 0°, través de cabecera a 80 KIAS (Flaps 10°), tramo base a 75 KIAS (Flaps 20°) y final corta a 65 KIAS con Flaps 40°.",
@@ -246,10 +422,26 @@
     "learning_objective": "POH Sección 4 - Aterrizaje en Campo Corto (Short Field Landing)",
     "stem": "¿Cuál es la velocidad de aproximación final y configuración requerida para un aterrizaje de precisión en pista corta (Short Field Landing)?",
     "options": [
-      { "id": "A", "text": "Flaps en posición FULL (40°), velocidad de aproximación final de 60 KIAS, contacto en ruedas principales y aplicación enérgica de frenos retrayendo flaps tras la toma", "is_correct": true },
-      { "id": "B", "text": "Flaps 10°, velocidad de aproximación 75 KIAS", "is_correct": false },
-      { "id": "C", "text": "Flaps 0°, velocidad de aproximación 55 KIAS", "is_correct": false },
-      { "id": "D", "text": "Flaps 20°, mantener frenos bloqueados en el aire antes del contacto", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Flaps en posición FULL (40°), velocidad de aproximación final de 60 KIAS, contacto en ruedas principales y aplicación enérgica de frenos retrayendo flaps tras la toma",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Flaps en posición FULL (45°) , velocidad de aproximación final de 55 KIAS , contacto en ruedas principales y aplicación enérgica de frenos retrayendo flaps tras la toma",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Flaps en posición FULL (35°) , velocidad de aproximación final de 70 KIAS , contacto en ruedas principales y aplicación enérgica de frenos retrayendo flaps tras la toma",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Flaps en posición FULL (50°) , velocidad de aproximación final de 50 KIAS , contacto en ruedas principales y aplicación enérgica de frenos retrayendo flaps tras la toma",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "En campo corto se configuran Flaps 40° a 60 KIAS con motor ajustado para mantener la pendiente, cortando gases justo sobre el umbral para posar en ruedas principales y frenar con firmeza retrayendo flaps para transferir peso a las ruedas.",
@@ -268,10 +460,26 @@
     "learning_objective": "POH Sección 4 - Aterrizaje en Campo Blando (Soft Field Landing)",
     "stem": "Al realizar una toma de tierra en pista blanda o hierba no compactada (Soft Field Landing), ¿cómo debe efectuarse el contacto y la carrera posterior?",
     "options": [
-      { "id": "A", "text": "Flaps 40° a 60-65 KIAS con un ligero toque de potencia para posar con máxima suavidad, manteniendo la rueda de morro en el aire el mayor tiempo posible con el volante atrás sin frenar bruscamente", "is_correct": true },
-      { "id": "B", "text": "Picar para posar primero la rueda de morro e iniciar frenado enérgico", "is_correct": false },
-      { "id": "C", "text": "Cortar el Master Switch a 200 pies y aterrizar sin flaps", "is_correct": false },
-      { "id": "D", "text": "Aterrizar con viento en cola para reducir la fricción con la hierba", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Flaps 40° a 60-65 KIAS con un ligero toque de potencia para posar con máxima suavidad, manteniendo la rueda de morro en el aire el mayor tiempo posible con el volante atrás sin frenar bruscamente",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Flaps 45° a 65-70 KIAS con un ligero toque de potencia para posar con máxima suavidad , manteniendo la rueda de morro en el aire el mayor tiempo posible con el volante atrás sin frenar bruscamente",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Flaps 35° a 55-60 KIAS con un ligero toque de potencia para posar con máxima suavidad , manteniendo la rueda de morro en el aire el mayor tiempo posible con el volante atrás sin frenar bruscamente",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Flaps 50° a 70-75 KIAS con un ligero toque de potencia para posar con máxima suavidad , manteniendo la rueda de morro en el aire el mayor tiempo posible con el volante atrás sin frenar bruscamente",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "En pista blanda se realiza una toma muy suave con motor residual y se mantiene el morro elevado durante la carrera de deceleración para evitar que la rueda delantera se hunda en el barro o terreno blando.",
@@ -289,10 +497,26 @@
     "learning_objective": "POH Sección 4 - Parada de Motor y Aseguramiento (Securing Airplane)",
     "stem": "¿Cuál es la forma correcta de apagar el motor Lycoming O-320-H2AD para evitar autoencendido y detonación?",
     "options": [
-      { "id": "A", "text": "Tirar de la palanca de mezcla a la posición CORTADA (Idle Cut-Off); una vez que el motor se detenga por completo, poner el contacto de magnetos en OFF y luego el Master Switch en OFF", "is_correct": true },
-      { "id": "B", "text": "Girar la llave de magnetos directamente a OFF con la mezcla rica", "is_correct": false },
-      { "id": "C", "text": "Cortar la válvula de combustible y esperar 5 minutos a que se vacíe el conducto", "is_correct": false },
-      { "id": "D", "text": "Apagar primero el Master Switch manteniendo el motor a 1500 RPM", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Tirar de la palanca de mezcla a la posición CORTADA (Idle Cut-Off); una vez que el motor se detenga por completo, poner el contacto de magnetos en OFF y luego el Master Switch en OFF",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Tirar de la palanca de mezcla a la posición CORTADA (Idle Cut-Off) ; una vez que el motor se detenga por completo, poner el contacto de magnetos en OFF y luego el Master Switch en OFF",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Tirar de la palanca de mezcla a la posición CORTADA (Idle Cut-Off) ; una vez que el motor se detenga por completo, poner el contacto de magnetos en OFF y luego el Master Switch en OFF",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Tirar de la palanca de mezcla a la posición CORTADA (Idle Cut-Off) ; una vez que el motor se detenga por completo, poner el contacto de magnetos en OFF y luego el Master Switch en OFF",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "Los motores de aviación se apagan cortando la mezcla (Idle Cut-Off) para consumir el combustible de los conductos y cilindros. Si se apagan cortando el contacto con mezcla rica, el combustible residual caliente puede provocar autoencendido (dieseling).",
@@ -311,10 +535,26 @@
     "learning_objective": "POH Sección 4 - Posición de Mandos durante el Rodaje con Viento (Taxi Wind Corrections)",
     "stem": "Durante el rodaje (Taxiing) con viento cruzado procedente del cuadrante trasero izquierdo (viento de cola izquierda), ¿cuál es la posición correcta de mandos?",
     "options": [
-      { "id": "A", "text": "Alerón izquierdo abajo (volante girado a la derecha) y timón de profundidad completamente picado / adelante (Dive away from the wind)", "is_correct": true },
-      { "id": "B", "text": "Alerón izquierdo arriba y volante completamente tirado atrás", "is_correct": false },
-      { "id": "C", "text": "Mandos centrados neutrales", "is_correct": false },
-      { "id": "D", "text": "Volante girado a la izquierda y timón de profundidad atrás", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Alerón izquierdo abajo y timón de profundidad completamente picado / adelante",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Alerón izquierdo arriba y volante completamente tirado atrás, siempre que se notifique previamente a la autoridad competente y al CCO",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mandos centrados neutrales sin modificar la configuración de los mandos principales de vuelo, requiriendo autorización expresa del comandante y verificación de pesos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Volante girado a la izquierda y timón de profundidad atrás, manteniendo el cumplimiento de las limitaciones operacionales del manual",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "Con viento de cola de un lado, el viento golpea las superficies desde atrás: se deflexiona el alerón de ese lado hacia abajo (girando volante al lado opuesto) y el timón de profundidad hacia abajo (volante adelante) para evitar que el viento levante el ala o la cola.",
@@ -333,10 +573,26 @@
     "learning_objective": "POH Sección 4 - Puesta en Marcha con Motor Ahogado (Flooded Engine)",
     "stem": "Si el motor se ahoga por exceso de cebador durante la puesta en marcha, ¿cuál es el procedimiento estándar de arranque?",
     "options": [
-      { "id": "A", "text": "Mezcla: CORTADA (Idle Cut-Off); Gases (Throttle): ABIERTO 1/2 a fondo; Accionar estárter; Al arrancar el motor, reducir gases a 1000 RPM y avanzar la mezcla suavemente a RICA", "is_correct": true },
-      { "id": "B", "text": "Bombear el Primer 6 veces adicionales con la mezcla rica", "is_correct": false },
-      { "id": "C", "text": "Poner la calefacción de carburador en ON y cerrar totalmente los gases", "is_correct": false },
-      { "id": "D", "text": "Esperar 2 horas sin tocar ningún mando", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Mezcla: CORTADA (Idle Cut-Off); Gases (Throttle): ABIERTO 1/2 a fondo; Accionar estárter; Al arrancar el motor, reducir gases a 1000 RPM y avanzar la mezcla suavemente a RICA",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mezcla: CORTADA (Idle Cut-Off) ; Gases (Throttle): ABIERTO 2/3 a fondo ; Accionar estárter ; Al arrancar el motor, reducir gases a 1010 RPM y avanzar la mezcla suavemente a RICA",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mezcla: CORTADA (Idle Cut-Off) ; Gases (Throttle): ABIERTO 1/1 a fondo ; Accionar estárter ; Al arrancar el motor, reducir gases a 980 RPM y avanzar la mezcla suavemente a RICA",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mezcla: CORTADA (Idle Cut-Off) ; Gases (Throttle): ABIERTO 4/5 a fondo ; Accionar estárter ; Al arrancar el motor, reducir gases a 1030 RPM y avanzar la mezcla suavemente a RICA",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "Para despejar el exceso de gasolina líquida en los cilindros, se corta la mezcla (Idle Cut-Off) y se abren los gases (1/2 a FULL) para introducir aire fresco mientras gira el estárter. Al dar la primera explosión, se retrasa el acelerador y se introduce mezcla rica.",
@@ -355,10 +611,26 @@
     "learning_objective": "POH Sección 4 - Precaución con la Hélice al Conectar el Master",
     "stem": "De acuerdo con el aviso (WARNING) de la inspección de cabina, ¿cómo debe tratarse la hélice al conectar el Master Switch o moverla manualmente en tierra?",
     "options": [
-      { "id": "A", "text": "Tratar siempre la hélice como si el interruptor de encendido de magnetos estuviera en ON, evitando que cualquier persona permanezca en su arco de giro (un cable suelto o fallo de masa puede encender el motor)", "is_correct": true },
-      { "id": "B", "text": "Se puede girar libremente sin peligro si las llaves no están en el cuadro", "is_correct": false },
-      { "id": "C", "text": "Solo entraña peligro si la palanca de gases está abierta a fondo", "is_correct": false },
-      { "id": "D", "text": "La hélice solo puede girar si se acciona el estárter eléctrico", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Tratar siempre la hélice como si el interruptor de encendido de magnetos estuviera en ON, evitando que cualquier persona permanezca en su arco de giro (un cable suelto o fallo de masa puede encender el motor)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Tratar siempre la hélice como si el interruptor de encendido de magnetos estuviera en ON , evitando que cualquier persona permanezca en su arco de giro (un cable suelto o fallo de masa puede encender el motor)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Tratar siempre la hélice como si el interruptor de encendido de magnetos estuviera en ON , evitando que cualquier persona permanezca en su arco de giro (un cable suelto o fallo de masa puede encender el motor)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Tratar siempre la hélice como si el interruptor de encendido de magnetos estuviera en ON , evitando que cualquier persona permanezca en su arco de giro (un cable suelto o fallo de masa puede encender el motor)",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "El aviso del POH advierte expresamente: 'treat the propeller as if the ignition switch were on. Do not stand, nor allow anyone else to stand, within the arc of the propeller, since a loose or broken P-lead wire could cause the propeller to rotate'.",
@@ -377,10 +649,26 @@
     "learning_objective": "POH Sección 4 - Velocidades de Maniobras Instrumentales IFR",
     "stem": "Según el manual de procedimientos, ¿cuáles son las velocidades estándar para el ascenso en ruta IFR y para la velocidad de espera (Holding Speed) en la C172N?",
     "options": [
-      { "id": "A", "text": "Ascenso en ruta IFR: 80 KIAS (Flaps 0°); Velocidad de espera / holding: 90 KIAS (Flaps 0°)", "is_correct": true },
-      { "id": "B", "text": "Ascenso en ruta IFR: 65 KIAS; Velocidad de espera: 110 KIAS", "is_correct": false },
-      { "id": "C", "text": "Ascenso en ruta IFR: 95 KIAS; Velocidad de espera: 70 KIAS", "is_correct": false },
-      { "id": "D", "text": "Ascenso en ruta IFR: 70 KIAS; Velocidad de espera: 120 KIAS", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Ascenso en ruta IFR: 80 KIAS; Velocidad de espera / holding: 90 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Ascenso en ruta IFR: 65 KIAS; Velocidad de espera: 110 KIAS, siempre que se notifique previamente a la autoridad competente y al CCO",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Ascenso en ruta IFR: 75 KIAS (Flaps 1°) ; Velocidad de espera / holding: 100 KIAS (Flaps 10°)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Ascenso en ruta IFR: 70 KIAS; Velocidad de espera: 120 KIAS, manteniendo el cumplimiento de las limitaciones operacionales del manual",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "En el apartado 8.2 (Velocidades Maniobras IFR) se establece: Ascenso en ruta = 80 KIAS, Eses/espirales = 80 KIAS, y Velocidad de espera y aproximación inicial = 90 KIAS en configuración limpia.",
@@ -398,10 +686,26 @@
     "learning_objective": "POH Sección 4 - Ajuste de Compensador de Profundidad para Despegue",
     "stem": "Durante la lista 'Antes del Despegue' (Before Takeoff), ¿dónde debe colocarse el indicador de la rueda del compensador de profundidad (Elevator Trim)?",
     "options": [
-      { "id": "A", "text": "Alineado en la marca 'TAKEOFF' (rango de despegue)", "is_correct": true },
-      { "id": "B", "text": "A fondo hacia morro arriba (Full Nose UP)", "is_correct": false },
-      { "id": "C", "text": "A fondo hacia morro abajo (Full Nose DOWN)", "is_correct": false },
-      { "id": "D", "text": "En el extremo superior de la escala", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Alineado en la marca 'TAKEOFF'",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "A fondo hacia morro arriba (Full Nose UP)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "A fondo hacia morro abajo (Full Nose DOWN)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En el extremo superior de la escala",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "El compensador longitudinal debe situarse en la posición 'TAKEOFF' para asegurar fuerzas de mando neutras durante la carrera de aceleración y rotación suave a 55-60 KIAS.",
@@ -420,10 +724,26 @@
     "learning_objective": "POH Sección 4 - Uso del Cebador Manual (Primer)",
     "stem": "¿Cómo debe asegurarse el cebador manual (Engine Primer) tras completar la secuencia de arranque del motor?",
     "options": [
-      { "id": "A", "text": "Completamente empujado hacia adentro y girado para bloquear el cerrojo (IN and LOCKED)", "is_correct": true },
-      { "id": "B", "text": "Tirado hacia afuera a mitad de recorrido durante el vuelo", "is_correct": false },
-      { "id": "C", "text": "Desbloqueado para permitir alimentación auxiliar de combustible", "is_correct": false },
-      { "id": "D", "text": "Girar el cebador en sentido horario sin empujarlo", "is_correct": false }
+      {
+        "id": "A",
+        "text": "Completamente empujado hacia adentro y girado para bloquear el cerrojo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Tirado hacia afuera a mitad de recorrido durante el vuelo, siempre que se notifique previamente a la autoridad competente y al CCO",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Desbloqueado para permitir alimentación auxiliar de combustible",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Girar el cebador en sentido horario sin empujarlo, manteniendo el cumplimiento de las limitaciones operacionales del manual",
+        "is_correct": false
+      }
     ],
     "explanation": {
       "text": "Si el cebador no queda enclavado en posición IN and LOCKED, la succión del motor puede aspirar gasolina cruda a través de la bomba de cebado hacia los cilindros, enriqueciendo incontroladamente la mezcla y pudiendo provocar fallos de motor.",
