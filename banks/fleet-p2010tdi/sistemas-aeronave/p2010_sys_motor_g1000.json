@@ -923,5 +923,930 @@
     "metadata": {
       "difficulty": 0.4
     }
+  },
+  {
+    "id": "P2010-SYS-026",
+    "subject_id": "p2010_sistemas_motor_g1000",
+    "learning_objective": "AFM Sección 7 - Sistemas y Motor CD-170 26",
+    "stem": "¿Cómo funciona el sistema de lubricación por cárter húmedo del motor Continental CD-170?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bomba de aceite accionada por engranajes con radiador y filtro de flujo total",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Inyección de aceite de dos tiempos mezclado directamente con el combustible diésel",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Depósito de aceite presurizado por aire sangrado del compresor de cabina",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Lubricación por barboteo pasivo sin bomba mecánica ni circuito de refrigeración",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El CD-170 utiliza un sistema de lubricación por cárter húmedo con bomba mecánica, radiador de aceite y filtro.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Lubrication System"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-027",
+    "subject_id": "p2010_sistemas_motor_g1000",
+    "learning_objective": "AFM Sección 7 - Sistemas y Motor CD-170 27",
+    "stem": "¿Cuál es la función del sensor de presión absoluta del colector de admisión (MAP) en el CD-170?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Permitir a la FADEC calcular la masa de aire comprimido para dosificar el combustible",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Regular la calefacción del habitáculo de pasajeros en función de la altitud",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Desconectar automáticamente el alternador secundario en caso de sobrepresión",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Indicar en el velocímetro analógico de cabina la velocidad verdadera del aire",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MAP sensor mide la presión del aire tras el turbocompresor para permitir la inyección estequiométrica.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Engine Management"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-028",
+    "subject_id": "p2010_sistemas_motor_g1000",
+    "learning_objective": "AFM Sección 7 - Sistemas y Motor CD-170 28",
+    "stem": "¿Cómo se alimenta eléctricamente la FADEC durante el funcionamiento normal del motor?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desde el alternador principal de la aeronave a través de las barras esenciales",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Exclusivamente desde una pila seca de litio no recargable de doce voltios",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mediante paneles solares integrados en la superficie superior de los planos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "A través de un generador eólico retráctil montado en la panza del avión",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La FADEC se alimenta del sistema eléctrico principal de 28V (alternador) con respaldo de batería de emergencia.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Electrical System"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-029",
+    "subject_id": "p2010_sistemas_motor_g1000",
+    "learning_objective": "AFM Sección 7 - Sistemas y Motor CD-170 29",
+    "stem": "¿Cuál es la función de la válvula termostática en el circuito de refrigeración líquida del motor?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Derivar el refrigerante al radiador solo cuando se alcanza la temperatura de servicio",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cortar el paso de combustible a los inyectores si el motor está frío en tierra",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Descargar el exceso de líquido refrigerante hacia el exterior del fuselaje",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mezclar aire caliente de escape con el gasoil para evitar la formación de parafinas",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El termostato asegura un calentamiento rápido del motor derivando el fluido hasta alcanzar los ~80°C.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Cooling System"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-030",
+    "subject_id": "p2010_sistemas_motor_g1000",
+    "learning_objective": "AFM Sección 7 - Sistemas y Motor CD-170 30",
+    "stem": "¿Qué tipo de bujías incandescentes (Glow Plugs) utiliza el motor Continental CD-170 para el arranque?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Calentadores eléctricos controlados por FADEC para precalentar las cámaras de combustión",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Bujías de chispa de alta tensión alimentadas por dos magnetos tradicionales",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Quemadores de gas propano instalados en los conductos de admisión de aire",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cartuchos pirotécnicos de encendido rápido activados por la llave de arranque",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Al ser un motor diésel de encendido por compresión, cuenta con calentadores cerámicos de precalentamiento (Glow Plugs).",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Powerplant"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-031",
+    "subject_id": "p2010_sistemas_motor_g1000",
+    "learning_objective": "AFM Sección 7 - Sistemas y Motor CD-170 31",
+    "stem": "¿Cuál es la capacidad y ubicación de la batería principal de la aeronave?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Batería de plomo-ácido o gel de 24V situada en el compartimento de popa o morro",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Batería de 12V ubicada bajo el asiento del copiloto sin ventilación externa",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Batería de 48V de iones de litio situada dentro del depósito de combustible",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Dos pilas alcalinas de 9V ubicadas detrás del panel de instrumentos principal",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Sistema de 28V DC con batería principal de 24V.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Electrical System"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-032",
+    "subject_id": "p2010_sistemas_motor_g1000",
+    "learning_objective": "AFM Sección 7 - Sistemas y Motor CD-170 32",
+    "stem": "¿Cómo se realiza el accionamiento del compensador de dirección (Rudder Trim) en la Tecnam P2010?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rueda mecánica de compensación en la consola central entre los asientos delanteros",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Pulsadores eléctricos situados en la empuñadura del volante de control",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aleta fija de compensación de masa ajustable únicamente en tierra por mantenimiento",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Servomotor hidráulico gobernado automáticamente por el piloto automático",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El timón de dirección cuenta con compensador mecánico ajustable en vuelo desde la consola central.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Flight Controls"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-033",
+    "subject_id": "p2010_sistemas_motor_g1000",
+    "learning_objective": "AFM Sección 7 - Sistemas y Motor CD-170 33",
+    "stem": "¿Cuál es el tipo de construcción y articulación de los alerones en la Tecnam P2010?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estructura de aleación ligera de aluminio con balanceo de masa y varillas rígidas",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Superficies de tela sintética unidas mediante cables de tensión continua",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Alerones integrales sin bisagras deformables mediante materiales con memoria",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Accionamiento exclusivamente electrohidráulico sin conexión mecánica física",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Alerones de aleación de aluminio accionados por sistema mixto de varillas de empuje rígidas y cables.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Flight Controls"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-034",
+    "subject_id": "p2010_sistemas_motor_g1000",
+    "learning_objective": "AFM Sección 7 - Sistemas y Motor CD-170 34",
+    "stem": "¿Qué información proporciona la unidad de referencia inercial y datos de aire Garmin GSU 75 (ADAHRS)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Actitud de vuelo, rumbo magnético, velocidad indicada, altitud y velocidad vertical",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Únicamente las frecuencias de comunicaciones de muy alta frecuencia sintonizadas",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La cantidad exacta de combustible en peso y la presión hidráulica de frenos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La temperatura de las cuatro cabezas de cilindros y la carga del alternador",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El módulo integrado ADAHRS (Air Data & Attitude Heading Reference System) genera todos los parámetros primarios de vuelo.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Garmin G1000 NXi"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-035",
+    "subject_id": "p2010_sistemas_motor_g1000",
+    "learning_objective": "AFM Sección 7 - Sistemas y Motor CD-170 35",
+    "stem": "¿Cómo se realiza el aviso de pérdida aerodinámica (Stall Warning) en la Tecnam P2010?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Avisador acústico activado por una lengüeta de succión en el borde de ataque alar",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Vibrador de palanca electromecánico que sacude violentamente el volante",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Luz estroboscópica roja intermitente situada en la cúspide del empenaje",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mensaje sonoro sintético generado por el transponder en frecuencia de emergencia",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Cuenta con una bocina de pérdida neumática/acústica activada por la depresión del aire sobre la toma del borde de ataque.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Stall Warning"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-036",
+    "subject_id": "p2010_sistemas_motor_g1000",
+    "learning_objective": "AFM Sección 7 - Sistemas y Motor CD-170 36",
+    "stem": "¿Cuál es el recorrido angular de los flaps eléctricos en sus posiciones intermedias y finales?",
+    "options": [
+      {
+        "id": "A",
+        "text": "0 grados en UP, 15 grados en T/O y 40 grados en posición LAND",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "0 grados en UP, 10 grados en T/O y 30 grados en posición LAND",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "0 grados en UP, 20 grados en T/O y 50 grados en posición LAND",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "0 grados en UP, 5 grados en T/O y 25 grados en posición LAND",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Posiciones de flaps: 0° (UP), 15° (Take-off), 40° (Landing).",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Wing Flaps"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-037",
+    "subject_id": "p2010_sistemas_motor_g1000",
+    "learning_objective": "AFM Sección 7 - Sistemas y Motor CD-170 37",
+    "stem": "¿Dónde se encuentra ubicada la antena del transmisor localizador de emergencia (ELT) en la P2010?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En la parte superior del cono de cola del fuselaje detrás de la cabina",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En la punta de la semiala izquierda junto a las luces de navegación",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Bajo la panza del avión montada sobre la pata del tren de morro",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Dentro del radomo de proa compartiendo espacio con el radar meteorológico",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La antena exterior del ELT de 406 MHz está montada en la parte dorsal superior del cono de cola.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Emergency Equipment"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-038",
+    "subject_id": "p2010_sistemas_motor_g1000",
+    "learning_objective": "AFM Sección 7 - Sistemas y Motor CD-170 38",
+    "stem": "¿Cómo se realiza el desempañado del parabrisas en la Tecnam P2010?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aire caliente derivado del radiador de la calefacción dirigido a difusores en la luna",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Resistencias eléctricas integradas dentro del cristal laminado del parabrisas",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Inyección continua de alcohol isopropílico pulverizado por boquillas exteriores",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Limpiaparabrisas térmicos rotativos accionados por motor eléctrico de cabina",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El mando Defrost canaliza aire caliente hacia las rejillas situadas bajo el parabrisas.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Heating & Ventilation"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-039",
+    "subject_id": "p2010_sistemas_motor_g1000",
+    "learning_objective": "AFM Sección 7 - Sistemas y Motor CD-170 39",
+    "stem": "¿Qué función cumple la toma estática alternativa (Alternate Static Source) en cabina?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suministrar presión estática del interior de cabina ante bloqueo del puerto exterior",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Presurizar el habitáculo de pasajeros en vuelos por encima de diez mil pies",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Alimentar de aire exterior el sensor del termómetro de temperatura ambiente",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Descargar la humedad condensada en los tubos del anemómetro de respaldo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En caso de obstrucción del puerto estático exterior por hielo o suciedad, se abre la válvula estática alternativa en cabina.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Pitot-Static System"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-040",
+    "subject_id": "p2010_sistemas_motor_g1000",
+    "learning_objective": "AFM Sección 7 - Sistemas y Motor CD-170 40",
+    "stem": "¿Cuál es la función del panel de audio Garmin GMA 1360 instalado en la cabina?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gestión de comunicaciones, interfono de cabina, avisos sonoros y modo Display Backup",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Control de encendido de los calentadores de bujías y del motor de arranque",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Ajuste del ángulo de paso de las palas de la hélice de forma manual",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Calibración del caudalímetro digital de retorno de combustible caliente",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El GMA 1360 controla radios COM/NAV, interfono digital 3D audio, marcadores y botón rojo de Display Backup.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Audio System"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-041",
+    "subject_id": "p2010_sistemas_motor_g1000",
+    "learning_objective": "AFM Sección 7 - Sistemas y Motor CD-170 41",
+    "stem": "¿Qué tipo de líquido refrigerante oficial utiliza el motor Continental CD-170?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mezcla al cincuenta por ciento de agua destilada y glicol BASF Glysantin G48",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Agua de mar tratada químicamente con agentes anticorrosivos de magnesio",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aceite mineral puro de viscosidad monogrado cincuenta para aviación",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Líquido de frenos sintético tipo DOT 4 con inhibidores de cavitación",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Refrigerante homologado: 50% agua y 50% anticongelante BASF Glysantin G48 (azul/verde).",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Engine Cooling Fluids"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-042",
+    "subject_id": "p2010_sistemas_motor_g1000",
+    "learning_objective": "AFM Sección 7 - Sistemas y Motor CD-170 42",
+    "stem": "¿Cuál es el tipo de amortiguación instalada en la pata del tren de aterrizaje de morro?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amortiguador oleoneumático con fluido hidráulico y nitrógeno a presión",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Muelle de acero helicoidal rígido sin amortiguación hidráulica",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Bloques de goma maciza vulcanizada superpuestos sobre el eje",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Lámina de titanio deformable sin pistón de retorno hidráulico",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La pata de morro cuenta con amortiguador oleoneumático (Oleo-pneumatic strut) para absorber cargas de impacto.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Landing Gear"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-043",
+    "subject_id": "p2010_sistemas_motor_g1000",
+    "learning_objective": "AFM Sección 7 - Sistemas y Motor CD-170 43",
+    "stem": "¿Cómo se realiza el gobierno de la rueda de morro durante el rodaje en tierra?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mediante varillas conectadas directamente a los pedales del timón de dirección",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Rueda libre orientable únicamente mediante el uso de frenos diferenciales",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Motor eléctrico accionado por un mando giratorio en el panel de control",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Dirección hidráulica asistida mediante bomba mecánica del motor diésel",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La rueda de morro es orientable (Steerable Nosewheel) conectada mecánicamente a los pedales de control.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Landing Gear"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-044",
+    "subject_id": "p2010_sistemas_motor_g1000",
+    "learning_objective": "AFM Sección 7 - Sistemas y Motor CD-170 44",
+    "stem": "¿Cuál es la función del filtro de aire de inducción del motor y su compuerta alternativa (Alternate Air)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suministrar aire de admisión caliente sin filtrar en caso de bloqueo del filtro principal",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Refrigerar los frenos del tren principal durante aproximaciones largas",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Expulsar los gases de escape fuera del carenado para evitar turbulencias",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Filtrar el aire suministrado a las mascarillas de oxígeno de los pasajeros",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Alternate Air: compuerta automática/manual que aspira aire templado del interior del carenado si el filtro de aire se hiela o tapona.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Air Induction"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-045",
+    "subject_id": "p2010_sistemas_motor_g1000",
+    "learning_objective": "AFM Sección 7 - Sistemas y Motor CD-170 45",
+    "stem": "¿Qué sistema previene la acumulación de electricidad estática en las superficies de vuelo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Descargadores estáticos instalados en los bordes de fuga de alas y empenajes",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Pintura aislante de poliuretano aplicada sobre la fibra de carbono de cabina",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cadena de cobre que arrastra continuamente por el suelo durante el vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Desconexión de las masas metálicas entre semialas y cono de cola",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Static wicks (descargadores de estática) en puntas de plano, alerones y timones para disipar la carga al aire.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Electrical Grounding"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-046",
+    "subject_id": "p2010_sistemas_motor_g1000",
+    "learning_objective": "AFM Sección 7 - Sistemas y Motor CD-170 46",
+    "stem": "¿Cuál es la función del sensor OAT montado en la parte inferior del ala?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Medir la temperatura del aire exterior para el cálculo de TAS y densidad en el G1000",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Controlar el termostato de encendido de la calefacción de los asientos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Indicar la temperatura del combustible en el interior de los depósitos alares",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Activar automáticamente las luces estroboscópicas al anochecer",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La sonda GTP 59 (OAT) envía la temperatura estática exterior al ordenador de datos de aire para calcular TAS y CAS.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Avionics Sensors"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-047",
+    "subject_id": "p2010_sistemas_motor_g1000",
+    "learning_objective": "AFM Sección 7 - Sistemas y Motor CD-170 47",
+    "stem": "¿Cómo se iluminan los instrumentos analógicos de respaldo (Standby) en cabina?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iluminación interna regulable desde el panel de potenciómetros de cabina",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Exclusivamente mediante linternas portátiles utilizadas por los pilotos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Luz química fluorescente que se recarga por la radiación solar diurna",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Reflejo de las pantallas PFD sin bombillas ni leds individuales propios",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Panel Dimming: potenciómetros de cabina regulan la retroiluminación de instrumentos e indicadores.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Lighting"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-048",
+    "subject_id": "p2010_sistemas_motor_g1000",
+    "learning_objective": "AFM Sección 7 - Sistemas y Motor CD-170 48",
+    "stem": "¿Qué protección tienen las tomas de combustible de los depósitos alares contra sobrepresión o vacío?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Conductos de venteo con válvulas antirretorno orientadas al flujo de aire exterior",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Tapones herméticos sellados sin conductos de comunicación con el exterior",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Válvulas pirotécnicas de alivio calibradas a cincuenta bares de presión",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Sistemas de presurización por nitrógeno gas inerte en todo momento",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Venteos de combustible (Fuel Vents) bajo el ala mantienen la presión atmosférica dentro del tanque al consumir combustible.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Fuel System"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-049",
+    "subject_id": "p2010_sistemas_motor_g1000",
+    "learning_objective": "AFM Sección 7 - Sistemas y Motor CD-170 49",
+    "stem": "¿Cuál es el tipo de cierre y bloqueo instalado en los cinturones de seguridad de los cuatro asientos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Arnés de seguridad de tres puntos con carrete inercial de bloqueo automático",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cinturón abdominal simple de dos puntos sin tirante diagonal de hombro",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Arnés de cinco puntos de tipo acrobático militar con suelta rápida de anilla",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Barra de sujeción rígida basculante similar a las atracciones de feria",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los 4 asientos disponen de arnés de seguridad de 3 puntos con retractor inercial automático.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Seats & Restraints"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-SYS-050",
+    "subject_id": "p2010_sistemas_motor_g1000",
+    "learning_objective": "AFM Sección 7 - Sistemas y Motor CD-170 50",
+    "stem": "¿Qué componente regula la presión hidráulica ejercida sobre los frenos de disco de las ruedas principales?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cilindros maestros individuales accionados por la parte superior de cada pedal",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Bomba hidráulica mecánica conectada a la caja reductora de la hélice",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Acumulador de gas a alta presión recargable únicamente en mantenimiento",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Válvula solenoide modulada por el sistema antibloqueo del piloto automático",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Frenos de punta de pedal (Toe Brakes): cada pedal acciona su propio cilindro maestro hidráulico.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Brake System"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
   }
 ]

@@ -923,5 +923,375 @@
     "metadata": {
       "difficulty": 0.4
     }
+  },
+  {
+    "id": "P2010-LIM-026",
+    "subject_id": "p2010_limitaciones",
+    "learning_objective": "AFM Sección 2 - Limitaciones Avanzadas 26",
+    "stem": "¿Cuál es la temperatura máxima admisible de culata de cilindros (CHT) del motor Continental CD-170?",
+    "options": [
+      {
+        "id": "A",
+        "text": "250 grados centígrados de temperatura máxima de culata",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "180 grados centígrados de temperatura máxima de culata",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "300 grados centígrados de temperatura máxima de culata",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "210 grados centígrados de temperatura máxima de culata",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El AFM Sección 2 (Engine Operating Limits) fija la CHT máxima en 250°C.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 2: Limitations (Engine Limits)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-LIM-027",
+    "subject_id": "p2010_limitaciones",
+    "learning_objective": "AFM Sección 2 - Limitaciones Avanzadas 27",
+    "stem": "¿Cuál es la presión mínima de combustible en la rampa de inyección Common Rail durante el arranque?",
+    "options": [
+      {
+        "id": "A",
+        "text": "250 bar de presión mínima en la rampa de inyección",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "100 bar de presión mínima en la rampa de inyección",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "500 bar de presión mínima en la rampa de inyección",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "50 bar de presión mínima en la rampa de inyección",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El sistema Common Rail del CD-170 requiere un mínimo de 250 bar para habilitar la inyección en el arranque.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Powerplant & Systems"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-LIM-028",
+    "subject_id": "p2010_limitaciones",
+    "learning_objective": "AFM Sección 2 - Limitaciones Avanzadas 28",
+    "stem": "¿Cuál es el valor máximo de desequilibrio de combustible permitido entre semialas según las limitaciones?",
+    "options": [
+      {
+        "id": "A",
+        "text": "30 litros de desequilibrio máximo entre depósitos alares",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "50 litros de desequilibrio máximo entre depósitos alares",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "15 litros de desequilibrio máximo entre depósitos alares",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "60 litros de desequilibrio máximo entre depósitos alares",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El desequilibrio máximo autorizado de combustible entre semialas es de 30 litros (8 US gal).",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 2: Fuel Limitations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-LIM-029",
+    "subject_id": "p2010_limitaciones",
+    "learning_objective": "AFM Sección 2 - Limitaciones Avanzadas 29",
+    "stem": "¿Cuál es la tensión máxima de salida del alternador antes de que actúe la protección por sobretensión?",
+    "options": [
+      {
+        "id": "A",
+        "text": "32 voltios en la barra principal de corriente continua",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "28 voltios en la barra principal de corriente continua",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "36 voltios en la barra principal de corriente continua",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "24 voltios en la barra principal de corriente continua",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La unidad de control del alternador (ACU) dispara la desconexión por sobretensión a 32V.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 7: Electrical System"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-LIM-030",
+    "subject_id": "p2010_limitaciones",
+    "learning_objective": "AFM Sección 2 - Limitaciones Avanzadas 30",
+    "stem": "¿Cuál es la carga eléctrica continua máxima soportada por el alternador principal de 28V DC?",
+    "options": [
+      {
+        "id": "A",
+        "text": "70 amperios de intensidad continua máxima en servicio",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "50 amperios de intensidad continua máxima en servicio",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "90 amperios de intensidad continua máxima en servicio",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "120 amperios de intensidad continua máxima en servicio",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El alternador principal instalado entrega hasta 70A continuos a 28V DC.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 2: Electrical Limitations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-LIM-031",
+    "subject_id": "p2010_limitaciones",
+    "learning_objective": "AFM Sección 2 - Limitaciones Avanzadas 31",
+    "stem": "¿Cuál es la velocidad máxima con viento turbulento severo recomendada para penetración de turbulencia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "119 nudos indicados correspondiente a la velocidad de maniobra",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "130 nudos indicados correspondiente a la velocidad de crucero estructural",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "100 nudos indicados correspondiente a la velocidad de flap",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "145 nudos indicados correspondiente al arco amarillo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En turbulencia severa debe mantenerse la velocidad por debajo de Va (119 KIAS a MTOW).",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 2: Airspeed Limitations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-LIM-032",
+    "subject_id": "p2010_limitaciones",
+    "learning_objective": "AFM Sección 2 - Limitaciones Avanzadas 32",
+    "stem": "¿Qué restricción de maniobra acrobática aplica a la categoría Normal de la Tecnam P2010?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prohibidas todas las maniobras acrobáticas incluyendo barrenas intencionadas",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Autorizados giros pronunciados y barrenas de no más de una vuelta",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Autorizado vuelo invertido de corta duración con flaps recogidos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Autorizados toneles y lazos con factor de carga menor a tres g",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El avión está certificado en Categoría Normal: prohibida cualquier maniobra acrobática o barrena intencionada.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 2: Flight Limitations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-LIM-033",
+    "subject_id": "p2010_limitaciones",
+    "learning_objective": "AFM Sección 2 - Limitaciones Avanzadas 33",
+    "stem": "¿Cuál es la pendiente máxima de pista autorizada para operaciones de despegue y aterrizaje?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pendiente longitudinal máxima de más o menos dos por ciento",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Pendiente longitudinal máxima de más o menos cinco por ciento",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Pendiente longitudinal máxima de más o menos cuatro por ciento",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pendiente longitudinal máxima de más o menos uno por ciento",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El AFM limita las operaciones a pistas con pendientes de hasta ±2%.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 2: Runway Limitations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-LIM-034",
+    "subject_id": "p2010_limitaciones",
+    "learning_objective": "AFM Sección 2 - Limitaciones Avanzadas 34",
+    "stem": "¿Cuál es la altitud máxima de aeródromo autorizada para despegue y aterrizaje según el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "10.000 pies de altitud de presión de aeródromo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "14.000 pies de altitud de presión de aeródromo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "7.000 pies de altitud de presión de aeródromo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "12.000 pies de altitud de presión de aeródromo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La altitud máxima de aeródromo para operaciones normales es de 10.000 ft de altitud de presión.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 2: Operational Limitations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "P2010-LIM-035",
+    "subject_id": "p2010_limitaciones",
+    "learning_objective": "AFM Sección 2 - Limitaciones Avanzadas 35",
+    "stem": "¿Cuál es el tiempo máximo de vuelo invertido o con gravedad cero antes de que falle la lubricación?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cero segundos al carecer de sistema de combustible y cárter invertido",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Diez segundos de margen de seguridad del cárter sin modificar la configuración establecida de cabina",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Treinta segundos de suministro continuo por acumulador sin modificar la configuración establecida de cabina",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Quince segundos en vuelo con cero g sostenido sin modificar la configuración establecida de cabina",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El motor diésel CD-170 no tiene sistema de lubricación invertida: 0 segundos permitidos.",
+      "references": [
+        "Tecnam P2010 TDI AFM - Section 2: Engine Limitations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
   }
 ]
