@@ -149,12 +149,11 @@ Siempre que el usuario ejecute la instrucción **"auditoría"** o **"auditoria"*
 
 1. **Inspección de Solicitudes y Registros**:
    - **Registro de Preguntas a Revisar**: Comprobar `banks/questions_for_review.json` y el listado de solicitudes generadas desde el botón **"Revisión"** de la PWA.
-   - **Carpeta de Capturas de Pantalla**: Inspeccionar `C:\Users\plegu\My Drive\Antigravity\Plegueviation exam\bugs\` para leer cualquier captura de pantalla añadida por el usuario.
    - **Registro de Eliminadas**: Comprobar `banks/deleted_questions.json` para verificar si alguna pregunta reportada debe ser purgada o corregida de raíz.
 
 2. **Auditoría Técnica contra Manuales Oficiales**:
    - Cotejar cada pregunta reportada con los manuales oficiales de la Sección 0 (MOA, MOB, MEL, AOM, SOPM, AFM, POH).
-   - Verificar si la discrepancia afecta a:
+   - Verificar si la discrepancia reportada por el piloto afecta a:
      * Datos numéricos (velocidades, pesos, altitudes, plazos MEL, tiempos FTL).
      * Siglas, acrónimos o mnemónicos (RETSE, E-DALTA, IMFLOCC, TELSI, MEANA, etc.).
      * Ambigüedad en distractores o redacción confusa.

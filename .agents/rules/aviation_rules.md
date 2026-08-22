@@ -13,12 +13,13 @@ When generating or editing aviation questions, flight manuals, operations checkl
 
 ---
 
-## 1. Bugs, Solicitudes de Revisión y Workflow de Auditoría
-- **Ruta de Pantallazos de Errores**: `C:\Users\plegu\My Drive\Antigravity\Plegueviation exam\bugs\`
-- **Base de Datos de Preguntas a Revisar**: `banks/questions_for_review.json` y `apps/web-pwa/public/banks/questions_for_review.json` (alimentada por el botón **Revisión** de la PWA).
+## 1. Base de Datos de Preguntas a Revisar y Workflow de Auditoría
+- **Repositorio de Preguntas a Revisar**: `banks/questions_for_review.json` y `apps/web-pwa/public/banks/questions_for_review.json` (alimentado por el botón **Revisión** de la PWA).
 - **Protocolo de Acción Obligatorio ante "auditoría" / "auditoria"**:
-  * Siempre que el usuario solicite ejecutar **"auditoría"** o corregir fallos, el agente debe **inspeccionar en primer lugar `banks/questions_for_review.json` y la carpeta `bugs/`**.
-  * Analizar cada pregunta reportada, motivo de revisión y notas del piloto, cotejar contra los manuales oficiales de la Sección 0 (MOA, MOB, MEL, AOM, SOPM, AFM, POH), e implementar la corrección en los bancos de `banks/`.
+  * Siempre que el usuario solicite ejecutar **"auditoría"** o corregir preguntas reportadas, el agente debe **inspeccionar en primer lugar `banks/questions_for_review.json`** (así como los reportes de revisión enviados).
+  * Analizar cada pregunta reportada, identificador, categoría del motivo (datos numéricos, siglas/mnemónicos, distractores ambiguos, referencias o aplicabilidad de flota) y las observaciones redactadas por el piloto.
+  * Cotejar rigurosamente cada reactivo contra los manuales oficiales de la Sección 0 (MOA, MOB, MEL, AOM, SOPM, AFM, POH).
+  * Implementar las correcciones correspondientes directamente en los archivos JSON de los bancos en `banks/`, recompilar con `cli/bin/build_banks.py` y actualizar el catálogo.
 
 ---
 
