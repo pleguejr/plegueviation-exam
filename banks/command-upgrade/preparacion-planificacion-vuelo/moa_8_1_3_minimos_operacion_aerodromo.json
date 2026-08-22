@@ -1,0 +1,1852 @@
+[
+  {
+    "id": "CMD-MOA-MIN-001",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.2 - Clasificación de Categorías de Aeronave por Vat",
+    "stem": "Según el MOA 8.1.3.2 y CAT.OP.MPA.320, ¿cómo se determina la categoría de una aeronave y en qué categoría se encuadra el Embraer 195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Por la velocidad indicada en el umbral (Vat = 1.3 x Vso o 1.23 x Vs1g al MLW); el E195-E2 se clasifica como Categoría C (121 a 140 kt)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Por el número máximo de asientos de pasajeros en cabina; el E195-E2 se clasifica como Categoría E (> 150 plazas)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Por el peso máximo de despegue (MTOW); el E195-E2 se clasifica como Categoría A (< 5.700 kg)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Por la envergadura alar total; el E195-E2 se clasifica como Categoría D (141 a 165 kt) de forma permanente",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.3.2 define la clasificación de aeronaves según $V_{at}$ ($1.3 \times V_{so}$ o $1.23 \times V_{s1g}$ en configuración de aterrizaje a MLW):\n\n### 📊 Categorías de Aeronaves por Vat (MOA 8.1.3.2)\n| Categoría | Rango de Velocidad Vat |\n| :--- | :--- |\n| **Categoría A** | Menor de 91 kt |\n| **Categoría B** | De 91 kt a 120 kt |\n| **Categoría C (E195-E2)** | **De 121 kt a 140 kt** |\n| **Categoría D** | De 141 kt a 165 kt |\n| **Categoría E** | De 166 kt a 210 kt |",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3.2 Clasificación de Aeronaves (Pág. 8.1-28)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-002",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.3 - Mínimos de Despegue con Baja Visibilidad (LVTO)",
+    "stem": "De acuerdo con el MOA 8.1.3.3, ¿cuál es el RVR mínimo absoluto para un despegue LVTO en aeronaves Categoría C con luces de eje de pista (CL) y luces de borde de alta intensidad (HIRL)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "RVR 125 m (requiriendo luces de eje de pista CL a 15 m o menos, HIRL operativas y múltiples transmisómetros RVR)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "RVR 300 m sin necesidad de luces de eje de pista en ningún tramo de la carrera de despegue",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "RVR 50 m siempre que el copiloto active el radar meteorológico en modo de navegación terrestre",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "RVR 550 m equivalente a los mínimos estándar de aproximación de precisión CAT I",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.3.3 establece que para despegues con baja visibilidad (LVTO) en Categoría C con autorización operacional, el mínimo es **RVR 125 m** siempre que la pista cuente con luces de eje de pista (CL con espaciado $\\le 15\text{ m}$) y luces de borde de alta intensidad (HIRL).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3.3 Mínimos de Despegue (Pág. 8.1-29)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-003",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.3 - Despegue sin Luces de Eje de Pista (Sin CL)",
+    "stem": "Si una pista dispone de luces de borde HIRL y señalización diurna de eje pero carece de luces de eje de pista (CL), ¿cuál es el RVR mínimo de despegue según el MOA 8.1.3.3?",
+    "options": [
+      {
+        "id": "A",
+        "text": "RVR 150 m (requiriendo señalización de eje de pista y luces de borde de alta intensidad HIRL operativas)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "RVR 75 m manteniendo la aeronave orientada con el localizador del ILS de la cabecera opuesta",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "RVR 800 m con obligatoriedad de esperar a la salida del sol para iniciar la carrera",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "RVR 125 m aplicando potencia de emergencia en ambos motores desde el inicio de pista",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En ausencia de luces de eje de pista (CL), si se dispone de señalización de eje de pista y luces de borde de alta intensidad (HIRL), el mínimo de despegue para aeronaves multimotor de Categoría C se sitúa en **RVR 150 m** (MOA 8.1.3.3).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3.3 Mínimos de Despegue (Pág. 8.1-29)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-004",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.6 - Conversión de Visibilidad Meteorológica a RVR (CMV)",
+    "stem": "Según la tabla de factores de conversión del MOA 8.1.3.6 (CMV), ¿qué factor se aplica a la visibilidad meteorológica reportada durante la noche con sistema HIALS operativo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Factor x2.0 (Visibilidad reportada x 2.0 = RVR/CMV calculado)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Factor x1.0 (sin incremento sobre la visibilidad meteorológica reportada)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Factor x3.5 (incremento extraordinario para operaciones nocturnas con niebla)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Factor x0.5 (reducción de la visibilidad a la mitad por oscuridad ambiental)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.3.6 incluye la tabla de factores para calcular la Visibilidad Meteorológica Convertida (CMV):\n\n### 📊 Factores de Conversión de Visibilidad a CMV / RVR (MOA 8.1.3.6)\n| Iluminación y Ayudas Visuales Disponibles | Día | Noche |\n| :--- | :--- | :--- |\n| **Luces de aproximación y pista de alta intensidad (HIALS/HIRL)** | **x 1.5** | **x 2.0** |\n| **Cualquier otro sistema de luces de aproximación / borde** | **x 1.0** | **x 1.5** |\n| **Sin luces de aproximación ni luces de pista** | **x 1.0** | **No aplicable (x 1.0)** |",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3.6 Conversión de Visibilidad (Pág. 8.1-34)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-005",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.6 - Restricción en el Uso de la Conversión CMV",
+    "stem": "¿En qué circunstancias está expresamente PROHIBIDO utilizar la conversión de visibilidad a RVR (CMV) según el MOA 8.1.3.6?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Para el cálculo de mínimos de despegue, para aproximaciones CAT II/III, o cuando el RVR real esté reportado",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Durante vuelos diurnos con visibilidad superior a 10 kilómetros en espacio aéreo controlado",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Siempre que la aeronave opere con el piloto automático desconectado en aproximación visual",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En todos los aeropuertos situados a menos de 50 metros de elevación sobre el nivel del mar",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.3.6 prohíbe el uso de la conversión CMV en los siguientes casos:\n1. Para el cálculo de mínimos de despegue (LVTO).\n2. Para verificar mínimos en aproximaciones de precisión CAT II y CAT III.\n3. Cuando el informe meteorológico disponga de un valor de RVR real medido por transmisómetro.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3.6 Conversión de Visibilidad (Pág. 8.1-34)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-006",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.4 - Técnica de Descenso Continuo en Aproximación Final (CDFA)",
+    "stem": "¿Cuál es el propósito y la técnica obligatoria para aproximaciones Tipo A (2D) según el MOA 8.1.3.4?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Volar un perfil de descenso continuo y constante (CDFA) sin niveladas intermedias, añadiendo un margen a la MDA para no perforarla",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Descender en 'escalón' (dive and drive) lo más rápido posible hasta la MDA y volar nivelado buscando la pista",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Desconectar los dos altímetros principales y guiarse exclusivamente por la indicación del variómetro vertical",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Acelerar a velocidad de crucero en el tramo final para reducir el tiempo de exposición al terreno",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.3.4 exige la técnica CDFA (Continuous Descent Final Approach) para todas las aproximaciones de no precisión (2D), eliminando la técnica dive and drive y asegurando un perfil continuo y estabilizado.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-007",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.4 - Altitud de Decisión Derivada (DDA)",
+    "stem": "Al aplicar la técnica CDFA en una aproximación con MDA publicada, ¿cómo se calcula la DDA (Derived Decision Altitude)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se añade un margen de seguridad (típicamente +50 ft) a la MDA publicada para iniciar la frustrada sin perforar la MDA",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se resta 100 ft a la MDA para aproximarse más al terreno y facilitar la adquisición visual del umbral",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se divide la MDA entre dos si la temperatura ambiente es superior a 15°C en el aeropuerto",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se utiliza la elevación del aeropuerto como altitud de decisión sin considerar la MDA de la carta",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para evitar perforar la MDA al iniciar la maniobra de aproximación frustrada en un procedimiento 2D con técnica CDFA, se define la DDA añadiendo un margen (+50 ft) a la MDA publicada (MOA 8.1.3.4).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-008",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.5 - Mínimos Estándar de Aproximación CAT I (3D)",
+    "stem": "¿Cuáles son los mínimos estándar de utilización para una aproximación de precisión de Categoría I (CAT I) según el MOA 8.1.3.5?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Altura de decisión (DH) no inferior a 200 pies y RVR no inferior a 550 metros (o visibilidad meteorológica equivalente de 800 m)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Altura de decisión (DH) de 100 pies y RVR no inferior a 300 metros con luces de eje de pista",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Altura de decisión (DH) de 50 pies y RVR de 150 metros con aterrizaje automático obligatorio",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Altura de decisión (DH) de 500 pies y visibilidad meteorológica mínima de 5.000 metros",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los mínimos estándar para CAT I son: **DH $\\ge 200\text{ ft}$** y **RVR $\\ge 550\text{ m}$** (con sistema de luces de aproximación completo) o visibilidad de 800 m (MOA 8.1.3.5).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-009",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.5 - Mínimos Estándar de Aproximación CAT II (3D)",
+    "stem": "Según el MOA 8.1.3.5 y EASA Part-SPA.LVO, ¿cuáles son los límites de DH y RVR para una operación de Categoría II (CAT II)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DH entre 100 y 200 pies, y RVR no inferior a 300 metros para aeronaves de Categoría C",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "DH inferior a 50 pies y RVR no inferior a 100 metros con guiado manual por HUD",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "DH fija de 250 pies y visibilidad no inferior a 1.500 metros sin necesidad de luces de eje",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "DH de 0 pies (sin altura de decisión) y RVR de 75 metros en aterrizaje totalmente ciego",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La aproximación de precisión CAT II se define por: **DH entre 100 ft y 200 ft**, y **RVR $\\ge 300\text{ m}$** (Categoría C) con equipamiento y autorización LVO específica (MOA 8.1.3.5).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-010",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.5 - Regla de la Prohibición de Aproximación (Approach Ban)",
+    "stem": "De acuerdo con el MOA 8.1.3 y CAT.OP.MPA.305, ¿cuándo es aplicable la prohibición de aproximación (Approach Ban)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Si el RVR reportado está por debajo del mínimo antes de cruzar 1.000 ft AAL (o antes de iniciar el FAF), no se puede continuar la aproximación",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Si la temperatura ambiente desciende por debajo de 0°C en cualquier tramo de la aproximación inicial",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Si el copiloto tiene menos de 500 horas de vuelo en el tipo de aeronave al alcanzar el IAF",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Si la pista está seca y la velocidad del viento en cola es exactamente de 2 nudos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La regla del Approach Ban establece que si el RVR/visibilidad reportada es inferior al mínimo aplicable, la aproximación no debe continuarse más allá del FAF (o por debajo de 1.000 ft sobre el aeródromo si no hay FAF).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-011",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.5 - Continuación de Aproximación tras Cruzar el FAF con RVR Degradado",
+    "stem": "Si una vez cruzado el FAF (o por debajo de 1.000 ft AAL) el RVR desciende por debajo del mínimo, ¿qué autoriza el MOA 8.1.3?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se permite continuar la aproximación hasta la DA/H o MDA/H; en ese punto se evalúan las referencias visuales para aterrizar o frustrar",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Obliga a realizar una aproximación frustrada inmediata sin llegar a la altitud de decisión",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Exige apagar el piloto automático y picar hacia el terreno para avistar la pista antes de mínimos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Autoriza a aterrizar a ciegas sin necesidad de haber adquirido ninguna referencia visual en la DA/H",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme a CAT.OP.MPA.305 y MOA 8.1.3, si el deterioro del RVR ocurre tras cruzar el FAF o 1.000 ft AAL, se puede continuar hasta la DA/H; si en la DA/H no se tienen referencias visuales, se frustra obligatoriamente.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-012",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.1 - Referencias Visuales Requeridas en DA/H para CAT I",
+    "stem": "Para continuar el descenso por debajo de la DA/H en una aproximación CAT I, ¿qué referencia visual debe ser claramente identificable?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Al menos un elemento del sistema de luces de aproximación, el umbral, sus marcas, luces de umbral, luces de zona de toma de contacto o eje de pista",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "La torre de control del aeropuerto o el aparcamiento de vehículos de la terminal de pasajeros",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La luz de posición de otra aeronave que se encuentre realizando el rodaje en plataforma",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El reflejo de las luces de navegación en la base de las nubes circundantes",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.3.1 y CAT.OP.MPA.305 detallan las referencias visuales requeridas en DA/H: elementos del sistema ALS, umbral, marcas/luces de umbral, TDZ, o luces/marcas de eje de pista.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-013",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.1 - Referencias Visuales Requeridas en DA/H para CAT II",
+    "stem": "En una aproximación CAT II, ¿qué segmento visual mínimo continuo exige el MOA 8.1.3 al alcanzar la altura de decisión de 100 pies?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Un segmento de al menos 3 luces consecutivas del eje de pista, de las luces de toma de contacto o de la barra transversal de luces de aproximación",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Ver la longitud total de la pista de aterrizaje de extremo a extremo sin obstáculos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Identificar visualmente la manga de viento situada en la calle de rodaje paralela",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Ver el horizonte natural terrestre y la silueta completa de los hangares de mantenimiento",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para CAT II, en la DH (mínimo 100 ft) se requiere un segmento visual que incluya al menos 3 luces consecutivas del eje de aproximación/pista o barra transversal (MOA 8.1.3).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-014",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.6 - Conversión CMV durante el Día con Sistema de Luces Básico",
+    "stem": "Si durante el día se reporta una visibilidad de 1.200 m en una pista con sistema de luces básico (MIALS), ¿cuál es el CMV según el MOA 8.1.3.6?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1.200 m (Factor de conversión x1.0)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "2.400 m (Factor de conversión x2.0)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "3.600 m (Factor de conversión x3.0)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "600 m (Factor de reducción x0.5)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la tabla de MOA 8.1.3.6, de día con sistema de luces que no sea de alta intensidad (HIALS), el factor de conversión es **x 1.0** (1.200 m x 1.0 = 1.200 m).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-015",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.6 - Conversión CMV durante la Noche con Sistema de Luces Básico",
+    "stem": "Si de noche se reporta una visibilidad meteorológica de 1.000 m con sistema de luces de aproximación básico, ¿cuál es el CMV aplicable?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1.500 m (Factor de conversión x1.5 para noche con luces intermedias/básicas)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "2.000 m (Factor de conversión x2.0 reservado exclusivamente para sistemas HIALS)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "1.000 m (sin aplicar ningún incremento por ser de noche)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "3.000 m (Factor de conversión x3.0 por efecto de contraste nocturno)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Tabla MOA 8.1.3.6: Noche con cualquier otro sistema de luces $\rightarrow$ **Factor x 1.5** (1.000 m x 1.5 = **1.500 m**).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-016",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.6 - Conversión CMV durante la Noche sin Luces de Aproximación",
+    "stem": "Si una pista carece de luces de aproximación y de luces de pista durante la noche, ¿qué factor de conversión CMV se aplica según el MOA 8.1.3.6?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No es aplicable ningún factor de conversión (Factor x1.0, no pudiendo inflar la visibilidad meteorológica reportada)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Factor x2.0 si la luna se encuentra en fase de luna llena con cielo despejado",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Factor x1.5 utilizando los faros de aterrizaje de la propia aeronave como referencia",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Factor x0.8 reduciendo la visibilidad en un 20% de forma obligatoria",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Tabla MOA 8.1.3.6: Sin luces de aproximación ni luces de pista de noche $\rightarrow$ **No aplicable / Factor x 1.0**.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-017",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.3 - Luces de Eje de Pista (CL) Requeridas para RVR < 400 m en Despegue",
+    "stem": "Para realizar un despegue con RVR inferior a 400 m de noche, ¿qué iluminación de pista es mandatoria según el MOA 8.1.3.3?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Luces de borde de pista (HIRL) y luces de eje de pista (CL) o señalización de eje visible",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Únicamente las luces del edificio terminal y farolas de la zona de carga",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Luces portátiles de destellos alimentadas por baterías recargables",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No se requiere ningún tipo de iluminación si el comandante dispone de gafas de visión nocturna",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.3.3 estipula que para despegues nocturnos con RVR < 400 m se requieren luces de borde de pista y luces de eje de pista (o marcas visuales homologadas).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-018",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.7 - Fallo de Componentes del Sistema de Luces de Aproximación (ALS)",
+    "stem": "Si el sistema de luces de aproximación de alta intensidad (HIALS) sufre una avería parcial en su tramo exterior, ¿cómo afecta a los mínimos CAT I?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Los mínimos de RVR se incrementan según la tabla de contingencias de ayudas degradadas publicada en el MOA / LIDO (típicamente a 750 m u 800 m)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "La pista queda automáticamente clausurada para todo tipo de operaciones aéreas",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se autoriza a descender a mínimos de CAT II para compensar la falta de luces exteriores",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No tiene ningún impacto operacional y se mantienen los 550 m estándar de RVR",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.3 y las tablas de LIDO establecen penalizaciones de RVR cuando el sistema ALS está inoperativo o degradado, elevando el mínimo de RVR aplicable.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-019",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.8 - Créditos Operacionales con HUD / EVS",
+    "stem": "Según el MOA 8.1.3 y la normativa EASA, ¿qué beneficio proporciona la utilización de un sistema de visión mejorada (EVS/HUD) certificado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Permite reducir los mínimos de visibilidad/RVR o de altura de decisión mediante créditos operacionales aprobados por la Autoridad",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Exime a la tripulación de la obligación de calcular el combustible de contingencia y alternativo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Autoriza a aterrizar con viento en cola de hasta 50 nudos en cualquier tipo de pista",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Permite prescindir de la carta de aproximación y volar sin fijos de navegación intermedios",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los créditos operacionales con HUD/EVS permiten beneficiarse de mínimos operativos inferiores a los estándar previa aprobación en las especificaciones operacionales (OpSpecs).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-020",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.4.1 - Mínimos de Operación VFR en Espacio Aéreo Controlado (Clase C/D/E)",
+    "stem": "De acuerdo con el MOA 8.1.4 y SERA.5001, ¿cuáles son los mínimos meteorológicos de visibilidad y distancia a nubes para vuelo VFR por encima de 3.000 ft AMSL?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Visibilidad de 5 km (8 km a/por encima de FL100), 1.500 m de distancia horizontal de nubes y 1.000 ft (300 m) de distancia vertical",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Visibilidad de 1.500 m sin distancia reglamentaria a las formaciones nubosas",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Visibilidad de 800 m manteniéndose libre de nubes y a la vista del agua en todo momento",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Visibilidad de 10 km y 5.000 ft de separación vertical con cualquier formación nubosa",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.4 y el reglamento SERA establecen para VFR $\\ge 3.000\text{ ft AMSL}$: **5 km de visibilidad** (8 km a/sobre FL100), **1.500 m horizontal** y **1.000 ft vertical** de nubes.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-021",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.4.2 - Mínimos VFR Especial (Special VFR)",
+    "stem": "¿Cuáles son los mínimos reglamentarios para autorizar un vuelo VFR Especial según el MOA 8.1.4 y SERA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Visibilidad mínima en tierra de 1.500 m (u 800 m para helicópteros), libre de nubes y a la vista del suelo, y techo no inferior a 600 pies",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Visibilidad de 500 m y techo de nubes de 100 pies en cualquier clase de espacio aéreo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Visibilidad de 5.000 m con obligatoriedad de llevar dos copilotos en cabina",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No existen mínimos para VFR Especial pudiendo operar con visibilidad cero",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El VFR Especial en CTR requiere: visibilidad en tierra $\\ge 1.500\text{ m}$, techo $\\ge 600\text{ ft}$, libre de nubes y a la vista del terreno (MOA 8.1.4 / SERA).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-022",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.5.1 - Presentación de Mínimos en Cartografía LIDO",
+    "stem": "¿Cómo se presentan los mínimos de aproximación en las cartas LIDO utilizadas por Binter según el MOA 8.1.5?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En una tabla estandarizada que desglosa DA/H o MDA/H y RVR/CMV requerido según la categoría de aeronave (A, B, C, D) y tipo de aproximación",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En un texto corrido en letra cursiva al pie de página sin diferenciar categorías de aeronave",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mediante códigos de barras que deben ser escaneados con el teléfono personal del comandante",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Exclusivamente en formato de audio sintetizado transmitido por la frecuencia de torre",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las cartas LIDO presentan los mínimos de forma tabular y estructurada por categoría de aeronave, tipo de aproximación y ayudas visuales operativas (MOA 8.1.5).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-023",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.5.2 - Aplicación de Mínimos por el Comandante en Vuelo",
+    "stem": "Al preparar una aproximación por instrumentos, ¿qué mínimo debe seleccionar y ajustar el comandante en los instrumentos de cabina?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El mínimo correspondiente a la Categoría C (o categoría aplicable a la velocidad de aproximación real) reflejado en la carta LIDO vigente",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El mínimo más bajo de la Categoría A independientemente de la velocidad real de la aeronave",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Un valor arbitrario fijado en 100 pies para todas las aproximaciones del año",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El mínimo de Categoría E para garantizar que nunca se pueda completar el aterrizaje",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.5 exige ajustar los mínimos correspondientes a la categoría de la aeronave (Cat C para E195-E2) o categoría superior si la velocidad de aproximación supera el rango de Cat C.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-024",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.2 - Incremento de Categoría de Aeronave por Masa o Configuración Anormal",
+    "stem": "Si por fallo de slats/flaps o sobrepeso la velocidad de aproximación supera los 140 kt (límite superior de Cat C), ¿qué mínimos deben aplicarse según MOA 8.1.3.2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deben aplicarse los mínimos de la **Categoría D** (o la categoría correspondiente a la velocidad real de aproximación prevista)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se mantienen los mínimos de Categoría A para acelerar la toma de contacto con la pista",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Está prohibido aterrizar debiendo eyectar combustible hasta recuperar la velocidad de Cat C",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se divide el RVR publicado entre dos por mayor velocidad de penetración en la niebla",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.3.2 establece que si por configuración anormal o masa la velocidad $V_{at}$ excede el límite de su categoría nominal (140 kt en Cat C), deben aplicarse los mínimos de la categoría superior (**Cat D**).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-025",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.3 - Transmisómetros RVR Requeridos para Despegue con RVR < 150 m",
+    "stem": "Para un despegue LVTO con RVR inferior a 150 m, ¿cuántos puntos de medición RVR (transmisómetros) deben estar operativos según el MOA 8.1.3.3?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Al menos el RVR de toma de contacto (TDZ) y el de punto medio (MID), siendo todos ellos de valor igual o superior al mínimo aplicable",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Únicamente el RVR del extremo final de pista (Stop End) sin importar el punto de contacto",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No se requiere ningún transmisómetro si el comandante dispone de buena visión diurna",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Basta con una estimación visual del señalero de pista desde el vehículo de guiado Follow-me",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para LVTO con RVR < 150 m, el MOA 8.1.3.3 requiere información RVR del punto de toma (TDZ) y punto medio (MID), cumpliendo todos los puntos relevantes el mínimo aplicable.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-026",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.5 - Falla del Transmisómetro TDZ en Aproximación CAT I",
+    "stem": "Si durante una aproximación CAT I el transmisómetro de toma de contacto (TDZ) queda inoperativo, ¿puede sustituirse según el MOA 8.1.3?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sí, puede ser sustituido por el RVR del punto medio (MID) siempre que este cumpla el valor mínimo requerido para la aproximación",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "No, el fallo del transmisómetro TDZ obliga inmediatamente a desviar al alternativo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo si el avión aterriza antes de que la torre de control se percate de la avería técnica",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Sí, sustituyéndolo por la temperatura del punto de rocío dividida por diez",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La normativa EASA y MOA 8.1.3 permiten que el valor del transmisómetro de toma de contacto (TDZ) sea sustituido por el RVR del punto medio (MID) si el primero falla.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-027",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.4 - Mínimos de Altitud en Aproximaciones de No Precisión (NPA) Tipo A",
+    "stem": "En una aproximación Tipo A 2D (VOR, NDB, LOC, LNAV), ¿cuál es el límite inferior absoluto de la MDA/H según el MOA 8.1.3.4?",
+    "options": [
+      {
+        "id": "A",
+        "text": "La MDA/H no puede ser en ningún caso inferior a la OCA/H publicada por el Estado ni inferior a 250 pies sobre el umbral de pista",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "La MDA/H puede situarse a 50 pies sobre el terreno si la pista cuenta con sistema PAPI",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La MDA/H se sitúa libremente por el comandante durante el briefing de aproximación",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No existe límite de MDA/H pudiendo descender hasta el contacto con el asfalto",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.3.4 fija que la MDA/H para procedimientos 2D Tipo A nunca puede ser inferior a la OCA/H del Estado ni inferior a 250 ft de altura sobre el umbral (MDH $\\ge 250\text{ ft}$).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-028",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.4 - Mínimos de Visibilidad/RVR para Aproximaciones Tipo A",
+    "stem": "¿Cuál es el valor mínimo de RVR reglamentario para aproximaciones de no precisión Tipo A con instalaciones completas según MOA 8.1.3.4?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Generalmente no inferior a 750 metros (con FALS y CDFA) para aeronaves de Categoría C",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "300 metros con cualquier tipo de iluminación en pista",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "125 metros igual que en los despegues de baja visibilidad LVTO",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "5.000 metros en todas las aproximaciones sin guía vertical",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para aproximaciones Tipo A (2D) con CDFA e iluminación completa (FALS), el RVR mínimo publicado para Categoría C se sitúa en torno a **750 m** a **1.000 m** (MOA 8.1.3.4).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-029",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.5 - Luces de Eje de Aproximación en CAT II",
+    "stem": "Para autorizar una aproximación de precisión CAT II, ¿qué longitud mínima de sistema de luces de aproximación (ALS) se requiere?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sistema de luces de aproximación de alta intensidad de al menos 720 metros de longitud (o 900 m estándar OACI)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Una única luz intermitente blanca situada en la torre de comunicaciones",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Luces de balizamiento portátiles de 50 metros de longitud total",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No se requiere sistema de luces de aproximación si la pista dispone de marcas de pintura blanca",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las operaciones CAT II exigen un sistema de luces de aproximación de precisión de alta intensidad completo (HIALS de al menos **720 m a 900 m**) (MOA 8.1.3.5).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-030",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.6 - Conversión CMV durante el Día con Sistema HIALS",
+    "stem": "Si durante el día se reporta una visibilidad de 800 m en una pista equipada con HIALS y luces HIRL, ¿cuál es el CMV según la tabla de MOA 8.1.3.6?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1.200 m (800 m x factor 1.5 = 1.200 m CMV)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "1.600 m (800 m x factor 2.0 = 1.600 m CMV)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "800 m (sin incremento por ser de día)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "2.400 m (800 m x factor 3.0 = 2.400 m CMV)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Tabla MOA 8.1.3.6: Día con HIALS/HIRL $\rightarrow$ **Factor x 1.5** (800 m x 1.5 = **1.200 m CMV**).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-031",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.9 - Mínimos para Aproximación con Guía Visual en Circuito (Circling)",
+    "stem": "¿Cuáles son los mínimos típicos de MDH y visibilidad para una maniobra de Circling en aeronaves Categoría C según el MOA 8.1.3.9?",
+    "options": [
+      {
+        "id": "A",
+        "text": "MDH mínima de 600 pies (o MDA según OCA) y visibilidad meteorológica no inferior a 2.400 metros",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "MDH de 100 pies y visibilidad de 500 metros en viraje continuo ceñido a la pista",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "MDH de 50 pies y visibilidad de 300 metros con el piloto automático conectado",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "MDH de 1.500 pies y visibilidad de 10 kilómetros en todo tipo de aeronaves",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para aeronaves de Categoría C, los mínimos estándar de aproximación en circuito visual (Circling) son: **MDH $\\ge 600\text{ ft}$** y **Visibilidad $\\ge 2.400\text{ m}$** (MOA 8.1.3.9).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-032",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.9 - Pérdida de Referencias Visuales durante el Circling",
+    "stem": "Si durante la maniobra de Circling se pierden las referencias visuales con la pista, ¿cuál es la acción obligatoria según el MOA 8.1.3.9?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar inmediatamente la aproximación frustrada virando hacia la pista de aterrizaje y ascender siguiendo el procedimiento publicado de la pista inicial",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Continuar descendiendo a ciegas confiando en avistar el asfalto en el último instante",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Efectuar un viraje de 180° en sentido contrario al circuito y descender a 200 pies",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Apagar los motores y buscar un campo no preparado fuera del perímetro del aeropuerto",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Ante la pérdida de contacto visual en Circling, el procedimiento mandatorio es: iniciar ascenso de frustrada virando inicialmente hacia la pista para incorporarse al frustrado publicado (MOA 8.1.3.9).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-033",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.10 - Aproximación Visual Directa (Visual Approach)",
+    "stem": "¿Qué condiciones meteorológicas mínimas exige el MOA 8.1.3.10 para autorizar o iniciar una Aproximación Visual directa?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Techo de nubes no inferior al mínimo de aproximación inicial/FAF (mínimo 1.500 ft AAL) y visibilidad en vuelo no inferior a 5.000 m",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Visibilidad de 1.000 m y techo de nubes a 100 pies sobre la cabecera",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cualquier condición de niebla densa siempre que el radar del aeropuerto esté operando",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No se requiere techo de nubes si el vuelo se realiza durante el crepúsculo vespertino",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para una Aproximación Visual, el MOA 8.1.3.10 y CAT.OP.MPA.110 requieren: visibilidad $\\ge 5.000\text{ m}$ y techo $\\ge 1.500\text{ ft}$ (o por encima de la altitud del fojo de aproximación inicial).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-034",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.3 - Luces de Punto de Toma de Contacto (TDZ Lights)",
+    "stem": "¿En qué categoría de aproximación instrumental son obligatorias las luces de zona de toma de contacto (TDZ) según el MOA 8.1.3?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Son obligatorias para aproximaciones de precisión de Categoría II y Categoría III",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Son obligatorias únicamente para aproximaciones visuales diurnas de aviones ligeros",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No son obligatorias en ningún aeropuerto al ser un elemento puramente decorativo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Son obligatorias para despegues con viento en cola superior a 10 nudos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las luces de zona de toma de contacto (TDZ) y luces de eje de pista (CL) son equipamiento obligatorio de infraestructura para operaciones **CAT II y CAT III** (MOA 8.1.3.5).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-035",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.4 - Compensación por Temperatura Fría en Mínimos de Altitud",
+    "stem": "Cuando la temperatura en el aeródromo es muy fría (< 0°C), ¿cómo afecta a las altitudes de aproximación y MDA/DA según MOA 8.1.3?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Los altímetros indican más altitud de la real (peligro de proximidad al suelo), requiriendo corregir al alza todas las altitudes mínimas del procedimiento",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Los altímetros indican menos altitud de la real, por lo que no es necesario aplicar correcciones",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se reduce la MDA publicada en 100 pies para compensar la mayor densidad del aire frío",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se desconectan los altímetros y se vuela la aproximación exclusivamente por tiempo cronometrado",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "A bajas temperaturas, el error altimétrico por temperatura fría hace que la altitud verdadera sea menor que la indicada, exigiendo sumar la corrección térmica de la tabla OACI/MOA a fijos, DA/MDA y altitudes mínimas.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-036",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.4 - Altitud Mínima en Tramo de Aproximación Frustrada con Motor Inoperativo",
+    "stem": "En el cálculo de mínimos de aproximación, ¿qué gradiente mínimo de ascenso con un motor inoperativo (OEI) debe garantizarse según el MOA 8.1.3?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Un gradiente neto de ascenso en frustrada de al menos 2.5% (o el gradiente publicado en la carta si este es superior)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Un gradiente negativo de descenso de -1.0% hacia el mar",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Un gradiente fijo del 10% en todas las categorías de peso",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No se requiere gradiente monomotor si los flaps se recogen a posición limpia",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los mínimos estándar de aproximación asumen un gradiente de aproximación frustrada de al menos **2.5% con fallo de motor**; si la carta exige un gradiente superior, se debe verificar en ePerf.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-037",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.6 - Requisitos de RVR vs Visibilidad Meteorológica",
+    "stem": "Cuando un aeródromo dispone de transmisómetro operativo y emite tanto RVR como visibilidad meteorológica en el METAR/SPECI, ¿cuál prevalece?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prevalece siempre el **RVR** para determinar la legalidad de la aproximación y el cumplimiento del Approach Ban",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Prevalece siempre la visibilidad meteorológica general estimada por el observador",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se hace un promedio aritmético de ambos valores para determinar el mínimo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El comandante elige verbalmente el valor que más favorezca el aterrizaje inmediato",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme al MOA 8.1.3 y normativa EASA, si se dispone del valor de **RVR reportado**, este tiene precedencia absoluta sobre la visibilidad meteorológica para evaluar los mínimos.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-038",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.5 - Falla del Piloto Automático durante Aproximación CAT II",
+    "stem": "Si durante una aproximación CAT II el sistema de piloto automático o acoplador de aproximación falla por debajo de 500 ft AGL sin HUD, ¿qué acción es obligatoria?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ejecutar inmediatamente una aproximación frustrada (Go-Around) al no disponer de guiado automático certificado para CAT II",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Continuar la aproximación de forma manual hasta el umbral intentando aterrizar en el centro de pista",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Apagar los directores de vuelo y esperar a que el copiloto tome los mandos visuales",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar autorización a la torre de control para aterrizar en la calle de rodaje paralela",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En CAT II, si se pierde el acoplamiento del piloto automático por debajo de la altitud mínima de desacoplamiento/alerta sin autorización de vuelo manual por HUD, la maniobra frustrada es mandatoria (MOA 8.1.3.5).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-039",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.1 - Mínimos de Utilización Establecidos por el Estado (OCA/H)",
+    "stem": "¿Qué relación existe entre la OCA/H publicada por el Estado del aeródromo y la DA/MDA del operador según el MOA 8.1.3.1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "La DA/MDA del operador nunca puede ser inferior a la OCA/H del Estado, debiendo ser igual o superior a esta",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "La DA/MDA del operador puede ser 200 pies inferior a la OCA/H si el avión es moderno",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La OCA/H del Estado es meramente informativa y puede ser ignorada en vuelos comerciales",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El operador establece sus mínimos sin necesidad de consultar las publicaciones oficiales del Estado",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.3.1 estipula que los mínimos de utilización del operador no serán en ningún caso inferiores a la OCA/H establecida y promulgada por el Estado del aeródromo en su AIP.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-040",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.3 - Luces de Borde de Pista de Alta Intensidad (HIRL)",
+    "stem": "¿Qué espaciado máximo longitudinal deben tener las luces de borde de pista (HIRL) para autorizar despegues con RVR < 400 m según MOA 8.1.3?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Un espaciado máximo de 60 metros entre luces a lo largo de toda la longitud de la pista",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Un espaciado de 250 metros colocado exclusivamente en las salidas de pista",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Un espaciado variable de hasta 500 metros según la orografía del terreno",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No existe límite de espaciado si las bombillas tienen una potencia de 100 vatios",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El estándar OACI Anexo 14 y MOA 8.1.3 exigen que las luces de borde de pista (HIRL) tengan un espaciado longitudinal **no superior a 60 metros** para operaciones con baja visibilidad.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-041",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.4 - Aproximaciones RNP APCH con Mínimos LNAV/VNAV",
+    "stem": "En una aproximación RNP APCH con guía vertical barométrica (Baro-VNAV), ¿qué tipo de mínimo se utiliza?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Altitud de Decisión (DA/H) como procedimiento 3D, debiendo respetar los límites de temperatura de operación del sistema Baro-VNAV",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mínima Altitud de Descenso (MDA/H) fija sin posibilidad de utilizar decisión continua",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mínimo visual exclusivo para operaciones de vuelo con planeadores",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No requiere mínimos si el receptor GPS tiene sintonizados 12 satélites",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las aproximaciones RNP APCH a mínimos LNAV/VNAV se vuelan como operaciones **3D con DA/H**, aplicando las restricciones de temperatura Baro-VNAV publicadas en la carta (MOA 8.1.3.4).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-042",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.4 - Aproximaciones RNP APCH a Mínimos LNAV (Solo Guía Lateral)",
+    "stem": "Si una aproximación RNP APCH se vuela únicamente con guía lateral (mínimos LNAV), ¿qué tipo de mínimo se publica y cómo se vuela?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mínimo de MDA/H (operación 2D), volándose con técnica CDFA calculando una Altitud de Decisión Derivada (DDA = MDA + 50 ft)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mínimo de DH fija a 100 pies igual que en aproximaciones de precisión CAT II",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mínimo visual de 10 kilómetros sin necesidad de referencia al perfil de descenso",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mínimo de crucero FL100 sin descenso por debajo de la altitud de transición",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los mínimos LNAV son operaciones 2D con **MDA/H**, debiendo aplicarse la técnica CDFA con DDA para no perforar la MDA publicada (MOA 8.1.3.4).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-043",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.5 - RVR Mínimo para CAT I con Sistema ALS Inoperativo (No ALS)",
+    "stem": "Si en una pista con ILS CAT I el sistema de luces de aproximación está totalmente inoperativo (NO ALS), ¿cuál es el RVR mínimo aplicable?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El RVR mínimo se incrementa a **1.200 metros** (o visibilidad de 1.200 m) para Categoría C",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se mantiene el RVR estándar de 550 metros sin aplicar ninguna penalización",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El RVR mínimo se reduce a 300 metros por no haber deslumbramiento de luces",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La aproximación ILS queda prohibida debiendo realizarse obligatoriamente una aproximación NDB",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con las tablas de instalaciones degradadas del MOA 8.1.3 y LIDO, en CAT I sin luces de aproximación (NO ALS), el RVR mínimo se incrementa a **1.200 m**.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-044",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.5 - RVR Mínimo para CAT I con Sistema ALS Básico (BALS)",
+    "stem": "Si el sistema de luces de aproximación disponible es básico (BALS, longitud entre 210 m y 419 m), ¿cuál es el RVR mínimo en CAT I?",
+    "options": [
+      {
+        "id": "A",
+        "text": "RVR no inferior a **1.000 metros** para aeronaves de Categoría C",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "RVR de 550 metros idéntico al sistema de alta intensidad completo (FALS)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "RVR de 125 metros igual que en los despegues de baja visibilidad",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "RVR de 3.000 metros en todas las aproximaciones con directores de vuelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Con sistema de luces básico (BALS), el RVR mínimo para CAT I en Categoría C se fija reglamentariamente en **1.000 m** (MOA 8.1.3.5 / LIDO).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-045",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.3 - Despegue Diurno sin Iluminación de Pista",
+    "stem": "En operaciones de despegue diurno sin ninguna iluminación de pista pero con marcas de eje visibles, ¿cuál es el RVR/visibilidad mínima para Cat C?",
+    "options": [
+      {
+        "id": "A",
+        "text": "RVR / visibilidad de **400 metros** (o 500 m según la reglamentación aplicable)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "RVR de 125 metros con uso de la brújula magnética de emergencia",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "RVR de 50 metros si el sol se encuentra en el cenit",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "RVR de 2.000 metros con presencia obligatoria de un bombero en cabecera",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para despegues diurnos con marcas de eje pero sin luces de pista (NO LIGHTS), el mínimo reglamentario para Categoría C es **RVR / Visibilidad 400 m** (MOA 8.1.3.3).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-046",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.8 - Desconexión del Piloto Automático en CAT I",
+    "stem": "En una aproximación CAT I volada con piloto automático acoplado, ¿a qué altitud máxima debe desconectarse si no se realiza aterrizaje automático?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A la altitud mínima de desacoplamiento del piloto automático especificada en el AFM (o en la DA/H antes de la toma manual)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "A 10.000 pies durante el descenso para mantener mayor sensibilidad táctil",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En el momento de tocar la pista con las ruedas del tren principal",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Después de apagar los motores en el puesto de estacionamiento de la terminal",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El piloto automático debe desconectarse a o antes de alcanzar la altitud mínima de uso del AP según AFM (típicamente a la DA/H o 50 ft AGL) para la toma manual (MOA 8.1.3).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-047",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.2 - Efecto de la Masa de Aterrizaje en el Cálculo de Vat",
+    "stem": "¿Por qué el MOA 8.1.3.2 establece que la Vat se calcula a la 'máxima masa certificada de aterrizaje' (MLW)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Para garantizar que la categorización de la aeronave sea fija y conservadora, cubriendo cualquier peso operativo real inferior",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Para obligar a que todos los aviones aterricen siempre con el peso máximo estructural",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Para reducir las tasas aeroportuarias de navegación aérea en aproximación",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Para impedir que las aeronaves con poco pasaje puedan aterrizar en aeropuertos insulares",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La categorización estándar por $V_{at}$ se calcula a MLW para proporcionar una clasificación formal conservadora y permanente de la aeronave (MOA 8.1.3.2 / CAT.OP.MPA.320).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-048",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.5 - Definición de Operación de Aproximación 3D",
+    "stem": "De acuerdo con la reglamentación EASA y MOA 8.1.3.1, ¿qué define formalmente a una 'operación de aproximación por instrumentos 3D'?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Una aproximación por instrumentos que utiliza tanto guía lateral como guía vertical calculada o transmitida",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Una aproximación que se realiza con gafas tridimensionales estereoscópicas en cabina",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cualquier aproximación visual donde se observen simultáneamente tres pistas activas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Una aproximación frustrada que incluye tres virajes completos de 360 grados",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las operaciones **3D** son aquellas aproximaciones instrumentales que disponen simultáneamente de **guiado lateral y guiado vertical** (ILS, GLS, LPV, Baro-VNAV) con DA/H (MOA 8.1.3.1).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-049",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.1 - Definición de Operación de Aproximación 2D",
+    "stem": "¿Cómo se define formalmente una 'operación de aproximación por instrumentos 2D' según el MOA 8.1.3.1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Una aproximación por instrumentos que utiliza exclusivamente guía lateral de navegación sin guiado vertical instrumental",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Una aproximación que se vuela en un simulador plano de dos dimensiones sin movimiento",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Un procedimiento de salida instrumental que cuenta con dos rumbos magnéticos paralelos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Un aterrizaje de emergencia realizado sobre dos ruedas del tren principal",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las operaciones **2D** son aquellas aproximaciones instrumentales que utilizan **únicamente guía lateral** (VOR, NDB, LOC solo, LNAV) con MDA/H (MOA 8.1.3.1).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-MIN-050",
+    "subject_id": "moa_minimos_operacion",
+    "learning_objective": "MOA 8.1.3.3 - Autorización Operacional LVO en las Especificaciones de Operación (OpSpecs)",
+    "stem": "¿Qué documento oficial de la compañía autoriza la realización de operaciones de despegue con baja visibilidad (LVTO) y CAT II?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Las Especificaciones de Operación (OpSpecs) asociadas al Certificado de Operador Aéreo (AOC) expedidas por AESA",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "La tarjeta de embarque plastificada de la tripulación técnica en el aeropuerto",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El catálogo comercial de venta de billetes de la temporada de verano",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El recibo de pago del seguro obligatorio de responsabilidad civil de aeronaves",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las operaciones especiales LVO (LVTO, CAT II, créditos operacionales) requieren aprobación expresa en las **OpSpecs** del AOC del operador emitidas por la Autoridad Aeronáutica (MOA 8.1.3).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  }
+]

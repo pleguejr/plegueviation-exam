@@ -1,0 +1,1852 @@
+[
+  {
+    "id": "CMD-MOA-MET-001",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6 - Fuentes Oficiales y Validez de Informes Meteorológicos",
+    "stem": "Según el MOA 8.1.6, ¿cuáles son las fuentes oficiales utilizadas por Binter y cuál es la vigencia máxima admisible de los METAR/TAFOR para el despacho?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fuentes NAVIAR, AEMET y NOAA; los METAR y TAFOR deben tener una vigencia no superior a 1 hora desde su publicación en el despacho",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cualquier aplicación meteorológica gratuita de smartphone con informes de hasta 24 horas de antigüedad",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Exclusivamente el canal meteorológico de televisión local con vigencia semanal",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Servicios privados de predicción astronómica con informes emitidos cada 12 horas",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.6 establece que Binter Airlines utiliza como fuentes oficiales **NAVIAR, AEMET y NOAA**, siendo la vigencia de los METAR y TAFOR no superior a **1 hora** desde su publicación para la preparación y despacho del vuelo.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica (Pág. 8.1-49)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-002",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.1 - Requisitos Meteorológicos para Iniciar el Despegue (CAT.OP.MPA.245)",
+    "stem": "De acuerdo con el MOA 8.1.6.1 y CAT.OP.MPA.245, ¿bajo qué condición meteorológica puede el comandante iniciar el despegue en un vuelo IFR?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cuando disponga de información que indique que las condiciones meteorológicas previstas en destino o alternativos en la ETA serán iguales o mejores que los mínimos de planificación",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Siempre que la visibilidad en el aeródromo de salida sea superior a 10 km, independientemente de que el destino esté bajo cero absoluto",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Únicamente si no existen nubes en todo el espacio aéreo de la ruta de crucero",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cuando el copiloto confirme visualmente que no hay relámpagos en el horizonte antes de iniciar el rodaje",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "CAT.OP.MPA.245 y MOA 8.1.6.1 estipulan que en vuelos IFR el Comandante solo iniciará el despegue si las condiciones meteorológicas previstas en el momento de la llegada (ETA) al aeródromo de destino o alternativos son **iguales o mejores que los mínimos de planificación aplicables**.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6.1 Conceptos Generales (Pág. 8.1-49)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-003",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.2 - Cobertura Vertical de los Mapas de Tiempo Significativo (SIGWX)",
+    "stem": "Según el MOA 8.1.6.2, ¿qué capas de altitud cubren habitualmente las cartas de tiempo significativo (SIGWX) proporcionadas en el sobre de vuelo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nivel medio (Mid Level entre FL100 y FL250) y Nivel alto (High Level entre FL250 y FL450/FL630)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Nivel de superficie exclusivamente (entre el nivel del mar y 1.000 pies AGL)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Nivel estratosférico superior (únicamente entre FL600 y FL900)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Capa límite de fricción de rampa (entre 0 y 50 metros de altura)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.6.2 indica que las cartas de tiempo significativo cubren dos áreas principales:\n- **Mid Level SIGWX**: entre FL100 y FL250.\n- **High Level SIGWX**: entre FL250 y FL450 (o FL630).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6.2 Mapas de Tiempo Significativo (Pág. 8.1-50)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-004",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.3 - Interpretación del Grupo TEMPO en Pronósticos TAF",
+    "stem": "¿Qué significado operativo tiene el grupo de cambio 'TEMPO' en un pronóstico TAF según el MOA 8.1.6 y las normas OACI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fluctuaciones temporales de las condiciones que se prevé duren menos de 1 hora en cada ocasión y en total menos de la mitad del periodo de validez",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Un cambio permanente e irreversible de las condiciones meteorológicas que se mantendrá durante los siguientes 3 días",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Una advertencia de cierre definitivo del aeropuerto por obras de pavimentación",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Un indicador de que la temperatura ambiente aumentará en 10 grados cada 15 minutos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El indicador **TEMPO** describe fluctuaciones temporales de las condiciones meteorológicas que se espera duren **menos de 1 hora en cada caso** y que, en conjunto, abarquen **menos de la mitad del período** del pronóstico indicado.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-005",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.3 - Interpretación del Grupo BECMG en Pronósticos TAF",
+    "stem": "En un informe TAF, ¿cómo se interpreta la evolución de las condiciones meteorológicas bajo el grupo 'BECMG'?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Una transición gradual o regular hacia nuevas condiciones que comenzará al inicio del intervalo y se completará al final del período especificado",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Un empeoramiento momentáneo que desaparece en menos de 5 minutos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Una probabilidad matemática del 20% de que ocurra lluvia moderada",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Un aviso de presencia de aves migratorias en las proximidades del umbral",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El grupo **BECMG** describe una evolución gradual o regular donde las condiciones meteorológicas cambian hacia los nuevos valores a lo largo del período indicado, alcanzando el estado definitivo al final del intervalo.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-006",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.3 - Probabilidades PROB30 y PROB40 en Planificación de Destino",
+    "stem": "¿Cómo se consideran los grupos de probabilidad PROB30 / PROB40 de condiciones por debajo de mínimos en la planificación del destino según el MOA 8.1.6 y 8.1.7?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Si existe PROB30/40 de condiciones inferiores a mínimos en destino, se requiere designar un aeródromo alternativo de destino adecuado adicional",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Permite cancelar automáticamente el alternativo de destino y volar sin combustible de reserva",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Obliga a suspender todos los vuelos de la compañía aérea durante un periodo de 24 horas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se ignoran por completo al considerarse probabilidades estadísticamente insignificantes",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.6 y las reglas de planificación estipulan que ante probabilidades (PROB30/40 o TEMPO) de mínimos degradados en destino, se debe asegurar la designación de alternativos adecuados con margen operacional.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-007",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.4 - Mensajes SIGMET (Significant Meteorological Information)",
+    "stem": "¿Qué tipo de fenómenos meteorológicos en ruta justifican la emisión de un mensaje SIGMET según el MOA 8.1.6?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tormentas severas u oscurecidas (EMBD/SQL TS), turbulencia severa (SEV TURB), engelamiento severo (SEV ICE), ondas de montaña severas o cenizas volcánicas (VA)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Llovizna débil intermitente con visibilidad superior a 15 kilómetros",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Viento en calma en el nivel de crucero con temperatura estándar ISA",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Presencia de nubes cirros altas a más de 40.000 pies de altitud",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los mensajes **SIGMET** advierten sobre fenómenos peligrosos para la seguridad de todas las aeronaves en ruta: tormentas severas/embebidas, turbulencia severa, engelamiento severo, nubes de cenizas volcánicas y ondas orográficas severas.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-008",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.4 - Mensajes AIRMET y GAMET",
+    "stem": "¿Cuál es el ámbito operativo y la altitud de aplicación de los informes AIRMET y pronósticos GAMET según el MOA 8.1.6?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Están orientados a la seguridad de vuelos a baja cota (por debajo de FL100 / FL150 en zonas montañosas)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Son exclusivos para vuelos espaciales supersónicos por encima de FL600",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se emiten únicamente para el guiado de barcos en travesías transatlánticas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Son emitidos exclusivamente para regular la temperatura del aire acondicionado en plataforma",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los pronósticos **GAMET** y avisos **AIRMET** cubren fenómenos meteorológicos significativos a **baja cota** (generalmente por debajo de FL100 o FL150 en terreno montañoso).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-009",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.5 - Cizalladura del Viento (Windshear) en Despegue y Aproximación",
+    "stem": "¿Cómo define el MOA 8.1.6 la cizalladura del viento (Windshear) y cuál es su principal riesgo operacional?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cambio brusco de dirección y/o velocidad del viento en corta distancia horizontal/vertical, pudiendo causar pérdidas graves de sustentación y control",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Una suave brisa térmica marina que facilita el ascenso inicial de la aeronave",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El incremento gradual de la temperatura ambiente al descender hacia el nivel del mar",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La variación de la presión atmosférica estándar de 1013.25 hPa a 1015 hPa",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Windshear** es una variación repentina del vector viento (fuerza o dirección) en corta distancia, representando una amenaza crítica durante el despegue y aproximación final por riesgo de pérdida de sustentación.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-010",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.5 - Maniobra de Escape de Cizalladura (Windshear Escape Maneuver)",
+    "stem": "Ante una advertencia reactiva de 'WINDSHEAR' o degradación severa en aproximación, ¿cuál es la acción inmediata según el MOB y SOPM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desconectar AP/AT, aplicar empuje máximo TOGA de inmediato, rotar hacia la actitud de cabezo de escape (Flight Director) y NO cambiar configuración de flaps ni tren",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Reducir gases a ralentí IDLE y recoger inmediatamente el tren de aterrizaje",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Efectuar un viraje ceñido de 90° con flaps en posición completa de aterrizaje",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Continuar la aproximación estableciendo una tasa de descenso de -2.000 ft/min",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La maniobra de escape de Windshear exige: desconexión inmediata, empuje **TOGA máximo**, seguir barras de escape del FD/cabeceo de prevención de pérdida y **mantener configuración fija (no tocar tren ni flaps)** hasta salir de la cizalladura.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-011",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.5 - Microbursts y su Estructura Típica",
+    "stem": "¿Qué secuencia de viento experimenta una aeronave que atraviesa una microrráfaga (Microburst) en aproximación final?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fuerte viento de cara inicial (aumento de sustentación/IAS), seguido de fuerte corriente descendente (Downdraft) y severo viento de cola (pérdida crítica de sustentación)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Viento en calma absoluto durante toda la trayectoria de aproximación",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Viento lateral constante de 5 nudos que no altera la senda de planeo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Ascenso térmico continuo que eleva el avión automáticamente hasta el nivel de crucero",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Un **Microburst** genera: 1° Incremento brusco de IAS por viento de cara, 2° Fuerte corriente descendente (Downdraft $\\ge 3.000\text{ ft/min}$), y 3° Severo viento en cola con pérdida crítica de IAS y sustentación.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-012",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.6 - Tipos de Hielo: Hielo Granular (Rime Ice)",
+    "stem": "¿En qué condiciones se forma el hielo granular (Rime Ice) y cuáles son sus características físicas según el MOA 8.1.6?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se forma por congelación instantánea de gotas pequeñas a temperaturas bajas (<-10°C), aspecto blanco opaco, rugoso y quebradizo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se forma por agua líquida a +25°C con aspecto transparente y textura aceitosa",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se forma exclusivamente en el interior de los depósitos de combustible por falta de aditivo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se forma en la pista de aterrizaje debido al paso repetido de los neumáticos de los camiones",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **hielo granular (Rime Ice)** se produce al congelarse instantáneamente gotas subfundidas pequeñas a bajas temperaturas ($-10^\\circ\text{C}$ a $-20^\\circ\text{C}$), atrapando aire y dando un aspecto blanco opaco y rugoso.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-013",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.6 - Tipos de Hielo: Hielo Claro (Clear Ice)",
+    "stem": "¿Por qué el hielo claro (Clear Ice) es considerado el tipo de engelamiento más peligroso para el perfil alar según el MOA 8.1.6?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se forma con gotas grandes a temperaturas cercanas a 0°C, fluye antes de congelarse formando una capa transparente, densa, pesada y difícil de desprender",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Porque mejora la sustentación del ala obligando al avión a ascender sin control",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Porque evapora instantáneamente el combustible de los depósitos alares",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Porque bloquea las comunicaciones de radio en frecuencia VHF exclusivamente",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **hielo claro (Clear Ice)** es el más peligroso porque las gotas grandes se extienden hacia atrás antes de congelarse (runback), creando capas gruesas, transparentes, muy pesadas y tenaces que alteran drásticamente el perfil aerodinámico.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-014",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.6 - Salida Inmediata de Condiciones de Engelamiento Severo",
+    "stem": "Si la aeronave encuentra condiciones de engelamiento severo que sobrepasan la capacidad del sistema antihielo/deshielo, ¿qué acción exige el MOA/MOB?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Notificar a ATC y abandonar el nivel de vuelo o la zona de engelamiento de inmediato (ascendiendo, descendiendo o virando hacia aire más cálido o seco)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Apagar los sistemas antihielo para evitar el sobrecalentamiento de los motores",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Acelerar a velocidad VNE con flaps extendidos para romper el hielo por vibración",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mantener la espera en el interior de la nube engelante durante al menos 45 minutos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Ante engelamiento severo (acumulación superior a la capacidad del sistema de protección), es mandatorio **abandonar inmediatamente el área de engelamiento** coordinando con ATC un cambio de nivel o rumbo.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-015",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.7 - Turbulencia en Aire Claro (Clear Air Turbulence - CAT)",
+    "stem": "¿Dónde se localiza con mayor frecuencia la Turbulencia en Aire Claro (CAT) y cómo se detecta según el MOA 8.1.6?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En las proximidades de las corrientes en chorro (Jet Streams), zonas de fuerte cizalladura de viento y tropopausa; no es detectable por el radar meteorológico",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En el interior de bancos de niebla densa a nivel del mar; se detecta mediante el altímetro",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Exclusivamente dentro de los hangares cerrados de mantenimiento",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En el centro exacto del ojo de los huracanes tropicales a baja velocidad",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La **CAT (Clear Air Turbulence)** ocurre a grandes altitudes en zonas de fuerte cizalladura térmica/baroclínica junto al Jet Stream, carece de gotas de agua y por tanto **no es visible en el radar meteorológico convencional**.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-016",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.7 - Procedimiento Operativo al Atravesar Turbulencia Severa",
+    "stem": "Al penetrar en una zona de turbulencia severa en crucero, ¿cuál es la técnica de pilotaje prescrita en el MOA/MOB?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ajustar la velocidad de penetración en turbulencia (Vturb / VRA), mantener actitud de vuelo con suavidad y no intentar corregir rígidamente las variaciones de altitud",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Acelerar a velocidad máxima VMO para cruzar la turbulencia en el menor tiempo posible",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aplicar deflexiones completas de timón y alerones para mantener la altitud al pie de la letra",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Extender el tren de aterrizaje y flaps completos a nivel de vuelo FL350",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En turbulencia severa: ajustar **velocidad de penetración en turbulencia ($V_{RA} / M_{RA}$)**, priorizar el **control de actitud de vuelo** con movimientos suaves de mandos y permitir fluctuaciones de altitud sin sobrecargar la estructura.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-017",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.8 - Separación Lateral Requerida de Nubes Cumulonimbus (CB)",
+    "stem": "De acuerdo con las buenas prácticas operacionales y el MOA 8.1.6, ¿qué distancia de separación lateral mínima debe mantenerse con un CB severo en crucero?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Al menos 20 NM de separación lateral por el lado de barlovento (upwind), e incrementar la distancia por sotavento (downwind) bajo el yunque",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Volar a menos de 100 metros del núcleo para aprovechar las corrientes térmicas ascendentes",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cruzar directamente por el centro del eco rojo del radar meteorológico",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mantener 1 NM de separación independientemente de la altitud y la intensidad del eco",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La regla estándar de evitación de tormentas en ruta exige **al menos 20 NM de separación lateral** de células convectivas severas (y mayor margen por sotavento del yunque para evitar granizo y turbulencia severa).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-018",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.9 - Nubes de Cenizas Volcánicas y Centros VAAC",
+    "stem": "¿Quién es el organismo internacional responsable de emitir avisos y mapas de dispersión de cenizas volcánicas (VAG) según el MOA 8.1.6?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Los Centros de Asesoramiento de Cenizas Volcánicas (VAAC - Volcanic Ash Advisory Centres) de la OACI",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El servicio de guardacostas marítimos de la zona costera más próxima",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La federación internacional de deportes aéreos recreativos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La oficina de turismo municipal de la isla volcánica correspondiente",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los **VAAC (Volcanic Ash Advisory Centres)** de la OACI monitorizan y emiten pronósticos de dispersión (VAG) y avisos para el tráfico aéreo ante erupciones volcánicas.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-019",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.9 - Acciones Inmediatas ante Encuentro Inadvertido con Cenizas Volcánicas",
+    "stem": "Si la aeronave penetra inadvertidamente en una nube de cenizas volcánicas en vuelo, ¿cuál es el procedimiento de emergencia mandatorio?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Virar 180° de inmediato para salir por la misma trayectoria, reducir empuje a ralentí (IDLE), conectar ignición continua y descender",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Acelerar los motores a empuje máximo de despegue (TOGA) para quemar la ceniza en la turbina",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Abrir las ventanillas de cabina para verificar la densidad del polvo exterior",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Apagar todos los generadores eléctricos y continuar en vuelo sin instrumentos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Ante cenizas volcánicas: **viraje inmediato de 180°** para abandonar la nube, **reducir empuje a IDLE** (evitar que la ceniza fundida vitrifique los álabes de turbina), conectar **ignición/antihielo**, desconectar autothrottle y descender.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-020",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.10 - Formato Global de Reporte de Estado de Pista (GRF)",
+    "stem": "¿Cómo se estructura el informe de estado de pista bajo el formato GRF adoptado por el MOA 8.1.6?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se compone del Código de Estado de Pista (RWYCC de 0 a 6 para cada tercio), tipo de contaminante, espesor en mm y porcentaje de cobertura",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Consiste en una nota de voz grabada por el jefe de bomberos del aeropuerto",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se clasifica únicamente como pista 'buena' o pista 'mala' sin datos cuantitativos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se emite un número telefónico al que la tripulación debe llamar desde el aire",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El formato **GRF (Global Reporting Format)** reporta la pista dividida en tercios: **RWYCC (0 a 6)** para cada tercio, **tipo de contaminante**, **espesor (mm)** y **porcentaje de cobertura (%)**.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-021",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.10 - Código de Estado de Pista RWYCC 6",
+    "stem": "En la matriz de evaluación del GRF, ¿qué condición de pista corresponde al código **RWYCC 6**?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pista seca (Dry Runway) con eficacia de frenado óptima",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Pista cubierta de hielo mojado con eficacia de frenado nula",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Pista con agua estancada de más de 15 mm de profundidad",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pista clausurada temporalmente por obras de balizamiento",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El código **RWYCC 6** corresponde a **Pista Seca (Dry)**, representando las mejores prestaciones de frenado y adherencia.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-022",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.10 - Código de Estado de Pista RWYCC 5",
+    "stem": "¿A qué tipo de superficie de pista corresponde típicamente el código **RWYCC 5** según la matriz GRF?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pista mojada (Wet Runway) con espesor de agua $\\le 3\text{ mm}$, o escarcha (Frost)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Pista cubierta de nieve seca compactada a -25°C",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Pista seca sin ningún tipo de residuo ni humedad",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pista con nieve fundente de 20 mm de espesor",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El código **RWYCC 5** corresponde a **Pista Mojada (Wet $\\le 3\text{ mm}$)**, humedad visible o escarcha (Frost), con eficacia de frenado buena.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-023",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.10 - Código de Estado de Pista RWYCC 2",
+    "stem": "¿Qué tipo de contaminante determina la asignación de un código **RWYCC 2** según el MOA 8.1.6?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Agua estancada (Standing Water > 3 mm) o nieve fundente (Slush > 3 mm) con eficacia de frenado media a pobre",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Pista seca y limpia a temperatura ambiente de 20°C",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Pista mojada con menos de 1 mm de humedad sin charcos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Capa de hielo seco a temperatura inferior a -30°C",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El código **RWYCC 2** corresponde a contaminantes fluidos profundos: **Standing Water > 3 mm** o **Slush > 3 mm**, con eficacia de frenado degradada (Medium to Poor).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-024",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.10 - Código de Estado de Pista RWYCC 0",
+    "stem": "¿Qué representa el código **RWYCC 0** en el formato GRF y qué consecuencia operativa inmediata tiene?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hielo mojado (Wet Ice), agua sobre nieve compactada o hielo contaminado; eficacia de frenado nula (LESS THAN POOR), prohibiéndose despegues y aterrizajes",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Pista seca recién asfaltada con autorización para despegues de máxima carga",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Pista con ligera bruma matinal sin impacto en la adherencia de los neumáticos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pista donde se autorizan exclusivamente aproximaciones visuales de helicópteros",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El código **RWYCC 0** representa condiciones críticas de adherencia nula (**Wet Ice**, agua sobre hielo/nieve compactada) con frenado *Less than Poor*; **las operaciones de despegue y aterrizaje quedan prohibidas**.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-025",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.3 - Decodificación METAR: Abreviatura 'FG' vs 'BR'",
+    "stem": "¿Cuál es el umbral de visibilidad que distingue a la niebla ('FG') de la neblina ('BR') en los informes METAR según MOA 8.1.6?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Niebla (FG) se reporta cuando la visibilidad es inferior a 1.000 metros; Neblina (BR) cuando la visibilidad es de 1.000 m a 5.000 m con humedad relativa $\\ge 80\\%$",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Niebla (FG) se reporta cuando la visibilidad es inferior a 50 metros exclusivamente",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Neblina (BR) se reporta únicamente cuando la temperatura ambiente es inferior a -10°C",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Ambos términos son idénticos y se eligen por sorteo en la estación meteorológica",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Norma OACI/MOA: **FG (Fog)** = Visibilidad **< 1.000 m**; **BR (Mist)** = Visibilidad entre **1.000 m y 5.000 m** con humedad alta.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-026",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.3 - Decodificación METAR: Fenómeno 'FZRA'",
+    "stem": "¿Qué fenómeno describe el descriptor meteorológico **FZRA** en un METAR y cuál es su implicación operacional?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lluvia engelante (Freezing Rain); gotas sobreenfriadas que se congelan instantáneamente al impactar la aeronave, causando engelamiento severo inmediato",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Niebla marina cálida sin riesgo de formación de hielo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Granizo blando que se disuelve antes de tocar el fuselaje",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Viento en calma con visibilidad reducida por humo industrial",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "**FZRA (Freezing Rain)** es lluvia sobreenfriada a temperatura bajo cero que se congela instantáneamente al chocar con la aeronave, generando engelamiento severo muy peligroso.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-027",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.3 - Decodificación METAR: Calima 'HZ'",
+    "stem": "En las operaciones en el archipiélago canario, ¿qué describe la abreviatura **HZ** en un METAR y qué partícula la genera?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Calima (Haze); suspensión de partículas secas de polvo/arena procedentes del desierto del Sáhara que reduce la visibilidad sin alta humedad",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Lluvia torrencial monzónica con granizo de gran tamaño",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Nieve granulada fina acumulada sobre las calles de rodaje",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Humo procedente de erupciones volcánicas submarinas profundas",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En Canarias, **HZ (Haze / Calima)** representa polvo sahariano en suspensión en aire seco que reduce la visibilidad horizontal.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-028",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.3 - Decodificación de Nubosidad: 'BKN' y 'OVC'",
+    "stem": "¿Qué cantidad de octas de cobertura nubosa definen formalmente un 'techo de nubes' (Ceiling) con BKN y OVC según el MOA 8.1.6?",
+    "options": [
+      {
+        "id": "A",
+        "text": "BKN (Broken) = 5 a 7 octas; OVC (Overcast) = 8 octas; constituyen techo de nubes oficial",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "FEW (1 a 2 octas) y SCT (3 a 4 octas) constituyen techo de nubes oficial",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "BKN representa 1 octa y OVC representa 2 octas de cobertura",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cualquier nube aislada a más de 20.000 pies constituye techo de nubes",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **techo de nubes (Ceiling)** se define formalmente como la altura de la base de la capa nubosa más baja que cubra más de la mitad del cielo (**BKN: 5-7 octas u OVC: 8 octas**).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-029",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.3 - Decodificación de Nubosidad: 'CAVOK'",
+    "stem": "¿Qué cuatro condiciones deben cumplirse simultáneamente para que un METAR reporte **CAVOK** según el MOA 8.1.6?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Visibilidad $\\ge 10\text{ km}$, sin nubes por debajo de 5.000 ft (o MSA, la mayor), sin CB ni TCU, y sin fenómenos de tiempo significativo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Visibilidad de 5 km, cielo totalmente cubierto a 1.000 pies y lluvia débil",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Temperatura superior a 30°C con viento en calma en todas las pistas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Disponibilidad de luces de eje de pista y parque de bomberos categoría 10",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "**CAVOK** requiere: 1° Visibilidad $\\ge 10\text{ km}$, 2° Sin nubes < 5.000 ft / MSA, 3° Sin nubes convectivas (no CB / no TCU), y 4° Sin tiempo significativo.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-030",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.5 - Indicadores de Cizalladura en el METAR: 'WS ALL RWY' / 'WS RWY21L'",
+    "stem": "Si un METAR incluye la anotación **WS ALL RWY**, ¿qué información transmite a la tripulación técnica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Presencia notificada o detectada de cizalladura del viento (Windshear) en las sendas de aproximación/despegue de todas las pistas del aeródromo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cierre de todas las pistas por vientos de más de 100 nudos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Obligación de aterrizar sin usar los sistemas de frenos hidráulicos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Indicación de que todas las pistas se encuentran completamente secas",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La anotación **WS ALL RWY** (o **WS RWYxx**) advierte oficialmente de la existencia de cizalladura del viento en las trayectorias de aproximación o despegue.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-031",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.3 - Tendencias de RVR en METAR: 'U', 'D', 'N'",
+    "stem": "En un grupo RVR de un METAR (ej. `R21L/0600U`), ¿qué indican las letras **U**, **D** y **N**?",
+    "options": [
+      {
+        "id": "A",
+        "text": "U = Upward (tendencia a mejorar), D = Downward (tendencia a empeorar), N = No change (sin cambios significativos)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "U = Unlimited, D = Dangerous, N = Night only",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "U = Urban area, D = Domestic flight, N = Non-commercial",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "U = Under repair, D = Dual channel, N = Normal operation",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La letra final del grupo RVR indica la tendencia en los últimos 10 minutos: **U (Upward / Mejorando)**, **D (Downward / Empeorando)** o **N (No change / Estable)**.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-032",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.3 - Prefijo 'M' o 'P' en Valores RVR de METAR",
+    "stem": "En un reporte RVR como `R03/M0050` o `R21/P2000`, ¿qué significan los prefijos **M** y **P**?",
+    "options": [
+      {
+        "id": "A",
+        "text": "M = Menor que el límite mínimo de medición del transmisómetro (ej. < 50 m); P = Mayor que el límite máximo de medición (ej. > 2.000 m)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "M = Medido manualmente por el señalero; P = Predicho por el modelo numérico",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "M = Militar; P = Pasajeros comerciales exclusivamente",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "M = Mínimo absoluto; P = Permitido el aterrizaje inmediato",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "**M (Minus)** indica que el valor real es inferior al rango mínimo del transmisómetro (ej. M0050 = < 50 m); **P (Plus)** indica que supera el rango máximo (ej. P2000 = > 2.000 m).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-033",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.6 - Temperatura y Riesgo de Formación de Hielo en Vuelo",
+    "stem": "¿En qué rango de temperatura estática/total (OAT/TAT) es más crítico el riesgo de formación de hielo estructural en nubes?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Entre 0°C y -20°C en presencia de humedad visible (nubes, niebla con visibilidad < 1.000 m o precipitaciones)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Entre +20°C y +40°C en aire completamente seco y cielo despejado",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Por debajo de -50°C donde el agua se encuentra exclusivamente en cristales secos sublimados",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "A cualquier temperatura siempre que la velocidad del avión sea inferior a 100 nudos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El rango más crítico de engelamiento estructural se sitúa entre **$0^\\circ\text{C}$ y $-20^\\circ\text{C}$ (especialmente $0^\\circ\text{C}$ a $-10^\\circ\text{C}$)** en presencia de humedad visible (nubes/lluvia).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-034",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.6 - Hielo por Cristales de Hielo a Gran Altitud (High Altitude Ice Crystals)",
+    "stem": "¿Qué fenómeno de engelamiento puede ocurrir a gran altitud (> FL300) cerca de nubes convectivas profundas y cómo afecta al motor?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ingestión de cristales de hielo diminutos que se funden en el compresor cálido y se recongelan en etapas interiores, pudiendo causar oscilaciones de empuje o parada",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Congelación de los neumáticos del tren de aterrizaje dentro de su alojamiento",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aumento de la potencia del motor en un 50% por efecto de sobrepresión",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Bloqueo inmediato del timón de profundidad por acumulación exterior",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "A gran altitud ($> \text{FL300}$), los cristales de hielo invisibles al radar pueden penetrar en el núcleo del motor, fundirse y recongelarse en las etapas interiores del compresor, causando *surge* o pérdida de potencia.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-035",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.10 - Código de Estado de Pista RWYCC 1",
+    "stem": "¿Qué contaminante invernal genera la asignación de un código **RWYCC 1** según el formato GRF del MOA 8.1.6?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hielo seco (Ice) a temperatura $\\le -15^\\circ\text{C}$ con eficacia de frenado pobre (Poor)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Pista seca con marcas de goma fresca en la zona de contacto",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Agua de lluvia ligera con espesor inferior a 0.5 mm",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Nieve seca suelta de 2 mm sobre asfalto rugoso",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El código **RWYCC 1** corresponde a **Hielo (Ice)** con eficacia de frenado **Pobre (Poor)**, requiriendo distancias de aterrizaje muy extendidas en ePerf.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-036",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.10 - Código de Estado de Pista RWYCC 3",
+    "stem": "¿A qué contaminante corresponde un código **RWYCC 3** en la evaluación de pista según el MOA 8.1.6?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nieve compactada (Compacted Snow a OAT > -15°C), o nieve húmeda (Wet Snow), con eficacia de frenado media (Medium)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Pista totalmente seca a mediodía",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Hielo mojado a 0°C con eficacia de frenado nula",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pista limpia con viento cruzado de 2 nudos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El código **RWYCC 3** corresponde a **Nieve compactada a temperatura $> -15^\\circ\text{C}$** o **nieve húmeda**, proporcionando una eficacia de frenado Media (Medium).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-037",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.10 - Código de Estado de Pista RWYCC 4",
+    "stem": "¿Qué condición invernal describe el código **RWYCC 4** según la matriz de evaluación GRF?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nieve compactada a muy baja temperatura (Compacted Snow a OAT $\\le -15^\\circ\text{C}$) con eficacia de frenado buena a media",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Agua estancada de 20 mm de profundidad sobre pista lisa",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Pista contaminada por derrame de combustible de aviación",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pista con barro denso en los primeros 100 metros",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El código **RWYCC 4** describe **Nieve compactada a temperaturas muy frías ($\\le -15^\\circ\text{C}$)** donde la adherencia es sustancialmente mejor (Good to Medium) que a temperaturas cercanas a 0°C.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-038",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.3 - Decodificación de Ráfagas de Viento en METAR (Grupo 'G')",
+    "stem": "Si un METAR indica viento `34025G40KT`, ¿cómo debe evaluar el comandante el viento para el límite de viento cruzado y de cola?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Debe considerar la ráfaga máxima de 40 nudos para calcular los componentes máximos de viento cruzado y de cola admisibles en ePerf/AFM",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Debe ignorar la ráfaga 'G40' y utilizar únicamente el viento medio sostenido de 25 nudos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Debe calcular el promedio entre 25 y 40 (32.5 nudos) sin consultar el manual",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Debe sumar ambos valores (65 nudos) para determinar la velocidad de despegue",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las limitaciones operacionales de viento cruzado y viento en cola del AFM/MOA exigen considerar la **ráfaga máxima reportada (Gust: 40 kt)** para verificar que no se exceden los límites demostrados.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-039",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.7 - Detección de Turbulencia por Ondas de Montaña (Mountain Waves)",
+    "stem": "¿Qué formaciones nubosas características advierten visualmente de la presencia de ondas de montaña y turbulencia severa a sotavento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nubes lenticulares (Altocumulus Lenticularis - ACSL) y nubes de rotor (Rotor clouds) paralelas a la cordillera",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Nubes estratos bajas a nivel del suelo sin movimiento horizontal",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Nubes cirrostratos delgadas y transparentes a gran altitud",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Niebla de radiación dispersa en los fondos de los valles llanos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las **nubes lenticulares (ACSL)** y las **nubes de rotor** son indicadores visuales inequívocos de ondas orográficas (Mountain Waves) con intensas corrientes verticales y turbulencia severa a sotavento.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-040",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.8 - Procedimiento de Evitación de Tormentas mediante Radar Meteorológico",
+    "stem": "Al utilizar el radar meteorológico para evitar tormentas convectivas, ¿qué regla de ganancia y tilt se recomienda en crucero según SOP/MOA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ajustar el Tilt periódicamente barriendo la base y el núcleo de las células, evitando volar por debajo de ecos intensos o sobrevolar yunques con poco margen",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Fijar la ganancia al mínimo y orientar el Tilt a +15° hacia el espacio exterior",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Apagar el radar de a bordo para evitar interferencias con los receptores GPS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Volar deliberadamente por el centro del eco morado para limpiar el parabrisas",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El uso profesional del radar meteorológico exige modular la ganancia (Auto/Cal) y escanear activamente con el **Tilt** para evaluar la reflectividad del núcleo y la estructura vertical de las células.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-041",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.3 - Decodificación METAR: Abreviatura 'SQ' vs 'TS'",
+    "stem": "¿Qué distingue a una turbonada (**SQ**) de una tormenta (**TS**) en la información meteorológica aeronáutica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "La turbonada (SQ) es un aumento repentino y violento del viento (al menos 16 kt alcanzando $\\ge 22\text{ kt}$ durante al menos 1 min); TS implica actividad eléctrica (trueno/relámpago)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "SQ representa una ligera brisa matinal sin precipitaciones",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "TS representa exclusivamente nevadas intensas en el polo norte",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Ambos términos se refieren únicamente a la presión barométrica en superficie",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "**SQ (Squall / Turbonada)** es un incremento brusco del viento de al menos 16 kt sostenido a $\\ge 22\text{ kt}$ durante $\\ge 1\text{ min}$; **TS (Thunderstorm)** requiere descargas eléctricas audibles/visibles.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-042",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.3 - Fenómeno 'FC' (Funnel Cloud / Tornado / Tromba)",
+    "stem": "Si un informe METAR o SPECI incluye el código **FC** o **+FC**, ¿qué fenómeno extremo se está reportando?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nube en forma de embudo (Funnel Cloud), tornado o tromba marina; peligro extremo de destrucción estructural y turbulencia violenta",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cielo completamente despejado con visibilidad infinita",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Formación de escarcha ligera sobre el borde de ataque",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cierre programado del servicio de repostaje por huelga",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El código **FC (Funnel Cloud)** describe tornados, mangas de agua o trombas marinas, representando un peligro aeronáutico extremo.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-043",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.1 - Conservación de la Información Meteorológica en el Sobre de Vuelo",
+    "stem": "¿Qué obligación de archivo documental establece el MOA 8.1.6.1 respecto a los informes meteorológicos del despacho?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Toda la información meteorológica de despacho (METAR, TAF, SIGWX, vientos) debe guardarse en el sobre de vuelo como parte de la documentación oficial",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Los informes deben destruirse en una trituradora de papel antes del despegue",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo se archiva si el vuelo se desvía a un país extranjero",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La información meteorológica no se conserva al considerarse de dominio público efímero",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.6.1 exige que toda la información meteorológica actualizada de origen, destino y alternativos se guarde en el sobre de vuelo y sea archivada conforme a la reglamentación.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-044",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.3 - Variabilidad de Dirección del Viento en METAR (ej. `310V050`)",
+    "stem": "Si un METAR reporta viento `36015KT 310V050`, ¿qué significa la sección `310V050`?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Que la dirección del viento varía entre 310 grados y 050 grados en el período de observación",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Que la visibilidad varía entre 310 metros y 50 metros según la pista",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Que la velocidad del viento aumentará a 310 nudos a las 05:00 UTC",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Que el aeropuerto está cerrado para aeronaves de más de 310 asientos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La notación `ddd V ddd` indica **variabilidad en la dirección del viento** (en este caso variando entre los rumbos $310^\\circ$ y $050^\\circ$).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-045",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.5 - Alerta Predictiva de Cizalladura (PWS - Predictive Windshear)",
+    "stem": "¿Cómo opera el sistema de alerta predictiva de cizalladura (PWS) en las aeronaves modernas de la flota según SOP/MOA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Utiliza el radar meteorológico en barrido automático a baja cota para detectar patrones de velocidad Doppler de microrráfagas por delante del avión",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Calcula la cizalladura analizando la vibración de las ruedas del tren de aterrizaje",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Requiere que el copiloto sople en un sensor de presión barométrica en cabina",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Funciona únicamente cuando la aeronave se encuentra apagada en el parking",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El sistema **PWS (Predictive Windshear)** procesa los retornos Doppler del radar meteorológico para generar avisos auditivos y visuales de cizalladura por delante de la trayectoria antes de entrar en ella.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-046",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.3 - Fenómeno 'DS' y 'SS' en Informes Meteorológicos",
+    "stem": "¿Qué significan los descriptores **DS** y **SS** en un METAR de la región norteafricana según el MOA 8.1.6?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DS = Tormenta de polvo (Duststorm); SS = Tormenta de arena (Sandstorm), con severa reducción de visibilidad y riesgo abrasivo para los motores",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "DS = Domestic Service; SS = Special Schedule",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "DS = Direct Shore; SS = South Sector",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "DS = Day Sunlight; SS = Sunset Sun",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En rutas norteafricanas/canarias, **DS (Duststorm)** y **SS (Sandstorm)** advierten de tormentas de polvo o arena con severo impacto en visibilidad y riesgo de erosión/obstrucción en turbinas.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-047",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.6 - Temperatura del Aire Total (TAT) y Calefacción de Sondas de Pitot",
+    "stem": "¿Por qué es obligatorio conectar la calefacción de sondas (Pitot/Static/AOA) antes del despegue independientemente de la OAT según el SOPM/MOA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Para prevenir el bloqueo inadvertido de sondas por humedad, condensación o hielo dinámico, garantizando indicaciones de velocidad fiables",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Para aumentar la temperatura del combustible en las alas durante el ascenso",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Para encender automáticamente las luces de cabina de pasajeros",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Para desconectar los frenos de estacionamiento de forma remota",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La calefacción de sondas pitot/estáticas y sensores AOA es mandatoria para evitar lecturas erróneas de velocidad e instrumentos por acumulación de hielo o agua en cualquier fase.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-048",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.10 - Evaluación de Contaminación de Pista Asimétrica",
+    "stem": "Si una pista presenta un tercio central seco (RWYCC 6) pero las cabeceras cubiertas de agua estancada (RWYCC 2), ¿cómo se reporta en el GRF?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Con tres códigos secuenciales correspondientes a cada tercio de pista: `2/6/2` en el formato de reporte estándar",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Con un único promedio numérico fijado en 3.33",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Omitiendo las cabeceras y reportando únicamente el tercio central",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cancelando el informe meteorológico al no haber uniformidad",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El sistema GRF reporta la condición de cada tercio de pista de forma independiente en el sentido de la carrera: por ejemplo **`2/6/2`** (Tercio 1 / Tercio 2 / Tercio 3).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-049",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6.3 - Código 'NOSIG' en la Tendencia de Aterrizaje (TREND)",
+    "stem": "¿Qué indica la palabra **NOSIG** añadida al final de un informe METAR en la sección TREND?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Que no se prevén cambios significativos en las condiciones meteorológicas durante las dos horas siguientes a la observación",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Que no existe señal de radio en la torre de control de aproximación",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Que no se requiere firma del comandante en el plan de vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Que el aeropuerto carece de sistema de aterrizaje por instrumentos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El indicador TREND **NOSIG (No Significant Change)** señala que no se esperan variaciones significativas en visibilidad, techo o tiempo durante las **2 horas siguientes**.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-MET-050",
+    "subject_id": "moa_info_meteorologica",
+    "learning_objective": "MOA 8.1.6 - Decisión Final de Despacho ante Condiciones Meteorológicas Marginales",
+    "stem": "Cuando la meteorología en destino es marginal respecto a los mínimos, ¿qué medida de buen juicio y seguridad aplica el Comandante?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Incrementar el combustible con Extra Fuel a discreción, seleccionar alternativos con meteorología holgada y revisar las rutas de escape",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Reducir el combustible de contingencia para despegar con menor peso y mayor aceleración",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Apagar los instrumentos de navegación para evitar distracciones durante la aproximación",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Despegar sin alternativos confiando en que el pronóstico mejorará durante el vuelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La buena práctica y el MOA 8.1.6/8.1.7 dictaminan que ante meteorología marginal se debe cargar **combustible extra**, seleccionar **alternativos fiables y holgados** y repasar las opciones operacionales antes de la salida.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  }
+]

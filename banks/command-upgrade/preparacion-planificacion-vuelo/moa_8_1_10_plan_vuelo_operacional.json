@@ -1,0 +1,1852 @@
+[
+  {
+    "id": "CMD-MOA-OFP-001",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.1 - Software de Generación y Aplicación EFB del OFP",
+    "stem": "Según el MOA 8.1.10.1, ¿qué software utiliza Binter para la elaboración del Plan de Vuelo Operacional (OFP) y a través de qué aplicación se transmite al EFB?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Software PPS (AIR SUPPORT) para la elaboración por el CCO, transmitiéndose a las tripulaciones mediante la aplicación TAIL LOG en el EFB",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Software comercial de hojas de cálculo de oficina transmitido por correo electrónico personal no encriptado",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Un procesador de texto básico transmitido por radiofrecuencia VHF en canal de voz",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El sistema de navegación del piloto automático del fabricante descargado en un pendrive",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.10.1 especifica que el PVO/OFP es generado por el Centro de Control Operacional (CCO) mediante el software **PPS (AIR SUPPORT)** y se transmite a las tripulaciones en formato digital a través de la aplicación **TAIL LOG** instalada en el EFB de a bordo.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10.1 Emisión del PVO (Pág. 8.1-111)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-002",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.1 - Ciclo de Generación y Recálculo del OFP",
+    "stem": "De acuerdo con el MOA 8.1.10.1, ¿con qué antelación se genera inicialmente el OFP y en qué horas previas a la salida (STD) se recalcula automáticamente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se genera automáticamente 20 horas antes de la STD (H-20) y se recalcula a H-20, H-12, H-4, H-3, H-2 y H-1",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se genera únicamente 10 minutos antes del despegue sin recálculos intermedios",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se genera con 7 días de antelación y se recalcula cada 24 horas exactas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se genera una sola vez al inicio de la temporada de vuelos de verano e invierno",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.10.1 indica que los planes de vuelo se generan automáticamente por el sistema **20 horas antes de la STD**, recalculándose sucesivamente con datos meteorológicos y de carga actualizados en **H-20, H-12, H-4, H-3, H-2 y H-1**.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10.1 Emisión del PVO (Pág. 8.1-111)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-003",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.1 - Plazos de Revisión del OFP por el Despachador de Turno",
+    "stem": "Según el MOA 8.1.10.1, ¿cuáles son los plazos máximos para que el despachador de turno revise y valide el OFP antes del comienzo del vuelo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hasta 1 hora antes del vuelo en vuelos regionales, y hasta 90 minutos antes en vuelos nacionales e internacionales",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Hasta 5 minutos antes del cierre de puertas en todos los vuelos comerciales",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Exactamente 12 horas antes sin posibilidad de realizar cambios posteriores",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La revisión se realiza después de que el avión haya aterrizado en destino",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.10.1 estipula que el despachador de turno debe revisar el OFP en un plazo de:\n- **Hasta 1 hora antes** en vuelos regionales.\n- **Hasta 90 minutos antes** en vuelos nacionales e internacionales.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10.1 Emisión del PVO (Pág. 8.1-111)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-004",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.1 - Tolerancia Máxima de Combustible en Rampa respecto al OFP",
+    "stem": "¿Cuál es la diferencia máxima admisible entre el combustible real en rampa y el planificado en el OFP antes de requerir un nuevo plan según MOA 8.1.10.1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Un valor máximo admisible de 500 kg de diferencia; si se supera o el combustible real es inferior al mínimo de despacho, se debe solicitar un nuevo OFP",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Una diferencia de hasta 5.000 kg sin necesidad de emitir nuevo plan de vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No se admite ninguna diferencia, debiendo coincidir al gramo exacto en todos los casos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se permite salir con 1.000 kg por debajo del mínimo si el comandante firma un recibo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.10.1 establece un límite estricto: 'se considera un **valor máximo admisible de 500 kg de diferencia** entre el peso en rampa real de combustible y el contemplado por el plan de vuelo. En caso de superarse esta cantidad se deberá solicitar un nuevo plan de vuelo... El peso real de combustible en rampa no puede ser inferior al especificado en el plan.'",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10.1 Emisión del PVO (Págs. 8.1-111 a 8.1-112)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-005",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.1 - Aceptación, Firma y Archivo del OFP",
+    "stem": "¿Cómo debe formalizarse la aceptación y archivo del Plan de Vuelo Operacional según el MOA 8.1.10.1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aceptado y firmado por el comandante (en soporte digital TAIL LOG o dos copias en papel dejando una en tierra), archivándose durante al menos 3 meses",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Firmado exclusivamente por el copiloto y destruido en rampa antes del despegue",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No requiere firma si el vuelo sale en horario regular programado",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Firmado por el sobrecargo de cabina y guardado en la cocina delantera",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.10.1 exige que el OFP sea **aceptado y firmado por el Comandante** durante la preparación del vuelo. En formato papel se firman 2 copias (una queda en tierra y otra en el sobre de vuelo), archivándose durante al menos **3 meses** (CAT.GEN.MPA.180). En digital queda registrado en TAIL LOG.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10.1 Emisión del PVO (Págs. 8.1-111 a 8.1-112)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-006",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Bloque de Cabecera del OFP (Header Block)",
+    "stem": "¿Qué información básica identifica al vuelo en el bloque de cabecera (Header) del OFP de Binter?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Número de vuelo, fecha, matrícula asignada, tipo E295, tripulación técnica, aeródromo de salida, destino, alternativos y hora programada (STD/STA)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El listado completo de nombres y direcciones particulares de todos los pasajeros",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La relación de hoteles de pernocta disponibles en la ciudad de origen",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El número de serie de las turbinas de repuesto almacenadas en el taller",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El encabezado del OFP contiene los datos operacionales clave del servicio: identificador, fecha UTC, matrícula del avión, aeródromos (DEP/DEST/ALTN), tripulación y horarios de itinerario (MOA 8.1.10).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-007",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Desglose de Combustible en el Fuel Summary del OFP",
+    "stem": "¿Qué líneas obligatorias componen el bloque de resumen de combustible (Fuel Summary) en el OFP de Binter?",
+    "options": [
+      {
+        "id": "A",
+        "text": "TAXI, TRIP, CONTINGENCY (5%/3%), ALTN, FINAL RESERVE, ADDITIONAL (si aplica), EXTRA (si aplica) y BLOCK FUEL total",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Únicamente el combustible de crucero y el precio del litro de queroseno",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El combustible consumido por el camión de bomberos en la pista",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La capacidad total de los depósitos dividida entre los dos motores",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Fuel Summary** del OFP desglosa exactamente los componentes reglamentarios de la política de combustible del MOA 8.1.7: **Taxi, Trip, Contingency, Alternate, Final Reserve, Additional, Extra y Block Fuel**.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-008",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Desglose de Pesos en el Weights Summary del OFP",
+    "stem": "¿Qué valores de masa estructurales y estimados se comparan en el bloque de pesos (Weights Summary) del OFP?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DOW, Max Payload, Estimated ZFW vs Max ZFW, Estimated TOW vs Max TOW estructural, y Estimated LAW vs Max LAW",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El peso de los uniformes de los pilotos comparado con el peso de las maletas",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La masa de las alas vacías comparada con la masa de los alerones",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El peso total de los periódicos de a bordo sumado al catering",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Weights Summary** del OFP detalla los límites estructurales frente a los estimados: **DOW, Max PLD, EZFW vs MZFW, ETOW vs MTOW, y ELAW vs MLW** (MOA 8.1.10).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-009",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Columnas del Registro de Navegación (Nav Log)",
+    "stem": "En las líneas de tramo del Nav Log del OFP, ¿qué datos de vuelo se presentan secuencialmente para cada fijo de ruta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Punto de ruta (Waypoint), aerovía, distancia parcial/remanente, rumbo verdadero/magnético, FL, viento/temp (ISA dev), consumo de tramo, EFOB y tiempo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "La lista de monumentos turísticos visibles desde la ventanilla derecha",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El número de teléfono de la torre de control más lejana",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El nombre de pila del primer oficial que diseñó la aerovía",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Nav Log** del OFP desglosa para cada punto de navegación: **Waypoint, Vía, Distancias, Rumbos, FL, Viento (dir/vel/comp), Temp/ISA dev, Combustible consumido, EFOB y Tiempo (EET/ETO)**.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-010",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Concepto de EFOB vs Min Diversion Fuel en el Nav Log",
+    "stem": "En el Nav Log del OFP, ¿qué representan las columnas 'EFOB' y 'MIN DIV' sobre cada punto de la ruta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "EFOB = Combustible estimado a bordo sobre el punto; MIN DIV = Combustible mínimo indispensable para proceder al alternativo con la reserva final intacta",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "EFOB = Energía eléctrica de las baterías; MIN DIV = Distancia mínima al sol",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "EFOB = Equipaje facturado en bodega; MIN DIV = Minutos de retraso permitidos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "EFOB = Eficiencia del motor; MIN DIV = Diversión de los pasajeros",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En el Nav Log, **EFOB (Estimated Fuel on Board)** es el combustible previsto sobre el fijo; **MIN DIV (Minimum Diversion Fuel)** es la cantidad crítica que garantiza alcanzar el alternativo con la Reserva Final reglamentaria de 30 min.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-011",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Perfil Vertical y Desviación de Temperatura Estándar (ISA Dev)",
+    "stem": "¿Qué indica una notación como `ISA+10` o `ISA-05` en los puntos de crucero del Nav Log del OFP?",
+    "options": [
+      {
+        "id": "A",
+        "text": "La desviación en grados Celsius de la temperatura exterior real respecto a la Atmósfera Estándar Internacional (ISA) a ese nivel de vuelo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El número de satélites GPS visibles en el horizonte boreal",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El porcentaje de potencia disponible en el arranque del motor",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La variación del ángulo de ataque de los alerones de punta de plano",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La **desviación ISA (`ISA +/- xx`)** refleja la diferencia térmica respecto a la atmósfera estándar ($15^\\circ\text{C}$ a nivel del mar con gradiente de $-2^\\circ\text{C}/1.000\text{ ft}$), impactando directamente en la TAS, empuje y consumo de combustible.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-012",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Bloque de Franja de Vientos y Niveles Óptimos (Wind Profile)",
+    "stem": "¿Qué utilidad operacional tiene la tabla de 'Wind / Temp Profile' y 'Level Selection' adjunta al OFP de Binter?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Permite al comandante evaluar rápidamente el impacto en tiempo y consumo de volar 2.000 o 4.000 pies por encima o por debajo del nivel planificado",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Indica la dirección del viento en las playas turísticas del destino",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Muestra la presión de inflado de los neumáticos para diferentes temperaturas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Sirve para calcular el coste de las tasas aduaneras de sobrevuelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La tabla de perfiles de viento y niveles adyacentes (**FL $+/- 2.000\text{ ft}$ / $+/- 4.000\text{ ft}$**) permite analizar en vuelo la viabilidad de solicitar cambios de nivel a ATC evaluando el balance de consumo y tiempo.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-013",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Cost Index (CI) en el Plan de Vuelo Operacional",
+    "stem": "¿Cómo se define el Cost Index (CI) programado en el OFP y cómo influye en la velocidad de vuelo del FMS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Es la relación entre el coste del tiempo de vuelo y el coste del combustible ($CI = \text{Coste Tiempo} / \text{Coste Fuel}$); un CI mayor incrementa la velocidad de vuelo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Es el porcentaje de impuestos municipales cobrados por el aeropuerto de origen",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Es el precio fijo en euros de cada billete de pasaje vendido a bordo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Es el coeficiente de fricción de los frenos de carbono en pista mojada",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Cost Index ($CI = \text{Time Cost} / \text{Fuel Cost}$)** optimiza la velocidad de crucero ($ECON\text{ Speed}$): $CI=0$ da la velocidad de máximo alcance (LRC / mínimo combustible), mientras que valores mayores dan velocidades más altas a expensas de mayor consumo.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-014",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.3 - Integración de Penalizaciones por Ítems MEL/CDL en el OFP",
+    "stem": "Cuando la aeronave vuela con un ítem diferido de la MEL o CDL que penaliza el consumo (ej. flap seal inop o pack off), ¿cómo se refleja en el OFP?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El CCO aplica el porcentaje de penalización de combustible (% Fuel Penalty) y restricciones de nivel/peso en el cálculo del software PPS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se añade una anotación a mano por la tripulación de cabina sin alterar los cálculos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se ignora la penalización en el plan de vuelo y se despega con combustible estándar",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se reduce el número de pilotos en cabina técnica para compensar el peso",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las penalizaciones de la MEL/CDL (incrementos porcentuales de combustible, límites de altitud de crucero o reducciones de RTOW) se integran directamente en el cálculo del OFP por el CCO antes de su emisión (MOA 8.1.10 / MEL).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-015",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.1 - Comprobación de Ítems Inoperativos entre Mantenimiento y CCO",
+    "stem": "¿Cómo se coordinan las averías técnicas y los ítems diferidos entre el centro de mantenimiento y el CCO según el MOA 8.1.10.1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Comunicaciones diarias conjuntas con el routing de aeronaves para el día posterior, y notificación inmediata en el día de la operación de cualquier ítem diferido en línea",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mediante un mensaje en un buzón de sugerencias al final de la semana",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Confiando en que los pilotos informen verbalmente al llegar a destino",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No existe coordinación técnica entre el mantenimiento y el centro de control",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.10.1 establece que el centro de mantenimiento remite diariamente al CCO los ítems inoperativos/degradados y notifica en tiempo real durante la operación cualquier novedad en línea.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-016",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Componente de Viento en Ruta (Headwind / Tailwind)",
+    "stem": "En el bloque de navegación del OFP, ¿cómo se expresan los componentes medios de viento en cara y en cola?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Como `H` seguido de los nudos de viento en cara (ej. `H025` = 25 kt Headwind) o `T` seguido de los nudos de viento en cola (ej. `T030` = 30 kt Tailwind)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Como `+` para viento de noche y `-` para viento de día",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Como `W` para viento húmedo y `D` para viento seco",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En porcentaje de deflexión del compensador de timón de dirección",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En el OFP, el componente longitudinal de viento se codifica como **`Hxxx` (Headwind / Viento de cara)** restando groundspeed, o **`Txxx` (Tailwind / Viento en cola)** sumando groundspeed a la TAS.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-017",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Punto de Consumo de Contingencia en Ruta",
+    "stem": "¿Dónde asume el software de plan de vuelo (PPS) que se consume el combustible de contingencia (Contingency Fuel)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se planifica como un remanente disponible a lo largo de toda la ruta para absorber desvíos meteorológicos, cambios de nivel o demoras de aproximación",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se asume que se quema en su totalidad en los primeros 10 segundos tras soltar frenos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se eyecta al mar automáticamente antes de iniciar el descenso hacia destino",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se transfiere a un depósito auxiliar exclusivo para calefacción de cabina",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Contingency Fuel** no forma parte del consumo previsto de ruta (Trip Fuel) sino que permanece como margen de seguridad para contingencias operacionales imprevistas durante cualquier etapa del vuelo (MOA 8.1.7 / 8.1.10).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-018",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Nivel de Vuelo Óptimo vs Nivel Máximo en el OFP",
+    "stem": "¿Cuál es la diferencia entre el Nivel de Vuelo Óptimo (Optimum FL) y el Nivel de Vuelo Máximo (Max FL) indicados en el OFP?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Optimum FL es el nivel de mínimo coste/consumo para el peso y Cost Index actual; Max FL es el techo de servicio limitado por margen de buffet o empuje",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Optimum FL es el nivel más bajo posible; Max FL es el nivel de transición",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Optimum FL es para vuelo visual; Max FL exclusivamente para vuelo instrumental",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No existe diferencia siendo términos sinónimos en la aviación comercial",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Optimum FL** minimiza el coste total de combustible/tiempo para la masa actual, mientras que el **Max FL** es el límite aerodinámico y de empuje certificado ($1.3g\text{ buffet margin}$ y $\\ge 300\text{ ft/min}$ de régimen residual) (AOM / MOA 8.1.10).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-019",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.1 - Procedimiento de Contingencia ante Fallo de EFB / TAIL LOG",
+    "stem": "Si la aplicación TAIL LOG o el soporte EFB fallan en la escala de salida, ¿cómo se emite el OFP según el MOA 8.1.10.1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El CCO envía el OFP al agente de handling de la escala, quien imprime dos copias en papel para su firma física por el comandante",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se cancela el vuelo automáticamente sin posibilidad de salida en papel",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se realiza el vuelo sin plan de vuelo confiando en la memoria del comandante",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se escribe el plan de vuelo a mano en una servilleta de la cafetería de la terminal",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.10.1 establece el procedimiento alternativo en soporte papel: el CCO envía el plan al agente de handling, se imprimen 2 copias, se firman por el Comandante y una queda en tierra.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-020",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Anotaciones en Vuelo sobre el OFP (Flight Progress Tracking)",
+    "stem": "¿Qué anotaciones obligatorias debe realizar la tripulación técnica en el OFP durante el progreso del vuelo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hora real de paso por los fijos (Actual Time / ATO), combustible real a bordo (Actual FOB) y discrepancia de combustible (+/- kg)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "La lista de nombres de los controladores aéreos de cada sector",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El consumo de agua mineral y café de la tripulación técnica",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Las matrículas de los aviones que cruzan en sentido contrario a más de 2.000 pies",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El seguimiento del vuelo en el OFP (AMC1 CAT.OP.MPA.175 / MOA 8.1.10) exige anotar: **hora real de paso (ATO)** y **combustible real a bordo (Actual FOB)** en cada punto de control para monitorizar la tendencia.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-021",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Comparación del OFP con la Inicialización del FMS (PERF INIT)",
+    "stem": "Al inicializar el FMS antes del despegue, ¿qué datos del OFP deben cotejarse obligatoriamente de forma cruzada entre ambos pilotos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ZFW, Fuel en rampa (Block Fuel), Reserva de combustible, Cost Index, Nivel de crucero inicial (CRZ FL) y temperatura en altitud",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Únicamente la fecha de nacimiento del primer oficial",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El número de asientos de la fila de salida de emergencia",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La presión de los neumáticos del tren de morro en tierra",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Durante el flujo de prevuelo (SOPM / MOA 8.1.10), ambos pilotos verifican de forma cruzada que los datos insertados en el FMS (**ZFW, Fuel, Reserves, CI, CRZ FL y W/B**) coinciden exactamente con el OFP oficial.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-022",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Identificación de Alternativos de Ruta (ERA) en el OFP",
+    "stem": "¿Cómo aparecen identificados los aeródromos alternativos en ruta (ERA / Fuel ERA) en el formato del OFP?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Con su código ICAO de 4 letras, pista prevista, distancia de desvío, tiempo de vuelo, combustible requerido y perfil de aproximación",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Con una marca de agua confidencial visible solo con luz ultravioleta",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mediante un dibujo a mano alzada en el margen derecho de la página",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Únicamente con el prefijo telefónico internacional del país",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El bloque de alternativos del OFP lista cada alternativo (Destino, En-route ERA y Fuel ERA) con: **código ICAO, fijos de escape, distancias, tiempo de vuelo y desglose de combustible requerido**.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-023",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.1 - Variación Significativa de Meteorología y Nuevo OFP",
+    "stem": "Si antes de la salida se produce un cambio meteorológico severo en destino que altera la selección de alternativos, ¿qué procede según MOA 8.1.10.1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El CCO emite un nuevo Plan de Vuelo Operacional revisado y adaptado a las nuevas condiciones meteorológicas y de combustible",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se despega con el plan antiguo asumiendo que la meteo mejorará en vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se cancela la licencia de vuelo de los pilotos de guardia",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se cambia de aeronave en plataforma por un avión más pequeño",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.10.1 estipula que ante cambios meteorológicos significativos que invaliden el plan previo, a juicio de la tripulación o del despachador, **se emite y proporciona un nuevo OFP** a través del agente de handling/EFB.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-024",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Consumo de Combustible en Esperas (Holding Fuel Factor)",
+    "stem": "En el OFP, ¿a qué tasa de consumo aproximada por hora se calcula la espera (Holding) para el Embraer 195-E2 a 1.500 ft ISA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aproximadamente entre 1.800 kg/h y 2.200 kg/h en configuración limpia a velocidad Green Dot / Hold Speed según el peso de la aeronave",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "A 500 kg/h igual que un monomotor ligero de hélice",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "A 10.000 kg/h en régimen de postcombustión supersónica",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "A 0 kg/h si los motores se apagan durante los tramos rectos de la espera",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El consumo de espera para el E195-E2 a 1.500 ft ISA a velocidad de mínima resistencia oscila en torno a **1.800 - 2.200 kg/h** según el peso actual, sirviendo de base para el cálculo de la Reserva Final (30 min $\u0007pprox 900-1.100\text{ kg}$).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-025",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Punto de Subida Escalonada (Step Climb Point)",
+    "stem": "Cuando el OFP contempla una subida escalonada (Step Climb, ej. de FL340 a FL380), ¿cómo se refleja en el Nav Log?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Con la indicación del fijo de navegación óptimo donde el menor peso por combustible consumido permite ascender al nivel superior con mayor eficiencia",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Con una alarma sonora continua en los altavoces de cabina de pasajeros",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Con una prohibición expresa de hablar entre los miembros de la tripulación",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Indicando que se debe apagar el aire acondicionado durante el ascenso",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Step Climb** en el Nav Log identifica el punto de ruta donde la reducción de masa del avión permite ascender a un nivel de vuelo más alto y eficiente, mejorando el consumo específico de crucero (MOA 8.1.10).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-026",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.1 - Comprobación de Performance por la Oficina Técnica (MOFT)",
+    "stem": "¿Cómo garantiza Binter que los cálculos de consumo y performance del software PPS son conformes con el AFM según el MOA 8.1.10.1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A través de auditorías periódicas y procedimientos del MOFT donde la Oficina Técnica valida los datos de salida del PPS con las tablas del fabricante",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Comparando los resultados con una revista comercial de aviación general",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aceptando los algoritmos de la computadora sin ninguna auditoría técnica",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pidiendo a los pasajeros que calculen el consumo con sus teléfonos móviles",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.10.1 y el MOFT establecen el protocolo mediante el cual la **Oficina Técnica (OFT)** audita y verifica periódicamente la concordancia de las tablas y modelos de consumo del PPS con los datos certificados del AFM de Embraer.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-027",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Reserva Final en el OFP y Llamadas de Radio Asociadas",
+    "stem": "¿Qué cifra del bloque de combustible del OFP delimita el umbral crítico a partir del cual es mandatorio declarar 'MAYDAY MAYDAY MAYDAY FUEL'?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El valor exacto de la **Reserva Final de Combustible (Final Reserve Fuel / FINRES)** reflejado en kilogramos en el resumen de combustible",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El combustible de rodaje (Taxi Fuel) asignado para el aeropuerto de salida",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El peso de las maletas transportadas en el compartimento de carga trasero",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La cantidad de aceite remanente en el depósito del motor izquierdo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El valor numérico de la **Reserva Final (FINRES)** impreso en el OFP es la cifra de referencia inmutable: si el combustible utilizable estimado al aterrizar es inferior a este valor, el Comandante debe declarar **MAYDAY FUEL** (MOA 8.1.7 / 8.1.10).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-028",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Bloque de Información ATC en el OFP",
+    "stem": "¿Qué sección del OFP reproduce literalmente el Plan de Vuelo ATS OACI presentado a los servicios de tránsito aéreo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El bloque 'ATC ICAO FPL' situado habitualmente en la parte inferior o anexo del documento del OFP",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "La sección de publicidad comercial de la revista corporativa de la aerolínea",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El menú de selección de canales de audio de entretenimiento a bordo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La lista de precios de los billetes de clase ejecutiva de la temporada",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El OFP incluye un bloque con el **formato literal del FPL OACI (Casillas 7 a 18)** para que la tripulación verifique su estricta coincidencia con el plan operacional (MOA 8.1.9 / 8.1.10).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-029",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.1 - Despacho de Vuelo con Combustible Superior al OFP (> 500 kg)",
+    "stem": "Si por decisión del Comandante se cargan 800 kg de combustible extra por encima de lo planificado en el OFP, ¿qué trámite documental es obligatorio?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar un nuevo Plan de Vuelo Operacional (OFP) recalculado al CCO que contemple el peso real de combustible y su impacto en performance",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Despegar con el plan antiguo tachando los números con un rotulador rojo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Ocultar el exceso de combustible a las dependencias de control de tráfico aéreo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Eyectar 300 kg de queroseno en rampa antes de cerrar las puertas del avión",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Dado que el exceso supera la tolerancia máxima admisible de **500 kg**, el MOA 8.1.10.1 exige **solicitar un nuevo OFP recalculado** que contemple el nuevo peso de despegue y perfiles de crucero.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-030",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Tiempo Estimado en Ruta (Estimated Elapsed Time - EET)",
+    "stem": "En el Nav Log del OFP, ¿qué diferencia existe entre el tiempo de tramo (Leg Time) y el tiempo acumulado (Total EET)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Leg Time es el tiempo estimado de vuelo entre dos waypoints consecutivos; Total EET es el tiempo acumulado desde el despegue hasta ese punto",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Leg Time es el tiempo de parada en el hotel; Total EET es la duración del contrato laboral",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Leg Time es la hora local de salida; Total EET es la hora de puesta de sol",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No existe diferencia siendo dos columnas con el mismo número repetido",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En el Nav Log: **Leg Time** = minutos calculados para recorrer el tramo específico entre dos fijos; **Total EET (Accumulated)** = horas y minutos acumulados desde el momento del despegue hasta cruzar dicho fijo.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-031",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Monitoreo de Consumo Específico de Combustible (Fuel Flow)",
+    "stem": "Durante el vuelo de crucero a nivel constante, ¿dónde comprueba la tripulación el flujo de combustible ($kg/h$) esperado frente al real del EICAS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En las indicaciones de consumo horario por motor especificadas en el OFP / FMS comparándolas con los instrumentos de motor del EICAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En el manual de mantenimiento del fabricante de los asientos de pasajeros",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En la factura de compra del queroseno entregada por el camión cisterna",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En el reloj cronógrafo de pulsera del segundo oficial de cabina",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El OFP y el FMS proporcionan el flujo de combustible esperado ($Fuel\text{ Flow}$ en $kg/h$ por motor), cotejándose con los instrumentos del EICAS para detectar consumos anormales o degradaciones aerodinámicas.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-032",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.1 - Archivo de Copias del PVO en Caso de Soporte Papel",
+    "stem": "Si se opera en soporte papel por caída de TAIL LOG, ¿dónde se envían y archivan las dos copias firmadas del OFP según el MOA 8.1.10.1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Una copia queda en tierra con el agente de handling hasta el final del vuelo/set; la segunda se guarda en el sobre de vuelo y se envía a la Dirección de Operaciones",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Ambas copias se destruyen en el triturador de papel del hotel de destino",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se entregan a los pasajeros de la primera fila como recuerdo del viaje",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se envían por correo electrónico personal al fabricante del fuselaje",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.10.1 estipula: 'Una vez firmadas por el comandante, se dejará una copia en tierra que se conservará... La segunda copia se almacenará en el sobre de la documentación después del vuelo... enviada a la dirección de operaciones, donde quedará archivada.'",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-033",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Corrección por Viento de Costado (Drift Angle / Deriva)",
+    "stem": "¿Qué información de corrección de deriva proporciona el Nav Log del OFP para cada tramo de navegación?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El rumbo magnético corregido por viento (Magnetic Heading) a partir de la derrota magnética (Magnetic Track) y el ángulo de deriva estimado",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El ángulo de inclinación lateral de los alerones durante el vuelo en línea recta",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El desplazamiento de los pasajeros en el pasillo durante el servicio de café",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La velocidad de rotación de las ruedas del tren de aterrizaje en crucero",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El Nav Log calcula a partir de la derrota ($Track$) y el vector viento el **ángulo de deriva ($Drift\text{ Angle}$)** para proporcionar el **Rumbo Magnético ($Heading$)** de gobierno (MOA 8.1.10).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-034",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Requisitos de Oxígeno Registrados en el OFP",
+    "stem": "¿Cómo refleja el OFP los requerimientos de oxígeno de cabina para la ruta según el MOA 8.1.10 y 8.8?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Verifica que el perfil de crucero cumple los requisitos de oxígeno terapéutico y de emergencia para el tiempo de vuelo por encima de FL100/FL140",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "No contempla el oxígeno al considerarse un gas innecesario en aviación moderna",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Exige que todos los pasajeros viajen con máscaras de oxígeno puestas durante el despegue",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Calcula el oxígeno sumando la capacidad de los extintores de incendios portátiles",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El OFP y el despacho aseguran que las altitudes de ruta y perfiles de descenso cumplen los requisitos de suministro de oxígeno de la Parte CAT.IDE y MOA 8.8.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-035",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Identificación del Punto de No Retorno (Point of No Return - PNR)",
+    "stem": "En vuelos sobre áreas remotas o rutas extendidas, ¿cómo se define el Punto de No Retorno (PNR) en el OFP?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El punto geográfico más lejano en la ruta desde el cual la aeronave puede regresar al aeródromo de salida con las reservas de combustible intactas",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El momento exacto en que se sirve la comida a los pasajeros de cabina",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El punto de la pista donde las ruedas del morro se despegan del asfalto",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La altitud a partir de la cual el cielo se vuelve de color azul oscuro",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **PNR (Point of No Return)** es el punto límite en la ruta a partir del cual el combustible a bordo no permite el retorno seguro al aeródromo de origen, debiendo proseguir hacia destino o alternativos en ruta.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-036",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Identificación del Punto de Igual Tiempo (Critical Point / ETP)",
+    "stem": "¿Qué representa el Punto de Igual Tiempo (Equal Time Point - ETP / Critical Point) en el análisis de ruta del OFP?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El punto geográfico en la ruta desde el cual el tiempo de vuelo hacia el aeródromo de retorno y hacia el aeródromo de continuación es exactamente el mismo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El punto donde los dos pilotos tienen exactamente la misma edad biológica",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El momento en que se cruza el meridiano de Greenwich a velocidad de crucero",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La mitad de la distancia geográfica medida con una regla en el mapa en papel",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **ETP (Equal Time Point / Critical Point)** determina la posición en la ruta donde el tiempo de vuelo hacia dos aeródromos seleccionados (origen/destino o alternativos) es idéntico considerando el viento en altitud y perfiles con motor inoperativo o despresurización.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-037",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.1 - Modificación de la Ruta por Instrucción ATC en Vuelo",
+    "stem": "Si durante el vuelo ATC autoriza un directo de larga distancia (Direct To) que ahorra 50 NM respecto al OFP, ¿cómo gestiona la tripulación el plan?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inserta el directo en el FMS, actualiza los puntos de paso y continúa el seguimiento de combustible verificando el incremento de FOB en destino",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Rechaza obligatoriamente la autorización de ATC para no desviarse del papel del OFP",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Apaga el FMS y solicita vectores radar manuales durante los siguientes 500 km",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Eyecta combustible al aire para compensar las millas no voladas de la ruta",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las autorizaciones 'Direct To' se ejecutan en el FMS, actualizando el progreso del vuelo y confirmando que el combustible en destino mejora respecto al OFP nominal (SOPM / MOA 8.1.10).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-038",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Resumen de Mínimos de Aeródromo en el Anexo del OFP",
+    "stem": "¿Qué información de mínimos meteorológicos incluye el paquete de despacho del OFP para los aeródromos del vuelo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Los METAR, TAF, NOTAMs vigentes y los mínimos de utilización de las cartas LIDO para origen, destino, alternativos y puntos de ruta",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Las tarifas de los taxis urbanos en los aeropuertos de destino",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Los menús de los restaurantes situados en la terminal de llegadas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La lista de hoteles con descuento para tripulaciones de aviación",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El paquete del OFP generado por el CCO (Crew Briefing package) adjunta los **METAR/TAF, NOTAMs relevantes y mínimos de planificación/utilización** de todos los aeródromos de la operación.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-039",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Cálculo de Combustible para Frustrada en Destino en el OFP",
+    "stem": "¿Qué perfil de vuelo asume el OFP para el cálculo del combustible de frustrada incluido en el Alternate Fuel?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Frustrada completa desde la DA/MDA en destino, ascenso por el procedimiento de aproximación frustrada publicado y transición a la ruta del alternativo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Una espera en circuito visual a 50 pies sobre la pista durante 2 horas",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Un picado a velocidad máxima hacia el mar sin ganar altitud",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Un aterrizaje de emergencia en el césped contiguo a la pista de rodaje",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Alternate Fuel** en el OFP incluye el combustible de frustrada calculado conforme al procedimiento publicado de aproximación frustrada (Missed Approach Procedure) desde mínimos hasta el punto de incorporación de ruta al alternativo.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-040",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.1 - Control de Calidad del OFP por la Oficina Técnica de Vuelo",
+    "stem": "¿Qué comprobaciones aleatorias realiza la Oficina Técnica sobre los OFP emitidos por el CCO según el MOFT y MOA 8.1.10?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Audita que las altitudes mínimas, consumos, contingencias y selección de alternativos cumplen los estándares del MOA y la reglamentación EASA",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Comprueba que los documentos no tengan manchas de tinta en las esquinas",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Verifica el tipo de letra tipográfica utilizado por la impresora de la escala",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cuenta el número de grapas metálicas utilizadas en cada sobre de vuelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La **Oficina Técnica (OFT)** audita periódicamente muestras de planes de vuelo operacionales para verificar la correcta aplicación de márgenes de combustible, perfiles netos, altitudes mínimas y cumplimiento normativo (MOFT 2.5 / MOA 8.1.10).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-041",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Diferencia entre FOB Real y EFOB del OFP en Destino",
+    "stem": "Si al llegar sobre el punto inicial de aproximación de destino el combustible real (FOB) es 500 kg superior al EFOB del OFP, ¿a qué se debe principalmente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A vientos más favorables de los previstos en altitud, ascensos continuos directos o ahorro por vuelo a niveles más eficientes",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "A que los motores han generado combustible de forma autónoma durante el crucero",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "A un error grave en la báscula de pesaje de equipajes en el aeropuerto de salida",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "A que el avión ha absorbido agua de las nubes a través de las tomas de aire",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Un FOB superior al EFOB planificado es el resultado operacional normal de vientos en cola más favorables, atajos de ruta directos autorizados por ATC o gestión eficiente de perfiles de vuelo.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-042",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Procedimiento de Registro de Demoras en el OFP",
+    "stem": "Si el vuelo sufre una demora en tierra antes de la salida, ¿dónde anota la tripulación la hora real de fuera calzos y despegue?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En las casillas correspondientes de 'OUT' (fuera calzos) y 'OFF' (despegue) del registro del OFP y en la aplicación TAIL LOG",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En una llamada a la policía local del municipio aeroportuario",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En el libro de visitas del museo aeronáutico de la isla",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No se anotan las demoras si estas no superan las 24 horas continuas",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las horas OOOI (**OUT, OFF, ON, IN**) deben registrarse rigurosamente en el OFP físico / digital en TAIL LOG para control de tiempos de actividad de vuelo (FTL) y mantenimiento (MOA 7 y 8.1.10).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-043",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Cálculo de Combustible para Desvío con Despresurización en el OFP",
+    "stem": "Al calcular el combustible de contingencia crítica por despresurización en el OFP, ¿qué perfil de crucero y nivel se modela?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Descenso de emergencia hasta FL100 (o MGA si es superior) y crucero a FL100 hasta el aeródromo alternativo adecuado",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Ascenso inmediato a FL450 para reducir el consumo de queroseno",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Descenso al nivel de las olas a 50 pies sobre el agua en toda la ruta",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Vuelo en invertido con los motores a potencia mínima de ralentí",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El escenario crítico de despresurización modela: descenso de emergencia a **FL100 (o MGA de seguridad)**, vuelo a FL100 hasta el alternativo adecuado más cercano, aproximación y reserva final de 15/30 min (MOA 8.1.7 / 8.1.10).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-044",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Cálculo de Combustible por Fallo de Motor en Ruta (OEI Scenario)",
+    "stem": "En el análisis de contingencia por fallo de motor en el OFP, ¿qué perfil de vuelo se utiliza para el cálculo de combustible remanente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Descenso Driftdown hasta el techo monomotor neto, crucero con un motor inoperativo a velocidad de largo alcance hacia el alternativo y aproximación",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Parada deliberada del segundo motor para descender planeando",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Vuelo a velocidad máxima VMO con un solo motor acelerado al 150%",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Lanzamiento de las puertas de pasajeros para reducir la resistencia al avance",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El escenario monomotor (OEI) contempla el descenso por **Driftdown** hasta la altitud de crucero con un motor inoperativo, vuelo hacia el alternativo con penalización de consumo monomotor y aproximación con motor inoperativo (MOA 8.1.7 / 8.1.10).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-045",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.1 - Disponibilidad del OFP durante Toda la Duración del Vuelo",
+    "stem": "Según el MOA 8.1.10.1 y CAT.OP.MPA.175, ¿qué requisito de accesibilidad debe cumplir el Plan de Vuelo Operacional durante el vuelo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Debe estar accesible y disponible para la tripulación de vuelo en todo momento durante el transcurso del vuelo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Debe guardarse bajo llave en la bodega de carga delantera inaccesible en vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Debe dejarse obligatoriamente en tierra sin que los pilotos lleven ninguna copia",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo es accesible cuando la aeronave se encuentra a más de 30.000 pies de altitud",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.10.1 y la norma europea establecen: 'El plan de vuelo operacional estará disponible para la tripulación durante la preparación del vuelo, y será **accesible durante la duración del mismo**.'",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-046",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Unidades de Medida de Combustible en el OFP de Binter",
+    "stem": "¿En qué unidades de masa se expresa estandarizadamente el combustible en los OFP de la flota Binter?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En **Kilogramos (kg)** de forma estandarizada en todos los documentos de despacho, FMS y sistemas de combustible",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En galones imperiales británicos en vuelos pares y litros en vuelos impares",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En libras estadounidenses (lbs) exclusivamente en vuelos interinsulares",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En metros cúbicos de gas licuado de petróleo comprimido",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para evitar errores críticos de conversión de combustible, la flota de Binter y todos sus sistemas asociados (OFP, E-Loadsheet, FMS e indicadores de a bordo) están **rigurosamente estandarizados en Kilogramos (kg)**.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-047",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Comprobación del Nivel de Vuelo Mínimo en el OFP respecto a la MGA",
+    "stem": "Al revisar el Nav Log del OFP, ¿cómo comprueba el Comandante que ningún tramo de crucero perfora la altitud de seguridad?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Verificando que el nivel de vuelo planificado (FL) en cada segmento se encuentra holgadamente por encima de la MGA / MEA de la franja correspondiente",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Comprobando que el número del nivel de vuelo sea un número par",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Confiando en que el sistema de aviso de proximidad al suelo (EGPWS) apague los motores a tiempo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Preguntando al controlador aéreo si la montaña es más alta que el avión",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El Comandante verifica en el Nav Log del OFP que los niveles de vuelo planificados (CRZ FL) son superiores en todo momento a las **altitudes mínimas de seguridad (MGA / MEA / MORA)** del segmento de ruta (MOA 8.1.1 / 8.1.10).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-048",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.1 - Recálculo del OFP en H-1 antes de la Salida",
+    "stem": "¿Cuál es el propósito principal del último recálculo automático del OFP en H-1 (1 hora antes de STD)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Incorporar la carga estimada final de pasajeros, la última previsión meteorológica de viento/temperatura y el combustible ajustado definitivo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cambiar el nombre del comandante por un nombre aleatorio del sistema",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Añadir 10 horas de espera en el aeropuerto de destino",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Eliminar todos los aeródromos alternativos del plan de vuelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El recálculo en **H-1** afina la precisión del plan incorporando la estimación final de pasaje/carga cerrada en facturación y los últimos datos meteorológicos actualizados antes de la entrega formal a la tripulación (MOA 8.1.10.1).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-049",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10.2 - Formato de las Rutas ATS en el Nav Log del OFP",
+    "stem": "¿Cómo se presentan las aerovías y fijos de navegación en el Nav Log del OFP de Binter?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Con la codificación estándar de aerovías (ej. `UN873`, `UM744`), fijos de 5 letras (ej. `TERTO`, `LUKIP`) y puntos de cambio de nivel o FIR",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Con nombres de calles urbanas de la ciudad más cercana",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mediante dibujos vectoriales de animales marinos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Escribiendo la altitud de cada montaña en metros sobre el suelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El Nav Log codifica las trayectorias conforme a la nomenclatura aeronáutica estándar: **indicadores de aerovía (High/Low routes), puntos significativos de 5 letras (Waypoints) y radioayudas VOR/NDB**.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-OFP-050",
+    "subject_id": "moa_plan_vuelo_operacional",
+    "learning_objective": "MOA 8.1.10 - Declaración Final de Aceptación del Despacho de Vuelo",
+    "stem": "Al estampar la firma de aceptación en el Plan de Vuelo Operacional (OFP), ¿qué certifica legalmente el Comandante?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Que ha revisado la documentación técnica, meteorológica, masa, centrado, combustible, limitaciones y que el vuelo puede realizarse con total seguridad y cumplimiento normativo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Que se compromete a pagar el combustible del avión con su tarjeta bancaria privada",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Que autoriza a los pasajeros a pilotar el avión durante el crucero",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Que renuncia a los servicios de rescate y salvamento marítimo en caso de amerizaje",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La firma del **Plan de Vuelo Operacional (OFP)** por el Comandante constituye el acto formal de aceptación del despacho, certificando que la aeronave, la ruta, el combustible, la meteorología y la tripulación satisfacen plenamente todas las exigencias legales y de seguridad (MOA 1.4 / 8.1.10 / CAT.GEN.MPA.105).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  }
+]

@@ -751,5 +751,1115 @@
     "metadata": {
       "difficulty": 0.3
     }
+  },
+  {
+    "id": "CMD-MOA-FUEL-008",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.1 - Definición de Combustible de Rodaje (Taxi Fuel)",
+    "stem": "¿Cómo se calcula el combustible de rodaje (Taxi Fuel) según el MOA 8.1.7.1 y qué factores debe contemplar?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El consumo estimado del APU y motores desde el arranque y retroceso hasta el inicio de la carrera de despegue, considerando demoras previsibles",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Un valor fijo inmutable de 10 kg para cualquier aeropuerto del mundo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El consumo de combustible durante los primeros 50 kilómetros de ascenso",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La cantidad de combustible que se pierde por evaporación solar en el estacionamiento",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Taxi Fuel** contempla el consumo estimado antes del despegue considerando el APU, el rodaje con uno o dos motores y las posibles demoras locales en plataforma y calles de rodaje (MOA 8.1.7.1).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-009",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.1 - Combustible de Reserva Final (Final Reserve Fuel)",
+    "stem": "Para aviones de turbina como el E195-E2, ¿cómo se calcula la Reserva Final de Combustible (Final Reserve Fuel) según MOA 8.1.7.1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Combustible necesario para volar durante 30 minutos a velocidad de espera a 1.500 pies sobre el aeródromo alternativo en condiciones ISA",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Combustible necesario para volar 45 minutos a velocidad de crucero máximo a FL350",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Combustible para 15 minutos de rodaje en tierra con inversores de empuje abiertos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Combustible para alcanzar la velocidad del sonido a baja cota en emergencia",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Final Reserve Fuel** para aviones de reacción es la cantidad de combustible requerida para volar durante **30 minutos a velocidad de espera a 1.500 ft AGL** sobre el aeródromo alternativo (o destino si no se requiere alternativo) en condiciones ISA (MOA 8.1.7.1 / CAT.OP.MPA.181).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-010",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.1 - Combustible Adicional (Additional Fuel)",
+    "stem": "¿Cuándo es obligatorio incluir 'Combustible Adicional' (Additional Fuel) en el plan de vuelo según el MOA 8.1.7.1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cuando el combustible requerido para descenso de emergencia por despresurización o fallo de motor hacia un alternativo supere el plan estándar, o en aeródromos aislados",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Siempre que el vuelo transporte pasajeros de pie en el pasillo central",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Únicamente en vuelos que despeguen durante los días festivos nacionales",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cuando el comandante decida apagar el radar meteorológico durante el vuelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Additional Fuel** es obligatorio si la cantidad de combustible calculada según el esquema estándar no permite cumplir los requisitos de contingencia ante fallo de motor o despresurización en el punto más crítico de la ruta, o en operaciones a aeródromos aislados (MOA 8.1.7.1).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-011",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.1 - Combustible Extra a Discreción del Comandante (Extra Fuel)",
+    "stem": "Según el MOA 8.1.7.1 y la autoridad del Comandante, ¿quién tiene la potestad de añadir 'Extra Fuel' y cómo debe justificarse?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El Comandante, basándose en condiciones operativas previsibles (meteorología marginal, esperas ATC, estado de pistas o limitaciones técnicas)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Exclusivamente el departamento financiero de la aerolínea para aprovechar descuentos en origen",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El agente de facturación de equipajes según el número de maletas facturadas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El proveedor de limpieza de cabina tras finalizar el servicio de tierra",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La carga de **Extra Fuel** es potestad exclusiva del Comandante (MOA 1.4 y 8.1.7.1) tras evaluar amenazas meteorológicas, demoras ATC, tráfico en destino o factores técnicos.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-012",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.3 - Monitorización Periódica del Combustible en Vuelo (Fuel Check)",
+    "stem": "¿Con qué frecuencia debe verificar y registrar la tripulación el combustible remanente en vuelo según el MOA 8.1.7.3?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A intervalos periódicos regulares (típicamente en cada fijo principal de notificación del OFP o al menos cada 30-60 minutos)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Únicamente una vez que la aeronave haya aterrizado y apagado motores",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo si se enciende la luz de aviso de nivel bajo de combustible en el EICAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Una vez cada 24 horas de vuelo continuo sin registros intermedios",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.7.3 y CAT.OP.MPA.280 exigen la comprobación periódica del combustible a bordo (comparando FOB real vs FOB estimado en el OFP) en cada punto de control de ruta.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-013",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.3 - Procedimiento ante Discrepancia de Combustible en Vuelo",
+    "stem": "Si durante el chequeo de combustible se observa un consumo superior al previsto (> 3% o discrepancia no explicable), ¿qué acciones exige el MOA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Comprobar fugas de combustible (Fuel Leak Checklist), verificar desbalance alar, ajustar perfiles de vuelo y revaluar el alternativo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Apagar inmediatamente las dos bombas de combustible de ambos depósitos alares",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Acelerar a velocidad máxima para llegar antes de que se agote el combustible",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Ignorar la discrepancia asumiendo que los indicadores de nivel son inexactos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Ante consumos anómalos o discrepancias no justificadas por viento/nivel, se debe ejecutar la lista de chequeo de fuga de combustible (Fuel Leak), evaluar el remanente en destino y asegurar la reserva hacia el alternativo (MOA 8.1.7.3 / MOB).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-014",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.3 - Declaración de 'MINIMUM FUEL' a ATC",
+    "stem": "¿Qué significa la transmisión reglamentaria 'MINIMUM FUEL' a las dependencias de control de tránsito aéreo (ATC)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Informa a ATC de que la disposición de combustible es tal que cualquier cambio en la autorización actual puede resultar en aterrizar con menos de la Reserva Final",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Otorga prioridad de aterrizaje inmediata por delante de todos los demás tráficos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Indica que el avión se encuentra en emergencia crítica de parada de motores",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solicita un camión de repostaje urgente en el punto de espera de la pista",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La llamada **MINIMUM FUEL** (CAT.OP.MPA.280 / MOA 8.1.7.3) es informativa: advierte a ATC de que no se pueden aceptar demoras adicionales sin comprometer la Reserva Final, pero **NO confiere prioridad de tráfico**.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-015",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.3 - Declaración de 'MAYDAY MAYDAY MAYDAY FUEL' a ATC",
+    "stem": "¿Cuándo es OBLIGATORIO transmitir la llamada de socorro 'MAYDAY MAYDAY MAYDAY FUEL' según el MOA 8.1.7.3 y EASA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cuando el combustible remanente utilizable calculado al aterrizar en el aeródromo más cercano adecuado sea inferior a la Reserva Final reglamentaria",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Siempre que se consuma el combustible de contingencia del plan de vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cuando el comandante decida cambiar de nivel de crucero por turbulencia ligera",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Si el alternativo de destino se encuentra a más de 100 NM de distancia",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La declaración de emergencia **MAYDAY FUEL** es obligatoria en cuanto el combustible utilizable a bordo previsto en la toma sea inferior a la **Reserva Final (Final Reserve Fuel - 30 min)**, otorgando prioridad absoluta de aterrizaje (MOA 8.1.7.3 / CAT.OP.MPA.280).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-016",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.2 - Mínimos de Planificación: Tabla 1A (Plan Básico con Variaciones)",
+    "stem": "En la Tabla 1A de Mínimos de Planificación del MOA 8.1.7.2, ¿qué condiciones meteo se exigen para un Alternativo de Destino con aproximación de precisión CAT I?",
+    "options": [
+      {
+        "id": "A",
+        "text": "RVR/Visibilidad igual o superior al mínimo aplicable de CAT I, y techo de nubes igual o superior a la DH/MDH correspondiente",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Visibilidad de 10 km y cielo despejado sin nubes en 100 km a la redonda",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mínimos de despegue LVTO de 125 metros sin requerir techo de nubes",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Visibilidad de 300 metros con obligatoriedad de aterrizaje automático CAT III",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La Tabla 1A (Plan Básico con Variaciones) del MOA 8.1.7.2 exige para alternativos con CAT I: RVR/visibilidad igual o superior al mínimo CAT I y techo de nubes $\\ge \text{DH}$ aplicable.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-017",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.2 - Mínimos de Planificación: Alternativo con Dos Procedimientos de Precisión Independientes",
+    "stem": "Si un aeródromo alternativo dispone de dos aproximaciones de precisión a pistas separadas, ¿qué crédito de planificación permite la Tabla 1A?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mínimos de CAT I para planificar un alternativo equipado con CAT II/III, o mínimos Tipo A reducidos para planificar dos CAT I independientes",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Despachar sin necesidad de incluir combustible de reserva final en el plan",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aterrizar simultáneamente con dos aeronaves en la misma senda de planeo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Reducir el combustible de contingencia al 0% sin alternativo en ruta",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La Tabla 1A del MOA 8.1.7.2 permite utilizar criterios de planificación más favorables cuando el alternativo dispone de dos aproximaciones de precisión independientes a pistas separadas.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-018",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.2 - Mínimos de Planificación para Alternativo con Aproximación de No Precisión (NPA)",
+    "stem": "Según la Tabla 1A del MOA 8.1.7.2, ¿qué mínimos meteorológicos deben pronosticarse en un Alternativo que solo dispone de aproximación de no precisión (NPA 2D)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "RVR/Visibilidad requerida para NPA + incremento de visibilidad (o visibilidad NPA estándar), y techo de nubes $\\ge \text{MDA/H}$ aplicable",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mínimos visuales de 1.500 m sin requerir techo de nubes",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "RVR de 125 metros igual que en pistas de despegue con baja visibilidad",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Visibilidad de 50 metros con aterrizaje guiado por radiobaliza NDB",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para alternativos con aproximación NPA (2D), la Tabla 1A del MOA exige que la previsión cumpla el RVR de la aproximación y un techo de nubes no inferior a la MDA/H publicada.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-019",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.2 - Mínimos de Planificación para Alternativo de Despegue",
+    "stem": "¿Qué mínimos meteorológicos deben pronosticarse en el **Alternativo de Despegue** durante su ventana de uso según el MOA 8.1.7.2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Las condiciones meteorológicas previstas deben cumplir los mínimos de planificación aplicables de la Tabla 1A/1B para la aproximación prevista",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Basta con que la pista de salida tenga viento en calma sin importar el alternativo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Debe tener visibilidad infinita y temperatura superior a 25°C en todo momento",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se aplican exclusivamente los mínimos de despegue del aeródromo de origen",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El aeródromo de alternativa de despegue debe presentar pronósticos meteorológicos que cumplan los mínimos de planificación aplicables durante toda su ventana de utilización estimada (MOA 8.1.7.2).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-020",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.2 - Mínimos de Planificación para Alternativo en Ruta (ERA)",
+    "stem": "¿Qué requisitos meteorológicos se exigen a un aeródromo para ser válido como **Alternativo en Ruta (ERA)** según MOA 8.1.7.2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cumplir los mínimos de planificación de la Tabla 1A/1B desde la hora estimada más temprana hasta la más tardía de posible utilización",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Estar situado exactamente a mitad de distancia entre el origen y el destino",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Tener una pista de al menos 4.000 metros con orientación este-oeste",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Disponer de un hangar exclusivo para el mantenimiento de motores PW1900G",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los alternativos en ruta (ERA y Fuel ERA) deben satisfacer los mínimos de planificación de las tablas del MOA 8.1.7.2 en toda la ventana temporal en que la aeronave pueda necesitarlos.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-021",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.1 - Combustible de Contingencia Estadístico (RSP / SCF)",
+    "stem": "Cuando Binter aplica el método de Contingencia Estadístico (Statistical Contingency Fuel - SCF/RSP), ¿en qué se basa el cálculo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En el análisis estadístico de consumos históricos en la ruta para garantizar un nivel de confianza del 99% (no inferior al combustible de 5 min a 1.500 ft)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En la estimación intuitiva del despachador de turno durante el turno de noche",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En el peso de las maletas facturadas dividido por el número de pasajeros",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En la diferencia de altitud entre el aeropuerto más alto y el más bajo de la red",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El método de Contingencia Estadístico (RSP/SCF, CAT.OP.MPA.181 / MOA 8.1.7.1) utiliza datos históricos reales de consumo por ruta para asegurar cobertura estadística al 99% de los vuelos.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-022",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.1 - Reducción de Contingencia al 3% con Alternativo por Combustible (Fuel ERA)",
+    "stem": "Para reducir el combustible de contingencia del 5% al **3% del Trip Fuel**, ¿dónde debe situarse el Fuel ERA según el MOA 8.1.7.1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dentro de un círculo de radio igual al 20% de la distancia total de ruta, centrado en la trayectoria nominal a una distancia de destino de al menos el 25% de la ruta (o 20% del Trip Fuel)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "A menos de 10 NM de la cabecera de la pista del aeropuerto de salida",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En el punto exacto de cruce del ecuador terrestre en vuelos intercontinentales",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En cualquier país limítrofe sin importar la distancia respecto a la ruta de vuelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El criterio de ubicación de un **Fuel ERA** (CAT.OP.MPA.181 / MOA 8.1.7.1) exige situar el alternativo en el área de contención geométrica definida en la normativa para permitir la reducción al **3% de contingencia**.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-023",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.1 - Combustible Requerido para Aeródromo de Destino Aislado",
+    "stem": "En un vuelo planificado hacia un **Aeródromo Aislado**, ¿cuál es el combustible adicional mandatorio según el MOA 8.1.7.1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Combustible para volar durante 2 horas a velocidad de crucero con consumo normal después de llegar sobre el destino (incluyendo la Reserva Final de 30 min)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Combustible para 10 minutos de vuelo adicional sin reserva final",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Combustible equivalente al peso total de los pasajeros a bordo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No requiere combustible adicional si el avión lleva balsas salvavidas",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para aeródromos aislados (sin alternativo adecuado alcanzable), el plan de combustible exige cargar **combustible para 2 horas de vuelo a crucero** sobre el destino, que incluye la Reserva Final de 30 min (MOA 8.1.7.1 / CAT.OP.MPA.181).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-024",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.1 - Procedimiento de Replanificación de Combustible en Vuelo (Point of In-flight Re-planning)",
+    "stem": "Al utilizar el procedimiento de Replanificación en Vuelo (Decision Point Procedure), ¿qué dos rutas se evalúan antes del despegue?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Una ruta hacia un destino intermedio comercial y otra ruta extendida hacia el destino final condicional, evaluando el combustible en el Punto de Decisión",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Una ruta directa supersónica y otra ruta en zigzag a baja cota",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Una ruta visual sobre las islas y otra ruta por aerovías militares",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Dos rutas idénticas que solo difieren en el número de comidas servidas a bordo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El procedimiento de Replanificación en Vuelo (Decision Point Procedure / MOA 8.1.7.1) calcula el combustible hacia un destino intermedio y evalúa en un punto de decisión en ruta si el remanente permite continuar al destino final.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-025",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.1 - Combustible Mínimo de Desvío (Diversion Fuel)",
+    "stem": "¿Cómo se define el 'Combustible de Desvío' (Diversion Fuel / Alternate Summary) en el OFP y en el FMS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Es la suma del combustible necesario para volar desde el destino hasta el alternativo (Alternate Fuel) más la Reserva Final de 30 minutos (Final Reserve)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Es el combustible total que cabe en los depósitos alares del avión",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Es la cantidad de combustible que se consume durante el rodaje de salida",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Es el combustible reservado para alimentar el generador APU en tierra",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Combustible de Desvío (Diversion Fuel)** representa el umbral crítico por debajo del cual no se puede continuar esperando en destino: **Alternate Fuel + Final Reserve Fuel (30 min)** (MOA 8.1.7).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-026",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.3 - Gestión de Desbalance de Combustible (Fuel Imbalance)",
+    "stem": "Si durante el vuelo se produce un desbalance de combustible entre depósitos alares superior al límite del AFM, ¿qué procedimiento aplica el piloto?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Abrir la válvula de alimentación cruzada (Fuel Crossfeed Valve) para alimentar ambos motores desde el depósito con mayor cantidad, respetando los límites del AFM",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Drenar el combustible sobrante al exterior abriendo la válvula de purga en vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Apagar el motor del lado con menos combustible para equilibrar el peso",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Poner el avión en viraje escarpado de 60° para trasvasar combustible por gravedad",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El desbalance de combustible se corrige abriendo la **válvula de alimentación cruzada (Crossfeed)** para que los motores consuman del tanque con más combustible hasta restablecer la simetría lateral (AFM / SOPM / MOA 8.1.7).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-027",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.1 - Ventana de Utilización Temporal de los Mínimos de Planificación",
+    "stem": "¿Qué intervalo temporal define la 'Ventana de Utilización' de un aeródromo para comprobar los mínimos meteorológicos de planificación?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desde 1 hora antes hasta 1 hora después de la hora estimada de llegada (ETA) de la aeronave al aeródromo correspondiente",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Exactamente el minuto en que las ruedas tocan la pista sin margen previo ni posterior",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Un periodo de 24 horas naturales completas antes de la salida del vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Desde la medianoche del día anterior hasta el mediodía del día siguiente",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La ventana de utilización de un aeródromo en planificación abarca desde **1 hora antes hasta 1 hora después de la ETA prevista** (MOA 8.1.7.2 / CAT.OP.MPA.185).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-028",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.2 - Plan Básico con Variaciones vs Plan sin Variaciones",
+    "stem": "¿Cuál es la diferencia fundamental entre la Tabla 1A (con variaciones) y la Tabla 1B (sin variaciones) del MOA 8.1.7.2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "La Tabla 1A permite aplicar créditos por variabilidad y tipos de aproximación múltiple en la selección de alternativos, mientras que la Tabla 1B exige mínimos fijos más restrictivos",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "La Tabla 1A es exclusiva para vuelos de carga y la Tabla 1B para vuelos de pasajeros",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La Tabla 1A se aplica de noche y la Tabla 1B exclusivamente durante el día",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La Tabla 1A no requiere consultar informes meteorológicos oficiales",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.7.2 desglosa la Tabla 1A (Plan básico con variaciones operacionales) y la Tabla 1B (Mínimos estándar sin variaciones), estableciendo los márgenes de seguridad para alternativos según las ayudas disponibles.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-029",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.1 - Combustible de Contingencia Estándar (5%)",
+    "stem": "¿Cuál es la regla estándar del MOA 8.1.7.1 para el cálculo del Contingency Fuel en vuelos comerciales de Binter?",
+    "options": [
+      {
+        "id": "A",
+        "text": "5% del Trip Fuel planificado, o una cantidad suficiente para volar durante 5 minutos a velocidad de espera a 1.500 ft sobre el destino en condiciones ISA (la mayor)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "10% fijo del combustible total cargado en rampa en todos los vuelos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "500 kg fijos independientemente de la duración de la ruta",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El combustible consumido por el APU durante 8 horas continuas",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La regla estándar de **Contingency Fuel** es el **5% del Trip Fuel** (con un mínimo de **5 minutos de espera a 1.500 ft ISA** sobre el destino) (MOA 8.1.7.1 / CAT.OP.MPA.181).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-030",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.3 - Repostaje con Pasajeros Embarcando, a Bordo o Desembarcando",
+    "stem": "Según el MOA 8.2 y 8.1.7, ¿qué precauciones obligatorias deben mantenerse si se efectúa repostaje de combustible con pasajeros a bordo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tripulación técnica en cabina, sobrecargo avisada, señales de 'No Fumar' encendidas, cinturones desabrochados, salidas de emergencia despejadas y personal de tierra alertado",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Todos los pasajeros deben permanecer de pie con los chalecos salvavidas inflados",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Las puertas del avión deben permanecer cerradas y bloqueadas con llave exterior",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se debe cortar la energía eléctrica total del avión desconectando las baterías",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El repostaje con pasaje a bordo exige: **comunicación bidireccional cabina-tierra, aviso al SCC, señales No Fumar, cinturones desabrochados, salidas libres y toboganes armados/supervisados** (MOA 8.2.2).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-031",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.1 - Combustible de Frustrada y Ascenso en el Alternativo",
+    "stem": "¿Qué fases de vuelo contempla el cálculo del 'Alternate Fuel' en el plan de vuelo según el MOA 8.1.7.1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aproximación frustrada completa en destino, ascenso, crucero al alternativo, descenso, aproximación instrumental y toma de contacto en el alternativo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Únicamente el descenso desde el nivel de crucero hasta la pista del alternativo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El rodaje en tierra en el alternativo sin considerar la frustrada en destino",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El vuelo de regreso a la base principal al día siguiente",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Alternate Fuel** incluye: aproximación frustrada en destino desde la MDA/DA, ascenso inicial, vuelo de crucero hacia el alternativo, descenso y aproximación instrumental completa en el alternativo (MOA 8.1.7.1).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-032",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.3 - Acción ante Nivel de Combustible por Debajo del Plan sobre un Fijo",
+    "stem": "Si sobre un punto de ruta el combustible real (FOB) es inferior al estimado en el OFP pero superior al combustible de desvío, ¿qué decisión procede?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Continuar monitorizando el consumo, optimizar nivel de vuelo/velocidad (Cost Index/LRC) y verificar continuamente que el remanente en destino cubra alternativo + reserva final",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Declarar MAYDAY de forma inmediata y apagar un motor para ahorrar queroseno",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Descender a 500 pies sobre el nivel del mar para volar en aire más denso",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Desviar inmediatamente al primer campo de vuelo de ultraligeros visible",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Si el FOB es inferior al plan pero superior al mínimo de desvío, se revalúa el perfil de crucero (CI/FL) y se vigila estrechamente la tendencia de consumo hacia el destino (MOA 8.1.7.3).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-033",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.1 - Planificación de Vuelo sin Aeródromo Alternativo de Destino",
+    "stem": "¿Bajo qué condiciones muy restrictivas permite EASA Part-CAT y MOA 8.1.7.2 planificar un vuelo sin alternativo de destino (No Alternate)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vuelo de corta duración con 2 pistas separadas en destino, y meteo prevista desde 1h antes hasta 1h después con techo $\\ge 2.000\text{ ft}$ (o MDA + 500 ft) y visibilidad $\\ge 5.000\text{ m}$",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Siempre que el comandante tenga más de 20 años de antigüedad en la empresa",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En cualquier vuelo nacional diurno sin importar las condiciones meteorológicas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cuando el avión vuele con menos del 10% de su capacidad de pasaje",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La operación **No Alternate** requiere: duración < 6 h, **2 pistas independientes/separadas**, y condiciones excelentes ($\\ge 2.000\text{ ft}$ techo o MDA+500 ft, visibilidad $\\ge 5.000\text{ m}$) en la ventana $\\pm 1\text{ h}$ (CAT.OP.MPA.180 / MOA 8.1.7.2).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-034",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.2 - Requisito de Dos Alternativos de Destino en el Despacho",
+    "stem": "¿Cuándo es OBLIGATORIO designar al menos **dos aeródromos alternativos de destino** en el plan de vuelo operacional?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cuando las previsiones meteorológicas en destino indiquen condiciones por debajo de los mínimos de planificación, o cuando no se disponga de información meteorológica de destino",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Siempre que el vuelo se realice en viernes o víspera de festivo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cuando el avión transporte equipaje en los asientos de pasajeros",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Únicamente si la aeronave tiene un motor alquilado a otro operador",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Es mandatorio designar **2 alternativos de destino** si: 1° La meteo en destino está por debajo de los mínimos de planificación, o 2° No se dispone de información meteorológica en destino (CAT.OP.MPA.180 / MOA 8.1.7.2).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-035",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.1 - Densidad del Combustible y Control de Masa en Repostaje",
+    "stem": "Al repostar queroseno Jet A-1, ¿por qué es crítico verificar la densidad del combustible para el cálculo de masa y centrado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Porque el volumen medido en litros/galones varía con la temperatura; la masa real (kg/lbs) depende de la densidad ($kg/L$), afectando al peso total y rendimiento de despegue",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Porque el combustible de menor densidad tiene más octanaje y acelera el avión al doble",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Para comprobar si el queroseno ha caducado y debe ser devuelto al proveedor",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Porque la densidad modifica el color de la pintura exterior de los depósitos alares",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La masa de combustible ($Masa = Volumen \times Densidad$) depende de la densidad real del lote ($0.775 - 0.840\text{ kg/L}$ según temperatura), siendo vital para el cálculo exacto de peso de despegue y centro de gravedad.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-036",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.3 - Procedimiento de Espera (Holding) y Consumo Horario",
+    "stem": "Durante una espera ATC en destino, ¿a qué velocidad y configuración debe mantenerse la aeronave para optimizar el combustible según el FCOM/MOA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A la velocidad de espera limpia óptima indicada por el FMS (Green Dot / Minimum Drag Speed) con flaps recogidos",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "A velocidad máxima VMO con flaps en posición completa de aterrizaje y aerofrenos extendidos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Con tren de aterrizaje abajo y acelerando a empuje máximo de despegue",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "A velocidad cercana a la entrada en pérdida con aviso de vibrador de palanca activo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La espera debe volarse en **configuración limpia (Flaps 0°)** a la **velocidad de espera óptima (Hold Speed / Green Dot)** calculada por el FMS para minimizar el consumo horario ($kg/h$).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FUEL-037",
+    "subject_id": "moa_plan_combustible",
+    "learning_objective": "MOA 8.1.7.1 - Resumen del Plan de Combustible Mínimo de Despacho",
+    "stem": "En resumen, ¿cuál es la fórmula legal del combustible mínimo requerido para el despegue (Minimum Takeoff Fuel)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Minimum Takeoff Fuel = Trip Fuel + Contingency Fuel + Alternate Fuel + Final Reserve Fuel + Additional Fuel (si aplica) + Extra Fuel (si aplica)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Minimum Takeoff Fuel = Taxi Fuel + Trip Fuel únicamente sin ningún tipo de reserva",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Minimum Takeoff Fuel = Capacidad máxima estructural de los depósitos dividida por dos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Minimum Takeoff Fuel = Combustible de 1 hora de vuelo independientemente de la distancia de ruta",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Combustible Mínimo de Despegue (Minimum Takeoff Fuel)** es la suma reglamentaria: **Trip + Contingency + Alternate + Final Reserve (+ Additional + Extra)** (MOA 8.1.7.1 / CAT.OP.MPA.181).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
   }
 ]
