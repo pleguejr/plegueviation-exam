@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-[#070d1c] text-slate-100 font-sans selection:bg-sky-500 selection:text-white;
+    @apply bg-[#070d1c] text-slate-100 font-sans selection:bg-sky-500 selection:text-white transition-colors duration-200;
     background-image: 
       radial-gradient(at 0% 0%, rgba(14, 165, 233, 0.08) 0px, transparent 50%),
       radial-gradient(at 100% 0%, rgba(16, 185, 129, 0.06) 0px, transparent 50%),
@@ -12,9 +12,18 @@
     background-attachment: fixed;
     -webkit-tap-highlight-color: transparent;
   }
+
+  body.theme-light {
+    background-color: #f1f5f9 !important;
+    color: #0f172a !important;
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(14, 165, 233, 0.08) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(16, 185, 129, 0.06) 0px, transparent 50%),
+      radial-gradient(at 50% 100%, rgba(99, 102, 241, 0.06) 0px, transparent 50%) !important;
+  }
 }
 
-/* Glassmorphism Cards */
+/* Glassmorphism Cards (Dark Mode) */
 .glass-panel {
   background: rgba(17, 31, 61, 0.7);
   backdrop-filter: blur(12px);
@@ -28,6 +37,92 @@
   box-shadow: 0 10px 30px -10px rgba(14, 165, 233, 0.2);
 }
 
+/* =========================================================================
+   LIGHT / DAY MODE STYLES (Modo Día Aeronáutico)
+   ========================================================================= */
+.theme-light .glass-panel {
+  background: rgba(255, 255, 255, 0.88) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(14, 165, 233, 0.25) !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.06) !important;
+}
+
+.theme-light .glass-panel-hover:hover {
+  background: #ffffff !important;
+  border-color: rgba(14, 165, 233, 0.5) !important;
+  box-shadow: 0 10px 25px -5px rgba(14, 165, 233, 0.15) !important;
+}
+
+.theme-light .bg-\[\#070d1c\],
+.theme-light .bg-\[\#080e1e\],
+.theme-light .bg-\[\#0e1933\],
+.theme-light .bg-\[\#091224\],
+.theme-light .bg-\[\#0f1b35\],
+.theme-light .bg-\[\#111f3d\],
+.theme-light .bg-slate-900,
+.theme-light .bg-\[\#081224\] {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+  box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-light .bg-\[\#0a1f3d\],
+.theme-light .bg-\[\#06101f\],
+.theme-light .bg-\[\#070e1e\],
+.theme-light .bg-\[\#0b1429\],
+.theme-light .bg-\[\#0f1d3d\],
+.theme-light .bg-\[\#16203b\] {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+.theme-light .text-white {
+  color: #0f172a !important;
+}
+
+.theme-light .text-slate-100,
+.theme-light .text-slate-200 {
+  color: #1e293b !important;
+}
+
+.theme-light .text-slate-300 {
+  color: #334155 !important;
+}
+
+.theme-light .text-slate-400 {
+  color: #64748b !important;
+}
+
+.theme-light .border-slate-800,
+.theme-light .border-slate-700 {
+  border-color: #e2e8f0 !important;
+}
+
+.theme-light .bg-black\/40,
+.theme-light .bg-black\/30,
+.theme-light .bg-black\/80 {
+  background-color: rgba(241, 245, 249, 0.9) !important;
+  border-color: #cbd5e1 !important;
+}
+
+.theme-light .bg-slate-800 {
+  background-color: #e2e8f0 !important;
+  color: #0f172a !important;
+}
+
+.theme-light .hover\:bg-slate-700:hover,
+.theme-light .hover\:bg-slate-800:hover {
+  background-color: #cbd5e1 !important;
+}
+
+.theme-light header {
+  background-color: #0369a1 !important;
+  border-color: #0284c7 !important;
+}
+
 /* Custom scrollbars */
 .custom-scrollbar::-webkit-scrollbar {
   width: 6px;
@@ -39,9 +134,17 @@
   border-radius: 9999px;
 }
 
+.theme-light .custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background: #2a3e66;
   border-radius: 9999px;
+}
+
+.theme-light .custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #94a3b8;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
@@ -80,7 +183,7 @@
 
 @keyframes spinSlow {
   from {
-    transform: rotate(0deg);
+    opacity: rotate(0deg);
   }
   to {
     transform: rotate(360deg);

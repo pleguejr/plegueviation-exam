@@ -23,7 +23,9 @@ import {
   Cloud,
   RefreshCw,
   Key,
-  Zap
+  Zap,
+  Sun,
+  Moon
 } from 'lucide-react';
 
 export function App() {
@@ -33,6 +35,33 @@ export function App() {
   const [manifest, setManifest] = useState<BankManifest | null>(null);
   const [statsMap, setStatsMap] = useState<Record<string, QuestionStats>>({});
   
+  // Theme state: 'dark' (Modo Noche) vs 'light' (Modo Día)
+  const [theme, setTheme] = useState<'dark' | 'light'>(() => {
+    const saved = localStorage.getItem('plegueviation_theme');
+    if (saved === 'light' || saved === 'dark') return saved;
+    return 'dark'; // Por defecto: Modo Noche / Cabina
+  });
+
+  useEffect(() => {
+    const root = document.documentElement;
+    if (theme === 'dark') {
+      root.classList.add('dark');
+      root.classList.remove('light');
+      document.body.classList.remove('theme-light');
+      document.body.classList.add('theme-dark');
+    } else {
+      root.classList.remove('dark');
+      root.classList.add('light');
+      document.body.classList.add('theme-light');
+      document.body.classList.remove('theme-dark');
+    }
+    localStorage.setItem('plegueviation_theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
+  };
+
   // Modals state
   const [isConfigModalOpen, setIsConfigModalOpen] = useState(false);
   const [isImporterOpen, setIsImporterOpen] = useState(false);
@@ -279,6 +308,8 @@ export function App() {
       {/* Top AviationExam Navbar */}
       <Navbar
         currentTab={currentView === 'explorer' ? 'explorer' : currentView === 'reports' ? 'reports' : currentView === 'settings' ? 'settings' : currentView === 'flashcards' ? 'flashcards' : 'dashboard'}
+        theme={theme}
+        onToggleTheme={toggleTheme}
         onSelectTab={(tab) => setCurrentView(tab)}
         onOpenNewExam={() => handleOpenConfigModal()}
         onOpenFlashcards={() => handleStartFlashcards()}
@@ -361,6 +392,61 @@ export function App() {
                 <div>
                   <h2 className="text-lg font-black text-white">Pleguejr</h2>
                   <p className="text-xs text-sky-300 font-semibold">Primer Oficial (F/O) Embraer 195-E2 • Candidato a Comandante Binter</p>
+                </div>
+              </div>
+
+              {/* Selector de Tema Visual: Modo Día vs Modo Noche */}
+              <div className="p-5 rounded-2xl bg-[#091224] border border-sky-500/30 space-y-4">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2.5 text-sky-400 font-bold text-sm">
+                    {theme === 'dark' ? <Moon className="w-5 h-5 text-sky-400" /> : <Sun className="w-5 h-5 text-amber-400" />}
+                    <span>Tema Visual y Modo de Pantalla (Día / Noche)</span>
+                  </div>
+                  <span className="text-[11px] font-mono px-2.5 py-0.5 rounded-full bg-sky-500/10 text-sky-300 border border-sky-500/20 font-bold">
+                    Activo: {theme === 'dark' ? 'Modo Noche (Cockpit)' : 'Modo Día (Luz)'}
+                  </span>
+                </div>
+
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Alterna entre el <strong>Modo Noche</strong> (fondo azul marino aero para baja fatiga visual en vuelos nocturnos) y el <strong>Modo Día</strong> (fondo claro de alto contraste para estudio en entornos luminosos). También puedes cambiarlo al instante desde el botón en la barra superior.
+                </p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                  <button
+                    onClick={() => setTheme('dark')}
+                    className={`p-3.5 rounded-2xl border text-xs font-bold transition-all flex items-center justify-between ${
+                      theme === 'dark'
+                        ? 'bg-gradient-to-r from-[#0d1d3b] to-[#09152b] border-sky-400 text-white shadow-glow-sky'
+                        : 'bg-slate-900 border-slate-800 text-slate-400 hover:text-white'
+                    }`}
+                  >
+                    <div className="flex items-center gap-2.5">
+                      <Moon className="w-4 h-4 text-sky-300" />
+                      <div className="text-left">
+                        <p className="font-extrabold text-white">Modo Noche</p>
+                        <p className="text-[10px] text-slate-400">Cabina Oscura / Deep Aero Navy</p>
+                      </div>
+                    </div>
+                    {theme === 'dark' && <span className="text-xs text-sky-400 font-black">✓ Activo</span>}
+                  </button>
+
+                  <button
+                    onClick={() => setTheme('light')}
+                    className={`p-3.5 rounded-2xl border text-xs font-bold transition-all flex items-center justify-between ${
+                      theme === 'light'
+                        ? 'bg-gradient-to-r from-sky-50 to-blue-50 border-amber-500 text-slate-900 shadow-md'
+                        : 'bg-slate-900 border-slate-800 text-slate-400 hover:text-white'
+                    }`}
+                  >
+                    <div className="flex items-center gap-2.5">
+                      <Sun className="w-4 h-4 text-amber-500" />
+                      <div className="text-left">
+                        <p className="font-extrabold text-slate-900">Modo Día</p>
+                        <p className="text-[10px] text-slate-600">Aeronáutico Claro / Alto Contraste</p>
+                      </div>
+                    </div>
+                    {theme === 'light' && <span className="text-xs text-amber-600 font-black">✓ Activo</span>}
+                  </button>
                 </div>
               </div>
 
