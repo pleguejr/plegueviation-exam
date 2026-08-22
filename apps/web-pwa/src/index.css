@@ -270,6 +270,91 @@
   color: #475569 !important;
 }
 
+/* 3.3 MODAL DE MNEMÓNICOS Y LLAMADAS DE EMERGENCIA EN MODO DÍA */
+.theme-light .fixed .max-w-3xl {
+  background: #ffffff !important;
+  border: 1.5px solid #a7f3d0 !important;
+  color: #0f172a !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+}
+
+.theme-light .mnemonic-card-twin,
+.theme-light .mnemonic-card-retse,
+.theme-light .mnemonic-card-edalta,
+.theme-light .mnemonic-card-telsi,
+.theme-light .mnemonic-card-imflocc,
+.theme-light .mnemonic-card-meana {
+  background-color: #f8fafc !important;
+  border: 1.5px solid #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+.theme-light .mnemonic-card-twin p,
+.theme-light .mnemonic-card-retse p,
+.theme-light .mnemonic-card-edalta p,
+.theme-light .mnemonic-card-telsi p,
+.theme-light .mnemonic-card-imflocc p,
+.theme-light .mnemonic-card-meana p {
+  color: #1e293b !important;
+}
+
+.theme-light .mnemonic-card-twin strong,
+.theme-light .mnemonic-card-retse strong,
+.theme-light .mnemonic-card-edalta strong,
+.theme-light .mnemonic-card-telsi strong,
+.theme-light .mnemonic-card-imflocc strong,
+.theme-light .mnemonic-card-meana strong {
+  color: #0f172a !important;
+  font-weight: 800 !important;
+}
+
+/* Las 4 Tarjetas de Llamadas a TCPs en Modo Día */
+.theme-light .mnemonic-callout-card {
+  background-color: #ffffff !important;
+  border: 1.5px solid #cbd5e1 !important;
+  color: #0f172a !important;
+  box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-light .mnemonic-callout-card p {
+  color: #334155 !important;
+}
+
+.theme-light .mnemonic-callout-card span.text-slate-400 {
+  color: #64748b !important;
+}
+
+.theme-light .mnemonic-callout-card strong {
+  color: #0f172a !important;
+  font-weight: 800 !important;
+}
+
+.theme-light .mnemonic-callout-card strong.text-white {
+  color: #004b87 !important;
+}
+
+.theme-light .mnemonic-callout-card strong.text-emerald-300 {
+  color: #006837 !important;
+}
+
+.theme-light .mnemonic-callout-card strong.text-amber-300 {
+  color: #b45309 !important;
+}
+
+.theme-light .mnemonic-callout-card strong.text-rose-400 {
+  color: #be123c !important;
+}
+
+.theme-light .fixed .max-w-3xl .border-slate-800 {
+  border-color: #e2e8f0 !important;
+}
+
+.theme-light .fixed .max-w-3xl .bg-\[\#081022\] {
+  background-color: #f1f5f9 !important;
+  border-color: #e2e8f0 !important;
+  color: #475569 !important;
+}
+
 /* 4. PREGUNTAS Y OPCIONES EN EXÁMENES Y EXPLORADOR */
 .theme-light .space-y-3 .border-slate-800,
 .theme-light .space-y-3 .border-slate-700 {
@@ -363,6 +448,10 @@
   color: #ffffff !important;
 }
 
+table th {
+  padding: 8px 12px;
+}
+
 .theme-light table th {
   background-color: #f1f5f9 !important;
   color: #0f172a !important;
@@ -450,10 +539,12 @@
 }
 
 /* 8. MODALES EN MODO DÍA */
-.theme-light .fixed .bg-\[\#0e1933\] {
+.theme-light .fixed .bg-\[\#0e1933\],
+.theme-light .fixed .bg-\[\#0c1833\],
+.theme-light .fixed .bg-\[\#0b162c\] {
   background-color: #ffffff !important;
   color: #0f172a !important;
-  border: 1px solid #cbd5e1 !important;
+  border: 1.5px solid #a7f3d0 !important;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
 }
 

@@ -626,7 +626,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
                 </h4>
 
                 {/* TWIN */}
-                <div className="p-4 rounded-2xl bg-[#091224] border border-sky-500/30 space-y-1.5">
+                <div className="mnemonic-card-twin p-4 rounded-2xl bg-[#091224] border border-sky-500/30 space-y-1.5 shadow-sm">
                   <div className="flex items-center justify-between">
                     <span className="font-black text-sky-300 text-sm">TWIN (Apertura de Briefing de Despegue y Llegada)</span>
                     <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-500/20 text-sky-300 border border-sky-500/40">MOB 2.0.6.1 / 2.0.6.2</span>
@@ -640,7 +640,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
                 </div>
 
                 {/* RETSE */}
-                <div className="p-4 rounded-2xl bg-[#091224] border border-emerald-500/30 space-y-1.5">
+                <div className="mnemonic-card-retse p-4 rounded-2xl bg-[#091224] border border-emerald-500/30 space-y-1.5 shadow-sm">
                   <div className="flex items-center justify-between">
                     <span className="font-black text-emerald-300 text-sm">RETSE (Takeoff Briefing en MCDU & LIDO)</span>
                     <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">MOB 2.0.6.1</span>
@@ -655,7 +655,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
                 </div>
 
                 {/* E-DALTA */}
-                <div className="p-4 rounded-2xl bg-[#091224] border border-amber-500/30 space-y-1.5">
+                <div className="mnemonic-card-edalta p-4 rounded-2xl bg-[#091224] border border-amber-500/30 space-y-1.5 shadow-sm">
                   <div className="flex items-center justify-between">
                     <span className="font-black text-amber-300 text-sm">E-DALTA (Approach & Landing Briefing en MCDU & LIDO)</span>
                     <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/40">MOB 2.0.6.2</span>
@@ -679,7 +679,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
                 </h4>
 
                 {/* TELSI */}
-                <div className="p-4 rounded-2xl bg-[#091224] border border-rose-500/40 space-y-1.5 shadow-md">
+                <div className="mnemonic-card-telsi p-4 rounded-2xl bg-[#091224] border border-rose-500/40 space-y-1.5 shadow-md">
                   <div className="flex items-center justify-between">
                     <span className="font-black text-rose-300 text-sm">TELSI (Briefing a Tripulación de Cabina — ¡NUNCA NITS!)</span>
                     <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-rose-500/20 text-rose-300 border border-rose-500/40">MOB 3.1.1 / 3.1.14</span>
@@ -694,7 +694,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
                 </div>
 
                 {/* IMFLOCC */}
-                <div className="p-4 rounded-2xl bg-[#091224] border border-indigo-500/30 space-y-1.5">
+                <div className="mnemonic-card-imflocc p-4 rounded-2xl bg-[#091224] border border-indigo-500/30 space-y-1.5 shadow-sm">
                   <div className="flex items-center justify-between">
                     <span className="font-black text-indigo-300 text-sm">IMFLOCC (Toma de Decisiones en Desvíos Técnicos)</span>
                     <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-indigo-500/20 text-indigo-300 border border-indigo-500/40">MOB 3.1.10</span>
@@ -711,7 +711,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
                 </div>
 
                 {/* MEANA */}
-                <div className="p-4 rounded-2xl bg-[#091224] border border-purple-500/30 space-y-1.5">
+                <div className="mnemonic-card-meana p-4 rounded-2xl bg-[#091224] border border-purple-500/30 space-y-1.5 shadow-sm">
                   <div className="flex items-center justify-between">
                     <span className="font-black text-purple-300 text-sm">MEANA (Orden de Aplicación de Listas de Chequeo)</span>
                     <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-500/20 text-purple-300 border border-purple-500/40">MOB 3.1.0</span>
@@ -735,36 +735,76 @@ export const Dashboard: React.FC<DashboardProps> = ({
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   
-                  <div className="p-3.5 rounded-2xl bg-black/40 border border-slate-800 space-y-1">
-                    <span className="font-bold text-sky-300 block">📉 Descenso de Emergencia</span>
-                    <p className="text-slate-300">
-                      • Por Megafonía (PA): <strong className="text-white font-mono">"DESCENSO DE EMERGENCIA, DESCENSO DE EMERGENCIA, DESCENSO DE EMERGENCIA"</strong><br />
-                      • Al nivelar seguro: <strong className="text-emerald-300 font-mono">"TRIPULACIÓN DE CABINA, DESCENSO FINALIZADO"</strong>
-                    </p>
+                  {/* Descenso de emergencia */}
+                  <div className="mnemonic-callout-card p-4 rounded-2xl bg-black/40 border border-slate-800 space-y-2 shadow-sm">
+                    <span className="font-extrabold text-sky-300 text-xs flex items-center gap-1.5">
+                      <span>📉</span>
+                      <span>Descenso de Emergencia</span>
+                    </span>
+                    <div className="space-y-1.5 text-slate-300">
+                      <p>
+                        <span className="text-[11px] text-slate-400 font-bold block">Por Megafonía (PA):</span>
+                        <strong className="font-mono text-xs text-white">"DESCENSO DE EMERGENCIA, DESCENSO DE EMERGENCIA, DESCENSO DE EMERGENCIA"</strong>
+                      </p>
+                      <p className="pt-1 border-t border-slate-800/80">
+                        <span className="text-[11px] text-slate-400 font-bold block">Al nivelar seguro en altitud de respiración:</span>
+                        <strong className="font-mono text-xs text-emerald-300">"TRIPULACIÓN DE CABINA, DESCENSO FINALIZADO"</strong>
+                      </p>
+                    </div>
                   </div>
 
-                  <div className="p-3.5 rounded-2xl bg-black/40 border border-slate-800 space-y-1">
-                    <span className="font-bold text-amber-300 block">🛑 Aborto de Despegue (RTO)</span>
-                    <p className="text-slate-300">
-                      • Evaluación: <strong className="text-white font-mono">"TRIPULACIÓN DE CABINA, ESPEREN INSTRUCCIONES"</strong><br />
-                      • Situación Controlada: <strong className="text-emerald-300 font-mono">"TRIPULACIÓN DE CABINA, PERMANEZCAN SENTADOS"</strong>
-                    </p>
+                  {/* RTO */}
+                  <div className="mnemonic-callout-card p-4 rounded-2xl bg-black/40 border border-slate-800 space-y-2 shadow-sm">
+                    <span className="font-extrabold text-amber-300 text-xs flex items-center gap-1.5">
+                      <span>🛑</span>
+                      <span>Aborto de Despegue (RTO)</span>
+                    </span>
+                    <div className="space-y-1.5 text-slate-300">
+                      <p>
+                        <span className="text-[11px] text-slate-400 font-bold block">Evaluación de situación tras detenerse:</span>
+                        <strong className="font-mono text-xs text-amber-300">"TRIPULACIÓN DE CABINA, ESPEREN INSTRUCCIONES"</strong>
+                      </p>
+                      <p className="pt-1 border-t border-slate-800/80">
+                        <span className="text-[11px] text-slate-400 font-bold block">Situación controlada (sin peligro):</span>
+                        <strong className="font-mono text-xs text-emerald-300">"TRIPULACIÓN DE CABINA, PERMANEZCAN SENTADOS"</strong>
+                      </p>
+                    </div>
                   </div>
 
-                  <div className="p-3.5 rounded-2xl bg-black/40 border border-slate-800 space-y-1">
-                    <span className="font-bold text-rose-300 block">🛡️ Aterrizaje Forzoso / Ditching</span>
-                    <p className="text-slate-300">
-                      • A 5 minutos: <strong className="text-white font-mono">"TRIPULACIÓN DE CABINA FINALIZAR PREPARACIÓN"</strong><br />
-                      • A 30 segundos: <strong className="text-rose-400 font-mono">"PROTECCIÓN, PROTECCIÓN, PROTECCIÓN"</strong> (Brace Position)
-                    </p>
+                  {/* Ditching / Preparación */}
+                  <div className="mnemonic-callout-card p-4 rounded-2xl bg-black/40 border border-slate-800 space-y-2 shadow-sm">
+                    <span className="font-extrabold text-rose-300 text-xs flex items-center gap-1.5">
+                      <span>🛡️</span>
+                      <span>Aterrizaje Forzoso / Ditching</span>
+                    </span>
+                    <div className="space-y-1.5 text-slate-300">
+                      <p>
+                        <span className="text-[11px] text-slate-400 font-bold block">A 5 minutos de la toma de contacto:</span>
+                        <strong className="font-mono text-xs text-white">"TRIPULACIÓN DE CABINA FINALIZAR PREPARACIÓN"</strong>
+                      </p>
+                      <p className="pt-1 border-t border-slate-800/80">
+                        <span className="text-[11px] text-slate-400 font-bold block">A 30 segundos del impacto (Brace Position):</span>
+                        <strong className="font-mono text-xs text-rose-400">"PROTECCIÓN, PROTECCIÓN, PROTECCIÓN"</strong>
+                      </p>
+                    </div>
                   </div>
 
-                  <div className="p-3.5 rounded-2xl bg-black/40 border border-slate-800 space-y-1">
-                    <span className="font-bold text-purple-300 block">🚪 Evacuación & Turbulencia</span>
-                    <p className="text-slate-300">
-                      • Evacuación en tierra: <strong className="text-rose-400 font-mono">"TRIPULACIÓN DE CABINA, EVACUACIÓN, EVACUACIÓN, EVACUACIÓN"</strong><br />
-                      • Turbulencia Severa: <strong className="text-amber-300 font-mono">"TRIPULACIÓN DE CABINA, OCUPEN SUS ASIENTOS DE INMEDIATO"</strong>
-                    </p>
+                  {/* Evacuación & Turbulencia */}
+                  <div className="mnemonic-callout-card p-4 rounded-2xl bg-black/40 border border-slate-800 space-y-2 shadow-sm">
+                    <span className="font-extrabold text-purple-300 text-xs flex items-center gap-1.5">
+                      <span>🚪</span>
+                      <span>Evacuación & Turbulencia Severa</span>
+                    </span>
+                    <div className="space-y-1.5 text-slate-300">
+                      <p>
+                        <span className="text-[11px] text-slate-400 font-bold block">Evacuación ordenada en tierra (PA):</span>
+                        <strong className="font-mono text-xs text-rose-400">"TRIPULACIÓN DE CABINA, EVACUACIÓN, EVACUACIÓN, EVACUACIÓN"</strong>
+                      </p>
+                      <p className="pt-1 border-t border-slate-800/80">
+                        <span className="text-[11px] text-slate-400 font-bold block">Turbulencia Severa Inminente (PA):</span>
+                        <strong className="font-mono text-xs text-amber-300">"TRIPULACIÓN DE CABINA, OCUPEN SUS ASIENTOS DE INMEDIATO"</strong>
+                      </p>
+                    </div>
                   </div>
 
                 </div>
