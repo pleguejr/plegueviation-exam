@@ -16,7 +16,8 @@ import {
   Keyboard,
   RotateCcw,
   Zap,
-  Trash2
+  Trash2,
+  Search
 } from 'lucide-react';
 import { Question, ExamSession, ExamSessionAnswer, Option, QuestionStats } from '../types';
 import { recordAnswerStat, toggleQuestionFlag, getQuestionStat } from '../services/db';
@@ -25,6 +26,7 @@ import { SpeedSummaryTable } from './SpeedSummaryTable';
 import { PlanningMinimaTable } from './PlanningMinimaTable';
 import { FormattedText } from './FormattedText';
 import { DeleteConfirmModal } from './DeleteConfirmModal';
+import { ReviewRequestModal } from './ReviewRequestModal';
 import { getSpeedSummaryTableType, getPlanningMinimaTableType } from '../utils/aircraftRules';
 
 
@@ -50,6 +52,7 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
   const [questionStartTime, setQuestionStartTime] = useState(Date.now());
   const [currentStat, setCurrentStat] = useState<QuestionStats | null>(null);
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
+  const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
   
   // Auto-advance toggle (activo por defecto y persistente en localStorage)
   const [autoAdvance, setAutoAdvance] = useState<boolean>(() => {
@@ -346,6 +349,14 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
                 title="Marcar pregunta (Flag / Pin)"
               >
                 <Bookmark className={`w-4 h-4 ${currentAnswer?.isFlagged ? 'fill-current' : ''}`} />
+              </button>
+
+              <button
+                onClick={() => setIsReviewModalOpen(true)}
+                className="p-1.5 rounded-lg border bg-slate-800/80 border-slate-700 text-slate-400 hover:text-amber-300 hover:border-amber-500/50 hover:bg-amber-950/40 transition-colors"
+                title="Reportar pregunta para revisión técnica / auditoría"
+              >
+                <Search className="w-4 h-4" />
               </button>
 
               <button
@@ -731,6 +742,13 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
         question={currentQuestion}
         onClose={() => setIsDeleteModalOpen(false)}
         onConfirm={handleDeleteCurrentQuestion}
+      />
+
+      {/* Modal de reporte de pregunta para revisión / auditoría */}
+      <ReviewRequestModal
+        isOpen={isReviewModalOpen}
+        question={currentQuestion || null}
+        onClose={() => setIsReviewModalOpen(false)}
       />
 
     </div>

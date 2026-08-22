@@ -13,11 +13,12 @@ When generating or editing aviation questions, flight manuals, operations checkl
 
 ---
 
-## 1. Bugs & Screenshots Workflow (Carpeta `bugs/`)
+## 1. Bugs, Solicitudes de Revisión y Workflow de Auditoría
 - **Ruta de Pantallazos de Errores**: `C:\Users\plegu\My Drive\Antigravity\Plegueviation exam\bugs\`
-- **Protocolo de Acción Obligatorio**:
-  * Siempre que el usuario solicite corregir fallos, errores o bugs en preguntas, el agente debe **revisar en primer lugar esta carpeta `bugs/`** usando `list_dir` y `view_file` para examinar los pantallazos colocados por el usuario.
-  * Analizar la captura del error, identificar el ID del reactivo o contenido afectado, cotejar con los manuales oficiales de la Sección 0, e implementar la solución correspondiente.
+- **Base de Datos de Preguntas a Revisar**: `banks/questions_for_review.json` y `apps/web-pwa/public/banks/questions_for_review.json` (alimentada por el botón **Revisión** de la PWA).
+- **Protocolo de Acción Obligatorio ante "auditoría" / "auditoria"**:
+  * Siempre que el usuario solicite ejecutar **"auditoría"** o corregir fallos, el agente debe **inspeccionar en primer lugar `banks/questions_for_review.json` y la carpeta `bugs/`**.
+  * Analizar cada pregunta reportada, motivo de revisión y notas del piloto, cotejar contra los manuales oficiales de la Sección 0 (MOA, MOB, MEL, AOM, SOPM, AFM, POH), e implementar la corrección en los bancos de `banks/`.
 
 ---
 

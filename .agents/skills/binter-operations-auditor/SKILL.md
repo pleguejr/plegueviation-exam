@@ -140,3 +140,31 @@ In Binter Canarias, NITS is strictly forbidden; **`TELSI`** is the only authoriz
   * Extensión tras despegue del último sector: lo necesario hasta aterrizar seguro en destino o alternativo.
   * Reducción máxima de descanso fuera de base: máximo $-1\text{ hora}$ (mínimo absoluto $10\text{ horas}$).
   * Notificación oficial a AESA: plazo máximo de $28\text{ días}$ si la extensión o reducción supera $1\text{ hora}$. Registro obligatorio en ATL y formulario FOR-DISC / ASR.
+
+---
+
+## 5. Protocolo de Auditoría y Depuración Activa (Comando "auditoría" / "auditoria")
+
+Siempre que el usuario ejecute la instrucción **"auditoría"** o **"auditoria"** en el chat de Auditoría & Depuración:
+
+1. **Inspección de Solicitudes y Registros**:
+   - **Registro de Preguntas a Revisar**: Comprobar `banks/questions_for_review.json` y el listado de solicitudes generadas desde el botón **"Revisión"** de la PWA.
+   - **Carpeta de Capturas de Pantalla**: Inspeccionar `C:\Users\plegu\My Drive\Antigravity\Plegueviation exam\bugs\` para leer cualquier captura de pantalla añadida por el usuario.
+   - **Registro de Eliminadas**: Comprobar `banks/deleted_questions.json` para verificar si alguna pregunta reportada debe ser purgada o corregida de raíz.
+
+2. **Auditoría Técnica contra Manuales Oficiales**:
+   - Cotejar cada pregunta reportada con los manuales oficiales de la Sección 0 (MOA, MOB, MEL, AOM, SOPM, AFM, POH).
+   - Verificar si la discrepancia afecta a:
+     * Datos numéricos (velocidades, pesos, altitudes, plazos MEL, tiempos FTL).
+     * Siglas, acrónimos o mnemónicos (RETSE, E-DALTA, IMFLOCC, TELSI, MEANA, etc.).
+     * Ambigüedad en distractores o redacción confusa.
+     * Citas documentales o tablas oficiales en `explanation.text`.
+
+3. **Ejecución de Corrección y Compilación**:
+   - Aplicar los cambios exactos en el archivo JSON del banco correspondiente en `banks/`.
+   - Ejecutar `python cli/bin/build_banks.py` y `npm run build` en `apps/web-pwa`.
+   - Actualizar el estado de la solicitud de revisión a resuelta.
+
+4. **Informe de Auditoría al Usuario**:
+   - Presentar una tabla clara con: ID de pregunta, motivo reportado, referencia al manual oficial (Capítulo/Página), y corrección implementada.
+

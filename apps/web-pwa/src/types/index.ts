@@ -29,6 +29,16 @@ export interface DeletedQuestion {
   reason?: string;
 }
 
+export interface ReviewRequest {
+  id: string;
+  questionId: string;
+  question: Question;
+  requestedAt: number;
+  reasonCategory: string;
+  comment?: string;
+  status: 'pending' | 'resolved';
+}
+
 export interface Question {
   id: string;
   subject_id: string;

@@ -5,6 +5,7 @@ import {
   RotateCcw, 
   Shuffle, 
   Trash2, 
+  Search,
   CheckCircle2, 
   XCircle, 
   Sparkles, 
@@ -30,6 +31,7 @@ import { filterFlashcards, getFlashcardBadge, getFlashcardType } from '../utils/
 import { shuffle, deleteQuestionFromBank } from '../services/questionsService';
 import { recordAnswerStat, getQuestionStat } from '../services/db';
 import { DeleteConfirmModal } from './DeleteConfirmModal';
+import { ReviewRequestModal } from './ReviewRequestModal';
 import { FormattedText } from './FormattedText';
 import { SpeedSummaryTable } from './SpeedSummaryTable';
 import { PlanningMinimaTable } from './PlanningMinimaTable';
@@ -57,6 +59,7 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
   const [isFlipped, setIsFlipped] = useState(false);
   const [deck, setDeck] = useState<Question[]>([]);
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
+  const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
   const [isSessionCompleted, setIsSessionCompleted] = useState(false);
 
   // Estadísticas de la sesión actual
@@ -292,14 +295,25 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
           </button>
 
           {currentQuestion && !isSessionCompleted && (
-            <button
-              onClick={() => setIsDeleteModalOpen(true)}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-rose-950/60 hover:bg-rose-900 text-rose-300 border border-rose-500/40 text-xs font-bold transition-all active:scale-95"
-              title="Eliminar esta pregunta del banco permanente"
-            >
-              <Trash2 className="w-3.5 h-3.5" />
-              <span>Eliminar</span>
-            </button>
+            <>
+              <button
+                onClick={() => setIsReviewModalOpen(true)}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/30 text-xs font-bold transition-all active:scale-95"
+                title="Reportar esta pregunta para revisión técnica / auditoría"
+              >
+                <Search className="w-3.5 h-3.5" />
+                <span>Revisión</span>
+              </button>
+
+              <button
+                onClick={() => setIsDeleteModalOpen(true)}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-rose-950/60 hover:bg-rose-900 text-rose-300 border border-rose-500/40 text-xs font-bold transition-all active:scale-95"
+                title="Eliminar esta pregunta del banco permanente"
+              >
+                <Trash2 className="w-3.5 h-3.5" />
+                <span>Eliminar</span>
+              </button>
+            </>
           )}
         </div>
       </div>
@@ -756,6 +770,13 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
         isOpen={isDeleteModalOpen}
         onClose={() => setIsDeleteModalOpen(false)}
         onConfirm={handleDeleteConfirm}
+      />
+
+      {/* Review Request Modal */}
+      <ReviewRequestModal
+        question={currentQuestion || null}
+        isOpen={isReviewModalOpen}
+        onClose={() => setIsReviewModalOpen(false)}
       />
 
     </div>
