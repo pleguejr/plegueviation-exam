@@ -109,7 +109,12 @@ export async function mergeRemoteData(remoteData: any): Promise<{
           lastAnsweredAt: Math.max(localStat.lastAnsweredAt || 0, remoteStat.lastAnsweredAt || 0) || null,
           lastResult: (remoteStat.lastAnsweredAt || 0) > (localStat.lastAnsweredAt || 0) ? remoteStat.lastResult : localStat.lastResult,
           isFlagged: localStat.isFlagged || remoteStat.isFlagged,
-          history: mergedHistory
+          history: mergedHistory,
+          flashcardViews: Math.max(localStat.flashcardViews || 0, remoteStat.flashcardViews || 0),
+          flashcardLastRating: (remoteStat.flashcardLastViewedAt || 0) > (localStat.flashcardLastViewedAt || 0)
+            ? (remoteStat.flashcardLastRating || localStat.flashcardLastRating)
+            : (localStat.flashcardLastRating || remoteStat.flashcardLastRating),
+          flashcardLastViewedAt: Math.max(localStat.flashcardLastViewedAt || 0, remoteStat.flashcardLastViewedAt || 0) || null
         };
 
         await db.questionStats.put(merged);
