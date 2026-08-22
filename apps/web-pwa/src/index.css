@@ -3,59 +3,89 @@
 @tailwind utilities;
 
 @layer base {
+  /* =========================================================================
+     NIGHT MODE (Modo Noche / Cabina Oscura Binter)
+     ========================================================================= */
   body {
-    @apply bg-[#070d1c] text-slate-100 font-sans selection:bg-sky-500 selection:text-white transition-colors duration-200;
+    @apply bg-[#071426] text-slate-100 font-sans selection:bg-[#008f45] selection:text-white transition-colors duration-200;
     background-image: 
-      radial-gradient(at 0% 0%, rgba(14, 165, 233, 0.08) 0px, transparent 50%),
-      radial-gradient(at 100% 0%, rgba(16, 185, 129, 0.06) 0px, transparent 50%),
-      radial-gradient(at 50% 100%, rgba(99, 102, 241, 0.07) 0px, transparent 50%);
+      radial-gradient(at 0% 0%, rgba(0, 143, 69, 0.1) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(0, 85, 150, 0.12) 0px, transparent 50%),
+      radial-gradient(at 50% 100%, rgba(245, 158, 11, 0.05) 0px, transparent 50%);
     background-attachment: fixed;
     -webkit-tap-highlight-color: transparent;
   }
 
+  /* =========================================================================
+     DAY MODE (Modo Día / Aeronáutico Binter Canarias)
+     ========================================================================= */
   body.theme-light {
-    background-color: #f1f5f9 !important;
+    background-color: #f4f8f6 !important;
     color: #0f172a !important;
     background-image: 
-      radial-gradient(at 0% 0%, rgba(14, 165, 233, 0.08) 0px, transparent 50%),
-      radial-gradient(at 100% 0%, rgba(16, 185, 129, 0.06) 0px, transparent 50%),
-      radial-gradient(at 50% 100%, rgba(99, 102, 241, 0.06) 0px, transparent 50%) !important;
+      radial-gradient(at 0% 0%, rgba(0, 143, 69, 0.08) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(0, 85, 150, 0.06) 0px, transparent 50%),
+      radial-gradient(at 50% 100%, rgba(245, 158, 11, 0.04) 0px, transparent 50%) !important;
   }
 }
 
 /* Glassmorphism Cards (Dark Mode) */
 .glass-panel {
-  background: rgba(17, 31, 61, 0.7);
+  background: rgba(12, 28, 56, 0.75);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(56, 189, 248, 0.15);
+  border: 1px solid rgba(0, 143, 69, 0.25);
 }
 
 .glass-panel-hover:hover {
-  background: rgba(22, 37, 72, 0.85);
-  border-color: rgba(56, 189, 248, 0.35);
-  box-shadow: 0 10px 30px -10px rgba(14, 165, 233, 0.2);
+  background: rgba(16, 38, 76, 0.9);
+  border-color: rgba(0, 143, 69, 0.5);
+  box-shadow: 0 10px 30px -10px rgba(0, 143, 69, 0.25);
 }
 
 /* =========================================================================
-   LIGHT / DAY MODE STYLES (Modo Día Aeronáutico)
+   ESTILOS COMPLETOS DE MODO DÍA (Binter Day Palette & Total Legibility)
    ========================================================================= */
+
+/* 1. Header / Navbar Binter Oficial en Modo Día */
+.theme-light header {
+  background: linear-gradient(90deg, #006837 0%, #008f45 50%, #004b87 100%) !important;
+  border-bottom: 2px solid #00502a !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 15px -3px rgba(0, 104, 55, 0.25) !important;
+}
+
+.theme-light header button {
+  color: #ffffff !important;
+}
+
+.theme-light header .text-sky-200 {
+  color: #e6f4ea !important;
+}
+
+.theme-light header .text-sky-200:hover {
+  color: #ffffff !important;
+}
+
+/* 2. Paneles, Tarjetas y Fondos de Componentes */
 .theme-light .glass-panel {
-  background: rgba(255, 255, 255, 0.88) !important;
+  background: #ffffff !important;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(14, 165, 233, 0.25) !important;
-  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.06) !important;
+  border: 1px solid #d1fae5 !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 104, 55, 0.06) !important;
 }
 
 .theme-light .glass-panel-hover:hover {
   background: #ffffff !important;
-  border-color: rgba(14, 165, 233, 0.5) !important;
-  box-shadow: 0 10px 25px -5px rgba(14, 165, 233, 0.15) !important;
+  border-color: #008f45 !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 143, 69, 0.15) !important;
 }
 
 .theme-light .bg-\[\#070d1c\],
+.theme-light .bg-\[\#070e1e\],
 .theme-light .bg-\[\#080e1e\],
+.theme-light .bg-\[\#071426\],
 .theme-light .bg-\[\#0e1933\],
 .theme-light .bg-\[\#091224\],
 .theme-light .bg-\[\#0f1b35\],
@@ -64,26 +94,199 @@
 .theme-light .bg-\[\#081224\] {
   background-color: #ffffff !important;
   color: #0f172a !important;
-  border-color: #cbd5e1 !important;
-  box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.05) !important;
+  border-color: #e2e8f0 !important;
+  box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .theme-light .bg-\[\#0a1f3d\],
 .theme-light .bg-\[\#06101f\],
-.theme-light .bg-\[\#070e1e\],
 .theme-light .bg-\[\#0b1429\],
 .theme-light .bg-\[\#0f1d3d\],
 .theme-light .bg-\[\#16203b\] {
   background-color: #f8fafc !important;
   color: #0f172a !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* 3. FLASHCARDS 3D CARD EN MODO DÍA */
+.theme-light .min-h-\[420px\] {
+  background: #ffffff !important;
+  border: 2px solid #008f45 !important;
+  color: #0f172a !important;
+  box-shadow: 0 10px 30px -5px rgba(0, 143, 69, 0.12) !important;
+}
+
+.theme-light .min-h-\[420px\] h2,
+.theme-light .min-h-\[420px\] h3,
+.theme-light .min-h-\[420px\] .text-white {
+  color: #0f172a !important;
+}
+
+.theme-light .min-h-\[420px\] .bg-black\/30 {
+  background-color: #f0fdf4 !important;
+  border: 1.5px dashed #008f45 !important;
+  color: #064e3b !important;
+}
+
+.theme-light .min-h-\[420px\] .bg-black\/30 p,
+.theme-light .min-h-\[420px\] .bg-black\/30 span {
+  color: #065f46 !important;
+}
+
+/* Flashcard Answer Block on Back */
+.theme-light .min-h-\[420px\] .bg-emerald-950\/60 {
+  background-color: #ecfdf5 !important;
+  border: 1.5px solid #008f45 !important;
+  color: #064e3b !important;
+}
+
+.theme-light .min-h-\[420px\] .bg-emerald-950\/60 .text-emerald-100,
+.theme-light .min-h-\[420px\] .bg-emerald-950\/60 .text-emerald-200,
+.theme-light .min-h-\[420px\] .bg-emerald-950\/60 .text-emerald-300,
+.theme-light .min-h-\[420px\] .bg-emerald-950\/60 span,
+.theme-light .min-h-\[420px\] .bg-emerald-950\/60 div {
+  color: #064e3b !important;
+}
+
+/* Flashcard Explanation Container */
+.theme-light .min-h-\[420px\] .bg-black\/40 {
+  background-color: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  color: #1e293b !important;
+}
+
+.theme-light .min-h-\[420px\] .bg-black\/40 .text-slate-200,
+.theme-light .min-h-\[420px\] .bg-black\/40 .text-slate-300,
+.theme-light .min-h-\[420px\] .bg-black\/40 p {
+  color: #1e293b !important;
+}
+
+/* 4. PREGUNTAS Y OPCIONES EN EXÁMENES Y EXPLORADOR */
+.theme-light .space-y-3 .border-slate-800,
+.theme-light .space-y-3 .border-slate-700 {
+  border-color: #e2e8f0 !important;
+}
+
+/* Option Row Unselected */
+.theme-light button.group:not(.bg-emerald-950):not(.bg-rose-950),
+.theme-light .border-slate-800.bg-\[\#091224\],
+.theme-light .bg-slate-900\/90 {
+  background-color: #f8fafc !important;
   border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+.theme-light button.group:hover {
+  background-color: #f0fdf4 !important;
+  border-color: #008f45 !important;
+}
+
+.theme-light button.group span.text-slate-300,
+.theme-light button.group span.text-slate-200,
+.theme-light button.group span.text-slate-400 {
+  color: #1e293b !important;
+}
+
+/* Option Letter Badge (A, B, C, D) */
+.theme-light .bg-slate-800.text-slate-400,
+.theme-light .bg-slate-800.text-sky-300 {
+  background-color: #e2e8f0 !important;
+  color: #004b87 !important;
+  border-color: #cbd5e1 !important;
+}
+
+/* Correct Option in Exam Review */
+.theme-light .bg-emerald-950,
+.theme-light .bg-emerald-950\/40,
+.theme-light .bg-emerald-950\/60 {
+  background-color: #ecfdf5 !important;
+  border-color: #008f45 !important;
+  color: #064e3b !important;
+}
+
+.theme-light .bg-emerald-950 span,
+.theme-light .bg-emerald-950\/40 span,
+.theme-light .bg-emerald-950\/60 span,
+.theme-light .bg-emerald-950 p,
+.theme-light .bg-emerald-950\/40 p {
+  color: #064e3b !important;
+}
+
+.theme-light .bg-emerald-500 {
+  background-color: #008f45 !important;
+  color: #ffffff !important;
+}
+
+/* Incorrect Option in Exam Review */
+.theme-light .bg-rose-950,
+.theme-light .bg-rose-950\/40,
+.theme-light .bg-rose-950\/60 {
+  background-color: #fff1f2 !important;
+  border-color: #e11d48 !important;
+  color: #881337 !important;
+}
+
+.theme-light .bg-rose-950 span,
+.theme-light .bg-rose-950\/40 span,
+.theme-light .bg-rose-950\/60 span,
+.theme-light .bg-rose-950 p,
+.theme-light .bg-rose-950\/40 p {
+  color: #881337 !important;
+}
+
+.theme-light .bg-rose-500 {
+  background-color: #e11d48 !important;
+  color: #ffffff !important;
+}
+
+/* 5. TABLAS DE EXPLICACIÓN Y VELOCIDADES */
+.theme-light .bg-\[\#081224\] {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+}
+
+.theme-light .bg-gradient-to-r.from-\[\#0f244a\].to-\[\#16366b\] {
+  background: linear-gradient(90deg, #006837, #004b87) !important;
+  color: #ffffff !important;
+}
+
+.theme-light .bg-gradient-to-r.from-\[\#0f244a\].to-\[\#16366b\] span {
+  color: #ffffff !important;
+}
+
+.theme-light table th {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+.theme-light table td {
+  background-color: #ffffff !important;
+  color: #1e293b !important;
+  border-color: #e2e8f0 !important;
+}
+
+.theme-light table tr:nth-child(even) td {
+  background-color: #f8fafc !important;
+}
+
+/* 6. TIPOGRAFÍA Y COLORES DE TEXTO EN MODO DÍA */
+.theme-light h1, 
+.theme-light h2, 
+.theme-light h3, 
+.theme-light h4,
+.theme-light strong,
+.theme-light .font-bold,
+.theme-light .font-black,
+.theme-light .font-extrabold {
+  color: #0f172a !important;
 }
 
 .theme-light .text-white {
   color: #0f172a !important;
 }
 
-.theme-light .text-slate-100,
+.theme-light .text-slate-100, 
 .theme-light .text-slate-200 {
   color: #1e293b !important;
 }
@@ -93,34 +296,56 @@
 }
 
 .theme-light .text-slate-400 {
+  color: #475569 !important;
+}
+
+.theme-light .text-slate-500 {
   color: #64748b !important;
 }
 
-.theme-light .border-slate-800,
-.theme-light .border-slate-700 {
-  border-color: #e2e8f0 !important;
+/* Resaltados de marca Binter en modo día */
+.theme-light .text-sky-400,
+.theme-light .text-sky-300 {
+  color: #006837 !important;
+  font-weight: bold !important;
 }
 
-.theme-light .bg-black\/40,
-.theme-light .bg-black\/30,
-.theme-light .bg-black\/80 {
-  background-color: rgba(241, 245, 249, 0.9) !important;
+.theme-light .text-amber-400,
+.theme-light .text-amber-300 {
+  color: #b45309 !important;
+  font-weight: bold !important;
+}
+
+/* 7. BOTONES Y CONTROLES */
+.theme-light .bg-slate-800 {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
   border-color: #cbd5e1 !important;
 }
 
-.theme-light .bg-slate-800 {
+.theme-light .bg-slate-800:hover {
   background-color: #e2e8f0 !important;
+}
+
+.theme-light input,
+.theme-light select,
+.theme-light textarea {
+  background-color: #ffffff !important;
   color: #0f172a !important;
+  border-color: #cbd5e1 !important;
 }
 
-.theme-light .hover\:bg-slate-700:hover,
-.theme-light .hover\:bg-slate-800:hover {
-  background-color: #cbd5e1 !important;
+.theme-light input::placeholder,
+.theme-light textarea::placeholder {
+  color: #94a3b8 !important;
 }
 
-.theme-light header {
-  background-color: #0369a1 !important;
-  border-color: #0284c7 !important;
+/* 8. MODALES EN MODO DÍA */
+.theme-light .fixed .bg-\[\#0e1933\] {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border: 1px solid #cbd5e1 !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
 }
 
 /* Custom scrollbars */
@@ -148,7 +373,7 @@
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #38bdf8;
+  background: #008f45;
 }
 
 @keyframes fadeIn {

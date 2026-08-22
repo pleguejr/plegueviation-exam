@@ -38,10 +38,10 @@ export const Navbar: React.FC<NavbarProps> = ({
   }, []);
 
   return (
-    <header className="sticky top-0 z-40 bg-[#162f59] border-b border-[#21437d] text-white shadow-md transition-colors duration-200">
+    <header className="sticky top-0 z-40 bg-gradient-to-r from-[#002f59] via-[#004b87] to-[#00522c] border-b border-[#008f45]/30 text-white shadow-md transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 lg:px-8 py-2.5 flex items-center justify-between">
         
-        {/* Brand & Logo (Estilo AviationExam) */}
+        {/* Brand & Logo (Binter Canarias Edition) */}
         <div 
           onClick={() => onSelectTab('dashboard')} 
           className="flex items-center gap-3 cursor-pointer group select-none"
@@ -49,9 +49,9 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="flex items-center gap-2">
             <span className="text-xl font-bold tracking-tight text-white font-sans flex items-center gap-1.5">
               <span>Plegueviation</span>
-              <span className="border-2 border-white px-1 py-0.2 rounded text-xs font-black bg-sky-600">Exam</span>
+              <span className="border-2 border-white px-1.5 py-0.2 rounded-md text-xs font-black bg-[#008f45] shadow-sm">Exam</span>
             </span>
-            <span className="text-[10px] font-mono font-bold text-sky-200 border-l border-sky-400/40 pl-2">
+            <span className="text-[10px] font-mono font-bold text-emerald-300 border-l border-emerald-400/40 pl-2">
               Binter Ops
             </span>
           </div>

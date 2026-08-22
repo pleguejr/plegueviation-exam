@@ -8,6 +8,16 @@ export default {
   theme: {
     extend: {
       colors: {
+        binter: {
+          green: '#008f45',
+          greenLight: '#00a651',
+          greenDark: '#006837',
+          blue: '#004b87',
+          blueLight: '#0284c7',
+          blueDark: '#071426',
+          sand: '#f59e0b',
+          cloud: '#f4f8f6'
+        },
         aviation: {
           50: '#f0f7ff',
           100: '#e0effe',
@@ -19,16 +29,16 @@ export default {
           700: '#0358a1',
           800: '#074b85',
           900: '#0c3f6e',
-          950: '#06172e' // Deep aero navy
+          950: '#06172e'
         },
         cockpit: {
-          bg: '#080e1e',
-          surface: '#0f1b35',
-          surfaceHover: '#162548',
-          card: '#111f3d',
-          border: '#1f335e',
-          borderHighlight: '#38bdf8',
-          accent: '#00d2ff',
+          bg: '#071426',
+          surface: '#0d1f38',
+          surfaceHover: '#142c50',
+          card: '#0f2442',
+          border: '#1b3b68',
+          borderHighlight: '#008f45',
+          accent: '#00a651',
           emerald: '#10b981',
           rose: '#f43f5e',
           amber: '#f59e0b',
@@ -40,6 +50,7 @@ export default {
         mono: ['JetBrains Mono', 'Fira Code', 'monospace']
       },
       boxShadow: {
+        'glow-binter': '0 0 20px -5px rgba(0, 143, 69, 0.4)',
         'glow-sky': '0 0 20px -5px rgba(56, 189, 248, 0.35)',
         'glow-emerald': '0 0 20px -5px rgba(16, 185, 129, 0.4)',
         'glow-rose': '0 0 20px -5px rgba(244, 63, 94, 0.4)',
