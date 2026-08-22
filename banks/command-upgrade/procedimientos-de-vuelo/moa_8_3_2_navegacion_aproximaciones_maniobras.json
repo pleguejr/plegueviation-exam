@@ -1,0 +1,1852 @@
+[
+  {
+    "id": "CMD-MOA-FLT-051",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Criterios de Aproximación Estabilizada (Stabilized Approach Criteria)",
+    "stem": "¿Cuáles son los parámetros obligatorios que deben cumplirse para considerar una aproximación como 'Estabilizada' a 1.000 ft IMC y 500 ft VMC?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trayectoria de vuelo correcta, pequeños cambios de rumbo/cabeceo, velocidad $V_{app} -0/+10\text{ kt}$, configuración de aterrizaje completa, régimen $\\le 1.000\text{ ft/min}$, empuje estabilizado y checklists completadas",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Tren de aterrizaje arriba, flaps recogidos y acelerando a velocidad de crucero",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Descendiendo a 3.000 pies por minuto con los aerofrenos extendidos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Volar en zigzag a 50 pies sobre los árboles buscando la pista de aterrizaje",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los **Criterios de Aproximación Estabilizada (CAT.OP.MPA.115 / MOA 8.3.2.14 / SOPM)** exigen a **1.000 ft IMC** y **500 ft VMC**: **1º Senda correcta ($\\pm 1$ punto), 2º Velocidad ($V_{app} -0/+10\text{ kt}$), 3º Configuración de aterrizaje completa (Gear DOWN / Flap Landing), 4º Régimen vertical $\\le 1.000\text{ ft/min}$, y 5º Empuje ajustado y estabilizado**.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-052",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Política de Frustrada Obligatoria ante Aproximación No Estabilizada",
+    "stem": "Si al cruzar la puerta de estabilización (1.000 ft en IMC o 500 ft en VMC) alguno de los parámetros no se cumple, ¿cuál es la acción mandatoria del PF?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar de forma inmediata la maniobra de Aproximación Frustrada (Go-Around), cantando 'GO AROUND, FLAPS [X]' y aplicando empuje TOGA",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Continuar el descenso e intentar estabilizar el avión durante la recogida sobre la pista",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cortar motores a ralentí y picar el morro hacia el umbral de la pista",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pedir permiso a los pasajeros para decidir si aterrizar o frustrar",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "**Política estricta de 'No-Fault Go-Around'**: Si la aproximación no está estabilizada a la altitud de puerta (1.000 ft IMC / 500 ft VMC), **la frustrada (Go-Around) es obligatoria e imperativa** (MOA 8.3.2.14 / SOPM).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-053",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.15 - Aproximaciones de No Precisión (NPA 2D) con Técnica CDFA",
+    "stem": "¿Por qué Binter exige la técnica de Descenso Continuo en Aproximación Final (CDFA) en todas las aproximaciones de no precisión NPA 2D?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Porque elimina la maniobra tradicional escalonada ('dive and drive') y la nivelada a baja cota, reduciendo drásticamente el riesgo de impacto contra el terreno sin pérdida de control (CFIT)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Porque permite volar a mayor velocidad que en aproximaciones ILS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Porque ahorra neumáticos durante la carrera de aterrizaje",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Porque no requiere consultar cartas de aproximación instrumental",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La técnica **CDFA (Continuous Descent Final Approach / MOA 8.3.2.15)** estabiliza el descenso con un ángulo constante ($~3^\\circ$), evitando niveladas en la MDA y eliminando la causa principal de accidentes **CFIT (Controlled Flight Into Terrain)**.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-054",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.15 - Concepto y Cálculo de la Altitud de Decisión Derivada (DDA)",
+    "stem": "Al volar una aproximación NPA 2D con técnica CDFA, ¿cómo se determina la Altitud de Decisión Derivada (Derived Decision Altitude - DDA)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Añadiendo un margen de seguridad de **50 pies a la MDA/MDH publicada ($\text{DDA} = \text{MDA} + 50\text{ ft}$)** para garantizar que no se perfore la MDA durante la recogida de la frustrada",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Restando 500 pies a la altitud de la pista de aterrizaje",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Multiplicando la MDA por dos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Utilizando la altura de los edificios más cercanos dividida por tres",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Dado que en CDFA la aproximación frustrada se inicia sin nivelar el avión, el MOA 8.3.2.15 define la **DDA sumando 50 ft a la MDA ($\text{DDA} = \text{MDA} + 50\text{ ft}$)**, asegurando que la pérdida transitoria de altitud en la frustrada no vulnere la MDA legal.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-055",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.15.4 - Aproximaciones en Circuito Visual (Circling / Visual Maneuvering)",
+    "stem": "Si durante una aproximación en circuito visual (Circling) se pierde la referencia visual con la pista o el terreno, ¿qué maniobra de frustrada debe ejecutarse?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar un viraje de ascenso hacia la pista de aproximación instrumental original y seguir el procedimiento de aproximación frustrada publicado para dicha pista",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Continuar descendiendo a ciegas confiando en encontrar la pista entre la niebla",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aterrizar inmediatamente en la calle de rodaje más cercana",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Hacer una espera a 100 pies sobre los edificios de la ciudad",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Norma PANS-OPS y MOA 8.3.2.15: Ante la pérdida de contacto visual en *Circling*, **se inicia ascenso virando hacia el centro del aeródromo/pista de aproximación inicial y se engancha la frustrada publicada de la pista instrumental**.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-056",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Callouts Obligatorios de Cabina en Aproximación Instrumental",
+    "stem": "¿Cuáles son los callouts estándar obligatorios cantados por el PM al aproximarse a mínimos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alerta de '**One Hundred Above**' (a 100 ft sobre mínimos) y '**Minimums**' (en los mínimos exactos), respondiendo el PF '**Landing**' (con contacto visual) o '**Go Around**' (sin contacto)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El PM permanece en silencio absoluto para no distraer al PF",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cantar 'Cuidado con la pista' y 'Frena fuerte'",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Gritar por el altavoz de cabina para avisar a los pasajeros",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Protocolo estándar de cabina (SOPM / MOA 8.3.2.14):\n- **PM**: *'One Hundred Above'* $\rightarrow$ **PF**: *'Checked'*\n- **PM**: *'Minimums'* $\rightarrow$ **PF**: *'Landing'* (referencias visuales continuas) o *'Go Around, Flaps [X]'* (sin referencias).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-057",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Callouts de Desviación de Parámetros por el PM",
+    "stem": "¿Qué callout debe cantar obligatoriamente el PM si durante la aproximación final detecta una velocidad excesiva ($> V_{app} + 10\text{ kt}$) o régimen $> 1.000\text{ ft/min}$?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cantar inmediatamente '**SPEED**' ante desviaciones de velocidad o '**SINK RATE**' si el régimen supera 1.000 ft/min, debiendo el PF corregir de inmediato y confirmar 'CORRECTING'",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "No cantar nada para no poner nervioso al comandante",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Tomar los mandos de forma violenta sin decir ninguna palabra",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Desconectar las pantallas de navegación del copiloto",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El PM tiene el **deber imperativo de monitorización activa**: debe cantar con voz clara y firme **`'SPEED'`**, **`'SINK RATE'`**, **`'GLIDE SLOPE'`** o **`'LOCALIZER'`** ante cualquier excursión de parámetros, exigiendo la corrección inmediata del PF (MOA 8.3.2.14 / SOPM).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-058",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.16 - Aproximaciones RNP APCH a Mínimos LPV (Localizer Performance with Vertical Guidance)",
+    "stem": "¿En qué se basa el guiado vertical y lateral de una aproximación RNP APCH a mínimos LPV en el Embraer 195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En aumentación espacial SBAS / EGNOS que proporciona guiado angular de alta precisión lateral y vertical hasta una Altitud de Decisión (DA) de hasta 200 pies",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En radiobalizas terrestres NDB de onda media",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En el altímetro barométrico convencional sin corrección de temperatura",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En un haz de láser emitido desde la torre de control",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las aproximaciones **LPV (SBAS / EGNOS / MOA 8.3.2.16)** proporcionan guiado geométrico vertical y angular equivalente a un ILS CAT I, permitiendo operar con **Altitud de Decisión (DA) de hasta 200 ft AGL** sin depender de ayudas terrestres.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-059",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.16 - Efecto de la Temperatura en Aproximaciones RNP a Mínimos LNAV/VNAV (Baro-VNAV)",
+    "stem": "En aproximaciones RNP basadas en Baro-VNAV (sin SBAS), ¿por qué existe un límite de temperatura mínima publicada en la carta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Porque las temperaturas muy bajas provocan que el altímetro barométrico sobreestime la altitud real, haciendo que la senda Baro-VNAV vuele más bajo y reduzca el margen de franqueamiento de obstáculos",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Porque a bajas temperaturas el queroseno no fluye por los inyectores",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Porque las pantallas del FMS se congelan por debajo de 0°C",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Porque la antena del GPS pierde la señal con temperaturas bajo cero",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El error térmico barométrico en aire frío hace que **la trayectoria Baro-VNAV descienda por debajo de la senda nominal de diseño**; si la $OAT$ es inferior a la temperatura mínima de la carta, **está prohibido volar a mínimos LNAV/VNAV sin compensación de temperatura FMS** (MOA 8.3.2.16 / PANS-OPS).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-060",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.17 - Autorización y Condiciones para Aproximaciones Visuales",
+    "stem": "¿Qué condiciones meteorológicas y visuales mínimas deben concurrir para que la tripulación acepte o solicite una Aproximación Visual?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mantener contacto visual continuo con la pista o referencias del terreno, techo de nubes $\\ge 1.000\text{ ft}$ (o sobre el MVA) y visibilidad meteorológica $\\ge 5.000\text{ metros}$",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Visibilidad de 100 metros con nubes cubriendo el 100% de la pista",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se puede realizar una aproximación visual de noche sin luces de pista",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cualquier condición si el copiloto conoce el aeropuerto de memoria",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme a CAT.OP.MPA.110 y MOA 8.3.2.17, la **Aproximación Visual** exige: **visibilidad $\\ge 5.000\text{ m}$, techo $\\ge 1.000\text{ ft}$**, referencias visuales continuas con el terreno y que la aproximación pueda completarse visualmente con total seguridad.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-061",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.1 - Interceptación del Localizador (LOC) y Senda de Planeo (GS)",
+    "stem": "En una aproximación ILS, ¿cuál es la técnica de interceptación estándar para evitar falsos lóbulos de senda de planeo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Interceptar siempre el localizador (LOC) estabilizado por debajo de la senda de planeo (GS), capturando la senda de planeo desde abajo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Interceptar la senda de planeo en picado desde arriba a máxima velocidad",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Interceptar primero la senda de planeo antes de sintonizar el localizador",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Descender por debajo de la MDA antes de capturar el localizador",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para evitar la captura de **falsos lóbulos de senda (False Glideslope)** a $6^\\circ$ o $9^\\circ$, el procedimiento estándar exige **capturar el LOC primero y随后 capturar la senda de planeo (GS) desde abajo** a la altitud de interceptación publicada (SOPM / MOA 8.3.2.1).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-062",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.1 - Punto de No Retorno en la Aproximación (Approach Ban / Prohibición de Continuar)",
+    "stem": "Según la regla del 'Approach Ban' (CAT.OP.MPA.305 y MOA 8.3.2.1), ¿hasta qué punto puede continuarse una aproximación instrumental si el RVR/visibilidad notificado cae por debajo del mínimo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Si el RVR cae por debajo del mínimo antes del FAF (o antes de 1.000 ft sobre el terreno), la aproximación NO debe continuarse; si cae una vez cruzado el FAF / 1.000 ft, se permite continuar hasta la DA/MDA",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se debe frustrar inmediatamente en cualquier punto incluso en la recogida sobre la pista",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se permite continuar hasta el aterrizaje en cualquier caso ignorando los informes de RVR",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El Approach Ban no aplica si el comandante tiene más de 10 años de antigüedad",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Regla del **Approach Ban (1.000 ft / FAF)**: Si el RVR/visibilidad reportado está por debajo de mínimos **antes de 1.000 ft AGL / FAF, no se puede continuar el descenso**; si el informe degradado se recibe **por debajo de 1.000 ft AGL / pasado el FAF, se autoriza continuar hasta la DA/MDA** (MOA 8.3.2.1).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-063",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Referencias Visuales Requeridas en la DA para Aterrizar en CAT I",
+    "stem": "En una aproximación de precisión CAT I, ¿qué referencias visuales mínimas deben estar a la vista y mantenerse en la DA para autorizar el aterrizaje?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Al menos un elemento del sistema de luces de aproximación, umbral, marcas de umbral, luces de umbral, luces de toma de contacto (TDZ) o marcas de pista",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "La torre de control del aeropuerto a través de la ventanilla lateral",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Las luces de la ciudad más lejana en el horizonte",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No se requiere ninguna referencia visual pudiendo aterrizar a ciegas",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para continuar por debajo de la DA en **CAT I**, el piloto debe tener **contacto visual continuo con al menos un elemento visual de la pista** (luces de aproximación, umbral, TDZ o eje de pista) que permita evaluar la posición y régimen (MOA 8.3.2.1 / CAT.OP.MPA.305).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-064",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Uso de Inversores de Empuje (Thrust Reversers) en el Aterrizaje",
+    "stem": "¿Cuál es la política operacional de uso de los inversores de empuje tras la toma de contacto según el SOPM de Embraer?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Seleccionar empuje inverso inmediatamente tras la toma de las ruedas principales y rueda de morro, reduciendo a ralentí inverso al alcanzar 60 nudos para evitar ingestión de FOD",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mantener empuje inverso a máxima potencia hasta que el avión se detenga en el estacionamiento",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Desplegar los inversores de empuje en el aire a 500 pies de altitud",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Prohibir el uso de inversores en pistas mojadas o contaminadas",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El uso de **reversas (Thrust Reversers)** se activa en la toma para desacelerar enérgicamente y preservar los frenos de carbono, debiendo **reducirse a ralentí inverso (*Idle Reverse*) a 60 kt IAS** para proteger los motores contra la ingestión de gravilla o gases calientes (SOPM / MOA 8.3.2.14).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-065",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Uso del Sistema de Frenado Automático (Autobrake)",
+    "stem": "¿En qué modo de Autobrake se recomienda aterrizar en pistas mojadas, cortas o con baja eficacia de frenado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En modo Autobrake **MEDIUM (o HI/MAX según el análisis ePerf)**, asegurando una tasa de deceleración constante y simétrica desde la toma de contacto",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En modo Autobrake OFF frenando exclusivamente con el freno de mano de emergencia",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En modo RTO diseñado para el despegue",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Desconectando los sistemas antibloqueo de ruedas (Antiskid)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Autobrake (modo MED o HI)** aplica presión hidráulica regulada instantáneamente al tocar tierra, modulando el esfuerzo de frenado de forma óptima y homogénea en combinación con el sistema **Antiskid** (SOPM / MOA 8.3.2.14).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-066",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Toma Flotada (Floating) y Riesgo de Salida de Pista (Overrun)",
+    "stem": "¿Por qué está terminantemente prohibido 'flotar' prolongadamente en la recogida buscando un aterrizaje suave?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Porque flotar consume cientos de metros de pista disponible por segundo ($~70\text{ m/s}$ a 130 kt), reduciendo drásticamente la distancia de frenado restante con riesgo crítico de salida de pista (Overrun)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Porque la flotación aumenta la temperatura de las alas en 50°C",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Porque los frenos se bloquean automáticamente si el avión flota",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Porque el queroseno se derrama por los venteos alares",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El intento de realizar tomas excesivamente suaves prolongando la recogida (**Floating**) consume pista disponible a razón de $60-80\text{ metros por segundo}$; la aeronave debe **tomar firmemente en la Zona de Toma de Contacto (TDZ, entre 300 y 600 m del umbral)** (MOA 8.3.2.14 / FSF ALAR).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-067",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Ejecución de Aproximación Frustrada desde la Recogida (Balked Landing / Go-Around from Flare)",
+    "stem": "Si durante la recogida a escasos pies de la pista o tras un rebote se decide frustrar, ¿cuál es la técnica correcta de pilotaje?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pulsar TOGA, empuje de despegue a fondo, mantener actitud de cabeceo de morro arriba positiva, no retraer el tren hasta confirmar régimen de ascenso positivo y esperar a tener control total del avión",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Picar el morro bruscamente hacia el suelo para forzar la toma de ruedas",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Retraer los flaps a 0° instantáneamente mientras el avión rebota",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cortar motores a ralentí y aplicar frenos en el aire",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En una **Aproximación Frustrada desde la recogida (*Balked Landing*)**, se aplica **TOGA inmediato, se establece actitud de ascenso positivo** y **NO se retrae el tren de aterrizaje hasta confirmar variómetro positivo continuo**, aceptando que las ruedas puedan tocar momentáneamente la pista durante la transición (SOPM / MOA 8.3.2.14).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-068",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.16 - Navegación RNP AR (Required Navigation Performance with Authorization Required)",
+    "stem": "¿Qué características operativas y exigencias definen a los procedimientos de aproximación RNP AR APCH?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Requieren aprobación operacional específica del operador, avión con redundancia dual de FMS/sensores, capacidad de tramos curvos en radio fijo (RF Legs) y monitorización continua de contención RNP $< 0.3\text{ NM}$",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cualquier avioneta visual puede volar aproximaciones RNP AR sin autorización",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Son aproximaciones visuales guiadas por faros marítimos de costa",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No requieren el uso de piloto automático ni ordenadores de navegación",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las aproximaciones **RNP AR APCH (Authorization Required / MOA 8.3.2.16)** permiten trayectorias curvas complejas entre terreno montañoso (**RF Legs**) con tolerancias de precisión extrema (RNP 0.3 a 0.1 NM), requiriendo **aprobación específica de AESA, aviónica dual y entrenamiento específico de tripulación**.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-069",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.18 - Gestión de Fallo de Comunicaciones en la Aproximación Final (VMC vs IMC)",
+    "stem": "Si se sufre fallo de radio (Squawk 7600) en aproximación y se encuentra en condiciones meteorológicas visuales (VMC), ¿qué procedimiento aplica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Continuar en VMC, proceder al aeródromo adecuado más conveniente, observar el tráfico visual y aterrizar en la pista más apropiada buscando señales luminosas de la torre",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Declarar emergencia militar y ascender a 40.000 pies",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Apagar todos los sistemas de navegación y aterrizar en una autopista",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar una espera indefinida sobre el VOR hasta quedarse sin combustible",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con SERA.8035 y MOA 8.3.2.18: Si el fallo de radio ocurre en **VMC (o se alcanzan condiciones VMC)**, el piloto debe **mantener VMC, aterrizar en el aeródromo adecuado más próximo y notificar su llegada a ATC** por el medio más rápido.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-070",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.18 - Gestión de Fallo de Comunicaciones en Espacio IMC en Ruta y Destino",
+    "stem": "Si el fallo de radio (Squawk 7600) se produce en condiciones IMC en ruta hacia destino, ¿cómo se calcula la hora de inicio del descenso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mantener la velocidad y nivel asignados durante 20 minutos tras la última notificación (o según plan), volar a la ayuda de navegación de destino y descender a la hora estimada de llegada (ETA) del plan de vuelo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Descender inmediatamente a altitud cero en el punto donde falló la radio",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Desviar a cualquier país vecino sin seguir el plan de vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Apagar el transponder para que el radar no detecte la trayectoria",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Procedimiento SERA.8035 en **IMC**: Mantener nivel y ruta autorizada hasta la radioayuda de aproximación en destino, **iniciando el descenso a la hora prevista de aproximación (EAT) o a la ETA del FPL**, completando la aproximación instrumental publicada.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-071",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Viento Cruzado Máximo Demostrado en Pistas Secas y Contaminadas",
+    "stem": "¿Dónde consulta la tripulación los límites máximos operacionales de viento cruzado (Crosswind Limits) en función del estado de la pista (RWYCC)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En las tablas de limitaciones del AFM / SOPM de Embraer, graduadas desde 38 kt en pista seca hasta 10-15 kt en pistas con hielo/nieve compactada (RWYCC 1 y 2)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En el boletín meteorológico de la televisión regional",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En la tarjeta de seguridad de los asientos de los pasajeros",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El viento cruzado no tiene límite pudiendo aterrizar con 100 nudos de costado",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las tablas de viento cruzado del AFM/SOPM limitan el componente según la fricción de pista (**38 kt seca, 31 kt mojada, 20 kt nieve compactada / RWYCC 3, y 10-15 kt en hielo / RWYCC 1-2**) para evitar salidas laterales de pista (MOA 8.3.2.14).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-072",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Aterrizaje con Viento en Cola (Tailwind Limit)",
+    "stem": "¿Cuál es el límite máximo estructural certificado de viento en cola (Tailwind) para el aterrizaje en el Embraer 195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Un límite máximo de **15 nudos de viento en cola** (o 10 nudos según la certificación específica y condiciones de pista del AFM)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Un límite de 50 nudos de viento en cola",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No se permite ningún nudo de viento en cola en ninguna circunstancia",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El límite es de 100 nudos si la pista mide más de 2.000 metros",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El AFM del E195-E2 fija el **límite máximo de componente de viento en cola en 15 kt** (o 10 kt en pistas no secas / según el análisis ePerf) debido al incremento drástico de la distancia de parada y energía de frenado (AFM Sección 2 / MOA 8.3.2.14).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-073",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Desconexión del Piloto Automático para la Toma Manual",
+    "stem": "¿A qué altura mínima de seguridad debe desconectarse el Piloto Automático en una aproximación manual de precisión CAT I según el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A una altitud mínima de **50 pies sobre el terreno (50 ft AGL)**, permitiendo la recogida y control manual de la toma por el PF",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "A 2.000 pies sobre el nivel del mar",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El piloto automático debe mantenerse conectado hasta que el avión se detenga en la rampa",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "A 0 pies tocando tierra con los servomotores acoplados",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El AFM de Embraer establece que para aproximaciones CAT I el **Piloto Automático debe desconectarse a no menos de 50 ft AGL** para la toma de contacto manual (AFM Sección 2 / SOPM / MOA 8.3.2.14).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-074",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Recuperación de Actitudes Anormales en Vuelo (UPRT - Nose High)",
+    "stem": "Ante una actitud anormal de cabeceo excesivo hacia arriba (Nose High Upset) con pérdida de velocidad, ¿cuál es la secuencia correcta de recuperación?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desconectar AP/AT, aplicar empuje según sea necesario, empujar palanca de mandos hacia delante para reducir el ángulo de ataque, alabeo suave para bajar el morro si procede y nivelar alas al recuperar velocidad",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Tirar con máxima fuerza hacia atrás de la palanca de mandos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cortar motores a ralentí y extender los flaps al máximo de aterrizaje",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aplicar timón de dirección a fondo a ambos lados alternativamente",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Procedimiento internacional **UPRT (Nose High Recovery)**: **1º Desconectar automatismos, 2º PUSH (reducir ángulo de ataque empujando morro abajo), 3º Alabeo coordinado para descargar sustentación si es extremo, 4º Nivelar alas, y 5º Ajustar empuje y recuperar altitud** (MOA 8.3.2.14 / ICAO UPRT).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-075",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Recuperación de Actitudes Anormales en Vuelo (UPRT - Nose Low)",
+    "stem": "Ante una actitud anormal de morro abajo pronunciado (Nose Low Upset) con aceleración rápida hacia VMO/MMO, ¿cuál es la secuencia mandatoria?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desconectar AP/AT, reducir empuje a ralentí, nivelar alas primero mediante alerones coordinados y, una vez con alas niveladas, tirar suavemente de la palanca hacia arriba para recuperar el vuelo horizontal",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Tirar bruscamente de la palanca hacia atrás mientras el avión está en viraje invertido",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Avanzar palancas de empuje al 100% TOGA",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Extender flaps y tren de aterrizaje a velocidad superior a VMO",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Procedimiento **UPRT (Nose Low Recovery)**: Tirar de la palanca con alas inclinadas agrava el factor de carga ($g$) y la pérdida de cota; se debe **1º Reducir potencia, 2º NIVELAR ALAS PRIMERO (Wings Level), y 3º Tirar suavemente de morro arriba (*Smooth Pull Up*)** (MOA 8.3.2.14).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-076",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.16 - Desactivación del Guiado VNAV por Incongruencia en el FMS",
+    "stem": "Si durante el descenso el modo VNAV del FMS muestra desviaciones no lógicas o errores de cálculo de perfil vertical, ¿qué modo de vuelo debe seleccionar el PF?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desconectar VNAV y seleccionar un modo básico de cabeceo (ej. Flight Path Angle - FPA o Vertical Speed - VS / Open Descent), monitorizando la altitud en cartas",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Apagar los dos motores y planear en silencio",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Continuar en VNAV confiando en que el ordenador se arregle solo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Apagar las pantallas principales de vuelo de ambos pilotos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Ante cualquier anomalía o degradación de los modos verticales avanzados del FMS, la regla de automatización exige **degradar a modos básicos transparentes (FPA / VS / FLCH)** y verificar la altitud con el perfil de la carta (SOPM / MOA 8.3.2.16).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-077",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Corrección de Velocidad de Aproximación por Viento (Wind Correction / Vapp)",
+    "stem": "¿Cómo se calcula la velocidad de aproximación final ($V_{app}$) a partir de la $V_{ref}$ en el Embraer 195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Añadiendo a la $V_{ref}$ la mitad del componente de viento de cara sostenido más todo el valor de la racha, con una corrección mínima de $+5\text{ kt}$ y máxima de $+15\text{ a }+20\text{ kt}$",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Restando 20 nudos a la Vref en todos los aterrizajes",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Multiplicando la Vref por la velocidad del viento en nudos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Añadiendo 50 nudos fijos independientemente del viento",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El cálculo de **$V_{app}$ (Target Speed)** en el FMS aplica la fórmula estándar: $V_{app} = V_{ref} + \text{Wind Correction}$ (típicamente **la mitad del viento en cara + racha total**, con un mínimo de **$+5\text{ kt}$** y un tope máximo de **$+15\text{ a }+20\text{ kt}$**) (SOPM / MOA 8.3.2.14).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-078",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Detección de Falsa Captura de Senda (False Capture / Localizer Overfly)",
+    "stem": "Si durante la interceptación del localizador el sistema indica captura pero el avión continúa volando rumbo al exterior de la senda, ¿qué acción debe tomar el PF?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desconectar los modos de aproximación del FMS, seleccionar modo manual HDG/TRK para interceptar el eje del localizador y reconectar el modo APP una vez centrado",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Esperar 10 minutos a que el avión complete una vuelta completa",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Descender por debajo del suelo para buscar la antena",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Apagar los generadores hidráulicos de los mandos de vuelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Ante capturas erróneas de automatismos (*False Capture*), el PF debe **asumir el control de guía lateral en modo básico (HDG/TRK o vuelo manual)** para interceptar y estabilizar el eje del LOC antes de volver a armar APP (SOPM / MOA 8.3.2.14).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-079",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Procedimiento ante Alerta de Desvío Excesivo de Senda (Glideslope Warning)",
+    "stem": "Si por debajo de 1.000 pies se activa la alarma sonora 'GLIDESLOPE, GLIDESLOPE' del EGPWS (desviación superior a 1.3 puntos por debajo de senda), ¿qué acción procede?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Corregir inmediatamente la trayectoria aumentando empuje y cabeceo hacia la senda si la desviación es menor, o ejecutar aproximación frustrada de inmediato si no se corrige al instante",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Descender con mayor rapidez hacia el suelo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Apagar el botón del EGPWS para no escuchar el aviso",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Ignorar la alarma si el copiloto afirma ver luces de la ciudad",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La alarma **`GLIDESLOPE`** advierte de un descenso peligroso por debajo del perfil de franqueamiento de obstáculos; exige **corrección vertical inmediata hacia la senda o frustrada imperativa** si no se restablece en segundos (SOPM / MOA 8.3.2.14).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-080",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Aterrizaje con Pista Inundada / Hidroplaneo (Aquaplaning Risk)",
+    "stem": "¿Qué técnica de aterrizaje se aplica en pistas con agua estancada ($> 3\text{ mm}$, Standing Water) para prevenir el hidroplaneo dinámico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Toma de contacto firme en la TDZ para romper la película de agua con los neumáticos, uso inmediato de reversas máximas y frenado automático Autobrake MED/HI con Antiskid activo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Aterrizaje suave flotando durante 1.000 metros sobre la pista",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Desconectar los sistemas antibloqueo Antiskid antes de tocar tierra",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Frenar únicamente con el freno de morro sin aplicar frenos principales",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para mitigar el **hidroplaneo dinámico (*Aquaplaning*)**, se requiere una **toma firme y decidida que disipe la película líquida**, asegurando el contacto mecánico del caucho con el asfalto y la activación plena del sistema **Antiskid y Reversas** (MOA 8.3.2.14 / AOM).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-081",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.16 - Pérdida de Integridad RAIM en Aproximación RNP (RAIM Warning)",
+    "stem": "Si dentro del FAF de una aproximación RNP se activa el aviso 'GPS INTEGRITY' o 'UNABLE RNP', ¿cuál es la acción mandatoria?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar de inmediato la maniobra de Aproximación Frustrada (Missed Approach) y notificar a ATC",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Continuar descendiendo hasta el suelo guiándose por la intuición",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Apagar el GPS y conectar la radio comercial de AM",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Esperar a aterrizar para comprobar los satélites en tierra",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La pérdida de integridad RAIM o degradación de precisión en aproximación final **invalida la navegación RNP y exige la ejecución inmediata de la maniobra de aproximación frustrada** (MOA 8.3.2.16 / PBN Manual).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-082",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Operación de Limpiaparabrisas (Wipers) a Altas Velocidades",
+    "stem": "¿Cuál es el límite de velocidad máxima para la operación de los limpiaparabrisas (Wiper Operating Speed) en el Embraer 195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Una velocidad indicada máxima de **250 nudos IAS** para evitar daños en los motores eléctricos y brazos de barrido",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Una velocidad de 450 nudos IAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No tienen límite pudiendo usarse a Mach 0.82",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo pueden utilizarse con el avión parado en tierra",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El AFM de Embraer limita el uso de los **limpiaparabrisas (*Wipers*) a un máximo de 250 kt IAS** para proteger los mecanismos de barrido y la integridad del cristal parabrisas (AFM Sección 2 / MOA 8.3.2.14).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-083",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Frustrada por Tráfico en Pista Ordenada por ATC",
+    "stem": "Al recibir la instrucción de ATC 'Binter [XXX], Go Around, cancel approach', ¿cuál es la respuesta y acción inmediata de la tripulación?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colacionar 'Going around, Binter [XXX]', aplicar empuje TOGA de inmediato, iniciar ascenso, limpiar flaps y tren en ascenso positivo y seguir las instrucciones de frustrada de ATC",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Preguntar al controlador por qué tiene que frustrar antes de obedecer",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Continuar el aterrizaje si el avión ya está a menos de 50 pies del suelo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Apagar la radio para fingir que no se ha escuchado la orden",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La instrucción de **frustrada ordenada por ATC (`Go Around`)** es ejecutiva y de obligado cumplimiento inmediato por razones críticas de separación de pista (SERA / MOA 8.3.2.14).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-084",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Altitud de Aceleración y Limpieza en la Frustrada (Missed Approach Acceleration Altitude)",
+    "stem": "¿A qué altitud mínima se inicia la aceleración y recogida de flaps en una maniobra de aproximación frustrada según el SOPM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A la altitud de aceleración de frustrada publicada (típicamente **1.000 pies AGL o según carta de aproximación**), nivelando o reduciendo el régimen para acelerar y recoger flaps secuencialmente",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "A 50 pies sobre la pista durante el ascenso inicial",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "A 20.000 pies de altitud únicamente",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No se recogen flaps debiendo volar todo el circuito con flaps de despegue",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La **altitud de aceleración de aproximación frustrada (típicamente 1.000 ft AGL)** permite acelerar la aeronave en ascenso positivo para **recoger flaps y pasar a velocidad de crucero limpio ($V_{FS}$ / Clean)** (SOPM / MOA 8.3.2.14).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-085",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Luces Exteriores de Aterrizaje y Luces de Rodaje (Taxi & Landing Lights)",
+    "stem": "¿Cuándo deben encenderse las luces de aterrizaje de alta potencia (Landing Lights) según el SOPM de Binter?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Al recibir la autorización de despegue ('Cleared for Takeoff') o autorización de aterrizaje / cruce de 10.000 pies en descenso, mejorando la visibilidad y detección visual de aves y tráficos",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se encienden únicamente en el garaje de mantenimiento",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Permanecen apagadas durante la noche para ahorrar energía de las baterías",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo se encienden si llueve torrencialmente",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las **luces de aterrizaje (Landing Lights)** se encienden al entrar en pista activa autorizados y se mantienen encendidas en **aproximación por debajo de 10.000 ft** para prevención de colisiones con aves y aeronaves (SOPM / MOA 8.3.2.14).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-086",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.16 - Chequeo de Base de Datos de Navegación del FMS antes del Vuelo",
+    "stem": "¿Qué comprobación de validez debe realizar la tripulación técnica en la página IDENT del FMS durante el prevuelo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Verificar que el ciclo AIRAC de navegación está en vigor (vigencia activa de 28 días) y que el modelo de aeronave y motores coincide con el avión real",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Comprobar el número de teléfono del programador del software",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Comprobar la fecha de caducidad de los chalecos salvavidas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Verificar que la pantalla no tenga huellas dactilares",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En el flujo de prevuelo (**FMS Init / IDENT page**), ambos pilotos verifican la **vigencia del ciclo AIRAC de la base de datos de navegación (NavData validity)** antes de cargar rutas o procedimientos instrumentales (SOPM / MOA 8.3.2.16).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-087",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Verificación de Luces de PAPI / VASI en Aproximación Visual",
+    "stem": "¿Qué indicación óptica proporcionan las luces PAPI de 4 barras en una senda de aproximación nominal correcta de 3 grados?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dos luces blancas y dos luces rojas (**2 White / 2 Red**), indicando posición exacta sobre la senda de planeo correcta",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cuatro luces rojas indicando que el avión vuela demasiado alto",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cuatro luces blancas indicando que el avión va a chocar contra el suelo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Luces parpadeando en color azul y verde alternativamente",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El sistema visual **PAPI (Precision Approach Path Indicator)** muestra: **2 Blancas / 2 Rojas (On Glidepath)**; 3 o 4 Rojas (Below Glidepath / Peligro de impacto bajo); 3 o 4 Blancas (Above Glidepath / Alto) (MOA 8.3.2.14 / OACI).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-088",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Entrada en Pérdida en Aproximación (Stall Warning Recovery)",
+    "stem": "Ante la activación del vibrador de palanca (Stick Shaker) o aviso sonoro de pérdida en aproximación, ¿cuál es la primera acción refleja inmediata?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Empujar firmemente la palanca de mandos hacia delante para reducir el ángulo de ataque (Reducir AoA), nivelar alas y随后 aplicar empuje suave y progresivo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Tirar con ambas manos hacia atrás de la palanca de mandos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Retraer los flaps de inmediato a 0 grados",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cortar motores a ralentí y desconectar los generadores eléctricos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Principio universal de recuperación de pérdida (**Stall Recovery**): **1º PUSH (reducir el ángulo de ataque empujando morro abajo)** para restablecer el flujo aerodinámico, **2º Nivelar alas, 3º Empuje suave para evitar pitch-up secundario, y 4º Recuperar trayectoria** (MOA 8.3.2.14 / SOPM).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-089",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Gestión de Freno de Mano en Parada de Emergencia (Emergency Parking Brake)",
+    "stem": "¿Por qué el freno de estacionamiento de emergencia solo debe utilizarse con el avión en movimiento como último recurso ante fallo hidráulico total?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Porque no dispone de modulación antideslizante (Antiskid), con alto riesgo de reventón inmediato de los cuatro neumáticos principales y pérdida de control direccional",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Porque el freno de mano apaga automáticamente los motores",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Porque se produce una sobrepresión en los depósitos de combustible",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Porque el freno de mano solo funciona marcha atrás",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Emergency / Parking Brake** aplica presión hidráulica directa acumulada **sin protección de Antiskid**; su uso a alta velocidad bloquea las ruedas instantáneamente, reventando neumáticos y dañando el tren (SOPM / MOA 8.3.2.14).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-090",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Pérdida de Presión Hidráulica de Frenos Principales durante el Rodaje",
+    "stem": "Si durante el rodaje tras el aterrizaje los frenos normales no responden al pisar los pedales, ¿cuál es la acción de contingencia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aplicar de forma suave y modulada la palanca de freno de estacionamiento / emergencia (Emergency Parking Brake Handle) hasta detener la aeronave",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Apagar los motores y saltar por la ventanilla",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Virar el avión hacia el césped para frenar contra un edificio",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Acelerar a fondo para que el avión se detenga por fricción de aire",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Ante un fallo total de frenos normales en tierra, el procedimiento del FCOM exige **accionar la palanca del Emergency/Parking Brake de forma gradual y mantenida** para detener el avión con la presión de los acumuladores (SOPM / MOA 8.3.2.14).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-091",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.16 - Mínimos de Aproximación RNP con Guía Vertical Baro-VNAV (LNAV/VNAV DA)",
+    "stem": "¿Cómo se define el punto de decisión en una aproximación RNP APCH volada a mínimos LNAV/VNAV?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se opera como una Altitud de Decisión (DA), requiriendo iniciar la aproximación frustrada de inmediato en la DA si no se dispone de las referencias visuales mínimas requeridas",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se opera como una MDA permitiendo nivelar el avión durante 5 kilómetros",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se puede descender 200 pies por debajo de la DA buscando la pista",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No requiere altitud de decisión pudiendo aterrizar con visibilidad cero",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las aproximaciones **RNP con guiado vertical (LNAV/VNAV)** se vuelan como aproximaciones de precisión tridimensional (**3D Approach**), utilizando una **Altitud de Decisión (DA)** donde la frustrada es inmediata si no hay contacto visual (MOA 8.3.2.16 / PANS-OPS).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-092",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Régimen de Descenso Máximo Permitido por Debajo de 1.000 Pies",
+    "stem": "¿Cuál es el régimen de descenso vertical máximo permitido para mantener la aproximación dentro de los criterios de estabilización?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Un régimen vertical máximo de **1.000 pies por minuto (1.000 ft/min)** por debajo de 1.000 ft AGL",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Hasta 3.500 pies por minuto en aproximaciones normales",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No existe límite de régimen vertical en aproximación final",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Exactamente 100 pies por minuto en cualquier condición",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los Criterios de Estabilización fijan un **tope estricto de régimen vertical de descenso de $\\le 1.000\text{ ft/min}$** por debajo de 1.000 ft AGL; superar este valor exige el callout `'SINK RATE'` y la ejecución de **Go-Around si no se corrige de inmediato** (MOA 8.3.2.14).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-093",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Acciones de Prevuelo ante Pistas con Baches o Contaminación Irregular",
+    "stem": "Al planificar aterrizajes en pistas con parches de nieve o agua desigualmente repartidos, ¿qué precaución rige sobre el cálculo de parada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Considerar la eficacia de frenado del peor tercio de la pista reportado (código RWYCC más bajo) para garantizar un margen de parada conservador en ePerf",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Considerar únicamente el tercio de pista con mejor adherencia",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Multiplicar la longitud de la pista por dos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No realizar ningún cálculo si el avión lleva neumáticos nuevos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Bajo el formato **Global Reporting Format (GRF)**, la performance de aterrizaje debe evaluarse **considerando la condición más restrictiva reportada en los tres tercios de la pista** (MOA 8.1.6 / 8.3.2.14).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-094",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Operación de Autothrottle en la Recogida (Flare Retard Mode)",
+    "stem": "En el Embraer 195-E2, ¿cómo actúa el Autothrottle (AT) durante la recogida automática/manual sobre la pista?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transiciona a modo RETARD a aproximadamente 30-50 pies sobre el terreno, reduciendo automáticamente las palancas de empuje a ralentí (IDLE) al tocar tierra",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Acelera los motores a empuje máximo TOGA en el momento de tocar la pista",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Apaga los motores automáticamente al tocar tierra",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El Autothrottle no interviene en la recogida debiendo desconectarse a 5.000 pies",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El sistema de control de empuje del E195-E2 activa el modo **RETARD a 30 ft RA**, retardando las palancas de potencia suavemente para que lleguen a **IDLE en la toma de contacto** (AOM / SOPM / MOA 8.3.2.14).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-095",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Procedimiento ante Alerta de Desvío Lateral de Localizador (LOC Dev)",
+    "stem": "Si por debajo de 1.000 pies el PM observa una desviación del localizador superior a 1 punto (1 dot), ¿qué callout debe cantar?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cantar en voz alta '**LOCALIZER**', debiendo el PF corregir de inmediato o cantar '**GO AROUND**' si se superan los límites de tolerancia",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Permanecer en silencio y esperar a ver si el avión vuelve al centro",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Apagar la pantalla de vuelo principal para no ver el desvío",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Desconectar los pedales de dirección en cabina técnica",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El callout **`'LOCALIZER'`** alerta de una desviación inaceptable de guiado lateral ($\\ge 1\text{ dot}$); si la senda lateral no se recupera de inmediato dentro de límites, **la frustrada es imperativa** (MOA 8.3.2.14 / SOPM).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-096",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Requisitos de Abandono de Pista tras el Aterrizaje",
+    "stem": "¿A qué velocidad controlada debe realizarse el abandono de la pista activa por una calle de rodaje rápida (Rapid Exit Taxiway - RET) frente a una calle convencional de 90 grados?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A una velocidad máxima de hasta **50-60 nudos en calles rápidas (RET)** y a velocidad reducida ($\\le 10-15\text{ nudos}$) en giros convencionales en ángulo recto de 90°",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "A 120 nudos en cualquier tipo de curva",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "A 0 nudos debiendo detener el avión completamente en mitad de la pista",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "A velocidad de crucero de despegue",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las **Calles de Salida Rápida (RET)** están diseñadas geométricamente para desvíos suaves a **hasta 50-60 kt**; los giros en ángulo recto de **90° exigen reducir a menos de 10-15 kt** para evitar esfuerzos laterales destructivos en el tren (AOM / MOA 8.3.2.14).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-097",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Apagado de Luces de Aterrizaje y Luces Estroboscópicas tras Abandonar la Pista",
+    "stem": "Una vez que el avión ha cruzado completamente la línea de espera de la pista activa y se encuentra en la calle de rodaje, ¿qué configuración de luces se selecciona?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apagar las luces estroboscópicas (Strobe OFF), apagar las luces de aterrizaje (Landing Lights OFF) y mantener encendidas las luces de rodaje (Taxi Lights ON) y Beacon",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Apagar todas las luces exteriores dejando el avión a oscuras en la pista",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Encender las luces de emergencia interiores al 100%",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mantener los faros de aterrizaje a máxima potencia hacia la terminal",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Al cruzar la línea de espera de pista (**Runway Vacated**), el PM ejecuta el flujo de *After Landing*: **Strobe OFF, Landing Lights OFF, Taxi Lights ON, Flaps UP, Radar OFF y transponder en modo rodaje** (SOPM / MOA 8.3.2.14).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-098",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Monitoreo de Temperatura de Frenos tras la Toma (Brake Temperature Monitoring)",
+    "stem": "¿Dónde comprueba la tripulación técnica que la temperatura de los frenos de carbono se encuentra dentro del rango seguro antes del siguiente despegue?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En la pantalla sinóptica de tren de aterrizaje y frenos del EICAS (Brake Temp Indicator / Green range), asegurando que no se excede el límite de enfriamiento",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Tocando los discos de freno con la mano descalza en la plataforma",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mirando si sale humo por las ventanillas de cabina de pasajeros",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Comprobando el nivel de aceite del motor izquierdo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La temperatura de los frenos de carbono se monitoriza en la página **HYD/BRAKE del MFD/EICAS**: valores en **verde** indican temperatura segura; valores en **ámbar** indican sobrecalentamiento (*Hot Brakes*), requiriendo tiempo de enfriamiento con ventiladores antes del siguiente despegue (AOM / SOPM / MOA 8.3.2.14).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-099",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3.2.14 - Tiempo de Enfriamiento de Motores antes del Apagado (Engine Cooldown Period)",
+    "stem": "Tras completar el rodaje hacia el estacionamiento, ¿qué periodo mínimo de enfriamiento a ralentí (Cooldown) exige el fabricante antes de apagar los motores?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Al menos **3 minutos a ralentí (Idle)** para estabilizar térmicamente las turbinas y cojinetes antes del corte de combustible",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Apagar los motores inmediatamente a plena aceleración al entrar en el parking",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Esperar 45 minutos con los motores acelerados a media potencia",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No se exige ningún tiempo de enfriamiento en los motores turbofán",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los motores turbofán PW1900G exigen un **periodo mínimo de estabilización térmica de 3 minutos a ralentí** (computando el tiempo de rodaje desde la salida de pista) para evitar deformación térmica de los rotores (*Rotor Bow*) (AOM / SOPM / MOA 8.3.2.14).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-FLT-100",
+    "subject_id": "moa_navegacion_aproximaciones_maniobras",
+    "learning_objective": "MOA 8.3 - Resumen de la Excelencia en la Operación de Vuelo",
+    "stem": "En resumen, ¿cuál es el pilar fundamental que garantiza el éxito y la seguridad operacional en todas las fases de vuelo de Binter?",
+    "options": [
+      {
+        "id": "A",
+        "text": "La adherencia estricta a los Procedimientos Operativos Estandarizados (SOPs), la disciplina de cabina, la comunicación cruzada transparente y el respeto innegociable a los límites del avión",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "La improvisación individual según el estado de ánimo del piloto",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Acelerar los procedimientos para salir antes de hora",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Ignorar las alertas técnicas para no alarmar a los pasajeros",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La seguridad aérea descansa en la **disciplina de cumplimiento de los SOPs, el CRM riguroso, la comunicación asertiva y el compromiso ético y profesional de la tripulación técnica** en cada etapa del vuelo (MOA 1.4 / 8.3 / EASA Part-CAT).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  }
+]

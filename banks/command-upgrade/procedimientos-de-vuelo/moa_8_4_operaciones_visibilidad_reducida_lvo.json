@@ -1,0 +1,927 @@
+[
+  {
+    "id": "CMD-MOA-LVO-001",
+    "subject_id": "moa_visibilidad_reducida_lvo",
+    "learning_objective": "MOA 8.4.1 - Definición de Procedimientos de Baja Visibilidad (LVP)",
+    "stem": "¿Cuándo se considera que un aeródromo activa oficialmente los Procedimientos de Baja Visibilidad (LVP) según el MOA 8.4.1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cuando el alcance visual en la pista (RVR) desciende por debajo de 550 metros o el techo de nubes desciende por debajo de 200 pies",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cuando llueve con intensidad moderada en verano",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Únicamente cuando el viento supera los 40 nudos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cuando el controlador aéreo no puede ver el avión desde la torre",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los **Procedimientos de Baja Visibilidad (LVP - Low Visibility Procedures / MOA 8.4.1)** se activan por ATC en el aeródromo cuando el **RVR es inferior a 550 m o el techo de nubes es inferior a 200 ft**, protegiendo las áreas críticas del ILS.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.4 Operaciones con Visibilidad Reducida (LVO)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-LVO-002",
+    "subject_id": "moa_visibilidad_reducida_lvo",
+    "learning_objective": "MOA 8.4.2 - Mínimos de Despegue con Baja Visibilidad (LVTO)",
+    "stem": "¿Cuál es el mínimo absoluto de RVR autorizado para un despegue LVTO con luces de eje de pista (CL $\\le 15\text{ m}$) y luces de borde de alta intensidad (HIRL)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Un valor mínimo de **RVR de 125 metros** (con reporte de RVR en todos los tercios relevantes de pista)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Un RVR de 50 metros",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Un RVR de 400 metros",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No existe mínimo pudiendo despegar con RVR cero",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El mínimo estándar para **LVTO (Low Visibility Takeoff)** con balizamiento de eje de pista a $\\le 15\text{ m}$ y luces de borde de alta intensidad es **RVR 125 m** (CAT.OP.MPA.110 / MOA 8.4.2).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.4 Operaciones con Visibilidad Reducida (LVO)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-LVO-003",
+    "subject_id": "moa_visibilidad_reducida_lvo",
+    "learning_objective": "MOA 8.4.3 - Parámetros de Aproximación ILS CAT II",
+    "stem": "¿Cuáles son los límites operacionales de Altura de Decisión (DH) y RVR para una aproximación de precisión CAT II según el MOA 8.4.3?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Altura de Decisión (DH) de **100 a 200 pies** y un valor de **RVR $\\ge 300\text{ metros}$**",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "DH de 50 pies y RVR de 75 metros",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "DH de 200 pies y RVR de 550 metros",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "DH de 0 pies y RVR de 100 metros",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las operaciones **CAT II** se definen con **DH entre 100 ft y 200 ft** y un **RVR no inferior a 300 m** (o 350 m según la certificación de aeródromo) (MOA 8.4.3 / EASA).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.4 Operaciones con Visibilidad Reducida (LVO)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-LVO-004",
+    "subject_id": "moa_visibilidad_reducida_lvo",
+    "learning_objective": "MOA 8.4.4 - Aproximaciones CAT III Fail-Passive vs Fail-Operational",
+    "stem": "¿Qué diferencia conceptual existe entre un sistema de aterrizaje automático CAT III 'Fail-Passive' frente a uno 'Fail-Operational'?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fail-Passive: Ante un fallo no se produce desvío significativo pero exige control manual o frustrada (DH $\\ge 50\text{ ft}$) | Fail-Operational: El sistema tolera un fallo y completa el aterrizaje automáticamente (No DH / Alert Height)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Fail-Passive apaga los motores y Fail-Operational los acelera a fondo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Fail-Passive solo funciona de día y Fail-Operational solo de noche",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No existe diferencia siendo dos nombres comerciales del mismo software",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Definiciones OACI / MOA 8.4.4:\n- **Fail-Passive (CAT IIIA)**: Tras un fallo individual, el avión permanece trimado sin desvío brusco, pero el piloto debe frustrar o tomar manualmente (requiere **DH $\u0007pprox 50\text{ ft}$**).\n- **Fail-Operational (CAT IIIB)**: Posee redundancia operativa permitiendo completar la aproximación, recogida (*Flare*) y toma automática (**No DH con Alert Height**).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.4 Operaciones con Visibilidad Reducida (LVO)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-LVO-005",
+    "subject_id": "moa_visibilidad_reducida_lvo",
+    "learning_objective": "MOA 8.4.6 - Desviaciones Máximas Permitidas en Aproximación ILS CAT II/III",
+    "stem": "Por debajo de 100 pies en una aproximación CAT II/III, ¿cuáles son los límites máximos de desviación de localizador y senda antes de exigir frustrada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desviación máxima de **1/3 de punto en Localizador** y **1/2 punto en Senda de Planeo** en el indicador de instrumentos",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Desviación de 2 puntos completos a cada lado",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cualquier desviación mientras el avión vuele nivelado",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No existen límites tolerándose cualquier desvío",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En aproximaciones **CAT II/III por debajo de 100 ft AGL**, los márgenes de tolerancia son extremadamente estrictos: exceder **1/3 dot en LOC o 1/2 dot en GS** exige la **ejecución inmediata de una frustrada (Go-Around)** (MOA 8.4.6.2.3).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.4 Operaciones con Visibilidad Reducida (LVO)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-LVO-006",
+    "subject_id": "moa_visibilidad_reducida_lvo",
+    "learning_objective": "MOA 8.4.7 - Abandono de Pista y Áreas Críticas/Sensibles del ILS en LVO",
+    "stem": "¿Cuándo debe la tripulación notificar a la torre de control 'Pista Libre' (Runway Vacated) tras un aterrizaje en condiciones CAT II/III?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Únicamente cuando toda la aeronave haya rebasado el punto donde las luces de eje de calle de rodaje dejan de ser alternadas verde/ámbar y pasan a ser completamente verdes",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En el mismo instante en que las ruedas tocan tierra",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cuando el avión abandona el umbral de la pista a 80 nudos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Antes de iniciar la aproximación para ahorrar tiempo de radio",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las luces alternadas **verde y ámbar** delimitan el **Área Crítica y Sensible del ILS**: no se puede reportar `'Runway Vacated'` hasta que la cola del avión cruce la última luz ámbar y se encuentre en **luces 100% verdes**, protegiendo la señal del ILS para el siguiente avión (MOA 8.4.7.2).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.4 Operaciones con Visibilidad Reducida (LVO)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-LVO-007",
+    "subject_id": "moa_visibilidad_reducida_lvo",
+    "learning_objective": "MOA 8.4.7 - Fraseología Obligatoria para Aproximaciones CAT II/III Reales vs Simuladas",
+    "stem": "¿Qué fraseología estándar debe utilizar la tripulación al solicitar una aproximación de entrenamiento en condiciones de buena visibilidad?",
+    "options": [
+      {
+        "id": "A",
+        "text": "'[Callsign] Solicitamos aproximación simulada de categoría II / III'",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "'[Callsign] Aterrizamos con las ventanillas tapadas'",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "'[Callsign] Prueba de vuelo sin mirar'",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "'[Callsign] Despejen el aeropuerto que vamos a entrenar'",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para aproximaciones de entrenamiento en VMC, se transmite: **`'[Callsign] Solicitamos aproximación simulada de categoría II/III'`**; ATC advertirá de que las áreas sensibles del ILS no están protegidas frente a interferencias de otros tráficos (MOA 8.4.7.2).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.4 Operaciones con Visibilidad Reducida (LVO)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-LVO-008",
+    "subject_id": "moa_visibilidad_reducida_lvo",
+    "learning_objective": "MOA 8.4.8 - Ajuste Ergonómico del Asiento de los Pilotos para Operaciones LVO",
+    "stem": "¿Por qué es crítico el ajuste de la posición visual de los ojos (Eye Position Indicator) en la cabina para aproximaciones CAT II/III?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Para asegurar la alineación perfecta del campo de visión con los indicadores visuales exteriores y pantallas de vuelo, maximizando el segmento visual de pista en la DH",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Para que los pilotos puedan dormir más cómodos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Para alcanzar los pedales con menor esfuerzo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Para evitar reflejos del sol en el techo de cabina",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El ajuste del asiento en el indicador de referencia visual (**Eye Alignment Indicator / Bulbs**) garantiza que el piloto obtenga el **máximo alcance visual exterior a través del parabrisas en el instante crítico de alcanzar la DH** (MOA 8.4.8 / SOPM).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.4 Operaciones con Visibilidad Reducida (LVO)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-LVO-009",
+    "subject_id": "moa_visibilidad_reducida_lvo",
+    "learning_objective": "MOA 8.4.10 - Restablecimiento de Capacidad CAT II/III (Upgrade del Avión)",
+    "stem": "Tras una reparación de mantenimiento de un componente degradado de CAT II/III, ¿cómo se valida y restituye la capacidad del avión?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Efectuando una aproximación simulada CAT II/III satisfactoria en vuelo por tripulación habilitada, anotándola en el ATL (marcando casilla 'S') y reportándola vía ACARS / formulario 'CAT II/III Status'",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Basta con que el mecánico firme un papel sin volar el avión",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Realizando un aterrizaje en una pista de tierra",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El avión recupera la capacidad automáticamente al encender las baterías",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Upgrade de CAT II/III** exige: **1º Entrada de mantenimiento en ATL, 2º Realización de aproximación simulada satisfactoria en vuelo, 3º Anotación formal en ATL (casilla S) y 4º Registro vía ACARS Post Flight Report** (MOA 8.4.10).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.4 Operaciones con Visibilidad Reducida (LVO)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-LVO-010",
+    "subject_id": "moa_visibilidad_reducida_lvo",
+    "learning_objective": "MOA 8.4.2 - Requisitos de RVR Mínimo para Despegues sin Balizamiento de Eje (CL OFF)",
+    "stem": "Si las luces de eje de pista están inoperativas pero las luces de borde de alta intensidad (HIRL) funcionan, ¿cuál es el mínimo de despegue autorizado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Un valor mínimo de **RVR de 150 metros** (o 200 m según la directriz del Estado)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "RVR 75 metros",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "RVR 50 metros",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "RVR 1.500 metros",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La ausencia de luces de eje de pista (CL) incrementa el mínimo de despegue de **125 m a un mínimo de RVR 150 m** (con marcas de eje de pista diurnas o HIRL nocturnas) (MOA 8.4.2 / EASA).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.4 Operaciones con Visibilidad Reducida (LVO)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-LVO-011",
+    "subject_id": "moa_visibilidad_reducida_lvo",
+    "learning_objective": "MOA 8.4.6 - Referencias Visuales Mínimas Requeridas en la DH de CAT II",
+    "stem": "Al alcanzar la DH (100 ft) en una aproximación CAT II, ¿qué segmento visual mínimo de referencias debe ser visible para autorizar el aterrizaje?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Un segmento de al menos **3 luces consecutivas** (luces de aproximación, umbral, TDZ o eje de pista) que proporcionen guía lateral inequívoca",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Ver toda la pista completa de principio a fin",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Ver la terminal de pasajeros a través de la niebla",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No se exige ninguna luz pudiendo aterrizar a oscuras",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En **CAT II a la DH (100 ft)**, la tripulación debe tener a la vista un **segmento visual de al menos 3 luces consecutivas alineadas** que permitan el control lateral del eje de pista (CAT.OP.MPA.305 / MOA 8.4.6).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.4 Operaciones con Visibilidad Reducida (LVO)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-LVO-012",
+    "subject_id": "moa_visibilidad_reducida_lvo",
+    "learning_objective": "MOA 8.4.6 - Referencias Visuales Requeridas en CAT IIIA Fail-Passive",
+    "stem": "En CAT IIIA con Altura de Decisión (DH 50 ft), ¿cuál es la referencia visual mínima en la DH?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Al menos **1 luz de eje de pista o de borde de pista** o elemento de la zona de toma de contacto",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Ver las montañas situadas detrás del aeropuerto",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Ver la manga de viento iluminada",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Ver el coche de bomberos situado en la calle de rodaje",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para **CAT IIIA con DH 50 ft**, se requiere contacto visual con al menos **un elemento o luz de eje de pista o zona de toma de contacto (TDZ)** para monitorizar el aterrizaje automático (MOA 8.4.6 / EASA).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.4 Operaciones con Visibilidad Reducida (LVO)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-LVO-013",
+    "subject_id": "moa_visibilidad_reducida_lvo",
+    "learning_objective": "MOA 8.4.4 - Concepto de Altura de Alerta (Alert Height - AH) en CAT IIIB",
+    "stem": "¿Qué define la Altura de Alerta (Alert Height - AH) en operaciones CAT IIIB Fail-Operational?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Una altura sobre el terreno (típicamente 100-200 ft RA) por debajo de la cual, si ocurre un fallo no crítico, la aproximación automática continúa y aterriza sin realizar frustrada",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "La altura a la que suena la campana de incendios",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La altitud mínima para abrir las puertas de pasaje",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La altura a la que se apagan las luces de cabina",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La **Alert Height (AH)** es la altura por debajo de la cual **un sistema Fail-Operational absorbe fallos de redundancia sin requerir frustrada**, continuando la toma automática de forma segura (MOA 8.4.4).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.4 Operaciones con Visibilidad Reducida (LVO)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-LVO-014",
+    "subject_id": "moa_visibilidad_reducida_lvo",
+    "learning_objective": "MOA 8.4.6 - Tolerancia de Velocidad en la DH para Aproximaciones CAT II/III",
+    "stem": "¿Cuál es el margen de velocidad tolerable al cruzar la DH en una aproximación de precisión CAT II/III?",
+    "options": [
+      {
+        "id": "A",
+        "text": "La velocidad indicada debe mantenerse dentro de **$\\pm 5\text{ nudos}$** sobre la velocidad objetivo y **nunca por debajo de la velocidad de referencia ($V_{ref}$)**",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Un margen libre de $\\pm 25$ nudos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se permite volar 10 nudos por debajo de la velocidad de pérdida",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La velocidad debe ser igual a cero en la DH",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.4.6.2.3 exige que en la DH la velocidad esté estabilizada dentro de **$\\pm 5\text{ kt}$ y jamás por debajo de $V_{ref}$**, garantizando el margen aerodinámico seguro durante la recogida (*Flare*).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.4 Operaciones con Visibilidad Reducida (LVO)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-LVO-015",
+    "subject_id": "moa_visibilidad_reducida_lvo",
+    "learning_objective": "MOA 8.4.7 - Protección del Área Crítica del ILS frente a Tráficos en Rodaje",
+    "stem": "¿Por qué los tráficos en rodaje deben detenerse en los puntos de espera señalizados para CAT II/III (CAT II/III Holding Points)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Para situarse a mayor distancia de la pista y evitar que la estructura metálica del avión interfiera o distorsione las señales de radiofrecuencia del localizador o senda de planeo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Para que los pasajeros puedan ver aterrizar al avión que viene detrás",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Para no hacer ruido cerca de la estación de bomberos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Porque las líneas de parada de CAT I se borran con la lluvia",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los **puntos de espera CAT II/III están más alejados del eje de pista** para que ninguna aeronave penetre en el **Área Crítica y Sensible del ILS**, evitando la degradación o distorsión del haz electromagnético de guiado (MOA 8.4.7 / OACI Doc 9365).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.4 Operaciones con Visibilidad Reducida (LVO)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-LVO-016",
+    "subject_id": "moa_visibilidad_reducida_lvo",
+    "learning_objective": "MOA 8.4.6 - Requisitos de RVR en los Tres Tercios de la Pista (Touchdown, Midpoint, Stopend)",
+    "stem": "Para un aterrizaje en CAT II o CAT III, ¿cuál de los tres sensores de RVR es legalmente vinculante para cumplir los mínimos de aproximación?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El RVR de Toma de Contacto (**Touchdown RVR**) es siempre determinante; si los de punto medio (**Midpoint**) y final (**Stopend**) son relevantes, deben cumplir los mínimos de control de rodaje/frenado",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Solo se tiene en cuenta el RVR del final de la pista",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El promedio de los tres dividido entre dos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El sensor de la terminal de pasajeros",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Touchdown RVR** es mandatorio para autorizar la aproximación; los sensores **Midpoint y Stopend** garantizan la deceleración y carrera de parada con valores mínimos de control direccional (CAT.OP.MPA.305 / MOA 8.4.6).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.4 Operaciones con Visibilidad Reducida (LVO)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-LVO-017",
+    "subject_id": "moa_visibilidad_reducida_lvo",
+    "learning_objective": "MOA 8.4.2 - Fallo de Luces de Pista durante la Carrera de Despegue en LVTO",
+    "stem": "Si durante la carrera de despegue en LVTO por debajo de $V_1$ se produce un corte repentino de las luces de eje de pista, ¿qué acción es mandatoria?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Abortar el despegue inmediatamente (RTO), aplicando frenado máximo y manteniendo el eje con la indicación visual disponible y referencias instrumentales",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Continuar el despegue a ciegas confiando en no salirse del asfalto",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Apagar los motores en el aire a 50 pies",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Virar 90 grados hacia el césped lateral",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La pérdida de la guía visual esencial por debajo de $V_1$ en LVTO **invalida la seguridad de la salida y exige abortar el despegue (Rejected Takeoff - RTO) de forma inmediata** (SOPM / MOA 8.4.2).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.4 Operaciones con Visibilidad Reducida (LVO)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-LVO-018",
+    "subject_id": "moa_visibilidad_reducida_lvo",
+    "learning_objective": "MOA 8.4.6 - Cualificación y Experiencia Mínima de la Tripulación para Operaciones LVO",
+    "stem": "¿Qué requisito de entrenamiento periódico exige Binter para que un piloto mantenga la habilitación de operaciones LVO (CAT II/III y LVTO)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Haber completado satisfactoriamente el entrenamiento en simulador de vuelo (FFS) y verificación de competencia semestral/anual (LPC/OPC) con despegues LVTO y aproximaciones CAT II/III",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Haber volado al menos 100 horas en avioneta monomotor",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Haber leído un folleto publicitario sobre el clima invernal",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No requiere entrenamiento si el piloto tiene más de 40 años",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La autorización para **LVO (CAT II/III / LVTO)** exige **entrenamiento específico en simulador nivel D**, verificaciones semestrales de competencia (OPC/LPC) y el cumplimiento de requisitos de experiencia reciente (Part-SPA.LVO / MOA 8.4).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.4 Operaciones con Visibilidad Reducida (LVO)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-LVO-019",
+    "subject_id": "moa_visibilidad_reducida_lvo",
+    "learning_objective": "MOA 8.4.6 - Límite de Viento Cruzado para Aterrizaje Automático (Autoland Crosswind Limit)",
+    "stem": "¿Cuál es el límite máximo de viento cruzado certificado para la ejecución de un aterrizaje automático (Autoland) en el Embraer 195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Un límite máximo de **15 a 20 nudos de viento cruzado** (según el AFM de Embraer Sección 2 para Autoland)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Un límite de 50 nudos de viento cruzado",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No existe límite de viento cruzado en Autoland",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El límite es de 100 nudos si la pista es ancha",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los sistemas de guiado de aterrizaje automático (**Autoland**) están certificados con límites de viento más restrictivos que el vuelo manual: típicamente **máximo 15-20 kt de viento cruzado y 10-15 kt de viento en cola** (AFM 2.50 / MOA 8.4.6).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.4 Operaciones con Visibilidad Reducida (LVO)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-LVO-020",
+    "subject_id": "moa_visibilidad_reducida_lvo",
+    "learning_objective": "MOA 8.4.7 - Fraseología ATC: Confirmación de 'LVP In Operation'",
+    "stem": "Antes de iniciar una aproximación CAT II o CAT III, ¿qué confirmación expresa debe recibir la tripulación por parte del control ATC?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Confirmación de que los Procedimientos de Baja Visibilidad están activos ('Low Visibility Procedures in Force / Active')",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Confirmación de que el café de la terminal está caliente",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Que no hay pájaros volando en los alrededores",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No se requiere confirmación pudiendo aterrizar en cualquier momento",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Está **terminantemente prohibido ejecutar una aproximación CAT II/III real si el ATC no ha confirmado que los LVP están en vigor** (`LVP in Operation`), garantizando la protección de las señales del ILS (MOA 8.4.7 / CAT.OP.MPA.305).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.4 Operaciones con Visibilidad Reducida (LVO)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-LVO-021",
+    "subject_id": "moa_visibilidad_reducida_lvo",
+    "learning_objective": "MOA 8.4.6 - Desconexión del Autoland por Inconsistencia en la Recogida (No Flare Mode)",
+    "stem": "Si a 30 pies RA en una aproximación automática CAT III no se activa el modo FLARE en el FMA, ¿cuál es la maniobra obligatoria?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ejecutar de inmediato una aproximación frustrada (Go-Around) aplicando empuje TOGA",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Esperar a que el avión choque contra el suelo para ver si rebota",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Picar el morro bruscamente hacia la pista",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Desconectar los generadores eléctricos del avión",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Si el modo **FLARE no se acopla a la altura programada ($~30-50\text{ ft RA}$)**, el avión impactaría contra la pista a régimen de senda nominal ($~700\text{ ft/min}$); **la frustrada es inmediata e imperativa** (SOPM / MOA 8.4.6).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.4 Operaciones con Visibilidad Reducida (LVO)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-LVO-022",
+    "subject_id": "moa_visibilidad_reducida_lvo",
+    "learning_objective": "MOA 8.4.2 - Despegue LVTO con RVR Inferior a 125 Metros",
+    "stem": "¿Bajo qué condiciones está autorizado un despegue con RVR inferior a 125 metros en la flota regular de Binter?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No está autorizado; el límite mínimo absoluto de despegue para la operación de la compañía es RVR 125 metros",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Está autorizado siempre que el copiloto lleve gafas de visión nocturna",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Está autorizado si el avión rueda a velocidad de 5 nudos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Está autorizado en cualquier pista militar",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las Especificaciones de Operación (OpSpecs) de Binter fijan el **límite inferior absoluto para despegues de baja visibilidad en RVR 125 m**; cualquier valor inferior prohíbe la salida (MOA 8.4.2).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.4 Operaciones con Visibilidad Reducida (LVO)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-LVO-023",
+    "subject_id": "moa_visibilidad_reducida_lvo",
+    "learning_objective": "MOA 8.4.6 - Monitoreo de Parámetros de Guiado por el PM en CAT II/III",
+    "stem": "Durante una aproximación automática CAT II/III, ¿dónde se concentran las tareas del Pilot Monitoring (PM) por debajo de 500 pies?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Monitorear continuamente los instrumentos de vuelo, anuncios del FMA (LOC, GS, FLARE, ROLLOUT), radioaltímetro y desviaciones, listo para cantar 'GO AROUND' ante cualquier anomalía",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mirar por la ventanilla lateral buscando el aparcamiento de coches",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Leer el periódico de a bordo en voz alta",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Preparar las maletas para el desembarque",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En CAT II/III, el **PM mantiene su atención al 100% dentro de cabina en los instrumentos y el FMA**, monitorizando la transición de modos de autoland y las tolerancias de senda hasta la parada (MOA 8.4.6 / SOPM).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.4 Operaciones con Visibilidad Reducida (LVO)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-LVO-024",
+    "subject_id": "moa_visibilidad_reducida_lvo",
+    "learning_objective": "MOA 8.4.9 - Registro de Aproximaciones CAT II/III en el Sistema ACARS",
+    "stem": "¿Qué código de reporte se transmite vía ACARS tras realizar una aproximación CAT II/III según MOA 8.4.9?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El informe 'POST FLIGHT REPORT' con el registro detallado de la aproximación, pista, resultado y código del piloto a los mandos",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Un mensaje libre de texto saludando a los programadores",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El menú de catering consumido a bordo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No se transmite ningún registro por ACARS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El registro informático vía **ACARS (Post Flight Report)** permite al departamento técnico y de calidad registrar la fiabilidad estadística y el mantenimiento continuo de la flota en categoría II/III (MOA 8.4.9).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.4 Operaciones con Visibilidad Reducida (LVO)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-LVO-025",
+    "subject_id": "moa_visibilidad_reducida_lvo",
+    "learning_objective": "MOA 8.4 - Resumen de la Seguridad en Operaciones Todo Tiempo (AWO)",
+    "stem": "En conclusión, ¿cuál es la condición indispensable para iniciar o continuar cualquier operación con visibilidad reducida (LVO)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aeronave certificada y con sistemas al 100%, tripulación habilitada y con chequeo al día, aeródromo con LVP activos y cumplimiento riguroso de los mínimos de aproximación/despegue",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Tener prisa por llegar antes del anochecer",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Volar sin consultar los informes meteorológicos de destino",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Confiar en la experiencia del copiloto sin verificar los sistemas",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La seguridad en **LVO descansa en el trípode: Avión apto (MEL/AOM) + Tripulación cualificada + Aeródromo con LVP en vigor**, rigiéndose por el principio inquebrantable de frustrada inmediata ante cualquier discrepancia técnica o visual (MOA 8.4 / Part-SPA).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.4 Operaciones con Visibilidad Reducida (LVO)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  }
+]

@@ -1,0 +1,927 @@
+[
+  {
+    "id": "CMD-MOA-MEL-001",
+    "subject_id": "moa_equipamiento_minimo_mel_cdl",
+    "learning_objective": "MOA 8.6.1 - Filosofía y Propósito de la Lista de Equipamiento Mínimo (MEL)",
+    "stem": "¿Cuál es el propósito fundamental de la Lista de Equipamiento Mínimo (MEL) aprobada por la Autoridad AESA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Permitir la operación y despacho seguro de la aeronave con determinados equipos inoperativos durante un periodo estrictamente limitado, bajo procedimientos de mitigación operacionales (O) o de mantenimiento (M)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Autorizar a volar sin motores ni alas durante un mes",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Eliminar la necesidad de realizar revisiones de mantenimiento periódicas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Permitir que los pilotos reparen los ordenadores de abordo durante el vuelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La **MEL (Minimum Equipment List / CAT.GEN.MPA.180 / MOA 8.6.1)** es un documento operativo legalmente vinculante que permite despachar la aeronave con ciertos componentes inoperativos bajo estrictas condiciones de seguridad y plazos de rectificación controlados.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.6 Uso de las Listas de Equipamiento Mínimo (MEL) y CDL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-MEL-002",
+    "subject_id": "moa_equipamiento_minimo_mel_cdl",
+    "learning_objective": "MOA 8.6.2 - Intervalos de Rectificación: Categoría A",
+    "stem": "¿Cómo se define el Intervalo de Rectificación de Categoría A en la MEL de Binter?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Elementos sin intervalo estándar fijo, cuya rectificación debe completarse en el plazo expresamente especificado en la columna de observaciones (horas de vuelo, ciclos, días de calendario o hasta la base principal)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Debe repararse en exactamente 10 minutos tras encender los motores",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se puede retrasar la reparación durante 5 años sin límite",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo aplica a la radio comercial de pasajeros",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los ítems de **Categoría A** no admiten prórroga estándar: **su límite de despacho se especifica explícitamente en la columna de 'Remarks or Exceptions'** (ej. 3 vuelos, 24 horas, o hasta el retorno a base principal) (MOA 8.6.2).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.6 Uso de las Listas de Equipamiento Mínimo (MEL) y CDL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MEL-003",
+    "subject_id": "moa_equipamiento_minimo_mel_cdl",
+    "learning_objective": "MOA 8.6.2 - Intervalos de Rectificación: Categoría B",
+    "stem": "¿Cuál es el plazo reglamentario de rectificación para una avería clasificada en Categoría B de la MEL?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Debe ser rectificada en un plazo no superior a **3 días naturales consecutivos (72 horas)**, excluyendo el día en que la avería fue registrada en el ATL",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Debe rectificarse en 30 días",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Debe rectificarse en 12 horas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No requiere reparación",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La **Categoría B de la MEL** fija un intervalo de rectificación de **3 días de calendario consecutivos** (excluyendo el día de descubrimiento en el Technical Log) (MOA 8.6.2 / EASA CS-MMEL).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.6 Uso de las Listas de Equipamiento Mínimo (MEL) y CDL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MEL-004",
+    "subject_id": "moa_equipamiento_minimo_mel_cdl",
+    "learning_objective": "MOA 8.6.2 - Intervalos de Rectificación: Categoría C",
+    "stem": "¿Cuál es el plazo reglamentario de rectificación para un elemento diferido en Categoría C de la MEL?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Debe ser rectificada en un plazo no superior a **10 días naturales consecutivos**, excluyendo el día del registro inicial en el ATL",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Debe rectificarse en 1 día",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Debe rectificarse en 120 días",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Debe repararse durante la escala de 20 minutos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La **Categoría C de la MEL** otorga un intervalo estándar de **10 días naturales consecutivos** (excluyendo el día del apunte inicial en el ATL) (MOA 8.6.2).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.6 Uso de las Listas de Equipamiento Mínimo (MEL) y CDL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MEL-005",
+    "subject_id": "moa_equipamiento_minimo_mel_cdl",
+    "learning_objective": "MOA 8.6.2 - Intervalos de Rectificación: Categoría D",
+    "stem": "¿Cuál es el plazo reglamentario para elementos diferidos bajo Categoría D de la MEL?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Debe ser rectificada en un plazo no superior a **120 días naturales consecutivos**, excluyendo el día de registro en el ATL",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Debe rectificarse en 10 días",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Debe rectificarse en 24 horas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Tiene validez infinita sin necesidad de reparación",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La **Categoría D de la MEL** se reserva para equipos opcionales redundantes no esenciales y establece un plazo máximo de **120 días de calendario consecutivos** (MOA 8.6.2).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.6 Uso de las Listas de Equipamiento Mínimo (MEL) y CDL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MEL-006",
+    "subject_id": "moa_equipamiento_minimo_mel_cdl",
+    "learning_objective": "MOA 8.6.3 - Símbolo (O) en la MEL (Operational Procedures)",
+    "stem": "¿Qué significa la presencia del símbolo (O) junto a un ítem en la columna de la MEL?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indica que el despacho del avión exige la ejecución de un **Procedimiento Operacional específico** por parte de la tripulación de vuelo antes de la salida o durante el vuelo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Que el ítem es Opcional y no requiere atención",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Que el avión solo puede volar hacia el Oeste (Oeste / West)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Que el mantenimiento debe realizarse en un taller oficial",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El símbolo **`(O)`** designa una condición de mitigación que exige una **acción o procedimiento operativo ejecutado por la tripulación de vuelo** (revisión de pesos, límites de altitud, cálculos ePerf o briefings especiales) (MOA 8.6.3).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.6 Uso de las Listas de Equipamiento Mínimo (MEL) y CDL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-MEL-007",
+    "subject_id": "moa_equipamiento_minimo_mel_cdl",
+    "learning_objective": "MOA 8.6.3 - Símbolo (M) en la MEL (Maintenance Procedures)",
+    "stem": "¿Qué significa la presencia del símbolo (M) junto a un ítem de la MEL y quién debe cumplimentarlo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indica que el despacho requiere un **Procedimiento de Mantenimiento específico** ejecutado y certificado por personal técnico cualificado y con licencia (LMA / TMA) antes del vuelo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Que el procedimiento puede realizarlo el comandante si lleva guantes",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Que el ítem solo falla los días Miércoles",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Que el avión solo puede transportar mercancías",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El símbolo **`(M)`** exige una acción técnica de mantenimiento (desconexión física de conectores, bloqueo de válvulas, colocación de bridas o comprobaciones BITE) **certificada obligatoriamente por un mecánico habilitado (LMA) en el ATL** (MOA 8.6.3).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.6 Uso de las Listas de Equipamiento Mínimo (MEL) y CDL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-MEL-008",
+    "subject_id": "moa_equipamiento_minimo_mel_cdl",
+    "learning_objective": "MOA 8.6.4 - Lista de Desviación de la Configuración (CDL - Configuration Deviation List)",
+    "stem": "¿Qué diferencia a la CDL (Configuration Deviation List) de la MEL?",
+    "options": [
+      {
+        "id": "A",
+        "text": "La CDL regula el despacho del avión con partes o carenas aerodinámicas exteriores secundarias ausentes (tapas, sellos, paneles), aplicando penalizaciones directas de rendimiento y peso",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "La CDL regula el número de azafatas a bordo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La CDL es para barcos y la MEL para aviones",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La CDL se aplica únicamente cuando el avión está en el hangar de pintura",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La **CDL (Configuration Deviation List / MOA 8.6.4)** autoriza el vuelo con **piezas estructurales/aerodinámicas secundarias faltantes**, exigiendo penalizaciones en el peso máximo de despegue (MTOW) o consumo adicional de combustible en el OFP.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.6 Uso de las Listas de Equipamiento Mínimo (MEL) y CDL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MEL-009",
+    "subject_id": "moa_equipamiento_minimo_mel_cdl",
+    "learning_objective": "MOA 8.6.5 - Momento de Aplicabilidad de la MEL (Fase de Despacho vs en Vuelo)",
+    "stem": "¿Hasta qué momento exacto de la operación en tierra es de aplicación legal obligatoria la MEL?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hasta el momento en que la aeronave inicia la marcha por sus propios medios para el despegue (soltada de calzos / inicio del rodaje propio)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Hasta que el avión aterriza en el destino final",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Hasta que los pasajeros se sientan en sus butacas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Durante todo el crucero a 35.000 pies",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "**Límite temporal de aplicación de la MEL**: Aplica **hasta que el avión comienza a rodar por su propia potencia (*Commencement of the Flight*)**; averías posteriores al inicio del rodaje se gestionan según las Listas de Emergencia/Anormales (QRH/SOPM) a criterio del Comandante (MOA 8.6.5 / EASA).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.6 Uso de las Listas de Equipamiento Mínimo (MEL) y CDL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MEL-010",
+    "subject_id": "moa_equipamiento_minimo_mel_cdl",
+    "learning_objective": "MOA 8.6.6 - Acumulación de Ítems Diferidos en la MEL (Multiple Inoperative Items)",
+    "stem": "Al despachar un avión con múltiples equipos inoperativos diferidos simultáneamente, ¿qué evaluación debe realizar la tripulación?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Evaluar el impacto acumulativo de las degradaciones sobre la carga de trabajo en cabina, las limitaciones de sistemas cruzados y la seguridad global del vuelo antes de aceptar el avión",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Sumar los días de todas las averías para volar gratis un mes",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Desconectar los ordenadores para que no se acumulen las alertas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No se permite volar con más de una avería bajo ninguna circunstancia",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La existencia de **múltiples fallos simultáneos (*Multiple Inoperative Items*)** exige analizar la interdependencia de sistemas y la carga de trabajo; el Comandante tiene la potestad de rechazar el avión si la acumulación compromete la seguridad (MOA 8.6.6 / AMC1 CAT.GEN.MPA.180).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.6 Uso de las Listas de Equipamiento Mínimo (MEL) y CDL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MEL-011",
+    "subject_id": "moa_equipamiento_minimo_mel_cdl",
+    "learning_objective": "MOA 8.6.2 - Prórroga del Intervalo de Rectificación (RIE - Rectification Interval Extension)",
+    "stem": "¿Bajo qué condiciones y qué categorías de la MEL pueden acogerse a una Prórroga del Intervalo de Rectificación (RIE)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Únicamente las **Categorías B, C y D** pueden prorrogarse por un periodo idéntico al original mediante autorización técnica formal de Mantenimiento CAMO, quedando la Categoría A excluida de prórrogas",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Todas las categorías incluida la A de forma automática",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo la categoría A con permiso verbal del copiloto",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Ninguna categoría puede prorrogarse jamás",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El procedimiento **RIE (Rectification Interval Extension / MOA 8.6.2)** permite a la CAMO conceder una única prórroga extraordinaria para **Categorías B (+3 días), C (+10 días) y D (+120 días)** ante causas justificadas de falta de repuestos; la **Categoría A no admite prórroga**.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.6 Uso de las Listas de Equipamiento Mínimo (MEL) y CDL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MEL-012",
+    "subject_id": "moa_equipamiento_minimo_mel_cdl",
+    "learning_objective": "MOA 8.6.3 - Señalización Obligatoria con Cartel de 'INOPERATIVE' (Placarding)",
+    "stem": "Cuando un equipo o conmutador de cabina queda diferido por MEL, ¿qué acción física debe realizarse sobre el panel?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colocar de forma visible y clara una placa o etiqueta adhesiva de '**INOPERATIVE**' sobre el control, pantalla o interruptor afectado",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Pintar el panel de color rojo con rotulador permanente",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Tapar el interruptor con cinta aislante negra para que no se vea",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Desmontar todo el panel y guardarlo en la bodega",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El procedimiento de la MEL exige que todo equipo inoperativo sea formalmente **señalizado con un cartel (*Placard*) visible que indique `INOPERATIVE`** para advertir a cualquier tripulación que opere la aeronave (MOA 8.6.3 / EASA CS-MMEL).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.6 Uso de las Listas de Equipamiento Mínimo (MEL) y CDL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-MEL-013",
+    "subject_id": "moa_equipamiento_minimo_mel_cdl",
+    "learning_objective": "MOA 8.6.4 - Penalización de Combustible por Despacho con Ítems de la CDL",
+    "stem": "Si se despacha el avión con un carenado aerodinámico ausente según la CDL que impone un 1.5% de consumo adicional, ¿dónde se refleja?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En el Plan Operacional de Vuelo (OFP), incrementando proporcionalmente el combustible de viaje (Trip Fuel) y recalculando el peso máximo de despegue",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cargando dos barriles de queroseno dentro del pasillo de pasaje",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Volando 100 nudos más lento de lo programado",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No requiere ajuste si el vuelo dura menos de 2 horas",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Toda penalización por CDL (resistencia parásita adicional) debe ser **incorporada por Despacho de Vuelo en el OFP**, ajustando el **combustible de navegación (Trip Fuel) y los límites de masa máxima (MTOW/MLW)** (MOA 8.6.4 / 8.1.8).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.6 Uso de las Listas de Equipamiento Mínimo (MEL) y CDL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MEL-014",
+    "subject_id": "moa_equipamiento_minimo_mel_cdl",
+    "learning_objective": "MOA 8.6.5 - Fallo de Sistema Producido Durante el Rodaje (After Taxi Initiation)",
+    "stem": "Si un sistema falla después de iniciar el rodaje y antes de la carrera de despegue, ¿cómo debe actuar el Comandante?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Evaluar la avería consultando la MEL/QRH: si la MEL prohíbe el despegue o impone procedimientos no realizables, debe retornar a plataforma para la intervención de mantenimiento",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Continuar el despegue inmediatamente antes de que el ordenador avise al pasaje",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Desconectar las alertas del EICAS para que no quede registrado el fallo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pedir a los pasajeros que decidan por votación si despegan",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Tras soltar calzos, la MEL deja de ser legalmente imperativa pero se mantiene como **referencia técnica primordial**: si la avería compromete la aeronavegabilidad o viola la MEL, el Comandante debe **retornar al parking (Gate Return)** (MOA 8.6.5 / SOPM).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.6 Uso de las Listas de Equipamiento Mínimo (MEL) y CDL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MEL-015",
+    "subject_id": "moa_equipamiento_minimo_mel_cdl",
+    "learning_objective": "MOA 8.6.1 - Jerarquía Normativa: MMEL del Fabricante vs MEL del Operador",
+    "stem": "¿Cuál es la relación legal entre la Master Minimum Equipment List (MMEL) de Embraer y la MEL de Binter?",
+    "options": [
+      {
+        "id": "A",
+        "text": "La MEL de Binter es elaborada por el operador y aprobada por AESA, pudiendo ser más restrictiva que la MMEL del fabricante, pero nunca más permisiva",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "La MEL de Binter puede ser más permisiva que la MMEL si la compañía lo necesita",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La MEL de Binter no tiene validez aplicándose solo la MMEL en inglés",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No existe relación siendo dos manuales totalmente independientes",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Principio jerárquico EASA (CAT.GEN.MPA.180 / MOA 8.6.1): **La MEL del operador nunca puede ser menos restrictiva que la MMEL de fábrica**, debiendo estar formalmente adaptada a las rutas, flota y aprobaciones específicas de la aerolínea.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.6 Uso de las Listas de Equipamiento Mínimo (MEL) y CDL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MEL-016",
+    "subject_id": "moa_equipamiento_minimo_mel_cdl",
+    "learning_objective": "MOA 8.6.2 - Cómputo de Días de Rectificación en la Lista de Elementos Retenidos (HIL / ADD)",
+    "stem": "Si una avería de Categoría C se registra en el ATL el día 5 de mayo a las 10:00 UTC, ¿cuál es el último día legal para su rectificación?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El día **15 de mayo a las 23:59 UTC** (10 días naturales completos, comenzando a contar el día 6 de mayo a las 00:00 UTC)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El día 5 de mayo a las 20:00 UTC",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El día 8 de mayo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El día 30 de junio",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Regla de cómputo EASA/MOA 8.6.2: El día del descubrimiento (*Day of Discovery*) **se excluye del cómputo**; los 10 días de Categoría C comienzan el día natural siguiente (6 de mayo) y concluyen a las **23:59 UTC del 15 de mayo**.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.6 Uso de las Listas de Equipamiento Mínimo (MEL) y CDL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MEL-017",
+    "subject_id": "moa_equipamiento_minimo_mel_cdl",
+    "learning_objective": "MOA 8.6.3 - Despacho con Inversor de Empuje Inoperativo (One Reverser Inoperative)",
+    "stem": "Al despachar bajo MEL con un inversor de empuje inoperativo bloqueado mecánicamente en posición recogida (Procedimiento M), ¿qué restricción rige?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aplicar el procedimiento operacional (O), calcular la distancia de aterrizaje y despegue en ePerf considerando un solo inversor y respetar las limitaciones en pistas contaminadas",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Está prohibido utilizar los frenos normales del avión",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se permite aterrizar en pistas cubiertas de hielo vivo sin cálculo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se debe apagar el motor correspondiente antes del aterrizaje",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El despacho con **un reversor inoperativo (MEL 78-30)** exige bloqueo físico por mantenimiento `(M)` y cálculo de performance en el EFB ePerf `(O)` considerando el incremento de distancia de frenado (SOPM / MOA 8.6.3).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.6 Uso de las Listas de Equipamiento Mínimo (MEL) y CDL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MEL-018",
+    "subject_id": "moa_equipamiento_minimo_mel_cdl",
+    "learning_objective": "MOA 8.6.3 - Despacho con APU Inoperativo en Escalas sin Medios de Tierra",
+    "stem": "Si el APU está inoperativo según la MEL (Categoría C), ¿qué previsión debe realizar Despacho de Vuelo antes de autorizar la salida?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Verificar que los aeropuertos de destino y alternativos disponen de equipos de arranque de aire (ASU) y suministro eléctrico (GPU) operativos",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Planificar que los pasajeros empujen el avión para arrancar los motores",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Autorizar que los motores no se apaguen nunca durante 48 horas continuas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cargar 10 baterías de automóvil en la cabina de pasajeros",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Operar con **APU inoperativo (MEL 49-10)** exige coordinar previamente la disponibilidad de **GPU (115V AC) y ASU (Ground Start Unit / Air Starter)** en todas las escalas para garantizar el arranque de motores en tierra (MOA 8.6.3 / 8.2.2).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.6 Uso de las Listas de Equipamiento Mínimo (MEL) y CDL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MEL-019",
+    "subject_id": "moa_equipamiento_minimo_mel_cdl",
+    "learning_objective": "MOA 8.6.3 - Despacho con Sistema TCAS Inoperativo",
+    "stem": "¿Bajo qué condiciones autoriza la MEL el despacho con el sistema TCAS II inoperativo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solo como elemento de Categoría B (máx 3 días) para vuelos de posicionamiento o rutas donde la reglamentación del espacio aéreo nacional de los Estados sobrevolados lo autorice expresamente",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se autoriza indefinidamente en cualquier espacio aéreo del mundo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se autoriza si los pilotos llevan prismáticos para vigilar el cielo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El TCAS no puede diferirse bajo ningún concepto",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El despacho con **TCAS inoperativo (MEL 34-45 / Categoría B)** está condicionado a las normas del espacio aéreo ATS atravesado (muchos espacios europeos exigen TCAS II v7.1 obligatorio para cruzar su FIR) (MOA 8.6.3 / Part-SPA).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.6 Uso de las Listas de Equipamiento Mínimo (MEL) y CDL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MEL-020",
+    "subject_id": "moa_equipamiento_minimo_mel_cdl",
+    "learning_objective": "MOA 8.6.5 - Registro de Cierre de Avería en el ATL por Mantenimiento",
+    "stem": "Cuando una avería diferida por MEL es reparada y probada satisfactoriamente, ¿qué constancia formal debe figurar en el ATL?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Firma, número de licencia LMA y declaración de aptitud para el servicio (CRS - Certificate of Release to Service) del técnico certificador, cancelando el ítem del HIL",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Una cruz dibujada a lápiz por el primer oficial",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Una llamada de WhatsApp al jefe de compras de la aerolínea",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No requiere firma si el avión está limpio",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Todo cierre de ítem diferido en la **Hold Item List (HIL)** exige la emisión del **Apto para el Servicio (CRS / Release to Service)** debidamente firmado por un técnico LMA habilitado conforme a Part-145 (MOA 8.1.11 / 8.6.5).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.6 Uso de las Listas de Equipamiento Mínimo (MEL) y CDL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-MEL-021",
+    "subject_id": "moa_equipamiento_minimo_mel_cdl",
+    "learning_objective": "MOA 8.6.3 - Despacho con un Generador Eléctrico Principal Inoperativo (IDG Inop)",
+    "stem": "Al despachar con un generador integrado de motor (IDG) inoperativo bajo MEL, ¿qué fuente eléctrica alternativa debe estar 100% operativa?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El generador eléctrico del APU debe estar operativo y mantenerse funcionando continuamente durante todo el vuelo para asegurar redundancia dual de corriente alterna",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "La dinamo de la rueda de morro",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Las linternas de mano de los tripulantes de cabina",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No se requiere fuente alternativa volando con una sola batería",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El despacho con **un IDG inoperativo (MEL 24-10 / Cat B)** impone como condición imperativa `(O)` mantener el **APU Generator operativo y conectado durante todo el vuelo** para suplir la barra eléctrica afectada (MOA 8.6.3 / AOM).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.6 Uso de las Listas de Equipamiento Mínimo (MEL) y CDL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MEL-022",
+    "subject_id": "moa_equipamiento_minimo_mel_cdl",
+    "learning_objective": "MOA 8.6.4 - Límite Máximo de Ítems de la CDL Aplicables Simultáneamente",
+    "stem": "¿Existe un límite reglamentario en la CDL respecto al número total de desviaciones de configuración acumulables?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sí; la CDL limita el número máximo de penalizaciones y advierte de que no pueden combinarse piezas faltantes en la misma zona aerodinámica si provocan interferencias mutuas no ensayadas",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se pueden retirar todas las compuertas y tapas del avión a la vez",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No existe límite pudiendo volar el avión en esqueleto",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El límite es de exactamente 1.000 piezas",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El preámbulo de la **CDL (Sección de Limitaciones)** prohíbe la acumulación de desviaciones múltiples en el mismo plano o sección que degraden la estabilidad aerodinámica o excedan las tablas de peso certificadas (MOA 8.6.4 / AFM).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.6 Uso de las Listas de Equipamiento Mínimo (MEL) y CDL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-MEL-023",
+    "subject_id": "moa_equipamiento_minimo_mel_cdl",
+    "learning_objective": "MOA 8.6.3 - Despacho con una Bomba de Combustible Principal Inoperativa",
+    "stem": "Al despachar con una bomba eléctrica de combustible de un ala inoperativa (MEL 28-20), ¿qué limitación de altitud o procedimiento aplica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Verificar la operatividad de la bomba cruzada (Crossfeed) y bomba de succión, respetando los límites de altitud máxima por riesgo de cavitación o bloqueo de vapor",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Vaciar completamente el depósito del ala afectada antes de despegar",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Despegar con los motores apagados",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No existe ninguna limitación volando a cualquier nivel",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La MEL 28-20 establece que la pérdida de una bomba principal exige la operatividad del sistema de alimentación cruzada y restringe el nivel máximo de vuelo para garantizar la alimentación por gravedad/succión (AOM / MOA 8.6.3).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.6 Uso de las Listas de Equipamiento Mínimo (MEL) y CDL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-MEL-024",
+    "subject_id": "moa_equipamiento_minimo_mel_cdl",
+    "learning_objective": "MOA 8.6.5 - Obligación de Briefing Técnico entre Tripulaciones Entrantes y Salientes",
+    "stem": "Durante el relevo de tripulaciones en escala, ¿qué información relativa a la MEL debe transferirse verbalmente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El estado de todos los ítems diferidos activos en el HIL/ATL, sus procedimientos operacionales asociados (O) y las penalizaciones de combustible o performance aplicables",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Las preferencias de comida de los mecánicos de tierra",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El tiempo que tardaron en limpiar los aseos del avión",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No se requiere informar de nada si el libro técnico está cerrado en la carpeta",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El relevo de tripulación exige un **briefing técnico formal sobre los defectos diferidos (HIL / MEL Items)**, verificando los procedimientos (O) y su reflejo en el OFP y FMS (MOA 8.1.11 / 8.6.5 / SOPM).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.6 Uso de las Listas de Equipamiento Mínimo (MEL) y CDL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-MEL-025",
+    "subject_id": "moa_equipamiento_minimo_mel_cdl",
+    "learning_objective": "MOA 8.6 - Resumen de la Responsabilidad Operativa en el Uso de la MEL",
+    "stem": "En conclusión, ¿cuál es la responsabilidad final del Comandante respecto a la aceptación de un avión despachado bajo MEL?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Verificar que todas las averías diferidas están en plazo vigente, que los procedimientos (O)/(M) están completados y certificados en el ATL y decidir la aceptación final del vuelo con total autonomía de seguridad",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Aceptar el avión a ciegas sin mirar el libro técnico de vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Firmar el libro técnico sin comprobar las fechas de caducidad de los ítems",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Delegar la responsabilidad en el agente de facturación del aeropuerto",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Comandante ostenta la autoridad final e indelegable para aceptar o rechazar la aeronave despachada bajo MEL**, siendo responsable de comprobar la legalidad de los diferidos y la ejecución de todos los procedimientos de seguridad (CAT.GEN.MPA.105 / MOA 8.6).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.6 Uso de las Listas de Equipamiento Mínimo (MEL) y CDL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  }
+]

@@ -1,0 +1,927 @@
+[
+  {
+    "id": "CMD-MOA-SEC-001",
+    "subject_id": "moa_seguridad_security",
+    "learning_objective": "MOA 10.1 - Puerta Blindada de la Cabina de Vuelo (Cockpit Security Door)",
+    "stem": "¿Qué requisitos de seguridad y blindaje cumple la puerta de la cabina de vuelo según CAT.IDE.A.160 y MOA 10.1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Resistencia balística a impactos de armas de fuego ligeras, resistencia a intrusiones físicas y granadas, cerrojo electromagnético controlado desde cabina y cierre automático permanente en vuelo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Puerta de madera con cortina de tela decorativa",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Puerta que permanece abierta de par en par durante todo el viaje",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Puerta con cerradura que se abre con cualquier llave de coche",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La **Puerta de Cabina de Vuelo Blindada (CAT.IDE.A.160 / MOA 10.1)** está diseñada conforme a estándares internacionales balísticos y anti-intrusión, manteniéndose **bloqueada eléctricamente de forma continua desde el cierre de puertas hasta la llegada al parking**.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 10: Seguridad (Security / AVSEC)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-SEC-002",
+    "subject_id": "moa_seguridad_security",
+    "learning_objective": "MOA 10.1.1 - Procedimiento de Acceso Normal a la Cabina de Vuelo",
+    "stem": "¿Cómo accede un tripulante de cabina autorizado a la cabina técnica en condiciones normales de vuelo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitando la entrada por interfono, verificando los pilotos la identidad del tripulante a través de la cámara de vigilancia o mirilla antes de accionar el conmutador de apertura (UNLK)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Gritando la contraseña por encima de los asientos de pasaje",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Forzando la maneta de la puerta con una palanca metálica",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pidiendo a un pasajero que empuje la puerta",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El protocolo de **acceso normal a cabina técnica (Flight Deck Access)** exige **contacto previo por interfono, comprobación visual positiva por cámara/mirilla** y desbloqueo momentáneo mediante el mando **`COCKPIT DOOR / UNLK`** por los pilotos (MOA 10.1.1).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 10: Seguridad (Security / AVSEC)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-SEC-003",
+    "subject_id": "moa_seguridad_security",
+    "learning_objective": "MOA 10.1.2 - Procedimiento de Acceso de Emergencia (Emergency Access Panel)",
+    "stem": "¿Cómo funciona el sistema de acceso de emergencia a la cabina de vuelo mediante el teclado numérico exterior si los pilotos están incapacitados?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se introduce el código numérico de emergencia: se activa un avisador sonoro en cabina y se inicia un retardo de tiempo (Time Delay de 30 seg); si los pilotos no deniegan la entrada (DENY), la puerta se desbloquea durante unos segundos",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "La puerta se abre de forma instantánea sin ningún retardo ni aviso",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El código apaga los motores del avión automáticamente",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El teclado lanza gas lacrimógeno sobre el pasillo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Emergency Access Code** protege contra asaltos: genera una alarma sonora continua en cabina y **un temporizador de retardo (Time Delay ~30 s)**, permitiendo a los pilotos pulsar **`DENY`** para bloquear la puerta si se trata de un secuestrador (MOA 10.1.2).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 10: Seguridad (Security / AVSEC)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-SEC-004",
+    "subject_id": "moa_seguridad_security",
+    "learning_objective": "MOA 10.2 - Niveles de Amenaza de Seguridad de OACI (Threat Levels 1 a 4)",
+    "stem": "¿Cuáles son los 4 niveles de amenaza de seguridad de OACI según el MOA 10.2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nivel 1: Conducta disruptiva verbal | Nivel 2: Violencia física no letal | Nivel 3: Amenaza de muerte / exhibición de armas | Nivel 4: Intento o brecha de cabina de vuelo / acto suicida",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Nivel 1: Pasajero dormido | Nivel 2: Pasajero despierto | Nivel 3: Pasajero comiendo | Nivel 4: Pasajero desembarcando",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Nivel 1 a 4 según la edad del pasajero conflictivo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo existe un nivel único para cualquier altercado",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Clasificación oficial ICAO AVSEC / MOA 10.2:\n\n### 📊 Niveles de Amenaza de Seguridad a Bordo (Threat Levels)\n| Nivel de Amenaza | Tipo de Conducta |\n| :--- | :--- |\n| **Nivel 1** | **Conducta Disruptiva Verbal** (insultos, desobediencia, actitud desafiante) |\n| **Nivel 2** | **Conducta Físicamente Violenta** (agresión física sin armas, daños materiales) |\n| **Nivel 3** | **Amenaza Letal / Peligro de Muerte** (armas blancas, pistolas, bombas creíbles) |\n| **Nivel 4** | **Intento de Violación de Cabina de Mando / Acto Suicida / Secuestro** |",
+      "references": [
+        "Binter Canarias MOA - Capítulo 10: Seguridad (Security / AVSEC)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-SEC-005",
+    "subject_id": "moa_seguridad_security",
+    "learning_objective": "MOA 10.3 - Ubicación de Menor Riesgo para Artefactos Explosivos (LRBL)",
+    "stem": "¿Qué es la LRBL (Least Risk Bomb Location) y dónde se encuentra ubicada en la aeronave Embraer 195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Es el punto del avión diseñado estructuralmente para colocar un artefacto explosivo sospechoso y minimizar los daños; en el E195-E2 se ubica en el **centro de la puerta de servicio trasera derecha (R2)**",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En el interior de la cabina técnica debajo del asiento del comandante",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En el depósito de combustible central del ala",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En el conducto de aire acondicionado de los lavabos delanteros",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La **LRBL (Least Risk Bomb Location / ICAO AVSEC / MOA 10.3)** es la zona donde una detonación causa el menor daño a sistemas vitales: en el **E195-E2 se sitúa en la puerta trasera R2**, levantando una plataforma con maletas y mantas humedecidas (*Attenuator Stack*).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 10: Seguridad (Security / AVSEC)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-SEC-006",
+    "subject_id": "moa_seguridad_security",
+    "learning_objective": "MOA 10.3.1 - Procedimiento de Construcción de la Plataforma de Atenuación en la LRBL",
+    "stem": "Al colocar un artefacto sospechoso en la LRBL de la puerta R2, ¿cómo debe protegerse según el MOA 10.3.1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colocar al menos 25 cm de equipajes duros en la base, apoyar el artefacto sobre una línea de plástico testigo y rodearlo con mantas empapadas y capas atenuadoras de maletas blandas hacia el interior de cabina",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Sumergir el artefacto en un cubo de combustible de aviación",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Golpear el artefacto con un hacha de incendios para romperlo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Colocar el artefacto en el regazo de un voluntario",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La técnica de la **LRBL** busca **dirigir la onda de choque hacia el exterior a través de la puerta**: se construye una base dura, se ubica el artefacto con un testigo y **se cubre con capas de mantas humedecidas y bultos blandos atenuadores de metralla** (MOA 10.3.1 / ICAO Doc 8973).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 10: Seguridad (Security / AVSEC)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-SEC-007",
+    "subject_id": "moa_seguridad_security",
+    "learning_objective": "MOA 10.2 - Transmisión de Código SSR 7500 ante Secuestro / Interferencia Ilícita",
+    "stem": "Ante un secuestro o intento de toma de control ilícito de la aeronave, ¿qué acción encubierta debe ejecutar el piloto en el transponder?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Seleccionar de inmediato el código **Squawk 7500** en el panel del transponder, alertando de forma silenciosa y automática a todos los centros de control y defensa aérea militar",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Apagar el transponder y las pantallas de navegación",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Seleccionar el código 7000 de vuelo visual",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Enviar un correo electrónico al servicio de atención al cliente",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El código **Squawk 7500** es la señal internacional secreta de **Interferencia Ilícita (*Hijacking*)**: activa de inmediato las alertas en las pantallas radar civiles y centros de mando de defensa aérea militar (MOA 10.2 / OACI Doc 4444).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 10: Seguridad (Security / AVSEC)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-SEC-008",
+    "subject_id": "moa_seguridad_security",
+    "learning_objective": "MOA 10.1 - Prohibición Absoluta de Apertura de Puerta de Cabina en Nivel de Amenaza 3 o 4",
+    "stem": "Durante una situación de secuestro activo o agresión con armas en cabina de pasaje (Nivel 3 o 4), ¿cuál es la norma imperativa para los pilotos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bajo ninguna circunstancia se debe abrir la puerta de la cabina técnica, manteniendo el cerrojo en posición permanente de denegación (DENY / LOCKED) y priorizando el aterrizaje inmediato",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Abrir la puerta para dialogar con los asaltantes",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Permitir la entrada del secuestrador a los mandos si promete no disparar",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Salir los dos pilotos al pasillo para luchar cuerpo a cuerpo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "**Doctrina inviolable de seguridad aérea tras el 11-S**: **La puerta de la cabina de vuelo JAMÁS se abre ante secuestros o coacciones en cabina de pasaje**; la tripulación técnica debe aislarse y aterrizar en el aeropuerto más próximo (MOA 10.1 / ICAO).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 10: Seguridad (Security / AVSEC)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-SEC-009",
+    "subject_id": "moa_seguridad_security",
+    "learning_objective": "MOA 10.4 - Búsqueda de Seguridad de la Aeronave (Aircraft Security Search / Check)",
+    "stem": "¿Cuándo es obligatoria una Verificación de Seguridad de la Aeronave (Security Check) en las escalas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antes de cada vuelo comercial regular para inspeccionar compartimentos de cabina, lavabos, asientos, bolsillos y bodegas en busca de objetos sospechosos, bultos abandonados o armas ocultas",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Una vez cada cinco años durante la revisión mayor",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo si los pasajeros solicitan una revisión",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Únicamente en vuelos con destino a aeropuertos militares",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Security Check reglamentario (Reglamento UE 2015/1998 / MOA 10.4)** se ejecuta sistemáticamente en escalas para confirmar que la aeronave está **libre de artefactos prohibidos o mercancías no autorizadas abandonadas**.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 10: Seguridad (Security / AVSEC)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-SEC-010",
+    "subject_id": "moa_seguridad_security",
+    "learning_objective": "MOA 10.1.3 - Uso de Medios de Inmovilización de Pasajeros Violentos (Restraint Straps)",
+    "stem": "Si un pasajero violento de Nivel 2 o 3 ataca a personas y no se calma, ¿qué medios de contención puede autorizar el Comandante?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El uso de bridas de inmovilización de seguridad homologadas (Restraint Straps / Bridas de plástico de alta resistencia) para sujetar sus muñecas y tobillos en un asiento asegurado",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Encerrar al pasajero en el maletero de equipajes superior",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Atar al pasajero a la puerta de emergencia con cinta adhesiva",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Suministrar bebidas alcohólicas al pasajero hasta que se duerma",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La tripulación dispone de **bridas de retención homologadas (*Restraint Kits*)** para inmovilizar físicamente a pasajeros violentos que pongan en peligro la seguridad del vuelo, custodiándolos hasta la entrega policial (MOA 10.1.3 / Ley 21/2003).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 10: Seguridad (Security / AVSEC)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-SEC-011",
+    "subject_id": "moa_seguridad_security",
+    "learning_objective": "MOA 10.2 - Evaluación de la Credibilidad de una Amenaza de Bomba (Bomb Threat Assessment)",
+    "stem": "¿Cómo se clasifica una amenaza de bomba recibida en vuelo según los criterios de seguridad de Binter?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amenaza 'No Específica' (baja credibilidad / información vaga) o Amenaza 'Específica' (alta credibilidad con detalles concretos de vuelo, artefacto o ubicación), activando el protocolo de aterrizaje inmediato",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Todas las amenazas se consideran bromas de mal gusto y se ignoran",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se clasifica por el tono de voz del interlocutor en simpático o antipático",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo se consideran amenazas recibidas por carta escrita a mano",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La **Evaluación de Amenaza de Bomba (*Bomb Threat Assessment / MOA 10.2*)** clasifica el riesgo en **Específica (desvío urgente, descenso y preparación de LRBL)** o **No Específica (vigilancia reforzada y coordinación con CCO)**.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 10: Seguridad (Security / AVSEC)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-SEC-012",
+    "subject_id": "moa_seguridad_security",
+    "learning_objective": "MOA 10.3 - Despresurización Controlada en Caso de Artefacto Explosivo a Bordo",
+    "stem": "Si se localiza un artefacto explosivo en la cabina y se coloca en la LRBL, ¿qué ajuste de presurización debe realizar la tripulación técnica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Descender a 10.000 pies o altitud segura y despresurizar gradualmente la cabina (Differential Pressure $\u0007pprox 0\text{ psi}$) para minimizar los daños por sobrepresión interna si detona el artefacto",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Aumentar la presión de cabina al máximo para comprimir la bomba",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Ascender a 41.000 pies a máxima velocidad",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Apagar los generadores eléctricos y cortar el combustible",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El protocolo ante bombas en **LRBL** exige **reducir la presión diferencial ($\\Delta P \u0007pprox 0\text{ psi}$)** a una altitud de vuelo segura ($~10.000\text{ ft}$), reduciendo la fuerza destructiva de una posible onda expansiva contra el fuselaje (ICAO Doc 8973 / MOA 10.3).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 10: Seguridad (Security / AVSEC)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-SEC-013",
+    "subject_id": "moa_seguridad_security",
+    "learning_objective": "MOA 10.1 - Procedimiento ante Intento Violento de Forzar la Puerta Blindada",
+    "stem": "Si alguien intenta golpear o forzar violentamente la puerta de cabina de vuelo en pleno vuelo (Amenaza Nivel 4), ¿qué maniobra de pilotaje está autorizada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Declarar emergencia Mayday, transponder 7500/7700, descender de emergencia al campo más próximo y, si es estrictamente necesario, maniobrar con aceleraciones o alabeos suaves para desequilibrar a los agresores en cabina",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Abrir la puerta y entregar las llaves del avión al agresor",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Apagar las luces de navegación y continuar el crucero",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Saltar en paracaídas desde la cabina técnica",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Ante un **asalto a cabina de vuelo (Nivel 4)**: **aislamiento absoluto de cabina, Squawk 7500, descenso a máxima velocidad y maniobras de control de actitud de protección** para facilitar la neutralización de los atacantes (MOA 10.1 / SOPM).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 10: Seguridad (Security / AVSEC)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-SEC-014",
+    "subject_id": "moa_seguridad_security",
+    "learning_objective": "MOA 10.4 - Inspección de Seguridad tras Escalas en Destinos de Alto Riesgo",
+    "stem": "En vuelos procedentes o con escala en aeropuertos clasificados de alto riesgo AVSEC, ¿quién realiza el Registro de Seguridad Reforzado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Personal de seguridad aeroportuaria cualificado y tripulación de vuelo/cabina, registrando paneles desmontables, bodegas, compartimentos de aviónica y zonas accesibles",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Los pasajeros mediante una búsqueda voluntaria",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No se realiza ninguna búsqueda adicional",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El servicio de catering del aeropuerto",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Aircraft Security Search reforzado** en destinos sensibles exige una **inspección física profunda y documentada de todas las cavidades accesibles de la aeronave** antes del embarque de pasaje (Reglamento UE 2015/1998 / MOA 10.4).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 10: Seguridad (Security / AVSEC)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-SEC-015",
+    "subject_id": "moa_seguridad_security",
+    "learning_objective": "MOA 10.1.2 - Bloqueo Manual Mecánico de la Puerta Blindada (Deadbolt Lock)",
+    "stem": "Además del cerrojo electromagnético, ¿de qué mecanismo de bloqueo físico manual dispone la puerta de cabina técnica desde el interior?",
+    "options": [
+      {
+        "id": "A",
+        "text": "De un pasador / cerrojo mecánico de emergencia (Deadbolt) operable exclusivamente desde el interior de la cabina de pilotos que impide físicamente la apertura incluso con código de emergencia válido",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "De una cadena de bicicleta con candado de llave",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "De un imán de baja potencia",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No dispone de ningún cerrojo manual",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **cerrojo mecánico manual (*Deadbolt Lock*)** instalado en el lado de la cabina técnica anula cualquier comando eléctrico exterior, garantizando que **ninguna persona pueda penetrar en cabina si los pilotos deciden bloquear mecánicamente la puerta** (MOA 10.1.2 / AOM).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 10: Seguridad (Security / AVSEC)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-SEC-016",
+    "subject_id": "moa_seguridad_security",
+    "learning_objective": "MOA 10.2 - Comunicación Secreta de Secuestro en Frecuencia de Radio ATC",
+    "stem": "Si la tripulación se encuentra bajo coacción directa en cabina y no puede seleccionar el transponder 7500, ¿cómo puede alertar a ATC discretamente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transmitiendo frases clave de coacción estandarizadas o respondiendo afirmativamente sin colacionar de la forma habitual requerida",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Gritando insultos por la radio a máxima potencia",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cantando el himno nacional por la frecuencia de emergencia",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Apagando el transmisor de radio durante 10 minutos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La fraseología y procedimientos encubiertos de **interferencia ilícita (Duress Call / Covert phraseology)** permiten comunicar a ATC el estado de secuestro **sin levantar sospechas en los secuestradores a bordo** (MOA 10.2 / Doc 4444).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 10: Seguridad (Security / AVSEC)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-SEC-017",
+    "subject_id": "moa_seguridad_security",
+    "learning_objective": "MOA 10.1 - Protección de Códigos de Acceso de Emergencia a Cabina",
+    "stem": "¿Quiénes son las únicas personas autorizadas a conocer los códigos de acceso de emergencia a la cabina de vuelo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Exclusivamente los miembros de la tripulación de vuelo y de cabina asignados a la operación de la compañía, estando terminantemente prohibida su revelación a terceros",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cualquier pasajero frecuente que lo solicite por escrito",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Los empleados de las tiendas del aeropuerto",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Los códigos son públicos y están publicados en internet",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los **códigos de acceso de emergencia a cabina técnica son Información Confidencial Clasificada de Seguridad Aérea**, renovados periódicamente y de conocimiento exclusivo de las tripulaciones operativas (MOA 10.1.2).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 10: Seguridad (Security / AVSEC)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-SEC-018",
+    "subject_id": "moa_seguridad_security",
+    "learning_objective": "MOA 10.2 - Gestión de Pasajeros Disruptivos de Nivel 1 (Disruptive Pax Level 1)",
+    "stem": "Ante un pasajero con conducta verbal disruptiva o agresiva (Nivel 1), ¿cuál es la primera línea de actuación de la tripulación?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Técnicas de desescalada verbal, diálogo asertivo y profesional, advertencia formal de las consecuencias legales y entrega de la 'Tarjeta de Advertencia de Seguridad'",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Agredir físicamente al pasajero para intimidarlo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aterrizar el avión de emergencia en el mar",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Ignorar al pasajero permitiendo que insulte a los demás",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El protocolo ante **Amenazas de Nivel 1** prioriza la **desescalada verbal por los TCPs y la entrega de la Carta/Tarjeta de Apercibimiento Oficial del Comandante (Notice of Violation)** advirtiendo de detención policial a la llegada (MOA 10.2 / 8.2.3).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 10: Seguridad (Security / AVSEC)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-SEC-019",
+    "subject_id": "moa_seguridad_security",
+    "learning_objective": "MOA 10.3 - Retirada de Pasajeros de las Filas Cercanas a la LRBL",
+    "stem": "Al colocar un artefacto sospechoso en la LRBL de la puerta R2, ¿qué medida de protección se adopta con el pasaje?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reubicar a todos los pasajeros de las últimas filas hacia la parte delantera de la cabina, manteniéndolos al menos a 4 o 5 filas de distancia de la puerta trasera",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Hacer que los pasajeros se sienten encima de la puerta R2",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Hacer bajar a los pasajeros por las ventanillas en vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No mover a los pasajeros para mantener el centrado del avión",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El protocolo **LRBL** exige **despejar completamente las últimas filas traseras**, desplazando a todos los ocupantes hacia delante para protegerlos de la metralla y de la onda de choque en caso de explosión (MOA 10.3 / ICAO AVSEC).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 10: Seguridad (Security / AVSEC)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-SEC-020",
+    "subject_id": "moa_seguridad_security",
+    "learning_objective": "MOA 10.4 - Custodia de la Aeronave durante Pernoctas en Aeropuertos No Base",
+    "stem": "¿Cómo se asegura la integridad de la aeronave durante pernoctas en escalas fuera de la base principal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cerrando todas las puertas y compuertas de bodega, retirando pasarelas/escaleras y colocando precintos adhesivos de seguridad numerados en accesos y paneles exteriores",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Dejando las llaves puestas en la puerta delantera",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Dejando las compuertas de bodega abiertas para ventilar",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Contratando a un taxista para que vigile el avión desde fuera",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La protección de la aeronave en pernoctas (*Overnight Security*) se garantiza mediante el **sellado con precintos numerados de seguridad (Security Tamper Evident Seals) en todas las puertas y registros de acceso** (Reglamento UE 2015/1998 / MOA 10.4).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 10: Seguridad (Security / AVSEC)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-SEC-021",
+    "subject_id": "moa_seguridad_security",
+    "learning_objective": "MOA 10.1 - Comprobación del Sistema de Cierre de Puerta Blindada en Prevuelo",
+    "stem": "Durante la preparación de cabina en prevuelo, ¿qué prueba funcional de la puerta blindada realizan los pilotos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Comprobar el funcionamiento del interruptor UNLK / DENY, la iluminación de los avisadores luminosos en el panel superior y el sonido del zumbador de llamada",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Golpear la puerta con fuerza para ver si se cae",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Desconectar los cables eléctricos de la cerradura",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No requiere prueba si la puerta cierra a mano",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Cockpit Door Test (SOPM / MOA 10.1)** verifica el cerrojo electromagnético, las luces indicadoras de estado y el funcionamiento del pulsador de rechazo de acceso **`DENY`** antes del primer vuelo del día.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 10: Seguridad (Security / AVSEC)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-SEC-022",
+    "subject_id": "moa_seguridad_security",
+    "learning_objective": "MOA 10.2 - Coordinación con Escoltas de Seguridad en Vuelo (Air Marshals)",
+    "stem": "Si en un vuelo viajan Agentes de Seguridad en Vuelo encubiertos (Air Marshals), ¿qué información intercambian con el Comandante antes del despegue?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Identificación positiva oficial, número de agentes, ubicación de sus asientos en cabina y procedimientos de coordinación y contraseñas discretas en caso de crisis",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Los agentes no pueden hablar con los pilotos en ningún momento",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Los agentes deben anunciar por megafonía a los pasajeros que van armados",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se entregan las armas de los agentes al sobrecargo de cabina",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La presencia de **Agentes de Seguridad en Vuelo (Air Marshals)** exige un **briefing de seguridad confidencial con el Comandante antes del vuelo**, fijando asientos asignados y códigos de intervención (MOA 10.2 / ICAO Annex 17).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 10: Seguridad (Security / AVSEC)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-SEC-023",
+    "subject_id": "moa_seguridad_security",
+    "learning_objective": "MOA 10.3 - Procedimiento de Aterrizaje y Desalojo tras Amenaza de Bomba",
+    "stem": "Tras aterrizar de emergencia por amenaza de bomba a bordo, ¿cómo se efectúa el desembarque del pasaje?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rodar a una zona aislada de seguridad designada por el aeropuerto (Isolated Parking Area), apagar motores y proceder a la evacuación rápida o desembarque de emergencia según ordene el Comandante",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Rodar a la terminal principal y desembarcar lentamente por el finger",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aparcar el avión junto a los depósitos de combustible del aeropuerto",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Hacer que los pasajeros busquen la bomba por debajo de sus asientos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El avión con amenaza de bomba rueda al **Puesto de Estacionamiento Aislado (*Isolated Aircraft Parking Position*)**, a más de 100 metros de edificios u otros aviones, procediendo al **desalojo urgente de ocupantes y actuación de los TEDAX / desactivadores de explosivos** (MOA 10.3 / OACI).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 10: Seguridad (Security / AVSEC)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-SEC-024",
+    "subject_id": "moa_seguridad_security",
+    "learning_objective": "MOA 10.1 - Protección contra Fuego en la Puerta Blindada (Decompression Louvers)",
+    "stem": "¿Qué función cumplen las rejillas de despresurización rápida (Decompression Panels / Blow-out panels) instaladas en la puerta blindada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se abren automáticamente ante una despresurización brusca en cabina técnica o de pasaje para igualar instantáneamente las presiones y evitar el colapso estructural del mamparo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Permiten que entre aire caliente de la cocina",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Sirven para que los pilotos pidan comida a las azafatas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Permiten expulsar el humo hacia el exterior del avión",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los **Blow-out / Decompression Panels** de la puerta blindada se liberan por diferencial de presión, **evitando que una despresurización explosiva en cabina hunda el suelo o colapse el mamparo de cabina de mando** (AOM / MOA 10.1).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 10: Seguridad (Security / AVSEC)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-SEC-025",
+    "subject_id": "moa_seguridad_security",
+    "learning_objective": "MOA 10 - Resumen de la Doctrina de Seguridad contra Interferencia Ilícita (AVSEC)",
+    "stem": "En conclusión, ¿cuál es el principio cardinal de la seguridad contra actos de interferencia ilícita en Binter?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Proteger la integridad inexpugnable de la cabina de mando, defender la seguridad física de tripulantes y pasajeros y cooperar de forma inmediata con las autoridades policiales del Estado",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Ceder a cualquier exigencia de los secuestradores para evitar discusiones",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Ocultar los incidentes de seguridad para proteger la imagen de la empresa",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Permitir el acceso a cabina técnica a cualquier persona que afirme tener una emergencia",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La **Doctrina AVSEC (Aviation Security / MOA 10 / Convenio de Tokio)** consagra **la inviolabilidad de la cabina técnica como el santuario operativo del vuelo**, garantizando que los pilotos mantengan siempre el control de la aeronave para salvar a sus ocupantes.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 10: Seguridad (Security / AVSEC)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  }
+]
