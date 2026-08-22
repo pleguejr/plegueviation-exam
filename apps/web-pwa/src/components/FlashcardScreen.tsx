@@ -64,6 +64,7 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [deck, setDeck] = useState<Question[]>([]);
+  const [batchSize, setBatchSize] = useState<number | 'all'>(25);
   const [statsMap, setStatsMap] = useState<Record<string, QuestionStats>>({});
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
   const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
@@ -89,11 +90,17 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
 
   // Construir el mazo de flashcards con Priorización Cognitiva Inteligente (Spaced Repetition)
   // 1° Difíciles (barajadas) -> 2° No Vistas (barajadas) -> 3° Regulares (barajadas) -> 4° Dominadas (barajadas)
-  const buildDeck = async (cat: string, fType: 'all' | 'numerical' | 'acronym', randomize = true) => {
+  const buildDeck = async (
+    cat: string, 
+    fType: 'all' | 'numerical' | 'acronym', 
+    randomize = true,
+    limit: number | 'all' = batchSize
+  ) => {
     const liveStats = await getAllStatsMap();
     setStatsMap(liveStats);
-    const prioritizedDeck = buildPrioritizedFlashcardDeck(questions, liveStats, cat, fType, randomize);
-    setDeck(prioritizedDeck);
+    const prioritizedFull = buildPrioritizedFlashcardDeck(questions, liveStats, cat, fType, randomize);
+    const limitedDeck = limit === 'all' ? prioritizedFull : prioritizedFull.slice(0, limit);
+    setDeck(limitedDeck);
     setCurrentIndex(0);
     setIsFlipped(false);
     setIsSessionCompleted(false);
@@ -107,8 +114,8 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
   };
 
   useEffect(() => {
-    buildDeck(selectedCategory, filterType, true);
-  }, [questions, selectedCategory, filterType]);
+    buildDeck(selectedCategory, filterType, true, batchSize);
+  }, [questions, selectedCategory, filterType, batchSize]);
 
   const currentQuestion: Question | undefined = deck[currentIndex];
   const currentStat: QuestionStats | undefined = currentQuestion ? statsMap[currentQuestion.id] : undefined;
@@ -141,8 +148,9 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
   };
 
   const handleShuffle = () => {
-    const reshuffled = buildPrioritizedFlashcardDeck(questions, statsMap, selectedCategory, filterType, true);
-    setDeck(reshuffled);
+    const reshuffledFull = buildPrioritizedFlashcardDeck(questions, statsMap, selectedCategory, filterType, true);
+    const limited = batchSize === 'all' ? reshuffledFull : reshuffledFull.slice(0, batchSize);
+    setDeck(limited);
     setCurrentIndex(0);
     setIsFlipped(false);
     setIsSessionCompleted(false);
@@ -150,7 +158,12 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
   };
 
   const handleRestart = () => {
-    buildDeck(selectedCategory, filterType, true);
+    buildDeck(selectedCategory, filterType, true, batchSize);
+  };
+
+  const handleRebuildAndNextBatch = async () => {
+    await buildDeck(selectedCategory, filterType, true, batchSize);
+    showToast('✨ Mazo reconstruido con las prioridades actualizadas');
   };
 
   const handleRetryHardOnly = () => {
@@ -285,8 +298,21 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
           <span>Volver al Dashboard</span>
         </button>
 
-        {/* Action Controls: Shuffle, Restart, Delete Question */}
-        <div className="flex items-center gap-2 sm:gap-3">
+        {/* Action Controls: Finalizar Sesión, Shuffle, Restart, Review, Delete */}
+        <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+          
+          {/* Botón Principal para Finalizar Sesión en cualquier momento */}
+          {!isSessionCompleted && totalCards > 0 && (
+            <button
+              onClick={() => setIsSessionCompleted(true)}
+              className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white border border-emerald-500/40 text-xs font-black shadow-glow-emerald transition-all active:scale-95"
+              title="Finalizar sesión actual, ver balance y reconstruir el mazo priorizado"
+            >
+              <CheckCircle2 className="w-3.5 h-3.5" />
+              <span>Finalizar Sesión</span>
+            </button>
+          )}
+
           <button
             onClick={handleShuffle}
             className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-sky-300 border border-slate-700 text-xs font-bold transition-all active:scale-95"
@@ -348,7 +374,7 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
               <h1 className="text-xl font-black text-white flex items-center gap-2">
                 <span>Modo Flashcards</span>
                 <span className="text-xs font-mono px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30 font-bold">
-                  {totalCards} en cola
+                  {totalCards} en cola {batchSize !== 'all' ? `(tanda de ${batchSize})` : ''}
                 </span>
                 {sessionStats.requeuedCount > 0 && (
                   <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-rose-500/20 text-rose-300 border border-rose-500/30 font-bold flex items-center gap-1">
@@ -381,7 +407,7 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
           </div>
         </div>
 
-        {/* Secondary Filter & Study Mode Toggle */}
+        {/* Secondary Filter, Tanda Size & Study Mode Toggle */}
         <div className="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-slate-800/80">
           
           {/* Filter Pills */}
@@ -422,38 +448,59 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
             </button>
           </div>
 
-          {/* Study Mode: Pure Recall vs Options Mode */}
-          <div className="flex items-center gap-1 bg-slate-900 p-1 rounded-xl border border-slate-800 text-xs">
-            <button
-              onClick={() => setStudyMode('pure_recall')}
-              className={`px-2.5 py-1 rounded-lg font-bold flex items-center gap-1 transition-all ${
-                studyMode === 'pure_recall'
-                  ? 'bg-sky-600 text-white shadow-sm'
-                  : 'text-slate-400 hover:text-white'
-              }`}
-              title="Oculta las 4 opciones en el anverso para forzar recuerdo activo puro"
-            >
-              <Brain className="w-3.5 h-3.5" />
-              <span>Recuerdo Activo</span>
-            </button>
-            <button
-              onClick={() => setStudyMode('with_options')}
-              className={`px-2.5 py-1 rounded-lg font-bold flex items-center gap-1 transition-all ${
-                studyMode === 'with_options'
-                  ? 'bg-sky-600 text-white shadow-sm'
-                  : 'text-slate-400 hover:text-white'
-              }`}
-              title="Muestra las opciones en el anverso como pista"
-            >
-              <List className="w-3.5 h-3.5" />
-              <span>Con Opciones</span>
-            </button>
+          <div className="flex flex-wrap items-center gap-2">
+            {/* Selector de Tamaño de Tanda (Micro-learning) */}
+            <div className="flex items-center gap-1 bg-slate-900 p-1 rounded-xl border border-slate-800 text-xs">
+              <span className="text-[10px] font-mono text-slate-400 font-bold px-1.5 uppercase">Tanda:</span>
+              {[15, 25, 50, 'all'].map((size) => (
+                <button
+                  key={size}
+                  onClick={() => setBatchSize(size as number | 'all')}
+                  className={`px-2 py-0.5 rounded-lg font-bold transition-all text-[11px] ${
+                    batchSize === size
+                      ? 'bg-amber-500 text-slate-950 font-black shadow-sm'
+                      : 'text-slate-400 hover:text-white'
+                  }`}
+                  title={size === 'all' ? 'Ver todas las disponibles' : `Tanda de ${size} preguntas`}
+                >
+                  {size === 'all' ? 'Todas' : size}
+                </button>
+              ))}
+            </div>
+
+            {/* Study Mode: Pure Recall vs Options Mode */}
+            <div className="flex items-center gap-1 bg-slate-900 p-1 rounded-xl border border-slate-800 text-xs">
+              <button
+                onClick={() => setStudyMode('pure_recall')}
+                className={`px-2.5 py-1 rounded-lg font-bold flex items-center gap-1 transition-all ${
+                  studyMode === 'pure_recall'
+                    ? 'bg-sky-600 text-white shadow-sm'
+                    : 'text-slate-400 hover:text-white'
+                }`}
+                title="Oculta las 4 opciones en el anverso para forzar recuerdo activo puro"
+              >
+                <Brain className="w-3.5 h-3.5" />
+                <span>Recuerdo Activo</span>
+              </button>
+              <button
+                onClick={() => setStudyMode('with_options')}
+                className={`px-2.5 py-1 rounded-lg font-bold flex items-center gap-1 transition-all ${
+                  studyMode === 'with_options'
+                    ? 'bg-sky-600 text-white shadow-sm'
+                    : 'text-slate-400 hover:text-white'
+                }`}
+                title="Muestra las opciones en el anverso como pista"
+              >
+                <List className="w-3.5 h-3.5" />
+                <span>Con Opciones</span>
+              </button>
+            </div>
           </div>
 
         </div>
       </div>
 
-      {/* 3. Session Complete Celebration Screen */}
+      {/* 3. Session Complete Celebration / Balance Screen */}
       {isSessionCompleted ? (
         <div className="bg-[#0e1933] border border-emerald-500/40 rounded-3xl p-8 sm:p-12 text-center space-y-6 shadow-2xl animate-fade-in">
           <div className="w-20 h-20 rounded-full bg-emerald-500/20 border-2 border-emerald-500/40 flex items-center justify-center text-emerald-400 mx-auto shadow-glow-emerald">
@@ -461,17 +508,19 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
           </div>
 
           <div className="space-y-2">
-            <h2 className="text-2xl font-black text-white">¡Sesión de Flashcards Completada!</h2>
+            <h2 className="text-2xl font-black text-white">¡Sesión de Flashcards Finalizada!</h2>
             <p className="text-xs text-slate-300 max-w-md mx-auto">
-              Has revisado todas las tarjetas del mazo actual, incluyendo las repeticiones espaciadas de los conceptos difíciles.
+              Has revisado <strong>{sessionStats.easyCount + sessionStats.mediumCount + sessionStats.hardCount}</strong> tarjetas en esta tanda. Todas tus evaluaciones ya han sido guardadas para optimizar la retención a largo plazo.
             </p>
           </div>
 
           {/* Session Metrics Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl mx-auto pt-2">
             <div className="p-4 rounded-2xl bg-black/40 border border-slate-800 text-center space-y-1">
-              <span className="text-[10px] font-mono text-slate-400 uppercase font-bold">Total Tarjetas</span>
-              <p className="text-2xl font-black text-sky-400">{deck.length}</p>
+              <span className="text-[10px] font-mono text-slate-400 uppercase font-bold">Evaluadas</span>
+              <p className="text-2xl font-black text-sky-400">
+                {sessionStats.easyCount + sessionStats.mediumCount + sessionStats.hardCount}
+              </p>
             </div>
 
             <div className="p-4 rounded-2xl bg-emerald-950/40 border border-emerald-500/30 text-center space-y-1">
@@ -485,17 +534,26 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
             </div>
 
             <div className="p-4 rounded-2xl bg-rose-950/40 border border-rose-500/30 text-center space-y-1">
-              <span className="text-[10px] font-mono text-rose-300 uppercase font-bold">🔁 Re-entrenadas</span>
-              <p className="text-2xl font-black text-rose-400">{sessionStats.requeuedCount}</p>
+              <span className="text-[10px] font-mono text-rose-300 uppercase font-bold">🔴 Difíciles</span>
+              <p className="text-2xl font-black text-rose-400">{sessionStats.hardCount}</p>
             </div>
           </div>
 
-          {/* Action Buttons */}
+          {/* Action Buttons: Reconstruir Mazo Priorizado & Siguiente Tanda */}
           <div className="flex flex-wrap items-center justify-center gap-3 pt-4 border-t border-slate-800">
+            
+            <button
+              onClick={handleRebuildAndNextBatch}
+              className="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-emerald-600 via-teal-500 to-sky-600 hover:from-emerald-500 hover:to-sky-500 text-white text-xs font-black shadow-glow-emerald transition-all active:scale-95 flex items-center gap-2"
+            >
+              <Repeat className="w-4 h-4" />
+              <span>Reconstruir Mazo Priorizado & Siguiente Tanda</span>
+            </button>
+
             {sessionStats.hardQuestionIds.size > 0 && (
               <button
                 onClick={handleRetryHardOnly}
-                className="px-5 py-3 rounded-2xl bg-gradient-to-r from-rose-600 to-pink-600 hover:from-rose-500 hover:to-pink-500 text-white text-xs font-black shadow-glow-rose transition-all active:scale-95 flex items-center gap-2"
+                className="px-5 py-3.5 rounded-2xl bg-gradient-to-r from-rose-600 to-pink-600 hover:from-rose-500 hover:to-pink-500 text-white text-xs font-black shadow-glow-rose transition-all active:scale-95 flex items-center gap-2"
               >
                 <Flame className="w-4 h-4" />
                 <span>Repetir Solo las Difíciles ({sessionStats.hardQuestionIds.size})</span>
@@ -503,16 +561,8 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
             )}
 
             <button
-              onClick={handleRestart}
-              className="px-5 py-3 rounded-2xl bg-sky-600 hover:bg-sky-500 text-white text-xs font-black shadow-glow-sky transition-all active:scale-95 flex items-center gap-2"
-            >
-              <RotateCcw className="w-4 h-4" />
-              <span>Reiniciar Mazo Completo</span>
-            </button>
-
-            <button
               onClick={onExit}
-              className="px-5 py-3 rounded-2xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold transition-all active:scale-95"
+              className="px-5 py-3.5 rounded-2xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold transition-all active:scale-95"
             >
               Volver al Dashboard
             </button>
@@ -760,27 +810,38 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
           </div>
 
           {/* Bottom Deck Navigation Buttons */}
-          <div className="flex items-center justify-between pt-2">
+          <div className="flex flex-wrap items-center justify-between gap-2 pt-2">
             <button
               onClick={handlePrev}
               disabled={currentIndex === 0}
-              className="px-5 py-3 rounded-2xl bg-[#0e1933] hover:bg-slate-800 text-sky-300 border border-sky-500/30 text-xs font-bold transition-all disabled:opacity-30 disabled:cursor-not-allowed flex items-center gap-2 active:scale-95"
+              className="px-4 sm:px-5 py-3 rounded-2xl bg-[#0e1933] hover:bg-slate-800 text-sky-300 border border-sky-500/30 text-xs font-bold transition-all disabled:opacity-30 disabled:cursor-not-allowed flex items-center gap-2 active:scale-95"
             >
               <ArrowLeft className="w-4 h-4" />
               <span>Anterior</span>
             </button>
 
-            <button
-              onClick={handleFlip}
-              className="px-6 py-3 rounded-2xl bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-500 hover:to-blue-500 text-white text-xs font-extrabold shadow-glow-sky transition-all active:scale-95 flex items-center gap-2"
-            >
-              {isFlipped ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
-              <span>{isFlipped ? 'Ocultar Respuesta' : 'Revelar Respuesta'}</span>
-            </button>
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => setIsSessionCompleted(true)}
+                className="px-3.5 py-3 rounded-2xl bg-slate-900 hover:bg-slate-800 text-emerald-400 border border-emerald-500/30 text-xs font-bold transition-all flex items-center gap-1.5 active:scale-95"
+                title="Cerrar tanda actual y ver balance de estudio"
+              >
+                <CheckCircle2 className="w-4 h-4" />
+                <span className="hidden sm:inline">Finalizar Tanda</span>
+              </button>
+
+              <button
+                onClick={handleFlip}
+                className="px-5 sm:px-6 py-3 rounded-2xl bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-500 hover:to-blue-500 text-white text-xs font-extrabold shadow-glow-sky transition-all active:scale-95 flex items-center gap-2"
+              >
+                {isFlipped ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                <span>{isFlipped ? 'Ocultar Respuesta' : 'Revelar Respuesta'}</span>
+              </button>
+            </div>
 
             <button
               onClick={handleNext}
-              className="px-5 py-3 rounded-2xl bg-[#0e1933] hover:bg-slate-800 text-sky-300 border border-sky-500/30 text-xs font-bold transition-all flex items-center gap-2 active:scale-95"
+              className="px-4 sm:px-5 py-3 rounded-2xl bg-[#0e1933] hover:bg-slate-800 text-sky-300 border border-sky-500/30 text-xs font-bold transition-all flex items-center gap-2 active:scale-95"
             >
               <span>{currentIndex >= deck.length - 1 ? 'Finalizar' : 'Siguiente'}</span>
               <ArrowRight className="w-4 h-4" />
