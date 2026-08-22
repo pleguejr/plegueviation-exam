@@ -22,6 +22,7 @@ import { recordAnswerStat, toggleQuestionFlag, getQuestionStat } from '../servic
 import { SpeedSummaryTable } from './SpeedSummaryTable';
 import { PlanningMinimaTable } from './PlanningMinimaTable';
 import { FormattedText } from './FormattedText';
+import { getSpeedSummaryTableType, getPlanningMinimaTableType } from '../utils/aircraftRules';
 
 interface ExamScreenProps {
   session: ExamSession;
@@ -502,36 +503,19 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
               <div className="p-4 rounded-xl bg-black/40 border border-slate-800 text-slate-200 text-sm leading-relaxed space-y-3">
                 <FormattedText text={currentQuestion.explanation.text} />
 
-                {/* Cuadro de Mínimos de Planificación o Combustible si aplica */}
-                {(currentQuestion.subject_id?.includes('aerodromos') ||
-                  currentQuestion.subject_id?.includes('minimos') ||
-                  currentQuestion.stem.toLowerCase().includes('mínimos de planificación') ||
-                  currentQuestion.stem.toLowerCase().includes('plan básico con variaciones')) && (
+                {/* Cuadro de Mínimos de Planificación o Combustible Binter MOA si aplica */}
+                {getPlanningMinimaTableType(currentQuestion) === 'variaciones' && (
                   <PlanningMinimaTable type="variaciones" />
                 )}
 
-                {(currentQuestion.subject_id?.includes('combustible') ||
-                  currentQuestion.stem.toLowerCase().includes('minimum fuel') ||
-                  currentQuestion.stem.toLowerCase().includes('mayday fuel') ||
-                  currentQuestion.stem.toLowerCase().includes('reserva final')) && (
+                {getPlanningMinimaTableType(currentQuestion) === 'fuel_calls' && (
                   <PlanningMinimaTable type="fuel_calls" />
                 )}
 
-                {/* Cuadro Resumen de Velocidades si la pregunta es de velocidades o limitaciones */}
-                {(currentQuestion.id.includes('SPD') ||
-                  currentQuestion.subject_id?.includes('velocidad') ||
-                  currentQuestion.subject_id?.includes('limitaciones') ||
-                  currentQuestion.stem.toLowerCase().includes('kias') ||
-                  currentQuestion.stem.toLowerCase().includes('velocidad') ||
-                  currentQuestion.stem.toLowerCase().includes('planeo')) && (
+                {/* Cuadro Resumen de Velocidades estrictamente para flota ligera correspondiente */}
+                {getSpeedSummaryTableType(currentQuestion) && (
                   <SpeedSummaryTable
-                    aircraftType={
-                      currentQuestion.id.startsWith('P2010') || currentQuestion.stem.includes('P2010') || currentQuestion.stem.includes('Tecnam')
-                        ? 'p2010'
-                        : currentQuestion.id.startsWith('C172') || currentQuestion.stem.includes('172') || currentQuestion.stem.includes('Cessna')
-                        ? 'c172n'
-                        : 'p2010'
-                    }
+                    aircraftType={getSpeedSummaryTableType(currentQuestion)}
                   />
                 )}
 

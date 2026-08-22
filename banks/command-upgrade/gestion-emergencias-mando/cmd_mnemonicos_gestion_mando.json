@@ -7,22 +7,22 @@
     "options": [
       {
         "id": "A",
-        "text": "R: ROUTE (RTE, PERF INIT, PROG); E: ENGINE START & PUSH BACK (Tipo de arranque y retroceso); T: TAXI (Ruta de rodaje en LIDO); S: SID (Salida instrumental, puntos, cursos, restricciones); E: EOSID / Emergency Briefing (Fallo de motor en despegue conforme a EOSID en PLAN / FIX INFO)",
+        "text": "Estructura combinada TWIN (TEM, Weather, Inop items, NOTAMs) seguido del flujo de despegue RETSE (Route, Engine start/Push, Taxi, SID, EOSID)",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "R: ROUTE (RTE, PERF INIT, PROG) ; E: ENGINE START & PUSH BACK (Tipo de arranque y retroceso) ; T: TAXI (Ruta de rodaje en LIDO) ; S: SID (Salida instrumental, puntos, cursos, restricciones) ; E: EOSID / Emergency Briefing (Fallo de motor en despegue conforme a EOSID en PLAN / FIX INFO)",
+        "text": "Estructura combinada NITS (Nature, Intentions, Time, Special instructions) seguido del flujo E-DALTA de aproximación",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "R: ROUTE (RTE, PERF INIT, PROG) ; E: ENGINE START & PUSH BACK (Tipo de arranque y retroceso) ; T: TAXI (Ruta de rodaje en LIDO) ; S: SID (Salida instrumental, puntos, cursos, restricciones) ; E: EOSID / Emergency Briefing (Fallo de motor en despegue conforme a EOSID en PLAN / FIX INFO)",
+        "text": "Estructura libre no estandarizada a criterio del piloto que no esté a los mandos sin seguir mnemónicos",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "R: ROUTE (RTE, PERF INIT, PROG) ; E: ENGINE START & PUSH BACK (Tipo de arranque y retroceso) ; T: TAXI (Ruta de rodaje en LIDO) ; S: SID (Salida instrumental, puntos, cursos, restricciones) ; E: EOSID / Emergency Briefing (Fallo de motor en despegue conforme a EOSID en PLAN / FIX INFO)",
+        "text": "Lectura íntegra del manual de operaciones parte B en voz alta antes de iniciar el retroceso en plataforma",
         "is_correct": false
       }
     ],
@@ -44,22 +44,22 @@
     "options": [
       {
         "id": "A",
-        "text": "TELSI: T: Tipo de Emergencia (Prevista/Imprevista/Aterrizaje Inseguro) ; E: Estimated Time of Arrival (Cuánto tiempo queda) ; L: Lugar de Aterrizaje (Pista, campo, agua) ; S: Señales de Protección convenidas (\"PROTECCIÓN\" a 32s) ; I: Instrucciones Especiales (Coordinación y Callouts)",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "TELSI: T: Tipo de Emergencia (Prevista/Imprevista/Aterrizaje Inseguro); E: Estimated Time of Arrival (Cuánto tiempo queda); L: Lugar de Aterrizaje (Pista, campo, agua); S: Señales de Protección convenidas (\"PROTECCIÓN\" a 30s); I: Instrucciones Especiales (Coordinación y Callouts)",
+        "text": "Formato TELSI: T: Tipo de Emergencia (Prevista/Imprevista/Aterrizaje Inseguro); E: Estimated Time; L: Lugar; S: Señales de Protección ('PROTECCIÓN' a 30s); I: Instrucciones",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "Formato NITS: Nature of emergency, Intentions of commander, Time remaining, Special instructions",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "TELSI: T: Tipo de Emergencia (Prevista/Imprevista/Aterrizaje Inseguro) ; E: Estimated Time of Arrival (Cuánto tiempo queda) ; L: Lugar de Aterrizaje (Pista, campo, agua) ; S: Señales de Protección convenidas (\"PROTECCIÓN\" a 26s) ; I: Instrucciones Especiales (Coordinación y Callouts)",
+        "text": "Formato PIREP: Position report, Altitude, Estimated time of arrival, Passengers on board",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "TELSI: T: Tipo de Emergencia (Prevista/Imprevista/Aterrizaje Inseguro) ; E: Estimated Time of Arrival (Cuánto tiempo queda) ; L: Lugar de Aterrizaje (Pista, campo, agua) ; S: Señales de Protección convenidas (\"PROTECCIÓN\" a 36s) ; I: Instrucciones Especiales (Coordinación y Callouts)",
+        "text": "Formato CRAM: Cockpit readiness, Altitude alert, Medical priority, Evacuation decision",
         "is_correct": false
       }
     ],
@@ -81,22 +81,22 @@
     "options": [
       {
         "id": "A",
-        "text": "T: TEM (Threat & Error Management: amenazas generales, tráficos, hot spots, cizalladura, pájaros, terreno, conflicto) ; W: WEATHER (Meteo, LVP, alternativo, deshielo) ; I: INOP ITEMS (Diferidos MEL/DDPM) ; N: NOTAM/SNOWTAMS (RWYCC, calles cerradas, ayudas inservibles, obstáculos)",
-        "is_correct": false
+        "text": "T: Threats / TEM; W: Weather / Pista; I: Inop Items (MEL/CDL); N: NOTAM / SNOWTAMs aplicables a la salida",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "T: TEM (Threat & Error Management: amenazas generales, tráficos, hot spots, cizalladura, pájaros, terreno, conflicto) ; W: WEATHER (Meteo, LVP, alternativo, deshielo) ; I: INOP ITEMS (Diferidos MEL/DDPM) ; N: NOTAM/SNOWTAMS (RWYCC, calles cerradas, ayudas inservibles, obstáculos)",
+        "text": "T: Time to Destination; W: Wind component; I: Instrument approach; N: Navigation aid frequencies",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "T: TEM (Threat & Error Management: amenazas generales, tráficos, hot spots, cizalladura, pájaros, terreno, conflicto); W: WEATHER (Meteo, LVP, alternativo, deshielo); I: INOP ITEMS (Diferidos MEL/DDPM); N: NOTAM/SNOWTAMS (RWYCC, calles cerradas, ayudas inservibles, obstáculos)",
-        "is_correct": true
+        "text": "T: Takeoff weight; W: Wing anti-ice; I: Inertial reference; N: Nose gear steering control",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "T: TEM (Threat & Error Management: amenazas generales, tráficos, hot spots, cizalladura, pájaros, terreno, conflicto) ; W: WEATHER (Meteo, LVP, alternativo, deshielo) ; I: INOP ITEMS (Diferidos MEL/DDPM) ; N: NOTAM/SNOWTAMS (RWYCC, calles cerradas, ayudas inservibles, obstáculos)",
+        "text": "T: Transition level; W: Waypoints; I: Indicated airspeed; N: Noise abatement procedures",
         "is_correct": false
       }
     ],
@@ -118,23 +118,23 @@
     "options": [
       {
         "id": "A",
-        "text": "E: ePerf (Performance de aterrizaje InFlight Landing con chequeo cruzado) ; D: DESCENT (TRANS LVL y SPD/ALT LIM en PERF) ; A: ARRIVAL (STAR e IAC en NAV/FPL con briefing de frustrada) ; L: LANDING (PERF LANDING INIT: peso, viento, flap, autobrake, velocidades Vref/Vap/Vac/Vfs, MAP MIN) ; T: TAXI (Ruta de rodaje post-aterrizaje) ; A: APRON (Tipo de parking remoto/finger y APU/GPU)",
-        "is_correct": false
+        "text": "E: ePerf InFlight Landing; D: DESCENT; A: ARRIVAL (STAR/IAC); L: LANDING (MCDU PERF); T: TAXI; A: APRON",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "E: ePerf (Performance de aterrizaje InFlight Landing con chequeo cruzado) ; D: DESCENT (TRANS LVL y SPD/ALT LIM en PERF) ; A: ARRIVAL (STAR e IAC en NAV/FPL con briefing de frustrada) ; L: LANDING (PERF LANDING INIT: peso, viento, flap, autobrake, velocidades Vref/Vap/Vac/Vfs, MAP MIN) ; T: TAXI (Ruta de rodaje post-aterrizaje) ; A: APRON (Tipo de parking remoto/finger y APU/GPU)",
+        "text": "E: Engine Anti-ice; D: Decision Altitude; A: Alternate fuel; L: Localizer frequency; T: Terrain clearance; A: Approach lights",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "E: ePerf (Performance de aterrizaje InFlight Landing con chequeo cruzado) ; D: DESCENT (TRANS LVL y SPD/ALT LIM en PERF) ; A: ARRIVAL (STAR e IAC en NAV/FPL con briefing de frustrada) ; L: LANDING (PERF LANDING INIT: peso, viento, flap, autobrake, velocidades Vref/Vap/Vac/Vfs, MAP MIN) ; T: TAXI (Ruta de rodaje post-aterrizaje) ; A: APRON (Tipo de parking remoto/finger y APU/GPU)",
+        "text": "E: Emergency brief; D: Diversion airport; A: Airspeed limits; L: Level off altitude; T: Traffic advisory; A: Autobrake setting",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "E: ePerf (Performance de aterrizaje InFlight Landing con chequeo cruzado); D: DESCENT (TRANS LVL y SPD/ALT LIM en PERF); A: ARRIVAL (STAR e IAC en NAV/FPL con briefing de frustrada); L: LANDING (PERF LANDING INIT: peso, viento, flap, autobrake, velocidades Vref/Vap/Vac/Vfs, MAP MIN); T: TAXI (Ruta de rodaje post-aterrizaje); A: APRON (Tipo de parking remoto/finger y APU/GPU)",
-        "is_correct": true
+        "text": "E: Electronic checklists; D: Distance to go; A: Acceleration height; L: Lateral navigation; T: Transponder code; A: Altimeter setting",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -155,22 +155,22 @@
     "options": [
       {
         "id": "A",
-        "text": "I: Inoperative Items / Incidents (Evaluar sistemas inoperativos o gravedad); M: Meteorological Report (Meteo de aeropuertos adecuados cercanos); F: Fuel Management (Combustible utilizable y tiempo de vuelo); L: Landing Performance (Cálculo ePerf Inflight Landing); O: Options (Opciones que cumplen meteo y pista); C: Choose an Option (1° Salida/Destino, 2° Alternativos Binter, 3° Adecuado); C: Communications (ATC, SCC vía TELSI, PA y ACARS FREE TEXT > EMR o INC / VHF)",
+        "text": "I: Inoperative items; M: Meteorological report; F: Fuel management; L: Landing performance; O: Options; C: Choose an option; C: Communications",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "I: Inoperative Items / Incidents (Evaluar sistemas inoperativos o gravedad) ; M: Meteorological Report (Meteo de aeropuertos adecuados cercanos) ; F: Fuel Management (Combustible utilizable y tiempo de vuelo) ; L: Landing Performance (Cálculo ePerf Inflight Landing) ; O: Options (Opciones que cumplen meteo y pista) ; C: Choose an Option (2° Salida/Destino, 3° Alternativos Binter, 4° Adecuado) ; C: Communications (ATC, SCC vía TELSI, PA y ACARS FREE TEXT > EMR o INC / VHF)",
+        "text": "I: Immediate descent; M: Mayday call; F: Flap selection; L: Landing gear; O: Overweight check; C: Cabin alert; C: Checklist execution",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "I: Inoperative Items / Incidents (Evaluar sistemas inoperativos o gravedad) ; M: Meteorological Report (Meteo de aeropuertos adecuados cercanos) ; F: Fuel Management (Combustible utilizable y tiempo de vuelo) ; L: Landing Performance (Cálculo ePerf Inflight Landing) ; O: Options (Opciones que cumplen meteo y pista) ; C: Choose an Option (1° Salida/Destino, 1° Alternativos Binter, 1° Adecuado) ; C: Communications (ATC, SCC vía TELSI, PA y ACARS FREE TEXT > EMR o INC / VHF)",
+        "text": "I: Instrument scan; M: Minimum sector altitude; F: Flight path; L: Localizer intercept; O: Oxygen masks; C: Cabin secure; C: Cross-check",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "I: Inoperative Items / Incidents (Evaluar sistemas inoperativos o gravedad) ; M: Meteorological Report (Meteo de aeropuertos adecuados cercanos) ; F: Fuel Management (Combustible utilizable y tiempo de vuelo) ; L: Landing Performance (Cálculo ePerf Inflight Landing) ; O: Options (Opciones que cumplen meteo y pista) ; C: Choose an Option (4° Salida/Destino, 5° Alternativos Binter, 6° Adecuado) ; C: Communications (ATC, SCC vía TELSI, PA y ACARS FREE TEXT > EMR o INC / VHF)",
+        "text": "I: Ice detection; M: Maximum continuous thrust; F: Flight level; L: Look ahead radar; O: Operation limits; C: Cruise relief; C: Contact dispatch",
         "is_correct": false
       }
     ],
@@ -192,22 +192,22 @@
     "options": [
       {
         "id": "A",
-        "text": "M: Memo Items (Pasos de memoria) ; E: Emergency Checklist ; A: Abnormal Checklist ; N: Normal Checklist ; A: Abnormal Checklist (restantes)",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "M: Memo Items (Pasos de memoria); E: Emergency Checklist; A: Abnormal Checklist; N: Normal Checklist; A: Abnormal Checklist (restantes)",
+        "text": "1° Memo Items; 2° Emergency Checklist; 3° Abnormal Checklist; 4° Normal Checklist; 5° Abnormal Checklist restantes",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "1° Normal Checklist; 2° Abnormal Checklist; 3° Emergency Checklist; 4° Memo Items; 5° Normal Checklist restantes",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "M: Memo Items (Pasos de memoria) ; E: Emergency Checklist ; A: Abnormal Checklist ; N: Normal Checklist ; A: Abnormal Checklist (restantes)",
+        "text": "1° Emergency Checklist; 2° Normal Checklist; 3° Memo Items; 4° Abnormal Checklist; 5° Deferred Maintenance Checklist",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "M: Memo Items (Pasos de memoria) ; E: Emergency Checklist ; A: Abnormal Checklist ; N: Normal Checklist ; A: Abnormal Checklist (restantes)",
+        "text": "1° Memo Items; 2° Normal Checklist; 3° Emergency Checklist; 4° Abnormal Checklist; 5° Approach Checklist",
         "is_correct": false
       }
     ],
@@ -229,22 +229,22 @@
     "options": [
       {
         "id": "A",
-        "text": "A los 6 minutos: \"TRIPULACIÓN DE CABINA FINALIZAR PREPARACIÓN\" ; a los 32 segundos: \"PROTECCIÓN, PROTECCIÓN, PROTECCIÓN\" (la tripulación de cabina grita: \"¡Inclínense y protéjanse la cabeza! / Bend Forward and protect your head!\")",
-        "is_correct": false
+        "text": "A 5 minutos: 'TRIPULACIÓN DE CABINA FINALIZAR PREPARACIÓN'; a 30 segundos: 'PROTECCIÓN, PROTECCIÓN, PROTECCIÓN'",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "A los 3 minutos: \"TRIPULACIÓN DE CABINA FINALIZAR PREPARACIÓN\" ; a los 26 segundos: \"PROTECCIÓN, PROTECCIÓN, PROTECCIÓN\" (la tripulación de cabina grita: \"¡Inclínense y protéjanse la cabeza! / Bend Forward and protect your head!\")",
+        "text": "A 10 minutos: 'TRIPULACIÓN DE CABINA SENTARSE'; a 1 minuto: 'CABINA LISTA PARA EL IMPACTO'",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "A los 5 minutos: \"TRIPULACIÓN DE CABINA FINALIZAR PREPARACIÓN\"; a los 30 segundos: \"PROTECCIÓN, PROTECCIÓN, PROTECCIÓN\" (la tripulación de cabina grita: \"¡Inclínense y protéjanse la cabeza! / Bend Forward and protect your head!\")",
-        "is_correct": true
+        "text": "A 2 minutos: 'EMERGENCIA INMEDIATA'; a 10 segundos: 'EVACUACIÓN, EVACUACIÓN'",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "A los 8 minutos: \"TRIPULACIÓN DE CABINA FINALIZAR PREPARACIÓN\" ; a los 36 segundos: \"PROTECCIÓN, PROTECCIÓN, PROTECCIÓN\" (la tripulación de cabina grita: \"¡Inclínense y protéjanse la cabeza! / Bend Forward and protect your head!\")",
+        "text": "A 15 minutos: 'PREPARAR CABINA DE PASAJEROS'; a 2 minutos: 'ATENCIÓN TRIPULACIÓN DE VUELO'",
         "is_correct": false
       }
     ],
@@ -266,23 +266,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Callout por PA: \"DESCENSO DE EMERGENCIA, DESCENSO DE EMERGENCIA, DESCENSO DE EMERGENCIA\" ; modo vertical FLCH en VERDE seleccionando 12.1 ft o la MEA (la que sea mayor), gases en IDLE y SPEEDBRAKES en FULL",
-        "is_correct": false
+        "text": "Callout por PA: 'DESCENSO DE EMERGENCIA (x3)'; modo FLCH, seleccionar 10.000 ft o MEA (la que sea mayor), gases en IDLE y SPEEDBRAKES en FULL",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "Callout por PA: \"DESCENSO DE EMERGENCIA, DESCENSO DE EMERGENCIA, DESCENSO DE EMERGENCIA\" ; modo vertical FLCH en VERDE seleccionando 6.1 ft o la MEA (la que sea mayor), gases en IDLE y SPEEDBRAKES en FULL",
+        "text": "Callout por PA: 'ATENCIÓN TRIPULACIÓN DE CABINA'; modo VNAV, seleccionar 5.000 ft, mantener gases en crucero y Speedbrakes recogidos",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Callout por PA: \"DESCENSO DE EMERGENCIA, DESCENSO DE EMERGENCIA, DESCENSO DE EMERGENCIA\" ; modo vertical FLCH en VERDE seleccionando 16.3 ft o la MEA (la que sea mayor), gases en IDLE y SPEEDBRAKES en FULL",
+        "text": "Callout por PA: 'DESCENSO INMEDIATO'; modo VS seleccionando -6.000 ft/min, gases a fondo y tren de aterrizaje abajo",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Callout por PA: \"DESCENSO DE EMERGENCIA, DESCENSO DE EMERGENCIA, DESCENSO DE EMERGENCIA\"; modo vertical FLCH en VERDE seleccionando 10.000 ft o la MEA (la que sea mayor), gases en IDLE y SPEEDBRAKES en FULL",
-        "is_correct": true
+        "text": "Callout por PA: 'EVACUACIÓN EN VUELO'; desconectar piloto automático, poner avión en invertido y cortar ambos motores",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -303,22 +303,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Cada 10.000 ft: \"THIRTY THOUSAND FT\", \"TWENTY THOUSAND FT\", \"TEN THOUSAND FT\"; a 2000 ft de la altitud de nivelada: \"TWO THOUSAND TO LEVEL OFF\"; a 1000 ft: \"ONE THOUSAND TO LEVEL OFF\" (momento en que se cierran los Speedbrakes)",
+        "text": "Cantadas cada 10.000 ft (30.000, 20.000, 10.000 ft), a 2.000 ft 'TWO THOUSAND TO LEVEL OFF', y a 1.000 ft 'ONE THOUSAND TO LEVEL OFF' retrayendo Speedbrakes",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Cada 12.1 ft: \"THIRTY THOUSAND FT\", \"TWENTY THOUSAND FT\", \"TEN THOUSAND FT\" ; a 2010 ft de la altitud de nivelada: \"TWO THOUSAND TO LEVEL OFF\" ; a 1010 ft: \"ONE THOUSAND TO LEVEL OFF\" (momento en que se cierran los Speedbrakes)",
+        "text": "Cantadas continuas cada 1.000 ft desde el inicio del descenso sin cantadas de aproximación a la nivelada ni retracción de Speedbrakes",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Cada 6.1 ft: \"THIRTY THOUSAND FT\", \"TWENTY THOUSAND FT\", \"TEN THOUSAND FT\" ; a 1980 ft de la altitud de nivelada: \"TWO THOUSAND TO LEVEL OFF\" ; a 980 ft: \"ONE THOUSAND TO LEVEL OFF\" (momento en que se cierran los Speedbrakes)",
+        "text": "Una única cantada a 500 ft sobre el suelo sin comunicación previa durante el descenso de emergencia",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Cada 16.3 ft: \"THIRTY THOUSAND FT\", \"TWENTY THOUSAND FT\", \"TEN THOUSAND FT\" ; a 2030 ft de la altitud de nivelada: \"TWO THOUSAND TO LEVEL OFF\" ; a 1030 ft: \"ONE THOUSAND TO LEVEL OFF\" (momento en que se cierran los Speedbrakes)",
+        "text": "Cantadas exclusivamente a 18.000 ft (nivel de transición) y a 3.000 ft en circuito de tráfico instrumental",
         "is_correct": false
       }
     ],
@@ -414,23 +414,23 @@
     "options": [
       {
         "id": "A",
-        "text": "2° Comprobar y detectar una posible incapacitación de uno de los pilotos durante la carrera ; 3° Comprobación cruzada de indicación de velocidad anemométrica ; 4° Comprobar que el Autothrottle (A/T) ha pasado a modo HOLD",
-        "is_correct": false
+        "text": "1° Detectar posible incapacitación del piloto; 2° Comprobación cruzada anemométrica; 3° Verificar que Autothrottle ha pasado a modo HOLD",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "1° Comprobar y detectar una posible incapacitación de uno de los pilotos durante la carrera ; 1° Comprobación cruzada de indicación de velocidad anemométrica ; 1° Comprobar que el Autothrottle (A/T) ha pasado a modo HOLD",
+        "text": "1° Retraer flaps a cero; 2° Conectar el piloto automático; 3° Armar reversas de empuje",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "4° Comprobar y detectar una posible incapacitación de uno de los pilotos durante la carrera ; 5° Comprobación cruzada de indicación de velocidad anemométrica ; 6° Comprobar que el Autothrottle (A/T) ha pasado a modo HOLD",
+        "text": "1° Desconectar generadores eléctricos; 2° Cortar suministro hidráulico; 3° Apagar radar meteorológico",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "1° Comprobar y detectar una posible incapacitación de uno de los pilotos durante la carrera; 2° Comprobación cruzada de indicación de velocidad anemométrica; 3° Comprobar que el Autothrottle (A/T) ha pasado a modo HOLD",
-        "is_correct": true
+        "text": "1° Solicitar autorización de despegue; 2° Encender luces de cabina; 3° Seleccionar transponder a Standby",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -451,22 +451,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Función Best Beta para optimizar el guiado monomotor",
+        "text": "Callouts: 'REJECT' (Comandante), 'SIXTY KNOTS' (Copiloto a 60 kt), 'MANUAL BRAKES' (antes de desactivar Autobrake RTO)",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Conexión automática inmediata del piloto automático en modo de ascenso de emergencia",
+        "text": "Callouts: 'STOP NOW' (Copiloto), 'ONE HUNDRED KNOTS' (Comandante), 'MAXIMUM REVERSE' (al detenerse el avión)",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Deflexión automática de spoilers del ala opuesta para reducir la resistencia inducida",
+        "text": "Callouts: 'ABORT' (Comandante), 'EIGHTY KNOTS' (Copiloto), 'PARKING BRAKE' (en plena carrera a alta velocidad)",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Retracción automática instantánea de flaps a posición limpia para acelerar el avión",
+        "text": "Callouts: 'GO AROUND' (Copiloto), 'FIFTY KNOTS' (Comandante), 'FLAPS UP' (durante la frenada)",
         "is_correct": false
       }
     ],
@@ -488,22 +488,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Acciones de memoria nunca antes de 400 ft AGL; lectura de QRH preferiblemente > altitud de aceleración",
+        "text": "Si no se requiere evacuación: 'TRIPULACIÓN DE CABINA, ESPEREN INSTRUCCIONES'; si la situación está controlada: 'TRIPULACIÓN DE CABINA, PERMANEZCAN SENTADOS'",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Acciones de memoria inmediatamente en la rotación (0 ft AGL) y lectura de QRH a 200 ft AGL",
+        "text": "Si no se requiere evacuación: 'EVACUACIÓN INMEDIATA'; si la situación está controlada: 'ABANDONEN EL AVIÓN POR TOBOGANES'",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Acciones de memoria a 1.500 ft AGL y lectura de QRH únicamente al nivelar en altitud de crucero",
+        "text": "Si no se requiere evacuación: 'SILENCIO EN CABINA'; si la situación está controlada: 'APAGUEN SUS TELÉFONOS MÓVILES'",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Lectura de QRH durante la carrera de despegue antes de alcanzar la velocidad de decisión V1",
+        "text": "No se realiza ningún aviso por megafonía hasta que los pasajeros comiencen a levantarse por iniciativa propia",
         "is_correct": false
       }
     ],
@@ -525,22 +525,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Velocidad Green Dot",
+        "text": "Callouts: 'CHECK THRUST' (PM), 'THRUST CHECKED' (PF), seguimiento de Best Beta (indicador cian) tras Gear UP; acciones de memoria nunca bajo 400 ft AGL",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Velocidad Vmo/Mmo (máxima velocidad para alcanzar rápidamente la altitud de restablecimiento)",
+        "text": "Callouts: 'FULL POWER' (PF), 'GEAR DOWN' (PM), viraje inmediato de 180 grados hacia la pista sin respetar la aceleración",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Velocidad V2 + 10 nudos manteniendo potencia al 100% en ambos motores de la aeronave",
+        "text": "Callouts: 'ENGINE FIRE' (PM), cortar inmediatamente el motor sano a 100 ft AGL y desplegar flaps FULL",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Velocidad mínima de control en el aire Vmca para maximizar el empuje del motor operativo",
+        "text": "Callouts: 'MAYDAY' por interfono a pasajeros, cortar ambos motores y ejecutar un planeo hacia el mar",
         "is_correct": false
       }
     ],
@@ -562,23 +562,23 @@
     "options": [
       {
         "id": "A",
-        "text": "2° WARNING (Rojo) con chevron '>' ; 3° WARNING (Rojo) ; 4° CAUTION (Ámbar) con chevron '>' ; 5° CAUTION (Ámbar) ; 6° ADVISORY (Cyan) con chevron ; 8° ADVISORY (Cyan). Los mensajes con chevron son los mensajes raíz causantes",
-        "is_correct": false
+        "text": "GREEN DOT (velocidad indicada por el punto verde en la cinta anemométrica, que proporciona el mejor ratio de planeo y menor tasa de descenso)",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "1° WARNING (Rojo) con chevron '>' ; 1° WARNING (Rojo) ; 1° CAUTION (Ámbar) con chevron '>' ; 2° CAUTION (Ámbar) ; 3° ADVISORY (Cyan) con chevron ; 2° ADVISORY (Cyan). Los mensajes con chevron son los mensajes raíz causantes",
+        "text": "VMO / MMO (velocidad máxima de operación para descender lo antes posible al nivel de vuelo)",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "4° WARNING (Rojo) con chevron '>' ; 5° WARNING (Rojo) ; 6° CAUTION (Ámbar) con chevron '>' ; 7° CAUTION (Ámbar) ; 8° ADVISORY (Cyan) con chevron ; 12° ADVISORY (Cyan). Los mensajes con chevron son los mensajes raíz causantes",
+        "text": "VREF + 20 kt con flaps en posición de despegue extendidos",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "1° WARNING (Rojo) con chevron '>'; 2° WARNING (Rojo); 3° CAUTION (Ámbar) con chevron '>'; 4° CAUTION (Ámbar); 5° ADVISORY (Cyan) con chevron; 6° ADVISORY (Cyan). Los mensajes con chevron son los mensajes raíz causantes",
-        "is_correct": true
+        "text": "Velocidad de pérdida VS1 calculada para peso máximo de aterrizaje",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -599,22 +599,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Emergencia Imprevista (en despegue/toma/descenso sin tiempo de preparación), Emergencia Prevista (aterrizaje en condiciones marginales con preparación de cabina), y Aterrizaje Inseguro (circunstancias anormales sin evacuación prevista inicial pero cabina prevenida)",
+        "text": "Despacho permitido con RFFS degradado hasta 1 categoría inferior durante un periodo máximo de 72 horas previa evaluación de riesgos (Safety Assessment)",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Emergencia Prevista (aterrizaje en condiciones marginales con preparación de cabina), Emergencia Imprevista (en despegue/toma/descenso sin tiempo de preparación), y Aterrizaje Inseguro (circunstancias anormales sin evacuación prevista inicial pero cabina prevenida)",
+        "text": "Despacho totalmente prohibido si la categoría RFFS disminuye incluso por un solo minuto",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Emergencia Imprevista (en despegue/toma/descenso sin tiempo de preparación), Emergencia Prevista (aterrizaje en condiciones marginales con preparación de cabina), Carga comercial no declarada",
+        "text": "Despacho permitido sin límite de tiempo y sin necesidad de evaluación de riesgos ni notificación a la compañía",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Emergencia Imprevista (en despegue/toma/descenso sin tiempo de preparación), Inspección técnica diferida, y Aterrizaje Inseguro (circunstancias anormales sin evacuación prevista inicial pero cabina prevenida)",
+        "text": "Despacho autorizado únicamente si la aeronave transporta menos del 20% de su capacidad máxima de pasaje",
         "is_correct": false
       }
     ],
@@ -636,22 +636,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Llamada a ATC: MAYDAY inicialmente (revertido a PAN-PAN si se recupera o estabiliza) ; Llamada a Cabin Crew: Aterrizaje Inseguro",
-        "is_correct": false
-      },
-      {
-        "id": "B",
         "text": "Llamada a ATC: MAYDAY inicialmente (revertido a PAN-PAN si se recupera o estabiliza); Llamada a Cabin Crew: Aterrizaje Inseguro",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "Llamada a ATC: PAN-PAN exclusivamente; Llamada a Cabin Crew: Emergencia Prevista con evacuación en tierra",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "Llamada a ATC: MAYDAY inicialmente (revertido a PAN-PAN si se recupera o estabiliza) ; Llamada a Cabin Crew: Aterrizaje Inseguro",
+        "text": "Llamada a ATC: Mensaje de información rutinaria; Llamada a Cabin Crew: Ninguna llamada preventiva especial",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Llamada a ATC: MAYDAY inicialmente (revertido a PAN-PAN si se recupera o estabiliza) ; Llamada a Cabin Crew: Aterrizaje Inseguro",
+        "text": "Llamada a ATC: MAYDAY continuo obligatorio; Llamada a Cabin Crew: Orden de protección inmediata a treinta segundos",
         "is_correct": false
       }
     ],
@@ -1121,22 +1121,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Prioridad jerárquica estricta: 2° Mantener el control del avión (Volar) ; 3° Guiar la trayectoria hacia zona segura (Navegar) ; 4° Notificar a ATC y cabina (Comunicar) ; 5° Resolver sistemas y pasaje (Gestionar)",
-        "is_correct": false
+        "text": "1° Volar (control y trayectoria); 2° Navegar (terreno y rumbo seguro); 3° Comunicar (ATC y cabina); 4° Gestionar (listas y decisiones)",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "Prioridad jerárquica estricta: 1° Mantener el control del avión (Volar) ; 1° Guiar la trayectoria hacia zona segura (Navegar) ; 1° Notificar a ATC y cabina (Comunicar) ; 2° Resolver sistemas y pasaje (Gestionar)",
+        "text": "1° Comunicar con ATC de inmediato; 2° Buscar la lista de emergencia; 3° Volar el avión; 4° Hablar con los pasajeros",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Prioridad jerárquica estricta: 1° Mantener el control del avión (Volar); 2° Guiar la trayectoria hacia zona segura (Navegar); 3° Notificar a ATC y cabina (Comunicar); 4° Resolver sistemas y pasaje (Gestionar)",
-        "is_correct": true
+        "text": "1° Leer la lista de comprobación anormal; 2° Desconectar el piloto automático; 3° Declarar Mayday; 4° Navegar",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "Prioridad jerárquica estricta: 4° Mantener el control del avión (Volar) ; 5° Guiar la trayectoria hacia zona segura (Navegar) ; 6° Notificar a ATC y cabina (Comunicar) ; 7° Resolver sistemas y pasaje (Gestionar)",
+        "text": "1° Apagar los generadores eléctricos; 2° Descender a 10.000 ft; 3° Volar; 4° Notificar a mantenimiento",
         "is_correct": false
       }
     ],
@@ -1386,22 +1386,22 @@
     "options": [
       {
         "id": "A",
-        "text": "El Holdover Time (HOT: Tiempo de Protección) es el tiempo estimado durante el cual el fluido antihielo previene la formación de hielo en las superficies críticas ; comienza a computar en el momento en que se inicia la aplicación del fluido antihielo final",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "El Holdover Time (HOT: Tiempo de Protección) es el tiempo estimado durante el cual el fluido antihielo previene la formación de hielo en las superficies críticas; comienza a computar en el momento en que se inicia la aplicación del fluido antihielo final",
+        "text": "El Holdover Time (HOT) es el tiempo estimado de protección contra formación de hielo; comienza al iniciarse la aplicación del fluido final",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "El Holdover Time (HOT) comienza a computar en el momento en que la aeronave inicia la carrera de despegue en la pista activa",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "El Holdover Time (HOT: Tiempo de Protección) es el tiempo estimado durante el cual el fluido antihielo previene la formación de hielo en las superficies críticas ; comienza a computar en el momento en que se inicia la aplicación del fluido antihielo final",
+        "text": "El Holdover Time (HOT) garantiza protección permanente durante todo el vuelo sin importar la intensidad de la nevada",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "El Holdover Time (HOT: Tiempo de Protección) es el tiempo estimado durante el cual el fluido antihielo previene la formación de hielo en las superficies críticas ; comienza a computar en el momento en que se inicia la aplicación del fluido antihielo final",
+        "text": "El Holdover Time (HOT) se inicia cuando el camión de deshielo apaga sus motores y abandona el área del avión",
         "is_correct": false
       }
     ],
@@ -1424,22 +1424,22 @@
     "options": [
       {
         "id": "A",
-        "text": "El despegue está PROHIBIDO ; se debe realizar una inspección visual de contaminación de superficies críticas (Pre-Takeoff Contamination Check) o regresar a la plataforma para un nuevo tratamiento completo de deshielo/antihielo",
-        "is_correct": false
+        "text": "El despegue está PROHIBIDO; se requiere inspección visual de superficies críticas o nuevo tratamiento completo de deshielo/antihielo",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "El despegue está PROHIBIDO ; se debe realizar una inspección visual de contaminación de superficies críticas (Pre-Takeoff Contamination Check) o regresar a la plataforma para un nuevo tratamiento completo de deshielo/antihielo",
+        "text": "Se puede despegar conectando la calefacción de alas y aplicando potencia máxima de despegue con frenos pisados",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "El despegue está PROHIBIDO; se debe realizar una inspección visual de contaminación de superficies críticas (Pre-Takeoff Contamination Check) o regresar a la plataforma para un nuevo tratamiento completo de deshielo/antihielo",
-        "is_correct": true
+        "text": "El comandante puede extender el Holdover Time treinta minutos adicionales si no observa hielo acumulado en el morro",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "El despegue está PROHIBIDO ; se debe realizar una inspección visual de contaminación de superficies críticas (Pre-Takeoff Contamination Check) o regresar a la plataforma para un nuevo tratamiento completo de deshielo/antihielo",
+        "text": "Se autoriza el despegue inmediato siempre que la temperatura exterior de la pista sea superior a cero grados",
         "is_correct": false
       }
     ],
@@ -1462,23 +1462,23 @@
     "options": [
       {
         "id": "A",
-        "text": "2° Pasajeros con condiciones físicas especiales (PMR, SCP) ; 3° Pasajeros bajo custodia/deportados (DEPA/DEPU) ; 4° Menores no acompañados (UM) ; 5° Familias con niños y ancianos ; 6° Resto de pasajeros",
-        "is_correct": false
+        "text": "1° Pasajeros que requieran asistencia (PMR/SCP); 2° Familias con niños y ancianos; 3° Menores no acompañados (UM); 4° Resto de pasajeros",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "1° Pasajeros con condiciones físicas especiales (PMR, SCP) ; 1° Pasajeros bajo custodia/deportados (DEPA/DEPU) ; 1° Menores no acompañados (UM) ; 2° Familias con niños y ancianos ; 3° Resto de pasajeros",
+        "text": "1° Pasajeros de las filas traseras primero; 2° Pasajeros de filas delanteras; 3° Tripulación técnica; 4° PMR",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "4° Pasajeros con condiciones físicas especiales (PMR, SCP) ; 5° Pasajeros bajo custodia/deportados (DEPA/DEPU) ; 6° Menores no acompañados (UM) ; 7° Familias con niños y ancianos ; 8° Resto de pasajeros",
+        "text": "1° Pasajeros de clase preferente exclusivamente; 2° Pasajeros con equipaje de mano; 3° Resto de pasaje",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "1° Pasajeros con condiciones físicas especiales (PMR, SCP); 2° Pasajeros bajo custodia/deportados (DEPA/DEPU); 3° Menores no acompañados (UM); 4° Familias con niños y ancianos; 5° Resto de pasajeros",
-        "is_correct": true
+        "text": "Desembarque simultáneo y desordenado sin prioridad establecida por la tripulación de cabina",
+        "is_correct": false
       }
     ],
     "explanation": {

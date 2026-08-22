@@ -7,22 +7,22 @@
     "options": [
       {
         "id": "A",
-        "text": "75 KIAS",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "84 KIAS",
+        "text": "Palanca de potencia en IDLE, aplicar frenos a fondo y mantener el control direccional en el eje de pista",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "Conectar el interruptor FADEC Force B y continuar el despegue a toda potencia",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "65 KIAS",
+        "text": "Tirar de la palanca atrás para levantar el morro e intentar superar el final de pista en planeo",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "72 KIAS",
+        "text": "Desplegar flaps a LAND (40°) y apagar el interruptor Master durante la carrera",
         "is_correct": false
       }
     ],
@@ -44,22 +44,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Palanca de potencia a ralentí, aplicar frenos de forma proporcional y mantener control direccional en pista",
+        "text": "Mantener 84 KIAS (flaps 0°) o 70 KIAS (flaps T/O) y aterrizar recto adelante (±30°), sin intentar virajes de 180° a pista",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Pulsar interruptor FADEC TEST inmediatamente, mantener potencia al 100% y continuar la carrera de despegue",
+        "text": "Efectuar un viraje escarpado de 180° hacia la pista de despegue con banqueo de 60°",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Extender flaps a posición LAND, cortar la válvula de combustible y realizar frenada de máxima intensidad",
+        "text": "Tirar de la palanca para mantener la altitud mientras se pulsa el botón FADEC Test en vuelo",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Desconectar Master Switch y Engine Master de inmediato antes de iniciar la deceleración en la pista",
+        "text": "Desplegar flaps a 40° de inmediato y buscar un campo perpendicular en pérdida",
         "is_correct": false
       }
     ],
@@ -81,22 +81,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Adoptar actitud de planeo a 84 KIAS y aterrizar recto hacia adelante, evitando virajes bruscos a pista",
+        "text": "Velocidad 84 KIAS (para rotación por molinete), selector combustible en tanque más lleno, interruptor de motor (Engine Switch) en ON",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Efectuar un viraje escarpado de 180° con 45° de banqueo para intentar regresar inmediatamente a la pista de salida",
+        "text": "Picar a 140 KIAS con el selector de combustible en OFF y alternadores desconectados",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Activar el arranque del motor (Starter) mientras se mantiene la actitud de ascenso pronunciada a 65 KIAS",
+        "text": "Mantener 55 KIAS con flaps LAND y accionar el disyuntor de la bomba auxiliar repetidamente",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Extender inmediatamente flaps a posición LAND (40°) sin modificar la actitud de cabeceo del avión",
+        "text": "Cortar el Emergency Switch y volar en pérdida hasta que el motor arranque",
         "is_correct": false
       }
     ],
@@ -118,22 +118,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Al menos 95-100 KIAS",
+        "text": "Planeo a 84 KIAS (flaps UP), aproximación final a 65 KIAS (flaps LAND), Master OFF y válvula de combustible OFF antes de la toma",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Al menos 100-105 KIAS",
+        "text": "Descenso a 120 KIAS con flaps recogidos y mantener el interruptor Master ON durante el impacto",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Al menos 105-110 KIAS",
+        "text": "Aproximación a 50 KIAS con flaps T/O y mantener la palanca de potencia al 100% de carga",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Al menos 110-115 KIAS",
+        "text": "Planeo a 100 KIAS sin flaps y realizar la toma con el tren de morro en primer lugar",
         "is_correct": false
       }
     ],
@@ -155,22 +155,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Fallo menor o degradación en ese canal; el motor continúa operando con el canal activo redundante",
+        "text": "Indica un fallo no crítico o degradación de sensor en ese canal; el FADEC continúa gobernando el motor de forma segura y se debe aterrizar en el próximo aeródromo",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Fallo menor o degradación en ese canal ; el motor continúa operando con el canal activo redundante",
+        "text": "Indica una parada catastrófica inminente del motor en los siguientes quince segundos debiendo saltar en paracaídas",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Fallo total de ambos alternadores principales; el sistema pasa a alimentarse de la batería de emergencia",
+        "text": "El piloto debe apagar manualmente la llave general de encendido del motor de inmediato en pleno vuelo",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Fallo menor o degradación en ese canal ; el motor continúa operando con el canal activo redundante",
+        "text": "La hélice se colocará automáticamente en bandera fija cortando el suministro de gasoil a los inyectores",
         "is_correct": false
       }
     ],
@@ -193,22 +193,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Seleccionar el interruptor 'FADEC FORCE B' para forzar la operación a través del Canal B si el Canal A estuviera degradado",
+        "text": "Ajustar la palanca de potencia para mantener las RPM del motor dentro del límite máximo operativo de 2.300 RPM",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Desconectar la batería principal y continuar el vuelo sin control electrónico mediante la bomba mecánica",
+        "text": "Acelerar la palanca de potencia al 100% de carga continua para forzar al gobernador a responder",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Ciclar la palanca de potencia repetidamente de IDLE a FULL para forzar un reseteo de la ECU de ambos canales",
+        "text": "Cortar inmediatamente el interruptor general del motor (Engine Switch OFF) y planear",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Tirar de la palanca de control de mezcla para enriquecer el flujo de combustible en la cámara de combustión",
+        "text": "Conectar el interruptor FADEC Force B y accionar los flaps a 40 grados en crucero",
         "is_correct": false
       }
     ],
@@ -230,22 +230,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Al menos 15 minutos de operación continua de motor y FADEC",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "Al menos 30 minutos de operación continua de motor y FADEC",
+        "text": "Aproximadamente 30 minutos de autonomía eléctrica mínima suministrada por la batería de respaldo dedicada al FADEC",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "El motor se apaga instantáneamente a los 5 segundos por falta de chispa de encendido",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "Al menos 45 minutos de operación continua de motor y FADEC",
+        "text": "Autonomía ilimitada porque los inyectores Common Rail no requieren energía eléctrica",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Al menos 60 minutos de operación continua de motor y FADEC",
+        "text": "Aproximadamente 4 horas continuas alimentado por la dinamo de la hélice",
         "is_correct": false
       }
     ],
@@ -268,22 +268,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Fuel Selector: OFF | Engine Master: OFF | Cabin Heat: OFF | Velocidad: 84 KIAS y aterrizaje forzoso",
+        "text": "Válvula de combustible (Fuel Shutoff Valve) en OFF, Emergency Switch OFF, calefacción de cabina OFF y descender a velocidad de planeo",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Fuel Selector: ON | Engine Master: ON | Cabin Heat: FULL ON | Velocidad: 100 KIAS para enfriar motor",
+        "text": "Acelerar a fondo para quemar rápidamente el combustible restante del motor",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Fuel Selector: OFF | Engine Master: ON | Cabin Heat: OFF | Velocidad: 65 KIAS con flaps LAND",
+        "text": "Abrir la calefacción de cabina y la bomba auxiliar de combustible para enfriar el capó",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Fuel Selector: AUTO | Engine Master: OFF | Cabin Heat: OPEN | Velocidad: 119 KIAS en viraje cerrado",
+        "text": "Descargar el extintor portátil por la ventanilla lateral izquierda hacia el capó motor",
         "is_correct": false
       }
     ],
@@ -305,22 +305,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Reducir potencia, aumentar velocidad para mejorar refrigeración y vigilar temp. de aceite; planificar aterrizaje próximo",
+        "text": "Aumentar la velocidad de vuelo para incrementar el flujo en el radiador, reducir potencia al mínimo necesario y abrir la calefacción de cabina al máximo",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Reducir potencia, aumentar velocidad para mejorar refrigeración y vigilar temp. de aceite ; planificar aterrizaje próximo",
+        "text": "Reducir la velocidad al límite de pérdida y cerrar herméticamente todas las tomas de aire del capó",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Reducir potencia, aumentar velocidad para mejorar refrigeración y vigilar temp. de aceite ; planificar aterrizaje próximo",
+        "text": "Apagar el alternador de 70A y conectar el disyuntor de la bomba mecánica de alta presión",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Reducir potencia, aumentar velocidad para mejorar refrigeración y vigilar temp. de aceite ; planificar aterrizaje próximo",
+        "text": "Cortar el suministro de combustible al tanque izquierdo y realizar un picado a velocidad de nunca exceder",
         "is_correct": false
       }
     ],
@@ -342,22 +342,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Fallo inminente de motor por pérdida de lubricante; reducir potencia al mínimo indispensable y preparar aterrizaje forzoso",
+        "text": "Reducir potencia al mínimo requerido para mantener el vuelo nivelado y aterrizar en el aeródromo adecuado más próximo",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Fallo exclusivo del sensor eléctrico de presión sin riesgo mecánico; continuar el vuelo con normalidad a crucero",
+        "text": "Aumentar la potencia al cien por cien para forzar el cebado de la bomba mecánica de lubricación",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Fallo inminente de motor por pérdida de lubricante ; reducir potencia al mínimo indispensable y preparar aterrizaje forzoso",
+        "text": "Cortar el motor de inmediato y ejecutar un aterrizaje forzado sin motor en el campo más cercano",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Fallo inminente de motor por pérdida de lubricante ; reducir potencia al mínimo indispensable y preparar aterrizaje forzoso",
+        "text": "Conectar el interruptor de respaldo FADEC Force B para incrementar la presión de la rampa",
         "is_correct": false
       }
     ],
@@ -416,22 +416,22 @@
     "options": [
       {
         "id": "A",
-        "text": "El sistema activa automáticamente el modo de reversión en el MFD, o el piloto puede forzarlo pulsando el botón rojo 'DISPLAY BACKUP' en el panel de audio",
+        "text": "Pulsar el botón rojo 'DISPLAY BACKUP' en el panel de audio GMA 1360 para presentar los instrumentos integrados en el MFD",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Los datos de vuelo solo se pueden consultar en los instrumentos analógicos de reserva situados en la parte inferior",
+        "text": "Desconectar los disyuntores de la batería de emergencia de 30 minutos situada en el morro",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "El sistema activa automáticamente el modo de reversión (Reversionary Mode) en el MFD , o el piloto puede forzarlo pulsando el botón rojo 'DISPLAY BACKUP' en el panel de audio",
+        "text": "Reiniciar el motor Continental CD-170 apagando la llave de contacto en pleno vuelo",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "El sistema activa automáticamente el modo de reversión (Reversionary Mode) en el MFD , o el piloto puede forzarlo pulsando el botón rojo 'DISPLAY BACKUP' en el panel de audio",
+        "text": "Desmontar la pantalla PFD con la mano para conectar los tubos neumáticos de respaldo manual",
         "is_correct": false
       }
     ],
@@ -528,22 +528,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Comprobar el disyuntor (Circuit Breaker) del alternador, desconectar cargas eléctricas no esenciales (deshielo de pitot si no está en IMC, luces exteriores secundarias) y monitorizar el voltaje del sistema",
+        "text": "Comprobar disyuntor del alternador, apagar cargas eléctricas no esenciales y monitorizar el voltaje; la batería de FADEC garantiza al menos 30 min de motor",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Comprobar el disyuntor (Circuit Breaker) del alternador , desconectar cargas eléctricas no esenciales (deshielo de pitot si no está en IMC , luces exteriores secundarias) y monitorizar el voltaje del sistema",
+        "text": "El motor diésel se detendrá instantáneamente en cuanto se descargue la batería principal en dos minutos",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Comprobar el disyuntor (Circuit Breaker) del alternador , desconectar cargas eléctricas no esenciales (deshielo de pitot si no está en IMC , luces exteriores secundarias) y monitorizar el voltaje del sistema",
+        "text": "Conectar todas las luces exteriores y calefacción de pitot para drenar la sobretensión del regulador",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Comprobar el disyuntor (Circuit Breaker) del alternador , desconectar cargas eléctricas no esenciales (deshielo de pitot si no está en IMC , luces exteriores secundarias) y monitorizar el voltaje del sistema",
+        "text": "Apagar la pantalla MFD y volar exclusivamente con el horizonte artificial neumático de vacío",
         "is_correct": false
       }
     ],

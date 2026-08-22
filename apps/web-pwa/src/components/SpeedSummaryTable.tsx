@@ -2,14 +2,15 @@ import React from 'react';
 import { Gauge, AlertTriangle, Shield, Plane, Zap } from 'lucide-react';
 
 interface SpeedSummaryTableProps {
-  aircraftType?: 'p2010' | 'c172n' | 'e195e2' | 'general';
+  aircraftType?: 'p2010' | 'c172n' | 'e195e2' | 'general' | null;
   highlightSpeed?: string;
 }
 
 export const SpeedSummaryTable: React.FC<SpeedSummaryTableProps> = ({
-  aircraftType = 'p2010',
+  aircraftType,
   highlightSpeed
 }) => {
+  if (!aircraftType) return null;
   if (aircraftType === 'p2010') {
     return (
       <div className="rounded-2xl bg-[#081224] border border-sky-500/30 overflow-hidden shadow-xl mt-4 font-sans animate-fade-in">

@@ -22,7 +22,7 @@
       },
       {
         "id": "D",
-        "text": "Techo: DA/H + 130 ft ; Visibilidad/RVR: RVR + 330 m",
+        "text": "Techo: DA/H + 130 ft; Visibilidad/RVR: RVR + 330 m",
         "is_correct": false
       }
     ],
@@ -232,7 +232,7 @@
     "options": [
       {
         "id": "A",
-        "text": "RFFS 8 si el NOTAM es > 82h ; RFFS 6 si el NOTAM es <= 82h (con alternativo RFFS >= 9 y sin diferidos en ATA 28, 29 y 34)",
+        "text": "RFFS 8 si el NOTAM es > 82h; RFFS 6 si el NOTAM es <= 82h (con alternativo RFFS >= 9 y sin diferidos en ATA 28, 29 y 34)",
         "is_correct": false
       },
       {
@@ -242,12 +242,12 @@
       },
       {
         "id": "C",
-        "text": "RFFS 2 si el NOTAM es > 52h ; RFFS 3 si el NOTAM es <= 52h (con alternativo RFFS >= 3 y sin diferidos en ATA 22, 23 y 28)",
+        "text": "RFFS 2 si el NOTAM es > 52h; RFFS 3 si el NOTAM es <= 52h (con alternativo RFFS >= 3 y sin diferidos en ATA 22, 23 y 28)",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "RFFS 12 si el NOTAM es > 102h ; RFFS 8 si el NOTAM es <= 102h (con alternativo RFFS >= 13 y sin diferidos en ATA 32, 33 y 38)",
+        "text": "RFFS 12 si el NOTAM es > 102h; RFFS 8 si el NOTAM es <= 102h (con alternativo RFFS >= 13 y sin diferidos en ATA 32, 33 y 38)",
         "is_correct": false
       }
     ],
@@ -269,12 +269,12 @@
     "options": [
       {
         "id": "A",
-        "text": "RFFS 6 si NOTAM > 82h ; RFFS 5 si NOTAM <= 82h (cumpliendo condicionantes de origen/destino y sistemas no diferidos)",
+        "text": "RFFS 6 si NOTAM > 82h; RFFS 5 si NOTAM <= 82h (cumpliendo condicionantes de origen/destino y sistemas no diferidos)",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "RFFS 3 si NOTAM > 52h ; RFFS 2 si NOTAM <= 52h (cumpliendo condicionantes de origen/destino y sistemas no diferidos)",
+        "text": "RFFS 3 si NOTAM > 52h; RFFS 2 si NOTAM <= 52h (cumpliendo condicionantes de origen/destino y sistemas no diferidos)",
         "is_correct": false
       },
       {
@@ -284,7 +284,7 @@
       },
       {
         "id": "D",
-        "text": "RFFS 8 si NOTAM > 102h ; RFFS 7 si NOTAM <= 102h (cumpliendo condicionantes de origen/destino y sistemas no diferidos)",
+        "text": "RFFS 8 si NOTAM > 102h; RFFS 7 si NOTAM <= 102h (cumpliendo condicionantes de origen/destino y sistemas no diferidos)",
         "is_correct": false
       }
     ],
@@ -680,22 +680,22 @@
     "options": [
       {
         "id": "A",
-        "text": "El RVR de la zona de toma de contacto (Touchdown Zone RVR) ; si no está reportado, el del punto medio (Midpoint RVR) será el valor de referencia",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "El RVR de la zona de toma de contacto (Touchdown Zone RVR); si no está reportado, el del punto medio (Midpoint RVR) será el valor de referencia",
+        "text": "El RVR de la zona de toma de contacto (TDZ RVR); si no está reportado, el del punto medio (Midpoint RVR) será la referencia",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "El RVR del punto de parada final (Stop-end RVR) exclusivamente sin importar el valor de toma de contacto",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "El RVR de la zona de toma de contacto (Touchdown Zone RVR) ; si no está reportado, el del punto medio (Midpoint RVR) será el valor de referencia",
+        "text": "El promedio aritmético entre la visibilidad meteorológica general y el RVR de la calle de rodaje de salida",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "El RVR de la zona de toma de contacto (Touchdown Zone RVR) ; si no está reportado, el del punto medio (Midpoint RVR) será el valor de referencia",
+        "text": "Únicamente la visibilidad horizontal estimada por la tripulación técnica en el tramo de viento en cola",
         "is_correct": false
       }
     ],
@@ -1559,17 +1559,17 @@
       },
       {
         "id": "B",
-        "text": "Detener avión por completo, apagar motor 2 dejando motor 3 a ralentí, apagar beacon, calzar tren de morro y conectar GPU ; no calzar tren principal hasta que ambos motores estén parados",
+        "text": "Detener avión por completo, apagar motor 2 dejando motor 1 a plena potencia, mantener beacon encendido y calzar tren principal de inmediato",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Detener avión por completo, apagar motor 1 dejando motor 1 a ralentí, apagar beacon, calzar tren de morro y conectar GPU ; no calzar tren principal hasta que ambos motores estén parados",
+        "text": "Apagar ambos motores durante el rodaje por inercia hacia el puesto de estacionamiento sin conectar fuente eléctrica externa",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Detener avión por completo, apagar motor 4 dejando motor 5 a ralentí, apagar beacon, calzar tren de morro y conectar GPU ; no calzar tren principal hasta que ambos motores estén parados",
+        "text": "Calzar las cuatro ruedas del tren principal con ambos motores acelerados a potencia de empuje antes de conectar la GPU",
         "is_correct": false
       }
     ],
@@ -1872,7 +1872,7 @@
       },
       {
         "id": "D",
-        "text": "Techo: DA/H + 230 ft ; Visibilidad: RVR/VIS + 830 m",
+        "text": "Techo: DA/H + 230 ft; Visibilidad: RVR/VIS + 830 m",
         "is_correct": false
       }
     ],
