@@ -1,0 +1,1852 @@
+[
+  {
+    "id": "CMD-MOA-ICE-001",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4 - Concepto de Avión Limpio (Clean Aircraft Concept - CAC)",
+    "stem": "¿Qué principio fundamental establece el Concepto de Avión Limpio (Clean Aircraft Concept - OACI Doc 9640 / MOA 8.2.4)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ninguna aeronave debe iniciar el despegue si tiene hielo, nieve, escarcha o aguanieve adheridos a las alas, superficies de control, estabilizadores, entradas de motor o superficies críticas",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se permite despegar con hasta 5 cm de nieve sobre las alas si los motores están calientes",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El avión puede despegar con hielo siempre que la temperatura exterior sea superior a -5°C",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo es necesario limpiar las ventanillas de la cabina de pasajeros",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Concepto de Avión Limpio (CAC / CAT.OP.MPA.250 / MOA 8.2.4)** prohíbe taxativamente iniciar el despegue cuando existan depósitos de contaminación congelada (hielo, nieve, escarcha) adheridos a superficies aerodinámicas críticas.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-002",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.1 - Definición de Tiempo de Efectividad (Holdover Time - HOT)",
+    "stem": "¿Cómo se define el Tiempo de Efectividad (Holdover Time - HOT) de un fluido antihielo y cuándo comienza a computarse?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Es el tiempo estimado que el fluido previene la formación de hielo/nieve en superficies tratadas; comienza a contar en el momento exacto en que se INICIA la aplicación del último paso de fluido",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Comienza a contar cuando el avión suelta los frenos de estacionamiento",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Comienza cuando el personal de tierra termina de guardar las mangueras de deshielo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Es el tiempo total que dura el vuelo de crucero hasta el destino",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Holdover Time (HOT)** es el periodo estimado durante el cual un fluido antihielo evita la adhesión de hielo bajo precipitación activa, y **comienza en el instante en que se inicia la aplicación del último paso** (Step 2 en método de 2 etapas o Step 1 en 1 etapa) (MOA 8.2.4.1 / SAE).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-003",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.3 - Características del Fluido Tipo I (De-icing Fluid)",
+    "stem": "¿Cuáles son las propiedades y uso principal de los fluidos de Tipo I según el estándar SAE AMS 1424 y MOA 8.2.4.3?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fluidos no espesados (newtonianos), de color naranja/rosa, aplicados calientes ($\\ge 60^\\circ\text{C}$) principalmente para la eliminación rápida de nieve/hielo (deshielo), con un HOT muy limitado",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Fluidos de color verde con una duración de protección de 24 horas continuas",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Fluidos espesados aplicados en frío exclusivamente para aviones militares",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aceite lubricante de motor mezclado con agua dulce",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Fluido Tipo I** es una solución acuosa de glicol sin espesantes (color **naranja/rosa**), aplicada caliente ($\\ge 60^\\circ\text{C}$ en boquilla) para fundir y desprender mecánicamente el hielo/nieve; proporciona una **protección antihielo muy corta (HOT breve de 3-15 min)**.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-004",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.3 - Características del Fluido Tipo IV (Anti-icing Fluid)",
+    "stem": "¿Cuáles son las propiedades técnicas y operacionales de los fluidos de Tipo IV según SAE AMS 1428 y MOA 8.2.4.3?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fluidos espesados pseudoplásticos, de color verde, diseñados para proporcionar el máximo tiempo de efectividad (HOT) en tierra y desprenderse aerodinámicamente durante la carrera de despegue ($V_R > 100\text{ kt}$)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Líquidos corrosivos que se aplican únicamente sobre las ruedas del tren de aterrizaje",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Gases comprimidos que se pulverizan sobre los tubos de escape calientes",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pintura plástica permanente que protege las alas durante toda la temporada de invierno",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Fluido Tipo IV** contiene polímeros espesantes (color **verde**), formando una capa protectora de alta viscosidad resistente a precipitación activa que **se desprende limpiamente por esfuerzo cortante aerodinámico al superar 100 kt ($V_R$)**.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-005",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.3 - Fluido Tipo II vs Fluido Tipo IV",
+    "stem": "¿Qué distingue a los fluidos Tipo II de los Tipo IV según el MOA 8.2.4.3?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ambos son fluidos espesados para aviones de alta velocidad ($V_R > 100\text{ kt}$), pero el Tipo II es de color amarillo pajizo con menor tiempo de efectividad que el Tipo IV (verde)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El Tipo II se aplica solo en helicópteros y el Tipo IV solo en aviones de hélice",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El Tipo II se bebe como anticongelante y el Tipo IV es combustible",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No existe ninguna diferencia siendo dos nombres comerciales del mismo líquido",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los fluidos **Tipo II (amarillo pajizo)** y **Tipo IV (verde)** son pseudoplásticos para reactores rápidos ($V_R > 100\text{ kt}$); el **Tipo IV representa la formulación avanzada con tiempos de efectividad (HOT) sustancialmente más prolongados** (MOA 8.2.4.3).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-006",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.3 - Fluido Tipo III para Aeronaves con Velocidad de Rotación Lenta (VR < 100 kt)",
+    "stem": "¿Para qué tipo de aeronaves está específicamente formulado el Fluido Tipo III (color verde amarillento)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Para aeronaves con velocidades de rotación reducidas ($V_R < 100\text{ kt}$, turbohélices ligeros o aviación general) donde un fluido Tipo II/IV no se desprendería eficazmente",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Para aviones supersónicos comerciales en vuelos transoceánicos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Exclusivamente para planeadores sin motor en pistas de hierba",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Para limpiar las moquetas interiores de la cabina de pasajeros",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Fluido Tipo III (verde amarillento)** posee una curva reológica intermedia calibrada para desprenderse a velocidades bajas ($V_R < 100\text{ kt}$), ideal para turbohélices ligeros y aviones regionales lentos (MOA 8.2.4.3).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-007",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.6 - Procedimiento de Deshielo en Dos Etapas (Two-Step De-icing / Anti-icing)",
+    "stem": "¿En qué consiste el método en dos etapas (Two-Step Method) y cuál es el plazo crítico entre el Paso 1 y el Paso 2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Paso 1: Deshielo con Tipo I o agua caliente ($\\ge 60^\\circ\text{C}$) para limpiar; Paso 2: Aplicación inmediata de Tipo II/IV para proteger, debiendo iniciarse el Paso 2 antes de que el fluido del Paso 1 se congele (típicamente $\\le 3\text{ min}$)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Paso 1: Despegar con hielo; Paso 2: Aterrizar para limpiar las alas",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Paso 1: Aplicar Tipo IV frío; Paso 2: Lavar con agua helada 2 horas después",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Paso 1: Rociar los motores; Paso 2: Rociar los frenos del tren",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Método en Dos Etapas (Two-Step De/Anti-icing)** desglosa la limpieza (Paso 1: térmico con Tipo I) y la protección (Paso 2: barrera con Tipo II/IV), requiriendo aplicar el Paso 2 **inmediatamente tras el Paso 1 (máx 3 minutos)** antes de que la superficie se enfríe y recongele (MOA 8.2.4.6).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-008",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.6 - Zonas Críticas Donde Está PROHIBIDO el Rociado Directo de Fluido",
+    "stem": "¿Qué áreas y componentes de la aeronave NO deben ser rociados directamente con fluidos de deshielo/antihielo según MOA 8.2.4.6 y AMM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tomas de aire y álabes de motores, tomas de aire del APU, tubos Pitot, tomas estáticas, sondas AoA/TAT, parabrisas de cabina y conjuntos de frenos/ruedas",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El extradós de las alas y los alerones de control de balance",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El cono de cola y los timones de dirección y profundidad",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Las puertas de pasaje y compuertas de bodega presurizadas",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Está **prohibido proyectar chorros de fluido sobre**: tomas de presión **Pitot/estática/AoA** (obstrucción de aviónica), **toberas de motor/APU** (humo tóxico en cabina / desbalance de álabes), **parabrisas** (pérdida de visión) y **frenos** (pérdida de fricción / fuego) (MOA 8.2.4.6 / AMM).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-009",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.1 - Fenómeno de 'Cold Soak' (Hielo por Combustible Superfrío)",
+    "stem": "¿Qué es el fenómeno de 'Cold Soak Effect' y qué riesgo presenta en escalas con temperatura ambiente positiva?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El enfriamiento extremo del combustible en las alas durante vuelos largos a gran altitud hace que el ala permanezca a temperaturas bajo cero en tierra, provocando escarcha o hielo transparente sobre el plano incluso con $OAT > 0^\\circ\text{C}$",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El calentamiento de las alas por radiación solar que derrite el combustible",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La congelación del agua en las botellas de los pasajeros durante el desembarque",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Un fallo en el aire acondicionado que enfría la cabina de mandos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Cold Soak Effect** ocurre tras descender de niveles de crucero fríos: el combustible a $-20^\\circ\text{C}$ o $-30^\\circ\text{C}$ enfría el intradós y extradós alar, condensando la humedad ambiente y formando **escarcha o hielo transparente (Clear Ice) invisible a temperaturas positivas de $+5^\\circ\text{C}$ a $+15^\\circ\text{C}$** (MOA 8.2.4.1).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-010",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4 - Excepción de Escarcha Admisible según el AFM Sección 2.50 (E195-E2)",
+    "stem": "De acuerdo con las limitaciones del AFM de Embraer (Sección 2.50) y MOA 8.2.4, ¿cuál es la única escarcha tolerable sin requerir deshielo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Una capa de escarcha fina de hasta **3 mm (1/8 de pulgada)** localizada exclusivamente en el **intradós alar por debajo de los depósitos de combustible**, siempre que el extradós, bordes de ataque y mandos estén 100% limpios",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Hasta 5 cm de escarcha en los bordes de ataque de los planos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Escarcha gruesa sobre los tubos Pitot y sondas de ángulo de ataque",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No se permite ninguna tolerancia en ningún lugar del avión bajo ninguna circunstancia",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El AFM de Embraer autoriza como única excepción al concepto de avión limpio una capa de **escarcha por Cold Soak de hasta $3\text{ mm}$ en el intradós alar (Bottom of Wing Tanks)**, requiriendo que la parte superior (extradós) y los bordes de ataque estén totalmente limpios (AFM 2.50 / MOA 8.2.4).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-011",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.1 - Comprobación Táctil de Superficies Críticas (Tactile Check)",
+    "stem": "¿En qué consiste una comprobación táctil (Tactile Check) y cuándo es obligatoria según el MOA 8.2.4.1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Palpar físicamente con la mano enguantada el borde de ataque y extradós para detectar hielo transparente (Clear Ice) invisible a la vista tras vuelos con Cold Soak o sospecha de contaminación",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Golpear el ala con un martillo de acero para comprobar la resistencia del metal",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Comprobar el tacto de los asientos de los pasajeros antes del embarque",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Medir la rugosidad de los neumáticos con los dedos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Tactile Check (comprobación táctil)** es el único método fiable para detectar **hielo transparente fino (*Clear Ice*)**, requiriendo pasar la mano por las superficies críticas (bordes de ataque y planos) antes de autorizar el despegue (MOA 8.2.4.1).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-012",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.6 - Temperatura Mínima del Fluido Tipo I en la Boquilla de Salida",
+    "stem": "¿Qué temperatura mínima debe mantener el fluido Tipo I al salir por la boquilla de la lanza de aplicación (Nozzle Temperature)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Una temperatura mínima de **$60^\\circ\text{C} (140^\\circ\text{F})$ en la boquilla**, garantizando que llegue al ala al menos a $60^\\circ\text{C}$ para fundir el hielo por choque térmico",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Exactamente $0^\\circ\text{C}$ para no calentar la estructura de aluminio",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Más de $200^\\circ\text{C}$ en estado de vapor sobrecalentado",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La temperatura ambiente de la plataforma sin calentar",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para fundir y despegar eficazmente las placas de hielo sin que el agua de dilución se recongele en la superficie, el **Fluido Tipo I debe salir de la boquilla a un mínimo de $60^\\circ\text{C}$** (MOA 8.2.4.6 / SAE AMS 1424).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-013",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.3 - Temperatura Mínima de Uso Operativo del Fluido (LOUT)",
+    "stem": "¿Qué significa la sigla LOUT (Lowest Operational Use Temperature) de un fluido deshelante/antihielo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Es la temperatura exterior más baja a la que el fluido mantiene sus propiedades de protección y capacidad de desprendimiento aerodinámico con margen de congelación seguro ($\\ge 7^\\circ\text{C}$ o $\\ge 10^\\circ\text{C}$ de buffer)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Es la temperatura a la que se encienden los calentadores de la cocina de cabina",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Es el límite de temperatura para el confort de los pasajeros en rampa",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Es la altitud mínima a la que se puede conectar el piloto automático en ascenso",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La **LOUT (Lowest Operational Use Temperature)** es el límite inferior de temperatura ambiente ($OAT$) por debajo del cual **no se puede utilizar el fluido** porque su viscosidad impediría el desprendimiento en el despegue o su punto de congelación estaría demasiado próximo a la OAT (MOA 8.2.4.3).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-014",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.6 - Inspección Previa al Despegue dentro del HOT (Pre-Takeoff Check)",
+    "stem": "¿Qué comprobación visual realiza la tripulación técnica poco antes de entrar en pista dentro del tiempo de efectividad (HOT)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "La inspección visual de las superficies representativas del ala desde la cabina de mando o cabina de pasajeros para verificar que el fluido mantiene su brillo y no hay acumulación de nieve/hielo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Desconectar las baterías del avión para resetear los sistemas de alerta",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Abrir las ventanillas de cabina para sacar la mano y tocar el morro",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Preguntar a los pasajeros si ven nieve en las ventanillas",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Pre-Takeoff Check** se ejecuta desde el puesto de pilotaje poco antes de alinearse en pista: se observa la superficie alar representativa para confirmar que el fluido **continúa activo (aspecto húmedo/brillante)** y libre de contaminantes congelados (MOA 8.2.4.6 / CAT.OP.MPA.250).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-015",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.6 - Procedimiento si el Tiempo de Efectividad (HOT) ha Expirado",
+    "stem": "Si el tiempo de efectividad (HOT) expira antes de que el avión inicie la carrera de despegue y continúa habiendo precipitación activa, ¿qué procede?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No se permite el despegue; se debe regresar al puesto de deshielo o realizar un nuevo tratamiento completo de deshielo/antihielo (Two-Step)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Acelerar a velocidad máxima en pista para que el viento limpie las alas",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Extender flaps al máximo y despegar confiando en el calentamiento de las alas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Prolongar el HOT en 30 minutos de forma verbal por decisión del copiloto",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "**Principio de seguridad innegociable**: Si el HOT expira en presencia de precipitación engelante, el despegue queda **terminantemente prohibido**; la aeronave debe recibir un **nuevo tratamiento completo de deshielo y antihielo** antes de intentar salir (MOA 8.2.4.6).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-016",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.6 - Formato Oficial del Código de Notificación tras el Deshielo (Anti-icing Code)",
+    "stem": "¿Qué elementos componen el código estándar transmitido por el personal de deshielo a la tripulación técnica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tipo de fluido (Tipo I, II o IV), nombre comercial (si procede), concentración (%), hora de inicio del último paso (UTC), fecha, y confirmación de Post De-icing Check completado",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El precio de la factura del servicio y el número de litros consumidos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El nombre de pila de todos los operarios de la plataforma",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La matrícula del camión de bomberos del aeropuerto",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Anti-icing Code oficial OACI/SAE** transmite a la tripulación: **1º Tipo de fluido (Tipo I/II/IV), 2º Concentración (100/75/50), 3º Hora de inicio del último paso (HH:MM UTC), 4º Fecha, y 5º Declaración de Post De-icing Check satisfactorio** (MOA 8.2.4.6).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-017",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.4 - Efectos Aerodinámicos de los Fluidos Espesados (Tipo II / IV) en el Despegue",
+    "stem": "¿Qué efecto tienen los fluidos espesados en las actuaciones del avión durante la carrera de despegue hasta su desprendimiento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Generan un ligero incremento transitorio de resistencia y una reducción menor de sustentación durante la aceleración, que desaparece al desprenderse el fluido a la velocidad de rotación ($V_R$)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Aumentan la sustentación alar en un 40% permitiendo despegar a menor velocidad",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Bloquean los mandos de vuelo de forma permanente durante todo el crucero",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Enfrían los neumáticos reduciendo la distancia de frenado en un 80%",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los fluidos Tipo II/IV incrementan ligeramente la capa límite durante la aceleración en tierra; por ello los fabricantes certifican las velocidades de despegue y perfiles de rotación garantizando el **desprendimiento aerodinámico completo al alcanzar $V_R$** (AFM / MOA 8.2.4.4).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-018",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.6 - Configuración de Flaps durante el Proceso de Deshielo en Tierra",
+    "stem": "¿En qué posición deben mantenerse los flaps durante la aplicación de fluidos de deshielo/antihielo según el SOPM y MOA 8.2.4.6?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En posición completamente recogida (**Flaps 0° / Flaps UP**) para evitar que el fluido y los residuos contaminados se acumulen en los carriles, actuadores y mecanismos hipersustentadores",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En posición máxima de aterrizaje Flap Full",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En posición intermedia Flap 2 con aerofrenos extendidos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Moviendo continuamente la palanca de flaps arriba y abajo durante el rociado",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La aplicación de fluidos debe efectuarse con **Flaps UP (recogidos)** para proteger los mecanismos de guiado, carriles y cables; los flaps de despegue se extienden durante el rodaje previo a la alineación en pista (SOPM / MOA 8.2.4.6).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-019",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.6 - Precaución con el Sistema de Aire Acondicionado y Sangrado de APU (Packs OFF)",
+    "stem": "¿Por qué es obligatorio apagar los Packs de aire acondicionado y cerrar el sangrado de APU (APU Bleed OFF) durante el deshielo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Para evitar la aspiración de vapores tóxicos de glicol al interior del sistema de climatización y cabina de pasaje a través de las tomas de aire",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Para que los fluidos no apaguen el generador eléctrico del APU",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Para evitar que el avión se despresurice en tierra",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Porque el aire acondicionado congelaría las mangueras de los camiones",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El glicol vaporizado por los chorros calientes genera humos irritantes y tóxicos si ingresa en la ventilación; **los Packs y la válvula APU Bleed deben permanecer cerrados (OFF)** durante todo el rociado de la aeronave (SOPM / MOA 8.2.4.6).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-020",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.5 - Factores Meteorológicos que Reducen el Tiempo de Efectividad (HOT)",
+    "stem": "¿Cuáles son los principales factores meteorológicos que acortan drásticamente el tiempo de efectividad (HOT) de un fluido antihielo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vientos fuertes racheados, temperaturas extremadamente bajas ($OAT < -10^\\circ\text{C}$), alta tasa de precipitación (lluvia engelante fuerte / aguanieve) y superficies alares muy frías por Cold Soak",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cielo despejado con sol radiante y viento en calma",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Humedad relativa del 10% a 25°C de temperatura",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Presión atmosférica elevada de 1030 hPa a nivel del mar",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las tablas de **Holdover Times (HOT)** fijan rangos variables: vientos intensos, precipitaciones severas (nieve húmeda / lluvia engelante) y temperaturas bajo cero aceleran la dilución del glicol, **reduciendo el HOT al límite inferior de la tabla** (MOA 8.2.4.5).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-021",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.5 - Tablas HOT: Precipitación de Lluvia Engelante Ligera (Light Freezing Rain - FZRA)",
+    "stem": "Bajo lluvia engelante ligera (Light FZRA) y con fluido Tipo IV al 100%, ¿cuál es el rango típico de protección (HOT) aproximado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Un tiempo muy reducido (típicamente entre 20 y 45 minutos según la temperatura exterior), debiendo extremarse la vigilancia antes del despegue",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Un tiempo ilimitado de más de 8 horas de protección continua",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Exactamente 5 segundos debiendo despegar antes de que termine el minuto",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Las tablas no contemplan la lluvia engelante al ser imposible volar en ella",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La **lluvia engelante (FZRA)** es uno de los fenómenos más severos por su alto contenido de agua líquida superfría; los tiempos de protección (**HOT**) incluso con **Tipo IV puro al 100% se reducen drásticamente (20-45 min)** (MOA 8.2.4.5).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-022",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.5 - Tablas HOT: Escarcha (Frost) a Temperaturas Bajo Cero",
+    "stem": "Para condiciones de formación de escarcha en tierra (Active Frost) a temperaturas de $0^\\circ\text{C}$ a $-10^\\circ\text{C}$ con fluido Tipo IV 100%, ¿qué HOT proporcionan las tablas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Un tiempo de protección prolongado (típicamente entre 8 y 12 horas o superior en ausencia de precipitación líquida activa)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Menos de 2 minutos requiriendo aplicar fluido continuamente en carrera de despegue",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cero minutos al no proteger contra la escarcha",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Exactamente 30 días de calendario",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La **escarcha (Frost)** deposita microcristales por sublimación inversa a baja tasa de masa; el **Fluido Tipo IV al 100% proporciona hasta 8 a 12+ horas de protección** frente a escarcha activa en pernoctas (MOA 8.2.4.5).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-023",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.6 - Procedimiento de Deshielo con Motores en Marcha (Engines Running De-icing)",
+    "stem": "Si por requerimientos operacionales se realiza deshielo en la cabecera de pista con motores en marcha a ralentí, ¿qué precauciones rigen?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Freno de estacionamiento aplicado, comunicación continua por interfono/radio, motores estabilizados a ralentí bajo (Ground Idle) y camiones fuera del Jet Blast",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Acelerar los motores a empuje de despegue para ayudar a los camiones",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Desconectar las radios para no interferir con las bombas de fluido",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Permitir que los operarios pasen por delante de las toberas de entrada",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **deshielo con motores encendidos (Engines Running)** exige: **motores a ralentí bajo**, balizamiento visual, comunicación coordinada por frecuencia de deshielo y **estricto respeto a las zonas de peligro de motor (Intake / Blast)** (MOA 8.2.4.6 / SOPM).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-024",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.3 - Residuos Secos de Fluido Espesado en Cavidades Alares (Rehydration / Gel Residue)",
+    "stem": "¿Qué riesgo representan los residuos secos de fluidos Tipo II y IV acumulados en zonas aerodinámicamente muertas de flaps y timones?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pueden rehidratarse con la lluvia o humedad y congelarse en altitud formando un gel rígido que puede bloquear las superficies de control y compensadores",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Aumentan la flexibilidad de las bisagras metálicas facilitando el giro",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mejoran la conductividad eléctrica de las antenas de comunicaciones",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No presentan ningún riesgo disolviéndose espontáneamente en el aire",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los residuos secos de polímeros espesantes (**Glicol Gel Resists**) atrapados en compensadores y mecanismos de flaps se rehidratan y congelan a gran altitud, **pudiendo trabar los mandos de vuelo**; exige inspección y lavado periódico con agua a presión (MOA 8.2.4.3 / AMM).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-025",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.6 - Simetría Obligatoria en la Aplicación de Fluidos",
+    "stem": "¿Por qué es mandatorio que el tratamiento de deshielo y antihielo se aplique de forma simétrica a ambos lados del avión?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Para garantizar idénticas características aerodinámicas de sustentación, resistencia y desprendimiento de fluido en ambos planos alares, evitando asimetrías de sustentación y alabeos involuntarios en la rotación",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Para que el avión luzca con el mismo color en las fotografías de los pasajeros",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Para gastar exactamente la misma cantidad de dinero en cada ala",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Para que los dos motores consuman el mismo volumen de queroseno",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La **aplicación simétrica en ambas alas y empenajes** es obligatoria: una asimetría en el tipo, espesor o tiempo de desprendimiento de fluido generaría un **desbalance crítico de sustentación en la rotación ($V_R$) con riesgo de pérdida de control lateral** (MOA 8.2.4.6 / EASA).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-026",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.6 - Aplicación de Fluido en el Estabilizador Horizontal y Vertical",
+    "stem": "¿Cómo debe pulverizarse el fluido en el empenaje de cola y estabilizador horizontal (THS)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desde los bordes de ataque hacia los bordes de salida y desde las zonas superiores hacia las inferiores, asegurando que los timones y compensadores queden completamente limpios y libres de restos",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Lanzando el fluido en dirección contraria desde el escape del motor hacia el morro",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Rociando únicamente la parte inferior del timón de dirección",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No se aplica fluido en la cola al ser el morro la única parte crítica",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El rociado de superficies de cola se realiza **desde el borde de ataque hacia atrás y de arriba hacia abajo**, verificando la ausencia de hielo en ranuras de timones y servocompensadores (MOA 8.2.4.6).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-027",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.1 - Niebla Helada (Freezing Fog - FZFG) y Acumulación en Superficies Frías",
+    "stem": "¿Qué peligro presenta la Niebla Helada (FZFG) para una aeronave estacionada en rampa?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Compuesta por gotículas de agua subfundida que se congelan instantáneamente al contactar con la estructura metálica del avión, formando una capa rugosa de hielo granular (Rime Ice)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Evapora todo el combustible de los depósitos centrales",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Calienta la cabina de pasajeros por encima de 40°C",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Disuelve la pintura exterior del fuselaje",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La **Niebla Helada (FZFG)** contiene agua en estado líquido a temperaturas negativas ($< 0^\\circ\text{C}$); el impacto de las microgotas sobre el fuselaje y alas genera **depósitos continuos de hielo rugoso (Rime)** que destruyen la sustentación (MOA 8.2.4.1 / 8.1.6).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-028",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.6 - Comprobación de Contaminación Previa al Despegue (Pre-Takeoff Contamination Check)",
+    "stem": "¿Cuándo es obligatoria una comprobación visual o táctil exterior de contaminación previa al despegue (Pre-Takeoff Contamination Check)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cuando el tiempo de efectividad (HOT) ha sido superado o cuando las condiciones meteorológicas han empeorado severamente desde el tratamiento",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En todos los vuelos de verano con temperaturas superiores a 30°C",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Únicamente si los pasajeros solicitan una revisión por escrito",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cuando el avión despega con viento en calma a nivel del mar",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Si el **HOT expira o las condiciones empeoran imprevisiblemente**, no se puede despegar sin una **inspección directa visual o táctil a menos de 1 metro de las superficies críticas (*Contamination Check*)** o un nuevo tratamiento completo (MOA 8.2.4.6 / CAT.OP.MPA.250).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-029",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.3 - Dilución del Fluido Antihielo: Mezclas 100/0, 75/25 y 50/50",
+    "stem": "¿Qué significan las cifras de concentración 75/25 o 50/50 en los fluidos deshelantes/antihielo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "75/25 = 75% de fluido puro concentrado y 25% de agua | 50/50 = 50% de fluido y 50% de agua por volumen",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "75% de alcohol y 25% de gasolina de aviación",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "75 minutos de vuelo y 25 minutos de espera",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "75 kg de peso de glicol por cada 25 pasajeros",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las especificaciones de fluidos definen la proporción volumétrica: **100/0 (puro), 75/25 (75% glicol / 25% agua) y 50/50 (mitad glicol / mitad agua)**, determinando su viscosidad, LOUT y tiempo de protección (MOA 8.2.4.3 / SAE).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-030",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.6 - Responsabilidad Final del Comandante sobre el Estado Limpio del Avión",
+    "stem": "¿Quién tiene la responsabilidad legal final e indelegable de decidir si la aeronave está en condiciones limpias y seguras para el despegue?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El Comandante de la aeronave, quien no iniciará el despegue a menos que esté plenamente seguro de que no existe contaminación congelada en superficies críticas",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El conductor del camión cisterna de combustible",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El agente de facturación de equipajes de la escala",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El controlador aéreo de la torre de control",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.2.4 y CAT.GEN.MPA.105 determinan: '**El Comandante sólo iniciará el despegue si la aeronave está limpia de cualquier depósito que pudiera afectar negativamente a su rendimiento o control**', ostentando la autoridad final e indelegable.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-031",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.6 - Prohibición de Deshielo con Agua Caliente Pura sin Fluido Posterior",
+    "stem": "¿Por qué está terminantemente prohibido utilizar agua caliente pura como único método de deshielo si la temperatura exterior es inferior a $0^\\circ\text{C}$?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Porque el agua caliente se enfría casi instantáneamente al contacto con el metal helado, formando una capa gruesa y lisa de hielo transparente (Flash Freezing) extremadamente peligrosa",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Porque el agua caliente disuelve los remaches de titanio de las alas",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Porque el agua dulce altera la frecuencia de las radios VHF",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Porque la normativa aérea prohíbe el uso de agua en cualquier instalación aeroportuaria",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El agua caliente pura solo funde temporalmente; en atmósfera fría se produce **congelación relámpago (*Flash Freezing*)**, requiriendo obligatoriamente aplicar de inmediato fluido anticongelante glicolado (Paso 2) (MOA 8.2.4.6).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-032",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.6 - Detección de Hielo Transparente (Clear Ice) en Escalones y Remaches",
+    "stem": "¿Por qué el hielo transparente (Clear Ice) es el tipo de contaminación más peligroso en las inspecciones de prevuelo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Porque es transparente, adopta el color y brillo del perfil alar y resulta casi invisible a la inspección visual lejana, destruyendo severamente la sustentación alar",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Porque emite una fluorescencia verde brillante que ciega a los pilotos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Porque pesa diez veces más que el plomo metálico",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Porque calienta las alas provocando el derretimiento de los cables eléctricos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **hielo transparente (*Clear Ice*)** formado por gotas grandes o Cold Soak carece de burbujas de aire; al ser traslúcido y conformarse a la superficie, **solo puede ser detectado mediante inspección táctil cercana (Tactile Check)** (MOA 8.2.4.1).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-033",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.6 - Precaución con la Entrada de Aire del APU (APU Air Intake)",
+    "stem": "¿Qué daño grave puede originarse si se proyecta fluido de deshielo directamente dentro de la toma de aire del APU?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rotura o desbalance de los álabes del compresor del APU, ingestión de fluidos al sistema de acondicionamiento de aire y riesgo de fuego interno",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Aumento de la potencia del generador eléctrico al 200%",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Enfriamiento excesivo de los neumáticos del tren de morro",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Bloqueo de las ruedas del tren principal",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El impacto de chorros de glicol viscoso sobre la entrada del **APU** genera ingestión tóxica en cabina técnica/pasaje y puede causar **daños mecánicos destructivos en el rotor de la turbina auxiliar** (MOA 8.2.4.6 / AMM).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-034",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.5 - Tablas HOT: Granizo Menudo o Aguanieve (Snow Grains / Sleet)",
+    "stem": "En condiciones de aguanieve moderada o fuerte (Sleet), ¿cómo se comportan los tiempos de efectividad de los fluidos Tipo IV?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se reducen considerablemente debido a la gran cantidad de agua en estado mixto que satura y diluye la barrera de polímeros en pocos minutos",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Aumentan hasta 24 horas de protección ininterrumpida",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Permiten volar sin necesidad de encender los sistemas antihielo en vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El aguanieve no afecta a la duración del fluido glicolado",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **aguanieve (*Sleet*)** diluye activamente la concentración de glicol por el alto aporte hídrico; las tablas HOT fijan tiempos de protección muy reducidos (típicamente **10 a 25 minutos**) (MOA 8.2.4.5).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-035",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.6 - Procedimiento de Rociado en las Alas: Sentido de Aplicación",
+    "stem": "¿Cuál es el sentido de aplicación del fluido deshelante en las alas según las buenas prácticas del MOA 8.2.4.6 y SAE?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desde los puntos más altos hacia los puntos más bajos del ala, y desde los bordes de ataque hacia los bordes de salida en tramos longitudinales solapados",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Desde las puntas alares hacia la raíz en círculos concéntricos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "De abajo hacia arriba lanzando el chorro contra el intradós alar exclusivamente",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En chorro discontinuo aleatorio sobre cualquier zona al azar",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El barrido sistemático de las alas se ejecuta **desde el encastre hacia las puntas, desde las zonas más altas hacia las más bajas y de borde de ataque a salida**, arrastrando la nieve hacia atrás y fuera del perfil (MOA 8.2.4.6 / SAE ARP 4737).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-036",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.3 - Ensayos de Capacidad de Desprendimiento Aerodinámico (Aerodynamic Acceptance Test)",
+    "stem": "¿Qué certifica el ensayo de aceptación aerodinámica (SAE AMS 1424/1428 Aerodynamic Acceptance Test) para un fluido de deshielo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Certifica que el fluido se desprende completamente de las superficies alares durante la aceleración en el despegue sin degradar el margen de sustentación ni aumentar la velocidad de pérdida del avión",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Que el fluido puede utilizarse como combustible de emergencia para los motores",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Que el fluido es biodegradable y comestible para la fauna del aeropuerto",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Que el fluido no produce ruido al deslizarse por las alas",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los ensayos en túnel aerodinámico certifican que el fluido pseudoplástico adelgaza su capa límite por fricción cortante y **se desprende al 100% al alcanzar $V_R$, dejando el ala limpia para el ascenso** (SAE / MOA 8.2.4.3).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-037",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.6 - Limpieza de los Limpiaparabrisas y Parabrisas de Cabina",
+    "stem": "Si los parabrisas de cabina presentan acumulación de escarcha o nieve, ¿cómo deben limpiarse de forma segura?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mediante la calefacción eléctrica interna de los parabrisas (Windshield Heat), utilizando rasquetas de goma blanda o agua tibia con alcohol isopropílico, nunca con fluidos espesados Tipo II/IV",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Rociando fluido Tipo IV caliente a presión sobre los cristales",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Golpeando el parabrisas con una barra metálica para romper el hielo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Vertiendo combustible Jet A-1 sobre los limpiaparabrisas encendidos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los fluidos espesados (Tipo II/IV) dejan una película opaca en los cristales que arruina la visibilidad; **el parabrisas se limpia con calefacción eléctrica (WSHLD Heat) y alcohol/rasquetas blandas homologadas** (MOA 8.2.4.6 / SOPM).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-038",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.1 - Lluvia Engelante Fuerte (Heavy Freezing Rain) y Límites de Operación",
+    "stem": "¿Cuál es la regla operacional imperativa ante condiciones meteorológicas de lluvia engelante fuerte (Heavy FZRA) en el aeródromo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Está terminantemente prohibido el despegue y las operaciones de vuelo, ya que ningún fluido existente en el mundo puede proteger la aeronave ante esa tasa de engelamiento",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se autoriza el despegue si se realiza con empuje máximo de despegue",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se permite volar si se encienden todas las luces exteriores del avión",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se requiere aplicar tres capas de fluido Tipo I en lugar de una",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "**Límite absoluto de seguridad**: La **Lluvia Engelante Fuerte (Heavy FZRA / FZDZ severo)** supera la capacidad de diseño de cualquier fluido y sistema de deshielo; **el despegue está formalmente prohibido** por normativa internacional (MOA 8.2.4.1 / OACI).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-039",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.6 - Inspección de las Superficies Inferiores del Fuselaje y Compuertas del Tren",
+    "stem": "¿Por qué deben inspeccionarse los pozos y compuertas del tren de aterrizaje tras rodar por pistas con nieve derretida (Slush)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Porque la nieve y el agua proyectadas por las ruedas pueden acumularse en los pozos del tren y congelarse al subir a niveles altos, impidiendo el bloqueo o posterior extensión del tren",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Para comprobar si se ha manchado la pintura blanca del fuselaje",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Para enfriar los amortiguadores hidráulicos de aterrizaje",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Porque la nieve en los pozos aumenta la velocidad de crucero en 20 nudos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El rodaje sobre nieve húmeda o aguanieve (*Slush*) proyecta contaminantes en los alojamientos del tren que se congelan tras la retracción, **pudiendo bloquear los sensores de proximidad o trabar la extensión del tren de aterrizaje** (SOPM / MOA 8.2.4.6).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-040",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.3 - Almacenamiento y Control de Calidad de los Fluidos de Deshielo",
+    "stem": "¿Qué controles periódicos de laboratorio se realizan sobre los tanques de almacenamiento de fluidos según MOA 8.2.4.3 y DEVA Checklist?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Control del índice de refracción (concentración de glicol), medición de pH y viscosidad para asegurar que los polímeros espesantes no se han degradado por cizallamiento térmico o mecánico",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Comprobación del sabor del fluido por los operarios de la rampa",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Medición del volumen de combustible residual mezclado con el glicol",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Control del color mediante una carta de pinturas al óleo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los fluidos espesados pueden degradarse si se someten a bombeos violentos o sobrecalentamiento; la auditoría **DEVA / R-MGNT-06.037** exige **controles periódicos de refractometría (Brix), pH y viscosidad Brookfield** (MOA 8.2.4.3).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-041",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.6 - Protocolo de Rodaje con Flaps tras Deshielo en Pistas Contaminadas",
+    "stem": "En pistas contaminadas con nieve o barro, ¿cuándo deben extenderse los flaps de despegue según el SOPM de Embraer?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mantener Flaps UP durante el rodaje y extenderlos a la configuración de despegue justo antes de ingresar en la pista activa (Before Takeoff checklist), minimizando la salpicadura de nieve",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Extender flaps al abandonar la puerta de embarque y mantenerlos abajo todo el rodaje",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Despegar con Flaps 0° sin importar el cálculo de performance ePerf",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Extender flaps únicamente después de que el avión esté en el aire",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para evitar que las ruedas proyecten nieve húmeda y hielo sobre los flaps extendidos durante el rodaje, el procedimiento de pistas contaminadas estipula **mantener Flaps UP durante el rodaje y extenderlos en el punto de espera de la pista** (SOPM / MOA 8.2.4.6).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-042",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.6 - Detección de Hielo en la Entrada de Aire de los Motores antes del Arranque",
+    "stem": "Si antes de la puesta en marcha se observa acumulación de nieve o hielo en el cono frontal (Spinner) o álabes de entrada del motor, ¿qué acción es obligatoria?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Eliminar manualmente o con aire caliente/fluido Tipo I todo el hielo y verificar que el rotor gira libremente a mano antes de autorizar el encendido de turbinas",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Arrancar el motor a potencia máxima para que el calor queme el hielo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Encender el arrancador eléctrico repetidamente para romper los bloques de hielo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Ignorar el hielo asumiendo que los álabes de titanio lo trituran sin problemas",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El arranque con hielo en el rotor/spinner provoca **ingestión destructiva de bloques de hielo, vibraciones críticas del eje N1/N2, apagado de llama (Flameout) o daños por FOD en álabes**; el rotor debe estar 100% limpio y libre antes del arranque (AOM / MOA 8.2.4.6).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-043",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.5 - Variación del HOT según la Intensidad de la Nevazón (Light vs Moderate vs Heavy Snow)",
+    "stem": "¿Cómo influye la intensidad de la nevada en el tiempo de efectividad (HOT) para un fluido Tipo IV al 100%?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bajo nieve ligera (Light Snow) el HOT es prolongado (~1 a 2 horas); bajo nieve moderada se reduce (~30-60 min); y bajo nieve fuerte (Heavy Snow) no existe HOT garantizado requiriendo despegue inmediato tras tratamiento",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "La intensidad de la nevada no modifica en ningún minuto la duración del fluido",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Bajo nieve fuerte el tiempo de efectividad dura más porque la nieve enfría el líquido",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Las tablas fijan un tiempo plano de 10 minutos para cualquier tipo de nevada",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "A mayor tasa de precipitación de nieve, más rápido se satura la matriz de glicol: las tablas HOT desglosan los tiempos para **Nieve Ligera ($HOT \u0007pprox 60-120\text{ min}$)**, **Nieve Moderada ($HOT \u0007pprox 30-50\text{ min}$)** y advierten de la **pérdida casi inmediata de protección bajo Nieve Fuerte (*Heavy Snow*)** (MOA 8.2.4.5).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-044",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.6 - Comunicación entre la Cabina Técnica y el Vehículo de Deshielo por Radio",
+    "stem": "¿Qué fraseología estándar en inglés utiliza el Comandante para solicitar y coordinar el deshielo en plataformas internacionales?",
+    "options": [
+      {
+        "id": "A",
+        "text": "'Request De-icing / Anti-icing, Two-step method, Type I on step 1 and Type IV 100% on step 2, aircraft configured (Packs OFF, Brakes set, Flaps UP)'",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "'Please wash the wings with hot shampoo and dry with towels'",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "'Start spraying whatever liquid you have available as fast as possible'",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "'Turn on the heating of the airport terminal'",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La coordinación internacional OACI estandariza la fraseología de deshielo: **solicitud de método (1-step / 2-step), tipos de fluido deseados, confirmación de aeronave configurada (Packs OFF, Flaps UP, Brakes ON)** y recepción formal del Anti-icing Code (MOA 8.2.4.6).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-045",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.6 - Tratamiento Antihielo en Escalas Cortas (Overnight vs Transit De-icing)",
+    "stem": "¿Qué diferencia de procedimiento rige para el tratamiento de una aeronave que pernocta en rampa bajo helada frente a una escala de 30 minutos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En pernocta se puede aplicar Tipo IV como prevención preventiva pasiva antes de la noche; en escala corta se realiza limpieza activa previa a la salida para asegurar el despegue dentro del HOT",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En pernocta se encienden los motores toda la noche a ralentí para mantener el calor",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En escala corta está prohibido utilizar fluidos antihielo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No existe ninguna diferencia aplicándose siempre agua helada",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En pernocta (*Overnight*), la aplicación de **Tipo IV al 100% previene la adherencia de escarcha nocturna**, facilitando la salida matinal; en tránsito (*Transit*), el tratamiento se sincroniza con el **cálculo exacto del HOT hasta el despegue** (MOA 8.2.4.6).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-046",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.3 - Identificación Visual por Color de los Fluidos de Deshielo",
+    "stem": "¿Por qué cada tipo de fluido SAE dispone de un colorante normalizado obligatorio?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Para que la tripulación y el personal de rampa puedan verificar visualmente de forma instantánea e inequívoca qué tipo de fluido se está aplicando en cada paso",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Para que las alas adquieran los colores de la bandera del país de fabricación",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Para comprobar el nivel de acidez del líquido al mezclarse con la lluvia",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Porque los colorantes aumentan la temperatura del fluido en 10 grados",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El código de colores normalizado SAE (**Tipo I = Naranja/Rosa, Tipo II = Amarillo pajizo, Tipo III = Verde amarillento, Tipo IV = Verde esmeralda**) permite el **control visual inmediato del producto suministrado** para evitar confusiones operacionales (MOA 8.2.4.3).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-047",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.6 - Detección de Fugas de Fluido de Deshielo en el Interior de la Cabina",
+    "stem": "Si tras el deshielo se percibe olor dulce a glicol o neblina en el aire acondicionado al encender los Packs, ¿qué procede?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apagar inmediatamente los Packs de aire, seleccionar ventilación de aire fresco exterior, verificar la ausencia de fluido en las tomas y notificar a Mantenimiento",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Encender velas aromáticas para disimular el olor a glicol",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Subir la temperatura de la cabina a 35°C para que el olor desaparezca",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Continuar el despegue asumiendo que el glicol es un ambientador natural",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El olor dulce característico del glicol en cabina delata **contaminación en las tomas de sangrado (*Bleed Air*)**; exige apagar Packs, ventilar la cabina e inspeccionar las tomas de los motores/APU antes de iniciar el vuelo (SOPM / MOA 8.2.4.6).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-048",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.6 - Verificación de la Movilidad de los Mandos de Vuelo tras el Deshielo (Flight Controls Check)",
+    "stem": "¿Qué comprobación de mandos debe realizar la tripulación técnica en cabina tras completar el deshielo y antes del despegue?",
+    "options": [
+      {
+        "id": "A",
+        "text": "La comprobación completa de libre movimiento y respuesta correcta de timones, alerones y elevadores (Full Flight Controls Check) a topes mecánicos",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mover el timón de dirección 1 centímetro a la izquierda únicamente",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Desconectar los actuadores hidráulicos para que los mandos queden sueltos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No se comprueban los mandos para evitar que se desprenda el fluido antihielo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Antes de despegar tras un tratamiento de deshielo, ambos pilotos verifican el **recorrido libre y completo a topes de todas las superficies de control (Aileron, Elevator, Rudder)** en la pantalla sinóptica de controles de vuelo para descartar bloqueos mecánicos por hielo (SOPM / MOA 8.2.4.6).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-049",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4.6 - Registro de la Operación de Deshielo en el Libro Técnico de Vuelo (ATL)",
+    "stem": "¿Qué anotación reglamentaria debe realizar la tripulación en el ATL tras una operación de deshielo según el MOA 8.1.11 y 8.2.4?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anotar en la casilla correspondiente del ATL el tipo de fluido utilizado, concentración, hora de inicio del tratamiento y confirmación de inspección satisfactoria",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Pegar una fotografía del camión de deshielo en la contraportada",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Anotar la temperatura del agua del mar en las playas cercanas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No se realiza ninguna anotación en el libro técnico si el vuelo despegó a tiempo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.1.11.3 y 8.2.4 exigen dejar constancia fehaciente en el **ATL (Technical Log)** de los datos del deshielo: **Fluido (Tipo/Nombre), concentración (%), hora de aplicación (UTC) y firma de conformidad**.",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-050",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4 - Filosofía Operacional de Seguridad en Condiciones de Hielo en Tierra",
+    "stem": "En conclusión, ante cualquier duda sobre la efectividad del fluido o la presencia de hielo en superficies críticas antes del despegue, ¿cuál es la única decisión aceptable?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Detener la salida, no despegar bajo ninguna circunstancia y solicitar una nueva inspección directa o un nuevo ciclo completo de deshielo y antihielo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Despegar a gran velocidad y esperar a ver si el hielo se desprende en el ascenso",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Ignorar la duda si el controlador aéreo autoriza el despegue inmediato",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Delegar la decisión en el criterio del pasajero más experimentado de la cabina",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El principio rector de Binter y EASA en operaciones invernales es taxativo: **Ante la menor duda sobre la limpieza de las superficies o la vigencia del HOT, la tripulación debe regresar y realizar un nuevo tratamiento de deshielo/antihielo** (MOA 1.4 / 8.2.4 / CAC).",
+      "references": [
+        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  }
+]
