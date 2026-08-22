@@ -22,6 +22,13 @@ export interface QuestionMetadata {
   tags?: string[];
 }
 
+export interface DeletedQuestion {
+  id: string;
+  question: Question;
+  deletedAt: number;
+  reason?: string;
+}
+
 export interface Question {
   id: string;
   subject_id: string;
@@ -35,6 +42,7 @@ export interface Question {
   _subtopic?: string;
   isCustom?: boolean;
 }
+
 
 export type ExamMode = 'practice' | 'simulation' | 'smart_review';
 export type ExamSelectionStrategy = 'random' | 'unseen' | 'most_failed' | 'flagged';

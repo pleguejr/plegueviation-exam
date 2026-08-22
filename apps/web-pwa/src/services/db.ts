@@ -1,10 +1,11 @@
 import Dexie, { Table } from 'dexie';
-import { QuestionStats, ExamSession, Question } from '../types';
+import { QuestionStats, ExamSession, Question, DeletedQuestion } from '../types';
 
 export class PlegueviationDB extends Dexie {
   questionStats!: Table<QuestionStats, string>;
   examSessions!: Table<ExamSession, string>;
   customQuestions!: Table<Question, string>;
+  deletedQuestions!: Table<DeletedQuestion, string>;
 
   constructor() {
     super('PlegueviationExamDB');
@@ -13,8 +14,12 @@ export class PlegueviationDB extends Dexie {
       examSessions: 'sessionId, startTime, isCompleted',
       customQuestions: 'id, subject_id, _category, _subtopic'
     });
+    this.version(2).stores({
+      deletedQuestions: 'id, deletedAt, [deletedAt+id]'
+    });
   }
 }
+
 
 export const db = new PlegueviationDB();
 
@@ -142,13 +147,80 @@ export async function getExamHistory(limit: number = 20): Promise<ExamSession[]>
 }
 
 /**
- * Exporta un backup completo de todo el progreso, sesiones y preguntas custom para Drive.
+ * Guarda una pregunta en la lista de eliminadas para que no vuelva a aparecer en exámenes.
+ */
+export async function deleteQuestion(question: Question, reason?: string): Promise<void> {
+  try {
+    const deletedRecord: DeletedQuestion = {
+      id: question.id,
+      question,
+      deletedAt: Date.now(),
+      reason
+    };
+    await db.deletedQuestions.put(deletedRecord);
+    // Si era una pregunta personalizada, eliminarla de customQuestions
+    await db.customQuestions.delete(question.id);
+  } catch (err) {
+    console.warn('Error deleting question:', question.id, err);
+  }
+}
+
+/**
+ * Restaura una pregunta previamente eliminada devolviéndola al banco activo.
+ */
+export async function restoreQuestion(questionId: string): Promise<boolean> {
+  try {
+    const record = await db.deletedQuestions.get(questionId);
+    if (!record) return false;
+
+    await db.deletedQuestions.delete(questionId);
+
+    // Si era personalizada, volver a guardarla en customQuestions
+    if (record.question.isCustom) {
+      await db.customQuestions.put(record.question);
+    }
+    return true;
+  } catch (err) {
+    console.warn('Error restoring question:', questionId, err);
+    return false;
+  }
+}
+
+/**
+ * Obtiene todas las preguntas eliminadas ordenadas por fecha de eliminación descendente.
+ */
+export async function getDeletedQuestions(): Promise<DeletedQuestion[]> {
+  try {
+    const all = await db.deletedQuestions.toArray();
+    return all.sort((a, b) => b.deletedAt - a.deletedAt);
+  } catch (err) {
+    console.warn('Error fetching deleted questions:', err);
+    return [];
+  }
+}
+
+/**
+ * Obtiene el conjunto (Set) de IDs de preguntas eliminadas para filtrado rápido.
+ */
+export async function getDeletedQuestionIds(): Promise<Set<string>> {
+  try {
+    const all = await db.deletedQuestions.toArray();
+    return new Set(all.map((d) => d.id));
+  } catch (err) {
+    console.warn('Error fetching deleted question ids:', err);
+    return new Set();
+  }
+}
+
+/**
+ * Exporta un backup completo de todo el progreso, sesiones, preguntas custom y eliminadas para Drive.
  */
 export async function exportFullBackup(): Promise<string> {
-  const [stats, sessions, custom] = await Promise.all([
+  const [stats, sessions, custom, deleted] = await Promise.all([
     db.questionStats.toArray(),
     db.examSessions.toArray(),
-    db.customQuestions.toArray()
+    db.customQuestions.toArray(),
+    db.deletedQuestions.toArray()
   ]);
 
   const backupData = {
@@ -157,7 +229,8 @@ export async function exportFullBackup(): Promise<string> {
     exportedAt: new Date().toISOString(),
     questionStats: stats,
     examSessions: sessions,
-    customQuestions: custom
+    customQuestions: custom,
+    deletedQuestions: deleted
   };
 
   return JSON.stringify(backupData, null, 2);
@@ -166,12 +239,13 @@ export async function exportFullBackup(): Promise<string> {
 /**
  * Restaura un backup importado desde archivo JSON de Google Drive o local.
  */
-export async function restoreFullBackup(jsonContent: string): Promise<{ statsCount: number; sessionsCount: number; customCount: number }> {
+export async function restoreFullBackup(jsonContent: string): Promise<{ statsCount: number; sessionsCount: number; customCount: number; deletedCount: number }> {
   const data = JSON.parse(jsonContent);
 
   let statsCount = 0;
   let sessionsCount = 0;
   let customCount = 0;
+  let deletedCount = 0;
 
   if (Array.isArray(data.questionStats)) {
     for (const s of data.questionStats) {
@@ -194,5 +268,13 @@ export async function restoreFullBackup(jsonContent: string): Promise<{ statsCou
     }
   }
 
-  return { statsCount, sessionsCount, customCount };
+  if (Array.isArray(data.deletedQuestions)) {
+    for (const d of data.deletedQuestions) {
+      await db.deletedQuestions.put(d);
+      deletedCount++;
+    }
+  }
+
+  return { statsCount, sessionsCount, customCount, deletedCount };
 }
+
