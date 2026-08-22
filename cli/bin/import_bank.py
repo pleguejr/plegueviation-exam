@@ -15,7 +15,30 @@ import json
 import re
 from pathlib import Path
 from typing import Dict, List, Any
-import jsonschema
+try:
+    import jsonschema
+    HAS_JSONSCHEMA = True
+except ImportError:
+    HAS_JSONSCHEMA = False
+
+def validate_question_structure(item: Dict[str, Any]) -> List[str]:
+    """Validación nativa de estructura sin dependencias externas."""
+    errors = []
+    required_fields = ["id", "subject_id", "learning_objective", "stem", "options", "explanation"]
+    for field in required_fields:
+        if field not in item:
+            errors.append(f"Campo obligatorio faltante '{field}'")
+
+    options = item.get("options", [])
+    if not isinstance(options, list) or len(options) < 2:
+        errors.append("Debe contener una lista de al menos 2 opciones")
+    else:
+        correct_count = sum(1 for opt in options if opt.get("is_correct") is True)
+        if correct_count != 1:
+            errors.append(f"Debe tener exactamente 1 opción correcta (encontradas {correct_count})")
+
+    return errors
+
 
 # Mapeo estructurado de subject_id hacia directorios destino
 SUBJECT_DIR_MAP = {
@@ -143,30 +166,39 @@ def import_questions(raw_json_str: str, default_subject: str = None) -> int:
     validation_errors = 0
 
     for idx, item in enumerate(items, start=1):
-        q_id = item.get("id", f"Item #{idx}")
-        # Validar con schema
-        try:
-            jsonschema.validate(instance=item, schema=schema)
-        except jsonschema.ValidationError as ve:
-            print(f"[ERROR Validación] Pregunta '{q_id}': {ve.message}", file=sys.stderr)
-            validation_errors += 1
-            continue
+        q_id = item.get("id", f"index_{idx}")
+        # Validar estructura con schema o función nativa
+        if HAS_JSONSCHEMA:
+            try:
+                jsonschema.validate(instance=item, schema=schema)
+            except jsonschema.ValidationError as ve:
+                print(f"[ERROR Validación] Pregunta '{q_id}': {ve.message}", file=sys.stderr)
+                validation_errors += 1
+                continue
+        else:
+            struct_errors = validate_question_structure(item)
+            if struct_errors:
+                for err_msg in struct_errors:
+                    print(f"[ERROR Validación] Pregunta '{q_id}': {err_msg}", file=sys.stderr)
+                validation_errors += len(struct_errors)
+                continue
 
         # Validar exactamente 1 opción correcta
-        correct_count = sum(1 for opt in item["options"] if opt.get("is_correct") is True)
+        options_list = item.get("options", [])
+        correct_count = sum(1 for opt in options_list if isinstance(opt, dict) and opt.get("is_correct") is True)
         if correct_count != 1:
             print(f"[ERROR Opciones] Pregunta '{q_id}': Tiene {correct_count} opciones correctas marcadas (debe tener 1).", file=sys.stderr)
             validation_errors += 1
             continue
 
         # Verificar ID duplicado o previamente eliminado
-        if item["id"] in existing_ids:
-            print(f"[ERROR Duplicado] El ID '{item['id']}' ya existe en los bancos.", file=sys.stderr)
+        if q_id in existing_ids:
+            print(f"[ERROR Duplicado] El ID '{q_id}' ya existe en los bancos.", file=sys.stderr)
             validation_errors += 1
             continue
 
-        if item["id"] in deleted_ids:
-            print(f"[AVISO Eliminado] El ID '{item['id']}' coincide con una pregunta previamente eliminada del banco.", file=sys.stderr)
+        if q_id in deleted_ids:
+            print(f"[AVISO Eliminado] El ID '{q_id}' coincide con una pregunta previamente eliminada del banco.", file=sys.stderr)
 
 
         # Determinar directorio destino

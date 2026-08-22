@@ -12,6 +12,22 @@ This skill provides verified, exact specifications and procedures for the **Tecn
 
 ---
 
+## 0. Official Document Library Paths
+
+All questions and technical procedures for the Tecnam fleet must be directly verified against the official documents in:
+
+- **Directorio de Manuales Tecnam**:
+  `C:\Users\plegu\My Drive\My drive\ATPL(A)\type ratings\Tecnam\`
+- **Archivos Clave**:
+  * `AFM P2010 TDI - Ed.2 Rev.13.pdf` (Aircraft Flight Manual Oficial)
+  * `G1000 NXi.pdf` (Manual de Aviónica Garmin G1000 NXi)
+  * `Tecnam_P2010tdi_Transition.pdf` (Manual de Transición y Sistemas)
+  * `procedimientos_tecnam_p2010tdi.pdf` (Listas de Chequeo y Procedimientos)
+  * `tecnam_p2010tdi_briefing_specs.pdf` (Especificaciones Técnicas de Briefing)
+  * `Guía_de_Velocidades_de_Operación tecnam 2010tdi.png`
+
+---
+
 ## 1. Master Airspeed Limitations (AFM Section 2)
 
 | Speed Symbol | Description | Standard (MTOW 1160 kg) | MOD2010/207 (1200 kg) | MOD2010/269 (1220 kg) | Anemometer Color |

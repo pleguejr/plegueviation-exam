@@ -1,17 +1,19 @@
-const CACHE_NAME = 'plegueviation-cache-v2';
+const CACHE_NAME = 'plegueviation-cache-v2.3';
 const ASSETS_TO_CACHE = [
-  '/',
-  '/index.html',
-  '/manifest.webmanifest',
-  '/favicon.svg',
-  '/banks/manifest.json',
-  '/banks/all_questions.json'
+  './',
+  './index.html',
+  './manifest.webmanifest',
+  './favicon.svg',
+  './banks/manifest.json',
+  './banks/all_questions.json'
 ];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(ASSETS_TO_CACHE);
+      return cache.addAll(ASSETS_TO_CACHE).catch((err) => {
+        console.warn('SW pre-cache warning:', err);
+      });
     }).then(() => self.skipWaiting())
   );
 });

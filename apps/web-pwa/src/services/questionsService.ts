@@ -18,7 +18,9 @@ export async function loadAllQuestions(forceRefresh = false): Promise<Question[]
 
   let bundled: Question[] = [];
   try {
-    const res = await fetch(`/banks/all_questions.json?t=${Date.now()}`);
+    const baseUrl = import.meta.env.BASE_URL || './';
+    const cleanBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+    const res = await fetch(`${cleanBase}banks/all_questions.json?t=${Date.now()}`);
     if (res.ok) {
       bundled = await res.json();
     }
@@ -57,7 +59,9 @@ export async function loadAllQuestions(forceRefresh = false): Promise<Question[]
 export async function loadManifest(forceRefresh = false): Promise<BankManifest> {
   if (!forceRefresh && cachedManifest) return cachedManifest;
   try {
-    const res = await fetch(`/banks/manifest.json?t=${Date.now()}`);
+    const baseUrl = import.meta.env.BASE_URL || './';
+    const cleanBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+    const res = await fetch(`${cleanBase}banks/manifest.json?t=${Date.now()}`);
     if (res.ok) {
       cachedManifest = await res.json();
       return cachedManifest!;

@@ -11,6 +11,21 @@ This skill provides exact, verified performance data, limitations, operational p
 
 ---
 
+## 0. Official Document Library Paths
+
+All questions and technical procedures for the Cessna 172N fleet must be directly verified against the official documents in:
+
+- **Directorio de Manuales Cessna 172**:
+  `C:\Users\plegu\My Drive\My drive\ATPL(A)\type ratings\cessna 172\`
+- **Archivos Clave**:
+  * `Cessna-172N-POH-1978.pdf` (Pilot's Operating Handbook Oficial 1978)
+  * `C172N 1980.pdf` (Pilot's Operating Handbook Oficial 1980)
+  * `Analisis_maniobras_C172N.pdf` (Análisis Operativo y Maniobras de Vuelo)
+  * `C172-Checklist-9.27.16.pdf` (Checklists Operativas de Escuela)
+  * `C-172N_mini.pdf` (Guía Rápida de Cabina)
+
+---
+
 ## 1. Master Airspeed Limitations (POH Section 2)
 
 | Speed Symbol | Description | KIAS | KCAS | Instrument Marking |

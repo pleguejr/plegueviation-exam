@@ -8,7 +8,30 @@ description: >-
 
 # Binter Canarias Operations & Emergency Procedures Auditor
 
-This skill enforces strict adherence to Binter Canarias operational manuals, specifically the **MOB (Manual de Operaciones – Parte B: Avión E195-E2 - Ed.06 RN21/RN22)** and **MOA (Manual de Operaciones – Parte A: Generalidades y Despacho - Ed.06 RN14/RN15)**.
+This skill enforces strict adherence to Binter Canarias operational manuals, grounded directly in the user's official digital library.
+
+---
+
+## 0. Official Document Library Paths
+
+Whenever consulting or verifying Binter operations, use the following primary sources:
+
+- **MOA (Manual de Operaciones Parte A)**:
+  `C:\Users\plegu\My Drive\My drive\BINTER\BA tripulantes EMB\Manuales del operador\MOA BinterCanarias ED06 RN25 RT00.pdf` (y subcarpeta `MOA_Por_Capitulos`)
+- **MOB (Manual de Operaciones Parte B - E195-E2)**:
+  `C:\Users\plegu\My Drive\My drive\BINTER\BA tripulantes EMB\Manuales del operador\MOB BinterCanarias ED06 RN25 RT00.pdf` (y subcarpeta `MOB_Por_Capitulos`)
+- **MEL (Minimum Equipment List - E195-E2)**:
+  `C:\Users\plegu\My Drive\My drive\BINTER\BA tripulantes EMB\Manuales del operador\MEL EMB BA RN24.pdf`
+- **AOM (Aircraft Operating Manual - Embraer E2)**:
+  `C:\Users\plegu\My Drive\My drive\BINTER\BA tripulantes EMB\Manuales fabricante Embraer\AOM-5875-174-REV11-FULL 11.2.pdf`
+- **SOPM (Standard Operating Procedures Manual - Embraer E2)**:
+  `C:\Users\plegu\My Drive\My drive\BINTER\BA tripulantes EMB\Manuales fabricante Embraer\SOPM-1755-200-REV14-FULL_1760451613050.PDF`
+- **QRH (Quick Reference Handbook - Embraer E2)**:
+  `C:\Users\plegu\My Drive\My drive\BINTER\BA tripulantes EMB\Manuales fabricante Embraer\QRH-6313-174-REV19-TABLET.PDF`
+- **DDPM / CDL (Dispatch Deviations Procedures Manual)**:
+  `C:\Users\plegu\My Drive\My drive\BINTER\BA tripulantes EMB\Manuales fabricante Embraer\DDPM-6130-100-REV TR7.1.PDF`
+- **FMS Manual (Primus Epic Load 9.0)**:
+  `C:\Users\plegu\My Drive\My drive\BINTER\BA tripulantes EMB\Manuales fabricante Embraer\FMS_Manual_Epic_LOAD_9.0.pdf`
 
 ---
 

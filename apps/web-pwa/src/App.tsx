@@ -88,7 +88,9 @@ export function App() {
   useEffect(() => {
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js').catch((err) => {
+        const baseUrl = import.meta.env.BASE_URL || './';
+        const swUrl = `${baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`}sw.js`;
+        navigator.serviceWorker.register(swUrl).catch((err) => {
           console.warn('Service Worker registration error:', err);
         });
       });
