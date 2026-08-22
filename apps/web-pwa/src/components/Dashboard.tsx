@@ -343,7 +343,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
       </div>
 
       {/* 3. AviationExam Circular Hub Navigation Grid (1:1 Réplica) */}
-      <div className="bg-[#0e1933] border border-sky-500/20 rounded-3xl p-8 shadow-xl space-y-6">
+      <div className="hub-control-card bg-[#0e1933] border border-sky-500/20 rounded-3xl p-8 shadow-xl space-y-6">
         
         <div className="flex items-center justify-between pb-2 border-b border-slate-800">
           <div className="flex items-center gap-2">
@@ -524,7 +524,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
             return (
               <div 
                 key={cat.id}
-                className="bg-[#0e1933] border border-sky-500/20 rounded-2xl p-5 flex flex-col justify-between shadow-lg hover:border-sky-500/40 transition-all group"
+                className="category-overview-card bg-[#0e1933] border border-sky-500/20 rounded-2xl p-5 flex flex-col justify-between shadow-lg hover:border-sky-500/40 transition-all group"
               >
                 <div className="space-y-3">
                   <div className="flex items-start justify-between gap-3">
