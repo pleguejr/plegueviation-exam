@@ -333,15 +333,15 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
           {/* Question Header Bar */}
           <div className="exam-header-bar bg-[#0e1933] border border-sky-500/20 rounded-2xl p-4 shadow-lg flex flex-wrap items-center justify-between gap-3">
             
-            {/* Question Counter & Pin/Flag & Delete */}
-            <div className="flex items-center gap-2.5">
+            {/* Question Counter & Pin/Flag & Review & Delete */}
+            <div className="flex flex-wrap items-center gap-2 sm:gap-2.5">
               <span className="text-base font-extrabold text-white">
                 Q {currentIndex + 1} <span className="text-slate-400 font-normal text-sm">/ {session.questions.length}</span>
               </span>
 
               <button
                 onClick={handleToggleFlag}
-                className={`p-1.5 rounded-lg border transition-colors ${
+                className={`p-2 rounded-xl border transition-colors ${
                   currentAnswer?.isFlagged
                     ? 'bg-amber-500/20 border-amber-500 text-amber-400'
                     : 'bg-slate-800/80 border-slate-700 text-slate-400 hover:text-white'
@@ -353,18 +353,20 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
 
               <button
                 onClick={() => setIsReviewModalOpen(true)}
-                className="p-1.5 rounded-lg border bg-slate-800/80 border-slate-700 text-slate-400 hover:text-amber-300 hover:border-amber-500/50 hover:bg-amber-950/40 transition-colors"
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/30 text-xs font-bold transition-all active:scale-95"
                 title="Reportar pregunta para revisión técnica / auditoría"
               >
-                <Search className="w-4 h-4" />
+                <Search className="w-3.5 h-3.5" />
+                <span>Revisión</span>
               </button>
 
               <button
                 onClick={() => setIsDeleteModalOpen(true)}
-                className="p-1.5 rounded-lg border bg-slate-800/80 border-slate-700 text-slate-400 hover:text-rose-400 hover:border-rose-500/50 hover:bg-rose-950/40 transition-colors"
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-rose-950/60 hover:bg-rose-900 text-rose-300 border border-rose-500/40 text-xs font-bold transition-all active:scale-95"
                 title="Eliminar del banco (no volverá a aparecer en ningún examen)"
               >
-                <Trash2 className="w-4 h-4" />
+                <Trash2 className="w-3.5 h-3.5" />
+                <span>Eliminar</span>
               </button>
             </div>
 

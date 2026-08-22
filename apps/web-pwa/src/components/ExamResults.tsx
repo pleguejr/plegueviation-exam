@@ -13,12 +13,14 @@ import {
   ChevronUp,
   Sparkles,
   Flame,
-  Trash2
+  Trash2,
+  Search
 } from 'lucide-react';
 import { SpeedSummaryTable } from './SpeedSummaryTable';
 import { PlanningMinimaTable } from './PlanningMinimaTable';
 import { FormattedText } from './FormattedText';
 import { DeleteConfirmModal } from './DeleteConfirmModal';
+import { ReviewRequestModal } from './ReviewRequestModal';
 import { deleteQuestionFromBank } from '../services/questionsService';
 import { ExamSession, Question, Option } from '../types';
 import { getSpeedSummaryTableType, getPlanningMinimaTableType } from '../utils/aircraftRules';
@@ -40,7 +42,9 @@ export const ExamResults: React.FC<ExamResultsProps> = ({
   const [expandedQuestions, setExpandedQuestions] = useState<Record<string, boolean>>({});
   const [deletedIds, setDeletedIds] = useState<Set<string>>(new Set());
   const [questionToDelete, setQuestionToDelete] = useState<Question | null>(null);
+  const [questionToReview, setQuestionToReview] = useState<Question | null>(null);
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
+  const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
 
 
   const score = session.score || {
@@ -283,17 +287,33 @@ export const ExamResults: React.FC<ExamResultsProps> = ({
 
                   <div className="flex items-center gap-2">
                     {!deletedIds.has(q.id) && (
-                      <button
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          setQuestionToDelete(q);
-                          setIsDeleteModalOpen(true);
-                        }}
-                        className="p-1.5 rounded-lg border bg-slate-800/80 border-slate-700 text-slate-400 hover:text-rose-400 hover:border-rose-500/50 hover:bg-rose-950/40 transition-colors"
-                        title="Eliminar del banco de preguntas"
-                      >
-                        <Trash2 className="w-4 h-4" />
-                      </button>
+                      <>
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setQuestionToReview(q);
+                            setIsReviewModalOpen(true);
+                          }}
+                          className="flex items-center gap-1 px-2.5 py-1 rounded-lg border bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border-amber-500/30 text-xs font-bold transition-all active:scale-95"
+                          title="Reportar esta pregunta para revisión técnica / auditoría"
+                        >
+                          <Search className="w-3.5 h-3.5" />
+                          <span className="hidden sm:inline">Revisión</span>
+                        </button>
+
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setQuestionToDelete(q);
+                            setIsDeleteModalOpen(true);
+                          }}
+                          className="flex items-center gap-1 px-2.5 py-1 rounded-lg border bg-rose-950/60 hover:bg-rose-900 text-rose-300 border border-rose-500/40 text-xs font-bold transition-all active:scale-95"
+                          title="Eliminar del banco de preguntas"
+                        >
+                          <Trash2 className="w-3.5 h-3.5" />
+                          <span className="hidden sm:inline">Eliminar</span>
+                        </button>
+                      </>
                     )}
 
                     <button className="text-slate-400 hover:text-white p-1">
@@ -376,6 +396,16 @@ export const ExamResults: React.FC<ExamResultsProps> = ({
         onConfirm={async (q, reason) => {
           await deleteQuestionFromBank(q, reason);
           setDeletedIds((prev) => new Set([...prev, q.id]));
+        }}
+      />
+
+      {/* Modal de solicitud de revisión técnica */}
+      <ReviewRequestModal
+        isOpen={isReviewModalOpen}
+        question={questionToReview}
+        onClose={() => {
+          setIsReviewModalOpen(false);
+          setQuestionToReview(null);
         }}
       />
 

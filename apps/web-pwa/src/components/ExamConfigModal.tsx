@@ -145,12 +145,12 @@ export const ExamConfigModal: React.FC<ExamConfigModalProps> = ({
               >
                 <div className="flex items-center justify-between">
                   <span className="font-extrabold text-sm text-rose-400 flex items-center gap-1.5">
-                    <Flame className="w-4 h-4" /> Repaso Falladas
+                    <Flame className="w-4 h-4" /> Modo Revisión & Falladas
                   </span>
                   {mode === 'smart_review' && <Check className="w-4 h-4 text-rose-400" />}
                 </div>
                 <p className="mt-2 text-xs text-slate-300">
-                  Enfocado exclusivamente en tus errores y puntos débiles.
+                  Enfocado exclusivamente en tus errores, dudas y puntos débiles.
                 </p>
               </button>
 
