@@ -593,45 +593,196 @@ export const Dashboard: React.FC<DashboardProps> = ({
         </div>
       </div>
 
-      {/* Modal Mnemónicos Binter */}
+      {/* Modal Mnemónicos Oficiales & Llamadas de Emergencia Binter Canarias */}
       {showMnemonicModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in">
-          <div className="bg-[#0c1833] border border-sky-500/40 rounded-3xl w-full max-w-xl p-6 space-y-5 shadow-2xl">
-            <div className="flex items-center justify-between pb-3 border-b border-slate-800">
-              <div className="flex items-center gap-2">
-                <LifeBuoy className="w-5 h-5 text-sky-400" />
-                <h3 className="font-black text-lg text-white">Mnemónicos y Flujos Binter</h3>
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fade-in">
+          <div className="bg-[#0b162c] border border-emerald-500/40 rounded-3xl w-full max-w-3xl max-h-[90vh] flex flex-col shadow-2xl overflow-hidden">
+            
+            {/* Header */}
+            <div className="flex items-center justify-between p-5 border-b border-slate-800 bg-gradient-to-r from-[#002f59] via-[#004b87] to-[#00522c] text-white">
+              <div className="flex items-center gap-2.5">
+                <LifeBuoy className="w-5 h-5 text-emerald-400" />
+                <div>
+                  <h3 className="font-black text-lg text-white">Mnemónicos & Comunicaciones de Emergencia Binter</h3>
+                  <p className="text-[11px] text-emerald-200">Manual de Operaciones Parte A & Parte B (E195-E2 / SOPM)</p>
+                </div>
               </div>
               <button 
                 onClick={() => setShowMnemonicModal(false)}
-                className="text-xs font-bold text-slate-400 hover:text-white px-2 py-1 bg-slate-800 rounded-lg"
+                className="text-xs font-bold text-slate-300 hover:text-white px-3 py-1.5 bg-black/40 hover:bg-black/60 rounded-xl transition-all border border-slate-700"
               >
                 Cerrar ✕
               </button>
             </div>
 
-            <div className="space-y-4 text-xs">
-              <div className="p-4 rounded-xl bg-[#091224] border border-sky-500/20 space-y-1.5">
-                <span className="font-black text-sky-400 text-sm">RETSE (Gestión de Emergencias)</span>
-                <p className="text-slate-300 leading-relaxed">
-                  <strong>R</strong>evisar situación • <strong>E</strong>legir plan de acción • <strong>T</strong>iempo disponible • <strong>S</strong>eleccionar alternativa • <strong>E</strong>jecutar y comunicar.
-                </p>
+            {/* Scrollable Content */}
+            <div className="p-5 overflow-y-auto custom-scrollbar space-y-4 text-xs">
+              
+              {/* 1. SECCIÓN BRIEFINGS DE VUELO */}
+              <div className="space-y-3">
+                <h4 className="font-extrabold text-sm text-sky-400 flex items-center gap-2 border-b border-slate-800 pb-1">
+                  <PlaneTakeoff className="w-4 h-4" />
+                  <span>Briefings de Despegue & Llegada (MOB 2.0.6)</span>
+                </h4>
+
+                {/* TWIN */}
+                <div className="p-4 rounded-2xl bg-[#091224] border border-sky-500/30 space-y-1.5">
+                  <div className="flex items-center justify-between">
+                    <span className="font-black text-sky-300 text-sm">TWIN (Apertura de Briefing de Despegue y Llegada)</span>
+                    <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-500/20 text-sky-300 border border-sky-500/40">MOB 2.0.6.1 / 2.0.6.2</span>
+                  </div>
+                  <p className="text-slate-200 leading-relaxed">
+                    <strong>T (Threats / TEM)</strong>: Amenazas operacionales, orografía, pájaros, estado de pista, viento cruzado.<br />
+                    <strong>W (Weather)</strong>: METAR, TAF, viento, visibilidad, techos, cizalladura / Windshear.<br />
+                    <strong>I (Inop Items)</strong>: MEL, CDL, DDPM aplicables a la salida o llegada.<br />
+                    <strong>N (NOTAMs)</strong>: NOTAM y SNOWTAMs de salida, destino y alternativos.
+                  </p>
+                </div>
+
+                {/* RETSE */}
+                <div className="p-4 rounded-2xl bg-[#091224] border border-emerald-500/30 space-y-1.5">
+                  <div className="flex items-center justify-between">
+                    <span className="font-black text-emerald-300 text-sm">RETSE (Takeoff Briefing en MCDU & LIDO)</span>
+                    <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">MOB 2.0.6.1</span>
+                  </div>
+                  <p className="text-slate-200 leading-relaxed">
+                    <strong>R (Route)</strong>: MCDU RTE, PERF INIT, PROG, altitud de transición, nivel inicial de crucero.<br />
+                    <strong>E (Engine Start & Push Back)</strong>: Procedimiento de arranque, pushback convencional o towbarless, cruce de líneas.<br />
+                    <strong>T (Taxi)</strong>: Ruta de rodaje en carta LIDO, puntos calientes (Hot Spots), paradas intermedias.<br />
+                    <strong>S (SID)</strong>: Salida instrumental, restricciones de altitud y velocidad, radioayudas de respaldo.<br />
+                    <strong>E (EOSID / Emergency Briefing)</strong>: Fallo de motor antes/después de V1, RTO, ruta de escape en FIX INFO / PLAN.
+                  </p>
+                </div>
+
+                {/* E-DALTA */}
+                <div className="p-4 rounded-2xl bg-[#091224] border border-amber-500/30 space-y-1.5">
+                  <div className="flex items-center justify-between">
+                    <span className="font-black text-amber-300 text-sm">E-DALTA (Approach & Landing Briefing en MCDU & LIDO)</span>
+                    <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/40">MOB 2.0.6.2</span>
+                  </div>
+                  <p className="text-slate-200 leading-relaxed">
+                    <strong>E (ePerf InFlight Landing)</strong>: Performance de aterrizaje en vuelo, peso, condición de pista, margen de parada.<br />
+                    <strong>D (Descent)</strong>: Top of Descent, restricciones de altitud y velocidad, perfil vertical.<br />
+                    <strong>A (Arrival)</strong>: STAR, aproximación frustrada (Missed Approach), altitudes de seguridad (MSA / MORA).<br />
+                    <strong>L (Landing)</strong>: MCDU PERF: Flap 4 o Flap FULL, Autobrake LO/MED/HI, velocidades Vref/Vap/Vac/Vfs, MAP MIN.<br />
+                    <strong>T (Taxi)</strong>: Ruta de salida de pista prevista, calles de rodaje activas.<br />
+                    <strong>A (Apron)</strong>: Puesto de estacionamiento (Parking), guía de atraque, calzos.
+                  </p>
+                </div>
               </div>
 
-              <div className="p-4 rounded-xl bg-[#091224] border border-sky-500/20 space-y-1.5">
-                <span className="font-black text-emerald-400 text-sm">E-DALTA (Toma de Decisiones)</span>
-                <p className="text-slate-300 leading-relaxed">
-                  <strong>E</strong>xplore • <strong>D</strong>iagnose • <strong>A</strong>ssess risks • <strong>L</strong>ist options • <strong>T</strong>ake action • <strong>A</strong>ssign tasks.
-                </p>
+              {/* 2. SECCIÓN EMERGENCIAS & TOMA DE DECISIONES */}
+              <div className="space-y-3 pt-2">
+                <h4 className="font-extrabold text-sm text-rose-400 flex items-center gap-2 border-b border-slate-800 pb-1">
+                  <ShieldCheck className="w-4 h-4" />
+                  <span>Emergencias & Desvíos Técnicos (MOB 3.0 / 3.1)</span>
+                </h4>
+
+                {/* TELSI */}
+                <div className="p-4 rounded-2xl bg-[#091224] border border-rose-500/40 space-y-1.5 shadow-md">
+                  <div className="flex items-center justify-between">
+                    <span className="font-black text-rose-300 text-sm">TELSI (Briefing a Tripulación de Cabina — ¡NUNCA NITS!)</span>
+                    <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-rose-500/20 text-rose-300 border border-rose-500/40">MOB 3.1.1 / 3.1.14</span>
+                  </div>
+                  <p className="text-slate-200 leading-relaxed">
+                    <strong>T (Tipo de Emergencia)</strong>: Prevista, Imprevista o Aterrizaje Inseguro.<br />
+                    <strong>E (Estimated Time of Arrival)</strong>: Tiempo disponible hasta la toma de contacto.<br />
+                    <strong>L (Lugar de Aterrizaje)</strong>: Pista de aeródromo, Tierra fuera de campo, Agua / Amerizaje (Ditching).<br />
+                    <strong>S (Señales de Protección convenidas)</strong>: Callout por megafonía a 30 seg: <em>"PROTECCIÓN, PROTECCIÓN, PROTECCIÓN"</em>.<br />
+                    <strong>I (Instrucciones Especiales)</strong>: Evacuación prevista sí/no, preparación de cabina, uso de salidas operativas.
+                  </p>
+                </div>
+
+                {/* IMFLOCC */}
+                <div className="p-4 rounded-2xl bg-[#091224] border border-indigo-500/30 space-y-1.5">
+                  <div className="flex items-center justify-between">
+                    <span className="font-black text-indigo-300 text-sm">IMFLOCC (Toma de Decisiones en Desvíos Técnicos)</span>
+                    <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-indigo-500/20 text-indigo-300 border border-indigo-500/40">MOB 3.1.10</span>
+                  </div>
+                  <p className="text-slate-200 leading-relaxed">
+                    <strong>I (Inoperative Items / Incidents)</strong>: Naturaleza de la avería técnica o condición médica a bordo.<br />
+                    <strong>M (Meteorological Report)</strong>: METAR/TAF y condiciones meteorológicas de alternativas.<br />
+                    <strong>F (Fuel Management)</strong>: Combustible remanente sobre la alternativa vs reserva final.<br />
+                    <strong>L (Landing Performance)</strong>: Cálculo ePerf con fallos de sistemas degradados.<br />
+                    <strong>O (Options)</strong>: Aeródromos disponibles.<br />
+                    <strong>C (Choose an Option)</strong>: Prioridad: 1° Origen/Destino de línea, 2° Red Binter con mantenimiento, 3° Adecuado más cercano.<br />
+                    <strong>C (Communications)</strong>: ATC, Sobrecargo (TELSI), Megafonía Pasajeros (PA), ACARS (FREE TEXT &gt; EMR o INC___), VHF Operaciones.
+                  </p>
+                </div>
+
+                {/* MEANA */}
+                <div className="p-4 rounded-2xl bg-[#091224] border border-purple-500/30 space-y-1.5">
+                  <div className="flex items-center justify-between">
+                    <span className="font-black text-purple-300 text-sm">MEANA (Orden de Aplicación de Listas de Chequeo)</span>
+                    <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-500/20 text-purple-300 border border-purple-500/40">MOB 3.1.0</span>
+                  </div>
+                  <p className="text-slate-200 leading-relaxed">
+                    <strong>1° M (Memo Items)</strong>: Acciones de memoria inmediatas.<br />
+                    <strong>2° E (Emergency Checklist)</strong>: Listas de emergencia con recuadro rojo/gris.<br />
+                    <strong>3° A (Abnormal Checklist)</strong>: Listas anormales principales.<br />
+                    <strong>4° N (Normal Checklist)</strong>: Listas normales de la fase de vuelo.<br />
+                    <strong>5° A (Abnormal Checklist restantes)</strong>: Lectura y seguimiento de notas de sistemas degradados.
+                  </p>
+                </div>
               </div>
 
-              <div className="p-4 rounded-xl bg-[#091224] border border-sky-500/20 space-y-1.5">
-                <span className="font-black text-rose-400 text-sm">IMFLOCC (Briefing Operacional / Tripulación)</span>
-                <p className="text-slate-300 leading-relaxed">
-                  <strong>I</strong>ntention • <strong>M</strong>aintenance/MEL • <strong>F</strong>uel • <strong>L</strong>ogistics • <strong>O</strong>perations • <strong>C</strong>ommunications • <strong>C</strong>rew.
-                </p>
+              {/* 3. SECCIÓN LLAMADAS OFICIALES A TRIPULACIÓN DE CABINA */}
+              <div className="space-y-3 pt-2">
+                <h4 className="font-extrabold text-sm text-emerald-400 flex items-center gap-2 border-b border-slate-800 pb-1">
+                  <LifeBuoy className="w-4 h-4" />
+                  <span>Llamadas de Pilotos a Tripulación de Cabina en Emergencia (MOA 8.3 & MOB 3.0/3.1)</span>
+                </h4>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  
+                  <div className="p-3.5 rounded-2xl bg-black/40 border border-slate-800 space-y-1">
+                    <span className="font-bold text-sky-300 block">📉 Descenso de Emergencia</span>
+                    <p className="text-slate-300">
+                      • Por Megafonía (PA): <strong className="text-white font-mono">"DESCENSO DE EMERGENCIA, DESCENSO DE EMERGENCIA, DESCENSO DE EMERGENCIA"</strong><br />
+                      • Al nivelar seguro: <strong className="text-emerald-300 font-mono">"TRIPULACIÓN DE CABINA, DESCENSO FINALIZADO"</strong>
+                    </p>
+                  </div>
+
+                  <div className="p-3.5 rounded-2xl bg-black/40 border border-slate-800 space-y-1">
+                    <span className="font-bold text-amber-300 block">🛑 Aborto de Despegue (RTO)</span>
+                    <p className="text-slate-300">
+                      • Evaluación: <strong className="text-white font-mono">"TRIPULACIÓN DE CABINA, ESPEREN INSTRUCCIONES"</strong><br />
+                      • Situación Controlada: <strong className="text-emerald-300 font-mono">"TRIPULACIÓN DE CABINA, PERMANEZCAN SENTADOS"</strong>
+                    </p>
+                  </div>
+
+                  <div className="p-3.5 rounded-2xl bg-black/40 border border-slate-800 space-y-1">
+                    <span className="font-bold text-rose-300 block">🛡️ Aterrizaje Forzoso / Ditching</span>
+                    <p className="text-slate-300">
+                      • A 5 minutos: <strong className="text-white font-mono">"TRIPULACIÓN DE CABINA FINALIZAR PREPARACIÓN"</strong><br />
+                      • A 30 segundos: <strong className="text-rose-400 font-mono">"PROTECCIÓN, PROTECCIÓN, PROTECCIÓN"</strong> (Brace Position)
+                    </p>
+                  </div>
+
+                  <div className="p-3.5 rounded-2xl bg-black/40 border border-slate-800 space-y-1">
+                    <span className="font-bold text-purple-300 block">🚪 Evacuación & Turbulencia</span>
+                    <p className="text-slate-300">
+                      • Evacuación en tierra: <strong className="text-rose-400 font-mono">"TRIPULACIÓN DE CABINA, EVACUACIÓN, EVACUACIÓN, EVACUACIÓN"</strong><br />
+                      • Turbulencia Severa: <strong className="text-amber-300 font-mono">"TRIPULACIÓN DE CABINA, OCUPEN SUS ASIENTOS DE INMEDIATO"</strong>
+                    </p>
+                  </div>
+
+                </div>
               </div>
+
             </div>
+
+            {/* Footer */}
+            <div className="p-4 border-t border-slate-800 bg-[#081022] flex items-center justify-between text-xs text-slate-400">
+              <span>Binter Canarias Flight Operations Standards</span>
+              <button
+                onClick={() => setShowMnemonicModal(false)}
+                className="px-4 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold transition-all shadow-glow-emerald"
+              >
+                Entendido
+              </button>
+            </div>
+
           </div>
         </div>
       )}

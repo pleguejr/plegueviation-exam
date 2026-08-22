@@ -6464,22 +6464,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Callouts: 'REJECT' (Comandante), 'SIXTY KNOTS' (Copiloto a 60 kt), 'MANUAL BRAKES' (antes de desactivar Autobrake RTO)",
+        "text": "Indicador Best Beta (índice de resbale cian que optimiza la resistencia aerodinámica y la senda de ascenso monomotor)",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Callouts: 'STOP NOW' (Copiloto), 'ONE HUNDRED KNOTS' (Comandante), 'MAXIMUM REVERSE' (al detenerse el avión)",
+        "text": "Compensación automática de timón de profundidad al 100% con cabeceo fijo a 25°",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Callouts: 'ABORT' (Comandante), 'EIGHTY KNOTS' (Copiloto), 'PARKING BRAKE' (en plena carrera a alta velocidad)",
+        "text": "Retracción automática de aerofrenos y despliegue simétrico de reversas",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Callouts: 'GO AROUND' (Copiloto), 'FIFTY KNOTS' (Comandante), 'FLAPS UP' (durante la frenada)",
+        "text": "Desconexión obligatoria del FADEC y paso a modo de control manual directo",
         "is_correct": false
       }
     ],
@@ -6499,26 +6499,26 @@
     "id": "CMD-MGT-014",
     "subject_id": "cmd_emergency",
     "learning_objective": "MOB 3.1.8.2 - Altitud Mínima para Acciones de Memoria en Fallo de Motor (400 ft AGL)",
-    "stem": "Según el MOB 3.1.8.2, en salidas con altitudes de aceleración superiores a 1000 ft AAL, si ocurre un fallo o fuego de motor que requiera acciones de memoria:",
+    "stem": "Según el MOB 3.1.8.2, en salidas con fallo de motor o fuego tras el despegue, ¿cuál es la altitud mínima absoluta a la que está permitido iniciar las acciones de memoria (Memory Items) o la parada del motor inoperativo?",
     "options": [
       {
         "id": "A",
-        "text": "Si no se requiere evacuación: 'TRIPULACIÓN DE CABINA, ESPEREN INSTRUCCIONES'; si la situación está controlada: 'TRIPULACIÓN DE CABINA, PERMANEZCAN SENTADOS'",
+        "text": "400 ft AGL (por debajo de 400 ft la prioridad absoluta es mantener control de la aeronave y trayectoria de vuelo)",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Si no se requiere evacuación: 'EVACUACIÓN INMEDIATA'; si la situación está controlada: 'ABANDONEN EL AVIÓN POR TOBOGANES'",
+        "text": "Al alcanzar inmediatamente la velocidad V2 en el despegue",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Si no se requiere evacuación: 'SILENCIO EN CABINA'; si la situación está controlada: 'APAGUEN SUS TELÉFONOS MÓVILES'",
+        "text": "1.500 ft AAL en cualquier aeródromo de la red",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No se realiza ningún aviso por megafonía hasta que los pasajeros comiencen a levantarse por iniciativa propia",
+        "text": "50 ft sobre el terreno al confirmar Gear UP",
         "is_correct": false
       }
     ],
@@ -6542,22 +6542,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Callouts: 'CHECK THRUST' (PM), 'THRUST CHECKED' (PF), seguimiento de Best Beta (indicador cian) tras Gear UP; acciones de memoria nunca bajo 400 ft AGL",
+        "text": "Velocidad de máxima autonomía y mejor ratio sustentación/resistencia (L/D max) en configuración limpia",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Callouts: 'FULL POWER' (PF), 'GEAR DOWN' (PM), viraje inmediato de 180 grados hacia la pista sin respetar la aceleración",
+        "text": "VMO / MMO para descender lo antes posible al nivel de vuelo seguro",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Callouts: 'ENGINE FIRE' (PM), cortar inmediatamente el motor sano a 100 ft AGL y desplegar flaps FULL",
+        "text": "VREF + 20 kt con flaps en posición de aproximación extendidos",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Callouts: 'MAYDAY' por interfono a pasajeros, cortar ambos motores y ejecutar un planeo hacia el mar",
+        "text": "Velocidad de maniobra con turbulencia severa calculada para peso máximo",
         "is_correct": false
       }
     ],
@@ -6577,26 +6577,26 @@
     "id": "CMD-MGT-016",
     "subject_id": "cmd_emergency",
     "learning_objective": "MOB 3.0-2 - Jerarquía y Prioridad de Mensajes EICAS (Golden Chevron Messages)",
-    "stem": "En la clasificación de mensajes EICAS y prioridad de atención en cabina de vuelo (MOB 3.0-2), ¿cuál es el criterio jerárquico de resolución?",
+    "stem": "En la clasificación de mensajes EICAS y prioridad de atención en cabina de vuelo (MOB 3.0-2), ¿cuál es el criterio jerárquico de resolución de los Golden CAS Messages (mensajes precedidos por el símbolo de chevron '>')?",
     "options": [
       {
         "id": "A",
-        "text": "GREEN DOT (velocidad indicada por el punto verde en la cinta anemométrica, que proporciona el mejor ratio de planeo y menor tasa de descenso)",
+        "text": "Identifican la causa raíz del fallo y deben resolverse en primer lugar dentro de su categoría de color",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "VMO / MMO (velocidad máxima de operación para descender lo antes posible al nivel de vuelo)",
+        "text": "Son mensajes meramente informativos que pueden ignorarse hasta el aterrizaje",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "VREF + 20 kt con flaps en posición de despegue extendidos",
+        "text": "Indican exclusivamente fallos de mantenimiento que no afectan al vuelo actual",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Velocidad de pérdida VS1 calculada para peso máximo de aterrizaje",
+        "text": "Requieren apagar ambos motores y cortar el sistema eléctrico general",
         "is_correct": false
       }
     ],
@@ -6616,26 +6616,26 @@
     "id": "CMD-MGT-017",
     "subject_id": "cmd_emergency",
     "learning_objective": "MOB 3.0-2 - Tipos de Emergencia (Imprevista, Prevista, Aterrizaje Inseguro)",
-    "stem": "¿Qué clasificación establece el MOB 3.0-2 para coordinar una eventualidad con la Tripulación de Cabina?",
+    "stem": "¿Qué clasificación oficial de contingencias y emergencias establece el MOB 3.0-2 para coordinar con la Tripulación de Cabina de Pasajeros?",
     "options": [
       {
         "id": "A",
-        "text": "Despacho permitido con RFFS degradado hasta 1 categoría inferior durante un periodo máximo de 72 horas previa evaluación de riesgos (Safety Assessment)",
+        "text": "Emergencia Prevista, Emergencia Imprevista o Aterrizaje Inseguro",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Despacho totalmente prohibido si la categoría RFFS disminuye incluso por un solo minuto",
+        "text": "Emergencia Roja, Emergencia Amarilla y Alerta Verde",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Despacho permitido sin límite de tiempo y sin necesidad de evaluación de riesgos ni notificación a la compañía",
+        "text": "Fase 1 (Aviso Preventivo), Fase 2 (Alarma) y Fase 3 (Evacuación)",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Despacho autorizado únicamente si la aeronave transporta menos del 20% de su capacidad máxima de pasaje",
+        "text": "Emergencia Técnica vs Emergencia Meteorológica",
         "is_correct": false
       }
     ],
@@ -6933,22 +6933,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Aterrizar PARALELO al oleaje (a lo largo de la cresta del oleaje o en la depresión), con tren de aterrizaje ARRIBA (UP), flaps máximos disponibles, variómetro de 200 a 300 pies/min y velocidad Vref",
+        "text": "Aterrizar PARALELO al oleaje (a lo largo de la cresta o depresión), con tren de aterrizaje ARRIBA (UP), flaps máximos disponibles, variómetro de 200 a 300 pies/min y velocidad Vref",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "con tren de aterrizaje ARRIBA (UP), Aterrizar PARALELO al oleaje (a lo largo de la cresta del oleaje o en la depresión), flaps máximos disponibles, variómetro de 200 a 300 pies/min y velocidad Vref",
+        "text": "Aterrizar PERPENDICULAR a las olas con tren de aterrizaje ABAJO (DOWN) para disipar energía en el impacto inicial",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Aterrizar PARALELO al oleaje (a lo largo de la cresta del oleaje o en la depresión), con tren de aterrizaje ARRIBA (UP), flaps máximos disponibles, Carga comercial no declarada",
+        "text": "Aterrizar siempre contra el viento independientemente del estado de la mar, con flaps 0 y velocidad de crucero",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Aterrizar PARALELO al oleaje (a lo largo de la cresta del oleaje o en la depresión), Inspección técnica diferida, flaps máximos disponibles, variómetro de 200 a 300 pies/min y velocidad Vref",
+        "text": "Efectuar un picado pronunciado para penetrar la superficie del agua con el morro de la aeronave",
         "is_correct": false
       }
     ],
@@ -7011,22 +7011,22 @@
     "options": [
       {
         "id": "A",
-        "text": "verificar despliegue de la RAT, Adoptar de inmediato la velocidad de planeo óptimo para máximo alcance (Driftdown / Best Glide Speed), seleccionar encendido continuo e iniciar la lista de rearranque en vuelo del QRH",
-        "is_correct": false
+        "text": "Adoptar de inmediato la velocidad de planeo óptimo (Green Dot / Best Glide Speed), verificar despliegue automático de la RAT, seleccionar encendido continuo e iniciar la lista de rearranque en vuelo del QRH",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "Adoptar de inmediato la velocidad de planeo óptimo para máximo alcance (Driftdown / Best Glide Speed), verificar despliegue de la RAT, Carga comercial no declarada",
+        "text": "Extender el tren de aterrizaje y flaps inmediatamente para descender al nivel del mar en el menor tiempo posible",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Adoptar de inmediato la velocidad de planeo óptimo para máximo alcance (Driftdown / Best Glide Speed), verificar despliegue de la RAT, seleccionar encendido continuo e iniciar la lista de rearranque en vuelo del QRH",
-        "is_correct": true
+        "text": "Efectuar un viraje de 360° continuo a máxima inclinación y apagar la batería para conservar energía eléctrica",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "Adoptar de inmediato la velocidad de planeo óptimo para máximo alcance (Driftdown / Best Glide Speed), Inspección técnica diferida, seleccionar encendido continuo e iniciar la lista de rearranque en vuelo del QRH",
+        "text": "Mantener la altitud asignada tirando de la palanca de mandos hasta entrar en pérdida aerodinámica",
         "is_correct": false
       }
     ],
