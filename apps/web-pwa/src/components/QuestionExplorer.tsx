@@ -19,7 +19,8 @@ import {
   Trash2,
   Download,
   ShieldAlert,
-  Calendar
+  Calendar,
+  Zap
 } from 'lucide-react';
 import { Question, QuestionStats, BankManifest, DeletedQuestion } from '../types';
 import { toggleQuestionFlag } from '../services/db';
@@ -29,6 +30,7 @@ import { PlanningMinimaTable } from './PlanningMinimaTable';
 import { FormattedText } from './FormattedText';
 import { DeleteConfirmModal } from './DeleteConfirmModal';
 import { getSpeedSummaryTableType, getPlanningMinimaTableType } from '../utils/aircraftRules';
+import { isFlashcardEligible, getFlashcardBadge } from '../utils/flashcardFilter';
 
 interface QuestionExplorerProps {
   questions: Question[];
@@ -36,6 +38,7 @@ interface QuestionExplorerProps {
   manifest: BankManifest | null;
   onRefreshStats: () => void;
   onStartCustomQuiz: (questionIds: string[]) => void;
+  onStartFlashcards?: (params?: { category?: string }) => void;
   onGoToDashboard: () => void;
 }
 
@@ -45,9 +48,10 @@ export const QuestionExplorer: React.FC<QuestionExplorerProps> = ({
   manifest,
   onRefreshStats,
   onStartCustomQuiz,
+  onStartFlashcards,
   onGoToDashboard
 }) => {
-  const [activeTab, setActiveTab] = useState<'difficult' | 'search' | 'flagged' | 'unseen' | 'deleted'>('search');
+  const [activeTab, setActiveTab] = useState<'difficult' | 'search' | 'flagged' | 'unseen' | 'flashcards' | 'deleted'>('search');
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [expandedId, setExpandedId] = useState<string | null>(null);
@@ -105,6 +109,8 @@ export const QuestionExplorer: React.FC<QuestionExplorerProps> = ({
       if (!stats || !stats.isFlagged) return false;
     } else if (activeTab === 'unseen') {
       if (stats && stats.timesAnswered > 0) return false;
+    } else if (activeTab === 'flashcards') {
+      if (!isFlashcardEligible(q)) return false;
     }
 
     // 2. Search term
@@ -164,13 +170,24 @@ export const QuestionExplorer: React.FC<QuestionExplorerProps> = ({
         </button>
 
         {activeTab !== 'deleted' && filteredQuestions.length > 0 && (
-          <button
-            onClick={() => onStartCustomQuiz(filteredQuestions.map((q) => q.id))}
-            className="flex items-center gap-2 px-4 py-1.5 rounded-xl text-xs font-bold bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white shadow-glow-sky transition-all active:scale-95"
-          >
-            <Play className="w-3.5 h-3.5 fill-current" />
-            <span>Practicar Selección ({filteredQuestions.length})</span>
-          </button>
+          <div className="flex items-center gap-2">
+            {onStartFlashcards && (
+              <button
+                onClick={() => onStartFlashcards({ category: selectedCategory !== 'all' ? selectedCategory : undefined })}
+                className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-bold bg-gradient-to-r from-amber-500 to-yellow-400 text-slate-950 shadow-glow-amber transition-all active:scale-95"
+              >
+                <Zap className="w-3.5 h-3.5 fill-current" />
+                <span>Modo Flashcards</span>
+              </button>
+            )}
+            <button
+              onClick={() => onStartCustomQuiz(filteredQuestions.map((q) => q.id))}
+              className="flex items-center gap-2 px-4 py-1.5 rounded-xl text-xs font-bold bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white shadow-glow-sky transition-all active:scale-95"
+            >
+              <Play className="w-3.5 h-3.5 fill-current" />
+              <span>Practicar Selección ({filteredQuestions.length})</span>
+            </button>
+          </div>
         )}
 
         {activeTab === 'deleted' && deletedList.length > 0 && (
@@ -184,7 +201,7 @@ export const QuestionExplorer: React.FC<QuestionExplorerProps> = ({
         )}
       </div>
 
-      {/* 2. Sub-tabs estilo AviationExam: Difficult | Search | Flagged | Unseen | Eliminadas */}
+      {/* 2. Sub-tabs estilo AviationExam: Difficult | Search | Flagged | Unseen | Flashcards | Eliminadas */}
       <div className="flex flex-wrap items-center gap-4 sm:gap-6 text-sm font-semibold border-b border-slate-800 pb-2">
         <button
           onClick={() => setActiveTab('difficult')}
@@ -208,6 +225,18 @@ export const QuestionExplorer: React.FC<QuestionExplorerProps> = ({
         >
           <Search className="w-4 h-4 text-sky-400" />
           <span>Search</span>
+        </button>
+
+        <button
+          onClick={() => setActiveTab('flashcards')}
+          className={`pb-2 transition-all flex items-center gap-1.5 ${
+            activeTab === 'flashcards'
+              ? 'text-amber-300 border-b-2 border-amber-400 font-bold'
+              : 'text-slate-400 hover:text-amber-300'
+          }`}
+        >
+          <Zap className="w-4 h-4 text-amber-400 fill-current" />
+          <span>Flashcards (Datos & Siglas)</span>
         </button>
 
         <button

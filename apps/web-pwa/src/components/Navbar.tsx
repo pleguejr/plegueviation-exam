@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Plane, Compass, BarChart3, BookOpen, PlusCircle, Wifi, WifiOff, Sparkles, User, Settings, FileText, Cloud, RefreshCw } from 'lucide-react';
+import { Plane, Compass, BarChart3, BookOpen, PlusCircle, Wifi, WifiOff, Sparkles, User, Settings, FileText, Cloud, RefreshCw, Zap } from 'lucide-react';
 import { getStoredSyncPin, getLastSyncTimestamp } from '../services/sync';
 
 interface NavbarProps {
-  currentTab: 'dashboard' | 'explorer' | 'reports' | 'settings';
-  onSelectTab: (tab: 'dashboard' | 'explorer' | 'reports' | 'settings') => void;
+  currentTab: 'dashboard' | 'explorer' | 'reports' | 'settings' | 'flashcards';
+  onSelectTab: (tab: 'dashboard' | 'explorer' | 'reports' | 'settings' | 'flashcards') => void;
   onOpenNewExam: () => void;
+  onOpenFlashcards: () => void;
   onOpenImporter: () => void;
   onOpenSyncModal: () => void;
 }
@@ -14,6 +15,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   currentTab,
   onSelectTab,
   onOpenNewExam,
+  onOpenFlashcards,
   onOpenImporter,
   onOpenSyncModal
 }) => {
@@ -69,6 +71,18 @@ export const Navbar: React.FC<NavbarProps> = ({
             className="text-sky-200 hover:text-white transition-colors py-1"
           >
             Test
+          </button>
+
+          <button
+            onClick={onOpenFlashcards}
+            className={`transition-colors py-1 flex items-center gap-1 ${
+              currentTab === 'flashcards'
+                ? 'text-amber-300 border-b-2 border-amber-400 font-bold'
+                : 'text-amber-300 hover:text-amber-200 font-semibold'
+            }`}
+          >
+            <Zap className="w-3.5 h-3.5 fill-current" />
+            <span>Flashcards</span>
           </button>
 
           <button

@@ -8,6 +8,7 @@ import { QuestionExplorer } from './components/QuestionExplorer';
 import { ReportsScreen } from './components/ReportsScreen';
 import { BankImporterModal } from './components/BankImporterModal';
 import { SyncModal } from './components/SyncModal';
+import { FlashcardScreen } from './components/FlashcardScreen';
 import { Question, BankManifest, QuestionStats, ExamConfig, ExamSession, ExamMode, ExamSelectionStrategy } from './types';
 import { loadAllQuestions, loadManifest, generateExamQuestions, randomizeQuestionOptions } from './services/questionsService';
 import { getAllStatsMap, saveExamSession, recordAnswerStat, exportFullBackup, restoreFullBackup, db } from './services/db';
@@ -21,11 +22,13 @@ import {
   Upload,
   Cloud,
   RefreshCw,
-  Key
+  Key,
+  Zap
 } from 'lucide-react';
 
 export function App() {
-  const [currentView, setCurrentView] = useState<'dashboard' | 'explorer' | 'reports' | 'settings' | 'exam' | 'results'>('dashboard');
+  const [currentView, setCurrentView] = useState<'dashboard' | 'explorer' | 'reports' | 'settings' | 'exam' | 'results' | 'flashcards'>('dashboard');
+  const [flashcardCategory, setFlashcardCategory] = useState<string>('all');
   const [questions, setQuestions] = useState<Question[]>([]);
   const [manifest, setManifest] = useState<BankManifest | null>(null);
   const [statsMap, setStatsMap] = useState<Record<string, QuestionStats>>({});
@@ -257,6 +260,11 @@ export function App() {
     setCurrentView('exam');
   };
 
+  const handleStartFlashcards = (category?: string) => {
+    setFlashcardCategory(category || 'all');
+    setCurrentView('flashcards');
+  };
+
   const handleResetAllData = async () => {
     if (confirm('⚠️ ¿Estás seguro de reiniciar todas las estadísticas y el historial de exámenes a cero?')) {
       await db.questionStats.clear();
@@ -270,9 +278,10 @@ export function App() {
     <div className="min-h-screen bg-[#070e1e] text-slate-100 flex flex-col font-sans">
       {/* Top AviationExam Navbar */}
       <Navbar
-        currentTab={currentView === 'explorer' ? 'explorer' : currentView === 'reports' ? 'reports' : currentView === 'settings' ? 'settings' : 'dashboard'}
+        currentTab={currentView === 'explorer' ? 'explorer' : currentView === 'reports' ? 'reports' : currentView === 'settings' ? 'settings' : currentView === 'flashcards' ? 'flashcards' : 'dashboard'}
         onSelectTab={(tab) => setCurrentView(tab)}
         onOpenNewExam={() => handleOpenConfigModal()}
+        onOpenFlashcards={() => handleStartFlashcards()}
         onOpenImporter={() => setIsImporterOpen(true)}
         onOpenSyncModal={() => setIsSyncModalOpen(true)}
       />
@@ -288,9 +297,20 @@ export function App() {
               strategy: params.strategy,
               passMarkPercentage: 75
             })}
+            onStartFlashcards={(params) => handleStartFlashcards(params?.category)}
             onOpenNewExam={() => handleOpenConfigModal()}
             onNavigateTab={(tab) => setCurrentView(tab)}
             onOpenImporter={() => setIsImporterOpen(true)}
+          />
+        )}
+
+        {currentView === 'flashcards' && (
+          <FlashcardScreen
+            questions={questions}
+            manifest={manifest}
+            initialCategory={flashcardCategory}
+            onExit={() => setCurrentView('dashboard')}
+            onRefreshData={refreshData}
           />
         )}
 
@@ -301,6 +321,7 @@ export function App() {
             manifest={manifest}
             onRefreshStats={refreshData}
             onStartCustomQuiz={handleStartCustomQuiz}
+            onStartFlashcards={(params) => handleStartFlashcards(params?.category)}
             onGoToDashboard={() => setCurrentView('dashboard')}
           />
         )}

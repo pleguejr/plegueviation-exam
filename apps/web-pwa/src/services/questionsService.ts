@@ -20,9 +20,32 @@ export async function loadAllQuestions(forceRefresh = false): Promise<Question[]
   try {
     const baseUrl = import.meta.env.BASE_URL || './';
     const cleanBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
-    const res = await fetch(`${cleanBase}banks/all_questions.json?t=${Date.now()}`);
-    if (res.ok) {
-      bundled = await res.json();
+    const [resQ, resDel] = await Promise.all([
+      fetch(`${cleanBase}banks/all_questions.json?t=${Date.now()}`),
+      fetch(`${cleanBase}banks/deleted_questions.json?t=${Date.now()}`).catch(() => null)
+    ]);
+    if (resQ && resQ.ok) {
+      bundled = await resQ.json();
+    }
+    if (resDel && resDel.ok) {
+      const bundledDeleted = await resDel.json();
+      if (Array.isArray(bundledDeleted)) {
+        for (const item of bundledDeleted) {
+          const dId = item.id || (item.question && item.question.id);
+          if (dId) {
+            const existing = await db.deletedQuestions.get(dId);
+            if (!existing) {
+              await db.deletedQuestions.put({
+                id: dId,
+                question: item.question || item,
+                deletedAt: item.deletedAt || Date.now(),
+                reason: item.reason || 'Eliminada del catálogo maestro'
+              });
+              await db.customQuestions.delete(dId);
+            }
+          }
+        }
+      }
     }
   } catch (err) {
     console.warn('No se pudieron cargar preguntas remotas, usando base local:', err);

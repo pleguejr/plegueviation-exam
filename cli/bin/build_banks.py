@@ -117,7 +117,12 @@ def compile_banks() -> int:
         "reglas-del-aire-normativa": "Reglas del Aire y Normativa Aeronáutica",
         "performance": "Performance y Límites Operacionales",
         "mnemonicos-flujos-compania": "Mnemónicos y Flujos Binter (RETSE, E-DALTA, IMFLOCC)",
-        "preguntas-habituales-examen": "Preguntas Habituales de Examen de Mando"
+        "preguntas-habituales-examen": "Preguntas Habituales de Examen de Mando",
+        "mercancias-peligrosas-y-seguridad": "Mercancías Peligrosas y Seguridad (MOA 9 y 10)",
+        "operaciones-en-tierra": "Operaciones en Tierra y Rampa (MOA 8.2)",
+        "operaciones-especiales": "Operaciones Especiales y Requisitos (MOA 8.7 y 8.8)",
+        "procedimientos-de-vuelo": "Procedimientos de Vuelo y LVO (MOA 8.3 y 8.4)",
+        "seguridad-y-normativa": "Seguridad, SMS y Normativa SERA (MOA 11 y 12)"
     }
 
     print(f"[*] Escaneando bancos en: {banks_dir}")
@@ -223,12 +228,17 @@ def compile_banks() -> int:
 
     manifest_path = pwa_banks_dir / "manifest.json"
     questions_path = pwa_banks_dir / "all_questions.json"
+    pwa_deleted_path = pwa_banks_dir / "deleted_questions.json"
 
     with open(manifest_path, 'w', encoding='utf-8') as f:
         json.dump(manifest, f, indent=2, ensure_ascii=False)
 
     with open(questions_path, 'w', encoding='utf-8') as f:
         json.dump(all_questions, f, indent=2, ensure_ascii=False)
+
+    if deleted_file.exists():
+        import shutil
+        shutil.copyfile(deleted_file, pwa_deleted_path)
 
     print(f"[SUCCESS] {len(all_questions)} reactivos compilados exitosamente.")
     return 0

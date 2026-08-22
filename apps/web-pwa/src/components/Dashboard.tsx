@@ -37,6 +37,7 @@ interface DashboardProps {
     strategy: ExamSelectionStrategy;
     count?: number;
   }) => void;
+  onStartFlashcards: (params?: { category?: string }) => void;
   onOpenNewExam: () => void;
   onNavigateTab: (tab: 'explorer' | 'reports' | 'settings') => void;
   onOpenImporter: () => void;
@@ -44,6 +45,7 @@ interface DashboardProps {
 
 export const Dashboard: React.FC<DashboardProps> = ({
   onStartConfiguredExam,
+  onStartFlashcards,
   onOpenNewExam,
   onNavigateTab,
   onOpenImporter
@@ -291,7 +293,20 @@ export const Dashboard: React.FC<DashboardProps> = ({
             </span>
           </div>
 
-          {/* 2. REPORTS */}
+          {/* 2. FLASHCARDS (Datos Numéricos & Siglas) */}
+          <div 
+            onClick={() => onStartFlashcards()}
+            className="flex flex-col items-center gap-3 cursor-pointer group"
+          >
+            <div className="w-20 h-20 rounded-full bg-gradient-to-tr from-amber-500 to-yellow-400 text-slate-950 shadow-glow-amber flex items-center justify-center border-2 border-amber-300 group-hover:scale-105 transition-all duration-200">
+              <Zap className="w-9 h-9 fill-current text-slate-950" />
+            </div>
+            <span className="text-xs font-extrabold text-amber-300 tracking-wider uppercase group-hover:text-amber-200 transition-colors">
+              FLASHCARDS
+            </span>
+          </div>
+
+          {/* 3. REPORTS */}
           <div 
             onClick={() => onNavigateTab('reports')}
             className="flex flex-col items-center gap-3 cursor-pointer group"
@@ -304,7 +319,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
             </span>
           </div>
 
-          {/* 3. QUESTIONS */}
+          {/* 4. QUESTIONS */}
           <div 
             onClick={() => onNavigateTab('explorer')}
             className="flex flex-col items-center gap-3 cursor-pointer group"
@@ -466,7 +481,15 @@ export const Dashboard: React.FC<DashboardProps> = ({
                   <span className="text-xs font-mono text-slate-400">
                     <strong className="text-emerald-400">{catCorrect}✓</strong> / <strong className="text-rose-400">{catIncorrect}✗</strong>
                   </span>
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-1.5 sm:gap-2">
+                    <button
+                      onClick={() => onStartFlashcards({ category: cat.id })}
+                      className="px-2.5 py-1 rounded-lg text-xs font-bold bg-amber-500/20 text-amber-300 hover:bg-amber-500/30 border border-amber-500/30 transition-colors flex items-center gap-1"
+                      title="Repasar datos numéricos y siglas en modo flashcards"
+                    >
+                      <Zap className="w-3 h-3 fill-current" />
+                      <span className="hidden sm:inline">Flashcards</span>
+                    </button>
                     <button
                       onClick={() => onStartConfiguredExam({ category: cat.id, mode: 'practice', strategy: 'random', count: 10 })}
                       className="px-3 py-1 rounded-lg text-xs font-bold bg-[#14264d] text-sky-300 hover:bg-[#1a3366] transition-colors"
