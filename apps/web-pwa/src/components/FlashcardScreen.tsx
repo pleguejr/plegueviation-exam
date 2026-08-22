@@ -642,7 +642,7 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
               {isFlipped && (
                 <div className="space-y-4 animate-fade-in" onClick={(e) => e.stopPropagation()}>
                   
-                  {/* Correct Answer Highlight */}
+                  {/* 1. Correct Answer Highlight */}
                   <div className="p-4 rounded-2xl bg-emerald-950/60 border border-emerald-500/40 space-y-1.5 shadow-lg">
                     <div className="flex items-center gap-2 text-emerald-400 font-black text-xs uppercase tracking-wide">
                       <CheckCircle2 className="w-4 h-4" />
@@ -653,7 +653,39 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
                     </div>
                   </div>
 
-                  {/* Detailed Explanation / Markdown Tables */}
+                  {/* 2. Self-Assessment Mastery Rating (Justo debajo de la respuesta) */}
+                  <div className="p-3.5 rounded-2xl bg-black/20 border border-slate-800/80 space-y-2 shadow-sm">
+                    <span className="text-[11px] font-bold text-slate-400 block text-center">
+                      ¿Cómo te ha resultado este dato?
+                    </span>
+                    <div className="grid grid-cols-3 gap-2">
+                      <button
+                        onClick={() => handleRateMastery('hard')}
+                        className="btn-flashcard-hard px-3 py-2.5 rounded-xl bg-rose-950/60 hover:bg-rose-900 text-rose-300 border border-rose-500/40 text-xs font-bold transition-all active:scale-95 flex items-center justify-center gap-1.5 shadow-md"
+                      >
+                        <Repeat className="w-3.5 h-3.5" />
+                        <span>[1] Difícil (Re-encolar)</span>
+                      </button>
+
+                      <button
+                        onClick={() => handleRateMastery('medium')}
+                        className="btn-flashcard-medium px-3 py-2.5 rounded-xl bg-amber-950/60 hover:bg-amber-900 text-amber-300 border border-amber-500/40 text-xs font-bold transition-all active:scale-95 flex items-center justify-center gap-1.5 shadow-md"
+                      >
+                        <AlertTriangle className="w-3.5 h-3.5" />
+                        <span>[2] Regular</span>
+                      </button>
+
+                      <button
+                        onClick={() => handleRateMastery('easy')}
+                        className="btn-flashcard-easy px-3 py-2.5 rounded-xl bg-emerald-950/60 hover:bg-emerald-900 text-emerald-300 border border-emerald-500/40 text-xs font-bold transition-all active:scale-95 flex items-center justify-center gap-1.5 shadow-md"
+                      >
+                        <CheckCircle2 className="w-3.5 h-3.5" />
+                        <span>[3] Dominada</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* 3. Detailed Explanation / Markdown Tables (Debajo de los botones) */}
                   <div className="p-4 rounded-2xl bg-black/40 border border-slate-800 space-y-3 text-xs">
                     <div className="flex items-center gap-2 text-sky-400 font-bold">
                       <BookOpen className="w-4 h-4" />
@@ -685,38 +717,6 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
                       <PlanningMinimaTable type={getPlanningMinimaTableType(currentQuestion)!} />
                     </div>
                   )}
-
-                  {/* Self-Assessment Mastery Rating */}
-                  <div className="pt-3 border-t border-slate-800 space-y-2">
-                    <span className="text-[11px] font-bold text-slate-400 block text-center">
-                      ¿Cómo te ha resultado este dato?
-                    </span>
-                    <div className="grid grid-cols-3 gap-2">
-                      <button
-                        onClick={() => handleRateMastery('hard')}
-                        className="btn-flashcard-hard px-3 py-2.5 rounded-xl bg-rose-950/60 hover:bg-rose-900 text-rose-300 border border-rose-500/40 text-xs font-bold transition-all active:scale-95 flex items-center justify-center gap-1.5 shadow-md"
-                      >
-                        <Repeat className="w-3.5 h-3.5" />
-                        <span>[1] Difícil (Re-encolar)</span>
-                      </button>
-
-                      <button
-                        onClick={() => handleRateMastery('medium')}
-                        className="btn-flashcard-medium px-3 py-2.5 rounded-xl bg-amber-950/60 hover:bg-amber-900 text-amber-300 border border-amber-500/40 text-xs font-bold transition-all active:scale-95 flex items-center justify-center gap-1.5 shadow-md"
-                      >
-                        <AlertTriangle className="w-3.5 h-3.5" />
-                        <span>[2] Regular</span>
-                      </button>
-
-                      <button
-                        onClick={() => handleRateMastery('easy')}
-                        className="btn-flashcard-easy px-3 py-2.5 rounded-xl bg-emerald-950/60 hover:bg-emerald-900 text-emerald-300 border border-emerald-500/40 text-xs font-bold transition-all active:scale-95 flex items-center justify-center gap-1.5 shadow-md"
-                      >
-                        <CheckCircle2 className="w-3.5 h-3.5" />
-                        <span>[3] Dominada</span>
-                      </button>
-                    </div>
-                  </div>
 
                 </div>
               )}
