@@ -1,11 +1,12 @@
-import { Question, BankManifest, QuestionStats, ExamConfig, Option } from '../types';
-import { db, getAllStatsMap } from './db';
+import { Question, BankManifest, QuestionStats, ExamConfig, Option, DeletedQuestion } from '../types';
+import { db, getAllStatsMap, getDeletedQuestionIds, deleteQuestion, restoreQuestion, getDeletedQuestions } from './db';
 
 let cachedQuestions: Question[] | null = null;
 let cachedManifest: BankManifest | null = null;
 
 /**
- * Carga el catálogo completo de preguntas (empaquetadas + añadidas por el usuario).
+ * Carga el catálogo completo de preguntas activas (empaquetadas + custom),
+ * excluyendo permanentemente todas aquellas registradas en la lista de eliminadas.
  */
 export async function loadAllQuestions(forceRefresh = false): Promise<Question[]> {
   if (forceRefresh) {
@@ -25,22 +26,30 @@ export async function loadAllQuestions(forceRefresh = false): Promise<Question[]
     console.warn('No se pudieron cargar preguntas remotas, usando base local:', err);
   }
 
-  // Cargar preguntas personalizadas de IndexedDB
-  const custom = await db.customQuestions.toArray();
+  // Cargar preguntas personalizadas de IndexedDB y el set de IDs eliminadas
+  const [custom, deletedIds] = await Promise.all([
+    db.customQuestions.toArray(),
+    getDeletedQuestionIds()
+  ]);
   const customMarked = custom.map((q) => ({ ...q, isCustom: true }));
 
   // Unir y filtrar IDs repetidos (prioridad a custom)
   const map = new Map<string, Question>();
   for (const q of bundled) {
-    map.set(q.id, q);
+    if (!deletedIds.has(q.id)) {
+      map.set(q.id, q);
+    }
   }
   for (const q of customMarked) {
-    map.set(q.id, q);
+    if (!deletedIds.has(q.id)) {
+      map.set(q.id, q);
+    }
   }
 
   cachedQuestions = Array.from(map.values());
   return cachedQuestions;
 }
+
 
 /**
  * Carga el manifiesto de categorías.
@@ -193,3 +202,31 @@ export async function importCustomQuestions(questions: Question[]): Promise<numb
   cachedQuestions = null;
   return count;
 }
+
+/**
+ * Elimina una pregunta del banco activo, la añade al registro de eliminadas
+ * y purga la caché para evitar que vuelva a salir en futuros exámenes.
+ */
+export async function deleteQuestionFromBank(question: Question, reason?: string): Promise<void> {
+  await deleteQuestion(question, reason);
+  cachedQuestions = null;
+}
+
+/**
+ * Restaura una pregunta previamente eliminada, haciéndola disponible de nuevo en el banco.
+ */
+export async function restoreQuestionToBank(questionId: string): Promise<boolean> {
+  const success = await restoreQuestion(questionId);
+  if (success) {
+    cachedQuestions = null;
+  }
+  return success;
+}
+
+/**
+ * Carga la lista completa de preguntas eliminadas.
+ */
+export async function loadDeletedQuestions(): Promise<DeletedQuestion[]> {
+  return await getDeletedQuestions();
+}
+

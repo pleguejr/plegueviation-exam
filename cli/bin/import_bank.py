@@ -107,9 +107,27 @@ def import_questions(raw_json_str: str, default_subject: str = None) -> int:
         print("[AVISO] No se encontraron reactivos para importar.")
         return 0
 
-    # 2. Recolectar IDs existentes para prevenir duplicados
+    # 2. Recolectar IDs existentes y eliminados para prevenir duplicados
     existing_ids = set()
+    deleted_ids = set()
+    deleted_file = banks_dir / "deleted_questions.json"
+    if deleted_file.exists():
+        try:
+            with open(deleted_file, 'r', encoding='utf-8') as f:
+                del_data = json.load(f)
+            if isinstance(del_data, list):
+                for d in del_data:
+                    if isinstance(d, dict):
+                        if "id" in d:
+                            deleted_ids.add(d["id"])
+                        elif "question" in d and isinstance(d["question"], dict) and "id" in d["question"]:
+                            deleted_ids.add(d["question"]["id"])
+        except Exception:
+            pass
+
     for jf in banks_dir.rglob("*.json"):
+        if jf.name == "deleted_questions.json":
+            continue
         try:
             with open(jf, 'r', encoding='utf-8') as f:
                 content = json.load(f)
@@ -141,11 +159,15 @@ def import_questions(raw_json_str: str, default_subject: str = None) -> int:
             validation_errors += 1
             continue
 
-        # Verificar ID duplicado
+        # Verificar ID duplicado o previamente eliminado
         if item["id"] in existing_ids:
             print(f"[ERROR Duplicado] El ID '{item['id']}' ya existe en los bancos.", file=sys.stderr)
             validation_errors += 1
             continue
+
+        if item["id"] in deleted_ids:
+            print(f"[AVISO Eliminado] El ID '{item['id']}' coincide con una pregunta previamente eliminada del banco.", file=sys.stderr)
+
 
         # Determinar directorio destino
         subj = item.get("subject_id") or default_subject or "binter_moa"

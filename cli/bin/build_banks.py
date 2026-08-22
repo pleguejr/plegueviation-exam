@@ -122,8 +122,28 @@ def compile_banks() -> int:
 
     print(f"[*] Escaneando bancos en: {banks_dir}")
 
+    deleted_file = banks_dir / "deleted_questions.json"
+    deleted_ids = set()
+    if deleted_file.exists():
+        try:
+            with open(deleted_file, 'r', encoding='utf-8') as f:
+                del_data = json.load(f)
+            if isinstance(del_data, list):
+                for d in del_data:
+                    if isinstance(d, dict):
+                        if "id" in d:
+                            deleted_ids.add(d["id"])
+                        elif "question" in d and isinstance(d["question"], dict) and "id" in d["question"]:
+                            deleted_ids.add(d["question"]["id"])
+            if deleted_ids:
+                print(f"[*] {len(deleted_ids)} preguntas marcadas como eliminadas en {deleted_file.name} serán excluidas.")
+        except Exception as e:
+            print(f"[AVISO] Error leyendo deleted_questions.json: {e}")
+
     if banks_dir.exists():
         for json_file in sorted(banks_dir.rglob("*.json")):
+            if json_file.name == "deleted_questions.json":
+                continue
             rel_path = json_file.relative_to(banks_dir)
             parts = rel_path.parts
             category = parts[0] if len(parts) > 1 else "general"
@@ -135,6 +155,10 @@ def compile_banks() -> int:
                 items = data if isinstance(data, list) else [data]
 
                 for item in items:
+                    q_id = item.get("id")
+                    if q_id in deleted_ids:
+                        continue
+
                     if schema and HAS_JSONSCHEMA:
                         jsonschema.validate(instance=item, schema=schema)
                     else:

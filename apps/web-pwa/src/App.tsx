@@ -433,7 +433,7 @@ export function App() {
                         try {
                           const result = await restoreFullBackup(text);
                           await refreshData();
-                          alert(`✅ Copia de seguridad restaurada con éxito:\n- ${result.statsCount} estadísticas de preguntas\n- ${result.sessionsCount} sesiones de examen\n- ${result.customCount} preguntas personalizadas`);
+                          alert(`✅ Copia de seguridad restaurada con éxito:\n- ${result.statsCount} estadísticas de preguntas\n- ${result.sessionsCount} sesiones de examen\n- ${result.customCount} preguntas personalizadas\n- ${result.deletedCount || 0} preguntas eliminadas`);
                         } catch (err) {
                           alert(`❌ Error al leer el archivo de copia de seguridad: ${err}`);
                         }

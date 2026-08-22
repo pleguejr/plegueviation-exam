@@ -15,14 +15,18 @@ import {
   HelpCircle,
   Keyboard,
   RotateCcw,
-  Zap
+  Zap,
+  Trash2
 } from 'lucide-react';
 import { Question, ExamSession, ExamSessionAnswer, Option, QuestionStats } from '../types';
 import { recordAnswerStat, toggleQuestionFlag, getQuestionStat } from '../services/db';
+import { deleteQuestionFromBank } from '../services/questionsService';
 import { SpeedSummaryTable } from './SpeedSummaryTable';
 import { PlanningMinimaTable } from './PlanningMinimaTable';
 import { FormattedText } from './FormattedText';
+import { DeleteConfirmModal } from './DeleteConfirmModal';
 import { getSpeedSummaryTableType, getPlanningMinimaTableType } from '../utils/aircraftRules';
+
 
 interface ExamScreenProps {
   session: ExamSession;
@@ -45,6 +49,7 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
   const [elapsedSeconds, setElapsedSeconds] = useState(0);
   const [questionStartTime, setQuestionStartTime] = useState(Date.now());
   const [currentStat, setCurrentStat] = useState<QuestionStats | null>(null);
+  const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
   
   // Auto-advance toggle (activo por defecto y persistente en localStorage)
   const [autoAdvance, setAutoAdvance] = useState<boolean>(() => {
@@ -52,6 +57,7 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
     return saved !== null ? saved === 'true' : true;
   });
   const autoAdvanceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
 
   const currentQuestion: Question | undefined = session.questions[currentIndex];
   const currentAnswer: ExamSessionAnswer | undefined = currentQuestion 
@@ -239,7 +245,32 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
     await toggleQuestionFlag(currentQuestion.id);
   };
 
+  const handleDeleteCurrentQuestion = async (q: Question, reason?: string) => {
+    await deleteQuestionFromBank(q, reason);
+    const remainingQuestions = session.questions.filter((item) => item.id !== q.id);
+    const updatedAnswers = { ...session.answers };
+    delete updatedAnswers[q.id];
+
+    if (remainingQuestions.length === 0) {
+      alert('Esta era la última pregunta del test y ha sido eliminada del banco. Volviendo al Dashboard.');
+      onExitExam();
+      return;
+    }
+
+    const newIndex = Math.min(currentIndex, remainingQuestions.length - 1);
+    const updatedSession: ExamSession = {
+      ...session,
+      questions: remainingQuestions,
+      answers: updatedAnswers,
+      currentIndex: newIndex
+    };
+
+    onUpdateSession(updatedSession);
+    setCurrentIndex(newIndex);
+  };
+
   const formatTimer = (totalSeconds: number) => {
+
     const h = Math.floor(totalSeconds / 3600);
     const m = Math.floor((totalSeconds % 3600) / 60);
     const s = totalSeconds % 60;
@@ -299,8 +330,8 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
           {/* Question Header Bar */}
           <div className="bg-[#0e1933] border border-sky-500/20 rounded-2xl p-4 shadow-lg flex flex-wrap items-center justify-between gap-3">
             
-            {/* Question Counter & Pin/Flag */}
-            <div className="flex items-center gap-3">
+            {/* Question Counter & Pin/Flag & Delete */}
+            <div className="flex items-center gap-2.5">
               <span className="text-base font-extrabold text-white">
                 Q {currentIndex + 1} <span className="text-slate-400 font-normal text-sm">/ {session.questions.length}</span>
               </span>
@@ -316,7 +347,16 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
               >
                 <Bookmark className={`w-4 h-4 ${currentAnswer?.isFlagged ? 'fill-current' : ''}`} />
               </button>
+
+              <button
+                onClick={() => setIsDeleteModalOpen(true)}
+                className="p-1.5 rounded-lg border bg-slate-800/80 border-slate-700 text-slate-400 hover:text-rose-400 hover:border-rose-500/50 hover:bg-rose-950/40 transition-colors"
+                title="Eliminar del banco (no volverá a aparecer en ningún examen)"
+              >
+                <Trash2 className="w-4 h-4" />
+              </button>
             </div>
+
 
             {/* Question ID & Marks */}
             <div className="flex items-center gap-3">
@@ -685,6 +725,15 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
 
       </div>
 
+      {/* Modal de confirmación para eliminar reactivo */}
+      <DeleteConfirmModal
+        isOpen={isDeleteModalOpen}
+        question={currentQuestion}
+        onClose={() => setIsDeleteModalOpen(false)}
+        onConfirm={handleDeleteCurrentQuestion}
+      />
+
     </div>
   );
 };
+

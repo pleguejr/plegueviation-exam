@@ -12,11 +12,14 @@ import {
   ChevronDown,
   ChevronUp,
   Sparkles,
-  Flame
+  Flame,
+  Trash2
 } from 'lucide-react';
 import { SpeedSummaryTable } from './SpeedSummaryTable';
 import { PlanningMinimaTable } from './PlanningMinimaTable';
 import { FormattedText } from './FormattedText';
+import { DeleteConfirmModal } from './DeleteConfirmModal';
+import { deleteQuestionFromBank } from '../services/questionsService';
 import { ExamSession, Question, Option } from '../types';
 import { getSpeedSummaryTableType, getPlanningMinimaTableType } from '../utils/aircraftRules';
 
@@ -35,6 +38,10 @@ export const ExamResults: React.FC<ExamResultsProps> = ({
 }) => {
   const [filter, setFilter] = useState<'all' | 'failed' | 'flagged'>('all');
   const [expandedQuestions, setExpandedQuestions] = useState<Record<string, boolean>>({});
+  const [deletedIds, setDeletedIds] = useState<Set<string>>(new Set());
+  const [questionToDelete, setQuestionToDelete] = useState<Question | null>(null);
+  const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
+
 
   const score = session.score || {
     totalQuestions: session.questions.length,
@@ -263,16 +270,38 @@ export const ExamResults: React.FC<ExamResultsProps> = ({
                         <span className="text-slate-600">•</span>
                         <span className="text-xs font-mono text-slate-400">{q.learning_objective}</span>
                       </div>
-                      <h3 className="text-sm font-bold text-white mt-1 leading-snug">
+                      <h3 className={`text-sm font-bold text-white mt-1 leading-snug ${deletedIds.has(q.id) ? 'line-through opacity-60' : ''}`}>
                         {q.stem}
                       </h3>
+                      {deletedIds.has(q.id) && (
+                        <span className="inline-block text-[10px] font-mono font-bold text-rose-400 bg-rose-950/60 px-2 py-0.5 rounded border border-rose-500/40 mt-1">
+                          ⚠️ ELIMINADA DEL BANCO
+                        </span>
+                      )}
                     </div>
                   </div>
 
-                  <button className="text-slate-400 hover:text-white p-1">
-                    {isExpanded ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
-                  </button>
+                  <div className="flex items-center gap-2">
+                    {!deletedIds.has(q.id) && (
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setQuestionToDelete(q);
+                          setIsDeleteModalOpen(true);
+                        }}
+                        className="p-1.5 rounded-lg border bg-slate-800/80 border-slate-700 text-slate-400 hover:text-rose-400 hover:border-rose-500/50 hover:bg-rose-950/40 transition-colors"
+                        title="Eliminar del banco de preguntas"
+                      >
+                        <Trash2 className="w-4 h-4" />
+                      </button>
+                    )}
+
+                    <button className="text-slate-400 hover:text-white p-1">
+                      {isExpanded ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
+                    </button>
+                  </div>
                 </div>
+
 
                 {isExpanded && (
                   <div className="pt-3 border-t border-slate-800 space-y-3">
@@ -336,6 +365,21 @@ export const ExamResults: React.FC<ExamResultsProps> = ({
         </div>
       </div>
 
+      {/* Modal de confirmación para eliminar reactivo */}
+      <DeleteConfirmModal
+        isOpen={isDeleteModalOpen}
+        question={questionToDelete}
+        onClose={() => {
+          setIsDeleteModalOpen(false);
+          setQuestionToDelete(null);
+        }}
+        onConfirm={async (q, reason) => {
+          await deleteQuestionFromBank(q, reason);
+          setDeletedIds((prev) => new Set([...prev, q.id]));
+        }}
+      />
+
     </div>
   );
 };
+

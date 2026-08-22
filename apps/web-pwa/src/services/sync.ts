@@ -34,10 +34,11 @@ export function setLastSyncTimestamp(ts: number): void {
  * Empaqueta todos los datos locales actuales en un formato ligero y optimizado.
  */
 export async function getLocalPayload() {
-  const [stats, sessions, custom] = await Promise.all([
+  const [stats, sessions, custom, deleted] = await Promise.all([
     db.questionStats.toArray(),
     db.examSessions.toArray(),
-    db.customQuestions.toArray()
+    db.customQuestions.toArray(),
+    db.deletedQuestions.toArray()
   ]);
 
   // Optimización de sesiones: no duplicar el texto completo de las preguntas del catálogo
@@ -58,7 +59,8 @@ export async function getLocalPayload() {
     syncedAt: Date.now(),
     questionStats: stats,
     examSessions: compactSessions,
-    customQuestions: custom
+    customQuestions: custom,
+    deletedQuestions: deleted
   };
 }
 
@@ -69,14 +71,16 @@ export async function mergeRemoteData(remoteData: any): Promise<{
   mergedStatsCount: number;
   mergedSessionsCount: number;
   mergedCustomCount: number;
+  mergedDeletedCount: number;
 }> {
   if (!remoteData || typeof remoteData !== 'object') {
-    return { mergedStatsCount: 0, mergedSessionsCount: 0, mergedCustomCount: 0 };
+    return { mergedStatsCount: 0, mergedSessionsCount: 0, mergedCustomCount: 0, mergedDeletedCount: 0 };
   }
 
   let mergedStatsCount = 0;
   let mergedSessionsCount = 0;
   let mergedCustomCount = 0;
+  let mergedDeletedCount = 0;
 
   // 1. Merge de questionStats (toma el que tenga más respuestas o el más reciente)
   if (Array.isArray(remoteData.questionStats)) {
@@ -159,8 +163,22 @@ export async function mergeRemoteData(remoteData: any): Promise<{
     }
   }
 
-  return { mergedStatsCount, mergedSessionsCount, mergedCustomCount };
+  // 4. Merge de deletedQuestions
+  if (Array.isArray(remoteData.deletedQuestions)) {
+    for (const remoteDel of remoteData.deletedQuestions) {
+      if (!remoteDel.id) continue;
+      const localDel = await db.deletedQuestions.get(remoteDel.id);
+      if (!localDel) {
+        await db.deletedQuestions.put(remoteDel);
+        await db.customQuestions.delete(remoteDel.id);
+        mergedDeletedCount++;
+      }
+    }
+  }
+
+  return { mergedStatsCount, mergedSessionsCount, mergedCustomCount, mergedDeletedCount };
 }
+
 
 /**
  * Realiza una petición fetch con timeout seguro (8s)
