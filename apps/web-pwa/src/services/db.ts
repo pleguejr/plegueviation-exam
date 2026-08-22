@@ -105,6 +105,46 @@ export async function recordAnswerStat(
   }
   return updated;
 }
+/**
+ * Registra la visualización y autoevaluación de una flashcard para repetición espaciada y memoria a largo plazo.
+ */
+export async function recordFlashcardRating(
+  questionId: string,
+  rating: 'hard' | 'medium' | 'easy'
+): Promise<QuestionStats> {
+  const current = await getQuestionStat(questionId);
+  const now = Date.now();
+  const isCorrect = rating === 'easy' || rating === 'medium';
+  
+  const updated: QuestionStats = {
+    ...current,
+    timesAnswered: current.timesAnswered + 1,
+    timesCorrect: current.timesCorrect + (isCorrect ? 1 : 0),
+    timesIncorrect: current.timesIncorrect + (rating === 'hard' ? 1 : 0),
+    lastAnsweredAt: now,
+    lastResult: isCorrect,
+    flashcardViews: (current.flashcardViews || 0) + 1,
+    flashcardLastRating: rating,
+    flashcardLastViewedAt: now,
+    history: [
+      ...current.history,
+      {
+        timestamp: now,
+        selectedOptionId: rating === 'easy' ? 'MASTERED' : rating === 'medium' ? 'REGULAR' : 'HARD',
+        isCorrect,
+        timeSpentSeconds: 5,
+        examMode: 'smart_review'
+      }
+    ]
+  };
+
+  try {
+    await db.questionStats.put(updated);
+  } catch (err) {
+    console.warn('Error saving flashcard stat:', err);
+  }
+  return updated;
+}
 
 /**
  * Alterna el estado de marcador / flag de una pregunta.

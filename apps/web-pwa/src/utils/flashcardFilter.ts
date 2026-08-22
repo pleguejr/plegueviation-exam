@@ -1,4 +1,4 @@
-import { Question } from '../types';
+import { Question, QuestionStats } from '../types';
 
 // Expresiones regulares para detección de datos cuantitativos / numéricos
 const NUMERICAL_UNIT_REGEX = /\b(\d+([.,]\d+)?\s*(ft|kt|kts|nudos|pies|metros|km|m|NM|SM|%|horas?|h|min(utos)?|seg(undos)?|d[ií]as|meses|a[ñn]os|kg|lbs?|toneladas?|psi|bar|hPa|inHg|°C|ºC|FL\s*\d+|M0\.\d+)\b|\bFL\s*\d+\b|\b\d+([.,]\d+)?%)/i;
@@ -113,3 +113,91 @@ export function filterFlashcards(
     return isNum || isAcro;
   });
 }
+
+function internalShuffle<T>(array: T[]): T[] {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+/**
+ * Retorna el estado de maestría de una flashcard según su historial para feedback visual y priorización.
+ */
+export function getFlashcardMasteryStatus(stat?: QuestionStats): {
+  tier: 1 | 2 | 3 | 4;
+  status: 'hard' | 'unseen' | 'regular' | 'mastered';
+  label: string;
+  views: number;
+} {
+  const views = stat?.flashcardViews || 0;
+  const answered = stat?.timesAnswered || 0;
+
+  if (!stat || (views === 0 && answered === 0)) {
+    return { tier: 2, status: 'unseen', label: '🆕 No Vista', views: 0 };
+  }
+
+  const incorrect = stat.timesIncorrect || 0;
+  const correct = stat.timesCorrect || 0;
+  const isHard = stat.flashcardLastRating === 'hard' || stat.isFlagged || (answered > 0 && incorrect > correct);
+
+  if (isHard) {
+    return { tier: 1, status: 'hard', label: '🔴 Difícil (Prioridad)', views };
+  }
+
+  const isMastered = stat.flashcardLastRating === 'easy' || (answered >= 2 && correct / answered >= 0.8);
+  if (isMastered) {
+    return { tier: 4, status: 'mastered', label: '🟢 Dominada', views };
+  }
+
+  return { tier: 3, status: 'regular', label: '🟡 Regular', views };
+}
+
+/**
+ * Construye un mazo inteligente de Flashcards con Priorización Cognitiva (Spaced Repetition):
+ * 1. Prioridad 1: Preguntas Difíciles (falladas, marcadas o calificadas como difíciles) -> Barajadas aleatoriamente
+ * 2. Prioridad 2: Preguntas No Vistas (nuevas para afianzar conceptos clave) -> Barajadas aleatoriamente
+ * 3. Prioridad 3: Preguntas Regulares (en proceso de consolidación) -> Barajadas aleatoriamente
+ * 4. Prioridad 4: Preguntas Dominadas (mantenimiento y repaso a largo plazo) -> Barajadas aleatoriamente
+ * 
+ * En cada nueva sesión, el orden interno se baraja aleatoriamente para evitar secuencias fijas de memoria.
+ */
+export function buildPrioritizedFlashcardDeck(
+  questions: Question[],
+  statsMap: Record<string, QuestionStats>,
+  category?: string,
+  filterType: 'all' | 'numerical' | 'acronym' = 'all',
+  randomizeWithinTiers: boolean = true
+): Question[] {
+  const eligible = filterFlashcards(questions, category, filterType);
+
+  const tier1Hard: Question[] = [];
+  const tier2Unseen: Question[] = [];
+  const tier3Regular: Question[] = [];
+  const tier4Mastered: Question[] = [];
+
+  for (const q of eligible) {
+    const stat = statsMap[q.id];
+    const { tier } = getFlashcardMasteryStatus(stat);
+
+    if (tier === 1) {
+      tier1Hard.push(q);
+    } else if (tier === 2) {
+      tier2Unseen.push(q);
+    } else if (tier === 3) {
+      tier3Regular.push(q);
+    } else {
+      tier4Mastered.push(q);
+    }
+  }
+
+  const t1 = randomizeWithinTiers ? internalShuffle(tier1Hard) : tier1Hard;
+  const t2 = randomizeWithinTiers ? internalShuffle(tier2Unseen) : tier2Unseen;
+  const t3 = randomizeWithinTiers ? internalShuffle(tier3Regular) : tier3Regular;
+  const t4 = randomizeWithinTiers ? internalShuffle(tier4Mastered) : tier4Mastered;
+
+  return [...t1, ...t2, ...t3, ...t4];
+}
+

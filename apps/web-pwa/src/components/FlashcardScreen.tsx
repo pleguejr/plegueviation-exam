@@ -26,10 +26,16 @@ import {
   List,
   Check
 } from 'lucide-react';
-import { Question, BankManifest, Option } from '../types';
-import { filterFlashcards, getFlashcardBadge, getFlashcardType } from '../utils/flashcardFilter';
+import { Question, BankManifest, Option, QuestionStats } from '../types';
+import { 
+  filterFlashcards, 
+  getFlashcardBadge, 
+  getFlashcardType,
+  buildPrioritizedFlashcardDeck,
+  getFlashcardMasteryStatus
+} from '../utils/flashcardFilter';
 import { shuffle, deleteQuestionFromBank } from '../services/questionsService';
-import { recordAnswerStat, getQuestionStat } from '../services/db';
+import { recordAnswerStat, getQuestionStat, recordFlashcardRating, getAllStatsMap } from '../services/db';
 import { DeleteConfirmModal } from './DeleteConfirmModal';
 import { ReviewRequestModal } from './ReviewRequestModal';
 import { FormattedText } from './FormattedText';
@@ -58,6 +64,7 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [deck, setDeck] = useState<Question[]>([]);
+  const [statsMap, setStatsMap] = useState<Record<string, QuestionStats>>({});
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
   const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
   const [isSessionCompleted, setIsSessionCompleted] = useState(false);
@@ -80,11 +87,13 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
   const [lastRatedFeedback, setLastRatedFeedback] = useState<'easy' | 'medium' | 'hard' | null>(null);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
 
-  // Construir el mazo de flashcards según categoría y filtro
-  const buildDeck = (cat: string, fType: 'all' | 'numerical' | 'acronym', randomize = false) => {
-    const filtered = filterFlashcards(questions, cat, fType);
-    const finalDeck = randomize ? shuffle(filtered) : filtered;
-    setDeck(finalDeck);
+  // Construir el mazo de flashcards con Priorización Cognitiva Inteligente (Spaced Repetition)
+  // 1° Difíciles (barajadas) -> 2° No Vistas (barajadas) -> 3° Regulares (barajadas) -> 4° Dominadas (barajadas)
+  const buildDeck = async (cat: string, fType: 'all' | 'numerical' | 'acronym', randomize = true) => {
+    const liveStats = await getAllStatsMap();
+    setStatsMap(liveStats);
+    const prioritizedDeck = buildPrioritizedFlashcardDeck(questions, liveStats, cat, fType, randomize);
+    setDeck(prioritizedDeck);
     setCurrentIndex(0);
     setIsFlipped(false);
     setIsSessionCompleted(false);
@@ -98,10 +107,12 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
   };
 
   useEffect(() => {
-    buildDeck(selectedCategory, filterType, false);
+    buildDeck(selectedCategory, filterType, true);
   }, [questions, selectedCategory, filterType]);
 
   const currentQuestion: Question | undefined = deck[currentIndex];
+  const currentStat: QuestionStats | undefined = currentQuestion ? statsMap[currentQuestion.id] : undefined;
+  const masteryStatus = getFlashcardMasteryStatus(currentStat);
   const correctOption: Option | undefined = currentQuestion?.options.find((o) => o.is_correct);
   const badgeInfo = currentQuestion ? getFlashcardBadge(currentQuestion) : null;
 
@@ -130,14 +141,16 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
   };
 
   const handleShuffle = () => {
-    setDeck((prev) => shuffle([...prev]));
+    const reshuffled = buildPrioritizedFlashcardDeck(questions, statsMap, selectedCategory, filterType, true);
+    setDeck(reshuffled);
     setCurrentIndex(0);
     setIsFlipped(false);
     setIsSessionCompleted(false);
+    showToast('🔀 Mazo reordenado priorizando difíciles y no vistas');
   };
 
   const handleRestart = () => {
-    buildDeck(selectedCategory, filterType, false);
+    buildDeck(selectedCategory, filterType, true);
   };
 
   const handleRetryHardOnly = () => {
@@ -169,14 +182,12 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
     setLastRatedFeedback(rating);
     setTimeout(() => setLastRatedFeedback(null), 400);
 
-    const isCorrect = rating === 'easy' || rating === 'medium';
-    await recordAnswerStat(
-      currentQuestion.id,
-      correctOption?.id || 'A',
-      isCorrect,
-      10,
-      'smart_review'
-    );
+    // Guardar estadísticas persistentes de repetición espaciada en IndexedDB
+    const updatedStat = await recordFlashcardRating(currentQuestion.id, rating);
+    setStatsMap((prev) => ({
+      ...prev,
+      [currentQuestion.id]: updatedStat
+    }));
 
     // Actualizar contadores de sesión
     setSessionStats((prev) => {
@@ -578,6 +589,21 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
                       {badgeInfo.label}
                     </span>
                   )}
+
+                  {/* Badge de Repetición Espaciada / Vistas */}
+                  <span className={`text-[11px] font-bold font-mono px-2.5 py-1 rounded-lg border flex items-center gap-1 ${
+                    masteryStatus.status === 'hard'
+                      ? 'bg-rose-500/15 text-rose-300 border-rose-500/40'
+                      : masteryStatus.status === 'unseen'
+                      ? 'bg-sky-500/15 text-sky-300 border-sky-500/40'
+                      : masteryStatus.status === 'mastered'
+                      ? 'bg-emerald-500/15 text-emerald-300 border-emerald-500/40'
+                      : 'bg-amber-500/15 text-amber-300 border-amber-500/40'
+                  }`}>
+                    <span>{masteryStatus.label}</span>
+                    <span className="opacity-60">•</span>
+                    <span>{masteryStatus.views} {masteryStatus.views === 1 ? 'vista' : 'vistas'}</span>
+                  </span>
                 </div>
 
                 <div className="flex items-center gap-2">

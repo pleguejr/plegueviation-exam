@@ -84,6 +84,9 @@ export interface QuestionStats {
   lastResult: boolean | null;
   isFlagged: boolean;
   history: AnswerHistoryEntry[];
+  flashcardViews?: number;
+  flashcardLastRating?: 'hard' | 'medium' | 'easy' | null;
+  flashcardLastViewedAt?: number | null;
 }
 
 export interface ExamSessionAnswer {
