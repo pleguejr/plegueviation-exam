@@ -694,7 +694,7 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
                     <div className="grid grid-cols-3 gap-2">
                       <button
                         onClick={() => handleRateMastery('hard')}
-                        className="px-3 py-2.5 rounded-xl bg-rose-950/60 hover:bg-rose-900 text-rose-300 border border-rose-500/40 text-xs font-bold transition-all active:scale-95 flex items-center justify-center gap-1.5 shadow-md"
+                        className="btn-flashcard-hard px-3 py-2.5 rounded-xl bg-rose-950/60 hover:bg-rose-900 text-rose-300 border border-rose-500/40 text-xs font-bold transition-all active:scale-95 flex items-center justify-center gap-1.5 shadow-md"
                       >
                         <Repeat className="w-3.5 h-3.5" />
                         <span>[1] Difícil (Re-encolar)</span>
@@ -702,7 +702,7 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
 
                       <button
                         onClick={() => handleRateMastery('medium')}
-                        className="px-3 py-2.5 rounded-xl bg-amber-950/60 hover:bg-amber-900 text-amber-300 border border-amber-500/40 text-xs font-bold transition-all active:scale-95 flex items-center justify-center gap-1.5 shadow-md"
+                        className="btn-flashcard-medium px-3 py-2.5 rounded-xl bg-amber-950/60 hover:bg-amber-900 text-amber-300 border border-amber-500/40 text-xs font-bold transition-all active:scale-95 flex items-center justify-center gap-1.5 shadow-md"
                       >
                         <AlertTriangle className="w-3.5 h-3.5" />
                         <span>[2] Regular</span>
@@ -710,7 +710,7 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
 
                       <button
                         onClick={() => handleRateMastery('easy')}
-                        className="px-3 py-2.5 rounded-xl bg-emerald-950/60 hover:bg-emerald-900 text-emerald-300 border border-emerald-500/40 text-xs font-bold transition-all active:scale-95 flex items-center justify-center gap-1.5 shadow-md"
+                        className="btn-flashcard-easy px-3 py-2.5 rounded-xl bg-emerald-950/60 hover:bg-emerald-900 text-emerald-300 border border-emerald-500/40 text-xs font-bold transition-all active:scale-95 flex items-center justify-center gap-1.5 shadow-md"
                       >
                         <CheckCircle2 className="w-3.5 h-3.5" />
                         <span>[3] Dominada</span>

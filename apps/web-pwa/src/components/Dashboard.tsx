@@ -24,11 +24,13 @@ import {
   LifeBuoy,
   User,
   RefreshCw,
-  AlertCircle
+  AlertCircle,
+  BarChart3
 } from 'lucide-react';
 import { Question, BankManifest, QuestionStats, ExamSession, ExamMode, ExamSelectionStrategy } from '../types';
 import { loadAllQuestions, loadManifest } from '../services/questionsService';
 import { getAllStatsMap, getExamHistory, db } from '../services/db';
+import { filterFlashcards } from '../utils/flashcardFilter';
 
 interface DashboardProps {
   onStartConfiguredExam: (params: {
@@ -182,79 +184,160 @@ export const Dashboard: React.FC<DashboardProps> = ({
   return (
     <div className="max-w-6xl mx-auto space-y-6 pb-20 font-sans">
       
-      {/* 1. Web Update Announcement Banner (Estilo AviationExam) */}
-      <div className="bg-[#0b1220] border border-[#1d2d4d] rounded-2xl p-5 text-center shadow-lg relative overflow-hidden">
+      {/* 1. Web Update Announcement Banner (Estilo Binter Canarias) */}
+      <div className="dashboard-announcement-banner bg-[#0b1426] border border-emerald-500/30 rounded-2xl p-5 text-center shadow-lg relative overflow-hidden">
         <div className="flex flex-col items-center justify-center space-y-2">
           <div className="w-12 h-12 rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 mb-1">
             <RefreshCw className="w-6 h-6 animate-spin-slow" />
           </div>
-          <h2 className="text-emerald-400 font-bold text-base">
-            Plegueviation Exam - Sistema Operacional Activo
+          <h2 className="text-emerald-400 font-extrabold text-base tracking-tight">
+            Plegueviation Exam — Sistema Operacional Binter Canarias
           </h2>
           <p className="text-slate-200 text-xs font-semibold">
             Binter Airlines (MOA/MOB) • Flota E195-E2 • C172N • P2010 TDI • Normativa EASA & SERA
           </p>
-          <div className="text-[11px] text-amber-400 font-mono flex items-center gap-1 mt-1">
-            <span>⚠️ Modo Offline Habilitado (IndexedDB Local)</span>
+          <div className="flex items-center gap-3 pt-1 text-[11px] font-mono">
+            <span className="text-amber-400 font-bold">⚠️ Modo Offline Habilitado (IndexedDB Local)</span>
+            <span className="text-emerald-300 font-bold hidden sm:inline">• {totalQuestions} Reactivos Oficiales</span>
+            <span className="text-sky-300 font-bold hidden sm:inline">• ⚡ Flashcards Activas</span>
           </div>
         </div>
       </div>
 
-      {/* 2. Signature AviationExam Dashboard Blue Card */}
-      <div className="bg-gradient-to-br from-[#77a6cb] via-[#6392b8] to-[#4c7ca3] text-[#0d2238] rounded-2xl p-6 shadow-xl border border-sky-300/40">
+      {/* 2. Signature Binter Performance Card con Gráfica de Precisión por Banco */}
+      <div className="binter-performance-card bg-gradient-to-br from-[#0a1c36] via-[#08172e] to-[#050e1c] text-white rounded-3xl p-6 sm:p-7 shadow-xl border border-emerald-500/30 space-y-6">
         
-        {/* Top bar of card */}
-        <div className="flex items-center justify-between pb-4 border-b border-sky-800/15">
-          <h1 className="text-3xl font-extrabold text-[#091b2e] tracking-tight">
-            Dashboard
-          </h1>
-          <div className="text-right">
-            <span className="text-sm font-semibold text-[#133052]">Average score: </span>
-            <span className="text-2xl font-black text-[#091b2e]">{overallAccuracy} %</span>
+        {/* Top Header Row */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-slate-700/60 gap-4">
+          <div>
+            <h1 className="text-2xl sm:text-3xl font-black text-white tracking-tight flex items-center gap-2">
+              <span className="w-2.5 h-6 rounded-full bg-[#008f45]" />
+              <span>Rendimiento Global</span>
+            </h1>
+            <p className="text-xs text-slate-300 font-medium pt-1">
+              {seenCount} preguntas exploradas de {totalQuestions} ({totalQuestions > 0 ? Math.round((seenCount / totalQuestions) * 100) : 0}% del banco)
+            </p>
+          </div>
+
+          <div className="flex items-center gap-3 bg-black/40 px-4 py-2.5 rounded-2xl border border-emerald-500/30 self-start sm:self-auto">
+            <div className="text-right">
+              <span className="text-[11px] font-bold text-slate-300 uppercase tracking-wider block">Average Score</span>
+              <span className="text-2xl sm:text-3xl font-black text-[#00a651] font-mono">{overallAccuracy}%</span>
+            </div>
+            <div className="w-10 h-10 rounded-full border-2 border-emerald-500/40 bg-emerald-500/10 flex items-center justify-center font-black text-xs text-emerald-300">
+              {overallAccuracy >= 75 ? '✓' : '!'}
+            </div>
           </div>
         </div>
 
-        {/* Central Chart / Grid Area */}
-        <div className="py-8 my-2">
-          {history.length >= 3 ? (
-            <div className="space-y-3">
-              <div className="h-28 flex items-end gap-2 bg-[#8bb4d4]/40 p-3 rounded-xl border border-sky-200/50">
-                {history.slice(0, 20).reverse().map((h, i) => {
-                  const pct = h.score?.percentage || 0;
-                  const passed = pct >= 75;
-                  return (
-                    <div key={i} className="flex-1 flex flex-col items-center gap-1 group relative">
-                      <div 
-                        className={`w-full rounded-t transition-all ${passed ? 'bg-emerald-600' : 'bg-rose-600'}`}
-                        style={{ height: `${Math.max(10, pct)}%` }}
-                      />
-                      <span className="text-[9px] font-mono font-bold text-[#091b2e]">{pct}%</span>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          ) : (
-            <div className="border border-dashed border-[#446d91] rounded-xl p-8 text-center bg-[#84afcf]/30">
-              <p className="text-sm font-medium text-[#112942]">
-                Here you will see your progress when you complete at least 3 tests
-              </p>
-              <div className="mt-3 flex items-center justify-center gap-2">
-                <button
-                  onClick={() => onStartConfiguredExam({ mode: 'practice', strategy: 'random', count: 10 })}
-                  className="px-4 py-1.5 rounded-lg bg-[#0f2d4e] hover:bg-[#163e6b] text-white text-xs font-bold shadow-md transition-all active:scale-95"
+        {/* 📊 GRÁFICA DE RENDIMIENTO POR BANCO */}
+        <div className="space-y-3">
+          <div className="flex items-center justify-between text-xs font-bold text-slate-300">
+            <span className="flex items-center gap-2">
+              <BarChart3 className="w-4 h-4 text-emerald-400" />
+              <span>Precisión y Cobertura por Banco de Preguntas:</span>
+            </span>
+            <span className="text-emerald-400 text-[11px] font-mono">Clic para test rápido</span>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {manifest?.categories.map((cat) => {
+              const catQuestions = questions.filter((q) => q._category === cat.id);
+              let catAnswered = 0;
+              let catCorrect = 0;
+              let catIncorrect = 0;
+
+              for (const q of catQuestions) {
+                const s = statsMap[q.id];
+                if (s && s.timesAnswered > 0) {
+                  catAnswered++;
+                  catCorrect += s.timesCorrect;
+                  catIncorrect += s.timesIncorrect;
+                }
+              }
+
+              const catAcc = (catCorrect + catIncorrect) > 0
+                ? Math.round((catCorrect / (catCorrect + catIncorrect)) * 100)
+                : 0;
+              const catSeenPct = catQuestions.length > 0
+                ? Math.round((catAnswered / catQuestions.length) * 100)
+                : 0;
+
+              return (
+                <div 
+                  key={cat.id}
+                  onClick={() => onStartConfiguredExam({ category: cat.id, mode: 'practice', strategy: 'random', count: 20 })}
+                  className="p-3.5 rounded-2xl bg-black/40 hover:bg-black/60 border border-slate-800 hover:border-emerald-500/50 cursor-pointer transition-all space-y-2 group shadow-sm"
+                  title={`Clic para iniciar test de 20 preguntas en ${cat.title}`}
                 >
-                  Iniciar Primer Test Ahora
-                </button>
-              </div>
-            </div>
-          )}
+                  <div className="flex items-center justify-between text-xs">
+                    <span className="font-bold text-white group-hover:text-emerald-400 transition-colors truncate max-w-[180px] sm:max-w-xs">
+                      {cat.title}
+                    </span>
+                    <div className="flex items-center gap-2 font-mono text-xs">
+                      <span className="text-slate-400 text-[10px]">
+                        {catAnswered}/{catQuestions.length} ({catSeenPct}%)
+                      </span>
+                      <span className={`font-black px-2 py-0.5 rounded text-xs ${
+                        catAcc >= 75
+                          ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30'
+                          : catAcc > 0
+                          ? 'bg-amber-500/20 text-amber-400 border border-amber-500/30'
+                          : 'bg-slate-800 text-slate-500'
+                      }`}>
+                        {catAcc}%
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Progress Bar with Binter Emerald & Atlantic Blue styling */}
+                  <div className="w-full h-2 rounded-full bg-slate-900 overflow-hidden border border-slate-800">
+                    <div 
+                      className={`h-full transition-all duration-500 ${
+                        catAcc >= 75
+                          ? 'bg-gradient-to-r from-[#008f45] to-[#00a651]'
+                          : catAcc > 0
+                          ? 'bg-gradient-to-r from-amber-600 to-amber-400'
+                          : 'bg-slate-700'
+                      }`}
+                      style={{ width: `${Math.max(catAcc > 0 ? 5 : 0, catAcc)}%` }}
+                    />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
 
+        {/* Central Historical Chart Area */}
+        {history.length > 0 && (
+          <div className="pt-2 border-t border-slate-800/80 space-y-2">
+            <div className="flex items-center justify-between text-xs text-slate-400">
+              <span className="font-bold text-slate-300">Tendencia de los Últimos {Math.min(24, history.length)} Simulacros:</span>
+              <span className="font-mono text-[11px]">{history.length} completados</span>
+            </div>
+            <div className="h-20 flex items-end gap-1.5 bg-black/40 p-2.5 rounded-2xl border border-slate-800">
+              {history.slice(0, 24).reverse().map((h, i) => {
+                const pct = h.score?.percentage || 0;
+                const passed = pct >= 75;
+                return (
+                  <div key={i} className="flex-1 flex flex-col items-center gap-1 group relative">
+                    <div 
+                      className={`w-full rounded-t transition-all ${passed ? 'bg-[#008f45] shadow-glow-emerald' : 'bg-rose-600 shadow-glow-rose'}`}
+                      style={{ height: `${Math.max(12, pct)}%` }}
+                      title={`Simulacro #${i + 1}: ${pct}% (${passed ? 'APTO' : 'NO APTO'})`}
+                    />
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
         {/* Bottom bar of card */}
-        <div className="flex items-center justify-between text-xs font-semibold text-[#112b45] pt-2 border-t border-sky-800/15">
-          <span>Score of your last 30 tests</span>
-          <span>{seenCount} Questions seen (de {totalQuestions})</span>
+        <div className="flex flex-wrap items-center justify-between text-xs font-semibold text-slate-400 pt-2 border-t border-slate-700/60 gap-2">
+          <span>🎯 Mastered: <strong className="text-emerald-400">{masteredCount}</strong> preguntas</span>
+          <span>🚩 Marcadas para repaso: <strong className="text-amber-400">{flaggedCount}</strong></span>
         </div>
 
       </div>
