@@ -13,7 +13,15 @@ When generating or editing aviation questions, flight manuals, operations checkl
 
 ---
 
-## 1. Mnemónicos Oficiales de Binter Canarias:
+## 1. Bugs & Screenshots Workflow (Carpeta `bugs/`)
+- **Ruta de Pantallazos de Errores**: `C:\Users\plegu\My Drive\Antigravity\Plegueviation exam\bugs\`
+- **Protocolo de Acción Obligatorio**:
+  * Siempre que el usuario solicite corregir fallos, errores o bugs en preguntas, el agente debe **revisar en primer lugar esta carpeta `bugs/`** usando `list_dir` y `view_file` para examinar los pantallazos colocados por el usuario.
+  * Analizar la captura del error, identificar el ID del reactivo o contenido afectado, cotejar con los manuales oficiales de la Sección 0, e implementar la solución correspondiente.
+
+---
+
+## 2. Mnemónicos Oficiales de Binter Canarias
 * **Briefing Despegue**: `TWIN` + `RETSE`.
 * **Briefing Aproximación**: `TWIN` + `E-DALTA`.
 * **Briefing a la Sobrecargo**: **`TELSI`** (Tipo de Emergencia, ETA, Lugar, Señales 30s, Instrucciones). **NUNCA usar NITS**.
@@ -22,7 +30,7 @@ When generating or editing aviation questions, flight manuals, operations checkl
 
 ---
 
-## 2. Velocidades de la Tecnam P2010 TDI (Continental CD-170):
+## 3. Velocidades de la Tecnam P2010 TDI (Continental CD-170)
 * $V_{NE} = 163\text{ KIAS}$, $V_{NO} = 130\text{ KIAS}$, $V_A = 119\text{ KIAS}$, $V_{FE}\text{ (T/O)} = 100\text{ KIAS}$, $V_{FE}\text{ (LAND)} = 90\text{ KIAS}$.
 * $V_{SO} = 52\text{ KIAS}$, $V_{S1} = 58\text{ KIAS}$, $V_R = 60\text{ KIAS}$, $V_X = 65/72\text{ KIAS}$, $V_Y = 75/82\text{ KIAS}$.
 * **Planeo ($V_{GLIDE}$)**: **`84 KIAS`** (Flap 0° / Clean, ratio 1:12).
@@ -30,14 +38,14 @@ When generating or editing aviation questions, flight manuals, operations checkl
 
 ---
 
-## 3. Velocidades de la Cessna 172N Skyhawk (Lycoming O-320-H2AD):
+## 4. Velocidades de la Cessna 172N Skyhawk (Lycoming O-320-H2AD)
 * $V_{NE} = 160\text{ KIAS}$, $V_{NO} = 128\text{ KIAS}$, $V_A = 97\text{ KIAS}$, $V_{FE} = 85\text{ KIAS}$, $V_{SO} = 40\text{ KIAS}$, $V_{S1} = 47\text{ KIAS}$.
 * $V_R = 55\text{ KIAS}$, $V_X = 59\text{ KIAS}$, $V_Y = 73\text{ KIAS}$, $V_{GLIDE} = 65\text{ KIAS}$.
 * **Aproximación final**: Flaps 40° = `60-70 KIAS`, Short Field = `61 KIAS`.
 
 ---
 
-## 4. Reglas Psicométricas de Redacción de Opciones y Distractores (EASA):
+## 5. Reglas Psicométricas de Redacción de Opciones y Distractores (EASA)
 * **Simetría de longitud estricta**: Las 4 opciones ($A, B, C, D$) deben tener la misma longitud ($\pm 15\%$) y estructura gramatical idéntica sin usar coletillas artificiales.
 * **Prohibidas las opciones idénticas**: Todas las 4 opciones deben ser conceptualmente y textualmente distintas.
 * **Prohibidos los distractores absurdos**: No inventar números irreales ni sustituciones mecánicas (e.g. `motor 3/4/5` en bimotores).
