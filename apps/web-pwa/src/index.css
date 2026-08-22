@@ -591,82 +591,311 @@
   font-weight: 800 !important;
 }
 
-/* 4. PREGUNTAS Y OPCIONES EN EXÁMENES Y EXPLORADOR */
-.theme-light .space-y-3 .border-slate-800,
-.theme-light .space-y-3 .border-slate-700 {
-  border-color: #e2e8f0 !important;
+/* 4. PANTALLA DE TEST / EXAMEN EN MODO DÍA (EXAM SCREEN) */
+
+/* 4.1 Header Bar de la Pregunta (Contador Q X/Y, Timer, Flag, Delete) */
+.theme-light .exam-header-bar {
+  background-color: #ffffff !important;
+  border: 1.5px solid #cbd5e1 !important;
+  color: #0f172a !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05) !important;
 }
 
-/* Option Row Unselected */
-.theme-light button.group:not(.bg-emerald-950):not(.bg-rose-950),
-.theme-light .border-slate-800.bg-\[\#091224\],
-.theme-light .bg-slate-900\/90 {
-  background-color: #f8fafc !important;
-  border-color: #cbd5e1 !important;
+.theme-light .exam-header-bar span.text-white,
+.theme-light .exam-header-bar span.font-extrabold {
   color: #0f172a !important;
 }
 
-.theme-light button.group:hover {
+.theme-light .exam-header-bar .bg-black\/40 {
+  background-color: #f1f5f9 !important;
+  border: 1.5px solid #cbd5e1 !important;
+  color: #004b87 !important;
+}
+
+.theme-light .exam-header-bar .bg-black\/40 span,
+.theme-light .exam-header-bar .bg-black\/40 svg {
+  color: #004b87 !important;
+  font-weight: 800 !important;
+}
+
+.theme-light .exam-header-bar button.bg-slate-800\/80 {
+  background-color: #f8fafc !important;
+  border: 1.5px solid #cbd5e1 !important;
+  color: #475569 !important;
+}
+
+.theme-light .exam-header-bar button.bg-slate-800\/80:hover {
+  background-color: #f0fdf4 !important;
+  border-color: #008f45 !important;
+  color: #008f45 !important;
+}
+
+/* 4.2 Sub-tabs (► PREGUNTA | EXPLICACIÓN | ESTADÍSTICAS) */
+.theme-light .exam-tab-bar {
+  background-color: #f1f5f9 !important;
+  border: 1.5px solid #cbd5e1 !important;
+}
+
+.theme-light .exam-tab-bar button.text-slate-400 {
+  color: #475569 !important;
+  background: transparent !important;
+}
+
+.theme-light .exam-tab-bar button.text-slate-400:hover {
+  color: #008f45 !important;
+  background-color: #e2e8f0 !important;
+}
+
+.theme-light .exam-tab-bar button.bg-gradient-to-r {
+  background: linear-gradient(90deg, #006837, #008f45) !important;
+  color: #ffffff !important;
+  font-weight: 800 !important;
+  box-shadow: 0 4px 12px -2px rgba(0, 104, 55, 0.25) !important;
+}
+
+.theme-light .exam-tab-bar button.bg-gradient-to-r span,
+.theme-light .exam-tab-bar button.bg-gradient-to-r svg {
+  color: #ffffff !important;
+}
+
+/* 4.3 Panel Principal de Pregunta / Explicación / Estadísticas */
+.theme-light .exam-panel-card,
+.theme-light .bg-\[\#0d1b38\] {
+  background-color: #ffffff !important;
+  border: 1.5px solid #cbd5e1 !important;
+  color: #0f172a !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-light .exam-panel-card h2 {
+  color: #0f172a !important;
+  font-weight: 700 !important;
+}
+
+.theme-light .exam-panel-card .text-sky-400 {
+  color: #006837 !important;
+  font-weight: 800 !important;
+}
+
+.theme-light .exam-panel-card .bg-black\/40 {
+  background-color: #f8fafc !important;
+  border: 1.5px solid #e2e8f0 !important;
+  color: #1e293b !important;
+}
+
+.theme-light .exam-panel-card .bg-black\/40 span,
+.theme-light .exam-panel-card .bg-black\/40 p {
+  color: #1e293b !important;
+}
+
+/* 4.4 Opciones de Respuesta en Test / Examen */
+.theme-light .exam-option-card {
+  background-color: #ffffff !important;
+  border: 1.5px solid #cbd5e1 !important;
+  color: #0f172a !important;
+  box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-light .exam-option-card:hover {
   background-color: #f0fdf4 !important;
   border-color: #008f45 !important;
 }
 
-.theme-light button.group span.text-slate-300,
-.theme-light button.group span.text-slate-200,
-.theme-light button.group span.text-slate-400 {
+.theme-light .exam-option-card .text-slate-200,
+.theme-light .exam-option-card .text-white {
+  color: #0f172a !important;
+  font-weight: 600 !important;
+}
+
+.theme-light .exam-option-card .text-sky-400 {
+  color: #004b87 !important;
+  font-weight: 800 !important;
+}
+
+/* Opción Seleccionada (Modo Examen / Simulacro) */
+.theme-light .exam-option-card.bg-sky-950\/70,
+.theme-light .exam-option-card.border-sky-400 {
+  background-color: #eff6ff !important;
+  border: 2px solid #004b87 !important;
+  color: #004b87 !important;
+  box-shadow: 0 4px 15px -2px rgba(0, 75, 135, 0.18) !important;
+}
+
+.theme-light .exam-option-card.bg-sky-950\/70 .text-sky-300,
+.theme-light .exam-option-card.bg-sky-950\/70 .text-white {
+  color: #004b87 !important;
+  font-weight: 800 !important;
+}
+
+/* Opción Correcta (Modo Práctica tras responder) */
+.theme-light .exam-option-card.bg-emerald-950\/60,
+.theme-light .exam-option-card.border-emerald-500 {
+  background-color: #ecfdf5 !important;
+  border: 2px solid #008f45 !important;
+  color: #064e3b !important;
+  box-shadow: 0 4px 15px -2px rgba(0, 143, 69, 0.18) !important;
+}
+
+.theme-light .exam-option-card.bg-emerald-950\/60 div {
+  color: #064e3b !important;
+  font-weight: 700 !important;
+}
+
+/* Opción Incorrecta Seleccionada (Modo Práctica tras fallar) */
+.theme-light .exam-option-card.bg-rose-950\/60,
+.theme-light .exam-option-card.border-rose-500 {
+  background-color: #fff1f2 !important;
+  border: 2px solid #ef4444 !important;
+  color: #881337 !important;
+  box-shadow: 0 4px 15px -2px rgba(239, 68, 68, 0.18) !important;
+}
+
+.theme-light .exam-option-card.bg-rose-950\/60 div {
+  color: #881337 !important;
+  font-weight: 700 !important;
+}
+
+/* Opciones No Seleccionadas tras responder */
+.theme-light .exam-option-card.bg-black\/30 {
+  background-color: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  color: #94a3b8 !important;
+  opacity: 0.55 !important;
+}
+
+.theme-light .exam-option-card.bg-black\/30 div {
+  color: #64748b !important;
+}
+
+/* Feedback Inmediato Inline (Acierto / Fallo) */
+.theme-light .bg-emerald-950\/40.border-emerald-500\/40 {
+  background-color: #ecfdf5 !important;
+  border: 1.5px solid #34d399 !important;
+  color: #064e3b !important;
+}
+
+.theme-light .bg-emerald-950\/40.border-emerald-500\/40 span,
+.theme-light .bg-emerald-950\/40.border-emerald-500\/40 svg {
+  color: #064e3b !important;
+  font-weight: 700 !important;
+}
+
+.theme-light .bg-rose-950\/40.border-rose-500\/40 {
+  background-color: #fff1f2 !important;
+  border: 1.5px solid #f87171 !important;
+  color: #881337 !important;
+}
+
+.theme-light .bg-rose-950\/40.border-rose-500\/40 span,
+.theme-light .bg-rose-950\/40.border-rose-500\/40 svg {
+  color: #881337 !important;
+  font-weight: 700 !important;
+}
+
+.theme-light .bg-rose-950\/40.border-rose-500\/40 p,
+.theme-light .bg-rose-950\/40.border-rose-500\/40 .text-slate-300 {
   color: #1e293b !important;
 }
 
-/* Option Letter Badge (A, B, C, D) */
-.theme-light .bg-slate-800.text-slate-400,
-.theme-light .bg-slate-800.text-sky-300 {
-  background-color: #e2e8f0 !important;
-  color: #004b87 !important;
-  border-color: #cbd5e1 !important;
+/* 4.5 Matriz Lateral de 5 Columnas (Question Grid Palette) */
+.theme-light .exam-matrix-card {
+  background-color: #ffffff !important;
+  border: 1.5px solid #cbd5e1 !important;
+  color: #0f172a !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.06) !important;
 }
 
-/* Correct Option in Exam Review */
-.theme-light .bg-emerald-950,
-.theme-light .bg-emerald-950\/40,
-.theme-light .bg-emerald-950\/60 {
-  background-color: #ecfdf5 !important;
+.theme-light .exam-matrix-card button.bg-slate-800 {
+  background: #004b87 !important;
+  color: #ffffff !important;
+  border: 1.5px solid #003366 !important;
+  font-weight: 800 !important;
+}
+
+.theme-light .exam-matrix-card button.bg-slate-800:hover {
+  background: #006837 !important;
+  border-color: #00502a !important;
+}
+
+.theme-light .exam-matrix-cell {
+  background-color: #f8fafc !important;
+  border: 1.5px solid #cbd5e1 !important;
+  color: #0f172a !important;
+  font-weight: 700 !important;
+}
+
+.theme-light .exam-matrix-cell:hover {
+  background-color: #f0fdf4 !important;
   border-color: #008f45 !important;
-  color: #064e3b !important;
+  color: #008f45 !important;
 }
 
-.theme-light .bg-emerald-950 span,
-.theme-light .bg-emerald-950\/40 span,
-.theme-light .bg-emerald-950\/60 span,
-.theme-light .bg-emerald-950 p,
-.theme-light .bg-emerald-950\/40 p {
-  color: #064e3b !important;
-}
-
-.theme-light .bg-emerald-500 {
+.theme-light .exam-matrix-cell.bg-emerald-500 {
   background-color: #008f45 !important;
   color: #ffffff !important;
+  font-weight: 800 !important;
+  border-color: #006837 !important;
 }
 
-/* Incorrect Option in Exam Review */
-.theme-light .bg-rose-950,
-.theme-light .bg-rose-950\/40,
-.theme-light .bg-rose-950\/60 {
-  background-color: #fff1f2 !important;
-  border-color: #e11d48 !important;
-  color: #881337 !important;
-}
-
-.theme-light .bg-rose-950 span,
-.theme-light .bg-rose-950\/40 span,
-.theme-light .bg-rose-950\/60 span,
-.theme-light .bg-rose-950 p,
-.theme-light .bg-rose-950\/40 p {
-  color: #881337 !important;
-}
-
-.theme-light .bg-rose-500 {
-  background-color: #e11d48 !important;
+.theme-light .exam-matrix-cell.bg-rose-500 {
+  background-color: #ef4444 !important;
   color: #ffffff !important;
+  font-weight: 800 !important;
+  border-color: #dc2626 !important;
+}
+
+.theme-light .exam-matrix-cell.bg-sky-500 {
+  background-color: #004b87 !important;
+  color: #ffffff !important;
+  font-weight: 800 !important;
+  border-color: #003366 !important;
+}
+
+/* 4.6 Pantalla de Resultados y Revisión de Exámenes (Exam Results) */
+.theme-light .exam-results-banner {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.08) !important;
+}
+
+.theme-light .exam-results-banner h1 {
+  color: #0f172a !important;
+}
+
+.theme-light .exam-results-banner p {
+  color: #334155 !important;
+}
+
+.theme-light .exam-results-banner .bg-slate-900\/60 {
+  background-color: #f8fafc !important;
+  border: 1.5px solid #e2e8f0 !important;
+  color: #0f172a !important;
+}
+
+.theme-light .exam-results-banner .bg-slate-900\/60 span.text-white {
+  color: #0f172a !important;
+}
+
+.theme-light .exam-review-card {
+  background-color: #ffffff !important;
+  border: 1.5px solid #cbd5e1 !important;
+  color: #0f172a !important;
+  box-shadow: 0 4px 15px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-light .exam-review-card h3 {
+  color: #0f172a !important;
+}
+
+.theme-light .exam-review-card .bg-aviation-950\/90 {
+  background-color: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  color: #1e293b !important;
+}
+
+.theme-light .exam-review-card .bg-aviation-950\/90 p,
+.theme-light .exam-review-card .bg-aviation-950\/90 span {
+  color: #1e293b !important;
 }
 
 /* 5. TABLAS DE EXPLICACIÓN Y VELOCIDADES */

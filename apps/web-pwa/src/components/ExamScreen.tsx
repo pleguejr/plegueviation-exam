@@ -331,7 +331,7 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
         <div className="lg:col-span-8 space-y-4">
           
           {/* Question Header Bar */}
-          <div className="bg-[#0e1933] border border-sky-500/20 rounded-2xl p-4 shadow-lg flex flex-wrap items-center justify-between gap-3">
+          <div className="exam-header-bar bg-[#0e1933] border border-sky-500/20 rounded-2xl p-4 shadow-lg flex flex-wrap items-center justify-between gap-3">
             
             {/* Question Counter & Pin/Flag & Delete */}
             <div className="flex items-center gap-2.5">
@@ -385,7 +385,7 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
           </div>
 
           {/* Sub-tabs: QUESTION | EXPLANATION | STATISTICS */}
-          <div className="flex items-center gap-1 bg-[#091224] p-1.5 rounded-xl border border-sky-500/20 text-xs font-bold">
+          <div className="exam-tab-bar flex items-center gap-1 bg-[#091224] p-1.5 rounded-xl border border-sky-500/20 text-xs font-bold">
             <button
               onClick={() => setActiveTab('question')}
               className={`flex items-center gap-1.5 px-4 py-2 rounded-lg transition-all ${
@@ -424,7 +424,7 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
 
           {/* Tab 1: Question Stem & Options */}
           {activeTab === 'question' && (
-            <div className="bg-[#0d1b38] border border-sky-500/20 rounded-2xl p-6 lg:p-8 shadow-xl space-y-6">
+            <div className="exam-panel-card bg-[#0d1b38] border border-sky-500/20 rounded-2xl p-6 lg:p-8 shadow-xl space-y-6">
               
               {/* Learning Objective */}
               <div className="text-xs font-mono text-sky-400 uppercase tracking-wider font-bold">
@@ -489,7 +489,7 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
                     <div
                       key={opt.id}
                       onClick={() => handleSelectOption(opt)}
-                      className={`p-4 rounded-xl border flex items-start gap-4 cursor-pointer transition-all duration-150 active:scale-[0.99] ${cardStyle}`}
+                      className={`exam-option-card p-4 rounded-xl border flex items-start gap-4 cursor-pointer transition-all duration-150 active:scale-[0.99] ${cardStyle}`}
                     >
                       <div className={`text-base font-mono w-6 flex-shrink-0 pt-0.5 ${letterStyle}`}>
                         {opt.id}
@@ -545,7 +545,7 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
 
           {/* Tab 2: Explanation View */}
           {activeTab === 'explanation' && (
-            <div className="bg-[#0d1b38] border border-sky-500/20 rounded-2xl p-6 lg:p-8 shadow-xl space-y-5 animate-fade-in">
+            <div className="exam-panel-card bg-[#0d1b38] border border-sky-500/20 rounded-2xl p-6 lg:p-8 shadow-xl space-y-5 animate-fade-in">
               <div className="flex items-center gap-2 text-sky-400 font-bold text-sm">
                 <FileText className="w-5 h-5" />
                 <span>Explicación & Referencias Oficiales</span>
@@ -590,7 +590,7 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
 
           {/* Tab 3: Statistics View */}
           {activeTab === 'stats' && (
-            <div className="bg-[#0d1b38] border border-sky-500/20 rounded-2xl p-6 lg:p-8 shadow-xl space-y-5 animate-fade-in">
+            <div className="exam-panel-card bg-[#0d1b38] border border-sky-500/20 rounded-2xl p-6 lg:p-8 shadow-xl space-y-5 animate-fade-in">
               <div className="flex items-center gap-2 text-sky-400 font-bold text-sm">
                 <TrendingUp className="w-5 h-5" />
                 <span>Estadísticas de Rendimiento del Reactivo</span>
@@ -658,7 +658,7 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
         {/* Right Column: 5-Column Question Grid Palette (EXACT AviationExam Style) */}
         <div className="lg:col-span-4 space-y-4 sticky top-16">
           
-          <div className="bg-[#0e1933] border border-sky-500/25 rounded-2xl p-5 shadow-xl space-y-4">
+          <div className="exam-matrix-card bg-[#0e1933] border border-sky-500/25 rounded-2xl p-5 shadow-xl space-y-4">
             
             {/* Top Action Links: Save / Cancel / Finish */}
             <div className="flex items-center justify-between text-xs text-slate-400 pb-1">
@@ -711,7 +711,7 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({
                     <button
                       key={q.id}
                       onClick={() => navigateTo(idx)}
-                      className={`h-9 rounded-lg border text-xs font-mono flex items-center justify-center transition-all duration-150 relative cursor-pointer ${cellStyle}`}
+                      className={`exam-matrix-cell h-9 rounded-lg border text-xs font-mono flex items-center justify-center transition-all duration-150 relative cursor-pointer ${cellStyle}`}
                       title={`Pregunta ${idx + 1}: ${q.id}`}
                     >
                       <span>{idx + 1}</span>

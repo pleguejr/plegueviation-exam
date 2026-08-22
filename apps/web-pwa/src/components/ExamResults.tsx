@@ -80,7 +80,7 @@ export const ExamResults: React.FC<ExamResultsProps> = ({
     <div className="max-w-4xl mx-auto space-y-8 pb-20 animate-fade-in">
       
       {/* Top Banner with Pass/Fail Badge */}
-      <div className={`rounded-3xl p-6 sm:p-8 border shadow-2xl relative overflow-hidden ${
+      <div className={`exam-results-banner rounded-3xl p-6 sm:p-8 border shadow-2xl relative overflow-hidden ${
         isPassed 
           ? 'bg-gradient-to-br from-emerald-950/40 via-slate-900/60 to-emerald-900/20 border-emerald-500/40 shadow-glow-emerald' 
           : 'bg-gradient-to-br from-rose-950/40 via-slate-900/60 to-rose-900/20 border-rose-500/40 shadow-glow-rose'
@@ -249,7 +249,7 @@ export const ExamResults: React.FC<ExamResultsProps> = ({
             return (
               <div 
                 key={q.id}
-                className="glass-panel rounded-2xl p-5 shadow-lg space-y-4 border-sky-500/20 transition-all"
+                className="exam-review-card glass-panel rounded-2xl p-5 shadow-lg space-y-4 border-sky-500/20 transition-all"
               >
                 <div 
                   onClick={() => toggleExpand(q.id)}
