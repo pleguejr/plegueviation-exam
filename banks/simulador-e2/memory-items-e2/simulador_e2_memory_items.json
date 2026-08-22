@@ -1,85 +1,189 @@
 [
   {
-    "id": "SIM-E2-MEM-001",
+    "id": "SIM-MEM-001",
     "subject_id": "simulador-e2",
-    "learning_objective": "E195-E2 Memory Items - CABIN ALTITUDE HIGH",
-    "stem": "¿Cuál es la secuencia exacta de acciones de memoria (Memory Items) requerida en el Embraer 195-E2 ante el aviso EICAS 'CABIN ALTITUDE HIGH'?",
+    "learning_objective": "Memory Item – CABIN ALTITUDE HIGH (paso 1/3)",
+    "stem": "Primeros dos pasos del Memory Item 'CABIN ALTITUDE HIGH' en el E195-E2:",
     "options": [
       {
         "id": "A",
-        "text": "Crew Oxy Masks: DON 100% | Crew Communication: ESTABLISH | Altitude: 10.000 ft o MEA | Thrust Levers: IDLE | Speedbrake: FULL OPEN | Airspeed: MAX / APPROPRIATE | Transponder: 7700.",
+        "text": "Crew Oxy Masks: DON 100% → Crew Communication: ESTABLISH.",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Crew Oxy Masks: DON NORMAL | Crew Communication: ESTABLISH | Altitude: 14.000 ft | Thrust Levers: IDLE | Speedbrake: FULL OPEN | Airspeed: 250 KIAS | Transponder: 7600.",
+        "text": "Thrust Levers: IDLE → Speedbrake: FULL OPEN.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Thrust Levers: IDLE | Speedbrake: FULL OPEN | Altitude: 10.000 ft | Crew Oxy Masks: DON 100% solo si la altitud de cabina supera 14.000 ft | Transponder: 7700.",
+        "text": "Altitude: 10.000 ft → Transponder: 7700.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "DUMP Button: PUSH IN | Crew Oxy Masks: DON 100% | Altitude: FL100 o MEA | Speedbrake: OPEN | Airspeed: 270 KIAS | Transponder: 7700.",
+        "text": "DUMP Button: PUSH IN → Crew Oxy Masks: DON NORMAL.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Ante la condición **CABIN ALTITUDE HIGH** en el Embraer 195-E2, la secuencia de acciones de memoria es:\n\n1. **Crew Oxy Masks**: DON, 100%\n2. **Crew Communication**: ESTABLISH\n3. **Altitude**: 10.000 ft or MEA, WHICHEVER IS HIGHER\n4. **Thrust Levers**: IDLE\n5. **Speedbrake Lever**: FULL OPEN\n6. **Airspeed**: MAX / APPROPRIATE\n7. **Transponder**: 7700",
+      "text": "1. **Crew Oxy Masks**: DON, 100%\n2. **Crew Communication**: ESTABLISH\n\n*(Pasos previos a cualquier acción de vuelo)*.",
       "references": [
-        "Embraer E195-E2 QRH - Section 1: CABIN ALTITUDE HIGH",
-        "RemNote Flashcards - MEMORY ITEMS"
+        "Embraer E195-E2 QRH – Section 1: Memory Items",
+        "RemNote – MEMORY ITEMS"
       ]
     },
-    "metadata": {
-      "difficulty": 0.2
-    }
+    "metadata": {}
   },
   {
-    "id": "SIM-E2-MEM-002",
+    "id": "SIM-MEM-002",
     "subject_id": "simulador-e2",
-    "learning_objective": "E195-E2 Memory Items - ENG 1(2) FIRE",
-    "stem": "Durante el vuelo, se activa la alarma y mensaje EICAS 'ENG 1(2) FIRE'. ¿Cuáles son las acciones de memoria mandatarias que debe ejecutar la tripulación?",
+    "learning_objective": "Memory Item – CABIN ALTITUDE HIGH (paso 2/3)",
+    "stem": "¿Cuál es la altitud objetivo y la actitud de gases en el Memory Item 'CABIN ALTITUDE HIGH'?",
     "options": [
       {
         "id": "A",
-        "text": "Autothrottle: DISENGAGE | N1 (motor operativo): MÍNIMO 5% POR ENCIMA DE N1 IDLE | Motor afectado: Thrust Lever IDLE, START/STOP STOP, FIRE EXTINGUISHER HANDLE PULL.",
+        "text": "Altitude: 10.000 ft o MEA (la mayor) | Thrust Levers: IDLE.",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Autothrottle: MANTENER CONECTADO | Motor afectado: START/STOP STOP inmediatamente, Thrust Lever IDLE, FIRE EXTINGUISHER HANDLE PULL y descargar ambas botellas.",
+        "text": "Altitude: 14.000 ft o MEA | Thrust Levers: MAX CONTINUOUS.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Motor afectado: FIRE EXTINGUISHER HANDLE PULL de inmediato | Autothrottle: DISENGAGE | N1 operativo: N1 MÁXIMO CONTINUO | Thrust Lever afectado: IDLE.",
+        "text": "Altitude: FL100 fijo | Thrust Levers: IDLE.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Autothrottle: DISENGAGE | Thrust Levers: AMBOS A IDLE | START/STOP motor afectado: STOP | FIRE EXTINGUISHER HANDLE: PULL solo tras confirmar en QRH.",
+        "text": "Altitude: 8.000 ft | Thrust Levers: CLIMB.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Para el procedimiento de **ENG 1(2) FIRE** en el E195-E2:\n\n- **Autothrottle**: DISENGAGE\n- **N1 (operative engine)**: MIN 5% ABOVE N1 IDLE\n- **Affected Engine**:\n  - *Thrust Lever*: IDLE\n  - *START/STOP selector*: STOP\n  - *FIRE EXTINGUISHER HANDLE*: PULL",
+      "text": "**Altitude**: 10.000 ft or MEA, WHICHEVER IS HIGHER.\n**Thrust Levers**: IDLE.",
       "references": [
-        "Embraer E195-E2 QRH - Section 1: ENG 1(2) FIRE",
-        "RemNote Flashcards - MEMORY ITEMS"
+        "Embraer E195-E2 QRH – Section 1: Memory Items",
+        "RemNote – MEMORY ITEMS"
       ]
     },
-    "metadata": {
-      "difficulty": 0.3
-    }
+    "metadata": {}
   },
   {
-    "id": "SIM-E2-MEM-003",
+    "id": "SIM-MEM-003",
     "subject_id": "simulador-e2",
-    "learning_objective": "E195-E2 Memory Items - BATT 1(2) OVERTEMP",
-    "stem": "Ante la aparición del aviso de advertencia EICAS 'BATT 1(2) OVERTEMP', ¿cuál es la acción de memoria inmediata?",
+    "learning_objective": "Memory Item – CABIN ALTITUDE HIGH (paso 3/3)",
+    "stem": "Últimos tres pasos del Memory Item 'CABIN ALTITUDE HIGH':",
+    "options": [
+      {
+        "id": "A",
+        "text": "Speedbrake: FULL OPEN | Airspeed: MAX/APPROPRIATE | Transponder: 7700.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Speedbrake: FLIGHT | Airspeed: 250 KIAS | Transponder: 7600.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Speedbrake: FULL OPEN | Airspeed: 270 KIAS | Transponder: 2000.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Speedbrake: RETRACTED | Airspeed: MAX | Transponder: 7700.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "**Speedbrake Lever**: FULL OPEN\n**Airspeed**: MAX / APPROPRIATE\n**Transponder**: 7700.",
+      "references": [
+        "Embraer E195-E2 QRH – Section 1: Memory Items",
+        "RemNote – MEMORY ITEMS"
+      ]
+    },
+    "metadata": {}
+  },
+  {
+    "id": "SIM-MEM-004",
+    "subject_id": "simulador-e2",
+    "learning_objective": "Memory Item – ENG 1(2) FIRE (autothrottle y N1 operativo)",
+    "stem": "Ante 'ENG 1(2) FIRE', ¿cuáles son las dos primeras acciones que afectan al motor OPERATIVO?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Autothrottle: DISENGAGE | N1 operativo: MIN 5% ABOVE N1 IDLE.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Autothrottle: MANTENER | N1 operativo: MAX CONTINUOUS.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Autothrottle: DISENGAGE | N1 operativo: TOGA.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Autothrottle: DISENGAGE | N1 operativo: CLIMB.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "**Autothrottle**: DISENGAGE\n**N1 (operative engine)**: MIN 5% ABOVE N1 IDLE.",
+      "references": [
+        "Embraer E195-E2 QRH – Section 1: Memory Items",
+        "RemNote – MEMORY ITEMS"
+      ]
+    },
+    "metadata": {}
+  },
+  {
+    "id": "SIM-MEM-005",
+    "subject_id": "simulador-e2",
+    "learning_objective": "Memory Item – ENG 1(2) FIRE (motor afectado)",
+    "stem": "¿Cuáles son las tres acciones sobre el motor AFECTADO en el Memory Item 'ENG 1(2) FIRE'?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Thrust Lever: IDLE → START/STOP: STOP → FIRE EXT HANDLE: PULL.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "FIRE EXT HANDLE: PULL → Thrust Lever: IDLE → START/STOP: STOP.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "START/STOP: STOP → FIRE EXT HANDLE: PULL → Thrust Lever: IDLE.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Thrust Lever: IDLE → FIRE EXT HANDLE: PULL → START/STOP: STOP.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Orden exacto del QRH:\n1. *Thrust Lever*: **IDLE**\n2. *START/STOP selector*: **STOP**\n3. *FIRE EXTINGUISHER HANDLE*: **PULL**",
+      "references": [
+        "Embraer E195-E2 QRH – Section 1: Memory Items",
+        "RemNote – MEMORY ITEMS"
+      ]
+    },
+    "metadata": {}
+  },
+  {
+    "id": "SIM-MEM-006",
+    "subject_id": "simulador-e2",
+    "learning_objective": "Memory Item – BATT 1(2) OVERTEMP",
+    "stem": "Único Memory Item ante 'BATT 1(2) OVERTEMP':",
     "options": [
       {
         "id": "A",
@@ -93,31 +197,29 @@
       },
       {
         "id": "C",
-        "text": "APU Generator: OFF y BATT Knob: OFF.",
+        "text": "IDG del lado afectado: DISCONNECT.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "IDG del lado asociado: DISCONNECT.",
+        "text": "APU Generator: OFF.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Para la condición **BATT 1(2) OVERTEMP**, la única acción de memoria requerida es:\n\n- **Associated BATT Knob**: OFF",
+      "text": "**Associated BATT Knob**: OFF.\n\nEs la única acción de memoria requerida.",
       "references": [
-        "Embraer E195-E2 QRH - Section 1: BATT 1(2) OVERTEMP",
-        "RemNote Flashcards - MEMORY ITEMS"
+        "Embraer E195-E2 QRH – Section 1: Memory Items",
+        "RemNote – MEMORY ITEMS"
       ]
     },
-    "metadata": {
-      "difficulty": 0.1
-    }
+    "metadata": {}
   },
   {
-    "id": "SIM-E2-MEM-004",
+    "id": "SIM-MEM-007",
     "subject_id": "simulador-e2",
-    "learning_objective": "E195-E2 Memory Items - APU FIRE",
-    "stem": "¿Cuál es la acción de memoria mandatoria ante un aviso de fuego en el APU ('APU FIRE') en vuelo o en tierra?",
+    "learning_objective": "Memory Item – APU FIRE",
+    "stem": "Único Memory Item ante 'APU FIRE':",
     "options": [
       {
         "id": "A",
@@ -126,36 +228,34 @@
       },
       {
         "id": "B",
-        "text": "APU Master Knob: OFF y esperar 1 minuto.",
+        "text": "APU Master Knob: OFF.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "APU SHUTOFF Valve: PULL y APU BLEED: OFF.",
+        "text": "BATT 1 y BATT 2: OFF.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "BATT 1 y BATT 2 Knobs: OFF.",
+        "text": "APU BLEED: OFF → APU Master Knob: OFF.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Ante la activación de **APU FIRE**, el Memory Item es:\n\n- **APU EMER STOP Button**: PUSH IN\n\n*(Nota: En tierra el APU se apaga automáticamente tras 10 segundos de detección de fuego; en vuelo requiere la pulsación del botón de parada de emergencia).*",
+      "text": "**APU EMER STOP Button**: PUSH IN.\n\n*(En tierra el APU se apaga automáticamente a los 10 segundos de detección).*",
       "references": [
-        "Embraer E195-E2 QRH - Section 1: APU FIRE",
-        "RemNote Flashcards - MEMORY ITEMS"
+        "Embraer E195-E2 QRH – Section 1: Memory Items",
+        "RemNote – MEMORY ITEMS"
       ]
     },
-    "metadata": {
-      "difficulty": 0.1
-    }
+    "metadata": {}
   },
   {
-    "id": "SIM-E2-MEM-005",
+    "id": "SIM-MEM-008",
     "subject_id": "simulador-e2",
-    "learning_objective": "E195-E2 Memory Items - CARGO FWD(AFT) SMOKE",
-    "stem": "Al recibir el mensaje de alarma 'CARGO FWD SMOKE' o 'CARGO AFT SMOKE', ¿qué acción de memoria debe ejecutarse de inmediato?",
+    "learning_objective": "Memory Item – CARGO FWD(AFT) SMOKE",
+    "stem": "Único Memory Item ante 'CARGO FWD(AFT) SMOKE' o 'CARGO COMPARTMENT SMOKE':",
     "options": [
       {
         "id": "A",
@@ -164,112 +264,142 @@
       },
       {
         "id": "B",
-        "text": "DUMP Button: PUSH IN y descender a 10.000 ft.",
+        "text": "DUMP Button: PUSH IN.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "RECIRC FANS: OFF y CARGO ISOLATION Valve: CLOSE.",
+        "text": "RECIRC FANS: OFF.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Associated BATT Knob: OFF y Cabin Altitude: MAN.",
+        "text": "CARGO ISOLATION Valve: CLOSE.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Para **CARGO FWD(AFT) SMOKE** / **CARGO COMPARTMENT SMOKE**:\n\n- **Associated Cargo Smoke Button**: PUSH\n\n*(Esto corta la ventilación del compartimento y descarga inmediatamente la botella de alta descarga, armando la botella de baja descarga para su dosificación sostenida)*.",
+      "text": "**Associated Cargo Smoke Button**: PUSH.\n\nActiva la descarga inmediata de la botella de alta y arma la de baja para dosificación sostenida.",
       "references": [
-        "Embraer E195-E2 QRH - Section 1: CARGO FWD(AFT) SMOKE",
-        "RemNote Flashcards - MEMORY ITEMS"
+        "Embraer E195-E2 QRH – Section 1: Memory Items",
+        "RemNote – MEMORY ITEMS"
       ]
     },
-    "metadata": {
-      "difficulty": 0.1
-    }
+    "metadata": {}
   },
   {
-    "id": "SIM-E2-MEM-006",
+    "id": "SIM-MEM-009",
     "subject_id": "simulador-e2",
-    "learning_objective": "E195-E2 Memory Items - EMERGENCY DESCENT",
-    "stem": "¿Cuál es el procedimiento completo de acciones de memoria para un descenso de emergencia ('EMERGENCY DESCENT') en el E195-E2?",
+    "learning_objective": "Memory Item – EMERGENCY DESCENT (primer paso)",
+    "stem": "¿Cuál es el PRIMER paso del Memory Item 'EMERGENCY DESCENT'?",
     "options": [
       {
         "id": "A",
-        "text": "FSTN BELTS Switch: ON | Altitude: 10.000 ft o MEA | Thrust Levers: IDLE | Speedbrake: FULL OPEN | Airspeed: MAX / APPROPRIATE | Transponder: 7700.",
+        "text": "FSTN BELTS Switch: ON.",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "FSTN BELTS Switch: ON | Altitude: 14.000 ft | Thrust Levers: IDLE | Speedbrake: FLIGHT | Airspeed: 250 KIAS | Transponder: 7600.",
+        "text": "Thrust Levers: IDLE.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Airspeed: 270 KIAS | Altitude: MEA | Speedbrake: RETRACTED | Thrust Levers: CLIMB | Transponder: 7700.",
+        "text": "Speedbrake: FULL OPEN.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Crew Oxy Masks: DON NORMAL | FSTN BELTS: AUTO | Altitude: FL100 | Speedbrake: FULL OPEN | Transponder: 2000.",
+        "text": "Transponder: 7700.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Acciones de memoria para **EMERGENCY DESCENT**:\n\n1. **FSTN BELTS Switch**: ON\n2. **Altitude**: 10.000 ft or MEA, WHICHEVER IS HIGHER\n3. **Thrust Levers**: IDLE\n4. **Speedbrake Lever**: FULL OPEN\n5. **Airspeed**: MAX / APPROPRIATE\n6. **Transponder**: 7700",
+      "text": "**FSTN BELTS Switch**: ON\n\n*(Primer paso antes de cualquier acción de vuelo)*.",
       "references": [
-        "Embraer E195-E2 QRH - Section 1: EMERGENCY DESCENT",
-        "RemNote Flashcards - MEMORY ITEMS"
+        "Embraer E195-E2 QRH – Section 1: Memory Items",
+        "RemNote – MEMORY ITEMS"
       ]
     },
-    "metadata": {
-      "difficulty": 0.2
-    }
+    "metadata": {}
   },
   {
-    "id": "SIM-E2-MEM-007",
+    "id": "SIM-MEM-010",
     "subject_id": "simulador-e2",
-    "learning_objective": "E195-E2 Memory Items - SMOKE / FIRE / FUMES (Sin aviso EICAS)",
-    "stem": "Si la tripulación detecta humo, fuego o vapores en cabina pero NO existe ningún aviso de advertencia EICAS ('SMOKE / FIRE / FUMES'), ¿cuáles son los Memory Items requeridos?",
+    "learning_objective": "Memory Item – EMERGENCY DESCENT (resto de pasos)",
+    "stem": "Tras poner FSTN BELTS ON, ¿cuáles son los pasos restantes del Memory Item 'EMERGENCY DESCENT'?",
     "options": [
       {
         "id": "A",
-        "text": "Crew Oxy Masks: DON 100% | Crew Communication: ESTABLISH.",
+        "text": "Altitude: 10.000 ft o MEA | Thrust Levers: IDLE | Speedbrake: FULL OPEN | Airspeed: MAX/APPROPRIATE | Transponder: 7700.",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "DUMP Button: PUSH IN | Descender inmediatamente a 10.000 ft.",
+        "text": "Altitude: 14.000 ft | Thrust Levers: IDLE | Speedbrake: FLIGHT | Transponder: 7600.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "RECIRC FANS: OFF | PACK 1 y PACK 2: OFF.",
+        "text": "Altitude: 10.000 ft o MEA | Thrust Levers: IDLE | Speedbrake: FULL OPEN | Transponder: 2000.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Speedbrake: FULL OPEN | Thrust Levers: IDLE | Transponder: 7700.",
+        "text": "Altitude: MEA | Thrust Levers: CLIMB | Speedbrake: FULL OPEN | Transponder: 7700.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Bajo la condición de **SMOKE / FIRE / FUMES** identificados por la tripulación sin aviso EICAS previo:\n\n- **Crew Oxy Masks**: DON, 100%\n- **Crew Communication**: ESTABLISH",
+      "text": "**Altitude**: 10.000 ft or MEA (la mayor)\n**Thrust Levers**: IDLE\n**Speedbrake**: FULL OPEN\n**Airspeed**: MAX / APPROPRIATE\n**Transponder**: 7700.",
       "references": [
-        "Embraer E195-E2 QRH - Section 1: SMOKE / FIRE / FUMES",
-        "RemNote Flashcards - MEMORY ITEMS"
+        "Embraer E195-E2 QRH – Section 1: Memory Items",
+        "RemNote – MEMORY ITEMS"
       ]
     },
-    "metadata": {
-      "difficulty": 0.2
-    }
+    "metadata": {}
   },
   {
-    "id": "SIM-E2-MEM-008",
+    "id": "SIM-MEM-011",
     "subject_id": "simulador-e2",
-    "learning_objective": "E195-E2 Memory Items - SMOKE EVACUATION",
-    "stem": "¿Cuáles son las acciones de memoria mandatarias para el procedimiento de evacuación de humo ('SMOKE EVACUATION')?",
+    "learning_objective": "Memory Item – SMOKE / FIRE / FUMES (sin aviso EICAS)",
+    "stem": "¿Cuándo se aplica y qué pasos contiene el Memory Item 'SMOKE / FIRE / FUMES'?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Condición: humo/fuego detectado por la tripulación SIN aviso EICAS. Acciones: Crew Oxy Masks DON 100% | Crew Communication ESTABLISH.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Condición: cualquier aviso EICAS de humo. Acciones: DUMP PUSH IN | descender a 10.000 ft.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Condición: humo en bodega. Acciones: Cargo Smoke Button PUSH | RECIRC FANS OFF.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Condición: fuego en APU. Acciones: APU EMER STOP PUSH IN.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Se aplica cuando la tripulación detecta SMOKE, FIRE o FUMES **sin** aviso EICAS previo.\n\n1. **Crew Oxy Masks**: DON, 100%\n2. **Crew Communication**: ESTABLISH",
+      "references": [
+        "Embraer E195-E2 QRH – Section 1: Memory Items",
+        "RemNote – MEMORY ITEMS"
+      ]
+    },
+    "metadata": {}
+  },
+  {
+    "id": "SIM-MEM-012",
+    "subject_id": "simulador-e2",
+    "learning_objective": "Memory Item – SMOKE EVACUATION",
+    "stem": "¿Cuáles son los Memory Items para 'SMOKE EVACUATION'?",
     "options": [
       {
         "id": "A",
@@ -278,188 +408,250 @@
       },
       {
         "id": "B",
-        "text": "Crew Oxy Masks: DON NORMAL | RAM AIR: OPEN | Direct Vision Window: OPEN a cualquier velocidad.",
+        "text": "Crew Oxy Masks: DON NORMAL | RAM AIR: OPEN | Outflow Valve: FULL OPEN.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "DUMP Button: PUSH IN | Cabin Alt Knob: FULL UP | Speedbrake: FULL OPEN.",
+        "text": "DUMP Button: PUSH IN | Cabin Alt Knob: UP | Speedbrake: FULL OPEN.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Crew Oxy Masks: DON 100% | PACK 1: OFF | PACK 2: OFF | Outflow Valve: MANUAL OPEN.",
+        "text": "PACK 1: OFF | PACK 2: OFF | Outflow Valve: MANUAL OPEN.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Para **SMOKE EVACUATION**:\n\n1. **Crew Oxy Masks**: DON, 100%\n2. **Crew Communication**: ESTABLISH\n3. **DUMP Button**: PUSH IN",
+      "text": "1. **Crew Oxy Masks**: DON, 100%\n2. **Crew Communication**: ESTABLISH\n3. **DUMP Button**: PUSH IN",
       "references": [
-        "Embraer E195-E2 QRH - Section 1: SMOKE EVACUATION",
-        "RemNote Flashcards - MEMORY ITEMS"
+        "Embraer E195-E2 QRH – Section 1: Memory Items",
+        "RemNote – MEMORY ITEMS"
       ]
     },
-    "metadata": {
-      "difficulty": 0.2
-    }
+    "metadata": {}
   },
   {
-    "id": "SIM-E2-MEM-009",
+    "id": "SIM-MEM-013",
     "subject_id": "simulador-e2",
-    "learning_objective": "E195-E2 Memory Items - DUAL ENGINE FAILURE",
-    "stem": "En caso de fallo simultáneo de ambos motores ('DUAL ENGINE FAILURE'), ¿cuál es la velocidad mínima a mantener y la acción de memoria mandatoria?",
+    "learning_objective": "Memory Item – DUAL ENGINE FAILURE (velocidad)",
+    "stem": "¿Cuál es la velocidad mínima a mantener en el Memory Item 'DUAL ENGINE FAILURE' y por qué?",
     "options": [
       {
         "id": "A",
-        "text": "Airspeed: MÍNIMO 270 KIAS | RAT MANUAL DEPLOY Lever: PULL.",
+        "text": "Mínimo 270 KIAS — garantiza windmilling y suministro óptimo de la RAT.",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Airspeed: GREEN DOT (Driftdown) | APU EMER STOP Button: PUSH IN.",
+        "text": "Mínimo 250 KIAS — velocidad de turbulencia bajo FL100.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Airspeed: 250 KIAS | START/STOP Selectors 1 y 2: STOP y luego START.",
+        "text": "Mínimo 220 KIAS — velocidad de extensión de tren (VLO ret).",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Airspeed: MÍNIMO 220 KIAS | ELEC EMER Button: PUSH IN.",
+        "text": "Mínimo 150 KIAS — velocidad mínima de despliegue de la RAT.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Para **DUAL ENGINE FAILURE** en el E195-E2:\n\n- **Airspeed**: MIN 270 KIAS\n- **RAT MANUAL DEPLOY Lever**: PULL\n\n*(La velocidad de 270 KIAS asegura la rotación del compresor por molinete (windmilling) y un flujo de aire óptimo para el reencendido y generación de potencia de la RAT)*.",
+      "text": "**Airspeed**: MIN **270 KIAS**\n\nEsta velocidad asegura la rotación por molinete (windmilling) y que la RAT genere potencia óptima.",
       "references": [
-        "Embraer E195-E2 QRH - Section 1: DUAL ENGINE FAILURE",
-        "RemNote Flashcards - MEMORY ITEMS"
+        "Embraer E195-E2 QRH – Section 1: Memory Items",
+        "RemNote – MEMORY ITEMS"
       ]
     },
-    "metadata": {
-      "difficulty": 0.3
-    }
+    "metadata": {}
   },
   {
-    "id": "SIM-E2-MEM-010",
+    "id": "SIM-MEM-014",
     "subject_id": "simulador-e2",
-    "learning_objective": "E195-E2 Memory Items - ENGINE ABNORMAL START",
-    "stem": "Durante la puesta en marcha de un motor en tierra, se produce un arranque anormal ('ENGINE ABNORMAL START'). ¿Cuál es la acción de memoria que debe ejecutar el piloto?",
+    "learning_objective": "Memory Item – DUAL ENGINE FAILURE (acción manual)",
+    "stem": "¿Cuál es la acción de memoria mandatoria en 'DUAL ENGINE FAILURE' además de mantener velocidad?",
     "options": [
       {
         "id": "A",
-        "text": "Affected engine: START/STOP Selector: STOP.",
+        "text": "RAT MANUAL DEPLOY Lever: PULL.",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Affected engine: FIRE EXTINGUISHER Handle: PULL.",
+        "text": "ELEC EMER Button: PUSH IN.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "ENGINE IGNITION Selector: OFF y APU BLEED: OFF.",
+        "text": "APU EMER STOP Button: PUSH IN.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Thrust Lever: MAX TOGA para purgar la cámara.",
+        "text": "START/STOP Selectors 1 y 2: STOP.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Ante cualquier anomalía en el arranque en tierra (**ENGINE ABNORMAL START**):\n\n- **Affected engine**:\n  - **START/STOP Selector**: STOP",
+      "text": "**RAT MANUAL DEPLOY Lever**: PULL\n\n*(Aunque la RAT se despliega automáticamente, el Memory Item incluye el despliegue manual como salvaguarda)*.",
       "references": [
-        "Embraer E195-E2 QRH - Section 1: ENGINE ABNORMAL START",
-        "RemNote Flashcards - MEMORY ITEMS"
+        "Embraer E195-E2 QRH – Section 1: Memory Items",
+        "RemNote – MEMORY ITEMS"
       ]
     },
-    "metadata": {
-      "difficulty": 0.1
-    }
+    "metadata": {}
   },
   {
-    "id": "SIM-E2-MEM-011",
+    "id": "SIM-MEM-015",
     "subject_id": "simulador-e2",
-    "learning_objective": "E195-E2 Memory Items - ENGINE SEVERE DAMAGE OR SEPARATION",
-    "stem": "¿Cuál es la secuencia de acciones de memoria para 'ENGINE SEVERE DAMAGE OR SEPARATION' en el E195-E2?",
+    "learning_objective": "Memory Item – ENGINE ABNORMAL START",
+    "stem": "Único Memory Item ante 'ENGINE ABNORMAL START' en tierra:",
     "options": [
       {
         "id": "A",
-        "text": "Autothrottle: DISENGAGE | N1 (operativo): MÍNIMO 5% POR ENCIMA DE N1 IDLE | Motor afectado: Thrust Lever IDLE, START/STOP Selector STOP, FIRE EXTINGUISHER Handle PULL.",
+        "text": "Affected engine – START/STOP Selector: STOP.",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Autothrottle: DISENGAGE | Motor afectado: FIRE EXTINGUISHER Handle PULL inmediatamente sin tocar la palanca de gases.",
+        "text": "Affected engine – FIRE EXT HANDLE: PULL.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Thrust Levers: AMBOS IDLE | START/STOP afectado: STOP | FIRE EXTINGUISHER Handle: PULL y descargar agente extintor.",
+        "text": "Thrust Lever afectado: MAX TOGA.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Autothrottle: MANTENER ACTIVO | N1 operativo: TOGA | START/STOP afectado: STOP.",
+        "text": "ENGINE IGNITION Selector: OFF.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Para **ENGINE SEVERE DAMAGE OR SEPARATION**:\n\n- **Autothrottle**: DISENGAGE\n- **N1 (operative engine)**: MIN 5% ABOVE N1 IDLE\n- **Affected engine**:\n  - *Thrust Lever*: IDLE\n  - *START/STOP Selector*: STOP\n  - *FIRE EXTINGUISHER Handle*: PULL",
+      "text": "**Affected engine – START/STOP Selector**: STOP.\n\nEs la única acción de memoria requerida.",
       "references": [
-        "Embraer E195-E2 QRH - Section 1: ENGINE SEVERE DAMAGE OR SEPARATION",
-        "RemNote Flashcards - MEMORY ITEMS"
+        "Embraer E195-E2 QRH – Section 1: Memory Items",
+        "RemNote – MEMORY ITEMS"
       ]
     },
-    "metadata": {
-      "difficulty": 0.3
-    }
+    "metadata": {}
   },
   {
-    "id": "SIM-E2-MEM-012",
+    "id": "SIM-MEM-016",
     "subject_id": "simulador-e2",
-    "learning_objective": "E195-E2 Memory Items - GEAR LEVER CAN NOT BE MOVED UP",
-    "stem": "Tras el despegue, la palanca del tren no puede subirse ('GEAR LEVER CAN NOT BE MOVED UP') y se requiere performance de ascenso para franquear obstáculos. ¿Cuál es el Memory Item?",
+    "learning_objective": "Memory Item – ENGINE SEVERE DAMAGE OR SEPARATION (1ª parte)",
+    "stem": "¿Cuáles son las dos primeras acciones del Memory Item 'ENGINE SEVERE DAMAGE OR SEPARATION'?",
     "options": [
       {
         "id": "A",
-        "text": "DN LOCK REL Button: PRESS and HOLD | LANDING GEAR Lever: UP | DN LOCK REL Button: RELEASE.",
+        "text": "Autothrottle: DISENGAGE | N1 operativo: MIN 5% ABOVE N1 IDLE.",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "LANDING GEAR Lever: PULL y forzar hacia arriba | EMER EXTENSION Handle: PULL.",
+        "text": "Autothrottle: MANTENER | FIRE EXT HANDLE motor afectado: PULL.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Reducir velocidad por debajo de 220 KIAS y desconectar el sistema hidráulico 2.",
+        "text": "Thrust Levers: AMBOS IDLE | Autothrottle: DISENGAGE.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "DN LOCK REL Button: PRESS una sola vez y mantener el tren abajo a velocidad V2.",
+        "text": "N1 operativo: TOGA | Autothrottle: DISENGAGE.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Si la palanca de tren queda bloqueada abajo y se requiere performance de ascenso para franquear obstáculos:\n\n1. **DN LOCK REL Button**: PRESS and HOLD\n2. **LANDING GEAR Lever**: UP\n3. **DN LOCK REL Button**: RELEASE",
+      "text": "**Autothrottle**: DISENGAGE\n**N1 (operative engine)**: MIN 5% ABOVE N1 IDLE.",
       "references": [
-        "Embraer E195-E2 QRH - Section 1: GEAR LEVER CAN NOT BE MOVED UP",
-        "RemNote Flashcards - MEMORY ITEMS"
+        "Embraer E195-E2 QRH – Section 1: Memory Items",
+        "RemNote – MEMORY ITEMS"
       ]
     },
-    "metadata": {
-      "difficulty": 0.2
-    }
+    "metadata": {}
   },
   {
-    "id": "SIM-E2-MEM-013",
+    "id": "SIM-MEM-017",
     "subject_id": "simulador-e2",
-    "learning_objective": "E195-E2 Memory Items - JAMMED CONTROL WHEEL (ROLL)",
-    "stem": "En caso de bloqueo o agarrotamiento del volante de control en el eje de alabeo ('JAMMED CONTROL WHEEL - ROLL'), ¿cuál es la acción de memoria mandatoria?",
+    "learning_objective": "Memory Item – ENGINE SEVERE DAMAGE OR SEPARATION (motor afectado)",
+    "stem": "¿Cuáles son las tres acciones sobre el motor AFECTADO en 'ENGINE SEVERE DAMAGE OR SEPARATION'?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Thrust Lever: IDLE → START/STOP: STOP → FIRE EXT HANDLE: PULL.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "FIRE EXT HANDLE: PULL → Thrust Lever: IDLE → START/STOP: STOP.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "START/STOP: STOP → Thrust Lever: IDLE → FIRE EXT HANDLE: PULL.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Thrust Lever: IDLE → FIRE EXT HANDLE: PULL directamente.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "**Affected engine**:\n1. *Thrust Lever*: IDLE\n2. *START/STOP Selector*: STOP\n3. *FIRE EXTINGUISHER Handle*: PULL",
+      "references": [
+        "Embraer E195-E2 QRH – Section 1: Memory Items",
+        "RemNote – MEMORY ITEMS"
+      ]
+    },
+    "metadata": {}
+  },
+  {
+    "id": "SIM-MEM-018",
+    "subject_id": "simulador-e2",
+    "learning_objective": "Memory Item – GEAR LEVER CAN NOT BE MOVED UP",
+    "stem": "¿Cuál es la secuencia exacta de Memory Items para 'GEAR LEVER CAN NOT BE MOVED UP'?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DN LOCK REL Button: PRESS and HOLD → LANDING GEAR Lever: UP → DN LOCK REL Button: RELEASE.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "DN LOCK REL Button: PRESS (suelta inmediatamente) → LANDING GEAR Lever: UP.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "LANDING GEAR Lever: UP forzando → EMER EXTENSION Handle: PULL.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Reducir a menos de 220 KIAS → LANDING GEAR Lever: UP.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "1. **DN LOCK REL Button**: PRESS and HOLD\n2. **LANDING GEAR Lever**: UP\n3. **DN LOCK REL Button**: RELEASE\n\n*(Se requiere mantener el botón pulsado mientras se mueve la palanca)*.",
+      "references": [
+        "Embraer E195-E2 QRH – Section 1: Memory Items",
+        "RemNote – MEMORY ITEMS"
+      ]
+    },
+    "metadata": {}
+  },
+  {
+    "id": "SIM-MEM-019",
+    "subject_id": "simulador-e2",
+    "learning_objective": "Memory Item – JAMMED CONTROL WHEEL (ROLL)",
+    "stem": "Único Memory Item ante agarrotamiento del volante en alabeo 'JAMMED CONTROL WHEEL (ROLL)':",
     "options": [
       {
         "id": "A",
@@ -473,45 +665,7 @@
       },
       {
         "id": "C",
-        "text": "FLIGHT CONTROL MODE: DIRECT en ambos canales.",
-        "is_correct": false
-      },
-      {
-        "id": "D",
-        "text": "PULL FORCE Override aplicando más de 50 kg en los mandos.",
-        "is_correct": false
-      }
-    ],
-    "explanation": {
-      "text": "Para **JAMMED CONTROL WHEEL (ROLL)**:\n\n- **AILERON DISCONNECT Handle**: PULL\n\n*(Desconecta mecánicamente ambos lados permitiendo el control del alabeo desde el volante no agarrotado mediante alerones o spoilers multifunción)*.",
-      "references": [
-        "Embraer E195-E2 QRH - Section 1: JAMMED CONTROL WHEEL (ROLL)",
-        "RemNote Flashcards - MEMORY ITEMS"
-      ]
-    },
-    "metadata": {
-      "difficulty": 0.2
-    }
-  },
-  {
-    "id": "SIM-E2-MEM-014",
-    "subject_id": "simulador-e2",
-    "learning_objective": "E195-E2 Memory Items - JAMMED CONTROL COLUMN (PITCH)",
-    "stem": "En caso de bloqueo o agarrotamiento de la columna de control en el eje de cabeceo ('JAMMED CONTROL COLUMN - PITCH'), ¿cuál es la acción de memoria mandatoria?",
-    "options": [
-      {
-        "id": "A",
-        "text": "ELEVATOR DISCONNECT Handle: PULL.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "AILERON DISCONNECT Handle: PULL.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "PITCH TRIM Switch: ACCIONAR EN MODO MANUAL DIRECTO.",
+        "text": "FLIGHT CONTROL MODE: DIRECT.",
         "is_correct": false
       },
       {
@@ -521,14 +675,48 @@
       }
     ],
     "explanation": {
-      "text": "Para **JAMMED CONTROL COLUMN (PITCH)**:\n\n- **ELEVATOR DISCONNECT Handle**: PULL\n\n*(Separa las columnas de control permitiendo el mando del timón de profundidad libre por el piloto sin bloqueo)*.",
+      "text": "**AILERON DISCONNECT Handle**: PULL\n\nDesconecta mecánicamente los dos lados del sistema de alerones.",
       "references": [
-        "Embraer E195-E2 QRH - Section 1: JAMMED CONTROL COLUMN (PITCH)",
-        "RemNote Flashcards - MEMORY ITEMS"
+        "Embraer E195-E2 QRH – Section 1: Memory Items",
+        "RemNote – MEMORY ITEMS"
       ]
     },
-    "metadata": {
-      "difficulty": 0.2
-    }
+    "metadata": {}
+  },
+  {
+    "id": "SIM-MEM-020",
+    "subject_id": "simulador-e2",
+    "learning_objective": "Memory Item – JAMMED CONTROL COLUMN (PITCH)",
+    "stem": "Único Memory Item ante agarrotamiento de la columna en cabeceo 'JAMMED CONTROL COLUMN (PITCH)':",
+    "options": [
+      {
+        "id": "A",
+        "text": "ELEVATOR DISCONNECT Handle: PULL.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "AILERON DISCONNECT Handle: PULL.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "PITCH TRIM: MANUAL DIRECT.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "AP DISC Button: PRESS AND HOLD.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "**ELEVATOR DISCONNECT Handle**: PULL\n\nSepara ambas columnas permitiendo el control del timón de profundidad desde el lado libre.",
+      "references": [
+        "Embraer E195-E2 QRH – Section 1: Memory Items",
+        "RemNote – MEMORY ITEMS"
+      ]
+    },
+    "metadata": {}
   }
 ]
