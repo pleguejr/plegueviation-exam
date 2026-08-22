@@ -1,0 +1,990 @@
+[
+  {
+    "id": "SIM-E2-NUM-001",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Altitudes - Rango de Detección de Windshear",
+    "stem": "¿En qué rango de altitudes es capaz el sistema de aviónica del Embraer 195-E2 de detectar cizalladura de viento (Windshear)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Entre 10 ft y 1.500 ft AGL.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Entre 50 ft y 2.000 ft AGL.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Entre 0 ft y 1.000 ft AGL.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Entre 100 ft y 3.000 ft AGL.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La detección de cizalladura (Windshear Warning / Caution) en el E195-E2 está activa y operativa entre **10 ft y 1.500 ft AGL** durante el despegue y la aproximación.",
+      "references": [
+        "Embraer E195-E2 AOM - Section 2: Avionics Systems - Windshear Guidance",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "SIM-E2-NUM-002",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Altitudes - Tail Strike Avoidance (TSA)",
+    "stem": "¿A qué altitud se activa la protección de prevención de impacto de cola (Tail Strike Avoidance - TSA) durante el despegue/aterrizaje con Flap 0 a 5, y con Flap FULL?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A 25 ft AGL con Flap 0 a 5, y a 45 ft AGL en aterrizaje con Flap FULL.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "A 10 ft AGL con Flap 0 a 5, y a 25 ft AGL con Flap FULL.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "A 35 ft AGL con Flap 0 a 5, y a 50 ft AGL con Flap FULL.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "A 50 ft AGL de forma fija para cualquier configuración de flaps.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La función TSA (Tail Strike Avoidance) del sistema Fly-By-Wire modula el pitch para evitar contacto del fuselaje trasero:\n\n- **Flap 0 a 5 (T/O y LNDG)**: Se activa a **25 ft AGL**.\n- **Flap FULL (Landing)**: Se activa a **45 ft AGL**.\n- El ángulo máximo de cabeceo para evitar tail strike en el E195-E2 es de **10º NOSE UP**.",
+      "references": [
+        "Embraer E195-E2 AOM - Section 2: Flight Controls - Tail Strike Avoidance",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "SIM-E2-NUM-003",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Altitudes - Altura Mínima de Uso del Piloto Automático (AP MUH)",
+    "stem": "¿Cuáles son las alturas mínimas de uso del piloto automático (Autopilot Minimum Use Height) en el E195-E2 para aproximaciones ILS/LPV, NPA, crucero y tras el despegue?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ILS/LPV: 80 ft | Pérdida de altura en frustrada: 100 ft | NPA: 190 ft | Conexión en despegue: 200 ft | Crucero/Descenso: 1.000 ft.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "ILS/LPV: 50 ft | Pérdida de altura en frustrada: 80 ft | NPA: 150 ft | Conexión en despegue: 400 ft | Crucero/Descenso: 500 ft.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "ILS/LPV: 100 ft | Pérdida de altura en frustrada: 120 ft | NPA: 250 ft | Conexión en despegue: 100 ft | Crucero/Descenso: 1.500 ft.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "ILS/LPV: 200 ft | Pérdida de altura en frustrada: 100 ft | NPA: 200 ft | Conexión en despegue: 500 ft | Crucero/Descenso: 1.000 ft.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Alturas mínimas del Piloto Automático (AP Minimum Use Height):\n\n| Fase / Modo de Vuelo | Altura Mínima |\n| :--- | :--- |\n| **Aproximación ILS y LPV** | **80 ft AGL** |\n| **Pérdida de altura en Coupled Go-Around** | **100 ft** |\n| **Aproximación No Precisión (NPA)** | **190 ft AGL** |\n| **Conexión mínima tras el despegue** | **200 ft AGL** |\n| **Crucero y Descenso** | **1.000 ft AGL** |",
+      "references": [
+        "Embraer E195-E2 AOM - Section 1: Limitations - Automatic Flight Control",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "SIM-E2-NUM-004",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Altitudes - Techos y Despliegues Automáticos",
+    "stem": "¿Cuáles son los límites de altitud para el techo de servicio, despliegue de máscaras de pasajeros, extensión de flaps y ángulo de alabeo (Bank Limit)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Techo máximo: 41.000 ft | Máscaras PAX auto: 14.000-14.750 ft | Flaps extendidos máx: 20.000 ft | Bank limit: 30º <25.000 ft y 15º >25.000 ft.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Techo máximo: 39.000 ft | Máscaras PAX auto: 10.000 ft | Flaps extendidos máx: 15.000 ft | Bank limit: 25º a cualquier altitud.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Techo máximo: 45.000 ft | Máscaras PAX auto: 14.000 ft | Flaps extendidos máx: 25.000 ft | Bank limit: 15º <25.000 ft y 30º >25.000 ft.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Techo máximo: 41.000 ft | Máscaras PAX auto: 12.400 ft | Flaps extendidos máx: 18.000 ft | Bank limit: 30º en todo el envolvente.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Límites de altitud en el E195-E2:\n\n- **Techo máximo operativo (Ceiling)**: **41.000 ft**\n- **Despliegue automático de máscaras PAX**: **14.000 a 14.750 ft** de altitud de cabina\n- **Altitud máxima con Flaps extendidos**: **20.000 ft**\n- **Límite automático de alabeo (Bank Angle)**: **30º por debajo de 25.000 ft** y **15º por encima de 25.000 ft**\n- **Altitud máxima para limpiaparabrisas (Wipers)**: **14.000 ft**\n- **Altitud máxima para Autoland**: **7.249 ft**",
+      "references": [
+        "Embraer E195-E2 AOM - Section 1: Limitations",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "SIM-E2-NUM-005",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Altitudes - Límites de Altitud del APU",
+    "stem": "¿Cuáles son las altitudes máximas para el arranque, suministro eléctrico y sangrado neumático del APU en el Embraer 195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Arranque y generación eléctrica: 39.000 ft | Sangrado neumático (Pneumatic / Bleed): 15.000 ft.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Arranque: 30.000 ft | Generación eléctrica: 41.000 ft | Sangrado neumático: 20.000 ft.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Arranque y generación eléctrica: 41.000 ft | Sangrado neumático: 10.000 ft.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Arranque y sangrado neumático: 15.000 ft | Generación eléctrica: 35.000 ft.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Limitaciones del APU:\n\n- **Arranque del APU (APU Start)**: hasta **39.000 ft**\n- **Suministro eléctrico (APU Electrical Power)**: hasta **39.000 ft**\n- **Suministro neumático / acondicionamiento (APU Bleed)**: hasta **15.000 ft**\n- *Arranque de motor en vuelo con APU Bleed: verificar envolvente de Airstart.*",
+      "references": [
+        "Embraer E195-E2 AOM - Section 1: Limitations - APU",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "SIM-E2-NUM-006",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Sistemas - Lógica de Auto-Retracción de Speed Brakes",
+    "stem": "¿Bajo qué condiciones se produce la retracción automática de los frenos de velocidad (Speed Brakes Auto Retract) en el E195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Velocidad $\\le$ 180 KIAS, TLA $> 76^\\circ$, Flap 1 con velocidad $> 230$ KIAS, selección de Flap 2 o superior, o activación de la protección de entrada en pérdida (Stall Protection).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Velocidad $\\le$ 160 KIAS, TLA $> 60^\\circ$, selección de Flap 4 o FULL, o desconexión del piloto automático.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Velocidad $> 250$ KIAS, selección de tren de aterrizaje abajo, o activación del sistema TCAS RA.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "TLA $> 85^\\circ$ exclusivamente, o pérdida de ambos generadores principales.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los Speed Brakes se retraen automáticamente ante cualquiera de las siguientes condiciones:\n\n1. **Velocidad $\\le 180\\text{ KIAS}$**\n2. **Ángulo de palanca de gases (TLA) más allá de $76^\\circ$**\n3. **FLAP 1 con velocidad $> 230\\text{ KIAS}$**\n4. **Selección de FLAP 2 o superior** (Flap 2, 3, 4, 5, FULL)\n5. **Activación de STALL PROTECTION**",
+      "references": [
+        "Embraer E195-E2 AOM - Section 2: Flight Controls - Speed Brakes Logic",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "SIM-E2-NUM-007",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Combustible - Cantidades y Desequilibrios Máximos",
+    "stem": "¿Cuáles son las capacidades de combustible (por plano, central y total), el desequilibrio máximo permitido y el aviso de bajo nivel en el E195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Plano: 2.190 kg c/u | Central: 9.310 kg | Total: 13.690 kg | Desequilibrio máx: 360 kg | Low Level: 400 kg | Mensaje FUEL EQUAL CROSSBLEED OPEN: 45 kg.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Plano: 3.500 kg c/u | Central: 6.000 kg | Total: 13.000 kg | Desequilibrio máx: 500 kg | Low Level: 300 kg | Mensaje FUEL EQUAL CROSSBLEED OPEN: 100 kg.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Plano: 2.500 kg c/u | Central: 8.000 kg | Total: 13.690 kg | Desequilibrio máx: 250 kg | Low Level: 500 kg | Mensaje FUEL EQUAL CROSSBLEED OPEN: 30 kg.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Plano: 2.190 kg c/u | Central: 9.310 kg | Total: 15.200 kg | Desequilibrio máx: 400 kg | Low Level: 450 kg | Mensaje FUEL EQUAL CROSSBLEED OPEN: 50 kg.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Datos de Combustible en el E195-E2:\n\n- **Tanque de cada plano (Each Wing Tank)**: **2.190 kg**\n- **Tanque central (Center Tank)**: **9.310 kg**\n- **Capacidad Total de Combustible**: **13.690 kg**\n- **Desequilibrio máximo permitido (Max Imbalance)**: **360 kg**\n- **Aviso de Bajo Nivel (FUEL LOW LEVEL)**: **400 kg** remanentes en el tanque afectado\n- **Mensaje FUEL EQUAL CROSSBLEED OPEN**: aparece con una diferencia de **45 kg**\n- **Combustible no utilizable si falla la bomba eyectora principal**: se reduce en **130 kg**",
+      "references": [
+        "Embraer E195-E2 AOM - Section 1: Limitations - Fuel System",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "SIM-E2-NUM-008",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Pesos Estructurales - Binter vs Estándar",
+    "stem": "¿Cuáles son los pesos máximos estructurales certificados para el E195-E2 y el límite específico de MTOW/MRW aplicado en la operativa de Binter?",
+    "options": [
+      {
+        "id": "A",
+        "text": "MTOW: 61.500 kg (Binter: 57.700 kg) | MRW: 61.700 kg (Binter: 57.900 kg) | MLW: 54.000 kg | MZFW: 51.850 kg.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "MTOW: 60.000 kg (Binter: 55.000 kg) | MRW: 60.200 kg (Binter: 55.200 kg) | MLW: 52.000 kg | MZFW: 49.000 kg.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "MTOW: 62.500 kg (Binter: 58.700 kg) | MRW: 62.700 kg (Binter: 58.900 kg) | MLW: 55.000 kg | MZFW: 53.000 kg.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "MTOW: 61.500 kg (Binter: 61.500 kg) | MRW: 61.700 kg (Binter: 61.700 kg) | MLW: 56.000 kg | MZFW: 50.000 kg.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Pesos estructurales del Embraer 195-E2:\n\n| Parámetro de Peso | Estándar Fabricante | Operativa Binter |\n| :--- | :--- | :--- |\n| **MRW (Max Ramp Weight)** | **61.700 kg** | **57.900 kg** |\n| **MTOW (Max Takeoff Weight)** | **61.500 kg** | **57.700 kg** |\n| **MLW (Max Landing Weight)** | **54.000 kg** | **54.000 kg** |\n| **MZFW (Max Zero Fuel Weight)** | **51.850 kg** | **51.850 kg** |\n\n*Capacidades de bodega: FWD Cargo 2.375 kg, AFT Cargo 2.555 kg, Total 4.930 kg. Hielo seco: 200 kg (60 kg si tasa de sublimación desconocida). Material magnetizado: 118 kg.*",
+      "references": [
+        "Embraer E195-E2 AOM - Section 1: Limitations - Weights",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "SIM-E2-NUM-009",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Temperaturas Límites - Motor, Aceite y Combustible",
+    "stem": "¿Cuáles son las temperaturas mínimas y máximas de aceite de motor, combustible, ITT y condiciones de engelamiento en el E195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aceite mín despegue: 24ºC | Aceite mín IDLE: -40ºC | Aceite máx continuo: 163ºC (174ºC máx 20m) | ITT máx continuo: 1017ºC | ITT máx arranque: 1054ºC | Combustible mín: -37ºC.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Aceite mín despegue: 49ºC | Aceite mín IDLE: -20ºC | Aceite máx continuo: 150ºC | ITT máx continuo: 950ºC | ITT máx arranque: 1000ºC | Combustible mín: -40ºC.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aceite mín despegue: 15ºC | Aceite mín IDLE: -30ºC | Aceite máx continuo: 174ºC | ITT máx continuo: 1054ºC | ITT máx arranque: 1100ºC | Combustible mín: -35ºC.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aceite mín despegue: 0ºC | Aceite mín IDLE: -45ºC | Aceite máx continuo: 180ºC | ITT máx continuo: 1032ºC | ITT máx arranque: 1054ºC | Combustible mín: -54ºC.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Límites de temperatura en el E195-E2:\n\n- **Temperatura de Aceite mínima para Despegue**: **24ºC**\n- **Mensaje Oil Warm Up**: aparece si la temperatura de aceite es **$\\le 49^\\circ\\text{C}$**\n- **Temperatura de Aceite mínima para IDLE / Arranque**: **-40ºC**\n- **Temperatura de Aceite máxima continua**: **163ºC**\n- **Temperatura de Aceite máxima transitoria (hasta 20 min)**: **174ºC**\n- **ITT máxima continua (ENG Max Continuous)**: **1017ºC**\n- **ITT máxima en arranque / transitoria**: **1054ºC**\n- **APU Max EGT**: **1032ºC**\n- **Temperatura mínima de tanque de combustible**: **-37ºC**\n- **Temperatura mínima ambiental de vuelo**: **TAT -54ºC**, **SAT -70ºC**",
+      "references": [
+        "Embraer E195-E2 AOM - Section 1: Powerplant Limitations",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "SIM-E2-NUM-010",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Viento Cruzado - Límites por Estado de Pista (RWY CC)",
+    "stem": "¿Cuáles son los límites de viento cruzado (Crosswind) certificados en el E195-E2 según el código de estado de pista (Runway Condition Code - RWY CC)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "RWY CC 6 y 5: 35 kts | RWY CC 4: 30 kts | RWY CC 3: 20 kts | RWY CC 2: 15 kts | RWY CC 1: 10 kts | RWY CC 0: Operación no permitida.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "RWY CC 6: 36 kts | RWY CC 5: 30 kts | RWY CC 4: 25 kts | RWY CC 3: 15 kts | RWY CC 2: 10 kts | RWY CC 1: 5 kts | RWY CC 0: 0 kts.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "RWY CC 6 a 4: 35 kts | RWY CC 3 y 2: 25 kts | RWY CC 1: 15 kts | RWY CC 0: 10 kts.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "RWY CC 6: 35 kts | RWY CC 5: 30 kts | RWY CC 4: 20 kts | RWY CC 3: 15 kts | RWY CC 2: 10 kts | RWY CC 1: No permitida.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Límites de Viento Cruzado vs Runway Condition Code (RWY CC):\n\n| RWY CC | Estado de Pista | Límite Máximo de Viento Cruzado |\n| :--- | :--- | :--- |\n| **6** | Seca (*Dry*) | **35 kts** (36 kts en T/O) |\n| **5** | Mojada (*Good*) | **35 kts** |\n| **4** | Compacted Snow $-15^\\circ\\text{C}$ (*Good to Medium*) | **30 kts** |\n| **3** | Slippery wet / Dry snow (*Medium*) | **20 kts** |\n| **2** | Standing water / Slush (*Medium to Poor*) | **15 kts** |\n| **1** | Ice (*Poor*) | **10 kts** |\n| **0** | Wet ice (*Nil*) | **NO OPERATION (Prohibido)** |\n\n*Nota: Viento en cola máximo: 15 kts (10 kts en CAT II / Autoland). Viento cruzado máximo CAT II: 18 kts (Autoland: 15 kts).*",
+      "references": [
+        "Embraer E195-E2 AOM - Section 1: Limitations - Wind Limits",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "SIM-E2-NUM-011",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Velocidades de Flaps y Tren de Aterrizaje",
+    "stem": "¿Cuáles son las velocidades máximas de extensión de flaps (VFE) y los límites de operación del tren de aterrizaje (VLO/VLE) en el E195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flap 1: 230 kts | Flap 2: 215 kts | Flap 3: 200 kts | Flap 4/5: 180 kts | Flap FULL: 165 kts || VLO ret: 220 kts | VLO ext: 250 kts | VLE: 265 kts.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Flap 1: 210 kts | Flap 2: 190 kts | Flap 3: 170 kts | Flap 4/5: 160 kts | Flap FULL: 145 kts || VLO ret: 200 kts | VLO ext: 220 kts | VLE: 250 kts.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Flap 1: 250 kts | Flap 2: 230 kts | Flap 3: 210 kts | Flap 4/5: 190 kts | Flap FULL: 175 kts || VLO ret: 250 kts | VLO ext: 265 kts | VLE: 280 kts.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Flap 1: 230 kts | Flap 2: 200 kts | Flap 3: 180 kts | Flap 4/5: 165 kts | Flap FULL: 150 kts || VLO ret: 220 kts | VLO ext: 250 kts | VLE: 250 kts.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Velocidades de Flaps y Tren de Aterrizaje en el E195-E2:\n\n**Flap Placard Speeds (VFE)**:\n- **FLAP 1**: **230 KIAS**\n- **FLAP 2**: **215 KIAS**\n- **FLAP 3**: **200 KIAS**\n- **FLAP 4 y 5**: **180 KIAS**\n- **FLAP FULL**: **165 KIAS**\n\n**Landing Gear Speeds**:\n- **VLO ret (Retracción)**: **220 KIAS**\n- **VLO ext (Extensión)**: **250 KIAS**\n- **VLE (Extendida)**: **265 KIAS**\n\n**Otras velocidades clave**:\n- **VMO / MMO**: **320 KIAS / M0.82**\n- **Apertura de ventanilla DV Window**: **160 KIAS**\n- **Turbulencia < 10.000 ft**: **250 KIAS**; **> 10.000 ft**: **270 KIAS / M0.76**\n- **Limpiaparabrisas (Wiper)**: **253 KIAS** (máx 14.000 ft)",
+      "references": [
+        "Embraer E195-E2 AOM - Section 1: Limitations - Speeds",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "SIM-E2-NUM-012",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 RAT y Sistema Eléctrico de Emergencia",
+    "stem": "¿Cuáles son las velocidades mínimas de la RAT (despliegue y suministro continuo), el tiempo de alimentación al AC ESS BUS y la velocidad en Dual Engine Failure?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Despliegue mín: 150 kts | Suministro continuo: 130 kts | Tiempo al AC ESS BUS: ~8 segundos | Dual Engine Fail: mín 270 kts.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Despliegue mín: 130 kts | Suministro continuo: 110 kts | Tiempo al AC ESS BUS: ~15 segundos | Dual Engine Fail: mín 250 kts.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Despliegue mín: 180 kts | Suministro continuo: 150 kts | Tiempo al AC ESS BUS: ~3 segundos | Dual Engine Fail: mín 220 kts.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Despliegue mín: 150 kts | Suministro continuo: 140 kts | Tiempo al AC ESS BUS: ~30 segundos | Dual Engine Fail: mín 300 kts.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Límites de la Ram Air Turbine (RAT) en el E195-E2:\n\n- **Velocidad mínima para despliegue de la RAT**: **150 KIAS**\n- **Velocidad mínima para suministro continuo de energía eléctrica/hidráulica**: **130 KIAS**\n- **Tiempo para energizar la barra de emergencia (AC ESS BUS)**: aproximadamente **8 segundos**\n- **Velocidad mínima en caso de fallo de ambos motores (Dual Engine Failure)**: **270 KIAS** (permite auto-rotación windmilling y potencia óptima de la RAT).",
+      "references": [
+        "Embraer E195-E2 AOM - Section 2: Electrical & Emergency Systems",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "SIM-E2-NUM-013",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Tiempos - Pruebas PBIT y Rearranque",
+    "stem": "¿Cuánto tiempo duran las pruebas automáticas PBIT eléctrica e hidráulica, y cuál es el periodo de enfriamiento del APU antes de desconectar baterías?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ELEC PBIT: 2 minutos | HYD PBIT: 1 minuto (tras presurizar los 3 sistemas) | APU Cooldown: 1 minuto (mensaje APU SHUTTING DOWN).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "ELEC PBIT: 30 segundos | HYD PBIT: 30 segundos | APU Cooldown: 3 minutos.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "ELEC PBIT: 1 minuto | HYD PBIT: 2 minutos | APU Cooldown: 10 segundos.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "ELEC PBIT: 5 minutos | HYD PBIT: 3 minutos | APU Cooldown: 2 minutos.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Tiempos de pruebas automáticas PBIT y APU en el E195-E2:\n\n- **ELEC PBIT**: se ejecuta al recibir alimentación AC en tierra y tarda **2 minutos**.\n- **HYD PBIT**: se activa cuando los 3 sistemas hidráulicos alcanzan presión y dura **1 minuto**.\n- **APU Cooldown Period**: dura **1 minuto** (indicado por el mensaje EICAS *'APU SHUTTING DOWN'*).\n- **PBIT del controlador de parabrisas**: dura **2 minutos** con una sola fuente AC.",
+      "references": [
+        "Embraer E195-E2 AOM - Section 2: Systems Power-up & PBIT",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "SIM-E2-NUM-014",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Tiempos Críticos - Aborto de Arranque y Reversas",
+    "stem": "¿Cuáles son los tiempos límite para abortar la puesta en marcha si no sube la presión de aceite, si no hay encendido tras abrir fuel, y la ventana de armado del reverser tras fallo de motor?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Presión de aceite sin subir tras N2: 10 segundos | Fuel ON hasta IDLE: máximo 2 minutos | Gatillo de reversa tras fallo de motor: 10 segundos.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Presión de aceite sin subir tras N2: 30 segundos | Fuel ON hasta IDLE: máximo 1 minuto | Gatillo de reversa tras fallo de motor: 30 segundos.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Presión de aceite sin subir tras N2: 5 segundos | Fuel ON hasta IDLE: máximo 3 minutos | Gatillo de reversa tras fallo de motor: 5 segundos.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Presión de aceite sin subir tras N2: 20 segundos | Fuel ON hasta IDLE: máximo 90 segundos | Gatillo de reversa tras fallo de motor: 60 segundos.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Tiempos críticos operacionales:\n\n- **Abortar puesta en marcha por presión de aceite**: Si la presión no sube tras la primera indicación de N2 en **10 segundos**.\n- **Tiempo máximo desde apertura de combustible (Fuel ON) hasta ralentí (IDLE)**: **2 minutos** (si supera este tiempo, abortar arranque).\n- **Gatillo de reversa tras inoperatividad de un motor**: Puede accionarse durante **10 segundos**; tras este lapso queda mecánicamente bloqueado.",
+      "references": [
+        "Embraer E195-E2 AOM - Section 2: Powerplant Operating Logic",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "SIM-E2-NUM-015",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 FADEC y Porcentajes de N2/N1",
+    "stem": "¿Cuáles son los porcentajes de N2 para encendido de combustible, corte de ignición, aborto por falta de N1 y apagado automático por FADEC?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encendido Fuel: 20-27% N2 | Aborto manual si no hay N1: a 45% N2 | Corte de Ignición: 55% N2 | Apagado automático FADEC: 105% N1 o N2.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Encendido Fuel: 15% N2 | Aborto manual si no hay N1: a 30% N2 | Corte de Ignición: 50% N2 | Apagado automático FADEC: 100% N1 o N2.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Encendido Fuel: 25% N2 | Aborto manual si no hay N1: a 50% N2 | Corte de Ignición: 60% N2 | Apagado automático FADEC: 110% N1 o N2.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Encendido Fuel: 18% N2 | Aborto manual si no hay N1: a 40% N2 | Corte de Ignición: 65% N2 | Apagado automático FADEC: 108% N1 o N2.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Lógica de porcentajes FADEC / Puesta en Marcha:\n\n- **Fuel Ignition**: entre **20% y 27% N2**\n- **Despresurización de EDP por FADEC**: si N2 está por debajo del **25%**\n- **Aborto manual por falta de rotación positiva de N1**: si se alcanza el **45% N2** sin indicación de N1\n- **Ignition OFF**: al alcanzar el **55% N2**\n- **FADEC Engine Shutdown automático**: si N1 o N2 alcanzan el **105%**\n- **APU Max Rotor Speed**: **108%**",
+      "references": [
+        "Embraer E195-E2 AOM - Section 2: FADEC Starting Logic",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "SIM-E2-NUM-016",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Dimensiones del Avión y Ancho de Pista",
+    "stem": "¿Cuáles son las dimensiones exteriores del E195-E2, el ancho mínimo de pista/calle de rodaje y el ancho mínimo para un viraje de 180º?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Longitud: 41,6 m | Envergadura: 35,1 m | Altura: 10,9 m | Pista mín: 30 m | Calle de rodaje mín: 15 m | Giro de 180º mín: 24,63 m.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Longitud: 38,5 m | Envergadura: 32,0 m | Altura: 9,8 m | Pista mín: 45 m | Calle de rodaje mín: 23 m | Giro de 180º mín: 30,00 m.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Longitud: 41,6 m | Envergadura: 38,0 m | Altura: 11,5 m | Pista mín: 30 m | Calle de rodaje mín: 18 m | Giro de 180º mín: 28,50 m.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Longitud: 43,0 m | Envergadura: 35,1 m | Altura: 10,9 m | Pista mín: 45 m | Calle de rodaje mín: 15 m | Giro de 180º mín: 22,00 m.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Dimensiones y límites geométricos del Embraer 195-E2:\n\n- **Longitud**: **41,6 m**\n- **Envergadura (Wingspan)**: **35,1 m**\n- **Altura de cola (Height)**: **10,9 m**\n- **Ancho mínimo de Pista (Runway Min Width)**: **30 m**\n- **Ancho mínimo de Calle de Rodaje (Taxiway Min Width)**: **15 m**\n- **Ancho mínimo de pista para giro de 180º en pista**: **24,63 m**\n- **Factores de carga (Flight Load Factors)**: Limpio **+2,5g / -1,0g**; Configurado **+2,0g / -0,0g**",
+      "references": [
+        "Embraer E195-E2 AOM - Section 1: Dimensions & Aircraft General",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "SIM-E2-NUM-017",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Motor - Límites del Starter y Enfriamiento",
+    "stem": "¿Cuáles son los límites de uso continuo del arrancador del motor (Engine Starter Limits) y el tiempo de enfriamiento obligatorio tras los intentos máximos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Máximo 4 minutos de ciclo de arranque (hasta 3 intentos sin enfriamiento); tras esto se requiere un enfriamiento obligatorio de 30 minutos.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Máximo 2 minutos de ciclo de arranque (hasta 2 intentos); tras esto se requiere un enfriamiento de 15 minutos.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Máximo 5 minutos de ciclo de arranque; tras esto se requiere un enfriamiento de 10 minutos.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Máximo 1 minuto de ciclo de arranque; enfriamiento de 60 segundos entre cada intento.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Límites del Arrancador del Motor (Engine Starter Limits):\n\n- **Tiempo máximo acumulado de arranque**: **4 minutos**.\n- Se permiten **hasta 3 intentos de arranque consecutivos** sin periodo de enfriamiento.\n- Si se alcanzan estos límites, se requiere un **tiempo de enfriamiento obligatorio (Cool-down time) de 30 minutos** antes del siguiente intento.",
+      "references": [
+        "Embraer E195-E2 AOM - Section 1: Starter Limits",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "SIM-E2-NUM-018",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 APU - Ciclos de Enfriamiento en Arranque",
+    "stem": "¿Cuáles son los periodos de enfriamiento requeridos entre intentos de arranque del APU para temperaturas hasta ISA+35ºC y entre ISA+35ºC e ISA+39ºC?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hasta ISA+35ºC: 1º y 2º intento 60s OFF, 3º intento 5 min OFF || ISA+35ºC a +39ºC: 1º intento 60s OFF, 2º intento 5 min OFF.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Hasta ISA+35ºC: 1º intento 30s OFF, 2º intento 2 min OFF || ISA+35ºC a +39ºC: 1º intento 5 min OFF.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Hasta ISA+35ºC: 1º y 2º intento 5 min OFF || ISA+35ºC a +39ºC: intentos prohibidos por encima de ISA+30ºC.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Hasta ISA+35ºC: 60s OFF entre todos los intentos de forma ilimitada.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Límites de Arranque del APU (APU Starting Limits):\n\n- **Hasta ISA + 35ºC**:\n  - 1º y 2º intento: **60 segundos OFF**\n  - 3º intento: **5 minutos OFF**\n- **Desde ISA + 35ºC hasta ISA + 39ºC**:\n  - 1º intento: **60 segundos OFF**\n  - 2º intento: **5 minutos OFF**",
+      "references": [
+        "Embraer E195-E2 AOM - Section 1: APU Starting Limitations",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "SIM-E2-NUM-019",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Oxígeno de Emergencia - Perfil de Cobertura en Descenso",
+    "stem": "Tras una despresurización a FL410, ¿cuál es la cobertura de oxígeno provista para tripulación técnica y pasajeros durante el perfil de descenso y crucero a 10.000 ft?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pasajeros: 12 min de oxígeno químico || Tripulación: 22 min en 100% (41.000 a 10.000 ft) + 98 min en NORMAL en crucero a 10.000 ft.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Pasajeros: 22 min || Tripulación: 12 min en 100% + 45 min en NORMAL.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Pasajeros: 15 min de generador químico || Tripulación: 30 min continuo en 100% y 60 min en NORMAL.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pasajeros: 10 min || Tripulación: 45 min en 100% sin suministro en NORMAL.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Perfil de suministro de oxígeno tras pérdida de presión de cabina:\n\n- **Pasajeros**: **12 minutos** de oxígeno químico mediante generadores PSU.\n- **Tripulación técnica**:\n  - **22 minutos** cubriendo el descenso de emergencia desde **41.000 ft hasta 10.000 ft** con regulador en modo **100%**.\n  - **98 minutos** continuando el crucero a **10.000 ft** con regulador en modo **NORMAL**.",
+      "references": [
+        "Embraer E195-E2 AOM - Section 1: Oxygen System Limitations",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "SIM-E2-NUM-020",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Hidráulico - Lógica de Operación de la PTU",
+    "stem": "¿Bajo qué condiciones automáticas entra en funcionamiento la unidad de transferencia de potencia (PTU) en el E195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cantidad de líquido en sistema Hyd 2 $\\ge 15\\%$, EDP 1 no fallada, y Flaps o Tren de aterrizaje abajo.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Presión del sistema Hyd 1 inferior a 1.000 psi y velocidad superior a 250 KIAS.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Pérdida total del sistema Hyd 3 y flaps seleccionados en FULL.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Selección manual del interruptor PTU en el panel superior exclusivamente.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La **Power Transfer Unit (PTU)** asiste al sistema hidráulico 2 durante el despegue y aterrizaje cuando se cumplen simultáneamente:\n\n1. **Cantidad de fluido hidráulico en el Sistema 2 $\\ge 15\\%$**\n2. **Bomba accionada por motor 1 (EDP 1) operativa (no fallada)**\n3. **Flaps seleccionados fuera de 0 o Tren de Aterrizaje extendido/abajo**",
+      "references": [
+        "Embraer E195-E2 AOM - Section 2: Hydraulic System Logic",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "SIM-E2-NUM-021",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Baterías - Comprobación de Voltaje Previa al Vuelo",
+    "stem": "¿Cuál es el procedimiento y límites de voltaje de las baterías principales antes del despegue en el E195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mínimo para despegue: 22V | Si está entre 21V y 22V recargar 30 min con fuente AC si temp $\\ge 0^\\circ\\text{C}$ | Por debajo de 21V reportar a mantenimiento.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mínimo para despegue: 24V | Si está entre 22V y 24V recargar 15 min | Por debajo de 22V arrancar APU directamente.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mínimo para despegue: 20V | Entre 18V y 20V calentar baterías | Por debajo de 18V sustitución obligatoria.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mínimo para despegue: 28V de corriente continua en barras esenciales.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Comprobación de Baterías (AOM Limitations & SOPM):\n\n- **Voltaje mínimo requerido para el despegue**: **22V**\n- **Si el voltaje está entre 21V y 22V**: se debe recargar antes del despegue mediante cualquier fuente AC durante **30 minutos** (si la temperatura de baterías es $\\ge 0^\\circ\\text{C}$).\n- **Si el voltaje es inferior a 21V**: avisar y reportar obligatoriamente a mantenimiento.",
+      "references": [
+        "Embraer E195-E2 AOM - Section 1: Electrical System Limitations",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "SIM-E2-NUM-022",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Iluminación de Emergencia - ELPU y Tiras Fotoluminiscentes",
+    "stem": "¿Cuál es la duración de las baterías de las unidades ELPU y el tiempo de carga requerido para las tiras fotoluminiscentes del suelo de cabina?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ELPU: 10 minutos de alimentación mediante 6 baterías internas || Tiras fotoluminiscentes: carga de 30 minutos con luces de cabina proporciona ~6 horas de brillo.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "ELPU: 30 minutos || Tiras fotoluminiscentes: carga de 10 minutos proporciona 2 horas de brillo.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "ELPU: 15 minutos || Tiras fotoluminiscentes: carga de 1 hora proporciona 12 horas.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "ELPU: 5 minutos || Tiras fotoluminiscentes: autoalimentadas por LED continuos.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Luces de Emergencia en el E195-E2:\n\n- **Unidades de Alimentación de Luces de Emergencia (ELPU)**: Existen **6 ELPUs** con baterías internas que proporcionan **10 minutos** de iluminación autónoma.\n- **Tiras fotoluminiscentes de escape en suelo (Floor Path Marking)**: Requieren una carga previa de **30 minutos** con iluminación de cabina en BRIGHT, lo que otorga aproximadamente **6 horas** de luminiscencia continua.",
+      "references": [
+        "Embraer E195-E2 AOM - Section 2: Emergency Lighting",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "SIM-E2-NUM-023",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Motor - Medición de Aceite y Tiempo con Nivel Mínimo",
+    "stem": "¿Cuál es la ventana de tiempo tras parar motores para medir correctamente el nivel de aceite y el tiempo máximo de vuelo con nivel mínimo de aceite?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Medición: entre 15 minutos y 2 horas tras parada de motor || Tiempo máximo de vuelo con nivel mínimo: 2 horas y 45 minutos.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Medición: inmediatamente tras el corte (primeros 5 minutos) || Tiempo máximo de vuelo con nivel mínimo: 1 hora.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Medición: tras 4 horas de reposo || Tiempo máximo de vuelo con nivel mínimo: 5 horas.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Medición: únicamente en frío antes del primer vuelo del día || Tiempo máximo con nivel mínimo: sin límite de tiempo.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Gestión de Aceite de Motor (AOM / SOPM):\n\n- **Ventana de comprobación de nivel en EICAS/mirilla**: entre **15 minutos y 2 horas** después de haber apagado el motor (permite el drenaje adecuado al cárter sin pérdida por temperatura).\n- **Tiempo máximo de vuelo si el aceite está en nivel mínimo**: **2 horas y 45 minutos**.",
+      "references": [
+        "Embraer E195-E2 AOM - Section 1: Powerplant Oil Servicing",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "SIM-E2-NUM-024",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Navegación - Operación RNP10 sin GPS",
+    "stem": "¿Cuál es el límite máximo de tiempo de vuelo en espacio aéreo RNP10 si se opera con 2 sensores de largo alcance (IRS) y se pierde la señal GPS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "6 horas y 12 minutos (6:12 h).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "3 horas y 30 minutos (3:30 h).",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "8 horas exactas.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "2 horas y 45 minutos.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Navegación Oceánica / RNP10 sin GPS:\n\n- Se requieren **2 sensores de largo alcance** (al menos uno debe ser IRS).\n- Si el receptor GPS queda inoperativo o no está disponible, el tiempo máximo certificado para mantener la precisión requerida en **RNP10 en modo inercial puro es de 6 horas y 12 minutos (6:12 h)**.",
+      "references": [
+        "Embraer E195-E2 AOM - Section 1: Navigation Limitations - RNP",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "SIM-E2-NUM-025",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Distancias FMS y Modos de Aproximación",
+    "stem": "¿A qué distancias náuticas se activan el aviso de Terminal Area, la sugerencia de DESC NOW y el modo PREVIEW en el FMS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Terminal Area: 30 NM | DESC NOW prompt: 50 NM antes del TOD | Preview Mode: 150 NM (o a la mitad en vuelos cortos).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Terminal Area: 25 NM | DESC NOW prompt: 30 NM antes del TOD | Preview Mode: 100 NM.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Terminal Area: 50 NM | DESC NOW prompt: 80 NM antes del TOD | Preview Mode: 200 NM.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Terminal Area: 10 NM | DESC NOW prompt: 15 NM antes del TOD | Preview Mode: 50 NM.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Distancias FMS (Primus Epic Load 9.0):\n\n- **30 NM**: Límite de Área Terminal (*Terminal Area*), activación de *ACT VECTORS prompt* y *ACT APP SPEEDS prompt*.\n- **50 NM antes del Top of Descent (TOD)**: aparece el mensaje/opción *DESC NOW prompt*.\n- **150 NM**: Activación automática del *Preview Mode* (en vuelos de menos de 150 NM, se activa a la mitad de la distancia total del vuelo).\n- **3 NM**: Distancia de referencia del punto de aeródromo (ARP).\n- **25 NM**: Radio estándar de la MSA.",
+      "references": [
+        "Embraer E195-E2 FMS Manual - Load 9.0",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "SIM-E2-NUM-026",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Protección de Engelamiento - Lógica ECS REF A/I",
+    "stem": "¿A qué temperaturas y selecciones en el menú de despegue (TAKEOFF DATASET) se debe configurar el antihielo en ENG o en ALL?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ENG: entre 5ºC y 10ºC con humedad visible || ALL: por debajo de 5ºC con humedad visible (o nieve/charcos en pista).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "ENG: entre 0ºC y 5ºC || ALL: por debajo de 0ºC exclusivamente.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "ENG: siempre que la temperatura sea menor de 15ºC || ALL: solo si hay aguanieve.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "ENG y ALL se seleccionan automáticamente sin ajuste en MCDU.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Configuración de Antihielo en Despegue (ECS REF A/I):\n\n- **ENG**: Se selecciona con temperatura ambiente entre **5ºC y 10ºC** si existen condiciones de engelamiento (humedad visible, visibilidad $\\le 1.000\\text{ m}$, niebla).\n- **ALL**: Se selecciona con temperatura **inferior a 5ºC (no inclusive)** en condiciones de engelamiento, o con nieve/hielo/agua en pista.\n- *En tierra con ALL seleccionado, las válvulas de antihielo de plano (Wing Anti-ice) abren al alcanzar 30 kts de velocidad de rodaje/carrera.*",
+      "references": [
+        "Embraer E195-E2 AOM - Section 2: Ice Protection System",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  }
+]

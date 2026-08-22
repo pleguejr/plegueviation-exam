@@ -1,0 +1,762 @@
+[
+  {
+    "id": "SIM-E2-OPS-001",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Navegación - Recortes en Procedimientos RNP",
+    "stem": "¿Cuál es el máximo recorte de ruta aceptable por control o autorización en una aproximación RNP en el E195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "NUNCA al FAF; el último punto aceptable es el IF con un ángulo máximo de corte de 45º.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Directo al FAF siempre que el ángulo de interceptación no supere los 30º.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Directo al MAPt si las condiciones son VMC y el avión está estabilizado.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Al punto intermedio entre el IAF y el FAF con cualquier ángulo menor de 90º.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En aproximaciones RNP (PBN):\n\n- **NUNCA está permitido recortar directo al FAF (Final Approach Fix)**.\n- El último punto autorizado y aceptable para un recorte o vector es el **IF (Intermediate Fix)**, requiriendo un **ángulo máximo de interceptación de 45º** para garantizar la captura nominal del segmento final y el cálculo de VNAV.",
+      "references": [
+        "RemNote Flashcards - K KNOWLEDGE",
+        "Embraer E195-E2 SOPM - Section 3: RNP Instrument Approaches"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "SIM-E2-OPS-002",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Performance - Techo FL410 y Limitación Real",
+    "stem": "Si planeamos ascender y mantener FL410 (techo operativo del E195-E2), ¿cuál es la limitación ambiental y térmica realmente restrictiva?",
+    "options": [
+      {
+        "id": "A",
+        "text": "La limitación térmica de SAT -70ºC y TAT -54ºC.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "La velocidad máxima de crucero de M0.78.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La presión diferencial máxima de 6.5 psi.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El límite de combustible remanente en el tanque central.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Al operar en el techo de servicio (**FL410**):\n\n- La limitación verdaderamente restrictiva a menudo es la temperatura ambiental: **SAT mínima de -70ºC** y **TAT mínima de -54ºC** en vuelo, así como la proximidad del margen entre buffet de alta y baja velocidad.",
+      "references": [
+        "RemNote Flashcards - K KNOWLEDGE",
+        "Embraer E195-E2 AOM - Section 1: Operational Ceiling & Temp Limitations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "SIM-E2-OPS-003",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Procedimientos Antirruido - NADP en Binter",
+    "stem": "¿Cuáles son los procedimientos de salida con atenuación de ruido (NADP) utilizados en la compañía Binter?",
+    "options": [
+      {
+        "id": "A",
+        "text": "NADP A (reducción de empuje a 1.500 ft AFE) y NADP B (reducción de empuje y aceleración a 1.000 ft AFE).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "NADP 1 (reducción a 800 ft AFE) y NADP 2 (reducción y aceleración a 800 ft AFE).",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "NADP 1 exclusivamente con aceleración a 3.000 ft AFE en todos los aeropuertos.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "NADP C con reducción a 500 ft AFE y aceleración a 1.500 ft AFE.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Procedimientos de salida antirruido en Binter:\n\n- **NADP A**: Reducción de empuje a **1.500 ft AFE**, manteniendo velocidad de ascenso hasta 3.000 ft AFE donde se acelera.\n- **NADP B**: Reducción de empuje y aceleración simultánea a **1.000 ft AFE**.\n- *(NADP 1 y NADP 2 son los perfiles OACI estándar a 800 ft)*.",
+      "references": [
+        "RemNote Flashcards - K KNOWLEDGE",
+        "MOA Binter 8.3 - Procedimientos de Reducción de Ruido"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "SIM-E2-OPS-004",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Meteorología y Operación - Cold Soak Frost",
+    "stem": "Durante el descenso cruzamos engelamiento y en destino la temperatura es cercana a 0ºC con humedad visible. ¿Qué fenómeno puede ocurrir y cómo se previene operativamente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El combustible alar enfriado produce escarcha (Cold Soak Frost); para evitarlo se recomienda NO hacer tankering y cargar combustible fresco y templado en destino.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Bloqueo de las válvulas de sangrado; para evitarlo se debe conectar el APU Bleed a FL150.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Sobrecalentamiento del combustible; se previene manteniendo velocidad de 320 KIAS.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Congelación del agua potable; se previene realizando un DUMP de presurización.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "**Cold Soak Frost**:\n- Al descender desde niveles altos con combustible alar muy frío ($< 0^\\circ\\text{C}$), el contacto con aire húmedo en capas bajas genera una capa de escarcha en el intradós/extradós alar.\n- Si supera los límites certificados, obliga a un deshelado completo antes del siguiente vuelo.\n- **Técnica recomendada**: Evitar el *fuel tankering* excesivo; al repostar en destino combustible procedente de una cuba terrestre a temperatura templada, se calienta la superficie alar desde el interior disolviendo la escarcha.",
+      "references": [
+        "RemNote Flashcards - K KNOWLEDGE",
+        "MOA Binter 8.2.4 - Cold Soak Frost & De-icing"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "SIM-E2-OPS-005",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Emergencias - Velocidad Errónea (Unreliable Airspeed)",
+    "stem": "¿Cuáles son las actitudes de cabeceo (Pitch) y empuje (N1) de referencia inicial ante una indicación de velocidad no fiable ('Unreliable Airspeed')?",
+    "options": [
+      {
+        "id": "A",
+        "text": "SLAT/FLAP ZERO: Pitch 2º UP y N1 70% || SLAT/FLAP EXTENDED: Pitch 7º UP y N1 70%.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "SLAT/FLAP ZERO: Pitch 5º UP y N1 85% || SLAT/FLAP EXTENDED: Pitch 10º UP y N1 80%.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "SLAT/FLAP ZERO: Pitch 0º y N1 60% || SLAT/FLAP EXTENDED: Pitch 5º UP y N1 65%.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "SLAT/FLAP ZERO: Pitch 8º UP y N1 TOGA || SLAT/FLAP EXTENDED: Pitch 12º UP y N1 TOGA.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Valores de referencia para **UNRELIABLE SPEED PITCH & N1**:\n\n- **Configuración Limpia (SLAT/FLAP ZERO)**: **PITCH 2º NOSE UP** y **N1 70%**\n- **Configuración con Flaps (SLAT/FLAP EXTENDED)**: **PITCH 7º NOSE UP** y **N1 70%**",
+      "references": [
+        "Embraer E195-E2 QRH - Unreliable Airspeed",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "SIM-E2-OPS-006",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Técnicas de Vuelo - Actitudes Iniciales de Cabeceo",
+    "stem": "¿Cuáles son las actitudes de cabeceo de morro (Nose Pitch) estándar en el E195-E2 para despegue, motor y al aire, fallo de motor en V1 y GPWS/Windshear?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Despegue: 9.5º-10º luego FD | Go-Around: 8º luego FD | Fallo motor V1: 10º luego FD | GPWS/Windshear: 15º o PLI (el menor).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Despegue: 15º luego FD | Go-Around: 12º luego FD | Fallo motor V1: 8º luego FD | GPWS/Windshear: 20º o PLI.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Despegue: 8º luego FD | Go-Around: 10º luego FD | Fallo motor V1: 12º luego FD | GPWS/Windshear: 10º o PLI.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Despegue: 12º luego FD | Go-Around: 15º luego FD | Fallo motor V1: 15º luego FD | GPWS/Windshear: 18º fijo.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Actitudes de referencia de cabeceo (Nose Pitch Initial Targets):\n\n- **Takeoff**: **9.5º - 10º** hasta que la barra del Flight Director guíe.\n- **Go-Around**: **8º** luego seguir Flight Director.\n- **V1 Engine Failure**: **10º NOSE UP** luego seguir Flight Director.\n- **GPWS & Windshear Escape**: **15º NOSE UP** o barra PLI (*Pitch Limit Indicator*), la que sea menor.\n- **Máximo pitch para evitar tail strike**: **10º NOSE UP**.",
+      "references": [
+        "Embraer E195-E2 SOPM - Flight Techniques",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "SIM-E2-OPS-007",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Presurización - Función DUMP y Programación de Presión Diferencial",
+    "stem": "¿Cómo opera la función DUMP de presurización y cuál es la programación de presión diferencial nominal ($\\Delta P$) en el CPCS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DUMP apaga packs y recirc fans: Modo Auto asciende cabina a 2.000 fpm hasta 12.400 ft (14.500 ft HALTO); Modo Manual 3.000 fpm hasta 14.500 ft || $\\Delta P$: hasta 7.8 psi (<FL370) y hasta 8.4 psi (>FL370 a FL410).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "DUMP abre de inmediato la válvula outflow al 100%: sube a 5.000 fpm || $\\Delta P$: fija a 9.0 psi a cualquier altitud de vuelo.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "DUMP activa la mascarilla de pasajeros: asciende cabina a 1.000 fpm hasta 10.000 ft || $\\Delta P$: 5.0 psi en crucero.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "DUMP desconecta el sistema neumático: Modo Auto mantiene 10.000 ft de cabina || $\\Delta P$: 8.0 psi constante.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Sistema de Presurización (CPCS) en el E195-E2:\n\n**Función DUMP** (evacuación de humo / despresurización rápida):\n- Apaga los packs ECS y ventiladores de recirculación.\n- **Modo Automático**: Controla la válvula outflow para mantener un régimen de ascenso de cabina de **2.000 ft/min hasta 12.400 ft** (o **14.500 ft** en aeropuertos de gran altitud HALTO).\n- **Modo Manual**: Ascenso de cabina a **3.000 ft/min hasta 14.500 ft**.\n- Al alcanzar el límite, comanda la válvula a **FULL CLOSED**.\n\n**Programación de Presión Diferencial ($\\Delta P$)**:\n- Crucero $< 37.000\\text{ ft}$: $\\Delta P$ nominal de hasta **7.8 psi**.\n- Crucero $\\ge 37.000\\text{ ft}$ (hasta FL410): $\\Delta P$ nominal conmuta proporcionalmente hasta **8.4 psi**.",
+      "references": [
+        "Embraer E195-E2 AOM - Section 2: Pressurization System (CPCS)",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "SIM-E2-OPS-008",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Despacho y Pasajeros - Pasajeros Especiales (SCP)",
+    "stem": "¿Cuáles son las limitaciones de pasajeros especiales (SCP), menores no acompañados (UM) y mujeres embarazadas en la operativa de Binter?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Máximo 18 SCPs | Acompañante válido >16 años | Bebé <2 años (máx 2 por adulto) | Niño 2-12 años | UM 5-12 años (máx 6 de 5 a 8 años) | Embarazo: descargo desde semana 28 hasta 7 días post-parto.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Máximo 10 SCPs | Acompañante >18 años | Bebé <1 año | UM 6-14 años (máx 10) | Embarazo: prohibido volar a partir de la semana 24.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Máximo 25 SCPs | Acompañante >14 años | Bebé <3 años | UM 4-10 años | Embarazo: descargo obligatorio desde la semana 32.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Sin límite de SCPs | Acompañante >21 años | UM 5-12 años sin restricción de edad | Embarazo: solo certificado médico a partir de la semana 36.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Límites de Pasajeros Especiales (SCPs) en Binter (MOA 8.2):\n\n- **Máximo de SCPs**: **18** (se puede aumentar si el número de SCPs es menor o igual al de no-SCPs).\n- **Acompañante válido**: mayor de **16 años**.\n- **Bebé (Infant)**: menor de **2 años** (1 adulto puede llevar como máximo 2 bebés).\n- **Niño (Child)**: de **2 a 12 años**.\n- **Menor No Acompañado (UM)**: de **5 a 12 años** (máximo **6 UMs** de edad entre 5 y 8 años; grupos de menores máximo 59 de 5 a 11 años).\n- **Mujeres embarazadas**: desde la semana **28 de gestación** y hasta **7 días después del parto** requieren formulario de descargo de responsabilidad (NT-OPT-015).\n- **PMRs**: máximo **15 PMRs** totales, con un máximo de **9 sillas WCHC o WCHS**.",
+      "references": [
+        "MOA Binter 8.2 - Pasajeros Especiales y PMR",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "SIM-E2-OPS-009",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 FMS y Gestión ATC - Timeouts y CTOT/TSAT",
+    "stem": "¿Cuáles son los márgenes operacionales para CTOT y TSAT, y los tiempos de pérdida de navegación (DR mode) y logon ATC en el FMS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "CTOT: despegue -5 min a +10 min (pedir puesta en marcha sumando taxi time) | TSAT: puesta en marcha $\\pm 5$ min | FMS entra en DR tras 2 min sin sensores | ATC Logon timeout: 10 min.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "CTOT: despegue $\\pm 15$ min fijo | TSAT: $\\pm 10$ min | FMS entra en DR tras 5 min | ATC Logon timeout: 20 min.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "CTOT: despegue exacto en hora | TSAT: puesta en marcha $-10$ min | FMS entra en DR tras 30 segundos | ATC Logon timeout: 2 min.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "CTOT: despegue $-10$ min a $+5$ min | TSAT: $\\pm 2$ min | FMS entra en DR tras 1 min | ATC Logon timeout: 15 min.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Límites ATC y FMS en la operación:\n\n- **CTOT (Calculated Take Off Time)**: Ventana de salida en vuelo de **-5 min antes y +10 min después** de la hora asignada. Se debe solicitar la puesta en marcha teniendo en cuenta el Taxi Time (ejemplo: si el taxi time es 10 min, pedir puesta en marcha 15 min antes del CTOT).\n- **TSAT (Target Start Approval Time)**: Regulación de puesta en marcha solicitada en la ventana de **$\\pm 5\\text{ min}$**.\n- **FMS Dead Reckoning (DR Mode)**: Se activa tras **2 minutos** de pérdida de RNP y de todos los sensores de posición (GPS, IRS y radioayudas).\n- **ATC Logon Timeout**: Si el centro no acepta el logon en **10 minutos**, se muestra el mensaje *RE-LOG ON TO ATC CENTER*.\n- **UNABLE TO SEND DOWNLINK**: Se presenta tras **5 minutos** sin confirmación de red.",
+      "references": [
+        "Embraer E195-E2 FMS Manual - Load 9.0",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "SIM-E2-OPS-010",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Animales en Bodega (AVIH) - Temperaturas y Límites",
+    "stem": "¿Cuáles son los límites de temperatura en tierra y en vuelo (SAT) para el transporte seguro de animales vivos en bodega (AVIH)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tierra: mín -14ºC, máx 35ºC (0 a media carga) o 30ºC (media a carga completa) || Vuelo SAT: $\\le 2$ horas mín -65ºC, $> 2$ horas mín -59ºC.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Tierra: mín 0ºC, máx 25ºC en cualquier carga || Vuelo SAT: mín -40ºC independientemente del tiempo.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Tierra: mín -5ºC, máx 40ºC || Vuelo SAT: $\\le 2$ horas mín -50ºC, $> 2$ horas mín -45ºC.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Tierra: mín -20ºC, máx 30ºC || Vuelo SAT: mín -70ºC en todo el vuelo.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Límites de Transporte de Animales Vivos en Bodega (AVIH):\n\n**Temperatura en Tierra**:\n- Carga de 0 a media carga: mínimo **-14ºC**, máximo **35ºC**.\n- De media carga a carga completa: mínimo **-14ºC**, máximo **30ºC**.\n\n**Límites de temperatura estática en vuelo (SAT Limit)**:\n- Vuelos de **2 horas o menos**: SAT mínima de **-65ºC**.\n- Vuelos de **más de 2 horas**: SAT mínima de **-59ºC**.",
+      "references": [
+        "Embraer E195-E2 AOM - Section 1: Cargo Compartment Limitations - AVIH",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "SIM-E2-OPS-011",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Plan de Combustible - MOA 8.1 Políticas y Cifras",
+    "stem": "¿Cuáles son las cantidades estándar de combustible de rodaje (Taxi Fuel), contingencia mínima, reserva final y combustible adicional según el MOA de Binter?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Taxi: 200 kg | Contingencia mínima: 140 kg | Reserva Final: no inferior a 30 min | Adicional: no inferior a 15 min holding a 1.500 ft AFE (no necesario si Final + Alt + Cont > 1.300 kg).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Taxi: 150 kg | Contingencia mínima: 200 kg | Reserva Final: 45 min | Adicional: 30 min holding a 2.000 ft AFE.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Taxi: 300 kg | Contingencia mínima: 100 kg | Reserva Final: 20 min | Adicional: no exigido en la red canaria.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Taxi: 200 kg | Contingencia mínima: 300 kg | Reserva Final: 30 min | Adicional: obligatorio siempre con un mínimo de 1.000 kg.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Política de Combustible en Binter (MOA 8.1):\n\n- **Combustible de Taxi**: **200 kg**.\n- **Mínimo combustible de contingencia**: **140 kg**.\n- **Reserva Final (Final Reserve Fuel)**: no inferior a **30 minutos** a velocidad de espera a 1.500 ft sobre el alternativo.\n- **Combustible Adicional (Additional Fuel)**: no inferior a **15 minutos de espera a 1.500 ft AFE** más aproximación y toma; **NO es necesario** si la suma de Final + Alternate + Contingency supera los **1.300 kg**.\n- **Combustible Discrecional**: el que supere **500 kg** requiere solicitar un nuevo PVO/OFP (MOA 8.1.10.1).",
+      "references": [
+        "MOA Binter 8.1 - Plan de Combustible Operacional",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "SIM-E2-OPS-012",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Combustible - Definición Geométrica de Fuel ERA",
+    "stem": "¿Cómo se define y calcula geométricamente el aeródromo de ruta en ruta (Fuel ERA) según el MOA de Binter?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dentro de un arco circular con radio del 20% de la distancia total origen-destino, situado a una distancia del destino igual a la mayor entre el 25% de la distancia total o el 20% + 50 NM.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "A exactamente el 50% de la distancia total entre origen y destino en un radio de 100 NM.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En cualquier aeródromo situado a menos de 320 NM de la ruta ortodrómica.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Dentro de un círculo de radio igual al 10% de la distancia de crucero centrado sobre el punto medio del vuelo.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Geometría del **Fuel ERA** (En-Route Alternate Aerodrome):\n\n- Localizado dentro de un arco con un radio igual al **20% de la distancia total** entre el aeródromo de origen y destino.\n- Dentro de dicho arco, se situará sobre la ruta planeada a una distancia del aeródromo de destino igual a la mayor entre:\n  1. El **25% de la distancia total** origen-destino, o\n  2. El **20% de la distancia total origen-destino + 50 NM**.",
+      "references": [
+        "MOA Binter 8.1 - Fuel ERA Calculation",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "SIM-E2-OPS-013",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Operaciones LVO - Mínimos LVTO y Aproximaciones CAT II / CAT III",
+    "stem": "¿Cuáles son los límites de RVR para despegues de baja visibilidad (LVTO) y los mínimos de DH y RVR para aproximaciones CAT II y CAT III en el E195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "LVTO: RVR < 550 m (requiere autorización si < 400 m) | CAT II: DH 100 ft, RVR 300 m | CAT III: DH 50 ft, RVR 200 m.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "LVTO: RVR < 800 m | CAT II: DH 200 ft, RVR 550 m | CAT III: DH 100 ft, RVR 350 m.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "LVTO: RVR < 400 m | CAT II: DH 150 ft, RVR 400 m | CAT III: DH 0 ft, RVR 75 m.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "LVTO: RVR < 300 m | CAT II: DH 100 ft, RVR 250 m | CAT III: DH 50 ft, RVR 150 m.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Operaciones con Visibilidad Reducida (LVO):\n\n- **LVTO (Low Visibility Take-Off)**: Se considera cuando el RVR es **inferior a 550 m**. Los LVTOs inferiores a **400 m** requieren aprobación específica en el Manual de Operaciones.\n- **Aproximación CAT II**: **DH 100 ft**, **RVR 300 m**.\n- **Aproximación CAT III**: **DH 50 ft**, **RVR 200 m**.",
+      "references": [
+        "MOA Binter 8.4 - Low Visibility Operations",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "SIM-E2-OPS-014",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Meteorología Prohibida - Engelamiento Severo y Niebla Engelante",
+    "stem": "¿Cuáles de las siguientes condiciones meteorológicas de engelamiento están terminantemente PROHIBIDAS en la operativa de Binter?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Niebla engelante (Freezing Fog - FZFG), lluvia engelante (Freezing Rain - FZRA) y llovizna engelante (Freezing Drizzle - FZDZ).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Nubes estratiformes entre 0ºC y -10ºC con antihielo de motor conectado.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Nieve seca con temperatura de pista de -5ºC.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Humedad visible en crucero a FL350 con SAT de -50ºC.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Condiciones Meteorológicas Prohibidas en Binter:\n\n- **Niebla Engelante (FZFG)**: Niebla de gotas superenfriadas a temperatura $< 0^\\circ\\text{C}$ (**PROHIBIDO**).\n- **Lluvia Engelante (FZRA)** o **Llovizna Engelante (FZDZ)**: Precipitación que se congela instantáneamente al impacto (**PROHIBIDO**).\n- **Pista Contaminada con Hielo Mojado (Wet Ice - RWY CC 0)**: Operación prohibida.",
+      "references": [
+        "MOA Binter 8.1.6 & 8.2.4 - Limitaciones Meteorológicas",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "SIM-E2-OPS-015",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Pista Contaminada - Definición Oficial",
+    "stem": "¿Cuándo se considera oficialmente que una pista está CONTAMINADA según la normativa operacional del E195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cuando más del 25% de un tercio del área de la pista (dentro de la longitud y anchura utilizadas) está cubierta por contaminantes.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cuando más del 50% de la longitud total de la pista tiene agua estancada de más de 1 mm.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Siempre que la pista esté mojada con reflectividad visible de charcos.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cuando el coeficiente de rozamiento medido por mu-meter es menor de 0.40.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Definición de **Pista Contaminada**:\n\nSe considera contaminada cuando una parte significativa de la superficie de la pista (**más del 25% de un tercio del área**, dentro de la longitud y anchura utilizadas) está cubierta por una o más capas de contaminantes (agua estancada $> 3\\text{ mm}$, nieve suelta, nieve compactada o hielo).",
+      "references": [
+        "MOA Binter 8.1 - Definiciones de Estado de Pista",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "SIM-E2-OPS-016",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Mandos y Reversas - Velocidades de Cancelación en Binter",
+    "stem": "¿Cuáles son las velocidades de reducción de reversas (Max Reverse a Min Reverse, y Min Reverse a IDLE) aplicadas en el procedimiento de Binter?",
+    "options": [
+      {
+        "id": "A",
+        "text": "De Max Reverse a Min Reverse a 80 kts | De Min Reverse a IDLE alcanzando 30 kts (estándar 60 kts).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "De Max Reverse a Min Reverse a 100 kts | De Min Reverse a IDLE a 50 kts.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Max Reverse mantenida hasta calzos en pista mojada.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "De Max Reverse a IDLE directo al alcanzar 60 kts sin paso intermedio.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Uso de Reversas en Binter (SOPM E195-E2):\n\n- Reducción de **Max Reverse a Min Reverse**: al alcanzar **80 KIAS** (en Binter; estándar de manual es 60 kts).\n- Reducción de **Min Reverse a IDLE**: se recomienda alcanzar IDLE a **30 KIAS** para evitar reingestión de gases y piedras a baja velocidad.",
+      "references": [
+        "Embraer E195-E2 SOPM - Landing Rollout",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "SIM-E2-OPS-017",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Motor y al Aire - Velocidades y Empuje",
+    "stem": "Durante una aproximación frustrada (Go-Around), ¿qué velocidad se debe mantener en ascenso hasta la altitud de aceleración con todos los motores operativos (AEO) y con motor inoperativo (OEI)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AEO: Vref + 20 kts || OEI: Vac (Approach Climb Speed).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "AEO: Vfs || OEI: V2 + 10 kts.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "AEO: Vap || OEI: Vref fija.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "AEO: 200 kts || OEI: Green Dot.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Velocidades en Go-Around (SOPM E195-E2):\n\n- Con **todos los motores operativos (AEO)**: Mantener **Vref + 20 kts** en ascenso hasta la altitud de aceleración.\n- Con **un motor inoperativo (OEI)**: Mantener **Vac** (*Approach Climb Speed*) hasta la altitud de aceleración.",
+      "references": [
+        "Embraer E195-E2 SOPM - Missed Approach",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "SIM-E2-OPS-018",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 EGPWS - Cancelación de Alerta de Glideslope",
+    "stem": "¿Entre qué alturas radioaltimétricas puede cancelarse manualmente la alerta sonora 'GLIDESLOPE' del sistema EGPWS en el E195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Entre 30 ft y 2.000 ft AGL.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Entre 100 ft y 1.000 ft AGL.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Por debajo de 500 ft exclusivamente.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "A cualquier altura por encima de 10 ft.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La alerta sonora de desviación de senda de planeo (**EGPWS GLIDESLOPE alert**) puede inhibirse o cancelarse pulsando el botón iluminado *G/S INHIBIT* cuando el avión se encuentra entre **30 ft y 2.000 ft AGL**.",
+      "references": [
+        "Embraer E195-E2 AOM - Section 2: EGPWS Logic",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "SIM-E2-OPS-019",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Puerta de Cabina - Tiempos de Acceso de Emergencia e Inhibición",
+    "stem": "¿Cuánto tiempo tarda en abrirse la puerta blindada tras pulsar el botón EMER ENTRY desde cabina de pasaje y cuánto tiempo dura la inhibición al pulsar INHI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apertura retardada de emergencia: 30 segundos || Inhibición con botón INHI: 8,5 minutos (500 segundos).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Apertura retardada: 60 segundos || Inhibición: 5 minutos.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Apertura retardada: 10 segundos || Inhibición: 15 minutos.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Apertura retardada: 45 segundos || Inhibición: 10 minutos.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Sistema de Puerta de Cabina de Pilotaje (Flight Deck Door):\n\n- Tras presionar el botón **EMER ENTRY** en el teclado exterior, suena un zumbador y la puerta se desbloquea tras **30 segundos**.\n- Si la tripulación técnica pulsa el botón **INHI** en el panel superior, la entrada de emergencia queda bloqueada durante **8,5 minutos (500 segundos)**.",
+      "references": [
+        "Embraer E195-E2 AOM - Section 2: Flight Deck Door",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "SIM-E2-OPS-020",
+    "subject_id": "simulador-e2",
+    "learning_objective": "E195-E2 Modo Return to Base - Criterios de Activación Automática",
+    "stem": "¿Cuáles son los criterios de tiempo, altitud y régimen de descenso tras el despegue para la activación del modo FMS 'Return to Base'?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Menos de 10 minutos de vuelo, altitud inferior a 6.000 ft y régimen de descenso de al menos -500 ft/min mantenido durante 10 segundos.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Menos de 5 minutos de vuelo y altitud inferior a 3.000 ft.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Menos de 15 minutos de vuelo y selección de Flap 2.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Activación exclusiva manual mediante la tecla MENU del FMS.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Modo **Return to Base** en el FMS:\n\nSe activa automáticamente tras el despegue si se cumplen simultáneamente:\n1. **Tiempo transcurrido $< 10\\text{ minutos}$** desde el despegue.\n2. **Altitud $< 6.000\\text{ ft AGL}$**.\n3. **Régimen de descenso $\\le -500\\text{ ft/min}$ mantenido durante 10 segundos**.",
+      "references": [
+        "Embraer E195-E2 FMS Manual - Load 9.0",
+        "RemNote Flashcards - NUMBERS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  }
+]

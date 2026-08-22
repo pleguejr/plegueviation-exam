@@ -89,6 +89,11 @@ def compile_banks() -> int:
             "title": "Preparación Prueba de Comandante", 
             "icon": "ShieldCheck", 
             "color": "rose"
+        },
+        "simulador-e2": {
+            "title": "Simulador E2", 
+            "icon": "Cpu", 
+            "color": "sky"
         }
     }
 
@@ -122,7 +127,10 @@ def compile_banks() -> int:
         "operaciones-en-tierra": "Operaciones en Tierra y Rampa (MOA 8.2)",
         "operaciones-especiales": "Operaciones Especiales y Requisitos (MOA 8.7 y 8.8)",
         "procedimientos-de-vuelo": "Procedimientos de Vuelo y LVO (MOA 8.3 y 8.4)",
-        "seguridad-y-normativa": "Seguridad, SMS y Normativa SERA (MOA 11 y 12)"
+        "seguridad-y-normativa": "Seguridad, SMS y Normativa SERA (MOA 11 y 12)",
+        "memory-items-e2": "Memory Items (Simulador E2)",
+        "limitaciones-y-numeros": "Limitaciones y Números Operacionales (E2)",
+        "conocimiento-operacional": "Conocimiento Operacional & Procedimientos (E2)"
     }
 
     print(f"[*] Escaneando bancos en: {banks_dir}")

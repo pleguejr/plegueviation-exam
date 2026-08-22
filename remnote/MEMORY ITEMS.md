@@ -1,0 +1,60 @@
+- ^^^**CABIN ALTITUDE HIGH**^^^ >>>
+    - Crew Oxy Masks……………..DON, 100%
+    - Crew Communication…..….ESTABLISH
+    - Altitude……………………………10.000 ft or MEA, WHICHEVER IS HIGHER
+    - Thrust Levers…………………..IDLE
+    - Speedbrake Lever……………FULL OPEN
+    - Airspeed………………………....MAX / APPROPIATE
+    - Transponder…………………...7700
+- ^^^**ENG 1(2) FIRE**^^^ >>>
+    - Autothrottle………………..……………….DISENGAGE
+    - N1 (operative engine)………………..…MIN 5% ABOVE N1 IDLE
+    - **Affected Engine:** 
+        - Thrust Lever…………..……………….IDLE
+        - START/STOP selector……………...STOP
+        - FIRE EXTINGUISHER HANDLE….PULL
+- ^^^**BATT 1(2) OVERTEMP**^^^ >>>
+    - Associated BATT Knob……..OFF
+- ^^^**APU FIRE**^^^ >>>
+    - APU EMER STOP Button…….………..PUSH IN
+- ^^^**CARGO FWD(AFT) SMOKE**^^^ >>>
+    - Associated Cargo Smoke Button…..PUSH
+- ^^^**EMERGENCY DESCENT**^^^ >>>
+    - FSTN BELTS Switch………ON
+    - Altitude…………………………10.000 ft or MEA, WHICHEVER IS HIGHER
+    - Thrust Levers………………..IDLE
+    - Speedbrake Lever…………FULL OPEN
+    - Airspeed……………………….MAX / APPROPIATE
+    - Transponder………………….7700
+- ^^^**SMOKE / FIRE / FUMES**^^^ >>>
+    - **CONDITION: **SMOKE, FIRE or FUMES have been spotted by the crew without an EICAS warning
+    - Crew Oxy Masks…………..DON, 100%
+    - Crew Communication……ESTABLISH
+- ^^^**SMOKE EVACUATION**^^^ >>>
+    - Crew Oxy Masks…………..DON, 100%
+    - Crew Communication……ESTABLISH
+    - DUMP Button….…………….PUSH IN
+- ^^^**DUAL ENGINE FAILURE**^^^ >>>
+    - Airspeed…………………………………MIN 270 KIAS
+    - RAT MANUAL DEPLOY Lever…..PULL
+- ^^^**ENGINE ABNORMAL START**^^^ >>>
+    - **Affected engine:**
+        - START/STOP Selector……..STOP
+- ^^^**ENGINE SEVERE DAMAGE OR SEPARATION**^^^ >>>
+    - Autothrottle……………………….………DISENGAGE
+    - N1 (operative engine)…….….……….MIN 5% ABOVE N1 IDLE
+    - **Affected engine:**
+        - Thrust Lever……………….…………IDLE
+        - START/STOP Selector…...………STOP
+        - FIRE EXTINGUISHER Handle….PULL
+- ^^^**GEAR LEVER CAN NOT BE MOVED UP**^^^ >>>
+    - **If climb performance is required to clear obstacles**
+    - DN LOCK REL Button……..PRESS and HOLD
+    - LANDING GEAR Lever…….UP
+    - DN LOCK REL Button……..RELEASE
+- ^^^**JAMMED CONTROL WHEEL (ROLL)**^^^ >>>
+    - AILERON DISCONNECT Handle……..PULL
+- ^^^**JAMMED CONTROL COLUMN (PITCH)**^^^ >>>
+    - ELEVATOR DISCONNECT Handle…..PULL
+- ^^^**CARGO COMPARTMENT SMOKE**^^^ >>>
+    - Associated Cargo Smoke Button……PUSH

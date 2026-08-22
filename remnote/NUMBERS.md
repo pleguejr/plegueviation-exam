@@ -1,0 +1,294 @@
+- ALTITUDE
+    - 10 ft to 1500 ft↔Windshear can be detected  
+
+    - 25 ft↔TSA (Tail Strike Avoidance) altitude T/O and LNDG withFlap 0 to 5
+    - 35 ft↔End of 1st segment V2+10 (AEO) or V2 (OEI), Obstacles must be cleared for at least
+    - 35 ft↔2.5º+0.8º (3.3ºgradient)
+    - 45 ft↔TSA (Tail Strike Avoidance) altitude activated with Landing with Flap Full. 
+    - 50 ft↔Landing altitude where Vref should be maintained over threshold in order to land on the 60% of the runway
+    - AUTOPILOT MINIMUM USE HEIGHT
+        - 80 ft↔ILS and LPV approaches
+        - 100 ft↔Coupled go around height loss
+        - 190 ft↔NPA (Non Precision approach)
+        - 200 ft↔Minimum engagement height
+        - 1.000 ft↔Cruise and descend
+    - 500 ft→The ECS OFF remains active until {{500}} ft AGL
+    - 9.200 ft↔During high altitude operations (Ground Starts, TO & LDN), at least one pilot is required to use oxygen continuously, whenever the HI FIELD flag is displayed on EICAS.
+    - 7249 ft↔max. altitude AUTOLAND OPERATION
+    - 14.000 ft↔Max Altitude for Wipers
+    - 14.000 - 14.750 ft↔PAX OXY Mask Auto deploy
+    - 15.000 ft↔AMS controller disregards the ECS OFF signal (above)
+    - 20.000 ft↔Max altitude for FLAP extended
+    - 25.000 ft↔BANK auto below 30º and above 15º
+    - 41.000 ft↔Max operating altitude (ceiling)
+    - APU LIMITATIONS
+        - 39.000 ft↔Start APU
+        - 39.000 ft↔Electrical
+        - Start ENG↔(Check Airstart envelope)
+        - 15.000 ft↔Pneumatic
+- SPEED BRAKE AUTO RETRACT >>>
+    - 180 Kts or Below
+    - TLA beyond 76º
+    - FLAP 1 > 230 kts
+    - FLAP 2
+    - STALL PROTECTION active
+- KILOGRAMS
+    - FUEL
+        - 45 kg↔FUEL EQUAL CROSSBLEED OPEN message
+        - 130 kg↔Usable fuel reduced if the main ejector pump is inoperative.
+        - 360 kg↔Max Inbalanced
+        - 400 kg↔LOW LEVEL
+        - 2190 kg↔Each Wing Tank
+        - 9310 kg↔Center Tank
+        - 13.690 kg↔Total Fuel Quantity  
+    - WEIGHT
+        - 2.375 kg↔FWD Cargo
+        - 200 kg↔Dry ice (60kg if sublimation unknow)
+        - 2.555 kg↔AFT Cargo
+        - 118 kg↔max Magnetized material
+        - 4.930 kg↔Total cargo compartments 
+        - 51.850 kg↔MZFW
+        - 54.000 kg↔MLW
+        - 61.500 kg (57.700 kg)↔MTOW EMBRAER ^^^**(BINTER)**^^^ 
+        - 61.700 kg (57.900 kg)↔MRW EMBRAER ^^^**(BINTER)**^^^  
+    - 
+- TEMPERATURE
+    - -54º↔Min TAT in flight
+    - -70°↔Min SAT in flight 
+    - -45º→landing, the airplane may not takeoff without further maintenance inspection.
+    - -40º→Min Oil temperature IDLE
+    - -37º→Min Fuel tank temperature
+    - -20º→Min BATT temperature
+    - -18º→if reservoir temperature below -18ºC Hydraulic System Warm Up accomplish
+    - 0º↔Water tanks freeze
+    - 3º↔Freezing fog (visible moisture) Run up every 30min.
+    - 5º >>>
+        - temperature below (not inclusive) ALL on ECS A/I
+        - of SAT reset STALL PROT ICE SPEED if not ice detection and airplane is free of ice.
+    - 10º↔or below ICING CODITIONS, ENG on ECS A/I 5º-10º
+    - 24º↔Min Oil temperature for Take off
+    - 49º↔or below Oil Temperature WARM UP message 
+    - 163º↔Max Oil Temperature
+    - 174º↔Max Oil Temperature up 20 minutes 
+    - 1017º↔ENG Max continuous ITT
+    - 1032º↔APU Max EGT 
+    - 1054º↔Max ITT
+- KNOTS
+    - 10 kts↔below Antiskid operative / Max TailWind CAT II & AUTOLAND
+    - 15 kts↔Max Tailwind at TO & LND ^^^**(Max XW, RWY narrow than 45m but more than 30m)**^^^ / Max Xwind AUTOLAND
+    - 18 kts↔Max Xwind CAT II
+    - 25 kts↔Max Headwind CAT II & AUTOLAND
+    - 30 kts >>>
+        - Antiskid locked wheel protection
+        - Wing anti-ice open when select ECS REF A/I ALL
+        - reaching it’s recommended Min REV to IDLE
+    - 35 kts↔Max crosswind at Landing (gust included)
+    - 36 kts↔Max crosswind at Take off (gust included)
+    - Max crosswind vs RWY condition
+        - RWY CC 6→35kts
+        - RWY CC 5→35kts
+        - RWY CC 4→30kts
+        - RWY CC 3→20kts
+        - RWY CC 2→15kts
+        - RWY CC 1→10kts
+        - RWY CC 0→^^^**NO OPERATION**^^^ 
+    - 60 kts↔Max REV to Min REV ^^^**(Min REV to IDLE)->BINTER**^^^ 
+    - 80 kts↔^^^**Max REV to Min REV (BINTER) **^^^ 
+    - 160 kts↔Maximum Speed to Open Direct Vision Window
+    - 250 kts↔Max turbulence speed below 10.000 ft
+    - 270 kts >>>
+        - Max turbulence speed above 10.000 ft (^^^M0.76^^^)
+        - ^^^**DUAL ENGINE FAILURE**^^^ minimum airspeed
+        - For WINDMILLING AIRSTART recommended minimum airspeed
+    - 253 kts↔Max Wiper speed (above {{14.000 }}ft prohibited)
+    - 320 kts↔Max operating speed (^^^M0.82^^^)
+    - FLAPS EXT MAX SPEED
+        - 230 kts↔FLAP 1
+        - 215 kts↔FLAP 2
+        - 200 kts↔FLAP 3
+        - 180 kts↔FLAP 4/5
+        - 165 kts↔FLAP FULL 
+    - APP SPEED
+        - 210 kts↔FLAP UP
+        - 180 kts↔FLAP 1
+        - 160 kts↔FLAP 2
+        - 150 kts↔FLAP 3
+        - 140 kts↔FLAP 4/5
+        - 130 kts↔FLAP FULL 
+    - LANDING GEAR
+        - 220 kts↔VLE ret
+        - 250 kts↔VLE ext
+        - 265 kts↔VLE
+    - RAT
+        - 130 kts↔Min speed to continuous power supply
+        - 150 kts↔Min speed to deploy
+        - 270 kts↔DUAL ENG FAIL MEMO ITEM - MAN DEPLOY whenever the AC power sources are not powering the AC buses, the RAT is automatically deployed. In about 8 s, the RAT starts supplying power to the AC ESS BUS.  
+    - En caso de Go Around la velocidad a mantener en ascenso hasta altitud de aceleración es de {{VREF+20}} si AEO y de {{VAC}} si OEI
+- TIMES
+    - 3”↔after 95% RPM APU GEN AVAILABLE
+    - 8” >>>
+        - RAT starts supplying power to the AC ESS BUS.
+        - Wiper intermittent timer operation 
+    - Time to ^^^**ABORT START UP**^^^ If oil press don´t rise after first N2→10 seconds
+    - Time On ground APU auto shutdown after FIRE detection.→10 seconds
+    - Time PRESSING THE FIRE DETECTION TEST SHUTS DOWN THE APU.→10 seconds
+    - Time Thrust REVERSE trigger can be actuated after an engine inoperative, after this time, the thrust reverser trigger is blocked→10 seconds
+    - Time for EICAS Declutter after Landing gear, Flap retraction and APU OFF?→30 seconds
+    - Time after EMER ENTRY button pressed cockpit door open→30 seconds
+    - Time Ignition remains active after the surge or blowout condition ceases.→30 seconds
+    - Time T/O DATASET MENU page becomes available after Landing.→30 seconds
+    - Time APU cooldown period (**APU SHUTTING DOWN** msg)→1 minute
+    - Time HYD PBIT after 3 HYD system are pressurized→1 minute
+    - Time before reach TOD VTA magenta Vertical Track Alert.→1 minute
+    - Time If Oil press remain below minimum the engine must be shutdown and warm the Oil.→2 minutes
+    - Time When a single AC power (on ground), each windshield controller performs its PBIT.→2 minutes
+    - Time takes to ELEC PBIT after the airplane is powered by AC source→2 minutes
+    - Time Fuel ON to idle (If more abort start up)→2 minutes
+    - Time FMS reset after Take off aborted→2 minutes
+    - Time Anti-ice remain open after the icing condition is no longer detected.→2 minutes
+    - Time that takes Anti-ice system to activate if ACFT is in a leveled flight inside Undetected Ice Envelope.→2 minutes
+    - 2 min or 1.700 ft↔Anti-ice inhibit OFF on ECS (wing anti-ice -ENG on ECS) AFTER TAKEOFF
+    - 2 min and 10.000 ft↔ICE PROTECTION SYSTEM TEST (35 seg) ALTITUDE & TIME
+    - 5 min↔Take off & Go around power limit max. time (AEO & OEI).
+    - 8,5 min (500s)↔INHI button inhibits the emergency entry button 
+    - 10 min/6.000 ft and -500ft/m in 10”↔less than these values RETURN TO BASE mode active after take off.
+    - 10 min↔{{6}} ELPU with internal batteries time that powers the emergency lights.
+    - 15 min to 2 hours↔with Engine shut down to measure the oil level
+    - 17 min↔Max time for IRS alignment (depend of Latitude)
+    - 20 min↔PBE ^^^**(BINTER 15 min)**^^^ 
+    - 30 min >>>
+        - Photoluminescent strips charged, give around 6 hours.
+        - If batteries is between 21V and 22V recharge before Take Off through any AC source; 30min if batteries is at or above 0°C. Below 21V report maintenance. (Min for take off 22V)
+    - 2 hours 45 min↔max flying time with Oil minimum level
+    - 6:12 hours→2 sensores de largo alcance requeridos y al menos uno debe ser IRS. Si el GPS no está disponible se aplicará esta limitación de tiempo para RNP10
+    - ENGINE STARTER LIMITS:
+        - 4 min↔Only 3 starter attempts without cooling period are allowed.
+        - 30 min↔Cool-down time 
+    - EMERGENCY DESCEND:
+        - After loss of cabin pressure, oxygen is provided for all cockpit members. It covers an emergency descent (minutes):
+            - 12 min↔chemical oxygen for pax.
+            - 22 min↔from 41000 ft to 10000 ft as per emergency descent profile with mask regulator on 100% mode, and
+            - 98 min↔continuing cruise at 10000 ft for remaining flight time with mask regulator on NORMAL mode
+    - APU STARTING LIMITS:
+        - ISA + 35°C cooling period after each starting attempt↔1st and 2nd Attempts —> 60 s OFF Third Attempt —> 5 min OFF
+        - ISA + 35°C up to ISA + 39°C cooling period after each starting attempt::1st Attempt —> 60 s OFF 2nd Attempt —> 5 min OFF
+- PERCENTAGE %
+    - 15%↔% of Hyd 2 quantity, EDP 1 not failed & Flaps or landing gear down for PTU operation
+    - 20-27%↔of N2 Fuel ignition
+    - 25%↔The FADEC commands the depressurization of the Engine Driven Pump (EDP) if N2 is below this percent.
+    - 45%↔of N2 and there is no positive N1 manual abort start up.
+    - 55%↔of N2 IGNITION OFF
+    - 105%↔N1 or N2 FADEC commands an engine shutdown. 
+    - 108%↔APU Max rotor speed
+- EGPWS GLIDE SLOPE alert can be cancelled this one sound between↔30-2000ft
+- TERRAIN inhibits the {{undesired aural alerts for airports not in data base}}.
+- TERRAIN 120/120 screen, The highest altitude in {{100}}s.
+- ![](https://remnote-user-data.s3.amazonaws.com/AYR9O2_AmPQ4ld_VZmJSoSsrqXgaBjHKO9Ly0wteQ-XK4bNYTndXMYQEnILMez4dqMPARiW9iNqwt-vpmvrmJNod5CVSdNqIQLqDWqefSsszP3joIO7jkcpky5NWzNVd.png)
+- DISTANCE
+    - 3 NM↔AIRPORT REFERENCE POINT (ARP) DISTANCE
+    - 25 NM↔MSA    
+    - 30 NM↔Terminal Area
+    - 30 NM↔ACT VECTORS prompt and ACT APP SPEEDS prompt.
+    - 50 NM↔before TOD DESC NOW prompt
+    - 150 NM↔Preview mode (short flights less than 150 NM Preview will be active at a half of total distance)
+    - 320 NM↔of Adequate Aerodrome
+    - 1600 m↔longitude minima takeoff
+    - 1249↔longitud minima landing (50T - 1.667 factor)
+- FMS
+    - The FMS enters DR mode after loss of required navigation performance (see DGRAD) and loss of radio updating and all other position sensors (IRS and GPS) for greater than {{2}} minutes
+    - The flight is considered complete on ground for {{2}} min after landing or the cabin door is opened after landing. When flight complete occurs, the FMS data to original power--up condition on the ground.
+    - If an ATC LOGON is not accepted by the ATC center within {{10}} minutes, the RE--LOG ON TO ATC CENTER message is displayed and the pilot must attempt the logon again.
+    - UNABLE TO SEND DOWNLINK: The FMS has been waiting for a network acknowledge for a linked message for {{5}} minutes.
+- En caso de tener CTOT si es menor de {{1}} hr deberemos realizar el embarque con normalidad (solo si el APU está operativo) y pedir un REA 
+- En caso de CTOT podremos estar en el aire {{5}} min antes y {{10}} min después. Podremos tener en cuenta el TAXI time, que se lo añadiremos a los {{5}} min previos al despegue, por ejemplo si GCXO taxi time es de 10 min podremos pedir puesta en marcha {{15}} min antes del despegue 
+- La TSAT es una regulación del aeropuerto. Se puede pedir la puesta en marcha +- {{5}} min
+- UNRELIABLE SPEED PITCH & N1
+    - SLAT/FLAP ZERO↔PITCH 2º & N1 70%
+    - SLAT/FLAP EXTENDED↔PITCH 7º & N1 70%
+- NOSE PITCH
+    - TAKEOFF↔9.5º-10º then FD
+    - GO AROUND↔8º then FD
+    - V1 ENGINE FAIL↔10º NOSE UP then FD
+    - GPWS & WINDSHEAR↔15º NOSE UP or PLI whichever is lower
+    - MAX PITCH ANGLE to avoid tail strike→10º NOSE UP
+- PLAN DE COMBUSTIBLE
+    - Combustible de TAXI→200kg
+    - Mínimo combustible de contingencia→140kg
+    - COMBUSTIBLE FUEL ERA (calculado sin viento y designado en OFP) 
+        - fuel ERA localizado dentro de un arco con un radio igual al {{20}}% de la distancia total entre AD origen y AD destino
+            - Dentro del arco circular se situará sobre la ruta planeada a una distancia del AD de destino igual a la mayor de {{25}}% distancia total origen-dest o {{20}}% origen destino + {{50}} NM
+    - FINAL RESERVE FUEL no inferior a→30 minutos
+    - ADDITIONAL FUEL no inferior a→15 minutos espera a 1500 ft AFE + aproximación y aterrizaje
+    - ADDITIONAL FUEL no necesario si→suma de FINAL+ALTERNATE+CONTINGENCY > 1300kg
+    - El combustible discrecional que supere los {{500}}kg deberá solicitar un nuevo PVO de acuerdo a lo establecido en el MOA 8.1.10.1
+- SCP (Pasajeros Especiales)
+    - Numero máximo de pasajeros especiales (SCP)↔18 (es posible aumentarlo si SCPs menor o igual que pasajeros NO SCP)
+    - acompañantes válidos mayor de {{16}} años
+    - MENORES
+        - Se considera bebe (infant o baby) menor de {{2 }}años
+        - Se considera niño (child) entre {{2}} y {{12}} años
+        - 1 adulto puede hacerse cargo de máximo {{2}} bebes
+    - MENORES NO ACOMPAÑADOS
+        - UM se considera niños de {{5}} a {{12}} años
+        - los menores de {{14}} años deben estar acompañados en la sala de embarque
+        - Máximo numero de UMs edad 5 a 8 años es de↔6
+    - GRUPOS DE MENORES
+        - aplica de {{5}} a {{11}} años
+        - limitación de grupo menores maximo de→59
+    - MUJERES EMBARAZADAS
+        - a partir de semana {{28}} gestación y hasta {{7}} días después parto es necesario descargo responsabilidad (NT-OPT-015)
+    - LIMITACIONES PMR (Pasajero Movilidad Reducida)
+        - MAXIMO {{15}} PMR
+        - MAXIMO {{9}} WCHC o WHCS
+- LVO 
+    - LVTO
+        - Se considera LVTO despegue de baja visibilidad cuando el RVR < {{550}} m
+        - Los LVTOs inferiores a {{400}} m deben ser aprobados en el manual de operaciones 
+    - LVO APP
+        - CAT II 
+            - DH↔100 ft
+            - RVR↔300 m
+        - CAT III
+            - DH↔50 ft
+            - RVR↔200 m
+    - DEFINICIONES
+        - NIEBLA ENGELANTE/FREEZING FOG (FZFG)↔Niebla gotas súper enfriadas temp. Superficial < 0ºC ; menos de 1000m ; rango temperaturas -0ºC a -20ºC ^^^**PROHIBIDO EN BINTER**^^^
+        - LLUVIA O LLOVIZNA ENGELANTE/FREEZING RAIN (FZRA) OR DRIZZLE (FZDZ)↔Precipitación uniforme de gotas finas (inferior a 0,5mm) muy juntas que se congelan al impactar con el suelo u otros objetos expuestos ^^^**PROHIBIDO EN BINTER**^^^
+        - PISTA CONTAMINADA↔Parte significativa de la pista (más de un 25% de un tercio del área dentro de la longitud y anchura utilizadas) cubierta por una o más contaminantes
+- ANIMALES EN BODEGA (AVIH)
+    - Temperatura mínima y máxima en tierra
+        - Load 0 to Half Load mínimo -{{14}}ºC máximo {{35}}ºC
+        - Half load to Full Load mínimo -{{14}}ºC máximo {{30}}ºC
+    - In flight SAT LIMITATION block time & min temperature
+        - 2 hrs. or less -{{65}}ºC
+        - 2 hrs. or more -{{59}}ºC
+- PRESSURIZATION SYSTEM
+    - DUMP FUNCTION
+        - This function is used in the event of emergency evacuation, smoke evacuation or for fast cabin depressurization.
+            - DUMP MODE ACTIVATION:
+                - The DUMP function is activated pushing in the DUMP button on the pressurization panel. The DUMP function is operational for CPCS either in Automatic or Manual Modes.
+                    - In case the DUMP is activated, the CPCS automatically:
+                        - – Sets the ECS packs and recirculation fans to OFF
+                        - – In CPCS Automatic Mode, controls the OUTFLOW VALVE to maintain the cabin rate of climb at {{2000}} ft/min up to {{12400}} ft for normal takeoff and landing operation, or {{14500}} ft in HALTO
+                        - – In CPCS Manual Mode, controls the OUTFLOW VALVE to maintain the cabin rate of climb at {{3000}} ft/min up to {{14500}} ft
+                        - – When the cabin altitude reaches the above set points, it commands the OUTFLOW VALVE to {{full closed}}. From this point the cabin altitude rises due to the fuselage natural leakages.
+                - In case higher cabin rates of climb are necessary, the manual mode can be used selecting the cabin altitude to up position on the {{CABIN ALT}} rotary knob on the pressurization panel.
+    - DIFFERENTIAL PRESSURE SCHEDULE
+        - The CPCS provides two nominal differential pressures:
+            - – If the FMS cruise flight level is set below {{37000}} ft, the nominal differential pressure is set proportionally to the airplane altitude up to {{7.8}} psi
+            - – If either the FMS cruise flight level is set higher than {{37000}} ft or the airplane is actually flying above {{37000}} ft, the nominal differential pressure switches proportionally to the airplane altitude to up to {{8.4}} psi if at {{41000}} ft.
+- AIRCRAFT GENERAL
+    - AIRCRAFT DIMENSIONS
+        - 10,9m↔height
+        - 41,6m→longitude
+        - 35,1m→wingspan
+    - RWY MIN. WIDTH 180º TURN→24,63m
+    - MINIMUM WIDTH
+        - RUNWAY→30m
+        - TAXIWAY→15m
+    - MANEUVERING FLIGHT LOAD FACTORS
+        - AIRPLANE CLEAN→+2,5g / -1g
+        - AIRPLANE CONFIGURED→+2,0g / -0,0g
+    - PENDIENTE (GRADIENTE-FT/NM) MAX. CLIMB→33,6% - 2043ft/NM
+    - ENGINE OIL PRESS
+        - max. Oil press when oil temp < 49ºC→235 PSIg

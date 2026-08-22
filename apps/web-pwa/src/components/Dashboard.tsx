@@ -25,7 +25,8 @@ import {
   User,
   RefreshCw,
   AlertCircle,
-  BarChart3
+  BarChart3,
+  Cpu
 } from 'lucide-react';
 import { Question, BankManifest, QuestionStats, ExamSession, ExamMode, ExamSelectionStrategy } from '../types';
 import { loadAllQuestions, loadManifest } from '../services/questionsService';
@@ -170,6 +171,12 @@ export const Dashboard: React.FC<DashboardProps> = ({
           icon: <BookOpen className="w-5 h-5" />,
           gradient: 'from-purple-600 to-violet-500',
           badgeBg: 'bg-purple-500/10 text-purple-400 border-purple-500/30'
+        };
+      case 'simulador-e2':
+        return {
+          icon: <Cpu className="w-5 h-5" />,
+          gradient: 'from-cyan-600 to-blue-500',
+          badgeBg: 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30'
         };
       case 'command-upgrade':
       default:
