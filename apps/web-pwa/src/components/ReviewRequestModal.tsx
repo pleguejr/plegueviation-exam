@@ -81,7 +81,7 @@ export const ReviewRequestModal: React.FC<ReviewRequestModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in font-sans">
-      <div className="bg-[#0e1933] border border-amber-500/40 rounded-3xl max-w-lg w-full p-6 sm:p-8 space-y-5 shadow-2xl relative">
+      <div className="review-request-modal-card bg-[#0e1933] border border-amber-500/40 rounded-3xl max-w-lg w-full p-6 sm:p-8 space-y-5 shadow-2xl relative">
         
         {/* Close button */}
         <button

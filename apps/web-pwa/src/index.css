@@ -1014,6 +1014,122 @@ table th {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
 }
 
+/* 8.1 MODAL DE REVISIÓN Y AUDITORÍA TÉCNICA (REVIEW REQUEST MODAL) EN MODO DÍA */
+.theme-light .review-request-modal-card {
+  background-color: #ffffff !important;
+  border: 2px solid #f59e0b !important;
+  color: #0f172a !important;
+  box-shadow: 0 25px 50px -12px rgba(245, 158, 11, 0.25) !important;
+}
+
+.theme-light .review-request-modal-card h2,
+.theme-light .review-request-modal-card h3 {
+  color: #0f172a !important;
+  font-weight: 900 !important;
+}
+
+.theme-light .review-request-modal-card label {
+  color: #0f172a !important;
+  font-weight: 700 !important;
+}
+
+/* Question Stem Preview Box */
+.theme-light .review-request-modal-card .bg-black\/40 {
+  background-color: #f8fafc !important;
+  border: 1.5px solid #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+.theme-light .review-request-modal-card .bg-black\/40 p {
+  color: #1e293b !important;
+  font-weight: 600 !important;
+}
+
+/* Option List Items (Categorías de Motivos) */
+.theme-light .review-request-modal-card label.border {
+  background-color: #ffffff !important;
+  border: 1.5px solid #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+.theme-light .review-request-modal-card label.border:hover {
+  background-color: #fffbeb !important;
+  border-color: #f59e0b !important;
+}
+
+.theme-light .review-request-modal-card label.border p.font-bold {
+  color: #0f172a !important;
+}
+
+.theme-light .review-request-modal-card label.border p.text-\[10px\] {
+  color: #475569 !important;
+}
+
+/* Selected Category Item */
+.theme-light .review-request-modal-card label.border.bg-amber-500\/20 {
+  background-color: #fef3c7 !important;
+  border: 2px solid #f59e0b !important;
+  box-shadow: 0 2px 8px -2px rgba(245, 158, 11, 0.25) !important;
+}
+
+.theme-light .review-request-modal-card label.border.bg-amber-500\/20 p.font-bold {
+  color: #78350f !important;
+  font-weight: 900 !important;
+}
+
+.theme-light .review-request-modal-card label.border.bg-amber-500\/20 p.text-\[10px\] {
+  color: #92400e !important;
+}
+
+/* Textarea for comments */
+.theme-light .review-request-modal-card textarea {
+  background-color: #f8fafc !important;
+  border: 1.5px solid #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+.theme-light .review-request-modal-card textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+.theme-light .review-request-modal-card textarea:focus {
+  background-color: #ffffff !important;
+  border-color: #f59e0b !important;
+  box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.2) !important;
+}
+
+/* Info Banner (Integración con Auditoría) */
+.theme-light .review-request-modal-card .bg-\[\#09152e\] {
+  background-color: #eff6ff !important;
+  border: 1.5px solid #bfdbfe !important;
+  color: #1e3a8a !important;
+}
+
+.theme-light .review-request-modal-card .bg-\[\#09152e\] p {
+  color: #1e40af !important;
+}
+
+.theme-light .review-request-modal-card .bg-\[\#09152e\] strong {
+  color: #172554 !important;
+}
+
+.theme-light .review-request-modal-card .bg-\[\#09152e\] .text-sky-400 {
+  color: #004b87 !important;
+  font-weight: 800 !important;
+}
+
+/* Submit Success Box */
+.theme-light .review-request-modal-card .bg-emerald-950\/60 {
+  background-color: #ecfdf5 !important;
+  border: 2px solid #008f45 !important;
+  color: #064e3b !important;
+}
+
+.theme-light .review-request-modal-card .bg-emerald-950\/60 h3,
+.theme-light .review-request-modal-card .bg-emerald-950\/60 p {
+  color: #064e3b !important;
+}
+
 /* Custom scrollbars */
 .custom-scrollbar::-webkit-scrollbar {
   width: 6px;
