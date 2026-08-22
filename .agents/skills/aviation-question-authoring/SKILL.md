@@ -9,7 +9,7 @@ description: >-
 
 # Aviation Question Authoring & Validation Skill
 
-This skill governs the creation, review, and verification of multiple-choice questions for aviation examinations (Command Upgrades, Type Ratings, and Flight School Fleet).
+This skill governs the creation, review, and verification of multiple-choice questions (MCQs) and high-yield flashcards for aviation examinations (Command Upgrades, Type Ratings, and Flight School Fleet).
 
 ---
 
@@ -31,13 +31,37 @@ This skill governs the creation, review, and verification of multiple-choice que
    - **No Parenthetical Clues in Options**: Explanations, citations, and manual justification notes belong in `explanation.text`, never inside the option text.
    - **No Meta-Options**: Never use "Todas las anteriores", "Ninguna de las anteriores", or "A y B son correctas".
 
-4. **Detailed Explanations & Citations**:
-   - Explanations must clarify both why the correct answer is right and why key distractors are incorrect.
+4. **Detailed Explanations with Markdown Tables & Citations**:
+   - Explanations must clarify why the correct answer is right and why key distractors are incorrect.
+   - When a question references a table from the manual (e.g. Planning Minima, RFFS categories, MEL rectification intervals, Oxygen requirements, DGR classes, Speed tables), the explanation **MUST include the complete table formatted in Markdown**.
    - Exact references must cite: Document Name, Edition/Revision, Chapter/Section, Paragraph, and Page Number.
 
 ---
 
-## 2. Plegueviation Schema Specification
+## 2. Mandatory Dual Generation: MCQs & Flashcard Engine Integration
+
+Every question creation and bank expansion batch MUST be authored with dual utility: as robust multiple-choice exam questions AND as high-yield items for the **PWA Flashcards Mode**.
+
+In every generated batch, you MUST ensure a solid, systematic proportion of:
+
+1. **Numerical Data & Limitations Items (`isNumericalQuestion`)**:
+   - Speeds: $V_1, V_R, V_2, V_{\text{APP}}, V_{\text{REF}}, V_{\text{FE}}, V_{\text{LE}}, V_{\text{LO}}, V_{\text{NE}}, V_{\text{NO}}, V_{\text{MO}}, M_{\text{MO}}, V_A, V_{\text{GLIDE}}, V_X, V_Y, V_S, V_{SO}, V_{S1}$.
+   - Altitudes & Heights: Obstacle clearance, RVSM levels, minimum radar vectoring, CAT I/II/III minimums (DH, MDH, MDA, DA, DDA), transition altitude/level.
+   - Times, Durations & Deadlines: 72 hours for MOR/ASR, 30 days for fatality classification, MEL rectification intervals (Cat A specific, Cat B 3 days/72h, Cat C 10 days, Cat D 120 days), 45 min Controlled Rest, 10 min FDP buffers, 20 min radio failure hold.
+   - Weights & Masses: MTOW, MLW, MZFW, BOW, DOW, structural payload limits, baggage limits, DGR sporting arms ($\le 5\text{ kg}$).
+   - Percentages: Supplemental passenger oxygen percentages (10%, 30%, 100%, PSU +10%, First Aid 2%), climb gradient percentages, flap positions.
+   - Pressures & Temperatures: Hydraulic system pressures (psi), tire pressures, differential pressure limits ($\Delta P$), DGR Flash Point limits ($\le 60^\circ\text{C}$), fuel freezing points.
+   - Distances & Visibilities: Weather deviation (5 NM offset), RVR minimums (LVTO 125m / 150m, CAT II 300m, LVP 550m), cloud clearances (SERA 1.500m / 1.000 ft).
+
+2. **Acronyms, Mnemonics & Definitions Items (`isAcronymQuestion`)**:
+   - Company Mnemonics: `RETSE`, `E-DALTA`, `IMFLOCC`, `TELSI`, `MEANA`, `TWIN`, `NITS`, `PIBA`.
+   - Flight & Navigation Terminology: `CDFA`, `DDA`, `NPA`, `LPV`, `LVO`, `LVTO`, `LVP`, `AWO`, `RVR`, `PBN`, `RNP`, `RNAV`, `ILS`, `LOC`, `GS`, `VMC`, `IMC`, `SVFR`, `CTR`, `CTA`, `TMA`, `ATIS`, `NOTAM`, `METAR`, `TAF`, `SIGMET`, `AIRMET`.
+   - Regulatory, SMS & Equipment Codes: `MEL`, `CDL`, `MMEL`, `HIL`, `ATL`, `NOTOC`, `DGR`, `LRBL`, `AVSEC`, `SMS`, `MOR`, `ASR`, `CSR`, `FDM`, `SPI`, `ALOSP`, `CIAIAC`, `SERA`, `SAR`, `PBE`, `RVSM`, `RFFS`, `TCAS`, `TAWS`, `EGPWS`, `FADEC`, `APU`, `GPU`, `ASU`, `LMA`, `CAMO`, `FTL`.
+   - Each acronym question must clearly test the complete spelling, meaning, and operational application of the concept.
+
+---
+
+## 3. Plegueviation Schema Specification
 
 Every generated question must strictly follow this JSON schema:
 
@@ -54,7 +78,7 @@ Every generated question must strictly follow this JSON schema:
     { "id": "D", "text": "Option text", "is_correct": false }
   ],
   "explanation": {
-    "text": "Detailed explanation explaining rationale and operational context.",
+    "text": "Detailed explanation explaining rationale, full Markdown tables if applicable, and operational context.",
     "references": [
       "Exact Manual Name - Section X: Title - Paragraph Y (Page Z)"
     ]
@@ -67,32 +91,34 @@ Every generated question must strictly follow this JSON schema:
 
 ---
 
-## 3. Question Difficulty Classification
+## 4. Question Difficulty Classification
 
-- **0.1 - 0.3 (Basic Knowledge / Recall)**: Direct recall of memory items, limiting speeds ($V_{NE}, V_{FE}, V_A$), callouts, and acronym definitions.
-- **0.4 - 0.6 (Operational Application)**: Calculating crosswind components, applying MEL dispatch conditions, deciding diversion actions with $IMFLOCC$, applying flap corrections for gusts.
+- **0.1 - 0.3 (Basic Knowledge / Recall / Flashcards)**: Direct recall of memory items, limiting speeds, callouts, and acronym definitions.
+- **0.4 - 0.6 (Operational Application)**: Calculating crosswind components, applying MEL dispatch conditions, deciding diversion actions with $IMFLOCC$, applying flap corrections.
 - **0.7 - 0.9 (Complex Decision-Making / Multi-Factor)**: Fuel planning with degraded alternates, FTL rest calculations with duty extensions, engine failure during Go-Around with degraded RFFS.
 
 ---
 
-## 4. Mandatory Audit & Cross-Checking of Deleted Questions (`banks/deleted_questions.json`)
+## 5. Mandatory Audit & Cross-Checking Protocols (Deleted & Existing Questions)
 
 Whenever you are asked to author new questions, replace defective items, or expand question banks:
 
-1. **Mandatory Pre-Generation Check**:
-   - You MUST first inspect `banks/deleted_questions.json` (and any user-provided list or export of deleted questions).
+1. **Mandatory Pre-Generation Check of Deleted Questions (`banks/deleted_questions.json`)**:
+   - You MUST first inspect `banks/deleted_questions.json` (and `apps/web-pwa/public/banks/deleted_questions.json`).
    - Review the IDs, stems, options, and reasons for discard before generating new questions.
+   - **Never resurrect or replicate** a question that was eliminated by the user. If an item was eliminated due to ambiguity or obsolete data, author a fresh, clean item directly from the official current manual.
 
-2. **Strict Prohibition on Re-Introducing Discarded Concepts**:
-   - **Never resurrect or replicate** a question that was eliminated by the user.
-   - If a question on a specific topic was eliminated due to ambiguity, obsolete values, or poor distractors (noted in `reason`), any replacement or expansion in that topic MUST be authored from scratch directly from the official, current manual section with explicit operational grounding.
+2. **Mandatory Check of Existing Questions in Requested Chapters**:
+   - Before authoring questions for any chapter or subchapter (e.g. MOA 8.1, 8.2, 8.3, etc.), review the existing question files in `banks/` to ensure **ZERO repetition or duplicate stems**.
 
 3. **ID Collision Prevention**:
-   - Never assign an ID that matches any existing active question in `banks/` or any record in `banks/deleted_questions.json`.
+   - Never assign an ID that matches any existing active question in `banks/` or any record in `deleted_questions.json`.
 
 4. **Pre-Commit Verification Checklist**:
    - [ ] Checked against `banks/deleted_questions.json` to ensure zero collisions with discarded items.
+   - [ ] Checked against existing active bank files in `banks/` to prevent duplicate questions.
+   - [ ] Authoring includes high-yield numerical data and acronym definitions for Flashcard mode.
    - [ ] Exactly 1 option with `"is_correct": true`.
    - [ ] Strict distractor symmetry ($\pm 15\%$ length) per `easa-distractor-engineering`.
-   - [ ] Official documentary citations in `explanation.references` (Manual, Edition, Section, Paragraph).
+   - [ ] Explanations contain full Markdown tables and exact manual references.
 

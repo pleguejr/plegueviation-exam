@@ -52,3 +52,15 @@ When generating or editing aviation questions, flight manuals, operations checkl
 * **Prohibidas las pistas en la opción correcta**: NUNCA incluir aclaraciones parentéticas exclusivas en la opción correcta. Todo el detalle técnico y cuadros deben residir en `explanation.text`.
 * **Distractores realistas y competitivos**: Usar valores limítrofes reales (velocidades adyacentes, pesos de MTOW vs MLW, mínimos operacionales o umbrales FTL).
 * **Prohibidas las meta-opciones**: Nunca usar *"Todas las anteriores"*, *"Ninguna de las anteriores"* ni *"A + B son correctas"*.
+
+---
+
+## 6. Protocolo Mandatorio de Creación de Nuevas Preguntas & Modo Flashcards
+Siempre que se solicite la creación de nuevas preguntas o ampliación de bancos:
+1. **Comprobación Previa de Eliminadas**: Inspeccionar `banks/deleted_questions.json` para **NO repetir, resucitar ni duplicar jamás** preguntas o errores descartados por el usuario.
+2. **Revisión de Bancos Preexistentes**: Revisar los archivos de bancos en `banks/` del capítulo o subcapítulo solicitado para asegurar **cero duplicación de enunciados o IDs**.
+3. **Generación Dual (Multirespuesta + Flashcards)**: Todas las preguntas deben tener 4 opciones ($A, B, C, D$) de alta calidad psicométrica y alimentar sistemáticamente el **Modo Flashcards** incluyendo:
+   - **Términos y Datos Numéricos Concretos**: Velocidades ($V_1, V_R, V_2, V_{\text{APP}}, V_{\text{FE}}, V_{\text{MO}}$, etc.), altitudes y mínimos (DH, MDA, RVSM), plazos de categorías MEL (A, B 72h, C 10d, D 120d), tiempos (72h MOR/ASR, 30 días fallecimiento, 45 min Controlled Rest), pesos (MTOW, MLW, MZFW), porcentajes de oxígeno (10%, 30%, 100%) y visibilidades/RVR (125m, 150m, 300m, 550m).
+   - **Definiciones de Siglas, Acrónimos y Mnemónicos**: Mnemónicos de Binter (`RETSE`, `E-DALTA`, `IMFLOCC`, `TELSI`, `MEANA`, `TWIN`) y terminología aeronáutica (`CDFA`, `DDA`, `LVO`, `LVTO`, `MEL`, `CDL`, `NOTOC`, `LRBL`, `AVSEC`, `SMS`, `MOR`, `ASR`, `SERA`, `SAR`, `PBE`, etc.).
+4. **Tablas Oficiales en Explicaciones**: Cuando la pregunta se fundamente en una tabla del manual, **reproducir la tabla completa en Markdown en `explanation.text`**.
+
