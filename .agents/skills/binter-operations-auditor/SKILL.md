@@ -167,3 +167,29 @@ Siempre que el usuario ejecute la instrucción **"auditoría"** o **"auditoria"*
 4. **Informe de Auditoría al Usuario**:
    - Presentar una tabla clara con: ID de pregunta, motivo reportado, referencia al manual oficial (Capítulo/Página), y corrección implementada.
 
+---
+
+## 6. Hoja de Ruta de Ampliación de Bancos de Preguntas (Capítulos MOA 8.3 a 12)
+
+Para las próximas expansiones de contenido, consultar rigurosamente los siguientes capítulos del MOA de Binter:
+
+1. **MOA 8.3 Procedimientos de Vuelo**:
+   - Políticas de rodaje monomotor (*Single Engine Taxi In/Out*), perfiles de despegue y reducción de ruido (NADP 1 vs NADP 2), gestión de combustible en vuelo (*In-Flight Fuel Management*, llamadas de *Minimum Fuel* y *Mayday Fuel*), altitud de transición y ajuste altimétrico, aproximaciones estabilizadas (criterios VMC 500 ft / IMC 1.000 ft), aproximaciones CDFA / DDA (+50 ft sobre MDA para no violar mínimos) y maniobras de viento cruzado.
+2. **MOA 8.4 Operaciones con Visibilidad Reducida (LVO / LVTO / LVP / AWO)**:
+   - Requisitos de despegue con baja visibilidad (LVTO $\ge 125\text{ m}$ o $150\text{ m}$ según luces de eje), categorías de aproximación de precisión (CAT II con DH $100\text{ ft}$ y RVR $\ge 300\text{ m}$), procedimientos de aproximación frustrada en LVP, fallos de sistemas bajo DH y luces de aproximación mínimas requeridas.
+3. **MOA 8.6 Uso de Listas de Equipamiento Mínimo (MEL) y Desviación de Configuración (CDL)**:
+   - Intervalos de rectificación (Categoría A plazo específico, B $72\text{ horas} / 3\text{ días}$, C $10\text{ días}$, D $120\text{ días}$), procedimientos operacionales `(O)` y de mantenimiento `(M)`, prórrogas de rectificación (*Rectification Interval Extension*), despacho con múltiples elementos inoperativos y diferencias entre MEL, CDL y DDPM.
+4. **MOA 8.7 Operaciones No Comerciales**:
+   - Vuelos de prueba de mantenimiento (*Maintenance Check Flights - MCF*), vuelos ferry con tren extendido o un motor inoperativo, vuelos de traslado y requisitos de tripulación mínima.
+5. **MOA 8.8 Requisitos de Oxígeno**:
+   - Oxígeno suplementario para tripulación técnica (primeros auxilios, descenso de emergencia, cabina no presurizada > $10.000\text{ ft}$), oxígeno para tripulación de cabina (botellas portátiles PBE y $120\text{ l}$), porcentajes para pasajeros ($10\%$, $30\%$, $100\%$ según niveles de vuelo FL100, FL140, FL150 y FL250) y comprobación del sistema de máscaras de generación química (PSU).
+6. **MOA 9 Mercancías Peligrosas (DGR) y Transporte de Armas**:
+   - Notificación al Comandante (**NOTOC**), clases de mercancías peligrosas (1 a 9), artículos prohibidos en cabina vs bodega, transporte de armas de fuego y munición deportiva ($\le 5\text{ kg}$ por pasajero en embalaje reglamentario, entregada bajo custodia), y procedimientos de emergencia en caso de derrame o humo DGR.
+7. **MOA 10 Seguridad (Security / AVSEC)**:
+   - Búsqueda de seguridad previa al vuelo (*Pre-flight Security Search*), puerta blindada de cabina de pilotaje (*Flight Deck Door Lock* y código de acceso de emergencia), niveles de amenaza de pasajeros disruptivos (Nivel 1 Disruptivo verbal, Nivel 2 Físico leve, Nivel 3 Amenaza de vida, Nivel 4 Intrusión en cabina técnica), y localización del lugar de riesgo mínimo para bombas (**LRBL**).
+8. **MOA 11 Notificación y Reporte de Accidentes, Incidentes y Sucesos (SMS)**:
+   - Notificaciones obligatorias (**MOR** a AESA en plazo de $\le 72\text{ horas}$), informes de seguridad de la compañía (**ASR** / **CSR**), clasificación de gravedad (Accidente, Incidente Grave, Incidente), preservación de registros de vuelo (CVR y FDR / desconexión de breakers tras suceso grave) y política justa (*Just Culture*).
+9. **MOA 12 Reglas del Aire (SERA)**:
+   - Normativa SERA (*Standardised European Rules of the Air*), separación de aeronaves, prioridades de paso, señales de interceptación militar, plan de vuelo OACI, fallo de comunicaciones (7600) y señales de socorro/urgencia (MAYDAY / PAN-PAN).
+
+

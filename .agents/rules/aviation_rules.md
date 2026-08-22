@@ -66,3 +66,38 @@ Siempre que se solicite la creación de nuevas preguntas o ampliación de bancos
    - **Definiciones de Siglas, Acrónimos y Mnemónicos**: Mnemónicos de Binter (`RETSE`, `E-DALTA`, `IMFLOCC`, `TELSI`, `MEANA`, `TWIN`) y terminología aeronáutica (`CDFA`, `DDA`, `LVO`, `LVTO`, `MEL`, `CDL`, `NOTOC`, `LRBL`, `AVSEC`, `SMS`, `MOR`, `ASR`, `SERA`, `SAR`, `PBE`, etc.).
 4. **Tablas Oficiales en Explicaciones**: Cuando la pregunta se fundamente en una tabla del manual, **reproducir la tabla completa en Markdown en `explanation.text`**.
 
+---
+
+## 7. Motor de Repetición Espaciada (Spaced Repetition) & Sincronización Nube
+1. **Métricas de Maestría Cognitiva**:
+   - Cada reactivo almacena permanentemente en IndexedDB y Vercel Cloud Sync:
+     * `flashcardViews`: Contador histórico de veces presentada la tarjeta.
+     * `flashcardLastRating`: Última calificación registrada (`'hard'` | `'medium'` | `'easy'`).
+     * `flashcardLastViewedAt`: Timestamp de la última interacción.
+2. **Algoritmo de Priorización Dinámica Multi-Nivel**:
+   - Al iniciar una tanda, el mazo se organiza en 4 estratos y se baraja intra-estrato:
+     * **Tier 1 (🔴 Prioridad Máxima)**: Preguntas calificadas como *Difícil* (`'hard'`).
+     * **Tier 2 (🆕 Prioridad Alta)**: Preguntas *No Vistas* (`flashcardViews === 0` o `undefined`).
+     * **Tier 3 (🟡 Prioridad Media)**: Preguntas calificadas como *Regular* (`'medium'`).
+     * **Tier 4 (🟢 Prioridad Consolidada)**: Preguntas calificadas como *Dominada* (`'easy'`).
+3. **Micro-Learning & Finalización de Sesión**:
+   - Selector de tamaño de tanda: `15`, `25`, `50` o `Todas` las tarjetas.
+   - Botón *Finalizar Sesión* accesible en cualquier momento para consolidar estadísticas y reconstruir el mazo priorizado al instante.
+
+---
+
+## 8. Estándares Visuales Binter Airlines & Modo Día / Noche
+1. **Paleta Oficial Binter**:
+   - **Verde Binter**: Primario `#006837`, Secundario `#008f45`, Fondos claros `#ecfdf5`, Acentos `#34d399`.
+   - **Azul Binter**: Primario `#004b87`, Hover `#003366`, Fondos claros `#eff6ff`, Acentos `#38bdf8`.
+   - **Ámbar / Oro**: Alertas y revisión `#f59e0b`, Fondos claros `#fef3c7`, Texto `#78350f`.
+   - **Rojo Carmesí**: Fallos y descartes `#ef4444`, Fondos claros `#fff1f2`, Texto `#881337`.
+2. **Contraste Absoluto en Modo Día (`.theme-light`)**:
+   - Todos los paneles y tarjetas principales usan fondo blanco puro `#ffffff` con borde `#cbd5e1` o `#d1fae5`.
+   - Textos de enunciados, preguntas y opciones siempre en negro pizarra `#0f172a` (`font-bold` / `font-black`).
+   - Cero textos oscuros sobre fondos azul marino o gris oscuro.
+3. **Estructura Vertical del Reverso de Flashcards**:
+   - 1º Respuesta Correcta Destacada $\rightarrow$ 2º Botones de Calificación `[1] Difícil` / `[2] Regular` / `[3] Dominada` $\rightarrow$ 3º Fundamento Normativo, Explicación y Tablas Operacionales.
+4. **Flujo de Auditoría & Revisión Técnica**:
+   - Botón `[🔍 Revisión]` interactivo disponible permanentemente en Flashcards, Test activo y Resultados de examen con modal `ReviewRequestModal` integrado con la base de datos de auditoría.
+
