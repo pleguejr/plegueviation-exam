@@ -1,0 +1,187 @@
+[
+  {
+    "id": "E195-QRH-MEM-001",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Memory item: CABIN ALTITUDE HI",
+    "stem": "Ante el aviso de advertencia EICAS 'CABIN ALTITUDE HI', ¿cuál es el primer paso de memoria que debe ejecutar la tripulación?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Crew Oxy Masks .................... DON, 100%",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Thrust Levers .................... IDLE",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Speedbrake Lever .................... FULL OPEN",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "DUMP Button .................... PUSH IN",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El primer Memory Item de CABIN ALTITUDE HI es colocarse las **máscaras de oxígeno al 100%** y establecer comunicaciones antes de cualquier otra maniobra de descenso.",
+      "references": [
+        "QRH E195-E2 Rev19, Emergency Procedures - Cabin Altitude Hi"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "E195-QRH-MEM-002",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Memory item: SMOKE EVACUATION",
+    "stem": "En el procedimiento de memoria de SMOKE EVACUATION, ¿cuál es la acción sobre el botón DUMP?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DUMP Button .................... PUSH IN",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "DUMP Button .................... PULL OUT",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "DUMP Button .................... GUARD CLOSED",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "DUMP Button .................... NO TOCAR",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En la evacuación de humo, el botón DUMP se pulsa (**PUSH IN**) para despresurizar la cabina y permitir la evacuación rápida de humos a través de la válvula de salida.",
+      "references": [
+        "QRH E195-E2 Rev19, Smoke Procedures - S1-3"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    }
+  },
+  {
+    "id": "E195-QRH-MEM-003",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Memory item: DUAL ENGINE FAILURE",
+    "stem": "Durante el fallo de ambos motores (DUAL ENGINE FAILURE), ¿cuál es la velocidad óptima de planeo (Airspeed) que debe mantenerse de memoria?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Airspeed .................... MIN 250 KIAS / RAT SPEED",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Airspeed .................... VREF + 10 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Airspeed .................... 180 KIAS fijo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Airspeed .................... VMO/MMO",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Se debe mantener velocidad adecuada para asegurar la rotación de los motores (molinete / windmill) y el correcto funcionamiento de la RAT (Ram Air Turbine).",
+      "references": [
+        "QRH E195-E2 Rev19, Dual Engine Failure"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    }
+  },
+  {
+    "id": "E195-QRH-MEM-004",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Memory item: ENGINE FIRE / SEVERE DAMAGE",
+    "stem": "En caso de fuego de motor en vuelo, ¿cuál es la secuencia correcta de memoria para la palanca de empuje y el maneral cortafuego?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Thrust Lever (affected) ........ IDLE -> START/STOP Selector ........ STOP -> Fire Handle ........ PULL",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Fire Handle ........ PULL -> Thrust Lever ........ IDLE -> BOTTLE DISCH",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "START/STOP Selector ........ STOP -> Fire Handle ........ PUSH IN",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Thrust Lever ........ MAX -> Fire Handle ........ PULL",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Secuencia estándar: palanca afectada a ralentí (**IDLE**), selector de arranque a parada (**STOP**), tras confirmación mutua tirar del mando cortafuego (**PULL**) y descargar botella si la alarma persiste tras 30 segundos.",
+      "references": [
+        "QRH E195-E2 Rev19, Engine Fire Procedure"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "E195-QRH-MEM-005",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Memory item: APU FIRE en tierra vs en vuelo",
+    "stem": "¿Cómo actúa el sistema de extinción de incendios del APU en caso de fuego confirmado en tierra?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se apaga automáticamente y descarga la botella extintora tras 10 segundos si no hay intervención del piloto",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Requiere siempre disparo manual de la botella por el piloto",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No dispone de botella de extinción propia",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo emite aviso acústico sin cortar el combustible",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En tierra, ante fuego de APU, el FADEC/controlador del APU apaga la unidad y **descarga automáticamente la botella de extinción tras 10 segundos** si la tripulación no actúa antes.",
+      "references": [
+        "AOM E195-E2 Sección APU / QRH Rev19"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  }
+]

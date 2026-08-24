@@ -1,0 +1,224 @@
+[
+  {
+    "id": "MOA-86-001",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer la jerarquía documental MEL-MMEL-DDPM (MOA 8.6)",
+    "stem": "¿Cuál es la relación correcta entre el MMEL (Master Minimum Equipment List) y el MEL de Binter?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El MEL de Binter no puede ser menos restrictivo que el MMEL aprobado por el fabricante y la autoridad",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El MEL puede ser más permisivo que el MMEL si el operador lo justifica",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El MMEL es solo orientativo; el MEL del operador tiene prioridad",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El DDPM sustituye al MEL en todos los casos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MEL de un operador se basa en el MMEL aprobado y **no puede ser menos restrictivo** que este. El operador puede ser más restrictivo, pero nunca más permisivo que el MMEL.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.6; EASA AMC/GM-MMEL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "MOA-86-002",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer la función del DDPM en el despacho (MOA 8.6)",
+    "stem": "¿Qué es el DDPM y cuándo se aplica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dispatch Deviation Procedures Manual: complementa al MEL con procedimientos alternativos para operar con ítems inoperativos",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Documento de Desvíos de Performance de Motores, solo para el E195-E2",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Manual de procedimientos de defectos menores de cabina de pasajeros",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Daily Dispatch Pre-flight Manual, equivalente al OFP",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **DDPM (Dispatch Deviation Procedures Manual)** es un documento de Embraer que complementa al MEL, proporcionando los procedimientos alternativos (O/I items) para operar con sistemas inoperativos.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.6; DDPM E195-E2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    }
+  },
+  {
+    "id": "MOA-86-003",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer el plazo máximo de rectificación de una entrada MEL Categoría A",
+    "stem": "¿Cuál es el plazo máximo de rectificación para un ítem MEL de Categoría A?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Según especifique el MEL para ese ítem en particular (normalmente se requiere antes del siguiente vuelo o dentro de un período muy breve)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "3 días consecutivos desde la detección",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "10 días calendario",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "120 días naturales",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los ítems MEL **Categoría A** no tienen un intervalo de rectificación estándar; el MEL especifica el plazo para cada ítem individualmente. Suelen requerir acción inmediata o antes del siguiente despegue.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.6; AMC MMEL.050"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    }
+  },
+  {
+    "id": "MOA-86-004",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer el plazo de rectificación MEL Categoría B",
+    "stem": "¿Cuál es el plazo máximo de rectificación para un ítem MEL de Categoría B?",
+    "options": [
+      {
+        "id": "A",
+        "text": "3 días de calendario excluyendo el día de descubrimiento del fallo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "10 días naturales",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "120 días naturales",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Hasta el próximo check programado",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los ítems MEL **Categoría B** deben rectificarse dentro de **3 días de calendario** (excluyendo el día del descubrimiento del fallo).",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.6; AMC MMEL.050 Cat B"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "MOA-86-005",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer el plazo de rectificación MEL Categoría C",
+    "stem": "¿Cuál es el plazo de rectificación de un ítem MEL de Categoría C?",
+    "options": [
+      {
+        "id": "A",
+        "text": "10 días de calendario excluyendo el día de descubrimiento",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "3 días naturales",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "30 días naturales",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "120 días naturales",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los ítems MEL **Categoría C** deben rectificarse dentro de **10 días de calendario** (excluyendo el día del descubrimiento del fallo).",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.6; AMC MMEL.050 Cat C"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "MOA-86-006",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer el plazo de rectificación MEL Categoría D",
+    "stem": "¿Cuál es el plazo de rectificación de un ítem MEL de Categoría D?",
+    "options": [
+      {
+        "id": "A",
+        "text": "120 días de calendario excluyendo el día de descubrimiento",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "30 días naturales",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "60 días naturales",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No tiene plazo de rectificación definido",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los ítems MEL **Categoría D** tienen el plazo más largo: **120 días de calendario** (excluyendo el día del descubrimiento).",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.6; AMC MMEL.050 Cat D"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  }
+]

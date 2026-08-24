@@ -5989,6 +5989,240 @@
     "_subtopic": "flujo-despacho-mel-ddpm-cdl"
   },
   {
+    "id": "MOA-86-001",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer la jerarquía documental MEL-MMEL-DDPM (MOA 8.6)",
+    "stem": "¿Cuál es la relación correcta entre el MMEL (Master Minimum Equipment List) y el MEL de Binter?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El MEL de Binter no puede ser menos restrictivo que el MMEL aprobado por el fabricante y la autoridad",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El MEL puede ser más permisivo que el MMEL si el operador lo justifica",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El MMEL es solo orientativo; el MEL del operador tiene prioridad",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El DDPM sustituye al MEL en todos los casos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MEL de un operador se basa en el MMEL aprobado y **no puede ser menos restrictivo** que este. El operador puede ser más restrictivo, pero nunca más permisivo que el MMEL.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.6; EASA AMC/GM-MMEL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "flujo-despacho-mel-ddpm-cdl"
+  },
+  {
+    "id": "MOA-86-002",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer la función del DDPM en el despacho (MOA 8.6)",
+    "stem": "¿Qué es el DDPM y cuándo se aplica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dispatch Deviation Procedures Manual: complementa al MEL con procedimientos alternativos para operar con ítems inoperativos",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Documento de Desvíos de Performance de Motores, solo para el E195-E2",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Manual de procedimientos de defectos menores de cabina de pasajeros",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Daily Dispatch Pre-flight Manual, equivalente al OFP",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **DDPM (Dispatch Deviation Procedures Manual)** es un documento de Embraer que complementa al MEL, proporcionando los procedimientos alternativos (O/I items) para operar con sistemas inoperativos.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.6; DDPM E195-E2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "flujo-despacho-mel-ddpm-cdl"
+  },
+  {
+    "id": "MOA-86-003",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer el plazo máximo de rectificación de una entrada MEL Categoría A",
+    "stem": "¿Cuál es el plazo máximo de rectificación para un ítem MEL de Categoría A?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Según especifique el MEL para ese ítem en particular (normalmente se requiere antes del siguiente vuelo o dentro de un período muy breve)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "3 días consecutivos desde la detección",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "10 días calendario",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "120 días naturales",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los ítems MEL **Categoría A** no tienen un intervalo de rectificación estándar; el MEL especifica el plazo para cada ítem individualmente. Suelen requerir acción inmediata o antes del siguiente despegue.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.6; AMC MMEL.050"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "flujo-despacho-mel-ddpm-cdl"
+  },
+  {
+    "id": "MOA-86-004",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer el plazo de rectificación MEL Categoría B",
+    "stem": "¿Cuál es el plazo máximo de rectificación para un ítem MEL de Categoría B?",
+    "options": [
+      {
+        "id": "A",
+        "text": "3 días de calendario excluyendo el día de descubrimiento del fallo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "10 días naturales",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "120 días naturales",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Hasta el próximo check programado",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los ítems MEL **Categoría B** deben rectificarse dentro de **3 días de calendario** (excluyendo el día del descubrimiento del fallo).",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.6; AMC MMEL.050 Cat B"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "flujo-despacho-mel-ddpm-cdl"
+  },
+  {
+    "id": "MOA-86-005",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer el plazo de rectificación MEL Categoría C",
+    "stem": "¿Cuál es el plazo de rectificación de un ítem MEL de Categoría C?",
+    "options": [
+      {
+        "id": "A",
+        "text": "10 días de calendario excluyendo el día de descubrimiento",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "3 días naturales",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "30 días naturales",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "120 días naturales",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los ítems MEL **Categoría C** deben rectificarse dentro de **10 días de calendario** (excluyendo el día del descubrimiento del fallo).",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.6; AMC MMEL.050 Cat C"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "flujo-despacho-mel-ddpm-cdl"
+  },
+  {
+    "id": "MOA-86-006",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer el plazo de rectificación MEL Categoría D",
+    "stem": "¿Cuál es el plazo de rectificación de un ítem MEL de Categoría D?",
+    "options": [
+      {
+        "id": "A",
+        "text": "120 días de calendario excluyendo el día de descubrimiento",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "30 días naturales",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "60 días naturales",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No tiene plazo de rectificación definido",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los ítems MEL **Categoría D** tienen el plazo más largo: **120 días de calendario** (excluyendo el día del descubrimiento).",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.6; AMC MMEL.050 Cat D"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "flujo-despacho-mel-ddpm-cdl"
+  },
+  {
     "id": "CMD-MGT-001",
     "subject_id": "cmd_mnemonicos_mando",
     "learning_objective": "MOB 2.0.6.1 - Secuencia RETSE en Briefing de Despegue (MCDU & LIDO)",
@@ -10885,6 +11119,357 @@
     },
     "_category": "command-upgrade",
     "_subtopic": "mercancias-peligrosas-y-seguridad"
+  },
+  {
+    "id": "MOA-09-001",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Definición y marco regulatorio de Mercancías Peligrosas en Binter",
+    "stem": "Según MOA 9.1, ¿cuál es la normativa base que rige el transporte sin riesgo de mercancías peligrosas por vía aérea en Binter Airlines?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Las Instrucciones Técnicas de la OACI (Doc 9284) y el Anexo V (SPA.DG) del Reglamento (UE) nº 965/2012",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Únicamente el Código de Comercio Español",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La circular informativa interna de Seguridad Operacional",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El manual de handling AHM 590 exclusivamente",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 9.1 especifica que el transporte de mercancías peligrosas se realiza conforme a las **Instrucciones Técnicas de la OACI (Doc. 9284)** y la reglamentación EASA **SPA.DG (Anexo V del Reglamento 965/2012)**.",
+      "references": [
+        "MOA Binter ED06 RN26, Sección 9.1; OACI Doc 9284; SPA.DG"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "mercancias-peligrosas-y-seguridad"
+  },
+  {
+    "id": "MOA-09-002",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Información al Comandante (NOTOC)",
+    "stem": "Según MOA 9.1 y SPA.DG.110, ¿qué documento debe entregarse al Comandante antes de la salida cuando se transportan mercancías peligrosas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El NOTOC (Notification to Captain) firmado con la descripción, clase, cantidad, número UN y ubicación en bodega",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Únicamente la hoja de carga y centrado estándar",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Una copia del albarán comercial de aduanas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El permiso de sobrevuelo del país de destino",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **NOTOC (Notification to Captain)** es el documento obligatorio que informa al Comandante sobre todas las mercancías peligrosas a bordo, su clase, cantidad neta, número UN y posición exacta en bodega.",
+      "references": [
+        "MOA Binter ED06 RN26, Sección 9.1; SPA.DG.110"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "mercancias-peligrosas-y-seguridad"
+  },
+  {
+    "id": "MOA-09-003",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Transporte de baterías de litio de repuesto por pasajeros",
+    "stem": "Según la reglamentación sobre artículos permitidos en equipaje (MOA 9.1 / Tabla IATA), ¿dónde deben transportarse las baterías de ion-litio de repuesto para dispositivos electrónicos personales (PED)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Exclusivamente en el equipaje de mano, protegidas individualmente contra cortocircuitos",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En el equipaje facturado en bodega sin límite de capacidad",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Indistintamente en cabina o en bodega",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Están prohibidas en cualquier tipo de equipaje de pasajeros",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las baterías de litio de repuesto deben transportarse **exclusivamente en el equipaje de mano** para que, en caso de fuga térmica (thermal runaway), la tripulación de cabina pueda intervenir inmediatamente.",
+      "references": [
+        "MOA Binter ED06 RN26, Sección 9.1.5; IATA DGR Tabla 2.3.A"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "mercancias-peligrosas-y-seguridad"
+  },
+  {
+    "id": "MOA-09-004",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Procedimiento en caso de incidente con mercancías peligrosas en vuelo",
+    "stem": "En caso de detectarse humo o derrame de mercancías peligrosas en cabina durante el vuelo, ¿cuál es la acción prioritaria de la tripulación de cabina según el MOA 9 y checklist de emergencia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Notificar inmediatamente al Comandante, aislar la fuente, utilizar guantes de protección y extintor/bolsa de contención si aplica",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Abrir inmediatamente los compartimentos superiores para ventilar",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Verter agua sobre cualquier paquete que emita calor sin verificar su contenido",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Esperar a la llegada a destino sin alertar a los pilotos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Ante un incidente con DGR en cabina: **notificación inmediata a la cabina de vuelo**, utilización de equipos de protección personal (guantes ignífugos, PBE si hay humo) y aplicación del procedimiento de contención específico según OACI Doc 9481.",
+      "references": [
+        "MOA Binter ED06 RN26, Sección 9.1.8; OACI Doc 9481"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "mercancias-peligrosas-y-seguridad"
+  },
+  {
+    "id": "MOA-09-005",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Transporte de armas de fuego en vuelos comerciales",
+    "stem": "Según MOA 9.2, ¿cuál es la condición requerida para el transporte de armas de fuego de pasajeros en aeronaves de Binter?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Descargadas, desmontadas o en estuche rígido cerrado con llave, en bodega inaccesible a los pasajeros y con la guía de circulación de la Guardia Civil",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En cabina de pasajeros custodiadas por el sobrecargo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En el bolsillo del asiento del pasajero acreditado",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cargadas y listas para su uso en el armario de cabina",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las armas de fuego comerciales deben transportarse **en bodega inaccesible**, debidamente descargadas, en estuche seguro y con la documentación oficial reglamentaria (intervención de armas de la Guardia Civil).",
+      "references": [
+        "MOA Binter ED06 RN26, Sección 9.2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "mercancias-peligrosas-y-seguridad"
+  },
+  {
+    "id": "MOA-11-001",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Plazo de notificación obligatoria de sucesos de seguridad operacional (MOR)",
+    "stem": "Según el Reglamento (UE) nº 376/2014 y MOA 11.2, ¿cuál es el plazo máximo para notificar un suceso de notificación obligatoria (ASR / MOR) a la compañía / AESA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "72 horas desde que se tuvo conocimiento del suceso",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "24 horas únicamente",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "7 días naturales",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Antes de finalizar el mes en curso",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El Reglamento (UE) 376/2014 y el MOA 11.2 establecen un plazo reglamentario de **72 horas** para la remisión de informes de seguridad operacional (Mandatory Occurrence Report - MOR / ASR).",
+      "references": [
+        "MOA Binter ED06 RN26, Sección 11.2; Reglamento (UE) nº 376/2014"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "notificacion-incidentes"
+  },
+  {
+    "id": "MOA-11-002",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Preservación de registradores de vuelo (CVR / FDR) tras accidente o incidente grave",
+    "stem": "Según CAT.GEN.MPA.195 y MOA 11.11, ¿cuál es la obligación del Comandante respecto a los registradores de vuelo tras un accidente o incidente grave?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desconectar inmediatamente los disyuntores (CBs) de alimentación de CVR y FDR en tierra para evitar el sobreescrito de los datos",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Formatear la memoria antes de entregar el avión al técnico de guardia",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Continuar operando la aeronave con normalidad hasta el final de la serie de vuelos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Revisar las grabaciones de audio en cabina con la tripulación",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Tras un accidente o incidente grave, el Comandante debe **preservar las grabaciones desconectando los CBs correspondientes** una vez en tierra para evitar que el CVR (habitualmente de 2 horas o 25 horas) sobreescriba los eventos críticos.",
+      "references": [
+        "MOA Binter ED06 RN26, Sección 11.11; CAT.GEN.MPA.195"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "notificacion-incidentes"
+  },
+  {
+    "id": "MOA-11-003",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Notificación de incidencias por interferencia / suplantación GNSS (Jamming / Spoofing)",
+    "stem": "Según MOA 11.14 (de acuerdo con EASA SIB 2022-02), ¿qué acciones inmediatas debe realizar la tripulación ante una pérdida o suplantación de señal GPS/GNSS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Notificar inmediatamente vía AIREP al ATC, anotar coordenadas/ruta y cumplimentar el formulario R-MGNT-04.015 vía ASR",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Desconectar inmediatamente ambos generadores eléctricos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Descender a 1.000 ft sobre el terreno sin autorización",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Reiniciar las computadoras principales de vuelo en vuelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 11.14 prescribe: **notificación inmediata vía AIREP a ATC**, toma de datos geográficos (coordenadas, altitud, aerovía) y cumplimentación del formato **R-MGNT-04.015** adjunto al ASR.",
+      "references": [
+        "MOA Binter ED06 RN26, Sección 11.14; EASA SIB 2022-02"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "notificacion-incidentes"
+  },
+  {
+    "id": "MOA-11-004",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Notificación obligatoria de eventos en operaciones de baja visibilidad (LVO)",
+    "stem": "Según MOA 11.13, ¿cuál de los siguientes eventos ocurridos durante una aproximación CAT II/III requiere obligatoriamente un reporte ASR?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desconexión o fallo no previsto del piloto automático o pérdida de señal de senda/localizador por debajo de la altura de decisión",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Aterrizaje suave con visibilidad de 5.000 metros",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cambio rutinario de frecuencia de torre a rodadura",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Uso del limpiaparabrisas a velocidad lenta",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Cualquier fallo de guiado (AP, FD, señales de senda/localizador ILS, pérdida de referencias visuales) en condiciones LVO es un **suceso de notificación obligatoria (MOR)** según MOA 11.13.",
+      "references": [
+        "MOA Binter ED06 RN26, Sección 11.13; Reglamento (UE) nº 376/2014"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "notificacion-incidentes"
   },
   {
     "id": "CMD-MOA-GND-FUEL-001",
@@ -18685,6 +19270,123 @@
     },
     "_category": "command-upgrade",
     "_subtopic": "operaciones-en-tierra"
+  },
+  {
+    "id": "MOA-87-001",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer qué tipos de vuelo considera Binter como operaciones no comerciales (MOA 8.7)",
+    "stem": "¿Cuál de los siguientes vuelos se clasificaría como operación no comercial según el MOA 8.7?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vuelo de posicionamiento (ferry) sin pasajeros ni carga comercial",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Vuelo chárter con pasajeros de pago",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Vuelo de línea regular con carga en bodega",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Vuelo con un grupo de viajeros con acuerdo de código compartido",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las **operaciones no comerciales** incluyen vuelos de posicionamiento (ferry), vuelos de prueba, vuelos de demostración sin fin comercial, etc. El MOA 8.7 regula los requisitos aplicables a estos vuelos.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.7"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "operaciones-especiales"
+  },
+  {
+    "id": "MOA-88-001",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer los requisitos de oxígeno para tripulación de vuelo por encima de FL250 (MOA 8.8)",
+    "stem": "¿A partir de qué altitud (presión de cabina) debe tener disponible oxígeno suplementario al menos un piloto?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Por encima de 10.000 ft de altitud de cabina en todo momento",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Solo en vuelo sobre FL410",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Por encima de FL250 de altitud barométrica",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo si hay solo un piloto en cabina",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La normativa (CAT.OP.MPA.195) requiere oxígeno suplementario para la tripulación de vuelo cuando la **altitud de presión de cabina supera los 10.000 ft**.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.8; CAT.OP.MPA.195"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "operaciones-especiales"
+  },
+  {
+    "id": "MOA-88-002",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer los requisitos de oxígeno en caso de descompresión (MOA 8.8)",
+    "stem": "Tras una descompresión de cabina que requiere descenso de emergencia, ¿cuál es la dotación de oxígeno mínima requerida para los pasajeros?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suficiente para todos los pasajeros durante el tiempo que la altitud de cabina exceda 10.000 ft, y al menos 10 minutos para el 10% de los pasajeros a altitudes entre 10.000–13.000 ft",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Solo para los pasajeros en asientos de salida de emergencia",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No es necesaria la provisión de oxígeno para pasajeros si el descenso es rápido",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo para vuelos sobre FL410",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La normativa establece reservas de oxígeno para pasajeros en caso de descompresión: suficiente para **todos los pasajeros** durante el tiempo que la altitud de cabina exceda 10.000 ft, con dotaciones mínimas adicionales para distintos rangos de altitud.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.8; CAT.OP.MPA.195"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "operaciones-especiales"
   },
   {
     "id": "CMD-MOA-NC-001",
@@ -43724,6 +44426,786 @@
     "_subtopic": "procedimientos-de-vuelo"
   },
   {
+    "id": "MOA-83-001",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer la prioridad operacional durante fases críticas según MOA 8.3",
+    "stem": "Según MOA 8.3.A, ¿cuál es el orden de prioridades establecido por Binter Airlines para la tripulación de vuelo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VOLAR → NAVEGAR → COMUNICAR → GESTIONAR",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "COMUNICAR → NAVEGAR → VOLAR → GESTIONAR",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "GESTIONAR → VOLAR → COMUNICAR → NAVEGAR",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "NAVEGAR → VOLAR → GESTIONAR → COMUNICAR",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.A establece expresamente la política de Binter Airlines: **VOLAR, NAVEGAR, COMUNICAR Y GESTIONAR** como orden de prioridades. Volar el avión siempre es la primera prioridad; gestionar sistemas es la última.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.A"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-de-vuelo"
+  },
+  {
+    "id": "MOA-83-002",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer el modelo de toma de decisiones en situaciones de estrés (MOA 8.3.A)",
+    "stem": "¿Qué modelo de toma de decisiones adopta Binter Airlines para situaciones de anormalidades y desvíos técnicos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "IMFLOCC (MOB 3.1.10)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "DECIDE (FAA)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "FOR-DEC",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "DODAR",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.A establece que se adopta el modelo **IMFLOCC** tal y como se detalla en el MOB 3.1.10 para la toma de decisiones en caso de anormalidades.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.A; MOB 3.1.10"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-de-vuelo"
+  },
+  {
+    "id": "MOA-83-003",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer cuándo aplica la esterilidad de cabina para vuelos sobre FL100",
+    "stem": "Para vuelos con nivel final de crucero igual o por encima de 10.000 ft, ¿desde cuándo aplica el procedimiento de cabina estéril?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desde el cierre de puertas hasta 10.000 ft AFE, y desde 10.000 ft AFE hasta el aparcamiento en destino",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Desde la puesta en marcha de motores hasta 5.000 ft, y desde FAF hasta aterrizaje",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Desde el inicio del rodaje hasta 5.000 ft y desde IAF hasta pista libre",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo durante el despegue y la aproximación final por debajo de 3.000 ft",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.0.1.1 establece: para vuelos con nivel final ≥ 10.000 ft, cabina estéril aplica **desde el cierre de puertas hasta 10.000 ft AFE** y **desde 10.000 ft AFE hasta el aparcamiento** en destino.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.0.1.1"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-de-vuelo"
+  },
+  {
+    "id": "MOA-83-004",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer la aplicación de cabina estéril para vuelos por debajo de FL100",
+    "stem": "Para vuelos con nivel final de crucero inferior a 10.000 ft, ¿cómo se aplica la cabina estéril?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desde el cierre de puertas hasta el TOC y desde el TOD hasta el aparcamiento en destino",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Desde el arranque hasta 5.000 ft y desde 5.000 ft en descenso hasta pista libre",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo durante el despegue y la aproximación final",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No aplica cabina estéril porque no se alcanza FL100",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.0.1.1 establece que para vuelos con nivel final < 10.000 ft: cabina estéril aplica **desde el cierre de puertas hasta el TOC** y **desde el TOD hasta el aparcamiento** en destino.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.0.1.1"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-de-vuelo"
+  },
+  {
+    "id": "MOA-83-005",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Identificar qué actividades están prohibidas durante la cabina estéril (MOA 8.3.0.1.2)",
+    "stem": "Según MOA 8.3.0.1.2, ¿cuál de las siguientes actividades NO está permitida durante la esterilidad de la cabina de vuelo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar anuncios comerciales al pasaje",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Efectuar callouts estándar de fase de vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Comunicarse con ATC sobre situaciones de seguridad",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Leer la lista de comprobación de aterrizaje",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.0.1.2 enumera las actividades prohibidas durante cabina estéril, incluyendo: **anuncios de tipo comercial al pasaje**, cumplimentación de formularios, comidas y conversaciones no esenciales.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.0.1.2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-de-vuelo"
+  },
+  {
+    "id": "MOA-83-006",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer qué situaciones permiten a la tripulación de cabina interrumpir la esterilidad",
+    "stem": "¿Cuál de los siguientes motivos permite a la tripulación de cabina interrumpir la esterilidad de cabina de vuelo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Presencia de un pasajero conflictivo que supone amenaza de seguridad",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Un pasajero solicita una segunda bebida",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El catering no ha sido correctamente cargado",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Un pasajero pide cambio de asiento",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.0.1.3 lista las causas válidas para interrumpir la esterilidad, entre ellas: **pasajeros conflictivos**, amenaza de seguridad, conato de incendio, olor a quemado, emergencia médica, etc. Las solicitudes comerciales o de servicio no justifican la interrupción.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.0.1.3"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-de-vuelo"
+  },
+  {
+    "id": "MOA-83-007",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Saber el idioma común de Binter Airlines (MOA 8.3)",
+    "stem": "¿Cuál es el idioma común establecido por Binter Airlines para la redacción de manuales y comunicaciones internas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Castellano",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Inglés",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Castellano e Inglés indistintamente",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El idioma del país de operación",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3 (sección IDIOMA COMÚN) y el MOA 0.1.2 establecen el **castellano** como idioma común de Binter Airlines, en el cual están redactados todos los manuales y documentación.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3; MOA 0.1.2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-de-vuelo"
+  },
+  {
+    "id": "MOA-83-008",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer el uso obligatorio de auriculares según MOA 8.3",
+    "stem": "Según CAT.OP.MPA.215 y MOA 8.3, ¿cuándo es obligatorio el uso de auriculares con micrófono de brazo en tierra?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Al recibir autorización ATC de salida y cuando los motores están en funcionamiento",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Solo cuando los motores están en funcionamiento",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Únicamente en LVO (baja visibilidad)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo en vuelo, en tierra no es obligatorio",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3 (sección USO DE AURICULARES) indica que en tierra son obligatorios: **al recibir la autorización ATC de salida** mediante comunicaciones por voz y **cuando los motores estén en funcionamiento**.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3; CAT.OP.MPA.215"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-de-vuelo"
+  },
+  {
+    "id": "MOA-83-009",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer los puntos obligatorios del briefing de despegue (MOA 8.3.E)",
+    "stem": "¿Cuándo debe darse el Briefing de Despegue según el MOA 8.3.E?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Siempre en cabina de vuelo por el PF antes de la puesta en marcha de motores",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Durante la puesta en marcha de motores por el Comandante",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En la sala de firmas antes del embarque por el PIC",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Después del pushback, antes del inicio del rodaje",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.E establece: *'El Briefing se dará siempre en cabina de vuelo por el PF **antes de la puesta en marcha de motores**'*.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.E"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-de-vuelo"
+  },
+  {
+    "id": "MOA-83-010",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer cuándo incluir el EOSID en el briefing de despegue",
+    "stem": "Según MOA 8.3.E, ¿en qué vuelos se incluye el procedimiento de emergencia en caso de fallo de motor en el briefing de despegue?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Únicamente en el primer vuelo del SET (Sector de Entrenamiento/turno de servicio)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En todos los vuelos sin excepción",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo en aeropuertos con obstáculos cercanos a la pista",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo cuando las condiciones meteorológicas son adversas",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.E indica en Nota 1: *'Este punto se incluirá únicamente en el **primer vuelo del SET**'* (Sistema de Entrenamiento / primer sector del turno).",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.E, Nota 1"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-de-vuelo"
+  },
+  {
+    "id": "MOA-83-011",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer los puntos del Briefing de Aproximación (MOA 8.3.I)",
+    "stem": "Según MOA 8.3.I, ¿cuándo debe darse el Briefing de Aproximación?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antes de iniciar el descenso, por parte del PF",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Al pasar por el TOD, por el PM",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Al inicial la aproximación final (FAF), por el PF",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Después de recibir las instrucciones de vectores de ATC",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.I establece: *'Se dará **antes de iniciar el descenso** por parte del PF'*.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.I"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-de-vuelo"
+  },
+  {
+    "id": "MOA-83-012",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer las fases críticas de vuelo según el MOA 8.3",
+    "stem": "Según el Anexo 1 al Reglamento (UE) 965/2012 y el MOA 8.3, ¿cuáles son las fases críticas del vuelo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Carrera de despegue, trayectoria de vuelo de despegue, aproximación final, aterrizaje incluyendo la carrera, y cualquier otra fase a discreción del Comandante",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Únicamente por debajo de 10.000 ft en ascenso y descenso",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Despegue y aterrizaje solamente",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Desde el pushback hasta 5.000 ft AFE y desde 3.000 ft en descenso hasta pista libre",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3 cita el Anexo 1 al Reglamento (UE) 965/2012: las fases críticas son **carrera de despegue, trayectoria de vuelo de despegue, aproximación final, aterrizaje (incluida la carrera) y cualquier otra fase a discreción del Comandante**.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3; Reglamento (UE) 965/2012 Anexo 1"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-de-vuelo"
+  },
+  {
+    "id": "MOA-83-013",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer qué contiene el Briefing Conjunto de Tripulación (MOA 8.3.D)",
+    "stem": "¿Quién es el responsable del Briefing Conjunto de la Tripulación según el MOA 8.3.D?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El Comandante",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El Sobrecargo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El Copiloto",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El Jefe de Operaciones de Tierra",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.D establece: *'El responsable del Briefing de tripulación es el **Comandante**'*.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.D"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-de-vuelo"
+  },
+  {
+    "id": "MOA-83-014",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer la prioridad en el orden de aplicación de listas de comprobación (MEANA)",
+    "stem": "Según MOA 8.3.A y MOB 3.1.0, ¿cuál es el orden correcto de aplicación de listas de comprobación (método MEANA)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Memo Items → Listas de Emergencia → Listas Anormales principales → Listas Normales → Listas Anormales restantes",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Listas Normales → Listas Anormales → Listas de Emergencia → Memo Items",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Listas de Emergencia → Memo Items → Listas Anormales → Listas Normales",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Memo Items → Listas Normales → Listas Anormales → Listas de Emergencia",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El método **MEANA** (MOB 3.1.0) establece el orden: **M**emo Items → **E**mergency Checklist → **A**bnormal Checklist principal → **N**ormal Checklist → **A**bnormal Checklist restantes.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.A; MOB 3.1.0"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-de-vuelo"
+  },
+  {
+    "id": "MOA-83-015",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer la prohibición de simulación de emergencias con pasaje a bordo (MOA 8.3)",
+    "stem": "¿Está permitida la simulación de emergencias cuando hay pasajeros y/o carga a bordo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No. Está expresamente prohibida",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Sí, con autorización del Comandante",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Sí, si el Copiloto es piloto en instrucción (OJT)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo si se informa previamente a la tripulación de cabina",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3 establece expresamente: *'Está **prohibida** la simulación de emergencias en vuelos en los que sean transportados pasajeros y/o la carga'*.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.A"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-de-vuelo"
+  },
+  {
+    "id": "MOA-83-016",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer el briefing al ocupante del Jump Seat (MOA 8.3.II)",
+    "stem": "Según MOA 8.3.II, ¿quién da el briefing a la persona que ocupa el trasportín (Jump Seat) de la cabina de vuelo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El Comandante",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El Copiloto",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El Sobrecargo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El primer tripulante de cabina que aborde",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.II establece que **el Comandante** dará el briefing a la persona que ocupe el trasportín.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.II"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-de-vuelo"
+  },
+  {
+    "id": "MOA-83-017",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer los incursiones en pista (EAPRI) según MOA 8.3.B",
+    "stem": "Según MOA 8.3.B, ¿qué tipo de autorización permite automáticamente entrar o cruzar una pista?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ninguna. Una autorización de rodaje a un punto de espera NO autoriza a entrar ni cruzar la pista automáticamente",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Una autorización de rodaje al inicio de pista (holding point)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Una autorización de 'Line Up' implícita en la de rodaje",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Una autorización ATC para 'Taxi to Runway' equivale a entrar en pista",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.B es explícito: *'Una autorización de rodaje hasta un punto de espera **no autoriza automáticamente** a entrar en pista o cruzarla'*.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.B"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-de-vuelo"
+  },
+  {
+    "id": "MOA-83-018",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer normas de rodaje EAPRI (MOA 8.3.B)",
+    "stem": "Según MOA 8.3.B, ¿qué miembro de la tripulación realiza el seguimiento de la progresión de la aeronave en la carta del aeropuerto durante el rodaje?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En operación normal, el Copiloto (PM)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Siempre el Comandante",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El tripulante de cabina de servicio en puerta",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El agente de handling",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.B especifica: *'Asignar a un miembro de tu tripulación, (en operación normal al **COPILOTO**), para que siga la progresión de la aeronave en la carta del aeropuerto'*.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.B"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-de-vuelo"
+  },
+  {
+    "id": "MOA-83-019",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer la política de responsabilidad del rodaje (MOA 8.3.B)",
+    "stem": "Según MOA 8.3.B, ¿puede el Comandante delegar su responsabilidad en el rodaje?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Puede delegar el propio rodaje (ejecución), pero nunca su responsabilidad sobre él",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "No puede delegar ni la ejecución ni la responsabilidad del rodaje",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Puede delegar completamente la responsabilidad al Copiloto",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo puede delegar en un Comandante de instrucción",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.B establece: *'El comandante realizará, y será el responsable del rodaje, salvo que **delegue el propio rodaje**, pero **nunca delegará su responsabilidad**'*.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.B"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-de-vuelo"
+  },
+  {
+    "id": "MOA-83-020",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer los elementos CRM integrados en los procedimientos de vuelo (MOA 8.3.A)",
+    "stem": "¿Cuál de los siguientes briefings estructurados NO es mencionado en el MOA 8.3.A como parte de la comunicación y coordinación de la tripulación?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DECIDE (FAA Decision-Making Model)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "TWIN",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "RETSE",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "EDALTA",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.A menciona como briefings estructurados: **TWIN** (MOB 2.0.6.1/2), **RETSE** (MOB 2.0.6.1) y **EDALTA** (MOB 2.0.6.2/3). DECIDE no es un briefing de Binter.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.A; MOB 2.0.6"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-de-vuelo"
+  },
+  {
     "id": "CMD-MOA-FLT-051",
     "subject_id": "moa_navegacion_aproximaciones_maniobras",
     "learning_objective": "MOA 8.3.2.14 - Criterios de Aproximación Estabilizada (Stabilized Approach Criteria)",
@@ -46649,6 +48131,201 @@
     "_subtopic": "procedimientos-de-vuelo"
   },
   {
+    "id": "MOA-84-001",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer la definición de LVO según el MOA 8.4",
+    "stem": "¿Qué siglas definen las operaciones con visibilidad reducida en el MOA Binter?",
+    "options": [
+      {
+        "id": "A",
+        "text": "LVO – Low Visibility Operations",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "LVTO – Low Visibility TakeOff únicamente",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "CAT II/III solo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "MVL – Mínimos de Visibilidad de Límite",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.4 denomina **LVO (Low Visibility Operations)** al conjunto de operaciones con visibilidad reducida, incluyendo LVTO, CAT II y CAT III.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.4"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-de-vuelo"
+  },
+  {
+    "id": "MOA-84-002",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer los requisitos para declarar LVO en un aeropuerto (MOA 8.4)",
+    "stem": "¿Cuál es el parámetro de visibilidad que generalmente delimita el inicio de los procedimientos LVO?",
+    "options": [
+      {
+        "id": "A",
+        "text": "RVR < 550 m o visibilidad < 800 m para LVTO / RVR < 550 m para aproximación CAT II",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Visibilidad meteorológica < 1.500 m en todos los casos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Techo de nubes < 200 ft",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "RVR < 200 m exclusivamente para CAT III",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las LVO se activan con **RVR < 550 m** para LVTO (despegue baja visibilidad) y para las aproximaciones de precisión CAT II/III, con mínimos específicos según la categoría de la aeronave y la aprobación.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.4; CS-AWO"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-de-vuelo"
+  },
+  {
+    "id": "MOA-84-003",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer el requisito de habilitación de la tripulación para LVO (MOA 8.4)",
+    "stem": "¿Qué documento habilita a la tripulación de Binter para realizar operaciones LVO (CAT II/III)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aprobación específica de operador LVO expedida por AESA y habilitación en la licencia del piloto",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Solo la habilitación de tipo en el E195-E2",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Completar el entrenamiento inicial de la compañía",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La validez del examen de inglés OACI nivel 4",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las LVO requieren **aprobación de operador** concedida por la autoridad (AESA) y **habilitación específica** en la licencia del piloto, obtenida mediante entrenamiento y chequeo en simulador.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.4; CS-AWO"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-de-vuelo"
+  },
+  {
+    "id": "MOA-84-004",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer el procedimiento de información LVO en el ATIS (MOA 8.4)",
+    "stem": "Cuando el aeropuerto activa los procedimientos LVO, ¿por qué canal se informa a la tripulación?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ATIS y comunicaciones ATC con indicación de mínimos en vigor",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Únicamente por comunicado NOTAM",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo mediante el aviso del handling en pista",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Por ACARS en tiempo real desde operaciones",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La activación de LVO en un aeropuerto se difunde a través del **ATIS** y en las **comunicaciones ATC**, indicando las categorías operativas en vigor y los mínimos aplicables.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.4"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-de-vuelo"
+  },
+  {
+    "id": "MOA-84-005",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer los mínimos de RVR para LVTO en el E195-E2 según Binter",
+    "stem": "¿Cuál es el mínimo de RVR para realizar un despegue en condiciones de baja visibilidad (LVTO) en el E195-E2 operado por Binter?",
+    "options": [
+      {
+        "id": "A",
+        "text": "RVR ≥ 125 m con iluminación de pista y marcas de línea central de alta intensidad",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Visibilidad meteorológica ≥ 400 m en todos los casos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "RVR ≥ 550 m obligatoriamente",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No hay mínimo específico; depende exclusivamente del METAR",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Con las aprobaciones de Binter para LVTO, el mínimo general es **RVR ≥ 125 m** cuando el aeropuerto dispone de iluminación de pista adecuada (luces de línea central de alta intensidad). Sin ellas, el mínimo se eleva.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.4; CS-AWO"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-de-vuelo"
+  },
+  {
     "id": "CMD-MOA-MEL-001",
     "subject_id": "moa_equipamiento_minimo_mel_cdl",
     "learning_objective": "MOA 8.6.1 - Filosofía y Propósito de la Lista de Equipamiento Mínimo (MEL)",
@@ -47622,6 +49299,123 @@
     },
     "_category": "command-upgrade",
     "_subtopic": "procedimientos-de-vuelo"
+  },
+  {
+    "id": "MOA-12-001",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Procedimiento de fallo de comunicaciones en condiciones IFR (SERA.8035)",
+    "stem": "Según MOA 12.3 y el Reglamento SERA, si se experimenta fallo de comunicaciones en vuelo IFR en condiciones meteorológicas de vuelo por instrumentos (IMC), ¿qué velocidad y nivel deben mantenerse?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El nivel y velocidad asignados en la última autorización ATC durante 20 minutos tras la hora de notificación obligatoria, ajustando después al plan de vuelo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Descenso inmediato al nivel del mar manteniendo rumbo actual",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aterrizaje en el aeropuerto más cercano en menos de 5 minutos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Ascenso inmediato al nivel máximo de crucero disponible",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En espacio aéreo controlado bajo IMC, se mantiene el último nivel y velocidad asignados durante **20 minutos** tras el fallo/último reporte, y posteriormente se continúa conforme al plan de vuelo presentado.",
+      "references": [
+        "MOA Binter ED06 RN26, Sección 12.3; SERA.8035"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "reglas-del-aire-normativa"
+  },
+  {
+    "id": "MOA-12-002",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Instrucciones en caso de interceptación por aeronaves militares",
+    "stem": "Según MOA 12.4, si una aeronave de Binter es interceptada por aviones militares, ¿cuál debe ser la primera acción de la tripulación?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Seguir inmediatamente las instrucciones de la aeronave interceptora, responder a las señales visuales y sintonizar 121.500 MHz",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Efectuar maniobras evasivas a máxima potencia",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Apagar el transponder y todas las luces exteriores",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Acelerar a VMO para alejarse de la zona",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El procedimiento universal de interceptación (MOA 12.4 / OACI Anexo 2) exige **seguir las instrucciones de la aeronave interceptora**, ajustar transponder 7700 si no hay otra instrucción, y establecer contacto en **121.500 MHz**.",
+      "references": [
+        "MOA Binter ED06 RN26, Sección 12.4; OACI Anexo 2; SERA.11015"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "reglas-del-aire-normativa"
+  },
+  {
+    "id": "MOA-12-003",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Mínimos VMC en espacio aéreo Clase C, D y E por debajo de FL100",
+    "stem": "Según MOA 12.1 y SERA.5001, ¿cuáles son las distancias mínimas a nubes requeridas para vuelo VFR por debajo de 10.000 ft (o 3.050 m) AMSL en espacio Clase C, D y E?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1.500 m horizontalmente y 1.000 ft (300 m) verticalmente, con 5 km de visibilidad en vuelo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Libre de nubes y a la vista del suelo sin distancia mínima",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "8 km de visibilidad y 2.000 ft vertical de separación",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "300 m horizontalmente y 500 ft verticalmente",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los mínimos de visibilidad y distancia a nubes VMC estándar por debajo de 10.000 ft en espacio controlado son **5 km de visibilidad, 1.500 m horizontal y 1.000 ft (300 m) vertical** de separación con nubes.",
+      "references": [
+        "MOA Binter ED06 RN26, Sección 12.1; SERA.5001 Tabla S5-1"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "reglas-del-aire-normativa"
   },
   {
     "id": "CMD-MOA-SMS-001",
@@ -51522,6 +53316,318 @@
     },
     "_category": "command-upgrade",
     "_subtopic": "seguridad-y-normativa"
+  },
+  {
+    "id": "MOA-10-001",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Política de acceso y bloqueo de la puerta de cabina de vuelo",
+    "stem": "Según MOA 10.1, ¿cuál es el procedimiento estándar relativo a la puerta de cabina de vuelo durante el vuelo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Debe permanecer cerrada y bloqueada desde antes del arranque de motores hasta la parada final en estacionamiento, salvo accesos autorizados",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Solo se bloquea por encima de FL100",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Permanece abierta durante el crucero si no hay turbulencia",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El Comandante decide si bloquearla o no según el nivel de ocupación",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 10.1 establece que la puerta blindada de cabina de vuelo debe permanecer **cerrada y bloqueada desde el cierre de puertas y puesta en marcha hasta el apagado de motores en destino**, cumpliendo con CAT.GEN.MPA.135.",
+      "references": [
+        "MOA Binter ED06 RN26, Sección 10.1; CAT.GEN.MPA.135"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "seguridad-y-normativa"
+  },
+  {
+    "id": "MOA-10-002",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Niveles de amenaza de interferencia ilícita (ICAO Security)",
+    "stem": "Según MOA 10 y la clasificación OACI de pasajeros conflictivos, ¿qué define una amenaza de Nivel 3?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Comportamiento que amenaza la vida de los ocupantes o exhibición de armas",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Comportamiento perturbador verbal sin violencia física (Nivel 1)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Violencia física contra tripulantes o pasajeros (Nivel 2)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Intento de penetración en la cabina de vuelo (Nivel 4)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los niveles de amenaza OACI son: Nivel 1 (perturbador/verbal), Nivel 2 (agresión física), **Nivel 3 (amenaza a la vida / armas)** y Nivel 4 (intento de asalto a la cabina de vuelo).",
+      "references": [
+        "MOA Binter ED06 RN26, Sección 10.1; ICAO Security Manual Doc 8973"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "seguridad-y-normativa"
+  },
+  {
+    "id": "MOA-10-003",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Procedimiento ante sospecha de artefacto explosivo a bordo en vuelo",
+    "stem": "Si se confirma la localización de un artefacto explosivo sospechoso (IED) en cabina durante el vuelo, ¿dónde debe ubicarse según MOA 10 y procedimientos de la aeronave?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En la posición de menor riesgo (LRBL - Least Risk Bomb Location), rodeado de material atenuante y bolsas de plástico impermeables",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En el baño delantero junto a la cabina de vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En el compartimento de equipaje de mano más cercano",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En la bodega de carga principal sobre los tanques de combustible",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El artefacto debe colocarse en la **LRBL (Least Risk Bomb Location)**, ubicada típicamente en la puerta de servicio trasera, apilando mantas y material amortiguador humedecido para absorber la onda expansiva sin dirigirla a componentes críticos.",
+      "references": [
+        "MOA Binter ED06 RN26, Sección 10.1; MOB E195-E2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "seguridad-y-normativa"
+  },
+  {
+    "id": "MOA-10-004",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Código transponder de interferencia ilícita (Secuestro)",
+    "stem": "¿Qué código transponder (squawk) debe seleccionar la tripulación en caso de acto de interferencia ilícita (secuestro)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "7500",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "7600 (Fallo de comunicaciones)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "7700 (Emergencia general)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "7000 (VFR estándar)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El código **7500** está reservado internacionalmente para indicar interferencia ilícita (secuestro). 7600 es para fallo de radio y 7700 para emergencia general.",
+      "references": [
+        "MOA Binter ED06 RN26, Sección 10.1; SERA.14080"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "seguridad-y-normativa"
+  },
+  {
+    "id": "C172N-CHK-001",
+    "subject_id": "fleet-c172n",
+    "learning_objective": "Fallo de motor inmediatamente tras el despegue (Engine Failure Immediately After Takeoff)",
+    "stem": "Según la lista de verificación de emergencias del C172N, ¿cuál es la acción inmediata si el motor falla inmediatamente tras el despegue con pista remanente insuficiente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Airspeed 65 KIAS (flaps UP) / 60 KIAS (flaps DOWN), Mezcla CORTADA, Válvula de combustible OFF, Contactos OFF",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Efectuar un viraje escarpado de 180° para regresar a la pista de despegue",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Bombear la palanca de gases repetidamente y mantener el morro alto",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Extender flaps al máximo inmediatamente a cualquier velocidad",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Regla de oro de aviación y checklist C172N: **mantener velocidad de planeo (65/60 KIAS)**, aterrizar recto al frente evitando virajes pronunciados, y cortar mezcla, combustible y contactos eléctricos antes del impacto.",
+      "references": [
+        "Cessna 172N Pilot's Operating Handbook / Checklist de Emergencias"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "C172N-CHK-002",
+    "subject_id": "fleet-c172n",
+    "learning_objective": "Fuego de motor durante la puesta en marcha en tierra (Engine Fire During Start)",
+    "stem": "Si se produce fuego en el motor durante el arranque con motor que no llega a arrancar en el C172N, ¿cuál es el procedimiento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Continuar accionando el motor de arranque para aspirar las llamas al motor; si no arranca: Mezcla CORTADA, Gases a fondo, Combustible OFF",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cortar el arranque inmediatamente y abandonar la cabina con el motor en marcha",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Poner la palanca de gases al ralentí y cebar más combustible",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Conectar la bomba auxiliar de combustible",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El procedimiento del POH indica **seguir accionando la marcha (cranking)** para aspirar el combustible encendido hacia los cilindros; si el fuego no se extingue en unos segundos: Mezcla Idle Cut-off, Throttle Full Open, Fuel Shutoff Valve OFF y evacuar con extintor.",
+      "references": [
+        "Cessna 172N Pilot's Operating Handbook Sección 3"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "C172N-CHK-003",
+    "subject_id": "fleet-c172n",
+    "learning_objective": "Sobrecarga del alternador / Luz de bajo voltaje (Overvoltage / Low Voltage)",
+    "stem": "Si se enciende la luz de LOW VOLTAGE o el amperímetro muestra sobrecarga en el C172N en vuelo, ¿cuál es el procedimiento inicial?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alternator Switch OFF, desconectar equipos eléctricos no esenciales y aterrizar lo antes posible",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Master Switch en ON permanente y encender todas las luces exteriores",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aumentar la potencia al máximo para que el alternador genere más tensión",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cortar la mezcla para reiniciar el regulador de voltaje",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Ante un fallo o sobretensión del alternador: desconectar el interruptor del alternador (**ALT OFF**) para proteger la aviónica y reducir la carga eléctrica para conservar la batería hasta el aterrizaje.",
+      "references": [
+        "Cessna 172N Pilot's Operating Handbook Sección 3"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "emergencias"
+  },
+  {
+    "id": "C172N-POH-001",
+    "subject_id": "fleet-c172n",
+    "learning_objective": "Velocidades de despegue y mejor régimen de ascenso (Vy)",
+    "stem": "¿Cuál es la velocidad de mejor régimen de ascenso (Vy) al nivel del mar para el Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "73 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "59 KIAS (Vx - mejor ángulo)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "85 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "65 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para el Cessna 172N (Lycoming O-320-H2AD, 160 HP), **Vy = 73 KIAS** al nivel del mar y **Vx = 59 KIAS**.",
+      "references": [
+        "Cessna 172N Pilot's Operating Handbook Sección 4"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "emergencias"
   },
   {
     "id": "C172N-EMG-001",
@@ -61321,6 +63427,201 @@
     "_subtopic": "sistemas-aeronave"
   },
   {
+    "id": "E195-QRH-MEM-001",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Memory item: CABIN ALTITUDE HI",
+    "stem": "Ante el aviso de advertencia EICAS 'CABIN ALTITUDE HI', ¿cuál es el primer paso de memoria que debe ejecutar la tripulación?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Crew Oxy Masks .................... DON, 100%",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Thrust Levers .................... IDLE",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Speedbrake Lever .................... FULL OPEN",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "DUMP Button .................... PUSH IN",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El primer Memory Item de CABIN ALTITUDE HI es colocarse las **máscaras de oxígeno al 100%** y establecer comunicaciones antes de cualquier otra maniobra de descenso.",
+      "references": [
+        "QRH E195-E2 Rev19, Emergency Procedures - Cabin Altitude Hi"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "fleet-e195e2",
+    "_subtopic": "memory-items"
+  },
+  {
+    "id": "E195-QRH-MEM-002",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Memory item: SMOKE EVACUATION",
+    "stem": "En el procedimiento de memoria de SMOKE EVACUATION, ¿cuál es la acción sobre el botón DUMP?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DUMP Button .................... PUSH IN",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "DUMP Button .................... PULL OUT",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "DUMP Button .................... GUARD CLOSED",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "DUMP Button .................... NO TOCAR",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En la evacuación de humo, el botón DUMP se pulsa (**PUSH IN**) para despresurizar la cabina y permitir la evacuación rápida de humos a través de la válvula de salida.",
+      "references": [
+        "QRH E195-E2 Rev19, Smoke Procedures - S1-3"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "fleet-e195e2",
+    "_subtopic": "memory-items"
+  },
+  {
+    "id": "E195-QRH-MEM-003",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Memory item: DUAL ENGINE FAILURE",
+    "stem": "Durante el fallo de ambos motores (DUAL ENGINE FAILURE), ¿cuál es la velocidad óptima de planeo (Airspeed) que debe mantenerse de memoria?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Airspeed .................... MIN 250 KIAS / RAT SPEED",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Airspeed .................... VREF + 10 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Airspeed .................... 180 KIAS fijo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Airspeed .................... VMO/MMO",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Se debe mantener velocidad adecuada para asegurar la rotación de los motores (molinete / windmill) y el correcto funcionamiento de la RAT (Ram Air Turbine).",
+      "references": [
+        "QRH E195-E2 Rev19, Dual Engine Failure"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    },
+    "_category": "fleet-e195e2",
+    "_subtopic": "memory-items"
+  },
+  {
+    "id": "E195-QRH-MEM-004",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Memory item: ENGINE FIRE / SEVERE DAMAGE",
+    "stem": "En caso de fuego de motor en vuelo, ¿cuál es la secuencia correcta de memoria para la palanca de empuje y el maneral cortafuego?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Thrust Lever (affected) ........ IDLE -> START/STOP Selector ........ STOP -> Fire Handle ........ PULL",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Fire Handle ........ PULL -> Thrust Lever ........ IDLE -> BOTTLE DISCH",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "START/STOP Selector ........ STOP -> Fire Handle ........ PUSH IN",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Thrust Lever ........ MAX -> Fire Handle ........ PULL",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Secuencia estándar: palanca afectada a ralentí (**IDLE**), selector de arranque a parada (**STOP**), tras confirmación mutua tirar del mando cortafuego (**PULL**) y descargar botella si la alarma persiste tras 30 segundos.",
+      "references": [
+        "QRH E195-E2 Rev19, Engine Fire Procedure"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "fleet-e195e2",
+    "_subtopic": "memory-items"
+  },
+  {
+    "id": "E195-QRH-MEM-005",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Memory item: APU FIRE en tierra vs en vuelo",
+    "stem": "¿Cómo actúa el sistema de extinción de incendios del APU en caso de fuego confirmado en tierra?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se apaga automáticamente y descarga la botella extintora tras 10 segundos si no hay intervención del piloto",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Requiere siempre disparo manual de la botella por el piloto",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No dispone de botella de extinción propia",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo emite aviso acústico sin cortar el combustible",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En tierra, ante fuego de APU, el FADEC/controlador del APU apaga la unidad y **descarga automáticamente la botella de extinción tras 10 segundos** si la tripulación no actúa antes.",
+      "references": [
+        "AOM E195-E2 Sección APU / QRH Rev19"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "fleet-e195e2",
+    "_subtopic": "memory-items"
+  },
+  {
     "id": "P2010-EMG-001",
     "subject_id": "p2010_emergency",
     "learning_objective": "AFM Sección 3 - Velocidad de Mejor Planeo (Vglide)",
@@ -63077,6 +65378,201 @@
     },
     "_category": "fleet-p2010tdi",
     "_subtopic": "emergencias"
+  },
+  {
+    "id": "P2010-AFM-LIM-001",
+    "subject_id": "fleet-p2010tdi",
+    "learning_objective": "Velocidad de nunca exceder (VNE) del Tecnam P2010 TDI",
+    "stem": "Según la Sección 2 del AFM del Tecnam P2010 TDI (Continental CD-170), ¿cuál es la velocidad de nunca exceder (VNE)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "166 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "145 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "130 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "182 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El AFM Sección 2 (Airspeed Limitations) establece **VNE = 166 KIAS** para el Tecnam P2010 TDI.",
+      "references": [
+        "AFM Tecnam P2010 TDI Ed.2 Rev.13, Sección 2.3"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "P2010-AFM-LIM-002",
+    "subject_id": "fleet-p2010tdi",
+    "learning_objective": "Velocidad máxima con flaps extendidos (VFE)",
+    "stem": "Según el AFM del Tecnam P2010 TDI, ¿cuáles son los límites de velocidad según la posición de Flaps (T/O vs LAND)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flaps T/O (15°): 110 KIAS / Flaps LAND (40°): 90 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Flaps T/O: 90 KIAS / Flaps LAND: 70 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Flaps T/O: 125 KIAS / Flaps LAND: 105 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Flaps en cualquier posición: 100 KIAS fijo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las limitaciones de flaps del P2010 TDI son: **Flaps T/O: 110 KIAS**, y **Flaps FULL/LAND: 90 KIAS**.",
+      "references": [
+        "AFM Tecnam P2010 TDI Ed.2 Rev.13, Sección 2.3"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "P2010-AFM-LIM-003",
+    "subject_id": "fleet-p2010tdi",
+    "learning_objective": "Peso máximo al despegue (MTOW) del Tecnam P2010 TDI",
+    "stem": "¿Cuál es el peso máximo certificado al despegue (MTOW) para el Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1.160 kg (2.557 lb)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "1.050 kg (2.315 lb)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "1.250 kg (2.755 lb)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "980 kg (2.160 lb)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MTOW certificado del Tecnam P2010 TDI con motor Continental CD-170 es de **1.160 kg**.",
+      "references": [
+        "AFM Tecnam P2010 TDI Ed.2 Rev.13, Sección 2.7"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "P2010-AFM-SYS-001",
+    "subject_id": "fleet-p2010tdi",
+    "learning_objective": "Arquitectura del sistema FADEC del motor Continental CD-170",
+    "stem": "¿Cómo está configurado el sistema de control del motor (FADEC) en el Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doble canal redundante (ECU A y ECU B) con cambio automático o manual mediante interruptor selector de ECU",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Un único canal electrónico con mando mecánico de mezcla de respaldo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Control puramente hidromecánico sin computadoras",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Tres canales triplex sin posibilidad de selección manual",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El motor Continental CD-170 cuenta con **dos ECUs independientes (ECU A y ECU B)** con conmutación automática ante fallo y selector manual 'FADEC Test / Force B' en cabina.",
+      "references": [
+        "AFM Tecnam P2010 TDI Ed.2 Rev.13, Sección 7.9"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "limitaciones"
+  },
+  {
+    "id": "P2010-AFM-EMG-001",
+    "subject_id": "fleet-p2010tdi",
+    "learning_objective": "Velocidad de mejor planeo (Best Glide Speed)",
+    "stem": "En caso de fallo de motor en vuelo en el Tecnam P2010 TDI, ¿cuál es la mejor velocidad de planeo (Best Glide Speed) con flaps recogidos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "84 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "72 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "95 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "65 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La velocidad de planeo óptimo (Best Glide Speed) para el P2010 TDI al MTOW es de **84 KIAS** (con flaps UP).",
+      "references": [
+        "AFM Tecnam P2010 TDI Ed.2 Rev.13, Sección 3.4"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "limitaciones"
   },
   {
     "id": "P2010-GEN-001",

@@ -1,0 +1,187 @@
+[
+  {
+    "id": "P2010-AFM-LIM-001",
+    "subject_id": "fleet-p2010tdi",
+    "learning_objective": "Velocidad de nunca exceder (VNE) del Tecnam P2010 TDI",
+    "stem": "Según la Sección 2 del AFM del Tecnam P2010 TDI (Continental CD-170), ¿cuál es la velocidad de nunca exceder (VNE)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "166 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "145 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "130 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "182 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El AFM Sección 2 (Airspeed Limitations) establece **VNE = 166 KIAS** para el Tecnam P2010 TDI.",
+      "references": [
+        "AFM Tecnam P2010 TDI Ed.2 Rev.13, Sección 2.3"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "P2010-AFM-LIM-002",
+    "subject_id": "fleet-p2010tdi",
+    "learning_objective": "Velocidad máxima con flaps extendidos (VFE)",
+    "stem": "Según el AFM del Tecnam P2010 TDI, ¿cuáles son los límites de velocidad según la posición de Flaps (T/O vs LAND)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flaps T/O (15°): 110 KIAS / Flaps LAND (40°): 90 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Flaps T/O: 90 KIAS / Flaps LAND: 70 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Flaps T/O: 125 KIAS / Flaps LAND: 105 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Flaps en cualquier posición: 100 KIAS fijo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las limitaciones de flaps del P2010 TDI son: **Flaps T/O: 110 KIAS**, y **Flaps FULL/LAND: 90 KIAS**.",
+      "references": [
+        "AFM Tecnam P2010 TDI Ed.2 Rev.13, Sección 2.3"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    }
+  },
+  {
+    "id": "P2010-AFM-LIM-003",
+    "subject_id": "fleet-p2010tdi",
+    "learning_objective": "Peso máximo al despegue (MTOW) del Tecnam P2010 TDI",
+    "stem": "¿Cuál es el peso máximo certificado al despegue (MTOW) para el Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1.160 kg (2.557 lb)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "1.050 kg (2.315 lb)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "1.250 kg (2.755 lb)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "980 kg (2.160 lb)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MTOW certificado del Tecnam P2010 TDI con motor Continental CD-170 es de **1.160 kg**.",
+      "references": [
+        "AFM Tecnam P2010 TDI Ed.2 Rev.13, Sección 2.7"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "P2010-AFM-SYS-001",
+    "subject_id": "fleet-p2010tdi",
+    "learning_objective": "Arquitectura del sistema FADEC del motor Continental CD-170",
+    "stem": "¿Cómo está configurado el sistema de control del motor (FADEC) en el Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doble canal redundante (ECU A y ECU B) con cambio automático o manual mediante interruptor selector de ECU",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Un único canal electrónico con mando mecánico de mezcla de respaldo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Control puramente hidromecánico sin computadoras",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Tres canales triplex sin posibilidad de selección manual",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El motor Continental CD-170 cuenta con **dos ECUs independientes (ECU A y ECU B)** con conmutación automática ante fallo y selector manual 'FADEC Test / Force B' en cabina.",
+      "references": [
+        "AFM Tecnam P2010 TDI Ed.2 Rev.13, Sección 7.9"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "P2010-AFM-EMG-001",
+    "subject_id": "fleet-p2010tdi",
+    "learning_objective": "Velocidad de mejor planeo (Best Glide Speed)",
+    "stem": "En caso de fallo de motor en vuelo en el Tecnam P2010 TDI, ¿cuál es la mejor velocidad de planeo (Best Glide Speed) con flaps recogidos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "84 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "72 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "95 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "65 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La velocidad de planeo óptimo (Best Glide Speed) para el P2010 TDI al MTOW es de **84 KIAS** (con flaps UP).",
+      "references": [
+        "AFM Tecnam P2010 TDI Ed.2 Rev.13, Sección 3.4"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    }
+  }
+]

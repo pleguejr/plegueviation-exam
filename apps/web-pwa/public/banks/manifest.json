@@ -2,14 +2,14 @@
   "app": "Plegueviation Exam",
   "version": "2.0.0",
   "generated_at": "1787418808.2635987",
-  "total_questions": 2052,
+  "total_questions": 2116,
   "categories": [
     {
       "id": "command-upgrade",
       "title": "Preparación Prueba de Comandante",
       "icon": "ShieldCheck",
       "color": "rose",
-      "total_questions": 1315,
+      "total_questions": 1365,
       "subtopics": {
         "examen-oficial": {
           "id": "examen-oficial",
@@ -19,7 +19,7 @@
         "flujo-despacho-mel-ddpm-cdl": {
           "id": "flujo-despacho-mel-ddpm-cdl",
           "title": "Flujo de Despacho MEL / DDPM / CDL",
-          "count": 50
+          "count": 56
         },
         "gestion-emergencias-mando": {
           "id": "gestion-emergencias-mando",
@@ -29,7 +29,12 @@
         "mercancias-peligrosas-y-seguridad": {
           "id": "mercancias-peligrosas-y-seguridad",
           "title": "Mercancías Peligrosas y Seguridad (MOA 9 y 10)",
-          "count": 75
+          "count": 80
+        },
+        "notificacion-incidentes": {
+          "id": "notificacion-incidentes",
+          "title": "Notificación de Incidentes (ASR/MOR)",
+          "count": 4
         },
         "operaciones-en-tierra": {
           "id": "operaciones-en-tierra",
@@ -39,7 +44,7 @@
         "operaciones-especiales": {
           "id": "operaciones-especiales",
           "title": "Operaciones Especiales y Requisitos (MOA 8.7 y 8.8)",
-          "count": 50
+          "count": 53
         },
         "partes-aplicables-moa-mob": {
           "id": "partes-aplicables-moa-mob",
@@ -54,12 +59,17 @@
         "procedimientos-de-vuelo": {
           "id": "procedimientos-de-vuelo",
           "title": "Procedimientos de Vuelo y LVO (MOA 8.3 y 8.4)",
-          "count": 150
+          "count": 175
+        },
+        "reglas-del-aire-normativa": {
+          "id": "reglas-del-aire-normativa",
+          "title": "Reglas del Aire y Normativa Aeronáutica",
+          "count": 3
         },
         "seguridad-y-normativa": {
           "id": "seguridad-y-normativa",
           "title": "Seguridad, SMS y Normativa SERA (MOA 11 y 12)",
-          "count": 100
+          "count": 104
         }
       }
     },
@@ -68,12 +78,12 @@
       "title": "Flota Cessna 172N",
       "icon": "Compass",
       "color": "amber",
-      "total_questions": 250,
+      "total_questions": 254,
       "subtopics": {
         "emergencias": {
           "id": "emergencias",
           "title": "Emergencias",
-          "count": 60
+          "count": 64
         },
         "limitaciones": {
           "id": "limitaciones",
@@ -93,11 +103,25 @@
       }
     },
     {
+      "id": "fleet-e195e2",
+      "title": "Flota Embraer 195-E2",
+      "icon": "Plane",
+      "color": "sky",
+      "total_questions": 5,
+      "subtopics": {
+        "memory-items": {
+          "id": "memory-items",
+          "title": "Memory Items",
+          "count": 5
+        }
+      }
+    },
+    {
       "id": "fleet-p2010tdi",
       "title": "Flota Tecnam P2010 TDI",
       "icon": "Gauge",
       "color": "indigo",
-      "total_questions": 250,
+      "total_questions": 255,
       "subtopics": {
         "emergencias": {
           "id": "emergencias",
@@ -107,7 +131,7 @@
         "limitaciones": {
           "id": "limitaciones",
           "title": "Limitaciones",
-          "count": 85
+          "count": 90
         },
         "operacion-normal": {
           "id": "operacion-normal",

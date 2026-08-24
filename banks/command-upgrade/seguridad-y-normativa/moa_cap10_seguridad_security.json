@@ -1,0 +1,150 @@
+[
+  {
+    "id": "MOA-10-001",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Política de acceso y bloqueo de la puerta de cabina de vuelo",
+    "stem": "Según MOA 10.1, ¿cuál es el procedimiento estándar relativo a la puerta de cabina de vuelo durante el vuelo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Debe permanecer cerrada y bloqueada desde antes del arranque de motores hasta la parada final en estacionamiento, salvo accesos autorizados",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Solo se bloquea por encima de FL100",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Permanece abierta durante el crucero si no hay turbulencia",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El Comandante decide si bloquearla o no según el nivel de ocupación",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 10.1 establece que la puerta blindada de cabina de vuelo debe permanecer **cerrada y bloqueada desde el cierre de puertas y puesta en marcha hasta el apagado de motores en destino**, cumpliendo con CAT.GEN.MPA.135.",
+      "references": [
+        "MOA Binter ED06 RN26, Sección 10.1; CAT.GEN.MPA.135"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "MOA-10-002",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Niveles de amenaza de interferencia ilícita (ICAO Security)",
+    "stem": "Según MOA 10 y la clasificación OACI de pasajeros conflictivos, ¿qué define una amenaza de Nivel 3?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Comportamiento que amenaza la vida de los ocupantes o exhibición de armas",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Comportamiento perturbador verbal sin violencia física (Nivel 1)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Violencia física contra tripulantes o pasajeros (Nivel 2)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Intento de penetración en la cabina de vuelo (Nivel 4)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los niveles de amenaza OACI son: Nivel 1 (perturbador/verbal), Nivel 2 (agresión física), **Nivel 3 (amenaza a la vida / armas)** y Nivel 4 (intento de asalto a la cabina de vuelo).",
+      "references": [
+        "MOA Binter ED06 RN26, Sección 10.1; ICAO Security Manual Doc 8973"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "MOA-10-003",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Procedimiento ante sospecha de artefacto explosivo a bordo en vuelo",
+    "stem": "Si se confirma la localización de un artefacto explosivo sospechoso (IED) en cabina durante el vuelo, ¿dónde debe ubicarse según MOA 10 y procedimientos de la aeronave?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En la posición de menor riesgo (LRBL - Least Risk Bomb Location), rodeado de material atenuante y bolsas de plástico impermeables",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En el baño delantero junto a la cabina de vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En el compartimento de equipaje de mano más cercano",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En la bodega de carga principal sobre los tanques de combustible",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El artefacto debe colocarse en la **LRBL (Least Risk Bomb Location)**, ubicada típicamente en la puerta de servicio trasera, apilando mantas y material amortiguador humedecido para absorber la onda expansiva sin dirigirla a componentes críticos.",
+      "references": [
+        "MOA Binter ED06 RN26, Sección 10.1; MOB E195-E2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    }
+  },
+  {
+    "id": "MOA-10-004",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Código transponder de interferencia ilícita (Secuestro)",
+    "stem": "¿Qué código transponder (squawk) debe seleccionar la tripulación en caso de acto de interferencia ilícita (secuestro)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "7500",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "7600 (Fallo de comunicaciones)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "7700 (Emergencia general)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "7000 (VFR estándar)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El código **7500** está reservado internacionalmente para indicar interferencia ilícita (secuestro). 7600 es para fallo de radio y 7700 para emergencia general.",
+      "references": [
+        "MOA Binter ED06 RN26, Sección 10.1; SERA.14080"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  }
+]

@@ -1,0 +1,150 @@
+[
+  {
+    "id": "C172N-CHK-001",
+    "subject_id": "fleet-c172n",
+    "learning_objective": "Fallo de motor inmediatamente tras el despegue (Engine Failure Immediately After Takeoff)",
+    "stem": "Según la lista de verificación de emergencias del C172N, ¿cuál es la acción inmediata si el motor falla inmediatamente tras el despegue con pista remanente insuficiente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Airspeed 65 KIAS (flaps UP) / 60 KIAS (flaps DOWN), Mezcla CORTADA, Válvula de combustible OFF, Contactos OFF",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Efectuar un viraje escarpado de 180° para regresar a la pista de despegue",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Bombear la palanca de gases repetidamente y mantener el morro alto",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Extender flaps al máximo inmediatamente a cualquier velocidad",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Regla de oro de aviación y checklist C172N: **mantener velocidad de planeo (65/60 KIAS)**, aterrizar recto al frente evitando virajes pronunciados, y cortar mezcla, combustible y contactos eléctricos antes del impacto.",
+      "references": [
+        "Cessna 172N Pilot's Operating Handbook / Checklist de Emergencias"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    }
+  },
+  {
+    "id": "C172N-CHK-002",
+    "subject_id": "fleet-c172n",
+    "learning_objective": "Fuego de motor durante la puesta en marcha en tierra (Engine Fire During Start)",
+    "stem": "Si se produce fuego en el motor durante el arranque con motor que no llega a arrancar en el C172N, ¿cuál es el procedimiento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Continuar accionando el motor de arranque para aspirar las llamas al motor; si no arranca: Mezcla CORTADA, Gases a fondo, Combustible OFF",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cortar el arranque inmediatamente y abandonar la cabina con el motor en marcha",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Poner la palanca de gases al ralentí y cebar más combustible",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Conectar la bomba auxiliar de combustible",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El procedimiento del POH indica **seguir accionando la marcha (cranking)** para aspirar el combustible encendido hacia los cilindros; si el fuego no se extingue en unos segundos: Mezcla Idle Cut-off, Throttle Full Open, Fuel Shutoff Valve OFF y evacuar con extintor.",
+      "references": [
+        "Cessna 172N Pilot's Operating Handbook Sección 3"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "C172N-CHK-003",
+    "subject_id": "fleet-c172n",
+    "learning_objective": "Sobrecarga del alternador / Luz de bajo voltaje (Overvoltage / Low Voltage)",
+    "stem": "Si se enciende la luz de LOW VOLTAGE o el amperímetro muestra sobrecarga en el C172N en vuelo, ¿cuál es el procedimiento inicial?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alternator Switch OFF, desconectar equipos eléctricos no esenciales y aterrizar lo antes posible",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Master Switch en ON permanente y encender todas las luces exteriores",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aumentar la potencia al máximo para que el alternador genere más tensión",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cortar la mezcla para reiniciar el regulador de voltaje",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Ante un fallo o sobretensión del alternador: desconectar el interruptor del alternador (**ALT OFF**) para proteger la aviónica y reducir la carga eléctrica para conservar la batería hasta el aterrizaje.",
+      "references": [
+        "Cessna 172N Pilot's Operating Handbook Sección 3"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    }
+  },
+  {
+    "id": "C172N-POH-001",
+    "subject_id": "fleet-c172n",
+    "learning_objective": "Velocidades de despegue y mejor régimen de ascenso (Vy)",
+    "stem": "¿Cuál es la velocidad de mejor régimen de ascenso (Vy) al nivel del mar para el Cessna 172N?",
+    "options": [
+      {
+        "id": "A",
+        "text": "73 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "59 KIAS (Vx - mejor ángulo)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "85 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "65 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para el Cessna 172N (Lycoming O-320-H2AD, 160 HP), **Vy = 73 KIAS** al nivel del mar y **Vx = 59 KIAS**.",
+      "references": [
+        "Cessna 172N Pilot's Operating Handbook Sección 4"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  }
+]

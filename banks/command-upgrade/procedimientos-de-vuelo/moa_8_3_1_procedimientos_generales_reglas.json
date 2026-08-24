@@ -1848,5 +1848,745 @@
     "metadata": {
       "difficulty": 0.2
     }
+  },
+  {
+    "id": "MOA-83-001",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer la prioridad operacional durante fases críticas según MOA 8.3",
+    "stem": "Según MOA 8.3.A, ¿cuál es el orden de prioridades establecido por Binter Airlines para la tripulación de vuelo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VOLAR → NAVEGAR → COMUNICAR → GESTIONAR",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "COMUNICAR → NAVEGAR → VOLAR → GESTIONAR",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "GESTIONAR → VOLAR → COMUNICAR → NAVEGAR",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "NAVEGAR → VOLAR → GESTIONAR → COMUNICAR",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.A establece expresamente la política de Binter Airlines: **VOLAR, NAVEGAR, COMUNICAR Y GESTIONAR** como orden de prioridades. Volar el avión siempre es la primera prioridad; gestionar sistemas es la última.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.A"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "MOA-83-002",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer el modelo de toma de decisiones en situaciones de estrés (MOA 8.3.A)",
+    "stem": "¿Qué modelo de toma de decisiones adopta Binter Airlines para situaciones de anormalidades y desvíos técnicos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "IMFLOCC (MOB 3.1.10)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "DECIDE (FAA)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "FOR-DEC",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "DODAR",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.A establece que se adopta el modelo **IMFLOCC** tal y como se detalla en el MOB 3.1.10 para la toma de decisiones en caso de anormalidades.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.A; MOB 3.1.10"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    }
+  },
+  {
+    "id": "MOA-83-003",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer cuándo aplica la esterilidad de cabina para vuelos sobre FL100",
+    "stem": "Para vuelos con nivel final de crucero igual o por encima de 10.000 ft, ¿desde cuándo aplica el procedimiento de cabina estéril?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desde el cierre de puertas hasta 10.000 ft AFE, y desde 10.000 ft AFE hasta el aparcamiento en destino",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Desde la puesta en marcha de motores hasta 5.000 ft, y desde FAF hasta aterrizaje",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Desde el inicio del rodaje hasta 5.000 ft y desde IAF hasta pista libre",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo durante el despegue y la aproximación final por debajo de 3.000 ft",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.0.1.1 establece: para vuelos con nivel final ≥ 10.000 ft, cabina estéril aplica **desde el cierre de puertas hasta 10.000 ft AFE** y **desde 10.000 ft AFE hasta el aparcamiento** en destino.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.0.1.1"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    }
+  },
+  {
+    "id": "MOA-83-004",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer la aplicación de cabina estéril para vuelos por debajo de FL100",
+    "stem": "Para vuelos con nivel final de crucero inferior a 10.000 ft, ¿cómo se aplica la cabina estéril?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desde el cierre de puertas hasta el TOC y desde el TOD hasta el aparcamiento en destino",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Desde el arranque hasta 5.000 ft y desde 5.000 ft en descenso hasta pista libre",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo durante el despegue y la aproximación final",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No aplica cabina estéril porque no se alcanza FL100",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.0.1.1 establece que para vuelos con nivel final < 10.000 ft: cabina estéril aplica **desde el cierre de puertas hasta el TOC** y **desde el TOD hasta el aparcamiento** en destino.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.0.1.1"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "MOA-83-005",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Identificar qué actividades están prohibidas durante la cabina estéril (MOA 8.3.0.1.2)",
+    "stem": "Según MOA 8.3.0.1.2, ¿cuál de las siguientes actividades NO está permitida durante la esterilidad de la cabina de vuelo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar anuncios comerciales al pasaje",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Efectuar callouts estándar de fase de vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Comunicarse con ATC sobre situaciones de seguridad",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Leer la lista de comprobación de aterrizaje",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.0.1.2 enumera las actividades prohibidas durante cabina estéril, incluyendo: **anuncios de tipo comercial al pasaje**, cumplimentación de formularios, comidas y conversaciones no esenciales.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.0.1.2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "MOA-83-006",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer qué situaciones permiten a la tripulación de cabina interrumpir la esterilidad",
+    "stem": "¿Cuál de los siguientes motivos permite a la tripulación de cabina interrumpir la esterilidad de cabina de vuelo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Presencia de un pasajero conflictivo que supone amenaza de seguridad",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Un pasajero solicita una segunda bebida",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El catering no ha sido correctamente cargado",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Un pasajero pide cambio de asiento",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.0.1.3 lista las causas válidas para interrumpir la esterilidad, entre ellas: **pasajeros conflictivos**, amenaza de seguridad, conato de incendio, olor a quemado, emergencia médica, etc. Las solicitudes comerciales o de servicio no justifican la interrupción.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.0.1.3"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "MOA-83-007",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Saber el idioma común de Binter Airlines (MOA 8.3)",
+    "stem": "¿Cuál es el idioma común establecido por Binter Airlines para la redacción de manuales y comunicaciones internas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Castellano",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Inglés",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Castellano e Inglés indistintamente",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El idioma del país de operación",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3 (sección IDIOMA COMÚN) y el MOA 0.1.2 establecen el **castellano** como idioma común de Binter Airlines, en el cual están redactados todos los manuales y documentación.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3; MOA 0.1.2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "MOA-83-008",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer el uso obligatorio de auriculares según MOA 8.3",
+    "stem": "Según CAT.OP.MPA.215 y MOA 8.3, ¿cuándo es obligatorio el uso de auriculares con micrófono de brazo en tierra?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Al recibir autorización ATC de salida y cuando los motores están en funcionamiento",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Solo cuando los motores están en funcionamiento",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Únicamente en LVO (baja visibilidad)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo en vuelo, en tierra no es obligatorio",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3 (sección USO DE AURICULARES) indica que en tierra son obligatorios: **al recibir la autorización ATC de salida** mediante comunicaciones por voz y **cuando los motores estén en funcionamiento**.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3; CAT.OP.MPA.215"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    }
+  },
+  {
+    "id": "MOA-83-009",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer los puntos obligatorios del briefing de despegue (MOA 8.3.E)",
+    "stem": "¿Cuándo debe darse el Briefing de Despegue según el MOA 8.3.E?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Siempre en cabina de vuelo por el PF antes de la puesta en marcha de motores",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Durante la puesta en marcha de motores por el Comandante",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En la sala de firmas antes del embarque por el PIC",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Después del pushback, antes del inicio del rodaje",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.E establece: *'El Briefing se dará siempre en cabina de vuelo por el PF **antes de la puesta en marcha de motores**'*.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.E"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "MOA-83-010",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer cuándo incluir el EOSID en el briefing de despegue",
+    "stem": "Según MOA 8.3.E, ¿en qué vuelos se incluye el procedimiento de emergencia en caso de fallo de motor en el briefing de despegue?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Únicamente en el primer vuelo del SET (Sector de Entrenamiento/turno de servicio)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En todos los vuelos sin excepción",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo en aeropuertos con obstáculos cercanos a la pista",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo cuando las condiciones meteorológicas son adversas",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.E indica en Nota 1: *'Este punto se incluirá únicamente en el **primer vuelo del SET**'* (Sistema de Entrenamiento / primer sector del turno).",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.E, Nota 1"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "MOA-83-011",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer los puntos del Briefing de Aproximación (MOA 8.3.I)",
+    "stem": "Según MOA 8.3.I, ¿cuándo debe darse el Briefing de Aproximación?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antes de iniciar el descenso, por parte del PF",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Al pasar por el TOD, por el PM",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Al inicial la aproximación final (FAF), por el PF",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Después de recibir las instrucciones de vectores de ATC",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.I establece: *'Se dará **antes de iniciar el descenso** por parte del PF'*.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.I"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "MOA-83-012",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer las fases críticas de vuelo según el MOA 8.3",
+    "stem": "Según el Anexo 1 al Reglamento (UE) 965/2012 y el MOA 8.3, ¿cuáles son las fases críticas del vuelo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Carrera de despegue, trayectoria de vuelo de despegue, aproximación final, aterrizaje incluyendo la carrera, y cualquier otra fase a discreción del Comandante",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Únicamente por debajo de 10.000 ft en ascenso y descenso",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Despegue y aterrizaje solamente",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Desde el pushback hasta 5.000 ft AFE y desde 3.000 ft en descenso hasta pista libre",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3 cita el Anexo 1 al Reglamento (UE) 965/2012: las fases críticas son **carrera de despegue, trayectoria de vuelo de despegue, aproximación final, aterrizaje (incluida la carrera) y cualquier otra fase a discreción del Comandante**.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3; Reglamento (UE) 965/2012 Anexo 1"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    }
+  },
+  {
+    "id": "MOA-83-013",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer qué contiene el Briefing Conjunto de Tripulación (MOA 8.3.D)",
+    "stem": "¿Quién es el responsable del Briefing Conjunto de la Tripulación según el MOA 8.3.D?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El Comandante",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El Sobrecargo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El Copiloto",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El Jefe de Operaciones de Tierra",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.D establece: *'El responsable del Briefing de tripulación es el **Comandante**'*.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.D"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "MOA-83-014",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer la prioridad en el orden de aplicación de listas de comprobación (MEANA)",
+    "stem": "Según MOA 8.3.A y MOB 3.1.0, ¿cuál es el orden correcto de aplicación de listas de comprobación (método MEANA)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Memo Items → Listas de Emergencia → Listas Anormales principales → Listas Normales → Listas Anormales restantes",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Listas Normales → Listas Anormales → Listas de Emergencia → Memo Items",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Listas de Emergencia → Memo Items → Listas Anormales → Listas Normales",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Memo Items → Listas Normales → Listas Anormales → Listas de Emergencia",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El método **MEANA** (MOB 3.1.0) establece el orden: **M**emo Items → **E**mergency Checklist → **A**bnormal Checklist principal → **N**ormal Checklist → **A**bnormal Checklist restantes.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.A; MOB 3.1.0"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "MOA-83-015",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer la prohibición de simulación de emergencias con pasaje a bordo (MOA 8.3)",
+    "stem": "¿Está permitida la simulación de emergencias cuando hay pasajeros y/o carga a bordo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No. Está expresamente prohibida",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Sí, con autorización del Comandante",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Sí, si el Copiloto es piloto en instrucción (OJT)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo si se informa previamente a la tripulación de cabina",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3 establece expresamente: *'Está **prohibida** la simulación de emergencias en vuelos en los que sean transportados pasajeros y/o la carga'*.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.A"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "MOA-83-016",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer el briefing al ocupante del Jump Seat (MOA 8.3.II)",
+    "stem": "Según MOA 8.3.II, ¿quién da el briefing a la persona que ocupa el trasportín (Jump Seat) de la cabina de vuelo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El Comandante",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El Copiloto",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El Sobrecargo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El primer tripulante de cabina que aborde",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.II establece que **el Comandante** dará el briefing a la persona que ocupe el trasportín.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.II"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "MOA-83-017",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer los incursiones en pista (EAPRI) según MOA 8.3.B",
+    "stem": "Según MOA 8.3.B, ¿qué tipo de autorización permite automáticamente entrar o cruzar una pista?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ninguna. Una autorización de rodaje a un punto de espera NO autoriza a entrar ni cruzar la pista automáticamente",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Una autorización de rodaje al inicio de pista (holding point)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Una autorización de 'Line Up' implícita en la de rodaje",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Una autorización ATC para 'Taxi to Runway' equivale a entrar en pista",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.B es explícito: *'Una autorización de rodaje hasta un punto de espera **no autoriza automáticamente** a entrar en pista o cruzarla'*.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.B"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    }
+  },
+  {
+    "id": "MOA-83-018",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer normas de rodaje EAPRI (MOA 8.3.B)",
+    "stem": "Según MOA 8.3.B, ¿qué miembro de la tripulación realiza el seguimiento de la progresión de la aeronave en la carta del aeropuerto durante el rodaje?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En operación normal, el Copiloto (PM)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Siempre el Comandante",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El tripulante de cabina de servicio en puerta",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El agente de handling",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.B especifica: *'Asignar a un miembro de tu tripulación, (en operación normal al **COPILOTO**), para que siga la progresión de la aeronave en la carta del aeropuerto'*.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.B"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "MOA-83-019",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer la política de responsabilidad del rodaje (MOA 8.3.B)",
+    "stem": "Según MOA 8.3.B, ¿puede el Comandante delegar su responsabilidad en el rodaje?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Puede delegar el propio rodaje (ejecución), pero nunca su responsabilidad sobre él",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "No puede delegar ni la ejecución ni la responsabilidad del rodaje",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Puede delegar completamente la responsabilidad al Copiloto",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo puede delegar en un Comandante de instrucción",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.B establece: *'El comandante realizará, y será el responsable del rodaje, salvo que **delegue el propio rodaje**, pero **nunca delegará su responsabilidad**'*.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.B"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "MOA-83-020",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer los elementos CRM integrados en los procedimientos de vuelo (MOA 8.3.A)",
+    "stem": "¿Cuál de los siguientes briefings estructurados NO es mencionado en el MOA 8.3.A como parte de la comunicación y coordinación de la tripulación?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DECIDE (FAA Decision-Making Model)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "TWIN",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "RETSE",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "EDALTA",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.3.A menciona como briefings estructurados: **TWIN** (MOB 2.0.6.1/2), **RETSE** (MOB 2.0.6.1) y **EDALTA** (MOB 2.0.6.2/3). DECIDE no es un briefing de Binter.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.3.A; MOB 2.0.6"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    }
   }
 ]

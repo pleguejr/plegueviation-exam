@@ -1,0 +1,150 @@
+[
+  {
+    "id": "MOA-11-001",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Plazo de notificación obligatoria de sucesos de seguridad operacional (MOR)",
+    "stem": "Según el Reglamento (UE) nº 376/2014 y MOA 11.2, ¿cuál es el plazo máximo para notificar un suceso de notificación obligatoria (ASR / MOR) a la compañía / AESA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "72 horas desde que se tuvo conocimiento del suceso",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "24 horas únicamente",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "7 días naturales",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Antes de finalizar el mes en curso",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El Reglamento (UE) 376/2014 y el MOA 11.2 establecen un plazo reglamentario de **72 horas** para la remisión de informes de seguridad operacional (Mandatory Occurrence Report - MOR / ASR).",
+      "references": [
+        "MOA Binter ED06 RN26, Sección 11.2; Reglamento (UE) nº 376/2014"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    }
+  },
+  {
+    "id": "MOA-11-002",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Preservación de registradores de vuelo (CVR / FDR) tras accidente o incidente grave",
+    "stem": "Según CAT.GEN.MPA.195 y MOA 11.11, ¿cuál es la obligación del Comandante respecto a los registradores de vuelo tras un accidente o incidente grave?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desconectar inmediatamente los disyuntores (CBs) de alimentación de CVR y FDR en tierra para evitar el sobreescrito de los datos",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Formatear la memoria antes de entregar el avión al técnico de guardia",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Continuar operando la aeronave con normalidad hasta el final de la serie de vuelos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Revisar las grabaciones de audio en cabina con la tripulación",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Tras un accidente o incidente grave, el Comandante debe **preservar las grabaciones desconectando los CBs correspondientes** una vez en tierra para evitar que el CVR (habitualmente de 2 horas o 25 horas) sobreescriba los eventos críticos.",
+      "references": [
+        "MOA Binter ED06 RN26, Sección 11.11; CAT.GEN.MPA.195"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "MOA-11-003",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Notificación de incidencias por interferencia / suplantación GNSS (Jamming / Spoofing)",
+    "stem": "Según MOA 11.14 (de acuerdo con EASA SIB 2022-02), ¿qué acciones inmediatas debe realizar la tripulación ante una pérdida o suplantación de señal GPS/GNSS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Notificar inmediatamente vía AIREP al ATC, anotar coordenadas/ruta y cumplimentar el formulario R-MGNT-04.015 vía ASR",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Desconectar inmediatamente ambos generadores eléctricos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Descender a 1.000 ft sobre el terreno sin autorización",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Reiniciar las computadoras principales de vuelo en vuelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 11.14 prescribe: **notificación inmediata vía AIREP a ATC**, toma de datos geográficos (coordenadas, altitud, aerovía) y cumplimentación del formato **R-MGNT-04.015** adjunto al ASR.",
+      "references": [
+        "MOA Binter ED06 RN26, Sección 11.14; EASA SIB 2022-02"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "MOA-11-004",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Notificación obligatoria de eventos en operaciones de baja visibilidad (LVO)",
+    "stem": "Según MOA 11.13, ¿cuál de los siguientes eventos ocurridos durante una aproximación CAT II/III requiere obligatoriamente un reporte ASR?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desconexión o fallo no previsto del piloto automático o pérdida de señal de senda/localizador por debajo de la altura de decisión",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Aterrizaje suave con visibilidad de 5.000 metros",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cambio rutinario de frecuencia de torre a rodadura",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Uso del limpiaparabrisas a velocidad lenta",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Cualquier fallo de guiado (AP, FD, señales de senda/localizador ILS, pérdida de referencias visuales) en condiciones LVO es un **suceso de notificación obligatoria (MOR)** según MOA 11.13.",
+      "references": [
+        "MOA Binter ED06 RN26, Sección 11.13; Reglamento (UE) nº 376/2014"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    }
+  }
+]

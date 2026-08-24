@@ -923,5 +923,190 @@
     "metadata": {
       "difficulty": 0.2
     }
+  },
+  {
+    "id": "MOA-84-001",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer la definición de LVO según el MOA 8.4",
+    "stem": "¿Qué siglas definen las operaciones con visibilidad reducida en el MOA Binter?",
+    "options": [
+      {
+        "id": "A",
+        "text": "LVO – Low Visibility Operations",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "LVTO – Low Visibility TakeOff únicamente",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "CAT II/III solo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "MVL – Mínimos de Visibilidad de Límite",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 8.4 denomina **LVO (Low Visibility Operations)** al conjunto de operaciones con visibilidad reducida, incluyendo LVTO, CAT II y CAT III.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.4"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "MOA-84-002",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer los requisitos para declarar LVO en un aeropuerto (MOA 8.4)",
+    "stem": "¿Cuál es el parámetro de visibilidad que generalmente delimita el inicio de los procedimientos LVO?",
+    "options": [
+      {
+        "id": "A",
+        "text": "RVR < 550 m o visibilidad < 800 m para LVTO / RVR < 550 m para aproximación CAT II",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Visibilidad meteorológica < 1.500 m en todos los casos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Techo de nubes < 200 ft",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "RVR < 200 m exclusivamente para CAT III",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las LVO se activan con **RVR < 550 m** para LVTO (despegue baja visibilidad) y para las aproximaciones de precisión CAT II/III, con mínimos específicos según la categoría de la aeronave y la aprobación.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.4; CS-AWO"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    }
+  },
+  {
+    "id": "MOA-84-003",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer el requisito de habilitación de la tripulación para LVO (MOA 8.4)",
+    "stem": "¿Qué documento habilita a la tripulación de Binter para realizar operaciones LVO (CAT II/III)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aprobación específica de operador LVO expedida por AESA y habilitación en la licencia del piloto",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Solo la habilitación de tipo en el E195-E2",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Completar el entrenamiento inicial de la compañía",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La validez del examen de inglés OACI nivel 4",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Las LVO requieren **aprobación de operador** concedida por la autoridad (AESA) y **habilitación específica** en la licencia del piloto, obtenida mediante entrenamiento y chequeo en simulador.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.4; CS-AWO"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "MOA-84-004",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer el procedimiento de información LVO en el ATIS (MOA 8.4)",
+    "stem": "Cuando el aeropuerto activa los procedimientos LVO, ¿por qué canal se informa a la tripulación?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ATIS y comunicaciones ATC con indicación de mínimos en vigor",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Únicamente por comunicado NOTAM",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo mediante el aviso del handling en pista",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Por ACARS en tiempo real desde operaciones",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La activación de LVO en un aeropuerto se difunde a través del **ATIS** y en las **comunicaciones ATC**, indicando las categorías operativas en vigor y los mínimos aplicables.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.4"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    }
+  },
+  {
+    "id": "MOA-84-005",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer los mínimos de RVR para LVTO en el E195-E2 según Binter",
+    "stem": "¿Cuál es el mínimo de RVR para realizar un despegue en condiciones de baja visibilidad (LVTO) en el E195-E2 operado por Binter?",
+    "options": [
+      {
+        "id": "A",
+        "text": "RVR ≥ 125 m con iluminación de pista y marcas de línea central de alta intensidad",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Visibilidad meteorológica ≥ 400 m en todos los casos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "RVR ≥ 550 m obligatoriamente",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No hay mínimo específico; depende exclusivamente del METAR",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Con las aprobaciones de Binter para LVTO, el mínimo general es **RVR ≥ 125 m** cuando el aeropuerto dispone de iluminación de pista adecuada (luces de línea central de alta intensidad). Sin ellas, el mínimo se eleva.",
+      "references": [
+        "MOA Binter ED06 RN26, sección 8.4; CS-AWO"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    }
   }
 ]
