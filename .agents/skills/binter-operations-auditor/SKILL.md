@@ -1,37 +1,34 @@
 ---
 name: binter-operations-auditor
 description: >-
-  Expert verification and operational knowledge base for Binter Canarias Operations (MOA, MOB, SOP, Embraer 195-E2).
+  Expert verification and operational knowledge base for Binter Canarias Operations (MOA, MOB, SOP, Embraer 195-E2, MTM).
   Enforces strict fidelity to company mnemonics (TWIN, RETSE, E-DALTA, TELSI, IMFLOCC, MEANA),
-  callouts, emergency procedures, dispatch tables (RFFS 1A/1B), authority/responsibilities (MOA 1.4/1.5), and FTL regulations (MOA 7).
+  callouts, emergency procedures, dispatch tables (RFFS 1A/1B), authority/responsibilities (MOA 1.4/1.5),
+  FTL regulations (MOA 7), MOA chapters 8.3 to 12, and Embraer Maintenance Training Manual (MTM ATA 21-80).
 ---
 
 # Binter Canarias Operations & Emergency Procedures Auditor
 
-This skill enforces strict adherence to Binter Canarias operational manuals, grounded directly in the user's official digital library.
+This skill enforces strict adherence to Binter Canarias operational manuals, grounded directly in the user's official digital library located in `manuales/`.
 
 ---
 
 ## 0. Official Document Library Paths
 
-Whenever consulting or verifying Binter operations, use the following primary sources:
+Whenever consulting or verifying Binter operations, use the primary sources located in the project:
 
-- **MOA (Manual de Operaciones Parte A)**:
-  `C:\Users\plegu\My Drive\My drive\BINTER\BA tripulantes EMB\Manuales del operador\MOA BinterCanarias ED06 RN25 RT00.pdf` (y subcarpeta `MOA_Por_Capitulos`)
-- **MOB (Manual de Operaciones Parte B - E195-E2)**:
-  `C:\Users\plegu\My Drive\My drive\BINTER\BA tripulantes EMB\Manuales del operador\MOB BinterCanarias ED06 RN25 RT00.pdf` (y subcarpeta `MOB_Por_Capitulos`)
-- **MEL (Minimum Equipment List - E195-E2)**:
-  `C:\Users\plegu\My Drive\My drive\BINTER\BA tripulantes EMB\Manuales del operador\MEL EMB BA RN24.pdf`
-- **AOM (Aircraft Operating Manual - Embraer E2)**:
-  `C:\Users\plegu\My Drive\My drive\BINTER\BA tripulantes EMB\Manuales fabricante Embraer\AOM-5875-174-REV11-FULL 11.2.pdf`
-- **SOPM (Standard Operating Procedures Manual - Embraer E2)**:
-  `C:\Users\plegu\My Drive\My drive\BINTER\BA tripulantes EMB\Manuales fabricante Embraer\SOPM-1755-200-REV14-FULL_1760451613050.PDF`
-- **QRH (Quick Reference Handbook - Embraer E2)**:
-  `C:\Users\plegu\My Drive\My drive\BINTER\BA tripulantes EMB\Manuales fabricante Embraer\QRH-6313-174-REV19-TABLET.PDF`
-- **DDPM / CDL (Dispatch Deviations Procedures Manual)**:
-  `C:\Users\plegu\My Drive\My drive\BINTER\BA tripulantes EMB\Manuales fabricante Embraer\DDPM-6130-100-REV TR7.1.PDF`
-- **FMS Manual (Primus Epic Load 9.0)**:
-  `C:\Users\plegu\My Drive\My drive\BINTER\BA tripulantes EMB\Manuales fabricante Embraer\FMS_Manual_Epic_LOAD_9.0.pdf`
+- **MOA (Manual de Operaciones Parte A - Ed. 06 RN26)**: `manuales/MOA BinterCanarias ED06 RN26 RT00.pdf`
+- **MOB (Manual de Operaciones Parte B - E195-E2)**: `manuales/MOB BinterCanarias ED06 RN26 RT00.pdf`
+- **MOC & MOD (Manuales Partes C y D)**: `manuales/MOC BinterCanarias ED06 RN26 RT00.pdf` y `manuales/MOD BinterCanarias ED06 RN26 RT00.pdf`
+- **QRH (Quick Reference Handbook - E195-E2 Rev. 19)**: `manuales/QRH-6313-174-REV19-TABLET.PDF`
+- **AOM (Aircraft Operating Manual - E195-E2 Rev. 11)**: `manuales/AOM-5875-174-REV11-FULL 11.2.pdf`
+- **AFM (Airplane Flight Manual - E195-E2 Rev. 25)**: `manuales/AFM-5693-174-REV25-FULL.PDF`
+- **MEL (Minimum Equipment List - E195-E2 RN24)**: `manuales/MEL EMB BA RN24.pdf`
+- **DDPM / CDL (Dispatch Deviations Procedures Manual)**: `manuales/DDPM-6130-100-REV TR7.1.PDF`
+- **SOPM (Standard Operating Procedures Manual Rev. 14)**: `manuales/SOPM-1755-200-REV14-FULL.PDF`
+- **FMS Manual (Honeywell Primus Epic Load 9.0)**: `manuales/FMS_Manual_Epic_LOAD_9.0.pdf`
+- **MTM (Maintenance Training Manual - E190/E195-E2 T1+T2)**: `manuales/MTM.pdf` (5.372 páginas, ATA 21 a 80)
+- **Mass & Balance Sheet**: `manuales/MB EC-OVY.pdf`
 
 ---
 
@@ -61,7 +58,7 @@ Whenever consulting or verifying Binter operations, use the following primary so
   * **A**: Apron (Puesto de estacionamiento, guía de atraque, calzos).
 
 ### C. Cabin Crew Emergency Briefing: `TELSI` (NEVER NITS)
-In Binter Canarias, NITS is strictly forbidden; **`TELSI`** is the only authorized format:
+En Binter Canarias, NITS está prohibido; **`TELSI`** es el único formato autorizado:
 - **T**: **Tipo de Emergencia** (*Prevista, Imprevista, Aterrizaje Inseguro*).
 - **E**: **Estimated Time of Arrival** (*Tiempo disponible hasta la toma*).
 - **L**: **Lugar de Aterrizaje** (*Pista, Tierra fuera de aeródromo, Agua / Amerizaje*).
@@ -86,110 +83,70 @@ In Binter Canarias, NITS is strictly forbidden; **`TELSI`** is the only authoriz
 
 ---
 
-## 2. Company Callouts & Key Operations
+## 2. MOA Chapters 8.3 to 12 Operational Regulations
 
-- **Emergency Descent**: *"DESCENSO DE EMERGENCIA (x3)"* (Cantadas a 30.000, 20.000, 10.000 ft; a 2.000 ft *"TWO THOUSAND TO LEVEL OFF"*; a 1.000 ft *"ONE THOUSAND TO LEVEL OFF"*; al nivelar *"TRIPULACIÓN DE CABINA, DESCENSO FINALIZADO"*).
-- **Rejected Takeoff (RTO)**: *"REJECT"*, *"SIXTY KNOTS"*, *"MANUAL BRAKES"* antes de desactivar Autobrake RTO, *"TRIPULACIÓN DE CABINA, ESPEREN INSTRUCCIONES"* o *"TRIPULACIÓN DE CABINA, PERMANEZCAN SENTADOS"*.
-- **Cabin Preparation Callouts**: A 5 min de la toma: *"TRIPULACIÓN DE CABINA FINALIZAR PREPARACIÓN"*; a 30 seg de la toma: *"PROTECCIÓN, PROTECCIÓN, PROTECCIÓN"*.
-- **Engine Failure on Takeoff (>V1)**: *"CHECK THRUST"*, *"THRUST CHECKED"*, Best Beta cian tras Gear UP, acciones de memoria nunca por debajo de 400 ft AGL.
-- **Driftdown Speed**: *GREEN DOT*.
-- **MOA Dispatch with Degraded RFFS**: Tablas 1A (Aeropuertos principales) y 1B (Alternativos). Despacho permitido con RFFS degradado hasta 1 categoría durante un periodo máximo de 72 horas previa evaluación de riesgos.
+### MOA 8.3: Procedimientos de Vuelo
+- **Prioridad Operacional (VNCG)**: **VOLAR -> NAVEGAR -> COMUNICAR -> GESTIONAR**.
+- **Cabina Estéril (*Sterile Flight Deck*)**:
+  * Para vuelos >= 10.000 ft: desde el cierre de puertas hasta 10.000 ft AFE en ascenso, y desde 10.000 ft AFE en descenso hasta el calzado en destino.
+  * Para vuelos < 10.000 ft: desde el cierre de puertas hasta el TOC y desde el TOD hasta el calzado.
+  * Prohibidos anuncios comerciales al pasaje, comidas, formularios y conversaciones no operacionales.
+  * Interrupción por TCP autorizada solo ante: conato de incendio, humo/olor a quemado, fugas, puertas anormales, hielo, pasajeros conflictivos, emergencias médicas.
+- **Auriculares con micrófono de brazo**: Obligatorios en tierra al recibir autorizaciones ATC por voz y con motores en marcha; en vuelo durante despegue, ascenso hasta FL100, descenso desde FL100 y aterrizaje.
 
----
+### MOA 8.4: Operaciones con Visibilidad Reducida (LVO)
+- **LVTO**: RVR mínimo >= 125 m con luces de línea central de pista (CL) y marcas de alta intensidad.
+- **Aproximaciones CAT II**: DH 100 ft, RVR mínimo >= 300 m.
 
-## 3. MOA 1.4 & 1.5: Authority & Crew Responsibilities
+### MOA 8.6: Despacho con MEL, CDL y DDPM
+- **Jerarquía**: El MEL de Binter no puede ser menos restrictivo que el MMEL aprobado por EASA.
+- **Plazos de Rectificación**:
+  * **Cat A**: Plazo específico estipulado individualmente en el ítem.
+  * **Cat B**: 3 días de calendario (excluyendo el día del descubrimiento).
+  * **Cat C**: 10 días de calendario.
+  * **Cat D**: 120 días de calendario.
 
-- **MOA 1.4 Commander Authority (4F Philosophy: Safe, Fit, Fair, Fast)**:
-  * El Comandante ostenta la autoridad suprema desde que toma a cargo el avión antes del vuelo hasta su entrega formal tras el servicio (CAT.GEN.MPA.105).
-  * Potestad de desviación de cualquier norma en caso de emergencia.
-  * Potestad de denegación de embarque / desembarque de pasajeros disruptivos o no aptos.
-  * Firma obligatoria de ATL, OFP, Loadsheet y NOTOC.
-- **MOA 1.5.1 General & CRM**:
-  * Subordinación jerárquica y funcional de toda la tripulación al Comandante.
-  * Cooperación, monitorización cruzada (*Cross-Monitoring*) y regla de los dos avisos (*Two-Challenge Rule*).
-  * Cabina Estéril (*Sterile Cockpit*): llamadas a cabina técnica prohibidas < 10.000 ft salvo estricta emergencia.
-- **MOA 1.5.2 Copiloto**: Asunción automática del mando como PIC ante incapacitación del Comandante; comprobación cruzada independiente de ePerf, FMS y MEL.
-- **MOA 1.5.3 Piloto de Relevo (Cruise Relief Pilot)**: Relevo del copiloto exclusivamente en crucero (> FL200). Prohibido actuar en mandos durante despegue, < FL200 o aproximación/toma.
-- **MOA 1.5.4 TCPs**: Seguridad de cabina y ocupantes, chequeo prevuelo de equipo de emergencia (LOPA), protocolo de lucha contra incendios (Bombero, Comunicador, Asistente).
-- **MOA 1.5.5 Sobrecargo (SCCM)**: Enlace único con cabina técnica, recepción del briefing `TELSI`, reporte de *"Cabina Lista"* (*Cabin Ready*) con puertas armadas (*Cross-check*), supervisión de SCPs (PMR, UM, custodias).
-- **MOA 1.5.6 Tripulantes en Posicionamiento / Deadhead**: Considerados pasajeros a efectos operativos; subordinados al Comandante de servicio; inspectores de aviación (AESA/EASA) requieren autorización del PIC para entrar a cabina si se compromete la seguridad.
+### MOA 8.8: Requisitos de Oxígeno
+- Oxígeno suplementario para tripulación técnica obligatorio cuando la altitud de presión de cabina exceda 10.000 ft.
 
----
+### MOA 9: Mercancías Peligrosas (DGR) y Armas
+- Obligatoria entrega y firma del **NOTOC** (Notification to Captain) antes de la salida.
+- Baterías de litio de repuesto (powerbanks/PED): **exclusivamente en equipaje de mano**.
+- Armas de fuego de pasajeros: descargadas, desmontadas o en estuche cerrado, en bodega inaccesible y con guía de la Guardia Civil.
 
-## 4. MOA 7: Flight and Duty Time Limitations (FTL) & Rest
+### MOA 10: Seguridad (Security / AVSEC)
+- Puerta blindada de cabina de pilotaje: **cerrada y bloqueada** desde el arranque hasta la parada de motores (CAT.GEN.MPA.135).
+- Niveles de amenaza OACI: Nivel 1 (Disruptivo verbal), Nivel 2 (Físico leve), Nivel 3 (Amenaza a la vida / armas), Nivel 4 (Intrusión en cabina técnica).
+- Localización de artefacto explosivo: **LRBL** (Least Risk Bomb Location) en puerta de servicio trasera.
+- Squawk de secuestro: **7500**.
 
-- **Definiciones**:
-  * **Tiempo de vuelo (Flight Time / Block Time)**: Calzo a calzo por fuerza motriz propia para despegar hasta calzos finales.
-  * **Período de Actividad de Vuelo (FDP)**: Desde hora de presentación hasta calzos del último sector operativo.
-  * **WOCL (Window of Circadian Low)**: 02:00 a 05:59 horas en el huso de aclimatación.
-- **Límites Máximos de Tiempo de Vuelo**:
-  * $100\text{ horas}$ en 28 días consecutivos.
-  * $900\text{ horas}$ en 12 meses consecutivos.
-  * $1.000\text{ horas}$ en año civil calendario.
-- **Límites Máximos de Actividad (Duty Periods)**:
-  * $60\text{ horas}$ en 7 días consecutivos ($168\text{ h}$).
-  * $110\text{ horas}$ en 14 días consecutivos ($336\text{ h}$).
-  * $190\text{ horas}$ en 28 días consecutivos ($672\text{ h}$).
-- **Descansos Mínimos**:
-  * **En Base (Home Base)**: El mayor entre la actividad precedente o $12\text{ horas}$.
-  * **Fuera de Base (Away from Base)**: El mayor entre la actividad precedente o $10\text{ horas}$ (garantizando $8\text{ horas}$ de sueño).
-  * **Descanso Semanal Extendido (ERRP)**: $\ge 36\text{ horas}$ continuas que incluyan $2\text{ noches locales}$ en cualquier período de $168\text{ horas}$.
-  * **Actividad Dividida (Split Duty)**: Pausa en tierra $\ge 3\text{ horas}$ continuas en alojamiento adecuado.
-- **Discrecionalidad del Comandante (Commander's Discretion - MOA 7.2)**:
-  * Extensión máxima de FDP antes del despegue: hasta $+2\text{ horas}$ (tripulación estándar) o $+3\text{ horas}$ (reforzada), previa consulta individual de fatiga (*Fit for Duty*).
-  * Extensión tras despegue del último sector: lo necesario hasta aterrizar seguro en destino o alternativo.
-  * Reducción máxima de descanso fuera de base: máximo $-1\text{ hora}$ (mínimo absoluto $10\text{ horas}$).
-  * Notificación oficial a AESA: plazo máximo de $28\text{ días}$ si la extensión o reducción supera $1\text{ hora}$. Registro obligatorio en ATL y formulario FOR-DISC / ASR.
+### MOA 11: Notificación y Reporte de Sucesos (Safety / SMS)
+- Plazo reglamentario de reporte **MOR (Mandatory Occurrence Report)**: <= 72 horas (Reglamento UE 376/2014).
+- Preservación de CVR y FDR: Desconectar disyuntores (CBs) inmediatamente en tierra tras accidente o incidente grave.
+- Notificación de interferencia/suplantación GNSS (Jamming/Spoofing): Notificación inmediata AIREP a ATC y formulario **R-MGNT-04.015**.
+
+### MOA 12: Reglas del Aire (SERA)
+- Fallo de comunicaciones IFR en IMC (SERA.8035): Mantener último nivel y velocidad asignados durante **20 minutos** tras la última hora prevista de reporte, y luego continuar según plan de vuelo.
+- Interceptación militar: Seguir instrucciones, sintonizar **121.500 MHz** y responder a señales visuales OACI Anexo 2.
 
 ---
 
-## 5. Protocolo de Auditoría y Depuración Activa (Comando "auditoría" / "auditoria")
+## 3. Embraer E190/E195-E2 Maintenance Training Manual (MTM ATA Index)
 
-Siempre que el usuario ejecute la instrucción **"auditoría"** o **"auditoria"** en el chat de Auditoría & Depuración:
+Grounded in `manuales/MTM.pdf` (5.372 páginas):
 
-1. **Inspección de Solicitudes y Registros**:
-   - **Registro de Preguntas a Revisar**: Comprobar `banks/questions_for_review.json` y el listado de solicitudes generadas desde el botón **"Revisión"** de la PWA.
-   - **Registro de Eliminadas**: Comprobar `banks/deleted_questions.json` para verificar si alguna pregunta reportada debe ser purgada o corregida de raíz.
-
-2. **Auditoría Técnica contra Manuales Oficiales**:
-   - Cotejar cada pregunta reportada con los manuales oficiales de la Sección 0 (MOA, MOB, MEL, AOM, SOPM, AFM, POH).
-   - Verificar si la discrepancia reportada por el piloto afecta a:
-     * Datos numéricos (velocidades, pesos, altitudes, plazos MEL, tiempos FTL).
-     * Siglas, acrónimos o mnemónicos (RETSE, E-DALTA, IMFLOCC, TELSI, MEANA, etc.).
-     * Ambigüedad en distractores o redacción confusa.
-     * Citas documentales o tablas oficiales en `explanation.text`.
-
-3. **Ejecución de Corrección y Compilación**:
-   - Aplicar los cambios exactos en el archivo JSON del banco correspondiente en `banks/`.
-   - Ejecutar `python cli/bin/build_banks.py` y `npm run build` en `apps/web-pwa`.
-   - Actualizar el estado de la solicitud de revisión a resuelta.
-
-4. **Informe de Auditoría al Usuario**:
-   - Presentar una tabla clara con: ID de pregunta, motivo reportado, referencia al manual oficial (Capítulo/Página), y corrección implementada.
-
----
-
-## 6. Hoja de Ruta de Ampliación de Bancos de Preguntas (Capítulos MOA 8.3 a 12)
-
-Para las próximas expansiones de contenido, consultar rigurosamente los siguientes capítulos del MOA de Binter:
-
-1. **MOA 8.3 Procedimientos de Vuelo**:
-   - Políticas de rodaje monomotor (*Single Engine Taxi In/Out*), perfiles de despegue y reducción de ruido (NADP 1 vs NADP 2), gestión de combustible en vuelo (*In-Flight Fuel Management*, llamadas de *Minimum Fuel* y *Mayday Fuel*), altitud de transición y ajuste altimétrico, aproximaciones estabilizadas (criterios VMC 500 ft / IMC 1.000 ft), aproximaciones CDFA / DDA (+50 ft sobre MDA para no violar mínimos) y maniobras de viento cruzado.
-2. **MOA 8.4 Operaciones con Visibilidad Reducida (LVO / LVTO / LVP / AWO)**:
-   - Requisitos de despegue con baja visibilidad (LVTO $\ge 125\text{ m}$ o $150\text{ m}$ según luces de eje), categorías de aproximación de precisión (CAT II con DH $100\text{ ft}$ y RVR $\ge 300\text{ m}$), procedimientos de aproximación frustrada en LVP, fallos de sistemas bajo DH y luces de aproximación mínimas requeridas.
-3. **MOA 8.6 Uso de Listas de Equipamiento Mínimo (MEL) y Desviación de Configuración (CDL)**:
-   - Intervalos de rectificación (Categoría A plazo específico, B $72\text{ horas} / 3\text{ días}$, C $10\text{ días}$, D $120\text{ días}$), procedimientos operacionales `(O)` y de mantenimiento `(M)`, prórrogas de rectificación (*Rectification Interval Extension*), despacho con múltiples elementos inoperativos y diferencias entre MEL, CDL y DDPM.
-4. **MOA 8.7 Operaciones No Comerciales**:
-   - Vuelos de prueba de mantenimiento (*Maintenance Check Flights - MCF*), vuelos ferry con tren extendido o un motor inoperativo, vuelos de traslado y requisitos de tripulación mínima.
-5. **MOA 8.8 Requisitos de Oxígeno**:
-   - Oxígeno suplementario para tripulación técnica (primeros auxilios, descenso de emergencia, cabina no presurizada > $10.000\text{ ft}$), oxígeno para tripulación de cabina (botellas portátiles PBE y $120\text{ l}$), porcentajes para pasajeros ($10\%$, $30\%$, $100\%$ según niveles de vuelo FL100, FL140, FL150 y FL250) y comprobación del sistema de máscaras de generación química (PSU).
-6. **MOA 9 Mercancías Peligrosas (DGR) y Transporte de Armas**:
-   - Notificación al Comandante (**NOTOC**), clases de mercancías peligrosas (1 a 9), artículos prohibidos en cabina vs bodega, transporte de armas de fuego y munición deportiva ($\le 5\text{ kg}$ por pasajero en embalaje reglamentario, entregada bajo custodia), y procedimientos de emergencia en caso de derrame o humo DGR.
-7. **MOA 10 Seguridad (Security / AVSEC)**:
-   - Búsqueda de seguridad previa al vuelo (*Pre-flight Security Search*), puerta blindada de cabina de pilotaje (*Flight Deck Door Lock* y código de acceso de emergencia), niveles de amenaza de pasajeros disruptivos (Nivel 1 Disruptivo verbal, Nivel 2 Físico leve, Nivel 3 Amenaza de vida, Nivel 4 Intrusión en cabina técnica), y localización del lugar de riesgo mínimo para bombas (**LRBL**).
-8. **MOA 11 Notificación y Reporte de Accidentes, Incidentes y Sucesos (SMS)**:
-   - Notificaciones obligatorias (**MOR** a AESA en plazo de $\le 72\text{ horas}$), informes de seguridad de la compañía (**ASR** / **CSR**), clasificación de gravedad (Accidente, Incidente Grave, Incidente), preservación de registros de vuelo (CVR y FDR / desconexión de breakers tras suceso grave) y política justa (*Just Culture*).
-9. **MOA 12 Reglas del Aire (SERA)**:
-   - Normativa SERA (*Standardised European Rules of the Air*), separación de aeronaves, prioridades de paso, señales de interceptación militar, plan de vuelo OACI, fallo de comunicaciones (7600) y señales de socorro/urgencia (MAYDAY / PAN-PAN).
-
-
+- **ATA 21**: Air Conditioning, Pressurization Control & Cooling Packs.
+- **ATA 22**: Auto Flight (AP / FD / AT).
+- **ATA 23**: Communications (VHF, HF, CVR, Intercom, ACP).
+- **ATA 24**: Electrical Power (IDG, APU GEN, RAT, TRUs, SPDA, MAU).
+- **ATA 26**: Fire Protection (Engine, APU, Cargo FWD/AFT, Lavatory, E-Bays).
+- **ATA 27**: Flight Controls (Fly-By-Wire, PFCU, High Lift Flaps/Slats).
+- **ATA 28**: Fuel (Collector tanks, Ejector pumps, Crossfeed, Refueling).
+- **ATA 29**: Hydraulic Power (System 1, 2, 3: EDP, ACMP, PTU).
+- **ATA 30**: Ice and Rain Protection (Wing/Engine bleed anti-ice, probe heaters, windshields).
+- **ATA 31**: Indicating & Recording (DU, EICAS, FDR, CMS).
+- **ATA 32**: Landing Gear (Extension/Retraction, Brakes, Antiskid, NWS).
+- **ATA 36**: Pneumatic (Bleed air, PRSOV, Crossbleed, Overheat detection).
+- **ATA 47**: Inert Gas System (OBIGGS Nitrogen fuel tank inerting).
+- **ATA 49**: APU (Pratt & Whitney APS2600).
+- **ATA 71-80**: Powerplant (Pratt & Whitney PW1900G Geared Turbofan, FADEC dual channel).

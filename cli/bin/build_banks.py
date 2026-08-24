@@ -130,7 +130,8 @@ def compile_banks() -> int:
         "seguridad-y-normativa": "Seguridad, SMS y Normativa SERA (MOA 11 y 12)",
         "memory-items-e2": "Memory Items (Simulador E2)",
         "limitaciones-y-numeros": "Limitaciones y Números Operacionales (E2)",
-        "conocimiento-operacional": "Conocimiento Operacional & Procedimientos (E2)"
+        "conocimiento-operacional": "Conocimiento Operacional & Procedimientos (E2)",
+        "mantenimiento-mtm": "Manual de Mantenimiento E190/E195-E2 (MTM ATA)"
     }
 
     print(f"[*] Escaneando bancos en: {banks_dir}")
