@@ -1,0 +1,187 @@
+[
+  {
+    "id": "CMD-DEC-001",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Aplicación del modelo IMFLOCC en desvío técnico por fallo de sistema",
+    "stem": "Durante el crucero de un vuelo LPA-MAD a FL350, se produce un fallo de PACK 1 con mensaje EICAS 'PACK 1 FAIL'. Tras aplicar QRH, se desciende a FL250. Al aplicar IMFLOCC, ¿cuál es el orden correcto de análisis para decidir si continuar a destino o desviar?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inop items (FL250 PACK 1 off) -> Meteo (MAD vs alternativas) -> Fuel (consumo aumentado a FL250) -> Landing Perf -> Options -> Choose -> Comms",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Comms (declarar Mayday) -> Fuel -> Meteo -> Inop -> Options -> Choose -> Landing",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Choose (desviar inmediatamente al aeropuerto más cercano) sin calcular combustible",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Landing Perf -> Choose -> Comms -> Inop -> Meteo -> Fuel -> Options",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El mnemónico **IMFLOCC** exige evaluar metódicamente: **I** (Inop item/fallo), **M** (Meteo), **F** (Fuel / penalización de consumo a menor nivel), **L** (Landing perf en destino/alternativa), **O** (Opciones viables), **C** (Elegir la mejor opción ponderando seguridad y red comercial de la compañía) y **C** (Comunicaciones a ATC, TCP vía TELSI, pasajeros y compañía).",
+      "references": [
+        "MOA Binter ED06 RN26 Sección 8.3; MOB 3.1.10"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.7
+    }
+  },
+  {
+    "id": "CMD-DEC-002",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Briefing de emergencia a TCPs mediante TELSI (Aterrizaje Inseguro / Previsto)",
+    "stem": "Ante un aviso de indicación no confirmada de tren de aterrizaje 'LG GEAR DISAGREE' con decisión de realizar toma de precaución con servicios de emergencia activados, ¿cómo estructura el Comandante el briefing TELSI al sobrecargo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "T: Aterrizaje Previsto / E: 20 minutos / L: Pista 03L LPA / S: Señal de protección 30s 'PROTECCIÓN x3' / I: Preparar cabina para toma de precaución y posible evacuación",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "T: NITS / E: Inmediato / L: Fuera de pista / S: Silbato de socorro / I: Abrir puertas en vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "T: Emergencia Imprevista / E: Sin tiempo / L: Agua / S: Sin aviso previo / I: No preparar nada",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "T: Operación Normal / E: Desconocido / L: Cualquier aeropuerto / S: Alarma general / I: Desembarque por pasarela",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El formato **TELSI** obligatorio en Binter define: **T**ipo (Emergencia Prevista), **E**TA ($20\\text{ min}$), **L**ugar (Pista $03L$), **S**eñal convenida (*'PROTECCIÓN, PROTECCIÓN, PROTECCIÓN'* a $30\\text{ s}$ de la toma) e **I**nstrucciones (preparación de cabina, comprobación de salidas y repaso de comandos).",
+      "references": [
+        "MOA Binter ED06 RN26 Sección 8.3; MOB 2.0.6.3; TELSI Briefing"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    }
+  },
+  {
+    "id": "CMD-DEC-003",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Gestión de conflicto con pasajero de Nivel 2 en vuelo",
+    "stem": "Un pasajero en cabina agrede físicamente a un tripulante de cabina tras negarse a acatar la orden de abrocharse el cinturón. Según MOA 10, ¿cuál es la catalogación del suceso y la actuación del Comandante?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amenaza Nivel 2 (Violencia física). El Comandante autoriza medidas de contención física si es necesario, asegura la cabina de pilotaje cerrada y solicita presencia policial a la llegada",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Amenaza Nivel 4. El Comandante debe efectuar un descenso de emergencia inmediato con máscaras fuera",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Amenaza Nivel 1. Se ignora la agresión hasta finalizar el servicio a bordo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El Comandante debe abandonar los mandos y acudir personalmente a la cabina de pasajeros para mediar",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La violencia física contra tripulantes constituye **Amenaza Nivel 2**. La cabina técnica debe permanecer **estrictamente blindada y cerrada**; el PIC coordina la contención con los TCPs/pasajeros autorizados, notifica a ATC y solicita detención policial en destino o realiza desvío si la seguridad del vuelo se ve comprometida.",
+      "references": [
+        "MOA Binter ED06 RN26 Capítulo 10; ICAO Security Manual Doc 8973"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.7
+    }
+  },
+  {
+    "id": "CMD-DEC-004",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Toma de decisiones ante degradación meteorológica en destino (Fuel Mayday vs Minimum Fuel)",
+    "stem": "Aproximándose al destino, ATC instruye esperas de 25 minutos. Al calcular el combustible restante, el Comandante estima que aterrizará con exactamente el combustible de reserva final (Final Reserve Fuel - 30 min). ¿Qué declaración obligatoria debe hacer a ATC?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Declarar 'MINIMUM FUEL', informando al ATC de que cualquier cambio en la autorización puede resultar en aterrizar con menos de la reserva final",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Declarar 'MAYDAY MAYDAY MAYDAY FUEL' inmediatamente",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No declarar nada para evitar abrir una investigación formal de ASR",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Apagar un motor en espera para ahorrar combustible y no reportar",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según CAT.OP.MPA.180 y MOA 8.3, la llamada **'MINIMUM FUEL'** se realiza cuando el combustible previsto al aterrizar en destino se aproxima a la reserva final (sin ser aún una emergencia). Si se prevé aterrizar con **menos de la reserva final**, es mandatorio declarar emergencia con **'MAYDAY MAYDAY MAYDAY FUEL'**.",
+      "references": [
+        "MOA Binter ED06 RN26 Sección 8.3.2; SERA.14095; CAT.OP.MPA.180"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.7
+    }
+  },
+  {
+    "id": "CMD-DEC-005",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Uso del método MEANA en fallo múltiple tras impacto de aves (Bird Strike)",
+    "stem": "Tras un impacto de aves en ascenso inicial con daños en motor 2 y fallo hidráulico asociado, ¿cuál es la secuencia correcta de gestión según el método MEANA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1° Memo Items (si aplican) -> 2° Emergency Checklist de motor -> 3° Abnormal Checklist hidráulica principal -> 4° Normal Checklist de ascenso/crucero -> 5° Abnormal Checklist restantes y notas",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "1° Normal Checklist -> 2° Emergency Checklist -> 3° Memo Items -> 4° Abnormal Checklist",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "1° Comunicar con la compañía por radio -> 2° Rellenar el ASR -> 3° Desconectar el piloto automático",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "1° Abnormal Checklist restantes -> 2° Normal Checklist -> 3° Emergency Checklist",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El método **MEANA** (MOB 3.1.0) estructura: **M**emo Items (acciones de memoria inmediatas) $\\rightarrow$ **E**mergency Checklist (procedimientos críticos en recuadro) $\\rightarrow$ **A**bnormal Checklist principal $\\rightarrow$ **N**ormal Checklist (reajuste de la fase de vuelo) $\\rightarrow$ **A**bnormal Checklist restantes.",
+      "references": [
+        "MOA Binter ED06 RN26 Sección 8.3.A; MOB 3.1.0"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    }
+  }
+]

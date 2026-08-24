@@ -1,0 +1,113 @@
+[
+  {
+    "id": "P2010-SYS-G1000-001",
+    "subject_id": "fleet-p2010tdi",
+    "learning_objective": "Modo de reversión de pantallas (Display Backup) en Garmin G1000 NXi",
+    "stem": "Si falla la pantalla principal de vuelo (PFD) en el Tecnam P2010 TDI, ¿cómo se activa el modo de reversión en el MFD?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pulsando el botón rojo 'DISPLAY BACKUP' en el panel de audio GMA 1360 (o de forma automática por el sistema)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Apagando la batería principal y encendiendo el interruptor de emergencia",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Girando la perilla de rumbo HDG tres veces consecutivas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo se puede recuperar reiniciando los disyuntores de aviónica en vuelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El panel de audio **Garmin GMA 1360** dispone de un pulsador rojo dedicado **DISPLAY BACKUP** que conmuta el MFD a modo combinado (reversionary mode), presentando los instrumentos primarios de vuelo junto con los parámetros esenciales del motor CD-170.",
+      "references": [
+        "AFM Tecnam P2010 TDI Ed.2 Rev.13 Sección 7; Manual G1000 NXi"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "P2010-SYS-FADEC-002",
+    "subject_id": "fleet-p2010tdi",
+    "learning_objective": "Funcionamiento de la batería de respaldo del FADEC (FADEC Backup Battery)",
+    "stem": "¿Cuál es la función y autonomía garantizada de la batería de respaldo del FADEC en el Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suministrar energía eléctrica exclusiva a las ECUs del FADEC durante al menos 30 minutos en caso de fallo total del alternador y batería principal",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Alimentar las luces exteriores y la radio VHF 1 durante 2 horas",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Proporcionar corriente de arranque al motor de arranque en frío",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Alimentar el piloto automático Garmin GFC 700 en descenso",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Dado que el motor Continental CD-170 depende 100% de la gestión electrónica para la inyección common-rail, la **FADEC Backup Battery** garantiza al menos **30 minutos de funcionamiento continuo del motor** ante un fallo eléctrico total de la aeronave.",
+      "references": [
+        "AFM Tecnam P2010 TDI Ed.2 Rev.13 Sección 7.9"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    }
+  },
+  {
+    "id": "P2010-LIM-FUEL-001",
+    "subject_id": "fleet-p2010tdi",
+    "learning_objective": "Límites de combustible y desbalance máximo en el Tecnam P2010 TDI",
+    "stem": "¿Cuál es el desbalance máximo de combustible permitido entre los tanques izquierdo y derecho en el Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "30 litros (8 US gal)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "50 litros (13.2 US gal)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "10 litros (2.6 US gal)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No existe límite de desbalance mientras haya combustible utilizable",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El AFM Sección 2.14 establece un **desbalance máximo de combustible de 30 litros (8 US gal)** entre semialas para mantener la estabilidad lateral y el control en aproximación.",
+      "references": [
+        "AFM Tecnam P2010 TDI Ed.2 Rev.13 Sección 2.14"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    }
+  }
+]

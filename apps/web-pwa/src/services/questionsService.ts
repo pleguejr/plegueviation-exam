@@ -77,29 +77,74 @@ export async function loadAllQuestions(forceRefresh = false): Promise<Question[]
 
 
 /**
- * Carga el manifiesto de categorías.
+ * Carga el manifiesto de categorías con soporte y fallback 100% offline.
  */
 export async function loadManifest(forceRefresh = false): Promise<BankManifest> {
-  if (!forceRefresh && cachedManifest) return cachedManifest;
+  if (!forceRefresh && cachedManifest && cachedManifest.categories && cachedManifest.categories.length > 0) {
+    return cachedManifest;
+  }
   try {
     const baseUrl = import.meta.env.BASE_URL || './';
     const cleanBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
     const res = await fetch(`${cleanBase}banks/manifest.json`);
-    if (res.ok) {
-      cachedManifest = await res.json();
-      return cachedManifest!;
+    if (res && res.ok) {
+      const parsed = await res.json();
+      if (parsed && Array.isArray(parsed.categories) && parsed.categories.length > 0) {
+        cachedManifest = parsed;
+        return cachedManifest!;
+      }
     }
   } catch (err) {
-    console.warn('Error cargando manifest:', err);
+    console.warn('Error cargando manifest remoto, usando generador dinámico:', err);
   }
 
-  return {
-    app: 'Plegueviation Exam',
-    version: '1.0.0',
-    generated_at: new Date().toISOString(),
-    total_questions: cachedQuestions?.length || 0,
-    categories: []
+  // Fallback 100% Offline: Generar categorías en tiempo de ejecución a partir del catálogo de preguntas
+  const allQ = await loadAllQuestions();
+  const categoryMap: Record<string, { id: string; title: string; icon: string; color: string; total_questions: number; subtopics: Record<string, { id: string; title: string; count: number }> }> = {};
+
+  const titles: Record<string, { title: string; icon: string; color: string }> = {
+    'command-upgrade': { title: 'Preparación Prueba de Comandante', icon: 'ShieldCheck', color: 'rose' },
+    'fleet-c172n': { title: 'Flota Cessna 172N', icon: 'Compass', color: 'amber' },
+    'fleet-p2010tdi': { title: 'Flota Tecnam P2010 TDI', icon: 'Gauge', color: 'indigo' },
+    'simulador-e2': { title: 'Simulador E2', icon: 'Cpu', color: 'sky' },
+    'binter-ops': { title: 'Binter Ops (MOA/MOB)', icon: 'PlaneTakeoff', color: 'emerald' },
+    'fleet-e195e2': { title: 'Flota Embraer 195-E2', icon: 'Plane', color: 'sky' }
   };
+
+  for (const q of allQ) {
+    const cat = q._category || q.subject_id || 'command-upgrade';
+    if (!categoryMap[cat]) {
+      const meta = titles[cat] || { title: cat.replace(/-/g, ' ').toUpperCase(), icon: 'BookOpen', color: 'sky' };
+      categoryMap[cat] = {
+        id: cat,
+        title: meta.title,
+        icon: meta.icon,
+        color: meta.color,
+        total_questions: 0,
+        subtopics: {}
+      };
+    }
+    categoryMap[cat].total_questions += 1;
+    const sub = q._subtopic || 'general';
+    if (!categoryMap[cat].subtopics[sub]) {
+      categoryMap[cat].subtopics[sub] = {
+        id: sub,
+        title: sub.replace(/-/g, ' ').toUpperCase(),
+        count: 0
+      };
+    }
+    categoryMap[cat].subtopics[sub].count += 1;
+  }
+
+  cachedManifest = {
+    app: 'Plegueviation Exam',
+    version: '2.0.0',
+    generated_at: new Date().toISOString(),
+    total_questions: allQ.length,
+    categories: Object.values(categoryMap)
+  };
+
+  return cachedManifest;
 }
 
 /**

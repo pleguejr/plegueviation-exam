@@ -1,0 +1,113 @@
+[
+  {
+    "id": "C172N-MAN-001",
+    "subject_id": "fleet-c172n",
+    "learning_objective": "Recuperación de barrena (Spin Recovery - PARE)",
+    "stem": "Según el POH del Cessna 172N y el manual de maniobras, ¿cuál es la secuencia estandarizada de recuperación de una barrena involuntaria?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Palanca de gases IDLE -> Alerones NEUTROS -> Pie contrario al viraje a fondo -> Palanca de mando enérgica ADELANTE -> Neutralizar mando al cesar la rotación y recobrar suavemente",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Potencia MÁXIMA -> Alerones a favor del viraje -> Tirar de la palanca atrás a fondo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Extender Flaps 40° -> Cortar mezcla -> Mantener alerones cruzados",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Desconectar el interruptor Master y soltar todos los mandos de vuelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Procedimiento **PARE**: **P**ower (Idle) $\\rightarrow$ **A**ilerons (Neutral) $\\rightarrow$ **R**udder (Full Opposite) $\\rightarrow$ **E**levator (Briskly Forward past neutral). Una vez detenida la rotación, centrar pedales y recuperar suavemente de la picada.",
+      "references": [
+        "Cessna 172N POH Sección 3; Analisis_maniobras_C172N.pdf"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    }
+  },
+  {
+    "id": "C172N-LIM-WEIGHT-001",
+    "subject_id": "fleet-c172n",
+    "learning_objective": "Límites de peso en Categoría Normal vs Categoría Utilitaria (C172N)",
+    "stem": "¿Cuáles son los pesos máximos autorizados en el Cessna 172N para operar en Categoría Normal vs Categoría Utilitaria?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Categoría Normal: 2.300 lbs (1.043 kg) / Categoría Utilitaria: 2.000 lbs (907 kg)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Categoría Normal: 2.550 lbs / Categoría Utilitaria: 2.300 lbs",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Categoría Normal: 2.000 lbs / Categoría Utilitaria: 1.800 lbs",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Ambas categorías comparten exactamente el mismo peso máximo de 2.300 lbs",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El POH Sección 2 establece: **Normal Category MTOW = 2.300 lbs** ($+3.8g / -1.52g$), mientras que para maniobras en **Utility Category (virajes escarpados >60°, barrenas, pérdidas)** el peso máximo queda limitado a **2.000 lbs** ($+4.4g / -1.76g$) con asientos traseros y maletero vacíos.",
+      "references": [
+        "Cessna 172N POH Sección 2.7 y Sección 6"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "C172N-SYS-FUEL-001",
+    "subject_id": "fleet-c172n",
+    "learning_objective": "Operación del selector de combustible en despegue y aterrizaje",
+    "stem": "¿En qué posición debe estar obligatoriamente el selector de combustible del Cessna 172N durante el despegue, aterrizaje y maniobras?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En posición 'BOTH' (Ambos tanques)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En posición 'LEFT' exclusivamente para compensar el factor P",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En posición 'RIGHT' para equilibrar el peso del piloto",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Indistintamente en LEFT o RIGHT a discreción del piloto",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El POH prohíbe despegar o aterrizar en posiciones 'LEFT' o 'RIGHT'. El selector debe estar en **BOTH** para asegurar alimentación simétrica y continua de combustible por gravedad hacia el motor en cambios de actitud.",
+      "references": [
+        "Cessna 172N POH Sección 2 y Sección 4"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  }
+]

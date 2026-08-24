@@ -1,0 +1,187 @@
+[
+  {
+    "id": "E195-MEL-DESP-001",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Despacho con un generador IDG inoperativo (MEL ATA 24)",
+    "stem": "Según el MEL del E195-E2, ¿bajo qué condiciones operacionales se permite el despacho con un generador IDG inoperativo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El APU Generator debe estar operativo y funcionando continuamente durante todo el vuelo, y la altitud máxima de crucero queda limitada a FL370",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Solo se permite en vuelos VFR de posicionamiento diurno",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se puede despachar sin APU si ambas baterías están al 100% de carga",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La RAT debe permanecer extendida durante todo el vuelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MEL ATA 24 (Electrical Power) permite el despacho con 1 IDG inoperativo siempre que el **APU Generator esté operativo y se mantenga en funcionamiento continuo**, con restricciones de altitud máxima (FL370 / límite de sangrado/generación de APU) y limitaciones en aproximaciones CAT II/III.",
+      "references": [
+        "MEL EMB BA RN24 Sección 24-10; DDPM E195-E2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.7
+    }
+  },
+  {
+    "id": "E195-MEL-DESP-002",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Despacho con reversor de empuje inoperativo / bloqueado (MEL ATA 78)",
+    "stem": "Al despachar con un reversor de empuje bloqueado en posición cerrada (Deactivated / Locked Inop):",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se debe aplicar el procedimiento de mantenimiento (M) de bloqueo físico con pasador y aplicar la penalización de rendimiento en pista contaminada según DDPM",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Está prohibido aterrizar en cualquier pista que no sea seca y de al menos 3.500 m",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se debe apagar el motor correspondiente antes de iniciar la aproximación",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No requiere acción de mantenimiento si el piloto selecciona manualmente REV OFF en la MCDU",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El procedimiento requiere **bloqueo físico con pasador de mantenimiento (M)**. Para la performance de despegue y aterrizaje en pista seca no suele requerirse penalización (salvo RTO en pistas contaminadas donde se aplican las tablas de reducción de peso del DDPM/ePerf).",
+      "references": [
+        "MEL EMB BA RN24 Sección 78; DDPM-6130-100 TR7.1"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    }
+  },
+  {
+    "id": "E195-MEL-DESP-003",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Procedimientos operacionales (O) vs Procedimientos de mantenimiento (M)",
+    "stem": "¿Cuál es la responsabilidad del Comandante respecto a los ítems del MEL que contienen un símbolo (O) en el despacho?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Comprobar y ejecutar personalmente, o verificar con la tripulación, los procedimientos operativos específicos descritos en el MEL/DDPM antes del vuelo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Firmar la orden de trabajo de mantenimiento técnico en el ATL en sustitución del mecánico",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Desactivar manualmente los disyuntores de aviónica en el compartimento eléctrico",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Ignorar el ítem si el vuelo es de menos de 1 hora de duración",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los símbolos **(O)** en el MEL identifican **procedimientos operacionales** que deben ser realizados por la tripulación de vuelo (briefings especiales, configuración de cabina, limitaciones de velocidad/altitud o cálculos de combustible). Los símbolos **(M)** competen al personal de mantenimiento certificado.",
+      "references": [
+        "MOA Binter ED06 RN26 Sección 8.6; EASA AMC MMEL.050"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "E195-MEL-DESP-004",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Despacho con un canal FADEC degradado / inoperativo",
+    "stem": "Si se presenta un aviso de alerta de mantenimiento de un canal del FADEC antes del despegue, ¿cuál es el criterio de despacho del MEL?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ambos canales (Canal A y Canal B) de cada motor deben estar plenamente operativos para el despacho comercial estándar",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se puede despachar si el otro motor tiene ambos canales operativos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se permite despacho automático por 10 días bajo Categoría C",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo se requiere aprobación verbal del despachador de vuelos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Por motivos de seguridad crítica de control de motor y protecciones de empuje, el MEL exige que **ambos canales FADEC de cada motor estén operativos** para el despacho de vuelo comercial ordinario.",
+      "references": [
+        "MEL EMB BA RN24 ATA 73; AOM E195-E2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.7
+    }
+  },
+  {
+    "id": "E195-MEL-DESP-005",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Diferencias entre MEL, CDL y DDPM",
+    "stem": "¿Qué tipo de desviaciones de la aeronave regula la CDL (Configuration Deviation List)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Partes secundarias externas de la estructura de la aeronave que faltan (ej. sellos, compuertas de tren, deflectores estáticos, generadores de vórtices)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Instrumentos de navegación interna y pantallas electrónicas degradadas",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Fallos internos de las bombas de combustible y válvulas hidráulicas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cualquier defecto en los motores o en el tren de aterrizaje principal",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La **CDL (Configuration Deviation List)** autoriza el despacho con **piezas secundarias externas faltantes** (fairings, sellos aerodinámicos, generadores de vórtices) y especifica la penalización aerodinámica y de combustible aplicable en el OFP.",
+      "references": [
+        "MOA Binter ED06 RN26 Sección 8.6; AFM E195-E2 CDL Appendix"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    }
+  }
+]

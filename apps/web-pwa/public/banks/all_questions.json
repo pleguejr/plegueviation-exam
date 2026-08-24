@@ -6223,6 +6223,201 @@
     "_subtopic": "flujo-despacho-mel-ddpm-cdl"
   },
   {
+    "id": "CMD-DEC-001",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Aplicación del modelo IMFLOCC en desvío técnico por fallo de sistema",
+    "stem": "Durante el crucero de un vuelo LPA-MAD a FL350, se produce un fallo de PACK 1 con mensaje EICAS 'PACK 1 FAIL'. Tras aplicar QRH, se desciende a FL250. Al aplicar IMFLOCC, ¿cuál es el orden correcto de análisis para decidir si continuar a destino o desviar?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inop items (FL250 PACK 1 off) -> Meteo (MAD vs alternativas) -> Fuel (consumo aumentado a FL250) -> Landing Perf -> Options -> Choose -> Comms",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Comms (declarar Mayday) -> Fuel -> Meteo -> Inop -> Options -> Choose -> Landing",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Choose (desviar inmediatamente al aeropuerto más cercano) sin calcular combustible",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Landing Perf -> Choose -> Comms -> Inop -> Meteo -> Fuel -> Options",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El mnemónico **IMFLOCC** exige evaluar metódicamente: **I** (Inop item/fallo), **M** (Meteo), **F** (Fuel / penalización de consumo a menor nivel), **L** (Landing perf en destino/alternativa), **O** (Opciones viables), **C** (Elegir la mejor opción ponderando seguridad y red comercial de la compañía) y **C** (Comunicaciones a ATC, TCP vía TELSI, pasajeros y compañía).",
+      "references": [
+        "MOA Binter ED06 RN26 Sección 8.3; MOB 3.1.10"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.7
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "gestion-emergencias-mando"
+  },
+  {
+    "id": "CMD-DEC-002",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Briefing de emergencia a TCPs mediante TELSI (Aterrizaje Inseguro / Previsto)",
+    "stem": "Ante un aviso de indicación no confirmada de tren de aterrizaje 'LG GEAR DISAGREE' con decisión de realizar toma de precaución con servicios de emergencia activados, ¿cómo estructura el Comandante el briefing TELSI al sobrecargo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "T: Aterrizaje Previsto / E: 20 minutos / L: Pista 03L LPA / S: Señal de protección 30s 'PROTECCIÓN x3' / I: Preparar cabina para toma de precaución y posible evacuación",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "T: NITS / E: Inmediato / L: Fuera de pista / S: Silbato de socorro / I: Abrir puertas en vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "T: Emergencia Imprevista / E: Sin tiempo / L: Agua / S: Sin aviso previo / I: No preparar nada",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "T: Operación Normal / E: Desconocido / L: Cualquier aeropuerto / S: Alarma general / I: Desembarque por pasarela",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El formato **TELSI** obligatorio en Binter define: **T**ipo (Emergencia Prevista), **E**TA ($20\\text{ min}$), **L**ugar (Pista $03L$), **S**eñal convenida (*'PROTECCIÓN, PROTECCIÓN, PROTECCIÓN'* a $30\\text{ s}$ de la toma) e **I**nstrucciones (preparación de cabina, comprobación de salidas y repaso de comandos).",
+      "references": [
+        "MOA Binter ED06 RN26 Sección 8.3; MOB 2.0.6.3; TELSI Briefing"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "gestion-emergencias-mando"
+  },
+  {
+    "id": "CMD-DEC-003",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Gestión de conflicto con pasajero de Nivel 2 en vuelo",
+    "stem": "Un pasajero en cabina agrede físicamente a un tripulante de cabina tras negarse a acatar la orden de abrocharse el cinturón. Según MOA 10, ¿cuál es la catalogación del suceso y la actuación del Comandante?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amenaza Nivel 2 (Violencia física). El Comandante autoriza medidas de contención física si es necesario, asegura la cabina de pilotaje cerrada y solicita presencia policial a la llegada",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Amenaza Nivel 4. El Comandante debe efectuar un descenso de emergencia inmediato con máscaras fuera",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Amenaza Nivel 1. Se ignora la agresión hasta finalizar el servicio a bordo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El Comandante debe abandonar los mandos y acudir personalmente a la cabina de pasajeros para mediar",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La violencia física contra tripulantes constituye **Amenaza Nivel 2**. La cabina técnica debe permanecer **estrictamente blindada y cerrada**; el PIC coordina la contención con los TCPs/pasajeros autorizados, notifica a ATC y solicita detención policial en destino o realiza desvío si la seguridad del vuelo se ve comprometida.",
+      "references": [
+        "MOA Binter ED06 RN26 Capítulo 10; ICAO Security Manual Doc 8973"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.7
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "gestion-emergencias-mando"
+  },
+  {
+    "id": "CMD-DEC-004",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Toma de decisiones ante degradación meteorológica en destino (Fuel Mayday vs Minimum Fuel)",
+    "stem": "Aproximándose al destino, ATC instruye esperas de 25 minutos. Al calcular el combustible restante, el Comandante estima que aterrizará con exactamente el combustible de reserva final (Final Reserve Fuel - 30 min). ¿Qué declaración obligatoria debe hacer a ATC?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Declarar 'MINIMUM FUEL', informando al ATC de que cualquier cambio en la autorización puede resultar en aterrizar con menos de la reserva final",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Declarar 'MAYDAY MAYDAY MAYDAY FUEL' inmediatamente",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No declarar nada para evitar abrir una investigación formal de ASR",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Apagar un motor en espera para ahorrar combustible y no reportar",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según CAT.OP.MPA.180 y MOA 8.3, la llamada **'MINIMUM FUEL'** se realiza cuando el combustible previsto al aterrizar en destino se aproxima a la reserva final (sin ser aún una emergencia). Si se prevé aterrizar con **menos de la reserva final**, es mandatorio declarar emergencia con **'MAYDAY MAYDAY MAYDAY FUEL'**.",
+      "references": [
+        "MOA Binter ED06 RN26 Sección 8.3.2; SERA.14095; CAT.OP.MPA.180"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.7
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "gestion-emergencias-mando"
+  },
+  {
+    "id": "CMD-DEC-005",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Uso del método MEANA en fallo múltiple tras impacto de aves (Bird Strike)",
+    "stem": "Tras un impacto de aves en ascenso inicial con daños en motor 2 y fallo hidráulico asociado, ¿cuál es la secuencia correcta de gestión según el método MEANA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1° Memo Items (si aplican) -> 2° Emergency Checklist de motor -> 3° Abnormal Checklist hidráulica principal -> 4° Normal Checklist de ascenso/crucero -> 5° Abnormal Checklist restantes y notas",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "1° Normal Checklist -> 2° Emergency Checklist -> 3° Memo Items -> 4° Abnormal Checklist",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "1° Comunicar con la compañía por radio -> 2° Rellenar el ASR -> 3° Desconectar el piloto automático",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "1° Abnormal Checklist restantes -> 2° Normal Checklist -> 3° Emergency Checklist",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El método **MEANA** (MOB 3.1.0) estructura: **M**emo Items (acciones de memoria inmediatas) $\\rightarrow$ **E**mergency Checklist (procedimientos críticos en recuadro) $\\rightarrow$ **A**bnormal Checklist principal $\\rightarrow$ **N**ormal Checklist (reajuste de la fase de vuelo) $\\rightarrow$ **A**bnormal Checklist restantes.",
+      "references": [
+        "MOA Binter ED06 RN26 Sección 8.3.A; MOB 3.1.0"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "gestion-emergencias-mando"
+  },
+  {
     "id": "CMD-MGT-001",
     "subject_id": "cmd_mnemonicos_mando",
     "learning_objective": "MOB 2.0.6.1 - Secuencia RETSE en Briefing de Despegue (MCDU & LIDO)",
@@ -58728,6 +58923,123 @@
     "_subtopic": "limitaciones"
   },
   {
+    "id": "C172N-MAN-001",
+    "subject_id": "fleet-c172n",
+    "learning_objective": "Recuperación de barrena (Spin Recovery - PARE)",
+    "stem": "Según el POH del Cessna 172N y el manual de maniobras, ¿cuál es la secuencia estandarizada de recuperación de una barrena involuntaria?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Palanca de gases IDLE -> Alerones NEUTROS -> Pie contrario al viraje a fondo -> Palanca de mando enérgica ADELANTE -> Neutralizar mando al cesar la rotación y recobrar suavemente",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Potencia MÁXIMA -> Alerones a favor del viraje -> Tirar de la palanca atrás a fondo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Extender Flaps 40° -> Cortar mezcla -> Mantener alerones cruzados",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Desconectar el interruptor Master y soltar todos los mandos de vuelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Procedimiento **PARE**: **P**ower (Idle) $\\rightarrow$ **A**ilerons (Neutral) $\\rightarrow$ **R**udder (Full Opposite) $\\rightarrow$ **E**levator (Briskly Forward past neutral). Una vez detenida la rotación, centrar pedales y recuperar suavemente de la picada.",
+      "references": [
+        "Cessna 172N POH Sección 3; Analisis_maniobras_C172N.pdf"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "C172N-LIM-WEIGHT-001",
+    "subject_id": "fleet-c172n",
+    "learning_objective": "Límites de peso en Categoría Normal vs Categoría Utilitaria (C172N)",
+    "stem": "¿Cuáles son los pesos máximos autorizados en el Cessna 172N para operar en Categoría Normal vs Categoría Utilitaria?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Categoría Normal: 2.300 lbs (1.043 kg) / Categoría Utilitaria: 2.000 lbs (907 kg)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Categoría Normal: 2.550 lbs / Categoría Utilitaria: 2.300 lbs",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Categoría Normal: 2.000 lbs / Categoría Utilitaria: 1.800 lbs",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Ambas categorías comparten exactamente el mismo peso máximo de 2.300 lbs",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El POH Sección 2 establece: **Normal Category MTOW = 2.300 lbs** ($+3.8g / -1.52g$), mientras que para maniobras en **Utility Category (virajes escarpados >60°, barrenas, pérdidas)** el peso máximo queda limitado a **2.000 lbs** ($+4.4g / -1.76g$) con asientos traseros y maletero vacíos.",
+      "references": [
+        "Cessna 172N POH Sección 2.7 y Sección 6"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "C172N-SYS-FUEL-001",
+    "subject_id": "fleet-c172n",
+    "learning_objective": "Operación del selector de combustible en despegue y aterrizaje",
+    "stem": "¿En qué posición debe estar obligatoriamente el selector de combustible del Cessna 172N durante el despegue, aterrizaje y maniobras?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En posición 'BOTH' (Ambos tanques)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En posición 'LEFT' exclusivamente para compensar el factor P",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En posición 'RIGHT' para equilibrar el peso del piloto",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Indistintamente en LEFT o RIGHT a discreción del piloto",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El POH prohíbe despegar o aterrizar en posiciones 'LEFT' o 'RIGHT'. El selector debe estar en **BOTH** para asegurar alimentación simétrica y continua de combustible por gravedad hacia el motor en cambios de actitud.",
+      "references": [
+        "Cessna 172N POH Sección 2 y Sección 4"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "fleet-c172n",
+    "_subtopic": "operacion-normal"
+  },
+  {
     "id": "C172N-NORM-001",
     "subject_id": "c172n_normal",
     "learning_objective": "POH Sección 4 - Protección de la Aviónica en la Puesta en Marcha",
@@ -63427,6 +63739,201 @@
     "_subtopic": "sistemas-aeronave"
   },
   {
+    "id": "E195-MEL-DESP-001",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Despacho con un generador IDG inoperativo (MEL ATA 24)",
+    "stem": "Según el MEL del E195-E2, ¿bajo qué condiciones operacionales se permite el despacho con un generador IDG inoperativo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El APU Generator debe estar operativo y funcionando continuamente durante todo el vuelo, y la altitud máxima de crucero queda limitada a FL370",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Solo se permite en vuelos VFR de posicionamiento diurno",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se puede despachar sin APU si ambas baterías están al 100% de carga",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La RAT debe permanecer extendida durante todo el vuelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MEL ATA 24 (Electrical Power) permite el despacho con 1 IDG inoperativo siempre que el **APU Generator esté operativo y se mantenga en funcionamiento continuo**, con restricciones de altitud máxima (FL370 / límite de sangrado/generación de APU) y limitaciones en aproximaciones CAT II/III.",
+      "references": [
+        "MEL EMB BA RN24 Sección 24-10; DDPM E195-E2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.7
+    },
+    "_category": "fleet-e195e2",
+    "_subtopic": "ddpm"
+  },
+  {
+    "id": "E195-MEL-DESP-002",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Despacho con reversor de empuje inoperativo / bloqueado (MEL ATA 78)",
+    "stem": "Al despachar con un reversor de empuje bloqueado en posición cerrada (Deactivated / Locked Inop):",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se debe aplicar el procedimiento de mantenimiento (M) de bloqueo físico con pasador y aplicar la penalización de rendimiento en pista contaminada según DDPM",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Está prohibido aterrizar en cualquier pista que no sea seca y de al menos 3.500 m",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se debe apagar el motor correspondiente antes de iniciar la aproximación",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No requiere acción de mantenimiento si el piloto selecciona manualmente REV OFF en la MCDU",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El procedimiento requiere **bloqueo físico con pasador de mantenimiento (M)**. Para la performance de despegue y aterrizaje en pista seca no suele requerirse penalización (salvo RTO en pistas contaminadas donde se aplican las tablas de reducción de peso del DDPM/ePerf).",
+      "references": [
+        "MEL EMB BA RN24 Sección 78; DDPM-6130-100 TR7.1"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    },
+    "_category": "fleet-e195e2",
+    "_subtopic": "ddpm"
+  },
+  {
+    "id": "E195-MEL-DESP-003",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Procedimientos operacionales (O) vs Procedimientos de mantenimiento (M)",
+    "stem": "¿Cuál es la responsabilidad del Comandante respecto a los ítems del MEL que contienen un símbolo (O) en el despacho?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Comprobar y ejecutar personalmente, o verificar con la tripulación, los procedimientos operativos específicos descritos en el MEL/DDPM antes del vuelo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Firmar la orden de trabajo de mantenimiento técnico en el ATL en sustitución del mecánico",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Desactivar manualmente los disyuntores de aviónica en el compartimento eléctrico",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Ignorar el ítem si el vuelo es de menos de 1 hora de duración",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Los símbolos **(O)** en el MEL identifican **procedimientos operacionales** que deben ser realizados por la tripulación de vuelo (briefings especiales, configuración de cabina, limitaciones de velocidad/altitud o cálculos de combustible). Los símbolos **(M)** competen al personal de mantenimiento certificado.",
+      "references": [
+        "MOA Binter ED06 RN26 Sección 8.6; EASA AMC MMEL.050"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "fleet-e195e2",
+    "_subtopic": "ddpm"
+  },
+  {
+    "id": "E195-MEL-DESP-004",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Despacho con un canal FADEC degradado / inoperativo",
+    "stem": "Si se presenta un aviso de alerta de mantenimiento de un canal del FADEC antes del despegue, ¿cuál es el criterio de despacho del MEL?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ambos canales (Canal A y Canal B) de cada motor deben estar plenamente operativos para el despacho comercial estándar",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se puede despachar si el otro motor tiene ambos canales operativos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se permite despacho automático por 10 días bajo Categoría C",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo se requiere aprobación verbal del despachador de vuelos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Por motivos de seguridad crítica de control de motor y protecciones de empuje, el MEL exige que **ambos canales FADEC de cada motor estén operativos** para el despacho de vuelo comercial ordinario.",
+      "references": [
+        "MEL EMB BA RN24 ATA 73; AOM E195-E2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.7
+    },
+    "_category": "fleet-e195e2",
+    "_subtopic": "ddpm"
+  },
+  {
+    "id": "E195-MEL-DESP-005",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Diferencias entre MEL, CDL y DDPM",
+    "stem": "¿Qué tipo de desviaciones de la aeronave regula la CDL (Configuration Deviation List)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Partes secundarias externas de la estructura de la aeronave que faltan (ej. sellos, compuertas de tren, deflectores estáticos, generadores de vórtices)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Instrumentos de navegación interna y pantallas electrónicas degradadas",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Fallos internos de las bombas de combustible y válvulas hidráulicas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cualquier defecto en los motores o en el tren de aterrizaje principal",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La **CDL (Configuration Deviation List)** autoriza el despacho con **piezas secundarias externas faltantes** (fairings, sellos aerodinámicos, generadores de vórtices) y especifica la penalización aerodinámica y de combustible aplicable en el OFP.",
+      "references": [
+        "MOA Binter ED06 RN26 Sección 8.6; AFM E195-E2 CDL Appendix"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    },
+    "_category": "fleet-e195e2",
+    "_subtopic": "ddpm"
+  },
+  {
     "id": "E195-QRH-MEM-001",
     "subject_id": "fleet-e195e2",
     "learning_objective": "Memory item: CABIN ALTITUDE HI",
@@ -63620,6 +64127,396 @@
     },
     "_category": "fleet-e195e2",
     "_subtopic": "memory-items"
+  },
+  {
+    "id": "E195-SYS-FBW-001",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Arquitectura de leyes de control Fly-by-Wire (Normal vs Direct Mode)",
+    "stem": "En el sistema Fly-by-Wire del Embraer 195-E2, ¿qué función de protección permanece activa cuando el sistema degrada a DIRECT MODE?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ninguna protección de envolvente de vuelo (AOA limiting, high-speed protection, bank angle limit) está disponible",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "La protección de ángulo de ataque límite (AOA limiter) permanece activa",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La protección de sobrevelocidad de alta velocidad (High Speed Protection) se mantiene",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El sistema de compensación de empuje asimétrico (Thrust Asymmetry Compensation) sigue operativo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En **DIRECT MODE**, los actuadores responden directamente a las órdenes de las palancas y pedales mediante ganancias fijas basadas en la velocidad anemométrica analógica. **Todas las protecciones de envolvente de vuelo de orden superior (AOA limiting, overspeed, bank limit, TAC, stall protection) quedan desactivadas**.",
+      "references": [
+        "AOM E195-E2 Rev11 Sección Flight Controls; MTM ATA 27-00"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.7
+    },
+    "_category": "fleet-e195e2",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "E195-SYS-FBW-002",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Compensación automática de empuje asimétrico (TAC)",
+    "stem": "¿Bajo qué condiciones actúa automáticamente el sistema de Compensación de Empuje Asimétrico (TAC) en el E195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En modo Normal cuando se detecta una asimetría de empuje superior al umbral establecido, aplicando deflexión automática del timón de dirección",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Únicamente cuando el piloto automático está conectado en aproximación ILS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Tanto en Modo Normal como en Direct Mode mediante actuadores mecánicos de cables",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo en tierra durante la carrera de despegue por debajo de 80 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El sistema **TAC (Thrust Asymmetry Compensation)** es una función del software de control de vuelo en **Normal Mode** que aplica automáticamente deflexión de timón de dirección para contrarrestar los momentos de guiñada causados por una asimetría de empuje entre los dos motores PW1900G.",
+      "references": [
+        "AOM E195-E2 Rev11 Sección 27; MTM ATA 27-20"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    },
+    "_category": "fleet-e195e2",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "E195-SYS-FBW-003",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Lógica de control del timón de profundidad y estabilizador horizontal (Pitch Trim)",
+    "stem": "¿Cómo opera la compensación de cabeceo (Pitch Trim) en el E195-E2 en Modo Normal cuando se vuela manualmente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El sistema es auto-compensado (auto-trim) en vuelo; los interruptores de trim en el volante modifican la referencia de velocidad (speed trim reference)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mueve directamente el estabilizador horizontal por cables mecánicos como en aviones convencionales",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo se puede compensar a través de la MCDU antes del despegue",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El trim manual en el pedestal anula automáticamente todas las leyes de control FBW",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En **Normal Mode**, el sistema FBW del E2 proporciona estabilidad de velocidad y trayectoria con **auto-trim**. Al accionar los interruptores de trim del volante (Control Wheel Trim Switch), la tripulación desplaza la velocidad de referencia trimada por el sistema FBW.",
+      "references": [
+        "AOM E195-E2 Rev11 Sección 27-40; MTM ATA 27-40"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.7
+    },
+    "_category": "fleet-e195e2",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "E195-SYS-ELEC-001",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Fuentes primarias de generación eléctrica AC en el E195-E2",
+    "stem": "¿Cuál es la potencia nominal y tipo de los generadores principales integrados (IDG) montados en los motores PW1900G del E195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Generadores IDG de 115V AC / 400 Hz trifásicos de 60 kVA o 75 kVA según variante",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Alternadores de 28V DC exclusivamente de 300A",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Generadores de frecuencia variable de 230V AC y 150 kVA",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Dinamos de corriente continua conectadas a inversores estáticos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La generación primaria del E195-E2 se basa en **dos IDG (Integrated Drive Generators) de 115V AC, 400 Hz trifásicos**, que alimentan las barras principales AC BUS 1 y AC BUS 2 a través de los contactores de línea GLC.",
+      "references": [
+        "AOM E195-E2 Rev11 Sección 24; MTM ATA 24-10"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    },
+    "_category": "fleet-e195e2",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "E195-SYS-ELEC-002",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Despliegue y capacidad eléctrica de la RAT (Ram Air Turbine)",
+    "stem": "¿Qué equipos eléctricos esenciales son alimentados prioritariamente por el generador de la RAT tras un despliegue por pérdida total de generación AC?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AC Essential Bus y, a través de la ESS TRU, las barras DC Essential Busses y Standby Instruments",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Todas las barras principales AC BUS 1 y AC BUS 2 sin restricción",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Únicamente el sistema de entretenimiento y luces de cabina de pasajeros",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Los calentadores de parabrisas y las bombas hidráulicas eléctricas ACMP 1 y 2",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La **RAT** suministra energía eléctrica a la **AC ESS BUS** (y mediante la ESS TRU a las barras **DC ESS BUS 1, 2 y 3**), garantizando la alimentación continua de los instrumentos esenciales (IESS), pantallas 2 y 3, canales primarios FBW y sistemas de comunicación y navegación críticos.",
+      "references": [
+        "AOM E195-E2 Rev11 Sección 24-20; MTM ATA 24-20"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.7
+    },
+    "_category": "fleet-e195e2",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "E195-SYS-HYD-001",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Distribución de fuentes de presión de los Sistemas Hidráulicos 1, 2 y 3",
+    "stem": "En el sistema hidráulico del E195-E2 (presión nominal 3000 psi), ¿qué bombas alimentan el Sistema Hidráulico 3?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dos bombas eléctricas ACMP (ACMP 3A principal y ACMP 3B de respaldo)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Una bomba mecánica EDP movida por el motor 1 y una bomba manual",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Únicamente la Power Transfer Unit (PTU) conectada al sistema 1",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Una bomba de turbina de aire de impacto (RAT hydraulic pump)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **Sistema Hidráulico 3** está presurizado exclusivamente por **dos bombas accionadas por motor eléctrico (ACMP 3A y ACMP 3B)**, proporcionando redundancia independiente para los actuadores críticos de mandos de vuelo (elevadores, timón y alerones).",
+      "references": [
+        "AOM E195-E2 Rev11 Sección 29; MTM ATA 29-10"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    },
+    "_category": "fleet-e195e2",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "E195-SYS-HYD-002",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Función y lógica de la Power Transfer Unit (PTU)",
+    "stem": "¿Cuál es la función principal de la PTU (Power Transfer Unit) entre los Sistemas Hidráulicos 1 y 2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transferir potencia hidráulica mecánica entre el Sistema 1 y el Sistema 2 sin mezclar los fluidos, asistiendo en la retracción del tren tras fallo de motor en despegue",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mezclar los fluidos de ambos sistemas para compensar pérdidas de nivel de reservorio",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Presurizar el Sistema 3 en caso de fallo de las bombas eléctricas ACMP",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Alimentar los frenos de emergencia con aire comprimido",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La **PTU** consta de un motor hidráulico acoplado a una bomba que transfiere presión entre los sistemas 1 y 2 **sin mezcla de fluidos**. Su función prioritaria es asegurar la retracción del tren de aterrizaje si falla el motor 2 durante el despegue.",
+      "references": [
+        "AOM E195-E2 Rev11 Sección 29-20; MTM ATA 29-20"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.7
+    },
+    "_category": "fleet-e195e2",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "E195-SYS-ENG-001",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Arquitectura del motor Pratt & Whitney PW1900G (Geared Turbofan)",
+    "stem": "¿Cuál es la característica técnica principal de la arquitectura Geared Turbofan (GTF) del motor PW1900G?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Un reductor planetario (Fan Drive Gear System - FDGS) que permite que el fan gire a menor velocidad que la turbina de baja presión (LPT) optimizando la eficiencia",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Una transmisión de velocidad constante mecánica acoplada al compresor de alta presión",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Ausencia total de turbinas axiales sustituidas por cámaras centrífugas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Un eje único rígido entre el fan y todas las etapas de alta y baja presión",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **FDGS (Fan Drive Gear System)** desacopla la velocidad del fan y de la turbina de baja presión (LPT) mediante una relación de reducción ~3:1, permitiendo que el fan gire a su velocidad óptima de alta eficiencia y la LPT a alta velocidad de máximo rendimiento.",
+      "references": [
+        "AOM E195-E2 Rev11 Sección Powerplant; MTM ATA 72-00"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    },
+    "_category": "fleet-e195e2",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "E195-SYS-ENG-002",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Lógica de refrigeración del rotor y arranque asistido del PW1900G",
+    "stem": "Durante el arranque del motor PW1900G en tierra, ¿qué función realiza el FADEC si detecta deformación térmica del rotor (rotor thermal bow)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inicia automáticamente una secuencia de virado previo del motor (motoring / Bowed Rotor Combustion Protection) antes de introducir combustible e ignición",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Aborta el arranque definitivamente y exige inspección boroscópica por mantenimiento",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aplica potencia máxima continua inmediatamente para igualar temperaturas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Conecta los calentadores eléctricos de las carcasas del compresor de alta",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El FADEC incorpora la protección **Bowed Rotor Combustion Protection (BRCP)**: si el motor estuvo apagado en un intervalo térmico crítico, hace girar el eje a baja rotación durante un tiempo preprogramado para homogeneizar la temperatura del eje antes de activar la ignición y el flujo de combustible.",
+      "references": [
+        "AOM E195-E2 Rev11 Sección Engines; MTM ATA 73/80"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.7
+    },
+    "_category": "fleet-e195e2",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "E195-SYS-ECS-001",
+    "subject_id": "fleet-e195e2",
+    "learning_objective": "Válvulas de salida de presurización (Outflow Valves)",
+    "stem": "¿Cuántas válvulas de salida de presurización (Outflow Valves - OFV) equipa el fuselaje del Embraer 195-E2 y cómo están controladas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Una válvula electro-mecánica principal (OFV) en el fuselaje trasero y una válvula de alivio de presión positiva/negativa independiente",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Dos válvulas neumáticas manuales accionadas por palancas en el pedestal",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cuatro válvulas distribuidas en cada una de las puertas de pasajeros",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Una única compuerta de alivio por gravedad en el compartimento de morro",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El sistema de presurización cuenta con **una Outflow Valve (OFV)** controlada eléctricamente por los controladores digitales de presurización (AMSC / CPC) situada en la parte inferior trasera, además de la **Negative Pressure Relief Valve y Safety Relief Valve** independientes.",
+      "references": [
+        "AOM E195-E2 Rev11 Sección 21-30; MTM ATA 21-30"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    },
+    "_category": "fleet-e195e2",
+    "_subtopic": "sistemas-aeronave"
   },
   {
     "id": "P2010-EMG-001",
@@ -71618,6 +72515,123 @@
     },
     "_category": "fleet-p2010tdi",
     "_subtopic": "operacion-normal"
+  },
+  {
+    "id": "P2010-SYS-G1000-001",
+    "subject_id": "fleet-p2010tdi",
+    "learning_objective": "Modo de reversión de pantallas (Display Backup) en Garmin G1000 NXi",
+    "stem": "Si falla la pantalla principal de vuelo (PFD) en el Tecnam P2010 TDI, ¿cómo se activa el modo de reversión en el MFD?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pulsando el botón rojo 'DISPLAY BACKUP' en el panel de audio GMA 1360 (o de forma automática por el sistema)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Apagando la batería principal y encendiendo el interruptor de emergencia",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Girando la perilla de rumbo HDG tres veces consecutivas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo se puede recuperar reiniciando los disyuntores de aviónica en vuelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El panel de audio **Garmin GMA 1360** dispone de un pulsador rojo dedicado **DISPLAY BACKUP** que conmuta el MFD a modo combinado (reversionary mode), presentando los instrumentos primarios de vuelo junto con los parámetros esenciales del motor CD-170.",
+      "references": [
+        "AFM Tecnam P2010 TDI Ed.2 Rev.13 Sección 7; Manual G1000 NXi"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "P2010-SYS-FADEC-002",
+    "subject_id": "fleet-p2010tdi",
+    "learning_objective": "Funcionamiento de la batería de respaldo del FADEC (FADEC Backup Battery)",
+    "stem": "¿Cuál es la función y autonomía garantizada de la batería de respaldo del FADEC en el Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suministrar energía eléctrica exclusiva a las ECUs del FADEC durante al menos 30 minutos en caso de fallo total del alternador y batería principal",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Alimentar las luces exteriores y la radio VHF 1 durante 2 horas",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Proporcionar corriente de arranque al motor de arranque en frío",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Alimentar el piloto automático Garmin GFC 700 en descenso",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Dado que el motor Continental CD-170 depende 100% de la gestión electrónica para la inyección common-rail, la **FADEC Backup Battery** garantiza al menos **30 minutos de funcionamiento continuo del motor** ante un fallo eléctrico total de la aeronave.",
+      "references": [
+        "AFM Tecnam P2010 TDI Ed.2 Rev.13 Sección 7.9"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "sistemas-aeronave"
+  },
+  {
+    "id": "P2010-LIM-FUEL-001",
+    "subject_id": "fleet-p2010tdi",
+    "learning_objective": "Límites de combustible y desbalance máximo en el Tecnam P2010 TDI",
+    "stem": "¿Cuál es el desbalance máximo de combustible permitido entre los tanques izquierdo y derecho en el Tecnam P2010 TDI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "30 litros (8 US gal)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "50 litros (13.2 US gal)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "10 litros (2.6 US gal)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No existe límite de desbalance mientras haya combustible utilizable",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El AFM Sección 2.14 establece un **desbalance máximo de combustible de 30 litros (8 US gal)** entre semialas para mantener la estabilidad lateral y el control en aproximación.",
+      "references": [
+        "AFM Tecnam P2010 TDI Ed.2 Rev.13 Sección 2.14"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "fleet-p2010tdi",
+    "_subtopic": "sistemas-aeronave"
   },
   {
     "id": "P2010-SYS-001",

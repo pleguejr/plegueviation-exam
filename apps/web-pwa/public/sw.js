@@ -1,11 +1,12 @@
-const CACHE_NAME = 'plegueviation-cache-v2.4';
+const CACHE_NAME = 'plegueviation-cache-v2.7';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
   './manifest.webmanifest',
   './favicon.svg',
   './banks/manifest.json',
-  './banks/all_questions.json'
+  './banks/all_questions.json',
+  './banks/deleted_questions.json'
 ];
 
 self.addEventListener('install', (event) => {
@@ -39,9 +40,24 @@ self.addEventListener('fetch', (event) => {
   }
 
   if (event.request.method !== 'GET') return;
+
   event.respondWith(
-    caches.match(event.request).then((cached) => {
-      const networked = fetch(event.request)
+    caches.match(event.request, { ignoreSearch: true }).then((cached) => {
+      if (cached) {
+        // En segundo plano, si hay red, refrescar caché
+        fetch(event.request)
+          .then((response) => {
+            if (response && response.status === 200) {
+              const cacheCopy = response.clone();
+              caches.open(CACHE_NAME).then((cache) => cache.put(event.request, cacheCopy));
+            }
+          })
+          .catch(() => {});
+        return cached;
+      }
+
+      // Si no estaba en caché, pedir a la red y guardar en caché para uso offline
+      return fetch(event.request)
         .then((response) => {
           if (response && response.status === 200) {
             const cacheCopy = response.clone();
@@ -49,8 +65,13 @@ self.addEventListener('fetch', (event) => {
           }
           return response;
         })
-        .catch(() => cached);
-      return cached || networked;
+        .catch(() => {
+          // Si falla la red y es una navegación HTML, servir la SPA index.html
+          if (event.request.mode === 'navigate' || event.request.headers.get('accept')?.includes('text/html')) {
+            return caches.match('./index.html', { ignoreSearch: true });
+          }
+          return cached;
+        });
     })
   );
 });
