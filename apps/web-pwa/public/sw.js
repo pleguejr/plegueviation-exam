@@ -1,4 +1,4 @@
-const CACHE_NAME = 'plegueviation-cache-v2.8';
+const CACHE_NAME = 'plegueviation-cache-v2.9';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -44,7 +44,7 @@ self.addEventListener('fetch', (event) => {
   event.respondWith(
     caches.match(event.request, { ignoreSearch: true }).then((cached) => {
       if (cached) {
-        // En segundo plano, si hay red, refrescar caché
+        // En segundo plano, si hay red, refrescar caché de forma silenciosa
         fetch(event.request)
           .then((response) => {
             if (response && response.status === 200) {
@@ -65,11 +65,21 @@ self.addEventListener('fetch', (event) => {
           }
           return response;
         })
-        .catch(() => {
-          // Si falla la red y es una navegación HTML, servir la SPA index.html
+        .catch(async () => {
+          // Robustez para iOS / iPadOS: Si falla la red y es una navegación HTML o reinicio tras suspensión
           if (event.request.mode === 'navigate' || event.request.headers.get('accept')?.includes('text/html')) {
-            return caches.match('./index.html', { ignoreSearch: true });
+            const indexFallback = (await caches.match('./index.html', { ignoreSearch: true })) ||
+                                  (await caches.match('/index.html', { ignoreSearch: true })) ||
+                                  (await caches.match('./', { ignoreSearch: true }));
+            if (indexFallback) return indexFallback;
           }
+
+          // Fallback para archivos estáticos
+          const url = new URL(event.request.url);
+          const staticFallback = (await caches.match(url.pathname, { ignoreSearch: true })) ||
+                                 (await caches.match('.' + url.pathname, { ignoreSearch: true }));
+          if (staticFallback) return staticFallback;
+
           return cached;
         });
     })
