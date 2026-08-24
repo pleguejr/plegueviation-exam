@@ -16,7 +16,15 @@ export function getQuestionFleet(q: Question): AircraftFleet {
   if (id.startsWith('C172') || cat === 'fleet-c172n' || sub.startsWith('c172')) {
     return 'c172n';
   }
-  if (id.startsWith('E195') || cat === 'fleet-e195e2' || sub.startsWith('e195')) {
+  if (
+    id.startsWith('E195') ||
+    id.startsWith('SIM-') ||
+    id.startsWith('E2-') ||
+    cat === 'fleet-e195e2' ||
+    cat === 'simulador-e2' ||
+    sub.startsWith('e195') ||
+    sub.startsWith('sim_e2')
+  ) {
     return 'e195e2';
   }
   if (

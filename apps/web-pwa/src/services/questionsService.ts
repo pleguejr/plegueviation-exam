@@ -21,8 +21,8 @@ export async function loadAllQuestions(forceRefresh = false): Promise<Question[]
     const baseUrl = import.meta.env.BASE_URL || './';
     const cleanBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
     const [resQ, resDel] = await Promise.all([
-      fetch(`${cleanBase}banks/all_questions.json?t=${Date.now()}`),
-      fetch(`${cleanBase}banks/deleted_questions.json?t=${Date.now()}`).catch(() => null)
+      fetch(`${cleanBase}banks/all_questions.json`),
+      fetch(`${cleanBase}banks/deleted_questions.json`).catch(() => null)
     ]);
     if (resQ && resQ.ok) {
       bundled = await resQ.json();
@@ -84,7 +84,7 @@ export async function loadManifest(forceRefresh = false): Promise<BankManifest> 
   try {
     const baseUrl = import.meta.env.BASE_URL || './';
     const cleanBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
-    const res = await fetch(`${cleanBase}banks/manifest.json?t=${Date.now()}`);
+    const res = await fetch(`${cleanBase}banks/manifest.json`);
     if (res.ok) {
       cachedManifest = await res.json();
       return cachedManifest!;
