@@ -1,0 +1,150 @@
+[
+  {
+    "id": "MOB-NORM-001",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Estructura del Briefing de Salida TWIN + RETSE (MOB 2.0.6.1)",
+    "stem": "En el briefing de salida de Binter, ¿qué elementos componen el bloque RETSE?",
+    "options": [
+      {
+        "id": "A",
+        "text": "R: Route, E: Engine Start & Pushback, T: Taxi, S: SID, E: Emergency / EOSID",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "R: Runway, E: Elevation, T: Transition, S: Speed, E: ETA",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "R: Radar, E: EICAS, T: Traffic, S: Secondary, E: Engine Anti-Ice",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "R: Radio, E: Equipment, T: Temperature, S: Squawk, E: Evacuation",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En el SOP de Binter (MOB 2.0.6.1), **RETSE** estructura: **R**oute (FMS/perfil), **E**ngine Start & Pushback (secuencia), **T**axi (calles y puntos calientes), **S**ID (salida instrumental) y **E**OSID / Emergency (fallo antes/después de V1).",
+      "references": [
+        "MOB Binter ED06 RN26 Sección 2.0.6.1"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    }
+  },
+  {
+    "id": "MOB-NORM-002",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Estructura del Briefing de Aproximación E-DALTA (MOB 2.0.6.2)",
+    "stem": "¿Qué elemento evalúa la letra 'E' en el mnemónico de aproximación E-DALTA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ePerf InFlight Landing (cálculo de distancias de aterrizaje y márgenes en función de la pista y peso)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Engine Anti-Ice status",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Emergency frequency selection",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Estimated Time of Arrival",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En el briefing **E-DALTA**, la **E** corresponde a **ePerf InFlight Landing Calculation** (cálculo formal de distancia de aterrizaje en vuelo LDTA vs pista disponible).",
+      "references": [
+        "MOB Binter ED06 RN26 Sección 2.0.6.2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    }
+  },
+  {
+    "id": "MOB-NORM-003",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Callouts reglamentarios en carrera de despegue (MOB 2.0.7)",
+    "stem": "Durante la carrera de despegue en el E195-E2, ¿cuál es la cantada obligatoria a 80 nudos y la respuesta requerida?",
+    "options": [
+      {
+        "id": "A",
+        "text": "PM: 'EIGHTY KNOTS' -> PF: 'CHECKED' tras verificar los anemómetros primarios",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "PM: 'EIGHTY KNOTS' -> PF: 'TAKEOFF POWER SET'",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "PM: 'EIGHTY KNOTS' -> PF: 'ROTATE'",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "PM: 'CROSSCHECK' -> PF: 'V1'",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "A 80 KIAS, el PM canta **'EIGHTY KNOTS'**; el PF comprueba su anemómetro y responde **'CHECKED'**, marcando el umbral de transición hacia el régimen de alta velocidad en despegue.",
+      "references": [
+        "MOB Binter ED06 RN26 Sección 2.0.7; SOPM Embraer E2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "MOB-NORM-004",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Criterios de Aproximación Estabilizada (MOB 2.0.11)",
+    "stem": "¿A qué altura máxima sobre el terreno (AGL) debe estar completamente estabilizada una aproximación en condiciones IMC vs VMC?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1.000 ft AGL en IMC y 500 ft AGL en VMC",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "500 ft AGL en IMC y 300 ft AGL en VMC",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "1.500 ft AGL en ambas condiciones",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo en la toma de contacto con la pista",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Criterio estándar de Binter y EASA: La aeronave debe estar en configuración final de aterrizaje, velocidad estabilizada ($V_{REF}$ a $V_{REF}+5$), potencia adecuada y senda correcta a **1.000 ft AGL en IMC** y a **500 ft AGL en VMC**. De lo contrario, la frustrada (Go-Around) es mandatoria.",
+      "references": [
+        "MOB Binter ED06 RN26 Sección 2.0.11; MOA 8.3"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  }
+]

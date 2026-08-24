@@ -8391,6 +8391,201 @@
     "_subtopic": "gestion-emergencias-mando"
   },
   {
+    "id": "MOB-EMG-001",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Decisión y ejecución de Aborto de Despegue (RTO) a alta velocidad (MOB 3.1.2)",
+    "stem": "En la carrera de despegue por encima de 80 KIAS y hasta V1, ¿por cuáles de las siguientes razones el Comandante debe abortar el despegue (RTO)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fuego de motor, fallo de motor, aviso de cizalladura (Windshear Warning) o cualquier fallo que impida el vuelo seguro de la aeronave",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cualquier mensaje de precaución de color ámbar en el EICAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Fallo de una luz de cortesía de cabina o fallo de recirculación de aire",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pérdida de comunicación de radio con la torre",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "A alta velocidad ($>80\\text{ KIAS}$ hasta $V_1$), la decisión de RTO está restringida a eventos críticos: **fuego de motor, fallo repentino de motor, alerta de windshear**, o condiciones que hagan la aeronave no aeronavegable. En este régimen, fallos menores deben llevarse al aire.",
+      "references": [
+        "MOB Binter ED06 RN26 Sección 3.1.2; QRH E195-E2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "gestion-emergencias-mando"
+  },
+  {
+    "id": "MOB-EMG-002",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Callout y procedimiento de RTO tras detener la aeronave en pista (MOB 3.1.2)",
+    "stem": "Tras completar un RTO y detener el avión con el freno de estacionamiento puesto, ¿cuál es la comunicación inmediata del Comandante a los TCPs por el sistema de megafonía?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anunciar por PA: 'TRIPULACIÓN DE CABINA, PERMANEZCAN SENTADOS' (o 'ESPEREN INSTRUCCIONES')",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Gritar inmediatamente: 'EVACUACIÓN, EVACUACIÓN'",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No comunicar nada para no alarmar a los pasajeros",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pedir al copiloto que abra su ventanilla de emergencia",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para evitar una evacuación no deseada iniciada por pánico de pasajeros, el Comandante canta inmediatamente tras parar el avión: **'TRIPULACIÓN DE CABINA, PERMANEZCAN SENTADOS'** (o *'ESPEREN INSTRUCCIONES'*), mientras evalúa la situación con el PM antes de decidir si se desaloja por pasarela, escalerilla o toboganes.",
+      "references": [
+        "MOB Binter ED06 RN26 Sección 3.1.2; QRH Rev19"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "gestion-emergencias-mando"
+  },
+  {
+    "id": "MOB-EMG-003",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Perfil y acciones de Descenso de Emergencia (MOB 3.1.4)",
+    "stem": "Durante un descenso de emergencia por despresurización, ¿cuál es la altitud de nivelación objetivo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "10.000 ft o la Altitud Mínima en Ruta (MEA / MGA / MORA), la que sea más alta",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Nivel del mar (0 ft) en todos los casos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "FL200 como altitud fija de espera",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Exactamente la altitud de circuito de tránsito del aeropuerto de salida",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El objetivo de nivelación es **10.000 ft** (aire respirable sin suplemento de oxígeno) **o la altitud mínima de seguridad (MEA / MGA / MORA), la que sea más alta**, para garantizar el debido franqueamiento de obstáculos y terreno montañoso.",
+      "references": [
+        "MOB Binter ED06 RN26 Sección 3.1.4; QRH Rev19 S1-3"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "gestion-emergencias-mando"
+  },
+  {
+    "id": "MOB-EMG-004",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Velocidad de planeo en fallo de motor monomotor en crucero (Driftdown)",
+    "stem": "Si se produce un fallo de motor en crucero y se requiere iniciar el procedimiento de descenso continuo (Driftdown), ¿qué velocidad debe seleccionarse en el FGS/FMS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Green Dot speed (velocidad de máxima autonomía / mejor régimen con un motor inoperativo)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "VMO / MMO para descender lo más rápido posible",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "VREF + 30 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Velocidad de aproximación final",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La velocidad óptima de **Driftdown** en el E195-E2 es la velocidad **Green Dot**, calculada por el FMS y representada en la cinta de velocidad, la cual maximiza la distancia planeada y optimiza el techo de servicio monomotor.",
+      "references": [
+        "MOB Binter ED06 RN26 Sección 3.1.6; AOM E195-E2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "gestion-emergencias-mando"
+  },
+  {
+    "id": "MOB-EMG-005",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Protocolo de Evacuación de Emergencia (MOB 3.1.8)",
+    "stem": "Si tras una parada de emergencia se confirma fuego severo incontrolable y se ordena evacuar, ¿qué acción previa debe ejecutar la tripulación de vuelo antes de la orden 'EVACUATE'?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Completar la Emergency Evacuation Checklist, cortar motores (START/STOP STOP), tirar de manerales cortafuegos y despresurizar el avión (DUMP)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Abrir las ventanillas de cockpit y saltar en primer lugar",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Apagar todas las luces de cabina para evitar chispas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Desconectar únicamente el transponder",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La lista de **Emergency Evacuation** requiere: detener la aeronave, palancas de empuje IDLE, freno de estacionamiento ON, selector de corte de motores STOP, tirar de manerales cortafuegos (Fire Handles PULL), despresurización forzada (DUMP PUSH IN) y pulsar el botón **EVAC COMMAND** antes de ordenar verbalmente por PA.",
+      "references": [
+        "MOB Binter ED06 RN26 Sección 3.1.8; QRH Rev19"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.7
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "gestion-emergencias-mando"
+  },
+  {
     "id": "CMD-MOA-SEC-001",
     "subject_id": "moa_seguridad_security",
     "learning_objective": "MOA 10.1 - Puerta Blindada de la Cabina de Vuelo (Cockpit Security Door)",
@@ -21532,6 +21727,201 @@
     },
     "_category": "command-upgrade",
     "_subtopic": "operaciones-especiales"
+  },
+  {
+    "id": "CMD-PIC-001",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Límites temporales de la responsabilidad del Comandante sobre el avión (MOA 1.4)",
+    "stem": "Según MOA 1.4 y CAT.GEN.MPA.105, ¿durante qué periodo exacto es el Comandante responsable de la operación y seguridad del avión?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desde el momento en que el avión está listo para iniciar el rodaje hacia el despegue hasta que se detiene al final del vuelo y se apagan los motores primarios",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Desde que la tripulación entra en el aeropuerto hasta que sale de la terminal",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Únicamente mientras el avión se encuentra en el aire entre el despegue y la toma",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Desde la firma del plan de vuelo operacional hasta la entrega del equipaje",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 1.4 establece que el Comandante es responsable de la **operación y seguridad del avión** desde que *'está listo para iniciar el rodaje hacia el despegue hasta el momento en que se detenga al final del vuelo y se apaguen los motores utilizados como fuente primaria de propulsión'* (y de la seguridad de las personas desde su entrada hasta que lo abandonan).",
+      "references": [
+        "MOA Binter ED06 RN26 Sección 1.4; CAT.GEN.MPA.105(a)(1)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "partes-aplicables-moa-mob"
+  },
+  {
+    "id": "CMD-PIC-002",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Potestad de desviación de normativas en situaciones de emergencia (MOA 1.4)",
+    "stem": "Si en una situación de emergencia grave que pone en riesgo la aeronave, el Comandante adopta medidas que implican una violación de reglamentos locales:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Debe notificarlo sin demora a la autoridad local competente conforme al punto 7.3 del Anexo V del Reglamento (UE) 2018/1139",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Incurre en falta sancionable automática que anula la validez de su licencia de vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo es admisible si cuenta con autorización previa por escrito del Director de Operaciones",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No necesita emitir ninguna notificación si no hubo daños estructurales visibles",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El Reglamento (UE) 2018/1139 y el MOA 1.4 reconocen que en emergencia el PIC puede adoptar cualquier medida en interés de la seguridad, debiendo **notificarlo sin demora a la autoridad local competente** si se violaron procedimientos o reglamentaciones locales.",
+      "references": [
+        "MOA Binter ED06 RN26 Sección 1.4; Reglamento (UE) 2018/1139 Anexo V"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "partes-aplicables-moa-mob"
+  },
+  {
+    "id": "CMD-PIC-003",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Preservación de datos de CVR y FDR en tierra (MOA 1.4 y CAT.GEN.MPA.195)",
+    "stem": "Tras ocurrir un accidente o incidente grave, ¿cuál es la acción preceptiva del Comandante respecto a los registradores de vuelo antes de abandonar la cabina?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Asegurar que se desactiven inmediatamente los registradores desconectando los disyuntores para evitar sobreescritura y garantizar su conservación",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Descargar los ficheros de audio al EFB corporativo para su análisis interno",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mantener la aeronave energizada con el APU conectado para preservar las memorias volátiles",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Borrar la última media hora de grabación para proteger la privacidad de la tripulación",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según MOA 1.4 y CAT.GEN.MPA.195, ante accidente o incidente grave el Comandante debe garantizar que **los registradores se desactiven inmediatamente terminado el vuelo** (desconectando CBs) y se tomen las medidas de precaución para su conservación física.",
+      "references": [
+        "MOA Binter ED06 RN26 Sección 1.4; CAT.GEN.MPA.195"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "partes-aplicables-moa-mob"
+  },
+  {
+    "id": "CMD-PIC-004",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Asunción del mando por incapacitación del Comandante (MOA 1.5.2)",
+    "stem": "En caso de incapacitación del Comandante durante el vuelo, ¿cómo se articula reglamentariamente el mando de la aeronave?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El Copiloto asume automáticamente la condición de Piloto al Mando (PIC) con plena autoridad para la continuación y aterrizaje seguro del vuelo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El Copiloto debe ceder los mandos al Tripulante de Cabina con mayor antigüedad",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se debe transferir el mando al piloto que ocupe el trasportín sin importar su rango o aerolínea",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El vuelo debe entrar en circuito de espera indefinido hasta que el Comandante recupere la consciencia",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El MOA 1.5.2 establece que ante la incapacitación del Comandante, el **Copiloto asume automáticamente la función y autoridad de Comandante/PIC**, declarando emergencia médica/pan-pan según la gravedad y procediendo al aterrizaje en el aeródromo adecuado más conveniente.",
+      "references": [
+        "MOA Binter ED06 RN26 Sección 1.5.2; ORO.FC.105"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "partes-aplicables-moa-mob"
+  },
+  {
+    "id": "CMD-PIC-005",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Regla de los dos avisos (Two-Challenge Rule) en CRM y monitorización (MOA 1.5.1)",
+    "stem": "¿Qué establece el procedimiento de 'Two-Challenge Rule' adoptado por Binter Airlines en la interacción PF/PM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Si el PM realiza dos llamadas consecutivas sobre una desviación crítica de vuelo sin respuesta del PF, debe asumir inmediatamente los mandos del avión",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El Comandante debe repetir dos veces cada autorización antes de que el Copiloto la ejecute",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se deben realizar dos llamadas de radio antes de declarar un fallo de comunicaciones",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El sobrecargo debe tocar dos veces el interfono antes de entrar a cabina técnica",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La **Two-Challenge Rule** (MOA 1.5.1 y principios CRM) dicta que si tras dos avisos claros y consecutivos del PM ante una desviación no corregida (o sospecha de incapacitación sutil) el PF no reacciona, **el PM debe asumir el control del avión diciendo 'I HAVE CONTROLS'**.",
+      "references": [
+        "MOA Binter ED06 RN26 Sección 1.5.1; MOB 2.0"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "partes-aplicables-moa-mob"
   },
   {
     "id": "CMD-MOA-AUTH-001",
@@ -49494,6 +49884,162 @@
     },
     "_category": "command-upgrade",
     "_subtopic": "procedimientos-de-vuelo"
+  },
+  {
+    "id": "MOB-NORM-001",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Estructura del Briefing de Salida TWIN + RETSE (MOB 2.0.6.1)",
+    "stem": "En el briefing de salida de Binter, ¿qué elementos componen el bloque RETSE?",
+    "options": [
+      {
+        "id": "A",
+        "text": "R: Route, E: Engine Start & Pushback, T: Taxi, S: SID, E: Emergency / EOSID",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "R: Runway, E: Elevation, T: Transition, S: Speed, E: ETA",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "R: Radar, E: EICAS, T: Traffic, S: Secondary, E: Engine Anti-Ice",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "R: Radio, E: Equipment, T: Temperature, S: Squawk, E: Evacuation",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En el SOP de Binter (MOB 2.0.6.1), **RETSE** estructura: **R**oute (FMS/perfil), **E**ngine Start & Pushback (secuencia), **T**axi (calles y puntos calientes), **S**ID (salida instrumental) y **E**OSID / Emergency (fallo antes/después de V1).",
+      "references": [
+        "MOB Binter ED06 RN26 Sección 2.0.6.1"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-operativos-vuelo-tierra"
+  },
+  {
+    "id": "MOB-NORM-002",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Estructura del Briefing de Aproximación E-DALTA (MOB 2.0.6.2)",
+    "stem": "¿Qué elemento evalúa la letra 'E' en el mnemónico de aproximación E-DALTA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ePerf InFlight Landing (cálculo de distancias de aterrizaje y márgenes en función de la pista y peso)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Engine Anti-Ice status",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Emergency frequency selection",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Estimated Time of Arrival",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En el briefing **E-DALTA**, la **E** corresponde a **ePerf InFlight Landing Calculation** (cálculo formal de distancia de aterrizaje en vuelo LDTA vs pista disponible).",
+      "references": [
+        "MOB Binter ED06 RN26 Sección 2.0.6.2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-operativos-vuelo-tierra"
+  },
+  {
+    "id": "MOB-NORM-003",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Callouts reglamentarios en carrera de despegue (MOB 2.0.7)",
+    "stem": "Durante la carrera de despegue en el E195-E2, ¿cuál es la cantada obligatoria a 80 nudos y la respuesta requerida?",
+    "options": [
+      {
+        "id": "A",
+        "text": "PM: 'EIGHTY KNOTS' -> PF: 'CHECKED' tras verificar los anemómetros primarios",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "PM: 'EIGHTY KNOTS' -> PF: 'TAKEOFF POWER SET'",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "PM: 'EIGHTY KNOTS' -> PF: 'ROTATE'",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "PM: 'CROSSCHECK' -> PF: 'V1'",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "A 80 KIAS, el PM canta **'EIGHTY KNOTS'**; el PF comprueba su anemómetro y responde **'CHECKED'**, marcando el umbral de transición hacia el régimen de alta velocidad en despegue.",
+      "references": [
+        "MOB Binter ED06 RN26 Sección 2.0.7; SOPM Embraer E2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-operativos-vuelo-tierra"
+  },
+  {
+    "id": "MOB-NORM-004",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Criterios de Aproximación Estabilizada (MOB 2.0.11)",
+    "stem": "¿A qué altura máxima sobre el terreno (AGL) debe estar completamente estabilizada una aproximación en condiciones IMC vs VMC?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1.000 ft AGL en IMC y 500 ft AGL en VMC",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "500 ft AGL en IMC y 300 ft AGL en VMC",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "1.500 ft AGL en ambas condiciones",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo en la toma de contacto con la pista",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Criterio estándar de Binter y EASA: La aeronave debe estar en configuración final de aterrizaje, velocidad estabilizada ($V_{REF}$ a $V_{REF}+5$), potencia adecuada y senda correcta a **1.000 ft AGL en IMC** y a **500 ft AGL en VMC**. De lo contrario, la frustrada (Go-Around) es mandatoria.",
+      "references": [
+        "MOB Binter ED06 RN26 Sección 2.0.11; MOA 8.3"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "procedimientos-operativos-vuelo-tierra"
   },
   {
     "id": "MOA-12-001",

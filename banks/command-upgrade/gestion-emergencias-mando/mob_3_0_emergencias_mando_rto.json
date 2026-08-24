@@ -1,0 +1,187 @@
+[
+  {
+    "id": "MOB-EMG-001",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Decisión y ejecución de Aborto de Despegue (RTO) a alta velocidad (MOB 3.1.2)",
+    "stem": "En la carrera de despegue por encima de 80 KIAS y hasta V1, ¿por cuáles de las siguientes razones el Comandante debe abortar el despegue (RTO)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fuego de motor, fallo de motor, aviso de cizalladura (Windshear Warning) o cualquier fallo que impida el vuelo seguro de la aeronave",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cualquier mensaje de precaución de color ámbar en el EICAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Fallo de una luz de cortesía de cabina o fallo de recirculación de aire",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pérdida de comunicación de radio con la torre",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "A alta velocidad ($>80\\text{ KIAS}$ hasta $V_1$), la decisión de RTO está restringida a eventos críticos: **fuego de motor, fallo repentino de motor, alerta de windshear**, o condiciones que hagan la aeronave no aeronavegable. En este régimen, fallos menores deben llevarse al aire.",
+      "references": [
+        "MOB Binter ED06 RN26 Sección 3.1.2; QRH E195-E2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    }
+  },
+  {
+    "id": "MOB-EMG-002",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Callout y procedimiento de RTO tras detener la aeronave en pista (MOB 3.1.2)",
+    "stem": "Tras completar un RTO y detener el avión con el freno de estacionamiento puesto, ¿cuál es la comunicación inmediata del Comandante a los TCPs por el sistema de megafonía?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anunciar por PA: 'TRIPULACIÓN DE CABINA, PERMANEZCAN SENTADOS' (o 'ESPEREN INSTRUCCIONES')",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Gritar inmediatamente: 'EVACUACIÓN, EVACUACIÓN'",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No comunicar nada para no alarmar a los pasajeros",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pedir al copiloto que abra su ventanilla de emergencia",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Para evitar una evacuación no deseada iniciada por pánico de pasajeros, el Comandante canta inmediatamente tras parar el avión: **'TRIPULACIÓN DE CABINA, PERMANEZCAN SENTADOS'** (o *'ESPEREN INSTRUCCIONES'*), mientras evalúa la situación con el PM antes de decidir si se desaloja por pasarela, escalerilla o toboganes.",
+      "references": [
+        "MOB Binter ED06 RN26 Sección 3.1.2; QRH Rev19"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "MOB-EMG-003",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Perfil y acciones de Descenso de Emergencia (MOB 3.1.4)",
+    "stem": "Durante un descenso de emergencia por despresurización, ¿cuál es la altitud de nivelación objetivo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "10.000 ft o la Altitud Mínima en Ruta (MEA / MGA / MORA), la que sea más alta",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Nivel del mar (0 ft) en todos los casos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "FL200 como altitud fija de espera",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Exactamente la altitud de circuito de tránsito del aeropuerto de salida",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El objetivo de nivelación es **10.000 ft** (aire respirable sin suplemento de oxígeno) **o la altitud mínima de seguridad (MEA / MGA / MORA), la que sea más alta**, para garantizar el debido franqueamiento de obstáculos y terreno montañoso.",
+      "references": [
+        "MOB Binter ED06 RN26 Sección 3.1.4; QRH Rev19 S1-3"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "MOB-EMG-004",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Velocidad de planeo en fallo de motor monomotor en crucero (Driftdown)",
+    "stem": "Si se produce un fallo de motor en crucero y se requiere iniciar el procedimiento de descenso continuo (Driftdown), ¿qué velocidad debe seleccionarse en el FGS/FMS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Green Dot speed (velocidad de máxima autonomía / mejor régimen con un motor inoperativo)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "VMO / MMO para descender lo más rápido posible",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "VREF + 30 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Velocidad de aproximación final",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La velocidad óptima de **Driftdown** en el E195-E2 es la velocidad **Green Dot**, calculada por el FMS y representada en la cinta de velocidad, la cual maximiza la distancia planeada y optimiza el techo de servicio monomotor.",
+      "references": [
+        "MOB Binter ED06 RN26 Sección 3.1.6; AOM E195-E2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.65
+    }
+  },
+  {
+    "id": "MOB-EMG-005",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Protocolo de Evacuación de Emergencia (MOB 3.1.8)",
+    "stem": "Si tras una parada de emergencia se confirma fuego severo incontrolable y se ordena evacuar, ¿qué acción previa debe ejecutar la tripulación de vuelo antes de la orden 'EVACUATE'?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Completar la Emergency Evacuation Checklist, cortar motores (START/STOP STOP), tirar de manerales cortafuegos y despresurizar el avión (DUMP)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Abrir las ventanillas de cockpit y saltar en primer lugar",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Apagar todas las luces de cabina para evitar chispas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Desconectar únicamente el transponder",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La lista de **Emergency Evacuation** requiere: detener la aeronave, palancas de empuje IDLE, freno de estacionamiento ON, selector de corte de motores STOP, tirar de manerales cortafuegos (Fire Handles PULL), despresurización forzada (DUMP PUSH IN) y pulsar el botón **EVAC COMMAND** antes de ordenar verbalmente por PA.",
+      "references": [
+        "MOB Binter ED06 RN26 Sección 3.1.8; QRH Rev19"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.7
+    }
+  }
+]
