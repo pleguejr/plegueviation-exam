@@ -1,1 +1,566 @@
-[]
+[
+  {
+    "id": "CMD-E2-001",
+    "question": {
+      "id": "CMD-E2-001",
+      "subject_id": "cmd_e2_systems",
+      "learning_objective": "AOM E195-E2 - Arquitectura del Motor PW1900G Geared Turbofan",
+      "stem": "En la arquitectura motopropulsor del Embraer 195-E2 con motores Pratt & Whitney PW1900G Geared Turbofan (GTF), ¿qué función desempeña la caja reductora Fan Drive Gear System (FDGS)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Permite que el Fan frontal gire a menor velocidad óptima mientras la turbina de baja presión gira a alta velocidad óptima (ratio ~3:1), reduciendo ruido, Carga comercial no declarada",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "reduciendo ruido, Permite que el Fan frontal gire a menor velocidad óptima mientras la turbina de baja presión gira a alta velocidad óptima (ratio ~3:1), emisiones y consumo de combustible",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "Permite que el Fan frontal gire a menor velocidad óptima mientras la turbina de baja presión gira a alta velocidad óptima (ratio ~3:1), reduciendo ruido, emisiones y consumo de combustible",
+          "is_correct": true
+        },
+        {
+          "id": "D",
+          "text": "Permite que el Fan frontal gire a menor velocidad óptima mientras la turbina de baja presión gira a alta velocidad óptima (ratio ~3:1), Inspección técnica diferida, emisiones y consumo de combustible",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "El sistema FDGS desacopla la velocidad del fan y de la turbina de baja presión, permitiendo al gran fan girar más despacio y a la turbina a régimen óptimo de máxima eficiencia térmica y acústica.",
+        "references": [
+          "AOM E195-E2 Capítulo 14 Powerplant",
+          "Pratt & Whitney PW1900G Engine Manual"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.4
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "flujo-despacho-mel-ddpm-cdl"
+    },
+    "deletedAt": 1787411790688
+  },
+  {
+    "id": "CMD-E2-035",
+    "question": {
+      "id": "CMD-E2-035",
+      "subject_id": "cmd_e2_systems",
+      "learning_objective": "AOM E195-E2 - Control Manual de Presurización",
+      "stem": "¿Cuál es la función del sistema de presurización en modo manual (Manual Pressurization Control)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Despresuriza la cabina a razón fija de 2.000 ft/min hasta igualar la presión exterior",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "Bloquea los packs de aire acondicionado en modo de refrigeración forzada a nivel de mar",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "Abre automáticamente todas las válvulas de alivio de seguridad de presión diferencial de cabina",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "Permite controlar directamente la válvula de salida mediante el interruptor manual",
+          "is_correct": true
+        }
+      ],
+      "explanation": {
+        "text": "El modo manual se utiliza en caso de fallo de ambos canales automáticos de presurización, accionando directamente la válvula de escape.",
+        "references": [
+          "AOM E195-E2 Capítulo 6 Air Conditioning & Pressurization"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.4
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "flujo-despacho-mel-ddpm-cdl"
+    },
+    "deletedAt": 1787410072137
+  },
+  {
+    "id": "CMD-E2-048",
+    "question": {
+      "id": "CMD-E2-048",
+      "subject_id": "cmd_e2_systems",
+      "learning_objective": "AOM E195-E2 / MGNT 30 - Sistema Data Link (CPDLC / ACARS)",
+      "stem": "En la arquitectura de comunicaciones por enlace de datos (Data Link / CPDLC / ACARS) en el Embraer 195-E2:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Permite la recepción de planes de vuelo, Inspección técnica diferida, autorizaciones de salida DCL, comunicaciones ATC por CPDLC y reportes automáticos de mantenimiento OOOI (Out-Off-On-In) a la compañía",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "Permite la recepción de planes de vuelo, partes meteorológicos D-ATIS/METAR, autorizaciones de salida DCL, Carga comercial no declarada",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "partes meteorológicos D-ATIS/METAR, Permite la recepción de planes de vuelo, autorizaciones de salida DCL, comunicaciones ATC por CPDLC y reportes automáticos de mantenimiento OOOI (Out-Off-On-In) a la compañía",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "Permite la recepción de planes de vuelo, partes meteorológicos D-ATIS/METAR, autorizaciones de salida DCL, comunicaciones ATC por CPDLC y reportes automáticos de mantenimiento OOOI a la compañía",
+          "is_correct": true
+        }
+      ],
+      "explanation": {
+        "text": "El sistema Data Link integra comunicaciones de texto ATS con el control aéreo y mensajes automáticos operacionales ACARS con el CCO de Binter.",
+        "references": [
+          "MGNT 30 Data Link Binter",
+          "AOM E195-E2 Capítulo 5 Communications"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.4
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "flujo-despacho-mel-ddpm-cdl"
+    },
+    "deletedAt": 1787411720454
+  },
+  {
+    "id": "CMD-EXAM-092",
+    "question": {
+      "id": "CMD-EXAM-092",
+      "subject_id": "cmd_mnemonicos_mando",
+      "learning_objective": "CRM / TEM - Gestión de Riesgos en Aproximaciones de No Precisión",
+      "stem": "¿Qué herramientas y principios del CRM son esenciales para la ejecución segura de una aproximación de No Precisión (NPA)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cumplimiento estricto de listas normales omitiendo el briefing operacional de salida",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "Uso exclusivo de automatismos sin intervención manual en ninguna fase de vuelo",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "Comunicación asertiva, monitorización cruzada activa y liderazgo situacional del comandante",
+          "is_correct": true
+        },
+        {
+          "id": "D",
+          "text": "Delegación total de la toma de decisiones críticas en el despachador de vuelo",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "La ejecución de NPAs requiere máxima monitorización del PM, cabina estéril y supervisión continua de las llamadas de altitud y régimen de descenso del EGPWS para evitar accidentes CFIT.",
+        "references": [
+          "Examen Mando Binter FOR-ENT-006 (P92)",
+          "MOA 8.3 CRM & TEM"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.35
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "examen-oficial"
+    },
+    "deletedAt": 1787409877157,
+    "reason": "Conocimiento ya adquirido, no necesaria para no perder tiempo"
+  },
+  {
+    "id": "CMD-MGT-025",
+    "question": {
+      "id": "CMD-MGT-025",
+      "subject_id": "cmd_emergency",
+      "learning_objective": "MOB 3.1.14.2 / SOPM 3-40 - Procedimiento de Ditching (Paralelo a las Olas)",
+      "stem": "En el procedimiento de Amerizaje de Emergencia (Ditching - MOB 3.1.14.2), ¿cómo se debe orientar la toma de contacto sobre el agua?",
+      "options": [
+        {
+          "id": "A",
+          "text": "con tren de aterrizaje ARRIBA (UP), Aterrizar PARALELO al oleaje (a lo largo de la cresta del oleaje o en la depresión), flaps máximos disponibles, variómetro de 200 a 300 pies/min y velocidad Vref",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "Aterrizar PARALELO al oleaje (a lo largo de la cresta del oleaje o en la depresión), con tren de aterrizaje ARRIBA (UP), flaps máximos disponibles, Carga comercial no declarada",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "Aterrizar PARALELO al oleaje (a lo largo de la cresta del oleaje o en la depresión), Inspección técnica diferida, flaps máximos disponibles, variómetro de 200 a 300 pies/min y velocidad Vref",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "Aterrizar PARALELO al oleaje (a lo largo de la cresta del oleaje o en la depresión), con tren de aterrizaje ARRIBA (UP), flaps máximos disponibles, variómetro de 200 a 300 pies/min y velocidad Vref",
+          "is_correct": true
+        }
+      ],
+      "explanation": {
+        "text": "El amerizaje se efectúa paralelo a las crestas del oleaje con tren arriba para evitar que el morro o ala se claven en el agua.",
+        "references": [
+          "MOB Binter E195-E2 Sección 3.1.14.2 (Pág. 3.1-28 y 3.1-29)"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.4
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "gestion-emergencias-mando"
+    },
+    "deletedAt": 1787410038813
+  },
+  {
+    "id": "CMD-MOA-ALT-038",
+    "question": {
+      "id": "CMD-MOA-ALT-038",
+      "subject_id": "moa_altitudes_minimas",
+      "learning_objective": "MOA 8.1.1.8 - Prevención de Condiciones de UPSET en Rutas Complejas",
+      "stem": "¿Por qué el MOA 8.1.1.8 incluye la meteorología estacional adversa como factor determinante para clasificar una ruta como compleja?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Para mitigar y prevenir situaciones de pérdida de control en vuelo (UPSET / UPRT) derivadas de turbulencia severa, cizalladura o convección",
+          "is_correct": true
+        },
+        {
+          "id": "B",
+          "text": "Para permitir que los tripulantes utilicen uniformes de abrigo no reglamentarios durante el vuelo",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "Para justificar el incremento de combustible de contingencia por encima del límite del depósito alar",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "Para eximir al operador de la obligación de disponer de planes de vuelo operacionales aprobados",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "El MOA 8.1.1.8 (nota al pie 1, GM1 ORO.FC.105(b)(2)) destaca la prevención de condiciones UPSET en áreas con meteo estacional severa.",
+        "references": [
+          "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.1 Altitudes Mínimas de Vuelo"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.3
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "preparacion-planificacion-vuelo"
+    },
+    "deletedAt": 1787411314209
+  },
+  {
+    "id": "CMD-MOA-ATS-040",
+    "question": {
+      "id": "CMD-MOA-ATS-040",
+      "subject_id": "moa_plan_vuelo_ats",
+      "learning_objective": "MOA 8.1.9.1 - Casilla 10a: Letra 'I' (Inertial Navigation)",
+      "stem": "¿Qué equipo de navegación a bordo declara la letra 'I' en la Casilla 10a del FPL OACI?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Interruptores de corte de combustible de emergencia de tipo mecánico",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "Instrumentos analógicos de aguja iluminados por luz incandescente",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "Indicador de presión de inflado de los neumáticos del tren de morro",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sistemas de Navegación Inercial certificados (Inertial Reference System - IRS / IRU / AHRS)",
+          "is_correct": true
+        }
+      ],
+      "explanation": {
+        "text": "La letra **I** en Casilla 10a certifica la presencia y disponibilidad de plataformas o unidades de **Referencia Inercial (IRS / IRU)** para la navegación autónoma.",
+        "references": [
+          "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.9 Plan de Vuelo ATS"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.2
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "preparacion-planificacion-vuelo"
+    },
+    "deletedAt": 1787411320604
+  },
+  {
+    "id": "CMD-MOA-AUTH-006",
+    "question": {
+      "id": "CMD-MOA-AUTH-006",
+      "subject_id": "moa_autoridad_tripulacion",
+      "learning_objective": "MOA 1.5.1.1 - Dependencia Jerárquica y Funcional de los Miembros de la Tripulación",
+      "stem": "De acuerdo con el MOA 1.5.1.1 (Autorización y dependencia), ¿cómo se articula la relación jerárquica de la tripulación técnica y de cabina durante el servicio?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cada miembro de la tripulación actúa con autonomía administrativa independiente sin subordinación a bordo",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "Los tripulantes de cabina dependen exclusivamente del Sobrecargo sin vinculación con el Comandante",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "El copiloto depende funcionalmente del despachador de vuelo y jerárquicamente del Jefe de Flota",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "Todos los miembros de la tripulación técnica y de cabina dependen directamente del Comandante durante la rotación",
+          "is_correct": true
+        }
+      ],
+      "explanation": {
+        "text": "El MOA 1.5.1.1 estipula que todos los tripulantes asignados a un vuelo (copiloto, pilotos de relevo, sobrecargo y tripulantes de cabina de pasajeros) están jerárquica y funcionalmente subordinados al comandante desde la presentación al servicio hasta su finalización, debiendo acatar sus órdenes e instrucciones operativas.",
+        "references": [
+          "Binter Canarias MOA - Capítulo 1: Párrafo 1.5.1.1 Autorización y Dependencia"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.3
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "partes-aplicables-moa-mob"
+    },
+    "deletedAt": 1787409987588,
+    "reason": "Conocimiento ya adqurido"
+  },
+  {
+    "id": "CMD-MOA-DOC-013",
+    "question": {
+      "id": "CMD-MOA-DOC-013",
+      "subject_id": "moa_ltv_documentacion",
+      "learning_objective": "MOA 8.1.12.4 - Documentación Obligatoria que Debe Portar Cada Tripulante Técnico",
+      "stem": "¿Qué documentos personales en vigor debe portar cada piloto en todo vuelo comercial de Binter?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Un libro de bitácora privado sin certificar por ninguna autoridad",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "Tarjeta sanitaria europea exclusivamente sin necesidad de licencia aeronáutica",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "Título universitario de bachillerato y carnet de conducir de automóviles",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "Licencia FCL con habilitación de tipo E195 y competencia lingüística ($\\ge$ Nivel 4) vigentes, Certificado Médico Clase 1, Pasaporte / DNI y Tarjeta de Identificación (CMC)",
+          "is_correct": true
+        }
+      ],
+      "explanation": {
+        "text": "Cada tripulante de vuelo debe llevar consigo: **Licencia FCL válida con Type Rating y Competencia Lingüística ($\\ge\text{Nivel 4}$), Certificado Médico Clase 1 en vigor, Pasaporte/DNI y CMC** (MOA 8.1.12.4 / Part-FCL).",
+        "references": [
+          "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.11 LTV y 8.1.12 Documentación a Bordo"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.2
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "preparacion-planificacion-vuelo"
+    },
+    "deletedAt": 1787411797802
+  },
+  {
+    "id": "P2010-GEN-009",
+    "question": {
+      "id": "P2010-GEN-009",
+      "subject_id": "p2010_limitations",
+      "learning_objective": "AFM Sección 1 - Dimensiones del Estabilizador Horizontal (Stabilator)",
+      "stem": "¿Cuál es la envergadura del plano estabilizador horizontal enterizo (Stabilator Span) de la Tecnam P2010?",
+      "options": [
+        {
+          "id": "A",
+          "text": "3.35 m",
+          "is_correct": true
+        },
+        {
+          "id": "B",
+          "text": "2.50 m",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "4.10 m",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "1.80 m",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "La Tecnam P2010 utiliza un estabilizador completamente móvil (Stabilator) con una envergadura total de 3.35 m (10.99 ft) según la tabla de dimensiones (Página 1-5).",
+        "references": [
+          "Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 1: General - Paragraph 3.1: Dimensions (Page 1-5)"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.3
+      },
+      "_category": "fleet-p2010tdi",
+      "_subtopic": "limitaciones"
+    },
+    "deletedAt": 1787527546942
+  },
+  {
+    "id": "P2010-GEN-018",
+    "question": {
+      "id": "P2010-GEN-018",
+      "subject_id": "p2010_specifications",
+      "learning_objective": "AFM Sección 1 y 6 - Especificaciones Generales y Pesos 18",
+      "stem": "¿Cuál es la altura total de la aeronave hasta la parte superior del timón de dirección?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2.64 metros de altura total medida desde el suelo hasta la cúspide de cola",
+          "is_correct": true
+        },
+        {
+          "id": "B",
+          "text": "3.10 metros de altura total medida desde el suelo hasta la cúspide de cola",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "2.20 metros de altura total medida desde el suelo hasta la cúspide de cola",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "2.95 metros de altura total medida desde el suelo hasta la cúspide de cola",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "La altura máxima exterior hasta la cúspide del estabilizador vertical es de 2.64 metros.",
+        "references": [
+          "Tecnam P2010 TDI AFM - Section 1: General"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.3
+      },
+      "_category": "fleet-p2010tdi",
+      "_subtopic": "limitaciones"
+    },
+    "deletedAt": 1787512618471
+  },
+  {
+    "id": "P2010-GEN-020",
+    "question": {
+      "id": "P2010-GEN-020",
+      "subject_id": "p2010_specifications",
+      "learning_objective": "AFM Sección 1 y 6 - Especificaciones Generales y Pesos 20",
+      "stem": "¿Cuál es la anchura de vía del tren principal entre las ruedas principales?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2.26 metros de anchura de vía entre centros de neumáticos",
+          "is_correct": true
+        },
+        {
+          "id": "B",
+          "text": "1.80 metros de anchura de vía entre centros de neumáticos",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "2.80 metros de anchura de vía entre centros de neumáticos",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "3.10 metros de anchura de vía entre centros de neumáticos",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "La anchura de vía del tren de aterrizaje principal de la P2010 es de 2.26 metros.",
+        "references": [
+          "Tecnam P2010 TDI AFM - Section 1: General"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.3
+      },
+      "_category": "fleet-p2010tdi",
+      "_subtopic": "limitaciones"
+    },
+    "deletedAt": 1787428279664
+  },
+  {
+    "id": "P2010-GEN-021",
+    "question": {
+      "id": "P2010-GEN-021",
+      "subject_id": "p2010_specifications",
+      "learning_objective": "AFM Sección 1 y 6 - Especificaciones Generales y Pesos 21",
+      "stem": "¿Cuál es la distancia entre el eje del tren de morro y el eje del tren principal?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1.94 metros de distancia entre ejes del tren de aterrizaje",
+          "is_correct": true
+        },
+        {
+          "id": "B",
+          "text": "2.50 metros de distancia entre ejes del tren de aterrizaje",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "1.45 metros de distancia entre ejes del tren de aterrizaje",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "2.15 metros de distancia entre ejes del tren de aterrizaje",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "La distancia longitudinal entre el tren de morro y el tren principal es de 1.94 metros.",
+        "references": [
+          "Tecnam P2010 TDI AFM - Section 1: General"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.3
+      },
+      "_category": "fleet-p2010tdi",
+      "_subtopic": "limitaciones"
+    },
+    "deletedAt": 1787527517329
+  }
+]
