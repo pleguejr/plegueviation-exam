@@ -10,35 +10,37 @@ import ssl
 import urllib.request
 from pathlib import Path
 
-def sync_cloud_reviews(pin='plegue'):
+def sync_cloud_reviews(pin='070707'):
     root = Path(__file__).resolve().parent.parent.parent
     review_file = root / 'banks' / 'questions_for_review.json'
     
-    url = f"https://plegueviation-exam.vercel.app/api/sync?pin={pin}"
-    print(f"[*] Consultando solicitudes de revision en la nube (PIN: {pin})...")
+    pins_to_check = [pin] if pin != '070707' else ['070707', 'plegue']
+    cloud_reviews = []
     
     ctx = ssl.create_default_context()
     ctx.check_hostname = False
     ctx.verify_mode = ssl.CERT_NONE
     
-    cloud_reviews = []
-    try:
-        req = urllib.request.Request(
-            url, 
-            headers={
-                'User-Agent': 'Plegueviation-CLI/2.0',
-                'Accept': 'application/json'
-            }
-        )
-        with urllib.request.urlopen(req, context=ctx, timeout=8) as response:
-            if response.status == 200:
-                body = json.loads(response.read().decode('utf-8'))
-                if body.get('found') and body.get('data'):
-                    data = body['data']
-                    if 'reviewRequests' in data and isinstance(data['reviewRequests'], list):
-                        cloud_reviews = data['reviewRequests']
-    except Exception as e:
-        print(f"[AVISO] No se pudo conectar con la nube ({e}). Usando base local.")
+    for p in pins_to_check:
+        url = f"https://plegueviation-exam.vercel.app/api/sync?pin={p}"
+        print(f"[*] Consultando solicitudes de revision en la nube (PIN: {p})...")
+        try:
+            req = urllib.request.Request(
+                url, 
+                headers={
+                    'User-Agent': 'Plegueviation-CLI/2.0',
+                    'Accept': 'application/json'
+                }
+            )
+            with urllib.request.urlopen(req, context=ctx, timeout=8) as response:
+                if response.status == 200:
+                    body = json.loads(response.read().decode('utf-8'))
+                    if body.get('found') and body.get('data'):
+                        data = body['data']
+                        if 'reviewRequests' in data and isinstance(data['reviewRequests'], list):
+                            cloud_reviews.extend(data['reviewRequests'])
+        except Exception as e:
+            print(f"[AVISO] No se pudo conectar con la nube para PIN {p} ({e}). Usando base local.")
         
     local_reviews = []
     if review_file.exists():
@@ -66,5 +68,5 @@ def sync_cloud_reviews(pin='plegue'):
     return final_list
 
 if __name__ == '__main__':
-    pin_arg = sys.argv[1] if len(sys.argv) > 1 else 'plegue'
+    pin_arg = sys.argv[1] if len(sys.argv) > 1 else '070707'
     sync_cloud_reviews(pin_arg)
