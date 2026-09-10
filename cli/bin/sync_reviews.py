@@ -35,7 +35,7 @@ def sync_cloud_reviews(pin='plegue'):
                 body = json.loads(response.read().decode('utf-8'))
                 if body.get('found') and body.get('data'):
                     data = body['data']
-                    if 'reviewRequests' in data and isinstance(data['veviewRequests'], list):
+                    if 'reviewRequests' in data and isinstance(data['reviewRequests'], list):
                         cloud_reviews = data['reviewRequests']
     except Exception as e:
         print(f"[AVISO] No se pudo conectar con la nube ({e}). Usando base local.")
