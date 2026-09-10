@@ -9,7 +9,11 @@ const PRIMARY_ENDPOINT = '/api/sync';
 const VERCEL_FALLBACK_ENDPOINT = 'https://plegueviation-exam.vercel.app/api/sync';
 
 export function getStoredSyncPin(): string {
-  return localStorage.getItem(SYNC_PIN_STORAGE_KEY) || 'plegue';
+  const pin = localStorage.getItem(SYNC_PIN_STORAGE_KEY)?.trim().toLowerCase();
+  if (!pin || pin === 'plegue' || pin === 'plegue-mando' || pin === 'pleguejr') {
+    return '070707';
+  }
+  return pin;
 }
 
 export function setStoredSyncPin(pin: string): void {
@@ -267,6 +271,28 @@ export async function syncWithCloud(pin?: string): Promise<{
       }
     } catch (e) {
       // Probar siguiente endpoint
+    }
+  }
+
+  // Si no se encontraron datos en /api/sync y el PIN es 070707, consultar el backup estático de CDN
+  if (!remotePayload && activePin === '070707') {
+    const cdnUrls = [
+      '/banks/user_backup_070707.json',
+      'https://plegueviation-exam.vercel.app/banks/user_backup_070707.json'
+    ];
+    for (const cdnUrl of cdnUrls) {
+      try {
+        const res = await apiFetch(cdnUrl, { method: 'GET' });
+        if (res.ok) {
+          const json = await res.json();
+          if (json && (json.questionStats || json.examSessions)) {
+            remotePayload = json;
+            break;
+          }
+        }
+      } catch (e) {
+        // Continuar
+      }
     }
   }
 

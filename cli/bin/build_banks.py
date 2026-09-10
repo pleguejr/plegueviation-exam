@@ -156,7 +156,7 @@ def compile_banks() -> int:
 
     if banks_dir.exists():
         for json_file in sorted(banks_dir.rglob("*.json")):
-            if json_file.name in ["deleted_questions.json", "questions_for_review.json", "package.json"] or json_file.name.startswith("_"):
+            if json_file.name in ["deleted_questions.json", "questions_for_review.json", "package.json", "user_backup_070707.json"] or json_file.name.startswith("_") or json_file.name.startswith("user_backup"):
                 continue
             rel_path = json_file.relative_to(banks_dir)
             parts = rel_path.parts

@@ -1,7 +1,36 @@
 // apps/web-pwa/api/sync.js - Vercel Serverless Function para Sincronización Multi-Dispositivo de Plegueviation Exam
+import fs from 'fs';
+import path from 'path';
 
 if (!globalThis._plegueSyncStore) {
   globalThis._plegueSyncStore = new Map();
+}
+
+function normalizePin(pin) {
+  const p = String(pin || '').trim().toLowerCase();
+  if (!p || p === 'plegue' || p === 'plegue-mando' || p === 'pleguejr' || p === '070707') {
+    return '070707';
+  }
+  return p;
+}
+
+function getFallbackData() {
+  const possiblePaths = [
+    path.join(process.cwd(), 'banks', 'user_backup_070707.json'),
+    path.join(process.cwd(), 'apps', 'web-pwa', 'public', 'banks', 'user_backup_070707.json'),
+    path.join(process.cwd(), 'public', 'banks', 'user_backup_070707.json')
+  ];
+  for (const p of possiblePaths) {
+    try {
+      if (fs.existsSync(p)) {
+        const raw = fs.readFileSync(p, 'utf-8');
+        return JSON.parse(raw);
+      }
+    } catch (e) {
+      // ignore
+    }
+  }
+  return null;
 }
 
 export default async function handler(req, res) {
@@ -18,16 +47,20 @@ export default async function handler(req, res) {
     return res.status(200).end();
   }
 
-  const pin = req.query?.pin || (req.body && req.body.pin);
+  const rawPin = req.query?.pin || (req.body && req.body.pin);
+  const cleanPin = normalizePin(rawPin);
 
   // GET: Obtener datos de sincronización del PIN
   if (req.method === 'GET') {
-    if (!pin) {
-      return res.status(400).json({ error: 'Falta el parámetro pin' });
-    }
+    let data = globalThis._plegueSyncStore.get(cleanPin);
 
-    const cleanPin = String(pin).trim().toLowerCase();
-    const data = globalThis._plegueSyncStore.get(cleanPin);
+    // Si no está en memoria o es 070707, usar fallback persistente
+    if (!data && cleanPin === '070707') {
+      data = getFallbackData();
+      if (data) {
+        globalThis._plegueSyncStore.set('070707', data);
+      }
+    }
 
     if (data) {
       return res.status(200).json({ found: true, data });
@@ -39,14 +72,14 @@ export default async function handler(req, res) {
   // POST / PUT: Guardar o actualizar progreso para el PIN
   if (req.method === 'POST' || req.method === 'PUT') {
     const body = req.body || {};
-    const targetPin = String(body.pin || pin || '').trim().toLowerCase();
+    const targetPin = normalizePin(body.pin || rawPin);
     const payload = body.data !== undefined ? body.data : body;
 
-    if (!targetPin) {
-      return res.status(400).json({ error: 'PIN no proporcionado en la petición' });
-    }
-
     globalThis._plegueSyncStore.set(targetPin, payload);
+    if (targetPin === '070707') {
+      globalThis._plegueSyncStore.set('plegue', payload);
+      globalThis._plegueSyncStore.set('plegue-mando', payload);
+    }
 
     return res.status(200).json({ 
       success: true, 

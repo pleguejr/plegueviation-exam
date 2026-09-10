@@ -42,7 +42,7 @@ export const SyncModal: React.FC<SyncModalProps> = ({
     if (isOpen) {
       const stored = getStoredSyncPin();
       setCurrentPin(stored);
-      setPinInput(stored || 'plegue-mando');
+      setPinInput(stored || '070707');
       setLastSync(getLastSyncTimestamp());
       setStatusMessage(null);
     }
@@ -53,7 +53,7 @@ export const SyncModal: React.FC<SyncModalProps> = ({
   const handleSaveAndSync = async () => {
     const cleanPin = pinInput.trim().toLowerCase();
     if (!cleanPin) {
-      setStatusMessage({ type: 'error', text: 'Por favor introduce un código PIN válido (ej: plegue-mando o tu nombre).' });
+      setStatusMessage({ type: 'error', text: 'Por favor introduce un código PIN válido (ej: 070707).' });
       return;
     }
 
@@ -155,7 +155,7 @@ export const SyncModal: React.FC<SyncModalProps> = ({
               type="text"
               value={pinInput}
               onChange={(e) => setPinInput(e.target.value)}
-              placeholder="Ej: plegue-mando o tu PIN"
+              placeholder="Ej: 070707"
               className="flex-1 px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white font-mono text-sm focus:outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-400 placeholder:text-slate-600"
             />
             <button
