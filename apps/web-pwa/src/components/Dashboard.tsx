@@ -44,6 +44,7 @@ interface DashboardProps {
   onOpenNewExam: () => void;
   onNavigateTab: (tab: 'explorer' | 'reports' | 'settings') => void;
   onOpenImporter: () => void;
+  onForceUpdate?: () => void;
 }
 
 export const Dashboard: React.FC<DashboardProps> = ({
@@ -51,7 +52,8 @@ export const Dashboard: React.FC<DashboardProps> = ({
   onStartFlashcards,
   onOpenNewExam,
   onNavigateTab,
-  onOpenImporter
+  onOpenImporter,
+  onForceUpdate
 }) => {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [manifest, setManifest] = useState<BankManifest | null>(null);
@@ -203,11 +205,23 @@ export const Dashboard: React.FC<DashboardProps> = ({
           <p className="text-slate-200 text-xs font-semibold">
             Binter Airlines (MOA/MOB) • Flota E195-E2 • C172N • P2010 TDI • Normativa EASA & SERA
           </p>
-          <div className="flex items-center gap-3 pt-1 text-[11px] font-mono">
+          <div className="flex flex-wrap items-center justify-center gap-3 pt-1 text-[11px] font-mono">
             <span className="text-amber-400 font-bold">⚠️ Modo Offline Habilitado (IndexedDB Local)</span>
             <span className="text-emerald-300 font-bold hidden sm:inline">• {totalQuestions} Reactivos Oficiales</span>
             <span className="text-sky-300 font-bold hidden sm:inline">• ⚡ Flashcards Activas</span>
           </div>
+          {onForceUpdate && (
+            <div className="pt-2">
+              <button
+                onClick={onForceUpdate}
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white text-xs font-black shadow-md shadow-emerald-900/40 active:scale-95 transition-all border border-emerald-400/30"
+                title="Limpiar caché de la PWA y forzar descarga de la última versión"
+              >
+                <RefreshCw className="w-3.5 h-3.5" />
+                <span>Actualizar PWA a la Última Versión</span>
+              </button>
+            </div>
+          )}
         </div>
       </div>
 

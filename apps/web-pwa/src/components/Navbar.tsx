@@ -11,6 +11,7 @@ interface NavbarProps {
   onOpenFlashcards: () => void;
   onOpenImporter: () => void;
   onOpenSyncModal: () => void;
+  onForceUpdate: () => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
@@ -21,7 +22,8 @@ export const Navbar: React.FC<NavbarProps> = ({
   onOpenNewExam,
   onOpenFlashcards,
   onOpenImporter,
-  onOpenSyncModal
+  onOpenSyncModal,
+  onForceUpdate
 }) => {
   const [isOnline, setIsOnline] = useState(navigator.onLine);
   const syncPin = getStoredSyncPin();
@@ -144,6 +146,16 @@ export const Navbar: React.FC<NavbarProps> = ({
                 <span className="hidden sm:inline">Noche</span>
               </>
             )}
+          </button>
+
+          {/* Botón Actualizar PWA App */}
+          <button
+            onClick={onForceUpdate}
+            className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg border bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border-emerald-500/40 text-[11px] font-bold transition-all active:scale-95 shadow-sm"
+            title="Comprobar y forzar actualización a la última versión disponible (PWA)"
+          >
+            <RefreshCw className="w-3.5 h-3.5 text-emerald-400" />
+            <span className="hidden md:inline">Actualizar</span>
           </button>
 
           {/* Cloud Sync Button */}

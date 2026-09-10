@@ -13,6 +13,7 @@ import { Question, BankManifest, QuestionStats, ExamConfig, ExamSession, ExamMod
 import { loadAllQuestions, loadManifest, generateExamQuestions, randomizeQuestionOptions } from './services/questionsService';
 import { getAllStatsMap, saveExamSession, recordAnswerStat, exportFullBackup, restoreFullBackup, db } from './services/db';
 import { getStoredSyncPin, syncWithCloud } from './services/sync';
+import { forceAppUpdate, registerServiceWorkerUpdateListener } from './services/appUpdate';
 import { 
   User, 
   RotateCcw, 
@@ -25,7 +26,9 @@ import {
   Key,
   Zap,
   Sun,
-  Moon
+  Moon,
+  Smartphone,
+  Sparkles
 } from 'lucide-react';
 
 export function App() {
@@ -34,6 +37,7 @@ export function App() {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [manifest, setManifest] = useState<BankManifest | null>(null);
   const [statsMap, setStatsMap] = useState<Record<string, QuestionStats>>({});
+  const [updateAvailable, setUpdateAvailable] = useState<boolean>(false);
   
   // Theme state: 'dark' (Modo Noche) vs 'light' (Modo Día)
   const [theme, setTheme] = useState<'dark' | 'light'>(() => {
@@ -116,15 +120,23 @@ export function App() {
     return () => window.removeEventListener('online', handleOnline);
   }, []);
 
-  // Register service worker for offline PWA
+  // Register service worker for offline PWA & listen for updates
   useEffect(() => {
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         const baseUrl = import.meta.env.BASE_URL || './';
         const swUrl = `${baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`}sw.js`;
-        navigator.serviceWorker.register(swUrl).catch((err) => {
+        navigator.serviceWorker.register(swUrl).then((reg) => {
+          console.log('[PWA] Service Worker registrado.');
+          // Comprobar actualización al iniciar
+          reg.update().catch(() => {});
+        }).catch((err) => {
           console.warn('Service Worker registration error:', err);
         });
+      });
+
+      registerServiceWorkerUpdateListener(() => {
+        setUpdateAvailable(true);
       });
     }
   }, []);
@@ -315,7 +327,25 @@ export function App() {
         onOpenFlashcards={() => handleStartFlashcards()}
         onOpenImporter={() => setIsImporterOpen(true)}
         onOpenSyncModal={() => setIsSyncModalOpen(true)}
+        onForceUpdate={forceAppUpdate}
       />
+
+      {/* Update Available Floating Banner */}
+      {updateAvailable && (
+        <div className="bg-gradient-to-r from-emerald-600 via-teal-600 to-sky-600 text-white px-4 py-2.5 shadow-lg flex items-center justify-between z-50 sticky top-[57px]">
+          <div className="flex items-center gap-2 text-xs font-bold">
+            <Sparkles className="w-4 h-4 text-amber-300 animate-pulse" />
+            <span>¡Nueva versión disponible con mejoras y reactivos actualizados!</span>
+          </div>
+          <button
+            onClick={forceAppUpdate}
+            className="px-3 py-1 bg-white text-emerald-900 rounded-lg text-xs font-black hover:bg-slate-100 active:scale-95 shadow-sm transition-all flex items-center gap-1.5"
+          >
+            <RefreshCw className="w-3.5 h-3.5 text-emerald-700" />
+            <span>Actualizar Ahora</span>
+          </button>
+        </div>
+      )}
 
       {/* Main Content Area */}
       <main className="flex-1 px-4 lg:px-8 py-6 max-w-7xl w-full mx-auto">
@@ -332,6 +362,7 @@ export function App() {
             onOpenNewExam={() => handleOpenConfigModal()}
             onNavigateTab={(tab) => setCurrentView(tab)}
             onOpenImporter={() => setIsImporterOpen(true)}
+            onForceUpdate={forceAppUpdate}
           />
         )}
 
@@ -446,6 +477,34 @@ export function App() {
                       </div>
                     </div>
                     {theme === 'light' && <span className="text-xs text-amber-600 font-black">✓ Activo</span>}
+                  </button>
+                </div>
+              </div>
+
+              {/* Actualización de la App (PWA) */}
+              <div className="p-5 rounded-2xl bg-gradient-to-br from-[#0c2a1e] to-[#071911] border border-emerald-500/40 space-y-4 shadow-lg">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2.5 text-emerald-400 font-bold text-sm">
+                    <Smartphone className="w-5 h-5" />
+                    <span>Actualización de la Aplicación (PWA Multiplataforma)</span>
+                  </div>
+                  <span className="text-[11px] font-mono px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-bold">
+                    PWA v1.4.0
+                  </span>
+                </div>
+
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  <strong>¿Cómo actualizar en iPad, iPhone o PC?</strong><br />
+                  <span className="text-emerald-300 font-semibold">No es necesario borrar el icono ni volver a descargarlo en Safari.</span> Al pulsar el botón inferior, la PWA limpiará la caché de la aplicación y descargará la última versión con todas las preguntas y funciones actualizadas al instante. <strong>Tus estadísticas, historial y preguntas guardadas en tu dispositivo no se borran.</strong>
+                </p>
+
+                <div className="flex flex-wrap items-center gap-3 pt-1">
+                  <button
+                    onClick={forceAppUpdate}
+                    className="px-5 py-2.5 rounded-xl text-xs font-black bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white shadow-md shadow-emerald-900/40 transition-all active:scale-95 flex items-center gap-2"
+                  >
+                    <RefreshCw className="w-4 h-4" />
+                    <span>🚀 Forzar Actualización y Recargar Última Versión</span>
                   </button>
                 </div>
               </div>
