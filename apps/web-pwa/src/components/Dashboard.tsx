@@ -27,7 +27,8 @@ import {
   AlertCircle,
   BarChart3,
   Cpu,
-  Layers
+  Layers,
+  FileText
 } from 'lucide-react';
 import { Question, BankManifest, QuestionStats, ExamSession, ExamMode, ExamSelectionStrategy } from '../types';
 import { loadAllQuestions, loadManifest } from '../services/questionsService';
@@ -44,7 +45,8 @@ interface DashboardProps {
   onStartFlashcards: (params?: { category?: string }) => void;
   onOpenNewExam: () => void;
   onOpenProcedures: () => void;
-  onNavigateTab: (tab: 'explorer' | 'reports' | 'settings' | 'procedures') => void;
+  onOpenTables: () => void;
+  onNavigateTab: (tab: 'explorer' | 'reports' | 'settings' | 'procedures' | 'tables') => void;
   onOpenImporter: () => void;
   onForceUpdate?: () => void;
 }
@@ -54,6 +56,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
   onStartFlashcards,
   onOpenNewExam,
   onOpenProcedures,
+  onOpenTables,
   onNavigateTab,
   onOpenImporter,
   onForceUpdate
@@ -475,6 +478,19 @@ export const Dashboard: React.FC<DashboardProps> = ({
             </div>
             <span className="text-xs font-extrabold text-emerald-300 tracking-wider uppercase group-hover:text-emerald-200 transition-colors text-center">
               TARJETAS SOP
+            </span>
+          </div>
+
+          {/* 7. TABLAS OPERACIONALES (MINIMOS / LIMITACIONES / MEMORY ITEMS) */}
+          <div 
+            onClick={onOpenTables}
+            className="flex flex-col items-center gap-3 cursor-pointer group"
+          >
+            <div className="w-20 h-20 rounded-full bg-gradient-to-tr from-sky-600 via-blue-700 to-indigo-700 text-white shadow-glow-sky flex items-center justify-center border-2 border-sky-400 group-hover:scale-105 transition-all duration-200">
+              <FileText className="w-9 h-9 text-sky-200" />
+            </div>
+            <span className="text-xs font-extrabold text-sky-300 tracking-wider uppercase group-hover:text-sky-200 transition-colors text-center">
+              TABLAS OPS
             </span>
           </div>
 

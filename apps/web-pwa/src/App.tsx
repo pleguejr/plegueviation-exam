@@ -10,6 +10,7 @@ import { BankImporterModal } from './components/BankImporterModal';
 import { SyncModal } from './components/SyncModal';
 import { FlashcardScreen } from './components/FlashcardScreen';
 import { ProcedureCardsScreen } from './components/procedures/ProcedureCardsScreen';
+import { OperationalTablesScreen } from './components/tables/OperationalTablesScreen';
 import { Question, BankManifest, QuestionStats, ExamConfig, ExamSession, ExamMode, ExamSelectionStrategy } from './types';
 import { loadAllQuestions, loadManifest, generateExamQuestions, randomizeQuestionOptions } from './services/questionsService';
 import { getAllStatsMap, saveExamSession, recordAnswerStat, exportFullBackup, restoreFullBackup, db } from './services/db';
@@ -30,11 +31,12 @@ import {
   Moon,
   Smartphone,
   Sparkles,
-  Layers
+  Layers,
+  FileText
 } from 'lucide-react';
 
 export function App() {
-  const [currentView, setCurrentView] = useState<'dashboard' | 'explorer' | 'reports' | 'settings' | 'exam' | 'results' | 'flashcards' | 'procedures'>('dashboard');
+  const [currentView, setCurrentView] = useState<'dashboard' | 'explorer' | 'reports' | 'settings' | 'exam' | 'results' | 'flashcards' | 'procedures' | 'tables'>('dashboard');
   const [flashcardCategory, setFlashcardCategory] = useState<string>('all');
   const [questions, setQuestions] = useState<Question[]>([]);
   const [manifest, setManifest] = useState<BankManifest | null>(null);
@@ -321,7 +323,7 @@ export function App() {
     <div className="min-h-screen bg-[#070e1e] text-slate-100 flex flex-col font-sans">
       {/* Top AviationExam Navbar */}
       <Navbar
-        currentTab={currentView === 'explorer' ? 'explorer' : currentView === 'reports' ? 'reports' : currentView === 'settings' ? 'settings' : currentView === 'flashcards' ? 'flashcards' : currentView === 'procedures' ? 'procedures' : 'dashboard'}
+        currentTab={currentView === 'explorer' ? 'explorer' : currentView === 'reports' ? 'reports' : currentView === 'settings' ? 'settings' : currentView === 'flashcards' ? 'flashcards' : currentView === 'procedures' ? 'procedures' : currentView === 'tables' ? 'tables' : 'dashboard'}
         theme={theme}
         onToggleTheme={toggleTheme}
         onSelectTab={(tab) => setCurrentView(tab)}
@@ -363,6 +365,7 @@ export function App() {
             onStartFlashcards={(params) => handleStartFlashcards(params?.category)}
             onOpenNewExam={() => handleOpenConfigModal()}
             onOpenProcedures={() => setCurrentView('procedures')}
+            onOpenTables={() => setCurrentView('tables')}
             onNavigateTab={(tab) => setCurrentView(tab)}
             onOpenImporter={() => setIsImporterOpen(true)}
             onForceUpdate={forceAppUpdate}
@@ -371,6 +374,12 @@ export function App() {
 
         {currentView === 'procedures' && (
           <ProcedureCardsScreen
+            onBackToDashboard={() => setCurrentView('dashboard')}
+          />
+        )}
+
+        {currentView === 'tables' && (
+          <OperationalTablesScreen
             onBackToDashboard={() => setCurrentView('dashboard')}
           />
         )}
