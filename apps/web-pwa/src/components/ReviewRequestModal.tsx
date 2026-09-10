@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Search, X, CheckCircle2, AlertCircle, MessageSquare, BookOpen, ShieldAlert, Sparkles } from 'lucide-react';
 import { Question } from '../types';
 import { saveReviewRequest } from '../services/db';
+import { syncWithCloud } from '../services/sync';
 
 interface ReviewRequestModalProps {
   question: Question | null;
@@ -65,6 +66,10 @@ export const ReviewRequestModal: React.FC<ReviewRequestModalProps> = ({
         selectedCategoryObj ? selectedCategoryObj.label : selectedCategory,
         comment.trim() || undefined
       );
+
+      // Sincronizar automáticamente en segundo plano con la nube
+      syncWithCloud().catch((err) => console.log('Auto cloud sync notice:', err));
+
       setSubmitted(true);
       setTimeout(() => {
         setSubmitted(false);

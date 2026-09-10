@@ -295,10 +295,10 @@ export const ExamResults: React.FC<ExamResultsProps> = ({
                             setIsReviewModalOpen(true);
                           }}
                           className="flex items-center gap-1 px-2.5 py-1 rounded-lg border bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border-amber-500/30 text-xs font-bold transition-all active:scale-95"
-                          title="Reportar esta pregunta para revisión técnica / auditoría"
+                          title="Reportar esta pregunta para auditoría técnica de manuales"
                         >
                           <Search className="w-3.5 h-3.5" />
-                          <span className="hidden sm:inline">Revisión</span>
+                          <span className="hidden sm:inline">Auditoría</span>
                         </button>
 
                         <button

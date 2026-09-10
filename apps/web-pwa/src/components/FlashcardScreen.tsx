@@ -336,10 +336,10 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
               <button
                 onClick={() => setIsReviewModalOpen(true)}
                 className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/30 text-xs font-bold transition-all active:scale-95"
-                title="Reportar esta pregunta para revisión técnica / auditoría"
+                title="Reportar esta pregunta para auditoría técnica de manuales"
               >
                 <Search className="w-3.5 h-3.5" />
-                <span>Revisión</span>
+                <span>Auditoría</span>
               </button>
 
               <button

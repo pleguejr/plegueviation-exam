@@ -8,8 +8,8 @@ const LAST_SYNC_STORAGE_KEY = 'plegue_last_sync_timestamp';
 const PRIMARY_ENDPOINT = '/api/sync';
 const VERCEL_FALLBACK_ENDPOINT = 'https://plegueviation-exam.vercel.app/api/sync';
 
-export function getStoredSyncPin(): string | null {
-  return localStorage.getItem(SYNC_PIN_STORAGE_KEY);
+export function getStoredSyncPin(): string {
+  return localStorage.getItem(SYNC_PIN_STORAGE_KEY) || 'plegue';
 }
 
 export function setStoredSyncPin(pin: string): void {
@@ -31,14 +31,15 @@ export function setLastSyncTimestamp(ts: number): void {
 }
 
 /**
- * Empaqueta todos los datos locales actuales en un formato ligero y optimizado.
+ * Empaqueta todos los datos locales actuales en un formato ligero y optimizado, incluyendo solicitudes de revisión.
  */
 export async function getLocalPayload() {
-  const [stats, sessions, custom, deleted] = await Promise.all([
+  const [stats, sessions, custom, deleted, reviews] = await Promise.all([
     db.questionStats.toArray(),
     db.examSessions.toArray(),
     db.customQuestions.toArray(),
-    db.deletedQuestions.toArray()
+    db.deletedQuestions.toArray(),
+    db.reviewRequests.toArray()
   ]);
 
   // Optimización de sesiones: no duplicar el texto completo de las preguntas del catálogo
@@ -60,7 +61,8 @@ export async function getLocalPayload() {
     questionStats: stats,
     examSessions: compactSessions,
     customQuestions: custom,
-    deletedQuestions: deleted
+    deletedQuestions: deleted,
+    reviewRequests: reviews
   };
 }
 
@@ -72,15 +74,17 @@ export async function mergeRemoteData(remoteData: any): Promise<{
   mergedSessionsCount: number;
   mergedCustomCount: number;
   mergedDeletedCount: number;
+  mergedReviewsCount: number;
 }> {
   if (!remoteData || typeof remoteData !== 'object') {
-    return { mergedStatsCount: 0, mergedSessionsCount: 0, mergedCustomCount: 0, mergedDeletedCount: 0 };
+    return { mergedStatsCount: 0, mergedSessionsCount: 0, mergedCustomCount: 0, mergedDeletedCount: 0, mergedReviewsCount: 0 };
   }
 
   let mergedStatsCount = 0;
   let mergedSessionsCount = 0;
   let mergedCustomCount = 0;
   let mergedDeletedCount = 0;
+  let mergedReviewsCount = 0;
 
   // 1. Merge de questionStats (toma el que tenga más respuestas o el más reciente)
   if (Array.isArray(remoteData.questionStats)) {
@@ -181,7 +185,19 @@ export async function mergeRemoteData(remoteData: any): Promise<{
     }
   }
 
-  return { mergedStatsCount, mergedSessionsCount, mergedCustomCount, mergedDeletedCount };
+  // 5. Merge de reviewRequests (solicitudes de auditoría pendientes)
+  if (Array.isArray(remoteData.reviewRequests)) {
+    for (const remoteRev of remoteData.reviewRequests) {
+      if (!remoteRev.id) continue;
+      const localRev = await db.reviewRequests.get(remoteRev.id);
+      if (!localRev) {
+        await db.reviewRequests.put(remoteRev);
+        mergedReviewsCount++;
+      }
+    }
+  }
+
+  return { mergedStatsCount, mergedSessionsCount, mergedCustomCount, mergedDeletedCount, mergedReviewsCount };
 }
 
 
