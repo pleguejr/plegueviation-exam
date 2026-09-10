@@ -3,10 +3,10 @@ import { Plane, Compass, BarChart3, BookOpen, PlusCircle, Wifi, WifiOff, Sparkle
 import { getStoredSyncPin, getLastSyncTimestamp } from '../services/sync';
 
 interface NavbarProps {
-  currentTab: 'dashboard' | 'explorer' | 'reports' | 'settings' | 'flashcards';
+  currentTab: 'dashboard' | 'explorer' | 'reports' | 'settings' | 'flashcards' | 'procedures';
   theme: 'dark' | 'light';
   onToggleTheme: () => void;
-  onSelectTab: (tab: 'dashboard' | 'explorer' | 'reports' | 'settings' | 'flashcards') => void;
+  onSelectTab: (tab: 'dashboard' | 'explorer' | 'reports' | 'settings' | 'flashcards' | 'procedures') => void;
   onOpenNewExam: () => void;
   onOpenFlashcards: () => void;
   onOpenImporter: () => void;
@@ -89,6 +89,18 @@ export const Navbar: React.FC<NavbarProps> = ({
           >
             <Zap className="w-3.5 h-3.5 fill-current" />
             <span>Flashcards</span>
+          </button>
+
+          <button
+            onClick={() => onSelectTab('procedures')}
+            className={`transition-colors py-1 flex items-center gap-1 ${
+              currentTab === 'procedures'
+                ? 'text-emerald-300 border-b-2 border-emerald-400 font-bold'
+                : 'text-emerald-300 hover:text-emerald-200 font-semibold'
+            }`}
+          >
+            <BookOpen className="w-3.5 h-3.5" />
+            <span>Tarjetas SOP</span>
           </button>
 
           <button

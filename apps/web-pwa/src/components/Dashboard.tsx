@@ -26,7 +26,8 @@ import {
   RefreshCw,
   AlertCircle,
   BarChart3,
-  Cpu
+  Cpu,
+  Layers
 } from 'lucide-react';
 import { Question, BankManifest, QuestionStats, ExamSession, ExamMode, ExamSelectionStrategy } from '../types';
 import { loadAllQuestions, loadManifest } from '../services/questionsService';
@@ -42,7 +43,8 @@ interface DashboardProps {
   }) => void;
   onStartFlashcards: (params?: { category?: string }) => void;
   onOpenNewExam: () => void;
-  onNavigateTab: (tab: 'explorer' | 'reports' | 'settings') => void;
+  onOpenProcedures: () => void;
+  onNavigateTab: (tab: 'explorer' | 'reports' | 'settings' | 'procedures') => void;
   onOpenImporter: () => void;
   onForceUpdate?: () => void;
 }
@@ -51,6 +53,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
   onStartConfiguredExam,
   onStartFlashcards,
   onOpenNewExam,
+  onOpenProcedures,
   onNavigateTab,
   onOpenImporter,
   onForceUpdate
@@ -462,7 +465,20 @@ export const Dashboard: React.FC<DashboardProps> = ({
             </span>
           </div>
 
-          {/* 6. MNEMÓNICOS & SOPs */}
+          {/* 6. TARJETAS DE PROCEDIMIENTOS (SOPs & EMERGENCIAS) */}
+          <div 
+            onClick={onOpenProcedures}
+            className="flex flex-col items-center gap-3 cursor-pointer group"
+          >
+            <div className="w-20 h-20 rounded-full bg-gradient-to-tr from-emerald-600 via-teal-600 to-sky-600 text-white shadow-glow-emerald flex items-center justify-center border-2 border-emerald-400 group-hover:scale-105 transition-all duration-200">
+              <Layers className="w-9 h-9 text-white" />
+            </div>
+            <span className="text-xs font-extrabold text-emerald-300 tracking-wider uppercase group-hover:text-emerald-200 transition-colors text-center">
+              TARJETAS SOP
+            </span>
+          </div>
+
+          {/* 7. MNEMÓNICOS & SOPs */}
           <div 
             onClick={() => setShowMnemonicModal(true)}
             className="flex flex-col items-center gap-3 cursor-pointer group"

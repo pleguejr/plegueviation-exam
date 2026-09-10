@@ -1,4 +1,4 @@
-const CACHE_NAME = 'plegueviation-cache-v2.9';
+const CACHE_NAME = 'plegueviation-cache-v3.0';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
