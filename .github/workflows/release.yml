@@ -47,8 +47,7 @@ jobs:
 
       - name: Package dist artifact
         run: |
-          cd apps/web-pwa/dist
-          zip -r ../../plegueviation-exam-dist.zip .
+          (cd apps/web-pwa/dist && zip -r "$GITHUB_WORKSPACE/plegueviation-exam-dist.zip" .)
 
       - name: Create or update GitHub Release
         env:
