@@ -4,7 +4,22 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 
 ---
 
-## 🚀 Versión Actual: v3.1.0 (2026-09-10)
+## 🚀 Versión Actual: v3.2.0 (2026-09-14)
+
+### 🛡️ Robustez, Sync Seguro y Prevención de Regresiones
+- **Motor de fusión compartido** (`shared/sync/syncMerge.js`): misma lógica en cliente y servidor; eliminaciones, custom questions y stats se reconcilian por timestamp.
+- **Sync serializado:** mutex en cliente evita solapamiento de peticiones entre iPhone, iPad y PC.
+- **Servidor con merge + historial:** el API ya no hace last-write-wins ciego; conserva hasta 3 snapshots por PIN para recuperación.
+- **PIN fuera de URLs:** lectura cloud vía `POST action: fetch` (sin PIN en query string); CORS restringido a orígenes conocidos.
+- **Snapshots locales:** tabla Dexie `syncSnapshots` (últimos 5) antes de sync y restore; rollback manual posible.
+- **Restore seguro:** importar backup fusiona en lugar de sobrescribir IndexedDB.
+- **Tipos unificados:** PWA reexporta desde `@plegue/core-engine`.
+- **CI + tests:** Vitest para merge/sync; workflow `ci.yml`; releases etiquetadas con `release.yml`.
+- **Service Worker:** versión de caché alineada automáticamente con `package.json` en cada build.
+
+---
+
+## 📊 Versión v3.1.0 (2026-09-10)
 
 ### 📊 Tablas Operacionales de Consulta Rápida
 - **Nueva vista `OperationalTablesScreen`:** Pantalla dedicada con tablas de referencia consultables sin conexión.

@@ -1,12 +1,19 @@
 {
   "name": "plegueviation-exam-root",
   "private": true,
-  "version": "3.1.0",
+  "version": "3.2.0",
   "workspaces": [
     "apps/web-pwa",
     "packages/core-engine"
   ],
   "scripts": {
-    "build": "npm --prefix apps/web-pwa install && npm --prefix apps/web-pwa run build"
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "build": "npm --prefix apps/web-pwa install && npm --prefix apps/web-pwa run build",
+    "build:banks": "python3 cli/bin/build_banks.py",
+    "ci": "npm test && npm run build:banks && npm run build"
+  },
+  "devDependencies": {
+    "vitest": "^3.0.5"
   }
 }

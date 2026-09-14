@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main, master]
+  push:
+    branches: [main, master]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Node dependencies
+        run: |
+          npm install
+          npm --prefix apps/web-pwa install
+
+      - name: Run unit tests
+        run: npm test
+
+      - name: Install Python dependencies
+        run: pip install jsonschema pydantic python-dotenv
+
+      - name: Build question banks
+        run: python cli/bin/build_banks.py
+
+      - name: Build PWA
+        working-directory: apps/web-pwa
+        run: npm run build

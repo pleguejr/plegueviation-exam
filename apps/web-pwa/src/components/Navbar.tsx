@@ -190,7 +190,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 ? 'bg-sky-500/20 border-sky-400/40 text-sky-200 hover:bg-sky-500/30'
                 : 'bg-amber-500/20 border-amber-400/40 text-amber-300 hover:bg-amber-500/30 animate-pulse'
             }`}
-            title={syncPin ? `Cloud Sync activo (PIN: ${syncPin}) - Clic para gestionar` : 'Clic para enlazar iPad y iPhone con PIN'}
+            title={syncPin ? 'Cloud Sync activo — clic para gestionar dispositivos' : 'Clic para enlazar iPad, iPhone y PC con PIN'}
           >
             <Cloud className={`w-3.5 h-3.5 ${syncPin ? 'text-sky-400' : 'text-amber-400'}`} />
             <span className="hidden sm:inline">{syncPin ? 'Sync OK' : 'Enlazar PIN'}</span>

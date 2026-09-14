@@ -6,3 +6,4 @@
 export * from './types';
 export * from './algorithms';
 export * from './scoring';
+export * from './syncMerge';

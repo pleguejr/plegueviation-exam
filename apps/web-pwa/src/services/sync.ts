@@ -1,12 +1,16 @@
-import { db, getAllStatsMap, getExamHistory } from './db';
-import { QuestionStats, ExamSession, Question } from '../types';
+import { mergeSyncPayload, validateSyncPayload, normalizeSyncPayload } from '@plegue/core-engine';
+import { db, getAllStatsMap, saveSyncSnapshot } from './db';
+import { QuestionStats, ExamSession, SyncPayload } from '../types';
 
 const SYNC_PIN_STORAGE_KEY = 'plegue_sync_pin';
 const LAST_SYNC_STORAGE_KEY = 'plegue_last_sync_timestamp';
+const DEVICE_ID_STORAGE_KEY = 'plegue_device_id';
+const SYNC_VERSION = '3.1.0';
 
-// Endpoints de sincronización (relativo para la PWA en Vercel, absoluto como fallback para Safari/iOS/GitHub Pages)
 const PRIMARY_ENDPOINT = '/api/sync';
 const VERCEL_FALLBACK_ENDPOINT = 'https://plegueviation-exam.vercel.app/api/sync';
+
+let syncInFlight: Promise<{ success: boolean; message: string; syncedAt?: number }> | null = null;
 
 export function getStoredSyncPin(): string {
   const pin = localStorage.getItem(SYNC_PIN_STORAGE_KEY)?.trim().toLowerCase();
@@ -34,10 +38,16 @@ export function setLastSyncTimestamp(ts: number): void {
   localStorage.setItem(LAST_SYNC_STORAGE_KEY, ts.toString());
 }
 
-/**
- * Empaqueta todos los datos locales actuales en un formato ligero y optimizado, incluyendo solicitudes de revisión.
- */
-export async function getLocalPayload() {
+export function getDeviceId(): string {
+  let deviceId = localStorage.getItem(DEVICE_ID_STORAGE_KEY);
+  if (!deviceId) {
+    deviceId = `dev_${Date.now()}_${Math.random().toString(36).slice(2, 10)}`;
+    localStorage.setItem(DEVICE_ID_STORAGE_KEY, deviceId);
+  }
+  return deviceId;
+}
+
+export async function getLocalPayload(): Promise<SyncPayload> {
   const [stats, sessions, custom, deleted, reviews] = await Promise.all([
     db.questionStats.toArray(),
     db.examSessions.toArray(),
@@ -46,7 +56,6 @@ export async function getLocalPayload() {
     db.reviewRequests.toArray()
   ]);
 
-  // Optimización de sesiones: no duplicar el texto completo de las preguntas del catálogo
   const compactSessions = sessions.map((sess) => ({
     sessionId: sess.sessionId,
     config: sess.config,
@@ -60,8 +69,9 @@ export async function getLocalPayload() {
 
   return {
     app: 'Plegueviation Exam',
-    version: '2.0.0',
+    version: SYNC_VERSION,
     syncedAt: Date.now(),
+    deviceId: getDeviceId(),
     questionStats: stats,
     examSessions: compactSessions,
     customQuestions: custom,
@@ -70,10 +80,7 @@ export async function getLocalPayload() {
   };
 }
 
-/**
- * Fusiona de forma inteligente los datos remotos con los datos locales (Merge bi-direccional).
- */
-export async function mergeRemoteData(remoteData: any): Promise<{
+export async function mergeRemoteData(remoteData: SyncPayload | null | undefined): Promise<{
   mergedStatsCount: number;
   mergedSessionsCount: number;
   mergedCustomCount: number;
@@ -81,134 +88,75 @@ export async function mergeRemoteData(remoteData: any): Promise<{
   mergedReviewsCount: number;
 }> {
   if (!remoteData || typeof remoteData !== 'object') {
-    return { mergedStatsCount: 0, mergedSessionsCount: 0, mergedCustomCount: 0, mergedDeletedCount: 0, mergedReviewsCount: 0 };
+    return {
+      mergedStatsCount: 0,
+      mergedSessionsCount: 0,
+      mergedCustomCount: 0,
+      mergedDeletedCount: 0,
+      mergedReviewsCount: 0
+    };
   }
 
-  let mergedStatsCount = 0;
-  let mergedSessionsCount = 0;
-  let mergedCustomCount = 0;
-  let mergedDeletedCount = 0;
-  let mergedReviewsCount = 0;
+  const localPayload = await getLocalPayload();
+  const merged = mergeSyncPayload(localPayload, remoteData) as SyncPayload;
 
-  // 1. Merge de questionStats (toma el que tenga más respuestas o el más reciente)
-  if (Array.isArray(remoteData.questionStats)) {
-    for (const remoteStat of remoteData.questionStats) {
-      if (!remoteStat.questionId) continue;
-      const localStat = await db.questionStats.get(remoteStat.questionId);
+  const beforeStats = await db.questionStats.count();
+  const beforeSessions = await db.examSessions.count();
+  const beforeCustom = await db.customQuestions.count();
+  const beforeDeleted = await db.deletedQuestions.count();
+  const beforeReviews = await db.reviewRequests.count();
 
-      if (!localStat) {
-        await db.questionStats.put(remoteStat);
-        mergedStatsCount++;
-      } else {
-        const combinedHistory = [...(localStat.history || []), ...(remoteStat.history || [])];
-        const uniqueHistoryMap = new Map();
-        for (const h of combinedHistory) {
-          if (h && h.timestamp) {
-            uniqueHistoryMap.set(h.timestamp, h);
-          }
-        }
-        const mergedHistory = Array.from(uniqueHistoryMap.values()).sort((a, b) => a.timestamp - b.timestamp);
-
-        const merged: QuestionStats = {
-          questionId: remoteStat.questionId,
-          timesAnswered: Math.max(localStat.timesAnswered || 0, remoteStat.timesAnswered || 0, mergedHistory.length),
-          timesCorrect: Math.max(localStat.timesCorrect || 0, remoteStat.timesCorrect || 0),
-          timesIncorrect: Math.max(localStat.timesIncorrect || 0, remoteStat.timesIncorrect || 0),
-          lastAnsweredAt: Math.max(localStat.lastAnsweredAt || 0, remoteStat.lastAnsweredAt || 0) || null,
-          lastResult: (remoteStat.lastAnsweredAt || 0) > (localStat.lastAnsweredAt || 0) ? remoteStat.lastResult : localStat.lastResult,
-          isFlagged: localStat.isFlagged || remoteStat.isFlagged,
-          history: mergedHistory,
-          flashcardViews: Math.max(localStat.flashcardViews || 0, remoteStat.flashcardViews || 0),
-          flashcardLastRating: (remoteStat.flashcardLastViewedAt || 0) > (localStat.flashcardLastViewedAt || 0)
-            ? (remoteStat.flashcardLastRating || localStat.flashcardLastRating)
-            : (localStat.flashcardLastRating || remoteStat.flashcardLastRating),
-          flashcardLastViewedAt: Math.max(localStat.flashcardLastViewedAt || 0, remoteStat.flashcardLastViewedAt || 0) || null
-        };
-
-        await db.questionStats.put(merged);
-        mergedStatsCount++;
-      }
-    }
+  for (const stat of merged.questionStats || []) {
+    if (stat?.questionId) await db.questionStats.put(stat as QuestionStats);
   }
 
-  // 2. Merge de examSessions (combina sesiones únicas por sessionId)
-  if (Array.isArray(remoteData.examSessions)) {
-    for (const remoteSess of remoteData.examSessions) {
-      if (!remoteSess.sessionId) continue;
-      const localSess = await db.examSessions.get(remoteSess.sessionId);
-      if (!localSess) {
-        // Reconstruir sesión si viene en formato compacto
-        const fullSession: ExamSession = {
-          sessionId: remoteSess.sessionId,
-          config: remoteSess.config || { categories: [], count: 20, mode: 'practice', strategy: 'random' },
-          startTime: remoteSess.startTime || Date.now(),
-          endTime: remoteSess.endTime || null,
-          currentIndex: 0,
-          questions: remoteSess.questions || [],
-          answers: remoteSess.answers || {},
-          isCompleted: remoteSess.isCompleted !== false,
-          score: remoteSess.score || null
-        };
-        await db.examSessions.put(fullSession);
-        mergedSessionsCount++;
-      } else if (remoteSess.isCompleted && !localSess.isCompleted) {
-        await db.examSessions.put({
-          ...localSess,
-          isCompleted: true,
-          endTime: remoteSess.endTime,
-          score: remoteSess.score,
-          answers: remoteSess.answers || localSess.answers
-        });
-        mergedSessionsCount++;
-      }
-    }
+  for (const remoteSess of merged.examSessions || []) {
+    if (!remoteSess.sessionId) continue;
+    const localSess = await db.examSessions.get(remoteSess.sessionId);
+    const fullSession: ExamSession = {
+      sessionId: remoteSess.sessionId,
+      config: remoteSess.config || { categories: [], count: 20, mode: 'practice', strategy: 'random', passMarkPercentage: 75 },
+      startTime: remoteSess.startTime || Date.now(),
+      endTime: remoteSess.endTime || null,
+      currentIndex: localSess?.currentIndex || 0,
+      questions: localSess?.questions?.length ? localSess.questions : remoteSess.questions || [],
+      answers: remoteSess.answers || localSess?.answers || {},
+      isCompleted: remoteSess.isCompleted !== false,
+      score: remoteSess.score ?? localSess?.score ?? null
+    };
+    await db.examSessions.put(fullSession);
   }
 
-  // 3. Merge de customQuestions
-  if (Array.isArray(remoteData.customQuestions)) {
-    for (const remoteQ of remoteData.customQuestions) {
-      if (!remoteQ.id) continue;
-      const localQ = await db.customQuestions.get(remoteQ.id);
-      if (!localQ) {
-        await db.customQuestions.put(remoteQ);
-        mergedCustomCount++;
-      }
-    }
+  for (const question of merged.customQuestions || []) {
+    if (question?.id) await db.customQuestions.put(question);
   }
 
-  // 4. Merge de deletedQuestions
-  if (Array.isArray(remoteData.deletedQuestions)) {
-    for (const remoteDel of remoteData.deletedQuestions) {
-      if (!remoteDel.id) continue;
-      const localDel = await db.deletedQuestions.get(remoteDel.id);
-      if (!localDel) {
-        await db.deletedQuestions.put(remoteDel);
-        await db.customQuestions.delete(remoteDel.id);
-        mergedDeletedCount++;
-      }
-    }
+  for (const deleted of merged.deletedQuestions || []) {
+    if (!deleted?.id) continue;
+    await db.deletedQuestions.put(deleted);
+    await db.customQuestions.delete(deleted.id);
   }
 
-  // 5. Merge de reviewRequests (solicitudes de auditoría pendientes)
-  if (Array.isArray(remoteData.reviewRequests)) {
-    for (const remoteRev of remoteData.reviewRequests) {
-      if (!remoteRev.id) continue;
-      const localRev = await db.reviewRequests.get(remoteRev.id);
-      if (!localRev) {
-        await db.reviewRequests.put(remoteRev);
-        mergedReviewsCount++;
-      }
-    }
+  for (const review of merged.reviewRequests || []) {
+    if (review?.id) await db.reviewRequests.put(review);
   }
 
-  return { mergedStatsCount, mergedSessionsCount, mergedCustomCount, mergedDeletedCount, mergedReviewsCount };
+  const afterStats = await db.questionStats.count();
+  const afterSessions = await db.examSessions.count();
+  const afterCustom = await db.customQuestions.count();
+  const afterDeleted = await db.deletedQuestions.count();
+  const afterReviews = await db.reviewRequests.count();
+
+  return {
+    mergedStatsCount: Math.max(0, afterStats - beforeStats),
+    mergedSessionsCount: Math.max(0, afterSessions - beforeSessions),
+    mergedCustomCount: Math.max(0, afterCustom - beforeCustom),
+    mergedDeletedCount: Math.max(0, afterDeleted - beforeDeleted),
+    mergedReviewsCount: Math.max(0, afterReviews - beforeReviews)
+  };
 }
 
-
-/**
- * Realiza una petición fetch con timeout seguro (8s)
- */
-async function apiFetch(url: string, options: RequestInit = {}, timeoutMs = 8000): Promise<Response> {
+async function apiFetch(url: string, options: RequestInit = {}, timeoutMs = 12000): Promise<Response> {
   const controller = new AbortController();
   const id = setTimeout(() => controller.abort(), timeoutMs);
   try {
@@ -216,7 +164,7 @@ async function apiFetch(url: string, options: RequestInit = {}, timeoutMs = 8000
       ...options,
       headers: {
         'Content-Type': 'application/json',
-        'Accept': 'application/json',
+        Accept: 'application/json',
         ...(options.headers || {})
       },
       signal: controller.signal
@@ -229,10 +177,52 @@ async function apiFetch(url: string, options: RequestInit = {}, timeoutMs = 8000
   }
 }
 
-/**
- * Realiza una sincronización completa en la nube usando el PIN especificado.
- */
-export async function syncWithCloud(pin?: string): Promise<{
+async function fetchRemotePayload(
+  endpoints: string[],
+  activePin: string,
+  bootstrap: boolean
+): Promise<{ payload: SyncPayload | null; endpoint: string | null; serverSyncedAt: number }> {
+  for (const ep of endpoints) {
+    try {
+      const res = await apiFetch(ep, {
+        method: 'POST',
+        body: JSON.stringify({
+          action: 'fetch',
+          pin: activePin,
+          bootstrap
+        })
+      });
+      const ct = res.headers.get('content-type') || '';
+      if (res.ok && ct.includes('application/json')) {
+        const json = await res.json();
+        if (json?.found && json.data) {
+          return {
+            payload: json.data as SyncPayload,
+            endpoint: ep,
+            serverSyncedAt: json.serverSyncedAt || 0
+          };
+        }
+        return { payload: null, endpoint: ep, serverSyncedAt: json.serverSyncedAt || 0 };
+      }
+    } catch {
+      // Probar siguiente endpoint
+    }
+  }
+  return { payload: null, endpoint: null, serverSyncedAt: 0 };
+}
+
+async function hasLocalProgress(): Promise<boolean> {
+  const [statsCount, sessionsCount, customCount, deletedCount, reviewsCount] = await Promise.all([
+    db.questionStats.count(),
+    db.examSessions.count(),
+    db.customQuestions.count(),
+    db.deletedQuestions.count(),
+    db.reviewRequests.count()
+  ]);
+  return statsCount + sessionsCount + customCount + deletedCount + reviewsCount > 0;
+}
+
+async function performCloudSync(pin?: string): Promise<{
   success: boolean;
   message: string;
   syncedAt?: number;
@@ -246,102 +236,83 @@ export async function syncWithCloud(pin?: string): Promise<{
     return { success: false, message: 'Sin conexión a internet. Se sincronizará automáticamente al reconectar.' };
   }
 
-  const endpoints = [
-    PRIMARY_ENDPOINT,
-    VERCEL_FALLBACK_ENDPOINT
-  ];
+  const endpoints = [PRIMARY_ENDPOINT, VERCEL_FALLBACK_ENDPOINT];
+  const localHasData = await hasLocalProgress();
+  const bootstrap = !localHasData;
 
-  let remotePayload: any = null;
-  let successfulGetEndpoint: string | null = null;
+  await saveSyncSnapshot('pre-sync');
 
-  // Paso 1: Intentar leer datos de la nube
-  for (const ep of endpoints) {
-    try {
-      const url = `${ep}?pin=${encodeURIComponent(activePin)}`;
-      const res = await apiFetch(url, { method: 'GET' });
+  const { payload: remotePayload, endpoint: successfulEndpoint } = await fetchRemotePayload(
+    endpoints,
+    activePin,
+    bootstrap
+  );
 
-      const ct = res.headers.get('content-type') || '';
-      if (res.ok && ct.includes('application/json')) {
-        const json = await res.json();
-        if (json && json.found && json.data) {
-          remotePayload = json.data;
-        }
-        successfulGetEndpoint = ep;
-        break;
-      }
-    } catch (e) {
-      // Probar siguiente endpoint
-    }
-  }
-
-  // Si no se encontraron datos en /api/sync y el PIN es 070707, consultar el backup estático de CDN
-  if (!remotePayload && activePin === '070707') {
-    const cdnUrls = [
-      '/banks/user_backup_070707.json',
-      'https://plegueviation-exam.vercel.app/banks/user_backup_070707.json'
-    ];
-    for (const cdnUrl of cdnUrls) {
-      try {
-        const res = await apiFetch(cdnUrl, { method: 'GET' });
-        if (res.ok) {
-          const json = await res.json();
-          if (json && (json.questionStats || json.examSessions)) {
-            remotePayload = json;
-            break;
-          }
-        }
-      } catch (e) {
-        // Continuar
-      }
-    }
-  }
-
-  // Paso 2: Si encontramos datos remotos en la nube, fusionarlos con los locales
   if (remotePayload) {
-    await mergeRemoteData(remotePayload);
+    const normalized = normalizeSyncPayload(remotePayload);
+    const validation = validateSyncPayload(normalized);
+    if (validation.valid && normalized) {
+      await mergeRemoteData(normalized as SyncPayload);
+    }
   }
 
-  // Paso 3: Obtener el estado local final (fusionado) y subirlo a la nube
   const finalPayload = await getLocalPayload();
+  const targetEndpoints = successfulEndpoint ? [successfulEndpoint] : endpoints;
   let uploadSuccess = false;
-
-  const targetEndpoints = successfulGetEndpoint ? [successfulGetEndpoint] : endpoints;
+  let syncedAt = finalPayload.syncedAt;
 
   for (const ep of targetEndpoints) {
     try {
       const res = await apiFetch(ep, {
         method: 'POST',
         body: JSON.stringify({
+          action: 'upload',
           pin: activePin,
+          clientSyncedAt: getLastSyncTimestamp() || 0,
           data: finalPayload
         })
       });
-
       const ct = res.headers.get('content-type') || '';
       if (res.ok && ct.includes('application/json')) {
         const json = await res.json();
-        if (json && json.success) {
+        if (json?.success) {
           uploadSuccess = true;
+          syncedAt = json.syncedAt || syncedAt;
           break;
         }
       }
-    } catch (e) {
+    } catch {
       // Probar siguiente endpoint
     }
   }
 
   if (uploadSuccess) {
-    const now = Date.now();
-    setLastSyncTimestamp(now);
+    setLastSyncTimestamp(syncedAt);
     return {
       success: true,
       message: 'Sincronización completada exitosamente.',
-      syncedAt: now
-    };
-  } else {
-    return {
-      success: false,
-      message: 'No se pudo conectar con el servidor de sincronización. Vercel se está actualizando; prueba de nuevo en unos segundos.'
+      syncedAt
     };
   }
+
+  return {
+    success: false,
+    message: 'No se pudo conectar con el servidor de sincronización. Tus datos locales están intactos.'
+  };
+}
+
+export async function syncWithCloud(pin?: string): Promise<{
+  success: boolean;
+  message: string;
+  syncedAt?: number;
+}> {
+  if (syncInFlight) {
+    return syncInFlight;
+  }
+
+  syncInFlight = performCloudSync(pin).finally(() => {
+    syncInFlight = null;
+  });
+
+  return syncInFlight;
 }

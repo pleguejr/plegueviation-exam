@@ -14,7 +14,7 @@ import { OperationalTablesScreen } from './components/tables/OperationalTablesSc
 import { Question, BankManifest, QuestionStats, ExamConfig, ExamSession, ExamMode, ExamSelectionStrategy } from './types';
 import { evaluateExam } from '@plegue/core-engine';
 import { loadAllQuestions, loadManifest, generateExamQuestions, randomizeQuestionOptions } from './services/questionsService';
-import { getAllStatsMap, saveExamSession, recordAnswerStat, exportFullBackup, restoreFullBackup, db } from './services/db';
+import { getAllStatsMap, saveExamSession, recordAnswerStat, exportFullBackup, restoreFullBackup, listSyncSnapshots, restoreSyncSnapshot, SyncSnapshot, db } from './services/db';
 import { getStoredSyncPin, syncWithCloud } from './services/sync';
 import { forceAppUpdate, registerServiceWorkerUpdateListener } from './services/appUpdate';
 import { 
@@ -43,6 +43,7 @@ export function App() {
   const [manifest, setManifest] = useState<BankManifest | null>(null);
   const [statsMap, setStatsMap] = useState<Record<string, QuestionStats>>({});
   const [updateAvailable, setUpdateAvailable] = useState<boolean>(false);
+  const [syncSnapshots, setSyncSnapshots] = useState<SyncSnapshot[]>([]);
   
   // Theme state: 'dark' (Modo Noche) vs 'light' (Modo Día)
   const [theme, setTheme] = useState<'dark' | 'light'>(() => {
@@ -83,6 +84,11 @@ export function App() {
 
   // Active Exam Session
   const [currentSession, setCurrentSession] = useState<ExamSession | null>(null);
+
+  useEffect(() => {
+    if (currentView !== 'settings') return;
+    listSyncSnapshots().then(setSyncSnapshots).catch(() => setSyncSnapshots([]));
+  }, [currentView]);
 
   const refreshData = async () => {
     const [qs, mf, sm] = await Promise.all([
@@ -524,8 +530,8 @@ export function App() {
                     <span>Sincronización en la Nube Multi-Dispositivo (iPad, iPhone, PC)</span>
                   </div>
                   {getStoredSyncPin() && (
-                    <span className="text-[11px] font-mono px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-bold">
-                      PIN: {getStoredSyncPin()}
+                    <span className="text-[11px] px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-bold">
+                      Sync activo
                     </span>
                   )}
                 </div>
@@ -608,7 +614,8 @@ export function App() {
                         try {
                           const result = await restoreFullBackup(text);
                           await refreshData();
-                          alert(`✅ Copia de seguridad restaurada con éxito:\n- ${result.statsCount} estadísticas de preguntas\n- ${result.sessionsCount} sesiones de examen\n- ${result.customCount} preguntas personalizadas\n- ${result.deletedCount || 0} preguntas eliminadas`);
+                          alert(`✅ Backup fusionado con tus datos locales (sin sobrescritura ciega):\n- ${result.statsCount} stats integradas\n- ${result.sessionsCount} sesiones integradas\n- ${result.customCount} preguntas custom\n- ${result.deletedCount || 0} eliminaciones\n- ${result.reviewsCount || 0} revisiones`);
+                          listSyncSnapshots().then(setSyncSnapshots);
                         } catch (err) {
                           alert(`❌ Error al leer el archivo de copia de seguridad: ${err}`);
                         }
@@ -616,6 +623,47 @@ export function App() {
                     />
                   </label>
                 </div>
+              </div>
+
+              {/* Snapshots locales automáticos para rollback */}
+              <div className="p-5 rounded-2xl bg-[#091224] border border-indigo-500/30 space-y-4">
+                <div className="flex items-center gap-2 text-indigo-300 font-bold text-sm">
+                  <RotateCcw className="w-5 h-5" />
+                  <span>Historial Local de Recuperación</span>
+                </div>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Antes de cada sync o restore se guarda un snapshot local (últimos 5). Úsalo para volver atrás si algo no cuadra entre dispositivos.
+                </p>
+                {syncSnapshots.length === 0 ? (
+                  <p className="text-xs text-slate-500 italic">Aún no hay snapshots. Se crearán automáticamente al sincronizar.</p>
+                ) : (
+                  <div className="space-y-2">
+                    {syncSnapshots.map((snap) => (
+                      <div key={snap.id} className="flex items-center justify-between gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                        <div className="min-w-0">
+                          <p className="text-xs font-bold text-slate-200 truncate">{snap.label}</p>
+                          <p className="text-[11px] text-slate-500">{new Date(snap.createdAt).toLocaleString()}</p>
+                        </div>
+                        <button
+                          onClick={async () => {
+                            if (!confirm('¿Restaurar este snapshot fusionándolo con los datos actuales?')) return;
+                            const ok = await restoreSyncSnapshot(snap.id);
+                            if (ok) {
+                              await refreshData();
+                              listSyncSnapshots().then(setSyncSnapshots);
+                              alert('Snapshot restaurado correctamente.');
+                            } else {
+                              alert('No se pudo restaurar el snapshot.');
+                            }
+                          }}
+                          className="shrink-0 px-3 py-1.5 rounded-lg text-[11px] font-bold bg-indigo-600 hover:bg-indigo-500 text-white"
+                        >
+                          Restaurar
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
 
               {/* Botón de reinicio completo */}
