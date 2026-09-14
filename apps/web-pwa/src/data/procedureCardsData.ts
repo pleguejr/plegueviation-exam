@@ -577,6 +577,130 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
     ]
   },
 
+  {
+    id: 'card-norm-powerbanks-2026',
+    category: 'normal',
+    title: 'Power Banks en Vuelo — Normativa 2026',
+    subtitle: 'Guía de seguridad BOE / OACI / IATA: pasajeros, tripulación y riesgos',
+    manualRef: 'BOE 2026-9940 · Adenda OACI Doc 9284 · Guía IATA DGR',
+    airplane: 'Embraer 195-E2 / Binter Ops',
+    badges: ['Power Bank', 'DGR', 'BOE 2026', 'OACI', 'IATA', 'AVSEC'],
+    goldenRules: [
+      'Máximo 2 power banks por persona (pasajeros y tripulación) para uso personal.',
+      'Solo equipaje de mano: prohibido en bodega / checked baggage.',
+      'Prohibido recargar el power bank con energía del asiento/avión en cualquier fase de vuelo.',
+      'Uso operativo tripulación (EFB, lectores): límite estricto ≤ 100 Wh y cumplimiento UN 38.3.'
+    ],
+    summary:
+      'Informar a pasajeros y tripulación sobre las nuevas restricciones y requisitos de seguridad para el transporte y uso de bancos de energía según actualizaciones del BOE, OACI e IATA de 2026 (vigencia adenda OACI desde 27/03/2026).',
+    diagramImage: './sop-diagrams/powerbanks-normativa-2026-fig.jpg',
+    diagramCaption: 'Nueva Normativa 2026 · Guía de Seguridad para Power Banks en Vuelos (BOE / OACI / IATA)',
+    diagramNote:
+      'BOE 2026-9940 · Adenda OACI Doc 9284-AN/905 vigente desde 27/03/2026 · Guía IATA previa a DGR 68.ª ed. (2027).',
+    sections: [
+      {
+        title: 'Reglas de Oro para Pasajeros (Uso Personal)',
+        color: 'emerald',
+        items: [
+          {
+            role: 'ALERT',
+            action: 'Máximo 2 unidades por persona',
+            details: 'Pasajeros y tripulación: límite de dos power banks para uso personal.'
+          },
+          {
+            role: 'ALERT',
+            action: 'Equipaje de mano exclusivamente',
+            details:
+              'Prohibido transportarlos en equipaje facturado/bodega. Deben ir en cabina para respuesta rápida ante un incidente.'
+          },
+          {
+            role: 'ALERT',
+            action: 'Prohibido recargar en vuelo',
+            details:
+              'No recargar el power bank usando la toma de corriente del asiento/aeronave en ninguna fase del vuelo.'
+          },
+          {
+            role: 'STEP',
+            action: 'Protección individual obligatoria',
+            details:
+              'Cada unidad protegida contra cortocircuitos: embalaje original o aislamiento de terminales (cinta / bolsas individuales).'
+          }
+        ]
+      },
+      {
+        title: 'Uso Operativo de la Tripulación',
+        color: 'sky',
+        items: [
+          {
+            role: 'ALERT',
+            action: 'Límite estricto de 100 Wh',
+            details:
+              'Power banks para tareas operativas (EFB, lectores de tarjetas, etc.) no deben superar 100 Wh.'
+          },
+          {
+            role: 'STEP',
+            action: 'Integración en Manuales de Operación',
+            details:
+              'El operador debe detallar condiciones de uso y transporte en los manuales de operaciones de vuelo y de cabina.'
+          },
+          {
+            role: 'STEP',
+            action: 'Verificación de estándares UN 38.3',
+            details:
+              'Asegurar que los dispositivos proceden de proveedores que demuestren cumplimiento de los ensayos de seguridad UN 38.3.'
+          }
+        ]
+      },
+      {
+        title: 'Riesgos de Seguridad y Alerta',
+        color: 'rose',
+        items: [
+          {
+            role: 'ALERT',
+            action: 'Amenaza de fuga térmica (thermal runaway)',
+            details:
+              'Sobrecalentamiento que puede derivar en incendio o autodestrucción del dispositivo: principal riesgo operacional.'
+          },
+          {
+            role: 'ALERT',
+            action: 'Peligro en power banks inalámbricos',
+            details:
+              'Mayor riesgo en dispositivos de inducción/inalámbricos: más propensos a falsificaciones o falta de control de calidad.'
+          },
+          {
+            role: 'NOTE',
+            action: 'Recomendación OACI de uso a bordo',
+            details:
+              'OACI recomienda que los pasajeros no usen power banks para cargar otros dispositivos electrónicos a bordo, reduciendo riesgos.'
+          }
+        ]
+      },
+      {
+        title: 'Marco Legal y Referencias',
+        color: 'indigo',
+        items: [
+          {
+            role: 'NOTE',
+            action: 'BOE 2026-9940 (España)',
+            details:
+              'Resolución que publica la adenda a las Instrucciones Técnicas de OACI de aplicación obligatoria en España.'
+          },
+          {
+            role: 'NOTE',
+            action: 'Vigencia de la Adenda OACI',
+            details: 'Modificaciones al Doc 9284-AN/905 aplicables desde el 27 de marzo de 2026.'
+          },
+          {
+            role: 'NOTE',
+            action: 'Guía IATA para operadores',
+            details:
+              'Documento de orientación para gestionar el cambio antes de su formalización en la 68.ª edición del DGR (2027).'
+          }
+        ]
+      }
+    ]
+  },
+
   // =========================================================================
   // 3. PROCEDIMIENTOS DE EMERGENCIA Y ANORMALIDADES
   // =========================================================================

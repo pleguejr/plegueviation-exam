@@ -4,7 +4,15 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 
 ---
 
-## 🚀 Versión Actual: v3.3.3 (2026-09-14)
+## 🚀 Versión Actual: v3.3.4 (2026-09-14)
+
+### 🔋 Tarjeta SOP Power Banks 2026
+- Nueva tarjeta **Power Banks en Vuelo — Normativa 2026** (BOE / OACI / IATA): reglas de pasajeros, uso operativo ≤100 Wh, riesgos (fuga térmica) y marco legal (vigencia 27/03/2026).
+- Figura de referencia en `apps/web-pwa/public/sop-diagrams/powerbanks-normativa-2026-fig.jpg`.
+
+---
+
+## 🔎 Versión v3.3.3 (2026-09-14)
 
 ### 🔎 Buscador modo día + test desde resultados
 - **Modo día:** contraste del cuadro de búsqueda del dashboard (fondo claro, texto oscuro, borde verde).
