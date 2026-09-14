@@ -254,7 +254,33 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
                 </button>
 
                 {isExpanded && (
-                  <div className="px-5 sm:px-6 pb-6 pt-2 border-t border-slate-800/50 space-y-5 animate-fade-in">
+                  <div className="px-4 sm:px-6 pb-6 pt-2 border-t border-slate-800/50 space-y-5 animate-fade-in">
+                    {/* Hero: official SOPM figure (landscape) */}
+                    {card.diagramImage && (
+                      <figure className="procedure-sop-figure">
+                        <div className="procedure-sop-figure-scroll">
+                          <img
+                            src={card.diagramImage}
+                            alt={card.diagramCaption || card.title}
+                            className="procedure-sop-figure-img"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <figcaption className="procedure-sop-figure-caption">
+                          <span className="procedure-sop-figure-badge">Figura SOPM</span>
+                          {card.diagramCaption && <span>{card.diagramCaption}</span>}
+                          {card.diagramNote && (
+                            <span className="procedure-sop-figure-note">{card.diagramNote}</span>
+                          )}
+                          <span className="procedure-sop-figure-hint">Desliza horizontalmente si hace falta · vista landscape</span>
+                        </figcaption>
+                      </figure>
+                    )}
+
+                    {/* Embraer-style study schematic */}
+                    {diagramType && <ApproachDiagram type={diagramType} />}
+
                     <div className="procedure-summary rounded-2xl p-3.5 text-xs leading-relaxed">
                       <strong>Resumen táctico:</strong> {card.summary}
                     </div>
@@ -280,42 +306,21 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
                     )}
 
                     {card.goldenRules && card.goldenRules.length > 0 && (
-                      <div className="procedure-golden rounded-2xl p-4 space-y-2">
+                      <div className="procedure-golden rounded-2xl p-4 space-y-3">
                         <div className="flex items-center gap-1.5 text-xs font-black uppercase tracking-wide">
                           <AlertTriangle className="w-4 h-4" />
-                          Reglas de oro
+                          Reglas de oro · Hitos
                         </div>
-                        <ul className="space-y-1.5 text-xs list-disc list-inside">
-                          {card.goldenRules.map((rule) => (
-                            <li key={rule} className="leading-relaxed">
-                              {rule}
-                            </li>
+                        <div className="procedure-golden-grid">
+                          {card.goldenRules.map((rule, idx) => (
+                            <div key={rule} className="procedure-golden-item">
+                              <span className="procedure-golden-num">{idx + 1}</span>
+                              <p>{rule}</p>
+                            </div>
                           ))}
-                        </ul>
+                        </div>
                       </div>
                     )}
-
-                    {card.diagramImage && (
-                      <figure className="procedure-sop-figure">
-                        <img
-                          src={card.diagramImage}
-                          alt={card.diagramCaption || card.title}
-                          className="procedure-sop-figure-img"
-                          loading="lazy"
-                          decoding="async"
-                        />
-                        {(card.diagramCaption || card.diagramNote) && (
-                          <figcaption className="procedure-sop-figure-caption">
-                            {card.diagramCaption && <span>{card.diagramCaption}</span>}
-                            {card.diagramNote && (
-                              <span className="procedure-sop-figure-note">{card.diagramNote}</span>
-                            )}
-                          </figcaption>
-                        )}
-                      </figure>
-                    )}
-
-                    {diagramType && <ApproachDiagram type={diagramType} />}
 
                     {!card.diagramImage && card.diagramNote && !diagramType && (
                       <div className="procedure-diagram-note rounded-2xl p-3.5 text-xs font-mono flex items-center gap-2.5">
@@ -326,19 +331,25 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
 
                     {/* Infographic flow strip for key steps */}
                     {card.sections[0]?.items?.length > 0 && (
-                      <div className="procedure-flow overflow-x-auto pb-1">
-                        <div className="flex min-w-max gap-2">
-                          {card.sections[0].items.slice(0, 5).map((it, idx) => (
-                            <div key={`${card.id}-flow-${idx}`} className="procedure-flow-step">
-                              <span className="procedure-flow-num">{idx + 1}</span>
-                              <span className="procedure-flow-text">{it.callout || it.action}</span>
-                            </div>
-                          ))}
+                      <div className="procedure-flow-wrap">
+                        <div className="procedure-flow-label">
+                          <Sparkles className="w-3.5 h-3.5" />
+                          Secuencia visual
+                        </div>
+                        <div className="procedure-flow overflow-x-auto pb-1">
+                          <div className="flex min-w-max gap-2">
+                            {card.sections[0].items.slice(0, 6).map((it, idx) => (
+                              <div key={`${card.id}-flow-${idx}`} className="procedure-flow-step">
+                                <span className="procedure-flow-num">{idx + 1}</span>
+                                <span className="procedure-flow-text">{it.callout || it.action}</span>
+                              </div>
+                            ))}
+                          </div>
                         </div>
                       </div>
                     )}
 
-                    <div className="space-y-4">
+                    <div className="procedure-sections-grid">
                       {card.sections.map((section, sIdx) => (
                         <div key={sIdx} className={`${sectionTone(section.color)} rounded-2xl border p-4 sm:p-5 space-y-3`}>
                           <h3 className="text-xs sm:text-sm font-black flex items-center justify-between pb-2 border-b border-current/10">
@@ -348,7 +359,10 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
                           <div className="space-y-2.5">
                             {section.items.map((it, itIdx) => (
                               <div key={itIdx} className="procedure-item rounded-xl p-2.5 flex flex-col sm:flex-row sm:items-start gap-2.5 text-xs">
-                                <div className="shrink-0">{getRoleBadge(it.role)}</div>
+                                <div className="shrink-0 flex items-center gap-2">
+                                  <span className="procedure-step-idx">{itIdx + 1}</span>
+                                  {getRoleBadge(it.role)}
+                                </div>
                                 <div className="space-y-1 flex-1 min-w-0">
                                   <p className="font-medium leading-relaxed">{it.action}</p>
                                   {it.callout && (

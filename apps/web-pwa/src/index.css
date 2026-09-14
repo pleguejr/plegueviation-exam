@@ -1320,12 +1320,22 @@ table th {
   margin: 0;
   border-radius: 1rem;
   overflow: hidden;
-  border: 1px solid rgba(56,189,248,0.35);
+  border: 1px solid rgba(56,189,248,0.4);
   background: #0b1220;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+.procedure-sop-figure-scroll {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  background: #f8fafc;
 }
 .procedure-sop-figure-img {
   display: block;
-  width: 100%;
+  /* Landscape SOPM pages (~16:10). On narrow screens allow pan. */
+  width: max(100%, min(100vw - 2rem, 720px));
+  min-width: 560px;
   height: auto;
   background: #fff;
 }
@@ -1333,20 +1343,189 @@ table th {
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
-  padding: 0.65rem 0.85rem;
+  padding: 0.7rem 0.9rem;
   font-size: 10px;
   line-height: 1.35;
   color: #bae6fd;
   border-top: 1px solid rgba(56,189,248,0.25);
 }
-.procedure-sop-figure-caption > span:first-child {
+.procedure-sop-figure-badge {
+  align-self: flex-start;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+  background: rgba(14,165,233,0.25);
+  color: #7dd3fc;
+  border: 1px solid rgba(56,189,248,0.35);
+}
+.procedure-sop-figure-caption > span:nth-child(2) {
   font-weight: 800;
   letter-spacing: 0.02em;
-  text-transform: uppercase;
 }
 .procedure-sop-figure-note {
   font-family: ui-monospace, monospace;
   color: #94a3b8;
+}
+.procedure-sop-figure-hint {
+  color: #64748b;
+  font-size: 9px;
+}
+
+/* Embraer-like study schematics */
+.procedure-diagram-emb {
+  border-radius: 1rem;
+  border: 1px solid rgba(148,163,184,0.35);
+  background: linear-gradient(180deg, rgba(15,23,42,0.92), rgba(2,6,23,0.96));
+  padding: 0.85rem;
+  color: #e2e8f0;
+}
+.procedure-diagram-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: flex-start;
+  margin-bottom: 0.65rem;
+}
+.procedure-diagram-kicker {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #94a3b8;
+  margin: 0;
+}
+.procedure-diagram-title {
+  margin: 0.15rem 0 0;
+  font-size: 13px;
+  font-weight: 900;
+  color: #f8fafc;
+}
+.procedure-diagram-ref {
+  font-family: ui-monospace, monospace;
+  font-size: 10px;
+  color: #7dd3fc;
+  white-space: nowrap;
+}
+.procedure-diagram-canvas {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 0.75rem;
+  background: #f8fafc;
+}
+.procedure-diagram-svg {
+  display: block;
+  width: max(100%, 560px);
+  height: auto;
+}
+.procedure-diagram-chips {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.4rem;
+  margin-top: 0.65rem;
+}
+@media (min-width: 640px) {
+  .procedure-diagram-chips {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+.procedure-diagram-chip {
+  border-radius: 0.7rem;
+  padding: 0.45rem 0.55rem;
+  background: rgba(15,23,42,0.65);
+  border: 1px solid rgba(148,163,184,0.25);
+}
+.procedure-diagram-chip span {
+  display: block;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #7dd3fc;
+}
+.procedure-diagram-chip strong {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 10px;
+  font-family: ui-monospace, monospace;
+  font-weight: 700;
+  color: #e2e8f0;
+}
+
+.procedure-golden-grid {
+  display: grid;
+  gap: 0.5rem;
+}
+@media (min-width: 720px) {
+  .procedure-golden-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.procedure-golden-item {
+  display: flex;
+  gap: 0.55rem;
+  align-items: flex-start;
+  padding: 0.55rem 0.65rem;
+  border-radius: 0.75rem;
+  background: rgba(0,0,0,0.18);
+  border: 1px solid rgba(245,158,11,0.25);
+}
+.procedure-golden-num {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 900;
+  background: #f59e0b;
+  color: #111827;
+}
+.procedure-golden-item p {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.procedure-flow-wrap {
+  margin: 0;
+}
+.procedure-flow-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.45rem;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #7dd3fc;
+}
+.procedure-sections-grid {
+  display: grid;
+  gap: 1rem;
+}
+@media (min-width: 900px) {
+  .procedure-sections-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.procedure-step-idx {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 999px;
+  font-size: 9px;
+  font-weight: 900;
+  background: rgba(14,165,233,0.25);
+  color: #7dd3fc;
+  border: 1px solid rgba(56,189,248,0.35);
 }
 .procedure-flow-step {
   display: flex;
@@ -1476,14 +1655,43 @@ table th {
 .theme-light .procedure-sop-figure {
   background: #ffffff;
   border-color: #7dd3fc;
+  box-shadow: 0 8px 24px rgba(14,165,233,0.12);
 }
 .theme-light .procedure-sop-figure-caption {
   color: #0c4a6e;
   border-top-color: #bae6fd;
   background: #f0f9ff;
 }
-.theme-light .procedure-sop-figure-note {
+.theme-light .procedure-sop-figure-note,
+.theme-light .procedure-sop-figure-hint {
   color: #475569;
+}
+.theme-light .procedure-sop-figure-badge {
+  background: #e0f2fe;
+  color: #0369a1;
+  border-color: #7dd3fc;
+}
+.theme-light .procedure-diagram-emb {
+  background: linear-gradient(180deg, #ffffff, #f8fafc);
+  border-color: #cbd5e1;
+  color: #0f172a;
+}
+.theme-light .procedure-diagram-title { color: #0f172a; }
+.theme-light .procedure-diagram-kicker { color: #64748b; }
+.theme-light .procedure-diagram-chip {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+}
+.theme-light .procedure-diagram-chip strong { color: #0f172a; }
+.theme-light .procedure-golden-item {
+  background: #fffbeb;
+  border-color: #fcd34d;
+}
+.theme-light .procedure-flow-label { color: #0369a1; }
+.theme-light .procedure-step-idx {
+  background: #e0f2fe;
+  color: #0369a1;
+  border-color: #7dd3fc;
 }
 .theme-light .procedure-flow-step {
   background: linear-gradient(135deg, #e0f2fe, #ecfdf5);
