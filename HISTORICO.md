@@ -4,9 +4,19 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 
 ---
 
-## 🚀 Versión Actual: v3.2.1 (2026-09-14)
+## 🚀 Versión Actual: v3.2.2 (2026-09-14)
 
-### ☁️ Sync Cloud Persistente (Upstash / Vercel KV)
+### 🔐 Cierre de seguridad y operación
+- **Eliminado `user_backup_070707.json` del CDN público** (ya no se sirve en GitHub Pages). El bootstrap server-side sigue disponible solo desde `banks/` cuando no hay KV.
+- **Sync Modal** muestra el backend real (`kv` persistente vs `memory` temporal).
+- **CLI `sync_reviews.py`:** SSL verificado + fetch vía POST (sin PIN en URL).
+- Guía operativa: [`reference/OPERATIONS.md`](reference/OPERATIONS.md).
+
+---
+
+## ☁️ Versión v3.2.1 (2026-09-14)
+
+### Sync Cloud Persistente (Upstash / Vercel KV)
 - **Nuevo módulo `shared/api/syncStore.js`:** almacenamiento durable en Redis vía REST API.
 - **Variables soportadas:** `UPSTASH_REDIS_REST_*` o `KV_REST_API_*` (Vercel KV nativo).
 - **Fallback automático** a memoria si no hay credenciales (con log de error).

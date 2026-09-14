@@ -51,9 +51,7 @@ function isRateLimited(pin) {
 
 function getBootstrapFallback() {
   const possiblePaths = [
-    path.join(process.cwd(), 'banks', 'user_backup_070707.json'),
-    path.join(process.cwd(), 'apps', 'web-pwa', 'public', 'banks', 'user_backup_070707.json'),
-    path.join(process.cwd(), 'public', 'banks', 'user_backup_070707.json')
+    path.join(process.cwd(), 'banks', 'user_backup_070707.json')
   ];
   for (const p of possiblePaths) {
     try {

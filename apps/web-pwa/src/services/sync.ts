@@ -5,7 +5,8 @@ import { QuestionStats, ExamSession, SyncPayload } from '../types';
 const SYNC_PIN_STORAGE_KEY = 'plegue_sync_pin';
 const LAST_SYNC_STORAGE_KEY = 'plegue_last_sync_timestamp';
 const DEVICE_ID_STORAGE_KEY = 'plegue_device_id';
-const SYNC_VERSION = '3.1.0';
+const LAST_STORAGE_BACKEND_KEY = 'plegue_last_storage_backend';
+const SYNC_VERSION = '3.2.2';
 
 const PRIMARY_ENDPOINT = '/api/sync';
 const VERCEL_FALLBACK_ENDPOINT = 'https://plegueviation-exam.vercel.app/api/sync';
@@ -36,6 +37,14 @@ export function getLastSyncTimestamp(): number | null {
 
 export function setLastSyncTimestamp(ts: number): void {
   localStorage.setItem(LAST_SYNC_STORAGE_KEY, ts.toString());
+}
+
+export function getLastStorageBackend(): string | null {
+  return localStorage.getItem(LAST_STORAGE_BACKEND_KEY);
+}
+
+export function setLastStorageBackend(backend: string): void {
+  localStorage.setItem(LAST_STORAGE_BACKEND_KEY, backend);
 }
 
 export function getDeviceId(): string {
@@ -226,6 +235,8 @@ async function performCloudSync(pin?: string): Promise<{
   success: boolean;
   message: string;
   syncedAt?: number;
+  storageBackend?: string;
+  persisted?: boolean;
 }> {
   const activePin = (pin || getStoredSyncPin())?.trim().toLowerCase();
   if (!activePin) {
@@ -260,6 +271,8 @@ async function performCloudSync(pin?: string): Promise<{
   const targetEndpoints = successfulEndpoint ? [successfulEndpoint] : endpoints;
   let uploadSuccess = false;
   let syncedAt = finalPayload.syncedAt;
+  let storageBackend = 'unknown';
+  let persisted = false;
 
   for (const ep of targetEndpoints) {
     try {
@@ -278,6 +291,8 @@ async function performCloudSync(pin?: string): Promise<{
         if (json?.success) {
           uploadSuccess = true;
           syncedAt = json.syncedAt || syncedAt;
+          storageBackend = json.storageBackend || storageBackend;
+          persisted = Boolean(json.persisted);
           break;
         }
       }
@@ -288,10 +303,19 @@ async function performCloudSync(pin?: string): Promise<{
 
   if (uploadSuccess) {
     setLastSyncTimestamp(syncedAt);
+    setLastStorageBackend(storageBackend);
+    const durableHint =
+      storageBackend === 'kv' && persisted
+        ? ' Almacenamiento cloud persistente (KV) activo.'
+        : storageBackend === 'memory'
+          ? ' Aviso: el servidor está en modo memoria (configura Upstash/KV en Vercel).'
+          : '';
     return {
       success: true,
-      message: 'Sincronización completada exitosamente.',
-      syncedAt
+      message: `Sincronización completada exitosamente.${durableHint}`,
+      syncedAt,
+      storageBackend,
+      persisted
     };
   }
 
@@ -305,6 +329,8 @@ export async function syncWithCloud(pin?: string): Promise<{
   success: boolean;
   message: string;
   syncedAt?: number;
+  storageBackend?: string;
+  persisted?: boolean;
 }> {
   if (syncInFlight) {
     return syncInFlight;

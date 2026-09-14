@@ -13,4 +13,5 @@ Sistema de entrenamiento y simulador operacional para:
 Acceso: [https://pleguejr.github.io/plegueviation-exam/](https://pleguejr.github.io/plegueviation-exam/)
 
 ### ☁️ Sync Multi-Dispositivo (iPhone / iPad / PC)
-Configuración del almacenamiento cloud persistente: [`reference/SYNC_SETUP.md`](reference/SYNC_SETUP.md)
+- Configuración KV: [`reference/SYNC_SETUP.md`](reference/SYNC_SETUP.md)
+- Operación diaria / rollback: [`reference/OPERATIONS.md`](reference/OPERATIONS.md)

@@ -18,27 +18,34 @@ def sync_cloud_reviews(pin='070707'):
     cloud_reviews = []
     
     ctx = ssl.create_default_context()
-    ctx.check_hostname = False
-    ctx.verify_mode = ssl.CERT_NONE
     
     for p in pins_to_check:
-        url = f"https://plegueviation-exam.vercel.app/api/sync?pin={p}"
+        url = "https://plegueviation-exam.vercel.app/api/sync"
         print(f"[*] Consultando solicitudes de revision en la nube (PIN: {p})...")
         try:
+            body = json.dumps({
+                "action": "fetch",
+                "pin": p,
+                "bootstrap": False
+            }).encode("utf-8")
             req = urllib.request.Request(
-                url, 
+                url,
+                data=body,
+                method="POST",
                 headers={
-                    'User-Agent': 'Plegueviation-CLI/2.0',
-                    'Accept': 'application/json'
-                }
+                    "User-Agent": "Plegueviation-CLI/3.2",
+                    "Accept": "application/json",
+                    "Content-Type": "application/json",
+                },
             )
-            with urllib.request.urlopen(req, context=ctx, timeout=8) as response:
+            with urllib.request.urlopen(req, context=ctx, timeout=12) as response:
                 if response.status == 200:
-                    body = json.loads(response.read().decode('utf-8'))
-                    if body.get('found') and body.get('data'):
-                        data = body['data']
+                    payload = json.loads(response.read().decode('utf-8'))
+                    if payload.get('found') and payload.get('data'):
+                        data = payload['data']
                         if 'reviewRequests' in data and isinstance(data['reviewRequests'], list):
                             cloud_reviews.extend(data['reviewRequests'])
+                        print(f"    backend={payload.get('storageBackend', 'unknown')}")
         except Exception as e:
             print(f"[AVISO] No se pudo conectar con la nube para PIN {p} ({e}). Usando base local.")
         
