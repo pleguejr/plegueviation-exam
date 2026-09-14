@@ -32,16 +32,17 @@ function storageKey(pin) {
   return `${KEY_PREFIX}${pin}`;
 }
 
-async function kvRequest(path, init = {}) {
+async function kvCommand(command) {
   const cfg = getKvConfig();
   if (!cfg) return null;
 
-  const res = await fetch(`${cfg.url}${path}`, {
-    ...init,
+  const res = await fetch(cfg.url, {
+    method: 'POST',
     headers: {
       Authorization: `Bearer ${cfg.token}`,
-      ...(init.headers || {})
-    }
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(command)
   });
 
   if (!res.ok) {
@@ -53,22 +54,17 @@ async function kvRequest(path, init = {}) {
 }
 
 async function kvGet(pin) {
-  const json = await kvRequest(`/get/${encodeURIComponent(storageKey(pin))}`);
+  const json = await kvCommand(['GET', storageKey(pin)]);
   if (!json?.result) return null;
   try {
-    return JSON.parse(json.result);
+    return typeof json.result === 'string' ? JSON.parse(json.result) : json.result;
   } catch {
     return null;
   }
 }
 
 async function kvSet(pin, record) {
-  const body = JSON.stringify(record);
-  await kvRequest(`/set/${encodeURIComponent(storageKey(pin))}`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(body)
-  });
+  await kvCommand(['SET', storageKey(pin), JSON.stringify(record)]);
 }
 
 export async function loadSyncRecord(pin) {
