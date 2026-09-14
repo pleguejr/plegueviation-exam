@@ -34,15 +34,11 @@ describe('syncStore', () => {
     process.env.UPSTASH_REDIS_REST_URL = 'https://kv.example.com';
     process.env.UPSTASH_REDIS_REST_TOKEN = 'test-token';
 
-    const fetchMock = vi.fn(async (url, init) => {
-      if (url.endsWith('/get/plegue%3Async%3A070707')) {
-        return { ok: true, json: async () => ({ result: null }) };
-      }
-      if (url.includes('/set/plegue%3Async%3A070707')) {
-        expect(init.method).toBe('POST');
-        return { ok: true, json: async () => ({ result: 'OK' }) };
-      }
-      throw new Error(`Unexpected fetch: ${url}`);
+    const fetchMock = vi.fn(async (_url, init) => {
+      const body = JSON.parse(init.body);
+      expect(body[0]).toBe('SET');
+      expect(body[1]).toContain('plegue:sync:');
+      return { ok: true, json: async () => ({ result: 'OK' }) };
     });
     vi.stubGlobal('fetch', fetchMock);
 

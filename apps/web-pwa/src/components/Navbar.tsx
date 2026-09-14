@@ -53,8 +53,11 @@ export const Navbar: React.FC<NavbarProps> = ({
               <span>Plegueviation</span>
               <span className="border-2 border-white px-1.5 py-0.2 rounded-md text-xs font-black bg-[#008f45] shadow-sm">Exam</span>
             </span>
-            <span className="text-[10px] font-mono font-bold text-emerald-300 border-l border-emerald-400/40 pl-2">
+            <span className="text-[10px] font-mono font-bold text-emerald-300 border-l border-emerald-400/40 pl-2 hidden sm:inline">
               Binter Ops
+            </span>
+            <span className="text-[10px] font-mono font-bold text-white/80 bg-black/25 border border-white/20 px-1.5 py-0.5 rounded">
+              v{__APP_VERSION__}
             </span>
           </div>
         </div>

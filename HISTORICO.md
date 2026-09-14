@@ -4,7 +4,22 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 
 ---
 
-## 🚀 Versión Actual: v3.2.2 (2026-09-14)
+## 🚀 Versión Actual: v3.3.1 (2026-09-14)
+
+### 📊 Cabecera, Tendencias y Tarjetas SOP Visuales
+- **Versión en navbar:** `vX.Y.Z` inyectada desde `package.json` vía Vite.
+- **Tendencia unificada:** gráfica de los últimos **25** resultados incluyendo **tests y flashcards**.
+- **SOP modo día:** clases semánticas (`.procedure-*`) con contraste legible en tema claro.
+- **Figuras SOPM (raster landscape):** recortes oficiales 16:10 en `apps/web-pwa/public/sop-diagrams/` (Visual, Circling, NPA/RNAV, ILS, OEI ILS, OEI Visual, OEI Circling, OEI NPA, No Slat/Flap) con visor horizontal (scroll) para evitar cortes verticales.
+- **Tarjetas nuevas (sin sustituir las actuales):** ILS precisión, ILS OEI, Visual OEI, Circling OEI, NPA OEI, No Slat/Flap Landing.
+- **Esquemas SVG estilo Embraer:** cinta isométrica + callouts + chips para todas las aproximaciones (complemento de estudio a la figura SOPM).
+- **Infografía SOP:** figura hero, hitos numerados, secuencia visual y secciones en rejilla; contenido textual intacto.
+
+> Nota: el PDF SOPM no está en el repositorio (`manuales/` gitignored). Las figuras raster se extraen de capturas del manual del usuario para estudio personal.
+
+---
+
+## 🔐 Versión v3.2.2 (2026-09-14)
 
 ### 🔐 Cierre de seguridad y operación
 - **Eliminado `user_backup_070707.json` del CDN público** (ya no se sirve en GitHub Pages). El bootstrap server-side sigue disponible solo desde `banks/` cuando no hay KV.

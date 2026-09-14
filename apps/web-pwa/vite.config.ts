@@ -33,6 +33,9 @@ export default defineConfig({
       '@plegue/shared-sync': path.resolve(__dirname, '../../shared/sync/syncMerge.js')
     }
   },
+  define: {
+    __APP_VERSION__: JSON.stringify(appVersion)
+  },
   server: {
     port: 3000,
     host: true
