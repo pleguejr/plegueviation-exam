@@ -12,6 +12,7 @@ import { FlashcardScreen } from './components/FlashcardScreen';
 import { ProcedureCardsScreen } from './components/procedures/ProcedureCardsScreen';
 import { OperationalTablesScreen } from './components/tables/OperationalTablesScreen';
 import { Question, BankManifest, QuestionStats, ExamConfig, ExamSession, ExamMode, ExamSelectionStrategy } from './types';
+import { evaluateExam } from '@plegue/core-engine';
 import { loadAllQuestions, loadManifest, generateExamQuestions, randomizeQuestionOptions } from './services/questionsService';
 import { getAllStatsMap, saveExamSession, recordAnswerStat, exportFullBackup, restoreFullBackup, db } from './services/db';
 import { getStoredSyncPin, syncWithCloud } from './services/sync';
@@ -211,22 +212,12 @@ export function App() {
   const handleFinishExam = async () => {
     if (!currentSession) return;
 
-    const total = currentSession.questions.length;
-    let correct = 0;
-    let answered = 0;
-    const passThreshold = currentSession.config.passMarkPercentage || 75;
-
-    for (const q of currentSession.questions) {
-      const ans = currentSession.answers[q.id];
-      if (ans && ans.selectedOptionId !== null) {
-        answered++;
-        const correctOpt = q.options.find((o) => o.is_correct);
-        const isCorrect = correctOpt?.id === ans.selectedOptionId;
-        ans.isCorrect = isCorrect;
-
-        if (isCorrect) correct++;
-
-        if (currentSession.config.mode === 'simulation') {
+    if (currentSession.config.mode === 'simulation') {
+      for (const q of currentSession.questions) {
+        const ans = currentSession.answers[q.id];
+        if (ans?.selectedOptionId) {
+          const correctOpt = q.options.find((o) => o.is_correct);
+          const isCorrect = correctOpt?.id === ans.selectedOptionId;
           await recordAnswerStat(
             q.id,
             ans.selectedOptionId,
@@ -238,20 +229,18 @@ export function App() {
       }
     }
 
-    const pct = total > 0 ? Math.round((correct / total) * 1000) / 10 : 0;
-    const passed = pct >= passThreshold;
-
+    const evaluation = evaluateExam(currentSession);
     const completedSession: ExamSession = {
       ...currentSession,
       endTime: Date.now(),
       isCompleted: true,
       score: {
-        totalQuestions: total,
-        answeredQuestions: answered,
-        correctCount: correct,
-        incorrectCount: total - correct,
-        percentage: pct,
-        passed
+        totalQuestions: evaluation.totalQuestions,
+        answeredQuestions: evaluation.answeredQuestions,
+        correctCount: evaluation.correctCount,
+        incorrectCount: evaluation.incorrectCount,
+        percentage: evaluation.percentage,
+        passed: evaluation.passed
       }
     };
 

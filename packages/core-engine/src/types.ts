@@ -70,6 +70,9 @@ export interface QuestionStats {
   lastResult: boolean | null;
   isFlagged: boolean;
   history: AnswerHistoryEntry[];
+  flashcardViews?: number;
+  flashcardLastRating?: 'hard' | 'medium' | 'easy' | null;
+  flashcardLastViewedAt?: number | null;
 }
 
 export interface ExamSessionAnswer {
@@ -81,6 +84,7 @@ export interface ExamSessionAnswer {
 }
 
 export interface ExamSession {
+  id?: string;
   sessionId: string;
   config: ExamConfig;
   startTime: number;
@@ -89,7 +93,7 @@ export interface ExamSession {
   questions: Question[];
   answers: Record<string, ExamSessionAnswer>;
   isCompleted: boolean;
-  score: {
+  score?: {
     totalQuestions: number;
     answeredQuestions: number;
     correctCount: number;

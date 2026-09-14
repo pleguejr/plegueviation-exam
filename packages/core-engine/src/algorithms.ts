@@ -78,20 +78,22 @@ export function selectQuestions(
     }
 
     case 'most_failed': {
-      // Priorizar preguntas con mayor tasa de error o falladas recientemente
-      const scored = pool.map((q) => ({
-        question: q,
-        score: calculateFailureScore(statsMap[q.id]),
-        incorrectCount: statsMap[q.id]?.timesIncorrect || 0
-      }));
-
-      // Ordenar descendentemente por score de fallo y número de fallos
-      scored.sort((a, b) => {
-        if (b.score !== a.score) return b.score - a.score;
-        return b.incorrectCount - a.incorrectCount;
+      const scored = pool.map((q) => {
+        const stats = statsMap[q.id];
+        let score = 0;
+        if (stats && stats.timesAnswered > 0) {
+          const failRate = stats.timesIncorrect / stats.timesAnswered;
+          const lastFailed = stats.lastResult === false ? 0.35 : 0;
+          score = failRate + lastFailed + stats.timesIncorrect * 0.1;
+        }
+        return {
+          question: q,
+          score,
+          incorrectCount: stats?.timesIncorrect || 0
+        };
       });
 
-      // Tomar los más fallados mezclando ligeramente para variedad
+      scored.sort((a, b) => b.score - a.score || b.incorrectCount - a.incorrectCount);
       selected = scored.map((s) => s.question);
       break;
     }

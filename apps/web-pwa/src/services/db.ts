@@ -1,3 +1,4 @@
+import { updateQuestionStats } from '@plegue/core-engine';
 import Dexie, { Table } from 'dexie';
 import { QuestionStats, ExamSession, Question, DeletedQuestion, ReviewRequest } from '../types';
 
@@ -77,26 +78,14 @@ export async function recordAnswerStat(
   examMode: 'practice' | 'simulation' | 'smart_review'
 ): Promise<QuestionStats> {
   const current = await getQuestionStat(questionId);
-  const now = Date.now();
-  
-  const updated: QuestionStats = {
-    ...current,
-    timesAnswered: current.timesAnswered + 1,
-    timesCorrect: current.timesCorrect + (isCorrect ? 1 : 0),
-    timesIncorrect: current.timesIncorrect + (isCorrect ? 0 : 1),
-    lastAnsweredAt: now,
-    lastResult: isCorrect,
-    history: [
-      ...current.history,
-      {
-        timestamp: now,
-        selectedOptionId,
-        isCorrect,
-        timeSpentSeconds,
-        examMode
-      }
-    ]
-  };
+  const updated = updateQuestionStats(
+    current,
+    questionId,
+    selectedOptionId,
+    isCorrect,
+    timeSpentSeconds,
+    examMode
+  ) as QuestionStats;
 
   try {
     await db.questionStats.put(updated);

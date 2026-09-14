@@ -1,3 +1,4 @@
+import path from 'path';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
@@ -5,6 +6,11 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   base: './', // Permite que funcione tanto en localhost como en GitHub Pages en cualquier subdirectorio
+  resolve: {
+    alias: {
+      '@plegue/core-engine': path.resolve(__dirname, '../../packages/core-engine/src/index.ts')
+    }
+  },
   server: {
     port: 3000,
     host: true
