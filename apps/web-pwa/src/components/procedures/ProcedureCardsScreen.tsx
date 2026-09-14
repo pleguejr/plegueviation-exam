@@ -12,11 +12,12 @@ import {
   Sparkles
 } from 'lucide-react';
 import { PROCEDURE_CARDS, ProcedureCard, ProcedureSection, ProcedureItem } from '../../data/procedureCardsData';
-import { ApproachDiagram, diagramTypeForCard } from './ApproachDiagrams';
 
 interface ProcedureCardsScreenProps {
   onBackToDashboard: () => void;
 }
+
+const STEP_TONES = ['sky', 'teal', 'amber', 'indigo', 'rose', 'emerald'] as const;
 
 export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBackToDashboard }) => {
   const [selectedCategory, setSelectedCategory] = useState<'all' | 'briefings' | 'normal' | 'emergency'>('all');
@@ -119,146 +120,134 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
   const sectionTone = (color?: ProcedureSection['color']) =>
     `procedure-section procedure-section-${color || 'sky'}`;
 
-  const tabClass = (active: boolean, tone: string) =>
-    `procedure-tab ${active ? `procedure-tab-active procedure-tab-${tone}` : ''}`;
+  const diagramStepsFor = (card: ProcedureCard) => {
+    const fromSection = card.sections[0]?.items?.slice(0, 6) || [];
+    if (fromSection.length > 0) {
+      return fromSection.map((it) => ({
+        label: (it.callout || it.action).replace(/:$/, ''),
+        detail: it.details
+      }));
+    }
+    return (card.goldenRules || []).slice(0, 5).map((rule) => ({
+      label: rule,
+      detail: undefined as string | undefined
+    }));
+  };
 
   return (
-    <div className="procedure-screen max-w-5xl mx-auto space-y-6 pb-24 font-sans animate-fade-in">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-sky-500/20">
-        <button
-          onClick={onBackToDashboard}
-          className="flex items-center gap-2 text-sky-400 hover:text-sky-300 font-bold text-sm transition-colors group self-start"
-        >
-          <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-          <span>Volver al Centro de Control</span>
+    <div className="max-w-5xl mx-auto space-y-5 pb-24 font-sans">
+      <div className="flex items-center justify-between gap-3">
+        <button type="button" onClick={onBackToDashboard} className="procedure-ghost-btn">
+          <ArrowLeft className="w-4 h-4" />
+          Volver al Centro de Control
         </button>
         <div className="flex items-center gap-2">
-          <button onClick={expandAll} className="procedure-ghost-btn">
+          <button type="button" onClick={expandAll} className="procedure-ghost-btn text-[11px]">
             Expandir
           </button>
-          <button onClick={collapseAll} className="procedure-ghost-btn">
+          <button type="button" onClick={collapseAll} className="procedure-ghost-btn text-[11px]">
             Contraer
           </button>
         </div>
       </div>
 
-      <div className="procedure-hero rounded-3xl p-6 sm:p-8 text-white shadow-xl space-y-3 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_20%_20%,#34d399,transparent_45%),radial-gradient(circle_at_80%_0%,#38bdf8,transparent_40%)]" />
-        <div className="relative flex items-center gap-3">
-          <div className="w-12 h-12 rounded-2xl bg-white/15 border border-white/25 flex items-center justify-center text-emerald-200">
-            <Layers className="w-6 h-6" />
+      <div className="procedure-hero rounded-3xl p-5 sm:p-6 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-30 pointer-events-none procedure-hero-glow" />
+        <div className="relative z-10 space-y-3">
+          <div className="flex items-center gap-2 text-emerald-300 text-xs font-black uppercase tracking-widest">
+            <Layers className="w-4 h-4" />
+            SOPM · MOB · AOM · QRH
           </div>
-          <div>
-            <span className="text-[11px] font-mono font-bold tracking-widest uppercase text-emerald-200 block">
-              SOPM · MOB · AOM · QRH
-            </span>
-            <h1 className="text-2xl sm:text-3xl font-black tracking-tight">Tarjetas SOP · Infografía Operacional</h1>
-          </div>
+          <h1 className="text-2xl sm:text-3xl font-black tracking-tight text-white">
+            Tarjetas SOP · Infografía Operacional
+          </h1>
+          <p className="text-sm text-slate-300 max-w-2xl leading-relaxed">
+            Flujos visuales para memorizar briefings, aproximaciones E195-E2 y emergencias. Figuras oficiales SOPM
+            con hitos resaltados; consulta el PDF a bordo como referencia definitiva.
+          </p>
         </div>
-        <p className="relative text-xs sm:text-sm text-sky-50 max-w-3xl leading-relaxed">
-          Flujos visuales para memorizar briefings, aproximaciones E195-E2 y emergencias. Diagramas de circuito/perfil
-          basados en MOB 2.0.11 y SOPM Sec 2 (esquemas de estudio; consulta el PDF oficial a bordo).
-        </p>
       </div>
 
-      <div className="space-y-4">
-        <div className="flex flex-wrap items-center gap-2 border-b border-slate-800 pb-3">
+      <div className="flex flex-col sm:flex-row gap-3 sm:items-center">
+        <div className="flex flex-wrap gap-2">
           {(
             [
-              ['all', 'Todos', counts.all, 'sky'],
-              ['briefings', 'Briefings', counts.briefings, 'sky'],
-              ['normal', 'Normales', counts.normal, 'emerald'],
-              ['emergency', 'Emergencias', counts.emergency, 'rose']
+              ['all', 'Todos', counts.all],
+              ['briefings', 'Briefings', counts.briefings],
+              ['normal', 'Normales', counts.normal],
+              ['emergency', 'Emergencias', counts.emergency]
             ] as const
-          ).map(([id, label, count, tone]) => (
+          ).map(([id, label, count]) => (
             <button
               key={id}
+              type="button"
               onClick={() => setSelectedCategory(id)}
-              className={tabClass(selectedCategory === id, tone)}
+              className={`procedure-tab ${selectedCategory === id ? 'procedure-tab-active' : ''}`}
             >
-              <span>{label}</span>
+              {label}
               <span className="procedure-tab-count">{count}</span>
             </button>
           ))}
         </div>
-
-        <div className="relative">
-          <Search className="w-4 h-4 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2" />
+        <div className="relative flex-1 min-w-[200px]">
+          <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
           <input
-            type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Buscar: TELSI, MEANA, visual, circling, callout, flap…"
-            className="procedure-search w-full rounded-2xl pl-11 pr-4 py-3 text-xs sm:text-sm focus:outline-none"
+            placeholder="Buscar: TELSI, MEANA, visual, circling, callout, flap..."
+            className="procedure-search w-full pl-9"
           />
         </div>
       </div>
 
-      <div className="space-y-5">
-        {filteredCards.length === 0 ? (
-          <div className="procedure-card text-center py-16 rounded-3xl space-y-3">
-            <Search className="w-10 h-10 text-slate-500 mx-auto" />
-            <p className="text-base font-bold">No se encontraron procedimientos</p>
-          </div>
-        ) : (
-          filteredCards.map((card) => {
-            const isExpanded = !!expandedCardIds[card.id];
-            const catBadge = getCategoryBadge(card.category);
-            const diagramType = diagramTypeForCard(card.id);
-            const accent =
-              card.category === 'emergency'
-                ? 'procedure-card-accent-rose'
-                : card.category === 'normal'
-                  ? 'procedure-card-accent-emerald'
-                  : 'procedure-card-accent-sky';
+      <div className="space-y-4">
+        {filteredCards.map((card) => {
+          const isExpanded = !!expandedCardIds[card.id];
+          const badge = getCategoryBadge(card.category);
+          const diagramSteps = diagramStepsFor(card);
 
-            return (
-              <article key={card.id} className={`procedure-card rounded-3xl shadow-xl overflow-hidden ${accent}`}>
-                <button
-                  type="button"
-                  onClick={() => toggleExpand(card.id)}
-                  className="w-full text-left p-5 sm:p-6 flex items-start justify-between gap-4 group"
-                >
-                  <div className="space-y-3 flex-1 min-w-0">
-                    <div className="flex flex-wrap items-center gap-2">
-                      <span className={`procedure-chip ${catBadge.className}`}>
-                        {catBadge.icon}
-                        {catBadge.label}
+          return (
+            <article key={card.id} className={`procedure-card procedure-card-${card.category}`}>
+              <button type="button" onClick={() => toggleExpand(card.id)} className="w-full text-left p-5 sm:p-6 flex gap-4">
+                <div className="flex-1 min-w-0 space-y-2.5">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className={`procedure-badge ${badge.className}`}>
+                      {badge.icon}
+                      {badge.label}
+                    </span>
+                    <span className="procedure-meta">{card.airplane}</span>
+                    <span className="procedure-meta flex items-center gap-1">
+                      <BookOpen className="w-3 h-3" />
+                      {card.manualRef}
+                    </span>
+                  </div>
+                  <h2 className="text-lg sm:text-xl font-black text-sky-100 leading-snug">{card.title}</h2>
+                  <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">{card.subtitle}</p>
+                  <div className="flex flex-wrap gap-1.5 pt-1">
+                    {card.badges.map((b) => (
+                      <span key={b} className="procedure-chip">
+                        #{b}
                       </span>
-                      <span className="procedure-meta">{card.airplane}</span>
-                      <span className="procedure-meta procedure-meta-ref">📖 {card.manualRef}</span>
-                    </div>
-                    <div>
-                      <h2 className="text-lg sm:text-xl font-black group-hover:text-sky-500 transition-colors">
-                        {card.title}
-                      </h2>
-                      <p className="text-xs procedure-subtitle font-medium mt-0.5">{card.subtitle}</p>
-                    </div>
-                    <div className="flex flex-wrap gap-1.5">
-                      {card.badges.map((b) => (
-                        <span key={b} className="procedure-tag">
-                          #{b}
-                        </span>
-                      ))}
-                    </div>
-                    {!isExpanded && card.goldenRules?.[0] && (
-                      <p className="text-[11px] procedure-preview flex items-start gap-1.5 pt-1">
-                        <Sparkles className="w-3.5 h-3.5 shrink-0 mt-0.5 text-amber-500" />
-                        <span>{card.goldenRules[0]}</span>
-                      </p>
-                    )}
+                    ))}
                   </div>
-                  <div className="procedure-expand-btn shrink-0 mt-1">
-                    {isExpanded ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
-                  </div>
-                </button>
+                  {!isExpanded && card.goldenRules?.[0] && (
+                    <p className="text-[11px] text-amber-200/90 flex items-start gap-1.5 pt-1">
+                      <Sparkles className="w-3.5 h-3.5 shrink-0 mt-0.5" />
+                      <span className="line-clamp-2">{card.goldenRules[0]}</span>
+                    </p>
+                  )}
+                </div>
+                <div className="procedure-expand-btn shrink-0 mt-1">
+                  {isExpanded ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
+                </div>
+              </button>
 
-                {isExpanded && (
-                  <div className="px-4 sm:px-6 pb-6 pt-2 border-t border-slate-800/50 space-y-5 animate-fade-in">
-                    {/* Hero: official SOPM figure (landscape) */}
-                    {card.diagramImage && (
-                      <figure className="procedure-sop-figure">
-                        <div className="procedure-sop-figure-scroll">
+              {isExpanded && (
+                <div className="px-4 sm:px-6 pb-6 pt-2 border-t border-slate-800/50 space-y-5 animate-fade-in">
+                  {card.diagramImage && (
+                    <figure className="procedure-sop-figure">
+                      <div className="procedure-sop-figure-scroll">
+                        <div className="procedure-sop-figure-frame">
                           <img
                             src={card.diagramImage}
                             alt={card.diagramCaption || card.title}
@@ -266,126 +255,147 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
                             loading="lazy"
                             decoding="async"
                           />
-                        </div>
-                        <figcaption className="procedure-sop-figure-caption">
-                          <span className="procedure-sop-figure-badge">Figura SOPM</span>
-                          {card.diagramCaption && <span>{card.diagramCaption}</span>}
-                          {card.diagramNote && (
-                            <span className="procedure-sop-figure-note">{card.diagramNote}</span>
+                          {diagramSteps.length > 0 && (
+                            <div className="procedure-sop-step-overlay" aria-label="Hitos del procedimiento">
+                              {diagramSteps.map((step, idx) => (
+                                <div
+                                  key={`${card.id}-step-${idx}`}
+                                  className={`procedure-sop-step-box procedure-sop-step-${STEP_TONES[idx % STEP_TONES.length]}`}
+                                >
+                                  <span className="procedure-sop-step-num">{idx + 1}</span>
+                                  <div className="min-w-0">
+                                    <p className="procedure-sop-step-label">{step.label}</p>
+                                    {step.detail && <p className="procedure-sop-step-detail">{step.detail}</p>}
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
                           )}
-                          <span className="procedure-sop-figure-hint">Desliza horizontalmente si hace falta · vista landscape</span>
-                        </figcaption>
-                      </figure>
-                    )}
-
-                    {/* Embraer-style study schematic */}
-                    {diagramType && <ApproachDiagram type={diagramType} />}
-
-                    <div className="procedure-summary rounded-2xl p-3.5 text-xs leading-relaxed">
-                      <strong>Resumen táctico:</strong> {card.summary}
-                    </div>
-
-                    {card.memoryItems && card.memoryItems.length > 0 && (
-                      <div className="procedure-memory rounded-2xl p-4 space-y-2.5">
-                        <div className="flex items-center justify-between gap-2">
-                          <span className="text-xs font-black uppercase tracking-wider flex items-center gap-1.5">
-                            <Flame className="w-4 h-4" /> Memory Items
-                          </span>
-                          <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-rose-600 text-white font-black">
-                            RECALL
-                          </span>
                         </div>
-                        <ol className="space-y-1.5 font-mono text-xs list-decimal list-inside">
-                          {card.memoryItems.map((item) => (
-                            <li key={item} className="font-bold">
-                              {item}
-                            </li>
-                          ))}
-                        </ol>
                       </div>
-                    )}
+                      <figcaption className="procedure-sop-figure-caption">
+                        <span className="procedure-sop-figure-badge">Figura SOPM</span>
+                        {card.diagramCaption && <span>{card.diagramCaption}</span>}
+                        {card.diagramNote && <span className="procedure-sop-figure-note">{card.diagramNote}</span>}
+                        <span className="procedure-sop-figure-hint">
+                          Hitos coloreados sobre la figura · desliza en horizontal si hace falta
+                        </span>
+                      </figcaption>
+                    </figure>
+                  )}
 
-                    {card.goldenRules && card.goldenRules.length > 0 && (
-                      <div className="procedure-golden rounded-2xl p-4 space-y-3">
-                        <div className="flex items-center gap-1.5 text-xs font-black uppercase tracking-wide">
-                          <AlertTriangle className="w-4 h-4" />
-                          Reglas de oro · Hitos
-                        </div>
-                        <div className="procedure-golden-grid">
-                          {card.goldenRules.map((rule, idx) => (
-                            <div key={rule} className="procedure-golden-item">
-                              <span className="procedure-golden-num">{idx + 1}</span>
-                              <p>{rule}</p>
+                  <div className="procedure-summary rounded-2xl p-3.5 text-xs leading-relaxed">
+                    <strong>Resumen táctico:</strong> {card.summary}
+                  </div>
+
+                  {card.memoryItems && card.memoryItems.length > 0 && (
+                    <div className="procedure-memory rounded-2xl p-4 space-y-2.5">
+                      <div className="flex items-center justify-between gap-2">
+                        <span className="text-xs font-black uppercase tracking-wider flex items-center gap-1.5">
+                          <Flame className="w-4 h-4" /> Memory Items
+                        </span>
+                        <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-rose-600 text-white font-black">
+                          RECALL
+                        </span>
+                      </div>
+                      <ol className="space-y-1.5 font-mono text-xs list-decimal list-inside">
+                        {card.memoryItems.map((item) => (
+                          <li key={item} className="font-bold">
+                            {item}
+                          </li>
+                        ))}
+                      </ol>
+                    </div>
+                  )}
+
+                  {card.goldenRules && card.goldenRules.length > 0 && (
+                    <div className="procedure-golden rounded-2xl p-4 space-y-3">
+                      <div className="flex items-center gap-1.5 text-xs font-black uppercase tracking-wide">
+                        <AlertTriangle className="w-4 h-4" />
+                        Reglas de oro · Hitos
+                      </div>
+                      <div className="procedure-golden-grid">
+                        {card.goldenRules.map((rule, idx) => (
+                          <div key={rule} className="procedure-golden-item">
+                            <span className="procedure-golden-num">{idx + 1}</span>
+                            <p>{rule}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {!card.diagramImage && card.diagramNote && (
+                    <div className="procedure-diagram-note rounded-2xl p-3.5 text-xs font-mono flex items-center gap-2.5">
+                      <Compass className="w-4 h-4 shrink-0" />
+                      <span>{card.diagramNote}</span>
+                    </div>
+                  )}
+
+                  {card.sections[0]?.items?.length > 0 && (
+                    <div className="procedure-flow-wrap">
+                      <div className="procedure-flow-label">
+                        <Sparkles className="w-3.5 h-3.5" />
+                        Secuencia visual
+                      </div>
+                      <div className="procedure-flow overflow-x-auto pb-1">
+                        <div className="flex min-w-max gap-2">
+                          {card.sections[0].items.slice(0, 6).map((it, idx) => (
+                            <div key={`${card.id}-flow-${idx}`} className="procedure-flow-step">
+                              <span className="procedure-flow-num">{idx + 1}</span>
+                              <span className="procedure-flow-text">{it.callout || it.action}</span>
                             </div>
                           ))}
                         </div>
                       </div>
-                    )}
-
-                    {!card.diagramImage && card.diagramNote && !diagramType && (
-                      <div className="procedure-diagram-note rounded-2xl p-3.5 text-xs font-mono flex items-center gap-2.5">
-                        <Compass className="w-4 h-4 shrink-0" />
-                        <span>{card.diagramNote}</span>
-                      </div>
-                    )}
-
-                    {/* Infographic flow strip for key steps */}
-                    {card.sections[0]?.items?.length > 0 && (
-                      <div className="procedure-flow-wrap">
-                        <div className="procedure-flow-label">
-                          <Sparkles className="w-3.5 h-3.5" />
-                          Secuencia visual
-                        </div>
-                        <div className="procedure-flow overflow-x-auto pb-1">
-                          <div className="flex min-w-max gap-2">
-                            {card.sections[0].items.slice(0, 6).map((it, idx) => (
-                              <div key={`${card.id}-flow-${idx}`} className="procedure-flow-step">
-                                <span className="procedure-flow-num">{idx + 1}</span>
-                                <span className="procedure-flow-text">{it.callout || it.action}</span>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                    )}
-
-                    <div className="procedure-sections-grid">
-                      {card.sections.map((section, sIdx) => (
-                        <div key={sIdx} className={`${sectionTone(section.color)} rounded-2xl border p-4 sm:p-5 space-y-3`}>
-                          <h3 className="text-xs sm:text-sm font-black flex items-center justify-between pb-2 border-b border-current/10">
-                            <span>{section.title}</span>
-                            {section.badge && <span className="procedure-meta">{section.badge}</span>}
-                          </h3>
-                          <div className="space-y-2.5">
-                            {section.items.map((it, itIdx) => (
-                              <div key={itIdx} className="procedure-item rounded-xl p-2.5 flex flex-col sm:flex-row sm:items-start gap-2.5 text-xs">
-                                <div className="shrink-0 flex items-center gap-2">
-                                  <span className="procedure-step-idx">{itIdx + 1}</span>
-                                  {getRoleBadge(it.role)}
-                                </div>
-                                <div className="space-y-1 flex-1 min-w-0">
-                                  <p className="font-medium leading-relaxed">{it.action}</p>
-                                  {it.callout && (
-                                    <div className="pt-0.5">
-                                      <span className="text-[10px] font-bold uppercase tracking-wider opacity-70 block">
-                                        Callout
-                                      </span>
-                                      <span className="procedure-callout">{it.callout}</span>
-                                    </div>
-                                  )}
-                                  {it.details && <p className="text-[11px] opacity-80 leading-normal">ℹ️ {it.details}</p>}
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      ))}
                     </div>
+                  )}
+
+                  <div className="procedure-sections-grid">
+                    {card.sections.map((section, sIdx) => (
+                      <div key={sIdx} className={`${sectionTone(section.color)} rounded-2xl border p-4 sm:p-5 space-y-3`}>
+                        <h3 className="text-xs sm:text-sm font-black flex items-center justify-between pb-2 border-b border-current/10">
+                          <span>{section.title}</span>
+                          {section.badge && <span className="procedure-meta">{section.badge}</span>}
+                        </h3>
+                        <div className="space-y-2.5">
+                          {section.items.map((it, itIdx) => (
+                            <div
+                              key={itIdx}
+                              className="procedure-item rounded-xl p-2.5 flex flex-col sm:flex-row sm:items-start gap-2.5 text-xs"
+                            >
+                              <div className="shrink-0 flex items-center gap-2">
+                                <span className="procedure-step-idx">{itIdx + 1}</span>
+                                {getRoleBadge(it.role)}
+                              </div>
+                              <div className="space-y-1 flex-1 min-w-0">
+                                <p className="font-medium leading-relaxed">{it.action}</p>
+                                {it.callout && (
+                                  <div className="pt-0.5">
+                                    <span className="text-[10px] font-bold uppercase tracking-wider opacity-70 block">
+                                      Callout
+                                    </span>
+                                    <span className="procedure-callout">{it.callout}</span>
+                                  </div>
+                                )}
+                                {it.details && <p className="text-[11px] opacity-80 leading-normal">ℹ️ {it.details}</p>}
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                )}
-              </article>
-            );
-          })
+                </div>
+              )}
+            </article>
+          );
+        })}
+
+        {filteredCards.length === 0 && (
+          <div className="procedure-empty rounded-2xl p-8 text-center text-sm">
+            No hay tarjetas para ese filtro. Prueba con “TELSI”, “visual” o “RTO”.
+          </div>
         )}
       </div>
     </div>

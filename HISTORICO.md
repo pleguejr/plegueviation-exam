@@ -4,7 +4,16 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 
 ---
 
-## 🚀 Versión Actual: v3.3.1 (2026-09-14)
+## 🚀 Versión Actual: v3.3.2 (2026-09-14)
+
+### 🔎 Buscador, Sync info y SOP limpio
+- **Dashboard:** el banner de sistema se sustituye por un **buscador de preguntas** (stem, LO, opciones, explicación).
+- **Sync Modal:** aloja la info de sistema (Binter/flotas, offline, reactivos, flashcards) + botón **Actualizar PWA**.
+- **SOP:** eliminados los esquemas SVG de estudio; las figuras SOPM llevan **hitos coloreados** profesionales.
+
+---
+
+## 🧾 Versión v3.3.1 (2026-09-14)
 
 ### 📊 Cabecera, Tendencias y Tarjetas SOP Visuales
 - **Versión en navbar:** `vX.Y.Z` inyectada desde `package.json` vía Vite.

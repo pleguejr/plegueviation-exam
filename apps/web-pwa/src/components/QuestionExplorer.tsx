@@ -43,6 +43,7 @@ interface QuestionExplorerProps {
   onStartCustomQuiz: (questionIds: string[]) => void;
   onStartFlashcards?: (params?: { category?: string }) => void;
   onGoToDashboard: () => void;
+  initialSearchTerm?: string;
 }
 
 export const QuestionExplorer: React.FC<QuestionExplorerProps> = ({
@@ -52,10 +53,11 @@ export const QuestionExplorer: React.FC<QuestionExplorerProps> = ({
   onRefreshStats,
   onStartCustomQuiz,
   onStartFlashcards,
-  onGoToDashboard
+  onGoToDashboard,
+  initialSearchTerm = ''
 }) => {
   const [activeTab, setActiveTab] = useState<'difficult' | 'search' | 'flagged' | 'unseen' | 'flashcards' | 'review' | 'deleted'>('search');
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState(initialSearchTerm);
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [expandedId, setExpandedId] = useState<string | null>(null);
   
@@ -83,6 +85,13 @@ export const QuestionExplorer: React.FC<QuestionExplorerProps> = ({
     fetchDeleted();
     fetchReviews();
   }, []);
+
+  useEffect(() => {
+    if (initialSearchTerm) {
+      setSearchTerm(initialSearchTerm);
+      setActiveTab('search');
+    }
+  }, [initialSearchTerm]);
 
   const handleDeleteConfirm = async (q: Question, reason?: string) => {
     await deleteQuestionFromBank(q, reason);
@@ -145,11 +154,15 @@ export const QuestionExplorer: React.FC<QuestionExplorerProps> = ({
       if (!isFlashcardEligible(q)) return false;
     }
 
-    // 2. Search term
-    const matchesSearch = 
-      q.stem.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      q.id.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      q.learning_objective.toLowerCase().includes(searchTerm.toLowerCase());
+    // 2. Search term (stem, id, LO, options, explanation)
+    const qLower = searchTerm.toLowerCase();
+    const matchesSearch =
+      !searchTerm.trim() ||
+      q.stem.toLowerCase().includes(qLower) ||
+      q.id.toLowerCase().includes(qLower) ||
+      q.learning_objective.toLowerCase().includes(qLower) ||
+      (q.explanation?.text || '').toLowerCase().includes(qLower) ||
+      q.options.some((o) => o.text.toLowerCase().includes(qLower));
 
     // 3. Category
     const matchesCategory = 

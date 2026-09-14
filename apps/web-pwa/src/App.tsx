@@ -39,6 +39,7 @@ import {
 export function App() {
   const [currentView, setCurrentView] = useState<'dashboard' | 'explorer' | 'reports' | 'settings' | 'exam' | 'results' | 'flashcards' | 'procedures' | 'tables'>('dashboard');
   const [flashcardCategory, setFlashcardCategory] = useState<string>('all');
+  const [explorerSearchTerm, setExplorerSearchTerm] = useState('');
   const [questions, setQuestions] = useState<Question[]>([]);
   const [manifest, setManifest] = useState<BankManifest | null>(null);
   const [statsMap, setStatsMap] = useState<Record<string, QuestionStats>>({});
@@ -363,7 +364,11 @@ export function App() {
             onOpenTables={() => setCurrentView('tables')}
             onNavigateTab={(tab) => setCurrentView(tab)}
             onOpenImporter={() => setIsImporterOpen(true)}
-            onForceUpdate={forceAppUpdate}
+            onOpenQuestionSearch={(term) => {
+              setExplorerSearchTerm(term);
+              setCurrentView('explorer');
+            }}
+            onPracticeQuestions={(ids) => handleStartCustomQuiz(ids)}
           />
         )}
 
@@ -398,6 +403,7 @@ export function App() {
             onStartCustomQuiz={handleStartCustomQuiz}
             onStartFlashcards={(params) => handleStartFlashcards(params?.category)}
             onGoToDashboard={() => setCurrentView('dashboard')}
+            initialSearchTerm={explorerSearchTerm}
           />
         )}
 
@@ -731,6 +737,9 @@ export function App() {
         onSyncComplete={() => {
           refreshData();
         }}
+        totalQuestions={questions.length}
+        onForceUpdate={forceAppUpdate}
+        appVersion={typeof __APP_VERSION__ !== 'undefined' ? __APP_VERSION__ : undefined}
       />
     </div>
   );

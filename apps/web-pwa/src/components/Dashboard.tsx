@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { 
   CheckCircle2, 
   XCircle, 
@@ -28,7 +28,8 @@ import {
   BarChart3,
   Cpu,
   Layers,
-  FileText
+  FileText,
+  Search
 } from 'lucide-react';
 import { Question, BankManifest, QuestionStats, ExamSession, ExamMode, ExamSelectionStrategy } from '../types';
 import { loadAllQuestions, loadManifest } from '../services/questionsService';
@@ -48,7 +49,8 @@ interface DashboardProps {
   onOpenTables: () => void;
   onNavigateTab: (tab: 'explorer' | 'reports' | 'settings' | 'procedures' | 'tables') => void;
   onOpenImporter: () => void;
-  onForceUpdate?: () => void;
+  onOpenQuestionSearch?: (term: string) => void;
+  onPracticeQuestions?: (questionIds: string[]) => void;
 }
 
 export const Dashboard: React.FC<DashboardProps> = ({
@@ -59,7 +61,8 @@ export const Dashboard: React.FC<DashboardProps> = ({
   onOpenTables,
   onNavigateTab,
   onOpenImporter,
-  onForceUpdate
+  onOpenQuestionSearch,
+  onPracticeQuestions
 }) => {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [manifest, setManifest] = useState<BankManifest | null>(null);
@@ -67,6 +70,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
   const [history, setHistory] = useState<ExamSession[]>([]);
   const [loading, setLoading] = useState(true);
   const [showMnemonicModal, setShowMnemonicModal] = useState(false);
+  const [infoSearch, setInfoSearch] = useState('');
 
   const loadData = async () => {
     setLoading(true);
@@ -91,6 +95,28 @@ export const Dashboard: React.FC<DashboardProps> = ({
   useEffect(() => {
     loadData();
   }, []);
+
+  const infoSearchHits = useMemo(() => {
+    const q = infoSearch.trim().toLowerCase();
+    if (q.length < 2) return [];
+    return questions
+      .filter((item) => {
+        const hay = [
+          item.stem,
+          item.id,
+          item.learning_objective,
+          item._category || '',
+          item.subject_id,
+          item.explanation?.text || '',
+          ...(item.explanation?.references || []),
+          ...item.options.map((o) => o.text)
+        ]
+          .join(' ')
+          .toLowerCase();
+        return hay.includes(q);
+      })
+      .slice(0, 12);
+  }, [infoSearch, questions]);
 
   const handleResetStats = async () => {
     const confirmReset = window.confirm(
@@ -144,7 +170,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
 
   const seenCount = totalQuestions - unseenCount;
   const overallAccuracy = (totalCorrect + totalIncorrect) > 0 
-    ? Math.round((totalCorrect / (totalCorrect + totalIncorrect)) * 100) 
+    ? Math.round((totalCorrect / (totalCorrect + totalIncorrect)) * 100)
     : 0;
 
   type ActivityPoint = {
@@ -242,36 +268,74 @@ export const Dashboard: React.FC<DashboardProps> = ({
   return (
     <div className="max-w-6xl mx-auto space-y-6 pb-20 font-sans">
       
-      {/* 1. Web Update Announcement Banner (Estilo Binter Canarias) */}
-      <div className="dashboard-announcement-banner bg-[#0b1426] border border-emerald-500/30 rounded-2xl p-5 text-center shadow-lg relative overflow-hidden">
-        <div className="flex flex-col items-center justify-center space-y-2">
-          <div className="w-12 h-12 rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 mb-1">
-            <RefreshCw className="w-6 h-6 animate-spin-slow" />
+      {/* 1. Buscador de información sobre el banco de preguntas */}
+      <div className="dashboard-info-search rounded-2xl border border-emerald-500/30 bg-[#0b1426] p-4 sm:p-5 shadow-lg space-y-3">
+        <div className="flex items-start justify-between gap-3">
+          <div>
+            <p className="text-[10px] font-black uppercase tracking-widest text-emerald-400">Centro de información</p>
+            <h2 className="text-base sm:text-lg font-extrabold text-white tracking-tight">
+              Buscar en el banco de preguntas
+            </h2>
+            <p className="text-[11px] text-slate-400 mt-0.5">
+              Enunciados, objetivos, opciones y explicaciones · {totalQuestions} reactivos
+            </p>
           </div>
-          <h2 className="text-emerald-400 font-extrabold text-base tracking-tight">
-            Plegueviation Exam — Sistema Operacional Binter Canarias
-          </h2>
-          <p className="text-slate-200 text-xs font-semibold">
-            Binter Airlines (MOA/MOB) • Flota E195-E2 • C172N • P2010 TDI • Normativa EASA & SERA
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-3 pt-1 text-[11px] font-mono">
-            <span className="text-amber-400 font-bold">⚠️ Modo Offline Habilitado (IndexedDB Local)</span>
-            <span className="text-emerald-300 font-bold hidden sm:inline">• {totalQuestions} Reactivos Oficiales</span>
-            <span className="text-sky-300 font-bold hidden sm:inline">• ⚡ Flashcards Activas</span>
-          </div>
-          {onForceUpdate && (
-            <div className="pt-2">
-              <button
-                onClick={onForceUpdate}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white text-xs font-black shadow-md shadow-emerald-900/40 active:scale-95 transition-all border border-emerald-400/30"
-                title="Limpiar caché de la PWA y forzar descarga de la última versión"
-              >
-                <RefreshCw className="w-3.5 h-3.5" />
-                <span>Actualizar PWA a la Última Versión</span>
-              </button>
-            </div>
-          )}
         </div>
+        <div className="relative">
+          <Search className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-emerald-400/80" />
+          <input
+            value={infoSearch}
+            onChange={(e) => setInfoSearch(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' && infoSearch.trim() && onOpenQuestionSearch) {
+                onOpenQuestionSearch(infoSearch.trim());
+              }
+            }}
+            placeholder="Ej: TELSI, V1, flap 5, circling, fuel leak, SERA..."
+            className="w-full pl-10 pr-4 py-3 rounded-xl bg-slate-950/80 border border-slate-700 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400"
+          />
+        </div>
+        {infoSearch.trim().length >= 2 && (
+          <div className="rounded-xl border border-slate-700/80 bg-black/40 overflow-hidden">
+            <div className="px-3 py-2 text-[10px] font-bold uppercase tracking-wider text-slate-400 border-b border-slate-800 flex items-center justify-between">
+              <span>{infoSearchHits.length} resultado{infoSearchHits.length === 1 ? '' : 's'}</span>
+              {onOpenQuestionSearch && (
+                <button
+                  type="button"
+                  onClick={() => onOpenQuestionSearch(infoSearch.trim())}
+                  className="text-emerald-400 hover:text-emerald-300"
+                >
+                  Abrir en Questions →
+                </button>
+              )}
+            </div>
+            <ul className="max-h-72 overflow-y-auto divide-y divide-slate-800/80">
+              {infoSearchHits.map((q) => {
+                const catTitle = manifest?.categories.find((c) => c.id === q._category)?.title || q._category || q.subject_id;
+                return (
+                  <li key={q.id}>
+                    <button
+                      type="button"
+                      onClick={() => onPracticeQuestions?.([q.id])}
+                      className="w-full text-left px-3 py-2.5 hover:bg-emerald-500/10 transition-colors"
+                    >
+                      <div className="flex items-center gap-2 mb-0.5">
+                        <span className="text-[10px] font-mono text-sky-400">{q.id}</span>
+                        <span className="text-[10px] text-slate-500 truncate">{catTitle}</span>
+                      </div>
+                      <p className="text-xs text-slate-200 line-clamp-2 leading-relaxed">{q.stem}</p>
+                    </button>
+                  </li>
+                );
+              })}
+              {infoSearchHits.length === 0 && (
+                <li className="px-3 py-4 text-xs text-slate-500 text-center">
+                  Sin coincidencias. Prueba otra palabra clave.
+                </li>
+              )}
+            </ul>
+          </div>
+        )}
       </div>
 
       {/* 2. Signature Binter Performance Card con Gráfica de Precisión por Banco */}
