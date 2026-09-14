@@ -154,14 +154,14 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
       <div className="procedure-hero rounded-3xl p-5 sm:p-6 relative overflow-hidden">
         <div className="absolute inset-0 opacity-30 pointer-events-none procedure-hero-glow" />
         <div className="relative z-10 space-y-3">
-          <div className="flex items-center gap-2 text-emerald-300 text-xs font-black uppercase tracking-widest">
+          <div className="flex items-center gap-2 procedure-hero-kicker text-xs font-black uppercase tracking-widest">
             <Layers className="w-4 h-4" />
             SOPM · MOB · AOM · QRH
           </div>
-          <h1 className="text-2xl sm:text-3xl font-black tracking-tight text-white">
+          <h1 className="procedure-hero-title text-2xl sm:text-3xl font-black tracking-tight">
             Tarjetas SOP · Infografía Operacional
           </h1>
-          <p className="text-sm text-slate-300 max-w-2xl leading-relaxed">
+          <p className="procedure-hero-sub text-sm max-w-2xl leading-relaxed">
             Flujos visuales para memorizar briefings, aproximaciones E195-E2 y emergencias. Figuras oficiales SOPM
             con hitos resaltados; consulta el PDF a bordo como referencia definitiva.
           </p>
@@ -207,8 +207,8 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
           const diagramSteps = diagramStepsFor(card);
 
           return (
-            <article key={card.id} className={`procedure-card procedure-card-${card.category}`}>
-              <button type="button" onClick={() => toggleExpand(card.id)} className="w-full text-left p-5 sm:p-6 flex gap-4">
+            <article key={card.id} className={`procedure-card procedure-card-${card.category} rounded-2xl overflow-hidden`}>
+              <button type="button" onClick={() => toggleExpand(card.id)} className="procedure-card-header w-full text-left p-5 sm:p-6 flex gap-4">
                 <div className="flex-1 min-w-0 space-y-2.5">
                   <div className="flex flex-wrap items-center gap-2">
                     <span className={`procedure-badge ${badge.className}`}>
@@ -221,8 +221,8 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
                       {card.manualRef}
                     </span>
                   </div>
-                  <h2 className="text-lg sm:text-xl font-black text-sky-100 leading-snug">{card.title}</h2>
-                  <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">{card.subtitle}</p>
+                  <h2 className="procedure-card-title text-lg sm:text-xl font-black leading-snug">{card.title}</h2>
+                  <p className="procedure-card-subtitle text-xs sm:text-sm leading-relaxed">{card.subtitle}</p>
                   <div className="flex flex-wrap gap-1.5 pt-1">
                     {card.badges.map((b) => (
                       <span key={b} className="procedure-chip">
@@ -242,8 +242,8 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
                 </div>
               </button>
 
-              {isExpanded && (
-                <div className="px-4 sm:px-6 pb-6 pt-2 border-t border-slate-800/50 space-y-5 animate-fade-in">
+                {isExpanded && (
+                  <div className="procedure-card-body px-4 sm:px-6 pb-6 pt-2 border-t border-slate-800/50 space-y-5 animate-fade-in">
                   {card.diagramImage && (
                     <figure className="procedure-sop-figure">
                       <div className="procedure-sop-figure-scroll">
@@ -284,29 +284,36 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
                     </figure>
                   )}
 
-                  <div className="procedure-summary rounded-2xl p-3.5 text-xs leading-relaxed">
-                    <strong>Resumen táctico:</strong> {card.summary}
-                  </div>
-
                   {card.memoryItems && card.memoryItems.length > 0 && (
-                    <div className="procedure-memory rounded-2xl p-4 space-y-2.5">
-                      <div className="flex items-center justify-between gap-2">
-                        <span className="text-xs font-black uppercase tracking-wider flex items-center gap-1.5">
-                          <Flame className="w-4 h-4" /> Memory Items
+                    <div className="procedure-memory rounded-2xl p-4 sm:p-5 space-y-4">
+                      <div className="flex items-center justify-between gap-2 flex-wrap">
+                        <span className="procedure-memory-heading text-sm font-black uppercase tracking-wider flex items-center gap-2">
+                          <Flame className="w-5 h-5" />
+                          Memory Items · Acciones inmediatas
                         </span>
-                        <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-rose-600 text-white font-black">
-                          RECALL
+                        <span className="procedure-memory-recall text-[10px] font-mono px-2.5 py-1 rounded-lg bg-rose-600 text-white font-black tracking-wide">
+                          RECALL · PRIORIDAD
                         </span>
                       </div>
-                      <ol className="space-y-1.5 font-mono text-xs list-decimal list-inside">
-                        {card.memoryItems.map((item) => (
-                          <li key={item} className="font-bold">
-                            {item}
+                      <p className="procedure-memory-hint text-[11px] leading-relaxed">
+                        Secuencia de memoria — estudiar paso a paso. Confirmación cruzada PF/PM cuando aplique.
+                      </p>
+                      <ol className="procedure-memory-list">
+                        {card.memoryItems.map((item, idx) => (
+                          <li key={item} className="procedure-memory-step">
+                            <span className="procedure-memory-step-num" aria-hidden>
+                              {idx + 1}
+                            </span>
+                            <span className="procedure-memory-step-text">{item}</span>
                           </li>
                         ))}
                       </ol>
                     </div>
                   )}
+
+                  <div className="procedure-summary rounded-2xl p-3.5 text-xs leading-relaxed">
+                    <strong>Resumen táctico:</strong> {card.summary}
+                  </div>
 
                   {card.goldenRules && card.goldenRules.length > 0 && (
                     <div className="procedure-golden rounded-2xl p-4 space-y-3">
@@ -352,39 +359,61 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
                   )}
 
                   <div className="procedure-sections-grid">
-                    {card.sections.map((section, sIdx) => (
-                      <div key={sIdx} className={`${sectionTone(section.color)} rounded-2xl border p-4 sm:p-5 space-y-3`}>
-                        <h3 className="text-xs sm:text-sm font-black flex items-center justify-between pb-2 border-b border-current/10">
-                          <span>{section.title}</span>
-                          {section.badge && <span className="procedure-meta">{section.badge}</span>}
-                        </h3>
-                        <div className="space-y-2.5">
-                          {section.items.map((it, itIdx) => (
-                            <div
-                              key={itIdx}
-                              className="procedure-item rounded-xl p-2.5 flex flex-col sm:flex-row sm:items-start gap-2.5 text-xs"
-                            >
-                              <div className="shrink-0 flex items-center gap-2">
-                                <span className="procedure-step-idx">{itIdx + 1}</span>
-                                {getRoleBadge(it.role)}
+                    {card.sections.map((section, sIdx) => {
+                      const isMemorySection = /memoria|memory items|acciones inmediatas/i.test(section.title);
+                      return (
+                        <div
+                          key={sIdx}
+                          className={`${sectionTone(section.color)} rounded-2xl border p-4 sm:p-5 space-y-3 ${
+                            isMemorySection ? 'procedure-section-memory-focus procedure-section-span' : ''
+                          }`}
+                        >
+                          <h3 className="text-xs sm:text-sm font-black flex items-center justify-between gap-2 pb-2 border-b border-current/10">
+                            <span className="flex items-center gap-1.5">
+                              {isMemorySection && <Flame className="w-4 h-4 text-rose-500 shrink-0" />}
+                              {section.title}
+                            </span>
+                            {section.badge && <span className="procedure-meta">{section.badge}</span>}
+                            {isMemorySection && (
+                              <span className="procedure-memory-recall text-[9px] font-mono px-2 py-0.5 rounded bg-rose-600 text-white font-black">
+                                RECALL
+                              </span>
+                            )}
+                          </h3>
+                          <div className={isMemorySection ? 'procedure-memory-section-items' : 'space-y-2.5'}>
+                            {section.items.map((it, itIdx) => (
+                              <div
+                                key={itIdx}
+                                className={`procedure-item rounded-xl p-2.5 flex flex-col sm:flex-row sm:items-start gap-2.5 text-xs ${
+                                  isMemorySection ? 'procedure-item-memory' : ''
+                                }`}
+                              >
+                                <div className="shrink-0 flex items-center gap-2">
+                                  <span className="procedure-step-idx">{itIdx + 1}</span>
+                                  {getRoleBadge(it.role)}
+                                </div>
+                                <div className="space-y-1.5 flex-1 min-w-0">
+                                  <p className={`leading-relaxed ${isMemorySection ? 'font-bold text-sm' : 'font-medium'}`}>
+                                    {it.action}
+                                  </p>
+                                  {it.callout && (
+                                    <div className="pt-0.5">
+                                      <span className="text-[10px] font-bold uppercase tracking-wider opacity-70 block">
+                                        Callout
+                                      </span>
+                                      <span className="procedure-callout">{it.callout}</span>
+                                    </div>
+                                  )}
+                                  {it.details && (
+                                    <p className="text-[11px] opacity-80 leading-relaxed">ℹ️ {it.details}</p>
+                                  )}
+                                </div>
                               </div>
-                              <div className="space-y-1 flex-1 min-w-0">
-                                <p className="font-medium leading-relaxed">{it.action}</p>
-                                {it.callout && (
-                                  <div className="pt-0.5">
-                                    <span className="text-[10px] font-bold uppercase tracking-wider opacity-70 block">
-                                      Callout
-                                    </span>
-                                    <span className="procedure-callout">{it.callout}</span>
-                                  </div>
-                                )}
-                                {it.details && <p className="text-[11px] opacity-80 leading-normal">ℹ️ {it.details}</p>}
-                              </div>
-                            </div>
-                          ))}
+                            ))}
+                          </div>
                         </div>
-                      </div>
-                    ))}
+                      );
+                    })}
                   </div>
                 </div>
               )}

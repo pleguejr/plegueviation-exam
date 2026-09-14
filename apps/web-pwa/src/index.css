@@ -1296,6 +1296,11 @@ table th {
   background: linear-gradient(135deg, #002f59 0%, #004b87 55%, #00522c 100%);
   border: 1px solid rgba(16, 185, 129, 0.35);
 }
+.procedure-hero-kicker { color: #6ee7b7; }
+.procedure-hero-title { color: #ffffff; }
+.procedure-hero-sub { color: #cbd5e1; }
+.procedure-card-title { color: #e0f2fe; }
+.procedure-card-subtitle { color: #cbd5e1; }
 .procedure-ghost-btn {
   padding: 0.25rem 0.75rem;
   border-radius: 0.5rem;
@@ -1391,11 +1396,71 @@ table th {
   color: #cbd5e1;
 }
 .procedure-memory {
-  background: rgba(136,19,55,0.35);
-  border: 2px solid rgba(244,63,94,0.55);
+  background: rgba(136,19,55,0.4);
+  border: 2px solid rgba(244,63,94,0.65);
   color: #fecdd3;
+  box-shadow: 0 0 0 1px rgba(244,63,94,0.2), 0 12px 28px rgba(136,19,55,0.25);
 }
-.procedure-memory .font-bold { color: #fff; }
+.procedure-memory-heading { color: #fecdd3; }
+.procedure-memory-hint { color: #fda4af; opacity: 0.9; }
+.procedure-memory-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.procedure-memory-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 0.85rem 1rem;
+  border-radius: 0.9rem;
+  background: rgba(0,0,0,0.35);
+  border: 1px solid rgba(251,113,133,0.45);
+}
+.procedure-memory-step-num {
+  flex-shrink: 0;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 900;
+  background: #e11d48;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(225,29,72,0.45);
+}
+.procedure-memory-step-text {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.8rem;
+  font-weight: 800;
+  line-height: 1.45;
+  color: #fff;
+  letter-spacing: 0.01em;
+}
+.procedure-memory-section-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+.procedure-item-memory {
+  padding: 0.9rem 1rem !important;
+  border-width: 1.5px !important;
+  border-color: rgba(244,63,94,0.45) !important;
+  background: rgba(136,19,55,0.22) !important;
+}
+.procedure-section-memory-focus {
+  border-width: 2px !important;
+  border-color: rgba(244,63,94,0.55) !important;
+  box-shadow: 0 8px 24px rgba(136,19,55,0.2);
+}
+.procedure-section-span {
+  grid-column: 1 / -1;
+}
 .procedure-golden {
   background: rgba(120,53,15,0.3);
   border: 1px solid rgba(245,158,11,0.4);
@@ -1759,11 +1824,20 @@ table th {
 }
 
 /* Day mode overrides */
+.theme-light .procedure-hero {
+  background: linear-gradient(135deg, #ecfdf5 0%, #e0f2fe 55%, #f0fdf4 100%) !important;
+  border: 1.5px solid #059669 !important;
+  box-shadow: 0 8px 24px rgba(5, 150, 105, 0.12);
+}
+.theme-light .procedure-hero-kicker { color: #047857 !important; }
+.theme-light .procedure-hero-title { color: #0f172a !important; }
+.theme-light .procedure-hero-sub { color: #334155 !important; }
+
 .theme-light .procedure-ghost-btn,
 .theme-light .procedure-tab:not(.procedure-tab-active) {
-  background: #f1f5f9;
+  background: #e2e8f0;
   color: #0f172a;
-  border-color: #cbd5e1;
+  border-color: #94a3b8;
 }
 .theme-light .procedure-search {
   background: #ffffff;
@@ -1771,36 +1845,72 @@ table th {
   color: #0f172a;
 }
 .theme-light .procedure-card {
-  background: #ffffff;
-  border-color: #cbd5e1;
+  background: #e2e8f0 !important;
+  border: 1.5px solid #475569 !important;
   color: #0f172a;
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.1);
 }
+.theme-light .procedure-card-briefings {
+  background: #bae6fd !important;
+  border-color: #0284c7 !important;
+}
+.theme-light .procedure-card-normal {
+  background: #a7f3d0 !important;
+  border-color: #059669 !important;
+}
+.theme-light .procedure-card-emergency {
+  background: #fecdd3 !important;
+  border-color: #e11d48 !important;
+}
+.theme-light .procedure-card-header {
+  background: transparent;
+}
+.theme-light .procedure-card-body {
+  background: #ffffff !important;
+  border-top-color: #94a3b8 !important;
+}
+.theme-light .procedure-card-title { color: #0f172a !important; }
+.theme-light .procedure-card-subtitle { color: #334155 !important; }
 .theme-light .procedure-meta,
 .theme-light .procedure-tag {
-  background: #f8fafc;
+  background: #ffffff;
   color: #334155;
-  border-color: #cbd5e1;
+  border-color: #94a3b8;
 }
 .theme-light .procedure-meta-ref { color: #0369a1; }
 .theme-light .procedure-subtitle,
 .theme-light .procedure-preview { color: #475569; }
 .theme-light .procedure-expand-btn {
-  background: #f1f5f9;
-  border-color: #cbd5e1;
+  background: #ffffff;
+  border-color: #94a3b8;
   color: #334155;
 }
 .theme-light .procedure-summary {
-  background: #f8fafc;
-  border-color: #cbd5e1;
+  background: #ffffff;
+  border-color: #94a3b8;
   color: #334155;
 }
 .theme-light .procedure-memory {
-  background: #fff1f2;
-  border-color: #fb7185;
+  background: #ffe4e6 !important;
+  border: 2.5px solid #e11d48 !important;
   color: #9f1239;
+  box-shadow: 0 10px 28px rgba(225, 29, 72, 0.15);
 }
-.theme-light .procedure-memory .font-bold { color: #881337; }
+.theme-light .procedure-memory-heading { color: #9f1239 !important; }
+.theme-light .procedure-memory-hint { color: #be123c !important; }
+.theme-light .procedure-memory-step {
+  background: #ffffff !important;
+  border-color: #fb7185 !important;
+}
+.theme-light .procedure-memory-step-text { color: #881337 !important; }
+.theme-light .procedure-item-memory {
+  background: #fff1f2 !important;
+  border-color: #fb7185 !important;
+}
+.theme-light .procedure-section-memory-focus {
+  background: #fff1f2 !important;
+  border-color: #e11d48 !important;
+}
 .theme-light .procedure-golden {
   background: #fffbeb;
   border-color: #f59e0b;
@@ -1864,7 +1974,7 @@ table th {
 .theme-light .procedure-section-rose,
 .theme-light .procedure-section-indigo,
 .theme-light .procedure-section-purple {
-  background: #f8fafc;
+  background: #ffffff;
   color: #0f172a;
 }
 .theme-light .procedure-section-sky { border-color: #7dd3fc; }

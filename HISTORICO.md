@@ -4,7 +4,15 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 
 ---
 
-## 🚀 Versión Actual: v3.3.3 (2026-09-14)
+## 🚀 Versión Actual: v3.3.5 (2026-09-14)
+
+### 🎨 SOP modo día + Memory Items legibles
+- **Cabecera SOP y marco de tarjetas** con más contraste en modo día (marco tintado por categoría + cuerpo blanco).
+- **Memory Items** priorizados: pasos numerados espaciados, tipografía mono destacada y secciones «Acciones inmediatas» a ancho completo.
+
+---
+
+## 🔎 Versión v3.3.3 (2026-09-14)
 
 ### 🔎 Buscador modo día + test desde resultados
 - **Modo día:** contraste del cuadro de búsqueda del dashboard (fondo claro, texto oscuro, borde verde).
