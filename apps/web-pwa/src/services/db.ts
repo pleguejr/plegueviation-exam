@@ -1,5 +1,13 @@
+import { updateQuestionStats } from '@plegue/core-engine';
 import Dexie, { Table } from 'dexie';
-import { QuestionStats, ExamSession, Question, DeletedQuestion, ReviewRequest } from '../types';
+import { QuestionStats, ExamSession, Question, DeletedQuestion, ReviewRequest, SyncPayload } from '../types';
+
+export interface SyncSnapshot {
+  id: string;
+  label: string;
+  createdAt: number;
+  payload: SyncPayload;
+}
 
 export class PlegueviationDB extends Dexie {
   questionStats!: Table<QuestionStats, string>;
@@ -7,6 +15,7 @@ export class PlegueviationDB extends Dexie {
   customQuestions!: Table<Question, string>;
   deletedQuestions!: Table<DeletedQuestion, string>;
   reviewRequests!: Table<ReviewRequest, string>;
+  syncSnapshots!: Table<SyncSnapshot, string>;
 
   constructor() {
     super('PlegueviationExamDB');
@@ -20,6 +29,9 @@ export class PlegueviationDB extends Dexie {
     });
     this.version(3).stores({
       reviewRequests: 'id, questionId, requestedAt, reasonCategory, status'
+    });
+    this.version(4).stores({
+      syncSnapshots: 'id, createdAt, label'
     });
   }
 }
@@ -77,26 +89,14 @@ export async function recordAnswerStat(
   examMode: 'practice' | 'simulation' | 'smart_review'
 ): Promise<QuestionStats> {
   const current = await getQuestionStat(questionId);
-  const now = Date.now();
-  
-  const updated: QuestionStats = {
-    ...current,
-    timesAnswered: current.timesAnswered + 1,
-    timesCorrect: current.timesCorrect + (isCorrect ? 1 : 0),
-    timesIncorrect: current.timesIncorrect + (isCorrect ? 0 : 1),
-    lastAnsweredAt: now,
-    lastResult: isCorrect,
-    history: [
-      ...current.history,
-      {
-        timestamp: now,
-        selectedOptionId,
-        isCorrect,
-        timeSpentSeconds,
-        examMode
-      }
-    ]
-  };
+  const updated = updateQuestionStats(
+    current,
+    questionId,
+    selectedOptionId,
+    isCorrect,
+    timeSpentSeconds,
+    examMode
+  ) as QuestionStats;
 
   try {
     await db.questionStats.put(updated);
@@ -314,79 +314,83 @@ export async function getReviewRequestIds(): Promise<Set<string>> {
   }
 }
 
+const MAX_LOCAL_SNAPSHOTS = 5;
+
+/**
+ * Guarda un snapshot local del progreso para rollback manual.
+ */
+export async function saveSyncSnapshot(label: string): Promise<void> {
+  const { getLocalPayload } = await import('./sync');
+  const payload = await getLocalPayload();
+  const snapshot: SyncSnapshot = {
+    id: `snap_${Date.now()}`,
+    label,
+    createdAt: Date.now(),
+    payload
+  };
+  await db.syncSnapshots.put(snapshot);
+
+  const all = await db.syncSnapshots.orderBy('createdAt').reverse().toArray();
+  if (all.length > MAX_LOCAL_SNAPSHOTS) {
+    const stale = all.slice(MAX_LOCAL_SNAPSHOTS);
+    await db.syncSnapshots.bulkDelete(stale.map((s) => s.id));
+  }
+}
+
 /**
  * Exporta un backup completo de todo el progreso, sesiones, preguntas custom, eliminadas y solicitudes de revisión.
  */
 export async function exportFullBackup(): Promise<string> {
-  const [stats, sessions, custom, deleted, reviews] = await Promise.all([
-    db.questionStats.toArray(),
-    db.examSessions.toArray(),
-    db.customQuestions.toArray(),
-    db.deletedQuestions.toArray(),
-    db.reviewRequests.toArray()
-  ]);
-
+  const { getLocalPayload } = await import('./sync');
+  const payload = await getLocalPayload();
   const backupData = {
-    app: 'Plegueviation Exam',
-    version: '2.1.0',
-    exportedAt: new Date().toISOString(),
-    questionStats: stats,
-    examSessions: sessions,
-    customQuestions: custom,
-    deletedQuestions: deleted,
-    reviewRequests: reviews
+    ...payload,
+    exportedAt: new Date().toISOString()
   };
-
   return JSON.stringify(backupData, null, 2);
 }
 
 /**
- * Restaura un backup importado desde archivo JSON de Google Drive o local.
+ * Restaura un backup importado fusionándolo con el estado local (no sobrescribe a ciegas).
  */
-export async function restoreFullBackup(jsonContent: string): Promise<{ statsCount: number; sessionsCount: number; customCount: number; deletedCount: number; reviewsCount: number }> {
+export async function restoreFullBackup(jsonContent: string): Promise<{
+  statsCount: number;
+  sessionsCount: number;
+  customCount: number;
+  deletedCount: number;
+  reviewsCount: number;
+}> {
   const data = JSON.parse(jsonContent);
+  await saveSyncSnapshot('pre-restore');
 
-  let statsCount = 0;
-  let sessionsCount = 0;
-  let customCount = 0;
-  let deletedCount = 0;
-  let reviewsCount = 0;
+  const { mergeRemoteData } = await import('./sync');
+  const merged = await mergeRemoteData(data as SyncPayload);
 
-  if (Array.isArray(data.questionStats)) {
-    for (const s of data.questionStats) {
-      await db.questionStats.put(s);
-      statsCount++;
-    }
-  }
+  return {
+    statsCount: merged.mergedStatsCount,
+    sessionsCount: merged.mergedSessionsCount,
+    customCount: merged.mergedCustomCount,
+    deletedCount: merged.mergedDeletedCount,
+    reviewsCount: merged.mergedReviewsCount
+  };
+}
 
-  if (Array.isArray(data.examSessions)) {
-    for (const sess of data.examSessions) {
-      await db.examSessions.put(sess);
-      sessionsCount++;
-    }
-  }
+/**
+ * Lista snapshots locales disponibles para rollback manual.
+ */
+export async function listSyncSnapshots(): Promise<SyncSnapshot[]> {
+  return db.syncSnapshots.orderBy('createdAt').reverse().toArray();
+}
 
-  if (Array.isArray(data.customQuestions)) {
-    for (const q of data.customQuestions) {
-      await db.customQuestions.put(q);
-      customCount++;
-    }
-  }
-
-  if (Array.isArray(data.deletedQuestions)) {
-    for (const d of data.deletedQuestions) {
-      await db.deletedQuestions.put(d);
-      deletedCount++;
-    }
-  }
-
-  if (Array.isArray(data.reviewRequests)) {
-    for (const r of data.reviewRequests) {
-      await db.reviewRequests.put(r);
-      reviewsCount++;
-    }
-  }
-
-  return { statsCount, sessionsCount, customCount, deletedCount, reviewsCount };
+/**
+ * Restaura un snapshot local previamente guardado.
+ */
+export async function restoreSyncSnapshot(snapshotId: string): Promise<boolean> {
+  const snapshot = await db.syncSnapshots.get(snapshotId);
+  if (!snapshot) return false;
+  await saveSyncSnapshot('pre-snapshot-restore');
+  const { mergeRemoteData } = await import('./sync');
+  await mergeRemoteData(snapshot.payload);
+  return true;
 }
 

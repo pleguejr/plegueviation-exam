@@ -37,6 +37,69 @@ export interface Question {
   metadata?: QuestionMetadata;
   _category?: string;
   _subtopic?: string;
+  isCustom?: boolean;
+}
+
+export interface DeletedQuestion {
+  id: string;
+  question: Question;
+  deletedAt: number;
+  reason?: string;
+}
+
+export interface ReviewRequest {
+  id: string;
+  questionId: string;
+  question: Question;
+  requestedAt: number;
+  reasonCategory: string;
+  comment?: string;
+  status: 'pending' | 'resolved';
+}
+
+export interface CategoryMetadata {
+  id: string;
+  title: string;
+  icon: string;
+  color: string;
+  total_questions: number;
+  subtopics: Record<string, {
+    id: string;
+    title: string;
+    count: number;
+  }>;
+}
+
+export interface BankManifest {
+  app: string;
+  version: string;
+  generated_at: string;
+  total_questions: number;
+  categories: CategoryMetadata[];
+}
+
+export interface CompactExamSession {
+  sessionId: string;
+  config: ExamConfig;
+  startTime: number;
+  endTime: number | null;
+  isCompleted: boolean;
+  score?: ExamSession['score'];
+  questionIds?: string[];
+  questions?: Question[];
+  answers: Record<string, ExamSessionAnswer>;
+}
+
+export interface SyncPayload {
+  app: string;
+  version: string;
+  syncedAt: number;
+  deviceId?: string;
+  questionStats: QuestionStats[];
+  examSessions: CompactExamSession[];
+  customQuestions: Question[];
+  deletedQuestions: DeletedQuestion[];
+  reviewRequests: ReviewRequest[];
 }
 
 export type ExamMode = 'practice' | 'simulation' | 'smart_review';
@@ -70,6 +133,9 @@ export interface QuestionStats {
   lastResult: boolean | null;
   isFlagged: boolean;
   history: AnswerHistoryEntry[];
+  flashcardViews?: number;
+  flashcardLastRating?: 'hard' | 'medium' | 'easy' | null;
+  flashcardLastViewedAt?: number | null;
 }
 
 export interface ExamSessionAnswer {
@@ -81,6 +147,7 @@ export interface ExamSessionAnswer {
 }
 
 export interface ExamSession {
+  id?: string;
   sessionId: string;
   config: ExamConfig;
   startTime: number;
@@ -89,7 +156,7 @@ export interface ExamSession {
   questions: Question[];
   answers: Record<string, ExamSessionAnswer>;
   isCompleted: boolean;
-  score: {
+  score?: {
     totalQuestions: number;
     answeredQuestions: number;
     correctCount: number;

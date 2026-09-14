@@ -15,7 +15,12 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true,
-    "types": ["vite/client"]
+    "types": ["vite/client"],
+    "paths": {
+      "@plegue/core-engine": ["../../packages/core-engine/src/index.ts"],
+      "@plegue/core-engine/*": ["../../packages/core-engine/src/*"],
+      "@plegue/shared-sync": ["../../shared/sync/syncMerge.js"]
+    }
   },
-  "include": ["src"]
+  "include": ["src", "../../packages/core-engine/src", "../../shared/sync/syncMerge.d.ts"]
 }

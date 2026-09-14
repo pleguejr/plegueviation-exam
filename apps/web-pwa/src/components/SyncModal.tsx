@@ -18,6 +18,7 @@ import {
   getStoredSyncPin, 
   setStoredSyncPin, 
   getLastSyncTimestamp, 
+  getLastStorageBackend,
   syncWithCloud 
 } from '../services/sync';
 
@@ -35,6 +36,7 @@ export const SyncModal: React.FC<SyncModalProps> = ({
   const [pinInput, setPinInput] = useState('');
   const [currentPin, setCurrentPin] = useState<string | null>(null);
   const [lastSync, setLastSync] = useState<number | null>(null);
+  const [storageBackend, setStorageBackend] = useState<string | null>(null);
   const [isSyncing, setIsSyncing] = useState(false);
   const [statusMessage, setStatusMessage] = useState<{ type: 'success' | 'error' | 'info'; text: string } | null>(null);
 
@@ -44,6 +46,7 @@ export const SyncModal: React.FC<SyncModalProps> = ({
       setCurrentPin(stored);
       setPinInput(stored || '070707');
       setLastSync(getLastSyncTimestamp());
+      setStorageBackend(getLastStorageBackend());
       setStatusMessage(null);
     }
   }, [isOpen]);
@@ -68,7 +71,8 @@ export const SyncModal: React.FC<SyncModalProps> = ({
 
     if (result.success) {
       setLastSync(result.syncedAt || Date.now());
-      setStatusMessage({ type: 'success', text: '✅ ¡Dispositivo enlazado y sincronizado con éxito!' });
+      setStorageBackend(result.storageBackend || getLastStorageBackend());
+      setStatusMessage({ type: 'success', text: result.message || '✅ ¡Dispositivo enlazado y sincronizado con éxito!' });
       if (onSyncComplete) {
         onSyncComplete();
       }
@@ -87,7 +91,8 @@ export const SyncModal: React.FC<SyncModalProps> = ({
 
     if (result.success) {
       setLastSync(result.syncedAt || Date.now());
-      setStatusMessage({ type: 'success', text: '✅ Sincronización completada. Todos tus exámenes y estadísticas están al día.' });
+      setStorageBackend(result.storageBackend || getLastStorageBackend());
+      setStatusMessage({ type: 'success', text: result.message || '✅ Sincronización completada.' });
       if (onSyncComplete) {
         onSyncComplete();
       }
@@ -175,22 +180,40 @@ export const SyncModal: React.FC<SyncModalProps> = ({
 
         {/* Sync Status & Force Sync Button */}
         {currentPin && (
-          <div className="p-4 rounded-2xl bg-black/40 border border-slate-800 flex items-center justify-between gap-3">
-            <div className="space-y-0.5">
-              <span className="text-[11px] text-slate-400 font-bold uppercase block">Última sincronización:</span>
-              <span className="text-xs font-mono text-white font-semibold">
-                {lastSync ? new Date(lastSync).toLocaleString() : 'Pendiente de sincronizar'}
+          <div className="p-4 rounded-2xl bg-black/40 border border-slate-800 space-y-3">
+            <div className="flex items-center justify-between gap-3">
+              <div className="space-y-0.5">
+                <span className="text-[11px] text-slate-400 font-bold uppercase block">Última sincronización:</span>
+                <span className="text-xs font-mono text-white font-semibold">
+                  {lastSync ? new Date(lastSync).toLocaleString() : 'Pendiente de sincronizar'}
+                </span>
+              </div>
+
+              <button
+                onClick={handleForceSyncNow}
+                disabled={isSyncing}
+                className="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-sky-300 hover:text-white border border-slate-700 text-xs font-bold transition-all flex items-center gap-2 active:scale-95 disabled:opacity-40"
+              >
+                <RefreshCw className={`w-3.5 h-3.5 ${isSyncing ? 'animate-spin text-sky-400' : ''}`} />
+                <span>Sincronizar Ahora</span>
+              </button>
+            </div>
+            <div className="flex items-center gap-2 text-[11px]">
+              <span className="text-slate-500 font-bold uppercase">Almacenamiento:</span>
+              <span className={`font-bold ${
+                storageBackend === 'kv'
+                  ? 'text-emerald-400'
+                  : storageBackend === 'memory'
+                    ? 'text-amber-400'
+                    : 'text-slate-400'
+              }`}>
+                {storageBackend === 'kv'
+                  ? 'Persistente (KV / Upstash)'
+                  : storageBackend === 'memory'
+                    ? 'Memoria (temporal — configura KV)'
+                    : 'Desconocido'}
               </span>
             </div>
-
-            <button
-              onClick={handleForceSyncNow}
-              disabled={isSyncing}
-              className="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-sky-300 hover:text-white border border-slate-700 text-xs font-bold transition-all flex items-center gap-2 active:scale-95 disabled:opacity-40"
-            >
-              <RefreshCw className={`w-3.5 h-3.5 ${isSyncing ? 'animate-spin text-sky-400' : ''}`} />
-              <span>Sincronizar Ahora</span>
-            </button>
           </div>
         )}
 
