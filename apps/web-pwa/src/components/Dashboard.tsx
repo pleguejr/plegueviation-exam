@@ -75,7 +75,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
         loadAllQuestions(),
         loadManifest(),
         getAllStatsMap(),
-        getExamHistory(30)
+        getExamHistory(40)
       ]);
       setQuestions(qs || []);
       setManifest(mf);
@@ -146,6 +146,49 @@ export const Dashboard: React.FC<DashboardProps> = ({
   const overallAccuracy = (totalCorrect + totalIncorrect) > 0 
     ? Math.round((totalCorrect / (totalCorrect + totalIncorrect)) * 100) 
     : 0;
+
+  type ActivityPoint = {
+    id: string;
+    type: 'exam' | 'flashcard';
+    timestamp: number;
+    percentage: number;
+    label: string;
+  };
+
+  const activityPoints: ActivityPoint[] = [];
+  for (const sess of history) {
+    if (!sess.isCompleted || sess.score == null) continue;
+    activityPoints.push({
+      id: sess.sessionId,
+      type: 'exam',
+      timestamp: sess.endTime || sess.startTime || 0,
+      percentage: sess.score.percentage || 0,
+      label: `Test ${sess.score.percentage ?? 0}%`
+    });
+  }
+  for (const [qid, stats] of Object.entries(statsMap)) {
+    for (const h of stats.history || []) {
+      if (h.examMode !== 'smart_review') continue;
+      const rating = h.selectedOptionId;
+      const pct =
+        rating === 'MASTERED' || rating === 'easy'
+          ? 95
+          : rating === 'REGULAR' || rating === 'medium'
+            ? 65
+            : 30;
+      activityPoints.push({
+        id: `${qid}_${h.timestamp}`,
+        type: 'flashcard',
+        timestamp: h.timestamp,
+        percentage: pct,
+        label: `Flash ${rating === 'MASTERED' ? 'fácil' : rating === 'REGULAR' ? 'media' : 'difícil'}`
+      });
+    }
+  }
+  activityPoints.sort((a, b) => b.timestamp - a.timestamp);
+  const recentActivity = activityPoints.slice(0, 25).reverse();
+  const examCount = recentActivity.filter((a) => a.type === 'exam').length;
+  const flashCount = recentActivity.filter((a) => a.type === 'flashcard').length;
 
   // Temas de categoría
   const getCategoryTheme = (catId: string) => {
@@ -336,27 +379,50 @@ export const Dashboard: React.FC<DashboardProps> = ({
           </div>
         </div>
 
-        {/* Central Historical Chart Area */}
-        {history.length > 0 && (
+        {/* Central Historical Chart Area — tests + flashcards */}
+        {recentActivity.length > 0 && (
           <div className="pt-2 border-t border-slate-800/80 space-y-2">
-            <div className="flex items-center justify-between text-xs text-slate-400">
-              <span className="font-bold text-slate-300">Tendencia de los Últimos {Math.min(24, history.length)} Simulacros:</span>
-              <span className="font-mono text-[11px]">{history.length} completados</span>
+            <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-slate-400">
+              <span className="font-bold text-slate-300">
+                Tendencia últimos {recentActivity.length} resultados (tests + flashcards):
+              </span>
+              <span className="font-mono text-[11px]">
+                {examCount} tests · {flashCount} flash
+              </span>
             </div>
-            <div className="h-20 flex items-end gap-1.5 bg-black/40 p-2.5 rounded-2xl border border-slate-800">
-              {history.slice(0, 24).reverse().map((h, i) => {
-                const pct = h.score?.percentage || 0;
-                const passed = pct >= 75;
+            <div className="h-28 flex items-end gap-1 bg-black/40 p-2.5 rounded-2xl border border-slate-800 relative">
+              {/* 75% pass line */}
+              <div
+                className="absolute left-2 right-2 border-t border-dashed border-emerald-500/40 pointer-events-none"
+                style={{ bottom: `calc(0.625rem + 75% * (100% - 1.25rem) / 100)` }}
+              />
+              {recentActivity.map((point) => {
+                const passed = point.percentage >= 75;
+                const isFlash = point.type === 'flashcard';
                 return (
-                  <div key={i} className="flex-1 flex flex-col items-center gap-1 group relative">
-                    <div 
-                      className={`w-full rounded-t transition-all ${passed ? 'bg-[#008f45] shadow-glow-emerald' : 'bg-rose-600 shadow-glow-rose'}`}
-                      style={{ height: `${Math.max(12, pct)}%` }}
-                      title={`Simulacro #${i + 1}: ${pct}% (${passed ? 'APTO' : 'NO APTO'})`}
+                  <div key={point.id} className="flex-1 flex flex-col items-center gap-0.5 group relative min-w-0">
+                    <div
+                      className={`w-full max-w-[14px] mx-auto rounded-t transition-all ${
+                        isFlash
+                          ? passed
+                            ? 'bg-sky-400'
+                            : 'bg-amber-500'
+                          : passed
+                            ? 'bg-[#008f45] shadow-glow-emerald'
+                            : 'bg-rose-600 shadow-glow-rose'
+                      }`}
+                      style={{ height: `${Math.max(10, point.percentage)}%` }}
+                      title={`${point.label} · ${new Date(point.timestamp).toLocaleString()}`}
                     />
                   </div>
                 );
               })}
+            </div>
+            <div className="flex flex-wrap gap-3 text-[10px] text-slate-400 font-semibold">
+              <span className="flex items-center gap-1"><span className="w-2.5 h-2.5 rounded-sm bg-[#008f45]" /> Test ≥75%</span>
+              <span className="flex items-center gap-1"><span className="w-2.5 h-2.5 rounded-sm bg-rose-600" /> Test &lt;75%</span>
+              <span className="flex items-center gap-1"><span className="w-2.5 h-2.5 rounded-sm bg-sky-400" /> Flash fácil/media</span>
+              <span className="flex items-center gap-1"><span className="w-2.5 h-2.5 rounded-sm bg-amber-500" /> Flash difícil</span>
             </div>
           </div>
         )}

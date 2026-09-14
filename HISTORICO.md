@@ -4,7 +4,20 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 
 ---
 
-## 🚀 Versión Actual: v3.2.2 (2026-09-14)
+## 🚀 Versión Actual: v3.3.0 (2026-09-14)
+
+### 📊 Cabecera, Tendencias y Tarjetas SOP Visuales
+- **Versión en navbar:** `vX.Y.Z` inyectada desde `package.json` vía Vite.
+- **Tendencia unificada:** gráfica de los últimos **25** resultados incluyendo **tests y flashcards**.
+- **SOP modo día:** clases semánticas (`.procedure-*`) con contraste legible en tema claro.
+- **Diagramas de aproximación:** circuitos Visual / Circling / NPA (SVG) basados en MOB 2.0.11 y SOPM Sec 2.
+- **Infografía SOP:** franja de flujo, acentos por categoría, callouts y chips de rol rediseñados.
+
+> Nota: el PDF SOPM no está en el repositorio (`manuales/` gitignored). Los diagramas reproducen los hitos oficiales de las tarjetas; al montar el SOPM se pueden sustituir por extracciones raster.
+
+---
+
+## 🔐 Versión v3.2.2 (2026-09-14)
 
 ### 🔐 Cierre de seguridad y operación
 - **Eliminado `user_backup_070707.json` del CDN público** (ya no se sirve en GitHub Pages). El bootstrap server-side sigue disponible solo desde `banks/` cuando no hay KV.
