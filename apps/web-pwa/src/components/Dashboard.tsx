@@ -99,24 +99,24 @@ export const Dashboard: React.FC<DashboardProps> = ({
   const infoSearchHits = useMemo(() => {
     const q = infoSearch.trim().toLowerCase();
     if (q.length < 2) return [];
-    return questions
-      .filter((item) => {
-        const hay = [
-          item.stem,
-          item.id,
-          item.learning_objective,
-          item._category || '',
-          item.subject_id,
-          item.explanation?.text || '',
-          ...(item.explanation?.references || []),
-          ...item.options.map((o) => o.text)
-        ]
-          .join(' ')
-          .toLowerCase();
-        return hay.includes(q);
-      })
-      .slice(0, 12);
+    return questions.filter((item) => {
+      const hay = [
+        item.stem,
+        item.id,
+        item.learning_objective,
+        item._category || '',
+        item.subject_id,
+        item.explanation?.text || '',
+        ...(item.explanation?.references || []),
+        ...item.options.map((o) => o.text)
+      ]
+        .join(' ')
+        .toLowerCase();
+      return hay.includes(q);
+    });
   }, [infoSearch, questions]);
+
+  const infoSearchPreview = useMemo(() => infoSearchHits.slice(0, 12), [infoSearchHits]);
 
   const handleResetStats = async () => {
     const confirmReset = window.confirm(
@@ -269,20 +269,20 @@ export const Dashboard: React.FC<DashboardProps> = ({
     <div className="max-w-6xl mx-auto space-y-6 pb-20 font-sans">
       
       {/* 1. Buscador de información sobre el banco de preguntas */}
-      <div className="dashboard-info-search rounded-2xl border border-emerald-500/30 bg-[#0b1426] p-4 sm:p-5 shadow-lg space-y-3">
+      <div className="dashboard-info-search rounded-2xl border p-4 sm:p-5 shadow-lg space-y-3">
         <div className="flex items-start justify-between gap-3">
           <div>
-            <p className="text-[10px] font-black uppercase tracking-widest text-emerald-400">Centro de información</p>
-            <h2 className="text-base sm:text-lg font-extrabold text-white tracking-tight">
+            <p className="dashboard-info-search-kicker text-[10px] font-black uppercase tracking-widest">Centro de información</p>
+            <h2 className="dashboard-info-search-title text-base sm:text-lg font-extrabold tracking-tight">
               Buscar en el banco de preguntas
             </h2>
-            <p className="text-[11px] text-slate-400 mt-0.5">
+            <p className="dashboard-info-search-sub text-[11px] mt-0.5">
               Enunciados, objetivos, opciones y explicaciones · {totalQuestions} reactivos
             </p>
           </div>
         </div>
         <div className="relative">
-          <Search className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-emerald-400/80" />
+          <Search className="dashboard-info-search-icon w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2" />
           <input
             value={infoSearch}
             onChange={(e) => setInfoSearch(e.target.value)}
@@ -292,44 +292,58 @@ export const Dashboard: React.FC<DashboardProps> = ({
               }
             }}
             placeholder="Ej: TELSI, V1, flap 5, circling, fuel leak, SERA..."
-            className="w-full pl-10 pr-4 py-3 rounded-xl bg-slate-950/80 border border-slate-700 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400"
+            className="dashboard-info-search-input w-full pl-10 pr-4 py-3 rounded-xl text-sm focus:outline-none focus:ring-2"
           />
         </div>
         {infoSearch.trim().length >= 2 && (
-          <div className="rounded-xl border border-slate-700/80 bg-black/40 overflow-hidden">
-            <div className="px-3 py-2 text-[10px] font-bold uppercase tracking-wider text-slate-400 border-b border-slate-800 flex items-center justify-between">
-              <span>{infoSearchHits.length} resultado{infoSearchHits.length === 1 ? '' : 's'}</span>
-              {onOpenQuestionSearch && (
-                <button
-                  type="button"
-                  onClick={() => onOpenQuestionSearch(infoSearch.trim())}
-                  className="text-emerald-400 hover:text-emerald-300"
-                >
-                  Abrir en Questions →
-                </button>
-              )}
+          <div className="dashboard-info-search-results rounded-xl border overflow-hidden">
+            <div className="dashboard-info-search-results-bar px-3 py-2 text-[10px] font-bold uppercase tracking-wider border-b flex items-center justify-between gap-2 flex-wrap">
+              <span>
+                {infoSearchHits.length} resultado{infoSearchHits.length === 1 ? '' : 's'}
+                {infoSearchHits.length > 12 ? ' · vista previa 12' : ''}
+              </span>
+              <div className="flex items-center gap-3 normal-case tracking-normal">
+                {infoSearchHits.length > 0 && onPracticeQuestions && (
+                  <button
+                    type="button"
+                    onClick={() => onPracticeQuestions(infoSearchHits.map((q) => q.id))}
+                    className="dashboard-info-search-test-btn text-xs font-black"
+                  >
+                    Test con {infoSearchHits.length} →
+                  </button>
+                )}
+                {onOpenQuestionSearch && (
+                  <button
+                    type="button"
+                    onClick={() => onOpenQuestionSearch(infoSearch.trim())}
+                    className="dashboard-info-search-open-btn text-xs font-bold"
+                  >
+                    Abrir en Questions →
+                  </button>
+                )}
+              </div>
             </div>
-            <ul className="max-h-72 overflow-y-auto divide-y divide-slate-800/80">
-              {infoSearchHits.map((q) => {
+            <ul className="max-h-72 overflow-y-auto divide-y">
+              {infoSearchPreview.map((q) => {
                 const catTitle = manifest?.categories.find((c) => c.id === q._category)?.title || q._category || q.subject_id;
                 return (
                   <li key={q.id}>
                     <button
                       type="button"
                       onClick={() => onPracticeQuestions?.([q.id])}
-                      className="w-full text-left px-3 py-2.5 hover:bg-emerald-500/10 transition-colors"
+                      className="dashboard-info-search-hit w-full text-left px-3 py-2.5 transition-colors"
                     >
                       <div className="flex items-center gap-2 mb-0.5">
-                        <span className="text-[10px] font-mono text-sky-400">{q.id}</span>
-                        <span className="text-[10px] text-slate-500 truncate">{catTitle}</span>
+                        <span className="dashboard-info-search-hit-id text-[10px] font-mono">{q.id}</span>
+                        <span className="dashboard-info-search-hit-cat text-[10px] truncate">{catTitle}</span>
                       </div>
-                      <p className="text-xs text-slate-200 line-clamp-2 leading-relaxed">{q.stem}</p>
+                      <p className="dashboard-info-search-hit-stem text-xs line-clamp-2 leading-relaxed">{q.stem}</p>
                     </button>
                   </li>
                 );
               })}
               {infoSearchHits.length === 0 && (
-                <li className="px-3 py-4 text-xs text-slate-500 text-center">
+                <li className="dashboard-info-search-empty px-3 py-4 text-xs text-center">
                   Sin coincidencias. Prueba otra palabra clave.
                 </li>
               )}

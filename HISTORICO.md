@@ -4,7 +4,15 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 
 ---
 
-## 🚀 Versión Actual: v3.3.2 (2026-09-14)
+## 🚀 Versión Actual: v3.3.3 (2026-09-14)
+
+### 🔎 Buscador modo día + test desde resultados
+- **Modo día:** contraste del cuadro de búsqueda del dashboard (fondo claro, texto oscuro, borde verde).
+- **Questions:** banner «Hacer test con estas N» tras buscar; también desde la vista previa del dashboard.
+
+---
+
+## 🔎 Versión v3.3.2 (2026-09-14)
 
 ### 🔎 Buscador, Sync info y SOP limpio
 - **Dashboard:** el banner de sistema se sustituye por un **buscador de preguntas** (stem, LO, opciones, explicación).
