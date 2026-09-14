@@ -231,7 +231,7 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
                     ))}
                   </div>
                   {!isExpanded && card.goldenRules?.[0] && (
-                    <p className="text-[11px] text-amber-200/90 flex items-start gap-1.5 pt-1">
+                    <p className="procedure-preview-hint flex items-start gap-1.5 pt-1">
                       <Sparkles className="w-3.5 h-3.5 shrink-0 mt-0.5" />
                       <span className="line-clamp-2">{card.goldenRules[0]}</span>
                     </p>
