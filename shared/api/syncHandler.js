@@ -1,4 +1,4 @@
-// shared/api/syncHandler.js — Handler sync con merge servidor, historial y validación
+// shared/api/syncHandler.js — Handler sync con merge servidor, historial, KV persistente y validación
 import fs from 'fs';
 import path from 'path';
 import {
@@ -6,6 +6,11 @@ import {
   validateSyncPayload,
   normalizeSyncPayload
 } from '../sync/syncMerge.js';
+import {
+  loadSyncRecord,
+  saveSyncRecord,
+  getStorageBackend
+} from './syncStore.js';
 
 const MAX_PAYLOAD_BYTES = 5 * 1024 * 1024;
 const MAX_HISTORY = 3;
@@ -18,9 +23,6 @@ const ALLOWED_ORIGINS = new Set([
   'http://127.0.0.1:3000'
 ]);
 
-if (!globalThis._plegueSyncStore) {
-  globalThis._plegueSyncStore = new Map();
-}
 if (!globalThis._plegueSyncRateLimit) {
   globalThis._plegueSyncRateLimit = new Map();
 }
@@ -114,12 +116,14 @@ function readPayload(req) {
   };
 }
 
-function fetchRemoteData(cleanPin, bootstrap) {
-  const stored = unwrapStoredRecord(globalThis._plegueSyncStore.get(cleanPin));
+async function fetchRemoteData(cleanPin, bootstrap) {
+  const storedRaw = await loadSyncRecord(cleanPin);
+  const stored = unwrapStoredRecord(storedRaw);
   if (stored?.data) {
     return { record: stored, data: stored.data };
   }
-  if (bootstrap && cleanPin === '070707') {
+
+  if (bootstrap && cleanPin === '070707' && getStorageBackend() === 'memory') {
     const fallback = getBootstrapFallback();
     if (fallback) {
       const record = {
@@ -127,10 +131,11 @@ function fetchRemoteData(cleanPin, bootstrap) {
         data: fallback,
         history: []
       };
-      globalThis._plegueSyncStore.set('070707', record);
+      await saveSyncRecord('070707', record, ['plegue', 'plegue-mando']);
       return { record, data: fallback };
     }
   }
+
   return { record: null, data: null };
 }
 
@@ -161,13 +166,16 @@ export default async function syncHandler(req, res) {
     return res.status(429).json({ error: 'Demasiadas solicitudes. Espera un momento.' });
   }
 
+  const storageBackend = getStorageBackend();
+
   if (parsed.action === 'fetch') {
-    const { record, data } = fetchRemoteData(cleanPin, parsed.bootstrap);
+    const { record, data } = await fetchRemoteData(cleanPin, parsed.bootstrap);
     return res.status(200).json({
       found: Boolean(data),
       data,
       serverSyncedAt: record?.syncedAt || 0,
-      historyCount: record?.history?.length || 0
+      historyCount: record?.history?.length || 0,
+      storageBackend
     });
   }
 
@@ -185,7 +193,7 @@ export default async function syncHandler(req, res) {
     return res.status(413).json({ error: 'Payload demasiado grande' });
   }
 
-  const existing = unwrapStoredRecord(globalThis._plegueSyncStore.get(cleanPin));
+  const existing = unwrapStoredRecord(await loadSyncRecord(cleanPin));
   let mergedData = incoming;
 
   if (existing?.data) {
@@ -206,17 +214,16 @@ export default async function syncHandler(req, res) {
     history: existing?.history || []
   });
 
-  globalThis._plegueSyncStore.set(cleanPin, nextRecord);
-  if (cleanPin === '070707') {
-    globalThis._plegueSyncStore.set('plegue', nextRecord);
-    globalThis._plegueSyncStore.set('plegue-mando', nextRecord);
-  }
+  const aliasPins = cleanPin === '070707' ? ['plegue', 'plegue-mando'] : [];
+  const saveResult = await saveSyncRecord(cleanPin, nextRecord, aliasPins);
 
   return res.status(200).json({
     success: true,
     message: 'Progreso sincronizado en la nube con éxito',
     syncedAt: mergedData.syncedAt,
     merged: Boolean(existing?.data),
-    historyCount: nextRecord.history.length
+    historyCount: nextRecord.history.length,
+    storageBackend: saveResult.backend,
+    persisted: saveResult.persisted
   });
 }

@@ -11,3 +11,6 @@ Sistema de entrenamiento y simulador operacional para:
 
 ### 🌐 App Web Oficial (PWA 100% Offline)
 Acceso: [https://pleguejr.github.io/plegueviation-exam/](https://pleguejr.github.io/plegueviation-exam/)
+
+### ☁️ Sync Multi-Dispositivo (iPhone / iPad / PC)
+Configuración del almacenamiento cloud persistente: [`reference/SYNC_SETUP.md`](reference/SYNC_SETUP.md)

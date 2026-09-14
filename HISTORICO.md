@@ -4,9 +4,20 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 
 ---
 
-## 🚀 Versión Actual: v3.2.0 (2026-09-14)
+## 🚀 Versión Actual: v3.2.1 (2026-09-14)
 
-### 🛡️ Robustez, Sync Seguro y Prevención de Regresiones
+### ☁️ Sync Cloud Persistente (Upstash / Vercel KV)
+- **Nuevo módulo `shared/api/syncStore.js`:** almacenamiento durable en Redis vía REST API.
+- **Variables soportadas:** `UPSTASH_REDIS_REST_*` o `KV_REST_API_*` (Vercel KV nativo).
+- **Fallback automático** a memoria si no hay credenciales (con log de error).
+- **Bootstrap estático desactivado** cuando KV está activo (evita sobrescribir datos reales).
+- Guía de configuración: [`reference/SYNC_SETUP.md`](reference/SYNC_SETUP.md).
+
+---
+
+## 🛡️ Versión v3.2.0 (2026-09-14)
+
+### Robustez, Sync Seguro y Prevención de Regresiones
 - **Motor de fusión compartido** (`shared/sync/syncMerge.js`): misma lógica en cliente y servidor; eliminaciones, custom questions y stats se reconcilian por timestamp.
 - **Sync serializado:** mutex en cliente evita solapamiento de peticiones entre iPhone, iPad y PC.
 - **Servidor con merge + historial:** el API ya no hace last-write-wins ciego; conserva hasta 3 snapshots por PIN para recuperación.
