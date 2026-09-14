@@ -10,10 +10,12 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 - **Versión en navbar:** `vX.Y.Z` inyectada desde `package.json` vía Vite.
 - **Tendencia unificada:** gráfica de los últimos **25** resultados incluyendo **tests y flashcards**.
 - **SOP modo día:** clases semánticas (`.procedure-*`) con contraste legible en tema claro.
-- **Diagramas de aproximación:** circuitos Visual / Circling / NPA (SVG) basados en MOB 2.0.11 y SOPM Sec 2.
+- **Figuras SOPM (raster):** recortes oficiales en `apps/web-pwa/public/sop-diagrams/` (Visual, Circling, NPA/RNAV, ILS, OEI ILS, OEI Visual, OEI Circling, OEI NPA, No Slat/Flap).
+- **Tarjetas nuevas (sin sustituir las actuales):** ILS precisión, ILS OEI, Visual OEI, Circling OEI, NPA OEI, No Slat/Flap Landing.
+- **Diagramas SVG de estudio:** Visual / Circling / NPA como esquema complementario a la figura SOPM.
 - **Infografía SOP:** franja de flujo, acentos por categoría, callouts y chips de rol rediseñados.
 
-> Nota: el PDF SOPM no está en el repositorio (`manuales/` gitignored). Los diagramas reproducen los hitos oficiales de las tarjetas; al montar el SOPM se pueden sustituir por extracciones raster.
+> Nota: el PDF SOPM no está en el repositorio (`manuales/` gitignored). Las figuras raster se extraen de capturas del manual del usuario para estudio personal.
 
 ---
 

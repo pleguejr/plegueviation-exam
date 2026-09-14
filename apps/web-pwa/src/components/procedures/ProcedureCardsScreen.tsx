@@ -295,9 +295,29 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
                       </div>
                     )}
 
+                    {card.diagramImage && (
+                      <figure className="procedure-sop-figure">
+                        <img
+                          src={card.diagramImage}
+                          alt={card.diagramCaption || card.title}
+                          className="procedure-sop-figure-img"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                        {(card.diagramCaption || card.diagramNote) && (
+                          <figcaption className="procedure-sop-figure-caption">
+                            {card.diagramCaption && <span>{card.diagramCaption}</span>}
+                            {card.diagramNote && (
+                              <span className="procedure-sop-figure-note">{card.diagramNote}</span>
+                            )}
+                          </figcaption>
+                        )}
+                      </figure>
+                    )}
+
                     {diagramType && <ApproachDiagram type={diagramType} />}
 
-                    {card.diagramNote && !diagramType && (
+                    {!card.diagramImage && card.diagramNote && !diagramType && (
                       <div className="procedure-diagram-note rounded-2xl p-3.5 text-xs font-mono flex items-center gap-2.5">
                         <Compass className="w-4 h-4 shrink-0" />
                         <span>{card.diagramNote}</span>

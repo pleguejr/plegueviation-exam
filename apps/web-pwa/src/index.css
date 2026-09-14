@@ -1316,6 +1316,38 @@ table th {
   border: 1px solid rgba(56,189,248,0.3);
   color: #bae6fd;
 }
+.procedure-sop-figure {
+  margin: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid rgba(56,189,248,0.35);
+  background: #0b1220;
+}
+.procedure-sop-figure-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+.procedure-sop-figure-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.65rem 0.85rem;
+  font-size: 10px;
+  line-height: 1.35;
+  color: #bae6fd;
+  border-top: 1px solid rgba(56,189,248,0.25);
+}
+.procedure-sop-figure-caption > span:first-child {
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.procedure-sop-figure-note {
+  font-family: ui-monospace, monospace;
+  color: #94a3b8;
+}
 .procedure-flow-step {
   display: flex;
   align-items: center;
@@ -1440,6 +1472,18 @@ table th {
   background: #f0f9ff;
   border-color: #38bdf8;
   color: #0c4a6e;
+}
+.theme-light .procedure-sop-figure {
+  background: #ffffff;
+  border-color: #7dd3fc;
+}
+.theme-light .procedure-sop-figure-caption {
+  color: #0c4a6e;
+  border-top-color: #bae6fd;
+  background: #f0f9ff;
+}
+.theme-light .procedure-sop-figure-note {
+  color: #475569;
 }
 .theme-light .procedure-flow-step {
   background: linear-gradient(135deg, #e0f2fe, #ecfdf5);

@@ -24,6 +24,9 @@ export interface ProcedureCard {
   goldenRules?: string[];
   summary: string;
   diagramNote?: string;
+  /** Ruta pública a figura SOPM (ej. ./sop-diagrams/visual-approach-fig.jpg) */
+  diagramImage?: string;
+  diagramCaption?: string;
   sections: ProcedureSection[];
 }
 
@@ -217,6 +220,8 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
     ],
     summary: 'Diagrama y secuencia de perfiles, velocidades y configuraciones para la realización segura y estandarizada de aproximaciones visuales en el E195-E2.',
     diagramNote: 'Circuito de tráfico a 1.500 ft AFE | Separación lateral 2 NM | Viento en cola 30 s corregido por viento | Base 700-500 ft AFE | Final estabilizado a 500 ft AFE.',
+    diagramImage: './sop-diagrams/visual-approach-fig.jpg',
+    diagramCaption: 'SOPM-1755-200 · 3-35-10 · Visual Approach (E-Jets E2)',
     sections: [
       {
         title: 'Hitos de Configuración del Circuito Visual',
@@ -260,6 +265,8 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
     ],
     summary: 'Técnica reglamentaria de circling visual para el E195-E2 manteniendo referencias visuales constantes con la pista y aplicando márgenes de franqueamiento de obstáculos.',
     diagramNote: 'Nivelación a Circling Minimums | Viraje 45° 30 s -> Viento en cola a 1,5 NM | Cronómetro través 20 s + 30 s/1000 ft | Base y Final con desconexión de AP.',
+    diagramImage: './sop-diagrams/circling-approach-fig.jpg',
+    diagramCaption: 'SOPM-1755-200 · 3-35-10 · Circling Approach (E-Jets E2)',
     sections: [
       {
         title: 'Preparación y Configuración Inicial',
@@ -298,6 +305,8 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
       'Llamadas críticas Autoland: "AUTOLAND 1" (800ft), "ALIGN" (150ft), "FLARE" (50ft), "RETARD" (30ft).'
     ],
     summary: 'Procedimiento de gestión de aproximaciones de no precisión tipo A (2D) con técnicas VGP/FPA y cuadro de llamadas verbales obligatorias para aterrizajes automáticos.',
+    diagramImage: './sop-diagrams/npa-gps-rnav-fig.jpg',
+    diagramCaption: 'SOPM-1755-200 · 3-35-10 · Non-Precision / GPS / RNAV Approach',
     sections: [
       {
         title: 'Técnica NPA con VGP (Vertical Glide Path)',
@@ -327,6 +336,242 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
           { role: 'PM', callout: '"FLARE" (o "NO FLARE" -> GA)', action: 'A 50 ft RA.' },
           { role: 'PM', callout: '"RETARD"', action: 'A 30 ft RA (palancas a ralentí).' },
           { role: 'PM', callout: '"ROLLOUT"', action: 'En la toma de contacto.' }
+        ]
+      }
+    ]
+  },
+
+  // =========================================================================
+  // 2b. APROXIMACIONES SOPM ADICIONALES (figuras oficiales E-Jets E2)
+  // =========================================================================
+  {
+    id: 'card-norm-ils-precision',
+    category: 'normal',
+    title: 'Aproximación de Precisión ILS',
+    subtitle: 'Localizer / Glide Slope, configuración y Missed Approach estándar',
+    manualRef: 'SOPM-1755-200 · 3-35-05 / 3-35-10',
+    airplane: 'Embraer 195-E2 / Binter Ops',
+    badges: ['ILS', 'Precisión', 'APP Mode', 'SOPM'],
+    goldenRules: [
+      'Interceptar con FLAPS 2 y APP mode armado.',
+      'En Glide Slope intercept: Landing Flaps + GA heading/altitude + Before Landing Checklist.',
+      'A “ONE DOT” bajo GS: GEAR DOWN + FLAPS 3 (según secuencia SOPM).',
+      'Missed Approach: TO/GA → thrust → attitude → GA flaps → positive rate / gear up.'
+    ],
+    summary: 'Perfil SOPM de aproximación ILS AEO con hitos de captura LOC/GS, checklists y frustrada.',
+    diagramImage: './sop-diagrams/ils-precision-fig.jpg',
+    diagramCaption: 'SOPM-1755-200 · Precision Approach (ILS)',
+    sections: [
+      {
+        title: 'Secuencia ILS (AEO)',
+        color: 'sky',
+        items: [
+          { role: 'STEP', action: 'Approaching intercept heading:', details: 'ARM APP MODE. Intercept with FLAPS 2.' },
+          { role: 'STEP', action: 'Approaching field:', details: 'Appropriate vertical and lateral modes. Complete Approach Checklist at FIX.' },
+          { role: 'STEP', action: 'Glide Slope intercept:', details: 'Set Landing Flaps. Set Go-Around Heading and Altitude. Before Landing Checklist.' },
+          { role: 'STEP', action: 'ONE DOT (below GS):', details: 'GEAR DOWN + FLAPS 3.' }
+        ]
+      },
+      {
+        title: 'Missed Approach',
+        color: 'rose',
+        items: [
+          { role: 'PF', action: 'PRESS TO/GA BUTTON' },
+          { role: 'PF', action: 'GO AROUND THRUST · GO AROUND ATTITUDE · SET GO AROUND FLAPS' },
+          { role: 'PM', callout: '"POSITIVE RATE"', action: 'GEAR UP · Complete Go Around Procedure · After Takeoff Checklist' }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'card-norm-oei-ils',
+    category: 'normal',
+    title: 'Aproximación ILS con un Motor Inoperativo (OEI)',
+    subtitle: 'Precision Approach OEI — APP, flaps y checklist monomotor',
+    manualRef: 'SOPM-1755-200 · 3-35-05',
+    airplane: 'Embraer 195-E2 / Binter Ops',
+    badges: ['OEI', 'ILS', 'Flap 5', 'SOPM'],
+    goldenRules: [
+      'Completar One Engine Inoperative Approach and Landing Checklist antes de la fase final.',
+      'Intercept con FLAPS 2 y APP armado.',
+      'En GS intercept: FLAPS 5 + GA heading/altitude + Before Landing Checklist.',
+      'A ONE DOT: GEAR DOWN + FLAPS 3 (secuencia SOPM OEI).'
+    ],
+    summary: 'Perfil SOPM de ILS monomotor con hitos de configuración y frustrada.',
+    diagramImage: './sop-diagrams/oei-ils-fig.jpg',
+    diagramCaption: 'SOPM-1755-200 · One Engine Inoperative Precision Approach (ILS)',
+    sections: [
+      {
+        title: 'Hitos OEI ILS',
+        color: 'amber',
+        items: [
+          { role: 'ALERT', action: 'Complete ONE ENGINE INOPERATIVE APPROACH AND LANDING CHECKLIST.' },
+          { role: 'STEP', action: 'Approaching intercept heading: ARM APP MODE · Intercept with FLAPS 2.' },
+          { role: 'STEP', action: 'Glide Slope intercept: FLAPS 5 · Set GA heading/altitude · Before Landing Checklist.' },
+          { role: 'STEP', action: 'ONE DOT: GEAR DOWN · FLAPS 3.' }
+        ]
+      },
+      {
+        title: 'Missed Approach OEI',
+        color: 'rose',
+        items: [
+          { role: 'PF', action: 'TO/GA · GA thrust · GA attitude · Set GA flaps' },
+          { role: 'PM', callout: '"POSITIVE RATE"', action: 'GEAR UP · Complete GA procedure · After Takeoff Checklist' }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'card-norm-oei-visual',
+    category: 'normal',
+    title: 'Aproximación Visual OEI (Un Motor Inoperativo)',
+    subtitle: 'Circuito AEO vs OEI: Flaps 1→2→3→5, gear en base',
+    manualRef: 'SOPM-1755-200 · 3-35-10',
+    airplane: 'Embraer 195-E2 / Binter Ops',
+    badges: ['OEI', 'Visual', 'Flaps 5', 'SOPM'],
+    goldenRules: [
+      'Downwind: FLAPS 1 · 1.500 ft.',
+      'Abeam: FLAPS 2 · ⏱ 30 SEC.',
+      'Turning base: GEAR DOWN + FLAPS 3.',
+      'Final: FLAPS 5 + Before Landing Checklist (≈1000 ft / 2.5 NM según figura).'
+    ],
+    summary: 'Circuito visual monomotor según figura SOPM One Engine Inoperative Approach.',
+    diagramImage: './sop-diagrams/oei-approach-fig.jpg',
+    diagramCaption: 'SOPM-1755-200 · One Engine Inoperative Approach',
+    sections: [
+      {
+        title: 'Configuración del circuito OEI',
+        color: 'amber',
+        items: [
+          { role: 'STEP', action: 'Entering downwind: FLAPS 1 · 1500 FT.' },
+          { role: 'STEP', action: 'Abeam threshold: FLAPS 2 · 30 SEC.' },
+          { role: 'STEP', action: 'Turning base: GEAR DOWN · FLAPS 3.' },
+          { role: 'STEP', action: 'Final: FLAPS 5 · BEFORE LANDING CHECKLIST.' }
+        ]
+      },
+      {
+        title: 'Missed Approach',
+        color: 'rose',
+        items: [
+          { role: 'PF', action: 'TO/GA · GA thrust · GA attitude · Set GA flaps · Positive rate / Gear up' },
+          { role: 'STEP', action: 'Complete Go Around Procedure · After Takeoff Checklist' }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'card-norm-oei-circling',
+    category: 'normal',
+    title: 'Circling Approach OEI',
+    subtitle: 'Circling monomotor: Flap 2 inicial, gear en base, Flap 5 en final',
+    manualRef: 'SOPM-1755-200 · 3-35-10',
+    airplane: 'Embraer 195-E2 / Binter Ops',
+    badges: ['OEI', 'Circling', '1.5 NM', 'SOPM'],
+    goldenRules: [
+      'Inicial: GEAR UP · FLAPS 2 · Set Circling Minimums.',
+      'Runway in sight: level off at circling altitude · set GA altitude.',
+      'Abeam: start chronometer · maintain visual refs · ⏱ 20 SEC.',
+      'Turning base (~1.5 NM): GEAR DOWN · FLAPS 3. Final: FLAPS 5 · AP OFF · rudder trim neutral.'
+    ],
+    summary: 'Maniobra circling con un motor inoperativo según figura SOPM.',
+    diagramImage: './sop-diagrams/oei-circling-approach-fig.jpg',
+    diagramCaption: 'SOPM-1755-200 · One Engine Inoperative Circling Approach',
+    sections: [
+      {
+        title: 'Secuencia Circling OEI',
+        color: 'indigo',
+        items: [
+          { role: 'STEP', action: 'Initial: GEAR UP · FLAPS 2 · SET CIRCLING MINIMUMS.' },
+          { role: 'STEP', action: 'Runway in sight: LEVEL OFF · DOWNWIND · SET GA ALTITUDE.' },
+          { role: 'STEP', action: 'Abeam threshold: START CHRONOMETER · 20 SEC · maintain visual references.' },
+          { role: 'STEP', action: 'Turning base: GEAR DOWN · FLAPS 3 (~1.5 NM).' },
+          { role: 'STEP', action: 'Final: FLAPS 5 · intercept visual path · AP disconnected · rudder trim neutral · BLC.' }
+        ]
+      },
+      {
+        title: 'Missed Approach',
+        color: 'rose',
+        items: [
+          { role: 'PF', action: 'TO/GA · thrust · attitude · GA flaps · positive rate / gear up' },
+          { role: 'STEP', action: 'Complete GA procedure · After Takeoff Checklist' }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'card-norm-oei-npa',
+    category: 'normal',
+    title: 'NPA OEI (Non-Precision / GPS monomotor)',
+    subtitle: 'Perfil OEI hacia MDA con checklist monomotor y VGP/non-VGP',
+    manualRef: 'SOPM-1755-200 · 3-35-10',
+    airplane: 'Embraer 195-E2 / Binter Ops',
+    badges: ['OEI', 'NPA', 'MDA', 'SOPM'],
+    goldenRules: [
+      'Completar One Engine Inoperative Approach and Landing Checklist.',
+      'Intercept with FLAPS 2 · appropriate vertical/lateral modes.',
+      'Approaching FAF: FLAPS 5 · set MDA or GA altitude (VGP) · BLC · GPS APPR annunciator.',
+      'Inbound: GEAR DOWN · FLAPS 3. Runway in sight: intercept landing profile · set GA altitude (NON-VGP).'
+    ],
+    summary: 'Aproximación de no precisión monomotor según figura SOPM.',
+    diagramImage: './sop-diagrams/oei-npa-fig.jpg',
+    diagramCaption: 'SOPM-1755-200 · One Engine Inoperative Non-Precision Approach',
+    sections: [
+      {
+        title: 'Perfil NPA OEI',
+        color: 'amber',
+        items: [
+          { role: 'ALERT', action: 'Complete OEI Approach and Landing Checklist.' },
+          { role: 'STEP', action: 'Approaching intercept heading: Intercept with FLAPS 2.' },
+          { role: 'STEP', action: 'Approaching FAF: FLAPS 5 · Set MDA or GA ALT (VGP) · Before Landing Checklist · GPS APPR check.' },
+          { role: 'STEP', action: 'Inbound: GEAR DOWN · FLAPS 3. Descend to MDA (precision-like).' },
+          { role: 'STEP', action: 'Runway in sight: Intercept landing profile · Set GA altitude (NON-VGP).' }
+        ]
+      },
+      {
+        title: 'Missed Approach',
+        color: 'rose',
+        items: [
+          { role: 'PF', action: 'TO/GA · GA thrust · attitude · GA flaps · positive rate / gear up' },
+          { role: 'STEP', action: 'Complete GA · After Takeoff Checklist' }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'card-norm-no-slat-flap',
+    category: 'normal',
+    title: 'Aterrizaje sin Slat / Flap (No Slat/Flap Landing)',
+    subtitle: 'Circuito extendido 4 NM, gear en base, idle en umbral',
+    manualRef: 'SOPM-1755-200 · 3-35-10',
+    airplane: 'Embraer 195-E2 / Binter Ops',
+    badges: ['No Flap', 'Emergencia técnica', '4 NM', 'SOPM'],
+    goldenRules: [
+      'Abeam / downwind a 1500 FT.',
+      'Longitud de viento en cola ≈ 4 NM desde abeam hasta viraje a base.',
+      'Turning base: GEAR DOWN. Final: Before Landing Checklist.',
+      'Over threshold: THRUST LEVERS IDLE. Missed Approach estándar TO/GA.'
+    ],
+    summary: 'Técnica SOPM para aterrizaje sin slats/flaps operativos (circuito largo y gestión de energía).',
+    diagramImage: './sop-diagrams/no-slat-flap-landing-fig.jpg',
+    diagramCaption: 'SOPM-1755-200 · No Slat / Flap Landing',
+    sections: [
+      {
+        title: 'Circuito No Slat/Flap',
+        color: 'rose',
+        items: [
+          { role: 'STEP', action: 'Entering downwind / abeam: 1500 FT.' },
+          { role: 'STEP', action: 'Downwind leg length: ≈ 4 NM to turning base.' },
+          { role: 'STEP', action: 'Turning base: GEAR DOWN.' },
+          { role: 'STEP', action: 'Final (~6.5 NM / 1500 FT según figura): BEFORE LANDING CHECKLIST.' },
+          { role: 'ALERT', action: 'Over threshold: THRUST LEVERS IDLE.' }
+        ]
+      },
+      {
+        title: 'Missed Approach',
+        color: 'rose',
+        items: [
+          { role: 'PF', action: 'PRESS TO/GA · GA thrust · GA attitude' },
+          { role: 'PM', callout: '"POSITIVE RATE"', action: 'GEAR UP · Complete GA procedure · After Takeoff Checklist' }
         ]
       }
     ]
