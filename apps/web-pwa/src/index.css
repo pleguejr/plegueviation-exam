@@ -217,6 +217,96 @@
 }
 
 /* 3.2 DASHBOARD BANNER Y PERFORMANCE CARD EN MODO DÍA */
+.dashboard-info-search {
+  background: #0b1426;
+  border-color: rgba(16, 185, 129, 0.35);
+  color: #e2e8f0;
+}
+.dashboard-info-search-kicker { color: #34d399; }
+.dashboard-info-search-title { color: #ffffff; }
+.dashboard-info-search-sub { color: #94a3b8; }
+.dashboard-info-search-icon { color: rgba(52, 211, 153, 0.85); }
+.dashboard-info-search-input {
+  background: rgba(2, 6, 23, 0.8);
+  border: 1px solid #334155;
+  color: #ffffff;
+}
+.dashboard-info-search-input::placeholder { color: #64748b; }
+.dashboard-info-search-input:focus {
+  border-color: #34d399;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.25);
+}
+.dashboard-info-search-results {
+  background: rgba(0, 0, 0, 0.4);
+  border-color: rgba(51, 65, 85, 0.85);
+}
+.dashboard-info-search-results-bar {
+  color: #94a3b8;
+  border-color: #1e293b;
+}
+.dashboard-info-search-results ul { border-color: rgba(30, 41, 59, 0.8); }
+.dashboard-info-search-results li + li,
+.dashboard-info-search-results ul > li {
+  border-color: rgba(30, 41, 59, 0.8);
+}
+.dashboard-info-search-open-btn { color: #34d399; }
+.dashboard-info-search-open-btn:hover { color: #6ee7b7; }
+.dashboard-info-search-test-btn {
+  color: #0f172a;
+  background: linear-gradient(90deg, #38bdf8, #2563eb);
+  padding: 0.25rem 0.65rem;
+  border-radius: 0.55rem;
+}
+.dashboard-info-search-test-btn:hover { filter: brightness(1.08); }
+.dashboard-info-search-hit:hover { background: rgba(16, 185, 129, 0.1); }
+.dashboard-info-search-hit-id { color: #38bdf8; }
+.dashboard-info-search-hit-cat { color: #64748b; }
+.dashboard-info-search-hit-stem { color: #e2e8f0; }
+.dashboard-info-search-empty { color: #64748b; }
+
+.theme-light .dashboard-info-search {
+  background: #ffffff !important;
+  border-color: #86efac !important;
+  color: #0f172a !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 104, 55, 0.08) !important;
+}
+.theme-light .dashboard-info-search-kicker { color: #047857 !important; }
+.theme-light .dashboard-info-search-title { color: #0f172a !important; }
+.theme-light .dashboard-info-search-sub { color: #475569 !important; }
+.theme-light .dashboard-info-search-icon { color: #059669 !important; }
+.theme-light .dashboard-info-search-input {
+  background: #f8fafc !important;
+  border: 1.5px solid #cbd5e1 !important;
+  color: #0f172a !important;
+}
+.theme-light .dashboard-info-search-input::placeholder { color: #94a3b8 !important; }
+.theme-light .dashboard-info-search-input:focus {
+  border-color: #10b981 !important;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2) !important;
+}
+.theme-light .dashboard-info-search-results {
+  background: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+.theme-light .dashboard-info-search-results-bar {
+  color: #475569 !important;
+  border-color: #e2e8f0 !important;
+  background: #f1f5f9 !important;
+}
+.theme-light .dashboard-info-search-open-btn { color: #047857 !important; }
+.theme-light .dashboard-info-search-hit:hover { background: #ecfdf5 !important; }
+.theme-light .dashboard-info-search-hit-id { color: #0369a1 !important; }
+.theme-light .dashboard-info-search-hit-cat { color: #64748b !important; }
+.theme-light .dashboard-info-search-hit-stem { color: #0f172a !important; }
+.theme-light .dashboard-info-search-empty { color: #64748b !important; }
+
+.theme-light .explorer-search-test-banner {
+  background: linear-gradient(90deg, #ecfeff, #ecfdf5) !important;
+  border-color: #67e8f9 !important;
+}
+.theme-light .explorer-search-test-banner p:first-child { color: #0e7490 !important; }
+.theme-light .explorer-search-test-banner p:last-of-type { color: #334155 !important; }
+
 .theme-light .dashboard-announcement-banner {
   background: #ffffff !important;
   border: 1.5px solid #d1fae5 !important;

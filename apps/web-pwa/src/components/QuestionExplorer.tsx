@@ -416,8 +416,28 @@ export const QuestionExplorer: React.FC<QuestionExplorerProps> = ({
               ))}
             </select>
           </div>
-
         </div>
+
+        {activeTab === 'search' && searchTerm.trim().length >= 2 && filteredQuestions.length > 0 && (
+          <div className="explorer-search-test-banner flex flex-col sm:flex-row sm:items-center justify-between gap-3 rounded-xl border border-sky-400/40 bg-gradient-to-r from-sky-950/80 to-emerald-950/50 px-4 py-3">
+            <div className="min-w-0">
+              <p className="text-xs font-black text-sky-200 uppercase tracking-wide">
+                Resultados de búsqueda
+              </p>
+              <p className="text-[11px] text-slate-300 mt-0.5">
+                {filteredQuestions.length} pregunta{filteredQuestions.length === 1 ? '' : 's'} coinciden con «{searchTerm.trim()}»
+              </p>
+            </div>
+            <button
+              type="button"
+              onClick={() => onStartCustomQuiz(filteredQuestions.map((q) => q.id))}
+              className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs font-black bg-gradient-to-r from-emerald-500 to-sky-600 hover:from-emerald-400 hover:to-sky-500 text-white shadow-md active:scale-95 transition-all shrink-0"
+            >
+              <Play className="w-4 h-4 fill-current" />
+              Hacer test con estas {filteredQuestions.length}
+            </button>
+          </div>
+        )}
 
         {/* Results Counter Bar */}
         <div className="flex items-center justify-between text-xs text-slate-400 pt-1">
