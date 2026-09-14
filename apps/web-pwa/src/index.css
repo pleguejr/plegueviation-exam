@@ -1339,6 +1339,75 @@ table th {
   height: auto;
   background: #fff;
 }
+.procedure-sop-figure-frame {
+  position: relative;
+  display: inline-block;
+  min-width: 560px;
+  width: max(100%, min(100vw - 2rem, 720px));
+}
+.procedure-sop-figure-frame .procedure-sop-figure-img {
+  width: 100%;
+  min-width: 0;
+}
+.procedure-sop-step-overlay {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.4rem;
+  padding: 0.55rem 0.6rem 0.65rem;
+  background: linear-gradient(180deg, rgba(248,250,252,0.92), rgba(241,245,249,0.98));
+  border-top: 1px solid rgba(148,163,184,0.35);
+}
+.procedure-sop-step-box {
+  display: flex;
+  gap: 0.45rem;
+  align-items: flex-start;
+  padding: 0.45rem 0.55rem;
+  border-radius: 0.65rem;
+  border: 1px solid transparent;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(15,23,42,0.06);
+}
+.procedure-sop-step-num {
+  flex-shrink: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  font-weight: 900;
+  color: #fff;
+}
+.procedure-sop-step-label {
+  margin: 0;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #0f172a;
+}
+.procedure-sop-step-detail {
+  margin: 0.15rem 0 0;
+  font-size: 9px;
+  line-height: 1.3;
+  color: #475569;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.procedure-sop-step-sky { border-color: #7dd3fc; background: #f0f9ff; }
+.procedure-sop-step-sky .procedure-sop-step-num { background: #0284c7; }
+.procedure-sop-step-teal { border-color: #5eead4; background: #f0fdfa; }
+.procedure-sop-step-teal .procedure-sop-step-num { background: #0d9488; }
+.procedure-sop-step-amber { border-color: #fcd34d; background: #fffbeb; }
+.procedure-sop-step-amber .procedure-sop-step-num { background: #d97706; }
+.procedure-sop-step-indigo { border-color: #a5b4fc; background: #eef2ff; }
+.procedure-sop-step-indigo .procedure-sop-step-num { background: #4f46e5; }
+.procedure-sop-step-rose { border-color: #fda4af; background: #fff1f2; }
+.procedure-sop-step-rose .procedure-sop-step-num { background: #e11d48; }
+.procedure-sop-step-emerald { border-color: #6ee7b7; background: #ecfdf5; }
+.procedure-sop-step-emerald .procedure-sop-step-num { background: #059669; }
 .procedure-sop-figure-caption {
   display: flex;
   flex-direction: column;
