@@ -4,7 +4,16 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 
 ---
 
-## 🚀 Versión Actual: v3.3.6 (2026-09-14)
+## 🚀 Versión Actual: v3.3.7 (2026-09-14)
+
+### 🎨 SOP emergencias + TABLAS modo día
+- **SOP Emergencias:** marco salmón sustituido por rosa polvo suave (`#f3ecee` / `#a67a82`), menos chillón en modo día y noche.
+- **TABLAS OPS:** contraste completo en modo día (hero, pestañas, tarjetas, tablas) con clases semánticas `ops-tables-*`.
+- **Memory Items (tabla):** columna «Acciones inmediatas» con pasos numerados diferenciados (no agolpados en un bloque).
+
+---
+
+## 🔋 Versión v3.3.6 (2026-09-14)
 
 ### 🔋 Tarjeta SOP Power Banks 2026
 - Nueva tarjeta **Power Banks en Vuelo — Normativa 2026** (BOE / OACI / IATA): reglas de pasajeros, uso operativo ≤100 Wh, riesgos (fuga térmica) y marco legal (vigencia 27/03/2026).
