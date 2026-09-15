@@ -9,10 +9,11 @@ import {
   X, 
   Check, 
   AlertCircle, 
-  Zap, 
-  Wifi, 
-  Lock,
-  ArrowRight
+  BookOpen,
+  HardDrive,
+  Sparkles,
+  ShieldCheck,
+  Database
 } from 'lucide-react';
 import { 
   getStoredSyncPin, 
@@ -184,6 +185,58 @@ export const SyncModal: React.FC<SyncModalProps> = ({
               Actualizar PWA a la Última Versión
             </button>
           )}
+        </div>
+
+        {/* Question creation process */}
+        <div className="sync-qcreate-card p-4 rounded-2xl bg-[#091224] border border-violet-500/30 space-y-3">
+          <div className="flex items-start gap-3">
+            <div className="w-10 h-10 rounded-full bg-violet-500/15 border border-violet-500/35 flex items-center justify-center text-violet-300 flex-shrink-0">
+              <BookOpen className="w-5 h-5" />
+            </div>
+            <div className="min-w-0">
+              <h3 className="text-sm font-black text-violet-200 leading-snug">
+                Flujo de creación de preguntas
+              </h3>
+              <p className="text-[11px] text-slate-400 mt-0.5 leading-relaxed">
+                Cómo entra un lote nuevo al banco oficial y llega a tus dispositivos (cero invención; solo manuales).
+              </p>
+            </div>
+          </div>
+
+          <ol className="space-y-2.5 text-[11px] text-slate-300 leading-relaxed">
+            <li className="flex gap-2.5">
+              <span className="sync-qcreate-step flex-shrink-0 w-6 h-6 rounded-lg bg-violet-500/20 border border-violet-500/40 text-violet-200 font-black flex items-center justify-center text-[10px]">1</span>
+              <span>
+                <HardDrive className="w-3 h-3 inline-block mr-1 text-violet-300 align-text-bottom" />
+                <strong className="text-violet-100">Fuente:</strong> PDF del manual solo en Google Drive <span className="font-mono text-violet-200/90">Antigravity/manuales/</span> (nunca en GitHub).
+              </span>
+            </li>
+            <li className="flex gap-2.5">
+              <span className="sync-qcreate-step flex-shrink-0 w-6 h-6 rounded-lg bg-violet-500/20 border border-violet-500/40 text-violet-200 font-black flex items-center justify-center text-[10px]">2</span>
+              <span>
+                <Sparkles className="w-3 h-3 inline-block mr-1 text-violet-300 align-text-bottom" />
+                <strong className="text-violet-100">Generar:</strong> NotebookLM/Gemini + Metaprompt (capítulo acotado) → JSON con 1 correcta + 3 distractores reales y cita con página.
+              </span>
+            </li>
+            <li className="flex gap-2.5">
+              <span className="sync-qcreate-step flex-shrink-0 w-6 h-6 rounded-lg bg-violet-500/20 border border-violet-500/40 text-violet-200 font-black flex items-center justify-center text-[10px]">3</span>
+              <span>
+                <ShieldCheck className="w-3 h-3 inline-block mr-1 text-violet-300 align-text-bottom" />
+                <strong className="text-violet-100">Auditar:</strong> skills TRE (fidelidad + distractores) → Antigravity valida schema → carpeta <span className="font-mono text-violet-200/90">banks/</span>.
+              </span>
+            </li>
+            <li className="flex gap-2.5">
+              <span className="sync-qcreate-step flex-shrink-0 w-6 h-6 rounded-lg bg-violet-500/20 border border-violet-500/40 text-violet-200 font-black flex items-center justify-center text-[10px]">4</span>
+              <span>
+                <Database className="w-3 h-3 inline-block mr-1 text-violet-300 align-text-bottom" />
+                <strong className="text-violet-100">Publicar:</strong> <span className="font-mono">build:banks</span> → push GitHub → Vercel → al abrir la app con el mismo PIN, el lote queda offline en IndexedDB (también flashcards numéricas/acrónimos).
+              </span>
+            </li>
+          </ol>
+
+          <p className="text-[10px] text-slate-500 leading-relaxed border-t border-violet-500/20 pt-2.5">
+            Atajo en iPad: <strong className="text-slate-400">Importar IA</strong> / Comunicados pega JSON al banco personal. Para el catálogo oficial del repo, siempre el paso 3–4.
+          </p>
         </div>
 
         {/* PIN Configuration Box */}
