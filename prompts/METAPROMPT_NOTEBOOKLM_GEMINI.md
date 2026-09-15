@@ -6,6 +6,7 @@
 > 3. **Estructura 1 Correcta + 3 Distractores Realistas**:
 >    - 1 Opción verdadera ("is_correct": true).
 >    - 3 Distractores plausibles ("is_correct": false) basados en errores reales de pilotaje, límites de otra fase de vuelo, o confusión habitual de sistemas.
+>    - Distractores difíciles pero con sentido; prohibido inventar cifras, micro-variar un solo número en el mismo párrafo, o opciones absurdas (p. ej. motor 3 en bimotor).
 > 4. **Trazabilidad y Citas Exactas**: Referencia obligatoria a: Manual, Edición/Revisión, Capítulo/Sección, Párrafo y Página física.
 
 ---
