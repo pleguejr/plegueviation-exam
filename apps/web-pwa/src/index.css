@@ -718,23 +718,42 @@
 .ops-com-icon-btn:hover { color: #fff; border-color: #818cf8; }
 .ops-com-icon-btn-danger:hover { color: #fecaca; border-color: #f87171; }
 
+/* Day mode — Comunicados (MUST override dark cockpit defaults) */
+.theme-light .ops-com-panel {
+  background: #ffffff !important;
+  border-color: #a5b4fc !important;
+  color: #0f172a !important;
+  box-shadow: 0 10px 28px rgba(79, 70, 229, 0.08);
+}
+.theme-light .ops-com-header {
+  background: #ffffff !important;
+  color: #0f172a !important;
+}
 .theme-light .ops-com-header:hover { background: #eef2ff !important; }
 .theme-light .ops-com-chevron {
   background: #ffffff !important;
   border-color: #a5b4fc !important;
   color: #4338ca !important;
 }
-.theme-light .ops-com-body { border-top-color: #e2e8f0 !important; }
+.theme-light .ops-com-body {
+  background: #ffffff !important;
+  border-top-color: #e2e8f0 !important;
+  color: #0f172a !important;
+}
 .theme-light .ops-com-drop-btn {
   background: #eef2ff !important;
   border-color: #a5b4fc !important;
   color: #3730a3 !important;
 }
+.theme-light .ops-com-drop-btn:hover {
+  background: #e0e7ff !important;
+  border-color: #818cf8 !important;
+}
 .theme-light .ops-com-kicker { color: #4338ca !important; }
 .theme-light .ops-com-title { color: #0f172a !important; }
 .theme-light .ops-com-sub,
-.theme-light .ops-com-hint { color: #475569 !important; }
-.theme-light .ops-com-section-title { color: #334155 !important; }
+.theme-light .ops-com-hint { color: #334155 !important; }
+.theme-light .ops-com-section-title { color: #1e293b !important; }
 .theme-light .ops-com-steps li {
   background: #f8fafc !important;
   border-color: #e2e8f0 !important;
@@ -747,13 +766,14 @@
 }
 .theme-light .ops-com-btn-primary {
   background: linear-gradient(90deg, #6366f1, #4f46e5) !important;
-  color: #fff !important;
+  color: #ffffff !important;
   border-color: transparent !important;
 }
-.theme-light .ops-com-btn-copy {
+.theme-light .ops-com-btn-copy,
+.theme-light .ops-com-fast-btn.ops-com-btn-copy {
   background: #eef2ff !important;
   border-color: #a5b4fc !important;
-  color: #4338ca !important;
+  color: #3730a3 !important;
 }
 .theme-light .ops-com-alert-ok {
   background: #ecfdf5 !important;
@@ -770,6 +790,7 @@
 .theme-light .ops-com-import-box {
   background: #f8fafc !important;
   border-color: #cbd5e1 !important;
+  color: #0f172a !important;
 }
 .theme-light .ops-com-field { color: #475569 !important; }
 .theme-light .ops-com-field input,
@@ -777,8 +798,11 @@
 .theme-light .ops-com-field textarea,
 .theme-light .ops-com-json {
   background: #ffffff !important;
-  border-color: #cbd5e1 !important;
+  border: 1.5px solid #94a3b8 !important;
   color: #0f172a !important;
+}
+.theme-light .ops-com-json::placeholder {
+  color: #64748b !important;
 }
 .theme-light .ops-com-prompt-pre {
   background: #ffffff !important;
@@ -793,6 +817,7 @@
 .theme-light .ops-com-card {
   background: #f8fafc !important;
   border-color: #cbd5e1 !important;
+  color: #0f172a !important;
 }
 .theme-light .ops-com-card-active {
   border-color: #818cf8 !important;
@@ -815,6 +840,10 @@
   background: #ffffff !important;
   border-color: #94a3b8 !important;
   color: #334155 !important;
+}
+.theme-light .ops-com-icon-btn-danger:hover {
+  color: #b91c1c !important;
+  border-color: #f87171 !important;
 }
 
 .theme-light .explorer-search-test-banner {
