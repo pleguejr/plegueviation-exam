@@ -382,7 +382,7 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
       },
       {
         col1: 'Velocidad de Turbulencia (Vra / Mra)',
-        col2: 'Bajo 10.000 ft: 240 KIAS | Sobre 10.000 ft: 270 KIAS / M 0.76',
+        col2: 'Bajo 10.000 ft: 250 KIAS | Sobre 10.000 ft: 270 KIAS / M 0.76',
         col3: 'Velocidad de penetración en turbulencia severa recomendada',
         col4: 'AOM 1-03 / QRH',
         highlight: false
@@ -396,7 +396,7 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
       },
       {
         col1: 'Velocidades de Tren de Aterrizaje (Vlo / Vle)',
-        col2: 'Vlo Extensión: 250 KIAS | Vlo Retracción: 220 KIAS | Vle Extendido: 250 KIAS',
+        col2: 'Vlo Extensión: 250 KIAS | Vlo Retracción: 220 KIAS | Vle Extendido: 265 KIAS',
         col3: 'Límites mecánicos de las compuertas y patas del tren',
         col4: 'AFM 2-05 / AOM 1-03',
         highlight: false

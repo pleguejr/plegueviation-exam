@@ -4,7 +4,17 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 
 ---
 
-## 🚀 Versión Actual: v3.4.4 (2026-09-15)
+## 🚀 Versión Actual: v3.4.5 (2026-09-15)
+
+### 🔍 Auditoría reportes PWA (BIN-SOP)
+- **BIN-SOP-124**: Vra bajo 10.000 ft corregida **240 → 250 KIAS** (RemNote NUMBERS / AOM).
+- **BIN-SOP-119**: Vle corregida **250 → 265 KIAS**; Vlo Ext 250 / Ret 220 confirmadas.
+- **BIN-SOP-128**: dato SERA 20 min confirmado; stem y distractores reforzados (sin “controlled rest”).
+- TABLAS UI (`operationalTablesData`) alineada con las mismas cifras.
+
+---
+
+## 🔄 Versión v3.4.4 (2026-09-15)
 
 ### 🔄 Sync + banco SOP/TABLAS
 - Modal **Sincronización Multi-Dispositivo**: tarjeta «Flujo de creación de preguntas» (Drive → NotebookLM → skills TRE → `banks/` → Vercel/PIN) con overrides modo día.
