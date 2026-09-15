@@ -4,7 +4,15 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 
 ---
 
-## 🚀 Versión Actual: v3.4.0 (2026-09-15)
+## 🚀 Versión Actual: v3.4.1 (2026-09-15)
+
+### ☀️ Contraste modo día — Comunicados Ops
+- Corrige panel Comunicados que quedaba en fondo cockpit oscuro en modo día (texto ilegible).
+- Skill `day-mode-ui-contrast` para exigir overrides `.theme-light` en cada superficie nueva.
+
+---
+
+## 📬 Versión v3.4.0 (2026-09-15)
 
 ### 📬 Comunicados Ops (PDF empresa → banco)
 - Panel colapsable bajo la bitácora: **Comunicados & notificaciones**.
