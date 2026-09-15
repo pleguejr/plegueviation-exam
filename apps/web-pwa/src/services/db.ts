@@ -2,6 +2,7 @@ import { updateQuestionStats } from '@plegue/core-engine';
 import Dexie, { Table } from 'dexie';
 import { QuestionStats, ExamSession, Question, DeletedQuestion, ReviewRequest, SyncPayload } from '../types';
 import { OperationalEvent } from '../types/operationalEvents';
+import { OperationalComunicado } from '../types/operationalComunicados';
 
 export interface SyncSnapshot {
   id: string;
@@ -18,6 +19,7 @@ export class PlegueviationDB extends Dexie {
   reviewRequests!: Table<ReviewRequest, string>;
   syncSnapshots!: Table<SyncSnapshot, string>;
   operationalEvents!: Table<OperationalEvent, string>;
+  operationalComunicados!: Table<OperationalComunicado, string>;
 
   constructor() {
     super('PlegueviationExamDB');
@@ -37,6 +39,9 @@ export class PlegueviationDB extends Dexie {
     });
     this.version(5).stores({
       operationalEvents: 'id, source, occurredAt, updatedAt, linkedQuestionId'
+    });
+    this.version(6).stores({
+      operationalComunicados: 'id, type, issuedAt, updatedAt, reference'
     });
   }
 }

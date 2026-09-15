@@ -4,7 +4,16 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 
 ---
 
-## 🚀 Versión Actual: v3.3.9 (2026-09-15)
+## 🚀 Versión Actual: v3.4.0 (2026-09-15)
+
+### 📬 Comunicados Ops (PDF empresa → banco)
+- Nuevo panel bajo la bitácora: **Comunicados & notificaciones**.
+- Flujo óptimo: PDF del correo → prompt copiable → Gemini/NotebookLM → pegar JSON → banco `comunicados-ops` (`binter_comunicados`).
+- Registro local de comunicados (título, tipo, ref, fecha) vinculado al import.
+
+---
+
+## 📒 Versión v3.3.9 (2026-09-15)
 
 ### 📒 Bitácora de vivencias + Memory Items en negro
 - **Memory Items / acciones inmediatas:** texto negro intenso (`#0a0a0a`) para resaltar sobre el resto de la tarjeta.

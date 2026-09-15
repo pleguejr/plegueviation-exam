@@ -39,6 +39,7 @@ Tu objetivo es formular un lote de reactivos de examen de opción múltiple con 
 - **MOA (Manual de Operaciones Parte A)**: `subject_id: "binter_moa"`, ID: `BIN-MOA-xxx`
 - **MOB (Manual de Operaciones Parte B)**: `subject_id: "binter_mob"`, ID: `BIN-MOB-xxx`
 - **Procedimientos Operativos (SOPs)**: `subject_id: "binter_ops"`, ID: `BIN-SOP-xxx`
+- **Comunicados / notificaciones / circulares (PDF empresa)**: `subject_id: "binter_comunicados"`, ID: `BIN-COM-xxx`, `_category: "comunicados-ops"`
 
 #### B. FLOTAS DE AERONAVES (Estructura Común)
 - **Embraer 195-E2**:
