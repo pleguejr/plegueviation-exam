@@ -81,6 +81,13 @@ CASO C: Si estás en movilidad en tu iPad o iPhone (sin PC):
 4. PLANTILLA DE PROMPT MAESTRO PARA NOTEBOOKLM / GEMINI
 --------------------------------------------------------------------------------
 
+FLUJO RECOMENDADO CON MANUALES EN GOOGLE DRIVE (Antigravity/manuales):
+  Ver archivo del repo: prompts/FLUJO_MANUALES_DRIVE.md
+  Skill Cursor: .agents/skills/manual-bank-expansion/SKILL.md
+  - PDFs solo en Drive (NO en GitHub).
+  - NotebookLM enlaza fuentes Drive + Metaprompt Maestro.
+  - Cursor audita e integra en banks/; Antigravity valida schema.
+
 [COPIA DESDE AQUÍ]
 --------------------------------------------------------------------------------
 Actúa como un examinador TRE/TRI y evaluador de prueba de Comandante.
@@ -91,6 +98,9 @@ REGLAS ESTRICTAS:
 1. FIDELIDAD ABSOLUTA: Cero invención. Extrae los datos literalmente del texto adjunto.
 2. 4 OPCIONES: Exactamente UNA opción con "is_correct": true y TRES distractores
    realistas ("is_correct": false) basados en errores comunes o límites adyacentes.
+   Distractores DIFÍCILES pero legítimos: confusiones operativas reales / valores
+   adyacentes del mismo manual. PROHIBIDO micro-cambiar un número en el mismo
+   párrafo, motores imposibles, o "Todas/Ninguna de las anteriores".
 3. REFERENCIA OBLIGATORIA: Cita en "references" el Manual, Edición, Capítulo,
    Párrafo y Número de Página exacta de la fuente.
 4. Devuelve ÚNICAMENTE un bloque de código JSON válido, sin texto introductorio.
