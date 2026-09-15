@@ -508,6 +508,315 @@
   color: #334155 !important;
 }
 
+/* ========== COMUNICADOS / NOTIFICACIONES OPS ========== */
+.ops-com-panel {
+  background: #0b1426;
+  border-color: rgba(99, 102, 241, 0.35);
+  color: #e2e8f0;
+}
+.ops-com-header {
+  background: transparent;
+  cursor: pointer;
+}
+.ops-com-header:hover { background: rgba(99, 102, 241, 0.06); }
+.ops-com-chevron {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  border: 1px solid #334155;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #a5b4fc;
+  background: #0f172a;
+}
+.ops-com-body {
+  border-top-color: rgba(51, 65, 85, 0.8);
+  padding-top: 1rem;
+}
+.ops-com-fast-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.65rem;
+}
+@media (min-width: 640px) {
+  .ops-com-fast-grid {
+    grid-template-columns: 1.4fr 1fr;
+    align-items: stretch;
+  }
+}
+.ops-com-dropzone { min-height: 5.5rem; }
+.ops-com-drop-btn {
+  width: 100%;
+  height: 100%;
+  min-height: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  border-radius: 0.9rem;
+  border: 1.5px dashed rgba(129, 140, 248, 0.55);
+  background: rgba(49, 46, 129, 0.25);
+  color: #c7d2fe;
+  padding: 0.85rem;
+}
+.ops-com-drop-btn:hover { border-color: #a5b4fc; background: rgba(67, 56, 202, 0.28); }
+.ops-com-drop-btn:disabled { opacity: 0.6; cursor: wait; }
+.ops-com-fast-btn {
+  min-height: 5.5rem;
+  justify-content: center;
+  font-size: 0.8rem !important;
+  padding: 0.85rem !important;
+}
+.ops-com-kicker { color: #a5b4fc; }
+.ops-com-title { color: #ffffff; }
+.ops-com-sub { color: #94a3b8; }
+.ops-com-section-title { color: #cbd5e1; }
+.ops-com-hint { color: #94a3b8; }
+.ops-com-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.ops-com-steps li {
+  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid #1e293b;
+  border-radius: 0.75rem;
+  padding: 0.65rem 0.75rem;
+  color: #cbd5e1;
+  line-height: 1.4;
+}
+.ops-com-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.8rem;
+  border-radius: 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 800;
+  border: 1px solid #334155;
+  background: #0e1933;
+  color: #cbd5e1;
+}
+.ops-com-btn:hover { border-color: #818cf8; color: #fff; }
+.ops-com-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.ops-com-btn-primary {
+  background: linear-gradient(90deg, #6366f1, #4f46e5);
+  border-color: transparent;
+  color: #fff;
+}
+.ops-com-btn-copy {
+  background: rgba(99, 102, 241, 0.2);
+  border-color: rgba(129, 140, 248, 0.45);
+  color: #c7d2fe;
+}
+.ops-com-alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.65rem 0.85rem;
+  border-radius: 0.75rem;
+  font-size: 0.75rem;
+  border: 1px solid;
+}
+.ops-com-alert-ok {
+  background: rgba(6, 78, 59, 0.35);
+  border-color: rgba(52, 211, 153, 0.4);
+  color: #a7f3d0;
+}
+.ops-com-alert-error {
+  background: rgba(127, 29, 29, 0.35);
+  border-color: rgba(248, 113, 113, 0.4);
+  color: #fecaca;
+}
+.ops-com-form,
+.ops-com-prompt-box,
+.ops-com-import-box {
+  background: rgba(0, 0, 0, 0.28);
+  border-color: #1e293b;
+}
+.ops-com-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #94a3b8;
+}
+.ops-com-field input,
+.ops-com-field select,
+.ops-com-field textarea,
+.ops-com-json {
+  background: #070e1c;
+  border: 1px solid #334155;
+  border-radius: 0.65rem;
+  padding: 0.55rem 0.75rem;
+  color: #f8fafc;
+  font-size: 0.8rem;
+  font-weight: 500;
+  width: 100%;
+}
+.ops-com-json {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.7rem;
+  resize: vertical;
+}
+.ops-com-prompt-pre {
+  background: #070e1c;
+  border: 1px solid #1e293b;
+  border-radius: 0.65rem;
+  padding: 0.65rem 0.75rem;
+  color: #cbd5e1;
+}
+.ops-com-empty {
+  border-color: #1e293b;
+  background: rgba(0, 0, 0, 0.25);
+  color: #94a3b8;
+}
+.ops-com-card {
+  background: rgba(8, 16, 34, 0.7);
+  border-color: rgba(99, 102, 241, 0.25);
+}
+.ops-com-card-active {
+  border-color: rgba(129, 140, 248, 0.7);
+  box-shadow: 0 0 0 1px rgba(99, 102, 241, 0.25);
+}
+.ops-com-card-title { color: #ffffff; }
+.ops-com-card-body { color: #cbd5e1; }
+.ops-com-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 800;
+  border: 1px solid;
+}
+.ops-com-badge-notificacion { background: rgba(14, 165, 233, 0.15); color: #7dd3fc; border-color: rgba(14, 165, 233, 0.4); }
+.ops-com-badge-comunicado-interno { background: rgba(168, 85, 247, 0.15); color: #d8b4fe; border-color: rgba(168, 85, 247, 0.4); }
+.ops-com-badge-comunicado-ops { background: rgba(99, 102, 241, 0.18); color: #c7d2fe; border-color: rgba(99, 102, 241, 0.45); }
+.ops-com-badge-circular { background: rgba(245, 158, 11, 0.15); color: #fcd34d; border-color: rgba(245, 158, 11, 0.4); }
+.ops-com-badge-otro { background: rgba(148, 163, 184, 0.15); color: #cbd5e1; border-color: rgba(148, 163, 184, 0.35); }
+.ops-com-badge-imported { background: rgba(16, 185, 129, 0.15); color: #6ee7b7; border-color: rgba(16, 185, 129, 0.4); }
+.ops-com-meta {
+  font-size: 10px;
+  font-family: ui-monospace, monospace;
+  color: #94a3b8;
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.35rem;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid #1e293b;
+}
+.ops-com-icon-btn {
+  padding: 0.4rem;
+  border-radius: 0.55rem;
+  border: 1px solid #334155;
+  background: #0f172a;
+  color: #94a3b8;
+}
+.ops-com-icon-btn:hover { color: #fff; border-color: #818cf8; }
+.ops-com-icon-btn-danger:hover { color: #fecaca; border-color: #f87171; }
+
+.theme-light .ops-com-header:hover { background: #eef2ff !important; }
+.theme-light .ops-com-chevron {
+  background: #ffffff !important;
+  border-color: #a5b4fc !important;
+  color: #4338ca !important;
+}
+.theme-light .ops-com-body { border-top-color: #e2e8f0 !important; }
+.theme-light .ops-com-drop-btn {
+  background: #eef2ff !important;
+  border-color: #a5b4fc !important;
+  color: #3730a3 !important;
+}
+.theme-light .ops-com-kicker { color: #4338ca !important; }
+.theme-light .ops-com-title { color: #0f172a !important; }
+.theme-light .ops-com-sub,
+.theme-light .ops-com-hint { color: #475569 !important; }
+.theme-light .ops-com-section-title { color: #334155 !important; }
+.theme-light .ops-com-steps li {
+  background: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+  color: #334155 !important;
+}
+.theme-light .ops-com-btn {
+  background: #e2e8f0 !important;
+  color: #0f172a !important;
+  border-color: #94a3b8 !important;
+}
+.theme-light .ops-com-btn-primary {
+  background: linear-gradient(90deg, #6366f1, #4f46e5) !important;
+  color: #fff !important;
+  border-color: transparent !important;
+}
+.theme-light .ops-com-btn-copy {
+  background: #eef2ff !important;
+  border-color: #a5b4fc !important;
+  color: #4338ca !important;
+}
+.theme-light .ops-com-alert-ok {
+  background: #ecfdf5 !important;
+  border-color: #6ee7b7 !important;
+  color: #047857 !important;
+}
+.theme-light .ops-com-alert-error {
+  background: #fef2f2 !important;
+  border-color: #fca5a5 !important;
+  color: #b91c1c !important;
+}
+.theme-light .ops-com-form,
+.theme-light .ops-com-prompt-box,
+.theme-light .ops-com-import-box {
+  background: #f8fafc !important;
+  border-color: #cbd5e1 !important;
+}
+.theme-light .ops-com-field { color: #475569 !important; }
+.theme-light .ops-com-field input,
+.theme-light .ops-com-field select,
+.theme-light .ops-com-field textarea,
+.theme-light .ops-com-json {
+  background: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+.theme-light .ops-com-prompt-pre {
+  background: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  color: #334155 !important;
+}
+.theme-light .ops-com-empty {
+  background: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+  color: #64748b !important;
+}
+.theme-light .ops-com-card {
+  background: #f8fafc !important;
+  border-color: #cbd5e1 !important;
+}
+.theme-light .ops-com-card-active {
+  border-color: #818cf8 !important;
+  background: #eef2ff !important;
+}
+.theme-light .ops-com-card-title { color: #0f172a !important; }
+.theme-light .ops-com-card-body { color: #334155 !important; }
+.theme-light .ops-com-badge-notificacion { background: #e0f2fe; color: #0369a1; border-color: #7dd3fc; }
+.theme-light .ops-com-badge-comunicado-interno { background: #f3e8ff; color: #6b21a8; border-color: #d8b4fe; }
+.theme-light .ops-com-badge-comunicado-ops { background: #eef2ff; color: #4338ca; border-color: #a5b4fc; }
+.theme-light .ops-com-badge-circular { background: #fef3c7; color: #92400e; border-color: #fcd34d; }
+.theme-light .ops-com-badge-otro { background: #f1f5f9; color: #475569; border-color: #cbd5e1; }
+.theme-light .ops-com-badge-imported { background: #d1fae5; color: #047857; border-color: #6ee7b7; }
+.theme-light .ops-com-meta {
+  background: #ffffff !important;
+  color: #475569 !important;
+  border-color: #cbd5e1 !important;
+}
+.theme-light .ops-com-icon-btn {
+  background: #ffffff !important;
+  border-color: #94a3b8 !important;
+  color: #334155 !important;
+}
+
 .theme-light .explorer-search-test-banner {
   background: linear-gradient(90deg, #ecfeff, #ecfdf5) !important;
   border-color: #67e8f9 !important;

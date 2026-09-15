@@ -4,7 +4,16 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 
 ---
 
-## 🚀 Versión Actual: v3.3.9 (2026-09-15)
+## 🚀 Versión Actual: v3.4.0 (2026-09-15)
+
+### 📬 Comunicados Ops (PDF empresa → banco)
+- Panel colapsable bajo la bitácora: **Comunicados & notificaciones**.
+- Flujo rápido (2 gestos en app): **subir PDF** (extracción local) → **Copiar para Gemini** (prompt+texto) → pegar JSON → banco `comunicados-ops`.
+- Sin conexión al correo de empresa (más seguro).
+
+---
+
+## 📒 Versión v3.3.9 (2026-09-15)
 
 ### 📒 Bitácora de vivencias + Memory Items en negro
 - **Memory Items / acciones inmediatas:** texto negro intenso (`#0a0a0a`) para resaltar sobre el resto de la tarjeta.
