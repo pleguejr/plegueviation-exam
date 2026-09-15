@@ -1,19 +1,21 @@
 /**
- * Prompt listo para pegar en Gemini / NotebookLM junto con el PDF del comunicado.
- * Devuelve SOLO JSON compatible con el importador de Plegueviation Exam.
+ * Prompt + payload listo para pegar UNA sola vez en Gemini / NotebookLM.
+ * Si hay texto extraído del PDF, se incluye; si no, se indica subir el PDF.
  */
 export function buildComunicadosPrompt(meta?: {
   title?: string;
   reference?: string;
   typeLabel?: string;
   issuedAt?: string;
+  documentText?: string;
 }): string {
   const title = meta?.title?.trim() || '[título del comunicado]';
   const reference = meta?.reference?.trim() || '[referencia / nº]';
   const typeLabel = meta?.typeLabel?.trim() || 'comunicado operativo';
   const issuedAt = meta?.issuedAt?.trim() || '[fecha]';
+  const documentText = meta?.documentText?.trim();
 
-  return `Eres un examinador TRE/TRI de aerolínea. Genera reactivos MCQ EXCLUSIVAMENTE a partir del PDF aportado (${typeLabel}: "${title}", ref. ${reference}, fecha ${issuedAt}).
+  const header = `Eres un examinador TRE/TRI de aerolínea. Genera reactivos MCQ EXCLUSIVAMENTE a partir del comunicado aportado (${typeLabel}: "${title}", ref. ${reference}, fecha ${issuedAt}).
 
 REGLAS:
 1. Cero invención: solo hechos, cifras, plazos, responsabilidades y procedimientos explícitos en el documento.
@@ -49,5 +51,17 @@ FORMATO DE CADA REACTIVO:
   "_subtopic": "operaciones"
 }
 
-Genera entre 4 y 12 preguntas de alto valor operacional según la densidad del PDF. Prioriza vigencia, destinatarios, acciones obligatorias, plazos y excepciones.`;
+Genera entre 4 y 12 preguntas de alto valor operacional según la densidad del documento. Prioriza vigencia, destinatarios, acciones obligatorias, plazos y excepciones.`;
+
+  if (documentText) {
+    return `${header}
+
+--- DOCUMENTO (texto extraído del PDF) ---
+${documentText}
+--- FIN DOCUMENTO ---`;
+  }
+
+  return `${header}
+
+[Adjunta el PDF del comunicado en este mismo chat si el texto no viene debajo.]`;
 }

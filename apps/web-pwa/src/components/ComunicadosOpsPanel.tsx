@@ -1,23 +1,18 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import {
   FileText,
-  Plus,
   Trash2,
-  Pencil,
   Copy,
   Check,
   Upload,
   AlertTriangle,
   CheckCircle2,
   Mail,
-  Sparkles,
-  Library
+  ChevronDown,
+  ChevronUp,
+  Loader2
 } from 'lucide-react';
-import {
-  COMUNICADO_TYPES,
-  ComunicadoType,
-  OperationalComunicado
-} from '../types/operationalComunicados';
+import { OperationalComunicado } from '../types/operationalComunicados';
 import { buildComunicadosPrompt } from '../data/comunicadosPrompt';
 import {
   deleteOperationalComunicado,
@@ -25,118 +20,124 @@ import {
   listOperationalComunicados,
   saveOperationalComunicado
 } from '../services/comunicadosOpsService';
+import { extractTextFromPdf, titleFromPdfFileName } from '../utils/pdfTextExtractLazy';
 
 interface ComunicadosOpsPanelProps {
   onBankCreated?: (questionIds: string[]) => void;
 }
 
-const emptyForm = () => ({
-  id: undefined as string | undefined,
-  title: '',
-  type: 'comunicado-ops' as ComunicadoType,
-  reference: '',
-  issuedAt: new Date().toISOString().slice(0, 10),
-  summary: ''
-});
+const COLLAPSE_KEY = 'plegue_comunicados_panel_open';
 
 export const ComunicadosOpsPanel: React.FC<ComunicadosOpsPanelProps> = ({ onBankCreated }) => {
   const [items, setItems] = useState<OperationalComunicado[]>([]);
-  const [form, setForm] = useState(emptyForm);
-  const [showForm, setShowForm] = useState(false);
+  const [open, setOpen] = useState(() => {
+    try {
+      return localStorage.getItem(COLLAPSE_KEY) === '1';
+    } catch {
+      return false;
+    }
+  });
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [jsonText, setJsonText] = useState('');
-  const [saving, setSaving] = useState(false);
+  const [extracting, setExtracting] = useState(false);
   const [importing, setImporting] = useState(false);
   const [copied, setCopied] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const fileRef = useRef<HTMLInputElement>(null);
 
   const refresh = async () => {
     const rows = await listOperationalComunicados();
     setItems(rows);
+    return rows;
   };
 
   useEffect(() => {
     refresh();
   }, []);
 
+  useEffect(() => {
+    try {
+      localStorage.setItem(COLLAPSE_KEY, open ? '1' : '0');
+    } catch {
+      /* ignore */
+    }
+  }, [open]);
+
   const selected = useMemo(
-    () => items.find((i) => i.id === selectedId) || null,
+    () => items.find((i) => i.id === selectedId) || items[0] || null,
     [items, selectedId]
   );
 
-  const typeLabel = (type: ComunicadoType) =>
-    COMUNICADO_TYPES.find((t) => t.id === type)?.label || type;
+  const clipboardPayload = useMemo(() => {
+    if (!selected) return '';
+    return buildComunicadosPrompt({
+      title: selected.title,
+      reference: selected.reference,
+      typeLabel: 'comunicado operativo',
+      issuedAt: selected.issuedAt,
+      documentText: selected.extractedText
+    });
+  }, [selected]);
 
-  const promptText = useMemo(
-    () =>
-      buildComunicadosPrompt({
-        title: selected?.title || form.title,
-        reference: selected?.reference || form.reference,
-        typeLabel: typeLabel((selected?.type || form.type) as ComunicadoType),
-        issuedAt: selected?.issuedAt || form.issuedAt
-      }),
-    [selected, form]
-  );
+  const handleToggle = () => setOpen((v) => !v);
 
-  const resetForm = () => {
-    setForm(emptyForm());
-    setShowForm(false);
-  };
+  const handlePdf = async (file: File | null) => {
+    if (!file) return;
+    if (!/\.pdf$/i.test(file.name)) {
+      setError('Solo se admiten archivos PDF.');
+      return;
+    }
 
-  const handleSave = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setSaving(true);
+    setExtracting(true);
     setError(null);
     setMessage(null);
+    setOpen(true);
+
     try {
+      const extracted = await extractTextFromPdf(file);
       const saved = await saveOperationalComunicado({
-        id: form.id,
-        title: form.title,
-        type: form.type,
-        reference: form.reference,
-        issuedAt: form.issuedAt,
-        summary: form.summary
+        title: await titleFromPdfFileName(file.name),
+        type: 'comunicado-ops',
+        reference: '',
+        issuedAt: new Date().toISOString().slice(0, 10),
+        summary: extracted.truncated
+          ? `Texto extraído (${extracted.pages} págs., truncado).`
+          : `Texto extraído (${extracted.pages} págs.).`,
+        sourceFileName: file.name,
+        extractedText: extracted.text,
+        extractedPages: extracted.pages
       });
-      await refresh();
+      const rows = await refresh();
       setSelectedId(saved.id);
-      resetForm();
-      setMessage('Comunicado registrado. Copia el prompt, genera el JSON con el PDF y pégalo abajo.');
+      setMessage(
+        `PDF listo (${extracted.pages} pág.). Pulsa «Copiar para Gemini» → pega en Gemini → vuelve y pega el JSON.`
+      );
+      if (!rows.find((r) => r.id === saved.id)) {
+        setSelectedId(saved.id);
+      }
     } catch (err: any) {
-      setError(err?.message || 'No se pudo guardar el comunicado.');
+      setError(err?.message || 'No se pudo leer el PDF.');
     } finally {
-      setSaving(false);
+      setExtracting(false);
+      if (fileRef.current) fileRef.current.value = '';
     }
   };
 
-  const handleEdit = (item: OperationalComunicado) => {
-    setForm({
-      id: item.id,
-      title: item.title,
-      type: item.type,
-      reference: item.reference,
-      issuedAt: item.issuedAt,
-      summary: item.summary
-    });
-    setSelectedId(item.id);
-    setShowForm(true);
-    setError(null);
-    setMessage(null);
-  };
-
-  const handleDelete = async (id: string) => {
-    await deleteOperationalComunicado(id);
-    if (selectedId === id) setSelectedId(null);
-    await refresh();
-    setMessage('Comunicado eliminado del registro (los reactivos ya importados permanecen en el banco).');
-  };
-
-  const handleCopyPrompt = async () => {
+  const handleCopyForGemini = async () => {
+    if (!selected) {
+      setError('Sube primero un PDF.');
+      return;
+    }
+    if (!selected.extractedText) {
+      setError('Este registro no tiene texto extraído. Vuelve a subir el PDF.');
+      return;
+    }
     try {
-      await navigator.clipboard.writeText(promptText);
+      await navigator.clipboard.writeText(clipboardPayload);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
-      setMessage('Prompt copiado. Pégalo en Gemini/NotebookLM junto con el PDF.');
+      setMessage('Copiado (prompt + texto). Pégalo en Gemini, espera el JSON y pégalo abajo.');
     } catch {
       setError('No se pudo copiar al portapapeles.');
     }
@@ -147,10 +148,10 @@ export const ComunicadosOpsPanel: React.FC<ComunicadosOpsPanelProps> = ({ onBank
     setError(null);
     setMessage(null);
     try {
-      const result = await importComunicadosQuestions(jsonText, selectedId || undefined);
+      const result = await importComunicadosQuestions(jsonText, selected?.id);
       await refresh();
       setJsonText('');
-      setMessage(`Importadas ${result.count} pregunta(s) en el banco Comunicados Ops.`);
+      setMessage(`Importadas ${result.count} pregunta(s) en Comunicados Ops.`);
       onBankCreated?.(result.questionIds);
     } catch (err: any) {
       setError(err?.message || 'Error al importar el JSON.');
@@ -159,10 +160,17 @@ export const ComunicadosOpsPanel: React.FC<ComunicadosOpsPanelProps> = ({ onBank
     }
   };
 
+  const handleDelete = async (id: string) => {
+    await deleteOperationalComunicado(id);
+    if (selectedId === id) setSelectedId(null);
+    await refresh();
+    setMessage('Comunicado eliminado del registro.');
+  };
+
   return (
-    <section className="ops-com-panel rounded-2xl border p-4 sm:p-5 shadow-lg space-y-4">
-      <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3">
-        <div className="space-y-1">
+    <section className={`ops-com-panel rounded-2xl border shadow-lg overflow-hidden ${open ? '' : 'ops-com-panel-collapsed'}`}>
+      <button type="button" className="ops-com-header w-full text-left p-4 sm:p-5 flex items-start justify-between gap-3" onClick={handleToggle}>
+        <div className="space-y-1 min-w-0">
           <p className="ops-com-kicker text-[10px] font-black uppercase tracking-widest flex items-center gap-1.5">
             <Mail className="w-3.5 h-3.5" />
             Comunicados & notificaciones
@@ -170,199 +178,69 @@ export const ComunicadosOpsPanel: React.FC<ComunicadosOpsPanelProps> = ({ onBank
           <h2 className="ops-com-title text-base sm:text-lg font-extrabold tracking-tight">
             Banco desde PDF de empresa
           </h2>
-          <p className="ops-com-sub text-[11px] leading-relaxed max-w-3xl">
-            Flujo óptimo cada vez que te llegue un PDF al correo: guardar el archivo → copiar el prompt → Gemini/NotebookLM
-            con el PDF → pegar el JSON aquí. La app <strong>no lee tu correo</strong> (más seguro y rápido); los reactivos
-            van a <strong>Comunicados Ops</strong> y se sincronizan como el resto del banco personalizado.
+          <p className="ops-com-sub text-[11px] leading-relaxed">
+            {items.length} registrado(s) · flujo rápido: subir PDF → copiar a Gemini → pegar JSON
           </p>
         </div>
-        <button
-          type="button"
-          className="ops-com-btn ops-com-btn-primary shrink-0"
-          onClick={() => {
-            setShowForm(true);
-            setForm(emptyForm());
-            setError(null);
-            setMessage(null);
-          }}
-        >
-          <Plus className="w-3.5 h-3.5" />
-          Registrar comunicado
-        </button>
-      </div>
+        <span className="ops-com-chevron shrink-0 mt-1" aria-hidden>
+          {open ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
+        </span>
+      </button>
 
-      <ol className="ops-com-steps grid grid-cols-1 sm:grid-cols-4 gap-2 text-[11px]">
-        <li>
-          <strong>1.</strong> Guarda el PDF (Drive / carpeta Comunicados).
-        </li>
-        <li>
-          <strong>2.</strong> Copia el prompt de esta ventana.
-        </li>
-        <li>
-          <strong>3.</strong> Sube el PDF a Gemini o NotebookLM + pega el prompt.
-        </li>
-        <li>
-          <strong>4.</strong> Pega el JSON y valida — listo para estudiar.
-        </li>
-      </ol>
+      {open && (
+        <div className="ops-com-body px-4 sm:px-5 pb-5 space-y-4 border-t">
+          <p className="ops-com-sub text-[11px] leading-relaxed">
+            Lo más eficiente <strong>sin conectar tu correo</strong>: 2 gestos en la app + 1 en Gemini. Subir el PDF aquí
+            extrae el texto; «Copiar para Gemini» lleva prompt y documento juntos.
+          </p>
 
-      {(message || error) && (
-        <div className={`ops-com-alert ${error ? 'ops-com-alert-error' : 'ops-com-alert-ok'}`}>
-          {error ? <AlertTriangle className="w-4 h-4 shrink-0" /> : <CheckCircle2 className="w-4 h-4 shrink-0" />}
-          <span>{error || message}</span>
-        </div>
-      )}
-
-      {showForm && (
-        <form onSubmit={handleSave} className="ops-com-form space-y-3 rounded-xl border p-3.5">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <label className="ops-com-field sm:col-span-2">
-              <span>Título</span>
-              <input
-                required
-                value={form.title}
-                onChange={(e) => setForm((f) => ({ ...f, title: e.target.value }))}
-                placeholder="Ej: Cambio de mínimos RFFS en aeródromos canarios"
-              />
-            </label>
-            <label className="ops-com-field">
-              <span>Tipo</span>
-              <select
-                value={form.type}
-                onChange={(e) => setForm((f) => ({ ...f, type: e.target.value as ComunicadoType }))}
-              >
-                {COMUNICADO_TYPES.map((t) => (
-                  <option key={t.id} value={t.id}>
-                    {t.label}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <label className="ops-com-field">
-              <span>Fecha</span>
-              <input
-                type="date"
-                value={form.issuedAt}
-                onChange={(e) => setForm((f) => ({ ...f, issuedAt: e.target.value }))}
-              />
-            </label>
-            <label className="ops-com-field sm:col-span-2">
-              <span>Referencia / nº (opcional)</span>
-              <input
-                value={form.reference}
-                onChange={(e) => setForm((f) => ({ ...f, reference: e.target.value }))}
-                placeholder="Ej: COM-OPS-2026-014"
-              />
-            </label>
-            <label className="ops-com-field sm:col-span-2">
-              <span>Resumen breve (opcional)</span>
-              <textarea
-                rows={2}
-                value={form.summary}
-                onChange={(e) => setForm((f) => ({ ...f, summary: e.target.value }))}
-                placeholder="Qué cambia y a quién aplica…"
-              />
-            </label>
-          </div>
-          <div className="flex flex-wrap gap-2 justify-end">
-            <button type="button" className="ops-com-btn" onClick={resetForm}>
-              Cancelar
-            </button>
-            <button type="submit" disabled={saving} className="ops-com-btn ops-com-btn-primary">
-              {saving ? 'Guardando…' : form.id ? 'Actualizar' : 'Guardar registro'}
-            </button>
-          </div>
-        </form>
-      )}
-
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
-        <div className="space-y-2">
-          <div className="flex items-center justify-between gap-2">
-            <h3 className="ops-com-section-title text-xs font-black uppercase tracking-wide">Registro</h3>
-            <span className="ops-com-meta">{items.length} comunicado(s)</span>
-          </div>
-          {items.length === 0 ? (
-            <div className="ops-com-empty rounded-xl border px-4 py-5 text-center text-xs space-y-1">
-              <FileText className="w-7 h-7 mx-auto opacity-50" />
-              <p className="font-bold">Sin comunicados registrados</p>
-              <p>Registra el primero cuando te llegue el PDF al correo.</p>
+          {(message || error) && (
+            <div className={`ops-com-alert ${error ? 'ops-com-alert-error' : 'ops-com-alert-ok'}`}>
+              {error ? <AlertTriangle className="w-4 h-4 shrink-0" /> : <CheckCircle2 className="w-4 h-4 shrink-0" />}
+              <span>{error || message}</span>
             </div>
-          ) : (
-            items.map((item) => (
-              <article
-                key={item.id}
-                className={`ops-com-card rounded-xl border p-3 space-y-1.5 cursor-pointer ${
-                  selectedId === item.id ? 'ops-com-card-active' : ''
-                }`}
-                onClick={() => setSelectedId(item.id)}
-              >
-                <div className="flex items-start justify-between gap-2">
-                  <div className="min-w-0 space-y-1">
-                    <div className="flex flex-wrap items-center gap-1.5">
-                      <span className={`ops-com-badge ops-com-badge-${item.type}`}>{typeLabel(item.type)}</span>
-                      <span className="ops-com-meta">{item.issuedAt}</span>
-                      {item.reference && <span className="ops-com-meta">{item.reference}</span>}
-                      {item.importedQuestionCount > 0 && (
-                        <span className="ops-com-badge ops-com-badge-imported">
-                          {item.importedQuestionCount} Qs
-                        </span>
-                      )}
-                    </div>
-                    <h4 className="ops-com-card-title text-sm font-black leading-snug">{item.title}</h4>
-                    {item.summary && <p className="ops-com-card-body text-xs leading-relaxed">{item.summary}</p>}
-                  </div>
-                  <div className="flex items-center gap-1 shrink-0" onClick={(e) => e.stopPropagation()}>
-                    <button type="button" className="ops-com-icon-btn" title="Editar" onClick={() => handleEdit(item)}>
-                      <Pencil className="w-3.5 h-3.5" />
-                    </button>
-                    <button
-                      type="button"
-                      className="ops-com-icon-btn ops-com-icon-btn-danger"
-                      title="Eliminar"
-                      onClick={() => handleDelete(item.id)}
-                    >
-                      <Trash2 className="w-3.5 h-3.5" />
-                    </button>
-                  </div>
-                </div>
-              </article>
-            ))
           )}
-        </div>
 
-        <div className="space-y-3">
-          <div className="ops-com-prompt-box rounded-xl border p-3 space-y-2">
-            <div className="flex items-center justify-between gap-2 flex-wrap">
-              <h3 className="ops-com-section-title text-xs font-black uppercase tracking-wide flex items-center gap-1.5">
-                <Sparkles className="w-3.5 h-3.5" />
-                Prompt para Gemini / NotebookLM
-              </h3>
-              <button type="button" className="ops-com-btn ops-com-btn-copy" onClick={handleCopyPrompt}>
-                {copied ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
-                {copied ? 'Copiado' : 'Copiar prompt'}
+          <div className="ops-com-fast-grid">
+            <div className="ops-com-dropzone">
+              <input
+                ref={fileRef}
+                type="file"
+                accept="application/pdf,.pdf"
+                className="hidden"
+                onChange={(e) => handlePdf(e.target.files?.[0] || null)}
+              />
+              <button
+                type="button"
+                className="ops-com-drop-btn"
+                disabled={extracting}
+                onClick={() => fileRef.current?.click()}
+              >
+                {extracting ? <Loader2 className="w-5 h-5 animate-spin" /> : <Upload className="w-5 h-5" />}
+                <span className="font-black text-sm">{extracting ? 'Extrayendo texto…' : '1 · Subir PDF del correo'}</span>
+                <span className="text-[11px] opacity-80">Se procesa solo en tu dispositivo</span>
               </button>
             </div>
-            <p className="text-[11px] ops-com-hint">
-              {selected
-                ? `Contexto: ${selected.title}${selected.reference ? ` (${selected.reference})` : ''}`
-                : 'Selecciona un comunicado del registro (o rellena el formulario) para personalizar el prompt.'}
-            </p>
-            <pre className="ops-com-prompt-pre text-[10px] leading-relaxed max-h-40 overflow-auto whitespace-pre-wrap">
-              {promptText}
-            </pre>
+
+            <button
+              type="button"
+              className="ops-com-btn ops-com-btn-copy ops-com-fast-btn"
+              disabled={!selected?.extractedText || extracting}
+              onClick={handleCopyForGemini}
+            >
+              {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
+              {copied ? 'Copiado' : '2 · Copiar para Gemini'}
+            </button>
           </div>
 
           <div className="ops-com-import-box rounded-xl border p-3 space-y-2">
-            <h3 className="ops-com-section-title text-xs font-black uppercase tracking-wide flex items-center gap-1.5">
-              <Library className="w-3.5 h-3.5" />
-              Pegar JSON e importar
-            </h3>
+            <h3 className="ops-com-section-title text-xs font-black uppercase tracking-wide">3 · Pegar JSON de Gemini</h3>
             <textarea
               value={jsonText}
               onChange={(e) => setJsonText(e.target.value)}
-              rows={8}
+              rows={6}
               className="ops-com-json"
-              placeholder={`[\n  {\n    "id": "BIN-COM-001",\n    "subject_id": "binter_comunicados",\n    "stem": "…",\n    "options": [ … ],\n    "explanation": { "text": "…", "references": ["…"] }\n  }\n]`}
+              placeholder="Pega aquí el array JSON que te devolvió Gemini…"
             />
             <button
               type="button"
@@ -374,8 +252,53 @@ export const ComunicadosOpsPanel: React.FC<ComunicadosOpsPanelProps> = ({ onBank
               {importing ? 'Importando…' : 'Validar & guardar en Comunicados Ops'}
             </button>
           </div>
+
+          {items.length > 0 && (
+            <div className="space-y-2">
+              <h3 className="ops-com-section-title text-xs font-black uppercase tracking-wide">Registro reciente</h3>
+              {items.map((item) => (
+                <article
+                  key={item.id}
+                  className={`ops-com-card rounded-xl border p-3 space-y-1 ${
+                    selected?.id === item.id ? 'ops-com-card-active' : ''
+                  }`}
+                  onClick={() => setSelectedId(item.id)}
+                >
+                  <div className="flex items-start justify-between gap-2">
+                    <div className="min-w-0 space-y-1">
+                      <div className="flex flex-wrap items-center gap-1.5">
+                        <span className="ops-com-meta">{item.issuedAt}</span>
+                        {item.sourceFileName && (
+                          <span className="ops-com-meta flex items-center gap-1">
+                            <FileText className="w-3 h-3" />
+                            {item.sourceFileName}
+                          </span>
+                        )}
+                        {item.extractedPages ? <span className="ops-com-meta">{item.extractedPages} pág.</span> : null}
+                        {item.importedQuestionCount > 0 && (
+                          <span className="ops-com-badge ops-com-badge-imported">{item.importedQuestionCount} Qs</span>
+                        )}
+                      </div>
+                      <h4 className="ops-com-card-title text-sm font-black leading-snug">{item.title}</h4>
+                    </div>
+                    <button
+                      type="button"
+                      className="ops-com-icon-btn ops-com-icon-btn-danger"
+                      title="Eliminar"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleDelete(item.id);
+                      }}
+                    >
+                      <Trash2 className="w-3.5 h-3.5" />
+                    </button>
+                  </div>
+                </article>
+              ))}
+            </div>
+          )}
         </div>
-      </div>
+      )}
     </section>
   );
 };

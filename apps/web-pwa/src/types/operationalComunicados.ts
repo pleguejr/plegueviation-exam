@@ -16,6 +16,9 @@ export interface OperationalComunicado {
   updatedAt: number;
   importedQuestionCount: number;
   lastImportAt?: number | null;
+  sourceFileName?: string;
+  extractedText?: string;
+  extractedPages?: number;
 }
 
 export const COMUNICADO_TYPES: Array<{ id: ComunicadoType; label: string }> = [

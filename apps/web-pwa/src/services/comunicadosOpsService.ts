@@ -63,6 +63,9 @@ export async function saveOperationalComunicado(
     id?: string;
     importedQuestionCount?: number;
     lastImportAt?: number | null;
+    sourceFileName?: string;
+    extractedText?: string;
+    extractedPages?: number;
   }
 ): Promise<OperationalComunicado> {
   const now = Date.now();
@@ -77,7 +80,10 @@ export async function saveOperationalComunicado(
     createdAt: existing?.createdAt || now,
     updatedAt: now,
     importedQuestionCount: input.importedQuestionCount ?? existing?.importedQuestionCount ?? 0,
-    lastImportAt: input.lastImportAt ?? existing?.lastImportAt ?? null
+    lastImportAt: input.lastImportAt ?? existing?.lastImportAt ?? null,
+    sourceFileName: input.sourceFileName ?? existing?.sourceFileName,
+    extractedText: input.extractedText ?? existing?.extractedText,
+    extractedPages: input.extractedPages ?? existing?.extractedPages
   };
 
   if (!record.title) {
