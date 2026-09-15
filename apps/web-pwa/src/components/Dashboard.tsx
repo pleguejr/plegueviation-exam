@@ -35,6 +35,7 @@ import { Question, BankManifest, QuestionStats, ExamSession, ExamMode, ExamSelec
 import { loadAllQuestions, loadManifest } from '../services/questionsService';
 import { getAllStatsMap, getExamHistory, db } from '../services/db';
 import { filterFlashcards } from '../utils/flashcardFilter';
+import { OperationalEventsPanel } from './OperationalEventsPanel';
 
 interface DashboardProps {
   onStartConfiguredExam: (params: {
@@ -351,6 +352,12 @@ export const Dashboard: React.FC<DashboardProps> = ({
           </div>
         )}
       </div>
+
+      <OperationalEventsPanel
+        onBankCreated={() => {
+          loadData();
+        }}
+      />
 
       {/* 2. Signature Binter Performance Card con Gráfica de Precisión por Banco */}
       <div className="binter-performance-card bg-gradient-to-br from-[#0a1c36] via-[#08172e] to-[#050e1c] text-white rounded-3xl p-6 sm:p-7 shadow-xl border border-emerald-500/30 space-y-6">

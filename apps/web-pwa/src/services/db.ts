@@ -1,6 +1,7 @@
 import { updateQuestionStats } from '@plegue/core-engine';
 import Dexie, { Table } from 'dexie';
 import { QuestionStats, ExamSession, Question, DeletedQuestion, ReviewRequest, SyncPayload } from '../types';
+import { OperationalEvent } from '../types/operationalEvents';
 
 export interface SyncSnapshot {
   id: string;
@@ -16,6 +17,7 @@ export class PlegueviationDB extends Dexie {
   deletedQuestions!: Table<DeletedQuestion, string>;
   reviewRequests!: Table<ReviewRequest, string>;
   syncSnapshots!: Table<SyncSnapshot, string>;
+  operationalEvents!: Table<OperationalEvent, string>;
 
   constructor() {
     super('PlegueviationExamDB');
@@ -32,6 +34,9 @@ export class PlegueviationDB extends Dexie {
     });
     this.version(4).stores({
       syncSnapshots: 'id, createdAt, label'
+    });
+    this.version(5).stores({
+      operationalEvents: 'id, source, occurredAt, updatedAt, linkedQuestionId'
     });
   }
 }
