@@ -4,7 +4,15 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 
 ---
 
-## 🚀 Versión Actual: v3.4.2 (2026-09-15)
+## 🚀 Versión Actual: v3.4.3 (2026-09-15)
+
+### 🧾 Skill proceso creación de preguntas
+- Nuevo skill orquestador `.agents/skills/question-creation-process/SKILL.md`: flujo completo acotar → Metaprompt/NotebookLM → auditoría TRE → Antigravity → `banks/`.
+- Complementa `manual-bank-expansion`, `aviation-question-authoring` y `easa-distractor-engineering`.
+
+---
+
+## 📚 Versión v3.4.2 (2026-09-15)
 
 ### 📚 Flujo seguro Manuales Drive → bancos
 - Documentado el pipeline **Drive (`Antigravity/manuales`) → NotebookLM/Gemini → Cursor (skills TRE) → Antigravity (schema) → `banks/`**.
