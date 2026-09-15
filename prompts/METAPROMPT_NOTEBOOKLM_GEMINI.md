@@ -6,6 +6,7 @@
 > 3. **Estructura 1 Correcta + 3 Distractores Realistas**:
 >    - 1 Opción verdadera ("is_correct": true).
 >    - 3 Distractores plausibles ("is_correct": false) basados en errores reales de pilotaje, límites de otra fase de vuelo, o confusión habitual de sistemas.
+>    - Distractores difíciles pero con sentido; prohibido inventar cifras, micro-variar un solo número en el mismo párrafo, o opciones absurdas (p. ej. motor 3 en bimotor).
 > 4. **Trazabilidad y Citas Exactas**: Referencia obligatoria a: Manual, Edición/Revisión, Capítulo/Sección, Párrafo y Página física.
 
 ---
@@ -25,6 +26,13 @@ Tu objetivo es formular un lote de reactivos de examen de opción múltiple con 
    - Exactamente 4 opciones por pregunta (identificadas como `"A"`, `"B"`, `"C"`, `"D"`).
    - EXACTAMENTE UNA opción con `"is_correct": true`, las otras 3 con `"is_correct": false`.
    - Distractores técnicamente plausibles y realistas: basados en confusiones operacionales habituales, limitaciones adyacentes o valores de configuraciones alternativas. Prohibido incluir opciones absurdas o inverosímiles.
+   - **Distractores difíciles pero legítimos (obligatorio)**:
+     - Usar límites/procedimientos **adyacentes** reales del mismo manual (p. ej. \(V_X\) vs \(V_Y\), Flap T/O vs LAND, Memory Item vs QRH Abnormal, RFFS 5 vs 6).
+     - **PROHIBIDO** micro-sustituir un solo número dentro del mismo párrafo largo (30s→32s→26s).
+     - **PROHIBIDO** motores/cifras imposibles (motor 3/4/5 en bimotor; “14 tiempos” en 4 tiempos).
+     - **PROHIBIDO** meta-opciones (“Todas las anteriores”, “Ninguna…”, “A y B”).
+     - Equilibrar longitud de las 4 opciones de forma natural (±15%); sin relleno artificial de frases genéricas.
+     - Justificaciones y citas van en `explanation`, **nunca** entre paréntesis solo en la opción correcta.
 3. **Explicación Didáctica y Citas Exactas con Página**:
    - Explicar detalladamente por qué la opción correcta es la adecuada y citar textualmente el fundamento del manual.
    - Indicar en el array `"references"` la cita exacta: Manual, Edición/Revisión, Capítulo, Subcapítulo, Párrafo y Página física (ej: `"Tecnam P2010 TDI AFM - Ed.2 Rev.13 - Section 5: Performance - Paragraph 9 (Page 5-10)"`, `"Binter MOA ED06 RN25 - Cap. 8.1.3 (Pág. 8-12)"`).

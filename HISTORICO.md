@@ -4,7 +4,16 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 
 ---
 
-## 🚀 Versión Actual: v3.4.1 (2026-09-15)
+## 🚀 Versión Actual: v3.4.2 (2026-09-15)
+
+### 📚 Flujo seguro Manuales Drive → bancos
+- Documentado el pipeline **Drive (`Antigravity/manuales`) → NotebookLM/Gemini → Cursor (skills TRE) → Antigravity (schema) → `banks/`**.
+- Skills: `manual-bank-expansion`; Metaprompt reforzado (distractores difíciles legítimos).
+- PDFs de manuales **no** entran en GitHub (`manuales/` gitignored).
+
+---
+
+## ☀️ Versión v3.4.1 (2026-09-15)
 
 ### ☀️ Contraste modo día — Comunicados Ops
 - Corrige panel Comunicados que quedaba en fondo cockpit oscuro en modo día (texto ilegible).
