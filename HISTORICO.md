@@ -4,7 +4,24 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 
 ---
 
-## 🚀 Versión Actual: v3.3.7 (2026-09-14)
+## 🚀 Versión Actual: v3.3.9 (2026-09-15)
+
+### 📒 Bitácora de vivencias + Memory Items en negro
+- **Memory Items / acciones inmediatas:** texto negro intenso (`#0a0a0a`) para resaltar sobre el resto de la tarjeta.
+- **Dashboard:** panel **Vivencias de vuelo y simulador** bajo el Centro de información — registra eventos (real/sim) y crea banco personalizado `vivencias-ops`.
+
+---
+
+## 🎨 Versión v3.3.8 (2026-09-15)
+
+### 🎨 Paleta suave SOP + TABLAS
+- **Emergencias SOP:** fondo rojo suave (`#fef2f2`), sin tonos salmón intensos.
+- **Memory Items:** marco rojo-anaranjado (`#fff4ed`); acciones inmediatas con chips naranja (`#f97316`) que resaltan sin marrón.
+- **Limitaciones TABLAS:** fondo naranja suave (`#fff7ed` / `#fdba74`).
+
+---
+
+## 🎨 Versión v3.3.7 (2026-09-14)
 
 ### 🎨 SOP emergencias + TABLAS modo día
 - **SOP Emergencias:** marco salmón sustituido por rosa polvo suave (`#f3ecee` / `#a67a82`), menos chillón en modo día y noche.

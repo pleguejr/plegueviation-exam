@@ -291,7 +291,7 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
                           <Flame className="w-5 h-5" />
                           Memory Items · Acciones inmediatas
                         </span>
-                        <span className="procedure-memory-recall text-[10px] font-mono px-2.5 py-1 rounded-lg bg-[#8f5f68] text-white font-black tracking-wide">
+                        <span className="procedure-memory-recall text-[10px] font-mono px-2.5 py-1 rounded-lg tracking-wide">
                           RECALL · PRIORIDAD
                         </span>
                       </div>
@@ -370,12 +370,12 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
                         >
                           <h3 className="text-xs sm:text-sm font-black flex items-center justify-between gap-2 pb-2 border-b border-current/10">
                             <span className="flex items-center gap-1.5">
-                              {isMemorySection && <Flame className="w-4 h-4 text-[#8f5f68] shrink-0" />}
+                              {isMemorySection && <Flame className="w-4 h-4 procedure-memory-icon shrink-0" />}
                               {section.title}
                             </span>
                             {section.badge && <span className="procedure-meta">{section.badge}</span>}
                             {isMemorySection && (
-                              <span className="procedure-memory-recall text-[9px] font-mono px-2 py-0.5 rounded bg-[#8f5f68] text-white font-black">
+                              <span className="procedure-memory-recall text-[9px] font-mono px-2 py-0.5 rounded">
                                 RECALL
                               </span>
                             )}
