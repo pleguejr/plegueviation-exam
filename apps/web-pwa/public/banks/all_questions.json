@@ -1,5 +1,3320 @@
 [
   {
+    "id": "BIN-SOP-001",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: Preparación de Vuelo — TELSI (MOB 2.0.6 / MOA)",
+    "stem": "Según las tarjetas SOP de Binter, ¿qué mnemónico oficial estructura el briefing de emergencia del Comandante a la tripulación de cabina?",
+    "options": [
+      {
+        "id": "A",
+        "text": "TELSI (Tipo, Estimated Time, Lugar, Señales de Protección, Instrucciones)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "NITS (Nature, Intentions, Time, Special instructions)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "TWIN (Threats, Weather, Inop, NOTAMs)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "MEANA (Memory, Emergency, Abnormal, Normal, Abnormal)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En Binter no se usa NITS: el protocolo oficial es TELSI. TWIN abre briefings de despegue/llegada; MEANA ordena checklists.",
+      "references": [
+        "Tarjeta SOP card-briefing-prep-vuelo · MOB 2.0.6 / MOA Caps 1.4, 8.1, 8.3"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-002",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: Prep. vuelo — combustible discrecional",
+    "stem": "En la preparación del Sobre de Vuelo (PVO/OFP), ¿cuándo debe solicitarse un New PVO por combustible discrecional?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cuando el combustible discrecional supera 500 kg",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cuando el combustible discrecional supera 200 kg",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo si hay tankering EASA Re-fuel sin límite de masa",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Únicamente si el alternativo de despegue está fuera de 1 h monomotor",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La tarjeta SOP establece: discrecional >500 kg requiere recálculo y nuevo PVO.",
+      "references": [
+        "Tarjeta SOP card-briefing-prep-vuelo · MOA Caps 8.1 / golden rule"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-003",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: Prep. vuelo — LVTO / ELM vs MLM",
+    "stem": "En LVTO / LVO, ¿qué condición de masa de aterrizaje estimado debe verificarse respecto al MLM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ELM < MLM (54.000 kg)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "ELM ≤ MTOW estructural sin comparar MLM",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "ELM > MLM para disponer de margen de frenada",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo verificar ZFW < MZFW; el MLM no aplica en LVTO",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Golden rule SOP: en LVO/LVTO chequear alternativo de despegue y que ELM < MLM (54.000 kg).",
+      "references": [
+        "Tarjeta SOP card-briefing-prep-vuelo · MOA 8.1 / LVTO"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-004",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: Callouts cabina — PROTECCIÓN",
+    "stem": "¿En qué momento se transmite por PA la llamada \"PROTECCIÓN, PROTECCIÓN, PROTECCIÓN\"?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A 30 segundos del impacto (emergencia prevista o imprevista)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "A 5 minutos del aterrizaje en emergencia prevista",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Al detenerse el avión para evaluar evacuación",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo tras la orden \"EVACUACIÓN, EVACUACIÓN, EVACUACIÓN\"",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Protocolo SOP: PROTECCIÓN×3 a 30 s del impacto; a 5 min se usa \"FINALIZAR PREPARACIÓN\".",
+      "references": [
+        "Tarjeta SOP card-briefing-prep-vuelo · sección Protocolo de Llamadas"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-005",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: LVO/LVTO — PF en LVTO",
+    "stem": "En despegues LVTO según la tarjeta SOP de Binter, ¿quién actúa como Pilot Flying?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El Comandante actúa siempre como PF",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El Primer Oficial actúa siempre como PF",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El PF se rota cada sector independientemente de LVO",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cualquier piloto cualificado LVO puede ser PF sin restricción de mando",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Golden rule LVTO: el Comandante es siempre PF; ambos pilotos cualificados LVO en vigor.",
+      "references": [
+        "Tarjeta SOP card-briefing-lvo · MOA 8.4 / MOB 2.0.6.1"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-006",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: LVTO — mínimo RVR absoluto Binter",
+    "stem": "¿Cuál es el mínimo absoluto de despegue LVTO Binter indicado en la tarjeta SOP?",
+    "options": [
+      {
+        "id": "A",
+        "text": "RVR 125 m (con luces de eje ≤ 15 m y de borde ≤ 60 m)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "RVR 150 m con luces de eje ≤ 30 m",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "RVR 200 m CAT III sin requisito de balizamiento",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "RVR 300 m TDZ como mínimo de despegue",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Mínimo absoluto LVTO Binter: RVR 125 m con HIL eje ≤15 m y borde ≤60 m; visibles ≥6 intervalos o 7 luces de eje.",
+      "references": [
+        "Tarjeta SOP card-briefing-lvo · MOA 8.4"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-007",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: Engelamiento — ENG RUN-UP",
+    "stem": "Si OAT ≤ 3°C con engelamiento, ¿qué Engine Run-up en tierra exige la tarjeta SOP?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cada 30 min: 60% N1 durante 10 s y volver a IDLE",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cada 10 min: 40% N1 durante 30 s",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cada 60 min: TOGA durante 5 s",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo una vez antes del pushback a 70% N1",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Golden rule: ENG RUN-UP obligatorio si OAT ≤3°C cada 30 min: 60% N1 × 10 s → IDLE.",
+      "references": [
+        "Tarjeta SOP card-briefing-lvo · MOB/SOPM Anti-Ice"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-008",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: Anti-Ice MCDU (TO)",
+    "stem": "En el ajuste Anti-Ice en MCDU para despegue, ¿qué criterio aplica entre 5°C y 10°C con humedad visible?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ENG (solo motores) si hay humedad visible",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "ALL (motores y alas) siempre por debajo de 10°C",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "OFF hasta OAT ≤ 0°C",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "WING únicamente; motores no requieren Anti-Ice por encima de 5°C",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "SOP: <5°C ALL; entre 5°C y 10°C ENG si hay humedad visible.",
+      "references": [
+        "Tarjeta SOP card-briefing-lvo · golden rules Anti-Ice"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-009",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: Rodaje LVP — velocidades",
+    "stem": "¿Cuáles son las velocidades máximas de rodaje bajo LVP según la tarjeta SOP?",
+    "options": [
+      {
+        "id": "A",
+        "text": "10 kt en recta y 5 kt en virajes",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "15 kt en recta y 10 kt en virajes",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "20 kt en recta y 8 kt en virajes",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo 5 kt en toda la maniobra de rodaje",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Técnica de rodaje LVP: máx. 10 kt recta / 5 kt virajes; ante duda de posición → parar y parking brake.",
+      "references": [
+        "Tarjeta SOP card-briefing-lvo · sección Técnica de Rodaje en LVP"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-010",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: CAT II — RVR y referencias visuales",
+    "stem": "Para CAT II (DH típica 100 ft RA), ¿qué RVR TDZ y referencias visuales exige la tarjeta SOP?",
+    "options": [
+      {
+        "id": "A",
+        "text": "RVR TDZ 300 m (intermedio/final 125 m); 3 luces consecutivas + 1 elemento transversal",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "RVR TDZ 200 m; solo 3 luces de eje de pista",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "RVR TDZ 550 m CAT I sin requisito de luces transversales",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "RVR TDZ 125 m en los tres segmentos con DH 50 ft",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "CAT II: RVR 300/125/125; en DH ver 3 luces consecutivas de eje/aproximación + 1 elemento transversal.",
+      "references": [
+        "Tarjeta SOP card-briefing-autoland · MOA 8.4"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-011",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: CAT III — RVR y referencias",
+    "stem": "Para CAT III (DH típica 50 ft RA), ¿qué RVR TDZ y referencias visuales indica la tarjeta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "RVR TDZ 200 m (intermedio/final 125 m); al menos 3 luces consecutivas de eje de pista",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "RVR TDZ 300 m; 3 luces + barra transversal",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "RVR TDZ 550 m; segmento completo de aproximación",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "RVR TDZ 125 m en TDZ y sin requisito visual en DH",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "CAT III: RVR 200/125/125; en DH al menos 3 luces consecutivas de eje de pista.",
+      "references": [
+        "Tarjeta SOP card-briefing-autoland · MOA 8.4"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-012",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: Autoland — puertas de frustrada",
+    "stem": "¿Cuándo es mandatorio el Go-Around por modos Autoland no enganchados?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Si a 150 ft RA no aparece ALIGN o a 50 ft RA no aparece FLARE",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Si a 500 ft RA no aparece AUTOLAND 1",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Si a 30 ft RA no aparece ROLLOUT",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo si el AP se desconecta antes de 200 ft AGL",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Golden rule: GA si a 150 ft RA no hay ALIGN o a 50 ft RA no hay FLARE (callouts NO ALIGN / NO FLARE).",
+      "references": [
+        "Tarjeta SOP card-briefing-autoland · callouts Autoland"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-013",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: Callout AUTOLAND 1",
+    "stem": "¿En qué ventana de altura canta el PM \"AUTOLAND 1\"?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Entre 1.500 ft y 800 ft RA (Flap 5, ALIGN/FLARE armados en FMA)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Entre 800 ft y 500 ft RA con Flap 3",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "A exactamente 150 ft RA junto con ALIGN",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo tras la toma, al aparecer RLOUT",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Callout oficial: AUTOLAND 1 entre 1500–800 ft RA con Flap 5 y modos ALIGN/FLARE armados.",
+      "references": [
+        "Tarjeta SOP card-briefing-autoland / card-norm-npa-autoland-callouts"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-014",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: Visual Approach — downwind",
+    "stem": "En aproximación visual E195-E2, ¿qué altitud, separación y flaps aplica al entrar en viento en cola?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1.500 ft AFE, 2 NM de pista, Flap 1 (180 kt)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "1.000 ft AFE, 1,5 NM, Flap 2 (160 kt)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "2.000 ft AFE, 3 NM, Flap 0",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "1.500 ft AFE, 4 NM, Flap 3 (150 kt)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Hito SOP visual: downwind 1.500 ft AFE / 2 NM / FLAP 1 a 180 kt.",
+      "references": [
+        "Tarjeta SOP card-norm-visual-approach · MOB 2.0.11 / SOPM"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-015",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: Visual — abeam threshold",
+    "stem": "Al través de umbral en visual, ¿qué flaps/velocidad y cronometraje se aplican?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flap 2 (160 kt) y cronómetro 30 s (+1 s/kt cara, −1 s/kt cola)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Flap 3 (150 kt) y cronómetro 20 s fijos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Flap 1 (180 kt) y cronómetro 45 s",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Landing flaps y cronómetro 30 s sin corrección de viento",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Abeam: FLAP 2 @ 160 kt; 30 s de viento en cola corregidos por viento cara/cola.",
+      "references": [
+        "Tarjeta SOP card-norm-visual-approach · golden rules"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-016",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: Visual — viraje a base",
+    "stem": "En el viraje a base del circuito visual, ¿qué configuración se selecciona?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tren abajo + Flap 3 (150 kt)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Tren arriba + Flap 2 (160 kt)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Tren abajo + Flap FULL inmediatamente",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo Flap 4 manteniendo tren arriba hasta final",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Turning base: GEAR DOWN + FLAP 3 @ 150 kt; luego landing flaps y estabilización a 500 ft AFE.",
+      "references": [
+        "Tarjeta SOP card-norm-visual-approach"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-017",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: Circling — configuración AEO vs OEI",
+    "stem": "En circling, ¿qué configuración inicial distingue AEO de OEI según la tarjeta SOP?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AEO: Gear Down + Flaps 3; OEI: Flap 2 (tren en viraje a base)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "AEO: Flap 2 gear up; OEI: Flap 5 gear down desde MDA",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Ambos casos Flap FULL y gear down al nivelar en circling",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "AEO: Flap 1; OEI: Flap 0 hasta runway in sight",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Golden rule circling: AEO Gear Down+Flaps 3; OEI Flap 2 (tren al iniciar base).",
+      "references": [
+        "Tarjeta SOP card-norm-circling · MOB 2.0.11"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-018",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: Circling — cronómetro abeam",
+    "stem": "En circling, al través de umbral, ¿cómo se calcula el tiempo de viento en cola?",
+    "options": [
+      {
+        "id": "A",
+        "text": "20 s base + 30 s por cada 1.000 ft AFE de Circling Altitude",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "30 s fijos sin corrección por altura",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "45 s + 10 s por cada 500 ft AFE",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo el arco Fix Info de 3 NM sin cronómetro",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Abeam circling: cronómetro 20 s + 30 s/1.000 ft AFE; viraje 45°×30 s → ~1,5 NM lateral.",
+      "references": [
+        "Tarjeta SOP card-norm-circling"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-019",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: NPA — go-around por desviación",
+    "stem": "En NPA, ¿cuándo es mandatorio el go-around por desviación de curso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Si deflexión > 1/2 escala CDI en LOC o > 5° en NDB",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Si deflexión > 1 escala completa CDI o > 10° en NDB",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo si se pierde VGP por debajo de MDA",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Únicamente tras \"MINIMUMS\" sin pista a la vista",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Golden rule NPA: GA si >½ escala CDI (LOC) o >5° (NDB).",
+      "references": [
+        "Tarjeta SOP card-norm-npa-autoland-callouts"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-020",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: NPA — configuración 2 NM antes FAF",
+    "stem": "A 2 NM antes del FAF en NPA, ¿qué configuración exige la tarjeta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Landing Gear Down + Flap 3",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Flap 2 únicamente, tren abajo en FAF",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Flap Landing + VAP ya estabilizado",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Gear Down + Flap FULL",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "NPA: a 2 NM del FAF → Gear Down + Flap 3; en FAF → Flap Landing + VAP.",
+      "references": [
+        "Tarjeta SOP card-norm-npa-autoland-callouts"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-021",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: ILS AEO — ONE DOT",
+    "stem": "En ILS AEO según SOPM, ¿qué se hace al \"ONE DOT\" bajo GS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "GEAR DOWN + FLAPS 3",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "FLAPS 5 + GA altitude set",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo Before Landing Checklist sin cambio de flaps",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "GEAR UP si se anticipa missed approach",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Secuencia ILS AEO: ONE DOT → GEAR DOWN + FLAPS 3 (tras intercept GS con landing flaps según SOPM).",
+      "references": [
+        "Tarjeta SOP card-norm-ils-precision · SOPM-1755-200 3-35-05"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-022",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: ILS OEI — GS intercept flaps",
+    "stem": "En ILS OEI, en Glide Slope intercept, ¿qué flaps se seleccionan según la tarjeta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "FLAPS 5 + GA heading/altitude + Before Landing Checklist",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "FLAPS 3 únicamente sin checklist monomotor",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "FLAPS FULL como en aterrizaje AEO visual",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "FLAPS 2 hasta ONE DOT y luego FULL",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "OEI ILS: en GS intercept → FLAPS 5, set GA hdg/alt, BLC; ONE DOT → gear down + flaps 3.",
+      "references": [
+        "Tarjeta SOP card-norm-oei-ils · SOPM-1755-200"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-023",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: No Slat/Flap — longitud downwind",
+    "stem": "En aterrizaje No Slat/Flap, ¿qué longitud de viento en cola indica la tarjeta desde abeam hasta base?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aproximadamente 4 NM",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Aproximadamente 2 NM como el visual estándar",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aproximadamente 1,5 NM del circling OEI",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "6,5 NM de downwind completo antes de abeam",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "No Slat/Flap: downwind ≈4 NM abeam→base; final ~6,5 NM/1500 ft según figura; idle sobre umbral.",
+      "references": [
+        "Tarjeta SOP card-norm-no-slat-flap · SOPM-1755-200"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-024",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: Power Banks 2026 — máximo por persona",
+    "stem": "Según la tarjeta Power Banks 2026, ¿cuál es el máximo de power banks por persona (uso personal)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Máximo 2 unidades por persona (pasajeros y tripulación)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Máximo 1 unidad por pasajero; tripulación sin límite operativo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Máximo 4 unidades si van en bodega protegidas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Sin límite numérico si cada una es ≤ 100 Wh",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Regla de oro 2026: máx. 2 power banks/persona; solo mano; prohibido recargar con energía del asiento.",
+      "references": [
+        "Tarjeta SOP card-norm-powerbanks-2026 · BOE 2026-9940 / OACI Doc 9284"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-025",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: Power Banks — uso operativo tripulación Wh",
+    "stem": "Para uso operativo de tripulación (EFB, lectores), ¿qué límite de energía aplica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Límite estricto ≤ 100 Wh y cumplimiento UN 38.3",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Hasta 160 Wh con aprobación del PIC",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Hasta 300 Wh si van en container DGR",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Sin límite Wh si el dispositivo es de la compañía",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Uso operativo: ≤100 Wh + UN 38.3; integrado en manuales de vuelo/cabina.",
+      "references": [
+        "Tarjeta SOP card-norm-powerbanks-2026"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-026",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: Power Banks — vigencia adenda OACI",
+    "stem": "¿Desde qué fecha son aplicables las modificaciones al Doc 9284-AN/905 citadas en la tarjeta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "27 de marzo de 2026",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "1 de enero de 2026",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "27 de marzo de 2027 (con DGR 68.ª)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo tras publicación IATA DGR 68.ª sin fecha OACI",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Marco legal SOP: adenda OACI Doc 9284 vigente desde 27/03/2026 (BOE 2026-9940).",
+      "references": [
+        "Tarjeta SOP card-norm-powerbanks-2026 · BOE / OACI"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-027",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: MEANA — significado del mnemónico",
+    "stem": "¿Qué secuencia de checklists representa el mnemónico MEANA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Memory Items → Emergency → Abnormal principal → Normal → Abnormal restantes",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Meteo → EICAS → ATC → NOTAM → Alternate",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Memory Items → MEL → Emergency → Abnormal → Normal",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mayday → Evacuate → Announce → Notify → Assess",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "MEANA ordena la ejecución: M Memory, E Emergency, A Abnormal raíz, N Normal, A Abnormal restantes.",
+      "references": [
+        "Tarjeta SOP card-emg-flow-decision · MOB 3.0/3.1 / QRH"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-028",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: IMFLOCC — significado",
+    "stem": "En toma de decisiones en emergencia, ¿qué evalúa el mnemónico IMFLOCC?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inoperative items, Meteo, Fuel, Landing performance, Options, Choose, Communications",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "ILS, MDA, Flaps, LOC, Offset, Circling, Checklist",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Identify, Mitigate, Fly, Land, Organize, Call, Close",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Inop MEL, Mass, Fuel imbalance, LOC, OEI, CAT II, CVR",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "IMFLOCC: I inop, M meteo, F fuel, L landing perf, O options, C choose, C communications (TELSI/ATC/PA/ACARS).",
+      "references": [
+        "Tarjeta SOP card-emg-flow-decision"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-029",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: Fuel leak — transferencia",
+    "stem": "Ante sospecha de fuga de combustible (Fuel Leak), ¿qué prohíbe la tarjeta SOP?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transferir combustible",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Declarar PAN-PAN a ATC",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Usar ePerf para estimar peso de toma",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aplicar MEANA tras estabilizar la trayectoria",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Golden rule: fuga sospechada → PROHIBIDO transferir combustible.",
+      "references": [
+        "Tarjeta SOP card-emg-flow-decision"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-030",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: Engine fail TO — acciones bajo 400 ft",
+    "stem": "Tras fallo de motor en despegue ≥V1, ¿qué acciones de cabina están permitidas por debajo de 400 ft AGL?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solo tren arriba y cancelar avisos; cero otras acciones de cabina",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Ejecutar Memory Items completos antes de 400 ft",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Seleccionar CON y retraer flaps a cero inmediatamente",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Abrir QRH Emergency Checklist en cuanto haya positive rate",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Golden rule: rotar ~10° hacia FD; bajo 400 ft AGL solo gear up y cancelar avisos.",
+      "references": [
+        "Tarjeta SOP card-emg-engine-fail-driftdown · MOB 3.1.2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-031",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: Driftdown — velocidad",
+    "stem": "En Driftdown OEI en crucero, ¿qué velocidad se selecciona para máximo planeo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "GREEN DOT",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "VFS − 10 en FLCH desde el primer segundo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "240 KIAS de turbulencia bajo 10.000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "VMO hasta EO MAX ALT",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Driftdown: A/T off / TOGA-CON y GREEN DOT; nivelar en EO MAX ALT con márgenes 2000 ft ruta / 1000 ft NET.",
+      "references": [
+        "Tarjeta SOP card-emg-engine-fail-driftdown"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-032",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: Emergency Descent — nivelación objetivo",
+    "stem": "En descenso de emergencia, ¿cuál es la altitud objetivo de nivelación?",
+    "options": [
+      {
+        "id": "A",
+        "text": "10.000 ft o MEA/MORA, la que sea más alta",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "14.000 ft para despliegue de máscaras PAX",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "FL100 fijo sin considerar MEA",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "5.000 ft AMSL en todas las rutas Binter",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Nivelación: 10.000 ft o MEA (la mayor). Máscaras PAX auto 14.000–14.750 ft cabina.",
+      "references": [
+        "Tarjeta SOP card-emg-emergency-descent · MOB 3.1.4 / QRH"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-033",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: Emergency Descent — 2.000 ft to level",
+    "stem": "A 2.000 ft de la altitud objetivo en emergency descent, ¿qué acción indica la tarjeta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reducir velocidad a 250 kt",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Retraer aerofrenos inmediatamente",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Seleccionar SPEEDBRAKE FULL OPEN",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Anunciar \"DESCENSO FINALIZADO\" a cabina",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "A 2.000 ft to level → 250 kt; a 1.000 ft → retraer speedbrakes; luego PA \"DESCENSO FINALIZADO\".",
+      "references": [
+        "Tarjeta SOP card-emg-emergency-descent"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-034",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: RTO — criterio >80 kt hasta V1",
+    "stem": "Por encima de 80 kt hasta V1, ¿por qué motivos se aborta según la tarjeta RTO?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solo fuego/fallo de motor, humo, predictive windshear, EICAS Warning o condición insegura de vuelo",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cualquier fallo de sistema excepto TLA NOT TOGA y FUEL LO LEVEL",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Únicamente por EICAS Caution ámbar",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Nunca se aborta por encima de 80 kt; se continúa siempre hasta V1",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "<80 kt: abortar casi cualquier fallo (exc. TLA NOT TOGA / FUEL LO LEVEL). >80 kt–V1: solo alta energía listada.",
+      "references": [
+        "Tarjeta SOP card-emg-reject-takeoff · MOB 3.1.2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-035",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: RTO — PA tras parar",
+    "stem": "Tras detener el avión en un RTO, ¿qué llamada PA debe hacerse de inmediato?",
+    "options": [
+      {
+        "id": "A",
+        "text": "\"TRIPULACIÓN DE CABINA, ESPEREN INSTRUCCIONES\"",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "\"EVACUACIÓN, EVACUACIÓN, EVACUACIÓN\"",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "\"PROTECCIÓN, PROTECCIÓN, PROTECCIÓN\"",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "\"SOBRECARGO A CABINA\"",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Tras parar: parking brake + PA \"ESPEREN INSTRUCCIONES\" para evitar evacuación indebida.",
+      "references": [
+        "Tarjeta SOP card-emg-reject-takeoff"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-036",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: TCAS RA — prevalencia",
+    "stem": "Ante un TCAS RA, ¿qué prevalece sobre instrucciones previas del ATC?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Las órdenes de resolución del TCAS RA",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "La última autorización ATC de nivel",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo el juicio del PM sin desconectar AP",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El modo LNAV/VNAV del FMS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Golden rule: TCAS RA prevalece sobre ATC; Fly-to-Zone; al resolver \"CLEAR OF CONFLICT\".",
+      "references": [
+        "Tarjeta SOP card-emg-tcas-ra · MOB 3.1.8"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-037",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: Windshear escape — configuración",
+    "stem": "Durante la maniobra de escape de windshear, ¿qué está prohibido?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cambiar la configuración (no retraer tren ni mover flaps)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Avanzar palancas a MAX DETENT",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Seguir el FD hasta 15° o el PLI",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pulsar TO/GA para guiado WSHR",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Escape WS: MAX + TO/GA + 15°/PLI; PROHIBIDO cambiar tren/flaps hasta salir de la cizalladura.",
+      "references": [
+        "Tarjeta SOP card-emg-windshear · MOB 3.1.9"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-038",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: Windshear — ventana modo WSHR",
+    "stem": "¿Entre qué alturas opera el Windshear Escape Guidance (WSHR) citado en la tarjeta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Entre 10 ft y 1.500 ft AGL",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Entre 0 ft y 400 ft AGL únicamente",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Entre 200 ft y 2.500 ft AGL",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo por encima de 1.500 ft AGL",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Resumen SOP: modo WSHR entre 10 y 1.500 ft AGL; salida del modo >1.500 ft y fuera de cizalladura.",
+      "references": [
+        "Tarjeta SOP card-emg-windshear"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-039",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: EGPWS — cabeceo de escape",
+    "stem": "Ante \"TERRAIN, TERRAIN, PULL UP\", ¿qué cabeceo de escape indica la tarjeta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "15° Nose Up o límite del Pitch Limit Indicator (PLI), planos nivelados",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "8° Nose Up como en go-around visual estándar",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "25° Nose Up sin referencia al PLI",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mantener actitud actual y solo MAX thrust",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "EGPWS: MY CONTROLS, MAX, wings level, 15°/PLI; no mover tren/flaps; ascender a MSA/MORA.",
+      "references": [
+        "Tarjeta SOP card-emg-egpws-terrain · MOB 3.1.7"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-040",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: TWIN — elementos",
+    "stem": "¿Qué elementos evalúa la secuencia TWIN al abrir briefings de despegue y aproximación?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Threats/TEM, Weather/pista, Inop items (MEL/CDL), NOTAMs/SNOWTAMs",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Time, Wind, ILS, Navigation aids",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Taxi, Weather radar, Inertial, NOTOC",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Thrust, Weights, Icing, Noise abatement",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "TWIN: T Threats, W Weather, I Inop, N NOTAMs — apertura obligatoria del PF.",
+      "references": [
+        "Tarjeta SOP card-briefing-lvo / briefings MOB 2.0.6"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-041",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: Circling OEI — final",
+    "stem": "En circling OEI, en final, ¿qué flaps y acciones de AP/trim indica la tarjeta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "FLAPS 5, AP desconectado, rudder trim neutral y Before Landing Checklist",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "FLAPS 3 con AP acoplado hasta 200 ft",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "FLAPS FULL y AP ON hasta flare",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "FLAPS 2 manteniendo gear up hasta short final",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Circling OEI: base gear+flaps 3 (~1,5 NM); final flaps 5, AP off, rudder trim neutral, BLC.",
+      "references": [
+        "Tarjeta SOP card-norm-oei-circling · SOPM"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-042",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: LVTO — empuje",
+    "stem": "En LVTO, ¿qué política de empuje aplica según la tarjeta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "NO FLEX TAKEOFF; usar empuje nominal o DERATED según ePerf",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "FLEX obligatorio para reducir desgaste de motores",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo TOGA; DERATED prohibido en LVO",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Assumed temperature FLEX si RVR ≥ 150 m",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Parámetros LVTO: NO FLEX; nominal o DERATED per ePerf; Comandante PF.",
+      "references": [
+        "Tarjeta SOP card-briefing-lvo"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-043",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: DUMP automático — régimen",
+    "stem": "En modo automático DUMP, ¿qué régimen y techo de cabina indica la tarjeta de emergency descent?",
+    "options": [
+      {
+        "id": "A",
+        "text": "+2.000 ft/min hasta 12.400 ft (normal) o 14.500 ft (H ALTO)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "+3.000 ft/min hasta 10.000 ft siempre",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "+500 ft/min hasta 8.000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "+2.000 ft/min sin límite de techo de cabina",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "DUMP auto: +2000 ft/min a 12.400 ft (o 14.500 H ALTO). Manual: +3000 ft/min hasta 14.500 ft.",
+      "references": [
+        "Tarjeta SOP card-emg-emergency-descent · régimen DUMP"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-044",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: Memory Items ENG FIRE — N1 operativo",
+    "stem": "En Memory Items de ENG FIRE / Severe Damage, ¿qué margen de N1 se mantiene en el motor operativo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mínimo 5% por encima de N1 IDLE",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Exactamente N1 IDLE para reducir asimetría",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "TOGA fijo en el motor operativo desde el primer paso",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "N1 máximo continuo sin mínimo sobre IDLE",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Memory Items: A/T disconnect; N1 operativo MIN 5% above IDLE; luego IDLE/STOP/PULL en el afectado.",
+      "references": [
+        "Tarjeta SOP card-emg-engine-fail-driftdown · memoryItems / TABLAS MI"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-045",
+    "subject_id": "binter_ops",
+    "learning_objective": "Tarjeta SOP: Dual Engine Failure — velocidad y RAT",
+    "stem": "Ante DUAL ENGINE FAILURE, ¿qué Memory Items indica la tabla/tarjeta operacional?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Airspeed mínimo 270 KIAS y RAT MANUAL DEPLOY Lever PULL",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Airspeed 210 KIAS y solo despliegue automático de RAT",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Green Dot y APU start inmediato como único Memory Item",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "250 KIAS y FIRE HANDLE PULL en ambos motores",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "DUAL ENGINE FAILURE MI: MIN 270 KIAS + tirón manual RAT (asegura enclavamiento).",
+      "references": [
+        "TABLAS memory-items-e2 / QRH Rev19 · tarjeta operativa E2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-101",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS: Plan Básico Estándar 1B — Tipo B",
+    "stem": "En Plan Básico Estándar (Tabla 1B), ¿qué incremento aplica a una aproximación Tipo B (CAT I) en el alternativo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DA/H + 200 ft y RVR/VIS + 800 m",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "DA/H + 100 ft y RVR + 300 m",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "DA/H + 150 ft y RVR + 450 m",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "MDA/H + 400 ft y RVR + 1.500 m",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Tabla 1B: Tipo B (1 o ≥2 pistas) → +200 ft / +800 m. Sin reducción por pistas separadas en Plan Básico.",
+      "references": [
+        "TABLAS alternates-basic · MOA 8.1.7.2.6 Tabla 1B"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-102",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS: Plan Básico 1B — Tipo A / Circling",
+    "stem": "En Tabla 1B, ¿qué incremento aplica a Tipo A (NPA) o Circling?",
+    "options": [
+      {
+        "id": "A",
+        "text": "MDA/H + 400 ft y RVR/VIS + 1.500 m (Circling usa VIS, no RVR)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "MDA/H + 200 ft y RVR + 1.000 m",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "DA/H + 200 ft y RVR + 800 m",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "MDA/H + 100 ft y VIS + 800 m",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Tipo A y Circling en 1B: +400 ft / +1.500 m; Circling siempre sobre VIS meteorológica.",
+      "references": [
+        "TABLAS alternates-basic · MOA 8.1.7.2.6"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-103",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS: Plan con Variaciones 1A — 2× Tipo B pistas separadas",
+    "stem": "Con Variaciones (Tabla 1A), dos o más Tipo B a pistas separadas, ¿qué incremento aplica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DA/H + 100 ft y RVR + 300 m",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "DA/H + 200 ft y RVR + 800 m",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "DA/H + 150 ft y RVR + 450 m",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "DA/H + 200 ft y RVR + 1.000 m",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Máxima ventaja 1A: 2+ Tipo B en pistas separadas → +100 ft / +300 m (ej. 550+300=850 m).",
+      "references": [
+        "TABLAS alternates-variations · MOA 8.1.7.2.5 Tabla 1A"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-104",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS: Plan 1A — una sola Tipo B",
+    "stem": "En Tabla 1A, una sola aproximación Tipo B (o dos a la misma pista), ¿qué incremento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DA/H + 150 ft y RVR + 450 m",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "DA/H + 100 ft y RVR + 300 m",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "DA/H + 200 ft y RVR + 800 m",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "MDA/H + 400 ft y RVR + 1.500 m",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Una Tipo B / misma pista: +150 ft / +450 m (ej. 550+450=1.000 m).",
+      "references": [
+        "TABLAS alternates-variations · MOA 8.1.7.2.5"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-105",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS: Requisitos para aplicar Tabla 1A",
+    "stem": "¿Qué requisitos indispensables cita la tarjeta TABLAS para usar el Plan Básico con Variaciones?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flight Monitoring CCO en tiempo real, aprobación LVO en OpSpecs y despacho automático Lido",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Solo aprobación CAT I estándar sin Flight Monitoring",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Dos pilotos LVO sin software de despacho",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Únicamente NOTAM de LVP en destino",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Warning 1A: 1) Flight Monitoring CCO, 2) LVO en OpSpecs, 3) Lido Flight automático.",
+      "references": [
+        "TABLAS alternates-variations · warningAlert"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-106",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS: Validez temporal alternativos",
+    "stem": "¿Qué ventana temporal deben cumplir las condiciones del alternativo respecto a la ETA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desde 1 hora antes hasta 1 hora después de la ETA (ETA ± 1 h)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Solo en la hora exacta de la ETA",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "ETA ± 30 minutos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Desde ETD hasta ETA sin margen posterior",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Extra notes / planning: TAF/METAR ETA ±1 h ≥ mínimos calculados.",
+      "references": [
+        "TABLAS alternates-basic / alternates-variations · MOA 8.1.7"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-107",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Memory Items: CABIN ALTITUDE HIGH — primer paso",
+    "stem": "En CABIN ALTITUDE HIGH, ¿cuál es la primera acción de Memory Items?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Crew Oxy Masks: DON, 100%",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Thrust Levers: IDLE",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Transponder: 7700",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "DUMP Button: PUSH IN como primer paso obligatorio",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "CABIN ALT HI: 1) Masks 100%, 2) Comm, 3) 10.000 ft/MEA, 4) IDLE, 5) Speedbrake FULL, 6) Speed, 7) 7700.",
+      "references": [
+        "TABLAS memory-items-e2 · QRH Rev19"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-108",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Memory Items: ENG FIRE — espera 2ª botella",
+    "stem": "Tras ENG FIRE, ¿cuánto se espera antes de descargar la 2ª botella si el fuego persiste?",
+    "options": [
+      {
+        "id": "A",
+        "text": "30 segundos",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "10 segundos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "60 segundos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Inmediatamente tras PULL del maneral",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Parámetro clave TABLAS: esperar 30 s antes de la 2ª botella si el fuego persiste.",
+      "references": [
+        "TABLAS memory-items-e2 · ENG 1(2) FIRE"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-109",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Memory Items: APU FIRE en tierra",
+    "stem": "En APU FIRE en tierra, tras APU EMER STOP, ¿qué ocurre automáticamente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El APU se apaga y descarga el extintor automáticamente tras 10 s",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "No hay descarga automática; hay que pulsar BOTTLE DISCH al instante",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Descarga inmediata sin espera de 10 s",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo corta combustible; el agente no se descarga nunca en tierra",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "APU FIRE: EMER STOP; en tierra auto-discharge tras 10 s. En vuelo: DISCH manual tras 10 s si persiste.",
+      "references": [
+        "TABLAS memory-items-e2 · APU FIRE"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-110",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Memory Items: BATT OVERTEMP",
+    "stem": "¿Cuál es el Memory Item de BATT 1(2) OVERTEMP?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Associated BATT Knob: OFF",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "APU EMER STOP Button: PUSH IN",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "DUMP Button: PUSH IN",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "STEER DISC Switch: PRESS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Único MI de batería: knob OFF para aislar de la red DC y evitar runaway térmico.",
+      "references": [
+        "TABLAS memory-items-e2 · BATT OVERTEMP"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-111",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Memory Items: CARGO SMOKE — autonomía Halón",
+    "stem": "Tras CARGO FWD/AFT SMOKE, ¿cuánto tiempo mantiene atmósfera inerte el sistema según la nota?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hasta 120 minutos en bodega",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Hasta 30 minutos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Hasta 60 minutos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Hasta 180 minutos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Nota TABLAS: Halón mantiene atmósfera inerte hasta 120 min; land ASAP.",
+      "references": [
+        "TABLAS memory-items-e2 · CARGO SMOKE"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-112",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Memory Items: EMERGENCY DESCENT — primer paso",
+    "stem": "En el Memory Item EMERGENCY DESCENT (sin despresurización previa), ¿cuál es el primer paso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "FSTN BELTS Switch: ON",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Crew Oxy Masks: DON, 100%",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Speedbrake Lever: FULL OPEN",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Transponder: 7700",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "EMERGENCY DESCENT MI empieza por FSTN BELTS ON; luego 10.000/MEA, IDLE, speedbrake, speed, 7700.",
+      "references": [
+        "TABLAS memory-items-e2 · EMERGENCY DESCENT"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-113",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Memory Items: PITCH TRIM RUNAWAY",
+    "stem": "¿Cuáles son los Memory Items de PITCH TRIM RUNAWAY?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AP DISC PRESS and HOLD, luego PITCH TRIM SYS 1 & 2 CUTOUT PUSH IN",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Solo ELEVATOR DISCONNECT Handle PULL",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "AILERON DISCONNECT Handle PULL",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "STEER DISC Switch PRESS en vuelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "PITCH TRIM RUNAWAY: mantener AP DISC y CUTOUT ambos canales. Elevator disconnect es para jammed column.",
+      "references": [
+        "TABLAS memory-items-e2 · PITCH TRIM RUNAWAY"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-114",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Limitaciones: techo máximo E195-E2",
+    "stem": "¿Cuál es el techo máximo operativo del Embraer 195-E2 según la tabla de limitaciones?",
+    "options": [
+      {
+        "id": "A",
+        "text": "41.000 ft (FL410)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "39.000 ft (techo de APU start)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "45.000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "37.000 ft",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Maximum Operating Ceiling: 41.000 ft (FL410). AFM 2-01 / AOM 1-02.",
+      "references": [
+        "TABLAS limitations-e2 · AFM Section 2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-115",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Limitaciones: flaps máximos",
+    "stem": "¿Cuál es la altitud máxima con flaps extendidos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "20.000 ft",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "14.000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "25.000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "10.000 ft",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Prohibido flaps (1–FULL) por encima de 20.000 ft / FL200.",
+      "references": [
+        "TABLAS limitations-e2 · AFM 2-04"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-116",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Limitaciones: Autoland elevación pista",
+    "stem": "¿Cuál es la elevación máxima de pista para Autoland?",
+    "options": [
+      {
+        "id": "A",
+        "text": "7.249 ft",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "9.200 ft (HI FIELD)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "14.000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "5.000 ft",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Altitud máx. operación Autoland: elevación de pista 7.249 ft.",
+      "references": [
+        "TABLAS limitations-e2 · AFM 2-03"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-117",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Limitaciones: Vmo/Mmo",
+    "stem": "¿Cuáles son Vmo / Mmo del E195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "320 KIAS / M 0.82",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "250 KIAS / M 0.76",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "300 KIAS / M 0.80",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "340 KIAS / M 0.85",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Vmo/Mmo: 320 KIAS / M0.82 (la más restrictiva).",
+      "references": [
+        "TABLAS limitations-e2 · AFM 2-02"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-118",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Limitaciones: Vfe Flap FULL",
+    "stem": "¿Cuál es Vfe con Flap FULL?",
+    "options": [
+      {
+        "id": "A",
+        "text": "165 kt",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "180 kt",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "200 kt",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "215 kt",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Vfe: F1 230 · F2 215 · F3 200 · F4/F5 180 · FULL 165 kt.",
+      "references": [
+        "TABLAS limitations-e2 · AFM 2-04"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-119",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Limitaciones: Vlo extensión / retracción",
+    "stem": "¿Cuáles son Vlo extensión y Vlo retracción del tren?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Extensión 250 KIAS; retracción 220 KIAS (Vle 250 KIAS)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Extensión 220 KIAS; retracción 250 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Extensión y retracción 250 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Extensión 200 KIAS; Vle 220 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Vlo Ext 250 / Ret 220; Vle extendido 250 KIAS.",
+      "references": [
+        "TABLAS limitations-e2 · AFM 2-05"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-120",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Limitaciones: crosswind pista seca",
+    "stem": "¿Cuál es el viento cruzado máximo demostrado en pista seca?",
+    "options": [
+      {
+        "id": "A",
+        "text": "38 kt",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "31 kt",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "20 kt",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "15 kt",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Crosswind: seca 38 · mojada 31 · nieve compacta 20 · hielo 12 kt. Tailwind máx. 15 kt.",
+      "references": [
+        "TABLAS limitations-e2 · AFM 2-01 / MOB 2.0"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-121",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Limitaciones: AP mínimas — despegue e ILS/LPV",
+    "stem": "¿Cuáles son las alturas mínimas de conexión del AP en despegue y en ILS/LPV?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Despegue 200 ft AGL; ILS/LPV 80 ft AGL",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Despegue 400 ft AGL; ILS/LPV 200 ft AGL",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Despegue 100 ft AGL; ILS/LPV 50 ft AGL",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Despegue 1.000 ft AGL; NPA 80 ft AGL",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "AP mín: TO 200 · ILS/LPV 80 · NPA 190 · Crucero 1.000 ft AGL; coupled GA loss 100 ft.",
+      "references": [
+        "TABLAS limitations-e2 · AFM 2-03"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-122",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Limitaciones: fuel imbalance",
+    "stem": "¿Cuál es el desbalance máximo de combustible permitido?",
+    "options": [
+      {
+        "id": "A",
+        "text": "360 kg (800 lb)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "200 kg",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "500 kg",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "800 kg",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Fuel imbalance máx. 360 kg (800 lb) entre tanques L/R.",
+      "references": [
+        "TABLAS limitations-e2 · AFM 2-07"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-123",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Limitaciones: APU bleed altitude",
+    "stem": "¿Hasta qué altitud puede el APU suministrar sangrado neumático (aire acondicionado/presurización)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "15.000 ft (o 20.000 ft para arranque de motor asistido)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "39.000 ft igual que el generador",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "10.000 ft únicamente",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "FL410 techo del avión",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "APU bleed máx. 15.000 ft (20.000 ft assisted engine start). Gen/start hasta 39.000 ft.",
+      "references": [
+        "TABLAS limitations-e2 · AFM 2-10"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-124",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Limitaciones: turbulencia Vra",
+    "stem": "¿Cuál es la velocidad de turbulencia (Vra) bajo y sobre 10.000 ft?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bajo 10.000 ft: 240 KIAS; sobre 10.000 ft: 270 KIAS / M 0.76",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Bajo 10.000: 270 KIAS; sobre: 240 KIAS / M 0.82",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "250 KIAS en todos los niveles",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "320 KIAS / M 0.82 en turbulencia severa",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Vra/Mra: <10k → 240 KIAS; >10k → 270 KIAS / M0.76.",
+      "references": [
+        "TABLAS limitations-e2 · AOM 1-03"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-125",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS MOA: Cap. 8.4 contenido",
+    "stem": "Según la tabla de capítulos MOA, ¿qué regula el Cap. 8.4?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Operaciones con visibilidad reducida (LVO): LVTO ≥125 m, CAT II/III y requisitos de pista",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Preparación y planificación del vuelo (combustible y alternativos)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Notificación MOR ≤72 h y preservación CVR/FDR",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mercancías peligrosas y NOTOC",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "MOA 8.4 = LVO (LVTO, CAT II/III). 8.1 = planificación; 11 = SMS reporting; 9 = DGR.",
+      "references": [
+        "TABLAS moa-chapters · MOA Ed06 RN26"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-126",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS MOA: plazos MEL Cat B/C/D",
+    "stem": "Según MOA Cap. 8.6 en la tabla, ¿cuáles son los plazos Cat B, C y D?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cat B 3 días, Cat C 10 días, Cat D 120 días (Cat A específico)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cat B 10 días, Cat C 3 días, Cat D 30 días",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cat B 72 h, Cat C 7 días, Cat D 90 días",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cat B 5 días, Cat C 15 días, Cat D 180 días",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "MEL rectificación: A específico · B 3 días · C 10 días · D 120 días.",
+      "references": [
+        "TABLAS moa-chapters · MOA 8.6"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-127",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS MOA: MOR plazo",
+    "stem": "¿Cuál es el plazo de reporte MOR citado en MOA Cap. 11 de la tabla?",
+    "options": [
+      {
+        "id": "A",
+        "text": "≤ 72 horas",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "≤ 24 horas",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "≤ 48 horas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "≤ 7 días",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "MOA 11 / UE 376/2014: MOR ≤72 h; preservar CVR/FDR (CBs en tierra).",
+      "references": [
+        "TABLAS moa-chapters · MOA Cap. 11"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-128",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS MOA: fallo radio IMC",
+    "stem": "En MOA Cap. 12 / SERA (tabla), tras fallo de comunicaciones en IMC, ¿cuánto se mantiene nivel y velocidad?",
+    "options": [
+      {
+        "id": "A",
+        "text": "20 minutos tras la última hora prevista de reporte",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "7 minutos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "30 minutos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "45 minutos de controlled rest",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Fallo coms IMC: mantener nivel/velocidad 20 min tras última hora prevista de reporte.",
+      "references": [
+        "TABLAS moa-chapters · MOA Cap. 12 / SERA"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-129",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS VFR: controlado bajo FL100 — visibilidad",
+    "stem": "En espacio controlado B–E por debajo de FL100 (≥3.000 ft AMSL o 1.000 ft AGL), ¿visibilidad y distancia a nubes?",
+    "options": [
+      {
+        "id": "A",
+        "text": "5 km; 1.500 m horizontal y 1.000 ft (300 m) vertical",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "8 km; 1.500 m / 1.000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "1.500 m; libre de nubes con suelo a la vista",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "5 km; 500 m horizontal y 500 ft vertical",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "SERA controlado <FL100: VIS 5 km; nubes 1.500 m H / 1.000 ft V. ≥FL100: 8 km misma separación.",
+      "references": [
+        "TABLAS vfr-minimums · SERA.5001/5005 · MOA 8.1.4"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-130",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS VFR: Special VFR en CTR",
+    "stem": "¿Cuáles son los mínimos de Special VFR en CTR según la tabla?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VIS tierra ≥1.500 m (≥800 m helicópteros), libre de nubes con superficie a la vista, techo ≥600 ft",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "VIS 5 km y techo ≥1.500 ft como VFR nocturno",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "VIS 8 km y separación 1.500 m / 1.000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "VIS 1.000 m y techo ≥300 ft sin ATC",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "SVFR: VIS ≥1500 m (heli 800), clear of cloud + surface in sight, ceiling ≥600 ft; ATC required.",
+      "references": [
+        "TABLAS vfr-minimums · SERA"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-131",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS VFR: warning CTR/TMA despegue",
+    "stem": "En CTR/TMA, ¿bajo qué techo/visibilidad en tierra no despegará/aterrizará un VFR (salvo SVFR)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Techo < 1.500 ft (450 m) o visibilidad en tierra < 5 km",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Techo < 600 ft o VIS < 1.500 m",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Techo < 1.000 ft o VIS < 8 km",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo si VIS < 1.500 m independientemente del techo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Warning TABLAS: en controlado, no VFR TO/LDG si techo <1500 ft o VIS tierra <5 km (salvo SVFR).",
+      "references": [
+        "TABLAS vfr-minimums · warningAlert"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-132",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS VFR: velocidad bajo FL100",
+    "stem": "¿Cuál es la IAS máxima VFR bajo FL100 en clases C–G según la nota extra?",
+    "options": [
+      {
+        "id": "A",
+        "text": "250 kt IAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "140 kt IAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "200 kt IAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "280 kt IAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Extra note: VFR bajo FL100 en C/D/E/F/G → máx. 250 kt IAS.",
+      "references": [
+        "TABLAS vfr-minimums · extraNotes"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-133",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Limitaciones: HI FIELD / O2 tierra",
+    "stem": "¿A partir de qué elevación el flag HI FIELD exige oxígeno continuo de al menos un piloto en tierra?",
+    "options": [
+      {
+        "id": "A",
+        "text": "9.200 ft",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "7.249 ft",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "10.000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "14.000 ft",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "HI FIELD @ 9.200 ft: ≥1 piloto con O2 continuo en operaciones en tierra.",
+      "references": [
+        "TABLAS limitations-e2 · AOM 1-02"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-134",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Limitaciones: máscaras PAX auto",
+    "stem": "¿En qué rango de altitud de cabina se despliegan automáticamente las máscaras de pasaje?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Entre 14.000 ft y 14.750 ft",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Entre 10.000 ft y 12.400 ft",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Entre 12.400 ft y 14.000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Exactamente a 10.000 ft",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Despliegue auto PAX: 14.000–14.750 ft de altitud de presión de cabina.",
+      "references": [
+        "TABLAS limitations-e2 · AFM 2-06"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-135",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Memory Items: SMOKE EVACUATION",
+    "stem": "Además de masks 100% y comunicación, ¿qué Memory Item añade SMOKE EVACUATION?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DUMP Button: PUSH IN",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "APU EMER STOP Button: PUSH IN",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Associated Cargo Smoke Button: PUSH",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "DN LOCK REL Button: PRESS and HOLD",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "SMOKE EVACUATION: masks, comm, DUMP IN → ventilación forzada; descender a 10.000/MEA.",
+      "references": [
+        "TABLAS memory-items-e2 · SMOKE EVACUATION"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-136",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS MOA: Cap. 10 AVSEC — squawk",
+    "stem": "Según la tabla MOA Cap. 10, ¿qué squawk se asocia a interferencia ilícita?",
+    "options": [
+      {
+        "id": "A",
+        "text": "7500",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "7600",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "7700",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "2000",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "AVSEC Cap.10: amenaza, LRBL, squawk 7500. 7600=coms, 7700=emergencia general.",
+      "references": [
+        "TABLAS moa-chapters · MOA Cap. 10"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-137",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS: Plan 1A — Tipo A 3D DH≤200 ft",
+    "stem": "En Tabla 1A, aproximación 3D Tipo A con DH ≤200 ft (ILS/LPV/GLS/RNP BARO-VNAV), ¿incremento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DA/H + 200 ft y RVR/VIS + 800 m",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "DA/H + 100 ft y RVR + 300 m",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "MDA/H + 400 ft y RVR + 1.500 m",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "DA/H + 150 ft y RVR + 450 m",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "1A fila 3D Tipo A DH≤200: +200 ft / +800 m (como Tipo B estándar 1B).",
+      "references": [
+        "TABLAS alternates-variations · MOA 8.1.7.2.5"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-138",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Limitaciones: wipers",
+    "stem": "¿Hasta qué altitud/velocidad pueden usarse los limpiaparabrisas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hasta 14.000 ft y 250 KIAS (lo más restrictivo)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Hasta 20.000 ft sin límite de velocidad",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Hasta FL410 a cualquier IAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo en tierra y por debajo de 80 kt",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Wipers prohibidos por encima de 14.000 ft o 250 KIAS.",
+      "references": [
+        "TABLAS limitations-e2 · AFM 2-08"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-139",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Memory Items: GEAR LEVER CANNOT BE MOVED UP",
+    "stem": "¿Cuál es la secuencia Memory Item si no se puede subir el tren?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DN LOCK REL PRESS and HOLD → LANDING GEAR Lever UP → RELEASE",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Solo GEAR DOWN y continuar sin intentar UP",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "AILERON DISCONNECT y luego lever UP",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "APU EMER STOP y lever UP",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Liberar solenoide con DN LOCK REL mientras se selecciona UP; soltar tras enclavamiento.",
+      "references": [
+        "TABLAS memory-items-e2 · GEAR LEVER"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
+    "id": "BIN-SOP-140",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS MOA: Cap. 8.3 prioridad VNCG",
+    "stem": "Según MOA Cap. 8.3 en la tabla, ¿cuál es la prioridad de cabina citada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VNCG: Volar → Navegar → Comunicar → Gestionar (cabina estéril <10.000 ft)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Gestionar → Comunicar → Navegar → Volar",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo MEANA sin prioridad de vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "ATC → Company → Cabin → Fly",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "MOA 8.3: VNCG + cabina estéril <10.000 ft + briefings estándar.",
+      "references": [
+        "TABLAS moa-chapters · MOA Cap. 8.3"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "binter-ops",
+    "_subtopic": "procedimientos-operativos"
+  },
+  {
     "id": "CMD-EXAM-001",
     "subject_id": "cmd_dispatch_mel",
     "learning_objective": "MEL / DDPM - Procedimientos Operacionales (O)",

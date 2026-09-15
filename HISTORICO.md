@@ -4,7 +4,23 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 
 ---
 
-## 🚀 Versión Actual: v3.4.2 (2026-09-15)
+## 🚀 Versión Actual: v3.4.4 (2026-09-15)
+
+### 🔄 Sync + banco SOP/TABLAS
+- Modal **Sincronización Multi-Dispositivo**: tarjeta «Flujo de creación de preguntas» (Drive → NotebookLM → skills TRE → `banks/` → Vercel/PIN) con overrides modo día.
+- Nuevo banco **Binter Ops → Procedimientos Operativos / SOPs**: 85 reactivos sobre tarjetas SOP y TABLAS (MCQ + alto ratio flashcards numéricas/acrónimos), fidelidad a `procedureCardsData` / `operationalTablesData`.
+
+---
+
+## 🧾 Versión v3.4.3 (2026-09-15)
+
+### 🧾 Skill proceso creación de preguntas
+- Nuevo skill orquestador `.agents/skills/question-creation-process/SKILL.md`: flujo completo acotar → Metaprompt/NotebookLM → auditoría TRE → Antigravity → `banks/`.
+- Complementa `manual-bank-expansion`, `aviation-question-authoring` y `easa-distractor-engineering`.
+
+---
+
+## 📚 Versión v3.4.2 (2026-09-15)
 
 ### 📚 Flujo seguro Manuales Drive → bancos
 - Documentado el pipeline **Drive (`Antigravity/manuales`) → NotebookLM/Gemini → Cursor (skills TRE) → Antigravity (schema) → `banks/`**.

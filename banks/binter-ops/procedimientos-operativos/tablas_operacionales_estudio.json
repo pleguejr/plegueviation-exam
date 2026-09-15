@@ -1,0 +1,1482 @@
+[
+  {
+    "id": "BIN-SOP-101",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS: Plan Básico Estándar 1B — Tipo B",
+    "stem": "En Plan Básico Estándar (Tabla 1B), ¿qué incremento aplica a una aproximación Tipo B (CAT I) en el alternativo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DA/H + 200 ft y RVR/VIS + 800 m",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "DA/H + 100 ft y RVR + 300 m",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "DA/H + 150 ft y RVR + 450 m",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "MDA/H + 400 ft y RVR + 1.500 m",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Tabla 1B: Tipo B (1 o ≥2 pistas) → +200 ft / +800 m. Sin reducción por pistas separadas en Plan Básico.",
+      "references": [
+        "TABLAS alternates-basic · MOA 8.1.7.2.6 Tabla 1B"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "BIN-SOP-102",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS: Plan Básico 1B — Tipo A / Circling",
+    "stem": "En Tabla 1B, ¿qué incremento aplica a Tipo A (NPA) o Circling?",
+    "options": [
+      {
+        "id": "A",
+        "text": "MDA/H + 400 ft y RVR/VIS + 1.500 m (Circling usa VIS, no RVR)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "MDA/H + 200 ft y RVR + 1.000 m",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "DA/H + 200 ft y RVR + 800 m",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "MDA/H + 100 ft y VIS + 800 m",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Tipo A y Circling en 1B: +400 ft / +1.500 m; Circling siempre sobre VIS meteorológica.",
+      "references": [
+        "TABLAS alternates-basic · MOA 8.1.7.2.6"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "BIN-SOP-103",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS: Plan con Variaciones 1A — 2× Tipo B pistas separadas",
+    "stem": "Con Variaciones (Tabla 1A), dos o más Tipo B a pistas separadas, ¿qué incremento aplica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DA/H + 100 ft y RVR + 300 m",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "DA/H + 200 ft y RVR + 800 m",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "DA/H + 150 ft y RVR + 450 m",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "DA/H + 200 ft y RVR + 1.000 m",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Máxima ventaja 1A: 2+ Tipo B en pistas separadas → +100 ft / +300 m (ej. 550+300=850 m).",
+      "references": [
+        "TABLAS alternates-variations · MOA 8.1.7.2.5 Tabla 1A"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    }
+  },
+  {
+    "id": "BIN-SOP-104",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS: Plan 1A — una sola Tipo B",
+    "stem": "En Tabla 1A, una sola aproximación Tipo B (o dos a la misma pista), ¿qué incremento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DA/H + 150 ft y RVR + 450 m",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "DA/H + 100 ft y RVR + 300 m",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "DA/H + 200 ft y RVR + 800 m",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "MDA/H + 400 ft y RVR + 1.500 m",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Una Tipo B / misma pista: +150 ft / +450 m (ej. 550+450=1.000 m).",
+      "references": [
+        "TABLAS alternates-variations · MOA 8.1.7.2.5"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "BIN-SOP-105",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS: Requisitos para aplicar Tabla 1A",
+    "stem": "¿Qué requisitos indispensables cita la tarjeta TABLAS para usar el Plan Básico con Variaciones?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flight Monitoring CCO en tiempo real, aprobación LVO en OpSpecs y despacho automático Lido",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Solo aprobación CAT I estándar sin Flight Monitoring",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Dos pilotos LVO sin software de despacho",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Únicamente NOTAM de LVP en destino",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Warning 1A: 1) Flight Monitoring CCO, 2) LVO en OpSpecs, 3) Lido Flight automático.",
+      "references": [
+        "TABLAS alternates-variations · warningAlert"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "BIN-SOP-106",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS: Validez temporal alternativos",
+    "stem": "¿Qué ventana temporal deben cumplir las condiciones del alternativo respecto a la ETA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desde 1 hora antes hasta 1 hora después de la ETA (ETA ± 1 h)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Solo en la hora exacta de la ETA",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "ETA ± 30 minutos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Desde ETD hasta ETA sin margen posterior",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Extra notes / planning: TAF/METAR ETA ±1 h ≥ mínimos calculados.",
+      "references": [
+        "TABLAS alternates-basic / alternates-variations · MOA 8.1.7"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "BIN-SOP-107",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Memory Items: CABIN ALTITUDE HIGH — primer paso",
+    "stem": "En CABIN ALTITUDE HIGH, ¿cuál es la primera acción de Memory Items?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Crew Oxy Masks: DON, 100%",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Thrust Levers: IDLE",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Transponder: 7700",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "DUMP Button: PUSH IN como primer paso obligatorio",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "CABIN ALT HI: 1) Masks 100%, 2) Comm, 3) 10.000 ft/MEA, 4) IDLE, 5) Speedbrake FULL, 6) Speed, 7) 7700.",
+      "references": [
+        "TABLAS memory-items-e2 · QRH Rev19"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "BIN-SOP-108",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Memory Items: ENG FIRE — espera 2ª botella",
+    "stem": "Tras ENG FIRE, ¿cuánto se espera antes de descargar la 2ª botella si el fuego persiste?",
+    "options": [
+      {
+        "id": "A",
+        "text": "30 segundos",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "10 segundos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "60 segundos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Inmediatamente tras PULL del maneral",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Parámetro clave TABLAS: esperar 30 s antes de la 2ª botella si el fuego persiste.",
+      "references": [
+        "TABLAS memory-items-e2 · ENG 1(2) FIRE"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "BIN-SOP-109",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Memory Items: APU FIRE en tierra",
+    "stem": "En APU FIRE en tierra, tras APU EMER STOP, ¿qué ocurre automáticamente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El APU se apaga y descarga el extintor automáticamente tras 10 s",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "No hay descarga automática; hay que pulsar BOTTLE DISCH al instante",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Descarga inmediata sin espera de 10 s",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo corta combustible; el agente no se descarga nunca en tierra",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "APU FIRE: EMER STOP; en tierra auto-discharge tras 10 s. En vuelo: DISCH manual tras 10 s si persiste.",
+      "references": [
+        "TABLAS memory-items-e2 · APU FIRE"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "BIN-SOP-110",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Memory Items: BATT OVERTEMP",
+    "stem": "¿Cuál es el Memory Item de BATT 1(2) OVERTEMP?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Associated BATT Knob: OFF",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "APU EMER STOP Button: PUSH IN",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "DUMP Button: PUSH IN",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "STEER DISC Switch: PRESS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Único MI de batería: knob OFF para aislar de la red DC y evitar runaway térmico.",
+      "references": [
+        "TABLAS memory-items-e2 · BATT OVERTEMP"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "BIN-SOP-111",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Memory Items: CARGO SMOKE — autonomía Halón",
+    "stem": "Tras CARGO FWD/AFT SMOKE, ¿cuánto tiempo mantiene atmósfera inerte el sistema según la nota?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hasta 120 minutos en bodega",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Hasta 30 minutos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Hasta 60 minutos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Hasta 180 minutos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Nota TABLAS: Halón mantiene atmósfera inerte hasta 120 min; land ASAP.",
+      "references": [
+        "TABLAS memory-items-e2 · CARGO SMOKE"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "BIN-SOP-112",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Memory Items: EMERGENCY DESCENT — primer paso",
+    "stem": "En el Memory Item EMERGENCY DESCENT (sin despresurización previa), ¿cuál es el primer paso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "FSTN BELTS Switch: ON",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Crew Oxy Masks: DON, 100%",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Speedbrake Lever: FULL OPEN",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Transponder: 7700",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "EMERGENCY DESCENT MI empieza por FSTN BELTS ON; luego 10.000/MEA, IDLE, speedbrake, speed, 7700.",
+      "references": [
+        "TABLAS memory-items-e2 · EMERGENCY DESCENT"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "BIN-SOP-113",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Memory Items: PITCH TRIM RUNAWAY",
+    "stem": "¿Cuáles son los Memory Items de PITCH TRIM RUNAWAY?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AP DISC PRESS and HOLD, luego PITCH TRIM SYS 1 & 2 CUTOUT PUSH IN",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Solo ELEVATOR DISCONNECT Handle PULL",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "AILERON DISCONNECT Handle PULL",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "STEER DISC Switch PRESS en vuelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "PITCH TRIM RUNAWAY: mantener AP DISC y CUTOUT ambos canales. Elevator disconnect es para jammed column.",
+      "references": [
+        "TABLAS memory-items-e2 · PITCH TRIM RUNAWAY"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "BIN-SOP-114",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Limitaciones: techo máximo E195-E2",
+    "stem": "¿Cuál es el techo máximo operativo del Embraer 195-E2 según la tabla de limitaciones?",
+    "options": [
+      {
+        "id": "A",
+        "text": "41.000 ft (FL410)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "39.000 ft (techo de APU start)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "45.000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "37.000 ft",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Maximum Operating Ceiling: 41.000 ft (FL410). AFM 2-01 / AOM 1-02.",
+      "references": [
+        "TABLAS limitations-e2 · AFM Section 2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "BIN-SOP-115",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Limitaciones: flaps máximos",
+    "stem": "¿Cuál es la altitud máxima con flaps extendidos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "20.000 ft",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "14.000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "25.000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "10.000 ft",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Prohibido flaps (1–FULL) por encima de 20.000 ft / FL200.",
+      "references": [
+        "TABLAS limitations-e2 · AFM 2-04"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "BIN-SOP-116",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Limitaciones: Autoland elevación pista",
+    "stem": "¿Cuál es la elevación máxima de pista para Autoland?",
+    "options": [
+      {
+        "id": "A",
+        "text": "7.249 ft",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "9.200 ft (HI FIELD)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "14.000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "5.000 ft",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Altitud máx. operación Autoland: elevación de pista 7.249 ft.",
+      "references": [
+        "TABLAS limitations-e2 · AFM 2-03"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "BIN-SOP-117",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Limitaciones: Vmo/Mmo",
+    "stem": "¿Cuáles son Vmo / Mmo del E195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "320 KIAS / M 0.82",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "250 KIAS / M 0.76",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "300 KIAS / M 0.80",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "340 KIAS / M 0.85",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Vmo/Mmo: 320 KIAS / M0.82 (la más restrictiva).",
+      "references": [
+        "TABLAS limitations-e2 · AFM 2-02"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "BIN-SOP-118",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Limitaciones: Vfe Flap FULL",
+    "stem": "¿Cuál es Vfe con Flap FULL?",
+    "options": [
+      {
+        "id": "A",
+        "text": "165 kt",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "180 kt",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "200 kt",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "215 kt",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Vfe: F1 230 · F2 215 · F3 200 · F4/F5 180 · FULL 165 kt.",
+      "references": [
+        "TABLAS limitations-e2 · AFM 2-04"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "BIN-SOP-119",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Limitaciones: Vlo extensión / retracción",
+    "stem": "¿Cuáles son Vlo extensión y Vlo retracción del tren?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Extensión 250 KIAS; retracción 220 KIAS (Vle 250 KIAS)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Extensión 220 KIAS; retracción 250 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Extensión y retracción 250 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Extensión 200 KIAS; Vle 220 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Vlo Ext 250 / Ret 220; Vle extendido 250 KIAS.",
+      "references": [
+        "TABLAS limitations-e2 · AFM 2-05"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "BIN-SOP-120",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Limitaciones: crosswind pista seca",
+    "stem": "¿Cuál es el viento cruzado máximo demostrado en pista seca?",
+    "options": [
+      {
+        "id": "A",
+        "text": "38 kt",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "31 kt",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "20 kt",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "15 kt",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Crosswind: seca 38 · mojada 31 · nieve compacta 20 · hielo 12 kt. Tailwind máx. 15 kt.",
+      "references": [
+        "TABLAS limitations-e2 · AFM 2-01 / MOB 2.0"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "BIN-SOP-121",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Limitaciones: AP mínimas — despegue e ILS/LPV",
+    "stem": "¿Cuáles son las alturas mínimas de conexión del AP en despegue y en ILS/LPV?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Despegue 200 ft AGL; ILS/LPV 80 ft AGL",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Despegue 400 ft AGL; ILS/LPV 200 ft AGL",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Despegue 100 ft AGL; ILS/LPV 50 ft AGL",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Despegue 1.000 ft AGL; NPA 80 ft AGL",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "AP mín: TO 200 · ILS/LPV 80 · NPA 190 · Crucero 1.000 ft AGL; coupled GA loss 100 ft.",
+      "references": [
+        "TABLAS limitations-e2 · AFM 2-03"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "BIN-SOP-122",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Limitaciones: fuel imbalance",
+    "stem": "¿Cuál es el desbalance máximo de combustible permitido?",
+    "options": [
+      {
+        "id": "A",
+        "text": "360 kg (800 lb)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "200 kg",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "500 kg",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "800 kg",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Fuel imbalance máx. 360 kg (800 lb) entre tanques L/R.",
+      "references": [
+        "TABLAS limitations-e2 · AFM 2-07"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "BIN-SOP-123",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Limitaciones: APU bleed altitude",
+    "stem": "¿Hasta qué altitud puede el APU suministrar sangrado neumático (aire acondicionado/presurización)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "15.000 ft (o 20.000 ft para arranque de motor asistido)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "39.000 ft igual que el generador",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "10.000 ft únicamente",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "FL410 techo del avión",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "APU bleed máx. 15.000 ft (20.000 ft assisted engine start). Gen/start hasta 39.000 ft.",
+      "references": [
+        "TABLAS limitations-e2 · AFM 2-10"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "BIN-SOP-124",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Limitaciones: turbulencia Vra",
+    "stem": "¿Cuál es la velocidad de turbulencia (Vra) bajo y sobre 10.000 ft?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bajo 10.000 ft: 240 KIAS; sobre 10.000 ft: 270 KIAS / M 0.76",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Bajo 10.000: 270 KIAS; sobre: 240 KIAS / M 0.82",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "250 KIAS en todos los niveles",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "320 KIAS / M 0.82 en turbulencia severa",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Vra/Mra: <10k → 240 KIAS; >10k → 270 KIAS / M0.76.",
+      "references": [
+        "TABLAS limitations-e2 · AOM 1-03"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "BIN-SOP-125",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS MOA: Cap. 8.4 contenido",
+    "stem": "Según la tabla de capítulos MOA, ¿qué regula el Cap. 8.4?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Operaciones con visibilidad reducida (LVO): LVTO ≥125 m, CAT II/III y requisitos de pista",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Preparación y planificación del vuelo (combustible y alternativos)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Notificación MOR ≤72 h y preservación CVR/FDR",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mercancías peligrosas y NOTOC",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "MOA 8.4 = LVO (LVTO, CAT II/III). 8.1 = planificación; 11 = SMS reporting; 9 = DGR.",
+      "references": [
+        "TABLAS moa-chapters · MOA Ed06 RN26"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "BIN-SOP-126",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS MOA: plazos MEL Cat B/C/D",
+    "stem": "Según MOA Cap. 8.6 en la tabla, ¿cuáles son los plazos Cat B, C y D?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cat B 3 días, Cat C 10 días, Cat D 120 días (Cat A específico)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cat B 10 días, Cat C 3 días, Cat D 30 días",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cat B 72 h, Cat C 7 días, Cat D 90 días",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cat B 5 días, Cat C 15 días, Cat D 180 días",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "MEL rectificación: A específico · B 3 días · C 10 días · D 120 días.",
+      "references": [
+        "TABLAS moa-chapters · MOA 8.6"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "BIN-SOP-127",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS MOA: MOR plazo",
+    "stem": "¿Cuál es el plazo de reporte MOR citado en MOA Cap. 11 de la tabla?",
+    "options": [
+      {
+        "id": "A",
+        "text": "≤ 72 horas",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "≤ 24 horas",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "≤ 48 horas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "≤ 7 días",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "MOA 11 / UE 376/2014: MOR ≤72 h; preservar CVR/FDR (CBs en tierra).",
+      "references": [
+        "TABLAS moa-chapters · MOA Cap. 11"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "BIN-SOP-128",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS MOA: fallo radio IMC",
+    "stem": "En MOA Cap. 12 / SERA (tabla), tras fallo de comunicaciones en IMC, ¿cuánto se mantiene nivel y velocidad?",
+    "options": [
+      {
+        "id": "A",
+        "text": "20 minutos tras la última hora prevista de reporte",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "7 minutos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "30 minutos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "45 minutos de controlled rest",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Fallo coms IMC: mantener nivel/velocidad 20 min tras última hora prevista de reporte.",
+      "references": [
+        "TABLAS moa-chapters · MOA Cap. 12 / SERA"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "BIN-SOP-129",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS VFR: controlado bajo FL100 — visibilidad",
+    "stem": "En espacio controlado B–E por debajo de FL100 (≥3.000 ft AMSL o 1.000 ft AGL), ¿visibilidad y distancia a nubes?",
+    "options": [
+      {
+        "id": "A",
+        "text": "5 km; 1.500 m horizontal y 1.000 ft (300 m) vertical",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "8 km; 1.500 m / 1.000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "1.500 m; libre de nubes con suelo a la vista",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "5 km; 500 m horizontal y 500 ft vertical",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "SERA controlado <FL100: VIS 5 km; nubes 1.500 m H / 1.000 ft V. ≥FL100: 8 km misma separación.",
+      "references": [
+        "TABLAS vfr-minimums · SERA.5001/5005 · MOA 8.1.4"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "BIN-SOP-130",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS VFR: Special VFR en CTR",
+    "stem": "¿Cuáles son los mínimos de Special VFR en CTR según la tabla?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VIS tierra ≥1.500 m (≥800 m helicópteros), libre de nubes con superficie a la vista, techo ≥600 ft",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "VIS 5 km y techo ≥1.500 ft como VFR nocturno",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "VIS 8 km y separación 1.500 m / 1.000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "VIS 1.000 m y techo ≥300 ft sin ATC",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "SVFR: VIS ≥1500 m (heli 800), clear of cloud + surface in sight, ceiling ≥600 ft; ATC required.",
+      "references": [
+        "TABLAS vfr-minimums · SERA"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "BIN-SOP-131",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS VFR: warning CTR/TMA despegue",
+    "stem": "En CTR/TMA, ¿bajo qué techo/visibilidad en tierra no despegará/aterrizará un VFR (salvo SVFR)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Techo < 1.500 ft (450 m) o visibilidad en tierra < 5 km",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Techo < 600 ft o VIS < 1.500 m",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Techo < 1.000 ft o VIS < 8 km",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo si VIS < 1.500 m independientemente del techo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Warning TABLAS: en controlado, no VFR TO/LDG si techo <1500 ft o VIS tierra <5 km (salvo SVFR).",
+      "references": [
+        "TABLAS vfr-minimums · warningAlert"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "BIN-SOP-132",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS VFR: velocidad bajo FL100",
+    "stem": "¿Cuál es la IAS máxima VFR bajo FL100 en clases C–G según la nota extra?",
+    "options": [
+      {
+        "id": "A",
+        "text": "250 kt IAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "140 kt IAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "200 kt IAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "280 kt IAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Extra note: VFR bajo FL100 en C/D/E/F/G → máx. 250 kt IAS.",
+      "references": [
+        "TABLAS vfr-minimums · extraNotes"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "BIN-SOP-133",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Limitaciones: HI FIELD / O2 tierra",
+    "stem": "¿A partir de qué elevación el flag HI FIELD exige oxígeno continuo de al menos un piloto en tierra?",
+    "options": [
+      {
+        "id": "A",
+        "text": "9.200 ft",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "7.249 ft",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "10.000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "14.000 ft",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "HI FIELD @ 9.200 ft: ≥1 piloto con O2 continuo en operaciones en tierra.",
+      "references": [
+        "TABLAS limitations-e2 · AOM 1-02"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "BIN-SOP-134",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Limitaciones: máscaras PAX auto",
+    "stem": "¿En qué rango de altitud de cabina se despliegan automáticamente las máscaras de pasaje?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Entre 14.000 ft y 14.750 ft",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Entre 10.000 ft y 12.400 ft",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Entre 12.400 ft y 14.000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Exactamente a 10.000 ft",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Despliegue auto PAX: 14.000–14.750 ft de altitud de presión de cabina.",
+      "references": [
+        "TABLAS limitations-e2 · AFM 2-06"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "BIN-SOP-135",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Memory Items: SMOKE EVACUATION",
+    "stem": "Además de masks 100% y comunicación, ¿qué Memory Item añade SMOKE EVACUATION?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DUMP Button: PUSH IN",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "APU EMER STOP Button: PUSH IN",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Associated Cargo Smoke Button: PUSH",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "DN LOCK REL Button: PRESS and HOLD",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "SMOKE EVACUATION: masks, comm, DUMP IN → ventilación forzada; descender a 10.000/MEA.",
+      "references": [
+        "TABLAS memory-items-e2 · SMOKE EVACUATION"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "BIN-SOP-136",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS MOA: Cap. 10 AVSEC — squawk",
+    "stem": "Según la tabla MOA Cap. 10, ¿qué squawk se asocia a interferencia ilícita?",
+    "options": [
+      {
+        "id": "A",
+        "text": "7500",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "7600",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "7700",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "2000",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "AVSEC Cap.10: amenaza, LRBL, squawk 7500. 7600=coms, 7700=emergencia general.",
+      "references": [
+        "TABLAS moa-chapters · MOA Cap. 10"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "BIN-SOP-137",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS: Plan 1A — Tipo A 3D DH≤200 ft",
+    "stem": "En Tabla 1A, aproximación 3D Tipo A con DH ≤200 ft (ILS/LPV/GLS/RNP BARO-VNAV), ¿incremento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DA/H + 200 ft y RVR/VIS + 800 m",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "DA/H + 100 ft y RVR + 300 m",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "MDA/H + 400 ft y RVR + 1.500 m",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "DA/H + 150 ft y RVR + 450 m",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "1A fila 3D Tipo A DH≤200: +200 ft / +800 m (como Tipo B estándar 1B).",
+      "references": [
+        "TABLAS alternates-variations · MOA 8.1.7.2.5"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    }
+  },
+  {
+    "id": "BIN-SOP-138",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Limitaciones: wipers",
+    "stem": "¿Hasta qué altitud/velocidad pueden usarse los limpiaparabrisas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hasta 14.000 ft y 250 KIAS (lo más restrictivo)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Hasta 20.000 ft sin límite de velocidad",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Hasta FL410 a cualquier IAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo en tierra y por debajo de 80 kt",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Wipers prohibidos por encima de 14.000 ft o 250 KIAS.",
+      "references": [
+        "TABLAS limitations-e2 · AFM 2-08"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "BIN-SOP-139",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS Memory Items: GEAR LEVER CANNOT BE MOVED UP",
+    "stem": "¿Cuál es la secuencia Memory Item si no se puede subir el tren?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DN LOCK REL PRESS and HOLD → LANDING GEAR Lever UP → RELEASE",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Solo GEAR DOWN y continuar sin intentar UP",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "AILERON DISCONNECT y luego lever UP",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "APU EMER STOP y lever UP",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Liberar solenoide con DN LOCK REL mientras se selecciona UP; soltar tras enclavamiento.",
+      "references": [
+        "TABLAS memory-items-e2 · GEAR LEVER"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "BIN-SOP-140",
+    "subject_id": "binter_ops",
+    "learning_objective": "TABLAS MOA: Cap. 8.3 prioridad VNCG",
+    "stem": "Según MOA Cap. 8.3 en la tabla, ¿cuál es la prioridad de cabina citada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VNCG: Volar → Navegar → Comunicar → Gestionar (cabina estéril <10.000 ft)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Gestionar → Comunicar → Navegar → Volar",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo MEANA sin prioridad de vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "ATC → Company → Cabin → Fly",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "MOA 8.3: VNCG + cabina estéril <10.000 ft + briefings estándar.",
+      "references": [
+        "TABLAS moa-chapters · MOA Cap. 8.3"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  }
+]
