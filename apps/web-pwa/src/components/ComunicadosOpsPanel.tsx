@@ -97,7 +97,7 @@ export const ComunicadosOpsPanel: React.FC<ComunicadosOpsPanelProps> = ({ onBank
     try {
       const extracted = await extractTextFromPdf(file);
       const saved = await saveOperationalComunicado({
-        title: await titleFromPdfFileName(file.name),
+        title: titleFromPdfFileName(file.name),
         type: 'comunicado-ops',
         reference: '',
         issuedAt: new Date().toISOString().slice(0, 10),
