@@ -78,6 +78,12 @@ LOTE:
 - [ ] Antigravity / `bank_validator.py` would pass
 - [ ] `npm run build:banks` after permanent catalog changes
 
+## Related skills
+
+- **Entry point:** `question-creation-process` — proceso completo de creación
+- `aviation-question-authoring` — calidad / fidelidad
+- `easa-distractor-engineering` — distractores
+
 ## Related files
 
 - `prompts/METAPROMPT_NOTEBOOKLM_GEMINI.md` — generation policy + subject_id taxonomy
@@ -86,3 +92,4 @@ LOTE:
 - `.antigravity/tasks/auto_build.json` — validate on bank file modify
 - `.agents/skills/aviation-question-authoring/SKILL.md`
 - `.agents/skills/easa-distractor-engineering/SKILL.md`
+- `.agents/skills/question-creation-process/SKILL.md`
