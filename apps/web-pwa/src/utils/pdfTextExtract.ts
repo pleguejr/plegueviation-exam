@@ -1,17 +1,25 @@
-import * as pdfjs from 'pdfjs-dist';
-
-// Vite: worker from the same package version
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.mjs',
-  import.meta.url
-).toString();
-
 const MAX_CHARS = 90000;
+
+async function getPdfJs(): Promise<any> {
+  if (typeof window !== 'undefined' && (window as any).pdfjsLib) {
+    return (window as any).pdfjsLib;
+  }
+  try {
+    const importEsm = new Function('url', 'return import(url)');
+    // @ts-ignore dynamic remote ESM import
+    const pdfjs = await importEsm('https://esm.sh/pdfjs-dist@3.11.174');
+    pdfjs.GlobalWorkerOptions.workerSrc = 'https://esm.sh/pdfjs-dist@3.11.174/build/pdf.worker.min.js';
+    return pdfjs;
+  } catch (e) {
+    throw new Error('No se pudo cargar el motor PDF. Comprueba tu conexión a internet o copia y pega el texto del documento.');
+  }
+}
 
 /**
  * Extrae texto de un PDF en el navegador (sin subir a ningún servidor).
  */
 export async function extractTextFromPdf(file: File): Promise<{ text: string; truncated: boolean; pages: number }> {
+  const pdfjs = await getPdfJs();
   const data = new Uint8Array(await file.arrayBuffer());
   const doc = await pdfjs.getDocument({ data }).promise;
   const parts: string[] = [];
@@ -20,7 +28,7 @@ export async function extractTextFromPdf(file: File): Promise<{ text: string; tr
     const page = await doc.getPage(pageNum);
     const content = await page.getTextContent();
     const pageText = content.items
-      .map((item) => ('str' in item ? String(item.str) : ''))
+      .map((item: any) => (item && 'str' in item ? String(item.str) : ''))
       .join(' ')
       .replace(/\s+/g, ' ')
       .trim();
