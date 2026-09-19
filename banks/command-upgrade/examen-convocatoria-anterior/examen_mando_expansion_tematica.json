@@ -1,0 +1,1335 @@
+[
+  {
+    "id": "CMD-EXP26-001",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.2.1 / CAT.OP.MPA.140 - Definición y requisitos de Aeródromo Adecuado vs Aceptable/Adecuado en Servicio",
+    "stem": "Según el MOA 8.1.2.1 y la normativa EASA, ¿cuál es la diferencia operacional entre un 'Aeródromo Adecuado' (Adequate Aerodrome) y un 'Aeródromo Aceptable' (Suitable Aerodrome)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Un aeródromo adecuado cumple los requisitos técnicos de pista, performance y servicios; un aeródromo aceptable es aquel adecuado cuyas previsiones meteorológicas y de estado operacional en la hora prevista de utilización cumplen los mínimos requeridos.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Un aeródromo adecuado requiere RFFS categoría 9; un aeródromo aceptable solo requiere categoría 4.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Un aeródromo adecuado dispone de servicio ATC 24 horas; un aeródromo aceptable opera bajo espacio aéreo no controlado AFIS.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No existe diferencia operacional; ambos términos son completamente intercambiables a efectos de despacho y planificación.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme al MOA 8.1.2.1 y EASA Part-CAT.GEN.NMPA:\n- **Adequate Aerodrome (Adecuado)**: Aquel que satisface los requisitos físicos de longitud/resistencia de pista, rendimiento de la aeronave, ayudas a la navegación, comunicaciones y servicios de salvamento y extinción de incendios (RFFS).\n- **Suitable Aerodrome (Aceptable / Utilizable)**: Un aeródromo adecuado en el cual los informes y pronósticos meteorológicos (METAR/TAF) y el estado de la infraestructura (NOTAM) indican que, durante la ventana de tiempo aplicable (ETA ±1h), las condiciones estarán en o por encima de los mínimos de planificación aplicables.",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.2.1: Selección de Aeródromos",
+        "EASA Part-CAT.OP.MPA.140: Selection of aerodromes"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-EXP26-002",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.2.1 - Despacho sin Alternativo en Destino (No-Alternate Flight)",
+    "stem": "De acuerdo con el MOA 8.1.7.2.4 y EASA CAT.OP.MPA.180, para despachar un vuelo comercial IFR de turborreactores sin aeródromo alternativo de destino, se requiere entre otras condiciones:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Disponer de dos pistas independientes y utilizables en destino, y condiciones meteorológicas previstas (ETA ±1h) de techo ≥ 2.000 ft (o mínimos de circuito + 500 ft) y visibilidad ≥ 5 km.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Duración de vuelo inferior a 45 minutos y visibilidad superior a 10 km CAVOK.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Combustible adicional a bordo para 60 minutos de espera a 1.500 ft en lugar de 30 minutos.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Que el aeródromo de destino cuente con categoría RFFS 9 y doble aproximación ILS CAT III.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme al MOA 8.1.7.2.4 y EASA CAT.OP.MPA.180, para operar sin alternativo de destino (No Destination Alternate) se exige:\n1. La duración del vuelo planificado no supere las 6 horas.\n2. Existan dos pistas utilizables e independientes en destino.\n3. La meteorología prevista desde ETA -1h hasta ETA +1h asegure un techo de al menos **2.000 ft o altitud de circling + 500 ft** (la mayor) y una visibilidad de al menos **5.000 m**.",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.7.2.4: Vuelos sin Alternativo de Destino",
+        "EASA Part-CAT.OP.MPA.180: Fuel planning - Destination alternate selection"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "CMD-EXP26-003",
+    "subject_id": "command-upgrade",
+    "learning_objective": "DDPM CDL Generalidades - Combinación y límite de ítems diferidos bajo CDL",
+    "stem": "En relación con el despacho bajo la Lista de Desviaciones de Configuración (CDL) del Embraer 195-E2, ¿cuál es la regla general sobre la acumulación de penalizaciones de consumo de combustible cuando faltan múltiples componentes?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Las penalizaciones porcentuales de consumo de combustible asociadas a cada ítem CDL se suman directamente entre sí para el cálculo del Trip Fuel y Contingency.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Solo se aplica la penalización del ítem con mayor impacto aerodinámico, ignorando las demás.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se prohíbe despachar la aeronave si falta más de un ítem CDL simultáneamente.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La penalización total se calcula multiplicando los factores porcentuales de penalización.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En el manual DDPM/CDL del E195-E2 (Generalidades de CDL), cuando se autoriza el despacho con más de un elemento aerodinámico faltante, las penalizaciones de peso máximo de despegue/aterrizaje y los incrementos de consumo de combustible (**fuel burn penalties**) deben aplicarse de forma acumulativa sumando los porcentajes individuales.",
+      "references": [
+        "Embraer 195-E2 DDPM - CDL General Introduction & Cumulative Rules",
+        "MOA Binter ED06 RN27 - Subcapítulo 8.6.3: Lista de Desviaciones de Configuración (CDL)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-EXP26-004",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.6.3 / DDPM - Responsabilidad del Comandante en la aplicación de la CDL",
+    "stem": "Si un elemento secundario del fuselaje se desprende en una escala intermedia y está contemplado en la CDL con procedimiento de mantenimiento 'M' (ej. sellado de bordes o comprobación de fijaciones), ¿puede el Comandante autorizar el despacho?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No, cualquier ítem de MEL o CDL que contenga un requisito de mantenimiento (M) exige la intervención y certificación técnica (CRS) por personal de mantenimiento cualificado (LMA).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Sí, el Comandante puede ejecutar el procedimiento 'M' si recibe instrucciones verbales por radio del MCC.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Sí, siempre que no suponga una penalización de peso superior a 500 kg.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Sí, siempre que firme una exención provisional válida por un único salto de regreso a la base principal.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con el MOA 8.6.1 y 8.6.3 y la normativa EASA Parte M / Parte CAMO, los procedimientos 'M' requieren acciones técnicas especializadas y emisión de un Certificado de Aptitud para el Servicio (CRS). El Comandante no tiene atribuciones para liberar procedimientos 'M' salvo aquellas tareas elementales específicamente aprobadas y certificadas en su habilitación (Flight Crew Maintenance Training).",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.6.1.3: Procedimientos Operacionales (O) y de Mantenimiento (M)",
+        "EASA Part-M / Part-ML / ORO.MLR.105"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "CMD-EXP26-005",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.6.1.4 - Plazos de Rectificación MEL Categorías C y D",
+    "stem": "¿Cuáles son los plazos estándar de rectificación para elementos diferidos bajo las Categorías C y D de la MEL?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Categoría C: 10 días de calendario consecutivos; Categoría D: 120 días de calendario consecutivos.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Categoría C: 7 días de calendario; Categoría D: 30 días de calendario.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Categoría C: 14 días de calendario; Categoría D: 90 días de calendario.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Categoría C: 72 horas; Categoría D: 6 meses.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme a EASA Part-ORO.MLR.105 y MOA 8.6.1.4:\n- **Categoría A**: Intervalo especificado en la MEL (horas, vuelos, días).\n- **Categoría B**: 3 días naturales consecutivos.\n- **Categoría C**: **10 días naturales consecutivos**.\n- **Categoría D**: **120 días naturales consecutivos**.\nEl día del descubrimiento (Day of Discovery) se excluye en todos los casos.",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.6.1.4: Plazos de Rectificación de la MEL",
+        "EASA Part-ORO.MLR.105(f)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-EXP26-006",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.6.1.5 / EASA ORO.MLR.105(f) - Prórroga de Plazos de Rectificación (Rectification Interval Extension)",
+    "stem": "¿Qué categorías de la MEL pueden ser objeto de una extensión del plazo de rectificación (prórroga RIE) y bajo qué autoridad?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Únicamente las Categorías B y C, por un periodo igual al intervalo original, previa aprobación del departamento de Calidad/CAMO de acuerdo con el procedimiento aprobado por la Autoridad.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Las Categorías A, B, C y D, a discreción exclusiva del Comandante en vuelo.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Únicamente la Categoría D, por un máximo de 30 días adicionales.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Todas las categorías excepto la Categoría B.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme a EASA ORO.MLR.105(f) y MOA 8.6.1.5, el operador (a través de su CAMO/Mantenimiento según procedimiento aprobado) puede prorrogar **únicamente los ítems de Categoría B y Categoría C**, por un periodo de igual duración al inicial (B: 3 días más; C: 10 días más). Los ítems de Categoría A y D NO son prorrogables.",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.6.1.5: Prórroga de Plazos de Rectificación (RIE)",
+        "EASA CS-MMEL / ORO.MLR.105"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "CMD-EXP26-007",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.11 - Verificación y firma del Comandante del Libro de Registro Técnico (ATL)",
+    "stem": "Antes de iniciar un vuelo, ¿qué comprobaciones obligatorias debe realizar el Comandante en el Aircraft Technical Log (ATL) de acuerdo con el MOA 8.1.11?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Comprobar el estado de servicio de la aeronave, que todos los defectos anteriores han sido corregidos o diferidos bajo MEL/CDL válida, la vigencia del Certificado de Aptitud para el Servicio (CRS), y las firmas de aceptación correspondientes.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Únicamente verificar la cantidad de combustible anotada en el último vuelo por la tripulación anterior.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Verificar exclusivamente que no haya ítems de Categoría A abiertos.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Revisar los últimos 30 días de vuelos para calcular la media de consumo horario de aceite.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El Comandante, antes de cada vuelo, debe revisar el ATL (MOA 8.1.11 / EASA Part-M M.A.306) para cerciorarse de que:\n1. La aeronave dispone de un CRS válido.\n2. Todos los defectos registrados en sectores previos han sido subsanados o legalmente diferidos en la Hoja de Defectos Diferidos (DDS/MEL/CDL) dentro de plazo.\n3. Se han registrado los niveles de fluidos (aceite, hidráulico) y el combustible cargado.\n4. La firma del Comandante formaliza la aceptación de la aeronave para el vuelo.",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.11: Libro de Registro Técnico de la Aeronave",
+        "EASA Part-M - M.A.306: Aircraft technical log system"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "CMD-EXP26-008",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.2.2 (Tabla 1A/1B) - Política de Degradación Temporal de RFFS en Destino",
+    "stem": "Para la flota Embraer 195-E2 (Categoría RFFS 7), si se publica un NOTAM indicando que el servicio RFFS del aeródromo de destino se degrada temporalmente a Categoría 5, ¿cuál es la política operativa de Binter según el MOA 8.1.2.2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se permite el despacho y operación con hasta dos categorías por debajo de la requerida (de 7 a 5) como degradación temporal máxima, siempre que el alternativo de destino cumpla la categoría requerida completa (RFFS 7).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Está prohibido el despacho hacia cualquier aeródromo con RFFS inferior a Categoría 7 bajo cualquier circunstancia.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se autoriza el aterrizaje únicamente si el comandante declara emergencia antes de iniciar la aproximación.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo se permite si el número de pasajeros a bordo es inferior a 50.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme al MOA 8.1.2.2 (Tabla de Degradación RFFS) y EASA AMC1 CAT.OP.MPA.140, para vuelos regulares comerciales se admite una degradación temporal de hasta **dos categorías RFFS por debajo de la estándar** de la aeronave (para E195-E2 categoría 7, degradable temporalmente a RFFS 5) por motivos no previstos o limitados en el tiempo, exigiendo que el aeródromo alternativo cuente con la categoría completa de la aeronave.",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.2.2: Requisitos y Degradaciones RFFS",
+        "EASA AMC1 CAT.OP.MPA.140: Rescue and firefighting services"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "CMD-EXP26-009",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.3.2 / PANS-OPS - Frustrada durante Aproximación en Circuito (Circling Go-Around)",
+    "stem": "Durante una aproximación en circuito visual (Circling Approach) para la pista 30 tras una aproximación por instrumentos a la pista 12, se pierde la referencia visual con la pista en el tramo de viento en cola. ¿Cuál es el procedimiento de frustrada obligatorio?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar un viraje de ascenso hacia la pista de aterrizaje instrumental (rumbo a la pista de origen de la aproximación) para establecerse dentro del área de protección y seguir el procedimiento de aproximación frustrada publicado para la pista instrumental inicial.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Continuar en línea recta por el rumbo actual hasta alcanzar 3.000 ft AGL antes de virar.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Virar inmediatamente hacia el lado opuesto de la pista para alejarse del terreno y solicitar vectores ATC.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar un viraje de 360 grados sobre el terreno para intentar recuperar contacto visual con la pista.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con OACI Doc 8168 (PANS-OPS), EASA CAT.OP.MPA.320 y el MOA 8.1.3.2:\nSi se pierde la referencia visual durante un Circling, debe iniciarse inmediatamente una aproximación frustrada realizando un **viraje de ascenso hacia la pista de aterrizaje instrumental inicial** para asegurarse de permanecer dentro del área protegida de franqueamiento de obstáculos, interceptando y siguiendo la trayectoria de frustrada publicada para dicha aproximación instrumental.",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.3.2: Maniobra de Aproximación en Circuito (Circling)",
+        "OACI Doc 8168 (PANS-OPS) Volumen I - Missed Approach during Visual Manoeuvring"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-EXP26-010",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.7.2.1 - Combustible de Contingencia (Contingency Fuel) en Binter",
+    "stem": "¿Cuál es el combustible de contingencia estándar en la planificación de vuelo de Binter de acuerdo con el MOA 8.1.7.2.1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El 5% del Trip Fuel planificado o el combustible para volar 5 minutos a velocidad de espera a 1.500 ft sobre el destino (el mayor de los dos).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El 10% del Trip Fuel en todos los vuelos nacionales e insulares.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Una cantidad fija de 300 kg para toda la flota de reactores.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El combustible equivalente a 15 minutos de espera a nivel de crucero.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme a EASA CAT.OP.MPA.180 y el MOA 8.1.7.2.1, el combustible de contingencia básico (**Contingency Fuel**) corresponde al **5% del Trip Fuel** planificado o al combustible requerido para **5 minutos a velocidad de espera a 1.500 ft** sobre el aeródromo de destino en condiciones estándar (el que resulte mayor).",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.7.2.1: Componentes de Combustible Requeridos",
+        "EASA Part-CAT.OP.MPA.180: Fuel and oil supply"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "CMD-EXP26-011",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.7.3.4 / SERA - Declaración de MINIMUM FUEL ante el Control de Tránsito Aéreo",
+    "stem": "¿En qué momento exacto debe el Comandante declarar 'MINIMUM FUEL' a la dependencia de control ATC?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cuando prevea que cualquier cambio en la autorización actual puede resultar en un aterrizaje con menos del combustible de reserva final planificado.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cuando entre en circuito de espera por más de 10 minutos.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Únicamente cuando se hayan consumido todos los tanques auxiliares.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cuando el combustible utilizable a bordo sea exactamente igual al Trip Fuel.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con SERA.14095, OACI Anexo 6 y MOA 8.1.7.3.4, el piloto al mando debe transmitir la llamada radiotelefónica **\"MINIMUM FUEL\"** para informar al ATC de que la disposición de combustible de la aeronave es tal que cualquier demora adicional no prevista podría comprometer la reserva final de combustible (Final Reserve Fuel). Esta llamada NO confiere prioridad, pero alerta al control para evitar esperas adicionales.",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.7.3.4: Gestión de Combustible en Vuelo - MINIMUM FUEL",
+        "SERA.14095: Fuel emergency and minimum fuel declarations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "CMD-EXP26-012",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.7.2.5 (Tabla 1A) - Mínimos de Planificación para Alternativo con 2 o más aproximaciones de precisión",
+    "stem": "Al seleccionar un aeródromo alternativo de destino que cuenta con dos pistas independientes con aproximaciones de precisión ILS operativas (DA/H de 200 ft y RVR de 550 m en ambas), aplicando el Plan Básico con Variaciones de Binter, ¿qué mínimos meteorológicos deben pronosticarse en ETA ±1h?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Techo de nubes en o por encima de la DA/H publicada (200 ft) y RVR/Visibilidad en o por encima de 800 m.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Techo 400 ft y visibilidad 1.500 m.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Techo 200 ft y RVR 550 m sin ningún incremento.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Techo 600 ft y visibilidad 2.400 m.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme a la Tabla 1A del MOA 8.1.7.2.5 (Plan Básico con Variaciones de Binter):\n- Cuando el aeródromo alternativo dispone de **al menos dos aproximaciones de precisión independientes** utilizables para pistas diferentes:\n- Requisito de techo: Techo $\\ge \\text{DA/H}$ de la aproximación utilizada.\n- Requisito de visibilidad: RVR $\\ge 800\\text{ m}$ (o visibilidad equivalente).",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.7.2.5: Tabla 1A de Mínimos de Planificación",
+        "EASA Part-SPA.LVO / AMC1 CAT.OP.MPA.185"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "CMD-EXP26-013",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA Cap. 7 (FTL) - Definición del Periodo de Actividad Aérea (FDP) y su inicio",
+    "stem": "Según el MOA Capítulo 7 y el reglamento EASA ORO.FTL, ¿cuándo se inicia y cuándo finaliza el Periodo de Actividad de Vuelo (Flight Duty Period - FDP)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se inicia en el momento de la presentación oficial de la tripulación para el servicio (reporting time) y finaliza en el momento del calzado de calzos (chocks on) en el último sector de vuelo.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se inicia cuando el avión inicia el rodaje y finaliza al apagar motores.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se inicia 1 hora antes del despegue y finaliza 30 minutos después del aterrizaje.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se inicia en la firma del plan de vuelo y finaliza al entregar el ATL en la oficina de operaciones.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme a EASA ORO.FTL.105 y MOA Capítulo 7:\n- **FDP (Flight Duty Period)**: Comienza cuando un tripulante se presenta al servicio por requerimiento del operador (**reporting time**) que incluye tareas previas al vuelo, y concluye en el momento en que los calzos son colocados (**chocks on / engines off**) en el último sector donde actúa como tripulante operativo.",
+      "references": [
+        "MOA Binter ED06 RN27 - Capítulo 7: Limitaciones de Tiempo de Vuelo y Descanso",
+        "EASA Part-ORO.FTL.105: Definitions"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-EXP26-014",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA Cap. 7 (FTL) - Descanso Mínimo en Base Principal vs Fuera de Base",
+    "stem": "¿Cuál es el descanso mínimo obligatorio que debe concederse a un tripulante en su base principal tras un periodo de actividad?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Al menos la duración del periodo de actividad precedente o 12 horas, de ambos valores el que sea mayor.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "10 horas ininterrumpidas en cualquier circunstancia.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "8 horas más el tiempo de desplazamiento al domicilio.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "24 horas completas tras cualquier actividad superior a 8 horas.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme a EASA ORO.FTL.235 y MOA Capítulo 7:\n- El descanso mínimo en base principal (**home base**) debe ser como mínimo igual a la duración de la actividad precedente (**preceding duty period**) o **12 horas**, el que resulte mayor.\n- Fuera de base (away from home base), el descanso mínimo es la duración de la actividad precedente o **10 horas** (que garantice 8 horas de sueño en cama + traslados), el que sea mayor.",
+      "references": [
+        "MOA Binter ED06 RN27 - Capítulo 7: Períodos de Descanso Mínimo",
+        "EASA Part-ORO.FTL.235: Rest periods"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "CMD-EXP26-015",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.8.3 - Pesos Estándar de Pasajeros y Equipaje en Operaciones de Línea",
+    "stem": "En la confección de la hoja de carga del E195-E2 con pesos estándar de pasajeros según el MOA 8.1.8.3, ¿cuál es el peso estándar asignado por defecto a un pasajero adulto (incluyendo equipaje de mano)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Varón: 84 kg; Mujer: 67 kg (o 76/84 kg según tabla combinada de operador); Niños (2 a 12 años): 35 kg; Bebés (<2 años): 0 kg sin asiento.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Adulto único: 95 kg independientemente del sexo.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Varón: 70 kg; Mujer: 55 kg; Niños: 20 kg.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Todos los pasajeros se pesan individualmente en el mostrador de facturación sin excepciones.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con EASA CAT.POL.MAB.100 y MOA 8.1.8.3, para aviones de transporte comercial con 30 o más asientos de pasajeros:\n- Varones adultos: 84 kg (incluyendo equipaje de mano de 6 kg).\n- Mujeres adultas: 67 kg (incluyendo equipaje de mano de 6 kg).\n- Niños (2 a 12 años): 35 kg.\n- Bebés (menores de 2 años en brazos): 0 kg (o peso marginal incluido en el adulto).",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.8.3: Valores de Masa Estándar de Pasajeros y Equipaje",
+        "EASA Part-CAT.POL.MAB.100: Mass and balance, loading"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "CMD-EXP26-016",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.8.6 - Límite Máximo de Corrección por LMC (Last Minute Change)",
+    "stem": "¿Qué acción es imperativa si un cambio de última hora (LMC) de pasajeros o carga hace que el centro de gravedad (CG) calculado se desplace fuera de los límites de la envolvente permitida en la hoja de carga?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Debe solicitarse la emisión de una nueva hoja de carga (New Loadsheet) completa y no se puede aplicar el procedimiento manual de LMC.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El Comandante puede compensarlo aumentando la velocidad de rotación Vr en 5 nudos.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se autoriza el despegue siempre que el peso total en despegue sea inferior al MTOW en 2.000 kg.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se debe descargar combustible inmediatamente hasta volver a centrar el avión.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme al MOA 8.1.8.6, el procedimiento manual LMC solo es legal si la masa total se mantiene dentro de los límites numéricos de LMC (ej. ±500 kg) Y el centro de gravedad resultante permanece dentro de la envolvente certificada de masa y centrado. Si el CG sale de la envolvente o se superan los límites, es mandatorio generar una nueva hoja de carga.",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.8.6: Procedimientos de Corrección LMC",
+        "Binter Weight and Balance Manual"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-EXP26-017",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.2.1.3 - Condiciones de Seguridad durante el Repostaje con Pasajeros",
+    "stem": "Durante el abastecimiento de combustible con pasajeros a bordo o en proceso de embarque, ¿qué condición sobre la señal de cinturones de seguridad (FASTEN SEAT BELTS) es obligatoria?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Las señales de 'FASTEN SEAT BELTS' deben estar apagadas (OFF) y los pasajeros deben estar instruidos para no abrocharse los cinturones y mantener despejados los pasillos.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Las señales deben estar encendidas (ON) para obligar a los pasajeros a permanecer inmóviles en sus asientos.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La señal puede estar en modo AUTO indistintamente.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Las luces de no fumar deben estar apagadas.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con EASA CAT.OP.MPA.195 y MOA 8.2.1.3, durante el repostaje con pasajeros a bordo:\n1. La señal de **FASTEN SEAT BELTS debe permanecer en OFF**.\n2. Se debe informar a los pasajeros de que se está repostando y que no deben abrocharse los cinturones.\n3. Los pasillos y salidas de emergencia deben mantenerse completamente libres de obstáculos.\n4. Las señales de NO FUMAR / NO SMOKING deben permanecer iluminadas (ON).",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.2.1.3: Abastecimiento de Combustible con Pasajeros",
+        "EASA Part-CAT.OP.MPA.195: Refuelling/defuelling with passengers"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-EXP26-018",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.2.1.3 - Suspensión Inmediata del Repostaje con Pasajeros",
+    "stem": "¿En cuál de las siguientes situaciones debe suspenderse de inmediato el repostaje de combustible con pasajeros a bordo según el MOA 8.2.1.3?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Detección de vapores de combustible en el interior de la cabina de pasajeros, derrame de combustible en la rampa, o tormenta eléctrica severa en las inmediaciones del aeródromo.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cuando la temperatura exterior supere los 25 °C.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cuando el embarque de pasajeros tarde más de 15 minutos.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cuando la GPU esté conectada suministrando corriente eléctrica alterna.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme al MOA 8.2.1.3, el repostaje con pasaje debe interrumpirse inmediatamente si:\n- Se percibe olor o vapor de combustible dentro del fuselaje.\n- Se produce un derrame de combustible en la plataforma.\n- Se declara riesgo de tormenta eléctrica (rayos en el aeródromo).\n- Se bloquean las vías de evacuación en tierra.",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.2.1.3: Criterios de Parada de Repostaje",
+        "EASA Part-CAT.OP.MPA.195"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-EXP26-019",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA Cap. 9 (DGR) / ICAO Doc 9284 - Notificación por Escrito al Comandante (NOTOC)",
+    "stem": "Cuando se transportan mercancías peligrosas autorizadas en la bodega de carga de la aeronave, ¿qué documento preceptivo debe ser entregado y firmado por el Comandante antes de la salida?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El formulario NOTOC (Notification to Captain), detallando la clase de peligro, número ONU, denominación oficial, posición de carga en bodega, cantidad neta y código de respuesta de emergencia del manual de la OACI (Doc 9481).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Únicamente la hoja de carga convencional sin especificación de códigos ONU.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Una autorización verbal transmitida por la frecuencia del coordinador de pista.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El manifiesto aduanero de importación/exportación.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con el MOA Capítulo 9, EASA Part-SPA.DG.105 e Instrucciones Técnicas OACI (Doc 9284):\nEl operador debe entregar al Comandante el **NOTOC** antes de la salida del vuelo. El Comandante debe revisar y firmar una copia indicando que conoce la localización exacta, naturaleza del riesgo, cantidad de bultos y acciones de emergencia según el manual OACI Doc 9481 (Red/Yellow/Green drills).",
+      "references": [
+        "MOA Binter ED06 RN27 - Capítulo 9: Mercancías Peligrosas y Armas (NOTOC)",
+        "EASA Part-SPA.DG.105: Information to the pilot-in-command (NOTOC)",
+        "OACI Doc 9284 / Doc 9481"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "CMD-EXP26-020",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA Cap. 9 (DGR) - Transporte de Baterías de Litio de Pasajeros (Equipos Electrónicos PED)",
+    "stem": "Respecto al transporte de baterías de repuesto de ion de litio para dispositivos electrónicos portátiles (PED, ej. Powerbanks de hasta 100 Wh), ¿cuál es la normativa aplicable para su transporte por los pasajeros?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deben transportarse exclusivamente en el equipaje de mano en cabina de pasajeros, con los bornes protegidos; está estrictamente prohibido su transporte en el equipaje facturado en bodega.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Deben ser facturadas en la bodega delantera debidamente embaladas en maleta rígida.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Están terminantemente prohibidas en la aeronave tanto en cabina como en bodega.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Requieren aprobación previa por escrito de la Autoridad Aeronáutica para cada vuelo.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme a las Instrucciones Técnicas de la OACI y el MOA Capítulo 9:\nLas baterías de repuesto de ion de litio (Powerbanks, baterías sueltas hasta 100 Wh) **están prohibidas en el equipaje facturado en bodega** por riesgo de incendio incontrolable (thermal runaway). Deben transportarse **únicamente en el equipaje de mano en cabina**, con bornes aislados individualmente contra cortocircuitos.",
+      "references": [
+        "MOA Binter ED06 RN27 - Capítulo 9: Mercancías Peligrosas (Tabla de Pasajeros)",
+        "IATA DGR - Table 2.3.A: Provisions for Dangerous Goods Carried by Passengers or Crew"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-EXP26-021",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.3.5 / CAT.OP.MPA.305 - Punto de Aplicación del Approach Ban en Aproximación ILS",
+    "stem": "Durante una aproximación de precisión ILS CAT I (DA 200 ft), la aeronave cruza el FAF (o 1.000 ft sobre la elevación del aeródromo). Si a 800 ft AGL la torre reporta que el RVR ha caído por debajo del mínimo aplicable, ¿qué decisión debe tomar el Comandante?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Puede continuar la aproximación hasta la DA/H; si al alcanzar la DA/H se tienen las referencias visuales requeridas, se puede aterrizar.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Debe iniciar inmediatamente una aproximación frustrada (Go-Around) a 800 ft.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Debe descender hasta 500 ft y entrar en espera visual sobre la pista.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Debe desconectar el piloto automático y continuar en manual en todo caso.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con EASA CAT.OP.MPA.305 y MOA 8.1.3.5 (Approach Ban Rule):\nSi el RVR notificado desciende por debajo de los mínimos aplicables **después de haber pasado el FAF o 1.000 ft AFE**, la aproximación **puede ser continuada hasta la DA/H o MDA/H**. Si al alcanzar dicha altitud de decisión se establecen y mantienen las referencias visuales requeridas, se puede proceder al aterrizaje; si no se visualizan, se ejecutará la frustrada en la DA/H.",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.3.5: Regla de la Prohibición de Aproximación",
+        "EASA Part-CAT.OP.MPA.305: Commencement and continuation of approach"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-EXP26-022",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.4.2 - Referencias Visuales Requeridas en CAT II vs CAT IIIA vs CAT IIIB",
+    "stem": "En una aproximación CAT IIIA (DH 50 ft), ¿cuál es la referencia visual mínima requerida para continuar por debajo de la DH según el MOA 8.4 y EASA SPA.LVO?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Al menos un segmento continuo de tres luces de la línea central de luces de aproximación, o de las luces de eje de pista, o de las luces de zona de toma de contacto (TDZ), o una combinación de ellas.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "La pista completa claramente visible de umbral a final de pista.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Las luces de PAPIs verdes y las torres de iluminación de rampa.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No se requiere ninguna referencia visual en CAT IIIA al ser autoland mandatario.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme a EASA Part-SPA.LVO.100 y MOA 8.4.2:\nEn aproximaciones **CAT IIIA** con DH (típicamente 50 ft), el piloto debe tener en contacto visual al menos **un segmento de 3 luces consecutivas** (luces de aproximación, de eje de pista o de TDZ) en la DH para continuar el aterrizaje automático.",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.4.2: Referencias Visuales LVO",
+        "EASA Part-SPA.LVO.100: Low visibility operations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "CMD-EXP26-023",
+    "subject_id": "command-upgrade",
+    "learning_objective": "QRH Sección 1 / MOB 3.1 - Comunicación NITS Briefing en Situaciones de Emergencia",
+    "stem": "En una situación de emergencia o anormal que aconseje preparar la cabina para una posible evacuación, el Comandante debe impartir el briefing al Sobrecargo de Vuelo (SCC) siguiendo la estructura mnemotécnica:",
+    "options": [
+      {
+        "id": "A",
+        "text": "NITS: Nature (Naturaleza del problema), Intentions (Intenciones del Comandante), Time (Tiempo disponible hasta la toma), Special instructions (Instrucciones especiales para tripulación de cabina).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "FAST: Fire, Altitude, Speed, Time.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "PAPA: Passengers, Alternates, Power, Actions.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "SOP: Standard, Operations, Pilot, Action.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme al MOB 3.1 y MOA 8.3 de Binter, el modelo estandarizado para comunicar una situación anormal o de emergencia a la tripulación de cabina es el briefing **NITS**:\n- **N**: Nature of the emergency (Naturaleza).\n- **I**: Intentions (Intenciones: desvío, toma inmediata, etc.).\n- **T**: Time remaining to landing (Tiempo disponible para preparar cabina).\n- **S**: Special instructions / Specific signals (Instrucciones específicas: evacuación por un solo lado, etc.).",
+      "references": [
+        "MOB Binter E195-E2 - Subcapítulo 3.1: Briefings de Emergencia (NITS)",
+        "MOA Binter ED06 RN27 - Subcapítulo 8.3: Coordinación Técnica-Cabina"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-EXP26-024",
+    "subject_id": "command-upgrade",
+    "learning_objective": "QRH Sección 1 - Descenso de Emergencia con Sospecha de Daño Estructural",
+    "stem": "Durante la ejecución del procedimiento de Descenso de Emergencia (CABIN ALTITUDE HIGH / EMERGENCY DESCENT), si la tripulación sospecha que ha habido daño estructural en la aeronave:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se debe mantener la velocidad actual o inferior evitando maniobras bruscas, y no acelerar hasta Vmo/Mmo.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se debe acelerar inmediatamente a Vmo + 10 kt y desplegar el tren de aterrizaje a cualquier velocidad.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se debe apagar el sistema hidráulico número 1 para evitar sobrepresiones.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se debe ascender a FL410 para reducir la densidad del aire sobre el fuselaje.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En el QRH Sección 1 del E195-E2 (EMERGENCY DESCENT Procedure):\n- Si **NO** se sospecha daño estructural: Descender a Vmo/Mmo con Speedbrakes desplegados.\n- Si **SÍ** se sospecha daño estructural (impacto, explosión, deformación evidente): **Mantener la velocidad actual (o reducir)**, no acelerar hasta Vmo/Mmo y operar los controles con suavidad para no imponer cargas aerodinámicas adicionales a una estructura debilitada.",
+      "references": [
+        "Embraer 195-E2 QRH - Section 1: Emergency Descent Guidelines",
+        "AOM / FCOM Volume 1 - Emergency Procedures"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "CMD-EXP26-025",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOB 3.1.0 - Cancelación de Orden de Evacuación",
+    "stem": "Si tras una parada de emergencia en pista el Comandante determina que la situación está bajo control y no es necesaria una evacuación de emergencia, ¿cuál es la llamada oficial por PA que debe realizar?",
+    "options": [
+      {
+        "id": "A",
+        "text": "\"TRIPULACIÓN DE CABINA Y PASAJEROS, CANCELAR EVACUACIÓN, CANCELAR EVACUACIÓN, PERMANEZCAN SENTADOS\".",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "\"TODO ESTÁ BIEN, PUEDEN LEVANTARSE\".",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "\"ATENCIÓN TRIPULACIÓN, EMBARQUE REANUDADO\".",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "\"PASAJEROS DESABROCHEN CINTURONES Y ESPEREN A LA ESCALERA\".",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme a los procedimientos estandarizados del MOB 3.1.0 y MOA 8.3 de Binter, para cancelar una alerta o evitar una evacuación no deseada por parte del pasaje tras una parada imprevista, la llamada oficial e imperativa es: **\"TRIPULACIÓN DE CABINA Y PASAJEROS, CANCELAR EVACUACIÓN, CANCELAR EVACUACIÓN, PERMANEZCAN SENTADOS\"**.",
+      "references": [
+        "MOB Binter E195-E2 - Subcapítulo 3.1.0: Comunicaciones y Llamadas Normalizadas",
+        "MOA Binter ED06 RN27 - Subcapítulo 8.3: Coordinación de Emergencia"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-EXP26-026",
+    "subject_id": "command-upgrade",
+    "learning_objective": "AFM 2-01 / AOM 1-04 - Altura Mínima de Conexión del Piloto Automático tras el Despegue",
+    "stem": "¿Cuál es la altitud mínima certificada para la conexión del piloto automático (AP) tras el despegue en el Embraer 195-E2 según el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "400 ft AGL.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "100 ft AGL.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "800 ft AGL.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "1.500 ft AGL.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Sección 2 del AFM (Limitations) del Embraer 195-E2, la altura mínima para el enganche del sistema de piloto automático (Autopilot Engagement Altitude) tras el despegue es de **400 ft AGL**.",
+      "references": [
+        "Embraer 195-E2 AFM - Section 2: Operating Limitations - Autoflight System",
+        "AOM Volume 1 - Limitations 1-04"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.25
+    }
+  },
+  {
+    "id": "CMD-EXP26-027",
+    "subject_id": "command-upgrade",
+    "learning_objective": "AFM 2-03 - Limitaciones de Autoland en Pistas Contaminadas",
+    "stem": "¿Está autorizado el aterrizaje automático (Autoland) en pistas contaminadas con agua estancada, nieve o hielo en el Embraer 195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No, las operaciones de Autoland (CAT II / CAT III) están prohibidas en pistas contaminadas según las limitaciones del AFM.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Sí, siempre que el coeficiente de fricción reportado sea GOOD (≥ 0.40).",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Sí, pero reduciendo el peso máximo de aterrizaje en un 15%.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Sí, siempre que se utilicen reversas máximas hasta parada total.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme a la Sección 2 del AFM (AFM 2-03) y AOM 1-04 del E195-E2, **el aterrizaje automático (Autoland) está estrictamente prohibido en pistas contaminadas** (Contaminated Runways con agua, nieve, aguanieve o hielo). Las operaciones de Autoland solo están certificadas en pistas secas o húmedas (dry or wet runways).",
+      "references": [
+        "Embraer 195-E2 AFM - Section 2: Autoland Limitations",
+        "AOM Volume 1 - Autoland Operating Limitations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "CMD-EXP26-028",
+    "subject_id": "command-upgrade",
+    "learning_objective": "AFM 2-02 - Limitación de Viento en Cola (Tailwind) para Despegue y Aterrizaje",
+    "stem": "¿Cuál es la componente máxima demostrada de viento en cola (Tailwind) permitida para despegues y aterrizajes convencionales en el Embraer 195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "15 nudos (o 10 kt en operaciones Autoland).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "20 nudos en cualquier condición de pista.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "10 nudos máximo para todo tipo de operación.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "5 nudos en despegue y 15 nudos en toma.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En las limitaciones del AFM Sección 2 del E195-E2:\n- Viento en cola máximo para despegue y aterrizaje convencional (Manual/AP): **15 kt**.\n- Viento en cola máximo para aterrizaje automático (Autoland): **10 kt**.",
+      "references": [
+        "Embraer 195-E2 AFM - Section 2: Wind Limitations",
+        "AOM Volume 1 - Section 1-04: Limitations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-EXP26-029",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.3 / CRM Binter - Mnemónico IMFLOCC para Gestión de Desvíos",
+    "stem": "Durante la toma de decisiones y ejecución de un desvío a un aeródromo alternativo en vuelo, ¿qué representa el mnemónico operacional IMFLOCC utilizado en Binter?",
+    "options": [
+      {
+        "id": "A",
+        "text": "I: Información / Intenciones; M: Meteorología / Mínimos; F: Fuel / Combustible; L: Legalidad / FTL; O: Operaciones / Handling; C: Cabin Crew / Pasajeros; C: ATC / Coordinación.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Instrumentos, Motores, Flaps, Luces, Oxígeno, Circuitos, Calzos.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "ILS, MDA, FAF, Localizer, Obstáculos, Circling, Cartas.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Informe, Mantenimiento, Facturación, LMC, OFP, Control, Checklists.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En los procedimientos de CRM y gestión de desvíos de Binter (MOA 8.3 y manual de formación de mandos), **IMFLOCC** estructura la revisión integral de un desvío:\n- **I**: Information / Intenciones generales.\n- **M**: Meteorology & Minima en alternativo.\n- **F**: Fuel management (Trip al alternativo + Final Reserve + márgenes).\n- **L**: Legal aspects (FTL de tripulación, restricciones de aeropuerto).\n- **O**: Operations (Handling, pasarela, repostaje disponible).\n- **C**: Cabin crew & Passengers (comunicación al pasaje).\n- **C**: Communications / ATC / Despacho OCC.",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.3: Gestión del Vuelo y Desvíos",
+        "Manual de Curso de Mando Binter - Toma de Decisiones y Mnemónicos Operacionales"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-EXP26-030",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.7.3.3 - Recálculo de Combustible en Vuelo (Point of Safe Return / Decision Point)",
+    "stem": "Durante el vuelo en crucero, el Comandante debe realizar un control continuo del combustible restante frente al planificado. Si al alcanzar un punto de ruta el combustible real a bordo es inferior al combustible requerido para continuar a destino, frustrar, proceder al alternativo y mantener la reserva final, ¿qué acción es mandatoria?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El Comandante debe evaluar la situación y desviarse hacia un aeródromo alternativo en ruta o en destino adecuado antes de comprometer la reserva final.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Puede continuar siempre que mantenga crucero a velocidad de máxima autonomía (Long Range Cruise).",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Debe apagar el sistema de aire acondicionado para ahorrar combustible y continuar a destino.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Debe solicitar descenso a FL100 para consumir menos combustible.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme a EASA CAT.OP.MPA.180 y MOA 8.1.7.3.3 (In-flight fuel management):\nSi el combustible utilizable a bordo en cualquier punto de la ruta resulta insuficiente para completar el vuelo hasta el destino con combustible para el alternativo y la reserva final, el Comandante no puede continuar ciegamente; debe tomar medidas de mitigación o ejecutar un desvío a un aeródromo adecuado en ruta para asegurar que el aterrizaje se efectúe en todo momento con al menos la reserva final intacta.",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.7.3.3: Gestión de Combustible en Vuelo",
+        "EASA Part-CAT.OP.MPA.180"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "CMD-EXP26-031",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA Cap. 1.4 / EASA CAT.GEN.MPA.100 - Autoridad y Responsabilidad del Piloto al Mando (PIC)",
+    "stem": "¿En qué circunstancias está facultado el Comandante (PIC) para desembarcar a una persona o parte de la carga según el MOA Capítulo 1.4 y la Ley de Navegación Aérea?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cuando en su opinión justificada, la presencia de dicha persona o carga pueda representar un peligro potencial para la seguridad de la aeronave, sus ocupantes o el orden a bordo.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Únicamente si cuenta con una orden judicial expresa y por escrito de un juez de guardia.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo si el pasajero no tiene tarjeta de embarque válida.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo tras obtener autorización directa y simultánea del Director de Operaciones y la Guardia Civil.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme al Convenio de Tokio (Art. 6), la Ley de Seguridad Aérea 21/2003, EASA Part-CAT.GEN.MPA.100 y el MOA Capítulo 1.4:\nEl Comandante ostenta la máxima autoridad a bordo y tiene la facultad indelegable de desembarcar a cualquier persona o porción de la carga que comprometa o pueda comprometer la seguridad, el orden o la legalidad del vuelo, sin requerir autorización previa de terceros.",
+      "references": [
+        "MOA Binter ED06 RN27 - Capítulo 1.4: Autoridad y Responsabilidad del Comandante",
+        "EASA Part-CAT.GEN.MPA.100: Crew responsibilities - Commander authority",
+        "Convenio de Tokio de 1963 (Infracciones a bordo de aeronaves)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "CMD-EXP26-032",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA Cap. 11 - Notificación Obligatoria de Sucesos (Reglamento UE 376/2014)",
+    "stem": "¿Cuál es el plazo reglamentario para que el Comandante remita el parte de notificación de sucesos (Air Safety Report - ASR / MOR) a la compañía tras un incidente operacional?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tan pronto como sea posible y, en todo caso, dentro de las 72 horas siguientes al momento en que tuvo conocimiento del suceso.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En un plazo máximo de 30 días naturales.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Antes de abandonar el avión en el mismo día del suceso sin excepciones.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo si la autoridad aeronáutica (AESA) emite un requerimiento previo por escrito.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con el Reglamento (UE) Nº 376/2014 (Notificación de Sucesos en la Aviación Civil) y el MOA Capítulo 11:\nCualquier suceso que afecte o pueda afectar a la seguridad aérea debe ser notificado por el Comandante a través de un **ASR (Air Safety Report)** en un plazo que no excederá de **72 horas** desde el momento en que se produjo o se tuvo constancia del mismo.",
+      "references": [
+        "MOA Binter ED06 RN27 - Capítulo 11: Notificación de Accidentes e Incidentes (ASR)",
+        "Reglamento (UE) Nº 376/2014: Mandatory Occurrence Reporting (MOR)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-EXP26-033",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.3.1 / SERA.5005 - Mínimos VFR Especial (Special VFR)",
+    "stem": "¿Cuáles son las condiciones meteorológicas y de visibilidad mínimas para solicitar y realizar un vuelo en VFR Especial (SVFR) dentro de una zona de control (CTR) según SERA y MOA 8.1.3.1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Visibilidad en tierra no inferior a 1.500 m (o 800 m para helicópteros), techo de nubes no inferior a 600 ft (180 m), libre de nubes y con la superficie a la vista, y velocidad máx. 140 kt IAS.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Visibilidad no inferior a 5.000 m y techo de 1.500 ft.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Visibilidad de 800 m y techo de 200 ft con ILS operativo.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El VFR Especial está totalmente prohibido en todo el espacio aéreo europeo.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme a SERA.5010 (VFR Especial en CTR) y MOA 8.1.3.1:\nPara autorizaciones de VFR Especial en CTR:\n1. Visibilidad en tierra $\\ge 1.500\\text{ m}$.\n2. Techo de nubes $\\ge 600\\text{ ft}$ (180 m).\n3. La aeronave debe permanecer libre de nubes y con la superficie a la vista en todo momento.\n4. Velocidad máxima adaptada (generalmente $\\le 140\\text{ kt}$).",
+      "references": [
+        "Reglamento de Ejecución (UE) Nº 923/2012 (SERA) - SERA.5010: Special VFR in control zones",
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.3.1: Reglas de Vuelo Visual (VFR)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-EXP26-034",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.3.1 - Windshear Precautions y Procedimiento de Escape",
+    "stem": "Si durante la aproximación final se activa la alarma acústica y visual 'WINDSHEAR, WINDSHEAR, WINDSHEAR' generada por el sistema EGPWS/Windshear reactivo del E195-E2, ¿cuál es la acción de memoria inmediata obligatoria?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aplicar empuje máximo (MAX thrust / TO/GA), desconectar piloto automático si procede, seguir la guía de pitch del Flight Director hacia la actitud de escape de windshear sin modificar la configuración de flaps ni tren de aterrizaje hasta estar fuera del fenómeno.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Subir el tren de aterrizaje y poner flaps 0 inmediatamente para reducir la resistencia.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cortar gases para evitar exceso de velocidad y continuar el planeo.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar un viraje inmediato de 90 grados para salir de la microrráfaga.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con el QRH Sección 1 (Memory Items) y SOPM del E195-E2:\nAnte aviso de **WINDSHEAR WARNING**:\n- **Thrust Levers: MAX**\n- **Flight Guidance / Pitch: Follow FD Windshear escape guidance** (o pitch hasta el límite del Stick Shaker).\n- **NO CAMBIAR configuración de Flaps ni Tren** hasta confirmar ascenso positivo y salida total de la condición de cizalladura.",
+      "references": [
+        "Embraer 195-E2 QRH - Section 1: Memory Items - WINDSHEAR ESCAPE GUIDANCE",
+        "SOPM-1755-200-REV14 - Emergency Procedures"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "CMD-EXP26-035",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.7.3.5 / EASA CAT.OP.MPA.180 - Protección y Declaración de Prioridad ATC en Situación de Combustible",
+    "stem": "Tras declarar 'MAYDAY, MAYDAY, MAYDAY, FUEL' a la dependencia ATC, ¿qué acciones debe ejecutar el controlador de tránsito aéreo según el reglamento SERA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Proporcionar prioridad absoluta e inmediata sobre todo el resto del tráfico, dar autorizaciones expeditas directas hacia la pista en servicio más adecuada y coordinar los servicios de emergencia en tierra (RFFS).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mantener al avión en la secuencia normal de aproximación sin alterar el orden de llegadas.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Ordenar al avión que realice esperas adicionales hasta que los despegues hayan concluido.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar al Comandante que repita el pesaje de combustible por radio antes de otorgar prioridad.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme a SERA.14095 y OACI Doc 4444 (PANS-ATM):\nLa declaración **\"MAYDAY FUEL\"** es un estado oficial de socorro (Distress). El ATC debe proporcionar de inmediato la máxima prioridad de maniobra y aproximación, liberando la trayectoria y alertando a los servicios de salvamento y extinción de incendios del aeródromo.",
+      "references": [
+        "Reglamento de Ejecución (UE) Nº 923/2012 (SERA) - SERA.14095: Fuel emergency",
+        "OACI Doc 4444 (PANS-ATM) - Chapter 15: Emergency Procedures",
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.7.3.5: Procedimientos de Emergencia de Combustible"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.25
+    }
+  }
+]
