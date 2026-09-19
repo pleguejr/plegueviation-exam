@@ -48,3 +48,4 @@ In browser/device with **Modo Día** (`body.theme-light`):
 - Comunicados: `.ops-com-*`
 - SOP: `.procedure-*`
 - TABLAS: `.ops-tables-*`
+- Command Course hero: `.command-course-*`
