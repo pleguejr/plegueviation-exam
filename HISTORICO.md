@@ -4,7 +4,15 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 
 ---
 
-## 🚀 Versión Actual: v3.4.5 (2026-09-15)
+## 🚀 Versión Actual: v3.4.6 (2026-09-19)
+
+### ☀️ Command Course — título y contraste día
+- Eliminado el encabezado «Examen Convocatoria Anterior (Command Course)» del banco especial (queda el badge + descripción).
+- Overrides `.theme-light` para `.command-course-hero-card` y botones de acceso rápido (fondo claro, textos oscuros legibles).
+
+---
+
+## 🔍 Versión v3.4.5 (2026-09-15)
 
 ### 🔍 Auditoría reportes PWA (BIN-SOP)
 - **BIN-SOP-124**: Vra bajo 10.000 ft corregida **240 → 250 KIAS** (RemNote NUMBERS / AOM).
