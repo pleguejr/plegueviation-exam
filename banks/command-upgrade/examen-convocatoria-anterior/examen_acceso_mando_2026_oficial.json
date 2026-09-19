@@ -18,19 +18,20 @@
       {
         "id": "C",
         "text": "320 NM",
-        "is_correct": false
+        "is_correct": true
       },
       {
         "id": "D",
         "text": "360 NM",
-        "is_correct": true
+        "is_correct": false
       }
     ],
     "explanation": {
-      "text": "De acuerdo con el MOA 8.1.2.1 y la normativa EASA CAT.OP.MPA.140 para bimotores sin aprobación ETOPS, el límite de distancia en ruta respecto a un aeródromo adecuado se calcula en base a la distancia volada en **60 minutos a velocidad de crucero monomotor (OEI TAS)** en atmósfera estándar y aire en calma. Para la flota Embraer 195-E2 de Binter, este valor de despacho oficial equivale a **360 NM**.",
+      "text": "De acuerdo con el MOA 8.1.2.1 (pág. 314) y MOA 8.1.7.2.3.1 (pág. 385) de Binter Airlines, así como la normativa EASA CAT.OP.MPA.140 para bimotores sin aprobación ETOPS, el límite de distancia máxima a un aeródromo adecuado en caso de un motor inoperativo (60 minutos a OEI TAS en atmósfera estándar y aire en calma) para la flota **Embraer 195-E2** está establecido oficialmente en **320 NM**.",
       "references": [
-        "MOA Binter ED06 RN27 - Subcapítulo 8.1.2.1: Selección de Rutas y Aeródromos",
-        "EASA Part-CAT.OP.MPA.140: Maximum distance from an adequate aerodrome for two-engined aeroplanes without an ETOPS approval"
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.2.1 (pág. 314): Flota E195-E2 Distancia Máxima 320 NM",
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.7.2.3.1 (pág. 385): Distancia máxima 1h OEI",
+        "EASA Part-CAT.OP.MPA.140"
       ]
     },
     "metadata": {
@@ -313,12 +314,12 @@
       {
         "id": "A",
         "text": "The excess is absorbed by contingency fuel, which expressly covers prolonged taxi times, reducing the margin available for the rest of the flight",
-        "is_correct": false
+        "is_correct": true
       },
       {
         "id": "B",
         "text": "A new flight plan must be requested before takeoff",
-        "is_correct": true
+        "is_correct": false
       },
       {
         "id": "C",
@@ -332,10 +333,10 @@
       }
     ],
     "explanation": {
-      "text": "El combustible de contingencia NO está destinado a cubrir consumos de rodaje en tierra. Conforme al MOA 8.1.7.3.3, en el momento de iniciar la carrera de despegue (Takeoff), el combustible a bordo debe ser como mínimo igual al **combustible mínimo de despegue requerido** (Trip + Contingency + Alternate + Final Reserve). Si un rodaje prolongado reduce el combustible por debajo de este umbral, el despegue no está autorizado y debe solicitarse un nuevo plan de vuelo / repostaje.",
+      "text": "De acuerdo con el MOA 8.1.7.1.2.3 (pág. 378):\n*\"El combustible de contingencia es la cantidad de combustible necesaria para compensar factores imprevistos; desviaciones de los datos de consumo de combustible esperados, desviaciones por previsiones meteorológicas, retrasos inesperados prolongados en el vuelo, tiempos de rodaje inesperados prolongados y desviaciones de las rutas planificadas y/o niveles de crucero.\"*\nPor tanto, el exceso de consumo producido por un rodaje anormalmente prolongado antes del despegue es absorbido formalmente por el combustible de contingencia, reduciendo el margen remanente previsto para contingencias durante el vuelo.",
       "references": [
-        "MOA Binter ED06 RN27 - Subcapítulo 8.1.7.3.3: Gestión del Combustible en Vuelo y en Tierra",
-        "EASA Part-CAT.OP.MPA.180: Fuel management on ground"
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.7.1.2.3 (pág. 378): Definición y Cobertura del Combustible de Contingencia",
+        "EASA Part-CAT.OP.MPA.180: Fuel policy and contingency fuel"
       ]
     },
     "metadata": {
@@ -541,7 +542,7 @@
       {
         "id": "A",
         "text": "L1 as it has an air bridge attached, and R1 clear for ramp deployment",
-        "is_correct": true
+        "is_correct": false
       },
       {
         "id": "B",
@@ -551,7 +552,7 @@
       {
         "id": "C",
         "text": "R1 clear for ramp deployment, and L2 clear for ramp evacuation unless stairs are attached",
-        "is_correct": false
+        "is_correct": true
       },
       {
         "id": "D",
@@ -560,10 +561,10 @@
       }
     ],
     "explanation": {
-      "text": "Conforme a EASA CAT.OP.MPA.195 y MOA 8.2.1.3 (Repostaje con pasajeros embarcando/a bordo):\n- La pasarela telescópica conectada en la puerta delantera izquierda (**L1**) constituye una vía de evacuación primaria.\n- Es mandatorio disponer de al menos otra salida de emergencia expedita en el lado opuesto (**R1**) preparada para el despliegue inmediato de rampa de evacuación libre de vehículos e infraestructuras.",
+      "text": "De acuerdo con el MOA 8.2.1.2 (pág. 458 - Repostaje con pasajeros embarcando):\n*\"Se debe considerar que las puertas utilizadas para el embarque están bloqueadas como salidas de emergencia.\nb) Si el embarque de la aeronave se realiza exclusivamente por la puerta delantera izquierda L1, el área de despliegue de rampas opuesto R1 debe quedar libre de obstáculos. Además, en caso de que la puerta trasera derecha R2 esté bloqueada por cualquier estructura, la salida opuesta L2 debe estar libre para la evacuación por rampa, a no ser que ya tenga acoplada una escalera para posible evacuación.\"*",
       "references": [
-        "MOA Binter ED06 RN27 - Subcapítulo 8.2.1.3: Procedimiento de Carga de Combustible con Pasajeros",
-        "EASA Part-CAT.OP.MPA.195: Refuelling/defuelling with passengers embarking, on board or disembarking"
+        "MOA Binter ED06 RN27 - Subcapítulo 8.2.1.2 (pág. 458): Reabastecimiento de Combustible con Pasajeros Embarcando",
+        "EASA Part-CAT.OP.MPA.195: Refuelling/defuelling with passengers"
       ]
     },
     "metadata": {
