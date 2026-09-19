@@ -3692,12 +3692,12 @@
       {
         "id": "B",
         "text": "Ceiling 450 ft and RVR 1,250 m",
-        "is_correct": true
+        "is_correct": false
       },
       {
         "id": "C",
         "text": "Ceiling 500 ft and RVR 1,600 m",
-        "is_correct": false
+        "is_correct": true
       },
       {
         "id": "D",
@@ -3706,10 +3706,10 @@
       }
     ],
     "explanation": {
-      "text": "De acuerdo con el MOA 8.1.7.2.5 (Tabla 1A - Plan Básico con Variaciones Operacionales de Binter):\n- **Instalación disponible**: Una sola aproximación de precisión Tipo B (ILS).\n- **Incrementos reglamentarios**: **DA/H + 150 ft** y **RVR + 450 m**.\n- **Cálculo**:\n  * Techo requerido: $300\\text{ ft} + 150\\text{ ft} = \\mathbf{450\\text{ ft}}$.\n  * RVR requerido: $800\\text{ m} + 450\\text{ m} = \\mathbf{1.250\\text{ m}}$.",
+      "text": "De acuerdo con la clasificación oficial de aproximaciones por instrumentos (EASA Part-CAT y MOA 8.1.3 pág. 347):\n- **Tipo B**: Operaciones con $\\text{DH} < 250\\text{ ft}$ ($200\\text{ ft} \\le \\text{DH} < 250\\text{ ft}$ para CAT I).\n- **Tipo A**: Operaciones con $\\text{MDH/DH} \\ge 250\\text{ ft}$. Al tener este ILS una $\\text{DA/H} = 300\\text{ ft}$ ($\\ge 250\\text{ ft}$), se clasifica como una **Operación de aproximación 3D por instrumentos tipo A, asociada a una ayuda con mínimos de 200 ft o menos**.\n\nConsultando la **Tabla 1A (MOA 8.1.7.2.5 pág. 388 - Plan Básico con Variaciones)** para esta fila:\n- Incremento de Techo: **DA/H + 200 ft** $\\longrightarrow 300\\text{ ft} + 200\\text{ ft} = \\mathbf{500\\text{ ft}}$.\n- Incremento de Visibilidad/RVR: **RVR/VIS + 800 m** $\\longrightarrow 800\\text{ m} + 800\\text{ m} = \\mathbf{1.600\\text{ m}}$.",
       "references": [
-        "MOA Binter ED06 RN27 - Subcapítulo 8.1.7.2.5: Mínimos de Planificación (Tabla 1A - Plan Básico con Variaciones)",
-        "EASA Part-SPA.LVO: Operational planning minima"
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.3 (pág. 347): Clasificación Operaciones Tipo A y Tipo B",
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.7.2.5 (pág. 388): Tabla 1A - Plan Básico con Variaciones"
       ]
     },
     "metadata": {
