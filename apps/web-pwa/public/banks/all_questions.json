@@ -5725,6 +5725,1207 @@
     "_subtopic": "examen-convocatoria-anterior"
   },
   {
+    "id": "CMD-EXP26-036",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.7.2.5 (Tabla 1A Nota) - Regla de selección de la fila más ventajosa en Plan Básico con Variaciones",
+    "stem": "Según la nota oficial de la Tabla 1A del MOA 8.1.7.2.5 (Plan Básico con Variaciones), si un aeródromo alternativo dispone de dos aproximaciones Tipo B (una CAT III con mínimos 0 ft / 75 m y otra CAT I con mínimos 200 ft / 550 m en la misma pista), ¿cómo se calculan los mínimos de planificación?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se puede seleccionar la fila más ventajosa aplicando los incrementos de 1 aproximación Tipo B (+150 ft / +450 m) a los mínimos CAT III, resultando en 150 ft de techo y 525 m de RVR (en lugar de 300 ft / 850 m de CAT I).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Es obligatorio aplicar siempre los mínimos de CAT I con incremento de 2 aproximaciones independientes (+100 ft / +300 m).",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No se pueden utilizar mínimos CAT III para planificación bajo ninguna circunstancia.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Debe calcularse la media aritmética entre los mínimos de CAT I y CAT III.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Nota oficial de la Tabla 1A (MOA 8.1.7.2.5 pág. 388):\n*\"Se podrá seleccionar la fila de mínimos de planificación más ventajosos. Por ejemplo, un aeródromo con dos aproximaciones tipo B: una CAT3 (0 ft/75 m) otra CAT1 (200 ft/550 m). Se podrán seleccionar para planificación los mínimos CAT3 (0 + 150 ft / 75 + 450 m = 150 ft / 525 m) en vez de los mínimos CAT1 (200 + 100 ft / 550 + 300 m = 300 ft / 850 m).\"*",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.7.2.5 (pág. 388): Tabla 1A Nota de Selección Ventajosa",
+        "EASA AMC8 CAT.OP.MPA.182"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-037",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.7.2.6 (Tabla 1B) - Incrementos del Plan Básico Estándar sin Variaciones",
+    "stem": "En caso de que Binter no pueda acogerse al Plan Básico con Variaciones y deba despachar según el Plan Básico estándar (Tabla 1B), ¿cuáles son los incrementos fijos aplicables a las aproximaciones instrumentales Tipo B y Tipo A?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aproximaciones Tipo B: DA/H + 200 ft y RVR/VIS + 800 m; Aproximaciones Tipo A: DA/H o MDA/H + 400 ft y RVR/VIS + 1.500 m.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Aproximaciones Tipo B: DA/H + 100 ft y RVR + 300 m; Aproximaciones Tipo A: MDA/H + 200 ft y VIS + 1.000 m.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aproximaciones Tipo B: DA/H + 150 ft y RVR + 450 m; Aproximaciones Tipo A: MDA/H + 300 ft y VIS + 800 m.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aproximaciones Tipo B: sin incremento; Aproximaciones Tipo A: MDA/H + 500 ft y VIS + 2.000 m.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme a la Tabla 1B del MOA 8.1.7.2.6 (pág. 389 - Plan Básico Estándar AMC6 CAT.OP.MPA.182):\n- **Aproximaciones Tipo B**: Techo: **DA/H + 200 ft** | Visibilidad: **RVR/VIS + 800 m**.\n- **Aproximaciones Tipo A**: Techo: **DA/H o MDA/H + 400 ft** | Visibilidad: **RVR/VIS + 1.500 m**.\n- **Aproximaciones en circuito**: Techo: **MDA/H + 400 ft** | Visibilidad: **VIS + 1.500 m**.",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.7.2.6 (pág. 389): Tabla 1B Plan Básico",
+        "EASA AMC6 CAT.OP.MPA.182"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-038",
+    "subject_id": "command-upgrade",
+    "learning_objective": "DDPM CDL Generalidades - Definición de 'No Penalty'",
+    "stem": "En la Introducción General de la CDL (DDPM Sección 4), ¿cómo se define un ítem con 'No Penalty' respecto a la acumulación de elementos faltantes?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aplica a ítems de CDL que no afectan o que mejoran la resistencia aerodinámica del avión; en este caso, cualquier número acumulado de ítems puede faltar sin penalización adicional.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Aplica únicamente si no falta más de 1 ítem por cada plano alar.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Exige reducir 20 kg por cada ítem a partir del segundo.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Significa que la penalización solo se aplica si la pista está mojada o contaminada.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En el DDPM 6130-100 (CDL General Introduction pág. 857):\n*\"– No Penalty: applicable to CDL items that do not affect, or that improve, the airplane aerodynamic drag. In this case, any cumulative number of items may be missing without further penalty.\"*",
+      "references": [
+        "Embraer 195-E2 DDPM 6130-100 - Section 4: CDL General Introduction (pág. 857)",
+        "MOA Binter ED06 RN27 - Subcapítulo 8.6.3: CDL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-039",
+    "subject_id": "command-upgrade",
+    "learning_objective": "DDPM CDL Generalidades - Regla de cálculo para más de 3 ítems con 'Negligible Penalty'",
+    "stem": "Si un Embraer 195-E2 es despachado con 5 elementos faltantes catalogados individualmente bajo CDL con 'Negligible Penalty', ¿cuál es la penalización total acumulada que debe aplicarse a los límites de peso de despegue, aterrizaje y subida en ruta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "90 kg (200 lb), ya que hasta 3 ítems no conllevan penalización y se reducen 45 kg (100 lb) por cada ítem adicional a partir del cuarto (2 ítems x 45 kg).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "225 kg (45 kg x 5 ítems).",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cero penalización, ya que todos son individualmente despreciables.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "450 kg fijos por superar el límite de 3 ítems.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme a la Sección 4 del DDPM (pág. 857):\n*\"In this case, a maximum of three items may be missing without penalty. If there are more than three missing items with negligible penalty, reduce the takeoff, landing, and enroute climb limits by 45 kg (100 lb) for each additional missing item. For example, if there are 5 missing items with negligible penalty, the weight reduction is 90 kg (200 lb).\"*",
+      "references": [
+        "Embraer 195-E2 DDPM 6130-100 - Section 4: CDL General Introduction (pág. 857)",
+        "MOA Binter ED06 RN27 - Subcapítulo 8.6.3"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-040",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.7.1.2.1 - Valor estándar de Combustible de Rodaje (Taxi Fuel) E195-E2",
+    "stem": "¿Cuál es el valor fijo estándar de combustible de rodaje y APU (Taxi Fuel) establecido en la planificación de vuelo para la flota Embraer 195-E2 según el MOA 8.1.7.1.2.1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "200 kg.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "140 kg.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "300 kg.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "100 kg.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la tabla del MOA 8.1.7.1.2.1 (pág. 378):\n*\"FLOTA: EMB | COMBUSTIBLE TAXI = 200 kg\"*.\nEste valor incluye el rodaje desde puesta en marcha hasta inicio de carrera de despegue y el consumo del APU en tierra.",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.7.1.2.1 (pág. 378): Combustible de Rodaje",
+        "MOB Binter E195-E2 - Cap. 5"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-041",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.7.1.2.3.1 - Mínimo absoluto de Combustible de Contingencia E195-E2",
+    "stem": "¿Cuál es la cantidad mínima absoluta de combustible de contingencia (Contingency Fuel) que debe llevar el Embraer 195-E2 en cualquier plan de vuelo básico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "140 kg (equivalente al consumo de 5 minutos de espera a 1.500 ft en condiciones estándar).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "200 kg.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "350 kg.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "500 kg.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme al MOA 8.1.7.1.2.3.1 (pág. 378 y 380):\nEl combustible de contingencia será el mayor del 5% del Trip Fuel o el necesario para 5 minutos a velocidad de holding a 1.500 ft sobre el destino. Para la flota E195-E2, este suelo mínimo obligatorio está fijado en **140 kg**.",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.7.1.2.3.1 (pág. 378): Mínimo Combustible Contingencia",
+        "EASA Part-CAT.OP.MPA.180"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-042",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.7.1.2.3.2 - Combustible de Contingencia con Variación 3% ERA",
+    "stem": "En operaciones con limitación de masa de despegue (RTOW), Binter permite aplicar la variación de combustible de contingencia reducida al 3%. ¿Qué condición respecto a aeródromos en ruta es indispensable?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Disponer de un aeropuerto alternativo en ruta por combustible (Fuel ERA) que cumpla con los mínimos de planificación aplicables dentro del círculo de radio correspondiente a lo largo de la ruta.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Que el vuelo tenga una duración inferior a 30 minutos.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Que no haya pasajeros a bordo (vuelo ferry exclusivamente).",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Que el aeródromo de destino disponga de 3 pistas paralelas activas.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con el MOA 8.1.7.1.2.3.2 (pág. 378):\nPara utilizar como combustible de contingencia el mayor del **3% del Trip Fuel** o 140 kg (5 min holding), es requisito obligatorio disponer de un aeródromo alternativo en ruta por combustible (**Fuel ERA**) según MOA 8.1.7.2.5.",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.7.1.2.3.2: Variación Contingencia 3% ERA",
+        "EASA AMC9 CAT.OP.MPA.182"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-043",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.2.1.2 - Prohibición de Repostaje con Pasaje en Aeródromos con RFFS Degradado",
+    "stem": "Según el MOA 8.2.1.2, ¿en qué caso de degradación de salvamento y extinción de incendios (RFFS) queda TERMINANTEMENTE PROHIBIDO el repostaje con pasajeros a bordo en el Embraer 195-E2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Para aeródromos con categoría RFFS dos niveles inferiores al de la categoría de la aeronave (para flota Embraer, RFFS del aeródromo = 5).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cuando la categoría RFFS se degrade de 7 a 6.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Únicamente si la pista tiene menos de 2.000 m de longitud.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo cuando la temperatura exterior sea menor a 0 °C.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con el MOA 8.2.1.2 (pág. 456):\n*\"Queda Totalmente Prohibido el repostaje de combustible con pasaje a bordo de la aeronave para aeródromos con categoría RFFS (Rescue and Fire-Fighting Service) dos niveles inferiores al de la categoría de la aeronave (flota Embraer, RFFS AD = 5).\"*",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.2.1.2 (pág. 456): Prohibiciones de Repostaje con Pasaje",
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.2.2: RFFS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-044",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.2.1.2 - Distancias Mínimas de Seguridad en Plataforma durante Repostaje",
+    "stem": "Durante el reabastecimiento de combustible con pasajeros a bordo, ¿cuáles son las distancias mínimas de seguridad obligatorias que debe garantizar el agente de handling alrededor del avión y equipos de soporte según el MOA 8.2.1.2.1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Radio de 6 metros alrededor del avión y de 3 metros para el resto de equipos de soporte en tierra.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Radio de 15 metros alrededor de los motores y 10 metros de la cisterna.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Radio de 2 metros en todo el perímetro.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No se estipula distancia fija, rigiendo únicamente la señalización pintada en el stand.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme al MOA 8.2.1.2.1 (pág. 459):\n*\"Se asegurará de que existe una distancia mínima de seguridad, de 6m de radio de distancia alrededor del avión, así como de 3m para el resto de equipos de soporte en tierra.\"*",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.2.1.2.1 (pág. 459): Procedimientos para el Agente de Handling",
+        "Reglamento de Seguridad en Plataforma Aena"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-045",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.2.1.2 - Tiempo de Respuesta de la Brigada SEI en Repostaje con Pasaje",
+    "stem": "Cuando se realiza un repostaje con pasajeros a bordo, ¿en qué radio de seguridad y tiempo de respuesta debe encontrarse la brigada de bomberos (SEI) del aeropuerto según el MOA 8.2.1.2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En un radio de seguridad que les permita actuar en 90 segundos en caso de incendio.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "A pie de avión a menos de 10 metros del ala en todo momento.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En el parque de bomberos con tiempo de respuesta de 5 minutos.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En la torre de control en posición de vigilancia visual.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con el MOA 8.2.1.2 (pág. 459):\n*\"Una brigada de bomberos debe estar situada en un radio de seguridad que les permita actuar en 90 segundos en caso de incendio (dependiendo de los procedimientos aplicables en el aeropuerto).\"*",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.2.1.2 (pág. 459): Normas Generales de Seguridad en Repostaje",
+        "OACI Anexo 14"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-046",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.11.3 - Distribución y Colores de las Copias del ATL",
+    "stem": "El libro de registro técnico (ATL) del Embraer consta de 5 copias autocalcables. ¿Cuál es el destino reglamentario de la copia de color BLANCO y de la copia AMARILLA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Blanco: Permanece en el libro para referencia de pilotos y mecánicos y se archiva en mantenimiento al agotar el taco; Amarillo: Se retira al finalizar el set y se incluye en el sobre de vuelo.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Blanco: Se entrega al pasajero; Amarillo: Se destruye tras el vuelo.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Blanco: Se queda en la escala de salida; Amarillo: Se entrega a la torre de control.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Blanco: Para AESA; Amarillo: Para el despachador de combustible.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme al MOA 8.1.11.3 (pág. 442):\n- **Color blanco**: Permanece en el libro para referencia de pilotos y mecánicos y es retirado en bloque para archivo de mantenimiento.\n- **Color amarillo**: Retirado a la finalización del SET y se incluye en el sobre de vuelo.\n- **Color verde**: Retirado por mantenimiento.\n- **Color azul**: Se deja una copia en cada escala (hasta 2 por set).",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.11.3 (pág. 442): Copias y Destinatarios del ATL",
+        "R-CAME-01.01.002"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-047",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.11.5 - Anotación de Inspección en Tierra tras Excedencia Operacional (AOM 13-65)",
+    "stem": "Si tras una excedencia operacional en vuelo (ej. sobrevelocidad de flaps/slats o Vmo/Mmo) la tripulación realiza satisfactoriamente las comprobaciones en tierra según el procedimiento AOM 13-65 en una escala sin mecánicos, ¿qué texto exacto debe inscribir el Comandante en el campo COMMENTS/OBSERVATIONS del ATL?",
+    "options": [
+      {
+        "id": "A",
+        "text": "\"SATISFACTORY INSPECTION WAS PERFORMED I.A.W. AOM 13-65\".",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "\"AIRCRAFT CHECKED AND OK FOR NEXT FLIGHT\".",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "\"PILOT INSPECTION COMPLETED NIL DEFECTS\".",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "\"OVERSPEED INSPECTION CARRIED OUT BY CAPTAIN\".",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con el MOA 8.1.11.5 (pág. 445-446):\n*\"Una vez completadas satisfactoriamente las comprobaciones requeridas, el Comandante deberá dejar constancia en el ATL mediante una anotación en el campo COMMENTS / OBSERVATIONS, indicando el tipo de evento producido, los parámetros relevantes asociados al mismo y la siguiente referencia: 'SATISFACTORY INSPECTION WAS PERFORMED I.A.W. AOM 13-65'.\"*",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.11.5 (pág. 446): Registro de Excedencias Operacionales",
+        "Embraer 195-E2 AOM 13-65: Exceedances Ground Checks"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-048",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.11.5 - Registro de Aproximación LVO Fallida por Avería de Sistemas del Avión",
+    "stem": "Durante una aproximación CAT II/III, se produce un fallo en el sistema de guiado del avión que obliga a frustrar. ¿Cómo debe registrarse este evento en el ATL según el MOA 8.1.11.5?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Marcar con 'x' la casilla F (fallida), describir el fallo técnico en la casilla DEFECT DETAILS anteponiendo la reseña 'CAT II/III APP FAILED' y cumplimentar el reporte ACARS.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Anotar únicamente 'NIL' en defectos y comunicarlo verbalmente al sobrecargo.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No realizar ninguna anotación si el avión aterriza seguro en el segundo intento.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Registrarlo en la hoja de carga como un cambio de última hora (LMC).",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme al MOA 8.1.11.5 (pág. 445):\n*\"Si la consideración como fallida ha sido motivada por un fallo del sistema propio del avión, se debe anotar el defecto en la casilla correspondiente de DEFECT DETAILS... indicando la reseña 'CAT II/III APP FAILED'.\"*",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.11.5 (pág. 445): Reporte de Averías y Operación Post-vuelo LVO",
+        "MOA Binter ED06 RN27 - Subcapítulo 8.4"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-049",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.4.6.2.2 - Parámetros de Aproximación CAT II/III Satisfactoria",
+    "stem": "Según el MOA 8.4.6.2.2 y EASA GM1 SPA.LVO.105(g), ¿cuál es la tolerancia máxima de velocidad permitida entre 500 ft y el inicio de la recogida para considerar una aproximación CAT II/III como satisfactoria?",
+    "options": [
+      {
+        "id": "A",
+        "text": "+/- 5 kts respecto de la velocidad deseada (sin tener en cuenta fluctuaciones rápidas por turbulencia) y sin fallos en sistemas relevantes.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "+/- 15 kts.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "+/- 20 kts siempre que no se active el Stick Shaker.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cualquier velocidad entre Vref y Vfe.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con el MOA 8.4.6.2.2 (pág. 774):\n*\"Se considera una aproximación de categoría II/III como satisfactoria cuando:\nI. Desde 500 pies hasta el inicio de la recogida:\na. La velocidad se mantiene dentro de un margen de +/- 5 kts respecto de la velocidad deseada, sin tener en cuenta las fluctuaciones rápidas obtenidas de las turbulencias, y\nb. No falla ningún sistema relevante...\"*",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.4.6.2.2 (pág. 774): Consideraciones para Operaciones CAT II/III Satisfactorias",
+        "EASA GM1 SPA.LVO.105(g)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-050",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.4.6.2.2 - Zona Longitudinal de Toma de Contacto en Autoland CAT II/III",
+    "stem": "Para que un aterrizaje automático (Autoland) en CAT II/III sea considerado formalmente satisfactorio, ¿dentro de qué límites longitudinales de la pista debe producirse la toma de contacto según el MOA 8.4.6.2.2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Más allá de los 150 metros desde el umbral y antes del final de la zona de toma de contacto (TDZ, 750 metros desde el umbral).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Entre 0 y 300 metros desde el umbral.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En los primeros 1.000 metros de pista.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Exactamente sobre las marcas de punto de visada (aiming point) con tolerancia de ±10 metros.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme al MOA 8.4.6.2.2 (pág. 774):\n*\"Un aterrizaje se considera satisfactorio cuando:\n• La posición longitudinal del punto de toma de contacto está situada sobre la pista más allá de los 150 metros del umbral y antes del final de la zona de toma de contacto (TDZ) de la pista (750 metros desde el umbral)...\"*",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.4.6.2.2 (pág. 774): Criterios de Aterrizaje Satisfactorio LVO",
+        "EASA GM1 SPA.LVO.105(g)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-051",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.4.6.2.3 - Desviaciones Límites de Localizador y Senda en CAT II",
+    "stem": "Durante una aproximación CAT II establecida en el ILS, una vez rebasados los 200 pies de altura, ¿cuál es la desviación máxima permitida de senda de planeo y localizador antes de que sea mandatario ejecutar una aproximación frustrada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desviación de senda de planeo superior a 1 punto o desviación de localizador superior a 1/4 de punto.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Desviación de senda superior a 2 puntos o localizador superior a 1 punto.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Desviación de senda superior a 1/2 punto y localizador a escala completa.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No se permite ninguna desviación detectable (0 puntos).",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con el MOA 8.4.6.2.3 (pág. 774):\n*\"Una aproximación CAT II/III será interrumpida:\nIV. Cuando, una vez establecido en el ILS para CATII y tras rebasar 200 pies, la desviación de la senda de planeo exceda de 1 punto de senda o la desviación del localizador exceda de 1/4 de punto...\"*",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.4.6.2.3 (pág. 774): Criterios de Frustrada en CAT II/III",
+        "EASA Part-SPA.LVO"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-052",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.4.6.2.3 - Desviaciones Límites de Localizador y Senda en CAT III",
+    "stem": "Durante una aproximación CAT III en el tramo final, tras rebasar los 100 pies de altura, ¿cuándo es mandatorio ejecutar una aproximación frustrada por desviación de instrumentos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cuando la desviación de la senda de planeo exceda de 1/2 punto o la desviación del localizador exceda de 1/4 de punto.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cuando la senda de planeo exceda de 1 punto y el localizador de 1/2 punto.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Únicamente si la aeronave se sale de la pista antes de la recogida.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo si falla simultáneamente el radioaltímetro.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme al MOA 8.4.6.2.3 (pág. 775):\n*\"V. Cuando, una vez establecido en el ILS para CATIII y tras rebasar la altura de 100 pies, la desviación de la senda de planeo exceda de 1/2 punto (irrelevante durante la fase de aterrizaje) o la desviación del localizador exceda de 1/4 de punto, tal y como aparece en el indicador del ILS.\"*",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.4.6.2.3 (pág. 775): Criterios de Frustrada en CAT III",
+        "EASA Part-SPA.LVO"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-053",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.4.7.2 - Notificación de Pista Libre tras Aterrizaje en Baja Visibilidad",
+    "stem": "Tras efectuar un aterrizaje en CAT II o CAT III en condiciones LVP, ¿cuándo debe la tripulación transmitir la comunicación de pista libre (Runway Vacated) a la torre de control?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cuando la proyección de la cola del avión haya rebasado el punto del área sensible donde las luces de rodadura dejan de ser alternadas ámbar/verde y pasan a ser todas verdes.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Inmediatamente cuando el tren de morro abandone el asfalto de la pista activa.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En cuanto la velocidad del avión baje de 30 nudos durante la deceleración.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Al alcanzar la calle de rodaje principal independientemente del color de las luces.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con el MOA 8.4.7.2 (pág. 776):\n*\"Tras el aterrizaje en categoría II/III se debe retrasar la comunicación de pista libre hasta que el avión haya despejado el área sensible cuando la proyección de la cola del avión rebasa el punto donde las luces de rodadura dejan de ser una sucesión de luces ámbar y verde y pasan a ser todas verdes.\"*",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.4.7.2 (pág. 776): Procedimientos Adicionales de los Pilotos en LVO",
+        "OACI Doc 9476 / Doc 4444"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-054",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.3.7 (Tabla 11) - Fallo de Radiobaliza Exterior en Aproximación ILS CAT I",
+    "stem": "Según la Tabla 11 del MOA 8.1.3.7 (Equipo averiado o degradado: efecto en mínimos de aterrizaje), si la Radiobaliza Exterior (Outer Marker) está inoperativa en una aproximación ILS CAT I, ¿cuál es el efecto en los mínimos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No se permite la aproximación CAT I excepto si la altura o senda de planeo puede verificarse usando otros medios (ej. DME o comprobación de altura a 1.000 ft).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Sin efecto en ningún caso, pudiendo realizarse la aproximación sin condiciones adicionales.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aumenta la DA en 100 ft y el RVR en 400 m de forma obligatoria.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La aproximación queda automáticamente degradada a Circling visual.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme a la Tabla 11 del MOA 8.1.3.7 (pág. 353):\n*\"Radiobaliza exterior: Para ILS CAT-I: No se permite excepto si la altura/senda de planeo puede verificarse usando otros medios (p.e.: DME o chequeo de altura a 1000 ft).\"*",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.3.7 (pág. 353): Tabla 11 - Efecto de Equipos Averiados",
+        "EASA Part-CAT.OP.MPA.110"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-055",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.3.6.3.7 - Parámetros de Diseño del Área de Maniobra Visual de Circling",
+    "stem": "De acuerdo con el MOA 8.1.3.6.3.7 y OACI PANS-OPS (Doc 8168 Vol II), ¿cuáles son las hipótesis de diseño de viento y alabeo utilizadas para calcular los arcos del área protegida de maniobra visual en aproximaciones en circuito?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Un viento de 25 kt durante el viraje y un alabeo medio de 20° o un régimen de 3° por segundo (lo que requiera menor alabeo).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Viento en calma y alabeo fijo de 30°.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Viento de 15 kt y alabeo máximo de 15°.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Viento de 40 kt y alabeo de 25°.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con el MOA 8.1.3.6.3.7 (pág. 352):\n*\"Los radios de estos arcos dependen de: La categoría de aeronave; La velocidad asociada; Un viento de 25 KTs durante el viraje, y Un alabeo medio de 20º o 3º por segundo, lo que requiera menor alabeo (OACI PANS OPS Doc 8168 VOL II).\"*",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.3.6.3.7 (pág. 352): Parámetros de Construcción del Área Visual",
+        "OACI Doc 8168 (PANS-OPS) Vol II"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-056",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.3.6.3.7 - Velocidades Máximas de Circling por Categoría de Aeronave",
+    "stem": "¿Cuáles son las velocidades máximas indicadas (IAS) prescritas en el MOA 8.1.3.6.3.7 para mantenerse dentro del área protegida de aproximación en circuito para las Categorías B y C?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Categoría B: 135 kt; Categoría C: 180 kt.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Categoría B: 120 kt; Categoría C: 160 kt.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Categoría B: 150 kt; Categoría C: 200 kt.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Categoría B: 100 kt; Categoría C: 140 kt.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme a la tabla del MOA 8.1.3.6.3.7 (pág. 352):\n- **CAT A**: 100 kt\n- **CAT B**: **135 kt**\n- **CAT C**: **180 kt**\n- **CAT D**: 205 kt",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.3.6.3.7 (pág. 352): Velocidades Máximas de Circling",
+        "OACI Doc 8168"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-057",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.8.2.1 - Periodo Reglamentario de Pesaje y Variación de Masa/Centrado",
+    "stem": "Según el MOA 8.1.8.2.1 y la normativa EASA CAT.POL.MAB.100, ¿con qué frecuencia debe pesarse cada aeronave de la flota y qué tolerancia de variación acumulada exige una actualización inmediata?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mediante una pesada cada 4 años, o cuando las modificaciones en el registro superen el 0,5% de la masa máxima de aterrizaje (MLM) o el 0,5% de la cuerda media aerodinámica (%MAC).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cada 12 meses sin excepciones.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cada 2 años o si el peso varía más de 500 kg.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo cuando la aeronave se someta a un cambio de pintura completo.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con el MOA 8.1.8.2.1 (pág. 394/1014):\n*\"Establecerá la masa y el CG de cada aeronave mediante una pesada cada 4 años... garantizando que nunca se supere el 0.5% del MLM o el 0.5% de la MAC sin haber actualizado el peso e índice operativo de la aeronave.\"*",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.8.2.1: Requisitos de Pesaje de Aeronaves",
+        "EASA Part-CAT.POL.MAB.100"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-058",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.10.3.2 - Anotación Obligatoria en OFP en Espacio RVSM",
+    "stem": "Durante el vuelo en espacio aéreo con Separación Vertical Mínima Reducida (RVSM), ¿qué anotación y con qué periodicidad debe registrar la tripulación técnica en el Plan de Vuelo Operacional (OFP) según el MOA 8.1.10.3.2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "La reseña \"RVSM OK\" junto a la anotación del combustible consumido a intervalos de 60 minutos.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El valor del altímetro primario cada 15 minutos.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La firma de ambos pilotos al cruzar cada punto de notificación obligatorio.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El código transponder asignado en cada cambio de sector ATC.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme al MOA 8.1.10.3.2 (pág. 440):\n*\"Junto a la anotación del combustible consumido la tripulación anotará la reseña 'RVSM OK' a intervalo de 60 minutos.\"*",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.10.3.2 (pág. 440): Cumplimentación del Plan de Vuelo Operacional",
+        "EASA Part-SPA.RVSM"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-059",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.7.3.1 - Periodo de Conservación de Datos de Combustible y FDM",
+    "stem": "¿Durante cuánto tiempo garantiza Binter Airlines el almacenamiento y custodia de los datos relevantes de combustible y registros FDM según el MOA 8.1.7.3.1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Al menos 2 años.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "3 meses.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "5 años.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "6 meses.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con el MOA 8.1.7.3.1 (pág. 391):\n*\"Binter Airlines garantiza la integridad, disponibilidad, continuidad y precisión de los datos relevantes de combustible, recopilados en la anterior tabla, y asegura que se almacenen durante al menos 2 años.\"*",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.7.3.1 (pág. 391): Monitorización de Datos de Combustible",
+        "EASA Part-CAT.GEN.MPA.180"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-060",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.7.3.4 - Comprobación Previa de Niveles de Aceite en el ATL",
+    "stem": "Respecto a las cantidades de aceite por motor al hacerse cargo de la aeronave, ¿qué comprobación es responsabilidad de la tripulación de vuelo según el MOA 8.1.7.3.4?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Comprobar que las cantidades de aceite hayan sido controladas al menos una vez en los últimos dos días por personal de mantenimiento a través de la entrada correspondiente en el Libro Técnico de Vuelo (ATL).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Realizar una medición manual con varilla en cada escala intermedia.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Rellenar personalmente los depósitos de aceite antes del primer vuelo del día.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Calcular el consumo horario estimado y sumarlo al plan de vuelo operacional.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme al MOA 8.1.7.3.4 (pág. 392):\n*\"No obstante la tripulación de vuelo será responsable de comprobar que las cantidades de aceite por motor en el momento de hacerse cargo de la aeronave hayan sido controladas al menos una vez en los últimos dos días por personal de mantenimiento a través de la entrada en Libro Técnico de Vuelo (Technical Log)...\"*",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.7.3.4 (pág. 392): Control y Registro de Aceite",
+        "EASA Part-M"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-061",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.4.10 - Restablecimiento de Capacidad CAT II/III tras Mantenimiento",
+    "stem": "Tras corregirse una avería que causó la degradación del estado CAT II/III del avión, el personal de mantenimiento solicita un vuelo de verificación. Si la aproximación simulada resulta satisfactoria, ¿qué debe cumplimentar la tripulación según el MOA 8.4.10?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cumplimentar las casillas CAT II/III del ATL marcando con 'x' la casilla S (simulada), anotar 'Satisfactorio' en Observaciones, rellenar el formulario 'CAT II/III Status' para mantenimiento e informar vía ACARS mediante el formato 'POST FLIGHT REPORT'.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Únicamente notificarlo por radio a la oficina de operaciones sin dejar constancia escrita.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Emitir un Certificado de Aptitud para el Servicio (CRS) firmado por el Comandante.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar a AESA una nueva inspección presencial en el hangar.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con el MOA 8.4.10 (pág. 776):\n*\"Si la aproximación ha resultado satisfactoria, la tripulación de vuelo:\n- Cumplimentará las casillas correspondientes a CATII/III del ATL y marcará con una 'x' la casilla S conforme la aproximación fue simulada...\n- Anotará en la casilla de Observaciones que se ha realizado una aproximación simulada y satisfactoria.\n- Cumplimentará la casilla correspondiente del formulario 'CATII/III Status' confirmando los detalles de la aproximación para el personal certificador...\n- Informará a través del ACARS que se ha realizado una aproximación simulada y satisfactoria para upgrade del avión mediante el formato 'POST FLIGHT REPORT'.\"*",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.4.10 (pág. 776): Proceso de Degradación y Restablecimiento de Categoría LVO",
+        "EASA Part-SPA.LVO"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-062",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.3.1 / SERA.5005 - Velocidad Máxima en VFR Especial (SVFR)",
+    "stem": "Al realizar una operación en VFR Especial (SVFR) dentro de una zona de control (CTR), ¿cuál es la velocidad máxima indicada recomendada para facilitar la maniobrabilidad visual y la separación de obstáculos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "140 kt IAS.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "250 kt IAS.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "210 kt IAS.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Vref + 5 kt.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme a SERA.5010 y MOA 8.1.3.1:\nPara operaciones de VFR Especial en CTR se prescribe una velocidad máxima que no exceda de **140 kt IAS** para asegurar un radio de viraje reducido manteniendo libre de nubes y con la superficie a la vista con visibilidad $\\ge 1.500\\text{ m}$.",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.3.1: Reglas de Vuelo Visual (VFR)",
+        "Reglamento SERA.5010"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-063",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.3.2.7 - Límite General de Intentos de Aproximación en Mismo Aeródromo",
+    "stem": "Como principio general de seguridad operacional en Binter (MOA 8.3.2.7), ¿cuál es el número máximo de aproximaciones consecutivas que se permite realizar en el mismo aeródromo si la causa de las frustradas ha sido la meteorología bajo mínimos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "2 aproximaciones instrumentales (un tercer intento solo se autoriza ante una mejora meteorológica manifiesta y contrastada).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "4 aproximaciones siempre que se conserve el combustible hacia el alternativo.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "1 sola aproximación, siendo obligatorio el desvío inmediato tras la primera frustrada.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Tantas como permita el combustible de reserva sin límite de número de intentos.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con el MOA 8.3.2.7:\n*\"Como regla general, no se realizarán más de dos aproximaciones instrumentales consecutivas en el mismo aeródromo si la causa de la frustrada han sido las condiciones meteorológicas bajo mínimos. Solo se autoriza un tercer intento si se ha producido una mejora meteorológica manifiesta y contrastada.\"*",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.3.2.7: Política de Aproximaciones Frustradas y Desvíos",
+        "Manual de Formación de Mandos Binter"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-064",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA Cap. 7 (FTL) - Extensión de FDP por Discreción del Comandante",
+    "stem": "Conforme a EASA ORO.FTL.205(f) y el MOA Capítulo 7, ¿cuál es el límite máximo de prolongación de un Periodo de Actividad de Vuelo (FDP) que puede aplicar el Comandante por circunstancias imprevistas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hasta 2 horas en tripulación estándar (o hasta 3 horas en tripulación aumentada con descanso en vuelo).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Hasta 4 horas en cualquier tipo de tripulación.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Máximo 30 minutos.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "1 hora exclusivamente si el vuelo es diurno.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme a EASA Part-ORO.FTL.205(f) y MOA Capítulo 7:\nEn caso de circunstancias operativas imprevistas surgidas después del inicio del FDP, el Comandante podrá extender el FDP hasta en **2 horas** (o **3 horas** si se trata de tripulación reforzada/aumentada), previa consulta a todos los tripulantes.",
+      "references": [
+        "MOA Binter ED06 RN27 - Capítulo 7: FTL - Discreción del Comandante",
+        "EASA Part-ORO.FTL.205(f)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
+    "id": "CMD-EXP26-065",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA Cap. 1.4 - Conservación de Grabadores de Vuelo (FDR / CVR) tras Suceso",
+    "stem": "Tras un accidente o incidente grave sujeto a investigación, ¿cuál es la obligación del Comandante respecto a los registradores de vuelo (CVR / FDR) según el MOA Capítulo 1.4 y el Reglamento (UE) 996/2010?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desconectar los circuitos de alimentación de los registradores (o no reactivarlos tras el corte de motores) para preservar las grabaciones y evitar su sobreescritura, poniéndolos bajo custodia de la autoridad investigadora (CIAIAC/AESA).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Rebobinar y borrar las cintas antes de abandonar la cabina de vuelo.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Extraer físicamente las cajas negras y llevarlas a la sede central de la compañía.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Dejar los sistemas encendidos para que sigan grabando el audio de la escala.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con el Reglamento (UE) Nº 996/2010, EASA CAT.GEN.MPA.105 y MOA Capítulo 1.4 / Capítulo 11:\nTras la ocurrencia de un accidente o incidente grave, el Comandante debe asegurar la preservación inmediata de los registros de voz de cabina (CVR) y parámetros de vuelo (FDR), desconectando sus interruptores correspondientes o evitando su sobreescritura por ciclos de energía posteriores.",
+      "references": [
+        "MOA Binter ED06 RN27 - Capítulo 1.4: Responsabilidades del Comandante",
+        "MOA Binter ED06 RN27 - Capítulo 11: Investigación y Preservación de Pruebas",
+        "Reglamento (UE) Nº 996/2010"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "examen-convocatoria-anterior"
+  },
+  {
     "id": "CMD-EXAM-001",
     "subject_id": "cmd_dispatch_mel",
     "learning_objective": "MEL / DDPM - Procedimientos Operacionales (O)",

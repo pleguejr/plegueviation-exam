@@ -29,58 +29,35 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
   {
     id: 'alternates-basic',
     category: 'alternates',
-    title: 'Mínimos de Planificación: Plan Básico Estándar (Sin Variaciones)',
-    subtitle: 'Márgenes de seguridad para aeródromos alternativos sin aprobaciones especiales de despacho',
-    manualRef: 'MOA 8.1.7.2.6 (Tabla 1B) • EASA Part-CAT.OP.MPA.181',
-    badge: 'Despacho Alternativos',
-    description: 'Aplicable para la selección de aeródromo alternativo de despegue, en ruta (ERA) y de destino cuando el operador no cumple los requisitos para aplicar el Plan Básico con Variaciones. Se añaden incrementos a los mínimos de aproximación del aeródromo.',
-    warningAlert: 'En el Plan Básico Estándar, se exige un margen fijo de 200 ft / 800 m para Tipo B y 400 ft / 1.500 m para Tipo A, independientemente del número de aproximaciones o pistas.',
-    headers: ['Tipo de Aproximación Disponible en Alternativo', 'Incremento de Techo (Base de Nubes)', 'Incremento de Visibilidad / RVR', 'Condición Meteorológica Requerida'],
+    title: 'Tabla 1B: Mínimos de Planificación de aeródromos alternativos en ruta (ERA, FUEL ERA) y alternativo de destino. Plan básico',
+    subtitle: 'Limitaciones por visibilidad / techo de nubes (MOA 8.1.7.2.6)',
+    manualRef: 'MOA 8.1.7.2.6 (Tabla 1B) • AMC6 CAT.OP.MPA.182',
+    badge: 'Plan Básico',
+    description: 'Binter Airlines en caso de no poder aplicar los mínimos de planificación con variaciones utilizará mínimos de planificación del plan básico de combustible. Seleccionará un aeródromo como aeródromo alternativo de destino o alternativo en ruta por combustible (FUEL ERA) cuando los informes y/o pronósticos meteorológicos apropiados (ETA ± 1 HR) indiquen que las condiciones meteorológicas estarán en o por encima de los mínimos de planificación de la Tabla 1B.',
+    warningAlert: 'Limitaciones por viento: Las limitaciones por viento se deben aplicar considerando las condiciones de la pista (seca, mojada o contaminada), según tabla apartado MOA 8.1.7.2.8.',
+    headers: ['Tipo de aproximación', 'Base del techo de nubes o visibilidad vertical', 'RVR/VIS'],
     rows: [
       {
-        col1: 'Aproximación Tipo B (CAT I / ILS de Precisión) — 1 sola en uso',
+        col1: 'Aproximaciones instrumentales Tipo B',
         col2: 'DA/H + 200 ft',
         col3: 'RVR/VIS + 800 m',
-        col4: 'Techo ≥ DA/H + 200 ft | Visibilidad/RVR ≥ Mínimo + 800 m',
-        highlight: false,
-        notes: 'Aproximación de precisión tradicional 3D con mínimos estándar de 200 ft.'
+        highlight: false
       },
       {
-        col1: 'Aproximación Tipo B — 2 o más pistas separadas',
-        col2: 'DA/H + 200 ft',
-        col3: 'RVR/VIS + 800 m',
-        col4: 'Techo ≥ DA/H + 200 ft | Visibilidad/RVR ≥ Mínimo + 800 m',
-        highlight: false,
-        notes: 'En el Plan Básico no hay reducción por disponer de dos pistas separadas.'
+        col1: 'Aproximaciones instrumentales Tipo A',
+        col2: 'DA/H o MDA/H + 400 ft',
+        col3: 'RVR/VIS + 1 500 m',
+        highlight: false
       },
       {
-        col1: 'Aproximación Tipo A (No Precisión / 2D) — 1 sola en uso',
+        col1: 'Aproximaciones en circuito',
         col2: 'MDA/H + 400 ft',
-        col3: 'RVR/VIS + 1.500 m',
-        col4: 'Techo ≥ MDA/H + 400 ft | Visibilidad/RVR ≥ Mínimo + 1.500 m',
-        highlight: false,
-        notes: 'Aproximación basada en VOR, NDB o LNAV con mínimos 2D.'
-      },
-      {
-        col1: 'Aproximación Tipo A — 2 o más basadas en ayudas distintas',
-        col2: 'MDA/H + 400 ft',
-        col3: 'RVR/VIS + 1.500 m',
-        col4: 'Techo ≥ MDA/H + 400 ft | Visibilidad/RVR ≥ Mínimo + 1.500 m',
-        highlight: false,
-        notes: 'No aplica descuento en el Plan Básico estándar.'
-      },
-      {
-        col1: 'Aproximación en Circuito (Circling Approach)',
-        col2: 'MDA/H + 400 ft',
-        col3: 'VIS + 1.500 m',
-        col4: 'Techo ≥ MDA/H + 400 ft | Visibilidad ≥ Mínimo + 1.500 m',
-        highlight: true,
-        notes: 'Siempre requiere visibilidad meteorológica (VIS), no RVR.'
+        col3: 'VIS + 1 500 m',
+        highlight: true
       }
     ],
     extraNotes: [
-      'El pronóstico meteorológico (TAF / METAR) para la hora prevista de llegada (ETA) ± 1 hora debe ser igual o superior a los mínimos calculados.',
-      'El término "pistas separadas" exige superficies de aterrizaje distintas que puedan ser utilizadas simultáneamente y con procedimientos de aproximación independientes.'
+      'Limitaciones por viento: Las limitaciones por viento se deben aplicar considerando las condiciones de la pista (seca, mojada o contaminada), según tabla apartado MOA 8.1.7.2.8.'
     ]
   },
 
@@ -88,66 +65,56 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
   {
     id: 'alternates-variations',
     category: 'alternates',
-    title: 'Mínimos de Planificación: Plan Básico con Variaciones Operacionales',
-    subtitle: 'Márgenes reducidos y créditos operacionales de Binter Canarias',
-    manualRef: 'MOA 8.1.7.2.5 (Tabla 1A) • EASA Part-SPA.LVO',
-    badge: 'Despacho Lido / Binter Ops',
-    description: 'Tabla oficial autorizada a Binter Canarias en sus Especificaciones de Operación (OpSpecs). Permite optimizar la selección de aeródromos alternativos reduciendo los márgenes adicionales requeridos gracias a la tecnología de monitorización y despacho de compañía.',
-    warningAlert: 'Requisitos indispensables para aplicar esta tabla: 1) Flight Monitoring en tiempo real desde el CCO, 2) Aprobación LVO en OpSpecs, 3) Software automático de despacho (Lido Flight).',
-    headers: ['Instalaciones y Aproximaciones Disponibles', 'Incremento de Techo (Base Nubes)', 'Incremento Visibilidad / RVR', 'Mínimo Operacional Resultante'],
+    title: 'Tabla 1A: Mínimos de Planificación de aeródromos alternativos en ruta (ERA, FUEL ERA) y alternativo de destino. Plan básico con variaciones',
+    subtitle: 'Plan básico con variaciones (MOA 8.1.7.2.5)',
+    manualRef: 'MOA 8.1.7.2.5 (Tabla 1A) • AMC8 / AMC9 CAT.OP.MPA.182',
+    badge: 'Plan Básico con Variaciones',
+    description: 'Binter Airlines puede utilizar mínimos de planificación reducidos para aeródromo alternativo en ruta (ERA), alternativo en ruta por combustible (Fuel ERA) y aeródromo alternativo de destino, de acuerdo con el plan básico con variaciones. Para poder acogerse a esta variación, Binter Airlines dispone de un sistema de planificación de vuelo automático adecuado y ha establecido un sistema de control operacional que incluye monitorización del vuelo (Flight Monitoring) y dispone de aprobación de operaciones de baja visibilidad (operaciones LVO).',
+    warningAlert: 'Nota: se podrá seleccionar la fila de mínimos de planificación más ventajosos. Por ejemplo, un aeródromo con dos aproximaciones tipo B: una CAT3 (0 ft/75 m) otra CAT1 (200 ft/550 m). Se podrán seleccionar para planificación los mínimos CAT3 (0 + 150 ft / 75 + 450 m) en vez de los mínimos CAT1 (200 + 100 ft / 550 + 300 m).',
+    headers: ['Tipo de aproximación', 'Techo en el aeródromo (base de nubes o visibilidad vertical)', 'RVR/VIS'],
     rows: [
       {
-        col1: 'Dos o más aproximaciones Tipo B (ILS / GLS / MLS) en uso a dos pistas separadas',
-        col2: 'DA/H + 100 ft',
-        col3: 'RVR + 300 m',
-        col4: 'Techo ≥ DA/H + 100 ft | RVR ≥ Mínimo CAT I + 300 m (ej: 550 m + 300 m = 850 m)',
-        highlight: true,
-        notes: 'Máxima ventaja operacional en aeropuertos con pistas paralelas independientes.'
+        col1: 'Dos o más operaciones de aproximación por instrumentos del tipo B en uso a dos pistas separadas***',
+        col2: 'DA/H* + 100 ft',
+        col3: 'RVR** + 300 m',
+        highlight: true
       },
       {
-        col1: 'Una sola aproximación Tipo B en uso (o dos aproximaciones a la misma pista)',
+        col1: 'Una operación de aproximación por instrumentos del tipo B en uso',
         col2: 'DA/H + 150 ft',
         col3: 'RVR + 450 m',
-        col4: 'Techo ≥ DA/H + 150 ft | RVR ≥ Mínimo CAT I + 450 m (ej: 550 m + 450 m = 1.000 m)',
-        highlight: false,
-        notes: 'Caso habitual de aeropuertos con una sola pista instrumental CAT I.'
+        highlight: false
       },
       {
-        col1: 'Aproximación 3D Tipo A con mínimos de DH ≤ 200 ft (ILS / LPV / GLS / RNP con BARO-VNAV)',
+        col1: 'Operación de aproximación 3D por instrumentos tipo A, asociada a una ayuda con mínimos de 200 ft o menos',
         col2: 'DA/H + 200 ft',
         col3: 'RVR/VIS + 800 m',
-        col4: 'Techo ≥ DA/H + 200 ft | RVR/VIS ≥ Mínimo + 800 m',
-        highlight: false,
-        notes: 'Aproximaciones con guiado vertical de precisión o APV.'
+        highlight: false
       },
       {
-        col1: 'Dos o más aproximaciones Tipo A (2D) utilizables basadas en radioayudas distintas',
-        col2: 'DA/H o MDA/H + 200 ft',
-        col3: 'RVR/VIS + 1.000 m',
-        col4: 'Techo ≥ MDA/H + 200 ft | RVR/VIS ≥ Mínimo + 1.000 m',
-        highlight: false,
-        notes: 'Ej: Pista con aproximación VOR y otra aproximación RNP independiente.'
+        col1: 'Dos o más operaciones*** de aproximación por instrumentos del tipo A en uso, cada una de ellas basada en una ayuda de navegación distinta',
+        col2: 'DA/H o MDA/H* + 200 ft',
+        col3: 'RVR/VIS** + 1 000 m',
+        highlight: false
       },
       {
-        col1: 'Una sola aproximación Tipo A (2D / No Precisión) en uso',
+        col1: 'Una operación de aproximación por instrumentos del tipo A en uso',
         col2: 'DA/H o MDA/H + 400 ft',
-        col3: 'RVR/VIS + 1.500 m',
-        col4: 'Techo ≥ MDA/H + 400 ft | RVR/VIS ≥ Mínimo + 1.500 m',
-        highlight: false,
-        notes: 'Aeródromos con una sola radioayuda básica (VOR o NDB).'
+        col3: 'RVR/VIS + 1 500 m',
+        highlight: false
       },
       {
-        col1: 'Aproximación en Circuito (Circling Approach)',
+        col1: 'Aproximaciones en circuito',
         col2: 'MDA/H + 400 ft',
-        col3: 'VIS + 1.500 m',
-        col4: 'Techo ≥ MDA/H Circling + 400 ft | Visibilidad ≥ Mínimo + 1.500 m',
-        highlight: false,
-        notes: 'Nunca se aplica sobre RVR, solo sobre visibilidad meteorológica general.'
+        col3: 'VIS + 1 500 m',
+        highlight: false
       }
     ],
     extraNotes: [
-      'Validez temporal: Las condiciones previstas en el alternativo deben cumplirse desde 1 hora antes hasta 1 hora después de la hora estimada de llegada (ETA ± 1 h).',
-      'Para Alternativo de Despegue: Las condiciones deben ser iguales o superiores a los mínimos de aterrizaje aplicables en ese aeródromo.'
+      '* El más alto de la DA/H o MDA/H en uso.',
+      '** El más alto de la RVR o VIS en uso.',
+      '*** Para cada vuelo IFR, el operador se asegurará de que haya suficientes medios disponibles para navegar y aterrizar en el aeródromo de destino o en cualquier aeródromo alternativo de destino en caso de pérdida de capacidad (GNSS) para la operación de aproximación y aterrizaje prevista.',
+      'Mínimos de planificación de viento cruzado: Las limitaciones por viento se deben aplicar considerando las condiciones de la pista (seca, mojada o contaminada), según tabla apartado MOA 8.1.7.2.8.'
     ]
   },
 
