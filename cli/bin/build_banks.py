@@ -86,7 +86,7 @@ def compile_banks() -> int:
             "color": "violet"
         },
         "command-upgrade": {
-            "title": "Preparación Prueba de Comandante", 
+            "title": "Command Upgrade / Prueba de Comandante (Command Course)", 
             "icon": "ShieldCheck", 
             "color": "rose"
         },
@@ -98,6 +98,7 @@ def compile_banks() -> int:
     }
 
     subtopic_labels = {
+        "examen-convocatoria-anterior": "Command Course / Examen Convocatoria Anterior (Oficial + Satélites)",
         "moa": "Manual de Operaciones Parte A (MOA)",
         "mob": "Manual de Operaciones Parte B (MOB)",
         "procedimientos-operativos": "Procedimientos Operativos / SOPs",

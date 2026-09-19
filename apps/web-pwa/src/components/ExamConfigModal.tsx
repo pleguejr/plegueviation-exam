@@ -8,6 +8,7 @@ interface ExamConfigModalProps {
   onClose: () => void;
   onStartExam: (config: ExamConfig) => void;
   defaultCategory?: string;
+  defaultSubtopics?: string[];
   defaultMode?: ExamMode;
   defaultStrategy?: ExamSelectionStrategy;
 }
@@ -18,11 +19,15 @@ export const ExamConfigModal: React.FC<ExamConfigModalProps> = ({
   onClose,
   onStartExam,
   defaultCategory,
+  defaultSubtopics,
   defaultMode = 'practice',
   defaultStrategy = 'random'
 }) => {
   const [selectedCategories, setSelectedCategories] = useState<string[]>(
     defaultCategory ? [defaultCategory] : []
+  );
+  const [selectedSubtopics, setSelectedSubtopics] = useState<string[]>(
+    defaultSubtopics ? defaultSubtopics : []
   );
   const [mode, setMode] = useState<ExamMode>(defaultMode);
   const [strategy, setStrategy] = useState<ExamSelectionStrategy>(defaultStrategy);
@@ -34,6 +39,7 @@ export const ExamConfigModal: React.FC<ExamConfigModalProps> = ({
   const categories = manifest?.categories || [];
 
   const toggleCategory = (catId: string) => {
+    setSelectedSubtopics([]); // Reset subtopic filter when changing categories
     if (selectedCategories.includes(catId)) {
       setSelectedCategories(selectedCategories.filter((id) => id !== catId));
     } else {
@@ -43,15 +49,38 @@ export const ExamConfigModal: React.FC<ExamConfigModalProps> = ({
 
   const selectAllCategories = () => {
     setSelectedCategories(categories.map((c) => c.id));
+    setSelectedSubtopics([]);
   };
 
   const clearCategories = () => {
     setSelectedCategories([]);
+    setSelectedSubtopics([]);
+  };
+
+  const handleApplyPreset = (preset: 'command_course' | 'command_all' | 'fleet_e2' | 'all') => {
+    if (preset === 'command_course') {
+      setSelectedCategories(['command-upgrade']);
+      setSelectedSubtopics(['examen-convocatoria-anterior']);
+      setCount(90);
+    } else if (preset === 'command_all') {
+      setSelectedCategories(['command-upgrade']);
+      setSelectedSubtopics([]);
+      setCount(30);
+    } else if (preset === 'fleet_e2') {
+      setSelectedCategories(['fleet-e195e2']);
+      setSelectedSubtopics([]);
+      setCount(30);
+    } else {
+      setSelectedCategories([]);
+      setSelectedSubtopics([]);
+      setCount(20);
+    }
   };
 
   const handleStart = () => {
     const config: ExamConfig = {
       categories: selectedCategories,
+      subtopics: selectedSubtopics.length > 0 ? selectedSubtopics : undefined,
       count,
       mode,
       strategy,
@@ -244,6 +273,68 @@ export const ExamConfigModal: React.FC<ExamConfigModalProps> = ({
                 </button>
               </div>
             </div>
+
+            {/* Quick Presets Bar */}
+            <div className="flex flex-wrap gap-2 pb-1">
+              <button
+                type="button"
+                onClick={() => handleApplyPreset('command_course')}
+                className={`px-3 py-1.5 rounded-xl text-xs font-bold border transition-all flex items-center gap-1.5 ${
+                  selectedCategories.includes('command-upgrade') && selectedSubtopics.includes('examen-convocatoria-anterior')
+                    ? 'bg-rose-500/20 text-rose-300 border-rose-400 shadow-glow-rose'
+                    : 'bg-slate-900 text-slate-300 border-slate-800 hover:border-slate-700'
+                }`}
+              >
+                <Sparkles className="w-3.5 h-3.5 text-rose-400" />
+                <span>Command Course (90q)</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => handleApplyPreset('command_all')}
+                className={`px-3 py-1.5 rounded-xl text-xs font-bold border transition-all ${
+                  selectedCategories.length === 1 && selectedCategories.includes('command-upgrade') && selectedSubtopics.length === 0
+                    ? 'bg-rose-500/20 text-rose-300 border-rose-400 shadow-glow-rose'
+                    : 'bg-slate-900 text-slate-300 border-slate-800 hover:border-slate-700'
+                }`}
+              >
+                Prueba Mando Completa
+              </button>
+              <button
+                type="button"
+                onClick={() => handleApplyPreset('fleet_e2')}
+                className={`px-3 py-1.5 rounded-xl text-xs font-bold border transition-all ${
+                  selectedCategories.length === 1 && selectedCategories.includes('fleet-e195e2')
+                    ? 'bg-sky-500/20 text-sky-300 border-sky-400 shadow-glow-sky'
+                    : 'bg-slate-900 text-slate-300 border-slate-800 hover:border-slate-700'
+                }`}
+              >
+                Flota E195-E2
+              </button>
+              <button
+                type="button"
+                onClick={() => handleApplyPreset('all')}
+                className={`px-3 py-1.5 rounded-xl text-xs font-bold border transition-all ${
+                  selectedCategories.length === 0
+                    ? 'bg-emerald-500/20 text-emerald-300 border-emerald-400'
+                    : 'bg-slate-900 text-slate-300 border-slate-800 hover:border-slate-700'
+                }`}
+              >
+                Todo el Banco
+              </button>
+            </div>
+
+            {selectedSubtopics.length > 0 && (
+              <div className="p-2.5 rounded-xl bg-rose-950/40 border border-rose-500/30 text-xs text-rose-200 flex items-center justify-between">
+                <span>Filtro específico: <strong>Command Course / Examen Convocatoria Anterior</strong> (90 preguntas)</span>
+                <button
+                  type="button"
+                  onClick={() => setSelectedSubtopics([])}
+                  className="text-[10px] font-bold underline text-rose-400 hover:text-rose-300"
+                >
+                  Quitar filtro subtema
+                </button>
+              </div>
+            )}
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
               {categories.map((cat) => {

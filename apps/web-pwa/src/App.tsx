@@ -353,6 +353,7 @@ export function App() {
           <Dashboard
             onStartConfiguredExam={(params) => handleStartExam({
               categories: params.category ? [params.category] : [],
+              subtopics: params.subtopics,
               count: params.count || 20,
               mode: params.mode,
               strategy: params.strategy,

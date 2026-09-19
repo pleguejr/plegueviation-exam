@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { 
   Search, 
   Filter, 
@@ -44,6 +44,8 @@ interface QuestionExplorerProps {
   onStartFlashcards?: (params?: { category?: string }) => void;
   onGoToDashboard: () => void;
   initialSearchTerm?: string;
+  initialCategory?: string;
+  initialSubtopic?: string;
 }
 
 export const QuestionExplorer: React.FC<QuestionExplorerProps> = ({
@@ -54,11 +56,14 @@ export const QuestionExplorer: React.FC<QuestionExplorerProps> = ({
   onStartCustomQuiz,
   onStartFlashcards,
   onGoToDashboard,
-  initialSearchTerm = ''
+  initialSearchTerm = '',
+  initialCategory = 'all',
+  initialSubtopic = 'all'
 }) => {
   const [activeTab, setActiveTab] = useState<'difficult' | 'search' | 'flagged' | 'unseen' | 'flashcards' | 'review' | 'deleted'>('search');
   const [searchTerm, setSearchTerm] = useState(initialSearchTerm);
-  const [selectedCategory, setSelectedCategory] = useState<string>('all');
+  const [selectedCategory, setSelectedCategory] = useState<string>(initialCategory);
+  const [selectedSubtopic, setSelectedSubtopic] = useState<string>(initialSubtopic);
   const [expandedId, setExpandedId] = useState<string | null>(null);
   
   // Deleted questions state
@@ -92,6 +97,23 @@ export const QuestionExplorer: React.FC<QuestionExplorerProps> = ({
       setActiveTab('search');
     }
   }, [initialSearchTerm]);
+
+  const availableSubtopics = useMemo(() => {
+    if (!manifest) return [];
+    if (selectedCategory === 'all') {
+      const allSubs: { id: string; title: string; count: number; categoryTitle?: string }[] = [];
+      for (const cat of manifest.categories) {
+        if (cat.subtopics) {
+          for (const st of Object.values(cat.subtopics)) {
+            allSubs.push({ ...st, categoryTitle: cat.title });
+          }
+        }
+      }
+      return allSubs;
+    }
+    const cat = manifest.categories.find((c) => c.id === selectedCategory);
+    return cat && cat.subtopics ? Object.values(cat.subtopics) : [];
+  }, [manifest, selectedCategory]);
 
   const handleDeleteConfirm = async (q: Question, reason?: string) => {
     await deleteQuestionFromBank(q, reason);
@@ -164,13 +186,17 @@ export const QuestionExplorer: React.FC<QuestionExplorerProps> = ({
       (q.explanation?.text || '').toLowerCase().includes(qLower) ||
       q.options.some((o) => o.text.toLowerCase().includes(qLower));
 
-    // 3. Category
+    // 3. Category & Subtopic
     const matchesCategory = 
       selectedCategory === 'all' || 
       q._category === selectedCategory || 
       q.subject_id === selectedCategory;
 
-    return matchesSearch && matchesCategory;
+    const matchesSubtopic =
+      selectedSubtopic === 'all' ||
+      q._subtopic === selectedSubtopic;
+
+    return matchesSearch && matchesCategory && matchesSubtopic;
   });
 
   const filteredDeleted = deletedList.filter((d) => {
@@ -186,7 +212,11 @@ export const QuestionExplorer: React.FC<QuestionExplorerProps> = ({
       q._category === selectedCategory || 
       q.subject_id === selectedCategory;
 
-    return matchesSearch && matchesCategory;
+    const matchesSubtopic =
+      selectedSubtopic === 'all' ||
+      q._subtopic === selectedSubtopic;
+
+    return matchesSearch && matchesCategory && matchesSubtopic;
   });
 
   const filteredReviews = reviewList.filter((r) => {
@@ -203,7 +233,11 @@ export const QuestionExplorer: React.FC<QuestionExplorerProps> = ({
       q._category === selectedCategory || 
       q.subject_id === selectedCategory;
 
-    return matchesSearch && matchesCategory;
+    const matchesSubtopic =
+      selectedSubtopic === 'all' ||
+      q._subtopic === selectedSubtopic;
+
+    return matchesSearch && matchesCategory && matchesSubtopic;
   });
 
   const handleToggleFlag = async (qId: string, e: React.MouseEvent) => {
@@ -377,7 +411,7 @@ export const QuestionExplorer: React.FC<QuestionExplorerProps> = ({
 
       {/* 3. Filter & Search Controls */}
       <div className="bg-[#0e1933] border border-sky-500/20 rounded-2xl p-4 shadow-lg space-y-3">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
           
           <div className="relative">
             <Search className="w-4 h-4 absolute left-3.5 top-1/2 transform -translate-y-1/2 text-sky-400" />
@@ -385,10 +419,10 @@ export const QuestionExplorer: React.FC<QuestionExplorerProps> = ({
               type="text"
               placeholder={
                 activeTab === 'deleted'
-                  ? 'Buscar en eliminadas por ID o motivo...'
+                  ? 'Buscar en eliminadas...'
                   : activeTab === 'review'
-                  ? 'Buscar en preguntas a revisar por ID, motivo u observación...'
-                  : 'Buscar por ID, palabra clave o tema...'
+                  ? 'Buscar en a revisar...'
+                  : 'Buscar ID, palabra clave...'
               }
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
@@ -399,19 +433,37 @@ export const QuestionExplorer: React.FC<QuestionExplorerProps> = ({
           <div>
             <select
               value={selectedCategory}
-              onChange={(e) => setSelectedCategory(e.target.value)}
-              className="w-full px-3.5 py-2 rounded-xl bg-[#091224] border border-slate-700 text-white text-xs focus:outline-none focus:border-sky-400"
+              onChange={(e) => {
+                setSelectedCategory(e.target.value);
+                setSelectedSubtopic('all');
+              }}
+              className="w-full px-3.5 py-2 rounded-xl bg-[#091224] border border-slate-700 text-white text-xs focus:outline-none focus:border-sky-400 truncate"
             >
               <option value="all">
                 {activeTab === 'deleted'
-                  ? `Todas las categorías (${deletedList.length} eliminadas)`
+                  ? `Todas las categorías (${deletedList.length})`
                   : activeTab === 'review'
-                  ? `Todas las categorías (${reviewList.length} a revisar)`
-                  : `Todas las categorías (${questions.length} preguntas)`}
+                  ? `Todas las categorías (${reviewList.length})`
+                  : `Todos los Bancos (${questions.length})`}
               </option>
               {manifest?.categories.map((cat) => (
                 <option key={cat.id} value={cat.id}>
                   {cat.title} ({cat.total_questions})
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div>
+            <select
+              value={selectedSubtopic}
+              onChange={(e) => setSelectedSubtopic(e.target.value)}
+              className="w-full px-3.5 py-2 rounded-xl bg-[#091224] border border-slate-700 text-white text-xs focus:outline-none focus:border-sky-400 truncate"
+            >
+              <option value="all">Todos los Subtemas ({availableSubtopics.reduce((acc, s) => acc + s.count, 0)})</option>
+              {availableSubtopics.map((st) => (
+                <option key={st.id} value={st.id}>
+                  {st.title} ({st.count})
                 </option>
               ))}
             </select>

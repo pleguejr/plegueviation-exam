@@ -41,6 +41,7 @@ import { ComunicadosOpsPanel } from './ComunicadosOpsPanel';
 interface DashboardProps {
   onStartConfiguredExam: (params: {
     category?: string;
+    subtopics?: string[];
     mode: ExamMode;
     strategy: ExamSelectionStrategy;
     count?: number;
@@ -119,6 +120,32 @@ export const Dashboard: React.FC<DashboardProps> = ({
   }, [infoSearch, questions]);
 
   const infoSearchPreview = useMemo(() => infoSearchHits.slice(0, 12), [infoSearchHits]);
+
+  const commandCourseQuestions = useMemo(() => {
+    return questions.filter((q) => q._subtopic === 'examen-convocatoria-anterior');
+  }, [questions]);
+
+  const commandCourseStats = useMemo(() => {
+    let answered = 0;
+    let correct = 0;
+    let incorrect = 0;
+    for (const q of commandCourseQuestions) {
+      const s = statsMap[q.id];
+      if (s && s.timesAnswered > 0) {
+        answered++;
+        correct += s.timesCorrect;
+        incorrect += s.timesIncorrect;
+      }
+    }
+    const acc = (correct + incorrect) > 0 ? Math.round((correct / (correct + incorrect)) * 100) : 0;
+    return {
+      total: commandCourseQuestions.length,
+      answered,
+      correct,
+      incorrect,
+      accuracy: acc
+    };
+  }, [commandCourseQuestions, statsMap]);
 
   const handleResetStats = async () => {
     const confirmReset = window.confirm(
@@ -695,6 +722,138 @@ export const Dashboard: React.FC<DashboardProps> = ({
 
       </div>
 
+      {/* 🌟 BANNER DESTACADO: COMMAND COURSE & EXAMEN CONVOCATORIA ANTERIOR */}
+      <div className="command-course-hero-card rounded-3xl bg-gradient-to-br from-[#1a0b2e] via-[#0f172a] to-[#070e1e] border-2 border-rose-500/40 p-6 sm:p-7 shadow-2xl space-y-5 relative overflow-hidden">
+        <div className="absolute -right-16 -top-16 w-64 h-64 bg-rose-500/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -left-16 -bottom-16 w-64 h-64 bg-sky-500/10 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 relative z-10">
+          <div className="space-y-1.5">
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-rose-500/20 text-rose-300 border border-rose-500/40 flex items-center gap-1">
+                <Sparkles className="w-3 h-3 text-rose-400" />
+                <span>Banco Especial · Command Course</span>
+              </span>
+              <span className="text-[10px] font-mono text-slate-400">
+                25 Oficiales + 65 Satélites = 90 Reactivos
+              </span>
+            </div>
+            <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+              <ShieldCheck className="w-6 h-6 text-rose-400" />
+              <span>Examen Convocatoria Anterior (Command Course)</span>
+            </h2>
+            <p className="text-xs text-slate-300 max-w-2xl leading-relaxed">
+              Basado fielmente en el examen real de ascenso a comandante (<strong className="text-rose-300">Command Course Exam</strong>) con todas las soluciones verificadas y ampliación temática integral de los capítulos MOA 8.1–8.8, DDPM, MEL y procedimientos de compañía.
+            </p>
+          </div>
+
+          <div className="flex items-center gap-3 bg-black/50 px-4 py-3 rounded-2xl border border-rose-500/30 shrink-0">
+            <div className="text-right">
+              <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Progreso Banco</span>
+              <span className="text-lg sm:text-xl font-black text-rose-400 font-mono">
+                {commandCourseStats.answered} / {commandCourseStats.total}
+              </span>
+            </div>
+            <div className="text-right pl-3 border-l border-slate-800">
+              <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Precisión</span>
+              <span className={`text-lg sm:text-xl font-black font-mono ${
+                commandCourseStats.accuracy >= 75 ? 'text-emerald-400' : commandCourseStats.accuracy > 0 ? 'text-amber-400' : 'text-slate-400'
+              }`}>
+                {commandCourseStats.accuracy}%
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* Quick Launch Buttons Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 relative z-10 pt-1">
+          {/* 1. Test 25 Oficiales */}
+          <button
+            type="button"
+            onClick={() => {
+              const officialIds = commandCourseQuestions.filter((q) => q.id.startsWith('MOA-CMD-') && !q.id.includes('SAT')).map((q) => q.id);
+              if (onPracticeQuestions && officialIds.length > 0) {
+                onPracticeQuestions(officialIds);
+              } else {
+                onStartConfiguredExam({ category: 'command-upgrade', subtopics: ['examen-convocatoria-anterior'], count: 25, mode: 'simulation', strategy: 'random' });
+              }
+            }}
+            className="p-3.5 rounded-2xl bg-rose-950/40 hover:bg-rose-900/50 border border-rose-500/40 hover:border-rose-400 text-left transition-all group flex flex-col justify-between shadow-md active:scale-95"
+          >
+            <div className="flex items-center justify-between text-xs font-black text-rose-300 mb-1">
+              <span className="flex items-center gap-1.5">
+                <Target className="w-4 h-4 text-rose-400" />
+                <span>Examen Oficial (25)</span>
+              </span>
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+            </div>
+            <p className="text-[11px] text-slate-300">
+              Las 25 preguntas originales del examen oficial de convocatoria.
+            </p>
+          </button>
+
+          {/* 2. Banco Completo (90) */}
+          <button
+            type="button"
+            onClick={() => onStartConfiguredExam({ category: 'command-upgrade', subtopics: ['examen-convocatoria-anterior'], count: 90, mode: 'practice', strategy: 'random' })}
+            className="p-3.5 rounded-2xl bg-sky-950/40 hover:bg-sky-900/50 border border-sky-500/40 hover:border-sky-400 text-left transition-all group flex flex-col justify-between shadow-md active:scale-95"
+          >
+            <div className="flex items-center justify-between text-xs font-black text-sky-300 mb-1">
+              <span className="flex items-center gap-1.5">
+                <Sparkles className="w-4 h-4 text-sky-400" />
+                <span>Banco Completo (90)</span>
+              </span>
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+            </div>
+            <p className="text-[11px] text-slate-300">
+              25 oficiales + 65 satélites con feedback y referencias inmediatas.
+            </p>
+          </button>
+
+          {/* 3. Flashcards */}
+          <button
+            type="button"
+            onClick={() => onStartFlashcards({ category: 'command-upgrade' })}
+            className="p-3.5 rounded-2xl bg-amber-950/40 hover:bg-amber-900/50 border border-amber-500/40 hover:border-amber-400 text-left transition-all group flex flex-col justify-between shadow-md active:scale-95"
+          >
+            <div className="flex items-center justify-between text-xs font-black text-amber-300 mb-1">
+              <span className="flex items-center gap-1.5">
+                <Zap className="w-4 h-4 text-amber-400 fill-current" />
+                <span>Flashcards Mando</span>
+              </span>
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+            </div>
+            <p className="text-[11px] text-slate-300">
+              Memorización de datos clave de combustible, LVO, DDPM y límites.
+            </p>
+          </button>
+
+          {/* 4. Explorar Reactivos */}
+          <button
+            type="button"
+            onClick={() => {
+              if (onOpenQuestionSearch) {
+                onOpenQuestionSearch('MOA-CMD-');
+              } else {
+                onNavigateTab('explorer');
+              }
+            }}
+            className="p-3.5 rounded-2xl bg-emerald-950/40 hover:bg-emerald-900/50 border border-emerald-500/40 hover:border-emerald-400 text-left transition-all group flex flex-col justify-between shadow-md active:scale-95"
+          >
+            <div className="flex items-center justify-between text-xs font-black text-emerald-300 mb-1">
+              <span className="flex items-center gap-1.5">
+                <Search className="w-4 h-4 text-emerald-400" />
+                <span>Explorar las 90</span>
+              </span>
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+            </div>
+            <p className="text-[11px] text-slate-300">
+              Ver enunciados, opciones y explicaciones detalladas del examen.
+            </p>
+          </button>
+        </div>
+      </div>
+
       {/* 4. Categorías de Manuales y Flota */}
       <div className="space-y-4 pt-2">
         <div className="flex items-center justify-between">
@@ -764,9 +923,15 @@ export const Dashboard: React.FC<DashboardProps> = ({
 
                   <div className="flex flex-wrap gap-1 pt-1">
                     {Object.values(cat.subtopics || {}).map((st) => (
-                      <span key={st.id} className="text-[10px] px-2 py-0.5 rounded bg-[#091224] text-slate-300 border border-slate-800">
+                      <button
+                        key={st.id}
+                        type="button"
+                        onClick={() => onStartConfiguredExam({ category: cat.id, subtopics: [st.id], mode: 'practice', strategy: 'random', count: Math.min(st.count, 25) })}
+                        className="text-[10px] px-2 py-0.5 rounded bg-[#091224] hover:bg-sky-950/80 text-slate-300 hover:text-sky-300 border border-slate-800 hover:border-sky-500/40 transition-all text-left"
+                        title={`Hacer test de ${st.title} (${st.count} preguntas)`}
+                      >
                         {st.title} ({st.count})
-                      </span>
+                      </button>
                     ))}
                   </div>
                 </div>
