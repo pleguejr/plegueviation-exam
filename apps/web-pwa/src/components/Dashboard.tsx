@@ -29,7 +29,9 @@ import {
   Cpu,
   Layers,
   FileText,
-  Search
+  Search,
+  ChevronDown,
+  ChevronUp
 } from 'lucide-react';
 import { Question, BankManifest, QuestionStats, ExamSession, ExamMode, ExamSelectionStrategy } from '../types';
 import { loadAllQuestions, loadManifest } from '../services/questionsService';
@@ -53,7 +55,7 @@ interface DashboardProps {
   onNavigateTab: (tab: 'explorer' | 'reports' | 'settings' | 'procedures' | 'tables') => void;
   onOpenImporter: () => void;
   onOpenQuestionSearch?: (term: string) => void;
-  onPracticeQuestions?: (questionIds: string[]) => void;
+  onPracticeQuestions?: (questionIds: string[], mode?: ExamMode) => void;
 }
 
 export const Dashboard: React.FC<DashboardProps> = ({
@@ -73,6 +75,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
   const [history, setHistory] = useState<ExamSession[]>([]);
   const [loading, setLoading] = useState(true);
   const [showMnemonicModal, setShowMnemonicModal] = useState(false);
+  const [showStudyGuide, setShowStudyGuide] = useState(false);
   const [infoSearch, setInfoSearch] = useState('');
 
   const loadData = async () => {
@@ -732,15 +735,13 @@ export const Dashboard: React.FC<DashboardProps> = ({
             <div className="flex items-center gap-2 flex-wrap">
               <span className="command-course-badge px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-rose-500/20 text-rose-300 border border-rose-500/40 flex items-center gap-1">
                 <Sparkles className="w-3 h-3 text-rose-400" />
-                <span>Banco Especial · Command Course</span>
-              </span>
-              <span className="command-course-meta text-[10px] font-mono text-slate-400">
-                25 Oficiales + 65 Satélites = 90 Reactivos
+                <span>25 Oficiales (en Inglés) + 65 Satélites = 90 Reactivos</span>
               </span>
             </div>
-            <p className="command-course-desc text-xs text-slate-300 max-w-2xl leading-relaxed">
-              Basado fielmente en el examen real de ascenso a comandante (<strong className="command-course-accent text-rose-300">Command Course Exam</strong>) con todas las soluciones verificadas y ampliación temática integral de los capítulos MOA 8.1–8.8, DDPM, MEL y procedimientos de compañía.
-            </p>
+            <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2.5">
+              <ShieldCheck className="w-6 h-6 text-rose-400" />
+              <span>Banco Especial - Command Course</span>
+            </h2>
           </div>
 
           <div className="command-course-stats flex items-center gap-3 bg-black/50 px-4 py-3 rounded-2xl border border-rose-500/30 shrink-0">
@@ -763,11 +764,11 @@ export const Dashboard: React.FC<DashboardProps> = ({
 
         {/* Quick Launch Buttons Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 relative z-10 pt-1">
-          {/* 1. Test 25 Oficiales */}
+          {/* 1. Test 25 Oficiales (En Inglés) */}
           <button
             type="button"
             onClick={() => {
-              const officialIds = commandCourseQuestions.filter((q) => q.id.startsWith('MOA-CMD-') && !q.id.includes('SAT')).map((q) => q.id);
+              const officialIds = commandCourseQuestions.filter((q) => q.id.startsWith('CMD-EXAM26-')).map((q) => q.id);
               if (onPracticeQuestions && officialIds.length > 0) {
                 onPracticeQuestions(officialIds);
               } else {
@@ -784,7 +785,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
             </div>
             <p className="command-course-action-desc text-[11px] text-slate-300">
-              Las 25 preguntas originales del examen oficial de convocatoria.
+              Las 25 preguntas originales en inglés del examen real de convocatoria.
             </p>
           </button>
 
@@ -829,7 +830,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
             type="button"
             onClick={() => {
               if (onOpenQuestionSearch) {
-                onOpenQuestionSearch('MOA-CMD-');
+                onOpenQuestionSearch('CMD-EXAM26-');
               } else {
                 onNavigateTab('explorer');
               }
@@ -839,7 +840,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
             <div className="command-course-action-title flex items-center justify-between text-xs font-black text-emerald-300 mb-1">
               <span className="flex items-center gap-1.5">
                 <Search className="w-4 h-4 text-emerald-400" />
-                <span>Explorar las 90</span>
+                <span>Explorar las 25 / 90</span>
               </span>
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
             </div>
@@ -847,6 +848,152 @@ export const Dashboard: React.FC<DashboardProps> = ({
               Ver enunciados, opciones y explicaciones detalladas del examen.
             </p>
           </button>
+        </div>
+
+        {/* 📚 GUÍA DE REFERENCIAS Y CAPÍTULOS DE ESTUDIO */}
+        <div className="study-focus-card rounded-2xl bg-black/40 border border-rose-500/30 p-4 sm:p-5 space-y-3 relative z-10">
+          <div 
+            onClick={() => setShowStudyGuide(!showStudyGuide)}
+            className="flex items-center justify-between cursor-pointer group select-none"
+          >
+            <div className="flex items-center gap-2.5">
+              <BookOpen className="w-5 h-5 text-rose-400" />
+              <div>
+                <h3 className="text-sm font-bold text-white group-hover:text-rose-300 transition-colors">
+                  Referencias y Capítulos de Manuales para Estudio (25 Preguntas Oficiales)
+                </h3>
+                <p className="text-[11px] text-slate-400">
+                  Enfoque de estudio por manual (MOA 8.1–8.6, Cap. 7, Cap. 9, DDPM, MEL, SOPM, AFM)
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-1 text-xs font-bold text-rose-400 bg-rose-500/10 px-2.5 py-1 rounded-lg border border-rose-500/30">
+              <span>{showStudyGuide ? 'Ocultar Guía' : 'Ver Capítulos de Estudio'}</span>
+              {showStudyGuide ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
+            </div>
+          </div>
+
+          {showStudyGuide && (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2 text-xs border-t border-slate-800 animate-fade-in">
+              
+              {/* MOA 8.1 Planificación */}
+              <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 space-y-2">
+                <div className="flex items-center justify-between text-rose-300 font-extrabold pb-1.5 border-b border-slate-800">
+                  <span className="flex items-center gap-1.5">
+                    <PlaneTakeoff className="w-4 h-4 text-rose-400" />
+                    <span>MOA Cap. 8.1 · Planificación y Despacho</span>
+                  </span>
+                  <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-rose-500/20 text-rose-300 border border-rose-500/30">11 Preguntas</span>
+                </div>
+                <ul className="space-y-1.5 text-slate-300 text-[11px] leading-relaxed">
+                  <li>• <strong className="text-white">8.1.2.1 / 8.1.7.2.3.1:</strong> Distancia máx OEI 60 min (<span className="text-amber-300 font-mono font-bold">320 NM</span> E195-E2) <span className="text-rose-400 font-mono font-bold">[Q1]</span></li>
+                  <li>• <strong className="text-white">8.1.2.2:</strong> Categoría RFFS (<span className="text-amber-300 font-mono font-bold">Cat 7</span> E195-E2) <span className="text-rose-400 font-mono font-bold">[Q6]</span></li>
+                  <li>• <strong className="text-white">8.1.3.2:</strong> Mínimos Circling a velocidad superior (mínimos de categoría superior) <span className="text-rose-400 font-mono font-bold">[Q7]</span></li>
+                  <li>• <strong className="text-white">8.1.3.5:</strong> Approach Ban (inicio permitido; prohibición continuar bajo FAF / 1.000 ft) <span className="text-rose-400 font-mono font-bold">[Q19]</span></li>
+                  <li>• <strong className="text-white">8.1.7.1.2.3:</strong> Combustible contingencia absorbe rodaje prolongado <span className="text-rose-400 font-mono font-bold">[Q9]</span></li>
+                  <li>• <strong className="text-white">8.1.7.2.1:</strong> Reserva Final turborreactores (<span className="text-amber-300 font-mono font-bold">30 min</span> a 1.500 ft) <span className="text-rose-400 font-mono font-bold">[Q8]</span></li>
+                  <li>• <strong className="text-white">8.1.7.2.1:</strong> Componentes Alternate Fuel (frustrada destino + ascenso + crucero + descenso + toma) <span className="text-rose-400 font-mono font-bold">[Q11]</span></li>
+                  <li>• <strong className="text-white">8.1.7.2.5 Tabla 1A:</strong> Mínimos Alternativo Plan Básico c/ Variaciones (<span className="text-amber-300 font-mono font-bold">+200 ft / +800 m</span>) <span className="text-rose-400 font-mono font-bold">[Q10]</span></li>
+                  <li>• <strong className="text-white">8.1.7.3.5:</strong> Emergencia de combustible (<span className="text-rose-400 font-bold font-mono">MAYDAY FUEL</span> al peligrar reserva final) <span className="text-rose-400 font-mono font-bold">[Q25]</span></li>
+                  <li>• <strong className="text-white">8.1.8 / 8.1.10:</strong> Tolerancia peso rampa OFP vs Hoja de carga (<span className="text-amber-300 font-mono font-bold">máx ±1.000 kg</span>) <span className="text-rose-400 font-mono font-bold">[Q14]</span></li>
+                  <li>• <strong className="text-white">8.1.8.6:</strong> Procedimiento LMC combinados (pasaje + bodegas dentro de límite restrictivo) <span className="text-rose-400 font-mono font-bold">[Q13]</span></li>
+                  <li>• <strong className="text-white">8.1.11:</strong> Registro ATL de anomalías transitorias autorrecuperadas (<span className="text-amber-300 font-mono font-bold">"Pilot Info"</span>) <span className="text-rose-400 font-mono font-bold">[Q4]</span></li>
+                </ul>
+              </div>
+
+              {/* DDPM / MEL / CDL */}
+              <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 space-y-2">
+                <div className="flex items-center justify-between text-rose-300 font-extrabold pb-1.5 border-b border-slate-800">
+                  <span className="flex items-center gap-1.5">
+                    <FileText className="w-4 h-4 text-rose-400" />
+                    <span>DDPM / MEL / CDL · Despacho y Defectos</span>
+                  </span>
+                  <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-rose-500/20 text-rose-300 border border-rose-500/30">3 Preguntas</span>
+                </div>
+                <ul className="space-y-1.5 text-slate-300 text-[11px] leading-relaxed">
+                  <li>• <strong className="text-white">DDPM / CDL Generalidades:</strong> Definición operacional de penalización <span className="text-amber-300 font-mono font-bold">"Negligible"</span> (efecto muy pequeño pero real y acumulativo) <span className="text-rose-400 font-mono font-bold">[Q2]</span></li>
+                  <li>• <strong className="text-white">MOA 8.6.1.4 / ORO.MLR.105:</strong> Plazos de rectificación MEL Cat B (<span className="text-amber-300 font-mono font-bold">3 días de calendario</span> excluyendo día hallazgo) <span className="text-rose-400 font-mono font-bold">[Q3]</span></li>
+                  <li>• <strong className="text-white">MOA 8.6.1 / ORO.MLR.105:</strong> Autodespacho MEL por Comandante sin mantenimiento (sin peligro y <span className="text-amber-300 font-mono font-bold">sin procedimiento 'M'</span>) <span className="text-rose-400 font-mono font-bold">[Q24]</span></li>
+                </ul>
+              </div>
+
+              {/* MOA 8.4 LVO */}
+              <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 space-y-2">
+                <div className="flex items-center justify-between text-rose-300 font-extrabold pb-1.5 border-b border-slate-800">
+                  <span className="flex items-center gap-1.5">
+                    <Gauge className="w-4 h-4 text-rose-400" />
+                    <span>MOA Cap. 8.4 · Operaciones LVO (CAT II / III)</span>
+                  </span>
+                  <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-rose-500/20 text-rose-300 border border-rose-500/30">2 Preguntas</span>
+                </div>
+                <ul className="space-y-1.5 text-slate-300 text-[11px] leading-relaxed">
+                  <li>• <strong className="text-white">MOA 8.4.1 / SPA.LVO.105:</strong> Obligación de registrar datos LVO en PFR para reporte regulatorio a AESA <span className="text-rose-400 font-mono font-bold">[Q5]</span></li>
+                  <li>• <strong className="text-white">MOA 8.4.2:</strong> Mínimos transmisómetros RVR en CAT III (Midpoint mínimo <span className="text-amber-300 font-mono font-bold">125 m</span>) <span className="text-rose-400 font-mono font-bold">[Q20]</span></li>
+                </ul>
+              </div>
+
+              {/* MOA 8.2 Rampa & SOPM */}
+              <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 space-y-2">
+                <div className="flex items-center justify-between text-rose-300 font-extrabold pb-1.5 border-b border-slate-800">
+                  <span className="flex items-center gap-1.5">
+                    <Layers className="w-4 h-4 text-rose-400" />
+                    <span>MOA Cap. 8.2 & SOPM · Rampa y Parada</span>
+                  </span>
+                  <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-rose-500/20 text-rose-300 border border-rose-500/30">2 Preguntas</span>
+                </div>
+                <ul className="space-y-1.5 text-slate-300 text-[11px] leading-relaxed">
+                  <li>• <strong className="text-white">MOA 8.2.1.2:</strong> Repostaje embarcando por L1 y R2 bloqueada (<span className="text-amber-300 font-mono font-bold">R1 y L2 libres</span> para evacuación) <span className="text-rose-400 font-mono font-bold">[Q15]</span></li>
+                  <li>• <strong className="text-white">MOA 8.2.2 / SOPM:</strong> Beacon encendido ininterrumpidamente hasta parada total de ambos motores <span className="text-rose-400 font-mono font-bold">[Q16]</span></li>
+                </ul>
+              </div>
+
+              {/* MOA 8.3 & MOB Vuelo */}
+              <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 space-y-2">
+                <div className="flex items-center justify-between text-rose-300 font-extrabold pb-1.5 border-b border-slate-800">
+                  <span className="flex items-center gap-1.5">
+                    <Compass className="w-4 h-4 text-rose-400" />
+                    <span>MOA Cap. 8.3 & MOB · Procedimientos de Vuelo</span>
+                  </span>
+                  <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-rose-500/20 text-rose-300 border border-rose-500/30">2 Preguntas</span>
+                </div>
+                <ul className="space-y-1.5 text-slate-300 text-[11px] leading-relaxed">
+                  <li>• <strong className="text-white">MOA 8.3.2.7:</strong> Política frustradas sucesivas (máximo 2; 3ª solo con mejora meteorológica manifiesta) <span className="text-rose-400 font-mono font-bold">[Q18]</span></li>
+                  <li>• <strong className="text-white">MOB 3.1.0:</strong> Llamada PA "Tripulación de cabina permanezcan sentados" (anuncios y esperar orden) <span className="text-rose-400 font-mono font-bold">[Q22]</span></li>
+                </ul>
+              </div>
+
+              {/* MOA Cap. 7 (FTL) & Cap. 9 (DGR) */}
+              <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 space-y-2">
+                <div className="flex items-center justify-between text-rose-300 font-extrabold pb-1.5 border-b border-slate-800">
+                  <span className="flex items-center gap-1.5">
+                    <Clock className="w-4 h-4 text-rose-400" />
+                    <span>MOA Cap. 7 (FTL) & Cap. 9 (DGR)</span>
+                  </span>
+                  <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-rose-500/20 text-rose-300 border border-rose-500/30">2 Preguntas</span>
+                </div>
+                <ul className="space-y-1.5 text-slate-300 text-[11px] leading-relaxed">
+                  <li>• <strong className="text-white">MOA 7 / FTL.205(f):</strong> Discreción Comandante en tierra fuera de base (<span className="text-amber-300 font-mono font-bold">hasta 2h</span> con consenso e informe en 72h) <span className="text-rose-400 font-mono font-bold">[Q12]</span></li>
+                  <li>• <strong className="text-white">MOA 9 / IATA DGR:</strong> Baterías de litio extraídas de sillas (<span className="text-amber-300 font-mono font-bold">exclusivo en cabina</span> con bornes aislados) <span className="text-rose-400 font-mono font-bold">[Q17]</span></li>
+                </ul>
+              </div>
+
+              {/* AFM / QRH E195-E2 */}
+              <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 space-y-2 md:col-span-2">
+                <div className="flex items-center justify-between text-rose-300 font-extrabold pb-1.5 border-b border-slate-800">
+                  <span className="flex items-center gap-1.5">
+                    <Plane className="w-4 h-4 text-rose-400" />
+                    <span>AFM / AOM / QRH · Sistemas y Limitaciones Embraer 195-E2</span>
+                  </span>
+                  <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-rose-500/20 text-rose-300 border border-rose-500/30">2 Preguntas</span>
+                </div>
+                <ul className="space-y-1.5 text-slate-300 text-[11px] leading-relaxed">
+                  <li>• <strong className="text-white">QRH Sección 1:</strong> Memory Item Despresurización Rápida (<span className="text-amber-300 font-mono font-bold">Crew Oxy Masks al 100%</span>) <span className="text-rose-400 font-mono font-bold">[Q21]</span></li>
+                  <li>• <strong className="text-white">AFM 2-03 / AOM 1-04:</strong> Límites de viento Autoland CAT II/III (<span className="text-amber-300 font-mono font-bold">Headwind 25 kt / Tailwind 10 kt / Crosswind 15 kt</span>) <span className="text-rose-400 font-mono font-bold">[Q23]</span></li>
+                </ul>
+              </div>
+
+            </div>
+          )}
         </div>
       </div>
 

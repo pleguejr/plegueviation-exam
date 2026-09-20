@@ -187,7 +187,7 @@ export function App() {
     setCurrentView('exam');
   };
 
-  const handleStartCustomQuiz = async (questionIds: string[]) => {
+  const handleStartCustomQuiz = async (questionIds: string[], customMode: ExamMode = 'practice') => {
     const all = await loadAllQuestions();
     const selected = all.filter((q) => questionIds.includes(q.id));
     if (selected.length === 0) return;
@@ -195,8 +195,9 @@ export function App() {
     const config: ExamConfig = {
       categories: [],
       count: selected.length,
-      mode: 'practice',
+      mode: customMode,
       strategy: 'random',
+      timeLimitMinutes: customMode === 'simulation' ? Math.round(selected.length * 1.5) : undefined,
       passMarkPercentage: 75
     };
 
@@ -369,7 +370,7 @@ export function App() {
               setExplorerSearchTerm(term);
               setCurrentView('explorer');
             }}
-            onPracticeQuestions={(ids) => handleStartCustomQuiz(ids)}
+            onPracticeQuestions={(ids, mode) => handleStartCustomQuiz(ids, mode)}
           />
         )}
 
