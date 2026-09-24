@@ -125,7 +125,12 @@ export const Dashboard: React.FC<DashboardProps> = ({
   const infoSearchPreview = useMemo(() => infoSearchHits.slice(0, 12), [infoSearchHits]);
 
   const commandCourseQuestions = useMemo(() => {
-    return questions.filter((q) => q._subtopic === 'examen-convocatoria-anterior');
+    return questions.filter(
+      (q) =>
+        q._subtopic === 'command-course' ||
+        q._subtopic === 'examen-convocatoria-anterior' ||
+        q._subtopic === 'examen-oficial'
+    );
   }, [questions]);
 
   const commandCourseStats = useMemo(() => {
@@ -735,7 +740,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
             <div className="flex items-center gap-2 flex-wrap">
               <span className="command-course-badge px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-rose-500/20 text-rose-300 border border-rose-500/40 flex items-center gap-1">
                 <Sparkles className="w-3 h-3 text-rose-400" />
-                <span>25 Oficiales (en Inglés) + 65 Satélites = 90 Reactivos</span>
+                <span>{commandCourseQuestions.length} Reactivos · Oficiales (Inglés) + Típicas Examen Comandante + Satélites</span>
               </span>
             </div>
             <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2.5">
@@ -772,7 +777,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
               if (onPracticeQuestions && officialIds.length > 0) {
                 onPracticeQuestions(officialIds);
               } else {
-                onStartConfiguredExam({ category: 'command-upgrade', subtopics: ['examen-convocatoria-anterior'], count: 25, mode: 'simulation', strategy: 'random' });
+                onStartConfiguredExam({ category: 'command-upgrade', subtopics: ['command-course', 'examen-convocatoria-anterior'], count: 25, mode: 'simulation', strategy: 'random' });
               }
             }}
             className="command-course-action command-course-action-rose p-3.5 rounded-2xl bg-rose-950/40 hover:bg-rose-900/50 border border-rose-500/40 hover:border-rose-400 text-left transition-all group flex flex-col justify-between shadow-md active:scale-95"
@@ -785,43 +790,50 @@ export const Dashboard: React.FC<DashboardProps> = ({
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
             </div>
             <p className="command-course-action-desc text-[11px] text-slate-300">
-              Las 25 preguntas originales en inglés del examen real de convocatoria.
+              Las 25 preguntas originales en inglés de la última convocatoria.
             </p>
           </button>
 
-          {/* 2. Banco Completo (90) */}
+          {/* 2. Típicas Preguntas Comandante (100) */}
           <button
             type="button"
-            onClick={() => onStartConfiguredExam({ category: 'command-upgrade', subtopics: ['examen-convocatoria-anterior'], count: 90, mode: 'practice', strategy: 'random' })}
+            onClick={() => {
+              const tipicasIds = commandCourseQuestions.filter((q) => q.id.startsWith('CMD-EXAM-')).map((q) => q.id);
+              if (onPracticeQuestions && tipicasIds.length > 0) {
+                onPracticeQuestions(tipicasIds);
+              } else {
+                onStartConfiguredExam({ category: 'command-upgrade', subtopics: ['command-course', 'examen-convocatoria-anterior'], count: 50, mode: 'practice', strategy: 'random' });
+              }
+            }}
+            className="command-course-action command-course-action-amber p-3.5 rounded-2xl bg-amber-950/40 hover:bg-amber-900/50 border border-amber-500/40 hover:border-amber-400 text-left transition-all group flex flex-col justify-between shadow-md active:scale-95"
+          >
+            <div className="command-course-action-title flex items-center justify-between text-xs font-black text-amber-300 mb-1">
+              <span className="flex items-center gap-1.5">
+                <FileText className="w-4 h-4 text-amber-400" />
+                <span>Típicas Comandante (100)</span>
+              </span>
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+            </div>
+            <p className="command-course-action-desc text-[11px] text-slate-300">
+              Las 100 preguntas típicas históricas de examen de comandante (P1 a P100).
+            </p>
+          </button>
+
+          {/* 3. Banco Completo */}
+          <button
+            type="button"
+            onClick={() => onStartConfiguredExam({ category: 'command-upgrade', subtopics: ['command-course', 'examen-convocatoria-anterior'], count: Math.min(commandCourseQuestions.length || 50, 60), mode: 'practice', strategy: 'random' })}
             className="command-course-action command-course-action-sky p-3.5 rounded-2xl bg-sky-950/40 hover:bg-sky-900/50 border border-sky-500/40 hover:border-sky-400 text-left transition-all group flex flex-col justify-between shadow-md active:scale-95"
           >
             <div className="command-course-action-title flex items-center justify-between text-xs font-black text-sky-300 mb-1">
               <span className="flex items-center gap-1.5">
                 <Sparkles className="w-4 h-4 text-sky-400" />
-                <span>Banco Completo (90)</span>
+                <span>Banco Completo ({commandCourseQuestions.length})</span>
               </span>
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
             </div>
             <p className="command-course-action-desc text-[11px] text-slate-300">
-              25 oficiales + 65 satélites con feedback y referencias inmediatas.
-            </p>
-          </button>
-
-          {/* 3. Flashcards */}
-          <button
-            type="button"
-            onClick={() => onStartFlashcards({ category: 'command-upgrade' })}
-            className="command-course-action command-course-action-amber p-3.5 rounded-2xl bg-amber-950/40 hover:bg-amber-900/50 border border-amber-500/40 hover:border-amber-400 text-left transition-all group flex flex-col justify-between shadow-md active:scale-95"
-          >
-            <div className="command-course-action-title flex items-center justify-between text-xs font-black text-amber-300 mb-1">
-              <span className="flex items-center gap-1.5">
-                <Zap className="w-4 h-4 text-amber-400 fill-current" />
-                <span>Flashcards Mando</span>
-              </span>
-              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
-            </div>
-            <p className="command-course-action-desc text-[11px] text-slate-300">
-              Memorización de datos clave de combustible, LVO, DDPM y límites.
+              Oficiales en inglés + Típicas Comandante + Satélites de profundización.
             </p>
           </button>
 
@@ -830,7 +842,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
             type="button"
             onClick={() => {
               if (onOpenQuestionSearch) {
-                onOpenQuestionSearch('CMD-EXAM26-');
+                onOpenQuestionSearch('CMD-EXAM');
               } else {
                 onNavigateTab('explorer');
               }
@@ -840,12 +852,12 @@ export const Dashboard: React.FC<DashboardProps> = ({
             <div className="command-course-action-title flex items-center justify-between text-xs font-black text-emerald-300 mb-1">
               <span className="flex items-center gap-1.5">
                 <Search className="w-4 h-4 text-emerald-400" />
-                <span>Explorar las 25 / 90</span>
+                <span>Explorar Reactivos</span>
               </span>
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
             </div>
             <p className="command-course-action-desc text-[11px] text-slate-300">
-              Ver enunciados, opciones y explicaciones detalladas del examen.
+              Buscar, filtrar explicaciones, referencias MOA/EASA y auditar opciones.
             </p>
           </button>
         </div>

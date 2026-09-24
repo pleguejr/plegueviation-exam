@@ -60,8 +60,8 @@ export const ExamConfigModal: React.FC<ExamConfigModalProps> = ({
   const handleApplyPreset = (preset: 'command_course' | 'command_all' | 'fleet_e2' | 'all') => {
     if (preset === 'command_course') {
       setSelectedCategories(['command-upgrade']);
-      setSelectedSubtopics(['examen-convocatoria-anterior']);
-      setCount(90);
+      setSelectedSubtopics(['command-course', 'examen-convocatoria-anterior']);
+      setCount(50);
     } else if (preset === 'command_all') {
       setSelectedCategories(['command-upgrade']);
       setSelectedSubtopics([]);

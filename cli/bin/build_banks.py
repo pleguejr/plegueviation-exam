@@ -98,6 +98,7 @@ def compile_banks() -> int:
     }
 
     subtopic_labels = {
+        "command-course": "Banco Especial - Command Course (Exámenes Oficiales, Típicas Preguntas Comandante P1-100 y Satélites)",
         "examen-convocatoria-anterior": "Command Course / Examen Convocatoria Anterior (Oficial + Satélites)",
         "moa": "Manual de Operaciones Parte A (MOA)",
         "mob": "Manual de Operaciones Parte B (MOB)",
