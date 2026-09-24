@@ -446,38 +446,39 @@
   {
     "id": "BIN-SOP-113",
     "subject_id": "binter_ops",
-    "learning_objective": "TABLAS Memory Items: PITCH TRIM RUNAWAY",
-    "stem": "¿Cuáles son los Memory Items de PITCH TRIM RUNAWAY?",
+    "learning_objective": "E195-E2 QRH - Memory Items de Mandos: STEERING RUNAWAY vs Gestión Trim FBW",
+    "stem": "En el Embraer 195-E2 con mandos Fly-by-Wire, ¿cuál es la acción Memory Item requerida ante un desvío no comandado de la dirección de morro (STEERING RUNAWAY)?",
     "options": [
       {
         "id": "A",
-        "text": "AP DISC PRESS and HOLD, luego PITCH TRIM SYS 1 & 2 CUTOUT PUSH IN",
+        "text": "STEERING RUNAWAY → STEER DISC Switch PRESS (presionar y mantener el pulsador de desconexión de dirección)",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Solo ELEVATOR DISCONNECT Handle PULL",
+        "text": "PITCH TRIM RUNAWAY → PITCH TRIM SYS 1 & 2 CUTOUT PUSH IN (procedimiento exclusivo de la generación E1)",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "AILERON DISCONNECT Handle PULL",
+        "text": "RUDDER RUNAWAY → PEDAL DISCONNECT Handle PULL en cabina",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "STEER DISC Switch PRESS en vuelo",
+        "text": "NOSE WHEEL FAILURE → APU SHUTOFF Switch PUSH",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "PITCH TRIM RUNAWAY: mantener AP DISC y CUTOUT ambos canales. Elevator disconnect es para jammed column.",
+      "text": "En el **Embraer 195-E2**, el trim es completamente Fly-by-Wire (FBW) y las desviaciones no comandadas son gestionadas y aisladas automáticamente por los FCCs (no existen pulsadores de CUTOUT en pedestal como en E1). En los mandos de tierra, el Memory Item crítico es: **STEERING RUNAWAY → STEER DISC Switch: PRESS**.",
       "references": [
-        "TABLAS memory-items-e2 · PITCH TRIM RUNAWAY"
+        "Embraer 195-E2 QRH - Emergency & Abnormal Procedures: STEERING RUNAWAY",
+        "Binter E195-E2 FCOM / SOPM: Memory Items"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.4
     }
   },
   {

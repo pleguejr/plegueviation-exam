@@ -2225,38 +2225,39 @@
   {
     "id": "BIN-SOP-113",
     "subject_id": "binter_ops",
-    "learning_objective": "TABLAS Memory Items: PITCH TRIM RUNAWAY",
-    "stem": "¿Cuáles son los Memory Items de PITCH TRIM RUNAWAY?",
+    "learning_objective": "E195-E2 QRH - Memory Items de Mandos: STEERING RUNAWAY vs Gestión Trim FBW",
+    "stem": "En el Embraer 195-E2 con mandos Fly-by-Wire, ¿cuál es la acción Memory Item requerida ante un desvío no comandado de la dirección de morro (STEERING RUNAWAY)?",
     "options": [
       {
         "id": "A",
-        "text": "AP DISC PRESS and HOLD, luego PITCH TRIM SYS 1 & 2 CUTOUT PUSH IN",
+        "text": "STEERING RUNAWAY → STEER DISC Switch PRESS (presionar y mantener el pulsador de desconexión de dirección)",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Solo ELEVATOR DISCONNECT Handle PULL",
+        "text": "PITCH TRIM RUNAWAY → PITCH TRIM SYS 1 & 2 CUTOUT PUSH IN (procedimiento exclusivo de la generación E1)",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "AILERON DISCONNECT Handle PULL",
+        "text": "RUDDER RUNAWAY → PEDAL DISCONNECT Handle PULL en cabina",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "STEER DISC Switch PRESS en vuelo",
+        "text": "NOSE WHEEL FAILURE → APU SHUTOFF Switch PUSH",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "PITCH TRIM RUNAWAY: mantener AP DISC y CUTOUT ambos canales. Elevator disconnect es para jammed column.",
+      "text": "En el **Embraer 195-E2**, el trim es completamente Fly-by-Wire (FBW) y las desviaciones no comandadas son gestionadas y aisladas automáticamente por los FCCs (no existen pulsadores de CUTOUT en pedestal como en E1). En los mandos de tierra, el Memory Item crítico es: **STEERING RUNAWAY → STEER DISC Switch: PRESS**.",
       "references": [
-        "TABLAS memory-items-e2 · PITCH TRIM RUNAWAY"
+        "Embraer 195-E2 QRH - Emergency & Abnormal Procedures: STEERING RUNAWAY",
+        "Binter E195-E2 FCOM / SOPM: Memory Items"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.4
     },
     "_category": "binter-ops",
     "_subtopic": "procedimientos-operativos"
@@ -4764,35 +4765,35 @@
   {
     "id": "CMD-EXP26-012",
     "subject_id": "command-upgrade",
-    "learning_objective": "MOA 8.1.7.2.5 (Tabla 1A) - Mínimos de Planificación para Alternativo con 2 o más aproximaciones de precisión",
-    "stem": "Al seleccionar un aeródromo alternativo de destino que cuenta con dos pistas independientes con aproximaciones de precisión ILS operativas (DA/H de 200 ft y RVR de 550 m en ambas), aplicando el Plan Básico con Variaciones de Binter, ¿qué mínimos meteorológicos deben pronosticarse en ETA ±1h?",
+    "learning_objective": "MOA 8.1.7.2.5 (Tabla 1B) - Plan Básico con Variaciones: 2 aproximaciones de precisión a pistas independientes",
+    "stem": "Al seleccionar un aeródromo alternativo de destino que cuenta con dos pistas independientes utilizables con aproximaciones de precisión ILS operativas (mínimos publicados: DA/H 200 ft y RVR 550 m), aplicando el Plan Básico con Variaciones de Binter (Tabla 1B del MOA 8.1.7.2.5 para categoría B), ¿qué mínimos meteorológicos de planificación deben pronosticarse en ETA ±1h?",
     "options": [
       {
         "id": "A",
-        "text": "Techo de nubes en o por encima de la DA/H publicada (200 ft) y RVR/Visibilidad en o por encima de 800 m.",
+        "text": "Techo de nubes: DA/H + 100 ft (300 ft) y Visibilidad/RVR: RVR + 300 m (850 m)",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Techo 400 ft y visibilidad 1.500 m.",
+        "text": "Techo 200 ft y RVR 550 m (mínimos de aproximación sin aplicar ningún incremento)",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Techo 200 ft y RVR 550 m sin ningún incremento.",
+        "text": "Mínimos de No Precisión (MDH + 200 ft de techo y RVR + 1.000 m)",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Techo 600 ft y visibilidad 2.400 m.",
+        "text": "Techo 400 ft y visibilidad 1.500 m fijos independientemente de las pistas disponibles",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Conforme a la Tabla 1A del MOA 8.1.7.2.5 (Plan Básico con Variaciones de Binter):\n- Cuando el aeródromo alternativo dispone de **al menos dos aproximaciones de precisión independientes** utilizables para pistas diferentes:\n- Requisito de techo: Techo $\\ge \\text{DA/H}$ de la aproximación utilizada.\n- Requisito de visibilidad: RVR $\\ge 800\\text{ m}$ (o visibilidad equivalente).",
+      "text": "De acuerdo con la **Tabla 1B del MOA 8.1.7.2.5 (Plan Básico con Variaciones de Binter / AMC1 CAT.OP.MPA.185)**:\n- Cuando el alternativo dispone de **al menos dos aproximaciones de precisión utilizables a pistas independientes**:\n  * Para aeronaves de Categoría B: el incremento reglamentario sobre los mínimos de aproximación en uso es de **+100 ft a la DA/H** y **+300 m al RVR/visibilidad** (resultando en 300 ft de techo y 850 m de RVR a partir de una aproximación base de 200 ft / 550 m).\n  * (En contraste, el Plan Básico Estándar de la Tabla 1A exigiría mínimos de aproximación de no precisión: MDH + 200 ft / RVR + 1.000 m).",
       "references": [
-        "MOA Binter ED06 RN27 - Subcapítulo 8.1.7.2.5: Tabla 1A de Mínimos de Planificación",
-        "EASA Part-SPA.LVO / AMC1 CAT.OP.MPA.185"
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.7.2.5: Tabla 1B de Mínimos de Planificación (Plan Básico con Variaciones)",
+        "EASA AMC1 CAT.OP.MPA.185(c): Selection of aerodromes - Planning minima"
       ]
     },
     "metadata": {
@@ -6047,34 +6048,34 @@
   {
     "id": "CMD-EXP26-044",
     "subject_id": "command-upgrade",
-    "learning_objective": "MOA 8.2.1.2 - Distancias Mínimas de Seguridad en Plataforma durante Repostaje",
-    "stem": "Durante el reabastecimiento de combustible con pasajeros a bordo, ¿cuáles son las distancias mínimas de seguridad obligatorias que debe garantizar el agente de handling alrededor del avión y equipos de soporte según el MOA 8.2.1.2.1?",
+    "learning_objective": "MOA 8.2.1.2.1 - Distancias y Zonas de Seguridad en Plataforma durante el Repostaje",
+    "stem": "Durante las operaciones de reabastecimiento de combustible en plataforma según el MOA 8.2.1.2.1, ¿cuál es el radio de la zona de seguridad libre de fuentes de ignición que debe mantenerse alrededor de las aperturas de ventilación (desaire) de los tanques y puntos de repostaje?",
     "options": [
       {
         "id": "A",
-        "text": "Radio de 6 metros alrededor del avión y de 3 metros para el resto de equipos de soporte en tierra.",
+        "text": "4 metros de radio alrededor de las aperturas de ventilación (desaire) de los tanques en puntas de plano y bocas de carga.",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Radio de 15 metros alrededor de los motores y 10 metros de la cisterna.",
+        "text": "6 metros de radio respecto a los motores para todo el personal de rampa.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Radio de 2 metros en todo el perímetro.",
+        "text": "10 metros en todo el perímetro exterior del stand.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No se estipula distancia fija, rigiendo únicamente la señalización pintada en el stand.",
+        "text": "2 metros de distancia fija uniforme para cualquier equipo de handling.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Conforme al MOA 8.2.1.2.1 (pág. 459):\n*\"Se asegurará de que existe una distancia mínima de seguridad, de 6m de radio de distancia alrededor del avión, así como de 3m para el resto de equipos de soporte en tierra.\"*",
+      "text": "Conforme al **MOA 8.2.1.2.1 (Procedimientos para el Agente de Handling / Repostaje)**:\n- **4 metros de radio**: Área de seguridad obligatoria alrededor de las aperturas de desaire (ventilación) de los tanques de combustible en las puntas de los planos y puntos de conexión de mangueras.\n- **6 metros**: Distancia mínima para el posicionamiento del GPU / fuentes de energía motorizadas respecto al vehículo cisterna y zonas de ventilación.\n- **1 metro**: Distancia libre de seguridad para el paso de mangueras respecto a los neumáticos del tren de aterrizaje.",
       "references": [
-        "MOA Binter ED06 RN27 - Subcapítulo 8.2.1.2.1 (pág. 459): Procedimientos para el Agente de Handling",
+        "MOA Binter ED06 RN27 - Subcapítulo 8.2.1.2.1 (pág. 459): Zonas de Seguridad en Repostaje",
         "Reglamento de Seguridad en Plataforma Aena"
       ]
     },
@@ -8896,8 +8897,8 @@
   {
     "id": "CMD-EXAM-050",
     "subject_id": "cmd_flight_planning",
-    "learning_objective": "MOA 8.1.7.2 - Mínimos de Planificación para Alternativos de No Precisión",
-    "stem": "Para la selección de un aeródromo alternativo en ruta o de destino cuya aproximación principal sea de No Precisión (NPA), ¿cuáles son los mínimos de planificación?",
+    "learning_objective": "MOA 8.1.7.2 - Mínimos de Planificación para Alternativos de No Precisión (Tabla 1A)",
+    "stem": "De acuerdo con el MOA 8.1.7.2 (Tabla 1A - Plan Básico Estándar / FOR-ENT-006 P50), para la selección de un aeródromo alternativo en ruta o de destino cuya aproximación sea de No Precisión (NPA), ¿cuáles son los mínimos de planificación requeridos?",
     "options": [
       {
         "id": "A",
@@ -8921,7 +8922,7 @@
       }
     ],
     "explanation": {
-      "text": "De acuerdo con las tablas de planificación de alternativos del MOA (Tablas 1A y 1B), para aproximaciones de no precisión se añaden los márgenes reglamentarios sobre los mínimos de aproximación en uso.",
+      "text": "De acuerdo con la Tabla 1A (Plan Básico Estándar) del MOA 8.1.7.2.5 y la pregunta oficial P50 del examen de mando, para un alternativo con aproximación de No Precisión (NPA), los mínimos de planificación exigen: Mínimos de No Precisión (MDH/MDA y visibilidad) + 200 ft de techo y + 1.000 m de visibilidad.",
       "references": [
         "Examen Mando Binter FOR-ENT-006 (P50)",
         "MOA 8.1.7.2.5 Tabla 1A"
@@ -42802,7 +42803,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Niebla (FG) se reporta cuando la visibilidad es inferior a 1.000 metros; Neblina (BR) cuando la visibilidad es de 1.000 m a 5.000 m con humedad relativa $\\ge 80\\%$",
+        "text": "Niebla (FG) se reporta cuando la visibilidad es inferior a 1.000 metros; Neblina (BR) cuando la visibilidad es de 1.000 m a 5.000 m con humedad relativa ≥ 80%",
         "is_correct": true
       },
       {
