@@ -701,30 +701,48 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
       },
       {
         col1: 'Equipaje Facturado en Bodega: Doméstico / Interinsular',
-        col2: '13 kg por pieza',
+        col2: '11 kg por pieza',
         col3: '—',
-        col4: '13 kg / bulto',
-        col5: 'Vuelos interinsulares del Archipiélago Canario y vuelos domésticos peninsulares.',
-        highlight: false,
-        notes: 'Peso estándar por bulto registrado en el manifiesto de carga.'
+        col4: '11 kg / bulto',
+        col5: 'Vuelos interinsulares del Archipiélago Canario y vuelos domésticos peninsulares (MOA 8.1.8.5.2).',
+        highlight: true,
+        notes: 'Valor oficial MOA 8.1.8.5.2 por bulto registrado en el manifiesto de carga.'
       },
       {
         col1: 'Equipaje Facturado en Bodega: Europeo',
-        col2: '15 kg por pieza',
+        col2: '13 kg por pieza',
         col3: '—',
-        col4: '15 kg / bulto',
-        col5: 'Vuelos internacionales dentro del espacio de la Unión Europea.',
+        col4: '13 kg / bulto',
+        col5: 'Vuelos internacionales dentro del espacio de la Unión Europea (MOA 8.1.8.5.2).',
         highlight: false,
         notes: 'Rutas continentales europeas.'
       },
       {
         col1: 'Equipaje Facturado en Bodega: Intercontinental',
-        col2: '17 kg por pieza',
+        col2: '15 kg por pieza',
         col3: '—',
-        col4: '17 kg / bulto',
-        col5: 'Vuelos intercontinentales (rutas hacia/desde África y terceros países).',
+        col4: '15 kg / bulto',
+        col5: 'Vuelos intercontinentales (rutas hacia/desde África y terceros países) (MOA 8.1.8.5.2).',
         highlight: false,
-        notes: 'Aplicable en operaciones de largo alcance o con terceros países.'
+        notes: 'Aplicable en operaciones con terceros países y África.'
+      },
+      {
+        col1: 'Equipaje DAA (Delivery At Aircraft - A pie de avión)',
+        col2: '10 kg por bulto',
+        col3: 'Estibado en bodega',
+        col4: '10 kg / bulto',
+        col5: 'Equipaje entregado a pie de avión por limitación de cabina (MOA 8.1.8.5.3).',
+        highlight: false,
+        notes: 'Su peso se considera incluido en el estándar del pasajero si no excede franquicia.'
+      },
+      {
+        col1: 'Chárter Vacacional (Adulto Varón / Mujer / All Adult)',
+        col2: '83 kg (Varón) | 69 kg (Mujer)',
+        col3: 'Equipaje de mano incluido',
+        col4: '76 kg (All Adult)',
+        col5: 'Valores específicos aplicables a vuelos bajo contrato de chárter vacacional (MOA 8.1.8.5.1).',
+        highlight: false,
+        notes: 'Niño en chárter vacacional: 35 kg.'
       },
       {
         col1: 'Equipaje en Asiento de Pasaje (CBBG / Cargo Baggage)',
@@ -746,7 +764,7 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
       }
     ],
     extraNotes: [
-      'Densidad estándar de combustible Jet A-1: 0.80 kg/L (rango operativo admitido: 0.775 a 0.840 kg/L a 15°C).',
+      'Densidad estándar de combustible Jet A-1: 0.79 kg/L (MOA 8.1.8.8).',
       'Menores no acompañados (UM): se computan según su rango de edad (35 kg si tienen de 2 a 12 años o peso adulto si son mayores de 12 años).',
       'Animales en cabina (PETC): viajan bajo el asiento y se computan como peso de tráfico real (peso animal + transportín ≤ 8 kg).',
       'Animales en bodega (AVIH): viajan en compartimento ventilado y se computan con su peso real verificado en báscula.'

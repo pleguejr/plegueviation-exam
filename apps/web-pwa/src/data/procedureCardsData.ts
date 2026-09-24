@@ -1056,66 +1056,69 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
   {
     id: 'card-special-engine-start-apu-inop',
     category: 'special',
-    title: 'Puesta en Marcha con APU Inoperativo (ASU & Crossbleed)',
-    subtitle: 'Arranque con Fuente Externa de Aire (ASU + GPU) y Arranque Cruzado del Segundo Motor',
-    manualRef: 'SOPM Sec 2.1 • AOM Rev 11 Cap. 2 • QRH Non-Normal • MOB 2.0',
+    title: 'Puesta en Marcha con APU Inoperativo en Flota E195-E2',
+    subtitle: 'Secuencia oficial Cabina-Tierra con ASU en toma inferior, arranque Motor 2 y Crossbleed Motor 1',
+    manualRef: 'MOA Binter ED06 RN27 - Subcapítulo 8.2.2.12.3.1 (Pág. 8.2-108 a 8.2-111)',
     airplane: 'Embraer 195-E2 / Binter Ops',
-    badges: ['APU INOP', 'ASU', 'GPU', 'Crossbleed Start', 'Procedimientos Especiales', 'SOPM'],
+    badges: ['MOA 8.2.2.12.3.1', 'APU INOP', 'ASU', 'GPU / 400Hz', 'Motor 2 primero', 'Crossbleed Motor 1'],
     goldenRules: [
-      'PACKS 1 & 2 en OFF obligatorio antes de dar aire con ASU y antes de acelerar para Crossbleed Start.',
-      'Presión en Manifold de sangrado: Verificar ≥ 30 psi (típicamente 40-45 psi con ASU / ~45-55% N1 en Crossbleed).',
-      'Blast Area despejada: Coordinar con rampa antes de acelerar el motor operativo para el Crossbleed.',
-      'Intercomunicación activa: Confirmar con personal de tierra "CLEAR TO START" antes de mover START/STOP selector.'
+      'La toma de ASU en el E195-E2 está en la parte inferior del fuselaje (extremar precauciones en conexión/desconexión).',
+      'Si hay pasarela/finger conectado, se desconectará antes de la puesta en marcha de motores.',
+      'Generalmente se arranca primero el Motor 2, ya que el ASU se posiciona enfrente del Motor 1.',
+      'Confirmación obligatoria de giro de motor por tierra: "Cabina, motor número 2 (1) girando" (de no girar es indicación de arranque insatisfactorio).'
     ],
-    summary: 'Procedimiento operacional completo para la puesta en marcha en rampa con APU inoperativo utilizando unidad neumática externa (ASU) y grupo electrógeno (GPU), seguido del arranque cruzado (Crossbleed Engine Start) del segundo motor.',
+    summary: 'Procedimiento oficial del MOA 8.2.2.12.3.1 para la puesta en marcha con APU inoperativo en el Embraer 195-E2, detallando la fraseología exacta cabina-tierra, arranque de Motor 2 con ASU y arranque cruzado de Motor 1 tras incremento de potencia.',
     sections: [
       {
-        title: '1. Preparación en Stand y Requisitos Previos (ASU + GPU)',
+        title: '1. Actuaciones Previas y Coordinación Inicial',
         color: 'indigo',
         items: [
-          { role: 'STEP', action: 'GPU conectada y alimentando barras (Overhead: GPU IN USE).', details: 'Asegura alimentación eléctrica AC para pantallas, bombas y FADEC.' },
-          { role: 'STEP', action: 'ASU (Air Start Unit) conectada a la toma neumática de alta presión.', details: 'Manguera de alta presión asegurada en la compuerta inferior del fuselaje.' },
-          { role: 'STEP', action: 'Freno de estacionamiento (Parking Brake) aplicado y calzos colocados.' },
-          { role: 'STEP', action: 'Intercomunicación cabina-tierra establecida.', details: 'Cascos de mecánico conectados en morro con línea de voz directa.' },
-          { role: 'STEP', action: 'Panel Neumático / Aire Acondicionado:', details: 'PACK 1 y PACK 2 en OFF. BLEED 1 y BLEED 2 en AUTO, XBLEED en AUTO (o OPEN si se requiere verificación).' },
-          { role: 'ALERT', action: 'Comprobación de Presión Neumática:', details: 'Verificar en sinóptico ECS del MFD presión en Manifold ≥ 30 psi (habitualmente 40 a 45 psi con ASU activa).' }
+          { role: 'STEP', action: 'Posicionamiento previo de ASU (Air Starter Unit) y GPU/400Hz antes de la salida.', details: 'Si se utiliza 400Hz del finger, se separará a distancia suficiente si hubiera que arrancar motor 1 primero.' },
+          { role: 'STEP', action: 'Vuelta de seguridad previa por el coordinador/agente de handling.', details: 'Comprobar área libre de personal, vehículos, equipos y FOD.' },
+          { role: 'STEP', action: 'Conexión de cascos intercomunicadores.', details: 'Verificar ausencia de tormenta eléctrica y posicionarse enfrente del avión a distancia prudencial de motores.' },
+          { role: 'CREW', callout: '"Tierra de Cabina / Ground from cockpit"', action: 'Inicia comunicación de puesta en marcha.' },
+          { role: 'CREW', callout: '"Adelante / Go ahead"', action: 'Tierra confirma enlace.' },
+          { role: 'PF', callout: '"Autorizados para puesta en marcha, confirme, walk-around completo, puertas y registros cerrados"', action: 'Cockpit solicita confirmación de cierre.' },
+          { role: 'CREW', callout: '"Le confirmo walk-around completo, puertas y registros cerrados"', action: 'Tierra confirma avión cerrado y listo.' }
         ]
       },
       {
-        title: '2. Arranque del Primer Motor con ASU (Engine 1 / 2)',
+        title: '2. Puesta en Marcha de Motor Número 2 con ASU',
         color: 'sky',
         items: [
-          { role: 'CREW', callout: '"CLEAR AIR START ENGINE 1 (o 2)"', action: 'PF/PM solicita confirmación de área libre al mecánico de tierra.' },
-          { role: 'CREW', callout: '"AIR START PRESSURE STABLE, CLEAR TO START"', action: 'Mecánico de tierra confirma presión estable y zona despejada.' },
-          { role: 'PF', action: 'Girar START/STOP selector del motor a START durante 2 segundos y soltar a RUN.' },
-          { role: 'PM', action: 'Monitorear parámetros de arranque en EICAS:', details: 'Apertura de válvula de arranque (SAV), aceleración de N2 (>20%), flujo de combustible (FF), ignición activa (IGN) y aumento de ITT (Light-Off dentro de límites).' },
-          { role: 'PM', callout: '"ENGINE 1 (2) STABILIZED"', action: 'Verificar N1, N2, ITT, flujo y presión de aceite estables en ralentí (IDLE).' },
-          { role: 'NOTE', action: 'El generador de motor (IDG) entra en línea automáticamente y asume la carga eléctrica.' }
+          { role: 'PF', callout: '"Tierra de cabina, confirme libre el motor número 2"', action: 'Comandante solicita motor 2 libre (área de seguridad sin obstáculos).' },
+          { role: 'CREW', callout: '"Motor número 2 libre / Engine number 2 is clear"', action: 'Tierra verifica y confirma motor libre.' },
+          { role: 'PF', callout: '"Recibido, pueden empezar a incrementar potencia del ASU"', action: 'Comandante autoriza aceleración de la unidad neumática.' },
+          { role: 'CREW', callout: '"Recibido incrementando / Roger, increasing power"', action: 'Tierra activa incremento de potencia de ASU a valores nominales de arranque.' },
+          { role: 'PF', callout: '"Potencia correcta, arrancando motor número 2"', action: 'Comandante comprueba presión correcta y gira selector START/STOP a START.' },
+          { role: 'CREW', callout: '"Cabina, motor número 2 girando / Cockpit, engine number 2 turning"', action: 'Tierra confirma rotación inicial del motor (arranque a primeras horas puede ser más lento).' },
+          { role: 'NOTE', action: 'Comandante monitoriza indicaciones de cockpit y mantiene escucha activa ante cualquier indicación de humo o fuego.' },
+          { role: 'PF', callout: '"Puesta en marcha del número 2 correcta. GPU y ASU fuera"', action: 'Motor 2 estabilizado; Comandante autoriza retirada de equipos externos.' },
+          { role: 'CREW', callout: '"GPU y ASU fuera / GPU and ASU removed"', action: 'Tierra desconecta y retira GPU y manguera ASU.' }
         ]
       },
       {
-        title: '3. Desconexión de Fuentes Externas (ASU & GPU) y Pushback',
+        title: '3. Puesta en Marcha de Motor Número 1 (Crossbleed Start)',
         color: 'amber',
         items: [
-          { role: 'CREW', callout: '"ENGINE STABILIZED, DISCONNECT ASU AND GPU"', action: 'Coordinar con tierra el corte de aire y retirada de cables.' },
-          { role: 'STEP', action: 'Mecánico de tierra corta flujo de ASU, purga manguera y desconecta GPU/ASU.', details: 'Cierre seguro y enclavamiento de las compuertas de servicio del fuselaje.' },
-          { role: 'CREW', callout: '"GPU & ASU DISCONNECTED, ALL DOORS CLOSED, PIN INSERTED"', action: 'Tierra confirma aeronave lista para maniobra de retroceso.' },
-          { role: 'STEP', action: 'Realizar Pushback convencional o remolque hasta la posición autorizada de rodaje.' }
+          { role: 'ALERT', action: 'Para arrancar Motor 1, la tripulación técnica debe aumentar potencia en Motor 2.', details: 'Extremar precauciones en el área de escape y zonas adyacentes al Motor 2.' },
+          { role: 'PF', callout: '"¿Está libre zona del motor número 2 para incrementar potencia?"', action: 'Cockpit consulta seguridad de blast area.' },
+          { role: 'CREW', callout: '"Libre área del número 2 para potencia / Area number 2 is clear to increase power"', action: 'Tierra confirma zona despejada.' },
+          { role: 'PF', action: 'Comandante incrementa potencia en Motor 2 hasta obtener los valores de presión requeridos.' },
+          { role: 'PF', callout: '"Confirme libre el motor número 1 / Confirm engine number 1 is clear"', action: 'Cockpit solicita motor 1 libre.' },
+          { role: 'CREW', callout: '"Libre el motor número 1 / Engine number 1 is clear"', action: 'Tierra confirma libre.' },
+          { role: 'PF', callout: '"Arrancando motor número 1 / Starting engine number 1"', action: 'Comandante gira selector START/STOP a START.' },
+          { role: 'CREW', callout: '"Cabina, motor número 1 girando / Cockpit, engine number 1 turning"', action: 'Tierra confirma rotación del motor 1.' }
         ]
       },
       {
-        title: '4. Procedimiento de Arranque Cruzado (Crossbleed Engine Start)',
+        title: '4. Finalización, Retirada de Calzos y Despedida',
         color: 'emerald',
         items: [
-          { role: 'STEP', action: 'Verificar área trasera (Blast Area) despejada de equipos, vehículos y otras aeronaves.' },
-          { role: 'STEP', action: 'Freno de estacionamiento (Parking Brake) aplicado firmemente (o rodaje en recta libre).' },
-          { role: 'STEP', action: 'Overhead Neumático: Confirmar PACK 1 y PACK 2 en OFF. BLEED 1 y 2 en AUTO, XBLEED en AUTO.' },
-          { role: 'PF', action: 'Avanzar suavemente la palanca de empuje del motor operativo (Thrust Lever):', details: 'Incrementar potencia hasta obtener Manifold Pressure ≥ 30 psi en EICAS (típicamente ~45% a 55% N1).' },
-          { role: 'PF', action: 'Girar START/STOP selector del segundo motor a START durante 2 segundos.' },
-          { role: 'PM', action: 'Monitorear secuencia de encendido del segundo motor (N2, IGN, FF, ITT Light-off).' },
-          { role: 'PM', callout: '"ENGINE 2 (1) STABILIZED"', action: 'Al alcanzar ralentí estabilizado en el segundo motor.' },
-          { role: 'PF', action: 'Reducir la palanca del motor operativo a IDLE.' },
-          { role: 'STEP', action: 'Restablecer climatización: PACK 1 y PACK 2 en AUTO.', details: 'Verificar presurización y continuar con After Start Flow / Checklist.' }
+          { role: 'PF', callout: '"Motor número 1 estabilizado, dos puestas en marcha correctas. Calzos fuera, puede desconectarse. Señal por la izquierda/derecha"', action: 'Cockpit confirma motores estabilizados y ordena retirar calzos.' },
+          { role: 'CREW', callout: '"Calzos fuera. Mantenga posición y aguarde la señal de todo despejado a su izquierda/derecha"', action: 'Tierra retira calzos, desconecta cascos intercomunicadores y cierra registro de rampa.' },
+          { role: 'STEP', action: 'El coordinador/agente de handling se dirige a la posición de despedida manteniendo distancia de seguridad y da señal visual de OK (todo despejado).' },
+          { role: 'STEP', action: 'El agente de handling permanece en la posición de despedida hasta que la aeronave empiece a rodar.' }
         ]
       }
     ]
@@ -1124,59 +1127,54 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
   {
     id: 'card-special-arrival-apu-inop',
     category: 'special',
-    title: 'Procedimiento de Llegada y Parada con APU Inoperativo',
-    subtitle: 'Gestión de Descenso, Rodaje, Coordinación con Stand y Apagado Seguro de Motores',
-    manualRef: 'SOPM Sec 2.10 • MOB Cap. 2 • MOA 8.1 / 8.2 • MEL Cap. 49',
+    title: 'Procedimiento de Llegada en Flota Embraer con APU Inoperativo',
+    subtitle: 'Protocolo estricto de acceso a la ERA, calzos, conexión de GPU y parada de motores',
+    manualRef: 'MOA Binter ED06 RN27 - Subcapítulo 8.2.2.12.4.2 (Pág. 8.2-113 a 8.2-114)',
     airplane: 'Embraer 195-E2 / Binter Ops',
-    badges: ['APU INOP', 'Llegada', 'Stand', 'Single Engine Taxi', 'GPU Coordination', 'Procedimientos Especiales'],
+    badges: ['MOA 8.2.2.12.4.2', 'APU INOP', 'Acceso ERA', 'Calzo Tren Delantero', 'GPU en Zona Segura', 'Beacon ON'],
     goldenRules: [
-      'Notificar a ATC y al CCO en el Briefing E-DALTA para asegurar asignación de GPU y PCA inmediata en stand.',
-      'Baliza anticolisión (BEACON) obligatoriamente ON mientras algún motor permanezca en marcha en stand.',
-      'No cortar ambos motores hasta verificar luz verde "GPU AVAIL" y conectar GPU en el overhead.',
-      'Confort de cabina: Si no hay PCA externo, mantener un motor en IDLE durante el desembarque para suministrar PACK.'
+      'Informar al handling de la escala de destino de la llegada con APU inoperativo.',
+      'Nadie accederá a la ERA hasta: 1° Avión detenido, 2° Luz roja de Parking Brake encendida, y 3° UNO de los motores completamente parado con el otro al ralentí.',
+      'Calzar tren delantero exclusivamente por la zona segura alejada del motor que permanece al ralentí (respetando línea de zona de succión).',
+      'Las luces BEACON se mantendrán encendidas hasta la parada total de los DOS motores.',
+      'Sólo tras la parada total de ambos motores se apagan beacons y se calza el tren principal (caminando paralelo al fuselaje).'
     ],
-    summary: 'Directrices operativas y de seguridad para la llegada, rodaje en stand y apagado de motores cuando el APU está inoperativo, garantizando el suministro eléctrico/neumático continuo y la seguridad en rampa.',
+    summary: 'Protocolo oficial y de estricto obligado cumplimiento del MOA 8.2.2.12.4.2 para la llegada a stand con APU inoperativo en la flota Embraer, detallando los 3 requisitos simultáneos para acceder a la ERA y la secuencia de calzos y GPU.',
     sections: [
       {
-        title: '1. Planificación en Vuelo y Notificación Previa (E-DALTA)',
+        title: '1. Notificación Previa y Precauciones en Llegada',
         color: 'indigo',
         items: [
-          { role: 'PF', action: 'Incluir en el Briefing E-DALTA la condición "APU INOP" y la estrategia de llegada a stand.' },
-          { role: 'PM', action: 'Contactar con CCO vía VHF Compañía / ACARS FREE TEXT:', details: 'Notificar: "LLEGADA CON APU INOP - REQUERIDA GPU Y AIRE ACONDICIONADO EXTERNO (PCA) EN STAND".' },
-          { role: 'ATC', callout: '"[CALLSIGN], ADVISE APU INOPERATIVE ON ARRIVAL"', action: 'Informar al control de aproximación/rodaje para coordinar puesto de estacionamiento adecuado.' },
-          { role: 'STEP', action: 'Comprobar tipo de stand asignado: Pasarela con GPU fija vs puesto remoto con GPU móvil y escalera.' }
+          { role: 'STEP', action: 'Informar al handling de la escala de destino que la aeronave llega con APU inoperativo.' },
+          { role: 'STEP', action: 'Extremar las precauciones en la operación de llegada, haciendo uso de la señalética establecida (MOA 8.2.2.12.1.2) hasta poder conectar cascos de forma segura.' },
+          { role: 'STEP', action: 'Asegurar disponibilidad previa en stand de: Calzos, Conos, GPU / 400Hz y Cascos intercomunicadores.' }
         ]
       },
       {
-        title: '2. Rodaje de Llegada (Taxi-In)',
-        color: 'sky',
-        items: [
-          { role: 'STEP', action: 'Efectuar rodaje bimotor estándar para mantener presurización, ventilación de packs y redundancia hidráulica/eléctrica.' },
-          { role: 'NOTE', action: 'Si se realiza rodaje monomotor (Single Engine Taxi-In):', details: 'Mantener el motor con generador IDG alimentando barras principales y respetar 3 minutos de enfriamiento tras uso de reversa.' },
-          { role: 'STEP', action: 'Al aproximarse al stand: Verificar señalero activo o sistema de atraque visual (VDGS) operativo y rampa completamente libre de obstáculos.' }
-        ]
-      },
-      {
-        title: '3. Entrada en Stand y Conexión de Energía Externa (GPU)',
-        color: 'amber',
-        items: [
-          { role: 'PF', action: 'Detener la aeronave en las marcas de parada del stand según tipo E195-E2.' },
-          { role: 'PF', action: 'Aplicar freno de estacionamiento (Parking Brake: ON).' },
-          { role: 'CREW', callout: '"CHOCKS IN"', action: 'Señalero coloca calzos en tren principal y de morro.' },
-          { role: 'STEP', action: 'Personal de tierra conecta de inmediato el cable de la GPU (115V AC / 400 Hz).' },
-          { role: 'PM', action: 'Verificar en Overhead Eléctrico la luz verde "GPU AVAIL" iluminada.' },
-          { role: 'PM', action: 'Pulsar botón "GPU": Verificar indicación "GPU IN USE" en overhead y EICAS.' }
-        ]
-      },
-      {
-        title: '4. Secuencia de Apagado de Motores y Desembarque',
+        title: '2. Requisitos de Acceso a la ERA (Equipment Restriction Area)',
         color: 'rose',
         items: [
-          { role: 'STEP', action: 'CASO A: GPU conectada y unidad de aire acondicionado externa (PCA) disponible:', details: 'Respetar 3 minutos de enfriamiento en IDLE -> Girar ambos START/STOP selectors a STOP -> FASTEN BELTS en OFF -> BEACON en OFF cuando N1 se detenga.' },
-          { role: 'STEP', action: 'CASO B: GPU conectada pero NO hay aire acondicionado externo (PCA) y clima caluroso:', details: 'Mantener un motor en marcha (habitualmente Motor 1 o Motor 2 según lado de desembarque y pasarela) suministrando PACK para climatizar la cabina. BEACON permanece en ON.' },
-          { role: 'ALERT', action: 'Seguridad en Rampa con Motor en Marcha:', details: 'El personal de tierra debe respetar distancias de seguridad del motor en marcha. Informar a sobrecargo vía PA o interfono.' },
-          { role: 'STEP', action: 'Finalizado el desembarque del pasaje o conectada la manguera PCA: Girar motor restante a STOP y BEACON a OFF.' },
-          { role: 'STEP', action: 'Completar Parking Checklist y Securing Airplane Checklist según proceda.' }
+          { role: 'ALERT', action: 'PROHIBICIÓN TOTAL DE ACCESO A LA ERA hasta que se cumplan 3 condiciones simultáneas:', details: '1. La aeronave esté completamente detenida.\n2. La tripulación dé confirmación de frenos puestos y la luz indicadora de parking brake esté encendida (luz roja).\n3. Uno de los motores esté completamente parado, con el otro motor al ralentí.' },
+          { role: 'NOTE', action: 'Las luces BEACON se mantendrán ENCENDIDAS hasta la parada total de los dos motores.' }
+        ]
+      },
+      {
+        title: '3. Calzado de Tren Delantero y Conexión de GPU',
+        color: 'amber',
+        items: [
+          { role: 'STEP', action: 'Calzar el tren delantero del avión:', details: 'El personal encargado accederá siempre a través de la zona segura alejada del motor que permanece al ralentí, sin rebasar nunca la línea indicadora de zona de succión.' },
+          { role: 'STEP', action: 'Conexión de la GPU:', details: 'Cuando la aeronave esté calzada en su tren delantero, el GPU accederá para su conexión a través de la zona segura, manteniéndose fuera de la ERA el resto del personal y equipos.' },
+          { role: 'STEP', action: 'Conexión de Intercomunicador:', details: 'A partir de este momento se conecta el coordinador por cascos tierra-cabina y se confirma colocación de calzos delanteros y conexión de GPU a la tripulación técnica.' }
+        ]
+      },
+      {
+        title: '4. Parada del Segundo Motor, Beacon y Calzado Principal',
+        color: 'emerald',
+        items: [
+          { role: 'PF', action: 'Tras confirmar GPU conectada y suministrando energía: Proceder a la parada del segundo motor.' },
+          { role: 'STEP', action: 'Apagado de luces BEACON:', details: 'Sólo después de la parada total de los dos motores de la aeronave se procederá al apagado de las luces beacon.' },
+          { role: 'STEP', action: 'Calzado del tren principal:', details: 'Posteriormente al apagado de beacons, el personal calza el tren principal, caminando hacia éste de forma paralela al fuselaje del avión.' },
+          { role: 'STEP', action: 'Aproximación de pasarelas, escaleras y equipos GSE:', details: 'El resto de equipos de asistencia en tierra podrá acercarse al avión tras la vuelta inicial de seguridad.' }
         ]
       }
     ]
