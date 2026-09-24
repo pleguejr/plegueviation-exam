@@ -13,6 +13,7 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 - **CMD-EXP26-044**: distancias MOA 8.2.1 → **desaire 4 m / GPU 6 m / frenos 1 m**.
 - **CMD-EXP26-015**: pesos estándar **88/70/84 kg** (no 84/67).
 - **CMD-MOA-MET-025**: opción A sin LaTeX ilegible.
+- **CMD-EXAM-050**: NPA reescrita — especifica **Tabla 1A / Tipo A única** → **+400 ft / +1.500 m** (evita ambigüedad 1A vs 1B).
 
 ---
 

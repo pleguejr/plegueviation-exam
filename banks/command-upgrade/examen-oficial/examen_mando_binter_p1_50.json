@@ -1872,35 +1872,37 @@
   {
     "id": "CMD-EXAM-050",
     "subject_id": "cmd_flight_planning",
-    "learning_objective": "MOA 8.1.7.2 - Mínimos de Planificación para Alternativos de No Precisión",
-    "stem": "Para la selección de un aeródromo alternativo en ruta o de destino cuya aproximación principal sea de No Precisión (NPA), ¿cuáles son los mínimos de planificación?",
+    "learning_objective": "MOA 8.1.7.2.5 Tabla 1A — NPA Tipo A única (Plan Básico con Variaciones)",
+    "stem": "Según el Plan Básico con Variaciones (Tabla 1A, MOA 8.1.7.2.5), para un aeródromo alternativo cuya única aproximación utilizable sea una NPA Tipo A, ¿cuáles son los mínimos de planificación en ETA ±1 h?",
     "options": [
       {
         "id": "A",
-        "text": "Mínimos de No Precisión + 200 ft de techo / 1000 m de visibilidad",
+        "text": "MDA/H + 400 ft y RVR/VIS + 1.500 m",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Mínimos de No Precisión puros sin incremento, siempre que se notifique previamente a la autoridad competente y al CCO",
+        "text": "MDA/H + 200 ft y RVR/VIS + 1.000 m",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Mínimos de CAT I estándar, requiriendo autorización expresa del comandante y verificación de pesos",
+        "text": "MDA/H + 200 ft y RVR/VIS + 800 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Mínimos de aproximación en circuito (Circling), manteniendo el cumplimiento de las limitaciones operacionales del manual",
+        "text": "Mínimos NPA publicados sin ningún incremento",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "De acuerdo con las tablas de planificación de alternativos del MOA (Tablas 1A y 1B), para aproximaciones de no precisión se añaden los márgenes reglamentarios sobre los mínimos de aproximación en uso.",
+      "text": "Hay que **especificar el plan** antes de citar cifras:\n\n**Tabla 1A — Plan Básico con Variaciones** (MOA 8.1.7.2.5):\n- **Una sola** operación Tipo A (NPA típica): **MDA/H + 400 ft** y **RVR/VIS + 1.500 m**.\n- **Dos o más** Tipo A con ayudas distintas: MDA/H + 200 ft y RVR/VIS + 1.000 m.\n\n**Tabla 1B — Plan Básico** (sin variaciones): Tipo A → también **+ 400 ft / + 1.500 m**; Tipo B → + 200 ft / + 800 m.\n\nLa cifra «+200 ft / 1.000 m» solo aplica a **dos o más Tipo A** bajo Tabla 1A, no a una NPA única.",
       "references": [
-        "Examen Mando Binter FOR-ENT-006 (P50)",
-        "MOA 8.1.7.2.5 Tabla 1A"
+        "MOA 8.1.7.2.5 Tabla 1A (Plan Básico con Variaciones)",
+        "MOA 8.1.7.2.6 Tabla 1B (Plan Básico)",
+        "TABLAS OPS alternates-variations / alternates-basic",
+        "Examen Mando Binter FOR-ENT-006 (P50)"
       ]
     },
     "metadata": {
