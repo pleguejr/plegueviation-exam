@@ -28499,6 +28499,321 @@
     "_subtopic": "operaciones-especiales"
   },
   {
+    "id": "MOA-ESP-001",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer el procedimiento oficial para puesta en marcha con APU inoperativo en la flota Embraer 195-E2 (MOA 8.2.2.12.3.1)",
+    "stem": "En la flota Embraer 195-E2 de Binter, según el procedimiento del MOA 8.2.2.12.3.1 para la puesta en marcha con APU inoperativo utilizando una unidad de arranque neumático (ASU), ¿cuál es la secuencia estándar de arranque de los motores y su justificación operativa?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se arranca generalmente primero el Motor 2 mediante la unidad ASU, ya que el equipo ASU se posiciona en rampa frente al Motor 1.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se arranca obligatoriamente primero el Motor 1 mediante ASU, ya que la toma neumática inferior alimenta directamente la válvula de arranque del motor izquierdo.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se arrancan ambos motores simultáneamente con el ASU a máxima potencia para evitar sobrecalentamiento de la turbina de arranque.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El Comandante debe alternar el motor de inicio en cada vuelo para equilibrar las horas de ciclado del arrancador neumático.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según el **MOA Subcapítulo 8.2.2.12.3.1** (*Puesta en marcha con APU inoperativo en flota E195-E2*), la toma de ASU está ubicada en la parte inferior del fuselaje y generalmente se arranca primero el **Motor 2**, debido a que el ASU se posiciona frente al Motor 1. Una vez arrancado y estabilizado el Motor 2, se desconectan la GPU y el ASU, y se procede a la puesta en marcha del Motor 1 mediante sangrado cruzado (Crossbleed Start) incrementando potencia en el Motor 2.",
+      "references": [
+        "MOA Binter ED06 RN27, Subcapítulo 8.2.2.12.3.1 (Págs. 8.2-108 a 8.2-111)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "operaciones-especiales"
+  },
+  {
+    "id": "MOA-ESP-002",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer la coordinación y requisitos de potencia para el arranque cruzado (crossbleed) de motor con APU inoperativo (MOA 8.2.2.12.3.1)",
+    "stem": "Durante la puesta en marcha con APU inoperativo en el Embraer 195-E2 (MOA 8.2.2.12.3.1), una vez estabilizado el Motor 2 y retirados la GPU y el ASU, ¿qué acción y fraseología previa de coordinación debe realizar la tripulación técnica antes de iniciar el arranque del Motor 1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar confirmación a tierra de que la zona del motor 2 está libre ('¿Está libre zona del motor número 2 para incrementar potencia?') e incrementar potencia en el Motor 2 para obtener la presión neumática requerida.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mantener el Motor 2 al ralentí (IDLE) y solicitar a tierra la apertura manual de la válvula de sangrado cruzado en el pozo del tren de aterrizaje.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Conectar el interruptor de encendido IGNITION en posición OVRD y esperar a que la presión del conducto neumático alcance 15 psi sin acelerar el motor operativo.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Ordenar a tierra la retirada inmediata de calzos principales para permitir el desplazamiento por empuje residual durante el arranque cruzado.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con el **MOA 8.2.2.12.3.1**, para la puesta en marcha del Motor 1 por sangrado cruzado, la tripulación técnica debe aumentar potencia en el Motor 2 para generar la presión neumática necesaria. Por ello, la tripulación debe preguntar previamente a tierra: *'¿Está libre zona del motor número 2 para incrementar potencia?'*, y tras recibir la confirmación *'Libre área del número 2 para potencia'*, incrementar empuje de forma segura.",
+      "references": [
+        "MOA Binter ED06 RN27, Subcapítulo 8.2.2.12.3.1 (Págs. 8.2-108 a 8.2-111)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "operaciones-especiales"
+  },
+  {
+    "id": "MOA-ESP-003",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Identificar las condiciones de seguridad obligatorias para el acceso a la ERA en llegadas con APU inoperativo (MOA 8.2.2.12.4.2)",
+    "stem": "Según el procedimiento oficial de llegada con APU inoperativo en la flota Embraer (MOA 8.2.2.12.4.2), ¿cuáles son las tres condiciones simultáneas que deben cumplirse estrictamente antes de que cualquier persona o equipo de asistencia acceda al Área de Restricción de Equipos (ERA)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1° Aeronave completamente parada; 2° Confirmación de frenos de estacionamiento puestos con luz roja encendida; 3° Uno de los motores completamente parado con el otro motor al ralentí (IDLE).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "1° Aeronave sobre la línea de parada; 2° Luces beacon apagadas; 3° Ambos motores totalmente apagados y calzos colocados en tren principal.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "1° Pasarela o finger conectado; 2° Calzos en tren de morro; 3° Motores al ralentí con bombas de combustible desconectadas.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "1° Autorización expresa de la torre de control; 2° Luces de rodaje apagadas; 3° Luces estroboscópicas encendidas en posición fija.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **MOA Subcapítulo 8.2.2.12.4.2** prohíbe taxativamente la entrada a la ERA hasta que se cumplan las 3 condiciones de forma simultánea: 1.ª Aeronave completamente detenida; 2.ª Confirmación de frenos puestos y luz indicadora de parking brake encendida (roja); 3.ª Uno de los motores completamente parado, con el otro motor al ralentí.",
+      "references": [
+        "MOA Binter ED06 RN27, Subcapítulo 8.2.2.12.4.2 (Págs. 8.2-113 a 8.2-114)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "operaciones-especiales"
+  },
+  {
+    "id": "MOA-ESP-004",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer la gestión de luces anticolisión (beacon), calzos y GPU en llegadas con APU inoperativo (MOA 8.2.2.12.4.2)",
+    "stem": "En la llegada de un Embraer 195-E2 con APU inoperativo (MOA 8.2.2.12.4.2), ¿cómo se gestionan las luces anticolisión (BEACON), la conexión de GPU y el calzado de la aeronave?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Las luces BEACON permanecen encendidas hasta la parada de ambos motores; se calza el tren delantero y se conecta la GPU por la zona segura mientras un motor sigue al ralentí, y el tren principal se calza solo tras parar el segundo motor y apagar beacons.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Las luces BEACON se apagan inmediatamente al parar el primer motor para autorizar la conexión frontal simultánea de GPU y calzado total de todos los trenes.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La GPU solo puede conectarse cuando ambos motores estén completamente parados y las luces de navegación apagadas, empleando baterías de a bordo entretanto.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El tren principal se calza primero antes de colocar calzos en el tren de morro para evitar movimientos indeseados por el empuje residual del motor al ralentí.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según el **MOA 8.2.2.12.4.2**: 1) Las luces BEACON se mantienen ENCENDIDAS hasta la parada total de los dos motores; 2) El personal calza primero el tren delantero y conecta la GPU accediendo por la zona segura alejada del motor en marcha; 3) Tras confirmar que la GPU suministra energía, se para el segundo motor; 4) Tras parar ambos motores y apagar beacons, el personal calza el tren principal caminando paralelo al fuselaje.",
+      "references": [
+        "MOA Binter ED06 RN27, Subcapítulo 8.2.2.12.4.2 (Págs. 8.2-113 a 8.2-114)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "operaciones-especiales"
+  },
+  {
+    "id": "MOA-ESP-005",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer las masas estándar de tripulación de vuelo y de cabina para el cómputo del DOW (MOA 8.1.8.2.1 d / AMC1 CAT.POL.MAB.100(e))",
+    "stem": "De acuerdo con el MOA 8.1.8.2.1 d y la normativa EASA CAT.POL.MAB.100, ¿cuáles son los valores de masa estándar asignados a cada tripulante técnico (vuelo) y tripulante de cabina (TCP) para el cálculo del Peso Operativo en Seco (DOW/DOM)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tripulante Técnico: 85 kg (75 kg persona + 10 kg equipaje de mano/maletín); Tripulante de Cabina (TCP): 75 kg (65 kg persona + 10 kg equipaje de servicio).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Tripulante Técnico: 88 kg (82 kg persona + 6 kg equipaje); Tripulante de Cabina (TCP): 70 kg (64 kg persona + 6 kg equipaje).",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Tripulante Técnico: 80 kg; Tripulante de Cabina (TCP): 70 kg (sin incluir equipaje, que se pesa obligatoriamente en báscula).",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Tripulante Técnico y TCP por igual: 84 kg fijos por persona independientemente de la posición que ocupen.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según el **MOA 8.1.8.2.1 d** y **AMC1 CAT.POL.MAB.100(e)**, las masas estándar de tripulación son:\n• **Tripulante de Vuelo (Piloto):** 85 kg (75 kg persona + 10 kg equipaje de mano).\n• **Tripulante de Cabina de Pasajeros (TCP):** 75 kg (65 kg persona + 10 kg equipaje de mano).\nPara una tripulación estándar de E195-E2 (2 pilotos + 3 TCPs), la masa total computada en DOW es de **395 kg** (170 kg + 225 kg).",
+      "references": [
+        "MOA Binter ED06 RN27, Subcapítulo 8.1.8.2.1 d",
+        "EASA AMC1 CAT.POL.MAB.100(e)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "operaciones-especiales"
+  },
+  {
+    "id": "MOA-ESP-006",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer los valores oficiales de masa estándar de pasajeros en vuelos regulares (MOA 8.1.8.5.1)",
+    "stem": "En las operaciones de transporte comercial regular con aeronaves de 30 o más asientos (como el Embraer 195-E2), según la tabla del MOA 8.1.8.5.1, ¿cuáles son las masas estándar aplicables para pasajeros adultos, niños y bebés?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Adulto Varón: 88 kg | Adulto Mujer: 70 kg | Adulto Indistinto (All Adult): 84 kg (incluyendo 6 kg de equipaje de mano) | Niño (2-12 años): 35 kg | Bebé (<2 años sin asiento): 0 kg.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Adulto Varón: 85 kg | Adulto Mujer: 75 kg | Adulto Indistinto: 80 kg | Niño: 30 kg | Bebé: 5 kg.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Adulto Varón: 83 kg | Adulto Mujer: 69 kg | Adulto Indistinto: 76 kg (valores exclusivos de chárter vacacional) | Niño: 35 kg | Bebé: 10 kg.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Adulto Único: 78 kg | Niño: 40 kg | Bebé: 0 kg (el equipaje de mano siempre se suma por separado a razón de 10 kg por asiento).",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según la tabla oficial del **MOA 8.1.8.5.1** (y EASA Part-CAT.POL.MAB.100):\n• **Varón adulto:** 88 kg (82 kg persona + 6 kg equipaje de mano).\n• **Mujer adulta:** 70 kg (64 kg persona + 6 kg equipaje de mano).\n• **Adulto indistinto (All Adult):** 84 kg (78 kg persona + 6 kg equipaje de mano).\n• **Niño (2 a 12 años cumplidos):** 35 kg.\n• **Bebé / Infant (< 2 años en regazo sin asiento):** 0 kg.",
+      "references": [
+        "MOA Binter ED06 RN27, Subcapítulo 8.1.8.5.1",
+        "EASA Part-CAT.POL.MAB.100"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "operaciones-especiales"
+  },
+  {
+    "id": "MOA-ESP-007",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Identificar las masas estándar de equipaje facturado en bodega según el área geográfica (MOA 8.1.8.5.2)",
+    "stem": "De acuerdo con el MOA 8.1.8.5.2 de Binter Canarias, ¿qué masa estándar por pieza se asigna al equipaje facturado en bodega en función del tipo de vuelo y destino?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vuelos Domésticos / Interinsulares: 11 kg | Vuelos dentro de la Unión Europea: 13 kg | Vuelos Intercontinentales (África / Terceros Países): 15 kg.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Vuelos Domésticos / Interinsulares: 13 kg | Vuelos dentro de la Unión Europea: 15 kg | Vuelos Intercontinentales: 17 kg.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Todos los vuelos por igual: 15 kg por pieza independientemente del destino geográfico.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Vuelos Interinsulares: 10 kg | Vuelos Nacionales Peninsulares: 12 kg | Vuelos Internacionales: 20 kg.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El **MOA 8.1.8.5.2** establece los siguientes pesos estándar por bulto facturado en bodega:\n• **Doméstico / Interinsular:** 11 kg.\n• **Europeo (UE):** 13 kg.\n• **Intercontinental (África y terceros países):** 15 kg.",
+      "references": [
+        "MOA Binter ED06 RN27, Subcapítulo 8.1.8.5.2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "operaciones-especiales"
+  },
+  {
+    "id": "MOA-ESP-008",
+    "subject_id": "command-upgrade",
+    "learning_objective": "Conocer el tratamiento del equipaje DAA (Delivery at Aircraft) y la densidad de combustible Jet A-1 (MOA 8.1.8.5.3 y MOA 8.1.8.8)",
+    "stem": "Según el MOA 8.1.8.5.3 y el MOA 8.1.8.8, ¿qué valor de peso se asigna a los bultos entregados a pie de avión (DAA - Delivery At Aircraft) y cuál es la densidad estándar oficial para el combustible Jet A-1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Equipaje DAA: 10 kg por pieza (estibado en bodega y computado dentro del peso del pasaje); Densidad estándar Jet A-1: 0,79 kg/L.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Equipaje DAA: 15 kg por pieza (computado como equipaje pesado adicional); Densidad estándar Jet A-1: 0,84 kg/L.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Equipaje DAA: 6 kg por pieza (computado en cabina); Densidad estándar Jet A-1: 0,72 kg/L.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Equipaje DAA: 0 kg (franquicia libre sin registro); Densidad estándar Jet A-1: 0,80 kg/L.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme al **MOA 8.1.8.5.3**, el equipaje recogido a pie de avión (DAA - Delivery At Aircraft) por limitaciones de espacio en cabina se computa con una masa estándar de **10 kg** estibada en bodega (incluida en el estándar del pasajero).\nPor su parte, el **MOA 8.1.8.8** define la densidad estándar de combustible de aviación **Jet A-1** en **0,79 kg/L**.",
+      "references": [
+        "MOA Binter ED06 RN27, Subcapítulo 8.1.8.5.3",
+        "MOA Binter ED06 RN27, Subcapítulo 8.1.8.8"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "operaciones-especiales"
+  },
+  {
     "id": "CMD-PIC-001",
     "subject_id": "command-upgrade",
     "learning_objective": "Límites temporales de la responsabilidad del Comandante sobre el avión (MOA 1.4)",
