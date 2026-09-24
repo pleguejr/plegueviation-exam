@@ -12,7 +12,7 @@ export interface TableRow {
 
 export interface OperationalTable {
   id: string;
-  category: 'alternates' | 'memory-items' | 'limitations' | 'moa' | 'vfr';
+  category: 'alternates' | 'memory-items' | 'limitations' | 'moa' | 'vfr' | 'mass-balance';
   title: string;
   subtitle: string;
   manualRef: string;
@@ -612,6 +612,144 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
     extraNotes: [
       'Límite de velocidad: En espacio aéreo clase C, D, E, F y G por debajo de FL100 (10.000 ft), la velocidad indicada máxima para vuelos VFR es de 250 kt IAS.',
       'Altitudes mínimas de seguridad VFR: Excepto para despegue o aterrizaje, no se volará sobre aglomeraciones urbanas a menos de 1.000 ft sobre el obstáculo más alto en un radio de 600 m; en cualquier otro lugar, a no menos de 500 ft sobre el suelo o agua.'
+    ]
+  },
+
+  // 7. TABLA OFICIAL DE MASAS Y PESOS ESTÁNDAR (MOA 8.1.8 / EASA)
+  {
+    id: 'mass-balance-standards',
+    category: 'mass-balance',
+    title: 'Tabla Oficial de Masas y Pesos Estándar: Pasajeros, Equipajes y Tripulación',
+    subtitle: 'Valores estándar de masa para despacho, DOW y hoja de carga (MOA 8.1.8.3 y EASA CAT.POL.MAB.100)',
+    manualRef: 'MOA Binter 8.1.8.3 • EASA Part-CAT.POL.MAB.100 • AMC1 CAT.POL.MAB.100(e)',
+    badge: 'MOA 8.1.8 / EASA Mass',
+    description: 'Valores oficiales de masas estándar utilizados en la confección de la hoja de carga (Loadsheet), cálculo del Peso Operativo en Seco (DOW/DOM) y determinación del centrado (CG) para las operaciones comerciales de Binter Canarias.',
+    warningAlert: '¡REGLAS MOA 8.1.8!: 1° El peso del pasaje adulto incluye por defecto 6 kg de equipaje de mano en cabina. 2° El peso de tripulante incluye 10 kg de maletín de vuelo/equipaje de servicio en DOW. 3° Si la masa real de los pasajeros o equipajes excede notablemente estos valores, el Comandante exigirá el uso de masas reales.',
+    headers: ['Categoría / Colectivo', 'Masa Persona / Bulto', 'Equipaje Incluido', 'Masa Total Computada', 'Regulación / Aplicación Operativa'],
+    rows: [
+      {
+        col1: 'Adulto Varón (Male Passenger)',
+        col2: '82 kg (persona)',
+        col3: '6 kg (equipaje de mano en cabina)',
+        col4: '88 kg',
+        col5: 'Pasajeros varones en aeronaves de transporte comercial (≥ 30 asientos).',
+        highlight: true,
+        notes: 'Valor oficial de tabla MOA 8.1.8.3 / EASA CAT.POL.MAB.100.'
+      },
+      {
+        col1: 'Adulto Mujer (Female Passenger)',
+        col2: '64 kg (persona)',
+        col3: '6 kg (equipaje de mano en cabina)',
+        col4: '70 kg',
+        col5: 'Pasajeros mujeres en aeronaves de transporte comercial (≥ 30 asientos).',
+        highlight: true,
+        notes: 'Valor oficial de tabla MOA 8.1.8.3 / EASA CAT.POL.MAB.100.'
+      },
+      {
+        col1: 'Adulto Mixto (All Adult - Ambos Sexos)',
+        col2: '78 kg (persona)',
+        col3: '6 kg (equipaje de mano en cabina)',
+        col4: '84 kg',
+        col5: 'Cómputo estándar indistinto de género si se utiliza peso único por adulto.',
+        highlight: false,
+        notes: 'Aplica en vuelos donde no se segregue por sexo en el sistema de facturación.'
+      },
+      {
+        col1: 'Niño / Child (2 a 12 años cumplidos)',
+        col2: '35 kg',
+        col3: 'Incluido en el peso',
+        col4: '35 kg',
+        col5: 'Asiento propio asignado en cabina de pasaje.',
+        highlight: false,
+        notes: 'Menores de 2 a 12 años. A partir de los 12 años computan como adultos.'
+      },
+      {
+        col1: 'Bebé / Infant (< 2 años sin asiento)',
+        col2: '0 kg',
+        col3: '—',
+        col4: '0 kg',
+        col5: 'Viajan en el regazo del adulto acompañante (sin asiento propio).',
+        highlight: false,
+        notes: 'Si el bebé ocupa un asiento homologado propio, se computa como niño (35 kg).'
+      },
+      {
+        col1: 'Tripulante Técnico / Vuelo (Flight Crew)',
+        col2: '75 kg (piloto)',
+        col3: '10 kg (maletín de vuelo y equipaje técnico)',
+        col4: '85 kg por piloto',
+        col5: 'Cómputo en Dry Operating Weight (DOW) para Comandante y Primer Oficial.',
+        highlight: true,
+        notes: 'MOA 8.1.8.3 / AMC1 CAT.POL.MAB.100(e). Incluye documentación y maleta.'
+      },
+      {
+        col1: 'Tripulante de Cabina (Cabin Crew / TCP)',
+        col2: '65 kg (TCP)',
+        col3: '10 kg (equipaje de servicio de cabina)',
+        col4: '75 kg por TCP',
+        col5: 'Cómputo en Dry Operating Weight (DOW) para cada TCP asignado al vuelo.',
+        highlight: true,
+        notes: 'MOA 8.1.8.3 / AMC1 CAT.POL.MAB.100(e). Incluye uniforme y equipaje.'
+      },
+      {
+        col1: 'Tripulación Estándar E195-E2 (2 Pilotos + 3 TCPs)',
+        col2: '345 kg (personas)',
+        col3: '50 kg (equipajes de tripulación)',
+        col4: '395 kg total tripulación',
+        col5: 'Masa total de tripulación incluida en el DOW base de la flota Embraer 195-E2.',
+        highlight: true,
+        notes: '2 × 85 kg (170 kg) + 3 × 75 kg (225 kg) = 395 kg.'
+      },
+      {
+        col1: 'Equipaje Facturado en Bodega: Doméstico / Interinsular',
+        col2: '13 kg por pieza',
+        col3: '—',
+        col4: '13 kg / bulto',
+        col5: 'Vuelos interinsulares del Archipiélago Canario y vuelos domésticos peninsulares.',
+        highlight: false,
+        notes: 'Peso estándar por bulto registrado en el manifiesto de carga.'
+      },
+      {
+        col1: 'Equipaje Facturado en Bodega: Europeo',
+        col2: '15 kg por pieza',
+        col3: '—',
+        col4: '15 kg / bulto',
+        col5: 'Vuelos internacionales dentro del espacio de la Unión Europea.',
+        highlight: false,
+        notes: 'Rutas continentales europeas.'
+      },
+      {
+        col1: 'Equipaje Facturado en Bodega: Intercontinental',
+        col2: '17 kg por pieza',
+        col3: '—',
+        col4: '17 kg / bulto',
+        col5: 'Vuelos intercontinentales (rutas hacia/desde África y terceros países).',
+        highlight: false,
+        notes: 'Aplicable en operaciones de largo alcance o con terceros países.'
+      },
+      {
+        col1: 'Equipaje en Asiento de Pasaje (CBBG / Cargo Baggage)',
+        col2: 'Peso real del bulto',
+        col3: 'Fijado con arnés/cinturón suplementario',
+        col4: 'Peso real (Máx. 75 kg por asiento)',
+        col5: 'Instrumentos musicales, valijas diplomáticas o equipos especiales en cabina.',
+        highlight: false,
+        notes: 'No puede bloquear salidas de emergencia ni superar la resistencia del asiento.'
+      },
+      {
+        col1: 'Equipaje Pesado (Heavy Baggage)',
+        col2: '> 23 kg',
+        col3: 'Etiquetado obligatorio HEAVY',
+        col4: 'Peso real (Límite máx. 32 kg)',
+        col5: 'Cualquier bulto facturado individual que supere los 23 kg de masa.',
+        highlight: false,
+        notes: 'Límite máximo por pieza de 32 kg por seguridad de estiba y salud laboral.'
+      }
+    ],
+    extraNotes: [
+      'Densidad estándar de combustible Jet A-1: 0.80 kg/L (rango operativo admitido: 0.775 a 0.840 kg/L a 15°C).',
+      'Menores no acompañados (UM): se computan según su rango de edad (35 kg si tienen de 2 a 12 años o peso adulto si son mayores de 12 años).',
+      'Animales en cabina (PETC): viajan bajo el asiento y se computan como peso de tráfico real (peso animal + transportín ≤ 8 kg).',
+      'Animales en bodega (AVIH): viajan en compartimento ventilado y se computan con su peso real verificado en báscula.'
     ]
   }
 ];

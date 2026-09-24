@@ -20,7 +20,7 @@ interface OperationalTablesScreenProps {
   onBackToDashboard: () => void;
 }
 
-type TableCategory = 'all' | 'alternates' | 'memory-items' | 'limitations' | 'moa' | 'vfr';
+type TableCategory = 'all' | 'alternates' | 'memory-items' | 'limitations' | 'mass-balance' | 'moa' | 'vfr';
 
 function parseMemorySteps(raw: string): string[] {
   return raw
@@ -91,6 +91,7 @@ export const OperationalTablesScreen: React.FC<OperationalTablesScreenProps> = (
             r.col2.toLowerCase().includes(q) ||
             (r.col3 && r.col3.toLowerCase().includes(q)) ||
             (r.col4 && r.col4.toLowerCase().includes(q)) ||
+            (r.col5 && r.col5.toLowerCase().includes(q)) ||
             (r.notes && r.notes.toLowerCase().includes(q))
         );
 
@@ -107,6 +108,7 @@ export const OperationalTablesScreen: React.FC<OperationalTablesScreenProps> = (
       alternates: OPERATIONAL_TABLES.filter((t) => t.category === 'alternates').length,
       memoryItems: OPERATIONAL_TABLES.filter((t) => t.category === 'memory-items').length,
       limitations: OPERATIONAL_TABLES.filter((t) => t.category === 'limitations').length,
+      massBalance: OPERATIONAL_TABLES.filter((t) => t.category === 'mass-balance').length,
       moa: OPERATIONAL_TABLES.filter((t) => t.category === 'moa').length,
       vfr: OPERATIONAL_TABLES.filter((t) => t.category === 'vfr').length
     }),
@@ -135,6 +137,13 @@ export const OperationalTablesScreen: React.FC<OperationalTablesScreenProps> = (
           icon: <Scale className="w-3.5 h-3.5" />,
           badgeClass: 'ops-tables-badge-limitations',
           cardClass: 'ops-tables-card-limitations'
+        };
+      case 'mass-balance':
+        return {
+          label: 'Pesos & Masas Estándar',
+          icon: <Scale className="w-3.5 h-3.5" />,
+          badgeClass: 'ops-tables-badge-mass',
+          cardClass: 'ops-tables-card-mass'
         };
       case 'moa':
         return {
@@ -174,6 +183,13 @@ export const OperationalTablesScreen: React.FC<OperationalTablesScreenProps> = (
       label: 'Limitaciones E2',
       count: counts.limitations,
       activeClass: 'ops-tables-tab-active-limitations',
+      icon: <Scale className="w-3.5 h-3.5" />
+    },
+    {
+      id: 'mass-balance',
+      label: 'Pesos & Masas (MOA 8.1.8)',
+      count: counts.massBalance,
+      activeClass: 'ops-tables-tab-active-mass',
       icon: <Scale className="w-3.5 h-3.5" />
     },
     {
