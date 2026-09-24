@@ -2,35 +2,92 @@
   {
     "id": "rev_BIN-SOP-124_1789467538062",
     "questionId": "BIN-SOP-124",
-    "reasonCategory": "🔢 Errata en datos numéricos / límites / velocidades",
     "status": "resolved",
     "resolvedAt": "2026-09-15",
-    "resolution": "Corregido Vra bajo 10.000 ft: 240→250 KIAS (RemNote NUMBERS / AOM). Alineado TABLAS UI."
+    "resolution": "Vra bajo 10k: 250 KIAS (auditoría previa v3.4.5)."
   },
   {
     "id": "rev_BIN-SOP-124_1789467765928",
     "questionId": "BIN-SOP-124",
-    "reasonCategory": "🔢 Errata en datos numéricos / límites / velocidades",
     "status": "resolved",
     "resolvedAt": "2026-09-15",
-    "resolution": "Duplicado del reporte BIN-SOP-124; misma corrección 250/270 M0.76."
+    "resolution": "Duplicado; misma corrección Vra 250/270 M0.76."
   },
   {
     "id": "rev_BIN-SOP-119_1789467627972",
     "questionId": "BIN-SOP-119",
-    "reasonCategory": "🔢 Errata en datos numéricos / límites / velocidades",
-    "comment": "Máxima velocidad con tren extendido 265 nudos",
     "status": "resolved",
     "resolvedAt": "2026-09-15",
-    "resolution": "Corregido Vle 250→265 KIAS; Vlo Ext 250 / Ret 220 confirmados. Alineado TABLAS UI."
+    "resolution": "Vle 265 KIAS (auditoría previa v3.4.5)."
   },
   {
     "id": "rev_BIN-SOP-128_1789467727132",
     "questionId": "BIN-SOP-128",
-    "reasonCategory": "💬 Otro motivo / Sugerencia de mejora",
-    "comment": "Revisar",
     "status": "resolved",
     "resolvedAt": "2026-09-15",
-    "resolution": "Dato 20 min SERA.8035 confirmado correcto; mejorados stem, distractores (sin controlled rest) y explicación completa."
+    "resolution": "SERA 20 min confirmado; distractores reforzados (v3.4.5)."
+  },
+  {
+    "id": "rev_BIN-SOP-138_1789468519541",
+    "questionId": "BIN-SOP-138",
+    "comment": "Velocidad máxima wipers 253 nudos",
+    "status": "resolved",
+    "resolvedAt": "2026-09-24",
+    "resolution": "Banco ya en 253 KIAS; TABLAS UI alineada 250→253 (RemNote NUMBERS / AFM)."
+  },
+  {
+    "id": "rev_BIN-SOP-138_1789478962304",
+    "questionId": "BIN-SOP-138",
+    "comment": "VELOCIDAD MAXIMA WIPERS 253 KTS",
+    "status": "resolved",
+    "resolvedAt": "2026-09-24",
+    "resolution": "Duplicado; misma alineación Vw 253 KIAS."
+  },
+  {
+    "id": "rev_CMD-EXP26-012_1789848585799",
+    "questionId": "CMD-EXP26-012",
+    "comment": "ILS CAT I Tipo B + dos pistas → +100 ft / +300 m",
+    "status": "resolved",
+    "resolvedAt": "2026-09-24",
+    "resolution": "Corregido a DA/H+100 ft y RVR+300 m (Tabla 1A Plan Básico con Variaciones)."
+  },
+  {
+    "id": "rev_CMD-EXP26-044_1789848291916",
+    "questionId": "CMD-EXP26-044",
+    "comment": "4 m desaire; GPU 6 m cuba; mangueras 1 m ruedas",
+    "status": "resolved",
+    "resolvedAt": "2026-09-24",
+    "resolution": "Reescrita con distancias MOA 8.2.1: desaire 4 m, GPU 6 m, frenos 1 m."
+  },
+  {
+    "id": "rev_BIN-SOP-113_1790198613770",
+    "questionId": "BIN-SOP-113",
+    "comment": "Memory item no pertenece a Embraer 195e2",
+    "status": "resolved",
+    "resolvedAt": "2026-09-24",
+    "resolution": "Sustituido PITCH TRIM RUNAWAY por JAMMED CONTROL COLUMN (PITCH); eliminado de TABLAS Memory Items."
+  },
+  {
+    "id": "rev_CMD-MOA-MET-025_1790224168540",
+    "questionId": "CMD-MOA-MET-025",
+    "comment": "Símbolos ilegibles en opción A",
+    "status": "resolved",
+    "resolvedAt": "2026-09-24",
+    "resolution": "Eliminado LaTeX; umbral FG/BR en texto plano (≥ 80%)."
+  },
+  {
+    "id": "rev_CMD-EXP26-015_1790226333410",
+    "questionId": "CMD-EXP26-015",
+    "status": "resolved",
+    "resolvedAt": "2026-09-24",
+    "resolution": "Pesos estándar corregidos a 88/70/84 kg (MOA 8.1.8); 84/67 era tabla antigua."
+  },
+  {
+    "id": "rev_CMD-EXAM-050_1790227071745",
+    "questionId": "CMD-EXAM-050",
+    "comment": "Habría primero que especificar si es plan básico con variaciones o plan básico y después poner las cifras correctas",
+    "status": "resolved",
+    "resolvedAt": "2026-09-24",
+    "resolution": "Reescrita: especifica Tabla 1A / NPA Tipo A única → MDA/H+400 ft y RVR/VIS+1.500 m; explicación compara 1A vs 1B y el caso 2× Tipo A (+200/+1000)."
   }
 ]

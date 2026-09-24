@@ -243,20 +243,12 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
         notes: 'Usar únicamente si no hay indicación de falso peso sobre ruedas en despegue.'
       },
       {
-        col1: 'PITCH TRIM RUNAWAY',
-        col2: '1. AP DISC Button: PRESS and HOLD\n2. PITCH TRIM SYS 1 & 2 CUTOUT Buttons: PUSH IN',
-        col3: 'Desconexión eléctrica de ambos canales del compensador de profundidad',
-        col4: 'Volar manualmente manteniendo compensación aerodinámica constante.',
-        highlight: false,
-        notes: 'Los botones CUTOUT aíslan físicamente los actuadores del estabilizador horizontal.'
-      },
-      {
         col1: 'STEERING RUNAWAY (en tierra)',
         col2: '1. STEER DISC Switch: PRESS',
         col3: 'Desconexión del actuador electrohidráulico de la rueda de morro (NWS)',
         col4: 'Mantener el eje de pista mediante pedales de dirección y frenado diferencial.',
         highlight: false,
-        notes: 'El pulsador en el volante corta el control eléctrico del timón de morro.'
+        notes: 'El pulsador en el volante corta el control eléctrico del timón de morro. Nota: PITCH TRIM RUNAWAY no es Memory Item del E195-E2 QRH; el memo de cabeceo es JAMMED CONTROL COLUMN (PITCH).'
       }
     ],
     extraNotes: [
@@ -314,8 +306,8 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
       },
       {
         col1: 'Altitud Máxima para Limpiaparabrisas (Wipers)',
-        col2: '14.000 ft (250 KIAS)',
-        col3: 'Uso de limpiaparabrisas prohibido por encima de 14.000 ft o 250 KIAS',
+        col2: '14.000 ft (253 KIAS)',
+        col3: 'Uso de limpiaparabrisas prohibido por encima de 14.000 ft o 253 KIAS (Vw)',
         col4: 'AFM 2-08 / AOM 1-06',
         highlight: false
       },
