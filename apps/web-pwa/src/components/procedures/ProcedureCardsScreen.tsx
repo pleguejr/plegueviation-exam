@@ -20,7 +20,7 @@ interface ProcedureCardsScreenProps {
 const STEP_TONES = ['sky', 'teal', 'amber', 'indigo', 'rose', 'emerald'] as const;
 
 export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBackToDashboard }) => {
-  const [selectedCategory, setSelectedCategory] = useState<'all' | 'briefings' | 'normal' | 'emergency'>('all');
+  const [selectedCategory, setSelectedCategory] = useState<'all' | 'briefings' | 'normal' | 'emergency' | 'special'>('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [expandedCardIds, setExpandedCardIds] = useState<Record<string, boolean>>(() => {
     const initial: Record<string, boolean> = {};
@@ -76,6 +76,7 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
       all: PROCEDURE_CARDS.length,
       briefings: PROCEDURE_CARDS.filter((c) => c.category === 'briefings').length,
       normal: PROCEDURE_CARDS.filter((c) => c.category === 'normal').length,
+      special: PROCEDURE_CARDS.filter((c) => c.category === 'special').length,
       emergency: PROCEDURE_CARDS.filter((c) => c.category === 'emergency').length
     }),
     []
@@ -87,6 +88,8 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
         return { label: 'Briefing', className: 'procedure-badge-briefing', icon: <BookOpen className="w-3.5 h-3.5" /> };
       case 'normal':
         return { label: 'Ops Normal', className: 'procedure-badge-normal', icon: <Compass className="w-3.5 h-3.5" /> };
+      case 'special':
+        return { label: 'Especial / Compl.', className: 'procedure-badge-special', icon: <Sparkles className="w-3.5 h-3.5" /> };
       case 'emergency':
         return { label: 'Emergencia', className: 'procedure-badge-emergency', icon: <Flame className="w-3.5 h-3.5" /> };
     }
@@ -175,6 +178,7 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
               ['all', 'Todos', counts.all],
               ['briefings', 'Briefings', counts.briefings],
               ['normal', 'Normales', counts.normal],
+              ['special', 'Especiales / Compl.', counts.special],
               ['emergency', 'Emergencias', counts.emergency]
             ] as const
           ).map(([id, label, count]) => (

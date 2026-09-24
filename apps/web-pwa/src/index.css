@@ -2141,6 +2141,10 @@ table th {
   border-color: rgba(245, 168, 168, 0.35);
   background: rgba(60, 24, 24, 0.35);
 }
+.procedure-card-special {
+  border-color: rgba(168, 85, 247, 0.35);
+  background: rgba(22, 12, 41, 0.35);
+}
 .procedure-chip {
   display: inline-flex;
   align-items: center;
@@ -2153,6 +2157,7 @@ table th {
 }
 .procedure-badge-briefing { background: rgba(14,165,233,0.15); color: #7dd3fc; border-color: rgba(14,165,233,0.4); }
 .procedure-badge-normal { background: rgba(16,185,129,0.15); color: #6ee7b7; border-color: rgba(16,185,129,0.4); }
+.procedure-badge-special { background: rgba(168, 85, 247, 0.18); color: #d8b4fe; border-color: rgba(168, 85, 247, 0.4); }
 .procedure-badge-emergency { background: rgba(248, 113, 113, 0.15); color: #fecaca; border-color: rgba(248, 113, 113, 0.4); }
 .procedure-memory-recall {
   background: #f97316;
@@ -2666,6 +2671,10 @@ table th {
   background: #a7f3d0 !important;
   border-color: #059669 !important;
 }
+.theme-light .procedure-card-special {
+  background: #f5f3ff !important;
+  border-color: #c084fc !important;
+}
 .theme-light .procedure-card-emergency {
   background: #fef2f2 !important;
   border-color: #f5b0b0 !important;
@@ -2829,6 +2838,7 @@ table th {
 .theme-light .procedure-diagram text { fill: #0f172a !important; }
 .theme-light .procedure-badge-briefing { background: #e0f2fe; color: #0369a1; }
 .theme-light .procedure-badge-normal { background: #d1fae5; color: #047857; }
+.theme-light .procedure-badge-special { background: #f3e8ff; color: #7e22ce; border-color: #d8b4fe; }
 .theme-light .procedure-badge-emergency { background: #fde8e8; color: #c45c5c; border-color: #f5b0b0; }
 .theme-light .procedure-tab-active.procedure-tab-rose {
   background: #e57373 !important;
