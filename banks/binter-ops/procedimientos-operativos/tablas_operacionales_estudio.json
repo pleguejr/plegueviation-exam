@@ -446,34 +446,35 @@
   {
     "id": "BIN-SOP-113",
     "subject_id": "binter_ops",
-    "learning_objective": "TABLAS Memory Items: PITCH TRIM RUNAWAY",
-    "stem": "¿Cuáles son los Memory Items de PITCH TRIM RUNAWAY?",
+    "learning_objective": "TABLAS Memory Items: JAMMED CONTROL COLUMN (PITCH)",
+    "stem": "¿Cuál es el Memory Item oficial del E195-E2 ante JAMMED CONTROL COLUMN (PITCH)?",
     "options": [
       {
         "id": "A",
-        "text": "AP DISC PRESS and HOLD, luego PITCH TRIM SYS 1 & 2 CUTOUT PUSH IN",
+        "text": "ELEVATOR DISCONNECT Handle: PULL",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Solo ELEVATOR DISCONNECT Handle PULL",
+        "text": "AILERON DISCONNECT Handle: PULL",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "AILERON DISCONNECT Handle PULL",
+        "text": "AP DISC PRESS and HOLD y PITCH TRIM SYS 1 & 2 CUTOUT PUSH IN",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "STEER DISC Switch PRESS en vuelo",
+        "text": "STEER DISC Switch: PRESS en vuelo",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "PITCH TRIM RUNAWAY: mantener AP DISC y CUTOUT ambos canales. Elevator disconnect es para jammed column.",
+      "text": "En el QRH del **E195-E2** el Memory Item de agarrotamiento en cabeceo es **JAMMED CONTROL COLUMN (PITCH): ELEVATOR DISCONNECT Handle PULL**. No existe Memory Item «PITCH TRIM RUNAWAY» en la lista E2 (RemNote / QRH Rev.19); esa secuencia pertenece a generaciones anteriores o a procedimientos no-memo.",
       "references": [
-        "TABLAS memory-items-e2 · PITCH TRIM RUNAWAY"
+        "TABLAS memory-items-e2 · JAMMED CONTROL COLUMN (PITCH)",
+        "RemNote MEMORY ITEMS — E195-E2 QRH Section 1"
       ]
     },
     "metadata": {

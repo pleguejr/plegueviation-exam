@@ -2225,34 +2225,35 @@
   {
     "id": "BIN-SOP-113",
     "subject_id": "binter_ops",
-    "learning_objective": "TABLAS Memory Items: PITCH TRIM RUNAWAY",
-    "stem": "¿Cuáles son los Memory Items de PITCH TRIM RUNAWAY?",
+    "learning_objective": "TABLAS Memory Items: JAMMED CONTROL COLUMN (PITCH)",
+    "stem": "¿Cuál es el Memory Item oficial del E195-E2 ante JAMMED CONTROL COLUMN (PITCH)?",
     "options": [
       {
         "id": "A",
-        "text": "AP DISC PRESS and HOLD, luego PITCH TRIM SYS 1 & 2 CUTOUT PUSH IN",
+        "text": "ELEVATOR DISCONNECT Handle: PULL",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Solo ELEVATOR DISCONNECT Handle PULL",
+        "text": "AILERON DISCONNECT Handle: PULL",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "AILERON DISCONNECT Handle PULL",
+        "text": "AP DISC PRESS and HOLD y PITCH TRIM SYS 1 & 2 CUTOUT PUSH IN",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "STEER DISC Switch PRESS en vuelo",
+        "text": "STEER DISC Switch: PRESS en vuelo",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "PITCH TRIM RUNAWAY: mantener AP DISC y CUTOUT ambos canales. Elevator disconnect es para jammed column.",
+      "text": "En el QRH del **E195-E2** el Memory Item de agarrotamiento en cabeceo es **JAMMED CONTROL COLUMN (PITCH): ELEVATOR DISCONNECT Handle PULL**. No existe Memory Item «PITCH TRIM RUNAWAY» en la lista E2 (RemNote / QRH Rev.19); esa secuencia pertenece a generaciones anteriores o a procedimientos no-memo.",
       "references": [
-        "TABLAS memory-items-e2 · PITCH TRIM RUNAWAY"
+        "TABLAS memory-items-e2 · JAMMED CONTROL COLUMN (PITCH)",
+        "RemNote MEMORY ITEMS — E195-E2 QRH Section 1"
       ]
     },
     "metadata": {
@@ -4764,35 +4765,35 @@
   {
     "id": "CMD-EXP26-012",
     "subject_id": "command-upgrade",
-    "learning_objective": "MOA 8.1.7.2.5 (Tabla 1A) - Mínimos de Planificación para Alternativo con 2 o más aproximaciones de precisión",
-    "stem": "Al seleccionar un aeródromo alternativo de destino que cuenta con dos pistas independientes con aproximaciones de precisión ILS operativas (DA/H de 200 ft y RVR de 550 m en ambas), aplicando el Plan Básico con Variaciones de Binter, ¿qué mínimos meteorológicos deben pronosticarse en ETA ±1h?",
+    "learning_objective": "MOA 8.1.7.2.5 (Tabla 1A) - Mínimos Plan Básico con Variaciones: 2 aproximaciones Tipo B a pistas separadas",
+    "stem": "Al seleccionar un aeródromo alternativo de destino con dos pistas independientes y aproximaciones de precisión ILS CAT I (DA/H 200 ft / RVR 550 m) en ambas, aplicando el Plan Básico con Variaciones de Binter (Tabla 1A), ¿qué mínimos meteorológicos deben pronosticarse en ETA ±1 h?",
     "options": [
       {
         "id": "A",
-        "text": "Techo de nubes en o por encima de la DA/H publicada (200 ft) y RVR/Visibilidad en o por encima de 800 m.",
+        "text": "Techo DA/H + 100 ft (300 ft) y RVR + 300 m (850 m).",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Techo 400 ft y visibilidad 1.500 m.",
+        "text": "Techo DA/H + 150 ft (350 ft) y RVR + 450 m (1.000 m).",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Techo 200 ft y RVR 550 m sin ningún incremento.",
+        "text": "Techo en o por encima de la DA/H (200 ft) y RVR/Visibilidad ≥ 800 m.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Techo 600 ft y visibilidad 2.400 m.",
+        "text": "Techo 200 ft y RVR 550 m sin ningún incremento.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Conforme a la Tabla 1A del MOA 8.1.7.2.5 (Plan Básico con Variaciones de Binter):\n- Cuando el aeródromo alternativo dispone de **al menos dos aproximaciones de precisión independientes** utilizables para pistas diferentes:\n- Requisito de techo: Techo $\\ge \\text{DA/H}$ de la aproximación utilizada.\n- Requisito de visibilidad: RVR $\\ge 800\\text{ m}$ (o visibilidad equivalente).",
+      "text": "ILS CAT I (DH 200 ft) es aproximación **Tipo B**. Con **dos o más operaciones Tipo B en uso a dos pistas separadas**, la Tabla 1A (Plan Básico con Variaciones, MOA 8.1.7.2.5) exige **DA/H + 100 ft** y **RVR + 300 m** → **300 ft / 850 m**. La fila «una sola Tipo B» sería +150 ft / +450 m; no se usan los mínimos publicados sin incremento ni el umbral genérico de 800 m.",
       "references": [
-        "MOA Binter ED06 RN27 - Subcapítulo 8.1.7.2.5: Tabla 1A de Mínimos de Planificación",
-        "EASA Part-SPA.LVO / AMC1 CAT.OP.MPA.185"
+        "MOA Binter ED06 RN27 - 8.1.7.2.5 Tabla 1A (Plan Básico con Variaciones)",
+        "TABLAS OPS alternates-variations"
       ]
     },
     "metadata": {
@@ -4884,35 +4885,35 @@
   {
     "id": "CMD-EXP26-015",
     "subject_id": "command-upgrade",
-    "learning_objective": "MOA 8.1.8.3 - Pesos Estándar de Pasajeros y Equipaje en Operaciones de Línea",
-    "stem": "En la confección de la hoja de carga del E195-E2 con pesos estándar de pasajeros según el MOA 8.1.8.3, ¿cuál es el peso estándar asignado por defecto a un pasajero adulto (incluyendo equipaje de mano)?",
+    "learning_objective": "MOA 8.1.8.3 - Pesos estándar de pasajeros (tabla oficial)",
+    "stem": "En la confección de la hoja de carga del E195-E2 con pesos estándar según MOA 8.1.8 / CAT.POL.MAB.100, ¿cuál es la tabla de masas de pasajeros aplicable?",
     "options": [
       {
         "id": "A",
-        "text": "Varón: 84 kg; Mujer: 67 kg (o 76/84 kg según tabla combinada de operador); Niños (2 a 12 años): 35 kg; Bebés (<2 años): 0 kg sin asiento.",
+        "text": "Varón: 88 kg; Mujer: 70 kg; Adulto mixto: 84 kg; Niño (2–12 años): 35 kg; Bebé (<2 años sin asiento): 0 kg.",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Adulto único: 95 kg independientemente del sexo.",
+        "text": "Varón: 84 kg; Mujer: 67 kg; Niño: 35 kg; Bebé: 0 kg (tabla antigua EASA).",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Varón: 70 kg; Mujer: 55 kg; Niños: 20 kg.",
+        "text": "Varón: 70 kg; Mujer: 55 kg; Niño: 20 kg; Bebé: 10 kg.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Todos los pasajeros se pesan individualmente en el mostrador de facturación sin excepciones.",
+        "text": "Adulto único: 95 kg independientemente del sexo; niños y bebés no se computan.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "De acuerdo con EASA CAT.POL.MAB.100 y MOA 8.1.8.3, para aviones de transporte comercial con 30 o más asientos de pasajeros:\n- Varones adultos: 84 kg (incluyendo equipaje de mano de 6 kg).\n- Mujeres adultas: 67 kg (incluyendo equipaje de mano de 6 kg).\n- Niños (2 a 12 años): 35 kg.\n- Bebés (menores de 2 años en brazos): 0 kg (o peso marginal incluido en el adulto).",
+      "text": "Tabla oficial MOA 8.1.8 / CAT.POL.MAB.100:\n| Categoría | Masa |\n| :--- | :--- |\n| Adulto varón | **88 kg** |\n| Adulto mujer | **70 kg** |\n| Adulto mixto (all adult) | **84 kg** |\n| Niño (2–12 años) | **35 kg** |\n| Bebé (<2 años en regazo) | **0 kg** |\n\nLos valores 84/67 kg corresponden a tablas antiguas y no deben usarse en la hoja de carga actual de Binter.",
       "references": [
-        "MOA Binter ED06 RN27 - Subcapítulo 8.1.8.3: Valores de Masa Estándar de Pasajeros y Equipaje",
-        "EASA Part-CAT.POL.MAB.100: Mass and balance, loading"
+        "MOA Binter ED06 - 8.1.8 Masa y centrado (pesos estándar)",
+        "EASA CAT.POL.MAB.100"
       ]
     },
     "metadata": {
@@ -6047,35 +6048,35 @@
   {
     "id": "CMD-EXP26-044",
     "subject_id": "command-upgrade",
-    "learning_objective": "MOA 8.2.1.2 - Distancias Mínimas de Seguridad en Plataforma durante Repostaje",
-    "stem": "Durante el reabastecimiento de combustible con pasajeros a bordo, ¿cuáles son las distancias mínimas de seguridad obligatorias que debe garantizar el agente de handling alrededor del avión y equipos de soporte según el MOA 8.2.1.2.1?",
+    "learning_objective": "MOA 8.2.1 - Distancias de seguridad en repostaje (desaire, GPU y frenos)",
+    "stem": "Durante el reabastecimiento de combustible, ¿qué distancias mínimas de seguridad establece el MOA 8.2.1 respecto a desaires alares, GPU y frenos de rueda?",
     "options": [
       {
         "id": "A",
-        "text": "Radio de 6 metros alrededor del avión y de 3 metros para el resto de equipos de soporte en tierra.",
+        "text": "4 m de radio hacia las aperturas de desaire en puntas alares; GPU ≥ 6 m de la cuba; mangueras ≥ 1 m de los frenos de rueda.",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Radio de 15 metros alrededor de los motores y 10 metros de la cisterna.",
+        "text": "6 m de radio alrededor de todo el avión y 3 m únicamente para el resto de equipos de soporte en tierra.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Radio de 2 metros en todo el perímetro.",
+        "text": "15 m alrededor de los motores y 10 m de separación fija respecto a la cisterna.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No se estipula distancia fija, rigiendo únicamente la señalización pintada en el stand.",
+        "text": "2 m en todo el perímetro del stand, sin requisitos específicos de GPU ni frenos.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Conforme al MOA 8.2.1.2.1 (pág. 459):\n*\"Se asegurará de que existe una distancia mínima de seguridad, de 6m de radio de distancia alrededor del avión, así como de 3m para el resto de equipos de soporte en tierra.\"*",
+      "text": "MOA 8.2.1 (Instrucciones de operación en tierra):\n- Zona de seguridad **4 m de radio** hacia las **aperturas de desaire** del tanque en puntas alares (prohibido tránsito de vehículos).\n- Si hay **GPU** en funcionamiento: situarla **al menos a 6 m** de la unidad de suministro (cuba).\n- Mantener **al menos 1 m** hacia los **frenos de las ruedas**.\n\nLa cifra «6 m alrededor del avión / 3 m GSE» aparece en otro párrafo de obligaciones del handling y no sustituye estas distancias específicas de repostaje.",
       "references": [
-        "MOA Binter ED06 RN27 - Subcapítulo 8.2.1.2.1 (pág. 459): Procedimientos para el Agente de Handling",
-        "Reglamento de Seguridad en Plataforma Aena"
+        "MOA Binter ED06 - 8.2.1 Procedimientos de gestión de combustible",
+        "MOA 8.2 Instrucciones de operación en tierra (desaire 4 m; GPU 6 m; frenos 1 m)"
       ]
     },
     "metadata": {
@@ -42802,7 +42803,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Niebla (FG) se reporta cuando la visibilidad es inferior a 1.000 metros; Neblina (BR) cuando la visibilidad es de 1.000 m a 5.000 m con humedad relativa $\\ge 80\\%$",
+        "text": "Niebla (FG): visibilidad inferior a 1.000 m; Neblina (BR): visibilidad de 1.000 m a 5.000 m con humedad relativa ≥ 80%",
         "is_correct": true
       },
       {
@@ -42822,7 +42823,7 @@
       }
     ],
     "explanation": {
-      "text": "Norma OACI/MOA: **FG (Fog)** = Visibilidad **< 1.000 m**; **BR (Mist)** = Visibilidad entre **1.000 m y 5.000 m** con humedad alta.",
+      "text": "Norma OACI/MOA 8.1.6: **FG (Fog)** = visibilidad **< 1.000 m**; **BR (Mist)** = visibilidad entre **1.000 m y 5.000 m** con humedad relativa alta (≥ 80%).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
       ]

@@ -4,7 +4,19 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 
 ---
 
-## 🚀 Versión Actual: v3.4.6 (2026-09-19)
+## 🚀 Versión Actual: v3.4.7 (2026-09-24)
+
+### 🔍 Auditoría reportes PWA (lote 2)
+- **BIN-SOP-138**: TABLAS UI wipers **250 → 253 KIAS** (banco ya correcto).
+- **BIN-SOP-113**: eliminado Memory Item espurio *PITCH TRIM RUNAWAY*; sustituido por **JAMMED CONTROL COLUMN (PITCH)**.
+- **CMD-EXP26-012**: Tabla 1A variaciones → **DA/H+100 ft / RVR+300 m** (2× Tipo B).
+- **CMD-EXP26-044**: distancias MOA 8.2.1 → **desaire 4 m / GPU 6 m / frenos 1 m**.
+- **CMD-EXP26-015**: pesos estándar **88/70/84 kg** (no 84/67).
+- **CMD-MOA-MET-025**: opción A sin LaTeX ilegible.
+
+---
+
+## ☀️ Versión v3.4.6 (2026-09-19)
 
 ### ☀️ Command Course — título y contraste día
 - Eliminado el encabezado «Examen Convocatoria Anterior (Command Course)» del banco especial (queda el badge + descripción).
