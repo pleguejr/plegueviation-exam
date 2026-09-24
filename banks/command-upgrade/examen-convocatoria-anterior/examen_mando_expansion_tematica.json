@@ -535,31 +535,31 @@
     "id": "CMD-EXP26-015",
     "subject_id": "command-upgrade",
     "learning_objective": "MOA 8.1.8.3 - Pesos Estándar de Pasajeros y Equipaje en Operaciones de Línea",
-    "stem": "En la confección de la hoja de carga del E195-E2 con pesos estándar de pasajeros según el MOA 8.1.8.3, ¿cuál es el peso estándar asignado por defecto a un pasajero adulto (incluyendo equipaje de mano)?",
+    "stem": "En la confección de la hoja de carga con pesos estándar de pasaje según el MOA 8.1.8.3 (y EASA CAT.POL.MAB.100), ¿cuáles son los pesos estándar asignados a los pasajeros (incluyendo equipaje de mano)?",
     "options": [
       {
         "id": "A",
-        "text": "Varón: 84 kg; Mujer: 67 kg (o 76/84 kg según tabla combinada de operador); Niños (2 a 12 años): 35 kg; Bebés (<2 años): 0 kg sin asiento.",
+        "text": "Varón: 88 kg | Mujer: 70 kg | Adulto mixto (todos): 84 kg | Niños (2 a 12 años): 35 kg | Bebés (< 2 años sin asiento): 0 kg",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Adulto único: 95 kg independientemente del sexo.",
+        "text": "Varón: 84 kg | Mujer: 67 kg | Adulto mixto: 76 kg | Niños: 30 kg | Bebés: 5 kg",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Varón: 70 kg; Mujer: 55 kg; Niños: 20 kg.",
+        "text": "Varón: 75 kg | Mujer: 60 kg | Adulto mixto: 70 kg | Niños: 25 kg | Bebés: 0 kg",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Todos los pasajeros se pesan individualmente en el mostrador de facturación sin excepciones.",
+        "text": "Varón: 95 kg | Mujer: 80 kg | Adulto mixto: 90 kg | Niños: 40 kg | Bebés: 10 kg",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "De acuerdo con EASA CAT.POL.MAB.100 y MOA 8.1.8.3, para aviones de transporte comercial con 30 o más asientos de pasajeros:\n- Varones adultos: 84 kg (incluyendo equipaje de mano de 6 kg).\n- Mujeres adultas: 67 kg (incluyendo equipaje de mano de 6 kg).\n- Niños (2 a 12 años): 35 kg.\n- Bebés (menores de 2 años en brazos): 0 kg (o peso marginal incluido en el adulto).",
+      "text": "De acuerdo con el MOA 8.1.8.3 y la normativa EASA CAT.POL.MAB.100, la tabla oficial de masas estándar de pasajeros con equipaje de mano (6 kg) incluido es:\n\n### 📊 Tabla de Pesos Estándar de Pasajeros (MOA 8.1.8)\n| Categoría de Pasajero | Masa Estándar Asignada |\n| :--- | :--- |\n| **Adulto Varón (Male)** | **88 kg** (incluye 6 kg mano) |\n| **Adulto Mujer (Female)** | **70 kg** (incluye 6 kg mano) |\n| **Adulto Mixto (All Adult)** | **84 kg** (incluye 6 kg mano) |\n| **Niño / Child (2 a 12 años)** | **35 kg** |\n| **Bebé / Infant (< 2 años sin asiento)** | **0 kg** (computado en el adulto acompañante) |",
       "references": [
         "MOA Binter ED06 RN27 - Subcapítulo 8.1.8.3: Valores de Masa Estándar de Pasajeros y Equipaje",
         "EASA Part-CAT.POL.MAB.100: Mass and balance, loading"
@@ -2467,6 +2467,45 @@
         "MOA Binter ED06 RN27 - Capítulo 1.4: Responsabilidades del Comandante",
         "MOA Binter ED06 RN27 - Capítulo 11: Investigación y Preservación de Pruebas",
         "Reglamento (UE) Nº 996/2010"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "CMD-EXP26-066",
+    "subject_id": "command-upgrade",
+    "learning_objective": "MOA 8.1.8.3 / EASA CAT.POL.MAB.100 - Masas Estándar de la Tripulación (Técnica y Cabina)",
+    "stem": "En el cálculo del Peso Operativo en Seco (DOW) y confección de la hoja de carga según el MOA 8.1.8.3 y la normativa EASA, ¿cuáles son los pesos estándar asignados a los miembros de la tripulación técnica y tripulación de cabina (incluyendo su equipaje reglamentario)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tripulación técnica (Flight Crew): 85 kg por piloto | Tripulación de cabina (Cabin Crew / TCP): 75 kg por TCP",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Tripulación técnica: 88 kg por piloto | Tripulación de cabina: 70 kg por TCP",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Tripulación técnica: 80 kg por piloto | Tripulación de cabina: 65 kg por TCP",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Tripulación técnica: 90 kg por piloto | Tripulación de cabina: 85 kg por TCP",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Conforme al **MOA 8.1.8.3** y **EASA CAT.POL.MAB.100(e)** (y AMC1 CAT.POL.MAB.100(e)), los valores de masa estándar para la tripulación computados en el DOW son:\n\n### 📊 Tabla de Masas Estándar de Tripulación (MOA 8.1.8)\n| Colectivo de Tripulación | Masa Persona | Equipaje Reglamentario | Masa Total Asignada |\n| :--- | :--- | :--- | :--- |\n| **Tripulante de Vuelo (Flight Crew)** | 75 kg | 10 kg (maletín de vuelo/equipaje) | **85 kg** |\n| **Tripulante de Cabina (Cabin Crew / TCP)** | 65 kg | 10 kg (equipaje de servicio) | **75 kg** |\n\n> *Nota:* Los valores de 88 kg (varón) y 70 kg (mujer) corresponden a los pasajeros estándar.",
+      "references": [
+        "MOA Binter ED06 RN27 - Subcapítulo 8.1.8.3: Masas Estándar de Tripulación y Pasajeros",
+        "EASA Part-CAT.POL.MAB.100(e): Mass and balance, loading - Crew members",
+        "AMC1 CAT.POL.MAB.100(e)"
       ]
     },
     "metadata": {
