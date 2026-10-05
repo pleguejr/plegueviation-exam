@@ -1263,22 +1263,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Aplicar empuje máximo (MAX thrust / TO/GA), desconectar piloto automático si procede, seguir la guía de pitch del Flight Director hacia la actitud de escape de windshear sin modificar la configuración de flaps ni tren de aterrizaje hasta estar fuera del fenómeno.",
+        "text": "Aplicar empuje máximo (MAX thrust / TO/GA), seguir la guía de pitch del Flight Director hacia la actitud de escape sin modificar la configuración de flaps ni tren de aterrizaje hasta confirmar la salida segura del fenómeno.",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Subir el tren de aterrizaje y poner flaps 0 inmediatamente para reducir la resistencia.",
+        "text": "Retraer inmediatamente el tren de aterrizaje y reducir flaps a posición 0 para disminuir la resistencia parásita mientras se acelera en vuelo horizontal.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Cortar gases para evitar exceso de velocidad y continuar el planeo.",
+        "text": "Reducir palancas de empuje a IDLE para evitar una sobrevelocidad estructural y mantener el régimen de descenso estándar hacia la pista.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Realizar un viraje inmediato de 90 grados para salir de la microrráfaga.",
+        "text": "Ejecutar un viraje escarpado inmediato de 90 grados hacia el viento relativo desconectando todos los directores de vuelo para evitar la microrráfaga.",
         "is_correct": false
       }
     ],
@@ -1454,22 +1454,22 @@
     "options": [
       {
         "id": "A",
-        "text": "90 kg (200 lb), ya que hasta 3 ítems no conllevan penalización y se reducen 45 kg (100 lb) por cada ítem adicional a partir del cuarto (2 ítems x 45 kg).",
+        "text": "90 kg (200 lb), ya que hasta 3 ítems no conllevan penalización y se deducen 45 kg (100 lb) por cada ítem adicional a partir del cuarto (2 ítems x 45 kg).",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "225 kg (45 kg x 5 ítems).",
+        "text": "225 kg (500 lb), calculados aplicando una deducción lineal acumulada de 45 kg (100 lb) por cada uno de los 5 elementos faltantes desde el primer ítem.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Cero penalización, ya que todos son individualmente despreciables.",
+        "text": "0 kg (sin penalización), ya que cualquier elemento catalogado bajo CDL como individualmente despreciable no genera impacto en peso sin importar la cantidad.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "450 kg fijos por superar el límite de 3 ítems.",
+        "text": "450 kg (1.000 lb), correspondientes a la penalización fija de seguridad requerida por el fabricante al superarse el límite básico de 3 ítems CDL.",
         "is_correct": false
       }
     ],
@@ -1573,17 +1573,17 @@
       },
       {
         "id": "B",
-        "text": "Que el vuelo tenga una duración inferior a 30 minutos.",
+        "text": "Que el vuelo tenga una duración de etapa programada inferior a 45 minutos y se opere exclusivamente dentro del espacio aéreo controlado interinsular.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Que no haya pasajeros a bordo (vuelo ferry exclusivamente).",
+        "text": "Que la operación se realice como vuelo ferry de posicionamiento sin pasaje a bordo y con autorización expresa del Director de Operaciones.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Que el aeródromo de destino disponga de 3 pistas paralelas activas.",
+        "text": "Que el aeródromo de destino disponga de al menos dos pistas independientes en servicio con aproximaciones de precisión CAT II/III operativas.",
         "is_correct": false
       }
     ],
@@ -1839,17 +1839,17 @@
       },
       {
         "id": "B",
-        "text": "+/- 15 kts.",
+        "text": "+/- 10 kts respecto de la Vapp calculada, admitiéndose desviaciones transitorias de hasta 15 kts si el empuje automático está en modo retard.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "+/- 20 kts siempre que no se active el Stick Shaker.",
+        "text": "+/- 15 kts respecto de la velocidad de aproximación siempre que no se active el sistema Stick Shaker ni se superen los límites de Flap.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Cualquier velocidad entre Vref y Vfe.",
+        "text": "Cualquier velocidad estabilizada comprendida entre la Vref de aterrizaje y la velocidad máxima de extensión de flaps (Vfe) para esa configuración.",
         "is_correct": false
       }
     ],
@@ -2067,17 +2067,17 @@
       },
       {
         "id": "B",
-        "text": "Viento en calma y alabeo fijo de 30°.",
+        "text": "Viento en calma en toda el área protegida y un alabeo fijo estándar de 25° mantenido a velocidad constante de aproximación.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Viento de 15 kt y alabeo máximo de 15°.",
+        "text": "Un viento constante de 15 kt en cola durante el tramo base y un ángulo de alabeo máximo limitado a 15° por seguridad de pasaje.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Viento de 40 kt y alabeo de 25°.",
+        "text": "Un viento de 40 kt de componente cruzada y un alabeo continuo de 30° para minimizar el radio de giro sobre obstáculos.",
         "is_correct": false
       }
     ],
@@ -2143,17 +2143,17 @@
       },
       {
         "id": "B",
-        "text": "Cada 12 meses sin excepciones.",
+        "text": "Mediante una pesada anual obligatoria en hangar, o cuando las reparaciones estructurales acumuladas superen los 250 kg de masa seca.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Cada 2 años o si el peso varía más de 500 kg.",
+        "text": "Mediante pesada cada 2 años para reactores y 3 años para turbohélices, o tras cualquier cambio de motor o unidad de potencia auxiliar.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Solo cuando la aeronave se someta a un cambio de pintura completo.",
+        "text": "Únicamente tras la realización de una gran parada de mantenimiento (C-Check) o cuando la aeronave se someta a un repintado completo de fuselaje.",
         "is_correct": false
       }
     ],
@@ -2257,17 +2257,17 @@
       },
       {
         "id": "B",
-        "text": "Realizar una medición manual con varilla en cada escala intermedia.",
+        "text": "Realizar una inspección visual directa con varilla en cada motor durante la escala intermedia antes de autorizar el cierre de compuertas.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Rellenar personalmente los depósitos de aceite antes del primer vuelo del día.",
+        "text": "Efectuar el rellenado manual de los depósitos de lubricante antes del primer despegue del día anotando los litros exactos en la hoja de carga.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Calcular el consumo horario estimado y sumarlo al plan de vuelo operacional.",
+        "text": "Calcular el consumo horario teórico en base al tiempo de vuelo previsto y descontarlo de la capacidad nominal registrada en el manual de vuelo.",
         "is_correct": false
       }
     ],
@@ -2295,17 +2295,17 @@
       },
       {
         "id": "B",
-        "text": "Únicamente notificarlo por radio a la oficina de operaciones sin dejar constancia escrita.",
+        "text": "Notificar verbalmente el resultado positivo a la frecuencia de coordinación de rampa de la escala y registrar únicamente las horas de vuelo en el sistema EFB.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Emitir un Certificado de Aptitud para el Servicio (CRS) firmado por el Comandante.",
+        "text": "Emitir y firmar un Certificado de Aptitud para el Servicio (CRS) operacional provisional en el libro técnico en sustitución del técnico de mantenimiento.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Solicitar a AESA una nueva inspección presencial en el hangar.",
+        "text": "Solicitar a la autoridad aeronáutica (AESA) una inspección presencial en rampa antes de poder despachar nuevamente el avión para vuelos en baja visibilidad.",
         "is_correct": false
       }
     ],
@@ -2409,17 +2409,17 @@
       },
       {
         "id": "B",
-        "text": "Hasta 4 horas en cualquier tipo de tripulación.",
+        "text": "Hasta 4 horas de prolongación para cualquier composición de tripulación previa autorización verbal del CCO.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Máximo 30 minutos.",
+        "text": "Máximo 45 minutos si el vuelo de regreso es el último sector de la serie y no existen tráficos en espera.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "1 hora exclusivamente si el vuelo es diurno.",
+        "text": "Hasta 1 hora exclusivamente en vuelos diurnos que no incluyan cruces de sectores nocturnos (WN4).",
         "is_correct": false
       }
     ],
@@ -2447,17 +2447,17 @@
       },
       {
         "id": "B",
-        "text": "Rebobinar y borrar las cintas antes de abandonar la cabina de vuelo.",
+        "text": "Rebobinar y borrar inmediatamente las pistas de audio de cabina antes de abandonar el avión para salvaguardar la privacidad de la tripulación técnica.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Extraer físicamente las cajas negras y llevarlas a la sede central de la compañía.",
+        "text": "Desmontar manualmente las unidades de memoria blindadas de la cola del avión y trasladarlas en mano a la sede central de la aerolínea.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Dejar los sistemas encendidos para que sigan grabando el audio de la escala.",
+        "text": "Mantener todos los generadores y bombas eléctricas activados durante la escala para que los micrófonos de ambiente continúen registrando el sonido en tierra.",
         "is_correct": false
       }
     ],
