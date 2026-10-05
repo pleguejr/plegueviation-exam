@@ -1,0 +1,927 @@
+[
+  {
+    "id": "NJ-AERO-001",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Aerodynamics: High Altitude Aerodynamics & Coffin Corner",
+    "stem": "In high-altitude jet transport operations, what defines the operational aerodynamic phenomenon known as 'Coffin Corner'?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The flight envelope region where the low-speed stall margin (Vs) and the high-speed Mach buffet boundary (Mmo) converge to a very narrow airspeed margin.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "The specific altitude where jet engines flame out due to lack of atmospheric oxygen regardless of airspeed.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "The condition where the aircraft pitch trim runs to its electrical mechanical stop during steep descent.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "The structural failure point where cabin differential pressure exceeds maximum relief valve capacity.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ High Altitude Aerodynamics: Coffin Corner\n* **Definition:** As a jet aircraft climbs to high altitudes in the stratosphere, true airspeed for stall (Vs) increases while the speed of sound decreases, causing the critical Mach number (M_CRIT / MMO) to drop.\n* **The 'Corner':** At the aerodynamic ceiling, low-speed stall buffet and high-speed Mach buffet merge into a narrow operational corridor (sometimes less than 5 to 10 knots).\n* **Recovery / Mitigation:** Descend to a lower cruise flight level with greater buffet margin.",
+      "references": [
+        "EASA CS-25 Subpart B (Flight) • FAA Aerodynamics for Naval Aviators"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-AERO-002",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Aerodynamics: Mach Tuck & Mach Trim",
+    "stem": "What causes the aerodynamic phenomenon known as 'Mach Tuck' as a swept-wing jet approaches its critical Mach number, and how is it automatically mitigated?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rearward movement of the Center of Pressure (CP) and loss of downwash on the horizontal stabilizer due to shockwave formation on wing roots, mitigated by the Mach Trim system.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Forward movement of the Center of Gravity (CG) due to fuel freezing in outboard tanks, mitigated by fuel crossfeed.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Inward flex of the swept wingtips reducing effective wingspan, mitigated by active aileron trim.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Separation of airflow over the rudder pedals creating uncommanded yawing moments, mitigated by the Yaw Damper.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ Mach Tuck & Mach Trim\n* **Mechanism:** As local flow over the upper wing surface goes supersonic, shockwaves form and shift the Center of Pressure (CP) **rearwards**. Concurrently, shock-induced boundary layer separation at the wing root reduces the downwash angle reaching the horizontal stabilizer, creating an uncommanded nose-down pitching tendency.\n* **Mitigation:** Modern business jets incorporate an automatic **Mach Trim System** that applies nose-up stabilizer trim proportionally as Mach number increases.",
+      "references": [
+        "EASA CS-25.672 • NetJets Technical Pilot Guide"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "NJ-AERO-003",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Aerodynamics: Swept Wing Dutch Roll & Yaw Damper",
+    "stem": "Why are swept-wing executive jets inherently prone to 'Dutch Roll', and what is the operational limitation if the Yaw Damper is inoperative before takeoff?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Swept wings generate strong dihedral effect (roll due to sideslip) combined with relatively weak directional stability; if the Yaw Damper is inoperative, the aircraft is subject to MEL speed and altitude restrictions.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Swept wings create adverse yaw in steep turns that cannot be countered by ailerons without full rudder trim.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Dutch Roll occurs only during reverse thrust deployment on slippery runways.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Yaw Damper failure prevents autopilot engagement under any circumstances and prohibits IFR flight.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ Dutch Roll & Swept Wing Aerodynamics\n* **Cause:** When a swept-wing jet yaws (sideslip), the advancing wing experiences increased effective wingspan and higher normal velocity component, producing a strong rolling moment before directional stability can restore heading.\n* **Coupling:** This leads to out-of-phase yaw-roll oscillation (Dutch Roll).\n* **Yaw Damper:** Provides automatic counter-rudder inputs. An inoperative Yaw Damper requires strict adherence to MEL limitations (e.g. altitude ceiling reduced to FL310 and lower MMO).",
+      "references": [
+        "EASA CS-25.181 • Aircraft Flight Manual (AFM) Section 2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-AERO-004",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Takeoff Performance: V1 Definition & Decision Speed",
+    "stem": "Under EASA CS-25 / Part-CAT certification, what is the precise regulatory definition and operational significance of Takeoff Decision Speed (V1)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The maximum speed at which the pilot must make the decision to abort the takeoff and take the first action to stop the aircraft within the Accelerate-Stop Distance Available (ASDA).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "The exact speed at which the nosewheel lifts off the runway surface during takeoff roll.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "The speed at which the aircraft achieves the maximum one-engine-inoperative climb gradient at 1,500 ft.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "The speed at which thrust reversers must be armed prior to commencing takeoff.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛫 Takeoff Decision Speed (V1)\n* **Key Rule:** V1 is the **action speed**, not just the mental decision point. The first stopping action (brakes/thrust reduction) must be applied by V1.\n* **Limits:** V1 must not be less than VMCG (Minimum Control Ground) and must not exceed VR (Rotation Speed) or VMBE (Maximum Brake Energy speed).\n* **After V1:** Takeoff MUST be continued (except in extreme conditions like catastrophic structural breakup or runway blockage).",
+      "references": [
+        "EASA CS-25.107 • CAT.POL.A.205 Takeoff Performance"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-AERO-005",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Takeoff Performance: Screen Height (Dry vs Wet Runway)",
+    "stem": "What is the mandatory regulatory screen height required at the end of the Takeoff Distance with One Engine Inoperative (OEI) for dry versus wet runways under EASA CS-25 / Part-CAT?",
+    "options": [
+      {
+        "id": "A",
+        "text": "35 ft above the runway surface for a DRY runway; 15 ft above the runway surface for a WET or contaminated runway.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "50 ft for dry runways and 35 ft for wet runways.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "35 ft for all runway conditions without exception.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "100 ft for dry runways and 50 ft for wet runways.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛫 Takeoff Screen Height (CS-25 & CAT.POL.A.205)\n* **Dry Runway:** The takeoff path must achieve a screen height of **35 ft** at the end of TODA with one engine inoperative.\n* **Wet Runway:** To account for reduced braking friction on wet surfaces and lower V1, regulations permit a reduced screen height of **15 ft** at the end of TODA.\n* **Obstacle Clearance:** Net takeoff flight path must still clear all obstacles by at least 35 ft vertically.",
+      "references": [
+        "EASA CS-25.111 • Part-CAT.POL.A.205"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-AERO-006",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Takeoff Climb Segments: Second Segment Climb Gradient",
+    "stem": "In the regulatory takeoff flight path, what is the mandatory minimum gross climb gradient required during the SECOND CLIMB SEGMENT for a twin-engine jet aircraft with One Engine Inoperative (OEI)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "2.4% gross climb gradient at V2 speed with landing gear retracted and takeoff flaps set.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "3.3% gross climb gradient at Vx speed with gear extended.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "1.2% gross climb gradient at Vref+10 kt with flaps in transit.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "5.0% gross climb gradient under all temperature conditions.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛫 Takeoff Climb Segments (Twin-Engine Jet)\n| Segment | Start Point | End Point | Gear / Flaps | Speed | Min Gradient (Twin) |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| **1st Segment** | Screen height (35/15 ft) | Gear fully retracted | Gear retracting / Takeoff Flaps | V2 | > 0% (Positive) |\n| **2nd Segment** | Gear retracted | Min 400 ft AAL (Acceleration) | Gear UP / Takeoff Flaps | V2 | **2.4%** |\n| **3rd Segment** | Acceleration height | Flaps retracted | Gear UP / Flap Retraction | Accelerating to VFTO | 1.2% |\n| **4th Segment** | Final climb height | 1,500 ft AAL | Gear UP / Flaps UP | VFTO / Max Continuous | 1.2% |",
+      "references": [
+        "EASA CS-25.121 • Part-CAT.POL.A.210"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "NJ-AERO-007",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Aerodynamics: VMCG and VMCA Relationship",
+    "stem": "What is the relationship between VMCG (Minimum Control Speed Ground) and VMCA (Minimum Control Speed Air), and how does VMCG dictate minimum V1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VMCG is the minimum speed on the ground where directional control can be maintained using aerodynamic controls alone (rudder) after engine failure; V1 must never be less than VMCG.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "VMCG allows using nosewheel steering to maintain centerline, whereas VMCA requires full aileron deflection.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "V1 can be selected 10 knots below VMCG if the runway is dry.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "VMCA is always lower than VMCG due to ground effect reducing rudder effectiveness.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ VMCG & VMCA Principles\n* **VMCG (Ground):** Certified using **aerodynamic rudder control ONLY** (nosewheel steering is assumed completely ineffective or failed per CS-25). Lateral deviation from runway centerline must not exceed 30 ft.\n* **Rule:** If engine failure occurs below VMCG, rudder cannot maintain directional control; the takeoff MUST be aborted.\n* **Constraint:** $V_1 ge V_{MCG}$.",
+      "references": [
+        "EASA CS-25.149 • FAA Advisory Circular AC 25-7D"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "NJ-AERO-008",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Runway Surface & Contamination: Hydroplaning Types",
+    "stem": "What are the three main types of hydroplaning encountered during jet landing operations on contaminated runways?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dynamic hydroplaning (water layer lifts tire), Viscous hydroplaning (thin chemical/oil film), and Reverted Rubber hydroplaning (steam generated by locked wheel skidding).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Thermal hydroplaning, Aerodynamic hydroplaning, and Electrostatic hydroplaning.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Crosswind hydroplaning, Centrifugal hydroplaning, and Ground effect hydroplaning.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Slush hydroplaning, Ice hydroplaning, and Snow hydroplaning.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🌧️ Hydroplaning Types & Formula\n* **1. Dynamic Hydroplaning:** Occurs when standing water (>3 mm) builds hydrodynamic pressure under the tire, completely lifting it from the runway. Minimum dynamic hydroplaning speed (non-rotating) $≈ 7.7 times sqrt{P}$ (where P is tire pressure in psi), or $≈ 9 times sqrt{P}$ for rotating tires.\n* **2. Viscous Hydroplaning:** Occurs on smooth/rubber-coated surfaces with very thin water films due to viscosity preventing tire contact.\n* **3. Reverted Rubber Hydroplaning:** Prolonged locked wheel skid boils trapped water into high-pressure steam, vulcanizing the tire rubber.",
+      "references": [
+        "ICAO Doc 9137 Airport Services Manual • Part-CAT.POL.A.230"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-AERO-009",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Engine Systems: Compressor Stall vs Compressor Surge",
+    "stem": "How do you distinguish between a Compressor Stall and a Compressor Surge on modern high-bypass turbofan engines, and what are the immediate cockpit indications?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A compressor stall is a localized breakdown of airflow across compressor blades with mild vibration; a surge is a complete axial flow reversal characterized by loud bangs, severe vibration, rapid EGT rise, and fluctuating EPR/N1.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "A compressor stall only occurs during engine start on the ground, whereas surge occurs exclusively in supersonic cruise.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Surge produces an immediate flameout without any increase in EGT or noise.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Compressor stalls require immediate engine shutdown in flight with the fire handle.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⚙️ Turbofan Compressor Stall vs Surge\n* **Compressor Stall:** Localized boundary layer separation on individual compressor rotor blades. Manifests as buzzing/muffled noise, slight EGT increase, and minor vibration.\n* **Compressor Surge:** Violent, catastrophic breakdown of airflow across the entire compressor spool resulting in **momentary flow reversal**. Accompanied by loud shotgun-like bangs, severe airframe vibration, rapid EGT spike towards redline, and violent N1/N2 drops.\n* **Initial Action:** Retard thrust lever to IDLE smoothly; monitor EGT and vibration.",
+      "references": [
+        "Rolls-Royce The Jet Engine • EASA Part-FCL ATPL Principles of Flight"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-AERO-010",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Performance: Balanced Field Length (BFL) Concept",
+    "stem": "What is the definition of a 'Balanced Field Length' in transport category jet takeoff performance?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The runway length where the Accelerate-Stop Distance Required (ASDR) exactly equals the Takeoff Distance Required with One Engine Inoperative (TODR_OEI) for a specific V1.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "A runway where the landing distance required is exactly half of the available runway length.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "A runway where the elevation at both thresholds is identical (zero runway slope).",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "The situation where fuel burn equals payload weight at takeoff.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛫 Balanced Field Length (BFL)\n* **Definition:** The condition where $ASDR = TODR_{OEI}$.\n* **Benefit:** Produces the lowest possible required runway distance for takeoff at a given weight, optimizing payload capacity on restrictive runways.\n* **V1 Relationship:** In a balanced field, V1 is chosen so that rejecting the takeoff at V1 or continuing the takeoff on one engine both require the exact same field length.",
+      "references": [
+        "EASA CS-25.113 • Part-CAT.POL.A.205"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-AERO-011",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Performance: Clearway vs Stopway in Declared Distances",
+    "stem": "What is the difference between a Stopway and a Clearway, and how are they incorporated into TODA and ASDA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Stopway is load-bearing paved area used exclusively to stop an aborted takeoff (ASDA = TORA + Stopway); Clearway is an unobstructed area/water over which the aircraft can climb to screen height (TODA = TORA + Clearway).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Stopway increases TORA, whereas Clearway increases LDA.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Stopway is only available for landing rollouts, while Clearway is for taxiing.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Clearway can never exceed 100 meters under EASA aerodrome standards.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛫 Declared Runway Distances (ICAO Annex 14 / EASA)\n* **TORA (Take-Off Run Available):** Physical runway suitable for takeoff ground run.\n* **TODA (Take-Off Distance Available):** TORA + Clearway (Clearway cannot exceed 50% of TORA).\n* **ASDA (Accelerate-Stop Distance Available):** TORA + Stopway.\n* **LDA (Landing Distance Available):** Runway length declared available for landing ground run.",
+      "references": [
+        "ICAO Annex 14 Volume I • EASA CS-ADR-DSN"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-AERO-012",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Aerodynamics: Supercritical Airfoil Design",
+    "stem": "What are the primary aerodynamic advantages of a Supercritical Airfoil used on modern executive business jets?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flatter upper surface delays the onset of supersonic shockwaves and reduces shock-induced boundary layer drag, allowing higher cruise Mach numbers or a thicker wing for structural fuel capacity.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Eliminates all aerodynamic stall characteristics up to 45 degrees angle of attack.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Increases low-speed drag during steep approach into London City.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Replaces the need for vortex generators, slats, and trailing edge flaps.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ Supercritical Airfoil Characteristics\n* **Features:** Flatter upper surface, significant aft camber (cusped trailing edge), larger leading-edge radius.\n* **Benefits:**\n  1. Delays Mach drag divergence.\n  2. Weakens shockwave intensity on upper surface.\n  3. Permits a **thicker wing** without aerodynamic penalty, providing crucial internal volume for fuel tanks on long-range business jets.",
+      "references": [
+        "NASA TM-X-73935 • EASA ATPL Principles of Flight"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-AERO-013",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Performance: Maximum Brake Energy Speed (VMBE)",
+    "stem": "What is Maximum Brake Energy Speed (VMBE) and what happens if a rejected takeoff is initiated above VMBE?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VMBE is the maximum speed from which an aircraft can be stopped without exceeding the kinetic heat absorption limits of the brake assemblies; aborting above VMBE risks brake fire, fuse plug deflation, or catastrophic brake failure.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "VMBE is the minimum speed at which anti-skid protection becomes active.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "VMBE is the tire blow-out speed due to centrifugal expansion.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "VMBE is only applicable during wet runway landings.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛑 Maximum Brake Energy Speed (VMBE)\n* **Kinetic Energy:** Stopping an aircraft converts kinetic energy into heat within carbon or steel brake heat packs.\n* **Constraint:** V1 ≤ VMBE. Under high gross weights, high pressure altitudes, and tailwinds, V1 may be limited by VMBE rather than field length.\n* **Exceedance:** May melt thermal fuse plugs (deflating tires safely) or cause uncontrolled brake fires and loss of braking torque.",
+      "references": [
+        "EASA CS-25.735 • Part-CAT.POL.A.205"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-AERO-014",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Aerodynamics: Induced Drag vs Parasite Drag Curve",
+    "stem": "At what point on the total drag curve does an executive jet achieve maximum lift-to-drag ratio (L/D_MAX), and what operational speeds correspond to this point?",
+    "options": [
+      {
+        "id": "A",
+        "text": "At the minimum point of the total drag curve where Induced Drag exactly equals Parasite Drag; corresponds to Maximum Glide Speed (V_GLIDE) and Maximum Endurance Speed (Holding Speed).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "At the maximum speed MMO where parasite drag is highest.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "At the stall speed VS1 where induced drag is zero.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "At the rotation speed VR with takeoff flaps extended.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ Drag Curve & L/D_MAX\n* **Induced Drag:** High at low speeds (high AoA), decreases as speed increases.\n* **Parasite Drag:** Low at low speeds, increases quadratically with speed.\n* **Minimum Drag Point:** Occurs where Induced Drag = Parasite Drag. This represents (L/D)_MAX, providing maximum glide range and maximum endurance for jet aircraft.",
+      "references": [
+        "EASA ATPL Principles of Flight • Aerodynamics for Naval Aviators"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-AERO-015",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Performance: Landing Distance Factors (Dry vs Wet)",
+    "stem": "Under EASA Part-CAT dispatch rules for turbojet aircraft, what safety margins must be applied to the certified Dry Landing Distance to obtain the Required Landing Distance for DRY and WET runways?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DRY: Certified distance must not exceed 60% of LDA (Factor 1.67); WET: Required distance is Dry Required × 1.15 (Overall factor 1.92).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "DRY: Factor 1.30; WET: Factor 1.50.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "DRY: Factor 1.43 (70% rule); WET: Factor 1.60.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "DRY: No safety margin; WET: Factor 1.10.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛬 EASA Part-CAT Turbojet Landing Dispatch Factors\n* **Dry Runway (CAT.POL.A.230):** The aircraft must be able to land and stop within 60% of LDA. Safety Factor = 1 / 0.60 = 1.67.\n* **Wet Runway (CAT.POL.A.230(c)):** The Required Landing Distance must be at least 115% of Dry Required Landing Distance (Overall Wet Factor = 1.67 × 1.15 = 1.92).",
+      "references": [
+        "EASA Part-CAT.POL.A.230 • AMC1 CAT.POL.A.230"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-AERO-016",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Engine: Flat-Rated Engine Concept",
+    "stem": "What is meant by a 'Flat-Rated' turbofan engine on modern business jets, and what parameter limits engine thrust above the flat-rated corner point temperature (T_REF)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The engine produces constant maximum certified thrust up to a reference ambient temperature (T_REF) limited by internal structural pressure; above T_REF, thrust is restricted by Turbine/EGT temperature limits.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "The engine has a flat horizontal combustion chamber to reduce fuselage drag.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "The engine cannot operate at altitudes exceeding 10,000 ft without auxiliary superchargers.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Thrust rating remains identical at all flight levels from sea level to FL450.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⚙️ Flat-Rated Turbofan Engines\n* **Below Corner Point (T_REF, e.g. ISA+15°C):** The engine is restricted by FADEC to prevent exceeding internal casing/shaft structural pressure limits.\n* **Above Corner Point:** The engine becomes temperature-limited (EGT/ITT). FADEC reduces fuel flow and thrust to prevent thermal damage.",
+      "references": [
+        "Rolls-Royce / Pratt & Whitney Engine Principles • EASA CS-E"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-AERO-017",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Aerodynamics: Specific Range (SAR) & Optimum Cruise Altitude",
+    "stem": "What factors determine the Optimum Cruise Altitude for a long-range executive jet flight, and why does optimum flight level increase as the flight progresses?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Optimum flight level is where Specific Air Range (SAR = True Airspeed / Fuel Flow) is maximized; as fuel burns off, aircraft weight decreases, reducing required lift and induced drag, which shifts the SAR peak to higher altitudes (Step Climb).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Optimum altitude is determined strictly by cabin pressurization limits regardless of weight.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Optimum altitude decreases as fuel burns off because the aircraft becomes too light for high altitude stability.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Optimum altitude is fixed by ATC before departure and cannot be modified in flight.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ Specific Air Range (SAR) & Step Climbs\n* **SAR:** Nautical miles flown per kilogram of fuel burned (SAR = TAS / FF).\n* **Weight Effect:** As weight decreases due to fuel consumption, the wing operates at lower angle of attack, lowering induced drag and shifting the optimum aerodynamic operating point to higher altitudes.",
+      "references": [
+        "EASA Part-CAT.OP.MPA.180 • Bombardier / Gulfstream Flight Planning Manuals"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-AERO-018",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Performance: Derated Takeoff vs Assumed Temperature Method",
+    "stem": "What is the key regulatory and operational distinction between a 'Derated Takeoff' (Fixed Derate) and the 'Assumed Temperature / Flex Method' for reduced thrust takeoffs?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A Derate establishes a new certified lower thrust rating with reduced VMCG/VMCA limits (prohibiting throttle advancement beyond derate); Assumed Temperature is an operational performance reduction where full rated thrust may be manually selected at any time.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Derated thrust is only used on wet runways, while Assumed Temperature is only used on dry runways.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Assumed temperature cannot reduce thrust by more than 5%, whereas derate reduces thrust by 50%.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Both methods are completely identical in certification and flight deck throttle handling.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛫 Derated Thrust vs Assumed Temperature (Flex)\n* **Assumed Temperature (FLEX):** Simulates a higher ambient temperature where less thrust is required on long runways. VMCG/VMCA are calculated based on full rated thrust. The crew CAN push levers to TOGA at any time without directional control issues.\n* **Derate (Fixed Derate):** Establishes an official lower engine rating. VMCG is lower. Pushing levers past the derate limit at low speed could cause loss of directional control if an engine fails.",
+      "references": [
+        "EASA CS-25.101 • AMC 25.101 Reduction of Takeoff Thrust"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "NJ-AERO-019",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Aerodynamics: Shock Wave Formation & Critical Mach Number",
+    "stem": "What is the definition of Critical Mach Number (M_CRIT) for a jet transport aircraft?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The free-stream aircraft Mach number at which airflow over the highest camber point of the wing first reaches the local speed of sound (Mach 1.0).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "The speed at which the entire aircraft exceeds Mach 1.0 in level flight.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "The maximum permissible dive speed tested during certification (MDF).",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "The speed where pitot tube heating automatically disconnects.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ Critical Mach Number (M_CRIT)\n* **Definition:** As air accelerates over the curved upper surface of an airfoil, local velocity exceeds free-stream velocity. M_CRIT is the aircraft airspeed where local Mach = 1.0 at the first point on the airfoil.\n* **Post M_CRIT:** Supersonic pockets form, creating normal shockwaves, boundary layer separation, and dramatic drag rise.",
+      "references": [
+        "EASA Part-FCL ATPL Principles of Flight • CS-25.335"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-AERO-020",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Performance: Tire Ground Speed Limits",
+    "stem": "Under what takeoff conditions is the certified Tire Ground Speed Limit most likely to become the limiting performance factor for a high-altitude corporate jet departure?",
+    "options": [
+      {
+        "id": "A",
+        "text": "High airport elevation (e.g. Toluca, Madrid, Aspen), high ambient temperature, zero wind or tailwind, and heavy takeoff weight resulting in very high True Airspeed at liftoff (V_LOF).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Low elevation sea-level departure in freezing rain.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "High headwind component during light gross weight ferry flight.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Takeoff with full flaps on contaminated slush runways.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛞 Tire Ground Speed Limits\n* **Constraint:** Aircraft tires are rated for maximum ground speed (e.g. 195 kt, 210 kt, 225 kt) to prevent centrifugal tread separation and casing failure.\n* **Mechanism:** At high density altitude (hot and high), True Airspeed (TAS) for a given Indicated Airspeed (VR) is significantly higher.\n* **Limit:** Ground Speed at liftoff must never exceed the certified tire speed rating.",
+      "references": [
+        "EASA CS-25.733 • AFM Section 2 Limitations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-AERO-021",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Aerodynamics: High Altitude Jet Stall Recovery",
+    "stem": "What is the correct, standardized recovery technique for a high-altitude aerodynamic stall or buffet encounter on a modern jet aircraft?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Immediately disconnect autopilot, apply smooth forward pitch control to reduce Angle of Attack (AoA), level wings, and smoothly advance thrust as recovery begins without exceeding engine limits.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Immediately pull full aft yoke to trade altitude for airspeed while selecting full rudder trim.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Rapidly extend full flight spoilers to increase descent rate while maintaining cruise pitch attitude.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cycle the landing gear handle down to activate ground proximity terrain warnings.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ High Altitude Stall Recovery (FAA / EASA Standardized Envelope Protocol)\n1. **Disconnect Autopilot / Autothrottle.**\n2. **Pitch Down (Reduce AoA):** The ONLY action that recovers a wing from stall is reducing Angle of Attack below the critical stall AoA.\n3. **Roll Wings Level:** To orient lift vector vertically.\n4. **Thrust:** Apply thrust smoothly.\n5. **Retract Spoilers / Speedbrakes** if extended.",
+      "references": [
+        "ICAO Doc 10011 UPRT Manual • EASA SIB 2013-02"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-AERO-022",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Performance: Obstacle Clearance & Net Takeoff Flight Path",
+    "stem": "What is the difference between the 'Gross Takeoff Flight Path' and the 'Net Takeoff Flight Path' in EASA obstacle clearance calculations for twin-engine aircraft?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gross flight path is the actual measured performance of the aircraft; Net flight path is the gross performance degraded by a mandatory 0.8% gradient reduction (for twins) to guarantee obstacle clearance.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Gross flight path includes cabin baggage weight, while net path excludes it.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Net flight path applies only when all engines are operating normally.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Gross gradient is reduced by 2.5% for all transport aircraft.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛫 Gross vs Net Takeoff Flight Path (EASA Part-CAT.POL.A.210)\n* **Gross Performance:** Actual one-engine-inoperative climb profile demonstrated during flight test certification.\n* **Net Performance:** The degraded profile used for operational obstacle clearance calculations:\n  * Twin-Engine: Gross gradient minus 0.8%.\n  * Three-Engine: Gross gradient minus 0.9%.\n  * Four-Engine: Gross gradient minus 1.0%.\n* **Margin:** The Net Takeoff Flight Path must clear all obstacles by at least 35 ft vertically (or 50 ft in turns).",
+      "references": [
+        "EASA Part-CAT.POL.A.210 • CS-25.115"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-AERO-023",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Aerodynamics: VMO/MMO Crossover Altitude",
+    "stem": "What is the 'Crossover Altitude' (Interlock Altitude) in jet transport climb and descent profiles?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The specific altitude where a constant Indicated Airspeed (VMO / CAS) and a constant Mach number (MMO) represent the exact same True Airspeed (TAS).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "The altitude where the aircraft transitions from Class G uncontrolled airspace into Class A controlled airspace.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "The altitude where autopilot transfers authority from elevator servos to stabilizer trim motors.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "The level where supplemental oxygen is required for cabin passengers.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ Crossover Altitude Principles\n* **Climb:** During climb at constant CAS (e.g. 290 kt), Mach number increases steadily. At Crossover Altitude (typically FL280-FL320), the climb speed schedule transitions from constant CAS to constant Mach (e.g. M 0.78).\n* **Descent:** Descending at constant Mach causes CAS to increase until reaching crossover altitude, after which descent continues at constant CAS.",
+      "references": [
+        "EASA ATPL Principles of Flight • NetJets FCOM Speed Management"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-AERO-024",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Engine: Bleed Air Extraction Penalties",
+    "stem": "Why does selecting Engine Anti-Ice and Wing Anti-Ice ON during high-altitude cruise or single-engine climb degrade aircraft performance?",
+    "options": [
+      {
+        "id": "A",
+        "text": "High-pressure compressor stage bleed air is diverted from the core gas path to heat leading edges, reducing available engine thrust, increasing EGT, and lowering maximum cruise ceiling.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Anti-ice valves increase fuel flow to the APU rather than the main engines.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Anti-ice electrical draw disconnects both engine-driven generators.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Thermal expansion of the wing alters the aerodynamic camber, increasing stall speed by 40%.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⚙️ Engine Bleed Air & Anti-Ice Penalties\n* **Mechanism:** Pneumatic anti-ice systems tap high-temperature, high-pressure bleed air from compressor stages.\n* **Consequences:**\n  1. Loss of core mass flow → reduced available thrust.\n  2. Higher EGT / ITT for the same thrust level.\n  3. Increased specific fuel consumption (SFC).\n  4. Significant drop in Single-Engine Service Ceiling (up to 1,500 to 3,000 ft reduction).",
+      "references": [
+        "AFM Section 5 Performance • EASA CS-25.1419"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-AERO-025",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Aerodynamics: Ground Effect on Landing Flare",
+    "stem": "What physical changes occur to an aircraft's aerodynamic characteristics when entering 'Ground Effect' during the landing flare within one wingspan of the runway surface?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Upwash, downwash, and wingtip vortices are restricted by the ground surface, significantly reducing induced drag, increasing effective wing aspect ratio, and creating a floating tendency.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Parasite drag doubles instantly, causing the aircraft to sink rapidly onto the runway.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Elevator authority is completely lost requiring full nose-up stabilizer trim.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Dynamic pressure drops to zero causing false indicated airspeed readings.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ Ground Effect in Landing Flare\n* **Proximity:** Becomes significant within 1/2 wingspan above the ground.\n* **Physical Effects:**\n  1. Interference with 3D wingtip vortices → dramatic drop in Induced Drag.\n  2. Steeper lift curve slope (more lift at the same AoA).\n  3. Reduced downwash on horizontal stabilizer → mild pitch-down moment.\n  4. Increased local static pressure → altimeter/ASI may read slightly low.",
+      "references": [
+        "EASA ATPL Principles of Flight • NetJets Landing Flare Technique Guide"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  }
+]

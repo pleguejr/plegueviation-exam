@@ -83127,6 +83127,981 @@
     "_subtopic": "sistemas-aeronave"
   },
   {
+    "id": "NJ-AERO-001",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Aerodynamics: High Altitude Aerodynamics & Coffin Corner",
+    "stem": "In high-altitude jet transport operations, what defines the operational aerodynamic phenomenon known as 'Coffin Corner'?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The flight envelope region where the low-speed stall margin (Vs) and the high-speed Mach buffet boundary (Mmo) converge to a very narrow airspeed margin.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "The specific altitude where jet engines flame out due to lack of atmospheric oxygen regardless of airspeed.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "The condition where the aircraft pitch trim runs to its electrical mechanical stop during steep descent.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "The structural failure point where cabin differential pressure exceeds maximum relief valve capacity.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ High Altitude Aerodynamics: Coffin Corner\n* **Definition:** As a jet aircraft climbs to high altitudes in the stratosphere, true airspeed for stall (Vs) increases while the speed of sound decreases, causing the critical Mach number (M_CRIT / MMO) to drop.\n* **The 'Corner':** At the aerodynamic ceiling, low-speed stall buffet and high-speed Mach buffet merge into a narrow operational corridor (sometimes less than 5 to 10 knots).\n* **Recovery / Mitigation:** Descend to a lower cruise flight level with greater buffet margin.",
+      "references": [
+        "EASA CS-25 Subpart B (Flight) • FAA Aerodynamics for Naval Aviators"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-002",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Aerodynamics: Mach Tuck & Mach Trim",
+    "stem": "What causes the aerodynamic phenomenon known as 'Mach Tuck' as a swept-wing jet approaches its critical Mach number, and how is it automatically mitigated?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rearward movement of the Center of Pressure (CP) and loss of downwash on the horizontal stabilizer due to shockwave formation on wing roots, mitigated by the Mach Trim system.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Forward movement of the Center of Gravity (CG) due to fuel freezing in outboard tanks, mitigated by fuel crossfeed.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Inward flex of the swept wingtips reducing effective wingspan, mitigated by active aileron trim.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Separation of airflow over the rudder pedals creating uncommanded yawing moments, mitigated by the Yaw Damper.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ Mach Tuck & Mach Trim\n* **Mechanism:** As local flow over the upper wing surface goes supersonic, shockwaves form and shift the Center of Pressure (CP) **rearwards**. Concurrently, shock-induced boundary layer separation at the wing root reduces the downwash angle reaching the horizontal stabilizer, creating an uncommanded nose-down pitching tendency.\n* **Mitigation:** Modern business jets incorporate an automatic **Mach Trim System** that applies nose-up stabilizer trim proportionally as Mach number increases.",
+      "references": [
+        "EASA CS-25.672 • NetJets Technical Pilot Guide"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-003",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Aerodynamics: Swept Wing Dutch Roll & Yaw Damper",
+    "stem": "Why are swept-wing executive jets inherently prone to 'Dutch Roll', and what is the operational limitation if the Yaw Damper is inoperative before takeoff?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Swept wings generate strong dihedral effect (roll due to sideslip) combined with relatively weak directional stability; if the Yaw Damper is inoperative, the aircraft is subject to MEL speed and altitude restrictions.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Swept wings create adverse yaw in steep turns that cannot be countered by ailerons without full rudder trim.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Dutch Roll occurs only during reverse thrust deployment on slippery runways.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Yaw Damper failure prevents autopilot engagement under any circumstances and prohibits IFR flight.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ Dutch Roll & Swept Wing Aerodynamics\n* **Cause:** When a swept-wing jet yaws (sideslip), the advancing wing experiences increased effective wingspan and higher normal velocity component, producing a strong rolling moment before directional stability can restore heading.\n* **Coupling:** This leads to out-of-phase yaw-roll oscillation (Dutch Roll).\n* **Yaw Damper:** Provides automatic counter-rudder inputs. An inoperative Yaw Damper requires strict adherence to MEL limitations (e.g. altitude ceiling reduced to FL310 and lower MMO).",
+      "references": [
+        "EASA CS-25.181 • Aircraft Flight Manual (AFM) Section 2"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-004",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Takeoff Performance: V1 Definition & Decision Speed",
+    "stem": "Under EASA CS-25 / Part-CAT certification, what is the precise regulatory definition and operational significance of Takeoff Decision Speed (V1)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The maximum speed at which the pilot must make the decision to abort the takeoff and take the first action to stop the aircraft within the Accelerate-Stop Distance Available (ASDA).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "The exact speed at which the nosewheel lifts off the runway surface during takeoff roll.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "The speed at which the aircraft achieves the maximum one-engine-inoperative climb gradient at 1,500 ft.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "The speed at which thrust reversers must be armed prior to commencing takeoff.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛫 Takeoff Decision Speed (V1)\n* **Key Rule:** V1 is the **action speed**, not just the mental decision point. The first stopping action (brakes/thrust reduction) must be applied by V1.\n* **Limits:** V1 must not be less than VMCG (Minimum Control Ground) and must not exceed VR (Rotation Speed) or VMBE (Maximum Brake Energy speed).\n* **After V1:** Takeoff MUST be continued (except in extreme conditions like catastrophic structural breakup or runway blockage).",
+      "references": [
+        "EASA CS-25.107 • CAT.POL.A.205 Takeoff Performance"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-005",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Takeoff Performance: Screen Height (Dry vs Wet Runway)",
+    "stem": "What is the mandatory regulatory screen height required at the end of the Takeoff Distance with One Engine Inoperative (OEI) for dry versus wet runways under EASA CS-25 / Part-CAT?",
+    "options": [
+      {
+        "id": "A",
+        "text": "35 ft above the runway surface for a DRY runway; 15 ft above the runway surface for a WET or contaminated runway.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "50 ft for dry runways and 35 ft for wet runways.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "35 ft for all runway conditions without exception.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "100 ft for dry runways and 50 ft for wet runways.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛫 Takeoff Screen Height (CS-25 & CAT.POL.A.205)\n* **Dry Runway:** The takeoff path must achieve a screen height of **35 ft** at the end of TODA with one engine inoperative.\n* **Wet Runway:** To account for reduced braking friction on wet surfaces and lower V1, regulations permit a reduced screen height of **15 ft** at the end of TODA.\n* **Obstacle Clearance:** Net takeoff flight path must still clear all obstacles by at least 35 ft vertically.",
+      "references": [
+        "EASA CS-25.111 • Part-CAT.POL.A.205"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-006",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Takeoff Climb Segments: Second Segment Climb Gradient",
+    "stem": "In the regulatory takeoff flight path, what is the mandatory minimum gross climb gradient required during the SECOND CLIMB SEGMENT for a twin-engine jet aircraft with One Engine Inoperative (OEI)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "2.4% gross climb gradient at V2 speed with landing gear retracted and takeoff flaps set.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "3.3% gross climb gradient at Vx speed with gear extended.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "1.2% gross climb gradient at Vref+10 kt with flaps in transit.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "5.0% gross climb gradient under all temperature conditions.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛫 Takeoff Climb Segments (Twin-Engine Jet)\n| Segment | Start Point | End Point | Gear / Flaps | Speed | Min Gradient (Twin) |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| **1st Segment** | Screen height (35/15 ft) | Gear fully retracted | Gear retracting / Takeoff Flaps | V2 | > 0% (Positive) |\n| **2nd Segment** | Gear retracted | Min 400 ft AAL (Acceleration) | Gear UP / Takeoff Flaps | V2 | **2.4%** |\n| **3rd Segment** | Acceleration height | Flaps retracted | Gear UP / Flap Retraction | Accelerating to VFTO | 1.2% |\n| **4th Segment** | Final climb height | 1,500 ft AAL | Gear UP / Flaps UP | VFTO / Max Continuous | 1.2% |",
+      "references": [
+        "EASA CS-25.121 • Part-CAT.POL.A.210"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-007",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Aerodynamics: VMCG and VMCA Relationship",
+    "stem": "What is the relationship between VMCG (Minimum Control Speed Ground) and VMCA (Minimum Control Speed Air), and how does VMCG dictate minimum V1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VMCG is the minimum speed on the ground where directional control can be maintained using aerodynamic controls alone (rudder) after engine failure; V1 must never be less than VMCG.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "VMCG allows using nosewheel steering to maintain centerline, whereas VMCA requires full aileron deflection.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "V1 can be selected 10 knots below VMCG if the runway is dry.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "VMCA is always lower than VMCG due to ground effect reducing rudder effectiveness.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ VMCG & VMCA Principles\n* **VMCG (Ground):** Certified using **aerodynamic rudder control ONLY** (nosewheel steering is assumed completely ineffective or failed per CS-25). Lateral deviation from runway centerline must not exceed 30 ft.\n* **Rule:** If engine failure occurs below VMCG, rudder cannot maintain directional control; the takeoff MUST be aborted.\n* **Constraint:** $V_1 ge V_{MCG}$.",
+      "references": [
+        "EASA CS-25.149 • FAA Advisory Circular AC 25-7D"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-008",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Runway Surface & Contamination: Hydroplaning Types",
+    "stem": "What are the three main types of hydroplaning encountered during jet landing operations on contaminated runways?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dynamic hydroplaning (water layer lifts tire), Viscous hydroplaning (thin chemical/oil film), and Reverted Rubber hydroplaning (steam generated by locked wheel skidding).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Thermal hydroplaning, Aerodynamic hydroplaning, and Electrostatic hydroplaning.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Crosswind hydroplaning, Centrifugal hydroplaning, and Ground effect hydroplaning.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Slush hydroplaning, Ice hydroplaning, and Snow hydroplaning.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🌧️ Hydroplaning Types & Formula\n* **1. Dynamic Hydroplaning:** Occurs when standing water (>3 mm) builds hydrodynamic pressure under the tire, completely lifting it from the runway. Minimum dynamic hydroplaning speed (non-rotating) $≈ 7.7 times sqrt{P}$ (where P is tire pressure in psi), or $≈ 9 times sqrt{P}$ for rotating tires.\n* **2. Viscous Hydroplaning:** Occurs on smooth/rubber-coated surfaces with very thin water films due to viscosity preventing tire contact.\n* **3. Reverted Rubber Hydroplaning:** Prolonged locked wheel skid boils trapped water into high-pressure steam, vulcanizing the tire rubber.",
+      "references": [
+        "ICAO Doc 9137 Airport Services Manual • Part-CAT.POL.A.230"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-009",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Engine Systems: Compressor Stall vs Compressor Surge",
+    "stem": "How do you distinguish between a Compressor Stall and a Compressor Surge on modern high-bypass turbofan engines, and what are the immediate cockpit indications?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A compressor stall is a localized breakdown of airflow across compressor blades with mild vibration; a surge is a complete axial flow reversal characterized by loud bangs, severe vibration, rapid EGT rise, and fluctuating EPR/N1.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "A compressor stall only occurs during engine start on the ground, whereas surge occurs exclusively in supersonic cruise.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Surge produces an immediate flameout without any increase in EGT or noise.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Compressor stalls require immediate engine shutdown in flight with the fire handle.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⚙️ Turbofan Compressor Stall vs Surge\n* **Compressor Stall:** Localized boundary layer separation on individual compressor rotor blades. Manifests as buzzing/muffled noise, slight EGT increase, and minor vibration.\n* **Compressor Surge:** Violent, catastrophic breakdown of airflow across the entire compressor spool resulting in **momentary flow reversal**. Accompanied by loud shotgun-like bangs, severe airframe vibration, rapid EGT spike towards redline, and violent N1/N2 drops.\n* **Initial Action:** Retard thrust lever to IDLE smoothly; monitor EGT and vibration.",
+      "references": [
+        "Rolls-Royce The Jet Engine • EASA Part-FCL ATPL Principles of Flight"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-010",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Performance: Balanced Field Length (BFL) Concept",
+    "stem": "What is the definition of a 'Balanced Field Length' in transport category jet takeoff performance?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The runway length where the Accelerate-Stop Distance Required (ASDR) exactly equals the Takeoff Distance Required with One Engine Inoperative (TODR_OEI) for a specific V1.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "A runway where the landing distance required is exactly half of the available runway length.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "A runway where the elevation at both thresholds is identical (zero runway slope).",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "The situation where fuel burn equals payload weight at takeoff.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛫 Balanced Field Length (BFL)\n* **Definition:** The condition where $ASDR = TODR_{OEI}$.\n* **Benefit:** Produces the lowest possible required runway distance for takeoff at a given weight, optimizing payload capacity on restrictive runways.\n* **V1 Relationship:** In a balanced field, V1 is chosen so that rejecting the takeoff at V1 or continuing the takeoff on one engine both require the exact same field length.",
+      "references": [
+        "EASA CS-25.113 • Part-CAT.POL.A.205"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-011",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Performance: Clearway vs Stopway in Declared Distances",
+    "stem": "What is the difference between a Stopway and a Clearway, and how are they incorporated into TODA and ASDA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Stopway is load-bearing paved area used exclusively to stop an aborted takeoff (ASDA = TORA + Stopway); Clearway is an unobstructed area/water over which the aircraft can climb to screen height (TODA = TORA + Clearway).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Stopway increases TORA, whereas Clearway increases LDA.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Stopway is only available for landing rollouts, while Clearway is for taxiing.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Clearway can never exceed 100 meters under EASA aerodrome standards.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛫 Declared Runway Distances (ICAO Annex 14 / EASA)\n* **TORA (Take-Off Run Available):** Physical runway suitable for takeoff ground run.\n* **TODA (Take-Off Distance Available):** TORA + Clearway (Clearway cannot exceed 50% of TORA).\n* **ASDA (Accelerate-Stop Distance Available):** TORA + Stopway.\n* **LDA (Landing Distance Available):** Runway length declared available for landing ground run.",
+      "references": [
+        "ICAO Annex 14 Volume I • EASA CS-ADR-DSN"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-012",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Aerodynamics: Supercritical Airfoil Design",
+    "stem": "What are the primary aerodynamic advantages of a Supercritical Airfoil used on modern executive business jets?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flatter upper surface delays the onset of supersonic shockwaves and reduces shock-induced boundary layer drag, allowing higher cruise Mach numbers or a thicker wing for structural fuel capacity.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Eliminates all aerodynamic stall characteristics up to 45 degrees angle of attack.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Increases low-speed drag during steep approach into London City.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Replaces the need for vortex generators, slats, and trailing edge flaps.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ Supercritical Airfoil Characteristics\n* **Features:** Flatter upper surface, significant aft camber (cusped trailing edge), larger leading-edge radius.\n* **Benefits:**\n  1. Delays Mach drag divergence.\n  2. Weakens shockwave intensity on upper surface.\n  3. Permits a **thicker wing** without aerodynamic penalty, providing crucial internal volume for fuel tanks on long-range business jets.",
+      "references": [
+        "NASA TM-X-73935 • EASA ATPL Principles of Flight"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-013",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Performance: Maximum Brake Energy Speed (VMBE)",
+    "stem": "What is Maximum Brake Energy Speed (VMBE) and what happens if a rejected takeoff is initiated above VMBE?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VMBE is the maximum speed from which an aircraft can be stopped without exceeding the kinetic heat absorption limits of the brake assemblies; aborting above VMBE risks brake fire, fuse plug deflation, or catastrophic brake failure.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "VMBE is the minimum speed at which anti-skid protection becomes active.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "VMBE is the tire blow-out speed due to centrifugal expansion.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "VMBE is only applicable during wet runway landings.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛑 Maximum Brake Energy Speed (VMBE)\n* **Kinetic Energy:** Stopping an aircraft converts kinetic energy into heat within carbon or steel brake heat packs.\n* **Constraint:** V1 ≤ VMBE. Under high gross weights, high pressure altitudes, and tailwinds, V1 may be limited by VMBE rather than field length.\n* **Exceedance:** May melt thermal fuse plugs (deflating tires safely) or cause uncontrolled brake fires and loss of braking torque.",
+      "references": [
+        "EASA CS-25.735 • Part-CAT.POL.A.205"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-014",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Aerodynamics: Induced Drag vs Parasite Drag Curve",
+    "stem": "At what point on the total drag curve does an executive jet achieve maximum lift-to-drag ratio (L/D_MAX), and what operational speeds correspond to this point?",
+    "options": [
+      {
+        "id": "A",
+        "text": "At the minimum point of the total drag curve where Induced Drag exactly equals Parasite Drag; corresponds to Maximum Glide Speed (V_GLIDE) and Maximum Endurance Speed (Holding Speed).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "At the maximum speed MMO where parasite drag is highest.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "At the stall speed VS1 where induced drag is zero.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "At the rotation speed VR with takeoff flaps extended.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ Drag Curve & L/D_MAX\n* **Induced Drag:** High at low speeds (high AoA), decreases as speed increases.\n* **Parasite Drag:** Low at low speeds, increases quadratically with speed.\n* **Minimum Drag Point:** Occurs where Induced Drag = Parasite Drag. This represents (L/D)_MAX, providing maximum glide range and maximum endurance for jet aircraft.",
+      "references": [
+        "EASA ATPL Principles of Flight • Aerodynamics for Naval Aviators"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-015",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Performance: Landing Distance Factors (Dry vs Wet)",
+    "stem": "Under EASA Part-CAT dispatch rules for turbojet aircraft, what safety margins must be applied to the certified Dry Landing Distance to obtain the Required Landing Distance for DRY and WET runways?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DRY: Certified distance must not exceed 60% of LDA (Factor 1.67); WET: Required distance is Dry Required × 1.15 (Overall factor 1.92).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "DRY: Factor 1.30; WET: Factor 1.50.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "DRY: Factor 1.43 (70% rule); WET: Factor 1.60.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "DRY: No safety margin; WET: Factor 1.10.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛬 EASA Part-CAT Turbojet Landing Dispatch Factors\n* **Dry Runway (CAT.POL.A.230):** The aircraft must be able to land and stop within 60% of LDA. Safety Factor = 1 / 0.60 = 1.67.\n* **Wet Runway (CAT.POL.A.230(c)):** The Required Landing Distance must be at least 115% of Dry Required Landing Distance (Overall Wet Factor = 1.67 × 1.15 = 1.92).",
+      "references": [
+        "EASA Part-CAT.POL.A.230 • AMC1 CAT.POL.A.230"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-016",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Engine: Flat-Rated Engine Concept",
+    "stem": "What is meant by a 'Flat-Rated' turbofan engine on modern business jets, and what parameter limits engine thrust above the flat-rated corner point temperature (T_REF)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The engine produces constant maximum certified thrust up to a reference ambient temperature (T_REF) limited by internal structural pressure; above T_REF, thrust is restricted by Turbine/EGT temperature limits.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "The engine has a flat horizontal combustion chamber to reduce fuselage drag.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "The engine cannot operate at altitudes exceeding 10,000 ft without auxiliary superchargers.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Thrust rating remains identical at all flight levels from sea level to FL450.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⚙️ Flat-Rated Turbofan Engines\n* **Below Corner Point (T_REF, e.g. ISA+15°C):** The engine is restricted by FADEC to prevent exceeding internal casing/shaft structural pressure limits.\n* **Above Corner Point:** The engine becomes temperature-limited (EGT/ITT). FADEC reduces fuel flow and thrust to prevent thermal damage.",
+      "references": [
+        "Rolls-Royce / Pratt & Whitney Engine Principles • EASA CS-E"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-017",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Aerodynamics: Specific Range (SAR) & Optimum Cruise Altitude",
+    "stem": "What factors determine the Optimum Cruise Altitude for a long-range executive jet flight, and why does optimum flight level increase as the flight progresses?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Optimum flight level is where Specific Air Range (SAR = True Airspeed / Fuel Flow) is maximized; as fuel burns off, aircraft weight decreases, reducing required lift and induced drag, which shifts the SAR peak to higher altitudes (Step Climb).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Optimum altitude is determined strictly by cabin pressurization limits regardless of weight.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Optimum altitude decreases as fuel burns off because the aircraft becomes too light for high altitude stability.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Optimum altitude is fixed by ATC before departure and cannot be modified in flight.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ Specific Air Range (SAR) & Step Climbs\n* **SAR:** Nautical miles flown per kilogram of fuel burned (SAR = TAS / FF).\n* **Weight Effect:** As weight decreases due to fuel consumption, the wing operates at lower angle of attack, lowering induced drag and shifting the optimum aerodynamic operating point to higher altitudes.",
+      "references": [
+        "EASA Part-CAT.OP.MPA.180 • Bombardier / Gulfstream Flight Planning Manuals"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-018",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Performance: Derated Takeoff vs Assumed Temperature Method",
+    "stem": "What is the key regulatory and operational distinction between a 'Derated Takeoff' (Fixed Derate) and the 'Assumed Temperature / Flex Method' for reduced thrust takeoffs?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A Derate establishes a new certified lower thrust rating with reduced VMCG/VMCA limits (prohibiting throttle advancement beyond derate); Assumed Temperature is an operational performance reduction where full rated thrust may be manually selected at any time.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Derated thrust is only used on wet runways, while Assumed Temperature is only used on dry runways.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Assumed temperature cannot reduce thrust by more than 5%, whereas derate reduces thrust by 50%.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Both methods are completely identical in certification and flight deck throttle handling.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛫 Derated Thrust vs Assumed Temperature (Flex)\n* **Assumed Temperature (FLEX):** Simulates a higher ambient temperature where less thrust is required on long runways. VMCG/VMCA are calculated based on full rated thrust. The crew CAN push levers to TOGA at any time without directional control issues.\n* **Derate (Fixed Derate):** Establishes an official lower engine rating. VMCG is lower. Pushing levers past the derate limit at low speed could cause loss of directional control if an engine fails.",
+      "references": [
+        "EASA CS-25.101 • AMC 25.101 Reduction of Takeoff Thrust"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-019",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Aerodynamics: Shock Wave Formation & Critical Mach Number",
+    "stem": "What is the definition of Critical Mach Number (M_CRIT) for a jet transport aircraft?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The free-stream aircraft Mach number at which airflow over the highest camber point of the wing first reaches the local speed of sound (Mach 1.0).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "The speed at which the entire aircraft exceeds Mach 1.0 in level flight.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "The maximum permissible dive speed tested during certification (MDF).",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "The speed where pitot tube heating automatically disconnects.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ Critical Mach Number (M_CRIT)\n* **Definition:** As air accelerates over the curved upper surface of an airfoil, local velocity exceeds free-stream velocity. M_CRIT is the aircraft airspeed where local Mach = 1.0 at the first point on the airfoil.\n* **Post M_CRIT:** Supersonic pockets form, creating normal shockwaves, boundary layer separation, and dramatic drag rise.",
+      "references": [
+        "EASA Part-FCL ATPL Principles of Flight • CS-25.335"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-020",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Performance: Tire Ground Speed Limits",
+    "stem": "Under what takeoff conditions is the certified Tire Ground Speed Limit most likely to become the limiting performance factor for a high-altitude corporate jet departure?",
+    "options": [
+      {
+        "id": "A",
+        "text": "High airport elevation (e.g. Toluca, Madrid, Aspen), high ambient temperature, zero wind or tailwind, and heavy takeoff weight resulting in very high True Airspeed at liftoff (V_LOF).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Low elevation sea-level departure in freezing rain.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "High headwind component during light gross weight ferry flight.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Takeoff with full flaps on contaminated slush runways.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛞 Tire Ground Speed Limits\n* **Constraint:** Aircraft tires are rated for maximum ground speed (e.g. 195 kt, 210 kt, 225 kt) to prevent centrifugal tread separation and casing failure.\n* **Mechanism:** At high density altitude (hot and high), True Airspeed (TAS) for a given Indicated Airspeed (VR) is significantly higher.\n* **Limit:** Ground Speed at liftoff must never exceed the certified tire speed rating.",
+      "references": [
+        "EASA CS-25.733 • AFM Section 2 Limitations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-021",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Aerodynamics: High Altitude Jet Stall Recovery",
+    "stem": "What is the correct, standardized recovery technique for a high-altitude aerodynamic stall or buffet encounter on a modern jet aircraft?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Immediately disconnect autopilot, apply smooth forward pitch control to reduce Angle of Attack (AoA), level wings, and smoothly advance thrust as recovery begins without exceeding engine limits.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Immediately pull full aft yoke to trade altitude for airspeed while selecting full rudder trim.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Rapidly extend full flight spoilers to increase descent rate while maintaining cruise pitch attitude.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cycle the landing gear handle down to activate ground proximity terrain warnings.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ High Altitude Stall Recovery (FAA / EASA Standardized Envelope Protocol)\n1. **Disconnect Autopilot / Autothrottle.**\n2. **Pitch Down (Reduce AoA):** The ONLY action that recovers a wing from stall is reducing Angle of Attack below the critical stall AoA.\n3. **Roll Wings Level:** To orient lift vector vertically.\n4. **Thrust:** Apply thrust smoothly.\n5. **Retract Spoilers / Speedbrakes** if extended.",
+      "references": [
+        "ICAO Doc 10011 UPRT Manual • EASA SIB 2013-02"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-022",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Performance: Obstacle Clearance & Net Takeoff Flight Path",
+    "stem": "What is the difference between the 'Gross Takeoff Flight Path' and the 'Net Takeoff Flight Path' in EASA obstacle clearance calculations for twin-engine aircraft?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gross flight path is the actual measured performance of the aircraft; Net flight path is the gross performance degraded by a mandatory 0.8% gradient reduction (for twins) to guarantee obstacle clearance.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Gross flight path includes cabin baggage weight, while net path excludes it.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Net flight path applies only when all engines are operating normally.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Gross gradient is reduced by 2.5% for all transport aircraft.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛫 Gross vs Net Takeoff Flight Path (EASA Part-CAT.POL.A.210)\n* **Gross Performance:** Actual one-engine-inoperative climb profile demonstrated during flight test certification.\n* **Net Performance:** The degraded profile used for operational obstacle clearance calculations:\n  * Twin-Engine: Gross gradient minus 0.8%.\n  * Three-Engine: Gross gradient minus 0.9%.\n  * Four-Engine: Gross gradient minus 1.0%.\n* **Margin:** The Net Takeoff Flight Path must clear all obstacles by at least 35 ft vertically (or 50 ft in turns).",
+      "references": [
+        "EASA Part-CAT.POL.A.210 • CS-25.115"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-023",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Aerodynamics: VMO/MMO Crossover Altitude",
+    "stem": "What is the 'Crossover Altitude' (Interlock Altitude) in jet transport climb and descent profiles?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The specific altitude where a constant Indicated Airspeed (VMO / CAS) and a constant Mach number (MMO) represent the exact same True Airspeed (TAS).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "The altitude where the aircraft transitions from Class G uncontrolled airspace into Class A controlled airspace.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "The altitude where autopilot transfers authority from elevator servos to stabilizer trim motors.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "The level where supplemental oxygen is required for cabin passengers.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ Crossover Altitude Principles\n* **Climb:** During climb at constant CAS (e.g. 290 kt), Mach number increases steadily. At Crossover Altitude (typically FL280-FL320), the climb speed schedule transitions from constant CAS to constant Mach (e.g. M 0.78).\n* **Descent:** Descending at constant Mach causes CAS to increase until reaching crossover altitude, after which descent continues at constant CAS.",
+      "references": [
+        "EASA ATPL Principles of Flight • NetJets FCOM Speed Management"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-024",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Engine: Bleed Air Extraction Penalties",
+    "stem": "Why does selecting Engine Anti-Ice and Wing Anti-Ice ON during high-altitude cruise or single-engine climb degrade aircraft performance?",
+    "options": [
+      {
+        "id": "A",
+        "text": "High-pressure compressor stage bleed air is diverted from the core gas path to heat leading edges, reducing available engine thrust, increasing EGT, and lowering maximum cruise ceiling.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Anti-ice valves increase fuel flow to the APU rather than the main engines.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Anti-ice electrical draw disconnects both engine-driven generators.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Thermal expansion of the wing alters the aerodynamic camber, increasing stall speed by 40%.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⚙️ Engine Bleed Air & Anti-Ice Penalties\n* **Mechanism:** Pneumatic anti-ice systems tap high-temperature, high-pressure bleed air from compressor stages.\n* **Consequences:**\n  1. Loss of core mass flow → reduced available thrust.\n  2. Higher EGT / ITT for the same thrust level.\n  3. Increased specific fuel consumption (SFC).\n  4. Significant drop in Single-Engine Service Ceiling (up to 1,500 to 3,000 ft reduction).",
+      "references": [
+        "AFM Section 5 Performance • EASA CS-25.1419"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-025",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Aerodynamics: Ground Effect on Landing Flare",
+    "stem": "What physical changes occur to an aircraft's aerodynamic characteristics when entering 'Ground Effect' during the landing flare within one wingspan of the runway surface?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Upwash, downwash, and wingtip vortices are restricted by the ground surface, significantly reducing induced drag, increasing effective wing aspect ratio, and creating a floating tendency.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Parasite drag doubles instantly, causing the aircraft to sink rapidly onto the runway.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Elevator authority is completely lost requiring full nose-up stabilizer trim.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Dynamic pressure drops to zero causing false indicated airspeed readings.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ Ground Effect in Landing Flare\n* **Proximity:** Becomes significant within 1/2 wingspan above the ground.\n* **Physical Effects:**\n  1. Interference with 3D wingtip vortices → dramatic drop in Induced Drag.\n  2. Steeper lift curve slope (more lift at the same AoA).\n  3. Reduced downwash on horizontal stabilizer → mild pitch-down moment.\n  4. Increased local static pressure → altimeter/ASI may read slightly low.",
+      "references": [
+        "EASA ATPL Principles of Flight • NetJets Landing Flare Technique Guide"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
     "id": "NJ-FUEL-001",
     "subject_id": "combustible-fuel-schemes",
     "learning_objective": "EASA Fuel Schemes - Framework (CAT.OP.MPA.180 & 181)",
@@ -83794,7 +84769,7 @@
       }
     ],
     "explanation": {
-      "text": "### ETP and PNR Principles\n* **Equal Time Point (ETP / Critical Point):** Calculated for normal, engine-out (1EI), and depressurized scenarios ($D_D_ETP = [D × GS_ret] / [GS_ret + GS_cont]$).\n* **Point of No Return (PNR):** The last point where the aircraft can return to base with **Final Reserve Fuel intact**.",
+      "text": "### ETP and PNR Principles\n* **Equal Time Point (ETP / Critical Point):** Calculated for normal, engine-out (1EI), and depressurized scenarios (D_D_ETP = [D × GS_ret] / [GS_ret + GS_cont]).\n* **Point of No Return (PNR):** The last point where the aircraft can return to base with **Final Reserve Fuel intact**.",
       "references": [
         "ICAO Flight Planning and Fuel Management Manual (Doc 9976)"
       ]
@@ -84726,6 +85701,318 @@
     "_subtopic": "escenarios-netjets-despacho-crm"
   },
   {
+    "id": "NJ-CRM-018",
+    "subject_id": "netjets-interview",
+    "learning_objective": "NetJets Operations: Steep Approach Operations (London City EGLC)",
+    "stem": "What special aircraft and crew certification requirements apply to steep approach operations (5.5° glideslope) into London City Airport (EGLC)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Specific AFM steep approach airworthiness approval, dedicated autopilot/flight director steep approach mode, company OM approval, and pilot simulator steep approach qualification.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Only a standard Cat I ILS rating is required with no simulator training.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Steep approaches require flying with landing gear retracted until 200 ft AAL.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Steep approach certification is exclusively required for single-engine propeller aircraft.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🏙️ London City (EGLC) Steep Approach Operations (EASA CS-25 App H)\n* **Glideslope:** 5.5° (compared to standard 3.0°).\n* **Certification:**\n  1. **Aircraft AFM:** Must be certified for glidepaths ≥ 4.5° (involves specific flap/speedbrake configurations to maintain speed stability on a steep gradient without accelerating).\n  2. **Crew:** Initial simulator qualification and recency (6 months) for Category C aerodromes (London City, Lugano, Sion, Samedan).",
+      "references": [
+        "EASA CS-25 Appendix H • NetJets Operations Manual Part C"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "escenarios-netjets-despacho-crm"
+  },
+  {
+    "id": "NJ-CRM-019",
+    "subject_id": "netjets-interview",
+    "learning_objective": "CRM: PACE Graded Assertiveness in Flight Deck Operations",
+    "stem": "In Airline and NetJets CRM, what are the four sequential escalation steps of the 'PACE' graded assertiveness communication model?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Probe ('Do you see our speed?'), Alert ('We are 15 knots fast on glideslope'), Challenge ('Captain, we are unstabilized, go around!'), Emergency ('I have controls, going around').",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Plan, Analyze, Communicate, Execute.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Predict, Assess, Confirm, Evacuate.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pause, Acknowledge, Correct, Exit.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🗣️ PACE Graded Assertiveness CRM Model\n* **1. Probe:** Inquire gently to confirm situational awareness (*\"Captain, what is our target speed here?\"*).\n* **2. Alert:** State the factual parameter deviation (*\"We are 15 knots fast and high on the PAPI\"*).\n* **3. Challenge:** Issue a direct, unambiguous command (*\"Captain, we are unstabilized below 1,000 ft, GO AROUND!\"*).\n* **4. Emergency:** Intervene physically if no response (*\"I HAVE CONTROLS, GOING AROUND!\"*).",
+      "references": [
+        "ICAO Human Factors Training Manual • NetJets CRM Manual"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "escenarios-netjets-despacho-crm"
+  },
+  {
+    "id": "NJ-CRM-020",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Operational Scenarios: In-Flight Passenger Medical Incapacitation",
+    "stem": "During a transatlantic charter flight with NetJets fractional Owners, a passenger suffers symptoms of acute myocardial infarction (heart attack). What is the Commander's decision priority sequence?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Contact MedAire / In-flight Telemedical assistance via SATCOM, administer high-flow first aid oxygen, request ATC priority for immediate diversion to nearest suitable airport with advanced coronary medical facilities.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Continue to the planned destination 6 hours away to avoid disrupting passenger business meetings.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Ask the passengers to vote on whether to divert or continue.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Land immediately on the nearest unpaved visual airstrip without coordinating with ATC.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🚑 In-Flight Medical Emergencies (NetJets Protocol)\n* **Telemedical Support:** NetJets maintains 24/7 real-time SATCOM uplink with specialized aviation medical consultants (e.g. MedAire / Global Medical Assistance).\n* **Diversion Priority:** Medical doctors identify the best-equipped hospital facility in the region.\n* **ATC:** Declare `PAN PAN MEDICO` or `MAYDAY` to obtain direct routing, priority descent, and emergency ambulance on the ramp.",
+      "references": [
+        "ICAO Doc 9654 Guide on In-Flight Medical Emergencies • NetJets OM-A"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "escenarios-netjets-despacho-crm"
+  },
+  {
+    "id": "NJ-CRM-021",
+    "subject_id": "netjets-interview",
+    "learning_objective": "CRM: Threat and Error Management (TEM) - Undesired Aircraft State",
+    "stem": "Under the Threat and Error Management (TEM) framework, what constitutes an 'Undesired Aircraft State' (UAS) and how should the flight crew respond?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A flight-crew-induced operational state or equipment condition that reduces safety margins (e.g. altitude overshoot, unstabilized approach, wrong flap setting); immediate priority is to recover to nominal state or execute missed approach.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Any flight where a passenger refuses to eat the catered meal.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "A delayed departure caused strictly by air traffic control ground hold programs.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "A situation that can only be resolved by filing an MOR report after landing.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛡️ Threat and Error Management (TEM Framework)\n* **Threats:** External factors (weather, ATC, terrain, MEL items).\n* **Errors:** Flight crew actions or inactions (incorrect data entry, checklist omissions).\n* **Undesired Aircraft State (UAS):** The transitional condition between an unmanaged error and an incident/accident (e.g., speed deviation, lateral track deviation, incorrect autopilot mode).\n* **Management:** Immediate recovery action takes precedence over root-cause investigation.",
+      "references": [
+        "ICAO Doc 9803 Line Operations Safety Audit (LOSA) • EASA Part-ORO.FC.230"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "escenarios-netjets-despacho-crm"
+  },
+  {
+    "id": "NJ-CRM-022",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Operational Scenarios: High Altitude Depressurization & Oxygen Mask Mandate",
+    "stem": "Why must the Quick-Donning Oxygen Mask be donned with ONE HAND in less than 5 seconds when Cabin Altitude exceeds 10,000 ft or during rapid decompression above FL350?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Useful Consciousness (TUC) at FL400 is only 15 to 20 seconds, and quick-donning ensures instantaneous 100% positive-pressure oxygen delivery before hypoxia induces mental incapacitation.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "To allow the pilot to continue holding the coffee cup with the other hand.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Because FAA regulations require masks to be worn during all normal cruise flights above FL250.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Because smoke goggles cannot be fitted if mask donning takes more than 10 seconds.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🫁 Time of Useful Consciousness (TUC) & Quick-Donning Masks\n| Flight Level | Altitude | Time of Useful Consciousness (TUC) |\n| :--- | :--- | :--- |\n| **FL300** | 30,000 ft | 1 to 2 minutes |\n| **FL350** | 35,000 ft | 30 to 60 seconds |\n| **FL400** | 40,000 ft | **15 to 20 seconds** |\n| **FL450** | 45,000 ft | **9 to 12 seconds** |\n* **Certification (CS-25.1441):** Quick-donning mask must be deployable and operational within 5 seconds with one hand while wearing corrective eyeglasses.",
+      "references": [
+        "EASA CS-25.1441 • Part-CAT.IDE.A.235 Quick Donning Masks"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "escenarios-netjets-despacho-crm"
+  },
+  {
+    "id": "NJ-CRM-023",
+    "subject_id": "netjets-interview",
+    "learning_objective": "NetJets Operations: High-Elevation Cold Weather Ops (Samedan / St. Moritz LSZS)",
+    "stem": "What operational factors make Samedan / St. Moritz Airport (LSZS, elevation 5,600 ft) one of the most challenging Category C airports in the NetJets European network?",
+    "options": [
+      {
+        "id": "A",
+        "text": "High elevation (5,600 ft), severe mountainous terrain, absence of instrument approach (VFR only), rapid mountain weather changes, high true airspeeds, and strict performance weight penalties.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "It operates with standard Category III ILS autoland capability year-round.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Runway length exceeds 4,000 meters with sea-level atmospheric density.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "It is open exclusively for night cargo transport.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🏔️ Samedan / St. Moritz (LSZS) Special Operations\n* **Category C Aerodrome:** Elevation 5,600 ft MSL in the Swiss Alps.\n* **Operational Constraints:**\n  * No published IFR instrument approach (VFR arrival through alpine valleys).\n  * High Density Altitude → Significantly higher True Airspeed (TAS) and higher turn radius.\n  * Extreme cold weather in winter requires strict cold-soak fuel precautions and anti-ice performance penalties.\n  * Special NetJets Pilot Airport Briefing and simulator training mandatory.",
+      "references": [
+        "NetJets Airport Categorization Guide • EASA Part-ORO.FC.105"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "escenarios-netjets-despacho-crm"
+  },
+  {
+    "id": "NJ-CRM-024",
+    "subject_id": "netjets-interview",
+    "learning_objective": "CRM: Startle Effect & Unreliable Airspeed Management",
+    "stem": "What is the recommended cognitive management strategy to mitigate the 'Startle Effect' during sudden emergencies such as Pitot-Static icing or Unreliable Airspeed warnings at high altitude?",
+    "options": [
+      {
+        "id": "A",
+        "text": "'Aviate, Navigate, Communicate': Pause to take a breath, suppress instinctive abrupt control inputs, fly memory pitch and power values (e.g. 2.5° / 85% N1), and cross-check independent instruments.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Immediately pull full aft elevator to test the stick shaker threshold.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Instantly disconnect all electrical generators to reset avionics.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Descend in maximum speed vertical dive to reach warmer air.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🧠 Startle Effect & Unreliable Airspeed Protocol\n* **Startle Response:** Physiological acute stress response that impairs rational cognitive decision-making for 5-15 seconds.\n* **Golden Rule:**\n  1. **DO NOT REACT ABRUPTLY.** Resist the urge to chase fluctuating airspeed indicators.\n  2. **Pitch & Power:** Set known safe attitude and thrust (Pitch/Thrust\\,Memory Item).\n  3. Verify pitot heat switches ON.\n  4. Consult Unreliable Airspeed QRH tables for level-off pitch/power schedules.",
+      "references": [
+        "EASA Safety Information Bulletin SIB 2013-02 • ICAO Doc 10011"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "escenarios-netjets-despacho-crm"
+  },
+  {
+    "id": "NJ-CRM-025",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Operational Scenarios: Lithium Battery Thermal Runaway in Cabin",
+    "stem": "If a passenger's personal electronic device (PED / laptop) enters Thermal Runaway in the executive cabin, what is the mandatory fire suppression procedure?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Discharge Halon / water fire extinguisher to extinguish flames, then continuously douse the device with non-alcoholic liquids (water / sodas) to cool battery cells and prevent thermal runaway propagation; do NOT wrap in ice or blankets.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cover the device with dry blankets and store it inside an overhead baggage bin.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Throw the burning device out of the cockpit emergency hatch.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pack the device in dry ice inside the aft lavatory.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🔋 Lithium Battery Thermal Runaway in Flight (ICAO Doc 9481 / NetJets SOP)\n* **Mechanism:** Internal short circuit generates uncontrollable self-sustaining exothermic heat (>600°C).\n* **Standard 2-Step Protocol:**\n  1. **Knockdown:** Extinguish open flames using Halon or aqueous extinguisher.\n  2. **Cooling:** Continuously pour **WATER or non-flammable liquids** directly over the device. Water cools adjacent cells and halts the thermal chain reaction.\n* **WARNING:** Never smother with ice, blankets, or enclosed bags that trap thermal energy.",
+      "references": [
+        "ICAO Doc 9481 Emergency Response Guidance • FAA In-Flight Lithium Fire Advisory"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "escenarios-netjets-despacho-crm"
+  },
+  {
     "id": "NJ-RVSM-001",
     "subject_id": "espacio-rvsm-pbn-lvo",
     "learning_objective": "RVSM Altitude Limits and Separation Standards",
@@ -85326,6 +86613,84 @@
     "_subtopic": "espacio-rvsm-pbn-lvo"
   },
   {
+    "id": "NJ-RVSM-016",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Navigation: North Atlantic High Level Airspace (NAT-HLA) Equipment",
+    "stem": "What navigation equipment approvals are mandatory to operate in North Atlantic High Level Airspace (NAT-HLA) between FL285 and FL420?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Two independent Long-Range Navigation Systems (LRNS) approved for RNP 4 or RNP 10, RVSM operational approval, and dual long-range communications (HF / CPDLC / SATVOICE).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "A single VOR receiver and Mode A transponder.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No specific approval is needed if following an airliner visually.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "NAT-HLA only requires visual navigation by celestial stars.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🌊 NAT-HLA Oceanic Navigation Mandate (ICAO Doc 007 / Part-SPA.NAT-HLA)\n* **Airspace:** FL285 to FL420 across the North Atlantic.\n* **Mandatory Specs:**\n  1. **Dual LRNS:** 2 independent Inertial Reference Systems (IRS/IRU) or multi-sensor FMS with GPS.\n  2. **RNP 4 / RNP 10:** Lateral accuracy for oceanic tracks.\n  3. **RVSM:** 1,000 ft vertical separation capability.\n  4. **Communications:** Dual HF radios and SATCOM/CPDLC Data Link.",
+      "references": [
+        "ICAO Doc 007 North Atlantic Operations • EASA Part-SPA.NAT-HLA"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "espacio-rvsm-pbn-lvo"
+  },
+  {
+    "id": "NJ-RVSM-017",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Navigation: ADS-B Out Mandate in European Airspace",
+    "stem": "What is the certified standard for ADS-B Out mandated in European airspace under Commission Implementing Regulation (EU) No 1207/2011 for aircraft with MTOM > 5,700 kg?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1090 MHz Extended Squitter (1090ES) Mode S transponder broadcasting GNSS-derived position, altitude, velocity, and flight identification with certified Design Assurance (DO-260B / ELS & EHS).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "978 MHz Universal Access Transceiver (UAT) only.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "VHF voice radio broadcasts every 10 minutes.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "ADS-B Out is optional for private business aviation.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 📡 ADS-B Out Mandate in Europe (SPI Regulation)\n* **Standard:** **1090 MHz Extended Squitter (DO-260B / ED-102A)**.\n* **Data Broadcast:** GPS position, pressure altitude, ground track, ground speed, callsign, emergency status.\n* **Difference from US:** The US permits 978 MHz UAT below FL180, but **Europe exclusively mandates 1090 MHz Extended Squitter** for all IFR flights.",
+      "references": [
+        "Regulation (EU) No 1207/2011 • EASA CS-ACNS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "espacio-rvsm-pbn-lvo"
+  },
+  {
     "id": "NJ-HIST-001",
     "subject_id": "historia-evolucion-netjets",
     "learning_objective": "NetJets Corporate History - Origins of Executive Jet Aviation (EJA, 1964)",
@@ -85413,7 +86778,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Buffett initially became a NetJets fractional owner in 1995; after experiencing the outstanding safety, reliability, and service first-hand, Berkshire Hathaway acquired NetJets for approximately $725 million in 1998.",
+        "text": "Buffett initially became a NetJets fractional owner in 1995; after experiencing the outstanding safety, reliability, and service first-hand, Berkshire Hathaway acquired NetJets for approximately 725 million in 1998.",
         "is_correct": true
       },
       {
@@ -85433,7 +86798,7 @@
       }
     ],
     "explanation": {
-      "text": "### Berkshire Hathaway Acquisition (1998)\n* Warren Buffett was initially a vocal critic of corporate jet ownership (humorously naming his company jet *'The Indefensible'*).\n* In **1995**, Buffett bought a fractional share with NetJets. Impressed by the operational excellence and safety culture, he renamed the jet *'The Indispensable'*.\n* In **1998**, **Berkshire Hathaway** fully purchased Executive Jet / NetJets for $725 million, providing NetJets with unmatched financial strength, long-term stability, and capital for massive fleet orders.",
+      "text": "### Berkshire Hathaway Acquisition (1998)\n* Warren Buffett was initially a vocal critic of corporate jet ownership (humorously naming his company jet *'The Indefensible'*).\n* In **1995**, Buffett bought a fractional share with NetJets. Impressed by the operational excellence and safety culture, he renamed the jet *'The Indispensable'*.\n* In **1998**, **Berkshire Hathaway** fully purchased Executive Jet / NetJets for 725 million, providing NetJets with unmatched financial strength, long-term stability, and capital for massive fleet orders.",
       "references": [
         "Berkshire Hathaway Annual Shareholder Letter (1998)",
         "NetJets Corporate Profile"
@@ -86638,6 +88003,1059 @@
     "_subtopic": "licencias-habilitaciones-aircrew"
   },
   {
+    "id": "NJ-CREW-014",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Aircrew: Cruise Relief Co-Pilot (CRCO) Privileges & Limitations",
+    "stem": "What are the regulatory privileges and flight level limitations of a Cruise Relief Co-Pilot (CRCO) under EASA Part-FCL.060 / Part-ORO.FC?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Relieve the Co-pilot at the controls only above Flight Level 200 (FL200) during cruise flight; prohibited from acting as pilot flying during takeoff, initial climb, descent, approach, and landing.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "May fly the entire flight from takeoff to landing without PIC supervision.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Can only operate below 10,000 ft in VMC conditions.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "CRCO rating is valid for single-pilot turboprops only.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 👨‍✈️ Cruise Relief Co-Pilot (CRCO) Privileges\n* **Authority:** Part-FCL.720.A / Part-ORO.FC.105.\n* **Operational Window:** May relieve a crew member **ONLY in cruise flight above FL200**.\n* **Prohibitions:** Cannot occupy control seats during takeoff, climb below FL200, descent below FL200, approach, or landing.",
+      "references": [
+        "EASA Part-FCL.720.A • Part-ORO.FC.105"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "licencias-habilitaciones-aircrew"
+  },
+  {
+    "id": "NJ-CREW-015",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Aircrew: Decrease in Medical Fitness Notification (MED.A.045)",
+    "stem": "Under EASA Part-MED.A.045, under what medical conditions is a pilot legally obligated to suspend flight duties and inform their Aero-Medical Examiner (AME)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Any surgical operation or invasive procedure, regular use of prescribed medication, confirmed pregnancy, hospital admission, or any illness/injury causing incapacity to perform flight duties for more than 21 days.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Only upon suffering permanent total blindness.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mild common cold lasting less than 24 hours.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Changing spectacle frame color without lens modification.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🩺 Decrease in Medical Fitness (EASA Part-MED.A.045)\n* **Mandatory Suspension Triggers:**\n  1. Illness or injury involving incapacity for **more than 21 days** (Class 1) or 30 days (Class 2).\n  2. Any hospital admission or surgical procedure.\n  3. Significant personal injury.\n  4. Confirmed pregnancy.\n  5. Starting regular medication not previously approved by AME.",
+      "references": [
+        "EASA Part-MED.A.045 • AMC1 MED.A.045"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "licencias-habilitaciones-aircrew"
+  },
+  {
+    "id": "NJ-MET-001",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Low-Level Windshear & Microburst Dynamics",
+    "stem": "What are the characteristic lifecycle stages and airspeed indications when an aircraft penetrates an intense low-level Microburst on final approach?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Initial performance-increasing headwind with pitch-up and airspeed surge, followed immediately by a strong localized downdraft, and culminating in a severe performance-decreasing tailwind causing catastrophic loss of airspeed and altitude.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Steady tailwind throughout the entire approach with constant rate of descent.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Gradual continuous increase in headwind from outer marker down to touchdown.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Immediate loss of all pitot pressure without changes in rate of descent.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⛈️ Microburst Structure & Cockpit Cues\n* **Dimensions:** Typically < 4 km (2.2 NM) in diameter, downdrafts up to 6,000 ft/min, horizontal wind differential exceeding 45 to 90 knots.\n* **Sequence:**\n  1. **Entry:** Strong headwind $rightarrow$ Indicated airspeed rises, aircraft balloons above glidepath. *(Classic Trap: pilot retards thrust).* \n  2. **Core:** Severe downdraft pushes aircraft down.\n  3. **Exit:** Severe tailwind $rightarrow$ Airspeed collapses, stall margins shrink, rate of descent exceeds 2,000+ ft/min.\n* **Action:** Immediate Windshear Escape Maneuver at first alert (MAX TOGA thrust, pitch to pitch limit indicator / stick shaker, do NOT change gear/flap configuration).",
+      "references": [
+        "ICAO Doc 9817 Manual on Low-Level Wind Shear • FAA AC 00-54"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "meteorologia-avanzada-ifr"
+  },
+  {
+    "id": "NJ-MET-002",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Supercooled Large Droplets (SLD) & Severe Icing",
+    "stem": "What meteorological conditions produce Supercooled Large Droplets (SLD - freezing drizzle / freezing rain), and what is the visual evidence of SLD accretion on a business jet?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Formed in warm-nose temperature inversions or deep maritime clouds; visually identified by ice accretion aft of the heated leading-edge anti-ice boots/panels and on cockpit side windows.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Formed only at temperatures below -45°C where cirrus clouds sublimate.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Identified strictly by sudden engine oil pressure increases.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "SLD occurs exclusively in clear air above the tropopause.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🧊 Supercooled Large Droplets (SLD) & Runback Ice\n* **Droplet Size:** Droplets $> 50,µtext{m}$ (freezing drizzle / freezing rain). Due to higher mass and momentum, SLD droplets do not follow the airflow around the wing but impact **aft of the de-iced leading edge**.\n* **Hazard:** Forms severe ridged ice on unprotected upper and lower wing surfaces, creating massive drag and severe uncommanded aileron snatch/hinge moment reversal.\n* **Visual Cues:** Ice building on side windows, wiper posts, and upper wing surface aft of active de-ice boots.\n* **Procedure:** Disconnect autopilot, immediately exit the icing layer by climb, descent, or 180° turn.",
+      "references": [
+        "EASA CS-25 Appendix O • FAA AC 91-74B Pilot Guide to Flight in Icing"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "meteorologia-avanzada-ifr"
+  },
+  {
+    "id": "NJ-MET-003",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: De-icing Fluid Types & Holdover Time (HOT)",
+    "stem": "What is the key difference between Type I and Type IV aircraft de-icing/anti-icing fluids regarding viscosity and Holdover Time (HOT)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Type I is an unthickened, low-viscosity fluid used primarily for de-icing (very short HOT); Type IV is a thickened, pseudoplastic fluid designed for anti-icing on the ground with extended Holdover Times that shears off during takeoff roll.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Type I is applied cold and remains on the aircraft during the entire flight.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Type IV is toxic to turbine engines and prohibited on corporate jets.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Type I fluid has a green color and 4-hour holdover protection.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ❄️ De-icing & Anti-icing Fluid Types (AEA / SAE Standards)\n| Fluid Type | Color | Viscosity | Primary Purpose | Rotation Speed ($V_R$) Limit |\n| :--- | :--- | :--- | :--- | :--- |\n| **Type I** | Orange / Clear | Unthickened (Newtonian) | **De-icing** (Removes frozen deposits; short HOT) | Any speed |\n| **Type II** | Straw / Pale yellow | Thickened (Pseudoplastic) | **Anti-icing** (Protection on ground; shears off at >100 kt) | $V_R > 100text{ kt}$ |\n| **Type III** | Emerald / Green | Thickened (Intermediate) | **Anti-icing** for slower commuter/prop aircraft | $V_R < 100text{ kt}$ |\n| **Type IV** | Green / Emerald | Highly Thickened | **Anti-icing** (Maximum Holdover Times for CAT jets) | $V_R > 100text{ kt}$ |",
+      "references": [
+        "EASA Part-CAT.OP.MPA.250 • AEA Recommendations for De-icing/Anti-icing"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "meteorologia-avanzada-ifr"
+  },
+  {
+    "id": "NJ-MET-004",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Jet Stream Structure & Clear Air Turbulence (CAT)",
+    "stem": "Where is Clear Air Turbulence (CAT) most severe in relation to an upper-level Polar Front Jet Stream core?",
+    "options": [
+      {
+        "id": "A",
+        "text": "On the cold-air (polar) side of the jet core and in the upper boundary directly above the core, where horizontal and vertical wind shear gradients are steepest.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "In the exact center of the jet stream core where wind velocity is maximum.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Exclusively below 10,000 ft near sea level.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "On the equatorial warm side at least 500 NM away from the core.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🌪️ Jet Streams & Clear Air Turbulence (CAT)\n* **Structure:** Wind speeds exceed 60 knots (often 120 to 200+ kt) along the tropopause discontinuity.\n* **CAT Location:** Turbulence is created by **wind shear** (velocity gradients), not by wind speed alone.\n  * Horizontal shear is significantly stronger on the **cyclonic (polar/cold) side** (up to 40 kt / 100 NM) than the anticyclonic side.\n  * Vertical shear is greatest **just above and just below the jet core** (exceeding 6-10 kt / 1,000 ft).\n* **Escape:** If encountering CAT with dropping OAT, climb or turn south; if rising OAT, descend or turn south.",
+      "references": [
+        "ICAO Annex 3 Meteorological Service • EASA ATPL Meteorology"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "meteorologia-avanzada-ifr"
+  },
+  {
+    "id": "NJ-MET-005",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Cold Temperature Altimeter Corrections",
+    "stem": "Why must cold temperature altimeter corrections be applied to published IFR approach altitudes, and what is the rule of thumb formula when airport temperature is well below ISA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "True altitude is lower than indicated altitude in cold air columns; apply approx 4% height correction per 10°C temperature deviation below ISA to all minimum approach altitudes above aerodrome level.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "True altitude is higher than indicated in cold air; subtract 100 ft per 1,000 ft of altitude.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cold temperature corrections apply only to cruise levels in RVSM airspace.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No corrections are permitted under EASA unless temperature is below -50°C.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🌡️ Cold Temperature Altimetry Correction (ICAO Doc 8168 PANS-OPS)\n* **Aviation Adage:** *\"High to Low or Hot to Cold, Look out Below!\"*\n* **Principle:** In cold air, atmospheric pressure layers contract. The altimeter measures pressure, so at cold temperatures **True Altitude is significantly LOWER than Indicated Altitude**, severely eroding obstacle clearance.\n* **Rule of Thumb:** $Δ h ≈ 4% times text{Height above airport} times ({Δ T_{ISA}}{10})$.\n* **Application:** Must be added to DA/MDA, FAF altitude, step-down fixes, and MSA.",
+      "references": [
+        "ICAO Doc 8168 PANS-OPS Vol I Section 4 • EASA AMC1 CAT.OP.MPA.126"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "meteorologia-avanzada-ifr"
+  },
+  {
+    "id": "NJ-MET-006",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Mountain Waves & Rotor Clouds",
+    "stem": "What atmospheric conditions favor the development of intense Mountain Waves (Standing Waves), and what is the most dangerous cloud associated with them?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Stable air layer across mountain ridge, wind direction within 30° perpendicular to ridge with speed increasing with altitude (>25-30 kt at ridge crest); Rotor Clouds (Roll clouds) formed beneath the wave crests contain extreme turbulence.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Highly unstable maritime air with surface calm winds and cirrus clouds.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Thunderstorm gust fronts moving over flat desert terrain.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Low stratus fog burning off during morning solar heating.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🏔️ Mountain Wave Dynamics\n* **Prerequisites:**\n  1. Stable air mass at ridge level.\n  2. Wind perpendicular (within 30°) to the mountain ridge.\n  3. Wind speed $ge 25text{ kt}$ at ridge crest, increasing with altitude.\n* **Features:**\n  * **Altocumulus Lenticularis:** Stationary lens-shaped clouds over crests.\n  * **Rotor Clouds:** Violent turbulent eddies with horizontal rotational axis beneath crests (danger of structural failure and extreme vertical shear).",
+      "references": [
+        "ICAO Doc 9817 • EASA ATPL Meteorology Manual"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "meteorologia-avanzada-ifr"
+  },
+  {
+    "id": "NJ-MET-007",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Volcanic Ash Avoidance & Recovery",
+    "stem": "What are the immediate cockpit cues of an inadvertent Volcanic Ash encounter at night, and what is the immediate pilot action?",
+    "options": [
+      {
+        "id": "A",
+        "text": "St. Elmo's fire on windshield, sulfurous acrid odor, smoky cabin haze, engine surging/torching; immediate action is to disconnect autothrottle, reduce thrust to idle, turn 180° to exit the cloud, start APU, and descend.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Immediate weather radar red echo returns; accelerate to MMO to climb above the cloud.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Full deflection of pitot tubes requiring maximum thrust application.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Deploy landing gear immediately to increase airframe drag.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🌋 Volcanic Ash Flight Safety\n* **Radar Invisibility:** Volcanic ash particles are dry, small (silicates), and reflect virtually **NO weather radar energy** (displays black on radar screen).\n* **Cues:** Heavy static discharge (St. Elmo's fire), cockpit sulfur smell, electrical glow inside engines.\n* **Hazard:** Ash melts at ~1,100°C in turbine combustion chambers, coating turbine blades with glassy slag, causing catastrophic multi-engine flameout.\n* **Procedure:**\n  1. Thrust $rightarrow$ **IDLE** (lowers turbine temp below glass melting point).\n  2. Disengage autothrottle / Disengage AP.\n  3. Turn 180° back to clean air.\n  4. Start APU, set engine igniters ON, select max continuous bleed/anti-ice.",
+      "references": [
+        "ICAO Doc 9691 Manual on Volcanic Ash • EASA SIB 2010-17"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "meteorologia-avanzada-ifr"
+  },
+  {
+    "id": "NJ-MET-008",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: TAF & METAR Decoding (TEMPO vs BECMG)",
+    "stem": "In an official TAF forecast for an alternate airport, what is the regulatory difference between 'TEMPO 1418 3000 BR' and 'BECMG 1416 3000 BR' under EASA flight planning rules?",
+    "options": [
+      {
+        "id": "A",
+        "text": "TEMPO indicates temporary fluctuations lasting less than 1 hour in each instance and less than half the total period; BECMG indicates a permanent regular transition where the new condition applies from the start or end of the period depending on whether it is an improvement or deterioration.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "TEMPO means conditions will definitely happen for 4 consecutive hours without change.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "BECMG is only used for wind direction changes greater than 180 degrees.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Under EASA, TEMPO conditions can be completely ignored during alternate planning.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 📜 TAF Decoding: TEMPO vs BECMG (EASA AMC1 CAT.OP.MPA.185)\n* **TEMPO (Temporary):** Fluctuations lasting $< 1text{ hour}$ in each instance and $< 50%$ of the forecast timeframe.\n* **BECMG (Becoming):** Regular permanent trend reaching the new state within the stated period.\n* **Flight Planning Rules (Conservative Principle):**\n  * **Deterioration in BECMG:** Applies from the **BEGINNING** of the BECMG timeframe.\n  * **Improvement in BECMG:** Applies only from the **END** of the BECMG timeframe.\n  * **TEMPO Deteriorations:** Must be considered and respected for planning minima.",
+      "references": [
+        "EASA Part-CAT.OP.MPA.185 • WMO No. 782 Aerodrome Weather"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "meteorologia-avanzada-ifr"
+  },
+  {
+    "id": "NJ-MET-009",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Radiation Fog vs Advection Fog",
+    "stem": "How do Radiation Fog and Advection Fog differ in their formation mechanisms and wind requirements?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Radiation fog forms on clear, calm nights (2-5 kt light breeze) over land via terrestrial radiative cooling; Advection fog forms when warm, moist air moves horizontally over a colder land/sea surface and requires moderate winds (5-15 kt).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Radiation fog only forms over open oceans in summer with gale-force winds.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Advection fog burns off within 10 minutes of sunrise under all circumstances.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Both fog types require surface temperatures below -20°C.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🌫️ Fog Formation Mechanisms\n* **Radiation Fog:** Clear skies, high relative humidity, light breeze (2 to 5 knots) to mix moisture vertically without dispersing the inversion. Burns off with solar insolation.\n* **Advection Fog:** Warm, humid air mass moves over a cooler water or land surface. Persistent, thick, can persist day and night with winds of 5 to 15+ knots (e.g. San Francisco, English Channel, North Sea coastal airports).",
+      "references": [
+        "ICAO Annex 3 • EASA ATPL Meteorology"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "meteorologia-avanzada-ifr"
+  },
+  {
+    "id": "NJ-MET-010",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: SIGMET & AIRMET Criteria",
+    "stem": "Under ICAO Annex 3 / EASA regulations, what meteorological phenomena mandate the issuance of a formal SIGMET message?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Severe turbulence (SEV TURB), severe icing (SEV ICE), severe mountain waves, thunderstorms (EMBD/FRQ/SQL TS with or without hail), heavy duststorms, and volcanic ash clouds (VA).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Routine light rain and scattered cumulus clouds below 5,000 ft.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Surface temperature variations of more than 2°C per hour.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Planned airport snow removal operations.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⚠️ SIGMET (Significant Meteorological Information)\n* **Purpose:** Advises flight crews of severe en-route weather phenomena that may affect the safety of **all aircraft**.\n* **Trigger Criteria:**\n  * **Thunderstorms:** `OBSC TS`, `EMBD TS` (embedded), `FRQ TS` (frequent), `SQL TS` (squall line), with or without `GR` (hail).\n  * **Turbulence:** `SEV TURB`.\n  * **Icing:** `SEV ICE` (not in convective clouds) or `SEV ICE (FZRA)`.\n  * **Mountain Waves:** `SEV MTW`.\n  * **Volcanic Ash:** `VA CLD` (valid up to 6 hours).\n  * **Tropical Cyclones:** `TC`.",
+      "references": [
+        "ICAO Annex 3 Chapter 7 • EASA Air Traffic Management"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "meteorologia-avanzada-ifr"
+  },
+  {
+    "id": "NJ-MET-011",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: In-Flight Weather Radar Tilt & Gain Management",
+    "stem": "What is the correct cockpit radar tilt management technique when scanning for convective cells during high-altitude cruise (e.g. FL370-FL450)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tilt the radar antenna downwards to scan the highly reflective freezing level (wet precipitation / bright band) where the storm's convective core is located, since the upper frozen anvil contains non-reflective ice crystals.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Keep the antenna tilted +10° upwards to detect only dry cirrus clouds.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Always operate radar on maximum manual gain without ground clutter.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Turn off the radar above FL300 because ice crystals cannot damage turbine engines.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 📡 Airborne Weather Radar Management\n* **Convective Core Reflectivity:** Convective storm tops at high altitudes consist of dry ice crystals (low dielectric constant) that reflect little radar energy, masking the cell's true intensity.\n* **Technique:** Tilt the antenna **downward** to intercept the liquid water / wet hail core near the freezing level (0°C isotherm) and scan for hooks, fingers, scalloped edges, and steep reflectivity gradients.\n* **Avoidance:** Clear active thunderstorm cells by at least **20 NM laterally** at cruise altitudes.",
+      "references": [
+        "ICAO Doc 9817 • FAA AC 20-182A Airborne Weather Radar"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "meteorologia-avanzada-ifr"
+  },
+  {
+    "id": "NJ-MET-012",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: High Altitude Ice Crystal Icing (ICI)",
+    "stem": "What are the characteristics of High Altitude Ice Crystal Icing (ICI), and what primary threat does it pose to modern high-bypass turbofan engines?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Invisible dry ice crystals ingested in the engine core melt on warm internal surfaces and refreeze on colder downstream compressor stages, causing engine rollback, flameout, or severe core vibration without airframe ice buildup.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Heavy rime ice accretion on the radome causing immediate pitot static blockage.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Instantaneous freezing of fuel lines inside the fuel tanks.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Ice crystal accumulation strictly on trailing edge landing flaps.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🧊 High Altitude Ice Crystal Icing (ICI / CS-25 Appendix P)\n* **Environment:** Near convective activity at high altitudes (>FL220) and low temperatures (0°C to -40°C).\n* **Mechanism:** High concentrations of microscopic ice crystals bounce off cold airframe surfaces (no airframe ice alert), but are sucked into the engine core where they melt against warm compression stages, collect, and refreeze into chunks of ice, shedding into the combustor.\n* **Symptoms:** Engine rollback (loss of thrust), EGT fluctuations, N1 surges, and total uncommanded flameout.",
+      "references": [
+        "EASA CS-25 Appendix P • Boeing Aero Magazine Ice Crystal Icing"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "meteorologia-avanzada-ifr"
+  },
+  {
+    "id": "NJ-MET-013",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: RVR Definition & Transmissometer Principles",
+    "stem": "Under EASA aerodrome operations, how is Runway Visual Range (RVR) measured, and what are the three standard reporting positions along a precision runway?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Measured by optical transmissometers / forward-scatter meters at Touchdown Zone (TDZ), Mid-point (MID), and Stop-end (Rollout) zones.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Estimated visually by the tower controller looking at distant airport boundary fences.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Measured exclusively by airborne pilot reports (PIREPs) during flare.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Calculated by barometric pressure differences between runway ends.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 👁️ Runway Visual Range (RVR) Systems (EASA AMC1 CAT.OP.MPA.110)\n* **Definition:** The range over which the pilot of an aircraft on the centerline of a runway can see the runway surface markings or the lights delineating the runway or identifying its centerline.\n* **Sensors:** Transmissometers or Forward Scatter Meters positioned ~2.5 to 5 m above runway center.\n* **Reporting Points:**\n  1. **Touchdown Zone (TDZ):** Controlling for all approaches and takeoffs.\n  2. **Mid-point (MID):** Controlling for CAT III and rollout guidance.\n  3. **Stop-end (Rollout):** Relevant for high-speed rollout deceleration.",
+      "references": [
+        "ICAO Doc 9328 Manual of RVR Observing • EASA Part-SPA.LVO"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "meteorologia-avanzada-ifr"
+  },
+  {
+    "id": "NJ-MET-014",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Upper Level Tropopause Height Variations",
+    "stem": "How does the height of the Tropopause vary between the Equator and the Poles, and how does this affect upper-level temperatures and jet stream altitudes?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Higher and colder over the Equator (approx 55,000 ft / -80°C); lower and warmer over the Poles (approx 25,000-30,000 ft / -50°C), creating the upper-level temperature gradient that drives jet streams.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Uniform 36,000 ft height across the entire globe with constant -56.5°C temperature.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Higher over the Poles (60,000 ft) and lower over the Equator (20,000 ft).",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Tropopause height is completely independent of latitude and season.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🌍 Global Tropopause Structure\n* **Equatorial Tropopause:** Solar heating causes strong convective updrafts, pushing the tropopause up to **55,000 - 60,000 ft (FL550-600)** with extreme cold temperatures of **-75°C to -85°C**.\n* **Polar Tropopause:** Cold dense air results in a low tropopause at **25,000 - 30,000 ft (FL250-300)** with temperatures around **-45°C to -55°C**.\n* **Tropopause Break:** The steep step between polar and tropical air masses creates intense horizontal temperature/pressure gradients that drive the **Polar Front Jet Stream**.",
+      "references": [
+        "EASA ATPL Meteorology • ICAO Annex 3"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "meteorologia-avanzada-ifr"
+  },
+  {
+    "id": "NJ-MET-015",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Squall Lines & Gust Fronts",
+    "stem": "What is a 'Squall Line' and what are the flight hazards associated with penetrating its leading edge Gust Front?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A non-frontal, continuous line of active severe thunderstorms advancing rapidly ahead of a cold front, accompanied by violent multi-directional windshear, microbursts, extreme turbulence, and large hail.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "A gentle boundary between sea breeze and land breeze with zero turbulence.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "A stationary stratus layer containing light continuous drizzle.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "A cirrus cloud band indicating jet stream dissipation.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⛈️ Squall Lines & Severe Weather\n* **Nature:** Fast-moving linear convective systems (often 50 to 150+ NM long) preceding active cold fronts.\n* **Gust Front:** The leading edge of the cold downdraft spreading along the ground, producing instantaneous wind shifts of 40-70+ knots and violent roll clouds.\n* **Operational Rule:** Never attempt to penetrate a squall line or fly through gaps between cells less than 20-30 NM wide.",
+      "references": [
+        "FAA Advisory Circular AC 00-24C • EASA ATPL Meteorology"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "meteorologia-avanzada-ifr"
+  },
+  {
+    "id": "NJ-MET-016",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: QNH vs QFE vs QNE Definitions",
+    "stem": "What are the exact operational definitions of altimeter pressure settings QNH, QFE, and QNE (Standard)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "QNH: Altimeter subscale set to sea-level pressure (reads airport elevation on ground); QFE: Set to station pressure (reads zero on runway threshold); QNE: Standard 1013.25 hPa / 29.92 inHg (reads Flight Levels).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "QNH reads zero on the ground, while QFE reads altitude above sea level.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "QNE is only used in emergency descents below 5,000 ft.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "QNH and QFE are identical under ISA standard atmospheric conditions.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⏱️ Altimetry Settings: QNH / QFE / QNE\n* **QNH (Nautical Height):** Pressure reduced to Mean Sea Level (MSL) using standard atmosphere. On ground at airport $rightarrow$ indicates **Aerodrome Elevation**.\n* **QFE (Field Elevation):** Pressure at the aerodrome datum. On ground $rightarrow$ indicates **0 ft (Zero height)**.\n* **QNE / Standard (1013.25 hPa / 29.92 inHg):** Used above Transition Altitude (TA) to indicate **Flight Levels (FL)** for standardized vertical separation.",
+      "references": [
+        "ICAO Doc 8168 PANS-OPS Vol I • SERA.8015"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "meteorologia-avanzada-ifr"
+  },
+  {
+    "id": "NJ-MET-017",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Freezing Level (0°C Isotherm) & Icing Severity",
+    "stem": "In which ambient temperature band is Structural Icing (Clear and Rime) most severe and rapid inside stratiform and cumuliform clouds?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Between 0°C and -20°C (with the most hazardous Clear Ice occurring between 0°C and -10°C in high liquid water content clouds).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Between -40°C and -60°C where all moisture is supercooled.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Exclusively at temperatures above +10°C.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Only in dry clear air without visible moisture.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🧊 In-Flight Icing Temperature Envelopes\n* **0°C to -10°C:** High Liquid Water Content (LWC) with large supercooled droplets $rightarrow$ **Clear Ice (Glaze Ice)**. Spreads rearwards before freezing, creating massive drag and severe shape distortion.\n* **-10°C to -20°C:** Mixed Ice and **Rime Ice**. Instantaneous freezing of smaller supercooled droplets trapping air bubbles.\n* **Below -20°C:** Clouds consist predominantly of frozen ice crystals; liquid water content drops significantly.\n* **Below -40°C:** Spontaneous freezing (homogenous nucleation); liquid water cannot exist.",
+      "references": [
+        "EASA CS-25 Appendix C • FAA AC 91-74B"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "meteorologia-avanzada-ifr"
+  },
+  {
+    "id": "NJ-MET-018",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Significant Weather Chart (SIGWX) Symbols",
+    "stem": "On an official ICAO High-Level SIGWX chart (FL250-FL630), what does a scalloped green/black line enclosing 'ISOL EMBD CB 450/XXX' signify?",
+    "options": [
+      {
+        "id": "A",
+        "text": "An area of isolated embedded cumulonimbus thunderstorm clouds with tops reaching FL450 and bases below the lower chart limit (FL250), associated with severe turbulence and severe icing.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "A designated military firing area active up to FL450.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "A standard RVSM airway route closed due to traffic congestion.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "A zone of permanent volcanic ash cloud extending to FL450.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🗺️ High-Level SIGWX Chart Symbology (ICAO Annex 3)\n* **Scalloped Outline:** Denotes significant cloud areas (CBs or extensive layered clouds).\n* **ISOL EMBD CB:** Isolated Embedded Cumulonimbus (hidden inside stratus cloud layers—extremely dangerous for IFR flight).\n* **450 / XXX:** Tops at FL450; bases below the base of the high-level chart (below FL250).\n* **Implied Hazards:** Whenever CB is forecast on a SIGWX chart, **Severe Turbulence and Severe Icing are automatically implied**.",
+      "references": [
+        "ICAO Annex 3 App 1 • WMO No. 782 Weather Chart Symbols"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "meteorologia-avanzada-ifr"
+  },
+  {
+    "id": "NJ-MET-019",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: CAVOK Definition & Prerequisites",
+    "stem": "Under EASA / ICAO METAR standards, what exact conditions must simultaneously be met for an aerodrome report to include the code 'CAVOK'?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Visibility ≥ 10 km, no clouds below 5,000 ft or below minimum sector altitude (whichever is higher), no CB or TCU clouds at any level, and no significant weather phenomena.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Visibility ≥ 5 km and ceiling above 1,500 ft.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Zero wind, temperature above 15°C, and no turbulence.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Runway is completely dry with braking action reported good.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ☀️ CAVOK (Ceiling And Visibility OK)\n* **Mandatory 4 Criteria:**\n  1. **Visibility:** $ge 10text{ km}$ (9999).\n  2. **No Cloud:** No cloud below **5,000 ft** (1,500 m) or below the **Highest Minimum Sector Altitude (MSA)**, whichever is higher.\n  3. **No CB / TCU:** No Cumulonimbus or Towering Cumulus at ANY height.\n  4. **No Significant Weather:** No precipitation, thunderstorms, fog, shallow fog, or dust.",
+      "references": [
+        "ICAO Annex 3 Section 4.5 • EASA Part-NCO.OP.160"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "meteorologia-avanzada-ifr"
+  },
+  {
+    "id": "NJ-MET-020",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Inversion Layer & Low-Level Wind Shear",
+    "stem": "Why does a strong nocturnal ground temperature inversion represent a critical hazard for executive jets during initial departure climb?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A sharp speed and directional wind shear (Low-Level Jet) often develops across the top of the inversion layer, causing abrupt airspeed loss or pitch changes when climbing through the boundary.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Inversion layers cause immediate flameout of the APU.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Inversions prevent pitot heat from functioning.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "The aircraft cannot engage the autopilot inside an inversion.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🌡️ Temperature Inversion & Low-Level Windshear\n* **Mechanism:** Radiational cooling traps cold, still air near the ground while warm air with strong gradient winds flows aloft.\n* **Hazard:** The interface (boundary layer) between the calm ground layer and the fast-moving upper air creates severe **horizontal and vertical wind shear** within 500 to 2,000 ft AAL.\n* **Piloting Action:** Maintain positive climb gradient, closely monitor airspeed trend vector, avoid premature acceleration or low-speed configurations.",
+      "references": [
+        "ICAO Doc 9817 Low-Level Wind Shear • EASA ATPL Meteorology"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "meteorologia-avanzada-ifr"
+  },
+  {
+    "id": "NJ-MET-021",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Clean Aircraft Concept & Contamination Limits",
+    "stem": "What is the 'Clean Aircraft Concept' enforced under EASA Part-CAT.OP.MPA.250 prior to takeoff in freezing conditions?",
+    "options": [
+      {
+        "id": "A",
+        "text": "An aircraft shall not initiate takeoff roll when frost, ice, slush, or snow is adhering to wings, control surfaces, engine inlets, or other critical surfaces (unless specifically permitted by the AFM for frost on underside of wing tanks).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "The aircraft cabin must be cleaned and disinfected before boarding VIP passengers.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Up to 5 mm of dry snow is acceptable on the wing leading edges without de-icing.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Clean aircraft concept only applies when operating in Class A airspace.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ❄️ Clean Aircraft Concept (EASA Part-CAT.OP.MPA.250)\n* **Strict Regulatory Mandate:** No takeoff is permitted with frozen contaminants on critical aerodynamic surfaces.\n* **Aerodynamic Impact:** A layer of frost or ice as thin and rough as medium sandpaper ($0.5text{ mm}$) can **reduce maximum wing lift by 30%** and **increase drag by over 40%**, causing premature stall during rotation before stick shaker activation.\n* **AFM Exception:** Some aircraft permit a thin layer of hoar frost on the lower wing tank surface caused by cold-soaked fuel.",
+      "references": [
+        "EASA Part-CAT.OP.MPA.250 • EASA SIB 2018-12"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "meteorologia-avanzada-ifr"
+  },
+  {
+    "id": "NJ-MET-022",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Crosswind Calculation & Gust Penalties",
+    "stem": "If Runway 24 (heading 240°) is in use and the reported tower wind is 280° at 25 knots gusting 35 knots, what is the maximum crosswind component to compare against the aircraft's demonstrated limit?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Approx 22.5 knots crosswind based on peak gusts (sin 40° × 35 kt ≈ 0.643 × 35 = 22.5 kt).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "10 knots crosswind.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "35 knots direct headwind.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "5 knots crosswind.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 💨 Crosswind Component Calculation with Gusts\n* **Wind Angle:** $280° - 240° = 40°$ from the right.\n* **Formula:** $text{Crosswind} = text{Wind Speed} times sin(theta)$.\n  * $sin(40°) ≈ 0.64$.\n* **Steady Wind:** $25text{ kt} times 0.64 = 16text{ kt}$.\n* **Peak Gust:** $35text{ kt} times 0.64 = mathbf{22.5text{ kt}}$.\n* **Safety Rule:** When applying maximum operating crosswind limits, peak gusts **MUST** be factored into the crosswind component calculation.",
+      "references": [
+        "EASA Part-CAT.OP.MPA.110 • AFM Section 2 Limitations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "meteorologia-avanzada-ifr"
+  },
+  {
+    "id": "NJ-MET-023",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Convective Weather Avoidance Distances",
+    "stem": "Under ICAO and NetJets operational SOPs, what are the minimum lateral avoidance distances when circumnavigating severe convective thunderstorm cells at high altitude (above FL300)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "At least 20 NM laterally (and 5,000 ft vertically above cloud top) to avoid severe Clear Air Turbulence, hail, and lightning discharge outside the visible cloud.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "5 NM laterally is sufficient at all altitudes.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "1 NM lateral clearance as long as the aircraft remains in VMC.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Thunderstorm cells can be overflown by 500 ft without safety margin.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⛈️ Convective Storm Avoidance Guidelines (FAA AC 00-24C / NetJets SOP)\n* **Below FL200:** Minimum **10 NM** lateral separation.\n* **Between FL200 and FL300:** Minimum **15 NM** lateral separation.\n* **Above FL300:** Minimum **20 NM** lateral separation.\n* **Overflight:** Minimum **5,000 ft above the radar echo top**.\n* **Hail Hazard:** Updrafts inside intense supercells can eject baseball-sized hail 15 to 20 miles downwind into the anvil and clear air.",
+      "references": [
+        "FAA AC 00-24C Thunderstorms • NetJets Operations Manual Part A"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "meteorologia-avanzada-ifr"
+  },
+  {
+    "id": "NJ-MET-024",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: METAR Trend Forecast (NOSIG, TEMPO, BECMG)",
+    "stem": "In a METAR message with trend forecast: 'METAR EGSS 121450Z 27015KT 9999 SCT025 14/08 Q1018 NOSIG=', what does 'NOSIG' mean and what is its validity window?",
+    "options": [
+      {
+        "id": "A",
+        "text": "'No Significant Change' expected in landing weather conditions (visibility, ceiling, weather) during the 2-hour period immediately following the observation time.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "'No Signal' from the ILS localizer.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "The airport is operating with non-standard IFR separation.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "NOSIG is valid for 24 hours without need for a TAF.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 📋 METAR Landing Trend Forecast (TREND)\n* **TREND:** A 2-hour landing forecast appended to the end of a METAR.\n* **NOSIG (No Significant Change):** Confirms that no changes in ceiling below 1,500 ft, visibility below 5,000 m, or significant weather phenomena are expected within the **next 2 hours**.",
+      "references": [
+        "ICAO Annex 3 • WMO No. 782 Aerodrome Weather Codes"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "meteorologia-avanzada-ifr"
+  },
+  {
+    "id": "NJ-MET-025",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Wake Turbulence Separation Categories & En-Route Hazards",
+    "stem": "Under ICAO Wake Turbulence categorization, what are the required minimum radar separations behind a 'Super' (A380) or 'Heavy' aircraft on approach, and where does wake turbulence settle?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Wake vortices descend at 400-500 ft/min and level off approx 500-1,000 ft below the flight path; minimum radar separation behind a Super is 6-8 NM (and 4-6 NM behind Heavy) depending on follower category.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Wake turbulence ascends into the upper flight levels and dissipates within 5 seconds.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Separation behind heavy jets is always 1 NM for corporate aircraft.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Wake turbulence only exists when aircraft land with thrust reversers deployed.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ Wake Turbulence Vortices & Avoidance\n* **Generation:** Generated from the moment the nosewheel lifts off until touchdown.\n* **Behavior:** Vortices sink at **400 to 500 ft/min** and level off approximately **500 to 1,000 ft below** the generating aircraft's flight path, drifting with the ambient crosswind (2-5 kt crosswind can keep a vortex over the runway).\n* **Golden Rule on Approach:** Fly **AT OR ABOVE** the preceding heavy aircraft's flight path, and land **BEYOND** its touchdown point.",
+      "references": [
+        "ICAO Doc 4444 PANS-ATM Chapter 5 • EASA SIB 2017-10"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "meteorologia-avanzada-ifr"
+  },
+  {
     "id": "NJ-MIN-001",
     "subject_id": "minimos-operacionales-lvo",
     "learning_objective": "Approach Ban Rule under EASA (CAT.OP.MPA.305)",
@@ -87358,6 +89776,123 @@
     "_subtopic": "minimos-operacionales-lvo"
   },
   {
+    "id": "NJ-MIN-019",
+    "subject_id": "netjets-interview",
+    "learning_objective": "LVO: Low Visibility Take-Off (LVTO) Lighting Criteria",
+    "stem": "Under EASA Part-SPA.LVO.100, what runway visual aids are mandatory to conduct an LVTO with RVR between 125 m and 150 m for Category A, B, and C executive jets?",
+    "options": [
+      {
+        "id": "A",
+        "text": "High-intensity runway centerline lights with spacing ≤ 15 m, runway edge lights, runway markings, and minimum 90 m visual segment from the flight deck.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Runway edge lights only with spacing of 60 m.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Visual approach slope indicator (PAPI) and threshold lights only.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No lights are required if operating during daylight hours.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛫 Low Visibility Take-Off (LVTO < 400 m) Criteria\n* **RVR 125 m to 150 m:**\n  * Mandatory active **Low Visibility Procedures (LVP)** in force.\n  * **Centerline Lights:** High intensity with maximum **15 m spacing**.\n  * **Runway Edge Lights:** Spacing ≤ 60 m.\n  * **Visual Segment:** Pilot must have at least **90 m of visual contact** (approx 6-7 centerline lights visible) from cockpit.",
+      "references": [
+        "EASA Part-SPA.LVO.100 • AMC1 SPA.LVO.100"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "minimos-operacionales-lvo"
+  },
+  {
+    "id": "NJ-MIN-020",
+    "subject_id": "netjets-interview",
+    "learning_objective": "LVO: Fail-Passive vs Fail-Operational Autoland Systems",
+    "stem": "What is the certified operational difference between a 'Fail-Passive' and a 'Fail-Operational' automatic landing system during CAT III operations?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fail-Passive: Following a system failure below Alert Height, no significant out-of-trim condition occurs and the pilot must take manual control and go around; Fail-Operational: The autoland and rollout continue automatically without disruption using redundant channels.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Fail-Passive systems do not require autopilot engagement.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Fail-Operational systems can only be used for VFR takeoffs.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Both systems require manual rudder steering on the runway.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛬 Fail-Passive vs Fail-Operational Architecture (CS-AWO)\n* **Fail-Passive (CAT III A):** Single failure leaves aircraft in trim; pilot disconnects AP and executes manual go-around. Requires a Decision Height (DH ≥ 50 ft).\n* **Fail-Operational (CAT III B):** Multiple redundant autopilot channels (triplex or dual-dual). If one channel fails, remaining channels complete landing and rollout automatically without pilot intervention. Operates with **Alert Height (AH)** and NO DH.",
+      "references": [
+        "EASA CS-AWO All Weather Operations • Part-SPA.LVO.105"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "minimos-operacionales-lvo"
+  },
+  {
+    "id": "NJ-MIN-021",
+    "subject_id": "netjets-interview",
+    "learning_objective": "LVO: Approach Ban at 1,000 ft AAL vs FAF",
+    "stem": "Under EASA Part-CAT.OP.MPA.305, what is the exact rule governing the Approach Ban when flying a precision approach with an initial approach fix (IAF), intermediate fix (IF), and final approach fix (FAF)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The approach may be commenced regardless of reported RVR, but must NOT be continued beyond 1,000 ft above aerodrome level (or past the FAF if higher) if the reported controlling RVR is below the published minimum.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "The aircraft cannot leave the cruise flight level if destination RVR is below minimums.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "The approach ban applies only at the Decision Altitude (DA).",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pilots can ignore RVR reports if they have visual contact with ground fog.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛑 Approach Ban Rule (EASA Part-CAT.OP.MPA.305)\n* **Prior to 1,000 ft AAL / FAF:** If reported controlling RVR drops below approach minimums → **Continuation below 1,000 ft is PROHIBITED** (Go-around mandatory).\n* **After passing 1,000 ft AAL / FAF:** If RVR drops below minimums, the approach **MAY BE CONTINUED to DA/MDA**. Landing is permitted if mandatory visual reference is acquired at DA/MDA.",
+      "references": [
+        "EASA Part-CAT.OP.MPA.305 Approach Ban • ICAO Annex 6"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "minimos-operacionales-lvo"
+  },
+  {
     "id": "NJ-FTL-001",
     "subject_id": "tiempos-actividad-descanso-ftl",
     "learning_objective": "EASA ORO.FTL.205 Maximum Daily Flight Duty Period (FDP)",
@@ -87953,6 +90488,84 @@
     },
     "metadata": {
       "difficulty": 0.2
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "tiempos-actividad-descanso-ftl"
+  },
+  {
+    "id": "NJ-FTL-016",
+    "subject_id": "netjets-interview",
+    "learning_objective": "FTL: Maximum Basic Daily FDP Limits",
+    "stem": "Under EASA Part-ORO.FTL.205, what is the Maximum Basic Daily Flight Duty Period (FDP) for an unaugmented 2-pilot crew starting duty between 06:00 and 13:29 with 1 to 2 flight sectors?",
+    "options": [
+      {
+        "id": "A",
+        "text": "13 hours maximum basic FDP (reduced for additional sectors or duty starting in the WOCL).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "18 hours basic FDP under all circumstances.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "10 hours maximum regardless of sector count.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "8 hours maximum for jet operations.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⏱️ Maximum Daily FDP Table (EASA Part-ORO.FTL.205 Table 1)\n* **FDP Start 06:00 - 13:29 (Optimum Acclimatized Window):**\n  * 1 - 2 sectors: **13:00 hours**.\n  * 3 sectors: 12:30 hours.\n  * 4 sectors: 12:00 hours.\n  * 5 sectors: 11:30 hours.\n* **WOCL Start (02:00 - 04:59):** Maximum basic FDP reduced to **9:00 to 11:00 hours**.",
+      "references": [
+        "EASA Part-ORO.FTL.205 • AMC1 ORO.FTL.205(b)(1)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "tiempos-actividad-descanso-ftl"
+  },
+  {
+    "id": "NJ-FTL-017",
+    "subject_id": "netjets-interview",
+    "learning_objective": "FTL: Standby Duty Limits (Airport vs Home Standby)",
+    "stem": "What is the maximum duration of Airport Standby duty and how does Airport Standby time count towards the total Flight Duty Period under EASA Part-ORO.FTL.225?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Airport Standby is capped at 16 hours (or 14 hours if unaugmented); 100% of time spent on airport standby counts towards the maximum allowable FDP.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Airport standby does not count as duty until the aircraft doors close.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Airport standby can last up to 48 consecutive hours.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Home standby and airport standby have identical FDP reduction formulas.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🏢 Standby Regulations (EASA Part-ORO.FTL.225)\n* **Airport Standby:** Crew is at the airport ready for immediate dispatch. **Counts 100% as Duty Period** and reduces maximum FDP minute-for-minute.\n* **Home Standby (Other Standby):** Crew is at home/hotel with minimum notification time (e.g. 90-120 min). Does not count 1:1 against FDP unless standby exceeds 6 or 8 hours.",
+      "references": [
+        "EASA Part-ORO.FTL.225 • AMC1 ORO.FTL.225"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
     },
     "_category": "netjets-interview",
     "_subtopic": "tiempos-actividad-descanso-ftl"

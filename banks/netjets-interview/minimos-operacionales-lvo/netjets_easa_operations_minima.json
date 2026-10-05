@@ -682,5 +682,116 @@
     "metadata": {
       "difficulty": 0.25
     }
+  },
+  {
+    "id": "NJ-MIN-019",
+    "subject_id": "netjets-interview",
+    "learning_objective": "LVO: Low Visibility Take-Off (LVTO) Lighting Criteria",
+    "stem": "Under EASA Part-SPA.LVO.100, what runway visual aids are mandatory to conduct an LVTO with RVR between 125 m and 150 m for Category A, B, and C executive jets?",
+    "options": [
+      {
+        "id": "A",
+        "text": "High-intensity runway centerline lights with spacing ≤ 15 m, runway edge lights, runway markings, and minimum 90 m visual segment from the flight deck.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Runway edge lights only with spacing of 60 m.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Visual approach slope indicator (PAPI) and threshold lights only.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No lights are required if operating during daylight hours.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛫 Low Visibility Take-Off (LVTO < 400 m) Criteria\n* **RVR 125 m to 150 m:**\n  * Mandatory active **Low Visibility Procedures (LVP)** in force.\n  * **Centerline Lights:** High intensity with maximum **15 m spacing**.\n  * **Runway Edge Lights:** Spacing ≤ 60 m.\n  * **Visual Segment:** Pilot must have at least **90 m of visual contact** (approx 6-7 centerline lights visible) from cockpit.",
+      "references": [
+        "EASA Part-SPA.LVO.100 • AMC1 SPA.LVO.100"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-MIN-020",
+    "subject_id": "netjets-interview",
+    "learning_objective": "LVO: Fail-Passive vs Fail-Operational Autoland Systems",
+    "stem": "What is the certified operational difference between a 'Fail-Passive' and a 'Fail-Operational' automatic landing system during CAT III operations?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fail-Passive: Following a system failure below Alert Height, no significant out-of-trim condition occurs and the pilot must take manual control and go around; Fail-Operational: The autoland and rollout continue automatically without disruption using redundant channels.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Fail-Passive systems do not require autopilot engagement.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Fail-Operational systems can only be used for VFR takeoffs.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Both systems require manual rudder steering on the runway.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛬 Fail-Passive vs Fail-Operational Architecture (CS-AWO)\n* **Fail-Passive (CAT III A):** Single failure leaves aircraft in trim; pilot disconnects AP and executes manual go-around. Requires a Decision Height (DH ≥ 50 ft).\n* **Fail-Operational (CAT III B):** Multiple redundant autopilot channels (triplex or dual-dual). If one channel fails, remaining channels complete landing and rollout automatically without pilot intervention. Operates with **Alert Height (AH)** and NO DH.",
+      "references": [
+        "EASA CS-AWO All Weather Operations • Part-SPA.LVO.105"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "NJ-MIN-021",
+    "subject_id": "netjets-interview",
+    "learning_objective": "LVO: Approach Ban at 1,000 ft AAL vs FAF",
+    "stem": "Under EASA Part-CAT.OP.MPA.305, what is the exact rule governing the Approach Ban when flying a precision approach with an initial approach fix (IAF), intermediate fix (IF), and final approach fix (FAF)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The approach may be commenced regardless of reported RVR, but must NOT be continued beyond 1,000 ft above aerodrome level (or past the FAF if higher) if the reported controlling RVR is below the published minimum.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "The aircraft cannot leave the cruise flight level if destination RVR is below minimums.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "The approach ban applies only at the Decision Altitude (DA).",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pilots can ignore RVR reports if they have visual contact with ground fog.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛑 Approach Ban Rule (EASA Part-CAT.OP.MPA.305)\n* **Prior to 1,000 ft AAL / FAF:** If reported controlling RVR drops below approach minimums → **Continuation below 1,000 ft is PROHIBITED** (Go-around mandatory).\n* **After passing 1,000 ft AAL / FAF:** If RVR drops below minimums, the approach **MAY BE CONTINUED to DA/MDA**. Landing is permitted if mandatory visual reference is acquired at DA/MDA.",
+      "references": [
+        "EASA Part-CAT.OP.MPA.305 Approach Ban • ICAO Annex 6"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
   }
 ]

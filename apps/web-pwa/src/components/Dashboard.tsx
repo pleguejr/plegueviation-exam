@@ -1139,30 +1139,102 @@ export const Dashboard: React.FC<DashboardProps> = ({
           </div>
         </div>
 
-        {/* Quick Launch Action Buttons Grid */}
+        {/* Quick Launch Action Buttons Grid (Expanded) */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 relative z-10 pt-1">
-          {/* 1. Interview Simulation (25) */}
+          {/* 1. Full Technical Interview (50) */}
           <button
             type="button"
-            onClick={() => onStartConfiguredExam({ category: 'netjets-interview', count: 25, mode: 'simulation', strategy: 'random' })}
+            onClick={() => onStartConfiguredExam({ category: 'netjets-interview', count: 50, mode: 'simulation', strategy: 'random' })}
             className="netjets-action netjets-action-amber p-3.5 rounded-2xl bg-amber-950/40 hover:bg-amber-900/50 border border-amber-500/40 hover:border-amber-400 text-left transition-all group flex flex-col justify-between shadow-md active:scale-95"
           >
             <div className="netjets-action-title flex items-center justify-between text-xs font-black text-amber-300 mb-1">
               <span className="flex items-center gap-1.5">
                 <Target className="w-4 h-4 text-amber-400" />
-                <span>Interview Simulation (25)</span>
+                <span>Full Interview Simulation (50)</span>
               </span>
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
             </div>
             <p className="netjets-action-desc text-[11px] text-slate-300">
-              Timed 25-question technical pilot interview simulation in 100% English.
+              Timed 50-question comprehensive airline/corporate pilot interview in 100% English.
             </p>
           </button>
 
-          {/* 2. NetJets History & Business Model (10) */}
+          {/* 2. Jet Aerodynamics & Performance (25) */}
           <button
             type="button"
-            onClick={() => onStartConfiguredExam({ category: 'netjets-interview', subtopics: ['historia-evolucion-netjets'], count: 10, mode: 'practice', strategy: 'random' })}
+            onClick={() => onStartConfiguredExam({ category: 'netjets-interview', subtopics: ['aerodinamica-performance-jet'], count: 25, mode: 'practice', strategy: 'random' })}
+            className="netjets-action netjets-action-rose p-3.5 rounded-2xl bg-rose-950/40 hover:bg-rose-900/50 border border-rose-500/40 hover:border-rose-400 text-left transition-all group flex flex-col justify-between shadow-md active:scale-95"
+          >
+            <div className="netjets-action-title flex items-center justify-between text-xs font-black text-rose-300 mb-1">
+              <span className="flex items-center gap-1.5">
+                <Plane className="w-4 h-4 text-rose-400" />
+                <span>Jet Aerodynamics & Perf (25)</span>
+              </span>
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+            </div>
+            <p className="netjets-action-desc text-[11px] text-slate-300">
+              Coffin corner, Mach tuck, Dutch roll, V1/V2, hydroplaning, stalls & climb gradients.
+            </p>
+          </button>
+
+          {/* 3. Aviation Meteorology & IFR (25) */}
+          <button
+            type="button"
+            onClick={() => onStartConfiguredExam({ category: 'netjets-interview', subtopics: ['meteorologia-avanzada-ifr'], count: 25, mode: 'practice', strategy: 'random' })}
+            className="netjets-action netjets-action-cyan p-3.5 rounded-2xl bg-cyan-950/40 hover:bg-cyan-900/50 border border-cyan-500/40 hover:border-cyan-400 text-left transition-all group flex flex-col justify-between shadow-md active:scale-95"
+          >
+            <div className="netjets-action-title flex items-center justify-between text-xs font-black text-cyan-300 mb-1">
+              <span className="flex items-center gap-1.5">
+                <Gauge className="w-4 h-4 text-cyan-400" />
+                <span>Meteorology & IFR Ops (25)</span>
+              </span>
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+            </div>
+            <p className="netjets-action-desc text-[11px] text-slate-300">
+              Windshear, microbursts, SLD icing, holdover times, jet streams & SIGMETs.
+            </p>
+          </button>
+
+          {/* 4. Scenarios, MEL & CRM (25) */}
+          <button
+            type="button"
+            onClick={() => onStartConfiguredExam({ category: 'netjets-interview', subtopics: ['escenarios-netjets-despacho-crm'], count: 25, mode: 'practice', strategy: 'random' })}
+            className="netjets-action netjets-action-purple p-3.5 rounded-2xl bg-purple-950/40 hover:bg-purple-900/50 border border-purple-500/40 hover:border-purple-400 text-left transition-all group flex flex-col justify-between shadow-md active:scale-95"
+          >
+            <div className="netjets-action-title flex items-center justify-between text-xs font-black text-purple-300 mb-1">
+              <span className="flex items-center gap-1.5">
+                <ShieldCheck className="w-4 h-4 text-purple-400" />
+                <span>Scenarios, MEL & CRM (25)</span>
+              </span>
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+            </div>
+            <p className="netjets-action-desc text-[11px] text-slate-300">
+              Steep approach (London City EGLC), Samedan ops, medical emergencies & PACE CRM.
+            </p>
+          </button>
+
+          {/* 5. Fuel Schemes & Minima (25) */}
+          <button
+            type="button"
+            onClick={() => onStartConfiguredExam({ category: 'netjets-interview', subtopics: ['combustible-fuel-schemes', 'minimos-operacionales-lvo'], count: 25, mode: 'practice', strategy: 'random' })}
+            className="netjets-action netjets-action-emerald p-3.5 rounded-2xl bg-emerald-950/40 hover:bg-emerald-900/50 border border-emerald-500/40 hover:border-emerald-400 text-left transition-all group flex flex-col justify-between shadow-md active:scale-95"
+          >
+            <div className="netjets-action-title flex items-center justify-between text-xs font-black text-emerald-300 mb-1">
+              <span className="flex items-center gap-1.5">
+                <Flame className="w-4 h-4 text-emerald-400" />
+                <span>Fuel Schemes & Minima (25)</span>
+              </span>
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+            </div>
+            <p className="netjets-action-desc text-[11px] text-slate-300">
+              Basic/variation fuel planning, isolated aerodromes, alternate weather & Approach Ban.
+            </p>
+          </button>
+
+          {/* 6. NetJets History & Business Model (20) */}
+          <button
+            type="button"
+            onClick={() => onStartConfiguredExam({ category: 'netjets-interview', subtopics: ['historia-evolucion-netjets'], count: 20, mode: 'practice', strategy: 'random' })}
             className="netjets-action netjets-action-gold p-3.5 rounded-2xl bg-yellow-950/40 hover:bg-yellow-900/50 border border-yellow-500/40 hover:border-yellow-400 text-left transition-all group flex flex-col justify-between shadow-md active:scale-95"
           >
             <div className="netjets-action-title flex items-center justify-between text-xs font-black text-yellow-300 mb-1">
@@ -1177,7 +1249,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
             </p>
           </button>
 
-          {/* 3. Synthetic EASA Tables */}
+          {/* 7. Synthetic EASA Tables */}
           <button
             type="button"
             onClick={() => onOpenTables ? onOpenTables('easa-netjets') : onNavigateTab('tables')}
@@ -1195,7 +1267,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
             </p>
           </button>
 
-          {/* 4. NetJets Flashcards */}
+          {/* 8. NetJets Flashcards */}
           <button
             type="button"
             onClick={() => onStartFlashcards({ category: 'netjets-interview' })}

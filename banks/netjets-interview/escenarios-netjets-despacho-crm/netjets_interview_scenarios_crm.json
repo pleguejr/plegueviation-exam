@@ -644,5 +644,301 @@
     "metadata": {
       "difficulty": 0.25
     }
+  },
+  {
+    "id": "NJ-CRM-018",
+    "subject_id": "netjets-interview",
+    "learning_objective": "NetJets Operations: Steep Approach Operations (London City EGLC)",
+    "stem": "What special aircraft and crew certification requirements apply to steep approach operations (5.5° glideslope) into London City Airport (EGLC)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Specific AFM steep approach airworthiness approval, dedicated autopilot/flight director steep approach mode, company OM approval, and pilot simulator steep approach qualification.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Only a standard Cat I ILS rating is required with no simulator training.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Steep approaches require flying with landing gear retracted until 200 ft AAL.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Steep approach certification is exclusively required for single-engine propeller aircraft.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🏙️ London City (EGLC) Steep Approach Operations (EASA CS-25 App H)\n* **Glideslope:** 5.5° (compared to standard 3.0°).\n* **Certification:**\n  1. **Aircraft AFM:** Must be certified for glidepaths ≥ 4.5° (involves specific flap/speedbrake configurations to maintain speed stability on a steep gradient without accelerating).\n  2. **Crew:** Initial simulator qualification and recency (6 months) for Category C aerodromes (London City, Lugano, Sion, Samedan).",
+      "references": [
+        "EASA CS-25 Appendix H • NetJets Operations Manual Part C"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-CRM-019",
+    "subject_id": "netjets-interview",
+    "learning_objective": "CRM: PACE Graded Assertiveness in Flight Deck Operations",
+    "stem": "In Airline and NetJets CRM, what are the four sequential escalation steps of the 'PACE' graded assertiveness communication model?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Probe ('Do you see our speed?'), Alert ('We are 15 knots fast on glideslope'), Challenge ('Captain, we are unstabilized, go around!'), Emergency ('I have controls, going around').",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Plan, Analyze, Communicate, Execute.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Predict, Assess, Confirm, Evacuate.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pause, Acknowledge, Correct, Exit.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🗣️ PACE Graded Assertiveness CRM Model\n* **1. Probe:** Inquire gently to confirm situational awareness (*\"Captain, what is our target speed here?\"*).\n* **2. Alert:** State the factual parameter deviation (*\"We are 15 knots fast and high on the PAPI\"*).\n* **3. Challenge:** Issue a direct, unambiguous command (*\"Captain, we are unstabilized below 1,000 ft, GO AROUND!\"*).\n* **4. Emergency:** Intervene physically if no response (*\"I HAVE CONTROLS, GOING AROUND!\"*).",
+      "references": [
+        "ICAO Human Factors Training Manual • NetJets CRM Manual"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-CRM-020",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Operational Scenarios: In-Flight Passenger Medical Incapacitation",
+    "stem": "During a transatlantic charter flight with NetJets fractional Owners, a passenger suffers symptoms of acute myocardial infarction (heart attack). What is the Commander's decision priority sequence?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Contact MedAire / In-flight Telemedical assistance via SATCOM, administer high-flow first aid oxygen, request ATC priority for immediate diversion to nearest suitable airport with advanced coronary medical facilities.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Continue to the planned destination 6 hours away to avoid disrupting passenger business meetings.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Ask the passengers to vote on whether to divert or continue.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Land immediately on the nearest unpaved visual airstrip without coordinating with ATC.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🚑 In-Flight Medical Emergencies (NetJets Protocol)\n* **Telemedical Support:** NetJets maintains 24/7 real-time SATCOM uplink with specialized aviation medical consultants (e.g. MedAire / Global Medical Assistance).\n* **Diversion Priority:** Medical doctors identify the best-equipped hospital facility in the region.\n* **ATC:** Declare `PAN PAN MEDICO` or `MAYDAY` to obtain direct routing, priority descent, and emergency ambulance on the ramp.",
+      "references": [
+        "ICAO Doc 9654 Guide on In-Flight Medical Emergencies • NetJets OM-A"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-CRM-021",
+    "subject_id": "netjets-interview",
+    "learning_objective": "CRM: Threat and Error Management (TEM) - Undesired Aircraft State",
+    "stem": "Under the Threat and Error Management (TEM) framework, what constitutes an 'Undesired Aircraft State' (UAS) and how should the flight crew respond?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A flight-crew-induced operational state or equipment condition that reduces safety margins (e.g. altitude overshoot, unstabilized approach, wrong flap setting); immediate priority is to recover to nominal state or execute missed approach.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Any flight where a passenger refuses to eat the catered meal.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "A delayed departure caused strictly by air traffic control ground hold programs.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "A situation that can only be resolved by filing an MOR report after landing.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛡️ Threat and Error Management (TEM Framework)\n* **Threats:** External factors (weather, ATC, terrain, MEL items).\n* **Errors:** Flight crew actions or inactions (incorrect data entry, checklist omissions).\n* **Undesired Aircraft State (UAS):** The transitional condition between an unmanaged error and an incident/accident (e.g., speed deviation, lateral track deviation, incorrect autopilot mode).\n* **Management:** Immediate recovery action takes precedence over root-cause investigation.",
+      "references": [
+        "ICAO Doc 9803 Line Operations Safety Audit (LOSA) • EASA Part-ORO.FC.230"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-CRM-022",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Operational Scenarios: High Altitude Depressurization & Oxygen Mask Mandate",
+    "stem": "Why must the Quick-Donning Oxygen Mask be donned with ONE HAND in less than 5 seconds when Cabin Altitude exceeds 10,000 ft or during rapid decompression above FL350?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Useful Consciousness (TUC) at FL400 is only 15 to 20 seconds, and quick-donning ensures instantaneous 100% positive-pressure oxygen delivery before hypoxia induces mental incapacitation.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "To allow the pilot to continue holding the coffee cup with the other hand.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Because FAA regulations require masks to be worn during all normal cruise flights above FL250.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Because smoke goggles cannot be fitted if mask donning takes more than 10 seconds.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🫁 Time of Useful Consciousness (TUC) & Quick-Donning Masks\n| Flight Level | Altitude | Time of Useful Consciousness (TUC) |\n| :--- | :--- | :--- |\n| **FL300** | 30,000 ft | 1 to 2 minutes |\n| **FL350** | 35,000 ft | 30 to 60 seconds |\n| **FL400** | 40,000 ft | **15 to 20 seconds** |\n| **FL450** | 45,000 ft | **9 to 12 seconds** |\n* **Certification (CS-25.1441):** Quick-donning mask must be deployable and operational within 5 seconds with one hand while wearing corrective eyeglasses.",
+      "references": [
+        "EASA CS-25.1441 • Part-CAT.IDE.A.235 Quick Donning Masks"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-CRM-023",
+    "subject_id": "netjets-interview",
+    "learning_objective": "NetJets Operations: High-Elevation Cold Weather Ops (Samedan / St. Moritz LSZS)",
+    "stem": "What operational factors make Samedan / St. Moritz Airport (LSZS, elevation 5,600 ft) one of the most challenging Category C airports in the NetJets European network?",
+    "options": [
+      {
+        "id": "A",
+        "text": "High elevation (5,600 ft), severe mountainous terrain, absence of instrument approach (VFR only), rapid mountain weather changes, high true airspeeds, and strict performance weight penalties.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "It operates with standard Category III ILS autoland capability year-round.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Runway length exceeds 4,000 meters with sea-level atmospheric density.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "It is open exclusively for night cargo transport.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🏔️ Samedan / St. Moritz (LSZS) Special Operations\n* **Category C Aerodrome:** Elevation 5,600 ft MSL in the Swiss Alps.\n* **Operational Constraints:**\n  * No published IFR instrument approach (VFR arrival through alpine valleys).\n  * High Density Altitude → Significantly higher True Airspeed (TAS) and higher turn radius.\n  * Extreme cold weather in winter requires strict cold-soak fuel precautions and anti-ice performance penalties.\n  * Special NetJets Pilot Airport Briefing and simulator training mandatory.",
+      "references": [
+        "NetJets Airport Categorization Guide • EASA Part-ORO.FC.105"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-CRM-024",
+    "subject_id": "netjets-interview",
+    "learning_objective": "CRM: Startle Effect & Unreliable Airspeed Management",
+    "stem": "What is the recommended cognitive management strategy to mitigate the 'Startle Effect' during sudden emergencies such as Pitot-Static icing or Unreliable Airspeed warnings at high altitude?",
+    "options": [
+      {
+        "id": "A",
+        "text": "'Aviate, Navigate, Communicate': Pause to take a breath, suppress instinctive abrupt control inputs, fly memory pitch and power values (e.g. 2.5° / 85% N1), and cross-check independent instruments.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Immediately pull full aft elevator to test the stick shaker threshold.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Instantly disconnect all electrical generators to reset avionics.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Descend in maximum speed vertical dive to reach warmer air.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🧠 Startle Effect & Unreliable Airspeed Protocol\n* **Startle Response:** Physiological acute stress response that impairs rational cognitive decision-making for 5-15 seconds.\n* **Golden Rule:**\n  1. **DO NOT REACT ABRUPTLY.** Resist the urge to chase fluctuating airspeed indicators.\n  2. **Pitch & Power:** Set known safe attitude and thrust (Pitch/Thrust\\,Memory Item).\n  3. Verify pitot heat switches ON.\n  4. Consult Unreliable Airspeed QRH tables for level-off pitch/power schedules.",
+      "references": [
+        "EASA Safety Information Bulletin SIB 2013-02 • ICAO Doc 10011"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-CRM-025",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Operational Scenarios: Lithium Battery Thermal Runaway in Cabin",
+    "stem": "If a passenger's personal electronic device (PED / laptop) enters Thermal Runaway in the executive cabin, what is the mandatory fire suppression procedure?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Discharge Halon / water fire extinguisher to extinguish flames, then continuously douse the device with non-alcoholic liquids (water / sodas) to cool battery cells and prevent thermal runaway propagation; do NOT wrap in ice or blankets.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cover the device with dry blankets and store it inside an overhead baggage bin.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Throw the burning device out of the cockpit emergency hatch.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pack the device in dry ice inside the aft lavatory.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🔋 Lithium Battery Thermal Runaway in Flight (ICAO Doc 9481 / NetJets SOP)\n* **Mechanism:** Internal short circuit generates uncontrollable self-sustaining exothermic heat (>600°C).\n* **Standard 2-Step Protocol:**\n  1. **Knockdown:** Extinguish open flames using Halon or aqueous extinguisher.\n  2. **Cooling:** Continuously pour **WATER or non-flammable liquids** directly over the device. Water cools adjacent cells and halts the thermal chain reaction.\n* **WARNING:** Never smother with ice, blankets, or enclosed bags that trap thermal energy.",
+      "references": [
+        "ICAO Doc 9481 Emergency Response Guidance • FAA In-Flight Lithium Fire Advisory"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
   }
 ]

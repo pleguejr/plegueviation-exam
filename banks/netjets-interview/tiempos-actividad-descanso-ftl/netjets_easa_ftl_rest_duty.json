@@ -568,5 +568,79 @@
     "metadata": {
       "difficulty": 0.2
     }
+  },
+  {
+    "id": "NJ-FTL-016",
+    "subject_id": "netjets-interview",
+    "learning_objective": "FTL: Maximum Basic Daily FDP Limits",
+    "stem": "Under EASA Part-ORO.FTL.205, what is the Maximum Basic Daily Flight Duty Period (FDP) for an unaugmented 2-pilot crew starting duty between 06:00 and 13:29 with 1 to 2 flight sectors?",
+    "options": [
+      {
+        "id": "A",
+        "text": "13 hours maximum basic FDP (reduced for additional sectors or duty starting in the WOCL).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "18 hours basic FDP under all circumstances.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "10 hours maximum regardless of sector count.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "8 hours maximum for jet operations.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⏱️ Maximum Daily FDP Table (EASA Part-ORO.FTL.205 Table 1)\n* **FDP Start 06:00 - 13:29 (Optimum Acclimatized Window):**\n  * 1 - 2 sectors: **13:00 hours**.\n  * 3 sectors: 12:30 hours.\n  * 4 sectors: 12:00 hours.\n  * 5 sectors: 11:30 hours.\n* **WOCL Start (02:00 - 04:59):** Maximum basic FDP reduced to **9:00 to 11:00 hours**.",
+      "references": [
+        "EASA Part-ORO.FTL.205 • AMC1 ORO.FTL.205(b)(1)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-FTL-017",
+    "subject_id": "netjets-interview",
+    "learning_objective": "FTL: Standby Duty Limits (Airport vs Home Standby)",
+    "stem": "What is the maximum duration of Airport Standby duty and how does Airport Standby time count towards the total Flight Duty Period under EASA Part-ORO.FTL.225?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Airport Standby is capped at 16 hours (or 14 hours if unaugmented); 100% of time spent on airport standby counts towards the maximum allowable FDP.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Airport standby does not count as duty until the aircraft doors close.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Airport standby can last up to 48 consecutive hours.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Home standby and airport standby have identical FDP reduction formulas.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🏢 Standby Regulations (EASA Part-ORO.FTL.225)\n* **Airport Standby:** Crew is at the airport ready for immediate dispatch. **Counts 100% as Duty Period** and reduces maximum FDP minute-for-minute.\n* **Home Standby (Other Standby):** Crew is at home/hotel with minimum notification time (e.g. 90-120 min). Does not count 1:1 against FDP unless standby exceeds 6 or 8 hours.",
+      "references": [
+        "EASA Part-ORO.FTL.225 • AMC1 ORO.FTL.225"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
   }
 ]

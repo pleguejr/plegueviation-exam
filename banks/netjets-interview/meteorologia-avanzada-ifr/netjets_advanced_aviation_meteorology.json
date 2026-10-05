@@ -1,0 +1,927 @@
+[
+  {
+    "id": "NJ-MET-001",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Low-Level Windshear & Microburst Dynamics",
+    "stem": "What are the characteristic lifecycle stages and airspeed indications when an aircraft penetrates an intense low-level Microburst on final approach?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Initial performance-increasing headwind with pitch-up and airspeed surge, followed immediately by a strong localized downdraft, and culminating in a severe performance-decreasing tailwind causing catastrophic loss of airspeed and altitude.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Steady tailwind throughout the entire approach with constant rate of descent.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Gradual continuous increase in headwind from outer marker down to touchdown.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Immediate loss of all pitot pressure without changes in rate of descent.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⛈️ Microburst Structure & Cockpit Cues\n* **Dimensions:** Typically < 4 km (2.2 NM) in diameter, downdrafts up to 6,000 ft/min, horizontal wind differential exceeding 45 to 90 knots.\n* **Sequence:**\n  1. **Entry:** Strong headwind $rightarrow$ Indicated airspeed rises, aircraft balloons above glidepath. *(Classic Trap: pilot retards thrust).* \n  2. **Core:** Severe downdraft pushes aircraft down.\n  3. **Exit:** Severe tailwind $rightarrow$ Airspeed collapses, stall margins shrink, rate of descent exceeds 2,000+ ft/min.\n* **Action:** Immediate Windshear Escape Maneuver at first alert (MAX TOGA thrust, pitch to pitch limit indicator / stick shaker, do NOT change gear/flap configuration).",
+      "references": [
+        "ICAO Doc 9817 Manual on Low-Level Wind Shear • FAA AC 00-54"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-MET-002",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Supercooled Large Droplets (SLD) & Severe Icing",
+    "stem": "What meteorological conditions produce Supercooled Large Droplets (SLD - freezing drizzle / freezing rain), and what is the visual evidence of SLD accretion on a business jet?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Formed in warm-nose temperature inversions or deep maritime clouds; visually identified by ice accretion aft of the heated leading-edge anti-ice boots/panels and on cockpit side windows.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Formed only at temperatures below -45°C where cirrus clouds sublimate.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Identified strictly by sudden engine oil pressure increases.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "SLD occurs exclusively in clear air above the tropopause.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🧊 Supercooled Large Droplets (SLD) & Runback Ice\n* **Droplet Size:** Droplets $> 50,µtext{m}$ (freezing drizzle / freezing rain). Due to higher mass and momentum, SLD droplets do not follow the airflow around the wing but impact **aft of the de-iced leading edge**.\n* **Hazard:** Forms severe ridged ice on unprotected upper and lower wing surfaces, creating massive drag and severe uncommanded aileron snatch/hinge moment reversal.\n* **Visual Cues:** Ice building on side windows, wiper posts, and upper wing surface aft of active de-ice boots.\n* **Procedure:** Disconnect autopilot, immediately exit the icing layer by climb, descent, or 180° turn.",
+      "references": [
+        "EASA CS-25 Appendix O • FAA AC 91-74B Pilot Guide to Flight in Icing"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "NJ-MET-003",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: De-icing Fluid Types & Holdover Time (HOT)",
+    "stem": "What is the key difference between Type I and Type IV aircraft de-icing/anti-icing fluids regarding viscosity and Holdover Time (HOT)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Type I is an unthickened, low-viscosity fluid used primarily for de-icing (very short HOT); Type IV is a thickened, pseudoplastic fluid designed for anti-icing on the ground with extended Holdover Times that shears off during takeoff roll.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Type I is applied cold and remains on the aircraft during the entire flight.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Type IV is toxic to turbine engines and prohibited on corporate jets.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Type I fluid has a green color and 4-hour holdover protection.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ❄️ De-icing & Anti-icing Fluid Types (AEA / SAE Standards)\n| Fluid Type | Color | Viscosity | Primary Purpose | Rotation Speed ($V_R$) Limit |\n| :--- | :--- | :--- | :--- | :--- |\n| **Type I** | Orange / Clear | Unthickened (Newtonian) | **De-icing** (Removes frozen deposits; short HOT) | Any speed |\n| **Type II** | Straw / Pale yellow | Thickened (Pseudoplastic) | **Anti-icing** (Protection on ground; shears off at >100 kt) | $V_R > 100text{ kt}$ |\n| **Type III** | Emerald / Green | Thickened (Intermediate) | **Anti-icing** for slower commuter/prop aircraft | $V_R < 100text{ kt}$ |\n| **Type IV** | Green / Emerald | Highly Thickened | **Anti-icing** (Maximum Holdover Times for CAT jets) | $V_R > 100text{ kt}$ |",
+      "references": [
+        "EASA Part-CAT.OP.MPA.250 • AEA Recommendations for De-icing/Anti-icing"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-MET-004",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Jet Stream Structure & Clear Air Turbulence (CAT)",
+    "stem": "Where is Clear Air Turbulence (CAT) most severe in relation to an upper-level Polar Front Jet Stream core?",
+    "options": [
+      {
+        "id": "A",
+        "text": "On the cold-air (polar) side of the jet core and in the upper boundary directly above the core, where horizontal and vertical wind shear gradients are steepest.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "In the exact center of the jet stream core where wind velocity is maximum.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Exclusively below 10,000 ft near sea level.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "On the equatorial warm side at least 500 NM away from the core.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🌪️ Jet Streams & Clear Air Turbulence (CAT)\n* **Structure:** Wind speeds exceed 60 knots (often 120 to 200+ kt) along the tropopause discontinuity.\n* **CAT Location:** Turbulence is created by **wind shear** (velocity gradients), not by wind speed alone.\n  * Horizontal shear is significantly stronger on the **cyclonic (polar/cold) side** (up to 40 kt / 100 NM) than the anticyclonic side.\n  * Vertical shear is greatest **just above and just below the jet core** (exceeding 6-10 kt / 1,000 ft).\n* **Escape:** If encountering CAT with dropping OAT, climb or turn south; if rising OAT, descend or turn south.",
+      "references": [
+        "ICAO Annex 3 Meteorological Service • EASA ATPL Meteorology"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-MET-005",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Cold Temperature Altimeter Corrections",
+    "stem": "Why must cold temperature altimeter corrections be applied to published IFR approach altitudes, and what is the rule of thumb formula when airport temperature is well below ISA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "True altitude is lower than indicated altitude in cold air columns; apply approx 4% height correction per 10°C temperature deviation below ISA to all minimum approach altitudes above aerodrome level.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "True altitude is higher than indicated in cold air; subtract 100 ft per 1,000 ft of altitude.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cold temperature corrections apply only to cruise levels in RVSM airspace.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No corrections are permitted under EASA unless temperature is below -50°C.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🌡️ Cold Temperature Altimetry Correction (ICAO Doc 8168 PANS-OPS)\n* **Aviation Adage:** *\"High to Low or Hot to Cold, Look out Below!\"*\n* **Principle:** In cold air, atmospheric pressure layers contract. The altimeter measures pressure, so at cold temperatures **True Altitude is significantly LOWER than Indicated Altitude**, severely eroding obstacle clearance.\n* **Rule of Thumb:** $Δ h ≈ 4% times text{Height above airport} times ({Δ T_{ISA}}{10})$.\n* **Application:** Must be added to DA/MDA, FAF altitude, step-down fixes, and MSA.",
+      "references": [
+        "ICAO Doc 8168 PANS-OPS Vol I Section 4 • EASA AMC1 CAT.OP.MPA.126"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-MET-006",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Mountain Waves & Rotor Clouds",
+    "stem": "What atmospheric conditions favor the development of intense Mountain Waves (Standing Waves), and what is the most dangerous cloud associated with them?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Stable air layer across mountain ridge, wind direction within 30° perpendicular to ridge with speed increasing with altitude (>25-30 kt at ridge crest); Rotor Clouds (Roll clouds) formed beneath the wave crests contain extreme turbulence.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Highly unstable maritime air with surface calm winds and cirrus clouds.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Thunderstorm gust fronts moving over flat desert terrain.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Low stratus fog burning off during morning solar heating.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🏔️ Mountain Wave Dynamics\n* **Prerequisites:**\n  1. Stable air mass at ridge level.\n  2. Wind perpendicular (within 30°) to the mountain ridge.\n  3. Wind speed $ge 25text{ kt}$ at ridge crest, increasing with altitude.\n* **Features:**\n  * **Altocumulus Lenticularis:** Stationary lens-shaped clouds over crests.\n  * **Rotor Clouds:** Violent turbulent eddies with horizontal rotational axis beneath crests (danger of structural failure and extreme vertical shear).",
+      "references": [
+        "ICAO Doc 9817 • EASA ATPL Meteorology Manual"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-MET-007",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Volcanic Ash Avoidance & Recovery",
+    "stem": "What are the immediate cockpit cues of an inadvertent Volcanic Ash encounter at night, and what is the immediate pilot action?",
+    "options": [
+      {
+        "id": "A",
+        "text": "St. Elmo's fire on windshield, sulfurous acrid odor, smoky cabin haze, engine surging/torching; immediate action is to disconnect autothrottle, reduce thrust to idle, turn 180° to exit the cloud, start APU, and descend.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Immediate weather radar red echo returns; accelerate to MMO to climb above the cloud.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Full deflection of pitot tubes requiring maximum thrust application.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Deploy landing gear immediately to increase airframe drag.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🌋 Volcanic Ash Flight Safety\n* **Radar Invisibility:** Volcanic ash particles are dry, small (silicates), and reflect virtually **NO weather radar energy** (displays black on radar screen).\n* **Cues:** Heavy static discharge (St. Elmo's fire), cockpit sulfur smell, electrical glow inside engines.\n* **Hazard:** Ash melts at ~1,100°C in turbine combustion chambers, coating turbine blades with glassy slag, causing catastrophic multi-engine flameout.\n* **Procedure:**\n  1. Thrust $rightarrow$ **IDLE** (lowers turbine temp below glass melting point).\n  2. Disengage autothrottle / Disengage AP.\n  3. Turn 180° back to clean air.\n  4. Start APU, set engine igniters ON, select max continuous bleed/anti-ice.",
+      "references": [
+        "ICAO Doc 9691 Manual on Volcanic Ash • EASA SIB 2010-17"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "NJ-MET-008",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: TAF & METAR Decoding (TEMPO vs BECMG)",
+    "stem": "In an official TAF forecast for an alternate airport, what is the regulatory difference between 'TEMPO 1418 3000 BR' and 'BECMG 1416 3000 BR' under EASA flight planning rules?",
+    "options": [
+      {
+        "id": "A",
+        "text": "TEMPO indicates temporary fluctuations lasting less than 1 hour in each instance and less than half the total period; BECMG indicates a permanent regular transition where the new condition applies from the start or end of the period depending on whether it is an improvement or deterioration.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "TEMPO means conditions will definitely happen for 4 consecutive hours without change.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "BECMG is only used for wind direction changes greater than 180 degrees.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Under EASA, TEMPO conditions can be completely ignored during alternate planning.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 📜 TAF Decoding: TEMPO vs BECMG (EASA AMC1 CAT.OP.MPA.185)\n* **TEMPO (Temporary):** Fluctuations lasting $< 1text{ hour}$ in each instance and $< 50%$ of the forecast timeframe.\n* **BECMG (Becoming):** Regular permanent trend reaching the new state within the stated period.\n* **Flight Planning Rules (Conservative Principle):**\n  * **Deterioration in BECMG:** Applies from the **BEGINNING** of the BECMG timeframe.\n  * **Improvement in BECMG:** Applies only from the **END** of the BECMG timeframe.\n  * **TEMPO Deteriorations:** Must be considered and respected for planning minima.",
+      "references": [
+        "EASA Part-CAT.OP.MPA.185 • WMO No. 782 Aerodrome Weather"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-MET-009",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Radiation Fog vs Advection Fog",
+    "stem": "How do Radiation Fog and Advection Fog differ in their formation mechanisms and wind requirements?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Radiation fog forms on clear, calm nights (2-5 kt light breeze) over land via terrestrial radiative cooling; Advection fog forms when warm, moist air moves horizontally over a colder land/sea surface and requires moderate winds (5-15 kt).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Radiation fog only forms over open oceans in summer with gale-force winds.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Advection fog burns off within 10 minutes of sunrise under all circumstances.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Both fog types require surface temperatures below -20°C.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🌫️ Fog Formation Mechanisms\n* **Radiation Fog:** Clear skies, high relative humidity, light breeze (2 to 5 knots) to mix moisture vertically without dispersing the inversion. Burns off with solar insolation.\n* **Advection Fog:** Warm, humid air mass moves over a cooler water or land surface. Persistent, thick, can persist day and night with winds of 5 to 15+ knots (e.g. San Francisco, English Channel, North Sea coastal airports).",
+      "references": [
+        "ICAO Annex 3 • EASA ATPL Meteorology"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-MET-010",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: SIGMET & AIRMET Criteria",
+    "stem": "Under ICAO Annex 3 / EASA regulations, what meteorological phenomena mandate the issuance of a formal SIGMET message?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Severe turbulence (SEV TURB), severe icing (SEV ICE), severe mountain waves, thunderstorms (EMBD/FRQ/SQL TS with or without hail), heavy duststorms, and volcanic ash clouds (VA).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Routine light rain and scattered cumulus clouds below 5,000 ft.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Surface temperature variations of more than 2°C per hour.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Planned airport snow removal operations.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⚠️ SIGMET (Significant Meteorological Information)\n* **Purpose:** Advises flight crews of severe en-route weather phenomena that may affect the safety of **all aircraft**.\n* **Trigger Criteria:**\n  * **Thunderstorms:** `OBSC TS`, `EMBD TS` (embedded), `FRQ TS` (frequent), `SQL TS` (squall line), with or without `GR` (hail).\n  * **Turbulence:** `SEV TURB`.\n  * **Icing:** `SEV ICE` (not in convective clouds) or `SEV ICE (FZRA)`.\n  * **Mountain Waves:** `SEV MTW`.\n  * **Volcanic Ash:** `VA CLD` (valid up to 6 hours).\n  * **Tropical Cyclones:** `TC`.",
+      "references": [
+        "ICAO Annex 3 Chapter 7 • EASA Air Traffic Management"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-MET-011",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: In-Flight Weather Radar Tilt & Gain Management",
+    "stem": "What is the correct cockpit radar tilt management technique when scanning for convective cells during high-altitude cruise (e.g. FL370-FL450)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tilt the radar antenna downwards to scan the highly reflective freezing level (wet precipitation / bright band) where the storm's convective core is located, since the upper frozen anvil contains non-reflective ice crystals.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Keep the antenna tilted +10° upwards to detect only dry cirrus clouds.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Always operate radar on maximum manual gain without ground clutter.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Turn off the radar above FL300 because ice crystals cannot damage turbine engines.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 📡 Airborne Weather Radar Management\n* **Convective Core Reflectivity:** Convective storm tops at high altitudes consist of dry ice crystals (low dielectric constant) that reflect little radar energy, masking the cell's true intensity.\n* **Technique:** Tilt the antenna **downward** to intercept the liquid water / wet hail core near the freezing level (0°C isotherm) and scan for hooks, fingers, scalloped edges, and steep reflectivity gradients.\n* **Avoidance:** Clear active thunderstorm cells by at least **20 NM laterally** at cruise altitudes.",
+      "references": [
+        "ICAO Doc 9817 • FAA AC 20-182A Airborne Weather Radar"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-MET-012",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: High Altitude Ice Crystal Icing (ICI)",
+    "stem": "What are the characteristics of High Altitude Ice Crystal Icing (ICI), and what primary threat does it pose to modern high-bypass turbofan engines?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Invisible dry ice crystals ingested in the engine core melt on warm internal surfaces and refreeze on colder downstream compressor stages, causing engine rollback, flameout, or severe core vibration without airframe ice buildup.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Heavy rime ice accretion on the radome causing immediate pitot static blockage.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Instantaneous freezing of fuel lines inside the fuel tanks.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Ice crystal accumulation strictly on trailing edge landing flaps.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🧊 High Altitude Ice Crystal Icing (ICI / CS-25 Appendix P)\n* **Environment:** Near convective activity at high altitudes (>FL220) and low temperatures (0°C to -40°C).\n* **Mechanism:** High concentrations of microscopic ice crystals bounce off cold airframe surfaces (no airframe ice alert), but are sucked into the engine core where they melt against warm compression stages, collect, and refreeze into chunks of ice, shedding into the combustor.\n* **Symptoms:** Engine rollback (loss of thrust), EGT fluctuations, N1 surges, and total uncommanded flameout.",
+      "references": [
+        "EASA CS-25 Appendix P • Boeing Aero Magazine Ice Crystal Icing"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "NJ-MET-013",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: RVR Definition & Transmissometer Principles",
+    "stem": "Under EASA aerodrome operations, how is Runway Visual Range (RVR) measured, and what are the three standard reporting positions along a precision runway?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Measured by optical transmissometers / forward-scatter meters at Touchdown Zone (TDZ), Mid-point (MID), and Stop-end (Rollout) zones.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Estimated visually by the tower controller looking at distant airport boundary fences.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Measured exclusively by airborne pilot reports (PIREPs) during flare.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Calculated by barometric pressure differences between runway ends.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 👁️ Runway Visual Range (RVR) Systems (EASA AMC1 CAT.OP.MPA.110)\n* **Definition:** The range over which the pilot of an aircraft on the centerline of a runway can see the runway surface markings or the lights delineating the runway or identifying its centerline.\n* **Sensors:** Transmissometers or Forward Scatter Meters positioned ~2.5 to 5 m above runway center.\n* **Reporting Points:**\n  1. **Touchdown Zone (TDZ):** Controlling for all approaches and takeoffs.\n  2. **Mid-point (MID):** Controlling for CAT III and rollout guidance.\n  3. **Stop-end (Rollout):** Relevant for high-speed rollout deceleration.",
+      "references": [
+        "ICAO Doc 9328 Manual of RVR Observing • EASA Part-SPA.LVO"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-MET-014",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Upper Level Tropopause Height Variations",
+    "stem": "How does the height of the Tropopause vary between the Equator and the Poles, and how does this affect upper-level temperatures and jet stream altitudes?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Higher and colder over the Equator (approx 55,000 ft / -80°C); lower and warmer over the Poles (approx 25,000-30,000 ft / -50°C), creating the upper-level temperature gradient that drives jet streams.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Uniform 36,000 ft height across the entire globe with constant -56.5°C temperature.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Higher over the Poles (60,000 ft) and lower over the Equator (20,000 ft).",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Tropopause height is completely independent of latitude and season.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🌍 Global Tropopause Structure\n* **Equatorial Tropopause:** Solar heating causes strong convective updrafts, pushing the tropopause up to **55,000 - 60,000 ft (FL550-600)** with extreme cold temperatures of **-75°C to -85°C**.\n* **Polar Tropopause:** Cold dense air results in a low tropopause at **25,000 - 30,000 ft (FL250-300)** with temperatures around **-45°C to -55°C**.\n* **Tropopause Break:** The steep step between polar and tropical air masses creates intense horizontal temperature/pressure gradients that drive the **Polar Front Jet Stream**.",
+      "references": [
+        "EASA ATPL Meteorology • ICAO Annex 3"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-MET-015",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Squall Lines & Gust Fronts",
+    "stem": "What is a 'Squall Line' and what are the flight hazards associated with penetrating its leading edge Gust Front?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A non-frontal, continuous line of active severe thunderstorms advancing rapidly ahead of a cold front, accompanied by violent multi-directional windshear, microbursts, extreme turbulence, and large hail.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "A gentle boundary between sea breeze and land breeze with zero turbulence.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "A stationary stratus layer containing light continuous drizzle.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "A cirrus cloud band indicating jet stream dissipation.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⛈️ Squall Lines & Severe Weather\n* **Nature:** Fast-moving linear convective systems (often 50 to 150+ NM long) preceding active cold fronts.\n* **Gust Front:** The leading edge of the cold downdraft spreading along the ground, producing instantaneous wind shifts of 40-70+ knots and violent roll clouds.\n* **Operational Rule:** Never attempt to penetrate a squall line or fly through gaps between cells less than 20-30 NM wide.",
+      "references": [
+        "FAA Advisory Circular AC 00-24C • EASA ATPL Meteorology"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-MET-016",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: QNH vs QFE vs QNE Definitions",
+    "stem": "What are the exact operational definitions of altimeter pressure settings QNH, QFE, and QNE (Standard)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "QNH: Altimeter subscale set to sea-level pressure (reads airport elevation on ground); QFE: Set to station pressure (reads zero on runway threshold); QNE: Standard 1013.25 hPa / 29.92 inHg (reads Flight Levels).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "QNH reads zero on the ground, while QFE reads altitude above sea level.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "QNE is only used in emergency descents below 5,000 ft.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "QNH and QFE are identical under ISA standard atmospheric conditions.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⏱️ Altimetry Settings: QNH / QFE / QNE\n* **QNH (Nautical Height):** Pressure reduced to Mean Sea Level (MSL) using standard atmosphere. On ground at airport $rightarrow$ indicates **Aerodrome Elevation**.\n* **QFE (Field Elevation):** Pressure at the aerodrome datum. On ground $rightarrow$ indicates **0 ft (Zero height)**.\n* **QNE / Standard (1013.25 hPa / 29.92 inHg):** Used above Transition Altitude (TA) to indicate **Flight Levels (FL)** for standardized vertical separation.",
+      "references": [
+        "ICAO Doc 8168 PANS-OPS Vol I • SERA.8015"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "NJ-MET-017",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Freezing Level (0°C Isotherm) & Icing Severity",
+    "stem": "In which ambient temperature band is Structural Icing (Clear and Rime) most severe and rapid inside stratiform and cumuliform clouds?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Between 0°C and -20°C (with the most hazardous Clear Ice occurring between 0°C and -10°C in high liquid water content clouds).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Between -40°C and -60°C where all moisture is supercooled.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Exclusively at temperatures above +10°C.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Only in dry clear air without visible moisture.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🧊 In-Flight Icing Temperature Envelopes\n* **0°C to -10°C:** High Liquid Water Content (LWC) with large supercooled droplets $rightarrow$ **Clear Ice (Glaze Ice)**. Spreads rearwards before freezing, creating massive drag and severe shape distortion.\n* **-10°C to -20°C:** Mixed Ice and **Rime Ice**. Instantaneous freezing of smaller supercooled droplets trapping air bubbles.\n* **Below -20°C:** Clouds consist predominantly of frozen ice crystals; liquid water content drops significantly.\n* **Below -40°C:** Spontaneous freezing (homogenous nucleation); liquid water cannot exist.",
+      "references": [
+        "EASA CS-25 Appendix C • FAA AC 91-74B"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-MET-018",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Significant Weather Chart (SIGWX) Symbols",
+    "stem": "On an official ICAO High-Level SIGWX chart (FL250-FL630), what does a scalloped green/black line enclosing 'ISOL EMBD CB 450/XXX' signify?",
+    "options": [
+      {
+        "id": "A",
+        "text": "An area of isolated embedded cumulonimbus thunderstorm clouds with tops reaching FL450 and bases below the lower chart limit (FL250), associated with severe turbulence and severe icing.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "A designated military firing area active up to FL450.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "A standard RVSM airway route closed due to traffic congestion.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "A zone of permanent volcanic ash cloud extending to FL450.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🗺️ High-Level SIGWX Chart Symbology (ICAO Annex 3)\n* **Scalloped Outline:** Denotes significant cloud areas (CBs or extensive layered clouds).\n* **ISOL EMBD CB:** Isolated Embedded Cumulonimbus (hidden inside stratus cloud layers—extremely dangerous for IFR flight).\n* **450 / XXX:** Tops at FL450; bases below the base of the high-level chart (below FL250).\n* **Implied Hazards:** Whenever CB is forecast on a SIGWX chart, **Severe Turbulence and Severe Icing are automatically implied**.",
+      "references": [
+        "ICAO Annex 3 App 1 • WMO No. 782 Weather Chart Symbols"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-MET-019",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: CAVOK Definition & Prerequisites",
+    "stem": "Under EASA / ICAO METAR standards, what exact conditions must simultaneously be met for an aerodrome report to include the code 'CAVOK'?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Visibility ≥ 10 km, no clouds below 5,000 ft or below minimum sector altitude (whichever is higher), no CB or TCU clouds at any level, and no significant weather phenomena.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Visibility ≥ 5 km and ceiling above 1,500 ft.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Zero wind, temperature above 15°C, and no turbulence.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Runway is completely dry with braking action reported good.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ☀️ CAVOK (Ceiling And Visibility OK)\n* **Mandatory 4 Criteria:**\n  1. **Visibility:** $ge 10text{ km}$ (9999).\n  2. **No Cloud:** No cloud below **5,000 ft** (1,500 m) or below the **Highest Minimum Sector Altitude (MSA)**, whichever is higher.\n  3. **No CB / TCU:** No Cumulonimbus or Towering Cumulus at ANY height.\n  4. **No Significant Weather:** No precipitation, thunderstorms, fog, shallow fog, or dust.",
+      "references": [
+        "ICAO Annex 3 Section 4.5 • EASA Part-NCO.OP.160"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "NJ-MET-020",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Inversion Layer & Low-Level Wind Shear",
+    "stem": "Why does a strong nocturnal ground temperature inversion represent a critical hazard for executive jets during initial departure climb?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A sharp speed and directional wind shear (Low-Level Jet) often develops across the top of the inversion layer, causing abrupt airspeed loss or pitch changes when climbing through the boundary.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Inversion layers cause immediate flameout of the APU.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Inversions prevent pitot heat from functioning.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "The aircraft cannot engage the autopilot inside an inversion.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🌡️ Temperature Inversion & Low-Level Windshear\n* **Mechanism:** Radiational cooling traps cold, still air near the ground while warm air with strong gradient winds flows aloft.\n* **Hazard:** The interface (boundary layer) between the calm ground layer and the fast-moving upper air creates severe **horizontal and vertical wind shear** within 500 to 2,000 ft AAL.\n* **Piloting Action:** Maintain positive climb gradient, closely monitor airspeed trend vector, avoid premature acceleration or low-speed configurations.",
+      "references": [
+        "ICAO Doc 9817 Low-Level Wind Shear • EASA ATPL Meteorology"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-MET-021",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Clean Aircraft Concept & Contamination Limits",
+    "stem": "What is the 'Clean Aircraft Concept' enforced under EASA Part-CAT.OP.MPA.250 prior to takeoff in freezing conditions?",
+    "options": [
+      {
+        "id": "A",
+        "text": "An aircraft shall not initiate takeoff roll when frost, ice, slush, or snow is adhering to wings, control surfaces, engine inlets, or other critical surfaces (unless specifically permitted by the AFM for frost on underside of wing tanks).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "The aircraft cabin must be cleaned and disinfected before boarding VIP passengers.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Up to 5 mm of dry snow is acceptable on the wing leading edges without de-icing.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Clean aircraft concept only applies when operating in Class A airspace.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ❄️ Clean Aircraft Concept (EASA Part-CAT.OP.MPA.250)\n* **Strict Regulatory Mandate:** No takeoff is permitted with frozen contaminants on critical aerodynamic surfaces.\n* **Aerodynamic Impact:** A layer of frost or ice as thin and rough as medium sandpaper ($0.5text{ mm}$) can **reduce maximum wing lift by 30%** and **increase drag by over 40%**, causing premature stall during rotation before stick shaker activation.\n* **AFM Exception:** Some aircraft permit a thin layer of hoar frost on the lower wing tank surface caused by cold-soaked fuel.",
+      "references": [
+        "EASA Part-CAT.OP.MPA.250 • EASA SIB 2018-12"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-MET-022",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Crosswind Calculation & Gust Penalties",
+    "stem": "If Runway 24 (heading 240°) is in use and the reported tower wind is 280° at 25 knots gusting 35 knots, what is the maximum crosswind component to compare against the aircraft's demonstrated limit?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Approx 22.5 knots crosswind based on peak gusts (sin 40° × 35 kt ≈ 0.643 × 35 = 22.5 kt).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "10 knots crosswind.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "35 knots direct headwind.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "5 knots crosswind.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 💨 Crosswind Component Calculation with Gusts\n* **Wind Angle:** $280° - 240° = 40°$ from the right.\n* **Formula:** $text{Crosswind} = text{Wind Speed} times sin(theta)$.\n  * $sin(40°) ≈ 0.64$.\n* **Steady Wind:** $25text{ kt} times 0.64 = 16text{ kt}$.\n* **Peak Gust:** $35text{ kt} times 0.64 = mathbf{22.5text{ kt}}$.\n* **Safety Rule:** When applying maximum operating crosswind limits, peak gusts **MUST** be factored into the crosswind component calculation.",
+      "references": [
+        "EASA Part-CAT.OP.MPA.110 • AFM Section 2 Limitations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-MET-023",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Convective Weather Avoidance Distances",
+    "stem": "Under ICAO and NetJets operational SOPs, what are the minimum lateral avoidance distances when circumnavigating severe convective thunderstorm cells at high altitude (above FL300)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "At least 20 NM laterally (and 5,000 ft vertically above cloud top) to avoid severe Clear Air Turbulence, hail, and lightning discharge outside the visible cloud.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "5 NM laterally is sufficient at all altitudes.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "1 NM lateral clearance as long as the aircraft remains in VMC.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Thunderstorm cells can be overflown by 500 ft without safety margin.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⛈️ Convective Storm Avoidance Guidelines (FAA AC 00-24C / NetJets SOP)\n* **Below FL200:** Minimum **10 NM** lateral separation.\n* **Between FL200 and FL300:** Minimum **15 NM** lateral separation.\n* **Above FL300:** Minimum **20 NM** lateral separation.\n* **Overflight:** Minimum **5,000 ft above the radar echo top**.\n* **Hail Hazard:** Updrafts inside intense supercells can eject baseball-sized hail 15 to 20 miles downwind into the anvil and clear air.",
+      "references": [
+        "FAA AC 00-24C Thunderstorms • NetJets Operations Manual Part A"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-MET-024",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: METAR Trend Forecast (NOSIG, TEMPO, BECMG)",
+    "stem": "In a METAR message with trend forecast: 'METAR EGSS 121450Z 27015KT 9999 SCT025 14/08 Q1018 NOSIG=', what does 'NOSIG' mean and what is its validity window?",
+    "options": [
+      {
+        "id": "A",
+        "text": "'No Significant Change' expected in landing weather conditions (visibility, ceiling, weather) during the 2-hour period immediately following the observation time.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "'No Signal' from the ILS localizer.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "The airport is operating with non-standard IFR separation.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "NOSIG is valid for 24 hours without need for a TAF.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 📋 METAR Landing Trend Forecast (TREND)\n* **TREND:** A 2-hour landing forecast appended to the end of a METAR.\n* **NOSIG (No Significant Change):** Confirms that no changes in ceiling below 1,500 ft, visibility below 5,000 m, or significant weather phenomena are expected within the **next 2 hours**.",
+      "references": [
+        "ICAO Annex 3 • WMO No. 782 Aerodrome Weather Codes"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "NJ-MET-025",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Meteorology: Wake Turbulence Separation Categories & En-Route Hazards",
+    "stem": "Under ICAO Wake Turbulence categorization, what are the required minimum radar separations behind a 'Super' (A380) or 'Heavy' aircraft on approach, and where does wake turbulence settle?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Wake vortices descend at 400-500 ft/min and level off approx 500-1,000 ft below the flight path; minimum radar separation behind a Super is 6-8 NM (and 4-6 NM behind Heavy) depending on follower category.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Wake turbulence ascends into the upper flight levels and dissipates within 5 seconds.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Separation behind heavy jets is always 1 NM for corporate aircraft.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Wake turbulence only exists when aircraft land with thrust reversers deployed.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ Wake Turbulence Vortices & Avoidance\n* **Generation:** Generated from the moment the nosewheel lifts off until touchdown.\n* **Behavior:** Vortices sink at **400 to 500 ft/min** and level off approximately **500 to 1,000 ft below** the generating aircraft's flight path, drifting with the ambient crosswind (2-5 kt crosswind can keep a vortex over the runway).\n* **Golden Rule on Approach:** Fly **AT OR ABOVE** the preceding heavy aircraft's flight path, and land **BEYOND** its touchdown point.",
+      "references": [
+        "ICAO Doc 4444 PANS-ATM Chapter 5 • EASA SIB 2017-10"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  }
+]

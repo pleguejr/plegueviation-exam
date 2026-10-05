@@ -568,5 +568,79 @@
     "metadata": {
       "difficulty": 0.3
     }
+  },
+  {
+    "id": "NJ-RVSM-016",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Navigation: North Atlantic High Level Airspace (NAT-HLA) Equipment",
+    "stem": "What navigation equipment approvals are mandatory to operate in North Atlantic High Level Airspace (NAT-HLA) between FL285 and FL420?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Two independent Long-Range Navigation Systems (LRNS) approved for RNP 4 or RNP 10, RVSM operational approval, and dual long-range communications (HF / CPDLC / SATVOICE).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "A single VOR receiver and Mode A transponder.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No specific approval is needed if following an airliner visually.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "NAT-HLA only requires visual navigation by celestial stars.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🌊 NAT-HLA Oceanic Navigation Mandate (ICAO Doc 007 / Part-SPA.NAT-HLA)\n* **Airspace:** FL285 to FL420 across the North Atlantic.\n* **Mandatory Specs:**\n  1. **Dual LRNS:** 2 independent Inertial Reference Systems (IRS/IRU) or multi-sensor FMS with GPS.\n  2. **RNP 4 / RNP 10:** Lateral accuracy for oceanic tracks.\n  3. **RVSM:** 1,000 ft vertical separation capability.\n  4. **Communications:** Dual HF radios and SATCOM/CPDLC Data Link.",
+      "references": [
+        "ICAO Doc 007 North Atlantic Operations • EASA Part-SPA.NAT-HLA"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-RVSM-017",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Navigation: ADS-B Out Mandate in European Airspace",
+    "stem": "What is the certified standard for ADS-B Out mandated in European airspace under Commission Implementing Regulation (EU) No 1207/2011 for aircraft with MTOM > 5,700 kg?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1090 MHz Extended Squitter (1090ES) Mode S transponder broadcasting GNSS-derived position, altitude, velocity, and flight identification with certified Design Assurance (DO-260B / ELS & EHS).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "978 MHz Universal Access Transceiver (UAT) only.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "VHF voice radio broadcasts every 10 minutes.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "ADS-B Out is optional for private business aviation.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 📡 ADS-B Out Mandate in Europe (SPI Regulation)\n* **Standard:** **1090 MHz Extended Squitter (DO-260B / ED-102A)**.\n* **Data Broadcast:** GPS position, pressure altitude, ground track, ground speed, callsign, emergency status.\n* **Difference from US:** The US permits 978 MHz UAT below FL180, but **Europe exclusively mandates 1090 MHz Extended Squitter** for all IFR flights.",
+      "references": [
+        "Regulation (EU) No 1207/2011 • EASA CS-ACNS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
   }
 ]

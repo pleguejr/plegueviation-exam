@@ -110,6 +110,8 @@ def compile_banks() -> int:
         "espacio-rvsm-pbn-lvo": "Espacio RVSM, PBN & Procedimientos Especiales",
         "licencias-habilitaciones-aircrew": "Licencias, Habilitaciones & Requisitos Médicos (Aircrew)",
         "escenarios-netjets-despacho-crm": "Escenarios Operativos NetJets, Despacho MEL & CRM",
+        "aerodinamica-performance-jet": "Aerodinámica, Performance & Operaciones Jet (EN)",
+        "meteorologia-avanzada-ifr": "Meteorología Avanzada, Icing & Cartas IFR (EN)",
         "command-course": "Banco Especial - Command Course (Exámenes Oficiales, Típicas Preguntas Comandante P1-100 y Satélites)",
         "examen-convocatoria-anterior": "Command Course / Examen Convocatoria Anterior (Oficial + Satélites)",
         "moa": "Manual de Operaciones Parte A (MOA)",
