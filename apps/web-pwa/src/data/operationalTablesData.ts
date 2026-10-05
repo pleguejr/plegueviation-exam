@@ -1000,7 +1000,7 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
     rows: [
       {
         col1: 'Standard Takeoff',
-        col2: 'RVR $\\ge$ 400 m (or 500 m per aircraft category)',
+        col2: 'RVR ≥ 400 m (or 500 m per aircraft category)',
         col3: 'Prior to commencing takeoff roll',
         col4: 'Runway markings and runway edge lights visible',
         col5: 'Does not require specific Low Visibility Operations (LVO) approval.',
@@ -1014,11 +1014,11 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
         col4: 'High-intensity runway centerline lights + markings (90 m visual segment)',
         col5: 'Requires specific SPA.LVO operational approval and qualified crew.',
         highlight: true,
-        notes: 'Centerline light spacing $\\le$ 15 m for RVR 125 m.'
+        notes: 'Centerline light spacing ≤ 15 m for RVR 125 m.'
       },
       {
         col1: 'CAT I Precision Approach',
-        col2: 'DH $\\ge$ 200 ft | RVR $\\ge$ 550 m (or 800 m without ALS)',
+        col2: 'DH ≥ 200 ft | RVR ≥ 550 m (or 800 m without ALS)',
         col3: 'Approach Ban at 1,000 ft AAL / Outer Marker',
         col4: 'At least 1 visual element visible (approach lights, threshold, markings, TDZ, PAPI)',
         col5: 'LVP not formally required for standard CAT I.',
@@ -1027,7 +1027,7 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
       },
       {
         col1: 'CAT II Precision Approach',
-        col2: '100 ft $\\le$ DH < 200 ft | RVR $\\ge$ 300 m',
+        col2: '100 ft ≤ DH < 200 ft | RVR ≥ 300 m',
         col3: 'Approach Ban at 1,000 ft AAL / OM',
         col4: 'At least 3 consecutive lights (centerline ALS, TDZ, runway centerline) with crossbar',
         col5: 'Requires active LVP, radar altimeter, and SPA.LVO approval.',
@@ -1036,7 +1036,7 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
       },
       {
         col1: 'CAT III A Approach',
-        col2: 'DH < 100 ft (or no DH) | RVR $\\ge$ 175 m',
+        col2: 'DH < 100 ft (or no DH) | RVR ≥ 175 m',
         col3: 'Approach Ban at 1,000 ft AAL / OM',
         col4: 'At least 3 consecutive centerline or TDZ lights at DH',
         col5: 'Fail-Passive or Fail-Operational system with autoland.',
@@ -1045,7 +1045,7 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
       },
       {
         col1: 'CAT III B Approach',
-        col2: 'DH < 50 ft (or no DH) | 75 m $\\le$ RVR < 175 m',
+        col2: 'DH < 50 ft (or no DH) | 75 m ≤ RVR < 175 m',
         col3: 'Approach Ban at 1,000 ft AAL / OM',
         col4: 'At least 1 centerline light visible at DH (or none if no DH)',
         col5: 'Requires Fail-Operational system with rollout guidance.',
@@ -1120,7 +1120,7 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
         col1: 'Pre-Flight Ground Altimeter Crosscheck',
         col2: 'Set local QNH on both primary altimeters',
         col3: 'Max ±75 ft from known surveyed airport elevation (or ±50 ft per AFM)',
-        col4: 'Max difference between primary altimeters: $\\le$ 50 to 75 ft',
+        col4: 'Max difference between primary altimeters: ≤ 50 to 75 ft',
         col5: 'If tolerance is exceeded, aircraft cannot be dispatched for RVSM flights.',
         highlight: false,
         notes: 'Mandatory crosscheck before taxiing.'
@@ -1155,7 +1155,7 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
       {
         col1: 'TCAS II Resolution Advisory (RA) Response',
         col2: 'Immediate vertical pitch maneuver disconnecting AP if necessary',
-        col3: 'Initiate pitch within $\\le$ 5 sec (initial RA) or $\\le$ 2.5 sec (Reversal RA)',
+        col3: 'Initiate pitch within ≤ 5 sec (initial RA) or ≤ 2.5 sec (Reversal RA)',
         col4: 'ABSOLUTE PRIORITY over any conflicting ATC instruction',
         col5: '`[Callsign] TCAS RA` and upon return: `CLEAR OF CONFLICT, RETURNING TO [FL]`.',
         highlight: true,
@@ -1208,7 +1208,7 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
         notes: 'At NetJets (multi-pilot), 12-month validity is maintained until age 60.'
       },
       {
-        col1: 'Class 1 Medical Certificate ($\\ge$ 60 years)',
+        col1: 'Class 1 Medical Certificate (≥ 60 years)',
         col2: '6 months',
         col3: 'Applies to all commercial air transport (CAT) operations without exception',
         col4: '45 days prior to expiry',
@@ -1390,7 +1390,7 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
       },
       {
         col1: 'Steep Approaches (e.g. London City EGLC)',
-        col2: 'Approach glidepath $\\ge$ 4.5° (e.g. London City 5.5°, Sion, Lugano)',
+        col2: 'Approach glidepath ≥ 4.5° (e.g. London City 5.5°, Sion, Lugano)',
         col3: 'Requires AFM steep approach certification, Operations Manual approval, and crew simulator training',
         col4: 'More restrictive wind limits and specific thrust/speedbrake profiles',
         col5: 'Prestigious and frequent operation across the NetJets European fleet.',

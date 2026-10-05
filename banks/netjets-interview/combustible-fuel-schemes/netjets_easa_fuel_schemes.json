@@ -635,7 +635,7 @@
       }
     ],
     "explanation": {
-      "text": "### ETP and PNR Principles\n* **Equal Time Point (ETP / Critical Point):** Calculated for normal, engine-out (1EI), and depressurized scenarios ($D_{ETP} = \\frac{D \\cdot GS_{ret}}{GS_{ret} + GS_{cont}}$).\n* **Point of No Return (PNR):** The last point where the aircraft can return to base with **Final Reserve Fuel intact**.",
+      "text": "### ETP and PNR Principles\n* **Equal Time Point (ETP / Critical Point):** Calculated for normal, engine-out (1EI), and depressurized scenarios ($D_D_ETP = [D × GS_ret] / [GS_ret + GS_cont]$).\n* **Point of No Return (PNR):** The last point where the aircraft can return to base with **Final Reserve Fuel intact**.",
       "references": [
         "ICAO Flight Planning and Fuel Management Manual (Doc 9976)"
       ]
@@ -672,7 +672,7 @@
       }
     ],
     "explanation": {
-      "text": "### Fuel Density & Volume-to-Mass Calculation\n* Aircraft performance and FMS calculations depend strictly on **Fuel Mass (kg / lb)**, while fuel trucks deliver **Volume (liters / US gallons)**.\n* $\\text{Mass} = \\text{Volume} \\times \\text{Density}$. In hot climates (e.g. Madrid or Middle East in summer, density ~0.77 kg/L), standard density assumptions will **overestimate actual fuel mass onboard** unless actual measured hydrometer density is used.",
+      "text": "### Fuel Density & Volume-to-Mass Calculation\n* Aircraft performance and FMS calculations depend strictly on **Fuel Mass (kg / lb)**, while fuel trucks deliver **Volume (liters / US gallons)**.\n* Mass = Volume × Density. In hot climates (e.g. Madrid or Middle East in summer, density ~0.77 kg/L), standard density assumptions will **overestimate actual fuel mass onboard** unless actual measured hydrometer density is used.",
       "references": [
         "EASA CAT.OP.MPA.175",
         "IATA Fuel Quality Pool Guidelines"
@@ -748,7 +748,7 @@
       }
     ],
     "explanation": {
-      "text": "### Fuel Water Contamination\n* Water is denser than jet fuel and settles at the **lowest sump drain points**.\n* Undetected water can freeze into ice crystals at high altitude ($< 0^\\circ\\text{C}$), blocking fuel filters and causing **dual engine flameout**.\n* Physical drain sampling using a clear syringe/sampler is standard before daily first flight.",
+      "text": "### Fuel Water Contamination\n* Water is denser than jet fuel and settles at the **lowest sump drain points**.\n* Undetected water can freeze into ice crystals at high altitude (< 0°C), blocking fuel filters and causing **dual engine flameout**.\n* Physical drain sampling using a clear syringe/sampler is standard before daily first flight.",
       "references": [
         "EASA Part-CAT.GEN.MPA.105",
         "FAA Advisory Circular AC 20-125"
@@ -786,7 +786,7 @@
       }
     ],
     "explanation": {
-      "text": "### Fuel Temperature Monitoring\n* Cold temperatures at high flight levels (e.g. $-65^\\circ\\text{C}$ TAT) can chill fuel towards its freezing point (**$-47^\\circ\\text{C}$ for Jet A-1**).\n* Fuel temperature probes alert crew when fuel is **within $3^\\circ\\text{C}$ of freezing**.\n* **Mitigation:** Increase Mach number ($M\\uparrow$ raises Total Air Temperature $TAT = SAT \\times (1 + 0.2 M^2)$ by aerodynamic compression) or descend to warmer air.",
+      "text": "### Fuel Temperature Monitoring\n* Cold temperatures at high flight levels (e.g. -65°C TAT) can chill fuel towards its freezing point (**-47°C for Jet A-1**).\n* Fuel temperature probes alert crew when fuel is **within 3°C of freezing**.\n* **Mitigation:** Increase Mach number (M↑ raises Total Air Temperature TAT = SAT × (1 + 0.2 M^2) by aerodynamic compression) or descend to warmer air.",
       "references": [
         "EASA CS-25.1309 / CS-25.997",
         "Boeing / Bombardier High Latitude Operating Manual"

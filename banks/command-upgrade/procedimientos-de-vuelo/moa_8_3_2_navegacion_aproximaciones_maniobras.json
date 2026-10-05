@@ -7,7 +7,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Trayectoria de vuelo correcta, pequeños cambios de rumbo/cabeceo, velocidad $V_{app} -0/+10\text{ kt}$, configuración de aterrizaje completa, régimen $≤ 1.000\text{ ft/min}$, empuje estabilizado y checklists completadas",
+        "text": "Trayectoria de vuelo correcta, pequeños cambios de rumbo/cabeceo, velocidad Vapp -0/+10 kt, configuración de aterrizaje completa, régimen ≤ 1.000 ft/min, empuje estabilizado y checklists completadas",
         "is_correct": true
       },
       {
@@ -27,7 +27,7 @@
       }
     ],
     "explanation": {
-      "text": "Los **Criterios de Aproximación Estabilizada (CAT.OP.MPA.115 / MOA 8.3.2.14 / SOPM)** exigen a **1.000 ft IMC** y **500 ft VMC**: **1º Senda correcta ($± 1$ punto), 2º Velocidad ($V_{app} -0/+10\text{ kt}$), 3º Configuración de aterrizaje completa (Gear DOWN / Flap Landing), 4º Régimen vertical $≤ 1.000\text{ ft/min}$, y 5º Empuje ajustado y estabilizado**.",
+      "text": "Los **Criterios de Aproximación Estabilizada (CAT.OP.MPA.115 / MOA 8.3.2.14 / SOPM)** exigen a **1.000 ft IMC** y **500 ft VMC**: **1º Senda correcta (± 1 punto), 2º Velocidad (Vapp -0/+10 kt), 3º Configuración de aterrizaje completa (Gear DOWN / Flap Landing), 4º Régimen vertical ≤ 1.000 ft/min, y 5º Empuje ajustado y estabilizado**.",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
       ]
@@ -101,7 +101,7 @@
       }
     ],
     "explanation": {
-      "text": "La técnica **CDFA (Continuous Descent Final Approach / MOA 8.3.2.15)** estabiliza el descenso con un ángulo constante ($~3^\\circ$), evitando niveladas en la MDA y eliminando la causa principal de accidentes **CFIT (Controlled Flight Into Terrain)**.",
+      "text": "La técnica **CDFA (Continuous Descent Final Approach / MOA 8.3.2.15)** estabiliza el descenso con un ángulo constante (~3°C), evitando niveladas en la MDA y eliminando la causa principal de accidentes **CFIT (Controlled Flight Into Terrain)**.",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
       ]
@@ -118,7 +118,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Añadiendo un margen de seguridad de **50 pies a la MDA/MDH publicada ($\text{DDA} = \text{MDA} + 50\text{ ft}$)** para garantizar que no se perfore la MDA durante la recogida de la frustrada",
+        "text": "Añadiendo un margen de seguridad de **50 pies a la MDA/MDH publicada (DDA = MDA + 50 ft)** para garantizar que no se perfore la MDA durante la recogida de la frustrada",
         "is_correct": true
       },
       {
@@ -138,7 +138,7 @@
       }
     ],
     "explanation": {
-      "text": "Dado que en CDFA la aproximación frustrada se inicia sin nivelar el avión, el MOA 8.3.2.15 define la **DDA sumando 50 ft a la MDA ($\text{DDA} = \text{MDA} + 50\text{ ft}$)**, asegurando que la pérdida transitoria de altitud en la frustrada no vulnere la MDA legal.",
+      "text": "Dado que en CDFA la aproximación frustrada se inicia sin nivelar el avión, el MOA 8.3.2.15 define la **DDA sumando 50 ft a la MDA (DDA = MDA + 50 ft)**, asegurando que la pérdida transitoria de altitud en la frustrada no vulnere la MDA legal.",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
       ]
@@ -212,7 +212,7 @@
       }
     ],
     "explanation": {
-      "text": "Protocolo estándar de cabina (SOPM / MOA 8.3.2.14):\n- **PM**: *'One Hundred Above'* $\rightarrow$ **PF**: *'Checked'*\n- **PM**: *'Minimums'* $\rightarrow$ **PF**: *'Landing'* (referencias visuales continuas) o *'Go Around, Flaps [X]'* (sin referencias).",
+      "text": "Protocolo estándar de cabina (SOPM / MOA 8.3.2.14):\n- **PM**: *'One Hundred Above'* → **PF**: *'Checked'*\n- **PM**: *'Minimums'* → **PF**: *'Landing'* (referencias visuales continuas) o *'Go Around, Flaps [X]'* (sin referencias).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
       ]
@@ -225,7 +225,7 @@
     "id": "CMD-MOA-FLT-057",
     "subject_id": "moa_navegacion_aproximaciones_maniobras",
     "learning_objective": "MOA 8.3.2.14 - Callouts de Desviación de Parámetros por el PM",
-    "stem": "¿Qué callout debe cantar obligatoriamente el PM si durante la aproximación final detecta una velocidad excesiva ($> V_{app} + 10\text{ kt}$) o régimen $> 1.000\text{ ft/min}$?",
+    "stem": "¿Qué callout debe cantar obligatoriamente el PM si durante la aproximación final detecta una velocidad excesiva (> Vapp + 10 kt) o régimen > 1.000 ft/min?",
     "options": [
       {
         "id": "A",
@@ -323,7 +323,7 @@
       }
     ],
     "explanation": {
-      "text": "El error térmico barométrico en aire frío hace que **la trayectoria Baro-VNAV descienda por debajo de la senda nominal de diseño**; si la $OAT$ es inferior a la temperatura mínima de la carta, **está prohibido volar a mínimos LNAV/VNAV sin compensación de temperatura FMS** (MOA 8.3.2.16 / PANS-OPS).",
+      "text": "El error térmico barométrico en aire frío hace que **la trayectoria Baro-VNAV descienda por debajo de la senda nominal de diseño**; si la OAT es inferior a la temperatura mínima de la carta, **está prohibido volar a mínimos LNAV/VNAV sin compensación de temperatura FMS** (MOA 8.3.2.16 / PANS-OPS).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
       ]
@@ -340,7 +340,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Mantener contacto visual continuo con la pista o referencias del terreno, techo de nubes $≥ 1.000\text{ ft}$ (o sobre el MVA) y visibilidad meteorológica $≥ 5.000\text{ metros}$",
+        "text": "Mantener contacto visual continuo con la pista o referencias del terreno, techo de nubes ≥ 1.000 ft (o sobre el MVA) y visibilidad meteorológica ≥ 5.000 metros",
         "is_correct": true
       },
       {
@@ -360,7 +360,7 @@
       }
     ],
     "explanation": {
-      "text": "Conforme a CAT.OP.MPA.110 y MOA 8.3.2.17, la **Aproximación Visual** exige: **visibilidad $≥ 5.000\text{ m}$, techo $≥ 1.000\text{ ft}$**, referencias visuales continuas con el terreno y que la aproximación pueda completarse visualmente con total seguridad.",
+      "text": "Conforme a CAT.OP.MPA.110 y MOA 8.3.2.17, la **Aproximación Visual** exige: **visibilidad ≥ 5.000 m, techo ≥ 1.000 ft**, referencias visuales continuas con el terreno y que la aproximación pueda completarse visualmente con total seguridad.",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
       ]
@@ -397,7 +397,7 @@
       }
     ],
     "explanation": {
-      "text": "Para evitar la captura de **falsos lóbulos de senda (False Glideslope)** a $6^\\circ$ o $9^\\circ$, el procedimiento estándar exige **capturar el LOC primero y随后 capturar la senda de planeo (GS) desde abajo** a la altitud de interceptación publicada (SOPM / MOA 8.3.2.1).",
+      "text": "Para evitar la captura de **falsos lóbulos de senda (False Glideslope)** a 6°C o 9°C, el procedimiento estándar exige **capturar el LOC primero y随后 capturar la senda de planeo (GS) desde abajo** a la altitud de interceptación publicada (SOPM / MOA 8.3.2.1).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
       ]
@@ -562,7 +562,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Porque flotar consume cientos de metros de pista disponible por segundo ($~70\text{ m/s}$ a 130 kt), reduciendo drásticamente la distancia de frenado restante con riesgo crítico de salida de pista (Overrun)",
+        "text": "Porque flotar consume cientos de metros de pista disponible por segundo (~70 m/s a 130 kt), reduciendo drásticamente la distancia de frenado restante con riesgo crítico de salida de pista (Overrun)",
         "is_correct": true
       },
       {
@@ -582,7 +582,7 @@
       }
     ],
     "explanation": {
-      "text": "El intento de realizar tomas excesivamente suaves prolongando la recogida (**Floating**) consume pista disponible a razón de $60-80\text{ metros por segundo}$; la aeronave debe **tomar firmemente en la Zona de Toma de Contacto (TDZ, entre 300 y 600 m del umbral)** (MOA 8.3.2.14 / FSF ALAR).",
+      "text": "El intento de realizar tomas excesivamente suaves prolongando la recogida (**Floating**) consume pista disponible a razón de 60-80 metros por segundo; la aeronave debe **tomar firmemente en la Zona de Toma de Contacto (TDZ, entre 300 y 600 m del umbral)** (MOA 8.3.2.14 / FSF ALAR).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
       ]
@@ -636,7 +636,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Requieren aprobación operacional específica del operador, avión con redundancia dual de FMS/sensores, capacidad de tramos curvos en radio fijo (RF Legs) y monitorización continua de contención RNP $< 0.3\text{ NM}$",
+        "text": "Requieren aprobación operacional específica del operador, avión con redundancia dual de FMS/sensores, capacidad de tramos curvos en radio fijo (RF Legs) y monitorización continua de contención RNP < 0.3 NM",
         "is_correct": true
       },
       {
@@ -915,7 +915,7 @@
       }
     ],
     "explanation": {
-      "text": "Procedimiento **UPRT (Nose Low Recovery)**: Tirar de la palanca con alas inclinadas agrava el factor de carga ($g$) y la pérdida de cota; se debe **1º Reducir potencia, 2º NIVELAR ALAS PRIMERO (Wings Level), y 3º Tirar suavemente de morro arriba (*Smooth Pull Up*)** (MOA 8.3.2.14).",
+      "text": "Procedimiento **UPRT (Nose Low Recovery)**: Tirar de la palanca con alas inclinadas agrava el factor de carga (g) y la pérdida de cota; se debe **1º Reducir potencia, 2º NIVELAR ALAS PRIMERO (Wings Level), y 3º Tirar suavemente de morro arriba (*Smooth Pull Up*)** (MOA 8.3.2.14).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
       ]
@@ -965,11 +965,11 @@
     "id": "CMD-MOA-FLT-077",
     "subject_id": "moa_navegacion_aproximaciones_maniobras",
     "learning_objective": "MOA 8.3.2.14 - Corrección de Velocidad de Aproximación por Viento (Wind Correction / Vapp)",
-    "stem": "¿Cómo se calcula la velocidad de aproximación final ($V_{app}$) a partir de la $V_{ref}$ en el Embraer 195-E2?",
+    "stem": "¿Cómo se calcula la velocidad de aproximación final (Vapp) a partir de la Vref en el Embraer 195-E2?",
     "options": [
       {
         "id": "A",
-        "text": "Añadiendo a la $V_{ref}$ la mitad del componente de viento de cara sostenido más todo el valor de la racha, con una corrección mínima de $+5\text{ kt}$ y máxima de $+15\text{ a }+20\text{ kt}$",
+        "text": "Añadiendo a la Vref la mitad del componente de viento de cara sostenido más todo el valor de la racha, con una corrección mínima de +5 kt y máxima de +15 a +20 kt",
         "is_correct": true
       },
       {
@@ -989,7 +989,7 @@
       }
     ],
     "explanation": {
-      "text": "El cálculo de **$V_{app}$ (Target Speed)** en el FMS aplica la fórmula estándar: $V_{app} = V_{ref} + \text{Wind Correction}$ (típicamente **la mitad del viento en cara + racha total**, con un mínimo de **$+5\text{ kt}$** y un tope máximo de **$+15\text{ a }+20\text{ kt}$**) (SOPM / MOA 8.3.2.14).",
+      "text": "El cálculo de **Vapp (Target Speed)** en el FMS aplica la fórmula estándar: Vapp = Vref + Wind Correction (típicamente **la mitad del viento en cara + racha total**, con un mínimo de **+5 kt** y un tope máximo de **+15 a +20 kt**) (SOPM / MOA 8.3.2.14).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
       ]
@@ -1076,7 +1076,7 @@
     "id": "CMD-MOA-FLT-080",
     "subject_id": "moa_navegacion_aproximaciones_maniobras",
     "learning_objective": "MOA 8.3.2.14 - Aterrizaje con Pista Inundada / Hidroplaneo (Aquaplaning Risk)",
-    "stem": "¿Qué técnica de aterrizaje se aplica en pistas con agua estancada ($> 3\text{ mm}$, Standing Water) para prevenir el hidroplaneo dinámico?",
+    "stem": "¿Qué técnica de aterrizaje se aplica en pistas con agua estancada (> 3 mm, Standing Water) para prevenir el hidroplaneo dinámico?",
     "options": [
       {
         "id": "A",
@@ -1248,7 +1248,7 @@
       }
     ],
     "explanation": {
-      "text": "La **altitud de aceleración de aproximación frustrada (típicamente 1.000 ft AGL)** permite acelerar la aeronave en ascenso positivo para **recoger flaps y pasar a velocidad de crucero limpio ($V_{FS}$ / Clean)** (SOPM / MOA 8.3.2.14).",
+      "text": "La **altitud de aceleración de aproximación frustrada (típicamente 1.000 ft AGL)** permite acelerar la aeronave en ascenso positivo para **recoger flaps y pasar a velocidad de crucero limpio (VFS / Clean)** (SOPM / MOA 8.3.2.14).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
       ]
@@ -1544,7 +1544,7 @@
       }
     ],
     "explanation": {
-      "text": "Los Criterios de Estabilización fijan un **tope estricto de régimen vertical de descenso de $≤ 1.000\text{ ft/min}$** por debajo de 1.000 ft AGL; superar este valor exige el callout `'SINK RATE'` y la ejecución de **Go-Around si no se corrige de inmediato** (MOA 8.3.2.14).",
+      "text": "Los Criterios de Estabilización fijan un **tope estricto de régimen vertical de descenso de ≤ 1.000 ft/min** por debajo de 1.000 ft AGL; superar este valor exige el callout `'SINK RATE'` y la ejecución de **Go-Around si no se corrige de inmediato** (MOA 8.3.2.14).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
       ]
@@ -1655,7 +1655,7 @@
       }
     ],
     "explanation": {
-      "text": "El callout **`'LOCALIZER'`** alerta de una desviación inaceptable de guiado lateral ($≥ 1\text{ dot}$); si la senda lateral no se recupera de inmediato dentro de límites, **la frustrada es imperativa** (MOA 8.3.2.14 / SOPM).",
+      "text": "El callout **`'LOCALIZER'`** alerta de una desviación inaceptable de guiado lateral (≥ 1 dot); si la senda lateral no se recupera de inmediato dentro de límites, **la frustrada es imperativa** (MOA 8.3.2.14 / SOPM).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
       ]
@@ -1672,7 +1672,7 @@
     "options": [
       {
         "id": "A",
-        "text": "A una velocidad máxima de hasta **50-60 nudos en calles rápidas (RET)** y a velocidad reducida ($≤ 10-15\text{ nudos}$) en giros convencionales en ángulo recto de 90°",
+        "text": "A una velocidad máxima de hasta **50-60 nudos en calles rápidas (RET)** y a velocidad reducida (≤ 10-15 nudos) en giros convencionales en ángulo recto de 90°",
         "is_correct": true
       },
       {
