@@ -14,9 +14,11 @@ import {
   Check,
   Scale,
   Briefcase,
-  ArrowUp
+  ArrowUp,
+  BarChart2
 } from 'lucide-react';
 import { OPERATIONAL_TABLES, OperationalTable } from '../../data/operationalTablesData';
+import { OperationalDiagram, DiagramId } from './OperationalDiagrams';
 
 export type TableCategory = 'all' | 'easa-netjets' | 'alternates' | 'memory-items' | 'limitations' | 'mass-balance' | 'moa' | 'vfr';
 
@@ -48,6 +50,17 @@ export const OperationalTablesScreen: React.FC<OperationalTablesScreenProps> = (
     return initial;
   });
   const [copiedId, setCopiedId] = useState<string | null>(null);
+  const [showDiagrams, setShowDiagrams] = useState<Record<string, boolean>>(() => {
+    const initial: Record<string, boolean> = {};
+    OPERATIONAL_TABLES.forEach((t) => {
+      if (t.diagramId) initial[t.id] = true;
+    });
+    return initial;
+  });
+
+  const toggleDiagram = (id: string) => {
+    setShowDiagrams((prev) => ({ ...prev, [id]: !prev[id] }));
+  };
 
   useEffect(() => {
     if (initialCategory) {
@@ -442,6 +455,29 @@ export const OperationalTablesScreen: React.FC<OperationalTablesScreenProps> = (
                           <strong className="block">Atención Operativa / Requisito Crítico:</strong>
                           <span>{table.warningAlert}</span>
                         </div>
+                      </div>
+                    )}
+
+                    {/* 📊 DIAGRAMA / GRÁFICO EXPLICATIVO VECTORIAL */}
+                    {table.diagramId && (
+                      <div className="ops-diagram-wrapper space-y-2 pt-1 pb-1">
+                        <div className="flex items-center justify-between">
+                          <button
+                            type="button"
+                            onClick={() => toggleDiagram(table.id)}
+                            className="ops-diagram-toggle-btn flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-black bg-sky-500/10 hover:bg-sky-500/20 text-sky-300 border border-sky-500/30 transition-all cursor-pointer select-none active:scale-95"
+                          >
+                            <BarChart2 className="w-3.5 h-3.5 text-sky-400" />
+                            <span>{showDiagrams[table.id] ? 'Ocultar Infografía Explicativa' : '📊 Ver Gráfico / Diagrama Explicativo'}</span>
+                          </button>
+                          <span className="text-[10px] text-slate-400 font-mono hidden sm:inline">Infografía Técnica Vectorial</span>
+                        </div>
+
+                        {showDiagrams[table.id] && (
+                          <div className="animate-fade-in">
+                            <OperationalDiagram diagramId={table.diagramId as DiagramId} title={table.title} />
+                          </div>
+                        )}
                       </div>
                     )}
 

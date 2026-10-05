@@ -12,6 +12,7 @@ export interface TableRow {
 
 export interface OperationalTable {
   id: string;
+  diagramId?: string;
   category: 'alternates' | 'memory-items' | 'limitations' | 'moa' | 'vfr' | 'mass-balance' | 'easa-netjets';
   title: string;
   subtitle: string;
@@ -28,6 +29,7 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
   // 1. MÍNIMOS DE PLANIFICACIÓN - PLAN BÁSICO ESTÁNDAR (TABLA 1B)
   {
     id: 'alternates-basic',
+    diagramId: 'planning-minima-flowchart',
     category: 'alternates',
     title: 'Tabla 1B: Mínimos de Planificación de aeródromos alternativos en ruta (ERA, FUEL ERA) y alternativo de destino. Plan básico',
     subtitle: 'Limitaciones por visibilidad / techo de nubes (MOA 8.1.7.2.6)',
@@ -64,6 +66,7 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
   // 2. MÍNIMOS DE PLANIFICACIÓN - PLAN BÁSICO CON VARIACIONES (TABLA 1A)
   {
     id: 'alternates-variations',
+    diagramId: 'planning-minima-flowchart',
     category: 'alternates',
     title: 'Tabla 1A: Mínimos de Planificación de aeródromos alternativos en ruta (ERA, FUEL ERA) y alternativo de destino. Plan básico con variaciones',
     subtitle: 'Plan básico con variaciones (MOA 8.1.7.2.5)',
@@ -121,6 +124,7 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
   // 3. TABLA COMPLETA DE MEMORY ITEMS - EMBRAER 195-E2
   {
     id: 'memory-items-e2',
+    diagramId: 'cabin-altitude-descent',
     category: 'memory-items',
     title: 'Memory Items Oficiales del Embraer 195-E2',
     subtitle: 'Acciones inmediatas de memoria requeridas por el fabricante y Binter Ops',
@@ -268,6 +272,7 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
   // 4. TABLA DE LIMITACIONES Y NÚMEROS OPERACIONALES - E195-E2
   {
     id: 'limitations-e2',
+    diagramId: 'takeoff-segments',
     category: 'limitations',
     title: 'Limitaciones y Números Operacionales: Embraer 195-E2',
     subtitle: 'Envolvente de vuelo, velocidades de diseño, altitudes, pesos y sistemas',
@@ -618,6 +623,7 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
   // 7. TABLA OFICIAL DE MASAS Y PESOS ESTÁNDAR (MOA 8.1.8 / EASA)
   {
     id: 'mass-balance-standards',
+    diagramId: 'mass-balance-envelope',
     category: 'mass-balance',
     title: 'Tabla Oficial de Masas y Pesos Estándar: Pasajeros, Equipajes y Tripulación',
     subtitle: 'Valores estándar de masa para despacho, DOW y hoja de carga (MOA 8.1.8.3 y EASA CAT.POL.MAB.100)',
@@ -779,6 +785,7 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
   // 12. EASA FUEL SCHEMES: BASIC SCHEME, CONTINGENCY & FINAL RESERVES
   {
     id: 'netjets-easa-fuel-schemes',
+    diagramId: 'fuel-scheme',
     category: 'easa-netjets',
     title: 'EASA Fuel Schemes: Basic Scheme, Contingency & Final Reserves',
     subtitle: 'Official Breakdown of Fuel Blocks, Isolated Aerodrome Policy, and Emergency Calls (CAT.OP.MPA.180/181/182)',
@@ -871,6 +878,7 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
   // 13. EASA FTL LIMITS: BASIC DAILY FDP, REST & CUMULATIVE DUTY
   {
     id: 'netjets-easa-ftl-fdp',
+    diagramId: 'aircrew-age-medical',
     category: 'easa-netjets',
     title: 'EASA Flight Time Limitations (FTL): Maximum Daily FDP, Rest & Cumulative Duty',
     subtitle: 'Maximum Flight Duty Period Table (ORO.FTL.205), Home Base / Outstation Rest, Split Duty and Commander\'s Discretion',
@@ -989,6 +997,7 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
   // 14. AERODROME MINIMA, LVTO AND APPROACH BAN
   {
     id: 'netjets-easa-aom-minima',
+    diagramId: 'approach-minima-profile',
     category: 'easa-netjets',
     title: 'Aerodrome Operating Minima (AOM), LVTO and Approach Ban Rule',
     subtitle: 'Visibility, RVR, Visual Reference Requirements at DA/DH, and Approach Continuation Rules (CAT.OP.MPA.110/305)',
@@ -1089,6 +1098,7 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
   // 15. RVSM AIRSPACE OPERATIONS, ALTIMETRY & CONTINGENCIES
   {
     id: 'netjets-easa-rvsm-equipment',
+    diagramId: 'rvsm-airspace',
     category: 'easa-netjets',
     title: 'RVSM Airspace Operations, Altimetry Tolerances and Contingency Procedures',
     subtitle: 'Equipment Mandate (2 Primary Altimeters + 1 Altitude-Hold AP + 1 Altitude Alert + 1 Mode C/S Transponder), In-Flight Tolerances, and SLOP',
@@ -1180,6 +1190,7 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
   // 16. AIRCREW REGULATIONS: LICENSING, RECENCY & MEDICAL REQUIREMENTS
   {
     id: 'netjets-easa-aircrew-recency',
+    diagramId: 'aircrew-age-medical',
     category: 'easa-netjets',
     title: 'Aircrew Regulations: License Validity, Recency & Medical Requirements',
     subtitle: 'Class 1 Medical Validity, Age 60/65 Rules, 90-Day Recency, and OPC / Line Checks',
@@ -1289,6 +1300,7 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
   // 17. MEL / DDPM DISPATCH, NETJETS SCENARIOS AND CRM
   {
     id: 'netjets-easa-mel-dispatch',
+    diagramId: 'mel-timeline',
     category: 'easa-netjets',
     title: 'MEL / DDPM Technical Dispatch, NetJets Scenarios & CRM',
     subtitle: 'MEL Rectification Intervals (A, B, C, D), (M)/(O) Procedures, VIP Passenger Management, and Corporate Decision-Making',

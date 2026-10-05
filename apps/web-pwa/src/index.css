@@ -3507,6 +3507,86 @@ table th {
   border-color: #e2e8f0 !important;
   color: #64748b !important;
 }
-.theme-light .ops-tables-notes strong { color: #334155 !important; }
 .theme-light .ops-tables-breadcrumb { color: #047857 !important; }
 .theme-light .ops-tables-breadcrumb:hover { color: #065f46 !important; }
+
+/* 📊 OPERATIONAL DIAGRAMS (MODO DÍA / THEME LIGHT CONTRAST) */
+.theme-light .ops-diagram-container {
+  background: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+  box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.05) !important;
+}
+.theme-light .ops-diagram-container h4 {
+  color: #0f172a !important;
+  font-weight: 900 !important;
+}
+.theme-light .ops-diagram-container p,
+.theme-light .ops-diagram-container li,
+.theme-light .ops-diagram-container span {
+  color: #1e293b !important;
+}
+.theme-light .ops-diagram-container strong {
+  color: #000000 !important;
+  font-weight: 800 !important;
+}
+.theme-light .ops-diagram-container .border-slate-800,
+.theme-light .ops-diagram-container .border-slate-700 {
+  border-color: #e2e8f0 !important;
+}
+.theme-light .ops-diagram-container .bg-slate-900,
+.theme-light .ops-diagram-container .bg-slate-900\/90,
+.theme-light .ops-diagram-container .bg-slate-900\/80,
+.theme-light .ops-diagram-container .bg-black\/50,
+.theme-light .ops-diagram-container .bg-black\/60 {
+  background: #f8fafc !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+.theme-light .ops-diagram-container .bg-emerald-950\/50,
+.theme-light .ops-diagram-container .bg-emerald-950\/40,
+.theme-light .ops-diagram-container .bg-emerald-950\/30 {
+  background: #ecfdf5 !important;
+  border-color: #a7f3d0 !important;
+  color: #065f46 !important;
+}
+.theme-light .ops-diagram-container .bg-sky-950\/40,
+.theme-light .ops-diagram-container .bg-sky-950\/30 {
+  background: #f0f9ff !important;
+  border-color: #bae6fd !important;
+  color: #0369a1 !important;
+}
+.theme-light .ops-diagram-container .bg-amber-950\/40,
+.theme-light .ops-diagram-container .bg-amber-950\/30 {
+  background: #fffbeb !important;
+  border-color: #fde68a !important;
+  color: #92400e !important;
+}
+.theme-light .ops-diagram-container .bg-rose-950\/50,
+.theme-light .ops-diagram-container .bg-rose-950\/40 {
+  background: #fff1f2 !important;
+  border-color: #fecdd3 !important;
+  color: #9f1239 !important;
+}
+.theme-light .ops-diagram-container .bg-purple-950\/40,
+.theme-light .ops-diagram-container .bg-purple-950\/30 {
+  background: #faf5ff !important;
+  border-color: #e9d5ff !important;
+  color: #6b21a8 !important;
+}
+.theme-light .ops-diagram-container .bg-teal-950\/40,
+.theme-light .ops-diagram-container .bg-teal-950\/30 {
+  background: #f0fdfa !important;
+  border-color: #99f6e4 !important;
+  color: #115e59 !important;
+}
+.theme-light .ops-diagram-toggle-btn {
+  background: #f0f9ff !important;
+  border-color: #0284c7 !important;
+  color: #0369a1 !important;
+  font-weight: 800 !important;
+}
+.theme-light .ops-diagram-toggle-btn:hover {
+  background: #e0f2fe !important;
+}
+
