@@ -94,10 +94,22 @@ def compile_banks() -> int:
             "title": "Simulador E2", 
             "icon": "Cpu", 
             "color": "sky"
+        },
+        "netjets-interview": {
+            "title": "NetJets Europe Interview Prep (EASA Air Ops & Aircrew)", 
+            "icon": "Briefcase", 
+            "color": "amber"
         }
     }
 
     subtopic_labels = {
+        "historia-evolucion-netjets": "Historia, Creación & Evolución de NetJets (1964-Hoy)",
+        "combustible-fuel-schemes": "Esquemas de Combustible & Reservas (Fuel Schemes)",
+        "minimos-operacionales-lvo": "Mínimos Operacionales, LVO & Approach Ban",
+        "tiempos-actividad-descanso-ftl": "Tiempos de Actividad, Descanso & FTL (Part-ORO.FTL)",
+        "espacio-rvsm-pbn-lvo": "Espacio RVSM, PBN & Procedimientos Especiales",
+        "licencias-habilitaciones-aircrew": "Licencias, Habilitaciones & Requisitos Médicos (Aircrew)",
+        "escenarios-netjets-despacho-crm": "Escenarios Operativos NetJets, Despacho MEL & CRM",
         "command-course": "Banco Especial - Command Course (Exámenes Oficiales, Típicas Preguntas Comandante P1-100 y Satélites)",
         "examen-convocatoria-anterior": "Command Course / Examen Convocatoria Anterior (Oficial + Satélites)",
         "moa": "Manual de Operaciones Parte A (MOA)",

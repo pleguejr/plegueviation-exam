@@ -1178,5 +1178,202 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
         ]
       }
     ]
+  },
+
+  // =========================================================================
+  // SECCIÓN ESPECIAL: PREPARACIÓN ENTREVISTA NETJETS & TOMA DE DECISIONES EASA
+  // =========================================================================
+
+  // 14. FLUJO DE DECISIÓN DE COMBUSTIBLE EN VUELO (EASA CAT.OP.MPA.182)
+  {
+    id: 'card-netjets-fuel-decision-flow',
+    category: 'special',
+    title: 'Flujo de Decisión de Combustible en Vuelo & Declaraciones ATC (EASA)',
+    subtitle: 'Monitorización regular, cálculo de Mínimo Desvío (MDF), MINIMUM FUEL y MAYDAY FUEL',
+    manualRef: 'EASA Part-CAT.OP.MPA.180 / 181 / 182 • AMC1 CAT.OP.MPA.182 • ICAO Doc 4444',
+    airplane: 'NetJets Corporate Fleet / EASA CAT',
+    badges: ['Fuel Policy', 'In-Flight Decision', 'MINIMUM FUEL', 'MAYDAY FUEL'],
+    goldenRules: [
+      'Monitorización continua cada ≤60 minutos o en cada waypoint principal de la ruta.',
+      'El Combustible de Reserva Final (30 min en reactores a 1.500 ft ISA) es INVIOLABLE.',
+      'Si se prevé aterrizar en el aeródromo seguro más cercano con menos del FRF: MAYDAY MAYDAY MAYDAY FUEL obligatorio.'
+    ],
+    summary: 'Árbol de decisión y procedimiento operativo para la gestión del combustible en vuelo, re-planificación por esperas o meteorología adversa, y criterios exactos para la emisión de llamadas radiotelefónicas según EASA.',
+    sections: [
+      {
+        title: '1. Monitorización Rutinaria en Crucero (Cada ≤ 60 min)',
+        color: 'sky',
+        items: [
+          { role: 'STEP', action: 'Registrar remanente utilizable en el Plan de Vuelo Operacional (OFP).', details: 'Comparar consumo real frente al previsto en el plan del FMS.' },
+          { role: 'STEP', action: 'Calcular el Combustible Mínimo de Desvío (Minimum Diversion Fuel - MDF):', details: 'MDF = Alternate Fuel (vía ruta de desvío más desfavorable) + Final Reserve Fuel (30 min jet).' },
+          { role: 'NOTE', action: 'Verificar remanente estimado en destino (EFOB Destination):', details: 'EFOB en destino debe ser siempre ≥ MDF antes de iniciar la aproximación.' }
+        ]
+      },
+      {
+        title: '2. Entrada en Espera o Demoras no Planificadas',
+        color: 'amber',
+        items: [
+          { role: 'PF', action: 'Determinar el Tiempo Máximo de Espera (Holding Time):', details: 'Tiempo de Espera = (Combustible a Bordo - MDF) / Consumo Horario de Espera.' },
+          { role: 'PM', action: 'Solicitar al ATC la Hora Prevista de Aproximación (EAT - Expected Approach Time).', details: 'Verificar que la EAT sea anterior a la expiración del tiempo máximo de espera disponible.' },
+          { role: 'ALERT', action: 'Al alcanzar el combustible MDF sin autorización de aproximación:', details: 'Abandonar la espera e iniciar inmediatamente el desvío hacia el aeródromo alternativo.' }
+        ]
+      },
+      {
+        title: '3. Declaración de MINIMUM FUEL',
+        color: 'purple',
+        items: [
+          { role: 'PF', action: 'Condición de activación:', details: 'El vuelo está comprometido a aterrizar en un aeródromo específico y cualquier cambio en la autorización actual puede resultar en un aterrizaje con menos del Final Reserve Fuel.' },
+          { role: 'PM', action: 'Llamada radiotelefónica al ATC:', callout: '`[Callsign] MINIMUM FUEL`', details: 'Informa al ATC de que no se toleran demoras. NO confiere prioridad, pero previene vectores o esperas innecesarias.' }
+        ]
+      },
+      {
+        title: '4. Declaración de MAYDAY MAYDAY MAYDAY FUEL',
+        color: 'rose',
+        items: [
+          { role: 'ALERT', action: 'Condición de activación obligatoria (CAT.OP.MPA.182(e)):', details: 'La cantidad estimada de combustible utilizable al aterrizar en el aeródromo seguro más cercano es MENOR que el Combustible de Reserva Final planificado (30 min).' },
+          { role: 'PM', action: 'Llamada de socorro radiotelefónica:', callout: '`MAYDAY MAYDAY MAYDAY FUEL, [Callsign], REQUESTING IMMEDIATE VECTORS FOR LANDING`', details: 'Otorga prioridad absoluta e incondicional sobre cualquier otro tráfico.' },
+          { role: 'NOTE', action: 'Acción posterior:', details: 'Cumplimentar y remitir informe formal ASR / MOR de seguridad al operador en el plazo estipulado.' }
+        ]
+      }
+    ]
+  },
+
+  // 15. EVALUACIÓN DE APPROACH BAN, MÍNIMOS LVO Y REFERENCIAS VISUALES
+  {
+    id: 'card-netjets-approach-ban-lvo',
+    category: 'special',
+    title: 'Evaluación de Approach Ban, Mínimos LVO y Referencias Visuales',
+    subtitle: 'Punto de corte a 1.000 ft AAL / OM, verificación de RVR y transición visual en DH/MDH',
+    manualRef: 'EASA Part-CAT.OP.MPA.305 / 110 • Part-SPA.LVO.100 • AMC1 CAT.OP.MPA.110',
+    airplane: 'NetJets Corporate Fleet / EASA CAT',
+    badges: ['LVO', 'Approach Ban', 'CAT I/II/III', 'SOP'],
+    goldenRules: [
+      'Antes de 1.000 ft AAL / OM manda el RVR notificado por la torre.',
+      'Pasados los 1.000 ft AAL manda el contacto visual del piloto a la DA/DH o MDA.',
+      'En CAT II se requieren al menos 3 luces consecutivas con elemento transversal para aterrizar.'
+    ],
+    summary: 'Procedimiento operativo para la aplicación rigurosa de la regla de prohibición de aproximación de EASA (CAT.OP.MPA.305) y criterios de toma de decisión ante degradación de visibilidad durante la aproximación final.',
+    sections: [
+      {
+        title: '1. Comprobación Previa antes del Segmento Final (Por encima de 1.000 ft AAL / OM)',
+        color: 'sky',
+        items: [
+          { role: 'PM', action: 'Verificar el último reporte de RVR / visibilidad transmitido por ATC / ATIS:', details: 'Comparar con los mínimos requeridos de la carta de aproximación (AOM) ajustados si hay elementos inoperativos en la MEL.' },
+          { role: 'PF', action: 'Regla de Approach Ban (CAT.OP.MPA.305):', details: 'Si el RVR notificado es MENOR al mínimo aplicable, PROHIBIDO descender o continuar más allá del Outer Marker (OM) o de 1.000 ft sobre el terreno.' },
+          { role: 'ALERT', action: 'Si RVR < Mínimo antes de 1.000 ft AAL / OM:', callout: '`GO AROUND / HOLDING / DIVERT`', details: 'Frustrar de inmediato, solicitar espera para ver si mejora o proceder al alternativo.' }
+        ]
+      },
+      {
+        title: '2. Continuación por debajo de 1.000 ft AAL / OM',
+        color: 'emerald',
+        items: [
+          { role: 'NOTE', action: 'Si el RVR cae por debajo de mínimos DESPUÉS de haber cruzado los 1.000 ft AAL / OM:', details: 'La aproximación PUEDE continuarse reglamentariamente hasta la DA/DH o MDA/MDH aplicable.' },
+          { role: 'PF', action: 'Mantener vuelo estabilizado en trayectoria:', details: 'Monitorear parámetros de estabilización (senda, localizador, velocidad, régimen ≤1.000 ft/min).' }
+        ]
+      },
+      {
+        title: '3. Decisión en DA/H o MDA/H según Categoría',
+        color: 'amber',
+        items: [
+          { role: 'PM', action: 'Aviso a 100 ft sobre mínimos:', callout: '`ONE HUNDRED TO MINIMUMS`' },
+          { role: 'PM', action: 'Al alcanzar la altitud/altura de decisión:', callout: '`MINIMUMS`' },
+          { role: 'PF', action: 'CAT I (DH ≥ 200 ft):', details: 'Requiere al menos 1 elemento visual visible (luces de aproximación, umbral, TDZ, marcas o PAPI).' },
+          { role: 'PF', action: 'CAT II (DH 100-200 ft):', details: 'Requiere segmento visual de al menos 3 luces consecutivas (eje de aprox, TDZ o eje de pista) con barra transversal.' },
+          { role: 'PF', action: 'Si hay referencias visuales requeridas:', callout: '`CONTINUE / LANDING`', details: 'Completar el aterrizaje dentro de la zona de toma de contacto (TDZ).' },
+          { role: 'PF', action: 'Si NO hay referencias visuales requeridas a la DA/DH:', callout: '`GO AROUND, FLAPS [X], SET GO-AROUND THRUST`', details: 'Ejecutar maniobra de frustrada inmediata sin demora.' }
+        ]
+      }
+    ]
+  },
+
+  // 16. OPERACIÓN RVSM, COTEJO ALTIMÉTRICO Y CONTINGENCIAS
+  {
+    id: 'card-netjets-rvsm-contingency',
+    category: 'special',
+    title: 'Operación RVSM, Cotejo Altimétrico y Procedimientos de Contingencia',
+    subtitle: 'Verificación de 4 equipos, cotejo de tolerancias (200 ft), SLOP y pérdida de capacidad',
+    manualRef: 'EASA Part-SPA.RVSM.100 / 110 • ICAO Doc 9574 • ICAO Doc 4444 • Doc 7030',
+    airplane: 'NetJets Corporate Fleet / EASA CAT',
+    badges: ['RVSM', 'Altimetry', 'SLOP', 'Contingency'],
+    goldenRules: [
+      '4 equipos obligatorios: 2 Altímetros primarios + 1 AP + 1 Alerta Altitud + 1 Transponder.',
+      'Diferencia máxima entre altímetros primarios en vuelo: 200 ft.',
+      'SLOP: Desplazamiento estratégico siempre a la DERECHA del eje hasta 2 NM.'
+    ],
+    summary: 'Guía práctica para la operación en espacio RVSM (FL290 a FL410), tolerancias de comprobación en cabina, técnicas de mitigación de estela mediante SLOP y gestión ante fallos de sistemas.',
+    sections: [
+      {
+        title: '1. Comprobación Previa al Despegue y en Ascenso',
+        color: 'sky',
+        items: [
+          { role: 'STEP', action: 'En tierra con QNH local fijado:', details: 'Verificar ambos altímetros primarios contra elevación de campo (tolerancia máx. ±75 ft o ±50 ft según AFM).' },
+          { role: 'STEP', action: 'Al cruzar la Altitud de Transición (TA) en ascenso:', details: 'Fijar simultáneamente en ambos puestos Standard 1013.25 hPa (29.92 inHg). Comprobar crosscheck.' },
+          { role: 'STEP', action: 'Nivelación en crucero (FL290 a FL410):', details: 'Acoplar el Piloto Automático con modo Altitude Hold activado (mantenimiento ±65 ft).' }
+        ]
+      },
+      {
+        title: '2. Monitoreo Periódico en Crucero & SLOP',
+        color: 'emerald',
+        items: [
+          { role: 'PM', action: 'Cotejo de altímetros primarios a intervalos regulares (cada hora):', details: 'Diferencia máxima admisible entre altímetros primarios del Comandante y Copiloto: ≤ 200 ft.' },
+          { role: 'PF', action: 'Aplicación de SLOP (Strategic Lateral Offset Procedure):', details: 'Desplazar el guiado del FMS a la DERECHA del eje de ruta hasta 2 NM (en pasos de 0.1, 1.0 o 2.0 NM) para mitigar riesgo de estela y colisión. Nunca a la izquierda.' }
+        ]
+      },
+      {
+        title: '3. Procedimiento ante Fallo de Capacidad RVSM',
+        color: 'rose',
+        items: [
+          { role: 'ALERT', action: 'Disparadores de fallo:', details: 'Fallo de piloto automático, pérdida de un altímetro primario, fallo de alertador de altitud o discrepancia altimétrica > 200 ft.' },
+          { role: 'PF', action: 'Mantener nivel asignado manualmente con máxima atención; vigilar TCAS.' },
+          { role: 'PM', action: 'Notificar inmediatamente a la dependencia de control:', callout: '`[Callsign] UNABLE RVSM DUE TO EQUIPMENT`', details: 'ATC aumentará la separación vertical a 2.000 ft o autorizará el descenso por debajo de FL290.' }
+        ]
+      }
+    ]
+  },
+
+  // 17. PROTOCOLO CRM NETJETS: GESTIÓN DE PROPIETARIOS VIP Y LIDERAZGO
+  {
+    id: 'card-netjets-crm-owner-dilemma',
+    category: 'special',
+    title: 'Protocolo CRM NetJets: Gestión de Propietarios VIP y Liderazgo de Seguridad',
+    subtitle: 'Equilibrio entre servicio de excelencia, asertividad y autoridad indelegable del Comandante',
+    manualRef: 'EASA Part-CAT.GEN.MPA.100 / 105 • NetJets Pilot Core Values',
+    airplane: 'NetJets Corporate Fleet / Business Aviation',
+    badges: ['NetJets Interview', 'CRM', 'Owner Focus', 'Safety Leadership'],
+    goldenRules: [
+      'Seguridad no negociable: Ningún imperativo comercial vulnera los límites legales (AOM, FTL, MTOW, MEL).',
+      'Comunicación profesional y empática: Transmitir siempre que las decisiones protegen la vida del propietario.',
+      'Proactividad: No presentar solo un problema, involucrar a Dispatch para presentar soluciones alternativas.'
+    ],
+    summary: 'Modelo de resolución de conflictos operacionales y dilemas éticos evaluados en la entrevista personal de NetJets Europe (TMAAT - Tell Me About A Time), combinando liderazgo aeronáutico con vocación de servicio al cliente corporativo.',
+    sections: [
+      {
+        title: '1. Principio Fundamental de Mando en NetJets',
+        color: 'indigo',
+        items: [
+          { role: 'NOTE', action: 'La seguridad es el valor nuclear absoluto.', details: 'El Comandante ostenta la autoridad decisoria final (CAT.GEN.MPA.105) para garantizar la seguridad de la aeronave, los ocupantes y la operación.' },
+          { role: 'NOTE', action: 'Orientación al Cliente (Owner Mindset):', details: 'Tratar a los propietarios con máxima cortesía, transparencia, anticipación y empatía.' }
+        ]
+      },
+      {
+        title: '2. Escenario: Presión por Salir bajo Mínimos o con Límite de FTL',
+        color: 'amber',
+        items: [
+          { role: 'STEP', action: 'Paso 1 - Mantener la serenidad y la firmeza técnica:', details: 'No ceder ante presiones de tiempo, reuniones urgentes o comparaciones con otros operadores.' },
+          { role: 'STEP', action: 'Paso 2 - Explicación asertiva al propietario en persona:', details: 'Explicar de forma comprensible sin tecnicismos complejos: "Nuestra máxima prioridad es su seguridad absoluta. Las condiciones meteorológicas actuales están por debajo de los límites seguros certificados para operar. En cuanto mejoren o tengamos una ventana segura, despegaremos de inmediato".' },
+          { role: 'STEP', action: 'Paso 3 - Proactividad y Soluciones con Dispatch:', details: 'Contactar de inmediato con NetJets Operations Control / Dispatch para gestionar opciones: reposicionamiento de otro avión, desvío a aeropuerto cercano con mejor meteo o transporte VIP por tierra.' }
+        ]
+      },
+      {
+        title: '3. Escenario: Desacuerdo Técnico en Cabina (Cockpit Gradient)',
+        color: 'purple',
+        items: [
+          { role: 'STEP', action: 'Fomentar la comunicación abierta (Speak-Up Culture):', details: 'El Comandante debe invitar activamente al Copiloto a expresar cualquier duda o preocupación sobre la operación.' },
+          { role: 'STEP', action: 'Escalada asertiva ante desviaciones no corregidas (Pace Model):', details: 'Probe ("¿Confirmas la altitud?") -> Alert ("Estamos 10 kt por debajo de VREF") -> Challenge ("Comandante, senda un punto baja, corrige senda") -> Emergency ("GO AROUND OBLIGATORIO") -> Takeover ("I HAVE CONTROLS").' },
+          { role: 'ALERT', action: 'Aproximación No Estabilizada:', details: 'Si a 1.000 ft en IMC o 500 ft en VMC el avión no está perfectamente estabilizado, la frustrada es MANDATORIA.' }
+        ]
+      }
+    ]
   }
 ];
+

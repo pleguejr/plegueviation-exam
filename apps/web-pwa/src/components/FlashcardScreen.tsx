@@ -141,6 +141,11 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
       setActiveQuestionIds(tipicas);
       setDeckCustomTitle('Típicas de Comandante (100)');
       setSelectedCategory('custom_tipicas');
+    } else if (newCat === 'custom_alternates') {
+      const alts = questions.filter((q) => q.id.startsWith('CMD-ALT-') || q._subtopic === 'minimos-planificacion-y-alternativos').map((q) => q.id);
+      setActiveQuestionIds(alts);
+      setDeckCustomTitle('📋 Mínimos de Planificación & Alternativos (Tabla 1/1A)');
+      setSelectedCategory('custom_alternates');
     } else if (newCat === 'custom_official') {
       const official = questions.filter((q) => q.id.startsWith('CMD-EXAM26-')).map((q) => q.id);
       setActiveQuestionIds(official);
@@ -415,7 +420,7 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
             </div>
             <div>
               <h1 className="text-xl font-black text-white flex items-center gap-2 flex-wrap">
-                <span>{deckCustomTitle || (selectedCategory === 'custom_tipicas' ? '⭐ Típicas de Comandante' : selectedCategory === 'custom_official' ? '🎯 Examen Oficial 2026' : 'Modo Flashcards')}</span>
+                <span>{deckCustomTitle || (selectedCategory === 'custom_tipicas' ? '⭐ Típicas de Comandante' : selectedCategory === 'custom_alternates' ? '📋 Mínimos de Planificación & Alternativos' : selectedCategory === 'custom_official' ? '🎯 Examen Oficial 2026' : 'Modo Flashcards')}</span>
                 <span className="text-xs font-mono px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30 font-bold">
                   {totalCards} en cola {batchSize !== 'all' ? `(tanda de ${batchSize})` : ''}
                 </span>
@@ -441,6 +446,7 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
               className="px-3 py-2 rounded-xl bg-slate-900 border border-sky-500/30 text-xs font-bold text-sky-200 focus:outline-none focus:border-sky-400 max-w-[240px]"
             >
               <option value="custom_tipicas">⭐ Típicas Comandante (100)</option>
+              <option value="custom_alternates">📋 Mínimos Planif. & Alternativos (Tabla 1/1A) (30)</option>
               <option value="custom_official">🎯 Examen Oficial 2026 (25)</option>
               <option value="all">Todos los Bancos ({questions.length})</option>
               {manifest?.categories.map((cat) => (

@@ -12,7 +12,8 @@ import {
   ChevronUp,
   Copy,
   Check,
-  Scale
+  Scale,
+  Briefcase
 } from 'lucide-react';
 import { OPERATIONAL_TABLES, OperationalTable } from '../../data/operationalTablesData';
 
@@ -20,7 +21,7 @@ interface OperationalTablesScreenProps {
   onBackToDashboard: () => void;
 }
 
-type TableCategory = 'all' | 'alternates' | 'memory-items' | 'limitations' | 'mass-balance' | 'moa' | 'vfr';
+type TableCategory = 'all' | 'easa-netjets' | 'alternates' | 'memory-items' | 'limitations' | 'mass-balance' | 'moa' | 'vfr';
 
 function parseMemorySteps(raw: string): string[] {
   return raw
@@ -105,6 +106,7 @@ export const OperationalTablesScreen: React.FC<OperationalTablesScreenProps> = (
   const counts = useMemo(
     () => ({
       all: OPERATIONAL_TABLES.length,
+      easaNetjets: OPERATIONAL_TABLES.filter((t) => t.category === 'easa-netjets').length,
       alternates: OPERATIONAL_TABLES.filter((t) => t.category === 'alternates').length,
       memoryItems: OPERATIONAL_TABLES.filter((t) => t.category === 'memory-items').length,
       limitations: OPERATIONAL_TABLES.filter((t) => t.category === 'limitations').length,
@@ -117,6 +119,13 @@ export const OperationalTablesScreen: React.FC<OperationalTablesScreenProps> = (
 
   const getCategoryTheme = (cat: OperationalTable['category']) => {
     switch (cat) {
+      case 'easa-netjets':
+        return {
+          label: 'EASA Ops & NetJets Prep',
+          icon: <Briefcase className="w-3.5 h-3.5" />,
+          badgeClass: 'ops-tables-badge-alternates',
+          cardClass: 'ops-tables-card-alternates'
+        };
       case 'alternates':
         return {
           label: 'Planificación Alternativos',
@@ -164,6 +173,13 @@ export const OperationalTablesScreen: React.FC<OperationalTablesScreenProps> = (
 
   const tabs: Array<{ id: TableCategory; label: string; count: number; activeClass: string; icon?: React.ReactNode }> = [
     { id: 'all', label: 'Todas las Tablas', count: counts.all, activeClass: 'ops-tables-tab-active-all' },
+    {
+      id: 'easa-netjets',
+      label: 'NetJets & EASA Air Ops (Fuel, FTL, RVSM, Aircrew)',
+      count: counts.easaNetjets,
+      activeClass: 'ops-tables-tab-active-alternates',
+      icon: <Briefcase className="w-3.5 h-3.5" />
+    },
     {
       id: 'alternates',
       label: 'Alternativos (Básico & Variaciones)',

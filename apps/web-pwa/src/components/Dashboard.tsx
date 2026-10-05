@@ -129,9 +129,17 @@ export const Dashboard: React.FC<DashboardProps> = ({
   const commandCourseQuestions = useMemo(() => {
     return questions.filter(
       (q) =>
+        q.id.startsWith('CMD-') ||
         q._subtopic === 'command-course' ||
         q._subtopic === 'examen-convocatoria-anterior' ||
-        q._subtopic === 'examen-oficial'
+        q._subtopic === 'examen-oficial' ||
+        q._subtopic === 'minimos-planificacion-y-alternativos'
+    );
+  }, [questions]);
+
+  const alternatesQuestions = useMemo(() => {
+    return questions.filter(
+      (q) => q.id.startsWith('CMD-ALT-') || q._subtopic === 'minimos-planificacion-y-alternativos'
     );
   }, [questions]);
 
@@ -796,7 +804,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
         </div>
 
         {/* Quick Launch Buttons Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3 relative z-10 pt-1">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 relative z-10 pt-1">
           {/* 1. Test 25 Oficiales (En Inglés) */}
           <button
             type="button"
@@ -872,45 +880,71 @@ export const Dashboard: React.FC<DashboardProps> = ({
             </p>
           </button>
 
-          {/* 4. Banco Completo */}
+          {/* 4. Test Mínimos Planificación & Alternativos (30) */}
           <button
             type="button"
-            onClick={() => onStartConfiguredExam({ category: 'command-upgrade', subtopics: ['command-course', 'examen-convocatoria-anterior'], count: Math.min(commandCourseQuestions.length || 50, 60), mode: 'practice', strategy: 'random' })}
-            className="command-course-action command-course-action-sky p-3.5 rounded-2xl bg-sky-950/40 hover:bg-sky-900/50 border border-sky-500/40 hover:border-sky-400 text-left transition-all group flex flex-col justify-between shadow-md active:scale-95"
+            onClick={() => {
+              const altsIds = alternatesQuestions.map((q) => q.id);
+              if (onPracticeQuestions && altsIds.length > 0) {
+                onPracticeQuestions(altsIds);
+              } else {
+                onStartConfiguredExam({ category: 'command-upgrade', subtopics: ['minimos-planificacion-y-alternativos'], count: 30, mode: 'practice', strategy: 'random' });
+              }
+            }}
+            className="command-course-action command-course-action-cyan p-3.5 rounded-2xl bg-cyan-950/40 hover:bg-cyan-900/50 border border-cyan-500/40 hover:border-cyan-400 text-left transition-all group flex flex-col justify-between shadow-md active:scale-95"
           >
-            <div className="command-course-action-title flex items-center justify-between text-xs font-black text-sky-300 mb-1">
+            <div className="command-course-action-title flex items-center justify-between text-xs font-black text-cyan-300 mb-1">
               <span className="flex items-center gap-1.5">
-                <Sparkles className="w-4 h-4 text-sky-400" />
+                <Layers className="w-4 h-4 text-cyan-400" />
+                <span>Test Tabla 1/1A & Alternativos ({alternatesQuestions.length || 30})</span>
+              </span>
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+            </div>
+            <p className="command-course-action-desc text-[11px] text-slate-300">
+              Tabla 1/1A, selección 1 o 2 alternativos, AOM vs Planning y Take-off alternate.
+            </p>
+          </button>
+
+          {/* 5. Flashcards Tabla 1/1A & Alternativos (30) */}
+          <button
+            type="button"
+            onClick={() => {
+              const altsIds = alternatesQuestions.map((q) => q.id);
+              onStartFlashcards({
+                category: 'command-upgrade',
+                questionIds: altsIds.length > 0 ? altsIds : undefined,
+                title: 'Mínimos Planificación (Tabla 1/1A) & Alternativos (30)'
+              });
+            }}
+            className="command-course-action command-course-action-indigo p-3.5 rounded-2xl bg-indigo-950/40 hover:bg-indigo-900/50 border border-indigo-500/40 hover:border-indigo-400 text-left transition-all group flex flex-col justify-between shadow-md active:scale-95"
+          >
+            <div className="command-course-action-title flex items-center justify-between text-xs font-black text-indigo-300 mb-1">
+              <span className="flex items-center gap-1.5">
+                <Zap className="w-4 h-4 text-indigo-400 fill-current" />
+                <span>Flashcards Tabla 1/1A ({alternatesQuestions.length || 30})</span>
+              </span>
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+            </div>
+            <p className="command-course-action-desc text-[11px] text-slate-300">
+              Mazo de memorización rápida para incrementos de DA/MDA, RVR/VIS y reglas EASA.
+            </p>
+          </button>
+
+          {/* 6. Banco Completo */}
+          <button
+            type="button"
+            onClick={() => onStartConfiguredExam({ category: 'command-upgrade', subtopics: ['command-course', 'examen-convocatoria-anterior', 'minimos-planificacion-y-alternativos'], count: Math.min(commandCourseQuestions.length || 60, 60), mode: 'practice', strategy: 'random' })}
+            className="command-course-action command-course-action-emerald p-3.5 rounded-2xl bg-emerald-950/40 hover:bg-emerald-900/50 border border-emerald-500/40 hover:border-emerald-400 text-left transition-all group flex flex-col justify-between shadow-md active:scale-95"
+          >
+            <div className="command-course-action-title flex items-center justify-between text-xs font-black text-emerald-300 mb-1">
+              <span className="flex items-center gap-1.5">
+                <Sparkles className="w-4 h-4 text-emerald-400" />
                 <span>Banco Completo ({commandCourseQuestions.length})</span>
               </span>
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
             </div>
             <p className="command-course-action-desc text-[11px] text-slate-300">
-              Oficiales en inglés + Típicas Comandante + Satélites de profundización.
-            </p>
-          </button>
-
-          {/* 5. Explorar Reactivos */}
-          <button
-            type="button"
-            onClick={() => {
-              if (onOpenQuestionSearch) {
-                onOpenQuestionSearch('CMD-EXAM');
-              } else {
-                onNavigateTab('explorer');
-              }
-            }}
-            className="command-course-action command-course-action-emerald p-3.5 rounded-2xl bg-emerald-950/40 hover:bg-emerald-900/50 border border-emerald-500/40 hover:border-emerald-400 text-left transition-all group flex flex-col justify-between shadow-md active:scale-95"
-          >
-            <div className="command-course-action-title flex items-center justify-between text-xs font-black text-emerald-300 mb-1">
-              <span className="flex items-center gap-1.5">
-                <Search className="w-4 h-4 text-emerald-400" />
-                <span>Explorar Reactivos</span>
-              </span>
-              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
-            </div>
-            <p className="command-course-action-desc text-[11px] text-slate-300">
-              Buscar, filtrar explicaciones, referencias MOA/EASA y auditar opciones.
+              Oficiales en inglés + Típicas Comandante + Tabla 1/1A + Satélites de profundización.
             </p>
           </button>
         </div>
