@@ -1094,22 +1094,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Techo: DA/H + 100 ft | RVR: RVR + 300 m (sobre la DA/H y RVR más altos en uso)",
+        "text": "Techo: DA/H + 100 ft | RVR/VIS: RVR + 300 m",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Techo: DA/H + 150 ft | RVR: RVR + 450 m",
+        "text": "Techo: DA/H + 150 ft | RVR/VIS: RVR + 450 m",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Techo: DA/H + 200 ft | RVR: RVR + 800 m",
+        "text": "Techo: DA/H + 200 ft | RVR/VIS: RVR + 800 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Mínimos operacionales de CAT I puros sin ningún incremento",
+        "text": "Techo: DA/MDA + 400 ft | RVR/VIS: RVR/VIS + 1.500 m",
         "is_correct": false
       }
     ],
@@ -1137,17 +1137,17 @@
       },
       {
         "id": "B",
-        "text": "Techo: DA/MDA + 200 ft | RVR/VIS: RVR/VIS + 1.000 m (requiere dos o más Tipo A en distintas ayudas)",
+        "text": "Techo: DA/MDA + 200 ft | RVR/VIS: RVR/VIS + 1.000 m",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Techo: DA/H + 200 ft | RVR/VIS: RVR/VIS + 800 m (solo aplicable a 3D Tipo A con mínimos <= 200 ft)",
+        "text": "Techo: DA/H + 200 ft | RVR/VIS: RVR/VIS + 800 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Techo: MDA/H + 100 ft | RVR/VIS: RVR/VIS + 300 m",
+        "text": "Techo: DA/H + 150 ft | RVR/VIS: RVR + 450 m",
         "is_correct": false
       }
     ],
@@ -1170,22 +1170,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Las condiciones meteorológicas deben estar en o por encima de los MÍNIMOS DE ATERRIZAJE APLICABLES (Mínimos de Operación del aeródromo: RVR/VIS y techo >= MDH para Tipo A o Circling) publicados en las cartas de aproximación",
+        "text": "Mínimos de OPERACIÓN (mínimos de aterrizaje aplicables) durante el periodo ETA ± 1 hora",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Deben cumplir obligatoriamente los incrementos de mínimos de planificación de la Tabla 1A o Tabla 1B",
+        "text": "Mínimos de PLANIFICACIÓN (con incrementos de Tabla 1A o 1B) durante el periodo ETA ± 1 hora",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Basta con que la pista de salida tenga viento en calma sin importar las condiciones del alternativo",
+        "text": "Mínimos de OPERACIÓN únicamente en el instante exacto del despegue desde origen",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Se aplican exclusivamente los mínimos de despegue LVTO del aeródromo de origen",
+        "text": "Mínimos de despegue LVTO del aeródromo de salida durante la ventana del vuelo",
         "is_correct": false
       }
     ],
@@ -1689,7 +1689,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Vuelo de corta duración con 2 pistas separadas en destino, y meteo prevista desde 1h antes hasta 1h después con techo $\\ge 2.000\text{ ft}$ (o MDA + 500 ft) y visibilidad $\\ge 5.000\text{ m}$",
+        "text": "Vuelo de corta duración con 2 pistas separadas en destino, y meteo prevista desde 1h antes hasta 1h después con techo $≥ 2.000\text{ ft}$ (o MDA + 500 ft) y visibilidad $≥ 5.000\text{ m}$",
         "is_correct": true
       },
       {
@@ -1709,7 +1709,7 @@
       }
     ],
     "explanation": {
-      "text": "La operación **No Alternate** requiere: duración < 6 h, **2 pistas independientes/separadas**, y condiciones excelentes ($\\ge 2.000\text{ ft}$ techo o MDA+500 ft, visibilidad $\\ge 5.000\text{ m}$) en la ventana $\\pm 1\text{ h}$ (CAT.OP.MPA.180 / MOA 8.1.7.2).",
+      "text": "La operación **No Alternate** requiere: duración < 6 h, **2 pistas independientes/separadas**, y condiciones excelentes ($≥ 2.000\text{ ft}$ techo o MDA+500 ft, visibilidad $≥ 5.000\text{ m}$) en la ventana $± 1\text{ h}$ (CAT.OP.MPA.180 / MOA 8.1.7.2).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
       ]

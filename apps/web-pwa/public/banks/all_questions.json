@@ -3546,7 +3546,7 @@
       }
     ],
     "explanation": {
-      "text": "La categoría RFFS (Rescue and Fire Fighting Services) de un avión se determina por su longitud total y la anchura máxima de su fuselaje según OACI Anexo 14 y MOA 8.1.2.2:\n- **Embraer 195-E2**: Longitud total = **41,51 m**; Anchura de fuselaje = **3,01 m**.\n- El rango de 39 m a 49 m con anchura $\\le 3,51\\text{ m}$ corresponde a **Categoría RFFS 7**.",
+      "text": "La categoría RFFS (Rescue and Fire Fighting Services) de un avión se determina por su longitud total y la anchura máxima de su fuselaje según OACI Anexo 14 y MOA 8.1.2.2:\n- **Embraer 195-E2**: Longitud total = **41,51 m**; Anchura de fuselaje = **3,01 m**.\n- El rango de 39 m a 49 m con anchura $≤ 3,51\\text{ m}$ corresponde a **Categoría RFFS 7**.",
       "references": [
         "MOA Binter ED06 RN27 - Subcapítulo 8.1.2.2: Requisitos de Salvamento y Extinción de Incendios (RFFS)",
         "MOB Binter E195-E2 - Dimensiones Generales de la Aeronave",
@@ -3707,7 +3707,7 @@
       }
     ],
     "explanation": {
-      "text": "De acuerdo con la clasificación oficial de aproximaciones por instrumentos (EASA Part-CAT y MOA 8.1.3 pág. 347):\n- **Tipo B**: Operaciones con $\\text{DH} < 250\\text{ ft}$ ($200\\text{ ft} \\le \\text{DH} < 250\\text{ ft}$ para CAT I).\n- **Tipo A**: Operaciones con $\\text{MDH/DH} \\ge 250\\text{ ft}$. Al tener este ILS una $\\text{DA/H} = 300\\text{ ft}$ ($\\ge 250\\text{ ft}$), se clasifica como una **Operación de aproximación 3D por instrumentos tipo A, asociada a una ayuda con mínimos de 200 ft o menos**.\n\nConsultando la **Tabla 1A (MOA 8.1.7.2.5 pág. 388 - Plan Básico con Variaciones)** para esta fila:\n- Incremento de Techo: **DA/H + 200 ft** $\\longrightarrow 300\\text{ ft} + 200\\text{ ft} = \\mathbf{500\\text{ ft}}$.\n- Incremento de Visibilidad/RVR: **RVR/VIS + 800 m** $\\longrightarrow 800\\text{ m} + 800\\text{ m} = \\mathbf{1.600\\text{ m}}$.",
+      "text": "De acuerdo con la clasificación oficial de aproximaciones por instrumentos (EASA Part-CAT y MOA 8.1.3 pág. 347):\n- **Tipo B**: Operaciones con $\\text{DH} < 250\\text{ ft}$ ($200\\text{ ft} ≤ \\text{DH} < 250\\text{ ft}$ para CAT I).\n- **Tipo A**: Operaciones con $\\text{MDH/DH} ≥ 250\\text{ ft}$. Al tener este ILS una $\\text{DA/H} = 300\\text{ ft}$ ($≥ 250\\text{ ft}$), se clasifica como una **Operación de aproximación 3D por instrumentos tipo A, asociada a una ayuda con mínimos de 200 ft o menos**.\n\nConsultando la **Tabla 1A (MOA 8.1.7.2.5 pág. 388 - Plan Básico con Variaciones)** para esta fila:\n- Incremento de Techo: **DA/H + 200 ft** $\\longrightarrow 300\\text{ ft} + 200\\text{ ft} = \\mathbf{500\\text{ ft}}$.\n- Incremento de Visibilidad/RVR: **RVR/VIS + 800 m** $\\longrightarrow 800\\text{ m} + 800\\text{ m} = \\mathbf{1.600\\text{ m}}$.",
       "references": [
         "MOA Binter ED06 RN27 - Subcapítulo 8.1.3 (pág. 347): Clasificación Operaciones Tipo A y Tipo B",
         "MOA Binter ED06 RN27 - Subcapítulo 8.1.7.2.5 (pág. 388): Tabla 1A - Plan Básico con Variaciones"
@@ -3867,7 +3867,7 @@
       }
     ],
     "explanation": {
-      "text": "En el MOA 8.1.8 y 8.1.10 se estipulan las tolerancias de concordancia entre el OFP y la hoja de carga final:\n- Tolerancia de combustible: típicamente $\\pm 500\\text{ kg}$ (400 kg adicionales están dentro del margen permitido).\n- Tolerancia de peso en rampa / TOW: máximo **$\\pm 1.000\\text{ kg}$**.\n- Al existir una desviación de **1.100 kg** en el peso de rampa, se supera la tolerancia máxima permitida, siendo obligatorio solicitar un **nuevo plan de vuelo operacional** recalculado.",
+      "text": "En el MOA 8.1.8 y 8.1.10 se estipulan las tolerancias de concordancia entre el OFP y la hoja de carga final:\n- Tolerancia de combustible: típicamente $± 500\\text{ kg}$ (400 kg adicionales están dentro del margen permitido).\n- Tolerancia de peso en rampa / TOW: máximo **$± 1.000\\text{ kg}$**.\n- Al existir una desviación de **1.100 kg** en el peso de rampa, se supera la tolerancia máxima permitida, siendo obligatorio solicitar un **nuevo plan de vuelo operacional** recalculado.",
       "references": [
         "MOA Binter ED06 RN27 - Subcapítulo 8.1.8: Masa y Centrado - Tolerancias Operativas",
         "MOA Binter ED06 RN27 - Subcapítulo 8.1.10: Plan de Vuelo Operacional (OFP)"
@@ -4653,22 +4653,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Tienen que estar en o por encima de los MÍNIMOS DE OPERACIÓN (mínimos de aterrizaje aplicables) durante el periodo de 1 hora antes a 1 hora después de la ETA (ETA ± 1h)",
+        "text": "Mínimos de OPERACIÓN (mínimos de aterrizaje aplicables) durante el periodo ETA ± 1 hora",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Tienen que cumplir obligatoriamente los mínimos de planificación incrementados de la Tabla 1A o Tabla 1B",
+        "text": "Mínimos de PLANIFICACIÓN (con incrementos de Tabla 1A o 1B) durante el periodo ETA ± 1 hora",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Tienen que estar por encima de los mínimos de operación aplicables más 200 metros y 100 ft sobre DA/MDA",
+        "text": "Mínimos de OPERACIÓN aplicables únicamente en el instante exacto de la salida",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Basta con que el aeródromo disponga de aproximación CAT I aunque esté bajo mínimos meteorológicos",
+        "text": "Condiciones VMC obligatorias en el alternativo durante la ventana de salida",
         "is_correct": false
       }
     ],
@@ -6299,22 +6299,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Techo: DA/MDA + 200 ft | Visibilidad/RVR: RVR/VIS + 1.000 m (sobre los valores más altos de DA/MDA y RVR/VIS en uso)",
+        "text": "Techo: DA/MDA + 200 ft | Visibilidad/RVR: RVR/VIS + 1.000 m",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Techo: DA/MDA + 400 ft | Visibilidad/RVR: RVR/VIS + 1.500 m (mínimos exigidos para una sola aproximación Tipo A o bajo el Plan Básico Tabla 1B)",
+        "text": "Techo: DA/MDA + 400 ft | Visibilidad/RVR: RVR/VIS + 1.500 m",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Techo: DA/H + 150 ft | RVR: RVR + 450 m (mínimos para una aproximación Tipo B)",
+        "text": "Techo: DA/H + 150 ft | Visibilidad/RVR: RVR + 450 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Techo: MDA/H + 400 ft | Visibilidad: VIS + 1.500 m (mínimos para aproximaciones en circuito / Circling)",
+        "text": "Techo: MDA/H + 400 ft | Visibilidad/RVR: VIS + 1.500 m",
         "is_correct": false
       }
     ],
@@ -6339,22 +6339,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Techo: MDA/H + 400 ft | Visibilidad: VIS + 1.500 m (sobre los mínimos de Circling del aeródromo)",
+        "text": "Techo: MDA/H + 400 ft | Visibilidad: VIS + 1.500 m",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Techo: MDA/H + 200 ft | Visibilidad: VIS + 1.000 m (sobre los mínimos de Circling del aeródromo)",
+        "text": "Techo: MDA/H + 200 ft | Visibilidad: VIS + 1.000 m",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Techo: DA/H + 150 ft | Visibilidad: RVR/VIS + 450 m",
+        "text": "Techo: DA/H + 150 ft | Visibilidad: RVR + 450 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Mínimos operacionales de Circling puros sin incremento de planificación",
+        "text": "Techo: DA/H + 200 ft | Visibilidad: RVR/VIS + 800 m",
         "is_correct": false
       }
     ],
@@ -7144,12 +7144,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Techo: DA/H + 150 ft | RVR: RVR + 450 m (requiriendo en el ejemplo un techo de 350 ft y RVR de 1.000 m)",
+        "text": "Techo: DA/H + 150 ft | RVR/VIS: RVR + 450 m",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Techo: DA/H + 100 ft | RVR: RVR + 300 m (requiriendo en el ejemplo un techo de 300 ft y RVR de 850 m)",
+        "text": "Techo: DA/H + 100 ft | RVR/VIS: RVR + 300 m",
         "is_correct": false
       },
       {
@@ -7159,7 +7159,7 @@
       },
       {
         "id": "D",
-        "text": "Mínimos operacionales de CAT I puros (DH 200 ft y RVR 550 m) sin incremento alguno",
+        "text": "Techo: DA/MDA + 400 ft | RVR/VIS: RVR/VIS + 1.500 m",
         "is_correct": false
       }
     ],
@@ -9612,7 +9612,7 @@
       }
     ],
     "explanation": {
-      "text": "Conforme a SERA.5010 (VFR Especial en CTR) y MOA 8.1.3.1:\nPara autorizaciones de VFR Especial en CTR:\n1. Visibilidad en tierra $\\ge 1.500\\text{ m}$.\n2. Techo de nubes $\\ge 600\\text{ ft}$ (180 m).\n3. La aeronave debe permanecer libre de nubes y con la superficie a la vista en todo momento.\n4. Velocidad máxima adaptada (generalmente $\\le 140\\text{ kt}$).",
+      "text": "Conforme a SERA.5010 (VFR Especial en CTR) y MOA 8.1.3.1:\nPara autorizaciones de VFR Especial en CTR:\n1. Visibilidad en tierra $≥ 1.500\\text{ m}$.\n2. Techo de nubes $≥ 600\\text{ ft}$ (180 m).\n3. La aeronave debe permanecer libre de nubes y con la superficie a la vista en todo momento.\n4. Velocidad máxima adaptada (generalmente $≤ 140\\text{ kt}$).",
       "references": [
         "Reglamento de Ejecución (UE) Nº 923/2012 (SERA) - SERA.5010: Special VFR in control zones",
         "MOA Binter ED06 RN27 - Subcapítulo 8.1.3.1: Reglas de Vuelo Visual (VFR)"
@@ -10773,7 +10773,7 @@
       }
     ],
     "explanation": {
-      "text": "Conforme a SERA.5010 y MOA 8.1.3.1:\nPara operaciones de VFR Especial en CTR se prescribe una velocidad máxima que no exceda de **140 kt IAS** para asegurar un radio de viraje reducido manteniendo libre de nubes y con la superficie a la vista con visibilidad $\\ge 1.500\\text{ m}$.",
+      "text": "Conforme a SERA.5010 y MOA 8.1.3.1:\nPara operaciones de VFR Especial en CTR se prescribe una velocidad máxima que no exceda de **140 kt IAS** para asegurar un radio de viraje reducido manteniendo libre de nubes y con la superficie a la vista con visibilidad $≥ 1.500\\text{ m}$.",
       "references": [
         "MOA Binter ED06 RN27 - Subcapítulo 8.1.3.1: Reglas de Vuelo Visual (VFR)",
         "Reglamento SERA.5010"
@@ -16360,7 +16360,7 @@
       }
     ],
     "explanation": {
-      "text": "Tabla oficial de las 9 Clases de Mercancías Peligrosas (OACI Doc 9284 / IATA DGR / MOA 9.1.2):\n\n### 📊 Clasificación Oficial de Mercancías Peligrosas\n| Clase | Denominación Oficial |\n| :--- | :--- |\n| **Clase 1** | **Explosivos** (Divisiones 1.1 a 1.6) |\n| **Clase 2** | **Gases** (2.1 Inflamables, 2.2 No inflamables/no tóxicos, 2.3 Tóxicos) |\n| **Clase 3** | **Líquidos Inflamables** (Flash point $\\le 60^\\circ\text{C}$) |\n| **Clase 4** | **Sólidos Inflamables** (4.1 Sólidos, 4.2 Combustión espontánea, 4.3 Hidroreactivos) |\n| **Clase 5** | **Sustancias Comburentes (5.1) y Peróxidos Orgánicos (5.2)** |\n| **Clase 6** | **Sustancias Tóxicas (6.1) y Sustancias Infecciosas (6.2)** |\n| **Clase 7** | **Material Radiactivo** (Categorías I, II y III) |\n| **Clase 8** | **Sustancias Corrosivas** |\n| **Clase 9** | **Mercancías Peligrosas Diversas** (Baterías de Litio, Hielo Seco, etc.) |",
+      "text": "Tabla oficial de las 9 Clases de Mercancías Peligrosas (OACI Doc 9284 / IATA DGR / MOA 9.1.2):\n\n### 📊 Clasificación Oficial de Mercancías Peligrosas\n| Clase | Denominación Oficial |\n| :--- | :--- |\n| **Clase 1** | **Explosivos** (Divisiones 1.1 a 1.6) |\n| **Clase 2** | **Gases** (2.1 Inflamables, 2.2 No inflamables/no tóxicos, 2.3 Tóxicos) |\n| **Clase 3** | **Líquidos Inflamables** (Flash point $≤ 60^\\circ\text{C}$) |\n| **Clase 4** | **Sólidos Inflamables** (4.1 Sólidos, 4.2 Combustión espontánea, 4.3 Hidroreactivos) |\n| **Clase 5** | **Sustancias Comburentes (5.1) y Peróxidos Orgánicos (5.2)** |\n| **Clase 6** | **Sustancias Tóxicas (6.1) y Sustancias Infecciosas (6.2)** |\n| **Clase 7** | **Material Radiactivo** (Categorías I, II y III) |\n| **Clase 8** | **Sustancias Corrosivas** |\n| **Clase 9** | **Mercancías Peligrosas Diversas** (Baterías de Litio, Hielo Seco, etc.) |",
       "references": [
         "Binter Canarias MOA - Capítulo 9: Mercancías Peligrosas y Armas"
       ]
@@ -16808,7 +16808,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Líquidos que desprenden vapores inflamables a temperaturas iguales o inferiores a **60°C en ensayo de copa cerrada (Flash Point $\\le 60^\\circ\text{C}$)**",
+        "text": "Líquidos que desprenden vapores inflamables a temperaturas iguales o inferiores a **60°C en ensayo de copa cerrada (Flash Point $≤ 60^\\circ\text{C}$)**",
         "is_correct": true
       },
       {
@@ -16828,7 +16828,7 @@
       }
     ],
     "explanation": {
-      "text": "La definición técnica de la **Clase 3 (Líquidos Inflamables)** abarca sustancias líquidas con un **punto de inflamación (*Flash Point*) $\\le 60^\\circ\text{C}$ (o $65.6^\\circ\text{C}$ en ensayo abierto)** (ICAO Doc 9284 / MOA 9.1.2).",
+      "text": "La definición técnica de la **Clase 3 (Líquidos Inflamables)** abarca sustancias líquidas con un **punto de inflamación (*Flash Point*) $≤ 60^\\circ\text{C}$ (o $65.6^\\circ\text{C}$ en ensayo abierto)** (ICAO Doc 9284 / MOA 9.1.2).",
       "references": [
         "Binter Canarias MOA - Capítulo 9: Mercancías Peligrosas y Armas"
       ]
@@ -17588,7 +17588,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Previa autorización de la compañía (MEDIF), cilindro homologado con peso bruto $\\le 5\text{ kg}$, válvula y regulador protegidos contra daños mecánicos accidentales",
+        "text": "Previa autorización de la compañía (MEDIF), cilindro homologado con peso bruto $≤ 5\text{ kg}$, válvula y regulador protegidos contra daños mecánicos accidentales",
         "is_correct": true
       },
       {
@@ -17647,7 +17647,7 @@
       }
     ],
     "explanation": {
-      "text": "El régimen de **Cantidades Exceptuadas (EQ / ICAO Doc 9284)** aplica a volúmenes mínimos (ej. viales de laboratorio de $\\le 30\text{ mL}$) con marca 'E' en rombo, eximiendo de NOTOC bajo embalajes a prueba de impacto (MOA 9.1.2).",
+      "text": "El régimen de **Cantidades Exceptuadas (EQ / ICAO Doc 9284)** aplica a volúmenes mínimos (ej. viales de laboratorio de $≤ 30\text{ mL}$) con marca 'E' en rombo, eximiendo de NOTOC bajo embalajes a prueba de impacto (MOA 9.1.2).",
       "references": [
         "Binter Canarias MOA - Capítulo 9: Mercancías Peligrosas y Armas"
       ]
@@ -18526,22 +18526,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Techo: DA/H + 100 ft | RVR: RVR + 300 m (aplicados sobre los valores más altos de DA/H y RVR en uso)",
+        "text": "Techo: DA/H + 100 ft | RVR/VIS: RVR + 300 m",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Techo: DA/H + 150 ft | RVR: RVR + 450 m",
+        "text": "Techo: DA/H + 150 ft | RVR/VIS: RVR + 450 m",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Techo: DA/H + 200 ft | RVR: RVR + 800 m",
+        "text": "Techo: DA/H + 200 ft | RVR/VIS: RVR + 800 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Techo: DA/H + 50 ft | RVR: RVR + 150 m",
+        "text": "Techo: DA/H + 400 ft | RVR/VIS: RVR + 1.500 m",
         "is_correct": false
       }
     ],
@@ -18566,22 +18566,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Techo: DA/H + 150 ft | RVR: RVR + 450 m",
+        "text": "Techo: DA/H + 150 ft | RVR/VIS: RVR + 450 m",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Techo: DA/H + 100 ft | RVR: RVR + 300 m",
+        "text": "Techo: DA/H + 100 ft | RVR/VIS: RVR + 300 m",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Techo: DA/H + 200 ft | RVR: RVR + 800 m",
+        "text": "Techo: DA/H + 200 ft | RVR/VIS: RVR + 800 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Techo: DA/H + 400 ft | RVR: RVR + 1.500 m",
+        "text": "Techo: DA/H + 400 ft | RVR/VIS: RVR + 1.500 m",
         "is_correct": false
       }
     ],
@@ -18606,27 +18606,27 @@
     "options": [
       {
         "id": "A",
-        "text": "Operación de aproximación 3D por instrumentos tipo A, asociada a una ayuda con mínimos de 200 ft o menos: Techo DA/H + 200 ft y RVR/VIS + 800 m",
+        "text": "3D Tipo A (ayuda <= 200 ft): Techo DA/H + 200 ft | RVR/VIS + 800 m",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Operación tipo B estándar: Techo DA/H + 150 ft y RVR + 450 m",
+        "text": "Tipo B estándar: Techo DA/H + 150 ft | RVR/VIS + 450 m",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Operación 2D tipo A: Techo MDA/H + 400 ft y RVR/VIS + 1.500 m",
+        "text": "2D Tipo A estándar: Techo MDA/H + 400 ft | RVR/VIS + 1.500 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Aproximación en circuito: Techo MDA/H + 400 ft y VIS + 1.500 m",
+        "text": "Aproximación en circuito: Techo MDA/H + 400 ft | VIS + 1.500 m",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "De acuerdo con el MOA 8.1.3 y la Tabla 1A del MOA 8.1.7.2.5:\n- Las aproximaciones Tipo B tienen $\\text{DH} < 250\\text{ ft}$. Si la DA/H es de $300\\text{ ft}$ ($\\ge 250\\text{ ft}$), pasa a ser una **aproximación Tipo A**.\n- Al estar basada en un ILS (ayuda de precisión cuyos mínimos base de diseño son $\\le 200\\text{ ft}$), se encuadra en la fila: **'Operación de aproximación 3D por instrumentos tipo A, asociada a una ayuda con mínimos de 200 ft o menos'**.\n- Incrementos requeridos: **DA/H + 200 ft** y **RVR/VIS + 800 m**.",
+      "text": "De acuerdo con el MOA 8.1.3 y la Tabla 1A del MOA 8.1.7.2.5:\n- Las aproximaciones Tipo B tienen $\\text{DH} < 250\\text{ ft}$. Si la DA/H es de $300\\text{ ft}$ ($≥ 250\\text{ ft}$), pasa a ser una **aproximación Tipo A**.\n- Al estar basada en un ILS (ayuda de precisión cuyos mínimos base de diseño son $≤ 200\\text{ ft}$), se encuadra en la fila: **'Operación de aproximación 3D por instrumentos tipo A, asociada a una ayuda con mínimos de 200 ft o menos'**.\n- Incrementos requeridos: **DA/H + 200 ft** y **RVR/VIS + 800 m**.",
       "references": [
         "MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 Tabla 1A",
         "Examen Oficial Convocatoria Anterior Q10"
@@ -18647,22 +18647,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Techo: DA/H o MDA/H + 200 ft | RVR/VIS: RVR/VIS + 1.000 m (sobre los valores más altos de DA/MDA y RVR/VIS)",
+        "text": "Techo: DA/MDA + 200 ft | RVR/VIS: RVR/VIS + 1.000 m",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Techo: DA/H o MDA/H + 400 ft | RVR/VIS: RVR/VIS + 1.500 m",
+        "text": "Techo: DA/MDA + 400 ft | RVR/VIS: RVR/VIS + 1.500 m",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Techo: DA/H + 150 ft | RVR: RVR + 450 m",
+        "text": "Techo: DA/H + 150 ft | RVR/VIS: RVR + 450 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Techo: DA/H o MDA/H + 100 ft | RVR/VIS: RVR/VIS + 500 m",
+        "text": "Techo: DA/MDA + 100 ft | RVR/VIS: RVR/VIS + 500 m",
         "is_correct": false
       }
     ],
@@ -18687,22 +18687,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Techo: DA/H o MDA/H + 400 ft | RVR/VIS: RVR/VIS + 1.500 m",
+        "text": "Techo: DA/MDA + 400 ft | RVR/VIS: RVR/VIS + 1.500 m",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Techo: DA/H o MDA/H + 200 ft | RVR/VIS: RVR/VIS + 1.000 m",
+        "text": "Techo: DA/MDA + 200 ft | RVR/VIS: RVR/VIS + 1.000 m",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Techo: DA/H o MDA/H + 300 ft | RVR/VIS: RVR/VIS + 800 m",
+        "text": "Techo: DA/H + 200 ft | RVR/VIS: RVR/VIS + 800 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Techo: DA/H o MDA/H + 500 ft | RVR/VIS: RVR/VIS + 2.000 m",
+        "text": "Techo: DA/H + 150 ft | RVR/VIS: RVR + 450 m",
         "is_correct": false
       }
     ],
@@ -18727,7 +18727,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Techo: MDA/H + 400 ft | Visibilidad: VIS + 1.500 m (sobre los mínimos de Circling del aeródromo)",
+        "text": "Techo: MDA/H + 400 ft | Visibilidad: VIS + 1.500 m",
         "is_correct": true
       },
       {
@@ -18742,7 +18742,7 @@
       },
       {
         "id": "D",
-        "text": "Mismos mínimos operacionales de circling sin ningún incremento de planificación",
+        "text": "Techo: MDA/H + 100 ft | Visibilidad: VIS + 500 m",
         "is_correct": false
       }
     ],
@@ -18768,22 +18768,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Se puede seleccionar la fila con los mínimos de planificación más ventajosos, calculando sobre la CAT III (0 + 150 ft / 75 + 450 m = 150 ft / 525 m) en lugar de la CAT I",
+        "text": "Se calculan sobre la fila más ventajosa (CAT III: Techo 150 ft / RVR 525 m)",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Es obligatorio calcular siempre sobre los mínimos de CAT I al no estar autorizada la CAT III en aeródromos alternativos",
+        "text": "Se calculan obligatoriamente sobre CAT I (Techo 350 ft / RVR 1.000 m)",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Se deben promediar los mínimos de la CAT III y la CAT I sumando 200 ft y 800 m",
+        "text": "Se promedian los valores de CAT III y CAT I (Techo 200 ft / RVR 700 m)",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Debe tomarse obligatoriamente la aproximación con el RVR operacional más restrictivo",
+        "text": "Se aplican los mínimos operacionales más restrictivos (Techo 400 ft / RVR 1.500 m)",
         "is_correct": false
       }
     ],
@@ -18813,17 +18813,17 @@
       },
       {
         "id": "B",
-        "text": "Techo: DA/H + 150 ft | RVR/VIS: RVR/VIS + 450 m",
+        "text": "Techo: DA/H + 150 ft | RVR/VIS: RVR + 450 m",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Techo: DA/H + 100 ft | RVR/VIS: RVR/VIS + 300 m",
+        "text": "Techo: DA/H + 100 ft | RVR/VIS: RVR + 300 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Techo: DA/H + 300 ft | RVR/VIS: RVR/VIS + 1.000 m",
+        "text": "Techo: DA/MDA + 400 ft | RVR/VIS: RVR/VIS + 1.500 m",
         "is_correct": false
       }
     ],
@@ -18848,22 +18848,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Base del techo: DA/H o MDA/H + 400 ft | RVR/VIS: RVR/VIS + 1.500 m",
+        "text": "Techo: DA/MDA + 400 ft | RVR/VIS: RVR/VIS + 1.500 m",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Base del techo: DA/H o MDA/H + 200 ft | RVR/VIS: RVR/VIS + 800 m",
+        "text": "Techo: DA/MDA + 200 ft | RVR/VIS: RVR/VIS + 1.000 m",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Base del techo: DA/H o MDA/H + 200 ft | RVR/VIS: RVR/VIS + 1.000 m",
+        "text": "Techo: DA/H + 200 ft | RVR/VIS: RVR/VIS + 800 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Base del techo: DA/H o MDA/H + 300 ft | RVR/VIS: RVR/VIS + 1.200 m",
+        "text": "Techo: DA/H + 150 ft | RVR/VIS: RVR + 450 m",
         "is_correct": false
       }
     ],
@@ -18970,22 +18970,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Debe encontrarse en o por encima de los MÍNIMOS DE OPERACIÓN (mínimos de aterrizaje aplicables: RVR/VIS y techo >= MDH para Tipo A o Circling) desde 1 hora antes hasta 1 hora después de la hora estimada de llegada (ETA ± 1 HR)",
+        "text": "Mínimos de OPERACIÓN (mínimos de aterrizaje aplicables) durante el periodo ETA ± 1 hora",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Debe cumplir obligatoriamente los mínimos de planificación incrementados de la Tabla 1A o Tabla 1B",
+        "text": "Mínimos de PLANIFICACIÓN (con incrementos de Tabla 1A o 1B) durante el periodo ETA ± 1 hora",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Basta con que cumpla los mínimos de operación exactamente en el instante de la suelta de frenos para el despegue",
+        "text": "Mínimos de OPERACIÓN únicamente en el instante exacto de la suelta de frenos para despegue",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Debe encontrarse en condiciones VMC absolutas (techo > 3.000 ft y visibilidad > 8 km)",
+        "text": "Condiciones VMC obligatorias (techo >= 3.000 ft y visibilidad >= 8 km) durante el despegue",
         "is_correct": false
       }
     ],
@@ -19031,7 +19031,7 @@
       }
     ],
     "explanation": {
-      "text": "Conforme al **MOA 8.1.2.2** y **CAT.OP.MPA.181(b)**, no se requiere alternativo de destino si:\n1. La duración del vuelo planificado desde el despegue hasta el aterrizaje no supera las **6 horas**;\n2. Existen **dos pistas utilizables y separadas** en el destino;\n3. Los informes o pronósticos indican que desde **1h antes hasta 1h después de la ETA (ETA ± 1 HR)** el techo será $\\ge 2.000\\text{ ft}$ (o la altura de circuito $+ 500\\text{ ft}$, la que sea mayor) y la visibilidad $\\ge 5\\text{ km}$.\n*O bien si el destino está clasificado como aeródromo aislado (Isolated aerodrome)*.",
+      "text": "Conforme al **MOA 8.1.2.2** y **CAT.OP.MPA.181(b)**, no se requiere alternativo de destino si:\n1. La duración del vuelo planificado desde el despegue hasta el aterrizaje no supera las **6 horas**;\n2. Existen **dos pistas utilizables y separadas** en el destino;\n3. Los informes o pronósticos indican que desde **1h antes hasta 1h después de la ETA (ETA ± 1 HR)** el techo será $≥ 2.000\\text{ ft}$ (o la altura de circuito $+ 500\\text{ ft}$, la que sea mayor) y la visibilidad $≥ 5\\text{ km}$.\n*O bien si el destino está clasificado como aeródromo aislado (Isolated aerodrome)*.",
       "references": [
         "MOA Binter ED06 RN27, Capítulo 8.1.2.2",
         "CAT.OP.MPA.181(b)"
@@ -19093,22 +19093,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Destino y Alternativo de Despegue: Mínimos de OPERACIÓN (mínimos de aterrizaje aplicables) | Alternativos de Destino y en Ruta (ERA / Fuel ERA): Mínimos de PLANIFICACIÓN (Tabla 1A/1B)",
+        "text": "Destino y Alt. Despegue: Mínimos de OPERACIÓN | Alternativos Destino y ERA: Mínimos de PLANIFICACIÓN",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Todos los aeródromos (destino y todos los alternativos de despegue, ruta y destino) deben cumplir obligatoriamente los mínimos de PLANIFICACIÓN",
+        "text": "Destino y todos los Alternativos (Despegue, ERA, Destino): Mínimos de PLANIFICACIÓN obligatorios",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Destino: Mínimos de PLANIFICACIÓN | Todos los alternativos: Mínimos de OPERACIÓN",
+        "text": "Destino: Mínimos de PLANIFICACIÓN | Todos los Alternativos (Despegue, ERA, Destino): Mínimos de OPERACIÓN",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Todos los aeródromos deben cumplir únicamente los mínimos de OPERACIÓN sin ninguna tabla de planificación",
+        "text": "Destino y todos los Alternativos (Despegue, ERA, Destino): Mínimos de OPERACIÓN sin incrementos",
         "is_correct": false
       }
     ],
@@ -19499,27 +19499,27 @@
     "options": [
       {
         "id": "A",
-        "text": "Tipo A: DH o MDH igual o superior a 250 ft (MDH/DH >= 250 ft) | Tipo B: DH inferior a 250 ft (DH < 250 ft)",
+        "text": "Tipo A: MDH/DH >= 250 ft | Tipo B: DH < 250 ft",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Tipo A: Aproximaciones de precisión | Tipo B: Aproximaciones de no precisión",
+        "text": "Tipo A: MDH/DH >= 200 ft | Tipo B: DH < 200 ft",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Tipo A: Aproximaciones visuales | Tipo B: Aproximaciones por instrumentos",
+        "text": "Tipo A: Aproximaciones 2D | Tipo B: Aproximaciones 3D",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Tipo A: DH < 200 ft | Tipo B: DH >= 200 ft",
+        "text": "Tipo A: DH < 250 ft | Tipo B: MDH/DH >= 250 ft",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Conforme a **EASA Part-CAT (Definiciones y AMC1 CAT.OP.MPA.110)** y el **MOA 8.1.3**:\n- **Operación de aproximación por instrumentos Tipo A:** Altura de decisión o altura mínima de descenso $\\ge 250\\text{ ft}$ ($\\text{MDH/DH} \\ge 250\\text{ ft}$).\n- **Operación de aproximación por instrumentos Tipo B:** Altura de decisión inferior a $250\\text{ ft}$ ($\\text{DH} < 250\\text{ ft}$), subdividiéndose en CAT I (DH 200 a 249 ft), CAT II (DH 100 a 199 ft) y CAT III (DH < 100 ft o sin DH).",
+      "text": "Conforme a **EASA Part-CAT (Definiciones y AMC1 CAT.OP.MPA.110)** y el **MOA 8.1.3**:\n- **Operación de aproximación por instrumentos Tipo A:** Altura de decisión o altura mínima de descenso $≥ 250\\text{ ft}$ ($\\text{MDH/DH} ≥ 250\\text{ ft}$).\n- **Operación de aproximación por instrumentos Tipo B:** Altura de decisión inferior a $250\\text{ ft}$ ($\\text{DH} < 250\\text{ ft}$), subdividiéndose en CAT I (DH 200 a 249 ft), CAT II (DH 100 a 199 ft) y CAT III (DH < 100 ft o sin DH).",
       "references": [
         "MOA Binter ED06 RN27, Capítulo 8.1.3 (pág. 347)",
         "EASA Part-CAT"
@@ -19540,17 +19540,17 @@
     "options": [
       {
         "id": "A",
-        "text": "Techo: 700 ft (500 + 200 ft) | Visibilidad: 2.800 m (1.800 + 1.000 m)",
+        "text": "Techo: 700 ft | Visibilidad: 2.800 m",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Techo: 600 ft (400 + 200 ft) | RVR: 2.200 m (1.200 + 1.000 m)",
+        "text": "Techo: 600 ft | Visibilidad: 2.200 m",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Techo: 900 ft (500 + 400 ft) | Visibilidad: 3.300 m (1.800 + 1.500 m)",
+        "text": "Techo: 900 ft | Visibilidad: 3.300 m",
         "is_correct": false
       },
       {
@@ -19580,22 +19580,22 @@
     "options": [
       {
         "id": "A",
-        "text": "En todas las aproximaciones de no precisión (Tipo A) y en aproximaciones en circuito (Circling); en Tipo B con 2 pistas separadas solo se requiere RVR/visibilidad si la reglamentación aplicable no impone techo",
+        "text": "En aproximaciones Tipo A y Circling; en Tipo B con 2 pistas separadas no se requiere techo salvo exigencia estatal",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Únicamente en aproximaciones CAT III",
+        "text": "Únicamente en aproximaciones Tipo B (CAT I/II/III); en Tipo A y Circling solo se requiere visibilidad",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Nunca se requiere techo en planificación, solo visibilidad horizontal",
+        "text": "En todas las aproximaciones Tipo A, Tipo B y Circling por igual sin excepción alguna",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Solo cuando el viento en superficie sea variable",
+        "text": "Nunca es obligatorio el techo en planificación, evaluándose exclusivamente el RVR/visibilidad",
         "is_correct": false
       }
     ],
@@ -19621,22 +19621,22 @@
     "options": [
       {
         "id": "A",
-        "text": "1 hora de tiempo de vuelo a velocidad de crucero con un motor inoperativo (OEI) en aire en calma",
+        "text": "1 hora de vuelo a velocidad de crucero con un motor inoperativo (OEI) en aire en calma",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "2 horas de tiempo de vuelo con un motor inoperativo",
+        "text": "2 horas de vuelo a velocidad de crucero con un motor inoperativo (OEI) en aire en calma",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "30 minutos de tiempo de vuelo con todos los motores operativos",
+        "text": "30 minutos de vuelo a velocidad normal de crucero con todos los motores operativos",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "45 minutos a velocidad de máxima autonomía",
+        "text": "45 minutos de vuelo a velocidad de crucero con un motor inoperativo (OEI) en aire en calma",
         "is_correct": false
       }
     ],
@@ -19662,22 +19662,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Debe cumplir con los MÍNIMOS DE PLANIFICACIÓN (Tabla 1A o 1B) para la nueva hora estimada de llegada prevista (ETA ± 1h)",
+        "text": "Debe cumplir los MÍNIMOS DE PLANIFICACIÓN (Tabla 1A o 1B) para la nueva ETA prevista (ETA ± 1h)",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Basta con que cumpla los mínimos de operación en el momento exacto de la toma",
+        "text": "Basta con que cumpla los MÍNIMOS DE OPERACIÓN del aeródromo en el momento previsto de la toma",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "No se requiere ninguna verificación meteorológica si el nuevo alternativo dispone de ILS",
+        "text": "No se requiere ninguna verificación meteorológica si el nuevo alternativo dispone de ILS CAT I",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Solo se requiere que el viento en superficie sea inferior a 25 nudos",
+        "text": "Debe cumplir exclusivamente limitaciones de viento en superficie sin evaluar techo ni visibilidad",
         "is_correct": false
       }
     ],
@@ -20912,7 +20912,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Al menos un extintor de polvo químico seco o CO2 de capacidad reglamentaria (típicamente $\\ge 50\text{ kg}$ sobre ruedas o dos de 9-12 kg) posicionado junto al camión y tomas alares",
+        "text": "Al menos un extintor de polvo químico seco o CO2 de capacidad reglamentaria (típicamente $≥ 50\text{ kg}$ sobre ruedas o dos de 9-12 kg) posicionado junto al camión y tomas alares",
         "is_correct": true
       },
       {
@@ -22297,7 +22297,7 @@
       }
     ],
     "explanation": {
-      "text": "El chorro de escape (**Jet Blast**) de los motores turbofán genera velocidades y temperaturas de gas extremas: requiere un área de exclusión de **$\\ge 30\text{ m}$ a ralentí** y **$\\ge 60-100\text{ m}$ a empuje de maniobra/despegue** (MOA 8.2.2.11.4).",
+      "text": "El chorro de escape (**Jet Blast**) de los motores turbofán genera velocidades y temperaturas de gas extremas: requiere un área de exclusión de **$≥ 30\text{ m}$ a ralentí** y **$≥ 60-100\text{ m}$ a empuje de maniobra/despegue** (MOA 8.2.2.11.4).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.2 Procedimientos Operacionales de Seguridad del Avión, Pasajeros y Carga"
       ]
@@ -23213,7 +23213,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Velocidad máxima de paso de hombre ($\\le 5\text{ km/h}$), parada de prueba de frenos a 5 metros del avión y aproximación final guiada por un hombre guía auxiliar",
+        "text": "Velocidad máxima de paso de hombre ($≤ 5\text{ km/h}$), parada de prueba de frenos a 5 metros del avión y aproximación final guiada por un hombre guía auxiliar",
         "is_correct": true
       },
       {
@@ -25787,7 +25787,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Fluidos no espesados (newtonianos), de color naranja/rosa, aplicados calientes ($\\ge 60^\\circ\text{C}$) principalmente para la eliminación rápida de nieve/hielo (deshielo), con un HOT muy limitado",
+        "text": "Fluidos no espesados (newtonianos), de color naranja/rosa, aplicados calientes ($≥ 60^\\circ\text{C}$) principalmente para la eliminación rápida de nieve/hielo (deshielo), con un HOT muy limitado",
         "is_correct": true
       },
       {
@@ -25807,7 +25807,7 @@
       }
     ],
     "explanation": {
-      "text": "El **Fluido Tipo I** es una solución acuosa de glicol sin espesantes (color **naranja/rosa**), aplicada caliente ($\\ge 60^\\circ\text{C}$ en boquilla) para fundir y desprender mecánicamente el hielo/nieve; proporciona una **protección antihielo muy corta (HOT breve de 3-15 min)**.",
+      "text": "El **Fluido Tipo I** es una solución acuosa de glicol sin espesantes (color **naranja/rosa**), aplicada caliente ($≥ 60^\\circ\text{C}$ en boquilla) para fundir y desprender mecánicamente el hielo/nieve; proporciona una **protección antihielo muy corta (HOT breve de 3-15 min)**.",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.2.4 Eliminación y Prevención de Hielo en Tierra"
       ]
@@ -25943,7 +25943,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Paso 1: Deshielo con Tipo I o agua caliente ($\\ge 60^\\circ\text{C}$) para limpiar; Paso 2: Aplicación inmediata de Tipo II/IV para proteger, debiendo iniciarse el Paso 2 antes de que el fluido del Paso 1 se congele (típicamente $\\le 3\text{ min}$)",
+        "text": "Paso 1: Deshielo con Tipo I o agua caliente ($≥ 60^\\circ\text{C}$) para limpiar; Paso 2: Aplicación inmediata de Tipo II/IV para proteger, debiendo iniciarse el Paso 2 antes de que el fluido del Paso 1 se congele (típicamente $≤ 3\text{ min}$)",
         "is_correct": true
       },
       {
@@ -26177,7 +26177,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Es la temperatura exterior más baja a la que el fluido mantiene sus propiedades de protección y capacidad de desprendimiento aerodinámico con margen de congelación seguro ($\\ge 7^\\circ\text{C}$ o $\\ge 10^\\circ\text{C}$ de buffer)",
+        "text": "Es la temperatura exterior más baja a la que el fluido mantiene sus propiedades de protección y capacidad de desprendimiento aerodinámico con margen de congelación seguro ($≥ 7^\\circ\text{C}$ o $≥ 10^\\circ\text{C}$ de buffer)",
         "is_correct": true
       },
       {
@@ -29102,7 +29102,7 @@
     "options": [
       {
         "id": "A",
-        "text": "A una altitud de cabina de aproximadamente **14.000 a 14.500 pies ($\\pm 500\text{ ft}$)**, o manualmente mediante el interruptor MASK DEPLOY en el panel superior de cabina",
+        "text": "A una altitud de cabina de aproximadamente **14.000 a 14.500 pies ($± 500\text{ ft}$)**, o manualmente mediante el interruptor MASK DEPLOY en el panel superior de cabina",
         "is_correct": true
       },
       {
@@ -34454,7 +34454,7 @@
       }
     ],
     "explanation": {
-      "text": "El **Optimum FL** minimiza el coste total de combustible/tiempo para la masa actual, mientras que el **Max FL** es el límite aerodinámico y de empuje certificado ($1.3g\text{ buffet margin}$ y $\\ge 300\text{ ft/min}$ de régimen residual) (AOM / MOA 8.1.10).",
+      "text": "El **Optimum FL** minimiza el coste total de combustible/tiempo para la masa actual, mientras que el **Max FL** es el límite aerodinámico y de empuje certificado ($1.3g\text{ buffet margin}$ y $≥ 300\text{ ft/min}$ de régimen residual) (AOM / MOA 8.1.10).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.10 Plan de Vuelo Operacional"
       ]
@@ -39075,7 +39075,7 @@
     "options": [
       {
         "id": "A",
-        "text": "5.400 ft (redondeo a 4.400 ft + incremento de 1.000 ft por ser elevación $\\le 6.000\text{ ft}$)",
+        "text": "5.400 ft (redondeo a 4.400 ft + incremento de 1.000 ft por ser elevación $≤ 6.000\text{ ft}$)",
         "is_correct": true
       },
       {
@@ -39095,7 +39095,7 @@
       }
     ],
     "explanation": {
-      "text": "Regla MOA 8.1.1.2: 4.320 ft se redondea al siguiente 100 ft (4.400 ft) + 1.000 ft (terreno $\\le 6.000\text{ ft}$) = **5.400 ft**.",
+      "text": "Regla MOA 8.1.1.2: 4.320 ft se redondea al siguiente 100 ft (4.400 ft) + 1.000 ft (terreno $≤ 6.000\text{ ft}$) = **5.400 ft**.",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.1 Altitudes Mínimas de Vuelo"
       ]
@@ -39212,7 +39212,7 @@
       }
     ],
     "explanation": {
-      "text": "El MOA 8.1.1.2 indica que la MTCA aplica verticalmente: 1.000 ft para terreno $\\le 6.000\text{ ft}$, o **2.000 ft** para terreno $> 6.000\text{ ft}$.",
+      "text": "El MOA 8.1.1.2 indica que la MTCA aplica verticalmente: 1.000 ft para terreno $≤ 6.000\text{ ft}$, o **2.000 ft** para terreno $> 6.000\text{ ft}$.",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.1 Altitudes Mínimas de Vuelo"
       ]
@@ -41552,7 +41552,7 @@
       }
     ],
     "explanation": {
-      "text": "El MOA 8.1.3.3 establece que para despegues con baja visibilidad (LVTO) en Categoría C con autorización operacional, el mínimo es **RVR 125 m** siempre que la pista cuente con luces de eje de pista (CL con espaciado $\\le 15\text{ m}$) y luces de borde de alta intensidad (HIRL).",
+      "text": "El MOA 8.1.3.3 establece que para despegues con baja visibilidad (LVTO) en Categoría C con autorización operacional, el mínimo es **RVR 125 m** siempre que la pista cuente con luces de eje de pista (CL con espaciado $≤ 15\text{ m}$) y luces de borde de alta intensidad (HIRL).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3.3 Mínimos de Despegue (Pág. 8.1-29)"
       ]
@@ -41786,7 +41786,7 @@
       }
     ],
     "explanation": {
-      "text": "Los mínimos estándar para CAT I son: **DH $\\ge 200\text{ ft}$** y **RVR $\\ge 550\text{ m}$** (con sistema de luces de aproximación completo) o visibilidad de 800 m (MOA 8.1.3.5).",
+      "text": "Los mínimos estándar para CAT I son: **DH $≥ 200\text{ ft}$** y **RVR $≥ 550\text{ m}$** (con sistema de luces de aproximación completo) o visibilidad de 800 m (MOA 8.1.3.5).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
       ]
@@ -41825,7 +41825,7 @@
       }
     ],
     "explanation": {
-      "text": "La aproximación de precisión CAT II se define por: **DH entre 100 ft y 200 ft**, y **RVR $\\ge 300\text{ m}$** (Categoría C) con equipamiento y autorización LVO específica (MOA 8.1.3.5).",
+      "text": "La aproximación de precisión CAT II se define por: **DH entre 100 ft y 200 ft**, y **RVR $≥ 300\text{ m}$** (Categoría C) con equipamiento y autorización LVO específica (MOA 8.1.3.5).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
       ]
@@ -42254,7 +42254,7 @@
       }
     ],
     "explanation": {
-      "text": "El MOA 8.1.4 y el reglamento SERA establecen para VFR $\\ge 3.000\text{ ft AMSL}$: **5 km de visibilidad** (8 km a/sobre FL100), **1.500 m horizontal** y **1.000 ft vertical** de nubes.",
+      "text": "El MOA 8.1.4 y el reglamento SERA establecen para VFR $≥ 3.000\text{ ft AMSL}$: **5 km de visibilidad** (8 km a/sobre FL100), **1.500 m horizontal** y **1.000 ft vertical** de nubes.",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
       ]
@@ -42293,7 +42293,7 @@
       }
     ],
     "explanation": {
-      "text": "El VFR Especial en CTR requiere: visibilidad en tierra $\\ge 1.500\text{ m}$, techo $\\ge 600\text{ ft}$, libre de nubes y a la vista del terreno (MOA 8.1.4 / SERA).",
+      "text": "El VFR Especial en CTR requiere: visibilidad en tierra $≥ 1.500\text{ m}$, techo $≥ 600\text{ ft}$, libre de nubes y a la vista del terreno (MOA 8.1.4 / SERA).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
       ]
@@ -42527,7 +42527,7 @@
       }
     ],
     "explanation": {
-      "text": "El MOA 8.1.3.4 fija que la MDA/H para procedimientos 2D Tipo A nunca puede ser inferior a la OCA/H del Estado ni inferior a 250 ft de altura sobre el umbral (MDH $\\ge 250\text{ ft}$).",
+      "text": "El MOA 8.1.3.4 fija que la MDA/H para procedimientos 2D Tipo A nunca puede ser inferior a la OCA/H del Estado ni inferior a 250 ft de altura sobre el umbral (MDH $≥ 250\text{ ft}$).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
       ]
@@ -42683,7 +42683,7 @@
       }
     ],
     "explanation": {
-      "text": "Para aeronaves de Categoría C, los mínimos estándar de aproximación en circuito visual (Circling) son: **MDH $\\ge 600\text{ ft}$** y **Visibilidad $\\ge 2.400\text{ m}$** (MOA 8.1.3.9).",
+      "text": "Para aeronaves de Categoría C, los mínimos estándar de aproximación en circuito visual (Circling) son: **MDH $≥ 600\text{ ft}$** y **Visibilidad $≥ 2.400\text{ m}$** (MOA 8.1.3.9).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
       ]
@@ -42761,7 +42761,7 @@
       }
     ],
     "explanation": {
-      "text": "Para una Aproximación Visual, el MOA 8.1.3.10 y CAT.OP.MPA.110 requieren: visibilidad $\\ge 5.000\text{ m}$ y techo $\\ge 1.500\text{ ft}$ (o por encima de la altitud del fojo de aproximación inicial).",
+      "text": "Para una Aproximación Visual, el MOA 8.1.3.10 y CAT.OP.MPA.110 requieren: visibilidad $≥ 5.000\text{ m}$ y techo $≥ 1.500\text{ ft}$ (o por encima de la altitud del fojo de aproximación inicial).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.3, 8.1.4 y 8.1.5 Mínimos de Operación de Aeródromo"
       ]
@@ -43853,7 +43853,7 @@
       }
     ],
     "explanation": {
-      "text": "Un **Microburst** genera: 1° Incremento brusco de IAS por viento de cara, 2° Fuerte corriente descendente (Downdraft $\\ge 3.000\text{ ft/min}$), y 3° Severo viento en cola con pérdida crítica de IAS y sustentación.",
+      "text": "Un **Microburst** genera: 1° Incremento brusco de IAS por viento de cara, 2° Fuerte corriente descendente (Downdraft $≥ 3.000\text{ ft/min}$), y 3° Severo viento en cola con pérdida crítica de IAS y sustentación.",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
       ]
@@ -44262,7 +44262,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Pista mojada (Wet Runway) con espesor de agua $\\le 3\text{ mm}$, o escarcha (Frost)",
+        "text": "Pista mojada (Wet Runway) con espesor de agua $≤ 3\text{ mm}$, o escarcha (Frost)",
         "is_correct": true
       },
       {
@@ -44282,7 +44282,7 @@
       }
     ],
     "explanation": {
-      "text": "El código **RWYCC 5** corresponde a **Pista Mojada (Wet $\\le 3\text{ mm}$)**, humedad visible o escarcha (Frost), con eficacia de frenado buena.",
+      "text": "El código **RWYCC 5** corresponde a **Pista Mojada (Wet $≤ 3\text{ mm}$)**, humedad visible o escarcha (Frost), con eficacia de frenado buena.",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
       ]
@@ -44535,7 +44535,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Visibilidad $\\ge 10\text{ km}$, sin nubes por debajo de 5.000 ft (o MSA, la mayor), sin CB ni TCU, y sin fenómenos de tiempo significativo",
+        "text": "Visibilidad $≥ 10\text{ km}$, sin nubes por debajo de 5.000 ft (o MSA, la mayor), sin CB ni TCU, y sin fenómenos de tiempo significativo",
         "is_correct": true
       },
       {
@@ -44555,7 +44555,7 @@
       }
     ],
     "explanation": {
-      "text": "**CAVOK** requiere: 1° Visibilidad $\\ge 10\text{ km}$, 2° Sin nubes < 5.000 ft / MSA, 3° Sin nubes convectivas (no CB / no TCU), y 4° Sin tiempo significativo.",
+      "text": "**CAVOK** requiere: 1° Visibilidad $≥ 10\text{ km}$, 2° Sin nubes < 5.000 ft / MSA, 3° Sin nubes convectivas (no CB / no TCU), y 4° Sin tiempo significativo.",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
       ]
@@ -44769,7 +44769,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Hielo seco (Ice) a temperatura $\\le -15^\\circ\text{C}$ con eficacia de frenado pobre (Poor)",
+        "text": "Hielo seco (Ice) a temperatura $≤ -15^\\circ\text{C}$ con eficacia de frenado pobre (Poor)",
         "is_correct": true
       },
       {
@@ -44847,7 +44847,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Nieve compactada a muy baja temperatura (Compacted Snow a OAT $\\le -15^\\circ\text{C}$) con eficacia de frenado buena a media",
+        "text": "Nieve compactada a muy baja temperatura (Compacted Snow a OAT $≤ -15^\\circ\text{C}$) con eficacia de frenado buena a media",
         "is_correct": true
       },
       {
@@ -44867,7 +44867,7 @@
       }
     ],
     "explanation": {
-      "text": "El código **RWYCC 4** describe **Nieve compactada a temperaturas muy frías ($\\le -15^\\circ\text{C}$)** donde la adherencia es sustancialmente mejor (Good to Medium) que a temperaturas cercanas a 0°C.",
+      "text": "El código **RWYCC 4** describe **Nieve compactada a temperaturas muy frías ($≤ -15^\\circ\text{C}$)** donde la adherencia es sustancialmente mejor (Good to Medium) que a temperaturas cercanas a 0°C.",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
       ]
@@ -45003,7 +45003,7 @@
     "options": [
       {
         "id": "A",
-        "text": "La turbonada (SQ) es un aumento repentino y violento del viento (al menos 16 kt alcanzando $\\ge 22\text{ kt}$ durante al menos 1 min); TS implica actividad eléctrica (trueno/relámpago)",
+        "text": "La turbonada (SQ) es un aumento repentino y violento del viento (al menos 16 kt alcanzando $≥ 22\text{ kt}$ durante al menos 1 min); TS implica actividad eléctrica (trueno/relámpago)",
         "is_correct": true
       },
       {
@@ -45023,7 +45023,7 @@
       }
     ],
     "explanation": {
-      "text": "**SQ (Squall / Turbonada)** es un incremento brusco del viento de al menos 16 kt sostenido a $\\ge 22\text{ kt}$ durante $\\ge 1\text{ min}$; **TS (Thunderstorm)** requiere descargas eléctricas audibles/visibles.",
+      "text": "**SQ (Squall / Turbonada)** es un incremento brusco del viento de al menos 16 kt sostenido a $≥ 22\text{ kt}$ durante $≥ 1\text{ min}$; **TS (Thunderstorm)** requiere descargas eléctricas audibles/visibles.",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
       ]
@@ -46538,22 +46538,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Techo: DA/H + 100 ft | RVR: RVR + 300 m (sobre la DA/H y RVR más altos en uso)",
+        "text": "Techo: DA/H + 100 ft | RVR/VIS: RVR + 300 m",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Techo: DA/H + 150 ft | RVR: RVR + 450 m",
+        "text": "Techo: DA/H + 150 ft | RVR/VIS: RVR + 450 m",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Techo: DA/H + 200 ft | RVR: RVR + 800 m",
+        "text": "Techo: DA/H + 200 ft | RVR/VIS: RVR + 800 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Mínimos operacionales de CAT I puros sin ningún incremento",
+        "text": "Techo: DA/MDA + 400 ft | RVR/VIS: RVR/VIS + 1.500 m",
         "is_correct": false
       }
     ],
@@ -46583,17 +46583,17 @@
       },
       {
         "id": "B",
-        "text": "Techo: DA/MDA + 200 ft | RVR/VIS: RVR/VIS + 1.000 m (requiere dos o más Tipo A en distintas ayudas)",
+        "text": "Techo: DA/MDA + 200 ft | RVR/VIS: RVR/VIS + 1.000 m",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Techo: DA/H + 200 ft | RVR/VIS: RVR/VIS + 800 m (solo aplicable a 3D Tipo A con mínimos <= 200 ft)",
+        "text": "Techo: DA/H + 200 ft | RVR/VIS: RVR/VIS + 800 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Techo: MDA/H + 100 ft | RVR/VIS: RVR/VIS + 300 m",
+        "text": "Techo: DA/H + 150 ft | RVR/VIS: RVR + 450 m",
         "is_correct": false
       }
     ],
@@ -46618,22 +46618,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Las condiciones meteorológicas deben estar en o por encima de los MÍNIMOS DE ATERRIZAJE APLICABLES (Mínimos de Operación del aeródromo: RVR/VIS y techo >= MDH para Tipo A o Circling) publicados en las cartas de aproximación",
+        "text": "Mínimos de OPERACIÓN (mínimos de aterrizaje aplicables) durante el periodo ETA ± 1 hora",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Deben cumplir obligatoriamente los incrementos de mínimos de planificación de la Tabla 1A o Tabla 1B",
+        "text": "Mínimos de PLANIFICACIÓN (con incrementos de Tabla 1A o 1B) durante el periodo ETA ± 1 hora",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Basta con que la pista de salida tenga viento en calma sin importar las condiciones del alternativo",
+        "text": "Mínimos de OPERACIÓN únicamente en el instante exacto del despegue desde origen",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Se aplican exclusivamente los mínimos de despegue LVTO del aeródromo de origen",
+        "text": "Mínimos de despegue LVTO del aeródromo de salida durante la ventana del vuelo",
         "is_correct": false
       }
     ],
@@ -47165,7 +47165,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Vuelo de corta duración con 2 pistas separadas en destino, y meteo prevista desde 1h antes hasta 1h después con techo $\\ge 2.000\text{ ft}$ (o MDA + 500 ft) y visibilidad $\\ge 5.000\text{ m}$",
+        "text": "Vuelo de corta duración con 2 pistas separadas en destino, y meteo prevista desde 1h antes hasta 1h después con techo $≥ 2.000\text{ ft}$ (o MDA + 500 ft) y visibilidad $≥ 5.000\text{ m}$",
         "is_correct": true
       },
       {
@@ -47185,7 +47185,7 @@
       }
     ],
     "explanation": {
-      "text": "La operación **No Alternate** requiere: duración < 6 h, **2 pistas independientes/separadas**, y condiciones excelentes ($\\ge 2.000\text{ ft}$ techo o MDA+500 ft, visibilidad $\\ge 5.000\text{ m}$) en la ventana $\\pm 1\text{ h}$ (CAT.OP.MPA.180 / MOA 8.1.7.2).",
+      "text": "La operación **No Alternate** requiere: duración < 6 h, **2 pistas independientes/separadas**, y condiciones excelentes ($≥ 2.000\text{ ft}$ techo o MDA+500 ft, visibilidad $≥ 5.000\text{ m}$) en la ventana $± 1\text{ h}$ (CAT.OP.MPA.180 / MOA 8.1.7.2).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
       ]
@@ -47575,7 +47575,7 @@
       }
     ],
     "explanation": {
-      "text": "El **MTOW** es el límite estructural certificado del avión. El **MRTOW / RTOW (Regulated Takeoff Weight)** es el límite operacional obtenido del análisis de pista (longitud, elevación, temperatura, viento, obstáculos y gradiente de ascenso), siendo siempre $\\le \text{MTOW}$ (MOA 8.1.8.1).",
+      "text": "El **MTOW** es el límite estructural certificado del avión. El **MRTOW / RTOW (Regulated Takeoff Weight)** es el límite operacional obtenido del análisis de pista (longitud, elevación, temperatura, viento, obstáculos y gradiente de ascenso), siendo siempre $≤ \text{MTOW}$ (MOA 8.1.8.1).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.8 Masa y Centro de Gravedad"
       ]
@@ -47945,7 +47945,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Una variación de pocos pasajeros (típicamente hasta $\\pm 500\text{ kg}$ o $\\pm 3\text{ a }5$ pasajeros) siempre que el peso total y el CG permanezcan dentro de la envolvente operacional",
+        "text": "Una variación de pocos pasajeros (típicamente hasta $± 500\text{ kg}$ o $± 3\text{ a }5$ pasajeros) siempre que el peso total y el CG permanezcan dentro de la envolvente operacional",
         "is_correct": true
       },
       {
@@ -47965,7 +47965,7 @@
       }
     ],
     "explanation": {
-      "text": "El MOA 8.1.8.3 autoriza modificaciones menores por **LMC** (típicamente hasta $\\pm 500\text{ kg}$ o pocos pasajeros) anotando la corrección en la casilla correspondiente, siempre que no se exceda la envolvente de centrado.",
+      "text": "El MOA 8.1.8.3 autoriza modificaciones menores por **LMC** (típicamente hasta $± 500\text{ kg}$ o pocos pasajeros) anotando la corrección en la casilla correspondiente, siempre que no se exceda la envolvente de centrado.",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.8 Masa y Centro de Gravedad"
       ]
@@ -48862,7 +48862,7 @@
       }
     ],
     "explanation": {
-      "text": "El LMC requiere anotar la variación de peso ($\\pm \text{kg}$) y la variación de unidades de índice ($\\pm \text{IU}$ o % MAC) para obtener el **nuevo TOW y el nuevo calado de THS Trim** correcto (MOA 8.1.8.3).",
+      "text": "El LMC requiere anotar la variación de peso ($± \text{kg}$) y la variación de unidades de índice ($± \text{IU}$ o % MAC) para obtener el **nuevo TOW y el nuevo calado de THS Trim** correcto (MOA 8.1.8.3).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.8 Masa y Centro de Gravedad"
       ]
@@ -51338,7 +51338,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Solo en vuelos especiales diurnos autorizados con visibilidad en vuelo $\\ge 5\text{ km}$, techo $\\ge 1.500\text{ ft}$ y distancia a nubes de $1.500\text{ m}$ horizontal y $1.000\text{ ft}$ vertical",
+        "text": "Solo en vuelos especiales diurnos autorizados con visibilidad en vuelo $≥ 5\text{ km}$, techo $≥ 1.500\text{ ft}$ y distancia a nubes de $1.500\text{ m}$ horizontal y $1.000\text{ ft}$ vertical",
         "is_correct": true
       },
       {
@@ -51358,7 +51358,7 @@
       }
     ],
     "explanation": {
-      "text": "La operación comercial estándar es IFR; los **vuelos VFR excepcionales (diurnos)** exigen cumplir rigurosamente los mínimos VMC de SERA.5001 (**visibilidad $\\ge 5\text{ km}$, techo $\\ge 1.500\text{ ft}$ y separación de nubes**) (MOA 8.3.1.1).",
+      "text": "La operación comercial estándar es IFR; los **vuelos VFR excepcionales (diurnos)** exigen cumplir rigurosamente los mínimos VMC de SERA.5001 (**visibilidad $≥ 5\text{ km}$, techo $≥ 1.500\text{ ft}$ y separación de nubes**) (MOA 8.3.1.1).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
       ]
@@ -51416,7 +51416,7 @@
     "options": [
       {
         "id": "A",
-        "text": "La tripulación debe mantener la velocidad asignada dentro de $\\pm 10\text{ nudos}$ ($\\pm M0.02$ Mach); si no puede cumplirla, debe notificarlo inmediatamente a ATC",
+        "text": "La tripulación debe mantener la velocidad asignada dentro de $± 10\text{ nudos}$ ($± M0.02$ Mach); si no puede cumplirla, debe notificarlo inmediatamente a ATC",
         "is_correct": true
       },
       {
@@ -51436,7 +51436,7 @@
       }
     ],
     "explanation": {
-      "text": "El control de velocidad ATC exige mantener la velocidad asignada dentro de **$\\pm 10\text{ kt}$ ($\\pm M0.02$)**, debiendo notificar de inmediato a ATC ante cualquier discrepancia que supere dicho margen (MOA 8.3.2.18 / OACI Doc 4444).",
+      "text": "El control de velocidad ATC exige mantener la velocidad asignada dentro de **$± 10\text{ kt}$ ($± M0.02$)**, debiendo notificar de inmediato a ATC ante cualquier discrepancia que supere dicho margen (MOA 8.3.2.18 / OACI Doc 4444).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
       ]
@@ -51455,7 +51455,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Desviar 5 NM (o según procedimiento regional oceánico) a un lado de la aerovía, cambiar nivel $\\pm 300\text{ ft}$ (o ascender/descender según rumbo), encender todas las luces y transmitir en 121.5 MHz",
+        "text": "Desviar 5 NM (o según procedimiento regional oceánico) a un lado de la aerovía, cambiar nivel $± 300\text{ ft}$ (o ascender/descender según rumbo), encender todas las luces y transmitir en 121.5 MHz",
         "is_correct": true
       },
       {
@@ -51475,7 +51475,7 @@
       }
     ],
     "explanation": {
-      "text": "El procedimiento internacional de **Desviación Meteorológica de Contingencia sin enlace ATC** exige: **desvío lateral de 5 NM**, ajuste vertical ($\\pm 300\text{ ft}$ según derrota), **luces exteriores al máximo, avisos de tráfico en 121.5 / 123.45 MHz y escucha continua** (MOA 8.3.2.18.5 / OACI).",
+      "text": "El procedimiento internacional de **Desviación Meteorológica de Contingencia sin enlace ATC** exige: **desvío lateral de 5 NM**, ajuste vertical ($± 300\text{ ft}$ según derrota), **luces exteriores al máximo, avisos de tráfico en 121.5 / 123.45 MHz y escucha continua** (MOA 8.3.2.18.5 / OACI).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
       ]
@@ -52313,7 +52313,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Una discrepancia máxima de **$\\pm 75\text{ pies}$** entre ambos altímetros y respecto a la elevación oficial publicada del aeródromo",
+        "text": "Una discrepancia máxima de **$± 75\text{ pies}$** entre ambos altímetros y respecto a la elevación oficial publicada del aeródromo",
         "is_correct": true
       },
       {
@@ -52333,7 +52333,7 @@
       }
     ],
     "explanation": {
-      "text": "El chequeo de altimetría en tierra (RVSM Preflight check / MOA 8.3.2.14) exige que los altímetros primarios no discrepen entre sí ni con la elevación oficial del campo en más de **$\\pm 75\text{ ft}$** con el QNH calado.",
+      "text": "El chequeo de altimetría en tierra (RVSM Preflight check / MOA 8.3.2.14) exige que los altímetros primarios no discrepen entre sí ni con la elevación oficial del campo en más de **$± 75\text{ ft}$** con el QNH calado.",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
       ]
@@ -53951,7 +53951,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Trayectoria de vuelo correcta, pequeños cambios de rumbo/cabeceo, velocidad $V_{app} -0/+10\text{ kt}$, configuración de aterrizaje completa, régimen $\\le 1.000\text{ ft/min}$, empuje estabilizado y checklists completadas",
+        "text": "Trayectoria de vuelo correcta, pequeños cambios de rumbo/cabeceo, velocidad $V_{app} -0/+10\text{ kt}$, configuración de aterrizaje completa, régimen $≤ 1.000\text{ ft/min}$, empuje estabilizado y checklists completadas",
         "is_correct": true
       },
       {
@@ -53971,7 +53971,7 @@
       }
     ],
     "explanation": {
-      "text": "Los **Criterios de Aproximación Estabilizada (CAT.OP.MPA.115 / MOA 8.3.2.14 / SOPM)** exigen a **1.000 ft IMC** y **500 ft VMC**: **1º Senda correcta ($\\pm 1$ punto), 2º Velocidad ($V_{app} -0/+10\text{ kt}$), 3º Configuración de aterrizaje completa (Gear DOWN / Flap Landing), 4º Régimen vertical $\\le 1.000\text{ ft/min}$, y 5º Empuje ajustado y estabilizado**.",
+      "text": "Los **Criterios de Aproximación Estabilizada (CAT.OP.MPA.115 / MOA 8.3.2.14 / SOPM)** exigen a **1.000 ft IMC** y **500 ft VMC**: **1º Senda correcta ($± 1$ punto), 2º Velocidad ($V_{app} -0/+10\text{ kt}$), 3º Configuración de aterrizaje completa (Gear DOWN / Flap Landing), 4º Régimen vertical $≤ 1.000\text{ ft/min}$, y 5º Empuje ajustado y estabilizado**.",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
       ]
@@ -54302,7 +54302,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Mantener contacto visual continuo con la pista o referencias del terreno, techo de nubes $\\ge 1.000\text{ ft}$ (o sobre el MVA) y visibilidad meteorológica $\\ge 5.000\text{ metros}$",
+        "text": "Mantener contacto visual continuo con la pista o referencias del terreno, techo de nubes $≥ 1.000\text{ ft}$ (o sobre el MVA) y visibilidad meteorológica $≥ 5.000\text{ metros}$",
         "is_correct": true
       },
       {
@@ -54322,7 +54322,7 @@
       }
     ],
     "explanation": {
-      "text": "Conforme a CAT.OP.MPA.110 y MOA 8.3.2.17, la **Aproximación Visual** exige: **visibilidad $\\ge 5.000\text{ m}$, techo $\\ge 1.000\text{ ft}$**, referencias visuales continuas con el terreno y que la aproximación pueda completarse visualmente con total seguridad.",
+      "text": "Conforme a CAT.OP.MPA.110 y MOA 8.3.2.17, la **Aproximación Visual** exige: **visibilidad $≥ 5.000\text{ m}$, techo $≥ 1.000\text{ ft}$**, referencias visuales continuas con el terreno y que la aproximación pueda completarse visualmente con total seguridad.",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
       ]
@@ -55570,7 +55570,7 @@
       }
     ],
     "explanation": {
-      "text": "Los Criterios de Estabilización fijan un **tope estricto de régimen vertical de descenso de $\\le 1.000\text{ ft/min}$** por debajo de 1.000 ft AGL; superar este valor exige el callout `'SINK RATE'` y la ejecución de **Go-Around si no se corrige de inmediato** (MOA 8.3.2.14).",
+      "text": "Los Criterios de Estabilización fijan un **tope estricto de régimen vertical de descenso de $≤ 1.000\text{ ft/min}$** por debajo de 1.000 ft AGL; superar este valor exige el callout `'SINK RATE'` y la ejecución de **Go-Around si no se corrige de inmediato** (MOA 8.3.2.14).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
       ]
@@ -55687,7 +55687,7 @@
       }
     ],
     "explanation": {
-      "text": "El callout **`'LOCALIZER'`** alerta de una desviación inaceptable de guiado lateral ($\\ge 1\text{ dot}$); si la senda lateral no se recupera de inmediato dentro de límites, **la frustrada es imperativa** (MOA 8.3.2.14 / SOPM).",
+      "text": "El callout **`'LOCALIZER'`** alerta de una desviación inaceptable de guiado lateral ($≥ 1\text{ dot}$); si la senda lateral no se recupera de inmediato dentro de límites, **la frustrada es imperativa** (MOA 8.3.2.14 / SOPM).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.3 Procedimientos de Vuelo"
       ]
@@ -55706,7 +55706,7 @@
     "options": [
       {
         "id": "A",
-        "text": "A una velocidad máxima de hasta **50-60 nudos en calles rápidas (RET)** y a velocidad reducida ($\\le 10-15\text{ nudos}$) en giros convencionales en ángulo recto de 90°",
+        "text": "A una velocidad máxima de hasta **50-60 nudos en calles rápidas (RET)** y a velocidad reducida ($≤ 10-15\text{ nudos}$) en giros convencionales en ángulo recto de 90°",
         "is_correct": true
       },
       {
@@ -55936,7 +55936,7 @@
     "id": "CMD-MOA-LVO-002",
     "subject_id": "moa_visibilidad_reducida_lvo",
     "learning_objective": "MOA 8.4.2 - Mínimos de Despegue con Baja Visibilidad (LVTO)",
-    "stem": "¿Cuál es el mínimo absoluto de RVR autorizado para un despegue LVTO con luces de eje de pista (CL $\\le 15\text{ m}$) y luces de borde de alta intensidad (HIRL)?",
+    "stem": "¿Cuál es el mínimo absoluto de RVR autorizado para un despegue LVTO con luces de eje de pista (CL $≤ 15\text{ m}$) y luces de borde de alta intensidad (HIRL)?",
     "options": [
       {
         "id": "A",
@@ -55960,7 +55960,7 @@
       }
     ],
     "explanation": {
-      "text": "El mínimo estándar para **LVTO (Low Visibility Takeoff)** con balizamiento de eje de pista a $\\le 15\text{ m}$ y luces de borde de alta intensidad es **RVR 125 m** (CAT.OP.MPA.110 / MOA 8.4.2).",
+      "text": "El mínimo estándar para **LVTO (Low Visibility Takeoff)** con balizamiento de eje de pista a $≤ 15\text{ m}$ y luces de borde de alta intensidad es **RVR 125 m** (CAT.OP.MPA.110 / MOA 8.4.2).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.4 Operaciones con Visibilidad Reducida (LVO)"
       ]
@@ -55979,7 +55979,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Altura de Decisión (DH) de **100 a 200 pies** y un valor de **RVR $\\ge 300\text{ metros}$**",
+        "text": "Altura de Decisión (DH) de **100 a 200 pies** y un valor de **RVR $≥ 300\text{ metros}$**",
         "is_correct": true
       },
       {
@@ -56018,7 +56018,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Fail-Passive: Ante un fallo no se produce desvío significativo pero exige control manual o frustrada (DH $\\ge 50\text{ ft}$) | Fail-Operational: El sistema tolera un fallo y completa el aterrizaje automáticamente (No DH / Alert Height)",
+        "text": "Fail-Passive: Ante un fallo no se produce desvío significativo pero exige control manual o frustrada (DH $≥ 50\text{ ft}$) | Fail-Operational: El sistema tolera un fallo y completa el aterrizaje automáticamente (No DH / Alert Height)",
         "is_correct": true
       },
       {
@@ -56408,12 +56408,12 @@
     "options": [
       {
         "id": "A",
-        "text": "La velocidad indicada debe mantenerse dentro de **$\\pm 5\text{ nudos}$** sobre la velocidad objetivo y **nunca por debajo de la velocidad de referencia ($V_{ref}$)**",
+        "text": "La velocidad indicada debe mantenerse dentro de **$± 5\text{ nudos}$** sobre la velocidad objetivo y **nunca por debajo de la velocidad de referencia ($V_{ref}$)**",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Un margen libre de $\\pm 25$ nudos",
+        "text": "Un margen libre de $± 25$ nudos",
         "is_correct": false
       },
       {
@@ -56428,7 +56428,7 @@
       }
     ],
     "explanation": {
-      "text": "El MOA 8.4.6.2.3 exige que en la DH la velocidad esté estabilizada dentro de **$\\pm 5\text{ kt}$ y jamás por debajo de $V_{ref}$**, garantizando el margen aerodinámico seguro durante la recogida (*Flare*).",
+      "text": "El MOA 8.4.6.2.3 exige que en la DH la velocidad esté estabilizada dentro de **$± 5\text{ kt}$ y jamás por debajo de $V_{ref}$**, garantizando el margen aerodinámico seguro durante la recogida (*Flare*).",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.4 Operaciones con Visibilidad Reducida (LVO)"
       ]
@@ -58339,7 +58339,7 @@
       }
     ],
     "explanation": {
-      "text": "Definición OACI Anexo 13 / Reglamento (UE) nº 996/2010 / MOA 11.1.1: Suceso con **lesiones mortales (fallecimiento en $\\le 30\text{ días}$)** o graves, **daños estructurales mayores que exigen reparación importante**, o **aeronave desaparecida/inaccesible**.",
+      "text": "Definición OACI Anexo 13 / Reglamento (UE) nº 996/2010 / MOA 11.1.1: Suceso con **lesiones mortales (fallecimiento en $≤ 30\text{ días}$)** o graves, **daños estructurales mayores que exigen reparación importante**, o **aeronave desaparecida/inaccesible**.",
       "references": [
         "Binter Canarias MOA - Capítulo 11: Tratamiento, Notificación y Reporte de Accidentes, Incidentes y Sucesos"
       ]
@@ -60035,7 +60035,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Aterrizar con régimen vertical suave ($\\le 300\text{ ft/min}$), anotar el 'Overweight Landing' en el ATL para la inspección estructural de mantenimiento y tramitar un ASR",
+        "text": "Aterrizar con régimen vertical suave ($≤ 300\text{ ft/min}$), anotar el 'Overweight Landing' en el ATL para la inspección estructural de mantenimiento y tramitar un ASR",
         "is_correct": true
       },
       {
@@ -60269,7 +60269,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Visibilidad de vuelo $\\ge 5\text{ km}$, separación de nubes de **1.500 metros en horizontal** y **1.000 pies (300 m) en vertical**",
+        "text": "Visibilidad de vuelo $≥ 5\text{ km}$, separación de nubes de **1.500 metros en horizontal** y **1.000 pies (300 m) en vertical**",
         "is_correct": true
       },
       {
@@ -60289,7 +60289,7 @@
       }
     ],
     "explanation": {
-      "text": "Tabla SERA.5001 / MOA 12.1:\n\n### 📊 Mínimos de Visibilidad y Separación de Nubes VMC\n| Altitud / Nivel de Vuelo | Clase de Espacio Aéreo | Visibilidad de Vuelo | Distancia a Nubes |\n| :--- | :--- | :--- | :--- |\n| **A o por encima de FL100 (10.000 ft)** | **Clases B, C, D, E, F, G** | **$\\ge 8\text{ km}$** | **$1.500\text{ m}$ horizontal / $1.000\text{ ft}$ vertical** |\n| **Por debajo de FL100 (10.000 ft)** | **Clases B, C, D, E, F, G** | **$\\ge 5\text{ km}$** | **$1.500\text{ m}$ horizontal / $1.000\text{ ft}$ vertical** |\n| **A o por debajo de 3.000 ft AMSL** | **Clases F, G** | **$\\ge 5\text{ km}$** | **Libre de nubes y a la vista del suelo** |",
+      "text": "Tabla SERA.5001 / MOA 12.1:\n\n### 📊 Mínimos de Visibilidad y Separación de Nubes VMC\n| Altitud / Nivel de Vuelo | Clase de Espacio Aéreo | Visibilidad de Vuelo | Distancia a Nubes |\n| :--- | :--- | :--- | :--- |\n| **A o por encima de FL100 (10.000 ft)** | **Clases B, C, D, E, F, G** | **$≥ 8\text{ km}$** | **$1.500\text{ m}$ horizontal / $1.000\text{ ft}$ vertical** |\n| **Por debajo de FL100 (10.000 ft)** | **Clases B, C, D, E, F, G** | **$≥ 5\text{ km}$** | **$1.500\text{ m}$ horizontal / $1.000\text{ ft}$ vertical** |\n| **A o por debajo de 3.000 ft AMSL** | **Clases F, G** | **$≥ 5\text{ km}$** | **Libre de nubes y a la vista del suelo** |",
       "references": [
         "Binter Canarias MOA - Capítulo 12: Reglas del Aire (SERA)"
       ]
@@ -60523,7 +60523,7 @@
       }
     ],
     "explanation": {
-      "text": "La **Señal 2 de Interceptación (Breakaway Maneuver / MOA 12.4)** consiste en un viraje de rotura en ascenso de $\\ge 90^\\circ$: autoriza a la aeronave interceptada a **proseguir su navegación normal**.",
+      "text": "La **Señal 2 de Interceptación (Breakaway Maneuver / MOA 12.4)** consiste en un viraje de rotura en ascenso de $≥ 90^\\circ$: autoriza a la aeronave interceptada a **proseguir su navegación normal**.",
       "references": [
         "Binter Canarias MOA - Capítulo 12: Reglas del Aire (SERA)"
       ]
@@ -61069,7 +61069,7 @@
       }
     ],
     "explanation": {
-      "text": "El **VFR Especial (SERA.5010 / MOA 12.1)** dentro de una CTR exige: **visibilidad $\\ge 1.500\text{ m}$, techo $\\ge 600\text{ ft}$**, permanecer libre de nubes y a la vista continua de la superficie a velocidad $\\le 140\text{ kt}$ IAS.",
+      "text": "El **VFR Especial (SERA.5010 / MOA 12.1)** dentro de una CTR exige: **visibilidad $≥ 1.500\text{ m}$, techo $≥ 600\text{ ft}$**, permanecer libre de nubes y a la vista continua de la superficie a velocidad $≤ 140\text{ kt}$ IAS.",
       "references": [
         "Binter Canarias MOA - Capítulo 12: Reglas del Aire (SERA)"
       ]
@@ -84593,7 +84593,7 @@
       }
     ],
     "explanation": {
-      "text": "### Stabilized Approach Criteria (Flight Safety Foundation & EASA)\n* **Stabilization Gates:**\n  - **1,000 ft AAL in IMC**.\n  - **500 ft AAL in VMC**.\n* **Parameters:** Correct path, $V_{REF}$ to $V_{REF}+10\\text{ kt}$, landing configuration, sink rate $\\le 1,000\\text{ fpm}$, spooled thrust.\n* **Golden Rule:** If unstabilized at the gate: **GO AROUND IMMEDIATELY**.",
+      "text": "### Stabilized Approach Criteria (Flight Safety Foundation & EASA)\n* **Stabilization Gates:**\n  - **1,000 ft AAL in IMC**.\n  - **500 ft AAL in VMC**.\n* **Parameters:** Correct path, $V_{REF}$ to $V_{REF}+10\\text{ kt}$, landing configuration, sink rate $≤ 1,000\\text{ fpm}$, spooled thrust.\n* **Golden Rule:** If unstabilized at the gate: **GO AROUND IMMEDIATELY**.",
       "references": [
         "Flight Safety Foundation: Approach-and-Landing Accident Reduction (ALAR)",
         "EASA Safety Guidance Material on Stabilized Approaches"
@@ -84793,7 +84793,7 @@
       }
     ],
     "explanation": {
-      "text": "### Mandatory 4 RVSM Systems (SPA.RVSM.110)\n* To operate in RVSM airspace, the aircraft must have **ALL 4 systems operational**:\n  1. **Two independent primary altimeters** (ADC / air data computers).\n  2. **One Automatic Altitude Control System (Autopilot)** maintaining level within $\\pm 65\\text{ ft}$.\n  3. **One Altitude Alerting System** (warning at deviations > $200\\text{ ft}$ or $300\\text{ ft}$).\n  4. **One SSR Mode C/S Transponder** connected to the active primary altimeter.",
+      "text": "### Mandatory 4 RVSM Systems (SPA.RVSM.110)\n* To operate in RVSM airspace, the aircraft must have **ALL 4 systems operational**:\n  1. **Two independent primary altimeters** (ADC / air data computers).\n  2. **One Automatic Altitude Control System (Autopilot)** maintaining level within $± 65\\text{ ft}$.\n  3. **One Altitude Alerting System** (warning at deviations > $200\\text{ ft}$ or $300\\text{ ft}$).\n  4. **One SSR Mode C/S Transponder** connected to the active primary altimeter.",
       "references": [
         "EASA Part-SPA.RVSM.110",
         "ICAO Doc 9574"
@@ -84833,7 +84833,7 @@
       }
     ],
     "explanation": {
-      "text": "### RVSM Altimetry Tolerances\n* **Ground Check (with local QNH):**\n  - Primary altimeter vs. Surveyed Field Elevation: max **$\\pm 75\\text{ ft}$** (or $\\pm 50\\text{ ft}$ per AFM).\n  - Difference between Pilot & Co-pilot Primary Altimeters: max **$50\\text{ to }75\\text{ ft}$**.\n* **In-Flight Cruise Crosscheck (Standard 1013.25 hPa):**\n  - Max allowable discrepancy between primary altimeters: **$200\\text{ ft}$ (60 m)**.\n  - Autopilot must maintain level within **$\\pm 65\\text{ ft}$ ($\\pm 20\\text{ m}$)**.",
+      "text": "### RVSM Altimetry Tolerances\n* **Ground Check (with local QNH):**\n  - Primary altimeter vs. Surveyed Field Elevation: max **$± 75\\text{ ft}$** (or $± 50\\text{ ft}$ per AFM).\n  - Difference between Pilot & Co-pilot Primary Altimeters: max **$50\\text{ to }75\\text{ ft}$**.\n* **In-Flight Cruise Crosscheck (Standard 1013.25 hPa):**\n  - Max allowable discrepancy between primary altimeters: **$200\\text{ ft}$ (60 m)**.\n  - Autopilot must maintain level within **$± 65\\text{ ft}$ ($± 20\\text{ m}$)**.",
       "references": [
         "ICAO Doc 9574 (Chapter 4 - Operating Procedures)",
         "EASA AMC1 SPA.RVSM.105"
@@ -84953,7 +84953,7 @@
       }
     ],
     "explanation": {
-      "text": "### TCAS II Version 7.1 Response Standards\n* **Reaction Time:**\n  - **Initial RA:** Crew must initiate pitch response within **$\\le 5\\text{ seconds}$**.\n  - **Reversal / Strengthening RA:** Crew must respond within **$\\le 2.5\\text{ seconds}$**.\n* **Absolute Priority:** A TCAS RA **ALWAYS OVERRIDES ATC INSTRUCTIONS**. Never maneuver opposite to an RA.\n* **Phraseology:** Notify ATC: `[Callsign] TCAS RA`, and upon return: `CLEAR OF CONFLICT, RETURNING TO [FL]`.",
+      "text": "### TCAS II Version 7.1 Response Standards\n* **Reaction Time:**\n  - **Initial RA:** Crew must initiate pitch response within **$≤ 5\\text{ seconds}$**.\n  - **Reversal / Strengthening RA:** Crew must respond within **$≤ 2.5\\text{ seconds}$**.\n* **Absolute Priority:** A TCAS RA **ALWAYS OVERRIDES ATC INSTRUCTIONS**. Never maneuver opposite to an RA.\n* **Phraseology:** Notify ATC: `[Callsign] TCAS RA`, and upon return: `CLEAR OF CONFLICT, RETURNING TO [FL]`.",
       "references": [
         "ICAO Doc 9863 (Airborne Collision Avoidance System Manual)",
         "EASA SERA.11014"
@@ -85033,7 +85033,7 @@
       }
     ],
     "explanation": {
-      "text": "### RNAV vs RNP (ICAO Doc 9613 PBN Manual)\n* **RNAV (Area Navigation):** Navigation along any desired flight path within covered navigational aid limits. **No On-Board Performance Monitoring & Alerting (OBPMA) required**.\n* **RNP (Required Navigation Performance):** Area navigation that **REQUIRES on-board performance monitoring and alerting (OBPMA)**. If the system cannot maintain the specified lateral accuracy (e.g. $\\pm 0.3\\text{ NM}$ in RNP APCH) 95% of the time, it immediately alerts the crew.",
+      "text": "### RNAV vs RNP (ICAO Doc 9613 PBN Manual)\n* **RNAV (Area Navigation):** Navigation along any desired flight path within covered navigational aid limits. **No On-Board Performance Monitoring & Alerting (OBPMA) required**.\n* **RNP (Required Navigation Performance):** Area navigation that **REQUIRES on-board performance monitoring and alerting (OBPMA)**. If the system cannot maintain the specified lateral accuracy (e.g. $± 0.3\\text{ NM}$ in RNP APCH) 95% of the time, it immediately alerts the crew.",
       "references": [
         "ICAO Doc 9613 (PBN Manual)",
         "EASA Part-SPA.PBN"
@@ -85273,7 +85273,7 @@
       }
     ],
     "explanation": {
-      "text": "### ICAO Wake Turbulence Categories (Doc 4444)\n* **Heavy (H):** MTOW $\\ge 136,000\\text{ kg}$.\n* **Medium (M):** $7,000\\text{ kg} < \\text{MTOW} < 136,000\\text{ kg}$ (Challenger, Latitude, Global).\n* **Light (L):** $\\le 7,000\\text{ kg}$ (Phenom 300, Citation Mustang).\n* **Radar Separation behind Heavy on Approach:**\n  - Behind Heavy -> **Medium = 5 NM**\n  - Behind Heavy -> **Light = 6 NM**",
+      "text": "### ICAO Wake Turbulence Categories (Doc 4444)\n* **Heavy (H):** MTOW $≥ 136,000\\text{ kg}$.\n* **Medium (M):** $7,000\\text{ kg} < \\text{MTOW} < 136,000\\text{ kg}$ (Challenger, Latitude, Global).\n* **Light (L):** $≤ 7,000\\text{ kg}$ (Phenom 300, Citation Mustang).\n* **Radar Separation behind Heavy on Approach:**\n  - Behind Heavy -> **Medium = 5 NM**\n  - Behind Heavy -> **Light = 6 NM**",
       "references": [
         "ICAO Doc 4444 (PANS-ATM Chapter 5)",
         "EASA SERA.8015"
@@ -85313,7 +85313,7 @@
       }
     ],
     "explanation": {
-      "text": "### RAIM Prediction & RNP Navigation (SPA.PBN)\n* **RAIM (Receiver Autonomous Integrity Monitoring):** Requires **$\\ge 5$ satellites** (fault detection) or **$\\ge 6$ satellites** (fault exclusion / FDE).\n* If pre-flight RAIM prediction indicates an integrity outage at ETA, dispatch based solely on GPS/RNP approach is **PROHIBITED**; ground-based conventional aids (ILS/VOR) or suitable alternates are required.",
+      "text": "### RAIM Prediction & RNP Navigation (SPA.PBN)\n* **RAIM (Receiver Autonomous Integrity Monitoring):** Requires **$≥ 5$ satellites** (fault detection) or **$≥ 6$ satellites** (fault exclusion / FDE).\n* If pre-flight RAIM prediction indicates an integrity outage at ETA, dispatch based solely on GPS/RNP approach is **PROHIBITED**; ground-based conventional aids (ILS/VOR) or suitable alternates are required.",
       "references": [
         "EASA Part-SPA.PBN.105",
         "ICAO Doc 9613"
@@ -86385,7 +86385,7 @@
       }
     ],
     "explanation": {
-      "text": "### Quick-Donning Oxygen Mask Standards (CAT.IDE.A.235 & CS-25)\n* On pressurized aeroplanes operating **above FL250**, each flight crew member station must have a **Quick-Donning Oxygen Mask**.\n* **Standard:** Must be donned and supplying oxygen in **$\\le 5\\text{ seconds}$ with ONE HAND**, accommodating corrective glasses, and connecting automatically to the aircraft interphone.",
+      "text": "### Quick-Donning Oxygen Mask Standards (CAT.IDE.A.235 & CS-25)\n* On pressurized aeroplanes operating **above FL250**, each flight crew member station must have a **Quick-Donning Oxygen Mask**.\n* **Standard:** Must be donned and supplying oxygen in **$≤ 5\\text{ seconds}$ with ONE HAND**, accommodating corrective glasses, and connecting automatically to the aircraft interphone.",
       "references": [
         "EASA Part-CAT.IDE.A.235 (Supplemental oxygen - pressurised aeroplanes)",
         "CS-25.1447"
@@ -86745,7 +86745,7 @@
       }
     ],
     "explanation": {
-      "text": "### Low Visibility Take-Off (LVTO - SPA.LVO.100)\n* Standard takeoff minimum without LVO: **RVR 400/500 m**.\n* **LVTO (Low Visibility Take-Off):** Permits takeoff down to **RVR 125 m** (Cat A/B/C) or **150 m** (Cat D).\n* Requires: **LVP in force**, operational High-Intensity Runway Centerline Lights ($\\le 15\\text{ m}$ spacing), runway edge lights, and a visual segment of $\\ge 90\\text{ m}$.",
+      "text": "### Low Visibility Take-Off (LVTO - SPA.LVO.100)\n* Standard takeoff minimum without LVO: **RVR 400/500 m**.\n* **LVTO (Low Visibility Take-Off):** Permits takeoff down to **RVR 125 m** (Cat A/B/C) or **150 m** (Cat D).\n* Requires: **LVP in force**, operational High-Intensity Runway Centerline Lights ($≤ 15\\text{ m}$ spacing), runway edge lights, and a visual segment of $≥ 90\\text{ m}$.",
       "references": [
         "EASA Part-SPA.LVO.100",
         "AMC1 SPA.LVO.100"
@@ -86905,7 +86905,7 @@
       }
     ],
     "explanation": {
-      "text": "### Visual References at CAT I DH (CAT.OP.MPA.110)\n* For **CAT I (DH $\\ge 200\\text{ ft}$)**, the pilot must have in view **at least one** of the following:\n  - Elements of the Approach Light System (ALS).\n  - Threshold / threshold markings / threshold lights.\n  - Touchdown zone / TDZ markings / TDZ lights.\n  - Visual approach slope indicator (PAPI / VASI).\n  - Runway edge lights.",
+      "text": "### Visual References at CAT I DH (CAT.OP.MPA.110)\n* For **CAT I (DH $≥ 200\\text{ ft}$)**, the pilot must have in view **at least one** of the following:\n  - Elements of the Approach Light System (ALS).\n  - Threshold / threshold markings / threshold lights.\n  - Touchdown zone / TDZ markings / TDZ lights.\n  - Visual approach slope indicator (PAPI / VASI).\n  - Runway edge lights.",
       "references": [
         "EASA Part-CAT.OP.MPA.110",
         "ICAO Annex 6 Part I"
@@ -86945,7 +86945,7 @@
       }
     ],
     "explanation": {
-      "text": "### Visual References for CAT II Operations\n* For **CAT II ($100\\text{ ft} \\le \\text{DH} < 200\\text{ ft}$)**, visual requirements are stricter than CAT I:\n  - At least **3 consecutive lights** (centerline of ALS, TDZ lights, runway centerline, or runway edge lights).\n  - Must include a **lateral cross element** (e.g. crossbar or threshold) to provide attitude and roll cues.",
+      "text": "### Visual References for CAT II Operations\n* For **CAT II ($100\\text{ ft} ≤ \\text{DH} < 200\\text{ ft}$)**, visual requirements are stricter than CAT I:\n  - At least **3 consecutive lights** (centerline of ALS, TDZ lights, runway centerline, or runway edge lights).\n  - Must include a **lateral cross element** (e.g. crossbar or threshold) to provide attitude and roll cues.",
       "references": [
         "EASA Part-SPA.LVO.100",
         "AMC1 SPA.LVO.100"
@@ -87065,7 +87065,7 @@
       }
     ],
     "explanation": {
-      "text": "### Fail-Passive vs Fail-Operational (CS-AWO)\n* **Fail-Passive:** Single failure leaves the aircraft in trim, autopilot disconnects, pilot must see visual cues and land manually (**DH $\\ge 50\\text{ ft}$, CAT III A**).\n* **Fail-Operational:** Redundant channels allow the system to continue automatic flare and rollout despite a single failure (**No DH / DH $< 50\\text{ ft}$, CAT III B**).",
+      "text": "### Fail-Passive vs Fail-Operational (CS-AWO)\n* **Fail-Passive:** Single failure leaves the aircraft in trim, autopilot disconnects, pilot must see visual cues and land manually (**DH $≥ 50\\text{ ft}$, CAT III A**).\n* **Fail-Operational:** Redundant channels allow the system to continue automatic flare and rollout despite a single failure (**No DH / DH $< 50\\text{ ft}$, CAT III B**).",
       "references": [
         "EASA CS-AWO (All Weather Operations)",
         "ICAO Doc 9365"
@@ -87225,7 +87225,7 @@
       }
     ],
     "explanation": {
-      "text": "### ICAO / EASA Global Reporting Format (GRF)\n* **RWYCC 6:** Dry (Normal braking).\n* **RWYCC 5:** Wet ($\\le 3\\text{ mm}$ water), Frost.\n* **RWYCC 3:** Slippery wet, dry snow, compact snow ($\\le -15^\\circ\\text{C}$).\n* **RWYCC 1:** Standing water ($> 3\\text{ mm}$), Slush, Ice.\n* **RWYCC 0:** Wet ice, snow over ice (**NIL braking action; TAKEOFF & LANDING STRICTLY PROHIBITED**).",
+      "text": "### ICAO / EASA Global Reporting Format (GRF)\n* **RWYCC 6:** Dry (Normal braking).\n* **RWYCC 5:** Wet ($≤ 3\\text{ mm}$ water), Frost.\n* **RWYCC 3:** Slippery wet, dry snow, compact snow ($≤ -15^\\circ\\text{C}$).\n* **RWYCC 1:** Standing water ($> 3\\text{ mm}$), Slush, Ice.\n* **RWYCC 0:** Wet ice, snow over ice (**NIL braking action; TAKEOFF & LANDING STRICTLY PROHIBITED**).",
       "references": [
         "ICAO Doc 10064 (Aeroplane Performance Manual - GRF)",
         "EASA SIB 2021-12"

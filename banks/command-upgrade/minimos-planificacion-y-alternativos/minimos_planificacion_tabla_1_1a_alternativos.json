@@ -46,22 +46,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Techo: DA/H + 100 ft | RVR: RVR + 300 m (aplicados sobre los valores más altos de DA/H y RVR en uso)",
+        "text": "Techo: DA/H + 100 ft | RVR/VIS: RVR + 300 m",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Techo: DA/H + 150 ft | RVR: RVR + 450 m",
+        "text": "Techo: DA/H + 150 ft | RVR/VIS: RVR + 450 m",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Techo: DA/H + 200 ft | RVR: RVR + 800 m",
+        "text": "Techo: DA/H + 200 ft | RVR/VIS: RVR + 800 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Techo: DA/H + 50 ft | RVR: RVR + 150 m",
+        "text": "Techo: DA/H + 400 ft | RVR/VIS: RVR + 1.500 m",
         "is_correct": false
       }
     ],
@@ -84,22 +84,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Techo: DA/H + 150 ft | RVR: RVR + 450 m",
+        "text": "Techo: DA/H + 150 ft | RVR/VIS: RVR + 450 m",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Techo: DA/H + 100 ft | RVR: RVR + 300 m",
+        "text": "Techo: DA/H + 100 ft | RVR/VIS: RVR + 300 m",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Techo: DA/H + 200 ft | RVR: RVR + 800 m",
+        "text": "Techo: DA/H + 200 ft | RVR/VIS: RVR + 800 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Techo: DA/H + 400 ft | RVR: RVR + 1.500 m",
+        "text": "Techo: DA/H + 400 ft | RVR/VIS: RVR + 1.500 m",
         "is_correct": false
       }
     ],
@@ -122,27 +122,27 @@
     "options": [
       {
         "id": "A",
-        "text": "Operación de aproximación 3D por instrumentos tipo A, asociada a una ayuda con mínimos de 200 ft o menos: Techo DA/H + 200 ft y RVR/VIS + 800 m",
+        "text": "3D Tipo A (ayuda <= 200 ft): Techo DA/H + 200 ft | RVR/VIS + 800 m",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Operación tipo B estándar: Techo DA/H + 150 ft y RVR + 450 m",
+        "text": "Tipo B estándar: Techo DA/H + 150 ft | RVR/VIS + 450 m",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Operación 2D tipo A: Techo MDA/H + 400 ft y RVR/VIS + 1.500 m",
+        "text": "2D Tipo A estándar: Techo MDA/H + 400 ft | RVR/VIS + 1.500 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Aproximación en circuito: Techo MDA/H + 400 ft y VIS + 1.500 m",
+        "text": "Aproximación en circuito: Techo MDA/H + 400 ft | VIS + 1.500 m",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "De acuerdo con el MOA 8.1.3 y la Tabla 1A del MOA 8.1.7.2.5:\n- Las aproximaciones Tipo B tienen $\\text{DH} < 250\\text{ ft}$. Si la DA/H es de $300\\text{ ft}$ ($\\ge 250\\text{ ft}$), pasa a ser una **aproximación Tipo A**.\n- Al estar basada en un ILS (ayuda de precisión cuyos mínimos base de diseño son $\\le 200\\text{ ft}$), se encuadra en la fila: **'Operación de aproximación 3D por instrumentos tipo A, asociada a una ayuda con mínimos de 200 ft o menos'**.\n- Incrementos requeridos: **DA/H + 200 ft** y **RVR/VIS + 800 m**.",
+      "text": "De acuerdo con el MOA 8.1.3 y la Tabla 1A del MOA 8.1.7.2.5:\n- Las aproximaciones Tipo B tienen $\\text{DH} < 250\\text{ ft}$. Si la DA/H es de $300\\text{ ft}$ ($≥ 250\\text{ ft}$), pasa a ser una **aproximación Tipo A**.\n- Al estar basada en un ILS (ayuda de precisión cuyos mínimos base de diseño son $≤ 200\\text{ ft}$), se encuadra en la fila: **'Operación de aproximación 3D por instrumentos tipo A, asociada a una ayuda con mínimos de 200 ft o menos'**.\n- Incrementos requeridos: **DA/H + 200 ft** y **RVR/VIS + 800 m**.",
       "references": [
         "MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 Tabla 1A",
         "Examen Oficial Convocatoria Anterior Q10"
@@ -161,22 +161,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Techo: DA/H o MDA/H + 200 ft | RVR/VIS: RVR/VIS + 1.000 m (sobre los valores más altos de DA/MDA y RVR/VIS)",
+        "text": "Techo: DA/MDA + 200 ft | RVR/VIS: RVR/VIS + 1.000 m",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Techo: DA/H o MDA/H + 400 ft | RVR/VIS: RVR/VIS + 1.500 m",
+        "text": "Techo: DA/MDA + 400 ft | RVR/VIS: RVR/VIS + 1.500 m",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Techo: DA/H + 150 ft | RVR: RVR + 450 m",
+        "text": "Techo: DA/H + 150 ft | RVR/VIS: RVR + 450 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Techo: DA/H o MDA/H + 100 ft | RVR/VIS: RVR/VIS + 500 m",
+        "text": "Techo: DA/MDA + 100 ft | RVR/VIS: RVR/VIS + 500 m",
         "is_correct": false
       }
     ],
@@ -199,22 +199,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Techo: DA/H o MDA/H + 400 ft | RVR/VIS: RVR/VIS + 1.500 m",
+        "text": "Techo: DA/MDA + 400 ft | RVR/VIS: RVR/VIS + 1.500 m",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Techo: DA/H o MDA/H + 200 ft | RVR/VIS: RVR/VIS + 1.000 m",
+        "text": "Techo: DA/MDA + 200 ft | RVR/VIS: RVR/VIS + 1.000 m",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Techo: DA/H o MDA/H + 300 ft | RVR/VIS: RVR/VIS + 800 m",
+        "text": "Techo: DA/H + 200 ft | RVR/VIS: RVR/VIS + 800 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Techo: DA/H o MDA/H + 500 ft | RVR/VIS: RVR/VIS + 2.000 m",
+        "text": "Techo: DA/H + 150 ft | RVR/VIS: RVR + 450 m",
         "is_correct": false
       }
     ],
@@ -237,7 +237,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Techo: MDA/H + 400 ft | Visibilidad: VIS + 1.500 m (sobre los mínimos de Circling del aeródromo)",
+        "text": "Techo: MDA/H + 400 ft | Visibilidad: VIS + 1.500 m",
         "is_correct": true
       },
       {
@@ -252,7 +252,7 @@
       },
       {
         "id": "D",
-        "text": "Mismos mínimos operacionales de circling sin ningún incremento de planificación",
+        "text": "Techo: MDA/H + 100 ft | Visibilidad: VIS + 500 m",
         "is_correct": false
       }
     ],
@@ -276,22 +276,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Se puede seleccionar la fila con los mínimos de planificación más ventajosos, calculando sobre la CAT III (0 + 150 ft / 75 + 450 m = 150 ft / 525 m) en lugar de la CAT I",
+        "text": "Se calculan sobre la fila más ventajosa (CAT III: Techo 150 ft / RVR 525 m)",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Es obligatorio calcular siempre sobre los mínimos de CAT I al no estar autorizada la CAT III en aeródromos alternativos",
+        "text": "Se calculan obligatoriamente sobre CAT I (Techo 350 ft / RVR 1.000 m)",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Se deben promediar los mínimos de la CAT III y la CAT I sumando 200 ft y 800 m",
+        "text": "Se promedian los valores de CAT III y CAT I (Techo 200 ft / RVR 700 m)",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Debe tomarse obligatoriamente la aproximación con el RVR operacional más restrictivo",
+        "text": "Se aplican los mínimos operacionales más restrictivos (Techo 400 ft / RVR 1.500 m)",
         "is_correct": false
       }
     ],
@@ -319,17 +319,17 @@
       },
       {
         "id": "B",
-        "text": "Techo: DA/H + 150 ft | RVR/VIS: RVR/VIS + 450 m",
+        "text": "Techo: DA/H + 150 ft | RVR/VIS: RVR + 450 m",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Techo: DA/H + 100 ft | RVR/VIS: RVR/VIS + 300 m",
+        "text": "Techo: DA/H + 100 ft | RVR/VIS: RVR + 300 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Techo: DA/H + 300 ft | RVR/VIS: RVR/VIS + 1.000 m",
+        "text": "Techo: DA/MDA + 400 ft | RVR/VIS: RVR/VIS + 1.500 m",
         "is_correct": false
       }
     ],
@@ -352,22 +352,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Base del techo: DA/H o MDA/H + 400 ft | RVR/VIS: RVR/VIS + 1.500 m",
+        "text": "Techo: DA/MDA + 400 ft | RVR/VIS: RVR/VIS + 1.500 m",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Base del techo: DA/H o MDA/H + 200 ft | RVR/VIS: RVR/VIS + 800 m",
+        "text": "Techo: DA/MDA + 200 ft | RVR/VIS: RVR/VIS + 1.000 m",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Base del techo: DA/H o MDA/H + 200 ft | RVR/VIS: RVR/VIS + 1.000 m",
+        "text": "Techo: DA/H + 200 ft | RVR/VIS: RVR/VIS + 800 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Base del techo: DA/H o MDA/H + 300 ft | RVR/VIS: RVR/VIS + 1.200 m",
+        "text": "Techo: DA/H + 150 ft | RVR/VIS: RVR + 450 m",
         "is_correct": false
       }
     ],
@@ -468,22 +468,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Debe encontrarse en o por encima de los MÍNIMOS DE OPERACIÓN (mínimos de aterrizaje aplicables: RVR/VIS y techo >= MDH para Tipo A o Circling) desde 1 hora antes hasta 1 hora después de la hora estimada de llegada (ETA ± 1 HR)",
+        "text": "Mínimos de OPERACIÓN (mínimos de aterrizaje aplicables) durante el periodo ETA ± 1 hora",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Debe cumplir obligatoriamente los mínimos de planificación incrementados de la Tabla 1A o Tabla 1B",
+        "text": "Mínimos de PLANIFICACIÓN (con incrementos de Tabla 1A o 1B) durante el periodo ETA ± 1 hora",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Basta con que cumpla los mínimos de operación exactamente en el instante de la suelta de frenos para el despegue",
+        "text": "Mínimos de OPERACIÓN únicamente en el instante exacto de la suelta de frenos para despegue",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Debe encontrarse en condiciones VMC absolutas (techo > 3.000 ft y visibilidad > 8 km)",
+        "text": "Condiciones VMC obligatorias (techo >= 3.000 ft y visibilidad >= 8 km) durante el despegue",
         "is_correct": false
       }
     ],
@@ -527,7 +527,7 @@
       }
     ],
     "explanation": {
-      "text": "Conforme al **MOA 8.1.2.2** y **CAT.OP.MPA.181(b)**, no se requiere alternativo de destino si:\n1. La duración del vuelo planificado desde el despegue hasta el aterrizaje no supera las **6 horas**;\n2. Existen **dos pistas utilizables y separadas** en el destino;\n3. Los informes o pronósticos indican que desde **1h antes hasta 1h después de la ETA (ETA ± 1 HR)** el techo será $\\ge 2.000\\text{ ft}$ (o la altura de circuito $+ 500\\text{ ft}$, la que sea mayor) y la visibilidad $\\ge 5\\text{ km}$.\n*O bien si el destino está clasificado como aeródromo aislado (Isolated aerodrome)*.",
+      "text": "Conforme al **MOA 8.1.2.2** y **CAT.OP.MPA.181(b)**, no se requiere alternativo de destino si:\n1. La duración del vuelo planificado desde el despegue hasta el aterrizaje no supera las **6 horas**;\n2. Existen **dos pistas utilizables y separadas** en el destino;\n3. Los informes o pronósticos indican que desde **1h antes hasta 1h después de la ETA (ETA ± 1 HR)** el techo será $≥ 2.000\\text{ ft}$ (o la altura de circuito $+ 500\\text{ ft}$, la que sea mayor) y la visibilidad $≥ 5\\text{ km}$.\n*O bien si el destino está clasificado como aeródromo aislado (Isolated aerodrome)*.",
       "references": [
         "MOA Binter ED06 RN27, Capítulo 8.1.2.2",
         "CAT.OP.MPA.181(b)"
@@ -585,22 +585,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Destino y Alternativo de Despegue: Mínimos de OPERACIÓN (mínimos de aterrizaje aplicables) | Alternativos de Destino y en Ruta (ERA / Fuel ERA): Mínimos de PLANIFICACIÓN (Tabla 1A/1B)",
+        "text": "Destino y Alt. Despegue: Mínimos de OPERACIÓN | Alternativos Destino y ERA: Mínimos de PLANIFICACIÓN",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Todos los aeródromos (destino y todos los alternativos de despegue, ruta y destino) deben cumplir obligatoriamente los mínimos de PLANIFICACIÓN",
+        "text": "Destino y todos los Alternativos (Despegue, ERA, Destino): Mínimos de PLANIFICACIÓN obligatorios",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Destino: Mínimos de PLANIFICACIÓN | Todos los alternativos: Mínimos de OPERACIÓN",
+        "text": "Destino: Mínimos de PLANIFICACIÓN | Todos los Alternativos (Despegue, ERA, Destino): Mínimos de OPERACIÓN",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Todos los aeródromos deben cumplir únicamente los mínimos de OPERACIÓN sin ninguna tabla de planificación",
+        "text": "Destino y todos los Alternativos (Despegue, ERA, Destino): Mínimos de OPERACIÓN sin incrementos",
         "is_correct": false
       }
     ],
@@ -971,27 +971,27 @@
     "options": [
       {
         "id": "A",
-        "text": "Tipo A: DH o MDH igual o superior a 250 ft (MDH/DH >= 250 ft) | Tipo B: DH inferior a 250 ft (DH < 250 ft)",
+        "text": "Tipo A: MDH/DH >= 250 ft | Tipo B: DH < 250 ft",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Tipo A: Aproximaciones de precisión | Tipo B: Aproximaciones de no precisión",
+        "text": "Tipo A: MDH/DH >= 200 ft | Tipo B: DH < 200 ft",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Tipo A: Aproximaciones visuales | Tipo B: Aproximaciones por instrumentos",
+        "text": "Tipo A: Aproximaciones 2D | Tipo B: Aproximaciones 3D",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Tipo A: DH < 200 ft | Tipo B: DH >= 200 ft",
+        "text": "Tipo A: DH < 250 ft | Tipo B: MDH/DH >= 250 ft",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Conforme a **EASA Part-CAT (Definiciones y AMC1 CAT.OP.MPA.110)** y el **MOA 8.1.3**:\n- **Operación de aproximación por instrumentos Tipo A:** Altura de decisión o altura mínima de descenso $\\ge 250\\text{ ft}$ ($\\text{MDH/DH} \\ge 250\\text{ ft}$).\n- **Operación de aproximación por instrumentos Tipo B:** Altura de decisión inferior a $250\\text{ ft}$ ($\\text{DH} < 250\\text{ ft}$), subdividiéndose en CAT I (DH 200 a 249 ft), CAT II (DH 100 a 199 ft) y CAT III (DH < 100 ft o sin DH).",
+      "text": "Conforme a **EASA Part-CAT (Definiciones y AMC1 CAT.OP.MPA.110)** y el **MOA 8.1.3**:\n- **Operación de aproximación por instrumentos Tipo A:** Altura de decisión o altura mínima de descenso $≥ 250\\text{ ft}$ ($\\text{MDH/DH} ≥ 250\\text{ ft}$).\n- **Operación de aproximación por instrumentos Tipo B:** Altura de decisión inferior a $250\\text{ ft}$ ($\\text{DH} < 250\\text{ ft}$), subdividiéndose en CAT I (DH 200 a 249 ft), CAT II (DH 100 a 199 ft) y CAT III (DH < 100 ft o sin DH).",
       "references": [
         "MOA Binter ED06 RN27, Capítulo 8.1.3 (pág. 347)",
         "EASA Part-CAT"
@@ -1010,17 +1010,17 @@
     "options": [
       {
         "id": "A",
-        "text": "Techo: 700 ft (500 + 200 ft) | Visibilidad: 2.800 m (1.800 + 1.000 m)",
+        "text": "Techo: 700 ft | Visibilidad: 2.800 m",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Techo: 600 ft (400 + 200 ft) | RVR: 2.200 m (1.200 + 1.000 m)",
+        "text": "Techo: 600 ft | Visibilidad: 2.200 m",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Techo: 900 ft (500 + 400 ft) | Visibilidad: 3.300 m (1.800 + 1.500 m)",
+        "text": "Techo: 900 ft | Visibilidad: 3.300 m",
         "is_correct": false
       },
       {
@@ -1048,22 +1048,22 @@
     "options": [
       {
         "id": "A",
-        "text": "En todas las aproximaciones de no precisión (Tipo A) y en aproximaciones en circuito (Circling); en Tipo B con 2 pistas separadas solo se requiere RVR/visibilidad si la reglamentación aplicable no impone techo",
+        "text": "En aproximaciones Tipo A y Circling; en Tipo B con 2 pistas separadas no se requiere techo salvo exigencia estatal",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Únicamente en aproximaciones CAT III",
+        "text": "Únicamente en aproximaciones Tipo B (CAT I/II/III); en Tipo A y Circling solo se requiere visibilidad",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Nunca se requiere techo en planificación, solo visibilidad horizontal",
+        "text": "En todas las aproximaciones Tipo A, Tipo B y Circling por igual sin excepción alguna",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Solo cuando el viento en superficie sea variable",
+        "text": "Nunca es obligatorio el techo en planificación, evaluándose exclusivamente el RVR/visibilidad",
         "is_correct": false
       }
     ],
@@ -1087,22 +1087,22 @@
     "options": [
       {
         "id": "A",
-        "text": "1 hora de tiempo de vuelo a velocidad de crucero con un motor inoperativo (OEI) en aire en calma",
+        "text": "1 hora de vuelo a velocidad de crucero con un motor inoperativo (OEI) en aire en calma",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "2 horas de tiempo de vuelo con un motor inoperativo",
+        "text": "2 horas de vuelo a velocidad de crucero con un motor inoperativo (OEI) en aire en calma",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "30 minutos de tiempo de vuelo con todos los motores operativos",
+        "text": "30 minutos de vuelo a velocidad normal de crucero con todos los motores operativos",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "45 minutos a velocidad de máxima autonomía",
+        "text": "45 minutos de vuelo a velocidad de crucero con un motor inoperativo (OEI) en aire en calma",
         "is_correct": false
       }
     ],
@@ -1126,22 +1126,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Debe cumplir con los MÍNIMOS DE PLANIFICACIÓN (Tabla 1A o 1B) para la nueva hora estimada de llegada prevista (ETA ± 1h)",
+        "text": "Debe cumplir los MÍNIMOS DE PLANIFICACIÓN (Tabla 1A o 1B) para la nueva ETA prevista (ETA ± 1h)",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Basta con que cumpla los mínimos de operación en el momento exacto de la toma",
+        "text": "Basta con que cumpla los MÍNIMOS DE OPERACIÓN del aeródromo en el momento previsto de la toma",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "No se requiere ninguna verificación meteorológica si el nuevo alternativo dispone de ILS",
+        "text": "No se requiere ninguna verificación meteorológica si el nuevo alternativo dispone de ILS CAT I",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Solo se requiere que el viento en superficie sea inferior a 25 nudos",
+        "text": "Debe cumplir exclusivamente limitaciones de viento en superficie sin evaluar techo ni visibilidad",
         "is_correct": false
       }
     ],

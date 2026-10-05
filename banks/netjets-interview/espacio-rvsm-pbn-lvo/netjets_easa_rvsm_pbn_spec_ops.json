@@ -65,7 +65,7 @@
       }
     ],
     "explanation": {
-      "text": "### Mandatory 4 RVSM Systems (SPA.RVSM.110)\n* To operate in RVSM airspace, the aircraft must have **ALL 4 systems operational**:\n  1. **Two independent primary altimeters** (ADC / air data computers).\n  2. **One Automatic Altitude Control System (Autopilot)** maintaining level within $\\pm 65\\text{ ft}$.\n  3. **One Altitude Alerting System** (warning at deviations > $200\\text{ ft}$ or $300\\text{ ft}$).\n  4. **One SSR Mode C/S Transponder** connected to the active primary altimeter.",
+      "text": "### Mandatory 4 RVSM Systems (SPA.RVSM.110)\n* To operate in RVSM airspace, the aircraft must have **ALL 4 systems operational**:\n  1. **Two independent primary altimeters** (ADC / air data computers).\n  2. **One Automatic Altitude Control System (Autopilot)** maintaining level within $± 65\\text{ ft}$.\n  3. **One Altitude Alerting System** (warning at deviations > $200\\text{ ft}$ or $300\\text{ ft}$).\n  4. **One SSR Mode C/S Transponder** connected to the active primary altimeter.",
       "references": [
         "EASA Part-SPA.RVSM.110",
         "ICAO Doc 9574"
@@ -103,7 +103,7 @@
       }
     ],
     "explanation": {
-      "text": "### RVSM Altimetry Tolerances\n* **Ground Check (with local QNH):**\n  - Primary altimeter vs. Surveyed Field Elevation: max **$\\pm 75\\text{ ft}$** (or $\\pm 50\\text{ ft}$ per AFM).\n  - Difference between Pilot & Co-pilot Primary Altimeters: max **$50\\text{ to }75\\text{ ft}$**.\n* **In-Flight Cruise Crosscheck (Standard 1013.25 hPa):**\n  - Max allowable discrepancy between primary altimeters: **$200\\text{ ft}$ (60 m)**.\n  - Autopilot must maintain level within **$\\pm 65\\text{ ft}$ ($\\pm 20\\text{ m}$)**.",
+      "text": "### RVSM Altimetry Tolerances\n* **Ground Check (with local QNH):**\n  - Primary altimeter vs. Surveyed Field Elevation: max **$± 75\\text{ ft}$** (or $± 50\\text{ ft}$ per AFM).\n  - Difference between Pilot & Co-pilot Primary Altimeters: max **$50\\text{ to }75\\text{ ft}$**.\n* **In-Flight Cruise Crosscheck (Standard 1013.25 hPa):**\n  - Max allowable discrepancy between primary altimeters: **$200\\text{ ft}$ (60 m)**.\n  - Autopilot must maintain level within **$± 65\\text{ ft}$ ($± 20\\text{ m}$)**.",
       "references": [
         "ICAO Doc 9574 (Chapter 4 - Operating Procedures)",
         "EASA AMC1 SPA.RVSM.105"
@@ -217,7 +217,7 @@
       }
     ],
     "explanation": {
-      "text": "### TCAS II Version 7.1 Response Standards\n* **Reaction Time:**\n  - **Initial RA:** Crew must initiate pitch response within **$\\le 5\\text{ seconds}$**.\n  - **Reversal / Strengthening RA:** Crew must respond within **$\\le 2.5\\text{ seconds}$**.\n* **Absolute Priority:** A TCAS RA **ALWAYS OVERRIDES ATC INSTRUCTIONS**. Never maneuver opposite to an RA.\n* **Phraseology:** Notify ATC: `[Callsign] TCAS RA`, and upon return: `CLEAR OF CONFLICT, RETURNING TO [FL]`.",
+      "text": "### TCAS II Version 7.1 Response Standards\n* **Reaction Time:**\n  - **Initial RA:** Crew must initiate pitch response within **$≤ 5\\text{ seconds}$**.\n  - **Reversal / Strengthening RA:** Crew must respond within **$≤ 2.5\\text{ seconds}$**.\n* **Absolute Priority:** A TCAS RA **ALWAYS OVERRIDES ATC INSTRUCTIONS**. Never maneuver opposite to an RA.\n* **Phraseology:** Notify ATC: `[Callsign] TCAS RA`, and upon return: `CLEAR OF CONFLICT, RETURNING TO [FL]`.",
       "references": [
         "ICAO Doc 9863 (Airborne Collision Avoidance System Manual)",
         "EASA SERA.11014"
@@ -293,7 +293,7 @@
       }
     ],
     "explanation": {
-      "text": "### RNAV vs RNP (ICAO Doc 9613 PBN Manual)\n* **RNAV (Area Navigation):** Navigation along any desired flight path within covered navigational aid limits. **No On-Board Performance Monitoring & Alerting (OBPMA) required**.\n* **RNP (Required Navigation Performance):** Area navigation that **REQUIRES on-board performance monitoring and alerting (OBPMA)**. If the system cannot maintain the specified lateral accuracy (e.g. $\\pm 0.3\\text{ NM}$ in RNP APCH) 95% of the time, it immediately alerts the crew.",
+      "text": "### RNAV vs RNP (ICAO Doc 9613 PBN Manual)\n* **RNAV (Area Navigation):** Navigation along any desired flight path within covered navigational aid limits. **No On-Board Performance Monitoring & Alerting (OBPMA) required**.\n* **RNP (Required Navigation Performance):** Area navigation that **REQUIRES on-board performance monitoring and alerting (OBPMA)**. If the system cannot maintain the specified lateral accuracy (e.g. $± 0.3\\text{ NM}$ in RNP APCH) 95% of the time, it immediately alerts the crew.",
       "references": [
         "ICAO Doc 9613 (PBN Manual)",
         "EASA Part-SPA.PBN"
@@ -521,7 +521,7 @@
       }
     ],
     "explanation": {
-      "text": "### ICAO Wake Turbulence Categories (Doc 4444)\n* **Heavy (H):** MTOW $\\ge 136,000\\text{ kg}$.\n* **Medium (M):** $7,000\\text{ kg} < \\text{MTOW} < 136,000\\text{ kg}$ (Challenger, Latitude, Global).\n* **Light (L):** $\\le 7,000\\text{ kg}$ (Phenom 300, Citation Mustang).\n* **Radar Separation behind Heavy on Approach:**\n  - Behind Heavy -> **Medium = 5 NM**\n  - Behind Heavy -> **Light = 6 NM**",
+      "text": "### ICAO Wake Turbulence Categories (Doc 4444)\n* **Heavy (H):** MTOW $≥ 136,000\\text{ kg}$.\n* **Medium (M):** $7,000\\text{ kg} < \\text{MTOW} < 136,000\\text{ kg}$ (Challenger, Latitude, Global).\n* **Light (L):** $≤ 7,000\\text{ kg}$ (Phenom 300, Citation Mustang).\n* **Radar Separation behind Heavy on Approach:**\n  - Behind Heavy -> **Medium = 5 NM**\n  - Behind Heavy -> **Light = 6 NM**",
       "references": [
         "ICAO Doc 4444 (PANS-ATM Chapter 5)",
         "EASA SERA.8015"
@@ -559,7 +559,7 @@
       }
     ],
     "explanation": {
-      "text": "### RAIM Prediction & RNP Navigation (SPA.PBN)\n* **RAIM (Receiver Autonomous Integrity Monitoring):** Requires **$\\ge 5$ satellites** (fault detection) or **$\\ge 6$ satellites** (fault exclusion / FDE).\n* If pre-flight RAIM prediction indicates an integrity outage at ETA, dispatch based solely on GPS/RNP approach is **PROHIBITED**; ground-based conventional aids (ILS/VOR) or suitable alternates are required.",
+      "text": "### RAIM Prediction & RNP Navigation (SPA.PBN)\n* **RAIM (Receiver Autonomous Integrity Monitoring):** Requires **$≥ 5$ satellites** (fault detection) or **$≥ 6$ satellites** (fault exclusion / FDE).\n* If pre-flight RAIM prediction indicates an integrity outage at ETA, dispatch based solely on GPS/RNP approach is **PROHIBITED**; ground-based conventional aids (ILS/VOR) or suitable alternates are required.",
       "references": [
         "EASA Part-SPA.PBN.105",
         "ICAO Doc 9613"
