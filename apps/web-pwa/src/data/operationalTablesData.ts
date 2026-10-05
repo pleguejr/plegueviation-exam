@@ -772,635 +772,635 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
   },
 
   // =========================================================================
-  // SECCIÓN ESPECIAL: PREPARACIÓN ENTREVISTA NETJETS & NORMATIVA EASA AIR OPS
+  // =========================================================================
+  // SPECIAL SECTION: NETJETS INTERVIEW PREP & EASA AIR OPS SYNTHETIC TABLES (ENGLISH)
   // =========================================================================
 
-  // 12. ESQUEMAS DE COMBUSTIBLE EASA: PLAN BÁSICO, CONTINGENCIA Y RESERVA FINAL
+  // 12. EASA FUEL SCHEMES: BASIC SCHEME, CONTINGENCY & FINAL RESERVES
   {
     id: 'netjets-easa-fuel-schemes',
     category: 'easa-netjets',
-    title: 'Esquemas de Combustible EASA: Plan Básico, Contingencia y Reservas Finales',
-    subtitle: 'Desglose oficial de bloques de combustible, políticas de aeródromo aislado y llamadas de emergencia (CAT.OP.MPA.180/181/182)',
+    title: 'EASA Fuel Schemes: Basic Scheme, Contingency & Final Reserves',
+    subtitle: 'Official Breakdown of Fuel Blocks, Isolated Aerodrome Policy, and Emergency Calls (CAT.OP.MPA.180/181/182)',
     manualRef: 'EASA Part-CAT.OP.MPA.180 / 181 / 182 • AMC1 CAT.OP.MPA.181 • ICAO Doc 4444',
     badge: 'EASA Fuel Schemes',
-    description: 'Estructura normativa de planificación de combustible para transporte aéreo comercial (CAT) y aviación corporativa. Define con precisión el combustible de rodaje (Taxi), viaje (Trip), contingencia, alternativo, reserva final (Final Reserve) y combustible adicional.',
-    warningAlert: 'Llamada de Emergencia MAYDAY FUEL: Es obligatoria cuando la cantidad estimada de combustible utilizable al aterrizar en el aeródromo seguro más cercano es INFERIOR al Combustible de Reserva Final (30 min en reactores). Otorga prioridad absoluta.',
-    headers: ['Componente de Combustible', 'Definición & Cálculo Reglamentario', 'Reactores / Turbina', 'Pistón', 'Consideraciones Operacionales'],
+    description: 'Regulatory fuel planning framework under European Commercial Air Transport (CAT) and executive aviation. Accurately defines Taxi, Trip, Contingency, Alternate, Final Reserve, and Additional fuel components.',
+    warningAlert: 'MAYDAY FUEL Emergency Call: Mandatory whenever the estimated usable fuel on touchdown at the nearest safe aerodrome is LESS than the Final Reserve Fuel (30 min for jet aircraft). Imparts absolute distress landing priority.',
+    headers: ['Fuel Component', 'Regulatory Definition & Calculation', 'Turbine / Jet Aircraft', 'Piston Aircraft', 'Operational Considerations'],
     rows: [
       {
-        col1: 'Taxi Fuel (Rodaje)',
-        col2: 'Cantidad calculada para el consumo de la APU y rodaje antes del despegue considerando demoras locales.',
-        col3: 'Consumo real previsto o estándar del tipo',
-        col4: 'Estándar según AFM',
-        col5: 'No puede utilizarse para compensar déficits de vuelo.',
+        col1: 'Taxi Fuel',
+        col2: 'Fuel calculated for APU operation and taxiing before takeoff, accounting for local airport departure delays.',
+        col3: 'Actual expected consumption or aircraft type standard',
+        col4: 'Standard per AFM',
+        col5: 'Cannot be used to compensate for in-flight fuel deficits.',
         highlight: false,
-        notes: 'Incluye consumo de APU en rampa antes del calzo.'
+        notes: 'Includes APU consumption during passenger boarding and pushback.'
       },
       {
-        col1: 'Trip Fuel (Viaje)',
-        col2: 'Combustible desde la carrera de despegue hasta la toma y aterrizaje en el destino.',
-        col3: 'Despegue, ascenso, crucero, descenso, aproximación y aterrizaje',
-        col4: 'Despegue a toma completa',
-        col5: 'Basado en datos de consumo real y meteorología pronosticada (viento y temp).',
+        col1: 'Trip Fuel',
+        col2: 'Fuel required from brake release on takeoff roll to touchdown and landing at the destination aerodrome.',
+        col3: 'Takeoff, climb, cruise, descent, approach, and landing',
+        col4: 'Takeoff to full stop landing',
+        col5: 'Calculated using actual performance data and forecasted wind/temperature profiles.',
         highlight: false,
-        notes: 'Calculado a los niveles de vuelo óptimos del FMS.'
+        notes: 'Based on optimal FMS routing and cruising flight levels.'
       },
       {
-        col1: 'Contingency Fuel (Contingencia Estándar)',
-        col2: '5 % del Trip Fuel planificado o 5 minutos de espera a 1.500 ft sobre el destino (el mayor de ambos).',
-        col3: '5 % Trip Fuel (Mín. 5 min holding a 1.500 ft ISA)',
-        col4: '5 % Trip Fuel (Mín. 5 min)',
-        col5: 'Reducible al 3 % si se dispone de un alternativo en ruta adecuado (ERA) en ruta.',
+        col1: 'Contingency Fuel (Standard 5%)',
+        col2: '5% of planned Trip Fuel or 5 minutes holding at 1,500 ft above destination elevation (whichever is greater).',
+        col3: '5% Trip Fuel (Min 5 min holding at 1,500 ft ISA)',
+        col4: '5% Trip Fuel (Min 5 min)',
+        col5: 'Reducible to 3% if an approved En-Route Alternate (Fuel ERA) is designated on route.',
         highlight: true,
-        notes: 'También aplicable bajo esquema estadístico de combustible (99% / 95%).'
+        notes: 'May also be determined via an approved statistical fuel consumption scheme (99% / 95%).'
       },
       {
-        col1: 'Alternate Fuel (Alternativo)',
-        col2: 'Aproximación frustrada en destino desde DA/MDA, ascenso, crucero al alternativo, descenso, aproximación y toma.',
-        col3: 'Frustrada + Ascenso + Crucero + Descenso + Toma',
-        col4: 'Mismo perfil completo',
-        col5: 'Si se seleccionan dos alternativos, se calcula para el que requiera mayor cantidad.',
+        col1: 'Alternate Fuel',
+        col2: 'Missed approach at destination from DA/MDA, climb, cruise to alternate, descent, approach, and landing.',
+        col3: 'Missed Approach + Climb + Cruise + Descent + Landing',
+        col4: 'Identical complete flight profile',
+        col5: 'If two alternates are selected, calculated for the alternate requiring the greater fuel quantity.',
         highlight: false,
-        notes: 'No requerido si el vuelo < 6h y destino tiene 2 pistas independientes con meteo adecuada.'
+        notes: 'Not required if flight < 6h and destination has 2 independent runways with benign weather.'
       },
       {
-        col1: 'Final Reserve Fuel (Reserva Final - FRF)',
-        col2: 'Combustible para volar a velocidad de espera a 1.500 ft sobre el aeródromo en condiciones estándar ISA.',
-        col3: '30 minutos (Holding Speed a 1.500 ft AAL)',
-        col4: '45 minutos (Holding Speed a 1.500 ft AAL)',
-        col5: 'RESERVA INVIOLABLE. Si se prevé aterrizar con menos de este valor: MAYDAY MAYDAY MAYDAY FUEL.',
+        col1: 'Final Reserve Fuel (FRF)',
+        col2: 'Fuel to fly at holding speed at 1,500 ft (450 m) above aerodrome elevation in standard ISA conditions.',
+        col3: '30 minutes (Holding Speed at 1,500 ft AAL)',
+        col4: '45 minutes (Holding Speed at 1,500 ft AAL)',
+        col5: 'SACROSANCT INVIOLABLE RESERVE. If landing with less than FRF is anticipated: MAYDAY MAYDAY MAYDAY FUEL.',
         highlight: true,
-        notes: 'Calculado con la masa estimada de aterrizaje en el alternativo.'
+        notes: 'Calculated with the estimated landing mass at the destination alternate.'
       },
       {
-        col1: 'Additional Fuel: Aeródromo Aislado',
-        col2: 'Combustible adicional obligatorio cuando no existe ningún alternativo de destino disponible.',
-        col3: '2 horas a régimen de consumo normal de crucero sobre destino (incluye FRF)',
-        col4: '45 min + 15 % crucero (o 2 horas, lo que sea menor)',
-        col5: 'Permite volar al destino y mantener una espera prolongada con máxima seguridad.',
+        col1: 'Additional Fuel: Isolated Aerodrome',
+        col2: 'Mandatory additional fuel required when no suitable destination alternate aerodrome is available.',
+        col3: '2 hours at normal cruising consumption above destination (includes Final Reserve Fuel)',
+        col4: '45 min + 15% cruise (or 2 hours, whichever is less)',
+        col5: 'Guarantees the ability to hold overhead destination with maximum safety margin.',
         highlight: false,
-        notes: 'Aplicable a destinos remotos o islas oceánicas.'
+        notes: 'Applicable to remote oceanic or island destinations.'
       },
       {
-        col1: 'MINIMUM FUEL (Llamada ATC)',
-        col2: 'Declaración cuando el vuelo está comprometido a aterrizar en un aeródromo y cualquier demora puede comprometer el FRF.',
-        col3: 'Informa al ATC: no tolera demoras',
-        col4: 'Informa al ATC: no tolera demoras',
-        col5: 'NO CONFIERE PRIORIDAD por sí misma; alerta a control de no impartir desvíos adicionales.',
+        col1: 'MINIMUM FUEL (ATC Call)',
+        col2: 'Transmission informing ATC that all aerodrome options are committed and any delay may jeopardize Final Reserve Fuel.',
+        col3: 'Informs ATC: cannot accept delays',
+        col4: 'Informs ATC: cannot accept delays',
+        col5: 'DOES NOT IMPART PRIORITY by itself; alerts ATC not to assign vector delays or unexpected holding.',
         highlight: false,
-        notes: 'Debe notificarse antes de que se invada la reserva final.'
+        notes: 'Must be declared before invading final reserve fuel.'
       },
       {
-        col1: 'MAYDAY FUEL (Llamada de Emergencia)',
-        col2: 'Declaración de socorro cuando el combustible estimado en la toma en el aeródromo seguro más cercano es menor que el FRF.',
-        col3: 'Prioridad absoluta de aterrizaje (MAYDAY x3)',
-        col4: 'Prioridad absoluta de aterrizaje (MAYDAY x3)',
-        col5: 'OBLIGATORIA según CAT.OP.MPA.182(e). Da prioridad inmediata de vectores y aproximación.',
+        col1: 'MAYDAY FUEL (Distress Call)',
+        col2: 'Mandatory distress declaration when calculated usable fuel upon touchdown is LESS than Final Reserve Fuel.',
+        col3: 'Absolute landing priority (MAYDAY x3)',
+        col4: 'Absolute landing priority (MAYDAY x3)',
+        col5: 'MANDATORY under CAT.OP.MPA.182(e). Grants immediate radar priority and direct approach routing.',
         highlight: true,
-        notes: 'Requiere reporte de seguridad formal posterior (ASR / MOR).'
+        notes: 'Requires filing an Air Safety Report (ASR / MOR) within 72 hours.'
       }
     ],
     extraNotes: [
-      'Monitorización en vuelo: Se deben registrar y comprobar los consumos y remanentes a intervalos no superiores a 60 minutos o en cada waypoint principal (CAT.OP.MPA.182).',
-      'Punto de Decisión (Decision Point Procedure): Permite optimizar el contingency fuel calculando el 5% desde el DP al destino.',
-      'Alternativo de Despegue (Take-off Alternate): Requerido si la meteo de salida está por debajo de los mínimos de aterrizaje. En bimotores a no más de 1 hora a velocidad OEI en aire en calma.'
+      'In-Flight Fuel Monitoring: Actual fuel remaining must be checked and recorded at least every 30 to 60 minutes or at planned waypoints (CAT.OP.MPA.182).',
+      'Decision Point Procedure (RCF): Optimizes payload by calculating contingency fuel from the Decision Point to destination.',
+      'Take-Off Alternate: Mandatory if departure weather is below landing minima. In twin-engine jets, located within 1 hour flight time at OEI cruise speed in still air.'
     ]
   },
 
-  // 13. LÍMITES FTL EASA: FDP DIARIO BÁSICO, DESCANSOS Y ACUMULADOS
+  // 13. EASA FTL LIMITS: BASIC DAILY FDP, REST & CUMULATIVE DUTY
   {
     id: 'netjets-easa-ftl-fdp',
     category: 'easa-netjets',
-    title: 'Límites FTL EASA: FDP Diario Básico, Descansos y Acumulados',
-    subtitle: 'Tabla de Período Máximo de Actividad de Vuelo (ORO.FTL.205), Descansos en Base / Fuera de Base y Discrecionalidad',
-    manualRef: 'EASA Part-ORO.FTL.105 / 205 / 210 / 225 / 235 • CS FTL.1.205',
+    title: 'EASA Flight Time Limitations (FTL): Maximum Daily FDP, Rest & Cumulative Duty',
+    subtitle: 'Maximum Flight Duty Period Table (ORO.FTL.205), Home Base / Outstation Rest, Split Duty and Commander\'s Discretion',
+    manualRef: 'EASA Part-ORO.FTL.105 / 205 / 210 / 225 / 235 • CS-FTL.1.205',
     badge: 'EASA FTL / Rest',
-    description: 'Regulación europea integral sobre limitaciones de tiempo de vuelo y actividad de servicio (FTL). Esencial para la toma de decisiones operativas de comandantes y tripulaciones en aviación ejecutiva y de línea.',
-    warningAlert: 'WOCL (Window of Circadian Low): Tramo de 02:00 a 05:59 en el huso donde la tripulación está aclimatada. Penaliza severamente el FDP máximo permitido.',
-    headers: ['Concepto / Parámetro FTL', 'Límite Estándar EASA', 'Condición / Sectores', 'Extensiones / Variaciones', 'Notas Críticas'],
+    description: 'Comprehensive European regulation on flight and duty time limitations (FTL). Essential for operational decision-making by Commanders and flight crews in executive and airline operations.',
+    warningAlert: 'WOCL (Window of Circadian Low): Period between 02:00 and 05:59 in the crew member\'s acclimatised time zone. Heavily reduces maximum permitted daily FDP.',
+    headers: ['FTL Concept / Parameter', 'Standard EASA Limit', 'Condition / Sectors', 'Extensions / Variations', 'Critical Operational Rules'],
     rows: [
       {
-        col1: 'FDP Diario Básico: Presentación 06:00 - 13:29',
-        col2: '13:00 horas',
-        col3: '1 a 2 sectores de vuelo (Tripulación aclimatada)',
-        col4: '3 sectores: 12:30 | 4 sectores: 12:00 | 5 sectores: 11:30',
-        col5: 'Máxima duración estándar para vuelos diurnos.',
+        col1: 'Basic Daily FDP: Report 06:00 - 13:29',
+        col2: '13:00 hours',
+        col3: '1 to 2 flight sectors (Acclimatised crew)',
+        col4: '3 sectors: 12:30 | 4 sectors: 12:00 | 5 sectors: 11:30',
+        col5: 'Maximum standard FDP for daytime operations.',
         highlight: true,
-        notes: 'Reducción escalonada de 30 min por cada sector adicional.'
+        notes: 'Stepped reduction of 30 minutes for each additional sector.'
       },
       {
-        col1: 'FDP Diario Básico: Invasión WOCL (02:00 - 04:59)',
-        col2: '11:00 horas',
-        col3: '1 a 2 sectores (Inicio en ventana de mínimo circadiano)',
-        col4: '3 sectores: 10:30 | 4 sectores: 10:00 | 5 sectores: 09:30',
-        col5: 'Fuerte penalización por degradación del estado de alerta.',
+        col1: 'Basic Daily FDP: WOCL Encroachment (02:00 - 04:59)',
+        col2: '11:00 hours',
+        col3: '1 to 2 sectors (Report in Window of Circadian Low)',
+        col4: '3 sectors: 10:30 | 4 sectors: 10:00 | 5 sectors: 09:30',
+        col5: 'Heavy reduction to prevent acute fatigue degradation.',
         highlight: false,
-        notes: 'WOCL comprende de 02:00 a 05:59 horas.'
+        notes: 'WOCL spans from 02:00 to 05:59 local time.'
       },
       {
-        col1: 'Tripulación No Aclimatada (Unacclimatised)',
-        col2: '11:00 horas (Máx)',
-        col3: '1 a 2 sectores independientemente de la hora de firma',
-        col4: 'Reducción de 30 min por sector hasta mínimo de 09:00 h',
-        col5: 'Aplica cuando se cruzan más de 3 husos horarios sin 48h de adaptación.',
+        col1: 'Unacclimatised Crew (State X)',
+        col2: '11:00 hours (Max)',
+        col3: '1 to 2 sectors regardless of report time',
+        col4: 'Reduction of 30 min per sector down to minimum of 09:00 h',
+        col5: 'Applies when crossing multiple time zones without 48h adaptation.',
         highlight: false,
-        notes: 'Común en vuelos transatlánticos corporativos.'
+        notes: 'Common in long-range executive operations.'
       },
       {
-        col1: 'Extensión del FDP sin descanso a bordo',
-        col2: 'Hasta +1 hora (Máx. 2 veces en 7 días)',
-        col3: 'Máximo 2 sectores; requiere descanso previo incrementado en 2h o posterior en 4h',
-        col4: 'No permitida si el FDP invade la WOCL',
-        col5: 'Planificada previamente antes del servicio.',
+        col1: 'FDP Extension without In-Flight Rest',
+        col2: 'Up to +1 hour (Max 2 times in 7 days)',
+        col3: 'Max 2 sectors; requires pre-duty rest +2h or post-duty rest +4h',
+        col4: 'Prohibited if FDP encroaches the WOCL',
+        col5: 'Must be pre-planned before the start of the duty period.',
         highlight: false,
-        notes: 'No confundir con la discrecionalidad del comandante.'
+        notes: 'Not to be confused with Commander\'s Discretion.'
       },
       {
-        col1: 'Servicio Fraccionado (Split Duty)',
-        col2: 'Extensión equivalente a una fracción del descanso en tierra',
-        col3: 'Pausa continua en tierra de al menos 3 horas en instalación/alojamiento adecuado',
-        col4: 'Normalmente 50 % del descanso si hay alojamiento adecuado',
-        col5: 'El tiempo de descanso no computa como parte del FDP.',
+        col1: 'Split Duty (ORO.FTL.220)',
+        col2: 'Extension equal to 50% of ground break duration',
+        col3: 'Continuous ground break of at least 3 hours in suitable accommodation',
+        col4: 'Requires private quiet room with bed (suitable accommodation)',
+        col5: 'Break time does not count as part of FDP sector limit.',
         highlight: false,
-        notes: 'Pausa < 3h no cuenta para split duty.'
+        notes: 'Breaks under 3 hours do not qualify for split duty extension.'
       },
       {
-        col1: 'Discrecionalidad del Comandante (Commander\'s Discretion)',
-        col2: 'Hasta +2 horas (Estándar) | Hasta +3 horas (Reforzada)',
-        col3: 'Circunstancias imprevistas ocurridas DESPUÉS de la hora de presentación',
-        col4: 'Requiere consulta obligatoria a todos los tripulantes sobre fatiga',
-        col5: 'Informe formal obligatorio al operador si la extensión es > 1 hora (plazo 28 días).',
+        col1: 'Commander\'s Discretion (ORO.FTL.205(f))',
+        col2: 'Up to +2 hours (Unaugmented) | Up to +3 hours (Augmented)',
+        col3: 'Unforeseen operational delays occurring AFTER report time',
+        col4: 'Mandatory crew consultation on fatigue before exercising discretion',
+        col5: 'Formal report required if extension exceeds 1 hour (28-day deadline).',
         highlight: true,
-        notes: 'Potestad indelegable del Comandante en defensa de la operación.'
+        notes: 'Non-delegable authority of the Commander to protect the flight.'
       },
       {
-        col1: 'Descanso Mínimo en Base de Operaciones (Home Base)',
-        col2: 'Al menos la duración de la actividad previa o 12 horas (el mayor)',
-        col3: 'En el domicilio o alojamiento habitual del tripulante',
-        col4: 'Incluye tiempo para traslados y necesidades fisiológicas',
-        col5: 'Garantiza recuperación completa antes del siguiente servicio.',
+        col1: 'Minimum Rest at Home Base',
+        col2: 'Length of preceding duty period or 12 hours (whichever is greater)',
+        col3: 'At crew member\'s permanent home residence',
+        col4: 'Includes time for commuting and physiological needs',
+        col5: 'Guarantees complete recovery before next duty tour.',
         highlight: false,
-        notes: 'Si la actividad previa fue de 14h, el descanso debe ser de 14h.'
+        notes: 'If previous duty was 14h, rest must be at least 14h.'
       },
       {
-        col1: 'Descanso Mínimo Fuera de Base (Outstation)',
-        col2: 'Al menos la duración de la actividad previa o 10 horas (el mayor)',
-        col3: 'En alojamiento adecuado proporcionado por el operador',
-        col4: 'Debe permitir al menos 8 horas de sueño ininterrumpido en cama',
-        col5: 'Se deben sumar los tiempos reales de traslado hacia/desde el hotel.',
+        col1: 'Minimum Rest Away from Base (Outstation)',
+        col2: 'Length of preceding duty period or 10 hours (whichever is greater)',
+        col3: 'In suitable accommodation provided by the operator',
+        col4: 'Must guarantee at least 8 hours uninterrupted sleep opportunity in bed',
+        col5: 'Actual travel time to/from hotel must be added on top.',
         highlight: true,
-        notes: 'Si el traslado dura 1h por trayecto, el descanso mínimo total será 12h.'
+        notes: 'If hotel transfer takes 1h each way, minimum total rest is 12h.'
       },
       {
-        col1: 'Límites Acumulativos de Actividad (Duty Time)',
-        col2: '60 h (7 días) | 110 h (14 días) | 190 h (28 días)',
-        col3: 'Suma de todos los tiempos de vuelo, guardias en aeropuerto y tareas en tierra',
-        col4: 'Distribución uniforme a lo largo del período',
-        col5: 'Límite legal estricto no prorrogable.',
+        col1: 'Cumulative Duty Limits (All Work)',
+        col2: '60 h (7 days) | 110 h (14 days) | 190 h (28 days)',
+        col3: 'Sum of all flight hours, airport standby, and ground duties',
+        col4: 'Evenly distributed across scheduling periods',
+        col5: 'Strict legal ceiling that cannot be extended.',
         highlight: false,
-        notes: 'Incluye simulador, cursos de tierra y guardias.'
+        notes: 'Includes simulator sessions, ground training, and administrative duties.'
       },
       {
-        col1: 'Límites Acumulativos de Tiempo de Vuelo (Block Hours)',
-        col2: '100 h (28 días) | 900 h (Año Calendario) | 1.000 h (12 Meses)',
-        col3: 'Tiempo calzo a calzo (Block to Block time)',
-        col4: 'Límite aplicable a todas las licencias de vuelo operadas en CAT',
-        col5: 'Previene la fatiga acumulada a largo plazo.',
+        col1: 'Cumulative Flight Block Time Limits',
+        col2: '100 h (28 days) | 900 h (Calendar Year) | 1,000 h (12 Months)',
+        col3: 'Block-to-block flight time (chock-to-chock)',
+        col4: 'Applies across all commercial flights logged by the pilot',
+        col5: 'Prevents long-term chronic pilot fatigue.',
         highlight: true,
-        notes: '900 horas aplica de 1 de enero a 31 de diciembre.'
+        notes: '900 hours applies from January 1 to December 31.'
       },
       {
-        col1: 'Descanso Extendido de Recuperación (Weekly Rest)',
-        col2: '36 horas continuas incluyendo 2 noches locales',
-        col3: 'Intervalo máximo de 168 horas (7 días) entre descansos extendidos',
-        col4: 'Obligatorio en base o fuera de base',
-        col5: 'Permite sincronización de ritmos circadianos.',
+        col1: 'Extended Recovery Rest Period (Weekly Rest)',
+        col2: '36 continuous hours including 2 local nights',
+        col3: 'Maximum interval of 168 hours (7 days) between rest periods',
+        col4: 'Mandatory at home base or outstation',
+        col5: 'Ensures full biological circadian synchronization.',
         highlight: false,
-        notes: 'Una noche local comprende un período de 8 horas entre 22:00 y 08:00.'
+        notes: 'A local night is defined as 8 hours between 22:00 and 08:00.'
       }
     ],
     extraNotes: [
-      'Guardia en Aeropuerto (Airport Standby): Computa al 100% como tiempo de servicio (Duty). Si se asigna vuelo, el FDP comienza en la hora de inicio de la guardia.',
-      'Tripulación Reforzada (Augmented Crew): Permite FDP de hasta 16h-18h según la clase de descanso a bordo (Clase 1: litera horizontal separada; Clase 2: asiento reclinable con cortina; Clase 3: asiento reclinable).'
+      'Airport Standby: Counts 100% as duty time. If assigned to a flight, FDP starts at the beginning of the airport standby period.',
+      'Augmented Crew: Extends FDP up to 16h-18h depending on in-flight rest class (Class 1: horizontal bunk; Class 2: lie-flat seat with curtain; Class 3: reclining cabin seat).'
     ]
   },
 
-  // 14. MÍNIMOS DE AERÓDROMO, LVTO Y APPROACH BAN
+  // 14. AERODROME MINIMA, LVTO AND APPROACH BAN
   {
     id: 'netjets-easa-aom-minima',
     category: 'easa-netjets',
-    title: 'Mínimos de Aeródromo, LVTO y Regla de Prohibición de Aproximación (Approach Ban)',
-    subtitle: 'Requisitos de visibilidad, RVR, referencias visuales a la DA/DH y condiciones para continuar aproximaciones (CAT.OP.MPA.110/305)',
+    title: 'Aerodrome Operating Minima (AOM), LVTO and Approach Ban Rule',
+    subtitle: 'Visibility, RVR, Visual Reference Requirements at DA/DH, and Approach Continuation Rules (CAT.OP.MPA.110/305)',
     manualRef: 'EASA Part-CAT.OP.MPA.110 / 115 / 305 • Part-SPA.LVO.100 • ICAO Annex 6',
     badge: 'AOM & LVO Minima',
-    description: 'Guía sintética de mínimos operacionales de despegue y aterrizaje bajo normativa europea. Detalla los puntos de corte de Approach Ban, exigencias visuales en CAT I, II y III, y penalizaciones por aproximaciones no CDFA.',
-    warningAlert: 'Approach Ban a 1.000 ft AAL / OM: Si el RVR notificado está por debajo del mínimo aplicable, PROHIBIDO continuar la aproximación más allá de 1.000 ft sobre el aeródromo o del marcador exterior. Si cae por debajo de mínimos DESPUÉS de 1.000 ft, se permite continuar hasta la DA/MDA.',
-    headers: ['Fase / Tipo de Operación', 'Mínimo Reglamentario', 'Punto de Decisión / Ban', 'Requisito Visual Requerido', 'Penalizaciones / Variaciones'],
+    description: 'Synthetic guide to European takeoff and landing operational minima. Details the Approach Ban decision point, visual reference requirements across CAT I, II, and III, and non-CDFA penalties.',
+    warningAlert: 'Approach Ban at 1,000 ft AAL / OM: If reported RVR is below applicable minima, continuing the approach beyond 1,000 ft above aerodrome level or outer marker is STRICTLY PROHIBITED. If RVR drops below minima AFTER 1,000 ft AAL, the approach may legally continue to DA/MDA.',
+    headers: ['Flight Phase / Operation', 'Regulatory Minimum', 'Decision Point / Ban Gate', 'Required Visual Reference', 'Operational Penalties / Variations'],
     rows: [
       {
-        col1: 'Despegue Estándar (Take-Off)',
-        col2: 'RVR $\ge$ 400 m (o 500 m según tipo)',
-        col3: 'Antes de iniciar la carrera de despegue',
-        col4: 'Marcas de pista y luces de borde visibles',
-        col5: 'No requiere aprobación de operaciones de baja visibilidad (LVO).',
+        col1: 'Standard Takeoff',
+        col2: 'RVR $\\ge$ 400 m (or 500 m per aircraft category)',
+        col3: 'Prior to commencing takeoff roll',
+        col4: 'Runway markings and runway edge lights visible',
+        col5: 'Does not require specific Low Visibility Operations (LVO) approval.',
         highlight: false,
-        notes: 'Despegue diurno/nocturno convencional.'
+        notes: 'Standard day/night takeoff.'
       },
       {
-        col1: 'Despegue de Baja Visibilidad (LVTO)',
-        col2: 'RVR < 400 m hasta 125 m (o 150 m Cat D)',
-        col3: 'Requiere LVP en vigor en el aeródromo',
-        col4: 'Luces de eje de pista de alta intensidad + marcas de eje (segmento visual 90 m)',
-        col5: 'Requiere aprobación específica SPA.LVO y tripulación cualificada.',
+        col1: 'Low Visibility Take-Off (LVTO)',
+        col2: 'RVR < 400 m down to 125 m (or 150 m Cat D)',
+        col3: 'Requires Low Visibility Procedures (LVP) in force',
+        col4: 'High-intensity runway centerline lights + markings (90 m visual segment)',
+        col5: 'Requires specific SPA.LVO operational approval and qualified crew.',
         highlight: true,
-        notes: 'Espaciado de luces de eje $\le$ 15 m para RVR de 125 m.'
+        notes: 'Centerline light spacing $\\le$ 15 m for RVR 125 m.'
       },
       {
-        col1: 'Aproximación de Precisión CAT I',
-        col2: 'DH $\ge$ 200 ft | RVR $\ge$ 550 m (o 800 m sin luces de aprox)',
-        col3: 'Approach Ban a 1.000 ft AAL / Outer Marker',
-        col4: 'Al menos 1 elemento visual visible (luces de aprox, umbral, marcas, TDZ, PAPI)',
-        col5: 'LVP no requeridas formalmente para CAT I.',
+        col1: 'CAT I Precision Approach',
+        col2: 'DH $\\ge$ 200 ft | RVR $\\ge$ 550 m (or 800 m without ALS)',
+        col3: 'Approach Ban at 1,000 ft AAL / Outer Marker',
+        col4: 'At least 1 visual element visible (approach lights, threshold, markings, TDZ, PAPI)',
+        col5: 'LVP not formally required for standard CAT I.',
         highlight: false,
-        notes: 'Aproximación 3D de precisión básica.'
+        notes: 'Standard 3D precision approach.'
       },
       {
-        col1: 'Aproximación de Precisión CAT II',
-        col2: '100 ft $\le$ DH < 200 ft | RVR $\ge$ 300 m',
-        col3: 'Approach Ban a 1.000 ft AAL / OM',
-        col4: 'Al menos 3 luces consecutivas (eje de aprox, TDZ, eje de pista) con elemento transversal',
-        col5: 'Requiere LVP activas, radaraltímetro operativo y aprobación SPA.LVO.',
+        col1: 'CAT II Precision Approach',
+        col2: '100 ft $\\le$ DH < 200 ft | RVR $\\ge$ 300 m',
+        col3: 'Approach Ban at 1,000 ft AAL / OM',
+        col4: 'At least 3 consecutive lights (centerline ALS, TDZ, runway centerline) with crossbar',
+        col5: 'Requires active LVP, radar altimeter, and SPA.LVO approval.',
         highlight: true,
-        notes: 'Piloto automático acoplado con desacople a DH o aterrizaje automático.'
+        notes: 'Autopilot coupled with manual disconnect at DH or autoland.'
       },
       {
-        col1: 'Aproximación CAT III A',
-        col2: 'DH < 100 ft (o sin DH) | RVR $\ge$ 175 m',
-        col3: 'Approach Ban a 1.000 ft AAL / OM',
-        col4: 'Al menos 3 luces consecutivas de eje o TDZ en la DH',
-        col5: 'Sistema con modo Fail-Passive o Fail-Operational y autoland.',
+        col1: 'CAT III A Approach',
+        col2: 'DH < 100 ft (or no DH) | RVR $\\ge$ 175 m',
+        col3: 'Approach Ban at 1,000 ft AAL / OM',
+        col4: 'At least 3 consecutive centerline or TDZ lights at DH',
+        col5: 'Fail-Passive or Fail-Operational system with autoland.',
         highlight: false,
-        notes: 'Muy habitual en reactores ejecutivos modernos con HUD/EVS.'
+        notes: 'Standard capability on modern executive business jets.'
       },
       {
-        col1: 'Aproximación CAT III B',
-        col2: 'DH < 50 ft (o sin DH) | 75 m $\le$ RVR < 175 m',
-        col3: 'Approach Ban a 1.000 ft AAL / OM',
-        col4: 'Al menos 1 luz de eje de pista visible en DH (o ninguna si no hay DH)',
-        col5: 'Requiere sistema Fail-Operational con guiado de rodadura (Rollout).',
+        col1: 'CAT III B Approach',
+        col2: 'DH < 50 ft (or no DH) | 75 m $\\le$ RVR < 175 m',
+        col3: 'Approach Ban at 1,000 ft AAL / OM',
+        col4: 'At least 1 centerline light visible at DH (or none if no DH)',
+        col5: 'Requires Fail-Operational system with rollout guidance.',
         highlight: false,
-        notes: 'Capacidad de aterrizaje y parada casi totalmente automática.'
+        notes: 'Near-zero visibility automatic landing and rollout.'
       },
       {
-        col1: 'Aproximaciones No de Precisión (NPA) - CDFA',
-        col2: 'Mínimos de carta (MDH/MDA + RVR según sistema)',
-        col3: 'Técnica de Descenso Continuo (CDFA) obligatoria',
-        col4: 'Elementos del umbral o luces de aproximación en la DDA/MDA',
-        col5: 'Se añade un margen de seguridad a la MDA para no perderla en la frustrada (DDA).',
+        col1: 'Non-Precision Approach (NPA) - CDFA',
+        col2: 'Chart minima (MDH/MDA + RVR per system)',
+        col3: 'Continuous Descent Final Approach (CDFA) mandatory',
+        col4: 'Threshold elements or approach lights at Derived Decision Altitude (DDA)',
+        col5: 'Add safety margin (e.g. +50 ft) to MDA to prevent losing altitude on go-around.',
         highlight: false,
-        notes: 'Mejora radicalmente el perfil de estabilización y CFIT avoidance.'
+        notes: 'Drastically improves stabilized approach profile and CFIT prevention.'
       },
       {
-        col1: 'Aproximaciones No-CDFA (Penalización)',
-        col2: 'RVR de la carta + 200 m (Cat A/B) | RVR + 400 m (Cat C/D)',
-        col3: 'Técnica escalonada (Step-down / Dive & Drive)',
-        col4: 'Contacto visual pleno antes de iniciar el descenso desde MDA',
-        col5: 'Penalización reglamentaria estricta por mayor riesgo de aproximación desestabilizada.',
+        col1: 'Non-CDFA Approach (Penalty)',
+        col2: 'Chart RVR + 200 m (Cat A/B) | Chart RVR + 400 m (Cat C/D)',
+        col3: 'Step-down / Dive & Drive technique',
+        col4: 'Full visual contact before descending below MDA',
+        col5: 'Strict regulatory penalty due to higher risk of unstabilized approach.',
         highlight: true,
-        notes: 'EASA desaconseja fuertemente volar fuera de CDFA.'
+        notes: 'EASA strongly discourages flying non-CDFA profiles.'
       },
       {
-        col1: 'Aproximación en Circuito (Visual Circling)',
-        col2: 'MDA/H de circuito + Visibilidad mínima según categoría (Cat B 1.500m / Cat C 2.400m)',
-        col3: 'Mantener contacto visual continuo con la pista durante toda la maniobra',
-        col4: 'Entorno de pista permanentemente a la vista',
-        col5: 'PROHIBIDO descender de la MDA de circuito hasta estar alineado en final.',
+        col1: 'Visual Circling Approach',
+        col2: 'Circling MDA/H + minimum visibility per category (Cat B 1,500 m / Cat C 2,400 m)',
+        col3: 'Maintain continuous visual contact with runway throughout circling maneuver',
+        col4: 'Runway environment permanently in sight',
+        col5: 'PROHIBITED to descend below Circling MDA until established on final approach.',
         highlight: false,
-        notes: 'Volar dentro del radio de protección de la categoría de velocidad.'
+        notes: 'Fly within the obstacle clearance radius of the aircraft category.'
       }
     ],
     extraNotes: [
-      'Regla de Oro de Approach Ban: Antes de 1.000 ft AAL manda el reporte meteorológico (RVR oficial). Pasados los 1.000 ft AAL manda la visión del piloto (contacto visual a la DA/MDA).',
-      'Fallo de Luces de Aproximación: Si falla el sistema ALS, el RVR mínimo se incrementa según las tablas de penalización de aeródromo del manual de operaciones.'
+      'Golden Rule of Approach Ban: Prior to 1,000 ft AAL, the official weather report controls. After passing 1,000 ft AAL, pilot visual contact at DA/MDA controls.',
+      'Inoperative Approach Lights: If ALS fails, the minimum required RVR increases according to aerodrome lighting penalty tables.'
     ]
   },
 
-  // 15. ESPACIO AÉREO RVSM, PBN Y CONTINGENCIAS
+  // 15. RVSM AIRSPACE OPERATIONS, ALTIMETRY & CONTINGENCIES
   {
     id: 'netjets-easa-rvsm-equipment',
     category: 'easa-netjets',
-    title: 'Operación en Espacio Aéreo RVSM, Tolerancias y Contingencias',
-    subtitle: 'Requisitos de equipamiento (2 Altímetros + 1 AP + 1 Alerta + 1 Transponder), tolerancias y procedimientos de contingencia',
+    title: 'RVSM Airspace Operations, Altimetry Tolerances and Contingency Procedures',
+    subtitle: 'Equipment Mandate (2 Primary Altimeters + 1 Altitude-Hold AP + 1 Altitude Alert + 1 Mode C/S Transponder), In-Flight Tolerances, and SLOP',
     manualRef: 'EASA Part-SPA.RVSM.100 / 110 • ICAO Doc 9574 • ICAO Doc 4444 • SERA.8015',
     badge: 'RVSM & Navigation',
-    description: 'Procedimientos obligatorios para la navegación con separación vertical reducida (1.000 ft) entre FL290 y FL410. Incluye tolerancias de altimetría en tierra y crucero, contingencias por fallo de sistemas y técnica SLOP.',
-    warningAlert: 'Fallo de RVSM en Vuelo: Notificar de inmediato al ATC con la fraseología obligatoria "UNABLE RVSM DUE TO EQUIPMENT". ATC aplicará 2.000 ft de separación convencional o coordinará el descenso por debajo de FL290.',
-    headers: ['Elemento / Parámetro RVSM', 'Límites / Requisitos', 'Tolerancias Admisibles', 'Procedimiento de Contingencia', 'Fraseología Radiotelefónica'],
+    description: 'Mandatory operational procedures for Reduced Vertical Separation Minimum (1,000 ft) navigation between FL290 and FL410. Covers ground and in-flight altimetry crosschecks, system failures, and SLOP.',
+    warningAlert: 'RVSM System Failure in Flight: Immediately notify ATC with the mandatory phraseology: "UNABLE RVSM DUE TO EQUIPMENT". ATC will establish 2,000 ft conventional separation or coordinate descent below FL290.',
+    headers: ['RVSM Parameter / System', 'Operational Requirements', 'Allowable Tolerances', 'Contingency Procedure', 'Radiotelephony Phraseology'],
     rows: [
       {
-        col1: 'Espacio Aéreo RVSM (Límites)',
-        col2: 'FL290 a FL410 inclusive (Separación vertical 1.000 ft)',
-        col3: 'Por encima de FL410 la separación vuelve a ser de 2.000 ft',
-        col4: 'Si no se cuenta con aprobación RVSM, volar a o por debajo de FL280',
-        col5: '`NEGATIVE RVSM` (si no dispone de aprobación).',
+        col1: 'RVSM Airspace Limits',
+        col2: 'FL290 to FL410 inclusive (1,000 ft vertical separation)',
+        col3: 'Above FL410 vertical separation reverts to 2,000 ft',
+        col4: 'If not RVSM approved, operate at or below FL280',
+        col5: '`NEGATIVE RVSM` (if non-approved aircraft).',
         highlight: true,
-        notes: 'Optimiza el espacio aéreo aumentando la capacidad de tráfico.'
+        notes: 'Optimizes upper airspace capacity and fuel efficiency.'
       },
       {
-        col1: 'Equipamiento Mínimo: 4 Sistemas Obligatorios',
-        col2: '2 Altímetros Primarios + 1 AP con Altitude-Hold + 1 Alerta Altitud + 1 Transponder Modo C/S',
-        col3: 'Los 4 sistemas deben estar 100% operativos al ingresar al espacio RVSM',
-        col4: 'La pérdida de cualquiera de estos 4 sistemas invalida la capacidad RVSM',
-        col5: 'Verificar estado de sistemas en el chequeo previo al cruce de FL290.',
+        col1: 'Mandatory 4 Equipment Systems',
+        col2: '2 Primary Altimeters + 1 Altitude-Hold AP + 1 Altitude Alert + 1 Mode C/S Transponder',
+        col3: 'All 4 systems must be 100% operational when entering RVSM airspace',
+        col4: 'Failure of any of these 4 systems invalidates RVSM capability',
+        col5: 'Verify system status during pre-flight check before passing FL290.',
         highlight: true,
-        notes: 'Regla mnemotécnica: 2 Altímetros + AP + Alertador + SSR.'
+        notes: 'Mnemonic: 2 Altimeters + AP + Alerter + SSR.'
       },
       {
-        col1: 'Cotejo Altimétrico en Tierra (Pre-flight Check)',
-        col2: 'Ajuste de QNH local en ambos altímetros primarios',
-        col3: 'Máx. ±75 ft respecto a la elevación conocida del campo (o ±50 ft según AFM del jet)',
-        col4: 'Diferencia máxima entre altímetros primarios: generalmente $\le$ 50 a 75 ft',
-        col5: 'Si se supera la tolerancia, el avión no puede despacharse para vuelos RVSM.',
+        col1: 'Pre-Flight Ground Altimeter Crosscheck',
+        col2: 'Set local QNH on both primary altimeters',
+        col3: 'Max ±75 ft from known surveyed airport elevation (or ±50 ft per AFM)',
+        col4: 'Max difference between primary altimeters: $\\le$ 50 to 75 ft',
+        col5: 'If tolerance is exceeded, aircraft cannot be dispatched for RVSM flights.',
         highlight: false,
-        notes: 'Comprobación obligatoria antes de iniciar el rodaje.'
+        notes: 'Mandatory crosscheck before taxiing.'
       },
       {
-        col1: 'Cotejo Altimétrico en Vuelo (In-Flight Crosscheck)',
-        col2: 'Ajuste Standard 1013.25 hPa al pasar la Altitud de Transición (TA)',
-        col3: 'Diferencia máxima entre altímetros primarios: 200 ft (60 m)',
-        col4: 'El piloto automático debe mantener el nivel dentro de ±65 ft (±20 m)',
-        col5: 'Registrar lecturas periódicas al menos una vez por hora en crucero.',
+        col1: 'In-Flight Cruise Altimeter Crosscheck',
+        col2: 'Set Standard 1013.25 hPa climbing through Transition Altitude (TA)',
+        col3: 'Max difference between primary altimeters: 200 ft (60 m)',
+        col4: 'Autopilot must maintain assigned flight level within ±65 ft (±20 m)',
+        col5: 'Record hourly crosscheck entries in the operational navigation log.',
         highlight: false,
-        notes: 'Discrepancia > 200 ft obliga a declarar degradación RVSM.'
+        notes: 'Discrepancy > 200 ft requires declaring RVSM degradation to ATC.'
       },
       {
-        col1: 'Fallo de Equipamiento en Vuelo RVSM',
-        col2: 'Fallo de AP, pérdida de altímetro primario o discrepancia > 200 ft',
-        col3: 'Mantener nivel asignado manualmente con máxima precisión',
-        col4: 'Vigilar tráfico con TCAS; solicitar cambio de nivel o vectores a ATC',
+        col1: 'In-Flight Equipment Failure in RVSM',
+        col2: 'Autopilot failure, loss of primary altimeter, or split > 200 ft',
+        col3: 'Maintain assigned level manually with maximum precision',
+        col4: 'Monitor traffic on TCAS; request revised clearance or level change from ATC',
         col5: '`UNABLE RVSM DUE TO EQUIPMENT`.',
         highlight: true,
-        notes: 'ATC proveerá 2.000 ft de separación vertical con otros tráficos.'
+        notes: 'ATC will provide 2,000 ft vertical separation from other traffic.'
       },
       {
-        col1: 'Desplazamiento Lateral Estratégico (SLOP)',
-        col2: 'Desvío voluntario a la DERECHA del eje de ruta hasta 2 NM',
-        col3: 'Incrementos de 0.1 NM o escalones de 1 y 2 NM a la DERECHA',
-        col4: 'Mitiga riesgo de colisión por extrema precisión GPS y encuentros de estela turbulenta',
-        col5: 'No requiere autorización de ATC en espacios aéreos publicados con SLOP.',
+        col1: 'Strategic Lateral Offset Procedure (SLOP)',
+        col2: 'Voluntary lateral offset to the RIGHT of airway centerline up to 2.0 NM',
+        col3: 'Increments of 0.1 NM or fixed steps of 1 NM and 2 NM to the RIGHT',
+        col4: 'Mitigates mid-air collision risk from GPS accuracy and wake turbulence encounters',
+        col5: 'No ATC clearance required in published SLOP oceanic/remote airspace.',
         highlight: false,
-        notes: 'NUNCA realizar SLOP a la izquierda del eje.'
+        notes: 'NEVER execute SLOP to the left of the centerline.'
       },
       {
-        col1: 'Respuesta ante TCAS II RA (Versión 7.1)',
-        col2: 'Maniobra vertical inmediata desconectando AP si es preciso',
-        col3: 'Iniciar cabeceo en $\le$ 5 seg (RA inicial) o $\le$ 2.5 seg (Reversal / Strengthening)',
-        col4: 'PRIORIDAD ABSOLUTA sobre cualquier instrucción contradictoria del ATC',
-        col5: '`[Callsign] TCAS RA` y tras resolver: `CLEAR OF CONFLICT, RETURNING TO [FL]`.',
+        col1: 'TCAS II Resolution Advisory (RA) Response',
+        col2: 'Immediate vertical pitch maneuver disconnecting AP if necessary',
+        col3: 'Initiate pitch within $\\le$ 5 sec (initial RA) or $\\le$ 2.5 sec (Reversal RA)',
+        col4: 'ABSOLUTE PRIORITY over any conflicting ATC instruction',
+        col5: '`[Callsign] TCAS RA` and upon return: `CLEAR OF CONFLICT, RETURNING TO [FL]`.',
         highlight: true,
-        notes: 'Nunca maniobrar en sentido opuesto a la indicación del TCAS RA.'
+        notes: 'Never maneuver in the direction opposite to a TCAS RA command.'
       },
       {
-        col1: 'Especificaciones PBN (RNAV 5 vs RNAV 1 vs RNP APCH)',
-        col2: 'RNAV 5 (±5 NM en ruta) | RNAV 1 (±1 NM en SID/STAR) | RNP APCH (±0.3 NM en Final)',
-        col3: 'Precisión lateral de contención requerida el 95 % del tiempo de vuelo',
-        col4: 'RNP exige monitorización de integridad y alerta a bordo (OBPMA)',
-        col5: 'Notificar a ATC si se pierde la capacidad de navegación GPS/RNP.',
+        col1: 'PBN Specifications (RNAV 5 vs RNAV 1 vs RNP APCH)',
+        col2: 'RNAV 5 (±5 NM en-route) | RNAV 1 (±1 NM SID/STAR) | RNP APCH (±0.3 NM Final)',
+        col3: 'Total lateral containment accuracy required 95% of flight time',
+        col4: 'RNP requires On-Board Performance Monitoring and Alerting (OBPMA)',
+        col5: 'Notify ATC immediately if GPS/RNP navigation capability is lost.',
         highlight: false,
-        notes: 'RNAV 5 (B-RNAV) es obligatoria en todo el espacio aéreo europeo superior.'
+        notes: 'RNAV 5 (B-RNAV) is mandatory in all European upper airspace.'
       }
     ],
     extraNotes: [
-      'Turbulencia Severa en RVSM: Notificar a ATC "UNABLE RVSM DUE TO TURBULENCE" si la turbulencia impide mantener el nivel dentro de los márgenes admisibles.',
-      'Transición Barométrica: En ascenso, cambio de QNH a Standard en la Altitud de Transición (TA). En descenso, cambio de Standard a QNH en el Nivel de Transición (TL).'
+      'Severe Turbulence in RVSM: Notify ATC "UNABLE RVSM DUE TO TURBULENCE" if severe turbulence prevents altitude maintenance.',
+      'Altimeter Transition Setting: Change from QNH to Standard at Transition Altitude (TA) on climb; change from Standard to QNH at Transition Level (TL) on descent.'
     ]
   },
 
-  // 16. NORMATIVA AIRCREW: VALIDEZ DE LICENCIAS, CHEQUEOS Y REQUISITOS MÉDICOS
+  // 16. AIRCREW REGULATIONS: LICENSING, RECENCY & MEDICAL REQUIREMENTS
   {
     id: 'netjets-easa-aircrew-recency',
     category: 'easa-netjets',
-    title: 'Normativa Aircrew: Validez de Licencias, Chequeos y Requisitos Médicos',
-    subtitle: 'Validez de Médico Clase 1, regla de edad 60/65 años, experiencia reciente (Recency 90 días) y chequeos OPC / Line Check',
+    title: 'Aircrew Regulations: License Validity, Recency & Medical Requirements',
+    subtitle: 'Class 1 Medical Validity, Age 60/65 Rules, 90-Day Recency, and OPC / Line Checks',
     manualRef: 'EASA Part-FCL.055 / 060 / 065 • Part-MED.A.045 • Part-ORO.FC.230',
     badge: 'Aircrew & Licensing',
-    description: 'Resumen sistemático de las atribuciones, limitaciones y períodos de mantenimiento de competencia para pilotos de transporte aéreo comercial (CAT) y aviación ejecutiva en Europa.',
-    warningAlert: 'Regla de Edad 60/65 (FCL.065): Entre 60 y 64 años solo se puede volar en CAT como tripulación multipiloto si el OTRO piloto es menor de 60 años. A los 65 años cumplidos queda PROHIBIDO actuar como piloto en CAT.',
-    headers: ['Título / Habilitación / Chequeo', 'Período de Validez', 'Condición Especial / Reducción', 'Ventana de Revalidación', 'Criterio Operativo'],
+    description: 'Comprehensive summary of privileges, limitations, and recency requirements for commercial air transport (CAT) and executive aviation flight crews in Europe.',
+    warningAlert: 'Age 60/65 Rule (FCL.065): Pilots aged 60 to 64 may only operate in CAT as part of a multi-pilot crew if the OTHER pilot is under age 60. At age 65, acting as a pilot in commercial air transport is STRICTLY PROHIBITED.',
+    headers: ['License / Rating / Check', 'Validity Period', 'Special Conditions / Reductions', 'Revalidation Window', 'Operational Criteria'],
     rows: [
       {
-        col1: 'Certificado Médico Clase 1 (< 40 años)',
-        col2: '12 meses',
-        col3: 'Válido para cualquier operación CAT (monopiloto o multipiloto)',
-        col4: 'Hasta 45 días antes de la caducidad conservando fecha',
-        col5: 'Examen periódico por Médico Examinador Aéreo (AME).',
+        col1: 'Class 1 Medical Certificate (< 40 years)',
+        col2: '12 months',
+        col3: 'Valid for all CAT operations (single-pilot or multi-pilot)',
+        col4: 'Up to 45 days prior to expiry preserving anniversary date',
+        col5: 'Periodic examination by an Aero-Medical Examiner (AME).',
         highlight: false,
-        notes: 'Clase 1 estándar europeo.'
+        notes: 'Standard European Class 1.'
       },
       {
-        col1: 'Certificado Médico Clase 1 (40 a 59 años)',
-        col2: '12 meses (Multipiloto) | 6 meses (Monopiloto con pax)',
-        col3: 'Se reduce a 6 meses si se opera transporte comercial de pasajeros con un solo piloto',
-        col4: '45 días previos a caducidad',
-        col5: 'Vigilancia cardiovascular y electrocardiograma más frecuente.',
+        col1: 'Class 1 Medical Certificate (40 to 59 years)',
+        col2: '12 months (Multi-pilot) | 6 months (Single-pilot with pax)',
+        col3: 'Reduced to 6 months if flying single-pilot commercial passenger flights',
+        col4: '45 days prior to expiry',
+        col5: 'Increased cardiovascular and ECG surveillance.',
         highlight: true,
-        notes: 'En NetJets (multipiloto) se mantiene a 12 meses hasta los 60 años.'
+        notes: 'At NetJets (multi-pilot), 12-month validity is maintained until age 60.'
       },
       {
-        col1: 'Certificado Médico Clase 1 ($\ge$ 60 años)',
-        col2: '6 meses',
-        col3: 'Aplica a cualquier operación de transporte aéreo comercial (CAT) sin excepción',
-        col4: '45 días previos a caducidad',
-        col5: 'Chequeo semestral obligatorio.',
+        col1: 'Class 1 Medical Certificate ($\\ge$ 60 years)',
+        col2: '6 months',
+        col3: 'Applies to all commercial air transport (CAT) operations without exception',
+        col4: '45 days prior to expiry',
+        col5: 'Mandatory bi-annual medical examination.',
         highlight: true,
-        notes: 'Reducción universal a 6 meses para mayores de 60 años en CAT.'
+        notes: 'Universal reduction to 6 months for pilots 60 and older in CAT.'
       },
       {
-        col1: 'Limitación de Edad 60 a 64 años (Age 60-64)',
-        col2: 'Hasta el cumplimiento de los 65 años',
-        col3: 'Solo puede operar en CAT como miembro de tripulación MULTIPILOTO',
-        col4: 'Condición obligatoria: El otro piloto debe ser MENOR DE 60 AÑOS',
-        col5: 'Prohibido que ambos pilotos tengan 60 o más años en el mismo vuelo.',
+        col1: 'Age Limitation: 60 to 64 years (Age 60-64)',
+        col2: 'Until reaching 65th birthday',
+        col3: 'May only operate in CAT as member of a MULTI-PILOT crew',
+        col4: 'Mandatory condition: The other pilot must be UNDER AGE 60',
+        col5: 'Prohibited for both pilots to be 60 or older on the same commercial flight.',
         highlight: true,
-        notes: 'Regla "Only one pilot over 60" de EASA FCL.065.'
+        notes: 'EASA FCL.065 "Only one pilot over 60" rule.'
       },
       {
-        col1: 'Límite Máximo de Edad 65 años (Age 65)',
-        col2: 'Cese de atribuciones CAT al cumplir los 65 años',
-        col3: 'Prohibición absoluta para actuar como Comandante o Copiloto en CAT',
-        col4: 'Sin excepciones para transporte comercial',
-        col5: 'Puede continuar en instrucción, vuelos privados (Part-NCO/NCC) o ferry.',
+        col1: 'Age 65 Ceiling Limit (Age 65)',
+        col2: 'Immediate cessation of CAT privileges at age 65',
+        col3: 'Absolute prohibition against acting as PIC or co-pilot in CAT',
+        col4: 'No regulatory waivers for commercial transport',
+        col5: 'May continue in flight instruction, private operations (Part-NCC/NCO), or ferry flights.',
         highlight: false,
-        notes: 'Límite estricto de seguridad psicofisiológica de OACI/EASA.'
+        notes: 'Strict ICAO/EASA safety standard.'
       },
       {
-        col1: 'Experiencia Reciente de Vuelo (Recency - FCL.060)',
-        col2: 'Últimos 90 días precedentes al vuelo',
-        col3: 'Al menos 3 despegues, aproximaciones y aterrizajes como Pilot Flying (PF)',
-        col4: 'En el mismo tipo/clase de aeronave o en un simulador FFS cualificado del tipo',
-        col5: 'Vuelo nocturno: Al menos 1 toma nocturna en 90 días (salvo si posee IR en vigor).',
+        col1: 'Recent Flight Experience (Recency - FCL.060)',
+        col2: 'Preceding 90 days before the flight',
+        col3: 'At least 3 takeoffs, approaches, and landings as Pilot Flying (PF)',
+        col4: 'On the same type/class or in a Level D qualified Full Flight Simulator',
+        col5: 'Night flying: At least 1 night landing in 90 days (satisfied if holding valid IR).',
         highlight: true,
-        notes: 'Condición legal indispensable para poder ser programado a un vuelo.'
+        notes: 'Indispensable legal condition to be rostered on a commercial flight.'
       },
       {
-        col1: 'Habilitación de Tipo (Type Rating) / IR',
-        col2: '1 año (12 meses calendario)',
-        col3: 'Revalidación mediante verificación de competencia (LPC - Licence Proficiency Check)',
-        col4: 'Dentro de los 3 meses anteriores a la fecha de caducidad',
-        col5: 'Conserva la fecha de expiración original anual.',
+        col1: 'Type Rating / Instrument Rating (IR)',
+        col2: '1 year (12 calendar months)',
+        col3: 'Revalidation via Licence Proficiency Check (LPC)',
+        col4: 'Within the 3 months immediately preceding the expiry date',
+        col5: 'Preserves the original annual anniversary date.',
         highlight: false,
-        notes: 'Generalmente combinado con el OPC del operador.'
+        notes: 'Normally combined with the operator OPC.'
       },
       {
-        col1: 'Verificación de Competencia del Operador (OPC)',
-        col2: '6 meses calendario',
-        col3: 'Chequeo semestral en simulador FFS que cubre fallos y procedimientos de emergencia',
-        col4: 'Dentro de los 3 meses previos a la expiración',
-        col5: 'Exigencia obligatoria de la Parte ORO.FC.230.',
+        col1: 'Operator Proficiency Check (OPC)',
+        col2: '6 calendar months',
+        col3: 'Bi-annual simulator check covering abnormal and emergency procedures',
+        col4: 'Within 3 months preceding expiry',
+        col5: 'Mandatory requirement under Part-ORO.FC.230.',
         highlight: true,
-        notes: 'Evalúa procedimientos de compañía, CRM y operación anormal.'
+        notes: 'Evaluates SOP compliance, emergency memory items, and CRM.'
       },
       {
-        col1: 'Verificación en Línea (Line Check)',
-        col2: '12 meses calendario',
-        col3: 'Evaluación en vuelo real de línea operando una ruta típica de la red',
-        col4: 'Dentro de los 3 meses previos a la expiración',
-        col5: 'Evalúa operación normal, cumplimiento de SOP, toma de decisiones y servicio al cliente.',
+        col1: 'Annual Line Check',
+        col2: '12 calendar months',
+        col3: 'Evaluation on a real commercial line flight over a typical route',
+        col4: 'Within 3 months preceding expiry',
+        col5: 'Evaluates line operations, SOPs, decision-making, and customer service.',
         highlight: false,
-        notes: 'Supervisado por un Comandante Examinador (TRE/TRI).'
+        notes: 'Conducted by a Type Rating Examiner (TRE/TRI).'
       },
       {
-        col1: 'Competencia Lingüística en Inglés (ICAO English)',
-        col2: 'Nivel 4: 4 años | Nivel 5: 6 años | Nivel 6: Permanente',
-        col3: 'Anotación oficial en la licencia de piloto FCL.055',
-        col4: 'Evaluación formal antes de la fecha de caducidad',
-        col5: 'Estándar indispensable para operar en el entorno internacional de NetJets.',
+        col1: 'ICAO English Language Proficiency',
+        col2: 'Level 4: 4 years | Level 5: 6 years | Level 6: Permanent (Lifetime)',
+        col3: 'Official endorsement on the pilot licence (FCL.055)',
+        col4: 'Formal evaluation before expiry date',
+        col5: 'Mandatory standard for operating in the international NetJets network.',
         highlight: false,
-        notes: 'Nivel 6 no caduca nunca.'
+        notes: 'Level 6 never expires.'
       }
     ],
     extraNotes: [
-      'Máscara de Oxígeno Quick-Donning (CAT.IDE.A.235): Obligatoria en todos los aviones presurizados certificados para operar por encima de FL250. Debe colocarse con una sola mano en menos de 5 segundos.',
-      'Incapacidad Temporal: El titular de un certificado médico debe suspender sus atribuciones si sufre una enfermedad o lesión que dure más de 21 días o tras cualquier intervención quirúrgica.'
+      'Quick-Donning Oxygen Mask (CAT.IDE.A.235): Mandatory on all pressurised aircraft operating above FL250. Must be donned with one hand in less than 5 seconds.',
+      'Decrease in Medical Fitness: Pilot must suspend flight privileges and notify AME in writing upon illness/injury causing incapacity > 21 days, surgery, pregnancy, or regular medication.'
     ]
   },
 
-  // 17. DESPACHO MEL / DDPM, ESCENARIOS NETJETS Y CRM
+  // 17. MEL / DDPM DISPATCH, NETJETS SCENARIOS AND CRM
   {
     id: 'netjets-easa-mel-dispatch',
     category: 'easa-netjets',
-    title: 'Despacho MEL / DDPM, Escenarios NetJets y CRM',
-    subtitle: 'Intervalos de rectificación MEL (A, B, C, D), procedimientos (M)/(O), pasajeros conflictivos y toma de decisiones corporativas',
+    title: 'MEL / DDPM Technical Dispatch, NetJets Scenarios & CRM',
+    subtitle: 'MEL Rectification Intervals (A, B, C, D), (M)/(O) Procedures, VIP Passenger Management, and Corporate Decision-Making',
     manualRef: 'EASA Part-ORO.MLR.105 • CS-MMEL • Part-SPA.DG • ICAO Doc 9811',
     badge: 'MEL & NetJets CRM',
-    description: 'Directrices maestras de despacho técnico con elementos inoperativos, gestión de mercancías peligrosas (NOTOC), aproximaciones empinadas (Steep Approaches) y manejo de situaciones complejas con propietarios VIP (Owners).',
-    warningAlert: 'Día del Descubrimiento en MEL: El día en que la avería o discrepancia se anota en el Aircraft Technical Log (ATL) NO cuenta para el cómputo del plazo de rectificación. El plazo comienza a las 00:00 del día siguiente.',
-    headers: ['Categoría / Procedimiento', 'Intervalo de Rectificación', 'Día de Descubrimiento', 'Responsable de Ejecución', 'Impacto Operacional'],
+    description: 'Master guidelines for technical dispatch with inoperative equipment, dangerous goods (NOTOC), steep approaches (London City EGLC), and high-net-worth Owner interactions.',
+    warningAlert: 'Day of Discovery in MEL: The calendar day on which a defect is recorded in the Aircraft Technical Log (ATL) DOES NOT COUNT towards the rectification timeframe. The interval begins at 00:00 local time on the following day.',
+    headers: ['Category / Procedure', 'Rectification Interval', 'Day of Discovery Rule', 'Executing Authority', 'Operational Impact'],
     rows: [
       {
-        col1: 'MEL Categoría A',
-        col2: 'Intervalo específico fijado en las observaciones de la MEL (horas, ciclos, vuelos o fecha límite)',
-        col3: 'Según se especifique expresamente en el ítem',
-        col4: 'Mantenimiento / Tripulación según procedimiento',
-        col5: 'Sin margen de extensión estándar.',
+        col1: 'MEL Category A',
+        col2: 'Specific interval stipulated in the MEL remarks (hours, cycles, flights, or calendar date)',
+        col3: 'As expressly stated in the item',
+        col4: 'Maintenance / Flight Crew per procedure',
+        col5: 'No standard extension permitted.',
         highlight: false,
-        notes: 'Ejemplo: 3 vuelos consecutivos o 24 horas calendario.'
+        notes: 'Example: 3 consecutive flight sectors or 24 calendar hours.'
       },
       {
-        col1: 'MEL Categoría B',
-        col2: '3 días consecutivos (72 horas)',
-        col3: 'Excluye el día en que se registró en el ATL',
-        col4: 'Personal técnico de mantenimiento certificado (LMA)',
-        col5: 'Aplica a sistemas redundantes críticos (e.g. un radar meteo, un generador eléctrico).',
+        col1: 'MEL Category B',
+        col2: '3 consecutive calendar days (72 hours)',
+        col3: 'Excludes the calendar day recorded in the ATL',
+        col4: 'Licensed Maintenance Engineer (LAME)',
+        col5: 'Applies to critical redundant systems (e.g. one weather radar, one generator).',
         highlight: true,
-        notes: 'Prorrogable una sola vez bajo procedimiento formal de extensión del operador.'
+        notes: 'Extendable once under approved operator extension procedures.'
       },
       {
-        col1: 'MEL Categoría C',
-        col2: '10 días consecutivos (240 horas)',
-        col3: 'Excluye el día del reporte en el ATL',
-        col4: 'Personal técnico de mantenimiento certificado',
-        col5: 'Categoría más común para elementos de confort, duplicidades de aviónica menor o luces secundarias.',
+        col1: 'MEL Category C',
+        col2: '10 consecutive calendar days (240 hours)',
+        col3: 'Excludes the calendar day recorded in the ATL',
+        col4: 'Licensed Maintenance Engineer',
+        col5: 'Most common category for minor avionics, passenger comfort, or secondary lighting.',
         highlight: false,
-        notes: 'Plazo estándar de 10 días.'
+        notes: 'Standard 10-day rectification period.'
       },
       {
-        col1: 'MEL Categoría D',
-        col2: '120 días consecutivos',
-        col3: 'Excluye el día del reporte en el ATL',
-        col4: 'Personal de mantenimiento',
-        col5: 'Aplica a equipos opcionales o sistemas no esenciales (e.g. entretenimiento de pasaje, hornos de galley).',
+        col1: 'MEL Category D',
+        col2: '120 consecutive calendar days',
+        col3: 'Excludes the calendar day recorded in the ATL',
+        col4: 'Maintenance Personnel',
+        col5: 'Applies to optional non-essential equipment (e.g. cabin entertainment, galley ovens).',
         highlight: false,
-        notes: 'No prorrogable habitualmente.'
+        notes: 'Normally not extendable.'
       },
       {
-        col1: 'Procedimiento (M) de la MEL',
-        col2: 'Acción técnica de mantenimiento obligatoria antes del vuelo',
-        col3: 'Previo al despacho del avión',
-        col4: 'Técnico de Mantenimiento Certificado (LMA)',
-        col5: 'Asegura la configuración física segura del sistema (e.g. colocar pines, puentear válvulas, bloquear frenos).',
+        col1: 'MEL (M) Procedure',
+        col2: 'Mandatory technical maintenance action prior to flight',
+        col3: 'Prior to aircraft dispatch',
+        col4: 'Licensed Maintenance Engineer (LAME)',
+        col5: 'Ensures physical system safety (e.g. pulling/collaring breakers, blanking valves, securing brakes).',
         highlight: true,
-        notes: 'La tripulación solo puede realizarlo si el manual lo autoriza expresamente tras entrenamiento.'
+        notes: 'Flight crew may only execute if expressly authorized in the Operations Manual after training.'
       },
       {
-        col1: 'Procedimiento (O) de la MEL',
-        col2: 'Procedimiento operativo ejecutado por la tripulación de vuelo',
-        col3: 'Durante la preparación de cabina o en vuelo',
-        col4: 'Comandante y Copiloto (Tripulación de Vuelo)',
-        col5: 'Ajuste de cartas de performance, limitaciones de nivel, checklists especiales o configuraciones de sistemas.',
+        col1: 'MEL (O) Procedure',
+        col2: 'Operational procedure executed by the flight crew',
+        col3: 'During cockpit preparation or in flight',
+        col4: 'Commander and First Officer (Flight Crew)',
+        col5: 'Performance chart adjustments, altitude limits, special checklists, or system configurations.',
         highlight: false,
-        notes: 'Anotación en el plan de vuelo y briefing conjunto obligatorio.'
+        notes: 'Mandatory entry on operational flight plan and crew briefing.'
       },
       {
         col1: 'MEL vs CDL (Configuration Deviation List)',
-        col2: 'MEL = Sistemas e instrumentos inoperativos | CDL = Partes exteriores secundarias faltantes',
-        col3: 'La CDL cubre paneles, carenas, sellos o generadores de vórtice exteriores',
-        col4: 'Requiere aplicar penalizaciones de peso, combustible o velocidad según la CDL del AFM',
-        col5: 'Ambos documentos deben verificarse conjuntamente en el despacho técnico.',
+        col2: 'MEL = Inoperative internal systems/instruments | CDL = Missing secondary external parts',
+        col3: 'CDL covers external panels, flap track fairings, seals, or vortex generators',
+        col4: 'Requires applying weight, fuel burn, or speed penalties from the AFM CDL',
+        col5: 'Both documents must be checked together during pre-flight technical dispatch.',
         highlight: false,
-        notes: 'CDL forma parte integrante del AFM del fabricante.'
+        notes: 'CDL is an integral part of the manufacturer\'s AFM.'
       },
       {
-        col1: 'Manejo de Propietarios VIP (Owner Focus vs Safety)',
-        col2: 'Seguridad innegociable + Servicio de excelencia empático y proactivo',
-        col3: 'Ante peticiones de aterrizar bajo mínimos, despegar con sobrepeso o saltar FTL',
-        col4: 'Comandante como líder de seguridad y embajador de NetJets',
-        col5: 'Explicación asertiva y profesional, transmitiendo que se protege su vida; coordinación inmediata de alternativas con Dispatch.',
+        col1: 'VIP Owner Management (Owner Focus vs Safety)',
+        col2: 'Uncompromised safety + Empathetic, proactive executive service excellence',
+        col3: 'When Owner requests landing below minima, overweight takeoff, or exceeding FTL',
+        col4: 'Commander as safety leader and NetJets Brand Ambassador',
+        col5: 'Assertive and professional communication; coordinate immediate alternate travel with Dispatch.',
         highlight: true,
-        notes: 'Pilar fundamental evaluado en las entrevistas de NetJets.'
+        notes: 'Core foundational pillar evaluated during NetJets interviews.'
       },
       {
-        col1: 'Pasajeros Conflictivos (Niveles OACI / EASA)',
-        col2: 'Nivel 1: Verbal | Nivel 2: Físico leve | Nivel 3: Amenaza vital | Nivel 4: Violación de cabina',
-        col3: 'Clasificación de 4 niveles de amenaza para seguridad',
-        col4: 'Comandante tiene autoridad absoluta para desembarcar pasajeros disruptivos (CAT.GEN.MPA.105)',
-        col5: 'Nivel 4 activa Cockpit Lockdown total y aterrizaje de emergencia inmediato.',
+        col1: 'Unruly Passengers (ICAO / EASA Levels)',
+        col2: 'Level 1: Verbal | Level 2: Physical | Level 3: Life threat | Level 4: Flight deck breach',
+        col3: 'Standard 4-level threat classification',
+        col4: 'Commander has absolute authority to offload disruptive passengers (CAT.GEN.MPA.105)',
+        col5: 'Level 4 triggers immediate full Cockpit Lockdown and emergency landing.',
         highlight: false,
-        notes: 'La tripulación de cabina coordina la desescalada aplicando protocolos de compañía.'
+        notes: 'Cabin crew coordinates de-escalation under company protocol.'
       },
       {
-        col1: 'Mercancías Peligrosas: NOTOC',
-        col2: 'Notificación escrita obligatoria entregada al Comandante antes del despegue',
-        col3: 'Contiene: Número UN, clase de peligro, bultos, masa neta, ubicación en bodega y Drill Code',
-        col4: 'Agente de rampa / Despachador de vuelo',
-        col5: 'Imprescindible para que el Comandante coordine la respuesta con ATC y bomberos en caso de emergencia.',
+        col1: 'Dangerous Goods: NOTOC',
+        col2: 'Mandatory written notification delivered to the Commander before takeoff',
+        col3: 'Contains: UN number, hazard class, packages, net mass, cargo location, and drill code',
+        col4: 'Ground Handling Agent / Flight Dispatcher',
+        col5: 'Essential for Commander to coordinate emergency response with ATC and fire services.',
         highlight: false,
-        notes: 'Debe guardarse una copia firmada en la escala de salida.'
+        notes: 'Signed copy must be retained at departure station.'
       },
       {
-        col1: 'Aproximaciones Empinadas (Steep Approaches)',
-        col2: 'Senda de aproximación $\ge$ 4.5° (e.g. London City 5.5°, Sion, Lugano)',
-        col3: 'Requiere avión certificado en AFM, aprobación en Manual de Operaciones y tripulación entrenada en simulador',
-        col4: 'Límites de viento más restrictivos y perfiles de empuje / speedbrakes específicos',
-        col5: 'Operación muy habitual y prestigiosa en la flota europea de NetJets.',
+        col1: 'Steep Approaches (e.g. London City EGLC)',
+        col2: 'Approach glidepath $\\ge$ 4.5° (e.g. London City 5.5°, Sion, Lugano)',
+        col3: 'Requires AFM steep approach certification, Operations Manual approval, and crew simulator training',
+        col4: 'More restrictive wind limits and specific thrust/speedbrake profiles',
+        col5: 'Prestigious and frequent operation across the NetJets European fleet.',
         highlight: false,
-        notes: 'Mínimos de visibilidad más elevados que en aproximaciones convencionales.'
+        notes: 'Higher visibility minima than standard 3.0° approaches.'
       }
     ],
     extraNotes: [
-      'Cadena de Decisión CRM (Pace Graded Assertiveness): Probe -> Alert -> Challenge -> Emergency -> Takeover. Si el Comandante no responde a desviaciones críticas a la altura de estabilización, el Copiloto TIENE LA OBLIGACIÓN LEGAL de asumir los mandos ("I HAVE CONTROLS") y frustrar.',
-      'Aproximación Estabilizada: Todo vuelo debe estar 100% estabilizado a 1.000 ft en IMC (500 ft en VMC): en senda, localizador, velocidad VREF a VREF+10 kt, empuje adecuado y configuración final de aterrizaje.'
+      'Pace Graded Assertiveness CRM: Probe -> Alert -> Challenge -> Emergency / Takeover. If the Commander fails to respond to critical deviations at the stabilization gate, the First Officer HAS THE LEGAL OBLIGATION to assume control ("I HAVE CONTROLS") and go around.',
+      'Stabilized Approach Gate: Every approach must be 100% stabilized by 1,000 ft in IMC (500 ft in VMC): on glidepath, on localizer, speed VREF to VREF+10 kt, engines spooled, and landing configuration set.'
     ]
   }
 ];
-

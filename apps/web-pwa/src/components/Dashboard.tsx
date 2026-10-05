@@ -1102,7 +1102,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
         </div>
       </div>
 
-      {/* 🌟 BANNER DESTACADO: NETJETS EUROPE INTERVIEW PREP */}
+      {/* 🌟 BANNER DESTACADO: NETJETS EUROPE INTERVIEW PREP (100% ENGLISH) */}
       <div className="netjets-hero-card rounded-3xl bg-gradient-to-br from-[#1c1305] via-[#0f172a] to-[#070e1e] border-2 border-amber-500/40 p-6 sm:p-7 shadow-2xl space-y-5 relative overflow-hidden">
         <div className="absolute -right-16 -top-16 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute -left-16 -bottom-16 w-64 h-64 bg-sky-500/10 rounded-full blur-3xl pointer-events-none" />
@@ -1112,12 +1112,12 @@ export const Dashboard: React.FC<DashboardProps> = ({
             <div className="flex items-center gap-2 flex-wrap">
               <span className="netjets-badge px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-500/40 flex items-center gap-1">
                 <Sparkles className="w-3 h-3 text-amber-400" />
-                <span>{netjetsQuestions.length} Reactivos · EASA Air Ops + Aircrew + Historia NetJets (1964-Hoy) + Tablas + Flashcards</span>
+                <span>{netjetsQuestions.length} Questions (100% English) · EASA Air Ops + Aircrew + NetJets History + Tables + Flashcards</span>
               </span>
             </div>
             <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2.5">
               <Briefcase className="w-6 h-6 text-amber-400" />
-              <span>Banco Especial - NetJets Europe Interview Prep</span>
+              <span>NetJets Europe Interview Prep (English)</span>
             </h2>
           </div>
 
@@ -1141,7 +1141,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
 
         {/* Quick Launch Action Buttons Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 relative z-10 pt-1">
-          {/* 1. Simulación Entrevista (25) */}
+          {/* 1. Interview Simulation (25) */}
           <button
             type="button"
             onClick={() => onStartConfiguredExam({ category: 'netjets-interview', count: 25, mode: 'simulation', strategy: 'random' })}
@@ -1150,16 +1150,16 @@ export const Dashboard: React.FC<DashboardProps> = ({
             <div className="netjets-action-title flex items-center justify-between text-xs font-black text-amber-300 mb-1">
               <span className="flex items-center gap-1.5">
                 <Target className="w-4 h-4 text-amber-400" />
-                <span>Simulación Entrevista (25)</span>
+                <span>Interview Simulation (25)</span>
               </span>
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
             </div>
             <p className="netjets-action-desc text-[11px] text-slate-300">
-              Test técnico cronometrado de 25 preguntas simulando la entrevista de NetJets.
+              Timed 25-question technical pilot interview simulation in 100% English.
             </p>
           </button>
 
-          {/* 2. Historia & Negocio NetJets (10) */}
+          {/* 2. NetJets History & Business Model (10) */}
           <button
             type="button"
             onClick={() => onStartConfiguredExam({ category: 'netjets-interview', subtopics: ['historia-evolucion-netjets'], count: 10, mode: 'practice', strategy: 'random' })}
@@ -1168,16 +1168,16 @@ export const Dashboard: React.FC<DashboardProps> = ({
             <div className="netjets-action-title flex items-center justify-between text-xs font-black text-yellow-300 mb-1">
               <span className="flex items-center gap-1.5">
                 <Award className="w-4 h-4 text-yellow-400" />
-                <span>Historia & Orígenes (1964-Hoy)</span>
+                <span>History & Business Model</span>
               </span>
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
             </div>
             <p className="netjets-action-desc text-[11px] text-slate-300">
-              EJA (1964), Richard Santulli, Propiedad Fraccional y Berkshire Hathaway (Warren Buffett).
+              EJA 1964, Richard Santulli, Fractional Ownership & Berkshire Hathaway.
             </p>
           </button>
 
-          {/* 3. Tablas Sintéticas EASA */}
+          {/* 3. Synthetic EASA Tables */}
           <button
             type="button"
             onClick={() => onOpenTables ? onOpenTables('easa-netjets') : onNavigateTab('tables')}
@@ -1186,16 +1186,16 @@ export const Dashboard: React.FC<DashboardProps> = ({
             <div className="netjets-action-title flex items-center justify-between text-xs font-black text-sky-300 mb-1">
               <span className="flex items-center gap-1.5">
                 <TableIcon className="w-4 h-4 text-sky-400" />
-                <span>Tablas Sintéticas EASA</span>
+                <span>EASA Air Ops Tables (EN)</span>
               </span>
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
             </div>
             <p className="netjets-action-desc text-[11px] text-slate-300">
-              6 tablas de memorización interactiva: Fuel, FTL, Minimas, RVSM, Aircrew y MEL.
+              6 synthetic memory tables in English: Fuel, FTL, Minima, RVSM, Aircrew & MEL.
             </p>
           </button>
 
-          {/* 4. Flashcards NetJets */}
+          {/* 4. NetJets Flashcards */}
           <button
             type="button"
             onClick={() => onStartFlashcards({ category: 'netjets-interview' })}
@@ -1204,12 +1204,12 @@ export const Dashboard: React.FC<DashboardProps> = ({
             <div className="netjets-action-title flex items-center justify-between text-xs font-black text-emerald-300 mb-1">
               <span className="flex items-center gap-1.5">
                 <Sparkles className="w-4 h-4 text-emerald-400" />
-                <span>Flashcards NetJets</span>
+                <span>NetJets Flashcards</span>
               </span>
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
             </div>
             <p className="netjets-action-desc text-[11px] text-slate-300">
-              Modo Flashcards con algoritmos espaciados para límites y siglas de la entrevista.
+              Spaced repetition active recall flashcards in English for acronyms and limits.
             </p>
           </button>
         </div>

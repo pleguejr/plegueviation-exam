@@ -1,4 +1,12 @@
-[
+import json
+import os
+
+BASE_DIR = r"c:\Users\plegu\My Drive\Antigravity\Plegueviation exam\banks\netjets-interview"
+
+# ==========================================
+# 1. historia-evolucion-netjets (20 Questions)
+# ==========================================
+historia = [
   {
     "id": "NJ-HIST-001",
     "subject_id": "historia-evolucion-netjets",
@@ -8,22 +16,22 @@
       {
         "id": "A",
         "text": "In 1964 as Executive Jet Aviation (EJA), founded by retired USAF General Olbert F. Lassiter and Bruce Sundlun, with a board including USAF legends such as General Curtis LeMay and Brigadier General James Stewart.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
-        "text": "In 1986 directly as NetJets Inc. by Warren Buffett in Omaha, Nebraska, as Berkshire Hathaway's corporate flight department.",
-        "is_correct": false
+        "text": "In 1986 directly as NetJets Inc. by Warren Buffett in Omaha, Nebraska, as Berkshire Hathaway's executive flight department.",
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "In 1975 as European Jet Share in Lisbon, Portugal, under the sponsorship of the Portuguese Civil Aviation Authority.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "In 1990 by Bombardier Aerospace and Dassault Aviation as a joint marketing venture for Learjet and Falcon corporate jets.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -33,9 +41,7 @@
         "Executive Jet Aviation (EJA) Founding Charter (1964)"
       ]
     },
-    "metadata": {
-      "difficulty": 0.2
-    }
+    "metadata": { "difficulty": 0.2 }
   },
   {
     "id": "NJ-HIST-002",
@@ -46,22 +52,22 @@
       {
         "id": "A",
         "text": "Richard Santulli, a former Goldman Sachs mathematician and executive, who invented Fractional Aircraft Ownership, formally launching NetJets in 1986.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
-        "text": "Warren Buffett, who acquired the company to convert it into a point-to-point executive shuttle carrier.",
-        "is_correct": false
+        "text": "Warren Buffett, who acquired the company to convert it into a point-to-point business shuttle carrier.",
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "Bill Gates, who established a digital bidding exchange for private jet charter flights.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "Herb Kelleher, who adapted Southwest Airlines' single-type fleet efficiency model to executive turboprops.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -71,9 +77,7 @@
         "Harvard Business School Case Study: NetJets & Richard Santulli"
       ]
     },
-    "metadata": {
-      "difficulty": 0.3
-    }
+    "metadata": { "difficulty": 0.3 }
   },
   {
     "id": "NJ-HIST-003",
@@ -84,22 +88,22 @@
       {
         "id": "A",
         "text": "Buffett initially became a NetJets fractional owner in 1995; after experiencing the outstanding safety, reliability, and service first-hand, Berkshire Hathaway acquired NetJets for approximately $725 million in 1998.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "Berkshire Hathaway financed the initial design and certification of the Cessna Citation Sovereign for NetJets in 1990.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "NetJets acquired Berkshire Hathaway's flight division in exchange for 40% equity voting shares.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "The acquisition occurred as an emergency restructuring following the 2008 financial crisis under US government receivership.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -109,9 +113,7 @@
         "NetJets Corporate Profile"
       ]
     },
-    "metadata": {
-      "difficulty": 0.25
-    }
+    "metadata": { "difficulty": 0.25 }
   },
   {
     "id": "NJ-HIST-004",
@@ -122,34 +124,32 @@
       {
         "id": "A",
         "text": "Headquartered in Lisbon (Paço de Arcos), Portugal, operating under a Portuguese Air Operator Certificate (AOC) issued and regulated by ANAC under EASA Part-CAT regulations.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "Headquartered in London Luton Airport, UK, operating exclusively under the UK Civil Aviation Authority (UK CAA).",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "Headquartered in Frankfurt, Germany, operating under the German Luftfahrt-Bundesamt (LBA).",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "Headquartered in Zurich, Switzerland, operating under the Swiss Federal Office of Civil Aviation (FOCA).",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
-      "text": "### NetJets Europe & Lisbon Operations Base\n* **NetJets Europe (NTA - NetJets Transportes Aéreos, S.A.)** was founded in 1996 and obtained its Portuguese Commercial Air Operator Certificate (AOC) in Lisbon.\n* Its primary Operational Command Center (OCC) is located in **Paço de Arcos (Lisbon), Portugal**, regulated by the Portuguese Civil Aviation Authority (**ANAC**) under **EASA Part-CAT** regulations.\n* Flight crew members operate throughout the entire continent on dedicated airline rosters (typically 6 days on / 5 days off), flying European-registered aircraft (prefix **CS-**).",
+      "text": "### NetJets Europe & Lisbon Operations Base\n* **NetJets Europe (NTA - NetJets Transportes Aéreos, S.A.)** was founded in 1996 and obtained its Portuguese Commercial Air Operator Certificate (AOC) in Lisbon.\n* Its primary Operational Command Center (OCC) is located in **Paço de Arcos (Lisbon), Portugal**, regulated by the Portuguese Civil Aviation Authority (**ANAC**) under **EASA Part-CAT** regulations.\n* Flight crew members operate throughout the entire continent on dedicated airline roasters (typically 6 days on / 5 days off), flying European-registered aircraft (prefix **CS-**).",
       "references": [
         "NetJets Europe Corporate Overview",
         "EASA Certified Commercial Operators Registry (ANAC Portugal)"
       ]
     },
-    "metadata": {
-      "difficulty": 0.2
-    }
+    "metadata": { "difficulty": 0.2 }
   },
   {
     "id": "NJ-HIST-005",
@@ -160,22 +160,22 @@
       {
         "id": "A",
         "text": "1/16th share, which equates to 50 occupied flight hours per year.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "1/32th share, which equates to 25 flight hours per year.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "1/8th share, which equates to 100 flight hours per year.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "1/4th share, which equates to 200 flight hours per year.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -185,9 +185,7 @@
         "EASA Air Ops Subpart NCC & Commercial Fractional Management"
       ]
     },
-    "metadata": {
-      "difficulty": 0.25
-    }
+    "metadata": { "difficulty": 0.25 }
   },
   {
     "id": "NJ-HIST-006",
@@ -198,22 +196,22 @@
       {
         "id": "A",
         "text": "A prepaid 25-hour flight card created in 2001 by Jesse Itzler and Kenny Dichter that provided access to NetJets' fleet without requiring long-term asset ownership; NetJets fully acquired Marquis Jet in 2010.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "A credit card rewards program allowing airline passengers to redeem miles for executive flights.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "An empty-leg last-minute auction program designed to fill positioning ferry flights at discounted rates.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "A shared shuttle membership connecting major European financial capitals on fixed daily schedules.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -223,9 +221,7 @@
         "Aviation International News: Marquis Jet Acquisition (2010)"
       ]
     },
-    "metadata": {
-      "difficulty": 0.3
-    }
+    "metadata": { "difficulty": 0.3 }
   },
   {
     "id": "NJ-HIST-007",
@@ -236,22 +232,22 @@
       {
         "id": "A",
         "text": "A fixed tour pattern of 6 days on duty followed by 5 days off (6/5 Tour Roster), flying across Europe with airline positioning to and from the pilot's designated home base gateway.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "A daily out-and-back schedule returning to the home base airport every evening with 8 days off per month.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "A 14 days on / 14 days off rotation typical of long-range offshore helicopter operations.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "A random bidding roster without fixed days off, updated on a weekly rolling basis.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -261,9 +257,7 @@
         "NJE Pilot Collective Labour Agreement"
       ]
     },
-    "metadata": {
-      "difficulty": 0.25
-    }
+    "metadata": { "difficulty": 0.25 }
   },
   {
     "id": "NJ-HIST-008",
@@ -274,22 +268,22 @@
       {
         "id": "A",
         "text": "Embraer Phenom 300/E (Light), Cessna Citation XLS+/Latitude (Midsize), Bombardier Challenger 350/650 (Super-Midsize/Large), and Bombardier Global 5500/6000/7500 (Ultra-Long Range).",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "Boeing 737-800, Airbus A320neo, Embraer 195-E2, and ATR 72-600.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "Pilatus PC-12, Beechcraft King Air 350, Piper Cheyenne, and Cessna Caravan exclusively.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "Airbus A350-900, Boeing 787-9 Dreamliner, and Boeing 777-300ER.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -299,9 +293,7 @@
         "EASA Type Certificate Data Sheets (TCDS)"
       ]
     },
-    "metadata": {
-      "difficulty": 0.2
-    }
+    "metadata": { "difficulty": 0.2 }
   },
   {
     "id": "NJ-HIST-009",
@@ -312,22 +304,22 @@
       {
         "id": "A",
         "text": "A contractual mechanism allowing an Owner to exchange their allocated hours on their own aircraft model for a larger or smaller aircraft category depending on the specific mission profile.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "A bilateral agreement allowing pilots to fly for competing corporate operators during their off-duty days.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "An agreement permitting airline passengers to swap commercial tickets for NetJets flights during airport strikes.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "A maintenance sharing program where competitors repair NetJets engines at outstation line stations.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -337,9 +329,7 @@
         "NBAA Fractional Ownership Guidelines"
       ]
     },
-    "metadata": {
-      "difficulty": 0.3
-    }
+    "metadata": { "difficulty": 0.3 }
   },
   {
     "id": "NJ-HIST-010",
@@ -350,22 +340,22 @@
       {
         "id": "A",
         "text": "Uncompromising Safety: Flight safety and strict regulatory adherence always supersede Owner convenience, commercial pressure, or VIP status; customer service is delivered through proactive communication, empathy, and professional alternative coordination.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "Commercial priority: Captains are expected to accept visual approaches in marginal weather to satisfy VIP tight schedules.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "Authority delegation: The Owner holds final authority to sign off fuel and weather waivers if they accept personal risk in writing.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "Cost minimization: Ferry flights must always be conducted without alternates to reduce fuel burn and landing fees.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -375,9 +365,7 @@
         "NetJets Crew Resource Management & Customer Excellence Manual"
       ]
     },
-    "metadata": {
-      "difficulty": 0.2
-    }
+    "metadata": { "difficulty": 0.2 }
   },
   {
     "id": "NJ-HIST-011",
@@ -388,22 +376,22 @@
       {
         "id": "A",
         "text": "It stands for 'Quarter Share', commemorating the popular fractional ownership fraction that helped drive NetJets' rapid market expansion.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "It stands for 'Quick Service', denoting prioritized ground handling at FBOs.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "It stands for 'Quality Safety', required by the FAA for Part 135/91K operators.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "It stands for 'Queen's Squadron', named after an honorary UK charter fleet.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -412,9 +400,7 @@
         "NetJets Corporate Trivia & Registry Guide"
       ]
     },
-    "metadata": {
-      "difficulty": 0.35
-    }
+    "metadata": { "difficulty": 0.35 }
   },
   {
     "id": "NJ-HIST-012",
@@ -425,22 +411,22 @@
       {
         "id": "A",
         "text": "It is the largest private jet company in the world, operating a global fleet of over 900 aircraft, flying hundreds of thousands of hours annually across more than 2,000 airports worldwide.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "It is a regional European air taxi operator operating approximately 45 turboprops.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "It is a charter brokerage firm that owns zero aircraft and only books third-party aircraft.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "It is an exclusive government VIP transport squadron funded by the European Union.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -449,9 +435,7 @@
         "NetJets Corporate Fact Sheet (2024)"
       ]
     },
-    "metadata": {
-      "difficulty": 0.2
-    }
+    "metadata": { "difficulty": 0.2 }
   },
   {
     "id": "NJ-HIST-013",
@@ -462,22 +446,22 @@
       {
         "id": "A",
         "text": "Guaranteed aircraft availability with as little as 4 to 10 hours notice (depending on contract tier and peak days), anywhere within the primary operating service area, without repositioning ferry charges.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "Aircraft availability only if the Owner's specific serial-numbered jet is not undergoing maintenance or flying another mission.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "A minimum booking lead time of 7 days in advance for all flights.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "Owners must pay for all empty repositioning legs if their aircraft is located at another base.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -486,9 +470,7 @@
         "NetJets Owner Agreement Terms & Conditions"
       ]
     },
-    "metadata": {
-      "difficulty": 0.25
-    }
+    "metadata": { "difficulty": 0.25 }
   },
   {
     "id": "NJ-HIST-014",
@@ -499,22 +481,22 @@
       {
         "id": "A",
         "text": "Through a comprehensive Flight Operational Quality Assurance (FOQA) / Flight Data Monitoring (FDM) program on 100% of its fleet, non-punitive Safety Management Systems (SMS), and dual-pilot type-rated crews on every flight.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "By relying solely on annual recurrent simulator checks without in-flight data recording.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "By operating light jets under single-pilot IFR to optimize crew resource distribution.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "By outsourcing safety investigations entirely to local airport authorities.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -524,9 +506,7 @@
         "EASA ORO.GEN.200 (Safety Management System)"
       ]
     },
-    "metadata": {
-      "difficulty": 0.2
-    }
+    "metadata": { "difficulty": 0.2 }
   },
   {
     "id": "NJ-HIST-015",
@@ -537,22 +517,22 @@
       {
         "id": "A",
         "text": "The geographic zone encompassing Western Europe and key Mediterranean destinations where Owners fly without paying positioning (ferry) charges for aircraft placement.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "The airspace within 50 NM of Lisbon Airport where VFR operations are permitted.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "The military training zones restricted from civil executive charter flights.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "The exclusive oceanic tracks between London and New York.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -561,9 +541,7 @@
         "NetJets Europe POA Guidelines & Navigation Policies"
       ]
     },
-    "metadata": {
-      "difficulty": 0.3
-    }
+    "metadata": { "difficulty": 0.3 }
   },
   {
     "id": "NJ-HIST-016",
@@ -574,22 +552,22 @@
       {
         "id": "A",
         "text": "Providing bespoke whole-aircraft management, maintenance, and charter services for individual and corporate aircraft owners who own 100% of their aircraft.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "Manufacturing interior composite components for Bombardier and Gulfstream aircraft.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "Operating scheduled low-cost airline flights across North America.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "Managing municipal air traffic control towers at executive reliever airports.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -598,9 +576,7 @@
         "Executive Jet Management (EJM) Corporate Profile"
       ]
     },
-    "metadata": {
-      "difficulty": 0.3
-    }
+    "metadata": { "difficulty": 0.3 }
   },
   {
     "id": "NJ-HIST-017",
@@ -611,22 +587,22 @@
       {
         "id": "A",
         "text": "Sound aeronautical decision-making (FOR-DEC / CRM), assertive communication, adherence to EASA SOPs, exceptional customer service attitude, and flexibility in unscheduled point-to-point operations.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "Ability to perform aggressive aerobatic recoveries and maximize payload above structural MTOW.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "Fastest flight planning disregarding fuel reserves to meet Owner arrival deadlines.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "Willingness to bypass MEL requirements when departing outstations without maintenance.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -636,9 +612,7 @@
         "EASA Part-ORO.FC.115 (Crew Resource Management)"
       ]
     },
-    "metadata": {
-      "difficulty": 0.2
-    }
+    "metadata": { "difficulty": 0.2 }
   },
   {
     "id": "NJ-HIST-018",
@@ -649,22 +623,22 @@
       {
         "id": "A",
         "text": "Through dedicated NetJets Private Terminals / Lounges and strategic preferred partnerships with leading Fixed-Base Operators (FBOs) such as Signature Aviation.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "By directing Owners to standard commercial airline security queues and main terminal boarding gates.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "By requiring Owners to arrange their own private security and aircraft loading teams.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "By exclusively using unpaved grass runways without ground facilities.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -673,9 +647,7 @@
         "NetJets FBO & Ground Experience Operations Guide"
       ]
     },
-    "metadata": {
-      "difficulty": 0.25
-    }
+    "metadata": { "difficulty": 0.25 }
   },
   {
     "id": "NJ-HIST-019",
@@ -686,22 +658,22 @@
       {
         "id": "A",
         "text": "Placing massive, multi-billion-dollar fleet purchase commitments directly with major OEMs (Textron, Bombardier, Embraer) featuring custom NetJets avionics, cabin interiors, and active manufacturer support.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "Purchasing exclusively 20-year-old retired commercial regional aircraft on the secondary market.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "Operating experimental homebuilt aircraft to minimize certification expenses.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "Leasing aircraft on daily wet leases from local flight schools.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -710,9 +682,7 @@
         "Aviation Week: NetJets Fleet Modernization Program"
       ]
     },
-    "metadata": {
-      "difficulty": 0.25
-    }
+    "metadata": { "difficulty": 0.25 }
   },
   {
     "id": "NJ-HIST-020",
@@ -723,22 +693,22 @@
       {
         "id": "A",
         "text": "Providing 24/7 centralized dispatch, real-time flight monitoring, slot and permit coordination, meteorological analysis, ATC routing optimization, and crew travel logistics across all European flights.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "Managing social media marketing campaigns for vacation fractional packages.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "Conducting flight test certifications for experimental military prototypes.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "Operating the air traffic control radar for Lisbon airport approach airspace.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -747,8 +717,8 @@
         "NetJets Europe Operations Manual (MOA 8.1 - Flight Dispatch & Monitoring)"
       ]
     },
-    "metadata": {
-      "difficulty": 0.2
-    }
+    "metadata": { "difficulty": 0.2 }
   }
 ]
+
+print(f"historia questions: {len(historia)}")

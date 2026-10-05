@@ -1,4 +1,13 @@
-[
+# -*- coding: utf-8 -*-
+import json
+import os
+
+BASE_DIR = r"c:\Users\plegu\My Drive\Antigravity\Plegueviation exam\banks\netjets-interview"
+
+# =========================================================================
+# 6. licencias-habilitaciones-aircrew (20 items)
+# =========================================================================
+aircrew = [
   {
     "id": "NJ-CREW-001",
     "subject_id": "licencias-habilitaciones-aircrew",
@@ -8,22 +17,22 @@
       {
         "id": "A",
         "text": "12 months for pilots under 40; 12 months for pilots aged 40 to 59 in multi-pilot commercial operations (reduced to 6 months for single-pilot operations carrying passengers); 6 months for all pilots aged 60 and older in commercial air transport (CAT).",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "24 months for all pilots regardless of age or operation.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "6 months for all pilots from initial issue onwards.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "5 years for First Officers and 1 year for Captains.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -33,9 +42,7 @@
         "ICAO Annex 1 (Personnel Licensing)"
       ]
     },
-    "metadata": {
-      "difficulty": 0.2
-    }
+    "metadata": { "difficulty": 0.2 }
   },
   {
     "id": "NJ-CREW-002",
@@ -46,22 +53,22 @@
       {
         "id": "A",
         "text": "A pilot aged 60 to 64 may only act as a flight crew member in commercial air transport (CAT) if part of a multi-pilot crew and the OTHER pilot is under age 60; at age 65, pilots are strictly prohibited from acting as flight crew in commercial air transport.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "Both pilots may be 64 years old if they fly during daytime VMC.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "Age 65 limitation applies only to cargo operations, not executive passenger charters.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "Captains must step down to First Officer at age 55 in Europe.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -71,9 +78,7 @@
         "ICAO Annex 1 Chapter 2"
       ]
     },
-    "metadata": {
-      "difficulty": 0.25
-    }
+    "metadata": { "difficulty": 0.25 }
   },
   {
     "id": "NJ-CREW-003",
@@ -84,22 +89,22 @@
       {
         "id": "A",
         "text": "Must have carried out at least 3 take-offs, approaches, and landings within the preceding 90 days as Pilot Flying (PF) on the same aircraft type/class or in a qualified Full Flight Simulator (FFS) representing that type; for night flights, at least 1 landing must have been at night unless holding a valid Instrument Rating (IR).",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "Must have flown at least 10 hours in the previous 30 days on any multi-engine aircraft.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "Must have completed an annual line check within the past 6 months.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "5 touch-and-goes every 180 days under VFR.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -109,9 +114,7 @@
         "EASA Part-ORO.FC.100"
       ]
     },
-    "metadata": {
-      "difficulty": 0.25
-    }
+    "metadata": { "difficulty": 0.25 }
   },
   {
     "id": "NJ-CREW-004",
@@ -122,22 +125,22 @@
       {
         "id": "A",
         "text": "Valid for 1 year (12 calendar months); revalidation proficiency check (LPC) must be completed within the 3 months immediately preceding the expiry date, preserving the original annual anniversary date.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "Valid for 2 years (24 calendar months); revalidation within 30 days.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "Valid for 5 years subject to continuous line flying.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "Valid indefinitely provided medical is current.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -147,9 +150,7 @@
         "AMC1 FCL.740"
       ]
     },
-    "metadata": {
-      "difficulty": 0.2
-    }
+    "metadata": { "difficulty": 0.2 }
   },
   {
     "id": "NJ-CREW-005",
@@ -160,22 +161,22 @@
       {
         "id": "A",
         "text": "Operator Proficiency Check (OPC) every 6 calendar months (covering abnormal and emergency procedures in FFS); Line Check every 12 calendar months (conducted during a normal commercial line flight).",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "OPC every 12 months; Line Check every 24 months.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "Both checks are conducted simultaneously every 3 months.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "Line check is required only for Captains, not First Officers.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -185,9 +186,7 @@
         "AMC1 ORO.FC.230"
       ]
     },
-    "metadata": {
-      "difficulty": 0.25
-    }
+    "metadata": { "difficulty": 0.25 }
   },
   {
     "id": "NJ-CREW-006",
@@ -198,22 +197,22 @@
       {
         "id": "A",
         "text": "Any surgical operation or invasive procedure, any significant personal injury involving incapacity for more than 21 days, pregnancy, hospital admission, or the regular initiation of any prescribed medication.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "Only permanent loss of consciousness exceeding 48 hours.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "Common seasonal colds lasting less than 3 days.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "Dental routine cleanings without anesthesia.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -223,9 +222,7 @@
         "EASA Medical Guidance Material"
       ]
     },
-    "metadata": {
-      "difficulty": 0.25
-    }
+    "metadata": { "difficulty": 0.25 }
   },
   {
     "id": "NJ-CREW-007",
@@ -236,22 +233,22 @@
       {
         "id": "A",
         "text": "The mask must be capable of being placed on the face and fully secured with one hand from the ready position in less than 5 seconds, providing immediate oxygen supply without displacing eyeglasses or preventing interphone communication.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "The mask must be permanently worn by both pilots whenever cruising above FL100.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "The mask must be stored in the rear baggage compartment with 15 minutes of chemical candle oxygen.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "The mask can take up to 30 seconds to don if the copilot is flying.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -261,9 +258,7 @@
         "CS-25.1447"
       ]
     },
-    "metadata": {
-      "difficulty": 0.25
-    }
+    "metadata": { "difficulty": 0.25 }
   },
   {
     "id": "NJ-CREW-008",
@@ -274,22 +269,22 @@
       {
         "id": "A",
         "text": "Level 4 (Operational): 4 years; Level 5 (Extended): 6 years; Level 6 (Expert): Permanent / Lifetime validity without expiration.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "Level 4: 1 year; Level 5: 2 years; Level 6: 3 years.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "All levels are valid for 5 years.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "Level 6 must be re-evaluated every 12 months in the simulator.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -299,9 +294,7 @@
         "ICAO Doc 9835 (Manual on the Implementation of ICAO Language Proficiency Requirements)"
       ]
     },
-    "metadata": {
-      "difficulty": 0.2
-    }
+    "metadata": { "difficulty": 0.2 }
   },
   {
     "id": "NJ-CREW-009",
@@ -312,22 +305,22 @@
       {
         "id": "A",
         "text": "Every 3 years (36 calendar months), integrated into the recurrent simulator training syllabus.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "Every 6 months during every LPC.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "Every 10 years for Captains only.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "Only upon initial type rating conversion with no recurrent requirement.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -337,9 +330,7 @@
         "EASA Decision 2019/008/R (UPRT Regulations)"
       ]
     },
-    "metadata": {
-      "difficulty": 0.3
-    }
+    "metadata": { "difficulty": 0.3 }
   },
   {
     "id": "NJ-CREW-010",
@@ -350,22 +341,22 @@
       {
         "id": "A",
         "text": "Authority to refuse carriage of or disembark any person, baggage, or cargo that may represent a potential hazard to the safety of the aircraft or its occupants, and ultimate decision on whether to accept or reject an aircraft with deferred MEL defects.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "Authority to alter company FTL limits on private charter flights without logging rest periods.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "Authority to disable cockpit voice recorders (CVR) during non-revenue ferry flights.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "Authority to waive customs and immigration clearances on VIP flights.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -375,122 +366,12 @@
         "Tokyo Convention on Aviation Safety (1963)"
       ]
     },
-    "metadata": {
-      "difficulty": 0.2
-    }
-  },
-  {
-    "id": "NJ-CREW-011",
-    "subject_id": "licencias-habilitaciones-aircrew",
-    "learning_objective": "Commercial Pilot Alcohol and Psychoactive Substances Limits (CAT.GEN.MPA.100)",
-    "stem": "Under EASA Part-CAT.GEN.MPA.100, what are the strict legal limitations regarding alcohol consumption before flight duty for commercial flight crews?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Alcohol consumption is prohibited within at least 8 hours prior to the specified reporting time for flight duty, with blood alcohol concentration (BAC) strictly limited to 0.20 per mille (0.2 g/L) or zero tolerance per company policy.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Pilots may drink wine with meals up to 2 hours before departure.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "The alcohol limit is 0.80 per mille identical to road traffic laws.",
-        "is_correct": false
-      },
-      {
-        "id": "D",
-        "text": "Alcohol rules do not apply during outstation layovers.",
-        "is_correct": false
-      }
-    ],
-    "explanation": {
-      "text": "### Alcohol Limitations (CAT.GEN.MPA.100 & CS-CAT.GEN.MPA.100)\n* **Standard Time Limit:** **Minimum 8 hours bottle-to-throttle** (NetJets standard: **12 hours** bottle-to-throttle).\n* **Blood Alcohol Concentration (BAC):** Maximum legal limit under EASA is **0.20 mg/mL (0.02% / 0.20 g/L)**. NetJets enforces a **Zero Tolerance (0.00%)** alcohol policy.",
-      "references": [
-        "EASA Part-CAT.GEN.MPA.100(c)",
-        "EASA Psychoactive Substances Testing Regulations"
-      ]
-    },
-    "metadata": {
-      "difficulty": 0.2
-    }
-  },
-  {
-    "id": "NJ-CREW-012",
-    "subject_id": "licencias-habilitaciones-aircrew",
-    "learning_objective": "Pilot Competency Assessment & Evidence-Based Training (EBT)",
-    "stem": "What is the core philosophy of Evidence-Based Training (EBT) and Mixed-EBT implemented in modern airline and executive training under EASA Part-ORO.FC.231?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Shifting recurrent simulator checking from purely repetitive pass/fail maneuver testing to developing and assessing core pilot behavioral competencies (flight path management, workload management, communication, situational awareness, decision making) based on real airline flight data and incident evidence.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Eliminating all simulator training in favor of oral examinations.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "Testing only mechanical engine overhaul knowledge.",
-        "is_correct": false
-      },
-      {
-        "id": "D",
-        "text": "Allowing pilots to conduct their own proficiency checks on desktop computers.",
-        "is_correct": false
-      }
-    ],
-    "explanation": {
-      "text": "### Evidence-Based Training (EBT - ORO.FC.231)\n* **EBT** replaces rigid legacy tick-box exams with **competency-based development**.\n* Focuses on the **8 Core ICAO / EASA Behavioral Competencies**:\n  1. Application of Knowledge\n  2. Application of Procedures\n  3. Communication\n  4. Aeroplane Flight Path Management (Manual & Automation)\n  5. Leadership & Teamwork\n  6. Problem Solving & Decision Making\n  7. Situation Awareness\n  8. Workload Management",
-      "references": [
-        "EASA Part-ORO.FC.231 (Evidence-based training)",
-        "ICAO Doc 9995 (Manual on Evidence-Based Training)"
-      ]
-    },
-    "metadata": {
-      "difficulty": 0.25
-    }
-  },
-  {
-    "id": "NJ-CREW-013",
-    "subject_id": "licencias-habilitaciones-aircrew",
-    "learning_objective": "Commercial Pilot Instrument Rating (IR) Revalidation Window",
-    "stem": "If an Instrument Rating (IR) is revalidated through a proficiency check within the 3-month window prior to expiration, from what date is the new validity period calculated?",
-    "options": [
-      {
-        "id": "A",
-        "text": "From the original expiry date of the current rating (preserving the annual anniversary month for 12 calendar months).",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "From the exact calendar day on which the proficiency check was flown in the simulator.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "From the first day of the calendar month following the check.",
-        "is_correct": false
-      },
-      {
-        "id": "D",
-        "text": "The IR is renewed permanently and never expires once revalidated three times.",
-        "is_correct": false
-      }
-    ],
-    "explanation": {
-      "text": "### IR Revalidation Rules (Part-FCL.655)\n* Completing the LPC within the **3-month window preceding expiry** ensures the rating is extended for **12 calendar months from the original expiration date**.",
-      "references": [
-        "EASA Part-FCL.655 (Revalidation of IR)",
-        "AMC1 FCL.655"
-      ]
-    },
-    "metadata": {
-      "difficulty": 0.2
-    }
+    "metadata": { "difficulty": 0.2 }
   }
 ]
+
+print("Writing licencias-habilitaciones-aircrew...")
+with open(os.path.join(BASE_DIR, "licencias-habilitaciones-aircrew", "netjets_easa_aircrew_regulations.json"), "w", encoding="utf-8") as f:
+    json.dump(aircrew, f, indent=2, ensure_ascii=False)
+
+print("Done aircrew.")

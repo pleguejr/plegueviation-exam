@@ -1,4 +1,13 @@
-[
+# -*- coding: utf-8 -*-
+import json
+import os
+
+BASE_DIR = r"c:\Users\plegu\My Drive\Antigravity\Plegueviation exam\banks\netjets-interview"
+
+# =========================================================================
+# 7. escenarios-netjets-despacho-crm (25 items)
+# =========================================================================
+crm = [
   {
     "id": "NJ-CRM-001",
     "subject_id": "escenarios-netjets-despacho-crm",
@@ -8,22 +17,22 @@
       {
         "id": "A",
         "text": "Politely and assertively explain that safety is our absolute priority and EASA regulations legally prohibit departing when weather is below legal limits; immediately coordinate with Lisbon OCC/Dispatch to provide viable alternatives (e.g. routing to London Stansted or Luton with CAT III autoland capability, arranging executive ground transport).",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "Accept the flight on the condition that the Owner signs a liability waiver acknowledging personal risk.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "Depart immediately and plan to perform a visual approach below cloud base over the city.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "Delegate the decision to the First Officer so the Captain avoids direct confrontation with the VIP.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -33,9 +42,7 @@
         "NetJets Crew Resource Management & Executive Service Standards"
       ]
     },
-    "metadata": {
-      "difficulty": 0.2
-    }
+    "metadata": { "difficulty": 0.2 }
   },
   {
     "id": "NJ-CRM-002",
@@ -46,22 +53,22 @@
       {
         "id": "A",
         "text": "Cat A: specific timeframe specified in the item remarks; Cat B: 3 consecutive calendar days (72 hours); Cat C: 10 consecutive calendar days (240 hours); Cat D: 120 consecutive calendar days. The Day of Discovery (the day the defect is entered in the ATL) is EXCLUDED from the count.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "Cat A: 1 day; Cat B: 2 days; Cat C: 3 days; Cat D: 4 days; the day of discovery counts as Day 1.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "All categories expire after 24 flight hours.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "MEL intervals only apply during scheduled A-checks at base maintenance.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -71,9 +78,7 @@
         "EASA Part-ORO.MLR.105"
       ]
     },
-    "metadata": {
-      "difficulty": 0.25
-    }
+    "metadata": { "difficulty": 0.25 }
   },
   {
     "id": "NJ-CRM-003",
@@ -84,22 +89,22 @@
       {
         "id": "A",
         "text": "An (M) procedure requires a qualified maintenance certifying engineer (or trained/authorized crew if expressly allowed by the Operations Manual) to complete and sign off a physical technical action prior to flight; an (O) procedure is an operational procedure executed by the flight crew during flight preparation or in-flight.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "(M) stands for Mandatory and (O) stands for Optional.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "(M) procedures can be skipped on return flights to base.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "(O) procedures require grounding the aircraft until an engineer arrives.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -109,9 +114,7 @@
         "EASA Part-ORO.MLR.105"
       ]
     },
-    "metadata": {
-      "difficulty": 0.2
-    }
+    "metadata": { "difficulty": 0.2 }
   },
   {
     "id": "NJ-CRM-004",
@@ -122,22 +125,22 @@
       {
         "id": "A",
         "text": "The MEL covers inoperative aircraft systems, instruments, and equipment; the CDL (part of the AFM) covers operations with missing secondary external aircraft parts (such as fairings, access panels, or vortex generators), specifying applicable performance and fuel burn penalties.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "The MEL is issued by ATC, while the CDL is issued by the airport operator.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "The CDL applies only during landing gear extension malfunctions.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "There is no difference; CDL is the American term for MEL.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -147,9 +150,7 @@
         "EASA Part-CAT.POL.A.105"
       ]
     },
-    "metadata": {
-      "difficulty": 0.25
-    }
+    "metadata": { "difficulty": 0.25 }
   },
   {
     "id": "NJ-CRM-005",
@@ -160,22 +161,22 @@
       {
         "id": "A",
         "text": "UN/ID number, proper shipping name, class/division, net quantity per package, exact loading location in cargo compartments, and the ICAO emergency response drill code (ERG drill code).",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "Only the commercial invoice price and shipper's contact phone number.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "The NOTOC is verbal and no written record is kept.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "Dangerous goods information is confidential and hidden from the flight crew.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -185,9 +186,7 @@
         "ICAO Technical Instructions (Doc 9284)"
       ]
     },
-    "metadata": {
-      "difficulty": 0.25
-    }
+    "metadata": { "difficulty": 0.25 }
   },
   {
     "id": "NJ-CRM-006",
@@ -198,22 +197,22 @@
       {
         "id": "A",
         "text": "Extinguish the visible flame with a Halon or water extinguisher, then immediately douse the battery device with copious amounts of water or non-flammable liquid to cool the battery cells and halt the exothermic thermal runaway propagation; never use ice, smother with blankets, or place in an airtight bag.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "Cover the smoking device with heavy blankets and place it in the microwave oven.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "Pack the device in ice from the galley bar to cool it down.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "Immediately open the emergency exit door to vent the smoke overboard.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -223,9 +222,7 @@
         "EASA SIB 2017-01 (PED In-Flight Fire Management)"
       ]
     },
-    "metadata": {
-      "difficulty": 0.25
-    }
+    "metadata": { "difficulty": 0.25 }
   },
   {
     "id": "NJ-CRM-007",
@@ -236,22 +233,22 @@
       {
         "id": "A",
         "text": "Aircraft certified for Steep Approach (5.5° glidepath), specialized EGPWS steep approach mode activation, qualified flight crews with simulator training and recent experience, and strict performance calculations for short runway operations.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "Standard CAT III ILS autoland with 3.0° glidepath.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "Single-pilot VFR operations only during high tide.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "Touchdown must occur at least 1,500 m down the runway.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -261,9 +258,7 @@
         "UK AIP EGLC AD 2.22"
       ]
     },
-    "metadata": {
-      "difficulty": 0.3
-    }
+    "metadata": { "difficulty": 0.3 }
   },
   {
     "id": "NJ-CRM-008",
@@ -274,22 +269,22 @@
       {
         "id": "A",
         "text": "Significantly reduced engine thrust and aerodynamic climb gradient due to high density altitude, higher true airspeed (TAS) on approach leading to longer landing distances, severe mountain wave turbulence/downdrafts, and strict single-engine escape routing.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "Indicated airspeed (IAS) increases by 50% on final approach.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "Landing distance is shorter because air resistance is reduced.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "Pressurization cannot be operated at high elevation airports.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -299,9 +294,7 @@
         "EASA SIB 2014-17 (Operations at High Elevation Mountain Aerodromes)"
       ]
     },
-    "metadata": {
-      "difficulty": 0.3
-    }
+    "metadata": { "difficulty": 0.3 }
   },
   {
     "id": "NJ-CRM-009",
@@ -312,22 +305,22 @@
       {
         "id": "A",
         "text": "Facts (gather data), Options (develop alternatives), Risks & Benefits (evaluate each course of action), Decision (select best option), Execution (implement plan), Check (monitor and review outcome).",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "Fuel, Oxygen, Radar, Divert, Emergency, Climb.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "Flight plan, Overview, Route, Decision, Engine, Cabin.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "Fast, Operational, Return, Divert, Execute, Complete.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -337,9 +330,7 @@
         "IATA Human Factors Guidance Material"
       ]
     },
-    "metadata": {
-      "difficulty": 0.2
-    }
+    "metadata": { "difficulty": 0.2 }
   },
   {
     "id": "NJ-CRM-010",
@@ -350,22 +341,22 @@
       {
         "id": "A",
         "text": "Takeoff is prohibited unless a formal Pre-Takeoff Contamination Check is conducted (inspecting representative surfaces directly from inside/outside) within 5 minutes before takeoff, or the aircraft returns for complete de-icing/anti-icing treatment.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "The Captain can take off if the airspeed indicator shows zero on the runway.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "Engage wing anti-ice for 10 seconds to blow away accumulated slush.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "Increase takeoff rotate speed (VR) by 20 kt and depart immediately.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -375,9 +366,7 @@
         "AEA / SAE Ground De-icing / Anti-icing Guidelines"
       ]
     },
-    "metadata": {
-      "difficulty": 0.25
-    }
+    "metadata": { "difficulty": 0.25 }
   },
   {
     "id": "NJ-CRM-011",
@@ -388,22 +377,22 @@
       {
         "id": "A",
         "text": "Immediately apply maximum Takeoff/Go-Around (TOGA) thrust, level the wings, smoothly rotate toward the Pitch Limit Indicator (PLI) or stick shaker angle of attack, and DO NOT change gear or flap configuration until clear of windshear and vertical climb is firmly established.",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "Retract landing gear immediately to reduce parasitic drag.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "Pitch nose-down to accelerate to Vmo.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "Engage autopilot in vertical speed mode set to +1,000 fpm.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -413,9 +402,7 @@
         "EASA CS-25 Windshear Certification"
       ]
     },
-    "metadata": {
-      "difficulty": 0.25
-    }
+    "metadata": { "difficulty": 0.25 }
   },
   {
     "id": "NJ-CRM-012",
@@ -426,22 +413,22 @@
       {
         "id": "A",
         "text": "Probe ('Are you happy with this speed?') -> Alert ('We are 20 knots fast and above glideslope') -> Challenge ('Captain, we are unstabilized, go around!') -> Takeover ('I HAVE CONTROLS, GOING AROUND').",
-        "is_correct": true
+        "is_correct": True
       },
       {
         "id": "B",
         "text": "Remain silent and let the Captain handle the landing.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "C",
         "text": "Pull the engine fire switches to abort the flight automatically.",
-        "is_correct": false
+        "is_correct": False
       },
       {
         "id": "D",
         "text": "Disconnect the Flight Director and call dispatch on the radio.",
-        "is_correct": false
+        "is_correct": False
       }
     ],
     "explanation": {
@@ -451,198 +438,12 @@
         "Flight Safety Foundation: Stabilized Approach Guidelines"
       ]
     },
-    "metadata": {
-      "difficulty": 0.2
-    }
-  },
-  {
-    "id": "NJ-CRM-013",
-    "subject_id": "escenarios-netjets-despacho-crm",
-    "learning_objective": "Unruly Passenger Management (Levels 1 to 4)",
-    "stem": "Scenario: During cruise, an intoxicated VIP passenger becomes physically abusive towards the flight attendant, attempts to force open the cockpit door, and makes threats to destroy the aircraft. What threat level is this under ICAO / EASA unruly passenger classifications, and what is the mandatory flight crew response?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Level 4 (Attempted or actual breach of the flight crew compartment / security threat); immediate full Cockpit Lockdown, transponder code 7500 or 7700, declare emergency to ATC, and execute an immediate emergency diversion and landing at the nearest suitable airport with law enforcement intervention.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Level 1; the First Officer should leave the cockpit to physically restrain the passenger.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "Ignore the passenger and continue to scheduled destination 4 hours away.",
-        "is_correct": false
-      },
-      {
-        "id": "D",
-        "text": "Offer the passenger complimentary champagne to de-escalate the conflict.",
-        "is_correct": false
-      }
-    ],
-    "explanation": {
-      "text": "### Unruly Passenger Levels (ICAO Doc 10117 / EASA)\n* **Level 1:** Disruptive behavior (verbal / non-compliance).\n* **Level 2:** Physically abusive behavior.\n* **Level 3:** Life-threatening behavior (weapons / serious injury).\n* **Level 4:** **Attempted or actual breach of the flight crew compartment**.\n* **Mandatory Response for Level 4:** **IMMEDIATE COCKPIT LOCKDOWN** (no flight deck door opening under any circumstance), squawk **7500/7700**, declare **MAYDAY**, land ASAP with police assistance.",
-      "references": [
-        "ICAO Doc 10117 (Manual on the Legal Aspects of Unruly and Disruptive Passengers)",
-        "EASA Part-CAT.GEN.MPA.105"
-      ]
-    },
-    "metadata": {
-      "difficulty": 0.2
-    }
-  },
-  {
-    "id": "NJ-CRM-014",
-    "subject_id": "escenarios-netjets-despacho-crm",
-    "learning_objective": "Stabilized Approach Criteria (Gates 1,000 ft and 500 ft)",
-    "stem": "What are the universal Stabilized Approach criteria that must be satisfied by 1,000 ft AAL in IMC (and by 500 ft AAL in VMC)?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Aircraft is on the correct lateral and vertical flight path (ILS/RNAV), speed is within VREF to VREF + 10 KIAS, aircraft is in final landing configuration (gear down, landing flaps), engines are spooled above flight idle, sink rate is no greater than 1,000 fpm, and all briefings/checklists are completed; if ANY parameter is not met at the gate, a MISSED APPROACH IS MANDATORY.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Aircraft must be at full throttle with speedbrakes extended.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "Stabilization is only required at 50 ft above touchdown.",
-        "is_correct": false
-      },
-      {
-        "id": "D",
-        "text": "Captains can accept sink rates up to 2,500 fpm if landing runway is long.",
-        "is_correct": false
-      }
-    ],
-    "explanation": {
-      "text": "### Stabilized Approach Criteria (Flight Safety Foundation & EASA)\n* **Stabilization Gates:**\n  - **1,000 ft AAL in IMC**.\n  - **500 ft AAL in VMC**.\n* **Parameters:** Correct path, $V_{REF}$ to $V_{REF}+10\\text{ kt}$, landing configuration, sink rate $\\le 1,000\\text{ fpm}$, spooled thrust.\n* **Golden Rule:** If unstabilized at the gate: **GO AROUND IMMEDIATELY**.",
-      "references": [
-        "Flight Safety Foundation: Approach-and-Landing Accident Reduction (ALAR)",
-        "EASA Safety Guidance Material on Stabilized Approaches"
-      ]
-    },
-    "metadata": {
-      "difficulty": 0.2
-    }
-  },
-  {
-    "id": "NJ-CRM-015",
-    "subject_id": "escenarios-netjets-despacho-crm",
-    "learning_objective": "Rejected Takeoff (RTO) Decision Making at V1",
-    "stem": "What is the absolute dividing line and decision criteria between a 'High-Speed RTO' (above 80-100 KIAS up to V1) and continuing the takeoff at or above V1?",
-    "options": [
-      {
-        "id": "A",
-        "text": "In the high-speed regime (above 80-100 KIAS up to V1), reject ONLY for engine failure, fire, catastrophic warning, or aircraft unable to fly; at and above V1, the takeoff MUST BE CONTINUED, as stopping within the remaining runway length can no longer be guaranteed.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Reject for any caution message up to VR rotate speed.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "At V1, the First Officer decides whether to stop or go without consulting the Captain.",
-        "is_correct": false
-      },
-      {
-        "id": "D",
-        "text": "Always reject after V1 if an engine fire warning illuminates.",
-        "is_correct": false
-      }
-    ],
-    "explanation": {
-      "text": "### Rejected Takeoff (RTO) Philosophy\n* **Low Speed ($< 80\\text{ to }100\\text{ KIAS}$):** Reject for any system anomaly, amber caution, or door alert.\n* **High Speed ($100\\text{ KIAS to }V_1$):** Reject **ONLY for major critical events**: Engine Failure, Engine Fire, Predictive Windshear, or aircraft structurally unsafe to fly.\n* **At or Above $V_1$:** **COMMIT TO FLY**. Stopping distance exceeds available runway.",
-      "references": [
-        "FAA Takeoff Safety Training Aid",
-        "EASA CS-25 Accelerate-Stop Performance Standards"
-      ]
-    },
-    "metadata": {
-      "difficulty": 0.2
-    }
-  },
-  {
-    "id": "NJ-CRM-016",
-    "subject_id": "escenarios-netjets-despacho-crm",
-    "learning_objective": "Low Fuel State Diversion Decision-Making",
-    "stem": "Scenario: En-route to Nice (LFMN), strong unforecast headwinds reduce fuel upon arrival. ATC puts the aircraft into a holding pattern. Destination weather is fine, but alternate (Marseille LFML) requires 1,200 kg. You have 1,700 kg onboard (Final Reserve Fuel is 500 kg). What is your definitive holding limit fuel and course of action?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Holding Limit Fuel (Divert Fuel) is exactly 1,700 kg (Alternate Fuel 1,200 kg + Final Reserve 500 kg); you cannot accept any holding delay and must immediately inform ATC: 'Unable to hold, proceeding to destination for immediate approach or diverting to alternate'; if holding is enforced, declare 'MINIMUM FUEL' and divert immediately to Marseille.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Hold for 30 minutes and plan to land with zero fuel.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "Shut down one engine in the holding pattern to extend endurance.",
-        "is_correct": false
-      },
-      {
-        "id": "D",
-        "text": "Divert to an unpaved grass strip 5 NM away without notifying ATC.",
-        "is_correct": false
-      }
-    ],
-    "explanation": {
-      "text": "### Divert Fuel & Minimum Fuel Decision Logic\n* $\\text{Divert Fuel} = \\text{Alternate Fuel} (1,200\\text{ kg}) + \\text{Final Reserve Fuel} (500\\text{ kg}) = 1,700\\text{ kg}$.\n* With $1,700\\text{ kg}$ on board, **Holding Time available = 0 minutes**.\n* Crew must either commence approach immediately or divert to alternate with zero delay.",
-      "references": [
-        "EASA CAT.OP.MPA.182",
-        "ICAO Doc 9976 (Flight Planning and Fuel Management)"
-      ]
-    },
-    "metadata": {
-      "difficulty": 0.25
-    }
-  },
-  {
-    "id": "NJ-CRM-017",
-    "subject_id": "escenarios-netjets-despacho-crm",
-    "learning_objective": "Volcanic Ash Cloud Inadvertent Encounter",
-    "stem": "What are the immediate flight crew memory and checklist actions upon an inadvertent volcanic ash encounter in flight?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Immediately disengage autothrottle, reduce thrust to flight idle (to reduce turbine operating temperatures below ash melting/glass-vitrification threshold), turn 180° to exit the cloud, turn ON continuous engine ignition and all anti-ice systems, start APU, and don oxygen masks at 100% if smoke/fumes enter the flight deck.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Apply full TOGA thrust and climb at maximum angle of attack.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "Open cabin outflow valves and turn off electrical generators.",
-        "is_correct": false
-      },
-      {
-        "id": "D",
-        "text": "Extend landing gear and speedbrakes to increase drag.",
-        "is_correct": false
-      }
-    ],
-    "explanation": {
-      "text": "### Volcanic Ash Cloud Encounter (ICAO Doc 9691 & QRH)\n* **Thrust to IDLE:** Prevents volcanic ash from melting inside high-pressure turbine stages and resolidifying into glass that blocks turbine nozzles.\n* **Exit Cloud:** Perform a **descending $180^\\circ$ turn**.\n* **Engine Reliability:** Engage **Continuous Ignition**, start **APU**, don **Oxy Masks** if fumes present.",
-      "references": [
-        "ICAO Doc 9691 (Manual on Volcanic Ash, Radioactive Material and Toxic Chemical Clouds)",
-        "EASA SIB 2010-17"
-      ]
-    },
-    "metadata": {
-      "difficulty": 0.25
-    }
+    "metadata": { "difficulty": 0.2 }
   }
 ]
+
+print("Writing escenarios-netjets-despacho-crm...")
+with open(os.path.join(BASE_DIR, "escenarios-netjets-despacho-crm", "netjets_interview_scenarios_crm.json"), "w", encoding="utf-8") as f:
+    json.dump(crm, f, indent=2, ensure_ascii=False)
+
+print("Done crm.")
