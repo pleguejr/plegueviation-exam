@@ -41,6 +41,7 @@ export function App() {
   const [flashcardCategory, setFlashcardCategory] = useState<string>('all');
   const [flashcardQuestionIds, setFlashcardQuestionIds] = useState<string[] | undefined>(undefined);
   const [flashcardDeckTitle, setFlashcardDeckTitle] = useState<string | undefined>(undefined);
+  const [tablesCategory, setTablesCategory] = useState<string>('all');
   const [explorerSearchTerm, setExplorerSearchTerm] = useState('');
   const [questions, setQuestions] = useState<Question[]>([]);
   const [manifest, setManifest] = useState<BankManifest | null>(null);
@@ -333,7 +334,10 @@ export function App() {
         currentTab={currentView === 'explorer' ? 'explorer' : currentView === 'reports' ? 'reports' : currentView === 'settings' ? 'settings' : currentView === 'flashcards' ? 'flashcards' : currentView === 'procedures' ? 'procedures' : currentView === 'tables' ? 'tables' : 'dashboard'}
         theme={theme}
         onToggleTheme={toggleTheme}
-        onSelectTab={(tab) => setCurrentView(tab)}
+        onSelectTab={(tab) => {
+          if (tab === 'tables') setTablesCategory('all');
+          setCurrentView(tab);
+        }}
         onOpenNewExam={() => handleOpenConfigModal()}
         onOpenFlashcards={() => handleStartFlashcards()}
         onOpenImporter={() => setIsImporterOpen(true)}
@@ -373,8 +377,14 @@ export function App() {
             onStartFlashcards={(params) => handleStartFlashcards(params)}
             onOpenNewExam={() => handleOpenConfigModal()}
             onOpenProcedures={() => setCurrentView('procedures')}
-            onOpenTables={() => setCurrentView('tables')}
-            onNavigateTab={(tab) => setCurrentView(tab)}
+            onOpenTables={(cat) => {
+              setTablesCategory(cat || 'all');
+              setCurrentView('tables');
+            }}
+            onNavigateTab={(tab) => {
+              if (tab === 'tables') setTablesCategory('all');
+              setCurrentView(tab);
+            }}
             onOpenImporter={() => setIsImporterOpen(true)}
             onOpenQuestionSearch={(term) => {
               setExplorerSearchTerm(term);
@@ -392,6 +402,7 @@ export function App() {
 
         {currentView === 'tables' && (
           <OperationalTablesScreen
+            initialCategory={tablesCategory as any}
             onBackToDashboard={() => setCurrentView('dashboard')}
           />
         )}

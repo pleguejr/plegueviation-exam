@@ -53,7 +53,7 @@ interface DashboardProps {
   onStartFlashcards: (params?: { category?: string; questionIds?: string[]; title?: string }) => void;
   onOpenNewExam: () => void;
   onOpenProcedures: () => void;
-  onOpenTables: () => void;
+  onOpenTables: (category?: string) => void;
   onNavigateTab: (tab: 'explorer' | 'reports' | 'settings' | 'procedures' | 'tables') => void;
   onOpenImporter: () => void;
   onOpenQuestionSearch?: (term: string) => void;
@@ -292,6 +292,12 @@ export const Dashboard: React.FC<DashboardProps> = ({
   // Temas de categoría
   const getCategoryTheme = (catId: string) => {
     switch (catId) {
+      case 'netjets-interview':
+        return {
+          icon: <Briefcase className="w-5 h-5" />,
+          gradient: 'from-amber-600 to-yellow-500',
+          badgeBg: 'bg-amber-500/10 text-amber-400 border-amber-500/30'
+        };
       case 'binter-ops':
         return {
           icon: <PlaneTakeoff className="w-5 h-5" />,
@@ -712,7 +718,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
 
           {/* 7. TABLAS OPERACIONALES (MINIMOS / LIMITACIONES / MEMORY ITEMS) */}
           <div 
-            onClick={onOpenTables}
+            onClick={() => onOpenTables ? onOpenTables('all') : onNavigateTab('tables')}
             className="flex flex-col items-center gap-3 cursor-pointer group"
           >
             <div className="w-20 h-20 rounded-full bg-gradient-to-tr from-sky-600 via-blue-700 to-indigo-700 text-white shadow-glow-sky flex items-center justify-center border-2 border-sky-400 group-hover:scale-105 transition-all duration-200">
@@ -1174,7 +1180,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
           {/* 3. Tablas Sintéticas EASA */}
           <button
             type="button"
-            onClick={onOpenTables}
+            onClick={() => onOpenTables ? onOpenTables('easa-netjets') : onNavigateTab('tables')}
             className="netjets-action netjets-action-sky p-3.5 rounded-2xl bg-sky-950/40 hover:bg-sky-900/50 border border-sky-500/40 hover:border-sky-400 text-left transition-all group flex flex-col justify-between shadow-md active:scale-95"
           >
             <div className="netjets-action-title flex items-center justify-between text-xs font-black text-sky-300 mb-1">

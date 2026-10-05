@@ -301,5 +301,195 @@
     "metadata": {
       "difficulty": 0.2
     }
+  },
+  {
+    "id": "NJ-RVSM-009",
+    "subject_id": "espacio-rvsm-pbn-lvo",
+    "learning_objective": "RVSM Altimetry - Tolerancia Máxima entre Altímetros Primarios en Crucero",
+    "stem": "Durante el vuelo en espacio aéreo RVSM (FL290–FL410), ¿cuál es la diferencia máxima admisible entre las lecturas de los dos altímetros primarios principales de la tripulación?",
+    "options": [
+      {
+        "id": "A",
+        "text": "200 ft (60 m). Si la discrepancia supera los 200 ft, el sistema pierde la cualificación RVSM y la tripulación debe notificar de inmediato al ATC.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "50 ft (15 m) en cualquier altitud de vuelo.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "500 ft siempre que el piloto automático esté acoplado al canal del copiloto.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No existe límite numérico si el radaraltímetro indica menos de 40.000 ft.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Tolerancias Altimétricas en Crucero RVSM (SPA.RVSM.110)\n* **En tierra (Before Takeoff)**: Máximo $\\pm 75\\text{ ft}$ respecto a la elevación conocida del campo y $\\pm 50\\text{ ft}$ entre ambos altímetros primarios.\n* **En vuelo de crucero (RVSM Level)**: La discrepancia máxima permitida entre el altímetro del Comandante (PF) y del Copiloto (PM) es de **200 ft**.\n* Si supera los 200 ft, se considera fallo altimétrico y se debe informar al ATC: *'UNABLE RVSM DUE TO EQUIPMENT'*.",
+      "references": [
+        "EASA Easy Access Rules for Air Operations, SPA.RVSM.110",
+        "ICAO Doc 9574 Manual on Implementation of a 300 m (1,000 ft) Vertical Separation Minimum"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "NJ-RVSM-010",
+    "subject_id": "espacio-rvsm-pbn-lvo",
+    "learning_objective": "PBN Navigation - Especificaciones RNP 1 vs RNP 4 vs RNP APCH",
+    "stem": "¿Qué significa la designación 'RNP 1' en una carta de salida normalizada por instrumentos (SID) o llegada (STAR) bajo navegación basada en prestaciones (PBN)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Que el sistema de navegación a bordo debe mantener la posición de la aeronave dentro de un margen de $\\pm 1\\text{ NM}$ del eje nominal durante al menos el 95% del tiempo de vuelo, disponiendo de monitorización y alerta de integridad a bordo (On-Board Performance Monitoring and Alerting).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Que solo se permite el uso de 1 único receptor GPS sin soporte inercial.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Que la aeronave debe volar a no más de 100 nudos durante toda la maniobra.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Que la precisión requerida es de 0.1 NM exclusivamente en el tramo de aproximación final.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Navegación Basada en Prestaciones (PBN - ICAO Doc 9613 / EASA Part-SPA.PBN)\n* **RNP (Required Navigation Performance)** se diferencia de RNAV en que **RNP EXIGE monitorización y alerta de contención a bordo** (*On-Board Performance Monitoring & Alerting*).\n* **RNP 1**: Precisión de $\\pm 1.0\\text{ NM}$ durante el 95% del tiempo. Estándar para SIDs y STARs en entornos terminales concurridos.",
+      "references": [
+        "ICAO Doc 9613 PBN Manual, Volume II, Part C",
+        "EASA Easy Access Rules for Air Operations, SPA.PBN.100"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-RVSM-011",
+    "subject_id": "espacio-rvsm-pbn-lvo",
+    "learning_objective": "TCAS II Version 7.1 - Comportamiento ante un Aviso de Resolución Invertido (Reversal RA)",
+    "stem": "¿Cuál es el tiempo de respuesta máximo exigido a la tripulación de vuelo para reaccionar ante un aviso de resolución de tráfico TCAS II (Resolution Advisory / RA) inicial y ante un aviso de reversión (Reversal RA)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "5 segundos para iniciar la maniobra ante un RA inicial, y 2.5 segundos de reacción ante un aviso de reversión (Reversal RA: e.g. 'CLIMB, CLIMB NOW' tras un previo 'DESCEND').",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "15 segundos ante un RA inicial y 10 segundos ante una reversión.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "30 segundos para permitir consultar primero la instrucción con el controlador de tránsito aéreo.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La respuesta debe ser automática mediante desconexión forzada de los mandos en menos de 1 segundo.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Tiempos de Reacción ante TCAS II v7.1 (ICAO Doc 9863 / SERA.11014)\n* **RA Inicial**: Desconectar AP/FD y seguir el guiado vertical en un máximo de **5 segundos**, aplicando aproximadamente $0.25\\text{ g}$.\n* **Reversal / Modified RA**: Reaccionar en un máximo de **2.5 segundos** aplicando hasta $0.35\\text{ g}$.\n* **Regla suprema**: El TCAS RA prevalece SIEMPRE sobre cualquier instrucción del ATC.",
+      "references": [
+        "EASA AMC1 CAT.OP.MPA.290 TCAS resolution advisories",
+        "ICAO Doc 9863 Airborne Collision Avoidance System (ACAS) Manual"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "NJ-RVSM-012",
+    "subject_id": "espacio-rvsm-pbn-lvo",
+    "learning_objective": "Oceanic & Remote Contingencies - Procedimiento de Contingencia en Vuelo",
+    "stem": "Bajo los procedimientos de contingencia en espacio aéreo oceánico y remoto de la OACI (ICAO NAT Doc 007 / Doc 4444), si la aeronave sufre una despresurización o fallo de motor y no puede obtener autorización ATC inmediata, ¿cuál es la maniobra de salida de ruta reglamentaria?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Virar al menos 30° a la izquierda o derecha para establecer un desplazamiento lateral de 5 NM respecto al eje de la pista organizada (NAT Track), encender todas las luces exteriores, emitir MAYDAY/PAN en 121.5 y descender por debajo de FL290 estableciendo un nivel intercalado de 500 ft.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Efectuar un viraje de 180° sobre la misma ruta exacta y descender a máxima velocidad sin avisar a nadie.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mantener el nivel de vuelo actual y apagar los transpondedores para no saturar las pantallas del radar militar.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aterrizar de inmediato en el agua antes de que se agote el combustible.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Procedimientos de Contingencia Oceánica (ICAO NAT Doc 007 / Doc 4444)\n* **Maniobra lateral**: Virar al menos **30°** a izquierda/derecha para adquirir un **offset lateral de 5 NM** respecto a la ruta.\n* **Desplazamiento vertical**: Una vez establecido a 5 NM, si no se puede mantener el nivel, descender por debajo de **FL290** (o mantenerse a un nivel desplazado en **500 ft** en crucero mientras se esté en espacio RVSM).\n* **Comunicaciones**: Transmitir llamada de socorro en 121.5 MHz y 123.45 MHz, responder Squawk 7700 y encender toda la iluminación exterior.",
+      "references": [
+        "ICAO Doc 4444 PANS-ATM Section 15.2.2 (Special Procedures for In-flight Contingencies in Oceanic Airspace)",
+        "ICAO NAT Doc 007 North Atlantic Operations Manual"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-RVSM-013",
+    "subject_id": "espacio-rvsm-pbn-lvo",
+    "learning_objective": "PBN Approach Navigation - Niveles de Mínimos en Cartas RNP (LNAV, LNAV/VNAV, LPV)",
+    "stem": "¿Cuál es la diferencia fundamental entre una aproximación RNP con mínimos 'LNAV/VNAV' y una con mínimos 'LPV' (Localizer Performance with Vertical Guidance)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "LNAV/VNAV utiliza guiado vertical basado en altimetría barométrica (Baro-VNAV, sensible a la temperatura), mientras que LPV utiliza guiado vertical y lateral de alta precisión aumentado por satélite SBAS/EGNOS con comportamiento similar a un ILS hasta una DH de 200 ft.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "LNAV/VNAV solo se puede volar con pilotos automáticos mecánicos antiguos y LPV es solo para aviones de pistón.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "LPV no proporciona guiado vertical y obliga a realizar aproximaciones escalonadas.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No existe ninguna diferencia técnica ni operacional entre ambas denominaciones.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Aproximaciones PBN: Baro-VNAV vs SBAS/LPV (EASA Part-SPA.PBN)\n* **LNAV/VNAV (Baro-VNAV)**: Guiado vertical generado por los sistemas de datos de aire de la aeronave a partir de la presión atmosférica barométrica. Requiere aplicar limitaciones y correcciones de temperatura fría.\n* **LPV (SBAS / EGNOS / WAAS)**: Guiado vertical geométrico aumentado por satélites geoestacionarios. No depende de la presión barométrica, no se ve afectado por el frío extremo y permite mínimos tan bajos como **200 ft DH** (equivalente a CAT I).",
+      "references": [
+        "EASA Easy Access Rules for Air Operations, SPA.PBN.100",
+        "ICAO Doc 9613 PBN Manual, Volume II, Implementing RNP APCH"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
   }
 ]

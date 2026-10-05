@@ -413,5 +413,385 @@
     "metadata": {
       "difficulty": 0.3
     }
+  },
+  {
+    "id": "NJ-FUEL-012",
+    "subject_id": "combustible-fuel-schemes",
+    "learning_objective": "EASA Fuel Policy - Combustible Adicional sin Alternativo de Destino",
+    "stem": "Bajo la normativa EASA CAT.OP.MPA.181, si se despacha un vuelo IFR sin requerir aeródromo alternativo de destino (debido a dos pistas independientes y meteorología VMC garantizada), ¿qué combustible adicional de espera es obligatorio cargar?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Combustible suficiente para volar durante al menos 15 minutos a velocidad de espera a 1.500 ft (450 m) sobre la elevación del aeródromo de destino en condiciones estándar.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Combustible adicional equivalente a 45 minutos de crucero con todos los motores operativos.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No se requiere ningún combustible extra más allá del combustible de contingencia del 5%.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Combustible suficiente para ascender a nivel de crucero y retornar al aeródromo de origen.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Requisito de Combustible sin Alternativo de Destino (CAT.OP.MPA.181)\n* Cuando no se requiere aeródromo alternativo de destino según CAT.OP.MPA.180, el plan de vuelo debe incluir una cantidad de combustible adicional que permita a la aeronave **mantener la espera durante al menos 15 minutos a 1.500 ft (450 m)** sobre la elevación del aeródromo de destino en condiciones estándar, además de la Reserva Final.",
+      "references": [
+        "EASA Easy Access Rules for Air Operations, CAT.OP.MPA.181(b)(1)",
+        "AMC1 CAT.OP.MPA.181 Basic fuel scheme with variations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-FUEL-013",
+    "subject_id": "combustible-fuel-schemes",
+    "learning_objective": "EASA Fuel Policy - Criterios de Selección de un Aeródromo Alternativo en Ruta por Combustible (Fuel ERA)",
+    "stem": "Bajo el esquema básico de combustible EASA con reducción de contingencia al 3% mediante aeródromo alternativo en ruta (ERA), ¿qué condiciones geográficas de ubicación debe cumplir el aeródromo Fuel ERA seleccionado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Debe estar ubicado dentro de un círculo cuyo radio sea igual al 20% de la distancia total del plan de vuelo, con centro en la ruta a una distancia del destino igual al 25% de la distancia total o al 20% más 50 NM (lo que sea menor).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Debe encontrarse estrictamente a mitad exacta de la ruta (a 50% de la distancia total).",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Puede ser cualquier aeródromo con pista de más de 3.000 metros sin importar su posición respecto a la ruta.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Debe estar ubicado a no más de 30 minutos de vuelo a velocidad de crucero monomotor desde el origen.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Criterios de Selección de En-Route Alternate (Fuel ERA - AMC1 CAT.OP.MPA.181)\n* Para beneficiarse de la reducción de contingencia al **3%** (o contingencia estadística):\n* El aeródromo ERA debe situarse dentro de una envolvente geométrica definida por EASA: dentro de un círculo con radio del **20% de la distancia total**, centrado en la ruta nominal a una distancia de destino del **25% de la distancia total de la ruta** (o 20% + 50 NM, lo que resulte menor).",
+      "references": [
+        "EASA Easy Access Rules for Air Operations, AMC1 CAT.OP.MPA.181",
+        "AMC8 CAT.OP.MPA.182 En-route alternate aerodrome selection"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "NJ-FUEL-014",
+    "subject_id": "combustible-fuel-schemes",
+    "learning_objective": "EASA Fuel Policy - Procedimiento de Re-planificación en Vuelo (RCF)",
+    "stem": "¿En qué consiste el procedimiento de combustible por Re-planificación en Vuelo (Reduced Contingency Fuel / RCF) bajo la normativa EASA CAT.OP.MPA.181?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En planificar el vuelo hacia un destino intermedio comercial con reserva estándar, pero llevando combustible suficiente para que al llegar a un Punto de Decisión predeterminado (Decision Point), si el remanente es adecuado, se pueda re-despachar en vuelo hacia el destino final con contingencia calculada solo desde dicho punto.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En eliminar por completo el combustible de reserva final y sustituirlo por combustible de rodaje.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En apagar un motor en crucero para extender la autonomía de vuelo en un 20%.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En transferir combustible entre depósitos de alas para compensar el viento en cola.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Procedimiento RCF (Reduced Contingency Fuel / Re-planning in Flight)\n* El procedimiento **RCF** permite optimizar la carga útil reduciendo la masa de combustible al despegue.\n* Se define un **Destino 1 (intermedio)** y un **Punto de Decisión (DP)** en ruta. Al cruzar el DP, si el combustible a bordo es igual o superior al combustible requerido desde el DP hasta el **Destino 2 (final)** más la contingencia desde el DP, el Comandante continúa hacia el Destino 2; de lo contrario, se desvía al Destino 1.",
+      "references": [
+        "EASA Easy Access Rules for Air Operations, CAT.OP.MPA.181 & AMC2 CAT.OP.MPA.181",
+        "ICAO Annex 6 Part I, Attachment C (In-flight Re-planning)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-FUEL-015",
+    "subject_id": "combustible-fuel-schemes",
+    "learning_objective": "EASA Fuel Management - Comprobaciones Periódicas de Combustible en Vuelo (In-Flight Fuel Checks)",
+    "stem": "Bajo EASA CAT.OP.MPA.185, ¿con qué periodicidad mínima y en qué puntos debe la tripulación de vuelo registrar y verificar el consumo y remanente de combustible?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A intervalos regulares no superiores a 60 minutos (típicamente en cada waypoint principal de navegación) y siempre en el punto de inicio del descenso (Top of Descent / TOD).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Únicamente una vez durante el vuelo al alcanzar la mitad de la distancia total.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo cuando se encienda la luz ámbar de aviso de bajo nivel de combustible en cabina.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cada 15 minutos en aeronaves bimotores y cada 4 horas en aeronaves cuatrimotores.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Monitorización de Combustible en Vuelo (CAT.OP.MPA.185)\n* El Comandante debe asegurarse de que se comprueba y registra el combustible remanente utilizable a **intervalos regulares (máximo cada hora / waypoints de OFP)** para:\n  1. Comparar el combustible real consumido con el previsto en el plan operacional.\n  2. Verificar que el combustible utilizable restante es suficiente para completar el vuelo hasta el destino y alternativo con la Reserva Final intacta.\n  3. Detectar precozmente cualquier fuga de combustible imprevista (*Fuel Leak*).",
+      "references": [
+        "EASA Easy Access Rules for Air Operations, CAT.OP.MPA.185(a)",
+        "AMC1 CAT.OP.MPA.185 In-flight fuel management"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "NJ-FUEL-016",
+    "subject_id": "combustible-fuel-schemes",
+    "learning_objective": "EASA Fuel Emergency - Acciones ante Detección de Fuga de Combustible en Vuelo (Fuel Leak)",
+    "stem": "¿Cuál es la primera acción operativa y de gestión de vuelo obligatoria si la tripulación confirma una fuga activa de combustible (Fuel Leak) proveniente de un motor o depósito de ala?",
+    "options": [
+      {
+        "id": "A",
+        "text": "PROHIBIDO realizar trasvase cruzado (Crossfeed) hacia el lado de la fuga para evitar alimentar la fuga con el combustible sano, aplicar la checklist de emergencia del QRH y aterrizar en el aeródromo adecuado más cercano.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Abrir inmediatamente la válvula de crossfeed para vaciar los depósitos equilibradamente hacia ambos motores.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Continuar hacia el destino final acelerando a velocidad máxima de crucero (VMO) para llegar antes de que se agote el combustible.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Declarar 'MINIMUM FUEL' y solicitar mantener la espera a nivel óptimo para verificar el ritmo de consumo.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Procedimiento ante Fuga de Combustible (Fuel Leak)\n* **Regla de oro de seguridad**: ¡NUNCA realizar Crossfeed hacia un motor o zona con fuga sospechosa! Si se abre el crossfeed incorrectamente, se transferirá y perderá también el combustible del ala sana.\n* Se debe identificar el origen, aislar el depósito/motor según QRH, declarar **MAYDAY (emergencia)** y proceder al **aeródromo adecuado más cercano (Land at nearest suitable airport)**.",
+      "references": [
+        "QRH Section: Fuel System Abnormal / Fuel Leak Procedure",
+        "ICAO Doc 9976 Flight Planning and Fuel Management Manual"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-FUEL-017",
+    "subject_id": "combustible-fuel-schemes",
+    "learning_objective": "EASA Fuel Scheme - Desvío al Alternativo y Decisión de Frustrada",
+    "stem": "Al aproximarse al aeródromo de destino, la tripulación observa que el combustible remanente se aproxima al 'Divert Fuel' (Alternate Fuel + Final Reserve). ¿Cuándo es OBLIGATORIO iniciar el desvío hacia el aeródromo alternativo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antes de que el combustible utilizable a bordo caiga por debajo de la suma de Alternate Fuel + Final Reserve Fuel, de modo que el avión aterrice en el alternativo con al menos la Reserva Final intacta.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Solo cuando los motores comiencen a experimentar oscilaciones de presión por bajo nivel en colectores.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Una vez consumida la mitad de la reserva final en la espera del destino.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "A criterio exclusivo del ATC cuando no haya disponibilidad de vectores de aproximación.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Punto de Desvío Obligatorio (Divert Decision)\n* El combustible de desvío (**Divert Fuel**) es la cantidad exacta necesaria para ejecutar una aproximación frustrada en destino, volar al alternativo y realizar la aproximación y aterrizaje, **llegando a la toma con la Reserva Final (FRF) íntegra**.\n* Por tanto, la decisión de desvío debe tomarse **antes de comprometer los mínimos del Alternate Fuel**.",
+      "references": [
+        "EASA Easy Access Rules for Air Operations, CAT.OP.MPA.185",
+        "AMC1 CAT.OP.MPA.185 In-flight fuel management"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "NJ-FUEL-018",
+    "subject_id": "combustible-fuel-schemes",
+    "learning_objective": "EASA Fuel Schemes - Combustible de Vaciado Rápido (Fuel Jettisoning)",
+    "stem": "¿Bajo qué condiciones exige la normativa de certificación EASA CS-25 un sistema de vaciado rápido de combustible en vuelo (Fuel Jettisoning System) en aeronaves de transporte?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cuando el peso máximo al despegue (MTOW) supere significativamente el peso máximo al aterrizaje (MLW) y la aeronave no pueda cumplir los gradientes de ascenso de aproximación frustrada monomotor a su peso de despegue.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Es obligatorio en todos los aviones comerciales de más de 2 asientos sin excepción.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo se instala en aviones monomotores que operan sobre el agua.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Únicamente si la capacidad de combustible supera los 100.000 kg.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Sistema de Vaciado Rápido de Combustible (Fuel Jettison - CS 25.1001)\n* Se requiere sistema de **Fuel Jettison** si la aeronave no puede cumplir los requisitos de gradiente de ascenso de aproximación frustrada monomotor (Approach Climb $\\ge 2.1\\%$ en bimotores) desde el MTOW hasta el MLW.\n* Debe ser capaz de vaciar combustible suficiente en **15 minutos** para reducir el peso desde el MTOW hasta el peso de aterrizaje reglamentario.",
+      "references": [
+        "EASA CS-25.1001 Fuel jettisoning system",
+        "EASA Easy Access Rules for Air Operations, CAT.POL.A.210"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-FUEL-019",
+    "subject_id": "combustible-fuel-schemes",
+    "learning_objective": "EASA Fuel Management - Punto de Congelación de Combustible Jet A-1",
+    "stem": "¿Cuál es el punto de congelación estándar de referencia para el combustible de aviación JET A-1 y qué margen de temperatura sobre dicho punto exige EASA mantener en los depósitos en crucero?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El punto de congelación estándar del JET A-1 es de -47°C; la temperatura del combustible en el depósito más frío debe mantenerse al menos 3°C por encima de este punto (es decir, a no menos de -44°C).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El punto de congelación del JET A-1 es de 0°C y debe mantenerse siempre por encima de +10°C con calentadores eléctricos.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El punto de congelación es de -20°C y no existe requisito de margen de seguridad en vuelo.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El JET A-1 no se congela bajo ninguna temperatura alcanzable en la atmósfera terrestre.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Temperatura Mínima de Combustible (Fuel Freezing Point)\n* **JET A-1**: Punto de congelación máximo de **-47°C** (JET A americano: -40°C).\n* **Margen de seguridad EASA/AFM**: La temperatura del combustible (Fuel Temp) en los depósitos principales debe mantenerse **al menos 3°C por encima del punto de congelación** (mínimo **-44°C** para Jet A-1).\n* **Mitigación en vuelo si baja la temperatura**: Descender a un nivel de vuelo más cálido, acelerar a mayor número Mach (aumento de calentamiento cinético TAT) o transferir combustible.",
+      "references": [
+        "EASA Easy Access Rules for Air Operations, CAT.OP.MPA.185",
+        "ICAO Doc 9976 Flight Planning and Fuel Management Manual"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "NJ-FUEL-020",
+    "subject_id": "combustible-fuel-schemes",
+    "learning_objective": "EASA Fuel Schemes - Combustible Adicional Discrecional del Comandante (Extra Fuel)",
+    "stem": "Bajo la normativa EASA CAT.OP.MPA.180, ¿cuál es la potestad y responsabilidad del Comandante respecto a la carga de combustible adicional (Extra Fuel / Discretionary Fuel)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El Comandante tiene la potestad final y no revocable de añadir combustible adicional si a su juicio las condiciones meteorológicas, demoras ATC previstas o contingencias de ruta lo aconsejan, dentro de las limitaciones de masa de la aeronave.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El Comandante no puede añadir más combustible que el calculado estrictamente por el software de despacho de la compañía.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cualquier carga de combustible extra requiere la autorización escrita y previa de la autoridad nacional de aviación civil.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo se puede añadir combustible extra si se desembarca el equipaje de todos los pasajeros.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Potestad del Comandante sobre el Combustible (CAT.OP.MPA.180)\n* El Comandante es el **responsable último de la seguridad del vuelo**.\n* La normativa EASA garantiza explícitamente su derecho a añadir **combustible discrecional (Extra Fuel)** considerando factores meteorológicos, tráfico, NOTAMs o condiciones de los aeródromos, siempre dentro de los límites estructurales de peso (MTOW / MZFW / MLW).",
+      "references": [
+        "EASA Easy Access Rules for Air Operations, CAT.OP.MPA.180 & CAT.GEN.MPA.105",
+        "ICAO Annex 6 Part I, Chapter 4"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "NJ-FUEL-021",
+    "subject_id": "combustible-fuel-schemes",
+    "learning_objective": "EASA Fuel Management - Protección de Reserva Final en Destino",
+    "stem": "Si tras aproximarse al destino la pista queda bloqueada por un incidente y la tripulación estima que tras volar al aeródromo alternativo aterrizará con una cantidad ligeramente inferior a la Reserva Final (FRF), ¿qué llamada radiotelefónica OBLIGATORIA debe transmitirse de inmediato al ATC?",
+    "options": [
+      {
+        "id": "A",
+        "text": "MAYDAY MAYDAY MAYDAY FUEL, declarando formalmente una situación de emergencia por combustible y solicitando prioridad absoluta para aterrizar de inmediato.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "PAN PAN PAN FUEL, solicitando espera prioritaria en el alternativo.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "MINIMUM FUEL, informando que no aceptará demoras adicionales.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Ninguna llamada de socorro es necesaria mientras los generadores eléctricos sigan operativos.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Regla de Oro de Emergencia de Combustible (EASA CAT.OP.MPA.185)\n* Si el cálculo de combustible utilizable utilizable a la toma indica que se aterrizará con **MENOS DE LA RESERVA FINAL (Final Reserve Fuel)**, es **OBLIGATORIO transmitir 'MAYDAY MAYDAY MAYDAY FUEL'**.\n* La llamada de 'MINIMUM FUEL' solo se utiliza cuando el remanente está ajustado pero se completará el vuelo con al menos la Reserva Final intacta.",
+      "references": [
+        "EASA Easy Access Rules for Air Operations, CAT.OP.MPA.185(c)",
+        "ICAO Doc 4444 PANS-ATM Section 15.5.3"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
   }
 ]

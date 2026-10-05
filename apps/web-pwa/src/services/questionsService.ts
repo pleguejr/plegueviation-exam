@@ -104,6 +104,7 @@ export async function loadManifest(forceRefresh = false): Promise<BankManifest> 
   const categoryMap: Record<string, { id: string; title: string; icon: string; color: string; total_questions: number; subtopics: Record<string, { id: string; title: string; count: number }> }> = {};
 
   const titles: Record<string, { title: string; icon: string; color: string }> = {
+    'netjets-interview': { title: 'NetJets Europe Interview Prep (EASA Air Ops & Aircrew)', icon: 'Briefcase', color: 'amber' },
     'command-upgrade': { title: 'Command Upgrade / Prueba de Comandante (Command Course)', icon: 'ShieldCheck', color: 'rose' },
     'fleet-c172n': { title: 'Flota Cessna 172N', icon: 'Compass', color: 'amber' },
     'fleet-p2010tdi': { title: 'Flota Tecnam P2010 TDI', icon: 'Gauge', color: 'indigo' },

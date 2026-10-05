@@ -337,5 +337,195 @@
     "metadata": {
       "difficulty": 0.4
     }
+  },
+  {
+    "id": "NJ-FTL-010",
+    "subject_id": "tiempos-actividad-descanso-ftl",
+    "learning_objective": "EASA FTL - Descanso Fraccionado en Tierra (Split Duty)",
+    "stem": "Bajo EASA ORO.FTL.220, ¿cuáles son los requisitos para aplicar una extensión de FDP mediante servicio fraccionado (Split Duty) con descanso intermedio en tierra?",
+    "options": [
+      {
+        "id": "A",
+        "text": "La pausa en tierra debe ser de al menos 3 horas continuas en un alojamiento adecuado (o descanso silencioso para pausas menores); el FDP máximo permitido puede incrementarse en un 50% de la duración de la pausa consecutiva.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cualquier escala de 30 minutos en la terminal de pasajeros permite extender la jornada en 4 horas.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El Split Duty solo puede aplicarse si la tripulación permanece sentada en la cabina de pilotaje con puertas cerradas.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo está permitido para vuelos diurnos con tripulación de cuatro pilotos en aviones de fuselaje ancho.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Servicio Fraccionado (Split Duty - ORO.FTL.220)\n* **Pausa mínima**: $\\ge 3\\text{ horas}$ continuas sin tareas operativas asignadas.\n* **Alojamiento (Accommodation)**: Habitación privada, tranquila, insonorizada y con cama cuando la pausa sea $\\ge 3\\text{ h}$.\n* **Extensión de FDP**: El FDP máximo de las tablas se incrementa en una cantidad típicamente equivalente al **50% del tiempo de descanso real** disfrutado en tierra.",
+      "references": [
+        "EASA Easy Access Rules for Air Operations, ORO.FTL.220 Split Duty",
+        "CS-FTL.1.220 Split Duty Accommodation Requirements"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-FTL-011",
+    "subject_id": "tiempos-actividad-descanso-ftl",
+    "learning_objective": "EASA FTL - Reducción de Descanso Mínimo por Discreción del Comandante",
+    "stem": "Bajo circunstancias operativas imprevistas en escala fuera de base, ¿en cuánto puede el Comandante reducir el período de descanso previo antes del siguiente vuelo según EASA ORO.FTL.205(f)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Puede reducirse en un máximo de 2 horas, pero nunca por debajo de 10 horas mínimas de descanso (garantizando al menos 8 horas de oportunidad ininterrumpida de sueño en el alojamiento).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Puede reducirse hasta un mínimo absoluto de 4 horas de descanso si todos los tripulantes firman su conformidad.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No se puede reducir el descanso en ningún caso bajo normativa europea; la reducción solo aplica a vuelos de carga militar.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Puede eliminarse el descanso siempre que se compense con 48 horas libres a la vuelta a base.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Discreción del Comandante sobre Descanso (Commander Discretion on Rest - ORO.FTL.205(f))\n* En caso de circunstancias excepcionales e imprevistas después de iniciarse el servicio:\n  * El Comandante, tras consultar a todos los tripulantes sobre su nivel de fatiga, puede **reducir el descanso en un máximo de 2 horas**, **NUNCA bajando de 10 horas totales** (ni comprometiendo las 8 horas de sueño en la cama).\n  * Debe reportarse formalmente al operador y a la autoridad competente (ANAC/EASA).",
+      "references": [
+        "EASA Easy Access Rules for Air Operations, ORO.FTL.205(f)",
+        "AMC1 ORO.FTL.205(f) Commander's Discretion"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-FTL-012",
+    "subject_id": "tiempos-actividad-descanso-ftl",
+    "learning_objective": "EASA FTL - Programaciones con Horarios Perturbadores (Disruptive Schedules)",
+    "stem": "¿Qué clasifica EASA ORO.FTL.105 como 'Horario Perturbador' (Disruptive Schedule) para una tripulación aérea?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aquel servicio que incluye un inicio temprano (Early Type: inicio entre 05:00 y 05:59 en base local) o una finalización tardía (Late Type: finalización entre 23:00 y 01:59 en base local), o servicios que invaden la ventana circadiana de mínimo rendimiento (WOCL).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cualquier vuelo en el que viaje un pasajero en estado de embriaguez o agresividad.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Vuelos que sufren retrasos por huelgas de controladores de más de 45 minutos.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Operar exclusivamente en días festivos nacionales o fines de semana.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Horarios Perturbadores (Disruptive Schedules - ORO.FTL.105)\n* **Early Type**: Comienza entre 05:00 y 05:59 hora local.\n* **Late Type**: Finaliza entre 23:00 y 01:59 hora local.\n* **Night Duty**: Cualquier servicio que abarque cualquier porción entre 02:00 y 04:59.\n* La normativa exige descansos de recuperación específicos cuando se encadenan múltiples servicios perturbadores consecutivos para evitar la desincronización circadiana.",
+      "references": [
+        "EASA Easy Access Rules for Air Operations, ORO.FTL.105 Definitions",
+        "CS-FTL.1.235 Rest Requirements for Disruptive Schedules"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "NJ-FTL-013",
+    "subject_id": "tiempos-actividad-descanso-ftl",
+    "learning_objective": "EASA FTL - Concepto y Estados de Aclimatación (Acclimatisation States)",
+    "stem": "Bajo EASA ORO.FTL.105, ¿cuáles son los tres estados de aclimatación de un tripulante aérea respecto a las zonas horarias?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estado B (Aclimatado a la base local), Estado D (Aclimatado a la zona horaria del destino tras el tiempo de estancia reglamentario) y Estado X (Estado de aclimatación desconocido tras cruces rápidos de múltiples husos horarios).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Estado 1 (Verano), Estado 2 (Invierno) y Estado 3 (Ecuatorial).",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Estado A (Despierto), Estado B (Dormido) y Estado C (En guardia).",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Estado Alpha (Vuelo nacional) y Estado Beta (Vuelo internacional).",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Estados de Aclimatación (ORO.FTL.105 & CS-FTL.1.205)\n* **B (Home Base)**: El tripulante está sincronizado con la hora de su base de origen.\n* **D (Destination)**: El tripulante se ha aclimatado a la hora del destino (requiere descansos específicos según número de zonas horarias cruzadas).\n* **X (Unknown)**: Tras cruzar múltiples zonas horarias sin tiempo de descanso suficiente para sincronizarse, el FDP máximo de las tablas se reduce significativamente por mayor riesgo de fatiga circadiana.",
+      "references": [
+        "EASA Easy Access Rules for Air Operations, ORO.FTL.105 Definitions",
+        "CS-FTL.1.205 Flight Duty Period (FDP) Acclimatisation Tables"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-FTL-014",
+    "subject_id": "tiempos-actividad-descanso-ftl",
+    "learning_objective": "EASA FTL - Cómputo de Vuelos de Posicionamiento (Deadheading)",
+    "stem": "Si un piloto de NetJets viaja como pasajero en un vuelo comercial para trasladarse desde su Gateway residencial hasta el avión donde comenzará su servicio, ¿cómo computa ese tiempo de posicionamiento (Deadheading) bajo EASA ORO.FTL.105?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Computa al 100% como tiempo de servicio (Duty Time) y como período de servicio de vuelo (FDP) si precede inmediatamente a un sector de vuelo operativo sin mediar un descanso legal completo.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Computa como tiempo de descanso legal si el piloto viaja en asiento de primera clase o Business.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No computa para ningún límite de actividad si el vuelo comercial dura menos de 3 horas.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Computa únicamente como tiempo de vuelo de la aeronave ejecutiva.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Posicionamiento (Deadheading - ORO.FTL.105 / ORO.FTL.215)\n* Todo tiempo empleado en posicionamiento por orden del operador **es TIEMPO DE SERVICIO (Duty Time)**.\n* Si el posicionamiento se realiza inmediatamente antes de un sector de vuelo como tripulación operativa, **dicho tiempo de posicionamiento forma parte integrante del FDP total de la jornada**.",
+      "references": [
+        "EASA Easy Access Rules for Air Operations, ORO.FTL.105 & ORO.FTL.215",
+        "AMC1 ORO.FTL.215 Positioning"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
   }
 ]

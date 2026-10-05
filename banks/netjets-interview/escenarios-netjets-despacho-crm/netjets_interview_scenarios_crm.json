@@ -301,5 +301,271 @@
     "metadata": {
       "difficulty": 0.3
     }
+  },
+  {
+    "id": "NJ-CRM-009",
+    "subject_id": "escenarios-netjets-despacho-crm",
+    "learning_objective": "NetJets VIP Owner Management - Manejo de Presión por Meteorología Severa",
+    "stem": "Escenario de Entrevista NetJets: Está al mando de un Phenom 300 listo para salir de Niza hacia Samedan (aeródromo de montaña visual). El Propietario VIP insiste en que tiene una reunión crucial y exige despegar de inmediato. Sin embargo, el pronóstico en Samedan indica techo de nubes cubierto a 500 ft y nevada moderada (muy por debajo de mínimos visuales VMC). ¿Cuál es la respuesta y actuación esperada por el panel de NetJets?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mantener una postura de seguridad inquebrantable (Safety is Non-Negotiable), explicar al Propietario con empatía y profesionalismo que las condiciones violan los límites de seguridad y la ley, y presentar de forma proactiva una solución coordinada con Dispatch (e.g. volar a Zúrich / Milán y coordinar transfer en limusina privada VIP a Samedan).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Despegar de inmediato para complacer al cliente y realizar una aproximación rasante bajo las nubes a ver si se ve la pista.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Negarse a hablar con el cliente y encerrarse en la cabina de pilotaje hasta que el handling desembarque el equipaje.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Permitir que el cliente firme un documento de exención de responsabilidad civil para volar bajo mínimos.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Liderazgo y 'Owner Mindset' en NetJets\n* Este es el escenario clásico número uno en las entrevistas de NetJets Europe.\n* **Evaluación buscada**:\n  1. **Seguridad**: No se compromete jamás bajo ninguna presión comercial o de cliente.\n  2. **Servicio y Empatía**: El cliente VIP paga por excelencia. No se le dice solo 'no'; se le explica que se protege su vida y la de su familia.\n  3. **Solución Proactiva**: Ofrecer de inmediato una alternativa de viaje sin fisuras (vuelo a alternativo IFR + traslado VIP terrestre).",
+      "references": [
+        "NetJets Command & First Officer Assessment Behavioral Standards",
+        "ICAO Doc 9992 Manual on Threat and Error Management (TEM)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "NJ-CRM-010",
+    "subject_id": "escenarios-netjets-despacho-crm",
+    "learning_objective": "Dangerous Goods - Baterías de Litio y Dispositivos Electrónicos en Cabina (PED)",
+    "stem": "Durante el vuelo en crucero, un dispositivo electrónico portátil (PED / iPad) de un pasajero en cabina sufre un desbocamiento térmico (Thermal Runaway) emitiendo humo denso y llamas. Según los procedimientos EASA y de aviación ejecutiva, ¿cuál es la técnica de extinción y enfriamiento correcta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Extinguir las llamas iniciales con extintor Halon / Halotron / Agua, y seguidamente verter agua u otro líquido no alcohólico en gran cantidad directamente sobre el dispositivo para enfriar las celdas y evitar la reignición por propagación térmica.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cubrir el dispositivo con mantas y almohadas de pluma para sofocar el fuego.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Recoger inmediatamente el dispositivo al rojo vivo con las manos desnudas y arrojarlo al inodoro del avión.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Usar únicamente extintor de polvo químico seco y no aplicar jamás agua bajo ninguna circunstancia.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Procedimiento ante Embalamiento Térmico de Baterías de Litio (ICAO Doc 9481 / EASA SIB 2017-01)\n* **Paso 1**: Sofocar las llamas con extintor adecuado de cabina (Halon).\n* **Paso 2**: ¡**ENFRIAR CON AGUA**! Las baterías de litio generan su propio oxígeno al quemarse químicamente. La única forma de detener la reacción en cadena de las celdas adyacentes es verter agua fría abundante.\n* **Paso 3**: Dejar el dispositivo sumergido o en bolsa de contención térmica ignífuga (*Fire Containment Bag*).",
+      "references": [
+        "ICAO Doc 9481 Emergency Response Guidance for Aircraft Incidents Involving Dangerous Goods",
+        "EASA Safety Information Bulletin SIB 2017-01 (Lithium Batteries in Cabin)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "NJ-CRM-011",
+    "subject_id": "escenarios-netjets-despacho-crm",
+    "learning_objective": "Steep Approach Operations - Aproximación Empinada en London City (EGLC)",
+    "stem": "¿Cuáles son los requisitos operacionales y de aeronave exigidos por EASA y la CAA británica para autorizar operaciones de aproximación empinada (Steep Approach $\\ge 4.5^\\circ$, como los 5.5° de London City EGLC)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Certificación específica del fabricante en el AFM que apruebe la senda empinada (modos especiales de spoilers/speedbrakes), aprobación operacional en el AOC del operador y cualificación de la tripulación en simulador FFS nivel D con entrenamiento de aeródromo especial.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cualquier aeronave bimotor puede realizarla siempre que el viento en cola no supere 25 nudos.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo requiere que el piloto al mando tenga más de 5.000 horas totales de vuelo en cualquier avión.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Únicamente se permite con helicópteros y aviones turbohélice de menos de 9 asientos.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Aproximaciones Empinadas (Steep Approach Operations - EASA CAT.POL.A.245)\n* London City (EGLC) tiene una senda de planeo de **5.5°** (frente a los 3.0° convencionales) debido a las restricciones de ruido y obstáculos urbanos.\n* **Exigencias**:\n  1. Aprobación en AFM del fabricante (e.g. modo 'Steep Approach' en Citation Latitude, Falcon, Phenom).\n  2. Aprobación SPA en el AOC.\n  3. Entrenamiento y chequeo formal en simulador para las tripulaciones.",
+      "references": [
+        "EASA Easy Access Rules for Air Operations, CAT.POL.A.245 & AMC1 CAT.POL.A.245",
+        "London City Airport (EGLC) Aerodrome Operations Manual"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-CRM-012",
+    "subject_id": "escenarios-netjets-despacho-crm",
+    "learning_objective": "CRM Decision Models - Modelo FOR-DEC / DODAR en Cabina",
+    "stem": "¿Qué significan las siglas del modelo estructurado de toma de decisiones aeronáuticas 'FOR-DEC' ampliamente utilizado en la aviación ejecutiva europea y en NetJets?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Facts (Hechos) -> Options (Opciones) -> Risks (Riesgos) -> Decision (Decisión) -> Execution (Ejecución) -> Check/Control (Comprobación y Seguimiento).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Fuel (Combustible) -> Oxygen (Oxígeno) -> Route (Ruta) -> Descent (Descenso) -> Emergency (Emergencia) -> Clearance (Autorización).",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Fast (Rápido) -> Operational (Operacional) -> Reliable (Fiable) -> Direct (Directo) -> Easy (Fácil) -> Clear (Claro).",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Flight (Vuelo) -> Owner (Propietario) -> Radar (Radar) -> Duty (Servicio) -> Engine (Motor) -> Checklist (Lista de chequeo).",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Modelo de Toma de Decisiones FOR-DEC\n* **F (Facts)**: ¿Cuál es el problema exacto? Recopilar datos objetivos (averías, meteo, combustible, pasaje).\n* **O (Options)**: ¿Qué alternativas tenemos? (Continuar, esperar, frustrar, desviar a Alternativo A o B).\n* **R (Risks)**: Analizar los pros y contras de cada opción.\n* **D (Decision)**: El Comandante toma la decisión clara tras consultar al Copiloto.\n* **E (Execution)**: Reparto de tareas y comunicación con ATC, tripulación de cabina y Propietarios.\n* **C (Check)**: Monitorizar el plan y reevaluar si las condiciones cambian.",
+      "references": [
+        "EASA CRM Training Guidelines (AMC1 ORO.FC.115)",
+        "ICAO Human Factors Training Manual (Doc 9683)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "NJ-CRM-013",
+    "subject_id": "escenarios-netjets-despacho-crm",
+    "learning_objective": "Ground De-icing - Tiempo Límite de Eficacia (Holdover Time / HOT)",
+    "stem": "Durante operaciones invernales con precipitación de nieve moderada, la tripulación aplica fluido anticongelante Tipo IV. ¿Cuándo comienza formalmente el cómputo del Tiempo Límite de Eficacia (Holdover Time - HOT) y qué debe hacerse si el HOT expira antes de iniciar la carrera de despegue?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El HOT comienza al inicio de la aplicación final del fluido anticongelante; si expira antes del despegue, PROHIBIDO despegar sin realizar una inspección de contaminación previa al despegue (Pre-takeoff Contamination Check) o volver a deshelar si la contaminación no puede verificarse con certeza visual o táctica.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El HOT comienza al cerrar la puerta de cabina y no expira si los motores están en marcha.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Si el HOT expira, basta con encender la calefacción de pitots y acelerar a fondo.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El tiempo de eficacia dura 24 horas consecutivas para cualquier tipo de fluido.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Concepto de Clean Aircraft y Holdover Time (EASA CAT.OP.MPA.250)\n* **Inicio del HOT**: En el momento exacto en que **comienza la aplicación final** del fluido anticongelante.\n* **Expiración del HOT**: Si expira antes del despegue y sigue precipitando nieve/aguanieve, la aeronave **NO puede despegar** bajo el *Clean Aircraft Concept* a menos que se realice una inspección exterior detallada o un nuevo ciclo completo de deshielo/antihielo.",
+      "references": [
+        "EASA Easy Access Rules for Air Operations, CAT.OP.MPA.250 Ice and other contaminants - ground procedures",
+        "AEA / SAE De-icing / Anti-icing Holdover Time Guidelines"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "NJ-CRM-014",
+    "subject_id": "escenarios-netjets-despacho-crm",
+    "learning_objective": "Windshear Operations - Alerta de Windshear durante la Carrera de Despegue",
+    "stem": "Durante la carrera de despegue en una pista con tormenta en las proximidades, la tripulación escucha la alerta sonora 'WINDSHEAR, WINDSHEAR' en cabina. ¿Cuál es el criterio de decisión y maniobra operativa según la velocidad alcanzada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Por debajo de V1: Abortar el despegue inmediatamente aplicando frenado máximo, reversas y spoilers. Por encima de V1 o en el aire: Continuar el despegue aplicando empuje máximo (TOGA) y ejecutar la maniobra de escape de windshear (Windshear Escape Maneuver) siguiendo el guiado del FD/HUD sin cambiar la configuración de flaps ni tren hasta salir de la cizalladura.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Abortar el despegue siempre a cualquier velocidad incluso superada la VR.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Subir los flaps inmediatamente en carrera para reducir la resistencia aerodinámica.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Reducir empuje a ralentí y pedir confirmación meteorológica por radio al ATC.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Maniobra de Escape de Cizalladura (Windshear Recovery Maneuver)\n* **Antes de V1**: RTO (Rejected Takeoff) con frenada máxima.\n* **Después de V1 / En vuelo**: TOGA thrust, rotar suavemente hacia el ángulo de cabezo de escape del FD (hasta el límite del stick shaker), **MANTENER CONFIGURACIÓN** (no retraer tren ni flaps durante la cizalladura para evitar pérdidas de sustentación transitorias).",
+      "references": [
+        "ICAO Doc 9817 Manual on Low-Level Wind Shear",
+        "EASA CS-25 Windshear Flight Guidance Systems"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-CRM-015",
+    "subject_id": "escenarios-netjets-despacho-crm",
+    "learning_objective": "Mountain Aerodrome Operations - Altitud de Densidad y Factores de Pista en Samedan / Saint-Moritz",
+    "stem": "Al planificar un despegue en un aeródromo de gran altitud como Samedan (LSZS, elevación 5.600 ft) con temperatura ambiente veraniega de +25°C, ¿qué efectos aerodinámicos y de performance críticos debe calcular la tripulación?",
+    "options": [
+      {
+        "id": "A",
+        "text": "La elevada altitud de densidad (Density Altitude) incrementa sustancialmente la velocidad verdadera (TAS) y la velocidad respecto al suelo (Groundspeed), aumentando enormemente la distancia de carrera de despegue y degradando los gradientes de ascenso de franqueamiento de obstáculos monomotor en el valle.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El aire en altura frena la aeronave acortando la carrera de despegue a la mitad.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Los motores turbofan generan el doble de empuje en altura que a nivel del mar.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La velocidad indicada (IAS) necesaria para la rotación aumenta en 100 nudos.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Operación en Aeródromos de Gran Altitud (High Density Altitude Operations)\n* A 5.600 ft con +25°C, la altitud de densidad puede superar los **8.500 ft**.\n* Para una misma velocidad indicada $V_{\\text{IAS}}$ de rotación, la **velocidad verdadera $V_{\\text{TAS}}$ y la velocidad sobre el suelo son mucho más altas**.\n* La carrera de despegue aumenta considerablemente, el frenado se vuelve más crítico (energía en frenos) y el gradiente de ascenso monomotor en el valle montañoso se reduce drásticamente, exigiendo cálculos rigurosos de *Single-Engine Escape Routes*.",
+      "references": [
+        "ICAO Doc 9137 Airport Services Manual",
+        "Samedan Engadin Airport (LSZS) Flight Operational Guidelines"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
   }
 ]

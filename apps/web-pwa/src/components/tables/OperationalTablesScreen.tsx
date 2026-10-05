@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import {
   ArrowLeft,
   Search,
@@ -13,15 +13,17 @@ import {
   Copy,
   Check,
   Scale,
-  Briefcase
+  Briefcase,
+  ArrowUp
 } from 'lucide-react';
 import { OPERATIONAL_TABLES, OperationalTable } from '../../data/operationalTablesData';
 
+export type TableCategory = 'all' | 'easa-netjets' | 'alternates' | 'memory-items' | 'limitations' | 'mass-balance' | 'moa' | 'vfr';
+
 interface OperationalTablesScreenProps {
   onBackToDashboard: () => void;
+  initialCategory?: TableCategory;
 }
-
-type TableCategory = 'all' | 'easa-netjets' | 'alternates' | 'memory-items' | 'limitations' | 'mass-balance' | 'moa' | 'vfr';
 
 function parseMemorySteps(raw: string): string[] {
   return raw
@@ -32,8 +34,11 @@ function parseMemorySteps(raw: string): string[] {
     .filter(Boolean);
 }
 
-export const OperationalTablesScreen: React.FC<OperationalTablesScreenProps> = ({ onBackToDashboard }) => {
-  const [selectedCategory, setSelectedCategory] = useState<TableCategory>('all');
+export const OperationalTablesScreen: React.FC<OperationalTablesScreenProps> = ({ 
+  onBackToDashboard,
+  initialCategory = 'all'
+}) => {
+  const [selectedCategory, setSelectedCategory] = useState<TableCategory>(initialCategory);
   const [searchQuery, setSearchQuery] = useState('');
   const [expandedTableIds, setExpandedTableIds] = useState<Record<string, boolean>>(() => {
     const initial: Record<string, boolean> = {};
@@ -43,6 +48,21 @@ export const OperationalTablesScreen: React.FC<OperationalTablesScreenProps> = (
     return initial;
   });
   const [copiedId, setCopiedId] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (initialCategory) {
+      setSelectedCategory(initialCategory);
+    }
+  }, [initialCategory]);
+
+  const scrollToCategoryTabs = () => {
+    const el = document.getElementById('tables-category-tabs');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
 
   const toggleExpand = (id: string) => {
     setExpandedTableIds((prev) => ({ ...prev, [id]: !prev[id] }));
@@ -122,9 +142,9 @@ export const OperationalTablesScreen: React.FC<OperationalTablesScreenProps> = (
       case 'easa-netjets':
         return {
           label: 'EASA Ops & NetJets Prep',
-          icon: <Briefcase className="w-3.5 h-3.5" />,
-          badgeClass: 'ops-tables-badge-alternates',
-          cardClass: 'ops-tables-card-alternates'
+          icon: <Briefcase className="w-3.5 h-3.5 text-amber-400" />,
+          badgeClass: 'ops-tables-badge-easa-netjets',
+          cardClass: 'ops-tables-card-easa-netjets'
         };
       case 'alternates':
         return {
@@ -175,9 +195,9 @@ export const OperationalTablesScreen: React.FC<OperationalTablesScreenProps> = (
     { id: 'all', label: 'Todas las Tablas', count: counts.all, activeClass: 'ops-tables-tab-active-all' },
     {
       id: 'easa-netjets',
-      label: 'NetJets & EASA Air Ops (Fuel, FTL, RVSM, Aircrew)',
+      label: 'NetJets & EASA Air Ops (Fuel, FTL, RVSM, Aircrew, MEL)',
       count: counts.easaNetjets,
-      activeClass: 'ops-tables-tab-active-alternates',
+      activeClass: 'ops-tables-tab-active-easa-netjets',
       icon: <Briefcase className="w-3.5 h-3.5" />
     },
     {
@@ -244,7 +264,7 @@ export const OperationalTablesScreen: React.FC<OperationalTablesScreenProps> = (
   };
 
   return (
-    <div className="ops-tables-screen max-w-6xl mx-auto space-y-6 pb-24 font-sans animate-fade-in">
+    <div className="ops-tables-screen max-w-6xl mx-auto space-y-6 pb-24 font-sans animate-fade-in relative">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-sky-500/20">
         <button type="button" onClick={onBackToDashboard} className="ops-tables-breadcrumb flex items-center gap-2 self-start group">
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
@@ -268,7 +288,7 @@ export const OperationalTablesScreen: React.FC<OperationalTablesScreenProps> = (
           </div>
           <div>
             <span className="ops-tables-hero-kicker text-[11px] font-mono font-bold tracking-widest uppercase block">
-              MOA • MOB • QRH • AFM • SERA
+              EASA AIR OPS • AIRCREW • MOA • MOB • QRH • AFM • SERA
             </span>
             <h1 className="ops-tables-hero-title text-2xl sm:text-3xl font-black tracking-tight">
               Tablas Operacionales de Referencia Rápida
@@ -277,13 +297,14 @@ export const OperationalTablesScreen: React.FC<OperationalTablesScreenProps> = (
         </div>
 
         <p className="ops-tables-hero-sub text-xs sm:text-sm max-w-3xl leading-relaxed">
-          Consulta rápida de tablas oficiales de mínimos de planificación para aeródromos alternativos (Plan Básico y con
-          Variaciones), acciones de memoria <strong>Memory Items del E195-E2</strong>, envolvente de limitaciones, índice
-          normativo del <strong>MOA Binter</strong> y mínimos <strong>VFR / Special VFR</strong>.
+          Consulta rápida y memorización sintética de <strong>EASA / NetJets Air Ops (Fuel schemes, FTL, Minimas, RVSM, Aircrew y MEL)</strong>, 
+          mínimos de planificación para aeródromos alternativos, acciones de memoria <strong>Memory Items del E195-E2</strong>, envolvente de limitaciones, 
+          índice normativo del <strong>MOA Binter</strong> y mínimos <strong>VFR / Special VFR</strong>.
         </p>
       </div>
 
-      <div className="space-y-4">
+      {/* Selector de Categorías (Punto de Anclaje de Retorno) */}
+      <div id="tables-category-tabs" className="space-y-4 pt-2">
         <div className="flex flex-wrap items-center gap-2 border-b border-slate-800 pb-3">
           {tabs.map((tab) => (
             <button
@@ -305,7 +326,7 @@ export const OperationalTablesScreen: React.FC<OperationalTablesScreenProps> = (
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Buscar por tabla, número de limitación, memory item, mínimos de alternativo, capítulo del MOA, clase de espacio aéreo..."
+            placeholder="Buscar por tabla, EASA Part-CAT, fuel schemes, FTL, RVSM, memory items, limitaciones, MOA..."
             className="ops-tables-search"
           />
           {searchQuery && (
@@ -366,6 +387,20 @@ export const OperationalTablesScreen: React.FC<OperationalTablesScreenProps> = (
                   </div>
 
                   <div className="flex items-center gap-2 shrink-0 mt-1">
+                    {/* Botón rápido para volver arriba */}
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        scrollToCategoryTabs();
+                      }}
+                      className="ops-tables-icon-btn text-sky-400 hover:text-sky-300"
+                      title="Volver al menú de categorías (Arriba)"
+                    >
+                      <ArrowUp className="w-3.5 h-3.5" />
+                      <span className="text-[10px] font-bold hidden md:inline">Arriba</span>
+                    </button>
+
                     <button
                       type="button"
                       onClick={(e) => {
@@ -464,6 +499,22 @@ export const OperationalTablesScreen: React.FC<OperationalTablesScreenProps> = (
                         </ul>
                       </div>
                     )}
+
+                    {/* Botón al pie de cada tabla para regresar a categorías */}
+                    <div className="flex flex-wrap items-center justify-between pt-3 border-t border-slate-800/80 gap-2">
+                      <span className="text-[11px] text-slate-400 font-mono">
+                        📖 {table.manualRef} · {table.badge}
+                      </span>
+                      <button
+                        type="button"
+                        onClick={scrollToCategoryTabs}
+                        className="ops-tables-back-top-btn"
+                        title="Subir a la parte superior de las categorías"
+                      >
+                        <ArrowUp className="w-3.5 h-3.5" />
+                        <span>Volver a Categorías / Arriba</span>
+                      </button>
+                    </div>
                   </div>
                 )}
               </article>
@@ -471,6 +522,16 @@ export const OperationalTablesScreen: React.FC<OperationalTablesScreenProps> = (
           })
         )}
       </div>
+
+      {/* Botón Flotante para subir a las categorías */}
+      <button
+        type="button"
+        onClick={scrollToCategoryTabs}
+        className="fixed bottom-6 right-6 z-40 p-3 rounded-full bg-sky-600 hover:bg-sky-500 text-white shadow-2xl border border-sky-400/50 flex items-center justify-center transition-all hover:scale-110 active:scale-95 group"
+        title="Volver a los botones de categorías de tablas"
+      >
+        <ArrowUp className="w-5 h-5 group-hover:-translate-y-0.5 transition-transform" />
+      </button>
     </div>
   );
 };

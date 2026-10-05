@@ -463,22 +463,22 @@
   {
     "id": "CMD-ALT-013",
     "subject_id": "command-upgrade",
-    "learning_objective": "MOA 8.1.2.1 / 8.1.2.4 - Alternativo de Despegue: Requisitos meteorológicos y ventana temporal",
-    "stem": "¿Qué condiciones meteorológicas y en qué intervalo de tiempo debe cumplir el aeródromo alternativo de despegue para poder ser seleccionado en el despacho?",
+    "learning_objective": "MOA 8.1.7.2.1 / AMC1 CAT.OP.MPA.182 - Alternativo de Despegue: Requisitos meteorológicos y ventana temporal",
+    "stem": "¿Qué condiciones meteorológicas y en qué intervalo de tiempo debe cumplir el aeródromo alternativo de despegue para poder ser seleccionado en el despacho según el MOA 8.1.7.2.1?",
     "options": [
       {
         "id": "A",
-        "text": "Debe cumplir los MÍNIMOS DE PLANIFICACIÓN (Tabla 1/1A) desde 1 hora antes hasta 1 hora después de la hora estimada de llegada (ETA ± 1 HR)",
+        "text": "Debe encontrarse en o por encima de los MÍNIMOS DE OPERACIÓN (mínimos de aterrizaje aplicables: RVR/VIS y techo >= MDH para Tipo A o Circling) desde 1 hora antes hasta 1 hora después de la hora estimada de llegada (ETA ± 1 HR)",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Basta con que cumpla los mínimos de operación exactamente a la hora estimada de despegue (ETD)",
+        "text": "Debe cumplir obligatoriamente los mínimos de planificación incrementados de la Tabla 1A o Tabla 1B",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Debe cumplir los mínimos de operación desde 2 horas antes hasta 2 horas después de la ETA",
+        "text": "Basta con que cumpla los mínimos de operación exactamente en el instante de la suelta de frenos para el despegue",
         "is_correct": false
       },
       {
@@ -488,10 +488,10 @@
       }
     ],
     "explanation": {
-      "text": "Según el **MOA 8.1.2.4** y **CAT.OP.MPA.181**:\n- El alternativo de despegue debe seleccionarse únicamente si los informes/pronósticos meteorológicos indican que, en el período comprendido desde **1 hora antes hasta 1 hora después de la hora estimada de llegada (ETA ± 1 HR)**, las condiciones meteorológicas estarán en o por encima de los **MÍNIMOS DE PLANIFICACIÓN aplicables (Tabla 1A o 1B)**.",
+      "text": "Según el **MOA 8.1.7.2.1** (AMC1/AMC5 CAT.OP.MPA.182):\n- El alternativo de despegue debe seleccionarse si los informes y pronósticos meteorológicos indican que, en el período comprendido desde **1 hora antes hasta 1 hora después de la hora estimada de llegada (ETA ± 1 HR)**, las condiciones meteorológicas se encuentran en o por encima de los **MÍNIMOS DE ATERRIZAJE APLICABLES (Mínimos de Operación del Aeródromo - MOA 8.1.3)**:\n  - **RVR/VIS** de la aproximación en servicio; y\n  - Para operaciones **Tipo A o en circuito**, el **techo en o por encima de la MDH**.\n\n*(Al alternativo de despegue **NO se le aplican los incrementos de las Tablas 1A/1B** de mínimos de planificación)*.",
       "references": [
-        "MOA Binter ED06 RN27, Capítulo 8.1.2.4",
-        "CAT.OP.MPA.181(d)"
+        "MOA Binter ED06 RN27, Capítulo 8.1.7.2.1 (pág. 385)",
+        "AMC1 / AMC5 CAT.OP.MPA.182"
       ]
     },
     "metadata": {
@@ -581,34 +581,35 @@
     "id": "CMD-ALT-016",
     "subject_id": "command-upgrade",
     "learning_objective": "MOA 8.1.2 / 8.1.7 - Mínimos de Operación vs Mínimos de Planificación en Despacho",
-    "stem": "Durante la fase de preparación y despacho del vuelo (antes del despegue), ¿qué tipo de mínimos meteorológicos se exige que cumplan el aeródromo de destino y los aeródromos alternativos respectivamente?",
+    "stem": "Durante la fase de preparación y despacho del vuelo (antes del despegue), ¿qué tipo de mínimos meteorológicos se exige que cumplan el aeródromo de destino, el alternativo de despegue y los alternativos de destino / en ruta según el MOA?",
     "options": [
       {
         "id": "A",
-        "text": "Destino: Mínimos de OPERACIÓN (AOM) | Alternativos (despegue, ruta y destino): Mínimos de PLANIFICACIÓN (Tabla 1A/1B)",
+        "text": "Destino y Alternativo de Despegue: Mínimos de OPERACIÓN (mínimos de aterrizaje aplicables) | Alternativos de Destino y en Ruta (ERA / Fuel ERA): Mínimos de PLANIFICACIÓN (Tabla 1A/1B)",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Destino: Mínimos de PLANIFICACIÓN | Alternativos: Mínimos de OPERACIÓN",
+        "text": "Todos los aeródromos (destino y todos los alternativos de despegue, ruta y destino) deben cumplir obligatoriamente los mínimos de PLANIFICACIÓN",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Tanto destino como alternativos deben cumplir exactamente los mínimos de PLANIFICACIÓN",
+        "text": "Destino: Mínimos de PLANIFICACIÓN | Todos los alternativos: Mínimos de OPERACIÓN",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Tanto destino como alternativos deben cumplir únicamente los mínimos de OPERACIÓN sin márgenes",
+        "text": "Todos los aeródromos deben cumplir únicamente los mínimos de OPERACIÓN sin ninguna tabla de planificación",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Principio fundamental de despacho EASA (CAT.OP.MPA.181 / 182 y MOA 8.1.2 / 8.1.7):\n- **Destino (con 1 alternativo):** Los informes/pronósticos deben indicar que en ETA ± 1h estará en o por encima de los **MÍNIMOS DE OPERACIÓN (AOM)**. Si estuviera por debajo de los mínimos de operación o de planificación, se requieren 2 alternativos.\n- **Todos los Alternativos (Despegue, Ruta/ERA, Destino):** Deben cumplir estrictamente con los **MÍNIMOS DE PLANIFICACIÓN (Planning Minima - Tabla 1A o 1B)** en la ventana temporal ETA ± 1h.",
+      "text": "Regla de oro de despacho según el **MOA 8.1.7.2** y normativa EASA Part-CAT:\n- **Destino (con 1 alternativo):** Requiere que los informes/pronósticos en ETA ± 1h cumplan los **Mínimos de Operación del Aeródromo (AOM / mínimos de aterrizaje)**.\n- **Alternativo de Despegue (MOA 8.1.7.2.1):** Requiere que los informes/pronósticos en ETA ± 1h cumplan los **Mínimos de Aterrizaje aplicables (Mínimos de Operación - MOA 8.1.3)**.\n- **Alternativos de Destino y en Ruta (ERA / Fuel ERA - MOA 8.1.7.2.5/6):** Requieren cumplir estrictamente los **Mínimos de Planificación (Planning Minima con los incrementos de la Tabla 1A o Tabla 1B)** en la ventana ETA ± 1h.",
       "references": [
-        "MOA Binter ED06 RN27, Capítulos 8.1.2.2, 8.1.2.4 y 8.1.7.2.5",
-        "CAT.OP.MPA.182"
+        "MOA Binter ED06 RN27, Capítulo 8.1.7.2.1 (Alternativo de Despegue)",
+        "MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 (Tabla 1A) y 8.1.7.2.6 (Tabla 1B)",
+        "AMC1 CAT.OP.MPA.182 / AMC2 CAT.OP.MPA.185"
       ]
     },
     "metadata": {

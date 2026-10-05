@@ -337,5 +337,271 @@
     "metadata": {
       "difficulty": 0.4
     }
+  },
+  {
+    "id": "NJ-MIN-010",
+    "subject_id": "minimos-operacionales-lvo",
+    "learning_objective": "Cold Temperature Altimeter Corrections - Corrección de Altitudes por Baja Temperatura",
+    "stem": "Bajo EASA CAT.OP.MPA.145 y procedimientos OACI PANS-OPS, cuando la temperatura ambiente en el aeródromo es muy fría (generalmente $\\le 0^\\circ\\text{C}$), ¿por qué es vital aplicar correcciones altimétricas y a qué altitudes del procedimiento se debe aplicar?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Porque el altímetro barométrico sobre-estima la altitud real (el avión vuela más bajo de lo que indica el instrumento); la tripulación debe corregir la DA/MDA, altitudes de paso en el FAF/IF, circuito y la MSA.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Porque el aire frío hace que el avión vuele mucho más alto de lo que indica el altímetro, arriesgando salir del espacio aéreo controlado.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La corrección solo se aplica en crucero por encima de FL290 y nunca en la aproximación final.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El altímetro barométrico compensa automáticamente la temperatura sin intervención de la tripulación en ningún avión civil.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Corrección por Bajas Temperaturas (Cold Temp Correction)\n* **Regla mnemónica clásica**: *'High to Low or Hot to Cold, Look out Below'*.\n* El aire frío es más denso; los planos isobáricos se comprimen hacia el suelo. A una altitud indicada fija, la **altitud verdadera (True Altitude) es MENOR que la indicada**.\n* La tripulación debe sumar los valores tabulados de la tabla OACI de corrección a la DA/DH, MDA/MDH, altitudes mínimas de sector (MSA) y altitudes de cruce de fijos de aproximación (FAF/IF).",
+      "references": [
+        "EASA Easy Access Rules for Air Operations, CAT.OP.MPA.145",
+        "ICAO Doc 8168 PANS-OPS Vol I, Part III, Section 1, Chapter 4 (Cold Temperature Corrections)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-MIN-011",
+    "subject_id": "minimos-operacionales-lvo",
+    "learning_objective": "Cold Temperature Corrections - Comunicación con ATC",
+    "stem": "Cuando la tripulación aplica correcciones de altitud por baja temperatura en una llegada o aproximación por instrumentos, ¿cómo debe coordinarse con el Control de Tránsito Aéreo (ATC)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "La tripulación debe notificar al ATC las altitudes corregidas que pretende volar en los tramos de aproximación inicial e intermedia (y en la MSA si aplica), pero la DA/MDA se corrige en cabina sin necesidad de renegociar mínimos con ATC.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El piloto nunca debe informar al ATC de ninguna corrección aplicada.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El ATC ajusta los altímetros de todos los aviones transmitiendo un QNH falso más alto.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se prohíbe volar aproximaciones IFR si la temperatura es inferior a 0°C.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Notificación al ATC de Altitudes Corregidas\n* Las altitudes asignadas por ATC o los mínimos de sector publicados garantizan franqueamiento de obstáculos en base a altitud verdadera.\n* Si el piloto corrige una altitud de tramo (e.g. cruzar FAF a 3.300 ft en vez de 3.000 ft publicados debido al frío extremo), **debe notificar al ATC**: *'Due temperature, climbing/crossing at 3,300 ft'* para mantener la separación reglamentaria con otros tráficos.",
+      "references": [
+        "ICAO Doc 4444 PANS-ATM Chapter 12",
+        "EASA AMC1 CAT.OP.MPA.145 Altimeter corrections"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-MIN-012",
+    "subject_id": "minimos-operacionales-lvo",
+    "learning_objective": "EASA Approach Minima - Conversión de Visibilidad Meteorológica a RVR (CMV)",
+    "stem": "¿Cuándo está permitido utilizar el concepto de Visibilidad Meteorológica Convertida (CMV - Converted Meteorological Visibility) para evaluar los mínimos de aproximación según EASA CAT.OP.MPA.110?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solo para aproximaciones 2D (o Tipo A) cuando no se dispone de informe oficial de RVR; se calcula multiplicando la visibilidad meteorológica por un factor (1.5 de día con luces de alta intensidad / 2.0 de noche con luces de alta intensidad). No se puede usar para despegues ni para CAT II/III.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Para calcular el RVR de despegue en pistas sin luces en cualquier aeropuerto internacional.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Únicamente en aproximaciones CAT III autoland cuando falla el transmisómetro central.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Siempre que la visibilidad meteorológica reportada en el METAR sea inferior a 50 metros.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Conversión de Visibilidad a RVR (CMV - Table CAT.OP.MPA.110)\n* **Factores de conversión (VIS a CMV)**:\n  * Con sistema de luces de aproximación de alta intensidad (HIRL/HIALS):\n    * Día: $\\text{VIS} \\times 1.5$\n    * Noche: $\\text{VIS} \\times 2.0$\n  * Con luces de baja intensidad o sin luces:\n    * Día: $\\text{VIS} \\times 1.0$\n    * Noche: $\\text{VIS} \\times 1.5$\n* **Prohibiciones**: PROHIBIDO usar CMV para despegue (LVTO), aproximaciones CAT II/III o cuando exista RVR instrumental disponible.",
+      "references": [
+        "EASA Easy Access Rules for Air Operations, CAT.OP.MPA.110",
+        "AMC1 CAT.OP.MPA.110 Aerodrome operating minima - Table 1 (Conversion of reported meteorological visibility to RVR/CMV)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-MIN-013",
+    "subject_id": "minimos-operacionales-lvo",
+    "learning_objective": "EASA Operations Minima - RVR Requerido en Pista con Múltiples Puntos de Medición",
+    "stem": "En una aproximación de precisión CAT II o CAT III con tres mediciones de RVR publicadas (Touchdown, Midpoint y Stopend), ¿cuál de ellas es estrictamente controlante (mandatory) para la regla de Approach Ban a 1.000 ft?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El RVR de la zona de toma de contacto (Touchdown RVR / TDZ) es siempre el valor determinante y obligatorio. Si se reportan Midpoint y Stopend, deben cumplir los mínimos de desaceleración y rodaje aplicables.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El valor de Stopend es el único que decide si se puede iniciar la aproximación.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se hace la media aritmética de los tres transmisómetros y ese valor medio debe superar 100 metros.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Ninguno de los tres es obligatorio si la tripulación dispone de radar meteorológico operativo.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Transmisómetros de RVR Controlantes (EASA SPA.LVO.100 / CAT.OP.MPA.305)\n* **Touchdown RVR (TDZ)**: Siempre es el **valor controlante principal** para autorizar la continuación de la aproximación bajo la regla de Approach Ban.\n* **Midpoint RVR**: Es controlante para garantizar la fase de deceleración (habitualmente mínimo 125 m en CAT II y 75 m en CAT III).\n* **Stopend RVR**: Relevante para la fase final de frenado y salida de pista.",
+      "references": [
+        "EASA Easy Access Rules for Air Operations, SPA.LVO.100",
+        "AMC1 SPA.LVO.100 Low visibility operations - RVR assessment"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-MIN-014",
+    "subject_id": "minimos-operacionales-lvo",
+    "learning_objective": "EASA LVO - Procedimientos de Baja Visibilidad en Tierra (LVP Ground Operations)",
+    "stem": "¿Cuándo se activan oficialmente los Procedimientos de Baja Visibilidad (LVP - Low Visibility Procedures) en un aeródromo y qué salvaguardas especiales se aplican a los tráficos en tierra?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se activan típicamente cuando el RVR desciende por debajo de 550 m o el techo de nubes por debajo de 200 ft; se protegen las áreas críticas y sensibles del ILS/MLS (ILS Critical & Sensitive Areas) y se restringe el movimiento de vehículos y aeronaves a puntos de espera CAT II/III.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se activan siempre que llueva con intensidad moderada independientemente de la visibilidad.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo aplican para vuelos no regulares de aviación general con aeronaves monomotor.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se activan automáticamente a la puesta de sol en todos los aeropuertos civiles europeos.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Procedimientos de Baja Visibilidad (LVP - EASA SPA.LVO.105 / ICAO Doc 9476)\n* **Activación de LVP**: Cuando el RVR cae por debajo de **550 m** o techo $< 200\\text{ ft}$.\n* **Protección del haz ILS**: Se activan los puntos de espera retrasados de pista (**CAT II/III Holding Points**) para evitar que aviones en rodaje interfieran la señal del Localizador o Senda de Planeo.\n* Se activan barras de parada rojas (*Stop Bars*) y monitorización radar de superficie (SMR / A-SMGCS).",
+      "references": [
+        "EASA Easy Access Rules for Air Operations, SPA.LVO.105",
+        "ICAO Doc 9476 Manual of Surface Movement Guidance and Control Systems (SMGCS)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "NJ-MIN-015",
+    "subject_id": "minimos-operacionales-lvo",
+    "learning_objective": "EASA Operations Minima - Crédito Operacional por HUD y EVS (SPA.LVO.110)",
+    "stem": "Bajo la normativa EASA Part-SPA.LVO.110, ¿qué ventajas operacionales o reducciones de mínimos de aterrizaje ('Crédito Operacional') puede obtener un operador que equipe Head-Up Display (HUD) y Sistemas de Visión Mejorada (EVS / EFVS)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Permite reducir la RVR requerida y la altura de decisión (DH), o descender por debajo de la DA/DH hasta 100 ft AAL utilizando la imagen EVS/infrarroja antes de requerir contacto visual natural con el entorno de pista.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Permite aterrizar sin combustible en los depósitos si la imagen EVS es de alta definición.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Elimina la necesidad de disponer de piloto automático en aproximaciones CAT III.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Autoriza el despegue con viento cruzado superior a 60 nudos.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Crédito Operativo con HUD / EVS (EASA SPA.LVO.110 & AMC1 SPA.LVO.110)\n* Las aeronaves ejecutivas modernas (e.g. Bombardier Global, Falcon, Citation Longitude) equipadas con **EVS/HUD** disfrutan de créditos operacionales:\n  * Permite continuar el descenso **por debajo de la DA/DH hasta 100 ft AAL** utilizando las referencias visuales infrarrojas proyectadas en el HUD.\n  * En o por debajo de 100 ft AAL se exige contacto visual directo natural con las luces de pista para el aterrizaje.",
+      "references": [
+        "EASA Easy Access Rules for Air Operations, SPA.LVO.110",
+        "EASA Decision 2021/005/R (EFVS Operations)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-MIN-016",
+    "subject_id": "minimos-operacionales-lvo",
+    "learning_objective": "EASA Operations Minima - Mínimos de Aproximación en Circuito (Visual Circling)",
+    "stem": "Al realizar una aproximación en circuito (Visual Manoeuvring / Circling) bajo EASA CAT.OP.MPA.110, ¿cuál es la velocidad máxima y el radio de protección asociado para aeronaves de Categoría B y Categoría C?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Categoría B: Velocidad máx. 120 kt (Radio de protección 2.66 NM) • Categoría C: Velocidad máx. 160 kt (Radio de protección 4.20 NM en PANS-OPS).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Categoría B: 250 kt • Categoría C: 350 kt con radio de protección de 20 NM.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Categoría B: 90 kt • Categoría C: 100 kt con radio de 1 NM.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La velocidad de circuito no tiene límite siempre que el tren de aterrizaje esté bloqueado abajo.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Aproximaciones en Circuito (Circling Minima - ICAO PANS-OPS / EASA CAT.OP.MPA.110)\n* **Categoría B**: $V_{\\text{at}} = 91\\text{ a }120\\text{ kt}$, velocidad máx. de circuito **120 kt**, radio de protección **2.66 NM** (margen sobre obstáculos 300 ft).\n* **Categoría C**: $V_{\\text{at}} = 121\\text{ a }140\\text{ kt}$, velocidad máx. de circuito **160 kt**, radio de protección **4.20 NM** (margen sobre obstáculos 400 ft).\n* Si un reactor Categoría B vuela el circuito a 135 kt, **debe aplicar obligatoriamente los mínimos más restrictivos de Categoría C**.",
+      "references": [
+        "EASA Easy Access Rules for Air Operations, CAT.OP.MPA.110 Table 4",
+        "ICAO Doc 8168 PANS-OPS Volume I, Part I, Section 4, Chapter 7"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
   }
 ]

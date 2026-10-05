@@ -1165,34 +1165,35 @@
   {
     "id": "CMD-MOA-FUEL-019",
     "subject_id": "moa_plan_combustible",
-    "learning_objective": "MOA 8.1.7.2 - Mínimos de Planificación para Alternativo de Despegue",
-    "stem": "¿Qué mínimos meteorológicos deben pronosticarse en el **Alternativo de Despegue** durante su ventana de uso según el MOA 8.1.7.2?",
+    "learning_objective": "MOA 8.1.7.2.1 / AMC1 CAT.OP.MPA.182 - Mínimos Meteorológicos para Alternativo de Despegue",
+    "stem": "¿Qué mínimos meteorológicos deben pronosticarse en el **Alternativo de Despegue** durante su ventana de uso (ETA ± 1h) según el MOA 8.1.7.2.1?",
     "options": [
       {
         "id": "A",
-        "text": "Las condiciones meteorológicas previstas deben cumplir los mínimos de planificación aplicables de la Tabla 1A/1B para la aproximación prevista",
+        "text": "Las condiciones meteorológicas deben estar en o por encima de los MÍNIMOS DE ATERRIZAJE APLICABLES (Mínimos de Operación del aeródromo: RVR/VIS y techo >= MDH para Tipo A o Circling) publicados en las cartas de aproximación",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Basta con que la pista de salida tenga viento en calma sin importar el alternativo",
+        "text": "Deben cumplir obligatoriamente los incrementos de mínimos de planificación de la Tabla 1A o Tabla 1B",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Debe tener visibilidad infinita y temperatura superior a 25°C en todo momento",
+        "text": "Basta con que la pista de salida tenga viento en calma sin importar las condiciones del alternativo",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Se aplican exclusivamente los mínimos de despegue del aeródromo de origen",
+        "text": "Se aplican exclusivamente los mínimos de despegue LVTO del aeródromo de origen",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "El aeródromo de alternativa de despegue debe presentar pronósticos meteorológicos que cumplan los mínimos de planificación aplicables durante toda su ventana de utilización estimada (MOA 8.1.7.2).",
+      "text": "De acuerdo con el **MOA 8.1.7.2.1** (AMC1/AMC5 CAT.OP.MPA.182), el aeródromo alternativo de despegue debe presentar pronósticos meteorológicos en o por encima de los **MÍNIMOS DE ATERRIZAJE APLICABLES (Mínimos de Operación - MOA 8.1.3)** en la ventana ETA ± 1 h:\n- RVR/VIS de la aproximación en servicio; y\n- Para operaciones Tipo A o en circuito, el techo >= MDH.\n\n*(Al alternativo de despegue NO se le aplican los incrementos de las Tablas 1A/1B de planificación, reservados para ERA y Destino)*.",
       "references": [
-        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+        "MOA Binter ED06 RN27, Capítulo 8.1.7.2.1 (pág. 385)",
+        "AMC1 / AMC5 CAT.OP.MPA.182"
       ]
     },
     "metadata": {
