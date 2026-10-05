@@ -69,7 +69,7 @@ export function getFlashcardType(question: Question): 'numerical' | 'acronym' | 
 /**
  * Retorna metadatos visuales (etiqueta, icono, colores) para la tarjeta de memoria.
  */
-export function getFlashcardBadge(question: Question): { label: string; type: 'numerical' | 'acronym' | 'both' } {
+export function getFlashcardBadge(question: Question): { label: string; type: 'numerical' | 'acronym' | 'both' | 'concept' } {
   const type = getFlashcardType(question);
   if (type === 'both') {
     return { label: '🔢 Dato Numérico & Sigla', type: 'both' };
@@ -80,26 +80,34 @@ export function getFlashcardBadge(question: Question): { label: string; type: 'n
   if (type === 'acronym') {
     return { label: '🔤 Sigla / Mnemónico / Acrónimo', type: 'acronym' };
   }
-  return { label: '⚡ Tarjeta de Memoria', type: 'both' };
+  return { label: '📘 Concepto Operativo', type: 'concept' };
 }
 
 /**
- * Filtra un conjunto de preguntas para el mazo de Flashcards según la categoría y el filtro secundario.
+ * Filtra un conjunto de preguntas para el mazo de Flashcards según la categoría, IDs y el filtro secundario.
  */
 export function filterFlashcards(
   questions: Question[],
   category?: string,
-  filterType: 'all' | 'numerical' | 'acronym' = 'all'
+  filterType: 'all' | 'numerical' | 'acronym' = 'all',
+  allowedQuestionIds?: string[]
 ): Question[] {
   return questions.filter((q) => {
+    // 0. Filtro de IDs permitidos específicos (ej. Típicas de Comandante)
+    if (allowedQuestionIds && allowedQuestionIds.length > 0) {
+      if (!allowedQuestionIds.includes(q.id)) {
+        return false;
+      }
+    }
+
     // 1. Filtro de Categoría si está especificada
-    if (category && category !== 'all') {
+    if (category && category !== 'all' && category !== 'custom_tipicas' && category !== 'custom_official' && category !== 'custom') {
       if (q._category !== category && q.subject_id !== category) {
         return false;
       }
     }
 
-    // 2. Filtro de elegibilidad
+    // 2. Filtro de elegibilidad secundaria
     const isNum = isNumericalQuestion(q);
     const isAcro = isAcronymQuestion(q);
 
@@ -110,7 +118,7 @@ export function filterFlashcards(
       return isAcro;
     }
 
-    return isNum || isAcro;
+    return true;
   });
 }
 
@@ -169,9 +177,10 @@ export function buildPrioritizedFlashcardDeck(
   statsMap: Record<string, QuestionStats>,
   category?: string,
   filterType: 'all' | 'numerical' | 'acronym' = 'all',
-  randomizeWithinTiers: boolean = true
+  randomizeWithinTiers: boolean = true,
+  allowedQuestionIds?: string[]
 ): Question[] {
-  const eligible = filterFlashcards(questions, category, filterType);
+  const eligible = filterFlashcards(questions, category, filterType, allowedQuestionIds);
 
   const tier1Hard: Question[] = [];
   const tier2Unseen: Question[] = [];

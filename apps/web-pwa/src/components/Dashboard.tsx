@@ -31,7 +31,9 @@ import {
   FileText,
   Search,
   ChevronDown,
-  ChevronUp
+  ChevronUp,
+  Briefcase,
+  Table as TableIcon
 } from 'lucide-react';
 import { Question, BankManifest, QuestionStats, ExamSession, ExamMode, ExamSelectionStrategy } from '../types';
 import { loadAllQuestions, loadManifest } from '../services/questionsService';
@@ -48,7 +50,7 @@ interface DashboardProps {
     strategy: ExamSelectionStrategy;
     count?: number;
   }) => void;
-  onStartFlashcards: (params?: { category?: string }) => void;
+  onStartFlashcards: (params?: { category?: string; questionIds?: string[]; title?: string }) => void;
   onOpenNewExam: () => void;
   onOpenProcedures: () => void;
   onOpenTables: () => void;
@@ -154,6 +156,32 @@ export const Dashboard: React.FC<DashboardProps> = ({
       accuracy: acc
     };
   }, [commandCourseQuestions, statsMap]);
+
+  const netjetsQuestions = useMemo(() => {
+    return questions.filter((q) => q._category === 'netjets-interview');
+  }, [questions]);
+
+  const netjetsStats = useMemo(() => {
+    let answered = 0;
+    let correct = 0;
+    let incorrect = 0;
+    for (const q of netjetsQuestions) {
+      const s = statsMap[q.id];
+      if (s && s.timesAnswered > 0) {
+        answered++;
+        correct += s.timesCorrect;
+        incorrect += s.timesIncorrect;
+      }
+    }
+    const acc = (correct + incorrect) > 0 ? Math.round((correct / (correct + incorrect)) * 100) : 0;
+    return {
+      total: netjetsQuestions.length,
+      answered,
+      correct,
+      incorrect,
+      accuracy: acc
+    };
+  }, [netjetsQuestions, statsMap]);
 
   const handleResetStats = async () => {
     const confirmReset = window.confirm(
@@ -768,7 +796,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
         </div>
 
         {/* Quick Launch Buttons Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 relative z-10 pt-1">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3 relative z-10 pt-1">
           {/* 1. Test 25 Oficiales (En Inglés) */}
           <button
             type="button"
@@ -810,7 +838,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
             <div className="command-course-action-title flex items-center justify-between text-xs font-black text-amber-300 mb-1">
               <span className="flex items-center gap-1.5">
                 <FileText className="w-4 h-4 text-amber-400" />
-                <span>Típicas Comandante (100)</span>
+                <span>Test Típicas (100)</span>
               </span>
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
             </div>
@@ -819,7 +847,32 @@ export const Dashboard: React.FC<DashboardProps> = ({
             </p>
           </button>
 
-          {/* 3. Banco Completo */}
+          {/* 3. Modo Flashcards Típicas Comandante (100) */}
+          <button
+            type="button"
+            onClick={() => {
+              const tipicasIds = commandCourseQuestions.filter((q) => q.id.startsWith('CMD-EXAM-')).map((q) => q.id);
+              onStartFlashcards({
+                category: 'command-upgrade',
+                questionIds: tipicasIds.length > 0 ? tipicasIds : undefined,
+                title: 'Típicas de Comandante (100)'
+              });
+            }}
+            className="command-course-action command-course-action-purple p-3.5 rounded-2xl bg-purple-950/40 hover:bg-purple-900/50 border border-purple-500/40 hover:border-purple-400 text-left transition-all group flex flex-col justify-between shadow-md active:scale-95"
+          >
+            <div className="command-course-action-title flex items-center justify-between text-xs font-black text-purple-300 mb-1">
+              <span className="flex items-center gap-1.5">
+                <Zap className="w-4 h-4 text-purple-400 fill-current" />
+                <span>Flashcards Típicas (100)</span>
+              </span>
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+            </div>
+            <p className="command-course-action-desc text-[11px] text-slate-300">
+              Mazo de memoria activa, repaso espaciado y retención con las 100 típicas.
+            </p>
+          </button>
+
+          {/* 4. Banco Completo */}
           <button
             type="button"
             onClick={() => onStartConfiguredExam({ category: 'command-upgrade', subtopics: ['command-course', 'examen-convocatoria-anterior'], count: Math.min(commandCourseQuestions.length || 50, 60), mode: 'practice', strategy: 'random' })}
@@ -837,7 +890,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
             </p>
           </button>
 
-          {/* 4. Explorar Reactivos */}
+          {/* 5. Explorar Reactivos */}
           <button
             type="button"
             onClick={() => {
@@ -1006,6 +1059,119 @@ export const Dashboard: React.FC<DashboardProps> = ({
 
             </div>
           )}
+        </div>
+      </div>
+
+      {/* 🌟 BANNER DESTACADO: NETJETS EUROPE INTERVIEW PREP */}
+      <div className="netjets-hero-card rounded-3xl bg-gradient-to-br from-[#1c1305] via-[#0f172a] to-[#070e1e] border-2 border-amber-500/40 p-6 sm:p-7 shadow-2xl space-y-5 relative overflow-hidden">
+        <div className="absolute -right-16 -top-16 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -left-16 -bottom-16 w-64 h-64 bg-sky-500/10 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 relative z-10">
+          <div className="space-y-2">
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="netjets-badge px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-500/40 flex items-center gap-1">
+                <Sparkles className="w-3 h-3 text-amber-400" />
+                <span>{netjetsQuestions.length} Reactivos · EASA Air Ops + Aircrew + Historia NetJets (1964-Hoy) + Tablas + Flashcards</span>
+              </span>
+            </div>
+            <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2.5">
+              <Briefcase className="w-6 h-6 text-amber-400" />
+              <span>Banco Especial - NetJets Europe Interview Prep</span>
+            </h2>
+          </div>
+
+          <div className="netjets-stats flex items-center gap-3 bg-black/50 px-4 py-3 rounded-2xl border border-amber-500/30 shrink-0">
+            <div className="text-right">
+              <span className="netjets-stats-label text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Progreso Banco</span>
+              <span className="netjets-stats-value text-lg sm:text-xl font-black text-amber-400 font-mono">
+                {netjetsStats.answered} / {netjetsStats.total}
+              </span>
+            </div>
+            <div className="netjets-stats-divider text-right pl-3 border-l border-slate-800">
+              <span className="netjets-stats-label text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Precisión</span>
+              <span className={`netjets-stats-accuracy text-lg sm:text-xl font-black font-mono ${
+                netjetsStats.accuracy >= 75 ? 'text-emerald-400' : netjetsStats.accuracy > 0 ? 'text-amber-400' : 'text-slate-400'
+              }`}>
+                {netjetsStats.accuracy}%
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* Quick Launch Action Buttons Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 relative z-10 pt-1">
+          {/* 1. Simulación Entrevista (25) */}
+          <button
+            type="button"
+            onClick={() => onStartConfiguredExam({ category: 'netjets-interview', count: 25, mode: 'simulation', strategy: 'random' })}
+            className="netjets-action netjets-action-amber p-3.5 rounded-2xl bg-amber-950/40 hover:bg-amber-900/50 border border-amber-500/40 hover:border-amber-400 text-left transition-all group flex flex-col justify-between shadow-md active:scale-95"
+          >
+            <div className="netjets-action-title flex items-center justify-between text-xs font-black text-amber-300 mb-1">
+              <span className="flex items-center gap-1.5">
+                <Target className="w-4 h-4 text-amber-400" />
+                <span>Simulación Entrevista (25)</span>
+              </span>
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+            </div>
+            <p className="netjets-action-desc text-[11px] text-slate-300">
+              Test técnico cronometrado de 25 preguntas simulando la entrevista de NetJets.
+            </p>
+          </button>
+
+          {/* 2. Historia & Negocio NetJets (10) */}
+          <button
+            type="button"
+            onClick={() => onStartConfiguredExam({ category: 'netjets-interview', subtopics: ['historia-evolucion-netjets'], count: 10, mode: 'practice', strategy: 'random' })}
+            className="netjets-action netjets-action-gold p-3.5 rounded-2xl bg-yellow-950/40 hover:bg-yellow-900/50 border border-yellow-500/40 hover:border-yellow-400 text-left transition-all group flex flex-col justify-between shadow-md active:scale-95"
+          >
+            <div className="netjets-action-title flex items-center justify-between text-xs font-black text-yellow-300 mb-1">
+              <span className="flex items-center gap-1.5">
+                <Award className="w-4 h-4 text-yellow-400" />
+                <span>Historia & Orígenes (1964-Hoy)</span>
+              </span>
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+            </div>
+            <p className="netjets-action-desc text-[11px] text-slate-300">
+              EJA (1964), Richard Santulli, Propiedad Fraccional y Berkshire Hathaway (Warren Buffett).
+            </p>
+          </button>
+
+          {/* 3. Tablas Sintéticas EASA */}
+          <button
+            type="button"
+            onClick={onOpenTables}
+            className="netjets-action netjets-action-sky p-3.5 rounded-2xl bg-sky-950/40 hover:bg-sky-900/50 border border-sky-500/40 hover:border-sky-400 text-left transition-all group flex flex-col justify-between shadow-md active:scale-95"
+          >
+            <div className="netjets-action-title flex items-center justify-between text-xs font-black text-sky-300 mb-1">
+              <span className="flex items-center gap-1.5">
+                <TableIcon className="w-4 h-4 text-sky-400" />
+                <span>Tablas Sintéticas EASA</span>
+              </span>
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+            </div>
+            <p className="netjets-action-desc text-[11px] text-slate-300">
+              6 tablas de memorización interactiva: Fuel, FTL, Minimas, RVSM, Aircrew y MEL.
+            </p>
+          </button>
+
+          {/* 4. Flashcards NetJets */}
+          <button
+            type="button"
+            onClick={() => onStartFlashcards({ category: 'netjets-interview' })}
+            className="netjets-action netjets-action-emerald p-3.5 rounded-2xl bg-emerald-950/40 hover:bg-emerald-900/50 border border-emerald-500/40 hover:border-emerald-400 text-left transition-all group flex flex-col justify-between shadow-md active:scale-95"
+          >
+            <div className="netjets-action-title flex items-center justify-between text-xs font-black text-emerald-300 mb-1">
+              <span className="flex items-center gap-1.5">
+                <Sparkles className="w-4 h-4 text-emerald-400" />
+                <span>Flashcards NetJets</span>
+              </span>
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+            </div>
+            <p className="netjets-action-desc text-[11px] text-slate-300">
+              Modo Flashcards con algoritmos espaciados para límites y siglas de la entrevista.
+            </p>
+          </button>
         </div>
       </div>
 

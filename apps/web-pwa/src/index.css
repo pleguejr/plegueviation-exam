@@ -979,6 +979,19 @@
   border-color: #059669 !important;
 }
 
+.theme-light .command-course-action-purple {
+  border-color: #c084fc !important;
+  background: #faf5ff !important;
+}
+.theme-light .command-course-action-purple .command-course-action-title,
+.theme-light .command-course-action-purple .command-course-action-title svg {
+  color: #7e22ce !important;
+}
+.theme-light .command-course-action-purple:hover {
+  background: #f3e8ff !important;
+  border-color: #9333ea !important;
+}
+
 /* Study Focus Card (Modo Día) */
 .theme-light .study-focus-card {
   background: #ffffff !important;
@@ -1058,6 +1071,125 @@
 .theme-light .study-focus-chapter-card .text-rose-400 {
   color: #e11d48 !important;
   font-weight: 800 !important;
+}
+
+/* ========== NETJETS HERO (Dashboard) ========== */
+.netjets-hero-card {
+  background: linear-gradient(135deg, #1c1305 0%, #0f172a 50%, #070e1e 100%);
+  border: 2px solid rgba(245, 158, 11, 0.4);
+}
+
+.theme-light .netjets-hero-card {
+  background: linear-gradient(145deg, #fffbeb 0%, #ffffff 45%, #f8fafc 100%) !important;
+  border: 2px solid #f59e0b !important;
+  color: #0f172a !important;
+  box-shadow: 0 12px 32px -8px rgba(217, 119, 6, 0.14) !important;
+}
+
+.theme-light .netjets-hero-card > .absolute {
+  opacity: 0.35 !important;
+}
+
+.theme-light .netjets-badge {
+  background: #fef3c7 !important;
+  color: #92400e !important;
+  border-color: #f59e0b !important;
+}
+
+.theme-light .netjets-badge svg {
+  color: #d97706 !important;
+}
+
+.theme-light .netjets-stats {
+  background: #ffffff !important;
+  border-color: #fde68a !important;
+  box-shadow: 0 2px 10px rgba(217, 119, 6, 0.08);
+}
+
+.theme-light .netjets-stats-label {
+  color: #64748b !important;
+}
+
+.theme-light .netjets-stats-value {
+  color: #b45309 !important;
+}
+
+.theme-light .netjets-stats-divider {
+  border-left-color: #e2e8f0 !important;
+}
+
+.theme-light .netjets-stats-accuracy.text-slate-400,
+.theme-light .netjets-stats-accuracy {
+  color: #475569 !important;
+}
+
+.theme-light .netjets-stats-accuracy.text-emerald-400 {
+  color: #047857 !important;
+}
+
+.theme-light .netjets-stats-accuracy.text-amber-400 {
+  color: #b45309 !important;
+}
+
+.theme-light .netjets-action {
+  background: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06) !important;
+}
+
+.theme-light .netjets-action-desc {
+  color: #475569 !important;
+}
+
+.theme-light .netjets-action-amber {
+  border-color: #f59e0b !important;
+  background: #fffbeb !important;
+}
+.theme-light .netjets-action-amber .netjets-action-title,
+.theme-light .netjets-action-amber .netjets-action-title svg {
+  color: #92400e !important;
+}
+.theme-light .netjets-action-amber:hover {
+  background: #fef3c7 !important;
+  border-color: #d97706 !important;
+}
+
+.theme-light .netjets-action-gold {
+  border-color: #eab308 !important;
+  background: #fefce8 !important;
+}
+.theme-light .netjets-action-gold .netjets-action-title,
+.theme-light .netjets-action-gold .netjets-action-title svg {
+  color: #854d0e !important;
+}
+.theme-light .netjets-action-gold:hover {
+  background: #fef9c3 !important;
+  border-color: #ca8a04 !important;
+}
+
+.theme-light .netjets-action-sky {
+  border-color: #38bdf8 !important;
+  background: #f0f9ff !important;
+}
+.theme-light .netjets-action-sky .netjets-action-title,
+.theme-light .netjets-action-sky .netjets-action-title svg {
+  color: #0369a1 !important;
+}
+.theme-light .netjets-action-sky:hover {
+  background: #e0f2fe !important;
+  border-color: #0284c7 !important;
+}
+
+.theme-light .netjets-action-emerald {
+  border-color: #34d399 !important;
+  background: #ecfdf5 !important;
+}
+.theme-light .netjets-action-emerald .netjets-action-title,
+.theme-light .netjets-action-emerald .netjets-action-title svg {
+  color: #047857 !important;
+}
+.theme-light .netjets-action-emerald:hover {
+  background: #d1fae5 !important;
+  border-color: #059669 !important;
 }
 
 .theme-light .dashboard-announcement-banner {
@@ -2908,6 +3040,7 @@ table th {
 .ops-tables-tab-active-mass { background: #059669; color: #fff; border-color: transparent; }
 .ops-tables-tab-active-moa { background: #0284c7; color: #fff; border-color: transparent; }
 .ops-tables-tab-active-vfr { background: #ca8a04; color: #fff; border-color: transparent; }
+.ops-tables-tab-active-easa-netjets { background: #d97706; color: #fff; border-color: transparent; }
 .ops-tables-search {
   width: 100%;
   background: #0e1933;
@@ -2953,6 +3086,10 @@ table th {
 }
 .ops-tables-card-moa { border-color: rgba(14, 165, 233, 0.35); }
 .ops-tables-card-vfr { border-color: rgba(234, 179, 8, 0.35); }
+.ops-tables-card-easa-netjets {
+  border-color: rgba(245, 158, 11, 0.45);
+  background: rgba(120, 53, 15, 0.18);
+}
 .ops-tables-card-header {
   padding: 1.25rem 1.5rem;
   cursor: pointer;
@@ -2978,6 +3115,7 @@ table th {
 .ops-tables-badge-mass { background: rgba(16, 185, 129, 0.2); color: #6ee7b7; border-color: rgba(16, 185, 129, 0.45); }
 .ops-tables-badge-moa { background: rgba(14, 165, 233, 0.15); color: #7dd3fc; border-color: rgba(14, 165, 233, 0.4); }
 .ops-tables-badge-vfr { background: rgba(234, 179, 8, 0.15); color: #fde047; border-color: rgba(234, 179, 8, 0.4); }
+.ops-tables-badge-easa-netjets { background: rgba(245, 158, 11, 0.2); color: #fcd34d; border-color: rgba(245, 158, 11, 0.45); }
 .ops-tables-meta {
   font-size: 10px;
   font-family: ui-monospace, monospace;
@@ -3223,6 +3361,7 @@ table th {
 .theme-light .ops-tables-card-mass { border-color: #86efac !important; background: #f0fdf4 !important; }
 .theme-light .ops-tables-card-moa { border-color: #7dd3fc !important; background: #f0f9ff !important; }
 .theme-light .ops-tables-card-vfr { border-color: #facc15 !important; background: #fefce8 !important; }
+.theme-light .ops-tables-card-easa-netjets { border-color: #f59e0b !important; background: #fffbeb !important; }
 .theme-light .ops-tables-card-header { background: transparent; }
 .theme-light .ops-tables-card-body {
   background: #ffffff !important;
@@ -3234,6 +3373,7 @@ table th {
 .theme-light .ops-tables-badge-mass { background: #dcfce7; color: #166534; border-color: #86efac; }
 .theme-light .ops-tables-badge-moa { background: #e0f2fe; color: #0369a1; border-color: #7dd3fc; }
 .theme-light .ops-tables-badge-vfr { background: #fef9c3; color: #854d0e; border-color: #fde047; }
+.theme-light .ops-tables-badge-easa-netjets { background: #fef3c7; color: #92400e; border-color: #fcd34d; }
 .theme-light .ops-tables-meta {
   background: #ffffff !important;
   color: #0369a1 !important;

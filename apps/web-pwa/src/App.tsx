@@ -39,6 +39,8 @@ import {
 export function App() {
   const [currentView, setCurrentView] = useState<'dashboard' | 'explorer' | 'reports' | 'settings' | 'exam' | 'results' | 'flashcards' | 'procedures' | 'tables'>('dashboard');
   const [flashcardCategory, setFlashcardCategory] = useState<string>('all');
+  const [flashcardQuestionIds, setFlashcardQuestionIds] = useState<string[] | undefined>(undefined);
+  const [flashcardDeckTitle, setFlashcardDeckTitle] = useState<string | undefined>(undefined);
   const [explorerSearchTerm, setExplorerSearchTerm] = useState('');
   const [questions, setQuestions] = useState<Question[]>([]);
   const [manifest, setManifest] = useState<BankManifest | null>(null);
@@ -302,8 +304,16 @@ export function App() {
     setCurrentView('exam');
   };
 
-  const handleStartFlashcards = (category?: string) => {
-    setFlashcardCategory(category || 'all');
+  const handleStartFlashcards = (params?: { category?: string; questionIds?: string[]; title?: string } | string) => {
+    if (typeof params === 'string') {
+      setFlashcardCategory(params || 'all');
+      setFlashcardQuestionIds(undefined);
+      setFlashcardDeckTitle(undefined);
+    } else {
+      setFlashcardCategory(params?.category || 'all');
+      setFlashcardQuestionIds(params?.questionIds);
+      setFlashcardDeckTitle(params?.title);
+    }
     setCurrentView('flashcards');
   };
 
@@ -360,7 +370,7 @@ export function App() {
               strategy: params.strategy,
               passMarkPercentage: 75
             })}
-            onStartFlashcards={(params) => handleStartFlashcards(params?.category)}
+            onStartFlashcards={(params) => handleStartFlashcards(params)}
             onOpenNewExam={() => handleOpenConfigModal()}
             onOpenProcedures={() => setCurrentView('procedures')}
             onOpenTables={() => setCurrentView('tables')}
@@ -391,6 +401,8 @@ export function App() {
             questions={questions}
             manifest={manifest}
             initialCategory={flashcardCategory}
+            initialQuestionIds={flashcardQuestionIds}
+            initialTitle={flashcardDeckTitle}
             onExit={() => setCurrentView('dashboard')}
             onRefreshData={refreshData}
           />

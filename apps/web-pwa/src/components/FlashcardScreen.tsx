@@ -47,6 +47,8 @@ interface FlashcardScreenProps {
   questions: Question[];
   manifest: BankManifest | null;
   initialCategory?: string;
+  initialQuestionIds?: string[];
+  initialTitle?: string;
   onExit: () => void;
   onRefreshData: () => Promise<void> | void;
 }
@@ -55,16 +57,24 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
   questions,
   manifest,
   initialCategory = 'all',
+  initialQuestionIds,
+  initialTitle,
   onExit,
   onRefreshData
 }) => {
-  const [selectedCategory, setSelectedCategory] = useState<string>(initialCategory);
+  const [activeQuestionIds, setActiveQuestionIds] = useState<string[] | undefined>(initialQuestionIds);
+  const [deckCustomTitle, setDeckCustomTitle] = useState<string | undefined>(initialTitle);
+  const [selectedCategory, setSelectedCategory] = useState<string>(
+    initialQuestionIds && initialQuestionIds.length > 0 ? 'custom_tipicas' : initialCategory
+  );
   const [filterType, setFilterType] = useState<'all' | 'numerical' | 'acronym'>('all');
   const [studyMode, setStudyMode] = useState<'pure_recall' | 'with_options'>('pure_recall');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [deck, setDeck] = useState<Question[]>([]);
-  const [batchSize, setBatchSize] = useState<number | 'all'>(25);
+  const [batchSize, setBatchSize] = useState<number | 'all'>(
+    initialQuestionIds && initialQuestionIds.length === 100 ? 100 : (initialQuestionIds && initialQuestionIds.length > 0 ? 'all' : 25)
+  );
   const [statsMap, setStatsMap] = useState<Record<string, QuestionStats>>({});
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
   const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
@@ -94,11 +104,19 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
     cat: string, 
     fType: 'all' | 'numerical' | 'acronym', 
     randomize = true,
-    limit: number | 'all' = batchSize
+    limit: number | 'all' = batchSize,
+    customIds?: string[]
   ) => {
     const liveStats = await getAllStatsMap();
     setStatsMap(liveStats);
-    const prioritizedFull = buildPrioritizedFlashcardDeck(questions, liveStats, cat, fType, randomize);
+    const prioritizedFull = buildPrioritizedFlashcardDeck(
+      questions, 
+      liveStats, 
+      cat, 
+      fType, 
+      randomize, 
+      customIds
+    );
     const limitedDeck = limit === 'all' ? prioritizedFull : prioritizedFull.slice(0, limit);
     setDeck(limitedDeck);
     setCurrentIndex(0);
@@ -114,8 +132,26 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
   };
 
   useEffect(() => {
-    buildDeck(selectedCategory, filterType, true, batchSize);
-  }, [questions, selectedCategory, filterType, batchSize]);
+    buildDeck(selectedCategory, filterType, true, batchSize, activeQuestionIds);
+  }, [questions, selectedCategory, filterType, batchSize, activeQuestionIds]);
+
+  const handleCategoryChange = (newCat: string) => {
+    if (newCat === 'custom_tipicas') {
+      const tipicas = questions.filter((q) => q.id.startsWith('CMD-EXAM-')).map((q) => q.id);
+      setActiveQuestionIds(tipicas);
+      setDeckCustomTitle('Típicas de Comandante (100)');
+      setSelectedCategory('custom_tipicas');
+    } else if (newCat === 'custom_official') {
+      const official = questions.filter((q) => q.id.startsWith('CMD-EXAM26-')).map((q) => q.id);
+      setActiveQuestionIds(official);
+      setDeckCustomTitle('Examen Oficial 2026 (25)');
+      setSelectedCategory('custom_official');
+    } else {
+      setActiveQuestionIds(undefined);
+      setDeckCustomTitle(undefined);
+      setSelectedCategory(newCat);
+    }
+  };
 
   const currentQuestion: Question | undefined = deck[currentIndex];
   const currentStat: QuestionStats | undefined = currentQuestion ? statsMap[currentQuestion.id] : undefined;
@@ -148,7 +184,14 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
   };
 
   const handleShuffle = () => {
-    const reshuffledFull = buildPrioritizedFlashcardDeck(questions, statsMap, selectedCategory, filterType, true);
+    const reshuffledFull = buildPrioritizedFlashcardDeck(
+      questions, 
+      statsMap, 
+      selectedCategory, 
+      filterType, 
+      true, 
+      activeQuestionIds
+    );
     const limited = batchSize === 'all' ? reshuffledFull : reshuffledFull.slice(0, batchSize);
     setDeck(limited);
     setCurrentIndex(0);
@@ -158,11 +201,11 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
   };
 
   const handleRestart = () => {
-    buildDeck(selectedCategory, filterType, true, batchSize);
+    buildDeck(selectedCategory, filterType, true, batchSize, activeQuestionIds);
   };
 
   const handleRebuildAndNextBatch = async () => {
-    await buildDeck(selectedCategory, filterType, true, batchSize);
+    await buildDeck(selectedCategory, filterType, true, batchSize, activeQuestionIds);
     showToast('✨ Mazo reconstruido con las prioridades actualizadas');
   };
 
@@ -371,8 +414,8 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
               <Zap className="w-6 h-6 fill-current" />
             </div>
             <div>
-              <h1 className="text-xl font-black text-white flex items-center gap-2">
-                <span>Modo Flashcards</span>
+              <h1 className="text-xl font-black text-white flex items-center gap-2 flex-wrap">
+                <span>{deckCustomTitle || (selectedCategory === 'custom_tipicas' ? '⭐ Típicas de Comandante' : selectedCategory === 'custom_official' ? '🎯 Examen Oficial 2026' : 'Modo Flashcards')}</span>
                 <span className="text-xs font-mono px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30 font-bold">
                   {totalCards} en cola {batchSize !== 'all' ? `(tanda de ${batchSize})` : ''}
                 </span>
@@ -384,19 +427,21 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
                 )}
               </h1>
               <p className="text-xs text-slate-300 font-medium">
-                Entrenamiento intensivo de retención: límites numéricos, velocidades, altitudes y mnemónicos operacionales.
+                Entrenamiento intensivo de retención: límites numéricos, velocidades, altitudes, conceptos y mnemónicos operacionales.
               </p>
             </div>
           </div>
 
           {/* Category Dropdown Selector */}
           <div className="flex items-center gap-2">
-            <label className="text-xs font-bold text-slate-400 whitespace-nowrap">Banco / Manual:</label>
+            <label className="text-xs font-bold text-slate-400 whitespace-nowrap">Banco / Mazo:</label>
             <select
               value={selectedCategory}
-              onChange={(e) => setSelectedCategory(e.target.value)}
-              className="px-3 py-2 rounded-xl bg-slate-900 border border-sky-500/30 text-xs font-bold text-sky-200 focus:outline-none focus:border-sky-400 max-w-[220px]"
+              onChange={(e) => handleCategoryChange(e.target.value)}
+              className="px-3 py-2 rounded-xl bg-slate-900 border border-sky-500/30 text-xs font-bold text-sky-200 focus:outline-none focus:border-sky-400 max-w-[240px]"
             >
+              <option value="custom_tipicas">⭐ Típicas Comandante (100)</option>
+              <option value="custom_official">🎯 Examen Oficial 2026 (25)</option>
               <option value="all">Todos los Bancos ({questions.length})</option>
               {manifest?.categories.map((cat) => (
                 <option key={cat.id} value={cat.id}>
@@ -420,7 +465,7 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
                   : 'bg-slate-900 text-slate-300 hover:bg-slate-800 border border-slate-800'
               }`}
             >
-              ⚡ Todas ({filterFlashcards(questions, selectedCategory, 'all').length})
+              ⚡ Todas ({filterFlashcards(questions, selectedCategory, 'all', activeQuestionIds).length})
             </button>
 
             <button
@@ -432,7 +477,7 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
               }`}
             >
               <span>🔢 Solo Datos Numéricos</span>
-              <span className="text-[10px] opacity-80">({filterFlashcards(questions, selectedCategory, 'numerical').length})</span>
+              <span className="text-[10px] opacity-80">({filterFlashcards(questions, selectedCategory, 'numerical', activeQuestionIds).length})</span>
             </button>
 
             <button
@@ -444,7 +489,7 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
               }`}
             >
               <span>🔤 Solo Siglas y Acrónimos</span>
-              <span className="text-[10px] opacity-80">({filterFlashcards(questions, selectedCategory, 'acronym').length})</span>
+              <span className="text-[10px] opacity-80">({filterFlashcards(questions, selectedCategory, 'acronym', activeQuestionIds).length})</span>
             </button>
           </div>
 
@@ -452,7 +497,7 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
             {/* Selector de Tamaño de Tanda (Micro-learning) */}
             <div className="flex items-center gap-1 bg-slate-900 p-1 rounded-xl border border-slate-800 text-xs">
               <span className="text-[10px] font-mono text-slate-400 font-bold px-1.5 uppercase">Tanda:</span>
-              {[15, 25, 50, 'all'].map((size) => (
+              {[15, 25, 50, 100, 'all'].map((size) => (
                 <button
                   key={size}
                   onClick={() => setBatchSize(size as number | 'all')}
