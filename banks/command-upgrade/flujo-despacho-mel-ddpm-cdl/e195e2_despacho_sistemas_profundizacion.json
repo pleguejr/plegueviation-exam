@@ -3,26 +3,26 @@
     "id": "CMD-E2-001",
     "subject_id": "cmd_e2_systems",
     "learning_objective": "AOM E195-E2 - Arquitectura del Motor PW1900G Geared Turbofan",
-    "stem": "En la arquitectura motopropulsor del Embraer 195-E2 con motores Pratt & Whitney PW1900G Geared Turbofan (GTF), ¿qué función desempeña la caja reductora Fan Drive Gear System (FDGS)?",
+    "stem": "En la arquitectura motopropulsora del Embraer 195-E2 con motores Pratt & Whitney PW1900G Geared Turbofan (GTF), ¿qué función técnica desempeña la caja reductora Fan Drive Gear System (FDGS)?",
     "options": [
       {
         "id": "A",
-        "text": "Permite que el Fan frontal gire a menor velocidad óptima mientras la turbina de baja presión gira a alta velocidad óptima (ratio ~3:1), reduciendo ruido, emisiones y consumo de combustible",
-        "is_correct": true
+        "text": "Conecta directamente el eje de alta presión (N2) con la bomba de combustible de alta presión para eliminar la caja de accesorios mecánica.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "reduciendo ruido, Permite que el Fan frontal gire a menor velocidad óptima mientras la turbina de baja presión gira a alta velocidad óptima (ratio ~3:1), emisiones y consumo de combustible",
+        "text": "Desacopla el compresor de alta presión de la turbina de baja presión durante la reversa para evitar sobrepresiones en el difusor.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Permite que el Fan frontal gire a menor velocidad óptima mientras la turbina de baja presión gira a alta velocidad óptima (ratio ~3:1), reduciendo ruido, Carga comercial no declarada",
-        "is_correct": false
+        "text": "Desacopla la velocidad del Fan frontal y de la turbina de baja presión (ratio ~3:1), permitiendo al Fan girar a menor velocidad óptima y a la turbina a alto régimen de máxima eficiencia.",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "Permite que el Fan frontal gire a menor velocidad óptima mientras la turbina de baja presión gira a alta velocidad óptima (ratio ~3:1), Inspección técnica diferida, emisiones y consumo de combustible",
+        "text": "Regula la apertura de los alabes variables del estator (VSV) para sincronizar el empuje entre ambos motores en crucero.",
         "is_correct": false
       }
     ],
@@ -265,27 +265,27 @@
     "id": "CMD-E2-008",
     "subject_id": "cmd_e2_systems",
     "learning_objective": "AOM E195-E2 - Modos de Control FBW (Normal Mode vs Direct Mode)",
-    "stem": "En el sistema de Mandos de Vuelo Fly-By-Wire (FBW) del Embraer 195-E2, ¿cuál es la diferencia fundamental entre el Modo Normal (Normal Mode) y el Modo Directo (Direct Mode)?",
+    "stem": "En el sistema de mandos de vuelo Fly-by-Wire (FBW) del Embraer 195-E2, ¿cuál es la diferencia fundamental entre el Modo Normal y el Modo Directo de los Flight Control Modules (FCM)?",
     "options": [
       {
         "id": "A",
-        "text": "alabeo y factor de carga), En Modo Normal los FCMs proporcionan protección activa de envolvente de vuelo (alta/baja velocidad, mientras que en Modo Directo los actuadores responden directamente a las palancas sin protecciones de envolvente",
+        "text": "En Modo Normal los mandos actúan mediante cables mecánicos de acero y en Modo Directo mediante señales analógicas electrohidráulicas.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "En Modo Normal los FCMs proporcionan protección activa de envolvente de vuelo (alta/baja velocidad, alabeo y factor de carga), Carga comercial no declarada",
-        "is_correct": false
+        "text": "En Modo Normal los FCMs proporcionan protección activa de envolvente de vuelo (alta/baja velocidad, alabeo y factor de carga), mientras que en Modo Directo los actuadores responden directamente a las órdenes de palanca sin protecciones de envolvente.",
+        "is_correct": true
       },
       {
         "id": "C",
-        "text": "En Modo Normal los FCMs proporcionan protección activa de envolvente de vuelo (alta/baja velocidad, Inspección técnica diferida, mientras que en Modo Directo los actuadores responden directamente a las palancas sin protecciones de envolvente",
+        "text": "En Modo Normal solo se controlan los alerones y en Modo Directo se transfiere el mando exclusivo a los spoilers multifunción.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "En Modo Normal los FCMs proporcionan protección activa de envolvente de vuelo (alta/baja velocidad, alabeo y factor de carga), mientras que en Modo Directo los actuadores responden directamente a las palancas sin protecciones de envolvente",
-        "is_correct": true
+        "text": "En Modo Normal el piloto automático está permanentemente bloqueado en ON y en Modo Directo se requiere desconexión del FADEC.",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -641,26 +641,26 @@
     "id": "CMD-E2-018",
     "subject_id": "cmd_flight_ground_ops",
     "learning_objective": "AFM / SOPM E195-E2 - Prohibición de Despegue Flexible (Flex Takeoff)",
-    "stem": "¿Bajo qué condiciones está PROHIBIDO realizar un despegue con empuje reducido (Flex Takeoff)?",
+    "stem": "En el Embraer 195-E2, ¿en qué condiciones operacionales de pista o del sistema de frenos NO está recomendado o permitido el uso del sistema Autobrake para el aterrizaje?",
     "options": [
       {
         "id": "A",
-        "text": "aguanieve, En pistas contaminadas (agua estancada, nieve o hielo) o cuando los frenos o el sistema de antiskid estén inoperativos",
+        "text": "En aproximaciones con viento cruzado superior a 10 nudos o con temperaturas exteriores superiores a 30°C.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "En pistas contaminadas (agua estancada, aguanieve, nieve o hielo) o cuando los frenos o el sistema de antiskid estén inoperativos",
-        "is_correct": true
-      },
-      {
-        "id": "C",
-        "text": "En pistas contaminadas (agua estancada, aguanieve, Carga comercial no declarada",
+        "text": "Únicamente en pistas secas con longitud superior a 3.000 metros donde se deba maximizar el rodaje libre.",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "En pistas contaminadas con agarre impredecible, cuando el sistema de antiskid esté inoperativo o cuando existan fallos en los sensores de velocidad de rueda.",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "En pistas contaminadas (agua estancada, Inspección técnica diferida, nieve o hielo) o cuando los frenos o el sistema de antiskid estén inoperativos",
+        "text": "Siempre que se aterrice con configuración de Flap 5 en lugar de Flap Full.",
         "is_correct": false
       }
     ],
@@ -865,27 +865,27 @@
     "id": "CMD-E2-024",
     "subject_id": "cmd_e2_systems",
     "learning_objective": "AOM E195-E2 - Visión Sintética (SVS)",
-    "stem": "¿Qué función cumple la Synthetic Vision System (SVS) integrada en el PFD del Primus Epic 2?",
+    "stem": "En la aviónica Honeywell Primus Epic 2 del Embraer 195-E2, ¿qué función proporciona el sistema de Visión Sintética (SVS) en el Primary Flight Display (PFD)?",
     "options": [
       {
         "id": "A",
-        "text": "obstáculos, Presenta una representación gráfica tridimensional en tiempo real del terreno, pistas y entorno exterior basada en base de datos topográfica y posición GPS/IRS",
+        "text": "Muestra una imagen térmica en tiempo real captada por una cámara infrarroja instalada en el cono de morro del avión.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Presenta una representación gráfica tridimensional en tiempo real del terreno, obstáculos, Carga comercial no declarada",
-        "is_correct": false
+        "text": "Presenta una representación gráfica tridimensional en tiempo real del terreno, obstáculos, pistas y entorno exterior basada en la base de datos topográfica y la posición GPS/IRS.",
+        "is_correct": true
       },
       {
         "id": "C",
-        "text": "Presenta una representación gráfica tridimensional en tiempo real del terreno, Inspección técnica diferida, pistas y entorno exterior basada en base de datos topográfica y posición GPS/IRS",
+        "text": "Sustituye la indicación barométrica de altitud por una lectura radar en todas las fases de vuelo por encima de FL100.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Presenta una representación gráfica tridimensional en tiempo real del terreno, obstáculos, pistas y entorno exterior basada en base de datos topográfica y posición GPS/IRS",
-        "is_correct": true
+        "text": "Proyecta las cartas de navegación de aproximación Jeppesen superpuestas sobre el horizonte artificial analógico.",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -1201,26 +1201,26 @@
     "id": "CMD-E2-033",
     "subject_id": "cmd_flight_ground_ops",
     "learning_objective": "MOA 8.2.1 / EASA - Repostaje con Pasaje a Bordo",
-    "stem": "En la operativa de reabastecimiento de combustible con pasajeros embarcando o a bordo:",
+    "stem": "Según el MOA 8.2.1.3 y los procedimientos de Binter, ¿qué requisitos de seguridad deben cumplirse obligatoriamente durante el repostaje de combustible con pasajeros embarcando, a bordo o desembarcando?",
     "options": [
       {
         "id": "A",
-        "text": "Debe estar informada la tripulación, la señal de no fumar encendida, la señal de cinturones apagada, los pasillos despejados, las puertas principales practicables con medios de evacuación listos y comunicación establecida con el personal de repostaje",
-        "is_correct": true
+        "text": "Todos los pasajeros deben permanecer de pie en el pasillo central y la tripulación técnica debe abandonar la cabina de vuelo.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "la señal de no fumar encendida, Debe estar informada la tripulación, la señal de cinturones apagada, los pasillos despejados, las puertas principales practicables con medios de evacuación listos y comunicación establecida con el personal de repostaje",
+        "text": "Las luces de cabina deben apagarse totalmente y los motores deben mantenerse al ralentí para alimentar las bombas eléctricas de achique.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Debe estar informada la tripulación, la señal de no fumar encendida, la señal de cinturones apagada, los pasillos despejados, Carga comercial no declarada",
-        "is_correct": false
+        "text": "Tripulación y pasaje informados, señal de no fumar encendida, cinturones desabrochados, pasillos despejados, salidas principales expeditas con medios de evacuación listos y enlace de comunicación tierra-cabina establecido.",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "Debe estar informada la tripulación, Inspección técnica diferida, la señal de cinturones apagada, los pasillos despejados, las puertas principales practicables con medios de evacuación listos y comunicación establecida con el personal de repostaje",
+        "text": "Únicamente se permite el repostaje con pasaje si la cantidad a cargar es inferior a 500 kg de Jet A-1 y se dispone de un camión de bomberos al costado del ala.",
         "is_correct": false
       }
     ],
@@ -1238,26 +1238,26 @@
     "id": "CMD-E2-034",
     "subject_id": "cmd_e2_systems",
     "learning_objective": "AOM E195-E2 - Protección Eléctrica de Sensores de Aire (ADSPs / Sondas)",
-    "stem": "¿Qué elementos calefactores eléctricos (Electrical Ice Protection) están activos permanentemente en el suelo y en vuelo en el Embraer 195-E2?",
+    "stem": "¿Qué elementos sensores y tomas de datos de aire disponen de calefacción eléctrica automática permanente (Electrical Ice Protection) en el Embraer 195-E2?",
     "options": [
       {
         "id": "A",
-        "text": "tomas de presión estática, Los tubos Pitot primarios y secundarios, sondas de ángulo de ataque (AOA) y sensores TAT (Total Air Temperature) gobernados automáticamente por los ADSPs",
+        "text": "Únicamente las luces de aterrizaje y las antenas de comunicaciones VHF.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Los tubos Pitot primarios y secundarios, tomas de presión estática, sondas de ángulo de ataque y sensores TAT gobernados automáticamente por los ADSPs",
+        "text": "Las sondas inteligentes ADSP (tubos Pitot y tomas estáticas integradas), las sondas de ángulo de ataque (AOA) y los sensores TAT (Total Air Temperature).",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "Los tubos Pitot primarios y secundarios, tomas de presión estática, Carga comercial no declarada",
+        "text": "Exclusivamente el borde de ataque del estabilizador vertical y los limpiaparabrisas.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Los tubos Pitot primarios y secundarios, Inspección técnica diferida, sondas de ángulo de ataque (AOA) y sensores TAT (Total Air Temperature) gobernados automáticamente por los ADSPs",
+        "text": "Las llantas del tren principal y las tomas de llenado de combustible de los planos.",
         "is_correct": false
       }
     ],
@@ -1350,26 +1350,26 @@
     "id": "CMD-E2-037",
     "subject_id": "cmd_e2_systems",
     "learning_objective": "AOM E195-E2 - Radar Meteorológico 3D RDR-4000",
-    "stem": "En la operación del radar meteorológico Honeywell RDR-4000 con tecnología 3D Volumetric Scanning en el E195-E2:",
+    "stem": "En la operación del radar meteorológico Honeywell RDR-4000 con tecnología 3D Volumetric Scanning en el E195-E2, ¿cuál es su característica principal de funcionamiento?",
     "options": [
       {
         "id": "A",
-        "text": "El radar escanea automáticamente el volumen atmosférico frontal desde 0 hasta 60.000 ft y almacena los datos en memoria, mostrando cortes transversales de tormentas, cizalladura y turbulencia sin necesidad de ajustar manualmente la inclinación de antena",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "mostrando cortes transversales de tormentas, El radar escanea automáticamente el volumen atmosférico frontal desde 0 hasta 60.000 ft y almacena los datos en memoria, cizalladura (Windshear) y turbulencia sin necesidad de ajustar manualmente la inclinación de antena (Tilt)",
+        "text": "Requiere que el piloto ajuste manualmente la inclinación de la antena (Tilt) en cada nivel de vuelo cada 5 minutos.",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Escanea automáticamente el volumen atmosférico frontal de 0 a 60.000 ft, almacena la reflectividad en memoria 3D y genera vistas de tormentas, cizalladura predictiva y turbulencia sin ajuste manual continuo de Tilt.",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "El radar escanea automáticamente el volumen atmosférico frontal desde 0 hasta 60.000 ft y almacena los datos en memoria, mostrando cortes transversales de tormentas, Carga comercial no declarada",
+        "text": "Solo detecta nubes de tipo estratus y niebla en superficie a menos de 5 millas náuticas.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "El radar escanea automáticamente el volumen atmosférico frontal desde 0 hasta 60.000 ft y almacena los datos en memoria, Inspección técnica diferida, cizalladura (Windshear) y turbulencia sin necesidad de ajustar manualmente la inclinación de antena (Tilt)",
+        "text": "Emite señales continuas en banda X exclusivamente durante el carreteo en tierra para evitar interferencias en vuelo.",
         "is_correct": false
       }
     ],
@@ -1387,26 +1387,26 @@
     "id": "CMD-E2-038",
     "subject_id": "cmd_flight_planning",
     "learning_objective": "MOA 8.1.7 - Cómputo del Combustible de Alternativo (Alternate Fuel)",
-    "stem": "¿Cuál es la función del cálculo de combustible de reserva para desvío a alternativo (Alternate Fuel)?",
+    "stem": "¿Qué fases de vuelo y perfiles operacionales están incluidos reglamentariamente en el cálculo del combustible de reserva para desvío a alternativo (Alternate Fuel)?",
     "options": [
       {
         "id": "A",
-        "text": "el ascenso, Cubrir la frustrada en el destino (Go-Around), crucero en ruta hasta el alternativo, el descenso, la aproximación instrumental completa y el aterrizaje en el aeródromo alternativo seleccionado",
+        "text": "Solo el crucero en línea recta desde el punto de desvío hasta el umbral del alternativo al nivel de vuelo actual.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Cubrir la frustrada en el destino (Go-Around), el ascenso, crucero en ruta hasta el alternativo, el descenso, la aproximación instrumental completa y el aterrizaje en el aeródromo alternativo seleccionado",
+        "text": "Frustrada en destino desde la DA/MDA, ascenso en ruta, crucero a altitud óptima, descenso, aproximación instrumental completa y aterrizaje en el aeródromo alternativo seleccionado.",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "Cubrir la frustrada en el destino (Go-Around), el ascenso, crucero en ruta hasta el alternativo, el descenso, Carga comercial no declarada",
+        "text": "Una espera fija de 45 minutos sobre el VOR del alternativo a 1.500 ft sobre el terreno sin incluir aproximación.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Cubrir la frustrada en el destino (Go-Around), Inspección técnica diferida, crucero en ruta hasta el alternativo, el descenso, la aproximación instrumental completa y el aterrizaje en el aeródromo alternativo seleccionado",
+        "text": "El rodaje de regreso a la plataforma de origen más una reserva contingente del 10%.",
         "is_correct": false
       }
     ],
@@ -1462,26 +1462,26 @@
     "id": "CMD-E2-040",
     "subject_id": "cmd_emergency",
     "learning_objective": "QRH / SOPM E195-E2 - Procedimiento de Descenso de Emergencia",
-    "stem": "Durante el descenso de emergencia (Emergency Descent) en el Embraer 195-E2:",
+    "stem": "Durante la ejecución del procedimiento de descenso de emergencia (Emergency Descent) en el Embraer 195-E2, ¿cuál es la configuración de vuelo requerida?",
     "options": [
       {
         "id": "A",
-        "text": "se extienden completamente los Speed Brakes (aerofrenos), Se seleccionan palancas de potencia en IDLE, se ajusta velocidad máxima Vmo/Mmo (o velocidad estructural si hay daño) y se desciende hacia 10.000 ft o la MEA/MORA",
+        "text": "Palancas de gases a máxima potencia TO/GA, Flaps en posición 5 y tren de aterrizaje abajo para frenar la caída.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Se seleccionan palancas de potencia en IDLE, se extienden completamente los Speed Brakes (aerofrenos), Carga comercial no declarada",
+        "text": "Palancas de gases en crucero, aerofrenos retraídos y viraje escarpado constante de 45° de alabeo.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Se seleccionan palancas de potencia en IDLE, Inspección técnica diferida, se ajusta velocidad máxima Vmo/Mmo (o velocidad estructural si hay daño) y se desciende hacia 10.000 ft o la MEA/MORA",
+        "text": "Gases al 50% de N1, velocidad mantenida en Vfe y descenso suave a 500 ft/min.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Se seleccionan palancas de potencia en IDLE, se extienden completamente los Speed Brakes (aerofrenos), se ajusta velocidad máxima Vmo/Mmo (o velocidad estructural si hay daño) y se desciende hacia 10.000 ft o la MEA/MORA",
+        "text": "Palancas de potencia en IDLE, Speed Brakes completamente desplegados (FULL OPEN), velocidad ajustada a Vmo/Mmo (o velocidad apropiada si hay daño estructural) y descenso hacia 10.000 ft o la MEA/MORA más alta.",
         "is_correct": true
       }
     ],
@@ -1575,26 +1575,26 @@
     "id": "CMD-E2-043",
     "subject_id": "cmd_flight_planning",
     "learning_objective": "MOA 8.1.7 - Discrecionalidad del Comandante en Extra Fuel",
-    "stem": "¿Cuál es la política operacional de Binter respecto al combustible adicional (\"Extra Fuel\" / \"Captain Discretionary Fuel\")?",
+    "stem": "¿Cuál es la política operacional y autoridad del Comandante respecto a la adición de combustible discrecional ('Extra Fuel') según el MOA?",
     "options": [
       {
         "id": "A",
-        "text": "esperas previstas, El comandante tiene la potestad de añadir combustible extra justificado por meteorología adversa, contingencias operacionales o limitaciones de aeródromo",
+        "text": "El Comandante no puede modificar la cantidad de combustible calculada por el sistema automático de despacho bajo ninguna circunstancia.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "El comandante tiene la potestad de añadir combustible extra justificado por meteorología adversa, esperas previstas, Carga comercial no declarada",
+        "text": "Requiere autorización escrita previa del Director de Operaciones con al menos 2 horas de antelación al vuelo.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "El comandante tiene la potestad de añadir combustible extra justificado por meteorología adversa, esperas previstas, contingencias operacionales o limitaciones de aeródromo",
+        "text": "El Comandante tiene la potestad y autoridad de añadir combustible adicional justificado por meteorología adversa, esperas previstas, contingencias operacionales o limitaciones de aeródromo.",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "El comandante tiene la potestad de añadir combustible extra justificado por meteorología adversa, Inspección técnica diferida, contingencias operacionales o limitaciones de aeródromo",
+        "text": "Solo se puede añadir combustible extra si el peso al despegue está por debajo del 50% del MTOW.",
         "is_correct": false
       }
     ],
@@ -1761,26 +1761,26 @@
     "id": "CMD-E2-048",
     "subject_id": "cmd_e2_systems",
     "learning_objective": "AOM E195-E2 / MGNT 30 - Sistema Data Link (CPDLC / ACARS)",
-    "stem": "En la arquitectura de comunicaciones por enlace de datos (Data Link / CPDLC / ACARS) en el Embraer 195-E2:",
+    "stem": "En la arquitectura de comunicaciones por enlace de datos (Data Link / CPDLC / ACARS) del Embraer 195-E2, ¿qué capacidades operativas proporciona a la tripulación?",
     "options": [
       {
         "id": "A",
-        "text": "partes meteorológicos D-ATIS/METAR, Permite la recepción de planes de vuelo, autorizaciones de salida DCL, comunicaciones ATC por CPDLC y reportes automáticos de mantenimiento OOOI (Out-Off-On-In) a la compañía",
+        "text": "Sustituye la radiobaliza ELT de emergencia mediante transmisión satelital continua de la voz de cabina.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Permite la recepción de planes de vuelo, partes meteorológicos D-ATIS/METAR, autorizaciones de salida DCL, Carga comercial no declarada",
+        "text": "Transmite video en alta definición de la cabina de pasaje al centro de mantenimiento cada 10 minutos.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Permite la recepción de planes de vuelo, Inspección técnica diferida, autorizaciones de salida DCL, comunicaciones ATC por CPDLC y reportes automáticos de mantenimiento OOOI (Out-Off-On-In) a la compañía",
+        "text": "Permite el control remoto de los mandos de vuelo por parte del despachador de guardia en caso de incapacitación.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Permite la recepción de planes de vuelo, partes meteorológicos D-ATIS/METAR, autorizaciones de salida DCL, comunicaciones ATC por CPDLC y reportes automáticos de mantenimiento OOOI a la compañía",
+        "text": "Permite la recepción de planes de vuelo y autorizaciones DCL, partes D-ATIS/METAR, comunicaciones ATS por texto (CPDLC) y reportes automáticos de eventos operacionales y de mantenimiento (OOOI / ACARS) a la compañía.",
         "is_correct": true
       }
     ],
