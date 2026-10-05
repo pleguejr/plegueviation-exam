@@ -44,22 +44,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Mantener 84 KIAS (flaps 0°) o 70 KIAS (flaps T/O) y aterrizar recto adelante (±30°), sin intentar virajes de 180° a pista",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Efectuar un viraje escarpado de 180° hacia la pista de despegue con banqueo de 60°",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Mantener 84 KIAS (flaps 0°) o 70 KIAS (flaps T/O) y aterrizar recto adelante (±30°), sin intentar virajes de 180° a pista",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "Tirar de la palanca para mantener la altitud mientras se pulsa el botón FADEC Test en vuelo",
+        "text": "Desplegar flaps a 40° de inmediato y buscar un campo perpendicular en pérdida",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Desplegar flaps a 40° de inmediato y buscar un campo perpendicular en pérdida",
+        "text": "Tirar de la palanca para mantener la altitud mientras se pulsa el botón FADEC Test en vuelo",
         "is_correct": false
       }
     ],
@@ -81,22 +81,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Velocidad 84 KIAS (para rotación por molinete), selector combustible en tanque más lleno, interruptor de motor (Engine Switch) en ON",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Picar a 140 KIAS con el selector de combustible en OFF y alternadores desconectados",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Mantener 55 KIAS con flaps LAND y accionar el disyuntor de la bomba auxiliar repetidamente",
+        "id": "B",
+        "text": "Cortar el Emergency Switch y volar en pérdida hasta que el motor arranque",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Velocidad 84 KIAS (para rotación por molinete), selector combustible en tanque más lleno, interruptor de motor (Engine Switch) en ON",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Cortar el Emergency Switch y volar en pérdida hasta que el motor arranque",
+        "text": "Mantener 55 KIAS con flaps LAND y accionar el disyuntor de la bomba auxiliar repetidamente",
         "is_correct": false
       }
     ],
@@ -118,12 +118,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Planeo a 84 KIAS (flaps UP), aproximación final a 65 KIAS (flaps LAND), Master OFF y válvula de combustible OFF antes de la toma",
-        "is_correct": true
+        "text": "Descenso a 120 KIAS con flaps recogidos y mantener el interruptor Master ON durante el impacto",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Descenso a 120 KIAS con flaps recogidos y mantener el interruptor Master ON durante el impacto",
+        "text": "Planeo a 100 KIAS sin flaps y realizar la toma con el tren de morro en primer lugar",
         "is_correct": false
       },
       {
@@ -133,8 +133,8 @@
       },
       {
         "id": "D",
-        "text": "Planeo a 100 KIAS sin flaps y realizar la toma con el tren de morro en primer lugar",
-        "is_correct": false
+        "text": "Planeo a 84 KIAS (flaps UP), aproximación final a 65 KIAS (flaps LAND), Master OFF y válvula de combustible OFF antes de la toma",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -155,23 +155,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Indica un fallo no crítico o degradación de sensor en ese canal; el FADEC continúa gobernando el motor de forma segura y se debe aterrizar en el próximo aeródromo",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Indica una parada catastrófica inminente del motor en los siguientes quince segundos debiendo saltar en paracaídas",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "El piloto debe apagar manualmente la llave general de encendido del motor de inmediato en pleno vuelo",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "La hélice se colocará automáticamente en bandera fija cortando el suministro de gasoil a los inyectores",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Indica una parada catastrófica inminente del motor en los siguientes quince segundos debiendo saltar en paracaídas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Indica un fallo no crítico o degradación de sensor en ese canal; el FADEC continúa gobernando el motor de forma segura y se debe aterrizar en el próximo aeródromo",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -193,17 +193,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Cortar inmediatamente el interruptor general del motor (Engine Switch OFF) y planear",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Ajustar la palanca de potencia para mantener las RPM del motor dentro del límite máximo operativo de 2.300 RPM",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "Acelerar la palanca de potencia al 100% de carga continua para forzar al gobernador a responder",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Cortar inmediatamente el interruptor general del motor (Engine Switch OFF) y planear",
+        "text": "Acelerar la palanca de potencia al 100% de carga continua para forzar al gobernador a responder",
         "is_correct": false
       },
       {
@@ -235,17 +235,17 @@
       },
       {
         "id": "B",
-        "text": "El motor se apaga instantáneamente a los 5 segundos por falta de chispa de encendido",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Autonomía ilimitada porque los inyectores Common Rail no requieren energía eléctrica",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Aproximadamente 4 horas continuas alimentado por la dinamo de la hélice",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El motor se apaga instantáneamente a los 5 segundos por falta de chispa de encendido",
         "is_correct": false
       }
     ],
@@ -268,23 +268,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Válvula de combustible (Fuel Shutoff Valve) en OFF, Emergency Switch OFF, calefacción de cabina OFF y descender a velocidad de planeo",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Acelerar a fondo para quemar rápidamente el combustible restante del motor",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Abrir la calefacción de cabina y la bomba auxiliar de combustible para enfriar el capó",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Descargar el extintor portátil por la ventanilla lateral izquierda hacia el capó motor",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Acelerar a fondo para quemar rápidamente el combustible restante del motor",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Válvula de combustible (Fuel Shutoff Valve) en OFF, Emergency Switch OFF, calefacción de cabina OFF y descender a velocidad de planeo",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -305,23 +305,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Aumentar la velocidad de vuelo para incrementar el flujo en el radiador, reducir potencia al mínimo necesario y abrir la calefacción de cabina al máximo",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Reducir la velocidad al límite de pérdida y cerrar herméticamente todas las tomas de aire del capó",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Apagar el alternador de 70A y conectar el disyuntor de la bomba mecánica de alta presión",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Cortar el suministro de combustible al tanque izquierdo y realizar un picado a velocidad de nunca exceder",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aumentar la velocidad de vuelo para incrementar el flujo en el radiador, reducir potencia al mínimo necesario y abrir la calefacción de cabina al máximo",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -342,17 +342,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Cortar el motor de inmediato y ejecutar un aterrizaje forzado sin motor en el campo más cercano",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Reducir potencia al mínimo requerido para mantener el vuelo nivelado y aterrizar en el aeródromo adecuado más próximo",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "Aumentar la potencia al cien por cien para forzar el cebado de la bomba mecánica de lubricación",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Cortar el motor de inmediato y ejecutar un aterrizaje forzado sin motor en el campo más cercano",
+        "text": "Aumentar la potencia al cien por cien para forzar el cebado de la bomba mecánica de lubricación",
         "is_correct": false
       },
       {
@@ -379,17 +379,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Power Lever: 100% | Flaps: T/O | Velocidad: 70 KIAS con régimen de descenso de 1.500 ft/min",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Power Lever: IDLE | Flaps: UP | Velocidad: hasta Vno o Vne en aire en calma",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "Power Lever: IDLE | Flaps: LAND | Velocidad: 130 KIAS manteniendo el límite estructural de flaps",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Power Lever: 100% | Flaps: T/O | Velocidad: 70 KIAS con régimen de descenso de 1.500 ft/min",
+        "text": "Power Lever: IDLE | Flaps: LAND | Velocidad: 130 KIAS manteniendo el límite estructural de flaps",
         "is_correct": false
       },
       {
@@ -421,17 +421,17 @@
       },
       {
         "id": "B",
-        "text": "Desconectar los disyuntores de la batería de emergencia de 30 minutos situada en el morro",
+        "text": "Desmontar la pantalla PFD con la mano para conectar los tubos neumáticos de respaldo manual",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Reiniciar el motor Continental CD-170 apagando la llave de contacto en pleno vuelo",
+        "text": "Desconectar los disyuntores de la batería de emergencia de 30 minutos situada en el morro",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Desmontar la pantalla PFD con la mano para conectar los tubos neumáticos de respaldo manual",
+        "text": "Reiniciar el motor Continental CD-170 apagando la llave de contacto en pleno vuelo",
         "is_correct": false
       }
     ],
@@ -454,22 +454,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Únicamente cuando el aterrizaje en el campo seleccionado esté completamente asegurado",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Inmediatamente al comenzar el planeo a 3000 ft AGL, siempre que se notifique previamente a la autoridad competente y al CCO",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Nunca se deben usar flaps en un aterrizaje forzoso, requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Antes de virar a tramo de viento en cola, manteniendo el cumplimiento de las limitaciones operacionales del manual",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Únicamente cuando el aterrizaje en el campo seleccionado esté completamente asegurado",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Inmediatamente al comenzar el planeo a 3000 ft AGL, siempre que se notifique previamente a la autoridad competente y al CCO",
         "is_correct": false
       }
     ],
@@ -491,13 +491,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Aterrizaje en tierra fuera de aeródromo sobre campo despejado, ya que el tren fijo resiste impactos moderados",
-        "is_correct": true
+        "text": "Aterrizaje intencionado sobre copas de árboles frondosos para amortiguar el impacto con la vegetación",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Amerizaje forzoso (Ditching) en el mar, debido a que ofrece menor deceleración que una toma en terreno irregular",
-        "is_correct": false
+        "text": "Aterrizaje en tierra fuera de aeródromo sobre campo despejado, ya que el tren fijo resiste impactos moderados",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -506,7 +506,7 @@
       },
       {
         "id": "D",
-        "text": "Aterrizaje intencionado sobre copas de árboles frondosos para amortiguar el impacto con la vegetación",
+        "text": "Amerizaje forzoso (Ditching) en el mar, debido a que ofrece menor deceleración que una toma en terreno irregular",
         "is_correct": false
       }
     ],
@@ -528,17 +528,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Conectar todas las luces exteriores y calefacción de pitot para drenar la sobretensión del regulador",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Comprobar disyuntor del alternador, apagar cargas eléctricas no esenciales y monitorizar el voltaje; la batería de FADEC garantiza al menos 30 min de motor",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "El motor diésel se detendrá instantáneamente en cuanto se descargue la batería principal en dos minutos",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Conectar todas las luces exteriores y calefacción de pitot para drenar la sobretensión del regulador",
+        "text": "El motor diésel se detendrá instantáneamente en cuanto se descargue la batería principal en dos minutos",
         "is_correct": false
       },
       {
@@ -565,22 +565,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Reducir palanca de potencia para mantener RPM dentro de límites y volar a velocidad reducida",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Avanzar palanca de potencia al 100% Load y picar el morro para aprovechar el empuje remanente",
+        "text": "Desconectar la batería principal y ciclar los disyuntores térmicos del panel de fusibles",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Cortar el Engine Master inmediatamente y prepararse para un aterrizaje forzoso en planeo",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Reducir palanca de potencia para mantener RPM dentro de límites y volar a velocidad reducida",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Desconectar la batería principal y ciclar los disyuntores térmicos del panel de fusibles",
+        "text": "Avanzar palanca de potencia al 100% Load y picar el morro para aprovechar el empuje remanente",
         "is_correct": false
       }
     ],
@@ -612,12 +612,12 @@
       },
       {
         "id": "C",
-        "text": "Mantener 130 KIAS (Vno) en picado pronunciado con el selector de combustible en OFF",
+        "text": "Mantener 52 KIAS cerca de la pérdida con el disyuntor de FADEC desconectado",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Mantener 52 KIAS cerca de la pérdida con el disyuntor de FADEC desconectado",
+        "text": "Mantener 130 KIAS (Vno) en picado pronunciado con el selector de combustible en OFF",
         "is_correct": false
       }
     ],
@@ -639,22 +639,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Aproximación a 75 KIAS y prever un incremento aproximado del 35% en la distancia de aterrizaje",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Aproximación a 60 KIAS sin ninguna variación en la distancia de frenado calculada",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Aproximación a 90 KIAS y prever una duplicación obligatoria de la longitud de pista",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "Aproximación a 75 KIAS y prever un incremento aproximado del 35% en la distancia de aterrizaje",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "Aproximación a 52 KIAS manteniendo un ángulo de cabeceo pronunciado sobre el umbral",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aproximación a 60 KIAS sin ninguna variación en la distancia de frenado calculada",
         "is_correct": false
       }
     ],
@@ -676,8 +676,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Sujetar firmemente la palanca de mandos, desconectar el disyuntor del Trim y compensar manualmente",
-        "is_correct": true
+        "text": "Extender inmediatamente flaps a posición LAND para equilibrar las fuerzas aerodinámicas",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -686,8 +686,8 @@
       },
       {
         "id": "C",
-        "text": "Extender inmediatamente flaps a posición LAND para equilibrar las fuerzas aerodinámicas",
-        "is_correct": false
+        "text": "Sujetar firmemente la palanca de mandos, desconectar el disyuntor del Trim y compensar manualmente",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -713,8 +713,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Emergency Switch: OFF | Master Switch: OFF | Cabin Vents: OPEN | Aterrizar en el aeródromo más próximo",
-        "is_correct": true
+        "text": "Cortar el Engine Master inmediatamente y realizar un descenso de emergencia en barrena",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -723,13 +723,13 @@
       },
       {
         "id": "C",
-        "text": "Cortar el Engine Master inmediatamente y realizar un descenso de emergencia en barrena",
+        "text": "Pulsar el botón FADEC TEST durante 30 segundos para resetear el bus de aviónica",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Pulsar el botón FADEC TEST durante 30 segundos para resetear el bus de aviónica",
-        "is_correct": false
+        "text": "Emergency Switch: OFF | Master Switch: OFF | Cabin Vents: OPEN | Aterrizar en el aeródromo más próximo",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -787,22 +787,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Pitot Heat: ON, Cabin Heat/Defrost: ON, virar 180° para abandonar la zona y descender a aire más cálido",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Extender flaps a posición LAND para desprender el hielo acumulado en el borde de ataque del ala",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Reducir la velocidad por debajo de 52 KIAS para evitar el impacto de gotas superenfriadas",
+        "id": "B",
+        "text": "Apagar el alternador principal para evitar sobrecargas térmicas en el sistema de deshielo",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Pitot Heat: ON, Cabin Heat/Defrost: ON, virar 180° para abandonar la zona y descender a aire más cálido",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Apagar el alternador principal para evitar sobrecargas térmicas en el sistema de deshielo",
+        "text": "Reducir la velocidad por debajo de 52 KIAS para evitar el impacto de gotas superenfriadas",
         "is_correct": false
       }
     ],
@@ -824,22 +824,22 @@
     "options": [
       {
         "id": "A",
-        "text": "El instrumento de respaldo integrado electrónico con su batería interna",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "El receptor GPS portátil auxiliar instalado en el mamparo trasero de la cabina",
+        "text": "No se dispone de ningún instrumento de actitud una vez que se apagan las pantallas",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "El panel de alarmas analógicas accionado por el tubo Pitot secundario",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "El instrumento de respaldo integrado electrónico con su batería interna",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "No se dispone de ningún instrumento de actitud una vez que se apagan las pantallas",
+        "text": "El receptor GPS portátil auxiliar instalado en el mamparo trasero de la cabina",
         "is_correct": false
       }
     ],
@@ -861,13 +861,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Aproximadamente 2.0 NM por cada 1.000 ft de pérdida de altitud (ratio de planeo 1:12 a 84 KIAS)",
-        "is_correct": true
+        "text": "Aproximadamente 0.5 NM por cada 1.000 ft de pérdida de altitud (ratio de planeo 1:3 a 65 KIAS)",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Aproximadamente 0.5 NM por cada 1.000 ft de pérdida de altitud (ratio de planeo 1:3 a 65 KIAS)",
-        "is_correct": false
+        "text": "Aproximadamente 2.0 NM por cada 1.000 ft de pérdida de altitud (ratio de planeo 1:12 a 84 KIAS)",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -903,7 +903,7 @@
       },
       {
         "id": "B",
-        "text": "Conmutar el interruptor a OFF y restablecer la palanca de gases a la posición de despegue",
+        "text": "Mantener pulsado FADEC TEST durante 60 segundos hasta resetear los disyuntores de aviónica",
         "is_correct": false
       },
       {
@@ -913,7 +913,7 @@
       },
       {
         "id": "D",
-        "text": "Mantener pulsado FADEC TEST durante 60 segundos hasta resetear los disyuntores de aviónica",
+        "text": "Conmutar el interruptor a OFF y restablecer la palanca de gases a la posición de despegue",
         "is_correct": false
       }
     ],
@@ -935,17 +935,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Aumentar la potencia al cien por cien para cebar la bomba mecánica de aceite",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Reducir potencia al mínimo requerido y aterrizar en el aeródromo adecuado más cercano",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "Cortar el motor de inmediato y realizar un planeo forzado sin potencia",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Aumentar la potencia al cien por cien para cebar la bomba mecánica de aceite",
+        "text": "Cortar el motor de inmediato y realizar un planeo forzado sin potencia",
         "is_correct": false
       },
       {
@@ -1009,22 +1009,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Seleccionar el tanque izquierdo para alimentar el motor y aterrizar lo antes posible",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Mantener el selector en el tanque derecho para consumir rápidamente el combustible",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Seleccionar el tanque izquierdo para alimentar el motor y aterrizar lo antes posible",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "Poner el selector en posición OFF y cortar el motor en pleno vuelo",
+        "text": "Conectar la bomba auxiliar de combustible para presurizar el depósito perforado",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Conectar la bomba auxiliar de combustible para presurizar el depósito perforado",
+        "text": "Poner el selector en posición OFF y cortar el motor en pleno vuelo",
         "is_correct": false
       }
     ],
@@ -1046,13 +1046,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Desconectar cargas eléctricas no esenciales y confirmar batería de emergencia armada",
-        "is_correct": true
+        "text": "Activar todos los sistemas de deshielo y luces de aterrizaje de respaldo",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Apagar inmediatamente la pantalla PFD del Garmin G1000 NXi",
-        "is_correct": false
+        "text": "Desconectar cargas eléctricas no esenciales y confirmar batería de emergencia armada",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1061,7 +1061,7 @@
       },
       {
         "id": "D",
-        "text": "Activar todos los sistemas de deshielo y luces de aterrizaje de respaldo",
+        "text": "Apagar inmediatamente la pantalla PFD del Garmin G1000 NXi",
         "is_correct": false
       }
     ],
@@ -1083,13 +1083,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Aterrizar en pista con mínima velocidad, cortar motor antes de la toma y evacuar",
-        "is_correct": true
+        "text": "Realizar maniobras bruscas de cabeceo positivo para forzar el bloqueo mecánico",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Realizar maniobras bruscas de cabeceo positivo para forzar el bloqueo mecánico",
-        "is_correct": false
+        "text": "Aterrizar en pista con mínima velocidad, cortar motor antes de la toma y evacuar",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1125,17 +1125,17 @@
       },
       {
         "id": "B",
-        "text": "El motor continúa funcionando a potencia de crucero mediante alimentación por gravedad",
+        "text": "El turbocompresor suministra el combustible mediante efecto Venturi",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "La bomba eléctrica auxiliar asume el cien por cien de la presión de inyección",
+        "text": "El motor continúa funcionando a potencia de crucero mediante alimentación por gravedad",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "El turbocompresor suministra el combustible mediante efecto Venturi",
+        "text": "La bomba eléctrica auxiliar asume el cien por cien de la presión de inyección",
         "is_correct": false
       }
     ],
@@ -1157,13 +1157,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Aparece una cruz roja sobre la rosa de rumbos del HSI en el PFD",
-        "is_correct": true
+        "text": "El piloto automático entra inmediatamente en modo de barrena controlada",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "La pantalla del PFD se apaga completamente pasando a modo negro",
-        "is_correct": false
+        "text": "Aparece una cruz roja sobre la rosa de rumbos del HSI en el PFD",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1172,7 +1172,7 @@
       },
       {
         "id": "D",
-        "text": "El piloto automático entra inmediatamente en modo de barrena controlada",
+        "text": "La pantalla del PFD se apaga completamente pasando a modo negro",
         "is_correct": false
       }
     ],
@@ -1194,22 +1194,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Activar calefacción y desempañador al máximo y abrir la ventanilla lateral si es necesario",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Limpiar el parabrisas manualmente con la mano sacando el brazo por la puerta",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Acelerar a velocidad máxima de nunca exceder para derretir el hielo por fricción",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "Activar calefacción y desempañador al máximo y abrir la ventanilla lateral si es necesario",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "Cortar el suministro de aire a la cabina para congelar el interior del cristal",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Limpiar el parabrisas manualmente con la mano sacando el brazo por la puerta",
         "is_correct": false
       }
     ],
@@ -1236,17 +1236,17 @@
       },
       {
         "id": "B",
-        "text": "El motor sufrirá una parada catastrófica en los siguientes treinta segundos",
+        "text": "La hélice se colocará automáticamente en posición de bandera fija",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Se debe apagar manualmente la llave de contacto del motor de inmediato",
+        "text": "El motor sufrirá una parada catastrófica en los siguientes treinta segundos",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "La hélice se colocará automáticamente en posición de bandera fija",
+        "text": "Se debe apagar manualmente la llave de contacto del motor de inmediato",
         "is_correct": false
       }
     ],
@@ -1268,8 +1268,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Utilizando el compensador eléctrico de profundidad y variaciones de potencia de motor",
-        "is_correct": true
+        "text": "El avión es incontrolable debiendo realizarse un salto en paracaídas de rescate",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1283,8 +1283,8 @@
       },
       {
         "id": "D",
-        "text": "El avión es incontrolable debiendo realizarse un salto en paracaídas de rescate",
-        "is_correct": false
+        "text": "Utilizando el compensador eléctrico de profundidad y variaciones de potencia de motor",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1305,22 +1305,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Bajar el morro, mantener eje de pista, aterrizar en la pista restante y aplicar frenos",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Efectuar un viraje de ciento ochenta grados para regresar a la cabecera opuesta",
+        "text": "Subir los flaps de inmediato para prolongar la sustentación aerodinámica",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Intentar tres reencendidos de motor continuados con el arrancador eléctrico",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Bajar el morro, mantener eje de pista, aterrizar en la pista restante y aplicar frenos",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Subir los flaps de inmediato para prolongar la sustentación aerodinámica",
+        "text": "Efectuar un viraje de ciento ochenta grados para regresar a la cabecera opuesta",
         "is_correct": false
       }
     ],
@@ -1342,8 +1342,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Flaps LAND, velocidad mínima de control, tocar a nivel de copas de árboles y cortar master",
-        "is_correct": true
+        "text": "Desconectar los alerones para permitir el giro libre de las semialas",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1357,8 +1357,8 @@
       },
       {
         "id": "D",
-        "text": "Desconectar los alerones para permitir el giro libre de las semialas",
-        "is_correct": false
+        "text": "Flaps LAND, velocidad mínima de control, tocar a nivel de copas de árboles y cortar master",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1379,22 +1379,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Mantener control de vuelo, no intentar cerrarla forzadamente y aterrizar en circuito",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Soltarse el cinturón de seguridad e intentar cerrarla de un golpe seco en ascenso",
+        "text": "Apagar inmediatamente las pantallas de aviónica para evitar falsas alarmas",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Efectuar un picado pronunciado para crear presión negativa que la cierre",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Mantener control de vuelo, no intentar cerrarla forzadamente y aterrizar en circuito",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Apagar inmediatamente las pantallas de aviónica para evitar falsas alarmas",
+        "text": "Soltarse el cinturón de seguridad e intentar cerrarla de un golpe seco en ascenso",
         "is_correct": false
       }
     ],
@@ -1416,23 +1416,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Mantener el control direccional mediante frenado diferencial sobre la rueda contraria",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Aplicar potencia máxima de motor para forzar el giro del avión en pista",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Tirar de la palanca de mandos a tope atrás para levantar el morro del suelo",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Desconectar la batería principal para liberar los servos del piloto automático",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aplicar potencia máxima de motor para forzar el giro del avión en pista",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mantener el control direccional mediante frenado diferencial sobre la rueda contraria",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1453,23 +1453,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Aumentar la velocidad de vuelo para incrementar el flujo de aire y abrir calefacción",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Reducir la velocidad al límite de pérdida para evitar la fricción aerodinámica",
+        "text": "Apagar el piloto automático y cortar las bombas mecánicas de inyección",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Cerrar completamente todas las tomas de aire de refrigeración del radiador",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Apagar el piloto automático y cortar las bombas mecánicas de inyección",
+        "id": "C",
+        "text": "Reducir la velocidad al límite de pérdida para evitar la fricción aerodinámica",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aumentar la velocidad de vuelo para incrementar el flujo de aire y abrir calefacción",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1490,18 +1490,18 @@
     "options": [
       {
         "id": "A",
-        "text": "El FADEC mantiene el último ajuste de potencia válido permitiendo aterrizar por control de altitud",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "El motor se apaga automáticamente por seguridad en los siguientes cinco segundos",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "La hélice pasa instantáneamente a posición de bandera irreversible",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El FADEC mantiene el último ajuste de potencia válido permitiendo aterrizar por control de altitud",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1532,17 +1532,17 @@
       },
       {
         "id": "B",
-        "text": "Aplicar el freno de estacionamiento bruscamente antes del contacto de ruedas",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Tocar tierra con la rueda de morro en primer lugar para frenar con la fricción",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Efectuar giros en ese sobre la pista a alta velocidad para disipar energía",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aplicar el freno de estacionamiento bruscamente antes del contacto de ruedas",
         "is_correct": false
       }
     ],
@@ -1564,13 +1564,13 @@
     "options": [
       {
         "id": "A",
-        "text": "No rearmarlo en vuelo si huele a quemado o si salta de nuevo tras un primer intento prudente",
-        "is_correct": true
+        "text": "Sujetarlo firmemente con cinta adhesiva para obligar al motor a continuar operando",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Sujetarlo firmemente con cinta adhesiva para obligar al motor a continuar operando",
-        "is_correct": false
+        "text": "No rearmarlo en vuelo si huele a quemado o si salta de nuevo tras un primer intento prudente",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1601,8 +1601,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Ajustar potencia conocida de aproximación y actitud de cabeceo de descenso estándar",
-        "is_correct": true
+        "text": "Apagar todas las pantallas Garmin y volar exclusivamente por referencias auditivas",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1611,12 +1611,12 @@
       },
       {
         "id": "C",
-        "text": "Descender a máxima potencia confiando en la indicación del GPS de a bordo",
-        "is_correct": false
+        "text": "Ajustar potencia conocida de aproximación y actitud de cabeceo de descenso estándar",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "Apagar todas las pantallas Garmin y volar exclusivamente por referencias auditivas",
+        "text": "Descender a máxima potencia confiando en la indicación del GPS de a bordo",
         "is_correct": false
       }
     ],
@@ -1648,12 +1648,12 @@
       },
       {
         "id": "C",
-        "text": "Una hora completa de vuelo continuado a régimen de crucero económico",
+        "text": "El motor diésel no se ve afectado por la pérdida del circuito refrigerante",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "El motor diésel no se ve afectado por la pérdida del circuito refrigerante",
+        "text": "Una hora completa de vuelo continuado a régimen de crucero económico",
         "is_correct": false
       }
     ],

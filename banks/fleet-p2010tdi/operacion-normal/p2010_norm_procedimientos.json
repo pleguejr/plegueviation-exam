@@ -7,23 +7,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Activar el Engine Master y esperar a que la luz indicadora de calentadores se apague en el panel antes de accionar el interruptor de arranque",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Accionar el arranque inmediatamente mientras la luz de calentadores parpadea a alta velocidad",
+        "text": "Mantener pulsado el interruptor FADEC TEST mientras se gira la llave de contacto, manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Bombear la palanca de potencia 3 veces hacia adelante y hacia atrás, requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Mantener pulsado el interruptor FADEC TEST mientras se gira la llave de contacto, manteniendo el cumplimiento de las limitaciones operacionales del manual",
+        "id": "C",
+        "text": "Accionar el arranque inmediatamente mientras la luz de calentadores parpadea a alta velocidad",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Activar el Engine Master y esperar a que la luz indicadora de calentadores se apague en el panel antes de accionar el interruptor de arranque",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -44,22 +44,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Máximo 10 segundos continuos de accionamiento, seguido de al menos 20 segundos de enfriamiento (máximo 3 intentos consecutivos antes de 15 minutos de descanso)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Máximo 15 segundos continuos de accionamiento, seguido de al menos 15 segundos de enfriamiento (máximo 1 intentos consecutivos antes de 10 minutos de descanso)",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Máximo 5 segundos continuos de accionamiento, seguido de al menos 30 segundos de enfriamiento (máximo 13 intentos consecutivos antes de 25 minutos de descanso)",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Máximo 20 segundos continuos de accionamiento, seguido de al menos 10 segundos de enfriamiento (máximo 1 intentos consecutivos antes de 5 minutos de descanso)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Máximo 10 segundos continuos de accionamiento, seguido de al menos 20 segundos de enfriamiento (máximo 3 intentos consecutivos antes de 15 minutos de descanso)",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Máximo 15 segundos continuos de accionamiento, seguido de al menos 15 segundos de enfriamiento (máximo 1 intentos consecutivos antes de 10 minutos de descanso)",
         "is_correct": false
       }
     ],
@@ -81,22 +81,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Con motor en ralentí y parámetros en arco verde, pulsar y mantener el botón 'FADEC TEST'; el sistema incrementa automáticamente las RPM a ~2300 (100% Load), conmuta entre el Canal A y Canal B verificando ambos, y retorna automáticamente a ralentí",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Con motor en ralentí y parámetros en arco verde, pulsar y mantener el botón 'FADEC TEST'; el sistema incrementa automáticamente las RPM a ~2310 (110% Load), conmuta entre el Canal A y Canal B verificando ambos, y retorna automáticamente a ralentí",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Con motor en ralentí y parámetros en arco verde, pulsar y mantener el botón 'FADEC TEST'; el sistema incrementa automáticamente las RPM a ~2280 (80% Load), conmuta entre el Canal A y Canal B verificando ambos, y retorna automáticamente a ralentí",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "Con motor en ralentí y parámetros en arco verde, pulsar y mantener el botón 'FADEC TEST'; el sistema incrementa automáticamente las RPM a ~2300 (100% Load), conmuta entre el Canal A y Canal B verificando ambos, y retorna automáticamente a ralentí",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "Con motor en ralentí y parámetros en arco verde, pulsar y mantener el botón 'FADEC TEST'; el sistema incrementa automáticamente las RPM a ~2330 (130% Load), conmuta entre el Canal A y Canal B verificando ambos, y retorna automáticamente a ralentí",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Con motor en ralentí y parámetros en arco verde, pulsar y mantener el botón 'FADEC TEST'; el sistema incrementa automáticamente las RPM a ~2310 (110% Load), conmuta entre el Canal A y Canal B verificando ambos, y retorna automáticamente a ralentí",
         "is_correct": false
       }
     ],
@@ -118,13 +118,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Vr (Flap T/O): 60 KIAS; Vx (Flaps UP): 74 KIAS; Vy (Flaps UP): 79 KIAS",
-        "is_correct": true
+        "text": "Vr (Flap T/O): 70 KIAS; Vx (Flaps UP): 84 KIAS; Vy (Flaps UP): 89 KIAS",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Vr (Flap T/O): 70 KIAS; Vx (Flaps UP): 84 KIAS; Vy (Flaps UP): 89 KIAS",
-        "is_correct": false
+        "text": "Vr (Flap T/O): 60 KIAS; Vx (Flaps UP): 74 KIAS; Vy (Flaps UP): 79 KIAS",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -160,12 +160,12 @@
       },
       {
         "id": "B",
-        "text": "65 KIAS",
+        "text": "85 KIAS",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "85 KIAS",
+        "text": "65 KIAS",
         "is_correct": false
       },
       {
@@ -192,12 +192,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Flaps: UP; Velocidad: 85-90 KIAS; Potencia: 91% Load; Fuel Pump: OFF",
-        "is_correct": true
+        "text": "Flaps: T/O; Velocidad: 70 KIAS; Potencia: 100% Load continuo",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Flaps: T/O; Velocidad: 70 KIAS; Potencia: 100% Load continuo",
+        "text": "Flaps: UP; Velocidad: 115-120 KIAS; Potencia: 121% Load (Max Continuous Power); Fuel Pump: OFF",
         "is_correct": false
       },
       {
@@ -207,8 +207,8 @@
       },
       {
         "id": "D",
-        "text": "Flaps: UP; Velocidad: 115-120 KIAS; Potencia: 121% Load (Max Continuous Power); Fuel Pump: OFF",
-        "is_correct": false
+        "text": "Flaps: UP; Velocidad: 85-90 KIAS; Potencia: 91% Load; Fuel Pump: OFF",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -229,8 +229,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Aproximadamente 24 a 28 litros por hora",
-        "is_correct": true
+        "text": "Aproximadamente 12 a 16 litros por hora",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -239,13 +239,13 @@
       },
       {
         "id": "C",
-        "text": "Aproximadamente 12 a 16 litros por hora",
+        "text": "Aproximadamente 34 a 38 litros por hora",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Aproximadamente 34 a 38 litros por hora",
-        "is_correct": false
+        "text": "Aproximadamente 24 a 28 litros por hora",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -271,17 +271,17 @@
       },
       {
         "id": "B",
-        "text": "Final Approach Speed (Vref Flaps LAND): 70 KIAS; Optimal Touch Down Speed: 51 KIAS",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Final Approach Speed (Vref Flaps LAND): 60 KIAS; Optimal Touch Down Speed: 66 KIAS",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Final Approach Speed (Vref Flaps LAND): 75 KIAS; Optimal Touch Down Speed: 46 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Final Approach Speed (Vref Flaps LAND): 70 KIAS; Optimal Touch Down Speed: 51 KIAS",
         "is_correct": false
       }
     ],
@@ -303,17 +303,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Mantener potencia de aproximación (40% Load), flaps en posición LAND y realizar el ascenso con el avisador de pérdida sonando continuo",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Palanca de potencia FULL (100% Load), flaps inmediatamente a T/O (15°), acelerar a 65 KIAS y tras superar obstáculos y en ascenso positivo retraer flaps a 0°",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "Cortar gases a ralentí, desplegar flaps a LAND (40°), picar el morro para alcanzar 90 KIAS y realizar un viraje de 180 grados",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Mantener potencia de aproximación (40% Load), flaps en posición LAND y realizar el ascenso con el avisador de pérdida sonando continuo",
+        "text": "Cortar gases a ralentí, desplegar flaps a LAND (40°), picar el morro para alcanzar 90 KIAS y realizar un viraje de 180 grados",
         "is_correct": false
       },
       {
@@ -340,13 +340,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Mantener el motor en ralentí durante al menos 1 a 2 minutos para permitir la estabilización térmica del turbocompresor",
-        "is_correct": true
+        "text": "Apagar la bomba eléctrica y esperar a que el motor se detenga por inanición, manteniendo el cumplimiento de las limitaciones operacionales del manual",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Acelerar al 80% Load durante 30 segundos y cortar el contacto de inmediato",
-        "is_correct": false
+        "text": "Mantener el motor en ralentí durante al menos 1 a 2 minutos para permitir la estabilización térmica del turbocompresor",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -355,7 +355,7 @@
       },
       {
         "id": "D",
-        "text": "Apagar la bomba eléctrica y esperar a que el motor se detenga por inanición, manteniendo el cumplimiento de las limitaciones operacionales del manual",
+        "text": "Acelerar al 80% Load durante 30 segundos y cortar el contacto de inmediato",
         "is_correct": false
       }
     ],
@@ -377,18 +377,18 @@
     "options": [
       {
         "id": "A",
-        "text": "Se selecciona LEFT o RIGHT alternando periódicamente para mantener el equilibrio lateral del avión",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Se coloca en la posición 'BOTH' durante todas las fases de vuelo de manera continua",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Se mantiene en posición LEFT durante el ascenso y en RIGHT durante el descenso exclusivamente",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se selecciona LEFT o RIGHT alternando periódicamente para mantener el equilibrio lateral del avión",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -414,12 +414,12 @@
     "options": [
       {
         "id": "A",
-        "text": "En el arranque de motor, despegue, ascenso inicial, aproximación, aterrizaje y siempre que se cambie de tanque de combustible",
-        "is_correct": true
+        "text": "Únicamente durante el vuelo de crucero nivelado por encima de diez mil pies de altitud de presión",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Únicamente durante el vuelo de crucero nivelado por encima de diez mil pies de altitud de presión",
+        "text": "Exclusivamente cuando la presión en la rampa Common Rail supere los mil quinientos bares de potencia",
         "is_correct": false
       },
       {
@@ -429,8 +429,8 @@
       },
       {
         "id": "D",
-        "text": "Exclusivamente cuando la presión en la rampa Common Rail supere los mil quinientos bares de potencia",
-        "is_correct": false
+        "text": "En el arranque de motor, despegue, ascenso inicial, aproximación, aterrizaje y siempre que se cambie de tanque de combustible",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -456,12 +456,12 @@
       },
       {
         "id": "B",
-        "text": "Colocar la válvula selectora en OFF y encender la bomba eléctrica auxiliar durante la medición",
+        "text": "Comprobar el nivel únicamente con el motor en marcha a 1.400 RPM y freno de mano accionado",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Comprobar el nivel únicamente con el motor en marcha a 1.400 RPM y freno de mano accionado",
+        "text": "Colocar la válvula selectora en OFF y encender la bomba eléctrica auxiliar durante la medición",
         "is_correct": false
       },
       {
@@ -488,8 +488,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Flaps: T/O (15°); Aplicar frenos, acelerar al 100% Load verificando parámetros de motor estables; Soltar frenos, rotar a 60 KIAS y mantener velocidad de franqueamiento hasta 50 ft",
-        "is_correct": true
+        "text": "Flaps: T/O (11°); Aplicar frenos, acelerar al 80% Load verificando parámetros de motor estables; Soltar frenos, rotar a 40 KIAS y mantener velocidad de franqueamiento hasta 46 ft",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -498,13 +498,13 @@
       },
       {
         "id": "C",
-        "text": "Flaps: T/O (11°); Aplicar frenos, acelerar al 80% Load verificando parámetros de motor estables; Soltar frenos, rotar a 40 KIAS y mantener velocidad de franqueamiento hasta 46 ft",
+        "text": "Flaps: T/O (21°); Aplicar frenos, acelerar al 130% Load verificando parámetros de motor estables; Soltar frenos, rotar a 90 KIAS y mantener velocidad de franqueamiento hasta 56 ft",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Flaps: T/O (21°); Aplicar frenos, acelerar al 130% Load verificando parámetros de motor estables; Soltar frenos, rotar a 90 KIAS y mantener velocidad de franqueamiento hasta 56 ft",
-        "is_correct": false
+        "text": "Flaps: T/O (15°); Aplicar frenos, acelerar al 100% Load verificando parámetros de motor estables; Soltar frenos, rotar a 60 KIAS y mantener velocidad de franqueamiento hasta 50 ft",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -562,22 +562,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Mantener pulsado FADEC TEST: las RPM aumentan automáticamente a ~1900 RPM y conmutan los canales A y B",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Pulsar brevemente: el motor se apaga durante 3 segundos para calibrar los inyectores piezoeléctricos",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Avanzar palanca al 100% y pulsar: la presión de admisión se reduce a cero para verificar el turbo",
+        "id": "B",
+        "text": "Mantener pulsado con palanca en IDLE: las RPM se reducen a 500 RPM para comprobar el ralentí mínimo",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Mantener pulsado FADEC TEST: las RPM aumentan automáticamente a ~1900 RPM y conmutan los canales A y B",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Mantener pulsado con palanca en IDLE: las RPM se reducen a 500 RPM para comprobar el ralentí mínimo",
+        "text": "Avanzar palanca al 100% y pulsar: la presión de admisión se reduce a cero para verificar el turbo",
         "is_correct": false
       }
     ],
@@ -599,23 +599,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Mantener el motor en ralentí durante al menos 2 minutos antes de seleccionar Engine Master en OFF",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Apagar inmediatamente el motor tras estacionar sin necesidad de período de enfriamiento",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Acelerar a 1.500 RPM durante 5 minutos con la calefacción de cabina abierta al máximo",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Desconectar la bomba eléctrica y apagar el alternador manteniendo el motor a 1.200 RPM",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Apagar inmediatamente el motor tras estacionar sin necesidad de período de enfriamiento",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mantener el motor en ralentí durante al menos 2 minutos antes de seleccionar Engine Master en OFF",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -646,12 +646,12 @@
       },
       {
         "id": "C",
-        "text": "Flap LAND, frenos aplicados al 70% Load, soltar frenos, rotar a 50 KIAS y mantener 60 KIAS",
+        "text": "Flap T/O, aplicar potencia progresiva en 20 segundos, rotar a 60 KIAS y ascender a 90 KIAS",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Flap T/O, aplicar potencia progresiva en 20 segundos, rotar a 60 KIAS y ascender a 90 KIAS",
+        "text": "Flap LAND, frenos aplicados al 70% Load, soltar frenos, rotar a 50 KIAS y mantener 60 KIAS",
         "is_correct": false
       }
     ],
@@ -710,8 +710,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Palanca de potencia al 100% Load, Flap en posición T/O, ascender a 65 KIAS y retraer a Flap UP a 75 KIAS",
-        "is_correct": true
+        "text": "Pulsar FADEC FORCE B, ascender a 60 KIAS con Flap LAND hasta alcanzar la altitud de crucero",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -725,8 +725,8 @@
       },
       {
         "id": "D",
-        "text": "Pulsar FADEC FORCE B, ascender a 60 KIAS con Flap LAND hasta alcanzar la altitud de crucero",
-        "is_correct": false
+        "text": "Palanca de potencia al 100% Load, Flap en posición T/O, ascender a 65 KIAS y retraer a Flap UP a 75 KIAS",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -747,8 +747,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Despegue, aterrizaje, conmutación de tanque de combustible y maniobras a baja cota",
-        "is_correct": true
+        "text": "Solo cuando la indicación de presión de combustible en cabina entre en arco rojo",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -762,8 +762,8 @@
       },
       {
         "id": "D",
-        "text": "Solo cuando la indicación de presión de combustible en cabina entre en arco rojo",
-        "is_correct": false
+        "text": "Despegue, aterrizaje, conmutación de tanque de combustible y maniobras a baja cota",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -789,17 +789,17 @@
       },
       {
         "id": "B",
-        "text": "Consumir completamente el tanque LEFT antes de conmutar por primera vez al tanque RIGHT",
+        "text": "Conmutar de tanque únicamente en el descenso final antes de iniciar la aproximación",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Mantener el selector en posición BOTH durante todo el vuelo sin manipular la válvula",
+        "text": "Consumir completamente el tanque LEFT antes de conmutar por primera vez al tanque RIGHT",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Conmutar de tanque únicamente en el descenso final antes de iniciar la aproximación",
+        "text": "Mantener el selector en posición BOTH durante todo el vuelo sin manipular la válvula",
         "is_correct": false
       }
     ],
@@ -821,8 +821,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Deflexión de alerones hacia el lado del viento, corregir guiñada con timón de dirección y rotar limpiamente a 60 KIAS",
-        "is_correct": true
+        "text": "Mantener mandos en posición neutral y retrasar la rotación hasta alcanzar la velocidad de maniobra Va (119 KIAS)",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -831,8 +831,8 @@
       },
       {
         "id": "C",
-        "text": "Mantener mandos en posición neutral y retrasar la rotación hasta alcanzar la velocidad de maniobra Va (119 KIAS)",
-        "is_correct": false
+        "text": "Deflexión de alerones hacia el lado del viento, corregir guiñada con timón de dirección y rotar limpiamente a 60 KIAS",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -858,23 +858,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Temperatura de refrigerante mínima: 60°C | Temperatura de aceite mínima: 50°C",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Temperatura de refrigerante mínima: 40°C | Temperatura de aceite mínima: 30°C",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Temperatura de refrigerante mínima: 75°C | Temperatura de aceite mínima: 70°C",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Temperatura de refrigerante mínima: 50°C | Temperatura de aceite mínima: 60°C",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Temperatura de refrigerante mínima: 60°C | Temperatura de aceite mínima: 50°C",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -895,13 +895,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Mantener Cabin Heat / Defrost en OFF para evitar introducir aire caliente y optimizar la refrigeración del motor",
-        "is_correct": true
+        "text": "Abrir la calefacción al máximo para disipar el calor del radiador hacia la cabina en todo momento",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Abrir la calefacción al máximo para disipar el calor del radiador hacia la cabina en todo momento",
-        "is_correct": false
+        "text": "Mantener Cabin Heat / Defrost en OFF para evitar introducir aire caliente y optimizar la refrigeración del motor",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -932,17 +932,17 @@
     "options": [
       {
         "id": "A",
+        "text": "110 nudos indicados para alcanzar rápidamente el nivel de crucero",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "85 nudos indicados para garantizar refrigeración óptima del motor",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "65 nudos indicados para maximizar el ángulo de ascenso inicial",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "110 nudos indicados para alcanzar rápidamente el nivel de crucero",
+        "text": "65 nudos indicados para maximizar el ángulo de ascenso inicial",
         "is_correct": false
       },
       {
@@ -969,8 +969,8 @@
     "options": [
       {
         "id": "A",
-        "text": "65 por ciento de carga de motor en la indicación digital del FADEC",
-        "is_correct": true
+        "text": "80 por ciento de carga de motor en la indicación digital del FADEC",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -984,8 +984,8 @@
       },
       {
         "id": "D",
-        "text": "80 por ciento de carga de motor en la indicación digital del FADEC",
-        "is_correct": false
+        "text": "65 por ciento de carga de motor en la indicación digital del FADEC",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1006,13 +1006,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Tres puntos de drenaje situados bajo cada ala y en el decantador de gasoil",
-        "is_correct": true
+        "text": "Un solo punto de drenaje ubicado bajo el morro del avión",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Un solo punto de drenaje ubicado bajo el morro del avión",
-        "is_correct": false
+        "text": "Tres puntos de drenaje situados bajo cada ala y en el decantador de gasoil",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1080,22 +1080,22 @@
     "options": [
       {
         "id": "A",
-        "text": "2.2 bar de presión de inflado en la rueda delantera",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "3.5 bar de presión de inflado en la rueda delantera",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "1.5 bar de presión de inflado en la rueda delantera",
+        "id": "B",
+        "text": "4.0 bar de presión de inflado en la rueda delantera",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "2.2 bar de presión de inflado en la rueda delantera",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "4.0 bar de presión de inflado en la rueda delantera",
+        "text": "1.5 bar de presión de inflado en la rueda delantera",
         "is_correct": false
       }
     ],
@@ -1117,8 +1117,8 @@
     "options": [
       {
         "id": "A",
-        "text": "84 nudos indicados con flaps recogidos para máxima distancia",
-        "is_correct": true
+        "text": "95 nudos indicados con flaps recogidos para máxima distancia",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1127,8 +1127,8 @@
       },
       {
         "id": "C",
-        "text": "95 nudos indicados con flaps recogidos para máxima distancia",
-        "is_correct": false
+        "text": "84 nudos indicados con flaps recogidos para máxima distancia",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1154,18 +1154,18 @@
     "options": [
       {
         "id": "A",
-        "text": "En aproximación final estabilizada una vez asegurado el aterrizaje en pista",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "En el tramo de viento en cola antes de iniciar el descenso de altitud",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Al cruzar el punto de aproximación frustrada en aproximación instrumental",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En aproximación final estabilizada una vez asegurado el aterrizaje en pista",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1191,13 +1191,13 @@
     "options": [
       {
         "id": "A",
-        "text": "55 nudos indicados manteniendo la rueda de morro aliviada del terreno",
-        "is_correct": true
+        "text": "65 nudos indicados aplicando frenos hasta alcanzar velocidad de vuelo",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "65 nudos indicados aplicando frenos hasta alcanzar velocidad de vuelo",
-        "is_correct": false
+        "text": "55 nudos indicados manteniendo la rueda de morro aliviada del terreno",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1228,17 +1228,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Calibrar manualmente el sensor magnético del compás en cada vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Verificar la base de datos de navegación en vigor y ausencia de avisos en el PFD",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "Comprobar la sintonización de todas las emisoras comerciales de FM",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Calibrar manualmente el sensor magnético del compás en cada vuelo",
+        "text": "Comprobar la sintonización de todas las emisoras comerciales de FM",
         "is_correct": false
       },
       {
@@ -1265,12 +1265,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Añadir la mitad del factor de racha de viento hasta un máximo de diez nudos",
-        "is_correct": true
+        "text": "Añadir la velocidad total de la racha multiplicada por el ángulo de deriva",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Añadir la velocidad total de la racha multiplicada por el ángulo de deriva",
+        "text": "Mantener exactamente 60 nudos sin aplicar corrección alguna por viento",
         "is_correct": false
       },
       {
@@ -1280,8 +1280,8 @@
       },
       {
         "id": "D",
-        "text": "Mantener exactamente 60 nudos sin aplicar corrección alguna por viento",
-        "is_correct": false
+        "text": "Añadir la mitad del factor de racha de viento hasta un máximo de diez nudos",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1302,8 +1302,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Cerrado para evitar introducir aire caliente innecesario a la cabina",
-        "is_correct": true
+        "text": "En posición intermedia para alimentar los sistemas antivaho de cristales",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1312,8 +1312,8 @@
       },
       {
         "id": "C",
-        "text": "En posición intermedia para alimentar los sistemas antivaho de cristales",
-        "is_correct": false
+        "text": "Cerrado para evitar introducir aire caliente innecesario a la cabina",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1344,17 +1344,17 @@
       },
       {
         "id": "B",
-        "text": "Ajustarlo completamente a tope de morro abajo antes de arrancar el motor",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Desconectar permanentemente el pulsador del volante de control",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Verificar que el compensador mecánico trabaje en sentido opuesto al eléctrico",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Ajustarlo completamente a tope de morro abajo antes de arrancar el motor",
         "is_correct": false
       }
     ],
@@ -1376,22 +1376,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Comprobar que se iluminan los avisos de advertencia FADEC A y B en el panel",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Reiniciar la memoria no volátil del ordenador del motor en tierra",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Activar la descarga preventiva del extintor de la bahía del motor",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Verificar la iluminación de las luces de navegación de las puntas de ala",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Comprobar que se iluminan los avisos de advertencia FADEC A y B en el panel",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Reiniciar la memoria no volátil del ordenador del motor en tierra",
         "is_correct": false
       }
     ],
@@ -1413,23 +1413,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Regula simultáneamente la inyección y el paso de hélice de forma electrónica",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Controla únicamente la mariposa de admisión de aire dejando la mezcla manual",
+        "text": "Modifica la presión de sobrealimentación mediante varillas mecánicas directas",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Requiere ajustar manualmente la palanca azul de paso de hélice en cada cambio",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Modifica la presión de sobrealimentación mediante varillas mecánicas directas",
+        "id": "C",
+        "text": "Controla únicamente la mariposa de admisión de aire dejando la mezcla manual",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Regula simultáneamente la inyección y el paso de hélice de forma electrónica",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1455,17 +1455,17 @@
       },
       {
         "id": "B",
-        "text": "Cortar inmediatamente la llave de contacto del motor antes de iniciar el rodaje",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Seleccionar el selector de combustible en posición OFF de inmediato",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Mantener los flaps en posición de aterrizaje hasta llegar al hangar de guarda",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cortar inmediatamente la llave de contacto del motor antes de iniciar el rodaje",
         "is_correct": false
       }
     ],

@@ -12,7 +12,7 @@
       },
       {
         "id": "B",
-        "text": "Clase 1: Alimentos | Clase 2: Animales | Clase 3: Maletas | Clase 4: Pasajeros | Clase 5: Combustible | Clase 6: Aceite | Clase 7: Agua | Clase 8: Hielo | Clase 9: Ropa",
+        "text": "No existen 9 clases siendo solo dos: permitidas o prohibidas",
         "is_correct": false
       },
       {
@@ -22,7 +22,7 @@
       },
       {
         "id": "D",
-        "text": "No existen 9 clases siendo solo dos: permitidas o prohibidas",
+        "text": "Clase 1: Alimentos | Clase 2: Animales | Clase 3: Maletas | Clase 4: Pasajeros | Clase 5: Combustible | Clase 6: Aceite | Clase 7: Agua | Clase 8: Hielo | Clase 9: Ropa",
         "is_correct": false
       }
     ],
@@ -44,18 +44,18 @@
     "options": [
       {
         "id": "A",
-        "text": "La Notificación al Comandante (**NOTOC - Notification to Captain**), detallando el número UN, nombre de expedición, clase, cantidad neta, ubicación en bodega y grupo de embalaje",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "La factura comercial del transporte de carga",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "El billete de avión de los pasajeros de la fila 1",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La Notificación al Comandante (**NOTOC - Notification to Captain**), detallando el número UN, nombre de expedición, clase, cantidad neta, ubicación en bodega y grupo de embalaje",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -86,12 +86,12 @@
       },
       {
         "id": "B",
-        "text": "Grupo I es el más seguro y Grupo III el más peligroso",
+        "text": "Los grupos indican el tamaño de la caja en metros cúbicos",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Los grupos indican el tamaño de la caja en metros cúbicos",
+        "text": "Grupo I es el más seguro y Grupo III el más peligroso",
         "is_correct": false
       },
       {
@@ -118,23 +118,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Máximo **5 kg de peso bruto por pasajero** de munición de la División 1.4S (cartuchería deportiva), exclusivamente en bodega, en su embalaje original seguro y sin mezclar con bultos de otros pasajeros",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Hasta 50 kg de explosivos en cabina de pasajeros",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Las armas pueden viajar cargadas en el bolsillo del pasajero",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Está prohibido el transporte de cualquier cartucho bajo cualquier circunstancia",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Hasta 50 kg de explosivos en cabina de pasajeros",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Máximo **5 kg de peso bruto por pasajero** de munición de la División 1.4S (cartuchería deportiva), exclusivamente en bodega, en su embalaje original seguro y sin mezclar con bultos de otros pasajeros",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -155,13 +155,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Deben transportarse **exclusivamente en el equipaje de mano / cabina de pasajeros** (máximo 100 Wh o hasta 160 Wh con permiso), estando **terminantemente prohibidas en el equipaje facturado en bodega**",
-        "is_correct": true
+        "text": "Se permite llevar 50 Power Banks por pasajero en cualquier lugar",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Deben transportarse en el fondo de las maletas facturadas en bodega",
-        "is_correct": false
+        "text": "Deben transportarse **exclusivamente en el equipaje de mano / cabina de pasajeros** (máximo 100 Wh o hasta 160 Wh con permiso), estando **terminantemente prohibidas en el equipaje facturado en bodega**",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -170,7 +170,7 @@
       },
       {
         "id": "D",
-        "text": "Se permite llevar 50 Power Banks por pasajero en cualquier lugar",
+        "text": "Deben transportarse en el fondo de las maletas facturadas en bodega",
         "is_correct": false
       }
     ],
@@ -192,23 +192,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Indican las acciones específicas de respuesta, tipo de extintor adecuado, riesgo de gases tóxicos y procedimientos de emergencia en vuelo para cada mercancía en caso de fuga o fuego",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "El precio de reposición del paquete en caso de rotura",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "La matrícula del camión que transportó el bulto",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "El número de teléfono del fabricante de la mercancía",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Indican las acciones específicas de respuesta, tipo de extintor adecuado, riesgo de gases tóxicos y procedimientos de emergencia en vuelo para cada mercancía en caso de fuga o fuego",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -229,8 +229,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Se sublima a gas dióxido de carbono (CO2), el cual desplaza al oxígeno en bodegas cerradas y puede filtrarse a la cabina provocando asfixia e intoxicación por hipercapnia en personas o animales vivos (AVIH)",
-        "is_correct": true
+        "text": "No presenta ningún riesgo siendo agua congelada",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -239,12 +239,12 @@
       },
       {
         "id": "C",
-        "text": "Calienta el avión derritiendo el tren de aterrizaje",
-        "is_correct": false
+        "text": "Se sublima a gas dióxido de carbono (CO2), el cual desplaza al oxígeno en bodegas cerradas y puede filtrarse a la cabina provocando asfixia e intoxicación por hipercapnia en personas o animales vivos (AVIH)",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "No presenta ningún riesgo siendo agua congelada",
+        "text": "Calienta el avión derritiendo el tren de aterrizaje",
         "is_correct": false
       }
     ],
@@ -266,13 +266,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Paralizar la carga de inmediato, no tocar el bulto con las manos desnudas, aislar la zona y notificar a los servicios de bomberos SEI y al coordinador de handling",
-        "is_correct": true
+        "text": "Limpiar el líquido con un paño de papel y meter la caja rota en la bodega",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Limpiar el líquido con un paño de papel y meter la caja rota en la bodega",
-        "is_correct": false
+        "text": "Paralizar la carga de inmediato, no tocar el bulto con las manos desnudas, aislar la zona y notificar a los servicios de bomberos SEI y al coordinador de handling",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -308,12 +308,12 @@
       },
       {
         "id": "B",
-        "text": "Cualquier agente puede subir armado sin avisar a la tripulación",
+        "text": "Los agentes deben entregar el arma a los pasajeros de la primera fila",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Los agentes deben entregar el arma a los pasajeros de la primera fila",
+        "text": "Cualquier agente puede subir armado sin avisar a la tripulación",
         "is_correct": false
       },
       {
@@ -340,23 +340,23 @@
     "options": [
       {
         "id": "A",
-        "text": "En un plazo máximo no superior a **72 horas** a través del sistema de notificación obligatoria de sucesos (ASR / MOR), salvo accidente que exige reporte inmediato",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "En un plazo de 6 meses",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "No se notifica si la mercancía era de bajo valor",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "En un plazo de 10 años",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En un plazo máximo no superior a **72 horas** a través del sistema de notificación obligatoria de sucesos (ASR / MOR), salvo accidente que exige reporte inmediato",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -382,17 +382,17 @@
       },
       {
         "id": "B",
-        "text": "División 1.1 (sustancias con riesgo de explosión en masa)",
+        "text": "División 1.3 (sustancias con riesgo de gran incendio)",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "División 1.2 (sustancias con riesgo de proyección grave)",
+        "text": "División 1.1 (sustancias con riesgo de explosión en masa)",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "División 1.3 (sustancias con riesgo de gran incendio)",
+        "text": "División 1.2 (sustancias con riesgo de proyección grave)",
         "is_correct": false
       }
     ],
@@ -424,12 +424,12 @@
       },
       {
         "id": "C",
-        "text": "División 2.1: Gases ligeros | División 2.2: Gases pesados",
+        "text": "No tiene divisiones",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No tiene divisiones",
+        "text": "División 2.1: Gases ligeros | División 2.2: Gases pesados",
         "is_correct": false
       }
     ],
@@ -461,12 +461,12 @@
       },
       {
         "id": "C",
-        "text": "Líquidos que hierven a más de 500°C",
+        "text": "Líquidos mezclados con miel",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Líquidos mezclados con miel",
+        "text": "Líquidos que hierven a más de 500°C",
         "is_correct": false
       }
     ],
@@ -488,23 +488,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Categoría A: Patógenos capaces de causar discapacidad permanente o muerte a seres humanos o animales sanos al exponerse | Categoría B: Muestras biológicas diagnósticas que no cumplen los criterios de Categoría A",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Categoría A son antibióticos y Categoría B son vitaminas",
+        "text": "No existe diferencia siendo dos números de registro postal",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Categoría A es para perros y Categoría B para gatos",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "No existe diferencia siendo dos números de registro postal",
+        "id": "C",
+        "text": "Categoría A son antibióticos y Categoría B son vitaminas",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Categoría A: Patógenos capaces de causar discapacidad permanente o muerte a seres humanos o animales sanos al exponerse | Categoría B: Muestras biológicas diagnósticas que no cumplen los criterios de Categoría A",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -525,22 +525,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Representa la tasa máxima de radiación ionizante medida a 1 metro de distancia de la superficie del bulto, utilizada para fijar límites de estiba y segregación",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "El precio del transporte en euros por kilogramo",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "La velocidad a la que debe viajar el avión",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "Representa la tasa máxima de radiación ionizante medida a 1 metro de distancia de la superficie del bulto, utilizada para fijar límites de estiba y segregación",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "El tiempo que tarda el bulto en enfriarse",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El precio del transporte en euros por kilogramo",
         "is_correct": false
       }
     ],
@@ -562,13 +562,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Descargar extintor de agua o halón para extinguir las llamas y a continuación **verter abundante agua u otros líquidos no alcohólicos** para enfriar las celdas de la batería y frenar la fuga térmica",
-        "is_correct": true
+        "text": "Cubrir el teléfono con mantas secas y meterlo en el maletero superior",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Cubrir el teléfono con mantas secas y meterlo en el maletero superior",
-        "is_correct": false
+        "text": "Descargar extintor de agua o halón para extinguir las llamas y a continuación **verter abundante agua u otros líquidos no alcohólicos** para enfriar las celdas de la batería y frenar la fuga térmica",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -599,8 +599,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Porque en caso de fuga accidental combinada reaccionarían violentamente produciendo fuego espontáneo, explosión o emisión masiva de gases venenosos",
-        "is_correct": true
+        "text": "Para que los estibadores de rampa no se confundan de maleta",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -609,8 +609,8 @@
       },
       {
         "id": "C",
-        "text": "Para que los estibadores de rampa no se confundan de maleta",
-        "is_correct": false
+        "text": "Porque en caso de fuga accidental combinada reaccionarían violentamente produciendo fuego espontáneo, explosión o emisión masiva de gases venenosos",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -636,13 +636,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Para que los servicios de emergencia del aeropuerto dispongan de la información inmediata sobre las mercancías peligrosas a bordo en caso de accidente o emergencia en vuelo",
-        "is_correct": true
+        "text": "No es necesario dejar copia en tierra si el piloto la lleva en el FMS",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Para archivarla en el registro de impuestos de la escala",
-        "is_correct": false
+        "text": "Para que los servicios de emergencia del aeropuerto dispongan de la información inmediata sobre las mercancías peligrosas a bordo en caso de accidente o emergencia en vuelo",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -651,7 +651,7 @@
       },
       {
         "id": "D",
-        "text": "No es necesario dejar copia en tierra si el piloto la lleva en el FMS",
+        "text": "Para archivarla en el registro de impuestos de la escala",
         "is_correct": false
       }
     ],
@@ -678,17 +678,17 @@
       },
       {
         "id": "B",
-        "text": "Hacen que la pintura del fuselaje brille en la oscuridad",
+        "text": "No dañan el metal de aviación siendo solo corrosivos para la madera",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Enfrían los neumáticos provocando pérdidas de presión",
+        "text": "Hacen que la pintura del fuselaje brille en la oscuridad",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No dañan el metal de aviación siendo solo corrosivos para la madera",
+        "text": "Enfrían los neumáticos provocando pérdidas de presión",
         "is_correct": false
       }
     ],
@@ -710,12 +710,12 @@
     "options": [
       {
         "id": "A",
-        "text": "UN 3480: Baterías de ion-litio transportadas sueltas a granel | UN 3481: Baterías de ion-litio embaladas con el equipo o contenidas en el equipo electrónico",
-        "is_correct": true
+        "text": "UN 3480 es para aviones de hélice y UN 3481 para reactores",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "UN 3480 es para aviones de hélice y UN 3481 para reactores",
+        "text": "No existe diferencia siendo dos números del mismo fabricante",
         "is_correct": false
       },
       {
@@ -725,8 +725,8 @@
       },
       {
         "id": "D",
-        "text": "No existe diferencia siendo dos números del mismo fabricante",
-        "is_correct": false
+        "text": "UN 3480: Baterías de ion-litio transportadas sueltas a granel | UN 3481: Baterías de ion-litio embaladas con el equipo o contenidas en el equipo electrónico",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -747,22 +747,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Exclusivamente en el equipaje de mano o en persona, estando **prohibida su recarga y uso a bordo**, y prohibido su transporte en el equipaje facturado en bodega",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "En el equipaje facturado en bodega dentro de las maletas",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Conectados a los enchufes USB de cabina cargándose durante el vuelo",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "Exclusivamente en el equipaje de mano o en persona, estando **prohibida su recarga y uso a bordo**, y prohibido su transporte en el equipaje facturado en bodega",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "No se permite su transporte en ningún lugar del avión",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En el equipaje facturado en bodega dentro de las maletas",
         "is_correct": false
       }
     ],
@@ -784,18 +784,18 @@
     "options": [
       {
         "id": "A",
-        "text": "Porque liberan oxígeno fácilmente, estimulando e intensificando violentamente la combustión de otros materiales inflamables incluso en ausencia de aire exterior",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Porque absorben todo el combustible de los depósitos",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Porque enfrían el aire provocando la formación de hielo",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Porque liberan oxígeno fácilmente, estimulando e intensificando violentamente la combustión de otros materiales inflamables incluso en ausencia de aire exterior",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -821,22 +821,22 @@
     "options": [
       {
         "id": "A",
+        "text": "Está prohibido el viaje de cualquier silla de ruedas con batería",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "La batería debe desconectarse, fijarse en posición vertical, desmontarse si no puede mantenerse erguida y embalarse en un contenedor estanco resistente a ácidos con material absorbente",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "La batería debe vaciarse tirando el ácido en la pista",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "La silla debe viajar en el pasillo de cabina de pasaje",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "Está prohibido el viaje de cualquier silla de ruedas con batería",
+        "text": "La silla debe viajar en el pasillo de cabina de pasaje",
         "is_correct": false
       }
     ],
@@ -863,17 +863,17 @@
       },
       {
         "id": "B",
-        "text": "Debe desmontarse y destruirse antes de subir al avión",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Debe viajar en la cabina técnica junto a los pedales de pilotaje",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Se le exige una prueba de fuego con un soplete en rampa",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Debe desmontarse y destruirse antes de subir al avión",
         "is_correct": false
       }
     ],
@@ -895,17 +895,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Se colocan debajo del asiento del sobrecargo",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Están **totalmente prohibidos como equipaje de mano y facturado**, salvo que estén completamente desactivados y certificados formalmente por el fabricante",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "Están permitidos siempre que lleven la alarma conectada",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Se colocan debajo del asiento del sobrecargo",
+        "text": "Están permitidos siempre que lleven la alarma conectada",
         "is_correct": false
       },
       {
@@ -937,7 +937,7 @@
       },
       {
         "id": "B",
-        "text": "Libros de lectura y revistas de papel",
+        "text": "Botellas de agua mineral selladas de 50 cl",
         "is_correct": false
       },
       {
@@ -947,7 +947,7 @@
       },
       {
         "id": "D",
-        "text": "Botellas de agua mineral selladas de 50 cl",
+        "text": "Libros de lectura y revistas de papel",
         "is_correct": false
       }
     ],
@@ -969,23 +969,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Accionar el botón de descarga del extintor de bodega (CARGO BOTTLE), iniciar descenso inmediato hacia el aeródromo adecuado más próximo y consultar la NOTOC/Drill Codes",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Abrir la compuerta de la bodega en vuelo para que entre aire fresco",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Continuar el crucero durante 4 horas hasta llegar a destino",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Enviar a un pasajero a la bodega con un cubo de agua",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Abrir la compuerta de la bodega en vuelo para que entre aire fresco",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Accionar el botón de descarga del extintor de bodega (CARGO BOTTLE), iniciar descenso inmediato hacia el aeródromo adecuado más próximo y consultar la NOTOC/Drill Codes",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1006,13 +1006,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Un máximo total de **5 litros por persona**, contenidas en recipientes comerciales sellados de venta al público",
-        "is_correct": true
+        "text": "Hasta 500 litros en barriles de madera en bodega",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Hasta 500 litros en barriles de madera en bodega",
-        "is_correct": false
+        "text": "Un máximo total de **5 litros por persona**, contenidas en recipientes comerciales sellados de venta al público",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1043,8 +1043,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Requiere autorización expresa y previa del Ministerio de Defensa y de la Autoridad Aeronáutica AESA, transportándose bajo estrictas condiciones de custodia militar y seguridad",
-        "is_correct": true
+        "text": "Cualquier pasajero puede transportar misiles en cabina",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1053,12 +1053,12 @@
       },
       {
         "id": "C",
-        "text": "Basta con una carta del fabricante del arma",
-        "is_correct": false
+        "text": "Requiere autorización expresa y previa del Ministerio de Defensa y de la Autoridad Aeronáutica AESA, transportándose bajo estrictas condiciones de custodia militar y seguridad",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "Cualquier pasajero puede transportar misiles en cabina",
+        "text": "Basta con una carta del fabricante del arma",
         "is_correct": false
       }
     ],
@@ -1080,13 +1080,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Durante un periodo mínimo no inferior a **3 meses (o 12 meses según el requisito de calidad de la compañía)** a disposición de los inspectores de AESA",
-        "is_correct": true
+        "text": "Durante 24 horas destruyéndose al día siguiente",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Durante 24 horas destruyéndose al día siguiente",
-        "is_correct": false
+        "text": "Durante un periodo mínimo no inferior a **3 meses (o 12 meses según el requisito de calidad de la compañía)** a disposición de los inspectores de AESA",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1117,8 +1117,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Prohíbe el transporte del bulto en cualquier aeronave de transporte de pasajeros, pudiendo viajar exclusivamente en aviones cargueros puros",
-        "is_correct": true
+        "text": "Exige que el bulto viaje sentado en un asiento de cabina",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1127,8 +1127,8 @@
       },
       {
         "id": "C",
-        "text": "Exige que el bulto viaje sentado en un asiento de cabina",
-        "is_correct": false
+        "text": "Prohíbe el transporte del bulto en cualquier aeronave de transporte de pasajeros, pudiendo viajar exclusivamente en aviones cargueros puros",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1154,22 +1154,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Indican la orientación vertical obligatoria del bulto ('Este lado arriba'), debiendo mantenerse siempre con las flechas hacia arriba para evitar fugas de líquidos por cierres o venteos",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Indican que el avión debe ascender a máxima velocidad",
+        "text": "Indican el sentido del viento predominante",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Indican que la caja contiene pájaros vivos",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Indican la orientación vertical obligatoria del bulto ('Este lado arriba'), debiendo mantenerse siempre con las flechas hacia arriba para evitar fugas de líquidos por cierres o venteos",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Indican el sentido del viento predominante",
+        "text": "Indican que el avión debe ascender a máxima velocidad",
         "is_correct": false
       }
     ],
@@ -1191,13 +1191,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Previa autorización de la compañía (MEDIF), cilindro homologado con peso bruto ≤ 5 kg, válvula y regulador protegidos contra daños mecánicos accidentales",
-        "is_correct": true
+        "text": "Cualquier botella de submarinismo comprada en la playa",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Cualquier botella de submarinismo comprada en la playa",
-        "is_correct": false
+        "text": "Previa autorización de la compañía (MEDIF), cilindro homologado con peso bruto ≤ 5 kg, válvula y regulador protegidos contra daños mecánicos accidentales",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1233,17 +1233,17 @@
       },
       {
         "id": "B",
-        "text": "Mercancías que viajan gratis sin pagar portes",
+        "text": "Mercancías comestibles de contrabando",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Mercancías que se lanzan en paracaídas desde el avión",
+        "text": "Mercancías que viajan gratis sin pagar portes",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Mercancías comestibles de contrabando",
+        "text": "Mercancías que se lanzan en paracaídas desde el avión",
         "is_correct": false
       }
     ],
@@ -1265,18 +1265,18 @@
     "options": [
       {
         "id": "A",
-        "text": "Indica que el bulto contiene mercancías peligrosas preparadas bajo el régimen de Cantidades Limitadas (Limited Quantities) para el transporte aéreo",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Que el paquete viaja con descuento para jóvenes (Youth)",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Que la caja contiene productos de color amarillo",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Indica que el bulto contiene mercancías peligrosas preparadas bajo el régimen de Cantidades Limitadas (Limited Quantities) para el transporte aéreo",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1302,8 +1302,8 @@
     "options": [
       {
         "id": "A",
-        "text": "El avión queda inmediatamente inmovilizado y precintado en tierra hasta que personal especializado de Protección Radiológica / Bomberos realice mediciones radiométricas y descontaminación técnica certificada",
-        "is_correct": true
+        "text": "Se rocía la bodega con agua de colonia para quitar el olor",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1312,13 +1312,13 @@
       },
       {
         "id": "C",
-        "text": "Se rocía la bodega con agua de colonia para quitar el olor",
+        "text": "Se limpian las maletas con toallitas húmedas de bebé",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Se limpian las maletas con toallitas húmedas de bebé",
-        "is_correct": false
+        "text": "El avión queda inmediatamente inmovilizado y precintado en tierra hasta que personal especializado de Protección Radiológica / Bomberos realice mediciones radiométricas y descontaminación técnica certificada",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1339,8 +1339,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Completamente vacíos de todo combustible y aceite residual durante al menos 24 horas, desgasificados y limpios de cualquier vapor inflamable",
-        "is_correct": true
+        "text": "No se permite bajo ninguna circunstancia",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1349,12 +1349,12 @@
       },
       {
         "id": "C",
-        "text": "Con el motor encendido a ralentí en el maletero",
-        "is_correct": false
+        "text": "Completamente vacíos de todo combustible y aceite residual durante al menos 24 horas, desgasificados y limpios de cualquier vapor inflamable",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "No se permite bajo ninguna circunstancia",
+        "text": "Con el motor encendido a ralentí en el maletero",
         "is_correct": false
       }
     ],
@@ -1376,22 +1376,22 @@
     "options": [
       {
         "id": "A",
+        "text": "Porque pesan más de 500 kilogramos",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Por la alta tasa de fallos de fabricación en sus baterías de gran capacidad, con riesgo comprobado de cortocircuito interno, explosión e ignición espontánea incontrolable",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "Porque las ruedas de goma manchan la moqueta del avión",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Porque los pasajeros intentan montarse en ellos durante el rodaje",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "Porque pesan más de 500 kilogramos",
+        "text": "Porque los pasajeros intentan montarse en ellos durante el rodaje",
         "is_correct": false
       }
     ],
@@ -1413,22 +1413,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Debe reproducir en el exterior todas las etiquetas de peligro, números UN y marcas de manipulación de los bultos contenidos y llevar la inscripción visible 'OVERPACK'",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Debe estar envuelto en papel de periódico transparente",
+        "text": "No requiere ninguna marca exterior",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Debe pintarse de color negro para que no se vean las cajas",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Debe reproducir en el exterior todas las etiquetas de peligro, números UN y marcas de manipulación de los bultos contenidos y llevar la inscripción visible 'OVERPACK'",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "No requiere ninguna marca exterior",
+        "text": "Debe estar envuelto en papel de periódico transparente",
         "is_correct": false
       }
     ],
@@ -1450,23 +1450,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Seleccionar ventilación al 100% con aire fresco exterior (Packs en HI / Fresh Air), colocarse máscaras de oxígeno en modo 100% y ejecutar descenso de emergencia",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Apagar los Packs de aire acondicionado para que el gas se quede quieto",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Abrir las ventanillas de cabina a FL350",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Hacer que los pasajeros respiren en bolsas de papel",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Seleccionar ventilación al 100% con aire fresco exterior (Packs en HI / Fresh Air), colocarse máscaras de oxígeno en modo 100% y ejecutar descenso de emergencia",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1487,22 +1487,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Uno por pasajero, exclusivamente para uso médico personal, transportado en su estuche protector rígido de plástico",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "En botellas de cristal abiertas en el bolsillo",
+        "text": "Está terminantemente prohibido cualquier termómetro",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Se permite llevar 10 litros de mercurio líquido en un balde",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Uno por pasajero, exclusivamente para uso médico personal, transportado en su estuche protector rígido de plástico",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Está terminantemente prohibido cualquier termómetro",
+        "text": "En botellas de cristal abiertas en el bolsillo",
         "is_correct": false
       }
     ],
@@ -1524,22 +1524,22 @@
     "options": [
       {
         "id": "A",
+        "text": "No existe límite de botellas de gas",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Hasta **dos cartuchos pequeños instalados en el chaleco y hasta dos cartuchos de repuesto**, con permiso de la compañía",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "Veinte botellas de submarinismo presurizadas a 300 bar",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Cero cartuchos debiendo inflarse a pulmón",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "No existe límite de botellas de gas",
+        "text": "Cero cartuchos debiendo inflarse a pulmón",
         "is_correct": false
       }
     ],
@@ -1561,23 +1561,23 @@
     "options": [
       {
         "id": "A",
-        "text": "El expedidor (remitente / fabricante de la mercancía), quien asume la responsabilidad civil y penal de la veracidad y legalidad del envío",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "El copiloto del avión",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "El pasajero que se sienta en la primera fila",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "El vigilante jurado del aeropuerto",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El copiloto del avión",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El expedidor (remitente / fabricante de la mercancía), quien asume la responsabilidad civil y penal de la veracidad y legalidad del envío",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1598,8 +1598,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Un máximo de **2.5 kg de Hielo Seco por pasajero**, en un embalaje que permita la liberación del gas CO2 (no hermético) y debidamente marcado con la leyenda 'DRY ICE 2.5 KG'",
-        "is_correct": true
+        "text": "No existe límite si el equipaje va en bodega",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1608,12 +1608,12 @@
       },
       {
         "id": "C",
-        "text": "El hielo seco está prohibido en el equipaje de pasaje",
-        "is_correct": false
+        "text": "Un máximo de **2.5 kg de Hielo Seco por pasajero**, en un embalaje que permita la liberación del gas CO2 (no hermético) y debidamente marcado con la leyenda 'DRY ICE 2.5 KG'",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "No existe límite si el equipaje va en bodega",
+        "text": "El hielo seco está prohibido en el equipaje de pasaje",
         "is_correct": false
       }
     ],
@@ -1635,22 +1635,22 @@
     "options": [
       {
         "id": "A",
-        "text": "La Lista de Comprobación para la Aceptación de Mercancías Peligrosas (**IATA Dangerous Goods Acceptance Checklist**), comprobando documentación, embalaje, etiquetas y marcas",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Una libreta en blanco sin formato",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "El periódico del día",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "La Lista de Comprobación para la Aceptación de Mercancías Peligrosas (**IATA Dangerous Goods Acceptance Checklist**), comprobando documentación, embalaje, etiquetas y marcas",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "No se realiza inspección física si el paquete lleva sello de correos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Una libreta en blanco sin formato",
         "is_correct": false
       }
     ],
@@ -1672,23 +1672,23 @@
     "options": [
       {
         "id": "A",
-        "text": "La batería de litio debe ser extraíble y debe ser **retirada de la maleta por el pasajero y transportada en la cabina de pasaje** antes de facturar el equipaje",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "La batería puede permanecer en la maleta facturada si la maleta se cierra con llave",
+        "text": "No se permite el viaje de ninguna maleta moderna",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Se debe prender fuego a la maleta antes de cargarla",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "No se permite el viaje de ninguna maleta moderna",
+        "id": "C",
+        "text": "La batería puede permanecer en la maleta facturada si la maleta se cierra con llave",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La batería de litio debe ser extraíble y debe ser **retirada de la maleta por el pasajero y transportada en la cabina de pasaje** antes de facturar el equipaje",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1709,23 +1709,23 @@
     "options": [
       {
         "id": "A",
-        "text": "En la cabina de vuelo, en un lugar fácilmente accesible para ambos pilotos junto con la Guía de Respuesta a Emergencias Doc 9481",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "En el fondo del maletero de la bodega de carga",
+        "text": "En la cocina trasera junto a las cafeteras",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "En el bolsillo trasero del asiento de la última fila",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "En la cocina trasera junto a las cafeteras",
+        "id": "C",
+        "text": "En el fondo del maletero de la bodega de carga",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En la cabina de vuelo, en un lugar fácilmente accesible para ambos pilotos junto con la Guía de Respuesta a Emergencias Doc 9481",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1746,22 +1746,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Notificar a ATC la presencia de mercancías peligrosas a bordo, su ubicación en bodega, clase de riesgo, número UN y cantidad aproximada para preparar a los bomberos en tierra",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Ocultar que se llevan mercancías peligrosas para no alarmar a los controladores",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Pedir a los bomberos que no lleven agua a la pista",
+        "id": "B",
+        "text": "No se informa a ATC por motivos de secreto comercial",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Notificar a ATC la presencia de mercancías peligrosas a bordo, su ubicación en bodega, clase de riesgo, número UN y cantidad aproximada para preparar a los bomberos en tierra",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "No se informa a ATC por motivos de secreto comercial",
+        "text": "Pedir a los bomberos que no lleven agua a la pista",
         "is_correct": false
       }
     ],
@@ -1783,22 +1783,22 @@
     "options": [
       {
         "id": "A",
-        "text": "El personal de handling traslada el arma directamente desde la bodega a la Intervención de Armas de la Guardia Civil (o autoridad policial local), donde el pasajero la recoge previa identificación oficial",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Se colocan las armas sueltas en la cinta de recogida de maletas de pasajeros",
+        "text": "Se dejan las armas en la cafetería del aeropuerto para que las busquen",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "El comandante entrega las pistolas en mano a los pasajeros al salir por la puerta del avión",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "El personal de handling traslada el arma directamente desde la bodega a la Intervención de Armas de la Guardia Civil (o autoridad policial local), donde el pasajero la recoge previa identificación oficial",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Se dejan las armas en la cafetería del aeropuerto para que las busquen",
+        "text": "Se colocan las armas sueltas en la cinta de recogida de maletas de pasajeros",
         "is_correct": false
       }
     ],
@@ -1820,18 +1820,18 @@
     "options": [
       {
         "id": "A",
-        "text": "Garantizar el estricto cumplimiento normativo de OACI/IATA, la formación rigurosa del personal, la segregación técnica en bodegas y la transparencia de información para proteger la vida humana y la aeronave",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Aceptar cualquier paquete sin revisar para aumentar los ingresos comerciales",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Delegar toda la seguridad en la suerte y en la experiencia de los estibadores",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Garantizar el estricto cumplimiento normativo de OACI/IATA, la formación rigurosa del personal, la segregación técnica en bodegas y la transparencia de información para proteger la vida humana y la aeronave",
+        "is_correct": true
       },
       {
         "id": "D",

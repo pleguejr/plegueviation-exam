@@ -7,17 +7,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Se arrancan ambos motores simultáneamente con el ASU a máxima potencia para evitar sobrecalentamiento de la turbina de arranque.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Se arranca generalmente primero el Motor 2 mediante la unidad ASU, ya que el equipo ASU se posiciona en rampa frente al Motor 1.",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "Se arranca obligatoriamente primero el Motor 1 mediante ASU, ya que la toma neumática inferior alimenta directamente la válvula de arranque del motor izquierdo.",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Se arrancan ambos motores simultáneamente con el ASU a máxima potencia para evitar sobrecalentamiento de la turbina de arranque.",
+        "text": "Se arranca obligatoriamente primero el Motor 1 mediante ASU, ya que la toma neumática inferior alimenta directamente la válvula de arranque del motor izquierdo.",
         "is_correct": false
       },
       {
@@ -44,23 +44,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Solicitar confirmación a tierra de que la zona del motor 2 está libre ('¿Está libre zona del motor número 2 para incrementar potencia?') e incrementar potencia en el Motor 2 para obtener la presión neumática requerida.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Mantener el Motor 2 al ralentí (IDLE) y solicitar a tierra la apertura manual de la válvula de sangrado cruzado en el pozo del tren de aterrizaje.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Conectar el interruptor de encendido IGNITION en posición OVRD y esperar a que la presión del conducto neumático alcance 15 psi sin acelerar el motor operativo.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Ordenar a tierra la retirada inmediata de calzos principales para permitir el desplazamiento por empuje residual durante el arranque cruzado.",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mantener el Motor 2 al ralentí (IDLE) y solicitar a tierra la apertura manual de la válvula de sangrado cruzado en el pozo del tren de aterrizaje.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar confirmación a tierra de que la zona del motor 2 está libre ('¿Está libre zona del motor número 2 para incrementar potencia?') e incrementar potencia en el Motor 2 para obtener la presión neumática requerida.",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -81,8 +81,8 @@
     "options": [
       {
         "id": "A",
-        "text": "1° Aeronave completamente parada; 2° Confirmación de frenos de estacionamiento puestos con luz roja encendida; 3° Uno de los motores completamente parado con el otro motor al ralentí (IDLE).",
-        "is_correct": true
+        "text": "1° Autorización expresa de la torre de control; 2° Luces de rodaje apagadas; 3° Luces estroboscópicas encendidas en posición fija.",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -91,12 +91,12 @@
       },
       {
         "id": "C",
-        "text": "1° Pasarela o finger conectado; 2° Calzos en tren de morro; 3° Motores al ralentí con bombas de combustible desconectadas.",
-        "is_correct": false
+        "text": "1° Aeronave completamente parada; 2° Confirmación de frenos de estacionamiento puestos con luz roja encendida; 3° Uno de los motores completamente parado con el otro motor al ralentí (IDLE).",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "1° Autorización expresa de la torre de control; 2° Luces de rodaje apagadas; 3° Luces estroboscópicas encendidas en posición fija.",
+        "text": "1° Pasarela o finger conectado; 2° Calzos en tren de morro; 3° Motores al ralentí con bombas de combustible desconectadas.",
         "is_correct": false
       }
     ],
@@ -118,23 +118,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Las luces BEACON permanecen encendidas hasta la parada de ambos motores; se calza el tren delantero y se conecta la GPU por la zona segura mientras un motor sigue al ralentí, y el tren principal se calza solo tras parar el segundo motor y apagar beacons.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Las luces BEACON se apagan inmediatamente al parar el primer motor para autorizar la conexión frontal simultánea de GPU y calzado total de todos los trenes.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "La GPU solo puede conectarse cuando ambos motores estén completamente parados y las luces de navegación apagadas, empleando baterías de a bordo entretanto.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "El tren principal se calza primero antes de colocar calzos en el tren de morro para evitar movimientos indeseados por el empuje residual del motor al ralentí.",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Las luces BEACON se apagan inmediatamente al parar el primer motor para autorizar la conexión frontal simultánea de GPU y calzado total de todos los trenes.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Las luces BEACON permanecen encendidas hasta la parada de ambos motores; se calza el tren delantero y se conecta la GPU por la zona segura mientras un motor sigue al ralentí, y el tren principal se calza solo tras parar el segundo motor y apagar beacons.",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -155,22 +155,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Tripulante Técnico: 85 kg (75 kg persona + 10 kg equipaje de mano/maletín); Tripulante de Cabina (TCP): 75 kg (65 kg persona + 10 kg equipaje de servicio).",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Tripulante Técnico: 88 kg (82 kg persona + 6 kg equipaje); Tripulante de Cabina (TCP): 70 kg (64 kg persona + 6 kg equipaje).",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Tripulante Técnico: 80 kg; Tripulante de Cabina (TCP): 70 kg (sin incluir equipaje, que se pesa obligatoriamente en báscula).",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Tripulante Técnico y TCP por igual: 84 kg fijos por persona independientemente de la posición que ocupen.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Tripulante Técnico: 85 kg (75 kg persona + 10 kg equipaje de mano/maletín); Tripulante de Cabina (TCP): 75 kg (65 kg persona + 10 kg equipaje de servicio).",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Tripulante Técnico: 88 kg (82 kg persona + 6 kg equipaje); Tripulante de Cabina (TCP): 70 kg (64 kg persona + 6 kg equipaje).",
         "is_correct": false
       }
     ],
@@ -193,23 +193,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Adulto Varón: 88 kg | Adulto Mujer: 70 kg | Adulto Indistinto (All Adult): 84 kg (incluyendo 6 kg de equipaje de mano) | Niño (2-12 años): 35 kg | Bebé (<2 años sin asiento): 0 kg.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Adulto Varón: 85 kg | Adulto Mujer: 75 kg | Adulto Indistinto: 80 kg | Niño: 30 kg | Bebé: 5 kg.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Adulto Varón: 83 kg | Adulto Mujer: 69 kg | Adulto Indistinto: 76 kg (valores exclusivos de chárter vacacional) | Niño: 35 kg | Bebé: 10 kg.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Adulto Único: 78 kg | Niño: 40 kg | Bebé: 0 kg (el equipaje de mano siempre se suma por separado a razón de 10 kg por asiento).",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Adulto Varón: 85 kg | Adulto Mujer: 75 kg | Adulto Indistinto: 80 kg | Niño: 30 kg | Bebé: 5 kg.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Adulto Varón: 88 kg | Adulto Mujer: 70 kg | Adulto Indistinto (All Adult): 84 kg (incluyendo 6 kg de equipaje de mano) | Niño (2-12 años): 35 kg | Bebé (<2 años sin asiento): 0 kg.",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -231,8 +231,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Vuelos Domésticos / Interinsulares: 11 kg | Vuelos dentro de la Unión Europea: 13 kg | Vuelos Intercontinentales (África / Terceros Países): 15 kg.",
-        "is_correct": true
+        "text": "Vuelos Interinsulares: 10 kg | Vuelos Nacionales Peninsulares: 12 kg | Vuelos Internacionales: 20 kg.",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -241,12 +241,12 @@
       },
       {
         "id": "C",
-        "text": "Todos los vuelos por igual: 15 kg por pieza independientemente del destino geográfico.",
-        "is_correct": false
+        "text": "Vuelos Domésticos / Interinsulares: 11 kg | Vuelos dentro de la Unión Europea: 13 kg | Vuelos Intercontinentales (África / Terceros Países): 15 kg.",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "Vuelos Interinsulares: 10 kg | Vuelos Nacionales Peninsulares: 12 kg | Vuelos Internacionales: 20 kg.",
+        "text": "Todos los vuelos por igual: 15 kg por pieza independientemente del destino geográfico.",
         "is_correct": false
       }
     ],
@@ -268,22 +268,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Equipaje DAA: 10 kg por pieza (estibado en bodega y computado dentro del peso del pasaje); Densidad estándar Jet A-1: 0,79 kg/L.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Equipaje DAA: 15 kg por pieza (computado como equipaje pesado adicional); Densidad estándar Jet A-1: 0,84 kg/L.",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Equipaje DAA: 10 kg por pieza (estibado en bodega y computado dentro del peso del pasaje); Densidad estándar Jet A-1: 0,79 kg/L.",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "Equipaje DAA: 6 kg por pieza (computado en cabina); Densidad estándar Jet A-1: 0,72 kg/L.",
+        "text": "Equipaje DAA: 0 kg (franquicia libre sin registro); Densidad estándar Jet A-1: 0,80 kg/L.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Equipaje DAA: 0 kg (franquicia libre sin registro); Densidad estándar Jet A-1: 0,80 kg/L.",
+        "text": "Equipaje DAA: 6 kg por pieza (computado en cabina); Densidad estándar Jet A-1: 0,72 kg/L.",
         "is_correct": false
       }
     ],

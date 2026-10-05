@@ -7,22 +7,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Ninguna protección de envolvente de vuelo (AOA limiting, high-speed protection, bank angle limit) está disponible",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "La protección de ángulo de ataque límite (AOA limiter) permanece activa",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "La protección de sobrevelocidad de alta velocidad (High Speed Protection) se mantiene",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "El sistema de compensación de empuje asimétrico (Thrust Asymmetry Compensation) sigue operativo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Ninguna protección de envolvente de vuelo (AOA limiting, high-speed protection, bank angle limit) está disponible",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "La protección de ángulo de ataque límite (AOA limiter) permanece activa",
         "is_correct": false
       }
     ],
@@ -44,13 +44,13 @@
     "options": [
       {
         "id": "A",
-        "text": "En modo Normal cuando se detecta una asimetría de empuje superior al umbral establecido, aplicando deflexión automática del timón de dirección",
-        "is_correct": true
+        "text": "Únicamente cuando el piloto automático está conectado en aproximación ILS",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Únicamente cuando el piloto automático está conectado en aproximación ILS",
-        "is_correct": false
+        "text": "En modo Normal cuando se detecta una asimetría de empuje superior al umbral establecido, aplicando deflexión automática del timón de dirección",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -81,22 +81,22 @@
     "options": [
       {
         "id": "A",
-        "text": "El sistema es auto-compensado (auto-trim) en vuelo; los interruptores de trim en el volante modifican la referencia de velocidad (speed trim reference)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Mueve directamente el estabilizador horizontal por cables mecánicos como en aviones convencionales",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "El sistema es auto-compensado (auto-trim) en vuelo; los interruptores de trim en el volante modifican la referencia de velocidad (speed trim reference)",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "Solo se puede compensar a través de la MCDU antes del despegue",
+        "text": "El trim manual en el pedestal anula automáticamente todas las leyes de control FBW",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "El trim manual en el pedestal anula automáticamente todas las leyes de control FBW",
+        "text": "Solo se puede compensar a través de la MCDU antes del despegue",
         "is_correct": false
       }
     ],
@@ -118,22 +118,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Generadores IDG de 115V AC / 400 Hz trifásicos de 60 kVA o 75 kVA según variante",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Alternadores de 28V DC exclusivamente de 300A",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Generadores de frecuencia variable de 230V AC y 150 kVA",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Dinamos de corriente continua conectadas a inversores estáticos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Generadores IDG de 115V AC / 400 Hz trifásicos de 60 kVA o 75 kVA según variante",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Alternadores de 28V DC exclusivamente de 300A",
         "is_correct": false
       }
     ],
@@ -155,12 +155,12 @@
     "options": [
       {
         "id": "A",
-        "text": "AC Essential Bus y, a través de la ESS TRU, las barras DC Essential Busses y Standby Instruments",
-        "is_correct": true
+        "text": "Todas las barras principales AC BUS 1 y AC BUS 2 sin restricción",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Todas las barras principales AC BUS 1 y AC BUS 2 sin restricción",
+        "text": "Los calentadores de parabrisas y las bombas hidráulicas eléctricas ACMP 1 y 2",
         "is_correct": false
       },
       {
@@ -170,8 +170,8 @@
       },
       {
         "id": "D",
-        "text": "Los calentadores de parabrisas y las bombas hidráulicas eléctricas ACMP 1 y 2",
-        "is_correct": false
+        "text": "AC Essential Bus y, a través de la ESS TRU, las barras DC Essential Busses y Standby Instruments",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -192,8 +192,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Dos bombas eléctricas ACMP (ACMP 3A principal y ACMP 3B de respaldo)",
-        "is_correct": true
+        "text": "Únicamente la Power Transfer Unit (PTU) conectada al sistema 1",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -202,13 +202,13 @@
       },
       {
         "id": "C",
-        "text": "Únicamente la Power Transfer Unit (PTU) conectada al sistema 1",
+        "text": "Una bomba de turbina de aire de impacto (RAT hydraulic pump)",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Una bomba de turbina de aire de impacto (RAT hydraulic pump)",
-        "is_correct": false
+        "text": "Dos bombas eléctricas ACMP (ACMP 3A principal y ACMP 3B de respaldo)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -229,8 +229,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Transferir potencia hidráulica mecánica entre el Sistema 1 y el Sistema 2 sin mezclar los fluidos, asistiendo en la retracción del tren tras fallo de motor en despegue",
-        "is_correct": true
+        "text": "Presurizar el Sistema 3 en caso de fallo de las bombas eléctricas ACMP",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -239,13 +239,13 @@
       },
       {
         "id": "C",
-        "text": "Presurizar el Sistema 3 en caso de fallo de las bombas eléctricas ACMP",
+        "text": "Alimentar los frenos de emergencia con aire comprimido",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Alimentar los frenos de emergencia con aire comprimido",
-        "is_correct": false
+        "text": "Transferir potencia hidráulica mecánica entre el Sistema 1 y el Sistema 2 sin mezclar los fluidos, asistiendo en la retracción del tren tras fallo de motor en despegue",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -271,17 +271,17 @@
       },
       {
         "id": "B",
-        "text": "Una transmisión de velocidad constante mecánica acoplada al compresor de alta presión",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Ausencia total de turbinas axiales sustituidas por cámaras centrífugas",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Un eje único rígido entre el fan y todas las etapas de alta y baja presión",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Una transmisión de velocidad constante mecánica acoplada al compresor de alta presión",
         "is_correct": false
       }
     ],
@@ -303,8 +303,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Inicia automáticamente una secuencia de virado previo del motor (motoring / Bowed Rotor Combustion Protection) antes de introducir combustible e ignición",
-        "is_correct": true
+        "text": "Conecta los calentadores eléctricos de las carcasas del compresor de alta",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -318,8 +318,8 @@
       },
       {
         "id": "D",
-        "text": "Conecta los calentadores eléctricos de las carcasas del compresor de alta",
-        "is_correct": false
+        "text": "Inicia automáticamente una secuencia de virado previo del motor (motoring / Bowed Rotor Combustion Protection) antes de introducir combustible e ignición",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -340,8 +340,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Una válvula electro-mecánica principal (OFV) en el fuselaje trasero y una válvula de alivio de presión positiva/negativa independiente",
-        "is_correct": true
+        "text": "Cuatro válvulas distribuidas en cada una de las puertas de pasajeros",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -350,13 +350,13 @@
       },
       {
         "id": "C",
-        "text": "Cuatro válvulas distribuidas en cada una de las puertas de pasajeros",
+        "text": "Una única compuerta de alivio por gravedad en el compartimento de morro",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Una única compuerta de alivio por gravedad en el compartimento de morro",
-        "is_correct": false
+        "text": "Una válvula electro-mecánica principal (OFV) en el fuselaje trasero y una válvula de alivio de presión positiva/negativa independiente",
+        "is_correct": true
       }
     ],
     "explanation": {

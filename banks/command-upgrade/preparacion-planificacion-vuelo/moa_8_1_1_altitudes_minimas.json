@@ -7,23 +7,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Garantizar que no se vuele por debajo de la altitud mínima del segmento, salvo para despegue, aterrizaje, emergencia o descenso autorizado",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Delegar la supervisión de las altitudes exclusivamente en el CCO sin monitorización requerida desde la cabina técnica",
+        "text": "Ajustar las altitudes de vuelo únicamente en función del nivel de vuelo óptimo calculado para ahorro de combustible",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Descender libremente por debajo de la altitud mínima siempre que se mantenga contacto visual con el terreno en vuelo IFR",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Ajustar las altitudes de vuelo únicamente en función del nivel de vuelo óptimo calculado para ahorro de combustible",
+        "id": "C",
+        "text": "Delegar la supervisión de las altitudes exclusivamente en el CCO sin monitorización requerida desde la cabina técnica",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Garantizar que no se vuele por debajo de la altitud mínima del segmento, salvo para despegue, aterrizaje, emergencia o descenso autorizado",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -44,12 +44,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Altitud más baja utilizable en emergencia que conserva un margen mínimo de 1.000 pies sobre obstáculos en un sector de 25 NM de una radioayuda",
-        "is_correct": true
+        "text": "Altitud mínima que garantiza franqueamiento de 2.000 pies sobre obstáculos en un radio de 50 NM desde el umbral de pista",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Altitud mínima que garantiza franqueamiento de 2.000 pies sobre obstáculos en un radio de 50 NM desde el umbral de pista",
+        "text": "Nivel de vuelo asignado por control radar que garantiza franqueamiento de 1.500 pies en un sector semicircular de 30 NM",
         "is_correct": false
       },
       {
@@ -59,8 +59,8 @@
       },
       {
         "id": "D",
-        "text": "Nivel de vuelo asignado por control radar que garantiza franqueamiento de 1.500 pies en un sector semicircular de 30 NM",
-        "is_correct": false
+        "text": "Altitud más baja utilizable en emergencia que conserva un margen mínimo de 1.000 pies sobre obstáculos en un sector de 25 NM de una radioayuda",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -81,13 +81,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Garantiza recepción de ayudas a la navegación y franqueamiento de al menos 1.000 pies sobre el obstáculo más alto dentro de 5 NM del eje",
-        "is_correct": true
+        "text": "Garantiza recepción exclusiva de señales GNSS sin asegurar margen de franqueamiento vertical sobre elevaciones del terreno",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Garantiza cobertura radar y separación de 2.000 pies sobre el terreno dentro de 20 NM a cada lado de la aerovía",
-        "is_correct": false
+        "text": "Garantiza recepción de ayudas a la navegación y franqueamiento de al menos 1.000 pies sobre el obstáculo más alto dentro de 5 NM del eje",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -96,7 +96,7 @@
       },
       {
         "id": "D",
-        "text": "Garantiza recepción exclusiva de señales GNSS sin asegurar margen de franqueamiento vertical sobre elevaciones del terreno",
+        "text": "Garantiza cobertura radar y separación de 2.000 pies sobre el terreno dentro de 20 NM a cada lado de la aerovía",
         "is_correct": false
       }
     ],
@@ -118,17 +118,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Elevación máxima exacta sin redondeo + incremento de 500 ft en llanura y 1.000 ft en montaña; valor mínimo 3.000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Redondeo al siguiente 100 ft + incremento de 1.000 ft (obstáculos hasta 6.000 ft) o 2.000 ft (obstáculos > 6.000 ft); valor mínimo 2.000 ft",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "Redondeo al siguiente 500 ft + incremento fijo de 1.500 ft para cualquier elevación; valor mínimo publicado 1.000 ft",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Elevación máxima exacta sin redondeo + incremento de 500 ft en llanura y 1.000 ft en montaña; valor mínimo 3.000 ft",
+        "text": "Redondeo al siguiente 500 ft + incremento fijo de 1.500 ft para cualquier elevación; valor mínimo publicado 1.000 ft",
         "is_correct": false
       },
       {
@@ -155,22 +155,22 @@
     "options": [
       {
         "id": "A",
-        "text": "5 NM a cada lado del segmento en SIDs y STARs (hasta IAF), y 10 NM a cada lado de la línea central en aerovías",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "12 NM a cada lado en SIDs y STARs, y 20 NM a cada lado de la línea central en aerovías",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "5 NM a cada lado del segmento en SIDs y STARs (hasta IAF), y 10 NM a cada lado de la línea central en aerovías",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "3 NM a cada lado en SIDs y STARs, y 6 NM a cada lado de la línea central en aerovías",
+        "text": "8 NM a cada lado en cualquier segmento sin diferenciar entre procedimientos terminales y ruta",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "8 NM a cada lado en cualquier segmento sin diferenciar entre procedimientos terminales y ruta",
+        "text": "3 NM a cada lado en SIDs y STARs, y 6 NM a cada lado de la línea central en aerovías",
         "is_correct": false
       }
     ],
@@ -192,22 +192,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Binter Airlines no está autorizada a la planificación de vuelos comerciales bajo normas VFR; todos los vuelos comerciales se planifican IFR",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Binter Airlines autoriza la planificación VFR comercial en todos los vuelos interinsulares durante el día si la visibilidad supera 10 km",
+        "text": "Binter Airlines permite la planificación VFR a discreción del comandante sin requerir autorización expresa de la oficina técnica",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Binter Airlines autoriza vuelos VFR comerciales nocturnos siempre que la aeronave disponga de doble sistema GNSS operativo",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Binter Airlines no está autorizada a la planificación de vuelos comerciales bajo normas VFR; todos los vuelos comerciales se planifican IFR",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Binter Airlines permite la planificación VFR a discreción del comandante sin requerir autorización expresa de la oficina técnica",
+        "text": "Binter Airlines autoriza la planificación VFR comercial en todos los vuelos interinsulares durante el día si la visibilidad supera 10 km",
         "is_correct": false
       }
     ],
@@ -234,17 +234,17 @@
       },
       {
         "id": "B",
-        "text": "Descenso inmediato a FL180 para mantener mayor velocidad sobre el terreno antes de solicitar autorización a control",
+        "text": "Mantener nivel de crucero durante 10 minutos mientras se evalúa el estado del sistema neumático de acondicionamiento",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Descenso a 5.000 ft AGL independientemente de la elevación del terreno para acelerar la presurización natural",
+        "text": "Descenso inmediato a FL180 para mantener mayor velocidad sobre el terreno antes de solicitar autorización a control",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Mantener nivel de crucero durante 10 minutos mientras se evalúa el estado del sistema neumático de acondicionamiento",
+        "text": "Descenso a 5.000 ft AGL independientemente de la elevación del terreno para acelerar la presurización natural",
         "is_correct": false
       }
     ],
@@ -271,12 +271,12 @@
       },
       {
         "id": "B",
-        "text": "Descender obligatoriamente a 10.000 ft aunque ello implique volar por debajo de las cumbres montañosas",
+        "text": "Efectuar un viraje de 360° en descenso continuo hasta impactar la capa de inversión térmica",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Efectuar un viraje de 360° en descenso continuo hasta impactar la capa de inversión térmica",
+        "text": "Descender obligatoriamente a 10.000 ft aunque ello implique volar por debajo de las cumbres montañosas",
         "is_correct": false
       },
       {
@@ -303,13 +303,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Suministro para el 100% de los pasajeros durante todo el tiempo que la altitud de presión en cabina supere 15.000 ft (mínimo 10 min)",
-        "is_correct": true
+        "text": "Suministro exclusivo para el 20% de los pasajeros durante 30 minutos sin importar la altitud de cabina alcanzada",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Suministro exclusivo para el 20% de los pasajeros durante 30 minutos sin importar la altitud de cabina alcanzada",
-        "is_correct": false
+        "text": "Suministro para el 100% de los pasajeros durante todo el tiempo que la altitud de presión en cabina supere 15.000 ft (mínimo 10 min)",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -382,7 +382,7 @@
       },
       {
         "id": "B",
-        "text": "500 pies en toda la ruta independientemente de la elevación de las cordilleras montañosas",
+        "text": "1.500 pies exclusivamente sobre el aeródromo de salida y sin margen requerido en ruta",
         "is_correct": false
       },
       {
@@ -392,7 +392,7 @@
       },
       {
         "id": "D",
-        "text": "1.500 pies exclusivamente sobre el aeródromo de salida y sin margen requerido en ruta",
+        "text": "500 pies en toda la ruta independientemente de la elevación de las cordilleras montañosas",
         "is_correct": false
       }
     ],
@@ -414,18 +414,18 @@
     "options": [
       {
         "id": "A",
-        "text": "Cuando la trayectoria de vuelo prevista no permita el franqueamiento de obstáculos o el punto de no retorno sea anterior al de continuación",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Siempre que la ruta tenga una distancia superior a 100 NM sobre el mar sin islas intermedias",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Únicamente cuando el vuelo se realice con peso inferior al 50% del peso máximo de despegue",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cuando la trayectoria de vuelo prevista no permita el franqueamiento de obstáculos o el punto de no retorno sea anterior al de continuación",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -451,18 +451,18 @@
     "options": [
       {
         "id": "A",
-        "text": "Deben guiar hacia un aeródromo alternativo con gradiente positivo 1.500 pies por encima del nivel del aeródromo de aterrizaje",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Deben guiar hacia el punto de entrada de la aerovía manteniendo vuelo nivelado a FL300 sin gradiente",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Deben guiar hacia el espacio aéreo oceánico descendiendo a 500 pies sobre el agua sin aproximación",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Deben guiar hacia un aeródromo alternativo con gradiente positivo 1.500 pies por encima del nivel del aeródromo de aterrizaje",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -530,7 +530,7 @@
       },
       {
         "id": "B",
-        "text": "Diseñadas por el comandante durante el rodaje previo y aprobadas verbalmente por el copiloto",
+        "text": "Diseñadas por el centro de control de tránsito aéreo militar del sector correspondiente",
         "is_correct": false
       },
       {
@@ -540,7 +540,7 @@
       },
       {
         "id": "D",
-        "text": "Diseñadas por el centro de control de tránsito aéreo militar del sector correspondiente",
+        "text": "Diseñadas por el comandante durante el rodaje previo y aprobadas verbalmente por el copiloto",
         "is_correct": false
       }
     ],
@@ -567,17 +567,17 @@
       },
       {
         "id": "B",
-        "text": "Descender inmediatamente sobre el eje de la aerovía a FL100 sin avisar a las aeronaves circundantes",
+        "text": "Acelerar a velocidad máxima en picado recto hacia el aeródromo más próximo sin observar obstáculos",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Apagar los transpondedores para evitar alarmas erróneas en el sistema TCAS de otros tráficos",
+        "text": "Descender inmediatamente sobre el eje de la aerovía a FL100 sin avisar a las aeronaves circundantes",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Acelerar a velocidad máxima en picado recto hacia el aeródromo más próximo sin observar obstáculos",
+        "text": "Apagar los transpondedores para evitar alarmas erróneas en el sistema TCAS de otros tráficos",
         "is_correct": false
       }
     ],
@@ -636,22 +636,22 @@
     "options": [
       {
         "id": "A",
-        "text": "La Lista de Equipamiento Mínimo (MEL) de Binter Airlines, aplicando sus restricciones operacionales y de mantenimiento asociadas",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "El criterio verbal exclusivo del jefe de escala sin necesidad de consultar documentación técnica",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "La Lista de Equipamiento Mínimo (MEL) de Binter Airlines, aplicando sus restricciones operacionales y de mantenimiento asociadas",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "La carta de aproximación del aeródromo de destino firmada por el operador del aeropuerto",
+        "text": "El manual de servicio a bordo de tripulantes de cabina de pasajeros",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "El manual de servicio a bordo de tripulantes de cabina de pasajeros",
+        "text": "La carta de aproximación del aeródromo de destino firmada por el operador del aeropuerto",
         "is_correct": false
       }
     ],
@@ -673,22 +673,22 @@
     "options": [
       {
         "id": "A",
+        "text": "Cuando la temperatura en altitud sea inferior a ISA -30°C alterando la propagación electromagnética",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "En caso de que se prevea una pérdida continua de detección (outage) de más de 5 minutos en la ruta planificada",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "Cuando se prevea una pérdida instantánea de señal de 10 segundos en cualquier punto del ascenso",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Únicamente si la pérdida de señal afecta a más de 3 países durante el trayecto de crucero",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "Cuando la temperatura en altitud sea inferior a ISA -30°C alterando la propagación electromagnética",
+        "text": "Únicamente si la pérdida de señal afecta a más de 3 países durante el trayecto de crucero",
         "is_correct": false
       }
     ],
@@ -710,8 +710,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Se genera automáticamente un informe RAIM con el software de plan de vuelo, pero prevalece la predicción realizada con los sistemas de a bordo",
-        "is_correct": true
+        "text": "No se requiere predicción RAIM si la aeronave vuela en espacio aéreo continental europeo",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -720,12 +720,12 @@
       },
       {
         "id": "C",
-        "text": "Prevalece siempre la predicción del software terrestre por encima del FMS de la aeronave en todo momento",
-        "is_correct": false
+        "text": "Se genera automáticamente un informe RAIM con el software de plan de vuelo, pero prevalece la predicción realizada con los sistemas de a bordo",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "No se requiere predicción RAIM si la aeronave vuela en espacio aéreo continental europeo",
+        "text": "Prevalece siempre la predicción del software terrestre por encima del FMS de la aeronave en todo momento",
         "is_correct": false
       }
     ],
@@ -747,13 +747,13 @@
     "options": [
       {
         "id": "A",
-        "text": "ICAO Performance-Based Navigation (PBN) Manual (Doc 9613), cubriendo RNP 10, RNAV 5, RNAV 2, RNAV 1, Basic RNP-1, RNP APCH y RNP AR",
-        "is_correct": true
+        "text": "ICAO Aerodrome Design Manual (Doc 9157), cubriendo exclusivamente aproximaciones visuales de precisión",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "ICAO Aerodrome Design Manual (Doc 9157), cubriendo exclusivamente aproximaciones visuales de precisión",
-        "is_correct": false
+        "text": "ICAO Performance-Based Navigation (PBN) Manual (Doc 9613), cubriendo RNP 10, RNAV 5, RNAV 2, RNAV 1, Basic RNP-1, RNP APCH y RNP AR",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -784,22 +784,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Comprobar que todos los procedimientos previstos (salida, ruta, llegada, aproximación y desvíos a alternativos) están cargados y vigentes en la base de datos",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Verificar únicamente la frecuencia del VOR de origen dejando la base de datos del FMS sin comprobar",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Introducir manualmente todos los waypoints punto por punto con coordenadas geográficas en cada vuelo",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Desconectar el receptor GPS para forzar la navegación por estima durante todo el vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Comprobar que todos los procedimientos previstos (salida, ruta, llegada, aproximación y desvíos a alternativos) están cargados y vigentes en la base de datos",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Verificar únicamente la frecuencia del VOR de origen dejando la base de datos del FMS sin comprobar",
         "is_correct": false
       }
     ],
@@ -826,17 +826,17 @@
       },
       {
         "id": "B",
-        "text": "Exclusivamente el precio del combustible en destino y la tasa aeroportuaria por pasajero transportado",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "El número de idiomas hablados por la tripulación de cabina de pasajeros en el sector",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "La antigüedad media de la flota y el número de horas de vuelo del copiloto en la compañía",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Exclusivamente el precio del combustible en destino y la tasa aeroportuaria por pasajero transportado",
         "is_correct": false
       }
     ],
@@ -863,17 +863,17 @@
       },
       {
         "id": "B",
-        "text": "Rutas sobre el mar con múltiples aeródromos alternativos cada 30 NM y cobertura radar completa",
+        "text": "Cualquier vuelo con tiempo de crucero inferior a 25 minutos realizado enteramente en espacio aéreo clase A",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Vuelos domésticos entre islas con aproximaciones ILS CAT I operativas en ambos aeropuertos",
+        "text": "Rutas sobre el mar con múltiples aeródromos alternativos cada 30 NM y cobertura radar completa",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Cualquier vuelo con tiempo de crucero inferior a 25 minutos realizado enteramente en espacio aéreo clase A",
+        "text": "Vuelos domésticos entre islas con aproximaciones ILS CAT I operativas en ambos aeropuertos",
         "is_correct": false
       }
     ],
@@ -895,22 +895,22 @@
     "options": [
       {
         "id": "A",
-        "text": "En el documento NT-OFT-028 'Registro de rutas/áreas', revisándose anualmente y compartiéndose con el departamento de entrenamiento",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "En el libro de actas de la asamblea de accionistas, revisándose cada cinco años sin difusión operativa",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "En el panel de anuncios de la sala de firmas de tripulaciones, actualizándose diariamente por el sobrecargo",
+        "id": "B",
+        "text": "En el manual de mantenimiento Parte 145, revisándose cada vez que se efectúa una revisión tipo C",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "En el documento NT-OFT-028 'Registro de rutas/áreas', revisándose anualmente y compartiéndose con el departamento de entrenamiento",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "En el manual de mantenimiento Parte 145, revisándose cada vez que se efectúa una revisión tipo C",
+        "text": "En el panel de anuncios de la sala de firmas de tripulaciones, actualizándose diariamente por el sobrecargo",
         "is_correct": false
       }
     ],
@@ -942,12 +942,12 @@
       },
       {
         "id": "C",
-        "text": "La autorización del controlador de torre para ignorar los obstáculos cercanos al aeropuerto",
+        "text": "El uso exclusivo del radar meteorológico en modo de mapeo del terreno durante la carrera de despegue",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "El uso exclusivo del radar meteorológico en modo de mapeo del terreno durante la carrera de despegue",
+        "text": "La autorización del controlador de torre para ignorar los obstáculos cercanos al aeropuerto",
         "is_correct": false
       }
     ],
@@ -969,22 +969,22 @@
     "options": [
       {
         "id": "A",
-        "text": "En el MOA 8.1.2.2.5.2 y en los procedimientos de vuelo asociados a la flota para garantizar gradiente de ascenso seguro",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "En el manual de operaciones de handling de rampa para recolocación de pasarelas telescópicas",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "En las directivas de seguridad de la guardia civil para control de accesos aeroportuarios",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "En el MOA 8.1.2.2.5.2 y en los procedimientos de vuelo asociados a la flota para garantizar gradiente de ascenso seguro",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "En las listas de chequeo normales de rodaje tras el aterrizaje sin aplicar potencia de motor",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En el manual de operaciones de handling de rampa para recolocación de pasarelas telescópicas",
         "is_correct": false
       }
     ],
@@ -1006,22 +1006,22 @@
     "options": [
       {
         "id": "A",
+        "text": "Altitud a la que el radar de a bordo conmuta automáticamente de modo meteorológico a modo terreno",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Altitud mínima sobre el nivel medio del mar a partir de la cual el servicio de tránsito aéreo puede vectorizar a una aeronave",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "Altitud máxima a la que el transponder de a bordo responde a interrogaciones secundarias",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Nivel de vuelo asignado para evitar ecos parásitos provocados por tormentas convectivas",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "Altitud a la que el radar de a bordo conmuta automáticamente de modo meteorológico a modo terreno",
+        "text": "Nivel de vuelo asignado para evitar ecos parásitos provocados por tormentas convectivas",
         "is_correct": false
       }
     ],
@@ -1043,8 +1043,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Son los niveles de vuelo más bajos o altitudes utilizables en ruta publicados en las publicaciones de información aeronáutica (AIP)",
-        "is_correct": true
+        "text": "Son los niveles a partir de los cuales es obligatorio el uso de máscaras de oxígeno en vuelo regular",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1053,8 +1053,8 @@
       },
       {
         "id": "C",
-        "text": "Son los niveles a partir de los cuales es obligatorio el uso de máscaras de oxígeno en vuelo regular",
-        "is_correct": false
+        "text": "Son los niveles de vuelo más bajos o altitudes utilizables en ruta publicados en las publicaciones de información aeronáutica (AIP)",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1080,22 +1080,22 @@
     "options": [
       {
         "id": "A",
-        "text": "En áreas marítimas abiertas donde no existen masas de tierra ni obstáculos que sobresalgan del nivel del mar",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "En zonas continentales donde la elevación del terreno sea exactamente igual al nivel medio del mar",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "En áreas marítimas abiertas donde no existen masas de tierra ni obstáculos que sobresalgan del nivel del mar",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "En espacios aéreos terminales con control radar de aproximación permanente las 24 horas",
+        "text": "En áreas montañosas donde la MEA publicada sea superior a FL200 para no sobrecargar el mapa",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "En áreas montañosas donde la MEA publicada sea superior a FL200 para no sobrecargar el mapa",
+        "text": "En espacios aéreos terminales con control radar de aproximación permanente las 24 horas",
         "is_correct": false
       }
     ],
@@ -1117,13 +1117,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Certificado DAT (Aeronautical Data Provider) conforme al Reglamento Europeo de Proveedores de Datos Aeronáuticos",
-        "is_correct": true
+        "text": "Autorización temporal expedida por el ayuntamiento de la sede social del operador",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Certificado ISO 9001 de calidad en imprenta y encuadernación de manuales de oficina",
-        "is_correct": false
+        "text": "Certificado DAT (Aeronautical Data Provider) conforme al Reglamento Europeo de Proveedores de Datos Aeronáuticos",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1132,7 +1132,7 @@
       },
       {
         "id": "D",
-        "text": "Autorización temporal expedida por el ayuntamiento de la sede social del operador",
+        "text": "Certificado ISO 9001 de calidad en imprenta y encuadernación de manuales de oficina",
         "is_correct": false
       }
     ],
@@ -1154,23 +1154,23 @@
     "options": [
       {
         "id": "A",
-        "text": "A través de procedimientos del MOFT realizando comprobaciones aleatorias periódicas sobre las rutas analizadas",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Reescribiendo manualmente todas las cartas de navegación antes de cada temporada de verano e invierno",
+        "text": "Aceptando los datos sin ningún tipo de supervisión ni auditoría interna en la compañía aérea",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Consultando foros públicos de pilotos en internet para recopilar opiniones sobre las altitudes",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Aceptando los datos sin ningún tipo de supervisión ni auditoría interna en la compañía aérea",
+        "id": "C",
+        "text": "Reescribiendo manualmente todas las cartas de navegación antes de cada temporada de verano e invierno",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "A través de procedimientos del MOFT realizando comprobaciones aleatorias periódicas sobre las rutas analizadas",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1201,12 +1201,12 @@
       },
       {
         "id": "C",
-        "text": "El incremento de la carga de pago de pasajeros para compensar el consumo de combustible",
+        "text": "La reducción del número de tripulantes técnicos a bordo para disminuir el peso básico de la aeronave",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "La reducción del número de tripulantes técnicos a bordo para disminuir el peso básico de la aeronave",
+        "text": "El incremento de la carga de pago de pasajeros para compensar el consumo de combustible",
         "is_correct": false
       }
     ],
@@ -1228,8 +1228,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Certificadas para operación IFR con duplicidad de sistemas de comunicación y navegación de área avanzada",
-        "is_correct": true
+        "text": "Certificadas para vuelo a baja cota sin requerir equipos de radionavegación homologados",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1238,12 +1238,12 @@
       },
       {
         "id": "C",
-        "text": "Certificadas con instrumentos analógicos básicos sin acoplamiento al piloto automático",
-        "is_correct": false
+        "text": "Certificadas para operación IFR con duplicidad de sistemas de comunicación y navegación de área avanzada",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "Certificadas para vuelo a baja cota sin requerir equipos de radionavegación homologados",
+        "text": "Certificadas con instrumentos analógicos básicos sin acoplamiento al piloto automático",
         "is_correct": false
       }
     ],
@@ -1265,12 +1265,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Prevalece la predicción del sistema de a bordo (GNMS/FMS), pudiendo descartar la predicción previa del despacho",
-        "is_correct": true
+        "text": "Prevalece siempre el informe impreso en papel emitido por el software terrestre antes de la salida",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Prevalece siempre el informe impreso en papel emitido por el software terrestre antes de la salida",
+        "text": "Se debe desconectar la alimentación eléctrica del FMS y navegar con brújula magnética",
         "is_correct": false
       },
       {
@@ -1280,8 +1280,8 @@
       },
       {
         "id": "D",
-        "text": "Se debe desconectar la alimentación eléctrica del FMS y navegar con brújula magnética",
-        "is_correct": false
+        "text": "Prevalece la predicción del sistema de a bordo (GNMS/FMS), pudiendo descartar la predicción previa del despacho",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1302,18 +1302,18 @@
     "options": [
       {
         "id": "A",
-        "text": "Requieren autorización operacional específica (AR), mayor precisión con contención RNP < 0.3 y entrenamiento específico de tripulaciones",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Permiten realizar aproximaciones visuales sin referencia a fijos de navegación ni radioaltímetro",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Están abiertas a cualquier aeronave sin requerir certificación técnica ni supervisión de la autoridad",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Requieren autorización operacional específica (AR), mayor precisión con contención RNP < 0.3 y entrenamiento específico de tripulaciones",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1339,8 +1339,8 @@
     "options": [
       {
         "id": "A",
-        "text": "En el Manual de Operaciones Parte D (Entrenamiento), Sección 2, apartado 2.1.1",
-        "is_correct": true
+        "text": "En el convenio colectivo de la empresa en la sección de dietas de desplazamiento",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1349,8 +1349,8 @@
       },
       {
         "id": "C",
-        "text": "En el convenio colectivo de la empresa en la sección de dietas de desplazamiento",
-        "is_correct": false
+        "text": "En el Manual de Operaciones Parte D (Entrenamiento), Sección 2, apartado 2.1.1",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1376,8 +1376,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Para mitigar y prevenir situaciones de pérdida de control en vuelo (UPSET / UPRT) derivadas de turbulencia severa, cizalladura o convección",
-        "is_correct": true
+        "text": "Para permitir que los tripulantes utilicen uniformes de abrigo no reglamentarios durante el vuelo",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1386,13 +1386,13 @@
       },
       {
         "id": "C",
-        "text": "Para permitir que los tripulantes utilicen uniformes de abrigo no reglamentarios durante el vuelo",
+        "text": "Para eximir al operador de la obligación de disponer de planes de vuelo operacionales aprobados",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Para eximir al operador de la obligación de disponer de planes de vuelo operacionales aprobados",
-        "is_correct": false
+        "text": "Para mitigar y prevenir situaciones de pérdida de control en vuelo (UPSET / UPRT) derivadas de turbulencia severa, cizalladura o convección",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1450,8 +1450,8 @@
     "options": [
       {
         "id": "A",
-        "text": "9.200 ft (redondeo al siguiente 100 ft: 7.200 ft + incremento de 2.000 ft por ser terreno > 6.000 ft)",
-        "is_correct": true
+        "text": "10.000 ft (redondeo fijo al siguiente millar + 2.000 ft)",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1460,13 +1460,13 @@
       },
       {
         "id": "C",
-        "text": "10.000 ft (redondeo fijo al siguiente millar + 2.000 ft)",
+        "text": "7.200 ft (redondeo a 7.200 ft sin aplicar ningún incremento vertical)",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "7.200 ft (redondeo a 7.200 ft sin aplicar ningún incremento vertical)",
-        "is_correct": false
+        "text": "9.200 ft (redondeo al siguiente 100 ft: 7.200 ft + incremento de 2.000 ft por ser terreno > 6.000 ft)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1497,12 +1497,12 @@
       },
       {
         "id": "C",
-        "text": "Se utilizan bases de datos de diferentes fabricantes en cabina técnica y en el centro de control para contrastar",
+        "text": "No existe vinculación entre la cartografía de a bordo y los sistemas de cálculo de navegación terrestre",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No existe vinculación entre la cartografía de a bordo y los sistemas de cálculo de navegación terrestre",
+        "text": "Se utilizan bases de datos de diferentes fabricantes en cabina técnica y en el centro de control para contrastar",
         "is_correct": false
       }
     ],
@@ -1524,18 +1524,18 @@
     "options": [
       {
         "id": "A",
-        "text": "2.000 pies de margen vertical sobre terreno u obstáculos por encima de 6.000 pies",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "1.000 pies de margen vertical fijo sin importar la elevación del obstáculo",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "500 pies de margen vertical combinado con vectorización radar obligatoria",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "2.000 pies de margen vertical sobre terreno u obstáculos por encima de 6.000 pies",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1561,17 +1561,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Descenso en modo Vertical Speed a -500 ft/min manteniendo los aerofrenos completamente retraídos",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Palancas de gases en IDLE, SPEEDBRAKES en FULL y modo FLCH seleccionando la altitud de seguridad objetivo",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "Gases a plena potencia TOGA, flaps en posición de aterrizaje y piloto automático desconectado",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Descenso en modo Vertical Speed a -500 ft/min manteniendo los aerofrenos completamente retraídos",
+        "text": "Gases a plena potencia TOGA, flaps en posición de aterrizaje y piloto automático desconectado",
         "is_correct": false
       },
       {
@@ -1603,12 +1603,12 @@
       },
       {
         "id": "B",
-        "text": "Apagar los generadores principales del avión para reiniciar el sistema eléctrico en pleno vuelo",
+        "text": "Descender a 1.000 pies sobre el mar para intentar sintonizar emisoras comerciales de radio FM",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Descender a 1.000 pies sobre el mar para intentar sintonizar emisoras comerciales de radio FM",
+        "text": "Apagar los generadores principales del avión para reiniciar el sistema eléctrico en pleno vuelo",
         "is_correct": false
       },
       {
@@ -1635,23 +1635,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Cumplir los requerimientos de EASA para la predicción de integridad satelital y disponibilidad en las rutas programadas",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Calcular el número de comidas a bordo en función del tiempo estimado de vuelo satelital",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Medir la radiación cósmica acumulada por los tripulantes técnicos en vuelos transatlánticos",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Optimizar la venta de billetes de última hora a través de la red de posicionamiento global",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Calcular el número de comidas a bordo en función del tiempo estimado de vuelo satelital",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cumplir los requerimientos de EASA para la predicción de integridad satelital y disponibilidad en las rutas programadas",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1672,22 +1672,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Rutas sin problemas de meteo estacional adversa, aerovías con pocas restricciones, cobertura SAR total y servicios ATS completos",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Rutas polares con pérdida total de cobertura satelital y sin aeródromos adecuados en 1.000 NM",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Aproximaciones a pistas de tierra no balizadas en zonas de conflicto armado internacional",
+        "id": "B",
+        "text": "Vuelos de traslado de aeronaves con dos motores inoperativos de fábrica",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Rutas sin problemas de meteo estacional adversa, aerovías con pocas restricciones, cobertura SAR total y servicios ATS completos",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Vuelos de traslado de aeronaves con dos motores inoperativos de fábrica",
+        "text": "Aproximaciones a pistas de tierra no balizadas en zonas de conflicto armado internacional",
         "is_correct": false
       }
     ],
@@ -1709,12 +1709,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Personal del Centro de Control de Operaciones (CCO), Oficina Técnica (OFT) y tripulantes de vuelo",
-        "is_correct": true
+        "text": "Exclusivamente entre los inspectores de la autoridad aeronáutica civil y el personal de limpieza",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Exclusivamente entre los inspectores de la autoridad aeronáutica civil y el personal de limpieza",
+        "text": "Entre los miembros del consejo de administración y los representantes sindicales de handling",
         "is_correct": false
       },
       {
@@ -1724,8 +1724,8 @@
       },
       {
         "id": "D",
-        "text": "Entre los miembros del consejo de administración y los representantes sindicales de handling",
-        "is_correct": false
+        "text": "Personal del Centro de Control de Operaciones (CCO), Oficina Técnica (OFT) y tripulantes de vuelo",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1746,23 +1746,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Incremento de 1.000 pies (por ser terreno hasta 6.000 pies inclusive)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Incremento de 2.000 pies (por alcanzar la cota de 6.000 pies)",
+        "text": "Incremento de 500 pies en condiciones diurnas con visibilidad ilimitada",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Incremento de 1.500 pies como valor intermedio de seguridad",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Incremento de 500 pies en condiciones diurnas con visibilidad ilimitada",
+        "id": "C",
+        "text": "Incremento de 2.000 pies (por alcanzar la cota de 6.000 pies)",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Incremento de 1.000 pies (por ser terreno hasta 6.000 pies inclusive)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1783,12 +1783,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Incremento de 2.000 pies (por encontrarse por encima de 6.000 pies)",
-        "is_correct": true
+        "text": "Incremento de 1.000 pies manteniendo la escala de elevaciones bajas",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Incremento de 1.000 pies manteniendo la escala de elevaciones bajas",
+        "text": "No requiere incremento si la montaña está visible a más de 10 kilómetros",
         "is_correct": false
       },
       {
@@ -1798,8 +1798,8 @@
       },
       {
         "id": "D",
-        "text": "No requiere incremento si la montaña está visible a más de 10 kilómetros",
-        "is_correct": false
+        "text": "Incremento de 2.000 pies (por encontrarse por encima de 6.000 pies)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1820,8 +1820,8 @@
     "options": [
       {
         "id": "A",
-        "text": "El Responsable de Operaciones en coordinación con el Responsable de Entrenamiento",
-        "is_correct": true
+        "text": "El jefe de rampa del aeropuerto de destino en cada rotación",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1830,13 +1830,13 @@
       },
       {
         "id": "C",
-        "text": "El jefe de rampa del aeropuerto de destino en cada rotación",
+        "text": "El director comercial y de marketing tras evaluar la demanda de pasajeros",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "El director comercial y de marketing tras evaluar la demanda de pasajeros",
-        "is_correct": false
+        "text": "El Responsable de Operaciones en coordinación con el Responsable de Entrenamiento",
+        "is_correct": true
       }
     ],
     "explanation": {

@@ -12,12 +12,12 @@
       },
       {
         "id": "B",
-        "text": "Cuando llueve con intensidad moderada en verano",
+        "text": "Únicamente cuando el viento supera los 40 nudos",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Únicamente cuando el viento supera los 40 nudos",
+        "text": "Cuando llueve con intensidad moderada en verano",
         "is_correct": false
       },
       {
@@ -44,17 +44,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Un RVR de 400 metros",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Un valor mínimo de **RVR de 125 metros** (con reporte de RVR en todos los tercios relevantes de pista)",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "Un RVR de 50 metros",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Un RVR de 400 metros",
+        "text": "Un RVR de 50 metros",
         "is_correct": false
       },
       {
@@ -81,22 +81,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Altura de Decisión (DH) de **100 a 200 pies** y un valor de **RVR ≥ 300 metros**",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "DH de 50 pies y RVR de 75 metros",
+        "text": "DH de 0 pies y RVR de 100 metros",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "DH de 200 pies y RVR de 550 metros",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Altura de Decisión (DH) de **100 a 200 pies** y un valor de **RVR ≥ 300 metros**",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "DH de 0 pies y RVR de 100 metros",
+        "text": "DH de 50 pies y RVR de 75 metros",
         "is_correct": false
       }
     ],
@@ -118,13 +118,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Fail-Passive: Ante un fallo no se produce desvío significativo pero exige control manual o frustrada (DH ≥ 50 ft) | Fail-Operational: El sistema tolera un fallo y completa el aterrizaje automáticamente (No DH / Alert Height)",
-        "is_correct": true
+        "text": "Fail-Passive apaga los motores y Fail-Operational los acelera a fondo",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Fail-Passive apaga los motores y Fail-Operational los acelera a fondo",
-        "is_correct": false
+        "text": "Fail-Passive: Ante un fallo no se produce desvío significativo pero exige control manual o frustrada (DH ≥ 50 ft) | Fail-Operational: El sistema tolera un fallo y completa el aterrizaje automáticamente (No DH / Alert Height)",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -155,22 +155,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Desviación máxima de **1/3 de punto en Localizador** y **1/2 punto en Senda de Planeo** en el indicador de instrumentos",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Desviación de 2 puntos completos a cada lado",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Desviación máxima de **1/3 de punto en Localizador** y **1/2 punto en Senda de Planeo** en el indicador de instrumentos",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "Cualquier desviación mientras el avión vuele nivelado",
+        "text": "No existen límites tolerándose cualquier desvío",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No existen límites tolerándose cualquier desvío",
+        "text": "Cualquier desviación mientras el avión vuele nivelado",
         "is_correct": false
       }
     ],
@@ -192,22 +192,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Únicamente cuando toda la aeronave haya rebasado el punto donde las luces de eje de calle de rodaje dejan de ser alternadas verde/ámbar y pasan a ser completamente verdes",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "En el mismo instante en que las ruedas tocan tierra",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Cuando el avión abandona el umbral de la pista a 80 nudos",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "Únicamente cuando toda la aeronave haya rebasado el punto donde las luces de eje de calle de rodaje dejan de ser alternadas verde/ámbar y pasan a ser completamente verdes",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "Antes de iniciar la aproximación para ahorrar tiempo de radio",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En el mismo instante en que las ruedas tocan tierra",
         "is_correct": false
       }
     ],
@@ -239,12 +239,12 @@
       },
       {
         "id": "C",
-        "text": "'[Callsign] Prueba de vuelo sin mirar'",
+        "text": "'[Callsign] Despejen el aeropuerto que vamos a entrenar'",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "'[Callsign] Despejen el aeropuerto que vamos a entrenar'",
+        "text": "'[Callsign] Prueba de vuelo sin mirar'",
         "is_correct": false
       }
     ],
@@ -271,12 +271,12 @@
       },
       {
         "id": "B",
-        "text": "Para que los pilotos puedan dormir más cómodos",
+        "text": "Para alcanzar los pedales con menor esfuerzo",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Para alcanzar los pedales con menor esfuerzo",
+        "text": "Para que los pilotos puedan dormir más cómodos",
         "is_correct": false
       },
       {
@@ -303,22 +303,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Efectuando una aproximación simulada CAT II/III satisfactoria en vuelo por tripulación habilitada, anotándola en el ATL (marcando casilla 'S') y reportándola vía ACARS / formulario 'CAT II/III Status'",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Basta con que el mecánico firme un papel sin volar el avión",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Efectuando una aproximación simulada CAT II/III satisfactoria en vuelo por tripulación habilitada, anotándola en el ATL (marcando casilla 'S') y reportándola vía ACARS / formulario 'CAT II/III Status'",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "Realizando un aterrizaje en una pista de tierra",
+        "text": "El avión recupera la capacidad automáticamente al encender las baterías",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "El avión recupera la capacidad automáticamente al encender las baterías",
+        "text": "Realizando un aterrizaje en una pista de tierra",
         "is_correct": false
       }
     ],
@@ -340,23 +340,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Un valor mínimo de **RVR de 150 metros** (o 200 m según la directriz del Estado)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "RVR 75 metros",
+        "text": "RVR 1.500 metros",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "RVR 50 metros",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "RVR 1.500 metros",
+        "id": "C",
+        "text": "RVR 75 metros",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Un valor mínimo de **RVR de 150 metros** (o 200 m según la directriz del Estado)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -377,22 +377,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Un segmento de al menos **3 luces consecutivas** (luces de aproximación, umbral, TDZ o eje de pista) que proporcionen guía lateral inequívoca",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Ver toda la pista completa de principio a fin",
+        "text": "No se exige ninguna luz pudiendo aterrizar a oscuras",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Ver la terminal de pasajeros a través de la niebla",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Un segmento de al menos **3 luces consecutivas** (luces de aproximación, umbral, TDZ o eje de pista) que proporcionen guía lateral inequívoca",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "No se exige ninguna luz pudiendo aterrizar a oscuras",
+        "text": "Ver toda la pista completa de principio a fin",
         "is_correct": false
       }
     ],
@@ -419,7 +419,7 @@
       },
       {
         "id": "B",
-        "text": "Ver las montañas situadas detrás del aeropuerto",
+        "text": "Ver el coche de bomberos situado en la calle de rodaje",
         "is_correct": false
       },
       {
@@ -429,7 +429,7 @@
       },
       {
         "id": "D",
-        "text": "Ver el coche de bomberos situado en la calle de rodaje",
+        "text": "Ver las montañas situadas detrás del aeropuerto",
         "is_correct": false
       }
     ],
@@ -451,8 +451,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Una altura sobre el terreno (típicamente 100-200 ft RA) por debajo de la cual, si ocurre un fallo no crítico, la aproximación automática continúa y aterriza sin realizar frustrada",
-        "is_correct": true
+        "text": "La altura a la que se apagan las luces de cabina",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -461,12 +461,12 @@
       },
       {
         "id": "C",
-        "text": "La altitud mínima para abrir las puertas de pasaje",
-        "is_correct": false
+        "text": "Una altura sobre el terreno (típicamente 100-200 ft RA) por debajo de la cual, si ocurre un fallo no crítico, la aproximación automática continúa y aterriza sin realizar frustrada",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "La altura a la que se apagan las luces de cabina",
+        "text": "La altitud mínima para abrir las puertas de pasaje",
         "is_correct": false
       }
     ],
@@ -488,13 +488,13 @@
     "options": [
       {
         "id": "A",
-        "text": "La velocidad indicada debe mantenerse dentro de **± 5 nudos** sobre la velocidad objetivo y **nunca por debajo de la velocidad de referencia (Vref)**",
-        "is_correct": true
+        "text": "Un margen libre de ± 25 nudos",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Un margen libre de ± 25 nudos",
-        "is_correct": false
+        "text": "La velocidad indicada debe mantenerse dentro de **± 5 nudos** sobre la velocidad objetivo y **nunca por debajo de la velocidad de referencia (Vref)**",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -530,17 +530,17 @@
       },
       {
         "id": "B",
-        "text": "Para que los pasajeros puedan ver aterrizar al avión que viene detrás",
+        "text": "Porque las líneas de parada de CAT I se borran con la lluvia",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Para no hacer ruido cerca de la estación de bomberos",
+        "text": "Para que los pasajeros puedan ver aterrizar al avión que viene detrás",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Porque las líneas de parada de CAT I se borran con la lluvia",
+        "text": "Para no hacer ruido cerca de la estación de bomberos",
         "is_correct": false
       }
     ],
@@ -567,17 +567,17 @@
       },
       {
         "id": "B",
-        "text": "Solo se tiene en cuenta el RVR del final de la pista",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "El promedio de los tres dividido entre dos",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "El sensor de la terminal de pasajeros",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo se tiene en cuenta el RVR del final de la pista",
         "is_correct": false
       }
     ],
@@ -599,23 +599,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Abortar el despegue inmediatamente (RTO), aplicando frenado máximo y manteniendo el eje con la indicación visual disponible y referencias instrumentales",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Continuar el despegue a ciegas confiando en no salirse del asfalto",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Apagar los motores en el aire a 50 pies",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Virar 90 grados hacia el césped lateral",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Abortar el despegue inmediatamente (RTO), aplicando frenado máximo y manteniendo el eje con la indicación visual disponible y referencias instrumentales",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -636,22 +636,22 @@
     "options": [
       {
         "id": "A",
+        "text": "No requiere entrenamiento si el piloto tiene más de 40 años",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Haber completado satisfactoriamente el entrenamiento en simulador de vuelo (FFS) y verificación de competencia semestral/anual (LPC/OPC) con despegues LVTO y aproximaciones CAT II/III",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "Haber volado al menos 100 horas en avioneta monomotor",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Haber leído un folleto publicitario sobre el clima invernal",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "No requiere entrenamiento si el piloto tiene más de 40 años",
+        "text": "Haber leído un folleto publicitario sobre el clima invernal",
         "is_correct": false
       }
     ],
@@ -673,23 +673,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Un límite máximo de **15 a 20 nudos de viento cruzado** (según el AFM de Embraer Sección 2 para Autoland)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Un límite de 50 nudos de viento cruzado",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "No existe límite de viento cruzado en Autoland",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "El límite es de 100 nudos si la pista es ancha",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Un límite de 50 nudos de viento cruzado",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Un límite máximo de **15 a 20 nudos de viento cruzado** (según el AFM de Embraer Sección 2 para Autoland)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -720,12 +720,12 @@
       },
       {
         "id": "C",
-        "text": "Que no hay pájaros volando en los alrededores",
+        "text": "No se requiere confirmación pudiendo aterrizar en cualquier momento",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No se requiere confirmación pudiendo aterrizar en cualquier momento",
+        "text": "Que no hay pájaros volando en los alrededores",
         "is_correct": false
       }
     ],
@@ -747,22 +747,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Ejecutar de inmediato una aproximación frustrada (Go-Around) aplicando empuje TOGA",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Esperar a que el avión choque contra el suelo para ver si rebota",
+        "text": "Desconectar los generadores eléctricos del avión",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Picar el morro bruscamente hacia la pista",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Ejecutar de inmediato una aproximación frustrada (Go-Around) aplicando empuje TOGA",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Desconectar los generadores eléctricos del avión",
+        "text": "Esperar a que el avión choque contra el suelo para ver si rebota",
         "is_correct": false
       }
     ],
@@ -784,22 +784,22 @@
     "options": [
       {
         "id": "A",
-        "text": "No está autorizado; el límite mínimo absoluto de despegue para la operación de la compañía es RVR 125 metros",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Está autorizado siempre que el copiloto lleve gafas de visión nocturna",
+        "text": "Está autorizado en cualquier pista militar",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Está autorizado si el avión rueda a velocidad de 5 nudos",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "No está autorizado; el límite mínimo absoluto de despegue para la operación de la compañía es RVR 125 metros",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Está autorizado en cualquier pista militar",
+        "text": "Está autorizado siempre que el copiloto lleve gafas de visión nocturna",
         "is_correct": false
       }
     ],
@@ -858,22 +858,22 @@
     "options": [
       {
         "id": "A",
+        "text": "No se transmite ningún registro por ACARS",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "El informe 'POST FLIGHT REPORT' con el registro detallado de la aproximación, pista, resultado y código del piloto a los mandos",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "Un mensaje libre de texto saludando a los programadores",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "El menú de catering consumido a bordo",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "No se transmite ningún registro por ACARS",
+        "text": "El menú de catering consumido a bordo",
         "is_correct": false
       }
     ],
@@ -895,8 +895,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Aeronave certificada y con sistemas al 100%, tripulación habilitada y con chequeo al día, aeródromo con LVP activos y cumplimiento riguroso de los mínimos de aproximación/despegue",
-        "is_correct": true
+        "text": "Confiar en la experiencia del copiloto sin verificar los sistemas",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -905,12 +905,12 @@
       },
       {
         "id": "C",
-        "text": "Volar sin consultar los informes meteorológicos de destino",
-        "is_correct": false
+        "text": "Aeronave certificada y con sistemas al 100%, tripulación habilitada y con chequeo al día, aeródromo con LVP activos y cumplimiento riguroso de los mínimos de aproximación/despegue",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "Confiar en la experiencia del copiloto sin verificar los sistemas",
+        "text": "Volar sin consultar los informes meteorológicos de destino",
         "is_correct": false
       }
     ],
@@ -932,8 +932,8 @@
     "options": [
       {
         "id": "A",
-        "text": "LVO – Low Visibility Operations",
-        "is_correct": true
+        "text": "CAT II/III solo",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -942,13 +942,13 @@
       },
       {
         "id": "C",
-        "text": "CAT II/III solo",
+        "text": "MVL – Mínimos de Visibilidad de Límite",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "MVL – Mínimos de Visibilidad de Límite",
-        "is_correct": false
+        "text": "LVO – Low Visibility Operations",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -969,22 +969,22 @@
     "options": [
       {
         "id": "A",
-        "text": "RVR < 550 m o visibilidad < 800 m para LVTO / RVR < 550 m para aproximación CAT II",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Visibilidad meteorológica < 1.500 m en todos los casos",
+        "text": "RVR < 200 m exclusivamente para CAT III",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Techo de nubes < 200 ft",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "RVR < 550 m o visibilidad < 800 m para LVTO / RVR < 550 m para aproximación CAT II",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "RVR < 200 m exclusivamente para CAT III",
+        "text": "Visibilidad meteorológica < 1.500 m en todos los casos",
         "is_correct": false
       }
     ],
@@ -1006,13 +1006,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Aprobación específica de operador LVO expedida por AESA y habilitación en la licencia del piloto",
-        "is_correct": true
+        "text": "La validez del examen de inglés OACI nivel 4",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Solo la habilitación de tipo en el E195-E2",
-        "is_correct": false
+        "text": "Aprobación específica de operador LVO expedida por AESA y habilitación en la licencia del piloto",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1021,7 +1021,7 @@
       },
       {
         "id": "D",
-        "text": "La validez del examen de inglés OACI nivel 4",
+        "text": "Solo la habilitación de tipo en el E195-E2",
         "is_correct": false
       }
     ],
@@ -1048,12 +1048,12 @@
       },
       {
         "id": "B",
-        "text": "Únicamente por comunicado NOTAM",
+        "text": "Solo mediante el aviso del handling en pista",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Solo mediante el aviso del handling en pista",
+        "text": "Únicamente por comunicado NOTAM",
         "is_correct": false
       },
       {
@@ -1080,8 +1080,8 @@
     "options": [
       {
         "id": "A",
-        "text": "RVR ≥ 125 m con iluminación de pista y marcas de línea central de alta intensidad",
-        "is_correct": true
+        "text": "RVR ≥ 550 m obligatoriamente",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1090,13 +1090,13 @@
       },
       {
         "id": "C",
-        "text": "RVR ≥ 550 m obligatoriamente",
+        "text": "No hay mínimo específico; depende exclusivamente del METAR",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No hay mínimo específico; depende exclusivamente del METAR",
-        "is_correct": false
+        "text": "RVR ≥ 125 m con iluminación de pista y marcas de línea central de alta intensidad",
+        "is_correct": true
       }
     ],
     "explanation": {

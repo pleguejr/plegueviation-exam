@@ -44,13 +44,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Rearward movement of the Center of Pressure (CP) and loss of downwash on the horizontal stabilizer due to shockwave formation on wing roots, mitigated by the Mach Trim system.",
-        "is_correct": true
+        "text": "Forward movement of the Center of Gravity (CG) due to fuel freezing in outboard tanks, mitigated by fuel crossfeed.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Forward movement of the Center of Gravity (CG) due to fuel freezing in outboard tanks, mitigated by fuel crossfeed.",
-        "is_correct": false
+        "text": "Rearward movement of the Center of Pressure (CP) and loss of downwash on the horizontal stabilizer due to shockwave formation on wing roots, mitigated by the Mach Trim system.",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -86,7 +86,7 @@
       },
       {
         "id": "B",
-        "text": "Swept wings create adverse yaw in steep turns that cannot be countered by ailerons without full rudder trim.",
+        "text": "Yaw Damper failure prevents autopilot engagement under any circumstances and prohibits IFR flight.",
         "is_correct": false
       },
       {
@@ -96,7 +96,7 @@
       },
       {
         "id": "D",
-        "text": "Yaw Damper failure prevents autopilot engagement under any circumstances and prohibits IFR flight.",
+        "text": "Swept wings create adverse yaw in steep turns that cannot be countered by ailerons without full rudder trim.",
         "is_correct": false
       }
     ],
@@ -118,13 +118,13 @@
     "options": [
       {
         "id": "A",
-        "text": "The maximum speed at which the pilot must make the decision to abort the takeoff and take the first action to stop the aircraft within the Accelerate-Stop Distance Available (ASDA).",
-        "is_correct": true
+        "text": "The exact speed at which the nosewheel lifts off the runway surface during takeoff roll.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "The exact speed at which the nosewheel lifts off the runway surface during takeoff roll.",
-        "is_correct": false
+        "text": "The maximum speed at which the pilot must make the decision to abort the takeoff and take the first action to stop the aircraft within the Accelerate-Stop Distance Available (ASDA).",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -155,22 +155,22 @@
     "options": [
       {
         "id": "A",
-        "text": "35 ft above the runway surface for a DRY runway; 15 ft above the runway surface for a WET or contaminated runway.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "50 ft for dry runways and 35 ft for wet runways.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "35 ft for all runway conditions without exception.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "100 ft for dry runways and 50 ft for wet runways.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "35 ft above the runway surface for a DRY runway; 15 ft above the runway surface for a WET or contaminated runway.",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "50 ft for dry runways and 35 ft for wet runways.",
         "is_correct": false
       }
     ],
@@ -192,22 +192,22 @@
     "options": [
       {
         "id": "A",
-        "text": "2.4% gross climb gradient at V2 speed with landing gear retracted and takeoff flaps set.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "3.3% gross climb gradient at Vx speed with gear extended.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "1.2% gross climb gradient at Vref+10 kt with flaps in transit.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "2.4% gross climb gradient at V2 speed with landing gear retracted and takeoff flaps set.",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "5.0% gross climb gradient under all temperature conditions.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "3.3% gross climb gradient at Vx speed with gear extended.",
         "is_correct": false
       }
     ],
@@ -229,8 +229,8 @@
     "options": [
       {
         "id": "A",
-        "text": "VMCG is the minimum speed on the ground where directional control can be maintained using aerodynamic controls alone (rudder) after engine failure; V1 must never be less than VMCG.",
-        "is_correct": true
+        "text": "VMCA is always lower than VMCG due to ground effect reducing rudder effectiveness.",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -244,8 +244,8 @@
       },
       {
         "id": "D",
-        "text": "VMCA is always lower than VMCG due to ground effect reducing rudder effectiveness.",
-        "is_correct": false
+        "text": "VMCG is the minimum speed on the ground where directional control can be maintained using aerodynamic controls alone (rudder) after engine failure; V1 must never be less than VMCG.",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -266,22 +266,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Dynamic hydroplaning (water layer lifts tire), Viscous hydroplaning (thin chemical/oil film), and Reverted Rubber hydroplaning (steam generated by locked wheel skidding).",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Thermal hydroplaning, Aerodynamic hydroplaning, and Electrostatic hydroplaning.",
+        "text": "Slush hydroplaning, Ice hydroplaning, and Snow hydroplaning.",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Crosswind hydroplaning, Centrifugal hydroplaning, and Ground effect hydroplaning.",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Dynamic hydroplaning (water layer lifts tire), Viscous hydroplaning (thin chemical/oil film), and Reverted Rubber hydroplaning (steam generated by locked wheel skidding).",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Slush hydroplaning, Ice hydroplaning, and Snow hydroplaning.",
+        "text": "Thermal hydroplaning, Aerodynamic hydroplaning, and Electrostatic hydroplaning.",
         "is_correct": false
       }
     ],
@@ -303,23 +303,23 @@
     "options": [
       {
         "id": "A",
-        "text": "A compressor stall is a localized breakdown of airflow across compressor blades with mild vibration; a surge is a complete axial flow reversal characterized by loud bangs, severe vibration, rapid EGT rise, and fluctuating EPR/N1.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "A compressor stall only occurs during engine start on the ground, whereas surge occurs exclusively in supersonic cruise.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Surge produces an immediate flameout without any increase in EGT or noise.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Compressor stalls require immediate engine shutdown in flight with the fire handle.",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "A compressor stall only occurs during engine start on the ground, whereas surge occurs exclusively in supersonic cruise.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "A compressor stall is a localized breakdown of airflow across compressor blades with mild vibration; a surge is a complete axial flow reversal characterized by loud bangs, severe vibration, rapid EGT rise, and fluctuating EPR/N1.",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -340,8 +340,8 @@
     "options": [
       {
         "id": "A",
-        "text": "The runway length where the Accelerate-Stop Distance Required (ASDR) exactly equals the Takeoff Distance Required with One Engine Inoperative (TODR_OEI) for a specific V1.",
-        "is_correct": true
+        "text": "The situation where fuel burn equals payload weight at takeoff.",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -355,8 +355,8 @@
       },
       {
         "id": "D",
-        "text": "The situation where fuel burn equals payload weight at takeoff.",
-        "is_correct": false
+        "text": "The runway length where the Accelerate-Stop Distance Required (ASDR) exactly equals the Takeoff Distance Required with One Engine Inoperative (TODR_OEI) for a specific V1.",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -382,12 +382,12 @@
       },
       {
         "id": "B",
-        "text": "Stopway increases TORA, whereas Clearway increases LDA.",
+        "text": "Stopway is only available for landing rollouts, while Clearway is for taxiing.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Stopway is only available for landing rollouts, while Clearway is for taxiing.",
+        "text": "Stopway increases TORA, whereas Clearway increases LDA.",
         "is_correct": false
       },
       {
@@ -414,22 +414,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Flatter upper surface delays the onset of supersonic shockwaves and reduces shock-induced boundary layer drag, allowing higher cruise Mach numbers or a thicker wing for structural fuel capacity.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Eliminates all aerodynamic stall characteristics up to 45 degrees angle of attack.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Increases low-speed drag during steep approach into London City.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Replaces the need for vortex generators, slats, and trailing edge flaps.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Flatter upper surface delays the onset of supersonic shockwaves and reduces shock-induced boundary layer drag, allowing higher cruise Mach numbers or a thicker wing for structural fuel capacity.",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Eliminates all aerodynamic stall characteristics up to 45 degrees angle of attack.",
         "is_correct": false
       }
     ],
@@ -451,17 +451,17 @@
     "options": [
       {
         "id": "A",
+        "text": "VMBE is the tire blow-out speed due to centrifugal expansion.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "VMBE is the maximum speed from which an aircraft can be stopped without exceeding the kinetic heat absorption limits of the brake assemblies; aborting above VMBE risks brake fire, fuse plug deflation, or catastrophic brake failure.",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "VMBE is the minimum speed at which anti-skid protection becomes active.",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "VMBE is the tire blow-out speed due to centrifugal expansion.",
+        "text": "VMBE is the minimum speed at which anti-skid protection becomes active.",
         "is_correct": false
       },
       {
@@ -488,23 +488,23 @@
     "options": [
       {
         "id": "A",
-        "text": "At the minimum point of the total drag curve where Induced Drag exactly equals Parasite Drag; corresponds to Maximum Glide Speed (V_GLIDE) and Maximum Endurance Speed (Holding Speed).",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "At the maximum speed MMO where parasite drag is highest.",
+        "text": "At the rotation speed VR with takeoff flaps extended.",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "At the stall speed VS1 where induced drag is zero.",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "At the rotation speed VR with takeoff flaps extended.",
+        "id": "C",
+        "text": "At the maximum speed MMO where parasite drag is highest.",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "At the minimum point of the total drag curve where Induced Drag exactly equals Parasite Drag; corresponds to Maximum Glide Speed (V_GLIDE) and Maximum Endurance Speed (Holding Speed).",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -525,23 +525,23 @@
     "options": [
       {
         "id": "A",
-        "text": "DRY: Certified distance must not exceed 60% of LDA (Factor 1.67); WET: Required distance is Dry Required × 1.15 (Overall factor 1.92).",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "DRY: Factor 1.30; WET: Factor 1.50.",
+        "text": "DRY: No safety margin; WET: Factor 1.10.",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "DRY: Factor 1.43 (70% rule); WET: Factor 1.60.",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "DRY: No safety margin; WET: Factor 1.10.",
+        "id": "C",
+        "text": "DRY: Factor 1.30; WET: Factor 1.50.",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "DRY: Certified distance must not exceed 60% of LDA (Factor 1.67); WET: Required distance is Dry Required × 1.15 (Overall factor 1.92).",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -567,17 +567,17 @@
       },
       {
         "id": "B",
-        "text": "The engine has a flat horizontal combustion chamber to reduce fuselage drag.",
+        "text": "Thrust rating remains identical at all flight levels from sea level to FL450.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "The engine cannot operate at altitudes exceeding 10,000 ft without auxiliary superchargers.",
+        "text": "The engine has a flat horizontal combustion chamber to reduce fuselage drag.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Thrust rating remains identical at all flight levels from sea level to FL450.",
+        "text": "The engine cannot operate at altitudes exceeding 10,000 ft without auxiliary superchargers.",
         "is_correct": false
       }
     ],
@@ -599,12 +599,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Optimum flight level is where Specific Air Range (SAR = True Airspeed / Fuel Flow) is maximized; as fuel burns off, aircraft weight decreases, reducing required lift and induced drag, which shifts the SAR peak to higher altitudes (Step Climb).",
-        "is_correct": true
+        "text": "Optimum altitude is determined strictly by cabin pressurization limits regardless of weight.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Optimum altitude is determined strictly by cabin pressurization limits regardless of weight.",
+        "text": "Optimum altitude is fixed by ATC before departure and cannot be modified in flight.",
         "is_correct": false
       },
       {
@@ -614,8 +614,8 @@
       },
       {
         "id": "D",
-        "text": "Optimum altitude is fixed by ATC before departure and cannot be modified in flight.",
-        "is_correct": false
+        "text": "Optimum flight level is where Specific Air Range (SAR = True Airspeed / Fuel Flow) is maximized; as fuel burns off, aircraft weight decreases, reducing required lift and induced drag, which shifts the SAR peak to higher altitudes (Step Climb).",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -636,17 +636,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Assumed temperature cannot reduce thrust by more than 5%, whereas derate reduces thrust by 50%.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "A Derate establishes a new certified lower thrust rating with reduced VMCG/VMCA limits (prohibiting throttle advancement beyond derate); Assumed Temperature is an operational performance reduction where full rated thrust may be manually selected at any time.",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "Derated thrust is only used on wet runways, while Assumed Temperature is only used on dry runways.",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Assumed temperature cannot reduce thrust by more than 5%, whereas derate reduces thrust by 50%.",
+        "text": "Derated thrust is only used on wet runways, while Assumed Temperature is only used on dry runways.",
         "is_correct": false
       },
       {
@@ -673,13 +673,13 @@
     "options": [
       {
         "id": "A",
-        "text": "The free-stream aircraft Mach number at which airflow over the highest camber point of the wing first reaches the local speed of sound (Mach 1.0).",
-        "is_correct": true
+        "text": "The speed where pitot tube heating automatically disconnects.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "The speed at which the entire aircraft exceeds Mach 1.0 in level flight.",
-        "is_correct": false
+        "text": "The free-stream aircraft Mach number at which airflow over the highest camber point of the wing first reaches the local speed of sound (Mach 1.0).",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -688,7 +688,7 @@
       },
       {
         "id": "D",
-        "text": "The speed where pitot tube heating automatically disconnects.",
+        "text": "The speed at which the entire aircraft exceeds Mach 1.0 in level flight.",
         "is_correct": false
       }
     ],
@@ -710,22 +710,22 @@
     "options": [
       {
         "id": "A",
-        "text": "High airport elevation (e.g. Toluca, Madrid, Aspen), high ambient temperature, zero wind or tailwind, and heavy takeoff weight resulting in very high True Airspeed at liftoff (V_LOF).",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Low elevation sea-level departure in freezing rain.",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "High headwind component during light gross weight ferry flight.",
+        "id": "B",
+        "text": "Takeoff with full flaps on contaminated slush runways.",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "High airport elevation (e.g. Toluca, Madrid, Aspen), high ambient temperature, zero wind or tailwind, and heavy takeoff weight resulting in very high True Airspeed at liftoff (V_LOF).",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Takeoff with full flaps on contaminated slush runways.",
+        "text": "High headwind component during light gross weight ferry flight.",
         "is_correct": false
       }
     ],
@@ -747,18 +747,18 @@
     "options": [
       {
         "id": "A",
-        "text": "Immediately disconnect autopilot, apply smooth forward pitch control to reduce Angle of Attack (AoA), level wings, and smoothly advance thrust as recovery begins without exceeding engine limits.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Immediately pull full aft yoke to trade altitude for airspeed while selecting full rudder trim.",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Rapidly extend full flight spoilers to increase descent rate while maintaining cruise pitch attitude.",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Immediately disconnect autopilot, apply smooth forward pitch control to reduce Angle of Attack (AoA), level wings, and smoothly advance thrust as recovery begins without exceeding engine limits.",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -784,8 +784,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Gross flight path is the actual measured performance of the aircraft; Net flight path is the gross performance degraded by a mandatory 0.8% gradient reduction (for twins) to guarantee obstacle clearance.",
-        "is_correct": true
+        "text": "Gross gradient is reduced by 2.5% for all transport aircraft.",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -799,8 +799,8 @@
       },
       {
         "id": "D",
-        "text": "Gross gradient is reduced by 2.5% for all transport aircraft.",
-        "is_correct": false
+        "text": "Gross flight path is the actual measured performance of the aircraft; Net flight path is the gross performance degraded by a mandatory 0.8% gradient reduction (for twins) to guarantee obstacle clearance.",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -821,23 +821,23 @@
     "options": [
       {
         "id": "A",
-        "text": "The specific altitude where a constant Indicated Airspeed (VMO / CAS) and a constant Mach number (MMO) represent the exact same True Airspeed (TAS).",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "The altitude where the aircraft transitions from Class G uncontrolled airspace into Class A controlled airspace.",
+        "text": "The level where supplemental oxygen is required for cabin passengers.",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "The altitude where autopilot transfers authority from elevator servos to stabilizer trim motors.",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "The level where supplemental oxygen is required for cabin passengers.",
+        "id": "C",
+        "text": "The altitude where the aircraft transitions from Class G uncontrolled airspace into Class A controlled airspace.",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "The specific altitude where a constant Indicated Airspeed (VMO / CAS) and a constant Mach number (MMO) represent the exact same True Airspeed (TAS).",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -858,13 +858,13 @@
     "options": [
       {
         "id": "A",
-        "text": "High-pressure compressor stage bleed air is diverted from the core gas path to heat leading edges, reducing available engine thrust, increasing EGT, and lowering maximum cruise ceiling.",
-        "is_correct": true
+        "text": "Thermal expansion of the wing alters the aerodynamic camber, increasing stall speed by 40%.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Anti-ice valves increase fuel flow to the APU rather than the main engines.",
-        "is_correct": false
+        "text": "High-pressure compressor stage bleed air is diverted from the core gas path to heat leading edges, reducing available engine thrust, increasing EGT, and lowering maximum cruise ceiling.",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -873,7 +873,7 @@
       },
       {
         "id": "D",
-        "text": "Thermal expansion of the wing alters the aerodynamic camber, increasing stall speed by 40%.",
+        "text": "Anti-ice valves increase fuel flow to the APU rather than the main engines.",
         "is_correct": false
       }
     ],
@@ -895,22 +895,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Upwash, downwash, and wingtip vortices are restricted by the ground surface, significantly reducing induced drag, increasing effective wing aspect ratio, and creating a floating tendency.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Parasite drag doubles instantly, causing the aircraft to sink rapidly onto the runway.",
+        "text": "Dynamic pressure drops to zero causing false indicated airspeed readings.",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Elevator authority is completely lost requiring full nose-up stabilizer trim.",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Upwash, downwash, and wingtip vortices are restricted by the ground surface, significantly reducing induced drag, increasing effective wing aspect ratio, and creating a floating tendency.",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Dynamic pressure drops to zero causing false indicated airspeed readings.",
+        "text": "Parasite drag doubles instantly, causing the aircraft to sink rapidly onto the runway.",
         "is_correct": false
       }
     ],

@@ -44,23 +44,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Cuando el combustible discrecional supera 500 kg",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Cuando el combustible discrecional supera 200 kg",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Solo si hay tankering EASA Re-fuel sin límite de masa",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Únicamente si el alternativo de despegue está fuera de 1 h monomotor",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cuando el combustible discrecional supera 200 kg",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cuando el combustible discrecional supera 500 kg",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -81,23 +81,23 @@
     "options": [
       {
         "id": "A",
-        "text": "ELM < MLM (54.000 kg)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "ELM ≤ MTOW estructural sin comparar MLM",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "ELM > MLM para disponer de margen de frenada",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Solo verificar ZFW < MZFW; el MLM no aplica en LVTO",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "ELM ≤ MTOW estructural sin comparar MLM",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "ELM < MLM (54.000 kg)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -118,17 +118,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Al detenerse el avión para evaluar evacuación",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "A 30 segundos del impacto (emergencia prevista o imprevista)",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "A 5 minutos del aterrizaje en emergencia prevista",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Al detenerse el avión para evaluar evacuación",
+        "text": "A 5 minutos del aterrizaje en emergencia prevista",
         "is_correct": false
       },
       {
@@ -155,12 +155,12 @@
     "options": [
       {
         "id": "A",
-        "text": "El Comandante actúa siempre como PF",
-        "is_correct": true
+        "text": "El Primer Oficial actúa siempre como PF",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "El Primer Oficial actúa siempre como PF",
+        "text": "Cualquier piloto cualificado LVO puede ser PF sin restricción de mando",
         "is_correct": false
       },
       {
@@ -170,8 +170,8 @@
       },
       {
         "id": "D",
-        "text": "Cualquier piloto cualificado LVO puede ser PF sin restricción de mando",
-        "is_correct": false
+        "text": "El Comandante actúa siempre como PF",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -192,8 +192,8 @@
     "options": [
       {
         "id": "A",
-        "text": "RVR 125 m (con luces de eje ≤ 15 m y de borde ≤ 60 m)",
-        "is_correct": true
+        "text": "RVR 300 m TDZ como mínimo de despegue",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -207,8 +207,8 @@
       },
       {
         "id": "D",
-        "text": "RVR 300 m TDZ como mínimo de despegue",
-        "is_correct": false
+        "text": "RVR 125 m (con luces de eje ≤ 15 m y de borde ≤ 60 m)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -229,22 +229,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Cada 30 min: 60% N1 durante 10 s y volver a IDLE",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Cada 10 min: 40% N1 durante 30 s",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Cada 60 min: TOGA durante 5 s",
+        "id": "B",
+        "text": "Solo una vez antes del pushback a 70% N1",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Cada 30 min: 60% N1 durante 10 s y volver a IDLE",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Solo una vez antes del pushback a 70% N1",
+        "text": "Cada 60 min: TOGA durante 5 s",
         "is_correct": false
       }
     ],
@@ -266,22 +266,22 @@
     "options": [
       {
         "id": "A",
-        "text": "ENG (solo motores) si hay humedad visible",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "ALL (motores y alas) siempre por debajo de 10°C",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "OFF hasta OAT ≤ 0°C",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "ENG (solo motores) si hay humedad visible",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "WING únicamente; motores no requieren Anti-Ice por encima de 5°C",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "ALL (motores y alas) siempre por debajo de 10°C",
         "is_correct": false
       }
     ],
@@ -308,17 +308,17 @@
       },
       {
         "id": "B",
-        "text": "15 kt en recta y 10 kt en virajes",
+        "text": "Solo 5 kt en toda la maniobra de rodaje",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "20 kt en recta y 8 kt en virajes",
+        "text": "15 kt en recta y 10 kt en virajes",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Solo 5 kt en toda la maniobra de rodaje",
+        "text": "20 kt en recta y 8 kt en virajes",
         "is_correct": false
       }
     ],
@@ -340,18 +340,18 @@
     "options": [
       {
         "id": "A",
-        "text": "RVR TDZ 300 m (intermedio/final 125 m); 3 luces consecutivas + 1 elemento transversal",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "RVR TDZ 200 m; solo 3 luces de eje de pista",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "RVR TDZ 550 m CAT I sin requisito de luces transversales",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "RVR TDZ 300 m (intermedio/final 125 m); 3 luces consecutivas + 1 elemento transversal",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -382,7 +382,7 @@
       },
       {
         "id": "B",
-        "text": "RVR TDZ 300 m; 3 luces + barra transversal",
+        "text": "RVR TDZ 125 m en TDZ y sin requisito visual en DH",
         "is_correct": false
       },
       {
@@ -392,7 +392,7 @@
       },
       {
         "id": "D",
-        "text": "RVR TDZ 125 m en TDZ y sin requisito visual en DH",
+        "text": "RVR TDZ 300 m; 3 luces + barra transversal",
         "is_correct": false
       }
     ],
@@ -419,12 +419,12 @@
       },
       {
         "id": "B",
-        "text": "Si a 500 ft RA no aparece AUTOLAND 1",
+        "text": "Si a 30 ft RA no aparece ROLLOUT",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Si a 30 ft RA no aparece ROLLOUT",
+        "text": "Si a 500 ft RA no aparece AUTOLAND 1",
         "is_correct": false
       },
       {
@@ -456,12 +456,12 @@
       },
       {
         "id": "B",
-        "text": "Entre 800 ft y 500 ft RA con Flap 3",
+        "text": "A exactamente 150 ft RA junto con ALIGN",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "A exactamente 150 ft RA junto con ALIGN",
+        "text": "Entre 800 ft y 500 ft RA con Flap 3",
         "is_correct": false
       },
       {
@@ -488,22 +488,22 @@
     "options": [
       {
         "id": "A",
-        "text": "1.500 ft AFE, 2 NM de pista, Flap 1 (180 kt)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "1.000 ft AFE, 1,5 NM, Flap 2 (160 kt)",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "2.000 ft AFE, 3 NM, Flap 0",
+        "id": "B",
+        "text": "1.500 ft AFE, 4 NM, Flap 3 (150 kt)",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "1.500 ft AFE, 2 NM de pista, Flap 1 (180 kt)",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "1.500 ft AFE, 4 NM, Flap 3 (150 kt)",
+        "text": "2.000 ft AFE, 3 NM, Flap 0",
         "is_correct": false
       }
     ],
@@ -525,8 +525,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Flap 2 (160 kt) y cronómetro 30 s (+1 s/kt cara, −1 s/kt cola)",
-        "is_correct": true
+        "text": "Flap 1 (180 kt) y cronómetro 45 s",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -535,8 +535,8 @@
       },
       {
         "id": "C",
-        "text": "Flap 1 (180 kt) y cronómetro 45 s",
-        "is_correct": false
+        "text": "Flap 2 (160 kt) y cronómetro 30 s (+1 s/kt cara, −1 s/kt cola)",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -567,12 +567,12 @@
       },
       {
         "id": "B",
-        "text": "Tren arriba + Flap 2 (160 kt)",
+        "text": "Tren abajo + Flap FULL inmediatamente",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Tren abajo + Flap FULL inmediatamente",
+        "text": "Tren arriba + Flap 2 (160 kt)",
         "is_correct": false
       },
       {
@@ -599,8 +599,8 @@
     "options": [
       {
         "id": "A",
-        "text": "AEO: Gear Down + Flaps 3; OEI: Flap 2 (tren en viraje a base)",
-        "is_correct": true
+        "text": "AEO: Flap 1; OEI: Flap 0 hasta runway in sight",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -614,8 +614,8 @@
       },
       {
         "id": "D",
-        "text": "AEO: Flap 1; OEI: Flap 0 hasta runway in sight",
-        "is_correct": false
+        "text": "AEO: Gear Down + Flaps 3; OEI: Flap 2 (tren en viraje a base)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -636,22 +636,22 @@
     "options": [
       {
         "id": "A",
-        "text": "20 s base + 30 s por cada 1.000 ft AFE de Circling Altitude",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "30 s fijos sin corrección por altura",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "45 s + 10 s por cada 500 ft AFE",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Solo el arco Fix Info de 3 NM sin cronómetro",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "20 s base + 30 s por cada 1.000 ft AFE de Circling Altitude",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "30 s fijos sin corrección por altura",
         "is_correct": false
       }
     ],
@@ -673,22 +673,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Si deflexión > 1/2 escala CDI en LOC o > 5° en NDB",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Si deflexión > 1 escala completa CDI o > 10° en NDB",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Solo si se pierde VGP por debajo de MDA",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Únicamente tras \"MINIMUMS\" sin pista a la vista",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Si deflexión > 1/2 escala CDI en LOC o > 5° en NDB",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Si deflexión > 1 escala completa CDI o > 10° en NDB",
         "is_correct": false
       }
     ],
@@ -710,13 +710,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Landing Gear Down + Flap 3",
-        "is_correct": true
+        "text": "Flap 2 únicamente, tren abajo en FAF",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Flap 2 únicamente, tren abajo en FAF",
-        "is_correct": false
+        "text": "Landing Gear Down + Flap 3",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -747,23 +747,23 @@
     "options": [
       {
         "id": "A",
-        "text": "GEAR DOWN + FLAPS 3",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "FLAPS 5 + GA altitude set",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Solo Before Landing Checklist sin cambio de flaps",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "GEAR UP si se anticipa missed approach",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "FLAPS 5 + GA altitude set",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "GEAR DOWN + FLAPS 3",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -789,12 +789,12 @@
       },
       {
         "id": "B",
-        "text": "FLAPS 3 únicamente sin checklist monomotor",
+        "text": "FLAPS FULL como en aterrizaje AEO visual",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "FLAPS FULL como en aterrizaje AEO visual",
+        "text": "FLAPS 3 únicamente sin checklist monomotor",
         "is_correct": false
       },
       {
@@ -863,12 +863,12 @@
       },
       {
         "id": "B",
-        "text": "Máximo 1 unidad por pasajero; tripulación sin límite operativo",
+        "text": "Máximo 4 unidades si van en bodega protegidas",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Máximo 4 unidades si van en bodega protegidas",
+        "text": "Máximo 1 unidad por pasajero; tripulación sin límite operativo",
         "is_correct": false
       },
       {
@@ -895,13 +895,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Límite estricto ≤ 100 Wh y cumplimiento UN 38.3",
-        "is_correct": true
+        "text": "Hasta 160 Wh con aprobación del PIC",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Hasta 160 Wh con aprobación del PIC",
-        "is_correct": false
+        "text": "Límite estricto ≤ 100 Wh y cumplimiento UN 38.3",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -937,12 +937,12 @@
       },
       {
         "id": "B",
-        "text": "1 de enero de 2026",
+        "text": "27 de marzo de 2027 (con DGR 68.ª)",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "27 de marzo de 2027 (con DGR 68.ª)",
+        "text": "1 de enero de 2026",
         "is_correct": false
       },
       {
@@ -974,7 +974,7 @@
       },
       {
         "id": "B",
-        "text": "Meteo → EICAS → ATC → NOTAM → Alternate",
+        "text": "Mayday → Evacuate → Announce → Notify → Assess",
         "is_correct": false
       },
       {
@@ -984,7 +984,7 @@
       },
       {
         "id": "D",
-        "text": "Mayday → Evacuate → Announce → Notify → Assess",
+        "text": "Meteo → EICAS → ATC → NOTAM → Alternate",
         "is_correct": false
       }
     ],
@@ -1006,22 +1006,22 @@
     "options": [
       {
         "id": "A",
+        "text": "Inop MEL, Mass, Fuel imbalance, LOC, OEI, CAT II, CVR",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Inoperative items, Meteo, Fuel, Landing performance, Options, Choose, Communications",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "ILS, MDA, Flaps, LOC, Offset, Circling, Checklist",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Identify, Mitigate, Fly, Land, Organize, Call, Close",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "Inop MEL, Mass, Fuel imbalance, LOC, OEI, CAT II, CVR",
+        "text": "Identify, Mitigate, Fly, Land, Organize, Call, Close",
         "is_correct": false
       }
     ],
@@ -1043,8 +1043,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Transferir combustible",
-        "is_correct": true
+        "text": "Aplicar MEANA tras estabilizar la trayectoria",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1058,8 +1058,8 @@
       },
       {
         "id": "D",
-        "text": "Aplicar MEANA tras estabilizar la trayectoria",
-        "is_correct": false
+        "text": "Transferir combustible",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1080,12 +1080,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Solo tren arriba y cancelar avisos; cero otras acciones de cabina",
-        "is_correct": true
+        "text": "Ejecutar Memory Items completos antes de 400 ft",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Ejecutar Memory Items completos antes de 400 ft",
+        "text": "Abrir QRH Emergency Checklist en cuanto haya positive rate",
         "is_correct": false
       },
       {
@@ -1095,8 +1095,8 @@
       },
       {
         "id": "D",
-        "text": "Abrir QRH Emergency Checklist en cuanto haya positive rate",
-        "is_correct": false
+        "text": "Solo tren arriba y cancelar avisos; cero otras acciones de cabina",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1117,22 +1117,22 @@
     "options": [
       {
         "id": "A",
-        "text": "GREEN DOT",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "VFS − 10 en FLCH desde el primer segundo",
+        "text": "VMO hasta EO MAX ALT",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "250 KIAS de turbulencia bajo 10.000 ft",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "GREEN DOT",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "VMO hasta EO MAX ALT",
+        "text": "VFS − 10 en FLCH desde el primer segundo",
         "is_correct": false
       }
     ],
@@ -1159,12 +1159,12 @@
       },
       {
         "id": "B",
-        "text": "14.000 ft para despliegue de máscaras PAX",
+        "text": "FL100 fijo sin considerar MEA",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "FL100 fijo sin considerar MEA",
+        "text": "14.000 ft para despliegue de máscaras PAX",
         "is_correct": false
       },
       {
@@ -1191,8 +1191,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Reducir velocidad a 250 kt",
-        "is_correct": true
+        "text": "Seleccionar SPEEDBRAKE FULL OPEN",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1201,13 +1201,13 @@
       },
       {
         "id": "C",
-        "text": "Seleccionar SPEEDBRAKE FULL OPEN",
+        "text": "Anunciar \"DESCENSO FINALIZADO\" a cabina",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Anunciar \"DESCENSO FINALIZADO\" a cabina",
-        "is_correct": false
+        "text": "Reducir velocidad a 250 kt",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1233,17 +1233,17 @@
       },
       {
         "id": "B",
-        "text": "Cualquier fallo de sistema excepto TLA NOT TOGA y FUEL LO LEVEL",
+        "text": "Nunca se aborta por encima de 80 kt; se continúa siempre hasta V1",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Únicamente por EICAS Caution ámbar",
+        "text": "Cualquier fallo de sistema excepto TLA NOT TOGA y FUEL LO LEVEL",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Nunca se aborta por encima de 80 kt; se continúa siempre hasta V1",
+        "text": "Únicamente por EICAS Caution ámbar",
         "is_correct": false
       }
     ],
@@ -1270,17 +1270,17 @@
       },
       {
         "id": "B",
-        "text": "\"EVACUACIÓN, EVACUACIÓN, EVACUACIÓN\"",
+        "text": "\"SOBRECARGO A CABINA\"",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "\"PROTECCIÓN, PROTECCIÓN, PROTECCIÓN\"",
+        "text": "\"EVACUACIÓN, EVACUACIÓN, EVACUACIÓN\"",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "\"SOBRECARGO A CABINA\"",
+        "text": "\"PROTECCIÓN, PROTECCIÓN, PROTECCIÓN\"",
         "is_correct": false
       }
     ],
@@ -1302,23 +1302,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Las órdenes de resolución del TCAS RA",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "La última autorización ATC de nivel",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Solo el juicio del PM sin desconectar AP",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "El modo LNAV/VNAV del FMS",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La última autorización ATC de nivel",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Las órdenes de resolución del TCAS RA",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1339,23 +1339,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Cambiar la configuración (no retraer tren ni mover flaps)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Avanzar palancas a MAX DETENT",
+        "text": "Pulsar TO/GA para guiado WSHR",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Seguir el FD hasta 15° o el PLI",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Pulsar TO/GA para guiado WSHR",
+        "id": "C",
+        "text": "Avanzar palancas a MAX DETENT",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cambiar la configuración (no retraer tren ni mover flaps)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1376,17 +1376,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Entre 200 ft y 2.500 ft AGL",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Entre 10 ft y 1.500 ft AGL",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "Entre 0 ft y 400 ft AGL únicamente",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Entre 200 ft y 2.500 ft AGL",
+        "text": "Entre 0 ft y 400 ft AGL únicamente",
         "is_correct": false
       },
       {
@@ -1413,23 +1413,23 @@
     "options": [
       {
         "id": "A",
-        "text": "15° Nose Up o límite del Pitch Limit Indicator (PLI), planos nivelados",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "8° Nose Up como en go-around visual estándar",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "25° Nose Up sin referencia al PLI",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Mantener actitud actual y solo MAX thrust",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "8° Nose Up como en go-around visual estándar",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "15° Nose Up o límite del Pitch Limit Indicator (PLI), planos nivelados",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1450,23 +1450,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Threats/TEM, Weather/pista, Inop items (MEL/CDL), NOTAMs/SNOWTAMs",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Time, Wind, ILS, Navigation aids",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Taxi, Weather radar, Inertial, NOTOC",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Thrust, Weights, Icing, Noise abatement",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Time, Wind, ILS, Navigation aids",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Threats/TEM, Weather/pista, Inop items (MEL/CDL), NOTAMs/SNOWTAMs",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1497,12 +1497,12 @@
       },
       {
         "id": "C",
-        "text": "FLAPS FULL y AP ON hasta flare",
+        "text": "FLAPS 2 manteniendo gear up hasta short final",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "FLAPS 2 manteniendo gear up hasta short final",
+        "text": "FLAPS FULL y AP ON hasta flare",
         "is_correct": false
       }
     ],
@@ -1524,13 +1524,13 @@
     "options": [
       {
         "id": "A",
-        "text": "NO FLEX TAKEOFF; usar empuje nominal o DERATED según ePerf",
-        "is_correct": true
+        "text": "FLEX obligatorio para reducir desgaste de motores",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "FLEX obligatorio para reducir desgaste de motores",
-        "is_correct": false
+        "text": "NO FLEX TAKEOFF; usar empuje nominal o DERATED según ePerf",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1561,22 +1561,22 @@
     "options": [
       {
         "id": "A",
-        "text": "+2.000 ft/min hasta 12.400 ft (normal) o 14.500 ft (H ALTO)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "+3.000 ft/min hasta 10.000 ft siempre",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "+500 ft/min hasta 8.000 ft",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "+2.000 ft/min sin límite de techo de cabina",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "+2.000 ft/min hasta 12.400 ft (normal) o 14.500 ft (H ALTO)",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "+3.000 ft/min hasta 10.000 ft siempre",
         "is_correct": false
       }
     ],
@@ -1598,13 +1598,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Mínimo 5% por encima de N1 IDLE",
-        "is_correct": true
+        "text": "N1 máximo continuo sin mínimo sobre IDLE",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Exactamente N1 IDLE para reducir asimetría",
-        "is_correct": false
+        "text": "Mínimo 5% por encima de N1 IDLE",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1613,7 +1613,7 @@
       },
       {
         "id": "D",
-        "text": "N1 máximo continuo sin mínimo sobre IDLE",
+        "text": "Exactamente N1 IDLE para reducir asimetría",
         "is_correct": false
       }
     ],
@@ -1635,22 +1635,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Airspeed mínimo 270 KIAS y RAT MANUAL DEPLOY Lever PULL",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Airspeed 210 KIAS y solo despliegue automático de RAT",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Green Dot y APU start inmediato como único Memory Item",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "Airspeed mínimo 270 KIAS y RAT MANUAL DEPLOY Lever PULL",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "250 KIAS y FIRE HANDLE PULL en ambos motores",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Airspeed 210 KIAS y solo despliegue automático de RAT",
         "is_correct": false
       }
     ],

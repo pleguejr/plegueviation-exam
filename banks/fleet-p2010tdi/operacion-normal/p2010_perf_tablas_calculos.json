@@ -12,17 +12,17 @@
       },
       {
         "id": "B",
-        "text": "Flaps 0°: 65 KIAS; Flaps T/O: 58 KIAS; Flaps FULL (LAND): 52 KIAS",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Flaps 0°: 58 KIAS; Flaps T/O: 50 KIAS; Flaps FULL (LAND): 42 KIAS",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Flaps 0°: 70 KIAS; Flaps T/O: 60 KIAS; Flaps FULL (LAND): 55 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Flaps 0°: 65 KIAS; Flaps T/O: 58 KIAS; Flaps FULL (LAND): 52 KIAS",
         "is_correct": false
       }
     ],
@@ -44,23 +44,23 @@
     "options": [
       {
         "id": "A",
-        "text": "86 KIAS",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "72 KIAS",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "96 KIAS",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "66 KIAS",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "72 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "86 KIAS",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -81,12 +81,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Reducción de 10 metros de distancia de despegue por cada nudo de viento de cara",
-        "is_correct": true
+        "text": "Reducción de 4 metros (13 ft) por cada nudo de viento de cara",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Reducción de 4 metros (13 ft) por cada nudo de viento de cara",
+        "text": "No se aplica corrección por viento de cara por debajo de 10 nudos",
         "is_correct": false
       },
       {
@@ -96,8 +96,8 @@
       },
       {
         "id": "D",
-        "text": "No se aplica corrección por viento de cara por debajo de 10 nudos",
-        "is_correct": false
+        "text": "Reducción de 10 metros de distancia de despegue por cada nudo de viento de cara",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -118,8 +118,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Incremento de 20 metros de distancia de despegue por cada nudo de viento en cola",
-        "is_correct": true
+        "text": "Incremento del 5% fijo independientemente de la intensidad",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -128,13 +128,13 @@
       },
       {
         "id": "C",
-        "text": "Incremento del 5% fijo independientemente de la intensidad",
+        "text": "Incremento de 35 metros por cada nudo, manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Incremento de 35 metros por cada nudo, manteniendo el cumplimiento de las limitaciones operacionales del manual",
-        "is_correct": false
+        "text": "Incremento de 20 metros de distancia de despegue por cada nudo de viento en cola",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -155,13 +155,13 @@
     "options": [
       {
         "id": "A",
-        "text": "+10% a la distancia de carrera en tierra",
-        "is_correct": true
+        "text": "+15% solo si la hierba supera los 10 cm",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "+25% a la distancia total, siempre que se notifique previamente a la autoridad competente y al CCO",
-        "is_correct": false
+        "text": "+10% a la distancia de carrera en tierra",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -170,7 +170,7 @@
       },
       {
         "id": "D",
-        "text": "+15% solo si la hierba supera los 10 cm",
+        "text": "+25% a la distancia total, siempre que se notifique previamente a la autoridad competente y al CCO",
         "is_correct": false
       }
     ],
@@ -192,22 +192,22 @@
     "options": [
       {
         "id": "A",
-        "text": "+10% a la carrera en tierra por cada +1% de pendiente ascendente",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "+5% por cada +1% de pendiente, siempre que se notifique previamente a la autoridad competente y al CCO",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "+2% por cada grado de inclinación, requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "+10% a la carrera en tierra por cada +1% de pendiente ascendente",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "No se aplica corrección para pendientes menores del 2%",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "+5% por cada +1% de pendiente, siempre que se notifique previamente a la autoridad competente y al CCO",
         "is_correct": false
       }
     ],
@@ -229,23 +229,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Aproximadamente 110 metros (361 ft) de reducción de distancia de despegue",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Aproximadamente 50 metros (164 ft), siempre que se notifique previamente a la autoridad competente y al CCO",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Aproximadamente 200 metros (656 ft), requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Aproximadamente 20 metros (66 ft), manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aproximadamente 50 metros (164 ft), siempre que se notifique previamente a la autoridad competente y al CCO",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aproximadamente 110 metros (361 ft) de reducción de distancia de despegue",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -266,12 +266,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Carrera en tierra (GR): 389 m (1276 ft); Distancia total sobre 50 ft: 617 m (2024 ft)",
-        "is_correct": true
+        "text": "Carrera en tierra (GR): 250 m; Distancia total sobre 50 ft: 450 m",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Carrera en tierra (GR): 250 m; Distancia total sobre 50 ft: 450 m",
+        "text": "Carrera en tierra (GR): 315 m; Distancia total sobre 50 ft: 510 m",
         "is_correct": false
       },
       {
@@ -281,8 +281,8 @@
       },
       {
         "id": "D",
-        "text": "Carrera en tierra (GR): 315 m; Distancia total sobre 50 ft: 510 m",
-        "is_correct": false
+        "text": "Carrera en tierra (GR): 389 m (1276 ft); Distancia total sobre 50 ft: 617 m (2024 ft)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -303,22 +303,22 @@
     "options": [
       {
         "id": "A",
-        "text": "648 ft/min",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "850 ft/min",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "500 ft/min",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "1050 ft/min",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "648 ft/min",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "850 ft/min",
         "is_correct": false
       }
     ],
@@ -340,13 +340,13 @@
     "options": [
       {
         "id": "A",
-        "text": "140 KTAS y 33 L/h (8.7 US gal/h)",
-        "is_correct": true
+        "text": "130 KTAS y 22 L/h (5.8 US gal/h)",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "125 KTAS y 26 L/h (6.8 US gal/h)",
-        "is_correct": false
+        "text": "140 KTAS y 33 L/h (8.7 US gal/h)",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -355,7 +355,7 @@
       },
       {
         "id": "D",
-        "text": "130 KTAS y 22 L/h (5.8 US gal/h)",
+        "text": "125 KTAS y 26 L/h (6.8 US gal/h)",
         "is_correct": false
       }
     ],
@@ -377,22 +377,22 @@
     "options": [
       {
         "id": "A",
-        "text": "119 KTAS y 26 L/h (6.8 US gal/h)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "130 KTAS y 33 L/h (8.7 US gal/h)",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "110 KTAS y 20 L/h (5.3 US gal/h)",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "119 KTAS y 26 L/h (6.8 US gal/h)",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "125 KTAS y 29 L/h (7.6 US gal/h)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "130 KTAS y 33 L/h (8.7 US gal/h)",
         "is_correct": false
       }
     ],
@@ -414,13 +414,13 @@
     "options": [
       {
         "id": "A",
-        "text": "18 L/h (4.7 US gal/h) con 99 KTAS",
-        "is_correct": true
+        "text": "24 L/h (6.3 US gal/h) con 110 KTAS",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "24 L/h (6.3 US gal/h) con 110 KTAS",
-        "is_correct": false
+        "text": "18 L/h (4.7 US gal/h) con 99 KTAS",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -451,8 +451,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Carrera en tierra (GR): 261 m (856 ft); Distancia total desde 50 ft: 547 m (1795 ft)",
-        "is_correct": true
+        "text": "Carrera en tierra (GR): 350 m; Distancia total desde 50 ft: 700 m",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -461,8 +461,8 @@
       },
       {
         "id": "C",
-        "text": "Carrera en tierra (GR): 350 m; Distancia total desde 50 ft: 700 m",
-        "is_correct": false
+        "text": "Carrera en tierra (GR): 261 m (856 ft); Distancia total desde 50 ft: 547 m (1795 ft)",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -493,17 +493,17 @@
       },
       {
         "id": "B",
-        "text": "Viento de cara: - 10 m por nudo; Viento en cola: + 20 m por nudo",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Viento de cara: - 8 m por nudo; Viento en cola: + 8 m por nudo",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Viento de cara: - 2 m por nudo; Viento en cola: + 25 m por nudo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Viento de cara: - 10 m por nudo; Viento en cola: + 20 m por nudo",
         "is_correct": false
       }
     ],
@@ -530,7 +530,7 @@
       },
       {
         "id": "B",
-        "text": "Aumenta la carrera en tierra en un 10%, siempre que se notifique previamente a la autoridad competente y al CCO",
+        "text": "No produce ninguna variación en el frenado, manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       },
       {
@@ -540,7 +540,7 @@
       },
       {
         "id": "D",
-        "text": "No produce ninguna variación en el frenado, manteniendo el cumplimiento de las limitaciones operacionales del manual",
+        "text": "Aumenta la carrera en tierra en un 10%, siempre que se notifique previamente a la autoridad competente y al CCO",
         "is_correct": false
       }
     ],
@@ -562,8 +562,8 @@
     "options": [
       {
         "id": "A",
-        "text": "7.5% de gradiente neto",
-        "is_correct": true
+        "text": "4.5% de gradiente neto",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -572,12 +572,12 @@
       },
       {
         "id": "C",
-        "text": "12.0% de gradiente neto",
-        "is_correct": false
+        "text": "7.5% de gradiente neto",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "4.5% de gradiente neto",
+        "text": "12.0% de gradiente neto",
         "is_correct": false
       }
     ],
@@ -599,23 +599,23 @@
     "options": [
       {
         "id": "A",
-        "text": "56 KIAS",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "65 KIAS",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "48 KIAS",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "60 KIAS",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "65 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "56 KIAS",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -636,22 +636,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Aproximadamente 20 metros (66 ft) de reducción de distancia de aterrizaje",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Aproximadamente 110 metros (361 ft), siempre que se notifique previamente a la autoridad competente y al CCO",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Aproximadamente 50 metros (164 ft), requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Aproximadamente 5 metros (16 ft), manteniendo el cumplimiento de las limitaciones operacionales del manual",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aproximadamente 20 metros (66 ft) de reducción de distancia de aterrizaje",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Aproximadamente 110 metros (361 ft), siempre que se notifique previamente a la autoridad competente y al CCO",
         "is_correct": false
       }
     ],
@@ -678,7 +678,7 @@
       },
       {
         "id": "B",
-        "text": "-15°C a +35°C",
+        "text": "0°C a +45°C",
         "is_correct": false
       },
       {
@@ -688,7 +688,7 @@
       },
       {
         "id": "D",
-        "text": "0°C a +45°C",
+        "text": "-15°C a +35°C",
         "is_correct": false
       }
     ],
@@ -710,17 +710,17 @@
     "options": [
       {
         "id": "A",
+        "text": "800 ft/min",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "531 ft/min",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "200 ft/min",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "800 ft/min",
+        "text": "200 ft/min",
         "is_correct": false
       },
       {
@@ -747,13 +747,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Incrementa la carrera de despegue en un quince por ciento respecto a pista asfaltada",
-        "is_correct": true
+        "text": "No produce ningún efecto en las prestaciones de despegue calculadas",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Reduce la distancia de despegue en un diez por ciento debido a menor rozamiento",
-        "is_correct": false
+        "text": "Incrementa la carrera de despegue en un quince por ciento respecto a pista asfaltada",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -762,7 +762,7 @@
       },
       {
         "id": "D",
-        "text": "No produce ningún efecto en las prestaciones de despegue calculadas",
+        "text": "Reduce la distancia de despegue en un diez por ciento debido a menor rozamiento",
         "is_correct": false
       }
     ],
@@ -789,12 +789,12 @@
       },
       {
         "id": "B",
-        "text": "Aproximadamente 45 litros por hora de combustible de aviación",
+        "text": "Aproximadamente 15 litros por hora de combustible de aviación",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Aproximadamente 15 litros por hora de combustible de aviación",
+        "text": "Aproximadamente 45 litros por hora de combustible de aviación",
         "is_correct": false
       },
       {
@@ -821,22 +821,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Aproximadamente 950 millas náuticas en crucero económico de largo alcance",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Aproximadamente 550 millas náuticas en crucero económico de largo alcance",
+        "text": "Aproximadamente 400 millas náuticas en crucero económico de largo alcance",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Aproximadamente 1.400 millas náuticas en crucero económico de largo alcance",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Aproximadamente 950 millas náuticas en crucero económico de largo alcance",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Aproximadamente 400 millas náuticas en crucero económico de largo alcance",
+        "text": "Aproximadamente 550 millas náuticas en crucero económico de largo alcance",
         "is_correct": false
       }
     ],
@@ -858,22 +858,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Aproximadamente 780 pies por minuto a velocidad de mejor régimen de ascenso",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Aproximadamente 1.400 pies por minuto a velocidad de mejor régimen de ascenso",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Aproximadamente 780 pies por minuto a velocidad de mejor régimen de ascenso",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "Aproximadamente 450 pies por minuto a velocidad de mejor régimen de ascenso",
+        "text": "Aproximadamente 1.100 pies por minuto a velocidad de mejor régimen de ascenso",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Aproximadamente 1.100 pies por minuto a velocidad de mejor régimen de ascenso",
+        "text": "Aproximadamente 450 pies por minuto a velocidad de mejor régimen de ascenso",
         "is_correct": false
       }
     ],
@@ -905,12 +905,12 @@
       },
       {
         "id": "C",
-        "text": "Añadir un veinticinco por ciento de distancia por cada mil pies de altitud de presión",
+        "text": "No requiere corrección debido al turbocompresor de control electrónico",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No requiere corrección debido al turbocompresor de control electrónico",
+        "text": "Añadir un veinticinco por ciento de distancia por cada mil pies de altitud de presión",
         "is_correct": false
       }
     ],
@@ -932,22 +932,22 @@
     "options": [
       {
         "id": "A",
+        "text": "Aproximadamente 380 metros de distancia total de aterrizaje",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Aproximadamente 540 metros de distancia total de aterrizaje",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "Aproximadamente 250 metros de distancia total de aterrizaje",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Aproximadamente 890 metros de distancia total de aterrizaje",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "Aproximadamente 380 metros de distancia total de aterrizaje",
+        "text": "Aproximadamente 890 metros de distancia total de aterrizaje",
         "is_correct": false
       }
     ],
@@ -979,12 +979,12 @@
       },
       {
         "id": "C",
-        "text": "No altera las distancias de pista requeridas en aeronaves ligeras",
+        "text": "Aumenta la distancia de parada en tierra debido al efecto de sustentación",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Aumenta la distancia de parada en tierra debido al efecto de sustentación",
+        "text": "No altera las distancias de pista requeridas en aeronaves ligeras",
         "is_correct": false
       }
     ],
@@ -1006,13 +1006,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Incrementar la distancia de aterrizaje calculada en un quince a veinte por ciento",
-        "is_correct": true
+        "text": "No requiere factor de corrección si se dispone de neumáticos nuevos",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Reducir la distancia calculada en un diez por ciento por enfriamiento de neumáticos",
-        "is_correct": false
+        "text": "Incrementar la distancia de aterrizaje calculada en un quince a veinte por ciento",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1021,7 +1021,7 @@
       },
       {
         "id": "D",
-        "text": "No requiere factor de corrección si se dispone de neumáticos nuevos",
+        "text": "Reducir la distancia calculada en un diez por ciento por enfriamiento de neumáticos",
         "is_correct": false
       }
     ],
@@ -1043,12 +1043,12 @@
     "options": [
       {
         "id": "A",
-        "text": "18.000 pies de altitud de presión en condiciones estándar",
-        "is_correct": true
+        "text": "12.000 pies de altitud de presión en condiciones estándar",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "12.000 pies de altitud de presión en condiciones estándar",
+        "text": "15.000 pies de altitud de presión en condiciones estándar",
         "is_correct": false
       },
       {
@@ -1058,8 +1058,8 @@
       },
       {
         "id": "D",
-        "text": "15.000 pies de altitud de presión en condiciones estándar",
-        "is_correct": false
+        "text": "18.000 pies de altitud de presión en condiciones estándar",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1080,18 +1080,18 @@
     "options": [
       {
         "id": "A",
-        "text": "Aproximadamente diez horas de vuelo continuado con depósitos llenos",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Aproximadamente cinco horas de vuelo continuado con depósitos llenos",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Aproximadamente catorce horas de vuelo continuado con depósitos llenos",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aproximadamente diez horas de vuelo continuado con depósitos llenos",
+        "is_correct": true
       },
       {
         "id": "D",

@@ -7,17 +7,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Visibilidad de 1 km y 100 pies de separación de nubes",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Visibilidad de vuelo ≥ 5 km, separación de nubes de **1.500 metros en horizontal** y **1.000 pies (300 m) en vertical**",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "Visibilidad de 100 metros y dentro de las nubes",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Visibilidad de 1 km y 100 pies de separación de nubes",
+        "text": "Visibilidad de 100 metros y dentro de las nubes",
         "is_correct": false
       },
       {
@@ -49,17 +49,17 @@
       },
       {
         "id": "B",
-        "text": "50 pies sobre los tejados de las casas",
+        "text": "No existe límite de altura mínima en vuelo VFR",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "100 pies sobre los campanarios de las iglesias",
+        "text": "50 pies sobre los tejados de las casas",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No existe límite de altura mínima en vuelo VFR",
+        "text": "100 pies sobre los campanarios de las iglesias",
         "is_correct": false
       }
     ],
@@ -81,8 +81,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Luz **Roja** en la punta de ala izquierda (110°C), Luz **Verde** en la punta de ala derecha (110°C) y Luz **Blanca** en la cola (140°C hacia atrás)",
-        "is_correct": true
+        "text": "Luces de colores variados según el país de matrícula",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -91,12 +91,12 @@
       },
       {
         "id": "C",
-        "text": "Tres luces azules intermitentes en el morro",
-        "is_correct": false
+        "text": "Luz **Roja** en la punta de ala izquierda (110°C), Luz **Verde** en la punta de ala derecha (110°C) y Luz **Blanca** en la cola (140°C hacia atrás)",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "Luces de colores variados según el país de matrícula",
+        "text": "Tres luces azules intermitentes en el morro",
         "is_correct": false
       }
     ],
@@ -118,8 +118,8 @@
     "options": [
       {
         "id": "A",
-        "text": "La aeronave que tenga a la otra a su izquierda tiene preferencia; la aeronave que tenga a la otra **a su derecha debe ceder el paso virando hacia la derecha**",
-        "is_correct": true
+        "text": "La aeronave que vuele a mayor velocidad tiene preferencia absoluta",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -128,8 +128,8 @@
       },
       {
         "id": "C",
-        "text": "La aeronave que vuele a mayor velocidad tiene preferencia absoluta",
-        "is_correct": false
+        "text": "La aeronave que tenga a la otra a su izquierda tiene preferencia; la aeronave que tenga a la otra **a su derecha debe ceder el paso virando hacia la derecha**",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -155,22 +155,22 @@
     "options": [
       {
         "id": "A",
-        "text": "La aeronave que se encuentra a menor altitud tiene preferencia, pero no debe aprovecharse de ello para cortar el paso o adelantarse indebidamente a la que está establecida",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "La aeronave que tenga más pasajeros a bordo",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "La aeronave que vuele más rápido para no frenar el tráfico",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "La aeronave que se encuentra a menor altitud tiene preferencia, pero no debe aprovecharse de ello para cortar el paso o adelantarse indebidamente a la que está establecida",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "El avión de mayor tamaño independientemente de su altura",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La aeronave que tenga más pasajeros a bordo",
         "is_correct": false
       }
     ],
@@ -192,23 +192,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Significa '**Ha sido interceptado, sígame**', debiendo la aeronave interceptada alabear, encender luces en respuesta, seguir al caza y conectar 121.5 MHz y Squawk 7700",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Significa 'Puede continuar su vuelo en línea recta'",
+        "text": "Es un saludo amistoso sin trascendencia operativa",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Significa 'Apague los motores y salte en paracaídas'",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Es un saludo amistoso sin trascendencia operativa",
+        "id": "C",
+        "text": "Significa 'Puede continuar su vuelo en línea recta'",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Significa '**Ha sido interceptado, sígame**', debiendo la aeronave interceptada alabear, encender luces en respuesta, seguir al caza y conectar 121.5 MHz y Squawk 7700",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -234,7 +234,7 @@
       },
       {
         "id": "B",
-        "text": "Comunica 'Aterrice en el agua de inmediato'",
+        "text": "Comunica 'Ascienda a 50.000 pies de altitud'",
         "is_correct": false
       },
       {
@@ -244,7 +244,7 @@
       },
       {
         "id": "D",
-        "text": "Comunica 'Ascienda a 50.000 pies de altitud'",
+        "text": "Comunica 'Aterrice en el agua de inmediato'",
         "is_correct": false
       }
     ],
@@ -308,12 +308,12 @@
       },
       {
         "id": "B",
-        "text": "V: No necesitamos nada | X: Queremos comida caliente",
+        "text": "V: Hay agua potable | X: No hay agua",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "V: Hay agua potable | X: No hay agua",
+        "text": "V: No necesitamos nada | X: Queremos comida caliente",
         "is_correct": false
       },
       {
@@ -340,22 +340,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Mantenerse en condiciones VMC, aterrizar en el aeródromo adecuado más próximo y notificar su llegada por el medio más rápido a la dependencia de control ATC",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Entrar en nubes para ascender a 40.000 pies",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Realizar una espera sobre el aeropuerto de origen durante 5 horas",
+        "id": "B",
+        "text": "Apagar todos los instrumentos y realizar un aterrizaje en el agua",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Mantenerse en condiciones VMC, aterrizar en el aeródromo adecuado más próximo y notificar su llegada por el medio más rápido a la dependencia de control ATC",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Apagar todos los instrumentos y realizar un aterrizaje en el agua",
+        "text": "Realizar una espera sobre el aeropuerto de origen durante 5 horas",
         "is_correct": false
       }
     ],
@@ -377,23 +377,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Cohetes o proyectiles que despiden luces rojas disparados de uno en uno a intervalos cortos, o una bengala con paracaídas de luz roja",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Luces de color verde continuo disparadas hacia el mar",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Humo de color blanco aromático",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Flashes de luz azul intermitente",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cohetes o proyectiles que despiden luces rojas disparados de uno en uno a intervalos cortos, o una bengala con paracaídas de luz roja",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -414,22 +414,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Autorizado a aterrizar (Cleared to Land)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Ceda el paso a otras aeronaves y continúe en circuito",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Aeródromo peligroso, no aterrice",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "Autorizado a aterrizar (Cleared to Land)",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "Regrese a la plataforma de estacionamiento",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Ceda el paso a otras aeronaves y continúe en circuito",
         "is_correct": false
       }
     ],
@@ -451,13 +451,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Alto / Deténgase inmediatamente (STOP)",
-        "is_correct": true
+        "text": "Autorizado a despegar",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Autorizado a despegar",
-        "is_correct": false
+        "text": "Alto / Deténgase inmediatamente (STOP)",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -488,22 +488,22 @@
     "options": [
       {
         "id": "A",
+        "text": "Espacio Aéreo Clase G",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Espacio Aéreo Clase A (donde únicamente se autorizan vuelos bajo reglas IFR con separación asegurada por ATC)",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "Espacio Aéreo Clase C",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Espacio Aéreo Clase E",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "Espacio Aéreo Clase G",
+        "text": "Espacio Aéreo Clase E",
         "is_correct": false
       }
     ],
@@ -525,17 +525,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Debe adelantar virando siempre hacia la izquierda",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "La aeronave que adelanta debe desviar su trayectoria virando hacia la **DERECHA**, manteniéndose fuera del ángulo de visión ciega de la otra",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "La aeronave que adelanta debe picar por debajo de la otra",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Debe adelantar virando siempre hacia la izquierda",
+        "text": "La aeronave que adelanta debe picar por debajo de la otra",
         "is_correct": false
       },
       {
@@ -562,22 +562,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Ambas aeronaves deben alterar su rumbo virando hacia su respectiva **DERECHA** de forma inmediata",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Ambas aeronaves deben virar a la izquierda",
+        "text": "La aeronave más pequeña debe ceder el paso parando sus motores",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Una asciende y la otra desciende sin virar",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Ambas aeronaves deben alterar su rumbo virando hacia su respectiva **DERECHA** de forma inmediata",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "La aeronave más pequeña debe ceder el paso parando sus motores",
+        "text": "Ambas aeronaves deben virar a la izquierda",
         "is_correct": false
       }
     ],
@@ -599,23 +599,23 @@
     "options": [
       {
         "id": "A",
-        "text": "'CALLSIGN [Callsign]'",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "'PLEASE DO NOT SHOOT'",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "'I AM LOST HELP ME'",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "'WE ARE FLYING TO CANARY ISLANDS'",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "'PLEASE DO NOT SHOOT'",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "'CALLSIGN [Callsign]'",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -636,22 +636,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Transmitiendo por radio 'CANNOT [Aerodrome name]' y encendiendo y apagando todas las luces disponibles de forma irregular",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Disparando bengalas de color verde hacia el caza",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Acelerando a máxima potencia en sentido opuesto",
+        "id": "B",
+        "text": "Apagando el transponder para que el radar no lo vea",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Transmitiendo por radio 'CANNOT [Aerodrome name]' y encendiendo y apagando todas las luces disponibles de forma irregular",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Apagando el transponder para que el radar no lo vea",
+        "text": "Acelerando a máxima potencia en sentido opuesto",
         "is_correct": false
       }
     ],
@@ -678,7 +678,7 @@
       },
       {
         "id": "B",
-        "text": "Lanzando un cohete de luz roja sobre el suelo",
+        "text": "Apagando los motores durante 10 segundos",
         "is_correct": false
       },
       {
@@ -688,7 +688,7 @@
       },
       {
         "id": "D",
-        "text": "Apagando los motores durante 10 segundos",
+        "text": "Lanzando un cohete de luz roja sobre el suelo",
         "is_correct": false
       }
     ],
@@ -710,17 +710,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Un triángulo de color verde brillante",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Una cruz blanca o cruz amarilla/roja de brazos perpendiculares (Signo en 'X') colocada sobre la superficie de la pista",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "Un círculo blanco con un punto en el centro",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Un triángulo de color verde brillante",
+        "text": "Un círculo blanco con un punto en el centro",
         "is_correct": false
       },
       {
@@ -752,7 +752,7 @@
       },
       {
         "id": "B",
-        "text": "Visibilidad de 100 metros y techo de 50 pies",
+        "text": "El VFR Especial no tiene límites pudiendo volar a ciegas",
         "is_correct": false
       },
       {
@@ -762,7 +762,7 @@
       },
       {
         "id": "D",
-        "text": "El VFR Especial no tiene límites pudiendo volar a ciegas",
+        "text": "Visibilidad de 100 metros y techo de 50 pies",
         "is_correct": false
       }
     ],
@@ -784,8 +784,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Luz Beacon roja: Encendida siempre antes de arrancar motores hasta que se hayan detenido por completo | Luces Strobes blancas: Encendidas al ingresar en la pista activa autorizados y durante todo el vuelo",
-        "is_correct": true
+        "text": "Solo se encienden si hay tormenta eléctrica",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -799,8 +799,8 @@
       },
       {
         "id": "D",
-        "text": "Solo se encienden si hay tormenta eléctrica",
-        "is_correct": false
+        "text": "Luz Beacon roja: Encendida siempre antes de arrancar motores hasta que se hayan detenido por completo | Luces Strobes blancas: Encendidas al ingresar en la pista activa autorizados y durante todo el vuelo",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -821,13 +821,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Toda aeronave que haya declarado una situación de emergencia médica, técnica o socorro (Mayday / Pan Pan) o que se vea obligada a realizar un aterrizaje forzoso",
-        "is_correct": true
+        "text": "Cualquier aeronave que vuele a mayor altitud",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "El avión del presidente del gobierno",
-        "is_correct": false
+        "text": "Toda aeronave que haya declarado una situación de emergencia médica, técnica o socorro (Mayday / Pan Pan) o que se vea obligada a realizar un aterrizaje forzoso",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -836,7 +836,7 @@
       },
       {
         "id": "D",
-        "text": "Cualquier aeronave que vuele a mayor altitud",
+        "text": "El avión del presidente del gobierno",
         "is_correct": false
       }
     ],
@@ -858,12 +858,12 @@
     "options": [
       {
         "id": "A",
-        "text": "**121.500 MHz** en banda VHF civil y **243.000 MHz** en banda UHF militar",
-        "is_correct": true
+        "text": "118.000 MHz y 136.000 MHz",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "118.000 MHz y 136.000 MHz",
+        "text": "500 kHz de telegrafía marítima",
         "is_correct": false
       },
       {
@@ -873,8 +873,8 @@
       },
       {
         "id": "D",
-        "text": "500 kHz de telegrafía marítima",
-        "is_correct": false
+        "text": "**121.500 MHz** en banda VHF civil y **243.000 MHz** en banda UHF militar",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -895,8 +895,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Que los aterrizajes están completamente prohibidos y que es probable que la prohibición se prolongue",
-        "is_correct": true
+        "text": "Que la pista es de hierba corta",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -910,8 +910,8 @@
       },
       {
         "id": "D",
-        "text": "Que la pista es de hierba corta",
-        "is_correct": false
+        "text": "Que los aterrizajes están completamente prohibidos y que es probable que la prohibición se prolongue",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -942,12 +942,12 @@
       },
       {
         "id": "C",
-        "text": "Que la pista está reservada para helicópteros",
+        "text": "Que se puede aterrizar a cualquier velocidad",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Que se puede aterrizar a cualquier velocidad",
+        "text": "Que la pista está reservada para helicópteros",
         "is_correct": false
       }
     ],
@@ -969,8 +969,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Que las aeronaves deben despegar y aterrizar exclusivamente en las pistas pavimentadas, pero los rodajes pueden realizarse por otras zonas",
-        "is_correct": true
+        "text": "Que la pista tiene dos direcciones de viento",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -979,12 +979,12 @@
       },
       {
         "id": "C",
-        "text": "Que solo pueden aterrizar aviones bimotores",
-        "is_correct": false
+        "text": "Que las aeronaves deben despegar y aterrizar exclusivamente en las pistas pavimentadas, pero los rodajes pueden realizarse por otras zonas",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "Que la pista tiene dos direcciones de viento",
+        "text": "Que solo pueden aterrizar aviones bimotores",
         "is_correct": false
       }
     ],
@@ -1006,22 +1006,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Que las aeronaves deben utilizar las pistas pavimentadas exclusivamente tanto para los despegues y aterrizajes como para los rodajes",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Que las pistas están cubiertas de nieve",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Que las aeronaves deben utilizar las pistas pavimentadas exclusivamente tanto para los despegues y aterrizajes como para los rodajes",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "Que el aeropuerto solo opera en horario nocturno",
+        "text": "Que no hay servicio de combustible disponible",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Que no hay servicio de combustible disponible",
+        "text": "Que el aeropuerto solo opera en horario nocturno",
         "is_correct": false
       }
     ],
@@ -1048,7 +1048,7 @@
       },
       {
         "id": "B",
-        "text": "Indica la cafetería principal del aeropuerto",
+        "text": "Indica la oficina del director de la terminal",
         "is_correct": false
       },
       {
@@ -1058,7 +1058,7 @@
       },
       {
         "id": "D",
-        "text": "Indica la oficina del director de la terminal",
+        "text": "Indica la cafetería principal del aeropuerto",
         "is_correct": false
       }
     ],
@@ -1080,12 +1080,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Un nivel de crucero IFR adecuado a la derrota magnética según la tabla de niveles semicirculares SERA.5015",
-        "is_correct": true
+        "text": "Cualquier nivel de vuelo al azar sin consultar tablas",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Cualquier nivel de vuelo al azar sin consultar tablas",
+        "text": "No se permite volar IFR en espacio aéreo Clase G",
         "is_correct": false
       },
       {
@@ -1095,8 +1095,8 @@
       },
       {
         "id": "D",
-        "text": "No se permite volar IFR en espacio aéreo Clase G",
-        "is_correct": false
+        "text": "Un nivel de crucero IFR adecuado a la derrota magnética según la tabla de niveles semicirculares SERA.5015",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1117,8 +1117,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Indica que en el aeródromo se realizan vuelos de planeadores (vuelo sin motor) en ese momento",
-        "is_correct": true
+        "text": "Que se prohíbe el aterrizaje de noche",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1127,12 +1127,12 @@
       },
       {
         "id": "C",
-        "text": "Que el hospital del aeropuerto está operativo",
-        "is_correct": false
+        "text": "Indica que en el aeródromo se realizan vuelos de planeadores (vuelo sin motor) en ese momento",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "Que se prohíbe el aterrizaje de noche",
+        "text": "Que el hospital del aeropuerto está operativo",
         "is_correct": false
       }
     ],
@@ -1159,17 +1159,17 @@
       },
       {
         "id": "B",
-        "text": "Autorizado a despegar",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Deténgase inmediatamente",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Regrese al estacionamiento",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Autorizado a despegar",
         "is_correct": false
       }
     ],
@@ -1191,22 +1191,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Indica 'A pesar de cualquier autorización previa, NO ATERRIZE por el momento' (Frustrada inmediata obligatoria)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Indica que el avión puede aterrizar a máxima velocidad",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Indica que el café de bienvenida está preparado",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "Indica 'A pesar de cualquier autorización previa, NO ATERRIZE por el momento' (Frustrada inmediata obligatoria)",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "Indica que el viento está en calma",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Indica que el avión puede aterrizar a máxima velocidad",
         "is_correct": false
       }
     ],
@@ -1228,22 +1228,22 @@
     "options": [
       {
         "id": "A",
+        "text": "Indica que la pista está despejada",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Advierte de advertencia severa por desobediencia o entrada en espacio aéreo prohibido, ordenando virar de inmediato en la dirección que marca el caza",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "Es una maniobra de acrobacia de exhibición",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Indica que el caza no tiene combustible",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "Indica que la pista está despejada",
+        "text": "Indica que el caza no tiene combustible",
         "is_correct": false
       }
     ],
@@ -1265,8 +1265,8 @@
     "options": [
       {
         "id": "A",
-        "text": "1º Globos aerostáticos → 2º Planeadores → 3º Aeronaves que remolcan a otras → 4º Aeronaves propulsadas por motor (aviones)",
-        "is_correct": true
+        "text": "1º Helicópteros → 2º Aviones militares → 3º Globos",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1275,13 +1275,13 @@
       },
       {
         "id": "C",
-        "text": "1º Helicópteros → 2º Aviones militares → 3º Globos",
+        "text": "Todas las categorías tienen la misma preferencia exacta",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Todas las categorías tienen la misma preferencia exacta",
-        "is_correct": false
+        "text": "1º Globos aerostáticos → 2º Planeadores → 3º Aeronaves que remolcan a otras → 4º Aeronaves propulsadas por motor (aviones)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1302,17 +1302,17 @@
     "options": [
       {
         "id": "A",
+        "text": "ATC separa todos los vuelos VFR entre sí al 100%",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "ATC separa vuelos IFR de vuelos IFR, separa vuelos IFR de vuelos VFR, y proporciona información de tránsito a los vuelos VFR respecto a otros VFR",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "ATC no separa a ningún vuelo debiendo separarse visualmente",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "ATC separa todos los vuelos VFR entre sí al 100%",
+        "text": "ATC no separa a ningún vuelo debiendo separarse visualmente",
         "is_correct": false
       },
       {
@@ -1339,18 +1339,18 @@
     "options": [
       {
         "id": "A",
-        "text": "ATC separa vuelos IFR de otros vuelos IFR, y proporciona información de tránsito a los vuelos IFR respecto a VFR y entre vuelos VFR",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "ATC separa vuelos VFR de todos los demás vuelos",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "No se suministra ningún servicio de radio",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "ATC separa vuelos IFR de otros vuelos IFR, y proporciona información de tránsito a los vuelos IFR respecto a VFR y entre vuelos VFR",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1376,18 +1376,18 @@
     "options": [
       {
         "id": "A",
-        "text": "Los vuelos IFR están controlados y separados entre sí; los vuelos VFR no requieren autorización ATC ni plan de vuelo para entrar y solo reciben información de tránsito si es factible",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Los vuelos VFR están terminantemente prohibidos",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Todos los vuelos deben ser militares",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Los vuelos IFR están controlados y separados entre sí; los vuelos VFR no requieren autorización ATC ni plan de vuelo para entrar y solo reciben información de tránsito si es factible",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1413,17 +1413,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Permanezca inmóvil en el centro de la pista",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Abandone la pista de aterrizaje inmediatamente (Taxi Clear of Runway in Use)",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "Autorizado a despegar de inmediato",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Permanezca inmóvil en el centro de la pista",
+        "text": "Autorizado a despegar de inmediato",
         "is_correct": false
       },
       {
@@ -1450,8 +1450,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Indican un **Umbral Desplazado (Displaced Threshold)**: la zona con flechas es utilizable para rodaje y carrera de despegue, pero está prohibida para la toma de contacto en el aterrizaje",
-        "is_correct": true
+        "text": "Que la pista termina en ese punto",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1465,8 +1465,8 @@
       },
       {
         "id": "D",
-        "text": "Que la pista termina en ese punto",
-        "is_correct": false
+        "text": "Indican un **Umbral Desplazado (Displaced Threshold)**: la zona con flechas es utilizable para rodaje y carrera de despegue, pero está prohibida para la toma de contacto en el aterrizaje",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1487,8 +1487,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Indica una zona de parada de emergencia (Stopway) o zona de protección antierrosión que no debe ser utilizada para rodaje, despegue ni aterrizaje normal",
-        "is_correct": true
+        "text": "Que se autoriza el aparcamiento de aviones",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1497,13 +1497,13 @@
       },
       {
         "id": "C",
-        "text": "Que se autoriza el aparcamiento de aviones",
+        "text": "Que la pista tiene iluminación de alta intensidad",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Que la pista tiene iluminación de alta intensidad",
-        "is_correct": false
+        "text": "Indica una zona de parada de emergencia (Stopway) o zona de protección antierrosión que no debe ser utilizada para rodaje, despegue ni aterrizaje normal",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1524,8 +1524,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Parada de emergencia / Alto inmediato (Emergency Stop)",
-        "is_correct": true
+        "text": "Acelere los motores a fondo",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1534,13 +1534,13 @@
       },
       {
         "id": "C",
-        "text": "Acelere los motores a fondo",
+        "text": "Conecte el grupo de tierra GPU",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Conecte el grupo de tierra GPU",
-        "is_correct": false
+        "text": "Parada de emergencia / Alto inmediato (Emergency Stop)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1561,22 +1561,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Mover las palas o varillas hacia dentro desde los lados hasta que se toquen horizontalmente a la altura del pecho",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Lanzar las varillas luminosas al suelo",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Girar las varillas en círculos sobre su cabeza",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Cruzar los brazos sobre la espalda",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mover las palas o varillas hacia dentro desde los lados hasta que se toquen horizontalmente a la altura del pecho",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Lanzar las varillas luminosas al suelo",
         "is_correct": false
       }
     ],
@@ -1598,22 +1598,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Mover las palas o varillas hacia fuera desde el pecho con los brazos extendidos",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Saltar sobre la rueda de morro",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Encender una bengala roja",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Hacer una reverencia hacia el motor",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mover las palas o varillas hacia fuera desde el pecho con los brazos extendidos",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Saltar sobre la rueda de morro",
         "is_correct": false
       }
     ],
@@ -1645,12 +1645,12 @@
       },
       {
         "id": "C",
-        "text": "Sentarse en el suelo de la rampa",
+        "text": "Dar la espalda al avión y caminar hacia la terminal",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Dar la espalda al avión y caminar hacia la terminal",
+        "text": "Sentarse en el suelo de la rampa",
         "is_correct": false
       }
     ],
@@ -1672,17 +1672,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Una separación de 500 pies",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Una separación vertical mínima de **1.000 pies (300 metros)**",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "Una separación de 2.000 pies",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Una separación de 500 pies",
+        "text": "Una separación de 2.000 pies",
         "is_correct": false
       },
       {
@@ -1719,12 +1719,12 @@
       },
       {
         "id": "C",
-        "text": "'ALTIMETER BROKEN LANDING ON HIGHWAY'",
+        "text": "No se informa a ATC si el copiloto mira por la ventanilla",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No se informa a ATC si el copiloto mira por la ventanilla",
+        "text": "'ALTIMETER BROKEN LANDING ON HIGHWAY'",
         "is_correct": false
       }
     ],
@@ -1746,12 +1746,12 @@
     "options": [
       {
         "id": "A",
-        "text": "A la hora estimada de llegada (ETA) resultante del plan de vuelo actualizado en vigor",
-        "is_correct": true
+        "text": "Inmediatamente en cuanto se sintonice el localizador sin esperar a la hora",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Inmediatamente en cuanto se sintonice el localizador sin esperar a la hora",
+        "text": "Nunca debiendo mantenerse en espera hasta quedarse sin combustible",
         "is_correct": false
       },
       {
@@ -1761,8 +1761,8 @@
       },
       {
         "id": "D",
-        "text": "Nunca debiendo mantenerse en espera hasta quedarse sin combustible",
-        "is_correct": false
+        "text": "A la hora estimada de llegada (ETA) resultante del plan de vuelo actualizado en vigor",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1783,8 +1783,8 @@
     "options": [
       {
         "id": "A",
-        "text": "'**N**': No o Negativo | '**Y**': Sí o Afirmativo (Yes)",
-        "is_correct": true
+        "text": "Ambos símbolos significan rescate completado",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1793,12 +1793,12 @@
       },
       {
         "id": "C",
-        "text": "'N': Noche | 'Y': Yunque",
-        "is_correct": false
+        "text": "'**N**': No o Negativo | '**Y**': Sí o Afirmativo (Yes)",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "Ambos símbolos significan rescate completado",
+        "text": "'N': Noche | 'Y': Yunque",
         "is_correct": false
       }
     ],
@@ -1820,8 +1820,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Porque constituye el marco jurídico universal de convivencia y seguridad en el espacio aéreo, garantizando la fluidez, prevención de colisiones y disciplina operativa en cualquier lugar del mundo",
-        "is_correct": true
+        "text": "Porque permite volar sin respetar las autorizaciones de los controladores",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1830,8 +1830,8 @@
       },
       {
         "id": "C",
-        "text": "Porque permite volar sin respetar las autorizaciones de los controladores",
-        "is_correct": false
+        "text": "Porque constituye el marco jurídico universal de convivencia y seguridad en el espacio aéreo, garantizando la fluidez, prevención de colisiones y disciplina operativa en cualquier lugar del mundo",
+        "is_correct": true
       },
       {
         "id": "D",

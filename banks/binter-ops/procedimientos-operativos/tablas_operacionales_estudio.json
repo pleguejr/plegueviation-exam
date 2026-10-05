@@ -7,17 +7,17 @@
     "options": [
       {
         "id": "A",
+        "text": "DA/H + 150 ft y RVR + 450 m",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "DA/H + 200 ft y RVR/VIS + 800 m",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "DA/H + 100 ft y RVR + 300 m",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "DA/H + 150 ft y RVR + 450 m",
+        "text": "DA/H + 100 ft y RVR + 300 m",
         "is_correct": false
       },
       {
@@ -44,23 +44,23 @@
     "options": [
       {
         "id": "A",
-        "text": "MDA/H + 400 ft y RVR/VIS + 1.500 m (Circling usa VIS, no RVR)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "MDA/H + 200 ft y RVR + 1.000 m",
+        "text": "MDA/H + 100 ft y VIS + 800 m",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "DA/H + 200 ft y RVR + 800 m",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "MDA/H + 100 ft y VIS + 800 m",
+        "id": "C",
+        "text": "MDA/H + 200 ft y RVR + 1.000 m",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "MDA/H + 400 ft y RVR/VIS + 1.500 m (Circling usa VIS, no RVR)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -81,8 +81,8 @@
     "options": [
       {
         "id": "A",
-        "text": "DA/H + 100 ft y RVR + 300 m",
-        "is_correct": true
+        "text": "DA/H + 150 ft y RVR + 450 m",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -91,13 +91,13 @@
       },
       {
         "id": "C",
-        "text": "DA/H + 150 ft y RVR + 450 m",
+        "text": "DA/H + 200 ft y RVR + 1.000 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "DA/H + 200 ft y RVR + 1.000 m",
-        "is_correct": false
+        "text": "DA/H + 100 ft y RVR + 300 m",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -123,17 +123,17 @@
       },
       {
         "id": "B",
-        "text": "DA/H + 100 ft y RVR + 300 m",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "DA/H + 200 ft y RVR + 800 m",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "MDA/H + 400 ft y RVR + 1.500 m",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "DA/H + 100 ft y RVR + 300 m",
         "is_correct": false
       }
     ],
@@ -155,22 +155,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Flight Monitoring CCO en tiempo real, aprobación LVO en OpSpecs y despacho automático Lido",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Solo aprobación CAT I estándar sin Flight Monitoring",
+        "text": "Únicamente NOTAM de LVP en destino",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Dos pilotos LVO sin software de despacho",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Flight Monitoring CCO en tiempo real, aprobación LVO en OpSpecs y despacho automático Lido",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Únicamente NOTAM de LVP en destino",
+        "text": "Solo aprobación CAT I estándar sin Flight Monitoring",
         "is_correct": false
       }
     ],
@@ -192,22 +192,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Desde 1 hora antes hasta 1 hora después de la ETA (ETA ± 1 h)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Solo en la hora exacta de la ETA",
+        "text": "Desde ETD hasta ETA sin margen posterior",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "ETA ± 30 minutos",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Desde 1 hora antes hasta 1 hora después de la ETA (ETA ± 1 h)",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Desde ETD hasta ETA sin margen posterior",
+        "text": "Solo en la hora exacta de la ETA",
         "is_correct": false
       }
     ],
@@ -229,22 +229,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Crew Oxy Masks: DON, 100%",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Thrust Levers: IDLE",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Transponder: 7700",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "DUMP Button: PUSH IN como primer paso obligatorio",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Crew Oxy Masks: DON, 100%",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Thrust Levers: IDLE",
         "is_correct": false
       }
     ],
@@ -266,22 +266,22 @@
     "options": [
       {
         "id": "A",
-        "text": "30 segundos",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "10 segundos",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "60 segundos",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "30 segundos",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "Inmediatamente tras PULL del maneral",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "10 segundos",
         "is_correct": false
       }
     ],
@@ -303,23 +303,23 @@
     "options": [
       {
         "id": "A",
-        "text": "El APU se apaga y descarga el extintor automáticamente tras 10 s",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "No hay descarga automática; hay que pulsar BOTTLE DISCH al instante",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Descarga inmediata sin espera de 10 s",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Solo corta combustible; el agente no se descarga nunca en tierra",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No hay descarga automática; hay que pulsar BOTTLE DISCH al instante",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El APU se apaga y descarga el extintor automáticamente tras 10 s",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -340,23 +340,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Associated BATT Knob: OFF",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "APU EMER STOP Button: PUSH IN",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "DUMP Button: PUSH IN",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "STEER DISC Switch: PRESS",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Associated BATT Knob: OFF",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -382,17 +382,17 @@
       },
       {
         "id": "B",
-        "text": "Hasta 30 minutos",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Hasta 60 minutos",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Hasta 180 minutos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Hasta 30 minutos",
         "is_correct": false
       }
     ],
@@ -414,8 +414,8 @@
     "options": [
       {
         "id": "A",
-        "text": "FSTN BELTS Switch: ON",
-        "is_correct": true
+        "text": "Transponder: 7700",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -424,12 +424,12 @@
       },
       {
         "id": "C",
-        "text": "Speedbrake Lever: FULL OPEN",
-        "is_correct": false
+        "text": "FSTN BELTS Switch: ON",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "Transponder: 7700",
+        "text": "Speedbrake Lever: FULL OPEN",
         "is_correct": false
       }
     ],
@@ -451,22 +451,22 @@
     "options": [
       {
         "id": "A",
-        "text": "STEERING RUNAWAY → STEER DISC Switch PRESS (presionar y mantener el pulsador de desconexión de dirección)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "PITCH TRIM RUNAWAY → PITCH TRIM SYS 1 & 2 CUTOUT PUSH IN (procedimiento exclusivo de la generación E1)",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "RUDDER RUNAWAY → PEDAL DISCONNECT Handle PULL en cabina",
+        "id": "B",
+        "text": "NOSE WHEEL FAILURE → APU SHUTOFF Switch PUSH",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "STEERING RUNAWAY → STEER DISC Switch PRESS (presionar y mantener el pulsador de desconexión de dirección)",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "NOSE WHEEL FAILURE → APU SHUTOFF Switch PUSH",
+        "text": "RUDDER RUNAWAY → PEDAL DISCONNECT Handle PULL en cabina",
         "is_correct": false
       }
     ],
@@ -489,22 +489,22 @@
     "options": [
       {
         "id": "A",
-        "text": "41.000 ft (FL410)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "39.000 ft (techo de APU start)",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "45.000 ft",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "41.000 ft (FL410)",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "37.000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "39.000 ft (techo de APU start)",
         "is_correct": false
       }
     ],
@@ -531,12 +531,12 @@
       },
       {
         "id": "B",
-        "text": "14.000 ft",
+        "text": "25.000 ft",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "25.000 ft",
+        "text": "14.000 ft",
         "is_correct": false
       },
       {
@@ -563,8 +563,8 @@
     "options": [
       {
         "id": "A",
-        "text": "7.249 ft",
-        "is_correct": true
+        "text": "5.000 ft",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -578,8 +578,8 @@
       },
       {
         "id": "D",
-        "text": "5.000 ft",
-        "is_correct": false
+        "text": "7.249 ft",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -610,12 +610,12 @@
       },
       {
         "id": "C",
-        "text": "300 KIAS / M 0.80",
+        "text": "340 KIAS / M 0.85",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "340 KIAS / M 0.85",
+        "text": "300 KIAS / M 0.80",
         "is_correct": false
       }
     ],
@@ -637,12 +637,12 @@
     "options": [
       {
         "id": "A",
-        "text": "165 kt",
-        "is_correct": true
+        "text": "180 kt",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "180 kt",
+        "text": "215 kt",
         "is_correct": false
       },
       {
@@ -652,8 +652,8 @@
       },
       {
         "id": "D",
-        "text": "215 kt",
-        "is_correct": false
+        "text": "165 kt",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -674,22 +674,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Vlo extensión 250 KIAS; Vlo retracción 220 KIAS; Vle 265 KIAS",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Vlo extensión 220 KIAS; Vlo retracción 250 KIAS; Vle 265 KIAS",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Vlo extensión 250 KIAS; Vlo retracción 220 KIAS; Vle 250 KIAS",
+        "id": "B",
+        "text": "Vlo extensión 265 KIAS; Vlo retracción 250 KIAS; Vle 220 KIAS",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Vlo extensión 250 KIAS; Vlo retracción 220 KIAS; Vle 265 KIAS",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Vlo extensión 265 KIAS; Vlo retracción 250 KIAS; Vle 220 KIAS",
+        "text": "Vlo extensión 250 KIAS; Vlo retracción 220 KIAS; Vle 250 KIAS",
         "is_correct": false
       }
     ],
@@ -717,17 +717,17 @@
       },
       {
         "id": "B",
-        "text": "31 kt",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "20 kt",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "15 kt",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "31 kt",
         "is_correct": false
       }
     ],
@@ -749,23 +749,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Despegue 200 ft AGL; ILS/LPV 80 ft AGL",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Despegue 400 ft AGL; ILS/LPV 200 ft AGL",
+        "text": "Despegue 1.000 ft AGL; NPA 80 ft AGL",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Despegue 100 ft AGL; ILS/LPV 50 ft AGL",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Despegue 1.000 ft AGL; NPA 80 ft AGL",
+        "id": "C",
+        "text": "Despegue 400 ft AGL; ILS/LPV 200 ft AGL",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Despegue 200 ft AGL; ILS/LPV 80 ft AGL",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -786,22 +786,22 @@
     "options": [
       {
         "id": "A",
-        "text": "360 kg (800 lb)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "200 kg",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "500 kg",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "360 kg (800 lb)",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "800 kg",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "200 kg",
         "is_correct": false
       }
     ],
@@ -823,23 +823,23 @@
     "options": [
       {
         "id": "A",
-        "text": "15.000 ft (o 20.000 ft para arranque de motor asistido)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "39.000 ft igual que el generador",
+        "text": "FL410 techo del avión",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "10.000 ft únicamente",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "FL410 techo del avión",
+        "id": "C",
+        "text": "39.000 ft igual que el generador",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "15.000 ft (o 20.000 ft para arranque de motor asistido)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -860,22 +860,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Bajo 10.000 ft: 250 KIAS; sobre 10.000 ft: 270 KIAS / M 0.76",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Bajo 10.000 ft: 270 KIAS; sobre 10.000 ft: 250 KIAS / M 0.76",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Bajo 10.000 ft: 240 KIAS; sobre 10.000 ft: 270 KIAS / M 0.76",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Bajo 10.000 ft: 250 KIAS; sobre 10.000 ft: 320 KIAS / M 0.82",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Bajo 10.000 ft: 250 KIAS; sobre 10.000 ft: 270 KIAS / M 0.76",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Bajo 10.000 ft: 270 KIAS; sobre 10.000 ft: 250 KIAS / M 0.76",
         "is_correct": false
       }
     ],
@@ -898,22 +898,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Operaciones con visibilidad reducida (LVO): LVTO ≥125 m, CAT II/III y requisitos de pista",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Preparación y planificación del vuelo (combustible y alternativos)",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Notificación MOR ≤72 h y preservación CVR/FDR",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Mercancías peligrosas y NOTOC",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Operaciones con visibilidad reducida (LVO): LVTO ≥125 m, CAT II/III y requisitos de pista",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Preparación y planificación del vuelo (combustible y alternativos)",
         "is_correct": false
       }
     ],
@@ -935,22 +935,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Cat B 3 días, Cat C 10 días, Cat D 120 días (Cat A específico)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Cat B 10 días, Cat C 3 días, Cat D 30 días",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Cat B 72 h, Cat C 7 días, Cat D 90 días",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Cat B 5 días, Cat C 15 días, Cat D 180 días",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cat B 3 días, Cat C 10 días, Cat D 120 días (Cat A específico)",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Cat B 10 días, Cat C 3 días, Cat D 30 días",
         "is_correct": false
       }
     ],
@@ -982,12 +982,12 @@
       },
       {
         "id": "C",
-        "text": "≤ 48 horas",
+        "text": "≤ 7 días",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "≤ 7 días",
+        "text": "≤ 48 horas",
         "is_correct": false
       }
     ],
@@ -1014,17 +1014,17 @@
       },
       {
         "id": "B",
-        "text": "7 minutos tras la última transmisión recibida de ATC",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "30 minutos manteniendo el último nivel y velocidad asignados",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Continuar de inmediato según el plan de vuelo IFR vigente",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "7 minutos tras la última transmisión recibida de ATC",
         "is_correct": false
       }
     ],
@@ -1051,17 +1051,17 @@
       },
       {
         "id": "B",
-        "text": "8 km; 1.500 m / 1.000 ft",
+        "text": "5 km; 500 m horizontal y 500 ft vertical",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "1.500 m; libre de nubes con suelo a la vista",
+        "text": "8 km; 1.500 m / 1.000 ft",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "5 km; 500 m horizontal y 500 ft vertical",
+        "text": "1.500 m; libre de nubes con suelo a la vista",
         "is_correct": false
       }
     ],
@@ -1083,22 +1083,22 @@
     "options": [
       {
         "id": "A",
-        "text": "VIS tierra ≥1.500 m (≥800 m helicópteros), libre de nubes con superficie a la vista, techo ≥600 ft",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "VIS 5 km y techo ≥1.500 ft como VFR nocturno",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "VIS 8 km y separación 1.500 m / 1.000 ft",
+        "id": "B",
+        "text": "VIS 1.000 m y techo ≥300 ft sin ATC",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "VIS tierra ≥1.500 m (≥800 m helicópteros), libre de nubes con superficie a la vista, techo ≥600 ft",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "VIS 1.000 m y techo ≥300 ft sin ATC",
+        "text": "VIS 8 km y separación 1.500 m / 1.000 ft",
         "is_correct": false
       }
     ],
@@ -1120,22 +1120,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Techo < 1.500 ft (450 m) o visibilidad en tierra < 5 km",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Techo < 600 ft o VIS < 1.500 m",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Techo < 1.000 ft o VIS < 8 km",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "Techo < 1.500 ft (450 m) o visibilidad en tierra < 5 km",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "Solo si VIS < 1.500 m independientemente del techo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Techo < 600 ft o VIS < 1.500 m",
         "is_correct": false
       }
     ],
@@ -1157,22 +1157,22 @@
     "options": [
       {
         "id": "A",
-        "text": "250 kt IAS",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "140 kt IAS",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "250 kt IAS",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "200 kt IAS",
+        "text": "280 kt IAS",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "280 kt IAS",
+        "text": "200 kt IAS",
         "is_correct": false
       }
     ],
@@ -1194,18 +1194,18 @@
     "options": [
       {
         "id": "A",
-        "text": "9.200 ft",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "7.249 ft",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "10.000 ft",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "9.200 ft",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1231,23 +1231,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Entre 14.000 ft y 14.750 ft",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Entre 10.000 ft y 12.400 ft",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Entre 12.400 ft y 14.000 ft",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Exactamente a 10.000 ft",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Entre 10.000 ft y 12.400 ft",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Entre 14.000 ft y 14.750 ft",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1268,18 +1268,18 @@
     "options": [
       {
         "id": "A",
-        "text": "DUMP Button: PUSH IN",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "APU EMER STOP Button: PUSH IN",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Associated Cargo Smoke Button: PUSH",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "DUMP Button: PUSH IN",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1305,18 +1305,18 @@
     "options": [
       {
         "id": "A",
-        "text": "7500",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "7600",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "7700",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "7500",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1347,17 +1347,17 @@
       },
       {
         "id": "B",
-        "text": "DA/H + 100 ft y RVR + 300 m",
+        "text": "DA/H + 150 ft y RVR + 450 m",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "MDA/H + 400 ft y RVR + 1.500 m",
+        "text": "DA/H + 100 ft y RVR + 300 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "DA/H + 150 ft y RVR + 450 m",
+        "text": "MDA/H + 400 ft y RVR + 1.500 m",
         "is_correct": false
       }
     ],
@@ -1379,8 +1379,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Hasta 14.000 ft y 253 KIAS (velocidad máxima operativa de limpiaparabrisas)",
-        "is_correct": true
+        "text": "Solo en tierra y por debajo de 80 kt",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1394,8 +1394,8 @@
       },
       {
         "id": "D",
-        "text": "Solo en tierra y por debajo de 80 kt",
-        "is_correct": false
+        "text": "Hasta 14.000 ft y 253 KIAS (velocidad máxima operativa de limpiaparabrisas)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1416,8 +1416,8 @@
     "options": [
       {
         "id": "A",
-        "text": "DN LOCK REL PRESS and HOLD → LANDING GEAR Lever UP → RELEASE",
-        "is_correct": true
+        "text": "APU EMER STOP y lever UP",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1431,8 +1431,8 @@
       },
       {
         "id": "D",
-        "text": "APU EMER STOP y lever UP",
-        "is_correct": false
+        "text": "DN LOCK REL PRESS and HOLD → LANDING GEAR Lever UP → RELEASE",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1463,12 +1463,12 @@
       },
       {
         "id": "C",
-        "text": "Solo MEANA sin prioridad de vuelo",
+        "text": "ATC → Company → Cabin → Fly",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "ATC → Company → Cabin → Fly",
+        "text": "Solo MEANA sin prioridad de vuelo",
         "is_correct": false
       }
     ],

@@ -7,18 +7,18 @@
     "options": [
       {
         "id": "A",
-        "text": "Software PPS (AIR SUPPORT) para la elaboración por el CCO, transmitiéndose a las tripulaciones mediante la aplicación TAIL LOG en el EFB",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Software comercial de hojas de cálculo de oficina transmitido por correo electrónico personal no encriptado",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Un procesador de texto básico transmitido por radiofrecuencia VHF en canal de voz",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Software PPS (AIR SUPPORT) para la elaboración por el CCO, transmitiéndose a las tripulaciones mediante la aplicación TAIL LOG en el EFB",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -49,7 +49,7 @@
       },
       {
         "id": "B",
-        "text": "Se genera únicamente 10 minutos antes del despegue sin recálculos intermedios",
+        "text": "Se genera una sola vez al inicio de la temporada de vuelos de verano e invierno",
         "is_correct": false
       },
       {
@@ -59,7 +59,7 @@
       },
       {
         "id": "D",
-        "text": "Se genera una sola vez al inicio de la temporada de vuelos de verano e invierno",
+        "text": "Se genera únicamente 10 minutos antes del despegue sin recálculos intermedios",
         "is_correct": false
       }
     ],
@@ -86,7 +86,7 @@
       },
       {
         "id": "B",
-        "text": "Hasta 5 minutos antes del cierre de puertas en todos los vuelos comerciales",
+        "text": "La revisión se realiza después de que el avión haya aterrizado en destino",
         "is_correct": false
       },
       {
@@ -96,7 +96,7 @@
       },
       {
         "id": "D",
-        "text": "La revisión se realiza después de que el avión haya aterrizado en destino",
+        "text": "Hasta 5 minutos antes del cierre de puertas en todos los vuelos comerciales",
         "is_correct": false
       }
     ],
@@ -118,22 +118,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Un valor máximo admisible de 500 kg de diferencia; si se supera o el combustible real es inferior al mínimo de despacho, se debe solicitar un nuevo OFP",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Una diferencia de hasta 5.000 kg sin necesidad de emitir nuevo plan de vuelo",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Un valor máximo admisible de 500 kg de diferencia; si se supera o el combustible real es inferior al mínimo de despacho, se debe solicitar un nuevo OFP",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "No se admite ninguna diferencia, debiendo coincidir al gramo exacto en todos los casos",
+        "text": "Se permite salir con 1.000 kg por debajo del mínimo si el comandante firma un recibo",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Se permite salir con 1.000 kg por debajo del mínimo si el comandante firma un recibo",
+        "text": "No se admite ninguna diferencia, debiendo coincidir al gramo exacto en todos los casos",
         "is_correct": false
       }
     ],
@@ -160,7 +160,7 @@
       },
       {
         "id": "B",
-        "text": "Firmado exclusivamente por el copiloto y destruido en rampa antes del despegue",
+        "text": "Firmado por el sobrecargo de cabina y guardado en la cocina delantera",
         "is_correct": false
       },
       {
@@ -170,7 +170,7 @@
       },
       {
         "id": "D",
-        "text": "Firmado por el sobrecargo de cabina y guardado en la cocina delantera",
+        "text": "Firmado exclusivamente por el copiloto y destruido en rampa antes del despegue",
         "is_correct": false
       }
     ],
@@ -192,17 +192,17 @@
     "options": [
       {
         "id": "A",
+        "text": "La relación de hoteles de pernocta disponibles en la ciudad de origen",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Número de vuelo, fecha, matrícula asignada, tipo E295, tripulación técnica, aeródromo de salida, destino, alternativos y hora programada (STD/STA)",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "El listado completo de nombres y direcciones particulares de todos los pasajeros",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "La relación de hoteles de pernocta disponibles en la ciudad de origen",
+        "text": "El listado completo de nombres y direcciones particulares de todos los pasajeros",
         "is_correct": false
       },
       {
@@ -229,22 +229,22 @@
     "options": [
       {
         "id": "A",
-        "text": "TAXI, TRIP, CONTINGENCY (5%/3%), ALTN, FINAL RESERVE, ADDITIONAL (si aplica), EXTRA (si aplica) y BLOCK FUEL total",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Únicamente el combustible de crucero y el precio del litro de queroseno",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "El combustible consumido por el camión de bomberos en la pista",
+        "id": "B",
+        "text": "La capacidad total de los depósitos dividida entre los dos motores",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "TAXI, TRIP, CONTINGENCY (5%/3%), ALTN, FINAL RESERVE, ADDITIONAL (si aplica), EXTRA (si aplica) y BLOCK FUEL total",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "La capacidad total de los depósitos dividida entre los dos motores",
+        "text": "El combustible consumido por el camión de bomberos en la pista",
         "is_correct": false
       }
     ],
@@ -271,12 +271,12 @@
       },
       {
         "id": "B",
-        "text": "El peso de los uniformes de los pilotos comparado con el peso de las maletas",
+        "text": "La masa de las alas vacías comparada con la masa de los alerones",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "La masa de las alas vacías comparada con la masa de los alerones",
+        "text": "El peso de los uniformes de los pilotos comparado con el peso de las maletas",
         "is_correct": false
       },
       {
@@ -303,13 +303,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Punto de ruta (Waypoint), aerovía, distancia parcial/remanente, rumbo verdadero/magnético, FL, viento/temp (ISA dev), consumo de tramo, EFOB y tiempo",
-        "is_correct": true
+        "text": "El nombre de pila del primer oficial que diseñó la aerovía",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "La lista de monumentos turísticos visibles desde la ventanilla derecha",
-        "is_correct": false
+        "text": "Punto de ruta (Waypoint), aerovía, distancia parcial/remanente, rumbo verdadero/magnético, FL, viento/temp (ISA dev), consumo de tramo, EFOB y tiempo",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -318,7 +318,7 @@
       },
       {
         "id": "D",
-        "text": "El nombre de pila del primer oficial que diseñó la aerovía",
+        "text": "La lista de monumentos turísticos visibles desde la ventanilla derecha",
         "is_correct": false
       }
     ],
@@ -340,23 +340,23 @@
     "options": [
       {
         "id": "A",
-        "text": "EFOB = Combustible estimado a bordo sobre el punto; MIN DIV = Combustible mínimo indispensable para proceder al alternativo con la reserva final intacta",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "EFOB = Energía eléctrica de las baterías; MIN DIV = Distancia mínima al sol",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "EFOB = Equipaje facturado en bodega; MIN DIV = Minutos de retraso permitidos",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "EFOB = Eficiencia del motor; MIN DIV = Diversión de los pasajeros",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "EFOB = Energía eléctrica de las baterías; MIN DIV = Distancia mínima al sol",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "EFOB = Combustible estimado a bordo sobre el punto; MIN DIV = Combustible mínimo indispensable para proceder al alternativo con la reserva final intacta",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -414,13 +414,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Permite al comandante evaluar rápidamente el impacto en tiempo y consumo de volar 2.000 o 4.000 pies por encima o por debajo del nivel planificado",
-        "is_correct": true
+        "text": "Sirve para calcular el coste de las tasas aduaneras de sobrevuelo",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Indica la dirección del viento en las playas turísticas del destino",
-        "is_correct": false
+        "text": "Permite al comandante evaluar rápidamente el impacto en tiempo y consumo de volar 2.000 o 4.000 pies por encima o por debajo del nivel planificado",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -429,7 +429,7 @@
       },
       {
         "id": "D",
-        "text": "Sirve para calcular el coste de las tasas aduaneras de sobrevuelo",
+        "text": "Indica la dirección del viento en las playas turísticas del destino",
         "is_correct": false
       }
     ],
@@ -451,22 +451,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Es la relación entre el coste del tiempo de vuelo y el coste del combustible (CI = Coste Tiempo / Coste Fuel); un CI mayor incrementa la velocidad de vuelo",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Es el porcentaje de impuestos municipales cobrados por el aeropuerto de origen",
+        "text": "Es el coeficiente de fricción de los frenos de carbono en pista mojada",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Es el precio fijo en euros de cada billete de pasaje vendido a bordo",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Es la relación entre el coste del tiempo de vuelo y el coste del combustible (CI = Coste Tiempo / Coste Fuel); un CI mayor incrementa la velocidad de vuelo",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Es el coeficiente de fricción de los frenos de carbono en pista mojada",
+        "text": "Es el porcentaje de impuestos municipales cobrados por el aeropuerto de origen",
         "is_correct": false
       }
     ],
@@ -488,22 +488,22 @@
     "options": [
       {
         "id": "A",
-        "text": "El CCO aplica el porcentaje de penalización de combustible (% Fuel Penalty) y restricciones de nivel/peso en el cálculo del software PPS",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Se añade una anotación a mano por la tripulación de cabina sin alterar los cálculos",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Se ignora la penalización en el plan de vuelo y se despega con combustible estándar",
+        "id": "B",
+        "text": "Se reduce el número de pilotos en cabina técnica para compensar el peso",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "El CCO aplica el porcentaje de penalización de combustible (% Fuel Penalty) y restricciones de nivel/peso en el cálculo del software PPS",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Se reduce el número de pilotos en cabina técnica para compensar el peso",
+        "text": "Se ignora la penalización en el plan de vuelo y se despega con combustible estándar",
         "is_correct": false
       }
     ],
@@ -525,23 +525,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Comunicaciones diarias conjuntas con el routing de aeronaves para el día posterior, y notificación inmediata en el día de la operación de cualquier ítem diferido en línea",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Mediante un mensaje en un buzón de sugerencias al final de la semana",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Confiando en que los pilotos informen verbalmente al llegar a destino",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "No existe coordinación técnica entre el mantenimiento y el centro de control",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mediante un mensaje en un buzón de sugerencias al final de la semana",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Comunicaciones diarias conjuntas con el routing de aeronaves para el día posterior, y notificación inmediata en el día de la operación de cualquier ítem diferido en línea",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -562,13 +562,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Como `H` seguido de los nudos de viento en cara (ej. `H025` = 25 kt Headwind) o `T` seguido de los nudos de viento en cola (ej. `T030` = 30 kt Tailwind)",
-        "is_correct": true
+        "text": "Como `+` para viento de noche y `-` para viento de día",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Como `+` para viento de noche y `-` para viento de día",
-        "is_correct": false
+        "text": "Como `H` seguido de los nudos de viento en cara (ej. `H025` = 25 kt Headwind) o `T` seguido de los nudos de viento en cola (ej. `T030` = 30 kt Tailwind)",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -599,17 +599,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Se eyecta al mar automáticamente antes de iniciar el descenso hacia destino",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Se planifica como un remanente disponible a lo largo de toda la ruta para absorber desvíos meteorológicos, cambios de nivel o demoras de aproximación",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "Se asume que se quema en su totalidad en los primeros 10 segundos tras soltar frenos",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Se eyecta al mar automáticamente antes de iniciar el descenso hacia destino",
+        "text": "Se asume que se quema en su totalidad en los primeros 10 segundos tras soltar frenos",
         "is_correct": false
       },
       {
@@ -636,22 +636,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Optimum FL es el nivel de mínimo coste/consumo para el peso y Cost Index actual; Max FL es el techo de servicio limitado por margen de buffet o empuje",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Optimum FL es el nivel más bajo posible; Max FL es el nivel de transición",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Optimum FL es para vuelo visual; Max FL exclusivamente para vuelo instrumental",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "No existe diferencia siendo términos sinónimos en la aviación comercial",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Optimum FL es el nivel de mínimo coste/consumo para el peso y Cost Index actual; Max FL es el techo de servicio limitado por margen de buffet o empuje",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Optimum FL es el nivel más bajo posible; Max FL es el nivel de transición",
         "is_correct": false
       }
     ],
@@ -678,7 +678,7 @@
       },
       {
         "id": "B",
-        "text": "Se cancela el vuelo automáticamente sin posibilidad de salida en papel",
+        "text": "Se escribe el plan de vuelo a mano en una servilleta de la cafetería de la terminal",
         "is_correct": false
       },
       {
@@ -688,7 +688,7 @@
       },
       {
         "id": "D",
-        "text": "Se escribe el plan de vuelo a mano en una servilleta de la cafetería de la terminal",
+        "text": "Se cancela el vuelo automáticamente sin posibilidad de salida en papel",
         "is_correct": false
       }
     ],
@@ -710,22 +710,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Hora real de paso por los fijos (Actual Time / ATO), combustible real a bordo (Actual FOB) y discrepancia de combustible (+/- kg)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "La lista de nombres de los controladores aéreos de cada sector",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "El consumo de agua mineral y café de la tripulación técnica",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "Hora real de paso por los fijos (Actual Time / ATO), combustible real a bordo (Actual FOB) y discrepancia de combustible (+/- kg)",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "Las matrículas de los aviones que cruzan en sentido contrario a más de 2.000 pies",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La lista de nombres de los controladores aéreos de cada sector",
         "is_correct": false
       }
     ],
@@ -747,23 +747,23 @@
     "options": [
       {
         "id": "A",
-        "text": "ZFW, Fuel en rampa (Block Fuel), Reserva de combustible, Cost Index, Nivel de crucero inicial (CRZ FL) y temperatura en altitud",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Únicamente la fecha de nacimiento del primer oficial",
+        "text": "La presión de los neumáticos del tren de morro en tierra",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "El número de asientos de la fila de salida de emergencia",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "La presión de los neumáticos del tren de morro en tierra",
+        "id": "C",
+        "text": "Únicamente la fecha de nacimiento del primer oficial",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "ZFW, Fuel en rampa (Block Fuel), Reserva de combustible, Cost Index, Nivel de crucero inicial (CRZ FL) y temperatura en altitud",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -784,13 +784,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Con su código ICAO de 4 letras, pista prevista, distancia de desvío, tiempo de vuelo, combustible requerido y perfil de aproximación",
-        "is_correct": true
+        "text": "Únicamente con el prefijo telefónico internacional del país",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Con una marca de agua confidencial visible solo con luz ultravioleta",
-        "is_correct": false
+        "text": "Con su código ICAO de 4 letras, pista prevista, distancia de desvío, tiempo de vuelo, combustible requerido y perfil de aproximación",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -799,7 +799,7 @@
       },
       {
         "id": "D",
-        "text": "Únicamente con el prefijo telefónico internacional del país",
+        "text": "Con una marca de agua confidencial visible solo con luz ultravioleta",
         "is_correct": false
       }
     ],
@@ -826,17 +826,17 @@
       },
       {
         "id": "B",
-        "text": "Se despega con el plan antiguo asumiendo que la meteo mejorará en vuelo",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Se cancela la licencia de vuelo de los pilotos de guardia",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Se cambia de aeronave en plataforma por un avión más pequeño",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se despega con el plan antiguo asumiendo que la meteo mejorará en vuelo",
         "is_correct": false
       }
     ],
@@ -858,23 +858,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Aproximadamente entre 1.800 kg/h y 2.200 kg/h en configuración limpia a velocidad Green Dot / Hold Speed según el peso de la aeronave",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "A 500 kg/h igual que un monomotor ligero de hélice",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "A 10.000 kg/h en régimen de postcombustión supersónica",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "A 0 kg/h si los motores se apagan durante los tramos rectos de la espera",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "A 500 kg/h igual que un monomotor ligero de hélice",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aproximadamente entre 1.800 kg/h y 2.200 kg/h en configuración limpia a velocidad Green Dot / Hold Speed según el peso de la aeronave",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -895,23 +895,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Con la indicación del fijo de navegación óptimo donde el menor peso por combustible consumido permite ascender al nivel superior con mayor eficiencia",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Con una alarma sonora continua en los altavoces de cabina de pasajeros",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Con una prohibición expresa de hablar entre los miembros de la tripulación",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Indicando que se debe apagar el aire acondicionado durante el ascenso",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Con una alarma sonora continua en los altavoces de cabina de pasajeros",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Con la indicación del fijo de navegación óptimo donde el menor peso por combustible consumido permite ascender al nivel superior con mayor eficiencia",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -932,22 +932,22 @@
     "options": [
       {
         "id": "A",
-        "text": "A través de auditorías periódicas y procedimientos del MOFT donde la Oficina Técnica valida los datos de salida del PPS con las tablas del fabricante",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Comparando los resultados con una revista comercial de aviación general",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Aceptando los algoritmos de la computadora sin ninguna auditoría técnica",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Pidiendo a los pasajeros que calculen el consumo con sus teléfonos móviles",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "A través de auditorías periódicas y procedimientos del MOFT donde la Oficina Técnica valida los datos de salida del PPS con las tablas del fabricante",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Comparando los resultados con una revista comercial de aviación general",
         "is_correct": false
       }
     ],
@@ -969,22 +969,22 @@
     "options": [
       {
         "id": "A",
-        "text": "El valor exacto de la **Reserva Final de Combustible (Final Reserve Fuel / FINRES)** reflejado en kilogramos en el resumen de combustible",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "El combustible de rodaje (Taxi Fuel) asignado para el aeropuerto de salida",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "El valor exacto de la **Reserva Final de Combustible (Final Reserve Fuel / FINRES)** reflejado en kilogramos en el resumen de combustible",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "El peso de las maletas transportadas en el compartimento de carga trasero",
+        "text": "La cantidad de aceite remanente en el depósito del motor izquierdo",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "La cantidad de aceite remanente en el depósito del motor izquierdo",
+        "text": "El peso de las maletas transportadas en el compartimento de carga trasero",
         "is_correct": false
       }
     ],
@@ -1080,23 +1080,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Leg Time es el tiempo estimado de vuelo entre dos waypoints consecutivos; Total EET es el tiempo acumulado desde el despegue hasta ese punto",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Leg Time es el tiempo de parada en el hotel; Total EET es la duración del contrato laboral",
+        "text": "No existe diferencia siendo dos columnas con el mismo número repetido",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Leg Time es la hora local de salida; Total EET es la hora de puesta de sol",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "No existe diferencia siendo dos columnas con el mismo número repetido",
+        "id": "C",
+        "text": "Leg Time es el tiempo de parada en el hotel; Total EET es la duración del contrato laboral",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Leg Time es el tiempo estimado de vuelo entre dos waypoints consecutivos; Total EET es el tiempo acumulado desde el despegue hasta ese punto",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1117,8 +1117,8 @@
     "options": [
       {
         "id": "A",
-        "text": "En las indicaciones de consumo horario por motor especificadas en el OFP / FMS comparándolas con los instrumentos de motor del EICAS",
-        "is_correct": true
+        "text": "En la factura de compra del queroseno entregada por el camión cisterna",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1127,13 +1127,13 @@
       },
       {
         "id": "C",
-        "text": "En la factura de compra del queroseno entregada por el camión cisterna",
+        "text": "En el reloj cronógrafo de pulsera del segundo oficial de cabina",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "En el reloj cronógrafo de pulsera del segundo oficial de cabina",
-        "is_correct": false
+        "text": "En las indicaciones de consumo horario por motor especificadas en el OFP / FMS comparándolas con los instrumentos de motor del EICAS",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1154,12 +1154,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Una copia queda en tierra con el agente de handling hasta el final del vuelo/set; la segunda se guarda en el sobre de vuelo y se envía a la Dirección de Operaciones",
-        "is_correct": true
+        "text": "Ambas copias se destruyen en el triturador de papel del hotel de destino",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Ambas copias se destruyen en el triturador de papel del hotel de destino",
+        "text": "Se envían por correo electrónico personal al fabricante del fuselaje",
         "is_correct": false
       },
       {
@@ -1169,8 +1169,8 @@
       },
       {
         "id": "D",
-        "text": "Se envían por correo electrónico personal al fabricante del fuselaje",
-        "is_correct": false
+        "text": "Una copia queda en tierra con el agente de handling hasta el final del vuelo/set; la segunda se guarda en el sobre de vuelo y se envía a la Dirección de Operaciones",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1191,22 +1191,22 @@
     "options": [
       {
         "id": "A",
+        "text": "La velocidad de rotación de las ruedas del tren de aterrizaje en crucero",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "El rumbo magnético corregido por viento (Magnetic Heading) a partir de la derrota magnética (Magnetic Track) y el ángulo de deriva estimado",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "El ángulo de inclinación lateral de los alerones durante el vuelo en línea recta",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "El desplazamiento de los pasajeros en el pasillo durante el servicio de café",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "La velocidad de rotación de las ruedas del tren de aterrizaje en crucero",
+        "text": "El desplazamiento de los pasajeros en el pasillo durante el servicio de café",
         "is_correct": false
       }
     ],
@@ -1233,17 +1233,17 @@
       },
       {
         "id": "B",
-        "text": "No contempla el oxígeno al considerarse un gas innecesario en aviación moderna",
+        "text": "Calcula el oxígeno sumando la capacidad de los extintores de incendios portátiles",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Exige que todos los pasajeros viajen con máscaras de oxígeno puestas durante el despegue",
+        "text": "No contempla el oxígeno al considerarse un gas innecesario en aviación moderna",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Calcula el oxígeno sumando la capacidad de los extintores de incendios portátiles",
+        "text": "Exige que todos los pasajeros viajen con máscaras de oxígeno puestas durante el despegue",
         "is_correct": false
       }
     ],
@@ -1275,12 +1275,12 @@
       },
       {
         "id": "C",
-        "text": "El punto de la pista donde las ruedas del morro se despegan del asfalto",
+        "text": "La altitud a partir de la cual el cielo se vuelve de color azul oscuro",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "La altitud a partir de la cual el cielo se vuelve de color azul oscuro",
+        "text": "El punto de la pista donde las ruedas del morro se despegan del asfalto",
         "is_correct": false
       }
     ],
@@ -1302,17 +1302,17 @@
     "options": [
       {
         "id": "A",
+        "text": "El momento en que se cruza el meridiano de Greenwich a velocidad de crucero",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "El punto geográfico en la ruta desde el cual el tiempo de vuelo hacia el aeródromo de retorno y hacia el aeródromo de continuación es exactamente el mismo",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "El punto donde los dos pilotos tienen exactamente la misma edad biológica",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "El momento en que se cruza el meridiano de Greenwich a velocidad de crucero",
+        "text": "El punto donde los dos pilotos tienen exactamente la misma edad biológica",
         "is_correct": false
       },
       {
@@ -1376,12 +1376,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Los METAR, TAF, NOTAMs vigentes y los mínimos de utilización de las cartas LIDO para origen, destino, alternativos y puntos de ruta",
-        "is_correct": true
+        "text": "Las tarifas de los taxis urbanos en los aeropuertos de destino",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Las tarifas de los taxis urbanos en los aeropuertos de destino",
+        "text": "La lista de hoteles con descuento para tripulaciones de aviación",
         "is_correct": false
       },
       {
@@ -1391,8 +1391,8 @@
       },
       {
         "id": "D",
-        "text": "La lista de hoteles con descuento para tripulaciones de aviación",
-        "is_correct": false
+        "text": "Los METAR, TAF, NOTAMs vigentes y los mínimos de utilización de las cartas LIDO para origen, destino, alternativos y puntos de ruta",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1418,17 +1418,17 @@
       },
       {
         "id": "B",
-        "text": "Una espera en circuito visual a 50 pies sobre la pista durante 2 horas",
+        "text": "Un aterrizaje de emergencia en el césped contiguo a la pista de rodaje",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Un picado a velocidad máxima hacia el mar sin ganar altitud",
+        "text": "Una espera en circuito visual a 50 pies sobre la pista durante 2 horas",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Un aterrizaje de emergencia en el césped contiguo a la pista de rodaje",
+        "text": "Un picado a velocidad máxima hacia el mar sin ganar altitud",
         "is_correct": false
       }
     ],
@@ -1450,23 +1450,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Audita que las altitudes mínimas, consumos, contingencias y selección de alternativos cumplen los estándares del MOA y la reglamentación EASA",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Comprueba que los documentos no tengan manchas de tinta en las esquinas",
+        "text": "Cuenta el número de grapas metálicas utilizadas en cada sobre de vuelo",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Verifica el tipo de letra tipográfica utilizado por la impresora de la escala",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Cuenta el número de grapas metálicas utilizadas en cada sobre de vuelo",
+        "id": "C",
+        "text": "Comprueba que los documentos no tengan manchas de tinta en las esquinas",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Audita que las altitudes mínimas, consumos, contingencias y selección de alternativos cumplen los estándares del MOA y la reglamentación EASA",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1492,12 +1492,12 @@
       },
       {
         "id": "B",
-        "text": "A que los motores han generado combustible de forma autónoma durante el crucero",
+        "text": "A un error grave en la báscula de pesaje de equipajes en el aeropuerto de salida",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "A un error grave en la báscula de pesaje de equipajes en el aeropuerto de salida",
+        "text": "A que los motores han generado combustible de forma autónoma durante el crucero",
         "is_correct": false
       },
       {
@@ -1529,12 +1529,12 @@
       },
       {
         "id": "B",
-        "text": "En una llamada a la policía local del municipio aeroportuario",
+        "text": "En el libro de visitas del museo aeronáutico de la isla",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "En el libro de visitas del museo aeronáutico de la isla",
+        "text": "En una llamada a la policía local del municipio aeroportuario",
         "is_correct": false
       },
       {
@@ -1566,17 +1566,17 @@
       },
       {
         "id": "B",
-        "text": "Ascenso inmediato a FL450 para reducir el consumo de queroseno",
+        "text": "Vuelo en invertido con los motores a potencia mínima de ralentí",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Descenso al nivel de las olas a 50 pies sobre el agua en toda la ruta",
+        "text": "Ascenso inmediato a FL450 para reducir el consumo de queroseno",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Vuelo en invertido con los motores a potencia mínima de ralentí",
+        "text": "Descenso al nivel de las olas a 50 pies sobre el agua en toda la ruta",
         "is_correct": false
       }
     ],
@@ -1598,23 +1598,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Descenso Driftdown hasta el techo monomotor neto, crucero con un motor inoperativo a velocidad de largo alcance hacia el alternativo y aproximación",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Parada deliberada del segundo motor para descender planeando",
+        "text": "Lanzamiento de las puertas de pasajeros para reducir la resistencia al avance",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Vuelo a velocidad máxima VMO con un solo motor acelerado al 150%",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Lanzamiento de las puertas de pasajeros para reducir la resistencia al avance",
+        "id": "C",
+        "text": "Parada deliberada del segundo motor para descender planeando",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Descenso Driftdown hasta el techo monomotor neto, crucero con un motor inoperativo a velocidad de largo alcance hacia el alternativo y aproximación",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1635,22 +1635,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Debe estar accesible y disponible para la tripulación de vuelo en todo momento durante el transcurso del vuelo",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Debe guardarse bajo llave en la bodega de carga delantera inaccesible en vuelo",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Debe dejarse obligatoriamente en tierra sin que los pilotos lleven ninguna copia",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "Debe estar accesible y disponible para la tripulación de vuelo en todo momento durante el transcurso del vuelo",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "Solo es accesible cuando la aeronave se encuentra a más de 30.000 pies de altitud",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Debe guardarse bajo llave en la bodega de carga delantera inaccesible en vuelo",
         "is_correct": false
       }
     ],
@@ -1672,8 +1672,8 @@
     "options": [
       {
         "id": "A",
-        "text": "En **Kilogramos (kg)** de forma estandarizada en todos los documentos de despacho, FMS y sistemas de combustible",
-        "is_correct": true
+        "text": "En metros cúbicos de gas licuado de petróleo comprimido",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1682,12 +1682,12 @@
       },
       {
         "id": "C",
-        "text": "En libras estadounidenses (lbs) exclusivamente en vuelos interinsulares",
-        "is_correct": false
+        "text": "En **Kilogramos (kg)** de forma estandarizada en todos los documentos de despacho, FMS y sistemas de combustible",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "En metros cúbicos de gas licuado de petróleo comprimido",
+        "text": "En libras estadounidenses (lbs) exclusivamente en vuelos interinsulares",
         "is_correct": false
       }
     ],
@@ -1709,22 +1709,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Verificando que el nivel de vuelo planificado (FL) en cada segmento se encuentra holgadamente por encima de la MGA / MEA de la franja correspondiente",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Comprobando que el número del nivel de vuelo sea un número par",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Confiando en que el sistema de aviso de proximidad al suelo (EGPWS) apague los motores a tiempo",
+        "id": "B",
+        "text": "Preguntando al controlador aéreo si la montaña es más alta que el avión",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Verificando que el nivel de vuelo planificado (FL) en cada segmento se encuentra holgadamente por encima de la MGA / MEA de la franja correspondiente",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Preguntando al controlador aéreo si la montaña es más alta que el avión",
+        "text": "Confiando en que el sistema de aviso de proximidad al suelo (EGPWS) apague los motores a tiempo",
         "is_correct": false
       }
     ],
@@ -1746,22 +1746,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Incorporar la carga estimada final de pasajeros, la última previsión meteorológica de viento/temperatura y el combustible ajustado definitivo",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Cambiar el nombre del comandante por un nombre aleatorio del sistema",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Añadir 10 horas de espera en el aeropuerto de destino",
+        "id": "B",
+        "text": "Eliminar todos los aeródromos alternativos del plan de vuelo",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Incorporar la carga estimada final de pasajeros, la última previsión meteorológica de viento/temperatura y el combustible ajustado definitivo",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Eliminar todos los aeródromos alternativos del plan de vuelo",
+        "text": "Añadir 10 horas de espera en el aeropuerto de destino",
         "is_correct": false
       }
     ],
@@ -1788,17 +1788,17 @@
       },
       {
         "id": "B",
-        "text": "Con nombres de calles urbanas de la ciudad más cercana",
+        "text": "Escribiendo la altitud de cada montaña en metros sobre el suelo",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Mediante dibujos vectoriales de animales marinos",
+        "text": "Con nombres de calles urbanas de la ciudad más cercana",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Escribiendo la altitud de cada montaña en metros sobre el suelo",
+        "text": "Mediante dibujos vectoriales de animales marinos",
         "is_correct": false
       }
     ],
@@ -1825,12 +1825,12 @@
       },
       {
         "id": "B",
-        "text": "Que se compromete a pagar el combustible del avión con su tarjeta bancaria privada",
+        "text": "Que autoriza a los pasajeros a pilotar el avión durante el crucero",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Que autoriza a los pasajeros a pilotar el avión durante el crucero",
+        "text": "Que se compromete a pagar el combustible del avión con su tarjeta bancaria privada",
         "is_correct": false
       },
       {

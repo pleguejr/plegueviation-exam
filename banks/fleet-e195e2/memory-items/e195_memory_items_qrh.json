@@ -7,23 +7,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Crew Oxy Masks .................... DON, 100%",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Thrust Levers .................... IDLE",
+        "text": "DUMP Button .................... PUSH IN",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Speedbrake Lever .................... FULL OPEN",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "DUMP Button .................... PUSH IN",
+        "id": "C",
+        "text": "Thrust Levers .................... IDLE",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Crew Oxy Masks .................... DON, 100%",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -54,12 +54,12 @@
       },
       {
         "id": "C",
-        "text": "DUMP Button .................... GUARD CLOSED",
+        "text": "DUMP Button .................... NO TOCAR",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "DUMP Button .................... NO TOCAR",
+        "text": "DUMP Button .................... GUARD CLOSED",
         "is_correct": false
       }
     ],
@@ -81,8 +81,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Airspeed .................... MIN 250 KIAS / RAT SPEED",
-        "is_correct": true
+        "text": "Airspeed .................... 180 KIAS fijo",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -91,13 +91,13 @@
       },
       {
         "id": "C",
-        "text": "Airspeed .................... 180 KIAS fijo",
+        "text": "Airspeed .................... VMO/MMO",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Airspeed .................... VMO/MMO",
-        "is_correct": false
+        "text": "Airspeed .................... MIN 250 KIAS / RAT SPEED",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -118,22 +118,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Thrust Lever (affected) ........ IDLE -> START/STOP Selector ........ STOP -> Fire Handle ........ PULL",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Fire Handle ........ PULL -> Thrust Lever ........ IDLE -> BOTTLE DISCH",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Thrust Lever (affected) ........ IDLE -> START/STOP Selector ........ STOP -> Fire Handle ........ PULL",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "START/STOP Selector ........ STOP -> Fire Handle ........ PUSH IN",
+        "text": "Thrust Lever ........ MAX -> Fire Handle ........ PULL",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Thrust Lever ........ MAX -> Fire Handle ........ PULL",
+        "text": "START/STOP Selector ........ STOP -> Fire Handle ........ PUSH IN",
         "is_correct": false
       }
     ],

@@ -7,23 +7,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Fuentes NAVIAR, AEMET y NOAA; los METAR y TAFOR deben tener una vigencia no superior a 1 hora desde su publicación en el despacho",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Cualquier aplicación meteorológica gratuita de smartphone con informes de hasta 24 horas de antigüedad",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Exclusivamente el canal meteorológico de televisión local con vigencia semanal",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Servicios privados de predicción astronómica con informes emitidos cada 12 horas",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Fuentes NAVIAR, AEMET y NOAA; los METAR y TAFOR deben tener una vigencia no superior a 1 hora desde su publicación en el despacho",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -44,23 +44,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Cuando disponga de información que indique que las condiciones meteorológicas previstas en destino o alternativos en la ETA serán iguales o mejores que los mínimos de planificación",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Siempre que la visibilidad en el aeródromo de salida sea superior a 10 km, independientemente de que el destino esté bajo cero absoluto",
+        "text": "Cuando el copiloto confirme visualmente que no hay relámpagos en el horizonte antes de iniciar el rodaje",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Únicamente si no existen nubes en todo el espacio aéreo de la ruta de crucero",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Cuando el copiloto confirme visualmente que no hay relámpagos en el horizonte antes de iniciar el rodaje",
+        "id": "C",
+        "text": "Siempre que la visibilidad en el aeródromo de salida sea superior a 10 km, independientemente de que el destino esté bajo cero absoluto",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cuando disponga de información que indique que las condiciones meteorológicas previstas en destino o alternativos en la ETA serán iguales o mejores que los mínimos de planificación",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -81,8 +81,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Nivel medio (Mid Level entre FL100 y FL250) y Nivel alto (High Level entre FL250 y FL450/FL630)",
-        "is_correct": true
+        "text": "Nivel estratosférico superior (únicamente entre FL600 y FL900)",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -91,8 +91,8 @@
       },
       {
         "id": "C",
-        "text": "Nivel estratosférico superior (únicamente entre FL600 y FL900)",
-        "is_correct": false
+        "text": "Nivel medio (Mid Level entre FL100 y FL250) y Nivel alto (High Level entre FL250 y FL450/FL630)",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -118,17 +118,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Una advertencia de cierre definitivo del aeropuerto por obras de pavimentación",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Fluctuaciones temporales de las condiciones que se prevé duren menos de 1 hora en cada ocasión y en total menos de la mitad del periodo de validez",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "Un cambio permanente e irreversible de las condiciones meteorológicas que se mantendrá durante los siguientes 3 días",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Una advertencia de cierre definitivo del aeropuerto por obras de pavimentación",
+        "text": "Un cambio permanente e irreversible de las condiciones meteorológicas que se mantendrá durante los siguientes 3 días",
         "is_correct": false
       },
       {
@@ -155,22 +155,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Una transición gradual o regular hacia nuevas condiciones que comenzará al inicio del intervalo y se completará al final del período especificado",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Un empeoramiento momentáneo que desaparece en menos de 5 minutos",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Una transición gradual o regular hacia nuevas condiciones que comenzará al inicio del intervalo y se completará al final del período especificado",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "Una probabilidad matemática del 20% de que ocurra lluvia moderada",
+        "text": "Un aviso de presencia de aves migratorias en las proximidades del umbral",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Un aviso de presencia de aves migratorias en las proximidades del umbral",
+        "text": "Una probabilidad matemática del 20% de que ocurra lluvia moderada",
         "is_correct": false
       }
     ],
@@ -202,12 +202,12 @@
       },
       {
         "id": "C",
-        "text": "Obliga a suspender todos los vuelos de la compañía aérea durante un periodo de 24 horas",
+        "text": "Se ignoran por completo al considerarse probabilidades estadísticamente insignificantes",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Se ignoran por completo al considerarse probabilidades estadísticamente insignificantes",
+        "text": "Obliga a suspender todos los vuelos de la compañía aérea durante un periodo de 24 horas",
         "is_correct": false
       }
     ],
@@ -234,12 +234,12 @@
       },
       {
         "id": "B",
-        "text": "Llovizna débil intermitente con visibilidad superior a 15 kilómetros",
+        "text": "Viento en calma en el nivel de crucero con temperatura estándar ISA",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Viento en calma en el nivel de crucero con temperatura estándar ISA",
+        "text": "Llovizna débil intermitente con visibilidad superior a 15 kilómetros",
         "is_correct": false
       },
       {
@@ -266,13 +266,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Están orientados a la seguridad de vuelos a baja cota (por debajo de FL100 / FL150 en zonas montañosas)",
-        "is_correct": true
+        "text": "Son emitidos exclusivamente para regular la temperatura del aire acondicionado en plataforma",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Son exclusivos para vuelos espaciales supersónicos por encima de FL600",
-        "is_correct": false
+        "text": "Están orientados a la seguridad de vuelos a baja cota (por debajo de FL100 / FL150 en zonas montañosas)",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -281,7 +281,7 @@
       },
       {
         "id": "D",
-        "text": "Son emitidos exclusivamente para regular la temperatura del aire acondicionado en plataforma",
+        "text": "Son exclusivos para vuelos espaciales supersónicos por encima de FL600",
         "is_correct": false
       }
     ],
@@ -303,13 +303,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Cambio brusco de dirección y/o velocidad del viento en corta distancia horizontal/vertical, pudiendo causar pérdidas graves de sustentación y control",
-        "is_correct": true
+        "text": "Una suave brisa térmica marina que facilita el ascenso inicial de la aeronave",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Una suave brisa térmica marina que facilita el ascenso inicial de la aeronave",
-        "is_correct": false
+        "text": "Cambio brusco de dirección y/o velocidad del viento en corta distancia horizontal/vertical, pudiendo causar pérdidas graves de sustentación y control",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -340,8 +340,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Desconectar AP/AT, aplicar empuje máximo TOGA de inmediato, rotar hacia la actitud de cabezo de escape (Flight Director) y NO cambiar configuración de flaps ni tren",
-        "is_correct": true
+        "text": "Efectuar un viraje ceñido de 90° con flaps en posición completa de aterrizaje",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -350,8 +350,8 @@
       },
       {
         "id": "C",
-        "text": "Efectuar un viraje ceñido de 90° con flaps en posición completa de aterrizaje",
-        "is_correct": false
+        "text": "Desconectar AP/AT, aplicar empuje máximo TOGA de inmediato, rotar hacia la actitud de cabezo de escape (Flight Director) y NO cambiar configuración de flaps ni tren",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -377,8 +377,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Fuerte viento de cara inicial (aumento de sustentación/IAS), seguido de fuerte corriente descendente (Downdraft) y severo viento de cola (pérdida crítica de sustentación)",
-        "is_correct": true
+        "text": "Viento lateral constante de 5 nudos que no altera la senda de planeo",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -387,8 +387,8 @@
       },
       {
         "id": "C",
-        "text": "Viento lateral constante de 5 nudos que no altera la senda de planeo",
-        "is_correct": false
+        "text": "Fuerte viento de cara inicial (aumento de sustentación/IAS), seguido de fuerte corriente descendente (Downdraft) y severo viento de cola (pérdida crítica de sustentación)",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -414,13 +414,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Se forma por congelación instantánea de gotas pequeñas a temperaturas bajas (<-10°C), aspecto blanco opaco, rugoso y quebradizo",
-        "is_correct": true
+        "text": "Se forma en la pista de aterrizaje debido al paso repetido de los neumáticos de los camiones",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Se forma por agua líquida a +25°C con aspecto transparente y textura aceitosa",
-        "is_correct": false
+        "text": "Se forma por congelación instantánea de gotas pequeñas a temperaturas bajas (<-10°C), aspecto blanco opaco, rugoso y quebradizo",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -429,7 +429,7 @@
       },
       {
         "id": "D",
-        "text": "Se forma en la pista de aterrizaje debido al paso repetido de los neumáticos de los camiones",
+        "text": "Se forma por agua líquida a +25°C con aspecto transparente y textura aceitosa",
         "is_correct": false
       }
     ],
@@ -461,12 +461,12 @@
       },
       {
         "id": "C",
-        "text": "Porque evapora instantáneamente el combustible de los depósitos alares",
+        "text": "Porque bloquea las comunicaciones de radio en frecuencia VHF exclusivamente",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Porque bloquea las comunicaciones de radio en frecuencia VHF exclusivamente",
+        "text": "Porque evapora instantáneamente el combustible de los depósitos alares",
         "is_correct": false
       }
     ],
@@ -493,17 +493,17 @@
       },
       {
         "id": "B",
-        "text": "Apagar los sistemas antihielo para evitar el sobrecalentamiento de los motores",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Acelerar a velocidad VNE con flaps extendidos para romper el hielo por vibración",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Mantener la espera en el interior de la nube engelante durante al menos 45 minutos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Apagar los sistemas antihielo para evitar el sobrecalentamiento de los motores",
         "is_correct": false
       }
     ],
@@ -530,17 +530,17 @@
       },
       {
         "id": "B",
-        "text": "En el interior de bancos de niebla densa a nivel del mar; se detecta mediante el altímetro",
+        "text": "En el centro exacto del ojo de los huracanes tropicales a baja velocidad",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Exclusivamente dentro de los hangares cerrados de mantenimiento",
+        "text": "En el interior de bancos de niebla densa a nivel del mar; se detecta mediante el altímetro",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "En el centro exacto del ojo de los huracanes tropicales a baja velocidad",
+        "text": "Exclusivamente dentro de los hangares cerrados de mantenimiento",
         "is_correct": false
       }
     ],
@@ -567,17 +567,17 @@
       },
       {
         "id": "B",
-        "text": "Acelerar a velocidad máxima VMO para cruzar la turbulencia en el menor tiempo posible",
+        "text": "Extender el tren de aterrizaje y flaps completos a nivel de vuelo FL350",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Aplicar deflexiones completas de timón y alerones para mantener la altitud al pie de la letra",
+        "text": "Acelerar a velocidad máxima VMO para cruzar la turbulencia en el menor tiempo posible",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Extender el tren de aterrizaje y flaps completos a nivel de vuelo FL350",
+        "text": "Aplicar deflexiones completas de timón y alerones para mantener la altitud al pie de la letra",
         "is_correct": false
       }
     ],
@@ -599,23 +599,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Al menos 20 NM de separación lateral por el lado de barlovento (upwind), e incrementar la distancia por sotavento (downwind) bajo el yunque",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Volar a menos de 100 metros del núcleo para aprovechar las corrientes térmicas ascendentes",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Cruzar directamente por el centro del eco rojo del radar meteorológico",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Mantener 1 NM de separación independientemente de la altitud y la intensidad del eco",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Al menos 20 NM de separación lateral por el lado de barlovento (upwind), e incrementar la distancia por sotavento (downwind) bajo el yunque",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -641,17 +641,17 @@
       },
       {
         "id": "B",
-        "text": "El servicio de guardacostas marítimos de la zona costera más próxima",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "La federación internacional de deportes aéreos recreativos",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "La oficina de turismo municipal de la isla volcánica correspondiente",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El servicio de guardacostas marítimos de la zona costera más próxima",
         "is_correct": false
       }
     ],
@@ -673,8 +673,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Virar 180° de inmediato para salir por la misma trayectoria, reducir empuje a ralentí (IDLE), conectar ignición continua y descender",
-        "is_correct": true
+        "text": "Apagar todos los generadores eléctricos y continuar en vuelo sin instrumentos",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -683,12 +683,12 @@
       },
       {
         "id": "C",
-        "text": "Abrir las ventanillas de cabina para verificar la densidad del polvo exterior",
-        "is_correct": false
+        "text": "Virar 180° de inmediato para salir por la misma trayectoria, reducir empuje a ralentí (IDLE), conectar ignición continua y descender",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "Apagar todos los generadores eléctricos y continuar en vuelo sin instrumentos",
+        "text": "Abrir las ventanillas de cabina para verificar la densidad del polvo exterior",
         "is_correct": false
       }
     ],
@@ -710,22 +710,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Se compone del Código de Estado de Pista (RWYCC de 0 a 6 para cada tercio), tipo de contaminante, espesor en mm y porcentaje de cobertura",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Consiste en una nota de voz grabada por el jefe de bomberos del aeropuerto",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Se clasifica únicamente como pista 'buena' o pista 'mala' sin datos cuantitativos",
+        "id": "B",
+        "text": "Se emite un número telefónico al que la tripulación debe llamar desde el aire",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Se compone del Código de Estado de Pista (RWYCC de 0 a 6 para cada tercio), tipo de contaminante, espesor en mm y porcentaje de cobertura",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Se emite un número telefónico al que la tripulación debe llamar desde el aire",
+        "text": "Se clasifica únicamente como pista 'buena' o pista 'mala' sin datos cuantitativos",
         "is_correct": false
       }
     ],
@@ -747,8 +747,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Pista seca (Dry Runway) con eficacia de frenado óptima",
-        "is_correct": true
+        "text": "Pista con agua estancada de más de 15 mm de profundidad",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -757,8 +757,8 @@
       },
       {
         "id": "C",
-        "text": "Pista con agua estancada de más de 15 mm de profundidad",
-        "is_correct": false
+        "text": "Pista seca (Dry Runway) con eficacia de frenado óptima",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -784,18 +784,18 @@
     "options": [
       {
         "id": "A",
-        "text": "Pista mojada (Wet Runway) con espesor de agua ≤ 3 mm, o escarcha (Frost)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Pista cubierta de nieve seca compactada a -25°C",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Pista seca sin ningún tipo de residuo ni humedad",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Pista mojada (Wet Runway) con espesor de agua ≤ 3 mm, o escarcha (Frost)",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -826,12 +826,12 @@
       },
       {
         "id": "B",
-        "text": "Pista seca y limpia a temperatura ambiente de 20°C",
+        "text": "Pista mojada con menos de 1 mm de humedad sin charcos",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Pista mojada con menos de 1 mm de humedad sin charcos",
+        "text": "Pista seca y limpia a temperatura ambiente de 20°C",
         "is_correct": false
       },
       {
@@ -858,22 +858,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Hielo mojado (Wet Ice), agua sobre nieve compactada o hielo contaminado; eficacia de frenado nula (LESS THAN POOR), prohibiéndose despegues y aterrizajes",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Pista seca recién asfaltada con autorización para despegues de máxima carga",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Pista con ligera bruma matinal sin impacto en la adherencia de los neumáticos",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "Hielo mojado (Wet Ice), agua sobre nieve compactada o hielo contaminado; eficacia de frenado nula (LESS THAN POOR), prohibiéndose despegues y aterrizajes",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "Pista donde se autorizan exclusivamente aproximaciones visuales de helicópteros",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pista seca recién asfaltada con autorización para despegues de máxima carga",
         "is_correct": false
       }
     ],
@@ -900,17 +900,17 @@
       },
       {
         "id": "B",
-        "text": "Niebla (FG) se reporta cuando la visibilidad es inferior a 50 metros exclusivamente",
+        "text": "Ambos términos son idénticos y se eligen por sorteo en la estación meteorológica",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Neblina (BR) se reporta únicamente cuando la temperatura ambiente es inferior a -10°C",
+        "text": "Niebla (FG) se reporta cuando la visibilidad es inferior a 50 metros exclusivamente",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Ambos términos son idénticos y se eligen por sorteo en la estación meteorológica",
+        "text": "Neblina (BR) se reporta únicamente cuando la temperatura ambiente es inferior a -10°C",
         "is_correct": false
       }
     ],
@@ -932,22 +932,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Lluvia engelante (Freezing Rain); gotas sobreenfriadas que se congelan instantáneamente al impactar la aeronave, causando engelamiento severo inmediato",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Niebla marina cálida sin riesgo de formación de hielo",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Granizo blando que se disuelve antes de tocar el fuselaje",
+        "id": "B",
+        "text": "Viento en calma con visibilidad reducida por humo industrial",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Lluvia engelante (Freezing Rain); gotas sobreenfriadas que se congelan instantáneamente al impactar la aeronave, causando engelamiento severo inmediato",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Viento en calma con visibilidad reducida por humo industrial",
+        "text": "Granizo blando que se disuelve antes de tocar el fuselaje",
         "is_correct": false
       }
     ],
@@ -1006,8 +1006,8 @@
     "options": [
       {
         "id": "A",
-        "text": "BKN (Broken) = 5 a 7 octas; OVC (Overcast) = 8 octas; constituyen techo de nubes oficial",
-        "is_correct": true
+        "text": "BKN representa 1 octa y OVC representa 2 octas de cobertura",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1016,13 +1016,13 @@
       },
       {
         "id": "C",
-        "text": "BKN representa 1 octa y OVC representa 2 octas de cobertura",
+        "text": "Cualquier nube aislada a más de 20.000 pies constituye techo de nubes",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Cualquier nube aislada a más de 20.000 pies constituye techo de nubes",
-        "is_correct": false
+        "text": "BKN (Broken) = 5 a 7 octas; OVC (Overcast) = 8 octas; constituyen techo de nubes oficial",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1043,23 +1043,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Visibilidad ≥ 10 km, sin nubes por debajo de 5.000 ft (o MSA, la mayor), sin CB ni TCU, y sin fenómenos de tiempo significativo",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Visibilidad de 5 km, cielo totalmente cubierto a 1.000 pies y lluvia débil",
+        "text": "Disponibilidad de luces de eje de pista y parque de bomberos categoría 10",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Temperatura superior a 30°C con viento en calma en todas las pistas",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Disponibilidad de luces de eje de pista y parque de bomberos categoría 10",
+        "id": "C",
+        "text": "Visibilidad de 5 km, cielo totalmente cubierto a 1.000 pies y lluvia débil",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Visibilidad ≥ 10 km, sin nubes por debajo de 5.000 ft (o MSA, la mayor), sin CB ni TCU, y sin fenómenos de tiempo significativo",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1090,12 +1090,12 @@
       },
       {
         "id": "C",
-        "text": "Obligación de aterrizar sin usar los sistemas de frenos hidráulicos",
+        "text": "Indicación de que todas las pistas se encuentran completamente secas",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Indicación de que todas las pistas se encuentran completamente secas",
+        "text": "Obligación de aterrizar sin usar los sistemas de frenos hidráulicos",
         "is_correct": false
       }
     ],
@@ -1117,18 +1117,18 @@
     "options": [
       {
         "id": "A",
-        "text": "U = Upward (tendencia a mejorar), D = Downward (tendencia a empeorar), N = No change (sin cambios significativos)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "U = Unlimited, D = Dangerous, N = Night only",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "U = Urban area, D = Domestic flight, N = Non-commercial",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "U = Upward (tendencia a mejorar), D = Downward (tendencia a empeorar), N = No change (sin cambios significativos)",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1159,17 +1159,17 @@
       },
       {
         "id": "B",
-        "text": "M = Medido manualmente por el señalero; P = Predicho por el modelo numérico",
+        "text": "M = Mínimo absoluto; P = Permitido el aterrizaje inmediato",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "M = Militar; P = Pasajeros comerciales exclusivamente",
+        "text": "M = Medido manualmente por el señalero; P = Predicho por el modelo numérico",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "M = Mínimo absoluto; P = Permitido el aterrizaje inmediato",
+        "text": "M = Militar; P = Pasajeros comerciales exclusivamente",
         "is_correct": false
       }
     ],
@@ -1201,12 +1201,12 @@
       },
       {
         "id": "C",
-        "text": "Por debajo de -50°C donde el agua se encuentra exclusivamente en cristales secos sublimados",
+        "text": "A cualquier temperatura siempre que la velocidad del avión sea inferior a 100 nudos",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "A cualquier temperatura siempre que la velocidad del avión sea inferior a 100 nudos",
+        "text": "Por debajo de -50°C donde el agua se encuentra exclusivamente en cristales secos sublimados",
         "is_correct": false
       }
     ],
@@ -1228,22 +1228,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Ingestión de cristales de hielo diminutos que se funden en el compresor cálido y se recongelan en etapas interiores, pudiendo causar oscilaciones de empuje o parada",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Congelación de los neumáticos del tren de aterrizaje dentro de su alojamiento",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Aumento de la potencia del motor en un 50% por efecto de sobrepresión",
+        "id": "B",
+        "text": "Bloqueo inmediato del timón de profundidad por acumulación exterior",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Ingestión de cristales de hielo diminutos que se funden en el compresor cálido y se recongelan en etapas interiores, pudiendo causar oscilaciones de empuje o parada",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Bloqueo inmediato del timón de profundidad por acumulación exterior",
+        "text": "Aumento de la potencia del motor en un 50% por efecto de sobrepresión",
         "is_correct": false
       }
     ],
@@ -1265,13 +1265,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Hielo seco (Ice) a temperatura ≤ -15°C con eficacia de frenado pobre (Poor)",
-        "is_correct": true
+        "text": "Pista seca con marcas de goma fresca en la zona de contacto",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Pista seca con marcas de goma fresca en la zona de contacto",
-        "is_correct": false
+        "text": "Hielo seco (Ice) a temperatura ≤ -15°C con eficacia de frenado pobre (Poor)",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1302,22 +1302,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Nieve compactada (Compacted Snow a OAT > -15°C), o nieve húmeda (Wet Snow), con eficacia de frenado media (Medium)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Pista totalmente seca a mediodía",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Hielo mojado a 0°C con eficacia de frenado nula",
+        "id": "B",
+        "text": "Pista limpia con viento cruzado de 2 nudos",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Nieve compactada (Compacted Snow a OAT > -15°C), o nieve húmeda (Wet Snow), con eficacia de frenado media (Medium)",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Pista limpia con viento cruzado de 2 nudos",
+        "text": "Hielo mojado a 0°C con eficacia de frenado nula",
         "is_correct": false
       }
     ],
@@ -1339,23 +1339,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Nieve compactada a muy baja temperatura (Compacted Snow a OAT ≤ -15°C) con eficacia de frenado buena a media",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Agua estancada de 20 mm de profundidad sobre pista lisa",
+        "text": "Pista con barro denso en los primeros 100 metros",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Pista contaminada por derrame de combustible de aviación",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Pista con barro denso en los primeros 100 metros",
+        "id": "C",
+        "text": "Agua estancada de 20 mm de profundidad sobre pista lisa",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Nieve compactada a muy baja temperatura (Compacted Snow a OAT ≤ -15°C) con eficacia de frenado buena a media",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1376,23 +1376,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Debe considerar la ráfaga máxima de 40 nudos para calcular los componentes máximos de viento cruzado y de cola admisibles en ePerf/AFM",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Debe ignorar la ráfaga 'G40' y utilizar únicamente el viento medio sostenido de 25 nudos",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Debe calcular el promedio entre 25 y 40 (32.5 nudos) sin consultar el manual",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Debe sumar ambos valores (65 nudos) para determinar la velocidad de despegue",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Debe ignorar la ráfaga 'G40' y utilizar únicamente el viento medio sostenido de 25 nudos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Debe considerar la ráfaga máxima de 40 nudos para calcular los componentes máximos de viento cruzado y de cola admisibles en ePerf/AFM",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1413,22 +1413,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Nubes lenticulares (Altocumulus Lenticularis - ACSL) y nubes de rotor (Rotor clouds) paralelas a la cordillera",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Nubes estratos bajas a nivel del suelo sin movimiento horizontal",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Nubes lenticulares (Altocumulus Lenticularis - ACSL) y nubes de rotor (Rotor clouds) paralelas a la cordillera",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "Nubes cirrostratos delgadas y transparentes a gran altitud",
+        "text": "Niebla de radiación dispersa en los fondos de los valles llanos",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Niebla de radiación dispersa en los fondos de los valles llanos",
+        "text": "Nubes cirrostratos delgadas y transparentes a gran altitud",
         "is_correct": false
       }
     ],
@@ -1450,22 +1450,22 @@
     "options": [
       {
         "id": "A",
+        "text": "Volar deliberadamente por el centro del eco morado para limpiar el parabrisas",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Ajustar el Tilt periódicamente barriendo la base y el núcleo de las células, evitando volar por debajo de ecos intensos o sobrevolar yunques con poco margen",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "Fijar la ganancia al mínimo y orientar el Tilt a +15° hacia el espacio exterior",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Apagar el radar de a bordo para evitar interferencias con los receptores GPS",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "Volar deliberadamente por el centro del eco morado para limpiar el parabrisas",
+        "text": "Apagar el radar de a bordo para evitar interferencias con los receptores GPS",
         "is_correct": false
       }
     ],
@@ -1487,22 +1487,22 @@
     "options": [
       {
         "id": "A",
-        "text": "La turbonada (SQ) es un aumento repentino y violento del viento (al menos 16 kt alcanzando ≥ 22 kt durante al menos 1 min); TS implica actividad eléctrica (trueno/relámpago)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "SQ representa una ligera brisa matinal sin precipitaciones",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "La turbonada (SQ) es un aumento repentino y violento del viento (al menos 16 kt alcanzando ≥ 22 kt durante al menos 1 min); TS implica actividad eléctrica (trueno/relámpago)",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "TS representa exclusivamente nevadas intensas en el polo norte",
+        "text": "Ambos términos se refieren únicamente a la presión barométrica en superficie",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Ambos términos se refieren únicamente a la presión barométrica en superficie",
+        "text": "TS representa exclusivamente nevadas intensas en el polo norte",
         "is_correct": false
       }
     ],
@@ -1524,13 +1524,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Nube en forma de embudo (Funnel Cloud), tornado o tromba marina; peligro extremo de destrucción estructural y turbulencia violenta",
-        "is_correct": true
+        "text": "Cielo completamente despejado con visibilidad infinita",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Cielo completamente despejado con visibilidad infinita",
-        "is_correct": false
+        "text": "Nube en forma de embudo (Funnel Cloud), tornado o tromba marina; peligro extremo de destrucción estructural y turbulencia violenta",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1561,8 +1561,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Toda la información meteorológica de despacho (METAR, TAF, SIGWX, vientos) debe guardarse en el sobre de vuelo como parte de la documentación oficial",
-        "is_correct": true
+        "text": "Solo se archiva si el vuelo se desvía a un país extranjero",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1571,13 +1571,13 @@
       },
       {
         "id": "C",
-        "text": "Solo se archiva si el vuelo se desvía a un país extranjero",
+        "text": "La información meteorológica no se conserva al considerarse de dominio público efímero",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "La información meteorológica no se conserva al considerarse de dominio público efímero",
-        "is_correct": false
+        "text": "Toda la información meteorológica de despacho (METAR, TAF, SIGWX, vientos) debe guardarse en el sobre de vuelo como parte de la documentación oficial",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1598,23 +1598,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Que la dirección del viento varía entre 310 grados y 050 grados en el período de observación",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Que la visibilidad varía entre 310 metros y 50 metros según la pista",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Que la velocidad del viento aumentará a 310 nudos a las 05:00 UTC",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Que el aeropuerto está cerrado para aeronaves de más de 310 asientos",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Que la visibilidad varía entre 310 metros y 50 metros según la pista",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Que la dirección del viento varía entre 310 grados y 050 grados en el período de observación",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1635,23 +1635,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Utiliza el radar meteorológico en barrido automático a baja cota para detectar patrones de velocidad Doppler de microrráfagas por delante del avión",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Calcula la cizalladura analizando la vibración de las ruedas del tren de aterrizaje",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Requiere que el copiloto sople en un sensor de presión barométrica en cabina",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Funciona únicamente cuando la aeronave se encuentra apagada en el parking",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Utiliza el radar meteorológico en barrido automático a baja cota para detectar patrones de velocidad Doppler de microrráfagas por delante del avión",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1672,13 +1672,13 @@
     "options": [
       {
         "id": "A",
-        "text": "DS = Tormenta de polvo (Duststorm); SS = Tormenta de arena (Sandstorm), con severa reducción de visibilidad y riesgo abrasivo para los motores",
-        "is_correct": true
+        "text": "DS = Domestic Service; SS = Special Schedule",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "DS = Domestic Service; SS = Special Schedule",
-        "is_correct": false
+        "text": "DS = Tormenta de polvo (Duststorm); SS = Tormenta de arena (Sandstorm), con severa reducción de visibilidad y riesgo abrasivo para los motores",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1709,23 +1709,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Para prevenir el bloqueo inadvertido de sondas por humedad, condensación o hielo dinámico, garantizando indicaciones de velocidad fiables",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Para aumentar la temperatura del combustible en las alas durante el ascenso",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Para encender automáticamente las luces de cabina de pasajeros",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Para desconectar los frenos de estacionamiento de forma remota",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Para aumentar la temperatura del combustible en las alas durante el ascenso",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Para prevenir el bloqueo inadvertido de sondas por humedad, condensación o hielo dinámico, garantizando indicaciones de velocidad fiables",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1746,12 +1746,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Con tres códigos secuenciales correspondientes a cada tercio de pista: `2/6/2` en el formato de reporte estándar",
-        "is_correct": true
+        "text": "Con un único promedio numérico fijado en 3.33",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Con un único promedio numérico fijado en 3.33",
+        "text": "Cancelando el informe meteorológico al no haber uniformidad",
         "is_correct": false
       },
       {
@@ -1761,8 +1761,8 @@
       },
       {
         "id": "D",
-        "text": "Cancelando el informe meteorológico al no haber uniformidad",
-        "is_correct": false
+        "text": "Con tres códigos secuenciales correspondientes a cada tercio de pista: `2/6/2` en el formato de reporte estándar",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1783,23 +1783,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Que no se prevén cambios significativos en las condiciones meteorológicas durante las dos horas siguientes a la observación",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Que no existe señal de radio en la torre de control de aproximación",
+        "text": "Que el aeropuerto carece de sistema de aterrizaje por instrumentos",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Que no se requiere firma del comandante en el plan de vuelo",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Que el aeropuerto carece de sistema de aterrizaje por instrumentos",
+        "id": "C",
+        "text": "Que no existe señal de radio en la torre de control de aproximación",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Que no se prevén cambios significativos en las condiciones meteorológicas durante las dos horas siguientes a la observación",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1820,22 +1820,22 @@
     "options": [
       {
         "id": "A",
+        "text": "Despegar sin alternativos confiando en que el pronóstico mejorará durante el vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Incrementar el combustible con Extra Fuel a discreción, seleccionar alternativos con meteorología holgada y revisar las rutas de escape",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "Reducir el combustible de contingencia para despegar con menor peso y mayor aceleración",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Apagar los instrumentos de navegación para evitar distracciones durante la aproximación",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "Despegar sin alternativos confiando en que el pronóstico mejorará durante el vuelo",
+        "text": "Apagar los instrumentos de navegación para evitar distracciones durante la aproximación",
         "is_correct": false
       }
     ],

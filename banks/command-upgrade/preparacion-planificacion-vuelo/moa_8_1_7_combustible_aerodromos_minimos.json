@@ -7,23 +7,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Taxi fuel + Trip fuel + Contingency fuel + Alternate fuel + Final Reserve fuel + Additional fuel + Extra fuel",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Trip fuel + Alternate fuel + Holding fuel de 45 minutos únicamente",
+        "text": "Trip fuel + Final Reserve fuel de 60 minutos sin combustible de rodaje, manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Taxi fuel + Trip fuel + Reserva de contingencia del 10% fija sin alternativo, requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Trip fuel + Final Reserve fuel de 60 minutos sin combustible de rodaje, manteniendo el cumplimiento de las limitaciones operacionales del manual",
+        "id": "C",
+        "text": "Trip fuel + Alternate fuel + Holding fuel de 45 minutos únicamente",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Taxi fuel + Trip fuel + Contingency fuel + Alternate fuel + Final Reserve fuel + Additional fuel + Extra fuel",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -45,22 +45,22 @@
     "options": [
       {
         "id": "A",
-        "text": "5% del Trip Fuel (o cantidad suficiente para 5 min de espera a 1.500 ft ISA); puede reducirse al 3% si se designa un Alternativo en Ruta adecuado (ERA o Fuel ERA)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "6% del Trip Fuel (o cantidad suficiente para 6 min de espera a 2.510 ft ISA); puede reducirse al 4% si se designa un Alternativo en Ruta adecuado (ERA o Fuel ERA)",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "3% del Trip Fuel (o cantidad suficiente para 3 min de espera a 1.480 ft ISA); puede reducirse al 1% si se designa un Alternativo en Ruta adecuado (ERA o Fuel ERA)",
+        "id": "B",
+        "text": "8% del Trip Fuel (o cantidad suficiente para 8 min de espera a 4.530 ft ISA); puede reducirse al 6% si se designa un Alternativo en Ruta adecuado (ERA o Fuel ERA)",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "5% del Trip Fuel (o cantidad suficiente para 5 min de espera a 1.500 ft ISA); puede reducirse al 3% si se designa un Alternativo en Ruta adecuado (ERA o Fuel ERA)",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "8% del Trip Fuel (o cantidad suficiente para 8 min de espera a 4.530 ft ISA); puede reducirse al 6% si se designa un Alternativo en Ruta adecuado (ERA o Fuel ERA)",
+        "text": "3% del Trip Fuel (o cantidad suficiente para 3 min de espera a 1.480 ft ISA); puede reducirse al 1% si se designa un Alternativo en Ruta adecuado (ERA o Fuel ERA)",
         "is_correct": false
       }
     ],
@@ -83,22 +83,22 @@
     "options": [
       {
         "id": "A",
-        "text": "30 minutos a 1.500 ft sobre el alternativo en condiciones ISA a velocidad de espera",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "45 minutos a 1.500 ft sobre el alternativo (o destino si no requiere alternativo) en condiciones ISA a velocidad de crucero",
+        "text": "20 minutos a 1.000 ft sobre el alternativo más el combustible estimado para realizar dos aproximaciones frustradas",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "30 minutos a nivel de crucero FL150 sobre el punto de aproximación frustrada (MAPt) en condiciones reales",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "30 minutos a 1.500 ft sobre el alternativo en condiciones ISA a velocidad de espera",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "20 minutos a 1.000 ft sobre el alternativo más el combustible estimado para realizar dos aproximaciones frustradas",
+        "text": "45 minutos a 1.500 ft sobre el alternativo (o destino si no requiere alternativo) en condiciones ISA a velocidad de crucero",
         "is_correct": false
       }
     ],
@@ -121,23 +121,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Al operar a aeródromo aislado o si el combustible tras fallo de motor/despresurización en punto crítico supera el plan estándar",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Al operar en espacio aéreo no controlado clase G o cuando la duración total del vuelo supere los 90 minutos de crucero",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Al despachar con dos alternativos de destino o cuando el pronóstico meteorológico indique visibilidad inferior a 5 km",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Al realizar vuelos nocturnos internacionales o cuando la pista de aterrizaje en destino no disponga de luces de aproximación",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Al operar en espacio aéreo no controlado clase G o cuando la duración total del vuelo supere los 90 minutos de crucero",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Al operar a aeródromo aislado o si el combustible tras fallo de motor/despresurización en punto crítico supera el plan estándar",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -158,23 +158,23 @@
     "options": [
       {
         "id": "A",
-        "text": "El contingency solo se calcula desde el Punto de Decisión hasta el Destino, reduciendo la carga total de combustible al despegue",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Se elimina totalmente el combustible de reserva final y de alternativo al alcanzar el Punto de Decisión en ruta",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Permite volar sin aeródromo alternativo de destino independientemente de las condiciones meteorológicas previstas",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Se calcula el combustible de viaje a régimen de máxima potencia continua desde el origen hasta el punto de decisión",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El contingency solo se calcula desde el Punto de Decisión hasta el Destino, reduciendo la carga total de combustible al despegue",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -195,13 +195,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Distancia equivalente a 1 hora de vuelo a velocidad de crucero con un motor inoperativo en aire en calma; meteorología en o sobre mínimos desde 1h antes hasta 1h después de ETA",
-        "is_correct": true
+        "text": "Distancia equivalente a 30 minutos de vuelo en régimen de espera; la meteorología debe reportar viento en calma y visibilidad mayor a 10 km",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Distancia equivalente a 2 horas de vuelo a velocidad de crucero con ambos motores operativos; meteorología en o sobre mínimos desde 2h antes hasta 2h después de ETA",
-        "is_correct": false
+        "text": "Distancia equivalente a 1 hora de vuelo a velocidad de crucero con un motor inoperativo en aire en calma; meteorología en o sobre mínimos desde 1h antes hasta 1h después de ETA",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -210,7 +210,7 @@
       },
       {
         "id": "D",
-        "text": "Distancia equivalente a 30 minutos de vuelo en régimen de espera; la meteorología debe reportar viento en calma y visibilidad mayor a 10 km",
+        "text": "Distancia equivalente a 2 horas de vuelo a velocidad de crucero con ambos motores operativos; meteorología en o sobre mínimos desde 2h antes hasta 2h después de ETA",
         "is_correct": false
       }
     ],
@@ -233,22 +233,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Meteo en destino bajo mínimos de planificación O falta de información meteorológica fiable en destino",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Destino con una sola pista operativa O vuelo regular comercial con duración programada superior a 2 horas",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Aeronave despachada con un ítem de la MEL en Categoría A O viento cruzado superior a 15 nudos en destino",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "Meteo en destino bajo mínimos de planificación O falta de información meteorológica fiable en destino",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "Operación en horario nocturno O cuando el aeródromo alternativo principal esté situado a más de 320 NM",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Destino con una sola pista operativa O vuelo regular comercial con duración programada superior a 2 horas",
         "is_correct": false
       }
     ],
@@ -271,22 +271,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Vuelo < 6h Y destino con 2 pistas separadas utilizables con meteo favorable",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Vuelo < 4h Y destino con aproximación ILS CAT III operativa independientemente del número de pistas y del techo",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Vuelo < 2h Y destino con categoría RFFS ≥ 7 y viento en calma en todas las cabeceras utilizables del campo",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Vuelo < 8h Y destino con dos procedimientos RNP AR independientes autorizados para la tripulación técnica",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Vuelo < 6h Y destino con 2 pistas separadas utilizables con meteo favorable",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Vuelo < 4h Y destino con aproximación ILS CAT III operativa independientemente del número de pistas y del techo",
         "is_correct": false
       }
     ],
@@ -314,17 +314,17 @@
       },
       {
         "id": "B",
-        "text": "1) Aprobación ETOPS 120 minutos, 2) Flota equipada con radar RDR-4000, y 3) Despachador de vuelo a bordo en cada tramo interinsular.",
+        "text": "1) Exclusividad de operaciones diurnas, 2) Pistas de longitud superior a 2.500 metros, y 3) Asistencia de handling propia en todas las escalas.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "1) Notificación previa a AESA con 24 horas de antelación, 2) Dos tripulaciones técnicas completas, y 3) Carta de vientos de alta cota impresa.",
+        "text": "1) Aprobación ETOPS 120 minutos, 2) Flota equipada con radar RDR-4000, y 3) Despachador de vuelo a bordo en cada tramo interinsular.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "1) Exclusividad de operaciones diurnas, 2) Pistas de longitud superior a 2.500 metros, y 3) Asistencia de handling propia en todas las escalas.",
+        "text": "1) Notificación previa a AESA con 24 horas de antelación, 2) Dos tripulaciones técnicas completas, y 3) Carta de vientos de alta cota impresa.",
         "is_correct": false
       }
     ],
@@ -347,22 +347,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Techo: DA/H + 100 ft | Visibilidad/RVR: RVR + 300 m",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Techo: DA/H + 200 ft | Visibilidad/RVR: RVR + 800 m",
+        "text": "Techo: Sin incremento | Visibilidad/RVR: RVR publicado",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Techo: DA/H + 150 ft | Visibilidad/RVR: RVR + 450 m",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Techo: DA/H + 100 ft | Visibilidad/RVR: RVR + 300 m",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Techo: Sin incremento | Visibilidad/RVR: RVR publicado",
+        "text": "Techo: DA/H + 200 ft | Visibilidad/RVR: RVR + 800 m",
         "is_correct": false
       }
     ],
@@ -385,13 +385,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Techo: DA/H + 150 ft | RVR: RVR + 450 m",
-        "is_correct": true
+        "text": "Techo: MDA/H + 400 ft | RVR: RVR + 1500 m",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Techo: DA/H + 100 ft | RVR: RVR + 300 m",
-        "is_correct": false
+        "text": "Techo: DA/H + 150 ft | RVR: RVR + 450 m",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -400,7 +400,7 @@
       },
       {
         "id": "D",
-        "text": "Techo: MDA/H + 400 ft | RVR: RVR + 1500 m",
+        "text": "Techo: DA/H + 100 ft | RVR: RVR + 300 m",
         "is_correct": false
       }
     ],
@@ -422,23 +422,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Techo: DA/H o MDA/H + 200 ft | Visibilidad/RVR: RVR/VIS + 1000 m",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Techo: DA/H o MDA/H + 400 ft | Visibilidad/RVR: RVRRVR/VIS + 1500 m",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Techo: DA/H + 100 ft | Visibilidad/RVR: RVR + 300 m",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Techo: MDA/H + 300 ft | Visibilidad/RVR: VIS + 800 m",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Techo: DA/H o MDA/H + 200 ft | Visibilidad/RVR: RVR/VIS + 1000 m",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -459,22 +459,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Tipo B: DA/H + 200 ft y RVR/VIS + 800 m | Tipo A: DA/H o MDA/H + 400 ft y RVRRVR/VIS + 1500 m",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Tipo B: DA/H + 100 ft y RVR + 300 m | Tipo A: DA/H + 200 ft y RVR + 1000 m",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Tipo B: DA/H + 50 ft y RVR + 200 m | Tipo A: MDA/H + 100 ft y VIS + 500 m",
+        "id": "B",
+        "text": "Tipo B: DA/H + 230 ft y RVR/VIS + 830 m | Tipo A: DA/H o MDA/H + 430 ft y RVR/VIS + 1530 m",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Tipo B: DA/H + 200 ft y RVR/VIS + 800 m | Tipo A: DA/H o MDA/H + 400 ft y RVRRVR/VIS + 1500 m",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Tipo B: DA/H + 230 ft y RVR/VIS + 830 m | Tipo A: DA/H o MDA/H + 430 ft y RVR/VIS + 1530 m",
+        "text": "Tipo B: DA/H + 50 ft y RVR + 200 m | Tipo A: MDA/H + 100 ft y VIS + 500 m",
         "is_correct": false
       }
     ],
@@ -497,12 +497,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Desde 1 hora antes hasta 1 hora después de la hora estimada de llegada",
-        "is_correct": true
+        "text": "Exactamente a la ETA prevista sin margen temporal",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Exactamente a la ETA prevista sin margen temporal",
+        "text": "Desde 2 horas antes hasta 2 horas después de la ETA, manteniendo el cumplimiento de las limitaciones operacionales del manual",
         "is_correct": false
       },
       {
@@ -512,8 +512,8 @@
       },
       {
         "id": "D",
-        "text": "Desde 2 horas antes hasta 2 horas después de la ETA, manteniendo el cumplimiento de las limitaciones operacionales del manual",
-        "is_correct": false
+        "text": "Desde 1 hora antes hasta 1 hora después de la hora estimada de llegada",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -535,22 +535,22 @@
     "options": [
       {
         "id": "A",
-        "text": "A intervalos de 30-60 min y en cada punto de notificación principal del plan de vuelo",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Únicamente en el Top of Climb y en el punto de inicio de descenso (Top of Descent)",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Solo cuando se encienda el aviso de bajo nivel de combustible en el panel EICAS",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "A intervalos de 30-60 min y en cada punto de notificación principal del plan de vuelo",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "Una sola vez a mitad del vuelo comparando el FMS con la cantidad total cargada",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Únicamente en el Top of Climb y en el punto de inicio de descenso (Top of Descent)",
         "is_correct": false
       }
     ],
@@ -573,12 +573,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Combustible desde la posición actual hasta el alternativo + Reserva Final",
-        "is_correct": true
+        "text": "Combustible desde la posición actual hasta el destino + 15 minutos de espera en circuito",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Combustible desde la posición actual hasta el destino + 15 minutos de espera en circuito",
+        "text": "Combustible necesario para volar durante 45 minutos a velocidad de crucero en altitud óptima",
         "is_correct": false
       },
       {
@@ -588,8 +588,8 @@
       },
       {
         "id": "D",
-        "text": "Combustible necesario para volar durante 45 minutos a velocidad de crucero en altitud óptima",
-        "is_correct": false
+        "text": "Combustible desde la posición actual hasta el alternativo + Reserva Final",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -610,8 +610,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Cuando el combustible remanente utilizable calculado al aterrizar en el aeródromo más cercano resulte inferior a la reserva final de combustible (FRF)",
-        "is_correct": true
+        "text": "Únicamente cuando los dos motores se hayan detenido en vuelo por agotamiento total de los depósitos alares",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -620,13 +620,13 @@
       },
       {
         "id": "C",
-        "text": "Únicamente cuando los dos motores se hayan detenido en vuelo por agotamiento total de los depósitos alares",
+        "text": "Siempre que se vuele hacia un aeródromo alternativo con más de dos horas de combustible remanente",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Siempre que se vuele hacia un aeródromo alternativo con más de dos horas de combustible remanente",
-        "is_correct": false
+        "text": "Cuando el combustible remanente utilizable calculado al aterrizar en el aeródromo más cercano resulte inferior a la reserva final de combustible (FRF)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -648,22 +648,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Cuando el combustible utilizable previsto al aterrizar en el alternativo sea inferior a 30 min",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Cuando se haya consumido la totalidad del combustible de contingencia en el crucero",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Cuando el tiempo de espera en el circuito de tráfico supere los 15 minutos asignados",
+        "id": "B",
+        "text": "Cuando se deba proceder al aeródromo alternativo por visibilidad inferior a mínimos",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Cuando el combustible utilizable previsto al aterrizar en el alternativo sea inferior a 30 min",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Cuando se deba proceder al aeródromo alternativo por visibilidad inferior a mínimos",
+        "text": "Cuando el tiempo de espera en el circuito de tráfico supere los 15 minutos asignados",
         "is_correct": false
       }
     ],
@@ -686,12 +686,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Monitorizar el combustible remanente para asegurar que se alcanzará el destino o alternativo con al menos la reserva final intacta",
-        "is_correct": true
+        "text": "Declarar emergencia MAYDAY de inmediato y descender al nivel de vuelo más bajo disponible sin autorización ATC",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Declarar emergencia MAYDAY de inmediato y descender al nivel de vuelo más bajo disponible sin autorización ATC",
+        "text": "Verter el combustible restante al exterior a través de las válvulas de drenaje alares de emergencia",
         "is_correct": false
       },
       {
@@ -701,8 +701,8 @@
       },
       {
         "id": "D",
-        "text": "Verter el combustible restante al exterior a través de las válvulas de drenaje alares de emergencia",
-        "is_correct": false
+        "text": "Monitorizar el combustible remanente para asegurar que se alcanzará el destino o alternativo con al menos la reserva final intacta",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -723,8 +723,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Techo: MDA/H + 400 ft | Visibilidad: VIS + 1500 m",
-        "is_correct": true
+        "text": "Techo: MDA/H + 500 ft | Visibilidad: VIS + 2000 m",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -733,13 +733,13 @@
       },
       {
         "id": "C",
-        "text": "Techo: MDA/H + 500 ft | Visibilidad: VIS + 2000 m",
+        "text": "Techo: MDA/H + 430 ft | Visibilidad: VIS + 1530 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Techo: MDA/H + 430 ft | Visibilidad: VIS + 1530 m",
-        "is_correct": false
+        "text": "Techo: MDA/H + 400 ft | Visibilidad: VIS + 1500 m",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -797,23 +797,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Combustible necesario para volar durante 30 minutos a velocidad de espera a 1.500 pies sobre el aeródromo alternativo en condiciones ISA",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Combustible necesario para volar 45 minutos a velocidad de crucero máximo a FL350",
+        "text": "Combustible para alcanzar la velocidad del sonido a baja cota en emergencia",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Combustible para 15 minutos de rodaje en tierra con inversores de empuje abiertos",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Combustible para alcanzar la velocidad del sonido a baja cota en emergencia",
+        "id": "C",
+        "text": "Combustible necesario para volar 45 minutos a velocidad de crucero máximo a FL350",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Combustible necesario para volar durante 30 minutos a velocidad de espera a 1.500 pies sobre el aeródromo alternativo en condiciones ISA",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -834,23 +834,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Cuando el combustible requerido para descenso de emergencia por despresurización o fallo de motor hacia un alternativo supere el plan estándar, o en aeródromos aislados",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Siempre que el vuelo transporte pasajeros de pie en el pasillo central",
+        "text": "Cuando el comandante decida apagar el radar meteorológico durante el vuelo",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Únicamente en vuelos que despeguen durante los días festivos nacionales",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Cuando el comandante decida apagar el radar meteorológico durante el vuelo",
+        "id": "C",
+        "text": "Siempre que el vuelo transporte pasajeros de pie en el pasillo central",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cuando el combustible requerido para descenso de emergencia por despresurización o fallo de motor hacia un alternativo supere el plan estándar, o en aeródromos aislados",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -871,23 +871,23 @@
     "options": [
       {
         "id": "A",
-        "text": "El Comandante, basándose en condiciones operativas previsibles (meteorología marginal, esperas ATC, estado de pistas o limitaciones técnicas)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Exclusivamente el departamento financiero de la aerolínea para aprovechar descuentos en origen",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "El agente de facturación de equipajes según el número de maletas facturadas",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "El proveedor de limpieza de cabina tras finalizar el servicio de tierra",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El Comandante, basándose en condiciones operativas previsibles (meteorología marginal, esperas ATC, estado de pistas o limitaciones técnicas)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -908,23 +908,23 @@
     "options": [
       {
         "id": "A",
-        "text": "A intervalos periódicos regulares (típicamente en cada fijo principal de notificación del OFP o al menos cada 30-60 minutos)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Únicamente una vez que la aeronave haya aterrizado y apagado motores",
+        "text": "Una vez cada 24 horas de vuelo continuo sin registros intermedios",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Solo si se enciende la luz de aviso de nivel bajo de combustible en el EICAS",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Una vez cada 24 horas de vuelo continuo sin registros intermedios",
+        "id": "C",
+        "text": "Únicamente una vez que la aeronave haya aterrizado y apagado motores",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "A intervalos periódicos regulares (típicamente en cada fijo principal de notificación del OFP o al menos cada 30-60 minutos)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -945,13 +945,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Comprobar fugas de combustible (Fuel Leak Checklist), verificar desbalance alar, ajustar perfiles de vuelo y revaluar el alternativo",
-        "is_correct": true
+        "text": "Ignorar la discrepancia asumiendo que los indicadores de nivel son inexactos",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Apagar inmediatamente las dos bombas de combustible de ambos depósitos alares",
-        "is_correct": false
+        "text": "Comprobar fugas de combustible (Fuel Leak Checklist), verificar desbalance alar, ajustar perfiles de vuelo y revaluar el alternativo",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -960,7 +960,7 @@
       },
       {
         "id": "D",
-        "text": "Ignorar la discrepancia asumiendo que los indicadores de nivel son inexactos",
+        "text": "Apagar inmediatamente las dos bombas de combustible de ambos depósitos alares",
         "is_correct": false
       }
     ],
@@ -982,18 +982,18 @@
     "options": [
       {
         "id": "A",
-        "text": "Informa a ATC de que la disposición de combustible es tal que cualquier cambio en la autorización actual puede resultar en aterrizar con menos de la Reserva Final",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Otorga prioridad de aterrizaje inmediata por delante de todos los demás tráficos",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Indica que el avión se encuentra en emergencia crítica de parada de motores",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Informa a ATC de que la disposición de combustible es tal que cualquier cambio en la autorización actual puede resultar en aterrizar con menos de la Reserva Final",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1019,18 +1019,18 @@
     "options": [
       {
         "id": "A",
-        "text": "Cuando el combustible remanente utilizable calculado al aterrizar en el aeródromo más cercano adecuado sea inferior a la Reserva Final reglamentaria",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Siempre que se consuma el combustible de contingencia del plan de vuelo",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Cuando el comandante decida cambiar de nivel de crucero por turbulencia ligera",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cuando el combustible remanente utilizable calculado al aterrizar en el aeródromo más cercano adecuado sea inferior a la Reserva Final reglamentaria",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1056,8 +1056,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Techo: DA/H + 150 ft | RVR/VIS: RVR + 450 m",
-        "is_correct": true
+        "text": "Techo: DA/H + 200 ft | RVR/VIS: RVR + 800 m",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1066,8 +1066,8 @@
       },
       {
         "id": "C",
-        "text": "Techo: DA/H + 200 ft | RVR/VIS: RVR + 800 m",
-        "is_correct": false
+        "text": "Techo: DA/H + 150 ft | RVR/VIS: RVR + 450 m",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1094,8 +1094,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Techo: DA/H + 100 ft | RVR/VIS: RVR + 300 m",
-        "is_correct": true
+        "text": "Techo: DA/H + 200 ft | RVR/VIS: RVR + 800 m",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1104,13 +1104,13 @@
       },
       {
         "id": "C",
-        "text": "Techo: DA/H + 200 ft | RVR/VIS: RVR + 800 m",
+        "text": "Techo: DA/MDA + 400 ft | RVR/VIS: RVR/VIS + 1.500 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Techo: DA/MDA + 400 ft | RVR/VIS: RVR/VIS + 1.500 m",
-        "is_correct": false
+        "text": "Techo: DA/H + 100 ft | RVR/VIS: RVR + 300 m",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1132,23 +1132,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Techo: DA/MDA + 400 ft | RVR/VIS: RVR/VIS + 1.500 m",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Techo: DA/MDA + 200 ft | RVR/VIS: RVR/VIS + 1.000 m",
+        "text": "Techo: DA/H + 150 ft | RVR/VIS: RVR + 450 m",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Techo: DA/H + 200 ft | RVR/VIS: RVR/VIS + 800 m",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Techo: DA/H + 150 ft | RVR/VIS: RVR + 450 m",
+        "id": "C",
+        "text": "Techo: DA/MDA + 200 ft | RVR/VIS: RVR/VIS + 1.000 m",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Techo: DA/MDA + 400 ft | RVR/VIS: RVR/VIS + 1.500 m",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1170,23 +1170,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Mínimos de OPERACIÓN (mínimos de aterrizaje aplicables) durante el periodo ETA ± 1 hora",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Mínimos de PLANIFICACIÓN (con incrementos de Tabla 1A o 1B) durante el periodo ETA ± 1 hora",
+        "text": "Mínimos de despegue LVTO del aeródromo de salida durante la ventana del vuelo",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Mínimos de OPERACIÓN únicamente en el instante exacto del despegue desde origen",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Mínimos de despegue LVTO del aeródromo de salida durante la ventana del vuelo",
+        "id": "C",
+        "text": "Mínimos de PLANIFICACIÓN (con incrementos de Tabla 1A o 1B) durante el periodo ETA ± 1 hora",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mínimos de OPERACIÓN (mínimos de aterrizaje aplicables) durante el periodo ETA ± 1 hora",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1213,12 +1213,12 @@
       },
       {
         "id": "B",
-        "text": "Estar situado exactamente a mitad de distancia entre el origen y el destino",
+        "text": "Tener una pista de al menos 4.000 metros con orientación este-oeste",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Tener una pista de al menos 4.000 metros con orientación este-oeste",
+        "text": "Estar situado exactamente a mitad de distancia entre el origen y el destino",
         "is_correct": false
       },
       {
@@ -1245,22 +1245,22 @@
     "options": [
       {
         "id": "A",
-        "text": "En el análisis estadístico de consumos históricos en la ruta para garantizar un nivel de confianza del 99% (no inferior al combustible de 5 min a 1.500 ft)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "En la estimación intuitiva del despachador de turno durante el turno de noche",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "En el peso de las maletas facturadas dividido por el número de pasajeros",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "En el análisis estadístico de consumos históricos en la ruta para garantizar un nivel de confianza del 99% (no inferior al combustible de 5 min a 1.500 ft)",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "En la diferencia de altitud entre el aeropuerto más alto y el más bajo de la red",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En la estimación intuitiva del despachador de turno durante el turno de noche",
         "is_correct": false
       }
     ],
@@ -1282,8 +1282,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Dentro de un círculo de radio igual al 20% de la distancia total de ruta, centrado en la trayectoria nominal a una distancia de destino de al menos el 25% de la ruta (o 20% del Trip Fuel)",
-        "is_correct": true
+        "text": "En el punto exacto de cruce del ecuador terrestre en vuelos intercontinentales",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1292,8 +1292,8 @@
       },
       {
         "id": "C",
-        "text": "En el punto exacto de cruce del ecuador terrestre en vuelos intercontinentales",
-        "is_correct": false
+        "text": "Dentro de un círculo de radio igual al 20% de la distancia total de ruta, centrado en la trayectoria nominal a una distancia de destino de al menos el 25% de la ruta (o 20% del Trip Fuel)",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1324,12 +1324,12 @@
       },
       {
         "id": "B",
-        "text": "Combustible para 10 minutos de vuelo adicional sin reserva final",
+        "text": "Combustible equivalente al peso total de los pasajeros a bordo",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Combustible equivalente al peso total de los pasajeros a bordo",
+        "text": "Combustible para 10 minutos de vuelo adicional sin reserva final",
         "is_correct": false
       },
       {
@@ -1356,13 +1356,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Una ruta hacia un destino intermedio comercial y otra ruta extendida hacia el destino final condicional, evaluando el combustible en el Punto de Decisión",
-        "is_correct": true
+        "text": "Una ruta directa supersónica y otra ruta en zigzag a baja cota",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Una ruta directa supersónica y otra ruta en zigzag a baja cota",
-        "is_correct": false
+        "text": "Una ruta hacia un destino intermedio comercial y otra ruta extendida hacia el destino final condicional, evaluando el combustible en el Punto de Decisión",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1398,17 +1398,17 @@
       },
       {
         "id": "B",
-        "text": "Es el combustible total que cabe en los depósitos alares del avión",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Es la cantidad de combustible que se consume durante el rodaje de salida",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Es el combustible reservado para alimentar el generador APU en tierra",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Es el combustible total que cabe en los depósitos alares del avión",
         "is_correct": false
       }
     ],
@@ -1430,22 +1430,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Abrir la válvula de alimentación cruzada (Fuel Crossfeed Valve) para alimentar ambos motores desde el depósito con mayor cantidad, respetando los límites del AFM",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Drenar el combustible sobrante al exterior abriendo la válvula de purga en vuelo",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Abrir la válvula de alimentación cruzada (Fuel Crossfeed Valve) para alimentar ambos motores desde el depósito con mayor cantidad, respetando los límites del AFM",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "Apagar el motor del lado con menos combustible para equilibrar el peso",
+        "text": "Poner el avión en viraje escarpado de 60° para trasvasar combustible por gravedad",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Poner el avión en viraje escarpado de 60° para trasvasar combustible por gravedad",
+        "text": "Apagar el motor del lado con menos combustible para equilibrar el peso",
         "is_correct": false
       }
     ],
@@ -1467,8 +1467,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Desde 1 hora antes hasta 1 hora después de la hora estimada de llegada (ETA) de la aeronave al aeródromo correspondiente",
-        "is_correct": true
+        "text": "Un periodo de 24 horas naturales completas antes de la salida del vuelo",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1477,13 +1477,13 @@
       },
       {
         "id": "C",
-        "text": "Un periodo de 24 horas naturales completas antes de la salida del vuelo",
+        "text": "Desde la medianoche del día anterior hasta el mediodía del día siguiente",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Desde la medianoche del día anterior hasta el mediodía del día siguiente",
-        "is_correct": false
+        "text": "Desde 1 hora antes hasta 1 hora después de la hora estimada de llegada (ETA) de la aeronave al aeródromo correspondiente",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1504,13 +1504,13 @@
     "options": [
       {
         "id": "A",
-        "text": "La Tabla 1A permite aplicar créditos por variabilidad y tipos de aproximación múltiple en la selección de alternativos, mientras que la Tabla 1B exige mínimos fijos más restrictivos",
-        "is_correct": true
+        "text": "La Tabla 1A no requiere consultar informes meteorológicos oficiales",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "La Tabla 1A es exclusiva para vuelos de carga y la Tabla 1B para vuelos de pasajeros",
-        "is_correct": false
+        "text": "La Tabla 1A permite aplicar créditos por variabilidad y tipos de aproximación múltiple en la selección de alternativos, mientras que la Tabla 1B exige mínimos fijos más restrictivos",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1519,7 +1519,7 @@
       },
       {
         "id": "D",
-        "text": "La Tabla 1A no requiere consultar informes meteorológicos oficiales",
+        "text": "La Tabla 1A es exclusiva para vuelos de carga y la Tabla 1B para vuelos de pasajeros",
         "is_correct": false
       }
     ],
@@ -1541,8 +1541,8 @@
     "options": [
       {
         "id": "A",
-        "text": "5% del Trip Fuel planificado, o una cantidad suficiente para volar durante 5 minutos a velocidad de espera a 1.500 ft sobre el destino en condiciones ISA (la mayor)",
-        "is_correct": true
+        "text": "El combustible consumido por el APU durante 8 horas continuas",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1556,8 +1556,8 @@
       },
       {
         "id": "D",
-        "text": "El combustible consumido por el APU durante 8 horas continuas",
-        "is_correct": false
+        "text": "5% del Trip Fuel planificado, o una cantidad suficiente para volar durante 5 minutos a velocidad de espera a 1.500 ft sobre el destino en condiciones ISA (la mayor)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1615,22 +1615,22 @@
     "options": [
       {
         "id": "A",
+        "text": "El vuelo de regreso a la base principal al día siguiente",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Aproximación frustrada completa en destino, ascenso, crucero al alternativo, descenso, aproximación instrumental y toma de contacto en el alternativo",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "Únicamente el descenso desde el nivel de crucero hasta la pista del alternativo",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "El rodaje en tierra en el alternativo sin considerar la frustrada en destino",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "El vuelo de regreso a la base principal al día siguiente",
+        "text": "El rodaje en tierra en el alternativo sin considerar la frustrada en destino",
         "is_correct": false
       }
     ],
@@ -1694,7 +1694,7 @@
       },
       {
         "id": "B",
-        "text": "Siempre que el comandante tenga más de 20 años de antigüedad en la empresa",
+        "text": "Cuando el avión vuele con menos del 10% de su capacidad de pasaje",
         "is_correct": false
       },
       {
@@ -1704,7 +1704,7 @@
       },
       {
         "id": "D",
-        "text": "Cuando el avión vuele con menos del 10% de su capacidad de pasaje",
+        "text": "Siempre que el comandante tenga más de 20 años de antigüedad en la empresa",
         "is_correct": false
       }
     ],
@@ -1726,23 +1726,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Cuando las previsiones meteorológicas en destino indiquen condiciones por debajo de los mínimos de planificación, o cuando no se disponga de información meteorológica de destino",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Siempre que el vuelo se realice en viernes o víspera de festivo",
+        "text": "Únicamente si la aeronave tiene un motor alquilado a otro operador",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Cuando el avión transporte equipaje en los asientos de pasajeros",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Únicamente si la aeronave tiene un motor alquilado a otro operador",
+        "id": "C",
+        "text": "Siempre que el vuelo se realice en viernes o víspera de festivo",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cuando las previsiones meteorológicas en destino indiquen condiciones por debajo de los mínimos de planificación, o cuando no se disponga de información meteorológica de destino",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1763,18 +1763,18 @@
     "options": [
       {
         "id": "A",
-        "text": "Porque el volumen medido en litros/galones varía con la temperatura; la masa real (kg/lbs) depende de la densidad (kg/L), afectando al peso total y rendimiento de despegue",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Porque el combustible de menor densidad tiene más octanaje y acelera el avión al doble",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Para comprobar si el queroseno ha caducado y debe ser devuelto al proveedor",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Porque el volumen medido en litros/galones varía con la temperatura; la masa real (kg/lbs) depende de la densidad (kg/L), afectando al peso total y rendimiento de despegue",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1805,17 +1805,17 @@
       },
       {
         "id": "B",
-        "text": "A velocidad máxima VMO con flaps en posición completa de aterrizaje y aerofrenos extendidos",
+        "text": "A velocidad cercana a la entrada en pérdida con aviso de vibrador de palanca activo",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Con tren de aterrizaje abajo y acelerando a empuje máximo de despegue",
+        "text": "A velocidad máxima VMO con flaps en posición completa de aterrizaje y aerofrenos extendidos",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "A velocidad cercana a la entrada en pérdida con aviso de vibrador de palanca activo",
+        "text": "Con tren de aterrizaje abajo y acelerando a empuje máximo de despegue",
         "is_correct": false
       }
     ],
@@ -1837,17 +1837,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Minimum Takeoff Fuel = Capacidad máxima estructural de los depósitos dividida por dos",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Minimum Takeoff Fuel = Trip Fuel + Contingency Fuel + Alternate Fuel + Final Reserve Fuel + Additional Fuel (si aplica) + Extra Fuel (si aplica)",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "Minimum Takeoff Fuel = Taxi Fuel + Trip Fuel únicamente sin ningún tipo de reserva",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Minimum Takeoff Fuel = Capacidad máxima estructural de los depósitos dividida por dos",
+        "text": "Minimum Takeoff Fuel = Taxi Fuel + Trip Fuel únicamente sin ningún tipo de reserva",
         "is_correct": false
       },
       {

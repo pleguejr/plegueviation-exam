@@ -7,13 +7,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Disponible y equipado con servicios auxiliares requeridos: ATS, iluminación suficiente, comunicaciones, meteo, navegación y emergencias (RFFS)",
-        "is_correct": true
+        "text": "Estar situado exclusivamente en territorio de la Unión Europea con autorización militar de uso conjunto",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Disponer de una pista de asfalto de al menos 3.000 metros sin requerir servicios de tránsito aéreo ni parque de bomberos",
-        "is_correct": false
+        "text": "Disponible y equipado con servicios auxiliares requeridos: ATS, iluminación suficiente, comunicaciones, meteo, navegación y emergencias (RFFS)",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -22,7 +22,7 @@
       },
       {
         "id": "D",
-        "text": "Estar situado exclusivamente en territorio de la Unión Europea con autorización militar de uso conjunto",
+        "text": "Disponer de una pista de asfalto de al menos 3.000 metros sin requerir servicios de tránsito aéreo ni parque de bomberos",
         "is_correct": false
       }
     ],
@@ -49,17 +49,17 @@
       },
       {
         "id": "B",
-        "text": "Aeródromo situado a menos de 10 NM del origen donde se puede repostar combustible con pasajeros a bordo",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Cualquier pista de tierra balizada que permita el aterrizaje visual antes de alcanzar la altitud de crucero",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Aeropuerto de destino final cuando la meteorología en ruta es favorable en un 100%",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aeródromo situado a menos de 10 NM del origen donde se puede repostar combustible con pasajeros a bordo",
         "is_correct": false
       }
     ],
@@ -81,18 +81,18 @@
     "options": [
       {
         "id": "A",
-        "text": "Distancia equivalente a 1 hora de vuelo a velocidad de crucero con un motor inoperativo en condiciones ISA y aire en calma",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Distancia fija de 500 NM sin considerar las prestaciones monomotor ni las condiciones de temperatura",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Distancia equivalente a 2 horas de vuelo con ambos motores operativos a velocidad de crucero de largo alcance",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Distancia equivalente a 1 hora de vuelo a velocidad de crucero con un motor inoperativo en condiciones ISA y aire en calma",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -118,22 +118,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Es un aeródromo alternativo en ruta seleccionado con el propósito de reducir el combustible de contingencia reglamentario al 3%",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Es un aeropuerto donde el precio por tonelada de Jet A-1 es un 20% más económico para realizar repostaje técnico",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Es una pista de emergencia reservada exclusivamente para vuelos que hayan declarado MAYDAY FUEL por radio",
+        "id": "B",
+        "text": "Es un aeródromo utilizado para transferir combustible entre depósitos alares en pleno vuelo",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Es un aeródromo alternativo en ruta seleccionado con el propósito de reducir el combustible de contingencia reglamentario al 3%",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Es un aeródromo utilizado para transferir combustible entre depósitos alares en pleno vuelo",
+        "text": "Es una pista de emergencia reservada exclusivamente para vuelos que hayan declarado MAYDAY FUEL por radio",
         "is_correct": false
       }
     ],
@@ -155,18 +155,18 @@
     "options": [
       {
         "id": "A",
-        "text": "Superficies independientes que permitan operar si una se bloquea, disponiendo cada una de procedimiento de aproximación con ayuda propia",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Estar separadas por al menos 5.000 metros de distancia sin compartir la misma torre de control",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Tener orientaciones magnéticas perpendiculares exactas (90°) con diferente resistencia de pavimento PCN",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Superficies independientes que permitan operar si una se bloquea, disponiendo cada una de procedimiento de aproximación con ayuda propia",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -192,12 +192,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Cuando el combustible requerido (alternativo + reserva final) para llegar al alternativo adecuado más próximo sea superior al necesario para 2 horas a crucero",
-        "is_correct": true
+        "text": "Cuando el aeropuerto no dispone de conexión por carretera con la capital insular más cercana",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Cuando el aeropuerto no dispone de conexión por carretera con la capital insular más cercana",
+        "text": "Cuando no existen servicios de restauración ni hotel para la tripulación en un radio de 50 km",
         "is_correct": false
       },
       {
@@ -207,8 +207,8 @@
       },
       {
         "id": "D",
-        "text": "Cuando no existen servicios de restauración ni hotel para la tripulación en un radio de 50 km",
-        "is_correct": false
+        "text": "Cuando el combustible requerido (alternativo + reserva final) para llegar al alternativo adecuado más próximo sea superior al necesario para 2 horas a crucero",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -229,22 +229,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Cumple todos los requisitos de aproximación estándar, procedimientos no complejos, ayudas visuales y meteorología no singular",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Requiere una inspección previa en vuelo por parte de un inspector de AESA antes de cada aterrizaje",
+        "text": "Tiene obstáculos orográficos severos que obligan a realizar aproximaciones frustradas en curva cerrada",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Dispone exclusivamente de aproximaciones visuales diurnas sin ayudas luminosas de aproximación",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Cumple todos los requisitos de aproximación estándar, procedimientos no complejos, ayudas visuales y meteorología no singular",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Tiene obstáculos orográficos severos que obligan a realizar aproximaciones frustradas en curva cerrada",
+        "text": "Requiere una inspección previa en vuelo por parte de un inspector de AESA antes de cada aterrizaje",
         "is_correct": false
       }
     ],
@@ -266,22 +266,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Presenta mínimos no estándar, aproximaciones de no precisión complejas, condiciones meteo desfavorables recurrentes o limitaciones de ayudas",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Está situado en una isla con menos de 10.000 habitantes sin estación de bomberos permanente",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Dispone de pistas con pendiente superior al 10% y pistas de hierba no compactada",
+        "id": "B",
+        "text": "Carece de suministro eléctrico municipal y depende de baterías solares para la torre de control",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Presenta mínimos no estándar, aproximaciones de no precisión complejas, condiciones meteo desfavorables recurrentes o limitaciones de ayudas",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Carece de suministro eléctrico municipal y depende de baterías solares para la torre de control",
+        "text": "Dispone de pistas con pendiente superior al 10% y pistas de hierba no compactada",
         "is_correct": false
       }
     ],
@@ -303,23 +303,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Aproximaciones muy complejas con obstáculos críticos, perfiles de frustrada especiales, meteorología extrema o antecedentes de alta dificultad",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Aeródromos que no figuran en las cartas oficiales LIDO ni en las publicaciones de información aeronáutica (AIP)",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Cualquier aeropuerto situado fuera del continente europeo independientemente de su infraestructura",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Pistas exclusivas de portaaviones o plataformas marítimas flotantes de perforación petrolífera",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aeródromos que no figuran en las cartas oficiales LIDO ni en las publicaciones de información aeronáutica (AIP)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aproximaciones muy complejas con obstáculos críticos, perfiles de frustrada especiales, meteorología extrema o antecedentes de alta dificultad",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -345,17 +345,17 @@
       },
       {
         "id": "B",
-        "text": "Tener más de 10.000 horas de vuelo totales sin importar el entrenamiento previo en dicho aeródromo",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Haber obtenido una carta de recomendación personal firmada por el director general de aviación civil",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Realizar obligatoriamente un aterrizaje previo como pasajero en un vuelo de la competencia comercial",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Tener más de 10.000 horas de vuelo totales sin importar el entrenamiento previo en dicho aeródromo",
         "is_correct": false
       }
     ],
@@ -377,8 +377,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Categoría RFFS 6 (Longitud del avión entre 39 y 49 metros con fuselaje hasta 4 metros)",
-        "is_correct": true
+        "text": "Categoría RFFS 9 (Longitud del avión superior a 76 metros con fuselaje de doble pasillo)",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -387,8 +387,8 @@
       },
       {
         "id": "C",
-        "text": "Categoría RFFS 9 (Longitud del avión superior a 76 metros con fuselaje de doble pasillo)",
-        "is_correct": false
+        "text": "Categoría RFFS 6 (Longitud del avión entre 39 y 49 metros con fuselaje hasta 4 metros)",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -414,8 +414,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Categoría RFFS 5 (se permite una degradación de una categoría por debajo de la categoría de despacho estándar RFFS 6)",
-        "is_correct": true
+        "text": "Categoría RFFS 8 (requiriendo tres categorías por encima del aeropuerto de origen)",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -424,8 +424,8 @@
       },
       {
         "id": "C",
-        "text": "Categoría RFFS 8 (requiriendo tres categorías por encima del aeropuerto de origen)",
-        "is_correct": false
+        "text": "Categoría RFFS 5 (se permite una degradación de una categoría por debajo de la categoría de despacho estándar RFFS 6)",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -451,18 +451,18 @@
     "options": [
       {
         "id": "A",
-        "text": "Permitido con degradación de hasta 1 categoría durante un período máximo de 72 horas previa evaluación de riesgos (Safety Risk Assessment)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Permitido indefinidamente sin necesidad de evaluación de riesgos ni notificación al CCO",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Terminantemente prohibido en cualquier circunstancia, obligando a cancelar la línea de forma inmediata",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Permitido con degradación de hasta 1 categoría durante un período máximo de 72 horas previa evaluación de riesgos (Safety Risk Assessment)",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -525,8 +525,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Elaborado por la Oficina Técnica (OFT) bajo la autoridad del Responsable de Operaciones en Vuelo, con aprobación final de este último",
-        "is_correct": true
+        "text": "Elaborado por los tripulantes de cabina de pasajeros y aprobado por el jefe de cabina",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -535,8 +535,8 @@
       },
       {
         "id": "C",
-        "text": "Elaborado por los tripulantes de cabina de pasajeros y aprobado por el jefe de cabina",
-        "is_correct": false
+        "text": "Elaborado por la Oficina Técnica (OFT) bajo la autoridad del Responsable de Operaciones en Vuelo, con aprobación final de este último",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -562,23 +562,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Aeródromo adecuado donde los informes y previsiones (MET/TAF) indican condiciones iguales o superiores a los mínimos aplicables y estado de pista seguro",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Aeropuerto donde la temperatura ambiente se mantiene constante a 20°C con viento totalmente en calma",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Cualquier pista donde no haya llovido durante los últimos 15 días naturales",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Aeródromo donde el techo de nubes se sitúa por encima del nivel de transición en todo momento",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aeródromo adecuado donde los informes y previsiones (MET/TAF) indican condiciones iguales o superiores a los mínimos aplicables y estado de pista seguro",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -604,7 +604,7 @@
       },
       {
         "id": "B",
-        "text": "Desconectar el radioaltímetro y volar la aproximación CAT II basándose en el altímetro barométrico",
+        "text": "Aplanar el terreno irregular con maquinaria pesada antes de solicitar la autorización de despacho",
         "is_correct": false
       },
       {
@@ -614,7 +614,7 @@
       },
       {
         "id": "D",
-        "text": "Aplanar el terreno irregular con maquinaria pesada antes de solicitar la autorización de despacho",
+        "text": "Desconectar el radioaltímetro y volar la aproximación CAT II basándose en el altímetro barométrico",
         "is_correct": false
       }
     ],
@@ -636,22 +636,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Diseminando la información relevante por toda la organización (NOTAM, circulares operativas, briefing LIDO y manuales) con acceso garantizado",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Publicando anuncios breves en las redes sociales corporativas de la aerolínea",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Guardando los informes en un archivo confidencial cerrado al que solo accede la dirección general",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Confiando en que los tripulantes aprendan las limitaciones durante la propia maniobra de aproximación",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Diseminando la información relevante por toda la organización (NOTAM, circulares operativas, briefing LIDO y manuales) con acceso garantizado",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Publicando anuncios breves en las redes sociales corporativas de la aerolínea",
         "is_correct": false
       }
     ],
@@ -673,8 +673,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Notificarlo a la mayor brevedad posible a través del canal apropiado de reporte operacional (ASR / reporte de incidencias)",
-        "is_correct": true
+        "text": "Esperar a la reunión anual de seguridad para comentarlo informalmente con otros compañeros",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -683,13 +683,13 @@
       },
       {
         "id": "C",
-        "text": "Esperar a la reunión anual de seguridad para comentarlo informalmente con otros compañeros",
+        "text": "Anotarlo únicamente en un cuaderno personal de vuelo sin dar parte a la compañía",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Anotarlo únicamente en un cuaderno personal de vuelo sin dar parte a la compañía",
-        "is_correct": false
+        "text": "Notificarlo a la mayor brevedad posible a través del canal apropiado de reporte operacional (ASR / reporte de incidencias)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -710,23 +710,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Asegurar medios suficientes para aterrizar o disponer de alternativo con aproximación convencional independiente en caso de fallo PBN",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Cancelar automáticamente el vuelo sin estudiar la disponibilidad de otros aeropuertos en la región",
+        "text": "Exigir que los dos pilotos dispongan de licencia militar de navegación por estima terrestre",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Despachar el vuelo sin combustible de alternativo para compensar el peso del equipo satelital",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Exigir que los dos pilotos dispongan de licencia militar de navegación por estima terrestre",
+        "id": "C",
+        "text": "Cancelar automáticamente el vuelo sin estudiar la disponibilidad de otros aeropuertos en la región",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Asegurar medios suficientes para aterrizar o disponer de alternativo con aproximación convencional independiente en caso de fallo PBN",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -747,22 +747,22 @@
     "options": [
       {
         "id": "A",
-        "text": "La categoría RFFS oficial requerida para cada tipo de aeronave en aeródromos de origen y destino principal en despacho estándar",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Los precios de las tasas de extinción de incendios por cada metro cúbico de agua proyectada",
+        "text": "La lista de teléfonos de emergencia de los hospitales provinciales de la red insular",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "El número de mangueras contra incendios que debe transportar la aeronave en la bodega delantera",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "La categoría RFFS oficial requerida para cada tipo de aeronave en aeródromos de origen y destino principal en despacho estándar",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "La lista de teléfonos de emergencia de los hospitales provinciales de la red insular",
+        "text": "Los precios de las tasas de extinción de incendios por cada metro cúbico de agua proyectada",
         "is_correct": false
       }
     ],
@@ -784,23 +784,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Servicios ATS operativos, ayudas a la navegación utilizables, RFFS según Tabla 1B e iluminación de pista adecuada a la operación prevista",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Servicio de aduanas 24 horas y sala VIP abierta para los pasajeros de clase ejecutiva",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Disponibilidad de hangares cerrados para pernocta de toda la flota de la compañía",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Exclusivamente un teléfono fijo operativo en el edificio terminal de pasajeros",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Servicio de aduanas 24 horas y sala VIP abierta para los pasajeros de clase ejecutiva",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Servicios ATS operativos, ayudas a la navegación utilizables, RFFS según Tabla 1B e iluminación de pista adecuada a la operación prevista",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -821,22 +821,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Sí, siempre que el bloqueo de una de ellas no imposibilite la operación segura en la otra y cuenten con ayudas de aproximación independientes",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "No, las pistas deben ser rigurosamente paralelas con una separación física mínima de 2.000 metros",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Solo si ambas pistas tienen exactamente la misma longitud y el mismo tipo de balizamiento",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "Sí, siempre que el bloqueo de una de ellas no imposibilite la operación segura en la otra y cuenten con ayudas de aproximación independientes",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "Solo durante el periodo nocturno y con autorización del ministerio de defensa",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No, las pistas deben ser rigurosamente paralelas con una separación física mínima de 2.000 metros",
         "is_correct": false
       }
     ],
@@ -863,7 +863,7 @@
       },
       {
         "id": "B",
-        "text": "Volando obligatoriamente 5 vuelos reales de prueba con un comandante instructor antes del servicio",
+        "text": "Realizando un examen teórico presencial en la sede de la autoridad aeronáutica en Madrid",
         "is_correct": false
       },
       {
@@ -873,7 +873,7 @@
       },
       {
         "id": "D",
-        "text": "Realizando un examen teórico presencial en la sede de la autoridad aeronáutica en Madrid",
+        "text": "Volando obligatoriamente 5 vuelos reales de prueba con un comandante instructor antes del servicio",
         "is_correct": false
       }
     ],
@@ -895,8 +895,8 @@
     "options": [
       {
         "id": "A",
-        "text": "12 meses naturales; para revalidar se requiere haber operado en dicho aeródromo en los últimos 12 meses o renovar el entrenamiento específico",
-        "is_correct": true
+        "text": "Validez indefinida una vez obtenida la primera firma de suelta como comandante de línea",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -905,12 +905,12 @@
       },
       {
         "id": "C",
-        "text": "5 años naturales sin necesidad de comprobaciones intermedias de ningún tipo",
-        "is_correct": false
+        "text": "12 meses naturales; para revalidar se requiere haber operado en dicho aeródromo en los últimos 12 meses o renovar el entrenamiento específico",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "Validez indefinida una vez obtenida la primera firma de suelta como comandante de línea",
+        "text": "5 años naturales sin necesidad de comprobaciones intermedias de ningún tipo",
         "is_correct": false
       }
     ],
@@ -932,13 +932,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Debe ser un aeródromo adecuado cuya meteorología prevista cumpla los mínimos de planificación en la ventana temporal de utilización",
-        "is_correct": true
+        "text": "Debe pertenecer a la misma empresa propietaria de la aeronave arrendada",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Debe pertenecer a la misma empresa propietaria de la aeronave arrendada",
-        "is_correct": false
+        "text": "Debe ser un aeródromo adecuado cuya meteorología prevista cumpla los mínimos de planificación en la ventana temporal de utilización",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -969,22 +969,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Un tiempo de respuesta no superior a 3 minutos hasta el extremo de cualquier pista en condiciones óptimas de visibilidad",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Un tiempo de respuesta de 15 minutos desde que la aeronave comunica la parada total en pista",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Un tiempo de respuesta de 1 hora previo aviso por correo electrónico a la jefatura de bomberos",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "No existe tiempo reglamentario de respuesta siempre que los vehículos estén matriculados",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Un tiempo de respuesta no superior a 3 minutos hasta el extremo de cualquier pista en condiciones óptimas de visibilidad",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Un tiempo de respuesta de 15 minutos desde que la aeronave comunica la parada total en pista",
         "is_correct": false
       }
     ],
@@ -1006,18 +1006,18 @@
     "options": [
       {
         "id": "A",
-        "text": "A través de los Códigos de Estado de Pista (RWYCC de 0 a 6), contaminantes reportados en SNOWTAM/METAR y cálculos de performance ePerf",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Preguntando al comandante del vuelo anterior su apreciación subjetiva sin datos numéricos",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Observando el reflejo del sol sobre el asfalto desde la ventanilla de la cabina técnica",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "A través de los Códigos de Estado de Pista (RWYCC de 0 a 6), contaminantes reportados en SNOWTAM/METAR y cálculos de performance ePerf",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1117,8 +1117,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Porque requiere perfiles de planeo no estándar (> 3.5°), ajustes de empuje específicos y técnicas de recogida adaptadas a la orografía",
-        "is_correct": true
+        "text": "Porque provoca que el combustible se desplace hacia la parte posterior del fuselaje durante el vuelo",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1127,13 +1127,13 @@
       },
       {
         "id": "C",
-        "text": "Porque provoca que el combustible se desplace hacia la parte posterior del fuselaje durante el vuelo",
+        "text": "Porque está prohibido el uso del transponder secundario en zonas con colinas cercanas",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Porque está prohibido el uso del transponder secundario en zonas con colinas cercanas",
-        "is_correct": false
+        "text": "Porque requiere perfiles de planeo no estándar (> 3.5°), ajustes de empuje específicos y técnicas de recogida adaptadas a la orografía",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1154,17 +1154,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Despegar con sobrepeso de combustible para realizar esperas de más de 4 horas en destino",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Verificar la disponibilidad operativa de dicha ayuda y planificar alternativos con procedimientos basados en tecnologías independientes",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "Duplicar el número de azafatas a bordo para colaborar en la vigilancia exterior de obstáculos",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Despegar con sobrepeso de combustible para realizar esperas de más de 4 horas en destino",
+        "text": "Duplicar el número de azafatas a bordo para colaborar en la vigilancia exterior de obstáculos",
         "is_correct": false
       },
       {
@@ -1191,8 +1191,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Sí, los alternativos en ruta (ERA y Fuel ERA) pueden seleccionarse conforme a los mínimos de la Tabla 1B de RFFS",
-        "is_correct": true
+        "text": "Solo si el vuelo se realiza sobre territorio africano subsahariano con escolta militar",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1201,8 +1201,8 @@
       },
       {
         "id": "C",
-        "text": "Solo si el vuelo se realiza sobre territorio africano subsahariano con escolta militar",
-        "is_correct": false
+        "text": "Sí, los alternativos en ruta (ERA y Fuel ERA) pueden seleccionarse conforme a los mínimos de la Tabla 1B de RFFS",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1228,8 +1228,8 @@
     "options": [
       {
         "id": "A",
-        "text": "A través del estudio de aeródromo y tablas de pesos máximos de despegue (RTOW) calculadas por Oficina Técnica en ePerf",
-        "is_correct": true
+        "text": "Despegando siempre en sentido contrario al viento dominante sin importar la SID asignada",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1243,8 +1243,8 @@
       },
       {
         "id": "D",
-        "text": "Despegando siempre en sentido contrario al viento dominante sin importar la SID asignada",
-        "is_correct": false
+        "text": "A través del estudio de aeródromo y tablas de pesos máximos de despegue (RTOW) calculadas por Oficina Técnica en ePerf",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1265,23 +1265,23 @@
     "options": [
       {
         "id": "A",
-        "text": "El riesgo de hidroplaneo, espesor de lámina de agua (> 3 mm / pista contaminada) y la disponibilidad de drenaje o ranurado (grooving)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "El color de la pintura de señalización horizontal del umbral de pista",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "La temperatura del agua en las canaletas de desagüe perimetrales",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "La altura de la hierba cortada en los márgenes de seguridad de la pista",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El riesgo de hidroplaneo, espesor de lámina de agua (> 3 mm / pista contaminada) y la disponibilidad de drenaje o ranurado (grooving)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1302,17 +1302,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Fuegos artificiales lanzados desde la torre de control en el momento del tramo base",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Luces de borde de pista, luces de umbral y de extremo de pista operativas y homologadas para operación nocturna",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "Únicamente reflectores portátiles colocados en las esquinas del edificio terminal",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Fuegos artificiales lanzados desde la torre de control en el momento del tramo base",
+        "text": "Únicamente reflectores portátiles colocados en las esquinas del edificio terminal",
         "is_correct": false
       },
       {
@@ -1376,13 +1376,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Cesa la autorización de despacho a dicho aeródromo hasta que se restablezca el nivel RFFS reglamentario o se apruebe una exención formal",
-        "is_correct": true
+        "text": "Se transfiere la responsabilidad civil del vuelo a los pasajeros que viajen en clase turista",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Se permite continuar operando indefinidamente reduciendo el número de pasajeros a la mitad",
-        "is_correct": false
+        "text": "Cesa la autorización de despacho a dicho aeródromo hasta que se restablezca el nivel RFFS reglamentario o se apruebe una exención formal",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1391,7 +1391,7 @@
       },
       {
         "id": "D",
-        "text": "Se transfiere la responsabilidad civil del vuelo a los pasajeros que viajen en clase turista",
+        "text": "Se permite continuar operando indefinidamente reduciendo el número de pasajeros a la mitad",
         "is_correct": false
       }
     ],
@@ -1418,12 +1418,12 @@
       },
       {
         "id": "B",
-        "text": "1° Aeropuerto más lejano con mejor hotel de pernocta para la tripulación",
+        "text": "1° Cualquier base militar cerrada al tráfico civil sin consultar a la compañía",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "1° Cualquier base militar cerrada al tráfico civil sin consultar a la compañía",
+        "text": "1° Aeropuerto más lejano con mejor hotel de pernocta para la tripulación",
         "is_correct": false
       },
       {
@@ -1450,8 +1450,8 @@
     "options": [
       {
         "id": "A",
-        "text": "En el Manual de Operaciones Parte C (Rutas y Aeródromos), cartas de aproximación LIDO y limitaciones de la aeronave en AFM/MOB",
-        "is_correct": true
+        "text": "En la tarjeta de instrucciones de seguridad plastificada situada en los respaldos de los asientos",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1460,13 +1460,13 @@
       },
       {
         "id": "C",
-        "text": "En la tarjeta de instrucciones de seguridad plastificada situada en los respaldos de los asientos",
+        "text": "En la pantalla del sistema de entretenimiento a bordo en la sección de música relajante",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "En la pantalla del sistema de entretenimiento a bordo en la sección de música relajante",
-        "is_correct": false
+        "text": "En el Manual de Operaciones Parte C (Rutas y Aeródromos), cartas de aproximación LIDO y limitaciones de la aeronave en AFM/MOB",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1492,17 +1492,17 @@
       },
       {
         "id": "B",
-        "text": "Llamando a la policía local del municipio para preguntar si hay camiones en la calle",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Esperando a que la tripulación informe por radio después de haber aterrizado en destino",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Asumiendo que todos los aeropuertos del mundo tienen siempre categoría RFFS 10 permanente",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Llamando a la policía local del municipio para preguntar si hay camiones en la calle",
         "is_correct": false
       }
     ],
@@ -1529,7 +1529,7 @@
       },
       {
         "id": "B",
-        "text": "Únicamente cuando los motores se detengan por agotamiento total de los depósitos",
+        "text": "Cuando la sobrecargo solicite regresar a base para reponer bebidas calientes",
         "is_correct": false
       },
       {
@@ -1539,7 +1539,7 @@
       },
       {
         "id": "D",
-        "text": "Cuando la sobrecargo solicite regresar a base para reponer bebidas calientes",
+        "text": "Únicamente cuando los motores se detengan por agotamiento total de los depósitos",
         "is_correct": false
       }
     ],
@@ -1566,12 +1566,12 @@
       },
       {
         "id": "B",
-        "text": "No tiene ningún efecto en la física del movimiento de la aeronave sobre el asfalto",
+        "text": "Permite despegar siempre con sobrepeso sin necesidad de consultar tablas de limitaciones",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Permite despegar siempre con sobrepeso sin necesidad de consultar tablas de limitaciones",
+        "text": "No tiene ningún efecto en la física del movimiento de la aeronave sobre el asfalto",
         "is_correct": false
       },
       {
@@ -1608,12 +1608,12 @@
       },
       {
         "id": "C",
-        "text": "Categoría RFFS 0 sin ningún requerimiento de extinción ni personal de emergencias",
+        "text": "Categoría militar especial con autorización exclusiva de la OTAN",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Categoría militar especial con autorización exclusiva de la OTAN",
+        "text": "Categoría RFFS 0 sin ningún requerimiento de extinción ni personal de emergencias",
         "is_correct": false
       }
     ],
@@ -1635,22 +1635,22 @@
     "options": [
       {
         "id": "A",
+        "text": "Se autoriza el aterrizaje con los spoilers de tierra desconectados manualmente",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Debe considerarse como pista mojada (Wet Runway), aplicando el factor reglamentario de 1.15 a la distancia de aterrizaje",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "Se considera como pista seca si la lluvia es de corta duración y la temperatura supera 25°C",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Se reduce la cantidad de combustible de alternativo para acelerar el frenado por menor peso",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "Se autoriza el aterrizaje con los spoilers de tierra desconectados manualmente",
+        "text": "Se reduce la cantidad de combustible de alternativo para acelerar el frenado por menor peso",
         "is_correct": false
       }
     ],
@@ -1672,22 +1672,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Revisión anual en el documento del MOFT / MO(C) coordinada con el departamento de entrenamiento y operaciones",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Revisión decenal coincidiendo con el cambio de siglo aeronáutico",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Revisión mensual a través de votación democrática de los pasajeros frecuentes",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "Revisión anual en el documento del MOFT / MO(C) coordinada con el departamento de entrenamiento y operaciones",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "No se realiza revisión al ser una clasificación inmutable desde la fundación de la compañía",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Revisión decenal coincidiendo con el cambio de siglo aeronáutico",
         "is_correct": false
       }
     ],
@@ -1719,12 +1719,12 @@
       },
       {
         "id": "C",
-        "text": "Sí, siempre que el vuelo transporte menos de 10 pasajeros en cabina",
+        "text": "Sí, si el aeropuerto alternativo dispone de servicio de ambulancia municipal externo",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Sí, si el aeropuerto alternativo dispone de servicio de ambulancia municipal externo",
+        "text": "Sí, siempre que el vuelo transporte menos de 10 pasajeros en cabina",
         "is_correct": false
       }
     ],
@@ -1751,17 +1751,17 @@
       },
       {
         "id": "B",
-        "text": "Exclusivamente los árboles frutales situados a más de 20 kilómetros de la pista",
+        "text": "No se evalúan obstáculos si el aeropuerto dispone de servicio radar de aproximación",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "La altura de los edificios de oficinas de la competencia en el centro urbano",
+        "text": "Exclusivamente los árboles frutales situados a más de 20 kilómetros de la pista",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No se evalúan obstáculos si el aeropuerto dispone de servicio radar de aproximación",
+        "text": "La altura de los edificios de oficinas de la competencia en el centro urbano",
         "is_correct": false
       }
     ],
@@ -1783,8 +1783,8 @@
     "options": [
       {
         "id": "A",
-        "text": "El Comandante de la aeronave, debiendo estar debidamente cualificado y en vigencia en dicho aeródromo",
-        "is_correct": true
+        "text": "Cualquiera de los dos pilotos por sorteo previo antes de iniciar el rodaje",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1793,13 +1793,13 @@
       },
       {
         "id": "C",
-        "text": "Cualquiera de los dos pilotos por sorteo previo antes de iniciar el rodaje",
+        "text": "El piloto automático en modo totalmente autónomo sin intervención humana",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "El piloto automático en modo totalmente autónomo sin intervención humana",
-        "is_correct": false
+        "text": "El Comandante de la aeronave, debiendo estar debidamente cualificado y en vigencia en dicho aeródromo",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1825,12 +1825,12 @@
       },
       {
         "id": "B",
-        "text": "El recibo de pago de combustible sellado por el camión cisterna en plataforma",
+        "text": "La tarjeta de embarque del primer pasajero de la fila 1 de cabina",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "La tarjeta de embarque del primer pasajero de la fila 1 de cabina",
+        "text": "El recibo de pago de combustible sellado por el camión cisterna en plataforma",
         "is_correct": false
       },
       {

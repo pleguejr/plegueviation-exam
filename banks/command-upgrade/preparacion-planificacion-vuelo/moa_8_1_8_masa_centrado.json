@@ -7,22 +7,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Peso básico vacío del avión más tripulación con su equipaje, equipos de catering, venta a bordo, agua potable y líquidos químicos de aseos",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Peso del avión vacío incluyendo el combustible de despegue y todo el equipaje facturado de los pasajeros",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Peso máximo estructural de aterrizaje descontando el peso de los pilotos de la cabina técnica",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "Peso básico vacío del avión más tripulación con su equipaje, equipos de catering, venta a bordo, agua potable y líquidos químicos de aseos",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "Peso de la carga comercial y correo postal exclusivamente sin considerar la tripulación",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Peso del avión vacío incluyendo el combustible de despegue y todo el equipaje facturado de los pasajeros",
         "is_correct": false
       }
     ],
@@ -49,12 +49,12 @@
       },
       {
         "id": "B",
-        "text": "Adulto varón: 110 kg | Adulto mujer: 95 kg | Adulto mixto: 100 kg | Niño: 60 kg | Bebé: 20 kg",
+        "text": "Adulto varón: 75 kg | Adulto mujer: 50 kg | Adulto mixto: 65 kg | Niño: 20 kg | Bebé: 10 kg",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Adulto varón: 75 kg | Adulto mujer: 50 kg | Adulto mixto: 65 kg | Niño: 20 kg | Bebé: 10 kg",
+        "text": "Adulto varón: 110 kg | Adulto mujer: 95 kg | Adulto mixto: 100 kg | Niño: 60 kg | Bebé: 20 kg",
         "is_correct": false
       },
       {
@@ -81,8 +81,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Vuelos domésticos / interinsulares: 13 kg por bulto | Vuelos europeos: 15 kg por bulto | Vuelos intercontinentales: 17 kg por bulto",
-        "is_correct": true
+        "text": "Todos los equipajes se pesan a 5 kg fijos independientemente del destino",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -91,13 +91,13 @@
       },
       {
         "id": "C",
-        "text": "Todos los equipajes se pesan a 5 kg fijos independientemente del destino",
+        "text": "No se asigna peso al equipaje facturado si los pasajeros viajan sin animales de compañía",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No se asigna peso al equipaje facturado si los pasajeros viajan sin animales de compañía",
-        "is_correct": false
+        "text": "Vuelos domésticos / interinsulares: 13 kg por bulto | Vuelos europeos: 15 kg por bulto | Vuelos intercontinentales: 17 kg por bulto",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -118,17 +118,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Peso total del avión incluyendo el combustible de contingencia y reserva final",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Masa máxima permitida del avión sin combustible utilizable; protege la estructura del encastre alar contra momentos flectores excesivos",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "Peso mínimo que debe tener el avión para evitar salir volando impulsado por el viento en rampa",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Peso total del avión incluyendo el combustible de contingencia y reserva final",
+        "text": "Peso mínimo que debe tener el avión para evitar salir volando impulsado por el viento en rampa",
         "is_correct": false
       },
       {
@@ -155,18 +155,18 @@
     "options": [
       {
         "id": "A",
-        "text": "Modificación de última hora dentro de tolerancias de peso/índice autorizadas que se anota en la Loadsheet existente sin requerir emitir una nueva",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "La cancelación definitiva del plan de vuelo debiendo desembarcar a todos los pasajeros",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Un cambio de comandante en cabina técnica durante la carrera de despegue",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Modificación de última hora dentro de tolerancias de peso/índice autorizadas que se anota en la Loadsheet existente sin requerir emitir una nueva",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -197,17 +197,17 @@
       },
       {
         "id": "B",
-        "text": "MTOW cambia en cada vuelo según el número de maletas; MRTOW es un valor fijo de fábrica",
+        "text": "No existe diferencia siendo términos comerciales idénticos para el cálculo de billetes",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "MTOW es el peso del avión con ruedas desinfladas; MRTOW con ruedas infladas a 200 psi",
+        "text": "MTOW cambia en cada vuelo según el número de maletas; MRTOW es un valor fijo de fábrica",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No existe diferencia siendo términos comerciales idénticos para el cálculo de billetes",
+        "text": "MTOW es el peso del avión con ruedas desinfladas; MRTOW con ruedas infladas a 200 psi",
         "is_correct": false
       }
     ],
@@ -234,17 +234,17 @@
       },
       {
         "id": "B",
-        "text": "El Payload incluye el peso del combustible de los depósitos centrales y el Traffic Load no",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "La Carga de Tráfico es exclusiva para animales vivos transportados en cabina",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "El Payload se mide en libras y el Traffic Load exclusivamente en toneladas métricas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El Payload incluye el peso del combustible de los depósitos centrales y el Traffic Load no",
         "is_correct": false
       }
     ],
@@ -303,8 +303,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Indica la posición longitudinal del centro de gravedad expresada como porcentaje de la Cuerda Media Aerodinámica (Mean Aerodynamic Chord) desde su borde de ataque",
-        "is_correct": true
+        "text": "Representa el porcentaje de asientos ocupados por pasajeros de clase preferente",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -313,8 +313,8 @@
       },
       {
         "id": "C",
-        "text": "Representa el porcentaje de asientos ocupados por pasajeros de clase preferente",
-        "is_correct": false
+        "text": "Indica la posición longitudinal del centro de gravedad expresada como porcentaje de la Cuerda Media Aerodinámica (Mean Aerodynamic Chord) desde su borde de ataque",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -340,23 +340,23 @@
     "options": [
       {
         "id": "A",
-        "text": "A partir de la posición del Centro de Gravedad de Despegue (% MAC TOW) calculada en la Hoja de Carga y la configuración de flaps seleccionada",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Colocándolo siempre a 0 unidades de compensación independientemente del centrado del avión",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Ajustándolo según la temperatura exterior leída en el termómetro de cabina",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Girando la rueda de trim hasta el tope mecánico delantero antes de cada despegue",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Colocándolo siempre a 0 unidades de compensación independientemente del centrado del avión",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "A partir de la posición del Centro de Gravedad de Despegue (% MAC TOW) calculada en la Hoja de Carga y la configuración de flaps seleccionada",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -424,12 +424,12 @@
       },
       {
         "id": "C",
-        "text": "Una única vez en fábrica sin requerir pesajes posteriores durante su vida útil",
+        "text": "Cada 50.000 horas de vuelo acumuladas por la aeronave más antigua",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Cada 50.000 horas de vuelo acumuladas por la aeronave más antigua",
+        "text": "Una única vez en fábrica sin requerir pesajes posteriores durante su vida útil",
         "is_correct": false
       }
     ],
@@ -456,7 +456,7 @@
       },
       {
         "id": "B",
-        "text": "Un folleto informativo sobre los menús vegetarianos servidos a bordo",
+        "text": "El comprobante de pago de las tasas de aterrizaje emitido por AENA",
         "is_correct": false
       },
       {
@@ -466,7 +466,7 @@
       },
       {
         "id": "D",
-        "text": "El comprobante de pago de las tasas de aterrizaje emitido por AENA",
+        "text": "Un folleto informativo sobre los menús vegetarianos servidos a bordo",
         "is_correct": false
       }
     ],
@@ -488,12 +488,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Plano vertical de referencia perpendicular al eje longitudinal del fuselaje a partir del cual se miden todas las distancias horizontales (brazos de palanca)",
-        "is_correct": true
+        "text": "El punto central exacto de la pista de aterrizaje del aeropuerto de salida",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "El punto central exacto de la pista de aterrizaje del aeropuerto de salida",
+        "text": "El peso medio de un neumático del tren de aterrizaje principal",
         "is_correct": false
       },
       {
@@ -503,8 +503,8 @@
       },
       {
         "id": "D",
-        "text": "El peso medio de un neumático del tren de aterrizaje principal",
-        "is_correct": false
+        "text": "Plano vertical de referencia perpendicular al eje longitudinal del fuselaje a partir del cual se miden todas las distancias horizontales (brazos de palanca)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -530,17 +530,17 @@
       },
       {
         "id": "B",
-        "text": "El porcentaje de humedad en el interior de los depósitos de combustible alares",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "El número de revisiones técnicas realizadas por el personal de mantenimiento en el último año",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "La velocidad de rotación recomendada para pistas con pendiente ascendente",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El porcentaje de humedad en el interior de los depósitos de combustible alares",
         "is_correct": false
       }
     ],
@@ -567,12 +567,12 @@
       },
       {
         "id": "B",
-        "text": "Permite cambiar hasta el 100% de los pasajeros sin emitir nueva hoja de carga",
+        "text": "No se permite ningún cambio de pasaje una vez emitida la primera hoja de carga",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "No se permite ningún cambio de pasaje una vez emitida la primera hoja de carga",
+        "text": "Permite cambiar hasta el 100% de los pasajeros sin emitir nueva hoja de carga",
         "is_correct": false
       },
       {
@@ -599,23 +599,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Para calcular con precisión el momento longitudinal del pasaje según su ubicación física en el fuselaje y asegurar el CG dentro de límites",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Para cobrar diferentes precios de billete según la proximidad a los motores",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Para organizar el servicio de café por orden alfabético de apellidos",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Para restringir el uso de los lavabos a una sola zona durante el crucero",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Para cobrar diferentes precios de billete según la proximidad a los motores",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Para calcular con precisión el momento longitudinal del pasaje según su ubicación física en el fuselaje y asegurar el CG dentro de límites",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -636,8 +636,8 @@
     "options": [
       {
         "id": "A",
-        "text": "El MRLW (Peso Regulado por Performance), siendo obligatorio que la masa estimada de aterrizaje sea igual o inferior a este valor",
-        "is_correct": true
+        "text": "El peso del combustible remanente en los depósitos de reserva",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -646,13 +646,13 @@
       },
       {
         "id": "C",
-        "text": "El peso del combustible remanente en los depósitos de reserva",
+        "text": "El límite no aplica si los dos pilotos están de acuerdo en aterrizar",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "El límite no aplica si los dos pilotos están de acuerdo en aterrizar",
-        "is_correct": false
+        "text": "El MRLW (Peso Regulado por Performance), siendo obligatorio que la masa estimada de aterrizaje sea igual o inferior a este valor",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -673,13 +673,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Mayor estabilidad longitudinal pero mayor resistencia inducida (mayor consumo), mayor velocidad de pérdida y mayor fuerza de palanca requerida para la rotación y recogida",
-        "is_correct": true
+        "text": "Inestabilidad extrema con tendencia incontrolable al encabritamiento espontáneo",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Inestabilidad extrema con tendencia incontrolable al encabritamiento espontáneo",
-        "is_correct": false
+        "text": "Mayor estabilidad longitudinal pero mayor resistencia inducida (mayor consumo), mayor velocidad de pérdida y mayor fuerza de palanca requerida para la rotación y recogida",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -710,17 +710,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Incapacidad absoluta para retraer el tren de aterrizaje en ascenso",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Disminución drástica de la estabilidad estática longitudinal, mandos hipersensibles, dificultad para bajar el morro y alto riesgo de pérdida incontrolada o tailstrike",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "Aumento extraordinario del consumo de combustible en un 200%",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Incapacidad absoluta para retraer el tren de aterrizaje en ascenso",
+        "text": "Aumento extraordinario del consumo de combustible en un 200%",
         "is_correct": false
       },
       {
@@ -747,22 +747,22 @@
     "options": [
       {
         "id": "A",
-        "text": "El Informe de Instrucciones de Carga (Loading Instruction Report / LIR), debiendo ser firmado por el supervisor de carga tras verificar la estiba real",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "La lista de pasajeros de la tarjeta de fidelización de la compañía",
+        "text": "El manual de servicio a bordo de la tripulación de cabina",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "El mapa meteorológico de vientos en altura a nivel FL390",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "El Informe de Instrucciones de Carga (Loading Instruction Report / LIR), debiendo ser firmado por el supervisor de carga tras verificar la estiba real",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "El manual de servicio a bordo de la tripulación de cabina",
+        "text": "La lista de pasajeros de la tarjeta de fidelización de la compañía",
         "is_correct": false
       }
     ],
@@ -794,12 +794,12 @@
       },
       {
         "id": "C",
-        "text": "Se le asigna el peso de un adulto varón de 88 kg",
+        "text": "Se le prohíbe viajar en asientos individuales en vuelos comerciales",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Se le prohíbe viajar en asientos individuales en vuelos comerciales",
+        "text": "Se le asigna el peso de un adulto varón de 88 kg",
         "is_correct": false
       }
     ],
@@ -858,17 +858,17 @@
     "options": [
       {
         "id": "A",
+        "text": "El director financiero de la aerolínea y el controlador de la torre",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "El responsable de la confección de la hoja (agente de carga/despacho) y el **Comandante de la aeronave** aceptando la carga y el centrado",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "El sobrecargo de cabina y el pasajero de mayor edad a bordo",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "El director financiero de la aerolínea y el controlador de la torre",
+        "text": "El sobrecargo de cabina y el pasajero de mayor edad a bordo",
         "is_correct": false
       },
       {
@@ -900,12 +900,12 @@
       },
       {
         "id": "B",
-        "text": "Durante 24 horas después de completar el vuelo debiendo destruirse a continuación",
+        "text": "Durante 50 años en los archivos centrales del ministerio de transportes",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Durante 50 años en los archivos centrales del ministerio de transportes",
+        "text": "Durante 24 horas después de completar el vuelo debiendo destruirse a continuación",
         "is_correct": false
       },
       {
@@ -932,23 +932,23 @@
     "options": [
       {
         "id": "A",
-        "text": "El consumo de combustible desplaza el CG según la geometría de los depósitos alares (en flecha), debiendo permanecer dentro de la envolvente desde el despegue hasta el aterrizaje",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "El CG permanece rigurosamente inmóvil en el mismo milímetro durante todo el vuelo",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "El consumo de combustible desplaza el CG fuera del morro del avión a partir del descenso",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "El combustible solo afecta al centrado si se vuela con el piloto automático desconectado",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El consumo de combustible desplaza el CG según la geometría de los depósitos alares (en flecha), debiendo permanecer dentro de la envolvente desde el despegue hasta el aterrizaje",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -969,22 +969,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Comprobar la concordancia del ZFW, TOW, número de pasajeros (PAX por zonas), combustible y valores de trim antes de insertarlos en el FMS",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Aceptar los datos a ciegas sin comprobar ninguna cifra numérica en pantalla",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Imprimir obligatoriamente 5 copias en papel carbón antes de cerrar las puertas",
+        "id": "B",
+        "text": "Borrar los datos del FMS y navegar con la brújula de emergencia",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Comprobar la concordancia del ZFW, TOW, número de pasajeros (PAX por zonas), combustible y valores de trim antes de insertarlos en el FMS",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Borrar los datos del FMS y navegar con la brújula de emergencia",
+        "text": "Imprimir obligatoriamente 5 copias en papel carbón antes de cerrar las puertas",
         "is_correct": false
       }
     ],
@@ -1011,17 +1011,17 @@
       },
       {
         "id": "B",
-        "text": "En todos los vuelos regulares de pasajeros de más de 100 plazas sin excepción",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Únicamente cuando el avión despegue con viento en calma a nivel del mar",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "En vuelos donde todos los pasajeros viajen sin equipaje de mano en cabina",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En todos los vuelos regulares de pasajeros de más de 100 plazas sin excepción",
         "is_correct": false
       }
     ],
@@ -1043,23 +1043,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Reubicar a un número específico de pasajeros hacia la zona delantera o trasera de cabina según la tabla de centrado antes del cierre de puertas",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Obligar a los pasajeros a sujetar las maletas en sus rodillas durante todo el vuelo",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Solicitar al personal de tierra que desinfle los neumáticos del tren delantero",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Permitir que los pasajeros cambien libremente de asiento en cualquier momento del despegue",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Obligar a los pasajeros a sujetar las maletas en sus rodillas durante todo el vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Reubicar a un número específico de pasajeros hacia la zona delantera o trasera de cabina según la tabla de centrado antes del cierre de puertas",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1080,23 +1080,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Es el valor menor resultante de: (MZFW - DOW), (MTOW - DOW - Takeoff Fuel) y (MLW - DOW - Trip Fuel en destino)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Es la suma del peso de todos los asientos de pasajeros multiplicada por dos",
+        "text": "Es la capacidad máxima en litros del depósito de agua potable de a bordo",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Es el peso del combustible de rodaje sumado a la reserva final",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Es la capacidad máxima en litros del depósito de agua potable de a bordo",
+        "id": "C",
+        "text": "Es la suma del peso de todos los asientos de pasajeros multiplicada por dos",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Es el valor menor resultante de: (MZFW - DOW), (MTOW - DOW - Takeoff Fuel) y (MLW - DOW - Trip Fuel en destino)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1117,13 +1117,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Muestra el rango de calado de compensador horizontal seguro y válido para el despegue según los datos de masa y centrado introducidos en el FMS",
-        "is_correct": true
+        "text": "Indica que el avión dispone de suficiente combustible para volar 10 horas",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Indica que el avión dispone de suficiente combustible para volar 10 horas",
-        "is_correct": false
+        "text": "Muestra el rango de calado de compensador horizontal seguro y válido para el despegue según los datos de masa y centrado introducidos en el FMS",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1154,22 +1154,22 @@
     "options": [
       {
         "id": "A",
+        "text": "Solicitar al controlador de torre que aumente la longitud oficial de la pista de aterrizaje",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "No se autoriza el despegue; se debe denegar el embarque del exceso de carga/pasaje o recalcular la performance con otra configuración/pista",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "Despegar con sobrepeso y compensar el exceso tirando con más fuerza de la palanca de mandos",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Anotar el exceso en la Loadsheet y continuar sin realizar comprobaciones adicionales",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "Solicitar al controlador de torre que aumente la longitud oficial de la pista de aterrizaje",
+        "text": "Anotar el exceso en la Loadsheet y continuar sin realizar comprobaciones adicionales",
         "is_correct": false
       }
     ],
@@ -1191,13 +1191,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Piloto técnico: 85 kg (incluye maleta de vuelo); TCP: 75 kg (incluye equipaje de servicio)",
-        "is_correct": true
+        "text": "Piloto técnico: 150 kg; TCP: 120 kg",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Piloto técnico: 150 kg; TCP: 120 kg",
-        "is_correct": false
+        "text": "Piloto técnico: 85 kg (incluye maleta de vuelo); TCP: 75 kg (incluye equipaje de servicio)",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1228,8 +1228,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Momento = Masa (o Peso) × Brazo de Palanca (Arm)",
-        "is_correct": true
+        "text": "Momento = Consumo de Combustible × Temperatura Exterior",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1238,12 +1238,12 @@
       },
       {
         "id": "C",
-        "text": "Momento = Brazo de Palanca + Altitud de Vuelo",
-        "is_correct": false
+        "text": "Momento = Masa (o Peso) × Brazo de Palanca (Arm)",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "Momento = Consumo de Combustible × Temperatura Exterior",
+        "text": "Momento = Brazo de Palanca + Altitud de Vuelo",
         "is_correct": false
       }
     ],
@@ -1265,13 +1265,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Se debe reordenar la carga según el LIR o emitir inmediatamente una nueva Hoja de Carga corregida que refleje la distribución real en bodegas",
-        "is_correct": true
+        "text": "Desconectar el sistema de aviso de configuración de despegue en cabina",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Ignorar la diferencia y despegar asumiendo que el peso total es el mismo",
-        "is_correct": false
+        "text": "Se debe reordenar la carga según el LIR o emitir inmediatamente una nueva Hoja de Carga corregida que refleje la distribución real en bodegas",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1280,7 +1280,7 @@
       },
       {
         "id": "D",
-        "text": "Desconectar el sistema de aviso de configuración de despegue en cabina",
+        "text": "Ignorar la diferencia y despegar asumiendo que el peso total es el mismo",
         "is_correct": false
       }
     ],
@@ -1302,23 +1302,23 @@
     "options": [
       {
         "id": "A",
-        "text": "En el Manual de Carga y Centrado (Weight and Balance Manual / AOM), reflejadas en la plantilla de la Hoja de Carga y en las placas de bodega",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "En la carta de aproximación instrumental del aeropuerto de salida",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "En la póliza de seguros de equipajes extraviados de la aerolínea",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "En el menú de selección de rutas del sistema de entretenimiento",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En el Manual de Carga y Centrado (Weight and Balance Manual / AOM), reflejadas en la plantilla de la Hoja de Carga y en las placas de bodega",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1344,17 +1344,17 @@
       },
       {
         "id": "B",
-        "text": "100 kg por maleta sin necesidad de etiquetado de peso",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "10 kg por bulto como límite máximo absoluto para cualquier pasajero",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "No existe límite de peso por maleta pudiendo cargar piezas de 500 kg en rampa",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "100 kg por maleta sin necesidad de etiquetado de peso",
         "is_correct": false
       }
     ],
@@ -1376,23 +1376,23 @@
     "options": [
       {
         "id": "A",
-        "text": "La velocidad de pérdida aumenta proporcionalmente con la raíz cuadrada del incremento de masa ($Vs2 = Vs1 × \\sqrt{M2 / M1$)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "La velocidad de pérdida disminuye a la mitad cuando el avión va totalmente lleno",
+        "text": "La velocidad de pérdida permanece fija en 50 nudos para cualquier peso",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "La velocidad de pérdida no depende de la masa sino únicamente del color de las alas",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "La velocidad de pérdida permanece fija en 50 nudos para cualquier peso",
+        "id": "C",
+        "text": "La velocidad de pérdida disminuye a la mitad cuando el avión va totalmente lleno",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La velocidad de pérdida aumenta proporcionalmente con la raíz cuadrada del incremento de masa ($Vs2 = Vs1 × \\sqrt{M2 / M1$)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1413,22 +1413,22 @@
     "options": [
       {
         "id": "A",
-        "text": "El nuevo peso total (TOW / ZFW) y el nuevo Índice / % MAC de despegue resultante para ajustar el trim de compensador",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "El número de teléfono del despachador y el precio del billete de pasaje",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "El nuevo peso total (TOW / ZFW) y el nuevo Índice / % MAC de despegue resultante para ajustar el trim de compensador",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "La altitud de crucero en el plan de vuelo y el código de transponder",
+        "text": "La frecuencia de la torre de control y el nombre del primer oficial",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "La frecuencia de la torre de control y el nombre del primer oficial",
+        "text": "La altitud de crucero en el plan de vuelo y el código de transponder",
         "is_correct": false
       }
     ],
@@ -1450,8 +1450,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Se registra como carga de servicio en la Hoja de Carga (Traffic Load) especificando los kg y la bodega exacta donde queda estibado y trincado",
-        "is_correct": true
+        "text": "Se reparte entre los bolsillos de los asientos de los pasajeros",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1460,13 +1460,13 @@
       },
       {
         "id": "C",
-        "text": "Se reparte entre los bolsillos de los asientos de los pasajeros",
+        "text": "No se permite transportar lastre en ninguna aeronave comercial",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No se permite transportar lastre en ninguna aeronave comercial",
-        "is_correct": false
+        "text": "Se registra como carga de servicio en la Hoja de Carga (Traffic Load) especificando los kg y la bodega exacta donde queda estibado y trincado",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1492,17 +1492,17 @@
       },
       {
         "id": "B",
-        "text": "El avión no podrá elevarse del suelo en toda la longitud de la pista",
+        "text": "Se apagan los sistemas de navegación inercial de forma automática",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Se produce el bloqueo inmediato de las ruedas del tren de aterrizaje",
+        "text": "El avión no podrá elevarse del suelo en toda la longitud de la pista",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Se apagan los sistemas de navegación inercial de forma automática",
+        "text": "Se produce el bloqueo inmediato de las ruedas del tren de aterrizaje",
         "is_correct": false
       }
     ],
@@ -1524,22 +1524,22 @@
     "options": [
       {
         "id": "A",
+        "text": "No se tiene en cuenta al no tener masa física dentro de la atmósfera",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Está incluido reglamentariamente dentro de las tablas de masas estándar de pasajeros (adulto 84/88 kg)",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "Se pesa individualmente en la puerta de embarque y se suma al peso del combustible",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Se considera con un peso de 50 kg por cada bulto de mano",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "No se tiene en cuenta al no tener masa física dentro de la atmósfera",
+        "text": "Se considera con un peso de 50 kg por cada bulto de mano",
         "is_correct": false
       }
     ],
@@ -1561,13 +1561,13 @@
     "options": [
       {
         "id": "A",
-        "text": "El envío del mensaje de aceptación electrónica (ACCEPT / ACK) desde la MCDU con el código PIN/identificador del Comandante",
-        "is_correct": true
+        "text": "El encendido y apagado de las luces estroboscópicas tres veces",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "La impresión en papel fotográfico y envío por correo postal a la sede",
-        "is_correct": false
+        "text": "El envío del mensaje de aceptación electrónica (ACCEPT / ACK) desde la MCDU con el código PIN/identificador del Comandante",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1576,7 +1576,7 @@
       },
       {
         "id": "D",
-        "text": "El encendido y apagado de las luces estroboscópicas tres veces",
+        "text": "La impresión en papel fotográfico y envío por correo postal a la sede",
         "is_correct": false
       }
     ],
@@ -1598,22 +1598,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Aceite de motor en sus niveles nominales, combustible no utilizable en tuberías y depósitos, y fluidos hidráulicos de los sistemas cerrados",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Todo el combustible de navegación (Trip Fuel y Reserva Final)",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "El agua mineral embotellada para el servicio de bar de los pasajeros",
+        "id": "B",
+        "text": "Los líquidos desinfectantes del equipo de limpieza de rampa",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Aceite de motor en sus niveles nominales, combustible no utilizable en tuberías y depósitos, y fluidos hidráulicos de los sistemas cerrados",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Los líquidos desinfectantes del equipo de limpieza de rampa",
+        "text": "El agua mineral embotellada para el servicio de bar de los pasajeros",
         "is_correct": false
       }
     ],
@@ -1635,13 +1635,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Porque reduce la sustentación negativa requerida en el estabilizador horizontal (menor resistencia de cola), reduciendo la resistencia inducida total del avión",
-        "is_correct": true
+        "text": "Porque aumenta la potencia de empuje de las turbinas sin consumir queroseno",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Porque aumenta la potencia de empuje de las turbinas sin consumir queroseno",
-        "is_correct": false
+        "text": "Porque reduce la sustentación negativa requerida en el estabilizador horizontal (menor resistencia de cola), reduciendo la resistencia inducida total del avión",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1672,22 +1672,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Se identifica con etiqueta de advertencia 'HEAVY' para los estibadores de rampa y se computa con su peso real pesado o valor estándar incrementado",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Se rechaza automáticamente la maleta sin permitir su transporte",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Se coloca en el asiento contiguo al comandante en la cabina técnica",
+        "id": "B",
+        "text": "Se abre la maleta en plataforma y se tira la mitad del contenido a la basura",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Se identifica con etiqueta de advertencia 'HEAVY' para los estibadores de rampa y se computa con su peso real pesado o valor estándar incrementado",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Se abre la maleta en plataforma y se tira la mitad del contenido a la basura",
+        "text": "Se coloca en el asiento contiguo al comandante en la cabina técnica",
         "is_correct": false
       }
     ],
@@ -1709,22 +1709,22 @@
     "options": [
       {
         "id": "A",
+        "text": "Se debe enviar una copia por fax al fabricante del motor en Brasil",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Una copia firmada de la Hoja de Carga (física o registrada electrónicamente en el sistema del CCO/handling) debe quedar archivada en tierra",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "No es necesario dejar ninguna copia en tierra si el copiloto lleva un duplicado",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "La copia en tierra debe ser entregada a la policía de aduanas en mano",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "Se debe enviar una copia por fax al fabricante del motor en Brasil",
+        "text": "La copia en tierra debe ser entregada a la policía de aduanas en mano",
         "is_correct": false
       }
     ],
@@ -1751,17 +1751,17 @@
       },
       {
         "id": "B",
-        "text": "Evitar que la aeronave sobrepase la velocidad de crucero en vuelo",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Limitar la cantidad de oxígeno disponible para los tripulantes",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Reducir las emisiones de ruido en las aproximaciones nocturnas",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Evitar que la aeronave sobrepase la velocidad de crucero en vuelo",
         "is_correct": false
       }
     ],
@@ -1783,22 +1783,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Desplaza el centro de presiones hacia atrás generando un momento de morro abajo que debe ser compensado ajustando el pitch trim correspondiente",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Desplaza el motor izquierdo hacia delante y el motor derecho hacia atrás",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "No produce ninguna alteración en las fuerzas aerodinámicas del perfil alar",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Aumenta la altitud de crucero en 5.000 pies de forma instantánea",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Desplaza el centro de presiones hacia atrás generando un momento de morro abajo que debe ser compensado ajustando el pitch trim correspondiente",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Desplaza el motor izquierdo hacia delante y el motor derecho hacia atrás",
         "is_correct": false
       }
     ],
@@ -1820,8 +1820,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Verificar y cerciorarse de que el peso total y el centro de gravedad del avión se encuentran dentro de los límites operacionales seguros para despegue, vuelo y aterrizaje",
-        "is_correct": true
+        "text": "Comprobar únicamente que los neumáticos tengan suficiente dibujo en la banda de rodadura",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1830,8 +1830,8 @@
       },
       {
         "id": "C",
-        "text": "Comprobar únicamente que los neumáticos tengan suficiente dibujo en la banda de rodadura",
-        "is_correct": false
+        "text": "Verificar y cerciorarse de que el peso total y el centro de gravedad del avión se encuentran dentro de los límites operacionales seguros para despegue, vuelo y aterrizaje",
+        "is_correct": true
       },
       {
         "id": "D",

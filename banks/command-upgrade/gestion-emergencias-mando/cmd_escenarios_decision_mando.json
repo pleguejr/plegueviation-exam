@@ -17,12 +17,12 @@
       },
       {
         "id": "C",
-        "text": "Choose (desviar inmediatamente al aeropuerto más cercano) sin calcular combustible",
+        "text": "Landing Perf -> Choose -> Comms -> Inop -> Meteo -> Fuel -> Options",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Landing Perf -> Choose -> Comms -> Inop -> Meteo -> Fuel -> Options",
+        "text": "Choose (desviar inmediatamente al aeropuerto más cercano) sin calcular combustible",
         "is_correct": false
       }
     ],
@@ -44,8 +44,8 @@
     "options": [
       {
         "id": "A",
-        "text": "T: Aterrizaje Previsto / E: 20 minutos / L: Pista 03L LPA / S: Señal de protección 30s 'PROTECCIÓN x3' / I: Preparar cabina para toma de precaución y posible evacuación",
-        "is_correct": true
+        "text": "T: Emergencia Imprevista / E: Sin tiempo / L: Agua / S: Sin aviso previo / I: No preparar nada",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -54,13 +54,13 @@
       },
       {
         "id": "C",
-        "text": "T: Emergencia Imprevista / E: Sin tiempo / L: Agua / S: Sin aviso previo / I: No preparar nada",
+        "text": "T: Operación Normal / E: Desconocido / L: Cualquier aeropuerto / S: Alarma general / I: Desembarque por pasarela",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "T: Operación Normal / E: Desconocido / L: Cualquier aeropuerto / S: Alarma general / I: Desembarque por pasarela",
-        "is_correct": false
+        "text": "T: Aterrizaje Previsto / E: 20 minutos / L: Pista 03L LPA / S: Señal de protección 30s 'PROTECCIÓN x3' / I: Preparar cabina para toma de precaución y posible evacuación",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -118,8 +118,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Declarar 'MINIMUM FUEL', informando al ATC de que cualquier cambio en la autorización puede resultar en aterrizar con menos de la reserva final",
-        "is_correct": true
+        "text": "No declarar nada para evitar abrir una investigación formal de ASR",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -128,8 +128,8 @@
       },
       {
         "id": "C",
-        "text": "No declarar nada para evitar abrir una investigación formal de ASR",
-        "is_correct": false
+        "text": "Declarar 'MINIMUM FUEL', informando al ATC de que cualquier cambio en la autorización puede resultar en aterrizar con menos de la reserva final",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -155,23 +155,23 @@
     "options": [
       {
         "id": "A",
-        "text": "1° Memo Items (si aplican) -> 2° Emergency Checklist de motor -> 3° Abnormal Checklist hidráulica principal -> 4° Normal Checklist de ascenso/crucero -> 5° Abnormal Checklist restantes y notas",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "1° Normal Checklist -> 2° Emergency Checklist -> 3° Memo Items -> 4° Abnormal Checklist",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "1° Comunicar con la compañía por radio -> 2° Rellenar el ASR -> 3° Desconectar el piloto automático",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "1° Abnormal Checklist restantes -> 2° Normal Checklist -> 3° Emergency Checklist",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "1° Memo Items (si aplican) -> 2° Emergency Checklist de motor -> 3° Abnormal Checklist hidráulica principal -> 4° Normal Checklist de ascenso/crucero -> 5° Abnormal Checklist restantes y notas",
+        "is_correct": true
       }
     ],
     "explanation": {

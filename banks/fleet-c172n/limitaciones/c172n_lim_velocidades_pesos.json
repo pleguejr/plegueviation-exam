@@ -17,12 +17,12 @@
       },
       {
         "id": "C",
-        "text": "128 KIAS (145 MPH)",
+        "text": "175 KIAS (201 MPH)",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "175 KIAS (201 MPH)",
+        "text": "128 KIAS (145 MPH)",
         "is_correct": false
       }
     ],
@@ -50,17 +50,17 @@
       },
       {
         "id": "B",
-        "text": "110 KIAS (127 MPH)",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "140 KIAS (161 MPH)",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "97 KIAS (112 MPH)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "110 KIAS (127 MPH)",
         "is_correct": false
       }
     ],
@@ -87,7 +87,7 @@
       },
       {
         "id": "B",
-        "text": "2300 lbs: 110 KIAS; 1950 lbs: 95 KIAS; 1600 lbs: 85 KIAS",
+        "text": "2330 lbs: 127 KIAS; 1980 lbs: 119 KIAS; 1630 lbs: 110 KIAS",
         "is_correct": false
       },
       {
@@ -97,7 +97,7 @@
       },
       {
         "id": "D",
-        "text": "2330 lbs: 127 KIAS; 1980 lbs: 119 KIAS; 1630 lbs: 110 KIAS",
+        "text": "2300 lbs: 110 KIAS; 1950 lbs: 95 KIAS; 1600 lbs: 85 KIAS",
         "is_correct": false
       }
     ],
@@ -124,7 +124,7 @@
       },
       {
         "id": "B",
-        "text": "Flaps 12°: hasta 120 KIAS; Flaps 12° a 42° (arco blanco): hasta 95 KIAS",
+        "text": "Flaps 16°: hasta 140 KIAS; Flaps 16° a 46° (arco blanco): hasta 115 KIAS",
         "is_correct": false
       },
       {
@@ -134,7 +134,7 @@
       },
       {
         "id": "D",
-        "text": "Flaps 16°: hasta 140 KIAS; Flaps 16° a 46° (arco blanco): hasta 115 KIAS",
+        "text": "Flaps 12°: hasta 120 KIAS; Flaps 12° a 42° (arco blanco): hasta 95 KIAS",
         "is_correct": false
       }
     ],
@@ -157,22 +157,22 @@
     "options": [
       {
         "id": "A",
+        "text": "Categoría Normal: 2150 lbs; Categoría Utilitaria: 1800 lbs",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Categoría Normal: 2300 lbs; Categoría Utilitaria: 2000 lbs",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "Categoría Normal: 2550 lbs; Categoría Utilitaria: 2200 lbs",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Categoría Normal: 2300 lbs; Categoría Utilitaria: 2300 lbs",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "Categoría Normal: 2150 lbs; Categoría Utilitaria: 1800 lbs",
+        "text": "Categoría Normal: 2300 lbs; Categoría Utilitaria: 2300 lbs",
         "is_correct": false
       }
     ],
@@ -194,8 +194,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Flaps UP: +3.8 g y -1.52 g; Flaps DOWN (cualquier posición): +3.0 g y 0 g",
-        "is_correct": true
+        "text": "Flaps UP: +13.18 g y -11.62 g; Flaps DOWN (cualquier posición): +1.1 g y 1 g",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -209,8 +209,8 @@
       },
       {
         "id": "D",
-        "text": "Flaps UP: +13.18 g y -11.62 g; Flaps DOWN (cualquier posición): +1.1 g y 1 g",
-        "is_correct": false
+        "text": "Flaps UP: +3.8 g y -1.52 g; Flaps DOWN (cualquier posición): +3.0 g y 0 g",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -231,8 +231,8 @@
     "options": [
       {
         "id": "A",
-        "text": "2700 RPM continuo",
-        "is_correct": true
+        "text": "2300 RPM continuo",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -241,13 +241,13 @@
       },
       {
         "id": "C",
-        "text": "2300 RPM continuo",
+        "text": "2900 RPM con límite de 5 minutos",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "2900 RPM con límite de 5 minutos",
-        "is_correct": false
+        "text": "2700 RPM continuo",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -268,13 +268,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Mínimo (línea roja): 25 PSI; Rango normal (arco verde): 60 a 90 PSI; Máximo (línea roja): 115 PSI",
-        "is_correct": true
+        "text": "Mínimo (línea roja): 31 PSI; Rango normal (arco verde): 90 a 120 PSI; Máximo (línea roja): 145 PSI",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Mínimo (línea roja): 27 PSI; Rango normal (arco verde): 70 a 100 PSI; Máximo (línea roja): 125 PSI",
-        "is_correct": false
+        "text": "Mínimo (línea roja): 25 PSI; Rango normal (arco verde): 60 a 90 PSI; Máximo (línea roja): 115 PSI",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -283,7 +283,7 @@
       },
       {
         "id": "D",
-        "text": "Mínimo (línea roja): 31 PSI; Rango normal (arco verde): 90 a 120 PSI; Máximo (línea roja): 145 PSI",
+        "text": "Mínimo (línea roja): 27 PSI; Rango normal (arco verde): 70 a 100 PSI; Máximo (línea roja): 125 PSI",
         "is_correct": false
       }
     ],
@@ -305,8 +305,8 @@
     "options": [
       {
         "id": "A",
-        "text": "245°F (118°C)",
-        "is_correct": true
+        "text": "260°F (127°C)",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -315,8 +315,8 @@
       },
       {
         "id": "C",
-        "text": "260°F (127°C)",
-        "is_correct": false
+        "text": "245°F (118°C)",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -342,18 +342,18 @@
     "options": [
       {
         "id": "A",
-        "text": "En el despegue, ascenso inicial, aproximación y aterrizaje para garantizar alimentación ininterrumpida por gravedad",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Únicamente durante el vuelo de crucero nivelado en altitudes superiores a diez mil pies",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Solamente durante el estacionamiento nocturno con el avión amarrado en la plataforma de tierra",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En el despegue, ascenso inicial, aproximación y aterrizaje para garantizar alimentación ininterrumpida por gravedad",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -380,8 +380,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Maniobras acrobáticas de cualquier tipo, barrenas intencionadas (intentional spins) y virajes escarpados con más de 60° de alabeo",
-        "is_correct": true
+        "text": "Maniobras acrobáticas de cualquier tipo, barrenas intencionadas (intentional spins) y virajes escarpados con más de 50° de alabeo",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -395,8 +395,8 @@
       },
       {
         "id": "D",
-        "text": "Maniobras acrobáticas de cualquier tipo, barrenas intencionadas (intentional spins) y virajes escarpados con más de 50° de alabeo",
-        "is_correct": false
+        "text": "Maniobras acrobáticas de cualquier tipo, barrenas intencionadas (intentional spins) y virajes escarpados con más de 60° de alabeo",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -417,22 +417,22 @@
     "options": [
       {
         "id": "A",
+        "text": "18 nudos (33 km/h)",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "15 nudos (28 km/h)",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "20 nudos (37 km/h)",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "12 nudos (22 km/h)",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "18 nudos (33 km/h)",
+        "text": "12 nudos (22 km/h)",
         "is_correct": false
       }
     ],
@@ -455,22 +455,22 @@
     "options": [
       {
         "id": "A",
+        "text": "Solo se prohíbe el vuelo en engelamiento severo, manteniendo el cumplimiento de las limitaciones operacionales del manual",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "El vuelo en condiciones de engelamiento conocido o pronosticado está totalmente PROHIBIDO",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "Se autoriza el vuelo en engelamiento ligero si se conecta el calefactor de pitot (Pitot Heat)",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Se autoriza el vuelo en engelamiento hasta 10.000 pies, requiriendo autorización expresa del comandante y verificación de pesos",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "Solo se prohíbe el vuelo en engelamiento severo, manteniendo el cumplimiento de las limitaciones operacionales del manual",
+        "text": "Se autoriza el vuelo en engelamiento hasta 10.000 pies, requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       }
     ],
@@ -492,8 +492,8 @@
     "options": [
       {
         "id": "A",
-        "text": "4.5 a 5.4 pulgadas de mercurio (inHg)",
-        "is_correct": true
+        "text": "3.0 a 4.0 pulgadas de mercurio (inHg)",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -502,12 +502,12 @@
       },
       {
         "id": "C",
-        "text": "6.0 a 8.0 pulgadas de mercurio (inHg)",
-        "is_correct": false
+        "text": "4.5 a 5.4 pulgadas de mercurio (inHg)",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "3.0 a 4.0 pulgadas de mercurio (inHg)",
+        "text": "6.0 a 8.0 pulgadas de mercurio (inHg)",
         "is_correct": false
       }
     ],
@@ -530,22 +530,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Peso máximo de 2.000 lbs, flaps UP, asientos traseros vacíos y compartimento de equipaje completamente desocupado",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Peso máximo de 2.300 lbs con cuatro pasajeros adultos a bordo y flaps a cuarenta grados desplegados",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Peso máximo de 2.000 lbs, flaps UP, asientos traseros vacíos y compartimento de equipaje completamente desocupado",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "Se autorizan con cualquier peso siempre que el centro de gravedad se encuentre en el límite más retrasado",
+        "text": "Deben realizarse exclusivamente de noche con el piloto automático conectado en modo de alabeo",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Deben realizarse exclusivamente de noche con el piloto automático conectado en modo de alabeo",
+        "text": "Se autorizan con cualquier peso siempre que el centro de gravedad se encuentre en el límite más retrasado",
         "is_correct": false
       }
     ],
@@ -567,22 +567,22 @@
     "options": [
       {
         "id": "A",
-        "text": "44 KIAS (33 KCAS)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "50 KIAS (44 KCAS)",
+        "text": "40 KIAS (30 KCAS)",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "55 KIAS (50 KCAS)",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "44 KIAS (33 KCAS)",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "40 KIAS (30 KCAS)",
+        "text": "50 KIAS (44 KCAS)",
         "is_correct": false
       }
     ],
@@ -604,22 +604,22 @@
     "options": [
       {
         "id": "A",
-        "text": "50 KIAS (44 KCAS)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "44 KIAS (33 KCAS)",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "50 KIAS (44 KCAS)",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "58 KIAS (52 KCAS)",
+        "text": "65 KIAS (58 KCAS)",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "65 KIAS (58 KCAS)",
+        "text": "58 KIAS (52 KCAS)",
         "is_correct": false
       }
     ],
@@ -641,22 +641,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Máximo 30 segundos continuos, seguido de un periodo de enfriamiento de al menos 2 minutos antes de un nuevo intento",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Máximo 35 segundos continuos, seguido de un periodo de enfriamiento de al menos 1 minutos antes de un nuevo intento",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Máximo 25 segundos continuos, seguido de un periodo de enfriamiento de al menos 12 minutos antes de un nuevo intento",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Máximo 40 segundos continuos, seguido de un periodo de enfriamiento de al menos 1 minutos antes de un nuevo intento",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Máximo 30 segundos continuos, seguido de un periodo de enfriamiento de al menos 2 minutos antes de un nuevo intento",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Máximo 35 segundos continuos, seguido de un periodo de enfriamiento de al menos 1 minutos antes de un nuevo intento",
         "is_correct": false
       }
     ],
@@ -678,22 +678,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Caída máxima en cualquier magneto: 125 RPM (o 175 RPM según modelo); Diferencia máxima entre magnetos: 50 RPM",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Caída máxima en cualquier magneto: 135 RPM (o 185 RPM según modelo); Diferencia máxima entre magnetos: 52 RPM",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Caída máxima en cualquier magneto: 125 RPM (o 175 RPM según modelo); Diferencia máxima entre magnetos: 50 RPM",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "Caída máxima en cualquier magneto: 105 RPM (o 155 RPM según modelo); Diferencia máxima entre magnetos: 46 RPM",
+        "text": "Caída máxima en cualquier magneto: 155 RPM (o 205 RPM según modelo); Diferencia máxima entre magnetos: 56 RPM",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Caída máxima en cualquier magneto: 155 RPM (o 205 RPM según modelo); Diferencia máxima entre magnetos: 56 RPM",
+        "text": "Caída máxima en cualquier magneto: 105 RPM (o 155 RPM según modelo); Diferencia máxima entre magnetos: 46 RPM",
         "is_correct": false
       }
     ],
@@ -716,23 +716,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Aproximadamente 31.5 Voltios",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Aproximadamente 24.0 Voltios",
+        "text": "Aproximadamente 28.5 Voltios asegurando la monitorización continua por parte de la tripulación",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Aproximadamente 40.0 Voltios sin modificar la configuración de los mandos principales de vuelo",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Aproximadamente 28.5 Voltios asegurando la monitorización continua por parte de la tripulación",
+        "id": "C",
+        "text": "Aproximadamente 24.0 Voltios",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aproximadamente 31.5 Voltios",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -759,7 +759,7 @@
       },
       {
         "id": "B",
-        "text": "Peso en rampa: 2.450 libras | Peso máximo de despegue: 2.400 libras",
+        "text": "Peso en rampa: 2.550 libras | Peso máximo de despegue: 2.500 libras",
         "is_correct": false
       },
       {
@@ -769,7 +769,7 @@
       },
       {
         "id": "D",
-        "text": "Peso en rampa: 2.550 libras | Peso máximo de despegue: 2.500 libras",
+        "text": "Peso en rampa: 2.450 libras | Peso máximo de despegue: 2.400 libras",
         "is_correct": false
       }
     ],
@@ -791,22 +791,22 @@
     "options": [
       {
         "id": "A",
-        "text": "+3.8 g positivos y -1.52 g negativos con flaps recogidos",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "+4.4 g positivos y -1.76 g negativos con flaps recogidos",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "+6.0 g positivos y -3.0 g negativos con flaps recogidos",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "+3.8 g positivos y -1.52 g negativos con flaps recogidos",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "+2.5 g positivos y -1.0 g negativos con flaps recogidos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "+4.4 g positivos y -1.76 g negativos con flaps recogidos",
         "is_correct": false
       }
     ],
@@ -828,22 +828,22 @@
     "options": [
       {
         "id": "A",
-        "text": "+4.4 g positivos y -1.76 g negativos en configuración limpia",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "+3.8 g positivos y -1.52 g negativos en configuración limpia",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "+5.5 g positivos y -2.2 g negativos en configuración limpia",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "+4.4 g positivos y -1.76 g negativos en configuración limpia",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "+3.0 g positivos y 0.0 g negativos en configuración limpia",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "+3.8 g positivos y -1.52 g negativos en configuración limpia",
         "is_correct": false
       }
     ],
@@ -865,8 +865,8 @@
     "options": [
       {
         "id": "A",
-        "text": "2.000 libras (907 kg) de peso total con asientos traseros y maletero vacíos",
-        "is_correct": true
+        "text": "2.150 libras (975 kg) de peso total con piloto y copiloto a bordo",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -875,12 +875,12 @@
       },
       {
         "id": "C",
-        "text": "1.800 libras (816 kg) de peso total con combustible a mitad de capacidad",
-        "is_correct": false
+        "text": "2.000 libras (907 kg) de peso total con asientos traseros y maletero vacíos",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "2.150 libras (975 kg) de peso total con piloto y copiloto a bordo",
+        "text": "1.800 libras (816 kg) de peso total con combustible a mitad de capacidad",
         "is_correct": false
       }
     ],
@@ -907,12 +907,12 @@
       },
       {
         "id": "B",
-        "text": "Barrenas de hasta dos vueltas y pérdidas con motor al ralentí",
+        "text": "Virajes escarpados de más de setenta grados de inclinación alar",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Virajes escarpados de más de setenta grados de inclinación alar",
+        "text": "Barrenas de hasta dos vueltas y pérdidas con motor al ralentí",
         "is_correct": false
       },
       {
@@ -944,7 +944,7 @@
       },
       {
         "id": "B",
-        "text": "Toneles rápidos, lazos acrobáticos y vuelo invertido continuado",
+        "text": "Vuelo sin compensador y aterrizajes con factor de carga de cinco g",
         "is_correct": false
       },
       {
@@ -954,7 +954,7 @@
       },
       {
         "id": "D",
-        "text": "Vuelo sin compensador y aterrizajes con factor de carga de cinco g",
+        "text": "Toneles rápidos, lazos acrobáticos y vuelo invertido continuado",
         "is_correct": false
       }
     ],
@@ -1013,22 +1013,22 @@
     "options": [
       {
         "id": "A",
-        "text": "160 nudos indicados señalizada mediante una línea radial roja en el cuadrante",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "140 nudos indicados señalizada mediante el inicio del arco amarillo",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "180 nudos indicados señalizada mediante una marca triangular blanca",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "160 nudos indicados señalizada mediante una línea radial roja en el cuadrante",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "128 nudos indicados señalizada mediante el final del arco verde",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "140 nudos indicados señalizada mediante el inicio del arco amarillo",
         "is_correct": false
       }
     ],
@@ -1050,23 +1050,23 @@
     "options": [
       {
         "id": "A",
-        "text": "128 nudos indicados correspondiente al límite entre el arco verde y amarillo",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "97 nudos indicados correspondiente al inicio del arco verde",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "150 nudos indicados correspondiente a la mitad del arco amarillo",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "85 nudos indicados correspondiente al límite superior del arco blanco",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "97 nudos indicados correspondiente al inicio del arco verde",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "128 nudos indicados correspondiente al límite entre el arco verde y amarillo",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1092,12 +1092,12 @@
       },
       {
         "id": "B",
-        "text": "100 nudos indicados correspondiente al límite inferior del arco amarillo",
+        "text": "70 nudos indicados correspondiente a la mitad del arco verde",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "70 nudos indicados correspondiente a la mitad del arco verde",
+        "text": "100 nudos indicados correspondiente al límite inferior del arco amarillo",
         "is_correct": false
       },
       {
@@ -1124,23 +1124,23 @@
     "options": [
       {
         "id": "A",
-        "text": "40 nudos indicados (33 nudos calibrados) en el límite inferior del arco blanco",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "47 nudos indicados (44 nudos calibrados) en el límite inferior del arco verde",
+        "text": "30 nudos indicados (25 nudos calibrados) sin corrección de posición",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "55 nudos indicados (50 nudos calibrados) en la marca de rotación",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "30 nudos indicados (25 nudos calibrados) sin corrección de posición",
+        "id": "C",
+        "text": "47 nudos indicados (44 nudos calibrados) en el límite inferior del arco verde",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "40 nudos indicados (33 nudos calibrados) en el límite inferior del arco blanco",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1166,7 +1166,7 @@
       },
       {
         "id": "B",
-        "text": "40 nudos indicados (33 nudos calibrados) en el límite inferior del arco blanco",
+        "text": "52 nudos indicados (48 nudos calibrados) en la velocidad de planeo",
         "is_correct": false
       },
       {
@@ -1176,7 +1176,7 @@
       },
       {
         "id": "D",
-        "text": "52 nudos indicados (48 nudos calibrados) en la velocidad de planeo",
+        "text": "40 nudos indicados (33 nudos calibrados) en el límite inferior del arco blanco",
         "is_correct": false
       }
     ],
@@ -1198,13 +1198,13 @@
     "options": [
       {
         "id": "A",
-        "text": "60 a 90 psi de presión continua de aceite en régimen operativo",
-        "is_correct": true
+        "text": "25 a 60 psi de presión continua de aceite en régimen operativo",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "25 a 60 psi de presión continua de aceite en régimen operativo",
-        "is_correct": false
+        "text": "60 a 90 psi de presión continua de aceite en régimen operativo",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1240,7 +1240,7 @@
       },
       {
         "id": "B",
-        "text": "200 grados Fahrenheit (93 grados centígrados) marcada por el arco verde",
+        "text": "220 grados Fahrenheit (104 grados centígrados) marcada por el punto medio",
         "is_correct": false
       },
       {
@@ -1250,7 +1250,7 @@
       },
       {
         "id": "D",
-        "text": "220 grados Fahrenheit (104 grados centígrados) marcada por el punto medio",
+        "text": "200 grados Fahrenheit (93 grados centígrados) marcada por el arco verde",
         "is_correct": false
       }
     ],
@@ -1272,8 +1272,8 @@
     "options": [
       {
         "id": "A",
-        "text": "2.200 a 2.700 RPM correspondiente al arco verde del instrumento",
-        "is_correct": true
+        "text": "2.400 a 3.000 RPM correspondiente al arco verde del instrumento",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1282,13 +1282,13 @@
       },
       {
         "id": "C",
-        "text": "2.400 a 3.000 RPM correspondiente al arco verde del instrumento",
+        "text": "2.000 a 2.500 RPM correspondiente al arco verde del instrumento",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "2.000 a 2.500 RPM correspondiente al arco verde del instrumento",
-        "is_correct": false
+        "text": "2.200 a 2.700 RPM correspondiente al arco verde del instrumento",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1314,7 +1314,7 @@
       },
       {
         "id": "B",
-        "text": "400 grados Fahrenheit (204 grados centígrados) de límite máximo",
+        "text": "450 grados Fahrenheit (232 grados centígrados) de límite máximo",
         "is_correct": false
       },
       {
@@ -1324,7 +1324,7 @@
       },
       {
         "id": "D",
-        "text": "450 grados Fahrenheit (232 grados centígrados) de límite máximo",
+        "text": "400 grados Fahrenheit (204 grados centígrados) de límite máximo",
         "is_correct": false
       }
     ],
@@ -1383,8 +1383,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Límite delantero: 38.5 pulgadas | Límite trasero: 47.3 pulgadas tras el datum",
-        "is_correct": true
+        "text": "Límite delantero: 32.5 pulgadas | Límite trasero: 45.0 pulgadas tras el datum",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1393,12 +1393,12 @@
       },
       {
         "id": "C",
-        "text": "Límite delantero: 40.0 pulgadas | Límite trasero: 50.0 pulgadas tras el datum",
-        "is_correct": false
+        "text": "Límite delantero: 38.5 pulgadas | Límite trasero: 47.3 pulgadas tras el datum",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "Límite delantero: 32.5 pulgadas | Límite trasero: 45.0 pulgadas tras el datum",
+        "text": "Límite delantero: 40.0 pulgadas | Límite trasero: 50.0 pulgadas tras el datum",
         "is_correct": false
       }
     ],
@@ -1420,22 +1420,22 @@
     "options": [
       {
         "id": "A",
+        "text": "En el centro geométrico del eje del tren de aterrizaje principal",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "En la cara frontal inferior del mamparo parallamas del motor",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "En el vértice exterior del cono de la hélice de la aeronave",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "En el borde de ataque del ala en la unión con el fuselaje",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "En el centro geométrico del eje del tren de aterrizaje principal",
+        "text": "En el borde de ataque del ala en la unión con el fuselaje",
         "is_correct": false
       }
     ],
@@ -1457,22 +1457,22 @@
     "options": [
       {
         "id": "A",
-        "text": "14.200 pies de altitud de presión en condiciones de atmósfera estándar",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "18.000 pies de altitud de presión en condiciones de atmósfera estándar",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "11.500 pies de altitud de presión en condiciones de atmósfera estándar",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "14.200 pies de altitud de presión en condiciones de atmósfera estándar",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "16.000 pies de altitud de presión en condiciones de atmósfera estándar",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "18.000 pies de altitud de presión en condiciones de atmósfera estándar",
         "is_correct": false
       }
     ],

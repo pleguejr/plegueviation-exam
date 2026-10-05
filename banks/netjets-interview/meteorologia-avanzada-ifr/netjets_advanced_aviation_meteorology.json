@@ -7,23 +7,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Initial performance-increasing headwind with pitch-up and airspeed surge, followed immediately by a strong localized downdraft, and culminating in a severe performance-decreasing tailwind causing catastrophic loss of airspeed and altitude.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Steady tailwind throughout the entire approach with constant rate of descent.",
+        "text": "Immediate loss of all pitot pressure without changes in rate of descent.",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Gradual continuous increase in headwind from outer marker down to touchdown.",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Immediate loss of all pitot pressure without changes in rate of descent.",
+        "id": "C",
+        "text": "Steady tailwind throughout the entire approach with constant rate of descent.",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Initial performance-increasing headwind with pitch-up and airspeed surge, followed immediately by a strong localized downdraft, and culminating in a severe performance-decreasing tailwind causing catastrophic loss of airspeed and altitude.",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -44,8 +44,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Formed in warm-nose temperature inversions or deep maritime clouds; visually identified by ice accretion aft of the heated leading-edge anti-ice boots/panels and on cockpit side windows.",
-        "is_correct": true
+        "text": "SLD occurs exclusively in clear air above the tropopause.",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -59,8 +59,8 @@
       },
       {
         "id": "D",
-        "text": "SLD occurs exclusively in clear air above the tropopause.",
-        "is_correct": false
+        "text": "Formed in warm-nose temperature inversions or deep maritime clouds; visually identified by ice accretion aft of the heated leading-edge anti-ice boots/panels and on cockpit side windows.",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -81,22 +81,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Type I is an unthickened, low-viscosity fluid used primarily for de-icing (very short HOT); Type IV is a thickened, pseudoplastic fluid designed for anti-icing on the ground with extended Holdover Times that shears off during takeoff roll.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Type I is applied cold and remains on the aircraft during the entire flight.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Type IV is toxic to turbine engines and prohibited on corporate jets.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "Type I is an unthickened, low-viscosity fluid used primarily for de-icing (very short HOT); Type IV is a thickened, pseudoplastic fluid designed for anti-icing on the ground with extended Holdover Times that shears off during takeoff roll.",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "Type I fluid has a green color and 4-hour holdover protection.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Type I is applied cold and remains on the aircraft during the entire flight.",
         "is_correct": false
       }
     ],
@@ -123,17 +123,17 @@
       },
       {
         "id": "B",
-        "text": "In the exact center of the jet stream core where wind velocity is maximum.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Exclusively below 10,000 ft near sea level.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "On the equatorial warm side at least 500 NM away from the core.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "In the exact center of the jet stream core where wind velocity is maximum.",
         "is_correct": false
       }
     ],
@@ -155,8 +155,8 @@
     "options": [
       {
         "id": "A",
-        "text": "True altitude is lower than indicated altitude in cold air columns; apply approx 4% height correction per 10°C temperature deviation below ISA to all minimum approach altitudes above aerodrome level.",
-        "is_correct": true
+        "text": "Cold temperature corrections apply only to cruise levels in RVSM airspace.",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -165,8 +165,8 @@
       },
       {
         "id": "C",
-        "text": "Cold temperature corrections apply only to cruise levels in RVSM airspace.",
-        "is_correct": false
+        "text": "True altitude is lower than indicated altitude in cold air columns; apply approx 4% height correction per 10°C temperature deviation below ISA to all minimum approach altitudes above aerodrome level.",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -192,23 +192,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Stable air layer across mountain ridge, wind direction within 30° perpendicular to ridge with speed increasing with altitude (>25-30 kt at ridge crest); Rotor Clouds (Roll clouds) formed beneath the wave crests contain extreme turbulence.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Highly unstable maritime air with surface calm winds and cirrus clouds.",
+        "text": "Low stratus fog burning off during morning solar heating.",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Thunderstorm gust fronts moving over flat desert terrain.",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Low stratus fog burning off during morning solar heating.",
+        "id": "C",
+        "text": "Highly unstable maritime air with surface calm winds and cirrus clouds.",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Stable air layer across mountain ridge, wind direction within 30° perpendicular to ridge with speed increasing with altitude (>25-30 kt at ridge crest); Rotor Clouds (Roll clouds) formed beneath the wave crests contain extreme turbulence.",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -229,22 +229,22 @@
     "options": [
       {
         "id": "A",
-        "text": "St. Elmo's fire on windshield, sulfurous acrid odor, smoky cabin haze, engine surging/torching; immediate action is to disconnect autothrottle, reduce thrust to idle, turn 180° to exit the cloud, start APU, and descend.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Immediate weather radar red echo returns; accelerate to MMO to climb above the cloud.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Full deflection of pitot tubes requiring maximum thrust application.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Deploy landing gear immediately to increase airframe drag.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "St. Elmo's fire on windshield, sulfurous acrid odor, smoky cabin haze, engine surging/torching; immediate action is to disconnect autothrottle, reduce thrust to idle, turn 180° to exit the cloud, start APU, and descend.",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Immediate weather radar red echo returns; accelerate to MMO to climb above the cloud.",
         "is_correct": false
       }
     ],
@@ -276,12 +276,12 @@
       },
       {
         "id": "C",
-        "text": "BECMG is only used for wind direction changes greater than 180 degrees.",
+        "text": "Under EASA, TEMPO conditions can be completely ignored during alternate planning.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Under EASA, TEMPO conditions can be completely ignored during alternate planning.",
+        "text": "BECMG is only used for wind direction changes greater than 180 degrees.",
         "is_correct": false
       }
     ],
@@ -303,23 +303,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Radiation fog forms on clear, calm nights (2-5 kt light breeze) over land via terrestrial radiative cooling; Advection fog forms when warm, moist air moves horizontally over a colder land/sea surface and requires moderate winds (5-15 kt).",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Radiation fog only forms over open oceans in summer with gale-force winds.",
+        "text": "Both fog types require surface temperatures below -20°C.",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Advection fog burns off within 10 minutes of sunrise under all circumstances.",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Both fog types require surface temperatures below -20°C.",
+        "id": "C",
+        "text": "Radiation fog only forms over open oceans in summer with gale-force winds.",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Radiation fog forms on clear, calm nights (2-5 kt light breeze) over land via terrestrial radiative cooling; Advection fog forms when warm, moist air moves horizontally over a colder land/sea surface and requires moderate winds (5-15 kt).",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -340,22 +340,22 @@
     "options": [
       {
         "id": "A",
+        "text": "Planned airport snow removal operations.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Severe turbulence (SEV TURB), severe icing (SEV ICE), severe mountain waves, thunderstorms (EMBD/FRQ/SQL TS with or without hail), heavy duststorms, and volcanic ash clouds (VA).",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "Routine light rain and scattered cumulus clouds below 5,000 ft.",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Surface temperature variations of more than 2°C per hour.",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "Planned airport snow removal operations.",
+        "text": "Surface temperature variations of more than 2°C per hour.",
         "is_correct": false
       }
     ],
@@ -382,17 +382,17 @@
       },
       {
         "id": "B",
-        "text": "Keep the antenna tilted +10° upwards to detect only dry cirrus clouds.",
+        "text": "Turn off the radar above FL300 because ice crystals cannot damage turbine engines.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Always operate radar on maximum manual gain without ground clutter.",
+        "text": "Keep the antenna tilted +10° upwards to detect only dry cirrus clouds.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Turn off the radar above FL300 because ice crystals cannot damage turbine engines.",
+        "text": "Always operate radar on maximum manual gain without ground clutter.",
         "is_correct": false
       }
     ],
@@ -419,7 +419,7 @@
       },
       {
         "id": "B",
-        "text": "Heavy rime ice accretion on the radome causing immediate pitot static blockage.",
+        "text": "Ice crystal accumulation strictly on trailing edge landing flaps.",
         "is_correct": false
       },
       {
@@ -429,7 +429,7 @@
       },
       {
         "id": "D",
-        "text": "Ice crystal accumulation strictly on trailing edge landing flaps.",
+        "text": "Heavy rime ice accretion on the radome causing immediate pitot static blockage.",
         "is_correct": false
       }
     ],
@@ -456,17 +456,17 @@
       },
       {
         "id": "B",
-        "text": "Estimated visually by the tower controller looking at distant airport boundary fences.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Measured exclusively by airborne pilot reports (PIREPs) during flare.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Calculated by barometric pressure differences between runway ends.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Estimated visually by the tower controller looking at distant airport boundary fences.",
         "is_correct": false
       }
     ],
@@ -488,23 +488,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Higher and colder over the Equator (approx 55,000 ft / -80°C); lower and warmer over the Poles (approx 25,000-30,000 ft / -50°C), creating the upper-level temperature gradient that drives jet streams.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Uniform 36,000 ft height across the entire globe with constant -56.5°C temperature.",
+        "text": "Tropopause height is completely independent of latitude and season.",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Higher over the Poles (60,000 ft) and lower over the Equator (20,000 ft).",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Tropopause height is completely independent of latitude and season.",
+        "id": "C",
+        "text": "Uniform 36,000 ft height across the entire globe with constant -56.5°C temperature.",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Higher and colder over the Equator (approx 55,000 ft / -80°C); lower and warmer over the Poles (approx 25,000-30,000 ft / -50°C), creating the upper-level temperature gradient that drives jet streams.",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -525,8 +525,8 @@
     "options": [
       {
         "id": "A",
-        "text": "A non-frontal, continuous line of active severe thunderstorms advancing rapidly ahead of a cold front, accompanied by violent multi-directional windshear, microbursts, extreme turbulence, and large hail.",
-        "is_correct": true
+        "text": "A stationary stratus layer containing light continuous drizzle.",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -535,13 +535,13 @@
       },
       {
         "id": "C",
-        "text": "A stationary stratus layer containing light continuous drizzle.",
+        "text": "A cirrus cloud band indicating jet stream dissipation.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "A cirrus cloud band indicating jet stream dissipation.",
-        "is_correct": false
+        "text": "A non-frontal, continuous line of active severe thunderstorms advancing rapidly ahead of a cold front, accompanied by violent multi-directional windshear, microbursts, extreme turbulence, and large hail.",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -562,8 +562,8 @@
     "options": [
       {
         "id": "A",
-        "text": "QNH: Altimeter subscale set to sea-level pressure (reads airport elevation on ground); QFE: Set to station pressure (reads zero on runway threshold); QNE: Standard 1013.25 hPa / 29.92 inHg (reads Flight Levels).",
-        "is_correct": true
+        "text": "QNH and QFE are identical under ISA standard atmospheric conditions.",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -577,8 +577,8 @@
       },
       {
         "id": "D",
-        "text": "QNH and QFE are identical under ISA standard atmospheric conditions.",
-        "is_correct": false
+        "text": "QNH: Altimeter subscale set to sea-level pressure (reads airport elevation on ground); QFE: Set to station pressure (reads zero on runway threshold); QNE: Standard 1013.25 hPa / 29.92 inHg (reads Flight Levels).",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -599,8 +599,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Between 0°C and -20°C (with the most hazardous Clear Ice occurring between 0°C and -10°C in high liquid water content clouds).",
-        "is_correct": true
+        "text": "Exclusively at temperatures above +10°C.",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -609,13 +609,13 @@
       },
       {
         "id": "C",
-        "text": "Exclusively at temperatures above +10°C.",
+        "text": "Only in dry clear air without visible moisture.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Only in dry clear air without visible moisture.",
-        "is_correct": false
+        "text": "Between 0°C and -20°C (with the most hazardous Clear Ice occurring between 0°C and -10°C in high liquid water content clouds).",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -636,8 +636,8 @@
     "options": [
       {
         "id": "A",
-        "text": "An area of isolated embedded cumulonimbus thunderstorm clouds with tops reaching FL450 and bases below the lower chart limit (FL250), associated with severe turbulence and severe icing.",
-        "is_correct": true
+        "text": "A zone of permanent volcanic ash cloud extending to FL450.",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -646,12 +646,12 @@
       },
       {
         "id": "C",
-        "text": "A standard RVSM airway route closed due to traffic congestion.",
-        "is_correct": false
+        "text": "An area of isolated embedded cumulonimbus thunderstorm clouds with tops reaching FL450 and bases below the lower chart limit (FL250), associated with severe turbulence and severe icing.",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "A zone of permanent volcanic ash cloud extending to FL450.",
+        "text": "A standard RVSM airway route closed due to traffic congestion.",
         "is_correct": false
       }
     ],
@@ -673,8 +673,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Visibility ≥ 10 km, no clouds below 5,000 ft or below minimum sector altitude (whichever is higher), no CB or TCU clouds at any level, and no significant weather phenomena.",
-        "is_correct": true
+        "text": "Runway is completely dry with braking action reported good.",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -688,8 +688,8 @@
       },
       {
         "id": "D",
-        "text": "Runway is completely dry with braking action reported good.",
-        "is_correct": false
+        "text": "Visibility ≥ 10 km, no clouds below 5,000 ft or below minimum sector altitude (whichever is higher), no CB or TCU clouds at any level, and no significant weather phenomena.",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -710,22 +710,22 @@
     "options": [
       {
         "id": "A",
-        "text": "A sharp speed and directional wind shear (Low-Level Jet) often develops across the top of the inversion layer, causing abrupt airspeed loss or pitch changes when climbing through the boundary.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Inversion layers cause immediate flameout of the APU.",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "A sharp speed and directional wind shear (Low-Level Jet) often develops across the top of the inversion layer, causing abrupt airspeed loss or pitch changes when climbing through the boundary.",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "Inversions prevent pitot heat from functioning.",
+        "text": "The aircraft cannot engage the autopilot inside an inversion.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "The aircraft cannot engage the autopilot inside an inversion.",
+        "text": "Inversions prevent pitot heat from functioning.",
         "is_correct": false
       }
     ],
@@ -747,23 +747,23 @@
     "options": [
       {
         "id": "A",
-        "text": "An aircraft shall not initiate takeoff roll when frost, ice, slush, or snow is adhering to wings, control surfaces, engine inlets, or other critical surfaces (unless specifically permitted by the AFM for frost on underside of wing tanks).",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "The aircraft cabin must be cleaned and disinfected before boarding VIP passengers.",
+        "text": "Clean aircraft concept only applies when operating in Class A airspace.",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Up to 5 mm of dry snow is acceptable on the wing leading edges without de-icing.",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Clean aircraft concept only applies when operating in Class A airspace.",
+        "id": "C",
+        "text": "The aircraft cabin must be cleaned and disinfected before boarding VIP passengers.",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "An aircraft shall not initiate takeoff roll when frost, ice, slush, or snow is adhering to wings, control surfaces, engine inlets, or other critical surfaces (unless specifically permitted by the AFM for frost on underside of wing tanks).",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -784,12 +784,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Approx 22.5 knots crosswind based on peak gusts (sin 40° × 35 kt ≈ 0.643 × 35 = 22.5 kt).",
-        "is_correct": true
+        "text": "10 knots crosswind.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "10 knots crosswind.",
+        "text": "5 knots crosswind.",
         "is_correct": false
       },
       {
@@ -799,8 +799,8 @@
       },
       {
         "id": "D",
-        "text": "5 knots crosswind.",
-        "is_correct": false
+        "text": "Approx 22.5 knots crosswind based on peak gusts (sin 40° × 35 kt ≈ 0.643 × 35 = 22.5 kt).",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -858,22 +858,22 @@
     "options": [
       {
         "id": "A",
+        "text": "NOSIG is valid for 24 hours without need for a TAF.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "'No Significant Change' expected in landing weather conditions (visibility, ceiling, weather) during the 2-hour period immediately following the observation time.",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "'No Signal' from the ILS localizer.",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "The airport is operating with non-standard IFR separation.",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "NOSIG is valid for 24 hours without need for a TAF.",
+        "text": "The airport is operating with non-standard IFR separation.",
         "is_correct": false
       }
     ],
@@ -895,8 +895,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Wake vortices descend at 400-500 ft/min and level off approx 500-1,000 ft below the flight path; minimum radar separation behind a Super is 6-8 NM (and 4-6 NM behind Heavy) depending on follower category.",
-        "is_correct": true
+        "text": "Separation behind heavy jets is always 1 NM for corporate aircraft.",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -905,13 +905,13 @@
       },
       {
         "id": "C",
-        "text": "Separation behind heavy jets is always 1 NM for corporate aircraft.",
+        "text": "Wake turbulence only exists when aircraft land with thrust reversers deployed.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Wake turbulence only exists when aircraft land with thrust reversers deployed.",
-        "is_correct": false
+        "text": "Wake vortices descend at 400-500 ft/min and level off approx 500-1,000 ft below the flight path; minimum radar separation behind a Super is 6-8 NM (and 4-6 NM behind Heavy) depending on follower category.",
+        "is_correct": true
       }
     ],
     "explanation": {

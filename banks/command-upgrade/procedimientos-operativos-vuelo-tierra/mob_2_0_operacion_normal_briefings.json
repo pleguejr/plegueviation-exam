@@ -7,8 +7,8 @@
     "options": [
       {
         "id": "A",
-        "text": "R: Route, E: Engine Start & Pushback, T: Taxi, S: SID, E: Emergency / EOSID",
-        "is_correct": true
+        "text": "R: Radio, E: Equipment, T: Temperature, S: Squawk, E: Evacuation",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -22,8 +22,8 @@
       },
       {
         "id": "D",
-        "text": "R: Radio, E: Equipment, T: Temperature, S: Squawk, E: Evacuation",
-        "is_correct": false
+        "text": "R: Route, E: Engine Start & Pushback, T: Taxi, S: SID, E: Emergency / EOSID",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -49,17 +49,17 @@
       },
       {
         "id": "B",
-        "text": "Engine Anti-Ice status",
+        "text": "Estimated Time of Arrival",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Emergency frequency selection",
+        "text": "Engine Anti-Ice status",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Estimated Time of Arrival",
+        "text": "Emergency frequency selection",
         "is_correct": false
       }
     ],
@@ -81,8 +81,8 @@
     "options": [
       {
         "id": "A",
-        "text": "PM: 'EIGHTY KNOTS' -> PF: 'CHECKED' tras verificar los anemómetros primarios",
-        "is_correct": true
+        "text": "PM: 'CROSSCHECK' -> PF: 'V1'",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -91,12 +91,12 @@
       },
       {
         "id": "C",
-        "text": "PM: 'EIGHTY KNOTS' -> PF: 'ROTATE'",
-        "is_correct": false
+        "text": "PM: 'EIGHTY KNOTS' -> PF: 'CHECKED' tras verificar los anemómetros primarios",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "PM: 'CROSSCHECK' -> PF: 'V1'",
+        "text": "PM: 'EIGHTY KNOTS' -> PF: 'ROTATE'",
         "is_correct": false
       }
     ],
@@ -118,22 +118,22 @@
     "options": [
       {
         "id": "A",
-        "text": "1.000 ft AGL en IMC y 500 ft AGL en VMC",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "500 ft AGL en IMC y 300 ft AGL en VMC",
+        "text": "Solo en la toma de contacto con la pista",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "1.500 ft AGL en ambas condiciones",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "1.000 ft AGL en IMC y 500 ft AGL en VMC",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Solo en la toma de contacto con la pista",
+        "text": "500 ft AGL en IMC y 300 ft AGL en VMC",
         "is_correct": false
       }
     ],

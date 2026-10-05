@@ -7,8 +7,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Por la velocidad indicada en el umbral (Vat = 1.3 x Vso o 1.23 x Vs1g al MLW); el E195-E2 se clasifica como Categoría C (121 a 140 kt)",
-        "is_correct": true
+        "text": "Por la envergadura alar total; el E195-E2 se clasifica como Categoría D (141 a 165 kt) de forma permanente",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -22,8 +22,8 @@
       },
       {
         "id": "D",
-        "text": "Por la envergadura alar total; el E195-E2 se clasifica como Categoría D (141 a 165 kt) de forma permanente",
-        "is_correct": false
+        "text": "Por la velocidad indicada en el umbral (Vat = 1.3 x Vso o 1.23 x Vs1g al MLW); el E195-E2 se clasifica como Categoría C (121 a 140 kt)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -44,22 +44,22 @@
     "options": [
       {
         "id": "A",
-        "text": "RVR 125 m (requiriendo luces de eje de pista CL a 15 m o menos, HIRL operativas y múltiples transmisómetros RVR)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "RVR 300 m sin necesidad de luces de eje de pista en ningún tramo de la carrera de despegue",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "RVR 50 m siempre que el copiloto active el radar meteorológico en modo de navegación terrestre",
+        "id": "B",
+        "text": "RVR 550 m equivalente a los mínimos estándar de aproximación de precisión CAT I",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "RVR 125 m (requiriendo luces de eje de pista CL a 15 m o menos, HIRL operativas y múltiples transmisómetros RVR)",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "RVR 550 m equivalente a los mínimos estándar de aproximación de precisión CAT I",
+        "text": "RVR 50 m siempre que el copiloto active el radar meteorológico en modo de navegación terrestre",
         "is_correct": false
       }
     ],
@@ -81,18 +81,18 @@
     "options": [
       {
         "id": "A",
-        "text": "RVR 150 m (requiriendo señalización de eje de pista y luces de borde de alta intensidad HIRL operativas)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "RVR 75 m manteniendo la aeronave orientada con el localizador del ILS de la cabecera opuesta",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "RVR 800 m con obligatoriedad de esperar a la salida del sol para iniciar la carrera",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "RVR 150 m (requiriendo señalización de eje de pista y luces de borde de alta intensidad HIRL operativas)",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -118,22 +118,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Factor x2.0 (Visibilidad reportada x 2.0 = RVR/CMV calculado)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Factor x1.0 (sin incremento sobre la visibilidad meteorológica reportada)",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Factor x3.5 (incremento extraordinario para operaciones nocturnas con niebla)",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "Factor x2.0 (Visibilidad reportada x 2.0 = RVR/CMV calculado)",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "Factor x0.5 (reducción de la visibilidad a la mitad por oscuridad ambiental)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Factor x1.0 (sin incremento sobre la visibilidad meteorológica reportada)",
         "is_correct": false
       }
     ],
@@ -155,22 +155,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Para el cálculo de mínimos de despegue, para aproximaciones CAT II/III, o cuando el RVR real esté reportado",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Durante vuelos diurnos con visibilidad superior a 10 kilómetros en espacio aéreo controlado",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Siempre que la aeronave opere con el piloto automático desconectado en aproximación visual",
+        "id": "B",
+        "text": "En todos los aeropuertos situados a menos de 50 metros de elevación sobre el nivel del mar",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Para el cálculo de mínimos de despegue, para aproximaciones CAT II/III, o cuando el RVR real esté reportado",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "En todos los aeropuertos situados a menos de 50 metros de elevación sobre el nivel del mar",
+        "text": "Siempre que la aeronave opere con el piloto automático desconectado en aproximación visual",
         "is_correct": false
       }
     ],
@@ -192,22 +192,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Volar un perfil de descenso continuo y constante (CDFA) sin niveladas intermedias, añadiendo un margen a la MDA para no perforarla",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Descender en 'escalón' (dive and drive) lo más rápido posible hasta la MDA y volar nivelado buscando la pista",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Desconectar los dos altímetros principales y guiarse exclusivamente por la indicación del variómetro vertical",
+        "id": "B",
+        "text": "Acelerar a velocidad de crucero en el tramo final para reducir el tiempo de exposición al terreno",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Volar un perfil de descenso continuo y constante (CDFA) sin niveladas intermedias, añadiendo un margen a la MDA para no perforarla",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Acelerar a velocidad de crucero en el tramo final para reducir el tiempo de exposición al terreno",
+        "text": "Desconectar los dos altímetros principales y guiarse exclusivamente por la indicación del variómetro vertical",
         "is_correct": false
       }
     ],
@@ -234,12 +234,12 @@
       },
       {
         "id": "B",
-        "text": "Se resta 100 ft a la MDA para aproximarse más al terreno y facilitar la adquisición visual del umbral",
+        "text": "Se divide la MDA entre dos si la temperatura ambiente es superior a 15°C en el aeropuerto",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Se divide la MDA entre dos si la temperatura ambiente es superior a 15°C en el aeropuerto",
+        "text": "Se resta 100 ft a la MDA para aproximarse más al terreno y facilitar la adquisición visual del umbral",
         "is_correct": false
       },
       {
@@ -271,7 +271,7 @@
       },
       {
         "id": "B",
-        "text": "Altura de decisión (DH) de 100 pies y RVR no inferior a 300 metros con luces de eje de pista",
+        "text": "Altura de decisión (DH) de 500 pies y visibilidad meteorológica mínima de 5.000 metros",
         "is_correct": false
       },
       {
@@ -281,7 +281,7 @@
       },
       {
         "id": "D",
-        "text": "Altura de decisión (DH) de 500 pies y visibilidad meteorológica mínima de 5.000 metros",
+        "text": "Altura de decisión (DH) de 100 pies y RVR no inferior a 300 metros con luces de eje de pista",
         "is_correct": false
       }
     ],
@@ -303,8 +303,8 @@
     "options": [
       {
         "id": "A",
-        "text": "DH entre 100 y 200 pies, y RVR no inferior a 300 metros para aeronaves de Categoría C",
-        "is_correct": true
+        "text": "DH fija de 250 pies y visibilidad no inferior a 1.500 metros sin necesidad de luces de eje",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -313,13 +313,13 @@
       },
       {
         "id": "C",
-        "text": "DH fija de 250 pies y visibilidad no inferior a 1.500 metros sin necesidad de luces de eje",
+        "text": "DH de 0 pies (sin altura de decisión) y RVR de 75 metros en aterrizaje totalmente ciego",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "DH de 0 pies (sin altura de decisión) y RVR de 75 metros en aterrizaje totalmente ciego",
-        "is_correct": false
+        "text": "DH entre 100 y 200 pies, y RVR no inferior a 300 metros para aeronaves de Categoría C",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -340,22 +340,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Si el RVR reportado está por debajo del mínimo antes de cruzar 1.000 ft AAL (o antes de iniciar el FAF), no se puede continuar la aproximación",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Si la temperatura ambiente desciende por debajo de 0°C en cualquier tramo de la aproximación inicial",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Si el RVR reportado está por debajo del mínimo antes de cruzar 1.000 ft AAL (o antes de iniciar el FAF), no se puede continuar la aproximación",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "Si el copiloto tiene menos de 500 horas de vuelo en el tipo de aeronave al alcanzar el IAF",
+        "text": "Si la pista está seca y la velocidad del viento en cola es exactamente de 2 nudos",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Si la pista está seca y la velocidad del viento en cola es exactamente de 2 nudos",
+        "text": "Si el copiloto tiene menos de 500 horas de vuelo en el tipo de aeronave al alcanzar el IAF",
         "is_correct": false
       }
     ],
@@ -382,12 +382,12 @@
       },
       {
         "id": "B",
-        "text": "Obliga a realizar una aproximación frustrada inmediata sin llegar a la altitud de decisión",
+        "text": "Exige apagar el piloto automático y picar hacia el terreno para avistar la pista antes de mínimos",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Exige apagar el piloto automático y picar hacia el terreno para avistar la pista antes de mínimos",
+        "text": "Obliga a realizar una aproximación frustrada inmediata sin llegar a la altitud de decisión",
         "is_correct": false
       },
       {
@@ -414,8 +414,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Al menos un elemento del sistema de luces de aproximación, el umbral, sus marcas, luces de umbral, luces de zona de toma de contacto o eje de pista",
-        "is_correct": true
+        "text": "La luz de posición de otra aeronave que se encuentre realizando el rodaje en plataforma",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -424,8 +424,8 @@
       },
       {
         "id": "C",
-        "text": "La luz de posición de otra aeronave que se encuentre realizando el rodaje en plataforma",
-        "is_correct": false
+        "text": "Al menos un elemento del sistema de luces de aproximación, el umbral, sus marcas, luces de umbral, luces de zona de toma de contacto o eje de pista",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -451,8 +451,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Un segmento de al menos 3 luces consecutivas del eje de pista, de las luces de toma de contacto o de la barra transversal de luces de aproximación",
-        "is_correct": true
+        "text": "Identificar visualmente la manga de viento situada en la calle de rodaje paralela",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -461,8 +461,8 @@
       },
       {
         "id": "C",
-        "text": "Identificar visualmente la manga de viento situada en la calle de rodaje paralela",
-        "is_correct": false
+        "text": "Un segmento de al menos 3 luces consecutivas del eje de pista, de las luces de toma de contacto o de la barra transversal de luces de aproximación",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -488,12 +488,12 @@
     "options": [
       {
         "id": "A",
-        "text": "1.200 m (Factor de conversión x1.0)",
-        "is_correct": true
+        "text": "2.400 m (Factor de conversión x2.0)",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "2.400 m (Factor de conversión x2.0)",
+        "text": "600 m (Factor de reducción x0.5)",
         "is_correct": false
       },
       {
@@ -503,8 +503,8 @@
       },
       {
         "id": "D",
-        "text": "600 m (Factor de reducción x0.5)",
-        "is_correct": false
+        "text": "1.200 m (Factor de conversión x1.0)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -525,8 +525,8 @@
     "options": [
       {
         "id": "A",
-        "text": "1.500 m (Factor de conversión x1.5 para noche con luces intermedias/básicas)",
-        "is_correct": true
+        "text": "3.000 m (Factor de conversión x3.0 por efecto de contraste nocturno)",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -535,12 +535,12 @@
       },
       {
         "id": "C",
-        "text": "1.000 m (sin aplicar ningún incremento por ser de noche)",
-        "is_correct": false
+        "text": "1.500 m (Factor de conversión x1.5 para noche con luces intermedias/básicas)",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "3.000 m (Factor de conversión x3.0 por efecto de contraste nocturno)",
+        "text": "1.000 m (sin aplicar ningún incremento por ser de noche)",
         "is_correct": false
       }
     ],
@@ -562,23 +562,23 @@
     "options": [
       {
         "id": "A",
-        "text": "No es aplicable ningún factor de conversión (Factor x1.0, no pudiendo inflar la visibilidad meteorológica reportada)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Factor x2.0 si la luna se encuentra en fase de luna llena con cielo despejado",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Factor x1.5 utilizando los faros de aterrizaje de la propia aeronave como referencia",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Factor x0.8 reduciendo la visibilidad en un 20% de forma obligatoria",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Factor x2.0 si la luna se encuentra en fase de luna llena con cielo despejado",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No es aplicable ningún factor de conversión (Factor x1.0, no pudiendo inflar la visibilidad meteorológica reportada)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -609,12 +609,12 @@
       },
       {
         "id": "C",
-        "text": "Luces portátiles de destellos alimentadas por baterías recargables",
+        "text": "No se requiere ningún tipo de iluminación si el comandante dispone de gafas de visión nocturna",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No se requiere ningún tipo de iluminación si el comandante dispone de gafas de visión nocturna",
+        "text": "Luces portátiles de destellos alimentadas por baterías recargables",
         "is_correct": false
       }
     ],
@@ -641,7 +641,7 @@
       },
       {
         "id": "B",
-        "text": "La pista queda automáticamente clausurada para todo tipo de operaciones aéreas",
+        "text": "No tiene ningún impacto operacional y se mantienen los 550 m estándar de RVR",
         "is_correct": false
       },
       {
@@ -651,7 +651,7 @@
       },
       {
         "id": "D",
-        "text": "No tiene ningún impacto operacional y se mantienen los 550 m estándar de RVR",
+        "text": "La pista queda automáticamente clausurada para todo tipo de operaciones aéreas",
         "is_correct": false
       }
     ],
@@ -673,23 +673,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Permite reducir los mínimos de visibilidad/RVR o de altura de decisión mediante créditos operacionales aprobados por la Autoridad",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Exime a la tripulación de la obligación de calcular el combustible de contingencia y alternativo",
+        "text": "Permite prescindir de la carta de aproximación y volar sin fijos de navegación intermedios",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Autoriza a aterrizar con viento en cola de hasta 50 nudos en cualquier tipo de pista",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Permite prescindir de la carta de aproximación y volar sin fijos de navegación intermedios",
+        "id": "C",
+        "text": "Exime a la tripulación de la obligación de calcular el combustible de contingencia y alternativo",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Permite reducir los mínimos de visibilidad/RVR o de altura de decisión mediante créditos operacionales aprobados por la Autoridad",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -710,18 +710,18 @@
     "options": [
       {
         "id": "A",
-        "text": "Visibilidad de 5 km (8 km a/por encima de FL100), 1.500 m de distancia horizontal de nubes y 1.000 ft (300 m) de distancia vertical",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Visibilidad de 1.500 m sin distancia reglamentaria a las formaciones nubosas",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Visibilidad de 800 m manteniéndose libre de nubes y a la vista del agua en todo momento",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Visibilidad de 5 km (8 km a/por encima de FL100), 1.500 m de distancia horizontal de nubes y 1.000 ft (300 m) de distancia vertical",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -747,23 +747,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Visibilidad mínima en tierra de 1.500 m (u 800 m para helicópteros), libre de nubes y a la vista del suelo, y techo no inferior a 600 pies",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Visibilidad de 500 m y techo de nubes de 100 pies en cualquier clase de espacio aéreo",
+        "text": "No existen mínimos para VFR Especial pudiendo operar con visibilidad cero",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Visibilidad de 5.000 m con obligatoriedad de llevar dos copilotos en cabina",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "No existen mínimos para VFR Especial pudiendo operar con visibilidad cero",
+        "id": "C",
+        "text": "Visibilidad de 500 m y techo de nubes de 100 pies en cualquier clase de espacio aéreo",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Visibilidad mínima en tierra de 1.500 m (u 800 m para helicópteros), libre de nubes y a la vista del suelo, y techo no inferior a 600 pies",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -784,13 +784,13 @@
     "options": [
       {
         "id": "A",
-        "text": "En una tabla estandarizada que desglosa DA/H o MDA/H y RVR/CMV requerido según la categoría de aeronave (A, B, C, D) y tipo de aproximación",
-        "is_correct": true
+        "text": "Exclusivamente en formato de audio sintetizado transmitido por la frecuencia de torre",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "En un texto corrido en letra cursiva al pie de página sin diferenciar categorías de aeronave",
-        "is_correct": false
+        "text": "En una tabla estandarizada que desglosa DA/H o MDA/H y RVR/CMV requerido según la categoría de aeronave (A, B, C, D) y tipo de aproximación",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -799,7 +799,7 @@
       },
       {
         "id": "D",
-        "text": "Exclusivamente en formato de audio sintetizado transmitido por la frecuencia de torre",
+        "text": "En un texto corrido en letra cursiva al pie de página sin diferenciar categorías de aeronave",
         "is_correct": false
       }
     ],
@@ -821,22 +821,22 @@
     "options": [
       {
         "id": "A",
-        "text": "El mínimo correspondiente a la Categoría C (o categoría aplicable a la velocidad de aproximación real) reflejado en la carta LIDO vigente",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "El mínimo más bajo de la Categoría A independientemente de la velocidad real de la aeronave",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "El mínimo correspondiente a la Categoría C (o categoría aplicable a la velocidad de aproximación real) reflejado en la carta LIDO vigente",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "Un valor arbitrario fijado en 100 pies para todas las aproximaciones del año",
+        "text": "El mínimo de Categoría E para garantizar que nunca se pueda completar el aterrizaje",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "El mínimo de Categoría E para garantizar que nunca se pueda completar el aterrizaje",
+        "text": "Un valor arbitrario fijado en 100 pies para todas las aproximaciones del año",
         "is_correct": false
       }
     ],
@@ -863,17 +863,17 @@
       },
       {
         "id": "B",
-        "text": "Se mantienen los mínimos de Categoría A para acelerar la toma de contacto con la pista",
+        "text": "Se divide el RVR publicado entre dos por mayor velocidad de penetración en la niebla",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Está prohibido aterrizar debiendo eyectar combustible hasta recuperar la velocidad de Cat C",
+        "text": "Se mantienen los mínimos de Categoría A para acelerar la toma de contacto con la pista",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Se divide el RVR publicado entre dos por mayor velocidad de penetración en la niebla",
+        "text": "Está prohibido aterrizar debiendo eyectar combustible hasta recuperar la velocidad de Cat C",
         "is_correct": false
       }
     ],
@@ -895,12 +895,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Al menos el RVR de toma de contacto (TDZ) y el de punto medio (MID), siendo todos ellos de valor igual o superior al mínimo aplicable",
-        "is_correct": true
+        "text": "Únicamente el RVR del extremo final de pista (Stop End) sin importar el punto de contacto",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Únicamente el RVR del extremo final de pista (Stop End) sin importar el punto de contacto",
+        "text": "Basta con una estimación visual del señalero de pista desde el vehículo de guiado Follow-me",
         "is_correct": false
       },
       {
@@ -910,8 +910,8 @@
       },
       {
         "id": "D",
-        "text": "Basta con una estimación visual del señalero de pista desde el vehículo de guiado Follow-me",
-        "is_correct": false
+        "text": "Al menos el RVR de toma de contacto (TDZ) y el de punto medio (MID), siendo todos ellos de valor igual o superior al mínimo aplicable",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -932,22 +932,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Sí, puede ser sustituido por el RVR del punto medio (MID) siempre que este cumpla el valor mínimo requerido para la aproximación",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "No, el fallo del transmisómetro TDZ obliga inmediatamente a desviar al alternativo",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Solo si el avión aterriza antes de que la torre de control se percate de la avería técnica",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Sí, sustituyéndolo por la temperatura del punto de rocío dividida por diez",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Sí, puede ser sustituido por el RVR del punto medio (MID) siempre que este cumpla el valor mínimo requerido para la aproximación",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "No, el fallo del transmisómetro TDZ obliga inmediatamente a desviar al alternativo",
         "is_correct": false
       }
     ],
@@ -969,8 +969,8 @@
     "options": [
       {
         "id": "A",
-        "text": "La MDA/H no puede ser en ningún caso inferior a la OCA/H publicada por el Estado ni inferior a 250 pies sobre el umbral de pista",
-        "is_correct": true
+        "text": "No existe límite de MDA/H pudiendo descender hasta el contacto con el asfalto",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -984,8 +984,8 @@
       },
       {
         "id": "D",
-        "text": "No existe límite de MDA/H pudiendo descender hasta el contacto con el asfalto",
-        "is_correct": false
+        "text": "La MDA/H no puede ser en ningún caso inferior a la OCA/H publicada por el Estado ni inferior a 250 pies sobre el umbral de pista",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1043,22 +1043,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Sistema de luces de aproximación de alta intensidad de al menos 720 metros de longitud (o 900 m estándar OACI)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Una única luz intermitente blanca situada en la torre de comunicaciones",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Sistema de luces de aproximación de alta intensidad de al menos 720 metros de longitud (o 900 m estándar OACI)",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "Luces de balizamiento portátiles de 50 metros de longitud total",
+        "text": "No se requiere sistema de luces de aproximación si la pista dispone de marcas de pintura blanca",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No se requiere sistema de luces de aproximación si la pista dispone de marcas de pintura blanca",
+        "text": "Luces de balizamiento portátiles de 50 metros de longitud total",
         "is_correct": false
       }
     ],
@@ -1080,22 +1080,22 @@
     "options": [
       {
         "id": "A",
-        "text": "1.200 m (800 m x factor 1.5 = 1.200 m CMV)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "1.600 m (800 m x factor 2.0 = 1.600 m CMV)",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "1.200 m (800 m x factor 1.5 = 1.200 m CMV)",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "800 m (sin incremento por ser de día)",
+        "text": "2.400 m (800 m x factor 3.0 = 2.400 m CMV)",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "2.400 m (800 m x factor 3.0 = 2.400 m CMV)",
+        "text": "800 m (sin incremento por ser de día)",
         "is_correct": false
       }
     ],
@@ -1117,23 +1117,23 @@
     "options": [
       {
         "id": "A",
-        "text": "MDH mínima de 600 pies (o MDA según OCA) y visibilidad meteorológica no inferior a 2.400 metros",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "MDH de 100 pies y visibilidad de 500 metros en viraje continuo ceñido a la pista",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "MDH de 50 pies y visibilidad de 300 metros con el piloto automático conectado",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "MDH de 1.500 pies y visibilidad de 10 kilómetros en todo tipo de aeronaves",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "MDH mínima de 600 pies (o MDA según OCA) y visibilidad meteorológica no inferior a 2.400 metros",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1154,8 +1154,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Iniciar inmediatamente la aproximación frustrada virando hacia la pista de aterrizaje y ascender siguiendo el procedimiento publicado de la pista inicial",
-        "is_correct": true
+        "text": "Apagar los motores y buscar un campo no preparado fuera del perímetro del aeropuerto",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1169,8 +1169,8 @@
       },
       {
         "id": "D",
-        "text": "Apagar los motores y buscar un campo no preparado fuera del perímetro del aeropuerto",
-        "is_correct": false
+        "text": "Iniciar inmediatamente la aproximación frustrada virando hacia la pista de aterrizaje y ascender siguiendo el procedimiento publicado de la pista inicial",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1191,22 +1191,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Techo de nubes no inferior al mínimo de aproximación inicial/FAF (mínimo 1.500 ft AAL) y visibilidad en vuelo no inferior a 5.000 m",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Visibilidad de 1.000 m y techo de nubes a 100 pies sobre la cabecera",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Cualquier condición de niebla densa siempre que el radar del aeropuerto esté operando",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "No se requiere techo de nubes si el vuelo se realiza durante el crepúsculo vespertino",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Techo de nubes no inferior al mínimo de aproximación inicial/FAF (mínimo 1.500 ft AAL) y visibilidad en vuelo no inferior a 5.000 m",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Visibilidad de 1.000 m y techo de nubes a 100 pies sobre la cabecera",
         "is_correct": false
       }
     ],
@@ -1238,12 +1238,12 @@
       },
       {
         "id": "C",
-        "text": "No son obligatorias en ningún aeropuerto al ser un elemento puramente decorativo",
+        "text": "Son obligatorias para despegues con viento en cola superior a 10 nudos",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Son obligatorias para despegues con viento en cola superior a 10 nudos",
+        "text": "No son obligatorias en ningún aeropuerto al ser un elemento puramente decorativo",
         "is_correct": false
       }
     ],
@@ -1270,17 +1270,17 @@
       },
       {
         "id": "B",
-        "text": "Los altímetros indican menos altitud de la real, por lo que no es necesario aplicar correcciones",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Se reduce la MDA publicada en 100 pies para compensar la mayor densidad del aire frío",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Se desconectan los altímetros y se vuela la aproximación exclusivamente por tiempo cronometrado",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Los altímetros indican menos altitud de la real, por lo que no es necesario aplicar correcciones",
         "is_correct": false
       }
     ],
@@ -1307,7 +1307,7 @@
       },
       {
         "id": "B",
-        "text": "Un gradiente negativo de descenso de -1.0% hacia el mar",
+        "text": "No se requiere gradiente monomotor si los flaps se recogen a posición limpia",
         "is_correct": false
       },
       {
@@ -1317,7 +1317,7 @@
       },
       {
         "id": "D",
-        "text": "No se requiere gradiente monomotor si los flaps se recogen a posición limpia",
+        "text": "Un gradiente negativo de descenso de -1.0% hacia el mar",
         "is_correct": false
       }
     ],
@@ -1339,12 +1339,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Prevalece siempre el **RVR** para determinar la legalidad de la aproximación y el cumplimiento del Approach Ban",
-        "is_correct": true
+        "text": "Prevalece siempre la visibilidad meteorológica general estimada por el observador",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Prevalece siempre la visibilidad meteorológica general estimada por el observador",
+        "text": "El comandante elige verbalmente el valor que más favorezca el aterrizaje inmediato",
         "is_correct": false
       },
       {
@@ -1354,8 +1354,8 @@
       },
       {
         "id": "D",
-        "text": "El comandante elige verbalmente el valor que más favorezca el aterrizaje inmediato",
-        "is_correct": false
+        "text": "Prevalece siempre el **RVR** para determinar la legalidad de la aproximación y el cumplimiento del Approach Ban",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1376,8 +1376,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Ejecutar inmediatamente una aproximación frustrada (Go-Around) al no disponer de guiado automático certificado para CAT II",
-        "is_correct": true
+        "text": "Apagar los directores de vuelo y esperar a que el copiloto tome los mandos visuales",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1386,13 +1386,13 @@
       },
       {
         "id": "C",
-        "text": "Apagar los directores de vuelo y esperar a que el copiloto tome los mandos visuales",
+        "text": "Solicitar autorización a la torre de control para aterrizar en la calle de rodaje paralela",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Solicitar autorización a la torre de control para aterrizar en la calle de rodaje paralela",
-        "is_correct": false
+        "text": "Ejecutar inmediatamente una aproximación frustrada (Go-Around) al no disponer de guiado automático certificado para CAT II",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1413,8 +1413,8 @@
     "options": [
       {
         "id": "A",
-        "text": "La DA/MDA del operador nunca puede ser inferior a la OCA/H del Estado, debiendo ser igual o superior a esta",
-        "is_correct": true
+        "text": "La OCA/H del Estado es meramente informativa y puede ser ignorada en vuelos comerciales",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1423,8 +1423,8 @@
       },
       {
         "id": "C",
-        "text": "La OCA/H del Estado es meramente informativa y puede ser ignorada en vuelos comerciales",
-        "is_correct": false
+        "text": "La DA/MDA del operador nunca puede ser inferior a la OCA/H del Estado, debiendo ser igual o superior a esta",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1450,12 +1450,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Un espaciado máximo de 60 metros entre luces a lo largo de toda la longitud de la pista",
-        "is_correct": true
+        "text": "Un espaciado de 250 metros colocado exclusivamente en las salidas de pista",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Un espaciado de 250 metros colocado exclusivamente en las salidas de pista",
+        "text": "No existe límite de espaciado si las bombillas tienen una potencia de 100 vatios",
         "is_correct": false
       },
       {
@@ -1465,8 +1465,8 @@
       },
       {
         "id": "D",
-        "text": "No existe límite de espaciado si las bombillas tienen una potencia de 100 vatios",
-        "is_correct": false
+        "text": "Un espaciado máximo de 60 metros entre luces a lo largo de toda la longitud de la pista",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1487,22 +1487,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Altitud de Decisión (DA/H) como procedimiento 3D, debiendo respetar los límites de temperatura de operación del sistema Baro-VNAV",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Mínima Altitud de Descenso (MDA/H) fija sin posibilidad de utilizar decisión continua",
+        "text": "No requiere mínimos si el receptor GPS tiene sintonizados 12 satélites",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Mínimo visual exclusivo para operaciones de vuelo con planeadores",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Altitud de Decisión (DA/H) como procedimiento 3D, debiendo respetar los límites de temperatura de operación del sistema Baro-VNAV",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "No requiere mínimos si el receptor GPS tiene sintonizados 12 satélites",
+        "text": "Mínima Altitud de Descenso (MDA/H) fija sin posibilidad de utilizar decisión continua",
         "is_correct": false
       }
     ],
@@ -1524,22 +1524,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Mínimo de MDA/H (operación 2D), volándose con técnica CDFA calculando una Altitud de Decisión Derivada (DDA = MDA + 50 ft)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Mínimo de DH fija a 100 pies igual que en aproximaciones de precisión CAT II",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Mínimo visual de 10 kilómetros sin necesidad de referencia al perfil de descenso",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Mínimo de crucero FL100 sin descenso por debajo de la altitud de transición",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mínimo de MDA/H (operación 2D), volándose con técnica CDFA calculando una Altitud de Decisión Derivada (DDA = MDA + 50 ft)",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Mínimo de DH fija a 100 pies igual que en aproximaciones de precisión CAT II",
         "is_correct": false
       }
     ],
@@ -1561,18 +1561,18 @@
     "options": [
       {
         "id": "A",
-        "text": "El RVR mínimo se incrementa a **1.200 metros** (o visibilidad de 1.200 m) para Categoría C",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Se mantiene el RVR estándar de 550 metros sin aplicar ninguna penalización",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "El RVR mínimo se reduce a 300 metros por no haber deslumbramiento de luces",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El RVR mínimo se incrementa a **1.200 metros** (o visibilidad de 1.200 m) para Categoría C",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1598,8 +1598,8 @@
     "options": [
       {
         "id": "A",
-        "text": "RVR no inferior a **1.000 metros** para aeronaves de Categoría C",
-        "is_correct": true
+        "text": "RVR de 3.000 metros en todas las aproximaciones con directores de vuelo",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1608,12 +1608,12 @@
       },
       {
         "id": "C",
-        "text": "RVR de 125 metros igual que en los despegues de baja visibilidad",
-        "is_correct": false
+        "text": "RVR no inferior a **1.000 metros** para aeronaves de Categoría C",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "RVR de 3.000 metros en todas las aproximaciones con directores de vuelo",
+        "text": "RVR de 125 metros igual que en los despegues de baja visibilidad",
         "is_correct": false
       }
     ],
@@ -1635,22 +1635,22 @@
     "options": [
       {
         "id": "A",
+        "text": "RVR de 2.000 metros con presencia obligatoria de un bombero en cabecera",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "RVR / visibilidad de **400 metros** (o 500 m según la reglamentación aplicable)",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "RVR de 125 metros con uso de la brújula magnética de emergencia",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "RVR de 50 metros si el sol se encuentra en el cenit",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "RVR de 2.000 metros con presencia obligatoria de un bombero en cabecera",
+        "text": "RVR de 50 metros si el sol se encuentra en el cenit",
         "is_correct": false
       }
     ],
@@ -1672,17 +1672,17 @@
     "options": [
       {
         "id": "A",
+        "text": "En el momento de tocar la pista con las ruedas del tren principal",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "A la altitud mínima de desacoplamiento del piloto automático especificada en el AFM (o en la DA/H antes de la toma manual)",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "A 10.000 pies durante el descenso para mantener mayor sensibilidad táctil",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "En el momento de tocar la pista con las ruedas del tren principal",
+        "text": "A 10.000 pies durante el descenso para mantener mayor sensibilidad táctil",
         "is_correct": false
       },
       {
@@ -1709,22 +1709,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Para garantizar que la categorización de la aeronave sea fija y conservadora, cubriendo cualquier peso operativo real inferior",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Para obligar a que todos los aviones aterricen siempre con el peso máximo estructural",
+        "text": "Para impedir que las aeronaves con poco pasaje puedan aterrizar en aeropuertos insulares",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Para reducir las tasas aeroportuarias de navegación aérea en aproximación",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Para garantizar que la categorización de la aeronave sea fija y conservadora, cubriendo cualquier peso operativo real inferior",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Para impedir que las aeronaves con poco pasaje puedan aterrizar en aeropuertos insulares",
+        "text": "Para obligar a que todos los aviones aterricen siempre con el peso máximo estructural",
         "is_correct": false
       }
     ],
@@ -1746,22 +1746,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Una aproximación por instrumentos que utiliza tanto guía lateral como guía vertical calculada o transmitida",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Una aproximación que se realiza con gafas tridimensionales estereoscópicas en cabina",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Cualquier aproximación visual donde se observen simultáneamente tres pistas activas",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "Una aproximación por instrumentos que utiliza tanto guía lateral como guía vertical calculada o transmitida",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "Una aproximación frustrada que incluye tres virajes completos de 360 grados",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Una aproximación que se realiza con gafas tridimensionales estereoscópicas en cabina",
         "is_correct": false
       }
     ],
@@ -1783,22 +1783,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Una aproximación por instrumentos que utiliza exclusivamente guía lateral de navegación sin guiado vertical instrumental",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Una aproximación que se vuela en un simulador plano de dos dimensiones sin movimiento",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Un procedimiento de salida instrumental que cuenta con dos rumbos magnéticos paralelos",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Un aterrizaje de emergencia realizado sobre dos ruedas del tren principal",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Una aproximación por instrumentos que utiliza exclusivamente guía lateral de navegación sin guiado vertical instrumental",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Una aproximación que se vuela en un simulador plano de dos dimensiones sin movimiento",
         "is_correct": false
       }
     ],
@@ -1820,8 +1820,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Las Especificaciones de Operación (OpSpecs) asociadas al Certificado de Operador Aéreo (AOC) expedidas por AESA",
-        "is_correct": true
+        "text": "El catálogo comercial de venta de billetes de la temporada de verano",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1830,8 +1830,8 @@
       },
       {
         "id": "C",
-        "text": "El catálogo comercial de venta de billetes de la temporada de verano",
-        "is_correct": false
+        "text": "Las Especificaciones de Operación (OpSpecs) asociadas al Certificado de Operador Aéreo (AOC) expedidas por AESA",
+        "is_correct": true
       },
       {
         "id": "D",

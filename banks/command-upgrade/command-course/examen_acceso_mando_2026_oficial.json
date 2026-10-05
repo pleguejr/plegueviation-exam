@@ -12,18 +12,18 @@
       },
       {
         "id": "B",
-        "text": "300 NM",
+        "text": "360 NM",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "320 NM",
-        "is_correct": true
+        "text": "300 NM",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "360 NM",
-        "is_correct": false
+        "text": "320 NM",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -46,8 +46,8 @@
     "options": [
       {
         "id": "A",
-        "text": "The effect is very small but real, and a penalty applies beyond a certain number of missing items",
-        "is_correct": true
+        "text": "The effect requires reducing the limits by 45 kg (100 lb) from the first missing item",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -56,12 +56,12 @@
       },
       {
         "id": "C",
-        "text": "The effect is negligible only if the affected light remains operative",
-        "is_correct": false
+        "text": "The effect is very small but real, and a penalty applies beyond a certain number of missing items",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "The effect requires reducing the limits by 45 kg (100 lb) from the first missing item",
+        "text": "The effect is negligible only if the affected light remains operative",
         "is_correct": false
       }
     ],
@@ -84,7 +84,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Until the end of 14 March, counting three consecutive days from the day of discovery itself",
+        "text": "Until the end of 15 March, unless the next flight takes place earlier, in which case the count begins with that flight",
         "is_correct": false
       },
       {
@@ -99,7 +99,7 @@
       },
       {
         "id": "D",
-        "text": "Until the end of 15 March, unless the next flight takes place earlier, in which case the count begins with that flight",
+        "text": "Until the end of 14 March, counting three consecutive days from the day of discovery itself",
         "is_correct": false
       }
     ],
@@ -127,18 +127,18 @@
       },
       {
         "id": "B",
-        "text": "Report it verbally to maintenance personnel on arrival, with no need for a written entry",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Not record it, as it is a temporary anomaly that self-recovered with no crew action",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Record it in the ATL DEFECTS box, preceded by \"Pilot Info\", describing what was observed",
         "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Report it verbally to maintenance personnel on arrival, with no need for a written entry",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -160,22 +160,22 @@
     "options": [
       {
         "id": "A",
-        "text": "None, as the operation is automatically recorded by the FMS when LVO modes are engaged",
+        "text": "Landing validation is lost, leaving the commander's recent experience un-updated",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "It only affects Cost Index and remaining fuel monitoring",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "The company lacks the data required to document and analyse CAT II and CAT III approaches when producing LVO reports",
         "is_correct": true
       },
       {
+        "id": "C",
+        "text": "It only affects Cost Index and remaining fuel monitoring",
+        "is_correct": false
+      },
+      {
         "id": "D",
-        "text": "Landing validation is lost, leaving the commander's recent experience un-updated",
+        "text": "None, as the operation is automatically recorded by the FMS when LVO modes are engaged",
         "is_correct": false
       }
     ],
@@ -198,22 +198,22 @@
     "options": [
       {
         "id": "A",
-        "text": "6",
+        "text": "9",
         "is_correct": false
       },
       {
         "id": "B",
+        "text": "6",
+        "is_correct": false
+      },
+      {
+        "id": "C",
         "text": "7",
         "is_correct": true
       },
       {
-        "id": "C",
-        "text": "8",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "9",
+        "text": "8",
         "is_correct": false
       }
     ],
@@ -237,8 +237,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Those corresponding to the aircraft's category, in all cases",
-        "is_correct": false
+        "text": "Those corresponding to the speed intended to be maintained",
+        "is_correct": true
       },
       {
         "id": "B",
@@ -247,13 +247,13 @@
       },
       {
         "id": "C",
-        "text": "Those published for a straight-in approach to the same runway",
+        "text": "Those corresponding to the aircraft's category, in all cases",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Those corresponding to the speed intended to be maintained",
-        "is_correct": true
+        "text": "Those published for a straight-in approach to the same runway",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -313,17 +313,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Minimum fuel must be declared to ATC before departure",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "The excess is absorbed by contingency fuel, which expressly covers prolonged taxi times, reducing the margin available for the rest of the flight",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "A new flight plan must be requested before takeoff",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Minimum fuel must be declared to ATC before departure",
+        "text": "A new flight plan must be requested before takeoff",
         "is_correct": false
       },
       {
@@ -356,17 +356,17 @@
       },
       {
         "id": "B",
-        "text": "Ceiling 450 ft and RVR 1,250 m",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Ceiling 500 ft and RVR 1,600 m",
         "is_correct": true
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Ceiling 700 ft and RVR 2,300 m",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Ceiling 450 ft and RVR 1,250 m",
         "is_correct": false
       }
     ],
@@ -389,13 +389,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Direct cruise from destination to alternate at the planned flight level, disregarding climb and descent phases",
+        "text": "Approach and landing at the alternate, based on a minimum of 15 minutes holding at 1,500 ft above destination elevation",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Approach and landing at the alternate, based on a minimum of 15 minutes holding at 1,500 ft above destination elevation",
-        "is_correct": false
+        "text": "The complete missed approach from DA/H or MDA/H at destination, climb to the initial cruise level (TOC), cruise to TOD, descent per the expected arrival procedure, and the approach and landing at the alternate",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -404,8 +404,8 @@
       },
       {
         "id": "D",
-        "text": "The complete missed approach from DA/H or MDA/H at destination, climb to the initial cruise level (TOC), cruise to TOD, descent per the expected arrival procedure, and the approach and landing at the alternate",
-        "is_correct": true
+        "text": "Direct cruise from destination to alternate at the planned flight level, disregarding climb and descent phases",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -427,23 +427,23 @@
     "options": [
       {
         "id": "A",
-        "text": "He may extend duty, subject to consultation and consensus of all crew members, filing the commander's report within the following 72 hours",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "He may not extend duty, as discretion only applies once the affected sector has taken off",
+        "text": "He may not extend duty, as the excess is known before starting the sector and ceases to be unforeseen",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "He may extend duty, provided express authorisation is obtained from Flight Operations Management or the Chief Pilot before departure",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "He may not extend duty, as the excess is known before starting the sector and ceases to be unforeseen",
+        "id": "C",
+        "text": "He may not extend duty, as discretion only applies once the affected sector has taken off",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "He may extend duty, subject to consultation and consensus of all crew members, filing the commander's report within the following 72 hours",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -465,13 +465,13 @@
     "options": [
       {
         "id": "A",
-        "text": "No, when both cases combine a new loadsheet must always be requested",
+        "text": "Yes, as each movement is assessed separately against its own limit",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Yes, as when both cases combine the applicable limit is the most restrictive, which is not exceeded",
-        "is_correct": true
+        "text": "No, when both cases combine a new loadsheet must always be requested",
+        "is_correct": false
       },
       {
         "id": "C",
@@ -480,8 +480,8 @@
       },
       {
         "id": "D",
-        "text": "Yes, as each movement is assessed separately against its own limit",
-        "is_correct": false
+        "text": "Yes, as when both cases combine the applicable limit is the most restrictive, which is not exceeded",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -503,23 +503,23 @@
     "options": [
       {
         "id": "A",
-        "text": "He may continue, as neither difference individually exceeds its tolerance",
-        "is_correct": false
-      },
-      {
-        "id": "B",
         "text": "He must request a new flight plan, as the permissible fuel tolerance relative to the operational flight plan is exceeded",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "He must request a new flight plan, as the permissible ramp weight difference between loadsheet and OFP is exceeded",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "He may continue, provided both differences are recorded on the loadsheet and reported to the dispatcher",
+        "text": "He may continue, as neither difference individually exceeds its tolerance",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "He must request a new flight plan, as the permissible ramp weight difference between loadsheet and OFP is exceeded",
-        "is_correct": true
+        "text": "He may continue, provided both differences are recorded on the loadsheet and reported to the dispatcher",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -546,17 +546,17 @@
       },
       {
         "id": "B",
-        "text": "R1 and R2 clear for ramp deployment, being opposite the boarding side",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "R1 clear for ramp deployment, and L2 clear for ramp evacuation unless stairs are attached",
         "is_correct": true
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "L2 and R2 clear, the aft doors being the only ones away from the refuelling point",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "R1 and R2 clear for ramp deployment, being opposite the boarding side",
         "is_correct": false
       }
     ],
@@ -584,12 +584,12 @@
       },
       {
         "id": "B",
-        "text": "On confirmation of nose gear chocks in place and GPU connected",
+        "text": "When the coordinator's headset connection is established, the operation then being coordinated with ground staff",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "When the coordinator's headset connection is established, the operation then being coordinated with ground staff",
+        "text": "On confirmation of nose gear chocks in place and GPU connected",
         "is_correct": false
       },
       {
@@ -618,22 +618,22 @@
     "options": [
       {
         "id": "A",
-        "text": "In the cargo compartment, in approved dangerous goods packaging and with NOTOC to the commander",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "In the passenger cabin, with terminals protected against short circuit",
-        "is_correct": true
-      },
-      {
-        "id": "C",
         "text": "In the forward cargo compartment, alongside the wheelchair itself",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "In the passenger cabin, near the passenger's seat and in the OFF position",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "In the passenger cabin, with terminals protected against short circuit",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "In the cargo compartment, in approved dangerous goods packaging and with NOTOC to the commander",
         "is_correct": false
       }
     ],
@@ -657,23 +657,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Yes, as long as fuel for the alternate plus final reserve is retained",
-        "is_correct": false
-      },
-      {
-        "id": "B",
         "text": "No, under no circumstances, the maximum of two successive approaches having been reached",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Yes, subject to authorisation from Operational Control",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Yes, only if there has been an improvement in weather conditions ensuring a subsequent successful attempt",
         "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Yes, as long as fuel for the alternate plus final reserve is retained",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -700,18 +700,18 @@
       },
       {
         "id": "B",
-        "text": "Yes, provided visual references are expected in accordance with the trend forecast",
+        "text": "No, unless expressly authorised by the control tower",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Yes, there is no prohibition on commencing an approach based on reported RVR or visibility; the restriction applies to its continuation",
-        "is_correct": true
+        "text": "Yes, provided visual references are expected in accordance with the trend forecast",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "No, unless expressly authorised by the control tower",
-        "is_correct": false
+        "text": "Yes, there is no prohibition on commencing an approach based on reported RVR or visibility; the restriction applies to its continuation",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -776,17 +776,17 @@
       },
       {
         "id": "B",
-        "text": "NORM",
+        "text": "AUTO",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "EMER",
+        "text": "NORM",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "AUTO",
+        "text": "EMER",
         "is_correct": false
       }
     ],
@@ -814,13 +814,13 @@
       },
       {
         "id": "B",
-        "text": "Secure the cabin and prepare passengers for the emergency, the SCC attending the briefing",
-        "is_correct": false
+        "text": "Make the passenger announcements and await the next order from the flight deck",
+        "is_correct": true
       },
       {
         "id": "C",
-        "text": "Make the passenger announcements and await the next order from the flight deck",
-        "is_correct": true
+        "text": "Secure the cabin and prepare passengers for the emergency, the SCC attending the briefing",
+        "is_correct": false
       },
       {
         "id": "D",
@@ -852,8 +852,8 @@
       },
       {
         "id": "B",
-        "text": "Headwind 25 kt, tailwind 10 kt, crosswind 15 kt",
-        "is_correct": true
+        "text": "The general aircraft limits: 35 kt crosswind for landing, gust included",
+        "is_correct": false
       },
       {
         "id": "C",
@@ -862,8 +862,8 @@
       },
       {
         "id": "D",
-        "text": "The general aircraft limits: 35 kt crosswind for landing, gust included",
-        "is_correct": false
+        "text": "Headwind 25 kt, tailwind 10 kt, crosswind 15 kt",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -885,7 +885,7 @@
     "options": [
       {
         "id": "A",
-        "text": "When the defect is listed in the MEL and its conditions are met, since the MEL alone determines the acceptability of dispatch",
+        "text": "When the commander has the applicable AMM task available and confirms the procedure by telephone with the Maintenance Department",
         "is_correct": false
       },
       {
@@ -895,12 +895,12 @@
       },
       {
         "id": "C",
-        "text": "When the item has rectification interval C or D and the commander records the defect in the technical log before departure",
+        "text": "When the defect is listed in the MEL and its conditions are met, since the MEL alone determines the acceptability of dispatch",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "When the commander has the applicable AMM task available and confirms the procedure by telephone with the Maintenance Department",
+        "text": "When the item has rectification interval C or D and the commander records the defect in the technical log before departure",
         "is_correct": false
       }
     ],
@@ -923,22 +923,22 @@
     "options": [
       {
         "id": "A",
-        "text": "When remaining fuel reaches the minimum diversion fuel (MAP MIN) shown on the flight plan",
-        "is_correct": false
-      },
-      {
-        "id": "B",
         "text": "When, all opportunities to protect final reserve having been exhausted, the commander estimates that usable fuel on landing at the nearest adequate aerodrome will be below final reserve",
         "is_correct": true
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "When minimum fuel has previously been declared and ATC does not grant landing priority",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "When remaining fuel is below that required to proceed to the destination alternate",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "When remaining fuel reaches the minimum diversion fuel (MAP MIN) shown on the flight plan",
         "is_correct": false
       }
     ],

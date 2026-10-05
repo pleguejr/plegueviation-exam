@@ -7,13 +7,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Fuego de motor, fallo de motor, aviso de cizalladura (Windshear Warning) o cualquier fallo que impida el vuelo seguro de la aeronave",
-        "is_correct": true
+        "text": "Pérdida de comunicación de radio con la torre",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Cualquier mensaje de precaución de color ámbar en el EICAS",
-        "is_correct": false
+        "text": "Fuego de motor, fallo de motor, aviso de cizalladura (Windshear Warning) o cualquier fallo que impida el vuelo seguro de la aeronave",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -22,7 +22,7 @@
       },
       {
         "id": "D",
-        "text": "Pérdida de comunicación de radio con la torre",
+        "text": "Cualquier mensaje de precaución de color ámbar en el EICAS",
         "is_correct": false
       }
     ],
@@ -54,12 +54,12 @@
       },
       {
         "id": "C",
-        "text": "No comunicar nada para no alarmar a los pasajeros",
+        "text": "Pedir al copiloto que abra su ventanilla de emergencia",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Pedir al copiloto que abra su ventanilla de emergencia",
+        "text": "No comunicar nada para no alarmar a los pasajeros",
         "is_correct": false
       }
     ],
@@ -86,17 +86,17 @@
       },
       {
         "id": "B",
-        "text": "Nivel del mar (0 ft) en todos los casos",
+        "text": "Exactamente la altitud de circuito de tránsito del aeropuerto de salida",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "FL200 como altitud fija de espera",
+        "text": "Nivel del mar (0 ft) en todos los casos",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Exactamente la altitud de circuito de tránsito del aeropuerto de salida",
+        "text": "FL200 como altitud fija de espera",
         "is_correct": false
       }
     ],
@@ -118,18 +118,18 @@
     "options": [
       {
         "id": "A",
-        "text": "Green Dot speed (velocidad de máxima autonomía / mejor régimen con un motor inoperativo)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "VMO / MMO para descender lo más rápido posible",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "VREF + 30 KIAS",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Green Dot speed (velocidad de máxima autonomía / mejor régimen con un motor inoperativo)",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -155,12 +155,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Completar la Emergency Evacuation Checklist, cortar motores (START/STOP STOP), tirar de manerales cortafuegos y despresurizar el avión (DUMP)",
-        "is_correct": true
+        "text": "Abrir las ventanillas de cockpit y saltar en primer lugar",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Abrir las ventanillas de cockpit y saltar en primer lugar",
+        "text": "Desconectar únicamente el transponder",
         "is_correct": false
       },
       {
@@ -170,8 +170,8 @@
       },
       {
         "id": "D",
-        "text": "Desconectar únicamente el transponder",
-        "is_correct": false
+        "text": "Completar la Emergency Evacuation Checklist, cortar motores (START/STOP STOP), tirar de manerales cortafuegos y despresurizar el avión (DUMP)",
+        "is_correct": true
       }
     ],
     "explanation": {

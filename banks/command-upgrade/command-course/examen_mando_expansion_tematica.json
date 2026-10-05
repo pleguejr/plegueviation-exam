@@ -7,8 +7,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Un aeródromo adecuado cumple los requisitos técnicos de pista, performance y servicios; un aeródromo aceptable es aquel adecuado cuyas previsiones meteorológicas y de estado operacional en la hora prevista de utilización cumplen los mínimos requeridos.",
-        "is_correct": true
+        "text": "Un aeródromo adecuado dispone de servicio ATC 24 horas; un aeródromo aceptable opera bajo espacio aéreo no controlado AFIS.",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -17,8 +17,8 @@
       },
       {
         "id": "C",
-        "text": "Un aeródromo adecuado dispone de servicio ATC 24 horas; un aeródromo aceptable opera bajo espacio aéreo no controlado AFIS.",
-        "is_correct": false
+        "text": "Un aeródromo adecuado cumple los requisitos técnicos de pista, performance y servicios; un aeródromo aceptable es aquel adecuado cuyas previsiones meteorológicas y de estado operacional en la hora prevista de utilización cumplen los mínimos requeridos.",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -50,7 +50,7 @@
       },
       {
         "id": "B",
-        "text": "Duración de vuelo inferior a 45 minutos y visibilidad superior a 10 km CAVOK.",
+        "text": "Que el aeródromo de destino cuente con categoría RFFS 9 y doble aproximación ILS CAT III.",
         "is_correct": false
       },
       {
@@ -60,7 +60,7 @@
       },
       {
         "id": "D",
-        "text": "Que el aeródromo de destino cuente con categoría RFFS 9 y doble aproximación ILS CAT III.",
+        "text": "Duración de vuelo inferior a 45 minutos y visibilidad superior a 10 km CAVOK.",
         "is_correct": false
       }
     ],
@@ -83,22 +83,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Las penalizaciones porcentuales de consumo de combustible asociadas a cada ítem CDL se suman directamente entre sí para el cálculo del Trip Fuel y Contingency.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Solo se aplica la penalización del ítem con mayor impacto aerodinámico, ignorando las demás.",
+        "text": "La penalización total se calcula multiplicando los factores porcentuales de penalización.",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Se prohíbe despachar la aeronave si falta más de un ítem CDL simultáneamente.",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Las penalizaciones porcentuales de consumo de combustible asociadas a cada ítem CDL se suman directamente entre sí para el cálculo del Trip Fuel y Contingency.",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "La penalización total se calcula multiplicando los factores porcentuales de penalización.",
+        "text": "Solo se aplica la penalización del ítem con mayor impacto aerodinámico, ignorando las demás.",
         "is_correct": false
       }
     ],
@@ -121,8 +121,8 @@
     "options": [
       {
         "id": "A",
-        "text": "No, cualquier ítem de MEL o CDL que contenga un requisito de mantenimiento (M) exige la intervención y certificación técnica (CRS) por personal de mantenimiento cualificado (LMA).",
-        "is_correct": true
+        "text": "Sí, siempre que no suponga una penalización de peso superior a 500 kg.",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -131,13 +131,13 @@
       },
       {
         "id": "C",
-        "text": "Sí, siempre que no suponga una penalización de peso superior a 500 kg.",
+        "text": "Sí, siempre que firme una exención provisional válida por un único salto de regreso a la base principal.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Sí, siempre que firme una exención provisional válida por un único salto de regreso a la base principal.",
-        "is_correct": false
+        "text": "No, cualquier ítem de MEL o CDL que contenga un requisito de mantenimiento (M) exige la intervención y certificación técnica (CRS) por personal de mantenimiento cualificado (LMA).",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -164,12 +164,12 @@
       },
       {
         "id": "B",
-        "text": "Categoría C: 7 días de calendario; Categoría D: 30 días de calendario.",
+        "text": "Categoría C: 14 días de calendario; Categoría D: 90 días de calendario.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Categoría C: 14 días de calendario; Categoría D: 90 días de calendario.",
+        "text": "Categoría C: 7 días de calendario; Categoría D: 30 días de calendario.",
         "is_correct": false
       },
       {
@@ -197,8 +197,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Únicamente las Categorías B y C, por un periodo igual al intervalo original, previa aprobación del departamento de Calidad/CAMO de acuerdo con el procedimiento aprobado por la Autoridad.",
-        "is_correct": true
+        "text": "Únicamente la Categoría D, por un máximo de 30 días adicionales.",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -207,8 +207,8 @@
       },
       {
         "id": "C",
-        "text": "Únicamente la Categoría D, por un máximo de 30 días adicionales.",
-        "is_correct": false
+        "text": "Únicamente las Categorías B y C, por un periodo igual al intervalo original, previa aprobación del departamento de Calidad/CAMO de acuerdo con el procedimiento aprobado por la Autoridad.",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -235,8 +235,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Comprobar el estado de servicio de la aeronave, que todos los defectos anteriores han sido corregidos o diferidos bajo MEL/CDL válida, la vigencia del Certificado de Aptitud para el Servicio (CRS), y las firmas de aceptación correspondientes.",
-        "is_correct": true
+        "text": "Verificar exclusivamente que no haya ítems de Categoría A abiertos.",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -245,8 +245,8 @@
       },
       {
         "id": "C",
-        "text": "Verificar exclusivamente que no haya ítems de Categoría A abiertos.",
-        "is_correct": false
+        "text": "Comprobar el estado de servicio de la aeronave, que todos los defectos anteriores han sido corregidos o diferidos bajo MEL/CDL válida, la vigencia del Certificado de Aptitud para el Servicio (CRS), y las firmas de aceptación correspondientes.",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -273,13 +273,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Se permite el despacho y operación con hasta dos categorías por debajo de la requerida (de 7 a 5) como degradación temporal máxima, siempre que el alternativo de destino cumpla la categoría requerida completa (RFFS 7).",
-        "is_correct": true
+        "text": "Está prohibido el despacho hacia cualquier aeródromo con RFFS inferior a Categoría 7 bajo cualquier circunstancia.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Está prohibido el despacho hacia cualquier aeródromo con RFFS inferior a Categoría 7 bajo cualquier circunstancia.",
-        "is_correct": false
+        "text": "Se permite el despacho y operación con hasta dos categorías por debajo de la requerida (de 7 a 5) como degradación temporal máxima, siempre que el alternativo de destino cumpla la categoría requerida completa (RFFS 7).",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -311,8 +311,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Iniciar un viraje de ascenso hacia la pista de aterrizaje instrumental (rumbo a la pista de origen de la aproximación) para establecerse dentro del área de protección y seguir el procedimiento de aproximación frustrada publicado para la pista instrumental inicial.",
-        "is_correct": true
+        "text": "Realizar un viraje de 360 grados sobre el terreno para intentar recuperar contacto visual con la pista.",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -326,8 +326,8 @@
       },
       {
         "id": "D",
-        "text": "Realizar un viraje de 360 grados sobre el terreno para intentar recuperar contacto visual con la pista.",
-        "is_correct": false
+        "text": "Iniciar un viraje de ascenso hacia la pista de aterrizaje instrumental (rumbo a la pista de origen de la aproximación) para establecerse dentro del área de protección y seguir el procedimiento de aproximación frustrada publicado para la pista instrumental inicial.",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -359,12 +359,12 @@
       },
       {
         "id": "C",
-        "text": "Una cantidad fija de 300 kg para toda la flota de reactores.",
+        "text": "El combustible equivalente a 15 minutos de espera a nivel de crucero.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "El combustible equivalente a 15 minutos de espera a nivel de crucero.",
+        "text": "Una cantidad fija de 300 kg para toda la flota de reactores.",
         "is_correct": false
       }
     ],
@@ -387,13 +387,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Cuando prevea que cualquier cambio en la autorización actual puede resultar en un aterrizaje con menos del combustible de reserva final planificado.",
-        "is_correct": true
+        "text": "Cuando entre en circuito de espera por más de 10 minutos.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Cuando entre en circuito de espera por más de 10 minutos.",
-        "is_correct": false
+        "text": "Cuando prevea que cualquier cambio en la autorización actual puede resultar en un aterrizaje con menos del combustible de reserva final planificado.",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -425,22 +425,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Techo de nubes: DA/H + 100 ft (300 ft) y Visibilidad/RVR: RVR + 300 m (850 m)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Techo 200 ft y RVR 550 m (mínimos de aproximación sin aplicar ningún incremento)",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Mínimos de No Precisión (MDH + 200 ft de techo y RVR + 1.000 m)",
+        "id": "B",
+        "text": "Techo 400 ft y visibilidad 1.500 m fijos independientemente de las pistas disponibles",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Techo de nubes: DA/H + 100 ft (300 ft) y Visibilidad/RVR: RVR + 300 m (850 m)",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Techo 400 ft y visibilidad 1.500 m fijos independientemente de las pistas disponibles",
+        "text": "Mínimos de No Precisión (MDH + 200 ft de techo y RVR + 1.000 m)",
         "is_correct": false
       }
     ],
@@ -463,8 +463,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Se inicia en el momento de la presentación oficial de la tripulación para el servicio (reporting time) y finaliza en el momento del calzado de calzos (chocks on) en el último sector de vuelo.",
-        "is_correct": true
+        "text": "Se inicia 1 hora antes del despegue y finaliza 30 minutos después del aterrizaje.",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -473,13 +473,13 @@
       },
       {
         "id": "C",
-        "text": "Se inicia 1 hora antes del despegue y finaliza 30 minutos después del aterrizaje.",
+        "text": "Se inicia en la firma del plan de vuelo y finaliza al entregar el ATL en la oficina de operaciones.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Se inicia en la firma del plan de vuelo y finaliza al entregar el ATL en la oficina de operaciones.",
-        "is_correct": false
+        "text": "Se inicia en el momento de la presentación oficial de la tripulación para el servicio (reporting time) y finaliza en el momento del calzado de calzos (chocks on) en el último sector de vuelo.",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -501,8 +501,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Al menos la duración del periodo de actividad precedente o 12 horas, de ambos valores el que sea mayor.",
-        "is_correct": true
+        "text": "8 horas más el tiempo de desplazamiento al domicilio.",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -511,13 +511,13 @@
       },
       {
         "id": "C",
-        "text": "8 horas más el tiempo de desplazamiento al domicilio.",
+        "text": "24 horas completas tras cualquier actividad superior a 8 horas.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "24 horas completas tras cualquier actividad superior a 8 horas.",
-        "is_correct": false
+        "text": "Al menos la duración del periodo de actividad precedente o 12 horas, de ambos valores el que sea mayor.",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -539,8 +539,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Varón: 88 kg | Mujer: 70 kg | Adulto mixto (todos): 84 kg | Niños (2 a 12 años): 35 kg | Bebés (< 2 años sin asiento): 0 kg",
-        "is_correct": true
+        "text": "Varón: 75 kg | Mujer: 60 kg | Adulto mixto: 70 kg | Niños: 25 kg | Bebés: 0 kg",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -549,13 +549,13 @@
       },
       {
         "id": "C",
-        "text": "Varón: 75 kg | Mujer: 60 kg | Adulto mixto: 70 kg | Niños: 25 kg | Bebés: 0 kg",
+        "text": "Varón: 95 kg | Mujer: 80 kg | Adulto mixto: 90 kg | Niños: 40 kg | Bebés: 10 kg",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Varón: 95 kg | Mujer: 80 kg | Adulto mixto: 90 kg | Niños: 40 kg | Bebés: 10 kg",
-        "is_correct": false
+        "text": "Varón: 88 kg | Mujer: 70 kg | Adulto mixto (todos): 84 kg | Niños (2 a 12 años): 35 kg | Bebés (< 2 años sin asiento): 0 kg",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -577,13 +577,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Debe solicitarse la emisión de una nueva hoja de carga (New Loadsheet) completa y no se puede aplicar el procedimiento manual de LMC.",
-        "is_correct": true
+        "text": "El Comandante puede compensarlo aumentando la velocidad de rotación Vr en 5 nudos.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "El Comandante puede compensarlo aumentando la velocidad de rotación Vr en 5 nudos.",
-        "is_correct": false
+        "text": "Debe solicitarse la emisión de una nueva hoja de carga (New Loadsheet) completa y no se puede aplicar el procedimiento manual de LMC.",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -615,8 +615,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Las señales de 'FASTEN SEAT BELTS' deben estar apagadas (OFF) y los pasajeros deben estar instruidos para no abrocharse los cinturones y mantener despejados los pasillos.",
-        "is_correct": true
+        "text": "La señal puede estar en modo AUTO indistintamente.",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -625,8 +625,8 @@
       },
       {
         "id": "C",
-        "text": "La señal puede estar en modo AUTO indistintamente.",
-        "is_correct": false
+        "text": "Las señales de 'FASTEN SEAT BELTS' deben estar apagadas (OFF) y los pasajeros deben estar instruidos para no abrocharse los cinturones y mantener despejados los pasillos.",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -653,18 +653,18 @@
     "options": [
       {
         "id": "A",
-        "text": "Detección de vapores de combustible en el interior de la cabina de pasajeros, derrame de combustible en la rampa, o tormenta eléctrica severa en las inmediaciones del aeródromo.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Cuando la temperatura exterior supere los 25 °C.",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Cuando el embarque de pasajeros tarde más de 15 minutos.",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Detección de vapores de combustible en el interior de la cabina de pasajeros, derrame de combustible en la rampa, o tormenta eléctrica severa en las inmediaciones del aeródromo.",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -691,18 +691,18 @@
     "options": [
       {
         "id": "A",
-        "text": "El formulario NOTOC (Notification to Captain), detallando la clase de peligro, número ONU, denominación oficial, posición de carga en bodega, cantidad neta y código de respuesta de emergencia del manual de la OACI (Doc 9481).",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Únicamente la hoja de carga convencional sin especificación de códigos ONU.",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Una autorización verbal transmitida por la frecuencia del coordinador de pista.",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El formulario NOTOC (Notification to Captain), detallando la clase de peligro, número ONU, denominación oficial, posición de carga en bodega, cantidad neta y código de respuesta de emergencia del manual de la OACI (Doc 9481).",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -735,17 +735,17 @@
       },
       {
         "id": "B",
-        "text": "Deben ser facturadas en la bodega delantera debidamente embaladas en maleta rígida.",
+        "text": "Requieren aprobación previa por escrito de la Autoridad Aeronáutica para cada vuelo.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Están terminantemente prohibidas en la aeronave tanto en cabina como en bodega.",
+        "text": "Deben ser facturadas en la bodega delantera debidamente embaladas en maleta rígida.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Requieren aprobación previa por escrito de la Autoridad Aeronáutica para cada vuelo.",
+        "text": "Están terminantemente prohibidas en la aeronave tanto en cabina como en bodega.",
         "is_correct": false
       }
     ],
@@ -768,23 +768,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Puede continuar la aproximación hasta la DA/H; si al alcanzar la DA/H se tienen las referencias visuales requeridas, se puede aterrizar.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Debe iniciar inmediatamente una aproximación frustrada (Go-Around) a 800 ft.",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Debe descender hasta 500 ft y entrar en espera visual sobre la pista.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Debe desconectar el piloto automático y continuar en manual en todo caso.",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Puede continuar la aproximación hasta la DA/H; si al alcanzar la DA/H se tienen las referencias visuales requeridas, se puede aterrizar.",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -806,23 +806,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Al menos un segmento continuo de tres luces de la línea central de luces de aproximación, o de las luces de eje de pista, o de las luces de zona de toma de contacto (TDZ), o una combinación de ellas.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "La pista completa claramente visible de umbral a final de pista.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Las luces de PAPIs verdes y las torres de iluminación de rampa.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "No se requiere ninguna referencia visual en CAT IIIA al ser autoland mandatario.",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La pista completa claramente visible de umbral a final de pista.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Al menos un segmento continuo de tres luces de la línea central de luces de aproximación, o de las luces de eje de pista, o de las luces de zona de toma de contacto (TDZ), o una combinación de ellas.",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -844,22 +844,22 @@
     "options": [
       {
         "id": "A",
-        "text": "NITS: Nature (Naturaleza del problema), Intentions (Intenciones del Comandante), Time (Tiempo disponible hasta la toma), Special instructions (Instrucciones especiales para tripulación de cabina).",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "FAST: Fire, Altitude, Speed, Time.",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "NITS: Nature (Naturaleza del problema), Intentions (Intenciones del Comandante), Time (Tiempo disponible hasta la toma), Special instructions (Instrucciones especiales para tripulación de cabina).",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "PAPA: Passengers, Alternates, Power, Actions.",
+        "text": "SOP: Standard, Operations, Pilot, Action.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "SOP: Standard, Operations, Pilot, Action.",
+        "text": "PAPA: Passengers, Alternates, Power, Actions.",
         "is_correct": false
       }
     ],
@@ -882,23 +882,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Se debe mantener la velocidad actual o inferior evitando maniobras bruscas, y no acelerar hasta Vmo/Mmo.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Se debe acelerar inmediatamente a Vmo + 10 kt y desplegar el tren de aterrizaje a cualquier velocidad.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Se debe apagar el sistema hidráulico número 1 para evitar sobrepresiones.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Se debe ascender a FL410 para reducir la densidad del aire sobre el fuselaje.",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se debe acelerar inmediatamente a Vmo + 10 kt y desplegar el tren de aterrizaje a cualquier velocidad.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se debe mantener la velocidad actual o inferior evitando maniobras bruscas, y no acelerar hasta Vmo/Mmo.",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -920,22 +920,22 @@
     "options": [
       {
         "id": "A",
-        "text": "\"TRIPULACIÓN DE CABINA Y PASAJEROS, CANCELAR EVACUACIÓN, CANCELAR EVACUACIÓN, PERMANEZCAN SENTADOS\".",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "\"TODO ESTÁ BIEN, PUEDEN LEVANTARSE\".",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "\"TRIPULACIÓN DE CABINA Y PASAJEROS, CANCELAR EVACUACIÓN, CANCELAR EVACUACIÓN, PERMANEZCAN SENTADOS\".",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "\"ATENCIÓN TRIPULACIÓN, EMBARQUE REANUDADO\".",
+        "text": "\"PASAJEROS DESABROCHEN CINTURONES Y ESPEREN A LA ESCALERA\".",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "\"PASAJEROS DESABROCHEN CINTURONES Y ESPEREN A LA ESCALERA\".",
+        "text": "\"ATENCIÓN TRIPULACIÓN, EMBARQUE REANUDADO\".",
         "is_correct": false
       }
     ],
@@ -958,22 +958,22 @@
     "options": [
       {
         "id": "A",
-        "text": "400 ft AGL.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "100 ft AGL.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "800 ft AGL.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "1.500 ft AGL.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "400 ft AGL.",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "100 ft AGL.",
         "is_correct": false
       }
     ],
@@ -1001,17 +1001,17 @@
       },
       {
         "id": "B",
-        "text": "Sí, siempre que el coeficiente de fricción reportado sea GOOD (≥ 0.40).",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Sí, pero reduciendo el peso máximo de aterrizaje en un 15%.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Sí, siempre que se utilicen reversas máximas hasta parada total.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Sí, siempre que el coeficiente de fricción reportado sea GOOD (≥ 0.40).",
         "is_correct": false
       }
     ],
@@ -1039,12 +1039,12 @@
       },
       {
         "id": "B",
-        "text": "20 nudos en cualquier condición de pista.",
+        "text": "10 nudos máximo para todo tipo de operación.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "10 nudos máximo para todo tipo de operación.",
+        "text": "20 nudos en cualquier condición de pista.",
         "is_correct": false
       },
       {
@@ -1072,13 +1072,13 @@
     "options": [
       {
         "id": "A",
-        "text": "I: Información / Intenciones; M: Meteorología / Mínimos; F: Fuel / Combustible; L: Legalidad / FTL; O: Operaciones / Handling; C: Cabin Crew / Pasajeros; C: ATC / Coordinación.",
-        "is_correct": true
+        "text": "Informe, Mantenimiento, Facturación, LMC, OFP, Control, Checklists.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Instrumentos, Motores, Flaps, Luces, Oxígeno, Circuitos, Calzos.",
-        "is_correct": false
+        "text": "I: Información / Intenciones; M: Meteorología / Mínimos; F: Fuel / Combustible; L: Legalidad / FTL; O: Operaciones / Handling; C: Cabin Crew / Pasajeros; C: ATC / Coordinación.",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1087,7 +1087,7 @@
       },
       {
         "id": "D",
-        "text": "Informe, Mantenimiento, Facturación, LMC, OFP, Control, Checklists.",
+        "text": "Instrumentos, Motores, Flaps, Luces, Oxígeno, Circuitos, Calzos.",
         "is_correct": false
       }
     ],
@@ -1110,22 +1110,22 @@
     "options": [
       {
         "id": "A",
-        "text": "El Comandante debe evaluar la situación y desviarse hacia un aeródromo alternativo en ruta o en destino adecuado antes de comprometer la reserva final.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Puede continuar siempre que mantenga crucero a velocidad de máxima autonomía (Long Range Cruise).",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Debe apagar el sistema de aire acondicionado para ahorrar combustible y continuar a destino.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Debe solicitar descenso a FL100 para consumir menos combustible.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El Comandante debe evaluar la situación y desviarse hacia un aeródromo alternativo en ruta o en destino adecuado antes de comprometer la reserva final.",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Puede continuar siempre que mantenga crucero a velocidad de máxima autonomía (Long Range Cruise).",
         "is_correct": false
       }
     ],
@@ -1148,22 +1148,22 @@
     "options": [
       {
         "id": "A",
+        "text": "Solo tras obtener autorización directa y simultánea del Director de Operaciones y la Guardia Civil.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Cuando en su opinión justificada, la presencia de dicha persona o carga pueda representar un peligro potencial para la seguridad de la aeronave, sus ocupantes o el orden a bordo.",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "Únicamente si cuenta con una orden judicial expresa y por escrito de un juez de guardia.",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Solo si el pasajero no tiene tarjeta de embarque válida.",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "Solo tras obtener autorización directa y simultánea del Director de Operaciones y la Guardia Civil.",
+        "text": "Solo si el pasajero no tiene tarjeta de embarque válida.",
         "is_correct": false
       }
     ],
@@ -1187,13 +1187,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Tan pronto como sea posible y, en todo caso, dentro de las 72 horas siguientes al momento en que tuvo conocimiento del suceso.",
-        "is_correct": true
+        "text": "En un plazo máximo de 30 días naturales.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "En un plazo máximo de 30 días naturales.",
-        "is_correct": false
+        "text": "Tan pronto como sea posible y, en todo caso, dentro de las 72 horas siguientes al momento en que tuvo conocimiento del suceso.",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1230,12 +1230,12 @@
       },
       {
         "id": "B",
-        "text": "Visibilidad no inferior a 5.000 m y techo de 1.500 ft.",
+        "text": "Visibilidad de 800 m y techo de 200 ft con ILS operativo.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Visibilidad de 800 m y techo de 200 ft con ILS operativo.",
+        "text": "Visibilidad no inferior a 5.000 m y techo de 1.500 ft.",
         "is_correct": false
       },
       {
@@ -1263,22 +1263,22 @@
     "options": [
       {
         "id": "A",
+        "text": "Ejecutar un viraje escarpado inmediato de 90 grados hacia el viento relativo desconectando todos los directores de vuelo para evitar la microrráfaga.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Aplicar empuje máximo (MAX thrust / TO/GA), seguir la guía de pitch del Flight Director hacia la actitud de escape sin modificar la configuración de flaps ni tren de aterrizaje hasta confirmar la salida segura del fenómeno.",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "Retraer inmediatamente el tren de aterrizaje y reducir flaps a posición 0 para disminuir la resistencia parásita mientras se acelera en vuelo horizontal.",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Reducir palancas de empuje a IDLE para evitar una sobrevelocidad estructural y mantener el régimen de descenso estándar hacia la pista.",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "Ejecutar un viraje escarpado inmediato de 90 grados hacia el viento relativo desconectando todos los directores de vuelo para evitar la microrráfaga.",
+        "text": "Reducir palancas de empuje a IDLE para evitar una sobrevelocidad estructural y mantener el régimen de descenso estándar hacia la pista.",
         "is_correct": false
       }
     ],
@@ -1311,12 +1311,12 @@
       },
       {
         "id": "C",
-        "text": "Ordenar al avión que realice esperas adicionales hasta que los despegues hayan concluido.",
+        "text": "Solicitar al Comandante que repita el pesaje de combustible por radio antes de otorgar prioridad.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Solicitar al Comandante que repita el pesaje de combustible por radio antes de otorgar prioridad.",
+        "text": "Ordenar al avión que realice esperas adicionales hasta que los despegues hayan concluido.",
         "is_correct": false
       }
     ],
@@ -1345,12 +1345,12 @@
       },
       {
         "id": "B",
-        "text": "Es obligatorio aplicar siempre los mínimos de CAT I con incremento de 2 aproximaciones independientes (+100 ft / +300 m).",
+        "text": "No se pueden utilizar mínimos CAT III para planificación bajo ninguna circunstancia.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "No se pueden utilizar mínimos CAT III para planificación bajo ninguna circunstancia.",
+        "text": "Es obligatorio aplicar siempre los mínimos de CAT I con incremento de 2 aproximaciones independientes (+100 ft / +300 m).",
         "is_correct": false
       },
       {
@@ -1378,22 +1378,22 @@
     "options": [
       {
         "id": "A",
+        "text": "Aproximaciones Tipo B: sin incremento; Aproximaciones Tipo A: MDA/H + 500 ft y VIS + 2.000 m.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Aproximaciones Tipo B: DA/H + 200 ft y RVR/VIS + 800 m; Aproximaciones Tipo A: DA/H o MDA/H + 400 ft y RVR/VIS + 1.500 m.",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "Aproximaciones Tipo B: DA/H + 100 ft y RVR + 300 m; Aproximaciones Tipo A: MDA/H + 200 ft y VIS + 1.000 m.",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Aproximaciones Tipo B: DA/H + 150 ft y RVR + 450 m; Aproximaciones Tipo A: MDA/H + 300 ft y VIS + 800 m.",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "Aproximaciones Tipo B: sin incremento; Aproximaciones Tipo A: MDA/H + 500 ft y VIS + 2.000 m.",
+        "text": "Aproximaciones Tipo B: DA/H + 150 ft y RVR + 450 m; Aproximaciones Tipo A: MDA/H + 300 ft y VIS + 800 m.",
         "is_correct": false
       }
     ],
@@ -1416,22 +1416,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Aplica a ítems de CDL que no afectan o que mejoran la resistencia aerodinámica del avión; en este caso, cualquier número acumulado de ítems puede faltar sin penalización adicional.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Aplica únicamente si no falta más de 1 ítem por cada plano alar.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Exige reducir 20 kg por cada ítem a partir del segundo.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Significa que la penalización solo se aplica si la pista está mojada o contaminada.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aplica a ítems de CDL que no afectan o que mejoran la resistencia aerodinámica del avión; en este caso, cualquier número acumulado de ítems puede faltar sin penalización adicional.",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Aplica únicamente si no falta más de 1 ítem por cada plano alar.",
         "is_correct": false
       }
     ],
@@ -1459,12 +1459,12 @@
       },
       {
         "id": "B",
-        "text": "225 kg (500 lb), calculados aplicando una deducción lineal acumulada de 45 kg (100 lb) por cada uno de los 5 elementos faltantes desde el primer ítem.",
+        "text": "0 kg (sin penalización), ya que cualquier elemento catalogado bajo CDL como individualmente despreciable no genera impacto en peso sin importar la cantidad.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "0 kg (sin penalización), ya que cualquier elemento catalogado bajo CDL como individualmente despreciable no genera impacto en peso sin importar la cantidad.",
+        "text": "225 kg (500 lb), calculados aplicando una deducción lineal acumulada de 45 kg (100 lb) por cada uno de los 5 elementos faltantes desde el primer ítem.",
         "is_correct": false
       },
       {
@@ -1497,12 +1497,12 @@
       },
       {
         "id": "B",
-        "text": "140 kg.",
+        "text": "300 kg.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "300 kg.",
+        "text": "140 kg.",
         "is_correct": false
       },
       {
@@ -1530,22 +1530,22 @@
     "options": [
       {
         "id": "A",
-        "text": "140 kg (equivalente al consumo de 5 minutos de espera a 1.500 ft en condiciones estándar).",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "200 kg.",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "140 kg (equivalente al consumo de 5 minutos de espera a 1.500 ft en condiciones estándar).",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "350 kg.",
+        "text": "500 kg.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "500 kg.",
+        "text": "350 kg.",
         "is_correct": false
       }
     ],
@@ -1568,22 +1568,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Disponer de un aeropuerto alternativo en ruta por combustible (Fuel ERA) que cumpla con los mínimos de planificación aplicables dentro del círculo de radio correspondiente a lo largo de la ruta.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Que el vuelo tenga una duración de etapa programada inferior a 45 minutos y se opere exclusivamente dentro del espacio aéreo controlado interinsular.",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Disponer de un aeropuerto alternativo en ruta por combustible (Fuel ERA) que cumpla con los mínimos de planificación aplicables dentro del círculo de radio correspondiente a lo largo de la ruta.",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "Que la operación se realice como vuelo ferry de posicionamiento sin pasaje a bordo y con autorización expresa del Director de Operaciones.",
+        "text": "Que el aeródromo de destino disponga de al menos dos pistas independientes en servicio con aproximaciones de precisión CAT II/III operativas.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Que el aeródromo de destino disponga de al menos dos pistas independientes en servicio con aproximaciones de precisión CAT II/III operativas.",
+        "text": "Que la operación se realice como vuelo ferry de posicionamiento sin pasaje a bordo y con autorización expresa del Director de Operaciones.",
         "is_correct": false
       }
     ],
@@ -1606,22 +1606,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Para aeródromos con categoría RFFS dos niveles inferiores al de la categoría de la aeronave (para flota Embraer, RFFS del aeródromo = 5).",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Cuando la categoría RFFS se degrade de 7 a 6.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Únicamente si la pista tiene menos de 2.000 m de longitud.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "Para aeródromos con categoría RFFS dos niveles inferiores al de la categoría de la aeronave (para flota Embraer, RFFS del aeródromo = 5).",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "Solo cuando la temperatura exterior sea menor a 0 °C.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cuando la categoría RFFS se degrade de 7 a 6.",
         "is_correct": false
       }
     ],
@@ -1644,8 +1644,8 @@
     "options": [
       {
         "id": "A",
-        "text": "4 metros de radio alrededor de las aperturas de ventilación (desaire) de los tanques en puntas de plano y bocas de carga.",
-        "is_correct": true
+        "text": "2 metros de distancia fija uniforme para cualquier equipo de handling.",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1654,12 +1654,12 @@
       },
       {
         "id": "C",
-        "text": "10 metros en todo el perímetro exterior del stand.",
-        "is_correct": false
+        "text": "4 metros de radio alrededor de las aperturas de ventilación (desaire) de los tanques en puntas de plano y bocas de carga.",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "2 metros de distancia fija uniforme para cualquier equipo de handling.",
+        "text": "10 metros en todo el perímetro exterior del stand.",
         "is_correct": false
       }
     ],
@@ -1682,22 +1682,22 @@
     "options": [
       {
         "id": "A",
-        "text": "En un radio de seguridad que les permita actuar en 90 segundos en caso de incendio.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "A pie de avión a menos de 10 metros del ala en todo momento.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "En el parque de bomberos con tiempo de respuesta de 5 minutos.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "En la torre de control en posición de vigilancia visual.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En un radio de seguridad que les permita actuar en 90 segundos en caso de incendio.",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "A pie de avión a menos de 10 metros del ala en todo momento.",
         "is_correct": false
       }
     ],
@@ -1720,22 +1720,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Blanco: Permanece en el libro para referencia de pilotos y mecánicos y se archiva en mantenimiento al agotar el taco; Amarillo: Se retira al finalizar el set y se incluye en el sobre de vuelo.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Blanco: Se entrega al pasajero; Amarillo: Se destruye tras el vuelo.",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Blanco: Permanece en el libro para referencia de pilotos y mecánicos y se archiva en mantenimiento al agotar el taco; Amarillo: Se retira al finalizar el set y se incluye en el sobre de vuelo.",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "Blanco: Se queda en la escala de salida; Amarillo: Se entrega a la torre de control.",
+        "text": "Blanco: Para AESA; Amarillo: Para el despachador de combustible.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Blanco: Para AESA; Amarillo: Para el despachador de combustible.",
+        "text": "Blanco: Se queda en la escala de salida; Amarillo: Se entrega a la torre de control.",
         "is_correct": false
       }
     ],
@@ -1758,8 +1758,8 @@
     "options": [
       {
         "id": "A",
-        "text": "\"SATISFACTORY INSPECTION WAS PERFORMED I.A.W. AOM 13-65\".",
-        "is_correct": true
+        "text": "\"PILOT INSPECTION COMPLETED NIL DEFECTS\".",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1768,13 +1768,13 @@
       },
       {
         "id": "C",
-        "text": "\"PILOT INSPECTION COMPLETED NIL DEFECTS\".",
+        "text": "\"OVERSPEED INSPECTION CARRIED OUT BY CAPTAIN\".",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "\"OVERSPEED INSPECTION CARRIED OUT BY CAPTAIN\".",
-        "is_correct": false
+        "text": "\"SATISFACTORY INSPECTION WAS PERFORMED I.A.W. AOM 13-65\".",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1796,8 +1796,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Marcar con 'x' la casilla F (fallida), describir el fallo técnico en la casilla DEFECT DETAILS anteponiendo la reseña 'CAT II/III APP FAILED' y cumplimentar el reporte ACARS.",
-        "is_correct": true
+        "text": "No realizar ninguna anotación si el avión aterriza seguro en el segundo intento.",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1806,8 +1806,8 @@
       },
       {
         "id": "C",
-        "text": "No realizar ninguna anotación si el avión aterriza seguro en el segundo intento.",
-        "is_correct": false
+        "text": "Marcar con 'x' la casilla F (fallida), describir el fallo técnico en la casilla DEFECT DETAILS anteponiendo la reseña 'CAT II/III APP FAILED' y cumplimentar el reporte ACARS.",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1834,22 +1834,22 @@
     "options": [
       {
         "id": "A",
-        "text": "+/- 5 kts respecto de la velocidad deseada (sin tener en cuenta fluctuaciones rápidas por turbulencia) y sin fallos en sistemas relevantes.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "+/- 10 kts respecto de la Vapp calculada, admitiéndose desviaciones transitorias de hasta 15 kts si el empuje automático está en modo retard.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "+/- 15 kts respecto de la velocidad de aproximación siempre que no se active el sistema Stick Shaker ni se superen los límites de Flap.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Cualquier velocidad estabilizada comprendida entre la Vref de aterrizaje y la velocidad máxima de extensión de flaps (Vfe) para esa configuración.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "+/- 5 kts respecto de la velocidad deseada (sin tener en cuenta fluctuaciones rápidas por turbulencia) y sin fallos en sistemas relevantes.",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "+/- 10 kts respecto de la Vapp calculada, admitiéndose desviaciones transitorias de hasta 15 kts si el empuje automático está en modo retard.",
         "is_correct": false
       }
     ],
@@ -1872,18 +1872,18 @@
     "options": [
       {
         "id": "A",
-        "text": "Más allá de los 150 metros desde el umbral y antes del final de la zona de toma de contacto (TDZ, 750 metros desde el umbral).",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Entre 0 y 300 metros desde el umbral.",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "En los primeros 1.000 metros de pista.",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Más allá de los 150 metros desde el umbral y antes del final de la zona de toma de contacto (TDZ, 750 metros desde el umbral).",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1910,22 +1910,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Desviación de senda de planeo superior a 1 punto o desviación de localizador superior a 1/4 de punto.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Desviación de senda superior a 2 puntos o localizador superior a 1 punto.",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Desviación de senda de planeo superior a 1 punto o desviación de localizador superior a 1/4 de punto.",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "Desviación de senda superior a 1/2 punto y localizador a escala completa.",
+        "text": "No se permite ninguna desviación detectable (0 puntos).",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No se permite ninguna desviación detectable (0 puntos).",
+        "text": "Desviación de senda superior a 1/2 punto y localizador a escala completa.",
         "is_correct": false
       }
     ],
@@ -1948,22 +1948,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Cuando la desviación de la senda de planeo exceda de 1/2 punto o la desviación del localizador exceda de 1/4 de punto.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Cuando la senda de planeo exceda de 1 punto y el localizador de 1/2 punto.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Únicamente si la aeronave se sale de la pista antes de la recogida.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Solo si falla simultáneamente el radioaltímetro.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cuando la desviación de la senda de planeo exceda de 1/2 punto o la desviación del localizador exceda de 1/4 de punto.",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Cuando la senda de planeo exceda de 1 punto y el localizador de 1/2 punto.",
         "is_correct": false
       }
     ],
@@ -1986,22 +1986,22 @@
     "options": [
       {
         "id": "A",
+        "text": "Al alcanzar la calle de rodaje principal independientemente del color de las luces.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Cuando la proyección de la cola del avión haya rebasado el punto del área sensible donde las luces de rodadura dejan de ser alternadas ámbar/verde y pasan a ser todas verdes.",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "Inmediatamente cuando el tren de morro abandone el asfalto de la pista activa.",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "En cuanto la velocidad del avión baje de 30 nudos durante la deceleración.",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "Al alcanzar la calle de rodaje principal independientemente del color de las luces.",
+        "text": "En cuanto la velocidad del avión baje de 30 nudos durante la deceleración.",
         "is_correct": false
       }
     ],
@@ -2029,7 +2029,7 @@
       },
       {
         "id": "B",
-        "text": "Sin efecto en ningún caso, pudiendo realizarse la aproximación sin condiciones adicionales.",
+        "text": "La aproximación queda automáticamente degradada a Circling visual.",
         "is_correct": false
       },
       {
@@ -2039,7 +2039,7 @@
       },
       {
         "id": "D",
-        "text": "La aproximación queda automáticamente degradada a Circling visual.",
+        "text": "Sin efecto en ningún caso, pudiendo realizarse la aproximación sin condiciones adicionales.",
         "is_correct": false
       }
     ],
@@ -2062,17 +2062,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Un viento constante de 15 kt en cola durante el tramo base y un ángulo de alabeo máximo limitado a 15° por seguridad de pasaje.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Un viento de 25 kt durante el viraje y un alabeo medio de 20° o un régimen de 3° por segundo (lo que requiera menor alabeo).",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "Viento en calma en toda el área protegida y un alabeo fijo estándar de 25° mantenido a velocidad constante de aproximación.",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Un viento constante de 15 kt en cola durante el tramo base y un ángulo de alabeo máximo limitado a 15° por seguridad de pasaje.",
+        "text": "Viento en calma en toda el área protegida y un alabeo fijo estándar de 25° mantenido a velocidad constante de aproximación.",
         "is_correct": false
       },
       {
@@ -2100,22 +2100,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Categoría B: 135 kt; Categoría C: 180 kt.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Categoría B: 120 kt; Categoría C: 160 kt.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Categoría B: 150 kt; Categoría C: 200 kt.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "Categoría B: 135 kt; Categoría C: 180 kt.",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "Categoría B: 100 kt; Categoría C: 140 kt.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Categoría B: 120 kt; Categoría C: 160 kt.",
         "is_correct": false
       }
     ],
@@ -2138,22 +2138,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Mediante una pesada cada 4 años, o cuando las modificaciones en el registro superen el 0,5% de la masa máxima de aterrizaje (MLM) o el 0,5% de la cuerda media aerodinámica (%MAC).",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Mediante una pesada anual obligatoria en hangar, o cuando las reparaciones estructurales acumuladas superen los 250 kg de masa seca.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Mediante pesada cada 2 años para reactores y 3 años para turbohélices, o tras cualquier cambio de motor o unidad de potencia auxiliar.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "Mediante una pesada cada 4 años, o cuando las modificaciones en el registro superen el 0,5% de la masa máxima de aterrizaje (MLM) o el 0,5% de la cuerda media aerodinámica (%MAC).",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "Únicamente tras la realización de una gran parada de mantenimiento (C-Check) o cuando la aeronave se someta a un repintado completo de fuselaje.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mediante una pesada anual obligatoria en hangar, o cuando las reparaciones estructurales acumuladas superen los 250 kg de masa seca.",
         "is_correct": false
       }
     ],
@@ -2176,23 +2176,23 @@
     "options": [
       {
         "id": "A",
-        "text": "La reseña \"RVSM OK\" junto a la anotación del combustible consumido a intervalos de 60 minutos.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "El valor del altímetro primario cada 15 minutos.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "La firma de ambos pilotos al cruzar cada punto de notificación obligatorio.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "El código transponder asignado en cada cambio de sector ATC.",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El valor del altímetro primario cada 15 minutos.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La reseña \"RVSM OK\" junto a la anotación del combustible consumido a intervalos de 60 minutos.",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -2214,22 +2214,22 @@
     "options": [
       {
         "id": "A",
+        "text": "6 meses.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Al menos 2 años.",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "3 meses.",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "5 años.",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "6 meses.",
+        "text": "5 años.",
         "is_correct": false
       }
     ],
@@ -2252,12 +2252,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Comprobar que las cantidades de aceite hayan sido controladas al menos una vez en los últimos dos días por personal de mantenimiento a través de la entrada correspondiente en el Libro Técnico de Vuelo (ATL).",
-        "is_correct": true
+        "text": "Realizar una inspección visual directa con varilla en cada motor durante la escala intermedia antes de autorizar el cierre de compuertas.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Realizar una inspección visual directa con varilla en cada motor durante la escala intermedia antes de autorizar el cierre de compuertas.",
+        "text": "Calcular el consumo horario teórico en base al tiempo de vuelo previsto y descontarlo de la capacidad nominal registrada en el manual de vuelo.",
         "is_correct": false
       },
       {
@@ -2267,8 +2267,8 @@
       },
       {
         "id": "D",
-        "text": "Calcular el consumo horario teórico en base al tiempo de vuelo previsto y descontarlo de la capacidad nominal registrada en el manual de vuelo.",
-        "is_correct": false
+        "text": "Comprobar que las cantidades de aceite hayan sido controladas al menos una vez en los últimos dos días por personal de mantenimiento a través de la entrada correspondiente en el Libro Técnico de Vuelo (ATL).",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -2290,13 +2290,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Cumplimentar las casillas CAT II/III del ATL marcando con 'x' la casilla S (simulada), anotar 'Satisfactorio' en Observaciones, rellenar el formulario 'CAT II/III Status' para mantenimiento e informar vía ACARS mediante el formato 'POST FLIGHT REPORT'.",
-        "is_correct": true
+        "text": "Notificar verbalmente el resultado positivo a la frecuencia de coordinación de rampa de la escala y registrar únicamente las horas de vuelo en el sistema EFB.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Notificar verbalmente el resultado positivo a la frecuencia de coordinación de rampa de la escala y registrar únicamente las horas de vuelo en el sistema EFB.",
-        "is_correct": false
+        "text": "Cumplimentar las casillas CAT II/III del ATL marcando con 'x' la casilla S (simulada), anotar 'Satisfactorio' en Observaciones, rellenar el formulario 'CAT II/III Status' para mantenimiento e informar vía ACARS mediante el formato 'POST FLIGHT REPORT'.",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -2328,8 +2328,8 @@
     "options": [
       {
         "id": "A",
-        "text": "140 kt IAS.",
-        "is_correct": true
+        "text": "Vref + 5 kt.",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -2343,8 +2343,8 @@
       },
       {
         "id": "D",
-        "text": "Vref + 5 kt.",
-        "is_correct": false
+        "text": "140 kt IAS.",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -2366,13 +2366,13 @@
     "options": [
       {
         "id": "A",
-        "text": "2 aproximaciones instrumentales (un tercer intento solo se autoriza ante una mejora meteorológica manifiesta y contrastada).",
-        "is_correct": true
+        "text": "Tantas como permita el combustible de reserva sin límite de número de intentos.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "4 aproximaciones siempre que se conserve el combustible hacia el alternativo.",
-        "is_correct": false
+        "text": "2 aproximaciones instrumentales (un tercer intento solo se autoriza ante una mejora meteorológica manifiesta y contrastada).",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -2381,7 +2381,7 @@
       },
       {
         "id": "D",
-        "text": "Tantas como permita el combustible de reserva sin límite de número de intentos.",
+        "text": "4 aproximaciones siempre que se conserve el combustible hacia el alternativo.",
         "is_correct": false
       }
     ],
@@ -2404,22 +2404,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Hasta 2 horas en tripulación estándar (o hasta 3 horas en tripulación aumentada con descanso en vuelo).",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Hasta 4 horas de prolongación para cualquier composición de tripulación previa autorización verbal del CCO.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Máximo 45 minutos si el vuelo de regreso es el último sector de la serie y no existen tráficos en espera.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "Hasta 2 horas en tripulación estándar (o hasta 3 horas en tripulación aumentada con descanso en vuelo).",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "Hasta 1 hora exclusivamente en vuelos diurnos que no incluyan cruces de sectores nocturnos (WN4).",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Hasta 4 horas de prolongación para cualquier composición de tripulación previa autorización verbal del CCO.",
         "is_correct": false
       }
     ],
@@ -2447,17 +2447,17 @@
       },
       {
         "id": "B",
-        "text": "Rebobinar y borrar inmediatamente las pistas de audio de cabina antes de abandonar el avión para salvaguardar la privacidad de la tripulación técnica.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Desmontar manualmente las unidades de memoria blindadas de la cola del avión y trasladarlas en mano a la sede central de la aerolínea.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Mantener todos los generadores y bombas eléctricas activados durante la escala para que los micrófonos de ambiente continúen registrando el sonido en tierra.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Rebobinar y borrar inmediatamente las pistas de audio de cabina antes de abandonar el avión para salvaguardar la privacidad de la tripulación técnica.",
         "is_correct": false
       }
     ],
@@ -2481,13 +2481,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Tripulación técnica (Flight Crew): 85 kg por piloto | Tripulación de cabina (Cabin Crew / TCP): 75 kg por TCP",
-        "is_correct": true
+        "text": "Tripulación técnica: 90 kg por piloto | Tripulación de cabina: 85 kg por TCP",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Tripulación técnica: 88 kg por piloto | Tripulación de cabina: 70 kg por TCP",
-        "is_correct": false
+        "text": "Tripulación técnica (Flight Crew): 85 kg por piloto | Tripulación de cabina (Cabin Crew / TCP): 75 kg por TCP",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -2496,7 +2496,7 @@
       },
       {
         "id": "D",
-        "text": "Tripulación técnica: 90 kg por piloto | Tripulación de cabina: 85 kg por TCP",
+        "text": "Tripulación técnica: 88 kg por piloto | Tripulación de cabina: 70 kg por TCP",
         "is_correct": false
       }
     ],

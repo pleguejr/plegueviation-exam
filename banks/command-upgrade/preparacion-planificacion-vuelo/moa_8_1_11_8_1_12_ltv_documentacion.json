@@ -7,23 +7,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Es el diario principal de mantenimiento y control técnico a bordo; Binter otorga autoridad expresa al Comandante para rechazar la aeronave si está en desacuerdo con su estado",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Es un registro contable de las ventas de comida a bordo sin valor legal de mantenimiento",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "El Comandante está obligado a aceptar el avión en cualquier circunstancia sin derecho a objeción técnica",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Es un documento informal que se destruye al final de cada jornada de vuelos",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Es un registro contable de las ventas de comida a bordo sin valor legal de mantenimiento",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Es el diario principal de mantenimiento y control técnico a bordo; Binter otorga autoridad expresa al Comandante para rechazar la aeronave si está en desacuerdo con su estado",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -44,8 +44,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Blanco: permanece en el libro para mantenimiento | Amarillo: sobre de vuelo al final del set | Verde: retirado por mantenimiento | Azul: escala (hasta 2 por set)",
-        "is_correct": true
+        "text": "Blanco: se envía a AENA | Amarillo: a la torre de control | Verde: a la aduana | Azul: se destruye en el avión",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -59,8 +59,8 @@
       },
       {
         "id": "D",
-        "text": "Blanco: se envía a AENA | Amarillo: a la torre de control | Verde: a la aduana | Azul: se destruye en el avión",
-        "is_correct": false
+        "text": "Blanco: permanece en el libro para mantenimiento | Amarillo: sobre de vuelo al final del set | Verde: retirado por mantenimiento | Azul: escala (hasta 2 por set)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -81,23 +81,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Documento donde se registran los defectos diferidos (ADD) autorizados por la MEL/CDL, debiendo reflejar la fecha y límite horario estipulado para su subsanación",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Una lista de reclamaciones de equipajes extraviados en la escala de llegada",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "El listado de tripulantes de vuelo que solicitan vacaciones de verano",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Un registro de las películas proyectadas en las pantallas de los pasajeros",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Una lista de reclamaciones de equipajes extraviados en la escala de llegada",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Documento donde se registran los defectos diferidos (ADD) autorizados por la MEL/CDL, debiendo reflejar la fecha y límite horario estipulado para su subsanación",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -118,8 +118,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Anotar obligatoriamente la palabra 'NIL' en la primera casilla de DEFECTS",
-        "is_correct": true
+        "text": "Tachar toda la página con dos líneas diagonales rojas",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -128,13 +128,13 @@
       },
       {
         "id": "C",
-        "text": "Tachar toda la página con dos líneas diagonales rojas",
+        "text": "Escribir el menú servido a la tripulación técnica en vuelo",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Escribir el menú servido a la tripulación técnica en vuelo",
-        "is_correct": false
+        "text": "Anotar obligatoriamente la palabra 'NIL' en la primera casilla de DEFECTS",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -155,22 +155,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Registro Técnico del Avión (ATL físico con Lista de Diferidos HIL), QRH y Listas de chequeo de emergencia, y Hoja de Carga manual de respaldo",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Toda la biblioteca de manuales de la compañía impresa en 20 tomos de enciclopedia",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "No se exige ningún papel a bordo permitiendo volar con la cabina 100% desprovista de documentos físicos",
+        "id": "B",
+        "text": "Únicamente los periódicos locales del día de la salida",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Registro Técnico del Avión (ATL físico con Lista de Diferidos HIL), QRH y Listas de chequeo de emergencia, y Hoja de Carga manual de respaldo",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Únicamente los periódicos locales del día de la salida",
+        "text": "No se exige ningún papel a bordo permitiendo volar con la cabina 100% desprovista de documentos físicos",
         "is_correct": false
       }
     ],
@@ -192,23 +192,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Comprobar que la cuantía de litros del albarán multiplicada por la densidad se corresponde con el 'UPLIFT' en kg anotado en el ATL",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Firmar el albarán sin comprobar los números para no retrasar el rodaje",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Exigir que el combustible sea de color verde fluorescente",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Solicitar que el conductor del camión cisterna realice el prevuelo del avión",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Comprobar que la cuantía de litros del albarán multiplicada por la densidad se corresponde con el 'UPLIFT' en kg anotado en el ATL",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -229,23 +229,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Marcando la casilla de categoría, indicando 'R' (Real) o 'S' (Simulada) y anotando 'Satisfactorio' o 'F' (Fallida con causas o Defect Details si es fallo del avión)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Enviando una carta certificada al ministerio de transportes al día siguiente",
+        "text": "Haciendo una marca con rotulador en el parabrisas de cabina",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Borrando los registros de navegación del FMS antes de apagar baterías",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Haciendo una marca con rotulador en el parabrisas de cabina",
+        "id": "C",
+        "text": "Enviando una carta certificada al ministerio de transportes al día siguiente",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Marcando la casilla de categoría, indicando 'R' (Real) o 'S' (Simulada) y anotando 'Satisfactorio' o 'F' (Fallida con causas o Defect Details si es fallo del avión)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -266,22 +266,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Anotar expresamente la reseña 'NON RVSM capability' en la casilla DEFECT DETAILS del ATL",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Anotar que el avión solo puede volar en días soleados",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "No escribir nada si el segundo piloto tiene buena visión espacial",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "Anotar expresamente la reseña 'NON RVSM capability' en la casilla DEFECT DETAILS del ATL",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "Tachar el logotipo de la compañía en la portada del libro técnico",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Anotar que el avión solo puede volar en días soleados",
         "is_correct": false
       }
     ],
@@ -303,23 +303,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Bird Strike Check (impacto de ave), Heavy Landing Check (toma dura), Lightning Strike Check (impacto de rayo) y Ground Incident Report",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Inspección de limpieza de tapicería tras cada servicio de comida",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Comprobación de la caducidad de los caramelos de cortesía",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Verificación del volumen de los altavoces de música de embarque",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Bird Strike Check (impacto de ave), Heavy Landing Check (toma dura), Lightning Strike Check (impacto de rayo) y Ground Incident Report",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -340,13 +340,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Hasta 4 averías por página; si hay más de 4 averías se utiliza una nueva página referenciando el número de ATL previo",
-        "is_correct": true
+        "text": "Hasta 50 averías en los márgenes de la misma página",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Hasta 50 averías en los márgenes de la misma página",
-        "is_correct": false
+        "text": "Hasta 4 averías por página; si hay más de 4 averías se utiliza una nueva página referenciando el número de ATL previo",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -387,12 +387,12 @@
       },
       {
         "id": "C",
-        "text": "Las nóminas del personal de administración de la empresa",
+        "text": "El contrato de arrendamiento del edificio de oficinas centrales",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "El contrato de arrendamiento del edificio de oficinas centrales",
+        "text": "Las nóminas del personal de administración de la empresa",
         "is_correct": false
       }
     ],
@@ -414,8 +414,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Comprobar que el identificador digital 'ID' o código seguro de verificación (CSV), imprescindible para su validación electrónica, sea perfectamente legible",
-        "is_correct": true
+        "text": "Prohibir el uso de cualquier documento que no tenga un sello de caucho con tinta húmeda",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -429,8 +429,8 @@
       },
       {
         "id": "D",
-        "text": "Prohibir el uso de cualquier documento que no tenga un sello de caucho con tinta húmeda",
-        "is_correct": false
+        "text": "Comprobar que el identificador digital 'ID' o código seguro de verificación (CSV), imprescindible para su validación electrónica, sea perfectamente legible",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -456,7 +456,7 @@
       },
       {
         "id": "B",
-        "text": "Título universitario de bachillerato y carnet de conducir de automóviles",
+        "text": "Un libro de bitácora privado sin certificar por ninguna autoridad",
         "is_correct": false
       },
       {
@@ -466,7 +466,7 @@
       },
       {
         "id": "D",
-        "text": "Un libro de bitácora privado sin certificar por ninguna autoridad",
+        "text": "Título universitario de bachillerato y carnet de conducir de automóviles",
         "is_correct": false
       }
     ],
@@ -488,8 +488,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Relación nominal de pasajeros, asientos asignados, desglose por categorías (hombres, mujeres, niños, bebés), pasajeros con movilidad reducida (PRM) y conexiones",
-        "is_correct": true
+        "text": "El historial crediticio de los pasajeros de clase ejecutiva",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -503,8 +503,8 @@
       },
       {
         "id": "D",
-        "text": "El historial crediticio de los pasajeros de clase ejecutiva",
-        "is_correct": false
+        "text": "Relación nominal de pasajeros, asientos asignados, desglose por categorías (hombres, mujeres, niños, bebés), pasajeros con movilidad reducida (PRM) y conexiones",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -567,12 +567,12 @@
       },
       {
         "id": "B",
-        "text": "Aplicando líquido corrector blanco opaco y escribiendo encima",
+        "text": "Arrancando la hoja del libro y quemándola en una papelera",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Arrancando la hoja del libro y quemándola en una papelera",
+        "text": "Aplicando líquido corrector blanco opaco y escribiendo encima",
         "is_correct": false
       },
       {
@@ -599,12 +599,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Siempre que hayan sido debidamente entrenados y autorizados, firmando la casilla dedicada a la certificación del Pre-flight Check en el ATL",
-        "is_correct": true
+        "text": "Los pilotos nunca pueden realizar ni firmar ninguna inspección en el avión",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Los pilotos nunca pueden realizar ni firmar ninguna inspección en el avión",
+        "text": "Solo si el personal de mantenimiento se encuentra de vacaciones",
         "is_correct": false
       },
       {
@@ -614,8 +614,8 @@
       },
       {
         "id": "D",
-        "text": "Solo si el personal de mantenimiento se encuentra de vacaciones",
-        "is_correct": false
+        "text": "Siempre que hayan sido debidamente entrenados y autorizados, firmando la casilla dedicada a la certificación del Pre-flight Check en el ATL",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -636,23 +636,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Manual de Operaciones (Partes A, B, C), AFM, AOM, SOPM, QRH, MEL, Guía de Respuestas a Emergencias OACI Doc 9481 y Manual de FMS",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Enciclopedias de geografía universal y manuales de mecánica de automóviles",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Revistas de moda y catálogos de venta de artículos libres de impuestos",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Manuales de pilotaje de helicópteros militares de combate",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Enciclopedias de geografía universal y manuales de mecánica de automóviles",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Manual de Operaciones (Partes A, B, C), AFM, AOM, SOPM, QRH, MEL, Guía de Respuestas a Emergencias OACI Doc 9481 y Manual de FMS",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -678,17 +678,17 @@
       },
       {
         "id": "B",
-        "text": "Tirar el maletín a la basura al aterrizar sin registrar el consumo de fármacos",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Cobrar el coste de las ampollas al pasajero enfermo antes de desembarcar",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Ocultar el uso del botiquín para no tener que precintarlo de nuevo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Tirar el maletín a la basura al aterrizar sin registrar el consumo de fármacos",
         "is_correct": false
       }
     ],
@@ -710,22 +710,22 @@
     "options": [
       {
         "id": "A",
-        "text": "El Informe de Interferencias Producidas por Dispositivos Electrónicos Portátiles (R-MOA-AN.012)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "El parte de defunción del pasajero propietario del dispositivo",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "La carta de reclamación al fabricante del teléfono móvil",
+        "id": "B",
+        "text": "El boletín oficial del estado de la comunidad autónoma",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "El Informe de Interferencias Producidas por Dispositivos Electrónicos Portátiles (R-MOA-AN.012)",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "El boletín oficial del estado de la comunidad autónoma",
+        "text": "La carta de reclamación al fabricante del teléfono móvil",
         "is_correct": false
       }
     ],
@@ -784,8 +784,8 @@
     "options": [
       {
         "id": "A",
-        "text": "ATD = Hora de despegue (Airborne/Wheels-off); ATA = Hora de toma de contacto (Touchdown/Wheels-on); Tiempo de Vuelo = Intervalo entre el despegue y la toma",
-        "is_correct": true
+        "text": "ATD = Hora de cierre de puertas; ATA = Hora de apertura de puertas; Tiempo de Vuelo = Bloque total",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -794,13 +794,13 @@
       },
       {
         "id": "C",
-        "text": "ATD = Hora de cierre de puertas; ATA = Hora de apertura de puertas; Tiempo de Vuelo = Bloque total",
+        "text": "ATD = Hora de encendido de luces; ATA = Hora de apagado de motores; Tiempo de Vuelo = Cero",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "ATD = Hora de encendido de luces; ATA = Hora de apagado de motores; Tiempo de Vuelo = Cero",
-        "is_correct": false
+        "text": "ATD = Hora de despegue (Airborne/Wheels-off); ATA = Hora de toma de contacto (Touchdown/Wheels-on); Tiempo de Vuelo = Intervalo entre el despegue y la toma",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -821,13 +821,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Cat A: Plazo específico indicado en la MEL | Cat B: 3 días consecutivos (72 h) | Cat C: 10 días consecutivos (240 h) | Cat D: 120 días consecutivos",
-        "is_correct": true
+        "text": "Todas las categorías tienen el mismo plazo fijo de 30 días",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Cat A: 1 año | Cat B: 2 años | Cat C: 3 años | Cat D: 5 años",
-        "is_correct": false
+        "text": "Cat A: Plazo específico indicado en la MEL | Cat B: 3 días consecutivos (72 h) | Cat C: 10 días consecutivos (240 h) | Cat D: 120 días consecutivos",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -836,7 +836,7 @@
       },
       {
         "id": "D",
-        "text": "Todas las categorías tienen el mismo plazo fijo de 30 días",
+        "text": "Cat A: 1 año | Cat B: 2 años | Cat C: 3 años | Cat D: 5 años",
         "is_correct": false
       }
     ],
@@ -863,7 +863,7 @@
       },
       {
         "id": "B",
-        "text": "Mapas de carreteras turísticas de las islas Canarias en escala 1:50.000",
+        "text": "Planos de urbanismo municipal de las ciudades costeras",
         "is_correct": false
       },
       {
@@ -873,7 +873,7 @@
       },
       {
         "id": "D",
-        "text": "Planos de urbanismo municipal de las ciudades costeras",
+        "text": "Mapas de carreteras turísticas de las islas Canarias en escala 1:50.000",
         "is_correct": false
       }
     ],
@@ -895,22 +895,22 @@
     "options": [
       {
         "id": "A",
+        "text": "Cuando el comandante viaja en compañía de su familia en asientos de cabina",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Para vuelos internacionales extracomunitarios (ej. vuelos a Marruecos, Mauritania, Senegal) para control de aduanas, policía de fronteras y sanidad",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "En todos los vuelos entre Gran Canaria y Tenerife Norte de forma obligatoria",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Únicamente si la aeronave transporta lingotes de oro en la bodega delantera",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "Cuando el comandante viaja en compañía de su familia en asientos de cabina",
+        "text": "Únicamente si la aeronave transporta lingotes de oro en la bodega delantera",
         "is_correct": false
       }
     ],
@@ -932,22 +932,22 @@
     "options": [
       {
         "id": "A",
-        "text": "La copia de **color azul**, asegurando que queda constancia documental del estado del avión y del vuelo anterior en tierra antes de partir",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "La hoja de color blanco arrancada del cuaderno principal",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "El libro técnico completo en su totalidad dejando el avión sin cuaderno",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "La copia de **color azul**, asegurando que queda constancia documental del estado del avión y del vuelo anterior en tierra antes de partir",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "No se deja ninguna copia en las escalas intermedias",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La hoja de color blanco arrancada del cuaderno principal",
         "is_correct": false
       }
     ],
@@ -969,8 +969,8 @@
     "options": [
       {
         "id": "A",
-        "text": "El Formulario de Búsqueda de Explosivos en el Avión (R-PSNT-11.003) y la lista de chequeo de la Lista de Lugares de Menor Riesgo (LRBL)",
-        "is_correct": true
+        "text": "El formulario de solicitud de uniformes de invierno",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -979,12 +979,12 @@
       },
       {
         "id": "C",
-        "text": "El albarán de compra de combustible de aviación",
-        "is_correct": false
+        "text": "El Formulario de Búsqueda de Explosivos en el Avión (R-PSNT-11.003) y la lista de chequeo de la Lista de Lugares de Menor Riesgo (LRBL)",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "El formulario de solicitud de uniformes de invierno",
+        "text": "El albarán de compra de combustible de aviación",
         "is_correct": false
       }
     ],
@@ -1011,7 +1011,7 @@
       },
       {
         "id": "B",
-        "text": "Comprobar que los mecánicos hayan lavado las ventanillas con agua tibia",
+        "text": "Ignorar las fechas de mantenimiento si el avión no muestra mensajes de aviso",
         "is_correct": false
       },
       {
@@ -1021,7 +1021,7 @@
       },
       {
         "id": "D",
-        "text": "Ignorar las fechas de mantenimiento si el avión no muestra mensajes de aviso",
+        "text": "Comprobar que los mecánicos hayan lavado las ventanillas con agua tibia",
         "is_correct": false
       }
     ],
@@ -1043,13 +1043,13 @@
     "options": [
       {
         "id": "A",
-        "text": "El expediente de UMNR con descargo de responsabilidad firmado por tutores legales, tarjeta de identificación al cuello del menor y datos de recogida en destino",
-        "is_correct": true
+        "text": "La autorización del juzgado de guardia de la provincia de nacimiento",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "El contrato de compraventa del billete de avión compulsado ante notario",
-        "is_correct": false
+        "text": "El expediente de UMNR con descargo de responsabilidad firmado por tutores legales, tarjeta de identificación al cuello del menor y datos de recogida en destino",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1058,7 +1058,7 @@
       },
       {
         "id": "D",
-        "text": "La autorización del juzgado de guardia de la provincia de nacimiento",
+        "text": "El contrato de compraventa del billete de avión compulsado ante notario",
         "is_correct": false
       }
     ],
@@ -1080,12 +1080,12 @@
     "options": [
       {
         "id": "A",
-        "text": "El Conocimiento Aéreo (Air Waybill - AWB), que viaja con la documentación del vuelo reflejando remitente, destinatario, peso y naturaleza de la mercancía",
-        "is_correct": true
+        "text": "La factura comercial del fabricante de los envases",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "La factura comercial del fabricante de los envases",
+        "text": "El comprobante de pago de la tarjeta de crédito del pasajero",
         "is_correct": false
       },
       {
@@ -1095,8 +1095,8 @@
       },
       {
         "id": "D",
-        "text": "El comprobante de pago de la tarjeta de crédito del pasajero",
-        "is_correct": false
+        "text": "El Conocimiento Aéreo (Air Waybill - AWB), que viaja con la documentación del vuelo reflejando remitente, destinatario, peso y naturaleza de la mercancía",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1117,12 +1117,12 @@
     "options": [
       {
         "id": "A",
-        "text": "El CCO y CAMO proporcionan una copia electrónica certificada del estado de mantenimiento, emitiéndose un ATL provisional autorizado por la CAMO",
-        "is_correct": true
+        "text": "Se despega sin registrar el vuelo y se compra un cuaderno escolar en la papelería",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Se despega sin registrar el vuelo y se compra un cuaderno escolar en la papelería",
+        "text": "Se espera a que la autoridad aeronáutica envíe un nuevo libro por barco",
         "is_correct": false
       },
       {
@@ -1132,8 +1132,8 @@
       },
       {
         "id": "D",
-        "text": "Se espera a que la autoridad aeronáutica envíe un nuevo libro por barco",
-        "is_correct": false
+        "text": "El CCO y CAMO proporcionan una copia electrónica certificada del estado de mantenimiento, emitiéndose un ATL provisional autorizado por la CAMO",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1154,22 +1154,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Validez de **1 año**, prorrogable hasta dos veces consecutivas de un año cada una si la aeronave ha permanecido en un entorno controlado de gestión",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Validez indefinida para toda la vida operativa del avión",
+        "text": "Validez de 10 años sin inspecciones intermedias",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Validez de 30 días naturales debiendo renovarse mensualmente",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Validez de **1 año**, prorrogable hasta dos veces consecutivas de un año cada una si la aeronave ha permanecido en un entorno controlado de gestión",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Validez de 10 años sin inspecciones intermedias",
+        "text": "Validez indefinida para toda la vida operativa del avión",
         "is_correct": false
       }
     ],
@@ -1191,22 +1191,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Emitida por la autoridad de telecomunicaciones del Estado de matrícula, amparando el uso legal de todas las frecuencias de radio, radares y transpondedores instalados",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Emitida por el fabricante de los auriculares de los pilotos",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Emitida por la compañía telefónica proveedora de internet móvil",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Emitida por el controlador aéreo del primer sector de ruta",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Emitida por la autoridad de telecomunicaciones del Estado de matrícula, amparando el uso legal de todas las frecuencias de radio, radares y transpondedores instalados",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Emitida por el fabricante de los auriculares de los pilotos",
         "is_correct": false
       }
     ],
@@ -1228,13 +1228,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Solicita presencia policial a través de ATC/Handling y formaliza el Modelo de Denuncia de Incidentes a Bordo (Anexo A / Instrucción SA-10)",
-        "is_correct": true
+        "text": "Invita al pasajero a visitar la cabina de mando para calmarlo",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Invita al pasajero a visitar la cabina de mando para calmarlo",
-        "is_correct": false
+        "text": "Solicita presencia policial a través de ATC/Handling y formaliza el Modelo de Denuncia de Incidentes a Bordo (Anexo A / Instrucción SA-10)",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1265,18 +1265,18 @@
     "options": [
       {
         "id": "A",
-        "text": "Tipo de fluido utilizado (ej. Tipo I, Tipo II o Tipo IV), concentración de la mezcla (%), hora de inicio de la última etapa y duración estimada del Holdover Time (HOT)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "El nombre de pila de los operarios de la manguera de deshielo",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "El color del camión de bombeo de fluidos de la pista",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Tipo de fluido utilizado (ej. Tipo I, Tipo II o Tipo IV), concentración de la mezcla (%), hora de inicio de la última etapa y duración estimada del Holdover Time (HOT)",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1307,7 +1307,7 @@
       },
       {
         "id": "B",
-        "text": "Cada 5 años independientemente de la edad del tripulante",
+        "text": "Cada 30 días coincidiendo con la renovación de la nómina laboral",
         "is_correct": false
       },
       {
@@ -1317,7 +1317,7 @@
       },
       {
         "id": "D",
-        "text": "Cada 30 días coincidiendo con la renovación de la nómina laboral",
+        "text": "Cada 5 años independientemente de la edad del tripulante",
         "is_correct": false
       }
     ],
@@ -1339,13 +1339,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Declaración de descargo de responsabilidades, notificación NOTOC indicando la bodega acondicionada (con control de ventilación y temperatura) y estiba adecuada",
-        "is_correct": true
+        "text": "Un contrato de adopción firmado por el comandante en cabina",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Un contrato de adopción firmado por el comandante en cabina",
-        "is_correct": false
+        "text": "Declaración de descargo de responsabilidades, notificación NOTOC indicando la bodega acondicionada (con control de ventilación y temperatura) y estiba adecuada",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1376,12 +1376,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Acredita que los niveles de ruido de la aeronave cumplen los estándares medioambientales del Anexo 16 de OACI (Capítulo 4 / Capítulo 14 para el E195-E2)",
-        "is_correct": true
+        "text": "Que el aislamiento acústico de la cabina de pasajeros permite escuchar música en silencio",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Que el aislamiento acústico de la cabina de pasajeros permite escuchar música en silencio",
+        "text": "Que los motores emiten un tono musical armonioso durante la aceleración",
         "is_correct": false
       },
       {
@@ -1391,8 +1391,8 @@
       },
       {
         "id": "D",
-        "text": "Que los motores emiten un tono musical armonioso durante la aceleración",
-        "is_correct": false
+        "text": "Acredita que los niveles de ruido de la aeronave cumplen los estándares medioambientales del Anexo 16 de OACI (Capítulo 4 / Capítulo 14 para el E195-E2)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1418,17 +1418,17 @@
       },
       {
         "id": "B",
-        "text": "Un mensaje verbal transmitido por el interfono de servicio",
+        "text": "No se exige ningún registro si el avión ha dormido en un hangar vigilado",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Una fotografía panorámica del morro del avión subida a redes sociales",
+        "text": "Un mensaje verbal transmitido por el interfono de servicio",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No se exige ningún registro si el avión ha dormido en un hangar vigilado",
+        "text": "Una fotografía panorámica del morro del avión subida a redes sociales",
         "is_correct": false
       }
     ],
@@ -1455,7 +1455,7 @@
       },
       {
         "id": "B",
-        "text": "El agente de facturación de la primera escala de salida",
+        "text": "El proveedor del catering en su vehículo de rampa",
         "is_correct": false
       },
       {
@@ -1465,7 +1465,7 @@
       },
       {
         "id": "D",
-        "text": "El proveedor del catering en su vehículo de rampa",
+        "text": "El agente de facturación de la primera escala de salida",
         "is_correct": false
       }
     ],
@@ -1492,7 +1492,7 @@
       },
       {
         "id": "B",
-        "text": "La previsión del tiempo de la televisión pública regional del día anterior",
+        "text": "Únicamente la temperatura del agua del mar en las playas de destino",
         "is_correct": false
       },
       {
@@ -1502,7 +1502,7 @@
       },
       {
         "id": "D",
-        "text": "Únicamente la temperatura del agua del mar en las playas de destino",
+        "text": "La previsión del tiempo de la televisión pública regional del día anterior",
         "is_correct": false
       }
     ],
@@ -1529,17 +1529,17 @@
       },
       {
         "id": "B",
-        "text": "Nivel 1 básico con capacidad de decir 'hola' y 'adiós'",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "No se exige competencia lingüística si el avión lleva navegador GPS",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Nivel 10 exclusivo para catedráticos universitarios de filología",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Nivel 1 básico con capacidad de decir 'hola' y 'adiós'",
         "is_correct": false
       }
     ],
@@ -1561,8 +1561,8 @@
     "options": [
       {
         "id": "A",
-        "text": "La firma del responsable de estiba/carga de rampa (certificando que los bultos no presentan daños y están trincados) y la firma de aceptación del Comandante",
-        "is_correct": true
+        "text": "La firma del director de marketing de la compañía aérea",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1571,8 +1571,8 @@
       },
       {
         "id": "C",
-        "text": "La firma del director de marketing de la compañía aérea",
-        "is_correct": false
+        "text": "La firma del responsable de estiba/carga de rampa (certificando que los bultos no presentan daños y están trincados) y la firma de aceptación del Comandante",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1598,22 +1598,22 @@
     "options": [
       {
         "id": "A",
-        "text": "No; cualquier defecto o sistema no recogido en la MEL requiere la rectificación técnica inmediata por mantenimiento o la emisión de un permiso especial de vuelo (Permit to Fly)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Sí, el comandante puede inventar una excepción en el ATL y despegar",
+        "text": "Sí, siempre que el vuelo no dure más de 15 minutos en el aire",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Sí, si el copiloto firma una autorización privada en una servilleta",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "No; cualquier defecto o sistema no recogido en la MEL requiere la rectificación técnica inmediata por mantenimiento o la emisión de un permiso especial de vuelo (Permit to Fly)",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Sí, siempre que el vuelo no dure más de 15 minutos en el aire",
+        "text": "Sí, el comandante puede inventar una excepción en el ATL y despegar",
         "is_correct": false
       }
     ],
@@ -1635,13 +1635,13 @@
     "options": [
       {
         "id": "A",
-        "text": "El Parte de Utilización de Botiquín de Primeros Auxilios (DC-MGNT-04.014), notificándolo a la llegada para su reposición y sellado",
-        "is_correct": true
+        "text": "La factura de compraventa del material sanitario a la farmacia de guardia",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "La factura de compraventa del material sanitario a la farmacia de guardia",
-        "is_correct": false
+        "text": "El Parte de Utilización de Botiquín de Primeros Auxilios (DC-MGNT-04.014), notificándolo a la llegada para su reposición y sellado",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1672,22 +1672,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Nombre y apellidos completos de los tripulantes y su función específica a bordo (ej. PIC, COP, SCC, CC)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "El número de zapato y la estatura en centímetros de cada tripulante",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "La dirección de correo electrónico personal y contraseña de acceso",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "Nombre y apellidos completos de los tripulantes y su función específica a bordo (ej. PIC, COP, SCC, CC)",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "El número de billete de avión de los acompañantes de la tripulación",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El número de zapato y la estatura en centímetros de cada tripulante",
         "is_correct": false
       }
     ],
@@ -1709,8 +1709,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Los números y autorizaciones de permisos diplomáticos de sobrevuelo y aterrizaje (Diplomatic / Overflight Clearances) emitidos por la autoridad de aviación de cada país",
-        "is_correct": true
+        "text": "El justificante de pago del impuesto de circulación de vehículos terrestres",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1724,8 +1724,8 @@
       },
       {
         "id": "D",
-        "text": "El justificante de pago del impuesto de circulación de vehículos terrestres",
-        "is_correct": false
+        "text": "Los números y autorizaciones de permisos diplomáticos de sobrevuelo y aterrizaje (Diplomatic / Overflight Clearances) emitidos por la autoridad de aviación de cada país",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1746,8 +1746,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Tras revisar el ATL, la lista HIL de diferidos, la carga de combustible/aceite y completada la inspección prevuelo",
-        "is_correct": true
+        "text": "En el hotel de pernocta la noche anterior a la salida del vuelo",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1756,13 +1756,13 @@
       },
       {
         "id": "C",
-        "text": "En el hotel de pernocta la noche anterior a la salida del vuelo",
+        "text": "Durante el ascenso inicial al cruzar el nivel de transición",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Durante el ascenso inicial al cruzar el nivel de transición",
-        "is_correct": false
+        "text": "Tras revisar el ATL, la lista HIL de diferidos, la carga de combustible/aceite y completada la inspección prevuelo",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1783,23 +1783,23 @@
     "options": [
       {
         "id": "A",
-        "text": "El formulario de autorización médica oficial (MEDIF - Medical Information Form) validado por los servicios médicos de la compañía",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "La tarjeta sanitaria de la seguridad social del acompañante",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Un justificante verbal del conductor de la ambulancia en rampa",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "El recibo de compra de la camilla en la ortopedia de origen",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El formulario de autorización médica oficial (MEDIF - Medical Information Form) validado por los servicios médicos de la compañía",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1820,22 +1820,22 @@
     "options": [
       {
         "id": "A",
-        "text": "El Comandante de la aeronave durante la comprobación de la documentación de prevuelo en cabina técnica",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "El personal de limpieza de la rampa del aeropuerto",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "El primer pasajero que acceda por la puerta de embarque delantera",
+        "id": "B",
+        "text": "El fabricante de los neumáticos del tren de aterrizaje",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "El Comandante de la aeronave durante la comprobación de la documentación de prevuelo en cabina técnica",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "El fabricante de los neumáticos del tren de aterrizaje",
+        "text": "El primer pasajero que acceda por la puerta de embarque delantera",
         "is_correct": false
       }
     ],

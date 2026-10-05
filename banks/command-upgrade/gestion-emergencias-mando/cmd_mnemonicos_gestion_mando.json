@@ -12,12 +12,12 @@
       },
       {
         "id": "B",
-        "text": "Estructura combinada NITS (Nature, Intentions, Time, Special instructions) seguido del flujo E-DALTA de aproximación",
+        "text": "Estructura libre no estandarizada a criterio del piloto que no esté a los mandos sin seguir mnemónicos",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Estructura libre no estandarizada a criterio del piloto que no esté a los mandos sin seguir mnemónicos",
+        "text": "Estructura combinada NITS (Nature, Intentions, Time, Special instructions) seguido del flujo E-DALTA de aproximación",
         "is_correct": false
       },
       {
@@ -49,17 +49,17 @@
       },
       {
         "id": "B",
-        "text": "Formato NITS: Nature of emergency, Intentions of commander, Time remaining, Special instructions",
+        "text": "Formato CRAM: Cockpit readiness, Altitude alert, Medical priority, Evacuation decision",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Formato PIREP: Position report, Altitude, Estimated time of arrival, Passengers on board",
+        "text": "Formato NITS: Nature of emergency, Intentions of commander, Time remaining, Special instructions",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Formato CRAM: Cockpit readiness, Altitude alert, Medical priority, Evacuation decision",
+        "text": "Formato PIREP: Position report, Altitude, Estimated time of arrival, Passengers on board",
         "is_correct": false
       }
     ],
@@ -118,23 +118,23 @@
     "options": [
       {
         "id": "A",
-        "text": "E: ePerf InFlight Landing; D: DESCENT; A: ARRIVAL (STAR/IAC); L: LANDING (MCDU PERF); T: TAXI; A: APRON",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "E: Engine Anti-ice; D: Decision Altitude; A: Alternate fuel; L: Localizer frequency; T: Terrain clearance; A: Approach lights",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "E: Emergency brief; D: Diversion airport; A: Airspeed limits; L: Level off altitude; T: Traffic advisory; A: Autobrake setting",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "E: Electronic checklists; D: Distance to go; A: Acceleration height; L: Lateral navigation; T: Transponder code; A: Altimeter setting",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "E: ePerf InFlight Landing; D: DESCENT; A: ARRIVAL (STAR/IAC); L: LANDING (MCDU PERF); T: TAXI; A: APRON",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -155,22 +155,22 @@
     "options": [
       {
         "id": "A",
-        "text": "I: Inoperative items; M: Meteorological report; F: Fuel management; L: Landing performance; O: Options; C: Choose an option; C: Communications",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "I: Immediate descent; M: Mayday call; F: Flap selection; L: Landing gear; O: Overweight check; C: Cabin alert; C: Checklist execution",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "I: Inoperative items; M: Meteorological report; F: Fuel management; L: Landing performance; O: Options; C: Choose an option; C: Communications",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "I: Instrument scan; M: Minimum sector altitude; F: Flight path; L: Localizer intercept; O: Oxygen masks; C: Cabin secure; C: Cross-check",
+        "text": "I: Ice detection; M: Maximum continuous thrust; F: Flight level; L: Look ahead radar; O: Operation limits; C: Cruise relief; C: Contact dispatch",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "I: Ice detection; M: Maximum continuous thrust; F: Flight level; L: Look ahead radar; O: Operation limits; C: Cruise relief; C: Contact dispatch",
+        "text": "I: Instrument scan; M: Minimum sector altitude; F: Flight path; L: Localizer intercept; O: Oxygen masks; C: Cabin secure; C: Cross-check",
         "is_correct": false
       }
     ],
@@ -192,22 +192,22 @@
     "options": [
       {
         "id": "A",
-        "text": "1° Memo Items; 2° Emergency Checklist; 3° Abnormal Checklist; 4° Normal Checklist; 5° Abnormal Checklist restantes",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "1° Normal Checklist; 2° Abnormal Checklist; 3° Emergency Checklist; 4° Memo Items; 5° Normal Checklist restantes",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "1° Emergency Checklist; 2° Normal Checklist; 3° Memo Items; 4° Abnormal Checklist; 5° Deferred Maintenance Checklist",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "1° Memo Items; 2° Normal Checklist; 3° Emergency Checklist; 4° Abnormal Checklist; 5° Approach Checklist",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "1° Memo Items; 2° Emergency Checklist; 3° Abnormal Checklist; 4° Normal Checklist; 5° Abnormal Checklist restantes",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "1° Normal Checklist; 2° Abnormal Checklist; 3° Emergency Checklist; 4° Memo Items; 5° Normal Checklist restantes",
         "is_correct": false
       }
     ],
@@ -234,12 +234,12 @@
       },
       {
         "id": "B",
-        "text": "A 10 minutos: 'TRIPULACIÓN DE CABINA SENTARSE'; a 1 minuto: 'CABINA LISTA PARA EL IMPACTO'",
+        "text": "A 2 minutos: 'EMERGENCIA INMEDIATA'; a 10 segundos: 'EVACUACIÓN, EVACUACIÓN'",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "A 2 minutos: 'EMERGENCIA INMEDIATA'; a 10 segundos: 'EVACUACIÓN, EVACUACIÓN'",
+        "text": "A 10 minutos: 'TRIPULACIÓN DE CABINA SENTARSE'; a 1 minuto: 'CABINA LISTA PARA EL IMPACTO'",
         "is_correct": false
       },
       {
@@ -266,23 +266,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Callout por PA: 'DESCENSO DE EMERGENCIA (x3)'; modo FLCH, seleccionar 10.000 ft o MEA (la que sea mayor), gases en IDLE y SPEEDBRAKES en FULL",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Callout por PA: 'ATENCIÓN TRIPULACIÓN DE CABINA'; modo VNAV, seleccionar 5.000 ft, mantener gases en crucero y Speedbrakes recogidos",
+        "text": "Callout por PA: 'EVACUACIÓN EN VUELO'; desconectar piloto automático, poner avión en invertido y cortar ambos motores",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Callout por PA: 'DESCENSO INMEDIATO'; modo VS seleccionando -6.000 ft/min, gases a fondo y tren de aterrizaje abajo",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Callout por PA: 'EVACUACIÓN EN VUELO'; desconectar piloto automático, poner avión en invertido y cortar ambos motores",
+        "id": "C",
+        "text": "Callout por PA: 'ATENCIÓN TRIPULACIÓN DE CABINA'; modo VNAV, seleccionar 5.000 ft, mantener gases en crucero y Speedbrakes recogidos",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Callout por PA: 'DESCENSO DE EMERGENCIA (x3)'; modo FLCH, seleccionar 10.000 ft o MEA (la que sea mayor), gases en IDLE y SPEEDBRAKES en FULL",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -303,22 +303,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Cantadas cada 10.000 ft (30.000, 20.000, 10.000 ft), a 2.000 ft 'TWO THOUSAND TO LEVEL OFF', y a 1.000 ft 'ONE THOUSAND TO LEVEL OFF' retrayendo Speedbrakes",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Cantadas continuas cada 1.000 ft desde el inicio del descenso sin cantadas de aproximación a la nivelada ni retracción de Speedbrakes",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Una única cantada a 500 ft sobre el suelo sin comunicación previa durante el descenso de emergencia",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Cantadas exclusivamente a 18.000 ft (nivel de transición) y a 3.000 ft en circuito de tráfico instrumental",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cantadas cada 10.000 ft (30.000, 20.000, 10.000 ft), a 2.000 ft 'TWO THOUSAND TO LEVEL OFF', y a 1.000 ft 'ONE THOUSAND TO LEVEL OFF' retrayendo Speedbrakes",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Cantadas continuas cada 1.000 ft desde el inicio del descenso sin cantadas de aproximación a la nivelada ni retracción de Speedbrakes",
         "is_correct": false
       }
     ],
@@ -340,23 +340,23 @@
     "options": [
       {
         "id": "A",
-        "text": "\"TRIPULACIÓN DE CABINA PERMANEZCAN SENTADOS\"",
+        "text": "\"PUEDEN QUITARSE LOS CINTURONES\"",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "\"TRIPULACIÓN DE CABINA, DESCENSO FINALIZADO\"",
-        "is_correct": true
-      },
-      {
-        "id": "C",
         "text": "\"EMERGENCIA TERMINADA\"",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "\"PUEDEN QUITARSE LOS CINTURONES\"",
+        "id": "C",
+        "text": "\"TRIPULACIÓN DE CABINA PERMANEZCAN SENTADOS\"",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "\"TRIPULACIÓN DE CABINA, DESCENSO FINALIZADO\"",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -377,7 +377,7 @@
     "options": [
       {
         "id": "A",
-        "text": "\"I HAVE BRAKES\"",
+        "text": "\"STOPPING MANUAL\"",
         "is_correct": false
       },
       {
@@ -392,7 +392,7 @@
       },
       {
         "id": "D",
-        "text": "\"STOPPING MANUAL\"",
+        "text": "\"I HAVE BRAKES\"",
         "is_correct": false
       }
     ],
@@ -414,22 +414,22 @@
     "options": [
       {
         "id": "A",
-        "text": "1° Detectar posible incapacitación del piloto; 2° Comprobación cruzada anemométrica; 3° Verificar que Autothrottle ha pasado a modo HOLD",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "1° Retraer flaps a cero; 2° Conectar el piloto automático; 3° Armar reversas de empuje",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "1° Desconectar generadores eléctricos; 2° Cortar suministro hidráulico; 3° Apagar radar meteorológico",
+        "id": "B",
+        "text": "1° Solicitar autorización de despegue; 2° Encender luces de cabina; 3° Seleccionar transponder a Standby",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "1° Detectar posible incapacitación del piloto; 2° Comprobación cruzada anemométrica; 3° Verificar que Autothrottle ha pasado a modo HOLD",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "1° Solicitar autorización de despegue; 2° Encender luces de cabina; 3° Seleccionar transponder a Standby",
+        "text": "1° Desconectar generadores eléctricos; 2° Cortar suministro hidráulico; 3° Apagar radar meteorológico",
         "is_correct": false
       }
     ],
@@ -451,23 +451,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Indicador Best Beta (índice de resbale cian que optimiza la resistencia aerodinámica y la senda de ascenso monomotor)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Compensación automática de timón de profundidad al 100% con cabeceo fijo a 25°",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Retracción automática de aerofrenos y despliegue simétrico de reversas",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Desconexión obligatoria del FADEC y paso a modo de control manual directo",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Indicador Best Beta (índice de resbale cian que optimiza la resistencia aerodinámica y la senda de ascenso monomotor)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -493,17 +493,17 @@
       },
       {
         "id": "B",
-        "text": "Al alcanzar inmediatamente la velocidad V2 en el despegue",
+        "text": "50 ft sobre el terreno al confirmar Gear UP",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "1.500 ft AAL en cualquier aeródromo de la red",
+        "text": "Al alcanzar inmediatamente la velocidad V2 en el despegue",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "50 ft sobre el terreno al confirmar Gear UP",
+        "text": "1.500 ft AAL en cualquier aeródromo de la red",
         "is_correct": false
       }
     ],
@@ -525,22 +525,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Velocidad de máxima autonomía y mejor ratio sustentación/resistencia (L/D max) en configuración limpia",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "VMO / MMO para descender lo antes posible al nivel de vuelo seguro",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "VREF + 20 kt con flaps en posición de aproximación extendidos",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Velocidad de maniobra con turbulencia severa calculada para peso máximo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Velocidad de máxima autonomía y mejor ratio sustentación/resistencia (L/D max) en configuración limpia",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "VMO / MMO para descender lo antes posible al nivel de vuelo seguro",
         "is_correct": false
       }
     ],
@@ -562,8 +562,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Identifican la causa raíz del fallo y deben resolverse en primer lugar dentro de su categoría de color",
-        "is_correct": true
+        "text": "Indican exclusivamente fallos de mantenimiento que no afectan al vuelo actual",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -572,8 +572,8 @@
       },
       {
         "id": "C",
-        "text": "Indican exclusivamente fallos de mantenimiento que no afectan al vuelo actual",
-        "is_correct": false
+        "text": "Identifican la causa raíz del fallo y deben resolverse en primer lugar dentro de su categoría de color",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -599,12 +599,12 @@
     "options": [
       {
         "id": "A",
-        "text": "Emergencia Prevista, Emergencia Imprevista o Aterrizaje Inseguro",
-        "is_correct": true
+        "text": "Emergencia Roja, Emergencia Amarilla y Alerta Verde",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Emergencia Roja, Emergencia Amarilla y Alerta Verde",
+        "text": "Emergencia Técnica vs Emergencia Meteorológica",
         "is_correct": false
       },
       {
@@ -614,8 +614,8 @@
       },
       {
         "id": "D",
-        "text": "Emergencia Técnica vs Emergencia Meteorológica",
-        "is_correct": false
+        "text": "Emergencia Prevista, Emergencia Imprevista o Aterrizaje Inseguro",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -636,13 +636,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Llamada a ATC: MAYDAY inicialmente (revertido a PAN-PAN si se recupera o estabiliza); Llamada a Cabin Crew: Aterrizaje Inseguro",
-        "is_correct": true
+        "text": "Llamada a ATC: PAN-PAN exclusivamente; Llamada a Cabin Crew: Emergencia Prevista con evacuación en tierra",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Llamada a ATC: PAN-PAN exclusivamente; Llamada a Cabin Crew: Emergencia Prevista con evacuación en tierra",
-        "is_correct": false
+        "text": "Llamada a ATC: MAYDAY inicialmente (revertido a PAN-PAN si se recupera o estabiliza); Llamada a Cabin Crew: Aterrizaje Inseguro",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -673,22 +673,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Ejecutar QRH ENGINE TAILPIPE FIRE: cortar combustible y molinetear con arrancador sin aplicar halón a la nacelle",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Disparar inmediatamente las dos botellas de halón del motor y cortar los interruptores generadores",
+        "text": "Abrir las válvulas de sangrado de aire cruzado (Crossbleed) y descargar el extintor de APU en la tobera",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Avanzar la palanca de potencia a máxima potencia continua para expulsar las llamas por el flujo de gases",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Ejecutar QRH ENGINE TAILPIPE FIRE: cortar combustible y molinetear con arrancador sin aplicar halón a la nacelle",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Abrir las válvulas de sangrado de aire cruzado (Crossbleed) y descargar el extintor de APU en la tobera",
+        "text": "Disparar inmediatamente las dos botellas de halón del motor y cortar los interruptores generadores",
         "is_correct": false
       }
     ],
@@ -711,22 +711,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Suministra oxígeno al 100% con sobrepresión positiva continua para expulsar humos y gases tóxicos",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Suministra oxígeno diluido al 50% con aire de cabina para optimizar la autonomía de las botellas",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Corta el suministro de oxígeno de la máscara para evitar alimentar posibles fuegos en cabina",
+        "id": "B",
+        "text": "Suministra oxígeno puro exclusivamente cuando la altitud de presión de cabina supera los 14.000 ft",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Suministra oxígeno al 100% con sobrepresión positiva continua para expulsar humos y gases tóxicos",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Suministra oxígeno puro exclusivamente cuando la altitud de presión de cabina supera los 14.000 ft",
+        "text": "Corta el suministro de oxígeno de la máscara para evitar alimentar posibles fuegos en cabina",
         "is_correct": false
       }
     ],
@@ -748,23 +748,23 @@
     "options": [
       {
         "id": "A",
-        "text": "No retraer flaps al abandonar pista y rodar con flaps extendidos para inspección exterior de mantenimiento",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Retraer flaps inmediatamente a posición 0° para evitar daños aerodinámicos en las superficies hipersustentadoras",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Ciclar los flaps repetidamente entre posición T/O y FULL para verificar la ausencia de atascos mecánicos",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Desconectar los actuadores hidráulicos de flaps y requerir remolque obligatorio hasta el estacionamiento",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Retraer flaps inmediatamente a posición 0° para evitar daños aerodinámicos en las superficies hipersustentadoras",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No retraer flaps al abandonar pista y rodar con flaps extendidos para inspección exterior de mantenimiento",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -785,22 +785,22 @@
     "options": [
       {
         "id": "A",
-        "text": "300 ft/min (toma firme sin flotar en pista, máxima reversa hasta 60 kts y anotar en parte de vuelo)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "600 ft/min (toma dura intencionada para comprimir amortiguadores y evitar rebotes en pista)",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "100 ft/min (toma extremadamente suave flotando a lo largo de la pista con reversa en ralentí)",
+        "id": "B",
+        "text": "500 ft/min (toma estándar sin reversa para evitar sobretemperatura en frenos de carbono)",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "300 ft/min (toma firme sin flotar en pista, máxima reversa hasta 60 kts y anotar en parte de vuelo)",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "500 ft/min (toma estándar sin reversa para evitar sobretemperatura en frenos de carbono)",
+        "text": "100 ft/min (toma extremadamente suave flotando a lo largo de la pista con reversa en ralentí)",
         "is_correct": false
       }
     ],
@@ -822,8 +822,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Mantener configuración actual hasta asegurar separación con terreno y alcanzar MSA/MORA",
-        "is_correct": true
+        "text": "Extender flaps a posición FULL y seleccionar máxima potencia para aumentar la sustentación instantánea",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -832,8 +832,8 @@
       },
       {
         "id": "C",
-        "text": "Extender flaps a posición FULL y seleccionar máxima potencia para aumentar la sustentación instantánea",
-        "is_correct": false
+        "text": "Mantener configuración actual hasta asegurar separación con terreno y alcanzar MSA/MORA",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -859,23 +859,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Desconectar AP y AT cantando 'MY CONTROLS' y guiar el FPA dentro del rectángulo verde de la FLY-TO-ZONE del PFD",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Mantener el piloto automático conectado y seleccionar el modo de ascenso vertical vertical speed (+3.000 ft/min)",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Efectuar un viraje de 45° hacia el lado opuesto del tráfico en conflicto manteniendo altitud asignada",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Avanzar gases al máximo empuje de despegue y tirar de la palanca hasta activar el avisador de pérdida",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mantener el piloto automático conectado y seleccionar el modo de ascenso vertical vertical speed (+3.000 ft/min)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Desconectar AP y AT cantando 'MY CONTROLS' y guiar el FPA dentro del rectángulo verde de la FLY-TO-ZONE del PFD",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -896,22 +896,22 @@
     "options": [
       {
         "id": "A",
+        "text": "Efectuar un picado pronunciado para penetrar la superficie del agua con el morro de la aeronave",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Aterrizar PARALELO al oleaje (a lo largo de la cresta o depresión), con tren de aterrizaje ARRIBA (UP), flaps máximos disponibles, variómetro de 200 a 300 pies/min y velocidad Vref",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "Aterrizar PERPENDICULAR a las olas con tren de aterrizaje ABAJO (DOWN) para disipar energía en el impacto inicial",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Aterrizar siempre contra el viento independientemente del estado de la mar, con flaps 0 y velocidad de crucero",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "Efectuar un picado pronunciado para penetrar la superficie del agua con el morro de la aeronave",
+        "text": "Aterrizar siempre contra el viento independientemente del estado de la mar, con flaps 0 y velocidad de crucero",
         "is_correct": false
       }
     ],
@@ -933,22 +933,22 @@
     "options": [
       {
         "id": "A",
-        "text": "RNP 1.0 NM",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "RNP 0.3 NM en el segmento de aproximación final",
-        "is_correct": true
-      },
-      {
-        "id": "C",
         "text": "RNP 5.0 NM, requiriendo autorización expresa del comandante y verificación de pesos",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "RNP 0.01 NM, manteniendo el cumplimiento de las limitaciones operacionales del manual",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "RNP 0.3 NM en el segmento de aproximación final",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "RNP 1.0 NM",
         "is_correct": false
       }
     ],
@@ -970,22 +970,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Adoptar de inmediato la velocidad de planeo óptimo (Green Dot / Best Glide Speed), verificar despliegue automático de la RAT, seleccionar encendido continuo e iniciar la lista de rearranque en vuelo del QRH",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Extender el tren de aterrizaje y flaps inmediatamente para descender al nivel del mar en el menor tiempo posible",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Efectuar un viraje de 360° continuo a máxima inclinación y apagar la batería para conservar energía eléctrica",
+        "id": "B",
+        "text": "Mantener la altitud asignada tirando de la palanca de mandos hasta entrar en pérdida aerodinámica",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Adoptar de inmediato la velocidad de planeo óptimo (Green Dot / Best Glide Speed), verificar despliegue automático de la RAT, seleccionar encendido continuo e iniciar la lista de rearranque en vuelo del QRH",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Mantener la altitud asignada tirando de la palanca de mandos hasta entrar en pérdida aerodinámica",
+        "text": "Efectuar un viraje de 360° continuo a máxima inclinación y apagar la batería para conservar energía eléctrica",
         "is_correct": false
       }
     ],
@@ -1018,12 +1018,12 @@
       },
       {
         "id": "C",
-        "text": "Solo puede denegar el embarque si cuenta con una orden judicial expresa emitida por la autoridad policial",
+        "text": "Debe ubicar al pasajero en la última fila del avión sin restricción adicional en el servicio de a bordo",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Debe ubicar al pasajero en la última fila del avión sin restricción adicional en el servicio de a bordo",
+        "text": "Solo puede denegar el embarque si cuenta con una orden judicial expresa emitida por la autoridad policial",
         "is_correct": false
       }
     ],
@@ -1046,13 +1046,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Combustible adicional fijado por directrices de compañía para cubrir contingencias operativas en escala o ruta",
-        "is_correct": true
+        "text": "Combustible de contingencia reglamentario del 5% del Trip Fuel calculado por el despachador de vuelo",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Combustible de contingencia reglamentario del 5% del Trip Fuel calculado por el despachador de vuelo",
-        "is_correct": false
+        "text": "Combustible adicional fijado por directrices de compañía para cubrir contingencias operativas en escala o ruta",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1088,13 +1088,13 @@
       },
       {
         "id": "B",
-        "text": "45 a 60 minutos antes de la hora programada de salida",
-        "is_correct": true
+        "text": "90 minutos antes de la hora de calzos para cualquier tipo de vuelo regular de línea",
+        "is_correct": false
       },
       {
         "id": "C",
-        "text": "90 minutos antes de la hora de calzos para cualquier tipo de vuelo regular de línea",
-        "is_correct": false
+        "text": "45 a 60 minutos antes de la hora programada de salida",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -1121,23 +1121,23 @@
     "options": [
       {
         "id": "A",
-        "text": "1° Volar (control y trayectoria); 2° Navegar (terreno y rumbo seguro); 3° Comunicar (ATC y cabina); 4° Gestionar (listas y decisiones)",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "1° Comunicar con ATC de inmediato; 2° Buscar la lista de emergencia; 3° Volar el avión; 4° Hablar con los pasajeros",
+        "text": "1° Apagar los generadores eléctricos; 2° Descender a 10.000 ft; 3° Volar; 4° Notificar a mantenimiento",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "1° Leer la lista de comprobación anormal; 2° Desconectar el piloto automático; 3° Declarar Mayday; 4° Navegar",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "1° Apagar los generadores eléctricos; 2° Descender a 10.000 ft; 3° Volar; 4° Notificar a mantenimiento",
+        "id": "C",
+        "text": "1° Comunicar con ATC de inmediato; 2° Buscar la lista de emergencia; 3° Volar el avión; 4° Hablar con los pasajeros",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "1° Volar (control y trayectoria); 2° Navegar (terreno y rumbo seguro); 3° Comunicar (ATC y cabina); 4° Gestionar (listas y decisiones)",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1159,8 +1159,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Colocarse máscaras de oxígeno con gafas antifumo al 100% / Emergency Overpressure para expulsar el humo",
-        "is_correct": true
+        "text": "Apagar los buses eléctricos principales y desconectar los generadores de ambos motores",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1169,12 +1169,12 @@
       },
       {
         "id": "C",
-        "text": "Seleccionar el sistema de aire acondicionado en modo recirculación máxima sin máscaras de oxígeno",
-        "is_correct": false
+        "text": "Colocarse máscaras de oxígeno con gafas antifumo al 100% / Emergency Overpressure para expulsar el humo",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "Apagar los buses eléctricos principales y desconectar los generadores de ambos motores",
+        "text": "Seleccionar el sistema de aire acondicionado en modo recirculación máxima sin máscaras de oxígeno",
         "is_correct": false
       }
     ],
@@ -1197,22 +1197,22 @@
     "options": [
       {
         "id": "A",
+        "text": "Velocidad de entrada en pérdida aerodinámica en configuración de aterrizaje con un motor inoperativo",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Velocidad mínima a la que, tras fallo del motor crítico, se mantiene control en vuelo con alabeo máx 5°",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "Velocidad de mejor ángulo de ascenso monomotor requerida para franqueamiento de obstáculos a 400 ft",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Velocidad calculada para el descenso de emergencia en régimen de planeo tras parada de ambos motores",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "Velocidad de entrada en pérdida aerodinámica en configuración de aterrizaje con un motor inoperativo",
+        "text": "Velocidad calculada para el descenso de emergencia en régimen de planeo tras parada de ambos motores",
         "is_correct": false
       }
     ],
@@ -1235,23 +1235,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Velocidad mínima en despegue donde, tras fallo de motor, se mantiene control direccional solo con timón",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Velocidad a partir de la cual la distancia de frenado con reversas activas supera la longitud de pista",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Velocidad mínima a la que se puede iniciar la rotación de morro sin riesgo de impacto de cola",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Velocidad calculada para la activación automática del sistema de frenado de emergencia en rodaje",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Velocidad mínima en despegue donde, tras fallo de motor, se mantiene control direccional solo con timón",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1273,8 +1273,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Vuelo de menos de 6h con destino con 2 pistas separadas utilizables y meteo favorable",
-        "is_correct": true
+        "text": "Vuelo diurno en espacio aéreo clase A donde se mantenga comunicación continua por enlace CPDLC",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1283,12 +1283,12 @@
       },
       {
         "id": "C",
-        "text": "Vuelo donde el combustible de contingencia se haya incrementado al 10% del combustible de viaje",
-        "is_correct": false
+        "text": "Vuelo de menos de 6h con destino con 2 pistas separadas utilizables y meteo favorable",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "Vuelo diurno en espacio aéreo clase A donde se mantenga comunicación continua por enlace CPDLC",
+        "text": "Vuelo donde el combustible de contingencia se haya incrementado al 10% del combustible de viaje",
         "is_correct": false
       }
     ],
@@ -1310,17 +1310,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Tren de aterrizaje ARRIBA (UP), flaps UP, mantener máxima velocidad de planeo hasta el contacto con el agua",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Tren de aterrizaje ARRIBA (UP), flaps en aproximación, compuertas y Outflow Valve cerradas, paralelo al oleaje",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "Tren de aterrizaje ABAJO (DOWN), flaps FULL, despresurizar el avión y amerizar perpendicular al oleaje",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Tren de aterrizaje ARRIBA (UP), flaps UP, mantener máxima velocidad de planeo hasta el contacto con el agua",
+        "text": "Tren de aterrizaje ABAJO (DOWN), flaps FULL, despresurizar el avión y amerizar perpendicular al oleaje",
         "is_correct": false
       },
       {
@@ -1348,13 +1348,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Máximo 72 horas desde que se tuvo conocimiento del suceso",
-        "is_correct": true
+        "text": "Máximo 24 horas improrrogables para cualquier tipo de suceso",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Máximo 24 horas improrrogables para cualquier tipo de suceso",
-        "is_correct": false
+        "text": "Máximo 72 horas desde que se tuvo conocimiento del suceso",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -1386,22 +1386,22 @@
     "options": [
       {
         "id": "A",
-        "text": "El Holdover Time (HOT) es el tiempo estimado de protección contra formación de hielo; comienza al iniciarse la aplicación del fluido final",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "El Holdover Time (HOT) comienza a computar en el momento en que la aeronave inicia la carrera de despegue en la pista activa",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "El Holdover Time (HOT) es el tiempo estimado de protección contra formación de hielo; comienza al iniciarse la aplicación del fluido final",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "El Holdover Time (HOT) garantiza protección permanente durante todo el vuelo sin importar la intensidad de la nevada",
+        "text": "El Holdover Time (HOT) se inicia cuando el camión de deshielo apaga sus motores y abandona el área del avión",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "El Holdover Time (HOT) se inicia cuando el camión de deshielo apaga sus motores y abandona el área del avión",
+        "text": "El Holdover Time (HOT) garantiza protección permanente durante todo el vuelo sin importar la intensidad de la nevada",
         "is_correct": false
       }
     ],
@@ -1429,7 +1429,7 @@
       },
       {
         "id": "B",
-        "text": "Se puede despegar conectando la calefacción de alas y aplicando potencia máxima de despegue con frenos pisados",
+        "text": "Se autoriza el despegue inmediato siempre que la temperatura exterior de la pista sea superior a cero grados",
         "is_correct": false
       },
       {
@@ -1439,7 +1439,7 @@
       },
       {
         "id": "D",
-        "text": "Se autoriza el despegue inmediato siempre que la temperatura exterior de la pista sea superior a cero grados",
+        "text": "Se puede despegar conectando la calefacción de alas y aplicando potencia máxima de despegue con frenos pisados",
         "is_correct": false
       }
     ],
@@ -1462,22 +1462,22 @@
     "options": [
       {
         "id": "A",
-        "text": "1° Pasajeros que requieran asistencia (PMR/SCP); 2° Familias con niños y ancianos; 3° Menores no acompañados (UM); 4° Resto de pasajeros",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "1° Pasajeros de las filas traseras primero; 2° Pasajeros de filas delanteras; 3° Tripulación técnica; 4° PMR",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "1° Pasajeros que requieran asistencia (PMR/SCP); 2° Familias con niños y ancianos; 3° Menores no acompañados (UM); 4° Resto de pasajeros",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "1° Pasajeros de clase preferente exclusivamente; 2° Pasajeros con equipaje de mano; 3° Resto de pasaje",
+        "text": "Desembarque simultáneo y desordenado sin prioridad establecida por la tripulación de cabina",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Desembarque simultáneo y desordenado sin prioridad establecida por la tripulación de cabina",
+        "text": "1° Pasajeros de clase preferente exclusivamente; 2° Pasajeros con equipaje de mano; 3° Resto de pasaje",
         "is_correct": false
       }
     ],
@@ -1500,23 +1500,23 @@
     "options": [
       {
         "id": "A",
-        "text": "En fases críticas, se prohíbe toda actividad no esencial a la seguridad",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "En crucero por encima de FL200, la tripulación debe permanecer en silencio absoluto durante las comunicaciones",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Durante todo el vuelo se prohíbe el acceso a cabina de cualquier miembro de la tripulación de pasajeros",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "En aproximación final se exige el uso obligatorio de interfonos en lugar de altavoces de cabina",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En crucero por encima de FL200, la tripulación debe permanecer en silencio absoluto durante las comunicaciones",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En fases críticas, se prohíbe toda actividad no esencial a la seguridad",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1538,22 +1538,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Descender a velocidad reducida moderada evitando sobrecargas aerodinámicas que agraven el daño estructural",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Descender a la máxima velocidad certificada Vmo/Mmo para alcanzar la altitud segura en el menor tiempo",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Extender flaps y spoilers simultáneamente a nivel de crucero para frenar bruscamente la aeronave",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "Descender a velocidad reducida moderada evitando sobrecargas aerodinámicas que agraven el daño estructural",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "Mantener altitud de crucero y nivel de vuelo mientras se verifica el sellado de las puertas principales",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Descender a la máxima velocidad certificada Vmo/Mmo para alcanzar la altitud segura en el menor tiempo",
         "is_correct": false
       }
     ],
@@ -1576,8 +1576,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Película de agua que separa el neumático de la pista; velocidad estimada Vp = 9 * raíz",
-        "is_correct": true
+        "text": "Deslizamiento por sobrecalentamiento del caucho; velocidad estimada Vp = 1.3 * velocidad de pérdida en limpia",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1586,13 +1586,13 @@
       },
       {
         "id": "C",
-        "text": "Deslizamiento por sobrecalentamiento del caucho; velocidad estimada Vp = 1.3 * velocidad de pérdida en limpia",
+        "text": "Acumulación de barro en las ranuras de la pista; velocidad crítica fija de 50 nudos para toda aeronave",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Acumulación de barro en las ranuras de la pista; velocidad crítica fija de 50 nudos para toda aeronave",
-        "is_correct": false
+        "text": "Película de agua que separa el neumático de la pista; velocidad estimada Vp = 9 * raíz",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1614,12 +1614,12 @@
     "options": [
       {
         "id": "A",
-        "text": "La altura sobre el obstáculo en el extremo de la distancia de despegue se reduce de 35 ft a 15 ft",
-        "is_correct": true
+        "text": "La altura sobre el obstáculo en el extremo de la distancia de despegue se incrementa de 35 ft a 50 ft",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "La altura sobre el obstáculo en el extremo de la distancia de despegue se incrementa de 35 ft a 50 ft",
+        "text": "La distancia requerida de despegue se multiplica por un factor fijo de 1.67 sin modificar la altura",
         "is_correct": false
       },
       {
@@ -1629,8 +1629,8 @@
       },
       {
         "id": "D",
-        "text": "La distancia requerida de despegue se multiplica por un factor fijo de 1.67 sin modificar la altura",
-        "is_correct": false
+        "text": "La altura sobre el obstáculo en el extremo de la distancia de despegue se reduce de 35 ft a 15 ft",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -1652,22 +1652,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Añadir a Vref la mitad del viento de cara sostenido más la totalidad de la racha",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Añadir a Vref la totalidad del viento en calma más el 50% de la racha máxima registrada en el METAR",
+        "text": "Mantener Vref fija sin correcciones y seleccionar un ajuste de flaps menor al publicado en el QRH",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Reducir la velocidad de aproximación 5 nudos por debajo de Vref para asegurar un toque rápido en pista",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Añadir a Vref la mitad del viento de cara sostenido más la totalidad de la racha",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Mantener Vref fija sin correcciones y seleccionar un ajuste de flaps menor al publicado en el QRH",
+        "text": "Añadir a Vref la totalidad del viento en calma más el 50% de la racha máxima registrada en el METAR",
         "is_correct": false
       }
     ],
@@ -1700,12 +1700,12 @@
       },
       {
         "id": "C",
-        "text": "Verificar dos veces consecutivas las lecturas de presión de combustible antes de apagar una bomba",
+        "text": "Exigir la presencia obligatoria de dos tripulantes técnicos en cabina para la lectura de listas anormales",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Exigir la presencia obligatoria de dos tripulantes técnicos en cabina para la lectura de listas anormales",
+        "text": "Verificar dos veces consecutivas las lecturas de presión de combustible antes de apagar una bomba",
         "is_correct": false
       }
     ],
@@ -1728,22 +1728,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Preservar grabaciones de CVR/FDR desconectando automáticos tras corte de motor y notificar a la CIAIAC",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Formatear las memorias de los FMS para evitar fugas de información operacional y técnica confidencial",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Reanudar el vuelo hacia la base principal de mantenimiento si los daños estructurales son leves",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
+        "text": "Preservar grabaciones de CVR/FDR desconectando automáticos tras corte de motor y notificar a la CIAIAC",
+        "is_correct": true
+      },
+      {
+        "id": "C",
         "text": "Permitir el acceso inmediato del personal de limpieza para retirar los objetos sueltos de cabina",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Formatear las memorias de los FMS para evitar fugas de información operacional y técnica confidencial",
         "is_correct": false
       }
     ],
@@ -1766,22 +1766,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Trayectoria de escape y perfil monomotor para garantizar el franqueamiento de obstáculos tras fallo en despegue",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Procedimiento normal de salida instrumental para reducir el impacto acústico sobre poblaciones cercanas",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Ruta de navegación estándar para la aproximación frustrada en condiciones de baja visibilidad (CAT III)",
+        "id": "B",
+        "text": "Ruta de rodaje preferente para la evacuación rápida de pista hacia los puestos de estacionamiento",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Trayectoria de escape y perfil monomotor para garantizar el franqueamiento de obstáculos tras fallo en despegue",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Ruta de rodaje preferente para la evacuación rápida de pista hacia los puestos de estacionamiento",
+        "text": "Ruta de navegación estándar para la aproximación frustrada en condiciones de baja visibilidad (CAT III)",
         "is_correct": false
       }
     ],
@@ -1804,8 +1804,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Verificación de competencia cada 6 meses en simulador de vuelo certificado de nivel D",
-        "is_correct": true
+        "text": "Evaluación teórica cada 3 años siempre que se mantengan 3 despegues y aterrizajes en 90 días",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -1814,12 +1814,12 @@
       },
       {
         "id": "C",
-        "text": "Verificación en vuelo real cada 24 meses sin requisito obligatorio de simulador de movimiento",
-        "is_correct": false
+        "text": "Verificación de competencia cada 6 meses en simulador de vuelo certificado de nivel D",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "Evaluación teórica cada 3 años siempre que se mantengan 3 despegues y aterrizajes en 90 días",
+        "text": "Verificación en vuelo real cada 24 meses sin requisito obligatorio de simulador de movimiento",
         "is_correct": false
       }
     ],
@@ -1842,13 +1842,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Macho (\"Puedo hacerlo\")",
+        "text": "Resignación (\"¿Qué puedo hacer yo?\")",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Impulsividad (\"Haz algo rápido\")",
-        "is_correct": true
+        "text": "Macho (\"Puedo hacerlo\")",
+        "is_correct": false
       },
       {
         "id": "C",
@@ -1857,8 +1857,8 @@
       },
       {
         "id": "D",
-        "text": "Resignación (\"¿Qué puedo hacer yo?\")",
-        "is_correct": false
+        "text": "Impulsividad (\"Haz algo rápido\")",
+        "is_correct": true
       }
     ],
     "explanation": {

@@ -12,17 +12,17 @@
       },
       {
         "id": "B",
-        "text": "Thrust Levers: IDLE → Speedbrake: FULL OPEN.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Altitude: 10.000 ft → Transponder: 7700.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "DUMP Button: PUSH IN → Crew Oxy Masks: DON NORMAL.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Thrust Levers: IDLE → Speedbrake: FULL OPEN.",
         "is_correct": false
       }
     ],
@@ -79,8 +79,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Speedbrake: FULL OPEN | Airspeed: MAX/APPROPRIATE | Transponder: 7700.",
-        "is_correct": true
+        "text": "Speedbrake: FULL OPEN | Airspeed: 270 KIAS | Transponder: 2000.",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -89,8 +89,8 @@
       },
       {
         "id": "C",
-        "text": "Speedbrake: FULL OPEN | Airspeed: 270 KIAS | Transponder: 2000.",
-        "is_correct": false
+        "text": "Speedbrake: FULL OPEN | Airspeed: MAX/APPROPRIATE | Transponder: 7700.",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -115,22 +115,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Autothrottle: DISENGAGE | N1 operativo: MIN 5% ABOVE N1 IDLE.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Autothrottle: MANTENER | N1 operativo: MAX CONTINUOUS.",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Autothrottle: DISENGAGE | N1 operativo: MIN 5% ABOVE N1 IDLE.",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "Autothrottle: DISENGAGE | N1 operativo: TOGA.",
+        "text": "Autothrottle: DISENGAGE | N1 operativo: CLIMB.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Autothrottle: DISENGAGE | N1 operativo: CLIMB.",
+        "text": "Autothrottle: DISENGAGE | N1 operativo: TOGA.",
         "is_correct": false
       }
     ],
@@ -156,7 +156,7 @@
       },
       {
         "id": "B",
-        "text": "FIRE EXT HANDLE: PULL → Thrust Lever: IDLE → START/STOP: STOP.",
+        "text": "Thrust Lever: IDLE → FIRE EXT HANDLE: PULL → START/STOP: STOP.",
         "is_correct": false
       },
       {
@@ -166,7 +166,7 @@
       },
       {
         "id": "D",
-        "text": "Thrust Lever: IDLE → FIRE EXT HANDLE: PULL → START/STOP: STOP.",
+        "text": "FIRE EXT HANDLE: PULL → Thrust Lever: IDLE → START/STOP: STOP.",
         "is_correct": false
       }
     ],
@@ -187,8 +187,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Associated BATT Knob: OFF.",
-        "is_correct": true
+        "text": "APU Generator: OFF.",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -202,8 +202,8 @@
       },
       {
         "id": "D",
-        "text": "APU Generator: OFF.",
-        "is_correct": false
+        "text": "Associated BATT Knob: OFF.",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -223,22 +223,22 @@
     "options": [
       {
         "id": "A",
-        "text": "APU EMER STOP Button: PUSH IN.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "APU Master Knob: OFF.",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "APU EMER STOP Button: PUSH IN.",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "BATT 1 y BATT 2: OFF.",
+        "text": "APU BLEED: OFF → APU Master Knob: OFF.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "APU BLEED: OFF → APU Master Knob: OFF.",
+        "text": "BATT 1 y BATT 2: OFF.",
         "is_correct": false
       }
     ],
@@ -259,8 +259,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Associated Cargo Smoke Button: PUSH.",
-        "is_correct": true
+        "text": "RECIRC FANS: OFF.",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -269,13 +269,13 @@
       },
       {
         "id": "C",
-        "text": "RECIRC FANS: OFF.",
+        "text": "CARGO ISOLATION Valve: CLOSE.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "CARGO ISOLATION Valve: CLOSE.",
-        "is_correct": false
+        "text": "Associated Cargo Smoke Button: PUSH.",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -295,22 +295,22 @@
     "options": [
       {
         "id": "A",
-        "text": "FSTN BELTS Switch: ON.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Thrust Levers: IDLE.",
+        "text": "Transponder: 7700.",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Speedbrake: FULL OPEN.",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "FSTN BELTS Switch: ON.",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Transponder: 7700.",
+        "text": "Thrust Levers: IDLE.",
         "is_correct": false
       }
     ],
@@ -331,23 +331,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Altitude: 10.000 ft o MEA | Thrust Levers: IDLE | Speedbrake: FULL OPEN | Airspeed: MAX/APPROPRIATE | Transponder: 7700.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Altitude: 14.000 ft | Thrust Levers: IDLE | Speedbrake: FLIGHT | Transponder: 7600.",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Altitude: 10.000 ft o MEA | Thrust Levers: IDLE | Speedbrake: FULL OPEN | Transponder: 2000.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Altitude: MEA | Thrust Levers: CLIMB | Speedbrake: FULL OPEN | Transponder: 7700.",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Altitude: 10.000 ft o MEA | Thrust Levers: IDLE | Speedbrake: FULL OPEN | Airspeed: MAX/APPROPRIATE | Transponder: 7700.",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -367,8 +367,8 @@
     "options": [
       {
         "id": "A",
-        "text": "Condición: humo/fuego detectado por la tripulación SIN aviso EICAS. Acciones: Crew Oxy Masks DON 100% | Crew Communication ESTABLISH.",
-        "is_correct": true
+        "text": "Condición: humo en bodega. Acciones: Cargo Smoke Button PUSH | RECIRC FANS OFF.",
+        "is_correct": false
       },
       {
         "id": "B",
@@ -377,13 +377,13 @@
       },
       {
         "id": "C",
-        "text": "Condición: humo en bodega. Acciones: Cargo Smoke Button PUSH | RECIRC FANS OFF.",
+        "text": "Condición: fuego en APU. Acciones: APU EMER STOP PUSH IN.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Condición: fuego en APU. Acciones: APU EMER STOP PUSH IN.",
-        "is_correct": false
+        "text": "Condición: humo/fuego detectado por la tripulación SIN aviso EICAS. Acciones: Crew Oxy Masks DON 100% | Crew Communication ESTABLISH.",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -408,12 +408,12 @@
       },
       {
         "id": "B",
-        "text": "Crew Oxy Masks: DON NORMAL | RAM AIR: OPEN | Outflow Valve: FULL OPEN.",
+        "text": "DUMP Button: PUSH IN | Cabin Alt Knob: UP | Speedbrake: FULL OPEN.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "DUMP Button: PUSH IN | Cabin Alt Knob: UP | Speedbrake: FULL OPEN.",
+        "text": "Crew Oxy Masks: DON NORMAL | RAM AIR: OPEN | Outflow Valve: FULL OPEN.",
         "is_correct": false
       },
       {
@@ -439,17 +439,17 @@
     "options": [
       {
         "id": "A",
+        "text": "Mínimo 220 KIAS — velocidad de extensión de tren (VLO ret).",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "Mínimo 270 KIAS — garantiza windmilling y suministro óptimo de la RAT.",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "Mínimo 250 KIAS — velocidad de turbulencia bajo FL100.",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "Mínimo 220 KIAS — velocidad de extensión de tren (VLO ret).",
+        "text": "Mínimo 250 KIAS — velocidad de turbulencia bajo FL100.",
         "is_correct": false
       },
       {
@@ -475,23 +475,23 @@
     "options": [
       {
         "id": "A",
-        "text": "RAT MANUAL DEPLOY Lever: PULL.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "ELEC EMER Button: PUSH IN.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "APU EMER STOP Button: PUSH IN.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "START/STOP Selectors 1 y 2: STOP.",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "ELEC EMER Button: PUSH IN.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "RAT MANUAL DEPLOY Lever: PULL.",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -516,17 +516,17 @@
       },
       {
         "id": "B",
-        "text": "Affected engine – FIRE EXT HANDLE: PULL.",
+        "text": "ENGINE IGNITION Selector: OFF.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Thrust Lever afectado: MAX TOGA.",
+        "text": "Affected engine – FIRE EXT HANDLE: PULL.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "ENGINE IGNITION Selector: OFF.",
+        "text": "Thrust Lever afectado: MAX TOGA.",
         "is_correct": false
       }
     ],
@@ -547,22 +547,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Autothrottle: DISENGAGE | N1 operativo: MIN 5% ABOVE N1 IDLE.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Autothrottle: MANTENER | FIRE EXT HANDLE motor afectado: PULL.",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Autothrottle: DISENGAGE | N1 operativo: MIN 5% ABOVE N1 IDLE.",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "Thrust Levers: AMBOS IDLE | Autothrottle: DISENGAGE.",
+        "text": "N1 operativo: TOGA | Autothrottle: DISENGAGE.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "N1 operativo: TOGA | Autothrottle: DISENGAGE.",
+        "text": "Thrust Levers: AMBOS IDLE | Autothrottle: DISENGAGE.",
         "is_correct": false
       }
     ],
@@ -593,12 +593,12 @@
       },
       {
         "id": "C",
-        "text": "START/STOP: STOP → Thrust Lever: IDLE → FIRE EXT HANDLE: PULL.",
+        "text": "Thrust Lever: IDLE → FIRE EXT HANDLE: PULL directamente.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Thrust Lever: IDLE → FIRE EXT HANDLE: PULL directamente.",
+        "text": "START/STOP: STOP → Thrust Lever: IDLE → FIRE EXT HANDLE: PULL.",
         "is_correct": false
       }
     ],
@@ -665,12 +665,12 @@
       },
       {
         "id": "C",
-        "text": "FLIGHT CONTROL MODE: DIRECT.",
+        "text": "AP DISC Button: PRESS AND HOLD.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "AP DISC Button: PRESS AND HOLD.",
+        "text": "FLIGHT CONTROL MODE: DIRECT.",
         "is_correct": false
       }
     ],
@@ -691,13 +691,13 @@
     "options": [
       {
         "id": "A",
-        "text": "ELEVATOR DISCONNECT Handle: PULL.",
-        "is_correct": true
+        "text": "AILERON DISCONNECT Handle: PULL.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "AILERON DISCONNECT Handle: PULL.",
-        "is_correct": false
+        "text": "ELEVATOR DISCONNECT Handle: PULL.",
+        "is_correct": true
       },
       {
         "id": "C",

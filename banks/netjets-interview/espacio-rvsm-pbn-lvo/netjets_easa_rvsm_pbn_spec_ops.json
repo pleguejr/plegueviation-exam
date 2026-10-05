@@ -7,13 +7,13 @@
     "options": [
       {
         "id": "A",
-        "text": "Between FL290 and FL410 inclusive, with 1,000 ft (300 m) vertical separation between approved aircraft.",
-        "is_correct": true
+        "text": "Between FL195 and FL285, with 2,000 ft vertical separation.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Between FL100 and FL250, with 500 ft vertical separation.",
-        "is_correct": false
+        "text": "Between FL290 and FL410 inclusive, with 1,000 ft (300 m) vertical separation between approved aircraft.",
+        "is_correct": true
       },
       {
         "id": "C",
@@ -22,7 +22,7 @@
       },
       {
         "id": "D",
-        "text": "Between FL195 and FL285, with 2,000 ft vertical separation.",
+        "text": "Between FL100 and FL250, with 500 ft vertical separation.",
         "is_correct": false
       }
     ],
@@ -45,23 +45,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Two independent Primary Altimetry Systems, one Automatic Altitude-Control System (Autopilot with altitude hold), one Altitude-Alerting Device, and one Secondary Surveillance Radar (SSR) Altitude Reporting Transponder (Mode C or S).",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Dual Inertial Reference Systems (IRS), dual GPS receivers, stormscope, and head-up display.",
+        "text": "Dual FMS, satellite phone, weather radar, and forward-looking infrared sensor.",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "One primary altimeter, one standby pneumatic altimeter, autothrottle, and TCAS I.",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Dual FMS, satellite phone, weather radar, and forward-looking infrared sensor.",
+        "id": "C",
+        "text": "Dual Inertial Reference Systems (IRS), dual GPS receivers, stormscope, and head-up display.",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Two independent Primary Altimetry Systems, one Automatic Altitude-Control System (Autopilot with altitude hold), one Altitude-Alerting Device, and one Secondary Surveillance Radar (SSR) Altitude Reporting Transponder (Mode C or S).",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -83,22 +83,22 @@
     "options": [
       {
         "id": "A",
-        "text": "On the ground: primary altimeters must agree within ±75 ft of known aerodrome elevation and within 50 to 75 ft between each other; In cruise: difference between primary altimeters must not exceed 200 ft (60 m).",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "On the ground: ±200 ft; In cruise: ±500 ft.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "On the ground: ±10 ft; In cruise: 0 ft discrepancy.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "B",
         "text": "Altimeters do not require crosschecking if satellite GPS altitude is displayed.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "On the ground: primary altimeters must agree within ±75 ft of known aerodrome elevation and within 50 to 75 ft between each other; In cruise: difference between primary altimeters must not exceed 200 ft (60 m).",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "On the ground: ±200 ft; In cruise: ±500 ft.",
         "is_correct": false
       }
     ],
@@ -121,12 +121,12 @@
     "options": [
       {
         "id": "A",
-        "text": "'UNABLE RVSM DUE TO EQUIPMENT' (or 'UNABLE RVSM DUE TO TURBULENCE' if severe turbulence prevents altitude maintenance).",
-        "is_correct": true
+        "text": "'MAYDAY RVSM FAILURE'.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "'MAYDAY RVSM FAILURE'.",
+        "text": "'PAN PAN ALTIMETER OUT'.",
         "is_correct": false
       },
       {
@@ -136,8 +136,8 @@
       },
       {
         "id": "D",
-        "text": "'PAN PAN ALTIMETER OUT'.",
-        "is_correct": false
+        "text": "'UNABLE RVSM DUE TO EQUIPMENT' (or 'UNABLE RVSM DUE TO TURBULENCE' if severe turbulence prevents altitude maintenance).",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -159,22 +159,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Offsets are flown exclusively to the RIGHT of the airway centerline, up to a maximum of 2.0 NM in 0.1 NM increments (or 1 NM / 2 NM), without requiring prior ATC clearance in designated SLOP airspace, to mitigate collision risk from high-precision GPS navigation and wake turbulence.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Offsets may be flown up to 5 NM to the left or right at the pilot's discretion.",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Offsets are flown exclusively to the RIGHT of the airway centerline, up to a maximum of 2.0 NM in 0.1 NM increments (or 1 NM / 2 NM), without requiring prior ATC clearance in designated SLOP airspace, to mitigate collision risk from high-precision GPS navigation and wake turbulence.",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "SLOP is mandatory over all European domestic terminal areas.",
+        "text": "SLOP requires filing a revised ICAO flight plan with Lisbon Dispatch 30 minutes in advance.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "SLOP requires filing a revised ICAO flight plan with Lisbon Dispatch 30 minutes in advance.",
+        "text": "SLOP is mandatory over all European domestic terminal areas.",
         "is_correct": false
       }
     ],
@@ -240,17 +240,17 @@
       },
       {
         "id": "B",
-        "text": "Perform a 180° turn on the exact centerline and descend to sea level immediately.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "Remain on track, maintain altitude, and reduce airspeed to Vmin.",
         "is_correct": false
       },
       {
-        "id": "D",
+        "id": "C",
         "text": "Descend directly without lateral offset, maintaining transponder code 7000.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Perform a 180° turn on the exact centerline and descend to sea level immediately.",
         "is_correct": false
       }
     ],
@@ -278,17 +278,17 @@
       },
       {
         "id": "B",
-        "text": "RNAV applies exclusively to military fighters, while RNP applies only to general aviation.",
+        "text": "There is no technical difference; RNAV and RNP are completely interchangeable acronyms.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "RNAV uses only VOR/DME ground beacons, while RNP prohibits the use of GNSS.",
+        "text": "RNAV applies exclusively to military fighters, while RNP applies only to general aviation.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "There is no technical difference; RNAV and RNP are completely interchangeable acronyms.",
+        "text": "RNAV uses only VOR/DME ground beacons, while RNP prohibits the use of GNSS.",
         "is_correct": false
       }
     ],
@@ -349,17 +349,17 @@
     "options": [
       {
         "id": "A",
+        "text": "LPV can only be flown with ILS ground transmitters operational.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "LNAV/VNAV relies on Barometric VNAV (Baro-VNAV) subject to cold temperature limits and provides 3D guidance with a Decision Altitude (DA); LPV relies on Satellite-Based Augmentation Systems (SBAS / EGNOS in Europe) providing geometric lateral and vertical guidance down to CAT I-like minima (200 ft DA) unaffected by temperature.",
         "is_correct": true
       },
       {
-        "id": "B",
-        "text": "LNAV/VNAV is a 2D approach with an MDA, whereas LPV is a circling approach.",
-        "is_correct": false
-      },
-      {
         "id": "C",
-        "text": "LPV can only be flown with ILS ground transmitters operational.",
+        "text": "LNAV/VNAV is a 2D approach with an MDA, whereas LPV is a circling approach.",
         "is_correct": false
       },
       {
@@ -387,18 +387,18 @@
     "options": [
       {
         "id": "A",
-        "text": "To ensure that the altitude displayed to ATC radar controllers exactly matches the altitude data used by the active autopilot to maintain level flight, avoiding false altitude split alarms on ATC ground safety nets (MSAW / CLAM).",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "To conserve electrical generator power at high flight levels.",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Because the standby altimeter transponder automatically disconnects in RVSM.",
         "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "To ensure that the altitude displayed to ATC radar controllers exactly matches the altitude data used by the active autopilot to maintain level flight, avoiding false altitude split alarms on ATC ground safety nets (MSAW / CLAM).",
+        "is_correct": true
       },
       {
         "id": "D",
@@ -425,22 +425,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Crosscheck both primary altimeters against the standby altimeter, determine the defective primary altimeter if possible, couple the autopilot to the operational altimeter, and immediately notify ATC: 'UNABLE RVSM DUE TO EQUIPMENT' to obtain revised separation.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Ignore the split if the cabin altitude is normal.",
+        "text": "Disconnect both pitot-static heat switches to re-calibrate sensors.",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Immediately deploy speedbrakes and execute an emergency descent to 10,000 ft.",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Crosscheck both primary altimeters against the standby altimeter, determine the defective primary altimeter if possible, couple the autopilot to the operational altimeter, and immediately notify ATC: 'UNABLE RVSM DUE TO EQUIPMENT' to obtain revised separation.",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Disconnect both pitot-static heat switches to re-calibrate sensors.",
+        "text": "Ignore the split if the cabin altitude is normal.",
         "is_correct": false
       }
     ],
@@ -463,22 +463,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Dual Long-Range Navigation Systems (LRNS) approved for RNP 4 or RNP 10, RVSM approval, dual HF radios (or approved SATVOICE where permitted), CPDLC and ADS-C datalink capability.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
         "text": "Single VOR receiver and VHF radio with squawk 2000.",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "Visual navigation tracking ocean surface swells.",
+        "id": "B",
+        "text": "Only military encrypted UHF radios are authorized in NAT-HLA.",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Dual Long-Range Navigation Systems (LRNS) approved for RNP 4 or RNP 10, RVSM approval, dual HF radios (or approved SATVOICE where permitted), CPDLC and ADS-C datalink capability.",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Only military encrypted UHF radios are authorized in NAT-HLA.",
+        "text": "Visual navigation tracking ocean surface swells.",
         "is_correct": false
       }
     ],
@@ -501,23 +501,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Phenom 300 is Light (MTOW <= 7,000 kg), while Citation Latitude and Challenger 350 are Medium (7,000 kg < MTOW < 136,000 kg); when following a Heavy aircraft on final approach, minimum radar wake separation is 5 NM for Medium and 6 NM for Light (or 2 to 3 minutes time separation).",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "All corporate jets are Heavy and require 2 NM separation.",
+        "text": "Separation is determined by passenger count rather than certified mass.",
         "is_correct": false
       },
       {
-        "id": "C",
+        "id": "B",
         "text": "Wake turbulence is negligible behind widebody aircraft above 1,000 ft AGL.",
         "is_correct": false
       },
       {
-        "id": "D",
-        "text": "Separation is determined by passenger count rather than certified mass.",
+        "id": "C",
+        "text": "All corporate jets are Heavy and require 2 NM separation.",
         "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Phenom 300 is Light (MTOW <= 7,000 kg), while Citation Latitude and Challenger 350 are Medium (7,000 kg < MTOW < 136,000 kg); when following a Heavy aircraft on final approach, minimum radar wake separation is 5 NM for Medium and 6 NM for Light (or 2 to 3 minutes time separation).",
+        "is_correct": true
       }
     ],
     "explanation": {
@@ -539,22 +539,22 @@
     "options": [
       {
         "id": "A",
+        "text": "A RAIM outage automatically disconnects the VHF communications transceivers.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
         "text": "RAIM uses redundant satellite signals (minimum 5 satellites with good geometry, or 4 with Baro-VNAV) to detect satellite faults; if a predictive RAIM outage is forecast at the destination ETA, the crew cannot plan an RNP APCH unless alternative ground-based navigation aids (ILS/VOR) are available.",
         "is_correct": true
       },
       {
-        "id": "B",
+        "id": "C",
         "text": "RAIM outages only affect aircraft equipped with inertial reference platforms.",
         "is_correct": false
       },
       {
-        "id": "C",
-        "text": "RAIM is only required for military tactical night operations.",
-        "is_correct": false
-      },
-      {
         "id": "D",
-        "text": "A RAIM outage automatically disconnects the VHF communications transceivers.",
+        "text": "RAIM is only required for military tactical night operations.",
         "is_correct": false
       }
     ],
@@ -582,12 +582,12 @@
       },
       {
         "id": "B",
-        "text": "A single VOR receiver and Mode A transponder.",
+        "text": "No specific approval is needed if following an airliner visually.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "No specific approval is needed if following an airliner visually.",
+        "text": "A single VOR receiver and Mode A transponder.",
         "is_correct": false
       },
       {
@@ -624,12 +624,12 @@
       },
       {
         "id": "C",
-        "text": "VHF voice radio broadcasts every 10 minutes.",
+        "text": "ADS-B Out is optional for private business aviation.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "ADS-B Out is optional for private business aviation.",
+        "text": "VHF voice radio broadcasts every 10 minutes.",
         "is_correct": false
       }
     ],
