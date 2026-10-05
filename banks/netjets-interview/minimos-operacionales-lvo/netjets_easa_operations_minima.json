@@ -1,0 +1,341 @@
+[
+  {
+    "id": "NJ-MIN-001",
+    "subject_id": "minimos-operacionales-lvo",
+    "learning_objective": "EASA Part-CAT.OP.MPA.305 - Regla de Prohibición de Aproximación (Approach Ban Rule)",
+    "stem": "Según la regla de prohibición de aproximación de EASA (CAT.OP.MPA.305), ¿en qué punto exacto no debe continuarse la aproximación instrumental si el RVR/visibilidad notificado es inferior a los mínimos aplicables?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No se debe continuar la aproximación más allá del marcador exterior (Outer Marker) o de 1.000 ft sobre la elevación del aeródromo (lo que sea más alto o aplicable en el segmento final).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "No se debe descender por debajo de la Altitud de Decisión (DA/DH) o Altitud Mínima de Descenso (MDA/MDH) bajo ninguna circunstancia.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se debe frustrar inmediatamente en el punto de aproximación frustrada (MAPt) si no hay contacto visual.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No se puede iniciar el viraje de procedimiento o interceptación de localizador si el METAR emitido está por debajo de mínimos.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **CAT.OP.MPA.305(a)** (*Commencement and continuation of approach*):\n\n1. El comandante o el piloto que vuela la aeronave puede iniciar una aproximación instrumental independientemente del RVR/visibilidad notificado.\n2. **Punto de la Prohibición (Approach Ban)**: Si el RVR/visibilidad notificado es **inferior al mínimo aplicable**, la aproximación **NO debe continuarse más allá** de:\n   - El **marcador exterior (Outer Marker - OM)** o posición equivalente en la senda de aproximación; O\n   - **1.000 ft por encima del aeródromo** (*1.000 ft AAL*), si no existe OM ni punto de referencia equivalente.\n3. **Si el RVR cae por debajo de mínimos DESPUÉS de haber cruzado los 1.000 ft AAL / OM**: La aproximación **PUEDE continuarse** hasta la DA/H o MDA/H aplicable, frustrando únicamente si no se obtienen las referencias visuales requeridas al alcanzarla.",
+      "references": [
+        "Regulation (EU) No 965/2012 - CAT.OP.MPA.305: Commencement and continuation of approach",
+        "AMC1 CAT.OP.MPA.305 Commencement and continuation of approach"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "NJ-MIN-002",
+    "subject_id": "minimos-operacionales-lvo",
+    "learning_objective": "EASA Part-CAT.OP.MPA.110 / Part-SPA.LVO - Despegue de Baja Visibilidad (LVTO)",
+    "stem": "¿A partir de qué valor de RVR se considera un despegue como Operación de Baja Visibilidad (Low Visibility Take-Off - LVTO) y qué valor mínimo absoluto permite EASA para aviones CAT con aprobación LVO e iluminación de eje de pista?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se considera LVTO cuando el RVR es inferior a 400 m; el mínimo estándar con iluminación de eje de pista y marcas de pista de alta intensidad es de 125 m (o 150 m para ciertas categorías).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se considera LVTO por debajo de 550 m; el mínimo absoluto permitido es de 75 m de RVR con HUD/EVS únicamente.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se considera LVTO por debajo de 800 m de visibilidad meteorológica; el límite inferior es de 200 m de RVR.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se considera LVTO por debajo de 1.000 m; requiere obligatoriamente copiloto con más de 500 horas en tipo.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **Part-SPA.LVO.100** y **AMC1 CAT.OP.MPA.110**:\n\n* **Definición de LVTO**: Todo despegue en una pista con un **RVR inferior a 400 m**.\n* **Requisitos para LVTO < 400 m**:\n  - Deben estar en vigor los Procedimientos de Baja Visibilidad (**LVP - Low Visibility Procedures**) en el aeródromo.\n  - Requiere aprobación operacional específica (**SPA.LVO**).\n  - **RVR 125 m / 150 m**: Requiere luces de eje de pista de alta intensidad (*Runway Centerline Lights* espaciadas $\\le 15\\text{ m}$), luces de borde de pista y marcas de eje, proporcionando un segmento visual mínimo de **90 metros** desde la cabina.",
+      "references": [
+        "Regulation (EU) No 965/2012 - Part-SPA.LVO.100: Low visibility operations",
+        "AMC1 CAT.OP.MPA.110 Aerodrome operating minima - Take-off operations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-MIN-003",
+    "subject_id": "minimos-operacionales-lvo",
+    "learning_objective": "EASA Part-CAT.OP.MPA.110 / Part-SPA.LVO - Referencias Visuales en CAT II",
+    "stem": "En una aproximación de precisión ILS CAT II (DH entre 100 ft y 200 ft), ¿cuál es el requisito mínimo reglamentario de referencias visuales que debe tener el piloto al alcanzar la DH para poder continuar y aterrizar?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Un segmento visual de al menos 3 luces consecutivas que incluyan la línea central de las luces de aproximación, o de la zona de contacto (TDZ), o del eje de pista, o una combinación de ellas.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Visión clara y completa del umbral de pista y de las luces PAPIS en todo momento durante el descenso final.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Al menos una luz aislada del sistema de luces de aproximación antes de los 100 ft sobre el terreno.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Contacto visual con cualquier elemento del terreno adyacente a la pista o señales de rodaje laterales.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según **AMC1 CAT.OP.MPA.110** y **SPA.LVO.100**:\n\n* **CAT II Visual Reference Requirement**: Al alcanzar la Altitud/Altura de Decisión (**DH 100-200 ft**), el piloto no debe continuar el descenso por debajo de la DH a menos que mantenga contacto visual con un segmento de al menos **tres (3) luces consecutivas** que correspondan a:\n  1. La línea central de las luces de aproximación (*centerline of the approach lights*); O\n  2. Las luces de la zona de toma de contacto (*Touchdown Zone - TDZ lights*); O\n  3. Las luces de la línea central de pista (*Runway Centerline lights*); O\n  4. Las luces de borde de pista; O\n  5. Una combinación de estos elementos luminosos.\n\nEste segmento visual debe incluir un elemento transversal (como una barra transversal del sistema de aproximación o del umbral).",
+      "references": [
+        "Regulation (EU) No 965/2012 - AMC1 CAT.OP.MPA.110: Visual reference for CAT II operations",
+        "Part-SPA.LVO.100 Low visibility operations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-MIN-004",
+    "subject_id": "minimos-operacionales-lvo",
+    "learning_objective": "EASA Part-CAT.OP.MPA.115 / AMC1 CAT.OP.MPA.115 - Técnica CDFA en Aproximaciones No de Precisión",
+    "stem": "¿Qué penalización reglamentaria de visibilidad/RVR impone EASA si una aproximación no de precisión (NPA) o de tipo A se vuela utilizando una técnica que NO sea de Descenso Continuo en Aproximación Final (Non-CDFA)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se debe incrementar el RVR mínimo en 200 m para aeronaves de Categoría A y B, y en 400 m para aeronaves de Categoría C y D, debiendo además añadir un margen a la MDA/H.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se debe duplicar obligatoriamente el RVR mínimo de la carta y requerir la presencia de un segundo alternativo de destino.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No existe penalización de RVR, únicamente se prohíbe realizar la aproximación de noche o con pista mojada.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se debe sumar 500 ft a la altitud de decisión sin alterar el RVR ni la visibilidad requerida.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **AMC1 CAT.OP.MPA.115** (*Continuous Descent Final Approach - CDFA*):\n\n* Las operaciones comerciales de transporte aéreo deben volar las aproximaciones de No Precisión (NPA) usando la técnica **CDFA** (Continuous Descent Final Approach).\n* Si una aproximación no puede volarse en CDFA (técnica escalonada *step-down* / *dive and drive*):\n  - El RVR mínimo requerido **se incrementa en 200 m** para aeronaves de **Categoría A y B**.\n  - El RVR mínimo requerido **se incrementa en 400 m** para aeronaves de **Categoría C y D**.\n  - La aproximación debe tratarse con una MDA/H convencional sin descender de ella hasta avistar la pista.",
+      "references": [
+        "Regulation (EU) No 965/2012 - AMC1 CAT.OP.MPA.115: Continuous descent final approach (CDFA)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "NJ-MIN-005",
+    "subject_id": "minimos-operacionales-lvo",
+    "learning_objective": "EASA Part-CAT.OP.MPA.186 - Mínimos de Planificación para Alternativo de Destino (Tabla 1B)",
+    "stem": "Al seleccionar un aeródromo como alternativo de destino en la fase de planificación de vuelo bajo el plan básico EASA (Tabla 1B), si dicho aeródromo alternativo dispone de una aproximación instrumental Tipo A (NPA/3D con mínimos > 200 ft), ¿qué márgenes deben añadirse a los mínimos del aeródromo para el cálculo de meteorología requerida?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DA/H o MDA/H + 400 ft en el techo de nubes (o visibilidad vertical) y RVR/VIS + 1.500 m.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "DA/H + 200 ft en el techo de nubes y RVR/VIS + 800 m.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "MDA/H + 100 ft en el techo de nubes y RVR/VIS + 300 m.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Únicamente los mínimos de publicación de la carta instrumental sin ningún incremento adicional.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según **AMC6 CAT.OP.MPA.182 / CAT.OP.MPA.186 (Tabla 1B - Plan Básico)**:\n\n### Mínimos de Planificación para Alternativos de Destino y ERA (Plan Básico)\n| Tipo de Aproximación en Alternativo | Techo de Nubes / Visibilidad Vertical | RVR / Visibilidad |\n| :--- | :--- | :--- |\n| **Aproximación Tipo B (Precision / CAT I)** | **DA/H + 200 ft** | **RVR/VIS + 800 m** |\n| **Aproximación Tipo A (Non-Precision / 3D > 200 ft)** | **DA/H o MDA/H + 400 ft** | **RVR/VIS + 1.500 m** |\n| **Aproximación en Circuito (Circling)** | **MDA/H + 400 ft** | **VIS + 1.500 m** |\n\n*Para Tipo A:* Se deben sumar obligatoriamente **+400 ft** al techo y **+1.500 m** a la visibilidad requerida en el período ETA ±1 hora.",
+      "references": [
+        "Regulation (EU) No 965/2012 - CAT.OP.MPA.186: Destination alternate aerodromes",
+        "AMC6 CAT.OP.MPA.182 Fuel planning - Planning minima (Table 1B)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-MIN-006",
+    "subject_id": "minimos-operacionales-lvo",
+    "learning_objective": "EASA Part-CAT.OP.MPA.186 - Mínimos de Planificación con 2 Pistas Separadas (Tabla 1A)",
+    "stem": "Bajo el esquema de mínimos de planificación con variaciones (Tabla 1A), si el aeródromo alternativo dispone de dos o más aproximaciones Tipo B utilizables a dos pistas separadas, ¿qué incremento de planificación se aplica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "DA/H + 100 ft en el techo y RVR + 300 m aplicados sobre la aproximación más ventajosa.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "DA/H + 200 ft en el techo y RVR + 800 m aplicados a la pista secundaria.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cero incremento (mínimos directos de la carta CAT I de 200 ft y 550 m).",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "MDA/H + 300 ft y RVR + 1.000 m.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **AMC8 / AMC9 CAT.OP.MPA.182 / CAT.OP.MPA.186 (Tabla 1A - Plan con Variaciones)**:\n\n* **Dos o más aproximaciones Tipo B a 2 pistas separadas**: Se requiere que la meteo (ETA ±1 h) sea superior a **DA/H + 100 ft** y **RVR + 300 m**.\n* **Una aproximación Tipo B**: **DA/H + 150 ft** y **RVR + 450 m**.\n* Esto otorga gran flexibilidad a operadores con monitorización de vuelo activa (Flight Monitoring) y autorizaciones LVO como NetJets.",
+      "references": [
+        "Regulation (EU) No 965/2012 - AMC8/AMC9 CAT.OP.MPA.182 Planning minima with variations (Table 1A)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-MIN-007",
+    "subject_id": "minimos-operacionales-lvo",
+    "learning_objective": "EASA Part-CAT.OP.MPA.110 - Requisitos Visuales para ILS CAT I",
+    "stem": "En una aproximación de precisión estándar CAT I (DH no inferior a 200 ft y RVR no inferior a 550 m), ¿cuál es el requisito mínimo de contacto visual al alcanzar la DA/H para poder continuar hacia el aterrizaje?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mantener contacto visual continuo con al menos un elemento del sistema de luces de aproximación, o el umbral, sus marcas o luces, o las luces de la zona de toma de contacto (TDZ), o la pista misma.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Tener contacto visual con al menos 5 barras de luces consecutivas del sistema de aproximación de alta intensidad.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Ver con total nitidez el extremo de parada opuesto de la pista y la manga de viento.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Disponer de guiado automático acoplado con piloto automático hasta la toma de contacto.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **AMC1 CAT.OP.MPA.110** (*Visual reference for CAT I operations*):\n\nPara continuar el descenso por debajo de la DA/H en CAT I, el piloto debe mantener contacto visual continuo con **al menos uno** de los siguientes elementos visuales de la pista prevista de aterrizaje:\n1. Elementos del **sistema de luces de aproximación** (*Approach lighting system*);\n2. El **umbral de pista** (*threshold*);\n3. Las **marcas del umbral**;\n4. Las **luces del umbral**;\n5. Las luces de identificación del umbral (*RTIL / strobe lights*);\n6. El indicador visual de senda de aproximación (**PAPI / VASI**);\n7. La **zona de toma de contacto** (*touchdown zone*) o sus marcas / luces;\n8. Las **luces del borde de pista** (*runway edge lights*).",
+      "references": [
+        "Regulation (EU) No 965/2012 - AMC1 CAT.OP.MPA.110 CAT I visual reference"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "NJ-MIN-008",
+    "subject_id": "minimos-operacionales-lvo",
+    "learning_objective": "EASA Part-CAT.OP.MPA.110 / Part-SPA.LVO - Clasificación de Aproximaciones CAT III (A, B, C)",
+    "stem": "¿Cuáles son los límites reglamentarios de Altitud de Decisión (DH) y RVR para operaciones ILS CAT III A y CAT III B según EASA SPA.LVO.100?",
+    "options": [
+      {
+        "id": "A",
+        "text": "CAT III A: DH inferior a 100 ft (o sin DH) y RVR no inferior a 175 m (con 3 luces consecutivas requeridas); CAT III B: DH inferior a 50 ft (o sin DH) y RVR inferior a 175 m pero no inferior a 75 m.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "CAT III A: DH fija de 200 ft y RVR de 350 m; CAT III B: DH fija de 100 ft y RVR de 200 m.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "CAT III A: DH inferior a 50 ft y RVR de 300 m; CAT III B: sin DH y RVR de 0 m (ciego total).",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "CAT III A y B tienen idénticos mínimos de 100 ft y 150 m diferenciándose solo en el tipo de avión.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **Part-SPA.LVO.100** y **AMC1 CAT.OP.MPA.110**:\n\n### Clasificación EASA de Aproximaciones de Precisión CAT III\n| Categoría | Altura de Decisión (DH) | RVR Mínimo | Referencia Visual Requerida en DH |\n| :--- | :--- | :--- | :--- |\n| **CAT III A** | **DH < 100 ft** (o sin DH) | **RVR $\\ge$ 175 m** | Al menos **3 luces consecutivas** (eje, TDZ o borde) |\n| **CAT III B** | **DH < 50 ft** (o sin DH) | **75 m $\\le$ RVR < 175 m** | Al menos **1 luz de eje de pista** (con DH) o sin ref. visual (sin DH / *rollout*) |\n| **CAT III C** | Sin DH | Sin límite de RVR (0 m) | Ninguna referencia visual (no implementado en la práctica) |",
+      "references": [
+        "Regulation (EU) No 965/2012 - Part-SPA.LVO.100: Low visibility operations",
+        "AMC1 CAT.OP.MPA.110 CAT III approach minima"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-MIN-009",
+    "subject_id": "minimos-operacionales-lvo",
+    "learning_objective": "EASA Part-CAT.OP.MPA.110 - Aproximación en Circuito (Circling Minima) y Protección de Obstáculos",
+    "stem": "Durante una maniobra de aproximación visual en circuito (Visual Circling), ¿cuál es la limitación crítica respecto al descenso por debajo de la MDA/H de circuito?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No se debe descender por debajo de la MDA/H de circuito hasta que la aeronave esté alineada en el tramo final de la pista de aterrizaje prevista y el contacto visual con la pista se mantenga continuamente.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se puede iniciar el descenso continuo al iniciar el viraje a base siempre que se vuele dentro del radio de protección de la categoría.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se debe descender inmediatamente a 500 ft AGL al avistar las luces del aeródromo para acelerar la toma.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El piloto puede descender por debajo de MDA/H en viento en cola si el copiloto confirma libre de obstáculos en el radar de terreno.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **CAT.OP.MPA.110** y **PANS-OPS (ICAO Doc 8168)**:\n\n* **Visual Circling**: El piloto debe mantener contacto visual continuo con el entorno de la pista durante toda la maniobra en circuito dentro del radio de protección del aeródromo.\n* **Regla de Descenso**: La aeronave **NO debe descender por debajo de la MDA/H de circuito** hasta que:\n  1. Se mantengan las referencias visuales requeridas;\n  2. El umbral de la pista de aterrizaje esté a la vista; Y\n  3. La aeronave esté en una posición tal que se pueda realizar un descenso normal para el aterrizaje con pendiente estándar **completando la alineación con el eje de pista**.",
+      "references": [
+        "Regulation (EU) No 965/2012 - AMC1 CAT.OP.MPA.110 Circling operations",
+        "ICAO Doc 8168 PANS-OPS Vol I"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  }
+]

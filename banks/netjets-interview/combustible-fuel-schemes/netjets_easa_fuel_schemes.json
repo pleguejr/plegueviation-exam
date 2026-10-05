@@ -1,0 +1,417 @@
+[
+  {
+    "id": "NJ-FUEL-001",
+    "subject_id": "combustible-fuel-schemes",
+    "learning_objective": "EASA Part-CAT.OP.MPA.181 / AMC1 CAT.OP.MPA.181(c)(1) - Final Reserve Fuel en reactores y turborreactores",
+    "stem": "¿Cuál es la definición reglamentaria y el valor mínimo del Combustible de Reserva Final (Final Reserve Fuel - FRF) para un avión propulsado por turbina (jet/turboprop) según la normativa EASA Air Operations (CAT.OP.MPA.181)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Combustible para volar durante 30 minutos a velocidad de espera (holding speed) a 1.500 ft (450 m) sobre la elevación del aeródromo en condiciones estándar ISA.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Combustible para volar durante 45 minutos a régimen de crucero de largo alcance a nivel de crucero asignado en atmósfera real.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Combustible para 30 minutos calculados al consumo promedio de aproximación frustrada y circuito de tráfico a 1.000 ft AGL.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Combustible para volar durante 45 minutos a velocidad de espera a 1.500 ft sobre el aeródromo alternativo.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **CAT.OP.MPA.181** y **AMC1 CAT.OP.MPA.181(c)(1)**:\n\n* **Aviones con motor de turbina (Turbine-engine aircraft)**: El Combustible de Reserva Final (*Final Reserve Fuel*) es la cantidad calculada para volar durante **30 minutos** a velocidad de espera (*holding speed*) a **1.500 ft (450 m)** por encima de la elevación del aeródromo en condiciones de atmósfera estándar (ISA), con la masa estimada a la llegada al aeródromo alternativo de destino (o de destino si no se requiere alternativo).\n* **Aviones con motor de pistón**: El tiempo requerido es de **45 minutos** bajo las mismas condiciones.\n\n### Resumen de Reserva Final EASA\n| Tipo de Planta Motriz | Tiempo de Vuelo | Altitud de Referencia | Velocidad / Condiciones |\n| :--- | :--- | :--- | :--- |\n| **Turbina (Jet / Turboprop)** | **30 minutos** | 1.500 ft (450 m) sobre aeródromo | Holding speed, ISA |\n| **Pistón (Reciprocating)** | **45 minutos** | 1.500 ft (450 m) sobre aeródromo | Holding speed, ISA |",
+      "references": [
+        "Regulation (EU) No 965/2012 - Part-CAT.OP.MPA.181: Fuel schemes - fuel planning and in-flight re-planning policy",
+        "AMC1 CAT.OP.MPA.181(c)(1) Fuel planning and in-flight re-planning policy - basic fuel scheme"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "NJ-FUEL-002",
+    "subject_id": "combustible-fuel-schemes",
+    "learning_objective": "EASA Part-CAT.OP.MPA.181 / AMC1 CAT.OP.MPA.181 - Cálculo del Combustible de Contingencia (Contingency Fuel)",
+    "stem": "En el marco del plan básico de combustible EASA para transporte aéreo comercial (CAT), ¿cómo se calcula reglamentariamente el Combustible de Contingencia (Contingency Fuel) estándar sin variaciones especiales?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El 5 % del combustible de viaje (trip fuel) planificado, o una cantidad para volar 5 minutos a velocidad de espera a 1.500 ft sobre el destino, lo que sea mayor.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El 10 % del combustible de viaje planificado o 15 minutos a velocidad de crucero normal en cualquier caso.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El 3 % del combustible de viaje planificado de forma obligatoria e incondicional para cualquier ruta europea.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Una cantidad fija equivalente a 20 minutos de consumo horario medio del avión con independencia de la duración del vuelo.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **AMC1 CAT.OP.MPA.181(c)(1)**, el combustible de contingencia en el esquema básico estándar no debe ser inferior a:\n\n1. **El 5 % del Trip Fuel planificado** o, en caso de re-planificación en vuelo, el 5 % del Trip Fuel restante; o\n2. Una cantidad que permita volar durante **5 minutos a velocidad de espera a 1.500 ft (450 m)** sobre el aeródromo de destino en condiciones estándar;\n**lo que sea mayor** de los dos valores.\n\n*Nota:* Puede reducirse al **3 % del Trip Fuel** únicamente si el operador cuenta con un alternativo en ruta adecuado (*En-Route Alternate - ERA*) ubicado dentro del 20 % de la distancia total de la ruta o a no más de 50 NM del eje.",
+      "references": [
+        "Regulation (EU) No 965/2012 - CAT.OP.MPA.181",
+        "AMC1 CAT.OP.MPA.181(c)(1)(i) Contingency fuel"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "NJ-FUEL-003",
+    "subject_id": "combustible-fuel-schemes",
+    "learning_objective": "EASA Part-CAT.OP.MPA.182 / GM1 CAT.OP.MPA.182 - Declaración en vuelo de 'MINIMUM FUEL'",
+    "stem": "¿Bajo qué circunstancia operativa exacta debe el Comandante declarar 'MINIMUM FUEL' a la dependencia ATC según la normativa EASA CAT.OP.MPA.182?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cuando el vuelo está comprometido a aterrizar en un aeródromo específico y cualquier cambio en la autorización actual puede resultar en un aterrizaje con menos del Combustible de Reserva Final previsto.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cuando el combustible utilizable a bordo es exactamente igual a la reserva final y se requiere prioridad inmediata de aproximación.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En el instante en que se consume la totalidad del combustible de contingencia durante la fase de crucero.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Únicamente cuando se ha iniciado el desvío al alternativo y el combustible restante es inferior al Trip Fuel del FMS.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según **CAT.OP.MPA.182(d)** y **GM1 CAT.OP.MPA.182**:\n\n* **MINIMUM FUEL**: El comandante debe notificar al control de tránsito aéreo (ATC) declarando `MINIMUM FUEL` cuando el vuelo está **comprometido a aterrizar en un aeródromo específico** y calcula que cualquier cambio en la autorización existente puede dar lugar a aterrizar con **menos del Combustible de Reserva Final (FRF)** planificado.\n* **Importante**: La declaración `MINIMUM FUEL` informa al ATC de que todas las opciones de aeródromos previstos se han reducido a un aeródromo específico y que la situación de combustible no tolera demoras imprevistas, pero **NO confiere prioridad de tráfico** por sí misma.",
+      "references": [
+        "Regulation (EU) No 965/2012 - CAT.OP.MPA.182: In-flight fuel management",
+        "GM1 CAT.OP.MPA.182 In-flight fuel management - Declaration of MINIMUM FUEL"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-FUEL-004",
+    "subject_id": "combustible-fuel-schemes",
+    "learning_objective": "EASA Part-CAT.OP.MPA.182 / AMC1 CAT.OP.MPA.182 - Declaración de emergencia 'MAYDAY MAYDAY MAYDAY FUEL'",
+    "stem": "¿Cuándo es obligatorio declarar una situación de peligro mediante la llamada radiotelefónica 'MAYDAY MAYDAY MAYDAY FUEL' según EASA Air Operations?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cuando la cantidad calculada de combustible utilizable al aterrizar en el aeródromo seguro más cercano es inferior al Combustible de Reserva Final (FRF) planificado.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cuando el combustible remanente a bordo es inferior a la suma del combustible de alternativo más la reserva de contingencia.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cuando se experimenta una fuga de combustible no controlada independientemente de la cantidad total remanente en los tanques.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cuando el controlador aéreo no puede conceder un descenso inmediato tras haber declarado previamente 'MINIMUM FUEL'.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **CAT.OP.MPA.182(e)**:\n\n* El piloto al mando debe declarar una situación de socorro/emergencia mediante **`MAYDAY MAYDAY MAYDAY FUEL`** cuando la cantidad calculada de combustible utilizable disponible para el aterrizaje en el aeródromo seguro más cercano donde se pueda realizar un aterrizaje seguro sea **inferior al combustible de reserva final (Final Reserve Fuel)** previsto.\n\n### Comparativa de Llamadas de Combustible\n| Mensaje R/T | Condición Disparadora | ¿Otorga Prioridad ATC? |\n| :--- | :--- | :--- |\n| **`MINIMUM FUEL`** | Comprometido a un aeródromo y cualquier demora adicional puede comprometer el FRF | **NO** (Informa al ATC de no demoras) |\n| **`MAYDAY MAYDAY MAYDAY FUEL`** | Se calcula aterrizar con menos del Combustible de Reserva Final (FRF) | **SÍ** (Prioridad absoluta de emergencia) |",
+      "references": [
+        "Regulation (EU) No 965/2012 - CAT.OP.MPA.182(e)",
+        "ICAO Doc 4444 (PANS-ATM) Section 15.5.4"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "NJ-FUEL-005",
+    "subject_id": "combustible-fuel-schemes",
+    "learning_objective": "EASA Part-CAT.OP.MPA.181 / AMC1 CAT.OP.MPA.181 - Esquema de Aeródromo Aislado (Isolated Aerodrome Fuel Policy)",
+    "stem": "En una operación IFR hacia un aeródromo aislado (isolated aerodrome) para el cual no existe ningún alternativo de destino disponible, ¿qué cantidad de combustible adicional (Additional Fuel) exige EASA planificar para un avión bimotor a reacción?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Combustible para volar durante 2 horas al régimen de consumo normal de crucero sobre el aeródromo de destino, incluyendo la reserva final.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Combustible para volar durante 45 minutos a velocidad de espera a 1.500 ft más un 15 % del combustible de viaje total.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Combustible equivalente al 50 % del Trip Fuel más 30 minutos a régimen de crucero rápido.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Únicamente el combustible de contingencia incrementado al 10 % del Trip Fuel sin reservas adicionales obligatorias.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según **AMC1 CAT.OP.MPA.181(c)(1)(iv)**, cuando un aeródromo de destino es designado como **aeródromo aislado** (*isolated aerodrome*) y no existe aeródromo alternativo de destino disponible:\n\n* **Aviones con turbina**: La cantidad de combustible antes del vuelo debe incluir el *Trip Fuel*, el *Contingency Fuel*, más una cantidad de combustible adicional que no debe ser inferior a **2 horas de vuelo al consumo normal de crucero** por encima del aeródromo de destino (lo cual incluye el combustible de reserva final).\n* **Aviones de pistón**: El combustible adicional debe ser de al menos **45 minutos más un 15 % del tiempo de vuelo en crucero** (hasta un máximo de 2 horas) o 2 horas de crucero, lo que sea menor.",
+      "references": [
+        "Regulation (EU) No 965/2012 - AMC1 CAT.OP.MPA.181(c)(1)(iv) Isolated aerodrome fuel scheme"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-FUEL-006",
+    "subject_id": "combustible-fuel-schemes",
+    "learning_objective": "EASA Part-CAT.OP.MPA.185 - Criterios de Selección de Alternativo de Destino IFR",
+    "stem": "¿En qué condición reglamentaria permite EASA no seleccionar ningún aeródromo alternativo de destino en el plan operacional de vuelo para una operación IFR en transporte comercial?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cuando la duración del vuelo no excede de 6 horas y el destino cuenta con dos pistas utilizables independientes con previsiones meteorológicas en o por encima de los mínimos aplicables durante ETA ±1 hora.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cuando la duración del vuelo sea inferior a 3 horas y el RVR en el destino esté por encima de 800 m en el momento del despegue.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Siempre que el avión disponga de combustible extra equivalente a 60 minutos de espera independientemente del estado del tiempo.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En cualquier vuelo doméstico dentro del territorio de la Unión Europea operado bajo supervisión de control radar.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según **CAT.OP.MPA.185(b)** y **AMC1 CAT.OP.MPA.185**:\nPara un vuelo IFR, no es necesario seleccionar un aeródromo alternativo de destino si:\n1. La **duración del vuelo planificado no supera las 6 horas**; Y\n2. En el aeródromo de destino existen **dos pistas utilizables separadas e independientes**; Y\n3. Los partes e informes meteorológicos apropiados indican que, durante un período que comienza **1 hora antes y finaliza 1 hora después de la hora estimada de llegada (ETA ±1 h)**, el techo de nubes estará al menos a **2.000 ft o a la altitud de aproximación en circuito (circling height) + 500 ft** (lo que sea mayor), y la visibilidad será de al menos **5 km**.\n\n*Alternativamente:* Cuando el destino se planifica bajo el procedimiento de *aeródromo aislado*.",
+      "references": [
+        "Regulation (EU) No 965/2012 - CAT.OP.MPA.185: Selection of aerodromes and operating sites - aeroplanes",
+        "AMC1 CAT.OP.MPA.185 Selection of aerodromes"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-FUEL-007",
+    "subject_id": "combustible-fuel-schemes",
+    "learning_objective": "EASA Part-CAT.OP.MPA.185 - Obligatoriedad de 2 Alternativos de Destino",
+    "stem": "¿Cuándo exige la normativa EASA CAT.OP.MPA.185 seleccionar obligatoriamente DOS (2) aeródromos alternativos de destino en el plan de vuelo operacional para una operación IFR?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cuando las previsiones meteorológicas para el destino indiquen condiciones por debajo de los mínimos de planificación aplicables (ETA ±1 h), o cuando no se disponga de información meteorológica.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cuando el vuelo tenga una duración superior a 4 horas o se opere en espacio aéreo de navegación basada en performance (PBN).",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Siempre que la pista de destino esté mojada o contaminada en el momento del despacho inicial.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cuando la categoría de salvamento y extinción de incendios (RFFS) del destino sea inferior a la requerida por el manual de operaciones.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **CAT.OP.MPA.185(c)**:\nEl operador debe seleccionar **al menos dos aeródromos alternativos de destino** cuando:\n\n1. Los informes o pronósticos meteorológicos apropiados para el aeródromo de destino indiquen que, durante el período desde **1 hora antes hasta 1 hora después de la ETA**, las condiciones meteorológicas estarán **por debajo de los mínimos de planificación aplicables**; O\n2. **No se dispone de información meteorológica** adecuada para el aeródromo de destino.\n\n*Nota para NetJets / Executive Ops:* En destinos corporativos no controlados o con estaciones meteorológicas de horario restringido (sin METAR/TAF continuo), se deben despachar 2 alternativos con información meteorológica completa.",
+      "references": [
+        "Regulation (EU) No 965/2012 - CAT.OP.MPA.185(c)",
+        "AMC1 CAT.OP.MPA.185 Selection of aerodromes - two destination alternates"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-FUEL-008",
+    "subject_id": "combustible-fuel-schemes",
+    "learning_objective": "EASA Part-CAT.OP.MPA.181 / AMC1 CAT.OP.MPA.181 - Procedimiento de Punto de Decisión (Decision Point Procedure)",
+    "stem": "En el esquema de combustible con procedimiento de Punto de Decisión (Decision Point Procedure - DPP), ¿cómo se dimensiona el combustible de contingencia desde el punto de decisión hasta el destino?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No menos del 5 % del combustible estimado de viaje desde el punto de decisión hasta el destino, o 5 minutos de espera a 1.500 ft sobre el destino.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El 10 % del combustible total de la ruta desde el aeródromo de salida hasta el punto de decisión exclusivamente.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Una cantidad fija de 30 minutos calculada a régimen económico de crucero sin considerar la distancia restante.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El 3 % del combustible total de viaje entre la salida y el aeródromo alternativo en ruta (En-Route Alternate).",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Bajo **AMC1 CAT.OP.MPA.181(c)(2)** (*Decision Point Procedure - DPP*):\n\nEl combustible de contingencia se calcula en dos tramos:\n* **Tramo 1 (Salida al alternativo en ruta vía Punto de Decisión)**: No menos del 5 % del Trip Fuel desde la salida hasta el alternativo en ruta (*ERA*);\n* **Tramo 2 (Punto de Decisión al Destino)**: No menos del **5 % del combustible de viaje desde el Punto de Decisión (DP) hasta el aeródromo de destino** (o 5 minutos a velocidad de espera a 1.500 ft sobre el destino, lo que sea mayor).\n\nEste procedimiento permite reducir significativamente el combustible total a cargar en vuelos transcontinentales o de largo alcance.",
+      "references": [
+        "Regulation (EU) No 965/2012 - AMC1 CAT.OP.MPA.181(c)(2) Decision point procedure"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "NJ-FUEL-009",
+    "subject_id": "combustible-fuel-schemes",
+    "learning_objective": "EASA Part-CAT.OP.MPA.185 - Requisitos de Alternativo de Despegue (Take-off Alternate)",
+    "stem": "¿Cuándo es obligatorio seleccionar un aeródromo alternativo de despegue (Take-off Alternate) y a qué distancia máxima debe encontrarse para un avión bimotor según EASA CAT.OP.MPA.185?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Es obligatorio si la meteorología en la salida está por debajo de los mínimos de aterrizaje aplicables; para bimotores debe ubicarse a no más de 1 hora de vuelo a velocidad de crucero con un motor inoperativo en aire en calma (o según tiempo de desviación OEI aprobado).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Es obligatorio en todos los vuelos internacionales; debe estar a menos de 30 minutos de vuelo a velocidad normal de crucero.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solo se requiere si la pista de despegue tiene menos de 2.000 metros de longitud y está ubicada a más de 2 horas de vuelo.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Es obligatorio cuando la temperatura ambiente es inferior a 0 °C a no más de 90 minutos con dos motores operativos.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **CAT.OP.MPA.185(a)**:\n\n* **Obligatoriedad**: Se debe seleccionar un alternativo de despegue si las condiciones meteorológicas en el aeródromo de salida están **por debajo de los mínimos de aterrizaje aplicables** para ese aeródromo o si no fuera posible regresar por otras razones operativas.\n* **Distancia para Aviones Bimotores (Twin-engine aircraft)**:\n  - A una distancia que no supere el equivalente a **1 hora de tiempo de vuelo a velocidad de crucero con un motor inoperativo (OEI)** en atmósfera estándar y aire en calma, determinada a partir del AFM;\n  - O el tiempo de desviación equivalente aprobado para el operador según la normativa aplicable (e.g. 120 min para ciertas aprobaciones).",
+      "references": [
+        "Regulation (EU) No 965/2012 - CAT.OP.MPA.185(a): Take-off alternate aerodrome",
+        "AMC1 CAT.OP.MPA.185 Selection of aerodromes"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-FUEL-010",
+    "subject_id": "combustible-fuel-schemes",
+    "learning_objective": "EASA Part-CAT.OP.MPA.181 / AMC1 CAT.OP.MPA.181 - Desglose del Combustible de Alternativo (Alternate Fuel)",
+    "stem": "¿Cuáles son las fases operativas completas que debe incluir el cálculo del Combustible de Alternativo (Alternate Fuel) según el esquema básico EASA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aproximación frustrada desde la DA/MDA en el destino, ascenso a altitud de crucero, crucero hacia el alternativo, descenso, aproximación instrumental y aterrizaje completo en el aeródromo alternativo.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Vuelo directo nivelado a FL100 entre ambos aeropuertos y 15 minutos de espera a velocidad económica.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Únicamente el tramo de crucero entre el destino y el alternativo a velocidad de máximo alcance.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El tiempo de vuelo en línea recta a régimen OEI más 45 minutos de reserva adicional.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según **AMC1 CAT.OP.MPA.181(c)(1)(iii)** (*Alternate fuel*):\n\nEl combustible de alternativo debe ser suficiente para permitir a la aeronave:\n1. Ejecutar una **aproximación frustrada** (*missed approach*) en el aeródromo de destino desde la DA/H o MDA/H aplicable hasta el punto de frustrada;\n2. **Ascender** a la altitud de crucero planificada;\n3. Volar la ruta de **crucero** hasta el aeródromo alternativo de destino;\n4. **Descender** hasta el punto donde se inicia la aproximación;\n5. Ejecutar la **aproximación** y completar el **aterrizaje** en el aeródromo alternativo de destino.\n\nSi se seleccionan 2 alternativos, el Alternate Fuel se calcula para el que requiera la mayor cantidad de combustible.",
+      "references": [
+        "Regulation (EU) No 965/2012 - AMC1 CAT.OP.MPA.181(c)(1)(iii) Alternate fuel"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "NJ-FUEL-011",
+    "subject_id": "combustible-fuel-schemes",
+    "learning_objective": "EASA Part-CAT.OP.MPA.182 - Intervalos de Monitorización de Combustible en Vuelo",
+    "stem": "Durante el vuelo en operaciones comerciales EASA, ¿con qué periodicidad mínima debe la tripulación de vuelo registrar y verificar el combustible remanente utilizable y compararlo con el plan de vuelo operacional?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A intervalos regulares no superiores a 60 minutos o en cada punto de notificación (waypoint) significativo a lo largo de la ruta.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Únicamente en el Top of Climb (TOC) y en el Top of Descent (TOD).",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cada 2 horas o al cruzar fronteras nacionales exclusivamente.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solo si se produce una discrepancia de más de 500 kg entre el FMS y los indicadores de combustible.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **CAT.OP.MPA.182(a)** y **AMC1 CAT.OP.MPA.182** (*In-flight fuel management*):\n\n* El piloto al mando debe asegurarse de que se realizan comprobaciones del combustible a **intervalos regulares de tiempo (que no deben exceder de 60 minutos)** o en cada **waypoint de navegación planificado**.\n* Se debe registrar el combustible utilizable remanente, evaluar el consumo real frente al previsto, calcular el combustible remanente estimado al llegar al destino y verificar que el remanente en destino no sea inferior al *Alternate Fuel + Final Reserve Fuel*.",
+      "references": [
+        "Regulation (EU) No 965/2012 - CAT.OP.MPA.182 In-flight fuel management",
+        "AMC1 CAT.OP.MPA.182 In-flight fuel checks"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  }
+]

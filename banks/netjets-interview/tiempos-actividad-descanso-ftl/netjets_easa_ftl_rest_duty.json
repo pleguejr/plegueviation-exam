@@ -1,0 +1,341 @@
+[
+  {
+    "id": "NJ-FTL-001",
+    "subject_id": "tiempos-actividad-descanso-ftl",
+    "learning_objective": "EASA Part-ORO.FTL.105 / CS FTL.1.205 - Definición de WOCL (Window of Circadian Low)",
+    "stem": "¿Cómo define reglamentariamente EASA la 'Ventana de Mínimo Circadiano' (Window of Circadian Low - WOCL) en la normativa Part-ORO.FTL?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El período comprendido entre las 02:00 y las 05:59 horas en la zona horaria en la que el tripulante se encuentra aclimatado.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El período entre las 00:00 y las 06:00 horas en tiempo universal coordinado (UTC) incondicionalmente.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cualquier período nocturno superior a 4 horas continuas de servicio de vuelo.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El tramo horario de 01:00 a 07:00 en la base de operaciones de la compañía.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **ORO.FTL.105(26)**:\n\n* **Window of Circadian Low (WOCL)**: Significa el período comprendido entre las **02:00 y las 05:59 horas**.\n* Dentro de una franja de 3 husos horarios, el WOCL se refiere a la hora de la base de operaciones (*home base*).\n* Más allá de 3 husos horarios, se calcula en función de la hora local del lugar en el que el tripulante está **aclimatado** (*acclimatised*).\n* Las horas de servicio que invaden la WOCL penalizan drásticamente el período máximo diario de actividad de vuelo (FDP).",
+      "references": [
+        "Regulation (EU) No 965/2012 - Part-ORO.FTL.105 Definitions (26) Window of circadian low",
+        "CS FTL.1.205 Flight Duty Period (FDP)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "NJ-FTL-002",
+    "subject_id": "tiempos-actividad-descanso-ftl",
+    "learning_objective": "EASA Part-ORO.FTL.205 / CS FTL.1.205 - Período Máximo Diario de Actividad de Vuelo (FDP Básico)",
+    "stem": "Para una tripulación aclimatada que se presenta a firmar (report) a las 08:30 hora local para realizar 2 sectores de vuelo, ¿cuál es el Período Máximo Diario de Actividad de Vuelo (FDP) básico permitido por la tabla EASA ORO.FTL.205 sin extensiones?",
+    "options": [
+      {
+        "id": "A",
+        "text": "13 horas y 00 minutos.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "14 horas y 30 minutos.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "11 horas y 45 minutos.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "12 horas y 15 minutos.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la tabla de **CS FTL.1.205(b)(1)** (*Maximum daily FDP for acclimatised crew members*):\n\n### Tabla EASA de FDP Diario Básico (Extracto)\n| Hora de Inicio (Report) | 1-2 Sectores | 3 Sectores | 4 Sectores | 5 Sectores |\n| :--- | :--- | :--- | :--- | :--- |\n| **06:00 - 13:29** | **13:00** | **12:30** | **12:00** | **11:30** |\n| 13:30 - 13:59 | 12:45 | 12:15 | 11:45 | 11:15 |\n| 14:00 - 14:29 | 12:30 | 12:00 | 11:30 | 11:00 |\n| 17:00 - 04:59 (WOCL) | 11:00 | 10:30 | 10:00 | 09:30 |\n\nPresentándose entre **06:00 y 13:29** con **1 o 2 sectores**, el FDP máximo permitido es exactamente **13:00 horas**.",
+      "references": [
+        "Regulation (EU) No 965/2012 - ORO.FTL.205 Flight duty period (FDP)",
+        "CS FTL.1.205 Flight duty period - acclimatised crew members"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "NJ-FTL-003",
+    "subject_id": "tiempos-actividad-descanso-ftl",
+    "learning_objective": "EASA Part-ORO.FTL.235 - Período Mínimo de Descanso en Base y Fuera de Base",
+    "stem": "¿Cuáles son los períodos mínimos reglamentarios de descanso que debe disfrutar un tripulante en su base de operaciones (home base) y fuera de su base (outstation) según EASA Part-ORO.FTL.235?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En la base: al menos la duración de la actividad precedente o 12 horas (lo que sea mayor). Fuera de base: al menos la duración de la actividad precedente o 10 horas (que garantice 8 horas de sueño), lo que sea mayor.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En la base: 10 horas incondicionales. Fuera de base: 8 horas incluyendo traslados al hotel.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En la base: 14 horas continuas. Fuera de base: 12 horas en hotel de categoría superior.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En la base y fuera de base: exactamente el doble de la duración de las horas de vuelo realizadas.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **ORO.FTL.235(a) y (b)** (*Rest periods*):\n\n1. **En la base de operaciones (Home Base)**: El período mínimo de descanso que debe concederse antes de comenzar un FDP debe ser **al menos tan largo como el período de actividad precedente, o 12 horas**, lo que sea mayor.\n2. **Fuera de la base de operaciones (Outstation / Away from base)**: El período mínimo de descanso debe ser **al menos tan largo como el período de actividad precedente, o 10 horas**, lo que sea mayor. Este período de 10 horas debe incluir la posibilidad de disfrutar de **8 horas de sueño ininterrumpido**, teniendo en cuenta los tiempos de traslado hacia y desde el alojamiento adecuado.",
+      "references": [
+        "Regulation (EU) No 965/2012 - Part-ORO.FTL.235: Rest periods",
+        "CS FTL.1.235 Rest periods"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "NJ-FTL-004",
+    "subject_id": "tiempos-actividad-descanso-ftl",
+    "learning_objective": "EASA Part-ORO.FTL.210 / AMC1 ORO.FTL.205 - Límites Acumulativos de Actividad (Duty Limits)",
+    "stem": "¿Cuáles son los límites acumulativos máximos de tiempo total de servicio (Duty Time) permitidos por EASA en 7, 14 y 28 días consecutivos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "60 horas en 7 días consecutivos, 110 horas en 14 días consecutivos y 190 horas en 28 días consecutivos.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "50 horas en 7 días consecutivos, 100 horas en 14 días consecutivos y 180 horas en 28 días consecutivos.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "70 horas en 7 días consecutivos, 120 horas en 14 días consecutivos y 210 horas en 28 días consecutivos.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "40 horas en 7 días consecutivos, 80 horas en 14 días consecutivos y 160 horas en 28 días consecutivos.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **ORO.FTL.210(a)** (*Cumulative duty periods*):\n\nEl tiempo total de servicio (*Duty Time*) asignado a un miembro de la tripulación no debe exceder de:\n* **60 horas** en cualquier período de **7 días consecutivos**;\n* **110 horas** en cualquier período de **14 días consecutivos**; Y\n* **190 horas** en cualquier período de **28 días consecutivos**, distribuidas lo más uniformemente posible a lo largo de este período.\n\n### Resumen de Límites Acumulados EASA\n| Concepto | 7 días | 14 días | 28 días | Año Calendario | 12 meses |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| **Total Duty Time** | **60 h** | **110 h** | **190 h** | - | - |\n| **Flight Time (Block)** | - | - | **100 h** | **900 h** | **1.000 h** |",
+      "references": [
+        "Regulation (EU) No 965/2012 - Part-ORO.FTL.210: Flight times and duty periods"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "NJ-FTL-005",
+    "subject_id": "tiempos-actividad-descanso-ftl",
+    "learning_objective": "EASA Part-ORO.FTL.210 - Límites Acumulativos de Tiempo de Vuelo (Block Hours)",
+    "stem": "¿Cuáles son los límites máximos de tiempo de vuelo (Block Hours / Flight Time) que puede realizar un piloto comercial según EASA ORO.FTL.210?",
+    "options": [
+      {
+        "id": "A",
+        "text": "100 horas en 28 días consecutivos, 900 horas en un año calendario y 1.000 horas en 12 meses consecutivos.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "90 horas en 28 días consecutivos, 800 horas en un año calendario y 900 horas en 12 meses consecutivos.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "120 horas en 30 días consecutivos, 1.000 horas en un año y 1.200 horas en 12 meses.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "80 horas en 28 días consecutivos, 750 horas en un año calendario y 900 horas en 12 meses.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **ORO.FTL.210(b)** (*Cumulative flight time*):\n\nEl tiempo total de vuelo (*Flight Time* / tiempo calzo a calzo) en el que un miembro de la tripulación ejerce sus funciones no debe exceder de:\n* **100 horas** en cualquier período de **28 días consecutivos**;\n* **900 horas** en un **año civil/calendario** (*calendar year*); Y\n* **1.000 horas** en cualquier período de **12 meses consecutivos**.",
+      "references": [
+        "Regulation (EU) No 965/2012 - Part-ORO.FTL.210(b)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "NJ-FTL-006",
+    "subject_id": "tiempos-actividad-descanso-ftl",
+    "learning_objective": "EASA Part-ORO.FTL.205 / CS FTL.1.205(f) - Discrecionalidad del Comandante (Commander's Discretion)",
+    "stem": "En caso de circunstancias imprevistas excepcionales ocurridas después de presentarse al servicio (report time), ¿en cuánto puede el Comandante ampliar el FDP diario básico utilizando su discrecionalidad (Commander's Discretion)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hasta un máximo de 2 horas con tripulación estándar (o hasta 3 horas con tripulación reforzada / augmented crew), debiendo consultar a todos los miembros de la tripulación sobre su estado de alerta.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Hasta un máximo de 4 horas siempre que el vuelo sea directo al aeropuerto base de la compañía.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Hasta 1 hora sin necesidad de consultar con la tripulación ni remitir informe posterior.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No se permite ninguna extensión discrecional del FDP bajo normativa EASA una vez comenzado el vuelo.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según **ORO.FTL.205(f)** y **CS FTL.1.205(f)** (*Commander's discretion*):\n\n1. **Condición**: Circunstancias imprevistas en operaciones de vuelo que ocurran **después de la hora de presentación** (*reporting time*).\n2. **Límites de Extensión**:\n   - Tripulación estándar (no reforzada): **Máximo 2 horas** sobre el FDP diario permitido.\n   - Tripulación reforzada (*augmented crew*): **Máximo 3 horas**.\n3. **Proceso Obligatorio**:\n   - El Comandante debe evaluar y consultar a **todos los miembros de la tripulación** sobre su estado de fatiga y aptitud (*fitness for duty*).\n   - Si la extensión es superior a **1 hora**, el Comandante debe remitir un informe (*Commander's Discretion Report*) al operador en un plazo no superior a **28 días**.",
+      "references": [
+        "Regulation (EU) No 965/2012 - Part-ORO.FTL.205(f) Commander's discretion",
+        "CS FTL.1.205(f) Commander's discretion"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-FTL-007",
+    "subject_id": "tiempos-actividad-descanso-ftl",
+    "learning_objective": "EASA Part-ORO.FTL.220 - Servicio Fraccionado (Split Duty)",
+    "stem": "¿Cuál es la duración mínima reglamentaria del descanso intermedio en tierra para poder acogerse a una extensión por Servicio Fraccionado (Split Duty) según CS FTL.1.220?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Una pausa continua de al menos 3 horas en un alojamiento adecuado o instalación adecuada en tierra.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Una pausa de al menos 1 hora y 30 minutos en la sala de firmas de tripulaciones.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cualquier escala entre vuelos superior a 45 minutos si el avión permanece apagado.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Un descanso en tierra de exactamente 6 horas consecutivas con asignación de hotel de 4 estrellas.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **CS FTL.1.220** (*Split duty*):\n\n* La pausa continua en tierra debe ser de **al menos 3 horas consecutivas** (*break on the ground*).\n* El tiempo en tierra inferior a 3 horas no se considera *break* para extensión de servicio fraccionado.\n* Si la pausa es de 3 horas o más en una instalación o alojamiento adecuado, el FDP puede incrementarse en una cantidad equivalente a una fracción del descanso disfrutado (normalmente el 50% del descanso si se dispone de alojamiento adecuado).",
+      "references": [
+        "Regulation (EU) No 965/2012 - Part-ORO.FTL.220: Split duty",
+        "CS FTL.1.220 Split duty"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-FTL-008",
+    "subject_id": "tiempos-actividad-descanso-ftl",
+    "learning_objective": "EASA Part-ORO.FTL.235(d) - Período Extendido de Recuperación de Descanso (Weekly Rest)",
+    "stem": "¿Cuál es el requisito reglamentario de Período Extendido de Recuperación de Descanso (Extended Recovery Rest Period) que debe concederse a un tripulante en cualquier período de 7 días (168 horas)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Al menos un período de descanso continuo de 36 horas que incluya dos noches locales dentro de cualquier intervalo de 168 horas (7 días).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Un mínimo de 24 horas continuas en cualquier momento del mes calendario.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "48 horas obligatorias de descanso cada fin de semana natural.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Dos descansos de 12 horas separados por un servicio de menos de 4 horas.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **ORO.FTL.235(d)** (*Extended recovery rest period*):\n\n* El tiempo de descanso mínimo debe incluir un **período extendido de recuperación del descanso de al menos 36 horas**.\n* Este período debe incluir **dos noches locales** (*two local nights*).\n* El tiempo transcurrido entre el final de un período extendido de recuperación del descanso y el comienzo del siguiente **no debe superar las 168 horas (7 días)**.",
+      "references": [
+        "Regulation (EU) No 965/2012 - Part-ORO.FTL.235(d) Extended recovery rest period"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "NJ-FTL-009",
+    "subject_id": "tiempos-actividad-descanso-ftl",
+    "learning_objective": "EASA Part-ORO.FTL.225 / CS FTL.1.225 - Guardia en Aeropuerto (Airport Standby)",
+    "stem": "¿Cómo computa reglamentariamente una guardia en el aeropuerto (Airport Standby) para el tiempo total de servicio (Duty) y para el FDP si el tripulante es asignado a un vuelo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El tiempo de guardia en el aeropuerto computa al 100 % como tiempo de actividad (Duty Time), y si se asigna un vuelo, el FDP comienza en el momento en que el tripulante se presentó al servicio de guardia en el aeropuerto.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Computa solo al 50 % de actividad y el FDP se inicia únicamente cuando se firma el despacho del vuelo.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No computa como actividad hasta que el avión cierra puertas y comienza el rodaje.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La guardia en aeropuerto no tiene ningún impacto sobre el FDP diario máximo permitido.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **ORO.FTL.225** y **CS FTL.1.225(a)** (*Airport standby*):\n\n1. **Cómputo de Duty**: La guardia en el aeropuerto (*Airport Standby*) computa en su totalidad (**al 100 %**) como **tiempo de servicio (Duty Time)** a efectos de los límites acumulativos de 7, 14 y 28 días.\n2. **Inicio del FDP**: Si un tripulante en guardia de aeropuerto es activado para un vuelo, el **Período de Actividad de Vuelo (FDP) se cuenta a partir de la hora de presentación para la guardia en el aeropuerto** (el FDP diario máximo se calcula con la hora de inicio de la guardia).",
+      "references": [
+        "Regulation (EU) No 965/2012 - Part-ORO.FTL.225: Standby and duties at the airport",
+        "CS FTL.1.225 Standby at the airport"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  }
+]

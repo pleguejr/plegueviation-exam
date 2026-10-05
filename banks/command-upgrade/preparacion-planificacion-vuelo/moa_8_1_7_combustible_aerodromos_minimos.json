@@ -1051,112 +1051,115 @@
   {
     "id": "CMD-MOA-FUEL-016",
     "subject_id": "moa_plan_combustible",
-    "learning_objective": "MOA 8.1.7.2 - Mínimos de Planificación: Tabla 1A (Plan Básico con Variaciones)",
-    "stem": "En la Tabla 1A de Mínimos de Planificación del MOA 8.1.7.2, ¿qué condiciones meteo se exigen para un Alternativo de Destino con aproximación de precisión CAT I?",
+    "learning_objective": "MOA 8.1.7.2.5 - Mínimos de Planificación: Tabla 1A con 1 Aproximación Tipo B (CAT I)",
+    "stem": "En el Plan Básico con Variaciones (Tabla 1A del MOA 8.1.7.2.5), si un aeródromo alternativo dispone de UNA SOLA operación de aproximación por instrumentos Tipo B (ej. ILS CAT I), ¿qué incrementos de mínimos de planificación se deben aplicar sobre los mínimos operacionales del aeródromo?",
     "options": [
       {
         "id": "A",
-        "text": "RVR/Visibilidad igual o superior al mínimo aplicable de CAT I, y techo de nubes igual o superior a la DH/MDH correspondiente",
+        "text": "Techo: DA/H + 150 ft | RVR/VIS: RVR + 450 m",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Visibilidad de 10 km y cielo despejado sin nubes en 100 km a la redonda",
+        "text": "Techo: DA/H + 100 ft | RVR/VIS: RVR + 300 m",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Mínimos de despegue LVTO de 125 metros sin requerir techo de nubes",
+        "text": "Techo: DA/H + 200 ft | RVR/VIS: RVR + 800 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Visibilidad de 300 metros con obligatoriedad de aterrizaje automático CAT III",
+        "text": "Techo: MDA/H + 400 ft | RVR/VIS: VIS + 1.500 m",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "La Tabla 1A (Plan Básico con Variaciones) del MOA 8.1.7.2 exige para alternativos con CAT I: RVR/visibilidad igual o superior al mínimo CAT I y techo de nubes $\\ge \text{DH}$ aplicable.",
+      "text": "Según la **Tabla 1A (Plan Básico con Variaciones - MOA 8.1.7.2.5)**, para 'Una operación de aproximación por instrumentos del tipo B en uso':\n- **Techo:** $\\text{DA/H} + 150\\text{ ft}$\n- **RVR:** $\\text{RVR} + 450\\text{ m}$\n\n*(Si se aplicase el Plan Básico sin variaciones de la Tabla 1B, el incremento sería $\\text{DA/H} + 200\\text{ ft}$ y $\\text{RVR/VIS} + 800\\text{ m}$)*.",
       "references": [
-        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+        "MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 Tabla 1A",
+        "AMC8 / AMC9 CAT.OP.MPA.182"
       ]
     },
     "metadata": {
-      "difficulty": 0.4
+      "difficulty": 0.5
     }
   },
   {
     "id": "CMD-MOA-FUEL-017",
     "subject_id": "moa_plan_combustible",
-    "learning_objective": "MOA 8.1.7.2 - Mínimos de Planificación: Alternativo con Dos Procedimientos de Precisión Independientes",
-    "stem": "Si un aeródromo alternativo dispone de dos aproximaciones de precisión a pistas separadas, ¿qué crédito de planificación permite la Tabla 1A?",
+    "learning_objective": "MOA 8.1.7.2.5 - Mínimos de Planificación: Tabla 1A con 2 o más Aproximaciones Tipo B a Pistas Separadas",
+    "stem": "Bajo el Plan Básico con Variaciones (Tabla 1A del MOA 8.1.7.2.5), si un aeródromo alternativo dispone de DOS O MÁS operaciones de aproximación Tipo B en uso hacia DOS PISTAS SEPARADAS, ¿cuáles son los incrementos de mínimos de planificación requeridos?",
     "options": [
       {
         "id": "A",
-        "text": "Mínimos de CAT I para planificar un alternativo equipado con CAT II/III, o mínimos Tipo A reducidos para planificar dos CAT I independientes",
+        "text": "Techo: DA/H + 100 ft | RVR: RVR + 300 m (sobre la DA/H y RVR más altos en uso)",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Despachar sin necesidad de incluir combustible de reserva final en el plan",
+        "text": "Techo: DA/H + 150 ft | RVR: RVR + 450 m",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Aterrizar simultáneamente con dos aeronaves en la misma senda de planeo",
+        "text": "Techo: DA/H + 200 ft | RVR: RVR + 800 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Reducir el combustible de contingencia al 0% sin alternativo en ruta",
+        "text": "Mínimos operacionales de CAT I puros sin ningún incremento",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "La Tabla 1A del MOA 8.1.7.2 permite utilizar criterios de planificación más favorables cuando el alternativo dispone de dos aproximaciones de precisión independientes a pistas separadas.",
+      "text": "De acuerdo con la **Tabla 1A (MOA 8.1.7.2.5)**, cuando un aeródromo alternativo cuenta con dos o más aproximaciones Tipo B en uso a pistas separadas:\n- **Techo:** $\\text{DA/H} + 100\\text{ ft}$\n- **RVR:** $\\text{RVR} + 300\\text{ m}$\n\n*(Aplicados sobre los valores más altos de DA/H y RVR de las aproximaciones en uso)*.",
       "references": [
-        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+        "MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 Tabla 1A",
+        "AMC8 / AMC9 CAT.OP.MPA.182"
       ]
     },
     "metadata": {
-      "difficulty": 0.4
+      "difficulty": 0.5
     }
   },
   {
     "id": "CMD-MOA-FUEL-018",
     "subject_id": "moa_plan_combustible",
-    "learning_objective": "MOA 8.1.7.2 - Mínimos de Planificación para Alternativo con Aproximación de No Precisión (NPA)",
-    "stem": "Según la Tabla 1A del MOA 8.1.7.2, ¿qué mínimos meteorológicos deben pronosticarse en un Alternativo que solo dispone de aproximación de no precisión (NPA 2D)?",
+    "learning_objective": "MOA 8.1.7.2.5 - Mínimos de Planificación: Tabla 1A con 1 Aproximación Tipo A",
+    "stem": "Según la Tabla 1A del MOA 8.1.7.2.5 (Plan Básico con Variaciones), ¿qué incrementos de mínimos de planificación se deben añadir si el aeródromo alternativo sólo dispone de UNA SOLA aproximación por instrumentos Tipo A en uso (ej. VOR o LNAV 2D)?",
     "options": [
       {
         "id": "A",
-        "text": "RVR/Visibilidad requerida para NPA + incremento de visibilidad (o visibilidad NPA estándar), y techo de nubes $\\ge \text{MDA/H}$ aplicable",
+        "text": "Techo: DA/MDA + 400 ft | RVR/VIS: RVR/VIS + 1.500 m",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Mínimos visuales de 1.500 m sin requerir techo de nubes",
+        "text": "Techo: DA/MDA + 200 ft | RVR/VIS: RVR/VIS + 1.000 m (requiere dos o más Tipo A en distintas ayudas)",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "RVR de 125 metros igual que en pistas de despegue con baja visibilidad",
+        "text": "Techo: DA/H + 200 ft | RVR/VIS: RVR/VIS + 800 m (solo aplicable a 3D Tipo A con mínimos <= 200 ft)",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Visibilidad de 50 metros con aterrizaje guiado por radiobaliza NDB",
+        "text": "Techo: MDA/H + 100 ft | RVR/VIS: RVR/VIS + 300 m",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Para alternativos con aproximación NPA (2D), la Tabla 1A del MOA exige que la previsión cumpla el RVR de la aproximación y un techo de nubes no inferior a la MDA/H publicada.",
+      "text": "De acuerdo con la **Tabla 1A (MOA 8.1.7.2.5)** para 'Una operación de aproximación por instrumentos del tipo A en uso':\n- **Techo:** $\\text{DA/H o MDA/H} + 400\\text{ ft}$\n- **RVR/VIS:** $\\text{RVR/VIS} + 1.500\\text{ m}$\n\n*(Este mismo incremento de $+400\\text{ ft} / +1.500\\text{ m}$ es el exigido para todas las aproximaciones Tipo A en el Plan Básico estándar de la Tabla 1B)*.",
       "references": [
-        "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
+        "MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 Tabla 1A",
+        "MOA Binter ED06 RN27, Capítulo 8.1.7.2.6 Tabla 1B"
       ]
     },
     "metadata": {
-      "difficulty": 0.4
+      "difficulty": 0.5
     }
   },
   {

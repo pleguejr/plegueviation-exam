@@ -1,0 +1,305 @@
+[
+  {
+    "id": "NJ-RVSM-001",
+    "subject_id": "espacio-rvsm-pbn-lvo",
+    "learning_objective": "EASA Part-SPA.RVSM.100 / ICAO Doc 9574 - Definición y Separación Vertical RVSM",
+    "stem": "¿Cuál es la separación vertical estándar aplicada en el espacio aéreo con Mínimos Reducidos de Separación Vertical (RVSM) y en qué banda de niveles de vuelo se aplica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1.000 ft de separación vertical aplicable entre FL290 y FL410 inclusive.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "2.000 ft de separación vertical aplicable entre FL240 y FL450.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "1.000 ft de separación vertical entre FL180 y FL350 exclusivamente.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "500 ft de separación vertical entre FL290 y FL390 en vuelos ejecutivos con aprobación especial.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **Part-SPA.RVSM.100** e **ICAO Doc 9574**:\n\n* **RVSM (Reduced Vertical Separation Minimum)** reduce la separación vertical de 2.000 ft a **1.000 ft (300 m)** entre aeronaves que vuelan entre el nivel de vuelo **FL290 y FL410 inclusive**.\n* Por encima de FL410, la separación vertical estándar vuelve a ser de **2.000 ft**.",
+      "references": [
+        "Regulation (EU) No 965/2012 - Part-SPA.RVSM.100: RVSM operations",
+        "ICAO Doc 9574: Manual on Implementation of a 300 m (1,000 ft) Vertical Separation Minimum"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.1
+    }
+  },
+  {
+    "id": "NJ-RVSM-002",
+    "subject_id": "espacio-rvsm-pbn-lvo",
+    "learning_objective": "EASA Part-SPA.RVSM.110 - Equipamiento Mínimo Obligatorio para Operar en RVSM",
+    "stem": "¿Cuáles son los CUATRO (4) sistemas de a bordo obligatorios que debe tener operativos una aeronave para ingresar y operar en espacio aéreo RVSM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dos sistemas primarios independientes de medición de altitud, un sistema automático de control de altitud (autopilot altitude-hold), un sistema de alerta de desviación de altitud y un transponder SSR con reporte de altitud (Modo C o S).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Tres altímetros barométricos, dos pilotos automáticos acoplados, un radar meteorológico Doppler y doble DME.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Un altímetro primario asistido por GPS satelital, un autothrottle operativo, TCAS II versión 7.0 y doble ADF.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Dos sistemas de gestión de vuelo (FMS), un sistema inercial de referencia láser (IRS), un altímetro y radiobaliza VHF.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según **SPA.RVSM.110(a)** y **AMC1 SPA.RVSM.105**:\n\nPara operar en espacio aéreo RVSM, la aeronave debe estar equipada con al menos:\n1. **Dos sistemas primarios independientes de medición de altitud** (*Two independent primary altimetry systems*);\n2. **Un sistema automático de mantenimiento de altitud (Piloto Automático)** (*One automatic altitude-control system*);\n3. **Un sistema de alerta de desviación de altitud** (*One altitude-alerting system*);\n4. **Un transpondedor secundario (SSR)** con capacidad de reporte de altitud de presión (*Mode C or Mode S*).\n\n*Regla mnemotécnica RVSM:* **2 Altímetros + 1 AP + 1 Alerta de Altitud + 1 Transponder**.",
+      "references": [
+        "Regulation (EU) No 965/2012 - Part-SPA.RVSM.110: Equipment requirements for RVSM operations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "NJ-RVSM-003",
+    "subject_id": "espacio-rvsm-pbn-lvo",
+    "learning_objective": "EASA Part-SPA.RVSM / AMC1 SPA.RVSM.105 - Tolerancias de Altímetros en Tierra y en Vuelo",
+    "stem": "¿Cuáles son las tolerancias máximas admisibles de diferencia de altitud entre los altímetros primarios antes del despegue en tierra y en crucero dentro del espacio RVSM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En tierra: diferencia máxima típica de ±75 ft respecto a la elevación conocida del aeródromo (o ±50 ft entre ellos según tipo). En vuelo: diferencia máxima de 200 ft entre los altímetros primarios.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En tierra: diferencia máxima de ±150 ft. En vuelo: diferencia máxima de 300 ft entre altímetros primarios.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En tierra: diferencia máxima de ±25 ft. En vuelo: diferencia máxima de 100 ft con el altímetro de emergencia.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En tierra: sin tolerancia fija. En vuelo: tolerancia de hasta 500 ft si el TCAS está en modo TA ONLY.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **AMC1 SPA.RVSM.105** e **ICAO Doc 9574**:\n\n1. **Comprobación en Tierra (Pre-flight Altimeter Check)**:\n   - Con el QNH local fijado, los dos altímetros primarios deben coincidir con la **elevación conocida del aeródromo dentro de ±75 ft (23 m)** (muchos AFM de jets corporativos fijan ±50 ft).\n   - La diferencia entre los dos altímetros primarios no debe exceder de los límites del manual del fabricante (generalmente entre 50 y 75 ft).\n2. **Comprobación en Vuelo (In-Flight RVSM Altimeter Check)**:\n   - Se deben realizar cotejos cruzados iniciales y a intervalos periódicos (al menos cada hora).\n   - La diferencia máxima admisible entre los dos altímetros primarios en vuelo es de **200 ft (60 m)**.\n3. **Mantenimiento de Altitud**:\n   - El piloto automático debe mantener el nivel asignado dentro de una tolerancia de **±65 ft (±20 m)** en vuelo horizontal sin turbulencia.",
+      "references": [
+        "Regulation (EU) No 965/2012 - AMC1 SPA.RVSM.105 RVSM operational approval",
+        "ICAO Doc 9574 Chapter 4"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-RVSM-004",
+    "subject_id": "espacio-rvsm-pbn-lvo",
+    "learning_objective": "EASA Part-SPA.RVSM / Contingencias OACI - Fallo de Equipamiento RVSM en Vuelo",
+    "stem": "¿Qué acción debe tomar de inmediato la tripulación si en vuelo a FL370 en espacio aéreo RVSM falla el piloto automático o la discrepancia entre altímetros primarios supera los 200 ft?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Notificar inmediatamente al ATC indicando 'UNABLE RVSM DUE TO EQUIPMENT' solicitando una nueva autorización o vector, vigilando el tráfico mediante TCAS y manteniendo el nivel con precisión manual hasta recibir instrucciones.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Descender de inmediato 1.000 ft sin comunicar al ATC y desconectar el transpondedor para evitar falsas alarmas.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Declarar obligatoriamente MAYDAY MAYDAY y abandonar la aerovía 90 grados a la izquierda ascendiendo 500 ft.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Continuar en silencio hasta la próxima transferencia de sector y reportarlo únicamente en el libro de mantenimiento al aterrizar.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **AMC1 SPA.RVSM.105** y los procedimientos de contingencia RVSM de OACI:\n\n* Si ocurre un fallo en cualquiera de los equipos requeridos (fallo del AP, pérdida de un altímetro primario, fallo del transpondedor o discrepancia de altímetros $> 200\\text{ ft}$):\n  1. La tripulación debe **notificar inmediatamente al ATC** utilizando la fraseología reglamentaria: **`UNABLE RVSM DUE TO EQUIPMENT`**.\n  2. El ATC aplicará una separación convencional de **2.000 ft** con el resto del tráfico o coordinará la salida/descenso del espacio aéreo RVSM por debajo de FL290.\n  3. La tripulación debe maximizar la vigilancia visual y mediante **TCAS**.",
+      "references": [
+        "Regulation (EU) No 965/2012 - AMC1 SPA.RVSM.105 Section (d) Contingency procedures",
+        "ICAO Doc 4444 (PANS-ATM) Chapter 15"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-RVSM-005",
+    "subject_id": "espacio-rvsm-pbn-lvo",
+    "learning_objective": "ICAO Doc 4444 / Doc 7030 - Procedimiento de Desplazamiento Lateral Estratégico (SLOP)",
+    "stem": "¿En qué consiste el procedimiento SLOP (Strategic Lateral Offset Procedure) aplicable en rutas oceánicas y continentales designadas y cuál es el desplazamiento máximo permitido a la derecha del eje?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desplazamiento lateral automático o manual a la DERECHA del eje de la ruta de hasta un máximo de 2 Millas Náuticas (NM) (en incrementos de 0.1 NM o 1 y 2 NM) para mitigar el riesgo de colisión y estela turbulenta.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Desplazamiento a la IZQUIERDA de 5 NM exclusivo para aeronaves en descenso de emergencia.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Desplazamiento aleatorio a derecha o izquierda de hasta 10 NM sin autorización de control.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Un desvío táctico de 3 NM exclusivamente cuando el radar meteorológico detecte tormentas severas.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **ICAO Doc 4444 (PANS-ATM 16.5)** e **ICAO Doc 7030**:\n\n* **SLOP (Strategic Lateral Offset Procedure)** es una medida de seguridad diseñada para reducir la probabilidad de colisión debida a la extrema precisión de navegación satelital (GPS/RNAV) y mitigar encuentros con estela turbulenta (*wake turbulence*).\n* **Dirección**: Siempre a la **DERECHA** del eje de la ruta (*Right of centerline*).\n* **Magnitud**: Hasta un máximo de **2 NM** (típicamente 0.0, 0.1, 0.2 ... hasta 2.0 NM a la derecha).\n* **Aviso a ATC**: No requiere autorización previa de ATC en espacios aéreos autorizados donde SLOP está publicado en la AIP.",
+      "references": [
+        "ICAO Doc 4444: Procedures for Air Navigation Services - Air Traffic Management (PANS-ATM)",
+        "ICAO Doc 7030 Regional Supplementary Procedures"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "NJ-RVSM-006",
+    "subject_id": "espacio-rvsm-pbn-lvo",
+    "learning_objective": "EASA Part-CAT.OP.MPA.295 / Part-AUR - Respuesta Operacional obligatoria ante un TCAS II RA",
+    "stem": "Al recibir un aviso de resolución (Resolution Advisory - RA) del sistema TCAS II (versión 7.1), ¿cuál es la prioridad y el tiempo máximo de respuesta reglamentario que debe observar el piloto al mando?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Seguir la orden del TCAS RA de forma inmediata desconectando el piloto automático si es necesario, teniendo prioridad absoluta sobre cualquier instrucción contraria de ATC, iniciando la maniobra en no más de 5 segundos.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Contactar primero al controlador aéreo para verificar si el tráfico en conflicto está bajo control positivo antes de maniobrar.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Ignorar la orden del TCAS si se encuentra en espacio aéreo RVSM para evitar violar la separación de 1.000 ft asignada.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Seguir el RA únicamente si se obtiene contacto visual confirmado con el tráfico exterior.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **Part-CAT.OP.MPA.295** e **ICAO Doc 8168 (PANS-OPS)**:\n\n1. **Prioridad Absoluta**: La tripulación de vuelo debe **obedecer de inmediato** todos los avisos de resolución (*Resolution Advisories - RA*) generados por el TCAS II, incluso si entran en conflicto directo con una instrucción emitida por el controlador ATC.\n2. **Tiempos de Reacción EASA / OACI**:\n   - Ante un **RA inicial**: La respuesta en cabeceo debe iniciarse dentro de los **5 segundos**.\n   - Ante un **RA de modificación o inversión** (*Reversal / Strengthening RA*): La respuesta debe iniciarse dentro de los **2,5 segundos**.\n3. **Acción subsiguiente**: Notificar al ATC tan pronto como la carga de trabajo lo permita: *`[Callsign] TCAS RA`*, y posteriormente *`[Callsign] CLEAR OF CONFLICT, RETURNING TO [Assigned Level]`*.",
+      "references": [
+        "Regulation (EU) No 965/2012 - CAT.OP.MPA.295: Use of airborne collision avoidance system (ACAS)",
+        "ICAO Doc 8168 PANS-OPS Vol I Section 3"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "NJ-RVSM-007",
+    "subject_id": "espacio-rvsm-pbn-lvo",
+    "learning_objective": "ICAO Doc 9613 / EASA Part-SPA.PBN - Especificaciones de Navegación Basada en Performance (PBN)",
+    "stem": "¿Cuál es la diferencia de precisión de contención lateral entre las especificaciones RNAV 5 (B-RNAV), RNAV 1 (P-RNAV) y RNP APCH según el Manual PBN de OACI (Doc 9613)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "RNAV 5 exige mantener la aeronave dentro de ±5 NM durante al menos el 95 % del tiempo de vuelo en ruta; RNAV 1 exige ±1 NM en SID/STAR; RNP APCH exige ±0.3 NM en el segmento de aproximación final e incluye alerta de monitorización a bordo.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "RNAV 5 y RNAV 1 se refieren al número de receptores GPS requeridos (5 o 1 satélite respectivamente).",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "RNP APCH es exclusivo para aproximaciones de categoría III con piloto automático obligatorio.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "RNAV 1 permite desviaciones laterales de hasta 3 NM si se utiliza radioayuda convencional VOR.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **ICAO Doc 9613 (PBN Manual)** y **EASA Part-SPA.PBN**:\n\n* **RNAV 5 (B-RNAV)**: Precisión lateral de **±5 NM** durante el 95% del tiempo de vuelo. Requisito obligatorio para vuelos IFR en el espacio aéreo europeo en ruta.\n* **RNAV 1 / RNP 1 (P-RNAV)**: Precisión lateral de **±1 NM**. Utilizado para salidas y llegadas normalizadas (**SID / STAR**).\n* **RNP APCH (Aproximaciones RNP / LNAV / VNAV / LPV)**: Precisión lateral de **±1 NM** en tramo inicial/intermedio y **±0.3 NM** en el tramo de aproximación final (*Final Approach Segment*).\n* **Diferencia RNAV vs RNP**: RNP incluye obligatoriamente **monitorización de integridad y alerta a bordo** (*On-board Performance Monitoring and Alerting - OBPMA*).",
+      "references": [
+        "ICAO Doc 9613: Performance-based Navigation (PBN) Manual",
+        "Regulation (EU) No 965/2012 - Part-SPA.PBN: Performance-based navigation"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-RVSM-008",
+    "subject_id": "espacio-rvsm-pbn-lvo",
+    "learning_objective": "EASA / SERA.8015 - Altitud de Transición y Nivel de Transición",
+    "stem": "¿Cómo se define la Altitud de Transición (Transition Altitude - TA) y en qué momento exacto se debe cambiar el reglaje barométrico de QNH local a Standard 1013.25 hPa durante el ascenso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "La Altitud de Transición es la altitud a o por debajo de la cual la posición vertical se controla por altitudes (QNH); al ascender, se pasa a reglaje Standard 1013.25 hPa en el momento exacto de cruzar la Altitud de Transición.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se pasa a Standard al alcanzar los 10.000 ft en todos los aeropuertos del mundo independientemente de las cartas.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se pasa a Standard en el momento del despegue al pasar la altitud de aceleración.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se cambia de QNH a Standard cuando el controlador aéreo transfiere la aeronave al sector de radar en ruta.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **SERA.8015** e **ICAO Doc 8168**:\n\n* **Altitud de Transición (TA)**: Altitud especificada en las publicaciones aeronáuticas (AIP / Cartas de Salida) a o por debajo de la cual la posición vertical de la aeronave se expresa en **altitudes (con referencia al QNH local)**.\n* **Cambio en Ascenso**: Al cruzar la **Altitud de Transición en ascenso**, la tripulación debe cambiar el reglaje del altímetro de QNH a la **presión estándar de 1013.25 hPa (29.92 inHg)**, expresándose la posición vertical a partir de ese momento en **Niveles de Vuelo (Flight Levels - FL)**.\n* **Capa de Transición**: El espacio aéreo situado entre la TA y el Nivel de Transición (TL). En descenso, el cambio de Standard a QNH se efectúa al cruzar el **Nivel de Transición (TL)**.",
+      "references": [
+        "Regulation (EU) No 923/2012 (SERA) - SERA.8015 Altimeter setting procedures",
+        "ICAO Doc 8168 PANS-OPS Vol I"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  }
+]

@@ -309,17 +309,17 @@
   {
     "id": "CMD-EXAM-009",
     "subject_id": "cmd_flight_planning",
-    "learning_objective": "MOA 8.1.2.4 - Mínimos Meteorológicos de Alternativo de Despegue",
-    "stem": "En caso de requerir un alternativo despegue, ¿cómo tienen que estar las condiciones meteorológicas del mismo según el MOA 8.1.2.4 para ser aceptado como tal?",
+    "learning_objective": "MOA 8.1.7.2.1 / CAT.OP.MPA.181 - Mínimos Meteorológicos de Alternativo de Despegue",
+    "stem": "En caso de requerir un alternativo de despegue (Take-off alternate), ¿cómo tienen que estar las condiciones meteorológicas del mismo según el MOA 8.1.7.2 para ser aceptado en el despacho?",
     "options": [
       {
         "id": "A",
-        "text": "Tienen que estar por encima de los mínimos de operación aplicables",
+        "text": "Tienen que estar por encima de los mínimos de planificación aplicables (Tabla 1A o 1B) durante la ventana prevista (ETA ± 1h)",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Tienen que estar por encima de los mínimos de planificación aplicables",
+        "text": "Tienen que estar por encima de los mínimos de operación aplicables únicamente en la hora exacta de despegue",
         "is_correct": false
       },
       {
@@ -329,19 +329,20 @@
       },
       {
         "id": "D",
-        "text": "Tienen que estar por encima de los mínimos de planificación aplicables más 200 metros y 100 ft sobre DA/MDA",
+        "text": "Basta con que el aeródromo disponga de aproximación CAT I aunque esté bajo mínimos meteorológicos",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "El alternativo de despegue debe estar en o por encima de los mínimos de OPERACIÓN aplicables para la hora estimada de uso.",
+      "text": "Según el **MOA 8.1.7.2.1** y **CAT.OP.MPA.181/182**, el aeródromo alternativo de despegue debe seleccionarse de modo que las previsiones meteorológicas indiquen que estará en o por encima de los **MÍNIMOS DE PLANIFICACIÓN (Tabla 1A o Tabla 1B)** durante un periodo comprendido desde 1 hora antes hasta 1 hora después de la hora estimada de llegada (ETA ± 1 h).",
       "references": [
-        "Examen Mando Binter FOR-ENT-006 (P9)",
-        "MOA 8.1.2.4"
+        "MOA Binter ED06 RN27, Capítulo 8.1.7.2.1",
+        "CAT.OP.MPA.181 / CAT.OP.MPA.182",
+        "Examen Mando Binter FOR-ENT-006 (P9)"
       ]
     },
     "metadata": {
-      "difficulty": 0.35
+      "difficulty": 0.4
     }
   },
   {
@@ -1872,39 +1873,39 @@
   {
     "id": "CMD-EXAM-050",
     "subject_id": "cmd_flight_planning",
-    "learning_objective": "MOA 8.1.7.2 - Mínimos de Planificación para Alternativos de No Precisión (Tabla 1A)",
-    "stem": "De acuerdo con el MOA 8.1.7.2 (Tabla 1A - Plan Básico Estándar / FOR-ENT-006 P50), para la selección de un aeródromo alternativo en ruta o de destino cuya aproximación sea de No Precisión (NPA), ¿cuáles son los mínimos de planificación requeridos?",
+    "learning_objective": "MOA 8.1.7.2.5 Tabla 1A - Mínimos de Planificación para Alternativo con 2 o más Aproximaciones Tipo A en Ayudas Distintas",
+    "stem": "De acuerdo con el Plan Básico con Variaciones (Tabla 1A del MOA 8.1.7.2.5), para la selección de un aeródromo alternativo que dispone de DOS o más aproximaciones por instrumentos Tipo A basadas en ayudas de navegación distintas (ej. VOR y RNP), ¿cuáles son los incrementos de mínimos de planificación exigidos?",
     "options": [
       {
         "id": "A",
-        "text": "Mínimos de No Precisión + 200 ft de techo / 1000 m de visibilidad",
+        "text": "Techo: DA/MDA + 200 ft | Visibilidad/RVR: RVR/VIS + 1.000 m (sobre los valores más altos de DA/MDA y RVR/VIS en uso)",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Mínimos de No Precisión puros sin incremento, siempre que se notifique previamente a la autoridad competente y al CCO",
+        "text": "Techo: DA/MDA + 400 ft | Visibilidad/RVR: RVR/VIS + 1.500 m (mínimos exigidos para una sola aproximación Tipo A o bajo el Plan Básico Tabla 1B)",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Mínimos de CAT I estándar, requiriendo autorización expresa del comandante y verificación de pesos",
+        "text": "Techo: DA/H + 150 ft | RVR: RVR + 450 m (mínimos para una aproximación Tipo B)",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Mínimos de aproximación en circuito (Circling), manteniendo el cumplimiento de las limitaciones operacionales del manual",
+        "text": "Techo: MDA/H + 400 ft | Visibilidad: VIS + 1.500 m (mínimos para aproximaciones en circuito / Circling)",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "De acuerdo con la Tabla 1A (Plan Básico Estándar) del MOA 8.1.7.2.5 y la pregunta oficial P50 del examen de mando, para un alternativo con aproximación de No Precisión (NPA), los mínimos de planificación exigen: Mínimos de No Precisión (MDH/MDA y visibilidad) + 200 ft de techo y + 1.000 m de visibilidad.",
+      "text": "De acuerdo con el **MOA 8.1.7.2.5 (Tabla 1A - Plan Básico con Variaciones)**, para 'Dos o más operaciones de aproximación por instrumentos del tipo A en uso, cada una de ellas basada en una ayuda de navegación distinta':\n- **Techo:** $\\text{DA/H o MDA/H} + 200\\text{ ft}$ (el más alto de las aproximaciones en uso).\n- **RVR/VIS:** $\\text{RVR/VIS} + 1.000\\text{ m}$ (el más alto de las aproximaciones en uso).\n\n*(Si hubiera una sola aproximación Tipo A disponible, o si se aplicase el Plan Básico de la Tabla 1B, los incrementos requeridos serían $\\text{DA/MDA} + 400\\text{ ft}$ y $\\text{RVR/VIS} + 1.500\\text{ m}$)*.",
       "references": [
-        "Examen Mando Binter FOR-ENT-006 (P50)",
-        "MOA 8.1.7.2.5 Tabla 1A"
+        "MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 Tabla 1A",
+        "Examen Mando Binter FOR-ENT-006 (P50)"
       ]
     },
     "metadata": {
-      "difficulty": 0.35
+      "difficulty": 0.5
     }
   }
 ]

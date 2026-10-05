@@ -232,12 +232,12 @@
   {
     "id": "CMD-ALT-007",
     "subject_id": "command-upgrade",
-    "learning_objective": "MOA 8.1.7.2.5 Tabla 1A - Aproximaciones en circuito (Circling)",
-    "stem": "Si en un aeródromo alternativo la única aproximación autorizada es una aproximación en circuito (Circling), ¿cuáles son los mínimos de planificación requeridos en la Tabla 1A?",
+    "learning_objective": "MOA 8.1.7.2.5 (Tabla 1A) / 8.1.7.2.6 (Tabla 1B) - Aproximaciones en circuito (Circling)",
+    "stem": "Si en un aeródromo alternativo la única aproximación prevista es una aproximación en circuito (Circling), ¿cuáles son los incrementos de mínimos de planificación requeridos tanto en el Plan Básico con Variaciones (Tabla 1A) como en el Plan Básico (Tabla 1B) del MOA 8.1.7.2?",
     "options": [
       {
         "id": "A",
-        "text": "Techo: MDA/H + 400 ft | Visibilidad: VIS + 1.500 m",
+        "text": "Techo: MDA/H + 400 ft | Visibilidad: VIS + 1.500 m (sobre los mínimos de Circling del aeródromo)",
         "is_correct": true
       },
       {
@@ -252,14 +252,15 @@
       },
       {
         "id": "D",
-        "text": "Mismos mínimos operacionales de circling sin ningún incremento",
+        "text": "Mismos mínimos operacionales de circling sin ningún incremento de planificación",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "En la **Tabla 1A (MOA 8.1.7.2.5)** y Tabla 1B para 'Aproximaciones en circuito':\n- **Techo:** $\\text{MDA/H} + 400\\text{ ft}$.\n- **Visibilidad:** $\\text{VIS} + 1.500\\text{ m}$.",
+      "text": "Tanto en la **Tabla 1A (MOA 8.1.7.2.5 - Plan Básico con Variaciones)** como en la **Tabla 1B (MOA 8.1.7.2.6 - Plan Básico)**, los mínimos de planificación para 'Aproximaciones en circuito' son exactamente los mismos:\n- **Techo:** $\\text{MDA/H} + 400\\text{ ft}$\n- **Visibilidad:** $\\text{VIS} + 1.500\\text{ m}$\n\n*(Aplicados como margen de seguridad sobre los mínimos operacionales de circling del aeródromo alternativo)*.",
       "references": [
-        "MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 Tabla 1A"
+        "MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 (Tabla 1A)",
+        "MOA Binter ED06 RN27, Capítulo 8.1.7.2.6 (Tabla 1B)"
       ]
     },
     "metadata": {

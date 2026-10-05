@@ -1,0 +1,305 @@
+[
+  {
+    "id": "NJ-CRM-001",
+    "subject_id": "escenarios-netjets-despacho-crm",
+    "learning_objective": "EASA Part-ORO.MLR.105 - Intervalos de Rectificación MEL (Categorías A, B, C, D)",
+    "stem": "¿Cuáles son los intervalos de rectificación estándar para las Categorías B, C y D de la Lista de Equipo Mínimo (MEL) según EASA Part-ORO.MLR.105?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cat B: 3 días consecutivos (72 horas); Cat C: 10 días consecutivos (240 horas); Cat D: 120 días consecutivos; excluyendo el día del descubrimiento.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Cat B: 5 días; Cat C: 15 días; Cat D: 90 días; contando desde el minuto exacto del fallo.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cat B: 24 horas; Cat C: 72 horas; Cat D: 30 días naturales.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cat B: 7 días; Cat C: 21 días; Cat D: 180 días según criterio exclusivo del comandante.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **Part-ORO.MLR.105** y **CS-MMEL**:\n\n* **Categoría A**: No tiene un intervalo estándar; debe rectificarse dentro del intervalo especificado en las observaciones (horas, ciclos, vuelos o fecha fija).\n* **Categoría B**: Debe rectificarse dentro de **3 días consecutivos** (72 horas).\n* **Categoría C**: Debe rectificarse dentro de **10 días consecutivos** (240 horas).\n* **Categoría D**: Debe rectificarse dentro de **120 días consecutivos**.\n\n*Regla del Día del Descubrimiento:* El día en que se registra la discrepancia en el Registro Técnico de Vuelo (*ATL*) **NO se cuenta** para el cómputo del plazo; el intervalo comienza a las 00:00 del día siguiente.",
+      "references": [
+        "Regulation (EU) No 965/2012 - Part-ORO.MLR.105: Minimum equipment list",
+        "CS-MMEL.140 Rectification intervals"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "NJ-CRM-002",
+    "subject_id": "escenarios-netjets-despacho-crm",
+    "learning_objective": "NetJets Operational Philosophy / CRM - Manejo de Presión de Propietario (Owner Focus vs Safety)",
+    "stem": "Durante una escala en un aeropuerto no controlado con un cliente VIP (Owner) a bordo, la niebla reduce el RVR por debajo de los mínimos de despegue (LVTO). El pasajero insiste en despegar inmediatamente indicando que perderá una reunión multimillonaria y que otros jets han salido. ¿Cuál es la respuesta y actuación adecuada esperada por NetJets?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mantener firmemente la decisión de no despegar por razones legales y de seguridad, explicar al pasajero de forma profesional y empática los límites reglamentarios y coordinar proactivamente con operaciones de NetJets las alternativas disponibles.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Aceptar la solicitud del propietario realizando un despegue visual sin plan IFR asumiendo el riesgo bajo discrecionalidad del comandante.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Delegar la decisión en el despachador de la base y despegar si la oficina de ventas autoriza una excepción de servicio.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar al propietario que firme un documento de exención de responsabilidad civil antes de iniciar la carrera de despegue.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En las entrevistas de NetJets Europe se evalúa intensamente el equilibrio entre **Customer Service de excelencia** y **Seguridad Operacional Absoluta**:\n\n1. **Seguridad no negociable**: Ningún requerimiento comercial, presión de cliente corporativo o urgencia de agenda puede comprometer las limitaciones legales (mínimos AOM, FTL, masa y centrado, MEL).\n2. **Comunicación Profesional y Asertiva**: Explicar la situación con calma, lenguaje claro, sin tecnicismos excesivos pero con firmeza, transmitiendo que la prioridad de NetJets es proteger la vida del propietario.\n3. **Proactividad**: Involucrar de inmediato al centro de operaciones (*Dispatch / Operations Control*) para ofrecer soluciones alternativas (transporte terrestre, retraso coordinado, desvío o reposicionamiento cuando mejore el techo).",
+      "references": [
+        "NetJets Pilot Core Competencies & Crew Resource Management (CRM)",
+        "Regulation (EU) No 965/2012 - CAT.GEN.MPA.100 Crew responsibilities & Commander authority"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "NJ-CRM-003",
+    "subject_id": "escenarios-netjets-despacho-crm",
+    "learning_objective": "EASA Part-CAT.GEN.MPA.105 - Autoridad del Comandante (Commander's Authority)",
+    "stem": "Según EASA CAT.GEN.MPA.105, ¿qué autoridad legal tiene el Comandante respecto a la operación de la aeronave y el desembarque de pasajeros o carga?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tiene autoridad decisoria absoluta en todo lo relativo a la operación segura del vuelo, pudiendo desembarcar a cualquier persona o carga que represente un peligro potencial para la seguridad de la aeronave o de sus ocupantes.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Debe obtener siempre autorización por escrito del director de operaciones de la compañía antes de denegar el embarque a un pasajero.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La autoridad del comandante se limita a las decisiones de pilotaje en vuelo, dependiendo de la policía en tierra para cualquier acción.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Puede tomar decisiones solo si existe unanimidad con el copiloto y el despachador de vuelo.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **CAT.GEN.MPA.105** (*Responsibilities of the commander*):\n\n* El comandante tiene la **autoridad decisoria final** para disponer sobre la aeronave y mantener la disciplina y seguridad a bordo.\n* Tiene autoridad para **desembarcar a cualquier persona o cualquier parte de la carga** que, a su juicio, pueda representar un riesgo para la seguridad de la aeronave o de sus ocupantes.\n* Tiene potestad para rechazar el transporte de personas bajo la influencia de alcohol o drogas o que muestren una conducta perturbadora (*unruly / disruptive passengers*).",
+      "references": [
+        "Regulation (EU) No 965/2012 - Part-CAT.GEN.MPA.105: Responsibilities of the commander"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "NJ-CRM-004",
+    "subject_id": "escenarios-netjets-despacho-crm",
+    "learning_objective": "EASA Part-CAT.GEN.MPA.100 / CRM - Discrepancia entre Pilotos en el Cockpit",
+    "stem": "Durante la aproximación final en condiciones IMC, el copiloto observa que la velocidad indicada está cayendo 10 kt por debajo de VREF y la senda ILS se desvía más de 1 punto, pero el comandante no realiza ninguna corrección tras el callout estándar. ¿Cuál es la actuación adecuada del copiloto según los principios de CRM y SOP de EASA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Repetir el callout en tono enérgico y claro ('SPEED 10 LOW, GLIDEPATH ONE DOT LOW'); si no hay respuesta inmediata ni corrección a la altura de estabilización, cantar 'GO AROUND' y, si el Comandante no responde, asumir los mandos ('I HAVE CONTROLS') y ejecutar la frustrada.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Esperar en silencio hasta la altura de decisión para ver si el comandante avista la pista.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aplicar suavemente potencia con la palanca sin avisar al comandante para no distraerlo.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Desconectar los directores de vuelo y seleccionar el piloto automático en modo Altitude Hold.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con los principios de **Crew Resource Management (CRM)** y los procedimientos de aproximación estabilizada (**CAT.OP.MPA.115 / AMC1 CAT.OP.MPA.115**):\n\n1. **Monitorización Activa**: El PM (Pilot Monitoring) debe realizar los callouts estandarizados ante cualquier desviación de los parámetros de estabilización (velocidad, senda, localizador, régimen de descenso $> 1.000\\text{ ft/min}$).\n2. **Escalada Asertiva (Pace Graded Assertiveness)**: Si el PF no responde al primer aviso, el PM debe usar una orden directa e inequívoca.\n3. **Criterio de Aproximación No Estabilizada**: Si la aproximación no está estabilizada a los **1.000 ft en IMC (o 500 ft en VMC)**, la maniobra de **Aproximación Frustrada (Go-Around) es obligatoria**.\n4. **Incapacitación o Falta de Respuesta**: Si el Comandante no reacciona ante una desviación que compromete la seguridad, el Copiloto tiene la obligación reglamentaria de asumir el control y frustrar (*Takeover procedure*).",
+      "references": [
+        "Regulation (EU) No 965/2012 - AMC1 CAT.GEN.MPA.100 Crew resource management",
+        "EASA Guidance Material on Stabilised Approaches & Takeover Procedures"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-CRM-005",
+    "subject_id": "escenarios-netjets-despacho-crm",
+    "learning_objective": "EASA Part-ORO.MLR.105 / MEL Dispatch - Ítems con procedimiento (M) y (O)",
+    "stem": "¿Cuál es la diferencia operativa fundamental entre un elemento de la MEL que contiene un procedimiento marcado con (M) y uno marcado con (O)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "(M) indica un procedimiento de mantenimiento obligatorio que normalmente debe ejecutar personal técnico cualificado antes del vuelo; (O) indica un procedimiento operacional que debe ser ejecutado por la tripulación de vuelo.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "(M) indica fallo mayor y (O) indica fallo opcional que puede ser ignorado.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "(M) solo se aplica de noche y (O) se aplica de día en vuelos comerciales.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "(M) requiere aprobación de la autoridad nacional y (O) de la oficina de control de tráfico aéreo.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **Part-ORO.MLR.105** y **CS-MMEL**:\n\n* **Símbolo `(M)` (Maintenance Procedure)**: Indica que se requiere una acción o verificación de mantenimiento específica antes del despacho (e.g., asegurar una válvula, desactivar un freno, colocar un pin o realizar una prueba técnica). Debe ser efectuada por personal de mantenimiento certificado (LMA) a menos que el AFM/MEL autorice tareas específicas a la tripulación debidamente entrenada.\n* **Símbolo `(O)` (Operational Procedure)**: Indica que se requiere un procedimiento operativo específico que debe ser ejecutado por la **tripulación de vuelo** (e.g., ajuste de cálculos de performance, limitación de altitud, comprobación previa en cabina o modificación de configuración de sistemas).",
+      "references": [
+        "Regulation (EU) No 965/2012 - Part-ORO.MLR.105 Minimum equipment list",
+        "CS-MMEL.130 MEL operations and maintenance procedures"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "NJ-CRM-006",
+    "subject_id": "escenarios-netjets-despacho-crm",
+    "learning_objective": "EASA Part-SPA.DG / ICAO Annex 18 - Notificación al Comandante de Mercancías Peligrosas (NOTOC)",
+    "stem": "¿Qué información obligatoria debe contener el documento de Notificación al Comandante (NOTOC) cuando se transportan Mercancías Peligrosas a bordo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nombre de expedición, número UN/ID, clase o división de riesgo, número de bultos, cantidad neta por bulto, grupo de embalaje, ubicación exacta en bodega y confirmación de que no hay daños ni fugas.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Únicamente el peso total en kilogramos y el nombre del cliente propietario de la carga.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El valor comercial asegurado del producto y la dirección postal del fabricante.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Una declaración jurada del agente de rampa indicando que el avión está libre de materias corrosivas.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **Part-SPA.DG.105** e **ICAO Doc 9284 (Technical Instructions)**:\n\n* El operador debe proporcionar al Comandante, antes de la salida, información por escrito mediante la **Notificación al Comandante (NOTOC)**.\n* **Contenido obligatorio del NOTOC**:\n  1. Número **UN / ID** y Denominación Oficial de Transporte (*Proper Shipping Name*);\n  2. **Clase o División** de peligro (y riesgo secundario si aplica);\n  3. **Grupo de Embalaje** (Packing Group I, II, o III);\n  4. **Número de bultos** y cantidad neta/bruta de cada uno;\n  5. **Ubicación exacta de estiba en bodega** (para coordinar emergencias);\n  6. Código de respuesta de emergencia (**Drill Code de OACI**);\n  7. Confirmación de carga (*Cargo Only Aircraft* si aplica).",
+      "references": [
+        "Regulation (EU) No 965/2012 - Part-SPA.DG.105: Information to the pilot-in-command",
+        "ICAO Doc 9284 Technical Instructions for the Safe Transport of Dangerous Goods by Air"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "NJ-CRM-007",
+    "subject_id": "escenarios-netjets-despacho-crm",
+    "learning_objective": "EASA Part-CAT.POL.A / Aeródromos Especiales - Aproximaciones Empinadas (Steep Approaches)",
+    "stem": "En destinos corporativos habituales como London City (EGLC), Sion (LSGS) o Lugano (LSZA) con sendas de aproximación superiores a 4.5° (Steep Approach), ¿qué requisitos reglamentarios exige EASA para operar?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aprobación específica en el Manual de Operaciones, aeronave certificada en su AFM para sendas empinadas con límites de viento y configuración específicos, y entrenamiento y cualificación especial de la tripulación en simulador o en vuelo.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Únicamente que el comandante tenga más de 2.000 horas de vuelo totales sin entrenamiento previo.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Desconectar los avisos de 'Glideslope' y 'Sink Rate' del EGPWS durante todo el descenso.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Operar exclusivamente con un solo motor para reducir la aceleración residual en la senda.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **Part-CAT.POL.A.245** y **AMC1 CAT.POL.A.245** (*Steep approach operations*):\n\n* **Senda empinada**: Toda aproximación con un ángulo de planeo de **4,5° o superior** (e.g., 5,5° en London City).\n* **Requisitos EASA**:\n  1. El **AFM debe certificar** que la aeronave es apta para aproximaciones empinadas (modos de spoilers/speedbrakes, perfiles de empuje);\n  2. El operador debe disponer de **aprobación operacional específica** en su Manual de Operaciones;\n  3. La **tripulación debe estar debidamente entrenada y cualificada** en la técnica de aproximación empinada en un simulador representativo o aeronave;\n  4. Se establecen **mínimos meteorológicos más restrictivos** y limitaciones de viento cruzado y de cola reducidas.",
+      "references": [
+        "Regulation (EU) No 965/2012 - Part-CAT.POL.A.245: Steep approach operations",
+        "AMC1 CAT.POL.A.245 Steep approach operations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-CRM-008",
+    "subject_id": "escenarios-netjets-despacho-crm",
+    "learning_objective": "ICAO Doc 9811 / EASA Part-CAT.GEN.MPA.105 - Niveles de Pasajeros Conflictivos (Disruptive Pax)",
+    "stem": "¿Cuál es la clasificación estándar de 4 niveles de amenaza para pasajeros conflictivos (Unruly / Disruptive Passengers) según la OACI y EASA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nivel 1: Conducta verbalmente disruptiva; Nivel 2: Violencia física no letal; Nivel 3: Amenaza para la vida o porte de armas; Nivel 4: Intento o transgresión de la puerta de cabina de pilotaje.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Nivel 1: Fumador; Nivel 2: Embriagado; Nivel 3: Sin cinturón; Nivel 4: Terrorista.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Nivel 1: Económico; Nivel 2: Técnico; Nivel 3: Operacional; Nivel 4: Penal.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Nivel 1: Pasajero en cabina; Nivel 2: Pasajero en bodega; Nivel 3: Pasajero en tierra; Nivel 4: Evacuación.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con **ICAO Doc 9811 (Manual on the Legal Aspects of Unruly and Disruptive Passengers)** y el estándar EASA:\n\n### Clasificación de Niveles de Amenaza de Pasajeros\n| Nivel de Amenaza | Tipo de Comportamiento | Acción Recomendada |\n| :--- | :--- | :--- |\n| **Nivel 1 (Disruptivo)** | Conducta verbalmente agresiva, desobediencia de instrucciones de seguridad | Advertencia formal, desescalada verbal |\n| **Nivel 2 (Físico)** | Violencia física leve o moderada, forcejeo, daños a bienes de la cabina | Inmovilización con medios autorizados si es necesario |\n| **Nivel 3 (Amenaza Vital)** | Amenaza creíble de muerte, exhibición o uso de armas, asalto grave | Contención física total, aviso a Comandante y aterrizaje de emergencia |\n| **Nivel 4 (Cabina de Mando)** | Intento o violación de la puerta de cabina (*flight deck breach*) | **Amenaza de seguridad máxima**: Cockpit lockdown absoluto, descenso y desvío inmediato |",
+      "references": [
+        "ICAO Doc 9811: Manual on the Legal Aspects of Unruly and Disruptive Passengers",
+        "Regulation (EU) No 965/2012 - CAT.GEN.MPA.105 Responsibilities of the commander"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  }
+]

@@ -2,39 +2,39 @@
   {
     "id": "CMD-EXAM-051",
     "subject_id": "cmd_flight_planning",
-    "learning_objective": "MOA 8.1.7.2 - Mínimos de Planificación para Circling",
-    "stem": "Para la selección de un aeródromo alternativo en ruta o de destino cuya aproximación principal sea en circuito (Circling), ¿cuáles son los mínimos de planificación?",
+    "learning_objective": "MOA 8.1.7.2.5 (Tabla 1A) / 8.1.7.2.6 (Tabla 1B) - Mínimos de Planificación para Aproximaciones en Circuito (Circling)",
+    "stem": "Para la selección de un aeródromo alternativo en ruta o de destino cuya aproximación principal prevista sea en circuito (Circling), ¿cuáles son los mínimos de planificación meteorológicos requeridos tanto bajo el Plan Básico con Variaciones (Tabla 1A) como bajo el Plan Básico (Tabla 1B) del MOA 8.1.7.2?",
     "options": [
       {
         "id": "A",
-        "text": "Mínimos de Circling + 200 ft de techo / 1000 m de visibilidad",
+        "text": "Techo: MDA/H + 400 ft | Visibilidad: VIS + 1.500 m (sobre los mínimos de Circling del aeródromo)",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Mínimos de No Precisión, siempre que se notifique previamente a la autoridad competente y al CCO",
+        "text": "Techo: MDA/H + 200 ft | Visibilidad: VIS + 1.000 m (sobre los mínimos de Circling del aeródromo)",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Mínimos de CAT I, requiriendo autorización expresa del comandante y verificación de pesos",
+        "text": "Techo: DA/H + 150 ft | Visibilidad: RVR/VIS + 450 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Mínimos de Circuito puros, manteniendo el cumplimiento de las limitaciones operacionales del manual",
+        "text": "Mínimos operacionales de Circling puros sin incremento de planificación",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "De acuerdo con el MOA 8.1.7.2 (Tabla 1A de Mínimos de Planificación para Aeródromos Alternativos en Ruta y de Destino) y la pregunta oficial P51 del Examen de Mando (FOR-ENT-006), cuando el procedimiento utilizable en el alternativo es una aproximación en circuito (Circling), se aplican los incrementos estándar de planificación: **Mínimos de Circling + 200 ft de techo / +1.000 m de visibilidad**.",
+      "text": "De acuerdo con el **MOA 8.1.7.2.5 (Tabla 1A - Plan Básico con Variaciones)** y el **MOA 8.1.7.2.6 (Tabla 1B - Plan Básico)**, los mínimos de planificación para una aproximación en circuito (Circling) en un aeródromo alternativo son idénticos en ambos esquemas:\n- **Techo:** $\\text{MDA/H} + 400\\text{ ft}$\n- **Visibilidad:** $\\text{VIS} + 1.500\\text{ m}$\n\n*(Aplicados sobre la MDA/H y visibilidad de los mínimos de operación publicados para el circling en dicho aeródromo)*.",
       "references": [
-        "Binter Canarias MOA - Subcapítulo 8.1.7: Mínimos de Utilización de Aeródromo - Tabla 1A",
-        "Examen Oficial de Mando Binter FOR-ENT-006 (Pregunta 51)"
+        "MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 (Tabla 1A) y 8.1.7.2.6 (Tabla 1B)",
+        "AMC2 CAT.OP.MPA.185 Planning minima for IFR flights"
       ]
     },
     "metadata": {
-      "difficulty": 0.35
+      "difficulty": 0.4
     }
   },
   {
@@ -612,39 +612,40 @@
   {
     "id": "CMD-EXAM-067",
     "subject_id": "cmd_flight_planning",
-    "learning_objective": "SERA.4005 / MOA 8.1.7 - Declaración de MINIMUM FUEL",
+    "learning_objective": "SERA.4005 / MOA 8.1.7.5 - Declaración de MINIMUM FUEL",
     "stem": "¿Qué implicaciones y obligaciones operacionales conlleva la declaración a ATC de la condición de \"MINIMUM FUEL\" (Combustible Mínimo)?",
     "options": [
       {
         "id": "A",
-        "text": "Intervalo de rectificación de 10 días naturales (240 horas), excluyendo el día de detección en el parte técnico de vuelo",
+        "text": "Informa a ATC de que las opciones de aeródromo se han reducido a uno específico y cualquier demora imprevista puede resultar en aterrizar con menos de la Reserva Final (informa a ATC sin otorgar prioridad de emergencia)",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Intervalo de rectificación de 3 días naturales (72 horas), excluyendo el día de detección en el parte técnico de vuelo",
+        "text": "Declara una emergencia oficial otorgando prioridad absoluta e inmediata de aproximación y aterrizaje sobre todo el tráfico",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Intervalo de rectificación de 120 días naturales, excluyendo el día de detección en el parte técnico de vuelo",
+        "text": "Obliga a la tripulación a realizar una toma en el aeródromo alternativo en menos de 10 minutos de vuelo",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Intervalo de rectificación según plazo específico fijado individualmente en el texto de la MEL sin periodo estándar",
+        "text": "Solicita una autorización de espera técnica indefinida a nivel de crucero hasta que se consuma el combustible de contingencia",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "MINIMUM FUEL advierte a ATC de la situación justa de combustible sin otorgar prioridad, requiriendo que ATC informe de cualquier retraso previsto y transfiera la información a los sectores siguientes.",
+      "text": "**MINIMUM FUEL** (MOA 8.1.7.5 / SERA.4005) informa a las dependencias ATS de que el combustible disponible se ha comprometido hasta el punto de que cualquier demora adicional no prevista podría hacer que se aterrice con menos del combustible de reserva final (30 min). **NO es una declaración de emergencia y NO otorga prioridad de tráfico**, pero obliga a ATC a informar de cualquier demora prevista.",
       "references": [
-        "Examen Mando Binter FOR-ENT-006 (P67)",
-        "MOA 8.1.7.5 Gestión de Combustible en Vuelo"
+        "MOA Binter ED06 RN27, Capítulo 8.1.7.5",
+        "SERA.4005",
+        "Examen Mando Binter FOR-ENT-006 (P67)"
       ]
     },
     "metadata": {
-      "difficulty": 0.35
+      "difficulty": 0.4
     }
   },
   {
@@ -766,39 +767,39 @@
   {
     "id": "CMD-EXAM-071",
     "subject_id": "cmd_flight_planning",
-    "learning_objective": "MOA 8.1.7.2 - Mínimos de Planificación para Alternativos con ILS",
-    "stem": "Para seleccionar un aeródromo alternativo en ruta o destino cuya aproximación instrumental principal sea un ILS CAT I, ¿cuáles son los mínimos de planificación aplicables?",
+    "learning_objective": "MOA 8.1.7.2.5 Tabla 1A - Mínimos de Planificación para Alternativo con 1 Aproximación Tipo B (ILS CAT I)",
+    "stem": "Al seleccionar un aeródromo alternativo en ruta o de destino que dispone de UNA SOLA operación de aproximación por instrumentos Tipo B en uso (ej. un ILS CAT I con DA 200 ft y RVR 550 m), ¿cuáles son los mínimos de planificación exigidos según el Plan Básico con Variaciones (Tabla 1A) del MOA 8.1.7.2.5?",
     "options": [
       {
         "id": "A",
-        "text": "Mínimos de No Precisión (NPA: MDA/H y visibilidad) de la aproximación disponible en el alternativo",
+        "text": "Techo: DA/H + 150 ft | RVR: RVR + 450 m (requiriendo en el ejemplo un techo de 350 ft y RVR de 1.000 m)",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Mínimos de CAT I estándar (DH 200 ft y RVR 550 m) sin aplicar ningún incremento de planificación",
+        "text": "Techo: DA/H + 100 ft | RVR: RVR + 300 m (requiriendo en el ejemplo un techo de 300 ft y RVR de 850 m)",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Mínimos de CAT II (DH 100 ft y RVR 300 m) requiriendo autorización de operaciones LVO",
+        "text": "Techo: DA/H + 200 ft | RVR/VIS: RVR/VIS + 800 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Mínimos de Aproximación en Circuito visual (Circling) independientemente del tipo de ayuda",
+        "text": "Mínimos operacionales de CAT I puros (DH 200 ft y RVR 550 m) sin incremento alguno",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Para una aproximación de precisión CAT I en el alternativo, los mínimos de planificación requeridos equivalen a los mínimos de aproximación de precisión de CAT I.",
+      "text": "De acuerdo con el **MOA 8.1.7.2.5 (Tabla 1A - Plan Básico con Variaciones)**, para 'Una operación de aproximación por instrumentos del tipo B en uso':\n- **Techo:** $\\text{DA/H} + 150\\text{ ft}$\n- **RVR:** $\\text{RVR} + 450\\text{ m}$\n\n*(Si hubiera 2 o más operaciones Tipo B a 2 pistas separadas, el incremento se reduciría a $\\text{DA/H} + 100\\text{ ft}$ y $\\text{RVR} + 300\\text{ m}$. Si se aplicase el Plan Básico sin variaciones de la Tabla 1B, el incremento sería $\\text{DA/H} + 200\\text{ ft}$ y $\\text{RVR/VIS} + 800\\text{ m}$)*.",
       "references": [
-        "Examen Mando Binter FOR-ENT-006 (P71)",
-        "MOA 8.1.7.2.5"
+        "MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 Tabla 1A",
+        "AMC8 / AMC9 CAT.OP.MPA.182"
       ]
     },
     "metadata": {
-      "difficulty": 0.35
+      "difficulty": 0.5
     }
   },
   {
