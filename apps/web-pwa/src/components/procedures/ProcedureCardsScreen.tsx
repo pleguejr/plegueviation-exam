@@ -9,7 +9,8 @@ import {
   ChevronDown,
   ChevronUp,
   AlertTriangle,
-  Sparkles
+  Sparkles,
+  ArrowUp
 } from 'lucide-react';
 import { PROCEDURE_CARDS, ProcedureCard, ProcedureSection, ProcedureItem } from '../../data/procedureCardsData';
 
@@ -29,6 +30,15 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
     });
     return initial;
   });
+
+  const scrollToCategoryTabs = () => {
+    const el = document.getElementById('procedures-category-tabs');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
 
   const toggleExpand = (id: string) => {
     setExpandedCardIds((prev) => ({ ...prev, [id]: !prev[id] }));
@@ -171,7 +181,7 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
         </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row gap-3 sm:items-center">
+      <div id="procedures-category-tabs" className="flex flex-col sm:flex-row gap-3 sm:items-center pt-1">
         <div className="flex flex-wrap gap-2">
           {(
             [
@@ -212,7 +222,18 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
 
           return (
             <article key={card.id} className={`procedure-card procedure-card-${card.category} rounded-2xl overflow-hidden`}>
-              <button type="button" onClick={() => toggleExpand(card.id)} className="procedure-card-header w-full text-left p-5 sm:p-6 flex gap-4">
+              <div
+                role="button"
+                tabIndex={0}
+                onClick={() => toggleExpand(card.id)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggleExpand(card.id);
+                  }
+                }}
+                className="procedure-card-header w-full text-left p-5 sm:p-6 flex gap-4 cursor-pointer select-none group"
+              >
                 <div className="flex-1 min-w-0 space-y-2.5">
                   <div className="flex flex-wrap items-center gap-2">
                     <span className={`procedure-badge ${badge.className}`}>
@@ -225,7 +246,7 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
                       {card.manualRef}
                     </span>
                   </div>
-                  <h2 className="procedure-card-title text-lg sm:text-xl font-black leading-snug">{card.title}</h2>
+                  <h2 className="procedure-card-title text-lg sm:text-xl font-black leading-snug group-hover:opacity-90 transition-opacity">{card.title}</h2>
                   <p className="procedure-card-subtitle text-xs sm:text-sm leading-relaxed">{card.subtitle}</p>
                   <div className="flex flex-wrap gap-1.5 pt-1">
                     {card.badges.map((b) => (
@@ -241,10 +262,26 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
                     </p>
                   )}
                 </div>
-                <div className="procedure-expand-btn shrink-0 mt-1">
-                  {isExpanded ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
+                <div className="flex items-center gap-2 shrink-0 mt-1">
+                  {/* Botón rápido para volver arriba */}
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      scrollToCategoryTabs();
+                    }}
+                    className="procedure-icon-btn text-sky-400 hover:text-sky-300"
+                    title="Volver a la selección de categorías (Arriba)"
+                  >
+                    <ArrowUp className="w-3.5 h-3.5" />
+                    <span className="text-[10px] font-bold hidden md:inline">Arriba</span>
+                  </button>
+
+                  <div className="procedure-expand-btn shrink-0">
+                    {isExpanded ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
+                  </div>
                 </div>
-              </button>
+              </div>
 
                 {isExpanded && (
                   <div className="procedure-card-body px-4 sm:px-6 pb-6 pt-2 border-t border-slate-800/50 space-y-5 animate-fade-in">
@@ -419,6 +456,22 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
                       );
                     })}
                   </div>
+
+                  {/* Botón al pie de cada tarjeta para regresar a categorías */}
+                  <div className="flex flex-wrap items-center justify-between pt-3 border-t border-slate-800/80 gap-2">
+                    <span className="text-[11px] text-slate-400 font-mono">
+                      📖 {card.airplane} · {card.manualRef}
+                    </span>
+                    <button
+                      type="button"
+                      onClick={scrollToCategoryTabs}
+                      className="procedure-back-top-btn"
+                      title="Subir a la parte superior de las tarjetas SOP"
+                    >
+                      <ArrowUp className="w-3.5 h-3.5" />
+                      <span>Volver a Categorías / Arriba</span>
+                    </button>
+                  </div>
                 </div>
               )}
             </article>
@@ -431,6 +484,16 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
           </div>
         )}
       </div>
+
+      {/* Botón Flotante para subir a las categorías de tarjetas */}
+      <button
+        type="button"
+        onClick={scrollToCategoryTabs}
+        className="fixed bottom-6 right-6 z-40 p-3 rounded-full bg-sky-600 hover:bg-sky-500 text-white shadow-2xl border border-sky-400/50 flex items-center justify-center transition-all hover:scale-110 active:scale-95 group"
+        title="Volver a los botones de categorías de tarjetas"
+      >
+        <ArrowUp className="w-5 h-5 group-hover:-translate-y-0.5 transition-transform" />
+      </button>
     </div>
   );
 };

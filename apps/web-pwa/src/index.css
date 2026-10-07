@@ -2989,8 +2989,60 @@ table th {
 .procedure-diagram {
   color: #e2e8f0;
 }
+.procedure-icon-btn {
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  background: #0f172a;
+  border: 1px solid #334155;
+  color: #cbd5e1;
+  font-size: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: all 0.15s ease;
+}
+.procedure-icon-btn:hover {
+  border-color: #38bdf8;
+  color: #fff;
+}
+.procedure-back-top-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.75rem;
+  background: #0e1933;
+  color: #38bdf8;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  transition: all 0.15s ease;
+}
+.procedure-back-top-btn:hover {
+  background: rgba(56, 189, 248, 0.2);
+  border-color: #38bdf8;
+  color: #fff;
+}
 
 /* Day mode overrides */
+.theme-light .procedure-icon-btn {
+  background: #f8fafc !important;
+  border-color: #cbd5e1 !important;
+  color: #0369a1 !important;
+}
+.theme-light .procedure-icon-btn:hover {
+  background: #f1f5f9 !important;
+  border-color: #0284c7 !important;
+}
+.theme-light .procedure-back-top-btn {
+  background: #f0f9ff !important;
+  border-color: #7dd3fc !important;
+  color: #0369a1 !important;
+}
+.theme-light .procedure-back-top-btn:hover {
+  background: #e0f2fe !important;
+  border-color: #0284c7 !important;
+}
 .theme-light .procedure-hero {
   background: linear-gradient(135deg, #ecfdf5 0%, #e0f2fe 55%, #f0fdf4 100%) !important;
   border: 1.5px solid #059669 !important;
