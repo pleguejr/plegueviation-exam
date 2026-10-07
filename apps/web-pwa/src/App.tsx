@@ -404,6 +404,7 @@ export function App() {
           <OperationalTablesScreen
             initialCategory={tablesCategory as any}
             onBackToDashboard={() => setCurrentView('dashboard')}
+            onOpenFlashcards={(params) => handleStartFlashcards(params)}
           />
         )}
 

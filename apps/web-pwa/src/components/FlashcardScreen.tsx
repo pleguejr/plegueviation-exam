@@ -34,6 +34,11 @@ import {
   buildPrioritizedFlashcardDeck,
   getFlashcardMasteryStatus
 } from '../utils/flashcardFilter';
+import { 
+  getAllTableFlashcards, 
+  getTableFlashcardsByCategory, 
+  getTableFlashcardsByTableId 
+} from '../services/tableFlashcardsService';
 import { shuffle, deleteQuestionFromBank } from '../services/questionsService';
 import { recordAnswerStat, getQuestionStat, recordFlashcardRating, getAllStatsMap } from '../services/db';
 import { DeleteConfirmModal } from './DeleteConfirmModal';
@@ -98,6 +103,10 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
   const [lastRatedFeedback, setLastRatedFeedback] = useState<'easy' | 'medium' | 'hard' | null>(null);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
 
+  const combinedPool = useMemo(() => {
+    return [...questions, ...getAllTableFlashcards()];
+  }, [questions]);
+
   // Construir el mazo de flashcards con Priorización Cognitiva Inteligente (Spaced Repetition)
   // 1° Difíciles (barajadas) -> 2° No Vistas (barajadas) -> 3° Regulares (barajadas) -> 4° Dominadas (barajadas)
   const buildDeck = async (
@@ -110,7 +119,7 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
     const liveStats = await getAllStatsMap();
     setStatsMap(liveStats);
     const prioritizedFull = buildPrioritizedFlashcardDeck(
-      questions, 
+      combinedPool, 
       liveStats, 
       cat, 
       fType, 
@@ -133,23 +142,63 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
 
   useEffect(() => {
     buildDeck(selectedCategory, filterType, true, batchSize, activeQuestionIds);
-  }, [questions, selectedCategory, filterType, batchSize, activeQuestionIds]);
+  }, [combinedPool, selectedCategory, filterType, batchSize, activeQuestionIds]);
 
   const handleCategoryChange = (newCat: string) => {
-    if (newCat === 'custom_tipicas') {
+    if (newCat === 'custom_all_tables') {
+      const tableCards = getAllTableFlashcards().map((q) => q.id);
+      setActiveQuestionIds(tableCards);
+      setDeckCustomTitle('📊 Todas las Tablas Operativas');
+      setSelectedCategory('custom_all_tables');
+    } else if (newCat === 'custom_alternates') {
+      const altIds = [
+        ...questions.filter((q) => q.id.startsWith('CMD-ALT-') || q._subtopic === 'minimos-planificacion-y-alternativos').map((q) => q.id),
+        ...getTableFlashcardsByCategory('alternates').map((q) => q.id)
+      ];
+      setActiveQuestionIds(altIds);
+      setDeckCustomTitle('📋 Mínimos de Planificación & Alternativos (Tabla 1/1A/1B)');
+      setSelectedCategory('custom_alternates');
+    } else if (newCat === 'custom_v_speeds') {
+      const vsIds = [
+        ...questions.filter((q) => q.id.startsWith('NJ-AERO-02') || q.id.startsWith('NJ-AERO-03') || q.id.startsWith('NJ-AERO-04')).map((q) => q.id),
+        ...getTableFlashcardsByCategory('easa-netjets').map((q) => q.id)
+      ];
+      setActiveQuestionIds(vsIds);
+      setDeckCustomTitle('🚀 Master Aviation V-Speeds (CS-25 / FAR 25)');
+      setSelectedCategory('custom_v_speeds');
+    } else if (newCat === 'custom_memory_items') {
+      const memIds = [
+        ...questions.filter((q) => q.id.startsWith('E195-MEM-') || q.id.startsWith('CMD-MEM-')).map((q) => q.id),
+        ...getTableFlashcardsByCategory('memory-items').map((q) => q.id)
+      ];
+      setActiveQuestionIds(memIds);
+      setDeckCustomTitle('🔥 Memory Items E195-E2 (QRH)');
+      setSelectedCategory('custom_memory_items');
+    } else if (newCat === 'custom_limitations') {
+      const limIds = [
+        ...questions.filter((q) => q.id.startsWith('E195-LIM-') || q.id.startsWith('CMD-LIM-')).map((q) => q.id),
+        ...getTableFlashcardsByCategory('limitations').map((q) => q.id)
+      ];
+      setActiveQuestionIds(limIds);
+      setDeckCustomTitle('⚠️ Limitaciones Operacionales E195-E2');
+      setSelectedCategory('custom_limitations');
+    } else if (newCat === 'custom_ftl_rffs') {
+      const moaIds = [
+        ...questions.filter((q) => q.id.startsWith('MOA-07-') || q.id.startsWith('CMD-MOA-FTL-') || q.id.startsWith('CMD-MOA-RFFS-')).map((q) => q.id),
+        ...getTableFlashcardsByCategory('moa').map((q) => q.id)
+      ];
+      setActiveQuestionIds(moaIds);
+      setDeckCustomTitle('⏱️ FTL, RFFS & Normativa Operacional (MOA)');
+      setSelectedCategory('custom_ftl_rffs');
+    } else if (newCat === 'custom_tipicas') {
       const tipicas = questions.filter((q) => q.id.startsWith('CMD-EXAM-')).map((q) => q.id);
       setActiveQuestionIds(tipicas);
-      setDeckCustomTitle('Típicas de Comandante (100)');
+      setDeckCustomTitle('⭐ Típicas de Comandante (100)');
       setSelectedCategory('custom_tipicas');
-    } else if (newCat === 'custom_alternates') {
-      const alts = questions.filter((q) => q.id.startsWith('CMD-ALT-') || q._subtopic === 'minimos-planificacion-y-alternativos').map((q) => q.id);
-      setActiveQuestionIds(alts);
-      setDeckCustomTitle('📋 Mínimos de Planificación & Alternativos (Tabla 1/1A)');
-      setSelectedCategory('custom_alternates');
     } else if (newCat === 'custom_official') {
       const official = questions.filter((q) => q.id.startsWith('CMD-EXAM26-')).map((q) => q.id);
       setActiveQuestionIds(official);
-      setDeckCustomTitle('Examen Oficial 2026 (25)');
+      setDeckCustomTitle('🎯 Examen Oficial 2026 (25)');
       setSelectedCategory('custom_official');
     } else {
       setActiveQuestionIds(undefined);
@@ -190,7 +239,7 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
 
   const handleShuffle = () => {
     const reshuffledFull = buildPrioritizedFlashcardDeck(
-      questions, 
+      combinedPool, 
       statsMap, 
       selectedCategory, 
       filterType, 
@@ -443,17 +492,28 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
             <select
               value={selectedCategory}
               onChange={(e) => handleCategoryChange(e.target.value)}
-              className="px-3 py-2 rounded-xl bg-slate-900 border border-sky-500/30 text-xs font-bold text-sky-200 focus:outline-none focus:border-sky-400 max-w-[240px]"
+              className="px-3 py-2 rounded-xl bg-slate-900 border border-sky-500/30 text-xs font-bold text-sky-200 focus:outline-none focus:border-sky-400 max-w-[260px]"
             >
-              <option value="custom_tipicas">⭐ Típicas Comandante (100)</option>
-              <option value="custom_alternates">📋 Mínimos Planif. & Alternativos (Tabla 1/1A) (30)</option>
-              <option value="custom_official">🎯 Examen Oficial 2026 (25)</option>
-              <option value="all">Todos los Bancos ({questions.length})</option>
-              {manifest?.categories.map((cat) => (
-                <option key={cat.id} value={cat.id}>
-                  {cat.title} ({cat.total_questions})
-                </option>
-              ))}
+              <optgroup label="📊 Tablas Operativas Oficiales">
+                <option value="custom_all_tables">📊 Todas las Tablas Operativas ({getAllTableFlashcards().length})</option>
+                <option value="custom_alternates">📋 Mínimos Planif. & Alternativos</option>
+                <option value="custom_v_speeds">🚀 Master Aviation V-Speeds (CS-25)</option>
+                <option value="custom_memory_items">🔥 Memory Items E195-E2 (QRH)</option>
+                <option value="custom_limitations">⚠️ Limitaciones Operacionales E195-E2</option>
+                <option value="custom_ftl_rffs">⏱️ FTL, RFFS & Normativa MOA</option>
+              </optgroup>
+              <optgroup label="⭐ Mazos Especiales">
+                <option value="custom_tipicas">⭐ Típicas Comandante (100)</option>
+                <option value="custom_official">🎯 Examen Oficial 2026 (25)</option>
+              </optgroup>
+              <optgroup label="📚 Todos los Bancos de Preguntas">
+                <option value="all">Todos los Bancos ({questions.length})</option>
+                {manifest?.categories.map((cat) => (
+                  <option key={cat.id} value={cat.id}>
+                    {cat.title} ({cat.total_questions})
+                  </option>
+                ))}
+              </optgroup>
             </select>
           </div>
         </div>
@@ -471,7 +531,7 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
                   : 'bg-slate-900 text-slate-300 hover:bg-slate-800 border border-slate-800'
               }`}
             >
-              ⚡ Todas ({filterFlashcards(questions, selectedCategory, 'all', activeQuestionIds).length})
+              ⚡ Todas ({filterFlashcards(combinedPool, selectedCategory, 'all', activeQuestionIds).length})
             </button>
 
             <button
@@ -483,7 +543,7 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
               }`}
             >
               <span>🔢 Solo Datos Numéricos</span>
-              <span className="text-[10px] opacity-80">({filterFlashcards(questions, selectedCategory, 'numerical', activeQuestionIds).length})</span>
+              <span className="text-[10px] opacity-80">({filterFlashcards(combinedPool, selectedCategory, 'numerical', activeQuestionIds).length})</span>
             </button>
 
             <button
@@ -495,7 +555,7 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
               }`}
             >
               <span>🔤 Solo Siglas y Acrónimos</span>
-              <span className="text-[10px] opacity-80">({filterFlashcards(questions, selectedCategory, 'acronym', activeQuestionIds).length})</span>
+              <span className="text-[10px] opacity-80">({filterFlashcards(combinedPool, selectedCategory, 'acronym', activeQuestionIds).length})</span>
             </button>
           </div>
 

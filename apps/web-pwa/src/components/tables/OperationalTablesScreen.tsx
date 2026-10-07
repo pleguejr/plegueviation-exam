@@ -15,9 +15,11 @@ import {
   Scale,
   Briefcase,
   ArrowUp,
-  BarChart2
+  BarChart2,
+  Zap
 } from 'lucide-react';
 import { OPERATIONAL_TABLES, OperationalTable } from '../../data/operationalTablesData';
+import { getTableFlashcardsByTableId } from '../../services/tableFlashcardsService';
 import { OperationalDiagram, DiagramId } from './OperationalDiagrams';
 
 export type TableCategory = 'all' | 'easa-netjets' | 'alternates' | 'memory-items' | 'limitations' | 'mass-balance' | 'moa' | 'vfr';
@@ -25,6 +27,7 @@ export type TableCategory = 'all' | 'easa-netjets' | 'alternates' | 'memory-item
 interface OperationalTablesScreenProps {
   onBackToDashboard: () => void;
   initialCategory?: TableCategory;
+  onOpenFlashcards?: (params: { category?: string; questionIds?: string[]; title?: string }) => void;
 }
 
 function parseMemorySteps(raw: string): string[] {
@@ -38,7 +41,8 @@ function parseMemorySteps(raw: string): string[] {
 
 export const OperationalTablesScreen: React.FC<OperationalTablesScreenProps> = ({ 
   onBackToDashboard,
-  initialCategory = 'all'
+  initialCategory = 'all',
+  onOpenFlashcards
 }) => {
   const [selectedCategory, setSelectedCategory] = useState<TableCategory>(initialCategory);
   const [searchQuery, setSearchQuery] = useState('');
@@ -284,7 +288,32 @@ export const OperationalTablesScreen: React.FC<OperationalTablesScreenProps> = (
           <span>Volver al Centro de Control</span>
         </button>
 
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
+          <button
+            type="button"
+            onClick={() => {
+              if (selectedCategory === 'all') {
+                onOpenFlashcards?.({ category: 'custom_all_tables', title: '📊 Flashcards: Todas las Tablas Operativas' });
+              } else if (selectedCategory === 'alternates') {
+                onOpenFlashcards?.({ category: 'custom_alternates', title: '📋 Flashcards: Mínimos de Planificación & Alternativos' });
+              } else if (selectedCategory === 'easa-netjets') {
+                onOpenFlashcards?.({ category: 'custom_v_speeds', title: '🚀 Flashcards: Master V-Speeds & EASA / NetJets' });
+              } else if (selectedCategory === 'memory-items') {
+                onOpenFlashcards?.({ category: 'custom_memory_items', title: '🔥 Flashcards: Memory Items E195-E2' });
+              } else if (selectedCategory === 'limitations') {
+                onOpenFlashcards?.({ category: 'custom_limitations', title: '⚠️ Flashcards: Limitaciones Operacionales E195-E2' });
+              } else if (selectedCategory === 'moa') {
+                onOpenFlashcards?.({ category: 'custom_ftl_rffs', title: '⏱️ Flashcards: FTL, RFFS & Normativa MOA' });
+              } else {
+                onOpenFlashcards?.({ category: 'custom_all_tables', title: '📊 Flashcards: Tablas Operativas' });
+              }
+            }}
+            className="px-3 py-1.5 rounded-xl text-xs font-black bg-gradient-to-r from-amber-500 via-amber-600 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-slate-950 shadow-md shadow-amber-900/30 flex items-center gap-1.5 transition-all active:scale-95"
+            title="Estudiar estas tablas en modo Flashcards interactivas"
+          >
+            <Zap className="w-3.5 h-3.5 fill-current text-slate-950" />
+            <span>Estudiar en Flashcards</span>
+          </button>
           <button type="button" onClick={expandAll} className="ops-tables-toolbar-btn">
             Expandir Todas
           </button>
@@ -412,6 +441,25 @@ export const OperationalTablesScreen: React.FC<OperationalTablesScreenProps> = (
                     >
                       <ArrowUp className="w-3.5 h-3.5" />
                       <span className="text-[10px] font-bold hidden md:inline">Arriba</span>
+                    </button>
+
+                    {/* Botón para estudiar esta tabla específica en Flashcards */}
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        const tableCards = getTableFlashcardsByTableId(table.id);
+                        const tableQIds = tableCards.map((c) => c.id);
+                        onOpenFlashcards?.({
+                          questionIds: tableQIds,
+                          title: `⚡ Flashcards: ${table.title}`
+                        });
+                      }}
+                      className="ops-tables-icon-btn text-amber-400 hover:text-amber-300"
+                      title={`Estudiar esta tabla (${table.rows.length} fichas) en Flashcards`}
+                    >
+                      <Zap className="w-3.5 h-3.5 fill-amber-400/30 text-amber-400" />
+                      <span className="text-[10px] font-bold hidden sm:inline">Flashcards</span>
                     </button>
 
                     <button
