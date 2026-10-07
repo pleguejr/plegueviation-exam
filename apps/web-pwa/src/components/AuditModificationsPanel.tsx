@@ -30,7 +30,7 @@ interface AuditModificationsPanelProps {
   onUpdate?: () => void;
 }
 
-export const AuditModificationsPanel: React.FC<AuditModificationsPanelProps> = ({ onUpdate }) => {
+export const AuditModificationsPanel: React.FC<AuditModificationsPanelProps> = () => {
   const [open, setOpen] = useState(false);
   const [items, setItems] = useState<AuditModificationItem[]>([]);
   const [showForm, setShowForm] = useState(false);
@@ -45,7 +45,6 @@ export const AuditModificationsPanel: React.FC<AuditModificationsPanelProps> = (
   const refresh = () => {
     const list = getAuditModifications();
     setItems(list);
-    onUpdate?.();
   };
 
   useEffect(() => {
