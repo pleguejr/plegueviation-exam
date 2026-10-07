@@ -7,23 +7,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Pilotos fuera de servicio de la compañía aérea",
+        "text": "Verificar la colocación de calzos en tren principal y de morro y coordinar la conexión de la GPU antes de apagar motores.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Cualquier pasajero varón mayor de 18 años con plenas facultades físicas",
-        "is_correct": false
+        "text": "Asegurar que el pin de bloqueo de dirección (Steering Bypass Pin) esté insertado y confirmar frenos sueltos por interfonía antes de iniciar el retroceso.",
+        "is_correct": true
       },
       {
         "id": "C",
-        "text": "Pasajeros que no hayan facturado equipaje en la bodega del avión",
+        "text": "Encender las luces de aterrizaje y conectar las bombas hidráulicas del sistema 3 antes del enganche de la barra.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "PMR, niños, bebés, menores no acompañados (UMNR), mujeres embarazadas, pasajeros deportados/inadmitidos, y personas que viajen con animales de compañía",
-        "is_correct": true
+        "text": "Mantener el freno de estacionamiento puesto durante todo el movimiento de empuje hasta llegar a la calle de rodaje.",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -44,22 +44,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Solo para bebés menores de 6 meses de edad",
-        "is_correct": false
+        "text": "Encender la luz anticolisión roja (Beacon) inmediatamente antes de arrancar motores o iniciar el pushback.",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "Exclusivamente para estudiantes universitarios con beca internacional",
+        "text": "Encender la luz de destellos estroboscópica blanca (Strobe) en cuanto se conecte la barra de remolque.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Obligatorio para menores desde **5 años cumplidos hasta 11 años** (opcional a petición de tutores legales de 12 a 17 años)",
-        "is_correct": true
+        "text": "Encender los faros de aterrizaje de morro durante todo el remolque por la plataforma.",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "Obligatorio para cualquier persona menor de 30 años",
+        "text": "Mantener todas las luces exteriores apagadas hasta alinearse en la pista de despegue.",
         "is_correct": false
       }
     ],
@@ -202,7 +202,7 @@
       },
       {
         "id": "C",
-        "text": "Binter Airlines **NO transporta pasajeros en camilla (STCR)** en sus vuelos regulares de pasaje",
+        "text": "Binter Airlines NO transporta pasajeros en camilla (STCR) en sus vuelos regulares de pasaje",
         "is_correct": true
       },
       {
@@ -303,7 +303,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Dimensiones máximas de **55 x 35 x 25 cm** y un peso máximo de **8 kg**, debiendo caber en los maleteros superiores o bajo el asiento",
+        "text": "Dimensiones máximas de 55 x 35 x 25 cm y un peso máximo de 8 kg, debiendo caber en los maleteros superiores o bajo el asiento",
         "is_correct": true
       },
       {
@@ -350,7 +350,7 @@
       },
       {
         "id": "C",
-        "text": "Animal en transportín homologado, ventilado y estanco (45 × 35 × 25 cm), con un peso total (animal + transportín) no superior a **8 kg**, colocado bajo el asiento delantero",
+        "text": "Animal en transportín homologado, ventilado y estanco (45 × 35 × 25 cm), con un peso total (animal + transportín) no superior a 8 kg, colocado bajo el asiento delantero",
         "is_correct": true
       },
       {
@@ -424,7 +424,7 @@
       },
       {
         "id": "C",
-        "text": "Un radio de peligro de succión de al menos **3 metros (10 pies)** delante y a los lados de la tobera de entrada a potencia de ralentí",
+        "text": "Un radio de peligro de succión de al menos 3 metros (10 pies) delante y a los lados de la tobera de entrada a potencia de ralentí",
         "is_correct": true
       },
       {
@@ -461,7 +461,7 @@
       },
       {
         "id": "C",
-        "text": "Al menos **30 metros (100 pies)** a potencia de ralentí (Idle), y al menos **60 a 100 metros (200-300 pies)** a empuje de despegue o aceleración en rampa",
+        "text": "Al menos 30 metros (100 pies) a potencia de ralentí (Idle), y al menos 60 a 100 metros (200-300 pies) a empuje de despegue o aceleración en rampa",
         "is_correct": true
       },
       {
@@ -1497,7 +1497,7 @@
       },
       {
         "id": "C",
-        "text": "Aproximadamente entre **10 y 5 minutos antes de la STD (STD-10 a STD-5)**, tras recibir la conformidad de pasaje a bordo y documentación firmada",
+        "text": "Aproximadamente entre 10 y 5 minutos antes de la STD (STD-10 a STD-5), tras recibir la conformidad de pasaje a bordo y documentación firmada",
         "is_correct": true
       },
       {
@@ -1847,6 +1847,117 @@
     },
     "metadata": {
       "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-GND-OPS-051",
+    "subject_id": "moa_operaciones_tierra_rampa",
+    "learning_objective": "MOA 8.2.2 - Procedimiento de Pushback y Señales de Desconexión del Personal de Tierra",
+    "stem": "¿Cuál es la señal obligatoria que el operador de tierra debe mostrar visualmente a la tripulación técnica tras finalizar el pushback y desconectar la barra de remolque?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mostrar en alto el pin de bloqueo del tren de morro (Steering Bypass Pin) con su cinta roja 'Remove Before Flight' y dar señal de 'Todo Libre'.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Agitar una linterna verde en círculo continuo hacia el motor izquierdo indicando puesta en marcha autorizada.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar la señal de brazos cruzados sobre la cabeza indicando corte inmediato de generadores eléctricos.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Retirarse directamente hacia la terminal sin necesidad de confirmación visual una vez desconectada la barra.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🚜 MOA 8.2.2: Desconexión de Pushback y Pin de Dirección\n* **Procedimiento:** El operador de tierra desconecta la barra y retira el Steering Bypass Pin.\n* **Confirmación Visual:** Debe situarse a la vista del Comandante (lado izquierdo habitualmente) y mostrar en alto el pin con su cinta roja, realizando la señal de 'Todo Libre / Pulgar hacia arriba'.\n* **Prohibición:** La tripulación técnica NO debe activar la dirección del tren de morro (Steering) hasta haber recibido la confirmación visual de pin retirado.",
+      "references": [
+        "MOA Binter 8.2.2 • IATA IGOM 4.6"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-GND-OPS-052",
+    "subject_id": "moa_operaciones_tierra_rampa",
+    "learning_objective": "MOA 8.2.2 - Zonas de Peligro por Ingestión de Motor (Intake) y Chorro de Gases (Jet Blast)",
+    "stem": "Durante la operación en rampa con motores en marcha al ralentí (Idle), ¿cuál es la precaución reglamentaria respecto a las zonas de peligro de los motores a reacción de la aeronave?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mantener despejada la zona de peligro de succión de la entrada de aire (Intake Danger Area) y el cono de riesgo de chorro trasero (Jet Blast Danger Area).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Permitir el tránsito de vehículos de catering a menos de 1 metro de la tobera de escape si el motor está al ralentí.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cargar equipaje por la compuerta delantera mientras el motor del lado opuesto acelera a potencia de despegue.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Desconectar la GPU únicamente cuando el motor número 1 haya alcanzado el 85% de N1 en el puesto.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⚠️ MOA 8.2.2: Áreas de Peligro de Motores en Rampa\n* **Intake Hazard Zone:** Zona semicircular frontal y lateral donde la baja presión puede succionar personas o restos de objetos extraños (FOD).\n* **Jet Blast Zone:** Cono posterior de alta velocidad y temperatura capaz de volcar vehículos o lesionar al personal de asistencia.",
+      "references": [
+        "MOA Binter 8.2.2 • AFM Section 2 Limitations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-GND-OPS-053",
+    "subject_id": "moa_operaciones_tierra_rampa",
+    "learning_objective": "MOA 8.2.2 - Encendido Cruzado de Motores (Crossbleed Start) en Plataforma",
+    "stem": "Antes de realizar una puesta en marcha cruzada (Crossbleed Engine Start) en tierra utilizando el motor operativo para arrancar el segundo motor, ¿qué requisito de seguridad debe cumplirse?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Asegurar que el área trasera esté completamente libre de personas, vehículos u obstáculos y aplicar freno de estacionamiento antes de acelerar el motor activo.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Desconectar todas las bombas de combustible de baja y alta presión del motor que va a arrancarse.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mantener las válvulas de sangrado de aire (Bleed Air Valves) de ambos motores en posición cerrada (OFF).",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar el arranque exclusivamente durante el rodaje en giros pronunciados de 90 grados.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⚙️ MOA 8.2.2 & SOP: Crossbleed Start en Tierra\n* **Presión Requerida:** El motor operativo debe acelerarse para proporcionar la presión mínima de sangrado de aire (Air Duct Pressure, típicamente ~30-40 psi).\n* **Seguridad en Rampa:** Al acelerar el motor operativo, el chorro trasero (Jet Blast) aumenta significativamente; por tanto, el área posterior debe estar completamente despejada y los frenos aplicados.",
+      "references": [
+        "MOA Binter 8.2.2 • AOM Normal Procedures"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
     }
   }
 ]

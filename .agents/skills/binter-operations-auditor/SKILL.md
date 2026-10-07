@@ -150,3 +150,14 @@ Grounded in `manuales/MTM.pdf` (5.372 páginas):
 - **ATA 47**: Inert Gas System (OBIGGS Nitrogen fuel tank inerting).
 - **ATA 49**: APU (Pratt & Whitney APS2600).
 - **ATA 71-80**: Powerplant (Pratt & Whitney PW1900G Geared Turbofan, FADEC dual channel).
+
+---
+
+## 4. Integración de Peticiones y Mejoras del Usuario (Buzón de Auditoría)
+
+Cuando el usuario solicite una auditoría general o especializada, el agente auditor debe:
+1. **Revisar e implementar las directrices y modificaciones pendientes** definidas por el usuario en el panel *Modificaciones & Mejoras para la Auditoría*.
+2. **Priorizar las directrices [URGENTE] y [ALTA]** sobre los bancos o tablas correspondientes.
+3. **Ejecutar las verificaciones técnicas regulares** (fidelidad a manuales Binter MOA/MOB/QRH, distractor engineering sin pistas, validación de esquemas y compilación de bancos).
+4. **Reportar el estado de cada directriz del usuario** (completada, modificada o en progreso) en el informe final de auditoría.
+

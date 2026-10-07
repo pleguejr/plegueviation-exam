@@ -7,22 +7,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Clase 1: Explosivos | Clase 2: Gases | Clase 3: Líquidos inflamables | Clase 4: Sólidos inflamables | Clase 5: Comburentes y peróxidos | Clase 6: Tóxicos e infecciosos | Clase 7: Radiactivos | Clase 8: Corrosivos | Clase 9: Mercancías diversas",
+        "text": "Clase 1: Explosivos | Clase 2: Gases | Clase 3: Líquidos inflamables | Clase 4: Sólidos inflamables | Clase 5: Comburentes y peróxidos | Clase 6: Tóxicos e infecciosos | Clase 7: Radiactivos | Clase 8: Corrosivos | Clase 9: Mercancías diversas.",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "No existen 9 clases siendo solo dos: permitidas o prohibidas",
+        "text": "Clase 1: Líquidos | Clase 2: Sólidos | Clase 3: Gases | Clase 4: Polvos | Clase 5: Químicos | Clase 6: Ácidos | Clase 7: Armas | Clase 8: Baterías | Clase 9: Embalajes.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Clase 1 a 9 clasificadas únicamente por el color del embalaje exterior",
+        "text": "Clase 1: Baja peligrosidad | Clase 2: Media peligrosidad | Clase 3: Alta peligrosidad | Clase 4: Carga perecedera | Clase 5 a 9: No clasificadas.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Clase 1: Alimentos | Clase 2: Animales | Clase 3: Maletas | Clase 4: Pasajeros | Clase 5: Combustible | Clase 6: Aceite | Clase 7: Agua | Clase 8: Hielo | Clase 9: Ropa",
+        "text": "Clase 1: Material rodante | Clase 2: Mercancía pesada | Clase 3: Carga refrigerada | Clase 4: Correo | Clase 5 a 9: Carga general consolidada.",
         "is_correct": false
       }
     ],
@@ -44,22 +44,22 @@
     "options": [
       {
         "id": "A",
-        "text": "La factura comercial del transporte de carga",
+        "text": "El manifiesto de pasajeros y el plano de asientos entregado por el agente de pasaje.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "El billete de avión de los pasajeros de la fila 1",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "La Notificación al Comandante (**NOTOC - Notification to Captain**), detallando el número UN, nombre de expedición, clase, cantidad neta, ubicación en bodega y grupo de embalaje",
+        "text": "La Notificación por Escrito al Comandante (NOTOC - Notification to Captain) detallando el número UN, nombre de expedición, clase, cantidad y ubicación.",
         "is_correct": true
       },
       {
+        "id": "C",
+        "text": "La factura comercial de aduanas y el conocimiento de embarque marítimo de la carga.",
+        "is_correct": false
+      },
+      {
         "id": "D",
-        "text": "No se entrega ningún documento bastando una señal visual desde la pista",
+        "text": "El albarán de entrega provisional de repostaje emitido por el operador de combustible.",
         "is_correct": false
       }
     ],
@@ -81,22 +81,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Grupo de Embalaje I (PG I): **Gran peligro** | Grupo de Embalaje II (PG II): **Peligro medio** | Grupo de Embalaje III (PG III): **Peligro menor**",
+        "text": "Grupo de Embalaje I (Gran peligro), Grupo de Embalaje II (Peligro medio) y Grupo de Embalaje III (Peligro menor).",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Los grupos indican el tamaño de la caja en metros cúbicos",
+        "text": "Grupo de Embalaje I (Carga en cabina), Grupo de Embalaje II (Bodega delantera) y Grupo de Embalaje III (Bodega trasera).",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Grupo I es el más seguro y Grupo III el más peligroso",
+        "text": "Grupo de Embalaje I (Menor peligro), Grupo de Embalaje II (Peligro medio) y Grupo de Embalaje III (Máximo peligro).",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Los grupos indican si el paquete viaja en cabina o en bodega",
+        "text": "Grupo de Embalaje I (Peso hasta 10 kg), Grupo II (Hasta 50 kg) y Grupo III (Superior a 100 kg).",
         "is_correct": false
       }
     ],
@@ -118,23 +118,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Las armas pueden viajar cargadas en el bolsillo del pasajero",
+        "text": "Máximo 15 kg de munición por pasajero transportada como equipaje de mano en la cabina.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Está prohibido el transporte de cualquier cartucho bajo cualquier circunstancia",
-        "is_correct": false
+        "text": "Máximo 5 kg de peso bruto por pasajero de munición de la División 1.4S para uso deportivo en bodega facturada, con aprobación del operador.",
+        "is_correct": true
       },
       {
         "id": "C",
-        "text": "Hasta 50 kg de explosivos en cabina de pasajeros",
+        "text": "Cualquier cantidad de cartuchos siempre que viajen dentro del cargador del arma en el bolsillo.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Máximo **5 kg de peso bruto por pasajero** de munición de la División 1.4S (cartuchería deportiva), exclusivamente en bodega, en su embalaje original seguro y sin mezclar con bultos de otros pasajeros",
-        "is_correct": true
+        "text": "Prohibición absoluta de transportar munición de cualquier calibre en vuelos comerciales.",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -155,22 +155,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Se permite llevar 50 Power Banks por pasajero en cualquier lugar",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "Deben transportarse **exclusivamente en el equipaje de mano / cabina de pasajeros** (máximo 100 Wh o hasta 160 Wh con permiso), estando **terminantemente prohibidas en el equipaje facturado en bodega**",
+        "text": "Deben transportarse exclusivamente en el equipaje de mano / cabina y protegidas contra cortocircuitos, prohibiéndose en equipaje facturado en bodega.",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "Deben facturarse obligatoriamente en el equipaje de bodega dentro de bolsas herméticas de plástico.",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "Pueden facturarse en bodega siempre que estén descargadas al 0%",
+        "text": "Pueden transportarse indistintamente en bodega o en cabina sin limitación de capacidad en vatios-hora.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Deben transportarse en el fondo de las maletas facturadas en bodega",
+        "text": "Están completamente prohibidas a bordo tanto en cabina como en equipaje facturado.",
         "is_correct": false
       }
     ],
@@ -355,7 +355,7 @@
       },
       {
         "id": "D",
-        "text": "En un plazo máximo no superior a **72 horas** a través del sistema de notificación obligatoria de sucesos (ASR / MOR), salvo accidente que exige reporte inmediato",
+        "text": "En un plazo máximo no superior a 72 horas a través del sistema de notificación obligatoria de sucesos (ASR / MOR), salvo accidente que exige reporte inmediato",
         "is_correct": true
       }
     ],
@@ -451,7 +451,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Líquidos que desprenden vapores inflamables a temperaturas iguales o inferiores a **60°C en ensayo de copa cerrada (Flash Point ≤ 60°C)**",
+        "text": "Líquidos que desprenden vapores inflamables a temperaturas iguales o inferiores a 60°C en ensayo de copa cerrada (Flash Point ≤ 60°C)",
         "is_correct": true
       },
       {
@@ -567,7 +567,7 @@
       },
       {
         "id": "B",
-        "text": "Descargar extintor de agua o halón para extinguir las llamas y a continuación **verter abundante agua u otros líquidos no alcohólicos** para enfriar las celdas de la batería y frenar la fuga térmica",
+        "text": "Descargar extintor de agua o halón para extinguir las llamas y a continuación verter abundante agua u otros líquidos no alcohólicos para enfriar las celdas de la batería y frenar la fuga térmica",
         "is_correct": true
       },
       {
@@ -752,7 +752,7 @@
       },
       {
         "id": "B",
-        "text": "Exclusivamente en el equipaje de mano o en persona, estando **prohibida su recarga y uso a bordo**, y prohibido su transporte en el equipaje facturado en bodega",
+        "text": "Exclusivamente en el equipaje de mano o en persona, estando prohibida su recarga y uso a bordo, y prohibido su transporte en el equipaje facturado en bodega",
         "is_correct": true
       },
       {
@@ -900,7 +900,7 @@
       },
       {
         "id": "B",
-        "text": "Están **totalmente prohibidos como equipaje de mano y facturado**, salvo que estén completamente desactivados y certificados formalmente por el fabricante",
+        "text": "Están totalmente prohibidos como equipaje de mano y facturado, salvo que estén completamente desactivados y certificados formalmente por el fabricante",
         "is_correct": true
       },
       {
@@ -1011,7 +1011,7 @@
       },
       {
         "id": "B",
-        "text": "Un máximo total de **5 litros por persona**, contenidas en recipientes comerciales sellados de venta al público",
+        "text": "Un máximo total de 5 litros por persona, contenidas en recipientes comerciales sellados de venta al público",
         "is_correct": true
       },
       {
@@ -1085,7 +1085,7 @@
       },
       {
         "id": "B",
-        "text": "Durante un periodo mínimo no inferior a **3 meses (o 12 meses según el requisito de calidad de la compañía)** a disposición de los inspectores de AESA",
+        "text": "Durante un periodo mínimo no inferior a 3 meses (o 12 meses según el requisito de calidad de la compañía) a disposición de los inspectores de AESA",
         "is_correct": true
       },
       {
@@ -1529,7 +1529,7 @@
       },
       {
         "id": "B",
-        "text": "Hasta **dos cartuchos pequeños instalados en el chaleco y hasta dos cartuchos de repuesto**, con permiso de la compañía",
+        "text": "Hasta dos cartuchos pequeños instalados en el chaleco y hasta dos cartuchos de repuesto, con permiso de la compañía",
         "is_correct": true
       },
       {
@@ -1608,7 +1608,7 @@
       },
       {
         "id": "C",
-        "text": "Un máximo de **2.5 kg de Hielo Seco por pasajero**, en un embalaje que permita la liberación del gas CO2 (no hermético) y debidamente marcado con la leyenda 'DRY ICE 2.5 KG'",
+        "text": "Un máximo de 2.5 kg de Hielo Seco por pasajero, en un embalaje que permita la liberación del gas CO2 (no hermético) y debidamente marcado con la leyenda 'DRY ICE 2.5 KG'",
         "is_correct": true
       },
       {
@@ -1640,7 +1640,7 @@
       },
       {
         "id": "B",
-        "text": "La Lista de Comprobación para la Aceptación de Mercancías Peligrosas (**IATA Dangerous Goods Acceptance Checklist**), comprobando documentación, embalaje, etiquetas y marcas",
+        "text": "La Lista de Comprobación para la Aceptación de Mercancías Peligrosas (IATA Dangerous Goods Acceptance Checklist), comprobando documentación, embalaje, etiquetas y marcas",
         "is_correct": true
       },
       {
@@ -1687,7 +1687,7 @@
       },
       {
         "id": "D",
-        "text": "La batería de litio debe ser extraíble y debe ser **retirada de la maleta por el pasajero y transportada en la cabina de pasaje** antes de facturar el equipaje",
+        "text": "La batería de litio debe ser extraíble y debe ser retirada de la maleta por el pasajero y transportada en la cabina de pasaje antes de facturar el equipaje",
         "is_correct": true
       }
     ],
@@ -1847,6 +1847,117 @@
     },
     "metadata": {
       "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-DGR-051",
+    "subject_id": "moa_mercancias_peligrosas_armas",
+    "learning_objective": "MOA 9.1.2.1.7.4 - Contenido Obligatorio del Documento NOTOC",
+    "stem": "Según el MOA 9.1.2.1.7.4 y el Doc 9284 de OACI, ¿cuál de los siguientes conjuntos de datos debe figurar obligatoriamente en el NOTOC entregado al Comandante?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Número UN, Nombre Apropiado de Expedición, Clase o División, Grupo de Embalaje, cantidad neta por bulto, ubicación en bodega y Código de Emergencia ICAO ERG.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Nombre del fabricante del producto químico, teléfono particular del expedidor y precio en factura.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Únicamente el peso total en kilogramos y el color de la caja de embalaje exterior.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Número de pasaporte del conductor del camión de transporte terrestre hasta el aeropuerto.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 📋 MOA 9.1.2.1.7.4: Contenido del NOTOC\n* **Datos Obligatorios:**\n  1. Fecha y número de vuelo / Guía Aérea (AWB).\n  2. Número ONU (UN Number) y Nombre Apropiado de Expedición (Proper Shipping Name).\n  3. Clase o División de riesgo y riesgos secundarios.\n  4. Grupo de Compatibilidad (en Clase 1).\n  5. Grupo de Embalaje (PG I, II o III).\n  6. Número de bultos y masa neta / volumen por bulto.\n  7. Ubicación exacta en el compartimento de carga (Bodega delantera/trasera, posición).\n  8. Código de Respuesta de Emergencia ICAO (Drill Code).",
+      "references": [
+        "MOA Binter 9.1.2.1.7.4 • OACI Doc 9284"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "CMD-MOA-DGR-052",
+    "subject_id": "moa_mercancias_peligrosas_armas",
+    "learning_objective": "MOA 9.1.2.1.7.4 - Custodia y Firma del NOTOC por el Comandante y Handling",
+    "stem": "¿Cuál es el procedimiento de firma y conservación del NOTOC en la escala de salida según el MOA 9.1.2.1.7.4?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El Comandante firma el NOTOC, conservando una copia en vuelo; el agente de rampa retiene una copia firmada en tierra que se custodia durante al menos 3 meses.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El NOTOC es un documento puramente informativo que no requiere firma ni archivo en tierra.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El Comandante debe destruir el NOTOC inmediatamente después del aterrizaje en el aeropuerto de destino.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La copia del NOTOC se entrega a la policía de fronteras antes de cerrar las puertas de la aeronave.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✍️ MOA 9.1.2.1.7.4: Firma y Archivo del NOTOC\n* **Firma:** El Comandante debe firmar el NOTOC reconociendo haber sido informado de las mercancías peligrosas embarcadas.\n* **Copias:** Una copia viaja en el avión en posesión de la tripulación; otra copia firmada permanece en tierra archivada por la compañía / agente de handling durante al menos **3 meses**.",
+      "references": [
+        "MOA Binter 9.1.2.1.7.4 • MOA 2.1"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "CMD-MOA-DGR-053",
+    "subject_id": "moa_mercancias_peligrosas_armas",
+    "learning_objective": "MOA 9.1.4 - Notificación a los Servicios de Tránsito Aéreo (ATS) en Emergencia",
+    "stem": "En caso de emergencia en vuelo (humo en bodega, fuego o fallo grave), ¿qué obligación tiene el Comandante respecto a las mercancías peligrosas según el MOA y el Doc 9481 de OACI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Informar a la dependencia ATS correspondiente sobre la presencia de mercancías peligrosas a bordo, transmitiendo su número UN, clase, cantidad, ubicación en bodega y código drill ICAO.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mantener la información de mercancías peligrosas en secreto para evitar alarma en los servicios de control.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Esperar a haber aterrizado y desalojado el avión antes de mencionar la carga al servicio de bomberos.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Contactar telefónicamente con el expedidor de la mercancía antes de comunicar la emergencia a ATC.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🚨 Notificación a ATS en Emergencia (Doc 9481 / MOA 9)\n* **Obligación del Comandante:** Tan pronto como la carga de trabajo lo permita, informar a ATC de las mercancías peligrosas a bordo (número UN, clase/división, ubicación en bodega y código de respuesta a emergencias ERG).\n* **Propósito:** Permitir que los servicios de extinción de incendios del aeródromo (RFFS / SEI) preparen los agentes extintores adecuados y las medidas de aislamiento químico/radiológico.",
+      "references": [
+        "MOA Binter 9.1 • OACI Doc 9481 (Emergency Response Guidance)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
     }
   }
 ]

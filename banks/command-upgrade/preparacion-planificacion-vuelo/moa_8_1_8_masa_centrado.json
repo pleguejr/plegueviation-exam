@@ -118,22 +118,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Peso total del avión incluyendo el combustible de contingencia y reserva final",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "Masa máxima permitida del avión sin combustible utilizable; protege la estructura del encastre alar contra momentos flectores excesivos",
+        "text": "El peso máximo estructural del avión con combustible cero en los depósitos, protegiendo la raíz alar contra momentos flectores excesivos.",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "El peso mínimo con el que un avión puede despegar de forma segura en condiciones de viento en calma.",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "Peso mínimo que debe tener el avión para evitar salir volando impulsado por el viento en rampa",
+        "text": "El peso total de los pasajeros y su equipaje de mano sin incluir la carga de pago facturada.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Límite de peso impuesto por el fabricante exclusivamente para el transporte de mercancías peligrosas",
+        "text": "El peso máximo al aterrizaje sumando la reserva final de combustible de 45 minutos.",
         "is_correct": false
       }
     ],
@@ -155,22 +155,22 @@
     "options": [
       {
         "id": "A",
-        "text": "La cancelación definitiva del plan de vuelo debiendo desembarcar a todos los pasajeros",
-        "is_correct": false
+        "text": "Un cambio de peso/pasajeros tras el cierre de la hoja de carga que puede anotarse manualmente si no supera las tolerancias reglamentarias (ej. ±500 kg o número limitado de pax).",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "Un cambio de comandante en cabina técnica durante la carrera de despegue",
+        "text": "Una modificación de la ruta de vuelo autorizada verbalmente por el controlador de torre durante el rodaje.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Modificación de última hora dentro de tolerancias de peso/índice autorizadas que se anota en la Loadsheet existente sin requerir emitir una nueva",
-        "is_correct": true
+        "text": "El cambio imprevisto de la pista en uso asignada por el control de aproximación antes del descenso.",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "La sustitución del motor izquierdo por un motor de diferente modelo antes de cerrar puertas",
+        "text": "La sustitución de un miembro de la tripulación técnica en la escala sin aviso previo a la compañía.",
         "is_correct": false
       }
     ],
@@ -784,7 +784,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Se le asigna el peso estándar de **Niño (35 kg)** al ocupar un asiento físico en la cabina de pasajeros",
+        "text": "Se le asigna el peso estándar de Niño (35 kg) al ocupar un asiento físico en la cabina de pasajeros",
         "is_correct": true
       },
       {
@@ -863,7 +863,7 @@
       },
       {
         "id": "B",
-        "text": "El responsable de la confección de la hoja (agente de carga/despacho) y el **Comandante de la aeronave** aceptando la carga y el centrado",
+        "text": "El responsable de la confección de la hoja (agente de carga/despacho) y el Comandante de la aeronave aceptando la carga y el centrado",
         "is_correct": true
       },
       {
@@ -895,7 +895,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Al menos durante **3 meses** en el archivo del operador (junto con el plan de vuelo operacional y el sobre de vuelo)",
+        "text": "Al menos durante 3 meses en el archivo del operador (junto con el plan de vuelo operacional y el sobre de vuelo)",
         "is_correct": true
       },
       {
@@ -1847,6 +1847,80 @@
     },
     "metadata": {
       "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-WNB-051",
+    "subject_id": "moa_masa_centrado",
+    "learning_objective": "MOA 8.1.8 - Concepto y Cálculo del Underload en la Hoja de Carga",
+    "stem": "¿Qué representa el 'Underload' (Carga Disponible) reflejado en la Hoja de Carga y Centrado (Loadsheet)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El margen de peso adicional (carga o pasajeros) que aún puede aceptarse a bordo antes de alcanzar el peso limitativo más restrictivo (MTOW, MZFW o MLW).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El peso del combustible no utilizable atrapado en las tuberías y bombas del sistema de alimentación.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La diferencia entre el peso básico en vacío y el peso operativo en seco de la tripulación.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El peso total del equipaje que ha sido extraviado en la terminal de facturación.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⚖️ MOA 8.1.8: Underload (Carga Disponible)\n* **Definición:** `Underload = Peso Máximo Permitido - Peso Real Calculado`.\n* **Limitación Gobernadora:** Se calcula respecto a la limitación más restrictiva de la operación: $\\min(\\text{MTOW} - \\text{TOW}, \\text{MZFW} - \\text{ZFW}, \\text{MLW} - \\text{LAW} + \\text{Trip Fuel})$.\n* **Uso Operativo:** Determina el peso máximo de cambios de última hora (LMC) que puede admitirse.",
+      "references": [
+        "MOA Binter 8.1.8.1 • EASA CAT.POL.MAB.100"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "CMD-MOA-WNB-052",
+    "subject_id": "moa_masa_centrado",
+    "learning_objective": "MOA 8.1.8 - Relación entre Centro de Gravedad (% MAC) y Calado del Compensador (Stabilizer Trim)",
+    "stem": "¿Cómo influye la posición del Centro de Gravedad (% MAC) en el ajuste del compensador del estabilizador horizontal (Pitch Trim) para el despegue?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Un CG adelantado requiere un calado de trim más morro arriba (Nose Up); un CG retrasado requiere menor deflexión hacia morro arriba (Nose Down / menor UP).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El ajuste de trim es constante y fijo en 4.5 unidades de despegue independientemente del % MAC.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Un CG adelantado requiere ajustar el trim hacia morro abajo para evitar el encabritamiento violento.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El trim de despegue solo depende de la velocidad del viento en pista y no de la masa ni del centrado.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ MOA 8.1.8 & AFM: Calado de Pitch Trim vs % MAC\n* **CG Adelantado (Forward CG):** Brazo de palanca mayor del morro → mayor momento de picado → requiere mayor sustentación negativa en cola mediante **trim más morro arriba (Nose Up)**.\n* **CG Retrasado (Aft CG):** Menor momento de picado natural → requiere **menor trim morro arriba**, resultando además en menor resistencia de compensación (menor consumo en crucero).",
+      "references": [
+        "MOA Binter 8.1.8 • E195-E2 AFM Section 2 Limitations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
     }
   }
 ]

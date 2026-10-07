@@ -923,5 +923,560 @@
     "metadata": {
       "difficulty": 0.4
     }
+  },
+  {
+    "id": "NJ-AERO-026",
+    "subject_id": "netjets-interview",
+    "learning_objective": "V-Speeds: EASA CS-25 Takeoff Speed Hierarchy & Constraints",
+    "stem": "Under EASA CS-25 and FAA Part 25 certification specifications, what is the mandatory relationship and hierarchy among the certified takeoff speeds VEF, V1, VR, and V2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VEF <= V1 <= VR <= V2, with V1 not less than VMCG and not greater than VR or VMBE.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "V1 <= VEF <= VR <= V2, with V1 always equal to VR in balanced field operations.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "VMCG <= VEF <= V2 <= VR, with VR always exceeding V2 by at least 10 knots.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "VEF <= VR <= V1 <= V2, with V1 constrained strictly between VMCA and VLOF.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ CS-25 Takeoff Speed Hierarchy\n* **Regulatory Rule:** CS 25.107 establishes that {EF} \\le V_1 \\le V_R \\le V_2$.\n* **Lower Boundary of V1:**  \\ge V_{MCG}$ (so directional control is guaranteed if engine fails at or after {EF}$).\n* **Upper Boundary of V1:**  \\le V_R$ and  \\le V_{MBE}$ (so rotation does not occur before decision speed and kinetic brake energy capacity is not exceeded).",
+      "references": [
+        "EASA CS 25.107 (Takeoff Speeds) • FAA 14 CFR 25.107"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-AERO-027",
+    "subject_id": "netjets-interview",
+    "learning_objective": "V-Speeds: V1 Takeoff Decision Speed & Pilot Action Definition",
+    "stem": "Which statement correctly reflects the regulatory definition and operational application of V1 (Takeoff Decision Speed) during a multi-engine jet departure?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It is the speed at which the decision to abort must be made, after which the pilot has 4 seconds to apply maximum braking.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "It is the maximum speed at which the pilot must have taken the first action to stop the aircraft, and the minimum speed at which takeoff must be continued if the critical engine fails at VEF.",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "It is the unstick speed where main landing gear tires lift off the runway surface under normal all-engine thrust.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "It is the target climb speed maintained throughout the initial climb until reaching the clean maneuvering configuration.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛑 V1 Takeoff Decision Speed\n* **Definition:** $ is an **action speed**, not the start of a cognitive decision. By $, the first stopping action (brakes, thrust levers to idle) must already be initiated if rejecting.\n* **Post-V1 Rule:** Above $, the takeoff MUST be continued because stopping distance exceeds the Remaining Runway / Accelerate-Stop Distance Available (ASDA).",
+      "references": [
+        "EASA CS 25.107 • FAA AC 120-62 Takeoff Safety Training Aid"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-AERO-028",
+    "subject_id": "netjets-interview",
+    "learning_objective": "V-Speeds: VMCG (Minimum Control Speed Ground) Certification Criteria",
+    "stem": "How is VMCG (Minimum Control Speed Ground) certified under EASA CS-25.149, and what primary directional control restriction is applied during flight testing?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Directional control must be maintained solely through nosewheel steering while rudder aerodynamic credit is entirely neglected.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Directional control must be maintained using aerodynamic primary controls (rudder) only, without relying on nosewheel steering, with a lateral deviation not exceeding 30 feet from centerline.",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Differential wheel braking may be applied continuously to maintain centerline track within 50 feet.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Both thrust reversers must be deployed symmetrically to prevent yaw moments during the ground roll.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛫 VMCG Certification Criteria (CS 25.149(e))\n* **Primary Condition:** Sudden failure of the critical engine with remaining engine(s) at max takeoff thrust.\n* **Rudder Only:** Aerodynamic rudder control alone is credited; **nosewheel steering credit is explicitly excluded** (assuming wet/slippery surface).\n* **Lateral Limit:** The aircraft lateral deviation from the runway centerline must not exceed **30 ft (9.1 m)**.",
+      "references": [
+        "EASA CS 25.149(e) • FAA 14 CFR 25.149(e)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "NJ-AERO-029",
+    "subject_id": "netjets-interview",
+    "learning_objective": "V-Speeds: VMCA (Minimum Control Speed Air) & Bank Angle Influence",
+    "stem": "In the determination of VMCA (Minimum Control Speed in the Air), what maximum bank angle is permitted towards the operating engine, and what happens if wings are kept level?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Up to 5 degrees of bank towards the operating engine is permitted; keeping wings level increases VMCA significantly.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Up to 15 degrees of bank towards the inoperative engine is required to maintain zero sideslip.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Wings must remain strictly level; banking towards either engine is prohibited during CS-25 certification.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "A maximum of 10 degrees bank towards the failed engine is permitted provided rudder trim is zeroed.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ VMCA & Bank Angle Effect (CS 25.149)\n* **Certification Limit:** A maximum bank of **up to 5° into the live (operating) engine** is used during certification to create a horizontal component of lift that opposes the rudder sideslip.\n* **Wings-Level Danger:** Flying wings-level with an inoperative engine creates significant sideslip towards the dead engine, increasing the actual {MCA}$ by **10 to 20 knots** and reducing climb performance.",
+      "references": [
+        "EASA CS 25.149(c) • FAA AC 25-7D Flight Test Guide"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "NJ-AERO-030",
+    "subject_id": "netjets-interview",
+    "learning_objective": "V-Speeds: V2 Takeoff Safety Speed Certification Margins",
+    "stem": "Under modern EASA CS-25 regulations based on 1g reference stall speed (VSR), what minimum margins must V2 satisfy with one engine inoperative?",
+    "options": [
+      {
+        "id": "A",
+        "text": "V2 >= 1.05 VSR and V2 >= 1.00 VMCA",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "V2 >= 1.13 VSR (or 1.20 VS under legacy rules) and V2 >= 1.10 VMCA",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "V2 >= 1.30 VSR and V2 >= 1.25 VMCG",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "V2 >= 1.40 VSR and V2 >= 1.15 VMBE",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 📈 V2 Certification Margins (CS 25.107(b))\n* **Stall Margin:**  \\ge 1.13 V_{SR}$ (where {SR}$ is the 1g stall speed). For turbojets certified under older {S\\_MIN}$ standards,  \\ge 1.20 V_S$.\n* **Control Margin:**  \\ge 1.10 V_{MCA}$, ensuring full aerodynamic controllability during second segment climb.",
+      "references": [
+        "EASA CS 25.107(b) • FAR Part 25.107(b)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-AERO-031",
+    "subject_id": "netjets-interview",
+    "learning_objective": "V-Speeds: VMBE (Maximum Brake Energy Speed) Limitations & Operational Risks",
+    "stem": "What does VMBE represent on a transport category jet, and what severe hazard arises if a rejected takeoff is initiated at a groundspeed exceeding VMBE?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The maximum aerodynamic speed for thrust reverser deployment without causing compressor stalls.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "The maximum speed from which a rejected takeoff can be completed without exceeding the thermal and kinetic energy capacity of the wheel brakes, risking fuse plug release, tire blowout, or uncontained fire.",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "The minimum speed at which the anti-skid system can modulate hydraulic brake pressure on ice.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "The maximum taxi speed allowed during turns on contaminated taxiways.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛑 VMBE (Maximum Brake Energy Speed)\n* **Thermal Limit:** Wheel brakes convert aircraft kinetic energy ( = \\frac{1}{2} m V^2$) into heat.\n* **Over-energy Consequences:** If {RTO} > V_{MBE}$, brake temperatures exceed design limits, causing brake fade, wheel thermal fuse plugs melting, rapid tire deflation, and catastrophic landing gear fires.",
+      "references": [
+        "EASA CS 25.101 • NetJets Flight Operations Manual"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "NJ-AERO-032",
+    "subject_id": "netjets-interview",
+    "learning_objective": "V-Speeds: VR (Rotation Speed) Aerodynamic Constraints",
+    "stem": "According to EASA CS 25.107(e), what are the certified lower limits for selecting the rotation speed VR?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VR cannot be less than V1, must be at least 1.05 VMCA, and must allow reaching V2 before 35 ft with one engine failed.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "VR must always be at least 15 knots higher than V2 under all gross weights.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "VR is solely determined by tire maximum rotation RPM limits regardless of stall speed.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "VR must equal VMCG plus a 20% safety buffer.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ VR Rotation Speed Rules\n* **Rules:**\n  1.  \\ge V_1$\n  2.  \\ge 1.05 V_{MCA}$\n  3. $ must ensure liftoff speed {LOF} \\ge 1.10 V_{MU}$ (all engines) and $\\ge 1.05 V_{MU}$ (OEI).\n  4. Must allow the aircraft to reach $ at the screen height (35 ft dry / 15 ft wet).",
+      "references": [
+        "EASA CS 25.107(e) • ICAO Annex 6 Part I"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-AERO-033",
+    "subject_id": "netjets-interview",
+    "learning_objective": "V-Speeds: VREF (Landing Reference Speed) Certification Margins",
+    "stem": "How is VREF (Landing Reference Speed) calculated for transport jet operations under EASA Part-CAT and CS-25?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VREF is fixed at exactly 1.10 VMCG regardless of flap configuration or aircraft landing weight.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "VREF must not be less than 1.23 VSR (or 1.30 VS0 under older rules) and not less than VMCL in the landing configuration.",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "VREF is calculated as 1.50 times the clean stall speed VS1.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "VREF is the maximum structural speed at which landing gear can be retracted during a balked landing.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛬 VREF Landing Reference Speed\n* **Threshold Baseline:** {REF}$ is the speed crossed at 50 ft above the landing threshold in landing configuration.\n* **Regulatory Minimums:** Under CS-25, {REF} \\ge 1.23 V_{SR}$ (where {SR}$ is 1g stall speed in landing configuration) and {REF} \\ge V_{MCL}$.",
+      "references": [
+        "EASA CS 25.125 • Part-CAT.POL.A.230"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-AERO-034",
+    "subject_id": "netjets-interview",
+    "learning_objective": "V-Speeds: VAPP Final Approach Speed & Wind Additive Policy",
+    "stem": "When flying an instrument final approach in gusty wind conditions, how should the pilot calculate target approach speed VAPP, and how should it be flown at the runway threshold?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Add 100% of steady headwind plus 100% of gust to VREF and maintain the entire additive down to touchdown.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Calculate VAPP as VREF + Wind Correction (typically 1/2 steady headwind + full gust increment, min +5 kt, max +20 kt), bleeding off the steady headwind increment over the threshold to cross at VREF.",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Fly strictly at VREF regardless of reported gusts to prevent exceeding landing field length.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Multiply VREF by the cosine of the crosswind angle and add 30 knots.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛬 VAPP & Wind Additive Policy\n* **Formula:** {APP} = V_{REF} + \\text{Wind Correction}$. Standard operator policy uses $\\frac{1}{2} \\text{ steady headwind component} + \\text{full gust increment}$ (minimum $+5\\text{ kt}$, maximum $+20\\text{ kt}$).\n* **Threshold Technique:** The steady wind correction is bled off smoothly during the flare so the aircraft crosses the 50 ft threshold near {REF}$.",
+      "references": [
+        "EASA Part-CAT SOPs • Boeing / Airbus / Embraer FCTM"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-AERO-035",
+    "subject_id": "netjets-interview",
+    "learning_objective": "V-Speeds: VA (Design Maneuvering Speed) Structural Limitations",
+    "stem": "Regarding VA (Design Maneuvering Speed), which statement accurately describes its aerodynamic protection and important operational safety limitation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Below VA, full sudden deflection of a single flight control in one direction will cause an aerodynamic stall before exceeding structural limit load factor; however, VA does NOT protect against full alternating cyclic rudder reversals.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Flying below VA allows full simultaneous multi-axis control deflections up to maximum structural yield point.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "VA increases as aircraft gross weight decreases because lighter wings experience less bending moment.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "VA provides full structural protection during high-speed dives exceeding MMO.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⚠️ VA Maneuvering Speed Caution\n* **Single Axis Protection:** At or below $, full sudden deflection of **one** flight control surface will stall the aircraft aerodynamically before the design limit load ($+2.5g$) is exceeded.\n* **Critical Limitation:** $ does **NOT** protect against full alternating reversals (e.g. rudder cycling left-to-right), nor simultaneous multi-axis deflections.\n* **Weight Dependence:** $ **decreases** at lower gross weights ( = V_S \\sqrt{n}$).",
+      "references": [
+        "FAA Special Airworthiness Information Bulletin CE-11-17 • EASA CS 25.335"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "NJ-AERO-036",
+    "subject_id": "netjets-interview",
+    "learning_objective": "V-Speeds: Crossover Altitude (HX) Mechanics in Jet Climb Profile",
+    "stem": "During a standard high-performance jet climb conducted at a constant Calibrated Airspeed (CAS) until reaching the planned cruise Mach number, what occurs at the Crossover Altitude (HX)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The True Airspeed (TAS) drops to zero while indicated airspeed doubles.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "The specified CAS and the specified Mach number represent the exact same True Airspeed (TAS); above this altitude, the climb profile transitions from constant CAS to constant Mach number.",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "The aircraft enters reverse command where increasing thrust causes immediate deceleration.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "The cabin pressurization system switches from bleed air to ambient atmospheric ram air.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🚀 Crossover Altitude (HX)\n* **Climb Dynamics:** During climb at constant CAS, Mach number increases continuously with decreasing temperature and density. At the crossover altitude (typically FL270–FL310), target CAS and target Mach yield the same True Airspeed ($).\n* **Transition:** Above $, the flight crew/autopilot flies a **constant Mach number** to prevent exceeding {MO}$.",
+      "references": [
+        "EASA ATPL Principles of Flight • Jet Transport Performance Manual"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-AERO-037",
+    "subject_id": "netjets-interview",
+    "learning_objective": "V-Speeds: VMO vs MMO Operating Limits",
+    "stem": "What physical factors define VMO (Maximum Operating Speed) versus MMO (Maximum Operating Mach Number) on transport category aircraft?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VMO is governed by structural dynamic pressure (q = 1/2 rho V^2) at lower altitudes, whereas MMO is governed by compressibility shockwave formation and transonic stability at higher altitudes.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "VMO is a tire limit for landing roll while MMO is an engine turbine RPM limit.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "VMO applies only with flaps extended while MMO applies strictly in clean configuration.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "MMO is always lower than VMO in indicated airspeed at sea level.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⚡ VMO vs MMO\n* **VMO (Knots CAS):** Protects against excessive aerodynamic dynamic pressure ( = \\frac{1}{2} \\rho V^2$) and structural gust loads at low and medium altitudes.\n* **MMO (Mach Number):** Protects against transonic shockwave formation, Mach tuck, control buzz, and shock-induced boundary layer separation at high altitudes.",
+      "references": [
+        "EASA CS 25.1505 • FAA 14 CFR 25.1505"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-AERO-038",
+    "subject_id": "netjets-interview",
+    "learning_objective": "V-Speeds: VMCL (Minimum Control Speed Landing) Operational Significance",
+    "stem": "What does VMCL ensure during an asymmetric balked landing or missed approach in transport category jets?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It ensures the aircraft can maintain directional and lateral control in the landing configuration with the critical engine inoperative when maximum go-around thrust is applied.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "It defines the minimum glidepath angle required for autoland operations in CAT IIIB.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "It represents the minimum runway length required to perform a touch-and-go training exercise.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "It is the maximum crosswind velocity allowed for landing with flaps fully retracted.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛬 VMCL (Minimum Control Speed Landing - CS 25.149(f))\n* **Purpose:** Ensures that if a missed approach / go-around is initiated from the landing flare with landing flaps and one engine inoperative at full go-around thrust, aerodynamic control is maintained without roll-off or loss of directional heading.",
+      "references": [
+        "EASA CS 25.149(f) • CS 25.107"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "NJ-AERO-039",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Aerodynamics: CS 25.251 High Altitude Mach Buffet Margin (1.3g)",
+    "stem": "Under EASA CS 25.251, what operational buffet-free maneuver capability is required at the cruising altitude, and why is this margin critical?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The aircraft must be capable of a 1.3g load factor (equivalent to a 40-degree coordinated bank turn) without encountering low-speed stall buffet or high-speed Mach buffet.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "The aircraft must be able to perform a 2.5g pull-up maneuver at MMO in severe turbulence.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "A minimum speed buffer of 50 knots CAS must separate stall warning from maximum gear operating speed.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "The aircraft must maintain level flight with zero thrust for at least 15 minutes.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🌪️ CS 25.251 High Altitude Buffet Margin\n* **1.3g Margin:** Transport jets must demonstrate a minimum buffet-free margin of **1.3g** at certified cruise levels.\n* **Why 1.3g?** A coordinated steady turn at **39.7° bank angle** (approx 40°) produces an apparent load factor  = 1 / \\cos(40^\\circ) \\approx 1.305g$. This guarantees safe maneuvering in turbulence and mountain wave encounters without stalling or entering Mach buffet.",
+      "references": [
+        "EASA CS 25.251 • ICAO Doc 8168"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    }
+  },
+  {
+    "id": "NJ-AERO-040",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Aerodynamics: VX vs VY Variation with Altitude",
+    "stem": "How do Best Angle of Climb speed (VX) and Best Rate of Climb speed (VY) change as a jet aircraft ascends towards its absolute ceiling?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VX increases slightly in indicated airspeed while VY decreases, until they converge to the exact same speed at the absolute ceiling.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Both VX and VY decrease linearly to zero at the service ceiling.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "VX decreases rapidly while VY increases, widening the speed gap between them at high altitudes.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "VX and VY remain entirely unchanged in indicated airspeed at all altitudes.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 📈 VX vs VY Altitude Variation\n* **VX (Max Excess Thrust):** Slightly increases in Indicated/Calibrated Airspeed with altitude due to thrust lapse characteristics.\n* **VY (Max Excess Power):** Decreases in Indicated/Calibrated Airspeed with altitude.\n* **Convergence:** At the **Absolute Ceiling** (where climb rate = 0 ft/min),  = V_Y$.",
+      "references": [
+        "EASA ATPL Principles of Flight • Aerodynamics for Naval Aviators"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
   }
 ]

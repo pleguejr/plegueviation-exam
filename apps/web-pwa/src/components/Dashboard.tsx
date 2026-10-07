@@ -40,7 +40,7 @@ import { loadAllQuestions, loadManifest } from '../services/questionsService';
 import { getAllStatsMap, getExamHistory, db } from '../services/db';
 import { filterFlashcards } from '../utils/flashcardFilter';
 import { OperationalEventsPanel } from './OperationalEventsPanel';
-import { ComunicadosOpsPanel } from './ComunicadosOpsPanel';
+import { AuditModificationsPanel } from './AuditModificationsPanel';
 
 interface DashboardProps {
   onStartConfiguredExam: (params: {
@@ -437,8 +437,8 @@ export const Dashboard: React.FC<DashboardProps> = ({
         }}
       />
 
-      <ComunicadosOpsPanel
-        onBankCreated={() => {
+      <AuditModificationsPanel
+        onUpdate={() => {
           loadData();
         }}
       />

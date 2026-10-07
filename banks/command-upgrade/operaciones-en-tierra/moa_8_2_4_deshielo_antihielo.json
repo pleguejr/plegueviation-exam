@@ -7,22 +7,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Solo es necesario limpiar las ventanillas de la cabina de pasajeros",
-        "is_correct": false
+        "text": "Concepto de Avión Limpio (Clean Aircraft Concept): ninguna aeronave despegará si sus superficies críticas presentan hielo, nieve, escarcha o cellisca.",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "El avión puede despegar con hielo siempre que la temperatura exterior sea superior a -5°C",
+        "text": "Se autoriza el despegue con hasta 10 mm de nieve húmeda en las alas si la temperatura supera los +2°C.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Ninguna aeronave debe iniciar el despegue si tiene hielo, nieve, escarcha o aguanieve adheridos a las alas, superficies de control, estabilizadores, entradas de motor o superficies críticas",
-        "is_correct": true
+        "text": "Se autoriza el despegue con hielo en los estabilizadores siempre que los motores tengan antihielo activo.",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "Se permite despegar con hasta 5 cm de nieve sobre las alas si los motores están calientes",
+        "text": "El concepto solo aplica a los parabrisas de cabina y a los tubos pitot del sistema anemométrico.",
         "is_correct": false
       }
     ],
@@ -44,22 +44,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Es el tiempo total que dura el vuelo de crucero hasta el destino",
+        "text": "El HOT comienza en el momento en que finaliza la aplicación del fluido antihielo sobre la última superficie.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Es el tiempo estimado que el fluido previene la formación de hielo/nieve en superficies tratadas; comienza a contar en el momento exacto en que se INICIA la aplicación del último paso de fluido",
+        "text": "El HOT comienza exactamente al inicio de la aplicación del fluido antihielo (segundo paso en procedimiento de dos pasos).",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "Comienza a contar cuando el avión suelta los frenos de estacionamiento",
+        "text": "El HOT comienza al encender los motores del avión tras la salida del camión de deshielo.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Comienza cuando el personal de tierra termina de guardar las mangueras de deshielo",
+        "text": "El HOT comienza cuando la aeronave se alinea en la cabecera de la pista para iniciar la carrera de despegue.",
         "is_correct": false
       }
     ],
@@ -340,7 +340,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Una capa de escarcha fina de hasta **3 mm (1/8 de pulgada)** localizada exclusivamente en el **intradós alar por debajo de los depósitos de combustible**, siempre que el extradós, bordes de ataque y mandos estén 100% limpios",
+        "text": "Una capa de escarcha fina de hasta 3 mm (1/8 de pulgada) localizada exclusivamente en el intradós alar por debajo de los depósitos de combustible, siempre que el extradós, bordes de ataque y mandos estén 100% limpios",
         "is_correct": true
       },
       {
@@ -414,7 +414,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Una temperatura mínima de **60°C (140°CF) en la boquilla**, garantizando que llegue al ala al menos a 60°C para fundir el hielo por choque térmico",
+        "text": "Una temperatura mínima de 60°C (140°CF) en la boquilla, garantizando que llegue al ala al menos a 60°C para fundir el hielo por choque térmico",
         "is_correct": true
       },
       {
@@ -641,7 +641,7 @@
       },
       {
         "id": "B",
-        "text": "En posición completamente recogida (**Flaps 0° / Flaps UP**) para evitar que el fluido y los residuos contaminados se acumulen en los carriles, actuadores y mecanismos hipersustentadores",
+        "text": "En posición completamente recogida (Flaps 0° / Flaps UP) para evitar que el fluido y los residuos contaminados se acumulen en los carriles, actuadores y mecanismos hipersustentadores",
         "is_correct": true
       },
       {
@@ -1847,6 +1847,80 @@
     },
     "metadata": {
       "difficulty": 0.2
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-051",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4 - Características de los Fluidos de Deshielo y Antihielo (Tipo I vs Tipo II/IV)",
+    "stem": "¿Cuál es la principal diferencia funcional entre los fluidos de Tipo I y los fluidos de Tipo II o IV utilizados en el tratamiento de aeronaves en tierra?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El Tipo I es un fluido no espesado de desescarche térmico con HOT muy corto; los Tipos II y IV contienen polímeros espesantes que protegen contra la recontaminación con HOT prolongado.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El Tipo I solo se aplica a los neumáticos y tren de aterrizaje, mientras que el Tipo IV se utiliza exclusivamente en los parabrisas.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El Tipo I permanece adherido al ala durante todo el vuelo hasta el aterrizaje, mientras que el Tipo IV se desprende a 50 nudos.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Los fluidos Tipo II y IV no pueden utilizarse en reactores porque impiden el despliegue de los slats y flaps.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ❄️ MOA 8.2.4: Clasificación de Fluidos Deshielo/Antihielo\n* **Tipo I (Naranja/Rojo):** No espesado, aplicado en caliente (60°C–80°C) para eliminar hielo acumulado (De-icing). Tiempo de protección (HOT) muy breve.\n* **Tipo II / IV (Verde/Amarillo):** Fluidos espesados pseudoplásticos. Forman una película protectora que absorbe las precipitaciones heladas hasta el despegue, desprendiéndose aerodinámicamente (shear-off) a partir de ~100 kt.",
+      "references": [
+        "MOA Binter 8.2.4 • EASA Part-CAT.OP.MPA.250 • ICAO Doc 9640"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "CMD-MOA-ICE-052",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4 - Pre-takeoff Check vs Pre-takeoff Contamination Check",
+    "stem": "¿Cuándo es obligatorio realizar una Verificación de Contaminación Previa al Despegue (Pre-takeoff Contamination Check) según el MOA 8.2.4?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cuando se ha superado el Holdover Time (HOT) o las condiciones meteorológicas han empeorado, requiriendo una inspección visual y táctil cercana de las superficies críticas.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Siempre que la temperatura exterior en pista sea superior a +15°C durante un vuelo diurno.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Únicamente si la tripulación de cabina de pasajeros lo solicita durante el rodaje a la pista.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "De manera rutinaria en todos los vuelos independientemente de si hay precipitación engelante o no.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🔍 MOA 8.2.4: Verificaciones Previas al Despegue\n* **Pre-takeoff Check:** Verificación normal realizada desde la cabina de vuelo dentro del tiempo de protección (HOT) antes de iniciar el despegue.\n* **Pre-takeoff Contamination Check:** Inspección exhaustiva y cercana (desde la cabina de pasajeros o en el exterior) obligatoria si el **HOT ha expirado** o si las condiciones de engelamiento exceden los límites del fluido.",
+      "references": [
+        "MOA Binter 8.2.4 • CAT.OP.MPA.250"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
     }
   }
 ]

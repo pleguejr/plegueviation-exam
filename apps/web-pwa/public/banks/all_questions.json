@@ -16340,22 +16340,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Clase 1: Explosivos | Clase 2: Gases | Clase 3: Líquidos inflamables | Clase 4: Sólidos inflamables | Clase 5: Comburentes y peróxidos | Clase 6: Tóxicos e infecciosos | Clase 7: Radiactivos | Clase 8: Corrosivos | Clase 9: Mercancías diversas",
+        "text": "Clase 1: Explosivos | Clase 2: Gases | Clase 3: Líquidos inflamables | Clase 4: Sólidos inflamables | Clase 5: Comburentes y peróxidos | Clase 6: Tóxicos e infecciosos | Clase 7: Radiactivos | Clase 8: Corrosivos | Clase 9: Mercancías diversas.",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "No existen 9 clases siendo solo dos: permitidas o prohibidas",
+        "text": "Clase 1: Líquidos | Clase 2: Sólidos | Clase 3: Gases | Clase 4: Polvos | Clase 5: Químicos | Clase 6: Ácidos | Clase 7: Armas | Clase 8: Baterías | Clase 9: Embalajes.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Clase 1 a 9 clasificadas únicamente por el color del embalaje exterior",
+        "text": "Clase 1: Baja peligrosidad | Clase 2: Media peligrosidad | Clase 3: Alta peligrosidad | Clase 4: Carga perecedera | Clase 5 a 9: No clasificadas.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Clase 1: Alimentos | Clase 2: Animales | Clase 3: Maletas | Clase 4: Pasajeros | Clase 5: Combustible | Clase 6: Aceite | Clase 7: Agua | Clase 8: Hielo | Clase 9: Ropa",
+        "text": "Clase 1: Material rodante | Clase 2: Mercancía pesada | Clase 3: Carga refrigerada | Clase 4: Correo | Clase 5 a 9: Carga general consolidada.",
         "is_correct": false
       }
     ],
@@ -16379,22 +16379,22 @@
     "options": [
       {
         "id": "A",
-        "text": "La factura comercial del transporte de carga",
+        "text": "El manifiesto de pasajeros y el plano de asientos entregado por el agente de pasaje.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "El billete de avión de los pasajeros de la fila 1",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "La Notificación al Comandante (**NOTOC - Notification to Captain**), detallando el número UN, nombre de expedición, clase, cantidad neta, ubicación en bodega y grupo de embalaje",
+        "text": "La Notificación por Escrito al Comandante (NOTOC - Notification to Captain) detallando el número UN, nombre de expedición, clase, cantidad y ubicación.",
         "is_correct": true
       },
       {
+        "id": "C",
+        "text": "La factura comercial de aduanas y el conocimiento de embarque marítimo de la carga.",
+        "is_correct": false
+      },
+      {
         "id": "D",
-        "text": "No se entrega ningún documento bastando una señal visual desde la pista",
+        "text": "El albarán de entrega provisional de repostaje emitido por el operador de combustible.",
         "is_correct": false
       }
     ],
@@ -16418,22 +16418,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Grupo de Embalaje I (PG I): **Gran peligro** | Grupo de Embalaje II (PG II): **Peligro medio** | Grupo de Embalaje III (PG III): **Peligro menor**",
+        "text": "Grupo de Embalaje I (Gran peligro), Grupo de Embalaje II (Peligro medio) y Grupo de Embalaje III (Peligro menor).",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Los grupos indican el tamaño de la caja en metros cúbicos",
+        "text": "Grupo de Embalaje I (Carga en cabina), Grupo de Embalaje II (Bodega delantera) y Grupo de Embalaje III (Bodega trasera).",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Grupo I es el más seguro y Grupo III el más peligroso",
+        "text": "Grupo de Embalaje I (Menor peligro), Grupo de Embalaje II (Peligro medio) y Grupo de Embalaje III (Máximo peligro).",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Los grupos indican si el paquete viaja en cabina o en bodega",
+        "text": "Grupo de Embalaje I (Peso hasta 10 kg), Grupo II (Hasta 50 kg) y Grupo III (Superior a 100 kg).",
         "is_correct": false
       }
     ],
@@ -16457,23 +16457,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Las armas pueden viajar cargadas en el bolsillo del pasajero",
+        "text": "Máximo 15 kg de munición por pasajero transportada como equipaje de mano en la cabina.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Está prohibido el transporte de cualquier cartucho bajo cualquier circunstancia",
-        "is_correct": false
+        "text": "Máximo 5 kg de peso bruto por pasajero de munición de la División 1.4S para uso deportivo en bodega facturada, con aprobación del operador.",
+        "is_correct": true
       },
       {
         "id": "C",
-        "text": "Hasta 50 kg de explosivos en cabina de pasajeros",
+        "text": "Cualquier cantidad de cartuchos siempre que viajen dentro del cargador del arma en el bolsillo.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Máximo **5 kg de peso bruto por pasajero** de munición de la División 1.4S (cartuchería deportiva), exclusivamente en bodega, en su embalaje original seguro y sin mezclar con bultos de otros pasajeros",
-        "is_correct": true
+        "text": "Prohibición absoluta de transportar munición de cualquier calibre en vuelos comerciales.",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -16496,22 +16496,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Se permite llevar 50 Power Banks por pasajero en cualquier lugar",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "Deben transportarse **exclusivamente en el equipaje de mano / cabina de pasajeros** (máximo 100 Wh o hasta 160 Wh con permiso), estando **terminantemente prohibidas en el equipaje facturado en bodega**",
+        "text": "Deben transportarse exclusivamente en el equipaje de mano / cabina y protegidas contra cortocircuitos, prohibiéndose en equipaje facturado en bodega.",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "Deben facturarse obligatoriamente en el equipaje de bodega dentro de bolsas herméticas de plástico.",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "Pueden facturarse en bodega siempre que estén descargadas al 0%",
+        "text": "Pueden transportarse indistintamente en bodega o en cabina sin limitación de capacidad en vatios-hora.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Deben transportarse en el fondo de las maletas facturadas en bodega",
+        "text": "Están completamente prohibidas a bordo tanto en cabina como en equipaje facturado.",
         "is_correct": false
       }
     ],
@@ -16706,7 +16706,7 @@
       },
       {
         "id": "D",
-        "text": "En un plazo máximo no superior a **72 horas** a través del sistema de notificación obligatoria de sucesos (ASR / MOR), salvo accidente que exige reporte inmediato",
+        "text": "En un plazo máximo no superior a 72 horas a través del sistema de notificación obligatoria de sucesos (ASR / MOR), salvo accidente que exige reporte inmediato",
         "is_correct": true
       }
     ],
@@ -16808,7 +16808,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Líquidos que desprenden vapores inflamables a temperaturas iguales o inferiores a **60°C en ensayo de copa cerrada (Flash Point ≤ 60°C)**",
+        "text": "Líquidos que desprenden vapores inflamables a temperaturas iguales o inferiores a 60°C en ensayo de copa cerrada (Flash Point ≤ 60°C)",
         "is_correct": true
       },
       {
@@ -16930,7 +16930,7 @@
       },
       {
         "id": "B",
-        "text": "Descargar extintor de agua o halón para extinguir las llamas y a continuación **verter abundante agua u otros líquidos no alcohólicos** para enfriar las celdas de la batería y frenar la fuga térmica",
+        "text": "Descargar extintor de agua o halón para extinguir las llamas y a continuación verter abundante agua u otros líquidos no alcohólicos para enfriar las celdas de la batería y frenar la fuga térmica",
         "is_correct": true
       },
       {
@@ -17125,7 +17125,7 @@
       },
       {
         "id": "B",
-        "text": "Exclusivamente en el equipaje de mano o en persona, estando **prohibida su recarga y uso a bordo**, y prohibido su transporte en el equipaje facturado en bodega",
+        "text": "Exclusivamente en el equipaje de mano o en persona, estando prohibida su recarga y uso a bordo, y prohibido su transporte en el equipaje facturado en bodega",
         "is_correct": true
       },
       {
@@ -17281,7 +17281,7 @@
       },
       {
         "id": "B",
-        "text": "Están **totalmente prohibidos como equipaje de mano y facturado**, salvo que estén completamente desactivados y certificados formalmente por el fabricante",
+        "text": "Están totalmente prohibidos como equipaje de mano y facturado, salvo que estén completamente desactivados y certificados formalmente por el fabricante",
         "is_correct": true
       },
       {
@@ -17398,7 +17398,7 @@
       },
       {
         "id": "B",
-        "text": "Un máximo total de **5 litros por persona**, contenidas en recipientes comerciales sellados de venta al público",
+        "text": "Un máximo total de 5 litros por persona, contenidas en recipientes comerciales sellados de venta al público",
         "is_correct": true
       },
       {
@@ -17476,7 +17476,7 @@
       },
       {
         "id": "B",
-        "text": "Durante un periodo mínimo no inferior a **3 meses (o 12 meses según el requisito de calidad de la compañía)** a disposición de los inspectores de AESA",
+        "text": "Durante un periodo mínimo no inferior a 3 meses (o 12 meses según el requisito de calidad de la compañía) a disposición de los inspectores de AESA",
         "is_correct": true
       },
       {
@@ -17944,7 +17944,7 @@
       },
       {
         "id": "B",
-        "text": "Hasta **dos cartuchos pequeños instalados en el chaleco y hasta dos cartuchos de repuesto**, con permiso de la compañía",
+        "text": "Hasta dos cartuchos pequeños instalados en el chaleco y hasta dos cartuchos de repuesto, con permiso de la compañía",
         "is_correct": true
       },
       {
@@ -18027,7 +18027,7 @@
       },
       {
         "id": "C",
-        "text": "Un máximo de **2.5 kg de Hielo Seco por pasajero**, en un embalaje que permita la liberación del gas CO2 (no hermético) y debidamente marcado con la leyenda 'DRY ICE 2.5 KG'",
+        "text": "Un máximo de 2.5 kg de Hielo Seco por pasajero, en un embalaje que permita la liberación del gas CO2 (no hermético) y debidamente marcado con la leyenda 'DRY ICE 2.5 KG'",
         "is_correct": true
       },
       {
@@ -18061,7 +18061,7 @@
       },
       {
         "id": "B",
-        "text": "La Lista de Comprobación para la Aceptación de Mercancías Peligrosas (**IATA Dangerous Goods Acceptance Checklist**), comprobando documentación, embalaje, etiquetas y marcas",
+        "text": "La Lista de Comprobación para la Aceptación de Mercancías Peligrosas (IATA Dangerous Goods Acceptance Checklist), comprobando documentación, embalaje, etiquetas y marcas",
         "is_correct": true
       },
       {
@@ -18110,7 +18110,7 @@
       },
       {
         "id": "D",
-        "text": "La batería de litio debe ser extraíble y debe ser **retirada de la maleta por el pasajero y transportada en la cabina de pasaje** antes de facturar el equipaje",
+        "text": "La batería de litio debe ser extraíble y debe ser retirada de la maleta por el pasajero y transportada en la cabina de pasaje antes de facturar el equipaje",
         "is_correct": true
       }
     ],
@@ -18278,6 +18278,123 @@
     },
     "metadata": {
       "difficulty": 0.2
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "mercancias-peligrosas-y-seguridad"
+  },
+  {
+    "id": "CMD-MOA-DGR-051",
+    "subject_id": "moa_mercancias_peligrosas_armas",
+    "learning_objective": "MOA 9.1.2.1.7.4 - Contenido Obligatorio del Documento NOTOC",
+    "stem": "Según el MOA 9.1.2.1.7.4 y el Doc 9284 de OACI, ¿cuál de los siguientes conjuntos de datos debe figurar obligatoriamente en el NOTOC entregado al Comandante?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Número UN, Nombre Apropiado de Expedición, Clase o División, Grupo de Embalaje, cantidad neta por bulto, ubicación en bodega y Código de Emergencia ICAO ERG.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Nombre del fabricante del producto químico, teléfono particular del expedidor y precio en factura.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Únicamente el peso total en kilogramos y el color de la caja de embalaje exterior.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Número de pasaporte del conductor del camión de transporte terrestre hasta el aeropuerto.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 📋 MOA 9.1.2.1.7.4: Contenido del NOTOC\n* **Datos Obligatorios:**\n  1. Fecha y número de vuelo / Guía Aérea (AWB).\n  2. Número ONU (UN Number) y Nombre Apropiado de Expedición (Proper Shipping Name).\n  3. Clase o División de riesgo y riesgos secundarios.\n  4. Grupo de Compatibilidad (en Clase 1).\n  5. Grupo de Embalaje (PG I, II o III).\n  6. Número de bultos y masa neta / volumen por bulto.\n  7. Ubicación exacta en el compartimento de carga (Bodega delantera/trasera, posición).\n  8. Código de Respuesta de Emergencia ICAO (Drill Code).",
+      "references": [
+        "MOA Binter 9.1.2.1.7.4 • OACI Doc 9284"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "mercancias-peligrosas-y-seguridad"
+  },
+  {
+    "id": "CMD-MOA-DGR-052",
+    "subject_id": "moa_mercancias_peligrosas_armas",
+    "learning_objective": "MOA 9.1.2.1.7.4 - Custodia y Firma del NOTOC por el Comandante y Handling",
+    "stem": "¿Cuál es el procedimiento de firma y conservación del NOTOC en la escala de salida según el MOA 9.1.2.1.7.4?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El Comandante firma el NOTOC, conservando una copia en vuelo; el agente de rampa retiene una copia firmada en tierra que se custodia durante al menos 3 meses.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El NOTOC es un documento puramente informativo que no requiere firma ni archivo en tierra.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El Comandante debe destruir el NOTOC inmediatamente después del aterrizaje en el aeropuerto de destino.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La copia del NOTOC se entrega a la policía de fronteras antes de cerrar las puertas de la aeronave.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✍️ MOA 9.1.2.1.7.4: Firma y Archivo del NOTOC\n* **Firma:** El Comandante debe firmar el NOTOC reconociendo haber sido informado de las mercancías peligrosas embarcadas.\n* **Copias:** Una copia viaja en el avión en posesión de la tripulación; otra copia firmada permanece en tierra archivada por la compañía / agente de handling durante al menos **3 meses**.",
+      "references": [
+        "MOA Binter 9.1.2.1.7.4 • MOA 2.1"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "mercancias-peligrosas-y-seguridad"
+  },
+  {
+    "id": "CMD-MOA-DGR-053",
+    "subject_id": "moa_mercancias_peligrosas_armas",
+    "learning_objective": "MOA 9.1.4 - Notificación a los Servicios de Tránsito Aéreo (ATS) en Emergencia",
+    "stem": "En caso de emergencia en vuelo (humo en bodega, fuego o fallo grave), ¿qué obligación tiene el Comandante respecto a las mercancías peligrosas según el MOA y el Doc 9481 de OACI?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Informar a la dependencia ATS correspondiente sobre la presencia de mercancías peligrosas a bordo, transmitiendo su número UN, clase, cantidad, ubicación en bodega y código drill ICAO.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mantener la información de mercancías peligrosas en secreto para evitar alarma en los servicios de control.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Esperar a haber aterrizado y desalojado el avión antes de mencionar la carga al servicio de bomberos.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Contactar telefónicamente con el expedidor de la mercancía antes de comunicar la emergencia a ATC.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🚨 Notificación a ATS en Emergencia (Doc 9481 / MOA 9)\n* **Obligación del Comandante:** Tan pronto como la carga de trabajo lo permita, informar a ATC de las mercancías peligrosas a bordo (número UN, clase/división, ubicación en bodega y código de respuesta a emergencias ERG).\n* **Propósito:** Permitir que los servicios de extinción de incendios del aeródromo (RFFS / SEI) preparen los agentes extintores adecuados y las medidas de aislamiento químico/radiológico.",
+      "references": [
+        "MOA Binter 9.1 • OACI Doc 9481 (Emergency Response Guidance)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
     },
     "_category": "command-upgrade",
     "_subtopic": "mercancias-peligrosas-y-seguridad"
@@ -19859,22 +19976,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Bajo la responsabilidad exclusiva del conductor del camión cisterna sin intervención de los pilotos",
+        "text": "Bajo la responsabilidad exclusiva del operador de la empresa de suministro en plataforma.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Bajo la responsabilidad de la policía local del municipio aeroportuario",
+        "text": "Bajo la responsabilidad directa del despachador de operaciones de vuelo en tierra.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Bajo la responsabilidad del agente de facturación del mostrador de la terminal",
+        "text": "Bajo la responsabilidad del supervisor de rampa del agente de asistencia en tierra.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Quedan bajo la responsabilidad del Comandante, quien debe especificar la cantidad a cargar en kilos y verificar el tipo de combustible JET A-1 antes de iniciar el suministro",
+        "text": "Bajo la responsabilidad del Comandante, quien debe verificar la cantidad requerida y el tipo de combustible JET A-1.",
         "is_correct": true
       }
     ],
@@ -19898,23 +20015,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Gasóleo de automoción tipo A para motores diésel",
+        "text": "Gasolina de aviación de alto octanaje AVGAS 100LL con aditivo tetraetilo de plomo.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Gasolina de aviación con plomo AVGAS 100LL",
-        "is_correct": false
+        "text": "Combustible de aviación tipo queroseno JET A-1 según especificación ASTM D1655 / DEF STAN 91-091.",
+        "is_correct": true
       },
       {
         "id": "C",
-        "text": "Alcohol etílico desnaturalizado sin aditivos anticongelantes",
+        "text": "Queroseno de amplio corte de destilación tipo JET B para operaciones en frío extremo.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Combustible de aviación tipo queroseno **JET A-1** (especificación ASTM D1655 / DEF STAN 91-091)",
-        "is_correct": true
+        "text": "Biocombustible sintético puro al 100% sin mezclar con queroseno de aviación fósil.",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -19937,22 +20054,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Conectar el cable equipotencial al avión ANTES de retirar los tapones o acoplar la manguera, y desconectarlo DESPUÉS de haber desacoplado la manguera y cerrado las válvulas",
+        "text": "Conectar el cable equipotencial al avión antes de abrir tapas o conectar mangueras, y desconectarlo tras cerrar válvulas y desconectar mangueras.",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Conectar el cable a la antena de comunicaciones de cabina después de terminar el repostaje",
+        "text": "Conectar el cable equipotencial tras finalizar el llenado de los depósitos principales y retirarlo antes de guardar la manguera.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Conectar el cable únicamente si se observan chispas durante el bombeo de queroseno",
+        "text": "Conectar el cable equipotencial exclusivamente al terminar el suministro para descargar la electricidad estática acumulada.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No es necesario conectar ningún cable si el camión cisterna lleva neumáticos de goma",
+        "text": "Conectar el cable equipotencial a la pata de morro únicamente durante el bombeo a presión superior a 50 psi.",
         "is_correct": false
       }
     ],
@@ -19976,7 +20093,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Un radio de seguridad de al menos **6 metros (o 15 metros / 50 pies)** alrededor de las bocas de llenado, salidas de venteo de depósitos y del vehículo cisterna",
+        "text": "Un radio de seguridad de al menos 6 metros (o 15 metros / 50 pies) alrededor de las bocas de llenado, salidas de venteo de depósitos y del vehículo cisterna",
         "is_correct": true
       },
       {
@@ -20264,7 +20381,7 @@
       },
       {
         "id": "D",
-        "text": "Señales de **'NO FUMAR' (No Smoking) ENCENDIDAS** y señales de **'ABROCHAR CINTURONES' (Fasten Seatbelts) APAGADAS**",
+        "text": "Señales de 'NO FUMAR' (No Smoking) ENCENDIDAS y señales de 'ABROCHAR CINTURONES' (Fasten Seatbelts) APAGADAS",
         "is_correct": true
       }
     ],
@@ -20288,7 +20405,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Mantener los cinturones de seguridad **DESABROCHADOS**, no fumar, y dejar los pasillos y accesos a salidas libres de maletas y obstáculos",
+        "text": "Mantener los cinturones de seguridad DESABROCHADOS, no fumar, y dejar los pasillos y accesos a salidas libres de maletas y obstáculos",
         "is_correct": true
       },
       {
@@ -20498,7 +20615,7 @@
       },
       {
         "id": "D",
-        "text": "Una presión máxima de suministro de **50 psi (3.45 bar / 345 kPa)** para evitar sobrepresiones estructurales en depósitos y tuberías alares",
+        "text": "Una presión máxima de suministro de 50 psi (3.45 bar / 345 kPa) para evitar sobrepresiones estructurales en depósitos y tuberías alares",
         "is_correct": true
       }
     ],
@@ -20605,7 +20722,7 @@
       },
       {
         "id": "B",
-        "text": "Entre **0.775 kg/L y 0.840 kg/L** (con un valor estándar nominal típico de 0.800 kg/L a 15°C)",
+        "text": "Entre 0.775 kg/L y 0.840 kg/L (con un valor estándar nominal típico de 0.800 kg/L a 15°C)",
         "is_correct": true
       },
       {
@@ -20717,7 +20834,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Al menos **3 metros (10 pies)** de separación de cualquier parte del equipo de repostaje y no transitar bajo las alas",
+        "text": "Al menos 3 metros (10 pies) de separación de cualquier parte del equipo de repostaje y no transitar bajo las alas",
         "is_correct": true
       },
       {
@@ -21802,6 +21919,123 @@
     "_subtopic": "operaciones-en-tierra"
   },
   {
+    "id": "CMD-MOA-GND-FUEL-051",
+    "subject_id": "moa_combustible_tierra",
+    "learning_objective": "MOA 8.2.1.2 - Reabastecimiento con Pasajeros Embarcando, Desembarcando o a Bordo",
+    "stem": "Según el MOA 8.2.1.2, ¿cuál es el requisito operacional obligatorio respecto a las salidas de emergencia y escaleras cuando se abastece combustible con pasajeros a bordo o en proceso de embarque/desembarque?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mantener al menos 2 salidas designadas abiertas o disponibles para evacuación inmediata con escaleras/pasarela operativas y libres de obstáculos.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mantener todas las salidas y puertas de servicio completamente selladas para evitar la entrada de vapores inflamables a la cabina.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Retirar todas las escaleras de rampa para evitar que los pasajeros desciendan sin autorización del personal de handling.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Designar únicamente la puerta trasera derecha como salida de emergencia obligatoria durante todo el abastecimiento.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⛽ MOA 8.2.1.2: Abastecimiento con Pasajeros a Bordo\n* **Salidas Requeridas:** Deben mantenerse al menos dos salidas designadas para evacuación (o puerta con pasarela/escalera y otra de servicio utilizable).\n* **Área Libre:** El área en tierra bajo las salidas debe mantenerse despejada de equipos de rampa.\n* **Luces y Señales:** Señales de CINTURONES APAGADOS (Fasten Seatbelts OFF) y NO FUMAR ENCENDIDAS (No Smoking ON).\n* **Interfonía:** Comunicación bidireccional continua entre la cabina de vuelo y el operador de combustible en tierra.",
+      "references": [
+        "MOA Binter 8.2.1.2 • CAT.OP.MPA.195"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "operaciones-en-tierra"
+  },
+  {
+    "id": "CMD-MOA-GND-FUEL-052",
+    "subject_id": "moa_combustible_tierra",
+    "learning_objective": "MOA 8.2.1.2.2 - Estado de Señales de Cabina durante el Repostaje con Pasajeros",
+    "stem": "¿Cómo deben configurarse las señales de pasajeros en cabina y las luces de emergencia durante el abastecimiento de combustible con pasajeros a bordo según el MOA 8.2.1.2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Señal de cinturones en OFF, señal de no fumar en ON y sistema de luces de emergencia armado.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Señal de cinturones en ON, señal de no fumar en OFF y luces de emergencia desarmadas.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Ambas señales (cinturones y no fumar) en ON con iluminación general de cabina apagada.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Señal de cinturones en AUTO, señal de no fumar en AUTO y luces de emergencia en TEST.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⛽ MOA 8.2.1.2: Señalización en Cabina durante Repostaje\n* **Cinturones:** OFF (los pasajeros NO deben tener los cinturones abrochados para facilitar una evacuación rápida).\n* **No Fumar:** ON (prohibición estricta de fumar o accionar dispositivos de llama/electrónicos).\n* **Luces de Emergencia:** ARM / ARMADAS para responder de inmediato ante una pérdida de energía.",
+      "references": [
+        "MOA Binter 8.2.1.2.2 • EASA CAT.OP.MPA.195"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "operaciones-en-tierra"
+  },
+  {
+    "id": "CMD-MOA-GND-FUEL-053",
+    "subject_id": "moa_combustible_tierra",
+    "learning_objective": "MOA 8.2.1.2.3 - Detección de Vapores de Combustible en Cabina de Pasajeros",
+    "stem": "Si durante el abastecimiento de combustible con pasajeros a bordo se detectan vapores de combustible o se sospecha de un derrame en plataforma, ¿cuál es la acción inmediata obligatoria según el MOA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ordenar la detención inmediata del abastecimiento, avisar a la tripulación técnica y preparar la cabina para una posible evacuación preventiva.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Continuar el repostaje aumentando la velocidad de bombeo para finalizar el proceso lo antes posible.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cerrar todas las puertas de la aeronave y encender el aire acondicionado a máxima potencia de recirculación.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Desconectar las baterías del avión sin comunicar la situación al personal de suministro de combustible.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛑 MOA 8.2.1.2.3: Fuga o Vapores durante el Repostaje\n* **Acción Inmediata:** Detener inmediatamente el bombeo de combustible.\n* **Coordinación:** Informar al Comandante/Tripulación Técnica y al personal de tierra.\n* **Seguridad Cabina:** Los TCPs deben preparar a los pasajeros para una evacuación rápida si los vapores no se disipan o existe riesgo inminente de ignición.",
+      "references": [
+        "MOA Binter 8.2.1.2.3"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "operaciones-en-tierra"
+  },
+  {
     "id": "CMD-MOA-GND-OPS-001",
     "subject_id": "moa_operaciones_tierra_rampa",
     "learning_objective": "MOA 8.2.2.1 - Asignación de Asientos en Filas de Salida de Emergencia",
@@ -21809,23 +22043,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Pilotos fuera de servicio de la compañía aérea",
+        "text": "Verificar la colocación de calzos en tren principal y de morro y coordinar la conexión de la GPU antes de apagar motores.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Cualquier pasajero varón mayor de 18 años con plenas facultades físicas",
-        "is_correct": false
+        "text": "Asegurar que el pin de bloqueo de dirección (Steering Bypass Pin) esté insertado y confirmar frenos sueltos por interfonía antes de iniciar el retroceso.",
+        "is_correct": true
       },
       {
         "id": "C",
-        "text": "Pasajeros que no hayan facturado equipaje en la bodega del avión",
+        "text": "Encender las luces de aterrizaje y conectar las bombas hidráulicas del sistema 3 antes del enganche de la barra.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "PMR, niños, bebés, menores no acompañados (UMNR), mujeres embarazadas, pasajeros deportados/inadmitidos, y personas que viajen con animales de compañía",
-        "is_correct": true
+        "text": "Mantener el freno de estacionamiento puesto durante todo el movimiento de empuje hasta llegar a la calle de rodaje.",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -21848,22 +22082,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Solo para bebés menores de 6 meses de edad",
-        "is_correct": false
+        "text": "Encender la luz anticolisión roja (Beacon) inmediatamente antes de arrancar motores o iniciar el pushback.",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "Exclusivamente para estudiantes universitarios con beca internacional",
+        "text": "Encender la luz de destellos estroboscópica blanca (Strobe) en cuanto se conecte la barra de remolque.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Obligatorio para menores desde **5 años cumplidos hasta 11 años** (opcional a petición de tutores legales de 12 a 17 años)",
-        "is_correct": true
+        "text": "Encender los faros de aterrizaje de morro durante todo el remolque por la plataforma.",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "Obligatorio para cualquier persona menor de 30 años",
+        "text": "Mantener todas las luces exteriores apagadas hasta alinearse en la pista de despegue.",
         "is_correct": false
       }
     ],
@@ -22014,7 +22248,7 @@
       },
       {
         "id": "C",
-        "text": "Binter Airlines **NO transporta pasajeros en camilla (STCR)** en sus vuelos regulares de pasaje",
+        "text": "Binter Airlines NO transporta pasajeros en camilla (STCR) en sus vuelos regulares de pasaje",
         "is_correct": true
       },
       {
@@ -22121,7 +22355,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Dimensiones máximas de **55 x 35 x 25 cm** y un peso máximo de **8 kg**, debiendo caber en los maleteros superiores o bajo el asiento",
+        "text": "Dimensiones máximas de 55 x 35 x 25 cm y un peso máximo de 8 kg, debiendo caber en los maleteros superiores o bajo el asiento",
         "is_correct": true
       },
       {
@@ -22170,7 +22404,7 @@
       },
       {
         "id": "C",
-        "text": "Animal en transportín homologado, ventilado y estanco (45 × 35 × 25 cm), con un peso total (animal + transportín) no superior a **8 kg**, colocado bajo el asiento delantero",
+        "text": "Animal en transportín homologado, ventilado y estanco (45 × 35 × 25 cm), con un peso total (animal + transportín) no superior a 8 kg, colocado bajo el asiento delantero",
         "is_correct": true
       },
       {
@@ -22248,7 +22482,7 @@
       },
       {
         "id": "C",
-        "text": "Un radio de peligro de succión de al menos **3 metros (10 pies)** delante y a los lados de la tobera de entrada a potencia de ralentí",
+        "text": "Un radio de peligro de succión de al menos 3 metros (10 pies) delante y a los lados de la tobera de entrada a potencia de ralentí",
         "is_correct": true
       },
       {
@@ -22287,7 +22521,7 @@
       },
       {
         "id": "C",
-        "text": "Al menos **30 metros (100 pies)** a potencia de ralentí (Idle), y al menos **60 a 100 metros (200-300 pies)** a empuje de despegue o aceleración en rampa",
+        "text": "Al menos 30 metros (100 pies) a potencia de ralentí (Idle), y al menos 60 a 100 metros (200-300 pies) a empuje de despegue o aceleración en rampa",
         "is_correct": true
       },
       {
@@ -23379,7 +23613,7 @@
       },
       {
         "id": "C",
-        "text": "Aproximadamente entre **10 y 5 minutos antes de la STD (STD-10 a STD-5)**, tras recibir la conformidad de pasaje a bordo y documentación firmada",
+        "text": "Aproximadamente entre 10 y 5 minutos antes de la STD (STD-10 a STD-5), tras recibir la conformidad de pasaje a bordo y documentación firmada",
         "is_correct": true
       },
       {
@@ -23747,6 +23981,123 @@
     },
     "metadata": {
       "difficulty": 0.2
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "operaciones-en-tierra"
+  },
+  {
+    "id": "CMD-MOA-GND-OPS-051",
+    "subject_id": "moa_operaciones_tierra_rampa",
+    "learning_objective": "MOA 8.2.2 - Procedimiento de Pushback y Señales de Desconexión del Personal de Tierra",
+    "stem": "¿Cuál es la señal obligatoria que el operador de tierra debe mostrar visualmente a la tripulación técnica tras finalizar el pushback y desconectar la barra de remolque?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mostrar en alto el pin de bloqueo del tren de morro (Steering Bypass Pin) con su cinta roja 'Remove Before Flight' y dar señal de 'Todo Libre'.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Agitar una linterna verde en círculo continuo hacia el motor izquierdo indicando puesta en marcha autorizada.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar la señal de brazos cruzados sobre la cabeza indicando corte inmediato de generadores eléctricos.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Retirarse directamente hacia la terminal sin necesidad de confirmación visual una vez desconectada la barra.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🚜 MOA 8.2.2: Desconexión de Pushback y Pin de Dirección\n* **Procedimiento:** El operador de tierra desconecta la barra y retira el Steering Bypass Pin.\n* **Confirmación Visual:** Debe situarse a la vista del Comandante (lado izquierdo habitualmente) y mostrar en alto el pin con su cinta roja, realizando la señal de 'Todo Libre / Pulgar hacia arriba'.\n* **Prohibición:** La tripulación técnica NO debe activar la dirección del tren de morro (Steering) hasta haber recibido la confirmación visual de pin retirado.",
+      "references": [
+        "MOA Binter 8.2.2 • IATA IGOM 4.6"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "operaciones-en-tierra"
+  },
+  {
+    "id": "CMD-MOA-GND-OPS-052",
+    "subject_id": "moa_operaciones_tierra_rampa",
+    "learning_objective": "MOA 8.2.2 - Zonas de Peligro por Ingestión de Motor (Intake) y Chorro de Gases (Jet Blast)",
+    "stem": "Durante la operación en rampa con motores en marcha al ralentí (Idle), ¿cuál es la precaución reglamentaria respecto a las zonas de peligro de los motores a reacción de la aeronave?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mantener despejada la zona de peligro de succión de la entrada de aire (Intake Danger Area) y el cono de riesgo de chorro trasero (Jet Blast Danger Area).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Permitir el tránsito de vehículos de catering a menos de 1 metro de la tobera de escape si el motor está al ralentí.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cargar equipaje por la compuerta delantera mientras el motor del lado opuesto acelera a potencia de despegue.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Desconectar la GPU únicamente cuando el motor número 1 haya alcanzado el 85% de N1 en el puesto.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⚠️ MOA 8.2.2: Áreas de Peligro de Motores en Rampa\n* **Intake Hazard Zone:** Zona semicircular frontal y lateral donde la baja presión puede succionar personas o restos de objetos extraños (FOD).\n* **Jet Blast Zone:** Cono posterior de alta velocidad y temperatura capaz de volcar vehículos o lesionar al personal de asistencia.",
+      "references": [
+        "MOA Binter 8.2.2 • AFM Section 2 Limitations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "operaciones-en-tierra"
+  },
+  {
+    "id": "CMD-MOA-GND-OPS-053",
+    "subject_id": "moa_operaciones_tierra_rampa",
+    "learning_objective": "MOA 8.2.2 - Encendido Cruzado de Motores (Crossbleed Start) en Plataforma",
+    "stem": "Antes de realizar una puesta en marcha cruzada (Crossbleed Engine Start) en tierra utilizando el motor operativo para arrancar el segundo motor, ¿qué requisito de seguridad debe cumplirse?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Asegurar que el área trasera esté completamente libre de personas, vehículos u obstáculos y aplicar freno de estacionamiento antes de acelerar el motor activo.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Desconectar todas las bombas de combustible de baja y alta presión del motor que va a arrancarse.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mantener las válvulas de sangrado de aire (Bleed Air Valves) de ambos motores en posición cerrada (OFF).",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar el arranque exclusivamente durante el rodaje en giros pronunciados de 90 grados.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⚙️ MOA 8.2.2 & SOP: Crossbleed Start en Tierra\n* **Presión Requerida:** El motor operativo debe acelerarse para proporcionar la presión mínima de sangrado de aire (Air Duct Pressure, típicamente ~30-40 psi).\n* **Seguridad en Rampa:** Al acelerar el motor operativo, el chorro trasero (Jet Blast) aumenta significativamente; por tanto, el área posterior debe estar completamente despejada y los frenos aplicados.",
+      "references": [
+        "MOA Binter 8.2.2 • AOM Normal Procedures"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
     },
     "_category": "command-upgrade",
     "_subtopic": "operaciones-en-tierra"
@@ -25709,22 +26060,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Solo es necesario limpiar las ventanillas de la cabina de pasajeros",
-        "is_correct": false
+        "text": "Concepto de Avión Limpio (Clean Aircraft Concept): ninguna aeronave despegará si sus superficies críticas presentan hielo, nieve, escarcha o cellisca.",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "El avión puede despegar con hielo siempre que la temperatura exterior sea superior a -5°C",
+        "text": "Se autoriza el despegue con hasta 10 mm de nieve húmeda en las alas si la temperatura supera los +2°C.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Ninguna aeronave debe iniciar el despegue si tiene hielo, nieve, escarcha o aguanieve adheridos a las alas, superficies de control, estabilizadores, entradas de motor o superficies críticas",
-        "is_correct": true
+        "text": "Se autoriza el despegue con hielo en los estabilizadores siempre que los motores tengan antihielo activo.",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "Se permite despegar con hasta 5 cm de nieve sobre las alas si los motores están calientes",
+        "text": "El concepto solo aplica a los parabrisas de cabina y a los tubos pitot del sistema anemométrico.",
         "is_correct": false
       }
     ],
@@ -25748,22 +26099,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Es el tiempo total que dura el vuelo de crucero hasta el destino",
+        "text": "El HOT comienza en el momento en que finaliza la aplicación del fluido antihielo sobre la última superficie.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Es el tiempo estimado que el fluido previene la formación de hielo/nieve en superficies tratadas; comienza a contar en el momento exacto en que se INICIA la aplicación del último paso de fluido",
+        "text": "El HOT comienza exactamente al inicio de la aplicación del fluido antihielo (segundo paso en procedimiento de dos pasos).",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "Comienza a contar cuando el avión suelta los frenos de estacionamiento",
+        "text": "El HOT comienza al encender los motores del avión tras la salida del camión de deshielo.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Comienza cuando el personal de tierra termina de guardar las mangueras de deshielo",
+        "text": "El HOT comienza cuando la aeronave se alinea en la cabecera de la pista para iniciar la carrera de despegue.",
         "is_correct": false
       }
     ],
@@ -26060,7 +26411,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Una capa de escarcha fina de hasta **3 mm (1/8 de pulgada)** localizada exclusivamente en el **intradós alar por debajo de los depósitos de combustible**, siempre que el extradós, bordes de ataque y mandos estén 100% limpios",
+        "text": "Una capa de escarcha fina de hasta 3 mm (1/8 de pulgada) localizada exclusivamente en el intradós alar por debajo de los depósitos de combustible, siempre que el extradós, bordes de ataque y mandos estén 100% limpios",
         "is_correct": true
       },
       {
@@ -26138,7 +26489,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Una temperatura mínima de **60°C (140°CF) en la boquilla**, garantizando que llegue al ala al menos a 60°C para fundir el hielo por choque térmico",
+        "text": "Una temperatura mínima de 60°C (140°CF) en la boquilla, garantizando que llegue al ala al menos a 60°C para fundir el hielo por choque térmico",
         "is_correct": true
       },
       {
@@ -26377,7 +26728,7 @@
       },
       {
         "id": "B",
-        "text": "En posición completamente recogida (**Flaps 0° / Flaps UP**) para evitar que el fluido y los residuos contaminados se acumulen en los carriles, actuadores y mecanismos hipersustentadores",
+        "text": "En posición completamente recogida (Flaps 0° / Flaps UP) para evitar que el fluido y los residuos contaminados se acumulen en los carriles, actuadores y mecanismos hipersustentadores",
         "is_correct": true
       },
       {
@@ -27647,6 +27998,84 @@
     },
     "metadata": {
       "difficulty": 0.2
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "operaciones-en-tierra"
+  },
+  {
+    "id": "CMD-MOA-ICE-051",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4 - Características de los Fluidos de Deshielo y Antihielo (Tipo I vs Tipo II/IV)",
+    "stem": "¿Cuál es la principal diferencia funcional entre los fluidos de Tipo I y los fluidos de Tipo II o IV utilizados en el tratamiento de aeronaves en tierra?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El Tipo I es un fluido no espesado de desescarche térmico con HOT muy corto; los Tipos II y IV contienen polímeros espesantes que protegen contra la recontaminación con HOT prolongado.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El Tipo I solo se aplica a los neumáticos y tren de aterrizaje, mientras que el Tipo IV se utiliza exclusivamente en los parabrisas.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El Tipo I permanece adherido al ala durante todo el vuelo hasta el aterrizaje, mientras que el Tipo IV se desprende a 50 nudos.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Los fluidos Tipo II y IV no pueden utilizarse en reactores porque impiden el despliegue de los slats y flaps.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ❄️ MOA 8.2.4: Clasificación de Fluidos Deshielo/Antihielo\n* **Tipo I (Naranja/Rojo):** No espesado, aplicado en caliente (60°C–80°C) para eliminar hielo acumulado (De-icing). Tiempo de protección (HOT) muy breve.\n* **Tipo II / IV (Verde/Amarillo):** Fluidos espesados pseudoplásticos. Forman una película protectora que absorbe las precipitaciones heladas hasta el despegue, desprendiéndose aerodinámicamente (shear-off) a partir de ~100 kt.",
+      "references": [
+        "MOA Binter 8.2.4 • EASA Part-CAT.OP.MPA.250 • ICAO Doc 9640"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "operaciones-en-tierra"
+  },
+  {
+    "id": "CMD-MOA-ICE-052",
+    "subject_id": "moa_deshielo_antihielo",
+    "learning_objective": "MOA 8.2.4 - Pre-takeoff Check vs Pre-takeoff Contamination Check",
+    "stem": "¿Cuándo es obligatorio realizar una Verificación de Contaminación Previa al Despegue (Pre-takeoff Contamination Check) según el MOA 8.2.4?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cuando se ha superado el Holdover Time (HOT) o las condiciones meteorológicas han empeorado, requiriendo una inspección visual y táctil cercana de las superficies críticas.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Siempre que la temperatura exterior en pista sea superior a +15°C durante un vuelo diurno.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Únicamente si la tripulación de cabina de pasajeros lo solicita durante el rodaje a la pista.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "De manera rutinaria en todos los vuelos independientemente de si hay precipitación engelante o no.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🔍 MOA 8.2.4: Verificaciones Previas al Despegue\n* **Pre-takeoff Check:** Verificación normal realizada desde la cabina de vuelo dentro del tiempo de protección (HOT) antes de iniciar el despegue.\n* **Pre-takeoff Contamination Check:** Inspección exhaustiva y cercana (desde la cabina de pasajeros o en el exterior) obligatoria si el **HOT ha expirado** o si las condiciones de engelamiento exceden los límites del fluido.",
+      "references": [
+        "MOA Binter 8.2.4 • CAT.OP.MPA.250"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
     },
     "_category": "command-upgrade",
     "_subtopic": "operaciones-en-tierra"
@@ -47477,22 +47906,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Peso total del avión incluyendo el combustible de contingencia y reserva final",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "Masa máxima permitida del avión sin combustible utilizable; protege la estructura del encastre alar contra momentos flectores excesivos",
+        "text": "El peso máximo estructural del avión con combustible cero en los depósitos, protegiendo la raíz alar contra momentos flectores excesivos.",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "El peso mínimo con el que un avión puede despegar de forma segura en condiciones de viento en calma.",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "Peso mínimo que debe tener el avión para evitar salir volando impulsado por el viento en rampa",
+        "text": "El peso total de los pasajeros y su equipaje de mano sin incluir la carga de pago facturada.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Límite de peso impuesto por el fabricante exclusivamente para el transporte de mercancías peligrosas",
+        "text": "El peso máximo al aterrizaje sumando la reserva final de combustible de 45 minutos.",
         "is_correct": false
       }
     ],
@@ -47516,22 +47945,22 @@
     "options": [
       {
         "id": "A",
-        "text": "La cancelación definitiva del plan de vuelo debiendo desembarcar a todos los pasajeros",
-        "is_correct": false
+        "text": "Un cambio de peso/pasajeros tras el cierre de la hoja de carga que puede anotarse manualmente si no supera las tolerancias reglamentarias (ej. ±500 kg o número limitado de pax).",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "Un cambio de comandante en cabina técnica durante la carrera de despegue",
+        "text": "Una modificación de la ruta de vuelo autorizada verbalmente por el controlador de torre durante el rodaje.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Modificación de última hora dentro de tolerancias de peso/índice autorizadas que se anota en la Loadsheet existente sin requerir emitir una nueva",
-        "is_correct": true
+        "text": "El cambio imprevisto de la pista en uso asignada por el control de aproximación antes del descenso.",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "La sustitución del motor izquierdo por un motor de diferente modelo antes de cerrar puertas",
+        "text": "La sustitución de un miembro de la tripulación técnica en la escala sin aviso previo a la compañía.",
         "is_correct": false
       }
     ],
@@ -48179,7 +48608,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Se le asigna el peso estándar de **Niño (35 kg)** al ocupar un asiento físico en la cabina de pasajeros",
+        "text": "Se le asigna el peso estándar de Niño (35 kg) al ocupar un asiento físico en la cabina de pasajeros",
         "is_correct": true
       },
       {
@@ -48262,7 +48691,7 @@
       },
       {
         "id": "B",
-        "text": "El responsable de la confección de la hoja (agente de carga/despacho) y el **Comandante de la aeronave** aceptando la carga y el centrado",
+        "text": "El responsable de la confección de la hoja (agente de carga/despacho) y el Comandante de la aeronave aceptando la carga y el centrado",
         "is_correct": true
       },
       {
@@ -48296,7 +48725,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Al menos durante **3 meses** en el archivo del operador (junto con el plan de vuelo operacional y el sobre de vuelo)",
+        "text": "Al menos durante 3 meses en el archivo del operador (junto con el plan de vuelo operacional y el sobre de vuelo)",
         "is_correct": true
       },
       {
@@ -49298,6 +49727,84 @@
     },
     "metadata": {
       "difficulty": 0.2
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "preparacion-planificacion-vuelo"
+  },
+  {
+    "id": "CMD-MOA-WNB-051",
+    "subject_id": "moa_masa_centrado",
+    "learning_objective": "MOA 8.1.8 - Concepto y Cálculo del Underload en la Hoja de Carga",
+    "stem": "¿Qué representa el 'Underload' (Carga Disponible) reflejado en la Hoja de Carga y Centrado (Loadsheet)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El margen de peso adicional (carga o pasajeros) que aún puede aceptarse a bordo antes de alcanzar el peso limitativo más restrictivo (MTOW, MZFW o MLW).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El peso del combustible no utilizable atrapado en las tuberías y bombas del sistema de alimentación.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La diferencia entre el peso básico en vacío y el peso operativo en seco de la tripulación.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El peso total del equipaje que ha sido extraviado en la terminal de facturación.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⚖️ MOA 8.1.8: Underload (Carga Disponible)\n* **Definición:** `Underload = Peso Máximo Permitido - Peso Real Calculado`.\n* **Limitación Gobernadora:** Se calcula respecto a la limitación más restrictiva de la operación: $\\min(\\text{MTOW} - \\text{TOW}, \\text{MZFW} - \\text{ZFW}, \\text{MLW} - \\text{LAW} + \\text{Trip Fuel})$.\n* **Uso Operativo:** Determina el peso máximo de cambios de última hora (LMC) que puede admitirse.",
+      "references": [
+        "MOA Binter 8.1.8.1 • EASA CAT.POL.MAB.100"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "command-upgrade",
+    "_subtopic": "preparacion-planificacion-vuelo"
+  },
+  {
+    "id": "CMD-MOA-WNB-052",
+    "subject_id": "moa_masa_centrado",
+    "learning_objective": "MOA 8.1.8 - Relación entre Centro de Gravedad (% MAC) y Calado del Compensador (Stabilizer Trim)",
+    "stem": "¿Cómo influye la posición del Centro de Gravedad (% MAC) en el ajuste del compensador del estabilizador horizontal (Pitch Trim) para el despegue?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Un CG adelantado requiere un calado de trim más morro arriba (Nose Up); un CG retrasado requiere menor deflexión hacia morro arriba (Nose Down / menor UP).",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "El ajuste de trim es constante y fijo en 4.5 unidades de despegue independientemente del % MAC.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Un CG adelantado requiere ajustar el trim hacia morro abajo para evitar el encabritamiento violento.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El trim de despegue solo depende de la velocidad del viento en pista y no de la masa ni del centrado.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ MOA 8.1.8 & AFM: Calado de Pitch Trim vs % MAC\n* **CG Adelantado (Forward CG):** Brazo de palanca mayor del morro → mayor momento de picado → requiere mayor sustentación negativa en cola mediante **trim más morro arriba (Nose Up)**.\n* **CG Retrasado (Aft CG):** Menor momento de picado natural → requiere **menor trim morro arriba**, resultando además en menor resistencia de compensación (menor consumo en crucero).",
+      "references": [
+        "MOA Binter 8.1.8 • E195-E2 AFM Section 2 Limitations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
     },
     "_category": "command-upgrade",
     "_subtopic": "preparacion-planificacion-vuelo"
@@ -84097,6 +84604,591 @@
     },
     "metadata": {
       "difficulty": 0.4
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-026",
+    "subject_id": "netjets-interview",
+    "learning_objective": "V-Speeds: EASA CS-25 Takeoff Speed Hierarchy & Constraints",
+    "stem": "Under EASA CS-25 and FAA Part 25 certification specifications, what is the mandatory relationship and hierarchy among the certified takeoff speeds VEF, V1, VR, and V2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VEF <= V1 <= VR <= V2, with V1 not less than VMCG and not greater than VR or VMBE.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "V1 <= VEF <= VR <= V2, with V1 always equal to VR in balanced field operations.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "VMCG <= VEF <= V2 <= VR, with VR always exceeding V2 by at least 10 knots.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "VEF <= VR <= V1 <= V2, with V1 constrained strictly between VMCA and VLOF.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ CS-25 Takeoff Speed Hierarchy\n* **Regulatory Rule:** CS 25.107 establishes that {EF} \\le V_1 \\le V_R \\le V_2$.\n* **Lower Boundary of V1:**  \\ge V_{MCG}$ (so directional control is guaranteed if engine fails at or after {EF}$).\n* **Upper Boundary of V1:**  \\le V_R$ and  \\le V_{MBE}$ (so rotation does not occur before decision speed and kinetic brake energy capacity is not exceeded).",
+      "references": [
+        "EASA CS 25.107 (Takeoff Speeds) • FAA 14 CFR 25.107"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-027",
+    "subject_id": "netjets-interview",
+    "learning_objective": "V-Speeds: V1 Takeoff Decision Speed & Pilot Action Definition",
+    "stem": "Which statement correctly reflects the regulatory definition and operational application of V1 (Takeoff Decision Speed) during a multi-engine jet departure?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It is the speed at which the decision to abort must be made, after which the pilot has 4 seconds to apply maximum braking.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "It is the maximum speed at which the pilot must have taken the first action to stop the aircraft, and the minimum speed at which takeoff must be continued if the critical engine fails at VEF.",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "It is the unstick speed where main landing gear tires lift off the runway surface under normal all-engine thrust.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "It is the target climb speed maintained throughout the initial climb until reaching the clean maneuvering configuration.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛑 V1 Takeoff Decision Speed\n* **Definition:** $ is an **action speed**, not the start of a cognitive decision. By $, the first stopping action (brakes, thrust levers to idle) must already be initiated if rejecting.\n* **Post-V1 Rule:** Above $, the takeoff MUST be continued because stopping distance exceeds the Remaining Runway / Accelerate-Stop Distance Available (ASDA).",
+      "references": [
+        "EASA CS 25.107 • FAA AC 120-62 Takeoff Safety Training Aid"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-028",
+    "subject_id": "netjets-interview",
+    "learning_objective": "V-Speeds: VMCG (Minimum Control Speed Ground) Certification Criteria",
+    "stem": "How is VMCG (Minimum Control Speed Ground) certified under EASA CS-25.149, and what primary directional control restriction is applied during flight testing?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Directional control must be maintained solely through nosewheel steering while rudder aerodynamic credit is entirely neglected.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Directional control must be maintained using aerodynamic primary controls (rudder) only, without relying on nosewheel steering, with a lateral deviation not exceeding 30 feet from centerline.",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Differential wheel braking may be applied continuously to maintain centerline track within 50 feet.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Both thrust reversers must be deployed symmetrically to prevent yaw moments during the ground roll.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛫 VMCG Certification Criteria (CS 25.149(e))\n* **Primary Condition:** Sudden failure of the critical engine with remaining engine(s) at max takeoff thrust.\n* **Rudder Only:** Aerodynamic rudder control alone is credited; **nosewheel steering credit is explicitly excluded** (assuming wet/slippery surface).\n* **Lateral Limit:** The aircraft lateral deviation from the runway centerline must not exceed **30 ft (9.1 m)**.",
+      "references": [
+        "EASA CS 25.149(e) • FAA 14 CFR 25.149(e)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-029",
+    "subject_id": "netjets-interview",
+    "learning_objective": "V-Speeds: VMCA (Minimum Control Speed Air) & Bank Angle Influence",
+    "stem": "In the determination of VMCA (Minimum Control Speed in the Air), what maximum bank angle is permitted towards the operating engine, and what happens if wings are kept level?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Up to 5 degrees of bank towards the operating engine is permitted; keeping wings level increases VMCA significantly.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Up to 15 degrees of bank towards the inoperative engine is required to maintain zero sideslip.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Wings must remain strictly level; banking towards either engine is prohibited during CS-25 certification.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "A maximum of 10 degrees bank towards the failed engine is permitted provided rudder trim is zeroed.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ VMCA & Bank Angle Effect (CS 25.149)\n* **Certification Limit:** A maximum bank of **up to 5° into the live (operating) engine** is used during certification to create a horizontal component of lift that opposes the rudder sideslip.\n* **Wings-Level Danger:** Flying wings-level with an inoperative engine creates significant sideslip towards the dead engine, increasing the actual {MCA}$ by **10 to 20 knots** and reducing climb performance.",
+      "references": [
+        "EASA CS 25.149(c) • FAA AC 25-7D Flight Test Guide"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-030",
+    "subject_id": "netjets-interview",
+    "learning_objective": "V-Speeds: V2 Takeoff Safety Speed Certification Margins",
+    "stem": "Under modern EASA CS-25 regulations based on 1g reference stall speed (VSR), what minimum margins must V2 satisfy with one engine inoperative?",
+    "options": [
+      {
+        "id": "A",
+        "text": "V2 >= 1.05 VSR and V2 >= 1.00 VMCA",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "V2 >= 1.13 VSR (or 1.20 VS under legacy rules) and V2 >= 1.10 VMCA",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "V2 >= 1.30 VSR and V2 >= 1.25 VMCG",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "V2 >= 1.40 VSR and V2 >= 1.15 VMBE",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 📈 V2 Certification Margins (CS 25.107(b))\n* **Stall Margin:**  \\ge 1.13 V_{SR}$ (where {SR}$ is the 1g stall speed). For turbojets certified under older {S\\_MIN}$ standards,  \\ge 1.20 V_S$.\n* **Control Margin:**  \\ge 1.10 V_{MCA}$, ensuring full aerodynamic controllability during second segment climb.",
+      "references": [
+        "EASA CS 25.107(b) • FAR Part 25.107(b)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-031",
+    "subject_id": "netjets-interview",
+    "learning_objective": "V-Speeds: VMBE (Maximum Brake Energy Speed) Limitations & Operational Risks",
+    "stem": "What does VMBE represent on a transport category jet, and what severe hazard arises if a rejected takeoff is initiated at a groundspeed exceeding VMBE?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The maximum aerodynamic speed for thrust reverser deployment without causing compressor stalls.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "The maximum speed from which a rejected takeoff can be completed without exceeding the thermal and kinetic energy capacity of the wheel brakes, risking fuse plug release, tire blowout, or uncontained fire.",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "The minimum speed at which the anti-skid system can modulate hydraulic brake pressure on ice.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "The maximum taxi speed allowed during turns on contaminated taxiways.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛑 VMBE (Maximum Brake Energy Speed)\n* **Thermal Limit:** Wheel brakes convert aircraft kinetic energy ( = \\frac{1}{2} m V^2$) into heat.\n* **Over-energy Consequences:** If {RTO} > V_{MBE}$, brake temperatures exceed design limits, causing brake fade, wheel thermal fuse plugs melting, rapid tire deflation, and catastrophic landing gear fires.",
+      "references": [
+        "EASA CS 25.101 • NetJets Flight Operations Manual"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-032",
+    "subject_id": "netjets-interview",
+    "learning_objective": "V-Speeds: VR (Rotation Speed) Aerodynamic Constraints",
+    "stem": "According to EASA CS 25.107(e), what are the certified lower limits for selecting the rotation speed VR?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VR cannot be less than V1, must be at least 1.05 VMCA, and must allow reaching V2 before 35 ft with one engine failed.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "VR must always be at least 15 knots higher than V2 under all gross weights.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "VR is solely determined by tire maximum rotation RPM limits regardless of stall speed.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "VR must equal VMCG plus a 20% safety buffer.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ✈️ VR Rotation Speed Rules\n* **Rules:**\n  1.  \\ge V_1$\n  2.  \\ge 1.05 V_{MCA}$\n  3. $ must ensure liftoff speed {LOF} \\ge 1.10 V_{MU}$ (all engines) and $\\ge 1.05 V_{MU}$ (OEI).\n  4. Must allow the aircraft to reach $ at the screen height (35 ft dry / 15 ft wet).",
+      "references": [
+        "EASA CS 25.107(e) • ICAO Annex 6 Part I"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-033",
+    "subject_id": "netjets-interview",
+    "learning_objective": "V-Speeds: VREF (Landing Reference Speed) Certification Margins",
+    "stem": "How is VREF (Landing Reference Speed) calculated for transport jet operations under EASA Part-CAT and CS-25?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VREF is fixed at exactly 1.10 VMCG regardless of flap configuration or aircraft landing weight.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "VREF must not be less than 1.23 VSR (or 1.30 VS0 under older rules) and not less than VMCL in the landing configuration.",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "VREF is calculated as 1.50 times the clean stall speed VS1.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "VREF is the maximum structural speed at which landing gear can be retracted during a balked landing.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛬 VREF Landing Reference Speed\n* **Threshold Baseline:** {REF}$ is the speed crossed at 50 ft above the landing threshold in landing configuration.\n* **Regulatory Minimums:** Under CS-25, {REF} \\ge 1.23 V_{SR}$ (where {SR}$ is 1g stall speed in landing configuration) and {REF} \\ge V_{MCL}$.",
+      "references": [
+        "EASA CS 25.125 • Part-CAT.POL.A.230"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-034",
+    "subject_id": "netjets-interview",
+    "learning_objective": "V-Speeds: VAPP Final Approach Speed & Wind Additive Policy",
+    "stem": "When flying an instrument final approach in gusty wind conditions, how should the pilot calculate target approach speed VAPP, and how should it be flown at the runway threshold?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Add 100% of steady headwind plus 100% of gust to VREF and maintain the entire additive down to touchdown.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Calculate VAPP as VREF + Wind Correction (typically 1/2 steady headwind + full gust increment, min +5 kt, max +20 kt), bleeding off the steady headwind increment over the threshold to cross at VREF.",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Fly strictly at VREF regardless of reported gusts to prevent exceeding landing field length.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Multiply VREF by the cosine of the crosswind angle and add 30 knots.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛬 VAPP & Wind Additive Policy\n* **Formula:** {APP} = V_{REF} + \\text{Wind Correction}$. Standard operator policy uses $\\frac{1}{2} \\text{ steady headwind component} + \\text{full gust increment}$ (minimum $+5\\text{ kt}$, maximum $+20\\text{ kt}$).\n* **Threshold Technique:** The steady wind correction is bled off smoothly during the flare so the aircraft crosses the 50 ft threshold near {REF}$.",
+      "references": [
+        "EASA Part-CAT SOPs • Boeing / Airbus / Embraer FCTM"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-035",
+    "subject_id": "netjets-interview",
+    "learning_objective": "V-Speeds: VA (Design Maneuvering Speed) Structural Limitations",
+    "stem": "Regarding VA (Design Maneuvering Speed), which statement accurately describes its aerodynamic protection and important operational safety limitation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Below VA, full sudden deflection of a single flight control in one direction will cause an aerodynamic stall before exceeding structural limit load factor; however, VA does NOT protect against full alternating cyclic rudder reversals.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Flying below VA allows full simultaneous multi-axis control deflections up to maximum structural yield point.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "VA increases as aircraft gross weight decreases because lighter wings experience less bending moment.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "VA provides full structural protection during high-speed dives exceeding MMO.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⚠️ VA Maneuvering Speed Caution\n* **Single Axis Protection:** At or below $, full sudden deflection of **one** flight control surface will stall the aircraft aerodynamically before the design limit load ($+2.5g$) is exceeded.\n* **Critical Limitation:** $ does **NOT** protect against full alternating reversals (e.g. rudder cycling left-to-right), nor simultaneous multi-axis deflections.\n* **Weight Dependence:** $ **decreases** at lower gross weights ( = V_S \\sqrt{n}$).",
+      "references": [
+        "FAA Special Airworthiness Information Bulletin CE-11-17 • EASA CS 25.335"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-036",
+    "subject_id": "netjets-interview",
+    "learning_objective": "V-Speeds: Crossover Altitude (HX) Mechanics in Jet Climb Profile",
+    "stem": "During a standard high-performance jet climb conducted at a constant Calibrated Airspeed (CAS) until reaching the planned cruise Mach number, what occurs at the Crossover Altitude (HX)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The True Airspeed (TAS) drops to zero while indicated airspeed doubles.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "The specified CAS and the specified Mach number represent the exact same True Airspeed (TAS); above this altitude, the climb profile transitions from constant CAS to constant Mach number.",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "The aircraft enters reverse command where increasing thrust causes immediate deceleration.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "The cabin pressurization system switches from bleed air to ambient atmospheric ram air.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🚀 Crossover Altitude (HX)\n* **Climb Dynamics:** During climb at constant CAS, Mach number increases continuously with decreasing temperature and density. At the crossover altitude (typically FL270–FL310), target CAS and target Mach yield the same True Airspeed ($).\n* **Transition:** Above $, the flight crew/autopilot flies a **constant Mach number** to prevent exceeding {MO}$.",
+      "references": [
+        "EASA ATPL Principles of Flight • Jet Transport Performance Manual"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-037",
+    "subject_id": "netjets-interview",
+    "learning_objective": "V-Speeds: VMO vs MMO Operating Limits",
+    "stem": "What physical factors define VMO (Maximum Operating Speed) versus MMO (Maximum Operating Mach Number) on transport category aircraft?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VMO is governed by structural dynamic pressure (q = 1/2 rho V^2) at lower altitudes, whereas MMO is governed by compressibility shockwave formation and transonic stability at higher altitudes.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "VMO is a tire limit for landing roll while MMO is an engine turbine RPM limit.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "VMO applies only with flaps extended while MMO applies strictly in clean configuration.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "MMO is always lower than VMO in indicated airspeed at sea level.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### ⚡ VMO vs MMO\n* **VMO (Knots CAS):** Protects against excessive aerodynamic dynamic pressure ( = \\frac{1}{2} \\rho V^2$) and structural gust loads at low and medium altitudes.\n* **MMO (Mach Number):** Protects against transonic shockwave formation, Mach tuck, control buzz, and shock-induced boundary layer separation at high altitudes.",
+      "references": [
+        "EASA CS 25.1505 • FAA 14 CFR 25.1505"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-038",
+    "subject_id": "netjets-interview",
+    "learning_objective": "V-Speeds: VMCL (Minimum Control Speed Landing) Operational Significance",
+    "stem": "What does VMCL ensure during an asymmetric balked landing or missed approach in transport category jets?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It ensures the aircraft can maintain directional and lateral control in the landing configuration with the critical engine inoperative when maximum go-around thrust is applied.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "It defines the minimum glidepath angle required for autoland operations in CAT IIIB.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "It represents the minimum runway length required to perform a touch-and-go training exercise.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "It is the maximum crosswind velocity allowed for landing with flaps fully retracted.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🛬 VMCL (Minimum Control Speed Landing - CS 25.149(f))\n* **Purpose:** Ensures that if a missed approach / go-around is initiated from the landing flare with landing flaps and one engine inoperative at full go-around thrust, aerodynamic control is maintained without roll-off or loss of directional heading.",
+      "references": [
+        "EASA CS 25.149(f) • CS 25.107"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-039",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Aerodynamics: CS 25.251 High Altitude Mach Buffet Margin (1.3g)",
+    "stem": "Under EASA CS 25.251, what operational buffet-free maneuver capability is required at the cruising altitude, and why is this margin critical?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The aircraft must be capable of a 1.3g load factor (equivalent to a 40-degree coordinated bank turn) without encountering low-speed stall buffet or high-speed Mach buffet.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "The aircraft must be able to perform a 2.5g pull-up maneuver at MMO in severe turbulence.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "A minimum speed buffer of 50 knots CAS must separate stall warning from maximum gear operating speed.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "The aircraft must maintain level flight with zero thrust for at least 15 minutes.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 🌪️ CS 25.251 High Altitude Buffet Margin\n* **1.3g Margin:** Transport jets must demonstrate a minimum buffet-free margin of **1.3g** at certified cruise levels.\n* **Why 1.3g?** A coordinated steady turn at **39.7° bank angle** (approx 40°) produces an apparent load factor  = 1 / \\cos(40^\\circ) \\approx 1.305g$. This guarantees safe maneuvering in turbulence and mountain wave encounters without stalling or entering Mach buffet.",
+      "references": [
+        "EASA CS 25.251 • ICAO Doc 8168"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.6
+    },
+    "_category": "netjets-interview",
+    "_subtopic": "aerodinamica-performance-jet"
+  },
+  {
+    "id": "NJ-AERO-040",
+    "subject_id": "netjets-interview",
+    "learning_objective": "Jet Aerodynamics: VX vs VY Variation with Altitude",
+    "stem": "How do Best Angle of Climb speed (VX) and Best Rate of Climb speed (VY) change as a jet aircraft ascends towards its absolute ceiling?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VX increases slightly in indicated airspeed while VY decreases, until they converge to the exact same speed at the absolute ceiling.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Both VX and VY decrease linearly to zero at the service ceiling.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "VX decreases rapidly while VY increases, widening the speed gap between them at high altitudes.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "VX and VY remain entirely unchanged in indicated airspeed at all altitudes.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### 📈 VX vs VY Altitude Variation\n* **VX (Max Excess Thrust):** Slightly increases in Indicated/Calibrated Airspeed with altitude due to thrust lapse characteristics.\n* **VY (Max Excess Power):** Decreases in Indicated/Calibrated Airspeed with altitude.\n* **Convergence:** At the **Absolute Ceiling** (where climb rate = 0 ft/min),  = V_Y$.",
+      "references": [
+        "EASA ATPL Principles of Flight • Aerodynamics for Naval Aviators"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
     },
     "_category": "netjets-interview",
     "_subtopic": "aerodinamica-performance-jet"

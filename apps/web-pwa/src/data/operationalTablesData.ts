@@ -1414,5 +1414,198 @@ export const OPERATIONAL_TABLES: OperationalTable[] = [
       'Pace Graded Assertiveness CRM: Probe -> Alert -> Challenge -> Emergency / Takeover. If the Commander fails to respond to critical deviations at the stabilization gate, the First Officer HAS THE LEGAL OBLIGATION to assume control ("I HAVE CONTROLS") and go around.',
       'Stabilized Approach Gate: Every approach must be 100% stabilized by 1,000 ft in IMC (500 ft in VMC): on glidepath, on localizer, speed VREF to VREF+10 kt, engines spooled, and landing configuration set.'
     ]
+  },
+
+  // 18. MASTER AVIATION V-SPEEDS & PERFORMANCE DEFINITIONS (CS-25 / FAR 25 / PART-CAT)
+  {
+    id: 'netjets-easa-v-speeds',
+    diagramId: 'takeoff-speeds-envelope',
+    category: 'easa-netjets',
+    title: 'Master Aviation V-Speeds & Performance Definitions (CS-25 / FAR 25 / Part-CAT)',
+    subtitle: 'Certification Limits, Single-Engine Safety Margins, Takeoff, En-Route & Landing Reference Speeds',
+    manualRef: 'EASA CS-25 Subpart B (CS 25.107, 25.149, 25.101) • FAR Part 25 • ICAO Doc 8168 • Part-CAT.POL.A',
+    badge: 'CS-25 / FAR 25 V-Speeds',
+    description: 'Comprehensive regulatory and operational reference of all aircraft V-speeds, aerodynamic control limitations, climb profiles, stall references, and high-altitude compressibility boundaries for multi-engine jet transport aircraft.',
+    warningAlert: 'Mandatory Takeoff Speed Hierarchy: VEF ≤ V1 ≤ VR ≤ V2. Furthermore, V1(min) = max(VMCG, V1g), V1(max) = min(VR, VMBE). V2 cannot be less than 1.13 VSR (or 1.20 VS) and 1.10 VMCA.',
+    headers: ['V-Speed Acronym', 'Category & Designation', 'Regulatory Certification Definition', 'Formula / Safety Margin', 'Operational Cockpit Application'],
+    rows: [
+      {
+        col1: 'VEF',
+        col2: 'Takeoff: Engine Failure Speed',
+        col3: 'The calibrated airspeed at which the critical engine is assumed to fail during takeoff.',
+        col4: 'VEF ≥ VMCG (Selected by manufacturer)',
+        col5: 'VEF must occur at least 1 second before V1 to allow pilot recognition and reaction.',
+        highlight: false,
+        notes: 'Demonstrated during flight test certification.'
+      },
+      {
+        col1: 'V1',
+        col2: 'Takeoff: Decision Speed',
+        col3: 'The maximum speed in the takeoff at which the pilot must take the first action to stop the airplane within the accelerate-stop distance, and the minimum speed at which the takeoff can be safely continued if the critical engine fails at VEF.',
+        col4: 'max(VMCG, 1.05 VMCG) ≤ V1 ≤ min(VR, VMBE)',
+        col5: 'After V1, takeoff MUST be continued regardless of failures (except catastrophic structural/control loss). No stop action is initiated above V1.',
+        highlight: true,
+        notes: 'V1 is an action speed, not a decision-making point.'
+      },
+      {
+        col1: 'VR',
+        col2: 'Takeoff: Rotation Speed',
+        col3: 'The calibrated airspeed at which rotation is initiated with the intention of reaching V2 at or before 35 ft (screen height on dry runway) or 15 ft (wet runway).',
+        col4: 'VR ≥ V1 and VR ≥ 1.05 VMCA',
+        col5: 'Pitch rotation is initiated smoothly at ~3°/sec towards target takeoff attitude.',
+        highlight: true,
+        notes: 'Premature rotation increases ground roll and risks tail strike or VMU stall.'
+      },
+      {
+        col1: 'V2',
+        col2: 'Takeoff: Takeoff Safety Speed',
+        col3: 'The target calibrated airspeed achieved at the 35 ft screen height with one engine inoperative, maintained throughout the 2nd climb segment up to acceleration altitude.',
+        col4: 'V2 ≥ 1.13 VSR (or 1.20 VS) and V2 ≥ 1.10 VMCA',
+        col5: 'Guarantees the certified gross second-segment climb gradient (2.4% twin, 2.7% tri-jet, 3.0% four-engine).',
+        highlight: true,
+        notes: 'Fly V2 to V2+10 kt if already achieved at engine failure.'
+      },
+      {
+        col1: 'VMCG',
+        col2: 'Control: Min Control Speed Ground',
+        col3: 'The minimum calibrated airspeed during the takeoff ground roll at which, when the critical engine suddenly fails, directional control can be maintained using aerodynamic primary flight controls only (rudder), allowing not more than 30 ft lateral deviation.',
+        col4: 'Nosewheel steering credit excluded (rudder only)',
+        col5: 'Limits the minimum selectable V1. If runway is contaminated or wet, V1 must not be reduced below VMCG.',
+        highlight: true,
+        notes: 'Determined at maximum takeoff thrust, aft CG, and zero crosswind.'
+      },
+      {
+        col1: 'VMCA (VMC)',
+        col2: 'Control: Min Control Speed Air',
+        col3: 'The minimum calibrated airspeed in free air at which, following sudden failure of the critical engine, straight flight can be maintained with a maximum of 5° bank angle into the operating engine.',
+        col4: 'Rudder deflection ≤ limit, bank ≤ 5° into live engine',
+        col5: 'Directly limits VR and V2. If speed drops below VMCA in flight with OEI, full rudder cannot prevent uncommanded roll/yaw.',
+        highlight: true,
+        notes: 'Critical engine is the one whose failure creates the greatest adverse yaw/roll moment.'
+      },
+      {
+        col1: 'VMCL',
+        col2: 'Control: Min Control Speed Landing',
+        col3: 'The minimum airspeed at which the aircraft can be safely controlled in the landing configuration with all or one engine inoperative and full go-around thrust applied on the operating engine(s).',
+        col4: 'Full rudder + max 5° bank in landing flap configuration',
+        col5: 'Guarantees controllability during an asymmetric balked landing / go-around.',
+        highlight: false,
+        notes: 'Governs the minimum permissible VREF.'
+      },
+      {
+        col1: 'VMBE',
+        col2: 'Limitation: Max Brake Energy Speed',
+        col3: 'The maximum speed on the ground from which a rejected takeoff can be executed without exceeding the maximum kinetic/thermal energy absorption capacity of the carbon/steel wheel brakes.',
+        col4: 'AFM Brake Energy limits (function of weight, altitude, temp, slope, wind)',
+        col5: 'Caps the maximum permissible V1. High takeoff weights, hot-and-high fields, or tailwinds reduce VMBE.',
+        highlight: true,
+        notes: 'Exceeding VMBE causes catastrophic brake fuse plug melting, tire deflation, or wheel fires.'
+      },
+      {
+        col1: 'VMU',
+        col2: 'Certification: Minimum Unstick Speed',
+        col3: 'The calibrated airspeed at and above which the aircraft can safely lift off the ground and continue takeoff without encountering dangerous stall or ground contact.',
+        col4: 'Demonstrated with tail bumper dragging on runway',
+        col5: 'VR is certified such that liftoff speed VLOF ≥ 1.10 VMU (all engines) and ≥ 1.05 VMU (OEI).',
+        highlight: false,
+        notes: 'Prevents early liftoff in ground effect before safe flying speed is attained.'
+      },
+      {
+        col1: 'VS / VSR (VS1g)',
+        col2: 'Aerodynamic: Reference Stall Speed',
+        col3: 'The calibrated airspeed at which the airplane demonstrates a 1g stall (load factor = 1.0), identified by the minimum steady flight speed or onset of aerodynamic buffet / stick pusher.',
+        col4: '1g stall reference under EASA CS-25',
+        col5: 'Base reference for all aerodynamic operating speeds (V2, VREF, VFTO, maneuvering speeds).',
+        highlight: true,
+        notes: 'VSR replaced traditional minimum-speed stall VS_MIN in modern CS-25 certification.'
+      },
+      {
+        col1: 'VREF',
+        col2: 'Landing: Landing Reference Speed',
+        col3: 'The reference calibrated airspeed for landing calculated for the aircraft weight in the landing configuration, crossed over the landing runway threshold at 50 ft height.',
+        col4: 'VREF ≥ 1.23 VSR (or 1.30 VS0) and VREF ≥ VMCL',
+        col5: 'Target threshold speed in calm conditions. Used as baseline for all approach speed calculations.',
+        highlight: true,
+        notes: 'Mandatory Part-CAT threshold crossing speed.'
+      },
+      {
+        col1: 'VAPP',
+        col2: 'Approach: Final Approach Target Speed',
+        col3: 'The final approach target speed flown down the glidepath from the Final Approach Fix (FAF) to the runway threshold.',
+        col4: 'VAPP = VREF + Wind Correction (e.g. 1/2 steady headwind + full gust; min +5 kt, max +20 kt)',
+        col5: 'Provides aerodynamic kinetic buffer against windshear, turbulence, and sudden loss of headwind component.',
+        highlight: true,
+        notes: 'Bleed off wind correction smoothly over threshold to cross at VREF.'
+      },
+      {
+        col1: 'VFTO (VFSR)',
+        col2: 'Climb: Final Takeoff Speed',
+        col3: 'The speed in the clean (flaps up) configuration achieved at the end of the takeoff flight path (end of 3rd segment / start of 4th segment).',
+        col4: 'VFTO ≥ 1.18 VSR (represents Green Dot / Best L/D)',
+        col5: 'Flown during OEI en-route climb, holding, or drift-down to maximize one-engine-inoperative climb gradient.',
+        highlight: false,
+        notes: 'Corresponds to minimum drag speed (VMD) in clean configuration.'
+      },
+      {
+        col1: 'VX / VY',
+        col2: 'Climb: Best Angle & Best Rate of Climb',
+        col3: 'VX = Speed for greatest altitude gain per unit of horizontal distance (Max excess thrust). VY = Speed for greatest altitude gain per unit of time (Max excess power).',
+        col4: 'VX is lower than VY; with altitude, VX increases slightly while VY decreases until they converge at absolute ceiling.',
+        col5: 'VX used for obstacle clearance; VY used for standard unrestricted en-route climb to cruise level.',
+        highlight: false,
+        notes: 'For OEI: VXSE (best angle OEI) and VYSE (best rate OEI, denoted by blue line on ASI).'
+      },
+      {
+        col1: 'VMO / MMO',
+        col2: 'Limitation: Max Operating Limit Speed / Mach',
+        col3: 'The maximum operating limit speed (VMO in knots CAS, MMO in Mach) that may not be deliberately exceeded in any phase of flight (climb, cruise, descent).',
+        col4: 'Structural dynamic pressure limit (VMO) & transonic compressibility shockwave limit (MMO)',
+        col5: 'Master high-speed envelope boundary. Triggers high-speed clacker / aural overspeed warning if exceeded.',
+        highlight: true,
+        notes: 'VMO governs at lower altitudes; MMO governs at higher altitudes above crossover altitude.'
+      },
+      {
+        col1: 'VA',
+        col2: 'Limitation: Design Maneuvering Speed',
+        col3: 'The speed below which full, sudden deflection of a single flight control surface will not cause structural failure (aerodynamic stall occurs before structural limit load is exceeded).',
+        col4: 'VA = VS * sqrt(n_limit) where n_limit = 2.5g for transport category',
+        col5: 'CAUTION: VA does NOT protect against full alternating rudder reversals or simultaneous multi-axis deflections.',
+        highlight: true,
+        notes: 'Decreases as aircraft weight decreases.'
+      },
+      {
+        col1: 'VFE / VLE / VLO',
+        col2: 'Limitation: Flap & Landing Gear Structural Speeds',
+        col3: 'VFE = Max speed with flaps extended (by detent). VLE = Max speed with landing gear locked down. VLO = Max speed for extending (VLO_EXT) or retracting (VLO_RET) landing gear.',
+        col4: 'Structural aerodynamic loading limits on extended surfaces',
+        col5: 'Exceeding VFE causes flap track deformation; exceeding VLO can jam gear doors against high aerodynamic drag.',
+        highlight: false,
+        notes: 'VLO_RET is frequently lower than VLO_EXT due to hydraulic actuator loads.'
+      },
+      {
+        col1: 'Crossover Altitude (HX)',
+        col2: 'Aerodynamic: CAS to Mach Transition Altitude',
+        col3: 'The altitude at which a specified Calibrated Airspeed (CAS) and a specified Mach number represent the exact same True Airspeed (TAS).',
+        col4: 'TAS = CAS / sqrt(rho/rho0) = Mach * a(T)',
+        col5: 'During climb at constant CAS, Mach increases until crossover altitude; above HX, the climb is flown at constant Mach number.',
+        highlight: true,
+        notes: 'Typically occurs between FL260 and FL310 depending on planned CAS/Mach profile.'
+      },
+      {
+        col1: 'Mach Buffet Boundary',
+        col2: 'Aerodynamic: High Altitude Envelope Margins',
+        col3: 'The aerodynamic corridor at high altitudes bounded by low-speed stall buffet (1.2g / 1.3g margin) and high-speed transonic compressibility shockwave buffet.',
+        col4: 'CS-25.251 requires a minimum 1.3g buffet-free margin at cruising altitude',
+        col5: 'Defines the aircraft aerodynamic ceiling. Turbulence, bank angles, or climb reduce buffet margin towards coffin corner.',
+        highlight: true,
+        notes: 'A 30° bank turn increases effective load factor to 1.15g, raising the low-speed buffet onset speed.'
+      }
+    ],
+    extraNotes: [
+      'Takeoff Speed Chain: VEF (Engine Failure) → V1 (Decision) → VR (Rotation) → VLOF (Liftoff) → V2 (Screen Height at 35 ft dry / 15 ft wet).',
+      'CS-25 vs Older CAR 4b: Modern CS-25 uses reference 1g stall speed VSR (where V2 ≥ 1.13 VSR and VREF ≥ 1.23 VSR). Older rules used minimum stall speed VS_MIN (where V2 ≥ 1.20 VS and VREF ≥ 1.30 VS).',
+      'Wind Additive for Approach: Never apply wind corrections to VREF itself for landing distance calculations, but add corrections to VAPP for flying the final approach (1/2 headwind + gust, minimum +5 kt, maximum +20 kt).'
+    ]
   }
 ];
+
