@@ -48,6 +48,9 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
       'Briefing de emergencia a cabina estructurado bajo mnemónico TELSI (¡Nunca NITS!).'
     ],
     summary: 'Guía metódica para la preparación del vuelo en Sala Delivery (ePerf, Lido, Taillog), análisis del Sobre de Vuelo y realización del Briefing conjunto con la Tripulación de Cabina.',
+    diagramImage: './sop-diagrams/briefing-prep-vuelo.jpg',
+    diagramCaption: 'Infografía Oficial: Preparación de Vuelo y Briefing de Tripulación (TELSI)',
+    diagramNote: 'Flujo Sala Delivery · Sobre de Vuelo PVO · Briefing Tripulación TELSI · Protocolo Emergencias Cabina',
     sections: [
       {
         title: '1. Sala Delivery / iPad Reserva',
@@ -115,6 +118,9 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
       'Anti-Ice en MCDU (TO): <5°C ALL; entre 5°C y 10°C ENG si hay humedad visible.'
     ],
     summary: 'Procedimiento de despegue con visibilidad reducida (LVTO), criterios de selección de potencia (No FLEX), chequeo de 3 transmisómetros RVR y precauciones en rodaje bajo LVP.',
+    diagramImage: './sop-diagrams/briefing-lvo-lvto.jpg',
+    diagramCaption: 'Infografía Oficial: Briefing LVO / LVTO & Condiciones Engelantes',
+    diagramNote: 'Mínimos LVTO (RVR 125m) · Engine Run-Up · Estructura TWIN · Rodaje bajo LVP',
     sections: [
       {
         title: 'Parámetros y Limitaciones de Despegue LVTO',
@@ -166,6 +172,9 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
       'Go-Around mandatorio si: A 150 ft RA no aparece "ALIGN" o a 50 ft RA no aparece "FLARE".'
     ],
     summary: 'Requisitos operacionales para aproximaciones ILS de precisión CAT II y CAT III con aterrizaje automático (Autoland), verificación de sistemas degradados y puertas de frustrada.',
+    diagramImage: './sop-diagrams/briefing-twin-autoland.jpg',
+    diagramCaption: 'Infografía Oficial: Briefing TWIN – CAT II / CAT III & Autoland (Binter SOP)',
+    diagramNote: 'Mínimos CAT II/III · Verificación MCDU · Callouts Autoland (ALIGN, FLARE, RETARD)',
     sections: [
       {
         title: 'Mínimos y Referencias Visuales en DH',
@@ -851,6 +860,9 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
       'Nivelar en EO MAX ALT con márgenes de franqueamiento de obstáculos (2.000 ft ruta / 1.000 ft NET).'
     ],
     summary: 'Manejo integral del fallo de motor en despegue a V1 o superior y procedimiento de descenso continuo (Driftdown) en fallo de motor en ruta con el E195-E2.',
+    diagramImage: './sop-diagrams/emg-engine-fail-driftdown.jpg',
+    diagramCaption: 'Infografía Oficial: Fallo de Motor en Despegue (EFATO) & Driftdown en Ruta',
+    diagramNote: 'Secuencia V1 / Vr / V2 · Aceleración Flaps · MCT · Velocidad Green Dot / Vfs · Techo Monomotor',
     sections: [
       {
         title: 'Fallo de Motor en Carrera de Despegue (V1 o Superior)',
@@ -910,6 +922,9 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
       'A 2.000 ft de nivelar reducir a 250 kt; a 1.000 ft retraer aerofrenos (Speedbrakes).'
     ],
     summary: 'Procedimiento de descenso de máxima tasa ante despresurización o indicación CABIN ALT HI, gestión de oxígeno de tripulación/pasaje y función DUMP.',
+    diagramImage: './sop-diagrams/emg-emergency-descent.jpg',
+    diagramCaption: 'Infografía Oficial: Descenso de Emergencia y Despresurización de Cabina',
+    diagramNote: 'Máscaras 100% · Throttles IDLE · Speedbrakes FULL · Descenso FL100/MEA · Transponder 7700',
     sections: [
       {
         title: 'Acciones Inmediatas de Memoria (Memory Items)',
@@ -960,6 +975,9 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
       'Tras parar el avión: Poner freno de parking y cantar inmediatamente por PA: "TRIPULACIÓN DE CABINA, ESPEREN INSTRUCCIONES".'
     ],
     summary: 'Criterios de decisión para abortar la carrera de despegue según el régimen de velocidad y protocolo de asunción de mandos por el PM en caso de incapacitación del PF a 80 kt.',
+    diagramImage: './sop-diagrams/emg-reject-takeoff-rto.jpg',
+    diagramCaption: 'Infografía Oficial: Despegue Rechazado (Reject Takeoff - RTO)',
+    diagramNote: 'Baja Velocidad (<80 kt) vs Alta Velocidad (>80 kt hasta V1) · Acciones PF/PM · Two-Challenge Rule',
     sections: [
       {
         title: 'Criterios de Decisión según Régimen de Velocidad',
@@ -1008,6 +1026,9 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
       'Al resolver el conflicto, regresar a la última altitud autorizada y cantar a ATC: "CLEAR OF CONFLICT".'
     ],
     summary: 'Protocolo de actuación y reparto de tareas entre PF y PM ante una alarma de resolución anticolisión TCAS RA.',
+    diagramImage: './sop-diagrams/emg-tcas-ra.jpg',
+    diagramCaption: 'Infografía Oficial: Maniobra de Escape TCAS RA (Resolution Advisory)',
+    diagramNote: 'Fly-to-Zone · Desconexión AP/AT · Prioridad TCAS vs ATC · Luces Exteriores y Llamada ATC',
     sections: [
       {
         title: 'Acciones Inmediatas del Pilot Flying (PF)',
@@ -1049,6 +1070,9 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
       'El FADEC cancela automáticamente cualquier desclasificación (FLEX/DERATE) y entrega empuje máximo GO/AROUND RSV.'
     ],
     summary: 'Distinción entre cizalladura predictiva (radar) y reactiva, activación del modo Windshear Escape Guidance (WSHR) entre 10 y 1.500 ft AGL y recuperación.',
+    diagramImage: './sop-diagrams/emg-windshear.jpg',
+    diagramCaption: 'Infografía Oficial: Maniobra de Escape por Windshear (Cizalladura)',
+    diagramNote: 'Alarma Predictiva/Reactiva · Empuje MAX / TOGA · Mantener Configuración Tren/Flaps · PLI Pitch',
     sections: [
       {
         title: 'Alertas Predictivas vs Reactivas',
@@ -1097,6 +1121,9 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
       'Ascender hasta la altitud mínima de seguridad (MSA o MORA).'
     ],
     summary: 'Maniobra de escape vertical de máxima performance ante aviso acústico o visual de colisión inminente contra el terreno.',
+    diagramImage: './sop-diagrams/emg-egpws-terrain.jpg',
+    diagramCaption: 'Infografía Oficial: Maniobra EGPWS Terrain Warning (Pull Up)',
+    diagramNote: 'Alarma PULL UP · Máxima Potencia TOGA · Pitch 15° / PLI · Prohibición de Modificar Tren/Flaps · Ascenso a MSA',
     sections: [
       {
         title: 'Acciones Inmediatas del Pilot Flying (PF)',
@@ -1142,6 +1169,9 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
       'Confirmación obligatoria de giro de motor por tierra: "Cabina, motor número 2 (1) girando" (de no girar es indicación de arranque insatisfactorio).'
     ],
     summary: 'Procedimiento oficial del MOA 8.2.2.12.3.1 para la puesta en marcha con APU inoperativo en el Embraer 195-E2, detallando la fraseología exacta cabina-tierra, arranque de Motor 2 con ASU y arranque cruzado de Motor 1 tras incremento de potencia.',
+    diagramImage: './sop-diagrams/special-engine-start-apu-inop.jpg',
+    diagramCaption: 'Infografía Oficial: Puesta en Marcha con APU Inoperativo y Crossbleed Start (E195-E2)',
+    diagramNote: 'MOA 8.2.2.12.3.1 · Equipos ASU/GPU en Tierra · Arranque Motor 2 · Arranque Cruzado Motor 1',
     sections: [
       {
         title: '1. Actuaciones Previas y Coordinación Inicial',
@@ -1214,6 +1244,9 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
       'Sólo tras la parada total de ambos motores se apagan beacons y se calza el tren principal (caminando paralelo al fuselaje).'
     ],
     summary: 'Protocolo oficial y de estricto obligado cumplimiento del MOA 8.2.2.12.4.2 para la llegada a stand con APU inoperativo en la flota Embraer, detallando los 3 requisitos simultáneos para acceder a la ERA y la secuencia de calzos y GPU.',
+    diagramImage: './sop-diagrams/special-arrival-apu-inop.jpg',
+    diagramCaption: 'Infografía Oficial: Llegada y Parada en Parking con APU Inoperativo (E195-E2)',
+    diagramNote: 'MOA 8.2.2.12.4.2 · 3 Requisitos Acceso ERA · Calzo Delantero Seguro · Conexión GPU · Parada Motor 2 y Beacons',
     sections: [
       {
         title: '1. Notificación Previa y Precauciones en Llegada',
@@ -1273,6 +1306,9 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
       'Si se prevé aterrizar en el aeródromo seguro más cercano con menos del FRF: MAYDAY MAYDAY MAYDAY FUEL obligatorio.'
     ],
     summary: 'Árbol de decisión y procedimiento operativo para la gestión del combustible en vuelo, re-planificación por esperas o meteorología adversa, y criterios exactos para la emisión de llamadas radiotelefónicas según EASA.',
+    diagramImage: './sop-diagrams/netjets-fuel-decision-flow.jpg',
+    diagramCaption: 'Infografía Oficial: Flujo de Decisión de Combustible en Vuelo & Declaraciones ATC (EASA)',
+    diagramNote: 'Monitoreo FOB vs Plan · Combustible MDF · MINIMUM FUEL vs MAYDAY FUEL · Reserva Final (30 min)',
     sections: [
       {
         title: '1. Monitorización Rutinaria en Crucero (Cada ≤ 60 min)',
@@ -1327,6 +1363,9 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
       'En CAT II se requieren al menos 3 luces consecutivas con elemento transversal para aterrizar.'
     ],
     summary: 'Procedimiento operativo para la aplicación rigurosa de la regla de prohibición de aproximación de EASA (CAT.OP.MPA.305) y criterios de toma de decisión ante degradación de visibilidad durante la aproximación final.',
+    diagramImage: './sop-diagrams/netjets-approach-ban-lvo.svg',
+    diagramCaption: 'Infografía Oficial: Evaluación de Approach Ban, Mínimos LVO y Referencias Visuales (EASA)',
+    diagramNote: 'Punto de Corte 1.000 ft AAL / OM · Regla RVR · Continuación a DA/DH · Referencias Visuales CAT I vs CAT II',
     sections: [
       {
         title: '1. Comprobación Previa antes del Segmento Final (Por encima de 1.000 ft AAL / OM)',
@@ -1375,6 +1414,9 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
       'SLOP: Desplazamiento estratégico siempre a la DERECHA del eje hasta 2 NM.'
     ],
     summary: 'Guía práctica para la operación en espacio RVSM (FL290 a FL410), tolerancias de comprobación en cabina, técnicas de mitigación de estela mediante SLOP y gestión ante fallos de sistemas.',
+    diagramImage: './sop-diagrams/netjets-rvsm-contingency.svg',
+    diagramCaption: 'Infografía Oficial: Operación RVSM, Cotejo Altimétrico, SLOP y Contingencias',
+    diagramNote: '4 Equipos Obligatorios · Tolerancia Vuelo ≤200 ft · SLOP 0.1/1.0/2.0 NM Dcha · Contingencia "UNABLE RVSM"',
     sections: [
       {
         title: '1. Comprobación Previa al Despegue y en Ascenso',
@@ -1420,6 +1462,9 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
       'Proactividad: No presentar solo un problema, involucrar a Dispatch para presentar soluciones alternativas.'
     ],
     summary: 'Modelo de resolución de conflictos operacionales y dilemas éticos evaluados en la entrevista personal de NetJets Europe (TMAAT - Tell Me About A Time), combinando liderazgo aeronáutico con vocación de servicio al cliente corporativo.',
+    diagramImage: './sop-diagrams/netjets-crm-owner-dilemma.svg',
+    diagramCaption: 'Infografía Oficial: Protocolo CRM VIP NetJets, Autoridad y Modelo PACE',
+    diagramNote: 'Pilar Seguridad Inviolable · Atención VIP Empática y Soluciones · Escalada PACE · Aproximación Estabilizada',
     sections: [
       {
         title: '1. Principio Fundamental de Mando en NetJets',

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'plegueviation-cache-v3.5.3';
+const CACHE_NAME = 'plegueviation-cache-v3.5.4';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -7,7 +7,32 @@ const ASSETS_TO_CACHE = [
   './banks/manifest.json',
   './banks/all_questions.json',
   './banks/deleted_questions.json',
-  './sop-diagrams/flow-emergencia-comandante.jpg'
+  './sop-diagrams/flow-emergencia-comandante.jpg',
+  './sop-diagrams/briefing-prep-vuelo.jpg',
+  './sop-diagrams/briefing-lvo-lvto.jpg',
+  './sop-diagrams/briefing-twin-autoland.jpg',
+  './sop-diagrams/visual-approach-fig.jpg',
+  './sop-diagrams/circling-approach-fig.jpg',
+  './sop-diagrams/npa-gps-rnav-fig.jpg',
+  './sop-diagrams/ils-precision-fig.jpg',
+  './sop-diagrams/oei-ils-fig.jpg',
+  './sop-diagrams/oei-approach-fig.jpg',
+  './sop-diagrams/oei-circling-approach-fig.jpg',
+  './sop-diagrams/oei-npa-fig.jpg',
+  './sop-diagrams/no-slat-flap-landing-fig.jpg',
+  './sop-diagrams/powerbanks-normativa-2026-fig.jpg',
+  './sop-diagrams/emg-engine-fail-driftdown.jpg',
+  './sop-diagrams/emg-emergency-descent.jpg',
+  './sop-diagrams/emg-reject-takeoff-rto.jpg',
+  './sop-diagrams/emg-tcas-ra.jpg',
+  './sop-diagrams/emg-windshear.jpg',
+  './sop-diagrams/emg-egpws-terrain.jpg',
+  './sop-diagrams/special-engine-start-apu-inop.jpg',
+  './sop-diagrams/special-arrival-apu-inop.jpg',
+  './sop-diagrams/netjets-fuel-decision-flow.jpg',
+  './sop-diagrams/netjets-approach-ban-lvo.svg',
+  './sop-diagrams/netjets-rvsm-contingency.svg',
+  './sop-diagrams/netjets-crm-owner-dilemma.svg'
 ];
 
 self.addEventListener('install', (event) => {
