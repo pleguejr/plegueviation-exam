@@ -1,181 +1,239 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1150" width="100%" height="100%">
   <defs>
-    <linearGradient id="bgGradAuto" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#080e1a" />
-      <stop offset="100%" stop-color="#121b2d" />
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070c16"/>
+      <stop offset="50%" stop-color="#0c1626"/>
+      <stop offset="100%" stop-color="#050810"/>
     </linearGradient>
-    <linearGradient id="cardGradA" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#182338" />
-      <stop offset="100%" stop-color="#0e1726" />
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#152238"/>
+      <stop offset="100%" stop-color="#0f192b"/>
     </linearGradient>
-    <linearGradient id="emeraldGradA" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10b981" />
-      <stop offset="100%" stop-color="#059669" />
+    <linearGradient id="binterGreenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10b981"/>
     </linearGradient>
-    <linearGradient id="blueGradA" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="100%" stop-color="#0284c7" />
+    <linearGradient id="binterBlueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
     </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
   </defs>
 
-  <!-- Background -->
-  <rect width="1200" height="675" fill="url(#bgGradAuto)" />
-
-  <!-- Grid -->
-  <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
-    <line x1="0" y1="90" x2="1200" y2="90" />
-    <line x1="0" y1="370" x2="1200" y2="370" />
-    <line x1="300" y1="0" x2="300" y2="675" />
-    <line x1="600" y1="0" x2="600" y2="675" />
-    <line x1="900" y1="0" x2="900" y2="675" />
-  </g>
+  <!-- Background Canvas -->
+  <rect width="1600" height="1150" fill="url(#bgGrad)"/>
 
   <!-- Header Banner -->
-  <rect x="30" y="16" width="1140" height="64" rx="10" fill="#111c2e" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="1.5" />
-  
-  <!-- Embraer 195-E2 Silhouette -->
-  <g transform="translate(48, 26) scale(0.6)">
-    <path d="M 0 25 Q 35 15 70 18 L 85 5 L 92 6 L 82 19 L 140 22 L 185 0 L 195 2 L 165 24 L 205 25 Q 215 25 220 28 L 200 31 L 165 31 L 145 42 L 138 41 L 148 31 L 80 30 L 70 42 L 62 41 L 68 29 Q 30 30 0 25 Z" fill="#38bdf8" fill-opacity="0.8" />
-    <rect x="90" y="27" width="28" height="10" rx="4" fill="#0284c7" />
-    <polygon points="185,2 193,3 175,20 168,20" fill="#10b981" />
+  <g transform="translate(40, 25)">
+    <rect width="1520" height="85" rx="12" fill="#132035" stroke="#253856" stroke-width="2" filter="url(#shadow)"/>
+    <rect width="12" height="85" fill="url(#binterGreenGrad)" rx="3"/>
+    
+    <text x="35" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="900" fill="#f8fafc" letter-spacing="0.5">
+      BRIEFING TWIN — CAT II / CAT III &amp; AUTOLAND
+    </text>
+    <text x="35" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#38bdf8">
+      Aproximaciones de Precisión ILS • Binter MOA 8.4 &amp; MOB 2.0.6.2 • Embraer 195-E2
+    </text>
+
+    <rect x="1330" y="24" width="160" height="38" rx="8" fill="rgba(16, 185, 129, 0.15)" stroke="#10b981" stroke-width="1.5"/>
+    <text x="1410" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#34d399" text-anchor="middle">
+      AUTOLAND 1 / APPR 2
+    </text>
   </g>
 
-  <text x="185" y="44" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="800" letter-spacing="1">BRIEFING TWIN — CAT II / CAT III &amp; AUTOLAND</text>
-  <text x="185" y="66" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600">Manuales Binter MOA 8.4, MOB 2.0.6.2 &amp; SOPM Sec 2 · Flota Embraer 195-E2</text>
-  
-  <rect x="980" y="26" width="175" height="42" rx="6" fill="#064e3b" fill-opacity="0.4" stroke="#10b981" stroke-width="1" />
-  <text x="1067" y="52" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">AUTOLAND 1 / APPR 2</text>
-
-  <!-- 3 MAIN PANELS -->
-  <g transform="translate(30, 95)">
+  <!-- ILS Autoland Descent Profile Diagram with Binter E195-E2 -->
+  <g transform="translate(40, 130)">
+    <rect width="1520" height="175" rx="12" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.5" filter="url(#shadow)"/>
     
-    <!-- PANEL 1: MÍNIMOS & REFERENCIAS VISUALES -->
+    <!-- Senda de Descenso 3° (Glide Path) -->
+    <line x1="80" y1="30" x2="1420" y2="135" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="6,4"/>
+    
+    <!-- Runway Touchdown Zone -->
+    <rect x="1360" y="130" width="120" height="15" fill="#334155" stroke="#64748b"/>
+    <line x1="1380" y1="130" x2="1380" y2="145" stroke="#fef08a" stroke-width="3"/>
+    <text x="1420" y="165" font-family="sans-serif" font-size="12" font-weight="700" fill="#94a3b8" text-anchor="middle">TOUCHDOWN</text>
+
+    <!-- Aircraft on Senda (Binter E195-E2) -->
+    <g transform="translate(560, 68) rotate(3) scale(0.65)">
+      <path d="M -160,0 L 160,0 Q 200,0 180,5 L -140,5 Z" fill="#f8fafc" stroke="#94a3b8"/>
+      <path d="M 0,0 L -50,-45 L -25,-45 L 30,0 Z" fill="#059669"/>
+      <path d="M 0,0 L -50,45 L -25,45 L 30,0 Z" fill="#059669"/>
+      <path d="M -120,0 L -160,-35 L -140,-35 L -100,0 Z" fill="#0284c7"/>
+      <rect x="10" y="15" width="40" height="12" rx="4" fill="#cbd5e1"/>
+    </g>
+
+    <!-- Milestone 1: 1500ft -->
+    <g transform="translate(180, 25)">
+      <circle cx="0" cy="18" r="6" fill="#38bdf8"/>
+      <text x="0" y="0" font-family="sans-serif" font-size="12" font-weight="800" fill="#38bdf8" text-anchor="middle">1.500 FT RA</text>
+      <text x="0" y="38" font-family="sans-serif" font-size="11.5" font-weight="600" fill="#cbd5e1" text-anchor="middle">"AUTOLAND 1"</text>
+    </g>
+
+    <!-- Milestone 2: 500ft -->
+    <g transform="translate(680, 70)">
+      <circle cx="0" cy="15" r="6" fill="#38bdf8"/>
+      <text x="0" y="0" font-family="sans-serif" font-size="12" font-weight="800" fill="#38bdf8" text-anchor="middle">500 FT RA</text>
+      <text x="0" y="34" font-family="sans-serif" font-size="11.5" font-weight="600" fill="#cbd5e1" text-anchor="middle">"FIVE HUNDRED"</text>
+    </g>
+
+    <!-- Milestone 3: 150ft ALIGN -->
+    <g transform="translate(980, 95)">
+      <circle cx="0" cy="15" r="6" fill="#f59e0b"/>
+      <text x="0" y="0" font-family="sans-serif" font-size="12" font-weight="800" fill="#fbbf24" text-anchor="middle">150 FT RA</text>
+      <text x="0" y="34" font-family="sans-serif" font-size="11.5" font-weight="700" fill="#fbbf24" text-anchor="middle">"ALIGN"</text>
+    </g>
+
+    <!-- Milestone 4: 50ft FLARE -->
+    <g transform="translate(1160, 110)">
+      <circle cx="0" cy="15" r="6" fill="#10b981"/>
+      <text x="0" y="0" font-family="sans-serif" font-size="12" font-weight="800" fill="#34d399" text-anchor="middle">50 FT RA</text>
+      <text x="0" y="34" font-family="sans-serif" font-size="11.5" font-weight="700" fill="#34d399" text-anchor="middle">"FLARE"</text>
+    </g>
+
+    <!-- Milestone 5: 30ft RETARD -->
+    <g transform="translate(1280, 120)">
+      <circle cx="0" cy="15" r="6" fill="#38bdf8"/>
+      <text x="0" y="0" font-family="sans-serif" font-size="12" font-weight="800" fill="#38bdf8" text-anchor="middle">30 FT RA</text>
+      <text x="0" y="34" font-family="sans-serif" font-size="11.5" font-weight="600" fill="#38bdf8" text-anchor="middle">"RETARD"</text>
+    </g>
+  </g>
+
+  <!-- 3 Main Columns: Procedures and Limits -->
+  <g transform="translate(40, 325)">
+    
+    <!-- Col 1: Mínimos CAT II vs CAT III -->
     <g transform="translate(0, 0)">
-      <rect width="365" height="555" rx="12" fill="url(#cardGradA)" stroke="#38bdf8" stroke-width="1.5" />
-      <rect x="14" y="14" width="28" height="28" rx="6" fill="url(#blueGradA)" />
-      <text x="28" y="33" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="800" text-anchor="middle">1</text>
-      
-      <text x="50" y="28" fill="#7dd3fc" font-family="system-ui, sans-serif" font-size="14" font-weight="800">MÍNIMOS &amp; REFERENCIAS DH</text>
-      <text x="50" y="42" fill="#94a3b8" font-size="10">Requisitos CAT II / CAT III Binter</text>
+      <rect width="485" height="560" rx="12" fill="url(#cardGrad)" stroke="#10b981" stroke-width="2" filter="url(#shadow)"/>
+      <rect width="485" height="42" rx="12" fill="url(#binterGreenGrad)"/>
+      <text x="242" y="27" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">
+        1. MÍNIMOS CAT II vs CAT III
+      </text>
 
-      <!-- CAT II Card -->
-      <rect x="14" y="56" width="337" height="150" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1" />
-      <text x="24" y="76" fill="#38bdf8" font-size="12" font-weight="800">ILS CAT II (DH TÍPICA 100 FT RA):</text>
-      <text x="24" y="94" fill="#cbd5e1" font-size="10.5">• RVR Mínimo:</text>
-      <text x="34" y="110" fill="#7dd3fc" font-size="12" font-weight="800">TDZ 300 m (MID 125 m / END 125 m)</text>
-      <text x="24" y="130" fill="#cbd5e1" font-size="10.5">• Referencias visuales en DH:</text>
-      <text x="34" y="146" fill="#f8fafc" font-size="10.5" font-weight="700">Mínimo 3 luces consecutivas de eje</text>
-      <text x="34" y="160" fill="#f8fafc" font-size="10.5" font-weight="700">+ 1 elemento transversal (barra de luces).</text>
-      <text x="24" y="184" fill="#94a3b8" font-size="9.5">Si no se ven referencias a 100 ft RA ➔ ¡Go-Around!</text>
+      <g transform="translate(20, 60)" font-family="sans-serif">
+        <!-- CAT II Box -->
+        <rect width="445" height="150" rx="8" fill="#18263e" stroke="#334155" stroke-width="1"/>
+        <text x="20" y="28" font-size="15" font-weight="800" fill="#34d399">ILS CAT II (DH Típica 100 FT RA)</text>
+        <text x="20" y="52" font-size="13.5" font-weight="500" fill="#e2e8f0">• RVR Mínimo: <tspan font-weight="800" fill="#38bdf8">300 m</tspan> (TDZ) / 125 m (Mid/Stop).</text>
+        <text x="20" y="76" font-size="13.5" font-weight="700" fill="#fbbf24">Referencias Visuales Requeridas en DH:</text>
+        <text x="20" y="98" font-size="13" font-weight="500" fill="#cbd5e1">• Segmento de al menos <tspan font-weight="700" fill="#ffffff">3 luces consecutivas</tspan> de</text>
+        <text x="20" y="118" font-size="13" font-weight="500" fill="#cbd5e1">eje o aproximación + <tspan font-weight="700" fill="#ffffff">1 barra transversal</tspan>.</text>
+        <text x="20" y="138" font-size="12" font-weight="500" fill="#94a3b8">(Crossbar / barra de luces de aproximación).</text>
 
-      <!-- CAT III Card -->
-      <rect x="14" y="216" width="337" height="150" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
-      <text x="24" y="236" fill="#34d399" font-size="12" font-weight="800">ILS CAT III (AH TÍPICA 50 FT RA):</text>
-      <text x="24" y="254" fill="#cbd5e1" font-size="10.5">• RVR Mínimo:</text>
-      <text x="34" y="270" fill="#a7f3d0" font-size="12" font-weight="800">TDZ 200 m (MID 125 m / END 125 m)</text>
-      <text x="24" y="290" fill="#cbd5e1" font-size="10.5">• Referencias visuales en AH:</text>
-      <text x="34" y="306" fill="#f8fafc" font-size="10.5" font-weight="700">Mínimo 3 luces consecutivas de eje de pista.</text>
-      <text x="24" y="326" fill="#94a3b8" font-size="10">• Operación Fail-Passive / Alert Height.</text>
-      <text x="24" y="344" fill="#fca5a5" font-size="9.5">Fallo antes de AH ➔ GA; Fallo tras AH ➔ Continuar autoland.</text>
+        <!-- CAT III Box -->
+        <g transform="translate(0, 165)">
+          <rect width="445" height="140" rx="8" fill="#18263e" stroke="#334155" stroke-width="1"/>
+          <text x="20" y="28" font-size="15" font-weight="800" fill="#38bdf8">ILS CAT III (AH Típica 50 FT RA)</text>
+          <text x="20" y="52" font-size="13.5" font-weight="500" fill="#e2e8f0">• RVR Mínimo: <tspan font-weight="800" fill="#38bdf8">200 m</tspan> (TDZ) / 125 m (Mid/Stop).</text>
+          <text x="20" y="76" font-size="13.5" font-weight="700" fill="#fbbf24">Referencias Visuales Requeridas en AH:</text>
+          <text x="20" y="98" font-size="13" font-weight="500" fill="#cbd5e1">• Segmento de al menos <tspan font-weight="700" fill="#ffffff">3 luces consecutivas</tspan></text>
+          <text x="20" y="118" font-size="13" font-weight="500" fill="#cbd5e1">del eje de pista (Centerline Lights).</text>
+        </g>
 
-      <!-- RVR Determinante -->
-      <rect x="14" y="376" width="337" height="165" rx="6" fill="#1e293b" fill-opacity="0.5" stroke="#f59e0b" stroke-width="1" />
-      <text x="24" y="396" fill="#fbbf24" font-size="11" font-weight="800">REGLA DEL RVR DETERMINANTE:</text>
-      <text x="24" y="414" fill="#cbd5e1" font-size="10">• El RVR determinante es SIEMPRE la TDZ.</text>
-      <text x="24" y="428" fill="#cbd5e1" font-size="10">• Si falta transmisómetro TDZ, se usa MID.</text>
-      <text x="24" y="442" fill="#cbd5e1" font-size="10">• MID y END son mandatorios si aplican.</text>
-      <text x="24" y="460" fill="#fca5a5" font-size="10" font-weight="700">Comandante SIEMPRE Pilot Flying (PF).</text>
-      <text x="24" y="476" fill="#cbd5e1" font-size="9.5">• Asiento alineado con bolas del parabrisas.</text>
-      <text x="24" y="490" fill="#cbd5e1" font-size="9.5">• Luces Strobe OFF en nubes para evitar brillo.</text>
+        <!-- RVR Determinante -->
+        <g transform="translate(0, 320)">
+          <rect width="445" height="95" rx="8" fill="#132035" stroke="#253856" stroke-width="1"/>
+          <text x="20" y="26" font-size="14" font-weight="800" fill="#f59e0b">RVR DETERMINANTE:</text>
+          <text x="20" y="48" font-size="13" font-weight="500" fill="#cbd5e1">El RVR de la zona de toma de contacto (TDZ)</text>
+          <text x="20" y="68" font-size="13" font-weight="500" fill="#cbd5e1">es siempre el determinante para la aproximación.</text>
+        </g>
+      </g>
     </g>
 
-    <!-- PANEL 2: VERIFICACIÓN MCDU & AVIONICA -->
-    <g transform="translate(380, 0)">
-      <rect width="365" height="555" rx="12" fill="url(#cardGradA)" stroke="#8b5cf6" stroke-width="1.5" />
-      <rect x="14" y="14" width="28" height="28" rx="6" fill="#7c3aed" />
-      <text x="28" y="33" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="800" text-anchor="middle">2</text>
-      
-      <text x="50" y="28" fill="#c4b5fd" font-family="system-ui, sans-serif" font-size="14" font-weight="800">VERIFICACIÓN MCDU &amp; FMA</text>
-      <text x="50" y="42" fill="#94a3b8" font-size="10">Estado de Sistemas Autoland</text>
+    <!-- Col 2: Configuración MCDU & Cabina -->
+    <g transform="translate(515, 0)">
+      <rect width="485" height="560" rx="12" fill="url(#cardGrad)" stroke="#0284c7" stroke-width="2" filter="url(#shadow)"/>
+      <rect width="485" height="42" rx="12" fill="url(#binterBlueGrad)"/>
+      <text x="242" y="27" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">
+        2. VERIFICACIÓN MCDU &amp; CABINA
+      </text>
 
-      <rect x="14" y="56" width="337" height="155" rx="6" fill="#0f172a" stroke="#8b5cf6" stroke-width="1" />
-      <text x="24" y="76" fill="#c4b5fd" font-size="11.5" font-weight="800">COMPROBACIÓN EN MCDU:</text>
-      <text x="24" y="94" fill="#cbd5e1" font-size="10">Ruta de acceso en teclado:</text>
-      
-      <rect x="22" y="100" width="320" height="34" rx="4" fill="#2e1065" stroke="#8b5cf6" stroke-width="1" />
-      <text x="30" y="122" fill="#e9d5ff" font-size="10.5" font-weight="800">MENU ➔ MISC ➔ OPR CONFIG ➔ AUTOLAND</text>
+      <g transform="translate(20, 60)" font-family="sans-serif">
+        <rect width="445" height="130" rx="8" fill="#18263e" stroke="#334155" stroke-width="1"/>
+        <text x="20" y="28" font-size="15" font-weight="800" fill="#38bdf8">Chequeo de Estado en MCDU</text>
+        <text x="20" y="52" font-size="13.5" font-weight="500" fill="#e2e8f0">Navegar a la ruta de verificación:</text>
+        <text x="20" y="74" font-size="13.5" font-weight="700" fill="#34d399">MENU &gt; MISC &gt; OPR CONFIG &gt; AUTOLAND</text>
+        <text x="20" y="98" font-size="13" font-weight="500" fill="#cbd5e1">• Confirmar capacidad: <tspan font-weight="800" fill="#38bdf8">AUTOLAND 1 / APPR 2</tspan></text>
+        <text x="20" y="118" font-size="13" font-weight="500" fill="#cbd5e1">• Verificar ausencia de degradaciones.</text>
 
-      <text x="24" y="152" fill="#cbd5e1" font-size="10">• Verificar capacidad de aterrizaje:</text>
-      <text x="34" y="168" fill="#34d399" font-size="11" font-weight="800">AUTOLAND 1 / APPR 2 DISPONIBLE</text>
-      <text x="24" y="188" fill="#94a3b8" font-size="9.5">• Chequeo de degradaciones por MEL o fallos.</text>
+        <g transform="translate(0, 145)">
+          <rect width="445" height="120" rx="8" fill="#18263e" stroke="#334155" stroke-width="1"/>
+          <text x="20" y="28" font-size="15" font-weight="800" fill="#38bdf8">Alineación Visual de Asiento</text>
+          <text x="20" y="52" font-size="13.5" font-weight="500" fill="#e2e8f0">• Alinear ojos con las <tspan font-weight="700" fill="#facc15">bolas de referencia</tspan></text>
+          <text x="20" y="72" font-size="13.5" font-weight="500" fill="#e2e8f0">del montante central del parabrisas.</text>
+          <text x="20" y="94" font-size="13" font-weight="500" fill="#cbd5e1">• Garantiza ángulo visual óptimo para contacto</text>
+          <text x="20" y="114" font-size="13" font-weight="500" fill="#cbd5e1">con luces de pista en la DH.</text>
+        </g>
 
-      <rect x="14" y="221" width="337" height="175" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1" />
-      <text x="24" y="241" fill="#38bdf8" font-size="11.5" font-weight="800">TEST Y SISTEMAS DE CABINA:</text>
-      <text x="24" y="259" fill="#cbd5e1" font-size="10">• Test de Radioaltímetros (RA 1 &amp; RA 2).</text>
-      <text x="24" y="273" fill="#cbd5e1" font-size="10">• GPWS / EGPWS operativo en alerta LVO.</text>
-      <text x="24" y="287" fill="#cbd5e1" font-size="10">• Autothrottle (AT) acoplado y activo.</text>
-      <text x="24" y="301" fill="#cbd5e1" font-size="10">• Iluminación de cabina atenuada al mínimo.</text>
-      <text x="24" y="315" fill="#cbd5e1" font-size="10">• Flaps en configuración final: FLAP 5.</text>
-      <text x="24" y="329" fill="#cbd5e1" font-size="10">• Autobrake armado: MED o HI.</text>
-      <text x="24" y="350" fill="#7dd3fc" font-size="10" font-weight="700">FMA Verde en aproximación final:</text>
-      <text x="24" y="366" fill="#34d399" font-size="11" font-weight="800">LOC ➔ GS ➔ APPR 2 / AUTOLAND 1</text>
-
-      <rect x="14" y="406" width="337" height="135" rx="6" fill="#064e3b" fill-opacity="0.4" stroke="#10b981" stroke-width="1" />
-      <text x="24" y="426" fill="#34d399" font-size="11" font-weight="800">DESCONEXIÓN DEL PILOTO AUTOMÁTICO:</text>
-      <text x="24" y="444" fill="#cbd5e1" font-size="10">• El AP se desconecta automáticamente a los</text>
-      <text x="34" y="460" fill="#a7f3d0" font-size="11" font-weight="800">5 segundos de la carrera de frenada.</text>
-      <text x="24" y="478" fill="#cbd5e1" font-size="10">• O inmediatamente al pisar fuertemente</text>
-      <text x="24" y="492" fill="#cbd5e1" font-size="10">  los pedales de freno o presionar Yoke.</text>
+        <g transform="translate(0, 280)">
+          <rect width="445" height="120" rx="8" fill="#18263e" stroke="#334155" stroke-width="1"/>
+          <text x="20" y="28" font-size="15" font-weight="800" fill="#38bdf8">Iluminación de Cabina (Cockpit)</text>
+          <text x="20" y="52" font-size="13.5" font-weight="500" fill="#cbd5e1">• Luces de cabina atenuadas al mínimo.</text>
+          <text x="20" y="74" font-size="13.5" font-weight="500" fill="#cbd5e1">• Luces Strobe en <tspan font-weight="700" fill="#ffffff">OFF</tspan> al entrar en nubes</text>
+          <text x="20" y="94" font-size="13.5" font-weight="500" fill="#cbd5e1">para evitar deslumbramiento o reflejos.</text>
+        </g>
+      </g>
     </g>
 
-    <!-- PANEL 3: SECUENCIA DE CALLOUTS AUTOLAND -->
-    <g transform="translate(760, 0)">
-      <rect width="380" height="555" rx="12" fill="url(#cardGradA)" stroke="#10b981" stroke-width="1.5" />
-      <rect x="14" y="14" width="28" height="28" rx="6" fill="url(#emeraldGradA)" />
-      <text x="28" y="33" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="800" text-anchor="middle">3</text>
-      
-      <text x="50" y="28" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="14" font-weight="800">SECUENCIA DE CALLOUTS AUTOLAND</text>
-      <text x="50" y="42" fill="#94a3b8" font-size="10">Llamadas Verbales y Puertas Críticas</text>
+    <!-- Col 3: Secuencia de Callouts & Frustrada -->
+    <g transform="translate(1030, 0)">
+      <rect width="490" height="560" rx="12" fill="url(#cardGrad)" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+      <rect width="490" height="42" rx="12" fill="url(#goldGrad)"/>
+      <text x="245" y="27" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">
+        3. CALLOUTS &amp; PUERTAS GO-AROUND
+      </text>
 
-      <!-- Step 1: 800 ft -->
-      <rect x="14" y="56" width="352" height="68" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
-      <text x="24" y="74" fill="#38bdf8" font-size="11" font-weight="800">800 FT RA (CON FLAP 5 ENGAGED):</text>
-      <text x="24" y="92" fill="#bae6fd" font-size="12" font-weight="900">PM: "AUTOLAND 1"</text>
-      <text x="24" y="108" fill="#94a3b8" font-size="9.5">Verificar modos ALIGN y FLARE armados en FMA.</text>
+      <g transform="translate(20, 60)" font-family="sans-serif">
+        <rect width="450" height="90" rx="8" fill="#18263e" stroke="#334155" stroke-width="1"/>
+        <text x="18" y="24" font-size="14.5" font-weight="800" fill="#38bdf8">150 FT RA ➔ PM: "ALIGN"</text>
+        <text x="18" y="46" font-size="13" font-weight="500" fill="#cbd5e1">ALIGN engaged (verde) y RLOUT/RETD armados.</text>
+        <text x="18" y="68" font-size="13" font-weight="700" fill="#f87171">Si no engancha: "NO ALIGN" ➔ ¡GO-AROUND!</text>
 
-      <!-- Step 2: 500 ft -->
-      <rect x="14" y="130" width="352" height="60" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
-      <text x="24" y="148" fill="#38bdf8" font-size="11" font-weight="800">500 FT RA (PUERTA DE ESTABILIDAD):</text>
-      <text x="24" y="166" fill="#bae6fd" font-size="12" font-weight="900">PM: "FIVE HUNDRED"</text>
-      <text x="24" y="180" fill="#94a3b8" font-size="9">Confirmar parámetros 100% estabilizados.</text>
+        <g transform="translate(0, 100)">
+          <rect width="450" height="90" rx="8" fill="#18263e" stroke="#334155" stroke-width="1"/>
+          <text x="18" y="24" font-size="14.5" font-weight="800" fill="#34d399">50 FT RA ➔ PM: "FLARE"</text>
+          <text x="18" y="46" font-size="13" font-weight="500" fill="#cbd5e1">FLARE engaged y D-ROT armado.</text>
+          <text x="18" y="68" font-size="13" font-weight="700" fill="#f87171">Si no engancha: "NO FLARE" ➔ ¡GO-AROUND!</text>
+        </g>
 
-      <!-- Step 3: 150 ft -->
-      <rect x="14" y="196" width="352" height="80" rx="6" fill="#0f172a" stroke="#f59e0b" stroke-width="1.2" />
-      <text x="24" y="214" fill="#fbbf24" font-size="11" font-weight="800">150 FT RA (ALINEACIÓN DE PISTA):</text>
-      <text x="24" y="232" fill="#fde68a" font-size="12" font-weight="900">PM: "ALIGN"</text>
-      <text x="24" y="248" fill="#cbd5e1" font-size="9.5">Modo ALIGN engaged en verde; RLOUT / RETD armados.</text>
-      <text x="24" y="262" fill="#fca5a5" font-size="9.5" font-weight="700">Si no engancha: PM canta "NO ALIGN" ➔ ¡GO-AROUND!</text>
+        <g transform="translate(0, 200)">
+          <rect width="450" height="85" rx="8" fill="#18263e" stroke="#334155" stroke-width="1"/>
+          <text x="18" y="24" font-size="14.5" font-weight="800" fill="#38bdf8">30 FT RA ➔ PM: "RETARD"</text>
+          <text x="18" y="46" font-size="13" font-weight="500" fill="#cbd5e1">RETD engaged, reducción de empuje a IDLE.</text>
+          <text x="18" y="68" font-size="13" font-weight="500" fill="#cbd5e1">Toma ➔ "ROLLOUT" (Guiado de eje pista).</text>
+        </g>
 
-      <!-- Step 4: 50 ft -->
-      <rect x="14" y="282" width="352" height="80" rx="6" fill="#0f172a" stroke="#ef4444" stroke-width="1.2" />
-      <text x="24" y="300" fill="#f87171" font-size="11" font-weight="800">50 FT RA (RECOGIDA DE TOMA / FLARE):</text>
-      <text x="24" y="318" fill="#fecaca" font-size="12" font-weight="900">PM: "FLARE"</text>
-      <text x="24" y="334" fill="#cbd5e1" font-size="9.5">Modo FLARE engaged en verde; D-ROT armado.</text>
-      <text x="24" y="348" fill="#fca5a5" font-size="9.5" font-weight="700">Si no engancha: PM canta "NO FLARE" ➔ ¡GO-AROUND!</text>
-
-      <!-- Step 5: 30 ft -->
-      <rect x="14" y="368" width="352" height="72" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
-      <text x="24" y="386" fill="#38bdf8" font-size="11" font-weight="800">30 FT RA (REDUCCIÓN DE EMPUJE):</text>
-      <text x="24" y="404" fill="#bae6fd" font-size="12" font-weight="900">PM: "RETARD"</text>
-      <text x="24" y="420" fill="#cbd5e1" font-size="9.5">Palancas reducen automáticamente a IDLE.</text>
-
-      <!-- Step 6: Touchdown -->
-      <rect x="14" y="446" width="352" height="95" rx="6" fill="#064e3b" fill-opacity="0.4" stroke="#10b981" stroke-width="1.2" />
-      <text x="24" y="464" fill="#34d399" font-size="11" font-weight="800">EN LA TOMA DE CONTACTO (TOUCHDOWN):</text>
-      <text x="24" y="484" fill="#a7f3d0" font-size="13" font-weight="900">PM: "ROLLOUT"</text>
-      <text x="24" y="502" fill="#cbd5e1" font-size="9.5">Modos RLOUT y D-ROT engaged (guiado eje de pista).</text>
-      <text x="24" y="518" fill="#cbd5e1" font-size="9.5">PF aplica reversas y monitoriza desaceleración.</text>
+        <g transform="translate(0, 298)">
+          <rect width="450" height="115" rx="8" fill="rgba(220, 38, 38, 0.2)" stroke="#ef4444" stroke-width="1.5"/>
+          <text x="18" y="24" font-size="14" font-weight="800" fill="#f87171">CONDICIONES DE FRUSTRADA OBLIGATORIA:</text>
+          <text x="18" y="46" font-size="12.5" font-weight="600" fill="#fecaca">• Fallo o pérdida de modo AUTOLAND por debajo de 800 ft</text>
+          <text x="18" y="66" font-size="12.5" font-weight="600" fill="#fecaca">• Desviación de senda &gt; 1 punto o localizador &gt; 1/3 punto</text>
+          <text x="18" y="86" font-size="12.5" font-weight="600" fill="#fecaca">• Sin referencias visuales exigidas al alcanzar DH/AH</text>
+        </g>
+      </g>
     </g>
+  </g>
 
+  <!-- Bottom Bar -->
+  <g transform="translate(40, 1010)">
+    <rect width="1520" height="110" rx="12" fill="#132035" stroke="#253856" stroke-width="2" filter="url(#shadow)"/>
+    <text x="30" y="36" font-family="sans-serif" font-size="16" font-weight="800" fill="#38bdf8">
+      DESCONEXIÓN DEL PILOTO AUTOMÁTICO EN AUTOLAND:
+    </text>
+    <text x="30" y="65" font-family="sans-serif" font-size="14" font-weight="500" fill="#cbd5e1">
+      • En el Embraer 195-E2, el Piloto Automático se desconecta automáticamente a los 5 segundos de la carrera de deceleración o al intervenir en mandos.
+    </text>
+    <text x="30" y="90" font-family="sans-serif" font-size="14" font-weight="500" fill="#cbd5e1">
+      • El Comandante asume el control direccional sobre el timón de dirección y pedales de freno en carrera de parada.
+    </text>
   </g>
 </svg>

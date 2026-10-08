@@ -1,161 +1,264 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1150" width="100%" height="100%">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#090d16" />
-      <stop offset="100%" stop-color="#141c2e" />
+      <stop offset="0%" stop-color="#070c16"/>
+      <stop offset="50%" stop-color="#0c1626"/>
+      <stop offset="100%" stop-color="#050810"/>
     </linearGradient>
-    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#1b283d" />
-      <stop offset="100%" stop-color="#101826" />
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#152238"/>
+      <stop offset="100%" stop-color="#0f192b"/>
     </linearGradient>
-    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ef4444" />
-      <stop offset="100%" stop-color="#b91c1c" />
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
     </linearGradient>
-    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f59e0b" />
-      <stop offset="100%" stop-color="#b45309" />
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#ef4444"/>
     </linearGradient>
-    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10b981" />
-      <stop offset="100%" stop-color="#047857" />
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10b981"/>
     </linearGradient>
-    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="100%" stop-color="#0284c7" />
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
     </linearGradient>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.5"/>
     </filter>
   </defs>
 
-  <!-- Background -->
-  <rect width="1200" height="675" fill="url(#bgGrad)" />
-  
-  <!-- Subtle Grid -->
-  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
-    <line x1="0" y1="135" x2="1200" y2="135" />
-    <line x1="0" y1="270" x2="1200" y2="270" />
-    <line x1="0" y1="405" x2="1200" y2="405" />
-    <line x1="0" y1="540" x2="1200" y2="540" />
-    <line x1="300" y1="0" x2="300" y2="675" />
-    <line x1="600" y1="0" x2="600" y2="675" />
-    <line x1="900" y1="0" x2="900" y2="675" />
+  <!-- Background Canvas -->
+  <rect width="1600" height="1150" fill="url(#bgGrad)"/>
+
+  <!-- Header Banner -->
+  <g transform="translate(40, 25)">
+    <rect width="1520" height="85" rx="12" fill="#132035" stroke="#253856" stroke-width="2" filter="url(#shadow)"/>
+    <rect width="12" height="85" fill="url(#blueGrad)" rx="3"/>
+    
+    <text x="35" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="900" fill="#f8fafc" letter-spacing="0.5">
+      EVALUACIÓN DE APPROACH BAN, MÍNIMOS LVO Y REFERENCIAS VISUALES
+    </text>
+    <text x="35" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#38bdf8">
+      EASA Part-CAT (CAT.OP.MPA.305) · SPA.LVO.100 · AMC1 CAT.OP.MPA.110 • Regla de Corte de 1.000 ft AAL y Requisitos Visuales
+    </text>
+
+    <rect x="1330" y="24" width="160" height="38" rx="8" fill="rgba(2, 132, 199, 0.15)" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="1410" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#38bdf8" text-anchor="middle">
+      1.000 FT AAL GATE
+    </text>
   </g>
 
-  <!-- Title Header -->
-  <rect x="40" y="24" width="1120" height="74" rx="12" fill="#131d2e" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="1.5" />
-  <text x="60" y="56" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" letter-spacing="1">EVALUACIÓN DE APPROACH BAN, MÍNIMOS LVO Y REFERENCIAS VISUALES</text>
-  <text x="60" y="82" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500">EASA Part-CAT.OP.MPA.305 · Part-SPA.LVO.100 · AMC1 CAT.OP.MPA.110 · NetJets Operations</text>
-  
-  <rect x="990" y="38" width="150" height="46" rx="8" fill="#0369a1" fill-opacity="0.4" stroke="#38bdf8" stroke-width="1" />
-  <text x="1065" y="66" fill="#e0f2fe" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" text-anchor="middle">REGLA 1.000 FT AAL</text>
+  <!-- Left Column: Big Flight Profile & Descent Vertical Trajectory -->
+  <g transform="translate(40, 130)">
+    <rect width="560" height="780" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" filter="url(#shadow)"/>
+    <rect width="560" height="46" rx="12" fill="url(#blueGrad)"/>
+    <text x="280" y="30" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">
+      PERFIL VERTICAL DE APROXIMACIÓN &amp; HITOS
+    </text>
 
-  <!-- Left: Flight Profile Illustration -->
-  <g transform="translate(40, 115)">
-    <rect width="450" height="525" rx="14" fill="url(#cardGrad1)" stroke="#334155" stroke-width="1.5" />
-    <text x="24" y="38" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700">PERFIL DE APROXIMACIÓN &amp; HITOS</text>
+    <!-- Visual Approach Trajectory Diagram -->
+    <g transform="translate(40, 70)">
+      <!-- 3-Degree Glidepath Line -->
+      <path d="M 40,40 L 260,260 L 400,500 L 450,560" fill="none" stroke="#38bdf8" stroke-width="4" stroke-dasharray="8,5"/>
 
-    <!-- Glide Slope Line -->
-    <path d="M 50 80 L 250 250 L 380 430 L 410 470" fill="none" stroke="#38bdf8" stroke-width="3.5" stroke-dasharray="8 4" />
-    
-    <!-- Runway Graphic -->
-    <polygon points="360,480 430,480 410,470 380,470" fill="#475569" stroke="#94a3b8" stroke-width="1" />
-    <line x1="395" y1="470" x2="395" y2="480" stroke="#f8fafc" stroke-width="2" stroke-dasharray="2 2" />
-    <text x="395" y="504" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">RWY TDZ</text>
+      <!-- Runway Threshold & Touchdown Zone Graphic -->
+      <g transform="translate(400, 560)">
+        <polygon points="0,0 80,0 60,-20 20,-20" fill="#334155" stroke="#94a3b8" stroke-width="1.5"/>
+        <line x1="40" y1="-20" x2="40" y2="0" stroke="#f8fafc" stroke-width="2.5" stroke-dasharray="3,3"/>
+        <text x="40" y="22" font-family="sans-serif" font-size="12" font-weight="900" fill="#38bdf8" text-anchor="middle">RWY TDZ</text>
+        <line x1="0" y1="-20" x2="80" y2="-20" stroke="#10b981" stroke-width="3"/>
+      </g>
 
-    <!-- Airplane 1 (High) -->
-    <circle cx="50" cy="80" r="14" fill="#0284c7" />
-    <text x="50" y="85" fill="#ffffff" font-size="14" text-anchor="middle">✈</text>
-    <text x="75" y="85" fill="#cbd5e1" font-size="12" font-weight="600">FAF / FAP (Crucero Final)</text>
+      <!-- FAF / FAP Plane (High) -->
+      <g transform="translate(40, 40) scale(0.65)">
+        <path d="M -60,0 L 60,0" stroke="#f8fafc" stroke-width="16" stroke-linecap="round"/>
+        <path d="M 50,-8 L 70,0 L 50,8 Z" fill="#0284c7"/>
+        <path d="M 10,-8 L -15,-45 L -25,-45 L -5,-8 Z" fill="#64748b"/>
+        <path d="M 10,8 L -15,45 L -25,45 L -5,8 Z" fill="#64748b"/>
+        <path d="M -15,-45 L -12,-52 L -20,-45 Z" fill="#10b981"/>
+        <path d="M -15,45 L -12,52 L -20,45 Z" fill="#10b981"/>
+      </g>
+      <text x="85" y="45" font-family="sans-serif" font-size="13" font-weight="800" fill="#38bdf8">FAF / FAP (Aproximación Final)</text>
 
-    <!-- 1000 ft Gate Marker -->
-    <line x1="30" y1="250" x2="420" y2="250" stroke="#ef4444" stroke-width="2.5" stroke-dasharray="6 4" />
-    <rect x="140" y="235" width="220" height="30" rx="6" fill="#ef4444" fill-opacity="0.2" stroke="#ef4444" stroke-width="1.5" />
-    <text x="250" y="255" fill="#fca5a5" font-family="system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="middle">PUNTO DE CORTE: 1.000 FT AAL / OM</text>
+      <!-- 1000 ft Gate Marker Line -->
+      <line x1="10" y1="260" x2="470" y2="260" stroke="#ef4444" stroke-width="3" stroke-dasharray="6,4"/>
+      <rect x="90" y="240" width="300" height="38" rx="8" fill="#450a0a" stroke="#ef4444" stroke-width="1.5"/>
+      <text x="240" y="264" font-family="sans-serif" font-size="14" font-weight="900" fill="#fca5a5" text-anchor="middle">
+        PUNTO DE CORTE: 1.000 FT AAL (OM)
+      </text>
 
-    <!-- Airplane 2 (At Decision Height) -->
-    <circle cx="280" cy="285" r="14" fill="#10b981" />
-    <text x="280" y="290" fill="#ffffff" font-size="14" text-anchor="middle">✈</text>
+      <!-- Plane at Decision Height -->
+      <g transform="translate(320, 390) scale(0.65)">
+        <path d="M -60,0 L 60,0" stroke="#f8fafc" stroke-width="16" stroke-linecap="round"/>
+        <path d="M 50,-8 L 70,0 L 50,8 Z" fill="#0284c7"/>
+        <path d="M 10,-8 L -15,-45 L -25,-45 L -5,-8 Z" fill="#64748b"/>
+        <path d="M 10,8 L -15,45 L -25,45 L -5,8 Z" fill="#64748b"/>
+        <path d="M -15,-45 L -12,-52 L -20,-45 Z" fill="#10b981"/>
+        <path d="M -15,45 L -12,52 L -20,45 Z" fill="#10b981"/>
+      </g>
 
-    <!-- DA / DH Marker -->
-    <line x1="200" y1="410" x2="420" y2="410" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4 4" />
-    <text x="210" y="402" fill="#fbbf24" font-family="system-ui, sans-serif" font-size="12" font-weight="700">DA / DH (CAT I: 200ft / CAT II: 100ft)</text>
+      <!-- DA / DH Marker Line -->
+      <line x1="180" y1="460" x2="470" y2="460" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="4,4"/>
+      <text x="180" y="452" font-family="sans-serif" font-size="12.5" font-weight="800" fill="#fbbf24">
+        DA / DH (CAT I: 200 ft / CAT II: 100 ft)
+      </text>
 
-    <!-- Info Callouts in Left Column -->
-    <rect x="24" y="295" width="210" height="85" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1" />
-    <text x="36" y="320" fill="#34d399" font-size="12" font-weight="700">Por debajo de 1.000 ft:</text>
-    <text x="36" y="340" fill="#94a3b8" font-size="11">Si RVR decae por debajo,</text>
-    <text x="36" y="356" fill="#f8fafc" font-size="11" font-weight="600">SE PERMITE continuar a DH.</text>
-    <text x="36" y="372" fill="#94a3b8" font-size="11">Decide el contacto visual.</text>
+      <!-- Explanatory Callout Boxes -->
+      <!-- Above 1000ft Box -->
+      <rect x="10" y="110" width="240" height="110" rx="8" fill="#101a2b" stroke="#ef4444" stroke-width="1.5"/>
+      <text x="25" y="134" font-family="sans-serif" font-size="13" font-weight="900" fill="#f87171">POR ENCIMA DE 1.000 FT:</text>
+      <text x="25" y="156" font-family="sans-serif" font-size="12" font-weight="500" fill="#cbd5e1">Si RVR notificado &lt; Mínimo:</text>
+      <text x="25" y="176" font-family="sans-serif" font-size="12.5" font-weight="900" fill="#fca5a5">APPROACH BAN EN VIGOR</text>
+      <text x="25" y="196" font-family="sans-serif" font-size="11.5" font-weight="600" fill="#f87171">¡Prohibido continuar descenso!</text>
 
-    <rect x="24" y="140" width="210" height="85" rx="8" fill="#0f172a" stroke="#ef4444" stroke-width="1" />
-    <text x="36" y="165" fill="#f87171" font-size="12" font-weight="700">Por encima de 1.000 ft:</text>
-    <text x="36" y="185" fill="#94a3b8" font-size="11">Si RVR notificado &lt; Mínimo,</text>
-    <text x="36" y="201" fill="#fca5a5" font-size="11" font-weight="700">APPROACH BAN EN VIGOR.</text>
-    <text x="36" y="217" fill="#f87171" font-size="11">¡Frustrada obligatoria!</text>
+      <!-- Below 1000ft Box -->
+      <rect x="10" y="300" width="240" height="120" rx="8" fill="#101a2b" stroke="#10b981" stroke-width="1.5"/>
+      <text x="25" y="324" font-family="sans-serif" font-size="13" font-weight="900" fill="#34d399">POR DEBAJO DE 1.000 FT:</text>
+      <text x="25" y="346" font-family="sans-serif" font-size="12" font-weight="500" fill="#cbd5e1">Si RVR notificado decae:</text>
+      <text x="25" y="366" font-family="sans-serif" font-size="12.5" font-weight="900" fill="#a7f3d0">CONTINUAR HASTA DA/DH</text>
+      <text x="25" y="386" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">Decide el contacto visual en mínimos.</text>
+    </g>
+
+    <!-- Bottom Flight Profile Rule Box -->
+    <rect x="25" y="660" width="510" height="95" rx="8" fill="#101a2b" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="45" y="688" font-family="sans-serif" font-size="13.5" font-weight="900" fill="#38bdf8">DEFINICIÓN DEL PUNTO DE CORTE (EASA):</text>
+    <text x="45" y="712" font-family="sans-serif" font-size="12.5" font-weight="500" fill="#cbd5e1">1.000 ft sobre el terreno (AAL) o el FAF (Final Approach Fix) si este se encuentra por debajo de 1.000 ft.</text>
+    <text x="45" y="734" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#fbbf24">En aproximaciones sin FAF: 1.000 ft AAL en el segmento final.</text>
   </g>
 
-  <!-- Right: 3 Decision Blocks -->
-  <g transform="translate(510, 115)">
+  <!-- Right: 3 Big Decision Stage Cards -->
+  <g transform="translate(620, 130)">
     
-    <!-- BLOCK 1: ANTES DE 1000 FT AAL -->
+    <!-- BLOCK 1: ANTES DE 1.000 FT AAL -->
     <g transform="translate(0, 0)">
-      <rect width="650" height="155" rx="12" fill="url(#cardGrad1)" stroke="#ef4444" stroke-width="1.5" />
-      <rect x="18" y="16" width="36" height="36" rx="8" fill="url(#redGrad)" />
-      <text x="36" y="41" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="800" text-anchor="middle">1</text>
-      
-      <text x="68" y="34" fill="#fca5a5" font-family="system-ui, sans-serif" font-size="15" font-weight="700">ANTES DE 1.000 FT AAL (O FAF / OUTER MARKER)</text>
-      <text x="68" y="52" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Control de la aproximación según el RVR transmitido oficialmente por la Torre / ATIS</text>
-      
-      <rect x="20" y="70" width="295" height="70" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1" />
-      <text x="32" y="94" fill="#34d399" font-size="13" font-weight="700">✓ RVR ≥ Mínimo Publicado</text>
-      <text x="32" y="114" fill="#94a3b8" font-size="11">Aproximación autorizada a continuar.</text>
-      <text x="32" y="129" fill="#cbd5e1" font-size="11">Monitorear estabilización de senda.</text>
+      <rect width="940" height="240" rx="12" fill="url(#cardGrad)" stroke="#ef4444" stroke-width="2" filter="url(#shadow)"/>
+      <rect width="940" height="42" rx="12" fill="url(#redGrad)"/>
+      <text x="470" y="28" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">
+        1. EVALUACIÓN ANTES DE 1.000 FT AAL (O FAF / OUTER MARKER)
+      </text>
 
-      <rect x="330" y="70" width="300" height="70" rx="8" fill="#450a0a" fill-opacity="0.4" stroke="#ef4444" stroke-width="1.2" />
-      <text x="342" y="94" fill="#f87171" font-size="13" font-weight="800">✗ RVR &lt; Mínimo Publicado</text>
-      <text x="342" y="114" fill="#fca5a5" font-size="11" font-weight="700">APPROACH BAN (CAT.OP.MPA.305)</text>
-      <text x="342" y="129" fill="#fecaca" font-size="11">Prohibido descender de 1000 ft. Iniciar Go-Around.</text>
+      <g transform="translate(25, 55)">
+        <text x="0" y="18" font-family="sans-serif" font-size="14" font-weight="600" fill="#cbd5e1">
+          Control de la aproximación según el último valor oficial de RVR transmitido por la Torre de Control (TWR) o ATIS:
+        </text>
+
+        <!-- Condition A: RVR OK -->
+        <rect x="0" y="32" width="435" height="135" rx="8" fill="#101a2b" stroke="#10b981" stroke-width="1.5"/>
+        <text x="20" y="60" font-family="sans-serif" font-size="15" font-weight="900" fill="#34d399">✓ RVR ≥ MÍNIMO PUBLICADO</text>
+        <text x="20" y="86" font-family="sans-serif" font-size="13" font-weight="500" fill="#cbd5e1">• Aproximación legalmente autorizada a continuar.</text>
+        <text x="20" y="108" font-family="sans-serif" font-size="13" font-weight="500" fill="#cbd5e1">• Monitorear estabilización estricta de senda.</text>
+        <text x="20" y="130" font-family="sans-serif" font-size="13" font-weight="700" fill="#38bdf8">• Preparar adquisición visual hacia la DA/DH.</text>
+
+        <!-- Condition B: Approach Ban -->
+        <rect x="455" y="32" width="435" height="135" rx="8" fill="rgba(220, 38, 38, 0.2)" stroke="#ef4444" stroke-width="1.5"/>
+        <text x="475" y="60" font-family="sans-serif" font-size="15" font-weight="900" fill="#f87171">✗ RVR &lt; MÍNIMO PUBLICADO</text>
+        <text x="475" y="86" font-family="sans-serif" font-size="13.5" font-weight="800" fill="#fca5a5">APPROACH BAN (CAT.OP.MPA.305)</text>
+        <text x="475" y="108" font-family="sans-serif" font-size="13" font-weight="500" fill="#fecaca">• Prohibido descender por debajo de 1.000 ft AAL.</text>
+        <text x="475" y="130" font-family="sans-serif" font-size="13.5" font-weight="800" fill="#ffffff">• ¡INICIAR GO-AROUND / FRUSTRADA INMEDIATA!</text>
+      </g>
     </g>
 
-    <!-- BLOCK 2: TRAS CRUZAR 1000 FT AAL -->
-    <g transform="translate(0, 175)">
-      <rect width="650" height="155" rx="12" fill="url(#cardGrad1)" stroke="#38bdf8" stroke-width="1.5" />
-      <rect x="18" y="16" width="36" height="36" rx="8" fill="url(#skyGrad)" />
-      <text x="36" y="41" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="800" text-anchor="middle">2</text>
-      
-      <text x="68" y="34" fill="#7dd3fc" font-family="system-ui, sans-serif" font-size="15" font-weight="700">POR DEBAJO DE 1.000 FT AAL / FAF</text>
-      <text x="68" y="52" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">El criterio legal pasa de la notificación RVR a la adquisición visual en la DH/MDH</text>
+    <!-- BLOCK 2: TRAS CRUZAR 1.000 FT AAL -->
+    <g transform="translate(0, 260)">
+      <rect width="940" height="240" rx="12" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="2" filter="url(#shadow)"/>
+      <rect width="940" height="42" rx="12" fill="url(#blueGrad)"/>
+      <text x="470" y="28" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">
+        2. EVALUACIÓN POR DEBAJO DE 1.000 FT AAL (SEGMENTO FINAL EN CORTA)
+      </text>
 
-      <rect x="20" y="70" width="610" height="70" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="1" />
-      <text x="34" y="94" fill="#38bdf8" font-size="13" font-weight="700">¿RVR decae por debajo del mínimo estando ya en corta final?</text>
-      <text x="34" y="115" fill="#cbd5e1" font-size="12">La normativa EASA permite LEGALMENTE continuar el descenso hasta la DA/DH o MDA/MDH.</text>
-      <text x="34" y="131" fill="#94a3b8" font-size="11">El Comandante evaluará visualmente en los mínimos si existen las referencias requeridas para la toma.</text>
+      <g transform="translate(25, 55)">
+        <text x="0" y="18" font-family="sans-serif" font-size="14" font-weight="600" fill="#cbd5e1">
+          El criterio legal cambia del valor meteorológico reportado por ATC a la adquisición visual efectiva en cabina:
+        </text>
+
+        <rect x="0" y="32" width="890" height="135" rx="8" fill="#101a2b" stroke="#38bdf8" stroke-width="1.5"/>
+        <text x="25" y="60" font-family="sans-serif" font-size="15" font-weight="900" fill="#38bdf8">
+          ¿QUÉ OCURRE SI EL RVR DECAE POR DEBAJO DEL MÍNIMO ESTANDO YA BAJO 1.000 FT?
+        </text>
+        <text x="25" y="88" font-family="sans-serif" font-size="13.5" font-weight="700" fill="#f8fafc">
+          ➔ La normativa EASA permite LEGALMENTE continuar el descenso hasta alcanzar la DA/DH o MDA/MDH.
+        </text>
+        <text x="25" y="112" font-family="sans-serif" font-size="13" font-weight="500" fill="#cbd5e1">
+          • La tripulación no tiene que frustrar automáticamente por el reporte de torre tras cruzar 1.000 ft AAL.
+        </text>
+        <text x="25" y="136" font-family="sans-serif" font-size="13" font-weight="700" fill="#34d399">
+          • El Comandante evaluará visualmente en la altura de decisión si se cumplen las referencias exigidas.
+        </text>
+      </g>
     </g>
 
-    <!-- BLOCK 3: EN LA DA/DH O MDA -->
-    <g transform="translate(0, 350)">
-      <rect width="650" height="175" rx="12" fill="url(#cardGrad1)" stroke="#10b981" stroke-width="1.5" />
-      <rect x="18" y="16" width="36" height="36" rx="8" fill="url(#greenGrad)" />
-      <text x="36" y="41" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="800" text-anchor="middle">3</text>
-      
-      <text x="68" y="34" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="15" font-weight="700">DECISIÓN EN DA/DH O MDA/MDH (REFERENCIAS VISUALES)</text>
-      <text x="68" y="52" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Requisitos visuales estrictos según categoría ILS / LVO</text>
+    <!-- BLOCK 3: DECISIÓN EN DA/DH O MDA (REFERENCIAS VISUALES) -->
+    <g transform="translate(0, 520)">
+      <rect width="940" height="260" rx="12" fill="url(#cardGrad)" stroke="#10b981" stroke-width="2" filter="url(#shadow)"/>
+      <rect width="940" height="42" rx="12" fill="url(#greenGrad)"/>
+      <text x="470" y="28" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">
+        3. DECISIÓN EN DA/DH O MDA/MDH (REFERENCIAS VISUALES EXIGIDAS)
+      </text>
 
-      <rect x="20" y="70" width="295" height="90" rx="8" fill="#064e3b" fill-opacity="0.4" stroke="#10b981" stroke-width="1" />
-      <text x="32" y="92" fill="#34d399" font-size="12" font-weight="800">CAT I (DH ≥ 200 ft):</text>
-      <text x="32" y="109" fill="#cbd5e1" font-size="11">Mínimo 1 elemento visual distintivo (luces de aproximación, umbral, TDZ, marcas).</text>
-      <text x="32" y="128" fill="#34d399" font-size="12" font-weight="800">CAT II (DH 100-200 ft):</text>
-      <text x="32" y="145" fill="#cbd5e1" font-size="11">3 luces consecutivas + 1 barra transversal.</text>
+      <g transform="translate(25, 55)">
+        <text x="0" y="18" font-family="sans-serif" font-size="14" font-weight="600" fill="#cbd5e1">
+          Requisitos visuales mínimos indispensables para continuar por debajo de la DA/DH hacia el aterrizaje:
+        </text>
 
-      <rect x="330" y="70" width="300" height="90" rx="8" fill="#450a0a" fill-opacity="0.3" stroke="#ef4444" stroke-width="1" />
-      <text x="342" y="94" fill="#f87171" font-size="12" font-weight="800">¿SIN REFERENCIAS VISUALES EN DA/DH?</text>
-      <text x="342" y="116" fill="#fca5a5" font-size="12" font-weight="700">¡MISSED APPROACH INMEDIATO!</text>
-      <text x="342" y="136" fill="#e2e8f0" font-size="11">Callout: "GO-AROUND, FLAPS, SET GA THRUST"</text>
-      <text x="342" y="151" fill="#94a3b8" font-size="10">Prohibido buscar la pista por debajo de la DA/DH.</text>
+        <!-- Visual Criteria CAT I / CAT II -->
+        <rect x="0" y="32" width="435" height="155" rx="8" fill="#101a2b" stroke="#10b981" stroke-width="1.5"/>
+        <text x="20" y="58" font-family="sans-serif" font-size="14.5" font-weight="900" fill="#34d399">CAT I (DH ≥ 200 ft):</text>
+        <text x="20" y="80" font-family="sans-serif" font-size="12.5" font-weight="500" fill="#cbd5e1">Mínimo 1 elemento visual distintivo de pista (luces de aproximación, umbral, TDZ o marcas).</text>
+        
+        <text x="20" y="112" font-family="sans-serif" font-size="14.5" font-weight="900" fill="#34d399">CAT II (DH 100 - 200 ft):</text>
+        <text x="20" y="134" font-family="sans-serif" font-size="12.5" font-weight="500" fill="#cbd5e1">Segmento visual mínimo de 3 luces consecutivas (eje/luces de aprox) + 1 barra transversal.</text>
+
+        <!-- No Contact Go-Around -->
+        <rect x="455" y="32" width="435" height="155" rx="8" fill="rgba(220, 38, 38, 0.2)" stroke="#ef4444" stroke-width="1.5"/>
+        <text x="475" y="58" font-family="sans-serif" font-size="14.5" font-weight="900" fill="#f87171">¿SIN REFERENCIAS VISUALES EN DA/DH?</text>
+        <text x="475" y="82" font-family="sans-serif" font-size="14" font-weight="900" fill="#fca5a5">¡MISSED APPROACH INMEDIATO!</text>
+        <text x="475" y="106" font-family="sans-serif" font-size="13" font-weight="800" fill="#ffffff">Callout: "GO-AROUND, FLAPS, SET GA THRUST"</text>
+        <text x="475" y="130" font-family="sans-serif" font-size="12.5" font-weight="500" fill="#fecaca">• Queda terminantemente prohibido buscar la pista por debajo de la DA/DH.</text>
+        <text x="475" y="152" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#fbbf24">• Mantener patrón de frustrada publicado / ATC.</text>
+      </g>
     </g>
 
+  </g>
+
+  <!-- Bottom Detailed AMC & Legal Framework Panel -->
+  <g transform="translate(40, 930)">
+    <rect width="1520" height="185" rx="12" fill="#132035" stroke="#253856" stroke-width="1.5" filter="url(#shadow)"/>
+    
+    <text x="35" y="38" font-family="sans-serif" font-size="16" font-weight="900" fill="#38bdf8">
+      NORMATIVA EUROPEA APLICABLE &amp; DEFINICIONES TÉCNICAS (EASA AIR OPERATIONS):
+    </text>
+
+    <g transform="translate(35, 55)">
+      <text x="0" y="20" font-family="sans-serif" font-size="13.5" font-weight="700" fill="#f8fafc">
+        • RVR de Toque Requerido (TDZ):
+      </text>
+      <text x="260" y="20" font-family="sans-serif" font-size="13.5" font-weight="500" fill="#cbd5e1">
+        El RVR de la zona de toma (Touchdown) es siempre determinante y mandatorio. Los valores de Mid y Stop-end son informativos salvo especificación contraria en ficha de aproximación.
+      </text>
+
+      <text x="0" y="48" font-family="sans-serif" font-size="13.5" font-weight="700" fill="#f8fafc">
+        • Fallo de RVR de Toma:
+      </text>
+      <text x="220" y="48" font-family="sans-serif" font-size="13.5" font-weight="500" fill="#cbd5e1">
+        Si el sensor de Touchdown está inoperativo, puede ser sustituido por el RVR del punto medio (Mid-point) si este cumple los mínimos.
+      </text>
+
+      <text x="0" y="76" font-family="sans-serif" font-size="13.5" font-weight="700" fill="#f8fafc">
+        • Iluminación de Pista &amp; LVP:
+      </text>
+      <text x="245" y="76" font-family="sans-serif" font-size="13.5" font-weight="500" fill="#cbd5e1">
+        Para operaciones CAT II/III, los Procedimientos de Baja Visibilidad (LVP) deben estar obligatoriamente activos y confirmados por ATC antes de iniciar la aproximación final.
+      </text>
+
+      <text x="0" y="104" font-family="sans-serif" font-size="13.5" font-weight="700" fill="#f8fafc">
+        • Criterio de Estabilización:
+      </text>
+      <text x="235" y="104" font-family="sans-serif" font-size="13.5" font-weight="700" fill="#fbbf24">
+        A 1.000 ft en IMC o 500 ft en VMC, cualquier desviación en velocidad (+10/-0), senda (±1 punto) o potencia obliga a frustrar inmediatamente.
+      </text>
+    </g>
   </g>
 </svg>

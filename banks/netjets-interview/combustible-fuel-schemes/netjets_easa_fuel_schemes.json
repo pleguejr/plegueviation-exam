@@ -27,7 +27,7 @@
       }
     ],
     "explanation": {
-      "text": "### EASA Fuel Schemes Architecture\n* **Basic Fuel Scheme (CAT.OP.MPA.180):** Standard conservative pre-flight calculation: Taxi + Trip + 5% Contingency + Destination Alternate + 30 min Final Reserve.\n* **Basic Fuel Scheme with Variations (CAT.OP.MPA.181):** Allows optimized fuel planning (e.g., 3% Contingency with En-route Alternate Fuel ERA, Reduced Contingency Fuel Procedure RCF, Decision Point Procedure, Isolated Aerodrome Scheme), requiring operational control approvals, automated flight planning, and flight monitoring.",
+      "text": "### EASA Fuel Schemes Architecture\n* **Basic Fuel Scheme (CAT.OP.MPA.180):** Standard conservative pre-flight calculation: Taxi + Trip + 5% Contingency + Destination Alternate + 30 min Final Reserve.\n* **Basic Fuel Scheme with Variations (CAT.OP.MPA.181):** Allows optimized fuel planning (e.g., 3% Contingency with En-route Alternate Fuel ERA, Reduced Contingency Fuel Procedure RCF, Decision Point Procedure, Isolated Aerodrome Scheme), requiring operational control approvals, automated flight planning, and flight monitoring.\n\n> 📖 **Extracto Literal del Manual — EASA Part-CAT.OP.MPA.180 / 181 (Pág. 41):**\n> \"Powered by EASA eRules Page 41 of 2566| Mar 2026 CAT.OP.MPA.177 Submission of the ATS flight plan .......................................... 1013 AMC1 CAT.OP.MPA.177 Submission of the ATS flight plan ............................................... 1013 CAT.OP.MPA.180 Fuel/energy scheme – aeroplanes ........................................ 1014 AMC1 CAT.OP.MPA.180 Fuel/energy scheme — aeroplanes ............................................ 1014 GM1 CAT.OP.MPA.180 Fuel/energy scheme — aeroplane...\"\n\n![Recorte Oficial del Manual — EASA Part-CAT.OP.MPA.180 / 181](./manual-crops/netjets-interview/NJ-FUEL-001.png)",
       "references": [
         "EASA Part-CAT.OP.MPA.180 / 181",
         "AMC1/AMC2 CAT.OP.MPA.181"
@@ -65,7 +65,7 @@
       }
     ],
     "explanation": {
-      "text": "### Final Reserve Fuel (CAT.OP.MPA.180)\n* For **turbine-powered aeroplanes**, final reserve fuel is calculated to fly for **30 minutes at holding speed at 1,500 ft (450 m)** above aerodrome elevation in standard ISA atmosphere.\n* For **reciprocating (piston) aeroplanes**, the final reserve is **45 minutes**.\n* Final reserve fuel is **sacrosanct**; landing with less than final reserve fuel requires declaring `MAYDAY MAYDAY MAYDAY FUEL`.",
+      "text": "### Final Reserve Fuel (CAT.OP.MPA.180)\n* For **turbine-powered aeroplanes**, final reserve fuel is calculated to fly for **30 minutes at holding speed at 1,500 ft (450 m)** above aerodrome elevation in standard ISA atmosphere.\n* For **reciprocating (piston) aeroplanes**, the final reserve is **45 minutes**.\n* Final reserve fuel is **sacrosanct**; landing with less than final reserve fuel requires declaring `MAYDAY MAYDAY MAYDAY FUEL`.\n\n> 📖 **Extracto Literal del Manual — EASA Part-CAT.OP.MPA.180(b) (Pág. 41):**\n> \"Powered by EASA eRules Page 41 of 2566| Mar 2026 CAT.OP.MPA.177 Submission of the ATS flight plan .......................................... 1013 AMC1 CAT.OP.MPA.177 Submission of the ATS flight plan ............................................... 1013 CAT.OP.MPA.180 Fuel/energy scheme – aeroplanes ........................................ 1014 AMC1 CAT.OP.MPA.180 Fuel/energy scheme — aeroplanes ............................................ 1014 GM1 CAT.OP.MPA.180 Fuel/energy scheme — aeroplane...\"\n\n![Recorte Oficial del Manual — EASA Part-CAT.OP.MPA.180(b)](./manual-crops/netjets-interview/NJ-FUEL-002.png)",
       "references": [
         "EASA Part-CAT.OP.MPA.180(b)",
         "ICAO Annex 6 Part I"
@@ -103,7 +103,7 @@
       }
     ],
     "explanation": {
-      "text": "### Destination Alternate Fuel (CAT.OP.MPA.180)\nAlternate fuel must cover:\n1. **Missed approach procedure** at the destination aerodrome from the applicable DA/H or MDA/H to the missed approach altitude.\n2. **Climb** from missed approach altitude to the cruising level/altitude.\n3. **Cruise** from destination to the alternate aerodrome.\n4. **Descent** from cruising level to the point where the approach is initiated (IAF).\n5. **Executing the approach and landing** at the destination alternate aerodrome.",
+      "text": "### Destination Alternate Fuel (CAT.OP.MPA.180)\nAlternate fuel must cover:\n1. **Missed approach procedure** at the destination aerodrome from the applicable DA/H or MDA/H to the missed approach altitude.\n2. **Climb** from missed approach altitude to the cruising level/altitude.\n3. **Cruise** from destination to the alternate aerodrome.\n4. **Descent** from cruising level to the point where the approach is initiated (IAF).\n5. **Executing the approach and landing** at the destination alternate aerodrome.\n\n> 📖 **Extracto Literal del Manual — EASA Part-CAT.OP.MPA.180(a) (Pág. 41):**\n> \"Powered by EASA eRules Page 41 of 2566| Mar 2026 CAT.OP.MPA.177 Submission of the ATS flight plan .......................................... 1013 AMC1 CAT.OP.MPA.177 Submission of the ATS flight plan ............................................... 1013 CAT.OP.MPA.180 Fuel/energy scheme – aeroplanes ........................................ 1014 AMC1 CAT.OP.MPA.180 Fuel/energy scheme — aeroplanes ............................................ 1014 GM1 CAT.OP.MPA.180 Fuel/energy scheme — aeroplane...\"\n\n![Recorte Oficial del Manual — EASA Part-CAT.OP.MPA.180(a)](./manual-crops/netjets-interview/NJ-FUEL-003.png)",
       "references": [
         "EASA Part-CAT.OP.MPA.180(a)",
         "AMC1 CAT.OP.MPA.180"
@@ -141,7 +141,7 @@
       }
     ],
     "explanation": {
-      "text": "### Contingency Fuel (CAT.OP.MPA.180)\n* Under the Basic Scheme, contingency fuel is **5% of the planned trip fuel** (or fuel based on consumption at cruising level).\n* In no case shall it be less than the amount required to fly for **5 minutes at holding speed at 1,500 ft (450 m)** above destination aerodrome in standard conditions.",
+      "text": "### Contingency Fuel (CAT.OP.MPA.180)\n* Under the Basic Scheme, contingency fuel is **5% of the planned trip fuel** (or fuel based on consumption at cruising level).\n* In no case shall it be less than the amount required to fly for **5 minutes at holding speed at 1,500 ft (450 m)** above destination aerodrome in standard conditions.\n\n> 📖 **Extracto Literal del Manual — EASA Part-CAT.OP.MPA.180 (Pág. 41):**\n> \"Powered by EASA eRules Page 41 of 2566| Mar 2026 CAT.OP.MPA.177 Submission of the ATS flight plan .......................................... 1013 AMC1 CAT.OP.MPA.177 Submission of the ATS flight plan ............................................... 1013 CAT.OP.MPA.180 Fuel/energy scheme – aeroplanes ........................................ 1014 AMC1 CAT.OP.MPA.180 Fuel/energy scheme — aeroplanes ............................................ 1014 GM1 CAT.OP.MPA.180 Fuel/energy scheme — aeroplane...\"\n\n![Recorte Oficial del Manual — EASA Part-CAT.OP.MPA.180](./manual-crops/netjets-interview/NJ-FUEL-004.png)",
       "references": [
         "EASA Part-CAT.OP.MPA.180",
         "AMC1 CAT.OP.MPA.180"
@@ -179,7 +179,7 @@
       }
     ],
     "explanation": {
-      "text": "### 3% Contingency Fuel with ERA (CAT.OP.MPA.181)\n* Contingency fuel may be reduced to **3% of planned trip fuel** if an **En-Route Alternate (ERA) aerodrome** is available.\n* The ERA must be located within a circle of radius equal to **20% of the total route distance**, centered on the planned route at a distance from destination of at least 20% of the route distance or 50 NM (whichever is greater).",
+      "text": "### 3% Contingency Fuel with ERA (CAT.OP.MPA.181)\n* Contingency fuel may be reduced to **3% of planned trip fuel** if an **En-Route Alternate (ERA) aerodrome** is available.\n* The ERA must be located within a circle of radius equal to **20% of the total route distance**, centered on the planned route at a distance from destination of at least 20% of the route distance or 50 NM (whichever is greater).\n\n> 📖 **Extracto Literal del Manual — EASA Part-CAT.OP.MPA.181 (Pág. 41):**\n> \"Powered by EASA eRules Page 41 of 2566| Mar 2026 gy p GM2 CAT.OP.MPA.180 Fuel/energy scheme — aeroplanes .............................................. 1016 GM3 CAT.OP.MPA.180 Fuel/energy scheme — aeroplanes .............................................. 1018 CAT.OP.MPA.181 Fuel/energy scheme – fuel/energy planning and in-flight re- planning policy – aeroplanes ............................................................................. 1018 AMC1 CAT.OP.MPA.181 Fuel/energy scheme — fuel/ener...\"\n\n![Recorte Oficial del Manual — EASA Part-CAT.OP.MPA.181](./manual-crops/netjets-interview/NJ-FUEL-005.png)",
       "references": [
         "EASA Part-CAT.OP.MPA.181",
         "AMC1 CAT.OP.MPA.181"
@@ -217,7 +217,7 @@
       }
     ],
     "explanation": {
-      "text": "### Reduced Contingency Fuel (RCF) Procedure\n* RCF divides the flight into two stages: before and after a **Decision Point (DP)**.\n* Fuel is calculated to either: (1) Proceed to destination via DP with contingency fuel only required from DP to destination (at least 3%), OR (2) Divert to an En-Route Alternate with full contingency from departure to that alternate.\n* At the DP, the PIC verifies remaining fuel against OFP requirements before committing to destination.",
+      "text": "### Reduced Contingency Fuel (RCF) Procedure\n* RCF divides the flight into two stages: before and after a **Decision Point (DP)**.\n* Fuel is calculated to either: (1) Proceed to destination via DP with contingency fuel only required from DP to destination (at least 3%), OR (2) Divert to an En-Route Alternate with full contingency from departure to that alternate.\n* At the DP, the PIC verifies remaining fuel against OFP requirements before committing to destination.\n\n> 📖 **Extracto Literal del Manual — EASA Part-CAT.OP.MPA.181 (Pág. 41):**\n> \"Powered by EASA eRules Page 41 of 2566| Mar 2026 gy p GM2 CAT.OP.MPA.180 Fuel/energy scheme — aeroplanes .............................................. 1016 GM3 CAT.OP.MPA.180 Fuel/energy scheme — aeroplanes .............................................. 1018 CAT.OP.MPA.181 Fuel/energy scheme – fuel/energy planning and in-flight re- planning policy – aeroplanes ............................................................................. 1018 AMC1 CAT.OP.MPA.181 Fuel/energy scheme — fuel/ener...\"\n\n![Recorte Oficial del Manual — EASA Part-CAT.OP.MPA.181](./manual-crops/netjets-interview/NJ-FUEL-006.png)",
       "references": [
         "EASA Part-CAT.OP.MPA.181",
         "AMC1 CAT.OP.MPA.181"
@@ -255,7 +255,7 @@
       }
     ],
     "explanation": {
-      "text": "### Individual Fuel Consumption Monitoring (IFCM)\n* IFCM tracks historical fuel burn data for **each specific airframe (tail number)**.\n* It calculates an individual **fuel bias factor (PERF factor)** reflecting engine wear and aerodynamic degradation, ensuring high-accuracy OFP burn predictions.",
+      "text": "### Individual Fuel Consumption Monitoring (IFCM)\n* IFCM tracks historical fuel burn data for **each specific airframe (tail number)**.\n* It calculates an individual **fuel bias factor (PERF factor)** reflecting engine wear and aerodynamic degradation, ensuring high-accuracy OFP burn predictions.\n\n> 📖 **Extracto Literal del Manual — EASA AMC1 CAT.OP.MPA.181 (Pág. 41):**\n> \"Powered by EASA eRules Page 41 of 2566| Mar 2026 gy p GM2 CAT.OP.MPA.180 Fuel/energy scheme — aeroplanes .............................................. 1016 GM3 CAT.OP.MPA.180 Fuel/energy scheme — aeroplanes .............................................. 1018 CAT.OP.MPA.181 Fuel/energy scheme – fuel/energy planning and in-flight re- planning policy – aeroplanes ............................................................................. 1018 AMC1 CAT.OP.MPA.181 Fuel/energy scheme — fuel/ener...\"\n\n![Recorte Oficial del Manual — EASA AMC1 CAT.OP.MPA.181](./manual-crops/netjets-interview/NJ-FUEL-007.png)",
       "references": [
         "EASA AMC1 CAT.OP.MPA.181",
         "ICAO Doc 9976 Flight Planning and Fuel Management"
@@ -293,7 +293,7 @@
       }
     ],
     "explanation": {
-      "text": "### Isolated Aerodrome Procedure (CAT.OP.MPA.180 / 181)\n* For turbine aeroplanes flying to an isolated aerodrome, the fuel planned must include **Additional Fuel** sufficient to fly for **2 hours at normal cruising consumption** above destination, which includes final reserve fuel.\n* A Point of No Return (PNR) must be determined on the OFP.",
+      "text": "### Isolated Aerodrome Procedure (CAT.OP.MPA.180 / 181)\n* For turbine aeroplanes flying to an isolated aerodrome, the fuel planned must include **Additional Fuel** sufficient to fly for **2 hours at normal cruising consumption** above destination, which includes final reserve fuel.\n* A Point of No Return (PNR) must be determined on the OFP.\n\n> 📖 **Extracto Literal del Manual — EASA Part-CAT.OP.MPA.180(d) (Pág. 41):**\n> \"Powered by EASA eRules Page 41 of 2566| Mar 2026 CAT.OP.MPA.177 Submission of the ATS flight plan .......................................... 1013 AMC1 CAT.OP.MPA.177 Submission of the ATS flight plan ............................................... 1013 CAT.OP.MPA.180 Fuel/energy scheme – aeroplanes ........................................ 1014 AMC1 CAT.OP.MPA.180 Fuel/energy scheme — aeroplanes ............................................ 1014 GM1 CAT.OP.MPA.180 Fuel/energy scheme — aeroplane...\"\n\n![Recorte Oficial del Manual — EASA Part-CAT.OP.MPA.180(d)](./manual-crops/netjets-interview/NJ-FUEL-008.png)",
       "references": [
         "EASA Part-CAT.OP.MPA.180(d)",
         "AMC1 CAT.OP.MPA.180"
@@ -331,7 +331,7 @@
       }
     ],
     "explanation": {
-      "text": "### MINIMUM FUEL Declaration\n* The PIC shall advise ATC of a **MINIMUM FUEL** state by broadcasting `MINIMUM FUEL` when having committed to land at a specific aerodrome and calculating that any change to the existing clearance may result in landing with **less than the planned final reserve fuel**.\n* `MINIMUM FUEL` is **not an emergency**, but informs ATC that no unexpected delay can be accepted. If landing with less than final reserve is inevitable, declare `MAYDAY MAYDAY MAYDAY FUEL`.",
+      "text": "### MINIMUM FUEL Declaration\n* The PIC shall advise ATC of a **MINIMUM FUEL** state by broadcasting `MINIMUM FUEL` when having committed to land at a specific aerodrome and calculating that any change to the existing clearance may result in landing with **less than the planned final reserve fuel**.\n* `MINIMUM FUEL` is **not an emergency**, but informs ATC that no unexpected delay can be accepted. If landing with less than final reserve is inevitable, declare `MAYDAY MAYDAY MAYDAY FUEL`.\n\n> 📖 **Extracto Literal del Manual — ICAO Annex 6 Part I / EASA CAT.OP.MPA.180 (Pág. 41):**\n> \"Powered by EASA eRules Page 41 of 2566| Mar 2026 CAT.OP.MPA.177 Submission of the ATS flight plan .......................................... 1013 AMC1 CAT.OP.MPA.177 Submission of the ATS flight plan ............................................... 1013 CAT.OP.MPA.180 Fuel/energy scheme – aeroplanes ........................................ 1014 AMC1 CAT.OP.MPA.180 Fuel/energy scheme — aeroplanes ............................................ 1014 GM1 CAT.OP.MPA.180 Fuel/energy scheme — aeroplane...\"\n\n![Recorte Oficial del Manual — ICAO Annex 6 Part I / EASA CAT.OP.MPA.180](./manual-crops/netjets-interview/NJ-FUEL-009.png)",
       "references": [
         "ICAO Annex 6 Part I / EASA CAT.OP.MPA.180",
         "ICAO Doc 4444 (PANS-ATM)"
@@ -369,7 +369,7 @@
       }
     ],
     "explanation": {
-      "text": "### MAYDAY FUEL Declaration\n* The PIC shall declare a situation of **fuel distress** by broadcasting `MAYDAY MAYDAY MAYDAY FUEL` when the **calculated usable fuel estimated to be available upon landing at the nearest aerodrome where a safe landing can be made is less than the planned final reserve fuel**.\n* This is an explicit distress call conveying maximum priority handling from ATC.",
+      "text": "### MAYDAY FUEL Declaration\n* The PIC shall declare a situation of **fuel distress** by broadcasting `MAYDAY MAYDAY MAYDAY FUEL` when the **calculated usable fuel estimated to be available upon landing at the nearest aerodrome where a safe landing can be made is less than the planned final reserve fuel**.\n* This is an explicit distress call conveying maximum priority handling from ATC.\n\n> 📖 **Extracto Literal del Manual — EASA CAT.OP.MPA.180 (Pág. 41):**\n> \"Powered by EASA eRules Page 41 of 2566| Mar 2026 CAT.OP.MPA.177 Submission of the ATS flight plan .......................................... 1013 AMC1 CAT.OP.MPA.177 Submission of the ATS flight plan ............................................... 1013 CAT.OP.MPA.180 Fuel/energy scheme – aeroplanes ........................................ 1014 AMC1 CAT.OP.MPA.180 Fuel/energy scheme — aeroplanes ............................................ 1014 GM1 CAT.OP.MPA.180 Fuel/energy scheme — aeroplane...\"\n\n![Recorte Oficial del Manual — EASA CAT.OP.MPA.180](./manual-crops/netjets-interview/NJ-FUEL-010.png)",
       "references": [
         "EASA CAT.OP.MPA.180",
         "ICAO Annex 6 Part I / Doc 4444"
@@ -407,7 +407,7 @@
       }
     ],
     "explanation": {
-      "text": "### Decision Point Procedure\n* Contingency fuel is calculated based only on the **flight segment from the Decision Point (DP) to the destination aerodrome** (usually 5%, or 3% if an en-route alternate is available).\n* This allows a significant reduction in take-off weight while maintaining full legal safety margins.",
+      "text": "### Decision Point Procedure\n* Contingency fuel is calculated based only on the **flight segment from the Decision Point (DP) to the destination aerodrome** (usually 5%, or 3% if an en-route alternate is available).\n* This allows a significant reduction in take-off weight while maintaining full legal safety margins.\n\n> 📖 **Extracto Literal del Manual — EASA CAT.OP.MPA.181 (Pág. 41):**\n> \"Powered by EASA eRules Page 41 of 2566| Mar 2026 gy p GM2 CAT.OP.MPA.180 Fuel/energy scheme — aeroplanes .............................................. 1016 GM3 CAT.OP.MPA.180 Fuel/energy scheme — aeroplanes .............................................. 1018 CAT.OP.MPA.181 Fuel/energy scheme – fuel/energy planning and in-flight re- planning policy – aeroplanes ............................................................................. 1018 AMC1 CAT.OP.MPA.181 Fuel/energy scheme — fuel/ener...\"\n\n![Recorte Oficial del Manual — EASA CAT.OP.MPA.181](./manual-crops/netjets-interview/NJ-FUEL-011.png)",
       "references": [
         "EASA CAT.OP.MPA.181",
         "AMC1 CAT.OP.MPA.181"
@@ -445,7 +445,7 @@
       }
     ],
     "explanation": {
-      "text": "### Commander Discretionary Fuel\n* Under EASA **CAT.GEN.MPA.105** and **CAT.OP.MPA.180**, the Commander has the **ultimate authority and responsibility** to add discretionary extra fuel if anticipated operational conditions (weather, delays, runway closures, icing) warrant it.\n* The fuel on board at block-off and the rationale for significant extra fuel must be recorded in the Journey Log / OFP.",
+      "text": "### Commander Discretionary Fuel\n* Under EASA **CAT.GEN.MPA.105** and **CAT.OP.MPA.180**, the Commander has the **ultimate authority and responsibility** to add discretionary extra fuel if anticipated operational conditions (weather, delays, runway closures, icing) warrant it.\n* The fuel on board at block-off and the rationale for significant extra fuel must be recorded in the Journey Log / OFP.\n\n> 📖 **Extracto Literal del Manual — EASA CAT.GEN.MPA.105 (Pág. 37):**\n> \"p AMC1 CAT.GEN.MPA.100(c)(1) Crew responsibilities .......................................................... 890 GM1 CAT.GEN.MPA.100(c)(2) Crew responsibilities ............................................................ 890 CAT.GEN.MPA.105 Responsibilities of the commander ...................................... 890 GM1 CAT.GEN.MPA.105(a)(10) Responsibilities of the commander ................................... 892 CAT.GEN.MPA.110 Authority of the commander ....................................\"\n\n![Recorte Oficial del Manual — EASA CAT.GEN.MPA.105](./manual-crops/netjets-interview/NJ-FUEL-012.png)",
       "references": [
         "EASA CAT.GEN.MPA.105",
         "EASA CAT.OP.MPA.180"
@@ -483,7 +483,7 @@
       }
     ],
     "explanation": {
-      "text": "### In-Flight Re-planning (CAT.OP.MPA.180 / 185)\n* When re-planning in flight to a new destination, the usable fuel remaining from the re-planning point must be sufficient to include:\n  1. Trip fuel to new destination\n  2. Contingency fuel (from re-planning point)\n  3. Alternate fuel (if alternate required)\n  4. Final reserve fuel\n  5. Any required additional fuel.",
+      "text": "### In-Flight Re-planning (CAT.OP.MPA.180 / 185)\n* When re-planning in flight to a new destination, the usable fuel remaining from the re-planning point must be sufficient to include:\n  1. Trip fuel to new destination\n  2. Contingency fuel (from re-planning point)\n  3. Alternate fuel (if alternate required)\n  4. Final reserve fuel\n  5. Any required additional fuel.\n\n> 📖 **Extracto Literal del Manual — EASA CAT.OP.MPA.180 (Pág. 41):**\n> \"Powered by EASA eRules Page 41 of 2566| Mar 2026 CAT.OP.MPA.177 Submission of the ATS flight plan .......................................... 1013 AMC1 CAT.OP.MPA.177 Submission of the ATS flight plan ............................................... 1013 CAT.OP.MPA.180 Fuel/energy scheme – aeroplanes ........................................ 1014 AMC1 CAT.OP.MPA.180 Fuel/energy scheme — aeroplanes ............................................ 1014 GM1 CAT.OP.MPA.180 Fuel/energy scheme — aeroplane...\"\n\n![Recorte Oficial del Manual — EASA CAT.OP.MPA.180](./manual-crops/netjets-interview/NJ-FUEL-013.png)",
       "references": [
         "EASA CAT.OP.MPA.180",
         "AMC1 CAT.OP.MPA.185"
@@ -521,7 +521,7 @@
       }
     ],
     "explanation": {
-      "text": "### Dispatch Without Destination Alternate (CAT.OP.MPA.180)\nUnder EASA Part-CAT, an IFR flight may be planned without a destination alternate if:\n1. The planned flight duration does not exceed **6 hours**;\n2. Two separate and usable runways are available at destination; and\n3. Weather reports/forecasts from **1 hour before to 1 hour after ETA** indicate ceiling at least **2,000 ft or circling minima + 500 ft** (whichever higher) and visibility at least **5 km**.",
+      "text": "### Dispatch Without Destination Alternate (CAT.OP.MPA.180)\nUnder EASA Part-CAT, an IFR flight may be planned without a destination alternate if:\n1. The planned flight duration does not exceed **6 hours**;\n2. Two separate and usable runways are available at destination; and\n3. Weather reports/forecasts from **1 hour before to 1 hour after ETA** indicate ceiling at least **2,000 ft or circling minima + 500 ft** (whichever higher) and visibility at least **5 km**.\n\n> 📖 **Extracto Literal del Manual — EASA CAT.OP.MPA.180(a)(2) (Pág. 41):**\n> \"Powered by EASA eRules Page 41 of 2566| Mar 2026 CAT.OP.MPA.177 Submission of the ATS flight plan .......................................... 1013 AMC1 CAT.OP.MPA.177 Submission of the ATS flight plan ............................................... 1013 CAT.OP.MPA.180 Fuel/energy scheme – aeroplanes ........................................ 1014 AMC1 CAT.OP.MPA.180 Fuel/energy scheme — aeroplanes ............................................ 1014 GM1 CAT.OP.MPA.180 Fuel/energy scheme — aeroplane...\"\n\n![Recorte Oficial del Manual — EASA CAT.OP.MPA.180(a)(2)](./manual-crops/netjets-interview/NJ-FUEL-014.png)",
       "references": [
         "EASA CAT.OP.MPA.180(a)(2)",
         "AMC1 CAT.OP.MPA.180"
@@ -559,7 +559,7 @@
       }
     ],
     "explanation": {
-      "text": "### Point of No Return (PNR) / PSR\n* The **Point of No Return (PNR)** is the last point on a flight route from which an aircraft can return to its departure aerodrome (or en-route alternate) and land with the **required reserves (Final Reserve)**.\n* Beyond the PNR, the aircraft is committed to proceed onward.",
+      "text": "### Point of No Return (PNR) / PSR\n* The **Point of No Return (PNR)** is the last point on a flight route from which an aircraft can return to its departure aerodrome (or en-route alternate) and land with the **required reserves (Final Reserve)**.\n* Beyond the PNR, the aircraft is committed to proceed onward.\n\n> 📖 **Extracto Literal del Manual — ICAO Doc 9976 (Pág. 41):**\n> \"Powered by EASA eRules Page 41 of 2566| Mar 2026 gy p GM2 CAT.OP.MPA.180 Fuel/energy scheme — aeroplanes .............................................. 1016 GM3 CAT.OP.MPA.180 Fuel/energy scheme — aeroplanes .............................................. 1018 CAT.OP.MPA.181 Fuel/energy scheme – fuel/energy planning and in-flight re- planning policy – aeroplanes ............................................................................. 1018 AMC1 CAT.OP.MPA.181 Fuel/energy scheme — fuel/ener...\"\n\n![Recorte Oficial del Manual — ICAO Doc 9976](./manual-crops/netjets-interview/NJ-FUEL-015.png)",
       "references": [
         "ICAO Doc 9976",
         "EASA AMC1 CAT.OP.MPA.181"
@@ -597,7 +597,7 @@
       }
     ],
     "explanation": {
-      "text": "### Equal Time Point (ETP) / Critical Point (CP)\n* The **ETP (Critical Point)** is the position on the flight path from which it takes the **same flight time** to fly forward to an alternate/destination as it does to return to a suitable departure/en-route alternate.\n* Formula: `D_ETP = (D * G_home) / (G_out + G_home)` where D is total distance, and G represents groundspeeds.",
+      "text": "### Equal Time Point (ETP) / Critical Point (CP)\n* The **ETP (Critical Point)** is the position on the flight path from which it takes the **same flight time** to fly forward to an alternate/destination as it does to return to a suitable departure/en-route alternate.\n* Formula: `D_ETP = (D * G_home) / (G_out + G_home)` where D is total distance, and G represents groundspeeds.\n\n> 📖 **Extracto Literal del Manual — ICAO Doc 9976 (Pág. 41):**\n> \"Powered by EASA eRules Page 41 of 2566| Mar 2026 gy p GM2 CAT.OP.MPA.180 Fuel/energy scheme — aeroplanes .............................................. 1016 GM3 CAT.OP.MPA.180 Fuel/energy scheme — aeroplanes .............................................. 1018 CAT.OP.MPA.181 Fuel/energy scheme – fuel/energy planning and in-flight re- planning policy – aeroplanes ............................................................................. 1018 AMC1 CAT.OP.MPA.181 Fuel/energy scheme — fuel/ener...\"\n\n![Recorte Oficial del Manual — ICAO Doc 9976](./manual-crops/netjets-interview/NJ-FUEL-016.png)",
       "references": [
         "ICAO Doc 9976",
         "EASA AMC1 CAT.OP.MPA.181"
@@ -635,7 +635,7 @@
       }
     ],
     "explanation": {
-      "text": "### Refueling with Passengers on Board (CAT.OP.MPA.195)\nMandatory precautions include:\n1. **Qualified personnel** stationed at designated positions ready to initiate and direct an evacuation.\n2. **Two-way communication** maintained between ground crew and flight crew/cabin crew.\n3. **Seat belt signs OFF** and passengers instructed to unfasten seat belts.\n4. **Emergency exit paths and doors clear** of ground equipment.\n5. Refuelling with wide-cut fuel (e.g. Jet B / JP-4) with passengers on board is strictly prohibited.",
+      "text": "### Refueling with Passengers on Board (CAT.OP.MPA.195)\nMandatory precautions include:\n1. **Qualified personnel** stationed at designated positions ready to initiate and direct an evacuation.\n2. **Two-way communication** maintained between ground crew and flight crew/cabin crew.\n3. **Seat belt signs OFF** and passengers instructed to unfasten seat belts.\n4. **Emergency exit paths and doors clear** of ground equipment.\n5. Refuelling with wide-cut fuel (e.g. Jet B / JP-4) with passengers on board is strictly prohibited.\n\n> 📖 **Extracto Literal del Manual — EASA Part-CAT.OP.MPA.195 (Pág. 43):**\n> \"p g p GM1 CAT.OP.MPA.192(d) Selection of aerodromes and operating sites — helicopters ... 1056 GM2 CAT.OP.MPA.192(d) Selection of aerodromes and operating sites — helicopters ... 1056 CAT.OP.MPA.195 Fuel/energy scheme – in-flight fuel/energy management policy – helicopters .......................................................................................................... 1057 AMC1 CAT.OP.MPA.195 Fuel/energy scheme — in-flight fuel/energy management policy — helicopters ...................\"\n\n![Recorte Oficial del Manual — EASA Part-CAT.OP.MPA.195](./manual-crops/netjets-interview/NJ-FUEL-017.png)",
       "references": [
         "EASA Part-CAT.OP.MPA.195",
         "AMC1 CAT.OP.MPA.195"
@@ -673,7 +673,7 @@
       }
     ],
     "explanation": {
-      "text": "### Fuel Density and Mass Verification\n* Fuel is metered by volume (litres/gallons) by fuel trucks, but aircraft performance and weight & balance rely strictly on **fuel mass (kg/lbs)**.\n* Standard Jet A-1 density varies between ~0.775 and 0.840 kg/L. Using an incorrect standard density can cause errors of hundreds of kilograms in actual fuel loaded vs planned.",
+      "text": "### Fuel Density and Mass Verification\n* Fuel is metered by volume (litres/gallons) by fuel trucks, but aircraft performance and weight & balance rely strictly on **fuel mass (kg/lbs)**.\n* Standard Jet A-1 density varies between ~0.775 and 0.840 kg/L. Using an incorrect standard density can cause errors of hundreds of kilograms in actual fuel loaded vs planned.\n\n> 📖 **Extracto Literal del Manual — ICAO Doc 9976 (Pág. 48):**\n> \"SECTION 3 – Mass and balance .................................................................................... 1250 CHAPTER 1 – Motor-powered aircraft ............................................................... 1250 CAT.POL.MAB.100 Mass and balance, loading ................................................................... 1250 AMC1 CAT.POL.MAB.100(a) Mass and balance, loading ........................................................ 1251 AMC1 CAT.POL.MAB.100(b) Mass and balance, loadi...\"\n\n![Recorte Oficial del Manual — ICAO Doc 9976](./manual-crops/netjets-interview/NJ-FUEL-018.png)",
       "references": [
         "ICAO Doc 9976",
         "EASA CAT.POL.MAB.100"
@@ -711,7 +711,7 @@
       }
     ],
     "explanation": {
-      "text": "### Diversion Commitment (CAT.OP.MPA.185)\n* The PIC must initiate a diversion to the destination alternate whenever usable fuel on board drops to the level where, after a missed approach, the aircraft would arrive at the alternate with **less than Final Reserve Fuel**.\n* Diversion Fuel = Alternate Fuel + Final Reserve Fuel.",
+      "text": "### Diversion Commitment (CAT.OP.MPA.185)\n* The PIC must initiate a diversion to the destination alternate whenever usable fuel on board drops to the level where, after a missed approach, the aircraft would arrive at the alternate with **less than Final Reserve Fuel**.\n* Diversion Fuel = Alternate Fuel + Final Reserve Fuel.\n\n> 📖 **Extracto Literal del Manual — EASA CAT.OP.MPA.180 / 185 (Pág. 41):**\n> \"Powered by EASA eRules Page 41 of 2566| Mar 2026 CAT.OP.MPA.177 Submission of the ATS flight plan .......................................... 1013 AMC1 CAT.OP.MPA.177 Submission of the ATS flight plan ............................................... 1013 CAT.OP.MPA.180 Fuel/energy scheme – aeroplanes ........................................ 1014 AMC1 CAT.OP.MPA.180 Fuel/energy scheme — aeroplanes ............................................ 1014 GM1 CAT.OP.MPA.180 Fuel/energy scheme — aeroplane...\"\n\n![Recorte Oficial del Manual — EASA CAT.OP.MPA.180 / 185](./manual-crops/netjets-interview/NJ-FUEL-019.png)",
       "references": [
         "EASA CAT.OP.MPA.180 / 185",
         "AMC1 CAT.OP.MPA.185"
@@ -749,7 +749,7 @@
       }
     ],
     "explanation": {
-      "text": "### Fuel Crossfeed & Balancing Hazards\n* Asymmetric fuel loading creates lateral CG displacement, requiring flight control trim which increases aerodynamic drag and fuel burn.\n* Leaving crossfeed open inadvertently can result in asymmetrical depletion or fuel starvation of an engine if boost pumps are misconfigured.",
+      "text": "### Fuel Crossfeed & Balancing Hazards\n* Asymmetric fuel loading creates lateral CG displacement, requiring flight control trim which increases aerodynamic drag and fuel burn.\n* Leaving crossfeed open inadvertently can result in asymmetrical depletion or fuel starvation of an engine if boost pumps are misconfigured.\n\n> 📖 **Extracto Literal del Manual — CS-25.1001 (Pág. 1886):**\n> \"Powered by EASA eRules Page 1886 of 2566| Mar 2026 Regulation (EU) No 800/2013 (a) Each flight crew member required to be on duty in the flight crew compartment shall wear a headset with boom microphone or equivalent. The headset shall be used as the primary device for voice communications with ATS: (1) when on the ground: (i) when receiving the ATC departure clearance via voice communication; and (ii) when engines are running; (2) when in flight: (i) below transition altitude; or (ii) 10 000...\"\n\n![Recorte Oficial del Manual — CS-25.1001](./manual-crops/netjets-interview/NJ-FUEL-020.png)",
       "references": [
         "CS-25.1001",
         "AFM / FCOM Systems"
@@ -787,7 +787,7 @@
       }
     ],
     "explanation": {
-      "text": "### Fuel Jettisoning System (CS-25.1001)\n* A fuel jettisoning system is required if the **Maximum Takeoff Mass (MTOM)** exceeds the **Maximum Landing Mass (MLM)** by a margin such that the aircraft cannot meet the required **one-engine-inoperative go-around climb gradient** or balked landing requirements at MTOM minus 15 minutes of flight.",
+      "text": "### Fuel Jettisoning System (CS-25.1001)\n* A fuel jettisoning system is required if the **Maximum Takeoff Mass (MTOM)** exceeds the **Maximum Landing Mass (MLM)** by a margin such that the aircraft cannot meet the required **one-engine-inoperative go-around climb gradient** or balked landing requirements at MTOM minus 15 minutes of flight.\n\n> 📖 **Extracto Literal del Manual — EASA CS-25.1001 (Pág. 1135):**\n> \"Regulation (EU) No 965/2012 (a) The landing mass of the aeroplane determined in accordance with CAT.POL.A.105(a) shall not exceed the maximum landing mass specified for the altitude and the ambient temperature expected for the estimated time of landing at the destination aerodrome and alternate aerodrome. AMC1 CAT.POL.A.225 Landing – destination and alternate aerodromes ED Decision 2014/015/R ALTITUDE MEASURING The operator should use either pressure altitude or geometric altitude for its ope...\"\n\n![Recorte Oficial del Manual — EASA CS-25.1001](./manual-crops/netjets-interview/NJ-FUEL-021.png)",
       "references": [
         "EASA CS-25.1001",
         "ICAO Annex 6 Part I"
@@ -825,7 +825,7 @@
       }
     ],
     "explanation": {
-      "text": "### Fuel Freezing Point Limitations\n* For **Jet A-1**, standard freezing point is **-47°C** (for Jet A it is **-40°C**).\n* The certified operational limitation requires fuel temperature to remain at least **3°C above the freeze point** (i.e. not below -44°C for Jet A-1).\n* If fuel temperature approaches limit: descend to warmer air, accelerate Mach number to increase kinetic heating, or divert.",
+      "text": "### Fuel Freezing Point Limitations\n* For **Jet A-1**, standard freezing point is **-47°C** (for Jet A it is **-40°C**).\n* The certified operational limitation requires fuel temperature to remain at least **3°C above the freeze point** (i.e. not below -44°C for Jet A-1).\n* If fuel temperature approaches limit: descend to warmer air, accelerate Mach number to increase kinetic heating, or divert.\n\n> 📖 **Extracto Literal del Manual — AFM Limitations (Pág. 1071):**\n> \"Powered by EASA eRules Page 1071 of 2566| Mar 2026 capability under varying weather conditions. (n) ‘Lowest operational use temperature (LOUT)’: the lowest temperature at which a fluid has been tested and certified as acceptable in accordance with the appropriate aerodynamic acceptance test whilst still maintaining a freezing point buffer of not less than: (1) 10°C for a Type I fluid; or (2) 7°C for Type II, III or IV fluids. (o) ‘Post-treatment check’, ‘Post- de-icing check’ or ‘Post- de-ici...\"\n\n![Recorte Oficial del Manual — AFM Limitations](./manual-crops/netjets-interview/NJ-FUEL-022.png)",
       "references": [
         "AFM Limitations",
         "ICAO Doc 9976"
@@ -863,7 +863,7 @@
       }
     ],
     "explanation": {
-      "text": "### Additional Fuel (CAT.OP.MPA.180)\n* **Additional Fuel** is the supplementary fuel required to ensure that in the event of **engine failure or loss of pressurization at the most critical point**, the aircraft can descend, fly to an alternate aerodrome, hold for 15 minutes at 1,500 ft, and execute an approach and landing.",
+      "text": "### Additional Fuel (CAT.OP.MPA.180)\n* **Additional Fuel** is the supplementary fuel required to ensure that in the event of **engine failure or loss of pressurization at the most critical point**, the aircraft can descend, fly to an alternate aerodrome, hold for 15 minutes at 1,500 ft, and execute an approach and landing.\n\n> 📖 **Extracto Literal del Manual — EASA Part-CAT.OP.MPA.180 (Pág. 41):**\n> \"Powered by EASA eRules Page 41 of 2566| Mar 2026 CAT.OP.MPA.177 Submission of the ATS flight plan .......................................... 1013 AMC1 CAT.OP.MPA.177 Submission of the ATS flight plan ............................................... 1013 CAT.OP.MPA.180 Fuel/energy scheme – aeroplanes ........................................ 1014 AMC1 CAT.OP.MPA.180 Fuel/energy scheme — aeroplanes ............................................ 1014 GM1 CAT.OP.MPA.180 Fuel/energy scheme — aeroplane...\"\n\n![Recorte Oficial del Manual — EASA Part-CAT.OP.MPA.180](./manual-crops/netjets-interview/NJ-FUEL-023.png)",
       "references": [
         "EASA Part-CAT.OP.MPA.180",
         "AMC1 CAT.OP.MPA.180"

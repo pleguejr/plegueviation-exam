@@ -27,7 +27,7 @@
       }
     ],
     "explanation": {
-      "text": "### RVSM Airspace Definition\n* **Boundaries:** **FL290 to FL410 inclusive**.\n* **Vertical Separation:** **1,000 ft (300 m)** between RVSM-approved aircraft, instead of the conventional 2,000 ft separation applied above FL290.",
+      "text": "### RVSM Airspace Definition\n* **Boundaries:** **FL290 to FL410 inclusive**.\n* **Vertical Separation:** **1,000 ft (300 m)** between RVSM-approved aircraft, instead of the conventional 2,000 ft separation applied above FL290.\n\n> 📖 **Extracto Literal del Manual — ICAO Doc 9574 (RVSM Manual) (Pág. 1458):**\n> \"Easy Access Rules for Air Operations ANNEX V (Part-SPA) SUBPART D: OPERATIONS IN AIRSPACE WITH REDUCED VERTICAL SEPARATION MINIMA (RVSM) (1) the equipment to be carried, including its operating limitations and appropriate entries in the MEL; (2) flight crew composition and experience requirements; (3) normal procedures; (4) contingency procedures including those specified by the authority responsible for the airspace concerned; (5) monitoring and incident reporting. AMC1 SPA.MNPS.105 MNPS ope...\"\n\n![Recorte Oficial del Manual — ICAO Doc 9574 (RVSM Manual)](./manual-crops/netjets-interview/NJ-RVSM-001.png)",
       "references": [
         "ICAO Doc 9574 (RVSM Manual)",
         "EASA SPA.RVSM.100"
@@ -65,7 +65,7 @@
       }
     ],
     "explanation": {
-      "text": "### Mandatory RVSM Equipment Suite (SPA.RVSM.100 / ICAO Doc 9574)\n1. **Two independent primary altitude measurement systems** (ADC/Altimeters).\n2. **One Altitude Alerting System**.\n3. **One Automatic Altitude Control System** (Autopilot with altitude hold holding within ±65 ft).\n4. **One SSR Altitude Reporting Transponder** (connected to operating primary altimeter).",
+      "text": "### Mandatory RVSM Equipment Suite (SPA.RVSM.100 / ICAO Doc 9574)\n1. **Two independent primary altitude measurement systems** (ADC/Altimeters).\n2. **One Altitude Alerting System**.\n3. **One Automatic Altitude Control System** (Autopilot with altitude hold holding within ±65 ft).\n4. **One SSR Altitude Reporting Transponder** (connected to operating primary altimeter).\n\n> 📖 **Extracto Literal del Manual — EASA Part-SPA.RVSM.100 / AMC1 SPA.RVSM.105 (Pág. 1461):**\n> \"( ) p y (1) The following equipment should be operating normally at entry into RVSM airspace: (i) two primary altitude measurement systems. A cross-check between the primary altimeters should be made. A minimum of two will need to agree within ±60 m (±200 ft). Failure to meet this condition will require that the altimetry system be reported as defective and air traffic control (ATC) notified; (ii) one automatic altitude-control system; (iii) one altitude-alerting device; and (iv) operating tr...\"\n\n![Recorte Oficial del Manual — EASA Part-SPA.RVSM.100 / AMC1 SPA.RVSM.105](./manual-crops/netjets-interview/NJ-RVSM-002.png)",
       "references": [
         "EASA Part-SPA.RVSM.100 / AMC1 SPA.RVSM.105",
         "ICAO Doc 9574"
@@ -103,7 +103,7 @@
       }
     ],
     "explanation": {
-      "text": "### RVSM Altimeter Pre-Flight Checks\n* On the ground at a known elevation point:\n  1. Each primary altimeter must read within **±75 ft** of the surveyed elevation (with local QNH set).\n  2. The difference between the two primary altimeters must not exceed the limit specified in the AFM (typically **50 ft to 75 ft**).",
+      "text": "### RVSM Altimeter Pre-Flight Checks\n* On the ground at a known elevation point:\n  1. Each primary altimeter must read within **±75 ft** of the surveyed elevation (with local QNH set).\n  2. The difference between the two primary altimeters must not exceed the limit specified in the AFM (typically **50 ft to 75 ft**).\n\n> 📖 **Extracto Literal del Manual — ICAO Doc 9574 (Pág. 1460):**\n> \"Powered by EASA eRules Page 1460 of 2566| Mar 2026 p p g p y altimeters should also agree within limits specified by the aircraft operating manual. An alternative procedure using QFE (atmospheric pressure at aerodrome elevation/runway threshold) may also be used. The maximum value of acceptable altimeter differences for these checks should not exceed 23 m (75 ft). Any required functioning checks of altitude indicating systems should be performed.\"\n\n![Recorte Oficial del Manual — ICAO Doc 9574](./manual-crops/netjets-interview/NJ-RVSM-003.png)",
       "references": [
         "ICAO Doc 9574",
         "EASA AMC1 SPA.RVSM.105"
@@ -141,7 +141,7 @@
       }
     ],
     "explanation": {
-      "text": "### In-Flight RVSM Cross-Checks\n* At intervals of approximately **one hour**, cross-checks between the primary altimeters must be recorded.\n* The maximum permissible difference between primary altimeters in flight is **200 ft (60 m)**.\n* If the difference exceeds 200 ft, the altimetry system is considered degraded and ATC must be notified.",
+      "text": "### In-Flight RVSM Cross-Checks\n* At intervals of approximately **one hour**, cross-checks between the primary altimeters must be recorded.\n* The maximum permissible difference between primary altimeters in flight is **200 ft (60 m)**.\n* If the difference exceeds 200 ft, the altimetry system is considered degraded and ATC must be notified.\n\n> 📖 **Extracto Literal del Manual — ICAO Doc 9574 (Pág. 1461):**\n> \"Powered by EASA eRules Page 1461 of 2566| Mar 2026 off should be accomplished using the altitude capture feature of the automatic altitude-control system. (v) An automatic altitude-control system should be operative and engaged during level cruise, except when circumstances such as the need to re-trim the aircraft or turbulence require disengagement. In any event, adherence to cruise altitude should be done by reference to one of the two primary altimeters. Following loss of the automatic hei...\"\n\n![Recorte Oficial del Manual — ICAO Doc 9574](./manual-crops/netjets-interview/NJ-RVSM-004.png)",
       "references": [
         "ICAO Doc 9574",
         "EASA AMC1 SPA.RVSM.105"
@@ -179,7 +179,7 @@
       }
     ],
     "explanation": {
-      "text": "### Autopilot Failure in RVSM Airspace\n* When autopilot altitude hold fails:\n  1. Maintain level flight manually as accurately as possible.\n  2. **Notify ATC immediately**: broadcast `UNABLE RVSM DUE EQUIPMENT` (or `DUE AUTOPILOT`).\n  3. ATC will provide 2,000 ft separation or clear the aircraft out of RVSM airspace (below FL290 or above FL410).",
+      "text": "### Autopilot Failure in RVSM Airspace\n* When autopilot altitude hold fails:\n  1. Maintain level flight manually as accurately as possible.\n  2. **Notify ATC immediately**: broadcast `UNABLE RVSM DUE EQUIPMENT` (or `DUE AUTOPILOT`).\n  3. ATC will provide 2,000 ft separation or clear the aircraft out of RVSM airspace (below FL290 or above FL410).\n\n> 📖 **Extracto Literal del Manual — ICAO Doc 9574 (Pág. 1462):**\n> \"p (ii) Examples of equipment failures that should be notified to ATC are: (A) failure of all automatic altitude-control systems aboard the aircraft; (B) loss of redundancy of altimetry systems; (C) loss of thrust on an engine necessitating descent; or (D) any other equipment failure affecting the ability to maintain cleared flight level. (iii) The pilot should notify ATC when encountering greater than moderate turbulence. (iv) If unable to notify ATC and obtain an ATC clearance prior to devia...\"\n\n![Recorte Oficial del Manual — ICAO Doc 9574](./manual-crops/netjets-interview/NJ-RVSM-005.png)",
       "references": [
         "ICAO Doc 9574",
         "EASA AMC1 SPA.RVSM.105"
@@ -217,7 +217,7 @@
       }
     ],
     "explanation": {
-      "text": "### Strategic Lateral Offset Procedures (SLOP)\n* **Direction:** **RIGHT of centerline ONLY** (never left).\n* **Magnitudes:** Standard ICAO SLOP permits offsets of **0.1 NM to 2.0 NM to the right** in tenths of a mile (or legacy 1 NM / 2 NM right).\n* **ATC clearance:** SLOP is a pilot-discretion procedure designed to mitigate collision risk from highly accurate GNSS tracking and wake turbulence; **no ATC clearance is required**.",
+      "text": "### Strategic Lateral Offset Procedures (SLOP)\n* **Direction:** **RIGHT of centerline ONLY** (never left).\n* **Magnitudes:** Standard ICAO SLOP permits offsets of **0.1 NM to 2.0 NM to the right** in tenths of a mile (or legacy 1 NM / 2 NM right).\n* **ATC clearance:** SLOP is a pilot-discretion procedure designed to mitigate collision risk from highly accurate GNSS tracking and wake turbulence; **no ATC clearance is required**.\n\n> 📖 **Extracto Literal del Manual — ICAO Doc 4444 (PANS-ATM) (Pág. 405):**\n> \"the most significant risks identified by the operator. The definitions of FDM events and FDM measurements in this core set should be designed to help identify deviations from the standard operating procedures that are beyond what is considered normal practice and not only occurrences that require reporting to the competent authority or unscheduled continued airworthiness activity. The definitions of FDM events and FDM measurements in this core set should be continuously reviewed to reflect th...\"\n\n![Recorte Oficial del Manual — ICAO Doc 4444 (PANS-ATM)](./manual-crops/netjets-interview/NJ-RVSM-006.png)",
       "references": [
         "ICAO Doc 4444 (PANS-ATM)",
         "ICAO Annex 2"
@@ -255,7 +255,7 @@
       }
     ],
     "explanation": {
-      "text": "### RNAV vs RNP (ICAO Doc 9613)\n* **RNP (Required Navigation Performance):** Requires **On-Board Performance Monitoring and Alerting (OBPMA)**. The system must alert the crew if Total System Error (TSE) exceeds the RNP value for more than 95% of the flight time.\n* **RNAV (Area Navigation):** Does **not** require on-board performance monitoring and alerting.",
+      "text": "### RNAV vs RNP (ICAO Doc 9613)\n* **RNP (Required Navigation Performance):** Requires **On-Board Performance Monitoring and Alerting (OBPMA)**. The system must alert the crew if Total System Error (TSE) exceeds the RNP value for more than 95% of the flight time.\n* **RNAV (Area Navigation):** Does **not** require on-board performance monitoring and alerting.\n\n> 📖 **Extracto Literal del Manual — ICAO Doc 9613 (PBN Manual) (Pág. 983):**\n> \"RNAV 10 (c) For purposes of consistency with the PBN concept, this Regulation is using the designation ‘RNAV 10’ because this specification does not include on-board performance monitoring and alerting. (d) However, it should be noted that many routes still use the designation ‘RNP 10’ instead of ‘RNAV 10’. ‘RNP 10’ was used as designation before the publication of the fourth edition of ICAO Doc 9613 in 2013. The terms ‘RNP 10’ and ‘RNAV 10’ should be considered equivalent. CAT.OP.MPA.130 Noi...\"\n\n![Recorte Oficial del Manual — ICAO Doc 9613 (PBN Manual)](./manual-crops/netjets-interview/NJ-RVSM-007.png)",
       "references": [
         "ICAO Doc 9613 (PBN Manual)",
         "EASA Part-SPA.PBN.100"
@@ -293,7 +293,7 @@
       }
     ],
     "explanation": {
-      "text": "### RNP APCH Minima Structure\n1. **LNAV:** Lateral navigation only (2D NPA) with MDA/H.\n2. **LNAV/VNAV:** Lateral and Barometric/SBAS vertical guidance (3D APV) with DA/H.\n3. **LPV (Localizer Performance with Vertical Guidance):** SBAS angular guidance down to CAT I-like minima (down to 200 ft DH) with DA/H.",
+      "text": "### RNP APCH Minima Structure\n1. **LNAV:** Lateral navigation only (2D NPA) with MDA/H.\n2. **LNAV/VNAV:** Lateral and Barometric/SBAS vertical guidance (3D APV) with DA/H.\n3. **LPV (Localizer Performance with Vertical Guidance):** SBAS angular guidance down to CAT I-like minima (down to 200 ft DH) with DA/H.\n\n> 📖 **Extracto Literal del Manual — ICAO Doc 9613 (Pág. 2083):**\n> \"Powered by EASA eRules Page 2083 of 2566| Mar 2026 that lateral deviation indicator scaling (full-scale deflection) is suitable for the navigation accuracy associated with the various segments of the procedure. (d) The pilot-in-command should maintain procedure centrelines unless authorised to deviate by ATC or demanded by emergency conditions.\"\n\n![Recorte Oficial del Manual — ICAO Doc 9613](./manual-crops/netjets-interview/NJ-RVSM-008.png)",
       "references": [
         "ICAO Doc 9613",
         "EASA AMC 20-27 / AMC 20-28"
@@ -331,7 +331,7 @@
       }
     ],
     "explanation": {
-      "text": "### RNP AR APCH Characteristics (SPA.PBN.105)\n* **High Navigation Accuracy:** RNP values less than 0.3 NM down to **0.1 NM** on final approach.\n* **Radius-to-Fix (RF) Legs:** Precise curved paths in obstacle-rich terrain.\n* **Missed Approach RNP:** RNP < 1.0 on missed approach.\n* Requires **specific aircraft certification, operational approval (SPA.PBN.105), and recurrent simulator training**.",
+      "text": "### RNP AR APCH Characteristics (SPA.PBN.105)\n* **High Navigation Accuracy:** RNP values less than 0.3 NM down to **0.1 NM** on final approach.\n* **Radius-to-Fix (RF) Legs:** Precise curved paths in obstacle-rich terrain.\n* **Missed Approach RNP:** RNP < 1.0 on missed approach.\n* Requires **specific aircraft certification, operational approval (SPA.PBN.105), and recurrent simulator training**.\n\n> 📖 **Extracto Literal del Manual — EASA Part-SPA.PBN.105 (Pág. 218):**\n> \"RCLL runway centre line lights RCP required communication performance RCR runway condition report RF radius to fix RF radio frequency RFC route facility chart RI ramp inspection RI rectification interval RIE rectification interval extension RMA regional monitoring agency RNAV area navigation RNP required navigation performance RNP APCH RNP approach RNP AR APCH RNP approach for which authorisation is required ROD rate of descent RP rotation point RSP required surveillance performance RTCA Radi...\"\n\n![Recorte Oficial del Manual — EASA Part-SPA.PBN.105](./manual-crops/netjets-interview/NJ-RVSM-009.png)",
       "references": [
         "EASA Part-SPA.PBN.105",
         "ICAO Doc 9613"
@@ -369,7 +369,7 @@
       }
     ],
     "explanation": {
-      "text": "### RAIM and FDE Satellite Geometry\n* **4 satellites:** Basic 3D position fix (Latitude, Longitude, Altitude, Time).\n* **5 satellites:** **Fault Detection (RAIM)** - can identify that a satellite is broadcasting corrupt signals.\n* **6 satellites (or 5 + Baro-aiding):** **Fault Detection and Exclusion (FDE)** - can identify the specific faulty satellite, isolate it, and continue navigation without interruption.",
+      "text": "### RAIM and FDE Satellite Geometry\n* **4 satellites:** Basic 3D position fix (Latitude, Longitude, Altitude, Time).\n* **5 satellites:** **Fault Detection (RAIM)** - can identify that a satellite is broadcasting corrupt signals.\n* **6 satellites (or 5 + Baro-aiding):** **Fault Detection and Exclusion (FDE)** - can identify the specific faulty satellite, isolate it, and continue navigation without interruption.\n\n> 📖 **Extracto Literal del Manual — ICAO Doc 9613 (Pág. 1011):**\n> \"detection of more than five minutes, the flight planning should be revised to reflect the lack of full PBN capability for that period. (d) For RNP 4 operations with only GNSS sensors, a fault detection and exclusion (FDE) check should be performed. The maximum allowable time for which FDE capability is projected to be unavailable on any one event is 25 minutes. If predictions indicate that the maximum allowable FDE outage will be exceeded, the operation should be rescheduled to a time when FD...\"\n\n![Recorte Oficial del Manual — ICAO Doc 9613](./manual-crops/netjets-interview/NJ-RVSM-010.png)",
       "references": [
         "ICAO Doc 9613",
         "FAA AC 90-100A / EASA AMC 20-28"
@@ -407,7 +407,7 @@
       }
     ],
     "explanation": {
-      "text": "### NAT HLA (ICAO NAT Doc 007)\n* **Boundaries:** **FL285 to FL420** within the North Atlantic Oceanic FIRs.\n* **Requirements:**\n  1. NAT HLA approval (SPA.HLA).\n  2. RVSM approval (SPA.RVSM).\n  3. **Dual Long-Range Navigation Systems (LRNS)** meeting RNP 10 (or RNP 4 for reduced separation / PBCS).",
+      "text": "### NAT HLA (ICAO NAT Doc 007)\n* **Boundaries:** **FL285 to FL420** within the North Atlantic Oceanic FIRs.\n* **Requirements:**\n  1. NAT HLA approval (SPA.HLA).\n  2. RVSM approval (SPA.RVSM).\n  3. **Dual Long-Range Navigation Systems (LRNS)** meeting RNP 10 (or RNP 4 for reduced separation / PBCS).\n\n> 📖 **Extracto Literal del Manual — ICAO NAT Doc 007 (Pág. 1357):**\n> \"EQUIPMENT AMC3 CAT.IDE.A.345 Communication and navigation equipment for operations under IFR or under VFR over routes not navigated by reference to visual landmarks ED Decision 2014/015/R FAILURE OF A SINGLE UNIT Required communication and navigation equipment should be installed such that the failure of any single unit required for either communication or navigation purposes, or both, will not result in the failure of another unit required for communications or navigation purposes. AMC4 CAT....\"\n\n![Recorte Oficial del Manual — ICAO NAT Doc 007](./manual-crops/netjets-interview/NJ-RVSM-011.png)",
       "references": [
         "ICAO NAT Doc 007",
         "EASA Part-SPA.HLA.100"
@@ -445,7 +445,7 @@
       }
     ],
     "explanation": {
-      "text": "### Performance-Based Communication and Surveillance (PBCS)\n* **RCP 240:** Required Communication Performance: 99.9% of communication transactions (CPDLC) completed within **240 seconds**.\n* **RSP 180:** Required Surveillance Performance: 99.9% of surveillance reports (ADS-C) delivered within **180 seconds**.\n* PBCS enables reduced oceanic longitudinal and lateral separations (e.g., 30 NM / 23 NM / 4-minute separation).",
+      "text": "### Performance-Based Communication and Surveillance (PBCS)\n* **RCP 240:** Required Communication Performance: 99.9% of communication transactions (CPDLC) completed within **240 seconds**.\n* **RSP 180:** Required Surveillance Performance: 99.9% of surveillance reports (ADS-C) delivered within **180 seconds**.\n* PBCS enables reduced oceanic longitudinal and lateral separations (e.g., 30 NM / 23 NM / 4-minute separation).\n\n> 📖 **Extracto Literal del Manual — ICAO Doc 9869 (PBCS Manual) (Pág. 1362):**\n> \"ED Decision 2021/005/R PERFORMANCE-BASED COMMUNICATION AND SURVEILLANCE (PBCS) OPERATIONS For operations in airspaces where required communication performance (RCP) and required surveillance performance (RSP) for PBCS have been prescribed, the operator should: (a) ensure that the communication equipment and surveillance equipment meet the prescribed RCP and RSP specifications respectively, as shown by an AFM statement or equivalent; (b) ensure that operational constraints are reflected in the...\"\n\n![Recorte Oficial del Manual — ICAO Doc 9869 (PBCS Manual)](./manual-crops/netjets-interview/NJ-RVSM-012.png)",
       "references": [
         "ICAO Doc 9869 (PBCS Manual)",
         "ICAO NAT Doc 007"
@@ -483,7 +483,7 @@
       }
     ],
     "explanation": {
-      "text": "### Revised ICAO Oceanic Contingency Procedures\n1. **Initial turn:** Turn at least **30° left or right** to leave the assigned route.\n2. **Offset:** Establish a **5 NM parallel offset** track.\n3. **Altitude change:** Once established on the 5 NM offset:\n   * If below FL410: Climb or descend by **300 ft (90 m)**.\n   * If above FL410: Climb or descend by **600 ft (180 m)**.\n4. Broadcast position, intentions, and calls on **121.5 MHz and 123.45 MHz**; turn on all exterior lights.",
+      "text": "### Revised ICAO Oceanic Contingency Procedures\n1. **Initial turn:** Turn at least **30° left or right** to leave the assigned route.\n2. **Offset:** Establish a **5 NM parallel offset** track.\n3. **Altitude change:** Once established on the 5 NM offset:\n   * If below FL410: Climb or descend by **300 ft (90 m)**.\n   * If above FL410: Climb or descend by **600 ft (180 m)**.\n4. Broadcast position, intentions, and calls on **121.5 MHz and 123.45 MHz**; turn on all exterior lights.\n\n> 📖 **Extracto Literal del Manual — ICAO Doc 4444 (PANS-ATM) (Pág. 2246):**\n> \"(v) as directed by ATS. When the missed approach procedure is commenced on the ‘downwind’ leg of the circling manoeuvre, an ‘S’ turn may be undertaken to align the aeroplane on the initial instrument approach missed approach path, provided the aeroplane remains within the protected circling area. The pilot-in-command should be responsible for ensuring adequate terrain clearance during the above-stipulated manoeuvres, particularly during the execution of a missed approach initiated by ATS. (6)...\"\n\n![Recorte Oficial del Manual — ICAO Doc 4444 (PANS-ATM)](./manual-crops/netjets-interview/NJ-RVSM-013.png)",
       "references": [
         "ICAO Doc 4444 (PANS-ATM)",
         "ICAO NAT Doc 007"
@@ -521,7 +521,7 @@
       }
     ],
     "explanation": {
-      "text": "### Altimetry System Error (ASE)\n* **ASE:** The difference between the altitude indicated by the altimeter display (assuming correct subscale setting) and the **true pressure altitude** at undisturbed ambient pressure.\n* **RVSM Limit:** ASE must not exceed **±245 ft (±75 m)** across the certified RVSM operating envelope.\n* Total Vertical Error (TVE) combines ASE, Assigned Altitude Deviation (AAD), and Flight Technical Error (FTE).",
+      "text": "### Altimetry System Error (ASE)\n* **ASE:** The difference between the altitude indicated by the altimeter display (assuming correct subscale setting) and the **true pressure altitude** at undisturbed ambient pressure.\n* **RVSM Limit:** ASE must not exceed **±245 ft (±75 m)** across the certified RVSM operating envelope.\n* Total Vertical Error (TVE) combines ASE, Assigned Altitude Deviation (AAD), and Flight Technical Error (FTE).\n\n> 📖 **Extracto Literal del Manual — ICAO Doc 9574 (Pág. 1460):**\n> \"SUBPART D: OPERATIONS IN AIRSPACE WITH REDUCED VERTICAL SEPARATION MINIMA (RVSM) Where applicable, a minimum equipment list (MEL), adapted from the master minimum equipment list (MMEL), should include items pertinent to operating in RVSM airspace. (g) Plan for participation in verification/monitoring programmes The operator should establish a plan for participation in any applicable verification/monitoring programme acceptable to the competent authority. This plan should include, as a minimum...\"\n\n![Recorte Oficial del Manual — ICAO Doc 9574](./manual-crops/netjets-interview/NJ-RVSM-014.png)",
       "references": [
         "ICAO Doc 9574",
         "EASA CS-ACNS"
@@ -559,7 +559,7 @@
       }
     ],
     "explanation": {
-      "text": "### TCAS II Version 7.1 Requirement (AUR.ACAS.1005)\n* All turbine-powered aeroplanes with MTOM > 5,700 kg or MOPSC > 19 operating in European airspace must be equipped with **ACAS II Version 7.1**.\n* Key improvements in v7.1:\n  1. Replaces `Adjust Vertical Speed, Adjust` with the clearer `Level Off, Level Off` RA.\n  2. Improved logic for **reversal RAs** when the other aircraft does not comply.",
+      "text": "### TCAS II Version 7.1 Requirement (AUR.ACAS.1005)\n* All turbine-powered aeroplanes with MTOM > 5,700 kg or MOPSC > 19 operating in European airspace must be equipped with **ACAS II Version 7.1**.\n* Key improvements in v7.1:\n  1. Replaces `Adjust Vertical Speed, Adjust` with the clearer `Level Off, Level Off` RA.\n  2. Improved logic for **reversal RAs** when the other aircraft does not comply.\n\n> 📖 **Extracto Literal del Manual — Commission Regulation (EU) No 1332/2011 (Part-AUR) (Pág. 280):**\n> \"Powered by EASA eRules Page 280 of 2566| Mar 2026 1 Regulation (EC) No 2111/2005 of the European Parliament and of the Council of 14 December 2005 on the establishment of a Community list of air carriers subject to an operating ban within the Community and on informing air transport passengers of the identity of the operating air carrier, and repealing Article 9 of Directive 2004/36/EC (OJ L 344, 27.12.2005, p. 15). 2 OJ L 344, 27.12.2005, p. 15. 3 Commission Regulation (EU) No 452/2014 of 29...\"\n\n![Recorte Oficial del Manual — Commission Regulation (EU) No 1332/2011 (Part-AUR)](./manual-crops/netjets-interview/NJ-RVSM-015.png)",
       "references": [
         "Commission Regulation (EU) No 1332/2011 (Part-AUR)",
         "ICAO Annex 10 Vol IV"
@@ -597,7 +597,7 @@
       }
     ],
     "explanation": {
-      "text": "### TCAS RA vs ATC Clearance (SERA.11014 / ICAO Doc 8168)\n* **TCAS RA takes absolute priority** over ATC instructions.\n* Pilots must follow the RA immediately, even if it contradicts an ATC clearance.\n* Never maneuver in the opposite direction of an RA.\n* Inform ATC as soon as possible: `[Callsign] TCAS RA` and when clear: `[Callsign] CLEAR OF CONFLICT, RETURNING TO [Assigned Altitude]`.",
+      "text": "### TCAS RA vs ATC Clearance (SERA.11014 / ICAO Doc 8168)\n* **TCAS RA takes absolute priority** over ATC instructions.\n* Pilots must follow the RA immediately, even if it contradicts an ATC clearance.\n* Never maneuver in the opposite direction of an RA.\n* Inform ATC as soon as possible: `[Callsign] TCAS RA` and when clear: `[Callsign] CLEAR OF CONFLICT, RETURNING TO [Assigned Altitude]`.\n\n> 📖 **Extracto Literal del Manual — EASA SERA.11014 (Pág. 664):**\n> \"Powered by EASA eRules Page 664 of 2566| Mar 2026 means of mitigating errors are included in this topic. The errors are described as mishandled auto flight systems, inappropriate mode selection, mishandled flight management system(s) and inappropriate autopilot usage. awareness of the auto flight system(s), including engagement and automatic transitions. Revert to different modes when appropriate. Detect deviations from the desired aircraft state (flight path, speed, attitude, thrust, etc.) a...\"\n\n![Recorte Oficial del Manual — EASA SERA.11014](./manual-crops/netjets-interview/NJ-RVSM-016.png)",
       "references": [
         "EASA SERA.11014",
         "ICAO Doc 8168 (PANS-OPS)"
@@ -635,7 +635,7 @@
       }
     ],
     "explanation": {
-      "text": "### Mode S Enhanced Surveillance (EHS) DAPs\nMode S EHS downlinks 8 parameters directly to ATC radar displays:\n1. **MCP/FCU Selected Altitude**\n2. **Roll Angle**\n3. **True Track Angle**\n4. **Track Angle Rate (or True Airspeed)**\n5. **Ground Speed**\n6. **Magnetic Heading**\n7. **Indicated Airspeed (IAS) / Mach Number**\n8. **Barometric Altitude Rate (Vertical Rate)**.",
+      "text": "### Mode S Enhanced Surveillance (EHS) DAPs\nMode S EHS downlinks 8 parameters directly to ATC radar displays:\n1. **MCP/FCU Selected Altitude**\n2. **Roll Angle**\n3. **True Track Angle**\n4. **Track Angle Rate (or True Airspeed)**\n5. **Ground Speed**\n6. **Magnetic Heading**\n7. **Indicated Airspeed (IAS) / Mach Number**\n8. **Barometric Altitude Rate (Vertical Rate)**.\n\n> 📖 **Extracto Literal del Manual — EUROCONTROL Mode S EHS Standard (Pág. 1958):**\n> \"17 Lateral acceleration 18 18a 18b 18c Primary flight control surface and/or primary flight control pilot input (for aeroplanes with control systems in which movement of a control surface will back drive the pilot’s control, ‘or’ applies. For aeroplanes with control systems in which movement of a control surface will not back drive the pilot’s control, ‘and’ applies. For multiple or split surfaces, a suitable combination of inputs is acceptable instead of recording each surface separately. Fo...\"\n\n![Recorte Oficial del Manual — EUROCONTROL Mode S EHS Standard](./manual-crops/netjets-interview/NJ-RVSM-017.png)",
       "references": [
         "EUROCONTROL Mode S EHS Standard",
         "EASA CS-ACNS"

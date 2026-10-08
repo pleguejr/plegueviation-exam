@@ -1,209 +1,266 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1150" width="100%" height="100%">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b111e"/>
-      <stop offset="100%" stop-color="#070b12"/>
+      <stop offset="0%" stop-color="#070c16"/>
+      <stop offset="50%" stop-color="#0c1626"/>
+      <stop offset="100%" stop-color="#050810"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#152238"/>
+      <stop offset="100%" stop-color="#0f192b"/>
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
     </linearGradient>
     <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#0284c7"/>
-      <stop offset="100%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
     </linearGradient>
-    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f59e0b"/>
-      <stop offset="100%" stop-color="#b45309"/>
+    <linearGradient id="yellowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ca8a04"/>
+      <stop offset="100%" stop-color="#eab308"/>
     </linearGradient>
     <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#dc2626"/>
-      <stop offset="100%" stop-color="#991b1b"/>
+      <stop offset="100%" stop-color="#ef4444"/>
     </linearGradient>
-    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.6"/>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.5"/>
     </filter>
   </defs>
 
-  <!-- Background -->
-  <rect width="1200" height="850" fill="url(#bgGrad)"/>
-
-  <!-- Subtle Grid Lines -->
-  <g stroke="rgba(255,255,255,0.03)" stroke-width="1">
-    <line x1="0" y1="100" x2="1200" y2="100"/>
-    <line x1="0" y1="200" x2="1200" y2="200"/>
-    <line x1="0" y1="300" x2="1200" y2="300"/>
-    <line x1="0" y1="400" x2="1200" y2="400"/>
-    <line x1="0" y1="500" x2="1200" y2="500"/>
-    <line x1="0" y1="600" x2="1200" y2="600"/>
-    <line x1="0" y1="700" x2="1200" y2="700"/>
-  </g>
+  <!-- Background Canvas -->
+  <rect width="1600" height="1150" fill="url(#bgGrad)"/>
 
   <!-- Header Banner -->
-  <rect x="40" y="30" width="1120" height="75" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#cardShadow)"/>
-  <rect x="40" y="30" width="10" height="75" fill="#f59e0b" rx="2"/>
+  <g transform="translate(40, 25)">
+    <rect width="1520" height="85" rx="12" fill="#132035" stroke="#253856" stroke-width="2" filter="url(#shadow)"/>
+    <rect width="12" height="85" fill="url(#amberGrad)" rx="3"/>
+    
+    <text x="35" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="900" fill="#f8fafc" letter-spacing="0.5">
+      GESTIÓN DE COMBUSTIBLE EN VUELO &amp; DECLARACIONES ATC
+    </text>
+    <text x="35" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#fbbf24">
+      EASA Part-CAT (CAT.OP.MPA.180/181/182) &amp; ICAO Doc 4444 • Flujo de Decisión MDF, MINIMUM FUEL vs MAYDAY FUEL
+    </text>
+
+    <rect x="1330" y="24" width="160" height="38" rx="8" fill="rgba(245, 158, 11, 0.15)" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="1410" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#fcd34d" text-anchor="middle">
+      EASA PART-CAT
+    </text>
+  </g>
+
+  <!-- Visual Cruise Aircraft & Fuel Profile Overview Banner -->
+  <g transform="translate(40, 130)">
+    <rect width="1520" height="160" rx="12" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.5" filter="url(#shadow)"/>
+    
+    <!-- Aircraft Silhouette in Cruise -->
+    <g transform="translate(80, 80) scale(0.7)">
+      <!-- Fuselage -->
+      <path d="M 0,20 C 60,18 160,15 260,10 C 320,6 360,-4 390,-16 C 400,-20 405,-22 410,-22 C 400,-12 360,10 320,22 C 240,42 120,50 0,50 Z" fill="#f8fafc"/>
+      <!-- Nose & Cockpit -->
+      <path d="M 410,-22 C 418,-20 425,-12 422,-2 C 415,10 380,24 340,32 Z" fill="#0284c7"/>
+      <path d="M 390,-12 Q 380,-14 365,-12 Q 360,-6 370,-5 Q 385,-6 390,-12 Z" fill="#0f172a"/>
+      <!-- Binter Livery Swoop -->
+      <path d="M 120,42 C 200,38 280,26 340,16 L 335,26 C 275,36 195,46 115,48 Z" fill="#059669"/>
+      <path d="M 140,46 C 220,42 290,32 345,24 L 340,30 C 285,38 215,47 135,49 Z" fill="#0284c7"/>
+      <!-- Wing & Sharklet -->
+      <path d="M 150,35 L 70,110 L 95,110 L 220,35 Z" fill="#64748b"/>
+      <path d="M 70,110 L 65,130 L 80,120 Z" fill="#10b981"/>
+      <!-- Tail Fin -->
+      <path d="M 40,20 L 0,-60 L 35,-60 L 90,20 Z" fill="#0284c7"/>
+      <path d="M 5,-50 Q 20,-30 45,5 L 30,10 Q 10,-25 -2,-45 Z" fill="#10b981"/>
+    </g>
+
+    <!-- Fuel Flight Profile Architecture -->
+    <g transform="translate(420, 30)">
+      <rect width="1050" height="100" rx="8" fill="#101a2b" stroke="#334155" stroke-width="1.5"/>
+      <text x="30" y="32" font-family="sans-serif" font-size="15" font-weight="900" fill="#38bdf8">DEFINICIONES CLAVE DE COMBUSTIBLE EN VUELO:</text>
+      
+      <g transform="translate(30, 50)">
+        <text x="0" y="16" font-family="sans-serif" font-size="13.5" font-weight="800" fill="#f8fafc">FOB (Fuel On Board):</text>
+        <text x="160" y="16" font-family="sans-serif" font-size="13" font-weight="500" fill="#cbd5e1">Combustible total remanente en los tanques en tiempo real.</text>
+        
+        <text x="0" y="38" font-family="sans-serif" font-size="13.5" font-weight="800" fill="#fbbf24">MDF (Min Diversion Fuel):</text>
+        <text x="200" y="38" font-family="sans-serif" font-size="13" font-weight="700" fill="#fde68a">Combustible a Alternativo + Reserva Final (30 min holding a 1.500 ft ISA).</text>
+        
+        <text x="640" y="16" font-family="sans-serif" font-size="13.5" font-weight="800" fill="#34d399">EXTRA FUEL (Holding):</text>
+        <text x="815" y="16" font-family="sans-serif" font-size="13" font-weight="700" fill="#a7f3d0">FOB - MDF (Margen de espera).</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 4 Big Stage Columns -->
   
-  <text x="65" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" fill="#f8fafc" letter-spacing="0.5">
-    GESTIÓN DE COMBUSTIBLE EN VUELO &amp; DECLARACIONES ATC
-  </text>
-  <text x="65" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#94a3b8">
-    EASA Part-CAT (CAT.OP.MPA.180/181/182) &amp; ICAO Doc 4444 • Flujo de Decisión MDF, MINIMUM FUEL y MAYDAY FUEL
-  </text>
-  <rect x="980" y="47" width="160" height="38" rx="6" fill="rgba(245, 158, 11, 0.2)" stroke="#f59e0b" stroke-width="1.5"/>
-  <text x="1060" y="71" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#fcd34d" text-anchor="middle">
-    EASA PART-CAT
-  </text>
-
-  <!-- 4 Columns Decision Flow -->
-  <!-- Level 1: Monitorización en Crucero -->
-  <g transform="translate(40, 125)">
-    <rect width="265" height="490" rx="8" fill="#131e31" stroke="#334155" stroke-width="1.5" filter="url(#cardShadow)"/>
-    <rect width="265" height="38" rx="8" fill="#1e293b"/>
-    <text x="132" y="24" font-family="sans-serif" font-size="12" font-weight="800" fill="#38bdf8" text-anchor="middle">
-      1. CRUCERO &amp; CHECKS
+  <!-- Column 1: Monitoreo en Crucero -->
+  <g transform="translate(40, 315)">
+    <rect width="360" height="570" rx="12" fill="url(#cardGrad)" stroke="#0284c7" stroke-width="1.5" filter="url(#shadow)"/>
+    <rect width="360" height="46" rx="12" fill="url(#blueGrad)"/>
+    <text x="180" y="30" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">
+      1. CRUCERO &amp; MONITOREO
     </text>
 
-    <circle cx="28" cy="65" r="12" fill="#0284c7"/>
-    <text x="28" y="69" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">A</text>
-    <text x="50" y="65" font-family="sans-serif" font-size="12" font-weight="700" fill="#ffffff">Frecuencia de Check</text>
-    <text x="50" y="80" font-family="sans-serif" font-size="11" font-weight="500" fill="#94a3b8">• Cada punto de reporte o</text>
-    <text x="50" y="95" font-family="sans-serif" font-size="11" font-weight="500" fill="#94a3b8">• Intervalos ≤ 60 minutos</text>
+    <g transform="translate(20, 65)">
+      <circle cx="18" cy="18" r="16" fill="#0284c7"/>
+      <text x="18" y="24" font-family="sans-serif" font-size="13" font-weight="900" fill="#fff" text-anchor="middle">A</text>
+      <text x="45" y="14" font-family="sans-serif" font-size="14.5" font-weight="800" fill="#ffffff">Frecuencia de Chequeo</text>
+      <text x="45" y="34" font-family="sans-serif" font-size="13" font-weight="500" fill="#cbd5e1">• En cada punto de reporte (Waypoints)</text>
+      <text x="45" y="52" font-family="sans-serif" font-size="13" font-weight="700" fill="#38bdf8">• A intervalos regulares ≤ 60 minutos</text>
+    </g>
 
-    <circle cx="28" cy="130" r="12" fill="#0284c7"/>
-    <text x="28" y="134" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">B</text>
-    <text x="50" y="130" font-family="sans-serif" font-size="12" font-weight="700" fill="#ffffff">Comparación de FOB</text>
-    <text x="50" y="145" font-family="sans-serif" font-size="11" font-weight="500" fill="#94a3b8">• FOB real vs Plan de vuelo</text>
-    <text x="50" y="160" font-family="sans-serif" font-size="11" font-weight="500" fill="#94a3b8">• Detectar consumos anómalos</text>
-    <text x="50" y="175" font-family="sans-serif" font-size="11" font-weight="500" fill="#94a3b8">• Desbalance entre tanques</text>
+    <g transform="translate(20, 140)">
+      <circle cx="18" cy="18" r="16" fill="#0284c7"/>
+      <text x="18" y="24" font-family="sans-serif" font-size="13" font-weight="900" fill="#fff" text-anchor="middle">B</text>
+      <text x="45" y="14" font-family="sans-serif" font-size="14.5" font-weight="800" fill="#ffffff">Cotejo de Combustible (OFP)</text>
+      <text x="45" y="34" font-family="sans-serif" font-size="13" font-weight="500" fill="#cbd5e1">• FOB real vs Plan de Vuelo Operacional</text>
+      <text x="45" y="52" font-family="sans-serif" font-size="13" font-weight="500" fill="#cbd5e1">• Detección de consumos anómalos o fugas</text>
+      <text x="45" y="70" font-family="sans-serif" font-size="13" font-weight="500" fill="#cbd5e1">• Vigilancia de desbalance entre tanques</text>
+    </g>
 
-    <circle cx="28" cy="210" r="12" fill="#0284c7"/>
-    <text x="28" y="214" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">C</text>
-    <text x="50" y="210" font-family="sans-serif" font-size="12" font-weight="700" fill="#ffffff">Cálculo MDF Continuo</text>
-    <text x="50" y="225" font-family="sans-serif" font-size="11" font-weight="500" fill="#94a3b8">Minimum Diversion Fuel:</text>
-    <text x="50" y="240" font-family="sans-serif" font-size="11.5" font-weight="700" fill="#38bdf8">MDF = Alternate +</text>
-    <text x="50" y="255" font-family="sans-serif" font-size="11.5" font-weight="700" fill="#38bdf8">Final Reserve (30 min)</text>
+    <g transform="translate(20, 235)">
+      <circle cx="18" cy="18" r="16" fill="#0284c7"/>
+      <text x="18" y="24" font-family="sans-serif" font-size="13" font-weight="900" fill="#fff" text-anchor="middle">C</text>
+      <text x="45" y="14" font-family="sans-serif" font-size="14.5" font-weight="800" fill="#ffffff">Cálculo Continuo de MDF</text>
+      <text x="45" y="34" font-family="sans-serif" font-size="13" font-weight="700" fill="#fbbf24">MDF = Alternate Fuel + Final Reserve</text>
+      <text x="45" y="54" font-family="sans-serif" font-size="13" font-weight="500" fill="#cbd5e1">Recalcular MDF ante cambios de alternativo.</text>
+    </g>
 
-    <rect x="15" y="280" width="235" height="190" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
-    <text x="25" y="302" font-family="sans-serif" font-size="11" font-weight="700" fill="#38bdf8">REGLA BÁSICA EASA:</text>
-    <text x="25" y="322" font-family="sans-serif" font-size="10.5" font-weight="500" fill="#cbd5e1">El comandante debe asegurar</text>
-    <text x="25" y="338" font-family="sans-serif" font-size="10.5" font-weight="500" fill="#cbd5e1">que el combustible remanente</text>
-    <text x="25" y="354" font-family="sans-serif" font-size="10.5" font-weight="500" fill="#cbd5e1">al aterrizar en destino sea al</text>
-    <text x="25" y="370" font-family="sans-serif" font-size="10.5" font-weight="700" fill="#f8fafc">menos igual a Alternate +</text>
-    <text x="25" y="386" font-family="sans-serif" font-size="10.5" font-weight="700" fill="#f8fafc">Final Reserve Fuel.</text>
-    <text x="25" y="415" font-family="sans-serif" font-size="10" font-weight="500" fill="#94a3b8">Si no hay alternativo (aislado):</text>
-    <text x="25" y="430" font-family="sans-serif" font-size="10" font-weight="700" fill="#f59e0b">FOB ≥ Final Reserve + 2 horas</text>
+    <rect x="20" y="325" width="320" height="225" rx="8" fill="#101a2b" stroke="#334155" stroke-width="1.5"/>
+    <text x="35" y="352" font-family="sans-serif" font-size="13.5" font-weight="900" fill="#38bdf8">REGLA FUNDAMENTAL EASA:</text>
+    <text x="35" y="375" font-family="sans-serif" font-size="12.5" font-weight="500" fill="#cbd5e1">El Comandante debe asegurar en todo momento que el combustible remanente estimado al aterrizar en destino sea al menos:</text>
+    <text x="35" y="420" font-family="sans-serif" font-size="13" font-weight="800" fill="#f8fafc">FOB ≥ ALTERNATE + FINAL RESERVE</text>
+    <text x="35" y="445" font-family="sans-serif" font-size="12.5" font-weight="500" fill="#94a3b8">Destino aislado (sin alternativo):</text>
+    <text x="35" y="465" font-family="sans-serif" font-size="12.5" font-weight="800" fill="#fbbf24">FOB ≥ Final Reserve + 2h crucero</text>
+    <text x="35" y="495" font-family="sans-serif" font-size="12" font-weight="700" fill="#34d399">¡Chequeo cruzado entre PM y PF!</text>
   </g>
 
-  <!-- Level 2: Esperas y Punto de Decisión -->
-  <g transform="translate(325, 125)">
-    <rect width="265" height="490" rx="8" fill="#131e31" stroke="#334155" stroke-width="1.5" filter="url(#cardShadow)"/>
-    <rect width="265" height="38" rx="8" fill="#1e293b"/>
-    <text x="132" y="24" font-family="sans-serif" font-size="12" font-weight="800" fill="#f59e0b" text-anchor="middle">
-      2. ESPERAS &amp; DESVÍO
+  <!-- Column 2: Esperas & Desvío -->
+  <g transform="translate(425, 315)">
+    <rect width="360" height="570" rx="12" fill="url(#cardGrad)" stroke="#d97706" stroke-width="1.5" filter="url(#shadow)"/>
+    <rect width="360" height="46" rx="12" fill="url(#amberGrad)"/>
+    <text x="180" y="30" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">
+      2. ESPERAS &amp; PUNTO DE DESVÍO
     </text>
 
-    <circle cx="28" cy="65" r="12" fill="#d97706"/>
-    <text x="28" y="69" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">A</text>
-    <text x="50" y="65" font-family="sans-serif" font-size="12" font-weight="700" fill="#ffffff">Tiempo en Espera (Holding)</text>
-    <text x="50" y="80" font-family="sans-serif" font-size="11" font-weight="600" fill="#fbbf24">Extra Fuel = FOB - MDF</text>
-    <text x="50" y="95" font-family="sans-serif" font-size="11" font-weight="500" fill="#94a3b8">Hold Time = Extra / Consumo</text>
+    <g transform="translate(20, 65)">
+      <circle cx="18" cy="18" r="16" fill="#d97706"/>
+      <text x="18" y="24" font-family="sans-serif" font-size="13" font-weight="900" fill="#fff" text-anchor="middle">A</text>
+      <text x="45" y="14" font-family="sans-serif" font-size="14.5" font-weight="800" fill="#ffffff">Tiempo Disponible de Espera</text>
+      <text x="45" y="34" font-family="sans-serif" font-size="13" font-weight="700" fill="#fbbf24">Combustible Extra = FOB - MDF</text>
+      <text x="45" y="52" font-family="sans-serif" font-size="13" font-weight="500" fill="#cbd5e1">Hold Time (min) = (Extra / Flujo) × 60</text>
+    </g>
 
-    <circle cx="28" cy="130" r="12" fill="#d97706"/>
-    <text x="28" y="134" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">B</text>
-    <text x="50" y="130" font-family="sans-serif" font-size="12" font-weight="700" fill="#ffffff">Coordinación ATC (EAT)</text>
-    <text x="50" y="145" font-family="sans-serif" font-size="11" font-weight="500" fill="#94a3b8">• Solicitar hora de aproximación:</text>
-    <text x="50" y="160" font-family="sans-serif" font-size="11" font-weight="600" fill="#f8fafc">"Request Expected Approach Time"</text>
+    <g transform="translate(20, 140)">
+      <circle cx="18" cy="18" r="16" fill="#d97706"/>
+      <text x="18" y="24" font-family="sans-serif" font-size="13" font-weight="900" fill="#fff" text-anchor="middle">B</text>
+      <text x="45" y="14" font-family="sans-serif" font-size="14.5" font-weight="800" fill="#ffffff">Coordinación con ATC (EAT)</text>
+      <text x="45" y="34" font-family="sans-serif" font-size="13" font-weight="500" fill="#cbd5e1">• Solicitar hora prevista de aproximación:</text>
+      <text x="45" y="52" font-family="sans-serif" font-size="13" font-weight="800" fill="#38bdf8">"Request Expected Approach Time"</text>
+    </g>
 
-    <circle cx="28" cy="205" r="12" fill="#d97706"/>
-    <text x="28" y="209" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">C</text>
-    <text x="50" y="205" font-family="sans-serif" font-size="12" font-weight="700" fill="#ffffff">Punto Límite de Desvío</text>
-    <text x="50" y="220" font-family="sans-serif" font-size="11" font-weight="500" fill="#94a3b8">Al consumir el combustible</text>
-    <text x="50" y="235" font-family="sans-serif" font-size="11" font-weight="500" fill="#94a3b8">extra y alcanzar MDF:</text>
-    <text x="50" y="250" font-family="sans-serif" font-size="11.5" font-weight="800" fill="#f87171">¡INICIAR DESVÍO INMEDIATO!</text>
+    <g transform="translate(20, 215)">
+      <circle cx="18" cy="18" r="16" fill="#d97706"/>
+      <text x="18" y="24" font-family="sans-serif" font-size="13" font-weight="900" fill="#fff" text-anchor="middle">C</text>
+      <text x="45" y="14" font-family="sans-serif" font-size="14.5" font-weight="800" fill="#ffffff">Alcanzado el Límite MDF</text>
+      <text x="45" y="34" font-family="sans-serif" font-size="13" font-weight="500" fill="#cbd5e1">Consumido el combustible extra:</text>
+      <text x="45" y="54" font-family="sans-serif" font-size="14" font-weight="900" fill="#ef4444">¡INICIAR DESVÍO A ALTERNATIVO!</text>
+    </g>
 
-    <rect x="15" y="280" width="235" height="190" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/>
-    <text x="25" y="302" font-family="sans-serif" font-size="11" font-weight="700" fill="#fcd34d">CRITERIO DE DECISIÓN:</text>
-    <text x="25" y="322" font-family="sans-serif" font-size="10.5" font-weight="500" fill="#cbd5e1">Si la EAT dada por ATC es</text>
-    <text x="25" y="338" font-family="sans-serif" font-size="10.5" font-weight="700" fill="#f87171">POSTERIOR al tiempo límite</text>
-    <text x="25" y="354" font-family="sans-serif" font-size="10.5" font-weight="500" fill="#cbd5e1">de espera (Hold Time), no se</text>
-    <text x="25" y="370" font-family="sans-serif" font-size="10.5" font-weight="500" fill="#cbd5e1">puede aceptar la espera.</text>
-    <text x="25" y="398" font-family="sans-serif" font-size="10.5" font-weight="600" fill="#38bdf8">Abandonar el circuito e</text>
-    <text x="25" y="415" font-family="sans-serif" font-size="10.5" font-weight="600" fill="#38bdf8">iniciar navegación al alternativo.</text>
+    <rect x="20" y="300" width="320" height="250" rx="8" fill="#101a2b" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="35" y="328" font-family="sans-serif" font-size="13.5" font-weight="900" fill="#fbbf24">CRITERIO TÉCNICO DE DECISIÓN:</text>
+    <text x="35" y="352" font-family="sans-serif" font-size="12.5" font-weight="500" fill="#cbd5e1">Si la EAT asignada por ATC es posterior a la hora límite de espera calculada:</text>
+    <text x="35" y="392" font-family="sans-serif" font-size="13" font-weight="800" fill="#f87171">➔ NO SE PUEDE ACEPTAR LA ESPERA</text>
+    <text x="35" y="420" font-family="sans-serif" font-size="12.5" font-weight="500" fill="#cbd5e1">Abandonar el circuito de espera e iniciar rumbo directo al aeródromo alternativo.</text>
+    <text x="35" y="465" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#38bdf8">Notificar de inmediato a ATC la maniobra de desvío (Divert to Alternate).</text>
   </g>
 
-  <!-- Level 3: MINIMUM FUEL -->
-  <g transform="translate(610, 125)">
-    <rect width="265" height="490" rx="8" fill="#131e31" stroke="#eab308" stroke-width="1.5" filter="url(#cardShadow)"/>
-    <rect width="265" height="38" rx="8" fill="url(#amberGrad)"/>
-    <text x="132" y="24" font-family="sans-serif" font-size="12" font-weight="800" fill="#ffffff" text-anchor="middle">
+  <!-- Column 3: MINIMUM FUEL -->
+  <g transform="translate(810, 315)">
+    <rect width="360" height="570" rx="12" fill="url(#cardGrad)" stroke="#ca8a04" stroke-width="1.5" filter="url(#shadow)"/>
+    <rect width="360" height="46" rx="12" fill="url(#yellowGrad)"/>
+    <text x="180" y="30" font-family="sans-serif" font-size="16" font-weight="900" fill="#000000" text-anchor="middle">
       3. MINIMUM FUEL
     </text>
 
-    <circle cx="28" cy="65" r="12" fill="#ca8a04"/>
-    <text x="28" y="69" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">A</text>
-    <text x="50" y="65" font-family="sans-serif" font-size="12" font-weight="700" fill="#ffffff">Condición de Activación</text>
-    <text x="50" y="80" font-family="sans-serif" font-size="11" font-weight="500" fill="#94a3b8">Cualquier demora adicional</text>
-    <text x="50" y="95" font-family="sans-serif" font-size="11" font-weight="500" fill="#94a3b8">implicará aterrizar con menos</text>
-    <text x="50" y="110" font-family="sans-serif" font-size="11" font-weight="700" fill="#fbbf24">de la Reserva Final (30 min).</text>
+    <g transform="translate(20, 65)">
+      <circle cx="18" cy="18" r="16" fill="#ca8a04"/>
+      <text x="18" y="24" font-family="sans-serif" font-size="13" font-weight="900" fill="#fff" text-anchor="middle">A</text>
+      <text x="45" y="14" font-family="sans-serif" font-size="14.5" font-weight="800" fill="#ffffff">Condición de Declaración</text>
+      <text x="45" y="34" font-family="sans-serif" font-size="13" font-weight="500" fill="#cbd5e1">Cualquier demora imprevista en ruta o aproximación resultará en aterrizar con</text>
+      <text x="45" y="54" font-family="sans-serif" font-size="13.5" font-weight="800" fill="#fde68a">menos de la Reserva Final (30 min).</text>
+    </g>
 
-    <circle cx="28" cy="140" r="12" fill="#ca8a04"/>
-    <text x="28" y="144" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">B</text>
-    <text x="50" y="140" font-family="sans-serif" font-size="12" font-weight="700" fill="#ffffff">Fraseología Obligatoria</text>
-    <text x="50" y="158" font-family="sans-serif" font-size="11.5" font-weight="800" fill="#fef08a">"[Callsign] MINIMUM FUEL"</text>
-    <text x="50" y="175" font-family="sans-serif" font-size="10.5" font-weight="500" fill="#94a3b8">Informar a ATC inmediatamente</text>
+    <g transform="translate(20, 145)">
+      <circle cx="18" cy="18" r="16" fill="#ca8a04"/>
+      <text x="18" y="24" font-family="sans-serif" font-size="13" font-weight="900" fill="#fff" text-anchor="middle">B</text>
+      <text x="45" y="14" font-family="sans-serif" font-size="14.5" font-weight="800" fill="#ffffff">Fraseología Obligatoria</text>
+      <text x="45" y="36" font-family="sans-serif" font-size="14.5" font-weight="900" fill="#fef08a">"[Callsign] MINIMUM FUEL"</text>
+      <text x="45" y="56" font-family="sans-serif" font-size="13" font-weight="500" fill="#cbd5e1">Transmitir sin demora a la frecuencia activa.</text>
+    </g>
 
-    <rect x="15" y="210" width="235" height="260" rx="6" fill="#1e293b" stroke="#eab308" stroke-width="1.5"/>
-    <text x="25" y="235" font-family="sans-serif" font-size="11" font-weight="800" fill="#facc15">¡NO ES UNA EMERGENCIA!</text>
-    <text x="25" y="255" font-family="sans-serif" font-size="10.5" font-weight="500" fill="#cbd5e1">• <tspan font-weight="700" fill="#f87171">NO otorga prioridad</tspan> directa de aproximación o aterrizaje.</text>
-    <text x="25" y="290" font-family="sans-serif" font-size="10.5" font-weight="500" fill="#cbd5e1">• Solo informa a ATC de que NO se pueden aceptar demoras extras.</text>
-    <text x="25" y="328" font-family="sans-serif" font-size="10.5" font-weight="500" fill="#cbd5e1">• ATC no proporcionará vectores directos por defecto salvo que el flujo de tráfico lo permita.</text>
-    <text x="25" y="380" font-family="sans-serif" font-size="10.5" font-weight="700" fill="#f59e0b">Si tras MINIMUM FUEL ATC da demoras adicionales que afecten a la Reserva Final:</text>
-    <text x="25" y="425" font-family="sans-serif" font-size="11" font-weight="800" fill="#ef4444">➔ DECLARAR MAYDAY FUEL</text>
+    <rect x="20" y="235" width="320" height="315" rx="8" fill="#101a2b" stroke="#eab308" stroke-width="1.5"/>
+    <text x="35" y="262" font-family="sans-serif" font-size="14" font-weight="900" fill="#facc15">¡NO ES UNA EMERGENCIA!</text>
+    <text x="35" y="288" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#f87171">• NO otorga prioridad de aterrizaje ni directos automáticos.</text>
+    <text x="35" y="328" font-family="sans-serif" font-size="12.5" font-weight="500" fill="#cbd5e1">• Solo informa a ATC de que el vuelo no puede aceptar más demoras.</text>
+    <text x="35" y="368" font-family="sans-serif" font-size="12.5" font-weight="500" fill="#cbd5e1">• ATC coordinará para evitar retenciones adicionales si el tráfico lo permite.</text>
+    <text x="35" y="415" font-family="sans-serif" font-size="12.5" font-weight="800" fill="#fbbf24">Si ATC asigna esperas adicionales que consuman la Reserva Final:</text>
+    <text x="35" y="465" font-family="sans-serif" font-size="14" font-weight="900" fill="#ef4444">➔ DECLARAR "MAYDAY FUEL"</text>
   </g>
 
-  <!-- Level 4: MAYDAY FUEL -->
-  <g transform="translate(895, 125)">
-    <rect width="265" height="490" rx="8" fill="#131e31" stroke="#ef4444" stroke-width="2" filter="url(#cardShadow)"/>
-    <rect width="265" height="38" rx="8" fill="url(#redGrad)"/>
-    <text x="132" y="24" font-family="sans-serif" font-size="12" font-weight="800" fill="#ffffff" text-anchor="middle">
-      4. MAYDAY FUEL
+  <!-- Column 4: MAYDAY FUEL -->
+  <g transform="translate(1195, 315)">
+    <rect width="365" height="570" rx="12" fill="url(#cardGrad)" stroke="#ef4444" stroke-width="2" filter="url(#shadow)"/>
+    <rect width="365" height="46" rx="12" fill="url(#redGrad)"/>
+    <text x="182" y="30" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">
+      4. MAYDAY FUEL (SOCORRO)
     </text>
 
-    <circle cx="28" cy="65" r="12" fill="#ef4444"/>
-    <text x="28" y="69" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">A</text>
-    <text x="50" y="65" font-family="sans-serif" font-size="12" font-weight="700" fill="#ffffff">Condición Crítica</text>
-    <text x="50" y="80" font-family="sans-serif" font-size="11" font-weight="500" fill="#94a3b8">Cálculo al aterrizar en el</text>
-    <text x="50" y="95" font-family="sans-serif" font-size="11" font-weight="500" fill="#94a3b8">aeródromo más cercano utilizable:</text>
-    <text x="50" y="110" font-family="sans-serif" font-size="11" font-weight="800" fill="#f87171">FOB &lt; FINAL RESERVE (30m)</text>
+    <g transform="translate(20, 65)">
+      <circle cx="18" cy="18" r="16" fill="#ef4444"/>
+      <text x="18" y="24" font-family="sans-serif" font-size="13" font-weight="900" fill="#fff" text-anchor="middle">A</text>
+      <text x="45" y="14" font-family="sans-serif" font-size="14.5" font-weight="800" fill="#ffffff">Condición Crítica Mandatoria</text>
+      <text x="45" y="34" font-family="sans-serif" font-size="13" font-weight="500" fill="#cbd5e1">Se calcula que el avión aterrizará en el aeródromo más cercano con:</text>
+      <text x="45" y="54" font-family="sans-serif" font-size="14" font-weight="900" fill="#f87171">FOB &lt; FINAL RESERVE (30 MIN)</text>
+    </g>
 
-    <circle cx="28" cy="140" r="12" fill="#ef4444"/>
-    <text x="28" y="144" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">B</text>
-    <text x="50" y="140" font-family="sans-serif" font-size="12" font-weight="700" fill="#ffffff">Fraseología de Socorro</text>
-    <text x="50" y="158" font-family="sans-serif" font-size="11.5" font-weight="800" fill="#fca5a5">"MAYDAY MAYDAY MAYDAY,"</text>
-    <text x="50" y="174" font-family="sans-serif" font-size="11.5" font-weight="800" fill="#fca5a5">"[Callsign] MAYDAY FUEL"</text>
+    <g transform="translate(20, 145)">
+      <circle cx="18" cy="18" r="16" fill="#ef4444"/>
+      <text x="18" y="24" font-family="sans-serif" font-size="13" font-weight="900" fill="#fff" text-anchor="middle">B</text>
+      <text x="45" y="14" font-family="sans-serif" font-size="14.5" font-weight="800" fill="#ffffff">Fraseología de Socorro</text>
+      <text x="45" y="36" font-family="sans-serif" font-size="14.5" font-weight="900" fill="#fca5a5">"MAYDAY MAYDAY MAYDAY,"</text>
+      <text x="45" y="56" font-family="sans-serif" font-size="14.5" font-weight="900" fill="#fca5a5">"[Callsign] MAYDAY FUEL"</text>
+    </g>
 
-    <rect x="15" y="210" width="235" height="260" rx="6" fill="rgba(220,38,38,0.2)" stroke="#ef4444" stroke-width="1.5"/>
-    <text x="25" y="235" font-family="sans-serif" font-size="11" font-weight="800" fill="#f87171">SITUACIÓN DE SOCORRO (DISTRESS):</text>
-    <text x="25" y="255" font-family="sans-serif" font-size="10.5" font-weight="600" fill="#fecaca">• <tspan font-weight="800" fill="#ffffff">PRIORIDAD ABSOLUTA</tspan> de tráfico y aterrizaje directo.</text>
-    <text x="25" y="290" font-family="sans-serif" font-size="10.5" font-weight="500" fill="#fecaca">• Código Transponder: Squawk 7700 (si lo solicita ATC o se requiere).</text>
-    <text x="25" y="328" font-family="sans-serif" font-size="10.5" font-weight="500" fill="#fecaca">• Servicios de emergencia en pista (RFFS) desplegados en espera.</text>
-    <text x="25" y="375" font-family="sans-serif" font-size="10.5" font-weight="700" fill="#ffffff">POSTERIOR AL VUELO:</text>
-    <text x="25" y="395" font-family="sans-serif" font-size="10" font-weight="500" fill="#fecaca">• ASR / Informe obligatorio EASA y a la autoridad de Aviación Civil.</text>
+    <rect x="20" y="235" width="325" height="315" rx="8" fill="rgba(220, 38, 38, 0.2)" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="35" y="262" font-family="sans-serif" font-size="14" font-weight="900" fill="#f87171">SITUACIÓN DE SOCORRO (DISTRESS):</text>
+    <text x="35" y="288" font-family="sans-serif" font-size="13" font-weight="900" fill="#ffffff">• PRIORIDAD ABSOLUTA DE TRÁFICO</text>
+    <text x="35" y="312" font-family="sans-serif" font-size="12.5" font-weight="500" fill="#fecaca">• Vectores directos inmediatos y despeje de pista.</text>
+    <text x="35" y="338" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#ffffff">• Transponder: Squawk 7700 (si se requiere o solicita ATC).</text>
+    <text x="35" y="364" font-family="sans-serif" font-size="12.5" font-weight="500" fill="#fecaca">• Servicios de bomberos y rescate (RFFS) desplegados en pista.</text>
+    <text x="35" y="415" font-family="sans-serif" font-size="13" font-weight="900" fill="#fbbf24">ACCIONES TRAS EL VUELO:</text>
+    <text x="35" y="440" font-family="sans-serif" font-size="12.5" font-weight="500" fill="#fecaca">• Notificación obligatoria de incidente de seguridad (ASR / MOR a la Autoridad Aeronáutica).</text>
   </g>
 
-  <!-- Bottom Fuel Calculation Summary Bar -->
-  <g transform="translate(40, 630)">
-    <rect width="1120" height="185" rx="8" fill="#131e31" stroke="#334155" stroke-width="1.5" filter="url(#cardShadow)"/>
+  <!-- Bottom Detailed Formulas & Rules -->
+  <g transform="translate(40, 910)">
+    <rect width="1520" height="205" rx="12" fill="#132035" stroke="#253856" stroke-width="1.5" filter="url(#shadow)"/>
     
     <!-- Left Equation Box -->
-    <rect x="20" y="20" width="480" height="145" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
-    <text x="35" y="45" font-family="sans-serif" font-size="13" font-weight="800" fill="#38bdf8">FÓRMULAS OFICIALES DE COMBUSTIBLE EN VUELO:</text>
-    <text x="35" y="70" font-family="sans-serif" font-size="12" font-weight="700" fill="#f8fafc">• MDF (Min Diversion Fuel) = Trip (Destino-Alt) + Final Reserve</text>
-    <text x="35" y="92" font-family="sans-serif" font-size="12" font-weight="700" fill="#f8fafc">• Final Reserve Fuel (EASA Jet) = 30 min holding a 1.500 ft AAL ISA</text>
-    <text x="35" y="114" font-family="sans-serif" font-size="12" font-weight="700" fill="#f8fafc">• Combustible de Espera Disponible = FOB - MDF</text>
-    <text x="35" y="136" font-family="sans-serif" font-size="12" font-weight="700" fill="#4ade80">• Tiempo de Espera (min) = [ (FOB - MDF) / Consumo horario (kg/h) ] × 60</text>
+    <rect x="25" y="20" width="710" height="165" rx="8" fill="#101a2b" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="45" y="48" font-family="sans-serif" font-size="15" font-weight="900" fill="#38bdf8">FÓRMULAS OFICIALES DE COMBUSTIBLE EN VUELO (EASA):</text>
+    <text x="45" y="76" font-family="sans-serif" font-size="13.5" font-weight="700" fill="#f8fafc">• MDF (Min Diversion Fuel) = Trip (Destino-Alt) + Final Reserve</text>
+    <text x="45" y="102" font-family="sans-serif" font-size="13.5" font-weight="700" fill="#f8fafc">• Final Reserve Fuel (Turborreactores) = 30 min holding a 1.500 ft AAL ISA</text>
+    <text x="45" y="128" font-family="sans-serif" font-size="13.5" font-weight="700" fill="#f8fafc">• Combustible Disponible de Espera = FOB - MDF</text>
+    <text x="45" y="154" font-family="sans-serif" font-size="13.5" font-weight="700" fill="#34d399">• Tiempo de Espera (min) = [ (FOB - MDF) / Consumo horario (kg/h) ] × 60</text>
 
-    <!-- Right Operational Notes -->
-    <text x="530" y="45" font-family="sans-serif" font-size="12.5" font-weight="800" fill="#f59e0b">RESPONSABILIDADES DEL COMANDANTE (CAT.GEN.NMPA.100):</text>
-    <text x="530" y="70" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">1. Revaluar continuamente el aeródromo alternativo (METAR/TAF, RVR, pistas activas).</text>
-    <text x="530" y="92" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">2. Prohibido continuar aproximación si al aterrizar se vulnerará la Reserva Final.</text>
-    <text x="530" y="114" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">3. En aproximación frustrada (Go-Around), recalcular inmediatamente si da tiempo a alternativo.</text>
-    <text x="530" y="136" font-family="sans-serif" font-size="11.5" font-weight="600" fill="#38bdf8">4. Comunicar a Dispatch/OCC la decisión tomada una vez estabilizada la trayectoria.</text>
+    <!-- Right Operational Directives -->
+    <g transform="translate(760, 20)">
+      <text x="0" y="28" font-family="sans-serif" font-size="15" font-weight="900" fill="#fbbf24">RESPONSABILIDADES DEL COMANDANTE (CAT.GEN.MPA.105 / 100):</text>
+      <text x="0" y="56" font-family="sans-serif" font-size="13" font-weight="500" fill="#cbd5e1">1. Revaluar continuamente las condiciones meteorológicas del alternativo (METAR/TAF, RVR, pistas).</text>
+      <text x="0" y="82" font-family="sans-serif" font-size="13" font-weight="500" fill="#cbd5e1">2. Prohibido continuar una aproximación si el combustible estimado al tocar tierra vulnerará la Reserva Final.</text>
+      <text x="0" y="108" font-family="sans-serif" font-size="13" font-weight="500" fill="#cbd5e1">3. En motor y al aire (Go-Around), comprobar inmediatamente si da tiempo a proceder al alternativo.</text>
+      <text x="0" y="134" font-family="sans-serif" font-size="13" font-weight="700" fill="#38bdf8">4. Comunicar la decisión a la compañía (Dispatch/OCC) una vez estabilizada la trayectoria del avión.</text>
+    </g>
   </g>
 </svg>

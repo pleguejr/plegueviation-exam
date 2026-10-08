@@ -1,224 +1,293 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1150" width="100%" height="100%">
   <defs>
-    <linearGradient id="bgGradBrief" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#080e1a" />
-      <stop offset="100%" stop-color="#121b2d" />
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070c16"/>
+      <stop offset="50%" stop-color="#0c1626"/>
+      <stop offset="100%" stop-color="#050810"/>
     </linearGradient>
-    <linearGradient id="cardGradB" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#182338" />
-      <stop offset="100%" stop-color="#0e1726" />
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#152238"/>
+      <stop offset="100%" stop-color="#0f192b"/>
     </linearGradient>
-    <linearGradient id="skyGradB" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="100%" stop-color="#0284c7" />
+    <linearGradient id="binterGreenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10b981"/>
     </linearGradient>
-    <linearGradient id="emeraldGradB" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10b981" />
-      <stop offset="100%" stop-color="#059669" />
+    <linearGradient id="binterBlueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
     </linearGradient>
-    <linearGradient id="roseGradB" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f43f5e" />
-      <stop offset="100%" stop-color="#be123c" />
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
     </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
   </defs>
 
   <!-- Background -->
-  <rect width="1200" height="675" fill="url(#bgGradBrief)" />
+  <rect width="1600" height="1150" fill="url(#bgGrad)"/>
 
-  <!-- Grid -->
-  <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
-    <line x1="0" y1="90" x2="1200" y2="90" />
-    <line x1="0" y1="370" x2="1200" y2="370" />
-    <line x1="300" y1="0" x2="300" y2="675" />
-    <line x1="600" y1="0" x2="600" y2="675" />
-    <line x1="900" y1="0" x2="900" y2="675" />
+  <!-- Tech Grid Background -->
+  <g stroke="rgba(56, 189, 248, 0.04)" stroke-width="1.5">
+    <line x1="0" y1="120" x2="1600" y2="120"/>
+    <line x1="0" y1="260" x2="1600" y2="260"/>
+    <line x1="0" y1="720" x2="1600" y2="720"/>
+    <line x1="530" y1="120" x2="530" y2="1150"/>
+    <line x1="1060" y1="120" x2="1060" y2="1150"/>
   </g>
 
   <!-- Header Banner -->
-  <rect x="30" y="16" width="1140" height="64" rx="10" fill="#111c2e" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="1.5" />
-  
-  <!-- Embraer 195-E2 Silhouette -->
-  <g transform="translate(48, 26) scale(0.6)">
-    <path d="M 0 25 Q 35 15 70 18 L 85 5 L 92 6 L 82 19 L 140 22 L 185 0 L 195 2 L 165 24 L 205 25 Q 215 25 220 28 L 200 31 L 165 31 L 145 42 L 138 41 L 148 31 L 80 30 L 70 42 L 62 41 L 68 29 Q 30 30 0 25 Z" fill="#38bdf8" fill-opacity="0.8" />
-    <rect x="90" y="27" width="28" height="10" rx="4" fill="#0284c7" />
-    <polygon points="185,2 193,3 175,20 168,20" fill="#10b981" />
+  <g transform="translate(40, 25)">
+    <rect width="1520" height="85" rx="12" fill="#132035" stroke="#253856" stroke-width="2" filter="url(#shadow)"/>
+    <rect width="12" height="85" fill="url(#binterBlueGrad)" rx="3"/>
+    
+    <text x="35" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="900" fill="#f8fafc" letter-spacing="0.5">
+      PREPARACIÓN DE VUELO &amp; BRIEFING DE TRIPULACIÓN
+    </text>
+    <text x="35" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#38bdf8">
+      Procedimiento Estándar de Prevuelo • Binter MOA Caps 1.4, 8.1, 8.3 &amp; MOB 2.0.6 • Estructura TELSI
+    </text>
+
+    <rect x="1330" y="24" width="160" height="38" rx="8" fill="rgba(56, 189, 248, 0.15)" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="1410" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#38bdf8" text-anchor="middle">
+      MOA 8.1 &amp; TELSI
+    </text>
   </g>
 
-  <text x="185" y="44" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="800" letter-spacing="1">PREPARACIÓN DE VUELO &amp; BRIEFING DE TRIPULACIÓN (TELSI)</text>
-  <text x="185" y="66" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600">Manuales Binter MOA Caps 1.4, 8.1, 8.3 &amp; MOB 2.0.6 · Flota Embraer 195-E2</text>
-  
-  <rect x="980" y="26" width="175" height="42" rx="6" fill="#0369a1" fill-opacity="0.4" stroke="#38bdf8" stroke-width="1" />
-  <text x="1067" y="52" fill="#e0f2fe" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">SOP BINTER CANARIAS</text>
-
-  <!-- 4 BLOCKS GRID -->
-  <g transform="translate(30, 95)">
+  <!-- Golden Rules & Aircraft Box -->
+  <g transform="translate(40, 130)">
+    <!-- Rules Box -->
+    <rect width="980" height="110" rx="12" fill="url(#cardGrad)" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+    <rect width="980" height="32" rx="12" fill="url(#goldGrad)"/>
+    <text x="20" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="900" fill="#ffffff" letter-spacing="0.5">
+      ★ REGLAS DE ORO DE PREVUELO Y BRIEFING
+    </text>
     
-    <!-- BLOCK 1: SALA DELIVERY & IPAD -->
+    <g transform="translate(20, 48)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" fill="#f1f5f9">
+      <text x="0" y="18" font-weight="700" fill="#fbbf24">• Combustible Discrecional:</text>
+      <text x="200" y="18" font-weight="500" fill="#cbd5e1">Si se añade combustible discrecional &gt; 500 kg, solicitar nuevo PVO recalculado.</text>
+      
+      <text x="0" y="44" font-weight="700" fill="#fbbf24">• Despegue LVTO:</text>
+      <text x="200" y="44" font-weight="500" fill="#cbd5e1">Verificar alternativo de despegue (1h monomotor) y que ELW &lt; MLM (54.000 kg).</text>
+    </g>
+
+    <!-- Aircraft Box -->
+    <g transform="translate(1005, 0)">
+      <rect width="515" height="110" rx="12" fill="url(#cardGrad)" stroke="#253856" stroke-width="2" filter="url(#shadow)"/>
+      <!-- Small Binter E195-E2 Profile -->
+      <g transform="translate(30, 60) scale(0.85)">
+        <path d="M 0,-5 Q 40,-10 180,-10 L 320,-8 Q 380,-5 420,0 Q 380,5 320,8 L 180,10 Q 40,10 0,5 Z" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+        <path d="M 100,-9 Q 180,0 260,-9 L 300,-8 Q 220,1 140,-8 Z" fill="#059669"/>
+        <path d="M 120,-8 Q 200,3 280,-6 L 320,-5 Q 240,4 160,-5 Z" fill="#0284c7"/>
+        <path d="M 390,-3 L 410,-1 L 400,1 L 385,-1 Z" fill="#1e293b"/>
+        <path d="M 170,0 L 220,48 L 240,48 L 205,0 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="1.5"/>
+        <path d="M 240,48 L 250,60 L 236,60 L 228,48 Z" fill="#059669"/>
+        <rect x="180" y="15" width="48" height="15" rx="6" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
+        <path d="M 20,-6 L -35,-48 L -10,-48 L 45,-6 Z" fill="#059669"/>
+        <path d="M 5,-6 L -25,-48 L -10,-48 L 25,-6 Z" fill="#0284c7"/>
+      </g>
+      <text x="500" y="30" font-family="sans-serif" font-size="13" font-weight="800" fill="#10b981" text-anchor="end">EMBRAER 195-E2</text>
+      <text x="500" y="50" font-family="sans-serif" font-size="11.5" font-weight="600" fill="#94a3b8" text-anchor="end">Binter Canarias</text>
+    </g>
+  </g>
+
+  <!-- 4 Main Workflow Cards -->
+  <g transform="translate(40, 260)">
+    
+    <!-- 1. Sala Delivery -->
     <g transform="translate(0, 0)">
-      <rect width="270" height="555" rx="12" fill="url(#cardGradB)" stroke="#38bdf8" stroke-width="1.5" />
-      <rect x="14" y="14" width="28" height="28" rx="6" fill="url(#skyGradB)" />
-      <text x="28" y="33" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="800" text-anchor="middle">1</text>
-      
-      <text x="50" y="28" fill="#7dd3fc" font-family="system-ui, sans-serif" font-size="14" font-weight="800">SALA DELIVERY / IPAD</text>
-      <text x="50" y="42" fill="#94a3b8" font-size="10">Actualización y Dispositivos</text>
+      <rect width="360" height="520" rx="12" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="2" filter="url(#shadow)"/>
+      <rect width="360" height="42" rx="12" fill="url(#binterBlueGrad)"/>
+      <text x="180" y="27" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">
+        1. SALA DELIVERY (iPAD)
+      </text>
 
-      <rect x="14" y="56" width="242" height="105" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
-      <text x="24" y="76" fill="#38bdf8" font-size="11" font-weight="800">MPO (Manuales Operativos)</text>
-      <text x="24" y="92" fill="#cbd5e1" font-size="10">• Actualizar vuelo y documentación.</text>
-      <text x="24" y="106" fill="#cbd5e1" font-size="10">• Revisiones vigentes de MOA/MOB.</text>
-      <text x="24" y="120" fill="#cbd5e1" font-size="10">• Avisos operacionales de flota.</text>
-      <text x="24" y="134" fill="#94a3b8" font-size="9.5">• Chequeo de NOTAMs / circulares.</text>
+      <g transform="translate(20, 58)" font-family="sans-serif">
+        <rect width="320" height="98" rx="8" fill="#18263e" stroke="#334155" stroke-width="1"/>
+        <text x="18" y="24" font-size="14.5" font-weight="800" fill="#38bdf8">App MPO (Manuales)</text>
+        <text x="18" y="46" font-size="13" font-weight="500" fill="#e2e8f0">Actualizar vuelos asignados.</text>
+        <text x="18" y="68" font-size="13" font-weight="500" fill="#cbd5e1">Verificar revisiones y avisos</text>
+        <text x="18" y="88" font-size="13" font-weight="500" fill="#cbd5e1">operacionales de flota (OEB/FOL).</text>
 
-      <rect x="14" y="171" width="242" height="100" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
-      <text x="24" y="191" fill="#38bdf8" font-size="11" font-weight="800">ePerf (Cálculo Rendimiento)</text>
-      <text x="24" y="207" fill="#cbd5e1" font-size="10">• Base de datos aeródromos activa.</text>
-      <text x="24" y="221" fill="#cbd5e1" font-size="10">• Pesos estructurales E195-E2.</text>
-      <text x="24" y="235" fill="#cbd5e1" font-size="10">• Comprobar estado de pistas.</text>
-      <text x="24" y="249" fill="#94a3b8" font-size="9.5">• Sincronizar antes de salir.</text>
+        <g transform="translate(0, 110)">
+          <rect width="320" height="98" rx="8" fill="#18263e" stroke="#334155" stroke-width="1"/>
+          <text x="18" y="24" font-size="14.5" font-weight="800" fill="#38bdf8">App ePerf E195-E2</text>
+          <text x="18" y="46" font-size="13" font-weight="500" fill="#e2e8f0">Actualizar bases de datos de</text>
+          <text x="18" y="68" font-size="13" font-weight="500" fill="#cbd5e1">aeródromos, pistas, pesos y</text>
+          <text x="18" y="88" font-size="13" font-weight="500" fill="#cbd5e1">limitaciones de despegue/toma.</text>
+        </g>
 
-      <rect x="14" y="281" width="242" height="115" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
-      <text x="24" y="301" fill="#38bdf8" font-size="11" font-weight="800">LIDO mPilot &amp; Taillog</text>
-      <text x="24" y="317" fill="#cbd5e1" font-size="10">• Ciclo AIRAC activo descargado.</text>
-      <text x="24" y="331" fill="#cbd5e1" font-size="10">• Cartas de salida/llegada/ruta.</text>
-      <text x="24" y="345" fill="#cbd5e1" font-size="10">• Descargar PVOs del día.</text>
-      <text x="24" y="359" fill="#cbd5e1" font-size="10">• Estado técnico matrícula avión.</text>
-      <text x="24" y="373" fill="#fca5a5" font-size="9.5">• Comprobar diferidos MEL en Taillog.</text>
+        <g transform="translate(0, 220)">
+          <rect width="320" height="98" rx="8" fill="#18263e" stroke="#334155" stroke-width="1"/>
+          <text x="18" y="24" font-size="14.5" font-weight="800" fill="#38bdf8">App Lido mPilot</text>
+          <text x="18" y="46" font-size="13" font-weight="500" fill="#e2e8f0">Descargar ciclo AIRAC activo,</text>
+          <text x="18" y="68" font-size="13" font-weight="500" fill="#cbd5e1">cartas de salida, ruta, llegada</text>
+          <text x="18" y="88" font-size="13" font-weight="500" fill="#cbd5e1">y aeródromos alternativos.</text>
+        </g>
 
-      <rect x="14" y="406" width="242" height="135" rx="6" fill="#1e293b" fill-opacity="0.5" stroke="#38bdf8" stroke-width="1" />
-      <text x="24" y="426" fill="#7dd3fc" font-size="11" font-weight="800">REGLA DE CARGA / EFBs:</text>
-      <text x="24" y="444" fill="#cbd5e1" font-size="10">• Batería mínima EFB &gt; 50%.</text>
-      <text x="24" y="458" fill="#cbd5e1" font-size="10">• iPad de reserva disponible.</text>
-      <text x="24" y="472" fill="#cbd5e1" font-size="10">• Powerbanks según BOE 2026</text>
-      <text x="24" y="486" fill="#cbd5e1" font-size="10">  (límite ≤ 100 Wh, en cabina).</text>
+        <g transform="translate(0, 330)">
+          <rect width="320" height="105" rx="8" fill="#18263e" stroke="#334155" stroke-width="1"/>
+          <text x="18" y="24" font-size="14.5" font-weight="800" fill="#38bdf8">Taillog &amp; MEL Diferidos</text>
+          <text x="18" y="46" font-size="13" font-weight="500" fill="#e2e8f0">Descargar PVOs del día.</text>
+          <text x="18" y="68" font-size="13" font-weight="500" fill="#cbd5e1">Comprobar estado técnico del</text>
+          <text x="18" y="88" font-size="13" font-weight="700" fill="#fbbf24">avión asignado y registros MEL.</text>
+        </g>
+      </g>
     </g>
 
-    <!-- BLOCK 2: SOBRE DE VUELO (PVO / OFP) -->
-    <g transform="translate(285, 0)">
-      <rect width="280" height="555" rx="12" fill="url(#cardGradB)" stroke="#818cf8" stroke-width="1.5" />
-      <rect x="14" y="14" width="28" height="28" rx="6" fill="#6366f1" />
-      <text x="28" y="33" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="800" text-anchor="middle">2</text>
-      
-      <text x="50" y="28" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="14" font-weight="800">SOBRE DE VUELO (PVO)</text>
-      <text x="50" y="42" fill="#94a3b8" font-size="10">Despacho y Plan Operacional</text>
+    <!-- 2. Sobre de Vuelo (PVO) -->
+    <g transform="translate(385, 0)">
+      <rect width="365" height="520" rx="12" fill="url(#cardGrad)" stroke="#10b981" stroke-width="2" filter="url(#shadow)"/>
+      <rect width="365" height="42" rx="12" fill="url(#binterGreenGrad)"/>
+      <text x="182" y="27" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">
+        2. SOBRE DE VUELO (PVO / OFP)
+      </text>
 
-      <rect x="14" y="56" width="252" height="95" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
-      <text x="24" y="76" fill="#a5b4fc" font-size="11" font-weight="800">Comprobación Inicial PVO</text>
-      <text x="24" y="92" fill="#cbd5e1" font-size="10">• 1 copia manifiesto en despacho.</text>
-      <text x="24" y="106" fill="#cbd5e1" font-size="10">• Matrícula, pasajeros previstos.</text>
-      <text x="24" y="120" fill="#cbd5e1" font-size="10">• Tiempo de vuelo programado.</text>
-      <text x="24" y="134" fill="#cbd5e1" font-size="10">• Niveles de crucero / FL.</text>
+      <g transform="translate(20, 58)" font-family="sans-serif">
+        <rect width="325" height="98" rx="8" fill="#18263e" stroke="#334155" stroke-width="1"/>
+        <text x="18" y="24" font-size="14.5" font-weight="800" fill="#34d399">Manifiesto de Despacho</text>
+        <text x="18" y="46" font-size="13" font-weight="500" fill="#e2e8f0">Dejar 1 copia firmada en sala.</text>
+        <text x="18" y="68" font-size="13" font-weight="500" fill="#cbd5e1">Verificar matrícula, número de</text>
+        <text x="18" y="88" font-size="13" font-weight="500" fill="#cbd5e1">pasajeros y tiempos de vuelo.</text>
 
-      <rect x="14" y="161" width="252" height="150" rx="6" fill="#0f172a" stroke="#f59e0b" stroke-width="1.2" />
-      <text x="24" y="181" fill="#fbbf24" font-size="11" font-weight="800">Gestión de Combustible</text>
-      <text x="24" y="197" fill="#cbd5e1" font-size="10">• Analizar Tankering vs Re-fuel.</text>
-      <text x="24" y="211" fill="#cbd5e1" font-size="10">• ¿Combustible extra / discrecional?</text>
-      <rect x="22" y="222" width="236" height="52" rx="4" fill="#78350f" fill-opacity="0.4" stroke="#f59e0b" stroke-width="1" />
-      <text x="30" y="238" fill="#fde68a" font-size="10" font-weight="800">DISCRECIONAL &gt; 500 KG:</text>
-      <text x="30" y="252" fill="#fef3c7" font-size="9.5">➔ Requiere recálculo obligatorio</text>
-      <text x="30" y="264" fill="#fef3c7" font-size="9.5">➔ Solicitar New PVO a CCO.</text>
-      <text x="24" y="294" fill="#94a3b8" font-size="9.5">• Reserva final inviolable (30 min).</text>
+        <g transform="translate(0, 110)">
+          <rect width="325" height="110" rx="8" fill="#18263e" stroke="#334155" stroke-width="1"/>
+          <text x="18" y="24" font-size="14.5" font-weight="800" fill="#34d399">Análisis de Combustible</text>
+          <text x="18" y="46" font-size="13" font-weight="500" fill="#e2e8f0">Trip + Contingency + Alternate</text>
+          <text x="18" y="68" font-size="13" font-weight="500" fill="#e2e8f0">+ Final Reserve (30 min).</text>
+          <text x="18" y="90" font-size="13" font-weight="700" fill="#fbbf24">Evaluar Tankering vs Refuel local.</text>
+        </g>
 
-      <rect x="14" y="321" width="252" height="135" rx="6" fill="#0f172a" stroke="#ef4444" stroke-width="1.2" />
-      <text x="24" y="341" fill="#f87171" font-size="11" font-weight="800">Requisitos Especiales LVTO</text>
-      <text x="24" y="357" fill="#cbd5e1" font-size="10">• Alternativo de despegue en PVO.</text>
-      <text x="24" y="371" fill="#cbd5e1" font-size="10">• Distancia máx: 1h monomotor.</text>
-      <text x="24" y="385" fill="#fca5a5" font-size="10" font-weight="700">• Peso Estimado Aterrizaje (ELM):</text>
-      <text x="34" y="400" fill="#fca5a5" font-size="11" font-weight="800">ELM &lt; MLM (54.000 kg)</text>
-      <text x="24" y="418" fill="#cbd5e1" font-size="10">• NOTOC: Mercancías Peligrosas.</text>
-      <text x="24" y="432" fill="#cbd5e1" font-size="10">• Diferidos MEL de cabina/pasaje.</text>
+        <g transform="translate(0, 232)">
+          <rect width="325" height="100" rx="8" fill="#18263e" stroke="#334155" stroke-width="1"/>
+          <text x="18" y="24" font-size="14.5" font-weight="800" fill="#34d399">Información de Ruta &amp; NOTAMs</text>
+          <text x="18" y="46" font-size="13" font-weight="500" fill="#cbd5e1">Pistas activas (AeroWeather),</text>
+          <text x="18" y="68" font-size="13" font-weight="500" fill="#cbd5e1">SID/STAR, nivel de crucero y</text>
+          <text x="18" y="88" font-size="13" font-weight="500" fill="#cbd5e1">mercancías peligrosas (NOTOC).</text>
+        </g>
 
-      <rect x="14" y="466" width="252" height="75" rx="6" fill="#1e1b4b" stroke="#818cf8" stroke-width="1" />
-      <text x="24" y="486" fill="#c7d2fe" font-size="10" font-weight="800">FIRMA Y ARCHIVO:</text>
-      <text x="24" y="502" fill="#e0e7ff" font-size="9.5">Firma de Comandante en PVO.</text>
-      <text x="24" y="516" fill="#94a3b8" font-size="9">Copia física o digital transmitida.</text>
+        <g transform="translate(0, 344)">
+          <rect width="325" height="95" rx="8" fill="rgba(239, 68, 68, 0.15)" stroke="#ef4444" stroke-width="1.5"/>
+          <text x="18" y="24" font-size="14" font-weight="800" fill="#f87171">ALERTA EN SALIDA LVTO:</text>
+          <text x="18" y="46" font-size="12.5" font-weight="600" fill="#fecaca">• Alternativo despegue requerido</text>
+          <text x="18" y="66" font-size="12.5" font-weight="600" fill="#fecaca">• Distancia máx: 1 hora monomotor</text>
+          <text x="18" y="86" font-size="12.5" font-weight="600" fill="#fecaca">• ELW &lt; MLM (54.000 kg)</text>
+        </g>
+      </g>
     </g>
 
-    <!-- BLOCK 3: BRIEFING TRIPULACIÓN (TELSI) -->
-    <g transform="translate(580, 0)">
-      <rect width="280" height="555" rx="12" fill="url(#cardGradB)" stroke="#10b981" stroke-width="1.5" />
-      <rect x="14" y="14" width="28" height="28" rx="6" fill="url(#emeraldGradB)" />
-      <text x="28" y="33" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="800" text-anchor="middle">3</text>
-      
-      <text x="50" y="28" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="14" font-weight="800">BRIEFING TELSI (CABINA)</text>
-      <text x="50" y="42" fill="#ef4444" font-size="10" font-weight="700">¡NUNCA NITS! Formato Oficial Binter</text>
+    <!-- 3. Briefing Tripulación TELSI -->
+    <g transform="translate(770, 0)">
+      <rect width="370" height="520" rx="12" fill="url(#cardGrad)" stroke="#a855f7" stroke-width="2" filter="url(#shadow)"/>
+      <rect width="370" height="42" rx="12" fill="url(#purpleGrad)"/>
+      <text x="185" y="27" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">
+        3. ESTRUCTURA TELSI (¡NO NITS!)
+      </text>
 
-      <rect x="14" y="56" width="252" height="385" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
-      
-      <text x="24" y="78" fill="#34d399" font-size="11.5" font-weight="800">T - TIPO DE EMERGENCIA</text>
-      <text x="24" y="94" fill="#cbd5e1" font-size="10">• Prevista (tiempo para preparar)</text>
-      <text x="24" y="108" fill="#cbd5e1" font-size="10">• Imprevista / Aterrizaje Inseguro</text>
+      <g transform="translate(20, 58)" font-family="sans-serif">
+        <rect width="330" height="85" rx="8" fill="#18263e" stroke="#334155" stroke-width="1"/>
+        <text x="18" y="24" font-size="14.5" font-weight="800" fill="#c084fc">T • Tipo de Emergencia</text>
+        <text x="18" y="46" font-size="13" font-weight="500" fill="#cbd5e1">Naturaleza de la anomalía o</text>
+        <text x="18" y="68" font-size="13" font-weight="500" fill="#cbd5e1">situación técnica a bordo.</text>
 
-      <text x="24" y="132" fill="#34d399" font-size="11.5" font-weight="800">E - ESTIMATED TIME (ETA)</text>
-      <text x="24" y="148" fill="#cbd5e1" font-size="10">• Tiempo disponible hasta la toma</text>
-      <text x="24" y="162" fill="#cbd5e1" font-size="10">• Sincronizar relojes con Sobrecargo</text>
+        <g transform="translate(0, 95)">
+          <rect width="330" height="85" rx="8" fill="#18263e" stroke="#334155" stroke-width="1"/>
+          <text x="18" y="24" font-size="14.5" font-weight="800" fill="#c084fc">E • Evacuación Prevista</text>
+          <text x="18" y="46" font-size="13" font-weight="500" fill="#cbd5e1">¿Probable o improbable? Pre-aviso</text>
+          <text x="18" y="68" font-size="13" font-weight="500" fill="#cbd5e1">de preparación de cabina y salidas.</text>
+        </g>
 
-      <text x="24" y="186" fill="#34d399" font-size="11.5" font-weight="800">L - LUGAR DE ATERRIZAJE</text>
-      <text x="24" y="202" fill="#cbd5e1" font-size="10">• Pista en aeródromo previsto</text>
-      <text x="24" y="216" fill="#cbd5e1" font-size="10">• Tierra fuera de aeródromo</text>
-      <text x="24" y="230" fill="#cbd5e1" font-size="10">• Agua (Amerizaje / Ditching)</text>
+        <g transform="translate(0, 190)">
+          <rect width="330" height="85" rx="8" fill="#18263e" stroke="#334155" stroke-width="1"/>
+          <text x="18" y="24" font-size="14.5" font-weight="800" fill="#c084fc">L • Lado / Salidas Seguras</text>
+          <text x="18" y="46" font-size="13" font-weight="500" fill="#cbd5e1">Puertas operativas (lado izq / dcho),</text>
+          <text x="18" y="68" font-size="13" font-weight="500" fill="#cbd5e1">aislando zonas con fuego o daño.</text>
+        </g>
 
-      <text x="24" y="254" fill="#34d399" font-size="11.5" font-weight="800">S - SEÑALES CONVENIDAS</text>
-      <text x="24" y="270" fill="#fca5a5" font-size="10" font-weight="700">• A 5 min: "FINALIZAR PREPARACIÓN"</text>
-      <text x="24" y="284" fill="#f87171" font-size="10" font-weight="800">• A 30 s: "PROTECCIÓN x3"</text>
+        <g transform="translate(0, 285)">
+          <rect width="330" height="75" rx="8" fill="#18263e" stroke="#334155" stroke-width="1"/>
+          <text x="18" y="24" font-size="14.5" font-weight="800" fill="#c084fc">S • Señal de Impacto / Prep.</text>
+          <text x="18" y="46" font-size="13" font-weight="500" fill="#cbd5e1">Cantadas estándar por megafonía.</text>
+          <text x="18" y="66" font-size="13" font-weight="700" fill="#facc15">"PROTECCIÓN, PROTECCIÓN, PROTECCIÓN"</text>
+        </g>
 
-      <text x="24" y="308" fill="#34d399" font-size="11.5" font-weight="800">I - INSTRUCCIONES ESPECIALES</text>
-      <text x="24" y="324" fill="#cbd5e1" font-size="10">• Evacuación prevista sí / no</text>
-      <text x="24" y="338" fill="#cbd5e1" font-size="10">• Puertas y salidas operativas</text>
-      <text x="24" y="352" fill="#cbd5e1" font-size="10">• Pasajeros especiales (PRM, UM)</text>
-      <text x="24" y="366" fill="#cbd5e1" font-size="10">• Repostaje con pasaje (2 salidas)</text>
-
-      <rect x="14" y="451" width="252" height="90" rx="6" fill="#064e3b" fill-opacity="0.4" stroke="#10b981" stroke-width="1" />
-      <text x="24" y="471" fill="#34d399" font-size="10.5" font-weight="800">TEM &amp; SEGURIDAD (AVSEC):</text>
-      <text x="24" y="487" fill="#cbd5e1" font-size="9.5">• Palabra clave interferencia ilícita.</text>
-      <text x="24" y="501" fill="#cbd5e1" font-size="9.5">• Puerta blindada cerrada y bloqueada.</text>
-      <text x="24" y="515" fill="#cbd5e1" font-size="9.5">• Gestión de pasajeros conflictivos.</text>
+        <g transform="translate(0, 370)">
+          <rect width="330" height="70" rx="8" fill="#18263e" stroke="#334155" stroke-width="1"/>
+          <text x="18" y="24" font-size="14.5" font-weight="800" fill="#c084fc">I • Información Adicional</text>
+          <text x="18" y="46" font-size="13" font-weight="500" fill="#cbd5e1">Tiempos disponibles y coordinación.</text>
+        </g>
+      </g>
     </g>
 
-    <!-- BLOCK 4: CALLOUTS MANDATORIOS PA -->
-    <g transform="translate(875, 0)">
-      <rect width="265" height="555" rx="12" fill="url(#cardGradB)" stroke="#f43f5e" stroke-width="1.5" />
-      <rect x="14" y="14" width="28" height="28" rx="6" fill="url(#roseGradB)" />
-      <text x="28" y="33" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="800" text-anchor="middle">4</text>
-      
-      <text x="50" y="28" fill="#fda4af" font-family="system-ui, sans-serif" font-size="14" font-weight="800">AVISOS PA EN CABINA</text>
-      <text x="50" y="42" fill="#94a3b8" font-size="10">Fraseología Oficial Binter</text>
+    <!-- 4. Llamadas Megafonía PA -->
+    <g transform="translate(1160, 0)">
+      <rect width="360" height="520" rx="12" fill="url(#cardGrad)" stroke="#ef4444" stroke-width="2" filter="url(#shadow)"/>
+      <rect width="360" height="42" rx="12" fill="url(#redGrad)"/>
+      <text x="180" y="27" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">
+        4. LLAMADAS PA DE CABINA
+      </text>
 
-      <!-- Step items PA -->
-      <rect x="14" y="56" width="237" height="68" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
-      <text x="22" y="74" fill="#fbbf24" font-size="10" font-weight="800">INICIO DE EMERGENCIA:</text>
-      <text x="22" y="90" fill="#fde68a" font-size="10" font-weight="800">"SOBRECARGO A CABINA"</text>
-      <text x="22" y="106" fill="#94a3b8" font-size="9">Llamada para briefing TELSI cara a cara.</text>
+      <g transform="translate(20, 58)" font-family="sans-serif">
+        <rect width="320" height="70" rx="8" fill="#18263e" stroke="#334155" stroke-width="1"/>
+        <text x="16" y="22" font-size="13" font-weight="800" fill="#38bdf8">"SOBRECARGO A CABINA"</text>
+        <text x="16" y="42" font-size="12" font-weight="500" fill="#cbd5e1">Briefing cara a cara en cockpit.</text>
+        <text x="16" y="60" font-size="11.5" font-weight="700" fill="#94a3b8">Llamada inicial de coordinación.</text>
 
-      <rect x="14" y="134" width="237" height="74" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
-      <text x="22" y="152" fill="#38bdf8" font-size="10" font-weight="800">A 5 MINUTOS DE LA TOMA:</text>
-      <text x="22" y="168" fill="#bae6fd" font-size="9.5" font-weight="800">"TRIPULACIÓN DE CABINA,</text>
-      <text x="22" y="180" fill="#bae6fd" font-size="9.5" font-weight="800">FINALIZAR PREPARACIÓN"</text>
-      <text x="22" y="196" fill="#94a3b8" font-size="9">Sentarse y asegurarse en sus puestos.</text>
+        <g transform="translate(0, 78)">
+          <rect width="320" height="70" rx="8" fill="#18263e" stroke="#334155" stroke-width="1"/>
+          <text x="16" y="22" font-size="12" font-weight="800" fill="#38bdf8">"TRIPULACIÓN CABINA, FINALIZAR PREP."</text>
+          <text x="16" y="42" font-size="12" font-weight="500" fill="#cbd5e1">Aviso a 5 minutos del aterrizaje.</text>
+          <text x="16" y="60" font-size="11.5" font-weight="700" fill="#94a3b8">Cabina asegurada en emergencia.</text>
+        </g>
 
-      <rect x="14" y="218" width="237" height="74" rx="6" fill="#450a0a" fill-opacity="0.4" stroke="#ef4444" stroke-width="1.2" />
-      <text x="22" y="236" fill="#f87171" font-size="10" font-weight="800">A 30 SEGUNDOS DEL IMPACTO:</text>
-      <text x="22" y="254" fill="#fecaca" font-size="11" font-weight="900">"PROTECCIÓN,</text>
-      <text x="22" y="268" fill="#fecaca" font-size="11" font-weight="900">PROTECCIÓN, PROTECCIÓN"</text>
-      <text x="22" y="282" fill="#fca5a5" font-size="9">Adopción posición de impacto (Brace).</text>
+        <g transform="translate(0, 156)">
+          <rect width="320" height="70" rx="8" fill="#18263e" stroke="#334155" stroke-width="1"/>
+          <text x="16" y="22" font-size="12" font-weight="800" fill="#fbbf24">"PROTECCIÓN, PROTECCIÓN, PROTECCIÓN"</text>
+          <text x="16" y="42" font-size="12" font-weight="500" fill="#cbd5e1">Aviso a 30 segundos del impacto.</text>
+          <text x="16" y="60" font-size="11.5" font-weight="700" fill="#facc15">Posición de impacto (Brace).</text>
+        </g>
 
-      <rect x="14" y="302" width="237" height="74" rx="6" fill="#0f172a" stroke="#f59e0b" stroke-width="1" />
-      <text x="22" y="320" fill="#fbbf24" font-size="10" font-weight="800">TRAS DETENER EL AVIÓN:</text>
-      <text x="22" y="338" fill="#fef3c7" font-size="9.5" font-weight="800">"TRIPULACIÓN DE CABINA,</text>
-      <text x="22" y="350" fill="#fef3c7" font-size="9.5" font-weight="800">ESPEREN INSTRUCCIONES"</text>
-      <text x="22" y="366" fill="#94a3b8" font-size="9">Evaluación de la situación en tierra.</text>
+        <g transform="translate(0, 234)">
+          <rect width="320" height="70" rx="8" fill="#18263e" stroke="#334155" stroke-width="1"/>
+          <text x="16" y="22" font-size="12" font-weight="800" fill="#34d399">"TRIP. CABINA, ESPEREN INSTRUCCIONES"</text>
+          <text x="16" y="42" font-size="12" font-weight="500" fill="#cbd5e1">Tras parar: Evaluación en cabina.</text>
+          <text x="16" y="60" font-size="11.5" font-weight="700" fill="#94a3b8">Evitar evacuación descontrolada.</text>
+        </g>
 
-      <rect x="14" y="386" width="237" height="68" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
-      <text x="22" y="404" fill="#34d399" font-size="10" font-weight="800">SITUACIÓN CONTROLADA:</text>
-      <text x="22" y="420" fill="#a7f3d0" font-size="9.5" font-weight="800">"TRIPULACIÓN DE CABINA,</text>
-      <text x="22" y="432" fill="#a7f3d0" font-size="9.5" font-weight="800">PERMANEZCAN SENTADAS"</text>
-      <text x="22" y="446" fill="#94a3b8" font-size="9">No se evacúa (desalojo normal).</text>
+        <g transform="translate(0, 312)">
+          <rect width="320" height="70" rx="8" fill="#18263e" stroke="#334155" stroke-width="1"/>
+          <text x="16" y="22" font-size="12" font-weight="800" fill="#34d399">"TRIP. CABINA, PERMANEZCAN SENTADAS"</text>
+          <text x="16" y="42" font-size="12" font-weight="500" fill="#cbd5e1">Situación controlada: No evacuación.</text>
+          <text x="16" y="60" font-size="11.5" font-weight="700" fill="#94a3b8">Desalojo normal o con escaleras.</text>
+        </g>
 
-      <rect x="14" y="464" width="237" height="78" rx="6" fill="#881337" stroke="#f43f5e" stroke-width="1.5" />
-      <text x="22" y="482" fill="#fda4af" font-size="10" font-weight="800">ORDEN DE EVACUACIÓN:</text>
-      <text x="22" y="502" fill="#ffffff" font-size="12" font-weight="900">"EVACUACIÓN,</text>
-      <text x="22" y="518" fill="#ffffff" font-size="12" font-weight="900">EVACUACIÓN, EVACUACIÓN"</text>
-      <text x="22" y="534" fill="#fecdd3" font-size="9">Apertura inmediata de salidas.</text>
+        <g transform="translate(0, 390)">
+          <rect width="320" height="70" rx="8" fill="rgba(220, 38, 38, 0.2)" stroke="#ef4444" stroke-width="1.5"/>
+          <text x="16" y="22" font-size="12" font-weight="800" fill="#f87171">"EVACUACIÓN, EVACUACIÓN, EVACUACIÓN"</text>
+          <text x="16" y="42" font-size="12" font-weight="600" fill="#fecaca">Orden verbal de evacuación inmediata.</text>
+          <text x="16" y="60" font-size="11.5" font-weight="700" fill="#ffffff">Apertura de rampas y salidas.</text>
+        </g>
+      </g>
     </g>
+  </g>
 
+  <!-- Bottom Bar -->
+  <g transform="translate(40, 1010)">
+    <rect width="1520" height="110" rx="12" fill="#132035" stroke="#253856" stroke-width="2" filter="url(#shadow)"/>
+    <text x="30" y="36" font-family="sans-serif" font-size="16" font-weight="800" fill="#38bdf8">
+      REQUISITOS OPERACIONALES BINTER CANARIAS (MOA CAP. 8):
+    </text>
+    <text x="30" y="65" font-family="sans-serif" font-size="14" font-weight="500" fill="#cbd5e1">
+      • Cross-check de armado de rampas obligatorio antes del rodaje. Repostaje con pasajeros: 2 salidas libres y señalizadas.
+    </text>
+    <text x="30" y="90" font-family="sans-serif" font-size="14" font-weight="500" fill="#cbd5e1">
+      • TEM (Gestión de Amenazas): Briefing específico para vuelos de instrucción, rodajes complejos LVO o pistas cortas.
+    </text>
   </g>
 </svg>
