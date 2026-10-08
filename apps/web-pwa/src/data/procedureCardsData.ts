@@ -707,50 +707,121 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
   {
     id: 'card-emg-flow-decision',
     category: 'emergency',
-    title: 'Flow de Emergencias / Anormalidades & Toma de Decisiones',
-    subtitle: 'Prioridad EICAS, MEANA, IMFLOCC y Reglas de Oro de Compañía',
-    manualRef: 'MOB 3.0, 3.1 & QRH Rev19',
+    title: 'Flujo de Gestión de Emergencia del Comandante (Flow Completo)',
+    subtitle: 'Golden Rules, Prioridad Fuel/Tiempo, MEANA, IMFLOCC, E-DALTA y 4 Últimas Listas',
+    manualRef: 'MOB 3.0, 3.1, MOA 8.3 & QRH Rev19',
     airplane: 'Embraer 195-E2 / Binter Ops',
-    badges: ['MEANA', 'IMFLOCC', 'EICAS', 'TELSI', 'Golden Rules'],
+    badges: ['Flow Comandante', 'Golden Rules', 'Fuel vs Tiempo', 'MEANA', 'IMFLOCC', 'E-DALTA', '4 Últimas Listas', 'SOP'],
     goldenRules: [
-      '¿Fuga de combustible sospechada (Fuel Leak)? -> ¡PROHIBIDO transferir combustible!',
-      'Prioridad de Decisiones: 1° Dónde ir (Where to go), 2° Estimar peso de toma, 3° Calcular ePerf.',
-      'Comunicaciones estructuradas: TELSI a tripulación de cabina, MAYDAY/PAN-PAN a ATC, PA a pasajeros y ACARS (EMR/INC) a Operaciones.'
+      'CHECK FMA ALWAYS: Monitorizar y cantar siempre los cambios de modos en el FMA ante cualquier fallo o cambio de estado.',
+      'CHECK SYS PAGE ON FAILURE: Abrir siempre la página de sistemas correspondiente en MFD (Synoptic) ante aviso EICAS antes de accionar interruptores.',
+      'SEGUIR TECHNICAL ABNORMAL FLOW: Taxi Out > FOL/OEB > QRH > Ground Reset (Non Standard DDPM).',
+      'CRITERIO DE PRIORIDAD: FUEL (problemas que no requieran aterrizaje inmediato) vs TIEMPO (fuegos inextinguibles, problemas de estructura o mandos de vuelo).'
     ],
-    summary: 'Flujo completo de procesamiento de fallos técnicos desde el aviso en EICAS hasta la toma de decisión estratégica en vuelo y coordinación con todos los actores.',
+    summary: 'Flujo estratégico y secuencial ante una emergencia o anormalidad en vuelo como Comandante: Golden Rules, discriminación Fuel vs Tiempo, orden de listas MEANA, toma de decisiones IMFLOCC, briefing E-DALTA y las 4 Últimas Listas antes de toma.',
     sections: [
       {
-        title: '1. Reconocimiento y Prioridad de Mensajes EICAS',
+        title: '¡¡ GOLDEN RULES !! & TECHNICAL ABNORMAL FLOW',
+        color: 'amber',
+        items: [
+          {
+            role: 'ALERT',
+            action: 'CHECK FMA ALWAYS',
+            details: 'Monitorizar y confirmar en voz alta todos los cambios en el Flight Mode Annunciator (FMA) para garantizar el conocimiento del estado de guiado lateral, vertical y velocidad.'
+          },
+          {
+            role: 'ALERT',
+            action: 'CHECK SYS PAGE ON FAILURE',
+            details: 'Ante cualquier mensaje EICAS o fallo, abrir la SYS Page (Synoptic) en el MFD sin tocar interruptores para verificar visualmente parámetros y componentes afectados.'
+          },
+          {
+            role: 'STEP',
+            action: 'SEGUIR TECHNICAL ABNORMAL FLOW:',
+            details: '1° TAXI OUT / EN VUELO -> 2° FOL / OEB (Flight Operations Letters / Operational Evaluation Board) -> 3° QRH (Quick Reference Handbook) -> 4° GROUND RESET (Non Standard DDPM).'
+          },
+          {
+            role: 'NOTE',
+            action: 'Jerarquía de mensajes EICAS con Chevron (>):',
+            details: '1° Warning (Rojo con >) -> 2° Caution (Ámbar con >) -> 3° Advisory (Cyan con >). Sin Chevron: 1° AC/DC -> 2° MAU -> 3° SPDA.'
+          }
+        ]
+      },
+      {
+        title: 'PRIORIDAD TRAS EMERGENCIA / ANORMALIDAD: FUEL O TIEMPO',
         color: 'rose',
         items: [
-          { role: 'STEP', action: '1° Abrir System Page en MFD sin tocar interruptores.' },
-          { role: 'STEP', action: '2° Verificar la avería y hacer pre-evaluación con el otro piloto.' },
-          { role: 'NOTE', action: 'Jerarquía de mensajes EICAS con Chevron (>) :', details: '1° Warning (Rojo con >) -> 2° Caution (Ámbar con >) -> 3° Advisory (Cyan con >).' },
-          { role: 'NOTE', action: 'Jerarquía de mensajes sin Chevron:', details: '1° Fallos AC/DC -> 2° Fallos MAU -> 3° Fallos SPDA.' }
+          {
+            role: 'STEP',
+            action: 'FUEL: Problemas que NO requieran aterrizaje inmediato',
+            details: 'Permite tomar tiempo en espera/órbita para aplicar listas QRH completas, evaluar alternativas en red, calcular ePerf con calma, coordinar con CCO/Handling y preparar aproximación sin prisas.'
+          },
+          {
+            role: 'ALERT',
+            action: 'TIEMPO: Fuegos inextinguibles, problemas de estructura o mandos de vuelo',
+            details: 'Prioridad absoluta al aterrizaje en el aeródromo adecuado más cercano minimizando el tiempo de permanencia en el aire (aproximación directa y vectorización radar expedita).'
+          }
         ]
       },
       {
-        title: '2. Secuencia de Ejecución MEANA (Checklists)',
+        title: '① MEANA (Orden de Aplicación de Listas de Chequeo)',
         color: 'purple',
         items: [
-          { role: 'STEP', action: '1° M - Memory Items:', details: 'Acciones inmediatas de memoria si el procedimiento lo requiere.' },
-          { role: 'STEP', action: '2° E - Emergency Checklist:', details: 'Listas de emergencia con recuadro rojo/gris en QRH.' },
-          { role: 'STEP', action: '3° A - Abnormal Checklist principal:', details: 'Lista anormal que ataca la raíz del fallo.' },
-          { role: 'STEP', action: '4° N - Normal Checklist:', details: 'Listas normales correspondientes a la fase de vuelo.' },
-          { role: 'STEP', action: '5° A - Abnormal Checklists restantes:', details: 'Listas secundarias y lectura de sistemas degradados.' }
+          { role: 'STEP', action: '1° M - Memory Items:', details: 'Acciones inmediatas de memoria si el procedimiento lo requiere (cantar y confirmar con rigor).' },
+          { role: 'STEP', action: '2° E - Emergency Checklist:', details: 'Listas de emergencia identificadas con recuadro rojo/gris en QRH.' },
+          { role: 'STEP', action: '3° A - Abnormal Checklist principal:', details: 'Lista anormal que ataca la raíz del fallo primario.' },
+          { role: 'STEP', action: '4° N - Normal Checklist:', details: 'Listas normales correspondientes a la fase de vuelo (After Takeoff, Cruise, Descent, etc.).' },
+          { role: 'STEP', action: '5° A - Abnormal Checklists restantes:', details: 'Lectura y seguimiento de notas de sistemas degradados e información de sistemas inoperativos.' }
         ]
       },
       {
-        title: '3. Proceso de Toma de Decisiones IMFLOCC',
+        title: '② IMFLOCC (Toma de Decisiones Estratégica & Desvío Técnico)',
         color: 'indigo',
         items: [
-          { role: 'STEP', action: 'I (Inoperative Items): Evaluación de sistemas perdidos y redundancias restantes.' },
-          { role: 'STEP', action: 'M (Meteo Report): METAR/TAF y estado de pistas de alternativas.' },
-          { role: 'STEP', action: 'F (Fuel Assessment): Autonomía y combustible remanente sobre destino vs reserva final.' },
-          { role: 'STEP', action: 'L (Landing Performance): Cálculo ePerf con multiplicadores de fallo de QRH.' },
-          { role: 'STEP', action: 'O (Options): Aeródromos disponibles (Prioridad: 1° Línea/Binter base, 2° Red Binter con mantenimiento, 3° Adecuado más cercano).' },
-          { role: 'STEP', action: 'C (Choose an Option): Decisión firme del Comandante consensuada con la tripulación.' },
-          { role: 'STEP', action: 'C (Communications): Cabin Crew (TELSI), ATC (Mayday/Pan-Pan), Pasajeros (PA), CCO Operaciones (ACARS FREE TEXT > EMR/INC).' }
+          { role: 'STEP', action: 'I (Inoperative Items / Incidents):', details: 'Evaluación técnica de sistemas perdidos y redundancias operativas restantes.' },
+          { role: 'STEP', action: 'M (Meteo Report):', details: 'Análisis de METAR, TAF, RVR, estado de pistas y viento cruzado en aeródromos candidatos.' },
+          { role: 'STEP', action: 'F (Fuel Assessment):', details: 'Autonomía y combustible remanente sobre la alternativa vs Reserva Final sacrosanta (30 min).' },
+          { role: 'STEP', action: 'L (Landing Performance):', details: 'Cálculo en ePerf InFlight Landing con multiplicadores y factores de corrección de QRH.' },
+          { role: 'STEP', action: 'O (Options):', details: 'Aeródromos disponibles según jerarquía Binter: 1° Base de línea, 2° Red con mantenimiento, 3° Adecuado más cercano.' },
+          { role: 'STEP', action: 'C (Choose an Option):', details: 'Decisión firme del Comandante consensuada con la tripulación.' },
+          { role: 'STEP', action: 'C (Communications):', details: '• ATC: Declaración de estado (MAYDAY/PAN-PAN) y requerimientos.\n• Cabina: Briefing TELSI cara a cara (¡NUNCA NITS!).\n• Pasajeros: Megafonía del Comandante (PA) clara y tranquilizadora.\n• CCO: ACARS (FREE TEXT > EMR o INC___) y VHF Operaciones.' }
+        ]
+      },
+      {
+        title: '③ E-DALTA (Briefing de Aproximación & Aterrizaje en MCDU & LIDO)',
+        color: 'sky',
+        items: [
+          { role: 'STEP', action: 'E (ePerf InFlight Landing):', details: 'Performance de aterrizaje en vuelo, peso estimado de toma (ELW), estado de pista (RWYCC) y margen de parada.' },
+          { role: 'STEP', action: 'D (Descent):', details: 'Top of Descent (TOD), perfil de descenso vertical, restricciones de altitud y velocidad de la carta.' },
+          { role: 'STEP', action: 'A (Arrival):', details: 'STAR, aproximación frustrada (Missed Approach) y altitudes mínimas de seguridad (MSA / MORA / Grid).' },
+          { role: 'STEP', action: 'L (Landing):', details: 'MCDU PERF: Flap de aterrizaje (Flap 4 o Flap FULL), Autobrake (LO/MED/HI), velocidades Vref/Vap/Vac/Vfs y mínimos DA/MDA.' },
+          { role: 'STEP', action: 'T (Taxi):', details: 'Ruta de salida de pista prevista y calles de rodaje activas hacia la plataforma.' },
+          { role: 'STEP', action: 'A (Apron):', details: 'Puesto de estacionamiento asignado (Stand/Gate), guía de atraque, calzos y servicios de emergencia en tierra.' }
+        ]
+      },
+      {
+        title: '④ 4 ÚLTIMAS LISTAS (Secuencia Final de Checklists antes de Toma)',
+        color: 'emerald',
+        items: [
+          {
+            role: 'STEP',
+            action: '// 1. EQUIPO MÍNIMO //',
+            details: 'Comprobación del equipo mínimo requerido para la aproximación prevista (RVR, navaids, luces, radioaltímetros).'
+          },
+          {
+            role: 'STEP',
+            action: '// 2. SUPLEM. CHECK. AUTOLAND o RNP //',
+            details: 'Ejecución de la lista suplementaria aplicable (Supplementary Checklist para CAT II/III Autoland o RNP AR/APCH si aplica).'
+          },
+          {
+            role: 'STEP',
+            action: '// 3. ONE ENGINE INOPERATIVE APPROACH & LANDING //',
+            details: 'Ejecución de la lista de aproximación y toma monomotor (si el escenario implica fallo de motor / OEI).'
+          },
+          {
+            role: 'STEP',
+            action: '// 4. APPROACH CHECKLIST //',
+            details: 'Lista normal de aproximación estándar leída y completada antes de alcanzar el FAF/FAP.'
+          }
         ]
       }
     ]

@@ -1529,6 +1529,62 @@ export const Dashboard: React.FC<DashboardProps> = ({
                     <strong>5° A (Abnormal Checklist restantes)</strong>: Lectura y seguimiento de notas de sistemas degradados.
                   </p>
                 </div>
+
+                {/* FLOW COMANDANTE ANTE EMERGENCIA */}
+                <div className="mnemonic-card-flow-cmd p-4 rounded-2xl bg-[#0b162c] border border-amber-500/40 space-y-3 shadow-md">
+                  <div className="flex items-center justify-between">
+                    <span className="font-black text-amber-300 text-sm flex items-center gap-2">
+                      <ShieldCheck className="w-4 h-4 text-amber-400" />
+                      <span>FLOW ANTE UNA EMERGENCIA COMO COMANDANTE</span>
+                    </span>
+                    <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/40 font-bold">FLOW COMPLETO</span>
+                  </div>
+
+                  {/* Golden rules box */}
+                  <div className="p-3 rounded-xl bg-amber-950/30 border border-amber-500/30 text-xs space-y-1">
+                    <div className="font-black text-amber-300 flex items-center gap-1.5 uppercase tracking-wider">
+                      ¡¡ GOLDEN RULES !!
+                    </div>
+                    <ul className="text-slate-200 space-y-1 list-disc pl-4">
+                      <li><strong>CHECK FMA ALWAYS</strong>: Monitorizar y cantar siempre cambios de modos.</li>
+                      <li><strong>CHECK SYS PAGE ON FAILURE</strong>: Abrir siempre la página de sistemas en MFD antes de accionar mandos.</li>
+                      <li><strong>SEGUIR TECHNICAL ABNORMAL FLOW</strong>: <span className="font-mono text-amber-200">TAXI OUT &gt; FOL/OEB &gt; QRH &gt; GROUND RESET (NON STANDARD DDPM)</span>.</li>
+                    </ul>
+                  </div>
+
+                  {/* Prioridad Fuel vs Tiempo */}
+                  <div className="p-3 rounded-xl bg-rose-950/25 border border-rose-500/30 text-xs space-y-1">
+                    <div className="font-black text-rose-300 uppercase tracking-wider">
+                      PRIORIDAD TRAS EMERGENCIA / ANORMALIDAD: FUEL O TIEMPO
+                    </div>
+                    <ul className="text-slate-200 space-y-1 list-disc pl-4">
+                      <li><strong>FUEL</strong>: Problemas que NO requieran aterrizaje inmediato (espera, ePerf, evaluación y coordinación con calma).</li>
+                      <li><strong>TIEMPO</strong>: Fuegos inextinguibles, problemas de estructura o mandos de vuelo (aterrizaje de inmediato).</li>
+                    </ul>
+                  </div>
+
+                  {/* Secuencia 1 a 4 */}
+                  <div className="space-y-2 text-xs text-slate-200">
+                    <div className="p-2.5 rounded-lg bg-purple-950/30 border border-purple-500/30">
+                      <strong className="text-purple-300">① MEANA (Orden de Listas):</strong> 1° Memo Items → 2° Emergency Checklist → 3° Abnormal Checklist principal → 4° Normal Checklist → 5° Abnormal restantes.
+                    </div>
+                    <div className="p-2.5 rounded-lg bg-indigo-950/30 border border-indigo-500/30">
+                      <strong className="text-indigo-300">② IMFLOCC (Toma de Decisiones Desvío):</strong> Inop Items → Meteo Report → Fuel Assessment → Landing Perf ePerf → Options → Choose Option → Communications (ATC / TELSI a Cabina / PA Pasaje / ACARS CCO).
+                    </div>
+                    <div className="p-2.5 rounded-lg bg-sky-950/30 border border-sky-500/30">
+                      <strong className="text-sky-300">③ E-DALTA (Briefing Aproximación &amp; Aterrizaje):</strong> ePerf InFlight Landing → Descent → Arrival (STAR/MAP/MSA) → Landing (Flap/Autobrake/Vref/Mínimos) → Taxi → Apron.
+                    </div>
+                    <div className="p-2.5 rounded-lg bg-emerald-950/30 border border-emerald-500/30">
+                      <strong className="text-emerald-300">④ 4 ÚLTIMAS LISTAS (Secuencia Final de Checklists antes de Toma):</strong>
+                      <div className="mt-1 font-mono text-[11px] text-emerald-200 space-y-0.5 pl-2">
+                        <div>// 1. EQUIPO MÍNIMO //</div>
+                        <div>// 2. SUPLEM. CHECK. AUTOLAND o RNP //</div>
+                        <div>// 3. ONE ENGINE INOPERATIVE APPROACH &amp; LANDING //</div>
+                        <div>// 4. APPROACH CHECKLIST //</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               {/* 3. SECCIÓN LLAMADAS OFICIALES A TRIPULACIÓN DE CABINA */}
