@@ -719,6 +719,9 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
       'CRITERIO DE PRIORIDAD: FUEL (problemas que no requieran aterrizaje inmediato) vs TIEMPO (fuegos inextinguibles, problemas de estructura o mandos de vuelo).'
     ],
     summary: 'Flujo estratégico y secuencial ante una emergencia o anormalidad en vuelo como Comandante: Golden Rules, discriminación Fuel vs Tiempo, orden de listas MEANA, toma de decisiones IMFLOCC, briefing E-DALTA y las 4 Últimas Listas antes de toma.',
+    diagramImage: './sop-diagrams/flow-emergencia-comandante.jpg',
+    diagramCaption: 'Infografía Oficial: Flow Completo ante una Emergencia como Comandante',
+    diagramNote: 'Golden Rules · Criterio Fuel/Tiempo · 1. MEANA · 2. IMFLOCC · 3. E-DALTA · 4. 4 Últimas Listas',
     sections: [
       {
         title: '¡¡ GOLDEN RULES !! & TECHNICAL ABNORMAL FLOW',

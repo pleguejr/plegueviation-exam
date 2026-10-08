@@ -1,4 +1,4 @@
-const CACHE_NAME = 'plegueviation-cache-v3.5.2';
+const CACHE_NAME = 'plegueviation-cache-v3.5.3';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -6,7 +6,8 @@ const ASSETS_TO_CACHE = [
   './favicon.svg',
   './banks/manifest.json',
   './banks/all_questions.json',
-  './banks/deleted_questions.json'
+  './banks/deleted_questions.json',
+  './sop-diagrams/flow-emergencia-comandante.jpg'
 ];
 
 self.addEventListener('install', (event) => {
