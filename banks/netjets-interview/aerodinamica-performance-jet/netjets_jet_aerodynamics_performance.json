@@ -7,33 +7,35 @@
     "options": [
       {
         "id": "A",
-        "text": "The flight envelope region where the low-speed stall margin (Vs) and the high-speed Mach buffet boundary (Mmo) converge to a very narrow airspeed margin.",
+        "text": "The high-altitude flight regime where the low-speed stall margin (Vs) and the high-speed Mach buffet boundary (Mmo) converge into an extremely narrow airspeed corridor.",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "The specific altitude where jet engines flame out due to lack of atmospheric oxygen regardless of airspeed.",
+        "text": "The low-density stratospheric flight level where engine core airflow velocity exceeds combustion flame speed, resulting in immediate unrecoverable dual engine flameout.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "The condition where the aircraft pitch trim runs to its electrical mechanical stop during steep descent.",
+        "text": "The transonic descent boundary where elevator aerodynamic flutter locks mechanical control linkages, preventing recovery from excessive pitch-down attitudes.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "The structural failure point where cabin differential pressure exceeds maximum relief valve capacity.",
+        "text": "The critical ceiling altitude where compressor turbine aerodynamic efficiency drops below the certified minimum threshold required to maintain cabin pressurization differential.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### ✈️ High Altitude Aerodynamics: Coffin Corner\n* **Definition:** As a jet aircraft climbs to high altitudes in the stratosphere, true airspeed for stall (Vs) increases while the speed of sound decreases, causing the critical Mach number (M_CRIT / MMO) to drop.\n* **The 'Corner':** At the aerodynamic ceiling, low-speed stall buffet and high-speed Mach buffet merge into a narrow operational corridor (sometimes less than 5 to 10 knots).\n* **Recovery / Mitigation:** Descend to a lower cruise flight level with greater buffet margin.",
+      "text": "### ✈️ High Altitude Aerodynamics: Coffin Corner\n* **Definition:** As a jet aircraft climbs into the high stratosphere, true airspeed for stall ($V_S$) increases with altitude while the local speed of sound decreases, causing the critical Mach number ($M_{CRIT} / M_{MO}$) to correspond to a lower indicated airspeed.\n* **The 'Corner':** At the aerodynamic ceiling, low-speed stall buffet and high-speed Mach buffet merge into a narrow operational corridor (sometimes less than 5 to 10 knots).\n* **Recovery / Mitigation:** Descend to a lower cruise flight level with greater buffet margin.",
       "references": [
-        "EASA CS-25 Subpart B (Flight) • FAA Aerodynamics for Naval Aviators"
+        "EASA CS-25 Subpart B",
+        "Airbus Getting to Grips with Aircraft Performance",
+        "Boeing Jet Transport Aerodynamics"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.65
     }
   },
   {
@@ -44,33 +46,35 @@
     "options": [
       {
         "id": "A",
-        "text": "Forward movement of the Center of Gravity (CG) due to fuel freezing in outboard tanks, mitigated by fuel crossfeed.",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "Rearward movement of the Center of Pressure (CP) and loss of downwash on the horizontal stabilizer due to shockwave formation on wing roots, mitigated by the Mach Trim system.",
+        "text": "Aft movement of the wing Center of Pressure (CP) and reduced tail downwash from shockwave formation on wing roots, compensated by the Mach Trim system.",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "Inward spanwise boundary layer separation over ailerons creating roll instability, compensated by symmetrical high-speed outboard spoiler deflection schedules.",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "Inward flex of the swept wingtips reducing effective wingspan, mitigated by active aileron trim.",
+        "text": "Forward displacement of aircraft center of gravity due to fuel density changes, compensated by automatic hydraulic fuel transfer to aft trim tanks during cruise.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Separation of airflow over the rudder pedals creating uncommanded yawing moments, mitigated by the Yaw Damper.",
+        "text": "Dynamic pressure loss over the vertical stabilizer during transonic acceleration, compensated by automatic yaw damper rudder authority expansion circuits.",
         "is_correct": false
       }
     ],
     "explanation": {
       "text": "### ✈️ Mach Tuck & Mach Trim\n* **Mechanism:** As local flow over the upper wing surface goes supersonic, shockwaves form and shift the Center of Pressure (CP) **rearwards**. Concurrently, shock-induced boundary layer separation at the wing root reduces the downwash angle reaching the horizontal stabilizer, creating an uncommanded nose-down pitching tendency.\n* **Mitigation:** Modern business jets incorporate an automatic **Mach Trim System** that applies nose-up stabilizer trim proportionally as Mach number increases.",
       "references": [
-        "EASA CS-25.672 • NetJets Technical Pilot Guide"
+        "EASA CS-25.255",
+        "Davies Handling the Big Jets",
+        "ICAO Doc 8168"
       ]
     },
     "metadata": {
-      "difficulty": 0.6
+      "difficulty": 0.7
     }
   },
   {
@@ -81,33 +85,35 @@
     "options": [
       {
         "id": "A",
-        "text": "Swept wings generate strong dihedral effect (roll due to sideslip) combined with relatively weak directional stability; if the Yaw Damper is inoperative, the aircraft is subject to MEL speed and altitude restrictions.",
+        "text": "Strong geometric sweep dihedral effect combined with weak directional stability creates coupled oscillations; an inoperative yaw damper imposes MEL speed/altitude caps.",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Yaw Damper failure prevents autopilot engagement under any circumstances and prohibits IFR flight.",
+        "text": "Asymmetric boundary layer vortex shedding creates cyclic rudder pedal deflection; an inoperative yaw damper restricts aircraft takeoff weight by fifteen percent.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Dutch Roll occurs only during reverse thrust deployment on slippery runways.",
+        "text": "Spanwise cross-flow along trailing edges induces rapid adverse aileron yaw in turns; an inoperative yaw damper grounds the aircraft under all dispatch schemes.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Swept wings create adverse yaw in steep turns that cannot be countered by ailerons without full rudder trim.",
+        "text": "High wing loading coupled with excessive vertical fin area induces uncommanded roll-spiral divergence; an inoperative yaw damper prohibits all IFR flight departures.",
         "is_correct": false
       }
     ],
     "explanation": {
       "text": "### ✈️ Dutch Roll & Swept Wing Aerodynamics\n* **Cause:** When a swept-wing jet yaws (sideslip), the advancing wing experiences increased effective wingspan and higher normal velocity component, producing a strong rolling moment before directional stability can restore heading.\n* **Coupling:** This leads to out-of-phase yaw-roll oscillation (Dutch Roll).\n* **Yaw Damper:** Provides automatic counter-rudder inputs. An inoperative Yaw Damper requires strict adherence to MEL limitations (e.g. altitude ceiling reduced to FL310 and lower MMO).",
       "references": [
-        "EASA CS-25.181 • Aircraft Flight Manual (AFM) Section 2"
+        "EASA CS-25.181",
+        "EASA MMEL Policy",
+        "FAA AC 25-7D"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.65
     }
   },
   {
@@ -118,33 +124,35 @@
     "options": [
       {
         "id": "A",
-        "text": "The exact speed at which the nosewheel lifts off the runway surface during takeoff roll.",
+        "text": "The minimum calibrated airspeed at which rotation may be initiated to achieve certified screen height at the end of the takeoff distance available.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "The maximum speed at which the pilot must make the decision to abort the takeoff and take the first action to stop the aircraft within the Accelerate-Stop Distance Available (ASDA).",
-        "is_correct": true
+        "text": "The target climb speed maintained throughout the second segment until reaching acceleration altitude with one engine inoperative in takeoff flaps.",
+        "is_correct": false
       },
       {
         "id": "C",
-        "text": "The speed at which the aircraft achieves the maximum one-engine-inoperative climb gradient at 1,500 ft.",
+        "text": "The minimum speed required on the ground where directional control can be maintained using aerodynamic rudder deflection only without nose steering.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "The speed at which thrust reversers must be armed prior to commencing takeoff.",
-        "is_correct": false
+        "text": "The maximum speed where first stopping action must be applied to abort, and lowest speed to safely continue if engine fails at VEF.",
+        "is_correct": true
       }
     ],
     "explanation": {
       "text": "### 🛫 Takeoff Decision Speed (V1)\n* **Key Rule:** V1 is the **action speed**, not just the mental decision point. The first stopping action (brakes/thrust reduction) must be applied by V1.\n* **Limits:** V1 must not be less than VMCG (Minimum Control Ground) and must not exceed VR (Rotation Speed) or VMBE (Maximum Brake Energy speed).\n* **After V1:** Takeoff MUST be continued (except in extreme conditions like catastrophic structural breakup or runway blockage).",
       "references": [
-        "EASA CS-25.107 • CAT.POL.A.205 Takeoff Performance"
+        "EASA CS 25.107",
+        "CAT.POL.A.205",
+        "ICAO Annex 6"
       ]
     },
     "metadata": {
-      "difficulty": 0.4
+      "difficulty": 0.6
     }
   },
   {
@@ -155,33 +163,35 @@
     "options": [
       {
         "id": "A",
-        "text": "35 ft for all runway conditions without exception.",
-        "is_correct": false
+        "text": "35 feet above the runway surface for dry runways, and 15 feet above the runway surface for wet or contaminated runways.",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "100 ft for dry runways and 50 ft for wet runways.",
+        "text": "50 feet above the runway surface for dry runways, and 15 feet above the runway surface for wet or contaminated runways.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "35 ft above the runway surface for a DRY runway; 15 ft above the runway surface for a WET or contaminated runway.",
-        "is_correct": true
+        "text": "35 feet above the runway surface for dry runways, and 35 feet above the runway surface for wet runways without reduction.",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "50 ft for dry runways and 35 ft for wet runways.",
+        "text": "50 feet above the runway surface for dry runways, and 35 feet above the runway surface for wet or contaminated runways.",
         "is_correct": false
       }
     ],
     "explanation": {
       "text": "### 🛫 Takeoff Screen Height (CS-25 & CAT.POL.A.205)\n* **Dry Runway:** The takeoff path must achieve a screen height of **35 ft** at the end of TODA with one engine inoperative.\n* **Wet Runway:** To account for reduced braking friction on wet surfaces and lower V1, regulations permit a reduced screen height of **15 ft** at the end of TODA.\n* **Obstacle Clearance:** Net takeoff flight path must still clear all obstacles by at least 35 ft vertically.",
       "references": [
-        "EASA CS-25.111 • Part-CAT.POL.A.205"
+        "EASA CS 25.111",
+        "CAT.POL.A.205",
+        "FAA 14 CFR 25.111"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.55
     }
   },
   {
@@ -192,29 +202,31 @@
     "options": [
       {
         "id": "A",
-        "text": "1.2% gross climb gradient at Vref+10 kt with flaps in transit.",
+        "text": "3.0% gross climb gradient at VFTO speed with landing gear retracted and flaps fully retracted to clean.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "2.4% gross climb gradient at V2 speed with landing gear retracted and takeoff flaps set.",
-        "is_correct": true
+        "text": "2.7% gross climb gradient at V2 speed with landing gear retracted and intermediate approach flaps set.",
+        "is_correct": false
       },
       {
         "id": "C",
-        "text": "5.0% gross climb gradient under all temperature conditions.",
+        "text": "1.2% gross climb gradient at V2 speed with landing gear extended and takeoff flap configuration set.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "3.3% gross climb gradient at Vx speed with gear extended.",
-        "is_correct": false
+        "text": "2.4% gross climb gradient at V2 speed with landing gear retracted and takeoff flap configuration set.",
+        "is_correct": true
       }
     ],
     "explanation": {
       "text": "### 🛫 Takeoff Climb Segments (Twin-Engine Jet)\n| Segment | Start Point | End Point | Gear / Flaps | Speed | Min Gradient (Twin) |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| **1st Segment** | Screen height (35/15 ft) | Gear fully retracted | Gear retracting / Takeoff Flaps | V2 | > 0% (Positive) |\n| **2nd Segment** | Gear retracted | Min 400 ft AAL (Acceleration) | Gear UP / Takeoff Flaps | V2 | **2.4%** |\n| **3rd Segment** | Acceleration height | Flaps retracted | Gear UP / Flap Retraction | Accelerating to VFTO | 1.2% |\n| **4th Segment** | Final climb height | 1,500 ft AAL | Gear UP / Flaps UP | VFTO / Max Continuous | 1.2% |",
       "references": [
-        "EASA CS-25.121 • Part-CAT.POL.A.210"
+        "EASA CS 25.121",
+        "CAT.POL.A.210",
+        "FAA 14 CFR 25.121"
       ]
     },
     "metadata": {
@@ -229,33 +241,35 @@
     "options": [
       {
         "id": "A",
-        "text": "VMCA is always lower than VMCG due to ground effect reducing rudder effectiveness.",
+        "text": "VMCG applies only to wet runway operations; VMCA applies to dry takeoff profiles; V1 must equal the exact average of VMCG and VMCA values.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "VMCG allows using nosewheel steering to maintain centerline, whereas VMCA requires full aileron deflection.",
+        "text": "VMCG is certified with differential wheel brakes; VMCA requires 10 degrees bank; V1 is constrained strictly between VMCG and VMCA values.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "V1 can be selected 10 knots below VMCG if the runway is dry.",
+        "text": "VMCG allows using nosewheel steering to maintain track; VMCA requires wings level; V1 can be scheduled 5 knots below VMCG on grooved runways.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "VMCG is the minimum speed on the ground where directional control can be maintained using aerodynamic controls alone (rudder) after engine failure; V1 must never be less than VMCG.",
+        "text": "VMCG uses rudder only (max 30 ft lateral deviation) to control engine failure on ground; V1 must never be scheduled below certified VMCG.",
         "is_correct": true
       }
     ],
     "explanation": {
-      "text": "### ✈️ VMCG & VMCA Principles\n* **VMCG (Ground):** Certified using **aerodynamic rudder control ONLY** (nosewheel steering is assumed completely ineffective or failed per CS-25). Lateral deviation from runway centerline must not exceed 30 ft.\n* **Rule:** If engine failure occurs below VMCG, rudder cannot maintain directional control; the takeoff MUST be aborted.\n* **Constraint:** $V_1 ge V_{MCG}$.",
+      "text": "### ✈️ VMCG & VMCA Principles\n* **VMCG (Ground):** Certified using **aerodynamic rudder control ONLY** (nosewheel steering is assumed completely ineffective or failed per CS-25). Lateral deviation from runway centerline must not exceed 30 ft.\n* **Rule:** If engine failure occurs below VMCG, rudder cannot maintain directional control; the takeoff MUST be aborted.\n* **Constraint:** $V_1 \\ge V_{MCG}$.",
       "references": [
-        "EASA CS-25.149 • FAA Advisory Circular AC 25-7D"
+        "EASA CS 25.149",
+        "FAA AC 25-7D",
+        "Boeing Jet Transport Flight Operations"
       ]
     },
     "metadata": {
-      "difficulty": 0.6
+      "difficulty": 0.65
     }
   },
   {
@@ -266,33 +280,35 @@
     "options": [
       {
         "id": "A",
-        "text": "Slush hydroplaning, Ice hydroplaning, and Snow hydroplaning.",
+        "text": "Crosswind hydroplaning (lateral drift on puddles), Electrostatic hydroplaning (surface charge repulsion), and Viscous slush hydroplaning.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Crosswind hydroplaning, Centrifugal hydroplaning, and Ground effect hydroplaning.",
+        "text": "Slush hydroplaning (slush drag accumulation), Ice hydroplaning (loss of micro-texture), and Snow hydroplaning (uncompressed dry powder lift).",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Dynamic hydroplaning (water layer lifts tire), Viscous hydroplaning (thin chemical/oil film), and Reverted Rubber hydroplaning (steam generated by locked wheel skidding).",
+        "text": "Dynamic hydroplaning (water layer lift), Viscous hydroplaning (thin smooth film), and Reverted Rubber hydroplaning (steam generated by skid).",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "Thermal hydroplaning, Aerodynamic hydroplaning, and Electrostatic hydroplaning.",
+        "text": "Centrifugal hydroplaning (high tire RPM), Thermal hydroplaning (overheated brake disk steam), and Aerodynamic hydroplaning (ground effect float).",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### 🌧️ Hydroplaning Types & Formula\n* **1. Dynamic Hydroplaning:** Occurs when standing water (>3 mm) builds hydrodynamic pressure under the tire, completely lifting it from the runway. Minimum dynamic hydroplaning speed (non-rotating) $≈ 7.7 times sqrt{P}$ (where P is tire pressure in psi), or $≈ 9 times sqrt{P}$ for rotating tires.\n* **2. Viscous Hydroplaning:** Occurs on smooth/rubber-coated surfaces with very thin water films due to viscosity preventing tire contact.\n* **3. Reverted Rubber Hydroplaning:** Prolonged locked wheel skid boils trapped water into high-pressure steam, vulcanizing the tire rubber.",
+      "text": "### 🌧️ Hydroplaning Types & Formula\n* **1. Dynamic Hydroplaning:** Occurs when standing water (>3 mm) builds hydrodynamic pressure under the tire, completely lifting it from the runway. Minimum dynamic hydroplaning speed (non-rotating) $\\approx 7.7 \\times \\sqrt{P}$ (where P is tire pressure in psi), or $\\approx 9 \\times \\sqrt{P}$ for rotating tires.\n* **2. Viscous Hydroplaning:** Occurs on smooth/rubber-coated surfaces with very thin water films due to viscosity preventing tire contact.\n* **3. Reverted Rubber Hydroplaning:** Prolonged locked wheel skid boils trapped water into high-pressure steam, vulcanizing the tire rubber.",
       "references": [
-        "ICAO Doc 9137 Airport Services Manual • Part-CAT.POL.A.230"
+        "FAA AC 91-6A",
+        "EASA AMC1 CAT.OP.MPA.300",
+        "NASA Technical Note D-2056"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.6
     }
   },
   {
@@ -303,33 +319,35 @@
     "options": [
       {
         "id": "A",
-        "text": "Surge produces an immediate flameout without any increase in EGT or noise.",
-        "is_correct": false
+        "text": "Stall is localized blade airflow separation with mild buzzing; surge is violent complete flow reversal with loud bangs, severe vibration, and rapid EGT spike.",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "Compressor stalls require immediate engine shutdown in flight with the fire handle.",
+        "text": "Stall occurs only during high Mach dives with zero pitch; surge occurs exclusively during low-speed ground starts before starter cutout speed.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "A compressor stall only occurs during engine start on the ground, whereas surge occurs exclusively in supersonic cruise.",
+        "text": "Stall produces an uncommanded spool-down to sub-idle RPM with low EGT; surge causes fuel control unit icing without physical airframe vibration.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "A compressor stall is a localized breakdown of airflow across compressor blades with mild vibration; a surge is a complete axial flow reversal characterized by loud bangs, severe vibration, rapid EGT rise, and fluctuating EPR/N1.",
-        "is_correct": true
+        "text": "Stall requires immediate discharge of both engine fire extinguisher bottles; surge requires advancing thrust levers to maximum continuous rating.",
+        "is_correct": false
       }
     ],
     "explanation": {
       "text": "### ⚙️ Turbofan Compressor Stall vs Surge\n* **Compressor Stall:** Localized boundary layer separation on individual compressor rotor blades. Manifests as buzzing/muffled noise, slight EGT increase, and minor vibration.\n* **Compressor Surge:** Violent, catastrophic breakdown of airflow across the entire compressor spool resulting in **momentary flow reversal**. Accompanied by loud shotgun-like bangs, severe airframe vibration, rapid EGT spike towards redline, and violent N1/N2 drops.\n* **Initial Action:** Retard thrust lever to IDLE smoothly; monitor EGT and vibration.",
       "references": [
-        "Rolls-Royce The Jet Engine • EASA Part-FCL ATPL Principles of Flight"
+        "Rolls-Royce The Jet Engine",
+        "Pratt & Whitney Turbofan Fundamentals",
+        "EASA CS-E Engine Certification"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.65
     }
   },
   {
@@ -340,33 +358,35 @@
     "options": [
       {
         "id": "A",
-        "text": "The situation where fuel burn equals payload weight at takeoff.",
+        "text": "The declared runway distance where Takeoff Run Available (TORA) is exactly equal to Landing Distance Available (LDA) for the reciprocal runway.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "A runway where the landing distance required is exactly half of the available runway length.",
+        "text": "The certified takeoff distance where all-engine acceleration to screen height requires precisely sixty percent of total paved asphalt length.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "A runway where the elevation at both thresholds is identical (zero runway slope).",
-        "is_correct": false
+        "text": "The runway length where Accelerate-Stop Distance Required (ASDR) equals Takeoff Distance Required with One Engine Inoperative (TODR_OEI) at a given V1.",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "The runway length where the Accelerate-Stop Distance Required (ASDR) exactly equals the Takeoff Distance Required with One Engine Inoperative (TODR_OEI) for a specific V1.",
-        "is_correct": true
+        "text": "The runway condition where longitudinal runway slope and ambient pressure altitude combine to produce zero performance climb gradient penalty.",
+        "is_correct": false
       }
     ],
     "explanation": {
       "text": "### 🛫 Balanced Field Length (BFL)\n* **Definition:** The condition where $ASDR = TODR_{OEI}$.\n* **Benefit:** Produces the lowest possible required runway distance for takeoff at a given weight, optimizing payload capacity on restrictive runways.\n* **V1 Relationship:** In a balanced field, V1 is chosen so that rejecting the takeoff at V1 or continuing the takeoff on one engine both require the exact same field length.",
       "references": [
-        "EASA CS-25.113 • Part-CAT.POL.A.205"
+        "EASA CS 25.107",
+        "CAT.POL.A.205",
+        "Airbus Getting to Grips with Aircraft Performance"
       ]
     },
     "metadata": {
-      "difficulty": 0.4
+      "difficulty": 0.65
     }
   },
   {
@@ -377,33 +397,35 @@
     "options": [
       {
         "id": "A",
-        "text": "Stopway is load-bearing paved area used exclusively to stop an aborted takeoff (ASDA = TORA + Stopway); Clearway is an unobstructed area/water over which the aircraft can climb to screen height (TODA = TORA + Clearway).",
-        "is_correct": true
+        "text": "Stopway expands the declared takeoff run (TORA = ASDA + Stopway); Clearway reduces the required vertical obstacle clearance buffer from 35 ft to 15 ft.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Stopway is only available for landing rollouts, while Clearway is for taxiing.",
+        "text": "Stopway is reserved solely for emergency gear-up landings; Clearway designates protected airspace reserved exclusively for missed approach procedures.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Stopway increases TORA, whereas Clearway increases LDA.",
-        "is_correct": false
+        "text": "Stopway is load-bearing paved area for rejected takeoff (ASDA = TORA + Stopway); Clearway is unobstructed area for climb to screen height (TODA = TORA + Clearway).",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "Clearway can never exceed 100 meters under EASA aerodrome standards.",
+        "text": "Stopway is grass over-run added to landing distance (LDA = TORA + Stopway); Clearway is taxiway pavement used to compute all-engine accelerate-stop margin.",
         "is_correct": false
       }
     ],
     "explanation": {
       "text": "### 🛫 Declared Runway Distances (ICAO Annex 14 / EASA)\n* **TORA (Take-Off Run Available):** Physical runway suitable for takeoff ground run.\n* **TODA (Take-Off Distance Available):** TORA + Clearway (Clearway cannot exceed 50% of TORA).\n* **ASDA (Accelerate-Stop Distance Available):** TORA + Stopway.\n* **LDA (Landing Distance Available):** Runway length declared available for landing ground run.",
       "references": [
-        "ICAO Annex 14 Volume I • EASA CS-ADR-DSN"
+        "ICAO Annex 14 Vol 1",
+        "EASA CS-ADR-DSN",
+        "CAT.POL.A.205"
       ]
     },
     "metadata": {
-      "difficulty": 0.4
+      "difficulty": 0.6
     }
   },
   {
@@ -414,33 +436,35 @@
     "options": [
       {
         "id": "A",
-        "text": "Increases low-speed drag during steep approach into London City.",
+        "text": "Reduces leading edge sweep angle requirements to zero while eliminating boundary layer separation during steep approach glidepaths.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Replaces the need for vortex generators, slats, and trailing edge flaps.",
+        "text": "Shifts the aerodynamic center to the leading edge, preventing all forms of pitch-up stall characteristics at high angles of attack.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Flatter upper surface delays the onset of supersonic shockwaves and reduces shock-induced boundary layer drag, allowing higher cruise Mach numbers or a thicker wing for structural fuel capacity.",
+        "text": "Flatter upper surface delays transonic shockwave onset and reduces wave drag, enabling higher cruise Mach or a thicker wing for fuel storage.",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "Eliminates all aerodynamic stall characteristics up to 45 degrees angle of attack.",
+        "text": "Generates continuous laminar flow up to ninety percent chord, replacing leading edge slats and trailing edge fowler flaps completely.",
         "is_correct": false
       }
     ],
     "explanation": {
       "text": "### ✈️ Supercritical Airfoil Characteristics\n* **Features:** Flatter upper surface, significant aft camber (cusped trailing edge), larger leading-edge radius.\n* **Benefits:**\n  1. Delays Mach drag divergence.\n  2. Weakens shockwave intensity on upper surface.\n  3. Permits a **thicker wing** without aerodynamic penalty, providing crucial internal volume for fuel tanks on long-range business jets.",
       "references": [
-        "NASA TM-X-73935 • EASA ATPL Principles of Flight"
+        "NASA TM X-73940",
+        "Davies Handling the Big Jets",
+        "EASA CS-25 Flight Physics"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.65
     }
   },
   {
@@ -451,33 +475,35 @@
     "options": [
       {
         "id": "A",
-        "text": "VMBE is the tire blow-out speed due to centrifugal expansion.",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "VMBE is the maximum speed from which an aircraft can be stopped without exceeding the kinetic heat absorption limits of the brake assemblies; aborting above VMBE risks brake fire, fuse plug deflation, or catastrophic brake failure.",
+        "text": "VMBE is the max speed where brakes absorb kinetic energy; aborting above VMBE risks brake fire, fuse plug deflation, and loss of braking.",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "VMBE is the tire centrifugal speed limit; aborting above VMBE causes instantaneous casing delamination and directional pull on the runway.",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "VMBE is the minimum speed at which anti-skid protection becomes active.",
+        "text": "VMBE is the minimum speed for thrust reverser effectiveness; aborting above VMBE causes asymmetric engine compressor stall and surge.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "VMBE is only applicable during wet runway landings.",
+        "text": "VMBE is the anti-skid maximum frequency modulation limit; aborting above VMBE increases stopping distance by fifty percent on icy runways.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### 🛑 Maximum Brake Energy Speed (VMBE)\n* **Kinetic Energy:** Stopping an aircraft converts kinetic energy into heat within carbon or steel brake heat packs.\n* **Constraint:** V1 ≤ VMBE. Under high gross weights, high pressure altitudes, and tailwinds, V1 may be limited by VMBE rather than field length.\n* **Exceedance:** May melt thermal fuse plugs (deflating tires safely) or cause uncontrolled brake fires and loss of braking torque.",
+      "text": "### 🛑 Maximum Brake Energy Speed (VMBE)\n* **Kinetic Energy:** Stopping an aircraft converts kinetic energy into heat within carbon or steel brake heat packs.\n* **Constraint:** $V_1 \\le V_{MBE}$. Under high gross weights, high pressure altitudes, and tailwinds, V1 may be limited by VMBE rather than field length.\n* **Exceedance:** May melt thermal fuse plugs (deflating tires safely) or cause uncontrolled brake fires and loss of braking torque.",
       "references": [
-        "EASA CS-25.735 • Part-CAT.POL.A.205"
+        "EASA CS 25.109",
+        "Boeing Takeoff Performance Guidelines",
+        "FAA AC 25-7D"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.65
     }
   },
   {
@@ -488,33 +514,35 @@
     "options": [
       {
         "id": "A",
-        "text": "At the rotation speed VR with takeoff flaps extended.",
+        "text": "At rotation speed VR in takeoff configuration, representing the point where profile parasite drag exceeds induced drag by twenty percent.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "At the stall speed VS1 where induced drag is zero.",
-        "is_correct": false
+        "text": "At the minimum point of the total drag curve where Induced Drag equals Parasite Drag, corresponding to Max Glide Speed and Max Endurance Speed.",
+        "is_correct": true
       },
       {
         "id": "C",
-        "text": "At the maximum speed MMO where parasite drag is highest.",
+        "text": "At Maximum Operating Mach MMO in cruise configuration, representing the point where shockwave wave drag drops to its local minimum value.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "At the minimum point of the total drag curve where Induced Drag exactly equals Parasite Drag; corresponds to Maximum Glide Speed (V_GLIDE) and Maximum Endurance Speed (Holding Speed).",
-        "is_correct": true
+        "text": "At 1.30 times stall speed VS1 with landing flaps, representing the certified target approach speed VAPP under zero wind conditions.",
+        "is_correct": false
       }
     ],
     "explanation": {
       "text": "### ✈️ Drag Curve & L/D_MAX\n* **Induced Drag:** High at low speeds (high AoA), decreases as speed increases.\n* **Parasite Drag:** Low at low speeds, increases quadratically with speed.\n* **Minimum Drag Point:** Occurs where Induced Drag = Parasite Drag. This represents (L/D)_MAX, providing maximum glide range and maximum endurance for jet aircraft.",
       "references": [
-        "EASA ATPL Principles of Flight • Aerodynamics for Naval Aviators"
+        "Anderson Introduction to Flight",
+        "Davies Handling the Big Jets",
+        "EASA Flight Mechanics Guide"
       ]
     },
     "metadata": {
-      "difficulty": 0.4
+      "difficulty": 0.65
     }
   },
   {
@@ -525,33 +553,35 @@
     "options": [
       {
         "id": "A",
-        "text": "DRY: No safety margin; WET: Factor 1.10.",
+        "text": "DRY: Certified distance must not exceed 80% of LDA (Factor 1.25); WET: Required distance is Dry Required multiplied by 1.20 (Overall factor 1.50).",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "DRY: Factor 1.43 (70% rule); WET: Factor 1.60.",
+        "text": "DRY: Certified distance must not exceed 50% of LDA (Factor 2.00); WET: Required distance is Dry Required multiplied by 1.25 (Overall factor 2.50).",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "DRY: Factor 1.30; WET: Factor 1.50.",
-        "is_correct": false
+        "text": "DRY: Certified distance must not exceed 60% of LDA (Factor 1.67); WET: Required distance is Dry Required multiplied by 1.15 (Overall factor 1.92).",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "DRY: Certified distance must not exceed 60% of LDA (Factor 1.67); WET: Required distance is Dry Required × 1.15 (Overall factor 1.92).",
-        "is_correct": true
+        "text": "DRY: Certified distance must not exceed 70% of LDA (Factor 1.43); WET: Required distance is Dry Required multiplied by 1.10 (Overall factor 1.57).",
+        "is_correct": false
       }
     ],
     "explanation": {
       "text": "### 🛬 EASA Part-CAT Turbojet Landing Dispatch Factors\n* **Dry Runway (CAT.POL.A.230):** The aircraft must be able to land and stop within 60% of LDA. Safety Factor = 1 / 0.60 = 1.67.\n* **Wet Runway (CAT.POL.A.230(c)):** The Required Landing Distance must be at least 115% of Dry Required Landing Distance (Overall Wet Factor = 1.67 × 1.15 = 1.92).",
       "references": [
-        "EASA Part-CAT.POL.A.230 • AMC1 CAT.POL.A.230"
+        "EASA CAT.POL.A.230",
+        "AMC1 CAT.POL.A.230",
+        "ICAO Annex 6 Part I"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.65
     }
   },
   {
@@ -562,33 +592,35 @@
     "options": [
       {
         "id": "A",
-        "text": "The engine produces constant maximum certified thrust up to a reference ambient temperature (T_REF) limited by internal structural pressure; above T_REF, thrust is restricted by Turbine/EGT temperature limits.",
-        "is_correct": true
+        "text": "Engine utilizes flat rectangular combustion chambers to minimize nacelle drag; above T_REF, thrust is limited by low pressure turbine blade creep.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Thrust rating remains identical at all flight levels from sea level to FL450.",
+        "text": "Engine produces variable thrust modulated strictly by air data computer Mach input; above T_REF, thrust is capped by compressor stall margins.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "The engine has a flat horizontal combustion chamber to reduce fuselage drag.",
+        "text": "Engine thrust output remains strictly invariant with pressure altitude from sea level to FL450, limited solely by mechanical fuel pump RPM limits.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "The engine cannot operate at altitudes exceeding 10,000 ft without auxiliary superchargers.",
-        "is_correct": false
+        "text": "Engine produces constant certified thrust up to T_REF limited by internal casing pressure; above T_REF, thrust is reduced by EGT/ITT thermal limits.",
+        "is_correct": true
       }
     ],
     "explanation": {
       "text": "### ⚙️ Flat-Rated Turbofan Engines\n* **Below Corner Point (T_REF, e.g. ISA+15°C):** The engine is restricted by FADEC to prevent exceeding internal casing/shaft structural pressure limits.\n* **Above Corner Point:** The engine becomes temperature-limited (EGT/ITT). FADEC reduces fuel flow and thrust to prevent thermal damage.",
       "references": [
-        "Rolls-Royce / Pratt & Whitney Engine Principles • EASA CS-E"
+        "Rolls-Royce The Jet Engine",
+        "Pratt & Whitney PW300 Training Manual",
+        "EASA CS-E"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.65
     }
   },
   {
@@ -599,33 +631,35 @@
     "options": [
       {
         "id": "A",
-        "text": "Optimum altitude is determined strictly by cabin pressurization limits regardless of weight.",
+        "text": "Optimum altitude is determined by cabin differential pressure limits; it increases because passenger oxygen consumption decreases over time.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Optimum altitude is fixed by ATC before departure and cannot be modified in flight.",
-        "is_correct": false
+        "text": "Optimum altitude is where SAR (TAS/FF) is maximized; as fuel burns off, weight drops, reducing required lift/induced drag and raising optimum level.",
+        "is_correct": true
       },
       {
         "id": "C",
-        "text": "Optimum altitude decreases as fuel burns off because the aircraft becomes too light for high altitude stability.",
+        "text": "Optimum altitude is dictated by engine oil cooling capacity; it increases because colder outside air temperature permits higher turbine rotational speeds.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Optimum flight level is where Specific Air Range (SAR = True Airspeed / Fuel Flow) is maximized; as fuel burns off, aircraft weight decreases, reducing required lift and induced drag, which shifts the SAR peak to higher altitudes (Step Climb).",
-        "is_correct": true
+        "text": "Optimum altitude is fixed strictly by upper wind speed gradients; it rises because jet streams always intensify at higher standard pressure levels.",
+        "is_correct": false
       }
     ],
     "explanation": {
       "text": "### ✈️ Specific Air Range (SAR) & Step Climbs\n* **SAR:** Nautical miles flown per kilogram of fuel burned (SAR = TAS / FF).\n* **Weight Effect:** As weight decreases due to fuel consumption, the wing operates at lower angle of attack, lowering induced drag and shifting the optimum aerodynamic operating point to higher altitudes.",
       "references": [
-        "EASA Part-CAT.OP.MPA.180 • Bombardier / Gulfstream Flight Planning Manuals"
+        "Airbus Getting to Grips with Aircraft Performance",
+        "Boeing Fuel Conservation",
+        "EASA CAT.POL.A"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.65
     }
   },
   {
@@ -636,33 +670,35 @@
     "options": [
       {
         "id": "A",
-        "text": "Assumed temperature cannot reduce thrust by more than 5%, whereas derate reduces thrust by 50%.",
+        "text": "Flex method cannot reduce takeoff thrust by more than 5%; Fixed Derate permits thrust reductions up to 50% without performance re-calculation procedures.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "A Derate establishes a new certified lower thrust rating with reduced VMCG/VMCA limits (prohibiting throttle advancement beyond derate); Assumed Temperature is an operational performance reduction where full rated thrust may be manually selected at any time.",
-        "is_correct": true
-      },
-      {
-        "id": "C",
-        "text": "Derated thrust is only used on wet runways, while Assumed Temperature is only used on dry runways.",
+        "text": "Both methods are completely identical in certification rules, throttle lever handling, and single-engine minimum control speed calculations on takeoff.",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Derate establishes a new certified lower rating with lower VMCG/VMCA (throttle advance prohibited); Flex is operational (full TOGA available anytime).",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Both methods are completely identical in certification and flight deck throttle handling.",
+        "text": "Flex method is certified only on contaminated ice runways; Fixed Derate is permitted exclusively on dry paved runways exceeding 3,000 meters in length.",
         "is_correct": false
       }
     ],
     "explanation": {
       "text": "### 🛫 Derated Thrust vs Assumed Temperature (Flex)\n* **Assumed Temperature (FLEX):** Simulates a higher ambient temperature where less thrust is required on long runways. VMCG/VMCA are calculated based on full rated thrust. The crew CAN push levers to TOGA at any time without directional control issues.\n* **Derate (Fixed Derate):** Establishes an official lower engine rating. VMCG is lower. Pushing levers past the derate limit at low speed could cause loss of directional control if an engine fails.",
       "references": [
-        "EASA CS-25.101 • AMC 25.101 Reduction of Takeoff Thrust"
+        "EASA CS 25.107",
+        "FAA AC 25-13",
+        "Boeing Jet Transport Performance"
       ]
     },
     "metadata": {
-      "difficulty": 0.6
+      "difficulty": 0.7
     }
   },
   {
@@ -673,33 +709,35 @@
     "options": [
       {
         "id": "A",
-        "text": "The speed where pitot tube heating automatically disconnects.",
+        "text": "The Mach number where entire freestream airflow across all fuselage and wing surfaces becomes fully supersonic simultaneously in level flight.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "The free-stream aircraft Mach number at which airflow over the highest camber point of the wing first reaches the local speed of sound (Mach 1.0).",
-        "is_correct": true
+        "text": "The Mach number where shock-induced boundary layer separation causes a sudden sixty percent loss of total horizontal stabilizer lift authority.",
+        "is_correct": false
       },
       {
         "id": "C",
-        "text": "The maximum permissible dive speed tested during certification (MDF).",
+        "text": "The maximum demonstrated diving Mach number (MDF) reached during experimental certification flights without encountering structural flutter.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "The speed at which the entire aircraft exceeds Mach 1.0 in level flight.",
-        "is_correct": false
+        "text": "The free-stream Mach number where local supersonic flow first reaches Mach 1.0 at the point of maximum camber on the upper wing surface.",
+        "is_correct": true
       }
     ],
     "explanation": {
       "text": "### ✈️ Critical Mach Number (M_CRIT)\n* **Definition:** As air accelerates over the curved upper surface of an airfoil, local velocity exceeds free-stream velocity. M_CRIT is the aircraft airspeed where local Mach = 1.0 at the first point on the airfoil.\n* **Post M_CRIT:** Supersonic pockets form, creating normal shockwaves, boundary layer separation, and dramatic drag rise.",
       "references": [
-        "EASA Part-FCL ATPL Principles of Flight • CS-25.335"
+        "Davies Handling the Big Jets",
+        "EASA CS-25 Subpart B",
+        "Anderson Hypersonic and High Temperature Gas Dynamics"
       ]
     },
     "metadata": {
-      "difficulty": 0.4
+      "difficulty": 0.65
     }
   },
   {
@@ -710,33 +748,35 @@
     "options": [
       {
         "id": "A",
-        "text": "Low elevation sea-level departure in freezing rain.",
-        "is_correct": false
+        "text": "High density altitude (hot and high airport), tailwind or calm wind, and high takeoff weight producing high True Airspeed at liftoff (VLOF).",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "Takeoff with full flaps on contaminated slush runways.",
+        "text": "Contaminated runway takeoff in deep slush where hydrodynamic spray impingement slows main landing gear tire rotation speed significantly.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "High airport elevation (e.g. Toluca, Madrid, Aspen), high ambient temperature, zero wind or tailwind, and heavy takeoff weight resulting in very high True Airspeed at liftoff (V_LOF).",
-        "is_correct": true
+        "text": "Low pressure altitude departure at sea level with freezing rain, low ambient temperature, and maximum certified headwind component.",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "High headwind component during light gross weight ferry flight.",
+        "text": "Short dry runway departure with maximum takeoff flaps and steep climb obstacle gradient requirements in sub-zero ambient temperatures.",
         "is_correct": false
       }
     ],
     "explanation": {
       "text": "### 🛞 Tire Ground Speed Limits\n* **Constraint:** Aircraft tires are rated for maximum ground speed (e.g. 195 kt, 210 kt, 225 kt) to prevent centrifugal tread separation and casing failure.\n* **Mechanism:** At high density altitude (hot and high), True Airspeed (TAS) for a given Indicated Airspeed (VR) is significantly higher.\n* **Limit:** Ground Speed at liftoff must never exceed the certified tire speed rating.",
       "references": [
-        "EASA CS-25.733 • AFM Section 2 Limitations"
+        "EASA CS 25.733",
+        "FAA 14 CFR 25.733",
+        "Goodyear Aircraft Tire Care & Maintenance Manual"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.65
     }
   },
   {
@@ -747,33 +787,35 @@
     "options": [
       {
         "id": "A",
-        "text": "Immediately pull full aft yoke to trade altitude for airspeed while selecting full rudder trim.",
+        "text": "Immediately pull full aft elevator to trade excess descent rate for airspeed while extending flight spoilers to arrest rapid pitch-up.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Rapidly extend full flight spoilers to increase descent rate while maintaining cruise pitch attitude.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "Immediately disconnect autopilot, apply smooth forward pitch control to reduce Angle of Attack (AoA), level wings, and smoothly advance thrust as recovery begins without exceeding engine limits.",
+        "text": "Disconnect autopilot, pitch nose down smoothly to reduce Angle of Attack (AoA), level wings, and add thrust smoothly as recovery begins.",
         "is_correct": true
       },
       {
+        "id": "C",
+        "text": "Apply immediate rapid full rudder alternating deflections to break spanwise boundary layer flow while maintaining cruise pitch attitude.",
+        "is_correct": false
+      },
+      {
         "id": "D",
-        "text": "Cycle the landing gear handle down to activate ground proximity terrain warnings.",
+        "text": "Cycle landing gear down to lower aircraft center of gravity while maintaining full nose-up stabilizer trim against stick shaker activation.",
         "is_correct": false
       }
     ],
     "explanation": {
       "text": "### ✈️ High Altitude Stall Recovery (FAA / EASA Standardized Envelope Protocol)\n1. **Disconnect Autopilot / Autothrottle.**\n2. **Pitch Down (Reduce AoA):** The ONLY action that recovers a wing from stall is reducing Angle of Attack below the critical stall AoA.\n3. **Roll Wings Level:** To orient lift vector vertically.\n4. **Thrust:** Apply thrust smoothly.\n5. **Retract Spoilers / Speedbrakes** if extended.",
       "references": [
-        "ICAO Doc 10011 UPRT Manual • EASA SIB 2013-02"
+        "FAA AC 120-109A Stall Prevention and Recovery",
+        "EASA SIB 2013-05",
+        "IATA High Altitude Manual"
       ]
     },
     "metadata": {
-      "difficulty": 0.4
+      "difficulty": 0.65
     }
   },
   {
@@ -784,33 +826,35 @@
     "options": [
       {
         "id": "A",
-        "text": "Gross gradient is reduced by 2.5% for all transport aircraft.",
+        "text": "Gross path is calculated at maximum payload; Net path is calculated at minimum operational dry weight with zero passenger baggage loaded.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Gross flight path includes cabin baggage weight, while net path excludes it.",
-        "is_correct": false
+        "text": "Gross path is measured flight test performance; Net path degrades gross gradient by 0.8% (for twin-jets) to ensure obstacle clearance margins.",
+        "is_correct": true
       },
       {
         "id": "C",
-        "text": "Net flight path applies only when all engines are operating normally.",
+        "text": "Gross path is the theoretical all-engine climb profile; Net path is the zero-thrust glide trajectory following dual engine flameout in flight.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Gross flight path is the actual measured performance of the aircraft; Net flight path is the gross performance degraded by a mandatory 0.8% gradient reduction (for twins) to guarantee obstacle clearance.",
-        "is_correct": true
+        "text": "Gross path applies strictly to dry runway departures; Net path applies exclusively to wet or slush-contaminated runway operations at sea level.",
+        "is_correct": false
       }
     ],
     "explanation": {
       "text": "### 🛫 Gross vs Net Takeoff Flight Path (EASA Part-CAT.POL.A.210)\n* **Gross Performance:** Actual one-engine-inoperative climb profile demonstrated during flight test certification.\n* **Net Performance:** The degraded profile used for operational obstacle clearance calculations:\n  * Twin-Engine: Gross gradient minus 0.8%.\n  * Three-Engine: Gross gradient minus 0.9%.\n  * Four-Engine: Gross gradient minus 1.0%.\n* **Margin:** The Net Takeoff Flight Path must clear all obstacles by at least 35 ft vertically (or 50 ft in turns).",
       "references": [
-        "EASA Part-CAT.POL.A.210 • CS-25.115"
+        "EASA CS 25.115",
+        "CAT.POL.A.210",
+        "FAA 14 CFR 25.115"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.65
     }
   },
   {
@@ -821,33 +865,35 @@
     "options": [
       {
         "id": "A",
-        "text": "The level where supplemental oxygen is required for cabin passengers.",
-        "is_correct": false
+        "text": "The specific altitude where a chosen Calibrated Airspeed (CAS) and a chosen Mach number produce the exact same True Airspeed (TAS).",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "The altitude where autopilot transfers authority from elevator servos to stabilizer trim motors.",
+        "text": "The altitude where horizontal stabilizer aerodynamic downwash reverses direction due to transonic boundary layer detachment on the empennage.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "The altitude where the aircraft transitions from Class G uncontrolled airspace into Class A controlled airspace.",
+        "text": "The transition level where aircraft cabin differential pressure reaches its maximum relief valve operating limit during high cruise climb.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "The specific altitude where a constant Indicated Airspeed (VMO / CAS) and a constant Mach number (MMO) represent the exact same True Airspeed (TAS).",
-        "is_correct": true
+        "text": "The minimum safe altitude where flight management systems automatically arm vertical navigation and lateral area navigation modes in climb.",
+        "is_correct": false
       }
     ],
     "explanation": {
       "text": "### ✈️ Crossover Altitude Principles\n* **Climb:** During climb at constant CAS (e.g. 290 kt), Mach number increases steadily. At Crossover Altitude (typically FL280-FL320), the climb speed schedule transitions from constant CAS to constant Mach (e.g. M 0.78).\n* **Descent:** Descending at constant Mach causes CAS to increase until reaching crossover altitude, after which descent continues at constant CAS.",
       "references": [
-        "EASA ATPL Principles of Flight • NetJets FCOM Speed Management"
+        "Airbus Getting to Grips with Aircraft Performance",
+        "Davies Handling the Big Jets",
+        "EASA Flight Planning"
       ]
     },
     "metadata": {
-      "difficulty": 0.4
+      "difficulty": 0.6
     }
   },
   {
@@ -858,33 +904,35 @@
     "options": [
       {
         "id": "A",
-        "text": "Thermal expansion of the wing alters the aerodynamic camber, increasing stall speed by 40%.",
+        "text": "Thermal expansion of the wing leading edge increases airfoil camber, elevating 1g reference stall speed by thirty-five percent.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "High-pressure compressor stage bleed air is diverted from the core gas path to heat leading edges, reducing available engine thrust, increasing EGT, and lowering maximum cruise ceiling.",
-        "is_correct": true
+        "text": "Electrical heating coils overload engine-driven AC generators, triggering automatic shedding of primary hydraulic pump circuits in flight.",
+        "is_correct": false
       },
       {
         "id": "C",
-        "text": "Anti-ice electrical draw disconnects both engine-driven generators.",
+        "text": "Exhaust gas re-circulation valves open into the fan duct, causing acoustic resonance and severe fan blade flutter vibrations at high altitude.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Anti-ice valves increase fuel flow to the APU rather than the main engines.",
-        "is_correct": false
+        "text": "High-pressure compressor bleed air extraction reduces core mass flow, decreasing available thrust, raising EGT, and lowering ceiling.",
+        "is_correct": true
       }
     ],
     "explanation": {
       "text": "### ⚙️ Engine Bleed Air & Anti-Ice Penalties\n* **Mechanism:** Pneumatic anti-ice systems tap high-temperature, high-pressure bleed air from compressor stages.\n* **Consequences:**\n  1. Loss of core mass flow → reduced available thrust.\n  2. Higher EGT / ITT for the same thrust level.\n  3. Increased specific fuel consumption (SFC).\n  4. Significant drop in Single-Engine Service Ceiling (up to 1,500 to 3,000 ft reduction).",
       "references": [
-        "AFM Section 5 Performance • EASA CS-25.1419"
+        "Rolls-Royce The Jet Engine",
+        "Bombardier Challenger Flight Planning Guide",
+        "EASA CS-25.1419"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.65
     }
   },
   {
@@ -895,33 +943,35 @@
     "options": [
       {
         "id": "A",
-        "text": "Dynamic pressure drops to zero causing false indicated airspeed readings.",
+        "text": "Dynamic pressure drops to zero due to surface friction, producing an instantaneous pitch-up stall warning stick shaker activation.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Elevator authority is completely lost requiring full nose-up stabilizer trim.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "Upwash, downwash, and wingtip vortices are restricted by the ground surface, significantly reducing induced drag, increasing effective wing aspect ratio, and creating a floating tendency.",
+        "text": "Ground surface interrupts 3D wingtip vortices and downwash, significantly reducing induced drag and increasing effective lift.",
         "is_correct": true
       },
       {
+        "id": "C",
+        "text": "Static port pressure distortion increases indicated airspeed by thirty knots, causing automatic ground spoiler deployment before touchdown.",
+        "is_correct": false
+      },
+      {
         "id": "D",
-        "text": "Parasite drag doubles instantly, causing the aircraft to sink rapidly onto the runway.",
+        "text": "Parasite form drag triples rapidly due to ram air compression, causing a steep uncommanded sink rate onto the runway touchdown zone.",
         "is_correct": false
       }
     ],
     "explanation": {
       "text": "### ✈️ Ground Effect in Landing Flare\n* **Proximity:** Becomes significant within 1/2 wingspan above the ground.\n* **Physical Effects:**\n  1. Interference with 3D wingtip vortices → dramatic drop in Induced Drag.\n  2. Steeper lift curve slope (more lift at the same AoA).\n  3. Reduced downwash on horizontal stabilizer → mild pitch-down moment.\n  4. Increased local static pressure → altimeter/ASI may read slightly low.",
       "references": [
-        "EASA ATPL Principles of Flight • NetJets Landing Flare Technique Guide"
+        "Davies Handling the Big Jets",
+        "Anderson Fundamentals of Aerodynamics",
+        "FAA AC 25-7D"
       ]
     },
     "metadata": {
-      "difficulty": 0.4
+      "difficulty": 0.6
     }
   },
   {
@@ -932,33 +982,35 @@
     "options": [
       {
         "id": "A",
-        "text": "VEF <= V1 <= VR <= V2, with V1 not less than VMCG and not greater than VR or VMBE.",
-        "is_correct": true
+        "text": "VEF <= VR <= V1 <= V2, with V1 permitted to exceed VMBE provided symmetrical reverse thrust is credited in performance.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "V1 <= VEF <= VR <= V2, with V1 always equal to VR in balanced field operations.",
+        "text": "V1 <= VEF <= VR <= V2, with V1 constrained strictly between VMCA and certified tire speed limits on dry runways.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "VMCG <= VEF <= V2 <= VR, with VR always exceeding V2 by at least 10 knots.",
+        "text": "VMCG <= VEF <= V2 <= VR, with VR always exceeding V2 by at least ten knots in all gross weight dispatch configurations.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "VEF <= VR <= V1 <= V2, with V1 constrained strictly between VMCA and VLOF.",
-        "is_correct": false
+        "text": "VEF <= V1 <= VR <= V2, with V1 constrained to be at least VMCG and not exceeding VR or VMBE limits.",
+        "is_correct": true
       }
     ],
     "explanation": {
-      "text": "### ✈️ CS-25 Takeoff Speed Hierarchy\n* **Regulatory Rule:** CS 25.107 establishes that {EF} \\le V_1 \\le V_R \\le V_2$.\n* **Lower Boundary of V1:**  \\ge V_{MCG}$ (so directional control is guaranteed if engine fails at or after {EF}$).\n* **Upper Boundary of V1:**  \\le V_R$ and  \\le V_{MBE}$ (so rotation does not occur before decision speed and kinetic brake energy capacity is not exceeded).",
+      "text": "### ✈️ CS-25 Takeoff Speed Hierarchy\n* **Regulatory Rule:** CS 25.107 establishes that $V_{EF} \\le V_1 \\le V_R \\le V_2$.\n* **Lower Boundary of V1:** $V_1 \\ge V_{MCG}$ (so directional control is guaranteed if engine fails at or after $V_{EF}$).\n* **Upper Boundary of V1:** $V_1 \\le V_R$ and $V_1 \\le V_{MBE}$ (so rotation does not occur before decision speed and kinetic brake energy capacity is not exceeded).",
       "references": [
-        "EASA CS 25.107 (Takeoff Speeds) • FAA 14 CFR 25.107"
+        "EASA CS 25.107",
+        "FAA 14 CFR 25.107",
+        "CAT.POL.A.205"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.65
     }
   },
   {
@@ -969,33 +1021,35 @@
     "options": [
       {
         "id": "A",
-        "text": "It is the speed at which the decision to abort must be made, after which the pilot has 4 seconds to apply maximum braking.",
+        "text": "V1 is the target climb gradient airspeed maintained during initial climb out up to clean configuration acceleration altitude.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "It is the maximum speed at which the pilot must have taken the first action to stop the aircraft, and the minimum speed at which takeoff must be continued if the critical engine fails at VEF.",
-        "is_correct": true
-      },
-      {
-        "id": "C",
-        "text": "It is the unstick speed where main landing gear tires lift off the runway surface under normal all-engine thrust.",
+        "text": "V1 is the unstick speed where landing gear leaves the runway surface under normal all-engine operating takeoff thrust setting.",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "V1 is the maximum speed to apply first stopping action to abort, and lowest speed to safely continue if engine fails at VEF.",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "It is the target climb speed maintained throughout the initial climb until reaching the clean maneuvering configuration.",
+        "text": "V1 is the decision evaluation point where the crew has four seconds to evaluate EICAS master caution messages before braking.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### 🛑 V1 Takeoff Decision Speed\n* **Definition:** $ is an **action speed**, not the start of a cognitive decision. By $, the first stopping action (brakes, thrust levers to idle) must already be initiated if rejecting.\n* **Post-V1 Rule:** Above $, the takeoff MUST be continued because stopping distance exceeds the Remaining Runway / Accelerate-Stop Distance Available (ASDA).",
+      "text": "### 🛑 V1 Takeoff Decision Speed\n* **Definition:** $V_1$ is an **action speed**, not the start of a cognitive decision. By $V_1$, the first stopping action (brakes, thrust levers to idle) must already be initiated if rejecting.\n* **Post-V1 Rule:** Above $V_1$, the takeoff MUST be continued because stopping distance exceeds the Remaining Runway / Accelerate-Stop Distance Available (ASDA).",
       "references": [
-        "EASA CS 25.107 • FAA AC 120-62 Takeoff Safety Training Aid"
+        "EASA CS 25.107",
+        "FAA AC 120-62 Takeoff Safety Training",
+        "CAT.POL.A.205"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.6
     }
   },
   {
@@ -1006,33 +1060,35 @@
     "options": [
       {
         "id": "A",
-        "text": "Directional control must be maintained solely through nosewheel steering while rudder aerodynamic credit is entirely neglected.",
+        "text": "Directional control must be maintained solely through nosewheel steering while rudder aerodynamic authority is neglected.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Directional control must be maintained using aerodynamic primary controls (rudder) only, without relying on nosewheel steering, with a lateral deviation not exceeding 30 feet from centerline.",
-        "is_correct": true
+        "text": "Both thrust reversers must be deployed symmetrically to prevent yaw moments during the ground roll after critical engine failure.",
+        "is_correct": false
       },
       {
         "id": "C",
-        "text": "Differential wheel braking may be applied continuously to maintain centerline track within 50 feet.",
+        "text": "Differential wheel braking may be applied continuously to maintain centerline track within a fifty-foot lateral corridor.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Both thrust reversers must be deployed symmetrically to prevent yaw moments during the ground roll.",
-        "is_correct": false
+        "text": "Directional control is maintained using aerodynamic rudder only (no nosewheel steering), with lateral deviation under 30 ft.",
+        "is_correct": true
       }
     ],
     "explanation": {
       "text": "### 🛫 VMCG Certification Criteria (CS 25.149(e))\n* **Primary Condition:** Sudden failure of the critical engine with remaining engine(s) at max takeoff thrust.\n* **Rudder Only:** Aerodynamic rudder control alone is credited; **nosewheel steering credit is explicitly excluded** (assuming wet/slippery surface).\n* **Lateral Limit:** The aircraft lateral deviation from the runway centerline must not exceed **30 ft (9.1 m)**.",
       "references": [
-        "EASA CS 25.149(e) • FAA 14 CFR 25.149(e)"
+        "EASA CS 25.149",
+        "FAA 14 CFR 25.149",
+        "Boeing Commercial Performance Methods"
       ]
     },
     "metadata": {
-      "difficulty": 0.6
+      "difficulty": 0.65
     }
   },
   {
@@ -1043,33 +1099,35 @@
     "options": [
       {
         "id": "A",
-        "text": "Up to 5 degrees of bank towards the operating engine is permitted; keeping wings level increases VMCA significantly.",
-        "is_correct": true
+        "text": "A maximum of 10 degrees bank into dead engine is permitted provided rudder trim is zeroed and ailerons are centered.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Up to 15 degrees of bank towards the inoperative engine is required to maintain zero sideslip.",
+        "text": "Wings must remain strictly level; banking towards either engine is strictly prohibited during all CS-25 certification flights.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Wings must remain strictly level; banking towards either engine is prohibited during CS-25 certification.",
-        "is_correct": false
+        "text": "Up to 5 degrees bank into operating engine is permitted; keeping wings level increases actual VMCA by 10 to 20 knots.",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "A maximum of 10 degrees bank towards the failed engine is permitted provided rudder trim is zeroed.",
+        "text": "Up to 15 degrees bank into inoperative engine is required; keeping wings level decreases VMCA stall safety margins.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### ✈️ VMCA & Bank Angle Effect (CS 25.149)\n* **Certification Limit:** A maximum bank of **up to 5° into the live (operating) engine** is used during certification to create a horizontal component of lift that opposes the rudder sideslip.\n* **Wings-Level Danger:** Flying wings-level with an inoperative engine creates significant sideslip towards the dead engine, increasing the actual {MCA}$ by **10 to 20 knots** and reducing climb performance.",
+      "text": "### ✈️ VMCA & Bank Angle Effect (CS 25.149)\n* **Certification Limit:** A maximum bank of **up to 5° into the live (operating) engine** is used during certification to create a horizontal component of lift that opposes the rudder sideslip.\n* **Wings-Level Danger:** Flying wings-level with an inoperative engine creates significant sideslip towards the dead engine, increasing the actual $V_{MCA}$ by **10 to 20 knots** and reducing climb performance.",
       "references": [
-        "EASA CS 25.149(c) • FAA AC 25-7D Flight Test Guide"
+        "EASA CS 25.149",
+        "FAA AC 25-7D",
+        "Davies Handling the Big Jets"
       ]
     },
     "metadata": {
-      "difficulty": 0.6
+      "difficulty": 0.7
     }
   },
   {
@@ -1080,33 +1138,35 @@
     "options": [
       {
         "id": "A",
-        "text": "V2 >= 1.05 VSR and V2 >= 1.00 VMCA",
+        "text": "V2 must not be less than 1.05 VSR (or 1.10 VS legacy) and not less than 1.00 VMCA in takeoff flap setting.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "V2 >= 1.13 VSR (or 1.20 VS under legacy rules) and V2 >= 1.10 VMCA",
-        "is_correct": true
-      },
-      {
-        "id": "C",
-        "text": "V2 >= 1.30 VSR and V2 >= 1.25 VMCG",
+        "text": "V2 must not be less than 1.25 VSR (or 1.35 VS legacy) and not less than 1.15 VMBE in takeoff flap setting.",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "V2 must not be less than 1.13 VSR (or 1.20 VS legacy) and not less than 1.10 VMCA in takeoff flap setting.",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "V2 >= 1.40 VSR and V2 >= 1.15 VMBE",
+        "text": "V2 must not be less than 1.30 VSR (or 1.40 VS legacy) and not less than 1.25 VMCG in takeoff flap setting.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### 📈 V2 Certification Margins (CS 25.107(b))\n* **Stall Margin:**  \\ge 1.13 V_{SR}$ (where {SR}$ is the 1g stall speed). For turbojets certified under older {S\\_MIN}$ standards,  \\ge 1.20 V_S$.\n* **Control Margin:**  \\ge 1.10 V_{MCA}$, ensuring full aerodynamic controllability during second segment climb.",
+      "text": "### 📈 V2 Certification Margins (CS 25.107(b))\n* **Stall Margin:** $V_2 \\ge 1.13 V_{SR}$ (where $V_{SR}$ is the 1g stall speed). For turbojets certified under older $V_{S\\_MIN}$ standards, $V_2 \\ge 1.20 V_S$.\n* **Control Margin:** $V_2 \\ge 1.10 V_{MCA}$, ensuring full aerodynamic controllability during second segment climb.",
       "references": [
-        "EASA CS 25.107(b) • FAR Part 25.107(b)"
+        "EASA CS 25.107",
+        "FAA 14 CFR 25.107",
+        "ICAO Doc 8168"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.65
     }
   },
   {
@@ -1117,33 +1177,35 @@
     "options": [
       {
         "id": "A",
-        "text": "The maximum aerodynamic speed for thrust reverser deployment without causing compressor stalls.",
+        "text": "Minimum speed for anti-skid pressure modulation; exceeding it locks wheels and destroys brake hydraulic lines completely.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "The maximum speed from which a rejected takeoff can be completed without exceeding the thermal and kinetic energy capacity of the wheel brakes, risking fuse plug release, tire blowout, or uncontained fire.",
+        "text": "Maximum speed where wheel brakes absorb kinetic energy; exceeding it risks brake fade, fuse plug melt, and wheel fire.",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "The minimum speed at which the anti-skid system can modulate hydraulic brake pressure on ice.",
+        "text": "Maximum structural taxi speed during ninety-degree turns; exceeding it causes nose landing gear structural failure during taxi.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "The maximum taxi speed allowed during turns on contaminated taxiways.",
+        "text": "Maximum aerodynamic speed for reverser deployment; exceeding it causes compressor stall and severe directional yaw on the runway.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### 🛑 VMBE (Maximum Brake Energy Speed)\n* **Thermal Limit:** Wheel brakes convert aircraft kinetic energy ( = \\frac{1}{2} m V^2$) into heat.\n* **Over-energy Consequences:** If {RTO} > V_{MBE}$, brake temperatures exceed design limits, causing brake fade, wheel thermal fuse plugs melting, rapid tire deflation, and catastrophic landing gear fires.",
+      "text": "### 🛑 VMBE (Maximum Brake Energy Speed)\n* **Thermal Limit:** Wheel brakes convert aircraft kinetic energy ($E = \\frac{1}{2} m V^2$) into heat.\n* **Over-energy Consequences:** If $V_{RTO} > V_{MBE}$, brake temperatures exceed design limits, causing brake fade, wheel thermal fuse plugs melting, rapid tire deflation, and catastrophic landing gear fires.",
       "references": [
-        "EASA CS 25.101 • NetJets Flight Operations Manual"
+        "EASA CS 25.109",
+        "FAA 14 CFR 25.109",
+        "CAT.POL.A.205"
       ]
     },
     "metadata": {
-      "difficulty": 0.6
+      "difficulty": 0.65
     }
   },
   {
@@ -1154,33 +1216,35 @@
     "options": [
       {
         "id": "A",
-        "text": "VR cannot be less than V1, must be at least 1.05 VMCA, and must allow reaching V2 before 35 ft with one engine failed.",
-        "is_correct": true
+        "text": "VR must be at least V2 plus fifteen knots, at least 1.20 VMCG, and ensure liftoff occurs exactly at maximum tire speed limit.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "VR must always be at least 15 knots higher than V2 under all gross weights.",
+        "text": "VR is determined solely by landing gear retraction transit speed regardless of stall speed or asymmetric engine control limits.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "VR is solely determined by tire maximum rotation RPM limits regardless of stall speed.",
-        "is_correct": false
+        "text": "VR must be at least V1, at least 1.05 VMCA, and allow reaching V2 before 35 ft screen height with one engine inoperative.",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "VR must equal VMCG plus a 20% safety buffer.",
+        "text": "VR must equal VMCG plus a twenty percent buffer and must not exceed minimum unstick speed VMU under all gross weights.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### ✈️ VR Rotation Speed Rules\n* **Rules:**\n  1.  \\ge V_1$\n  2.  \\ge 1.05 V_{MCA}$\n  3. $ must ensure liftoff speed {LOF} \\ge 1.10 V_{MU}$ (all engines) and $\\ge 1.05 V_{MU}$ (OEI).\n  4. Must allow the aircraft to reach $ at the screen height (35 ft dry / 15 ft wet).",
+      "text": "### ✈️ VR Rotation Speed Rules\n* **Rules:**\n  1. $V_R \\ge V_1$\n  2. $V_R \\ge 1.05 V_{MCA}$\n  3. $V_R$ must ensure liftoff speed $V_{LOF} \\ge 1.10 V_{MU}$ (all engines) and $\\ge 1.05 V_{MU}$ (OEI).\n  4. Must allow the aircraft to reach $V_2$ at the screen height (35 ft dry / 15 ft wet).",
       "references": [
-        "EASA CS 25.107(e) • ICAO Annex 6 Part I"
+        "EASA CS 25.107",
+        "FAA 14 CFR 25.107",
+        "Boeing Takeoff Safety Training Guide"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.65
     }
   },
   {
@@ -1191,33 +1255,35 @@
     "options": [
       {
         "id": "A",
-        "text": "VREF is fixed at exactly 1.10 VMCG regardless of flap configuration or aircraft landing weight.",
+        "text": "VREF is fixed at exactly 1.10 VMCG regardless of flap configuration or landing gross weight calculations under Part-CAT.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "VREF must not be less than 1.23 VSR (or 1.30 VS0 under older rules) and not less than VMCL in the landing configuration.",
+        "text": "VREF must not be less than 1.23 VSR (or 1.30 VS0 legacy) and not less than VMCL in the landing flap configuration.",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "VREF is calculated as 1.50 times the clean stall speed VS1.",
+        "text": "VREF is the maximum structural speed at which landing gear can be retracted during an asymmetric balked landing approach.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "VREF is the maximum structural speed at which landing gear can be retracted during a balked landing.",
+        "text": "VREF is calculated as 1.50 times clean stall speed VS1 and must not exceed maximum landing gear extended speed VLE.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### 🛬 VREF Landing Reference Speed\n* **Threshold Baseline:** {REF}$ is the speed crossed at 50 ft above the landing threshold in landing configuration.\n* **Regulatory Minimums:** Under CS-25, {REF} \\ge 1.23 V_{SR}$ (where {SR}$ is 1g stall speed in landing configuration) and {REF} \\ge V_{MCL}$.",
+      "text": "### 🛬 VREF Landing Reference Speed\n* **Threshold Baseline:** $V_{REF}$ is the speed crossed at 50 ft above the landing threshold in landing configuration.\n* **Regulatory Minimums:** Under CS-25, $V_{REF} \\ge 1.23 V_{SR}$ (where $V_{SR}$ is 1g stall speed in landing configuration) and $V_{REF} \\ge V_{MCL}$.",
       "references": [
-        "EASA CS 25.125 • Part-CAT.POL.A.230"
+        "EASA CS 25.125",
+        "CAT.POL.A.230",
+        "FAA 14 CFR 25.125"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.65
     }
   },
   {
@@ -1228,33 +1294,35 @@
     "options": [
       {
         "id": "A",
-        "text": "Add 100% of steady headwind plus 100% of gust to VREF and maintain the entire additive down to touchdown.",
+        "text": "Fly strictly at uncorrected VREF regardless of gusts to avoid exceeding certified landing field length available on rollout.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Calculate VAPP as VREF + Wind Correction (typically 1/2 steady headwind + full gust increment, min +5 kt, max +20 kt), bleeding off the steady headwind increment over the threshold to cross at VREF.",
-        "is_correct": true
-      },
-      {
-        "id": "C",
-        "text": "Fly strictly at VREF regardless of reported gusts to prevent exceeding landing field length.",
+        "text": "Multiply VREF by crosswind component cosine and add 25 knots; maintain speed until ground spoiler deployment on touchdown.",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Add 1/2 steady headwind + full gust (min +5, max +20 kt) to VREF; bleed steady wind correction to cross threshold at VREF.",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Multiply VREF by the cosine of the crosswind angle and add 30 knots.",
+        "text": "Add full headwind and gust to VREF; maintain full additive through touchdown to prevent unexpected hard landing impact.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### 🛬 VAPP & Wind Additive Policy\n* **Formula:** {APP} = V_{REF} + \\text{Wind Correction}$. Standard operator policy uses $\\frac{1}{2} \\text{ steady headwind component} + \\text{full gust increment}$ (minimum $+5\\text{ kt}$, maximum $+20\\text{ kt}$).\n* **Threshold Technique:** The steady wind correction is bled off smoothly during the flare so the aircraft crosses the 50 ft threshold near {REF}$.",
+      "text": "### 🛬 VAPP & Wind Additive Policy\n* **Formula:** $V_{APP} = V_{REF} + \\text{Wind Correction}$. Standard operator policy uses $\\frac{1}{2} \\text{ steady headwind component} + \\text{full gust increment}$ (minimum $+5\\text{ kt}$, maximum $+20\\text{ kt}$).\n* **Threshold Technique:** The steady wind correction is bled off smoothly during the flare so the aircraft crosses the 50 ft threshold near $V_{REF}$.",
       "references": [
-        "EASA Part-CAT SOPs • Boeing / Airbus / Embraer FCTM"
+        "EASA AMC1 CAT.OP.MPA.300",
+        "Airbus Flight Operations Briefing Notes",
+        "Boeing FCTM"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.65
     }
   },
   {
@@ -1265,33 +1333,35 @@
     "options": [
       {
         "id": "A",
-        "text": "Below VA, full sudden deflection of a single flight control in one direction will cause an aerodynamic stall before exceeding structural limit load factor; however, VA does NOT protect against full alternating cyclic rudder reversals.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Flying below VA allows full simultaneous multi-axis control deflections up to maximum structural yield point.",
+        "text": "VA provides complete structural overspeed protection during high-speed vertical dives exceeding Maximum Operating Mach MMO in smooth air conditions.",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Below VA, full single control deflection stalls the wing before structural limit load; VA does NOT protect against full alternating cyclic reversals.",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "VA increases as aircraft gross weight decreases because lighter wings experience less bending moment.",
+        "text": "Flying below VA allows full simultaneous multi-axis control deflections up to maximum ultimate structural design yield point without airframe damage.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "VA provides full structural protection during high-speed dives exceeding MMO.",
+        "text": "VA increases as aircraft gross weight decreases because lighter wings experience less aerodynamic bending moment under severe turbulent gust loads.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### ⚠️ VA Maneuvering Speed Caution\n* **Single Axis Protection:** At or below $, full sudden deflection of **one** flight control surface will stall the aircraft aerodynamically before the design limit load ($+2.5g$) is exceeded.\n* **Critical Limitation:** $ does **NOT** protect against full alternating reversals (e.g. rudder cycling left-to-right), nor simultaneous multi-axis deflections.\n* **Weight Dependence:** $ **decreases** at lower gross weights ( = V_S \\sqrt{n}$).",
+      "text": "### ⚠️ VA Maneuvering Speed Caution\n* **Single Axis Protection:** At or below $V_A$, full sudden deflection of **one** flight control surface will stall the aircraft aerodynamically before the design limit load ($+2.5g$) is exceeded.\n* **Critical Limitation:** $V_A$ does **NOT** protect against full alternating reversals (e.g. rudder cycling left-to-right), nor simultaneous multi-axis deflections.\n* **Weight Dependence:** $V_A$ **decreases** at lower gross weights ($V_A = V_S \\sqrt{n}$).",
       "references": [
-        "FAA Special Airworthiness Information Bulletin CE-11-17 • EASA CS 25.335"
+        "FAA NTSB Safety Alert SA-022",
+        "EASA CS 25.335",
+        "FAA Special Airworthiness Information Bulletin CE-11-17"
       ]
     },
     "metadata": {
-      "difficulty": 0.6
+      "difficulty": 0.7
     }
   },
   {
@@ -1302,33 +1372,35 @@
     "options": [
       {
         "id": "A",
-        "text": "The True Airspeed (TAS) drops to zero while indicated airspeed doubles.",
+        "text": "Aircraft enters the region of reversed command where increasing thrust causes immediate aerodynamic deceleration and premature stick shaker stall.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "The specified CAS and the specified Mach number represent the exact same True Airspeed (TAS); above this altitude, the climb profile transitions from constant CAS to constant Mach number.",
+        "text": "Target CAS and target Mach represent the exact same TAS; above this altitude, climb profile switches from constant CAS to constant Mach.",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "The aircraft enters reverse command where increasing thrust causes immediate deceleration.",
+        "text": "Indicated True Airspeed drops instantaneously to zero while calibrated airspeed doubles due to atmospheric temperature inversion in the troposphere.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "The cabin pressurization system switches from bleed air to ambient atmospheric ram air.",
+        "text": "Cabin pressurization system automatically switches from high-stage bleed air extraction to ambient atmospheric ram air scoops during climb.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### 🚀 Crossover Altitude (HX)\n* **Climb Dynamics:** During climb at constant CAS, Mach number increases continuously with decreasing temperature and density. At the crossover altitude (typically FL270–FL310), target CAS and target Mach yield the same True Airspeed ($).\n* **Transition:** Above $, the flight crew/autopilot flies a **constant Mach number** to prevent exceeding {MO}$.",
+      "text": "### 🚀 Crossover Altitude (HX)\n* **Climb Dynamics:** During climb at constant CAS, Mach number increases continuously with decreasing temperature and density. At the crossover altitude (typically FL270–FL310), target CAS and target Mach yield the same True Airspeed ($TAS$).\n* **Transition:** Above $HX$, the flight crew/autopilot flies a **constant Mach number** to prevent exceeding $M_{MO}$.",
       "references": [
-        "EASA ATPL Principles of Flight • Jet Transport Performance Manual"
+        "Airbus Getting to Grips with Aircraft Performance",
+        "Davies Handling the Big Jets",
+        "EASA Flight Planning"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.65
     }
   },
   {
@@ -1339,33 +1411,35 @@
     "options": [
       {
         "id": "A",
-        "text": "VMO is governed by structural dynamic pressure (q = 1/2 rho V^2) at lower altitudes, whereas MMO is governed by compressibility shockwave formation and transonic stability at higher altitudes.",
-        "is_correct": true
+        "text": "VMO applies exclusively with flaps extended; MMO applies strictly in clean configuration at altitudes below 10,000 feet mean sea level.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "VMO is a tire limit for landing roll while MMO is an engine turbine RPM limit.",
+        "text": "VMO is calibrated strictly in True Airspeed; MMO is calibrated in Equivalent Airspeed adjusted for local outside air static temperature.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "VMO applies only with flaps extended while MMO applies strictly in clean configuration.",
-        "is_correct": false
+        "text": "VMO is governed by dynamic pressure at lower altitudes; MMO is governed by compressibility shockwave effects at higher altitudes.",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "MMO is always lower than VMO in indicated airspeed at sea level.",
+        "text": "VMO is governed by main gear tire rotational RPM limits; MMO is governed by engine low-pressure turbine N1 overspeed limits in flight.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### ⚡ VMO vs MMO\n* **VMO (Knots CAS):** Protects against excessive aerodynamic dynamic pressure ( = \\frac{1}{2} \\rho V^2$) and structural gust loads at low and medium altitudes.\n* **MMO (Mach Number):** Protects against transonic shockwave formation, Mach tuck, control buzz, and shock-induced boundary layer separation at high altitudes.",
+      "text": "### ⚡ VMO vs MMO\n* **VMO (Knots CAS):** Protects against excessive aerodynamic dynamic pressure ($q = \\frac{1}{2} \\rho V^2$) and structural gust loads at low and medium altitudes.\n* **MMO (Mach Number):** Protects against transonic shockwave formation, Mach tuck, control buzz, and shock-induced boundary layer separation at high altitudes.",
       "references": [
-        "EASA CS 25.1505 • FAA 14 CFR 25.1505"
+        "EASA CS 25.1505",
+        "FAA 14 CFR 25.1505",
+        "Davies Handling the Big Jets"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.65
     }
   },
   {
@@ -1376,33 +1450,35 @@
     "options": [
       {
         "id": "A",
-        "text": "It ensures the aircraft can maintain directional and lateral control in the landing configuration with the critical engine inoperative when maximum go-around thrust is applied.",
-        "is_correct": true
+        "text": "Caps the maximum permissible crosswind component for landing with trailing edge flaps completely retracted in emergency electrical mode.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "It defines the minimum glidepath angle required for autoland operations in CAT IIIB.",
+        "text": "Defines the minimum glidepath angle required for automatic Category IIIB autoland rollout operations with zero forward runway visibility.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "It represents the minimum runway length required to perform a touch-and-go training exercise.",
-        "is_correct": false
+        "text": "Maintains directional and lateral control in landing configuration with critical engine inoperative when go-around thrust is applied.",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "It is the maximum crosswind velocity allowed for landing with flaps fully retracted.",
+        "text": "Guarantees certified touchdown distance remains within fifty percent of available landing distance on contaminated ice runways during rollout.",
         "is_correct": false
       }
     ],
     "explanation": {
       "text": "### 🛬 VMCL (Minimum Control Speed Landing - CS 25.149(f))\n* **Purpose:** Ensures that if a missed approach / go-around is initiated from the landing flare with landing flaps and one engine inoperative at full go-around thrust, aerodynamic control is maintained without roll-off or loss of directional heading.",
       "references": [
-        "EASA CS 25.149(f) • CS 25.107"
+        "EASA CS 25.149(f)",
+        "FAA 14 CFR 25.149(f)",
+        "Airbus Flight Operations Briefing Notes"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.65
     }
   },
   {
@@ -1413,33 +1489,35 @@
     "options": [
       {
         "id": "A",
-        "text": "The aircraft must be capable of a 1.3g load factor (equivalent to a 40-degree coordinated bank turn) without encountering low-speed stall buffet or high-speed Mach buffet.",
+        "text": "Demonstrated 1.3g load factor (40-degree bank turn) without encountering low-speed stall buffet or high-speed Mach buffet.",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "The aircraft must be able to perform a 2.5g pull-up maneuver at MMO in severe turbulence.",
+        "text": "Demonstrated 2.5g load factor pull-up maneuver at MMO in severe turbulence without triggering autopilot disconnection alarms in cruise.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "A minimum speed buffer of 50 knots CAS must separate stall warning from maximum gear operating speed.",
+        "text": "Minimum fifty-knot CAS airspeed buffer between stall warning stick shaker activation and maximum flap extension speed VFE in cruise flight.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "The aircraft must maintain level flight with zero thrust for at least 15 minutes.",
+        "text": "Continuous unaccelerated level flight capability with dual engine flameout for thirty minutes without losing cabin pressurization differential.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### 🌪️ CS 25.251 High Altitude Buffet Margin\n* **1.3g Margin:** Transport jets must demonstrate a minimum buffet-free margin of **1.3g** at certified cruise levels.\n* **Why 1.3g?** A coordinated steady turn at **39.7° bank angle** (approx 40°) produces an apparent load factor  = 1 / \\cos(40^\\circ) \\approx 1.305g$. This guarantees safe maneuvering in turbulence and mountain wave encounters without stalling or entering Mach buffet.",
+      "text": "### 🌪️ CS 25.251 High Altitude Buffet Margin\n* **1.3g Margin:** Transport jets must demonstrate a minimum buffet-free margin of **1.3g** at certified cruise levels.\n* **Why 1.3g?** A coordinated steady turn at **39.7° bank angle** (approx 40°) produces an apparent load factor $n = 1 / \\cos(40^\\circ) \\approx 1.305g$. This guarantees safe maneuvering in turbulence and mountain wave encounters without stalling or entering Mach buffet.",
       "references": [
-        "EASA CS 25.251 • ICAO Doc 8168"
+        "EASA CS 25.251",
+        "FAA 14 CFR 25.251",
+        "ICAO Annex 6 Part I"
       ]
     },
     "metadata": {
-      "difficulty": 0.6
+      "difficulty": 0.7
     }
   },
   {
@@ -1450,33 +1528,35 @@
     "options": [
       {
         "id": "A",
-        "text": "VX increases slightly in indicated airspeed while VY decreases, until they converge to the exact same speed at the absolute ceiling.",
-        "is_correct": true
+        "text": "VX decreases rapidly while VY increases in indicated airspeed, widening the speed margin between them at high altitudes in standard atmosphere.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Both VX and VY decrease linearly to zero at the service ceiling.",
+        "text": "VX and VY remain completely invariant in indicated airspeed and Mach number across all tropospheric altitudes in standard atmosphere.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "VX decreases rapidly while VY increases, widening the speed gap between them at high altitudes.",
+        "text": "Both VX and VY decrease linearly in indicated airspeed to zero knots at the certified service ceiling altitude level in standard atmosphere.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "VX and VY remain entirely unchanged in indicated airspeed at all altitudes.",
-        "is_correct": false
+        "text": "VX increases slightly in indicated airspeed while VY decreases, until they converge to the exact same speed at absolute ceiling.",
+        "is_correct": true
       }
     ],
     "explanation": {
-      "text": "### 📈 VX vs VY Altitude Variation\n* **VX (Max Excess Thrust):** Slightly increases in Indicated/Calibrated Airspeed with altitude due to thrust lapse characteristics.\n* **VY (Max Excess Power):** Decreases in Indicated/Calibrated Airspeed with altitude.\n* **Convergence:** At the **Absolute Ceiling** (where climb rate = 0 ft/min),  = V_Y$.",
+      "text": "### 📈 VX vs VY Altitude Variation\n* **VX (Max Excess Thrust):** Slightly increases in Indicated/Calibrated Airspeed with altitude due to thrust lapse characteristics.\n* **VY (Max Excess Power):** Decreases in Indicated/Calibrated Airspeed with altitude.\n* **Convergence:** At the **Absolute Ceiling** (where climb rate = 0 ft/min), $V_X = V_Y$.",
       "references": [
-        "EASA ATPL Principles of Flight • Aerodynamics for Naval Aviators"
+        "Anderson Introduction to Flight",
+        "Davies Handling the Big Jets",
+        "EASA Flight Mechanics"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.65
     }
   }
 ]
