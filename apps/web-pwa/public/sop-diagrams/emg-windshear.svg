@@ -1,0 +1,220 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradWs" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080e1a" />
+      <stop offset="100%" stop-color="#121b2d" />
+    </linearGradient>
+    <linearGradient id="cardGradW" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#182338" />
+      <stop offset="100%" stop-color="#0e1726" />
+    </linearGradient>
+    <linearGradient id="orangeGradW" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#c2410c" />
+    </linearGradient>
+    <linearGradient id="redGradW" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#b91c1c" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bgGradWs)" />
+
+  <!-- Grid -->
+  <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90" />
+    <line x1="0" y1="365" x2="1200" y2="365" />
+    <line x1="300" y1="0" x2="300" y2="675" />
+    <line x1="600" y1="0" x2="600" y2="675" />
+    <line x1="900" y1="0" x2="900" y2="675" />
+  </g>
+
+  <!-- Header Banner -->
+  <rect x="30" y="16" width="1140" height="64" rx="10" fill="#111c2e" stroke="#f97316" stroke-opacity="0.5" stroke-width="1.5" />
+  
+  <!-- Embraer 195-E2 Silhouette -->
+  <g transform="translate(48, 26) scale(0.6)">
+    <path d="M 0 25 Q 35 15 70 18 L 85 5 L 92 6 L 82 19 L 140 22 L 185 0 L 195 2 L 165 24 L 205 25 Q 215 25 220 28 L 200 31 L 165 31 L 145 42 L 138 41 L 148 31 L 80 30 L 70 42 L 62 41 L 68 29 Q 30 30 0 25 Z" fill="#f97316" fill-opacity="0.9" />
+    <rect x="90" y="27" width="28" height="10" rx="4" fill="#c2410c" />
+    <polygon points="185,2 193,3 175,20 168,20" fill="#10b981" />
+  </g>
+
+  <text x="185" y="44" fill="#fb923c" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="800" letter-spacing="1">MANIOBRA WINDSHEAR (CIZALLADURA DEL VIENTO)</text>
+  <text x="185" y="66" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600">Manuales Binter MOB 3.1.9 &amp; SOPM Sec 3 · Modo WSHR en Embraer 195-E2</text>
+  
+  <rect x="980" y="26" width="175" height="42" rx="6" fill="#7c2d12" fill-opacity="0.5" stroke="#f97316" stroke-width="1" />
+  <text x="1067" y="52" fill="#fed7aa" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">MODO WSHR · MAX DETENT</text>
+
+  <!-- 4 SECTIONS GRID -->
+  <g transform="translate(30, 95)">
+    
+    <!-- CARD 1: ALERTAS PREDICTIVAS VS REACTIVAS -->
+    <g transform="translate(0, 0)">
+      <rect width="270" height="555" rx="12" fill="url(#cardGradW)" stroke="#f97316" stroke-width="1.5" />
+      <rect x="14" y="14" width="28" height="28" rx="6" fill="url(#orangeGradW)" />
+      <text x="28" y="33" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="800" text-anchor="middle">1</text>
+      
+      <text x="50" y="28" fill="#fdba74" font-family="system-ui, sans-serif" font-size="14" font-weight="800">TIPOS DE ALARMA</text>
+      <text x="50" y="42" fill="#94a3b8" font-size="10">Radar Meteorológico &amp; EICAS</text>
+
+      <rect x="14" y="56" width="242" height="155" rx="6" fill="#450a0a" fill-opacity="0.4" stroke="#ef4444" stroke-width="1.2" />
+      <text x="24" y="76" fill="#f87171" font-size="11" font-weight="800">1. ALERTAS PREDICTIVAS (PWS):</text>
+      
+      <text x="24" y="94" fill="#cbd5e1" font-size="10">• En carrera de despegue:</text>
+      <text x="34" y="110" fill="#fca5a5" font-size="10.5" font-weight="800">"WINDSHEAR AHEAD x2" (Rojo)</text>
+      <text x="34" y="124" fill="#fbbf24" font-size="9.5">o "MONITOR RADAR DISPLAY" (Ámbar)</text>
+
+      <text x="24" y="146" fill="#cbd5e1" font-size="10">• En aproximación final:</text>
+      <text x="34" y="162" fill="#fca5a5" font-size="10.5" font-weight="800">"GO AROUND, WINDSHEAR AHEAD"</text>
+      <text x="34" y="178" fill="#fecaca" font-size="9.5">➔ ¡Frustrada inmediata obligatoria!</text>
+      <text x="24" y="198" fill="#94a3b8" font-size="9">Radar detecta microburst por delante.</text>
+
+      <rect x="14" y="221" width="242" height="155" rx="6" fill="#431407" stroke="#f97316" stroke-width="1.2" />
+      <text x="24" y="241" fill="#fb923c" font-size="11" font-weight="800">2. ALERTA REACTIVA EN VUELO:</text>
+      <rect x="22" y="249" width="226" height="42" rx="4" fill="#7c2d12" stroke="#f97316" stroke-width="1" />
+      <text x="30" y="267" fill="#ffffff" font-size="11" font-weight="900">"WINDSHEAR, WINDSHEAR,</text>
+      <text x="30" y="281" fill="#ffffff" font-size="11" font-weight="900"> WINDSHEAR"</text>
+      
+      <text x="24" y="308" fill="#cbd5e1" font-size="10">• Activación entre 10 ft y 1.500 ft AGL.</text>
+      <text x="24" y="322" fill="#cbd5e1" font-size="10">• FADEC cancela desclasificaciones.</text>
+      <text x="24" y="336" fill="#cbd5e1" font-size="10">• Activación automática modo WSHR</text>
+      <text x="24" y="350" fill="#fed7aa" font-size="10" font-weight="700">  en FMA al pulsar TO/GA.</text>
+
+      <rect x="14" y="386" width="242" height="155" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="24" y="406" fill="#38bdf8" font-size="11" font-weight="800">EMPUJE FADEC RSV:</text>
+      <text x="24" y="426" fill="#cbd5e1" font-size="10">• El motor suministra automáticamente</text>
+      <text x="34" y="442" fill="#38bdf8" font-size="11" font-weight="800">GA RSV (GO-AROUND RESERVE)</text>
+      <text x="24" y="462" fill="#cbd5e1" font-size="10">• Máxima potencia absoluta de turbina.</text>
+      <text x="24" y="476" fill="#cbd5e1" font-size="10">• Ignora cualquier límite FLEX previo.</text>
+      <text x="24" y="496" fill="#a7f3d0" font-size="9.5">Potencia total disponible para salvar el avión.</text>
+    </g>
+
+    <!-- CARD 2: ACCIONES DE ESCAPE (PF) -->
+    <g transform="translate(285, 0)">
+      <rect width="280" height="555" rx="12" fill="url(#cardGradW)" stroke="#ef4444" stroke-width="1.5" />
+      <rect x="14" y="14" width="28" height="28" rx="6" fill="url(#redGradW)" />
+      <text x="28" y="33" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="800" text-anchor="middle">2</text>
+      
+      <text x="50" y="28" fill="#fca5a5" font-family="system-ui, sans-serif" font-size="14" font-weight="800">ACCIONES INMEDIATAS (PF)</text>
+      <text x="50" y="42" fill="#94a3b8" font-size="10">Respuesta de Vuelo Inmediata</text>
+
+      <!-- Step 1: Callout -->
+      <rect x="14" y="56" width="252" height="68" rx="6" fill="#0f172a" stroke="#ef4444" stroke-width="1" />
+      <text x="24" y="76" fill="#f87171" font-size="11" font-weight="800">1° CALLOUT EN CABINA:</text>
+      <text x="24" y="96" fill="#ffffff" font-size="13" font-weight="900">PF: "WINDSHEAR"</text>
+      <text x="24" y="112" fill="#bae6fd" font-size="9.5">PM responde inmediatamente: "MAX"</text>
+
+      <!-- Step 2: Thrust -->
+      <rect x="14" y="130" width="252" height="110" rx="6" fill="#7f1d1d" stroke="#ef4444" stroke-width="1.2" />
+      <text x="24" y="150" fill="#fecaca" font-size="11" font-weight="800">2° EMPUJE AL TOPE MÁXIMO:</text>
+      <text x="24" y="170" fill="#ffffff" font-size="13" font-weight="900">PALANCAS A MAX DETENT</text>
+      <text x="24" y="190" fill="#ffffff" font-size="13" font-weight="900">+ PULSAR BOTÓN TO/GA</text>
+      <text x="24" y="214" fill="#fecaca" font-size="10">• Desconectar AP y A/T si requerido.</text>
+      <text x="24" y="228" fill="#fecaca" font-size="10">• Fuerza enérgica en palancas hacia adelante.</text>
+
+      <!-- Step 3: Pitch -->
+      <rect x="14" y="250" width="252" height="145" rx="6" fill="#0f172a" stroke="#f59e0b" stroke-width="1" />
+      <text x="24" y="270" fill="#fbbf24" font-size="11" font-weight="800">3° GUÍA DE CABECEO (PITCH):</text>
+      <text x="24" y="288" fill="#cbd5e1" font-size="10">• Seguir la barra del Flight Director (FD)</text>
+      <text x="24" y="302" fill="#cbd5e1" font-size="10">  o cabeceo hacia:</text>
+      <text x="34" y="322" fill="#fbbf24" font-size="13" font-weight="900">15° NOSE UP</text>
+      <text x="24" y="342" fill="#cbd5e1" font-size="10">• Respetar estrictamente el límite del</text>
+      <text x="34" y="358" fill="#38bdf8" font-size="11" font-weight="800">PITCH LIMIT INDICATOR (PLI)</text>
+      <text x="24" y="378" fill="#fca5a5" font-size="9.5">¡Volar justo antes del stick shaker!</text>
+
+      <!-- Step 4: Wings Level -->
+      <rect x="14" y="405" width="252" height="135" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="24" y="425" fill="#38bdf8" font-size="11" font-weight="800">4° MANTENER ALAS NIVELADAS:</text>
+      <text x="24" y="443" fill="#cbd5e1" font-size="10">• Wings Level para maximizar sustentación.</text>
+      <text x="24" y="457" fill="#cbd5e1" font-size="10">• No virar aunque haya terreno cerca</text>
+      <text x="24" y="471" fill="#cbd5e1" font-size="10">  hasta asegurar tasa de ascenso.</text>
+      <text x="24" y="485" fill="#cbd5e1" font-size="10">• Aceptar pérdida temporal de velocidad</text>
+      <text x="24" y="499" fill="#cbd5e1" font-size="10">  a cambio de no perder altitud.</text>
+    </g>
+
+    <!-- CARD 3: PROHIBICIÓN CAMBIO CONFIGURACIÓN & PM -->
+    <g transform="translate(580, 0)">
+      <rect width="280" height="555" rx="12" fill="url(#cardGradW)" stroke="#ef4444" stroke-width="1.5" />
+      <rect x="14" y="14" width="28" height="28" rx="6" fill="#7f1d1d" />
+      <text x="28" y="33" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="800" text-anchor="middle">3</text>
+      
+      <text x="50" y="28" fill="#fca5a5" font-family="system-ui, sans-serif" font-size="14" font-weight="800">REGLA DE CONFIGURACIÓN</text>
+      <text x="50" y="42" fill="#f87171" font-size="10" font-weight="800">¡PROHIBICIÓN CRÍTICA INVIOLABLE!</text>
+
+      <!-- Danger warning box -->
+      <rect x="14" y="56" width="252" height="195" rx="6" fill="#450a0a" stroke="#ef4444" stroke-width="1.5" />
+      <text x="24" y="78" fill="#ffffff" font-size="12" font-weight="900">¡NO TOCAR TREN NI FLAPS!</text>
+      
+      <rect x="22" y="88" width="236" height="56" rx="4" fill="#7f1d1d" stroke="#ef4444" stroke-width="1" />
+      <text x="30" y="108" fill="#ffffff" font-size="11" font-weight="900">DO NOT CHANGE GEAR OR</text>
+      <text x="30" y="124" fill="#ffffff" font-size="11" font-weight="900">FLAP CONFIGURATION</text>
+
+      <text x="24" y="160" fill="#fca5a5" font-size="10">• La apertura de compuertas del tren</text>
+      <text x="24" y="174" fill="#fca5a5" font-size="10">  genera una resistencia parásita brutal</text>
+      <text x="24" y="188" fill="#fca5a5" font-size="10">  que puede provocar el impacto.</text>
+      <text x="24" y="206" fill="#fecaca" font-size="10.5" font-weight="700">• Mantener flaps y tren EXACTAMENTE</text>
+      <text x="24" y="220" fill="#fecaca" font-size="10.5" font-weight="700">  en la posición en que estaban.</text>
+      <text x="24" y="238" fill="#cbd5e1" font-size="9">Hasta salir COMPLETAMENTE de la cizalladura.</text>
+
+      <!-- PM actions box -->
+      <rect x="14" y="261" width="252" height="280" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1" />
+      <text x="24" y="281" fill="#38bdf8" font-size="11.5" font-weight="800">ACCIONES DEL PM (MONITOREO):</text>
+      <text x="24" y="301" fill="#cbd5e1" font-size="10">• Callout inicial: "MAX".</text>
+      <text x="24" y="315" fill="#cbd5e1" font-size="10">• Comprobar empuje GA RSV en EICAS.</text>
+      <text x="24" y="329" fill="#cbd5e1" font-size="10">• Cantar activamente altímetro y variómetro:</text>
+      
+      <rect x="22" y="338" width="236" height="42" rx="4" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1" />
+      <text x="30" y="356" fill="#ffffff" font-size="10.5" font-weight="800">"CLIMBING" / "DESCENDING 300 FT"</text>
+      <text x="30" y="370" fill="#bae6fd" font-size="9.5">"ALTITUDE 400 FT... 500 FT"</text>
+
+      <text x="24" y="398" fill="#cbd5e1" font-size="10">• Avisar de tendencias de velocidad.</text>
+      <text x="24" y="412" fill="#cbd5e1" font-size="10">• Escanear proximidad al terreno.</text>
+      <text x="24" y="426" fill="#cbd5e1" font-size="10">• Encender todas las luces exteriores.</text>
+      <text x="24" y="440" fill="#cbd5e1" font-size="10">• FSN BELT switch ON.</text>
+      <text x="24" y="456" fill="#fbbf24" font-size="9.5">• Comunicar a ATC en cuanto se esté seguro.</text>
+    </g>
+
+    <!-- CARD 4: SALIDA SEGURA & NOTIFICACIÓN -->
+    <g transform="translate(875, 0)">
+      <rect width="265" height="555" rx="12" fill="url(#cardGradW)" stroke="#10b981" stroke-width="1.5" />
+      <rect x="14" y="14" width="28" height="28" rx="6" fill="#059669" />
+      <text x="28" y="33" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="800" text-anchor="middle">4</text>
+      
+      <text x="50" y="28" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="14" font-weight="800">SALIDA &amp; NOTIFICACIÓN</text>
+      <text x="50" y="42" fill="#94a3b8" font-size="10">&gt; 1.500 FT AGL y Fuera de Peligro</text>
+
+      <rect x="14" y="56" width="237" height="150" rx="6" fill="#064e3b" fill-opacity="0.4" stroke="#10b981" stroke-width="1" />
+      <text x="24" y="76" fill="#34d399" font-size="11" font-weight="800">1. SALIDA DEL MODO WSHR:</text>
+      <text x="24" y="94" fill="#cbd5e1" font-size="10">• Retrasar palancas a TO/GA.</text>
+      <text x="24" y="108" fill="#cbd5e1" font-size="10">• Pulsar botón TO/GA en palanca.</text>
+      <text x="24" y="122" fill="#cbd5e1" font-size="10">• Seleccionar modo vertical</text>
+      <text x="24" y="136" fill="#cbd5e1" font-size="10">  manual (FLCH / FPA / HDG).</text>
+      <text x="24" y="150" fill="#a7f3d0" font-size="10" font-weight="700">PF: "GO AROUND, FLAP 2 (4)"</text>
+      <text x="24" y="166" fill="#cbd5e1" font-size="9.5">• PM selecciona flaps de frustrada.</text>
+      <text x="24" y="180" fill="#cbd5e1" font-size="9.5">• PM: "POSITIVE RATE" ➔ PF: "GEAR UP"</text>
+
+      <rect x="14" y="216" width="237" height="165" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2" />
+      <text x="24" y="236" fill="#38bdf8" font-size="11" font-weight="800">2. REPORTE RADIOTELEFÓNICO ATC:</text>
+      <rect x="22" y="246" width="220" height="74" rx="4" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1" />
+      <text x="30" y="264" fill="#bae6fd" font-size="9.5" font-weight="800">PM a la torre / control:</text>
+      <text x="30" y="280" fill="#ffffff" font-size="10.5" font-weight="900">"ATC, [CALLSIGN],</text>
+      <text x="30" y="294" fill="#ffffff" font-size="10.5" font-weight="900"> EXPERIENCING WINDSHEAR,</text>
+      <text x="30" y="308" fill="#ffffff" font-size="10.5" font-weight="900"> GOING AROUND"</text>
+      
+      <text x="24" y="340" fill="#cbd5e1" font-size="10">• Informar de pérdida de nudos (kt),</text>
+      <text x="24" y="354" fill="#cbd5e1" font-size="10">  altitud del fenómeno y localización.</text>
+      <text x="24" y="368" fill="#94a3b8" font-size="9.5">• Avisa a otros tráficos en aproximación.</text>
+
+      <rect x="14" y="391" width="237" height="150" rx="6" fill="#1e1b4b" stroke="#818cf8" stroke-width="1" />
+      <text x="24" y="411" fill="#c7d2fe" font-size="10.5" font-weight="800">ACELERACIÓN Y LIMPIEZA:</text>
+      <text x="24" y="429" fill="#cbd5e1" font-size="10">• Acelerar hacia VFS / Green Dot.</text>
+      <text x="24" y="443" fill="#cbd5e1" font-size="10">• Retracción secuencial a Flap 0.</text>
+      <text x="24" y="457" fill="#cbd5e1" font-size="10">• After Takeoff Checklist.</text>
+      <text x="24" y="471" fill="#cbd5e1" font-size="10">• Evaluar nueva aproximación vs</text>
+      <text x="24" y="485" fill="#fde68a" font-size="10" font-weight="700">  desvío a aeropuerto alternativo.</text>
+      <text x="24" y="503" fill="#cbd5e1" font-size="9.5">• Notificación SMS / ASR Binter.</text>
+    </g>
+
+  </g>
+</svg>

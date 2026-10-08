@@ -1,0 +1,220 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b111e"/>
+      <stop offset="100%" stop-color="#070b12"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="850" fill="url(#bgGrad)"/>
+
+  <!-- Subtle Grid Lines -->
+  <g stroke="rgba(255,255,255,0.03)" stroke-width="1">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+    <line x1="0" y1="700" x2="1200" y2="700"/>
+  </g>
+
+  <!-- Header Banner -->
+  <rect x="40" y="30" width="1120" height="75" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#cardShadow)"/>
+  <rect x="40" y="30" width="10" height="75" fill="#8b5cf6" rx="2"/>
+  
+  <text x="65" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" fill="#f8fafc" letter-spacing="0.5">
+    PROCEDIMIENTO DE LLEGADA Y PARADA EN PARKING CON APU INOP
+  </text>
+  <text x="65" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#94a3b8">
+    Binter MOA 8.2.2.12.4.2 &amp; SOPM E195-E2 • 3 Condiciones de Seguridad de Acceso ERA &amp; Conexión GPU
+  </text>
+  <rect x="980" y="47" width="160" height="38" rx="6" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="1060" y="71" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#c4b5fd" text-anchor="middle">
+    MOA 8.2 &amp; HANDLING
+  </text>
+
+  <!-- Column 1: Notificación y Parada -->
+  <g transform="translate(40, 125)">
+    <rect width="350" height="470" rx="8" fill="#131e31" stroke="#334155" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <rect width="350" height="40" rx="8" fill="url(#purpleGrad)"/>
+    <text x="175" y="26" font-family="sans-serif" font-size="13.5" font-weight="800" fill="#ffffff" text-anchor="middle">
+      1. NOTIFICACIÓN Y PARADA
+    </text>
+
+    <circle cx="35" cy="70" r="14" fill="#8b5cf6"/>
+    <text x="35" y="75" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">1</text>
+    <text x="60" y="68" font-family="sans-serif" font-size="13" font-weight="700" fill="#ffffff">Aviso Previsto al Handling</text>
+    <text x="60" y="85" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#94a3b8">Contactar handling en rodaje:</text>
+    <text x="60" y="100" font-family="sans-serif" font-size="11.5" font-weight="600" fill="#38bdf8">"Llegada con APU INOP, GPU lista"</text>
+
+    <circle cx="35" cy="140" r="14" fill="#8b5cf6"/>
+    <text x="35" y="145" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">2</text>
+    <text x="60" y="138" font-family="sans-serif" font-size="13" font-weight="700" fill="#ffffff">Avión Detenido en Parking</text>
+    <text x="60" y="155" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#94a3b8">Llegada al puesto asignado.</text>
+    <text x="60" y="170" font-family="sans-serif" font-size="11.5" font-weight="700" fill="#f87171">Freno de estacionamiento (PARK BRAKE ON)</text>
+
+    <circle cx="35" cy="210" r="14" fill="#8b5cf6"/>
+    <text x="35" y="215" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">3</text>
+    <text x="60" y="208" font-family="sans-serif" font-size="13" font-weight="700" fill="#ffffff">Parada Motor 1 (Izquierdo)</text>
+    <text x="60" y="225" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">Cortar Motor 1 (START/STOP Switch OFF).</text>
+    <text x="60" y="240" font-family="sans-serif" font-size="11.5" font-weight="700" fill="#fbbf24">Motor 2 se mantiene en IDLE (Ralentí)</text>
+    <text x="60" y="255" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">para alimentar el sistema eléctrico.</text>
+
+    <!-- Beacon Notice -->
+    <rect x="20" y="295" width="310" height="150" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <text x="35" y="325" font-family="sans-serif" font-size="12" font-weight="700" fill="#f87171">ESTADO LUCES BEACON:</text>
+    <text x="35" y="350" font-family="sans-serif" font-size="13" font-weight="800" fill="#f87171">BEACON PERMANECE EN "ON"</text>
+    <text x="35" y="375" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">Indica al personal de rampa que el Motor 2</text>
+    <text x="35" y="395" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">continúa en funcionamiento y hay peligro</text>
+    <text x="35" y="415" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">de succión / gases calientes en lado derecho.</text>
+  </g>
+
+  <!-- Column 2: Las 3 Condiciones de Acceso ERA -->
+  <g transform="translate(425, 125)">
+    <rect width="350" height="470" rx="8" fill="#131e31" stroke="#ef4444" stroke-width="2" filter="url(#cardShadow)"/>
+    <rect width="350" height="40" rx="8" fill="url(#amberGrad)"/>
+    <text x="175" y="26" font-family="sans-serif" font-size="13.5" font-weight="800" fill="#ffffff" text-anchor="middle">
+      2. TRES CONDICIONES ACCESO ERA
+    </text>
+
+    <text x="25" y="70" font-family="sans-serif" font-size="12" font-weight="800" fill="#f87171">
+      REQUISITO CRÍTICO BINTER MOA 8.2.2.12.4.2:
+    </text>
+    <text x="25" y="90" font-family="sans-serif" font-size="11" font-weight="500" fill="#94a3b8">
+      El personal solo puede entrar al área delimitada (ERA) si se cumplen SIMULTÁNEAMENTE estas 3 condiciones:
+    </text>
+
+    <!-- Condition 1 -->
+    <rect x="20" y="110" width="310" height="65" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <circle cx="45" cy="142" r="12" fill="#ef4444"/>
+    <text x="45" y="146" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">1</text>
+    <text x="70" y="135" font-family="sans-serif" font-size="12" font-weight="700" fill="#f8fafc">Avión completamente detenido</text>
+    <text x="70" y="152" font-family="sans-serif" font-size="11" font-weight="500" fill="#94a3b8">Velocidad cero en el puesto de parking</text>
+
+    <!-- Condition 2 -->
+    <rect x="20" y="185" width="310" height="65" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <circle cx="45" cy="217" r="12" fill="#ef4444"/>
+    <text x="45" y="221" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">2</text>
+    <text x="70" y="210" font-family="sans-serif" font-size="12" font-weight="700" fill="#f8fafc">Luz Freno de Estacionamiento ON</text>
+    <text x="70" y="227" font-family="sans-serif" font-size="11" font-weight="500" fill="#94a3b8">Luz roja indicadora encendida en panel</text>
+
+    <!-- Condition 3 -->
+    <rect x="20" y="260" width="310" height="65" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <circle cx="45" cy="292" r="12" fill="#ef4444"/>
+    <text x="45" y="296" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">3</text>
+    <text x="70" y="285" font-family="sans-serif" font-size="12" font-weight="700" fill="#f8fafc">Un Motor Completamente Parado</text>
+    <text x="70" y="302" font-family="sans-serif" font-size="11" font-weight="500" fill="#94a3b8">Motor 1 con N1 decreciendo a cero</text>
+
+    <!-- Handling Entry Warning -->
+    <rect x="20" y="340" width="310" height="105" rx="6" fill="rgba(239, 68, 68, 0.2)" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="35" y="365" font-family="sans-serif" font-size="12" font-weight="800" fill="#f87171">PASILLO DE ACCESO SEGURO:</text>
+    <text x="35" y="388" font-family="sans-serif" font-size="11.5" font-weight="600" fill="#fecaca">• Acceso exclusivo por lado izquierdo (Eng 1)</text>
+    <text x="35" y="408" font-family="sans-serif" font-size="11.5" font-weight="600" fill="#fecaca">• Calzado inmediato del tren de morro</text>
+    <text x="35" y="428" font-family="sans-serif" font-size="11.5" font-weight="600" fill="#fecaca">• Conexión del cable de GPU externa</text>
+  </g>
+
+  <!-- Column 3: Conexión GPU y Parada Motor 2 -->
+  <g transform="translate(810, 125)">
+    <rect width="350" height="470" rx="8" fill="#131e31" stroke="#334155" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <rect width="350" height="40" rx="8" fill="url(#greenGrad)"/>
+    <text x="175" y="26" font-family="sans-serif" font-size="13.5" font-weight="800" fill="#ffffff" text-anchor="middle">
+      3. GPU ON &amp; CORTE MOTOR 2
+    </text>
+
+    <circle cx="35" cy="70" r="14" fill="#16a34a"/>
+    <text x="35" y="75" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">1</text>
+    <text x="60" y="68" font-family="sans-serif" font-size="13" font-weight="700" fill="#ffffff">Verificación GPU en Cabina</text>
+    <text x="60" y="85" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">Comprobar "GPU AVAIL" en Overhead.</text>
+    <text x="60" y="100" font-family="sans-serif" font-size="11.5" font-weight="700" fill="#4ade80">Pulsar botón GPU: "GPU IN USE"</text>
+
+    <circle cx="35" cy="140" r="14" fill="#16a34a"/>
+    <text x="35" y="145" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">2</text>
+    <text x="60" y="138" font-family="sans-serif" font-size="13" font-weight="700" fill="#ffffff">Parada del Motor 2</text>
+    <text x="60" y="155" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">Tras transferir la carga eléctrica a GPU,</text>
+    <text x="60" y="170" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">cortar Motor 2 (START/STOP Switch OFF).</text>
+
+    <circle cx="35" cy="210" r="14" fill="#16a34a"/>
+    <text x="35" y="215" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">3</text>
+    <text x="60" y="208" font-family="sans-serif" font-size="13" font-weight="700" fill="#ffffff">Apagado de Beacons</text>
+    <text x="60" y="225" font-family="sans-serif" font-size="11.5" font-weight="700" fill="#38bdf8">BEACON OFF SOLO TRAS PARADA TOTAL</text>
+    <text x="60" y="240" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">Comprobar N1 de ambos motores en 0%.</text>
+
+    <!-- Final Operations Box -->
+    <rect x="20" y="295" width="310" height="150" rx="6" fill="#1e293b" stroke="#10b981" stroke-width="1"/>
+    <text x="35" y="325" font-family="sans-serif" font-size="12" font-weight="700" fill="#4ade80">AUTORIZACIÓN DESEMBARQUE:</text>
+    <text x="35" y="350" font-family="sans-serif" font-size="11.5" font-weight="600" fill="#f8fafc">• Conectar pasarela / colocar escaleras</text>
+    <text x="35" y="372" font-family="sans-serif" font-size="11.5" font-weight="600" fill="#f8fafc">• Colocar calzos en tren principal (Main Gear)</text>
+    <text x="35" y="394" font-family="sans-serif" font-size="11.5" font-weight="600" fill="#f8fafc">• Apagar Seatbelts Signs</text>
+    <text x="35" y="416" font-family="sans-serif" font-size="11.5" font-weight="600" fill="#f8fafc">• Apertura de puertas y desembarque seguro</text>
+  </g>
+
+  <!-- Bottom Visual Overview & Embraer 195-E2 Top-Down Diagram -->
+  <g transform="translate(40, 615)">
+    <rect width="1120" height="200" rx="8" fill="#131e31" stroke="#334155" stroke-width="1.5" filter="url(#cardShadow)"/>
+    
+    <!-- Left Top Down Aircraft Schematic -->
+    <g transform="translate(180, 100)">
+      <!-- Fuselage -->
+      <path d="M -110,0 L 110,0" stroke="#f8fafc" stroke-width="14" stroke-linecap="round"/>
+      <!-- Nose Cone -->
+      <path d="M 105,-7 L 125,0 L 105,7 Z" fill="#0284c7"/>
+      <!-- Wings -->
+      <path d="M 10,-8 L -30,-65 L -40,-65 L -10,-8 Z" fill="#64748b"/>
+      <path d="M 10,8 L -30,65 L -40,65 L -10,8 Z" fill="#64748b"/>
+      <!-- Winglets -->
+      <path d="M -30,-65 L -26,-72 L -38,-65 Z" fill="#10b981"/>
+      <path d="M -30,65 L -26,72 L -38,65 Z" fill="#10b981"/>
+      <!-- Horizontal Stabilizer -->
+      <path d="M -85,-5 L -105,-28 L -110,-28 L -95,-5 Z" fill="#0284c7"/>
+      <path d="M -85,5 L -105,28 L -110,28 L -95,5 Z" fill="#0284c7"/>
+      <!-- Engine 1 (Left - OFF) -->
+      <rect x="-10" y="-38" width="30" height="14" rx="4" fill="#22c55e" stroke="#16a34a" stroke-width="1.5"/>
+      <text x="5" y="-43" font-family="sans-serif" font-size="10" font-weight="800" fill="#4ade80" text-anchor="middle">ENG 1 (OFF / STOPPED)</text>
+      <!-- Engine 2 (Right - IDLE) -->
+      <rect x="-10" y="24" width="30" height="14" rx="4" fill="#ef4444" stroke="#dc2626" stroke-width="1.5"/>
+      <text x="5" y="52" font-family="sans-serif" font-size="10" font-weight="800" fill="#f87171" text-anchor="middle">ENG 2 (IDLE / RUNNING)</text>
+      <!-- Danger Cone on Eng 2 -->
+      <path d="M -10,31 L -50,15 L -50,47 Z" fill="rgba(239, 68, 68, 0.25)" stroke="#ef4444" stroke-dasharray="3,3"/>
+      <!-- Safe Access Arrow on Eng 1 -->
+      <path d="M 60,-65 L 60,-15 L 25,-15" fill="none" stroke="#22c55e" stroke-width="2.5" marker-end="url(#arrow)"/>
+      <text x="65" y="-70" font-family="sans-serif" font-size="10.5" font-weight="700" fill="#4ade80">VÍA DE ACCESO SEGURA GPU</text>
+    </g>
+
+    <!-- Right Technical Rules MOA 8 -->
+    <text x="420" y="35" font-family="sans-serif" font-size="13" font-weight="800" fill="#38bdf8">
+      REGLAS CRÍTICAS DE SEGURIDAD OPERACIONAL EN PLATAFORMA (MOA CAP. 8):
+    </text>
+    <text x="420" y="60" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">
+      • <tspan font-weight="700" fill="#f8fafc">Prioridad de Conexión:</tspan> La GPU debe estar posicionada antes de la llegada del avión para minimizar el tiempo de motor en marcha al ralentí en parking.
+    </text>
+    <text x="420" y="85" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">
+      • <tspan font-weight="700" fill="#f8fafc">Riesgo de Ingestión/Jet Blast:</tspan> Mantener despejada la zona de peligro del Motor 2 (5 metros por delante de la toma de aire y 50 metros tras la tobera).
+    </text>
+    <text x="420" y="110" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">
+      • <tspan font-weight="700" fill="#f8fafc">Prohibición de Embarque/Desembarque:</tspan> Queda totalmente prohibido iniciar el movimiento de pasajeros mientras el Motor 2 esté encendido.
+    </text>
+    <text x="420" y="135" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">
+      • <tspan font-weight="700" fill="#f8fafc">Fallo de GPU:</tspan> Si la GPU falla o no conecta, avisar inmediatamente a operaciones para coordinar nuevo equipo antes de parar el Motor 2.
+    </text>
+    <text x="420" y="160" font-family="sans-serif" font-size="11.5" font-weight="600" fill="#fbbf24">
+      • <tspan font-weight="700" fill="#f59e0b">Apagado de Beacon:</tspan> Señal inequívoca para todo el personal de rampa de que los motores están 100% detenidos y la aeronave es segura.
+    </text>
+  </g>
+</svg>

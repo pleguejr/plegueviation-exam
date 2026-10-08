@@ -1,0 +1,216 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradTcas" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080e1a" />
+      <stop offset="100%" stop-color="#121b2d" />
+    </linearGradient>
+    <linearGradient id="cardGradT" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#182338" />
+      <stop offset="100%" stop-color="#0e1726" />
+    </linearGradient>
+    <linearGradient id="redGradT" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#b91c1c" />
+    </linearGradient>
+    <linearGradient id="greenGradT" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bgGradTcas)" />
+
+  <!-- Grid -->
+  <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90" />
+    <line x1="0" y1="370" x2="1200" y2="370" />
+    <line x1="300" y1="0" x2="300" y2="675" />
+    <line x1="600" y1="0" x2="600" y2="675" />
+    <line x1="900" y1="0" x2="900" y2="675" />
+  </g>
+
+  <!-- Header Banner -->
+  <rect x="30" y="16" width="1140" height="64" rx="10" fill="#111c2e" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="1.5" />
+  
+  <!-- Embraer 195-E2 Silhouette -->
+  <g transform="translate(48, 26) scale(0.6)">
+    <path d="M 0 25 Q 35 15 70 18 L 85 5 L 92 6 L 82 19 L 140 22 L 185 0 L 195 2 L 165 24 L 205 25 Q 215 25 220 28 L 200 31 L 165 31 L 145 42 L 138 41 L 148 31 L 80 30 L 70 42 L 62 41 L 68 29 Q 30 30 0 25 Z" fill="#38bdf8" fill-opacity="0.9" />
+    <rect x="90" y="27" width="28" height="10" rx="4" fill="#0284c7" />
+    <polygon points="185,2 193,3 175,20 168,20" fill="#10b981" />
+  </g>
+
+  <text x="185" y="44" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="800" letter-spacing="1">MANIOBRA TCAS RA (RESOLUTION ADVISORY)</text>
+  <text x="185" y="66" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600">Manuales Binter MOB 3.1.8 &amp; SOPM Sec 3 · Respuesta Anticolisión en E195-E2</text>
+  
+  <rect x="980" y="26" width="175" height="42" rx="6" fill="#0369a1" fill-opacity="0.4" stroke="#38bdf8" stroke-width="1" />
+  <text x="1067" y="52" fill="#e0f2fe" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">FLY-TO-ZONE (PFD)</text>
+
+  <!-- 4 COLUMNS -->
+  <g transform="translate(30, 95)">
+    
+    <!-- CARD 1: DETECCIÓN & DISENGAGE -->
+    <g transform="translate(0, 0)">
+      <rect width="270" height="555" rx="12" fill="url(#cardGradT)" stroke="#ef4444" stroke-width="1.5" />
+      <rect x="14" y="14" width="28" height="28" rx="6" fill="url(#redGradT)" />
+      <text x="28" y="33" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="800" text-anchor="middle">1</text>
+      
+      <text x="50" y="28" fill="#fca5a5" font-family="system-ui, sans-serif" font-size="14" font-weight="800">DETECCIÓN &amp; MANDO</text>
+      <text x="50" y="42" fill="#94a3b8" font-size="10">Acción Inmediata PF</text>
+
+      <rect x="14" y="56" width="242" height="95" rx="6" fill="#450a0a" fill-opacity="0.4" stroke="#ef4444" stroke-width="1.2" />
+      <text x="24" y="76" fill="#f87171" font-size="11" font-weight="800">AVISO SONORO TCAS:</text>
+      <rect x="22" y="84" width="226" height="56" rx="4" fill="#7f1d1d" stroke="#ef4444" stroke-width="1" />
+      <text x="30" y="104" fill="#ffffff" font-size="11.5" font-weight="900">"CLIMB, CLIMB"</text>
+      <text x="30" y="122" fill="#fecaca" font-size="11.5" font-weight="900">o "DESCEND, DESCEND"</text>
+
+      <rect x="14" y="161" width="242" height="110" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1" />
+      <text x="24" y="181" fill="#38bdf8" font-size="11" font-weight="800">DESCONEXIÓN DE AUTÓMATAS:</text>
+      <rect x="22" y="189" width="226" height="42" rx="4" fill="#0c4a6e" stroke="#0284c7" stroke-width="1" />
+      <text x="30" y="207" fill="#ffffff" font-size="11" font-weight="900">PF: "MY CONTROLS"</text>
+      <text x="30" y="221" fill="#bae6fd" font-size="9.5">Desconectar AP y A/T de inmediato.</text>
+      <text x="24" y="254" fill="#cbd5e1" font-size="10">• Manos y pies en mandos de vuelo.</text>
+
+      <rect x="14" y="281" width="242" height="150" rx="6" fill="#1e1b4b" stroke="#818cf8" stroke-width="1" />
+      <text x="24" y="301" fill="#c7d2fe" font-size="11" font-weight="800">PRIORIDAD ABSOLUTA TCAS:</text>
+      <text x="24" y="321" fill="#fde68a" font-size="10.5" font-weight="800">TCAS RA PREVALECE SOBRE ATC</text>
+      <text x="24" y="339" fill="#cbd5e1" font-size="10">• Si el controlador ATC emite una</text>
+      <text x="24" y="353" fill="#cbd5e1" font-size="10">  orden contradictoria al TCAS,</text>
+      <text x="24" y="367" fill="#fca5a5" font-size="10.5" font-weight="700">  ¡IGNORAR A ATC Y SEGUIR TCAS!</text>
+      <text x="24" y="385" fill="#cbd5e1" font-size="9.5">• La tripulación queda exenta de</text>
+      <text x="24" y="399" fill="#cbd5e1" font-size="9.5">  responsabilidad legal por seguir RA.</text>
+
+      <rect x="14" y="441" width="242" height="100" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="24" y="461" fill="#94a3b8" font-size="10.5" font-weight="700">ESCANEO EXTERIOR:</text>
+      <text x="24" y="479" fill="#cbd5e1" font-size="10">• Ambos pilotos escanean visualmente</text>
+      <text x="24" y="493" fill="#cbd5e1" font-size="10">  el exterior y la pantalla de tráfico.</text>
+      <text x="24" y="507" fill="#94a3b8" font-size="9.5">• No maniobrar solo por contacto visual.</text>
+    </g>
+
+    <!-- CARD 2: VUELO FLY-TO-ZONE (PFD) -->
+    <g transform="translate(285, 0)">
+      <rect width="280" height="555" rx="12" fill="url(#cardGradT)" stroke="#10b981" stroke-width="1.5" />
+      <rect x="14" y="14" width="28" height="28" rx="6" fill="url(#greenGradT)" />
+      <text x="28" y="33" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="800" text-anchor="middle">2</text>
+      
+      <text x="50" y="28" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="14" font-weight="800">FLY-TO-ZONE (PFD)</text>
+      <text x="50" y="42" fill="#94a3b8" font-size="10">Técnica de Vuelo y Variómetro</text>
+
+      <rect x="14" y="56" width="252" height="155" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+      <text x="24" y="76" fill="#34d399" font-size="11.5" font-weight="800">INDICADOR VSI EN PFD:</text>
+      
+      <!-- Mini VSI Gauge Drawing -->
+      <g transform="translate(30, 85)">
+        <rect width="30" height="100" rx="3" fill="#1e293b" stroke="#475569" stroke-width="1" />
+        <!-- Red band -->
+        <rect x="2" y="55" width="26" height="42" fill="#ef4444" fill-opacity="0.8" />
+        <!-- Green fly-to band -->
+        <rect x="2" y="15" width="26" height="35" fill="#10b981" fill-opacity="0.8" />
+        <!-- Pointer -->
+        <polygon points="34,30 44,25 44,35" fill="#ffffff" />
+      </g>
+      <text x="85" y="105" fill="#34d399" font-size="11" font-weight="800">ZONA VERDE (FLY-TO):</text>
+      <text x="85" y="121" fill="#cbd5e1" font-size="10">Situar aguja VSI dentro</text>
+      <text x="85" y="135" fill="#cbd5e1" font-size="10">del trapecio verde.</text>
+      <text x="85" y="155" fill="#f87171" font-size="11" font-weight="800">ZONA ROJA (NO FLY):</text>
+      <text x="85" y="171" fill="#cbd5e1" font-size="10">Evitar tasa prohibida.</text>
+
+      <rect x="14" y="221" width="252" height="175" rx="6" fill="#064e3b" fill-opacity="0.4" stroke="#10b981" stroke-width="1" />
+      <text x="24" y="241" fill="#34d399" font-size="11.5" font-weight="800">TÉCNICA DE MANIOBRA SUAVE:</text>
+      <rect x="22" y="249" width="236" height="38" rx="4" fill="#065f46" stroke="#10b981" stroke-width="1" />
+      <text x="30" y="267" fill="#ffffff" font-size="11" font-weight="900">RESPUESTA EN 5 SEGUNDOS</text>
+      <text x="30" y="279" fill="#a7f3d0" font-size="9">(Aceleración suave ≈ 0.25g)</text>
+
+      <text x="24" y="306" fill="#cbd5e1" font-size="10">• NO maniobrar con brusquedad.</text>
+      <text x="24" y="320" fill="#cbd5e1" font-size="10">• No sobremandar el pitch.</text>
+      <text x="24" y="334" fill="#cbd5e1" font-size="10">• Mantener los planos nivelados.</text>
+      <text x="24" y="348" fill="#cbd5e1" font-size="10">• No cambiar configuración.</text>
+      <text x="24" y="362" fill="#cbd5e1" font-size="10">• No buscar la aeronave intrusa con el morro.</text>
+
+      <rect x="14" y="406" width="252" height="135" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="24" y="426" fill="#fbbf24" font-size="11" font-weight="800">AVISO REVERSAL O INCREASE:</text>
+      <text x="24" y="444" fill="#cbd5e1" font-size="10">• "INCREASE CLIMB" / "CLIMB NOW":</text>
+      <text x="34" y="460" fill="#fca5a5" font-size="10.5" font-weight="700">Respuesta en 2.5 s (0.35g).</text>
+      <text x="24" y="478" fill="#cbd5e1" font-size="10">• Ajustar rápidamente a la nueva</text>
+      <text x="24" y="492" fill="#cbd5e1" font-size="10">  banda verde requerida en el VSI.</text>
+    </g>
+
+    <!-- CARD 3: TAREAS DEL PM (PILOT MONITORING) -->
+    <g transform="translate(580, 0)">
+      <rect width="280" height="555" rx="12" fill="url(#cardGradT)" stroke="#38bdf8" stroke-width="1.5" />
+      <rect x="14" y="14" width="28" height="28" rx="6" fill="#0284c7" />
+      <text x="28" y="33" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="800" text-anchor="middle">3</text>
+      
+      <text x="50" y="28" fill="#7dd3fc" font-family="system-ui, sans-serif" font-size="14" font-weight="800">ACCIONES DEL PM</text>
+      <text x="50" y="42" fill="#94a3b8" font-size="10">Luces, Seguridad y Radio ATC</text>
+
+      <rect x="14" y="56" width="252" height="150" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1" />
+      <text x="24" y="76" fill="#38bdf8" font-size="11.5" font-weight="800">1. LUCES &amp; CABINA ESTÉRIL:</text>
+      <text x="24" y="96" fill="#cbd5e1" font-size="10.5">• Luces exteriores:</text>
+      <text x="34" y="112" fill="#7dd3fc" font-size="11" font-weight="800">ALL EXTERNAL LIGHTS ON</text>
+      <text x="34" y="126" fill="#94a3b8" font-size="9.5">(Landing, Taxi, Strobe, Logo)</text>
+      <text x="24" y="146" fill="#cbd5e1" font-size="10.5">• Señal de cinturones:</text>
+      <text x="34" y="162" fill="#7dd3fc" font-size="11" font-weight="800">FSN BELTS SWITCH ON</text>
+      <text x="24" y="180" fill="#cbd5e1" font-size="10.5">• Luz cabina estéril:</text>
+      <text x="34" y="196" fill="#7dd3fc" font-size="11" font-weight="800">INTERNAL STERIL LIGHT ON</text>
+
+      <rect x="14" y="216" width="252" height="165" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2" />
+      <text x="24" y="236" fill="#38bdf8" font-size="11.5" font-weight="800">2. LLAMADA ATC INICIAL:</text>
+      <rect x="22" y="246" width="236" height="52" rx="4" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1" />
+      <text x="30" y="264" fill="#bae6fd" font-size="10" font-weight="800">PM a la frecuencia de control:</text>
+      <text x="30" y="280" fill="#ffffff" font-size="13" font-weight="900">"[CALLSIGN], TCAS RA"</text>
+      
+      <text x="24" y="316" fill="#cbd5e1" font-size="10">• Informa al controlador de que el</text>
+      <text x="24" y="330" fill="#cbd5e1" font-size="10">  vuelo maniobra bajo guía TCAS.</text>
+      <text x="24" y="344" fill="#cbd5e1" font-size="10">• ATC no interferirá con vectores.</text>
+      <text x="24" y="358" fill="#94a3b8" font-size="9.5">• ATC proporcionará separación a otros tráficos.</text>
+
+      <rect x="14" y="391" width="252" height="150" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="24" y="411" fill="#38bdf8" font-size="11" font-weight="800">3. MONITORIZACIÓN DE VUELO:</text>
+      <text x="24" y="431" fill="#cbd5e1" font-size="10">• Monitorear que el PF sitúe</text>
+      <text x="24" y="445" fill="#cbd5e1" font-size="10">  el variómetro en la banda verde.</text>
+      <text x="24" y="459" fill="#cbd5e1" font-size="10">• Comprobar velocidad y actitud.</text>
+      <text x="24" y="473" fill="#cbd5e1" font-size="10">• Escanear mapa de tráfico TCAS.</text>
+      <text x="24" y="487" fill="#cbd5e1" font-size="10">• Cantar aviso si hay discrepancia.</text>
+    </g>
+
+    <!-- CARD 4: RESOLUCIÓN & CLEAR OF CONFLICT -->
+    <g transform="translate(875, 0)">
+      <rect width="265" height="555" rx="12" fill="url(#cardGradT)" stroke="#10b981" stroke-width="1.5" />
+      <rect x="14" y="14" width="28" height="28" rx="6" fill="#059669" />
+      <text x="28" y="33" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="800" text-anchor="middle">4</text>
+      
+      <text x="50" y="28" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="14" font-weight="800">RESOLUCIÓN &amp; RETORNO</text>
+      <text x="50" y="42" fill="#94a3b8" font-size="10">Normalización de Vuelo</text>
+
+      <rect x="14" y="56" width="237" height="95" rx="6" fill="#064e3b" fill-opacity="0.4" stroke="#10b981" stroke-width="1.2" />
+      <text x="24" y="76" fill="#34d399" font-size="11" font-weight="800">AVISO SONORO DE RESOLUCIÓN:</text>
+      <rect x="22" y="84" width="220" height="42" rx="4" fill="#065f46" stroke="#10b981" stroke-width="1" />
+      <text x="30" y="110" fill="#ffffff" font-size="12" font-weight="900">"CLEAR OF CONFLICT"</text>
+
+      <rect x="14" y="161" width="237" height="135" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+      <text x="24" y="181" fill="#34d399" font-size="11" font-weight="800">RETORNO A LA AUTORIZACIÓN:</text>
+      <text x="24" y="199" fill="#cbd5e1" font-size="10">• Retornar suavemente al nivel de</text>
+      <text x="24" y="213" fill="#cbd5e1" font-size="10">  vuelo o altitud autorizada previa.</text>
+      <text x="24" y="227" fill="#cbd5e1" font-size="10">• Nivelar el avión con suavidad.</text>
+      <text x="24" y="241" fill="#cbd5e1" font-size="10">• Reenganchar Autopilot (AP).</text>
+      <text x="24" y="255" fill="#cbd5e1" font-size="10">• Reenganchar Autothrottle (AT).</text>
+      <text x="24" y="269" fill="#a7f3d0" font-size="10" font-weight="700">• Confirmar modo en FMA.</text>
+
+      <rect x="14" y="306" width="237" height="110" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2" />
+      <text x="24" y="326" fill="#38bdf8" font-size="11" font-weight="800">NOTIFICACIÓN FINAL ATC:</text>
+      <rect x="22" y="334" width="220" height="52" rx="4" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1" />
+      <text x="30" y="352" fill="#ffffff" font-size="10.5" font-weight="900">"[CALLSIGN], CLEAR OF</text>
+      <text x="30" y="366" fill="#ffffff" font-size="10.5" font-weight="900"> CONFLICT, RETURNING TO [FL]"</text>
+      <text x="24" y="400" fill="#bae6fd" font-size="9.5">ATC confirma reincorporación.</text>
+
+      <rect x="14" y="426" width="237" height="115" rx="6" fill="#1e1b4b" stroke="#818cf8" stroke-width="1" />
+      <text x="24" y="446" fill="#c7d2fe" font-size="10.5" font-weight="800">REPORTE POST-VUELO (SMS):</text>
+      <text x="24" y="464" fill="#cbd5e1" font-size="10">• Cumplimentar reporte de</text>
+      <text x="24" y="478" fill="#cbd5e1" font-size="10">  suceso ASR / MOR Binter.</text>
+      <text x="24" y="492" fill="#cbd5e1" font-size="10">• Notificar en plazo ≤ 72 horas.</text>
+      <text x="24" y="506" fill="#cbd5e1" font-size="10">• Anotar datos de altitud y hora.</text>
+    </g>
+
+  </g>
+</svg>

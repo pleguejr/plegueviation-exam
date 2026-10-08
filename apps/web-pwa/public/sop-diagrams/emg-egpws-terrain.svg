@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b111e"/>
+      <stop offset="100%" stop-color="#070b12"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="850" fill="url(#bgGrad)"/>
+
+  <!-- Subtle Grid Lines -->
+  <g stroke="rgba(255,255,255,0.03)" stroke-width="1">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+    <line x1="0" y1="700" x2="1200" y2="700"/>
+  </g>
+
+  <!-- Header Banner -->
+  <rect x="40" y="30" width="1120" height="75" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#cardShadow)"/>
+  <rect x="40" y="30" width="10" height="75" fill="#dc2626" rx="2"/>
+  
+  <text x="65" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" fill="#f8fafc" letter-spacing="0.5">
+    EMERGENCIA: ESCAPE EGPWS / TERRAIN AWARENESS
+  </text>
+  <text x="65" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#94a3b8">
+    QRH E195-E2 Non-Normal &amp; Binter SOPM 3.10 • Maniobra Inmediata de Escape de Proximidad al Terreno
+  </text>
+  <rect x="990" y="47" width="150" height="38" rx="6" fill="rgba(220, 38, 38, 0.2)" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1065" y="71" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#f87171" text-anchor="middle">
+    MEMORY ITEM
+  </text>
+
+  <!-- Warning Trigger Box -->
+  <rect x="40" y="125" width="1120" height="65" rx="8" fill="rgba(220,38,38,0.15)" stroke="#dc2626" stroke-width="2"/>
+  <text x="70" y="152" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#f87171">
+    DISPARADORES SONOROS / AURAL WARNINGS (RED EGPWS WARNINGS):
+  </text>
+  <text x="70" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#f1f5f9">
+    "PULL UP" • "TERRAIN, TERRAIN, PULL UP" • "OBSTACLE, OBSTACLE, PULL UP" • "TERRAIN AHEAD, PULL UP"
+  </text>
+
+  <!-- Column 1: Pilot Flying (PF) Actions -->
+  <g transform="translate(40, 210)">
+    <rect width="350" height="420" rx="8" fill="#131e31" stroke="#3b82f6" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <rect width="350" height="40" rx="8" fill="url(#redGrad)"/>
+    <text x="175" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="1">
+      PF • PILOT FLYING (INMEDIATO)
+    </text>
+
+    <!-- Step 1 -->
+    <circle cx="35" cy="70" r="14" fill="#ef4444"/>
+    <text x="35" y="75" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">1</text>
+    <text x="60" y="68" font-family="sans-serif" font-size="13" font-weight="700" fill="#ffffff">Desconectar Piloto Automático</text>
+    <text x="60" y="85" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#93c5fd">"MY CONTROLS" • AP / AT OFF</text>
+
+    <!-- Step 2 -->
+    <circle cx="35" cy="130" r="14" fill="#ef4444"/>
+    <text x="35" y="135" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">2</text>
+    <text x="60" y="128" font-family="sans-serif" font-size="13" font-weight="700" fill="#ffffff">Potencia Máxima</text>
+    <text x="60" y="145" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">Thrust Levers: MAX DETENT</text>
+
+    <!-- Step 3 -->
+    <circle cx="35" cy="190" r="14" fill="#ef4444"/>
+    <text x="35" y="195" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">3</text>
+    <text x="60" y="188" font-family="sans-serif" font-size="13" font-weight="700" fill="#ffffff">Nivelar Alas &amp; Cabeceo</text>
+    <text x="60" y="205" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">Wings level, Pitch 15° hacia PLI</text>
+
+    <!-- Step 4 -->
+    <circle cx="35" cy="250" r="14" fill="#ef4444"/>
+    <text x="35" y="255" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">4</text>
+    <text x="60" y="248" font-family="sans-serif" font-size="13" font-weight="700" fill="#ffffff">Speedbrakes</text>
+    <text x="60" y="265" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">Verificar RETRACTADOS</text>
+
+    <!-- Callout Box -->
+    <rect x="20" y="300" width="310" height="95" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <text x="35" y="325" font-family="sans-serif" font-size="12" font-weight="700" fill="#38bdf8">CALLOUT ESTÁNDAR PF:</text>
+    <text x="35" y="350" font-family="sans-serif" font-size="14" font-weight="800" fill="#facc15">"PULL UP, CLIMBING"</text>
+    <text x="35" y="375" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#94a3b8">Mantener hasta libre de terreno (MSA)</text>
+  </g>
+
+  <!-- Column 2: Pilot Monitoring (PM) Actions -->
+  <g transform="translate(425, 210)">
+    <rect width="350" height="420" rx="8" fill="#131e31" stroke="#3b82f6" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <rect width="350" height="40" rx="8" fill="#2563eb"/>
+    <text x="175" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="1">
+      PM • PILOT MONITORING
+    </text>
+
+    <!-- Step 1 -->
+    <circle cx="35" cy="70" r="14" fill="#3b82f6"/>
+    <text x="35" y="75" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">1</text>
+    <text x="60" y="68" font-family="sans-serif" font-size="13" font-weight="700" fill="#ffffff">Verificar Potencia y Pitch</text>
+    <text x="60" y="85" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">Verificar MAX y Speedbrakes UP</text>
+
+    <!-- Step 2 -->
+    <circle cx="35" cy="130" r="14" fill="#3b82f6"/>
+    <text x="35" y="135" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">2</text>
+    <text x="60" y="128" font-family="sans-serif" font-size="13" font-weight="700" fill="#ffffff">Callouts de Altitud y Variómetro</text>
+    <text x="60" y="145" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">Cantar RA y tendencia de ascenso</text>
+
+    <!-- Step 3 -->
+    <circle cx="35" cy="190" r="14" fill="#3b82f6"/>
+    <text x="35" y="195" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">3</text>
+    <text x="60" y="188" font-family="sans-serif" font-size="13" font-weight="700" fill="#ffffff">Monitorear Terreno en Pantallas</text>
+    <text x="60" y="205" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">Terrain radar / EICAS warnings</text>
+
+    <!-- Step 4 -->
+    <circle cx="35" cy="250" r="14" fill="#3b82f6"/>
+    <text x="35" y="255" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">4</text>
+    <text x="60" y="248" font-family="sans-serif" font-size="13" font-weight="700" fill="#ffffff">Comunicaciones ATC</text>
+    <text x="60" y="265" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">Notificar maniobra de escape a ATC</text>
+
+    <!-- Callout Box -->
+    <rect x="20" y="300" width="310" height="95" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <text x="35" y="325" font-family="sans-serif" font-size="12" font-weight="700" fill="#38bdf8">NOTIFICACIÓN ATC OBLIGATORIA:</text>
+    <text x="35" y="350" font-family="sans-serif" font-size="12.5" font-weight="800" fill="#facc15">"[Callsign] TERRAIN PULL UP"</text>
+    <text x="35" y="372" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#94a3b8">"CLIMBING TO [ALTITUD SEGURA / MSA]"</text>
+  </g>
+
+  <!-- Column 3: Reglas de Oro & Prohibiciones -->
+  <g transform="translate(810, 210)">
+    <rect width="350" height="420" rx="8" fill="#131e31" stroke="#eab308" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <rect width="350" height="40" rx="8" fill="url(#goldGrad)"/>
+    <text x="175" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="1">
+      REGLAS DE ORO &amp; CONFIGURACIÓN
+    </text>
+
+    <!-- Strict Prohibition -->
+    <rect x="15" y="55" width="320" height="110" rx="6" fill="rgba(220,38,38,0.2)" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="30" y="78" font-family="sans-serif" font-size="12.5" font-weight="800" fill="#f87171">¡PROHIBIDO CAMBIAR CONFIGURACIÓN!</text>
+    <text x="30" y="98" font-family="sans-serif" font-size="11.5" font-weight="600" fill="#fecaca">• NO RETRAER NI MOVER FLAPS</text>
+    <text x="30" y="118" font-family="sans-serif" font-size="11.5" font-weight="600" fill="#fecaca">• NO SUBIR NI MOVER EL TREN (GEAR)</text>
+    <text x="30" y="142" font-family="sans-serif" font-size="11" font-weight="500" fill="#e2e8f0">Razón: Evitar pérdidas transitorias de sustentación</text>
+
+    <!-- Transition point -->
+    <rect x="15" y="180" width="320" height="105" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="30" y="205" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#38bdf8">RESTABLECIMIENTO / RECUPERACIÓN</text>
+    <text x="30" y="228" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">• Solo al superar MSA / libramiento visual</text>
+    <text x="30" y="248" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">• Reducir cabeceo suavemente</text>
+    <text x="30" y="268" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">• Ajustar potencia de ascenso normal</text>
+
+    <!-- Post flight -->
+    <rect x="15" y="300" width="320" height="95" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="30" y="325" font-family="sans-serif" font-size="12" font-weight="700" fill="#10b981">ACCIONES POSTERIORES (MOA 11)</text>
+    <text x="30" y="348" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">• Notificar a ATC que se retoman autorizaciones</text>
+    <text x="30" y="368" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#cbd5e1">• Rellenar ASR / Reporte EGPWS obligatorio</text>
+  </g>
+
+  <!-- Bottom Visual Timeline & E195-E2 Profile -->
+  <g transform="translate(40, 650)">
+    <rect width="1120" height="165" rx="8" fill="#131e31" stroke="#334155" stroke-width="1.5" filter="url(#cardShadow)"/>
+    
+    <!-- Mountain terrain profile -->
+    <path d="M 50,140 Q 250,30 450,140" fill="rgba(239, 68, 68, 0.25)" stroke="#ef4444" stroke-width="2"/>
+    <text x="250" y="115" font-family="sans-serif" font-size="12" font-weight="800" fill="#f87171" text-anchor="middle">OBSTÁCULO / TERRENO</text>
+
+    <!-- Escape Trajectory -->
+    <path d="M 100,125 C 200,125 280,105 380,45" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-dasharray="6,4"/>
+    
+    <!-- Aircraft Silhouette along climb -->
+    <g transform="translate(380, 25) rotate(-22)">
+      <!-- Fuselage -->
+      <path d="M -40,0 L 40,0 Q 55,0 45,3 L -35,3 Z" fill="#f8fafc"/>
+      <!-- Nose Cone -->
+      <path d="M 40,0 Q 55,0 45,3 Z" fill="#0284c7"/>
+      <!-- Main Wing -->
+      <path d="M 5,0 L -15,-20 L -8,-20 L 15,0 Z" fill="#94a3b8"/>
+      <!-- Winglet Green -->
+      <path d="M -15,-20 L -13,-26 L -10,-20 Z" fill="#10b981"/>
+      <!-- Tail & Fin -->
+      <path d="M -30,0 L -45,-18 L -38,-18 L -23,0 Z" fill="#0284c7"/>
+    </g>
+    <text x="440" y="35" font-family="sans-serif" font-size="13" font-weight="800" fill="#4ade80">TRAYECTORIA DE MÁXIMO ASCENSO (PLI)</text>
+
+    <!-- Legend and parameters -->
+    <text x="680" y="45" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#f8fafc">PARÁMETROS CRÍTICOS DE VUELO E195-E2:</text>
+    <text x="680" y="70" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#94a3b8">• Pitch objetivo: 15° arriba hacia el Pitch Limit Indicator (PLI)</text>
+    <text x="680" y="92" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#94a3b8">• En caso de Stick Shaker: Reducir cabeceo ligeramente hasta librar vibrador</text>
+    <text x="680" y="114" font-family="sans-serif" font-size="11.5" font-weight="500" fill="#94a3b8">• FADEC entrega RSV (Thrust Reserve) automáticamente al pulsar MAX DETENT</text>
+    <text x="680" y="136" font-family="sans-serif" font-size="11.5" font-weight="600" fill="#38bdf8">• ASR obligatorio según Binter MOA Cap. 11 &amp; SMS</text>
+  </g>
+</svg>

@@ -1,0 +1,234 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradFlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080e1a" />
+      <stop offset="100%" stop-color="#121b2d" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#182338" />
+      <stop offset="100%" stop-color="#0e1726" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="binterGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bgGradFlow)" />
+
+  <!-- Subtle Grid lines -->
+  <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90" />
+    <line x1="0" y1="210" x2="1200" y2="210" />
+    <line x1="0" y1="430" x2="1200" y2="430" />
+    <line x1="290" y1="0" x2="290" y2="675" />
+    <line x1="590" y1="0" x2="590" y2="675" />
+    <line x1="890" y1="0" x2="890" y2="675" />
+  </g>
+
+  <!-- Header Banner -->
+  <rect x="30" y="16" width="1140" height="64" rx="10" fill="#111c2e" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="1.5" />
+  
+  <!-- Embraer 195-E2 Silhouette in header -->
+  <g transform="translate(48, 26) scale(0.6)">
+    <path d="M 0 25 Q 35 15 70 18 L 85 5 L 92 6 L 82 19 L 140 22 L 185 0 L 195 2 L 165 24 L 205 25 Q 215 25 220 28 L 200 31 L 165 31 L 145 42 L 138 41 L 148 31 L 80 30 L 70 42 L 62 41 L 68 29 Q 30 30 0 25 Z" fill="#38bdf8" fill-opacity="0.8" />
+    <!-- Engine nacelle -->
+    <rect x="90" y="27" width="28" height="10" rx="4" fill="#0284c7" />
+    <!-- Binter green tail streak -->
+    <polygon points="185,2 193,3 175,20 168,20" fill="#10b981" />
+  </g>
+
+  <text x="185" y="44" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="800" letter-spacing="1">FLOW DE GESTIÓN DE EMERGENCIA DEL COMANDANTE</text>
+  <text x="185" y="66" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600">Manuales Binter MOA 8.3, MOB 3.0/3.1, QRH Rev19 · Flota Embraer 195-E2</text>
+  
+  <rect x="980" y="26" width="175" height="42" rx="6" fill="#0369a1" fill-opacity="0.4" stroke="#38bdf8" stroke-width="1" />
+  <text x="1067" y="52" fill="#e0f2fe" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">SOP OFICIAL COMANDANTE</text>
+
+  <!-- TOP BAR: GOLDEN RULES & CRITERIO FUEL VS TIEMPO -->
+  <g transform="translate(30, 90)">
+    <!-- Golden Rules -->
+    <rect width="670" height="95" rx="10" fill="url(#cardGrad)" stroke="#f59e0b" stroke-width="1.2" />
+    <rect x="14" y="12" width="130" height="24" rx="4" fill="url(#goldGrad)" />
+    <text x="79" y="28" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="800" text-anchor="middle">¡¡ GOLDEN RULES !!</text>
+    
+    <text x="155" y="28" fill="#fbbf24" font-family="system-ui, sans-serif" font-size="11" font-weight="700">1. CHECK FMA ALWAYS · 2. CHECK SYS PAGE ON FAILURE</text>
+    
+    <rect x="14" y="44" width="642" height="40" rx="6" fill="#0b121f" stroke="#334155" stroke-width="1" />
+    <text x="24" y="60" fill="#94a3b8" font-size="10.5" font-weight="600">TECHNICAL FLOW:</text>
+    <text x="125" y="60" fill="#38bdf8" font-size="10.5" font-weight="700">1° TAXI OUT / EN VUELO  ➔  2° FOL / OEB  ➔  3° QRH  ➔  4° GROUND RESET (DDPM)</text>
+    <text x="24" y="76" fill="#cbd5e1" font-size="10">Mensajes EICAS con Chevron (&gt;): 1° Warning (&gt; Rojo) ➔ 2° Caution (&gt; Ámbar) ➔ 3° Advisory (&gt; Cyan)</text>
+
+    <!-- Fuel vs Tiempo -->
+    <rect x="685" y="0" width="455" height="95" rx="10" fill="url(#cardGrad)" stroke="#ef4444" stroke-width="1.2" />
+    <text x="700" y="26" fill="#fca5a5" font-family="system-ui, sans-serif" font-size="13" font-weight="800">PRIORIDAD: ¿FUEL O TIEMPO?</text>
+    
+    <rect x="698" y="36" width="210" height="48" rx="6" fill="#064e3b" fill-opacity="0.5" stroke="#10b981" stroke-width="1" />
+    <text x="708" y="52" fill="#34d399" font-size="11" font-weight="800">FUEL (Gestión sin prisa)</text>
+    <text x="708" y="68" fill="#cbd5e1" font-size="9.5">Fallo controlado: tiempo para QRH,</text>
+    <text x="708" y="79" fill="#cbd5e1" font-size="9.5">evaluar red, ePerf y CCO.</text>
+
+    <rect x="918" y="36" width="210" height="48" rx="6" fill="#450a0a" fill-opacity="0.5" stroke="#ef4444" stroke-width="1" />
+    <text x="928" y="52" fill="#f87171" font-size="11" font-weight="800">TIEMPO (Aterrizaje ya)</text>
+    <text x="928" y="68" fill="#fca5a5" font-size="9.5">Fuego inextinguible, humo denso,</text>
+    <text x="928" y="79" fill="#fca5a5" font-size="9.5">daño estructural ➔ Adecuado más próx.</text>
+  </g>
+
+  <!-- 4 SEQUENTIAL PHASES -->
+  <g transform="translate(30, 200)">
+    
+    <!-- PHASE 1: MEANA -->
+    <g transform="translate(0, 0)">
+      <rect width="270" height="455" rx="12" fill="url(#cardGrad)" stroke="#8b5cf6" stroke-width="1.5" />
+      <rect x="14" y="14" width="28" height="28" rx="6" fill="#8b5cf6" />
+      <text x="28" y="33" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="800" text-anchor="middle">1</text>
+      
+      <text x="50" y="28" fill="#c4b5fd" font-family="system-ui, sans-serif" font-size="14" font-weight="800">① MEANA</text>
+      <text x="50" y="42" fill="#94a3b8" font-size="10">Orden de Aplicación de Listas</text>
+
+      <!-- Steps -->
+      <rect x="14" y="54" width="242" height="70" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="24" y="72" fill="#a78bfa" font-size="11" font-weight="800">M - MEMORY ITEMS</text>
+      <text x="24" y="88" fill="#cbd5e1" font-size="10">Acciones inmediatas de memoria.</text>
+      <text x="24" y="102" fill="#94a3b8" font-size="9.5">Confirmar y cantar con rigor.</text>
+      <text x="24" y="115" fill="#fca5a5" font-size="9">Cero acciones &lt;400ft AGL.</text>
+
+      <rect x="14" y="132" width="242" height="68" rx="6" fill="#0f172a" stroke="#ef4444" stroke-width="1" />
+      <text x="24" y="150" fill="#f87171" font-size="11" font-weight="800">E - EMERGENCY CHECKLIST</text>
+      <text x="24" y="166" fill="#cbd5e1" font-size="10">Listas con recuadro rojo/gris</text>
+      <text x="24" y="180" fill="#cbd5e1" font-size="10">en QRH (Fuego, Humo, Cabina).</text>
+
+      <rect x="14" y="208" width="242" height="68" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="24" y="226" fill="#38bdf8" font-size="11" font-weight="800">A - ABNORMAL PRINCIPAL</text>
+      <text x="24" y="242" fill="#cbd5e1" font-size="10">Lista que ataca la raíz del fallo</text>
+      <text x="24" y="256" fill="#cbd5e1" font-size="10">primario del sistema.</text>
+
+      <rect x="14" y="284" width="242" height="68" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="24" y="302" fill="#34d399" font-size="11" font-weight="800">N - NORMAL CHECKLIST</text>
+      <text x="24" y="318" fill="#cbd5e1" font-size="10">Listas normales de la fase</text>
+      <text x="24" y="332" fill="#cbd5e1" font-size="10">(After Takeoff, Cruise, etc.).</text>
+
+      <rect x="14" y="360" width="242" height="80" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="24" y="378" fill="#fbbf24" font-size="11" font-weight="800">A - ABNORMAL RESTANTES</text>
+      <text x="24" y="394" fill="#cbd5e1" font-size="10">Notas de sistemas degradados,</text>
+      <text x="24" y="408" fill="#cbd5e1" font-size="10">factores de aterrizaje y</text>
+      <text x="24" y="422" fill="#94a3b8" font-size="9.5">consecuencias operacionales.</text>
+    </g>
+
+    <!-- PHASE 2: IMFLOCC -->
+    <g transform="translate(285, 0)">
+      <rect width="280" height="455" rx="12" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.5" />
+      <rect x="14" y="14" width="28" height="28" rx="6" fill="#0284c7" />
+      <text x="28" y="33" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="800" text-anchor="middle">2</text>
+      
+      <text x="50" y="28" fill="#7dd3fc" font-family="system-ui, sans-serif" font-size="14" font-weight="800">② IMFLOCC</text>
+      <text x="50" y="42" fill="#94a3b8" font-size="10">Toma de Decisiones &amp; Desvío</text>
+
+      <rect x="14" y="54" width="252" height="385" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      
+      <text x="24" y="76" fill="#38bdf8" font-size="11" font-weight="800">I - Inoperative Items</text>
+      <text x="24" y="90" fill="#cbd5e1" font-size="10">Sistemas perdidos y redundancias.</text>
+
+      <text x="24" y="116" fill="#38bdf8" font-size="11" font-weight="800">M - Meteo Report</text>
+      <text x="24" y="130" fill="#cbd5e1" font-size="10">METAR, TAF, RVR, viento cruzado.</text>
+
+      <text x="24" y="156" fill="#38bdf8" font-size="11" font-weight="800">F - Fuel Assessment</text>
+      <text x="24" y="170" fill="#cbd5e1" font-size="10">Autonomía vs Reserva Final 30 min.</text>
+
+      <text x="24" y="196" fill="#38bdf8" font-size="11" font-weight="800">L - Landing Performance</text>
+      <text x="24" y="210" fill="#cbd5e1" font-size="10">ePerf InFlight con factores QRH.</text>
+
+      <text x="24" y="236" fill="#38bdf8" font-size="11" font-weight="800">O - Options (Prioridad Binter)</text>
+      <text x="24" y="250" fill="#cbd5e1" font-size="10">1° Base de línea ➔ 2° Red con mant.</text>
+      <text x="24" y="264" fill="#cbd5e1" font-size="10">➔ 3° Adecuado más cercano.</text>
+
+      <text x="24" y="290" fill="#38bdf8" font-size="11" font-weight="800">C - Choose an Option</text>
+      <text x="24" y="304" fill="#cbd5e1" font-size="10">Decisión firme CMD consensuada.</text>
+
+      <text x="24" y="330" fill="#38bdf8" font-size="11" font-weight="800">C - Communications</text>
+      <text x="24" y="346" fill="#fca5a5" font-size="9.5">• ATC: Mayday/Pan-Pan</text>
+      <text x="24" y="360" fill="#34d399" font-size="9.5">• Cabina: Briefing TELSI cara a cara</text>
+      <text x="24" y="374" fill="#cbd5e1" font-size="9.5">• Pasajeros: PA claro del Comandante</text>
+      <text x="24" y="388" fill="#fbbf24" font-size="9.5">• CCO: ACARS (EMR/INC) y VHF Cía</text>
+    </g>
+
+    <!-- PHASE 3: E-DALTA -->
+    <g transform="translate(580, 0)">
+      <rect width="275" height="455" rx="12" fill="url(#cardGrad)" stroke="#10b981" stroke-width="1.5" />
+      <rect x="14" y="14" width="28" height="28" rx="6" fill="#059669" />
+      <text x="28" y="33" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="800" text-anchor="middle">3</text>
+      
+      <text x="50" y="28" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="14" font-weight="800">③ E-DALTA</text>
+      <text x="50" y="42" fill="#94a3b8" font-size="10">Briefing Aproximación &amp; Toma</text>
+
+      <rect x="14" y="54" width="247" height="385" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      
+      <text x="24" y="76" fill="#34d399" font-size="11" font-weight="800">E - ePerf InFlight Landing</text>
+      <text x="24" y="90" fill="#cbd5e1" font-size="10">Peso estimado, RWYCC, margen parada.</text>
+
+      <text x="24" y="116" fill="#34d399" font-size="11" font-weight="800">D - Descent</text>
+      <text x="24" y="130" fill="#cbd5e1" font-size="10">Top of Descent (TOD), perfil vertical,</text>
+      <text x="24" y="144" fill="#cbd5e1" font-size="10">restricciones altitud/velocidad.</text>
+
+      <text x="24" y="170" fill="#34d399" font-size="11" font-weight="800">A - Arrival</text>
+      <text x="24" y="184" fill="#cbd5e1" font-size="10">STAR, Missed Approach, altitudes</text>
+      <text x="24" y="198" fill="#cbd5e1" font-size="10">mínimas de seguridad (MSA / MORA).</text>
+
+      <text x="24" y="224" fill="#34d399" font-size="11" font-weight="800">L - Landing (MCDU PERF)</text>
+      <text x="24" y="238" fill="#cbd5e1" font-size="10">Flap 4 o Flap FULL, Autobrake,</text>
+      <text x="24" y="252" fill="#cbd5e1" font-size="10">velocidades Vref/Vap/Vac/Vfs y mínimos.</text>
+
+      <text x="24" y="278" fill="#34d399" font-size="11" font-weight="800">T - Taxi</text>
+      <text x="24" y="292" fill="#cbd5e1" font-size="10">Salida de pista prevista y rodaje LIDO.</text>
+
+      <text x="24" y="318" fill="#34d399" font-size="11" font-weight="800">A - Apron</text>
+      <text x="24" y="332" fill="#cbd5e1" font-size="10">Stand asignado, guía de atraque, calzos,</text>
+      <text x="24" y="346" fill="#cbd5e1" font-size="10">servicios de emergencia en tierra.</text>
+
+      <rect x="20" y="370" width="235" height="58" rx="6" fill="#064e3b" fill-opacity="0.4" stroke="#10b981" stroke-width="1" />
+      <text x="30" y="390" fill="#a7f3d0" font-size="10" font-weight="800">COTEJO CRUZADO OBLIGATORIO:</text>
+      <text x="30" y="405" fill="#e2e8f0" font-size="9.5">Verificar MCDU vs Carta Lido vs ePerf</text>
+    </g>
+
+    <!-- PHASE 4: 4 ÚLTIMAS LISTAS -->
+    <g transform="translate(870, 0)">
+      <rect width="270" height="455" rx="12" fill="url(#cardGrad)" stroke="#f59e0b" stroke-width="1.5" />
+      <rect x="14" y="14" width="28" height="28" rx="6" fill="#d97706" />
+      <text x="28" y="33" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="800" text-anchor="middle">4</text>
+      
+      <text x="50" y="28" fill="#fde68a" font-family="system-ui, sans-serif" font-size="14" font-weight="800">④ 4 ÚLTIMAS LISTAS</text>
+      <text x="50" y="42" fill="#94a3b8" font-size="10">Secuencia Final antes de Toma</text>
+
+      <rect x="14" y="54" width="242" height="85" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="24" y="74" fill="#fbbf24" font-size="11" font-weight="800">1. EQUIPO MÍNIMO</text>
+      <text x="24" y="90" fill="#cbd5e1" font-size="10">Comprobación del equipo mínimo</text>
+      <text x="24" y="104" fill="#cbd5e1" font-size="10">para la aproximación (RVR, navaids,</text>
+      <text x="24" y="118" fill="#94a3b8" font-size="9.5">luces, radioaltímetros).</text>
+
+      <rect x="14" y="147" width="242" height="85" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="24" y="167" fill="#fbbf24" font-size="11" font-weight="800">2. SUPLEMENTARIA (SI APLICA)</text>
+      <text x="24" y="183" fill="#cbd5e1" font-size="10">Supplementary Checklist:</text>
+      <text x="24" y="197" fill="#cbd5e1" font-size="10">• CAT II/III Autoland</text>
+      <text x="24" y="211" fill="#cbd5e1" font-size="10">• RNP AR / RNP APCH</text>
+
+      <rect x="14" y="240" width="242" height="95" rx="6" fill="#0f172a" stroke="#ef4444" stroke-width="1" />
+      <text x="24" y="260" fill="#f87171" font-size="11" font-weight="800">3. ONE ENGINE INOPERATIVE</text>
+      <text x="24" y="276" fill="#cbd5e1" font-size="10">OEI Approach &amp; Landing</text>
+      <text x="24" y="290" fill="#cbd5e1" font-size="10">Checklist (si el escenario implica</text>
+      <text x="24" y="304" fill="#cbd5e1" font-size="10">fallo de motor / OEI).</text>
+      <text x="24" y="318" fill="#fca5a5" font-size="9.5">Ajuste Flap 5 / Rendimiento.</text>
+
+      <rect x="14" y="343" width="242" height="95" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+      <text x="24" y="363" fill="#34d399" font-size="11" font-weight="800">4. APPROACH CHECKLIST</text>
+      <text x="24" y="379" fill="#cbd5e1" font-size="10">Lista normal de aproximación</text>
+      <text x="24" y="393" fill="#cbd5e1" font-size="10">leída y completada antes de</text>
+      <text x="24" y="407" fill="#cbd5e1" font-size="10">alcanzar el FAF/FAP.</text>
+      <text x="24" y="423" fill="#a7f3d0" font-size="9.5">"Before Landing Checklist en final"</text>
+    </g>
+
+  </g>
+</svg>
