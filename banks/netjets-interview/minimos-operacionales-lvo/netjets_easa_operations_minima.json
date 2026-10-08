@@ -2,35 +2,35 @@
   {
     "id": "NJ-MIN-001",
     "subject_id": "minimos-operacionales-lvo",
-    "learning_objective": "Approach Ban Rule under EASA (CAT.OP.MPA.305)",
-    "stem": "Under EASA CAT.OP.MPA.305, what is the exact criterion governing the 'Approach Ban' when conducting an instrument approach?",
+    "learning_objective": "Approach Ban Rule (EASA CAT.OP.MPA.305)",
+    "stem": "Under EASA CAT.OP.MPA.305, what is the exact criterion governing the 'Approach Ban' on an instrument approach procedure?",
     "options": [
       {
         "id": "A",
-        "text": "The aircraft cannot start descent from cruising level if destination RVR is below minimums.",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "The approach may be commenced regardless of reported RVR/VIS, but may not be continued beyond the outer marker or 1,000 ft above aerodrome level (AAL) if reported RVR/VIS is below applicable minimums; if RVR falls below minimums AFTER passing 1,000 ft AAL, the approach may continue to DA/MDA.",
+        "text": "The approach may not be continued beyond the outer marker or 1,000 ft above aerodrome elevation unless the reported RVR/visibility is at or above the applicable operating minima.",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "The approach may continue down to Decision Height in all cases provided the flight crew has obtained visual contact with the runway approach lighting system at the fina.",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "If reported RVR drops below minimums at 500 ft AGL, a missed approach must be initiated immediately without checking visual references.",
+        "text": "The approach must be discontinued immediately at the initial approach fix whenever the aerodrome ceiling drops below 200 ft regardless of reported runway visual range.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "The approach ban applies strictly at the Decision Altitude (DA) only.",
+        "text": "The approach ban applies strictly to Category II and Category III approaches and is never enforced during standard Category I precision or 2D non-precision approaches.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### EASA Approach Ban Rule (CAT.OP.MPA.305)\n* **Prior to 1,000 ft AAL (or FAF / Outer Marker):** The reported RVR/VIS is **controlling**. If reported below minima, continuing the approach past 1,000 ft AAL is **PROHIBITED**.\n* **After passing 1,000 ft AAL:** If reported RVR subsequently deteriorates below minima, the crew is **legally permitted to continue to DA/MDA**.\n* **At DA/MDA:** Landing is only permitted if the required visual references are distinctly identified and the aircraft is in a position to execute a normal landing.",
+      "text": "### Approach Ban Policy (CAT.OP.MPA.305)\n* **The Ban Point:** The PIC shall not continue an instrument approach beyond the **outer marker (OM)** or equivalent position (or **1,000 ft above aerodrome elevation** if no OM/equivalent exists) if the reported **RVR/CMV is below the applicable minimum**.\n* If the RVR drops below minima **after passing 1,000 ft / OM**, the approach **may be continued to DA/H or MDA/H** where visual reference requirements apply.",
       "references": [
-        "EASA Part-CAT.OP.MPA.305 (Commencement and continuation of approach)",
-        "ICAO Annex 6 Part I"
+        "EASA Part-CAT.OP.MPA.305",
+        "AMC1 CAT.OP.MPA.305"
       ]
     },
     "metadata": {
@@ -40,35 +40,35 @@
   {
     "id": "NJ-MIN-002",
     "subject_id": "minimos-operacionales-lvo",
-    "learning_objective": "Controlling RVR Requirements",
-    "stem": "Under EASA Part-CAT, which Runway Visual Range (RVR) transmissometer value is always controlling for takeoff and landing operations?",
+    "learning_objective": "Controlling RVR for Take-Off and Landing",
+    "stem": "Under EASA Part-CAT, which Runway Visual Range (RVR) transmissometer point is legally 'controlling' for departure and landing?",
     "options": [
       {
         "id": "A",
-        "text": "Only human observer meteorological visibility (VIS) is controlling.",
+        "text": "The midpoint RVR is always controlling for landing, whereas rollout RVR is exclusively controlling for all takeoff operations.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "The arithmetic average of the three RVR transmissometers.",
-        "is_correct": false
+        "text": "The touchdown zone (TDZ) RVR is always controlling; midpoint and stop-end RVRs are advisory for landing unless specified in the Ops Manual.",
+        "is_correct": true
       },
       {
         "id": "C",
-        "text": "The Stopend RVR is always the primary controlling value on landing.",
+        "text": "The average of all three transmissometer readings combined is legally controlling for both takeoff and landing phases.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "The Touchdown Zone (TDZ) RVR is always controlling; Midpoint and Stopend RVRs are advisory for standard CAT I / LVTO operations above 175 m, but if reported and relevant, all three RVRs become controlling for operations below 175 m RVR.",
-        "is_correct": true
+        "text": "The stop-end RVR is legally controlling whenever reverse thrust is inoperative according to the aircraft Minimum Equipment List.",
+        "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Controlling RVR Reporting (CAT.OP.MPA.110)\n* **Touchdown Zone (TDZ) RVR** is always **controlling** for landing.\n* **Midpoint and Stopend RVR** are advisory for standard operations, but when RVR is **below 175 m** (e.g. CAT III B or LVTO 125 m), all available positions become **mandatory controlling**.",
+      "text": "### Controlling RVR Elements (CAT.OP.MPA.305)\n* **For Landing:** The **Touchdown Zone (TDZ) RVR** is always controlling. If reported and relevant, midpoint and rollout RVR are also controlling for CAT II/III operations.\n* **For Take-Off:** The TDZ RVR is controlling, or the initial part of the takeoff roll.",
       "references": [
-        "EASA CAT.OP.MPA.110 / AMC1",
-        "ICAO Manual of All-Weather Operations (Doc 9365)"
+        "EASA Part-CAT.OP.MPA.305",
+        "AMC1 CAT.OP.MPA.110"
       ]
     },
     "metadata": {
@@ -79,34 +79,34 @@
     "id": "NJ-MIN-003",
     "subject_id": "minimos-operacionales-lvo",
     "learning_objective": "Low Visibility Take-Off (LVTO) Minima",
-    "stem": "What is the standard minimum RVR for Low Visibility Take-Off (LVTO) with approved visual guidance under EASA SPA.LVO.100?",
+    "stem": "What is the standard minimum RVR for Low Visibility Take-Off (LVTO) under EASA Part-SPA.LVO for an approved Category A/B/C aeroplane with runway edge and centerline lights?",
     "options": [
       {
         "id": "A",
-        "text": "RVR 300 m with taxiway lights only.",
+        "text": "300 m RVR provided daytime visual meteorological conditions prevail and the take-off alternate is within 30 minutes flight time.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "RVR 125 m for Category A, B, and C aircraft (or 150 m for Category D), provided Low Visibility Procedures (LVP) are in force, runway centerline lights are spaced at 15 m or less, and high-intensity runway markings provide a 90 m visual segment.",
-        "is_correct": true
-      },
-      {
-        "id": "C",
-        "text": "RVR 50 m without requiring runway centerline lights.",
+        "text": "75 m RVR requiring autothrottle coupling, heads-up guidance display system, and surface movement radar surveillance control.",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "125 m RVR with high-intensity runway centerline lights (spaced <= 15 m) and runway edge lights (spaced <= 60 m), plus approved multi-crew procedures.",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "RVR 400 m under standard daytime VFR takeoff rules.",
+        "text": "200 m RVR with runway edge lights only, without any requirement for runway centerline lighting or low visibility surface procedures.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Low Visibility Take-Off (LVTO - SPA.LVO.100)\n* Standard takeoff minimum without LVO: **RVR 400/500 m**.\n* **LVTO (Low Visibility Take-Off):** Permits takeoff down to **RVR 125 m** (Cat A/B/C) or **150 m** (Cat D).\n* Requires: **LVP in force**, operational High-Intensity Runway Centerline Lights (≤ 15 m spacing), runway edge lights, and a visual segment of ≥ 90 m.",
+      "text": "### LVTO Minima (SPA.LVO.100 / AMC1 SPA.LVO.100)\n* Standard **LVTO minimum** for approved operators is **125 m RVR** (Category A, B, C aeroplanes) with:\n  1. High intensity **runway centerline lights** (15 m spacing or less);\n  2. **Runway edge lights** (60 m spacing or less);\n  3. Low Visibility Procedures (LVP) in force;\n  4. Crew qualified and approved for LVTO.",
       "references": [
         "EASA Part-SPA.LVO.100",
-        "AMC1 SPA.LVO.100"
+        "AMC1 SPA.LVO.100 Table 1"
       ]
     },
     "metadata": {
@@ -116,35 +116,35 @@
   {
     "id": "NJ-MIN-004",
     "subject_id": "minimos-operacionales-lvo",
-    "learning_objective": "Cold Temperature Altimetry Corrections",
-    "stem": "When aerodrome temperature is significantly below 0°C, which altitudes must be corrected for low temperature error, and when is ATC notification mandatory under EASA SERA rules?",
+    "learning_objective": "Cold Temperature Altimeter Corrections (ICAO / EASA)",
+    "stem": "When aerodrome temperature is significantly below 0°C, which altitudes and flight procedure segments require pilot temperature correction under ICAO PANS-OPS?",
     "options": [
       {
         "id": "A",
-        "text": "ATC automatically adjusts all aircraft altimeters via SSR radar transponders.",
+        "text": "Only cruising flight levels above the transition altitude require cold temperature corrections when operating under radar control.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Altimeter temperature errors only occur below -40°C.",
+        "text": "Only the final approach Decision Height (DH) is corrected; all intermediate approach fix altitudes remain unadjusted.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Only DA is corrected; no notification to ATC is ever permitted.",
+        "text": "Temperature corrections are automatically applied by ground ATC radar and pilots must never adjust cockpit altimeter subscales.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "All published minimum altitudes (MSA, intermediate fix altitudes, stepdowns, and DA/MDA) must be corrected; pilots MUST notify ATC when applying temperature corrections to any altitude assigned by ATC or on intermediate/initial approach segments, but notification is not required for DA/MDA.",
+        "text": "All published minimum approach altitudes including MSA, intermediate fixes, FAF altitude, DA/H or MDA/H, and missed approach climb altitudes.",
         "is_correct": true
       }
     ],
     "explanation": {
-      "text": "### Cold Temperature Altimeter Correction (ICAO PANS-OPS & SERA)\n* In cold air, true altitude is **lower than indicated altitude** (*'High to Low, Look out Below'*).\n* Crews must apply temperature corrections to all minimum safe altitudes (MSA, IAF, IF, FAF, DA/MDA) using the ICAO Cold Temperature Correction Table.\n* **ATC Coordination Rule:** When applying corrections to **ATC-assigned altitudes or published tactical segments (IF, FAF)**, crew **MUST notify ATC** (e.g. *'Maintaining 4,300 ft for cold temperature correction'*).",
+      "text": "### Cold Temperature Altimeter Corrections (ICAO Doc 8168)\n* Altimeters read **higher than true altitude in cold air** (*'High to Low, look out below'*).\n* Pilots must apply temperature corrections to **all published minimum altitudes**: Minimum Sector Altitude (MSA), initial/intermediate approach segment altitudes, FAF crossing altitude, **DA/H or MDA/H**, and missed approach holding altitudes.\n* ATC must be informed if corrected intermediate altitudes deviate from cleared levels.",
       "references": [
-        "ICAO Doc 8168 (PANS-OPS Vol I)",
-        "EASA SERA.8015 / SIB 2019-07"
+        "ICAO Doc 8168 (PANS-OPS) Vol I",
+        "EASA AMC1 CAT.OP.MPA.110"
       ]
     },
     "metadata": {
@@ -155,34 +155,34 @@
     "id": "NJ-MIN-005",
     "subject_id": "minimos-operacionales-lvo",
     "learning_objective": "Converted Meteorological Visibility (CMV)",
-    "stem": "When is it permissible under EASA CAT.OP.MPA.110 to convert reported meteorological visibility (VIS) into Converted Meteorological Visibility (CMV), and what are the standard multipliers?",
+    "stem": "When is it permissible under EASA CAT.OP.MPA.110 to convert reported meteorological visibility (VIS) into Converted Meteorological Visibility (CMV)?",
     "options": [
       {
         "id": "A",
-        "text": "CMV can be used for CAT III autolandings when transmissometers fail.",
-        "is_correct": false
+        "text": "For planning or executing Category I and 2D approaches when RVR is not reported, multiplying VIS by lighting factors (e.g. 1.5 day / 2.0 night with HI ALS).",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "CMV is used exclusively for VFR flight planning.",
+        "text": "For takeoff operations when reported RVR is inoperative, multiplying reported visibility by a fixed factor of 3.0 during night flights during normal flight operations.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "For RVR calculation in CAT I or non-precision approaches when RVR is not reported; multiplied by 1.5 in daytime with High Intensity Approach Lights (HIALS) and by 2.0 at night with HIALS. It is PROHIBITED for takeoff, CAT II/III, or when reported RVR is available.",
-        "is_correct": true
+        "text": "To calculate RVR for Category II and Category III precision approach operations whenever destination ground transmissometers fail under standard rules.",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "The factor is always 3.0 regardless of lighting systems.",
+        "text": "CMV conversion is strictly prohibited under all European commercial air transport operations without exception under standard rules.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Converted Meteorological Visibility (CMV)\n* Used when meteorological visibility is reported but **RVR is NOT available**.\n* **Multiplication Factors:**\n  - High Intensity Approach Lighting (HIALS): **Day × 1.5 | Night × 2.0**.\n  - Any other lighting: **Day × 1.0 | Night × 1.5**.\n  - No lights: **Day × 1.0 | Night × 1.0**.\n* **Restrictions:** Never used for takeoff minima, CAT II/III minima, or if actual RVR is reported.",
+      "text": "### Converted Meteorological Visibility (CMV)\n* CMV may be used to verify approach ban compliance for **CAT I precision** and **2D non-precision approaches** when RVR is not reported.\n* **Conversion Factors:**\n  * High Intensity (HI) approach/runway lighting: Day = **VIS x 1.5**, Night = **VIS x 2.0**.\n  * Any other lighting / Day: **VIS x 1.0**, Night: **VIS x 1.5**.\n* CMV **cannot be used for CAT II/III** or for **take-off minima**.",
       "references": [
-        "EASA Part-CAT.OP.MPA.110 Table 1",
-        "AMC1 CAT.OP.MPA.110"
+        "EASA Part-CAT.OP.MPA.110",
+        "AMC1 CAT.OP.MPA.110 Table 2"
       ]
     },
     "metadata": {
@@ -192,35 +192,35 @@
   {
     "id": "NJ-MIN-006",
     "subject_id": "minimos-operacionales-lvo",
-    "learning_objective": "Continuous Descent Final Approach (CDFA) vs Non-CDFA Penalty",
-    "stem": "Under EASA Part-CAT, what regulatory penalty is applied to the minimum RVR if a non-precision approach is flown using a non-CDFA (stepdown / dive-and-drive) technique?",
+    "learning_objective": "Single-Pilot vs Multi-Pilot Minima Penalties (Part-CAT)",
+    "stem": "Under EASA Part-CAT, what regulatory penalty is applied to the minimum RVR on non-precision approaches for single-pilot operations without an autopilot?",
     "options": [
       {
         "id": "A",
-        "text": "Non-CDFA approaches are completely illegal under all EASA operations without exception.",
+        "text": "An additional 500 m must be added to the minimum RVR, and Decision Height (DH) must be increased by 100 ft across all runways during normal flight operations.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "An RVR increment of +200 m for Category A and B aircraft, or +400 m for Category C and D aircraft, must be added to the published approach minima.",
+        "text": "The minimum RVR is increased to at least 800 m (or MDA/H increased) unless an approved flight director or coupled autopilot is used down to MDA.",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "The approach must be flown with landing gear retracted until MDA.",
+        "text": "Single-pilot IFR commercial operations are restricted to daytime visual meteorological conditions with visibility above 5 km under standard rules.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "The MDA must be increased by 1,000 ft without changing RVR.",
+        "text": "No penalty is applied provided the single pilot has logged more than 500 hours of turbine flight time on the aircraft type under standard rules.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### CDFA Technique vs Non-CDFA Penalty (CAT.OP.MPA.115)\n* EASA mandates the **Continuous Descent Final Approach (CDFA)** technique for all non-precision approaches (NPA) to prevent CFIT and unstabilized approaches.\n* If an approach is flown **non-CDFA** (step-down dive-and-drive), the operator must add a safety penalty:\n  - **Cat A & B:** +200 m RVR\n  - **Cat C & D:** +400 m RVR",
+      "text": "### Single-Pilot Commercial Minima Rules (CAT.OP.MPA.110)\n* For **single-pilot commercial operations**, an autopilot or flight director is required to fly down to standard published minima.\n* If hand-flown without flight director/autopilot, the minimum RVR is **increased to 800 m** on 2D non-precision approaches.",
       "references": [
-        "EASA Part-CAT.OP.MPA.115",
-        "AMC1 CAT.OP.MPA.115"
+        "EASA Part-CAT.OP.MPA.110",
+        "AMC1 CAT.OP.MPA.110"
       ]
     },
     "metadata": {
@@ -230,34 +230,34 @@
   {
     "id": "NJ-MIN-007",
     "subject_id": "minimos-operacionales-lvo",
-    "learning_objective": "CAT I Precision Approach Visual References",
-    "stem": "At the Decision Height (DH = 200 ft) on a standard ILS CAT I approach, what minimum visual reference is required to continue descent below DH under EASA rules?",
+    "learning_objective": "CAT I Approach Visual Reference Requirements",
+    "stem": "At the Decision Height (DH = 200 ft) on a standard ILS CAT I approach, what visual reference must be established to continue below DH?",
     "options": [
       {
         "id": "A",
-        "text": "At least 3 crossbars of the approach lighting system and the runway centerline.",
+        "text": "The entire runway surface including threshold markings and touchdown zone must be completely visible from the flight deck during normal flight operations in accordance with approved airline procedures.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "At least one visual segment of the approach lighting system, threshold markings/lights, touchdown zone markings/lights, or visual glide slope indicator (PAPI/VASI) distinctly visible and identifiable.",
-        "is_correct": true
-      },
-      {
-        "id": "C",
-        "text": "Visual contact with the control tower and windsock.",
+        "text": "Both runway edge lights and precision approach path indicator (PAPI) lights must be visible simultaneously to the pilot flying under standard rules.",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "At least one visual reference (approach lights, threshold, threshold markings, TDZ, or runway edge lights) must be distinctly visible and identifiable.",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "The entire runway surface from threshold to stopend must be visible.",
+        "text": "Natural horizon visual reference is mandatory before descending below published Decision Height in all weather conditions under standard rules.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Visual References at CAT I DH (CAT.OP.MPA.110)\n* For **CAT I (DH ≥ 200 ft)**, the pilot must have in view **at least one** of the following:\n  - Elements of the Approach Light System (ALS).\n  - Threshold / threshold markings / threshold lights.\n  - Touchdown zone / TDZ markings / TDZ lights.\n  - Visual approach slope indicator (PAPI / VASI).\n  - Runway edge lights.",
+      "text": "### CAT I Visual Reference Requirements (AMC1 CAT.OP.MPA.110)\nTo continue below DH on CAT I, at least **one** of the following visual references must be distinctly visible and identifiable:\n1. Elements of the **approach lighting system**;\n2. The **threshold** or its markings/lights;\n3. The **touchdown zone** or its markings/lights;\n4. The **runway edge lights**.",
       "references": [
-        "EASA Part-CAT.OP.MPA.110",
+        "EASA AMC1 CAT.OP.MPA.110",
         "ICAO Annex 6 Part I"
       ]
     },
@@ -268,32 +268,32 @@
   {
     "id": "NJ-MIN-008",
     "subject_id": "minimos-operacionales-lvo",
-    "learning_objective": "CAT II Precision Approach Visual References",
-    "stem": "What specific visual reference is required at Decision Height (DH between 100 ft and 200 ft) on a CAT II precision approach to permit landing under EASA SPA.LVO.100?",
+    "learning_objective": "CAT II Approach Visual Reference Requirements",
+    "stem": "What specific visual reference is required at Decision Height (DH typically 100 ft) on an ILS Category II approach under EASA regulations?",
     "options": [
       {
         "id": "A",
-        "text": "A visual segment containing at least 3 consecutive lights of the approach lighting centerline, touchdown zone lights, runway centerline lights, or runway edge lights, including a lateral element (such as an approach light crossbar, landing threshold, or TDZ barrette).",
-        "is_correct": true
+        "text": "A single approach light bulb or flashing beacon light visible through the windshield in the pilot's forward field of view during normal flight operations in accordance with approved airline procedures.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "A single flashing strobe light in the approach sequence.",
+        "text": "Full visual view of the departure end runway stopway and all taxiway lead-off turnoffs along the landing runway roll under standard rules.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Direct view of the runway exit taxiway centerline lights.",
+        "text": "Visual acquisition of the control tower cab or surrounding terminal building structures before initiating the flare under standard rules.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No visual reference is required if autoland is armed.",
-        "is_correct": false
+        "text": "A visual segment containing at least 3 consecutive lights being the centerline of the approach lights, or touchdown zone lights, or runway centerline lights.",
+        "is_correct": true
       }
     ],
     "explanation": {
-      "text": "### Visual References for CAT II Operations\n* For **CAT II (100 ft ≤ DH < 200 ft)**, visual requirements are stricter than CAT I:\n  - At least **3 consecutive lights** (centerline of ALS, TDZ lights, runway centerline, or runway edge lights).\n  - Must include a **lateral cross element** (e.g. crossbar or threshold) to provide attitude and roll cues.",
+      "text": "### CAT II Visual Reference Requirements\n* On a **Category II approach**, the visual reference at DH (100 ft) must include a **segment of at least 3 consecutive lights** consisting of:\n  * The centerline of the approach lights;\n  * Touchdown zone lights;\n  * Runway centerline lights;\n  * Runway edge lights; or a combination thereof, with a lateral element (crossbar).",
       "references": [
         "EASA Part-SPA.LVO.100",
         "AMC1 SPA.LVO.100"
@@ -306,35 +306,35 @@
   {
     "id": "NJ-MIN-009",
     "subject_id": "minimos-operacionales-lvo",
-    "learning_objective": "Enhanced Flight Vision System (EFVS) Operational Credit",
-    "stem": "How does an approved Enhanced Flight Vision System (EFVS) with Head-Up Display (HUD) provide operational credit on a standard CAT I approach under EASA SPA.LVO.120?",
+    "learning_objective": "Enhanced Flight Vision Systems (EFVS) Operations",
+    "stem": "How does an approved Enhanced Flight Vision System (EFVS) with Head-Up Display (HUD) alter operational landing minima under EASA Part-SPA.EFVS?",
     "options": [
       {
         "id": "A",
-        "text": "It replaces the requirement for an operable radar altimeter on CAT II approaches.",
-        "is_correct": false
+        "text": "It permits continuing below published DH (200 ft) down to 100 ft above TDZE using real-time sensor imagery (infrared) on HUD, before natural visual references are required.",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "It permits landing in zero visibility without flare guidance.",
+        "text": "It completely eliminates the requirement to plan a destination alternate on all long-range intercontinental flights during normal flight operations in accordance with approved airline procedures.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "It eliminates the need for any approach briefing or alternate planning.",
+        "text": "It allows landing with zero runway visual range without any requirement for natural visual reference at touchdown under standard rules.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "It allows the pilot to continue the approach below the published DH (200 ft) down to 100 ft above TDZE using real-time sensor imagery (FLIR/infrared) displayed on the HUD, before requiring natural visual reference of the runway threshold or TDZ to land.",
-        "is_correct": true
+        "text": "It doubles the minimum allowable Decision Height to compensate for electronic display sensor latency delays under standard rules.",
+        "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### EFVS / EVS Operational Credit (SPA.LVO.120)\n* Modern executive jets (e.g. Bombardier Global, Challenger 3500, Falcon) equipped with **EFVS on HUD** have special operational credits.\n* On a CAT I approach, the crew may continue descent **from 200 ft down to 100 ft** relying entirely on **infrared sensor imagery on the HUD**.\n* At **100 ft**, natural visual contact with threshold lights or touchdown zone lights is required to touchdown.",
+      "text": "### EFVS Operations (Part-SPA.EFVS.100)\n* **EFVS to 100 ft:** Allows continuing an approach below published DA/H down to **100 ft above TDZE** using the EFVS image displayed on the HUD.\n* At 100 ft, **natural visual references** (threshold, TDZ lights) must be acquired with unaided vision to continue to land, unless approved for EFVS-to-touchdown.",
       "references": [
-        "EASA Part-SPA.LVO.120",
-        "FAA 14 CFR 91.176 (EFVS Operations)"
+        "EASA Part-SPA.EFVS.100",
+        "AMC1 SPA.EFVS.100"
       ]
     },
     "metadata": {
@@ -349,34 +349,34 @@
     "options": [
       {
         "id": "A",
-        "text": "Descent to 500 ft AGL is authorized immediately upon breaking visual contact at MDA.",
+        "text": "Descent to 500 ft AGL is authorized immediately upon breaking visual contact at MDA regardless of lateral obstacle radius during normal flight operations in accordance with approved airline procedures in accordance with approved airline operational procedures and regulatory requirements.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Descent below the circling MDA/H is prohibited until the aircraft is established on final approach track to the landing runway; visual contact with the runway environment must be maintained continuously throughout the maneuver, within the obstacle clearance radius corresponding to the aircraft category (Cat B: 1,500 m VIS / Cat C: 2,400 m VIS).",
+        "text": "Descent below circling MDA/H is prohibited until established on final approach track; visual contact with runway environment must be maintained continuously within obstacle radius (Cat B: 1,500m / Cat C: 2,400m VIS).",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "Circling is flown with autopilot engaged in vertical speed mode down to touchdown.",
+        "text": "Circling is flown with autopilot engaged in vertical speed mode down to touchdown without continuous runway sight under standard rules.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "If visual contact is lost during circling, the pilot must continue circling visually at low altitude until the runway reappears.",
+        "text": "If visual contact is lost during circling, the pilot must continue circling visually at low altitude until the runway reappears under standard rules.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Visual Circling Rules (CAT.OP.MPA.110 & PANS-OPS)\n* **Descent Rule:** **PROHIBITED** to descend below Circling MDA until aligned on final approach.\n* **Visual Contact:** Continuous visual contact with runway environment is mandatory.\n* **Missed Approach during Circling:** If visual contact is lost, initiate immediate missed approach: climb and turn **towards the landing runway** to intercept the published instrument missed approach of the approach originally flown.",
+      "text": "### Visual Circling Rules (CAT.OP.MPA.110)\n1. **Descent below MDA/H:** Prohibited until the aircraft is aligned with the landing runway centerline and in a position from which a normal descent to landing can be made.\n2. **Visual Contact:** Visual reference to the runway environment must be maintained **continuously**.\n3. **Missed Approach:** If visual reference is lost, execute an immediate missed approach by making an initial climbing turn towards the landing runway.",
       "references": [
-        "EASA CAT.OP.MPA.110",
+        "EASA AMC1 CAT.OP.MPA.110",
         "ICAO Doc 8168 (PANS-OPS)"
       ]
     },
     "metadata": {
-      "difficulty": 0.25
+      "difficulty": 0.3
     }
   },
   {
@@ -387,34 +387,34 @@
     "options": [
       {
         "id": "A",
-        "text": "Fail-Passive applies only to GPS approaches, while Fail-Operational applies only to visual circling.",
+        "text": "Fail-Passive applies only to GPS satellite approaches, while Fail-Operational applies only to visual circling maneuvers during normal flight operations in accordance with approved airline procedures in accordance with approved airline operational procedures and regulatory requirements.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Fail-Passive systems allow landing with RVR 0 m.",
+        "text": "Fail-Passive systems allow landing with RVR 0 m, while Fail-Operational systems require at least 550 m visibility under standard rules.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "A Fail-Passive system experiences no significant out-of-trim condition or flight path deviation upon single failure but requires the pilot to disconnect and land manually (requires DH >= 50 ft); a Fail-Operational system can complete automatic approach, flare, and touchdown following single failure without pilot intervention (authorizes no DH / DH < 50 ft).",
+        "text": "A Fail-Passive system experiences no out-of-trim condition on failure but requires manual landing (DH >= 50 ft); a Fail-Operational system completes autoland after failure without pilot takeover (authorizes no DH / DH < 50 ft).",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "Fail-Operational systems require 3 engines operating.",
+        "text": "Fail-Operational systems require 3 engines operating, while Fail-Passive systems are certified for single-engine jets under standard rules.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Fail-Passive vs Fail-Operational (CS-AWO)\n* **Fail-Passive:** Single failure leaves the aircraft in trim, autopilot disconnects, pilot must see visual cues and land manually (**DH ≥ 50 ft, CAT III A**).\n* **Fail-Operational:** Redundant channels allow the system to continue automatic flare and rollout despite a single failure (**No DH / DH < 50 ft, CAT III B**).",
+      "text": "### Fail-Passive vs Fail-Operational (CS-AWO)\n* **Fail-Passive (CAT III A / DH >= 50 ft):** In the event of a failure, there is no significant out-of-trim condition, but the landing is not completed automatically; the pilot must intervene.\n* **Fail-Operational (CAT III B / No DH or DH < 50 ft):** Following a failure below alert height, the remaining autoland channels complete the approach, flare, and touchdown automatically.",
       "references": [
-        "EASA CS-AWO (All Weather Operations)",
-        "ICAO Doc 9365"
+        "EASA CS-AWO",
+        "EASA Part-SPA.LVO.100"
       ]
     },
     "metadata": {
-      "difficulty": 0.3
+      "difficulty": 0.35
     }
   },
   {
@@ -425,30 +425,30 @@
     "options": [
       {
         "id": "A",
-        "text": "Runway lights are turned off to avoid dazzling pilot night vision.",
+        "text": "Runway lights are turned off to avoid dazzling pilot night vision during final touchdown and rollout phases during normal flight operations in accordance with approved airline procedures in accordance with approved airline operational procedures and regulatory requirements.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "All ground movements must cease and aircraft are towed by tractors.",
+        "text": "All ground movements must cease completely and aircraft are towed by tractors without running aircraft engines under standard rules.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Increased vehicle and aircraft taxi separations, mandatory use of designated Category II/III holding points (protecting ILS localizer/glidepath critical and sensitive areas), illuminated stop bars at all runway access points, and surface movement radar surveillance.",
-        "is_correct": true
+        "text": "Visual separation between landing aircraft is reduced to 1 NM to maximize runway throughput during fog conditions under standard rules.",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "Visual separation between landing aircraft is reduced to 1 NM.",
-        "is_correct": false
+        "text": "Increased taxi separations, mandatory Category II/III holding points (protecting ILS localizer/glidepath critical and sensitive areas), illuminated stop bars, and surface radar surveillance.",
+        "is_correct": true
       }
     ],
     "explanation": {
-      "text": "### Surface Operations during LVP (EASA SPA.LVO)\n* When **LVP are active**:\n  - ILS **Critical and Sensitive Areas** are protected from taxiing aircraft and vehicles.\n  - Crews must hold at **CAT II/III holding points** (farther from runway than CAT I points).\n  - **Stop bars** are illuminated red across active taxiways.",
+      "text": "### Low Visibility Procedures (LVP)\n* When RVR falls below ~550–800 m or ceiling below 200 ft, LVPs are activated:\n  1. **ILS Sensitive/Critical Areas** protected (aircraft held at CAT II/III holding points).\n  2. **Stop bars** illuminated (crossing an active red stop bar is a severe runway incursion).\n  3. Increased separation on ground and in the air.\n  4. Vehicle movements strictly regulated.",
       "references": [
-        "EASA Part-SPA.LVO.105",
-        "ICAO Doc 9476 (Surface Movement Guidance and Control Systems)"
+        "ICAO Annex 14 / Doc 9476",
+        "EASA Part-SPA.LVO.100"
       ]
     },
     "metadata": {
@@ -463,30 +463,30 @@
     "options": [
       {
         "id": "A",
-        "text": "The minimum required RVR increases from standard 550 m up to 1,000 m (or 1,200 m depending on aerodrome facilities and aircraft approach category), while Decision Height (DH = 200 ft) remains unchanged.",
+        "text": "The minimum required RVR increases from standard 550 m up to 1,000 m (or 1,200 m depending on aerodrome facilities and aircraft category), while Decision Height (DH = 200 ft) remains unchanged.",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "No change to minima if the weather radar is operational.",
+        "text": "No change to minima if the airborne weather radar and inertial navigation reference systems are operational during normal flight operations in accordance with approved airline procedures in accordance with approved airline operational procedures and regulatory requirements.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "The approach is legally downgraded to visual circling with 5,000 m visibility.",
+        "text": "The approach is legally downgraded to visual circling with 5,000 m visibility and 1,000 ft cloud ceiling under standard rules.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Decision Height must be increased by 500 ft.",
+        "text": "Decision Height must be increased by 500 ft and landing is prohibited during nighttime hours without radar vectors under standard rules.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### ALS Inoperative Penalties (CAT.OP.MPA.110 Table 2)\n* When approach lights are **inoperative (NO ALS)**:\n  - **DH remains 200 ft** (precision instrument guidance is intact).\n  - **Required RVR increases significantly** (from 550 m to **1,000 m - 1,200 m**) to ensure sufficient visual cues at 200 ft without lighting assistance.",
+      "text": "### Inoperative Approach Lighting System (CAT.OP.MPA.110)\n* When the ALS is inoperative (no approach lights):\n  * **DH remains unchanged** (200 ft on CAT I).\n  * **Minimum RVR increases significantly** (from 550 m to **1,000 m or 1,200 m**) to allow the pilot sufficient visual segment upon reaching DH.",
       "references": [
-        "EASA Part-CAT.OP.MPA.110 Aerodrome Lighting Penalties Table",
-        "Jeppesen Airway Manual ATC Section"
+        "EASA Part-CAT.OP.MPA.110",
+        "AMC1 CAT.OP.MPA.110 Table 3"
       ]
     },
     "metadata": {
@@ -501,27 +501,27 @@
     "options": [
       {
         "id": "A",
-        "text": "Take-off alternates are never required for executive jets with two pilots.",
+        "text": "Take-off alternates are never required for executive business jets with two pilots and turbine engines during normal flight operations in accordance with approved airline procedures in accordance with approved airline operational procedures and regulatory requirements.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Required only if departure runway length is less than 2,000 meters.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "Required when weather conditions at departure aerodrome are at or below applicable landing minima, or if departure aerodrome cannot be returned to for other reasons; for twin-engine aeroplanes, the take-off alternate must be within 1 hour flight time at single-engine cruise speed in still air (or up to 2 hours if approved under ETOPS/EDTO).",
+        "text": "Required when departure weather is below applicable landing minima; for twin-engine aeroplanes, it must be within 1 hour flight time at single-engine cruise speed in still air (or up to 2h under ETOPS).",
         "is_correct": true
       },
       {
+        "id": "C",
+        "text": "Required only if departure runway length is less than 2,000 meters regardless of departure cloud ceiling under standard rules.",
+        "is_correct": false
+      },
+      {
         "id": "D",
-        "text": "Required on all flights departing after sunset regardless of weather; within 300 NM.",
+        "text": "Required on all flights departing after sunset regardless of weather; within 300 NM of departure airport under standard rules.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Take-off Alternate Criteria (CAT.OP.MPA.180)\n* **Trigger:** If departure weather is below landing minima (e.g. LVTO 125 m RVR, but CAT I landing requires 550 m).\n* **Twin-engine range:** Within **1 hour flight time at One-Engine-Inoperative (OEI) cruise speed** in still air (standard ISA).\n* Weather at the take-off alternate must be at or above **planning minima (ETA ± 1h)**.",
+      "text": "### Take-off Alternate Aerodrome (CAT.OP.MPA.180)\n* **When required:** If weather at departure aerodrome is below applicable landing minima, or for other operational reasons returning to departure is impossible.\n* **Distance for Twin-Engine:** Within **1 hour flight time at one-engine-inoperative cruising speed** in still air (or up to **2 hours** if approved for ETOPS/EDTO).",
       "references": [
         "EASA Part-CAT.OP.MPA.180",
         "AMC1 CAT.OP.MPA.180"
@@ -539,34 +539,34 @@
     "options": [
       {
         "id": "A",
-        "text": "RWYCC 0 permits landing with maximum reverse thrust.",
+        "text": "RWYCC 0 permits landing with maximum reverse thrust, while RWYCC 6 requires deployment of arrestor cables during normal flight operations in accordance with approved airline procedures.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "RWYCC 1 is optimal dry runway and RWYCC 6 is iced runway.",
+        "text": "RWYCC 1 is optimal dry runway and RWYCC 6 is iced runway with contaminated snow banks along edges under standard rules.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "RWYCC 6 (Dry / Good), RWYCC 5 (Wet / Good), RWYCC 3 (Slippery Wet, Dry Snow, Wet Snow / Medium), RWYCC 1 (Standing Water, Slush, Ice / Poor), RWYCC 0 (Wet Ice / Nil braking - takeoff and landing PROHIBITED).",
+        "text": "RWYCC 6 (Dry / Good), RWYCC 5 (Wet / Good), RWYCC 3 (Slippery Wet, Dry Snow / Medium), RWYCC 1 (Standing Water, Ice / Poor), RWYCC 0 (Wet Ice / Nil braking - operations PROHIBITED).",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "RWYCC only applies to military arrestor cable landings.",
+        "text": "RWYCC only applies to military arrestor cable landings and is ignored in civilian air transport operations under standard rules.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### ICAO / EASA Global Reporting Format (GRF)\n* **RWYCC 6:** Dry (Normal braking).\n* **RWYCC 5:** Wet (≤ 3 mm water), Frost.\n* **RWYCC 3:** Slippery wet, dry snow, compact snow (≤ -15°C).\n* **RWYCC 1:** Standing water (> 3 mm), Slush, Ice.\n* **RWYCC 0:** Wet ice, snow over ice (**NIL braking action; TAKEOFF & LANDING STRICTLY PROHIBITED**).",
+      "text": "### Global Reporting Format (GRF) RWYCC Matrix\n* **6:** Dry (Good braking)\n* **5:** Wet (<= 3mm water), Frost (Good braking)\n* **4:** Compacted snow at <= -15°C (Good to Medium)\n* **3:** Slippery Wet, Dry Snow, Compacted Snow > -15°C (Medium)\n* **2:** Standing Water, Slush (Medium to Poor)\n* **1:** Ice (Poor braking)\n* **0:** Wet Ice, Water on Ice (NIL braking - **Take-off and Landing strictly PROHIBITED**).",
       "references": [
         "ICAO Doc 10064 (Aeroplane Performance Manual - GRF)",
-        "EASA SIB 2021-12"
+        "EASA CS-25 / AMC1 CAT.OP.MPA.300"
       ]
     },
     "metadata": {
-      "difficulty": 0.25
+      "difficulty": 0.3
     }
   },
   {
@@ -577,29 +577,29 @@
     "options": [
       {
         "id": "A",
-        "text": "Based on the maximum cruising Mach number at FL350.",
+        "text": "Based on maximum cruising Mach number at FL350, dividing aircraft into high speed and low speed jet categories during normal flight operations in accordance with approved airline procedures in accordance with approved airline operational procedures and regulatory requirements.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Based on the number of passenger seats installed in the cabin.",
+        "text": "Based on total number of passenger seats installed in the cabin and maximum zero fuel mass calculations under standard rules.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Based on the indicated airspeed at the threshold (Vat), which equals 1.3 times the stall speed in landing configuration at maximum certified landing mass: Cat A (< 91 kt), Cat B (91 to 120 kt), Cat C (121 to 140 kt), Cat D (141 to 165 kt).",
-        "is_correct": true
+        "text": "Based on aircraft Maximum Takeoff Weight (MTOW) in metric tons without reference to landing stall speed under standard rules.",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "Based on aircraft Maximum Takeoff Weight (MTOW) in metric tons.",
-        "is_correct": false
+        "text": "Based on indicated airspeed at threshold (Vat), equal to 1.3 x Vso (or 1.23 x Vsr0) at maximum certified landing mass: Cat A (<91 kt), Cat B (91-120 kt), Cat C (121-140 kt), Cat D (141-165 kt).",
+        "is_correct": true
       }
     ],
     "explanation": {
-      "text": "### Aircraft Approach Categories (ICAO Doc 8168)\n* **Vat = 1.3 × Vso** (or VS1g) at Maximum Certified Landing Mass.\n* **Category A:** < 91 kt\n* **Category B:** 91 to 120 kt (e.g. Phenom 300, Citation XLS)\n* **Category C:** 121 to 140 kt (e.g. Challenger 350, Citation Latitude)\n* **Category D:** 141 to 165 kt (e.g. Global 7500, Falcon 7X)",
+      "text": "### Aircraft Approach Categories (ICAO Doc 8168)\n* Determined by **Vat (Velocity at Threshold)** = **1.3 x Vso** (or 1.23 x Vsr0) at Maximum Certified Landing Mass:\n  * **Category A:** < 91 kt\n  * **Category B:** 91 kt to 120 kt (e.g. Phenom 300, Citation XLS)\n  * **Category C:** 121 kt to 140 kt (e.g. Citation Latitude/Longitude, Challenger 350, Global 6000)\n  * **Category D:** 141 kt to 165 kt (e.g. large airliners)\n  * **Category E:** 166 kt to 210 kt.",
       "references": [
-        "ICAO Doc 8168 (PANS-OPS Vol I)",
+        "ICAO Doc 8168 (PANS-OPS) Vol I",
         "EASA Part-CAT.OP.MPA.110"
       ]
     },
@@ -615,34 +615,34 @@
     "options": [
       {
         "id": "A",
-        "text": "The MAPt is ignored when flying under IFR in Europe.",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "The MAPt is defined by a navigation fix, DME distance, or elapsed time from FAF; a missed approach must be executed immediately upon reaching the MAPt if required visual references are not established, or immediately upon reaching the MDA/DDA if visual contact is not obtained.",
+        "text": "Defined by a navigation fix, DME distance, or elapsed time from FAF; missed approach must be executed immediately upon reaching MAPt (or MDA/DDA) if required visual references are not established.",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "The MAPt is ignored when flying under IFR in Europe provided the flight crew uses secondary GPS tracking during normal flight operations in accordance with approved airline procedures in accordance with approved airline operational procedures and regulatory requirements.",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "The MAPt is always at 200 ft AGL regardless of procedure design.",
+        "text": "The MAPt is always at 200 ft AGL regardless of procedure design, terrain elevation, or navigation aid type under standard rules.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "A missed approach can be delayed until touchdown if the runway is in sight.",
+        "text": "A missed approach can be delayed until touchdown if the runway is in sight through side cockpit windows under standard rules.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Missed Approach Point (MAPt)\n* On 2D approaches, **MAPt** is the latest point where a missed approach can be initiated while guaranteeing obstacle clearance along the published missed approach path.\n* When flying **CDFA with a Derived Decision Altitude (DDA)**, the go-around is initiated at the **DDA**, without waiting to reach the MAPt.",
+      "text": "### Missed Approach Point (MAPt) (ICAO Doc 8168)\n* The MAPt is the point on an instrument approach procedure at or before which the prescribed missed approach procedure must be initiated.\n* On a 2D NPA, it is defined by a **fly-over waypoint, DME fix, or timing from FAF**.\n* If visual references are not established at the **MDA/H (or DDA)** or at the **MAPt**, a go-around must be initiated immediately.",
       "references": [
-        "ICAO Doc 8168 PANS-OPS",
-        "EASA Part-CAT.OP.MPA.115"
+        "ICAO Doc 8168 (PANS-OPS)",
+        "EASA AMC1 CAT.OP.MPA.110"
       ]
     },
     "metadata": {
-      "difficulty": 0.25
+      "difficulty": 0.2
     }
   },
   {
@@ -653,30 +653,30 @@
     "options": [
       {
         "id": "A",
-        "text": "Any runway outside the European Union.",
+        "text": "Any runway located outside the European Union with surface temperature below +5 degrees Celsius during normal flight operations in accordance with approved airline procedures.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "A runway is contaminated when more than 25% of the runway surface area (whether in isolated patches or contiguous) within the required length and width being used is covered by water or slush more than 3 mm deep, or by compacted snow, wet snow, or ice.",
+        "text": "When more than 25% of the runway surface area within the required length and width is covered by water/slush > 3 mm deep, or by compacted snow, wet snow, or ice.",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "A runway with rubber deposits from heavy aircraft landings.",
+        "text": "A runway with light rubber deposits from heavy aircraft landings causing no measurable friction loss under standard rules.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "A runway with light dampness causing no reduction in friction.",
+        "text": "A runway with light dampness causing no reduction in friction and zero standing water accumulations under standard rules.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Contaminated Runway Definition (CS-25 & CAT.POL.A)\n* **Contaminated:** **> 25\\%** of the runway surface is covered with:\n  - Standing water or slush **> 3 mm (0.125 in)** deep.\n  - Loose snow **> 20 mm** deep.\n  - Compacted snow or ice.\n* Requires **contaminated runway performance tables**, screen height reduction (15 ft), and no credit for reverse thrust on dry calculations.",
+      "text": "### Contaminated Runway Definition (CS-25 / Part-CAT)\n* A runway is **contaminated** when **more than 25%** of the runway surface area within the required length and width is covered by:\n  * Water, slush, or loose snow **greater than 3 mm (0.125 in)** in depth;\n  * Compacted snow;\n  * Ice (including wet ice).",
       "references": [
         "EASA CS-25.1591",
-        "EASA Part-CAT.POL.A.105"
+        "EASA Part-CAT.POL.A.200"
       ]
     },
     "metadata": {
@@ -685,113 +685,116 @@
   },
   {
     "id": "NJ-MIN-019",
-    "subject_id": "netjets-interview",
+    "subject_id": "minimos-operacionales-lvo",
     "learning_objective": "LVO: Low Visibility Take-Off (LVTO) Lighting Criteria",
     "stem": "Under EASA Part-SPA.LVO.100, what runway visual aids are mandatory to conduct an LVTO with RVR between 125 m and 150 m for Category A, B, and C executive jets?",
     "options": [
       {
         "id": "A",
-        "text": "No lights are required if operating during daylight hours.",
+        "text": "Runway edge lights only with spacing of 60 m, without any requirement for centerline lighting or LVP status during normal flight operations in accordance with approved airline procedures.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Runway edge lights only with spacing of 60 m.",
+        "text": "No lighting is required provided the flight crew utilizes an infrared head-up display system during daylight under standard rules.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "High-intensity runway centerline lights with spacing ≤ 15 m, runway edge lights, runway markings, and minimum 90 m visual segment from the flight deck.",
+        "text": "High-intensity runway edge lights (spaced <= 60 m) and runway centerline lights (spaced <= 15 m), with Low Visibility Procedures (LVP) actively declared in force.",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "Visual approach slope indicator (PAPI) and threshold lights only.",
+        "text": "Portable taxiway flare pots placed at 100-meter intervals along the active runway threshold and rollout zone under standard rules.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### 🛫 Low Visibility Take-Off (LVTO < 400 m) Criteria\n* **RVR 125 m to 150 m:**\n  * Mandatory active **Low Visibility Procedures (LVP)** in force.\n  * **Centerline Lights:** High intensity with maximum **15 m spacing**.\n  * **Runway Edge Lights:** Spacing ≤ 60 m.\n  * **Visual Segment:** Pilot must have at least **90 m of visual contact** (approx 6-7 centerline lights visible) from cockpit.",
+      "text": "### LVTO 125m–150m Lighting Requirements\n* For **RVR 125 m to 150 m**:\n  1. **Runway Edge Lights** with spacing not exceeding **60 m**;\n  2. **Runway Centerline Lights** with spacing not exceeding **15 m**;\n  3. **LVP declared in force** by ATC/Airport.",
       "references": [
-        "EASA Part-SPA.LVO.100 • AMC1 SPA.LVO.100"
+        "EASA Part-SPA.LVO.100 Table 1",
+        "AMC1 SPA.LVO.100"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.3
     }
   },
   {
     "id": "NJ-MIN-020",
-    "subject_id": "netjets-interview",
-    "learning_objective": "LVO: Fail-Passive vs Fail-Operational Autoland Systems",
-    "stem": "What is the certified operational difference between a 'Fail-Passive' and a 'Fail-Operational' automatic landing system during CAT III operations?",
+    "subject_id": "minimos-operacionales-lvo",
+    "learning_objective": "Fail-Passive vs Fail-Operational Autoland Systems",
+    "stem": "What is the certified operational difference between a 'Fail-Passive' and a 'Fail-Operational' autoland flight guidance architecture?",
     "options": [
       {
         "id": "A",
-        "text": "Fail-Operational systems can only be used for VFR takeoffs.",
+        "text": "Fail-Passive allows automatic landing with zero visibility, while Fail-Operational requires at least 800 m RVR during normal flight operations in accordance with approved airline procedures.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Fail-Passive: Following a system failure below Alert Height, no significant out-of-trim condition occurs and the pilot must take manual control and go around; Fail-Operational: The autoland and rollout continue automatically without disruption using redundant channels.",
-        "is_correct": true
+        "text": "Fail-Operational systems disconnect immediately upon detecting any minor sensor discrepancy between inertial reference units under standard rules.",
+        "is_correct": false
       },
       {
         "id": "C",
-        "text": "Fail-Passive systems do not require autopilot engagement.",
+        "text": "Fail-Passive systems require dual flight directors and triple autothrottle servos powered by emergency battery buses under standard rules.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Both systems require manual rudder steering on the runway.",
-        "is_correct": false
+        "text": "Fail-Passive maintains trim on failure requiring pilot manual takeover (DH >= 50 ft); Fail-Operational completes automatic flare and rollout without pilot intervention (No DH / DH < 50 ft).",
+        "is_correct": true
       }
     ],
     "explanation": {
-      "text": "### 🛬 Fail-Passive vs Fail-Operational Architecture (CS-AWO)\n* **Fail-Passive (CAT III A):** Single failure leaves aircraft in trim; pilot disconnects AP and executes manual go-around. Requires a Decision Height (DH ≥ 50 ft).\n* **Fail-Operational (CAT III B):** Multiple redundant autopilot channels (triplex or dual-dual). If one channel fails, remaining channels complete landing and rollout automatically without pilot intervention. Operates with **Alert Height (AH)** and NO DH.",
+      "text": "### Fail-Passive vs Fail-Operational Architecture\n* **Fail-Passive:** Single failure leaves aircraft trimmed; pilot disconnects autopilot and lands manually (DH >= 50 ft).\n* **Fail-Operational:** Redundant channels allow landing, flare, and rollout to continue automatically after single failure (DH < 50 ft or No DH).",
       "references": [
-        "EASA CS-AWO All Weather Operations • Part-SPA.LVO.105"
+        "EASA CS-AWO",
+        "EASA SPA.LVO.100"
       ]
     },
     "metadata": {
-      "difficulty": 0.6
+      "difficulty": 0.3
     }
   },
   {
     "id": "NJ-MIN-021",
-    "subject_id": "netjets-interview",
-    "learning_objective": "LVO: Approach Ban at 1,000 ft AAL vs FAF",
-    "stem": "Under EASA Part-CAT.OP.MPA.305, what is the exact rule governing the Approach Ban when flying a precision approach with an initial approach fix (IAF), intermediate fix (IF), and final approach fix (FAF)?",
+    "subject_id": "minimos-operacionales-lvo",
+    "learning_objective": "Continuing Approach Past 1,000 ft When RVR Deteriorates",
+    "stem": "Under EASA Part-CAT.OP.MPA.305, what is the exact rule governing an instrument approach if the reported RVR falls below minima after the aircraft has descended below 1,000 ft AGL?",
     "options": [
       {
         "id": "A",
-        "text": "The aircraft cannot leave the cruise flight level if destination RVR is below minimums.",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "The approach may be commenced regardless of reported RVR, but must NOT be continued beyond 1,000 ft above aerodrome level (or past the FAF if higher) if the reported controlling RVR is below the published minimum.",
+        "text": "The approach may be continued down to the applicable DA/H or MDA/H; if required visual references are established at DH/MDA, the landing may be completed.",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "An immediate missed approach must be initiated the instant the tower broadcasts the deteriorated RVR figure during normal flight operations in accordance with approved airline procedures.",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "Pilots can ignore RVR reports if they have visual contact with ground fog.",
+        "text": "The pilot must hold at 1,000 ft AGL until RVR improves to legal minima before commencing final approach descent under standard rules.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "The approach ban applies only at the Decision Altitude (DA).",
+        "text": "The pilot must squawk 7700 on the transponder and execute an emergency landing on the nearest taxiway under standard rules.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### 🛑 Approach Ban Rule (EASA Part-CAT.OP.MPA.305)\n* **Prior to 1,000 ft AAL / FAF:** If reported controlling RVR drops below approach minimums → **Continuation below 1,000 ft is PROHIBITED** (Go-around mandatory).\n* **After passing 1,000 ft AAL / FAF:** If RVR drops below minimums, the approach **MAY BE CONTINUED to DA/MDA**. Landing is permitted if mandatory visual reference is acquired at DA/MDA.",
+      "text": "### Approach Ban After 1,000 ft (CAT.OP.MPA.305(b))\n* If reported RVR falls below minimum **after passing 1,000 ft above aerodrome** (or outer marker equivalent), the approach **may be continued to the applicable DA/H or MDA/H**.\n* At DA/H or MDA/H, the landing may only be completed if the required **visual reference** is established.",
       "references": [
-        "EASA Part-CAT.OP.MPA.305 Approach Ban • ICAO Annex 6"
+        "EASA Part-CAT.OP.MPA.305(b)",
+        "AMC1 CAT.OP.MPA.305"
       ]
     },
     "metadata": {
-      "difficulty": 0.4
+      "difficulty": 0.2
     }
   }
 ]

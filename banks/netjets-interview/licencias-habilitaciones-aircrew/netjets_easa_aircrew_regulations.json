@@ -2,35 +2,35 @@
   {
     "id": "NJ-CREW-001",
     "subject_id": "licencias-habilitaciones-aircrew",
-    "learning_objective": "Class 1 Medical Certificate Validity Periods (MED.A.045)",
-    "stem": "Under EASA Part-MED (MED.A.045), what are the standard validity periods for a Class 1 Medical Certificate based on pilot age and operational category?",
+    "learning_objective": "EASA Part-FCL - ATPL(A) Minimum Flight Experience",
+    "stem": "Under EASA Part-FCL.510.A, what is the minimum total flight time required for the issuance of an Airline Transport Pilot Licence for aeroplanes [ATPL(A)]?",
     "options": [
       {
         "id": "A",
-        "text": "24 months for all pilots regardless of age or operation.",
-        "is_correct": false
+        "text": "1,500 hours of total flight time, including at least 500 hours in multi-pilot operations and 250 hours as Pilot-in-Command (or 500h PICUS).",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "5 years for First Officers and 1 year for Captains.",
+        "text": "1,000 hours of total flight time, including at least 200 hours of instrument time and 100 hours of solo cross-country navigation.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "12 months for pilots under 40; 12 months for pilots aged 40 to 59 in multi-pilot commercial operations (reduced to 6 months for single-pilot operations carrying passengers); 6 months for all pilots aged 60 and older in commercial air transport (CAT).",
-        "is_correct": true
+        "text": "2,000 hours of total flight time, with a minimum of 1,000 hours as Commander on heavy wide-body transport category aircraft.",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "6 months for all pilots from initial issue onwards.",
+        "text": "750 hours of total flight time, provided all training was completed in a certified integrated Multi-Crew Pilot Licence (MPL) cour.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Class 1 Medical Validity (Part-MED.A.045)\n* **Under 40 years:** **12 months**.\n* **40 to 59 years:**\n  - Multi-pilot CAT (e.g. NetJets): **12 months**.\n  - Single-pilot CAT with passengers: **6 months**.\n* **60 years and older:** **6 months** for all commercial operations.\n* Revalidation examination can be completed within **45 days** before the expiry date without losing the original anniversary date.",
+      "text": "### EASA ATPL(A) Experience Requirements (FCL.510.A)\nApplicants for an ATPL(A) must have completed a minimum of **1,500 hours** of flight time in aeroplanes, including:\n* **500 hours** in multi-pilot operations;\n* **250 hours** as PIC (or at least 100h PIC and 400h PICUS);\n* **200 hours** of cross-country flight time (100h as PIC/PICUS);\n* **75 hours** of instrument time (max 30h FNPT II/FFS);\n* **100 hours** of night flight time as PIC or co-pilot.",
       "references": [
-        "EASA Part-MED.A.045 (Validity of Medical Certificates)",
-        "ICAO Annex 1 (Personnel Licensing)"
+        "EASA Part-FCL.510.A",
+        "AMC1 FCL.510.A"
       ]
     },
     "metadata": {
@@ -40,73 +40,73 @@
   {
     "id": "NJ-CREW-002",
     "subject_id": "licencias-habilitaciones-aircrew",
-    "learning_objective": "Age 60-64 and Age 65 Limitations in CAT (FCL.065)",
-    "stem": "What operational limitations apply to commercial pilots aged 60 to 64 and aged 65 under EASA Part-FCL (FCL.065)?",
+    "learning_objective": "Type Rating Validity and Revalidation (FCL.740)",
+    "stem": "What is the validity period of a multi-engine type rating under EASA Part-FCL, and within what window may it be revalidated by proficiency check?",
     "options": [
       {
         "id": "A",
-        "text": "Age 65 limitation applies only to cargo operations, not executive passenger charters.",
+        "text": "Valid for 2 years (24 months); revalidation can be conducted within 6 months prior to expiry with no loss of calendar validity.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Both pilots may be 64 years old if they fly during daytime VMC.",
-        "is_correct": false
+        "text": "Valid for 1 year (12 months); revalidation proficiency check can be conducted within the 3 months immediately preceding the expiry date.",
+        "is_correct": true
       },
       {
         "id": "C",
-        "text": "Captains must step down to First Officer at age 55 in Europe.",
+        "text": "Valid for 6 months; revalidation must be conducted exactly 30 days prior to the expiration date in a Level D simulator.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "A pilot aged 60 to 64 may only act as a flight crew member in commercial air transport (CAT) if part of a multi-pilot crew and the OTHER pilot is under age 60; at age 65, pilots are strictly prohibited from acting as flight crew in commercial air transport.",
-        "is_correct": true
+        "text": "Valid indefinitely provided the pilot logs at least 10 takeoff and landing sectors every 90 days on the specific aircraft type.",
+        "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Age 60/65 Rules (Part-FCL.065)\n* **Age 60 to 64:** Allowed in CAT **only as a member of a multi-pilot crew**, provided that the **other pilot is under age 60** (*'Only one pilot over 60'* rule).\n* **Age 65:** Upon reaching age 65, the pilot **cannot act as PIC or co-pilot in commercial air transport (CAT)**. The pilot may still fly private non-commercial operations (Part-NCC / NCO), flight instruction, or ferry flights.",
+      "text": "### Type Rating Validity & Revalidation (FCL.740)\n* **Validity:** **1 year (12 calendar months)** from the end of the month of the proficiency check.\n* **Revalidation Window:** If completed within the **3 months preceding the expiry date**, the new validity runs for 1 year from the previous expiry date.",
       "references": [
-        "EASA Part-FCL.065 (Curtailment of privileges of licence holders aged 60 and older)",
-        "ICAO Annex 1 Chapter 2"
+        "EASA Part-FCL.740.A",
+        "AMC1 FCL.740.A"
       ]
     },
     "metadata": {
-      "difficulty": 0.25
+      "difficulty": 0.2
     }
   },
   {
     "id": "NJ-CREW-003",
     "subject_id": "licencias-habilitaciones-aircrew",
-    "learning_objective": "Recent Experience Requirements (90-Day Recency, FCL.060)",
-    "stem": "What is the mandatory recent experience requirement under EASA Part-FCL.060 for a pilot to operate as Pilot Flying (PF) on a commercial passenger flight?",
+    "learning_objective": "Class 1 Medical Examination Validity (Part-MED)",
+    "stem": "What is the validity period of an EASA Class 1 Medical Certificate for commercial pilots under 40 years old vs pilots aged 40 and older in single-pilot operations?",
     "options": [
       {
         "id": "A",
-        "text": "Must have flown at least 10 hours in the previous 30 days on any multi-engine aircraft.",
+        "text": "24 months for pilots under 40; reduced to 12 months for pilots over 40 regardless of crew composition or commercial operation type.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Must have completed an annual line check within the past 6 months.",
+        "text": "6 months for all commercial pilots regardless of age, expanding to 12 months only for non-commercial private flying under standard conditions.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Must have carried out at least 3 take-offs, approaches, and landings within the preceding 90 days as Pilot Flying (PF) on the same aircraft type/class or in a qualified Full Flight Simulator (FFS) representing that type; for night flights, at least 1 landing must have been at night unless holding a valid Instrument Rating (IR).",
+        "text": "12 months for pilots under 40 (and pilots 40-59 in multi-pilot commercial operations); reduced to 6 months for single-pilot ops over 40 or any ops over 60.",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "5 touch-and-goes every 180 days under VFR.",
+        "text": "60 months for pilots under 30; reduced to 24 months for pilots over 50 and 12 months for pilots over 65 in commercial transport under standard conditions.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### 90-Day Recency (Part-FCL.060)\n* **Standard Requirement:** At least **3 take-offs, approaches, and landings as Pilot Flying (PF)** within the **preceding 90 days** on the type or in a Level D Full Flight Simulator.\n* **Night Recency:** For night passenger flights, at least **1 night landing in 90 days** (if the pilot holds a valid Instrument Rating, the night landing requirement is considered satisfied).",
+      "text": "### Class 1 Medical Validity (Part-MED.A.045)\n* **Under 40 years:** Valid for **12 months**.\n* **40–59 years (Multi-Pilot Commercial CAT):** Valid for **12 months**.\n* **40+ years (Single-Pilot Commercial CAT with passengers):** Valid for **6 months**.\n* **60+ years (All Commercial CAT):** Valid for **6 months**.",
       "references": [
-        "EASA Part-FCL.060 (Recent experience)",
-        "EASA Part-ORO.FC.100"
+        "EASA Part-MED.A.045",
+        "AMC1 MED.A.045"
       ]
     },
     "metadata": {
@@ -116,35 +116,35 @@
   {
     "id": "NJ-CREW-004",
     "subject_id": "licencias-habilitaciones-aircrew",
-    "learning_objective": "Type Rating Validity and Revalidation Window (FCL.740)",
-    "stem": "What is the validity period of an aircraft Type Rating under EASA Part-FCL and within what timeframe before expiry should the Licence Proficiency Check (LPC) be completed?",
+    "learning_objective": "Recent Experience 90-Day Rule (FCL.060)",
+    "stem": "What recent flight experience is mandatory under EASA Part-FCL.060 for a pilot to act as Pilot Flying (PF) on a commercial passenger transport flight?",
     "options": [
       {
         "id": "A",
-        "text": "Valid indefinitely provided medical is current.",
+        "text": "At least 10 line sectors and 1 instrument approach within the preceding 60 days on any turbine aircraft type across all applicable operational flight phases.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Valid for 1 year (12 calendar months); revalidation proficiency check (LPC) must be completed within the 3 months immediately preceding the expiry date, preserving the original annual anniversary date.",
-        "is_correct": true
+        "text": "At least 5 take-offs and landings at night within the preceding 30 days regardless of day flight recency under standard rules.",
+        "is_correct": false
       },
       {
         "id": "C",
-        "text": "Valid for 2 years (24 calendar months); revalidation within 30 days.",
+        "text": "At least 1 recurrent simulator check within the preceding 45 days in a certified Level D flight training device under standard rules.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Valid for 5 years subject to continuous line flying.",
-        "is_correct": false
+        "text": "At least 3 take-offs, approaches and landings within the preceding 90 days on the same type/class (or in an approved FFS).",
+        "is_correct": true
       }
     ],
     "explanation": {
-      "text": "### Type Rating Validity & Revalidation (FCL.740)\n* **Validity:** **12 calendar months**.\n* **Revalidation Window:** A Licence Proficiency Check (LPC) taken within the **3 months preceding the expiry date** revalidates the rating until 12 months from the **original expiration date** (preserving the month).",
+      "text": "### 90-Day Recency Rule (FCL.060)\n* A pilot shall not operate as PIC or co-pilot carrying passengers unless they have carried out in the preceding **90 days** at least **3 take-offs, approaches and landings** as Pilot Flying on the same type/class or in an approved FFS.\n* For **night operations as PIC**, at least 1 of the 3 landings must be at night (unless holding an IR).",
       "references": [
-        "EASA Part-FCL.740 (Validity and renewal of class and type ratings)",
-        "AMC1 FCL.740"
+        "EASA Part-FCL.060",
+        "AMC1 FCL.060"
       ]
     },
     "metadata": {
@@ -154,34 +154,34 @@
   {
     "id": "NJ-CREW-005",
     "subject_id": "licencias-habilitaciones-aircrew",
-    "learning_objective": "Operator Proficiency Check (OPC) vs Line Check (ORO.FC.230)",
-    "stem": "Under EASA Part-ORO.FC.230, what are the mandatory frequencies for the Operator Proficiency Check (OPC) and the Annual Line Check?",
+    "learning_objective": "Operator Proficiency Check (OPC) vs License Proficiency Check (LPC)",
+    "stem": "Under EASA Part-ORO.FC.230, what is the validity period and required interval for Operator Proficiency Checks (OPC) and Line Checks?",
     "options": [
       {
         "id": "A",
-        "text": "Line check is required only for Captains, not First Officers.",
-        "is_correct": false
+        "text": "OPC is valid for 6 calendar months (two checks per year); Line Check is valid for 12 calendar months (conducted on real line routes).",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "OPC every 12 months; Line Check every 24 months.",
+        "text": "OPC is valid for 12 calendar months; Line Check is valid for 24 calendar months and can be substituted by simulator sessions across all applicable operational flight phases.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Both checks are conducted simultaneously every 3 months.",
+        "text": "OPC is valid for 3 calendar months; Line Check is valid for 6 calendar months and must be conducted by civil authority inspectors.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Operator Proficiency Check (OPC) every 6 calendar months (covering abnormal and emergency procedures in FFS); Line Check every 12 calendar months (conducted during a normal commercial line flight).",
-        "is_correct": true
+        "text": "OPC is valid indefinitely under continuous line flying; Line Check is required only upon initial command upgrade transition under standard rules.",
+        "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Operator Checks (ORO.FC.230)\n* **Operator Proficiency Check (OPC):** Conducted in a Level D simulator every **6 calendar months** to evaluate handling of aircraft systems failures, emergency memory items, single-engine operations, and CRM.\n* **Line Check:** Conducted on a real flight every **12 calendar months** to evaluate line operating procedures, SOP compliance, airspace management, and customer interface.",
+      "text": "### OPC and Line Check Requirements (ORO.FC.230)\n* **Operator Proficiency Check (OPC):** Valid for **6 calendar months** (operators conduct two simulator checks per year, often combining one with the annual LPC).\n* **Line Check:** Valid for **12 calendar months**, verifying normal line operations under commercial conditions.",
       "references": [
-        "EASA Part-ORO.FC.230 (Recurrent training and checking)",
+        "EASA Part-ORO.FC.230",
         "AMC1 ORO.FC.230"
       ]
     },
@@ -192,73 +192,73 @@
   {
     "id": "NJ-CREW-006",
     "subject_id": "licencias-habilitaciones-aircrew",
-    "learning_objective": "Mandatory Medical Notification (MED.A.020)",
-    "stem": "Under EASA Part-MED.A.020, what medical events require a pilot to suspend their flight privileges and notify their Aero-Medical Examiner (AME) in writing without undue delay?",
+    "learning_objective": "Age 65 Limitation in Commercial Air Transport",
+    "stem": "Under EASA Part-FCL.065, what operational limitation applies to a pilot who has attained the age of 60 in commercial air transport operations?",
     "options": [
       {
         "id": "A",
-        "text": "Only permanent loss of consciousness exceeding 48 hours.",
+        "text": "At age 60, the pilot is immediately restricted to domestic VFR operations only, and all night flying privileges are revoked across all applicable operational flight phases.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Dental routine cleanings without anesthesia.",
-        "is_correct": false
+        "text": "Between age 60 and 64, the pilot may only fly in multi-pilot crews where the other pilot is under age 60; at age 65, commercial CAT flying is prohibited.",
+        "is_correct": true
       },
       {
         "id": "C",
-        "text": "Common seasonal colds lasting less than 3 days.",
+        "text": "Between age 60 and 65, the pilot may fly as single-pilot Commander provided they complete monthly medical evaluations under standard rules.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Any surgical operation or invasive procedure, any significant personal injury involving incapacity for more than 21 days, pregnancy, hospital admission, or the regular initiation of any prescribed medication.",
-        "is_correct": true
+        "text": "Pilots can continue flying commercial passenger CAT without any age restrictions provided their Class 1 medical is valid under standard rules.",
+        "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Decrease in Medical Fitness (Part-MED.A.020)\n* Licence holders must not exercise licence privileges and **MUST notify an AME** without delay upon:\n  1. Any **surgical operation or invasive procedure**.\n  2. Any illness or injury involving **incapacity of > 21 days**.\n  3. Being confirmed **pregnant**.\n  4. Any **hospital admission**.\n  5. Requiring the regular use of any **prescribed medication**.",
+      "text": "### Age 60/65 Limitations (FCL.065)\n* **Age 60–64:** May act as pilot in commercial air transport **only as a member of a multi-pilot crew** and provided that **the other pilot is under the age of 60**.\n* **Age 65:** The holder of a pilot licence shall **not act as a pilot in commercial air transport (CAT)** operations.",
       "references": [
-        "EASA Part-MED.A.020 (Decrease in medical fitness)",
-        "EASA Medical Guidance Material"
+        "EASA Part-FCL.065",
+        "ICAO Annex 1"
       ]
     },
     "metadata": {
-      "difficulty": 0.25
+      "difficulty": 0.2
     }
   },
   {
     "id": "NJ-CREW-007",
     "subject_id": "licencias-habilitaciones-aircrew",
-    "learning_objective": "Quick-Donning Oxygen Masks Requirement (CAT.IDE.A.235)",
-    "stem": "What is the technical certification and operational requirement for 'Quick-Donning' flight crew oxygen masks on pressurised aeroplanes operating above FL250?",
+    "learning_objective": "UPRT (Upset Prevention and Recovery Training) Mandatory Rule",
+    "stem": "Under EASA Part-FCL.725.A and FCL.745.A, what is the mandatory requirement for Advanced UPRT for pilots undertaking their first multi-pilot type rating?",
     "options": [
       {
         "id": "A",
-        "text": "The mask must be stored in the rear baggage compartment with 15 minutes of chemical candle oxygen.",
+        "text": "Completion of 10 hours of solo aerobatic flight in an experimental category biplane without theoretical ground school across all applicable operational flight phases during normal flight operations.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "The mask must be capable of being placed on the face and fully secured with one hand from the ready position in less than 5 seconds, providing immediate oxygen supply without displacing eyeglasses or preventing interphone communication.",
-        "is_correct": true
-      },
-      {
-        "id": "C",
-        "text": "The mask can take up to 30 seconds to don if the copilot is flying.",
+        "text": "Conducting 20 spins in a flight simulator without any requirement for real aeroplane flight training modules under standard rules.",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Completion of an Advanced UPRT course according to FCL.745.A (comprising at least 5 hours of theoretical knowledge and 3 hours of on-aeroplane flight instruction).",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "The mask must be permanently worn by both pilots whenever cruising above FL100.",
+        "text": "Passing an oral aerodynamics exam with the national civil aviation authority during initial instrument rating check under standard rules.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Quick-Donning Oxygen Mask Standards (CAT.IDE.A.235 & CS-25)\n* On pressurized aeroplanes operating **above FL250**, each flight crew member station must have a **Quick-Donning Oxygen Mask**.\n* **Standard:** Must be donned and supplying oxygen in **≤ 5 seconds with ONE HAND**, accommodating corrective glasses, and connecting automatically to the aircraft interphone.",
+      "text": "### Advanced UPRT (FCL.745.A)\n* Mandatory before commencing the **first multi-pilot type rating course** or single-pilot high performance complex aeroplane type rating.\n* Course content: **5 hours of theoretical ground instruction** and **3 hours of flight instruction on an aeroplane** certified for aerobatics/UPRT.",
       "references": [
-        "EASA Part-CAT.IDE.A.235 (Supplemental oxygen - pressurised aeroplanes)",
-        "CS-25.1447"
+        "EASA Part-FCL.745.A",
+        "AMC1 FCL.745.A"
       ]
     },
     "metadata": {
@@ -268,111 +268,111 @@
   {
     "id": "NJ-CREW-008",
     "subject_id": "licencias-habilitaciones-aircrew",
-    "learning_objective": "ICAO English Language Proficiency Levels and Validity",
-    "stem": "What are the validity periods for ICAO English Language Proficiency endorsements (Levels 4, 5, and 6) under EASA Part-FCL.055?",
+    "learning_objective": "ICAO English Language Proficiency Validity Periods",
+    "stem": "What are the re-evaluation validity periods for ICAO English Language Proficiency Levels 4, 5, and 6 under EASA Part-FCL.055?",
     "options": [
       {
         "id": "A",
-        "text": "Level 6 must be re-evaluated every 12 months in the simulator.",
+        "text": "Level 4 = 2 years; Level 5 = 4 years; Level 6 = 10 years with mandatory written grammar testing at each renewal across all applicable operational flight phases.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Level 4 (Operational): 4 years; Level 5 (Extended): 6 years; Level 6 (Expert): Permanent / Lifetime validity without expiration.",
-        "is_correct": true
+        "text": "Level 4 = 1 year; Level 5 = 3 years; Level 6 = 5 years for all commercial airline transport pilot license holders under standard rules.",
+        "is_correct": false
       },
       {
         "id": "C",
-        "text": "All levels are valid for 5 years.",
+        "text": "All ICAO language levels have 5 years validity and require annual recurrent oral interviews with certified language examiners.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Level 4: 1 year; Level 5: 2 years; Level 6: 3 years.",
-        "is_correct": false
+        "text": "Level 4 (Operational) = 4 years; Level 5 (Extended) = 6 years; Level 6 (Expert) = Permanent validity (no re-evaluation required).",
+        "is_correct": true
       }
     ],
     "explanation": {
-      "text": "### ICAO English Language Endorsement (FCL.055)\n* **Level 4 (Operational):** Valid for **4 years**.\n* **Level 5 (Extended):** Valid for **6 years**.\n* **Level 6 (Expert):** **Permanent (No expiration date)**.\n* An ICAO Level 4 or higher language endorsement is mandatory for all international IFR operations at NetJets Europe.",
+      "text": "### ICAO Language Proficiency Validity (FCL.055)\n* **Level 4 (Operational):** Valid for **4 years**.\n* **Level 5 (Extended):** Valid for **6 years**.\n* **Level 6 (Expert):** **Permanent validity** (valid for lifetime of the licence).",
       "references": [
-        "EASA Part-FCL.055 (Language proficiency)",
-        "ICAO Doc 9835 (Manual on the Implementation of ICAO Language Proficiency Requirements)"
+        "EASA Part-FCL.055",
+        "ICAO Doc 9835"
       ]
     },
     "metadata": {
-      "difficulty": 0.2
+      "difficulty": 0.15
     }
   },
   {
     "id": "NJ-CREW-009",
     "subject_id": "licencias-habilitaciones-aircrew",
-    "learning_objective": "Recurrent Upset Prevention and Recovery Training (UPRT)",
-    "stem": "Under EASA Part-ORO.FC.220 / 230, what is the mandatory frequency for recurrent Upset Prevention and Recovery Training (UPRT) for commercial flight crews?",
+    "learning_objective": "Recurrent CRM and Ground Training Cycle (Part-ORO)",
+    "stem": "Under EASA Part-ORO.FC.220 / 230, what is the mandatory cycle and frequency for operator recurrent ground training and CRM modules?",
     "options": [
       {
         "id": "A",
-        "text": "Every 10 years for Captains only.",
-        "is_correct": false
+        "text": "All major training topics (CRM, emergency equipment, dangerous goods, security) must be covered over a 3-year recurring cycle, with annual modules.",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "Every 6 months during every LPC.",
+        "text": "Ground training is conducted once upon initial hiring and is valid for the duration of employment with no refresher required across all applicable operational flight phases.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Every 3 years (36 calendar months), integrated into the recurrent simulator training syllabus.",
-        "is_correct": true
+        "text": "CRM training must be repeated every calendar month in an authorized simulator center with video recording under standard rules.",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "Only upon initial type rating conversion with no recurrent requirement.",
+        "text": "Recurrent ground training is required only if the flight crew changes aircraft type rating or upgrades to command under standard rules.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Recurrent UPRT Requirements (ORO.FC.220/230)\n* **Advanced Upset Prevention and Recovery Training (UPRT)** is designed to prevent loss-of-control in flight (LOC-I).\n* Following initial certification, **recurrent UPRT training** must be conducted in an FFS at least **every 3 years (36 months)**.",
+      "text": "### Recurrent Training Cycle (ORO.FC.230)\n* Recurrent ground and flight training is structured over a **3-year rolling cycle**.\n* Key elements:\n  1. **Annual:** Emergency and safety equipment drill, CRM integration, dangerous goods (or 2-year cycle), security.\n  2. **Every 3 years:** Complete coverage of all modular CRM syllabus topics, ditching/fire drills, and cold weather ops.",
       "references": [
-        "EASA Part-ORO.FC.220 / 230",
-        "EASA Decision 2019/008/R (UPRT Regulations)"
+        "EASA Part-ORO.FC.230",
+        "AMC1 ORO.FC.220 / 230"
       ]
     },
     "metadata": {
-      "difficulty": 0.3
+      "difficulty": 0.25
     }
   },
   {
     "id": "NJ-CREW-010",
     "subject_id": "licencias-habilitaciones-aircrew",
-    "learning_objective": "Pilot-in-Command (Commander) Legal Responsibilities (CAT.GEN.MPA.105)",
-    "stem": "Under EASA CAT.GEN.MPA.105, which of the following actions lies within the exclusive legal authority and responsibility of the Commander?",
+    "learning_objective": "Commander Authority and Pilot Responsibilities (Part-CAT)",
+    "stem": "Under EASA CAT.GEN.MPA.105, which of the following emergency powers and legal authorities rests exclusively with the Pilot-in-Command (Commander)?",
     "options": [
       {
         "id": "A",
-        "text": "Authority to alter company FTL limits on private charter flights without logging rest periods.",
+        "text": "Authority to modify national airspace boundaries and reclassify terminal control areas during high traffic congestion across all applicable operational flight phases during normal flight operations.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Authority to waive customs and immigration clearances on VIP flights.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "Authority to refuse carriage of or disembark any person, baggage, or cargo that may represent a potential hazard to the safety of the aircraft or its occupants, and ultimate decision on whether to accept or reject an aircraft with deferred MEL defects.",
+        "text": "Authority to give all commands necessary to ensure the safety of the aircraft, persons, and property, and to deviate from rules/procedures in an emergency in the interest of safety.",
         "is_correct": true
       },
       {
+        "id": "C",
+        "text": "Authority to cancel airport operational curfews and bypass noise abatement fines without notifying local airport authorities under standard rules.",
+        "is_correct": false
+      },
+      {
         "id": "D",
-        "text": "Authority to disable cockpit voice recorders (CVR) during non-revenue ferry flights.",
+        "text": "Authority to issue instant administrative fines to air traffic controllers who refuse preferred direct routing clearances under standard rules.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Commander Legal Authority (CAT.GEN.MPA.105)\n* The **Pilot-in-Command (Commander)**:\n  - Has **ultimate operational command and authority over the aircraft**.\n  - May refuse boarding to or disembark any passenger (VIP or not) who poses a safety hazard.\n  - Holds final responsibility for fuel uplift and technical acceptance under the MEL.\n  - May deviate from rules in an emergency to safeguard the flight.",
+      "text": "### Commander Authority (CAT.GEN.MPA.105)\n* The Commander has the **ultimate operational authority** and responsibility for the safety of the aircraft, crew, passengers, and cargo.\n* In an **emergency situation** requiring immediate decision and action, the Commander is entitled to **take any action deemed necessary, including deviating from regulations and SOPs**.",
       "references": [
-        "EASA Part-CAT.GEN.MPA.105 (Responsibilities of the commander)",
-        "Tokyo Convention on Aviation Safety (1963)"
+        "EASA Part-CAT.GEN.MPA.105",
+        "ICAO Annex 6 Part I"
       ]
     },
     "metadata": {
@@ -382,35 +382,35 @@
   {
     "id": "NJ-CREW-011",
     "subject_id": "licencias-habilitaciones-aircrew",
-    "learning_objective": "Commercial Pilot Alcohol and Psychoactive Substances Limits (CAT.GEN.MPA.100)",
-    "stem": "Under EASA Part-CAT.GEN.MPA.100, what are the strict legal limitations regarding alcohol consumption before flight duty for commercial flight crews?",
+    "learning_objective": "Alcohol and Psychoactive Substances Limitations (Part-CAT)",
+    "stem": "Under EASA Part-CAT.GEN.MPA.100 and SERA.2020, what are the strict legal limitations regarding alcohol consumption before flight duty?",
     "options": [
       {
         "id": "A",
-        "text": "Alcohol consumption is prohibited within at least 8 hours prior to the specified reporting time for flight duty, with blood alcohol concentration (BAC) strictly limited to 0.20 per mille (0.2 g/L) or zero tolerance per company policy.",
-        "is_correct": true
+        "text": "No alcohol within 24 hours prior to departure, and blood alcohol concentration must be below 0.80 per mille (standard driving limit) across all applicable operational flight phases during normal flight operations.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Alcohol rules do not apply during outstation layovers.",
+        "text": "Alcohol consumption is permitted during layovers provided the pilot drinks with food and sleeps at least 4 hours under standard rules.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "The alcohol limit is 0.80 per mille identical to road traffic laws.",
-        "is_correct": false
+        "text": "No alcohol consumption within 8 hours prior to duty reporting, and blood alcohol concentration (BAC) must not exceed 0.20 per mille (0.2 g/l) or operator zero-tolerance policy.",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "Pilots may drink wine with meals up to 2 hours before departure.",
+        "text": "No restrictions apply during domestic repositioning flights with no commercial passengers on board under standard rules.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Alcohol Limitations (CAT.GEN.MPA.100 & CS-CAT.GEN.MPA.100)\n* **Standard Time Limit:** **Minimum 8 hours bottle-to-throttle** (NetJets standard: **12 hours** bottle-to-throttle).\n* **Blood Alcohol Concentration (BAC):** Maximum legal limit under EASA is **0.20 mg/mL (0.02% / 0.20 g/L)**. NetJets enforces a **Zero Tolerance (0.00%)** alcohol policy.",
+      "text": "### Alcohol Limitations (CAT.GEN.MPA.100 / SERA.2020)\n* **Time Limit:** No alcohol consumption within **8 hours** prior to the specified reporting time for flight duty.\n* **Blood Alcohol Limit:** Not to exceed **0.20 ‰ (0.2 g/l)** at the start of or during duty.\n* NetJets maintains a strict **zero-tolerance** policy regarding psychoactive substances and alcohol on duty.",
       "references": [
         "EASA Part-CAT.GEN.MPA.100(c)",
-        "EASA Psychoactive Substances Testing Regulations"
+        "EASA SERA.2020"
       ]
     },
     "metadata": {
@@ -420,35 +420,35 @@
   {
     "id": "NJ-CREW-012",
     "subject_id": "licencias-habilitaciones-aircrew",
-    "learning_objective": "Pilot Competency Assessment & Evidence-Based Training (EBT)",
-    "stem": "What is the core philosophy of Evidence-Based Training (EBT) and Mixed-EBT implemented in modern airline and executive training under EASA Part-ORO.FC.231?",
+    "learning_objective": "Evidence-Based Training (EBT) & Competency-Based Training",
+    "stem": "What is the core philosophy and methodology of Evidence-Based Training (EBT) under EASA Part-ORO.FC.231?",
     "options": [
       {
         "id": "A",
-        "text": "Testing only mechanical engine overhaul knowledge.",
+        "text": "Requiring pilots to perform all maneuvers exclusively on real aeroplanes without using flight simulators or computer aids across all applicable operational flight phases during normal flight operations.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Allowing pilots to conduct their own proficiency checks on desktop computers.",
+        "text": "Conducting flight checks using only written theoretical multiple-choice questionnaires administered via mobile apps under standard rules.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Shifting recurrent simulator checking from purely repetitive pass/fail maneuver testing to developing and assessing core pilot behavioral competencies (flight path management, workload management, communication, situational awareness, decision making) based on real airline flight data and incident evidence.",
-        "is_correct": true
+        "text": "Eliminating all flight evaluations and granting license renewals automatically based on total accumulated flight hours under standard rules.",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "Eliminating all simulator training in favor of oral examinations.",
-        "is_correct": false
+        "text": "A paradigm shift from box-ticking maneuvers to developing and assessing core pilot competencies based on comprehensive global airline accident and operational flight data.",
+        "is_correct": true
       }
     ],
     "explanation": {
-      "text": "### Evidence-Based Training (EBT - ORO.FC.231)\n* **EBT** replaces rigid legacy tick-box exams with **competency-based development**.\n* Focuses on the **8 Core ICAO / EASA Behavioral Competencies**:\n  1. Application of Knowledge\n  2. Application of Procedures\n  3. Communication\n  4. Aeroplane Flight Path Management (Manual & Automation)\n  5. Leadership & Teamwork\n  6. Problem Solving & Decision Making\n  7. Situation Awareness\n  8. Workload Management",
+      "text": "### Evidence-Based Training (EBT) (ORO.FC.231)\n* EBT replaces legacy prescriptive testing with **competency-based training** (9 Core Competencies, e.g., Application of Knowledge, Communication, Flight Path Management, Problem Solving, Situational Awareness, Workload Management).\n* Scenarios are developed from real operational data and threat environments (CFIT, LOC-I, Weather, System Failures).",
       "references": [
-        "EASA Part-ORO.FC.231 (Evidence-based training)",
-        "ICAO Doc 9995 (Manual on Evidence-Based Training)"
+        "EASA Part-ORO.FC.231",
+        "ICAO Doc 9995 (EBT Manual)"
       ]
     },
     "metadata": {
@@ -458,35 +458,35 @@
   {
     "id": "NJ-CREW-013",
     "subject_id": "licencias-habilitaciones-aircrew",
-    "learning_objective": "Commercial Pilot Instrument Rating (IR) Revalidation Window",
-    "stem": "If an Instrument Rating (IR) is revalidated through a proficiency check within the 3-month window prior to expiration, from what date is the new validity period calculated?",
+    "learning_objective": "Instrument Rating Revalidation Combined with LPC (FCL.625)",
+    "stem": "If an Instrument Rating (IR) is revalidated through a proficiency check combined with a multi-pilot type rating (LPC), what cross-credit rules apply?",
     "options": [
       {
         "id": "A",
-        "text": "The IR is renewed permanently and never expires once revalidated three times.",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "From the original expiry date of the current rating (preserving the annual anniversary month for 12 calendar months).",
+        "text": "Passing the multi-pilot type rating LPC fulfills all IR revalidation requirements for that specific multi-pilot type rating.",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "The pilot must perform a separate 2-hour single-engine piston flight test to maintain the multi-engine instrument rating across all applicable operational flight phases.",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "From the exact calendar day on which the proficiency check was flown in the simulator.",
+        "text": "The IR is revalidated for 6 months only, while the type rating is revalidated for 24 calendar months under standard rules.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "From the first day of the calendar month following the check.",
+        "text": "Cross-crediting between type ratings and instrument ratings is strictly prohibited under European FCL regulations under standard rules.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### IR Revalidation Rules (Part-FCL.655)\n* Completing the LPC within the **3-month window preceding expiry** ensures the rating is extended for **12 calendar months from the original expiration date**.",
+      "text": "### IR Revalidation Cross-Crediting (FCL.625.A & Appendix 8)\n* When an IR(A) proficiency check is combined with an **operator proficiency check (OPC) or licence proficiency check (LPC)** on a multi-pilot type rating in an approved FFS, passing the check **revalidates the IR privileges** for that type.",
       "references": [
-        "EASA Part-FCL.655 (Revalidation of IR)",
-        "AMC1 FCL.655"
+        "EASA Part-FCL.625.A",
+        "EASA Part-FCL Appendix 8"
       ]
     },
     "metadata": {
@@ -495,76 +495,78 @@
   },
   {
     "id": "NJ-CREW-014",
-    "subject_id": "netjets-interview",
-    "learning_objective": "Aircrew: Cruise Relief Co-Pilot (CRCO) Privileges & Limitations",
-    "stem": "What are the regulatory privileges and flight level limitations of a Cruise Relief Co-Pilot (CRCO) under EASA Part-FCL.060 / Part-ORO.FC?",
+    "subject_id": "licencias-habilitaciones-aircrew",
+    "learning_objective": "High Altitude Endorsement / High Altitude Training (FCL.720.A)",
+    "stem": "What theoretical and practical training is required before a pilot operates a pressurised aeroplane capable of operating above FL250?",
     "options": [
       {
         "id": "A",
-        "text": "May fly the entire flight from takeoff to landing without PIC supervision.",
+        "text": "Completion of a 50-hour celestial navigation sextant plotting course and high-latitude compass deviation calculations across all applicable operational flight phases.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Relieve the Co-pilot at the controls only above Flight Level 200 (FL200) during cruise flight; prohibited from acting as pilot flying during takeoff, initial climb, descent, approach, and landing.",
+        "text": "High altitude physiology, hypoxia awareness, cabin decompression profiles, emergency descent procedures, and rapid don oxygen mask drills.",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "CRCO rating is valid for single-pilot turboprops only.",
+        "text": "Hypobaric chamber explosive decompression testing at zero pressure altitude every 6 calendar months under standard rules.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Can only operate below 10,000 ft in VMC conditions.",
+        "text": "Obtaining a specialized military high-altitude interceptor rating issued by national defense authorities under standard rules.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### 👨‍✈️ Cruise Relief Co-Pilot (CRCO) Privileges\n* **Authority:** Part-FCL.720.A / Part-ORO.FC.105.\n* **Operational Window:** May relieve a crew member **ONLY in cruise flight above FL200**.\n* **Prohibitions:** Cannot occupy control seats during takeoff, climb below FL200, descent below FL200, approach, or landing.",
+      "text": "### High Altitude Training (FCL.720.A / Part-SPA)\n* Prior to operating above **FL250**, pilots must complete **High Altitude Training** covering:\n  1. Physiological hazards of high altitude and **hypoxia** symptoms.\n  2. **Time of Useful Consciousness (TUC)** at various flight levels.\n  3. Rapid cabin depressurisation mechanics.\n  4. **Emergency Descent** execution and emergency oxygen equipment donning.",
       "references": [
-        "EASA Part-FCL.720.A • Part-ORO.FC.105"
+        "EASA Part-FCL.720.A",
+        "AMC1 FCL.720.A"
       ]
     },
     "metadata": {
-      "difficulty": 0.4
+      "difficulty": 0.25
     }
   },
   {
     "id": "NJ-CREW-015",
-    "subject_id": "netjets-interview",
-    "learning_objective": "Aircrew: Decrease in Medical Fitness Notification (MED.A.045)",
-    "stem": "Under EASA Part-MED.A.045, under what medical conditions is a pilot legally obligated to suspend flight duties and inform their Aero-Medical Examiner (AME)?",
+    "subject_id": "licencias-habilitaciones-aircrew",
+    "learning_objective": "Medical Incapacity Notification (Part-MED.A.020)",
+    "stem": "Under EASA Part-MED.A.020, under what medical circumstances is a pilot legally obliged to suspend flying and notify the Aeromedical Examiner (AME)?",
     "options": [
       {
         "id": "A",
-        "text": "Only upon suffering permanent total blindness.",
+        "text": "Any minor headache lasting more than 30 minutes during a scheduled layover rest period at an outstation across all applicable operational flight phases during normal flight operations.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Changing spectacle frame color without lens modification.",
+        "text": "Changing spectacle prescription by less than 0.25 diopters without changes in visual acuity under standard rules.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Mild common cold lasting less than 24 hours.",
-        "is_correct": false
+        "text": "Hospital admission > 12h, surgical operation, ongoing medication use, significant personal injury, pregnancy, or medical illness incapacity > 21 days.",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "Any surgical operation or invasive procedure, regular use of prescribed medication, confirmed pregnancy, hospital admission, or any illness/injury causing incapacity to perform flight duties for more than 21 days.",
-        "is_correct": true
+        "text": "Only when the civil aviation authority issues a formal written grounded order following a ramp inspection under standard rules.",
+        "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### 🩺 Decrease in Medical Fitness (EASA Part-MED.A.045)\n* **Mandatory Suspension Triggers:**\n  1. Illness or injury involving incapacity for **more than 21 days** (Class 1) or 30 days (Class 2).\n  2. Any hospital admission or surgical procedure.\n  3. Significant personal injury.\n  4. Confirmed pregnancy.\n  5. Starting regular medication not previously approved by AME.",
+      "text": "### Medical Incapacity Notification (MED.A.020)\nPilots must not exercise licence privileges and must notify their AME when:\n* Hospital/clinic admission **> 12 hours**;\n* Surgical operation or invasive procedure;\n* Regular use of any medication;\n* Pregnancy (at confirmation);\n* Any significant personal injury or illness causing **inability to act as pilot for > 21 days**.",
       "references": [
-        "EASA Part-MED.A.045 • AMC1 MED.A.045"
+        "EASA Part-MED.A.020",
+        "AMC1 MED.A.020"
       ]
     },
     "metadata": {
-      "difficulty": 0.4
+      "difficulty": 0.25
     }
   }
 ]

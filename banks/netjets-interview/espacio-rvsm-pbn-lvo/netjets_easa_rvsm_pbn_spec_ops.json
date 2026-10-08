@@ -2,72 +2,72 @@
   {
     "id": "NJ-RVSM-001",
     "subject_id": "espacio-rvsm-pbn-lvo",
-    "learning_objective": "RVSM Altitude Limits and Separation Standards",
-    "stem": "What is the operational airspace vertical band for Reduced Vertical Separation Minimum (RVSM) and the standard vertical separation applied within it?",
+    "learning_objective": "RVSM Airspace - Vertical Separation and Flight Levels",
+    "stem": "What are the vertical boundaries and vertical separation minima applied within certified Reduced Vertical Separation Minimum (RVSM) airspace?",
     "options": [
       {
         "id": "A",
-        "text": "Between FL195 and FL285, with 2,000 ft vertical separation.",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "Between FL290 and FL410 inclusive, with 1,000 ft (300 m) vertical separation between approved aircraft.",
+        "text": "Between FL290 and FL410 inclusive, where vertical separation between approved aircraft is reduced from 2,000 ft to 1,000 ft (300 m).",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "Between FL245 and FL380 inclusive, where vertical separation is reduced from 1,500 ft to 500 ft under radar control coverage.",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "Between FL410 and FL600, with 1,000 ft vertical separation.",
+        "text": "Between FL310 and FL450 inclusive, where vertical separation between all civil and military flights is fixed at 1,500 ft.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Between FL100 and FL250, with 500 ft vertical separation.",
+        "text": "Between FL180 and FL600 inclusive, where vertical separation is managed dynamically via satellite automatic dependent surveillance.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### RVSM Airspace Band & Separation (ICAO Doc 9574 & SPA.RVSM)\n* **RVSM Airspace:** **FL290 to FL410 inclusive**.\n* **Vertical Separation:** **1,000 ft (300 m)** between RVSM-approved aircraft.\n* Above FL410, standard separation reverts to **2,000 ft (600 m)**.\n* Aircraft not approved for RVSM must operate at or below **FL280** (or under specific non-RVSM climb/descent clearance with 2,000 ft separation provided by ATC).",
+      "text": "### RVSM Airspace Definition\n* **Boundaries:** **FL290 to FL410 inclusive**.\n* **Vertical Separation:** **1,000 ft (300 m)** between RVSM-approved aircraft, instead of the conventional 2,000 ft separation applied above FL290.",
       "references": [
-        "ICAO Doc 9574 (Manual on RVSM Implementation)",
-        "EASA Part-SPA.RVSM.100"
+        "ICAO Doc 9574 (RVSM Manual)",
+        "EASA SPA.RVSM.100"
       ]
     },
     "metadata": {
-      "difficulty": 0.2
+      "difficulty": 0.15
     }
   },
   {
     "id": "NJ-RVSM-002",
     "subject_id": "espacio-rvsm-pbn-lvo",
-    "learning_objective": "Mandatory RVSM Equipment (4 Essential Systems)",
-    "stem": "What four mandatory aircraft systems must be operational to enter and operate in RVSM airspace under EASA SPA.RVSM.110?",
+    "learning_objective": "Mandatory Equipment for RVSM Operations",
+    "stem": "Which minimum aircraft equipment suite is legally required for dispatch into RVSM airspace under EASA Part-SPA.RVSM.100?",
     "options": [
       {
         "id": "A",
-        "text": "Dual FMS, satellite phone, weather radar, and forward-looking infrared sensor.",
+        "text": "Single primary altimeter, one mode C transponder, manual flight control system, and dual independent GPS receiver sensors for operational compliance.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "One primary altimeter, one standby pneumatic altimeter, autothrottle, and TCAS I.",
-        "is_correct": false
+        "text": "Two independent primary altitude measurement systems, one altitude alerting system, one automatic altitude control system, and one SSR altitude reporting transponder.",
+        "is_correct": true
       },
       {
         "id": "C",
-        "text": "Dual Inertial Reference Systems (IRS), dual GPS receivers, stormscope, and head-up display.",
+        "text": "Three independent inertial reference systems, dual weather radars, traffic alert collision avoidance system Version 7.1, and SATCOM for operational compliance.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Two independent Primary Altimetry Systems, one Automatic Altitude-Control System (Autopilot with altitude hold), one Altitude-Alerting Device, and one Secondary Surveillance Radar (SSR) Altitude Reporting Transponder (Mode C or S).",
-        "is_correct": true
+        "text": "Two independent flight directors, one head-up display system, one electronic flight bag, and an operational autothrottle system for operational compliance.",
+        "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Mandatory 4 RVSM Systems (SPA.RVSM.110)\n* To operate in RVSM airspace, the aircraft must have **ALL 4 systems operational**:\n  1. **Two independent primary altimeters** (ADC / air data computers).\n  2. **One Automatic Altitude Control System (Autopilot)** maintaining level within ± 65 ft.\n  3. **One Altitude Alerting System** (warning at deviations > 200 ft or 300 ft).\n  4. **One SSR Mode C/S Transponder** connected to the active primary altimeter.",
+      "text": "### Mandatory RVSM Equipment Suite (SPA.RVSM.100 / ICAO Doc 9574)\n1. **Two independent primary altitude measurement systems** (ADC/Altimeters).\n2. **One Altitude Alerting System**.\n3. **One Automatic Altitude Control System** (Autopilot with altitude hold holding within ±65 ft).\n4. **One SSR Altitude Reporting Transponder** (connected to operating primary altimeter).",
       "references": [
-        "EASA Part-SPA.RVSM.110",
+        "EASA Part-SPA.RVSM.100 / AMC1 SPA.RVSM.105",
         "ICAO Doc 9574"
       ]
     },
@@ -78,34 +78,34 @@
   {
     "id": "NJ-RVSM-003",
     "subject_id": "espacio-rvsm-pbn-lvo",
-    "learning_objective": "Altimeter Tolerances: Ground Check and In-Flight Cruise",
-    "stem": "What are the maximum allowable altimeter tolerances during the pre-flight ground crosscheck and in-flight cruise within RVSM airspace?",
+    "learning_objective": "RVSM Altimeter Tolerance Checks (Pre-Flight)",
+    "stem": "What is the maximum allowable difference between primary altimeters and known aerodrome elevation prior to taxi for RVSM operations?",
     "options": [
       {
         "id": "A",
-        "text": "On the ground: ±10 ft; In cruise: 0 ft discrepancy.",
+        "text": "Altimeters must agree within 150 ft of elevation and within 200 ft of each other when set to local QNH for operational compliance.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Altimeters do not require crosschecking if satellite GPS altitude is displayed.",
+        "text": "Altimeters must agree within 25 ft of surveyed airport elevation and within 10 ft between each other under ISA standard pressure.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "On the ground: primary altimeters must agree within ±75 ft of known aerodrome elevation and within 50 to 75 ft between each other; In cruise: difference between primary altimeters must not exceed 200 ft (60 m).",
+        "text": "Altimeters must agree within 75 ft of surveyed airport elevation and within the AFM specified tolerance (typically <= 50-75 ft) between each other.",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "On the ground: ±200 ft; In cruise: ±500 ft.",
+        "text": "Altimeters must agree within 100 ft of surveyed airport elevation and within 125 ft between each other when set to standard 1013.25 hPa.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### RVSM Altimetry Tolerances\n* **Ground Check (with local QNH):**\n  - Primary altimeter vs. Surveyed Field Elevation: max **± 75 ft** (or ± 50 ft per AFM).\n  - Difference between Pilot & Co-pilot Primary Altimeters: max **50 to 75 ft**.\n* **In-Flight Cruise Crosscheck (Standard 1013.25 hPa):**\n  - Max allowable discrepancy between primary altimeters: **200 ft (60 m)**.\n  - Autopilot must maintain level within **± 65 ft (± 20 m)**.",
+      "text": "### RVSM Altimeter Pre-Flight Checks\n* On the ground at a known elevation point:\n  1. Each primary altimeter must read within **±75 ft** of the surveyed elevation (with local QNH set).\n  2. The difference between the two primary altimeters must not exceed the limit specified in the AFM (typically **50 ft to 75 ft**).",
       "references": [
-        "ICAO Doc 9574 (Chapter 4 - Operating Procedures)",
+        "ICAO Doc 9574",
         "EASA AMC1 SPA.RVSM.105"
       ]
     },
@@ -116,149 +116,111 @@
   {
     "id": "NJ-RVSM-004",
     "subject_id": "espacio-rvsm-pbn-lvo",
-    "learning_objective": "RVSM Equipment Failure Phraseology",
-    "stem": "What is the mandatory ICAO / EASA standard phraseology when an equipment malfunction (such as autopilot failure or altimeter split > 200 ft) occurs in RVSM airspace?",
+    "learning_objective": "In-Flight RVSM Altimeter Cross-Check Tolerance",
+    "stem": "During level cruise within RVSM airspace, what is the maximum allowable difference between the two primary altimeters under EASA / ICAO standards?",
     "options": [
       {
         "id": "A",
-        "text": "'MAYDAY RVSM FAILURE'.",
+        "text": "Primary altimeters must agree within 500 ft; otherwise the flight crew must immediately initiate an emergency descent under standard operating conditions and criteria.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "'PAN PAN ALTIMETER OUT'.",
+        "text": "Primary altimeters must agree within 300 ft, and periodic cross-checks must be recorded in the journey log every two hours in standard atmospheric conditions.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "'CANCEL RVSM CLEARANCE'.",
+        "text": "Primary altimeters must agree within 50 ft; if exceeded, the autopilot must be immediately disconnected and flown manually.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "'UNABLE RVSM DUE TO EQUIPMENT' (or 'UNABLE RVSM DUE TO TURBULENCE' if severe turbulence prevents altitude maintenance).",
+        "text": "Primary altimeters must agree within 200 ft (60 m); if the split exceeds 200 ft, ATC must be notified of degraded RVSM capability.",
         "is_correct": true
       }
     ],
     "explanation": {
-      "text": "### RVSM Contingency Phraseology (ICAO Doc 4444)\n* If an aircraft loses RVSM capability in flight, the crew must notify ATC immediately with the exact phraseology:\n  - `UNABLE RVSM DUE TO EQUIPMENT`\n  - `UNABLE RVSM DUE TO TURBULENCE`\n* ATC will establish **2,000 ft vertical separation** from other aircraft or clear the flight to descend below FL290.",
+      "text": "### In-Flight RVSM Cross-Checks\n* At intervals of approximately **one hour**, cross-checks between the primary altimeters must be recorded.\n* The maximum permissible difference between primary altimeters in flight is **200 ft (60 m)**.\n* If the difference exceeds 200 ft, the altimetry system is considered degraded and ATC must be notified.",
       "references": [
-        "ICAO Doc 4444 (PANS-ATM)",
-        "EASA SERA.8015"
+        "ICAO Doc 9574",
+        "EASA AMC1 SPA.RVSM.105"
       ]
     },
     "metadata": {
-      "difficulty": 0.2
+      "difficulty": 0.25
     }
   },
   {
     "id": "NJ-RVSM-005",
     "subject_id": "espacio-rvsm-pbn-lvo",
-    "learning_objective": "Strategic Lateral Offset Procedures (SLOP)",
-    "stem": "Under ICAO Doc 4444, what are the parameters and rules governing the execution of Strategic Lateral Offset Procedures (SLOP) in oceanic and remote continental airspace?",
+    "learning_objective": "RVSM In-Flight Failure - Autopilot Failure",
+    "stem": "If the automatic altitude control system (autopilot altitude hold) fails while cruising in RVSM airspace, what immediate actions are required?",
     "options": [
       {
         "id": "A",
-        "text": "Offsets may be flown up to 5 NM to the left or right at the pilot's discretion.",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "Offsets are flown exclusively to the RIGHT of the airway centerline, up to a maximum of 2.0 NM in 0.1 NM increments (or 1 NM / 2 NM), without requiring prior ATC clearance in designated SLOP airspace, to mitigate collision risk from high-precision GPS navigation and wake turbulence.",
+        "text": "Maintain manual flight control, notify ATC with phraseology 'UNABLE RVSM DUE AUTOPILOT', and request a revised clearance or vertical separation.",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "Execute an immediate 90-degree turn off the airway centerline without contacting ATC and descend below FL290 at Vmo speed under standard operating conditions and criteria.",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "SLOP requires filing a revised ICAO flight plan with Lisbon Dispatch 30 minutes in advance.",
+        "text": "Squawk 7700 on the transponder, declare a Mayday emergency, and immediately offset 30 nautical miles to the right of the route in standard atmospheric conditions.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "SLOP is mandatory over all European domestic terminal areas.",
+        "text": "Engage the emergency standby mechanical pitch trim and continue normal navigation without informing sector controllers.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Strategic Lateral Offset Procedures (SLOP)\n* **Purpose:** Mitigates the risk of mid-air collision caused by extreme GPS navigation precision and avoids wake turbulence from preceding aircraft.\n* **Standard Rules:**\n  - **Direction:** **RIGHT ONLY** (offsets to the left are strictly prohibited).\n  - **Magnitude:** **0.1 NM to 2.0 NM** (in tenths of a nautical mile) or 1 NM / 2 NM.\n  - **ATC Clearance:** In published oceanic/remote airspace, **NO ATC clearance is required**.",
+      "text": "### Autopilot Failure in RVSM Airspace\n* When autopilot altitude hold fails:\n  1. Maintain level flight manually as accurately as possible.\n  2. **Notify ATC immediately**: broadcast `UNABLE RVSM DUE EQUIPMENT` (or `DUE AUTOPILOT`).\n  3. ATC will provide 2,000 ft separation or clear the aircraft out of RVSM airspace (below FL290 or above FL410).",
       "references": [
-        "ICAO Doc 4444 (PANS-ATM Chapter 16.5)",
-        "ICAO NAT Doc 007 (North Atlantic Operations)"
+        "ICAO Doc 9574",
+        "EASA AMC1 SPA.RVSM.105"
       ]
     },
     "metadata": {
-      "difficulty": 0.3
+      "difficulty": 0.25
     }
   },
   {
     "id": "NJ-RVSM-006",
     "subject_id": "espacio-rvsm-pbn-lvo",
-    "learning_objective": "TCAS II Version 7.1 Response Timing",
-    "stem": "What are the mandatory flight crew reaction times and hierarchy rules when responding to a TCAS II Version 7.1 Resolution Advisory (RA)?",
+    "learning_objective": "Strategic Lateral Offset Procedures (SLOP)",
+    "stem": "What are the standard authorized offsets and rules for applying Strategic Lateral Offset Procedures (SLOP) in oceanic and remote continental airspace?",
     "options": [
       {
         "id": "A",
-        "text": "Initiate vertical pitch maneuver within 5 seconds of the initial RA (or within 2.5 seconds for a Reversal or Strengthening RA); the TCAS RA takes absolute legal precedence over conflicting ATC instructions.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Wait 15 seconds to confirm ATC instructions before disconnecting the autopilot.",
+        "text": "Offsets up to 5 NM left or right of centerline with mandatory prior verbal ATC approval before initiating lateral steering change in standard atmospheric conditions.",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Offsets of 1 NM or 2 NM (or 0.1 to 0.5 NM increments up to 2 NM) to the RIGHT of centerline only, without requiring ATC clearance.",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "ATC instructions always override a TCAS RA in European controlled airspace.",
+        "text": "Offsets of 0.1 NM to 0.5 NM left of centerline applied exclusively during severe clear air turbulence encounters in polar routes.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Manually roll into a 45° bank turn within 3 seconds.",
+        "text": "Offsets of 3 NM to the left of route centerline applied only when overtaking slower turboprop aircraft at identical flight levels.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### TCAS II Version 7.1 Response Standards\n* **Reaction Time:**\n  - **Initial RA:** Crew must initiate pitch response within **≤ 5 seconds**.\n  - **Reversal / Strengthening RA:** Crew must respond within **≤ 2.5 seconds**.\n* **Absolute Priority:** A TCAS RA **ALWAYS OVERRIDES ATC INSTRUCTIONS**. Never maneuver opposite to an RA.\n* **Phraseology:** Notify ATC: `[Callsign] TCAS RA`, and upon return: `CLEAR OF CONFLICT, RETURNING TO [FL]`.",
+      "text": "### Strategic Lateral Offset Procedures (SLOP)\n* **Direction:** **RIGHT of centerline ONLY** (never left).\n* **Magnitudes:** Standard ICAO SLOP permits offsets of **0.1 NM to 2.0 NM to the right** in tenths of a mile (or legacy 1 NM / 2 NM right).\n* **ATC clearance:** SLOP is a pilot-discretion procedure designed to mitigate collision risk from highly accurate GNSS tracking and wake turbulence; **no ATC clearance is required**.",
       "references": [
-        "ICAO Doc 9863 (Airborne Collision Avoidance System Manual)",
-        "EASA SERA.11014"
-      ]
-    },
-    "metadata": {
-      "difficulty": 0.25
-    }
-  },
-  {
-    "id": "NJ-RVSM-007",
-    "subject_id": "espacio-rvsm-pbn-lvo",
-    "learning_objective": "Oceanic Contingency Maneuver (NAT-HLA / Remote)",
-    "stem": "What is the standard ICAO contingency procedure in oceanic/remote airspace (NAT-HLA) when an aircraft is unable to maintain assigned level and two-way ATC clearance cannot be obtained?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Turn at least 30° left or right of the track to establish a 5 NM parallel offset, then climb or descend 500 ft (or 300 ft in specific designated airspace) while broadcasting intentions on 121.5 MHz and 123.45 MHz with all exterior lights on.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Remain on track, maintain altitude, and reduce airspeed to Vmin.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "Descend directly without lateral offset, maintaining transponder code 7000.",
-        "is_correct": false
-      },
-      {
-        "id": "D",
-        "text": "Perform a 180° turn on the exact centerline and descend to sea level immediately.",
-        "is_correct": false
-      }
-    ],
-    "explanation": {
-      "text": "### ICAO Oceanic Contingency Procedure (Doc 4444 / NAT Doc 007)\n* **Maneuver:**\n  1. Turn **at least 30°C** away from the track to establish a **5 NM parallel offset**.\n  2. Once established at 5 NM, **climb or descend by 500 ft** (to place the aircraft between standard flight levels).\n  3. Set transponder code **7700** if emergency, turn **all exterior lights ON**, and broadcast on **121.5 MHz & 123.45 MHz**.",
-      "references": [
-        "ICAO NAT Doc 007 (North Atlantic Airspace Operations)",
-        "ICAO Doc 4444 Chapter 15"
+        "ICAO Doc 4444 (PANS-ATM)",
+        "ICAO Annex 2"
       ]
     },
     "metadata": {
@@ -266,37 +228,37 @@
     }
   },
   {
-    "id": "NJ-RVSM-008",
+    "id": "NJ-RVSM-007",
     "subject_id": "espacio-rvsm-pbn-lvo",
-    "learning_objective": "Performance-Based Navigation (PBN) Specifications",
-    "stem": "What is the core distinction between RNAV specifications (e.g. RNAV 5, RNAV 1) and RNP specifications (e.g. RNP 1, RNP APCH) under the ICAO PBN Manual (Doc 9613)?",
+    "learning_objective": "PBN Specifications - RNAV vs RNP Fundamental Difference",
+    "stem": "What is the defining technical difference between an RNAV navigation specification and an RNP navigation specification under the ICAO PBN Manual (Doc 9613)?",
     "options": [
       {
         "id": "A",
-        "text": "RNP specifications require On-Board Performance Monitoring and Alerting (OBPMA) that alerts the crew if total system error exceeds accuracy requirements, whereas RNAV specifications do not require onboard integrity alerting.",
-        "is_correct": true
+        "text": "RNAV requires dual satellite receivers, whereas RNP relies exclusively on ground-based DME/DME cross-bearing triangulation networks.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "There is no technical difference; RNAV and RNP are completely interchangeable acronyms.",
+        "text": "RNP applies exclusively to terminal approach segments, whereas RNAV is restricted entirely to oceanic high-altitude oceanic tracks.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "RNAV applies exclusively to military fighters, while RNP applies only to general aviation.",
-        "is_correct": false
+        "text": "RNP requires on-board performance monitoring and alerting (OBPMA), whereas RNAV specifications do not have this requirement.",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "RNAV uses only VOR/DME ground beacons, while RNP prohibits the use of GNSS.",
+        "text": "RNAV permits curved radius-to-fix (RF) legs, whereas RNP requires strictly straight line waypoint-to-waypoint rhumb line tracking.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### RNAV vs RNP (ICAO Doc 9613 PBN Manual)\n* **RNAV (Area Navigation):** Navigation along any desired flight path within covered navigational aid limits. **No On-Board Performance Monitoring & Alerting (OBPMA) required**.\n* **RNP (Required Navigation Performance):** Area navigation that **REQUIRES on-board performance monitoring and alerting (OBPMA)**. If the system cannot maintain the specified lateral accuracy (e.g. ± 0.3 NM in RNP APCH) 95% of the time, it immediately alerts the crew.",
+      "text": "### RNAV vs RNP (ICAO Doc 9613)\n* **RNP (Required Navigation Performance):** Requires **On-Board Performance Monitoring and Alerting (OBPMA)**. The system must alert the crew if Total System Error (TSE) exceeds the RNP value for more than 95% of the flight time.\n* **RNAV (Area Navigation):** Does **not** require on-board performance monitoring and alerting.",
       "references": [
         "ICAO Doc 9613 (PBN Manual)",
-        "EASA Part-SPA.PBN"
+        "EASA Part-SPA.PBN.100"
       ]
     },
     "metadata": {
@@ -304,75 +266,113 @@
     }
   },
   {
-    "id": "NJ-RVSM-009",
+    "id": "NJ-RVSM-008",
     "subject_id": "espacio-rvsm-pbn-lvo",
-    "learning_objective": "Barometric Altimeter Transition Setting",
-    "stem": "Under standard European ICAO procedures, when must the altimeter reference setting be changed from local QNH to Standard (1013.25 hPa) during climb, and from Standard to QNH during descent?",
+    "learning_objective": "RNP APCH (LNAV, LNAV/VNAV, LPV) Structure",
+    "stem": "Under ICAO PBN terminology, what are the three distinct lines of minima associated with an RNP APCH instrument approach procedure?",
     "options": [
       {
         "id": "A",
-        "text": "Changed to Standard (1013.25 hPa) when climbing through Transition Altitude (TA); changed to local QNH when descending through Transition Level (TL).",
-        "is_correct": true
+        "text": "CAT I, CAT II, and CAT III autoland minima based on local runway surface visual range transmissometer measurements under standard operating conditions and criteria.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Changed to Standard at 10,000 ft on climb; changed to QNH at 500 ft AGL.",
+        "text": "VOR, NDB, and LOC backcourse minima derived from raw angular ground navaid cross-needle indicator deflections during normal flight planning operations.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Standard is set at gear retraction; QNH is set on base leg.",
+        "text": "Circling-only, contact approach, and visual approach minima based exclusively on pilot forward flight visibility assessments in standard atmospheric conditions.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Standard is set only when entering RVSM airspace at FL290.",
+        "text": "LNAV (2D lateral NPA), LNAV/VNAV (3D APV with baro-VNAV or SBAS vertical), and LPV (3D APV/CAT I with SBAS geometric vertical guidance).",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "### RNP APCH Minima Structure\n1. **LNAV:** Lateral navigation only (2D NPA) with MDA/H.\n2. **LNAV/VNAV:** Lateral and Barometric/SBAS vertical guidance (3D APV) with DA/H.\n3. **LPV (Localizer Performance with Vertical Guidance):** SBAS angular guidance down to CAT I-like minima (down to 200 ft DH) with DA/H.",
+      "references": [
+        "ICAO Doc 9613",
+        "EASA AMC 20-27 / AMC 20-28"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "NJ-RVSM-009",
+    "subject_id": "espacio-rvsm-pbn-lvo",
+    "learning_objective": "RNP AR APCH (Authorization Required)",
+    "stem": "What distinct operational and avionics capabilities characterize an 'RNP AR APCH (Authorization Required)' procedure?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Navigation accuracy values from RNP 0.3 down to RNP 0.1, Radius-to-Fix (RF) curved legs, and specific crew training with operational approval.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Use of single unaugmented GPS sensor with manual raw data tracking and circling to land in mountainous terrain under standard operating conditions and criteria.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Exemption from obstacle clearance margins provided the aircraft is equipped with dual head-up display guidance units in standard atmospheric conditions.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mandatory requirement to fly manually without autopilot to verify tactile stick shaker response in turbulent valleys.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Altimeter Setting Transition\n* **Climb:** Change from local QNH to **Standard (1013.25 hPa / 29.92 inHg)** upon passing **Transition Altitude (TA)** (published on SID charts).\n* **Descent:** Change from Standard to **local QNH** upon passing **Transition Level (TL)** (issued by ATC or ATIS).\n* The vertical layer between TA and TL is the **Transition Layer** (cruising level flight is prohibited in the Transition Layer).",
+      "text": "### RNP AR APCH Characteristics (SPA.PBN.105)\n* **High Navigation Accuracy:** RNP values less than 0.3 NM down to **0.1 NM** on final approach.\n* **Radius-to-Fix (RF) Legs:** Precise curved paths in obstacle-rich terrain.\n* **Missed Approach RNP:** RNP < 1.0 on missed approach.\n* Requires **specific aircraft certification, operational approval (SPA.PBN.105), and recurrent simulator training**.",
       "references": [
-        "ICAO Doc 8168 (PANS-OPS)",
-        "EASA SERA.8015"
+        "EASA Part-SPA.PBN.105",
+        "ICAO Doc 9613"
       ]
     },
     "metadata": {
-      "difficulty": 0.2
+      "difficulty": 0.35
     }
   },
   {
     "id": "NJ-RVSM-010",
     "subject_id": "espacio-rvsm-pbn-lvo",
-    "learning_objective": "RNP APCH Minima Lines: LNAV vs LNAV/VNAV vs LPV",
-    "stem": "On an RNP APCH chart, what is the difference between LNAV/VNAV minima and LPV minima?",
+    "learning_objective": "RAIM (Receiver Autonomous Integrity Monitoring) & FDE",
+    "stem": "What is the minimum number of operational GNSS satellites required for Fault Detection (RAIM) and Fault Detection and Exclusion (FDE)?",
     "options": [
       {
         "id": "A",
-        "text": "LPV can only be flown with ILS ground transmitters operational.",
+        "text": "3 satellites for 2D position fix, and 4 satellites for standard 3D barometric altitude augmentation display under standard operating conditions and criteria.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "LNAV/VNAV relies on Barometric VNAV (Baro-VNAV) subject to cold temperature limits and provides 3D guidance with a Decision Altitude (DA); LPV relies on Satellite-Based Augmentation Systems (SBAS / EGNOS in Europe) providing geometric lateral and vertical guidance down to CAT I-like minima (200 ft DA) unaffected by temperature.",
+        "text": "5 satellites for Fault Detection (RAIM), and 6 satellites (or 5 with baro-aiding) for Fault Detection and Exclusion (FDE).",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "LNAV/VNAV is a 2D approach with an MDA, whereas LPV is a circling approach.",
+        "text": "4 satellites for Fault Detection, and 5 satellites for complete exclusion of faulty inertial reference gyro platforms in standard atmospheric conditions.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "LNAV/VNAV requires radar altimeter minimums of 50 ft.",
+        "text": "7 satellites for basic RAIM, and 9 satellites for SBAS geostationary satellite transponder health verification.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### LNAV/VNAV vs LPV (EGNOS / SBAS)\n* **LNAV/VNAV:** Uses barometric vertical guidance (**Baro-VNAV**). It has temperature limits (e.g. valid only between -15°C and +50°C unless aircraft has temperature compensation).\n* **LPV (Localizer Performance with Vertical Guidance):** Uses **SBAS (EGNOS in Europe / WAAS in US)** to generate geometric vertical guidance. Unaffected by atmospheric temperature, delivering **CAT I precision equivalent minima (DH 200 ft / RVR 550 m)**.",
+      "text": "### RAIM and FDE Satellite Geometry\n* **4 satellites:** Basic 3D position fix (Latitude, Longitude, Altitude, Time).\n* **5 satellites:** **Fault Detection (RAIM)** - can identify that a satellite is broadcasting corrupt signals.\n* **6 satellites (or 5 + Baro-aiding):** **Fault Detection and Exclusion (FDE)** - can identify the specific faulty satellite, isolate it, and continue navigation without interruption.",
       "references": [
-        "EASA Part-SPA.PBN.100",
-        "ICAO Doc 9613"
+        "ICAO Doc 9613",
+        "FAA AC 90-100A / EASA AMC 20-28"
       ]
     },
     "metadata": {
@@ -382,149 +382,187 @@
   {
     "id": "NJ-RVSM-011",
     "subject_id": "espacio-rvsm-pbn-lvo",
-    "learning_objective": "Transponder Altitude Encoder Source Selection",
-    "stem": "Why must the active ATC Mode S transponder altitude reporting source be switched to the same Air Data Computer (ADC) feeding the active autopilot in RVSM airspace?",
+    "learning_objective": "North Atlantic High Level Airspace (NAT HLA)",
+    "stem": "What are the vertical limits and mandatory navigation authorizations required to operate in North Atlantic High Level Airspace (NAT HLA)?",
     "options": [
       {
         "id": "A",
-        "text": "To conserve electrical generator power at high flight levels.",
+        "text": "FL330 to FL390 inclusive, requiring only standard domestic RNAV 5 approval and single HF communication voice transceiver under standard operating conditions and criteria.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Because the standby altimeter transponder automatically disconnects in RVSM.",
+        "text": "FL180 to FL600 inclusive, requiring mandatory CPDLC controller communication and operational satellite telephone datalink.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "To ensure that the altitude displayed to ATC radar controllers exactly matches the altitude data used by the active autopilot to maintain level flight, avoiding false altitude split alarms on ATC ground safety nets (MSAW / CLAM).",
+        "text": "FL285 to FL420 inclusive, requiring NAT HLA approval, RVSM approval, and dual Long Range Navigation Systems (RNP 10 or RNP 4).",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "To activate automatic satellite ADS-C position reports.",
+        "text": "FL290 to FL370 inclusive, requiring triple inertial navigation systems and ground radar tracking along whole track segments in standard atmospheric conditions.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Transponder Coupling in RVSM\n* In RVSM airspace, the **active Transponder MUST be coupled to the Primary Altimeter / ADC that is actively controlling the Autopilot**.\n* This prevents discrepancies between the altitude flown by the autopilot and the altitude encoded and broadcast to ATC ground radar.",
+      "text": "### NAT HLA (ICAO NAT Doc 007)\n* **Boundaries:** **FL285 to FL420** within the North Atlantic Oceanic FIRs.\n* **Requirements:**\n  1. NAT HLA approval (SPA.HLA).\n  2. RVSM approval (SPA.RVSM).\n  3. **Dual Long-Range Navigation Systems (LRNS)** meeting RNP 10 (or RNP 4 for reduced separation / PBCS).",
       "references": [
-        "ICAO Doc 9574 Chapter 4",
-        "EASA Part-SPA.RVSM.105"
+        "ICAO NAT Doc 007",
+        "EASA Part-SPA.HLA.100"
       ]
     },
     "metadata": {
-      "difficulty": 0.25
+      "difficulty": 0.3
     }
   },
   {
     "id": "NJ-RVSM-012",
     "subject_id": "espacio-rvsm-pbn-lvo",
-    "learning_objective": "Altimetry Systems Discrepancy > 200 ft In-Flight",
-    "stem": "If an in-flight altimeter crosscheck reveals a split of 230 ft between the Captain's and First Officer's primary altimeters at FL370, what immediate actions are required?",
+    "learning_objective": "PBCS (Performance-Based Communication and Surveillance)",
+    "stem": "In modern oceanic operations (NAT HLA / Pacific), what do the RCP 240 and RSP 180 performance specifications represent?",
     "options": [
       {
         "id": "A",
-        "text": "Disconnect both pitot-static heat switches to re-calibrate sensors.",
+        "text": "Maximum cruise True Airspeed of 240 kt and maximum turn bank angle of 180 degrees during holding procedures under standard operating conditions and criteria.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Immediately deploy speedbrakes and execute an emergency descent to 10,000 ft.",
+        "text": "Radar beacon pulse width of 240 microseconds and sweep azimuth interval of 180 milliseconds at primary radar stations in standard atmospheric conditions.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Crosscheck both primary altimeters against the standby altimeter, determine the defective primary altimeter if possible, couple the autopilot to the operational altimeter, and immediately notify ATC: 'UNABLE RVSM DUE TO EQUIPMENT' to obtain revised separation.",
-        "is_correct": true
+        "text": "Radio altimeter callout threshold of 240 ft and maximum runway roll stop distance of 180 meters in contaminated snow.",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "Ignore the split if the cabin altitude is normal.",
-        "is_correct": false
+        "text": "Required Communication Performance (99.9% messages delivered within 240s) and Required Surveillance Performance (surveillance within 180s).",
+        "is_correct": true
       }
     ],
     "explanation": {
-      "text": "### Altimeter Split > 200 ft in RVSM\n* **Threshold:** Any difference **> 200 ft** violates RVSM certification.\n* **Actions:**\n  1. Compare with Standby Altimeter to identify the faulty ADC.\n  2. Switch AP coupling to the reliable altimeter.\n  3. Notify ATC: `UNABLE RVSM DUE TO EQUIPMENT`.\n  4. Coordinate revised flight level (e.g. descend below FL290 or obtain 2,000 ft separation).",
+      "text": "### Performance-Based Communication and Surveillance (PBCS)\n* **RCP 240:** Required Communication Performance: 99.9% of communication transactions (CPDLC) completed within **240 seconds**.\n* **RSP 180:** Required Surveillance Performance: 99.9% of surveillance reports (ADS-C) delivered within **180 seconds**.\n* PBCS enables reduced oceanic longitudinal and lateral separations (e.g., 30 NM / 23 NM / 4-minute separation).",
       "references": [
-        "ICAO Doc 9574 Chapter 5",
-        "EASA Part-SPA.RVSM.110"
+        "ICAO Doc 9869 (PBCS Manual)",
+        "ICAO NAT Doc 007"
       ]
     },
     "metadata": {
-      "difficulty": 0.25
+      "difficulty": 0.35
     }
   },
   {
     "id": "NJ-RVSM-013",
     "subject_id": "espacio-rvsm-pbn-lvo",
-    "learning_objective": "North Atlantic High Level Airspace (NAT-HLA) Approvals",
-    "stem": "What specialized navigation and communication equipment is mandatory to enter and operate in the North Atlantic High Level Airspace (NAT-HLA)?",
+    "learning_objective": "Oceanic Contingency Procedures - Turn and Offset (Revised ICAO)",
+    "stem": "Under the revised ICAO Oceanic Contingency Procedures (effective 2019/2020), what is the standardized maneuver when unable to obtain an ATC clearance?",
     "options": [
       {
         "id": "A",
-        "text": "Single VOR receiver and VHF radio with squawk 2000.",
-        "is_correct": false
+        "text": "Turn at least 30 degrees to left or right, acquire a 5 NM parallel offset track, and climb or descend 300 ft (90 m) when established.",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "Only military encrypted UHF radios are authorized in NAT-HLA.",
+        "text": "Turn 90 degrees to route centerline, acquire a 15 NM offset, and climb or descend 1,000 ft at the halfway mark under standard operating conditions and criteria.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Dual Long-Range Navigation Systems (LRNS) approved for RNP 4 or RNP 10, RVSM approval, dual HF radios (or approved SATVOICE where permitted), CPDLC and ADS-C datalink capability.",
-        "is_correct": true
+        "text": "Maintain route centerline, broadcast Mayday on 121.5 MHz, and immediately dump fuel down to minimum go-around weight in standard atmospheric conditions.",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "Visual navigation tracking ocean surface swells.",
+        "text": "Perform a 180-degree tear-drop reversal turn on the track and descend directly to 10,000 ft at maximum placard Mach.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### NAT-HLA Equipment Requirements (ICAO NAT Doc 007)\n* **Navigation:** **Dual Long-Range Navigation Systems (LRNS)** meeting **RNP 4 / RNP 10**.\n* **Vertical:** **RVSM certification** (FL285 to FL420 in NAT).\n* **Communications:** Dual **HF radios**, **CPDLC (FANS 1/A)**, and **ADS-C**.",
+      "text": "### Revised ICAO Oceanic Contingency Procedures\n1. **Initial turn:** Turn at least **30° left or right** to leave the assigned route.\n2. **Offset:** Establish a **5 NM parallel offset** track.\n3. **Altitude change:** Once established on the 5 NM offset:\n   * If below FL410: Climb or descend by **300 ft (90 m)**.\n   * If above FL410: Climb or descend by **600 ft (180 m)**.\n4. Broadcast position, intentions, and calls on **121.5 MHz and 123.45 MHz**; turn on all exterior lights.",
       "references": [
-        "ICAO NAT Doc 007",
-        "EASA Part-SPA.NAT-HLA"
+        "ICAO Doc 4444 (PANS-ATM)",
+        "ICAO NAT Doc 007"
       ]
     },
     "metadata": {
-      "difficulty": 0.3
+      "difficulty": 0.35
     }
   },
   {
     "id": "NJ-RVSM-014",
     "subject_id": "espacio-rvsm-pbn-lvo",
-    "learning_objective": "Wake Turbulence Separation Standards & Categorization",
-    "stem": "Under ICAO / EASA wake turbulence classifications (Super, Heavy, Medium, Light), what is the wake turbulence category of executive jets such as the Challenger 350, Citation Latitude, and Phenom 300, and what minimum radar wake separation applies when following a Heavy jet on final approach?",
+    "learning_objective": "RVSM Altimetry System Error (ASE) vs Total Vertical Error (TVE)",
+    "stem": "In RVSM certification, what is the definition and maximum allowable threshold for Altimetry System Error (ASE)?",
     "options": [
       {
         "id": "A",
-        "text": "Separation is determined by passenger count rather than certified mass.",
+        "text": "Total vertical displacement caused by pilot handling error, which must not exceed 500 ft under manual stick flying under standard operating conditions and criteria.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Wake turbulence is negligible behind widebody aircraft above 1,000 ft AGL.",
-        "is_correct": false
+        "text": "Difference between indicated altitude and true pressure altitude, which must not exceed 245 ft (75 m) across all flight envelopes.",
+        "is_correct": true
       },
       {
         "id": "C",
-        "text": "All corporate jets are Heavy and require 2 NM separation.",
+        "text": "Mechanical lag in the standby pneumatic capsule altimeter, which is restricted to 150 ft during rapid emergency descent.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Phenom 300 is Light (MTOW <= 7,000 kg), while Citation Latitude and Challenger 350 are Medium (7,000 kg < MTOW < 136,000 kg); when following a Heavy aircraft on final approach, minimum radar wake separation is 5 NM for Medium and 6 NM for Light (or 2 to 3 minutes time separation).",
-        "is_correct": true
+        "text": "Vertical displacement caused by geoid undulation over mountain ranges, which must remain within 400 ft of WGS-84 reference in standard atmospheric conditions.",
+        "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### ICAO Wake Turbulence Categories (Doc 4444)\n* **Heavy (H):** MTOW ≥ 136,000 kg.\n* **Medium (M):** 7,000 kg < MTOW < 136,000 kg (Challenger, Latitude, Global).\n* **Light (L):** ≤ 7,000 kg (Phenom 300, Citation Mustang).\n* **Radar Separation behind Heavy on Approach:**\n  - Behind Heavy -> **Medium = 5 NM**\n  - Behind Heavy -> **Light = 6 NM**",
+      "text": "### Altimetry System Error (ASE)\n* **ASE:** The difference between the altitude indicated by the altimeter display (assuming correct subscale setting) and the **true pressure altitude** at undisturbed ambient pressure.\n* **RVSM Limit:** ASE must not exceed **±245 ft (±75 m)** across the certified RVSM operating envelope.\n* Total Vertical Error (TVE) combines ASE, Assigned Altitude Deviation (AAD), and Flight Technical Error (FTE).",
       "references": [
-        "ICAO Doc 4444 (PANS-ATM Chapter 5)",
-        "EASA SERA.8015"
+        "ICAO Doc 9574",
+        "EASA CS-ACNS"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "NJ-RVSM-015",
+    "subject_id": "espacio-rvsm-pbn-lvo",
+    "learning_objective": "ACAS II / TCAS II Version 7.1 Mandatory Requirement",
+    "stem": "Under EASA Part-AUR (AUR.ACAS.1005), what is the mandatory TCAS standard for turbine-powered aeroplanes operating in European airspace?",
+    "options": [
+      {
+        "id": "A",
+        "text": "TCAS I audible traffic proximity warnings for all aircraft with MTOM above 2,000 kg or passenger seating capacity above 4 under standard operating conditions and criteria.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "ADS-B In direct display without any requirement for airborne collision avoidance resolution advisory logic systems.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "ACAS II software Version 7.1, which introduces the 'Level-Off' Resolution Advisory and improved reversal logic during encounters.",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "TCAS II Version 7.0 provided the flight crew completes annual recurrent ground refresher modules on wake turbulence avoidance in standard atmospheric conditions.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### TCAS II Version 7.1 Requirement (AUR.ACAS.1005)\n* All turbine-powered aeroplanes with MTOM > 5,700 kg or MOPSC > 19 operating in European airspace must be equipped with **ACAS II Version 7.1**.\n* Key improvements in v7.1:\n  1. Replaces `Adjust Vertical Speed, Adjust` with the clearer `Level Off, Level Off` RA.\n  2. Improved logic for **reversal RAs** when the other aircraft does not comply.",
+      "references": [
+        "Commission Regulation (EU) No 1332/2011 (Part-AUR)",
+        "ICAO Annex 10 Vol IV"
       ]
     },
     "metadata": {
@@ -532,115 +570,79 @@
     }
   },
   {
-    "id": "NJ-RVSM-015",
-    "subject_id": "espacio-rvsm-pbn-lvo",
-    "learning_objective": "GNSS RAIM (Receiver Autonomous Integrity Monitoring) Outage",
-    "stem": "What is the operational significance of a RAIM (Receiver Autonomous Integrity Monitoring) predictive outage prior to dispatch on an RNP approach?",
-    "options": [
-      {
-        "id": "A",
-        "text": "A RAIM outage automatically disconnects the VHF communications transceivers.",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "RAIM uses redundant satellite signals (minimum 5 satellites with good geometry, or 4 with Baro-VNAV) to detect satellite faults; if a predictive RAIM outage is forecast at the destination ETA, the crew cannot plan an RNP APCH unless alternative ground-based navigation aids (ILS/VOR) are available.",
-        "is_correct": true
-      },
-      {
-        "id": "C",
-        "text": "RAIM outages only affect aircraft equipped with inertial reference platforms.",
-        "is_correct": false
-      },
-      {
-        "id": "D",
-        "text": "RAIM is only required for military tactical night operations.",
-        "is_correct": false
-      }
-    ],
-    "explanation": {
-      "text": "### RAIM Prediction & RNP Navigation (SPA.PBN)\n* **RAIM (Receiver Autonomous Integrity Monitoring):** Requires **≥ 5 satellites** (fault detection) or **≥ 6 satellites** (fault exclusion / FDE).\n* If pre-flight RAIM prediction indicates an integrity outage at ETA, dispatch based solely on GPS/RNP approach is **PROHIBITED**; ground-based conventional aids (ILS/VOR) or suitable alternates are required.",
-      "references": [
-        "EASA Part-SPA.PBN.105",
-        "ICAO Doc 9613"
-      ]
-    },
-    "metadata": {
-      "difficulty": 0.3
-    }
-  },
-  {
     "id": "NJ-RVSM-016",
-    "subject_id": "netjets-interview",
-    "learning_objective": "Navigation: North Atlantic High Level Airspace (NAT-HLA) Equipment",
-    "stem": "What navigation equipment approvals are mandatory to operate in North Atlantic High Level Airspace (NAT-HLA) between FL285 and FL420?",
+    "subject_id": "espacio-rvsm-pbn-lvo",
+    "learning_objective": "TCAS Resolution Advisory (RA) - Crew Response and Priority",
+    "stem": "What is the mandatory operational procedure and pilot priority when a TCAS Resolution Advisory (RA) conflicts with an ATC clearance?",
     "options": [
       {
         "id": "A",
-        "text": "Two independent Long-Range Navigation Systems (LRNS) approved for RNP 4 or RNP 10, RVSM operational approval, and dual long-range communications (HF / CPDLC / SATVOICE).",
-        "is_correct": true
+        "text": "Follow the ATC clearance immediately and ignore the TCAS RA unless the conflicting traffic is visually acquired and identified under standard operating conditions and criteria.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "No specific approval is needed if following an airliner visually.",
+        "text": "Request immediate clarification from ATC before executing any pitch change while maintaining present assigned cruise flight level in standard atmospheric conditions.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "A single VOR receiver and Mode A transponder.",
+        "text": "Level off at the midpoint between the TCAS command and assigned ATC altitude while squawking 7600 on the active transponder.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "NAT-HLA only requires visual navigation by celestial stars.",
-        "is_correct": false
+        "text": "Follow the TCAS RA immediately, disconnect the autopilot if needed, disclaim ATC clearance, and inform ATC as soon as workload permits.",
+        "is_correct": true
       }
     ],
     "explanation": {
-      "text": "### 🌊 NAT-HLA Oceanic Navigation Mandate (ICAO Doc 007 / Part-SPA.NAT-HLA)\n* **Airspace:** FL285 to FL420 across the North Atlantic.\n* **Mandatory Specs:**\n  1. **Dual LRNS:** 2 independent Inertial Reference Systems (IRS/IRU) or multi-sensor FMS with GPS.\n  2. **RNP 4 / RNP 10:** Lateral accuracy for oceanic tracks.\n  3. **RVSM:** 1,000 ft vertical separation capability.\n  4. **Communications:** Dual HF radios and SATCOM/CPDLC Data Link.",
+      "text": "### TCAS RA vs ATC Clearance (SERA.11014 / ICAO Doc 8168)\n* **TCAS RA takes absolute priority** over ATC instructions.\n* Pilots must follow the RA immediately, even if it contradicts an ATC clearance.\n* Never maneuver in the opposite direction of an RA.\n* Inform ATC as soon as possible: `[Callsign] TCAS RA` and when clear: `[Callsign] CLEAR OF CONFLICT, RETURNING TO [Assigned Altitude]`.",
       "references": [
-        "ICAO Doc 007 North Atlantic Operations • EASA Part-SPA.NAT-HLA"
+        "EASA SERA.11014",
+        "ICAO Doc 8168 (PANS-OPS)"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.2
     }
   },
   {
     "id": "NJ-RVSM-017",
-    "subject_id": "netjets-interview",
-    "learning_objective": "Navigation: ADS-B Out Mandate in European Airspace",
-    "stem": "What is the certified standard for ADS-B Out mandated in European airspace under Commission Implementing Regulation (EU) No 1207/2011 for aircraft with MTOM > 5,700 kg?",
+    "subject_id": "espacio-rvsm-pbn-lvo",
+    "learning_objective": "Mode S Transponder Enhanced Surveillance (EHS)",
+    "stem": "Which Downlinked Aircraft Parameters (DAPs) are transmitted by Mode S Enhanced Surveillance (EHS) transponders in European airspace?",
     "options": [
       {
         "id": "A",
-        "text": "1090 MHz Extended Squitter (1090ES) Mode S transponder broadcasting GNSS-derived position, altitude, velocity, and flight identification with certified Design Assurance (DO-260B / ELS & EHS).",
+        "text": "Magnetic heading, Indicated Airspeed (IAS), Mach number, Selected Altitude (MCP/FCU), Roll Angle, Track Angle Rate, and True Airspeed.",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "978 MHz Universal Access Transceiver (UAT) only.",
+        "text": "Cabin pressurization altitude, passenger cabin door lock status, and real-time engine vibration sensor frequency readings under standard operating conditions and criteria.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "ADS-B Out is optional for private business aviation.",
+        "text": "Remaining usable fuel mass, engine oil temperature, hydraulic system reservoir pressure, and brake carbon temperature metrics in standard atmospheric conditions.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "VHF voice radio broadcasts every 10 minutes.",
+        "text": "FMS flight plan route waypoint list, estimated time of arrival at destination, and alternate aerodrome weather forecast data.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### 📡 ADS-B Out Mandate in Europe (SPI Regulation)\n* **Standard:** **1090 MHz Extended Squitter (DO-260B / ED-102A)**.\n* **Data Broadcast:** GPS position, pressure altitude, ground track, ground speed, callsign, emergency status.\n* **Difference from US:** The US permits 978 MHz UAT below FL180, but **Europe exclusively mandates 1090 MHz Extended Squitter** for all IFR flights.",
+      "text": "### Mode S Enhanced Surveillance (EHS) DAPs\nMode S EHS downlinks 8 parameters directly to ATC radar displays:\n1. **MCP/FCU Selected Altitude**\n2. **Roll Angle**\n3. **True Track Angle**\n4. **Track Angle Rate (or True Airspeed)**\n5. **Ground Speed**\n6. **Magnetic Heading**\n7. **Indicated Airspeed (IAS) / Mach Number**\n8. **Barometric Altitude Rate (Vertical Rate)**.",
       "references": [
-        "Regulation (EU) No 1207/2011 • EASA CS-ACNS"
+        "EUROCONTROL Mode S EHS Standard",
+        "EASA CS-ACNS"
       ]
     },
     "metadata": {
-      "difficulty": 0.4
+      "difficulty": 0.35
     }
   }
 ]

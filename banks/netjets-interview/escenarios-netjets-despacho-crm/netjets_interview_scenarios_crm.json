@@ -2,73 +2,35 @@
   {
     "id": "NJ-CRM-001",
     "subject_id": "escenarios-netjets-despacho-crm",
-    "learning_objective": "NetJets Owner Interaction vs Uncompromised Safety",
-    "stem": "Scenario: A high-profile fractional Owner approaches the flight deck in Geneva, stating that due to an urgent corporate acquisition meeting in London, you must depart immediately despite destination fog reporting RVR 200 m (CAT I only airport, minima 550 m, no improvement forecast, no take-off alternate within fuel range). How should the NetJets Commander handle this situation?",
+    "learning_objective": "Captain Incapacitation In-Flight Scenario",
+    "stem": "During cruise flight at FL390, the Captain becomes suddenly unresponsive and slumped over the controls. What is the immediate sequence of actions for the First Officer?",
     "options": [
       {
         "id": "A",
-        "text": "Politely and assertively explain that safety is our absolute priority and EASA regulations legally prohibit departing when weather is below legal limits; immediately coordinate with Lisbon OCC/Dispatch to provide viable alternatives (e.g. routing to London Stansted or Luton with CAT III autoland capability, arranging executive ground transport).",
+        "text": "Assume control, engage/verify autopilot, declare 'MAYDAY MAYDAY MAYDAY INCAPACITATION' to ATC, call cabin crew (or relief) to secure the Captain and slide seat fully aft, and land at nearest suitable airport.",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Depart immediately and plan to perform a visual approach below cloud base over the city.",
+        "text": "Leave flight controls to administer CPR in the flight deck aisle while allowing the aircraft to drift down unmonitored.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Accept the flight on the condition that the Owner signs a liability waiver acknowledging personal risk.",
+        "text": "Continue the flight to the scheduled destination without notifying ATC to avoid causing passenger panic in the cabin.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Delegate the decision to the First Officer so the Captain avoids direct confrontation with the VIP.",
+        "text": "Turn off all flight directors and attempt to wake the Captain by shaking the control column vigorously.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### NetJets Interview Benchmark: The Owner Mindset & Uncompromising Safety\n* **Safety Standard:** Flight safety and EASA regulations are **100% non-negotiable**.\n* **Customer Service Approach:** Never respond with aggressive or dismissive rejection. Use **empathy, professionalism, and proactive solutions**.\n* Explain the constraint clearly (*'Our commitment to your safety and aviation law means we cannot land at that specific runway'*), then immediately provide **solutions** arranged with Dispatch (e.g. divert to a CAT III equipped airport with luxury ground transport).",
+      "text": "### Pilot Incapacitation Drill (EASA Part-CAT / NetJets SOP)\n1. **Fly the Aircraft:** Assume control, engage/verify autopilot and autothrottle.\n2. **Secure the Incapacitated Pilot:** Slide seat fully aft, lock harness to prevent slump on controls, lock rudder pedals.\n3. **Declare Distress:** Broadcast `MAYDAY MAYDAY MAYDAY, [Callsign], PILOT INCAPACITATION`.\n4. **Call Crew:** Signal emergency to cabin crew to provide medical assistance and oxygen.\n5. **Divert:** Land at the nearest suitable aerodrome with medical facilities.",
       "references": [
-        "NetJets Europe Operations Manual (MOA 1.4)",
-        "NetJets Crew Resource Management & Executive Service Standards"
-      ]
-    },
-    "metadata": {
-      "difficulty": 0.2
-    }
-  },
-  {
-    "id": "NJ-CRM-002",
-    "subject_id": "escenarios-netjets-despacho-crm",
-    "learning_objective": "MEL Rectification Intervals and Day of Discovery (ORO.MLR.105)",
-    "stem": "Under EASA Part-ORO.MLR.105 and CS-MMEL, what are the standard rectification intervals for MEL Categories A, B, C, and D, and how is the 'Day of Discovery' calculated?",
-    "options": [
-      {
-        "id": "A",
-        "text": "All categories expire after 24 flight hours.",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "Cat A: specific timeframe specified in the item remarks; Cat B: 3 consecutive calendar days (72 hours); Cat C: 10 consecutive calendar days (240 hours); Cat D: 120 consecutive calendar days. The Day of Discovery (the day the defect is entered in the ATL) is EXCLUDED from the count.",
-        "is_correct": true
-      },
-      {
-        "id": "C",
-        "text": "Cat A: 1 day; Cat B: 2 days; Cat C: 3 days; Cat D: 4 days; the day of discovery counts as Day 1.",
-        "is_correct": false
-      },
-      {
-        "id": "D",
-        "text": "MEL intervals only apply during scheduled A-checks at base maintenance.",
-        "is_correct": false
-      }
-    ],
-    "explanation": {
-      "text": "### MEL Rectification Intervals (CS-MMEL & ORO.MLR.105)\n* **Category A:** Specific time limit stated in the MEL remarks.\n* **Category B:** **3 consecutive calendar days** (72 hours).\n* **Category C:** **10 consecutive calendar days** (240 hours).\n* **Category D:** **120 consecutive calendar days**.\n* **Day of Discovery Rule:** The calendar day on which the defect was recorded in the Aircraft Technical Log (ATL) **DOES NOT COUNT**. The clock starts at 00:00 local time on the following calendar day.",
-      "references": [
-        "EASA CS-MMEL.140",
-        "EASA Part-ORO.MLR.105"
+        "ICAO Doc 8168",
+        "EASA AMC1 CAT.OP.MPA.210"
       ]
     },
     "metadata": {
@@ -76,37 +38,75 @@
     }
   },
   {
-    "id": "NJ-CRM-003",
+    "id": "NJ-CRM-002",
     "subject_id": "escenarios-netjets-despacho-crm",
-    "learning_objective": "MEL (M) Maintenance Procedures vs (O) Operational Procedures",
-    "stem": "What is the key regulatory and operational distinction between an (M) procedure and an (O) procedure in the Minimum Equipment List (MEL)?",
+    "learning_objective": "VIP Passenger Pressure to Land Below Minima",
+    "stem": "A high-profile VIP owner insists on landing at an airport with reported visibility below CAT I minima because of an urgent business meeting. What is the correct CRM and professional response?",
     "options": [
       {
         "id": "A",
-        "text": "(O) procedures require grounding the aircraft until an engineer arrives.",
+        "text": "Attempt an approach below Decision Height without visual references to satisfy owner commercial expectations.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "(M) stands for Mandatory and (O) stands for Optional.",
-        "is_correct": false
+        "text": "Firmly decline the request, clearly explaining regulatory safety limits and the approach ban law, and proceed to the designated legal alternate airport while keeping passengers informed.",
+        "is_correct": true
       },
       {
         "id": "C",
-        "text": "(M) procedures can be skipped on return flights to base.",
+        "text": "Turn off the cockpit voice recorder and land visually using the synthetic vision primary display.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "An (M) procedure requires a qualified maintenance certifying engineer (or trained/authorized crew if expressly allowed by the Operations Manual) to complete and sign off a physical technical action prior to flight; an (O) procedure is an operational procedure executed by the flight crew during flight preparation or in-flight.",
-        "is_correct": true
+        "text": "Hand over flight controls to the First Officer to avoid personal administrative liability for the violation.",
+        "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### MEL (M) vs (O) Procedures\n* **(M) Maintenance Procedure:** Technical task (e.g. pulling/collaring circuit breakers, installing blanking plates, manual valve securing). Must be performed and certified by **licensed maintenance personnel** (or authorized crew if designated in MOA).\n* **(O) Operational Procedure:** Task performed by the **flight crew** (e.g. crosscheck charts, apply performance penalties, alter FMS inputs).",
+      "text": "### Authority & Commercial Pressure CRM (CAT.GEN.MPA.105)\n* Safety and regulatory compliance **supersede any passenger or commercial pressure**.\n* Under EASA **CAT.OP.MPA.305 (Approach Ban)**, attempting an approach below minima is illegal.\n* Professional CRM technique: Empathetic, calm, yet uncompromising explanation of safety and law, executing the diversion safely.",
       "references": [
-        "EASA CS-MMEL.135",
-        "EASA Part-ORO.MLR.105"
+        "EASA CAT.GEN.MPA.105",
+        "NetJets Operations Manual Part A Section 1"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "NJ-CRM-003",
+    "subject_id": "escenarios-netjets-despacho-crm",
+    "learning_objective": "FORDEC / DODAR Decision-Making Model",
+    "stem": "In aeronautical decision-making, what do the acronyms FORDEC and DODAR represent when managing an unexpected in-flight malfunction?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Military radar interception formations used exclusively during sovereign airspace border incursions.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Automated software protocols that override pilot flight controls during severe microburst encounters.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Facts/Diagnosis, Options, Risks/Decide, Decision/Action, Execution/Assign, Check/Review - structured models to ensure rational, collaborative threat and error management.",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Checklist mnemonics used solely by maintenance ground engineers during pre-flight refueling checks.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### FORDEC / DODAR Models\n* **FORDEC:** **F**acts -> **O**ptions -> **R**isks & Benefits -> **D**ecide -> **E**xecution -> **C**heck/Review.\n* **DODAR:** **D**iagnose -> **O**ptions -> **D**ecide -> **A**ssign tasks -> **R**eview.\n* Provides a non-linear, shared mental model for complex abnormal and emergency situations.",
+      "references": [
+        "EASA Part-ORO.FC.115 CRM Training",
+        "ICAO Doc 9803"
       ]
     },
     "metadata": {
@@ -116,35 +116,35 @@
   {
     "id": "NJ-CRM-004",
     "subject_id": "escenarios-netjets-despacho-crm",
-    "learning_objective": "CDL (Configuration Deviation List) vs MEL",
-    "stem": "What is the fundamental difference between the Minimum Equipment List (MEL) and the Configuration Deviation List (CDL)?",
+    "learning_objective": "Graded Assertiveness and PACE / Two-Challenge Rule",
+    "stem": "When a First Officer detects that the Captain is descending below minimum sector altitude without visual reference, what graded assertiveness protocol (PACE) should be applied?",
     "options": [
       {
         "id": "A",
-        "text": "There is no difference; CDL is the American term for MEL.",
+        "text": "Remain silent and assume the Captain has acquired visual ground contact through peripheral vision.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "The MEL is issued by ATC, while the CDL is issued by the airport operator.",
+        "text": "Immediately disconnect all avionics circuit breakers without verbal communication.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "The CDL applies only during landing gear extension malfunctions.",
+        "text": "Send a text message to airline dispatch operations requesting advice on the descent clearance.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "The MEL covers inoperative aircraft systems, instruments, and equipment; the CDL (part of the AFM) covers operations with missing secondary external aircraft parts (such as fairings, access panels, or vortex generators), specifying applicable performance and fuel burn penalties.",
+        "text": "Probe ('Are we on profile?'), Alert ('We are below MSA!'), Challenge ('Captain, pull up to 4,000 ft immediately!'), Emergency ('I have control, Go-Around!').",
         "is_correct": true
       }
     ],
     "explanation": {
-      "text": "### MEL vs CDL\n* **MEL (Minimum Equipment List):** Inoperative internal equipment, instruments, electrical buses, hydraulic systems.\n* **CDL (Configuration Deviation List):** Missing secondary external parts (flap track fairings, static discharge wicks, vortex generators). Included in the **Aircraft Flight Manual (AFM)** with specific weight, drag, and fuel burn penalties.",
+      "text": "### Graded Assertiveness (PACE Model)\n1. **P - Probe:** Ask a non-confrontational question (*'Confirm our cleared altitude?'*).\n2. **A - Alert:** State the factual threat (*'Captain, we are 500 ft below MSA'*).\n3. **C - Challenge:** Clear direct command (*'Captain, climb immediately to 4,000 ft'*).\n4. **E - Emergency / Intervention:** Take control (*'I HAVE CONTROL, GO-AROUND'*).\n* The **Two-Challenge Rule** dictates that if a pilot fails to respond to two consecutive alerts, the monitoring pilot must intervene and take control.",
       "references": [
-        "EASA CS-25 Appendix G (Configuration Deviation List)",
-        "EASA Part-CAT.POL.A.105"
+        "EASA Part-ORO.FC.115",
+        "FAA AC 120-51E Crew Resource Management"
       ]
     },
     "metadata": {
@@ -154,73 +154,111 @@
   {
     "id": "NJ-CRM-005",
     "subject_id": "escenarios-netjets-despacho-crm",
-    "learning_objective": "Dangerous Goods Notification to Captain (NOTOC)",
-    "stem": "What critical information must be provided in the Notification to Captain (NOTOC) prior to departure under EASA Part-SPA.DG.105 when carrying dangerous goods on a flight?",
+    "learning_objective": "Dispatch with MEL Item: Single Bleed Air Inoperative",
+    "stem": "An executive jet has an inoperative left engine bleed air system placarded under MEL. What operational and flight level restrictions typically apply under EASA Part-CAT?",
     "options": [
       {
         "id": "A",
-        "text": "Only the commercial invoice price and shipper's contact phone number.",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "UN/ID number, proper shipping name, class/division, net quantity per package, exact loading location in cargo compartments, and the ICAO emergency response drill code (ERG drill code).",
+        "text": "Flight level capped (typically FL250 or FL310) due to single pack capacity/depressurization descent profile, operation in icing conditions restricted/prohibited, and APU bleed must be operable.",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "The aircraft cannot fly with passengers under any circumstances and must be ferry-flown empty to base.",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "Dangerous goods information is confidential and hidden from the flight crew.",
+        "text": "No flight level or icing restrictions apply provided both pilots wear oxygen masks during the entire flight.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "The NOTOC is verbal and no written record is kept.",
+        "text": "The aircraft is restricted to unpressurized flight below 5,000 ft with cockpit windows cracked open.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### NOTOC Requirements (SPA.DG.105 & ICAO Doc 9284)\n* The **NOTOC (Notification to Captain)** is a mandatory written document given to the Commander before departure.\n* It includes: **UN Number, Proper Shipping Name, Hazard Class, Quantity, Compartment Location, and Emergency Drill Code**.\n* Essential for the crew to transmit precise emergency data to ATC and airport fire services (RFFS) in case of smoke or fire.",
+      "text": "### MEL Dispatch Operational Restrictions (Part-CAT.GEN.MPA.180)\n* MEL provisions for **inoperative engine bleed / air conditioning pack** typically:\n  1. **Cap maximum operating altitude** (e.g. FL250 or FL310) to ensure cabin pressurization can be maintained and descent to 10,000 ft is achievable in case of total failure.\n  2. **Restrict icing conditions** (bleed air insufficient for thermal anti-ice).\n  3. Require APU bleed to remain operable as backup.",
       "references": [
-        "EASA Part-SPA.DG.105",
-        "ICAO Technical Instructions (Doc 9284)"
+        "Master Minimum Equipment List (MMEL)",
+        "EASA Part-CAT.GEN.MPA.180"
       ]
     },
     "metadata": {
-      "difficulty": 0.25
+      "difficulty": 0.3
     }
   },
   {
     "id": "NJ-CRM-006",
     "subject_id": "escenarios-netjets-despacho-crm",
-    "learning_objective": "Lithium Battery Thermal Runaway in Cabin",
-    "stem": "Scenario: During cruise on a Citation Latitude, a passenger's personal electronic device (laptop/phone) exhibits smoke and sparks in the passenger cabin. What is the immediate, scientifically validated fire extinguishing procedure according to ICAO / EASA cabin safety guidelines?",
+    "learning_objective": "Unstabilized Approach at 1,000 ft IMC / 500 ft VMC",
+    "stem": "At 800 ft AGL in IMC on an ILS approach, airspeed is Vref + 22 kt, sink rate is 1,200 ft/min, and the aircraft is 1 dot high on glideslope. What is the mandatory call and action?",
     "options": [
       {
         "id": "A",
-        "text": "Extinguish the visible flame with a Halon or water extinguisher, then immediately douse the battery device with copious amounts of water or non-flammable liquid to cool the battery cells and halt the exothermic thermal runaway propagation; never use ice, smother with blankets, or place in an airtight bag.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Pack the device in ice from the galley bar to cool it down.",
+        "text": "Pilot Monitoring remains silent and allows Pilot Flying to increase vertical speed to 2,000 ft/min to capture the slope in accordance with approved airline operational procedures and regulatory requirements.",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Pilot Monitoring calls 'UNSTABILIZED, GO-AROUND'; Pilot Flying must immediately initiate a missed approach, execute go-around pitch/thrust commands, and inform ATC.",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "Cover the smoking device with heavy blankets and place it in the microwave oven.",
+        "text": "Pilot Flying extends full flight spoilers and pulls throttles to idle to bleed off speed over the runway numbers under standard aviation operational conditions and guidelines.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Immediately open the emergency exit door to vent the smoke overboard.",
+        "text": "Continue the approach provided the runway lights are glimpsed through fog patches at 200 ft under standard aviation operational conditions and guidelines.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Lithium Battery Thermal Runaway Procedure (ICAO Doc 9481 & EASA SIB)\n* **Step 1:** Extinguish open flames using **Halon or Water fire extinguisher**.\n* **Step 2 (Crucial):** **Pour copious water / non-flammable liquids** directly onto the device to **cool the internal cells** and stop chemical thermal runaway chain reactions.\n* **Warnings:** **NEVER USE ICE** (ice insulates heat and accelerates thermal runaway). **NEVER SMOTHER** with dry blankets.",
+      "text": "### Stabilized Approach Criteria (NetJets SOP / ICAO)\n* **Gate:** Must be stabilized by **1,000 ft AGL in IMC** (and 500 ft AGL in VMC).\n* **Criteria:** (1) On correct flight path/glideslope (within ±1 dot), (2) Airspeed **Vref to Vref + 10 kt**, (3) Rate of descent **<= 1,000 ft/min**, (4) Engines spooled, (5) Landing checklist complete.\n* **Non-Compliance:** Mandatory call `UNSTABILIZED, GO-AROUND`. Go-around is non-punitive and mandatory.",
       "references": [
-        "ICAO Doc 9481 (Emergency Response Guidance for Aircraft Incidents Involving Dangerous Goods)",
-        "EASA SIB 2017-01 (PED In-Flight Fire Management)"
+        "ICAO Doc 9803 / Flight Safety Foundation (FSF) ALAR Tool Kit",
+        "NetJets SOP Stabilized Approach"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "NJ-CRM-007",
+    "subject_id": "escenarios-netjets-despacho-crm",
+    "learning_objective": "In-Flight Lithium Battery Thermal Runaway in Cabin",
+    "stem": "A passenger's laptop battery experiences thermal runaway in the passenger cabin, producing dense toxic smoke and flames. What is the immediate response?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cover the device with dry blankets and ice cubes to smother oxygen supply without applying liquids in accordance with approved airline operational procedures and regulatory requirements in accordance with approved airline operational procedures and regulatory requirements.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Open cabin emergency exit door in flight to vent smoke directly into the ambient slipstream under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Don flight deck oxygen masks (100% / Emergency), establish crew comms, use Halon extinguisher to knock down flames, douse continuously with water/non-alcoholic liquid to cool cells, and place in thermal containment bag.",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Turn off aircraft battery switches and land on the nearest highway immediately under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Lithium Battery Thermal Runaway Drill (EASA SIB 2017-01)\n1. **Flight Deck Protection:** Don **100% oxygen with positive pressure** and smoke goggles.\n2. **Knock Down Flames:** Discharge **Halon / clean agent extinguisher**.\n3. **Cool the Battery:** Pour **water or non-flammable liquid** continuously (essential to absorb heat and stop propagation to adjacent cells; ice acts as an insulator and is prohibited!).\n4. **Containment:** Stow in certified fire containment bag.\n5. **Divert:** Land at the nearest suitable aerodrome.",
+      "references": [
+        "EASA SIB 2017-01 Lithium Battery Fire Mitigation",
+        "ICAO Doc 9481 Emergency Response Guidance"
       ]
     },
     "metadata": {
@@ -228,113 +266,75 @@
     }
   },
   {
-    "id": "NJ-CRM-007",
-    "subject_id": "escenarios-netjets-despacho-crm",
-    "learning_objective": "London City Airport (EGLC) Steep Approach Operations",
-    "stem": "What unique operational and aircraft certification requirements are mandatory to conduct operations at London City Airport (EGLC)?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Aircraft certified for Steep Approach (5.5° glidepath), specialized EGPWS steep approach mode activation, qualified flight crews with simulator training and recent experience, and strict performance calculations for short runway operations.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Single-pilot VFR operations only during high tide.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "Touchdown must occur at least 1,500 m down the runway.",
-        "is_correct": false
-      },
-      {
-        "id": "D",
-        "text": "Standard CAT III ILS autoland with 3.0° glidepath.",
-        "is_correct": false
-      }
-    ],
-    "explanation": {
-      "text": "### London City (EGLC) Operations & Steep Approach\n* **Glidepath:** **5.5°C** (compared to standard 3.0°C).\n* **Aircraft Certification:** Requires specific AFM Steep Approach supplement (e.g. modified fly-by-wire speedbrake logic on Falcon/Challenger/Phenom).\n* **Avionics:** GPWS/EGPWS steep approach mode must be engaged to prevent false terrain alerts.\n* **Crew Qualification:** Dedicated simulator steep approach training and line check.",
-      "references": [
-        "EASA Part-CAT.POL.A.245 (Steep approach procedures)",
-        "UK AIP EGLC AD 2.22"
-      ]
-    },
-    "metadata": {
-      "difficulty": 0.3
-    }
-  },
-  {
     "id": "NJ-CRM-008",
     "subject_id": "escenarios-netjets-despacho-crm",
-    "learning_objective": "High Density Altitude & Mountain Operations: Samedan (LSZS)",
-    "stem": "What are the primary operational hazards and performance considerations when operating at high-altitude Alpine airports such as Samedan/St. Moritz (LSZS, elevation 5,600 ft MSL)?",
+    "learning_objective": "Loss of Communication in RVSM / European Airspace",
+    "stem": "When experiencing total two-way radio communication failure in European IFR controlled airspace, what are the primary squawk and navigation actions under SERA.8035?",
     "options": [
       {
         "id": "A",
-        "text": "Indicated airspeed (IAS) increases by 50% on final approach.",
+        "text": "Squawk 7700, immediately turn 180 degrees, and descend to 3,000 ft above ground level in accordance with approved airline operational procedures and regulatory requirements in accordance with approved airline operational procedures and regulatory requirements.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Pressurization cannot be operated at high elevation airports.",
+        "text": "Squawk 7500, turn off all exterior lights, and land at the nearest military air base under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Significantly reduced engine thrust and aerodynamic climb gradient due to high density altitude, higher true airspeed (TAS) on approach leading to longer landing distances, severe mountain wave turbulence/downdrafts, and strict single-engine escape routing.",
-        "is_correct": true
+        "text": "Maintain present heading indefinitely until running out of fuel while broadcasting on 121.5 MHz under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "Landing distance is shorter because air resistance is reduced.",
-        "is_correct": false
+        "text": "Squawk 7600, maintain assigned level and speed for 7 minutes (if under radar vectoring) or per flight plan, then continue route and commence descent at destination per published flight plan.",
+        "is_correct": true
       }
     ],
     "explanation": {
-      "text": "### High Density Altitude Operations (Samedan LSZS)\n* At **5,600 ft MSL** in warm conditions, density altitude can exceed 8,000 ft.\n* **Effects:** For the same Indicated Airspeed (IAS), True Airspeed (TAS) and groundspeed are **much higher**, drastically increasing **landing distance and turn radii** in tight valleys.\n* Engine thrust and climb gradients are degraded; meticulous single-engine escape procedures are required.",
+      "text": "### Radio Communication Failure (SERA.8035 / ICAO Annex 2)\n* **Transponder:** Squawk **7600** immediately.\n* **In IMC / Controlled Airspace:**\n  1. Maintain assigned speed and level for **7 minutes** following failure to report (or vectoring clearance).\n  2. Continue according to current flight plan to the designated navigation aid / fix serving destination.\n  3. Hold until **Last Acknowledged EAT** (or ETA if no EAT received), then descend and commence instrument approach.",
       "references": [
-        "Swiss FOCA Airport Briefing LSZS (Samedan)",
-        "EASA SIB 2014-17 (Operations at High Elevation Mountain Aerodromes)"
+        "EASA SERA.8035",
+        "ICAO Annex 2 Rules of the Air"
       ]
     },
     "metadata": {
-      "difficulty": 0.3
+      "difficulty": 0.25
     }
   },
   {
     "id": "NJ-CRM-009",
     "subject_id": "escenarios-netjets-despacho-crm",
-    "learning_objective": "Structured Aeronautical Decision Making (FOR-DEC Model)",
-    "stem": "What is the structured CRM decision-making model 'FOR-DEC' commonly utilized during flight operations and command assessments?",
+    "learning_objective": "NITS Briefing to Cabin Crew in Emergencies",
+    "stem": "What structured information is transmitted to cabin crew during an emergency using the standardized NITS briefing format?",
     "options": [
       {
         "id": "A",
-        "text": "Fuel, Oxygen, Radar, Divert, Emergency, Climb.",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "Facts (gather data), Options (develop alternatives), Risks & Benefits (evaluate each course of action), Decision (select best option), Execution (implement plan), Check (monitor and review outcome).",
+        "text": "Nature of emergency, Intentions of the Commander, Time available before landing/impact, and Special instructions (e.g. evacuation, passenger bracing).",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "Number of passengers, Instrument flight rules clearance, Total fuel remaining, and Speed in knots in accordance with approved airline operational procedures and regulatory requirements.",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "Fast, Operational, Return, Divert, Execute, Complete.",
+        "text": "Navigational waypoint list, Indicated airspeed, Temperature aloft, and Standard barometric pressure under standard aviation operational conditions and guidelines.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Flight plan, Overview, Route, Decision, Engine, Cabin.",
+        "text": "National aviation authority contact numbers and passenger baggage claim receipts under standard aviation operational conditions and guidelines.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### FOR-DEC Decision Making Model\n* **F - Facts:** What is the actual situation? (Fuel, weather, systems, crew status).\n* **O - Options:** What can we do? (Hold, continue, divert to A, divert to B).\n* **R - Risks & Benefits:** What are the pros/cons of each option?\n* **D - Decision:** Choose the safest and most effective plan.\n* **E - Execution:** Distribute tasks (PF flies, PM communicates with ATC/Dispatch/Cabin).\n* **C - Check:** Continuous evaluation: is the plan working as expected?",
+      "text": "### NITS Briefing Structure\n* **N - Nature:** What is the problem (e.g. engine fire, landing gear malfunction)?\n* **I - Intentions:** What is the plan (e.g. diverting to London Luton, executing precautionary landing)?\n* **T - Time:** How much time remains (e.g. 15 minutes to touchdown)?\n* **S - Special Instructions:** Specific cabin preparations (e.g. prepare cabin for evacuation, brace positions).",
       "references": [
-        "EASA Part-ORO.FC.115 (CRM Training)",
-        "IATA Human Factors Guidance Material"
+        "EASA Part-ORO.CC.115",
+        "ICAO Doc 10002 Cabin Crew Safety Training"
       ]
     },
     "metadata": {
@@ -344,111 +344,111 @@
   {
     "id": "NJ-CRM-010",
     "subject_id": "escenarios-netjets-despacho-crm",
-    "learning_objective": "Clean Aircraft Concept and Holdover Time (HOT)",
-    "stem": "Under the 'Clean Aircraft Concept' (CAT.OP.MPA.250), what is the mandatory action if the calculated Holdover Time (HOT) expires before the aircraft commences the takeoff roll in active icing conditions?",
+    "learning_objective": "Bird Strike Encounter and Engine Damage Assessment",
+    "stem": "Following a flock of birds strike immediately after rotation at 300 ft AGL, engine #1 displays abnormal vibration and fluctuating N1. What is the priority flying and CRM order?",
     "options": [
       {
         "id": "A",
-        "text": "Takeoff is prohibited unless a formal Pre-Takeoff Contamination Check is conducted (inspecting representative surfaces directly from inside/outside) within 5 minutes before takeoff, or the aircraft returns for complete de-icing/anti-icing treatment.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Engage wing anti-ice for 10 seconds to blow away accumulated slush.",
+        "text": "Instantly pull the #1 fire switch and discharge both bottles before reaching 500 ft AGL in accordance with approved airline operational procedures and regulatory requirements in accordance with approved airline operational procedures and regulatory requirements.",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Fly the aircraft first (climb to safe altitude / MSA), verify positive rate and clean up airframe, ensure no hasty actions near the ground, diagnose with QRH/EICAS above 1,000 ft, and coordinate return/divert.",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "The Captain can take off if the airspeed indicator shows zero on the runway.",
+        "text": "Disconnect flight controls and turn around to inspect the engine intake visually from the cabin window under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Increase takeoff rotate speed (VR) by 20 kt and depart immediately.",
+        "text": "Execute an immediate dead-stick landing on the grass overrun off the departure runway under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Clean Aircraft Concept & Holdover Time Expiration\n* **Clean Aircraft Concept:** No aircraft shall take off with frost, ice, slush, or snow adhering to critical surfaces (wings, control surfaces, engine inlets).\n* If **Holdover Time (HOT) expires**, crew must:\n  1. Conduct a **Pre-Takeoff Contamination Check** (visual/tactile inspection of critical surfaces within 5 min of takeoff).\n  2. If clean surfaces cannot be guaranteed 100%, **return to de-icing pad for complete re-treatment**.",
+      "text": "### Low-Altitude Emergency Order of Priorities (Aviate - Navigate - Communicate)\n1. **Aviate:** Maintain pitch, speed, and positive climb. **No non-critical actions below 400–1,000 ft AGL**.\n2. **Navigate:** Fly published engine failure departure procedure (or climb to MSA).\n3. **Communicate / QRH:** At or above acceleration altitude (1,000 ft+), call for appropriate QRH checklist (Engine Abnormal Vibration / Damage) using deliberate confirmation callouts.",
       "references": [
-        "EASA Part-CAT.OP.MPA.250",
-        "AEA / SAE Ground De-icing / Anti-icing Guidelines"
+        "ICAO Doc 8168",
+        "NetJets Operations Manual Part A Section 8"
       ]
     },
     "metadata": {
-      "difficulty": 0.25
+      "difficulty": 0.2
     }
   },
   {
     "id": "NJ-CRM-011",
     "subject_id": "escenarios-netjets-despacho-crm",
-    "learning_objective": "Windshear Escape Maneuver Technique",
-    "stem": "What is the standard, FAA/EASA-approved windshear recovery flight technique when reactive windshear warning activates during initial climb or final approach?",
+    "learning_objective": "Sterile Flight Deck Rule (Part-CAT.GEN.MPA.175)",
+    "stem": "What is the regulatory definition and altitude boundary of the 'Sterile Flight Deck' procedure under EASA Part-CAT?",
     "options": [
       {
         "id": "A",
-        "text": "Retract landing gear immediately to reduce parasitic drag.",
+        "text": "The flight deck must be disinfected with antibacterial spray prior to passenger boarding in accordance with approved airline operational procedures and regulatory requirements in accordance with approved airline operational procedures and regulatory requirements.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Pitch nose-down to accelerate to Vmo.",
+        "text": "Pilots are barred from speaking to Air Traffic Control during the entire cruise flight level segment under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Immediately apply maximum Takeoff/Go-Around (TOGA) thrust, level the wings, smoothly rotate toward the Pitch Limit Indicator (PLI) or stick shaker angle of attack, and DO NOT change gear or flap configuration until clear of windshear and vertical climb is firmly established.",
+        "text": "During taxi, takeoff, landing, and all flight operations below 10,000 ft (or MSA, whichever is higher), all non-essential cockpit activities, casual conversation, and non-safety communications are prohibited.",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "Engage autopilot in vertical speed mode set to +1,000 fpm.",
+        "text": "Applies strictly when operating under oceanic track procedures outside VHF radar coverage under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Windshear Escape Maneuver\n* **Thrust:** Full **TOGA** power.\n* **Pitch:** Smoothly pitch up towards the **Pitch Limit Indicator (PLI)** / Stick Shaker.\n* **Configuration:** **DO NOT TOUCH FLAPS OR LANDING GEAR** (gear doors create transient drag spikes, and flap retraction reduces lift during critical recovery).\n* Only clean up configuration once **'CLEAR OF WINDSHEAR'** and climbing safely.",
+      "text": "### Sterile Flight Deck Rule (CAT.GEN.MPA.175)\n* **Scope:** Taxi, takeoff, initial climb, descent, approach, and landing **below 10,000 ft** (or during critical flight phases).\n* **Rule:** No crew member may engage in any activity (non-essential conversation, paperwork, eating) other than those required for the safe operation of the aircraft.",
       "references": [
-        "FAA Windshear Training Aid",
-        "EASA CS-25 Windshear Certification"
+        "EASA Part-CAT.GEN.MPA.175",
+        "AMC1 CAT.GEN.MPA.175"
       ]
     },
     "metadata": {
-      "difficulty": 0.25
+      "difficulty": 0.15
     }
   },
   {
     "id": "NJ-CRM-012",
     "subject_id": "escenarios-netjets-despacho-crm",
-    "learning_objective": "Pace Graded Assertiveness in Cockpit Intervention",
-    "stem": "Under modern CRM Pace Graded Assertiveness, what sequential communication steps should a First Officer follow if a Captain is fixated and descending below stabilized approach gates?",
+    "learning_objective": "Ramp Fuel Leak and Refueling Safety",
+    "stem": "During passenger boarding on the apron, the ground handler reports a steady fuel stream leaking from the left wing surge tank vent. What immediate action is required?",
     "options": [
       {
         "id": "A",
-        "text": "Probe ('Are you happy with this speed?') -> Alert ('We are 20 knots fast and above glideslope') -> Challenge ('Captain, we are unstabilized, go around!') -> Takeover ('I HAVE CONTROLS, GOING AROUND').",
-        "is_correct": true
+        "text": "Continue boarding rapidly and start the APU to ignite and burn off the spilled fuel vapors in accordance with approved airline operational procedures and regulatory requirements.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Pull the engine fire switches to abort the flight automatically.",
+        "text": "Close all aircraft doors and initiate engine start to utilize suction pumps to clear the leak under standard aviation operational conditions and guidelines.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Remain silent and let the Captain handle the landing.",
+        "text": "Ignore the leak provided the aircraft is departing within 15 minutes on a short domestic sector under standard aviation operational conditions and guidelines.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Disconnect the Flight Director and call dispatch on the radio.",
-        "is_correct": false
+        "text": "Stop refueling immediately, suspend boarding, brief cabin crew, establish fire precautions, and coordinate with airport fire services and maintenance before moving passengers.",
+        "is_correct": true
       }
     ],
     "explanation": {
-      "text": "### Graded Assertiveness (PACE Model)\n* **P - Probe:** State an observation gently (*'Captain, approach seems high'*).\n* **A - Alert:** State specific factual deviation (*'We are 15 kt fast and 1 dot above slope'*).\n* **C - Challenge:** Clear, direct callout (*'We are not stabilized at 1,000 ft, GO AROUND!'*).\n* **E - Emergency / Takeover:** If no response, the First Officer has a **legal duty to take control**: *'I HAVE CONTROLS, GOING AROUND'*.",
+      "text": "### Fuel Spill on Apron (CAT.OP.MPA.195)\n1. **Stop Fuel Flow:** Immediately signal emergency fuel cutoff.\n2. **Eliminate Ignition Sources:** Keep APU in current state (do not switch ON/OFF), avoid electrical switching.\n3. **Protect Passengers:** Suspend boarding/deplaning until safe path established; coordinate with Airport Fire Services (RFFS).",
       "references": [
-        "EASA Part-ORO.FC.115 (CRM)",
-        "Flight Safety Foundation: Stabilized Approach Guidelines"
+        "EASA Part-CAT.OP.MPA.195",
+        "ICAO Annex 14 Airport Services Manual"
       ]
     },
     "metadata": {
@@ -458,35 +458,35 @@
   {
     "id": "NJ-CRM-013",
     "subject_id": "escenarios-netjets-despacho-crm",
-    "learning_objective": "Unruly Passenger Management (Levels 1 to 4)",
-    "stem": "Scenario: During cruise, an intoxicated VIP passenger becomes physically abusive towards the flight attendant, attempts to force open the cockpit door, and makes threats to destroy the aircraft. What threat level is this under ICAO / EASA unruly passenger classifications, and what is the mandatory flight crew response?",
+    "learning_objective": "Hypoxia Recognition and Rapid Don Mask Action",
+    "stem": "During cruise at FL410, a flight crew member notices mild euphoria, tingling in fingertips, and sluggish visual scanning. What must be the immediate reflex action?",
     "options": [
       {
         "id": "A",
-        "text": "Ignore the passenger and continue to scheduled destination 4 hours away.",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "Level 4 (Attempted or actual breach of the flight crew compartment / security threat); immediate full Cockpit Lockdown, transponder code 7500 or 7700, declare emergency to ATC, and execute an immediate emergency diversion and landing at the nearest suitable airport with law enforcement intervention.",
+        "text": "Don emergency oxygen mask immediately (100% / Emergency positive pressure), establish crew interphone, check cabin altitude and rate of climb, and initiate emergency descent if cabin is unpressurized.",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "Drink warm coffee and perform deep breathing exercises to increase natural carbon dioxide absorption in accordance with approved airline operational procedures and regulatory requirements in accordance with approved airline operational procedures and regulatory requirements.",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "Offer the passenger complimentary champagne to de-escalate the conflict.",
+        "text": "Request a 500 ft climb from ATC to reach smoother and less dense air above the tropopause under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Level 1; the First Officer should leave the cockpit to physically restrain the passenger.",
+        "text": "Disconnect the autopilot and hand-fly steep turns to stimulate adrenaline circulation under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Unruly Passenger Levels (ICAO Doc 10117 / EASA)\n* **Level 1:** Disruptive behavior (verbal / non-compliance).\n* **Level 2:** Physically abusive behavior.\n* **Level 3:** Life-threatening behavior (weapons / serious injury).\n* **Level 4:** **Attempted or actual breach of the flight crew compartment**.\n* **Mandatory Response for Level 4:** **IMMEDIATE COCKPIT LOCKDOWN** (no flight deck door opening under any circumstance), squawk **7500/7700**, declare **MAYDAY**, land ASAP with police assistance.",
+      "text": "### Hypoxia Reflex Action\n* At **FL410**, Time of Useful Consciousness (TUC) is **30 to 60 seconds**.\n* Symptoms (euphoria, tingling, tunnel vision, cyanosis) must trigger **INSTANT DONNING OF THE OXYGEN MASK** without analyzing or hesitation.\n* Once oxygen is flowing at 100% positive pressure, verify cabin altitude and initiate emergency descent if depressurized.",
       "references": [
-        "ICAO Doc 10117 (Manual on the Legal Aspects of Unruly and Disruptive Passengers)",
-        "EASA Part-CAT.GEN.MPA.105"
+        "EASA Part-CAT.IDE.A.235",
+        "ICAO Doc 8984 Manual of Civil Aviation Medicine"
       ]
     },
     "metadata": {
@@ -496,73 +496,73 @@
   {
     "id": "NJ-CRM-014",
     "subject_id": "escenarios-netjets-despacho-crm",
-    "learning_objective": "Stabilized Approach Criteria (Gates 1,000 ft and 500 ft)",
-    "stem": "What are the universal Stabilized Approach criteria that must be satisfied by 1,000 ft AAL in IMC (and by 500 ft AAL in VMC)?",
+    "learning_objective": "Emergency Descent Altitude and Route Considerations",
+    "stem": "During an Emergency Descent following cabin depressurization in mountainous terrain, to what target altitude and speed should the aircraft descend?",
     "options": [
       {
         "id": "A",
-        "text": "Aircraft is on the correct lateral and vertical flight path (ILS/RNAV), speed is within VREF to VREF + 10 KIAS, aircraft is in final landing configuration (gear down, landing flaps), engines are spooled above flight idle, sink rate is no greater than 1,000 fpm, and all briefings/checklists are completed; if ANY parameter is not met at the gate, a MISSED APPROACH IS MANDATORY.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Stabilization is only required at 50 ft above touchdown.",
+        "text": "Descend directly to sea level at stall speed with landing gear and flaps fully extended in accordance with approved airline operational procedures and regulatory requirements in accordance with approved airline operational procedures and regulatory requirements.",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Descend to 10,000 ft (or Minimum Sector Altitude / MORA, whichever is higher), at maximum operating speed (Vmo/Mmo, or turbulent air penetration speed in severe chop) with speedbrakes extended.",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "Aircraft must be at full throttle with speedbrakes extended.",
+        "text": "Level off at FL250 and maintain long-range cruise speed until destination alternate is reached under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Captains can accept sink rates up to 2,500 fpm if landing runway is long.",
+        "text": "Descend in 1,000 ft steps while obtaining individual ATC clearances for every intermediate level under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Stabilized Approach Criteria (Flight Safety Foundation & EASA)\n* **Stabilization Gates:**\n  - **1,000 ft AAL in IMC**.\n  - **500 ft AAL in VMC**.\n* **Parameters:** Correct path, VREF to VREF+10 kt, landing configuration, sink rate ≤ 1,000 fpm, spooled thrust.\n* **Golden Rule:** If unstabilized at the gate: **GO AROUND IMMEDIATELY**.",
+      "text": "### Emergency Descent Target Altitude & Speed\n* **Target Altitude:** **10,000 ft** (safe breathing atmosphere without supplemental oxygen) or the **Minimum Off-Route Altitude (MORA) / Grid MORA / MSA** in mountainous areas.\n* **Speed:** **Vmo/Mmo** with speedbrakes deployed (or Vra / rough air speed if structural damage or severe turbulence is suspected).",
       "references": [
-        "Flight Safety Foundation: Approach-and-Landing Accident Reduction (ALAR)",
-        "EASA Safety Guidance Material on Stabilized Approaches"
+        "ICAO Doc 8168",
+        "AFM Emergency Descent Procedures"
       ]
     },
     "metadata": {
-      "difficulty": 0.2
+      "difficulty": 0.25
     }
   },
   {
     "id": "NJ-CRM-015",
     "subject_id": "escenarios-netjets-despacho-crm",
-    "learning_objective": "Rejected Takeoff (RTO) Decision Making at V1",
-    "stem": "What is the absolute dividing line and decision criteria between a 'High-Speed RTO' (above 80-100 KIAS up to V1) and continuing the takeoff at or above V1?",
+    "learning_objective": "Laser Illumination Encounter on Final Approach",
+    "stem": "During final approach at 1,500 ft AGL at night, a green laser beam strikes the cockpit windshield. What is the immediate crew action?",
     "options": [
       {
         "id": "A",
-        "text": "Always reject after V1 if an engine fire warning illuminates.",
+        "text": "Stare at the laser source to identify the street address and photograph the perpetrator with a mobile phone in accordance with approved airline operational procedures and regulatory requirements.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "At V1, the First Officer decides whether to stop or go without consulting the Captain.",
+        "text": "Execute an immediate 360-degree orbit over the laser position at 500 ft to pinpoint the location under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "In the high-speed regime (above 80-100 KIAS up to V1), reject ONLY for engine failure, fire, catastrophic warning, or aircraft unable to fly; at and above V1, the takeoff MUST BE CONTINUED, as stopping within the remaining runway length can no longer be guaranteed.",
+        "text": "Look away from the beam source, shield eyes, transfer flight control to the other pilot (if unaffected), verify instruments/autopilot engagement, avoid rubbing eyes, and advise ATC immediately.",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "Reject for any caution message up to VR rotate speed.",
+        "text": "Turn off all flight deck instrument screens and land using visual peripheral cues only under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Rejected Takeoff (RTO) Philosophy\n* **Low Speed (< 80 to 100 KIAS):** Reject for any system anomaly, amber caution, or door alert.\n* **High Speed (100 KIAS to V1):** Reject **ONLY for major critical events**: Engine Failure, Engine Fire, Predictive Windshear, or aircraft structurally unsafe to fly.\n* **At or Above V1:** **COMMIT TO FLY**. Stopping distance exceeds available runway.",
+      "text": "### Laser Illumination SOP (EASA SIB 2012-07 / ICAO Doc 9811)\n1. **Shield & Look Away:** Do not stare into the beam; shield eyes with hands/charts.\n2. **Hand Over Control:** The unaffected pilot takes control.\n3. **Maintain Instrument Flight:** Rely on flight instruments / autopilot (do not hand-fly visually if flash-blinded).\n4. **Do Not Rub Eyes:** Prevent corneal abrasion.\n5. **Report:** Transmit immediate pilot report to ATC.",
       "references": [
-        "FAA Takeoff Safety Training Aid",
-        "EASA CS-25 Accelerate-Stop Performance Standards"
+        "EASA SIB 2012-07 Laser Interference with Aviation",
+        "ICAO Doc 9811"
       ]
     },
     "metadata": {
@@ -572,35 +572,35 @@
   {
     "id": "NJ-CRM-016",
     "subject_id": "escenarios-netjets-despacho-crm",
-    "learning_objective": "Low Fuel State Diversion Decision-Making",
-    "stem": "Scenario: En-route to Nice (LFMN), strong unforecast headwinds reduce fuel upon arrival. ATC puts the aircraft into a holding pattern. Destination weather is fine, but alternate (Marseille LFML) requires 1,200 kg. You have 1,700 kg onboard (Final Reserve Fuel is 500 kg). What is your definitive holding limit fuel and course of action?",
+    "learning_objective": "Fuel Discrepancy / Fuel Leak Troubleshooting in Flight",
+    "stem": "During cruise, the FMS shows remaining fuel decreasing significantly faster than planned burn rate, and left tank quantity is dropping rapidly. What critical hazard must be prevented during fuel crossfeed?",
     "options": [
       {
         "id": "A",
-        "text": "Holding Limit Fuel (Divert Fuel) is exactly 1,700 kg (Alternate Fuel 1,200 kg + Final Reserve 500 kg); you cannot accept any holding delay and must immediately inform ATC: 'Unable to hold, proceeding to destination for immediate approach or diverting to alternate'; if holding is enforced, declare 'MINIMUM FUEL' and divert immediately to Marseille.",
-        "is_correct": true
+        "text": "Overfilling the auxiliary center fuselage tank and causing fuel vent siphonage in accordance with approved airline operational procedures and regulatory requirements in accordance with approved airline operational procedures and regulatory requirements.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Hold for 30 minutes and plan to land with zero fuel.",
+        "text": "Triggering false transponder altitude reporting alerts to ATC radar displays under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Divert to an unpaved grass strip 5 NM away without notifying ATC.",
+        "text": "Disrupting the electrical synchronization of the dual engine alternator generators under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Shut down one engine in the holding pattern to extend endurance.",
-        "is_correct": false
+        "text": "Feeding an engine fuel leak from the opposite tank, which would dump all remaining good fuel overboard; crossfeed must NOT be opened until confirming the leak is from an engine and shutting down that engine.",
+        "is_correct": true
       }
     ],
     "explanation": {
-      "text": "### Divert Fuel & Minimum Fuel Decision Logic\n* Divert Fuel = Alternate Fuel (1,200 kg) + Final Reserve Fuel (500 kg) = 1,700 kg.\n* With 1,700 kg on board, **Holding Time available = 0 minutes**.\n* Crew must either commence approach immediately or divert to alternate with zero delay.",
+      "text": "### In-Flight Fuel Leak QRH Principles\n* **Golden Rule:** **NEVER crossfeed to a leaking tank or to an unknown leak source!**\n* If fuel is leaking from an engine fuel line, crossfeeding will drain the intact opposite tank into the leak, resulting in total fuel exhaustion.",
       "references": [
-        "EASA CAT.OP.MPA.182",
-        "ICAO Doc 9976 (Flight Planning and Fuel Management)"
+        "QRH Fuel Leak Non-Normal Procedure",
+        "EASA AMC1 CAT.OP.MPA.180"
       ]
     },
     "metadata": {
@@ -610,35 +610,73 @@
   {
     "id": "NJ-CRM-017",
     "subject_id": "escenarios-netjets-despacho-crm",
-    "learning_objective": "Volcanic Ash Cloud Inadvertent Encounter",
-    "stem": "What are the immediate flight crew memory and checklist actions upon an inadvertent volcanic ash encounter in flight?",
+    "learning_objective": "CRM: Situational Awareness & Tunnel Vision",
+    "stem": "In high-workload scenarios, what CRM technique is most effective to break 'Confirmation Bias' and 'Tunnel Vision' (Fixation)?",
     "options": [
       {
         "id": "A",
-        "text": "Immediately disengage autothrottle, reduce thrust to flight idle (to reduce turbine operating temperatures below ash melting/glass-vitrification threshold), turn 180° to exit the cloud, turn ON continuous engine ignition and all anti-ice systems, start APU, and don oxygen masks at 100% if smoke/fumes enter the flight deck.",
+        "text": "Explicitly stepping back to conduct a situational review (e.g. 'What are we missing? Let us review our assumptions'), verbalizing the big picture, and soliciting input from the other crew member.",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Apply full TOGA thrust and climb at maximum angle of attack.",
+        "text": "Silencing all auditory cockpit warnings and focusing exclusively on fixing a single circuit breaker in accordance with approved airline operational procedures and regulatory requirements in accordance with approved airline operational procedures and regulatory requirements.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Open cabin outflow valves and turn off electrical generators.",
+        "text": "Accelerating the pace of checklist execution without cross-checking component switch positions under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Extend landing gear and speedbrakes to increase drag.",
+        "text": "Allowing the most senior pilot to make all decisions without questioning or communication under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Volcanic Ash Cloud Encounter (ICAO Doc 9691 & QRH)\n* **Thrust to IDLE:** Prevents volcanic ash from melting inside high-pressure turbine stages and resolidifying into glass that blocks turbine nozzles.\n* **Exit Cloud:** Perform a **descending 180°C turn**.\n* **Engine Reliability:** Engage **Continuous Ignition**, start **APU**, don **Oxy Masks** if fumes present.",
+      "text": "### Situational Awareness & Mitigating Fixation\n* **Technique:** Periodic **'Time-Out' / Situational Review**.\n* Verbalize the current status, ask open-ended questions (*'How does this match our plan? Is there anything we overlooked?'*), and cross-check multiple independent instruments.",
       "references": [
-        "ICAO Doc 9691 (Manual on Volcanic Ash, Radioactive Material and Toxic Chemical Clouds)",
-        "EASA SIB 2010-17"
+        "EASA Part-ORO.FC.115",
+        "ICAO Human Factors Training Manual (Doc 9683)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "NJ-CRM-018",
+    "subject_id": "escenarios-netjets-despacho-crm",
+    "learning_objective": "Handling Dual FMC Failure in European RNAV/RNP Airspace",
+    "stem": "If both Flight Management Computers (FMC) fail while operating on an RNAV 1 STAR in congested terminal airspace, what is the immediate pilot action?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Continue flying the published RNAV STAR track from memory using visual ground references in accordance with approved airline operational procedures and regulatory requirements in accordance with approved airline operational procedures and regulatory requirements.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Revert to basic heading/altitude autopilot modes, cross-tune conventional raw data VOR/DME navaids, inform ATC immediately ('UNABLE RNAV DUE DUAL FMC FAILURE'), and request radar vectors.",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Squawk 7500 on the transponder and execute an immediate emergency descent down to 1,000 ft under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Turn off both primary flight displays and attempt to reboot the aircraft electrical system in flight under standard aviation operational conditions and guidelines.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Dual FMC / Navigation Failure (PBN Contingency)\n1. Maintain aircraft control with basic HDG / ALT modes.\n2. **Advise ATC:** Broadcast `UNABLE RNAV 1 DUE DUAL FMC / NAVIGATION FAILURE, REQUEST RADAR VECTORS`.\n3. Tune conventional VOR/DME aids on backup radio control units.",
+      "references": [
+        "ICAO Doc 9613 (PBN Manual)",
+        "EASA Part-SPA.PBN.100"
       ]
     },
     "metadata": {
@@ -646,299 +684,269 @@
     }
   },
   {
-    "id": "NJ-CRM-018",
-    "subject_id": "netjets-interview",
-    "learning_objective": "NetJets Operations: Steep Approach Operations (London City EGLC)",
-    "stem": "What special aircraft and crew certification requirements apply to steep approach operations (5.5° glideslope) into London City Airport (EGLC)?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Only a standard Cat I ILS rating is required with no simulator training.",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "Steep approaches require flying with landing gear retracted until 200 ft AAL.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "Specific AFM steep approach airworthiness approval, dedicated autopilot/flight director steep approach mode, company OM approval, and pilot simulator steep approach qualification.",
-        "is_correct": true
-      },
-      {
-        "id": "D",
-        "text": "Steep approach certification is exclusively required for single-engine propeller aircraft.",
-        "is_correct": false
-      }
-    ],
-    "explanation": {
-      "text": "### 🏙️ London City (EGLC) Steep Approach Operations (EASA CS-25 App H)\n* **Glideslope:** 5.5° (compared to standard 3.0°).\n* **Certification:**\n  1. **Aircraft AFM:** Must be certified for glidepaths ≥ 4.5° (involves specific flap/speedbrake configurations to maintain speed stability on a steep gradient without accelerating).\n  2. **Crew:** Initial simulator qualification and recency (6 months) for Category C aerodromes (London City, Lugano, Sion, Samedan).",
-      "references": [
-        "EASA CS-25 Appendix H • NetJets Operations Manual Part C"
-      ]
-    },
-    "metadata": {
-      "difficulty": 0.5
-    }
-  },
-  {
     "id": "NJ-CRM-019",
-    "subject_id": "netjets-interview",
-    "learning_objective": "CRM: PACE Graded Assertiveness in Flight Deck Operations",
-    "stem": "In Airline and NetJets CRM, what are the four sequential escalation steps of the 'PACE' graded assertiveness communication model?",
+    "subject_id": "escenarios-netjets-despacho-crm",
+    "learning_objective": "Voluntary Safety Reporting and Just Culture (Regulation EU 376/2014)",
+    "stem": "Under European Regulation (EU) No 376/2014 and NetJets Safety Policy, what is the principle of 'Just Culture' regarding incident reporting?",
     "options": [
       {
         "id": "A",
-        "text": "Plan, Analyze, Communicate, Execute.",
+        "text": "Total immunity from prosecution for intentional criminal acts and sabotage committed by flight crew in accordance with approved airline operational procedures and regulatory requirements in accordance with approved airline operational procedures and regulatory requirements.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Probe ('Do you see our speed?'), Alert ('We are 15 knots fast on glideslope'), Challenge ('Captain, we are unstabilized, go around!'), Emergency ('I have controls, going around').",
-        "is_correct": true
-      },
-      {
-        "id": "C",
-        "text": "Pause, Acknowledge, Correct, Exit.",
+        "text": "A policy that automatically fires any pilot who files more than three voluntary safety reports per year under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "An environment where front-line staff are not punished for actions, omissions, or decisions commensurate with their experience/training, but where gross negligence and willful violations are not tolerated.",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Predict, Assess, Confirm, Evacuate.",
+        "text": "A judicial system that publishes pilot medical records on public internet databases for transparency under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### 🗣️ PACE Graded Assertiveness CRM Model\n* **1. Probe:** Inquire gently to confirm situational awareness (*\"Captain, what is our target speed here?\"*).\n* **2. Alert:** State the factual parameter deviation (*\"We are 15 knots fast and high on the PAPI\"*).\n* **3. Challenge:** Issue a direct, unambiguous command (*\"Captain, we are unstabilized below 1,000 ft, GO AROUND!\"*).\n* **4. Emergency:** Intervene physically if no response (*\"I HAVE CONTROLS, GOING AROUND!\"*).",
+      "text": "### Just Culture (Regulation (EU) No 376/2014)\n* **Just Culture:** A culture in which front-line operators are encouraged to provide safety-related information without fear of punishment for honest human errors, while maintaining a clear line for **unacceptable behavior (gross negligence, willful misconduct, intoxication)**.",
       "references": [
-        "ICAO Human Factors Training Manual • NetJets CRM Manual"
+        "Regulation (EU) No 376/2014",
+        "EASA SMS Guidance"
       ]
     },
     "metadata": {
-      "difficulty": 0.4
+      "difficulty": 0.2
     }
   },
   {
     "id": "NJ-CRM-020",
-    "subject_id": "netjets-interview",
-    "learning_objective": "Operational Scenarios: In-Flight Passenger Medical Incapacitation",
-    "stem": "During a transatlantic charter flight with NetJets fractional Owners, a passenger suffers symptoms of acute myocardial infarction (heart attack). What is the Commander's decision priority sequence?",
+    "subject_id": "escenarios-netjets-despacho-crm",
+    "learning_objective": "Rejected Takeoff (RTO) Decision Speed (V1) High-Speed Regime",
+    "stem": "At 5 knots below V1 on takeoff roll, the MASTER CAUTION illuminates for an electrical bus caution light. What is the correct decision and rationale?",
     "options": [
       {
         "id": "A",
-        "text": "Land immediately on the nearest unpaved visual airstrip without coordinating with ATC.",
+        "text": "Reject the takeoff immediately by applying maximum emergency braking and reverse thrust on the runway in accordance with approved airline operational procedures and regulatory requirements in accordance with approved airline operational procedures and regulatory requirements.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Contact MedAire / In-flight Telemedical assistance via SATCOM, administer high-flow first aid oxygen, request ATC priority for immediate diversion to nearest suitable airport with advanced coronary medical facilities.",
-        "is_correct": true
+        "text": "Abort the takeoff by steering the aircraft into the nearest grass infield at high speed under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
+        "is_correct": false
       },
       {
         "id": "C",
-        "text": "Continue to the planned destination 6 hours away to avoid disrupting passenger business meetings.",
+        "text": "Disengage all flight instruments and ask the First Officer to troubleshoot the electrical bus circuit breaker under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Ask the passengers to vote on whether to divert or continue.",
-        "is_correct": false
+        "text": "Continue the takeoff; in the high-speed regime (above 80-100 kt up to V1), an RTO is initiated ONLY for engine fire/failure, catastrophic failure, or aircraft unsafe to fly; minor cautions must be addressed in the air.",
+        "is_correct": true
       }
     ],
     "explanation": {
-      "text": "### 🚑 In-Flight Medical Emergencies (NetJets Protocol)\n* **Telemedical Support:** NetJets maintains 24/7 real-time SATCOM uplink with specialized aviation medical consultants (e.g. MedAire / Global Medical Assistance).\n* **Diversion Priority:** Medical doctors identify the best-equipped hospital facility in the region.\n* **ATC:** Declare `PAN PAN MEDICO` or `MAYDAY` to obtain direct routing, priority descent, and emergency ambulance on the ramp.",
+      "text": "### High-Speed RTO Philosophy (CS-25 / Takeoff Safety Training)\n* **Below 80–100 kt (Low-Speed Regime):** Reject for almost any malfunction, caution, or door warning.\n* **Above 80–100 kt up to V1 (High-Speed Regime):** **REJECT ONLY FOR:**\n  1. Engine failure or fire;\n  2. Predictive Windshear Warning;\n  3. Catastrophic structural failure or aircraft deemed unable to fly.\n* Rejecting for a simple Caution light at V1 - 5 kt introduces extreme runway overrun and brake fire risks.",
       "references": [
-        "ICAO Doc 9654 Guide on In-Flight Medical Emergencies • NetJets OM-A"
+        "FAA / EASA Takeoff Safety Training Aid",
+        "CS-25.107"
       ]
     },
     "metadata": {
-      "difficulty": 0.4
+      "difficulty": 0.25
     }
   },
   {
     "id": "NJ-CRM-021",
-    "subject_id": "netjets-interview",
-    "learning_objective": "CRM: Threat and Error Management (TEM) - Undesired Aircraft State",
-    "stem": "Under the Threat and Error Management (TEM) framework, what constitutes an 'Undesired Aircraft State' (UAS) and how should the flight crew respond?",
+    "subject_id": "escenarios-netjets-despacho-crm",
+    "learning_objective": "Runway Excursion Prevention on Wet / Contaminated Runways",
+    "stem": "When landing on a short, wet runway with gusty crosswind, which landing technique is essential to prevent runway excursion and hydroplaning?",
     "options": [
       {
         "id": "A",
-        "text": "Any flight where a passenger refuses to eat the catered meal.",
-        "is_correct": false
+        "text": "Aim for the normal touchdown zone, make a firm positive touchdown to break through water film, deploy ground spoilers/thrust reversers immediately, and maintain centerline with rudder and differential braking.",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "A delayed departure caused strictly by air traffic control ground hold programs.",
+        "text": "Float smoothly down the runway to achieve a greaser touchdown in the second half of the runway in accordance with approved airline operational procedures and regulatory requirements in accordance with approved airline operational procedures and regulatory requirements.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "A flight-crew-induced operational state or equipment condition that reduces safety margins (e.g. altitude overshoot, unstabilized approach, wrong flap setting); immediate priority is to recover to nominal state or execute missed approach.",
-        "is_correct": true
+        "text": "Hold the nose wheel off the ground for aerodynamic braking until speed decays below 40 knots under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "A situation that can only be resolved by filing an MOR report after landing.",
+        "text": "Delay thrust reverse deployment until the aircraft is fully clear of the active runway surface under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### 🛡️ Threat and Error Management (TEM Framework)\n* **Threats:** External factors (weather, ATC, terrain, MEL items).\n* **Errors:** Flight crew actions or inactions (incorrect data entry, checklist omissions).\n* **Undesired Aircraft State (UAS):** The transitional condition between an unmanaged error and an incident/accident (e.g., speed deviation, lateral track deviation, incorrect autopilot mode).\n* **Management:** Immediate recovery action takes precedence over root-cause investigation.",
+      "text": "### Wet/Contaminated Runway Landing Technique\n1. **Positive Touchdown:** Do not float! A firm touchdown breaks through dynamic water film on the runway.\n2. **Prompt Deceleration:** Rapid deployment of **ground spoilers / airbrakes** transfers weight to wheels for braking.\n3. **Thrust Reversers:** Deploy immediately without delay.\n4. **Directional Control:** Nose wheel down promptly for mechanical steering.",
       "references": [
-        "ICAO Doc 9803 Line Operations Safety Audit (LOSA) • EASA Part-ORO.FC.230"
+        "Flight Safety Foundation (FSF) Runway Excursion Risk Reduction (RERR)",
+        "EASA SIB 2014-25"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.2
     }
   },
   {
     "id": "NJ-CRM-022",
-    "subject_id": "netjets-interview",
-    "learning_objective": "Operational Scenarios: High Altitude Depressurization & Oxygen Mask Mandate",
-    "stem": "Why must the Quick-Donning Oxygen Mask be donned with ONE HAND in less than 5 seconds when Cabin Altitude exceeds 10,000 ft or during rapid decompression above FL350?",
+    "subject_id": "escenarios-netjets-despacho-crm",
+    "learning_objective": "Medical Emergency (MedLink / Telemedicine Integration)",
+    "stem": "A passenger suffers symptoms of acute myocardial infarction (heart attack) during cruise flight. What is the integrated operational procedure?",
     "options": [
       {
         "id": "A",
-        "text": "Useful Consciousness (TUC) at FL400 is only 15 to 20 seconds, and quick-donning ensures instantaneous 100% positive-pressure oxygen delivery before hypoxia induces mental incapacitation.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Because FAA regulations require masks to be worn during all normal cruise flights above FL250.",
+        "text": "Place the passenger in the cockpit jumpseat and continue 6 hours to the final destination without informing ATC in accordance with approved airline operational procedures and regulatory requirements in accordance with approved airline operational procedures and regulatory requirements.",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Administer onboard emergency medical kit / oxygen, contact ground medical advisory service (e.g. MedLink) via SATCOM, declare Medical Pan/Mayday to ATC, and initiate immediate diversion to an airport with tertiary medical facilities.",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "Because smoke goggles cannot be fitted if mask donning takes more than 10 seconds.",
+        "text": "Perform an unpressurized emergency descent to sea level and land on the nearest dirt runway strip under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "To allow the pilot to continue holding the coffee cup with the other hand.",
+        "text": "Wait until after landing at the scheduled destination to report the medical condition to ground handlers under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### 🫁 Time of Useful Consciousness (TUC) & Quick-Donning Masks\n| Flight Level | Altitude | Time of Useful Consciousness (TUC) |\n| :--- | :--- | :--- |\n| **FL300** | 30,000 ft | 1 to 2 minutes |\n| **FL350** | 35,000 ft | 30 to 60 seconds |\n| **FL400** | 40,000 ft | **15 to 20 seconds** |\n| **FL450** | 45,000 ft | **9 to 12 seconds** |\n* **Certification (CS-25.1441):** Quick-donning mask must be deployable and operational within 5 seconds with one hand while wearing corrective eyeglasses.",
+      "text": "### In-Flight Medical Emergency Protocol\n1. **Immediate Care:** Administer first aid, AED / Emergency Medical Kit (EMK), supplemental oxygen.\n2. **Telemedicine Advisory:** Contact contracted global medical support (**MedLink / MedAire**) for professional physician guidance.\n3. **ATC / Diversion:** Declare medical priority (`PAN PAN MEDICAL` or `MAYDAY MEDICAL`), divert to the nearest aerodrome with appropriate emergency hospital facilities.",
       "references": [
-        "EASA CS-25.1441 • Part-CAT.IDE.A.235 Quick Donning Masks"
+        "EASA Part-CAT.IDE.A.220 / 225",
+        "IATA Medical Emergency Guidelines"
       ]
     },
     "metadata": {
-      "difficulty": 0.4
+      "difficulty": 0.2
     }
   },
   {
     "id": "NJ-CRM-023",
-    "subject_id": "netjets-interview",
-    "learning_objective": "NetJets Operations: High-Elevation Cold Weather Ops (Samedan / St. Moritz LSZS)",
-    "stem": "What operational factors make Samedan / St. Moritz Airport (LSZS, elevation 5,600 ft) one of the most challenging Category C airports in the NetJets European network?",
+    "subject_id": "escenarios-netjets-despacho-crm",
+    "learning_objective": "Unruly Passenger and Level 1-4 Threat Response",
+    "stem": "Under ICAO Security Guidelines (Doc 8973), how are disruptive passenger behaviors categorized from Level 1 to Level 4, and what is the flight deck lockdown policy?",
     "options": [
       {
         "id": "A",
-        "text": "High elevation (5,600 ft), severe mountainous terrain, absence of instrument approach (VFR only), rapid mountain weather changes, high true airspeeds, and strict performance weight penalties.",
-        "is_correct": true
+        "text": "Level 1 is armed hijacking, and Level 4 is asking for an extra glass of water in the cabin in accordance with approved airline operational procedures and regulatory requirements in accordance with approved airline operational procedures and regulatory requirements.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "It is open exclusively for night cargo transport.",
+        "text": "The Captain must leave the flight deck to physically restrain disruptive passengers in the aisle under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "It operates with standard Category III ILS autoland capability year-round.",
-        "is_correct": false
+        "text": "Level 1 (Disruptive behavior), Level 2 (Physically abusive), Level 3 (Life-threatening), Level 4 (Attempted/actual breach of flight deck); flight deck door remains locked and barred in all cases.",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "Runway length exceeds 4,000 meters with sea-level atmospheric density.",
+        "text": "Level 4 threats require depressurizing the passenger cabin to induce unconsciousness under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### 🏔️ Samedan / St. Moritz (LSZS) Special Operations\n* **Category C Aerodrome:** Elevation 5,600 ft MSL in the Swiss Alps.\n* **Operational Constraints:**\n  * No published IFR instrument approach (VFR arrival through alpine valleys).\n  * High Density Altitude → Significantly higher True Airspeed (TAS) and higher turn radius.\n  * Extreme cold weather in winter requires strict cold-soak fuel precautions and anti-ice performance penalties.\n  * Special NetJets Pilot Airport Briefing and simulator training mandatory.",
+      "text": "### ICAO Disruptive Passenger Levels (Doc 8973)\n* **Level 1:** Verbal disruptive behavior (insults, non-compliance).\n* **Level 2:** Physically abusive behavior (pushing, hitting).\n* **Level 3:** Life-threatening behavior (weapons, display of explosive threat).\n* **Level 4:** **Attempted or actual breach of the flight crew compartment**.\n* **Flight Deck Lockdown:** The reinforced flight deck door **must remain locked and bolted at all times**; pilots must NEVER open the door to intervene.",
       "references": [
-        "NetJets Airport Categorization Guide • EASA Part-ORO.FC.105"
+        "ICAO Doc 8973 Security Manual",
+        "EASA Part-CAT.GEN.MPA.200"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.25
     }
   },
   {
     "id": "NJ-CRM-024",
-    "subject_id": "netjets-interview",
-    "learning_objective": "CRM: Startle Effect & Unreliable Airspeed Management",
-    "stem": "What is the recommended cognitive management strategy to mitigate the 'Startle Effect' during sudden emergencies such as Pitot-Static icing or Unreliable Airspeed warnings at high altitude?",
+    "subject_id": "escenarios-netjets-despacho-crm",
+    "learning_objective": "Terrain Awareness Warning System (TAWS / EGPWS) Warning Response",
+    "stem": "In night IMC conditions, the EGPWS generates an auditory warning: 'PULL UP, PULL UP' accompanied by red PULL UP annunciators. What is the mandatory crew reaction?",
     "options": [
       {
         "id": "A",
-        "text": "Instantly disconnect all electrical generators to reset avionics.",
+        "text": "Check synthetic vision display to confirm if terrain is real before changing aircraft pitch in accordance with approved airline operational procedures and regulatory requirements in accordance with approved airline operational procedures and regulatory requirements.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Immediately pull full aft elevator to test the stick shaker threshold.",
+        "text": "Contact Air Traffic Control to request altitude verification before adjusting flight controls under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Descend in maximum speed vertical dive to reach warmer air.",
+        "text": "Descend 500 ft to fly underneath the radar terrain warning contour envelope under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "'Aviate, Navigate, Communicate': Pause to take a breath, suppress instinctive abrupt control inputs, fly memory pitch and power values (e.g. 2.5° / 85% N1), and cross-check independent instruments.",
+        "text": "Immediately disconnect autopilot, advance thrust levers to maximum mechanical takeoff/go-around power, rotate smoothly to pitch for maximum climb angle / stick shaker, retract speedbrakes, and maintain wings level/climb.",
         "is_correct": true
       }
     ],
     "explanation": {
-      "text": "### 🧠 Startle Effect & Unreliable Airspeed Protocol\n* **Startle Response:** Physiological acute stress response that impairs rational cognitive decision-making for 5-15 seconds.\n* **Golden Rule:**\n  1. **DO NOT REACT ABRUPTLY.** Resist the urge to chase fluctuating airspeed indicators.\n  2. **Pitch & Power:** Set known safe attitude and thrust (Pitch/Thrust\\,Memory Item).\n  3. Verify pitot heat switches ON.\n  4. Consult Unreliable Airspeed QRH tables for level-off pitch/power schedules.",
+      "text": "### TAWS / EGPWS Warning Escape Maneuver (EASA Part-CAT / CS-25)\n* **In IMC or at Night:** Escape maneuver is **MANDATORY AND IMMEDIATE**.\n* **Actions:**\n  1. Disengage autopilot and autothrottle.\n  2. **Maximum Thrust:** Advance thrust levers to MAX TO/GA.\n  3. **Pitch:** Rotate smoothly to pitch limit (initial ~20° or pitch limit indicator / stick shaker).\n  4. **Configuration:** Retract speedbrakes; DO NOT change flap/gear configuration until terrain clearance is assured.",
       "references": [
-        "EASA Safety Information Bulletin SIB 2013-02 • ICAO Doc 10011"
+        "EASA AMC1 CAT.OP.MPA.110",
+        "ICAO Doc 8168 (PANS-OPS)"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.2
     }
   },
   {
     "id": "NJ-CRM-025",
-    "subject_id": "netjets-interview",
-    "learning_objective": "Operational Scenarios: Lithium Battery Thermal Runaway in Cabin",
-    "stem": "If a passenger's personal electronic device (PED / laptop) enters Thermal Runaway in the executive cabin, what is the mandatory fire suppression procedure?",
+    "subject_id": "escenarios-netjets-despacho-crm",
+    "learning_objective": "Fatigue and Fitness to Fly Declaration (ORO.FTL.115)",
+    "stem": "A pilot experiences acute gastrointestinal illness and extreme exhaustion during a tour layover prior to a scheduled multi-sector duty day. What is the legal obligation under EASA Part-CAT?",
     "options": [
       {
         "id": "A",
-        "text": "Discharge Halon / water fire extinguisher to extinguish flames, then continuously douse the device with non-alcoholic liquids (water / sodas) to cool battery cells and prevent thermal runaway propagation; do NOT wrap in ice or blankets.",
+        "text": "The pilot has a strict legal obligation to declare unfit for flight duty ('Fatigued / Unfit for Flight'), inform crew crewing dispatch immediately, and refrain from operating; the operator must provide replacement crew without retaliation.",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "Cover the device with dry blankets and store it inside an overhead baggage bin.",
+        "text": "The pilot must operate the flight as planned and rely on high doses of over-the-counter stimulant medications in accordance with approved airline operational procedures and regulatory requirements in accordance with approved airline operational procedures and regulatory requirements.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Pack the device in dry ice inside the aft lavatory.",
+        "text": "The pilot should sleep in the cockpit jumpseat during all departures and approaches under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Throw the burning device out of the cockpit emergency hatch.",
+        "text": "The pilot must pay a personal financial fine to the company before taking medical rest under standard aviation operational conditions and guidelines under standard aviation operational conditions and guidelines.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### 🔋 Lithium Battery Thermal Runaway in Flight (ICAO Doc 9481 / NetJets SOP)\n* **Mechanism:** Internal short circuit generates uncontrollable self-sustaining exothermic heat (>600°C).\n* **Standard 2-Step Protocol:**\n  1. **Knockdown:** Extinguish open flames using Halon or aqueous extinguisher.\n  2. **Cooling:** Continuously pour **WATER or non-flammable liquids** directly over the device. Water cools adjacent cells and halts the thermal chain reaction.\n* **WARNING:** Never smother with ice, blankets, or enclosed bags that trap thermal energy.",
+      "text": "### Fitness to Fly & Fatigue Declaration (ORO.FTL.115 / CAT.GEN.MPA.100)\n* Under EASA **CAT.GEN.MPA.100**, a crew member **shall not perform duties** when fatigued or feeling unfit to the extent that flight safety may be impaired.\n* It is a legal duty to report unfit; operators are required to maintain a non-punitive fatigue reporting environment.",
       "references": [
-        "ICAO Doc 9481 Emergency Response Guidance • FAA In-Flight Lithium Fire Advisory"
+        "EASA Part-ORO.FTL.115",
+        "EASA Part-CAT.GEN.MPA.100"
       ]
     },
     "metadata": {
-      "difficulty": 0.4
+      "difficulty": 0.15
     }
   }
 ]

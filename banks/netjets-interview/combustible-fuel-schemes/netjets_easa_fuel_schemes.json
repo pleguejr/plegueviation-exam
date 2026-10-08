@@ -3,27 +3,27 @@
     "id": "NJ-FUEL-001",
     "subject_id": "combustible-fuel-schemes",
     "learning_objective": "EASA Fuel Schemes - Framework (CAT.OP.MPA.180 & 181)",
-    "stem": "Under EASA Part-CAT (CAT.OP.MPA.180/181), what are the fundamental differences between a 'Basic Fuel Scheme' and a 'Basic Fuel Scheme with Variations'?",
+    "stem": "Under EASA Part-CAT (CAT.OP.MPA.180/181), what is the fundamental difference between a 'Basic Fuel Scheme' and a 'Basic Fuel Scheme with Variations'?",
     "options": [
       {
         "id": "A",
-        "text": "Basic with Variations eliminates the legal requirement for final reserve fuel if an airborne FMC recalculation is performed.",
-        "is_correct": false
+        "text": "The Basic Scheme uses standard fixed reserves, while Variations allow approved reductions (e.g. 3% contingency with ERA or RCF) with active operational monitoring under approved operational procedures.",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "The Basic Scheme does not require an operational flight plan (OFP) for domestic flights.",
+        "text": "The Basic Scheme requires an individual aircraft fuel monitoring database, while Variations rely strictly on static flight manual tabular fuel consumption figures for operational compliance.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "The Basic Scheme applies only to turboprops under 5,700 kg, while Variations apply exclusively to widebody transoceanic flights.",
+        "text": "The Basic Scheme applies exclusively to turboprops under 5,700 kg, while Variations are mandatory for all multi-engine turbojet executive transport aircraft for operational compliance.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "A Basic Fuel Scheme uses standard, fixed regulatory reserves (e.g. standard 5% contingency and full alternate fuel), whereas a Basic Fuel Scheme with Variations allows approved reductions (such as 3% contingency with Fuel ERA, RCF, or isolated aerodrome schemes) based on an advanced operational control system with active flight monitoring.",
-        "is_correct": true
+        "text": "The Basic Scheme allows eliminating destination alternate fuel under VMC, while Variations require planning two commercial destination alternates on all routes for operational compliance.",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -45,23 +45,23 @@
     "options": [
       {
         "id": "A",
-        "text": "Fuel to fly for 20 minutes at long-range cruise speed at optimal altitude.",
+        "text": "Fuel to fly for 45 minutes at long-range cruise speed at FL100 in standard ISA atmospheric conditions throughout the sector for operational compliance.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Fuel to fly for 60 minutes at holding speed at 1,500 ft above the destination alternate.",
-        "is_correct": false
+        "text": "Fuel to fly for 30 minutes at holding speed at 1,500 ft (450 m) above aerodrome elevation in standard ISA conditions under approved operational procedures.",
+        "is_correct": true
       },
       {
         "id": "C",
-        "text": "Fuel to fly for 45 minutes at normal cruising speed at FL100.",
+        "text": "Fuel to fly for 45 minutes at holding speed at 1,500 ft (450 m) above the destination alternate elevation in standard ISA for operational compliance.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Fuel to fly for 30 minutes at holding speed at 1,500 ft (450 m) above aerodrome elevation in standard ISA conditions.",
-        "is_correct": true
+        "text": "Fuel to fly for 20 minutes at maximum endurance speed at 5,000 ft above destination aerodrome under ISA atmospheric conditions for operational compliance.",
+        "is_correct": false
       }
     ],
     "explanation": {
@@ -83,30 +83,68 @@
     "options": [
       {
         "id": "A",
-        "text": "Cruise fuel only, assuming radar vectors will eliminate instrument arrival procedures.",
+        "text": "Straight-line direct flight from destination ARP to alternate ARP at FL100 plus 15 minutes of terminal holding fuel reserve.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "30 minutes of standard cruise fuel regardless of the physical distance to the alternate.",
+        "text": "En-route cruise from destination to alternate followed by radar vectors and a straight-in visual landing profile on final approach.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Missed approach procedure from destination DA/MDA to missed approach altitude, climb from missed approach altitude to cruising level, cruise from destination to alternate, descent to initial approach fix, and instrument approach followed by landing at the destination alternate.",
+        "text": "Missed approach from destination DA/MDA, climb to cruise level, cruise, descent to IAF, instrument approach and landing at alternate.",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "Straight-line direct flight from destination airport reference point to alternate airport reference point at FL100.",
+        "text": "Descent to circling MDA at destination, immediate low-level divert at 250 kt to alternate followed by visual pattern and touchdown.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Alternate Fuel Profile (AMC1 CAT.OP.MPA.180)\n* **Alternate Fuel** must cover the complete profile:\n  1. Missed approach at destination from DA/MDA.\n  2. Climb to appropriate cruising level.\n  3. Cruise via routing.\n  4. Descent to Initial Approach Fix (IAF).\n  5. Approach and landing at destination alternate.",
+      "text": "### Destination Alternate Fuel (CAT.OP.MPA.180)\nAlternate fuel must cover:\n1. **Missed approach procedure** at the destination aerodrome from the applicable DA/H or MDA/H to the missed approach altitude.\n2. **Climb** from missed approach altitude to the cruising level/altitude.\n3. **Cruise** from destination to the alternate aerodrome.\n4. **Descent** from cruising level to the point where the approach is initiated (IAF).\n5. **Executing the approach and landing** at the destination alternate aerodrome.",
       "references": [
-        "EASA AMC1 CAT.OP.MPA.180",
-        "NetJets Europe Operations Manual (MOA 8.1.7)"
+        "EASA Part-CAT.OP.MPA.180(a)",
+        "AMC1 CAT.OP.MPA.180"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.25
+    }
+  },
+  {
+    "id": "NJ-FUEL-004",
+    "subject_id": "combustible-fuel-schemes",
+    "learning_objective": "Contingency Fuel Calculation (Basic Scheme)",
+    "stem": "What is the standard regulatory calculation for 'Contingency Fuel' under the EASA Part-CAT Basic Fuel Scheme?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fixed allowance of 10% of total block fuel or 20 minutes at holding speed, whichever provides the greater fuel quantity for operational compliance.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Fixed allowance of 3% of planned trip fuel without any requirement for an en-route alternate aerodrome along the route for operational compliance.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Fixed allowance of 15 minutes at holding consumption at 1,500 ft above the destination aerodrome in standard atmosphere for operational compliance.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "5% of planned trip fuel, or not less than 5 minutes holding consumption at 1,500 ft above destination in ISA conditions under approved operational procedures.",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "### Contingency Fuel (CAT.OP.MPA.180)\n* Under the Basic Scheme, contingency fuel is **5% of the planned trip fuel** (or fuel based on consumption at cruising level).\n* In no case shall it be less than the amount required to fly for **5 minutes at holding speed at 1,500 ft (450 m)** above destination aerodrome in standard conditions.",
+      "references": [
+        "EASA Part-CAT.OP.MPA.180",
+        "AMC1 CAT.OP.MPA.180"
       ]
     },
     "metadata": {
@@ -114,75 +152,37 @@
     }
   },
   {
-    "id": "NJ-FUEL-004",
-    "subject_id": "combustible-fuel-schemes",
-    "learning_objective": "No Destination Alternate Required - Additional Fuel Margin",
-    "stem": "If an IFR flight is dispatched without a destination alternate aerodrome (isolated or dual-runway destination with benign weather), what additional fuel must be planned under EASA CAT.OP.MPA.180?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Fuel to fly for 15 minutes at holding speed at 1,500 ft (450 m) above destination aerodrome elevation in standard ISA conditions.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Fuel to fly for 45 minutes at long-range cruise speed.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "Fuel to return to departure aerodrome regardless of flight duration.",
-        "is_correct": false
-      },
-      {
-        "id": "D",
-        "text": "No additional fuel is required beyond the 5% contingency.",
-        "is_correct": false
-      }
-    ],
-    "explanation": {
-      "text": "### Flights Dispatched Without Destination Alternate\n* Under EASA **CAT.OP.MPA.180**, when an IFR flight is planned without a destination alternate, the operator must carry an additional **15 minutes of fuel at holding speed at 1,500 ft above destination** in standard ISA conditions, on top of trip fuel, contingency, and 30 min final reserve.",
-      "references": [
-        "EASA CAT.OP.MPA.180(c)(3)",
-        "AMC1 CAT.OP.MPA.180"
-      ]
-    },
-    "metadata": {
-      "difficulty": 0.3
-    }
-  },
-  {
     "id": "NJ-FUEL-005",
     "subject_id": "combustible-fuel-schemes",
-    "learning_objective": "Contingency Fuel - 3% with Fuel ERA (En-Route Alternate)",
-    "stem": "Under a Basic Fuel Scheme with Variations, what criteria must a selected En-Route Alternate (Fuel ERA) satisfy to allow reducing contingency fuel from 5% to 3% of planned trip fuel?",
+    "learning_objective": "3% Contingency Fuel with En-Route Alternate (ERA)",
+    "stem": "Under the Basic Fuel Scheme with Variations, what operational requirement must be satisfied to reduce contingency fuel from 5% to 3% of trip fuel?",
     "options": [
       {
         "id": "A",
-        "text": "The Fuel ERA must be located within a circle whose radius is equal to 20% of the planned total flight distance, centered on the planned route at a distance from destination equal to 25% of the total flight distance, or 20% plus 50 NM (whichever is greater).",
+        "text": "Selecting an approved En-Route Alternate (ERA) located within a circle whose radius is 20% of the total planned flight route distance.",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "The Fuel ERA must have CAT III autoland capabilities and military radar surveillance.",
+        "text": "Selecting two destination alternates each with dual precision instrument runways available at the estimated arrival time under standard operating conditions and criteria.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "The Fuel ERA must be within 15 minutes flight time from the departure aerodrome at single-engine cruise speed.",
+        "text": "Maintaining continuous direct VHF datalink ACARS communication with airline operational dispatch control throughout the route.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "The Fuel ERA must be situated exactly halfway along the flight plan route.",
+        "text": "Equipping the aircraft with dual independent satellite navigation systems and operating exclusively within certified RVSM airspace in standard atmospheric conditions.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### 3% Contingency Fuel with Fuel ERA (AMC1 CAT.OP.MPA.181)\n* Reducing contingency fuel from **5% to 3%** requires an approved **Fuel En-Route Alternate (Fuel ERA)**.\n* The ERA must lie within a designated geographic circle:\n  - Radius: **20% of total route distance**.\n  - Center: Located on the route at **25% of total route distance from destination** (or 20% + 50 NM, whichever is greater).",
+      "text": "### 3% Contingency Fuel with ERA (CAT.OP.MPA.181)\n* Contingency fuel may be reduced to **3% of planned trip fuel** if an **En-Route Alternate (ERA) aerodrome** is available.\n* The ERA must be located within a circle of radius equal to **20% of the total route distance**, centered on the planned route at a distance from destination of at least 20% of the route distance or 50 NM (whichever is greater).",
       "references": [
-        "EASA AMC1 CAT.OP.MPA.181(b)",
-        "EASA Part-CAT Fuel Scheme Variations"
+        "EASA Part-CAT.OP.MPA.181",
+        "AMC1 CAT.OP.MPA.181"
       ]
     },
     "metadata": {
@@ -193,72 +193,72 @@
     "id": "NJ-FUEL-006",
     "subject_id": "combustible-fuel-schemes",
     "learning_objective": "Reduced Contingency Fuel (RCF) Procedure",
-    "stem": "What is the operational concept of the Reduced Contingency Fuel (RCF) Procedure under EASA fuel planning?",
+    "stem": "How does the 'Reduced Contingency Fuel (RCF)' procedure optimize fuel carriage on long-range flights under EASA regulations?",
     "options": [
       {
         "id": "A",
-        "text": "A procedure where air-to-air refueling is designated in the OFP.",
+        "text": "It eliminates contingency fuel completely by requiring the flight crew to declare minimum fuel at top of climb on all long sectors in standard atmospheric conditions.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "A procedure permitting zero contingency fuel if the autopilot is engaged throughout climb.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "A procedure dividing the flight at a pre-selected Decision Point: planning fuel to an en-route commercial destination 1 with full contingency and alternates, while carrying sufficient fuel to commit at the Decision Point to proceed to the final destination 2 with contingency calculated only from the Decision Point.",
+        "text": "It calculates contingency fuel based only on the segment from a designated Decision Point to the destination, while planning a commercial divert route.",
         "is_correct": true
       },
       {
+        "id": "C",
+        "text": "It replaces final reserve fuel with extra taxi fuel whenever take-off weight exceeds 80% of certified maximum structural limit.",
+        "is_correct": false
+      },
+      {
         "id": "D",
-        "text": "A waiver allowing pilots to reduce final reserve fuel to 10 minutes in executive charter flights.",
+        "text": "It allows dispatching without destination alternate fuel provided the flight arrives during daylight hours under confirmed VMC.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Reduced Contingency Fuel (RCF) / Decision Point Procedure\n* **RCF** optimizes payload on long sectors.\n* At dispatch, fuel is calculated to Destination 1 (En-route Alternate) with standard reserves, and to Destination 2 (Final Destination) with contingency fuel calculated **only from the Decision Point to Destination 2**.\n* At the Decision Point, the Commander checks remaining fuel: if above minimum required, proceeds to Destination 2; otherwise, diverts to Destination 1.",
+      "text": "### Reduced Contingency Fuel (RCF) Procedure\n* RCF divides the flight into two stages: before and after a **Decision Point (DP)**.\n* Fuel is calculated to either: (1) Proceed to destination via DP with contingency fuel only required from DP to destination (at least 3%), OR (2) Divert to an En-Route Alternate with full contingency from departure to that alternate.\n* At the DP, the PIC verifies remaining fuel against OFP requirements before committing to destination.",
       "references": [
-        "EASA AMC1 CAT.OP.MPA.181(c)",
-        "ICAO Flight Planning Manual"
+        "EASA Part-CAT.OP.MPA.181",
+        "AMC1 CAT.OP.MPA.181"
       ]
     },
     "metadata": {
-      "difficulty": 0.3
+      "difficulty": 0.4
     }
   },
   {
     "id": "NJ-FUEL-007",
     "subject_id": "combustible-fuel-schemes",
-    "learning_objective": "Isolated Aerodrome Fuel Policy",
-    "stem": "When an aerodrome is designated as an 'Isolated Aerodrome' under EASA fuel rules, what specific fuel quantity must be carried in lieu of destination alternate fuel?",
+    "learning_objective": "Individual Fuel Consumption Monitoring (IFCM)",
+    "stem": "Under EASA Part-CAT, what is the role of an 'Individual Fuel Consumption Monitoring (IFCM)' system in advanced fuel planning?",
     "options": [
       {
         "id": "A",
-        "text": "Fuel to fly for 45 minutes at maximum range speed.",
+        "text": "It replaces required destination alternate planning by monitoring real-time tank temperature during high altitude oceanic cruise segments.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Fuel to fly for 4 hours at holding speed at 1,500 ft.",
+        "text": "It automatically cuts fuel flow to non-essential galleys and auxiliary power units whenever fuel remaining drops below diversion level.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Fuel to fly for 2 hours at normal cruising consumption above the destination aerodrome (including final reserve fuel).",
+        "text": "It tracks tail-specific aircraft drag and engine degradation to apply tailored fuel bias factors rather than generic fleet average data.",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "Fuel to fly 300 NM in any direction at FL250.",
+        "text": "It eliminates the legal requirement to calculate taxi and extra fuel for private executive jet flights operated under Part-CAT rules.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Isolated Aerodrome Fuel Scheme (AMC1 CAT.OP.MPA.181)\n* An aerodrome is isolated when no suitable alternate exists within a reasonable distance.\n* For turbine-powered aircraft, the alternate fuel is replaced by **2 hours of fuel at normal cruising consumption** above the destination aerodrome (which includes the final reserve fuel).",
+      "text": "### Individual Fuel Consumption Monitoring (IFCM)\n* IFCM tracks historical fuel burn data for **each specific airframe (tail number)**.\n* It calculates an individual **fuel bias factor (PERF factor)** reflecting engine wear and aerodynamic degradation, ensuring high-accuracy OFP burn predictions.",
       "references": [
         "EASA AMC1 CAT.OP.MPA.181",
-        "ICAO Annex 6 Part I"
+        "ICAO Doc 9976 Flight Planning and Fuel Management"
       ]
     },
     "metadata": {
@@ -268,73 +268,73 @@
   {
     "id": "NJ-FUEL-008",
     "subject_id": "combustible-fuel-schemes",
-    "learning_objective": "In-Flight Fuel Management & Minimum Fuel vs Mayday Fuel",
-    "stem": "What is the precise regulatory threshold and phraseology when in-flight fuel degrades such that any change to the existing clearance may result in landing with less than planned final reserve fuel, versus when landing with less than final reserve fuel is inevitable?",
+    "learning_objective": "Isolated Aerodrome Fuel Procedure",
+    "stem": "When dispatching to an 'Isolated Aerodrome' where no suitable destination alternate is available, what additional fuel must be planned under EASA Part-CAT?",
     "options": [
       {
         "id": "A",
-        "text": "'PAN PAN FUEL' when below final reserve; 'MAYDAY FUEL' when below 100 kg total fuel.",
+        "text": "Additional fuel to fly for 45 minutes at long-range cruise speed at 10,000 ft above the destination airport reference point under standard operating conditions and criteria.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "'MINIMUM FUEL' when commitment to a specific runway is made and any delay may jeopardize final reserve (informational, not an emergency); 'MAYDAY MAYDAY MAYDAY FUEL' when calculated usable fuel upon landing will be less than the planned final reserve fuel (formal declaration of distress).",
-        "is_correct": true
+        "text": "Additional fuel equal to exactly 50% of the planned trip fuel calculated at standard ISA cruise flight level and temperature.",
+        "is_correct": false
       },
       {
         "id": "C",
-        "text": "'MINIMUM FUEL' implies immediate ATC priority and priority vectors over all other traffic.",
+        "text": "Additional fuel to perform three consecutive missed approach procedures followed by visual patterns at minimum maneuvering speed.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "'PRIORITY FUEL' when alternate fuel is consumed; 'EMERGENCY FUEL' when both low-pressure pumps fail.",
-        "is_correct": false
+        "text": "Additional fuel to fly for 2 hours at normal cruise consumption above destination, which includes the final reserve fuel amount.",
+        "is_correct": true
       }
     ],
     "explanation": {
-      "text": "### Minimum Fuel vs Mayday Fuel (CAT.OP.MPA.182 & ICAO Doc 4444)\n* **MINIMUM FUEL:** Informs ATC that all planned aerodrome options are committed and any unforeseen delay may result in landing with less than planned final reserve fuel. **It does NOT give priority**, but alerts ATC not to delay the flight.\n* **MAYDAY MAYDAY MAYDAY FUEL:** Mandatory distress call when estimated fuel on touchdown is **LESS THAN FINAL RESERVE FUEL**. Gives absolute distress priority.",
+      "text": "### Isolated Aerodrome Procedure (CAT.OP.MPA.180 / 181)\n* For turbine aeroplanes flying to an isolated aerodrome, the fuel planned must include **Additional Fuel** sufficient to fly for **2 hours at normal cruising consumption** above destination, which includes final reserve fuel.\n* A Point of No Return (PNR) must be determined on the OFP.",
       "references": [
-        "EASA CAT.OP.MPA.182",
-        "ICAO Annex 6 & Doc 4444 (PANS-ATM)"
+        "EASA Part-CAT.OP.MPA.180(d)",
+        "AMC1 CAT.OP.MPA.180"
       ]
     },
     "metadata": {
-      "difficulty": 0.2
+      "difficulty": 0.35
     }
   },
   {
     "id": "NJ-FUEL-009",
     "subject_id": "combustible-fuel-schemes",
-    "learning_objective": "Jet Fuel Freezing Points & Temperature Limits",
-    "stem": "What is the standard freezing point of Jet A-1 compared to Jet A, and what operational rule governs in-flight fuel temperature monitoring?",
+    "learning_objective": "Minimum Fuel Declaration (ICAO Annex 6 / EASA)",
+    "stem": "What is the mandatory trigger and operational phraseology for declaring 'MINIMUM FUEL' to Air Traffic Control under EASA / ICAO regulations?",
     "options": [
       {
         "id": "A",
-        "text": "Jet A-1 has no freezing point because of mandatory anti-icing additive (PRIST) in all European refuelings.",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "Jet A-1 freezes at -47°C, whereas Jet A freezes at -40°C; the minimum fuel temperature in flight must remain at least 3°C above the certified fuel freezing point.",
+        "text": "Declared when remaining usable fuel commits the aircraft to land at a specific aerodrome and any unexpected delay may result in landing below Final Reserve Fuel.",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "Declared when the aircraft has reached its calculated destination alternate and has exactly 15 minutes of remaining fuel before total engine flameout in standard atmospheric conditions.",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "Both fuels freeze at -35°C; fuel heaters operate continuously above FL350.",
+        "text": "Declared immediately upon burning the entire 5% contingency fuel allowance, giving the aircraft legal priority over all other inbound traffic.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Jet A-1 freezes at -60°C and Jet A freezes at -50°C; minimum fuel temperature must be maintained above 0°C at all times.",
+        "text": "Declared when the flight crew determines that destination weather has fallen below CAT I minima and diversion to an en-route alternate is started.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Aviation Fuel Freezing Points\n* **Jet A-1 (Standard worldwide / Europe):** Maximum freezing point is **-47°C**.\n* **Jet A (Standard in the United States):** Maximum freezing point is **-40°C**.\n* **Operational Safety Rule:** In flight, fuel temperature must stay **at least 3°C above freezing point** (e.g. minimum -44°C for Jet A-1 or -37°C for Jet A). If fuel temperature approaches limits, crew must accelerate (increasing aerodynamic kinetic heating) or descend to warmer air.",
+      "text": "### MINIMUM FUEL Declaration\n* The PIC shall advise ATC of a **MINIMUM FUEL** state by broadcasting `MINIMUM FUEL` when having committed to land at a specific aerodrome and calculating that any change to the existing clearance may result in landing with **less than the planned final reserve fuel**.\n* `MINIMUM FUEL` is **not an emergency**, but informs ATC that no unexpected delay can be accepted. If landing with less than final reserve is inevitable, declare `MAYDAY MAYDAY MAYDAY FUEL`.",
       "references": [
-        "ASTM D1655 / DEF STAN 91-091 Specifications",
-        "EASA CS-25 Fuel System Certification Standards"
+        "ICAO Annex 6 Part I / EASA CAT.OP.MPA.180",
+        "ICAO Doc 4444 (PANS-ATM)"
       ]
     },
     "metadata": {
@@ -344,300 +344,225 @@
   {
     "id": "NJ-FUEL-010",
     "subject_id": "combustible-fuel-schemes",
-    "learning_objective": "Fuel Crosscheck Tolerance Before Departure",
-    "stem": "Before departure, what is the standard allowable discrepancy between the total fuel quantity calculated on the Operational Flight Plan (OFP) / Loadsheet and the onboard physical fuel quantity indicators (gauges) before investigation is required?",
+    "learning_objective": "Mayday Fuel Declaration",
+    "stem": "Under what specific condition is a flight crew legally required to transmit the distress call 'MAYDAY MAYDAY MAYDAY FUEL' under EASA regulations?",
     "options": [
       {
         "id": "A",
-        "text": "The aircraft may depart with any quantity provided the low-level warning light is extinguished.",
+        "text": "When entering holding with less than 45 minutes of total onboard fuel regardless of distance to the destination alternate under standard operating conditions and criteria.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Gauges are ignored if the fuel truck delivery meter receipt is signed.",
-        "is_correct": false
+        "text": "When the calculated usable fuel estimated to be available upon landing at the nearest safe aerodrome is less than the mandatory Final Reserve Fuel.",
+        "is_correct": true
       },
       {
         "id": "C",
-        "text": "Discrepancies up to ±10% are acceptable provided the Captain signs the ATL.",
+        "text": "When crossfeed valves fail to open during planned fuel balancing procedures causing a temporary lateral wing fuel imbalance.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Discrepancy must not exceed ±3% of the required departure fuel (or maximum 100-200 kg depending on aircraft type).",
-        "is_correct": true
+        "text": "When ATC issues radar vectors that exceed the initial operational flight plan routing distance by more than 25 nautical miles in standard atmospheric conditions.",
+        "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Pre-Flight Fuel Crosscheck (MOA 8.1.7)\n* Standard airline and corporate jet procedures require a three-way crosscheck:\n  1. Fuel remaining before uplift.\n  2. Uplift volume from fuel truck meter / density calculation.\n  3. Total fuel shown on cockpit fuel quantity indicators (FQIS).\n* Maximum allowable discrepancy is **±3%** (or type-specific limit). Discrepancies exceeding this require checking water drains, density, or dipsticks.",
+      "text": "### MAYDAY FUEL Declaration\n* The PIC shall declare a situation of **fuel distress** by broadcasting `MAYDAY MAYDAY MAYDAY FUEL` when the **calculated usable fuel estimated to be available upon landing at the nearest aerodrome where a safe landing can be made is less than the planned final reserve fuel**.\n* This is an explicit distress call conveying maximum priority handling from ATC.",
       "references": [
-        "EASA Part-CAT.OP.MPA.175",
-        "NetJets Europe Operations Manual (MOA 8.1.7.3)"
+        "EASA CAT.OP.MPA.180",
+        "ICAO Annex 6 Part I / Doc 4444"
       ]
     },
     "metadata": {
-      "difficulty": 0.25
+      "difficulty": 0.2
     }
   },
   {
     "id": "NJ-FUEL-011",
     "subject_id": "combustible-fuel-schemes",
-    "learning_objective": "Fuel Leak In-Flight Diagnosis & Management",
-    "stem": "Which of the following symptoms definitively indicates an in-flight fuel leak rather than normal engine consumption or fuel gauge sensor error?",
+    "learning_objective": "Decision Point (DP) Procedure Fuel Calculation",
+    "stem": "In a Decision Point (DP) fuel procedure, how is the required pre-flight Contingency Fuel calculated under EASA Part-CAT?",
     "options": [
       {
         "id": "A",
-        "text": "Fuel tank pressure warning activating during rapid descent.",
+        "text": "Contingency is calculated as 10% of the entire sector block fuel from brake release at departure to touchdown at the destination airport in standard atmospheric conditions.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Fuel temperature rising 5°C during high-speed cruise.",
+        "text": "Contingency is completely eliminated for the cruise portion and replaced by 45 minutes of additional holding fuel at the alternate.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "An unexplained fuel quantity decrease in one tank with total fuel quantity decreasing faster than total engine fuel flow, or a persistent fuel imbalance requiring frequent crossfeeding with normal engine parameters.",
+        "text": "Contingency is calculated as 5% of the fuel required from the Decision Point to the destination aerodrome (or at least 3% with an en-route alternate).",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "Both fuel flow indicators showing zero while engines operate normally.",
+        "text": "Contingency is calculated based solely on taxi fuel and ground idle consumption during anticipated de-icing delays at departure.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Fuel Leak Diagnosis & Golden Rule\n* **Symptoms:** Total fuel remaining decreases faster than total fuel consumed (integrated fuel flow); visual fuel spray from wing trailing edge; unexplained rapid imbalance.\n* **Critical Safety Rule:** **NEVER crossfeed fuel to an engine suspected of having a leak**, as this may feed the leak and drain the good tank! Isolate the leak and land at the nearest suitable aerodrome.",
+      "text": "### Decision Point Procedure\n* Contingency fuel is calculated based only on the **flight segment from the Decision Point (DP) to the destination aerodrome** (usually 5%, or 3% if an en-route alternate is available).\n* This allows a significant reduction in take-off weight while maintaining full legal safety margins.",
       "references": [
-        "QRH Emergency Procedures: Fuel Leak",
-        "EASA SIB 2018-12 (In-Flight Fuel Management)"
+        "EASA CAT.OP.MPA.181",
+        "AMC1 CAT.OP.MPA.181"
       ]
     },
     "metadata": {
-      "difficulty": 0.25
+      "difficulty": 0.35
     }
   },
   {
     "id": "NJ-FUEL-012",
     "subject_id": "combustible-fuel-schemes",
-    "learning_objective": "Fuel Jettisoning (Dumping) Regulations",
-    "stem": "What operational precautions and ATC coordination must be observed if fuel jettisoning (dumping) becomes necessary during an emergency return?",
+    "learning_objective": "Extra Fuel vs Discretionary Fuel (Commander Authority)",
+    "stem": "What is the regulatory authority and documentation requirement regarding 'Commander Extra Fuel' under EASA Part-CAT?",
     "options": [
       {
         "id": "A",
-        "text": "Dump fuel only during supersonic flight to ensure immediate dispersion.",
+        "text": "The Commander may carry extra fuel only if approved in writing by the operator ground operations manager prior to aircraft boarding under standard operating conditions and criteria.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Jettison fuel immediately on final approach at 500 ft AGL with flaps extended.",
+        "text": "The Commander is legally prohibited from adding discretionary fuel if the aircraft takeoff weight exceeds 85% of Maximum Takeoff Mass in standard atmospheric conditions.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Coordinate with ATC to jettison in designated dumping areas or over unpopulated terrain/water, generally at or above 5,000 to 6,000 ft AGL to allow fuel vaporization before reaching the surface, maintaining vertical separation from other aircraft.",
-        "is_correct": true
+        "text": "The Commander must offload passenger baggage whenever extra fuel exceeds 2% of the computed operational flight plan trip fuel amount.",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "Fuel dumping is strictly prohibited under European civil airspace regulations.",
-        "is_correct": false
+        "text": "The Commander has final authority to add discretionary fuel based on operational conditions, recording the total on the OFP / Voyage Report.",
+        "is_correct": true
       }
     ],
     "explanation": {
-      "text": "### Fuel Jettisoning Principles (ICAO Doc 4444 / SERA)\n* Fuel jettisoning requires **immediate ATC notification**.\n* ATC will clear the flight to a dedicated dumping area or over water/unpopulated areas, clear of thunderstorm activity, with **minimum recommended altitude of 5,000 to 6,000 ft AGL**.\n* Other traffic is separated by at least **1,000 ft vertically and 10 NM laterally**.",
+      "text": "### Commander Discretionary Fuel\n* Under EASA **CAT.GEN.MPA.105** and **CAT.OP.MPA.180**, the Commander has the **ultimate authority and responsibility** to add discretionary extra fuel if anticipated operational conditions (weather, delays, runway closures, icing) warrant it.\n* The fuel on board at block-off and the rationale for significant extra fuel must be recorded in the Journey Log / OFP.",
       "references": [
-        "ICAO Doc 4444 (PANS-ATM Chapter 15)",
-        "SERA.8015 (Operational Air Traffic Procedures)"
+        "EASA CAT.GEN.MPA.105",
+        "EASA CAT.OP.MPA.180"
       ]
     },
     "metadata": {
-      "difficulty": 0.3
+      "difficulty": 0.2
     }
   },
   {
     "id": "NJ-FUEL-013",
     "subject_id": "combustible-fuel-schemes",
-    "learning_objective": "Contingency Fuel - Standard Minimums",
-    "stem": "What is the absolute minimum amount of contingency fuel required on an IFR flight under the Basic Fuel Scheme if statistical fuel consumption data is not used?",
+    "learning_objective": "In-Flight Fuel Management - In-Flight Re-Planning",
+    "stem": "What is the mandatory regulatory procedure under EASA Part-CAT if an aircraft in flight decides to re-plan to a new destination?",
     "options": [
       {
         "id": "A",
-        "text": "5% of the planned trip fuel, but in no case less than the fuel required to fly for 5 minutes at holding speed at 1,500 ft (450 m) above the destination aerodrome in standard ISA conditions.",
+        "text": "The flight crew must confirm that remaining usable fuel from the re-planning point satisfies all pre-flight planning rules (Trip + Contingency + Alternate + Final Reserve).",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "10% of the planned trip fuel, but not less than 30 minutes of cruise fuel.",
+        "text": "The flight crew needs only to ensure that total remaining fuel exceeds final reserve fuel by at least 10 minutes at touchdown in standard atmospheric conditions under standard operating conditions and criteria.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "A fixed quantity of 250 kg for all executive jets.",
+        "text": "The flight crew must land at the nearest airport within 30 minutes unless visual meteorological conditions prevail throughout during normal flight planning operations.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "15% of the trip fuel regardless of flight duration.",
+        "text": "The flight crew is exempted from planning a destination alternate if the new destination has two intersecting active runways during normal flight planning operations.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Standard 5% Contingency Rule (CAT.OP.MPA.180)\n* Under standard EASA rules, contingency fuel is **5% of planned trip fuel**.\n* It is subject to a hard **floor**: it cannot be less than **5 minutes holding fuel at 1,500 ft AAL** in ISA conditions at the destination.",
+      "text": "### In-Flight Re-planning (CAT.OP.MPA.180 / 185)\n* When re-planning in flight to a new destination, the usable fuel remaining from the re-planning point must be sufficient to include:\n  1. Trip fuel to new destination\n  2. Contingency fuel (from re-planning point)\n  3. Alternate fuel (if alternate required)\n  4. Final reserve fuel\n  5. Any required additional fuel.",
       "references": [
         "EASA CAT.OP.MPA.180",
-        "AMC1 CAT.OP.MPA.180"
+        "AMC1 CAT.OP.MPA.185"
       ]
     },
     "metadata": {
-      "difficulty": 0.25
+      "difficulty": 0.35
     }
   },
   {
     "id": "NJ-FUEL-014",
     "subject_id": "combustible-fuel-schemes",
-    "learning_objective": "Extra Fuel / Commander's Discretionary Fuel",
-    "stem": "How is 'Extra Fuel' defined in the Operational Flight Plan, and under whose authority can it be added before flight?",
+    "learning_objective": "No Destination Alternate Rule (Isolated vs 2 Runways)",
+    "stem": "Under EASA Part-CAT, under what specific conditions may a commercial IFR flight be planned without a destination alternate aerodrome?",
     "options": [
       {
         "id": "A",
-        "text": "Unusable fuel trapped in the sumps that cannot be consumed by the engines.",
+        "text": "Flight duration is under 2 hours, destination has an operational Cat III ILS system, and wind is strictly calm with no convective SIGMETs under standard operating conditions and criteria.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Fuel added at the discretion of the Commander and/or Dispatcher to account for anticipated operational delays, weather deviations, holding, or economic tankering, carried above all mandatory regulatory fuel components.",
+        "text": "Flight duration is under 6 hours, destination has two separate usable runways, and weather 1h before to 1h after ETA has ceiling >= 2,000 ft or circling minima + 500 ft, vis >= 5 km.",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "Fuel dedicated exclusively to cabin heating during ground embarkation.",
+        "text": "The flight is operated under daytime VFR with passenger load factor less than 50% and direct VHF communication with dispatch control during normal flight planning operations.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Fuel that replaces the final reserve fuel when flying short hops.",
+        "text": "The aircraft is equipped with three independent FMS units, ADS-B Out avionics, and carries 60 minutes of discretionary holding fuel reserve in standard atmospheric conditions.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Extra Fuel (Discretionary Fuel)\n* **Extra Fuel** is added on top of all regulatory fuel requirements (Taxi + Trip + Contingency + Alternate + Final Reserve + Additional).\n* The **Commander has the ultimate legal authority** to add discretionary fuel based on actual weather, VIP requirements, expected ATC slot delays, or tankering strategy.",
+      "text": "### Dispatch Without Destination Alternate (CAT.OP.MPA.180)\nUnder EASA Part-CAT, an IFR flight may be planned without a destination alternate if:\n1. The planned flight duration does not exceed **6 hours**;\n2. Two separate and usable runways are available at destination; and\n3. Weather reports/forecasts from **1 hour before to 1 hour after ETA** indicate ceiling at least **2,000 ft or circling minima + 500 ft** (whichever higher) and visibility at least **5 km**.",
       "references": [
-        "EASA CAT.OP.MPA.180",
-        "NetJets Europe Operations Manual (MOA 8.1.7)"
+        "EASA CAT.OP.MPA.180(a)(2)",
+        "AMC1 CAT.OP.MPA.180"
       ]
     },
     "metadata": {
-      "difficulty": 0.2
+      "difficulty": 0.35
     }
   },
   {
     "id": "NJ-FUEL-015",
     "subject_id": "combustible-fuel-schemes",
-    "learning_objective": "In-Flight Fuel Monitoring Frequency",
-    "stem": "What is the standard required frequency for in-flight fuel checks and log entries under EASA Part-CAT during cruise?",
+    "learning_objective": "Point of Safe Return (PSR) / Point of No Return (PNR)",
+    "stem": "How is the 'Point of No Return (PNR)' or 'Point of Safe Return (PSR)' defined and used in oceanic or isolated aerodrome flight planning?",
     "options": [
       {
         "id": "A",
-        "text": "At regular intervals not exceeding 30 to 60 minutes, and at each designated operational waypoint, recording actual fuel remaining and comparing it with the OFP planned fuel profile.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Only once at Top of Climb (TOC) and once at Top of Descent (TOD).",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "Continuously every 5 minutes by the Pilot Monitoring.",
-        "is_correct": false
-      },
-      {
-        "id": "D",
-        "text": "Only if a low fuel warning annunciates on the EICAS/CAS.",
-        "is_correct": false
-      }
-    ],
-    "explanation": {
-      "text": "### In-Flight Fuel Checks (CAT.OP.MPA.182)\n* Crews must conduct periodic fuel checks at least **every 30 to 60 minutes** (or at planned waypoints).\n* The check verifies: **Actual Fuel Remaining vs. Planned OFP Fuel**, ensuring the flight is burning within expected fuel burn limits and will reach destination with required reserves.",
-      "references": [
-        "EASA Part-CAT.OP.MPA.182",
-        "AMC1 CAT.OP.MPA.182"
-      ]
-    },
-    "metadata": {
-      "difficulty": 0.2
-    }
-  },
-  {
-    "id": "NJ-FUEL-016",
-    "subject_id": "combustible-fuel-schemes",
-    "learning_objective": "Fuel Tankering & Economic Fuel Planning",
-    "stem": "What factors must a NetJets flight crew assess before accepting an economic fuel tankering recommendation calculated by Dispatch?",
-    "options": [
-      {
-        "id": "A",
-        "text": "Impact on aircraft landing weight and performance margins (field length limit, brake energy limit, tire speed), increased en-route fuel burn due to carrying extra weight (burn-to-carry penalty), runway contamination at destination, and weather uncertainty.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Only the wholesale fuel price per gallon at the destination FBO.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "Tankering is prohibited on all twin-engine turbine aircraft under EASA.",
-        "is_correct": false
-      },
-      {
-        "id": "D",
-        "text": "Tankering is legally mandatory whenever fuel price differential exceeds 5%.",
-        "is_correct": false
-      }
-    ],
-    "explanation": {
-      "text": "### Fuel Tankering Evaluation\n* **Operational considerations:**\n  - Higher landing weight reduces **climb gradient and increases landing distance**.\n  - **Burn-to-carry penalty:** Typically 3% to 5% of extra fuel weight is burned per hour just to transport it.\n  - **Runway limits:** Must not compromise wet/contaminated runway stopping margins.",
-      "references": [
-        "EASA CAT.OP.MPA.180",
-        "NetJets Fuel Conservation & Tankering Policy"
-      ]
-    },
-    "metadata": {
-      "difficulty": 0.25
-    }
-  },
-  {
-    "id": "NJ-FUEL-017",
-    "subject_id": "combustible-fuel-schemes",
-    "learning_objective": "Point of No Return (PNR) / Equal Time Point (ETP)",
-    "stem": "In long-range / oceanic flight planning, what is the operational definition of the 'Equal Time Point' (ETP) and 'Point of No Return' (PNR)?",
-    "options": [
-      {
-        "id": "A",
-        "text": "ETP and PNR are identical points located exactly at 50% of the route distance.",
+        "text": "The geographical point where the aircraft reaches maximum certified operating altitude and must begin normal stepped cruise climb under standard operating conditions and criteria.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "ETP is the geographic point along the route from which the flight time to continue to destination equals the flight time to return to departure (or proceed to an en-route alternate), taking wind into account; PNR is the furthest geographic point from which the aircraft can turn back to the departure point with required fuel reserves remaining.",
-        "is_correct": true
-      },
-      {
-        "id": "C",
-        "text": "ETP is calculated assuming zero wind in all standard OFP calculations.",
+        "text": "The point along the route where the aircraft burns exactly 50% of its initial departure block fuel load regardless of headwinds during normal flight planning operations.",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "The furthest geographical point along the route from which the aircraft can turn back and reach the departure aerodrome (or en-route alternate) with required reserves.",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "PNR applies only when both engines have failed simultaneously.",
+        "text": "The point where radio altimeter auto-callouts activate during standard Category II precision instrument approaches in low visibility in standard atmospheric conditions.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### ETP and PNR Principles\n* **Equal Time Point (ETP / Critical Point):** Calculated for normal, engine-out (1EI), and depressurized scenarios (D_D_ETP = [D × GS_ret] / [GS_ret + GS_cont]).\n* **Point of No Return (PNR):** The last point where the aircraft can return to base with **Final Reserve Fuel intact**.",
+      "text": "### Point of No Return (PNR) / PSR\n* The **Point of No Return (PNR)** is the last point on a flight route from which an aircraft can return to its departure aerodrome (or en-route alternate) and land with the **required reserves (Final Reserve)**.\n* Beyond the PNR, the aircraft is committed to proceed onward.",
       "references": [
-        "ICAO Flight Planning and Fuel Management Manual (Doc 9976)"
+        "ICAO Doc 9976",
+        "EASA AMC1 CAT.OP.MPA.181"
       ]
     },
     "metadata": {
@@ -645,37 +570,75 @@
     }
   },
   {
-    "id": "NJ-FUEL-018",
+    "id": "NJ-FUEL-016",
     "subject_id": "combustible-fuel-schemes",
-    "learning_objective": "Fuel Density Variations and Mass Calculations",
-    "stem": "Why must flight crews verify standard fuel density when refueling executive jets in extreme hot or cold climates?",
+    "learning_objective": "Critical Point (CP) / Equal Time Point (ETP)",
+    "stem": "What is the operational definition of the 'Equal Time Point (ETP)' or 'Critical Point (CP)' between two en-route aerodromes?",
     "options": [
       {
         "id": "A",
-        "text": "Density verification is only required for avgas piston aircraft.",
+        "text": "The point along the route where the aircraft consumes identical quantities of fuel to fly to either aerodrome under zero wind conditions in standard atmospheric conditions.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Turbine engines consume fuel strictly by volume rather than mass.",
+        "text": "The exact geometric midpoint of the route calculated strictly by dividing total great circle route nautical mileage by two.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Fuel density changes the octane rating of turbine fuel.",
+        "text": "The point where cabin depressurization requires immediate emergency descent to 10,000 ft or minimum safe en-route altitude.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Standard Jet A-1 density is assumed to be approximately 0.80 kg/L (or 6.7 lb/US gal) at 15°C, but varies from 0.775 kg/L in high ambient temperatures (requiring higher volume for the same fuel mass) to 0.840 kg/L in sub-zero conditions; volumetric refueling meters without density compensation can cause significant fuel mass discrepancies.",
+        "text": "The point along the route from which the flight time to proceed to the forward aerodrome equals the flight time to return to the aft aerodrome.",
         "is_correct": true
       }
     ],
     "explanation": {
-      "text": "### Fuel Density & Volume-to-Mass Calculation\n* Aircraft performance and FMS calculations depend strictly on **Fuel Mass (kg / lb)**, while fuel trucks deliver **Volume (liters / US gallons)**.\n* Mass = Volume × Density. In hot climates (e.g. Madrid or Middle East in summer, density ~0.77 kg/L), standard density assumptions will **overestimate actual fuel mass onboard** unless actual measured hydrometer density is used.",
+      "text": "### Equal Time Point (ETP) / Critical Point (CP)\n* The **ETP (Critical Point)** is the position on the flight path from which it takes the **same flight time** to fly forward to an alternate/destination as it does to return to a suitable departure/en-route alternate.\n* Formula: `D_ETP = (D * G_home) / (G_out + G_home)` where D is total distance, and G represents groundspeeds.",
       "references": [
-        "EASA CAT.OP.MPA.175",
-        "IATA Fuel Quality Pool Guidelines"
+        "ICAO Doc 9976",
+        "EASA AMC1 CAT.OP.MPA.181"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "NJ-FUEL-017",
+    "subject_id": "combustible-fuel-schemes",
+    "learning_objective": "Refueling with Passengers on Board (CAT.OP.MPA.195)",
+    "stem": "Under EASA Part-CAT.OP.MPA.195, which safety precautions are mandatory when refuelling/defuelling an aircraft with passengers embarking, on board, or disembarking?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Qualified personnel must remain at designated positions, two-way communication established, emergency exits clear, and passengers briefed not to fasten seatbelts.",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Two fire trucks must maintain active foam lines connected to aircraft fuel manifolds while all electrical avionics remain powered off under standard operating conditions and criteria.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Refueling is strictly prohibited unless all passenger carry-on luggage has been stowed in underfloor cargo holds and sealed by security in standard atmospheric conditions.",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Passenger cabin lighting must be turned to emergency bright and APU operation is completely banned throughout the refueling process during normal flight planning operations.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Refueling with Passengers on Board (CAT.OP.MPA.195)\nMandatory precautions include:\n1. **Qualified personnel** stationed at designated positions ready to initiate and direct an evacuation.\n2. **Two-way communication** maintained between ground crew and flight crew/cabin crew.\n3. **Seat belt signs OFF** and passengers instructed to unfasten seat belts.\n4. **Emergency exit paths and doors clear** of ground equipment.\n5. Refuelling with wide-cut fuel (e.g. Jet B / JP-4) with passengers on board is strictly prohibited.",
+      "references": [
+        "EASA Part-CAT.OP.MPA.195",
+        "AMC1 CAT.OP.MPA.195"
       ]
     },
     "metadata": {
@@ -683,75 +646,113 @@
     }
   },
   {
-    "id": "NJ-FUEL-019",
+    "id": "NJ-FUEL-018",
     "subject_id": "combustible-fuel-schemes",
-    "learning_objective": "Fuel Imbalance Limits and Crossfeed Operation",
-    "stem": "What is the standard procedure when a lateral fuel tank imbalance exceeds certified AFM limits during flight?",
+    "learning_objective": "Fuel Density & Temperature Checks (Pre-Flight)",
+    "stem": "Why must flight crews verify actual fuel density (specific gravity) and fuel temperature before departure on business jet flights?",
     "options": [
       {
         "id": "A",
-        "text": "Shut down the engine fed by the lighter tank.",
+        "text": "Fuel density dictates the exact VHF transmission frequency power required for ACARS oceanic position reporting equipment under standard operating conditions and criteria.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Apply full rudder trim towards the heavy wing and ignore the imbalance.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "Confirm no active fuel leak exists; if no leak is confirmed, open the crossfeed valve, turn OFF the fuel boost pump on the lighter tank (or turn ON the crossfeed pump per AFM), monitor balancing progress, and close the crossfeed valve once balanced within limits.",
+        "text": "Volumetric uplift from ground fuel trucks converts to mass based on actual density; incorrect density causes significant mass calculation and performance errors.",
         "is_correct": true
       },
       {
+        "id": "C",
+        "text": "Fuel temperature must match ambient runway temperature within 2 deg C to prevent thermal shock to the carbon brake assemblies in standard atmospheric conditions.",
+        "is_correct": false
+      },
+      {
         "id": "D",
-        "text": "Dump fuel immediately from the heavier tank.",
+        "text": "EASA regulations require offloading fuel if density exceeds 0.72 kg/L to comply with airport pavement classification numbers during normal flight planning operations.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Fuel Balancing & Crossfeed Procedure\n* **Crucial Rule:** **Verify that the imbalance is NOT caused by a fuel leak** before opening crossfeed.\n* Open crossfeed valve and configure fuel pumps per AFM checklist.\n* **Never leave crossfeed open unattended** to prevent reversing the imbalance.",
+      "text": "### Fuel Density and Mass Verification\n* Fuel is metered by volume (litres/gallons) by fuel trucks, but aircraft performance and weight & balance rely strictly on **fuel mass (kg/lbs)**.\n* Standard Jet A-1 density varies between ~0.775 and 0.840 kg/L. Using an incorrect standard density can cause errors of hundreds of kilograms in actual fuel loaded vs planned.",
       "references": [
-        "AFM Aircraft Systems: Fuel System & Crossfeed Operations",
-        "EASA SIB 2018-12"
+        "ICAO Doc 9976",
+        "EASA CAT.POL.MAB.100"
       ]
     },
     "metadata": {
-      "difficulty": 0.2
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "NJ-FUEL-019",
+    "subject_id": "combustible-fuel-schemes",
+    "learning_objective": "Minimum Fuel for Go-Around and Divert Commitment",
+    "stem": "When approaching the destination airport with marginal fuel, at what threshold is the Commander required to initiate an immediate diversion to the alternate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Only when the low fuel caution advisory light illuminates on the engine primary display unit during intermediate approach descent in standard atmospheric conditions.",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "When total fuel on board reaches exactly 10% above the certified maximum unbalance limit between left and right main wing tanks.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Whenever fuel remaining at destination is estimated to be equal to or less than Alternate Fuel plus Final Reserve Fuel upon initiating a missed approach.",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Whenever air traffic control reports a ground delay program exceeding 5 minutes at the destination terminal control area during normal flight planning operations.",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "### Diversion Commitment (CAT.OP.MPA.185)\n* The PIC must initiate a diversion to the destination alternate whenever usable fuel on board drops to the level where, after a missed approach, the aircraft would arrive at the alternate with **less than Final Reserve Fuel**.\n* Diversion Fuel = Alternate Fuel + Final Reserve Fuel.",
+      "references": [
+        "EASA CAT.OP.MPA.180 / 185",
+        "AMC1 CAT.OP.MPA.185"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.25
     }
   },
   {
     "id": "NJ-FUEL-020",
     "subject_id": "combustible-fuel-schemes",
-    "learning_objective": "Fuel System Water Contamination Check",
-    "stem": "When is a physical fuel drain check for water contamination mandatory on executive aircraft?",
+    "learning_objective": "Fuel Crossfeed and Fuel Imbalance Limitations",
+    "stem": "What is the primary operational hazard associated with improper in-flight fuel balancing and fuel crossfeed management in twin-engine business jets?",
     "options": [
       {
         "id": "A",
-        "text": "Only during annual heavy maintenance base inspections.",
+        "text": "Overpressurizing hydraulic accumulator reservoirs and causing immediate failure of the emergency spoiler deployment actuators in standard atmospheric conditions under standard operating conditions and criteria.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Prior to the first flight of the day, following extended parking in humid/cold conditions, or immediately after refueling from non-dedicated or drums/remote outstation fuel installations.",
-        "is_correct": true
+        "text": "Triggering false engine fire detector loop warnings due to temperature differential across the engine nacelle firewalls during normal flight planning operations.",
+        "is_correct": false
       },
       {
         "id": "C",
-        "text": "Water contamination does not affect Jet A-1 fuel.",
+        "text": "Corrupting digital inertial reference navigation alignment data caused by asymmetric wing flex sensors during turbulence during normal flight planning operations.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Water drains are automatically sampled by FADEC during engine start.",
-        "is_correct": false
+        "text": "Exceeding lateral center of gravity limits, inducing control trim drag, and running the risk of uncommanded engine fuel starvation if a crossfeed valve is left open.",
+        "is_correct": true
       }
     ],
     "explanation": {
-      "text": "### Fuel Water Contamination\n* Water is denser than jet fuel and settles at the **lowest sump drain points**.\n* Undetected water can freeze into ice crystals at high altitude (< 0°C), blocking fuel filters and causing **dual engine flameout**.\n* Physical drain sampling using a clear syringe/sampler is standard before daily first flight.",
+      "text": "### Fuel Crossfeed & Balancing Hazards\n* Asymmetric fuel loading creates lateral CG displacement, requiring flight control trim which increases aerodynamic drag and fuel burn.\n* Leaving crossfeed open inadvertently can result in asymmetrical depletion or fuel starvation of an engine if boost pumps are misconfigured.",
       "references": [
-        "EASA Part-CAT.GEN.MPA.105",
-        "FAA Advisory Circular AC 20-125"
+        "CS-25.1001",
+        "AFM / FCOM Systems"
       ]
     },
     "metadata": {
@@ -761,73 +762,73 @@
   {
     "id": "NJ-FUEL-021",
     "subject_id": "combustible-fuel-schemes",
-    "learning_objective": "Fuel Specific Gravity and Fuel Temperature Probes",
-    "stem": "Why do modern business jets measure fuel temperature in the main fuel tanks, and what is the typical warning threshold during prolonged high-altitude cruise in polar or winter airmasses?",
+    "learning_objective": "Fuel Jettisoning (CS-25 / EASA Regulations)",
+    "stem": "Under CS-25 / EASA certification regulations, when is a transport category jet aircraft required to be equipped with a Fuel Jettisoning (Fuel Dump) system?",
     "options": [
       {
         "id": "A",
-        "text": "To alert the flight crew when fuel temperature approaches the fuel freezing point (e.g. amber caution when within 3°C of certified fuel freezing point: -44°C for Jet A-1 or -37°C for Jet A), requiring descent, speed increase to increase aerodynamic kinetic friction heating, or routing to warmer air.",
+        "text": "When the maximum takeoff mass exceeds the maximum landing mass and climb performance in the go-around / balked landing configuration cannot meet regulatory gradients.",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "To automatically jettison cold fuel overboard.",
+        "text": "On all commercial jet aircraft with passenger capacity greater than 8 seats regardless of maximum takeoff and landing masses under standard operating conditions and criteria.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "To trigger automatic electrical wing heating elements inside the fuel cells.",
+        "text": "Only when the aircraft is certified for Extended Diversion Time Operations (EDTO) over remote polar routes exceeding 180 minutes in standard atmospheric conditions.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "To prevent fuel from boiling and vaporizing inside the wing tanks above FL300.",
+        "text": "When the fuel capacity of the center fuselage tank exceeds 40% of the total wing tank usable fuel volume capacity during normal flight planning operations.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Fuel Temperature Monitoring\n* Cold temperatures at high flight levels (e.g. -65°C TAT) can chill fuel towards its freezing point (**-47°C for Jet A-1**).\n* Fuel temperature probes alert crew when fuel is **within 3°C of freezing**.\n* **Mitigation:** Increase Mach number (M↑ raises Total Air Temperature TAT = SAT × (1 + 0.2 M^2) by aerodynamic compression) or descend to warmer air.",
+      "text": "### Fuel Jettisoning System (CS-25.1001)\n* A fuel jettisoning system is required if the **Maximum Takeoff Mass (MTOM)** exceeds the **Maximum Landing Mass (MLM)** by a margin such that the aircraft cannot meet the required **one-engine-inoperative go-around climb gradient** or balked landing requirements at MTOM minus 15 minutes of flight.",
       "references": [
-        "EASA CS-25.1309 / CS-25.997",
-        "Boeing / Bombardier High Latitude Operating Manual"
+        "EASA CS-25.1001",
+        "ICAO Annex 6 Part I"
       ]
     },
     "metadata": {
-      "difficulty": 0.25
+      "difficulty": 0.35
     }
   },
   {
     "id": "NJ-FUEL-022",
     "subject_id": "combustible-fuel-schemes",
-    "learning_objective": "Statistical Fuel Scheme Requirements (EASA CAT.OP.MPA.181)",
-    "stem": "Under EASA Part-CAT.OP.MPA.181, what conditions must an operator meet to utilize an Individual Aircraft Statistical Fuel Consumption tracking model for contingency fuel?",
+    "learning_objective": "Fuel Freeze Point and Cold Fuel Management",
+    "stem": "What is the certified minimum fuel temperature buffer required above the fuel freezing point for Jet A-1 during extended high-altitude cruise?",
     "options": [
       {
         "id": "A",
-        "text": "Statistical fuel applies only to single-engine piston aircraft.",
+        "text": "Fuel temperature must remain at least 15 deg C above the freezing point at all times during trans-oceanic flight under standard operating conditions and criteria.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Statistical fuel allows eliminating the taxi fuel requirement on all flights.",
-        "is_correct": false
+        "text": "Fuel temperature must be kept at least 3 deg C (or 5 deg F) above the certified freezing point (-47 deg C for Jet A-1).",
+        "is_correct": true
       },
       {
         "id": "C",
-        "text": "Statistical fuel can be used without any historical database if the Captain has 5,000 hours on type.",
+        "text": "Fuel temperature is not restricted provided tank boost pumps maintain continuous delivery pressure above 50 psi.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "The operator must establish a continuous fuel consumption monitoring fleet database; statistical contingency fuel must be calculated to cover 99% of all statistical fuel deviations on the city-pair, or 95% with an approved Fuel ERA.",
-        "is_correct": true
+        "text": "Fuel temperature must be maintained above 0 deg C by activating engine fuel-oil heat exchangers continuously in cruise in standard atmospheric conditions.",
+        "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Statistical Contingency Fuel Scheme\n* Based on a **Fleet Fuel Monitoring Program** tracking actual versus planned fuel burn.\n* Statistical contingency fuel must cover **99% of historical fuel deviations** (or **95% with Fuel ERA**), replacing the fixed 5% rule.",
+      "text": "### Fuel Freezing Point Limitations\n* For **Jet A-1**, standard freezing point is **-47°C** (for Jet A it is **-40°C**).\n* The certified operational limitation requires fuel temperature to remain at least **3°C above the freeze point** (i.e. not below -44°C for Jet A-1).\n* If fuel temperature approaches limit: descend to warmer air, accelerate Mach number to increase kinetic heating, or divert.",
       "references": [
-        "EASA AMC1 CAT.OP.MPA.181",
-        "IATA Airline Fuel Management Toolkit"
+        "AFM Limitations",
+        "ICAO Doc 9976"
       ]
     },
     "metadata": {
@@ -837,39 +838,39 @@
   {
     "id": "NJ-FUEL-023",
     "subject_id": "combustible-fuel-schemes",
-    "learning_objective": "Engine Fuel Crossfeed Logic and Boost Pump Redundancy",
-    "stem": "In executive twin-jet aircraft, how are engine fuel feeds configured during normal operations versus single-engine / crossfeed operations?",
+    "learning_objective": "Additional Fuel Requirements (CAT.OP.MPA.180)",
+    "stem": "What is 'Additional Fuel' under EASA Part-CAT.OP.MPA.180, and when is it mandatory to include it in the operational flight plan?",
     "options": [
       {
         "id": "A",
-        "text": "Each engine is normally gravity/pump-fed independently from its respective wing tank; during crossfeed, the crossfeed valve is opened and the boost pump of the non-supplying tank is turned off (or supply pump selected), allowing one tank to feed both engines or one engine to feed from the opposite tank.",
-        "is_correct": true
+        "text": "Fuel required to compensate for traffic delays exceeding 30 minutes at congested primary hubs during peak morning hours in standard atmospheric conditions.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Crossfeed valves are mechanically interlocked and cannot be opened in flight.",
+        "text": "Fuel added exclusively at the discretion of the ground dispatcher to achieve company cost index optimization targets.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Crossfeed transfers fuel directly from wing to wing via pressurized air.",
-        "is_correct": false
+        "text": "Fuel required to satisfy extended twin engine operations or engine failure/depressurization descent and hold at an en-route alternate.",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "Both engines always feed simultaneously from the center tank only.",
+        "text": "Fuel required to power the auxiliary power unit continuously during all ground transit stops without ground power units.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Fuel Crossfeed System Architecture\n* Standard configuration is **Independent Tank-to-Engine Feed**.\n* **Crossfeed Valve** connects the left and right fuel manifolds, allowing flexible fuel balancing or engine-out feeding.",
+      "text": "### Additional Fuel (CAT.OP.MPA.180)\n* **Additional Fuel** is the supplementary fuel required to ensure that in the event of **engine failure or loss of pressurization at the most critical point**, the aircraft can descend, fly to an alternate aerodrome, hold for 15 minutes at 1,500 ft, and execute an approach and landing.",
       "references": [
-        "AFM Systems: Fuel Distribution System",
-        "EASA CS-25.951"
+        "EASA Part-CAT.OP.MPA.180",
+        "AMC1 CAT.OP.MPA.180"
       ]
     },
     "metadata": {
-      "difficulty": 0.2
+      "difficulty": 0.3
     }
   }
 ]

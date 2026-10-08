@@ -2,35 +2,35 @@
   {
     "id": "NJ-FTL-001",
     "subject_id": "tiempos-actividad-descanso-ftl",
-    "learning_objective": "EASA ORO.FTL.205 Maximum Daily Flight Duty Period (FDP)",
-    "stem": "Under EASA ORO.FTL.205, what is the maximum basic daily Flight Duty Period (FDP) for an unaugmented two-pilot crew starting duty at 08:00 local time (fully acclimatised) for a 2-sector flight?",
+    "learning_objective": "Maximum Basic Daily FDP Limits (ORO.FTL.205)",
+    "stem": "Under EASA ORO.FTL.205, what is the maximum basic daily Flight Duty Period (FDP) for an unaugmented 2-pilot crew starting duty between 06:00 and 13:29 with 1 to 2 sectors?",
     "options": [
       {
         "id": "A",
-        "text": "11 hours 15 minutes.",
-        "is_correct": false
+        "text": "13 hours basic maximum FDP (progressively reduced for additional sectors down to 9 hours for 10 sectors or duty starting in the WOCL) as required.",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "14 hours 30 minutes.",
+        "text": "16 hours basic maximum FDP regardless of start time, extendable to 20 hours with Commander's discretion on any executive sec.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "10 hours 00 minutes.",
+        "text": "10 hours basic maximum FDP for all turbojet flights, with mandatory 4-hour intermediate rest at outstations under standard conditions.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "13 hours 00 minutes.",
-        "is_correct": true
+        "text": "18 hours basic maximum FDP provided the flight is conducted entirely within European domestic airspace under standard conditions.",
+        "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Maximum Daily FDP Matrix (ORO.FTL.205 Table)\n* When a crew member is **acclimatised**:\n  - Start of FDP between **06:00 and 13:29**:\n    - **1 to 2 sectors:** Max FDP = **13h 00m**.\n    - **3 sectors:** Max FDP = **12h 30m**.\n    - **4 sectors:** Max FDP = **12h 00m**.\n    - **5 sectors:** Max FDP = **11h 30m**.\n  - Start during the Window of Circadian Low (WOCL, 02:00-05:59): FDP is reduced significantly (down to 9h 00m).",
+      "text": "### Basic Daily FDP Limits (Table 1 ORO.FTL.205 / CS-FTL.1.205)\n* For a 2-pilot crew starting duty between **06:00 and 13:29 (optimal circadian window)**:\n  * **1–2 sectors:** **13 hours** max FDP.\n  * **3 sectors:** 12h 30m.\n  * **4 sectors:** 12h 00m.\n  * **5 sectors:** 11h 30m.\n  * **6 sectors:** 11h 00m.\n* Duty starting during the **Window of Circadian Low (WOCL 02:00–05:59)** is restricted to **9h–11h**.",
       "references": [
-        "EASA Part-ORO.FTL.205 Table 1",
-        "CS-FTL.1.205 (Flight Duty Period Limits)"
+        "EASA Part-ORO.FTL.205",
+        "CS-FTL.1.205 Table 1"
       ]
     },
     "metadata": {
@@ -40,35 +40,35 @@
   {
     "id": "NJ-FTL-002",
     "subject_id": "tiempos-actividad-descanso-ftl",
-    "learning_objective": "Split Duty Provisions (ORO.FTL.220)",
-    "stem": "What are the regulatory conditions and extensions permitted under EASA Split Duty (ORO.FTL.220)?",
+    "learning_objective": "Split Duty (Break on the Ground) FDP Extension",
+    "stem": "What are the regulatory conditions and extensions permitted under EASA ORO.FTL.220 for 'Split Duty' (break on the ground)?",
     "options": [
       {
         "id": "A",
-        "text": "Split duty allows up to 24 hours of continuous duty without a bed.",
+        "text": "Any break of 30 minutes in the passenger terminal café resets the FDP to a brand new 13-hour maximum duty block under standard conditions.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "A break on the ground of at least 3 consecutive hours in suitable accommodation allows extending the basic maximum daily FDP by 50% of the break duration; the break does not count as part of the FDP for sector calculations.",
+        "text": "A break on the ground of at least 3 consecutive hours in suitable accommodation allows extending the basic daily FDP by 50% of the break duration.",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "Split duty is strictly prohibited on multi-engine turbine aircraft.",
+        "text": "Split duty allows extending the FDP up to 24 continuous hours provided the break occurs during daylight hours under standard conditions.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Any break of 30 minutes in the aircraft cabin extends the FDP by 2 hours.",
+        "text": "Split duty is strictly prohibited on twin-engine business jets operating under European Part-CAT rules under standard conditions.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Split Duty Extension (ORO.FTL.220 & CS-FTL.1.220)\n* **Minimum Break:** Must be at least **3 consecutive hours**.\n* **Accommodation:** Must be in **suitable accommodation** (a private, quiet bedroom with a bed).\n* **FDP Extension:** The maximum FDP is increased by **50% of the break duration** (e.g., a 4-hour break in a hotel room extends FDP by +2 hours).",
+      "text": "### Split Duty Provisions (ORO.FTL.220 / CS-FTL.1.220)\n* **Minimum Break Duration:** **3 consecutive hours** of actual break (excluding post-flight and pre-flight transit times).\n* **Extension:** The basic maximum FDP may be increased by **50% of the break duration** if suitable accommodation (or suitable quiet facility for breaks < 6h) is provided.\n* The break does not count as a legal rest period.",
       "references": [
         "EASA Part-ORO.FTL.220",
-        "CS-FTL.1.220 (Split Duty)"
+        "CS-FTL.1.220"
       ]
     },
     "metadata": {
@@ -78,32 +78,32 @@
   {
     "id": "NJ-FTL-003",
     "subject_id": "tiempos-actividad-descanso-ftl",
-    "learning_objective": "Commander's Discretion to Extend FDP / Reduce Rest",
-    "stem": "Under EASA ORO.FTL.205(f), what is the maximum allowable FDP extension and rest reduction under the Commander's Discretion in unforeseen operational circumstances?",
+    "learning_objective": "Commander's Discretion to Extend FDP (ORO.FTL.205(f))",
+    "stem": "Under EASA ORO.FTL.205(f), what is the maximum allowable FDP extension permitted under Commander's Discretion in unforeseen circumstances?",
     "options": [
       {
         "id": "A",
-        "text": "The Commander can extend duty without any limit on private charter flights.",
+        "text": "Maximum extension of 6 hours provided the extra time is compensated with double rest on the following tour under standard conditions.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Maximum FDP extension of up to 2 hours for an unaugmented crew (or 3 hours for augmented crew), and maximum rest reduction of up to 2 hours, provided minimum rest never falls below 10 hours and crew members confirm fitness to fly.",
-        "is_correct": true
-      },
-      {
-        "id": "C",
-        "text": "Maximum FDP extension of 5 hours with telephone approval from the Chief Pilot.",
+        "text": "Unlimited extension provided the flight destination is the home base of both flight crew members under standard conditions.",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "Maximum extension of 2 hours for unaugmented 2-pilot crews (or 3 hours for augmented crews), following consultation with all crew members.",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "Rest can be reduced to 6 hours if breakfast is provided by the hotel.",
+        "text": "Commander's discretion cannot be used if any passengers are on board the aircraft at departure under standard conditions.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Commander's Discretion (ORO.FTL.205(f))\n* **FDP Extension:** Maximum **+2 hours** (unaugmented crew) or **+3 hours** (augmented crew).\n* **Rest Reduction:** Maximum **-2 hours**, but the reduced rest **CAN NEVER BE LESS THAN 10 HOURS**.\n* **Reporting:** The Commander must consult all crew members, record the decision, and submit a Commander's Discretion Report to the operator within **28 days** (and to the National Aviation Authority if required).",
+      "text": "### Commander's Discretion (ORO.FTL.205(f))\n* In unforeseen operational circumstances after reporting:\n  * **Unaugmented crew:** Maximum extension of **2 hours**.\n  * **Augmented crew:** Maximum extension of **3 hours**.\n* The Commander must consult all crew members regarding their fitness.\n* If extension exceeds **1 hour**, a written report must be submitted to the operator and competent authority within **28 days**.",
       "references": [
         "EASA Part-ORO.FTL.205(f)",
         "AMC1 ORO.FTL.205(f)"
@@ -116,35 +116,35 @@
   {
     "id": "NJ-FTL-004",
     "subject_id": "tiempos-actividad-descanso-ftl",
-    "learning_objective": "Cumulative Duty and Flight Time Limits",
-    "stem": "What are the strict cumulative Duty and Flight Block Time limits established under EASA ORO.FTL.210 for commercial flight crews?",
+    "learning_objective": "Cumulative Flight and Duty Time Limits (ORO.FTL.210)",
+    "stem": "What are the strict cumulative Duty and Flight Block Time limits prescribed under EASA Part-ORO.FTL.210?",
     "options": [
       {
         "id": "A",
-        "text": "There are no cumulative duty limits if daily rest exceeds 14 hours.",
+        "text": "Duty: 80h in 7 days, 150h in 14 days; Flight Block: 150h in 28 days and 1,500h in 12 consecutive calendar months across all applicable operational flight phases.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Duty Time: 60 h in 7 days, 110 h in 14 days, 190 h in 28 days; Flight Block Time: 100 h in 28 days, 900 h in a calendar year, 1,000 h in 12 consecutive months.",
-        "is_correct": true
+        "text": "Duty: 40h in 7 days; Flight Block: 50h in 28 days and 500h in a calendar year for all executive business jet pilots under standard rules.",
+        "is_correct": false
       },
       {
         "id": "C",
-        "text": "Duty Time: 100 h in 7 days; Flight Time: 1,500 h in a calendar year.",
+        "text": "Cumulative limits apply only to long-haul transoceanic operations crossing more than 5 time zones under standard rules.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Duty Time: 40 h in 7 days; Flight Time: 50 h in 28 days.",
-        "is_correct": false
+        "text": "Duty: 60h in 7 days, 110h in 14 days, 190h in 28 days; Flight Block: 100h in 28 days, 900h in calendar year, 1,000h in 12 consecutive months.",
+        "is_correct": true
       }
     ],
     "explanation": {
-      "text": "### Cumulative Limits (ORO.FTL.210)\n* **Duty Period Limits (all work / ground / flight / standby):**\n  - **60 hours** in any 7 consecutive days.\n  - **110 hours** in any 14 consecutive days.\n  - **190 hours** in any 28 consecutive days.\n* **Flight Block Time Limits (chock-to-chock):**\n  - **100 hours** in any 28 consecutive days.\n  - **900 hours** in a calendar year (Jan 1 - Dec 31).\n  - **1,000 hours** in any 12 consecutive calendar months.",
+      "text": "### Cumulative Duty & Flight Time Limits (ORO.FTL.210)\n* **Cumulative Duty Hours:**\n  * **60 hours** in 7 consecutive days\n  * **110 hours** in 14 consecutive days\n  * **190 hours** in 28 consecutive days\n* **Cumulative Flight (Block) Hours:**\n  * **100 hours** in 28 consecutive days\n  * **900 hours** in a calendar year\n  * **1,000 hours** in 12 consecutive calendar months.",
       "references": [
-        "EASA Part-ORO.FTL.210 (Flight Times and Duty Periods)",
-        "ICAO Annex 6 Part I"
+        "EASA Part-ORO.FTL.210",
+        "CS-FTL.1.210"
       ]
     },
     "metadata": {
@@ -154,39 +154,39 @@
   {
     "id": "NJ-FTL-005",
     "subject_id": "tiempos-actividad-descanso-ftl",
-    "learning_objective": "Minimum Rest Periods: Home Base vs Outstation",
-    "stem": "Under EASA ORO.FTL.235, what is the minimum required rest period when operating away from home base versus at home base?",
+    "learning_objective": "Minimum Rest Periods: Home Base vs Outstation (ORO.FTL.235)",
+    "stem": "Under EASA ORO.FTL.235, what is the minimum required rest period away from home base (outstation) compared to at home base?",
     "options": [
       {
         "id": "A",
-        "text": "At home base: equal to the preceding duty period or at least 12 hours (whichever is greater); Away from home base: equal to the preceding duty period or at least 10 hours (whichever is greater), which must include an 8-hour sleep opportunity plus travel and physiological time.",
+        "text": "At home base: at least as long as preceding duty or 12 hours (whichever is greater); away from base: at least as long as preceding duty or 10 hours (including 8h sleep opportunity).",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "24 hours rest after every landing regardless of duty length.",
+        "text": "At home base: 24 hours mandatory; away from base: 6 hours flat provided hotel is within 5 minutes of the airport terminal across all applicable operational flight phases during normal flight operations.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Rest is only required after completing 5 consecutive sectors.",
+        "text": "At home base: 8 hours; away from base: 14 hours including mandatory hot meal allowance and fitness facility access under standard rules.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "8 hours flat at home base and 6 hours at outstations.",
+        "text": "Minimum rest is fixed at 8 hours flat at home base and 6 hours at outstations across all European AOC operators under standard rules.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Minimum Rest Period Standards (ORO.FTL.235)\n* **At Home Base:** Minimum **12 hours** or the duration of the preceding duty period, whichever is greater.\n* **Away from Base (Outstation):** Minimum **10 hours** or the duration of the preceding duty period, whichever is greater.\n* The outstation rest must guarantee an **8-hour uninterrupted sleep opportunity** in suitable accommodation, taking into account travel time to and from the hotel.",
+      "text": "### Minimum Rest Periods (ORO.FTL.235)\n* **At Home Base:** Minimum rest is at least the length of the **preceding duty period**, or **12 hours**, whichever is greater.\n* **Away from Home Base (Outstation):** Minimum rest is at least the length of the **preceding duty period**, or **10 hours**, whichever is greater. This 10-hour rest must include an **8-hour sleep opportunity** taking into account travel time to the hotel.",
       "references": [
         "EASA Part-ORO.FTL.235",
-        "CS-FTL.1.235 (Rest Periods)"
+        "CS-FTL.1.235"
       ]
     },
     "metadata": {
-      "difficulty": 0.2
+      "difficulty": 0.25
     }
   },
   {
@@ -197,30 +197,30 @@
     "options": [
       {
         "id": "A",
-        "text": "Positioning is excluded completely from monthly cumulative duty calculations.",
+        "text": "Positioning is excluded completely from monthly cumulative duty calculations and treated as non-operational travel across all applicable operational flight phases during normal flight operations in accordance with approved airline procedures.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Positioning only counts if the flight is on a NetJets aircraft.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "Positioning counts 100% as Duty Period; positioning immediately prior to an operating sector forms part of the Flight Duty Period (FDP), whereas positioning following the last operating sector counts as Duty but not as FDP; positioning can NEVER count as rest.",
+        "text": "Positioning counts 100% as Duty Period; positioning before an operating sector forms part of FDP, while positioning after the last sector is Duty but not FDP; positioning can NEVER count as rest.",
         "is_correct": true
       },
       {
+        "id": "C",
+        "text": "Positioning in commercial airline business class seats is legally credited as an off-duty rest period under standard rules.",
+        "is_correct": false
+      },
+      {
         "id": "D",
-        "text": "Positioning in business class seats counts as rest period.",
+        "text": "Positioning counts as duty only if the flight is operated on a NetJets fractional aircraft tail number under standard rules.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Positioning (Deadhead) Rules (ORO.FTL.105 & 205)\n* **Positioning = 100% Duty Time**.\n* If a pilot deadheads from Paris to Nice and then flies an Owner to London, the deadhead leg is **included in the FDP**.\n* If the deadhead occurs after the flight to return home, it is **Duty Time** (requiring post-duty rest) but **not FDP**.\n* Positioning in an aircraft or passenger train **CAN NEVER COUNT AS REST**.",
+      "text": "### Positioning (ORO.FTL.105 / 205)\n* **All positioning time counts as Duty**.\n* **Positioning prior to operating sector:** Counts as part of the **Flight Duty Period (FDP)** and towards cumulative duty.\n* **Positioning after last operating sector:** Counts as **Duty Period** (for determining required rest), but not as FDP.\n* Positioning **never counts as a rest period**.",
       "references": [
-        "EASA Part-ORO.FTL.105 Definitions ('Positioning')",
-        "EASA Part-ORO.FTL.205(c)"
+        "EASA Part-ORO.FTL.105(18)",
+        "EASA Part-ORO.FTL.205"
       ]
     },
     "metadata": {
@@ -235,34 +235,34 @@
     "options": [
       {
         "id": "A",
-        "text": "A continuous period of 36 hours, including 2 local nights, such that there shall never be more than 168 hours (7 days) between the end of one extended recovery rest period and the start of the next.",
-        "is_correct": true
+        "text": "A continuous period of 48 hours every calendar month, which can be deferred during peak summer holiday operations across all applicable operational flight phases during normal flight operations in accordance with approved airline procedures.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "48 hours every calendar month.",
+        "text": "A continuous period of 72 hours every 6 months taken exclusively during recurrent simulator check weeks under standard rules.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "72 hours every 6 months during simulator checks.",
-        "is_correct": false
+        "text": "A continuous period of 36 hours, including 2 local nights, such that there shall never be more than 168 hours (7 days) between the end of one extended recovery rest period and the start of the next.",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "24 hours every 14 days.",
+        "text": "A continuous period of 24 hours every 14 days provided the pilot has flown fewer than 30 block hours under standard rules.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Extended Recovery Rest Period (ORO.FTL.235(d))\n* Crew members must be given an **Extended Recovery Rest Period** of at least **36 continuous hours including 2 local nights**.\n* Maximum interval between extended rest periods is **168 hours (7 days)**.\n* A *'Local Night'* is defined as a period of 8 hours falling between 22:00 and 08:00 local time.",
+      "text": "### Extended Recovery Rest Period (ORO.FTL.235(d))\n* Crew members must be provided with an **Extended Recovery Rest Period of at least 36 hours, including 2 local nights**.\n* The interval between the end of one extended recovery rest period and the start of the next shall **not exceed 168 hours (7 days)**.",
       "references": [
         "EASA Part-ORO.FTL.235(d)",
         "CS-FTL.1.235"
       ]
     },
     "metadata": {
-      "difficulty": 0.25
+      "difficulty": 0.2
     }
   },
   {
@@ -273,30 +273,30 @@
     "options": [
       {
         "id": "A",
-        "text": "State X requires all flights to be conducted under VFR.",
+        "text": "Allows the Commander to extend FDP by 4 hours without report provided the crew sleeps in business class seats across all applicable operational flight phases during normal flight operations.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "State X allows the Commander to extend FDP by 4 hours without report.",
+        "text": "Requires all flights to be conducted under visual flight rules (VFR) below 10,000 ft in daylight hours under standard rules.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "State X occurs when crew time-zone transitions prevent establishing acclimatisation to either departure or destination; it forces the operator to apply the most restrictive FDP limits in the FTL tables.",
-        "is_correct": true
+        "text": "Applies only when flying due south along identical meridians with zero time-zone longitudinal change under standard rules.",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "State X applies only when flying south across zero time zones.",
-        "is_correct": false
+        "text": "Occurs when time-zone transitions prevent establishing acclimatisation to either departure or destination; forces application of the most restrictive FDP limits in the FTL tables.",
+        "is_correct": true
       }
     ],
     "explanation": {
-      "text": "### Acclimatisation States (CS-FTL.1.205)\n* **State B:** Acclimatised to base / departure time zone.\n* **State D:** Acclimatised to local destination time zone.\n* **State X (Unknown):** Transitioning across multiple time zones without sufficient local rest (takes 48-72h in local time zone to acclimatise). In State X, the **maximum allowable daily FDP is heavily penalized** (typically capped at 11h for 1-2 sectors).",
+      "text": "### Acclimatisation States (CS-FTL.1.205)\n* **State B:** Acclimatised to Departure timezone.\n* **State D:** Acclimatised to Destination timezone.\n* **State X (Unknown):** When moving across time zones without sufficient local rest to acclimatise to either location. When in State X, the **most restrictive daily FDP limits** (Table 2) apply.",
       "references": [
-        "CS-FTL.1.205 Table 2 (Unacclimatised FDP)",
-        "EASA FTL Acclimatisation Guidance"
+        "EASA CS-FTL.1.205 Table 2",
+        "AMC1 ORO.FTL.105"
       ]
     },
     "metadata": {
@@ -311,30 +311,30 @@
     "options": [
       {
         "id": "A",
-        "text": "Disruptive schedules are exempt from weekly rest requirements.",
-        "is_correct": false
+        "text": "Early schedules start between 05:00 and 06:59, and Late schedules end between 23:00 and 01:59; transitions between early and late duties require compensatory rest to prevent acute circadian disruption.",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "Disruptive schedules only apply when flight delay exceeds 10 hours.",
+        "text": "Any flight landing after local civil twilight is classified as disruptive and automatically doubles the required weekly rest across all applicable operational flight phases during normal flight operations in accordance with approved airline procedures.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Any flight landing after sunset is classified as a disruptive schedule.",
+        "text": "Disruptive schedules only apply when flight delay exceeds 10 hours caused by air traffic control slot ground stops under standard rules.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Early type schedules start between 05:00 and 06:59, and Late type schedules end between 23:00 and 01:59; transitions between early starts and late finishes require compensatory rest to prevent acute circadian disruption.",
-        "is_correct": true
+        "text": "Disruptive schedules are completely exempt from weekly recovery rest requirements on business jet charter flights under standard rules.",
+        "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Disruptive Schedules (CS-FTL.1.235)\n* **Early Type:** Duty period starting between **05:00 and 06:59**.\n* **Late Type:** Duty period ending between **23:00 and 01:59**.\n* **Night Duty:** Duty period encroaching any portion of the Window of Circadian Low (02:00-05:59).\n* Operators must prevent alternating rapidly between Early and Late duties without adequate recovery rest.",
+      "text": "### Disruptive Schedules (ORO.FTL.105 / CS-FTL.1.235)\n* **Early Type:** Duty starting between **05:00 and 06:59**.\n* **Late Type:** Duty ending between **23:00 and 01:59**.\n* **Night Duty:** Duty encroaching on any portion of **02:00 to 04:59**.\n* Combining early starts and late finishes causes circadian disruption; operators must apply specific mitigation (e.g. additional rest or limit consecutive disruptive duties).",
       "references": [
-        "EASA CS-FTL.1.235",
-        "EASA Safety Guidance on Crew Fatigue"
+        "EASA Part-ORO.FTL.105",
+        "CS-FTL.1.235"
       ]
     },
     "metadata": {
@@ -349,29 +349,29 @@
     "options": [
       {
         "id": "A",
-        "text": "Airport Standby counts 100% as Duty Period; if a flight is assigned, the allowable FDP is calculated from the start of the airport standby period.",
-        "is_correct": true
-      },
-      {
-        "id": "B",
-        "text": "Airport standby is treated as off-duty rest until boarding starts.",
+        "text": "Airport standby is treated as off-duty rest until passenger boarding starts, resetting the daily flight duty period across all applicable operational flight phases during normal flight operations.",
         "is_correct": false
       },
       {
+        "id": "B",
+        "text": "Airport Standby counts 100% as Duty Period; if a flight is assigned, allowable FDP is calculated from the start of the airport standby period (capped at 16h total combined).",
+        "is_correct": true
+      },
+      {
         "id": "C",
-        "text": "Airport standby can last up to 24 hours continuously.",
+        "text": "Only 10% of airport standby time counts towards cumulative duty, allowing 24-hour continuous standby shifts under standard rules.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Only 10% of airport standby time counts towards cumulative duty.",
+        "text": "Airport standby does not count towards cumulative 14-day duty time unless the aircraft executes an actual takeoff under standard rules.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Standby Accounting (ORO.FTL.225)\n* **Airport Standby:** The pilot is at the airport ready for immediate dispatch. **It counts 100% as Duty Time**.\n* If assigned to a flight, the **maximum allowable FDP begins at the start of the Airport Standby**.\n* Maximum duration of Airport Standby is **capped at 8 hours** (or equivalent FDP limit).",
+      "text": "### Airport Standby (ORO.FTL.225 / CS-FTL.1.225)\n* **100% of Airport Standby counts as Duty Period**.\n* If an FDP is assigned from airport standby, the FDP starts from the beginning of the airport standby period.\n* The **maximum combined Airport Standby + assigned FDP** is limited to the allowable FDP + 4 hours (up to a hard cap of **16 hours**).",
       "references": [
-        "EASA Part-ORO.FTL.225 (Standby and Duties at Airport)",
+        "EASA Part-ORO.FTL.225",
         "CS-FTL.1.225"
       ]
     },
@@ -387,30 +387,30 @@
     "options": [
       {
         "id": "A",
-        "text": "Class 1 (bunk/horizontal lie-flat bed separated from cockpit and cabin) permits FDP up to 18 hours with 2 relief pilots; Class 2 (lie-flat or 45° reclining seat with privacy curtain separated from passengers) permits FDP up to 16 hours; Class 3 (reclining cabin seat with leg rest) permits FDP up to 14 hours.",
-        "is_correct": true
+        "text": "Class 1 is a cockpit jumpseat; Class 2 is an emergency exit row seat; Class 3 is a folding crew jumpseat in the forward galley across all applicable operational flight phases during normal flight operations.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Class 1 is a cockpit jumpseat and Class 3 is an emergency exit row seat.",
+        "text": "Augmented crews are strictly prohibited under European business aviation Part-CAT operational regulations under standard rules.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Augmented crews are prohibited under European executive aviation regulations.",
-        "is_correct": false
+        "text": "Class 1 (bunk/lie-flat bed separated from cockpit/cabin) permits FDP up to 18h; Class 2 (lie-flat/45° seat with curtain) permits up to 16h; Class 3 (reclining cabin seat) permits up to 14h.",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "In-flight rest is only permitted on flights crossing more than 8 time zones.",
+        "text": "In-flight rest is permitted only on supersonic business jet flights crossing more than 8 time zones in daylight under standard rules.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### In-Flight Rest Classes (CS-FTL.1.205)\n* **Class 1 Rest Facility:** Dedicated horizontal bunk/bed isolated from sound and light (**Max FDP: 18h with 4 pilots / 16h with 3 pilots**).\n* **Class 2 Rest Facility:** Lie-flat / 45°C reclining seat with privacy curtain (**Max FDP: 15h-16h**).\n* **Class 3 Rest Facility:** Reclining seat with leg rest in passenger cabin (**Max FDP: 14h**).",
+      "text": "### In-Flight Rest Facilities Classes (CS-FTL.1.205)\n* **Class 1 Rest Facility:** Bunk or horizontal lie-flat surface, isolated from flight deck and passenger cabin (Max FDP up to **18 hours** with 2 additional pilots).\n* **Class 2 Rest Facility:** Seat in aircraft cabin that reclines at least 45° with leg/foot support, screened from passengers (Max FDP up to **16 hours**).\n* **Class 3 Rest Facility:** Reclining passenger seat with leg support separated by curtain (Max FDP up to **14 hours**).",
       "references": [
         "EASA CS-FTL.1.205(c)",
-        "EASA Part-ORO.FTL.205(e)"
+        "AMC1 ORO.FTL.205(e)"
       ]
     },
     "metadata": {
@@ -425,30 +425,30 @@
     "options": [
       {
         "id": "A",
-        "text": "A software program that automatically doubles flight crew salary during night flights.",
+        "text": "A software program that automatically doubles flight crew hourly pay during night flights in the Window of Circadian Low across all applicable operational flight phases during normal flight operations in accordance with approved airline procedures.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "A data-driven, scientifically backed management system that continuously monitors and controls fatigue-related safety risks, integrating predictive roster modeling, fatigue reporting, and bio-mathematical algorithms alongside standard prescriptive FTL rules.",
-        "is_correct": true
+        "text": "A procedure allowing pilots to sleep in the cockpit without pre-briefing or setting timer alert alarms during cruise under standard rules.",
+        "is_correct": false
       },
       {
         "id": "C",
-        "text": "A procedure allowing pilots to nap in the cockpit without pre-briefing.",
+        "text": "An exemption that eliminates all minimum rest and duty time limitations for on-demand executive corporate charters under standard rules.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "An exemption that eliminates all rest requirements for corporate executive flights.",
-        "is_correct": false
+        "text": "A data-driven, scientifically backed management system that continuously monitors and controls fatigue risks, integrating predictive roster modeling, fatigue reporting, and bio-mathematical algorithms alongside prescriptive FTL.",
+        "is_correct": true
       }
     ],
     "explanation": {
-      "text": "### Fatigue Risk Management System (ORO.FTL.120)\n* **FRMS** provides continuous fatigue monitoring using:\n  - **Predictive tools:** Roster scheduling analysis via bio-mathematical fatigue models.\n  - **Proactive tools:** Fatigue surveys, crew reporting, and sleep studies.\n  - **Reactive tools:** Investigation of fatigue-related incidents and FDM data.",
+      "text": "### Fatigue Risk Management System (FRMS) (ORO.FTL.120)\n* FRMS is a **data-driven system** that provides an equivalent level of safety to prescriptive FTL rules.\n* It uses **bio-mathematical fatigue modeling**, crew fatigue reports, sleep actigraphy studies, and safety performance indicators (SPIs) to dynamically assess and mitigate fatigue risks.",
       "references": [
-        "EASA Part-ORO.FTL.120 (Fatigue Risk Management)",
-        "ICAO Doc 9966 (FRMS Manual for Regulators and Operators)"
+        "EASA Part-ORO.FTL.120",
+        "ICAO Doc 9966 (FRMS Manual)"
       ]
     },
     "metadata": {
@@ -463,30 +463,30 @@
     "options": [
       {
         "id": "A",
-        "text": "No additional rest is required if the flight was flown above FL400.",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "The pilot must take 30 days mandatory leave.",
-        "is_correct": false
-      },
-      {
-        "id": "C",
         "text": "The minimum rest period at home base must be increased to include at least 14 hours rest or an additional local night for every time zone crossed beyond 4 time zones.",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "The pilot must take 30 consecutive days of mandatory administrative leave before returning to flight duty across all applicable operational flight phases during normal flight operations.",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No additional rest is required if the cruise portion of the flight was conducted above FL400 in smooth air under standard rules.",
+        "is_correct": false
+      },
+      {
         "id": "D",
-        "text": "Compensatory rest only applies if the aircraft was delayed by more than 2 hours.",
+        "text": "Compensatory rest applies only if the aircraft suffered an air traffic control departure delay exceeding 3 hours under standard rules.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Time Zone Crossing Rest (CS-FTL.1.235)\n* Crossing **4 or more time zones** disrupts the biological circadian clock.\n* Operators must provide compensatory rest at base to allow full circadian re-synchronization before starting the next tour of duty.",
+      "text": "### Time Zone Crossing Rest (CS-FTL.1.235)\n* When crossing **4 or more time zones**, circadian rhythm disruption requires compensatory rest.\n* Upon return to home base, minimum rest must be extended by providing **additional local nights** (typically 2 to 4 local nights depending on the number of time zones crossed and total time spent away from base).",
       "references": [
-        "EASA CS-FTL.1.235(b)",
-        "EASA FTL Technical Guidance"
+        "EASA CS-FTL.1.235 Table 1",
+        "AMC1 ORO.FTL.235"
       ]
     },
     "metadata": {
@@ -501,30 +501,30 @@
     "options": [
       {
         "id": "A",
-        "text": "Controlled rest is permitted during ILS approaches in VMC.",
+        "text": "Permitted during ILS Cat I approach provided the autopilot is coupled and the cabin crew performs door chimes across all applicable operational flight phases during normal flight operations in accordance with approved airline procedures.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Permitted only during low workload cruise on flights with 2 pilots; maximum rest duration is 45 minutes to prevent sleep inertia, with a mandatory 20-minute post-rest recovery period before taking over active control, and strictly prohibited during climb, descent, or below FL100.",
+        "text": "Permitted only during low workload cruise on 2-pilot flights; maximum duration is 45 minutes to prevent sleep inertia, with a 20-minute post-rest recovery period before handling controls, strictly banned below FL100.",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "Controlled rest can last up to 3 hours on any domestic flight.",
+        "text": "Controlled rest can last up to 3 hours continuously on any domestic repositioning flight without passengers under standard rules.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Both pilots may sleep simultaneously if autopilot and autothrottle are engaged.",
+        "text": "Both pilots may sleep simultaneously in cruise provided the traffic collision avoidance system is selected to TA/RA under standard rules.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Controlled Rest on Flight Deck (AMC1 CAT.OP.MPA.210)\n* **When allowed:** Only during **established cruise above FL100**.\n* **Duration:** Max **45 minutes** (prevents entering deep slow-wave sleep).\n* **Wake-up / Recovery:** At least **20 minutes** before Top of Descent (TOD) to clear **sleep inertia**.\n* **Crucial Rule:** One pilot must remain **100% alert and actively flying**.",
+      "text": "### Controlled Rest on Flight Deck (AMC1 CAT.OP.MPA.210)\n* **Purpose:** Opportunity to manage unexpected physiological fatigue during cruise.\n* **Rules:**\n  1. Maximum rest period: **45 minutes** (to avoid entering slow-wave deep sleep).\n  2. **Recovery period:** At least **20 minutes** after waking before taking over active pilot flying duties.\n  3. Prohibited during climb, descent, and below **FL100** / terminal airspace.\n  4. Cabin crew must be informed and conduct periodic communication checks.",
       "references": [
         "EASA AMC1 CAT.OP.MPA.210",
-        "EASA SIB 2010-33"
+        "ICAO Doc 9966"
       ]
     },
     "metadata": {
@@ -539,30 +539,30 @@
     "options": [
       {
         "id": "A",
-        "text": "Rosters must be published sufficiently in advance (typically at least 14 days in advance) to allow crew members to plan adequate rest and manage personal fatigue.",
-        "is_correct": true
+        "text": "Rosters can be updated without any advance notice up to 5 minutes before scheduled block departure time across all applicable operational flight phases during normal flight operations.",
+        "is_correct": false
       },
       {
         "id": "B",
-        "text": "Rosters can be updated without notice up to 5 minutes before departure.",
+        "text": "Monthly duty rosters are never published in executive business aviation due to on-demand client booking models under standard rules.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Monthly rosters are never published in executive aviation.",
-        "is_correct": false
+        "text": "Rosters must be published sufficiently in advance (typically at least 14 days in advance) to allow crew members to plan adequate rest and manage personal fatigue.",
+        "is_correct": true
       },
       {
         "id": "D",
-        "text": "Roster changes require prior approval from the national labour ministry.",
+        "text": "Roster modifications require prior unanimous written approval from national civil aviation ministry inspectors under standard rules.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### Roster Publication & Notice (ORO.FTL.110)\n* Operators must publish rosters **at least 14 days in advance**.\n* Unforeseen operational modifications must respect minimum rest and FTL duty limits at all times.",
+      "text": "### Roster Publication (ORO.FTL.110)\n* Operators must publish duty rosters **sufficiently in advance** (standard industry practice is at least **14 days in advance**) to enable crew members to plan adequate rest.\n* Changes on short notice must comply with standby and contactability rules to prevent acute fatigue.",
       "references": [
-        "EASA Part-ORO.FTL.110 (Operator Responsibilities)",
-        "NJE Crew Planning Manual"
+        "EASA Part-ORO.FTL.110",
+        "AMC1 ORO.FTL.110"
       ]
     },
     "metadata": {
@@ -571,76 +571,76 @@
   },
   {
     "id": "NJ-FTL-016",
-    "subject_id": "netjets-interview",
+    "subject_id": "tiempos-actividad-descanso-ftl",
     "learning_objective": "FTL: Maximum Basic Daily FDP Limits",
     "stem": "Under EASA Part-ORO.FTL.205, what is the Maximum Basic Daily Flight Duty Period (FDP) for an unaugmented 2-pilot crew starting duty between 06:00 and 13:29 with 1 to 2 flight sectors?",
     "options": [
       {
         "id": "A",
-        "text": "18 hours basic FDP under all circumstances.",
+        "text": "18 hours basic FDP under all circumstances provided pilots drink sufficient caffeinated beverages on duty across all applicable operational flight phases.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "8 hours maximum for jet operations.",
+        "text": "8 hours maximum for all executive jet operations regardless of sector count or departure time of day under standard rules.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "13 hours maximum basic FDP (reduced for additional sectors or duty starting in the WOCL).",
-        "is_correct": true
+        "text": "10 hours maximum regardless of sector count when operating multi-engine turbine transport aircraft under standard rules.",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "10 hours maximum regardless of sector count.",
-        "is_correct": false
+        "text": "13 hours maximum basic FDP (reduced for additional sectors or duty starting in the Window of Circadian Low).",
+        "is_correct": true
       }
     ],
     "explanation": {
-      "text": "### ⏱️ Maximum Daily FDP Table (EASA Part-ORO.FTL.205 Table 1)\n* **FDP Start 06:00 - 13:29 (Optimum Acclimatized Window):**\n  * 1 - 2 sectors: **13:00 hours**.\n  * 3 sectors: 12:30 hours.\n  * 4 sectors: 12:00 hours.\n  * 5 sectors: 11:30 hours.\n* **WOCL Start (02:00 - 04:59):** Maximum basic FDP reduced to **9:00 to 11:00 hours**.",
+      "text": "### Maximum Basic FDP (ORO.FTL.205)\n* For unaugmented 2-pilot crew starting duty between 06:00 and 13:29 with 1 to 2 sectors, the basic maximum FDP is **13:00 hours**.",
       "references": [
-        "EASA Part-ORO.FTL.205 • AMC1 ORO.FTL.205(b)(1)"
+        "EASA Part-ORO.FTL.205 Table 1"
       ]
     },
     "metadata": {
-      "difficulty": 0.4
+      "difficulty": 0.2
     }
   },
   {
     "id": "NJ-FTL-017",
-    "subject_id": "netjets-interview",
+    "subject_id": "tiempos-actividad-descanso-ftl",
     "learning_objective": "FTL: Standby Duty Limits (Airport vs Home Standby)",
     "stem": "What is the maximum duration of Airport Standby duty and how does Airport Standby time count towards the total Flight Duty Period under EASA Part-ORO.FTL.225?",
     "options": [
       {
         "id": "A",
-        "text": "Airport standby can last up to 48 consecutive hours.",
-        "is_correct": false
+        "text": "Airport Standby is capped at 16 hours (or 14 hours unaugmented); 100% of time spent on airport standby counts towards allowable FDP.",
+        "is_correct": true
       },
       {
         "id": "B",
-        "text": "Home standby and airport standby have identical FDP reduction formulas.",
+        "text": "Airport standby can last up to 48 consecutive hours provided sleeping facilities are provided in the maintenance hangar across all applicable operational flight phases.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Airport standby does not count as duty until the aircraft doors close.",
+        "text": "Home standby and airport standby have identical FDP reduction formulas with zero impact on flight duty limits under standard rules.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Airport Standby is capped at 16 hours (or 14 hours if unaugmented); 100% of time spent on airport standby counts towards the maximum allowable FDP.",
-        "is_correct": true
+        "text": "Airport standby does not count as duty until the aircraft main entry door is closed and locked for departure under standard rules.",
+        "is_correct": false
       }
     ],
     "explanation": {
-      "text": "### 🏢 Standby Regulations (EASA Part-ORO.FTL.225)\n* **Airport Standby:** Crew is at the airport ready for immediate dispatch. **Counts 100% as Duty Period** and reduces maximum FDP minute-for-minute.\n* **Home Standby (Other Standby):** Crew is at home/hotel with minimum notification time (e.g. 90-120 min). Does not count 1:1 against FDP unless standby exceeds 6 or 8 hours.",
+      "text": "### Airport Standby Accounting (ORO.FTL.225)\n* 100% of Airport Standby counts as duty, and the combined standby + FDP cannot exceed 16 hours.",
       "references": [
-        "EASA Part-ORO.FTL.225 • AMC1 ORO.FTL.225"
+        "EASA Part-ORO.FTL.225"
       ]
     },
     "metadata": {
-      "difficulty": 0.5
+      "difficulty": 0.25
     }
   }
 ]
