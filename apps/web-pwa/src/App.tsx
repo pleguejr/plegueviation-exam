@@ -82,6 +82,7 @@ export function App() {
   const [isSyncModalOpen, setIsSyncModalOpen] = useState(false);
   const [modalDefaults, setModalDefaults] = useState<{
     category?: string;
+    subtopics?: string[];
     mode?: ExamMode;
     strategy?: ExamSelectionStrategy;
   }>({});
@@ -158,6 +159,7 @@ export function App() {
 
   const handleOpenConfigModal = (defaults?: {
     category?: string;
+    subtopics?: string[];
     mode?: ExamMode;
     strategy?: ExamSelectionStrategy;
   }) => {
@@ -745,6 +747,7 @@ export function App() {
         onClose={() => setIsConfigModalOpen(false)}
         onStartExam={handleStartExam}
         defaultCategory={modalDefaults.category}
+        defaultSubtopics={modalDefaults.subtopics}
         defaultMode={modalDefaults.mode}
         defaultStrategy={modalDefaults.strategy}
       />

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { X, Play, BookOpen, Clock, Award, Target, AlertTriangle, Shuffle, Bookmark, Check, Sparkles, Flame } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { X, Play, BookOpen, Clock, Award, Target, AlertTriangle, Shuffle, Bookmark, Check, Sparkles, Flame, ChevronDown, ChevronRight, Layers, CheckSquare, Square } from 'lucide-react';
 import { BankManifest, ExamConfig, ExamMode, ExamSelectionStrategy } from '../types';
 
 interface ExamConfigModalProps {
@@ -29,22 +29,88 @@ export const ExamConfigModal: React.FC<ExamConfigModalProps> = ({
   const [selectedSubtopics, setSelectedSubtopics] = useState<string[]>(
     defaultSubtopics ? defaultSubtopics : []
   );
+  const [expandedCategories, setExpandedCategories] = useState<Record<string, boolean>>(() => {
+    return defaultCategory ? { [defaultCategory]: true } : {};
+  });
   const [mode, setMode] = useState<ExamMode>(defaultMode);
   const [strategy, setStrategy] = useState<ExamSelectionStrategy>(defaultStrategy);
   const [count, setCount] = useState<number>(20);
   const [timeLimitMinutes, setTimeLimitMinutes] = useState<number>(20);
+
+  // Sync state whenever modal is opened with new defaults
+  useEffect(() => {
+    if (isOpen) {
+      setSelectedCategories(defaultCategory ? [defaultCategory] : []);
+      setSelectedSubtopics(defaultSubtopics ? defaultSubtopics : []);
+      setExpandedCategories(defaultCategory ? { [defaultCategory]: true } : {});
+      setMode(defaultMode);
+      setStrategy(defaultStrategy);
+    }
+  }, [isOpen, defaultCategory, defaultSubtopics, defaultMode, defaultStrategy]);
 
   if (!isOpen) return null;
 
   const categories = manifest?.categories || [];
 
   const toggleCategory = (catId: string) => {
-    setSelectedSubtopics([]); // Reset subtopic filter when changing categories
     if (selectedCategories.includes(catId)) {
-      setSelectedCategories(selectedCategories.filter((id) => id !== catId));
+      // Deseleccionar categoría: removemos la categoría y sus subtemas
+      const nextCategories = selectedCategories.filter((id) => id !== catId);
+      setSelectedCategories(nextCategories);
+      
+      const cat = categories.find((c) => c.id === catId);
+      if (cat && cat.subtopics) {
+        const catSubIds = Object.keys(cat.subtopics);
+        setSelectedSubtopics(selectedSubtopics.filter((subId) => !catSubIds.includes(subId)));
+      }
     } else {
+      // Seleccionar categoría
+      setSelectedCategories([...selectedCategories, catId]);
+      // Auto-expandir para que el usuario pueda ver/seleccionar subdivisiones inmediatamente
+      setExpandedCategories((prev) => ({ ...prev, [catId]: true }));
+    }
+  };
+
+  const toggleCategoryExpand = (catId: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    setExpandedCategories((prev) => ({ ...prev, [catId]: !prev[catId] }));
+  };
+
+  const toggleSubtopic = (subId: string, catId: string) => {
+    // Si la categoría no está seleccionada, al elegir un subtema seleccionamos la categoría
+    if (!selectedCategories.includes(catId)) {
       setSelectedCategories([...selectedCategories, catId]);
     }
+
+    if (selectedSubtopics.includes(subId)) {
+      setSelectedSubtopics(selectedSubtopics.filter((id) => id !== subId));
+    } else {
+      setSelectedSubtopics([...selectedSubtopics, subId]);
+    }
+  };
+
+  const selectAllSubtopicsOfCategory = (catId: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    const cat = categories.find((c) => c.id === catId);
+    if (!cat || !cat.subtopics) return;
+    
+    if (!selectedCategories.includes(catId)) {
+      setSelectedCategories([...selectedCategories, catId]);
+    }
+
+    const subIds = Object.keys(cat.subtopics);
+    // Unir sin duplicados
+    const newSubtopics = Array.from(new Set([...selectedSubtopics, ...subIds]));
+    setSelectedSubtopics(newSubtopics);
+  };
+
+  const clearSubtopicsOfCategory = (catId: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    const cat = categories.find((c) => c.id === catId);
+    if (!cat || !cat.subtopics) return;
+
+    const subIds = Object.keys(cat.subtopics);
+    setSelectedSubtopics(selectedSubtopics.filter((id) => !subIds.includes(id)));
   };
 
   const selectAllCategories = () => {
@@ -57,18 +123,31 @@ export const ExamConfigModal: React.FC<ExamConfigModalProps> = ({
     setSelectedSubtopics([]);
   };
 
-  const handleApplyPreset = (preset: 'command_course' | 'command_all' | 'fleet_e2' | 'all') => {
+  const handleApplyPreset = (preset: 'command_course' | 'command_all' | 'fleet_e2' | 'fleet_c172f' | 'fleet_da40d' | 'all') => {
     if (preset === 'command_course') {
       setSelectedCategories(['command-upgrade']);
       setSelectedSubtopics(['command-course', 'examen-convocatoria-anterior']);
+      setExpandedCategories({ 'command-upgrade': true });
       setCount(50);
     } else if (preset === 'command_all') {
       setSelectedCategories(['command-upgrade']);
       setSelectedSubtopics([]);
+      setExpandedCategories({ 'command-upgrade': true });
       setCount(30);
     } else if (preset === 'fleet_e2') {
       setSelectedCategories(['fleet-e195e2']);
       setSelectedSubtopics([]);
+      setExpandedCategories({ 'fleet-e195e2': true });
+      setCount(20);
+    } else if (preset === 'fleet_c172f') {
+      setSelectedCategories(['fleet-c172f']);
+      setSelectedSubtopics([]);
+      setExpandedCategories({ 'fleet-c172f': true });
+      setCount(30);
+    } else if (preset === 'fleet_da40d') {
+      setSelectedCategories(['fleet-da40d']);
+      setSelectedSubtopics([]);
+      setExpandedCategories({ 'fleet-da40d': true });
       setCount(30);
     } else {
       setSelectedCategories([]);
@@ -90,9 +169,34 @@ export const ExamConfigModal: React.FC<ExamConfigModalProps> = ({
     onStartExam(config);
   };
 
+  // Calcular cantidad estimada de preguntas disponibles con el filtro actual
+  let availableQuestionPool = 0;
+  for (const cat of categories) {
+    const isCatSelected = selectedCategories.length === 0 || selectedCategories.includes(cat.id);
+    if (!isCatSelected) continue;
+
+    if (cat.subtopics) {
+      const subEntries = Object.entries(cat.subtopics);
+      const activeSubsInCat = subEntries.filter(([subId]) => selectedSubtopics.includes(subId));
+      if (selectedSubtopics.length > 0) {
+        // Si hay subtemas seleccionados en general, sumar solo los subtemas activos de esta cat
+        for (const [, subInfo] of activeSubsInCat) {
+          availableQuestionPool += subInfo.count || 0;
+        }
+      } else {
+        // Si no hay filtro de subtemas, suma todo el total
+        availableQuestionPool += cat.total_questions || 0;
+      }
+    } else {
+      if (selectedSubtopics.length === 0) {
+        availableQuestionPool += cat.total_questions || 0;
+      }
+    }
+  }
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fade-in">
-      <div className="exam-config-modal-card bg-[#0b142b] border border-sky-500/30 rounded-3xl w-full max-w-2xl max-h-[90vh] flex flex-col shadow-2xl overflow-hidden shadow-glow-sky">
+      <div className="exam-config-modal-card bg-[#0b142b] border border-sky-500/30 rounded-3xl w-full max-w-3xl max-h-[92vh] flex flex-col shadow-2xl overflow-hidden shadow-glow-sky">
         
         {/* Header */}
         <div className="px-6 py-5 border-b border-slate-800 flex items-center justify-between bg-[#080f21]">
@@ -102,7 +206,7 @@ export const ExamConfigModal: React.FC<ExamConfigModalProps> = ({
             </div>
             <div>
               <h2 className="text-lg font-black text-white">Configurar Evaluación</h2>
-              <p className="text-xs text-slate-400">Personaliza los temas, modo y algoritmo de selección</p>
+              <p className="text-xs text-slate-400">Selecciona bancos, subdivisiones temáticas y modo de examen</p>
             </div>
           </div>
           <button 
@@ -249,12 +353,18 @@ export const ExamConfigModal: React.FC<ExamConfigModalProps> = ({
             </div>
           </div>
 
-          {/* 3. Selección de Asignaturas / Manuales */}
-          <div className="space-y-2.5">
+          {/* 3. Selección de Asignaturas, Flotas y Subdivisiones */}
+          <div className="space-y-3">
             <div className="flex items-center justify-between">
-              <label className="text-xs font-bold uppercase tracking-wider text-sky-400">
-                3. Manuales y Temas ({selectedCategories.length === 0 ? 'Todos seleccionados' : `${selectedCategories.length} seleccionados`})
-              </label>
+              <div>
+                <label className="text-xs font-bold uppercase tracking-wider text-sky-400 flex items-center gap-1.5">
+                  <Layers className="w-3.5 h-3.5" />
+                  <span>3. Bancos y Subdivisiones ({selectedCategories.length === 0 ? 'Todos los bancos' : `${selectedCategories.length} banco(s)`})</span>
+                </label>
+                <p className="text-[11px] text-slate-400 mt-0.5">
+                  Haz clic en el banco para seleccionarlo, o despliega sus <strong>subdivisiones</strong> (ej. Emergencias, Limitaciones, Operación Normal, Sistemas).
+                </p>
+              </div>
               <div className="flex items-center gap-2 text-xs font-bold">
                 <button 
                   type="button" 
@@ -278,26 +388,37 @@ export const ExamConfigModal: React.FC<ExamConfigModalProps> = ({
             <div className="flex flex-wrap gap-2 pb-1">
               <button
                 type="button"
+                onClick={() => handleApplyPreset('fleet_c172f')}
+                className={`px-3 py-1.5 rounded-xl text-xs font-bold border transition-all ${
+                  selectedCategories.length === 1 && selectedCategories.includes('fleet-c172f') && selectedSubtopics.length === 0
+                    ? 'bg-amber-500/20 text-amber-300 border-amber-400 shadow-glow-amber'
+                    : 'bg-slate-900 text-slate-300 border-slate-800 hover:border-slate-700'
+                }`}
+              >
+                Cessna 172F (EC-NNX)
+              </button>
+              <button
+                type="button"
+                onClick={() => handleApplyPreset('fleet_da40d')}
+                className={`px-3 py-1.5 rounded-xl text-xs font-bold border transition-all ${
+                  selectedCategories.length === 1 && selectedCategories.includes('fleet-da40d') && selectedSubtopics.length === 0
+                    ? 'bg-cyan-500/20 text-cyan-300 border-cyan-400 shadow-glow-cyan'
+                    : 'bg-slate-900 text-slate-300 border-slate-800 hover:border-slate-700'
+                }`}
+              >
+                Diamond DA40 TDI (EC-OKC)
+              </button>
+              <button
+                type="button"
                 onClick={() => handleApplyPreset('command_course')}
                 className={`px-3 py-1.5 rounded-xl text-xs font-bold border transition-all flex items-center gap-1.5 ${
-                  selectedCategories.includes('command-upgrade') && selectedSubtopics.includes('examen-convocatoria-anterior')
+                  selectedCategories.includes('command-upgrade') && selectedSubtopics.includes('command-course')
                     ? 'bg-rose-500/20 text-rose-300 border-rose-400 shadow-glow-rose'
                     : 'bg-slate-900 text-slate-300 border-slate-800 hover:border-slate-700'
                 }`}
               >
                 <Sparkles className="w-3.5 h-3.5 text-rose-400" />
                 <span>Command Course (90q)</span>
-              </button>
-              <button
-                type="button"
-                onClick={() => handleApplyPreset('command_all')}
-                className={`px-3 py-1.5 rounded-xl text-xs font-bold border transition-all ${
-                  selectedCategories.length === 1 && selectedCategories.includes('command-upgrade') && selectedSubtopics.length === 0
-                    ? 'bg-rose-500/20 text-rose-300 border-rose-400 shadow-glow-rose'
-                    : 'bg-slate-900 text-slate-300 border-slate-800 hover:border-slate-700'
-                }`}
-              >
-                Prueba Mando Completa
               </button>
               <button
                 type="button"
@@ -314,7 +435,7 @@ export const ExamConfigModal: React.FC<ExamConfigModalProps> = ({
                 type="button"
                 onClick={() => handleApplyPreset('all')}
                 className={`px-3 py-1.5 rounded-xl text-xs font-bold border transition-all ${
-                  selectedCategories.length === 0
+                  selectedCategories.length === 0 && selectedSubtopics.length === 0
                     ? 'bg-emerald-500/20 text-emerald-300 border-emerald-400'
                     : 'bg-slate-900 text-slate-300 border-slate-800 hover:border-slate-700'
                 }`}
@@ -323,38 +444,154 @@ export const ExamConfigModal: React.FC<ExamConfigModalProps> = ({
               </button>
             </div>
 
+            {/* Aviso de subtemas seleccionados */}
             {selectedSubtopics.length > 0 && (
-              <div className="p-2.5 rounded-xl bg-rose-950/40 border border-rose-500/30 text-xs text-rose-200 flex items-center justify-between">
-                <span>Filtro específico: <strong>Command Course / Examen Convocatoria Anterior</strong> (90 preguntas)</span>
+              <div className="p-3 rounded-2xl bg-sky-950/40 border border-sky-500/40 text-xs text-sky-200 flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <CheckSquare className="w-4 h-4 text-sky-400 flex-shrink-0" />
+                  <span>
+                    Filtro activo por <strong>{selectedSubtopics.length} subdivisión(es)</strong> específica(s).
+                  </span>
+                </div>
                 <button
                   type="button"
                   onClick={() => setSelectedSubtopics([])}
-                  className="text-[10px] font-bold underline text-rose-400 hover:text-rose-300"
+                  className="text-[11px] font-black underline text-sky-400 hover:text-sky-300 px-2 py-0.5 rounded"
                 >
-                  Quitar filtro subtema
+                  Quitar filtros y evaluar banco completo
                 </button>
               </div>
             )}
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+            {/* Lista de Bancos con Acordeón de Subdivisiones */}
+            <div className="space-y-2.5">
               {categories.map((cat) => {
-                const isSelected = selectedCategories.includes(cat.id) || selectedCategories.length === 0;
+                const isCatSelected = selectedCategories.includes(cat.id) || selectedCategories.length === 0;
+                const isExpanded = !!expandedCategories[cat.id];
+                const subtopicsList = cat.subtopics ? Object.values(cat.subtopics) : [];
+                
+                // Contar cuántos subtemas de esta categoría están marcados
+                const catSubIds = subtopicsList.map((s) => s.id);
+                const selectedInCatCount = catSubIds.filter((sId) => selectedSubtopics.includes(sId)).length;
+                const hasPartialSubtopics = selectedInCatCount > 0 && selectedInCatCount < catSubIds.length;
+                const hasAllSubtopics = catSubIds.length > 0 && selectedInCatCount === catSubIds.length;
+
                 return (
                   <div
                     key={cat.id}
-                    onClick={() => toggleCategory(cat.id)}
-                    className={`p-3.5 rounded-2xl border flex items-center justify-between cursor-pointer transition-all ${
+                    className={`rounded-2xl border transition-all overflow-hidden ${
                       selectedCategories.includes(cat.id)
-                        ? 'bg-sky-500/20 border-sky-400 text-white shadow-glow-sky'
+                        ? 'bg-[#0e1b38] border-sky-400/80 shadow-glow-sky'
                         : selectedCategories.length === 0
                         ? 'bg-cockpit-surface/60 border-slate-800 text-slate-200 hover:border-slate-700'
-                        : 'bg-slate-950/40 border-slate-900 text-slate-500 opacity-50'
+                        : 'bg-slate-950/30 border-slate-900 text-slate-500 opacity-60'
                     }`}
                   >
-                    <span className="text-xs font-bold pr-2 truncate">{cat.title}</span>
-                    <span className="text-[11px] font-mono px-2 py-0.5 rounded-lg bg-slate-800 text-sky-400 font-extrabold flex-shrink-0 border border-slate-700">
-                      {cat.total_questions}
-                    </span>
+                    {/* Fila Principal de la Categoría */}
+                    <div 
+                      onClick={() => toggleCategory(cat.id)}
+                      className="p-3.5 flex items-center justify-between cursor-pointer hover:bg-white/[0.02] transition-colors"
+                    >
+                      <div className="flex items-center gap-2.5 min-w-0 pr-2">
+                        {subtopicsList.length > 0 && (
+                          <button
+                            type="button"
+                            onClick={(e) => toggleCategoryExpand(cat.id, e)}
+                            className="p-1 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors"
+                            title={isExpanded ? 'Ocultar subdivisiones' : 'Ver subdivisiones'}
+                          >
+                            {isExpanded ? (
+                              <ChevronDown className="w-4 h-4 text-sky-400" />
+                            ) : (
+                              <ChevronRight className="w-4 h-4 text-slate-400" />
+                            )}
+                          </button>
+                        )}
+                        <span className="text-xs font-extrabold text-white truncate">
+                          {cat.title}
+                        </span>
+                        {selectedInCatCount > 0 && (
+                          <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-sky-500/20 text-sky-300 border border-sky-500/40">
+                            {selectedInCatCount}/{catSubIds.length} subtemas
+                          </span>
+                        )}
+                      </div>
+
+                      <div className="flex items-center gap-2 flex-shrink-0">
+                        <span className="text-[11px] font-mono px-2 py-0.5 rounded-lg bg-slate-800 text-sky-400 font-extrabold border border-slate-700">
+                          {cat.total_questions}q
+                        </span>
+                        <div className={`w-5 h-5 rounded-lg border flex items-center justify-center transition-all ${
+                          selectedCategories.includes(cat.id)
+                            ? 'bg-sky-500 border-sky-400 text-white'
+                            : 'border-slate-700 bg-slate-900/50 text-transparent'
+                        }`}>
+                          <Check className="w-3.5 h-3.5 stroke-[3]" />
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Subdivisiones Temáticas (Acordeón desplegable) */}
+                    {isExpanded && subtopicsList.length > 0 && (
+                      <div className="px-4 py-3 bg-[#081024] border-t border-slate-800/80 space-y-2.5">
+                        <div className="flex items-center justify-between text-[11px]">
+                          <span className="font-bold text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
+                            <span>Subdivisiones disponibles ({subtopicsList.length}):</span>
+                          </span>
+                          <div className="flex items-center gap-2">
+                            <button
+                              type="button"
+                              onClick={(e) => selectAllSubtopicsOfCategory(cat.id, e)}
+                              className="text-sky-400 hover:text-sky-300 font-bold hover:underline"
+                            >
+                              Marcar todas
+                            </button>
+                            <span className="text-slate-700">·</span>
+                            <button
+                              type="button"
+                              onClick={(e) => clearSubtopicsOfCategory(cat.id, e)}
+                              className="text-slate-400 hover:text-slate-300 font-bold hover:underline"
+                            >
+                              Desmarcar
+                            </button>
+                          </div>
+                        </div>
+
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                          {subtopicsList.map((st) => {
+                            const isSubSelected = selectedSubtopics.includes(st.id);
+                            return (
+                              <button
+                                key={st.id}
+                                type="button"
+                                onClick={() => toggleSubtopic(st.id, cat.id)}
+                                className={`p-2.5 rounded-xl border text-left flex items-center justify-between transition-all ${
+                                  isSubSelected
+                                    ? 'bg-sky-500/20 border-sky-400 text-white shadow-sm'
+                                    : 'bg-slate-900/80 border-slate-800/80 text-slate-300 hover:border-slate-700 hover:bg-slate-800/50'
+                                }`}
+                              >
+                                <div className="flex items-center gap-2 min-w-0 pr-1.5">
+                                  <div className={`w-4 h-4 rounded-md border flex items-center justify-center flex-shrink-0 transition-all ${
+                                    isSubSelected
+                                      ? 'bg-sky-500 border-sky-400 text-white'
+                                      : 'border-slate-700 bg-slate-950 text-transparent'
+                                  }`}>
+                                    <Check className="w-3 h-3 stroke-[3]" />
+                                  </div>
+                                  <span className="text-xs font-bold truncate">
+                                    {st.title}
+                                  </span>
+                                </div>
+                                <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 font-bold flex-shrink-0">
+                                  {st.count}q
+                                </span>
+                              </button>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    )}
                   </div>
                 );
               })}
@@ -365,9 +602,16 @@ export const ExamConfigModal: React.FC<ExamConfigModalProps> = ({
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
             
             <div className="space-y-2">
-              <label className="text-xs font-bold uppercase tracking-wider text-sky-400">
-                Cantidad de Preguntas
-              </label>
+              <div className="flex items-center justify-between">
+                <label className="text-xs font-bold uppercase tracking-wider text-sky-400">
+                  Cantidad de Preguntas
+                </label>
+                {availableQuestionPool > 0 && (
+                  <span className="text-[11px] text-slate-400 font-mono">
+                    Pool: <strong className="text-sky-400">{availableQuestionPool}</strong> disp.
+                  </span>
+                )}
+              </div>
               <div className="flex items-center gap-2">
                 {[10, 20, 30, 50].map((num) => (
                   <button

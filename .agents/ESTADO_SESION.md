@@ -32,12 +32,19 @@
      - **Diamond DA40 TDI (EC-OKC)**: Cola en T, cabina de burbuja de composite, hélice MT-Propeller tripala con cono de ogiva y carenados de ruedas aerodinámicos.
      - **Cessna 172F (EC-NNX)**: Ala alta arriostrada con montantes, hélice tripala MT-Propeller, empenaje Omni-Vision y tren triciclo.
    - Generada la nueva infografía vectorial `bt_sop_stabilized_approach_vector.svg` (Criterios de Aproximación Estabilizada 1000/500 ft, puertas de chequeo, técnicas Sideslip vs De-crab) conectada a la tarjeta SOP de Blue Team.
-7. **Verificación y Calidad:**
+7. **Selector Granular de Subdivisiones Temáticas en Configuración de Examen:**
+   - Rediseñado el modal de configuración de examen (`ExamConfigModal.tsx`) para permitir la selección no solo de bancos globales, sino de **subdivisiones específicas** por banco:
+     - Acordeón interactivo por banco con botón desplegable (`ChevronDown` / `ChevronRight`).
+     - Botones individuales para activar/desactivar subtemas específicos (ej. en Cessna 172F o DA40 TDI: *Emergencias*, *Limitaciones*, *Operación Normal*, *Sistemas Aeronave*).
+     - Accesos directos para *«Marcar todas»* y *«Desmarcar»* dentro de cada banco, junto con contador en tiempo real de subtemas seleccionados (`X/Y subtemas`) y preguntas disponibles en el pool.
+     - Presets directos añadidos para *Cessna 172F (EC-NNX)* y *Diamond DA40 TDI (EC-OKC)*.
+     - Total compatibilidad con modo oscuro y modo día (`.theme-light`).
+8. **Verificación y Calidad:**
    - 0 errores de TypeScript (`tsc`).
    - Compilación completa con Vite (`npm run build`) validada.
 
 ## 🎯 Próximos pasos / Pendientes al retomar
-- Continuar con simulaciones de examen de flotas ligeras (`fleet-c172f` y `fleet-da40d`).
+- Probar exámenes personalizados combinando subdivisiones de Flota Cessna 172F y Flota Diamond DA40 TDI.
 - Realizar pruebas interactivas de las tarjetas SOP de Blue Team en la PWA.
 - Añadir infografías vectoriales adicionales con los modelos de Cessna 172F y Diamond DA40 si se solicita.
 

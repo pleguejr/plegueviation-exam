@@ -31,7 +31,10 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
     - **Cessna 172F (EC-NNX)**: Ala alta con montantes de arriostramiento, hélice MT-Propeller, deriva Omni-Vision de 1965 y tren triciclo.
   - Corrección integral de desbordamientos de texto en el overlay de pasos SOP (`.procedure-sop-step-overlay`, `ProcedureCardsScreen.tsx` e `index.css`) y en las infografías SVG.
   - Nueva infografía vectorial `bt_sop_stabilized_approach_vector.svg` incorporada en la tarjeta SOP de Blue Team sobre aproximación estabilizada (1.000 ft / 500 ft, puertas y técnicas de viento Sideslip vs De-crab).
-- **Cuadro Resumen de Velocidades (`SpeedSummaryTable`):** Implementada tabla técnica para DA40 D (Vne, Vno, Va, Vfe, Vso, Vs1, Vr, Vx, Vy, Vref, Vglide).
+- **Selector Granular de Subdivisiones Temáticas en Configuración de Examen:**
+  - Rediseñado el modal `ExamConfigModal.tsx` con soporte de acordeón desplegable para cada banco de preguntas.
+  - Selección individual y combinada de subdivisiones operacionales (ej. en Cessna 172F y Diamond DA40: *Emergencias*, *Limitaciones*, *Operación Normal*, *Sistemas Aeronave*).
+  - Acciones rápidas para *«Marcar todas»* y *«Desmarcar»* dentro de cada categoría, conteo de preguntas disponibles en el pool en tiempo real y nuevos accesos directos (*Cessna 172F* y *Diamond DA40 TDI*).
 - **Compilación de catálogo:** Compilados y validados los 2.262 reactivos activos con 0 errores de esquema y 0 errores de TypeScript (`npm run build` exitoso).
 
 ---
