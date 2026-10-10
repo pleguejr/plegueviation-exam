@@ -101,3 +101,21 @@ Siempre que se solicite la creación de nuevas preguntas o ampliación de bancos
 4. **Flujo de Auditoría & Revisión Técnica**:
    - Botón `[🔍 Revisión]` interactivo disponible permanentemente en Flashcards, Test activo y Resultados de examen con modal `ReviewRequestModal` integrado con la base de datos de auditoría.
 
+---
+
+## 9. Protocolo de Continuidad Multi-Ordenador (GitHub + Google Drive)
+El usuario trabaja en dos ordenadores en ubicaciones físicas distintas (nunca encendidos a la vez). **GitHub (`origin/main`)** es la única fuente de verdad para código, bancos (`banks/`) y estado de sesión (`.agents/ESTADO_SESION.md`), mientras que **Google Drive (`manuales/`)** almacena los PDFs pesados.
+
+1. **Al recibir la instrucción «vamos a continuar desde donde lo dejamos»** (o frases equivalentes como *«continuamos»*, *«retoma donde lo dejé»*, *«¿por dónde íbamos?»*):
+   - Ejecutar **obligatoriamente y en primer lugar** `git pull origin main` para descargar los últimos cambios subidos desde el otro ordenador.
+   - Leer `.agents/ESTADO_SESION.md`, `HISTORICO.md` y los últimos commits (`git log -n 5 --oneline`).
+   - Informar al usuario de forma concisa qué fue lo último que se completó en el otro ordenador y cuál es el punto exacto pendiente para continuar trabajando de inmediato.
+
+2. **Al recibir la instrucción «graba para continuar luego»** (o frases equivalentes como *«guarda para seguir luego»*, *«guarda sesión»*, *«cerramos por hoy»*):
+   - Si se han modificado bancos en `banks/`, ejecutar `python3 cli/bin/build_banks.py` para recompilar el catálogo de la PWA.
+   - Actualizar `.agents/ESTADO_SESION.md` registrando la fecha, lo completado en la sesión actual, los archivos modificados y el punto exacto donde debe retomar el otro ordenador.
+   - Actualizar `HISTORICO.md` si se ha completado una mejora o versión relevante.
+   - Ejecutar `git add -A && git commit -m "chore(session): save session state to continue later" && git push origin main`.
+   - Confirmar al usuario que todos los cambios y el estado de la conversación están subidos a GitHub (`origin/main`) listos para el otro ordenador.
+
+
