@@ -67,7 +67,7 @@ Every generated question must strictly follow this JSON schema:
 
 ```json
 {
-  "id": "CMD-XXX-001 | P2010-XXX-001 | C172N-XXX-001",
+  "id": "CMD-XXX-001 | E195E2-XXX-001 | C172F-XXX-001",
   "subject_id": "string",
   "learning_objective": "Exact section or regulatory objective",
   "stem": "Clear, contextualized question in Spanish",

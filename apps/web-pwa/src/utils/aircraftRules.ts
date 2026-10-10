@@ -1,6 +1,6 @@
 import { Question } from '../types';
 
-export type AircraftFleet = 'p2010' | 'c172n' | 'e195e2' | 'binter_ops' | 'general';
+export type AircraftFleet = 'c172f' | 'da40d' | 'e195e2' | 'binter_ops' | 'general';
 
 /**
  * Identifica con precisión la flota o categoría de aeronave/operación de una pregunta.
@@ -10,11 +10,11 @@ export function getQuestionFleet(q: Question): AircraftFleet {
   const cat = q._category || '';
   const sub = q.subject_id || '';
 
-  if (id.startsWith('P2010') || cat === 'fleet-p2010tdi' || sub.startsWith('p2010')) {
-    return 'p2010';
+  if (id.startsWith('C172') || cat === 'fleet-c172f' || sub.startsWith('c172')) {
+    return 'c172f';
   }
-  if (id.startsWith('C172') || cat === 'fleet-c172n' || sub.startsWith('c172')) {
-    return 'c172n';
+  if (id.startsWith('DA40') || cat === 'fleet-da40d' || sub.startsWith('da40')) {
+    return 'da40d';
   }
   if (
     id.startsWith('E195') ||
@@ -41,15 +41,15 @@ export function getQuestionFleet(q: Question): AircraftFleet {
 }
 
 /**
- * Determina si se debe mostrar el Cuadro Resumen de Velocidades para aeronaves ligeras (P2010 o C172N).
+ * Determina si se debe mostrar el Cuadro Resumen de Velocidades para aeronaves ligeras (C172F / DA40D).
  * Garantiza de forma estricta que NUNCA se mostrará una tabla de velocidades de monomotores
  * en preguntas de Comandante / Binter Ops / Embraer 195-E2 / Normativa general.
  */
-export function getSpeedSummaryTableType(q: Question): 'p2010' | 'c172n' | null {
+export function getSpeedSummaryTableType(q: Question): 'c172f' | 'da40d' | null {
   const fleet = getQuestionFleet(q);
   
   // Solamente las flotas ligeras compatibles tienen tablas de velocidades asignadas
-  if (fleet !== 'p2010' && fleet !== 'c172n') {
+  if (fleet !== 'c172f' && fleet !== 'da40d') {
     return null;
   }
 
@@ -61,6 +61,10 @@ export function getSpeedSummaryTableType(q: Question): 'p2010' | 'c172n' | null 
     id.includes('SPD') ||
     id.includes('LIM') ||
     id.includes('VEL') ||
+    id.includes('PERF') ||
+    id.includes('NORM') ||
+    sub.includes('limitaciones') ||
+    sub.includes('operacion-normal') ||
     id.includes('PERF') ||
     sub.includes('velocidad') ||
     sub.includes('limitaciones') ||

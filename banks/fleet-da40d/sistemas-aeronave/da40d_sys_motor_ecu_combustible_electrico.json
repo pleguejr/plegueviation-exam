@@ -1,0 +1,742 @@
+[
+  {
+    "id": "DA40D-SYS-001",
+    "subject_id": "da40d_systems",
+    "learning_objective": "AFM 7.9.1 - Características del Motor TAE 125",
+    "stem": "¿Qué características del motor Thielert/Technify TAE 125 de la DA 40 D describe el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diésel de 2 tiempos refrigerado por aire, inyección indirecta, turbo, 99 kW",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Gasolina de 4 tiempos refrigerado por líquido, inyección, turbo e intercooler, 99 kW",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Diésel de 4 tiempos refrigerado por líquido, common-rail, turbo e intercooler, 99 kW",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Diésel de 4 tiempos refrigerado por aire, common-rail sin turbo ni intercooler, 85 kW",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "7.9.1: motor **diésel de cuatro tiempos refrigerado por líquido**, en línea, **common-rail de inyección directa**, reductora **1:1,69**, control digital con gobernador integrado y **turbocompresor con intercooler**; **99 kW (135 DIN-HP) a 2300 RPM**. Cilindrada 1689 cm³ (125-01) / 1991 cm³ (125-02-99).\n\n| Dato | Valor |\n| :--- | :--- |\n| Potencia | **99 kW / 135 HP @ 2300 RPM** |\n| Reductora | **1:1,69** |\n| Cilindrada 02-99 | 1991 cm³ |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.9.1: Engine, General (Page 7-17):**\n> \"Thielert Aircraft Engines TAE125: Liquid-cooled four-stroke Diesel-cycle engine with wet sump lubrication - In-line construction - Common-rail direct injection - Propeller speed-reducing gear 1:1.69 - Digital Engine Control with Integrated Propeller Governor - Turbo charger with Intercooler.\"\n\n![Recorte Oficial del Manual — DA 40 D Engine General](./manual-crops/fleet-da40d/da40_sys_engine_general.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.9.1: Engine, General (Page 7-17)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "DA40D-SYS-002",
+    "subject_id": "da40d_systems",
+    "learning_objective": "AFM 2.4 & 7.9.3 - Hélice MT-Propeller MTV-6-A/187-129",
+    "stem": "¿Qué características tiene la hélice MTV-6-A/187-129 instalada en la DA 40 D?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tripala de paso variable, palas de madera-composite, 187 cm, paso 12°–28°",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Bipala de paso fijo, palas de aluminio forjado, 190 cm, paso fijo de 20°",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Tripala de paso variable, palas de aluminio, 187 cm, paso de 8°–35°",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cuatripala de paso variable, palas de madera, 175 cm, paso de 12°–28°",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "2.4 / 7.9.3: mt-Propeller **MTV-6-A/187-129**, **tripala de velocidad constante** regulada hidráulicamente, palas de **madera-composite** con revestimiento de plástico reforzado y borde de acero; **diámetro 187 cm**, **paso 12° a 28°** (0,75 R).\n\n| Dato | Valor |\n| :--- | :--- |\n| Palas | **3, madera-composite** |\n| Diámetro | **187 cm** |\n| Paso | **12° – 28°** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.4 (Page 2-6) & 7.9.3 (Page 7-22):**\n> \"An mt-Propeller MTV-6-A/187-129 hydraulically regulated 3-bladed constant speed propeller is installed. It has wood-composite blades with fiber-reinforced plastic coating and stainless steel edge cladding.\"\n\n![Recorte Oficial del Manual — DA 40 D Propeller](./manual-crops/fleet-da40d/da40_sys_propeller_curve.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.4 (Page 2-6) & 7.9.3 (Page 7-22)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "DA40D-SYS-003",
+    "subject_id": "da40d_systems",
+    "learning_objective": "AFM 7.9.2 - Pérdida de Presión de Aceite del Gobernador",
+    "stem": "Si se pierde la presión del circuito de aceite del gobernador de la hélice en la DA 40 D, ¿qué ocurre con las palas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pasan al paso más grueso posible (RPM mínimas) y el vuelo puede continuar",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Pasan a bandera automáticamente y debe planearse hasta el aterrizaje",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se quedan bloqueadas en el último paso y la ECU fija 1400 RPM constantes",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pasan al paso más fino posible (RPM máximas) y el vuelo puede continuar",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "7.9.2: el gobernador tiene un circuito de aceite separado. **Tras perder la presión de aceite, las palas van al paso más fino posible (RPM máximas)**, lo que permite continuar el vuelo según 3.2.6. Controlar las RPM con la palanca, sin superar 2500 RPM.\n\n| Fallo | Resultado |\n| :--- | :--- |\n| Pérdida aceite gobernador | **Paso fino / RPM máx.** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.9.2: Operating Controls (Page 7-18):**\n> \"The propeller governor oil circulation is a separate oil circulation system. Following a loss of oil pressure the blades go to the finest possible pitch (maximum RPM), thus allowing continuation of the flight.\"\n\n![Recorte Oficial del Manual — DA 40 D Propeller Governor](./manual-crops/fleet-da40d/da40_sys_propeller_curve.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.9.2: Operating Controls (Page 7-18)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "DA40D-SYS-004",
+    "subject_id": "da40d_systems",
+    "learning_objective": "AFM 7.9.8 - Sistemas de Aceite del Motor y de la Reductora",
+    "stem": "¿Cuántos sistemas de aceite tiene el motor de la DA 40 D y cómo se comprueba el aceite de la reductora?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Un único sistema común; se comprueba con la varilla de la cubierta superior",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Dos sistemas separados; el de la reductora con la varilla de la cubierta superior",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Tres sistemas separados; el de la reductora con el indicador GT de la pantalla CED",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Dos sistemas separados; el de la reductora se ve por una mirilla de inspección",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "7.9.8: **dos sistemas de aceite separados**: lubricación (cárter húmedo, motor y turbo, varilla en la cubierta superior) y **reductora/gobernador** (comprobación mediante **mirilla de inspección** en la parte delantera de la cubierta inferior). Nivel bajo de aceite de reductora = mantenimiento no programado.\n\n| Circuito | Comprobación |\n| :--- | :--- |\n| Motor + turbo | Varilla |\n| **Reductora + gobernador** | **Mirilla** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.9.8: Oil Systems (Page 7-37):**\n> \"The engine has two separate oil systems. Lubrication System (Engine and Turbo Charger)... Gearbox and Propeller Governor System... Gear oil quantity can be checked with the help of an inspection glass.\"\n\n![Recorte Oficial del Manual — DA 40 D Oil Systems](./manual-crops/fleet-da40d/da40_sys_engine_general.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.9.8: Oil Systems (Page 7-37)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "DA40D-SYS-005",
+    "subject_id": "da40d_systems",
+    "learning_objective": "AFM 7.9.5 - Arquitectura del Sistema de Combustible MAIN/AUX",
+    "stem": "¿De qué depósito toma normalmente combustible el motor de la DA 40 D y adónde va el combustible de retorno?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Del AUX (ala derecha); el retorno pasa por el MAIN (ala izquierda) al AUX",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Del MAIN (ala izquierda); el retorno pasa por el AUX (ala derecha) al MAIN",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "De ambos a la vez mediante selector BOTH; el retorno vuelve al depósito activo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Del MAIN (ala derecha); el retorno pasa por el AUX (ala izquierda) al MAIN",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "7.9.5: normalmente el combustible se toma **solo del MAIN (ala izquierda)**. El no inyectado **retorna a través del AUX (ala derecha) al MAIN**, enfriando el combustible caliente del rail y calentando el frío de ambos depósitos. La bomba eléctrica trasvasa AUX → MAIN.\n\n| Depósito | Ala | Función |\n| :--- | :--- | :--- |\n| **MAIN** | **Izquierda** | Alimentación |\n| **AUX** | **Derecha** | Reserva / retorno |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.9.5: Fuel System (Page 7-27):**\n> \"Normally fuel is taken only from the MAIN tank (left wing). Fuel that is not injected is lead through the AUX tank (right wing) back into the MAIN tank (left wing).\"\n\n![Recorte Oficial del Manual — DA 40 D Fuel System](./manual-crops/fleet-da40d/da40_sys_fuel_schematic.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.9.5: Fuel System (Page 7-27)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "DA40D-SYS-006",
+    "subject_id": "da40d_systems",
+    "learning_objective": "AFM 7.9.5 - Placa Deflectora del Enfriador de Combustible",
+    "stem": "¿Cuándo debe retirarse la placa deflectora (baffle) de la toma del enfriador de combustible de la DA 40 D?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Con temperatura exterior superior a 30 °C (86 °F)",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Con temperatura exterior inferior a 5 °C (41 °F)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Con temperatura exterior superior a 10 °C (50 °F)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Con temperatura exterior superior a 20 °C (68 °F)",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "7.9.5: el enfriador de combustible, en el stub wing derecho, enfría el retorno entre AUX y MAIN. Su toma se cierra con un baffle que **debe retirarse con OAT superior a 20 °C (68 °F)**. Con el enfriador operando y temperatura baja de combustible: descender si es posible (4B.2.6).\n\n| OAT | Baffle |\n| :--- | :--- |\n| **> 20 °C** | **Retirado** |\n| ≤ 20 °C | Instalado |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.9.5: Fuel Cooler (Page 7-30):**\n> \"This inlet is closed with a baffle which must be removed at high outside air temperatures (OAT higher than 20 °C (68 °F)).\"\n\n![Recorte Oficial del Manual — DA 40 D Fuel Cooler](./manual-crops/fleet-da40d/da40_sys_fuel_cooler_baffle.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.9.5: Fuel Cooler (Page 7-30)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "DA40D-SYS-007",
+    "subject_id": "da40d_systems",
+    "learning_objective": "AFM 7.9.5 - Indicación de Cantidad de Combustible y Medidor Alternativo",
+    "stem": "¿Qué particularidad tiene la indicación de cantidad de combustible de la DA 40 D y dónde se guarda el medidor alternativo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Es no lineal y no admite cálculos proporcionales; medidor tras el asiento del piloto",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Es lineal y admite cálculos proporcionales; medidor en el compartimento de equipaje",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Es no lineal y admite cálculos proporcionales; medidor en el bolsillo de la puerta",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Es lineal y no admite cálculos proporcionales; medidor bajo el asiento delantero",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "7.9.5: sonda capacitiva; la indicación es **no lineal**, por lo que **no son posibles cálculos proporcionales** de cantidad o consumo. El **medidor alternativo** (vasos comunicantes, contra el drenaje y en suelo horizontal) se guarda en **la bolsa de la parte trasera del asiento del piloto**.\n\n| Elemento | Dato |\n| :--- | :--- |\n| Indicación | **No lineal** |\n| Medidor alternativo | **Bolsa tras asiento piloto** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.9.5 (Page 7-29 & 7-31):**\n> \"The indication is non-linear, therefore proportional calculations to determine the remaining fuel quantity or direct calculations of fuel consumption are not possible. The designated place for the fuel quantity measuring device is the bag on the rear side of the pilot seat.\"\n\n![Recorte Oficial del Manual — DA 40 D Fuel Quantity](./manual-crops/fleet-da40d/da40_sys_fuel_schematic.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.9.5 (Page 7-29 & 7-31)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "DA40D-SYS-008",
+    "subject_id": "da40d_systems",
+    "learning_objective": "AFM 7.9.5 - Cambio de Operación con Diésel a JET Fuel",
+    "stem": "Para pasar de Diésel a JET Fuel en la DA 40 D con depósito estándar sin vaciar los tanques, ¿qué exige el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rellenar cada depósito al menos dos veces con más de 10,6 US gal de JET",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Rellenar cada depósito al menos una vez con más de 5,0 US gal de JET",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Rellenar cada depósito al menos dos veces con más de 17,2 US gal de JET",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Rellenar cada depósito al menos tres veces con más de 14,0 US gal de JET",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "7.9.5: para asegurar que no queda mezcla, **cada depósito debe rellenarse al menos dos veces con más de 10,6 US gal (40 L) de JET** (o **17,2 US gal / 65 L** con Long Range Tank); en otro caso, vaciar ambos depósitos. Se recomienda anotar el grado de combustible en cada repostaje.\n\n| Depósito | Mínimo por relleno (×2) |\n| :--- | :--- |\n| **Estándar** | **> 10,6 US gal (40 L)** |\n| Long Range | > 17,2 US gal (65 L) |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.9.5: Fuel Grades (Page 7-34):**\n> \"To ensure that no blend of JET Fuel with Diesel Fuel is in one of the tanks, each tank must be refilled at least twice with more than 10.6 US gal (40 liters) of JET Fuel or 17.2 US gal (65 liters) when the long range tank is installed.\"\n\n![Recorte Oficial del Manual — DA 40 D Fuel Grades](./manual-crops/fleet-da40d/da40_sys_fuel_cooler_baffle.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.9.5: Fuel Grades (Page 7-34)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "DA40D-SYS-009",
+    "subject_id": "da40d_systems",
+    "learning_objective": "AFM 7.9.6 - Sistema de Refrigeración y Calefacción de Cabina",
+    "stem": "¿A qué temperatura aproximada abre el termostato el radiador en la DA 40 D y de qué depende el flujo de la calefacción de cabina?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Unos 60 °C; el flujo de calefacción depende de la apertura del termostato",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Unos 80 °C; el flujo de calefacción es independiente de la temperatura del refrigerante",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Unos 96 °C; el flujo de calefacción solo existe con el radiador abierto",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Unos 80 °C; el flujo de calefacción proviene de un manguito en el escape",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "7.9.6: refrigeración por líquido con radiador y bypass; a **aproximadamente 80 °C** el termostato activa el radiador. Un intercambiador **refrigerante/aire** alimenta la calefacción de cabina, con **flujo independiente de la temperatura del refrigerante**. Válvula de alivio protege contra sobrepresión.\n\n| Elemento | Dato |\n| :--- | :--- |\n| Apertura radiador | **≈ 80 °C** |\n| Calefacción | Intercambiador refrigerante/aire |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.9.6: Cooling System (Page 7-35):**\n> \"Upon reaching a certain temperature (approximately 80 °C) the radiator is activated by a thermostat valve. Additionally a coolant to air heat exchanger is provided for the cabin heat system. The flow through the heat exchanger is independent of the coolant temperature.\"\n\n![Recorte Oficial del Manual — DA 40 D Cooling System](./manual-crops/fleet-da40d/da40_sys_engine_general.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.9.6: Cooling System (Page 7-35)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "DA40D-SYS-010",
+    "subject_id": "da40d_systems",
+    "learning_objective": "AFM 7.9.7 - Control de la Válvula Waste Gate del Turbo",
+    "stem": "¿Cómo se controla la válvula de descarga (waste gate) del turbocompresor de la DA 40 D?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El piloto la ajusta con una palanca de mezcla situada en la consola central",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Un muelle mecánico la abre a presión fija sin intervención de la ECU",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La ECU la posiciona según la temperatura de gases de escape EGT",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La ECU la posiciona según un sensor de presión de admisión tras el compresor",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "7.9.7: el bypass de gases es controlado **por la ECU a través de la válvula waste gate**; un **sensor de presión de admisión tras el compresor** permite calcular su posición, evitando presiones de admisión excesivas a baja altitud de densidad. El aire comprimido se enfría en el intercooler.\n\n| Elemento | Control |\n| :--- | :--- |\n| **Waste gate** | **ECU + sensor de presión de admisión** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.9.7: Turbo Charger System (Page 7-36):**\n> \"The bypass is controlled by the ECU through the waste gate valve. A manifold pressure sensor behind the compressor allows the ECU to calculate the correct position of the waste gate valve.\"\n\n![Recorte Oficial del Manual — DA 40 D Turbo System](./manual-crops/fleet-da40d/da40_sys_engine_general.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.9.7: Turbo Charger System (Page 7-36)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "DA40D-SYS-011",
+    "subject_id": "da40d_systems",
+    "learning_objective": "AFM 7.10.1 - Alternador y Tensión del Sistema Eléctrico",
+    "stem": "¿Qué tensión tiene el sistema eléctrico de la DA 40 D y qué alternador lo alimenta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sistema de 24 V DC con alternador de 70 A protegido por un fusible de 80 A",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Sistema de 12 V DC con alternador de 90 A protegido por un fusible de 100 A",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Sistema de 12 V DC con alternador de 60 A protegido por un fusible de 70 A",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Sistema de 28 V DC con alternador de 90 A protegido por un fusible de 100 A",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "7.10.1: la DA 40 D tiene un sistema de **12 V DC**. Generación con un **alternador de 90 A** accionado por correa, conectado al battery bus mediante **fusible de 100 A**; regula entre 12 y 14 V.\n\n| Dato | Valor |\n| :--- | :--- |\n| Tensión | **12 V DC** |\n| Alternador | **90 A** |\n| Fusible | 100 A |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.10.1: Electrical System General (Page 7-39):**\n> \"The DA 40 D has 12 Volt DC system... Power generation is provided by a 90 ampère alternator (generator)... The power output line of the alternator is connected to the 'battery bus' via a 100 A fuse.\"\n\n![Recorte Oficial del Manual — DA 40 D Electrical System](./manual-crops/fleet-da40d/da40_sys_electrical_schematic.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.10.1: Electrical System General (Page 7-39)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "DA40D-SYS-012",
+    "subject_id": "da40d_systems",
+    "learning_objective": "AFM 7.10.1 - Batería de Respaldo de la ECU",
+    "stem": "¿Qué características y función tiene la batería «ECU backup» de la DA 40 D?",
+    "options": [
+      {
+        "id": "A",
+        "text": "12 V y 23 Ah en el cortafuegos derecho; alimenta la ECU A y la ECU B",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "12 V y 1,3 Ah tras el panel; excita el campo del alternador averiado",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "12 V y 12 Ah bajo el asiento del piloto; alimenta el horizonte y el flood",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "12 V y 12 Ah bajo el asiento trasero derecho; alimenta solo la ECU B",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "7.10.1: batería **ECU backup de 12 V, 12 Ah** bajo el **asiento trasero derecho**, fuente adicional para **la ECU B únicamente**. Si falla el alternador y la principal se agota, el relé «ECU alternate power» la conecta automáticamente (fusible 30 A).\n\n| Batería | Capacidad | Función |\n| :--- | :--- | :--- |\n| Principal | 23 Ah | Sistema |\n| Excitación | 1,3 Ah | Campo alternador |\n| **ECU backup** | **12 Ah** | **ECU B** |\n| Emergencia | Seca | Horizonte + flood 1 h |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.10.1: Storage (Page 7-40):**\n> \"In addition, a 12 V, 12 Ah sealed-lead-acid battery ('ECU backup'-battery) is installed under the rear right seat as a further source of power for the 'Engine Control Unit' (ECU B only).\"\n\n![Recorte Oficial del Manual — DA 40 D Batteries](./manual-crops/fleet-da40d/da40_sys_batteries_storage.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.10.1: Storage (Page 7-40)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "DA40D-SYS-013",
+    "subject_id": "da40d_systems",
+    "learning_objective": "AFM 7.10.1 - Batería de Emergencia del Modelo IFR",
+    "stem": "¿Qué alimenta la batería de emergencia de la DA 40 D (modelo IFR), durante cuánto tiempo y cada cuánto se sustituye?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Radio COM1 y transpondedor durante 30 min; celdas cada año o tras uso",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Horizonte artificial y ECU B durante 2 h; celdas cada 5 años o tras uso",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Luz flood y GPS durante 1 h; celdas cada 100 horas de vuelo o tras uso",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Horizonte artificial y luz flood durante 1 h; celdas cada 2 años o tras uso",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "7.10.1: batería seca no recargable que, con el **EMERGENCY switch ON**, alimenta **el horizonte artificial y la luz flood durante 1 hora**. Se comprueba en cada inspección de 100 h y las celdas se sustituyen **cada 2 años o tras su uso** (precinto roto). IFR prohibido con el precinto roto.\n\n| Dato | Valor |\n| :--- | :--- |\n| Consumidores | **Horizonte + flood** |\n| Autonomía | **1 h** |\n| Sustitución | **2 años / tras uso** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.10.1 (Page 7-40) & 2.16.6 (Page 2-32):**\n> \"When the EMERGENCY switch is set to ON, these two systems are supplied with power for 1 hour... Every 2 years or after use (broken seal on the switch) the battery cells must be replaced.\"\n\n![Recorte Oficial del Manual — DA 40 D Emergency Battery](./manual-crops/fleet-da40d/da40_sys_batteries_storage.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.10.1 (Page 7-40) & 2.16.6 (Page 2-32)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "DA40D-SYS-014",
+    "subject_id": "da40d_systems",
+    "learning_objective": "AFM 7.10.1 - Función del Interruptor ESSENTIAL BUS",
+    "stem": "Al conectar el interruptor ESSENTIAL BUS tras un fallo de alternador en la DA 40 D, ¿qué ocurre en la distribución eléctrica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El main bus se une al essential bus y ambos pasan a alimentarse del alternador",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "El essential bus se separa del main bus y pasa a alimentarse del hot battery bus",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "El essential bus se apaga y solo queda alimentado el avionic bus principal",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El ECU bus se desconecta y el motor pasa a la batería de excitación de 1,3 Ah",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "7.10.1: con **ESSENTIAL BUS ON** se separa el **main bus** (sus consumidores quedan sin energía) y el **essential bus** se conecta al **hot battery bus**, que suministra batería durante un tiempo limitado al equipo esencial para el vuelo y aterrizaje seguros.\n\n| Barra | Con ESSENTIAL BUS ON |\n| :--- | :--- |\n| Main bus | **Sin energía** |\n| **Essential bus** | **Desde hot battery bus** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.10.1: Main Bus & Essential Bus (Page 7-42):**\n> \"In the event of an alternator failure the pilot must switch ON the 'ESSENTIAL BUS'-switch. This separates the 'essential bus' from the 'main bus'. The 'essential bus' is then connected to the 'hot battery bus' which provides battery power for a limited time.\"\n\n![Recorte Oficial del Manual — DA 40 D Electrical Distribution](./manual-crops/fleet-da40d/da40_sys_electrical_schematic.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.10.1: Main Bus & Essential Bus (Page 7-42)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "DA40D-SYS-015",
+    "subject_id": "da40d_systems",
+    "learning_objective": "AFM 7.10.2 - Conmutación Automática entre ECU A y ECU B",
+    "stem": "¿Cómo gestiona el sistema la redundancia entre ECU A y ECU B en la DA 40 D?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Controla la ECU A; ante fallo pasa a la B y vuelve a la A si era un sensor",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Controla la ECU B; ante fallo pasa a la A y no vuelve nunca a la ECU B",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Ambas controlan alternativamente cada 10 minutos para repartir el desgaste",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Controla la ECU A; ante fallo el piloto debe seleccionar la B siempre a mano",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "7.10.2: normalmente el motor lo controla **la ECU A**; la **ECU B** es respaldo. Ante error interno o pérdida de una señal de sensor el sistema **conmuta automáticamente a la B**; si la causa era la señal del sensor, **vuelve automáticamente a la A**. Tras un aviso ECU A/B el motor debe revisarse.\n\n| Situación | ECU activa |\n| :--- | :--- |\n| Normal | **A** |\n| Fallo | **B (automático)** |\n| Sensor recuperado | Vuelve a A |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.10.2: Engine Control Unit (Page 7-46):**\n> \"Normally the engine is controlled and regulated by the ECU A. The ECU B is a backup system to ensure redundancy. In case of an internal error during operation or the loss of a sensor signal the system automatically switches to the ECU B. If the loss of the sensor signal was the cause for the error, the system automatically switches back to ECU A.\"\n\n![Recorte Oficial del Manual — DA 40 D ECU](./manual-crops/fleet-da40d/da40_sys_ecu_sensors.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.10.2: Engine Control Unit (Page 7-46)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "DA40D-SYS-016",
+    "subject_id": "da40d_systems",
+    "learning_objective": "AFM 7.9.2 - Funciones del Botón ECU TEST",
+    "stem": "¿Qué función tiene el botón ECU TEST de la DA 40 D según la posición de la palanca y las RPM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En IDLE y <900 RPM resetea un aviso; por encima inicia el autotest completo",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "En IDLE y <900 RPM inicia el autotest; por encima resetea un aviso una vez",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "En cualquier régimen inicia el autotest y conmuta permanentemente a ECU B",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En IDLE y <1400 RPM inicia el autotest; por encima apaga la ECU averiada",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "7.9.2: con **palanca en IDLE y RPM < ~900**, mantener pulsado inicia el **autotest** (conmuta A → B con ciclado de hélice y vuelve a A). Con palanca por encima de IDLE o RPM > ~900, pulsar **más de 2 s resetea** un aviso ECU A/B **una sola vez** (solo fallos menores). También prueba la batería ECU backup en aviones IFR.\n\n| Condición | Función |\n| :--- | :--- |\n| IDLE y < 900 RPM | **Autotest** |\n| > IDLE o > 900 RPM | **Reset (una vez, > 2 s)** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.9.2: ECU TEST (Page 7-20):**\n> \"Power lever at IDLE and RPM below approximately 900: By pushing and holding the button until the end of the procedure, the self-test of the engine control unit is started. Power lever above IDLE, or RPM above approximately 900: If an ECU A or ECU B caution message is displayed, the ECU TEST button can be pressed for more than 2 seconds to reset the message. The reset is possible only once.\"\n\n![Recorte Oficial del Manual — DA 40 D ECU TEST](./manual-crops/fleet-da40d/da40_sys_ecu_test_logic.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.9.2: ECU TEST (Page 7-20)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "DA40D-SYS-017",
+    "subject_id": "da40d_systems",
+    "learning_objective": "AFM 2.6 & 2.16.7 - Luz ECU BACKUP UNSAFE",
+    "stem": "¿Qué indica la luz roja ECU BACKUP UNSAFE de la DA 40 D y qué limitación conlleva?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Carga de la batería principal inferior al 50 %; vuelos nocturnos prohibidos",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Fallo de la ECU B durante el autotest; todo vuelo queda prohibido",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Carga de la batería ECU backup inferior al 70 %; vuelos IFR prohibidos",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Carga de la batería de emergencia inferior al 70 %; vuelos VFR prohibidos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "2.6 / 2.16.7: la luz roja **ECU BACKUP UNSAFE** indica que la batería ECU backup tiene **menos del 70 % de carga** (carga insuficiente). **Vuelos IFR prohibidos**. Está situada sobre el anemómetro.\n\n| Indicación | Limitación |\n| :--- | :--- |\n| **ECU BACKUP UNSAFE** | **< 70 % → IFR prohibido** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.6 (Page 2-10) & 2.16.7 (Page 2-33):**\n> \"ECU BACKUP UNSAFE - ECU Backup Battery has less than 70% electric charge. The ECU BACKUP UNSAFE-light (red) indicates an insufficient backup battery charge. IFR-flights are not permitted.\"\n\n![Recorte Oficial del Manual — DA 40 D Warning Lights](./manual-crops/fleet-da40d/da40_lim_warning_lights.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.6 (Page 2-10) & 2.16.7 (Page 2-33)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "DA40D-SYS-018",
+    "subject_id": "da40d_systems",
+    "learning_objective": "AFM 7.10.3 - Avisos (Warning) frente a Precauciones (Caution) del Anunciador",
+    "stem": "En el panel anunciador de la DA 40 D, ¿qué diferencia hay entre un aviso (warning) y una precaución (caution)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Warning: alerta momentánea y luz ámbar; caution: alerta continua y luz roja",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Warning: sin alerta sonora y luz roja; caution: alerta continua y luz verde",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Warning: alerta sonora continua y luz ámbar; caution: sin alerta y luz blanca",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Warning: alerta sonora continua y luz roja; caution: alerta momentánea y ámbar",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "7.10.3: un **warning** se indica con **alerta sonora continua** y parpadeo de la luz **roja** WARNING y de la del sistema; una **caution** con **alerta sonora momentánea** y parpadeo de la luz **ámbar** CAUTION. Al pulsar «acknowledge» la luz del sistema pasa a fija.\n\n| Tipo | Sonido | Color |\n| :--- | :--- | :--- |\n| **Warning** | **Continuo** | **Rojo** |\n| **Caution** | **Momentáneo** | **Ámbar** |\n| Status | — | Blanco |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.10.3: Annunciator Panel (Page 7-47 & 7-48):**\n> \"A warning is indicated by a continuous aural alert, blinking of the red WARNING light... A caution is indicated by a momentary aural alert, blinking of the amber CAUTION light.\"\n\n![Recorte Oficial del Manual — DA 40 D Annunciator Panel](./manual-crops/fleet-da40d/da40_lim_caution_lights.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.10.3: Annunciator Panel (Page 7-47 & 7-48)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "DA40D-SYS-019",
+    "subject_id": "da40d_systems",
+    "learning_objective": "AFM 7.12 - Sistema de Aviso de Pérdida",
+    "stem": "¿Cómo funciona el aviso de pérdida de la DA 40 D?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Es neumático: succión en un orificio del borde de ataque izquierdo activa la bocina",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Es eléctrico: una veleta en el borde de ataque derecho activa la bocina",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Es neumático: presión en el tubo pitot derecho activa una luz roja",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Es electrónico: la ECU calcula el ángulo de ataque y activa la bocina",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "7.12: entre **10 y 5 kt** por encima de la pérdida suena la bocina del panel, cada vez más fuerte. La activa la **succión en un orificio del borde de ataque del ala izquierda** (marcado con un **anillo rojo**) a través de un tubo.\n\n| Elemento | Dato |\n| :--- | :--- |\n| Tipo | **Neumático (succión)** |\n| Ubicación | **Borde de ataque izquierdo** |\n| Margen | 5–10 kt sobre $V_S$ |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.12: Stall Warning System (Page 7-51):**\n> \"If airspeed drops below approximately 10 to min. 5 knots above the stalling speed, the stall warning horn will sound... Suction at an orifice on the left wing leading edge activates the horn via a hose. The orifice for the stall warning in the left wing is marked by a red ring.\"\n\n![Recorte Oficial del Manual — DA 40 D Stall Warning](./manual-crops/fleet-da40d/da40_perf_stall_speeds.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.12: Stall Warning System (Page 7-51)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "DA40D-SYS-020",
+    "subject_id": "da40d_systems",
+    "learning_objective": "AFM 7.10.1 - Indicación del Voltímetro tras el Arranque",
+    "stem": "Tras arrancar la DA 40 D, el voltímetro está en el arco amarillo superior. ¿Qué indica el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indica sobrecarga; apagar el alternador y volar solo con la batería",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Es posible hasta alcanzar temperatura; tras 10 min debe estar en verde",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Es posible hasta alcanzar temperatura; tras 30 min debe estar en verde",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Indica fallo de la ECU B; repetir el autotest con ECU TEST pulsado",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "7.10.1 (Voltmeter): hasta que el alternador alcanza su temperatura de operación es posible una indicación en el **amarillo superior**; **tras 10 minutos** de motor debería estar **en verde**. En panel convencional, la luz ENGINE se enciende si permanece en amarillo **más de 1 minuto**.\n\n| Situación | Dato |\n| :--- | :--- |\n| Amarillo tras arranque | Normal en frío |\n| **Verde** | **Tras 10 min** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.10.1: Voltmeter (Page 7-43):**\n> \"As long as the operating temperature of the alternator is not reached, it is possible that the voltage indication is in the upper yellow range. After 10 minutes of engine operation the indication should be in the green range.\"\n\n![Recorte Oficial del Manual — DA 40 D Voltmeter](./manual-crops/fleet-da40d/da40_sys_batteries_storage.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.10.1: Voltmeter (Page 7-43)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  }
+]

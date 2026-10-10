@@ -1,0 +1,527 @@
+[
+  {
+    "id": "C172F-EMG-017",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "POH Supplement Sección 3 & Checklist V4 - Fuego de Motor Durante la Puesta en Marcha (Engine Fire During Start)",
+    "stem": "Si se declara fuego en el motor durante la puesta en marcha en tierra (Engine Fire During Start) en la Reims/Cessna F172F (TAE 125), ¿cuál es la secuencia inmediata de actuaciones que ordenan la Sección 3 del Suplemento POH y el Emergency Checklist V4?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Engine Master OFF, Fuel Shut-Off Valve OFF, Fuel Pump OFF, Battery & Alternator OFF, abandonar el avión y extinguir el fuego",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Continuar accionando el motor de arranque durante 20 segundos con gases al 100% para aspirar las llamas hacia los cilindros",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Abrir el mando de Aire Alternativo, mantener el motor a 1400 RPM y activar la calefacción de cabina al máximo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Activar el interruptor Force B, pulsar el botón FADEC Reset y cerrar únicamente el depósito izquierdo de combustible",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "A diferencia de los motores de pistón de gasolina con carburador (donde se continúa dando al arranque para aspirar el combustible acumulado en el colector de admisión), en el **motor diésel common-rail TAE 125** (Sección 3, página 3-7 y Emergency Checklist V4) **no se continúa girando el arranque**, sino que se corta inmediatamente toda alimentación eléctrica y de combustible:\n1. **Engine Master — OFF**\n2. **Fuel Shut-Off Valve — OFF (Left and Right)**\n3. **Fuel Pump — OFF**\n4. **Alternator & Battery — OFF**\n5. **Evacuar la aeronave y extinguir el fuego con extintor**.\n\n| Paso en Fuego durante el Arranque (TAE 125) | Acción del Piloto |\n| :--- | :--- |\n| **1. Engine Master** | **OFF** |\n| **2. Fuel Shut-Off Valve & Fuel Pump** | **OFF** |\n| **3. Battery & Alternator** | **OFF** |\n| **4. Evacuación** | Abandonar la aeronave y extinguir el fuego |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Fires (Page 3-7):**\n> \"ENGINE FIRE DURING START: (1) Engine Master - OFF. (2) Fuel Shut-Off Valve - OFF. (3) Fuel Pump - OFF. (4) Battery and Alternator - OFF. (5) Abandon the airplane and extinguish the fire.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 3 Fires](./manual-crops/fleet-c172f/supp_p79_emg_fires.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Engine Fire During Start (Page 3-7)",
+        "Blue Team Flight School - C172F Emergency Checklist V4 (Page 1)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-EMG-018",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "POH Supplement Sección 3 & Checklist V4 - Fuego de Motor en Vuelo (Engine Fire in Flight)",
+    "stem": "Ante un fuego de motor en vuelo (Engine Fire in Flight) en la Reims/Cessna F172F (EC-NNX), ¿cuál es el procedimiento de memoria y lista de chequeo establecido en la Sección 3 del Suplemento POH?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Thrust Lever FULL, Engine Master ON, Fuel Shut-Off Valve OFF, Cabin Heat ON al máximo para enfriar el refrigerante y picar a 174 MPH",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Thrust Lever IDLE, Engine Master OFF, Fuel Shut-Off Valve OFF, Fuel Pump OFF, Alternator OFF, Cabin Heat/Vents OFF y aterrizaje forzoso",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Battery OFF y Alternator OFF manteniendo el Engine Master en ON para continuar volando con la batería de reserva hasta un aeródromo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Extender Flaps 40° a 110 KIAS, abrir la calefacción de cabina y pulsar el botón FADEC Reset para activar el extintor del compartimento",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 3 (*Engine Fire in Flight*, página 3-7) del Suplemento POH y el Emergency Checklist V4:\n1. **Thrust Lever — IDLE**\n2. **Engine Master — OFF**\n3. **Fuel Shut-Off Valve — OFF (Left and Right)**\n4. **Fuel Pump — OFF**\n5. **Alternator — OFF** (se mantiene Battery ON si se necesitan flaps/radios para el aterrizaje forzoso).\n6. **Cabin Heating and Air Vents — OFF (cerrados)** para impedir la entrada de humo desde el parallamas (las tomas de ventilación superiores de las raíces alares *overhead vents* pueden dejarse abiertas).\n7. Ejecutar **aterrizaje forzoso sin motor (Forced Landing)**.\n\n| Mando / Sistema en Fuego de Motor en Vuelo | Posición Requerida |\n| :--- | :--- |\n| **Thrust Lever / Engine Master** | **IDLE / OFF** |\n| **Fuel Shut-Off Valve / Fuel Pump** | **OFF / OFF** |\n| **Alternator** | **OFF** |\n| **Cabin Heating & Lower Air Vents** | **OFF (Cerrados)** (Overhead vents pueden abrirse) |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Engine Fire in Flight (Page 3-7):**\n> \"ENGINE FIRE IN FLIGHT: (1) Thrust Lever - IDLE. (2) Engine Master - OFF. (3) Fuel Shut-Off Valve - OFF. (4) Fuel Pump - OFF. (5) Alternator - OFF. (6) Cabin Heating and Air Vents - OFF (overhead vents may stay open). (7) Perform forced landing.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 3 Fires](./manual-crops/fleet-c172f/supp_p79_emg_fires.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Engine Fire in Flight (Page 3-7)",
+        "Blue Team Flight School - C172F Emergency Checklist V4 (Page 1)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-EMG-019",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "POH Supplement Sección 3 - Fuego Eléctrico en Vuelo (Electrical Fire in Flight)",
+    "stem": "En caso de fuego de origen eléctrico o humo eléctrico en cabina durante el vuelo en la Reims/Cessna F172F (TAE 125), ¿qué interruptores eléctricos deben desconectarse y cómo sigue funcionando el motor?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desconectar Engine Master OFF y dejar Battery ON; el motor se detiene de inmediato y se realiza un aterrizaje forzoso en planeo",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Mantener Battery ON y Alternator ON, apagando únicamente el interruptor Avionics Master y abriendo la calefacción de cabina al máximo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Pasar Alternator OFF, Battery OFF y demás switches OFF (salvo Engine Master ON); el motor opera con la Backup Battery máx. 30 min",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Desconectar Alternator OFF, Battery OFF y activar el interruptor Force B para que el canal B-FADEC alimente el motor durante 60 min",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Sección 3 (*Electrical Fire in Flight*, página 3-8) del Suplemento POH y el Emergency Checklist V4:\n1. **Alternator — OFF**\n2. **Battery — OFF**\n3. **Todos los demás interruptores eléctricos (excepto Engine Master) — OFF**\n4. **Cabin Heating & Air Vents — OFF (cerrados)** y usar el extintor de cabina si procede.\n5. Al desconectar Alternator y Battery manteniendo **Engine Master ON**, toda la red eléctrica general de la aeronave queda desenergizada (aislando el cortocircuito), mientras que el motor **sigue funcionando alimentado por la batería de reserva del FADEC (A-FADEC) durante un máximo de 30 minutos**. El piloto debe **aterrizar lo antes posible (antes de 30 min)** y **nunca activar Force B**.\n\n| Interruptor en Fuego Eléctrico en Vuelo | Posición | Efecto en el Avión |\n| :--- | :--- | :--- |\n| **Alternator & Battery** | **OFF** | Desenergiza barras eléctricas principales |\n| **Resto de Interruptores Eléctricos** | **OFF** | Aísla los circuitos de aviónica y servicios |\n| **Engine Master** | **ON** | Motor operativo por **máx. 30 min** con la Backup Battery (A-FADEC) |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Electrical Fire in Flight (Page 3-8):**\n> \"ELECTRICAL FIRE IN FLIGHT: (1) Alternator - OFF. (2) Battery - OFF. (3) All other electrical switches (except Engine Master) - OFF. (4) Cabin Heating and Air Vents - CLOSED. Note: With Battery and Alternator OFF, the engine runs on the FADEC backup battery for max. 30 minutes. Land as soon as possible!\"\n\n![Recorte Oficial del Manual — Supplement POH Section 3 Fires](./manual-crops/fleet-c172f/supp_p79_emg_fires.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Electrical Fire in Flight (Page 3-8)",
+        "Blue Team Flight School - C172F Emergency Checklist V4 (Page 1)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "C172F-EMG-020",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "POH Supplement Sección 3 - Fuego en Cabina (Cabin Fire) y Evacuación de Humo",
+    "stem": "Si se produce un fuego en el interior de la cabina de pasajeros (Cabin Fire) durante el vuelo en la Reims/Cessna F172F y tras descargarse el extintor es necesario evacuar el humo y los gases tóxicos, ¿qué procedimiento establece la Sección 3 del Suplemento POH?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Abrir completamente desde el primer instante todas las ventanas, aireadores y la calefacción de cabina antes de usar el extintor portátil",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Apagar inmediatamente el interruptor Engine Master y cerrar el selector de combustible antes de combatir el fuego dentro de la cabina",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Ascender por encima de 15.000 ft de altitud de presión con calefacción abierta para sofocar las llamas por reducción de oxígeno ambiental",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mantener cerradas calefacción y ventilaciones mientras arde; solo tras extinguir el fuego abrir ventanas y aireadores y aterrizar pronto",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 3 (*Cabin Fire*, página 3-7 y *Smoke and Fume Elimination*) del Suplemento POH y el Emergency Checklist V4:\n1. **Alternator & Battery — OFF** y desconectar equipos eléctricos (para eliminar fuentes de ignición).\n2. **Cerrar ventilaciones y calefacción de cabina (Vents & Cabin Air/Heat — CLOSED)** para evitar corrientes de aire que aviven el fuego.\n3. **Atacar la base de las llamas con el extintor portátil**.\n4. **Únicamente después de confirmar que el fuego está completamente extinguido**, abrir los aireadores y ventanas para ventilar la cabina de humo/vapores del agente extintor, y **aterrizar lo antes posible / inmediatamente**.\n\n| Fase de Actuación ante Fuego en Cabina | Posición de Aireadores y Ventanas |\n| :--- | :--- |\n| **Mientras arde el fuego / Uso del extintor** | **CERRADOS (evitar avivar las llamas con tiro de aire)** |\n| **Tras extinguir completamente el fuego** | **ABIERTOS (evacuar humo y gases tóxicos de cabina)** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Cabin Fire (Page 3-7):**\n> \"CABIN FIRE: (1) Alternator - OFF. (2) Battery - OFF. (3) Cabin Heating and Air Vents - CLOSED (to avoid drafts). (4) Fire Extinguisher - ACTIVATE. WARNING: After the fire is extinguished, ventilate the cabin by opening the air vents and windows. Land as soon as possible.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 3 Fires](./manual-crops/fleet-c172f/supp_p79_emg_fires.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Cabin Fire (Page 3-7)",
+        "Blue Team Flight School - C172F Emergency Checklist V4 (Page 1)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-EMG-021",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "POH Supplement Sección 3 - Vuelo en Condiciones de Engelamiento Inadvertido (Flight in Icing Conditions)",
+    "stem": "El vuelo en condiciones conocidas de engelamiento está prohibido en la Reims/Cessna F172F. Si se encuentra engelamiento de forma inadvertida en vuelo, ¿qué acciones inmediatas ordena la Sección 3 del Suplemento POH?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pitot Heat ON, Alternate Air ON, Cabin Heat ON, aumentar potencia, salir de la zona de hielo y aterrizar con Flaps UP a 65–75 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Pitot Heat OFF, Alternate Air OFF, extender Flaps 40° para desprender el hielo del borde de ataque y reducir la velocidad a 50 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Activar el interruptor Force B, apagar la bomba eléctrica de combustible y mantener 45° de alabeo continuo hasta derretir el hielo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Apagar el motor mediante el Engine Master y descender planeando a 110 KIAS hasta situarse por debajo de la isoterma de 0°C",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 3 (*Flight in Icing Conditions*, página 3-9) del Suplemento POH y el Emergency Checklist V4:\n1. **Pitot Heat — ON**.\n2. **Alternate Air — PULL (ON)** (para tomar aire precalentado del compartimento motor si el filtro exterior se bloquea con hielo).\n3. **virar o cambiar de altitud** inmediatamente para salir de la zona de engelamiento.\n4. **Cabin Heat — ON (OPEN)** para desempañar el parabrisas.\n5. **Aumentar las RPM / potencia del motor** para minimizar la acumulación de hielo en las palas de la hélice (si hay vibración, variar brevemente la palanca de gases para desprender el hielo por fuerza centrífuga).\n6. **No usar flaps en el aterrizaje** (con hielo en los planos la velocidad de pérdida aumenta considerablemente; planificar aproximación y aterrizaje a **65 – 75 KIAS**).\n\n| Acción ante Engelamiento Inadvertido | Propósito Operacional |\n| :--- | :--- |\n| **Pitot Heat ON & Alternate Air PULL (ON)** | Proteger indicación de velocidad y admisión de aire al turbo |\n| **Flaps en Aterrizaje con Hielo** | **Flaps UP ($0^\\circ$)** y aproximar a **65 – 75 KIAS** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Flight in Icing Conditions (Page 3-9):**\n> \"FLIGHT IN ICING CONDITIONS: (1) Pitot Heat - ON. (2) Alternate Air - PULL (ON). (3) Turn back or change altitude... (7) Plan a landing with Wing Flaps UP and maintain a higher approach speed of 65 to 75 KIAS (75 to 85 MPH).\"\n\n![Recorte Oficial del Manual — Supplement POH Section 3 Fires & Icing](./manual-crops/fleet-c172f/supp_p79_emg_fires.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Flight in Icing Conditions (Page 3-9)",
+        "Blue Team Flight School - C172F Emergency Checklist V4 (Page 2)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "C172F-EMG-022",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "Checklist V4 & POH Supplement Sección 3 - Procedimiento de Descenso de Emergencia (Emergency Descent)",
+    "stem": "En el C172F Emergency Checklist V4 de Blue Team Flight School, ¿qué configuración de potencia, flaps y velocidad se especifica para ejecutar un Descenso de Emergencia (Emergency Descent) en configuración limpia vs con flaps?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Con Flaps UP: potencia 50% y 174 MPH; con Flaps 40°: potencia 50% y 110 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Con Flaps UP: potencia IDLE y 110 KIAS; con Flaps 40°: potencia IDLE y 85 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Con Flaps UP: potencia IDLE y 65 KIAS; con Flaps 40°: potencia IDLE y 43 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Con Flaps UP: potencia 100% y 140 MPH; con Flaps 20°: potencia 75% y 100 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con el C172F Emergency Checklist V4 (página 2, *Emergency Descent*) y los SOPs:\n- Se reduce la palanca de gases a **IDLE**.\n- Si se realiza en **configuración limpia (Flaps UP)**, se desciende a **110 KIAS** (o hasta $V_{NO} = 140\\text{ MPH} / 122\\text{ KCAS}$ si el aire está completamente en calma).\n- Si se realiza **con resistencia máxima (Flaps 40°)**, tras reducir por debajo de 85 KIAS se extienden **Flaps 40°** y se mantiene el límite del arco blanco de **85 KIAS**.\n\n| Modalidad de Descenso de Emergencia | Posición de Gases | Posición de Flaps | Velocidad Objetivo |\n| :--- | :--- | :--- | :--- |\n| **Configuración Limpia** | **IDLE** | **Flaps UP ($0^\\circ$)** | **110 KIAS** (máx. $V_{NO}$ en aire en calma) |\n| **Configuración con Flaps** | **IDLE** | **Flaps $40^\\circ$** | **85 KIAS ($V_{FE}$)** |\n\n> 📖 **Extracto Literal del Manual — Blue Team Flight School C172F Emergency Checklist V4 (Page 2):**\n> \"EMERGENCY DESCENT: Throttle IDLE | Flaps UP: 110 KIAS (or Flaps 40°: 85 KIAS).\"\n\n![Recorte Oficial del Manual — Cessna 172F Emergency Checklist V4 Page 2](./manual-crops/fleet-c172f/checklist_emg_v4_p2.png)",
+      "references": [
+        "Blue Team Flight School - C172F Emergency Checklist V4 - Emergency Descent (Page 2)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-EMG-023",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "POH Supplement Sección 3 - Recuperación de Picado en Espiral (Recovery from Spiral Dive)",
+    "stem": "Si la Reims/Cessna F172F entra inadvertidamente en un picado en espiral (Spiral Dive) durante el vuelo sin referencias visuales, ¿cuál es el orden exacto de las acciones de recuperación especificado en la Sección 3 del Suplemento POH?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tirar primero del volante de profundidad hacia atrás con fuerza y después nivelar los planos manteniendo el 100% de potencia",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Extender inmediatamente Flaps 40°, aplicar timón contrario sin usar alerones y empujar la columna de mando hacia delante",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Reducir gases a IDLE, nivelar primero los planos con alerón y timón coordinados y después recuperar suavemente el picado",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Apagar el interruptor Engine Master, soltar ambos mandos de vuelo y esperar a que la estabilidad diedra recupere el avión",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En un **picado en espiral (Spiral Dive)** la velocidad aumenta rápidamente. Si el piloto tira del mando de profundidad hacia atrás *antes* de nivelar las alas, solo cerrará más el radio del viraje e incrementará drásticamente el factor de carga ($g$), pudiendo superar el límite estructural. Por ello, la Sección 3 (*Recovery from Spiral Dive*, página 3-10) del Suplemento POH ordena:\n1. **Thrust Lever — IDLE** (cortar potencia inmediatamente).\n2. **Ailerons and Rudder — LEVEL THE WINGS** (nivelar los planos primero).\n3. **Elevator — EASE OUT OF DIVE slowly** (recuperar suavemente el picado cuidando no exceder las velocidades máximas ni los factores de carga límite).\n\n| Orden de Recuperación de Espiral (Sección 3 POH) | Acción sobre los Mandos |\n| :--- | :--- |\n| **Paso 1: Potencia** | **Thrust Lever — IDLE** |\n| **Paso 2: Alabeo** | **Nivelar planos con alerones y timón coordinados** |\n| **Paso 3: Cabeceo** | **Tirar suavemente del timón de profundidad** hasta vuelo nivelado |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Recovery from Spiral Dive (Page 3-10):**\n> \"RECOVERY FROM SPIRAL DIVE: (1) Thrust Lever - IDLE. (2) Stop the turn by using coordinated aileron and rudder control to level the wings. (3) Cautiously apply upward elevator pressure to slowly bring the airplane to level flight. Do not exceed maximum permissible airspeeds or load factors!\"\n\n![Recorte Oficial del Manual — Supplement POH Section 3 Electrical & Spiral Dive](./manual-crops/fleet-c172f/supp_p84_emg_electrical_table.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Recovery from Spiral Dive (Page 3-10)",
+        "Blue Team Flight School - C172F Emergency Checklist V4 (Page 2)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172F-EMG-024",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "Checklist V4 & Owner's Manual - Recuperación de Barrena Inadvertida (Unintentional Spin Recovery)",
+    "stem": "Aunque las barrenas intencionadas están prohibidas en la Reims/Cessna F172F con motor TAE 125, ¿cuál es la técnica estándar de recuperación en caso de entrada en barrena inadvertida (Unintentional Spin) recogida en el Emergency Checklist V4?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gases al 100%, alerones a fondo en sentido contrario al giro, tirar del volante totalmente atrás y extender inmediatamente Flaps 20°",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Gases IDLE, extender Flaps 40°, aplicar timón de dirección a favor del giro de la barrena y mantener el volante atrás hasta nivelar",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Apagar el interruptor Engine Master, aplicar alerones a fondo contra la rotación dejando los pedales del timón fijos en el centro",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Gases IDLE, alerones neutros, timón a fondo contrario al giro, mando adelante para romper la pérdida, centrar timón y recuperar suave",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con el C172F Emergency Checklist V4 (*Unintentional Spin Recovery*) y el Owner's Manual de la Cessna 172F, el procedimiento estándar PARE para recuperar una barrena inadvertida es:\n1. **Throttle (Thrust Lever) — IDLE** y **Ailerons — NEUTRAL** (además de **Flaps — UP**).\n2. **Rudder — FULL OPPOSITE** al sentido de rotación.\n3. **Control Wheel (Elevator) — BRISKLY FORWARD** (aprox. media vuelta tras aplicar pie a fondo) para disminuir el ángulo de ataque y romper la pérdida de las alas.\n4. **Neutralizar el timón de dirección** tan pronto como se detenga la rotación, y **recuperar suavemente el picado**.\n\n| Paso PARE en Barrena Inadvertida | Acción sobre los Mandos |\n| :--- | :--- |\n| **1. Power & Ailerons** | **Throttle IDLE, Ailerons NEUTRAL, Flaps UP** |\n| **2. Rudder** | **A fondo en sentido contrario a la rotación** |\n| **3. Elevator** | **Hacia delante con decisión** para romper la pérdida |\n| **4. Exit / Pull-out** | **Neutralizar timón** al cesar el giro y **recuperar el picado con suavidad** |\n\n> 📖 **Extracto Literal del Manual — Blue Team Flight School C172F Emergency Checklist V4 (Page 2):**\n> \"UNINTENTIONAL SPIN: 1. Throttle IDLE | 2. Ailerons NEUTRAL | 3. Rudder FULL OPPOSITE to rotation | 4. Control Wheel FORWARD to break stall | 5. Rudder NEUTRAL when rotation stops | 6. Smoothly recover from dive.\"\n\n![Recorte Oficial del Manual — Cessna 172F Emergency Checklist V4 Page 2](./manual-crops/fleet-c172f/checklist_emg_v4_p2.png)",
+      "references": [
+        "Blue Team Flight School - C172F Emergency Checklist V4 - Unintentional Spin (Page 2)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-EMG-025",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "Checklist V4 & POH Supplement Sección 3 - Aterrizaje Forzoso sin Motor (Emergency Landing Without Engine Power)",
+    "stem": "Durante la aproximación final para un aterrizaje forzoso sin motor fuera de aeródromo (Emergency Landing Without Engine Power) en la Reims/Cessna F172F, ¿qué acciones de seguridad en cabina deben completarse antes de tocar tierra?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Planear a 65/60 KIAS; gases IDLE, Engine Master OFF, selector Fuel OFF, Flaps 40° recomendados, Battery/Alternator OFF y destrabar puertas",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Planear a 85 KIAS con Flaps UP; mantener Engine Master ON, Fuel Pump ON, bloquear las puertas con seguro interior y frenar antes de tocar",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Planear a 50 KIAS con Flaps 40°; desabrochar los cinturones de seguridad a 200 ft AGL y abrir completamente las puertas antes de la recogida",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Planear a 75 KIAS; activar el interruptor Force B, dejar la válvula de combustible en BOTH y apagar la batería solo tras detener el avión",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 3 (*Emergency Landing Without Engine Power*, página 3-2) del Suplemento POH y el Emergency Checklist V4:\n1. **Airspeed:** **65 KIAS** (Flaps UP) / **60 KIAS** (Flaps DOWN).\n2. **Thrust Lever:** **IDLE**.\n3. **Engine Master:** **OFF**.\n4. **Fuel Shut-Off Valve:** **OFF (Left and Right)**.\n5. **Wing Flaps:** según requerimiento (**40° recomendado** una vez asegurado el campo).\n6. **Alternator and Battery:** **OFF** (después de haber extendido los flaps eléctricos).\n7. **Cabin Doors:** **UNLATCH prior to touchdown** (destrabar los pestillos antes del impacto para evitar que la deformación del fuselaje impida la evacuación).\n8. **Touchdown:** ligeramente con cola baja (*slightly tail low*) y frenar intensamente.\n\n| Ítem Pre-Impacto en Aterrizaje Forzoso | Estado Requerido |\n| :--- | :--- |\n| **Engine Master & Fuel Shut-Off Valve** | **OFF** (prevenir incendio post-impacto) |\n| **Wing Flaps** | **$40^\\circ$ recomendados** (antes de cortar Battery OFF) |\n| **Battery & Alternator** | **OFF** (tras posicionar flaps) |\n| **Puertas de Cabina (Cabin Doors)** | **Destrabadas (Unlatched) antes de tocar tierra** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3 (Page 3-2) & Checklist V4:**\n> \"EMERGENCY LANDING WITHOUT ENGINE POWER: (1) Airspeed - 65 KIAS (Flaps UP) / 60 KIAS (Flaps DOWN). (2) Thrust Lever - IDLE. (3) Engine Master - OFF. (4) Fuel Shut-Off Valve - OFF. (5) Wing Flaps - AS REQUIRED (40° recommended). (6) Battery and Alternator - OFF. (7) Doors - UNLATCH prior to touchdown.\"\n\n![Recorte Oficial del Manual — Cessna 172F Emergency Checklist V4 Page 1](./manual-crops/fleet-c172f/checklist_emg_v4_p1.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Emergency Landing Without Engine Power (Page 3-2)",
+        "Blue Team Flight School - C172F Emergency Checklist V4 (Page 1)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172F-EMG-026",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "Checklist V4 - Aterrizaje Precautorio con Potencia de Motor (Precautionary Landing With Engine Power)",
+    "stem": "En el procedimiento de Aterrizaje Precautorio con Potencia (Precautionary Landing With Engine Power) del C172F Emergency Checklist V4, ¿con qué configuración y velocidad se realiza la pasada de inspección a baja altura sobre el campo elegido antes del aterrizaje final?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sobrevolar el campo con Flaps UP a 120 KIAS a baja cota; luego aterrizar sin flaps a 85 KIAS manteniendo el motor al 75% de carga en la toma",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Sobrevolar el campo con Flaps 20° a 65 KIAS para inspeccionarlo; en final usar Flaps 40° a 60 KIAS, destrabar puertas y cortar Master/Battery",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Sobrevolar el campo con Flaps 40° a 45 KIAS durante el reconocimiento y apagar el motor en el tramo de viento en cola a 1000 ft AGL de altura",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Sobrevolar el campo con Flaps 10° a 95 KIAS activando el interruptor Force B y cerrando la válvula selectora antes de virar al tramo base",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según el C172F Emergency Checklist V4 (*Precautionary Landing With Engine Power*):\n1. Seleccionar **Flaps 20°** y sobrevolar el campo elegido a **65 KIAS** a una altura segura para observar la pendiente, obstáculos, cables y estado de la superficie, dejando los interruptores eléctricos listos.\n2. Ascender de nuevo al circuito retrayendo flaps, configurar para la aproximación final con **Flaps 40° a 60 KIAS**, destrabar las puertas antes de tocar tierra y apagar **Engine Master OFF, Fuel Shut-Off Valve OFF y Battery/Alternator OFF** en la recogida/contacto.\n\n| Fase de Aterrizaje Precautorio con Motor | Configuración de Flaps | Velocidad Indicada |\n| :--- | :--- | :--- |\n| **Pasada de Inspección del Campo** | **Flaps $20^\\circ$** | **65 KIAS** |\n| **Aproximación Final y Toma** | **Flaps $40^\\circ$** | **60 KIAS** |\n\n> 📖 **Extracto Literal del Manual — Blue Team Flight School C172F Emergency Checklist V4 (Page 1):**\n> \"PRECAUTIONARY LANDING WITH ENGINE POWER: Fly over selected field with Flaps 20° at 65 KIAS noting terrain and obstacles... Approach with Flaps 40° at 60 KIAS, unlatch doors prior to touchdown, Engine Master & Battery OFF at touchdown.\"\n\n![Recorte Oficial del Manual — Cessna 172F Emergency Checklist V4 Page 1](./manual-crops/fleet-c172f/checklist_emg_v4_p1.png)",
+      "references": [
+        "Blue Team Flight School - C172F Emergency Checklist V4 - Precautionary Landing With Engine Power (Page 1)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-EMG-027",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "Checklist V4 - Procedimiento de Amaraje Forzoso (Ditching)",
+    "stem": "Según el procedimiento de Amaraje (Ditching) del C172F Emergency Checklist V4, ¿cómo debe orientarse la aproximación respecto al viento y al oleaje (swell) y qué velocidad de aproximación se utiliza?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amarar siempre perpendicularmente a la cresta de las olas con Flaps UP a 85 KIAS e impactar con actitud de morro bajo para frenar rápido el avión",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Amarar siempre con viento en cola para reducir la velocidad relativa respecto a las olas y mantener las puertas bloqueadas con el seguro interior",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Viento fuerte: cara al viento; mar de fondo fuerte y poco viento: paralelo a las olas; Flaps 20°–40° a 60 KIAS y 300 ft/min con puertas destrabadas",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Picar a 110 KIAS con Flaps 40° manteniendo el motor al 100% de carga hasta tocar el agua e inflar los chalecos salvavidas dentro de la cabina",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con el procedimiento **DITCHING** del C172F Emergency Checklist V4:\n- **Dirección de amaraje:** con **vientos fuertes**, amarar **cara al viento (Into the wind)**; con **olas largas o mar de fondo fuerte y viento flojo (Heavy swells, light wind)**, amarar **paralelo al oleaje (Parallel to swells)**.\n- **Configuración de aproximación:** **Flaps 20° a 40°** y velocidad **60 KIAS** (si hay potencia disponible, ajustar para un régimen de descenso controlado de **300 ft/min**).\n- **Cabina:** asegurar objetos pesados, **destrabar o acuñar abiertas las puertas (Unlatch doors)**, proteger la cara con una prenda acolchada y **no inflar los chalecos salvavidas hasta haber salido del avión**.\n\n| Condición de Mar y Viento (Ditching) | Rumbo de Amaraje Recomendado |\n| :--- | :--- |\n| **Viento Fuerte (High Wind, Small Swells)** | **Cara al viento (Into the wind)** |\n| **Mar de Fondo Fuerte y Viento Flojo (Heavy Swells, Light Wind)** | **Paralelo a las crestas de las olas (Parallel to swells)** |\n\n> 📖 **Extracto Literal del Manual — Blue Team Flight School C172F Emergency Checklist V4 (Page 1):**\n> \"DITCHING: Approach: High Winds, Small Swells - INTO THE WIND | Heavy Swells, Light Wind - PARALLEL TO SWELLS. Flaps 20°-40°, Power 300 FT/MIN descent at 60 KIAS (if available). Doors UNLATCH, Touchdown level attitude.\"\n\n![Recorte Oficial del Manual — Cessna 172F Emergency Checklist V4 Page 1](./manual-crops/fleet-c172f/checklist_emg_v4_p1.png)",
+      "references": [
+        "Blue Team Flight School - C172F Emergency Checklist V4 - Ditching (Page 1)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-EMG-028",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "Checklist V4 - Aterrizaje sin Mando de Profundidad (Landing Without Elevator Control)",
+    "stem": "En el caso de pérdida de mando del timón de profundidad (Landing Without Elevator Control) en la Cessna 172F según el Emergency Checklist V4, ¿cómo debe controlar el piloto la actitud de cabeceo y la senda durante la aproximación y toma?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Extender y retraer continuamente los flaps entre 0° y 40° cada 3 segundos manteniendo el 100% de potencia",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Desplazar el equipaje en vuelo hacia la cola mientras se apaga el motor en el tramo de viento en cola a 1000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar un resbale pronunciado con 45° de alabeo hasta tocar la pista con una sola rueda principal a 90 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Controlar actitud y velocidad con el compensador (Trim) y la potencia, configurando Flaps 20° y unos 65 KIAS",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "Según el procedimiento **LANDING WITHOUT ELEVATOR CONTROL** del C172F Emergency Checklist V4 (página 2), si se pierde el accionamiento primario del timón de profundidad, la aleta compensadora (*Elevator Trim Tab*) sigue siendo plenamente eficaz para controlar el ángulo de ataque y la velocidad indicada, combinada con variaciones suaves de **potencia (Thrust Lever)**:\n- Configurar **Flaps 20°**.\n- Ajustar el **compensador (Trim)** para estabilizar **~65 KIAS**.\n- Controlar la senda de planeo y la recogida (*flare*) mediante pequeños ajustes de potencia y compensador, evitando cortar los gases bruscamente antes de tocar tierra.\n\n| Mando Sustitutivo sin Profundidad | Función en la Aproximación |\n| :--- | :--- |\n| **Rueda de Compensación (Elevator Trim)** | Ajustar actitud de cabeceo para **65 KIAS** (con **Flaps $20^\\circ$**) |\n| **Palanca de Gases (Thrust Lever)** | Regular el régimen de descenso y asistir en la recogida suave |\n\n> 📖 **Extracto Literal del Manual — Blue Team Flight School C172F Emergency Checklist V4 (Page 2):**\n> \"LANDING WITHOUT ELEVATOR CONTROL: 1. Trim - SET for 65 KIAS | 2. Flaps - 20° | 3. Power - ADJUST for glidepath (do not reduce power abruptly before touchdown).\"\n\n![Recorte Oficial del Manual — Cessna 172F Emergency Checklist V4 Page 2](./manual-crops/fleet-c172f/checklist_emg_v4_p2.png)",
+      "references": [
+        "Blue Team Flight School - C172F Emergency Checklist V4 - Landing Without Elevator Control (Page 2)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-EMG-029",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "Checklist V4 - Aterrizaje con Neumático Principal Desinflado o Rueda de Morro Defectuosa",
+    "stem": "¿Qué técnica de toma de contacto recomienda el C172F Emergency Checklist V4 si se conoce que uno de los neumáticos del tren principal está pinchado (Flat Main Tire)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tocar primero con la rueda sana, mantener el plano del neumático pinchado alto con alerón y frenar solo en la rueda intacta",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Aproximar sin flaps a 90 KIAS y tocar tierra primero con la rueda de morro para descargar el peso sobre el tren principal",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aplicar el freno de estacionamiento antes de tocar tierra para igualar la resistencia al avance de ambas ruedas principales",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Tocar tierra primero sobre la rueda pinchada con alerón a favor de ese lado para asentar firmemente la llanta en el asfalto",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con el C172F Emergency Checklist V4 (*Landing With a Flat Main Tire*, página 2):\n- Realizar la aproximación normal (**Flaps as desired**).\n- En la toma de contacto, **posar primero la rueda en buen estado (Good tire FIRST)**, manteniendo el ala del neumático pinchado elevada mediante el mando de alerón el mayor tiempo posible a medida que disminuye la velocidad.\n- Mantener la direccionalidad aplicando **timón de dirección y freno suave únicamente en el pedal de la rueda buena**.\n\n| Situación de Tren en Aterrizaje | Técnica de Toma de Contacto |\n| :--- | :--- |\n| **Neumático Principal Pinchado (Flat Main Tire)** | Tocar primero con la **rueda sana**, sostener el plano de la rueda pinchada arriba y frenar solo del lado sano |\n| **Pata de Morro Defectuosa (Defective Nose Gear)** | Flaps $40^\\circ$, tocar con **morro alto**, mantener el volante totalmente atrás el mayor tiempo posible y no usar frenos salvo urgencia |\n\n> 📖 **Extracto Literal del Manual — Blue Team Flight School C172F Emergency Checklist V4 (Page 2):**\n> \"LANDING WITH A FLAT MAIN TIRE: 1. Wing Flaps - AS DESIRED. 2. Touchdown - GOOD TIRE FIRST, hold airplane off flat tire as long as possible with aileron control. 3. Directional control - Maintain using brake on good wheel as required.\"\n\n![Recorte Oficial del Manual — Cessna 172F Emergency Checklist V4 Page 2](./manual-crops/fleet-c172f/checklist_emg_v4_p2.png)",
+      "references": [
+        "Blue Team Flight School - C172F Emergency Checklist V4 - Landing With a Flat Main Tire (Page 2)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172F-EMG-030",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "POH Supplement Sección 5 - Relación y Distancia Máxima de Planeo (Maximum Glide)",
+    "stem": "De acuerdo con la Figura 5-1 (Maximum Glide) de la Sección 5 del Suplemento POH de la Reims/Cessna F172F (con motor parado, hélice en molinete, Flaps UP y viento nulo), ¿qué distancia aproximada puede planear la aeronave desde una altura de 6000 ft sobre el terreno (AGL)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aproximadamente 5,0 millas terrestres (4,3 NM), equivalente a una relación de planeo de 4,5:1",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Aproximadamente 10,8 millas terrestres (9,4 NM / 17,4 km), equivalente a una relación de planeo cercana a 9,5:1",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Aproximadamente 18,0 millas terrestres (15,6 NM), equivalente a una relación de planeo de 16:1",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aproximadamente 2,5 millas terrestres (2,2 NM), equivalente a una relación de planeo de 2,2:1",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según la **Figura 5-1 (Maximum Glide)** de la Sección 5 (página 5-6) del Suplemento POH, con Flaps UP, hélice en molinete (*windmilling*) y viento cero:\n- Desde **6000 ft sobre el terreno**, la distancia de planeo es de aproximadamente **10,8 millas terrestres (Statute Miles) $\\approx 9,4\\text{ NM} \\approx 17,4\\text{ km}$** (y desde **12.000 ft AGL** es de unas **21,5 millas terrestres $\\approx 18,7\\text{ NM}$**), lo que representa una relación de planeo de aproximadamente **9,5 : 1** (unas 1,8 SM / 1,56 NM por cada 1000 ft de altura).\n\n| Altura Sobre el Terreno (AGL) | Distancia de Planeo en Aire en Calma (Fig. 5-1 POH) |\n| :--- | :--- |\n| **2.000 ft AGL** | ~3,6 SM (~3,1 NM / 5,8 km) |\n| **6.000 ft AGL** | **~10,8 SM (~9,4 NM / 17,4 km)** |\n| **10.000 ft AGL** | ~18,0 SM (~15,6 NM / 29,0 km) |\n| **12.000 ft AGL** | ~21,5 SM (~18,7 NM / 34,6 km) |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 5: Figure 5-1 Maximum Glide (Page 5-6):**\n> \"Figure 5-1 Maximum Glide: Conditions: Flaps Up, Zero Wind, Propeller Windmilling. At 6000 ft Height Above Ground: ~10.8 Miles (at 12000 ft: ~21.5 Miles).\"\n\n![Recorte Oficial del Manual — Supplement POH Section 3 Emergency Speeds](./manual-crops/fleet-c172f/supp_p73_emg_speeds.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 5: Figure 5-1 Maximum Glide (Page 5-6)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  }
+]

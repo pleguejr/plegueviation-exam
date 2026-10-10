@@ -1,0 +1,298 @@
+[
+  {
+    "id": "DA40D-SOP-001",
+    "subject_id": "da40d_normal",
+    "learning_objective": "Blue Team SOP 5.7 - Nivel de Aceite y Tiempo de Espera tras la Parada",
+    "stem": "Según el SOP Blue Team para los motores TAE 125, ¿entre qué marcas de varilla se opera y cuánto debe esperarse tras la parada para comprobar el aceite?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Entre 1/2 y el máximo; no comprobar hasta pasados 30 minutos de la parada",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Entre el mínimo y 3/4; comprobar inmediatamente tras apagar el motor",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Entre 1/4 y el máximo; no comprobar hasta pasados 60 minutos de la parada",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Entre 1/4 y el máximo; no comprobar hasta pasados 5 minutos de la parada",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "SOP 5.7: en C172 y DA42/DA40 (TAE 125) se opera con la varilla **entre 1/4 y el máximo**; si está por debajo de 1/4 avisar al instructor. **No comprobar dentro de los 5 min** tras la parada: el aceite retorna al cárter un **80 % a los 5 min, 90 % a los 15 min y 100 % a los 30 min**.\n\n| Tiempo tras parada | Aceite retornado |\n| :--- | :--- |\n| 5 min | 80 % |\n| 15 min | 90 % |\n| 30 min | 100 % |\n\n> 📖 **Extracto Literal del Manual — Blue Team Flight School SOP Rev 04 - Section 5.7: Aceite (Page 13):**\n> \"En nuestro caso tanto C172 como la DA42 operaremos con la indicación entre ¼ y el máximo. Si la indicación está por debajo de ¼ deberemos avisar al instructor.\"\n\n![Recorte Oficial del Manual — Blue Team SOP Oil Rules](./manual-crops/fleet-da40d/bt_sop_oil_dipstick_rules.png)",
+      "references": [
+        "Blue Team Flight School SOP Rev 04 - Section 5.7: Aceite (Page 13)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "DA40D-SOP-002",
+    "subject_id": "da40d_normal",
+    "learning_objective": "Blue Team SOP 6.16 - Técnica de Aterrizaje con Viento Cruzado en Avión de Ala Baja",
+    "stem": "Según el SOP Blue Team, ¿qué técnica de aterrizaje con viento cruzado es la preferente en un avión de plano bajo como la Diamond?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sideslip: plano bajo al viento desde final y pedal contrario hasta tocar",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "De-crab: corregir con pedal desde el FAF y posar a la vez ambas ruedas",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Sideslip con Flaps LDG y pedal a fondo para acortar la carrera de tierra",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "De-crab: volar la deriva en final y alinear con pedal durante la recogida",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "SOP 6.16: el **sideslip** es la técnica preferente para **ala alta** (C172) y el **de-crab** para **ala baja** (DA40/DA42): se vuela la final con el ángulo de deriva y, en la recogida, se aplica pedal para alinear y alerón al viento para posar primero la rueda de barlovento. Se usarán los flaps mínimos necesarios.\n\n| Avión | Técnica preferente |\n| :--- | :--- |\n| Ala alta (C172) | Sideslip |\n| **Ala baja (Diamond)** | **De-crab** |\n\n> 📖 **Extracto Literal del Manual — Blue Team Flight School SOP Rev 04 - Section 6.16: Aterrizaje con viento cruzado (Page 38-39):**\n> \"De-crab (técnica preferente para plano bajo): Establecidos en final continuaremos volando con el ángulo de deriva que nos genere el viento sin corregir con rudder. Durante la recogida simplemente aplicaremos rudder para alinear el avión con la pista y aplicaremos cuernos al viento para posar primero la rueda de barlovento.\"\n\n![Recorte Oficial del Manual — Blue Team SOP Crosswind Landing](./manual-crops/fleet-da40d/bt_sop_crosswind_landing.png)",
+      "references": [
+        "Blue Team Flight School SOP Rev 04 - Section 6.16: Aterrizaje con viento cruzado (Page 38-39)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "DA40D-SOP-003",
+    "subject_id": "da40d_normal",
+    "learning_objective": "Blue Team SOP 4 - Criterios y Puertas de Aproximación Estabilizada",
+    "stem": "Según la política de estabilización del SOP Blue Team, ¿a qué altura debe estar estabilizada la aproximación y qué tolerancia de velocidad se admite?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1000 ft AGL en IMC y 500 ft AGL en VMC, con IAS entre Vref +10 y −5 kt",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "500 ft AGL en IMC y 300 ft AGL en VMC, con IAS entre Vref +10 y −5 kt",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "1000 ft AGL en IMC y 500 ft AGL en VMC, con IAS entre Vref +20 y −0 kt",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "1500 ft AGL en IMC y 1000 ft AGL en VMC, con IAS entre Vref +5 y −5 kt",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "SOP 4: estabilizado a **1000 ft AGL en IMC** y **500 ft AGL en VMC**; IAS **$V_{REF}$ +10 / −5 kt**, régimen **≤ 1000 ft/min**, checklists completados, máx. 1 punto LOC/GS y en visual sin virajes por debajo de **300 ft AGL**. Si se desestabiliza: **Go-Around**.\n\n| Criterio | Valor |\n| :--- | :--- |\n| Puerta IMC / VMC | **1000 / 500 ft AGL** |\n| Velocidad | **Vref +10 / −5 kt** |\n| Descenso | ≤ 1000 fpm |\n\n> 📖 **Extracto Literal del Manual — Blue Team Flight School SOP Rev 04 - Section 4: Criterios de aproximación estabilizada (Page 9):**\n> \"Una aproximación debe estar estabilizada a 1000 ft AGL en IMC y a 500 ft AGL en VMC. Velocidad indicada entre Vref +10 kt / -5 kt. Régimen de descenso no mayor de 1000 ft/min.\"\n\n![Recorte Oficial del Manual — Blue Team SOP Stabilized Approach](./manual-crops/fleet-da40d/bt_sop_stabilized_approach.png)",
+      "references": [
+        "Blue Team Flight School SOP Rev 04 - Section 4: Criterios de aproximación estabilizada (Page 9)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "DA40D-SOP-004",
+    "subject_id": "da40d_normal",
+    "learning_objective": "Blue Team SOP 5.1 - Limitaciones de Viento para Alumnos Solo",
+    "stem": "¿Qué límites de viento cruzado, de cara y de cola establece el SOP Blue Team para alumnos en vuelo solo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cruzado 10 kt, de cara 25 kt y de cola 5 kt",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Cruzado 5 kt, de cara 35 kt y de cola 10 kt",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cruzado 15 kt, de cara 20 kt y de cola 3 kt",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cruzado 5 kt, de cara 25 kt y de cola 3 kt",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "SOP 5.1 (a discreción del CFI/HT): alumnos solo **cruzado 5 kt, cara 25 kt, cola 3 kt**. Con instructor: cruzado según POH/AFM, cara **35 kt** (incluidas rachas) y cola **10 kt**.\n\n| Componente | Solo | Con instructor |\n| :--- | :--- | :--- |\n| Cruzado | **5 kt** | Según AFM |\n| Cara | **25 kt** | 35 kt |\n| Cola | **3 kt** | 10 kt |\n\n> 📖 **Extracto Literal del Manual — Blue Team Flight School SOP Rev 04 - Section 5.1: Limitaciones de viento (Page 10):**\n> \"Viento cruzado: alumnos solo 5 kt. Viento de cara: alumnos solo 25 kt; con instructor 35 kt incluyendo rachas. Viento en cola: alumnos solo 3 kt; con instructor 10 kt.\"\n\n![Recorte Oficial del Manual — Blue Team SOP Wind Limits](./manual-crops/fleet-da40d/bt_sop_wind_limits.png)",
+      "references": [
+        "Blue Team Flight School SOP Rev 04 - Section 5.1: Limitaciones de viento (Page 10)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "DA40D-SOP-005",
+    "subject_id": "da40d_normal",
+    "learning_objective": "Blue Team SOP 5.1 - Corrección por Rachas sobre Vr y Vref",
+    "stem": "Con un viento reportado 150/15G25, ¿qué corrección por racha se aplica a Vr y Vref según el SOP Blue Team?",
+    "options": [
+      {
+        "id": "A",
+        "text": "+5 kt (mitad del factor de racha), hasta un máximo de +15 kt",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "+10 kt (factor de racha completo), hasta un máximo de +15 kt",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "+5 kt (mitad del factor de racha), hasta un máximo de +20 kt",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "+12 kt (mitad del viento medio), hasta un máximo de +10 kt",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "SOP 5.1: se suma **la mitad del factor de racha** (racha − medio) a $V_R$ y $V_{REF}$, **máximo +15 kt**. Con 15G25: $(25-15)/2 = \\mathbf{+5\\text{ kt}}$.\n\n| Dato | Valor |\n| :--- | :--- |\n| Factor de racha | 25 − 15 = 10 kt |\n| **Corrección** | **+5 kt** |\n| Máximo | +15 kt |\n\n> 📖 **Extracto Literal del Manual — Blue Team Flight School SOP Rev 04 - Section 5.1: Limitaciones de viento (Page 10):**\n> \"Se añadirá a Vr y Vref la mitad del factor de racha hasta un máximo de 15 kt. Ejemplo: 150/15G25, añadiremos 5 kt a Vr y Vref.\"\n\n![Recorte Oficial del Manual — Blue Team SOP Wind Limits](./manual-crops/fleet-da40d/bt_sop_wind_limits.png)",
+      "references": [
+        "Blue Team Flight School SOP Rev 04 - Section 5.1: Limitaciones de viento (Page 10)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "DA40D-SOP-006",
+    "subject_id": "da40d_normal",
+    "learning_objective": "Blue Team SOP 3.9 - Reserva de Combustible Recomendada en Vuelos de Instrucción",
+    "stem": "Según el SOP Blue Team, ¿qué reserva de combustible se recomienda en vuelos de instrucción y con qué parámetros se calcula?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1 h 30 min, calculada con tabla de crucero ISA, 55 % de carga y 2000 ft",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "45 min, calculada con tabla de crucero ISA, 70 % de carga y 5000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "1 h 30 min, calculada con tabla de crucero ISA, 75 % de carga y nivel del mar",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "30 min, calculada con tabla de crucero ISA, 55 % de carga y 2000 ft",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "SOP 3.9: reserva recomendada **1 h 30 min** (nunca inferior a NCO.OP.125), calculada con la tabla de crucero del capítulo 5 en **ISA, 55 % de carga y 2000 ft** de altitud de presión (C172 y Diamond).\n\n| Parámetro | Valor |\n| :--- | :--- |\n| **Reserva** | **1 h 30 min** |\n| Carga | **55 %** |\n| Altitud | **2000 ft** |\n\n> 📖 **Extracto Literal del Manual — Blue Team Flight School SOP Rev 04 - Section 3.9: Cálculo de combustible (Page 8):**\n> \"Reserva recomendada de 1 hora 30 minutos, nunca inferior a NCO.OP.125, calculada según tabla de crucero (en Cessna 172. 55% carga y altitud de presión 2000 pies / DA42, 55%. Carga y altitud 2000ft).\"\n\n![Recorte Oficial del Manual — Blue Team SOP Fuel & Radio](./manual-crops/fleet-da40d/bt_sop_fuel_radio_rules.png)",
+      "references": [
+        "Blue Team Flight School SOP Rev 04 - Section 3.9: Cálculo de combustible (Page 8)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "DA40D-SOP-007",
+    "subject_id": "da40d_normal",
+    "learning_objective": "Blue Team SOP 3.10 & 3.1 - Uso de COM1/COM2 y Frecuencias de Escuela",
+    "stem": "Según el SOP Blue Team, ¿qué frecuencia se mantiene en COM2 en tierra y en vuelo cuando no se usa para el ATIS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "123,45 MHz (aire-aire) en tierra y 121,5 MHz (emergencia) en vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "131,85 MHz (compañía) en tierra y 121,5 MHz (emergencia) en vuelo",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "121,5 MHz (emergencia) en tierra y 131,85 MHz (compañía) en vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "131,85 MHz (compañía) en tierra y 123,45 MHz (aire-aire) en vuelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "SOP 3.10: **COM1** para ATS y aire-aire (**123,45 MHz**). **COM2**: ATIS y, cuando no se use, **131,85 MHz (compañía) en tierra** y **121,5 MHz (emergencia) en vuelo**. Helicóptero turístico de Adeje: 126,0 MHz.\n\n| Radio | Tierra | Vuelo |\n| :--- | :--- | :--- |\n| COM1 | ATS | ATS / 123,45 |\n| **COM2** | **131,85** | **121,5** |\n\n> 📖 **Extracto Literal del Manual — Blue Team Flight School SOP Rev 04 - Section 3.10: Uso de la radio (Page 8):**\n> \"COM2: en tierra ATIS y cuando no se utilice frecuencia de compañía 131.85; en vuelo ATIS y cuando no se utilice frecuencia de emergencia 121.5.\"\n\n![Recorte Oficial del Manual — Blue Team SOP Fuel & Radio](./manual-crops/fleet-da40d/bt_sop_fuel_radio_rules.png)",
+      "references": [
+        "Blue Team Flight School SOP Rev 04 - Section 3.10: Uso de la radio (Page 8)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "DA40D-SOP-008",
+    "subject_id": "da40d_normal",
+    "learning_objective": "Blue Team SOP 3.1, 3.2 & 3.5 - Cabina Estéril, Distracciones y Chalecos",
+    "stem": "Según el SOP Blue Team, ¿entre qué alturas rige la cabina estéril, hasta dónde se evitan distracciones y cuándo se usa el chaleco?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estéril GND–3000 ft AGL, sin distracciones hasta 1000 ft y chaleco siempre",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Estéril GND–1000 ft AGL, sin distracciones hasta 3000 ft y chaleco en mar",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Estéril GND–500 ft AGL, sin distracciones hasta 1500 ft y chaleco en ruta",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Estéril GND–1000 ft AGL, sin distracciones hasta 3000 ft y chaleco siempre",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "SOP 3.2: **cabina estéril entre GND y 1000 ft AGL**, en salida, llegada y anormalidades. SOP 3.1: evitar distracciones y papeleo **entre GND y 3000 ft AGL** (salvo autorizaciones ATC). SOP 3.5: chaleco salvavidas **en todas las fases de vuelo**.\n\n| Norma | Rango |\n| :--- | :--- |\n| **Cabina estéril** | **GND – 1000 ft AGL** |\n| Sin distracciones | GND – 3000 ft AGL |\n| Chaleco | Todas las fases |\n\n> 📖 **Extracto Literal del Manual — Blue Team Flight School SOP Rev 04 - Section 3.1, 3.2 & 3.5: Recomendaciones de seguridad (Page 6-7):**\n> \"Cabina estéril entre GND y 1000 ft AGL. Evitaremos distracciones entre GND y 3000 ft AGL. Uso obligatorio del chaleco salvavidas en todas las fases del vuelo.\"\n\n![Recorte Oficial del Manual — Blue Team SOP Safety](./manual-crops/fleet-da40d/bt_sop_scanflow_cockpit.png)",
+      "references": [
+        "Blue Team Flight School SOP Rev 04 - Section 3.1, 3.2 & 3.5: Recomendaciones de seguridad (Page 6-7)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  }
+]

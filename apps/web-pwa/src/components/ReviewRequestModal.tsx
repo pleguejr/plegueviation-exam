@@ -34,7 +34,7 @@ const REASON_CATEGORIES = [
   },
   {
     id: 'fleet_not_applicable',
-    label: '✈️ No aplicable a la operativa real (E195-E2 / Binter / P2010 / C172N)',
+    label: '✈️ No aplicable a la operativa real (E195-E2 / Binter / C172F)',
     desc: 'Procedimiento o sistema no correspondiente a la flota de la compañía.'
   },
   {

@@ -1,0 +1,890 @@
+[
+  {
+    "id": "DA40D-EMG-001",
+    "subject_id": "da40d_emergency",
+    "learning_objective": "AFM 3.2.2(b) - Fallo de Motor tras el Despegue sin Pista Disponible",
+    "stem": "Fallo de motor tras el despegue en la DA 40 D sin posibilidad de abortar y sin altura de seguridad. ¿Qué indica el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mantener 73 KIAS (1150 kg) y virar 180° de inmediato hacia la pista",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Mantener 72 KIAS (1150 kg) y aterrizar al frente; no regresar al campo",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Mantener 59 KIAS (1150 kg) y virar 90° hacia el lado del viento",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mantener 66 KIAS (1150 kg) y virar 180° si se superan 300 ft AGL",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "3.2.2(b): **72 KIAS (1150 kg) / 66 (1000 kg) / 59 (850 kg)**. WARNING: si no se ha alcanzado una altura segura, **aterrizaje de emergencia al frente; no intentar volver al aeródromo** (puede ser fatal). Si hay tiempo: potencia MAX y ECU SWAP → ECU B.\n\n| Paso | Acción |\n| :--- | :--- |\n| 1 | **72 KIAS** (1150 kg) |\n| 2 | Power lever check MAX |\n| 3 | ECU SWAP — ECU B |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.2.2: Engine Problems During Take-Off (Page 3-7):**\n> \"Take-Off Can No Longer Be Aborted: 1. Airspeed 72 KIAS (1150 kg). WARNING: ...then a straight-ahead emergency landing should be carried out. Do not attempt to turn back to the airfield. Turning back can be fatal.\"\n\n![Recorte Oficial del Manual — DA 40 D Emergency Airspeeds](./manual-crops/fleet-da40d/da40_emg_airspeeds.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.2.2: Engine Problems During Take-Off (Page 3-7)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "DA40D-EMG-002",
+    "subject_id": "da40d_emergency",
+    "learning_objective": "AFM 3.2.3(b) - Pérdida de Potencia en Vuelo",
+    "stem": "Ante una pérdida de potencia en vuelo con la DA 40 D, ¿cuál es la secuencia inicial del AFM tras establecer la velocidad?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Potencia IDLE, bomba de trasvase OFF, válvula OFF, ECU A y reset del ELECTRIC MASTER",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Potencia MAX, bomba de trasvase OFF, válvula EMERG., ECU A y reset del AVIONIC MASTER",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Potencia MAX, bomba de trasvase ON, válvula NORMAL, ECU B y reset del ENGINE MASTER",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Potencia IDLE, bomba de trasvase ON, válvula NORMAL, ECU B y ELECTRIC MASTER en START",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "3.2.3(b): 73 KIAS, **power lever MAX**, Alternate Air ON si hay hielo, comprobar MAIN, **fuel transfer pump ON**, **emergency fuel valve check NORMAL**, **ECU SWAP → ECU B** y reset **ENGINE MASTER OFF–ON**. Si no se resuelve, preparar aterrizaje sin motor.\n\n| Paso | Acción |\n| :--- | :--- |\n| 2 | Power **MAX** |\n| 5 | Transfer pump **ON** |\n| 6 | Valve **NORMAL** |\n| 7–8 | **ECU B** + reset |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.2.3(b): Loss of Power (Page 3-9 & 3-10):**\n> \"Loss of Power: 1. Airspeed 73 KIAS 2. Power lever MAX 3. If in icing conditions Alternate Air ON 4. Fuel qty. MAIN tank check 5. Fuel transfer pump ON 6. Emergency fuel valve check NORMAL 7. ECU SWAP ECU B. ECU reset: 8. ENGINE MASTER OFF - ON.\"\n\n![Recorte Oficial del Manual — DA 40 D Loss of Power](./manual-crops/fleet-da40d/da40_emg_loss_of_power.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.2.3(b): Loss of Power (Page 3-9 & 3-10)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "DA40D-EMG-003",
+    "subject_id": "da40d_emergency",
+    "learning_objective": "AFM 3.2.4 - Rearranque con Hélice en Molinete: Velocidad y Altitud",
+    "stem": "¿Entre qué velocidades y por debajo de qué altitud es posible el rearranque con hélice en molinete en una DA 40 D con TAE 125-02-99?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Entre 60 y 90 KIAS y por debajo de 6500 ft de altitud de presión",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Entre 73 y 110 KIAS y por debajo de 8000 ft de altitud de presión",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Entre 73 y 110 KIAS y por debajo de 12000 ft de altitud de presión",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Entre 90 y 129 KIAS y por debajo de 8000 ft de altitud de presión",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "NOTE 3.2.4: rearranque en molinete posible **entre 73 y 110 KIAS** y por debajo de **8000 ft PA (TAE 125-02-99)**, 6500 ft (TAE 125-01) o 6000 ft (TAE 125-01 R5).\n\n| Motor | Altitud máx. rearranque |\n| :--- | :--- |\n| **TAE 125-02-99** | **8000 ft** |\n| TAE 125-01 | 6500 ft |\n| TAE 125-01 R5 | 6000 ft |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.2.4: Restarting the Engine with Windmilling Propeller (Page 3-11):**\n> \"Restarting the engine with windmilling propeller is possible at airspeeds between 73 and 110 KIAS and altitudes below 6500 ft (TAE 125-01 engine) or 6000 ft (TAE 125-01 R5 engine) or 8000 ft (TAE 125-02-99 engine) pressure altitude.\"\n\n![Recorte Oficial del Manual — DA 40 D Windmilling Restart](./manual-crops/fleet-da40d/da40_emg_windmill_restart.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.2.4: Restarting the Engine with Windmilling Propeller (Page 3-11)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "DA40D-EMG-004",
+    "subject_id": "da40d_emergency",
+    "learning_objective": "AFM 3.2.4 - Velocidad Mínima de Molinete y Máxima por Sobrevelocidad",
+    "stem": "Tras un fallo de motor en la DA 40 D, ¿hasta qué velocidad mínima sigue la hélice en molinete y cuál es la máxima para evitar sobrevelocidad?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sigue en molinete con al menos 73 KIAS; máximo 129 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Sigue en molinete con al menos 49 KIAS; máximo 108 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Sigue en molinete con al menos 60 KIAS; máximo 110 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Sigue en molinete con al menos 60 KIAS; máximo 140 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "NOTE/CAUTION 3.2.4: mientras se mantengan **al menos 60 KIAS** y no haya daño mecánico grave, la hélice sigue en molinete. La **velocidad máxima de molinete es 110 KIAS**; por encima, riesgo de **sobrevelocidad de hélice**.\n\n| Límite | Valor |\n| :--- | :--- |\n| Mín. molinete | **60 KIAS** |\n| **Máx. molinete** | **110 KIAS** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.2.4 (Page 3-11):**\n> \"As long as an airspeed of at least 60 KIAS is maintained, and there is no major mechanical engine defect, the propeller will continue to windmill. CAUTION: The maximum airspeed for windmilling is 110 KIAS. Higher airspeeds may result in propeller overspeed.\"\n\n![Recorte Oficial del Manual — DA 40 D Windmilling Restart](./manual-crops/fleet-da40d/da40_emg_windmill_restart.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.2.4 (Page 3-11)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "DA40D-EMG-005",
+    "subject_id": "da40d_emergency",
+    "learning_objective": "AFM 3.2.5 - Rearranque con Hélice Parada y Volante Bimasa (MÄM 40-701)",
+    "stem": "En una DA 40 D con TAE 125-02-99 y volante bimasa (MÄM 40-701), la hélice se detiene tras el fallo. ¿Qué indica el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indica falta de combustible y debe rearrancarse con el motor de arranque",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Indica fallo de ECU A y debe rearrancarse seleccionando la ECU B",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Indica un defecto mecánico grave y no debe intentarse el rearranque",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Indica hielo en la admisión y debe rearrancarse con Alternate Air",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "CAUTION 3.2.5: con volante bimasa (MÄM 40-701) la hélice de un motor fallado **sigue en molinete**; una hélice **parada indica un defecto mecánico grave** y **no debe considerarse el rearranque**. Sin MÄM 40-701, acelerar por encima de ~110 KIAS puede iniciar el molinete (pérdida ≥ 1000 ft).\n\n| Situación | Acción |\n| :--- | :--- |\n| Hélice parada con MÄM 40-701 | **No rearrancar** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.2.5: Restarting the Engine with Stationary Propeller (Page 3-13):**\n> \"The propeller of a failed TAE 125-02-99 engine with dual-mass flywheel (MÄM 40-701) installed continues windmilling. A stopped propeller indicates a major mechanical engine defect. A restart with a stationary propeller shall not be considered.\"\n\n![Recorte Oficial del Manual — DA 40 D Stationary Prop Restart](./manual-crops/fleet-da40d/da40_emg_stationary_restart.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.2.5: Restarting the Engine with Stationary Propeller (Page 3-13)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    }
+  },
+  {
+    "id": "DA40D-EMG-006",
+    "subject_id": "da40d_emergency",
+    "learning_objective": "AFM 3.4 & 5.3.14 - Relación de Planeo",
+    "stem": "¿Cuál es la relación de planeo de la DA 40 D con hélice en molinete y qué distancia recorre por cada 1000 ft perdidos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "8,8 con hélice en molinete, unas 1,45 NM por cada 1000 ft",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "10,3 con hélice en molinete, unas 1,70 NM por cada 1000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "8,8 con hélice en molinete, unas 2,68 NM por cada 1000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "12,0 con hélice en molinete, unas 1,98 NM por cada 1000 ft",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "3.4 / 5.3.14: con hélice **en molinete, 8,8 (1,45 NM / 2,68 km por 1000 ft)**; con hélice **parada, 10,3 (1,70 NM / 3,14 km)**, aunque esa configuración puede no ser alcanzable con velocidad segura. Planear con Flaps UP a 73/68/60 KIAS.\n\n| Hélice | Planeo | NM/1000 ft |\n| :--- | :--- | :--- |\n| **Molinete** | **8,8** | **1,45** |\n| Parada | 10,3 | 1,70 |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.4: Gliding (Page 3-25):**\n> \"The glide ratio is 8.8; i.e., for every 1000 ft (305 meters) of altitude loss the maximum horizontal distance traveled in still air is 1.45 NM (2.68 km). With a stationary propeller the glide ratio is 10.3.\"\n\n![Recorte Oficial del Manual — DA 40 D Gliding](./manual-crops/fleet-da40d/da40_emg_gliding_ratio.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.4: Gliding (Page 3-25)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "DA40D-EMG-007",
+    "subject_id": "da40d_emergency",
+    "learning_objective": "AFM 3.2.6(b) - Sobrevelocidad de Hélice (Gobernador en Paso Fino)",
+    "stem": "Ante una sobrevelocidad constante de hélice en la DA 40 D por fallo del gobernador, ¿qué indica el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumentar potencia hasta 2500 RPM, Flaps T/O, 66 KIAS y seleccionar ECU A",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Reducir potencia a IDLE, Flaps LDG, 60 KIAS y apagar el ENGINE MASTER",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Reducir potencia sin superar 2500 RPM, Flaps T/O, 90 KIAS y ECU AUTOMATIC",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Reducir potencia sin superar 2300 RPM, Flaps UP, 73 KIAS y seleccionar ECU B",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "3.2.6(b): el gobernador mantiene las palas en **paso fino**; la hélice actúa como de paso fijo. **Potencia reducida sin superar 2300 RPM, Flaps UP, 73 KIAS, ECU SWAP → ECU B**. Ascenso y Go-Around siguen siendo posibles; si se necesita, 2500 RPM máx. 10 min.\n\n| Paso | Acción |\n| :--- | :--- |\n| 1 | Potencia ≤ **2300 RPM** |\n| 2 | Flaps **UP** |\n| 3 | **73 KIAS** |\n| 5 | **ECU B** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.2.6(b): Propeller Overspeed (Page 3-16):**\n> \"Propeller Overspeed: 1. Power lever reduce to not exceed 2300 RPM 2. Flaps check UP 3. Airspeed 73 KIAS 4. Power lever as required, do not exceed 2300 RPM 5. ECU SWAP ECU B.\"\n\n![Recorte Oficial del Manual — DA 40 D Propeller Overspeed](./manual-crops/fleet-da40d/da40_emg_prop_overspeed.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.2.6(b): Propeller Overspeed (Page 3-16)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "DA40D-EMG-008",
+    "subject_id": "da40d_emergency",
+    "learning_objective": "AFM 3.2.6(c) - Subvelocidad de Hélice (Gobernador en Paso Grueso)",
+    "stem": "Ante una subvelocidad de hélice en la DA 40 D (palas retenidas en paso grueso), ¿qué consecuencias describe el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "RPM ≥ 2500, con ascenso limitado y Go-Around posible; continuar a destino",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "RPM ≤ 1400, sin capacidad de ascenso ni de Go-Around; aterrizar cuanto antes",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "RPM ≤ 1400, con ascenso normal y Go-Around posible; continuar a destino",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "RPM ≤ 900, con pérdida total de potencia; apagar el motor y planear",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "3.2.6(c): el gobernador retiene las palas en el **tope de paso grueso**. WARNING: RPM caen a **1400 o menos**, **sin performance de ascenso ni potencia de Go-Around**; el vuelo nivelado debería ser posible. Seleccionar ECU B y **aterrizar lo antes posible**.\n\n| Fallo | Paso | Consecuencia |\n| :--- | :--- | :--- |\n| Overspeed | Fino | Ascenso posible |\n| **Underspeed** | **Grueso** | **Sin ascenso / sin G/A** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.2.6(c): Propeller Underspeed (Page 3-18):**\n> \"WARNING: Due to this problem the propeller RPM will drop to 1400 RPM or below. There will be no climb performance and no go-around power available. Level flight should be possible except in rough weather. 3. Land as soon as possible.\"\n\n![Recorte Oficial del Manual — DA 40 D Propeller Underspeed](./manual-crops/fleet-da40d/da40_emg_prop_underspeed.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.2.6(c): Propeller Underspeed (Page 3-18)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "DA40D-EMG-009",
+    "subject_id": "da40d_emergency",
+    "learning_objective": "AFM 3.2.7 - Fallo de la Bomba de Trasvase y EMERG. TRANSFER",
+    "stem": "Tras un fallo de la bomba de trasvase, se selecciona la válvula de emergencia en EMERG. TRANSFER. ¿Qué precaución crítica indica el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Volver a NORMAL antes de que el MAIN marque cero, o el motor se parará",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Mantener EMERG. TRANSFER hasta el aterrizaje para asegurar el suministro",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Volver a NORMAL antes de que el AUX marque cero, o el motor se parará",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Volver a OFF antes de que el AUX marque cero, o el motor se sobrecalentará",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "3.2.7: en EMERG. TRANSFER la bomba mecánica toma del AUX y devuelve al MAIN a **18–21 US gal/h (70–80 L/h)**. WARNING: **volver a NORMAL antes de que el AUX indique cero**, o el motor se parará al vaciarse el AUX. AUX no menos de **1 US gal** y MAIN no más de **15 US gal**.\n\n| Dato | Valor |\n| :--- | :--- |\n| Caudal | **18–21 US gal/h** |\n| AUX mínimo | 1 US gal |\n| MAIN máximo | 15 US gal |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.2.7: Fuel Transfer Pump Failure (Page 3-19):**\n> \"WARNING: The emergency fuel valve must be switched back to NORMAL before the auxiliary tank indication reads zero! Otherwise, the engine will stop during flight when the auxiliary tank is empty.\"\n\n![Recorte Oficial del Manual — DA 40 D Fuel Transfer Pump Failure](./manual-crops/fleet-da40d/da40_emg_fuel_transfer_fail.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.2.7: Fuel Transfer Pump Failure (Page 3-19)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "DA40D-EMG-010",
+    "subject_id": "da40d_emergency",
+    "learning_objective": "AFM 3.3.1(a) - Fuego de Motor durante el Arranque en Tierra",
+    "stem": "¿Cuál es la secuencia del AFM de la DA 40 D ante un fuego de motor durante el arranque en tierra?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Válvula de emergencia OFF, bomba OFF, ENGINE MASTER OFF, ELECTRIC MASTER OFF",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "ELECTRIC MASTER OFF, potencia MAX, válvula de emergencia NORMAL y evacuar",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Potencia MAX, ENGINE MASTER ON, bomba de trasvase ON y continuar arrancando",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "ENGINE MASTER OFF, válvula EMERG. TRANSFER, bomba ON y abrir la cúpula",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "3.3.1(a): **1. Emergency fuel valve OFF, 2. Fuel transfer pump OFF, 3. ENGINE MASTER OFF, 4. ELECTRIC MASTER OFF**; tras detenerse: abrir la cúpula y **evacuar inmediatamente**.\n\n| Paso | Acción |\n| :--- | :--- |\n| 1 | Emergency fuel valve **OFF** |\n| 2 | Transfer pump **OFF** |\n| 3 | ENGINE MASTER **OFF** |\n| 4 | ELECTRIC MASTER **OFF** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.3.1: Smoke and Fire on Ground (Page 3-20):**\n> \"Engine Fire When Starting on the Ground: 1. Emergency fuel valve OFF 2. Fuel transfer pump OFF 3. ENGINE MASTER OFF 4. ELECTRIC MASTER OFF. After standstill: 5. Canopy open 6. Airplane evacuate immediately.\"\n\n![Recorte Oficial del Manual — DA 40 D Fire Procedures](./manual-crops/fleet-da40d/da40_emg_engine_fire_flight.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.3.1: Smoke and Fire on Ground (Page 3-20)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "DA40D-EMG-011",
+    "subject_id": "da40d_emergency",
+    "learning_objective": "AFM 3.3.3(a) - Fuego de Motor en Vuelo",
+    "stem": "En un fuego de motor en vuelo en la DA 40 D, una vez seguro de alcanzar el campo elegido, ¿qué hace el AFM con la válvula de combustible y la palanca de potencia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Válvula de emergencia OFF y palanca de potencia a MAX",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Válvula de emergencia OFF y palanca de potencia a IDLE",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Válvula EMERG. TRANSFER y palanca de potencia a MAX",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Válvula de emergencia NORMAL y palanca de potencia a IDLE",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "3.3.3(a): Cabin heat OFF, seleccionar campo; cuando sea seguro alcanzarlo: **Emergency fuel valve OFF** y **Power lever MAX** (para consumir el combustible remanente en las líneas), ventanillas según necesidad y aterrizaje sin motor.\n\n| Paso | Acción |\n| :--- | :--- |\n| 1 | Cabin heat OFF |\n| 3 | **Emergency fuel valve OFF** |\n| 4 | **Power lever MAX** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.3.3(a): Engine Fire in Flight (Page 3-23):**\n> \"Engine Fire in Flight: 1. Cabin heat OFF 2. Select appropriate emergency landing area. When it seems certain that the landing area will be reached: 3. Emergency fuel valve OFF 4. Power lever MAX 5. Emergency windows open if required 6. Carry out emergency landing with engine off.\"\n\n![Recorte Oficial del Manual — DA 40 D Engine Fire in Flight](./manual-crops/fleet-da40d/da40_emg_engine_fire_flight.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.3.3(a): Engine Fire in Flight (Page 3-23)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "DA40D-EMG-012",
+    "subject_id": "da40d_emergency",
+    "learning_objective": "AFM 3.3.3(b) - Fuego Eléctrico con Humo en Vuelo",
+    "stem": "En un fuego eléctrico con humo en vuelo en la DA 40 D, ¿qué sistemas siguen alimentados al poner EMERGENCY ON y ELECTRIC MASTER OFF?",
+    "options": [
+      {
+        "id": "A",
+        "text": "La radio COM1 y el transpondedor, alimentados por la batería de emergencia",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "El horizonte artificial y el ECU A, alimentados por la batería principal",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El horizonte artificial y la luz flood, alimentados por la batería de emergencia",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Todos los instrumentos de motor, alimentados por la batería de excitación",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "3.3.3(b): EMERGENCY switch ON, AVIONIC MASTER OFF, ELECTRIC MASTER OFF, cabin heat OFF, aterrizar de inmediato. WARNING: se pierde todo el equipo eléctrico, pero con EMERGENCY ON la **batería de emergencia alimenta el horizonte artificial y la luz flood**.\n\n| Sistema | Alimentación |\n| :--- | :--- |\n| **Horizonte + flood** | **Batería de emergencia** |\n| Resto eléctrico | Perdido |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.3.3(b): Electrical Fire with Smoke in Flight (Page 3-24):**\n> \"However, by switching the EMERGENCY switch ON, the emergency battery will supply power to the attitude gyro (artificial horizon) and the flood light.\"\n\n![Recorte Oficial del Manual — DA 40 D Electrical Fire](./manual-crops/fleet-da40d/da40_emg_electrical_fire_flight.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.3.3(b): Electrical Fire with Smoke in Flight (Page 3-24)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "DA40D-EMG-013",
+    "subject_id": "da40d_emergency",
+    "learning_objective": "AFM 3.5.1 - Aterrizaje de Emergencia con Motor Parado",
+    "stem": "En el aterrizaje de emergencia con motor parado de la DA 40 D, ¿cuándo se seleccionan los Flaps LDG según el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inmediatamente al detectar el fallo, para reducir la velocidad de planeo",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Solo cuando sea seguro que se alcanzará el campo de aterrizaje elegido",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Al alcanzar 1000 ft AGL, independientemente de la posición respecto al campo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Nunca; el aterrizaje sin motor se realiza siempre con Flaps T/O únicamente",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "3.5.1: velocidad 73/68/60 KIAS, avisar ATC, **emergency fuel valve OFF**, **ENGINE MASTER check OFF**; **cuando sea seguro alcanzar el campo: Flaps LDG** y apretar arneses; ELECTRIC MASTER OFF si hay tiempo; tomar con la mínima velocidad posible.\n\n| Paso | Acción |\n| :--- | :--- |\n| 4 | 73 KIAS (1150 kg) |\n| 6–7 | Valve OFF / ENG MASTER OFF |\n| 8 | **Flaps LDG al asegurar el campo** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.5.1: Emergency Landing with Engine Off (Page 3-26):**\n> \"When it is certain that the landing field will be reached: 8. Flaps LDG 9. Safety harnesses tighten.\"\n\n![Recorte Oficial del Manual — DA 40 D Emergency Landing](./manual-crops/fleet-da40d/da40_emg_gliding_ratio.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.5.1: Emergency Landing with Engine Off (Page 3-26)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "DA40D-EMG-014",
+    "subject_id": "da40d_emergency",
+    "learning_objective": "AFM 3.5.2 - Aterrizaje con Neumático del Tren Principal Defectuoso",
+    "stem": "Con un neumático del tren principal reventado, ¿cómo debe aterrizarse la DA 40 D según el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En el lado de la pista del neumático dañado y con el plano de ese lado bajo",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "En el eje de la pista con los planos nivelados y frenando solo con la rueda sana",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En el lado de la pista del neumático sano y con el plano de ese lado bajo",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "En el lado de la pista del neumático sano y con el plano del lado dañado bajo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "3.5.2: avisar ATC; aterrizar **en el borde de pista del lado del neumático intacto** para corregir los desvíos sobre la pista; **ala del lado del neumático intacto baja**; mantener dirección con pedal y freno (incluso bloqueando la rueda).\n\n| Elemento | Lado |\n| :--- | :--- |\n| Borde de pista | **Neumático sano** |\n| Ala baja | **Neumático sano** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.5.2: Landing with a Defective Tire (Page 3-27):**\n> \"2. Land the airplane at the edge of the runway that is located on the side of the intact tire... 3. Land with one wing low. The wing on the side of the intact tire should be held low.\"\n\n![Recorte Oficial del Manual — DA 40 D Defective Tire Landing](./manual-crops/fleet-da40d/da40_emg_gliding_ratio.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.5.2: Landing with a Defective Tire (Page 3-27)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "DA40D-EMG-015",
+    "subject_id": "da40d_emergency",
+    "learning_objective": "AFM 3.6 - Recuperación de Barrena Involuntaria",
+    "stem": "¿Cuáles son los cuatro primeros pasos, simultáneos e inmediatos, de la recuperación de una barrena involuntaria en la DA 40 D?",
+    "options": [
+      {
+        "id": "A",
+        "text": "IDLE, pedal a fondo contrario al giro, palanca adelante y alerones neutros",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "MAX, pedal a fondo a favor del giro, palanca atrás y alerones contrarios",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "IDLE, pedal neutro, palanca totalmente atrás y alerones contra el giro",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "IDLE, pedal a fondo contrario al giro, palanca atrás y Flaps LDG",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "3.6 (pasos 1–4 inmediatos y simultáneos): **Power IDLE, rudder full against spin, stick fully forward, ailerons neutral**; luego Flaps UP; parada la rotación: pedal neutro, tirar con cuidado sin superar $V_{NE}$ 178 KIAS.\n\n| Paso | Acción |\n| :--- | :--- |\n| 1 | **IDLE** |\n| 2 | **Pedal contrario a fondo** |\n| 3 | **Palanca adelante** |\n| 4 | **Alerones neutros** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.6: Recovery from an Unintentional Spin (Page 3-29):**\n> \"Steps 1 to 4 must be carried out immediately and simultaneously. 1. Power lever IDLE 2. Rudder full deflection against direction of spin 3. Elevator (control stick) fully forward 4. Ailerons neutral 5. Flaps UP.\"\n\n![Recorte Oficial del Manual — DA 40 D Spin Recovery](./manual-crops/fleet-da40d/da40_emg_spin_recovery.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.6: Recovery from an Unintentional Spin (Page 3-29)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "DA40D-EMG-016",
+    "subject_id": "da40d_emergency",
+    "learning_objective": "AFM 3.7.3 - Sospecha de Monóxido de Carbono en Cabina",
+    "stem": "Ante sospecha de monóxido de carbono en la cabina de la DA 40 D, ¿qué acciones indica el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Calefacción ON, ventilación cerrada y cúpula en «Cooling Gap» bajo 140 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Calefacción OFF, ventilación abierta y cúpula en «Cooling Gap» bajo 120 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Calefacción OFF, ventilación abierta y cúpula totalmente abierta bajo 91 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Calefacción OFF, ventilación cerrada y puerta trasera abierta bajo 120 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "3.7.3: **cabin heat OFF**, ventilación y ventanillas abiertas, **velocidad < 120 KIAS** y cúpula delantera desbloqueada en posición **«Cooling Gap»**. 120 KIAS es la velocidad máxima demostrada para abrir la cúpula en vuelo.\n\n| Paso | Acción |\n| :--- | :--- |\n| 1 | **Cabin heat OFF** |\n| 4 | **< 120 KIAS** |\n| 5 | Cúpula **Cooling Gap** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.7.3: Carbon Monoxide Contamination (Page 3-33):**\n> \"1. Cabin heat OFF 2. Ventilation open 3. Emergency windows open 4. Airspeed reduce below 120 KIAS 5. Forward canopy unlatch, push up and lock in 'Cooling Gap' position.\"\n\n![Recorte Oficial del Manual — DA 40 D CO Contamination](./manual-crops/fleet-da40d/da40_emg_co_contamination.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.7.3: Carbon Monoxide Contamination (Page 3-33)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "DA40D-EMG-017",
+    "subject_id": "da40d_emergency",
+    "learning_objective": "AFM 3.7.4 - Luz de Aviso DOOR Encendida en Vuelo",
+    "stem": "En vuelo se enciende el aviso DOOR y se confirma la puerta trasera desbloqueada. ¿Qué establece el AFM de la DA 40 D?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reducir por debajo de 120 KIAS y cerrar la puerta tirando de la maneta",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Reducir por debajo de 140 KIAS y no intentar cerrar la puerta en vuelo",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Reducir por debajo de 91 KIAS y abrir la cúpula para igualar presiones",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mantener la velocidad y bloquear la puerta con la llave desde dentro",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "3.7.4: reducir velocidad, comprobar visualmente cúpula y puerta; con cualquiera desbloqueada **< 140 KIAS** y aterrizar en el siguiente aeródromo adecuado. WARNING: **no intentar bloquear la puerta trasera en vuelo** (puede soltarse y separarse del avión).\n\n| Caso | Acción |\n| :--- | :--- |\n| Puerta/cúpula abierta | **< 140 KIAS** |\n| Puerta trasera | **No cerrar en vuelo** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.7.4: Door Warning Light On (Page 3-34):**\n> \"Rear Door Unlocked: 4. Airspeed below 140 KIAS 5. Land at the next suitable airfield. WARNING: Do not try to lock the rear door in flight. The safety latch may disengage and the door opens. Usually this results in a separation of the door from the airplane.\"\n\n![Recorte Oficial del Manual — DA 40 D Door Warning](./manual-crops/fleet-da40d/da40_emg_door_warning.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.7.4: Door Warning Light On (Page 3-34)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "DA40D-EMG-018",
+    "subject_id": "da40d_emergency",
+    "learning_objective": "AFM 3.7.2(a) - Fallo Eléctrico Total",
+    "stem": "Ante un fallo total del sistema eléctrico de la DA 40 D, ¿cuáles son los primeros pasos del AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Comprobar breakers, ENGINE MASTER OFF y, si no hay energía, ECU B",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "ELECTRIC MASTER OFF-ON, AVIONIC MASTER ON y aterrizar en 30 minutos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Comprobar breakers, ESSENTIAL BUS ON y, si no hay energía, EMERGENCY ON",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "ESSENTIAL BUS OFF, EMERGENCY OFF y continuar a destino planificado",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "3.7.2(a): **1. Circuit breakers check, 2. ESSENTIAL BUS ON**; si sigue sin energía: **3. EMERGENCY switch ON**, flood light ON, potencia según posición de la palanca y ruido del motor, aterrizar con los flaps en la posición actual en el aeródromo apropiado más cercano.\n\n| Paso | Acción |\n| :--- | :--- |\n| 1 | Breakers |\n| 2 | **ESSENTIAL BUS ON** |\n| 3 | **EMERGENCY ON** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.7.2(a): Complete Electrical Failure (Page 3-31):**\n> \"Complete Failure of the Electrical System: 1. Circuit breakers check if all OK 2. ESSENTIAL BUS ON. If there is still no electrical power available: 3. EMERGENCY switch ON, if installed 4. Flood light ON 5. Power set based on lever positions and engine noise.\"\n\n![Recorte Oficial del Manual — DA 40 D Electrical Failure](./manual-crops/fleet-da40d/da40_emg_elec_starter_fail.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.7.2(a): Complete Electrical Failure (Page 3-31)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "DA40D-EMG-019",
+    "subject_id": "da40d_emergency",
+    "learning_objective": "AFM 3.7.2(b) - Fallo del Motor de Arranque (Luz START)",
+    "stem": "Tras el arranque, la luz START permanece encendida (el piñón no se desacopla). ¿Qué indica el AFM de la DA 40 D?",
+    "options": [
+      {
+        "id": "A",
+        "text": "IDLE, ECU SWAP a ECU B y continuar con la prueba de motor previa",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "IDLE, ENGINE MASTER OFF, ELECTRIC MASTER OFF y terminar la preparación",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "1400 RPM durante 2 minutos para que el piñón se desacople por inercia",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "ELECTRIC MASTER OFF, mantener el motor en marcha y rodar al taller",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "3.7.2(b): si el arranque no se desacopla (luz START encendida o parpadeando): **Power lever IDLE, ENGINE MASTER OFF, ELECTRIC MASTER OFF** y **terminar la preparación del vuelo**.\n\n| Paso | Acción |\n| :--- | :--- |\n| 1 | **IDLE** |\n| 2 | **ENGINE MASTER OFF** |\n| 3 | **ELECTRIC MASTER OFF** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.7.2(b): Starter Malfunction (Page 3-31):**\n> \"Starter Malfunction: 1. Power lever IDLE 2. ENGINE MASTER OFF 3. ELECTRIC MASTER OFF. Terminate flight preparation!\"\n\n![Recorte Oficial del Manual — DA 40 D Starter Malfunction](./manual-crops/fleet-da40d/da40_emg_elec_starter_fail.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.7.2(b): Starter Malfunction (Page 3-31)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "DA40D-EMG-020",
+    "subject_id": "da40d_emergency",
+    "learning_objective": "AFM 3.3.2(b) - Humo y Fuego en Despegue sin Posibilidad de Abortar",
+    "stem": "Humo y fuego durante el despegue de la DA 40 D cuando ya no puede abortarse. ¿Qué indica el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Calefacción ON y viraje de 180° inmediato hacia la pista de despegue",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "ENGINE MASTER OFF inmediato y aterrizaje en la pista restante",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Calefacción OFF y circuito corto si es posible; sin altura segura, al frente",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Potencia IDLE y ascenso a 3000 ft antes de cortar el combustible",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "3.3.2(b): **Cabin heat OFF**, si es posible **circuito corto** y aterrizar en el aeródromo; WARNING: sin altura segura, **aterrizaje al frente, nunca volver**. Velocidad 73/68/60 KIAS; alcanzada una altura que asegure el campo: válvula OFF, bomba OFF, ENGINE/ELECTRIC MASTER OFF.\n\n| Paso | Acción |\n| :--- | :--- |\n| 1 | **Cabin heat OFF** |\n| 2 | Circuito corto si es posible |\n| 3 | 73 KIAS (1150 kg) |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.3.2(b): Smoke and Fire During Take-Off (Page 3-21):**\n> \"If Take-Off Cannot Be Aborted: 1. Cabin heat OFF 2. If possible, fly along a short-cut traffic circuit and land on the airfield. WARNING: ...a straight-ahead emergency landing should be carried out. Do not attempt to turn back to the airfield.\"\n\n![Recorte Oficial del Manual — DA 40 D Fire During Take-Off](./manual-crops/fleet-da40d/da40_emg_engine_fire_flight.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 3.3.2(b): Smoke and Fire During Take-Off (Page 3-21)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "DA40D-EMG-021",
+    "subject_id": "da40d_emergency",
+    "learning_objective": "AFM 4B.3.2 - Precaución ECU A en Vuelo",
+    "stem": "En vuelo aparece la precaución ECU A en la DA 40 D. ¿Qué indica el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pulsar ECU TEST más de 10 s; si se resetea, continuar sin mantenimiento",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Seleccionar ECU SWAP en ECU A y apagar el ENGINE MASTER durante 2 s",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Pulsar ECU TEST más de 2 s; si se resetea, despegar de nuevo sin revisión",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pulsar ECU TEST más de 2 s; si se resetea, continuar y revisar el motor",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "4B.3.2: el sistema conmuta automáticamente a ECU B. **Pulsar ECU TEST > 2 s** para resetear. Si reaparece o no se resetea: aterrizar en el aeródromo adecuado más cercano. Si se resetea: continuar el vuelo. En ambos casos **el motor debe revisarse tras el aterrizaje**. En tierra: terminar la preparación.\n\n| Caso | Acción |\n| :--- | :--- |\n| En tierra | Terminar preparación |\n| Reset OK | Continuar + mantenimiento |\n| Sin reset | Aterrizar cuanto antes |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4B.3.2: ECU A Failure (Page 4B-11):**\n> \"'ECU A' Caution During Flight: In case of a failure in ECU 'A' the system automatically switches to ECU 'B'. 1. Press the ECU TEST button for more than 2 seconds to reset the caution message. If the ECU A caution can be reset: 2. Continue flight. 3. The engine must be serviced after landing.\"\n\n![Recorte Oficial del Manual — DA 40 D ECU A Failure](./manual-crops/fleet-da40d/da40_abn_ecu_a_fail.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4B.3.2: ECU A Failure (Page 4B-11)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "DA40D-EMG-022",
+    "subject_id": "da40d_emergency",
+    "learning_objective": "AFM 4B.3.4 - Fallo del Alternador",
+    "stem": "Se enciende la precaución ALTERNATOR en la DA 40 D. ¿Cuánto tiempo mínimo alimentan las baterías y qué indica el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mínimo 60 min; ESSENTIAL BUS OFF, consumos ON y continuar hasta destino",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Mínimo 10 min; EMERGENCY ON, ELECTRIC MASTER OFF y aterrizar de inmediato",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mínimo 30 min; ECU SWAP a ECU B, AVIONIC MASTER OFF y continuar a destino",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mínimo 30 min; ESSENTIAL BUS ON, consumos OFF y aterrizar en el más cercano",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "4B.3.4: las baterías son la última fuente durante **un mínimo de 30 minutos**. Breakers, **ESSENTIAL BUS ON**, apagar todo lo innecesario y **aterrizar en el aeródromo adecuado más cercano**. Prepararse para un fallo de motor (la ECU necesita energía; existe el ECU-Backup).\n\n| Paso | Acción |\n| :--- | :--- |\n| 2 | **ESSENTIAL BUS ON** |\n| 3 | Consumos OFF |\n| 4 | Aterrizar cuanto antes |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4B.3.4: Alternator Failure (Page 4B-13):**\n> \"The batteries are the last remaining source of electrical power for a minimum of 30 minutes. 1. Circuit breakers check 2. ESSENTIAL BUS ON 3. Electrical equipment switch OFF all equipment which is not needed 4. Land on the nearest suitable airfield.\"\n\n![Recorte Oficial del Manual — DA 40 D Alternator Failure](./manual-crops/fleet-da40d/da40_abn_alternator_fail.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4B.3.4: Alternator Failure (Page 4B-13)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "DA40D-EMG-023",
+    "subject_id": "da40d_emergency",
+    "learning_objective": "AFM 4B.3.1 - Precaución LOW VOLTS en Tierra",
+    "stem": "¿Cuándo se activa la precaución LOW VOLTS en la DA 40 D y qué se hace si aparece en tierra?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bajo 11,0 V; comprobar breakers, bajar RPM y, si persiste, despegar",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Bajo 12,6 V; ESSENTIAL BUS ON y despegar con consumos reducidos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Bajo 12,6 V; comprobar breakers, subir RPM y, si persiste, terminar",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Bajo 14,0 V; seleccionar ECU B y repetir la prueba de ECU TEST",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "4B.3.1: LOW VOLTS cuando la tensión normal (14 V) cae **por debajo de 12,6 V**. En tierra: **breakers check, aumentar RPM** y, si no se apaga, **terminar la preparación del vuelo**. Se apaga al superar 12,9 V.\n\n| Fase | Acción |\n| :--- | :--- |\n| **Tierra** | Breakers, **↑ RPM**, terminar si persiste |\n| Vuelo | Consumos OFF → 4B.3.4 |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4B.3.1: Low Voltage Caution (Page 4B-10):**\n> \"This caution is indicated when the normal on-board voltage (14 V) drops below 12.6 V. (a) 'Low Voltage' Caution on the Ground 1. Circuit breakers check 2. Power lever increase RPM 3. If the caution light does not go out terminate flight preparation.\"\n\n![Recorte Oficial del Manual — DA 40 D Low Volts](./manual-crops/fleet-da40d/da40_abn_low_volts.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4B.3.1: Low Voltage Caution (Page 4B-10)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "DA40D-EMG-024",
+    "subject_id": "da40d_emergency",
+    "learning_objective": "AFM 4B.2.2 - Temperatura Alta de Refrigerante durante el Ascenso",
+    "stem": "Con temperatura de refrigerante alta en ascenso y la luz WATER LEVEL apagada, ¿qué indica el AFM de la DA 40 D?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reducir potencia un 10 % y aumentar 10 KIAS; si en 60 s no está en verde, más",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Aumentar potencia un 10 % y reducir 10 KIAS; si en 60 s no está en verde, más",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Reducir potencia un 30 % y aumentar 20 KIAS; si en 5 min no está en verde, más",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mantener potencia y seleccionar ECU B; si en 60 s no está en verde, aterrizar",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "4B.2.2 (WATER LEVEL apagada, en ascenso): **potencia −10 %**, **velocidad +10 KIAS**; si la CT no vuelve al verde en **60 segundos**, reducir potencia todo lo posible y aumentar velocidad. Si WATER LEVEL encendida: reducir potencia y esperar pérdida de refrigerante.\n\n| Acción | Valor |\n| :--- | :--- |\n| Potencia | **−10 %** |\n| Velocidad | **+10 KIAS** |\n| Plazo | **60 s** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4B.2.2: Coolant Temperature (Page 4B-5):**\n> \"During climb: - Reduce power by 10 %. - Increase airspeed by 10 KIAS. - If the coolant temperature does not reach the green range within 60 seconds, reduce power as far as possible and increase airspeed.\"\n\n![Recorte Oficial del Manual — DA 40 D Coolant Temperature](./manual-crops/fleet-da40d/da40_abn_coolant_temp.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4B.2.2: Coolant Temperature (Page 4B-5)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  }
+]

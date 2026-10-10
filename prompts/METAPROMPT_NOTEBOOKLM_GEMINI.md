@@ -58,18 +58,12 @@ Tu objetivo es formular un lote de reactivos de examen de opción múltiple con 
   - Sistemas Aeronave (FCOM): `subject_id: "e195e2_systems"`, ID: `E195E2-SYS-xxx`
   - DDPM (Dispatch Deviations): `subject_id: "e195e2_ddpm"`, ID: `E195E2-DDPM-xxx`
   - MEL (Minimum Equipment List): `subject_id: "e195e2_mel"`, ID: `E195E2-MEL-xxx`
-- **Cessna 172N**:
-  - Limitaciones: `subject_id: "c172n_limitations"`, ID: `C172N-LIM-xxx`
-  - Operación Normal: `subject_id: "c172n_normal"`, ID: `C172N-NORM-xxx`
-  - Emergencias: `subject_id: "c172n_emergency"`, ID: `C172N-EMG-xxx`
-  - Memory Items: `subject_id: "c172n_memory"`, ID: `C172N-MEM-xxx`
-  - Sistemas Aeronave: `subject_id: "c172n_systems"`, ID: `C172N-SYS-xxx`
-- **Tecnam P2010 TDI**:
-  - Limitaciones: `subject_id: "p2010_limitations"`, ID: `P2010-LIM-xxx`
-  - Operación Normal: `subject_id: "p2010_normal"`, ID: `P2010-NORM-xxx`
-  - Emergencias: `subject_id: "p2010_emergency"`, ID: `P2010-EMG-xxx`
-  - Memory Items: `subject_id: "p2010_memory"`, ID: `P2010-MEM-xxx`
-  - Sistemas Aeronave: `subject_id: "p2010_systems"`, ID: `P2010-SYS-xxx`
+- **Cessna 172F (TAE 125 / EC-NNX)**:
+  - Limitaciones: `subject_id: "c172f_limitations"`, ID: `C172F-LIM-xxx`
+  - Operación Normal: `subject_id: "c172f_normal"`, ID: `C172F-NORM-xxx`
+  - Emergencias: `subject_id: "c172f_emergency"`, ID: `C172F-EMG-xxx`
+  - Memory Items: `subject_id: "c172f_memory"`, ID: `C172F-MEM-xxx`
+  - Sistemas Aeronave: `subject_id: "c172f_systems"`, ID: `C172F-SYS-xxx`
 
 #### C. NORMATIVA EASA & SERA
 - **Reglas del Aire (SERA)**: `subject_id: "reg_sera"`, ID: `SERA-xxx`

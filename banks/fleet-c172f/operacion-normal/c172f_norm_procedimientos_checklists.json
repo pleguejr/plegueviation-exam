@@ -1,0 +1,610 @@
+[
+  {
+    "id": "C172F-NORM-001",
+    "subject_id": "c172f_normal",
+    "learning_objective": "POH Supplement Sección 4 - Inspección Pre-vuelo de Líquidos del Motor TAE 125",
+    "stem": "Durante la inspección exterior pre-vuelo de la Reims/Cessna F172F (EC-NNX), ¿qué niveles mínimos deben verificarse en el aceite de la caja reductora (Gearbox Oil), el aceite del motor (Engine Oil) y el depósito de expansión del refrigerante?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Caja reductora: visor lleno al 100%; aceite motor: mínimo el 25% de la varilla (4,0 L); refrigerante: depósito lleno hasta el borde superior del tapón",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Caja reductora: mínimo un cuarto del visor; aceite motor: entre 3,5 y 5,0 L en la varilla; refrigerante: indicador verde encendido en cabina",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Caja reductora: mínimo la mitad del visor; aceite motor: entre el 50% y 100% de la varilla (5,0–6,0 L); refrigerante: nivel visible por la boca de llenado",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Caja reductora: tres cuartos del visor; aceite motor: exactamente en la marca de 6,5 L; refrigerante: válvula de purga abierta con goteo continuo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Sección 4 (*Preflight Inspection*, páginas 4-3 y 4-4) y la Sección 6 (*Servicing*, páginas 6-2 y 6-3) del Suplemento POH:\n1. **Aceite de la caja reductora (Gearbox Oil Level):** a través de la abertura izquierda del capó, el aceite debe cubrir **al menos la mitad del cristal de inspección (inspection glass)**.\n2. **Aceite del motor (Engine Oil Level):** la marca en la varilla (*dipstick*) debe situarse entre el **50% y el 100%** (equivalente a **5,0 – 6,0 litros**).\n3. **Líquido refrigerante (Coolant Level):** se comprueba abriendo el tapón del depósito de expansión; debe observarse el nivel en la boca de llenado (el volumen libre superior sirve para la expansión térmica; nunca abrir con el motor caliente).\n\n| Fluido del Motor TAE 125 | Criterio de Inspección Pre-vuelo |\n| :--- | :--- |\n| **Aceite Caja Reductora (Gearbox)** | Debe cubrir **mínimo la mitad (1/2) de la mirilla** |\n| **Aceite Motor (Engine Oil)** | Entre **50% y 100% de la varilla (5,0 – 6,0 L)** |\n| **Refrigerante (Coolant)** | Visible en la boca de llenado del vaso de expansión |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Preflight Inspection (Page 4-3 & 4-4):**\n> \"Gearbox oil level - CHECK (oil has to cover at least half of the inspection glass)... Engine Oil Level - CHECK (Mark should be between 50% and 100% of dipstick. This corresponds to an oil amount of 5.0-6.0 liters).\"\n\n![Recorte Oficial del Manual — Cessna 172F Normal Checklist V6](./manual-crops/fleet-c172f/checklist_normal_v6_p1.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Preflight Inspection (Page 4-3 & 4-4)",
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 6: Servicing (Page 6-2 & 6-3)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-NORM-002",
+    "subject_id": "c172f_normal",
+    "learning_objective": "POH Supplement Sección 4 - Secuencia de Precalentamiento (Glow) y Arranque del Motor",
+    "stem": "Al poner en marcha el motor TAE 125 en la Reims/Cessna F172F (en aeródromos hasta 5500 ft de elevación), ¿qué secuencia debe seguirse tras colocar el interruptor Engine Master en ON?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Esperar 15 segundos con Fuel Pump en ON, avanzar gases al 25% y accionar START hasta alcanzar un régimen de 1000 RPM",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Pulsar el botón FADEC Reset, activar inmediatamente el arranque durante 10 segundos y después conectar el Engine Master",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mantener pulsado el botón FADEC Test mientras se gira la llave a START y soltar cuando la presión de aceite supere 2,3 bar",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Esperar a que se apague la luz Glow (~6 s en frío) y accionar START antes de 10 s manteniendo hasta alcanzar 500–600 RPM",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 1 (página 1-14) y la Sección 4 (página 4-7) del Suplemento POH, así como el Normal Checklist V6:\n1. Con la palanca de gases en **IDLE**, al pasar el **Engine Master a ON** se ilumina la luz ámbar **\"Glow\"** (bujías de incandescencia) durante unos **6 segundos** si el motor está frío.\n2. Una vez apagada la luz **\"Glow\"**, el piloto debe accionar el motor de arranque (**START**) **dentro de los 10 segundos siguientes** (de lo contrario sería necesario reciclar el Engine Master OFF/ON para volver a precalentar).\n3. Se mantiene el arranque embragado hasta superar **500 RPM** (según POH Supplement) / **600 RPM** (según Checklist V6 y SOP de escuela).\n\n| Fase de Puesta en Marcha | Parámetro / Tiempo Clave |\n| :--- | :--- |\n| **Duración Luz Ámbar \"Glow\" (motor frío)** | **~6 segundos** |\n| **Ventana para accionar START tras apagarse Glow** | **Máximo 10 segundos** |\n| **Régimen para soltar la llave de START** | **500 RPM (POH) / 600 RPM (Checklist V6)** |\n| **Presión de aceite mínima tras arranque** | **$\\ge 1,0\\text{ bar}$ en $\\le 3\\text{ segundos}$** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1 (Page 1-14) & Section 4 (Page 4-7):**\n> \"When the engine is cold, this light illuminates for approx. 6 seconds after the Engine Master switch was turned on. The engine should be started within 10 seconds after the glow light extinguishes... Keep the starter motor engaged until the engine reaches a rotational speed of min. 500 RPM.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 4 Starting Engine](./manual-crops/fleet-c172f/supp_p100_norm_start.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Glow Control Light (Page 1-14)",
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Starting Engine (Page 4-7)",
+        "Blue Team Flight School - C172F Normal Checklist V6 - Engine Start"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-NORM-003",
+    "subject_id": "c172f_normal",
+    "learning_objective": "POH Supplement Sección 4 - Prueba de la Batería de Reserva del FADEC (FADEC Backup Battery Test)",
+    "stem": "Inmediatamente después del arranque del motor en la Reims/Cessna F172F (EC-NNX), ¿cómo se realiza la prueba de la batería de reserva del FADEC (FADEC Backup Battery Test) y qué resultado confirma que es apta para el vuelo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Con Alternator OFF y Battery OFF durante al menos 10 segundos, el motor debe seguir funcionando normalmente y las luces rojas del FADEC deben permanecer apagadas",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Con Engine Master OFF durante 5 segundos y Battery ON, el motor debe mantenerse a 890 RPM alimentado por el canal B-FADEC sin encenderse luces ámbar",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Pulsando el botón FADEC Reset con el interruptor Force B activado durante 10 segundos, verificando que el amperímetro marque una descarga inferior a 5 A",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Con Alternator ON y Battery OFF durante 30 segundos a 1400 RPM, comprobando que la luz roja del canal A-FADEC parpadee de forma intermitente",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 4 (página 4-8, punto 11) del Suplemento POH y el bloque *After Engine Start* del Normal Checklist V6, la prueba de la batería de reserva del FADEC se realiza siguiendo estrictamente este orden:\n1. **Alternator — OFF**\n2. **Battery — OFF (durante un mínimo de 10 segundos)**: durante este intervalo el motor queda alimentado exclusivamente por la batería de reserva del FADEC; **el motor debe operar con normalidad y las luces rojas de aviso del FADEC deben permanecer apagadas (OFF)**.\n3. **Battery — ON**\n4. **Alternator — ON**\nSi el motor se detiene o las luces rojas del FADEC se iluminan/parpadean durante la prueba, la aeronave no puede despegar.\n\n| Paso de la Prueba Backup Battery | Acción del Piloto | Verificación Requerida |\n| :--- | :--- | :--- |\n| **1. Alternator** | **OFF** | Luz de aviso de alternador encendida |\n| **2. Battery** | **OFF (mín. 10 s)** | **Motor estable al ralentí y luces rojas FADEC OFF** |\n| **3. Battery** | **ON** | Restablecimiento de barra principal |\n| **4. Alternator** | **ON** | Luz de alternador apagada y carga positiva |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4 (Page 4-8):**\n> \"(11) FADEC Backup Battery test:\n> a) Alternator - OFF\n> b) Battery - OFF for min. 10 seconds (Engine must operate normally, red FADEC warning lights are OFF)\n> c) Battery - ON\n> d) Alternator - ON.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 4 FADEC Backup Battery Test](./manual-crops/fleet-c172f/supp_p102_norm_fadec_test.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Starting Engine (Page 4-8)",
+        "Blue Team Flight School - C172F Normal Checklist V6 - After Engine Start"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-NORM-004",
+    "subject_id": "c172f_normal",
+    "learning_objective": "POH Supplement Sección 4 - Calentamiento del Motor (Warm Up) antes de la Prueba FADEC",
+    "stem": "¿Cuál es el procedimiento de calentamiento del motor TAE 125 y qué temperaturas mínimas de aceite (OT) y refrigerante (CT) deben alcanzarse antes de ejecutar la prueba pre-despegue del FADEC?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mantener 1000 RPM durante 1 minuto y luego 1200 RPM hasta alcanzar OT >= 40°C y CT >= 50°C",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Mantener 890 RPM durante 2 minutos y luego 1400 RPM hasta alcanzar OT >= 50°C y CT >= 60°C",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Mantener 1200 RPM durante 3 minutos y luego 1600 RPM hasta alcanzar OT >= 60°C y CT >= 75°C",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mantener 750 RPM durante 5 minutos sin superar 1000 RPM hasta alcanzar OT >= 55°C y CT >= 65°C",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 4 (*Before Take-Off — Warm Up*, páginas 4-8 y 4-13) del Suplemento POH y el Normal Checklist V6:\n1. Calentar inicialmente el motor durante **2 minutos a 890 RPM** (ralentí).\n2. Incrementar el régimen a **1400 RPM** hasta que la temperatura de aceite (**OT**) sea **$\\ge 50^\\circ\\text{C}$** y la temperatura de refrigerante (**CT**) sea **$\\ge 60^\\circ\\text{C}$** (ambas en rango verde).\n\n| Etapa de Calentamiento (Warm Up) | Régimen de Hélice | Condición / Duración |\n| :--- | :--- | :--- |\n| **Fase 1 (Ralentí inicial)** | **890 RPM** | Durante **2 minutos** |\n| **Fase 2 (Calentamiento acelerado)** | **1400 RPM** | Hasta **$\\text{OT} \\ge 50^\\circ\\text{C}$** y **$\\text{CT} \\ge 60^\\circ\\text{C}$** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Before Take-Off (Page 4-8):**\n> \"(7) Warm up - 2 minutes at 890 RPM, then increase to 1400 RPM until Oil Temp. >= 50°C and Coolant Temp. >= 60°C.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 4 Before Take-Off](./manual-crops/fleet-c172f/supp_p102_norm_fadec_test.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Before Take-Off (Page 4-8 & 4-13)",
+        "Blue Team Flight School - C172F Normal Checklist V6 - Engine Test"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172F-NORM-005",
+    "subject_id": "c172f_normal",
+    "learning_objective": "POH Supplement Sección 4 - Secuencia Automática de la Prueba FADEC y Paso de Hélice",
+    "stem": "Durante la prueba funcional del FADEC y paso de hélice antes del despegue en la Reims/Cessna F172F, ¿qué condiciones previas deben cumplirse y qué ocurre al mantener pulsado el botón «FADEC Test»?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Con gases al 50%, se pulsa brevemente el botón FADEC Test y el sistema apaga el canal A durante 10 segundos sin variar las RPM",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Con la palanca de gases al 100%, se pulsa el botón FADEC Test para comprobar que las RPM descienden de 2300 a 1900 RPM en tierra",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Con gases en IDLE, se mantiene pulsado el botón FADEC Test mientras el sistema prueba automáticamente los canales A/B y el paso",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Con la bomba eléctrica de combustible apagada, se activa el interruptor Force B y se verifica un incremento de 300 RPM al ralentí",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Sección 4 (páginas 4-8, 4-9 y 4-15) del Suplemento POH:\n1. La palanca de gases (**Thrust Lever**) debe estar obligatoriamente en **IDLE (ralentí)** (si no está en IDLE, el autodiagnóstico no se inicia).\n2. El botón **\"FADEC Test\" debe mantenerse pulsado durante toda la prueba** (si se suelta antes de finalizar, la prueba se aborta inmediatamente y el motor vuelve a ralentí).\n3. Secuencia automática (~30 segundos):\n   - Se iluminan ambas luces FADEC A y B y **aumentan las RPM**.\n   - El sistema conmuta al **B-FADEC** (solo luz B encendida) y **disminuyen las RPM** (ciclado del gobernador de hélice).\n   - El sistema conmuta al **A-FADEC** (solo luz A encendida), **aumentan las RPM y vuelven a disminuir**.\n   - Ambas luces se apagan y el motor regresa a **IDLE**.\n\n| Fase del Autotest FADEC | Indicación Luminosa | Comportamiento de las RPM |\n| :--- | :--- | :--- |\n| **Inicio (Botón pulsado en IDLE)** | **Luces A y B ON** | Las RPM aumentan automáticamente |\n| **Prueba Canal B y Gobernador** | **Solo Luz B ON** | Las RPM disminuyen (prueba de paso) |\n| **Prueba Canal A y Gobernador** | **Solo Luz A ON** | Las RPM aumentan y luego disminuyen |\n| **Fin de la Prueba** | **Luces A y B OFF** | El motor se estabiliza en ralentí (IDLE) |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4 (Page 4-8 & 4-9):**\n> \"a) Thrust lever - IDLE... b) FADEC Test Button - PRESS and HOLD for the entire test:\n> - Both FADEC warning lights turn ON -> RPM increases\n> - System switches to B-FADEC (only warning light B is ON) -> RPM decreases\n> - System switches to A-FADEC (only warning light A is ON) -> RPM increases -> RPM decreases\n> - Both FADEC warning lights turn OFF -> Idle RPM is reached.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 4 FADEC Test](./manual-crops/fleet-c172f/supp_p102_norm_fadec_test.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Before Take-Off (Page 4-8, 4-9 & 4-15)",
+        "Blue Team Flight School - C172F Normal Checklist V6 - Engine Test"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "C172F-NORM-006",
+    "subject_id": "c172f_normal",
+    "learning_objective": "POH Supplement Sección 4 - Comprobación de Plena Potencia (Full Power Check) Pre-Despegue",
+    "stem": "Tras finalizar el autotest del FADEC en tierra con los frenos aplicados, el piloto avanza brevemente la palanca de gases a plena potencia (FULL). ¿Qué valores mínimos de carga (Load) y de RPM deben alcanzarse para que el motor sea apto para el despegue?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Al menos un 85% de carga (Load) y un régimen de hélice de entre 2100 y 2200 RPM",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Al menos un 90% de carga (Load) y un régimen de hélice de entre 2150 y 2250 RPM",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Exactamente el 100% de carga (Load) y un régimen de hélice superior a 2320 RPM",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Al menos un 94% de carga (Load) y un régimen de hélice de entre 2240 y 2300 RPM",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "Según el paso `g)` de la prueba pre-vuelo del FADEC en la Sección 4 (página 4-9 y 4-16) del Suplemento POH y el Normal Checklist V6, al avanzar brevemente la palanca de gases a **FULL** con los frenos pisados, el motor debe alcanzar:\n- **Carga mínima (Load):** **94%**.\n- **Régimen de hélice (Propeller RPM):** entre **2240 y 2300 RPM**.\n- **Luces de aviso FADEC:** apagadas (**OFF**).\n\n| Parámetro en Prueba de Plena Potencia | Valor Requerido antes de Despegar |\n| :--- | :--- |\n| **Carga del Motor (Load %)** | **Mínimo 94%** |\n| **Régimen de Hélice (RPM)** | **2240 a 2300 RPM** |\n| **Luces Rojas FADEC A / B** | **OFF (Apagadas)** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4 (Page 4-9):**\n> \"g) Thrust lever - FULL (briefly) to verify full power is available (min. 94% load and 2240 to 2300 RPM, FADEC warning lights OFF) then IDLE. WARNING: Take-off is prohibited if the engine shows roughness, high RPM drop when switching to the other FADEC, FADEC warning lights illuminate or full power is not reached.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 4 FADEC Test](./manual-crops/fleet-c172f/supp_p102_norm_fadec_test.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Before Take-Off (Page 4-9 & 4-16)",
+        "Blue Team Flight School - C172F Normal Checklist V6 - Engine Test"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-NORM-007",
+    "subject_id": "c172f_normal",
+    "learning_objective": "POH Supplement Sección 4 - Procedimiento Especial en Aeródromos por Encima de 5500 ft (TAE 125-02-99)",
+    "stem": "En una Reims/Cessna F172F equipada con el motor TAE 125-02-99, ¿qué particularidad tiene el procedimiento de puesta en marcha, calentamiento y prueba FADEC en aeródromos con una elevación superior a 5500 ft?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El FADEC Test solo es posible si la palanca de gases no se movió de IDLE desde el arranque; si se movió, hay que apagar y rearrancar",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "La prueba FADEC queda inhibida por encima de 5500 ft y debe sustituirse por la activación manual de Force B durante 30 s a 2000 RPM",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El arranque debe realizarse con la palanca de gases al 100% y la bomba eléctrica de combustible apagada para proteger el turbocompresor",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El calentamiento previo debe efectuarse a 2200 RPM durante 10 minutos antes de desconectar el interruptor de la batería de reserva",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Sección 4 (*Procedures Over 5500 ft Airfield Elevation (TAE 125-02-99 only)*, páginas 4-10 a 4-14) del Suplemento POH:\n- Por encima de **5500 ft de elevación**, el autodiagnóstico **FADEC Test solo puede iniciarse si la palanca de gases NO se ha movido de la posición IDLE después de arrancar el motor**.\n- Por ello, tras el arranque el motor ajusta automáticamente un ralentí elevado de calentamiento de hasta **1400 RPM** sin tocar la palanca de gases.\n- Si el piloto tuvo que mover la palanca de gases para rodar hasta el punto de espera, **debe apagar el motor y volver a arrancarlo** (dejando la palanca en IDLE) para poder ejecutar el FADEC Test.\n\n| Elevación del Aeródromo | Restricción para Iniciar el FADEC Test (TAE 125-02-99) |\n| :--- | :--- |\n| **Hasta 5500 ft** | Basta con situar la palanca de gases en **IDLE** antes de pulsar FADEC Test |\n| **Más de 5500 ft** | La palanca de gases **no debe haberse movido de IDLE desde el arranque** (si se movió, apagar y rearrancar) |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4 (Page 4-13 & 4-14):**\n> \"Note: At airfield elevations above 5500 ft the FADEC test is only possible when the thrust lever has not been moved out of the IDLE position after starting the engine... If the thrust lever has been moved out of the IDLE position before performing the FADEC test (e.g. for taxiing to the run-up area), the engine has to be shut down and restarted.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 4 High Elevation Procedures](./manual-crops/fleet-c172f/supp_p102_norm_fadec_test.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Procedures Over 5500 ft Airfield Elevation (Page 4-10 to 4-14)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "C172F-NORM-008",
+    "subject_id": "c172f_normal",
+    "learning_objective": "Checklist V6 & SOP 5.6.1 - Configuración y Velocidades de Despegue y Ascenso",
+    "stem": "Según el Normal Checklist V6 y los SOPs de Blue Team Flight School para la Cessna 172F (EC-NNX), ¿cuáles son las velocidades operativas de rotación (Vr), mejor ángulo de ascenso (Vx) y mejor régimen de ascenso (Vy)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vr: 50 KIAS (Flap 10°) / 55 KIAS (Flap 0°); Vx: 55 KIAS (Flap 10°) / 60 KIAS (Flap 0°); Vy: 70 KIAS (Flap 0°)",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Vr: 60 KIAS (Flap 10°) / 65 KIAS (Flap 0°); Vx: 60 KIAS (Flap 10°) / 65 KIAS (Flap 0°); Vy: 75 KIAS (Flap 0°)",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Vr: 65 KIAS (Flap 10°) / 70 KIAS (Flap 0°); Vx: 70 KIAS (Flap 10°) / 75 KIAS (Flap 0°); Vy: 85 KIAS (Flap 0°)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Vr: 55 KIAS (Flap 10°) / 60 KIAS (Flap 0°); Vx: 62 KIAS (Flap 10°) / 68 KIAS (Flap 0°); Vy: 80 KIAS (Flap 0°)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la tabla de velocidades del C172F Normal Checklist V6 y la Sección 5.6.1 de los SOPs de Blue Team Flight School:\n- **Rotación ($V_R$):** **60 KIAS** con Flap 10° (checklist estándar) / **65 KIAS** con Flap 0° (SOP despegue limpio).\n- **Mejor ángulo de ascenso ($V_X$):** **60 KIAS** (Flap 10°) / **65 KIAS** (Flap 0°).\n- **Mejor régimen de ascenso ($V_Y$):** **75 KIAS** (Flap 0°).\n- **Ascenso normal en ruta (Normal Climb):** **75 – 85 KIAS** (Flap 0°).\n*(Nota: En el Suplemento POH TAE 125 Sección 4, para despegue en campo corto la velocidad de ascenso inicial sobre obstáculo de 50 ft con Flaps 0° es de 50 KIAS a 907 kg y 58 KIAS a 1043 kg, con $V_X$ de 62 KIAS y $V_Y$ de ~70 KIAS)*.\n\n| Velocidad de Despegue / Ascenso | Checklist V6 & SOP (Flap 10°) | Checklist V6 & SOP (Flap 0°) |\n| :--- | :--- | :--- |\n| **$V_R$ (Rotación)** | **60 KIAS** | **65 KIAS** |\n| **$V_X$ (Mejor Ángulo)** | **60 KIAS** | **65 KIAS** |\n| **$V_Y$ (Mejor Régimen)** | — | **75 KIAS** |\n| **Ascenso en Ruta (Cruise Climb)** | — | **75 – 85 KIAS** |\n\n> 📖 **Extracto Literal del Manual — Blue Team Flight School C172F Normal Checklist V6 (Page 1):**\n> \"VR: 60 KIAS | VX (FLAP 10°): 60 KIAS | VX (FLAP 0°): 65 KIAS | VY (FLAP 0°): 75 KIAS | NORMAL CLIMB: 75 - 85 KIAS.\"\n\n![Recorte Oficial del Manual — Cessna 172F Normal Checklist V6](./manual-crops/fleet-c172f/checklist_normal_v6_p1.png)",
+      "references": [
+        "Blue Team Flight School - C172F Normal Checklist V6 - Speeds (Page 1)",
+        "Blue Team Flight School SOP Rev 04 - Section 5.6.1: Takeoff & Climb (Page 29)",
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Take-Off & Climb (Page 4-17)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172F-NORM-009",
+    "subject_id": "c172f_normal",
+    "learning_objective": "POH Supplement Sección 4 - Configuración de Despegue en Campo Corto (Short Field Take-Off)",
+    "stem": "¿Qué ajuste de flaps y qué velocidades de despegue y ascenso inicial hasta franquear el obstáculo de 50 ft especifica la Sección 4 del Suplemento POH del motor TAE 125 para un despegue en campo corto (Short Field Take-Off)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Wing Flaps 20°, despegar a 55 KIAS y ascender a 65 KIAS tanto en Categoría Utility como en Categoría Normal",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Wing Flaps 10°, despegar a 50 KIAS y ascender a 62 KIAS hasta alcanzar 400 ft AGL antes de acelerar a Vy",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Wing Flaps 0°, despegar a 44 KIAS y ascender a 50 KIAS (con 907 kg) o 58 KIAS (con 1043 kg) hasta superar los 50 ft",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Wing Flaps 30°, despegar a 40 KIAS y ascender a 48 KIAS retraendo a Flaps 10° inmediatamente tras despegar",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Sección 4 (página 4-17, *Take-Off*) y las tablas de performance de las Secciones 5a/5b del Suplemento POH, tanto el despegue normal como el **despegue en campo corto (Short Field Take-Off)** están certificados con **Wing Flaps 0°**:\n- En **despegue normal**: Flaps 0°, levantar rueda de morro a **55 KIAS** y ascender a **70 KIAS**.\n- En **despegue en campo corto**: Flaps 0°, aplicar potencia máxima con frenos pisados, soltar frenos, ir al aire a **44 KIAS (50 MPH)** y mantener una velocidad de ascenso de **50 KIAS (57 MPH)** para masa de **907 kg (2000 lb)** o de **58 KIAS (67 MPH)** para masa máxima de **1043 kg (2300 lb)** hasta franquear el obstáculo de 15 m (50 ft).\n\n| Tipo de Despegue (Suplemento POH Sec. 4) | Posición Flaps | Velocidad de Rotación / Lift-Off | Velocidad de Ascenso Inicial |\n| :--- | :--- | :--- | :--- |\n| **Normal Take-Off** | **Flaps $0^\\circ$** | **55 KIAS** (63 MPH) | **70 KIAS** (80 MPH) |\n| **Short Field Take-Off (907 kg)** | **Flaps $0^\\circ$** | **44 KIAS** (50 MPH) | **50 KIAS** (57 MPH) |\n| **Short Field Take-Off (1043 kg)** | **Flaps $0^\\circ$** | **44 KIAS** (50 MPH) | **58 KIAS** (67 MPH) |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Take-Off (Page 4-17):**\n> \"SHORT FIELD TAKE-OFF: (1) Wing Flaps - 0°... (5) Take-off at 44 KIAS (50 MPH). (6) Climb Speed - 50 KIAS (57 MPH) (weight 907 kg) or 58 KIAS (67 MPH) (weight 1043 kg) until all obstacles are cleared.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 4 Take-Off & Climb](./manual-crops/fleet-c172f/supp_p109_norm_takeoff_climb.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Take-Off (Page 4-17)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "C172F-NORM-010",
+    "subject_id": "c172f_normal",
+    "learning_objective": "Checklist V6 & POH Supplement Sección 4 - Uso de la Bomba Eléctrica de Combustible (Fuel Pump)",
+    "stem": "¿En qué fases del vuelo debe encontrarse conectada (ON) la bomba eléctrica auxiliar de combustible (Fuel Pump) en la Reims/Cessna F172F equipada con motor TAE 125?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Únicamente durante la puesta en marcha inicial del motor y en caso de fallo de la bomba mecánica durante el vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "De forma ininterrumpida durante todo el vuelo desde antes de la puesta en marcha hasta la parada final en plataforma",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Solamente cuando se vuela por encima de 5500 ft de altitud de presión o al cambiar entre los tanques izquierdo y derecho",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En la puesta en marcha/rodaje, en el despegue y ascenso inicial hasta 1000 ft AGL y en la aproximación y aterrizaje",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 4 del Suplemento POH (páginas 4-7, 4-17, 4-18) y el C172F Normal Checklist V6 / SOP 5.6:\n- La bomba eléctrica auxiliar de combustible (**Fuel Pump**) se conecta en **ON antes del arranque**.\n- Permanece en **ON para el despegue y ascenso**.\n- En la lista **After Take-Off (a 1000 ft AGL)** / **Cruise**, se desconecta (**Fuel Pump — OFF**) verificando que el flujo de combustible se mantiene estable con la bomba mecánica del motor.\n- En la lista **Approach / Before Landing**, se vuelve a conectar (**Fuel Pump — ON**) para el aterrizaje y posible motor y al aire, apagándose tras abandonar la pista (**After Landing**).\n\n| Fase de Vuelo (Checklist V6 & POH) | Posición Fuel Pump |\n| :--- | :--- |\n| **Before Start / Taxi / Line Up** | **ON** |\n| **Take-Off & Initial Climb** | **ON** |\n| **After Take-Off (1000 ft AGL) & Cruise** | **OFF** |\n| **Approach & Landing / Go-Around** | **ON** |\n| **After Landing / Shutdown** | **OFF** |\n\n> 📖 **Extracto Literal del Manual — Blue Team Flight School C172F Normal Checklist V6 (Page 2):**\n> \"LINE UP: Fuel Pump ON | AFTER TAKE-OFF (1000 FT AGL): Fuel Pump OFF | APPROACH: Fuel Pump ON | AFTER LANDING: Fuel Pump OFF.\"\n\n![Recorte Oficial del Manual — Cessna 172F Normal Checklist V6 Page 2](./manual-crops/fleet-c172f/checklist_normal_v6_p2.png)",
+      "references": [
+        "Blue Team Flight School - C172F Normal Checklist V6 (Page 1 & 2)",
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Normal Procedures (Page 4-17 & 4-18)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172F-NORM-011",
+    "subject_id": "c172f_normal",
+    "learning_objective": "POH Supplement Sección 4 - Ajuste de Potencia Recomendado en Crucero",
+    "stem": "De acuerdo con la Sección 4 (Cruise) del Suplemento POH para la Reims/Cessna F172F con motor TAE 125 y el Normal Checklist V6, ¿qué ajuste de carga (Load) se recomienda para el vuelo de crucero económico y cuál es el máximo permitido?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se recomienda no superar el 75% de carga para ahorro de combustible y vida del motor, aunque el máximo permitido es el 100%",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Se recomienda mantener el 60% de carga máxima continua, estando prohibido superar el 80% de carga durante más de 5 minutos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se recomienda operar al 90% de carga constante en crucero, reservando el 100% exclusivamente para emergencias",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se recomienda ajustar manualmente el paso de hélice a 2100 RPM con un 65% de carga mediante la palanca azul de paso",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 4 (*Cruise*, página 4-18 y *Amplified Procedures — Cruise*, página 4-23) del Suplemento POH:\n- El ajuste de potencia máximo permitido en crucero es del **100% de carga (Load)**.\n- No obstante, por razones de **economía de combustible y vida útil del motor**, se recomienda no superar una potencia de crucero del **75% Load** (que es también el ajuste estándar en el Normal Checklist V6 y SOP 5.6).\n\n| Ajuste de Crucero (TAE 125) | Porcentaje de Carga (Load %) | Consumo Típico a 4000 ft (Sec. 5b) |\n| :--- | :--- | :--- |\n| **Crucero Máximo Permitido** | **100% Load** | ~28,7 L/h (7,57 gal/h) |\n| **Crucero Recomendado (Normal/SOP)** | **$\\le 75\\%$ Load** | ~20,4 L/h (5,38 gal/h) |\n| **Crucero Económico (60% Load)** | **60% Load** | ~16,3 L/h (4,30 gal/h) |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Cruise (Page 4-18):**\n> \"(1) Power - SET Load as required (max. 100%; for fuel economy and engine life time reasons it is recommended not to exceed a cruise power of 75%).\"\n\n![Recorte Oficial del Manual — Supplement POH Section 4 Take-Off & Climb](./manual-crops/fleet-c172f/supp_p109_norm_takeoff_climb.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Cruise (Page 4-18 & 4-23)",
+        "Blue Team Flight School - C172F Normal Checklist V6 - Cruise (Page 2)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172F-NORM-012",
+    "subject_id": "c172f_normal",
+    "learning_objective": "Checklist V6 & SOP 5.6.3 - Velocidades de Referencia de Aproximación (Vref) según Posición de Flaps",
+    "stem": "Según el C172F Normal Checklist V6 de Blue Team Flight School, ¿cuáles son las velocidades de aproximación final (Vref) para las configuraciones de Flap 0°–10°, Flap 20°–30° y Flap 40° respectivamente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "75 KIAS con Flap 0°–10°, 70 KIAS con Flap 20°–30° y 65 KIAS con Flap 40°",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "70 KIAS con Flap 0°–10°, 65 KIAS con Flap 20°–30° y 60 KIAS con Flap 40°",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "65 KIAS con Flap 0°–10°, 60 KIAS con Flap 20°–30° y 55 KIAS con Flap 40°",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "80 KIAS con Flap 0°–10°, 70 KIAS con Flap 20°–30° y 60 KIAS con Flap 40°",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la tabla de velocidades del C172F Normal Checklist V6 y los SOPs (Sección 5.6.3), las velocidades de referencia de aproximación ($V_{\\text{REF}}$) son:\n- **Flap $0^\\circ - 10^\\circ$:** **70 KIAS**.\n- **Flap $20^\\circ - 30^\\circ$:** **65 KIAS** (configuración estándar de aterrizaje en escuela con Flap 30°).\n- **Flap $40^\\circ$ (campo corto):** **60 KIAS**.\n\n| Configuración de Flaps | Velocidad de Aproximación ($V_{\\text{REF}}$ Checklist V6) | Suplemento POH Sección 4 (Page 4-18) |\n| :--- | :--- | :--- |\n| **Flaps $0^\\circ - 10^\\circ$** | **70 KIAS** | Flaps UP: **70 KIAS (80 MPH)** |\n| **Flaps $20^\\circ - 30^\\circ$** | **65 KIAS** | Flaps $20^\\circ$: **63 KIAS (72 MPH)** |\n| **Flaps $40^\\circ$** | **60 KIAS** | Flaps $40^\\circ$ (Short Field): **60 KIAS (69 MPH)** |\n\n> 📖 **Extracto Literal del Manual — Blue Team Flight School C172F Normal Checklist V6 (Page 1):**\n> \"VREF (FLAP 0°-10°): 70 KIAS | VREF (FLAP 20°-30°): 65 KIAS | VREF (FLAP 40°): 60 KIAS.\"\n\n![Recorte Oficial del Manual — Cessna 172F Normal Checklist V6](./manual-crops/fleet-c172f/checklist_normal_v6_p1.png)",
+      "references": [
+        "Blue Team Flight School - C172F Normal Checklist V6 - Speeds (Page 1)",
+        "Blue Team Flight School SOP Rev 04 - Section 5.6.3: Approach & Landing (Page 30-31)",
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Landing (Page 4-18)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.25
+    }
+  },
+  {
+    "id": "C172F-NORM-013",
+    "subject_id": "c172f_normal",
+    "learning_objective": "Checklist V6 - Tiempo de Enfriamiento del Turbocompresor Antes del Apagado (Shut Down)",
+    "stem": "En el procedimiento de parada de motor (Shut Down) del C172F Normal Checklist V6, ¿cuánto tiempo debe mantenerse el motor TAE 125 al ralentí (IDLE) antes de pasar el interruptor Engine Master a OFF y cuál es el propósito técnico de esta espera?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Esperar 30 segundos al ralentí para permitir que la batería de reserva del FADEC complete su ciclo de descarga",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Esperar 5 minutos a 1200 RPM para purgar el combustible sobrante del conducto común (common rail)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Esperar 2 minutos al ralentí para permitir la estabilización térmica y el enfriamiento del turbocompresor",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Esperar 1 minuto a 1400 RPM con la calefacción de cabina encendida para enfriar el circuito pequeño del termostato",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según el bloque **SHUT DOWN** del C172F Normal Checklist V6, antes de pasar el **Engine Master a OFF** es obligatorio mantener la palanca de gases al ralentí (**Throttle — IDLE**) y **esperar 2 minutos para enfriar el turbocompresor (Wait 2 min to cool turbo)**, evitando así la coquización del aceite en los cojinetes calientes del turbo al cesar la circulación de lubricante.\n\n| Paso de Parada de Motor (Shut Down) | Acción en Cabina |\n| :--- | :--- |\n| **1. Parking Brake** | **SET** |\n| **2. Throttle** | **IDLE (Esperar 2 minutos para enfriar el turbo)** |\n| **3. Avionics & Electrical Equipment** | **OFF** |\n| **4. Engine Master** | **OFF** |\n| **5. Alternator & Battery** | **OFF** |\n\n> 📖 **Extracto Literal del Manual — Blue Team Flight School C172F Normal Checklist V6 (Page 2):**\n> \"SHUT DOWN: Throttle IDLE (Wait 2 min to cool turbo) -> Avionics OFF -> Engine Master OFF -> Alternator & Battery OFF.\"\n\n![Recorte Oficial del Manual — Cessna 172F Normal Checklist V6 Page 2](./manual-crops/fleet-c172f/checklist_normal_v6_p2.png)",
+      "references": [
+        "Blue Team Flight School - C172F Normal Checklist V6 - Shut Down (Page 2)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.25
+    }
+  },
+  {
+    "id": "C172F-NORM-014",
+    "subject_id": "c172f_normal",
+    "learning_objective": "POH Supplement Sección 4 - Drenaje de Agua del Separador y Depósitos antes del Primer Vuelo",
+    "stem": "De acuerdo con la Sección 4 (Preflight Inspection) del Suplemento POH, ¿cuándo y cómo debe drenarse el sistema de combustible en la Reims/Cessna F172F equipada con motor TAE 125?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Únicamente una vez por semana durante la inspección de 50 horas, dado que el combustible Jet A-1 no retiene humedad",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Solamente después del último vuelo de la jornada con el motor girando a 1400 RPM y la bomba eléctrica conectada",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Exclusivamente cuando se ilumine en color amarillo el aviso Water Level situado en el instrumento auxiliar AED-125",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Antes del primer vuelo del día y tras cada repostaje, drenando el separador de agua y los sumideros de ambos planos",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 4 (páginas 4-3, 4-4 y 4-5) y la Sección 6 (página 6-4) del Suplemento POH, **antes del primer vuelo del día y después de cada repostaje** es obligatorio:\n1. Drenar el **separador de agua / filtro de combustible (Fuel Strainer / Water Separator)** extrayendo aproximadamente un vaso pequeño para eliminar agua y sedimentos.\n2. Drenar los **sumideros de los depósitos de combustible de ambos planos (Fuel Tank Sump Quick-Drain Valves)**.\n*(Nota: La luz amarilla \"Water Level\" del AED-125 no indica agua en el combustible, sino **bajo nivel de líquido refrigerante** en el sistema de refrigeración del motor)*.\n\n| Punto de Drenaje Pre-vuelo | Frecuencia Obligatoria |\n| :--- | :--- |\n| **Separador de Agua / Filtro (Fuel Strainer)** | **Antes del primer vuelo del día y tras cada repostaje** |\n| **Sumideros de Tanques Izquierdo y Derecho** | **Antes del primer vuelo del día y tras cada repostaje** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Preflight Inspection (Page 4-3):**\n> \"Before First Flight of the Day and After Each Refueling: Fuel Strainer - DRAIN roughly a small glass full (to remove water and sediment). Fuel Tank Sump Quick-Drain Valves - DRAIN.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 1 Fuel System](./manual-crops/fleet-c172f/supp_p52_fuel_system.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Preflight Inspection (Page 4-3 to 4-5)",
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 6: Servicing - Fuel (Page 6-4)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-NORM-015",
+    "subject_id": "c172f_normal",
+    "learning_objective": "POH Supplement Sección 4 - Operación del Aire Alternativo (Alternate Air) en Operación Normal",
+    "stem": "¿En qué posición debe encontrarse el mando de Aire Alternativo (Alternate Air) durante la operación normal en tierra y vuelo libre de engelamiento en la Reims/Cessna F172F (TAE 125), y qué ocurre si se abre?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Debe estar cerrado (OFF / hacia dentro); al tirar de él se aspira aire caliente sin filtrar del vano motor",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Debe estar abierto (ON) en rodaje y aterrizaje para enfriar el intercooler, cerrándose únicamente en crucero",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Debe ajustarse al 50% de su recorrido siempre que la temperatura exterior baje de +15°C para evitar engelamiento",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Se abre y cierra automáticamente mediante el canal B del FADEC cuando la humedad relativa supera el 80% en vuelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El motor diésel de inyección directa common-rail TAE 125 **no tiene carburador** (por lo que no sufre hielo de carburador), pero dispone de una compuerta de **Aire Alternativo (Alternate Air)** para casos de **obstrucción del filtro de aire de admisión por impacto de hielo** (Sección 1, página 1-14 y Sección 4, página 4-23). En operación normal debe estar siempre **cerrado (OFF — mando presionado hacia dentro)**, ya que al abrirlo el motor aspira aire caliente **sin filtrar** del interior del capó, lo que en tierra puede introducir polvo o partículas y en vuelo reduce ligeramente la potencia máxima disponible.\n\n| Posición Mando Alternate Air | Estado de la Compuerta | Uso Operacional |\n| :--- | :--- | :--- |\n| **OFF (Presionado hacia dentro)** | Aire exterior a través del filtro de admisión | **Operación normal en tierra y vuelo** |\n| **ON (Tirado hacia fuera)** | Aire caliente del compartimento motor (sin filtrar) | **Condiciones de engelamiento o bloqueo del filtro** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1 (Page 1-14) & Section 4 (Page 4-23):**\n> \"In normal operation the control knob 'Alternate Air' is pushed in (OFF). Pulling the control knob 'Alternate Air' opens a bypass flap on the air filter box so that pre-heated air from the engine compartment is drawn in.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 1 FADEC Reset & Controls](./manual-crops/fleet-c172f/supp_p58_fadec_reset_glow.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Alternate Air (Page 1-14)",
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Amplified Procedures (Page 4-23)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-NORM-016",
+    "subject_id": "c172f_normal",
+    "learning_objective": "POH Supplement Sección 4 - Comprobación de Instrumentos de Motor y Amperímetro antes del Despegue",
+    "stem": "Antes de entrar en pista para el despegue en la Reims/Cessna F172F (TAE 125), tras haber completado el calentamiento y el autotest del FADEC, ¿qué comprobación exige el punto 10 de la lista «Before Take-Off» sobre los instrumentos del motor y el amperímetro?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Comprobar que la temperatura del refrigerante esté en el rango ámbar inferior y que el amperímetro indique al menos 45 A de carga",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Comprobar que todas las indicaciones del CED-125 y AED-125 estén en rango verde y que la corriente en el amperímetro sea < 20 A",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Comprobar que la luz amarilla Water Level parpadee dos veces por minuto y que el voltaje del sistema se mantenga fijo en 15,0 V",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Comprobar que la presión de aceite sea inferior a 2,0 bar al ralentí y que el flujo de combustible indicado supere los 35 L/h",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 4 (*Before Take-Off*, página 4-9 y *Battery Check*, página 4-20) del Suplemento POH:\n- Todos los parámetros de motor en el **CED-125** y **AED-125** deben encontrarse en su **rango verde**.\n- Si la batería principal necesitó mucha energía para el arranque, el alternador suministrará inicialmente una corriente elevada de recarga. **No se debe despegar hasta que la corriente indicada en el amperímetro haya descendido por debajo de 20 A**, lo que confirma que la batería principal ha recuperado al menos el 80–90% de su capacidad.\n\n| Parámetro Pre-Despegue | Condición Obligatoria antes de Despegar |\n| :--- | :--- |\n| **Indicaciones CED-125 / AED-125** | Todas en **rango verde** ($\text{OT} \\ge 50^\\circ\\text{C}$, $\\text{CT} \\ge 60^\\circ\\text{C}$) |\n| **Corriente en Amperímetro (AED-125)** | **$< 20\\text{ A}$** (confirma batería principal suficientemente cargada) |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4 (Page 4-9 & 4-20):**\n> \"(10) Engine Instruments and Ammeter - CHECK (all indications within green range, charging current < 20 A)... Do not take-off before the indication on the ammeter drops below 20 A.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 4 Before Take-Off](./manual-crops/fleet-c172f/supp_p109_norm_takeoff_climb.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Before Take-Off (Page 4-9)",
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Amplified Procedures - Battery Check (Page 4-20)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  }
+]

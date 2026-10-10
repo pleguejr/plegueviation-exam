@@ -2,35 +2,1807 @@
   {
     "id": "rev_BIN-SOP-124_1789467538062",
     "questionId": "BIN-SOP-124",
+    "question": {
+      "id": "BIN-SOP-124",
+      "subject_id": "binter_ops",
+      "learning_objective": "TABLAS Limitaciones: turbulencia Vra",
+      "stem": "¿Cuál es la velocidad de turbulencia (Vra) bajo y sobre 10.000 ft?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bajo 10.000: 270 KIAS; sobre: 240 KIAS / M 0.82",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "320 KIAS / M 0.82 en turbulencia severa",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "250 KIAS en todos los niveles",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "Bajo 10.000 ft: 240 KIAS; sobre 10.000 ft: 270 KIAS / M 0.76",
+          "is_correct": true
+        }
+      ],
+      "explanation": {
+        "text": "Vra/Mra: <10k → 240 KIAS; >10k → 270 KIAS / M0.76.",
+        "references": [
+          "TABLAS limitations-e2 · AOM 1-03"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.45
+      },
+      "_category": "binter-ops",
+      "_subtopic": "procedimientos-operativos"
+    },
+    "requestedAt": 1789467538062,
     "reasonCategory": "🔢 Errata en datos numéricos / límites / velocidades",
     "status": "resolved",
-    "resolvedAt": "2026-09-15",
-    "resolution": "Corregido Vra bajo 10.000 ft: 240→250 KIAS (RemNote NUMBERS / AOM). Alineado TABLAS UI."
+    "resolvedAt": 1791655600000
   },
   {
     "id": "rev_BIN-SOP-124_1789467765928",
     "questionId": "BIN-SOP-124",
+    "question": {
+      "id": "BIN-SOP-124",
+      "subject_id": "binter_ops",
+      "learning_objective": "TABLAS Limitaciones: turbulencia Vra",
+      "stem": "¿Cuál es la velocidad de turbulencia (Vra) bajo y sobre 10.000 ft?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bajo 10.000 ft: 240 KIAS; sobre 10.000 ft: 270 KIAS / M 0.76",
+          "is_correct": true
+        },
+        {
+          "id": "B",
+          "text": "320 KIAS / M 0.82 en turbulencia severa",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "250 KIAS en todos los niveles",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "Bajo 10.000: 270 KIAS; sobre: 240 KIAS / M 0.82",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "Vra/Mra: <10k → 240 KIAS; >10k → 270 KIAS / M0.76.",
+        "references": [
+          "TABLAS limitations-e2 · AOM 1-03"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.45
+      },
+      "_category": "binter-ops",
+      "_subtopic": "procedimientos-operativos"
+    },
+    "requestedAt": 1789467765928,
     "reasonCategory": "🔢 Errata en datos numéricos / límites / velocidades",
     "status": "resolved",
-    "resolvedAt": "2026-09-15",
-    "resolution": "Duplicado del reporte BIN-SOP-124; misma corrección 250/270 M0.76."
+    "resolvedAt": 1791655600000
   },
   {
     "id": "rev_BIN-SOP-119_1789467627972",
     "questionId": "BIN-SOP-119",
+    "question": {
+      "id": "BIN-SOP-119",
+      "subject_id": "binter_ops",
+      "learning_objective": "TABLAS Limitaciones: Vlo extensión / retracción",
+      "stem": "¿Cuáles son Vlo extensión y Vlo retracción del tren?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Extensión 200 KIAS; Vle 220 KIAS",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "Extensión y retracción 250 KIAS",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "Extensión 250 KIAS; retracción 220 KIAS (Vle 250 KIAS)",
+          "is_correct": true
+        },
+        {
+          "id": "D",
+          "text": "Extensión 220 KIAS; retracción 250 KIAS",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "Vlo Ext 250 / Ret 220; Vle extendido 250 KIAS.",
+        "references": [
+          "TABLAS limitations-e2 · AFM 2-05"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.45
+      },
+      "_category": "binter-ops",
+      "_subtopic": "procedimientos-operativos"
+    },
+    "requestedAt": 1789467627972,
     "reasonCategory": "🔢 Errata en datos numéricos / límites / velocidades",
     "comment": "Máxima velocidad con tren extendido 265 nudos",
     "status": "resolved",
-    "resolvedAt": "2026-09-15",
-    "resolution": "Corregido Vle 250→265 KIAS; Vlo Ext 250 / Ret 220 confirmados. Alineado TABLAS UI."
+    "resolvedAt": 1791655600000
   },
   {
     "id": "rev_BIN-SOP-128_1789467727132",
     "questionId": "BIN-SOP-128",
+    "question": {
+      "id": "BIN-SOP-128",
+      "subject_id": "binter_ops",
+      "learning_objective": "TABLAS MOA: fallo radio IMC",
+      "stem": "En MOA Cap. 12 / SERA (tabla), tras fallo de comunicaciones en IMC, ¿cuánto se mantiene nivel y velocidad?",
+      "options": [
+        {
+          "id": "A",
+          "text": "20 minutos tras la última hora prevista de reporte",
+          "is_correct": true
+        },
+        {
+          "id": "B",
+          "text": "30 minutos",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "45 minutos de controlled rest",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "7 minutos",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "Fallo coms IMC: mantener nivel/velocidad 20 min tras última hora prevista de reporte.",
+        "references": [
+          "TABLAS moa-chapters · MOA Cap. 12 / SERA"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.45
+      },
+      "_category": "binter-ops",
+      "_subtopic": "procedimientos-operativos"
+    },
+    "requestedAt": 1789467727132,
     "reasonCategory": "💬 Otro motivo / Sugerencia de mejora",
     "comment": "Revisar",
     "status": "resolved",
-    "resolvedAt": "2026-09-15",
-    "resolution": "Dato 20 min SERA.8035 confirmado correcto; mejorados stem, distractores (sin controlled rest) y explicación completa."
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_BIN-SOP-138_1789468519541",
+    "questionId": "BIN-SOP-138",
+    "question": {
+      "id": "BIN-SOP-138",
+      "subject_id": "binter_ops",
+      "learning_objective": "TABLAS Limitaciones: wipers",
+      "stem": "¿Hasta qué altitud/velocidad pueden usarse los limpiaparabrisas?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hasta 14.000 ft y 250 KIAS (lo más restrictivo)",
+          "is_correct": true
+        },
+        {
+          "id": "B",
+          "text": "Hasta 20.000 ft sin límite de velocidad",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "Hasta FL410 a cualquier IAS",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "Solo en tierra y por debajo de 80 kt",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "Wipers prohibidos por encima de 14.000 ft o 250 KIAS.",
+        "references": [
+          "TABLAS limitations-e2 · AFM 2-08"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.4
+      },
+      "_category": "binter-ops",
+      "_subtopic": "procedimientos-operativos"
+    },
+    "requestedAt": 1789468519541,
+    "reasonCategory": "🔢 Errata en datos numéricos / límites / velocidades",
+    "comment": "Velocidad máxima wipers 253 nudos",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_BIN-SOP-138_1789478962304",
+    "questionId": "BIN-SOP-138",
+    "question": {
+      "id": "BIN-SOP-138",
+      "subject_id": "binter_ops",
+      "learning_objective": "TABLAS Limitaciones: wipers",
+      "stem": "¿Hasta qué altitud/velocidad pueden usarse los limpiaparabrisas?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hasta 20.000 ft sin límite de velocidad",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "Hasta FL410 a cualquier IAS",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "Hasta 14.000 ft y 250 KIAS (lo más restrictivo)",
+          "is_correct": true
+        },
+        {
+          "id": "D",
+          "text": "Solo en tierra y por debajo de 80 kt",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "Wipers prohibidos por encima de 14.000 ft o 250 KIAS.",
+        "references": [
+          "TABLAS limitations-e2 · AFM 2-08"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.4
+      },
+      "_category": "binter-ops",
+      "_subtopic": "procedimientos-operativos"
+    },
+    "requestedAt": 1789478962304,
+    "reasonCategory": "🔢 Errata en datos numéricos / límites / velocidades",
+    "comment": "VELOCIDAD MAXIMA WIPERS 253 KTS",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-EXP26-012_1789848585799",
+    "questionId": "CMD-EXP26-012",
+    "question": {
+      "id": "CMD-EXP26-012",
+      "subject_id": "command-upgrade",
+      "learning_objective": "MOA 8.1.7.2.5 (Tabla 1A) - Mínimos de Planificación para Alternativo con 2 o más aproximaciones de precisión",
+      "stem": "Al seleccionar un aeródromo alternativo de destino que cuenta con dos pistas independientes con aproximaciones de precisión ILS operativas (DA/H de 200 ft y RVR de 550 m en ambas), aplicando el Plan Básico con Variaciones de Binter, ¿qué mínimos meteorológicos deben pronosticarse en ETA ±1h?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Techo de nubes en o por encima de la DA/H publicada (200 ft) y RVR/Visibilidad en o por encima de 800 m.",
+          "is_correct": true
+        },
+        {
+          "id": "B",
+          "text": "Techo 600 ft y visibilidad 2.400 m.",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "Techo 400 ft y visibilidad 1.500 m.",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "Techo 200 ft y RVR 550 m sin ningún incremento.",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "Conforme a la Tabla 1A del MOA 8.1.7.2.5 (Plan Básico con Variaciones de Binter):\n- Cuando el aeródromo alternativo dispone de **al menos dos aproximaciones de precisión independientes** utilizables para pistas diferentes:\n- Requisito de techo: Techo $\\ge \\text{DA/H}$ de la aproximación utilizada.\n- Requisito de visibilidad: RVR $\\ge 800\\text{ m}$ (o visibilidad equivalente).",
+        "references": [
+          "MOA Binter ED06 RN27 - Subcapítulo 8.1.7.2.5: Tabla 1A de Mínimos de Planificación",
+          "EASA Part-SPA.LVO / AMC1 CAT.OP.MPA.185"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.45
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "examen-convocatoria-anterior"
+    },
+    "requestedAt": 1789848585799,
+    "reasonCategory": "💬 Otro motivo / Sugerencia de mejora",
+    "comment": "Revisar si ninguna de las respuestas es correcta, ya que una aproximación ILS de 200ft y 550m es una categoría B y con dos pistas separadas independientes, sería +100ft +300m",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-EXP26-044_1789848291916",
+    "questionId": "CMD-EXP26-044",
+    "question": {
+      "id": "CMD-EXP26-044",
+      "subject_id": "command-upgrade",
+      "learning_objective": "MOA 8.2.1.2 - Distancias Mínimas de Seguridad en Plataforma durante Repostaje",
+      "stem": "Durante el reabastecimiento de combustible con pasajeros a bordo, ¿cuáles son las distancias mínimas de seguridad obligatorias que debe garantizar el agente de handling alrededor del avión y equipos de soporte según el MOA 8.2.1.2.1?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Radio de 15 metros alrededor de los motores y 10 metros de la cisterna.",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "No se estipula distancia fija, rigiendo únicamente la señalización pintada en el stand.",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "Radio de 2 metros en todo el perímetro.",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "Radio de 6 metros alrededor del avión y de 3 metros para el resto de equipos de soporte en tierra.",
+          "is_correct": true
+        }
+      ],
+      "explanation": {
+        "text": "Conforme al MOA 8.2.1.2.1 (pág. 459):\n*\"Se asegurará de que existe una distancia mínima de seguridad, de 6m de radio de distancia alrededor del avión, así como de 3m para el resto de equipos de soporte en tierra.\"*",
+        "references": [
+          "MOA Binter ED06 RN27 - Subcapítulo 8.2.1.2.1 (pág. 459): Procedimientos para el Agente de Handling",
+          "Reglamento de Seguridad en Plataforma Aena"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.35
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "examen-convocatoria-anterior"
+    },
+    "requestedAt": 1789848291916,
+    "reasonCategory": "💬 Otro motivo / Sugerencia de mejora",
+    "comment": "Revisa esta pregunta, en el manual MOA consta 4 metros de radio de área de seguridad hacía las aperturas de desaire del tanque en la punta de las alas. Los 6 metros hace referencia al posicionamiento del GPU con respeto a la cuba. Y mangueras a 1 metro de las ruedas",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_BIN-SOP-113_1790198613770",
+    "questionId": "BIN-SOP-113",
+    "question": {
+      "id": "BIN-SOP-113",
+      "subject_id": "binter_ops",
+      "learning_objective": "TABLAS Memory Items: PITCH TRIM RUNAWAY",
+      "stem": "¿Cuáles son los Memory Items de PITCH TRIM RUNAWAY?",
+      "options": [
+        {
+          "id": "A",
+          "text": "STEER DISC Switch PRESS en vuelo",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "AILERON DISCONNECT Handle PULL",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "Solo ELEVATOR DISCONNECT Handle PULL",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "AP DISC PRESS and HOLD, luego PITCH TRIM SYS 1 & 2 CUTOUT PUSH IN",
+          "is_correct": true
+        }
+      ],
+      "explanation": {
+        "text": "PITCH TRIM RUNAWAY: mantener AP DISC y CUTOUT ambos canales. Elevator disconnect es para jammed column.",
+        "references": [
+          "TABLAS memory-items-e2 · PITCH TRIM RUNAWAY"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.5
+      },
+      "_category": "binter-ops",
+      "_subtopic": "procedimientos-operativos"
+    },
+    "requestedAt": 1790198613770,
+    "reasonCategory": "💬 Otro motivo / Sugerencia de mejora",
+    "comment": "Memory item no pertenece a Embraer 195e2",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-MOA-MET-025_1790224168540",
+    "questionId": "CMD-MOA-MET-025",
+    "question": {
+      "id": "CMD-MOA-MET-025",
+      "subject_id": "moa_info_meteorologica",
+      "learning_objective": "MOA 8.1.6.3 - Decodificación METAR: Abreviatura 'FG' vs 'BR'",
+      "stem": "¿Cuál es el umbral de visibilidad que distingue a la niebla ('FG') de la neblina ('BR') en los informes METAR según MOA 8.1.6?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Niebla (FG) se reporta cuando la visibilidad es inferior a 1.000 metros; Neblina (BR) cuando la visibilidad es de 1.000 m a 5.000 m con humedad relativa $\\ge 80\\%$",
+          "is_correct": true
+        },
+        {
+          "id": "B",
+          "text": "Ambos términos son idénticos y se eligen por sorteo en la estación meteorológica",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "Niebla (FG) se reporta cuando la visibilidad es inferior a 50 metros exclusivamente",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "Neblina (BR) se reporta únicamente cuando la temperatura ambiente es inferior a -10°C",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "Norma OACI/MOA: **FG (Fog)** = Visibilidad **< 1.000 m**; **BR (Mist)** = Visibilidad entre **1.000 m y 5.000 m** con humedad alta.",
+        "references": [
+          "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.6 Interpretación de Información Meteorológica"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.2
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "preparacion-planificacion-vuelo"
+    },
+    "requestedAt": 1790224168540,
+    "reasonCategory": "🔢 Errata en datos numéricos / límites / velocidades",
+    "comment": "Revisar texto respuesta A aparecen símbolos que dificultan",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-EXP26-015_1790226333410",
+    "questionId": "CMD-EXP26-015",
+    "question": {
+      "id": "CMD-EXP26-015",
+      "subject_id": "command-upgrade",
+      "learning_objective": "MOA 8.1.8.3 - Pesos Estándar de Pasajeros y Equipaje en Operaciones de Línea",
+      "stem": "En la confección de la hoja de carga del E195-E2 con pesos estándar de pasajeros según el MOA 8.1.8.3, ¿cuál es el peso estándar asignado por defecto a un pasajero adulto (incluyendo equipaje de mano)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Varón: 70 kg; Mujer: 55 kg; Niños: 20 kg.",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "Varón: 84 kg; Mujer: 67 kg (o 76/84 kg según tabla combinada de operador); Niños (2 a 12 años): 35 kg; Bebés (<2 años): 0 kg sin asiento.",
+          "is_correct": true
+        },
+        {
+          "id": "C",
+          "text": "Adulto único: 95 kg independientemente del sexo.",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "Todos los pasajeros se pesan individualmente en el mostrador de facturación sin excepciones.",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "De acuerdo con EASA CAT.POL.MAB.100 y MOA 8.1.8.3, para aviones de transporte comercial con 30 o más asientos de pasajeros:\n- Varones adultos: 84 kg (incluyendo equipaje de mano de 6 kg).\n- Mujeres adultas: 67 kg (incluyendo equipaje de mano de 6 kg).\n- Niños (2 a 12 años): 35 kg.\n- Bebés (menores de 2 años en brazos): 0 kg (o peso marginal incluido en el adulto).",
+        "references": [
+          "MOA Binter ED06 RN27 - Subcapítulo 8.1.8.3: Valores de Masa Estándar de Pasajeros y Equipaje",
+          "EASA Part-CAT.POL.MAB.100: Mass and balance, loading"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.35
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "examen-convocatoria-anterior"
+    },
+    "requestedAt": 1790226333410,
+    "reasonCategory": "🔢 Errata en datos numéricos / límites / velocidades",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-EXAM-050_1790227071745",
+    "questionId": "CMD-EXAM-050",
+    "question": {
+      "id": "CMD-EXAM-050",
+      "subject_id": "cmd_flight_planning",
+      "learning_objective": "MOA 8.1.7.2 - Mínimos de Planificación para Alternativos de No Precisión",
+      "stem": "Para la selección de un aeródromo alternativo en ruta o de destino cuya aproximación principal sea de No Precisión (NPA), ¿cuáles son los mínimos de planificación?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mínimos de aproximación en circuito (Circling), manteniendo el cumplimiento de las limitaciones operacionales del manual",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "Mínimos de CAT I estándar, requiriendo autorización expresa del comandante y verificación de pesos",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "Mínimos de No Precisión + 200 ft de techo / 1000 m de visibilidad",
+          "is_correct": true
+        },
+        {
+          "id": "D",
+          "text": "Mínimos de No Precisión puros sin incremento, siempre que se notifique previamente a la autoridad competente y al CCO",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "De acuerdo con las tablas de planificación de alternativos del MOA (Tablas 1A y 1B), para aproximaciones de no precisión se añaden los márgenes reglamentarios sobre los mínimos de aproximación en uso.",
+        "references": [
+          "Examen Mando Binter FOR-ENT-006 (P50)",
+          "MOA 8.1.7.2.5 Tabla 1A"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.35
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "examen-oficial"
+    },
+    "requestedAt": 1790227071746,
+    "reasonCategory": "💬 Otro motivo / Sugerencia de mejora",
+    "comment": "Habría primero que especificar si es plan básico con variaciones o plan básico y después poner las cifras correctas",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-EXP26-012_1790194687539",
+    "questionId": "CMD-EXP26-012",
+    "question": {
+      "id": "CMD-EXP26-012",
+      "subject_id": "command-upgrade",
+      "learning_objective": "MOA 8.1.7.2.5 (Tabla 1A) - Mínimos de Planificación para Alternativo con 2 o más aproximaciones de precisión",
+      "stem": "Al seleccionar un aeródromo alternativo de destino que cuenta con dos pistas independientes con aproximaciones de precisión ILS operativas (DA/H de 200 ft y RVR de 550 m en ambas), aplicando el Plan Básico con Variaciones de Binter, ¿qué mínimos meteorológicos deben pronosticarse en ETA ±1h?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Techo de nubes en o por encima de la DA/H publicada (200 ft) y RVR/Visibilidad en o por encima de 800 m.",
+          "is_correct": true
+        },
+        {
+          "id": "B",
+          "text": "Techo 400 ft y visibilidad 1.500 m.",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "Techo 200 ft y RVR 550 m sin ningún incremento.",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "Techo 600 ft y visibilidad 2.400 m.",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "Conforme a la Tabla 1A del MOA 8.1.7.2.5 (Plan Básico con Variaciones de Binter):\n- Cuando el aeródromo alternativo dispone de **al menos dos aproximaciones de precisión independientes** utilizables para pistas diferentes:\n- Requisito de techo: Techo $\\ge \\text{DA/H}$ de la aproximación utilizada.\n- Requisito de visibilidad: RVR $\\ge 800\\text{ m}$ (o visibilidad equivalente).",
+        "references": [
+          "MOA Binter ED06 RN27 - Subcapítulo 8.1.7.2.5: Tabla 1A de Mínimos de Planificación",
+          "EASA Part-SPA.LVO / AMC1 CAT.OP.MPA.185"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.45
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "examen-convocatoria-anterior"
+    },
+    "requestedAt": 1790194687539,
+    "reasonCategory": "💬 Otro motivo / Sugerencia de mejora",
+    "comment": "Revisar respuesta según tabla es +100ft y +300m",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-EXP26-015_1790195495847",
+    "questionId": "CMD-EXP26-015",
+    "question": {
+      "id": "CMD-EXP26-015",
+      "subject_id": "command-upgrade",
+      "learning_objective": "MOA 8.1.8.3 - Pesos Estándar de Pasajeros y Equipaje en Operaciones de Línea",
+      "stem": "En la confección de la hoja de carga del E195-E2 con pesos estándar de pasajeros según el MOA 8.1.8.3, ¿cuál es el peso estándar asignado por defecto a un pasajero adulto (incluyendo equipaje de mano)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Todos los pasajeros se pesan individualmente en el mostrador de facturación sin excepciones.",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "Varón: 84 kg; Mujer: 67 kg (o 76/84 kg según tabla combinada de operador); Niños (2 a 12 años): 35 kg; Bebés (<2 años): 0 kg sin asiento.",
+          "is_correct": true
+        },
+        {
+          "id": "C",
+          "text": "Adulto único: 95 kg independientemente del sexo.",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "Varón: 70 kg; Mujer: 55 kg; Niños: 20 kg.",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "De acuerdo con EASA CAT.POL.MAB.100 y MOA 8.1.8.3, para aviones de transporte comercial con 30 o más asientos de pasajeros:\n- Varones adultos: 84 kg (incluyendo equipaje de mano de 6 kg).\n- Mujeres adultas: 67 kg (incluyendo equipaje de mano de 6 kg).\n- Niños (2 a 12 años): 35 kg.\n- Bebés (menores de 2 años en brazos): 0 kg (o peso marginal incluido en el adulto).",
+        "references": [
+          "MOA Binter ED06 RN27 - Subcapítulo 8.1.8.3: Valores de Masa Estándar de Pasajeros y Equipaje",
+          "EASA Part-CAT.POL.MAB.100: Mass and balance, loading"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.35
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "examen-convocatoria-anterior"
+    },
+    "requestedAt": 1790195495847,
+    "reasonCategory": "🔢 Errata en datos numéricos / límites / velocidades",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-EXP26-036_1790195670872",
+    "questionId": "CMD-EXP26-036",
+    "question": {
+      "id": "CMD-EXP26-036",
+      "subject_id": "command-upgrade",
+      "learning_objective": "MOA 8.1.7.2.5 (Tabla 1A Nota) - Regla de selección de la fila más ventajosa en Plan Básico con Variaciones",
+      "stem": "Según la nota oficial de la Tabla 1A del MOA 8.1.7.2.5 (Plan Básico con Variaciones), si un aeródromo alternativo dispone de dos aproximaciones Tipo B (una CAT III con mínimos 0 ft / 75 m y otra CAT I con mínimos 200 ft / 550 m en la misma pista), ¿cómo se calculan los mínimos de planificación?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Se puede seleccionar la fila más ventajosa aplicando los incrementos de 1 aproximación Tipo B (+150 ft / +450 m) a los mínimos CAT III, resultando en 150 ft de techo y 525 m de RVR (en lugar de 300 ft / 850 m de CAT I).",
+          "is_correct": true
+        },
+        {
+          "id": "B",
+          "text": "Es obligatorio aplicar siempre los mínimos de CAT I con incremento de 2 aproximaciones independientes (+100 ft / +300 m).",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "Debe calcularse la media aritmética entre los mínimos de CAT I y CAT III.",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "No se pueden utilizar mínimos CAT III para planificación bajo ninguna circunstancia.",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "De acuerdo con la Nota oficial de la Tabla 1A (MOA 8.1.7.2.5 pág. 388):\n*\"Se podrá seleccionar la fila de mínimos de planificación más ventajosos. Por ejemplo, un aeródromo con dos aproximaciones tipo B: una CAT3 (0 ft/75 m) otra CAT1 (200 ft/550 m). Se podrán seleccionar para planificación los mínimos CAT3 (0 + 150 ft / 75 + 450 m = 150 ft / 525 m) en vez de los mínimos CAT1 (200 + 100 ft / 550 + 300 m = 300 ft / 850 m).\"*",
+        "references": [
+          "MOA Binter ED06 RN27 - Subcapítulo 8.1.7.2.5 (pág. 388): Tabla 1A Nota de Selección Ventajosa",
+          "EASA AMC8 CAT.OP.MPA.182"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.45
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "examen-convocatoria-anterior"
+    },
+    "requestedAt": 1790195670872,
+    "reasonCategory": "🔢 Errata en datos numéricos / límites / velocidades",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-EXAM-050_1790683409400",
+    "questionId": "CMD-EXAM-050",
+    "question": {
+      "id": "CMD-EXAM-050",
+      "subject_id": "cmd_flight_planning",
+      "learning_objective": "MOA 8.1.7.2 - Mínimos de Planificación para Alternativos de No Precisión (Tabla 1A)",
+      "stem": "De acuerdo con el MOA 8.1.7.2 (Tabla 1A - Plan Básico Estándar / FOR-ENT-006 P50), para la selección de un aeródromo alternativo en ruta o de destino cuya aproximación sea de No Precisión (NPA), ¿cuáles son los mínimos de planificación requeridos?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mínimos de CAT I estándar, requiriendo autorización expresa del comandante y verificación de pesos",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "Mínimos de No Precisión + 200 ft de techo / 1000 m de visibilidad",
+          "is_correct": true
+        },
+        {
+          "id": "C",
+          "text": "Mínimos de aproximación en circuito (Circling), manteniendo el cumplimiento de las limitaciones operacionales del manual",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "Mínimos de No Precisión puros sin incremento, siempre que se notifique previamente a la autoridad competente y al CCO",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "De acuerdo con la Tabla 1A (Plan Básico Estándar) del MOA 8.1.7.2.5 y la pregunta oficial P50 del examen de mando, para un alternativo con aproximación de No Precisión (NPA), los mínimos de planificación exigen: Mínimos de No Precisión (MDH/MDA y visibilidad) + 200 ft de techo y + 1.000 m de visibilidad.",
+        "references": [
+          "Examen Mando Binter FOR-ENT-006 (P50)",
+          "MOA 8.1.7.2.5 Tabla 1A"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.35
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "command-course"
+    },
+    "requestedAt": 1790683409400,
+    "reasonCategory": "💬 Otro motivo / Sugerencia de mejora",
+    "comment": "Según la respuesta, da la sensación que la pregunta no está bien formulada, porque un aumento de 200ft y 1000m corresponde a la línea dos o mas operaciones de aproximación porque un instrumentos tipo A en usa, cada una de ellas basada en una ayuda de navegación diferente",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-EXAM-051_1790683458797",
+    "questionId": "CMD-EXAM-051",
+    "question": {
+      "id": "CMD-EXAM-051",
+      "subject_id": "cmd_flight_planning",
+      "learning_objective": "MOA 8.1.7.2 - Mínimos de Planificación para Circling",
+      "stem": "Para la selección de un aeródromo alternativo en ruta o de destino cuya aproximación principal sea en circuito (Circling), ¿cuáles son los mínimos de planificación?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mínimos de Circuito puros, manteniendo el cumplimiento de las limitaciones operacionales del manual",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "Mínimos de No Precisión, siempre que se notifique previamente a la autoridad competente y al CCO",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "Mínimos de CAT I, requiriendo autorización expresa del comandante y verificación de pesos",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "Mínimos de Circling + 200 ft de techo / 1000 m de visibilidad",
+          "is_correct": true
+        }
+      ],
+      "explanation": {
+        "text": "De acuerdo con el MOA 8.1.7.2 (Tabla 1A de Mínimos de Planificación para Aeródromos Alternativos en Ruta y de Destino) y la pregunta oficial P51 del Examen de Mando (FOR-ENT-006), cuando el procedimiento utilizable en el alternativo es una aproximación en circuito (Circling), se aplican los incrementos estándar de planificación: **Mínimos de Circling + 200 ft de techo / +1.000 m de visibilidad**.",
+        "references": [
+          "Binter Canarias MOA - Subcapítulo 8.1.7: Mínimos de Utilización de Aeródromo - Tabla 1A",
+          "Examen Oficial de Mando Binter FOR-ENT-006 (Pregunta 51)"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.35
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "command-course"
+    },
+    "requestedAt": 1790683458797,
+    "reasonCategory": "🔢 Errata en datos numéricos / límites / velocidades",
+    "comment": "Circling +400ft y +1500m",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-EXAM-071_1790705446444",
+    "questionId": "CMD-EXAM-071",
+    "question": {
+      "id": "CMD-EXAM-071",
+      "subject_id": "cmd_flight_planning",
+      "learning_objective": "MOA 8.1.7.2 - Mínimos de Planificación para Alternativos con ILS",
+      "stem": "Para seleccionar un aeródromo alternativo en ruta o destino cuya aproximación instrumental principal sea un ILS CAT I, ¿cuáles son los mínimos de planificación aplicables?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mínimos de Aproximación en Circuito visual (Circling) independientemente del tipo de ayuda",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "Mínimos de CAT II (DH 100 ft y RVR 300 m) requiriendo autorización de operaciones LVO",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "Mínimos de No Precisión (NPA: MDA/H y visibilidad) de la aproximación disponible en el alternativo",
+          "is_correct": true
+        },
+        {
+          "id": "D",
+          "text": "Mínimos de CAT I estándar (DH 200 ft y RVR 550 m) sin aplicar ningún incremento de planificación",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "Para una aproximación de precisión CAT I en el alternativo, los mínimos de planificación requeridos equivalen a los mínimos de aproximación de precisión de CAT I.",
+        "references": [
+          "Examen Mando Binter FOR-ENT-006 (P71)",
+          "MOA 8.1.7.2.5"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.35
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "command-course"
+    },
+    "requestedAt": 1790705446444,
+    "reasonCategory": "💬 Otro motivo / Sugerencia de mejora",
+    "comment": "Revisar pregunta ya que las tablas que aplican con la normativa actual son las tablas plan de combustible básico y plan de combustible básico con variaciones",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-EXAM-081_1790705666064",
+    "questionId": "CMD-EXAM-081",
+    "question": {
+      "id": "CMD-EXAM-081",
+      "subject_id": "cmd_disruptive_pax",
+      "learning_objective": "MOA 8.2.2 - Aumento del Cupo de Bebés a Bordo",
+      "stem": "La cantidad máxima de bebés a bordo está establecida en 7 (ATR-72) y 12 (E195-E2). ¿Puede incrementarse legalmente este número?",
+      "options": [
+        {
+          "id": "A",
+          "text": "No, es una limitación estructural estricta e inviolable que no admite excepciones operativas",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sí, siempre que el número total de pasajeros adultos no supere el 80% de la capacidad de cabina",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "Sí, siempre que se disponga de máscaras de oxígeno, cinturones adicionales y chalecos salvavidas para todos",
+          "is_correct": true
+        },
+        {
+          "id": "D",
+          "text": "Solo en vuelos de duración inferior a 45 minutos sin necesidad de equipo de seguridad adicional",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "El número de bebés puede incrementarse siempre que la dotación de equipos de emergencia del avión garantice chaleco salvavidas de bebé, cinturón suplementario y toma de oxígeno en el PSU para cada infante.",
+        "references": [
+          "Examen Mando Binter FOR-ENT-006 (P81)",
+          "MOA 8.2.2.5"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.35
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "command-course"
+    },
+    "requestedAt": 1790705666064,
+    "reasonCategory": "💬 Otro motivo / Sugerencia de mejora",
+    "comment": "Reformula esta pregunta, para que pregunte realmente cuantos bebes se pueden transportar en la flota EMBRAER",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-EXAM-082_1790705723774",
+    "questionId": "CMD-EXAM-082",
+    "question": {
+      "id": "CMD-EXAM-082",
+      "subject_id": "cmd_disruptive_pax",
+      "learning_objective": "MOA 8.2.2.5 - Ratios de Acompañantes en Grupos de Menores",
+      "stem": "En el transporte de grupos organizados de menores (entre 5 y 11 años cumplidos), ¿cuál es la ratio mínima obligatoria de adultos acompañantes?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Al menos 1 adulto por cada 15 niños hasta un máximo de 75 niños a bordo",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "Al menos 1 adulto por cada 5 niños hasta un máximo de 30 niños a bordo",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "Al menos 1 adulto por cada 20 niños sin límite de menores en el avión",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "Al menos 1 adulto por cada 10 niños hasta un máximo de 60 niños a bordo",
+          "is_correct": true
+        }
+      ],
+      "explanation": {
+        "text": "Para grupos de menores de 5 a 11 años se exige un mínimo de 1 acompañante mayor de edad por cada 10 niños, con un límite máximo de 60 menores por aeronave.",
+        "references": [
+          "Examen Mando Binter FOR-ENT-006 (P82)",
+          "MOA 8.2.2.5 Grupos de Menores"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.35
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "command-course"
+    },
+    "requestedAt": 1790705723774,
+    "reasonCategory": "💬 Otro motivo / Sugerencia de mejora",
+    "comment": "Comprueba, creo que el máximo de grupo menores es de 59",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-EXP26-012_1790706631849",
+    "questionId": "CMD-EXP26-012",
+    "question": {
+      "id": "CMD-EXP26-012",
+      "subject_id": "command-upgrade",
+      "learning_objective": "MOA 8.1.7.2.5 (Tabla 1B) - Plan Básico con Variaciones: 2 aproximaciones de precisión a pistas independientes",
+      "stem": "Al seleccionar un aeródromo alternativo de destino que cuenta con dos pistas independientes utilizables con aproximaciones de precisión ILS operativas (mínimos publicados: DA/H 200 ft y RVR 550 m), aplicando el Plan Básico con Variaciones de Binter (Tabla 1B del MOA 8.1.7.2.5 para categoría B), ¿qué mínimos meteorológicos de planificación deben pronosticarse en ETA ±1h?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mínimos de No Precisión (MDH + 200 ft de techo y RVR + 1.000 m)",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "Techo 200 ft y RVR 550 m (mínimos de aproximación sin aplicar ningún incremento)",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "Techo de nubes: DA/H + 100 ft (300 ft) y Visibilidad/RVR: RVR + 300 m (850 m)",
+          "is_correct": true
+        },
+        {
+          "id": "D",
+          "text": "Techo 400 ft y visibilidad 1.500 m fijos independientemente de las pistas disponibles",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "De acuerdo con la **Tabla 1B del MOA 8.1.7.2.5 (Plan Básico con Variaciones de Binter / AMC1 CAT.OP.MPA.185)**:\n- Cuando el alternativo dispone de **al menos dos aproximaciones de precisión utilizables a pistas independientes**:\n  * Para aeronaves de Categoría B: el incremento reglamentario sobre los mínimos de aproximación en uso es de **+100 ft a la DA/H** y **+300 m al RVR/visibilidad** (resultando en 300 ft de techo y 850 m de RVR a partir de una aproximación base de 200 ft / 550 m).\n  * (En contraste, el Plan Básico Estándar de la Tabla 1A exigiría mínimos de aproximación de no precisión: MDH + 200 ft / RVR + 1.000 m).",
+        "references": [
+          "MOA Binter ED06 RN27 - Subcapítulo 8.1.7.2.5: Tabla 1B de Mínimos de Planificación (Plan Básico con Variaciones)",
+          "EASA AMC1 CAT.OP.MPA.185(c): Selection of aerodromes - Planning minima"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.45
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "command-course"
+    },
+    "requestedAt": 1790706631849,
+    "reasonCategory": "💬 Otro motivo / Sugerencia de mejora",
+    "comment": "Complica un poco mas encontrar la respuesta correcta. Usando como distractores otras filas de la tabla que no correspondan a la fila del enunciado propuesto",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-EXP26-016_1790707311606",
+    "questionId": "CMD-EXP26-016",
+    "question": {
+      "id": "CMD-EXP26-016",
+      "subject_id": "command-upgrade",
+      "learning_objective": "MOA 8.1.8.6 - Límite Máximo de Corrección por LMC (Last Minute Change)",
+      "stem": "¿Qué acción es imperativa si un cambio de última hora (LMC) de pasajeros o carga hace que el centro de gravedad (CG) calculado se desplace fuera de los límites de la envolvente permitida en la hoja de carga?",
+      "options": [
+        {
+          "id": "A",
+          "text": "El Comandante puede compensarlo aumentando la velocidad de rotación Vr en 5 nudos.",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "Se debe descargar combustible inmediatamente hasta volver a centrar el avión.",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "Debe solicitarse la emisión de una nueva hoja de carga (New Loadsheet) completa y no se puede aplicar el procedimiento manual de LMC.",
+          "is_correct": true
+        },
+        {
+          "id": "D",
+          "text": "Se autoriza el despegue siempre que el peso total en despegue sea inferior al MTOW en 2.000 kg.",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "Conforme al MOA 8.1.8.6, el procedimiento manual LMC solo es legal si la masa total se mantiene dentro de los límites numéricos de LMC (ej. ±500 kg) Y el centro de gravedad resultante permanece dentro de la envolvente certificada de masa y centrado. Si el CG sale de la envolvente o se superan los límites, es mandatorio generar una nueva hoja de carga.",
+        "references": [
+          "MOA Binter ED06 RN27 - Subcapítulo 8.1.8.6: Procedimientos de Corrección LMC",
+          "Binter Weight and Balance Manual"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.3
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "command-course"
+    },
+    "requestedAt": 1790707311606,
+    "reasonCategory": "💬 Otro motivo / Sugerencia de mejora",
+    "comment": "Reformula la pregunta de tal manera que haya que averiguar la correcta sabiendo cuales son los límites de LMC 500 kg totales si es añadir o quitar pasajeros y/o carga y 250 kg si es movimiento de carga o pasajeros. Y si hay cambios de los dos añadir/quitar y mover, aplica lo más restrictivo 250kg para una nueva hoja de carga",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-EXP26-023_1790706865803",
+    "questionId": "CMD-EXP26-023",
+    "question": {
+      "id": "CMD-EXP26-023",
+      "subject_id": "command-upgrade",
+      "learning_objective": "QRH Sección 1 / MOB 3.1 - Comunicación NITS Briefing en Situaciones de Emergencia",
+      "stem": "En una situación de emergencia o anormal que aconseje preparar la cabina para una posible evacuación, el Comandante debe impartir el briefing al Sobrecargo de Vuelo (SCC) siguiendo la estructura mnemotécnica:",
+      "options": [
+        {
+          "id": "A",
+          "text": "NITS: Nature (Naturaleza del problema), Intentions (Intenciones del Comandante), Time (Tiempo disponible hasta la toma), Special instructions (Instrucciones especiales para tripulación de cabina).",
+          "is_correct": true
+        },
+        {
+          "id": "B",
+          "text": "PAPA: Passengers, Alternates, Power, Actions.",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "SOP: Standard, Operations, Pilot, Action.",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "FAST: Fire, Altitude, Speed, Time.",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "Conforme al MOB 3.1 y MOA 8.3 de Binter, el modelo estandarizado para comunicar una situación anormal o de emergencia a la tripulación de cabina es el briefing **NITS**:\n- **N**: Nature of the emergency (Naturaleza).\n- **I**: Intentions (Intenciones: desvío, toma inmediata, etc.).\n- **T**: Time remaining to landing (Tiempo disponible para preparar cabina).\n- **S**: Special instructions / Specific signals (Instrucciones específicas: evacuación por un solo lado, etc.).",
+        "references": [
+          "MOB Binter E195-E2 - Subcapítulo 3.1: Briefings de Emergencia (NITS)",
+          "MOA Binter ED06 RN27 - Subcapítulo 8.3: Coordinación Técnica-Cabina"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.3
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "command-course"
+    },
+    "requestedAt": 1790706865803,
+    "reasonCategory": "💬 Otro motivo / Sugerencia de mejora",
+    "comment": "En Binter se usa el TELSI, revisa y corrige",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-EXP26-025_1790707039400",
+    "questionId": "CMD-EXP26-025",
+    "question": {
+      "id": "CMD-EXP26-025",
+      "subject_id": "command-upgrade",
+      "learning_objective": "MOB 3.1.0 - Cancelación de Orden de Evacuación",
+      "stem": "Si tras una parada de emergencia en pista el Comandante determina que la situación está bajo control y no es necesaria una evacuación de emergencia, ¿cuál es la llamada oficial por PA que debe realizar?",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"ATENCIÓN TRIPULACIÓN, EMBARQUE REANUDADO\".",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "\"PASAJEROS DESABROCHEN CINTURONES Y ESPEREN A LA ESCALERA\".",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "\"TRIPULACIÓN DE CABINA Y PASAJEROS, CANCELAR EVACUACIÓN, CANCELAR EVACUACIÓN, PERMANEZCAN SENTADOS\".",
+          "is_correct": true
+        },
+        {
+          "id": "D",
+          "text": "\"TODO ESTÁ BIEN, PUEDEN LEVANTARSE\".",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "Conforme a los procedimientos estandarizados del MOB 3.1.0 y MOA 8.3 de Binter, para cancelar una alerta o evitar una evacuación no deseada por parte del pasaje tras una parada imprevista, la llamada oficial e imperativa es: **\"TRIPULACIÓN DE CABINA Y PASAJEROS, CANCELAR EVACUACIÓN, CANCELAR EVACUACIÓN, PERMANEZCAN SENTADOS\"**.",
+        "references": [
+          "MOB Binter E195-E2 - Subcapítulo 3.1.0: Comunicaciones y Llamadas Normalizadas",
+          "MOA Binter ED06 RN27 - Subcapítulo 8.3: Coordinación de Emergencia"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.3
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "command-course"
+    },
+    "requestedAt": 1790707039400,
+    "reasonCategory": "💬 Otro motivo / Sugerencia de mejora",
+    "comment": "No es correcto, el PA para indicar a la tripulación de cabina que no va a ser necesaria una evacuación y que deben esperar instrucciones y dar los PAs oportunos es TRIPULACIÓN DE CABINA PERMANEZCAN SENTADAS",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-EXP26-026_1790707151959",
+    "questionId": "CMD-EXP26-026",
+    "question": {
+      "id": "CMD-EXP26-026",
+      "subject_id": "command-upgrade",
+      "learning_objective": "AFM 2-01 / AOM 1-04 - Altura Mínima de Conexión del Piloto Automático tras el Despegue",
+      "stem": "¿Cuál es la altitud mínima certificada para la conexión del piloto automático (AP) tras el despegue en el Embraer 195-E2 según el AFM?",
+      "options": [
+        {
+          "id": "A",
+          "text": "800 ft AGL.",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "400 ft AGL.",
+          "is_correct": true
+        },
+        {
+          "id": "C",
+          "text": "1.500 ft AGL.",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "100 ft AGL.",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "De acuerdo con la Sección 2 del AFM (Limitations) del Embraer 195-E2, la altura mínima para el enganche del sistema de piloto automático (Autopilot Engagement Altitude) tras el despegue es de **400 ft AGL**.",
+        "references": [
+          "Embraer 195-E2 AFM - Section 2: Operating Limitations - Autoflight System",
+          "AOM Volume 1 - Limitations 1-04"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.25
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "command-course"
+    },
+    "requestedAt": 1790707151959,
+    "reasonCategory": "💬 Otro motivo / Sugerencia de mejora",
+    "comment": "La altitud mínima para conexión piloto automático tras despegue es de 200 pies, por favor revisa y chequea",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-EXAM-067_1791191523546",
+    "questionId": "CMD-EXAM-067",
+    "question": {
+      "id": "CMD-EXAM-067",
+      "subject_id": "cmd_flight_planning",
+      "learning_objective": "SERA.4005 / MOA 8.1.7 - Declaración de MINIMUM FUEL",
+      "stem": "¿Qué implicaciones y obligaciones operacionales conlleva la declaración a ATC de la condición de \"MINIMUM FUEL\" (Combustible Mínimo)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Intervalo de rectificación de 10 días naturales (240 horas), excluyendo el día de detección en el parte técnico de vuelo",
+          "is_correct": true
+        },
+        {
+          "id": "B",
+          "text": "Intervalo de rectificación de 3 días naturales (72 horas), excluyendo el día de detección en el parte técnico de vuelo",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "Intervalo de rectificación de 120 días naturales, excluyendo el día de detección en el parte técnico de vuelo",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "Intervalo de rectificación según plazo específico fijado individualmente en el texto de la MEL sin periodo estándar",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "MINIMUM FUEL advierte a ATC de la situación justa de combustible sin otorgar prioridad, requiriendo que ATC informe de cualquier retraso previsto y transfiera la información a los sectores siguientes.",
+        "references": [
+          "Examen Mando Binter FOR-ENT-006 (P67)",
+          "MOA 8.1.7.5 Gestión de Combustible en Vuelo"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.35
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "command-course"
+    },
+    "requestedAt": 1791191523546,
+    "reasonCategory": "🔢 Errata en datos numéricos / límites / velocidades",
+    "comment": "NO TIENE SENTIDO LA RESPUESTA, REVISA",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-ALT-004_1791321544021",
+    "questionId": "CMD-ALT-004",
+    "question": {
+      "id": "CMD-ALT-004",
+      "subject_id": "command-upgrade",
+      "learning_objective": "MOA 8.1.7.2.5 Tabla 1A - Aproximación 3D Tipo A asociada a ayuda con mínimos <= 200 ft",
+      "stem": "Un aeródromo alternativo dispone de un procedimiento ILS CAT I pero con una DA de 300 ft debido a obstáculos. ¿Qué clasificación tiene este procedimiento según la Tabla 1A del MOA y cuáles son sus incrementos de planificación?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Aproximación en circuito: Techo MDA/H + 400 ft | VIS + 1.500 m",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "3D Tipo A (ayuda <= 200 ft): Techo DA/H + 200 ft | RVR/VIS + 800 m",
+          "is_correct": true
+        },
+        {
+          "id": "C",
+          "text": "Tipo B estándar: Techo DA/H + 150 ft | RVR/VIS + 450 m",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "2D Tipo A estándar: Techo MDA/H + 400 ft | RVR/VIS + 1.500 m",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "De acuerdo con el MOA 8.1.3 y la Tabla 1A del MOA 8.1.7.2.5:\n- Las aproximaciones Tipo B tienen DH < 250 ft. Si la DA/H es de 300 ft (≥ 250 ft), pasa a ser una **aproximación Tipo A**.\n- Al estar basada en un ILS (ayuda de precisión cuyos mínimos base de diseño son ≤ 200 ft), se encuadra en la fila: **'Operación de aproximación 3D por instrumentos tipo A, asociada a una ayuda con mínimos de 200 ft o menos'**.\n- Incrementos requeridos: **DA/H + 200 ft** y **RVR/VIS + 800 m**.",
+        "references": [
+          "MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 Tabla 1A",
+          "Examen Oficial Convocatoria Anterior Q10"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.7,
+        "topic": "minimos-planificacion-tabla-1-1a"
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "minimos-planificacion-y-alternativos"
+    },
+    "requestedAt": 1791321544021,
+    "reasonCategory": "🔢 Errata en datos numéricos / límites / velocidades",
+    "comment": "Mucho texto que las respuestas sean solo los datos de ft y m",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-ALT-015_1791321943740",
+    "questionId": "CMD-ALT-015",
+    "question": {
+      "id": "CMD-ALT-015",
+      "subject_id": "command-upgrade",
+      "learning_objective": "MOA 8.1.2.2 / CAT.OP.MPA.181 - Alternativo de Destino: Cuándo es obligatorio seleccionar DOS alternativos",
+      "stem": "¿Cuándo es obligatorio según el MOA 8.1.2.2 y CAT.OP.MPA.181 seleccionar DOS aeródromos alternativos de destino en el plan de vuelo operacional?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cuando en el destino solo haya aproximaciones de no precisión (Tipo A) y viento superior a 20 kt",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "1) Cuando las condiciones meteorológicas en destino (ETA ± 1 h) estén por debajo de los mínimos de planificación aplicables; o 2) Cuando no se disponga de información meteorológica para el destino",
+          "is_correct": true
+        },
+        {
+          "id": "C",
+          "text": "Únicamente cuando se aplique combustible de contingencia del 3% mediante Fuel ERA",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "1) Siempre que el vuelo supere las 4 horas de duración; o 2) En todos los vuelos nocturnos",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "Conforme a **CAT.OP.MPA.181(c)** y el **MOA 8.1.2.2**, el operador debe seleccionar **dos aeródromos alternativos de destino** cuando:\n1. Los informes o pronósticos meteorológicos adecuados para el aeródromo de destino indiquen que, desde **1 hora antes hasta 1 hora después de la ETA**, las condiciones meteorológicas estarán **por debajo de los mínimos de planificación aplicables**; o\n2. **No se disponga de información meteorológica** para el aeródromo de destino.",
+        "references": [
+          "MOA Binter ED06 RN27, Capítulo 8.1.2.2",
+          "CAT.OP.MPA.181(c)"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.6,
+        "topic": "seleccion-alternativos"
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "minimos-planificacion-y-alternativos"
+    },
+    "requestedAt": 1791321943740,
+    "reasonCategory": "💬 Otro motivo / Sugerencia de mejora",
+    "comment": "Chequea si es mínimos de planificación o mínimos de operacion",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-ALT-024_1791322178409",
+    "questionId": "CMD-ALT-024",
+    "question": {
+      "id": "CMD-ALT-024",
+      "subject_id": "command-upgrade",
+      "learning_objective": "MOA 8.1.7.1.2 - Fuel ERA (Alternativo en Ruta por Combustible)",
+      "stem": "¿Cuál es la ventaja operativa de seleccionar un aeródromo alternativo en ruta por combustible (Fuel ERA) según el MOA 8.1.7.1.2 y CAT.OP.MPA.180?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Elimina la necesidad de llevar combustible de reserva final",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "Permite no seleccionar alternativo de destino en ningún vuelo",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "Reduce la reserva de rodaje a cero kilogramos",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "Permite reducir el combustible de contingencia obligatorio del 5% del combustible de viaje al 3% (o 20 minutos de tiempo de vuelo, lo que sea mayor)",
+          "is_correct": true
+        }
+      ],
+      "explanation": {
+        "text": "Según el **MOA 8.1.7.1.2** y **CAT.OP.MPA.180**:\n- La selección de un **Fuel ERA adecuado** (que cumpla con la Tabla 1A o 1B en el 20% del círculo de radio alrededor del punto de ruta) permite aplicar el esquema de **contingencia reducida del 3%** en lugar del 5% estándar del trip fuel.",
+        "references": [
+          "MOA Binter ED06 RN27, Capítulo 8.1.7.1.2",
+          "CAT.OP.MPA.180"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.6,
+        "topic": "seleccion-alternativos"
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "minimos-planificacion-y-alternativos"
+    },
+    "requestedAt": 1791322178409,
+    "reasonCategory": "💬 Otro motivo / Sugerencia de mejora",
+    "comment": "Comprueba lo de 20 minutos de vuelo, no me suena",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-ALT-030_1791323564071",
+    "questionId": "CMD-ALT-030",
+    "question": {
+      "id": "CMD-ALT-030",
+      "subject_id": "command-upgrade",
+      "learning_objective": "MOA 8.1.7.2.5 - Replanificación en Vuelo (In-Flight Re-planning) de Mínimos de Alternativo",
+      "stem": "Si durante el vuelo la tripulación decide cambiar o seleccionar un nuevo aeródromo alternativo de destino en vuelo (In-flight replanning), ¿qué condiciones meteorológicas debe cumplir el nuevo alternativo según el MOA?",
+      "options": [
+        {
+          "id": "A",
+          "text": "No se requiere ninguna verificación meteorológica si el nuevo alternativo dispone de ILS CAT I",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "Debe cumplir los MÍNIMOS DE PLANIFICACIÓN (Tabla 1A o 1B) para la nueva ETA prevista (ETA ± 1h)",
+          "is_correct": true
+        },
+        {
+          "id": "C",
+          "text": "Debe cumplir exclusivamente limitaciones de viento en superficie sin evaluar techo ni visibilidad",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "Basta con que cumpla los MÍNIMOS DE OPERACIÓN del aeródromo en el momento previsto de la toma",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "Conforme a **CAT.OP.MPA.182** y el **MOA 8.1.7.2.5**, si se selecciona un nuevo aeródromo alternativo de destino o de ruta mientras el avión está en vuelo (replanificación en vuelo), el nuevo aeródromo debe cumplir con los **MÍNIMOS DE PLANIFICACIÓN (Tabla 1A o 1B)** para su nueva ETA calculada.",
+        "references": [
+          "MOA Binter ED06 RN27, Capítulo 8.1.7.2.5",
+          "CAT.OP.MPA.182"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.6,
+        "topic": "operacion-vs-planificacion"
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "minimos-planificacion-y-alternativos"
+    },
+    "requestedAt": 1791323564071,
+    "reasonCategory": "💬 Otro motivo / Sugerencia de mejora",
+    "comment": "Revisar si es seguro mínimos de planificación o de operacion",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-ALT-030_1791397047136",
+    "questionId": "CMD-ALT-030",
+    "question": {
+      "id": "CMD-ALT-030",
+      "subject_id": "command-upgrade",
+      "learning_objective": "MOA 8.1.7.2.5 - Replanificación en Vuelo (In-Flight Re-planning) de Mínimos de Alternativo",
+      "stem": "Si durante el vuelo la tripulación decide cambiar o seleccionar un nuevo aeródromo alternativo de destino en vuelo (In-flight replanning), ¿qué condiciones meteorológicas debe cumplir el nuevo alternativo según el MOA?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Debe cumplir los MÍNIMOS DE PLANIFICACIÓN (Tabla 1A o 1B) para la nueva ETA prevista (ETA ± 1h)",
+          "is_correct": true
+        },
+        {
+          "id": "B",
+          "text": "No se requiere ninguna verificación meteorológica si el nuevo alternativo dispone de ILS CAT I",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "Basta con que cumpla los MÍNIMOS DE OPERACIÓN del aeródromo en el momento previsto de la toma",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "Debe cumplir exclusivamente limitaciones de viento en superficie sin evaluar techo ni visibilidad",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "Conforme a **CAT.OP.MPA.182** y el **MOA 8.1.7.2.5**, si se selecciona un nuevo aeródromo alternativo de destino o de ruta mientras el avión está en vuelo (replanificación en vuelo), el nuevo aeródromo debe cumplir con los **MÍNIMOS DE PLANIFICACIÓN (Tabla 1A o 1B)** para su nueva ETA calculada.",
+        "references": [
+          "MOA Binter ED06 RN27, Capítulo 8.1.7.2.5",
+          "CAT.OP.MPA.182"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.6,
+        "topic": "operacion-vs-planificacion"
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "minimos-planificacion-y-alternativos"
+    },
+    "requestedAt": 1791397047136,
+    "reasonCategory": "💬 Otro motivo / Sugerencia de mejora",
+    "comment": "Comprobar si es planificación u operación, yo creo que es operación.",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-EXP26-026_1791400793566",
+    "questionId": "CMD-EXP26-026",
+    "question": {
+      "id": "CMD-EXP26-026",
+      "subject_id": "command-upgrade",
+      "learning_objective": "AFM 2-01 / AOM 1-04 - Altura Mínima de Conexión del Piloto Automático tras el Despegue",
+      "stem": "¿Cuál es la altitud mínima certificada para la conexión del piloto automático (AP) tras el despegue en el Embraer 195-E2 según el AFM?",
+      "options": [
+        {
+          "id": "A",
+          "text": "400 ft AGL.",
+          "is_correct": true
+        },
+        {
+          "id": "B",
+          "text": "100 ft AGL.",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "1.500 ft AGL.",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "800 ft AGL.",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "De acuerdo con la Sección 2 del AFM (Limitations) del Embraer 195-E2, la altura mínima para el enganche del sistema de piloto automático (Autopilot Engagement Altitude) tras el despegue es de **400 ft AGL**.",
+        "references": [
+          "Embraer 195-E2 AFM - Section 2: Operating Limitations - Autoflight System",
+          "AOM Volume 1 - Limitations 1-04"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.25
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "command-course"
+    },
+    "requestedAt": 1791400793566,
+    "reasonCategory": "🔢 Errata en datos numéricos / límites / velocidades",
+    "comment": "Es de 200 ft",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-EXP26-029_1791400739506",
+    "questionId": "CMD-EXP26-029",
+    "question": {
+      "id": "CMD-EXP26-029",
+      "subject_id": "command-upgrade",
+      "learning_objective": "MOA 8.3 / CRM Binter - Mnemónico IMFLOCC para Gestión de Desvíos",
+      "stem": "Durante la toma de decisiones y ejecución de un desvío a un aeródromo alternativo en vuelo, ¿qué representa el mnemónico operacional IMFLOCC utilizado en Binter?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ILS, MDA, FAF, Localizer, Obstáculos, Circling, Cartas.",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "Informe, Mantenimiento, Facturación, LMC, OFP, Control, Checklists.",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "I: Información / Intenciones; M: Meteorología / Mínimos; F: Fuel / Combustible; L: Legalidad / FTL; O: Operaciones / Handling; C: Cabin Crew / Pasajeros; C: ATC / Coordinación.",
+          "is_correct": true
+        },
+        {
+          "id": "D",
+          "text": "Instrumentos, Motores, Flaps, Luces, Oxígeno, Circuitos, Calzos.",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "En los procedimientos de CRM y gestión de desvíos de Binter (MOA 8.3 y manual de formación de mandos), **IMFLOCC** estructura la revisión integral de un desvío:\n- **I**: Information / Intenciones generales.\n- **M**: Meteorology & Minima en alternativo.\n- **F**: Fuel management (Trip al alternativo + Final Reserve + márgenes).\n- **L**: Legal aspects (FTL de tripulación, restricciones de aeropuerto).\n- **O**: Operations (Handling, pasarela, repostaje disponible).\n- **C**: Cabin crew & Passengers (comunicación al pasaje).\n- **C**: Communications / ATC / Despacho OCC.",
+        "references": [
+          "MOA Binter ED06 RN27 - Subcapítulo 8.3: Gestión del Vuelo y Desvíos",
+          "Manual de Curso de Mando Binter - Toma de Decisiones y Mnemónicos Operacionales"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.4
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "command-course"
+    },
+    "requestedAt": 1791400739506,
+    "reasonCategory": "🔢 Errata en datos numéricos / límites / velocidades",
+    "comment": "Está mal",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-EXP26-041_1791397233699",
+    "questionId": "CMD-EXP26-041",
+    "question": {
+      "id": "CMD-EXP26-041",
+      "subject_id": "command-upgrade",
+      "learning_objective": "MOA 8.1.7.1.2.3.1 - Mínimo absoluto de Combustible de Contingencia E195-E2",
+      "stem": "¿Cuál es la cantidad mínima absoluta de combustible de contingencia (Contingency Fuel) que debe llevar el Embraer 195-E2 en cualquier plan de vuelo básico?",
+      "options": [
+        {
+          "id": "A",
+          "text": "200 kg.",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "140 kg (equivalente al consumo de 5 minutos de espera a 1.500 ft en condiciones estándar).",
+          "is_correct": true
+        },
+        {
+          "id": "C",
+          "text": "350 kg.",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "500 kg.",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "Conforme al MOA 8.1.7.1.2.3.1 (pág. 378 y 380):\nEl combustible de contingencia será el mayor del 5% del Trip Fuel o el necesario para 5 minutos a velocidad de holding a 1.500 ft sobre el destino. Para la flota E195-E2, este suelo mínimo obligatorio está fijado en **140 kg**.",
+        "references": [
+          "MOA Binter ED06 RN27 - Subcapítulo 8.1.7.1.2.3.1 (pág. 378): Mínimo Combustible Contingencia",
+          "EASA Part-CAT.OP.MPA.180"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.35
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "command-course"
+    },
+    "requestedAt": 1791397233699,
+    "reasonCategory": "⚖️ Opciones o distractores ambiguos / poco claros",
+    "comment": "Dejar respuestas solo numéricas, el texto ayuda a averiguar correct",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-EXP26-029_1791478441701",
+    "questionId": "CMD-EXP26-029",
+    "question": {
+      "id": "CMD-EXP26-029",
+      "subject_id": "command-upgrade",
+      "learning_objective": "MOA 8.3 / CRM Binter - Mnemónico IMFLOCC para Gestión de Desvíos",
+      "stem": "Durante la toma de decisiones y ejecución de un desvío a un aeródromo alternativo en vuelo, ¿qué representa el mnemónico operacional IMFLOCC utilizado en Binter?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Instrumentos, Motores, Flaps, Luces, Oxígeno, Circuitos, Calzos.",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "I: Información / Intenciones; M: Meteorología / Mínimos; F: Fuel / Combustible; L: Legalidad / FTL; O: Operaciones / Handling; C: Cabin Crew / Pasajeros; C: ATC / Coordinación.",
+          "is_correct": true
+        },
+        {
+          "id": "C",
+          "text": "Informe, Mantenimiento, Facturación, LMC, OFP, Control, Checklists.",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "ILS, MDA, FAF, Localizer, Obstáculos, Circling, Cartas.",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "En los procedimientos de CRM y gestión de desvíos de Binter (MOA 8.3 y manual de formación de mandos), **IMFLOCC** estructura la revisión integral de un desvío:\n- **I**: Information / Intenciones generales.\n- **M**: Meteorology & Minima en alternativo.\n- **F**: Fuel management (Trip al alternativo + Final Reserve + márgenes).\n- **L**: Legal aspects (FTL de tripulación, restricciones de aeropuerto).\n- **O**: Operations (Handling, pasarela, repostaje disponible).\n- **C**: Cabin crew & Passengers (comunicación al pasaje).\n- **C**: Communications / ATC / Despacho OCC.",
+        "references": [
+          "MOA Binter ED06 RN27 - Subcapítulo 8.3: Gestión del Vuelo y Desvíos",
+          "Manual de Curso de Mando Binter - Toma de Decisiones y Mnemónicos Operacionales"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.4
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "command-course"
+    },
+    "requestedAt": 1791478441701,
+    "reasonCategory": "🔢 Errata en datos numéricos / límites / velocidades",
+    "comment": "la definición de imflocc es incorrecta, revisar MOB",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-ALT-027_1791478858035",
+    "questionId": "CMD-ALT-027",
+    "question": {
+      "id": "CMD-ALT-027",
+      "subject_id": "command-upgrade",
+      "learning_objective": "MOA 8.1.7.2.5 Tabla 1A - Caso Práctico 4: 2 Aproximaciones Tipo A basadas en distintas ayudas",
+      "stem": "Un aeródromo alternativo dispone en dos pistas de: 1) Aproximación RNP APCH (LNAV/VNAV con DA 400 ft, RVR 1.200 m) y 2) Aproximación VOR (MDA 500 ft, Visibilidad 1.800 m). Aplicando la Tabla 1A, ¿cuáles son los mínimos de planificación?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Techo: 600 ft | Visibilidad: 2.200 m",
+          "is_correct": false
+        },
+        {
+          "id": "B",
+          "text": "Techo: 500 ft | Visibilidad: 1.800 m",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "Techo: 900 ft | Visibilidad: 3.300 m",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "Techo: 700 ft | Visibilidad: 2.800 m",
+          "is_correct": true
+        }
+      ],
+      "explanation": {
+        "text": "Cálculo según Tabla 1A (MOA 8.1.7.2.5):\n- Categoría: **Dos o más operaciones de aproximación por instrumentos del tipo A en uso basadas en ayudas distintas** (RNP y VOR).\n- Regla: Se añaden los márgenes sobre los **valores más altos de DA/MDA y RVR/VIS en uso**:\n  - Altura más alta: MDA = 500 ft \\longrightarrow 500 + 200 = 700 ft.\n  - Visibilidad más alta: VIS = 1.800 m \\longrightarrow 1.800 + 1.000 = 2.800 m.",
+        "references": [
+          "MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 Tabla 1A"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.7,
+        "topic": "casos-practicos-calculos"
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "minimos-planificacion-y-alternativos"
+    },
+    "requestedAt": 1791478858035,
+    "reasonCategory": "💬 Otro motivo / Sugerencia de mejora",
+    "comment": "porque? supuestamente se puede usar la mas ventajosa, revisa pregunta y respuesta",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
+  },
+  {
+    "id": "rev_CMD-EXP26-066_1791479029110",
+    "questionId": "CMD-EXP26-066",
+    "question": {
+      "id": "CMD-EXP26-066",
+      "subject_id": "command-upgrade",
+      "learning_objective": "MOA 8.1.8.3 / EASA CAT.POL.MAB.100 - Masas Estándar de la Tripulación (Técnica y Cabina)",
+      "stem": "En el cálculo del Peso Operativo en Seco (DOW) y confección de la hoja de carga según el MOA 8.1.8.3 y la normativa EASA, ¿cuáles son los pesos estándar asignados a los miembros de la tripulación técnica y tripulación de cabina (incluyendo su equipaje reglamentario)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tripulación técnica (Flight Crew): 85 kg por piloto | Tripulación de cabina (Cabin Crew / TCP): 75 kg por TCP",
+          "is_correct": true
+        },
+        {
+          "id": "B",
+          "text": "Tripulación técnica: 90 kg por piloto | Tripulación de cabina: 85 kg por TCP",
+          "is_correct": false
+        },
+        {
+          "id": "C",
+          "text": "Tripulación técnica: 80 kg por piloto | Tripulación de cabina: 65 kg por TCP",
+          "is_correct": false
+        },
+        {
+          "id": "D",
+          "text": "Tripulación técnica: 88 kg por piloto | Tripulación de cabina: 70 kg por TCP",
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "text": "Conforme al **MOA 8.1.8.3** y **EASA CAT.POL.MAB.100(e)** (y AMC1 CAT.POL.MAB.100(e)), los valores de masa estándar para la tripulación computados en el DOW son:\n\n### 📊 Tabla de Masas Estándar de Tripulación (MOA 8.1.8)\n| Colectivo de Tripulación | Masa Persona | Equipaje Reglamentario | Masa Total Asignada |\n| :--- | :--- | :--- | :--- |\n| **Tripulante de Vuelo (Flight Crew)** | 75 kg | 10 kg (maletín de vuelo/equipaje) | **85 kg** |\n| **Tripulante de Cabina (Cabin Crew / TCP)** | 65 kg | 10 kg (equipaje de servicio) | **75 kg** |\n\n> *Nota:* Los valores de 88 kg (varón) y 70 kg (mujer) corresponden a los pasajeros estándar.",
+        "references": [
+          "MOA Binter ED06 RN27 - Subcapítulo 8.1.8.3: Masas Estándar de Tripulación y Pasajeros",
+          "EASA Part-CAT.POL.MAB.100(e): Mass and balance, loading - Crew members",
+          "AMC1 CAT.POL.MAB.100(e)"
+        ]
+      },
+      "metadata": {
+        "difficulty": 0.35
+      },
+      "_category": "command-upgrade",
+      "_subtopic": "command-course"
+    },
+    "requestedAt": 1791479029110,
+    "reasonCategory": "💬 Otro motivo / Sugerencia de mejora",
+    "comment": "revisar, la correcta es la que mas texto tiene y se identifica fácil",
+    "status": "resolved",
+    "resolvedAt": 1791655600000
   }
 ]

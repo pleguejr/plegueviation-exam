@@ -118,26 +118,26 @@
     "id": "CMD-ALT-004",
     "subject_id": "command-upgrade",
     "learning_objective": "MOA 8.1.7.2.5 Tabla 1A - Aproximación 3D Tipo A asociada a ayuda con mínimos <= 200 ft",
-    "stem": "Un aeródromo alternativo dispone de un procedimiento ILS CAT I pero con una DA de 300 ft debido a obstáculos. ¿Qué clasificación tiene este procedimiento según la Tabla 1A del MOA y cuáles son sus incrementos de planificación?",
+    "stem": "En la etapa de planificación (Plan Básico con Variaciones, Tabla 1A del MOA 8.1.7.2.5), para una aproximación 3D de Tipo A (como RNP APCH hasta LNAV/VNAV) cuyo incremento de RVR por luces inoperativas no supera los 200 m y cuya DH no supera los 200 ft, ¿cuáles son los incrementos meteorológicos de planificación?",
     "options": [
       {
         "id": "A",
-        "text": "Aproximación en circuito: Techo MDA/H + 400 ft | VIS + 1.500 m",
+        "text": "Techo: MDA/H + 400 ft | RVR/VIS: + 1.500 m",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "3D Tipo A (ayuda <= 200 ft): Techo DA/H + 200 ft | RVR/VIS + 800 m",
+        "text": "Techo: DA/H + 200 ft | RVR/VIS: + 800 m",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "Tipo B estándar: Techo DA/H + 150 ft | RVR/VIS + 450 m",
+        "text": "Techo: DA/H + 150 ft | RVR/VIS: + 450 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "2D Tipo A estándar: Techo MDA/H + 400 ft | RVR/VIS + 1.500 m",
+        "text": "Techo: DA/H + 100 ft | RVR/VIS: + 300 m",
         "is_correct": false
       }
     ],
@@ -542,31 +542,31 @@
     "id": "CMD-ALT-015",
     "subject_id": "command-upgrade",
     "learning_objective": "MOA 8.1.2.2 / CAT.OP.MPA.181 - Alternativo de Destino: Cuándo es obligatorio seleccionar DOS alternativos",
-    "stem": "¿Cuándo es obligatorio según el MOA 8.1.2.2 y CAT.OP.MPA.181 seleccionar DOS aeródromos alternativos de destino en el plan de vuelo operacional?",
+    "stem": "Según el MOA 8.1.7.2.1 y 8.1.7.2.3 (CAT.OP.MPA.182), ¿en qué dos situaciones es obligatorio seleccionar DOS aeródromos alternativos de destino en el plan de vuelo operacional (OFP)?",
     "options": [
       {
         "id": "A",
-        "text": "Únicamente cuando se aplique combustible de contingencia del 3% mediante Fuel ERA",
+        "text": "Siempre que el vuelo tenga una duración superior a 2 horas o cuando la pista de destino tenga una longitud disponible (LDA) inferior a 2.000 metros.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Cuando en el destino solo haya aproximaciones de no precisión (Tipo A) y viento superior a 20 kt",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "1) Cuando las condiciones meteorológicas en destino (ETA ± 1 h) estén por debajo de los mínimos de planificación aplicables; o 2) Cuando no se disponga de información meteorológica para el destino",
+        "text": "Cuando los partes o predicciones en destino desde 1h antes hasta 1h después de la ETA estén por debajo de los mínimos de operación aplicables, o no haya información.",
         "is_correct": true
       },
       {
+        "id": "C",
+        "text": "Únicamente cuando el aeródromo de destino disponga de una sola pista operativa y no cuente con servicio de control de aproximación por radar activo.",
+        "is_correct": false
+      },
+      {
         "id": "D",
-        "text": "1) Siempre que el vuelo supere las 4 horas de duración; o 2) En todos los vuelos nocturnos",
+        "text": "Cuando el techo de nubes en el destino sea inferior a 2.000 ft o la visibilidad sea inferior a 5 km durante las dos horas previas a la hora prevista.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Conforme a **CAT.OP.MPA.181(c)** y el **MOA 8.1.2.2**, el operador debe seleccionar **dos aeródromos alternativos de destino** cuando:\n1. Los informes o pronósticos meteorológicos adecuados para el aeródromo de destino indiquen que, desde **1 hora antes hasta 1 hora después de la ETA**, las condiciones meteorológicas estarán **por debajo de los mínimos de planificación aplicables**; o\n2. **No se disponga de información meteorológica** para el aeródromo de destino.\n\n> 📖 **Extracto Literal del Manual — MOA Binter ED06 RN27, Capítulo 8.1.2.2 (Pág. 151):**\n> \"p p p , especial el ROV se asegurará de que la tripulación designada cumple con los requisitos para la operación en función de la categoría de aeródromo. Para esto se aplicará el procedimiento establecido en el MO(A) 8.1.2.2.13. Igualmente, el ROV nombrará a un responsable de destacamento, como contacto para cualquier eventualidad o gestión que se requiera en la operativa. Antes de iniciar la operación se tendrá en cuenta las necesidades de desplazamiento de las tripulaciones al lugar de oper...\"\n\n![Recorte Oficial del Manual — MOA Binter ED06 RN27, Capítulo 8.1.2.2](./manual-crops/command-upgrade/CMD-ALT-015.png)",
+      "text": "De acuerdo con el **MOA 8.1.7.2.1 (Selección de aeródromo de destino)** y **MOA 8.1.7.2.3 (CAT.OP.MPA.182 — Selección de aeródromos alternativos de destino)**, se deben seleccionar **DOS aeródromos alternativos de destino** cuando:\n1. Los informes o predicciones meteorológicas vigentes para el **aeródromo de destino**, durante el período desde **1 hora antes hasta 1 hora después de la ETA**, indiquen que las condiciones estarán por debajo de los **mínimos de operación (aterrizaje) aplicables** del aeródromo de destino (incluyendo techo ≥ MDH si solo hay aproximaciones Tipo A o en circuito según MOA 8.1.7.2.1), o\n2. **No se disponga de información meteorológica** para el aeródromo de destino.\n\n*(Nota clave: En el aeródromo de **destino** se evalúan los **mínimos de operación/aterrizaje aplicables**, mientras que los **incrementos de planificación de las Tablas 1A y 1B** se aplican a los **aeródromos alternativos**)*.",
       "references": [
         "MOA Binter ED06 RN27, Capítulo 8.1.2.2",
         "CAT.OP.MPA.181(c)"
@@ -893,27 +893,27 @@
     "options": [
       {
         "id": "A",
-        "text": "Reduce la reserva de rodaje a cero kilogramos",
+        "text": "Permite eliminar por completo el combustible alternativo de destino (Alternate Fuel) sin necesidad de cumplir condiciones meteorológicas.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Elimina la necesidad de llevar combustible de reserva final",
+        "text": "Sustituye al aeródromo alternativo de despegue (Takeoff Alternate) cuando el aeropuerto de origen opera en procedimientos de baja visibilidad.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Permite reducir el combustible de contingencia obligatorio del 5% del combustible de viaje al 3% (o 20 minutos de tiempo de vuelo, lo que sea mayor)",
+        "text": "Permite reducir el combustible de contingencia del 5% al 3% del Trip Fuel (con un mínimo de 5 minutos de espera a 1.500 ft en condiciones ISA).",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "Permite no seleccionar alternativo de destino en ningún vuelo",
+        "text": "Permite reducir la Reserva Final de combustible (Final Reserve Fuel) de 30 minutos a 15 minutos durante la fase de crucero del vuelo.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Según el **MOA 8.1.7.1.2** y **CAT.OP.MPA.180**:\n- La selección de un **Fuel ERA adecuado** (que cumpla con la Tabla 1A o 1B en el 20% del círculo de radio alrededor del punto de ruta) permite aplicar el esquema de **contingencia reducida del 3%** en lugar del 5% estándar del trip fuel.\n\n> 📖 **Extracto Literal del Manual — MOA Binter ED06 RN27, Capítulo 8.1.7.1.2 (Pág. 377):**\n> \") q q p y aceite. 8.1.7.1.2 PLAN DE CÁLCULO DE COMBUSTIBLE El combustible necesario disponible a bordo antes de la salida de un vuelo, será la suma de combustibles requeridos para distintas funciones acorde a lo descrito en la figura resumen (responde a los criterios de plan básico de combustible). A continuación se procede a definir las figuras de combustible utilizadas en la planificación de Binter Airlines:\"\n\n![Recorte Oficial del Manual — MOA Binter ED06 RN27, Capítulo 8.1.7.1.2](./manual-crops/command-upgrade/CMD-ALT-024.png)",
+      "text": "Según el **MOA 8.1.7.1.2.3.2 (Combustible de contingencia)** y **MOA 8.1.7.2.5**, disponer de un aeródromo alternativo en ruta para ahorro de combustible (**Fuel ERA**) situado dentro del círculo reglamentario (radio 20% de la ruta y entre el 25% y 50% del trayecto desde destino) que cumpla los mínimos de planificación de la Tabla 1A/1B permite reducir el **combustible de contingencia del 5% al 3% del combustible previsto para el trayecto (Trip Fuel)**, pero en ningún caso será inferior al necesario para volar durante **5 minutos a velocidad de espera a 1.500 ft (450 m)** sobre el aeródromo de destino en condiciones normales (mínimo **140 kg** en el E195-E2).",
       "references": [
         "MOA Binter ED06 RN27, Capítulo 8.1.7.1.2",
         "CAT.OP.MPA.180"
@@ -1006,31 +1006,31 @@
     "id": "CMD-ALT-027",
     "subject_id": "command-upgrade",
     "learning_objective": "MOA 8.1.7.2.5 Tabla 1A - Caso Práctico 4: 2 Aproximaciones Tipo A basadas en distintas ayudas",
-    "stem": "Un aeródromo alternativo dispone en dos pistas de: 1) Aproximación RNP APCH (LNAV/VNAV con DA 400 ft, RVR 1.200 m) y 2) Aproximación VOR (MDA 500 ft, Visibilidad 1.800 m). Aplicando la Tabla 1A, ¿cuáles son los mínimos de planificación?",
+    "stem": "En un aeródromo alternativo bajo la Tabla 1A (Plan Básico con Variaciones) con dos aproximaciones Tipo A basadas en ayudas distintas: RNP APCH (MDH 400 ft / VIS 1.200 m) y VOR (MDH 500 ft / VIS 1.800 m), si se aplica la fila de 'Dos o más operaciones Tipo A en ayudas distintas' (notas * y ** de la Tabla 1A), ¿cuáles son los mínimos de planificación resultantes?",
     "options": [
       {
         "id": "A",
-        "text": "Techo: 900 ft | Visibilidad: 3.300 m",
+        "text": "Techo: 600 ft y Visibilidad: 2.200 m (sumando +200 ft y +1.000 m a la aproximación más baja).",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Techo: 700 ft | Visibilidad: 2.800 m",
+        "text": "Techo: 700 ft y Visibilidad: 2.800 m (sumando +200 ft y +1.000 m a la más alta de las dos en uso).",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "Techo: 500 ft | Visibilidad: 1.800 m",
+        "text": "Techo: 900 ft y Visibilidad: 3.300 m (sumando +400 ft y +1.500 m a la más alta de las dos en uso).",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Techo: 600 ft | Visibilidad: 2.200 m",
+        "text": "Techo: 550 ft y Visibilidad: 1.650 m (aplicando el incremento de aproximación Tipo B a la menor).",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Cálculo según Tabla 1A (MOA 8.1.7.2.5):\n- Categoría: **Dos o más operaciones de aproximación por instrumentos del tipo A en uso basadas en ayudas distintas** (RNP y VOR).\n- Regla: Se añaden los márgenes sobre los **valores más altos de DA/MDA y RVR/VIS en uso**:\n  - Altura más alta: MDA = 500 ft \\longrightarrow 500 + 200 = 700 ft.\n  - Visibilidad más alta: VIS = 1.800 m \\longrightarrow 1.800 + 1.000 = 2.800 m.\n\n> 📖 **Extracto Literal del Manual — MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 Tabla 1A (Pág. 378):**\n> \"asignado, por lo que podría ser obsoleto. Por favor, verifique el gestor documental para asegurarse de que está usando la versión vigente. a) 3% del combustible del vuelo (trip fuel) o, en el caso de re-planificación en vuelo, 3% del combustible de vuelo (trip fuel) necesario para el resto del vuelo, siempre que se disponga de un aeropuerto alternativo en ruta (Fuel ERA) en las condiciones especificadas en MO(A) 8.1.7.2.5; o b) el combustible necesario para volar 5 minutos a la velocidad de h...\"\n\n![Recorte Oficial del Manual — MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 Tabla 1A](./manual-crops/command-upgrade/CMD-ALT-027.png)",
+      "text": "De acuerdo con el **MOA 8.1.7.2.5 (Tabla 1A)**, cuando se utiliza la fila de **«Dos o más operaciones de aproximación por instrumentos del tipo A en uso, cada una de ellas basada en una ayuda de navegación distinta»** (+200 ft / +1.000 m), las notas al pie de tabla establecen literalmente:\n- **`*` El más alto de la DA/H o MDA/H en uso:** $\\max(400, 500) + 200 = \\mathbf{700\\text{ ft}}$.\n- **`**` El más alto de la RVR o VIS en uso:** $\\max(1.200, 1.800) + 1.000 = \\mathbf{2.800\\text{ m}}$.\n\n**¿Por qué se suma a la más alta en esta fila y cómo se compara con la regla de la fila más ventajosa?**\nPara poder beneficiarse del incremento reducido de **+200 ft / +1.000 m** por disponer de *dos* aproximaciones independientes, la meteorología debe permitir alcanzar los mínimos de *ambas* aproximaciones (de ahí que se sume a la más restrictiva de las dos). Si por el contrario evaluásemos únicamente la RNP APCH en solitario bajo la fila de *«Una operación Tipo A»* (+400 ft / +1.500 m), obtendríamos $400 + 400 = \\mathbf{800\\text{ ft}}$ de techo (peor que los 700 ft) y $1.200 + 1.500 = \\mathbf{2.700\\text{ m}}$ de visibilidad.",
       "references": [
         "MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 Tabla 1A"
       ]
@@ -1122,31 +1122,31 @@
     "id": "CMD-ALT-030",
     "subject_id": "command-upgrade",
     "learning_objective": "MOA 8.1.7.2.5 - Replanificación en Vuelo (In-Flight Re-planning) de Mínimos de Alternativo",
-    "stem": "Si durante el vuelo la tripulación decide cambiar o seleccionar un nuevo aeródromo alternativo de destino en vuelo (In-flight replanning), ¿qué condiciones meteorológicas debe cumplir el nuevo alternativo según el MOA?",
+    "stem": "Una vez que la aeronave se encuentra EN VUELO, si la tripulación evalúa la meteorología para dirigirse a un aeródromo alternativo o seleccionar un nuevo alternativo en vuelo (fuera de una replanificación formal para reducir contingencia al 3% con Fuel ERA), ¿qué mínimos meteorológicos son exigibles en dicho aeródromo?",
     "options": [
       {
         "id": "A",
-        "text": "No se requiere ninguna verificación meteorológica si el nuevo alternativo dispone de ILS CAT I",
+        "text": "Los mínimos de planificación de la Tabla 1B sin variaciones (+400 ft y +1.500 m sobre la MDA/H).",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Debe cumplir exclusivamente limitaciones de viento en superficie sin evaluar techo ni visibilidad",
+        "text": "Los mínimos de operación incrementados exactamente en la mitad de los márgenes de la Tabla 1A.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Debe cumplir los MÍNIMOS DE PLANIFICACIÓN (Tabla 1A o 1B) para la nueva ETA prevista (ETA ± 1h)",
-        "is_correct": true
+        "text": "Los mínimos de planificación de la Tabla 1A sumados a un margen adicional de 100 ft y 500 m.",
+        "is_correct": false
       },
       {
         "id": "D",
-        "text": "Basta con que cumpla los MÍNIMOS DE OPERACIÓN del aeródromo en el momento previsto de la toma",
-        "is_correct": false
+        "text": "Los mínimos de operación (aterrizaje) aplicables de la aproximación prevista a la hora de llegada.",
+        "is_correct": true
       }
     ],
     "explanation": {
-      "text": "Conforme a **CAT.OP.MPA.182** y el **MOA 8.1.7.2.5**, si se selecciona un nuevo aeródromo alternativo de destino o de ruta mientras el avión está en vuelo (replanificación en vuelo), el nuevo aeródromo debe cumplir con los **MÍNIMOS DE PLANIFICACIÓN (Tabla 1A o 1B)** para su nueva ETA calculada.\n\n> 📖 **Extracto Literal del Manual — MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 (Pág. 378):**\n> \"asignado, por lo que podría ser obsoleto. Por favor, verifique el gestor documental para asegurarse de que está usando la versión vigente. a) 3% del combustible del vuelo (trip fuel) o, en el caso de re-planificación en vuelo, 3% del combustible de vuelo (trip fuel) necesario para el resto del vuelo, siempre que se disponga de un aeropuerto alternativo en ruta (Fuel ERA) en las condiciones especificadas en MO(A) 8.1.7.2.5; o b) el combustible necesario para volar 5 minutos a la velocidad de h...\"\n\n![Recorte Oficial del Manual — MOA Binter ED06 RN27, Capítulo 8.1.7.2.5](./manual-crops/command-upgrade/CMD-ALT-030.png)",
+      "text": "De acuerdo con la normativa EASA (**CAT.OP.MPA.182 / CAT.OP.MPA.285**) y el **MOA 8.1.7.2.5 / 8.3**, existe una distinción fundamental entre la **etapa de planificación (despacho)** y la **operación en vuelo**:\n- **En la etapa de planificación (antes del vuelo):** Las Tablas 1 y 1A del MOA 8.1.7.2.5 indican explícitamente en su encabezado: *«En la etapa de planificación, la información meteorológica disponible deberá indicar que [...] las condiciones estarán en o por encima de los valores siguientes»*.\n- **Una vez en vuelo (In-Flight):** Los incrementos de planificación de las Tablas 1A/1B dejan de ser exigibles para continuar hacia el destino o dirigirse/designar un alternativo en vuelo; en vuelo se requiere que las condiciones meteorológicas a la hora prevista de utilización estén en o por encima de los **mínimos de operación (aterrizaje) aplicables** del aeródromo (MOA 8.1.3). *(Excepción: si se realiza una replanificación formal en vuelo del plan operacional para acogerse al 3% de contingencia con un Fuel ERA según MOA 8.1.7.1.2.3.2, dicho Fuel ERA debe cumplir 8.1.7.2.5)*.",
       "references": [
         "MOA Binter ED06 RN27, Capítulo 8.1.7.2.5",
         "CAT.OP.MPA.182"

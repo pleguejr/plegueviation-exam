@@ -70,15 +70,15 @@ def compile_banks() -> int:
             "icon": "Plane", 
             "color": "sky"
         },
-        "fleet-c172n": {
-            "title": "Flota Cessna 172N", 
+        "fleet-c172f": {
+            "title": "Flota Cessna 172F (TAE 125 / EC-NNX)", 
             "icon": "Compass", 
             "color": "amber"
         },
-        "fleet-p2010tdi": {
-            "title": "Flota Tecnam P2010 TDI", 
-            "icon": "Gauge", 
-            "color": "indigo"
+        "fleet-da40d": {
+            "title": "Flota Diamond DA40 TDI (EC-OKC)", 
+            "icon": "Compass", 
+            "color": "cyan"
         },
         "regulations-easa-sera": {
             "title": "Normativa EASA & SERA", 

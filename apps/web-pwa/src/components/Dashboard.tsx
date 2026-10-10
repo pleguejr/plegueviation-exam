@@ -310,17 +310,17 @@ export const Dashboard: React.FC<DashboardProps> = ({
           gradient: 'from-sky-600 to-cyan-500',
           badgeBg: 'bg-sky-500/10 text-sky-400 border-sky-500/30'
         };
-      case 'fleet-c172n':
+      case 'fleet-c172f':
         return {
           icon: <Compass className="w-5 h-5" />,
           gradient: 'from-amber-600 to-yellow-500',
           badgeBg: 'bg-amber-500/10 text-amber-400 border-amber-500/30'
         };
-      case 'fleet-p2010tdi':
+      case 'fleet-da40d':
         return {
-          icon: <Gauge className="w-5 h-5" />,
-          gradient: 'from-indigo-600 to-blue-500',
-          badgeBg: 'bg-indigo-500/10 text-indigo-400 border-indigo-500/30'
+          icon: <Compass className="w-5 h-5" />,
+          gradient: 'from-cyan-600 to-teal-500',
+          badgeBg: 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30'
         };
       case 'regulations-easa-sera':
         return {

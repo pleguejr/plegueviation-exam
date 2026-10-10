@@ -158,7 +158,7 @@ export const SyncModal: React.FC<SyncModalProps> = ({
                 Plegueviation Exam — Sistema Operacional Binter Canarias
               </h3>
               <p className="text-[11px] text-slate-400 mt-0.5">
-                Binter Airlines (MOA/MOB) · Flota E195-E2 · C172N · P2010 TDI · EASA & SERA
+                Binter Airlines (MOA/MOB) · Flota E195-E2 · C172F (TAE 125) · EASA & SERA
                 {appVersion ? ` · v${appVersion}` : ''}
               </p>
             </div>

@@ -27,7 +27,7 @@
       }
     ],
     "explanation": {
-      "text": "De acuerdo con el **MOA 8.1.7.2.5 (Tabla 1A - Plan Básico con Variaciones)** y el **MOA 8.1.7.2.6 (Tabla 1B - Plan Básico)**, los mínimos de planificación para una aproximación en circuito (Circling) en un aeródromo alternativo son idénticos en ambos esquemas:\n- **Techo:** MDA/H + 400 ft\n- **Visibilidad:** VIS + 1.500 m\n\n*(Aplicados sobre la MDA/H y visibilidad de los mínimos de operación publicados para el circling en dicho aeródromo)*.\n\n> 📖 **Extracto Literal del Manual — MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 (Tabla 1A) y 8.1.7.2.6 (Tabla 1B) (Pág. 378):**\n> \"asignado, por lo que podría ser obsoleto. Por favor, verifique el gestor documental para asegurarse de que está usando la versión vigente. a) 3% del combustible del vuelo (trip fuel) o, en el caso de re-planificación en vuelo, 3% del combustible de vuelo (trip fuel) necesario para el resto del vuelo, siempre que se disponga de un aeropuerto alternativo en ruta (Fuel ERA) en las condiciones especificadas en MO(A) 8.1.7.2.5; o b) el combustible necesario para volar 5 minutos a la velocidad de h...\"\n\n![Recorte Oficial del Manual — MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 (Tabla 1A) y 8.1.7.2.6 (Tabla 1B)](./manual-crops/command-upgrade/CMD-EXAM-051.png)",
+      "text": "De acuerdo con el **MOA 8.1.7.2.5 (Tabla 1A - Plan Básico con Variaciones)** y el **MOA 8.1.7.2.6 (Tabla 1B - Plan Básico)**, los mínimos de planificación para una aproximación en circuito (Circling) en un aeródromo alternativo son idénticos en ambos esquemas:\n- **Techo:** MDA/H + 400 ft\n- **Visibilidad:** VIS + 1.500 m\n\n*(Aplicados sobre la MDA/H y visibilidad de los mínimos de operación publicados para el circling en dicho aeródromo)*.\n\n> 📖 **Extracto Literal del Manual — MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 (Tabla 1A) y 8.1.7.2.6 (Tabla 1B) (Pág. 378):**\n> \"asignado, por lo que podría ser obsoleto. Por favor, verifique el gestor documental para asegurarse de que está usando la versión vigente. a) 3% del combustible del vuelo (trip fuel) o, en el caso de re-planificación en vuelo, 3% del combustible de vuelo (trip fuel) necesario para el resto del vuelo, siempre que se disponga de un aeropuerto alternativo en ruta (Fuel ERA) en las condiciones especificadas en MO(A) 8.1.7.2.5; o b) el combustible necesario para volar 5 minutos a la velocidad de h...\"\n\n![Recorte Oficial del Manual — MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 (Tabla 1A) y 8.1.7.2.6 (Tabla 1B)](./manual-crops/command-upgrade/CMD-EXAM-051.png)\n\n| Aproximaciones disponibles en el aeródromo | Techo de nubes (Tabla 1A: Básico con Variaciones) | RVR / VIS (Tabla 1A) | Tabla 1B (Sin Variaciones) |\n| :--- | :--- | :--- | :--- |\n| **2 o más Tipo B** a pistas separadas | **DA/H + 100 ft** | **RVR + 300 m** | DA/H + 200 ft / RVR + 800 m |\n| **1 Tipo B** | **DA/H + 150 ft** | **RVR + 450 m** | DA/H + 200 ft / RVR + 800 m |\n| **3D Tipo A** (incremento RVR ≤ 200 m y DH ≤ 200 ft) | **DA/H + 200 ft** | **RVR/VIS + 800 m** | MDA/H + 400 ft / RVR/VIS + 1.500 m |\n| **2 o más Tipo A** (cada una basada en ayuda distinta) | **DA/MDA + 200 ft*** | **RVR/VIS + 1.000 m**** | MDA/H + 400 ft / RVR/VIS + 1.500 m |\n| **1 Tipo A** | **MDA/H + 400 ft** | **RVR/VIS + 1.500 m** | MDA/H + 400 ft / RVR/VIS + 1.500 m |\n| **Circuito (Circling)** | **MDH + 400 ft** | **VIS + 1.500 m** | MDH + 400 ft / VIS + 1.500 m |\n\n*Nota \\* y \\*\\*: En 2 o más Tipo A en ayudas distintas, se suma al más alto de la DA/H o MDA/H en uso y al más alto de la RVR o VIS en uso.*",
       "references": [
         "MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 (Tabla 1A) y 8.1.7.2.6 (Tabla 1B)",
         "AMC2 CAT.OP.MPA.185 Planning minima for IFR flights"
@@ -617,22 +617,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Solicita una autorización de espera técnica indefinida a nivel de crucero hasta que se consuma el combustible de contingencia",
+        "text": "Declara emergencia inmediata de combustible y solicita vectores directos para aterrizar en la pista más cercana disponible",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Declara una emergencia oficial otorgando prioridad absoluta e inmediata de aproximación y aterrizaje sobre todo el tráfico",
+        "text": "Solicita prioridad de aterrizaje al control de tránsito aéreo sin que exista todavía compromiso sobre la Reserva Final",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Informa a ATC de que las opciones de aeródromo se han reducido a uno específico y cualquier demora imprevista puede resultar en aterrizar con menos de la Reserva Final (informa a ATC sin otorgar prioridad de emergencia)",
+        "text": "Informa a ATC de que las opciones de aterrizaje se reducen a un aeródromo y cualquier demora comprometería la Reserva Final",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "Obliga a la tripulación a realizar una toma en el aeródromo alternativo en menos de 10 minutos de vuelo",
+        "text": "Notifica que la aeronave ha comenzado a consumir el combustible de Reserva Final (Final Reserve Fuel) durante la espera",
         "is_correct": false
       }
     ],
@@ -792,7 +792,7 @@
       }
     ],
     "explanation": {
-      "text": "De acuerdo con el **MOA 8.1.7.2.5 (Tabla 1A - Plan Básico con Variaciones)**, para 'Una operación de aproximación por instrumentos del tipo B en uso':\n- **Techo:** DA/H + 150 ft\n- **RVR:** RVR + 450 m\n\n*(Si hubiera 2 o más operaciones Tipo B a 2 pistas separadas, el incremento se reduciría a DA/H + 100 ft y RVR + 300 m. Si se aplicase el Plan Básico sin variaciones de la Tabla 1B, el incremento sería DA/H + 200 ft y RVR/VIS + 800 m)*.\n\n> 📖 **Extracto Literal del Manual — MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 Tabla 1A (Pág. 378):**\n> \"asignado, por lo que podría ser obsoleto. Por favor, verifique el gestor documental para asegurarse de que está usando la versión vigente. a) 3% del combustible del vuelo (trip fuel) o, en el caso de re-planificación en vuelo, 3% del combustible de vuelo (trip fuel) necesario para el resto del vuelo, siempre que se disponga de un aeropuerto alternativo en ruta (Fuel ERA) en las condiciones especificadas en MO(A) 8.1.7.2.5; o b) el combustible necesario para volar 5 minutos a la velocidad de h...\"\n\n![Recorte Oficial del Manual — MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 Tabla 1A](./manual-crops/command-upgrade/CMD-EXAM-071.png)",
+      "text": "De acuerdo con el **MOA 8.1.7.2.5 (Tabla 1A - Plan Básico con Variaciones)**, para 'Una operación de aproximación por instrumentos del tipo B en uso':\n- **Techo:** DA/H + 150 ft\n- **RVR:** RVR + 450 m\n\n*(Si hubiera 2 o más operaciones Tipo B a 2 pistas separadas, el incremento se reduciría a DA/H + 100 ft y RVR + 300 m. Si se aplicase el Plan Básico sin variaciones de la Tabla 1B, el incremento sería DA/H + 200 ft y RVR/VIS + 800 m)*.\n\n> 📖 **Extracto Literal del Manual — MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 Tabla 1A (Pág. 378):**\n> \"asignado, por lo que podría ser obsoleto. Por favor, verifique el gestor documental para asegurarse de que está usando la versión vigente. a) 3% del combustible del vuelo (trip fuel) o, en el caso de re-planificación en vuelo, 3% del combustible de vuelo (trip fuel) necesario para el resto del vuelo, siempre que se disponga de un aeropuerto alternativo en ruta (Fuel ERA) en las condiciones especificadas en MO(A) 8.1.7.2.5; o b) el combustible necesario para volar 5 minutos a la velocidad de h...\"\n\n![Recorte Oficial del Manual — MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 Tabla 1A](./manual-crops/command-upgrade/CMD-EXAM-071.png)\n\n| Aproximaciones disponibles en el aeródromo | Techo de nubes (Tabla 1A: Básico con Variaciones) | RVR / VIS (Tabla 1A) | Tabla 1B (Sin Variaciones) |\n| :--- | :--- | :--- | :--- |\n| **2 o más Tipo B** a pistas separadas | **DA/H + 100 ft** | **RVR + 300 m** | DA/H + 200 ft / RVR + 800 m |\n| **1 Tipo B** | **DA/H + 150 ft** | **RVR + 450 m** | DA/H + 200 ft / RVR + 800 m |\n| **3D Tipo A** (incremento RVR ≤ 200 m y DH ≤ 200 ft) | **DA/H + 200 ft** | **RVR/VIS + 800 m** | MDA/H + 400 ft / RVR/VIS + 1.500 m |\n| **2 o más Tipo A** (cada una basada en ayuda distinta) | **DA/MDA + 200 ft*** | **RVR/VIS + 1.000 m**** | MDA/H + 400 ft / RVR/VIS + 1.500 m |\n| **1 Tipo A** | **MDA/H + 400 ft** | **RVR/VIS + 1.500 m** | MDA/H + 400 ft / RVR/VIS + 1.500 m |\n| **Circuito (Circling)** | **MDH + 400 ft** | **VIS + 1.500 m** | MDH + 400 ft / VIS + 1.500 m |\n\n*Nota \\* y \\*\\*: En 2 o más Tipo A en ayudas distintas, se suma al más alto de la DA/H o MDA/H en uso y al más alto de la RVR o VIS en uso.*",
       "references": [
         "MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 Tabla 1A",
         "AMC8 / AMC9 CAT.OP.MPA.182"
@@ -1149,31 +1149,31 @@
     "id": "CMD-EXAM-081",
     "subject_id": "cmd_disruptive_pax",
     "learning_objective": "MOA 8.2.2 - Aumento del Cupo de Bebés a Bordo",
-    "stem": "La cantidad máxima de bebés a bordo está establecida en 7 (ATR-72) y 12 (E195-E2). ¿Puede incrementarse legalmente este número?",
+    "stem": "Según el MOA 8.2.2.5, ¿cuál es el número máximo estándar de bebés (menores de 2 años) que se pueden transportar a bordo en la flota Embraer 195-E2 y bajo qué condición puede incrementarse dicho cupo?",
     "options": [
       {
         "id": "A",
-        "text": "Solo en vuelos de duración inferior a 45 minutos sin necesidad de equipo de seguridad adicional",
+        "text": "Máximo 7 bebés a bordo, pudiendo incrementarse solo en vuelos de menos de 45 minutos sin requerir equipamiento de seguridad adicional",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Sí, siempre que se disponga de máscaras de oxígeno, cinturones adicionales y chalecos salvavidas para todos",
+        "text": "Máximo 12 bebés a bordo, pudiendo incrementarse si se dispone de máscaras de oxígeno en PSU, cinturones y chalecos para todos ellos",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "Sí, siempre que el número total de pasajeros adultos no supere el 80% de la capacidad de cabina",
+        "text": "Máximo 10 bebés a bordo, pudiendo incrementarse siempre que la ocupación total de pasajeros adultos no supere el 80% de la cabina",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "No, es una limitación estructural estricta e inviolable que no admite excepciones operativas",
+        "text": "Máximo 15 bebés a bordo, siendo un límite estructural fijo e inamovible que no admite incrementos bajo ninguna condición operativa",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "El número de bebés puede incrementarse siempre que la dotación de equipos de emergencia del avión garantice chaleco salvavidas de bebé, cinturón suplementario y toma de oxígeno en el PSU para cada infante.\n\n> 📖 **Extracto Literal del Manual — Examen Mando Binter FOR-ENT-006 (P81) (Pág. 205):**\n> \"b) Se reducirá el número de pasajeros a bordo, manteniendo 50 pasajeros por cada CC operativa (en este cómputo, los bebés no se consideran como pasajeros si ocupan el mismo asiento que un adulto - ver MO(A) 8.2.2.5). c) En caso necesario se modificará la estiba de la carga y maletas de los pasajeros de modo que se cumplan las limitaciones de peso y centrado aplicables a la disposición del pasaje. NOTA: En caso de incapacitación d o indisponibilidad del SCC, el procedimiento solo podrá ser apl...\"\n\n![Recorte Oficial del Manual — Examen Mando Binter FOR-ENT-006 (P81)](./manual-crops/command-upgrade/CMD-EXAM-081.png)",
+      "text": "De acuerdo con el **MOA 8.2.2.5 (Transporte de bebés y niños)**, en la flota **Embraer 195-E2** el número máximo estándar de bebés (menores de 2 años sin ocupar asiento propio) es de **12 bebés** (frente a 7 en la flota ATR 72). Este límite de 12 bebés puede incrementarse previa coordinación siempre que se garantice que cada bebé dispone de máscara de oxígeno (máximo 1 bebé por bloque de asientos por limitación de 4 máscaras en la PSU), cinturón suplementario (loop belt) y chaleco salvavidas infantil adicional.",
       "references": [
         "Examen Mando Binter FOR-ENT-006 (P81)",
         "MOA 8.2.2.5"
@@ -1191,27 +1191,27 @@
     "options": [
       {
         "id": "A",
-        "text": "Al menos 1 adulto por cada 20 niños sin límite de menores en el avión",
+        "text": "Al menos 1 adulto por cada 15 niños hasta un máximo de 45 menores a bordo",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Al menos 1 adulto por cada 10 niños hasta un máximo de 60 niños a bordo",
+        "text": "Al menos 1 adulto por cada 10 niños hasta un máximo de 59 menores a bordo",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "Al menos 1 adulto por cada 5 niños hasta un máximo de 30 niños a bordo",
+        "text": "Al menos 1 adulto por cada 12 niños hasta un máximo de 36 menores a bordo",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Al menos 1 adulto por cada 15 niños hasta un máximo de 75 niños a bordo",
+        "text": "Al menos 2 adultos por cada 10 niños hasta un máximo de 25 menores a bordo",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Para grupos de menores de 5 a 11 años se exige un mínimo de 1 acompañante mayor de edad por cada 10 niños, con un límite máximo de 60 menores por aeronave.\n\n> 📖 **Extracto Literal del Manual — Examen Mando Binter FOR-ENT-006 (P82) (Pág. 205):**\n> \"b) Se reducirá el número de pasajeros a bordo, manteniendo 50 pasajeros por cada CC operativa (en este cómputo, los bebés no se consideran como pasajeros si ocupan el mismo asiento que un adulto - ver MO(A) 8.2.2.5). c) En caso necesario se modificará la estiba de la carga y maletas de los pasajeros de modo que se cumplan las limitaciones de peso y centrado aplicables a la disposición del pasaje. NOTA: En caso de incapacitación d o indisponibilidad del SCC, el procedimiento solo podrá ser apl...\"\n\n![Recorte Oficial del Manual — Examen Mando Binter FOR-ENT-006 (P82)](./manual-crops/command-upgrade/CMD-EXAM-082.png)",
+      "text": "Según el **MOA 8.2.2.5 (Grupos de menores de 5 a 11 años)** y las tablas operacionales de Binter, para el transporte de grupos de niños de entre 5 y 11 años se requiere al menos **1 adulto responsable por cada 10 niños** (o fracción), con un límite máximo de **59 menores** a bordo en la flota Embraer 195-E2.",
       "references": [
         "Examen Mando Binter FOR-ENT-006 (P82)",
         "MOA 8.2.2.5 Grupos de Menores"

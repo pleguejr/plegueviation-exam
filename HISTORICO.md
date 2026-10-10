@@ -4,7 +4,33 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 
 ---
 
-## 🚀 Versión Actual: v3.5.6 (2026-10-10)
+## 🚀 Versión Actual: v3.6.0 (2026-10-11)
+
+### 🛩️ Incorporación Diamond DA40 TDI (EC-OKC), Flota C172F, Purga C172N/P2010 y Tarjetas SOP Blue Team
+- **Desinstalación y purga de flotas descontinuadas:** Retirada completa de los bancos y recursos de `fleet-c172n` y `fleet-p2010tdi`.
+- **Nueva Flota Cessna 172F (TAE 125 / EC-NNX):** Banco de 90 preguntas EASA con extractos literales del manual y suplemento TAE 125 y SOPs Blue Team.
+- **Nueva Flota Diamond DA40 TDI (TAE 125 / EC-OKC):**
+  - Banco de 92 preguntas EASA en `banks/fleet-da40d/` (Limitaciones, Operación Normal AFM, SOPs Blue Team, Emergencias y Sistemas).
+  - Distribución perfectamente equilibrada (~25% por opción: 23 A, 23 B, 23 C, 23 D), 0% asimetría fuera de ±15%, y 58 recortes visuales a 200 DPI extraídos del AFM oficial (`DA40-TDI-AFM.pdf`, Doc. # 6.01.05-E).
+- **Tarjetas SOP Blue Team Flight School (Normal Operations):**
+  - 8 tarjetas operacionales completas en `procedureCardsData.ts` integrando 37 figuras/diagramas oficiales en `public/sop-diagrams/`:
+    - Briefing Normal IFR y Briefing Visual Corto (SOP 6.8 & 6.9)
+    - Briefing de Despegue y 4 Escenarios de Fallo Monomotor (SOP 6.10)
+    - Despegue «Luces, Cámara y Acción» y Flujo 500 ft AGL (SOP 6.11)
+    - Crucero y Chequeo Periódico FREDA cada 20 min (SOP 6.13)
+    - Criterios de Aproximación Estabilizada y Viento Cruzado De-crab vs Sideslip (SOP 4 & 6.16)
+    - Go-Around «POTENCIA, MORRO Y FLAP» (SOP 6.17)
+    - Maniobras Avanzadas VFR, 5 Tipos de Pérdidas y Vuelo Lento (SOP 9.9)
+    - Procedimientos Locales Tenerife Sur (GCTS) y Norte (GCXO / Anaga F22) (SOP 7)
+    - Callouts Oficiales de Cabina y Parámetros (SOP 11)
+  - Filtro por Operador en `ProcedureCardsScreen.tsx`: Todos, Binter Canarias, Blue Team Flight School y NetJets Europe.
+  - Pleno cumplimiento de contraste modo día (`.theme-light`) verificado según `day-mode-ui-contrast`.
+- **Cuadro Resumen de Velocidades (`SpeedSummaryTable`):** Implementada tabla técnica para DA40 D (Vne, Vno, Va, Vfe, Vso, Vs1, Vr, Vx, Vy, Vref, Vglide).
+- **Compilación de catálogo:** Compilados y validados los 2.262 reactivos activos con 0 errores de esquema y 0 errores de TypeScript.
+
+---
+
+## 🚀 Versión: v3.5.6 (2026-10-10)
 
 ### 📖 Evidencia Literal de Manuales + Recortes PDF (200 DPI) + Infografías SOP 1600×1150 y Compilación de Bancos
 - **Enriquecimiento con extractos literales y recortes visuales (200 DPI):** Script `cli/bin/enrich_explanations_with_crops.py` y skill `manual-literal-extractor` para inyectar citas textuales (`> 📖 Extracto Literal del Manual...`) y recortes PNG a 200 DPI (`apps/web-pwa/public/manual-crops/`) extraídos de los manuales oficiales (MOA, MOB, QRH, AFM, POH, MEL, DDPM, EASA) en las explicaciones de los **2.573 reactivos**, renderizados en `FormattedText.tsx`.

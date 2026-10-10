@@ -1,0 +1,527 @@
+[
+  {
+    "id": "C172F-NORM-017",
+    "subject_id": "c172f_normal",
+    "learning_objective": "Blue Team SOP 5.6.1 & 5.6.2 - Perfil Estándar en Circuito de Tráfico (Viento en Cara y Viento Cruzado)",
+    "stem": "De acuerdo con la Sección 5.6 de los SOPs de Blue Team Flight School para la Cessna 172F (EC-NNX), ¿a qué altura sobre el terreno (AGL) se retraen los flaps tras el despegue y se inicia el viraje al tramo de viento cruzado en el circuito de tráfico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se retraen los flaps a 200 ft AGL y se inicia el viraje al tramo de viento cruzado al alcanzar 300 ft AGL",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Se mantienen Flaps 10° hasta 1000 ft AGL y se vira al tramo de viento cruzado a 500 ft AGL con 85 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Se retraen los flaps a 400 ft AGL (con > 65 KIAS) y se vira a viento cruzado ascendiendo a 75 KIAS (Vy)",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Se retraen los flaps a 700 ft AGL tras nivelar los planos y reducir la potencia de ascenso al 75% de carga",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 5.6.1 y 5.6.2 de los SOPs de Blue Team Flight School (páginas 29–30) y el Normal Checklist V6:\n- Tras el despegue, se asciende inicialmente a **65 KIAS**.\n- Al alcanzar **400 ft AGL** (o altitud de seguridad libre de obstáculos), con velocidad superior a 65 KIAS, **se retraen los flaps a 0°**, se acelera a **$V_Y = 75\\text{ KIAS}$** y, si se permanece en circuito de tráfico, se inicia el viraje de 90° al tramo de **viento cruzado (Crosswind)**.\n- A **1000 ft AGL**, se completa la lista *After Take-Off* (Fuel Pump OFF, Landing Light OFF).\n\n| Altitud en Circuito (SOP 5.6) | Acción Operativa en C172F |\n| :--- | :--- |\n| **Despegue hasta 400 ft AGL** | Potencia 100%, ascenso a **65 KIAS** |\n| **400 ft AGL** | **Flaps UP ($0^\\circ$)**, acelerar a **75 KIAS ($V_Y$)** y virar a viento cruzado |\n| **1000 ft AGL (Tramo Viento en Cola)** | Nivelar, **Potencia 75%**, velocidad **~95 KIAS**, Fuel Pump OFF |\n\n> 📖 **Extracto Literal del Manual — Blue Team Flight School SOP Rev 04 - Section 5.6.1 & 5.6.2 (Page 29-30):**\n> \"A 400 ft AGL (o altitud de seguridad libre de obstáculos): Flaps UP, acelerar a 75 KIAS y virar a tramo de viento cruzado. A 1000 ft AGL: Nivelar en viento en cola, ajustar potencia al 75% (aprox. 95 KIAS).\"\n\n![Recorte Oficial del Manual — Blue Team SOP Section 5.6](./manual-crops/fleet-c172f/sop_p29_speeds_circuit.png)",
+      "references": [
+        "Blue Team Flight School SOP Rev 04 - Section 5.6.1 & 5.6.2 (Page 29-30)",
+        "Blue Team Flight School - C172F Normal Checklist V6 (Page 2)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-NORM-018",
+    "subject_id": "c172f_normal",
+    "learning_objective": "Blue Team SOP 5.6.2 & 5.6.3 - Configuración en Viento en Cola, Base y Final en Circuito",
+    "stem": "En el circuito de tráfico estándar de Blue Team Flight School con la Cessna 172F (EC-NNX), ¿qué ajustes de potencia, flaps y velocidad deben establecerse al pasar el través de la cabecera en viento en cola, en el tramo base y en el tramo final?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Través cabecera: 65% potencia, Flap 20° (<85 KIAS) y 85 KIAS; Base: Flap 30° (<85 KIAS) y 75 KIAS; Final: Flap 40° y 55 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Través cabecera: ralentí, Flap 10° (<100 KIAS) y 70 KIAS; Base: Flap 10° y 65 KIAS; Final: Flap 20° y 60 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Través cabecera: 75% potencia, Flap 0° y 90 KIAS; Base: Flap 10° (<110 KIAS) y 80 KIAS; Final: Flap 30° y 70 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Través cabecera: 40–50% potencia, Flap 10° (<110 KIAS) y 75 KIAS; Base: Flap 20° (<85 KIAS) y 70 KIAS; Final: Flap 30° y 65 KIAS",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Sección 5.6.2 y 5.6.3 de los SOPs de Blue Team Flight School (páginas 30–31), la secuencia estandarizada en el circuito de tráfico de la C172F es:\n\n| Posición en el Circuito | Potencia / Configuración | Velocidad Objetivo |\n| :--- | :--- | :--- |\n| **Viento en Cola (1000 ft AGL)** | Potencia **75%**, Flaps $0^\\circ$ | **~95 KIAS** |\n| **Través Umbral (Abeam Threshold)** | Fuel Pump ON, Landing Light ON, Potencia **40–50%**, **Flap $10^\\circ$** ($< 110\\text{ KIAS}$) | **75 KIAS** (iniciar descenso) |\n| **Tramo Base ( a $45^\\circ$ del umbral)** | **Flap $20^\\circ$** ($< 85\\text{ KIAS}$) | **70 KIAS** |\n| **Tramo Final** | **Flap $30^\\circ$** (o $40^\\circ$ campo corto) | **65 KIAS** ($60\\text{ KIAS}$ con Flap $40^\\circ$) |\n\n> 📖 **Extracto Literal del Manual — Blue Team Flight School SOP Rev 04 - Section 5.6.2 & 5.6.3 (Page 30-31):**\n> \"Través de cabecera: Bomba de combustible ON, Luz de aterrizaje ON, reducir potencia a 40-50%, por debajo de 110 KIAS extender Flaps 10°, mantener 75 KIAS. A 45° de la cabecera virar a base: por debajo de 85 KIAS extender Flaps 20°, mantener 70 KIAS. En final: extender Flaps 30° y mantener Vref 65 KIAS.\"\n\n![Recorte Oficial del Manual — Blue Team SOP Section 5.6](./manual-crops/fleet-c172f/sop_p29_speeds_circuit.png)",
+      "references": [
+        "Blue Team Flight School SOP Rev 04 - Section 5.6.2 & 5.6.3 (Page 30-31)",
+        "Blue Team Flight School - C172F Normal Checklist V6 (Page 1 & 2)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-NORM-019",
+    "subject_id": "c172f_normal",
+    "learning_objective": "Blue Team SOP 5.6.3 - Criterios de Aproximación Estabilizada y Puerta de 300 ft AGL",
+    "stem": "Según la política de aproximación estabilizada de los SOPs de Blue Team Flight School (Sección 5.6.3), ¿a qué altura mínima sobre el terreno (AGL) debe estar completamente estabilizada la aeronave en final y qué desviación máxima de velocidad se tolera?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A 300 ft AGL, en configuración de aterrizaje, senda/eje correctos y velocidad Vref (+10 / -0 kt), o iniciar Go-Around",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "A 500 ft AGL, con una tolerancia de velocidad de +15 / -5 kt respecto a Vref y régimen de descenso máximo de 1200 fpm",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "A 200 ft AGL, con flaps a 10° y una tolerancia de velocidad de +/- 10 kt respecto a la velocidad de maniobra certificada",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "A 100 ft AGL sobre el umbral de pista, con potencia al ralentí y una tolerancia de velocidad de +5 / -10 kt sobre Vso",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La Sección 5.6.3 de los SOPs de Blue Team Flight School establece que toda aproximación debe estar **completamente estabilizada a más tardar a 300 ft AGL**. Si a **300 ft AGL** (o en cualquier momento por debajo de dicha altura) no se cumplen los parámetros de configuración de aterrizaje, alineación de pista, senda de planeo y velocidad ($V_{\\text{REF}} +10 / -0\\text{ kt}$), **es obligatorio iniciar inmediatamente un motor y al aire (Go-Around)**.\n\n| Parámetro de Aproximación Estabilizada | Criterio Obligatorio SOP 5.6.3 |\n| :--- | :--- |\n| **Altura de Compuerta (Gate)** | **300 ft AGL** |\n| **Configuración** | Flaps de aterrizaje seleccionados ($30^\\circ$ normal / $40^\\circ$ corto) |\n| **Velocidad Indicada** | **$V_{\\text{REF}}$ ($+10\\text{ kt} / -0\\text{ kt}$)** |\n| **Acción si Desestabilizada $< 300\\text{ ft AGL}$** | **Go-Around (Motor y al Aire) inmediato** |\n\n> 📖 **Extracto Literal del Manual — Blue Team Flight School SOP Rev 04 - Section 5.6.3 (Page 31):**\n> \"La aproximación deberá estar completamente estabilizada a 300 ft AGL en configuración de aterrizaje y velocidad Vref (+10/-0 kt). En caso contrario, se ejecutará obligatoriamente la maniobra de motor y al aire (Go-Around).\"\n\n![Recorte Oficial del Manual — Blue Team SOP Section 5.6](./manual-crops/fleet-c172f/sop_p29_speeds_circuit.png)",
+      "references": [
+        "Blue Team Flight School SOP Rev 04 - Section 5.6.3: Approach & Landing (Page 31)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-NORM-020",
+    "subject_id": "c172f_normal",
+    "learning_objective": "Checklist V6 & POH Supplement Sección 4 - Procedimiento de Motor y al Aire (Go-Around / Balked Landing)",
+    "stem": "Durante una aproximación frustrada (Go-Around / Balked Landing) con Flaps 40° o 30° en la Reims/Cessna F172F (EC-NNX), ¿cuál es la secuencia inmediata de actuación sobre la potencia, los flaps y la velocidad de ascenso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Retraer inmediatamente los flaps a 0°, aplicar el 75% de potencia y ascender a 55 KIAS hasta alcanzar 1000 ft AGL",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Aplicar 100% de potencia, retraer flaps inicialmente a 20°, ascender a 65 KIAS y subir flaps a 0° libre de obstáculos",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Mantener Flaps 40° hasta alcanzar 500 ft AGL, aplicar el 90% de potencia de carga y ascender manteniendo 80 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Aplicar 100% de potencia, desconectar la bomba eléctrica de combustible y mantener Flaps 30° ascendiendo a 50 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Tanto el Suplemento POH (Sección 4, página 4-19, *Balked Landing*) como el C172F Normal Checklist V6 y los SOPs (Sección 5.6.4) establecen la siguiente secuencia para el **Go-Around**:\n1. **Potencia (Thrust Lever):** **100% (FULL)** inmediatamente.\n2. **Flaps:** retraer inmediatamente a **20°** (para eliminar la gran resistencia aerodinámica de 30°/40° sin perder sustentación).\n3. **Velocidad de ascenso:** establecer **65 KIAS** (Checklist V6 & SOP 5.6.4; 60 KIAS mínimo en POH).\n4. Una vez establecido el ascenso positivo, alcanzada una altura segura libre de obstáculos y acelerando por encima de 65 KIAS, retraer progresivamente los flaps a **0° (UP)** y acelerar a **75 KIAS ($V_Y$)**.\n\n| Paso del Go-Around (C172F) | Acción Inmediata |\n| :--- | :--- |\n| **1. Thrust Lever** | **FULL (100% Load)** |\n| **2. Wing Flaps** | **Retraer a $20^\\circ$ inmediatamente** |\n| **3. Climb Speed** | **65 KIAS** |\n| **4. Libre de obstáculos ($> 400\\text{ ft AGL}$)** | **Flaps UP ($0^\\circ$)** y acelerar a **75 KIAS** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4 (Page 4-19) & Checklist V6:**\n> \"BALKED LANDING / GO-AROUND: (1) Thrust Lever - FULL (100% Load). (2) Wing Flaps - RETRACT to 20°. (3) Climb Speed - 65 KIAS (Checklist V6) / 60 KIAS (POH). (4) Wing Flaps - RETRACT fully after reaching a safe height and obstacles are cleared.\"\n\n![Recorte Oficial del Manual — Cessna 172F Normal Checklist V6 Page 2](./manual-crops/fleet-c172f/checklist_normal_v6_p2.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Balked Landing (Page 4-19)",
+        "Blue Team Flight School - C172F Normal Checklist V6 - Go-Around (Page 2)",
+        "Blue Team Flight School SOP Rev 04 - Section 5.6.4: Go-Around (Page 31)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172F-NORM-021",
+    "subject_id": "c172f_normal",
+    "learning_objective": "Blue Team SOP 2.3 & 5.7 - Alturas Mínimas de Seguridad para Maniobras y Práctica de Pérdidas",
+    "stem": "Según las normas operativas de Blue Team Flight School (SOP Rev 04), ¿cuál es la altura mínima sobre el terreno (AGL) para realizar maniobras de entrenamiento en general y a qué altura mínima deben estar recuperadas las prácticas de pérdidas (stalls) y vuelo lento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Altura mínima general de 1000 ft AGL, debiendo iniciarse y recuperarse las pérdidas por encima de 1500 ft AGL",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Altura mínima general de 500 ft AGL, debiendo iniciarse y recuperarse las pérdidas por encima de 1000 ft AGL",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Altura mínima general de 1500 ft AGL, debiendo iniciarse y recuperarse las pérdidas por encima de 2000 ft AGL",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Altura mínima general de 2000 ft AGL, debiendo iniciarse y recuperarse las pérdidas por encima de 3500 ft AGL",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Sección 2.3 y la Sección 5.7 de los SOPs de Blue Team Flight School:\n- La altura mínima general para maniobras de instrucción en área de trabajo es de **1500 ft AGL**.\n- Las maniobras de **vuelo lento y pérdidas (stalls)** deben realizarse de modo que la recuperación quede completada siempre **por encima de 2000 ft AGL**.\n- Antes de iniciar las maniobras, es obligatorio ejecutar el chequeo **HASELL / HELL** (Height, Airframe, Security, Engine, Location, Lookout).\n\n| Tipo de Maniobra de Instrucción (SOP) | Altura Mínima sobre el Terreno (AGL) |\n| :--- | :--- |\n| **Maniobras Generales en Zona de Trabajo** | **$\\ge 1500\\text{ ft AGL}$** |\n| **Práctica de Pérdidas (Stalls) y Vuelo Lento** | **Recuperadas por encima de $2000\\text{ ft AGL}$** |\n\n> 📖 **Extracto Literal del Manual — Blue Team Flight School SOP Rev 04 - Section 2.3 & 5.7:**\n> \"La altura mínima para realizar maniobras de entrenamiento será de 1500 ft AGL, excepto las prácticas de pérdidas y vuelo lento, cuya recuperación deberá completarse siempre por encima de 2000 ft AGL.\"\n\n![Recorte Oficial del Manual — Blue Team SOP Section 5.6](./manual-crops/fleet-c172f/sop_p29_speeds_circuit.png)",
+      "references": [
+        "Blue Team Flight School SOP Rev 04 - Section 2.3 & Section 5.7 (Page 10 & 32)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172F-NORM-022",
+    "subject_id": "c172f_normal",
+    "learning_objective": "Blue Team SOP 5.7 - Maniobra de Virajes Pronunciados (Steep Turns) en Cessna 172F",
+    "stem": "Al ejecutar la maniobra de virajes pronunciados (Steep Turns de 45° de alabeo) en la Cessna 172F conforme a los SOPs de Blue Team Flight School, ¿qué velocidad de entrada y qué ajuste aproximado de potencia se utilizan para mantener la altitud constante?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Velocidad de 75 KIAS aumentando la potencia al 100% de carga al pasar por 20° de alabeo para sostener el morro",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Velocidad de 115 KIAS con Flaps 10° y reduciendo la potencia al 55% para no sobrepasar la velocidad estructural Vno",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Velocidad de 80 KIAS con potencia fija al 60% de carga y el compensador de profundidad recorrido totalmente atrás",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Velocidad de 95 KIAS con potencia inicial ~75%, añadiendo un 5–10% al pasar por 30° de alabeo para mantener 45°",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 5.7 (*Maniobras Visuales — Virajes de 45° de inclinación*) de los SOPs de Blue Team Flight School:\n- La maniobra se inicia desde vuelo recto y nivelado en configuración limpia a **~95 KIAS** (con potencia de crucero en torno al **75% Load**).\n- Al alabear suavemente hacia los **45° de inclinación**, al pasar por unos 30° de alabeo se incrementa ligeramente la actitud de morro y se añade un **5–10% de potencia** (hasta ~80–85% Load) para compensar el aumento de resistencia inducida ($n = 1,41\\text{g}$) y mantener la altitud y los **95 KIAS** constantes.\n\n| Parámetro en Virajes de 45° (Steep Turns) | Valor Estándar SOP |\n| :--- | :--- |\n| **Ángulo de Alabeo** | **$45^\\circ$** (factor de carga $1,41\\text{g}$) |\n| **Velocidad de Entrada y Mantenimiento** | **95 KIAS** ($\\le V_A = 106\\text{ KTS}$) |\n| **Potencia (Load %)** | **~75% inicial $\\rightarrow$ aumentar a ~80–85% en el viraje** |\n\n> 📖 **Extracto Literal del Manual — Blue Team Flight School SOP Rev 04 - Section 5.7 (Page 33):**\n> \"Virajes de 45° de inclinación: Configuración limpia, velocidad 95 KIAS, potencia 75% (incrementar ligeramente un 5-10% durante el viraje para mantener velocidad y altitud constantes).\"\n\n![Recorte Oficial del Manual — Blue Team SOP Section 5.6](./manual-crops/fleet-c172f/sop_p29_speeds_circuit.png)",
+      "references": [
+        "Blue Team Flight School SOP Rev 04 - Section 5.7: Steep Turns (Page 33)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-NORM-023",
+    "subject_id": "c172f_normal",
+    "learning_objective": "Blue Team SOP 2.5 - Reservas Mínimas de Combustible para Vuelos VFR",
+    "stem": "De acuerdo con la política de combustible de los SOPs de Blue Team Flight School (acorde con EASA Part-NCO/CAT VFR), ¿cuál es la reserva final mínima de combustible requerida al planificar un vuelo VFR diurno y un vuelo VFR nocturno?",
+    "options": [
+      {
+        "id": "A",
+        "text": "30 minutos a crucero normal para VFR diurno (45 min en travesía) y 45 minutos para VFR nocturno",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "20 minutos a velocidad de crucero para vuelos VFR diurnos y 30 minutos para vuelos VFR nocturnos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "15 minutos para vuelos en circuito de aeródromo y 30 minutos para cualquier vuelo VFR nocturno",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "60 minutos de autonomía mínima tanto para vuelos VFR diurnos locales como para vuelos nocturnos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 2.5 (*Fuel Policy*) de los SOPs de Blue Team Flight School, además del combustible necesario para el rodaje, ruta y contingencias, la aeronave debe aterrizar con una reserva mínima final equivalente a:\n- **30 minutos** de vuelo a altitud normal de crucero en vuelos VFR diurnos locales (**45 minutos** en vuelos de travesía/navegación según criterio de seguridad de escuela y **45 minutos** en VFR nocturno).\n\n| Tipo de Vuelo VFR | Reserva Final Mínima |\n| :--- | :--- |\n| **VFR Diurno (Circuito / Local)** | **30 minutos** a potencia de crucero |\n| **VFR Travesía / VFR Nocturno** | **45 minutos** a potencia de crucero |\n\n> 📖 **Extracto Literal del Manual — Blue Team Flight School SOP Rev 04 - Section 2.5: Fuel Policy (Page 11):**\n> \"Reserva mínima final de combustible: 30 minutos en vuelos VFR diurnos locales y 45 minutos en vuelos de travesía o VFR nocturnos.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 2 Maximum Fuel Quantities](./manual-crops/fleet-c172f/supp_p68_fuel_quantities.png)",
+      "references": [
+        "Blue Team Flight School SOP Rev 04 - Section 2.5: Fuel Policy (Page 11)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172F-NORM-024",
+    "subject_id": "c172f_normal",
+    "learning_objective": "POH Supplement Sección 4 - Operación en Tiempo Frío (Cold Weather Operation) y Precalentamiento",
+    "stem": "Según la Sección 4 (Cold Weather Operation) del Suplemento POH del motor TAE 125, ¿bajo qué condiciones de temperatura exterior (OAT) es obligatorio precalentar el avión antes del arranque y cuánto tiempo requiere?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Con OAT < 0°C tras más de 1 hora parado (precalentar 30 min), o con OAT < +5°C si se utiliza combustible Jet A-1",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Con OAT < -20°C tras más de 2 horas parado (precalentar 2 h), o con OAT < -10°C tras más de 12 horas parado (precalentar 1 h)",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Con OAT < -32°C únicamente, bastando con activar tres veces seguidas el ciclo de bujías Glow sin precalentador externo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Con OAT < -5°C tras más de 4 horas parado, aplicando aire caliente directamente sobre los depósitos de combustible de las alas",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Sección 4 (*Amplified Procedures — Cold Weather Operation*, páginas 4-22 y 4-23) del Suplemento POH:\n1. **Caso 1:** Si la temperatura exterior (**OAT**) es **inferior a $-20^\\circ\\text{C}$** y la aeronave ha estado completamente enfriada durante **más de 2 horas**, debe precalentarse en hangar o con calefactor externo durante **2 horas** (y la batería debe conservarse en un recinto cálido).\n2. **Caso 2:** Si la OAT es **inferior a $-10^\\circ\\text{C}$** y la aeronave ha estado parada a la intemperie durante **más de 12 horas**, se recomienda precalentar durante **1 hora**.\n\n| Condición Ambiental (OAT) | Tiempo de Exposición al Frío | Precalentamiento Requerido |\n| :--- | :--- | :--- |\n| **$\\text{OAT} < -20^\\circ\\text{C}$** | **$> 2\\text{ horas}$** | **2 horas de precalentamiento** + batería en lugar cálido |\n| **$\\text{OAT} < -10^\\circ\\text{C}$** | **$> 12\\text{ horas}$** | **1 hora de precalentamiento** recomendado |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Cold Weather Operation (Page 4-22):**\n> \"Case 1: Outside air temperatures below -20°C and complete cool down of the aircraft for more than 2 hours -> The aircraft has to be preheated for 2 hours. Case 2: Outside air temperatures below -10°C and complete cool down of the aircraft for more than 12 hours -> Preheating of 1 hour is recommended.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 4 Take-Off & Climb](./manual-crops/fleet-c172f/supp_p109_norm_takeoff_climb.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Cold Weather Operation (Page 4-22 & 4-23)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "C172F-NORM-025",
+    "subject_id": "c172f_normal",
+    "learning_objective": "POH Supplement Sección 5a/5b - Penalización de Despegue en Pista de Hierba Seca (Dry Grass)",
+    "stem": "Según las tablas de distancia de despegue (Ground Roll and Take-Off Distance) de las Secciones 5a y 5b del Suplemento POH de la Reims/Cessna F172F (TAE 125), ¿qué incremento debe aplicarse para despegar desde una pista de hierba seca (dry grass runway)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumentar la carrera de despegue (Ground Roll) en un 10% y la distancia total sobre 50 ft en un 5%",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Aumentar tanto la carrera de despegue como la distancia total sobre 50 ft en un 20%",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aumentar la carrera de despegue (Ground Roll) en un 15% y la distancia total sobre 50 ft en un 10%",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Aumentar la carrera de despegue en un 25% y la distancia total sobre 50 ft en un 15%",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Todas las tablas de *Ground Roll and Take-Off Distance* de las Secciones 5a y 5b del Suplemento POH (páginas 5a-2 a 5a-7 y 5b-2 a 5b-7) especifican en sus notas operativas que para pistas de **hierba seca (dry grass runway)** se debe:\n- Incrementar el **Ground Roll (carrera en tierra) en un 15%**.\n- Incrementar la **Take-off Distance over a 50 ft obstacle (distancia total de despegue sobre 50 ft) en un 10%**.\nSi la hierba está húmeda, blanda o alta, las distancias deben incrementarse aún más.\n\n| Condición de Superficie (Suplemento POH Sec. 5a/5b) | Corrección sobre Ground Roll | Corrección sobre Distancia 50 ft |\n| :--- | :--- | :--- |\n| **Pista Pavimentada, Seca y Nivelada** | Valor base de tabla (0%) | Valor base de tabla (0%) |\n| **Pista de Hierba Seca (Dry Grass)** | **+15% al Ground Roll** | **+10% a la distancia sobre 50 ft** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 5a & 5b (Page 5a-2 / 5b-2):**\n> \"Notes: 4. For operation on a dry grass runway, increase distances by 15% of the 'ground roll' figure and 10% of the 'total to clear 50 ft obstacle' figure.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 4 Take-Off & Climb](./manual-crops/fleet-c172f/supp_p109_norm_takeoff_climb.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 5a & 5b: Ground Roll and Take-Off Distance (Page 5a-2 & 5b-2)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "C172F-NORM-026",
+    "subject_id": "c172f_normal",
+    "learning_objective": "POH Supplement Sección 5b - Régimen Máximo de Ascenso (ROC) a Nivel del Mar e ISA",
+    "stem": "De acuerdo con la tabla «Maximum Rate-of-Climb at 1043 kg (2300 lbs)» de la Sección 5b del Suplemento POH (motor TAE 125-02-99 con hélice MTV-6-A/190-69), ¿cuál es el régimen máximo de ascenso (ROC) a nivel del mar en atmósfera estándar (ISA, 15°C) a 70 KIAS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "490 ft/min (2,5 m/s) a nivel del mar en condiciones ISA y masa máxima de 1043 kg",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "645 ft/min (3,3 m/s) a nivel del mar en condiciones ISA y masa máxima de 1043 kg",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "920 ft/min (4,7 m/s) a nivel del mar en condiciones ISA y masa máxima de 1043 kg",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "738 ft/min (3,75 m/s) a nivel del mar en condiciones ISA y masa máxima de 1043 kg",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "Según la tabla de **Maximum Rate-of-Climb at 1043 kg (2300 lbs)** de la Sección 5b (página 5b-8, aplicable al TAE 125-02-99 con hélice MTV-6-A/190-69), con Flaps UP y 100% de potencia a una velocidad indicada de **70 KIAS**, el régimen de ascenso a nivel del mar (0 ft) e ISA ($15^\\circ\\text{C}$) es de **738 ft/min** (siendo de 677 ft/min en la Sección 5a para el TAE 125-01).\n\n| Altitud de Presión | ROC en ISA (Sección 5b: TAE 125-02-99) | ROC en ISA (Sección 5a: TAE 125-01) |\n| :--- | :--- | :--- |\n| **0 ft (Nivel del Mar)** | **738 ft/min** | 677 ft/min |\n| **4000 ft** | **646 ft/min** | 587 ft/min |\n| **8000 ft** | **525 ft/min** | 463 ft/min |\n| **12000 ft** | **367 ft/min** | 299 ft/min |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 5b: Maximum Rate-of-Climb (Page 5b-8):**\n> \"MAXIMUM RATE-OF-CLIMB at 1043 kg (2300 lbs) - Flaps Up, 100% Power, 70 KIAS:\n> Press. Alt. 0 ft | Temp. ISA (15°C): 738 ft/min.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 4 Take-Off & Climb](./manual-crops/fleet-c172f/supp_p109_norm_takeoff_climb.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 5b: Maximum Rate-of-Climb at 1043 kg (Page 5b-8)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "C172F-NORM-027",
+    "subject_id": "c172f_normal",
+    "learning_objective": "POH Supplement Sección 5 - Consumo de Combustible para Arranque, Rodaje y Prueba Pre-Despegue",
+    "stem": "En el ejemplo y método de cálculo de combustible requerido de la Sección 5 (Performance) del Suplemento POH para la Reims/Cessna F172F (TAE 125), ¿qué cantidad fija de combustible debe sumarse para cubrir la puesta en marcha, el calentamiento, el rodaje y el chequeo pre-despegue?",
+    "options": [
+      {
+        "id": "A",
+        "text": "3,8 litros (1,0 US Gal) de combustible para arranque, calentamiento, rodaje y prueba FADEC",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "7,6 litros (2,0 US Gal) de combustible para arranque, calentamiento, rodaje y prueba FADEC",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "1,5 litros (0,4 US Gal) de combustible para arranque, calentamiento, rodaje y prueba FADEC",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "11,4 litros (3,0 US Gal) de combustible para arranque, calentamiento, rodaje y prueba FADEC",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Tanto las notas de las tablas *Time, Fuel and Distance to Climb* (Secciones 5a/5b, páginas 5a-9 y 5b-9) como el ejemplo de planificación de la Sección 5 (página 5-4) establecen que se deben añadir **1,0 US Gal (3,8 litros)** de combustible para el arranque del motor, calentamiento, rodaje y prueba pre-despegue.\n\n| Concepto de Planificación (Sección 5 POH) | Combustible Asignado |\n| :--- | :--- |\n| **Engine Start, Warm-up, Taxi & Pre-takeoff Check** | **3,8 litros (1,0 US Gal)** |\n| **Reserva VFR de 45 min al 60% Load (6000 ft)** | **~12,1 litros (3,2 US Gal)** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 5 (Page 5-4 & 5b-9):**\n> \"Add 1.0 Gal (3.8 l) of fuel for engine start, warm-up, taxi and pre-takeoff check.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 2 Maximum Fuel Quantities](./manual-crops/fleet-c172f/supp_p68_fuel_quantities.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 5: Performance - Fuel Required (Page 5-4)",
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 5b: Time, Fuel and Distance to Climb (Page 5b-9)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "C172F-NORM-028",
+    "subject_id": "c172f_normal",
+    "learning_objective": "POH Supplement Sección 4 - Prohibición de Apagar el Motor Cerrando la Válvula de Combustible",
+    "stem": "En el procedimiento de parada normal del motor TAE 125 (Sección 4, Engine Shutdown), ¿por qué advierte el Suplemento POH con un CAUTION que el motor debe apagarse mediante el interruptor «Engine Master OFF» y nunca cerrando la válvula selectora de combustible con el motor en marcha?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Porque al cerrar la válvula selectora con el motor en marcha se borraría la memoria no volátil de ambos canales del FADEC",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Porque al agotarse el combustible en giro se pierde la lubricación de la bomba de alta presión common-rail, pudiendo dañarla",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Porque la depresión generada por la bomba mecánica colapsaría estructuralmente los depósitos de aluminio de ambos planos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Porque el gobernador hidráulico de la hélice bloquearía las palas en paso grueso impidiendo la siguiente puesta en marcha",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En el motor diésel **TAE 125**, la **bomba de inyección de alta presión (High-Pressure Pump)** del sistema *common-rail* está **lubricada y refrigerada por el propio combustible** que circula a través de ella (Sección 1, página 1-2 y Sección 4, página 4-19). Si se apaga el motor cerrando el selector de combustible (*Shut-off Valve OFF*) mientras sigue girando, la bomba de alta presión trabajará en seco sin lubricación y sufrirá daños mecánicos internos.\n\n| Método de Parada del Motor TAE 125 | Consecuencia Técnica |\n| :--- | :--- |\n| **Engine Master — OFF (Después cerrar selector)** | **Correcto:** el FADEC corta la inyección electrónicamente sin vaciar la bomba |\n| **Cerrar Selector de Combustible con motor girando** | **PROHIBIDO:** deja sin lubricación la bomba de alta presión common-rail |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Engine Shutdown (Page 4-19):**\n> \"(2) Engine Master - OFF. (3) Alternator and Battery - OFF. (4) Fuel Shut-Off Valve - OFF (Left and Right). CAUTION: Only shut-off the Fuel Shut-Off Valve after the engine has come to a complete stop, otherwise the high-pressure pump may be damaged.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 1 Engine & Propeller](./manual-crops/fleet-c172f/supp_p45_engine_prop.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Engine Shutdown (Page 4-19)",
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Engine (Page 1-2)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "C172F-NORM-029",
+    "subject_id": "c172f_normal",
+    "learning_objective": "POH Supplement Sección 4 - Operación en Descenso Prolongado y Calefacción de Cabina",
+    "stem": "Durante un descenso prolongado con baja potencia y bajas temperaturas exteriores en la Reims/Cessna F172F (TAE 125), ¿qué precaución indica la Sección 4 del Suplemento POH respecto a la temperatura del líquido refrigerante (CT) y la calefacción de cabina?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Abrir completamente el mando de Aire Alternativo (Alternate Air) y apagar la bomba eléctrica de combustible para elevar la EGT",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Seleccionar Flaps 40° desde el inicio del descenso en ruta para poder mantener el 95% de carga durante toda la bajada",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Vigilar que la temperatura CT no baje del rango verde (60°C), añadiendo potencia si se requiere para mantener temperatura y calefacción",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Desconectar el alternador principal en cabina para que el FADEC eleve automáticamente el régimen de ralentí a 1600 RPM",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En la Reims/Cessna F172F con motor TAE 125, la **calefacción de cabina** no utiliza una camisa alrededor del escape (como en los motores Lycoming/Continental de gasolina), sino un **intercambiador de calor agua/aire conectado al circuito pequeño del líquido refrigerante** (Sección 1, página 1-14 y Sección 4, página 4-18). En descensos prolongados al ralentí en aire muy frío, la temperatura del refrigerante (**CT**) puede descender hacia los $60^\\circ\\text{C}$, por lo que se recomienda mantener algo de potencia si es necesario para conservar las temperaturas del motor en verde y disponer de calefacción.\n\n| Sistema de Calefacción C172F (TAE 125) | Característica Operativa |\n| :--- | :--- |\n| **Fuente de Calor** | **Intercambiador de calor del circuito de líquido refrigerante** (sin riesgo de CO por grietas de escape) |\n| **Descenso en Ambiente Frío** | Vigilar **$\\text{CT} \\ge 60^\\circ\\text{C}$** y **$\\text{OT} \\ge 50^\\circ\\text{C}$** (añadir potencia si enfrian en exceso) |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1 (Page 1-14):**\n> \"Cabin Heating: A heat exchanger in the small cooling circuit heats the air required for the cabin heating.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 1 FADEC Reset & Cooling](./manual-crops/fleet-c172f/supp_p58_fadec_reset_glow.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Cooling System & Cabin Heating (Page 1-14)",
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Descent (Page 4-18)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-NORM-030",
+    "subject_id": "c172f_normal",
+    "learning_objective": "Checklist V6 - Uso del Freno de Mano y Frenos de Pedal en Aterrizaje y Rodaje",
+    "stem": "Según la Sección 4 (Landing & Taxiing) del Suplemento POH y el C172F Normal Checklist V6, ¿qué precauciones deben observarse respecto a los frenos durante el aterrizaje normal, el aterrizaje en campo corto y el rodaje?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aterrizar siempre con el freno de estacionamiento aplicado al 50% de su recorrido para acortar la distancia de parada en pista",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "En aterrizaje en campo corto mantener Flaps 40° durante toda la frenada para incrementar la carga aerodinámica sobre el tren",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Durante el rodaje mantener al menos 1500 RPM controlando la velocidad exclusivamente mediante presión continua en los pedales",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En toma normal usar frenado mínimo; en campo corto retraer flaps tras tocar y frenar firme; en rodaje no deslizar frenos continuo",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Sección 4 (*Landing*, página 4-18 y *Taxiing*, página 4-20) del Suplemento POH:\n- En **aterrizaje normal**, tocar con el tren principal primero, posar suavemente la rueda de morro y emplear **frenado mínimo** necesario.\n- En **aterrizaje en campo corto (Short Field Landing)**, aproximar con Flaps 40° a **60 KIAS**, cortar gases tras cruzar el obstáculo, **retraer los flaps inmediatamente después de tocar tierra** (para transferir todo el peso a las ruedas) y **aplicar frenado intenso (Brakes — APPLY heavily)** manteniendo el mando atrás.\n- En **rodaje**, controlar la velocidad con la palanca de gases sin deslizar los frenos de forma continua para evitar sobrecalentarlos.\n\n| Tipo de Aterrizaje (Sección 4 POH) | Acción sobre Flaps tras Touchdown | Uso de Frenos |\n| :--- | :--- | :--- |\n| **Normal Landing** | Retraer al abandonar pista (*After Landing*) | **Frenado mínimo** necesario |\n| **Short Field Landing (Flaps $40^\\circ$, 60 KIAS)** | **Retraer inmediatamente tras tocar tierra** | **Frenado intenso (Apply heavily)** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Landing (Page 4-18):**\n> \"Short Field Landing: (1) Airspeed - 60 KIAS (69 MPH) (Flaps 40°)... (4) Wing Flaps - RETRACT immediately after touchdown. (5) Brakes - APPLY heavily.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 4 Take-Off & Climb](./manual-crops/fleet-c172f/supp_p109_norm_takeoff_climb.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Landing & Taxiing (Page 4-18 & 4-20)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  }
+]

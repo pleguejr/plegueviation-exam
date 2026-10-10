@@ -1,0 +1,605 @@
+[
+  {
+    "id": "C172F-EMG-001",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "POH Supplement Sección 3 & Checklist V4 - Velocidad de Planeo por Fallo de Motor tras el Despegue",
+    "stem": "Ante un fallo de motor inmediatamente después del despegue en la Reims/Cessna F172F (EC-NNX), ¿qué velocidades de planeo (Airspeed) establecen la Sección 3 del Suplemento POH y el Emergency Checklist V4 según la posición de los flaps?",
+    "options": [
+      {
+        "id": "A",
+        "text": "65 KIAS con Flaps UP (0°) y 60 KIAS con Flaps DOWN (10°–40°)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "75 KIAS con Flaps UP (0°) y 70 KIAS con Flaps DOWN (10°–40°)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "55 KIAS con Flaps UP (0°) y 50 KIAS con Flaps DOWN (10°–40°)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "80 KIAS con Flaps UP (0°) y 65 KIAS con Flaps DOWN (10°–40°)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Tanto la Sección 3 (*Airspeeds for Safe Operations / Engine Failure Immediately After Take-Off*, páginas 3-1 y 3-2) del Suplemento POH como el C172F Emergency Checklist V4 y los SOPs (Sección 5.6.5) establecen:\n- **Con Flaps UP ($0^\\circ$):** mantener **65 KIAS (75 MPH)**.\n- **Con Flaps DOWN ($10^\\circ - 40^\\circ$):** mantener **60 KIAS (70 MPH)**.\nTras establecer la velocidad de planeo, se sitúa la palanca de gases en **IDLE**, el **Engine Master en OFF**, el selector de combustible en **OFF (Left and Right)** y la **Battery en OFF**.\n\n| Configuración en Fallo Tras Despegue | Velocidad de Planeo (Sección 3 POH & Checklist V4) |\n| :--- | :--- |\n| **Wing Flaps UP ($0^\\circ$)** | **65 KIAS (75 MPH)** |\n| **Wing Flaps DOWN ($10^\\circ - 40^\\circ$)** | **60 KIAS (70 MPH)** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Emergency Procedures (Page 3-1 & 3-2):**\n> \"ENGINE FAILURE IMMEDIATELY AFTER TAKE-OFF: (1) Airspeed - 65 KIAS (75 MPH) (Flaps UP) | 60 KIAS (70 MPH) (Flaps DOWN). (2) Thrust Lever - IDLE. (3) Engine Master - OFF. (4) Fuel Shut-Off Valve - OFF. (5) Wing Flaps - AS REQUIRED (40° recommended). (6) Battery - OFF.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 3 Emergency Speeds](./manual-crops/fleet-c172f/supp_p73_emg_speeds.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Engine Failure Immediately After Take-Off (Page 3-1 & 3-2)",
+        "Blue Team Flight School - C172F Emergency Checklist V4 (Page 1)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172F-EMG-002",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "POH Supplement Sección 3 & Checklist V4 - Envolvente de Velocidad y Altitud para Rearranque en Vuelo",
+    "stem": "Si se produce una parada de motor en vuelo en la Reims/Cessna F172F (TAE 125), ¿dentro de qué rango de velocidades indicadas y hasta qué altitud máxima se ha demostrado el rearranque inmediato del motor?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Entre 55 y 70 KIAS (máximo 85 KIAS) y a altitudes de presión de hasta 17.500 ft",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Entre 65 y 85 KIAS (máximo 100 KIAS) y a altitudes de presión de hasta 13.000 ft",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Entre 90 y 115 KIAS (mínimo 85 KIAS) y a altitudes de presión de hasta 10.000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Entre 70 y 95 KIAS (máximo 120 KIAS) y a altitudes de presión de hasta 15.000 ft",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Sección 3 (*Restart After Engine Failure*, página 3-3) del Suplemento POH y el Emergency Checklist V4:\n- El rearranque inmediato del motor en vuelo se ha demostrado a velocidades entre **65 y 85 KIAS (75 – 98 MPH)** —sin superar un **máximo de 100 KIAS**— y hasta altitudes de **13.000 ft**.\n- Si la hélice sigue girando por efecto molinete (*windmilling*) a más de 500–600 RPM, al situar la palanca en IDLE y reciclar el **Engine Master OFF $\\rightarrow$ ON** (esperando a que se apague la luz Glow), el motor arrancará automáticamente; si las RPM son inferiores, se acciona la llave a **START**.\n\n| Parámetro de Rearranque en Vuelo (TAE 125) | Límite Certificado (Sección 3 POH) |\n| :--- | :--- |\n| **Rango de Velocidad Recomendado** | **65 a 85 KIAS (75 – 98 MPH)** |\n| **Velocidad Máxima para Rearranque** | **100 KIAS (115 MPH)** |\n| **Altitud Máxima Demostrada** | **13.000 ft** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Restart After Engine Failure (Page 3-3):**\n> \"Note: An immediate engine restart was demonstrated at airspeeds between 65 and 85 KIAS (75 - 98 MPH) (max. 100 KIAS (115 MPH)) and up to altitudes of 13000 ft.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 3 In-Flight Restart](./manual-crops/fleet-c172f/supp_p75_emg_restart.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Restart After Engine Failure (Page 3-3)",
+        "Blue Team Flight School - C172F Emergency Checklist V4 (Page 1)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "C172F-EMG-003",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "POH Supplement Sección 3 - Luz Roja de Aviso FADEC Parpadeante vs Fija en Un Canal",
+    "stem": "En vuelo en la Reims/Cessna F172F (TAE 125), una de las luces rojas del FADEC (A o B) comienza a parpadear (flashing). ¿Qué significa esta indicación y qué ocurre al pulsar el botón «FADEC Reset»?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indica fuego en la unidad electrónica; al pulsar FADEC Reset se corta inmediatamente la inyección hacia el common-rail",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Indica agotamiento de la batería de reserva; al pulsar FADEC Reset se activa de forma automática el interruptor Force B",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Indica un fallo leve en ese canal; al pulsar FADEC Reset (1–3 s) la luz pasa a fija o se apaga si el fallo desapareció",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Indica sobrerrégimen superior a 2500 RPM; al pulsar FADEC Reset la hélice pasa mecánicamente a posición de abanderamiento",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 1 (página 1-13) y la Sección 3 (*FADEC Malfunction in Flight — One FADEC Warning Light is Flashing*, páginas 3-4 y 3-5) del Suplemento POH:\n- Una luz roja del FADEC **parpadeante (flashing)** indica que el autodiagnóstico ha detectado un **fallo nuevo** en ese canal.\n- Al pulsar el botón **\"FADEC Reset\"** (entre 1 y 3 segundos según Checklist V4):\n  - Si era un **fallo menor (low-Category failure)** y sigue activo, la luz deja de parpadear y **queda encendida fija (steady)**; si el fallo fue transitorio y ya no existe, la luz **se apaga (OFF)**.\n  - Si era un **fallo severo (high-Category failure)** en el canal activo, el sistema conmuta automáticamente al otro canal del FADEC y la luz del canal averiado permanece encendida fija.\n\n| Estado de 1 Luz Roja FADEC (A o B) | Acción del Piloto | Resultado y Actuación Posterior |\n| :--- | :--- | :--- |\n| **Parpadeando (Flashing)** | **Pulsar FADEC Reset** | Si se apaga: continuar vuelo normal.<br>Si queda fija: continuar vuelo vigilando instrumentos y hacer revisar tras aterrizar. |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: FADEC Malfunction in Flight (Page 3-4):**\n> \"a) One FADEC Warning Light is Flashing:\n> (1) FADEC Reset Button - PRESS -> Warning light turns steady ON (or turns OFF if failure is no longer active).\"\n\n![Recorte Oficial del Manual — Supplement POH Section 3 FADEC Malfunction](./manual-crops/fleet-c172f/supp_p76_emg_fadec.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: FADEC Warning Lights (Page 1-13)",
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: FADEC Malfunction in Flight (Page 3-4 & 3-5)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "C172F-EMG-004",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "POH Supplement Sección 3 - Ambas Luces Rojas del FADEC (A y B) Parpadeando Simultáneamente",
+    "stem": "Durante el vuelo en la Reims/Cessna F172F (TAE 125), ambas luces rojas de aviso del FADEC (A y B) comienzan a parpadear simultáneamente. Tras pulsar el botón «FADEC Reset», ambas luces quedan encendidas fijas y el motor presenta pérdida de potencia o funcionamiento irregular en el canal A activo. ¿Qué acción contempla el procedimiento de emergencia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apagar inmediatamente el Engine Master y el Alternator para reiniciar ambos procesadores durante 30 segundos en planeo",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Mantener pulsado el botón FADEC Test durante 20 segundos con gases al 100% para desbloquear la válvula reguladora del rail",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cerrar la válvula selectora de combustible durante 10 segundos y abrir el mando de Aire Alternativo al máximo recorrido",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Activar el interruptor de emergencia Force B (si no se vuela solo con Backup Battery) para pasar al B-FADEC y aterrizar cuanto antes",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Sección 3 (*Both FADEC Warning Lights are Flashing*, páginas 3-4 y 3-5) del Suplemento POH y el Emergency Checklist V4:\n1. Pulsar **FADEC Reset**.\n2. Si **ambas luces A y B quedan encendidas fijas**, ambos canales tienen fallos activos y el sistema selecciona por defecto el **A-FADEC**; el piloto debe **aterrizar lo antes posible (Land as soon as possible)**.\n3. Si operando en el **A-FADEC** el motor sufre **pérdida de potencia o funcionamiento irregular**, el piloto puede conmutar manualmente al **B-FADEC** activando el interruptor **\"Force B\" — ON** (siempre y cuando **NO** se esté operando únicamente con la batería de reserva del FADEC).\n\n| Condición tras Pulsar FADEC Reset | Canal Activo por Defecto | Cuándo usar el Interruptor «Force B» |\n| :--- | :--- | :--- |\n| **Ambas Luces A y B Fijas (Steady ON)** | **A-FADEC** | Solo si el **A-FADEC** presenta pérdida de potencia/fallo severo **y hay alimentación eléctrica normal** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: FADEC Malfunction in Flight (Page 3-4 & 3-5):**\n> \"If both FADEC warning lights remain steady ON... the system automatically switches to the A-FADEC. Land as soon as possible! If the engine shows a loss of power or rough operation with the active A-FADEC: Emergency Switch 'Force B' - ON (switches to B-FADEC).\"\n\n![Recorte Oficial del Manual — Supplement POH Section 3 FADEC Malfunction](./manual-crops/fleet-c172f/supp_p76_emg_fadec.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: FADEC Malfunction in Flight (Page 3-4 & 3-5)",
+        "Blue Team Flight School - C172F Emergency Checklist V4 (Page 1)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "C172F-EMG-005",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "POH Supplement Sección 1 y 3 - Consecuencia Crítica de Activar «Force B» Operando con la Batería de Reserva del FADEC",
+    "stem": "En caso de fallo total del alternador y agotamiento de la batería principal en vuelo, el motor TAE 125 queda alimentado exclusivamente por la batería de reserva del FADEC (FADEC Backup Battery). ¿Por qué advierte el Suplemento POH con un WARNING que en esta situación NUNCA debe activarse el interruptor «Force B»?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Porque la batería de reserva del FADEC está conectada únicamente al canal A-FADEC, por lo que al activar Force B el motor se apagará inmediatamente",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Porque el canal B-FADEC consume el doble de amperaje y reduciría la autonomía de la batería de reserva de 30 a 15 minutos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Porque al activar Force B sin alternador se provoca un cortocircuito en el instrumento CED-125 dejando sin indicaciones al piloto",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Porque el canal B-FADEC desactiva la bomba mecánica de alta presión y requiere que la bomba eléctrica auxiliar esté encendida",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Este es uno de los puntos más críticos del sistema FADEC del motor TAE 125 (Sección 1, página 1-13 y Sección 3, páginas 3-5 y 3-15): la **batería de reserva del FADEC (FADEC Backup Battery)** está cableada **exclusivamente al canal A-FADEC** (para garantizar 30 minutos de operación de emergencia). El canal **B-FADEC NO recibe alimentación de la batería de reserva**. Por consiguiente, si han fallado el alternador y la batería principal y el piloto activa **\"Force B\"**, el sistema desconecta el canal A e intenta pasar al canal B desenergizado, provocando la **parada inmediata del motor**.\n\n| Canal del FADEC | Alimentación Normal | Alimentación en Fallo Eléctrico Total (Backup Battery) |\n| :--- | :--- | :--- |\n| **A-FADEC** | Barra Principal (Alternador + Batería Principal) | **Conectado a la FADEC Backup Battery (máx. 30 min)** |\n| **B-FADEC** | Barra Principal (Alternador + Batería Principal) | **SIN ALIMENTACIÓN (Activar Force B apaga el motor)** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3 (Page 3-5 & 3-15):**\n> \"WARNING: When operating on the FADEC backup battery only (both main battery and alternator have failed), NEVER activate the 'Force B' switch! The B-FADEC is not connected to the backup battery; activating 'Force B' will immediately shut down the engine!\"\n\n![Recorte Oficial del Manual — Supplement POH Section 3 Total Electrical Failure](./manual-crops/fleet-c172f/supp_p88_emg_total_elec.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Electrical System (Page 1-13)",
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: FADEC Malfunction & Total Electrical Failure (Page 3-5 & 3-15)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-EMG-006",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "POH Supplement Sección 3 - Comportamiento Anormal del Motor con Luces FADEC Apagadas",
+    "stem": "Si durante el vuelo en la Reims/Cessna F172F el piloto detecta un comportamiento anormal del motor o pérdida de respuesta al mando de gases, pero NINGUNA de las luces rojas del FADEC se ha encendido, ¿qué procedimiento establece la Sección 3 del Suplemento POH?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desconectar el interruptor Battery y el Alternator para forzar la entrada en servicio de la batería de reserva del FADEC",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Activar manualmente el interruptor de emergencia Force B para conmutar al canal B-FADEC y aterrizar lo antes posible",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Pulsar y mantener presionado el botón FADEC Test durante 30 segundos para recalibrar los sensores de presión del common-rail",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cerrar inmediatamente la válvula selectora de combustible y proceder a un aterrizaje sin motor en el campo más cercano",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 3 (*Abnormal Engine Behavior*, página 3-6) del Suplemento POH y el Emergency Checklist V4, si el motor muestra un comportamiento anormal no detectado por el autodiagnóstico del canal activo (luces FADEC apagadas), el piloto debe:\n1. **Conmutar manualmente al canal B-FADEC** activando el interruptor de emergencia **\"Force B\" — ON** (tras levantar su guarda de seguridad).\n2. **Aterrizar lo antes posible (Land as soon as possible)**.\n*(Si con el canal B el comportamiento fuera aún peor, regresar el interruptor \"Force B\" a OFF para volver al canal A)*.\n\n| Situación en Vuelo | Estado Luces FADEC | Acción del Piloto |\n| :--- | :--- | :--- |\n| **Comportamiento Anormal del Motor** | **Ambas Luces OFF** | Activar **\"Force B\" — ON** (pasar a B-FADEC) y **aterrizar lo antes posible** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Abnormal Engine Behavior (Page 3-6):**\n> \"ABNORMAL ENGINE BEHAVIOR (without FADEC warning light illumination): (1) Emergency Switch 'Force B' - ON (to switch to B-FADEC). (2) Land as soon as possible.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 3 FADEC Malfunction](./manual-crops/fleet-c172f/supp_p76_emg_fadec.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Abnormal Engine Behavior (Page 3-6)",
+        "Blue Team Flight School - C172F Emergency Checklist V4 (Page 1)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "C172F-EMG-007",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "POH Supplement Sección 3 - Fallo de Control de RPM de Hélice / Sobrerrégimen (Overspeed)",
+    "stem": "En caso de fallo del control de velocidad de la hélice o sobrerrégimen (Propeller Speed Control Failure / Overspeed > 2300 RPM) en la Reims/Cessna F172F (TAE 125), ¿qué acciones debe tomar el piloto según la Sección 3 del Suplemento POH y el Emergency Checklist V4?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumentar la velocidad indicada a 120 KIAS en picado suave y activar el interruptor Force B para bloquear el gobernador hidráulico",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Extender inmediatamente Flaps 40° a cualquier velocidad y apagar el interruptor Engine Master manteniendo la bomba eléctrica en ON",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Reducir potencia de inmediato, mantener velocidad < 100 KIAS (ascender a 65 KIAS si se requiere 100% de carga) y aterrizar cuanto antes",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Desconectar el alternador principal para desenergizar la válvula solenoide del gobernador y continuar el vuelo en ruta a 2500 RPM",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En la hélice de velocidad constante **MT-Propeller MTV-6-A**, los contrapesos y el muelle interno tienden a llevar las palas hacia **paso fino (bajo paso / altas RPM)** si se pierde presión de aceite en el gobernador. Según la Sección 3 (*Fluctuations in Propeller RPM / Overspeed*, página 3-20) y el Emergency Checklist V4:\n1. **Reducir la palanca de gases (Thrust Lever — REDUCE)** hasta que las RPM vuelvan al rango verde ($\\le 2300\\text{ RPM}$).\n2. **Mantener la velocidad indicada por debajo de 100 KIAS** para evitar que el efecto molinete sobrerrevolucione la hélice.\n3. Si es imprescindible aplicar el 100% de potencia para ascender, hacerlo manteniendo **65 KIAS**.\n4. Comprobar la presión de aceite y **aterrizar lo antes posible**.\n\n| Condición de Hélice | Acción Inmediata del Piloto |\n| :--- | :--- |\n| **Overspeed ($> 2300\\text{ RPM}$)** | **Reducir gases** para mantener $\\le 2300\\text{ RPM}$ |\n| **Límite de Velocidad en Vuelo** | **Mantener $< 100\\text{ KIAS}$** (si requiere ascenso al 100%, volar a **65 KIAS**) |\n\n> 📖 **Extracto Literal del Manual — Blue Team Flight School C172F Emergency Checklist V4 & Supplement POH Section 3 (Page 3-20):**\n> \"PROPELLER SPEED CONTROL FAILURE / OVERSPEED: 1. Thrust Lever - REDUCE (keep RPM in green range <= 2300 RPM). 2. Airspeed - REDUCE (keep < 100 KIAS; if climb required: 65 KIAS and 100% power). 3. Oil Pressure - CHECK. 4. Land as soon as possible.\"\n\n![Recorte Oficial del Manual — Cessna 172F Emergency Checklist V4](./manual-crops/fleet-c172f/checklist_emg_v4_p2.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Fluctuations in Propeller RPM (Page 3-20)",
+        "Blue Team Flight School - C172F Emergency Checklist V4 - Propeller Speed Control Failure (Page 2)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "C172F-EMG-008",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "POH Supplement Sección 3 - Detención de la Hélice en Vuelo por Vibración Excesiva",
+    "stem": "Si en la Reims/Cessna F172F (TAE 125) es necesario apagar el motor en vuelo debido a daños mecánicos o vibraciones severas y se requiere detener por completo el giro de la hélice, ¿a qué velocidad debe reducirse temporalmente el avión tras pasar el Engine Master a OFF?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reducir la velocidad por debajo de 75 KIAS con Flaps 10° hasta que la hélice se detenga y luego planear a 85 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Reducir la velocidad a 40 KIAS con Flaps 40° activando el freno de hélice mediante el botón FADEC Reset",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mantener 90 KIAS y cerrar la válvula selectora de combustible para que la hélice pase automáticamente a bandera",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Reducir la velocidad por debajo de 55 KIAS hasta que la hélice deje de girar por completo y después restablecer 65 KIAS de planeo",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "La hélice **MT-Propeller MTV-6-A** instalada en la Cessna 172F **no tiene posición de abanderamiento (feathering)**. Por ello, según la Sección 3 (*Engine Shut Down in Flight*, página 3-8) del Suplemento POH, si tras apagar el motor (*Thrust Lever IDLE, Engine Master OFF, Fuel Shut-Off Valve OFF*) persisten **vibraciones excesivas** provocadas por el giro en molinete (*windmilling*), el piloto debe **reducir la velocidad indicada por debajo de 55 KIAS (63 MPH)** hasta que la hélice se detenga por completo, y acto seguido volver a establecer la velocidad óptima de planeo de **65 KIAS (75 MPH)**.\n\n| Fase de Parada de Hélice en Vuelo (Sección 3 POH) | Velocidad Indicada |\n| :--- | :--- |\n| **Detener el giro en molinete (si hay vibración excesiva)** | **Reducir a $< 55\\text{ KIAS}$ ($63\\text{ MPH}$)** hasta parada total de hélice |\n| **Planeo posterior con hélice parada (Flaps UP)** | **65 KIAS ($75\\text{ MPH}$)** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Engine Shut Down in Flight (Page 3-8):**\n> \"Note: In case of excessive vibrations, reduce the airspeed below 55 KIAS (63 MPH) until the propeller stops rotating. Then continue the glide at 65 KIAS (75 MPH).\"\n\n![Recorte Oficial del Manual — Supplement POH Section 3 Fires & Engine Shut Down](./manual-crops/fleet-c172f/supp_p79_emg_fires.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Engine Shut Down in Flight (Page 3-8)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "C172F-EMG-009",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "POH Supplement Sección 3 - Encendido de la Luz de Aviso del Alternador en Vuelo",
+    "stem": "Si durante el vuelo en la Reims/Cessna F172F se ilumina la luz de aviso del alternador (Alternator Warning Light) o el amperímetro muestra descarga de batería, ¿cuál es el procedimiento inicial establecido en la Sección 3 del Suplemento POH?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Comprobar el C/B del alternador y reciclar Alternator OFF/ON; si persiste, dejar Alternator OFF, apagar cargas no esenciales y aterrizar pronto",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Desconectar inmediatamente la batería principal (Battery OFF) para volar durante 120 minutos exclusivamente con la batería de reserva del FADEC",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Activar el interruptor de emergencia Force B y mantener encendida la bomba eléctrica auxiliar de combustible durante todo el resto del vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mantener el interruptor Alternator en ON, aumentar las RPM a 2300 y encender todas las luces exteriores para estabilizar el regulador de tensión",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Sección 3 (*Alternator Warning Light Illuminates During Flight*, página 3-13) del Suplemento POH y el Emergency Checklist V4:\n1. Comprobar el **disyuntor del alternador (Alternator Circuit Breaker — CHECK, push in if tripped)**.\n2. Reciclar el interruptor **Alternator — OFF y luego ON**.\n3. Si la luz de aviso sigue encendida o persiste la descarga:\n   - **Alternator — OFF**.\n   - **Desconectar todos los equipos eléctricos no esenciales** (tabla 3-1a: luces, calefacción pitot si no hay hielo, segunda radio, etc.) para preservar la batería principal (~120 min de autonomía).\n   - **Aterrizar lo antes posible (Land as soon as possible)**.\n\n| Paso ante Fallo de Alternador en Vuelo | Acción del Piloto |\n| :--- | :--- |\n| **1. Intento de Restablecimiento** | Comprobar C/B Alternator y reciclar **Alternator OFF $\\rightarrow$ ON** |\n| **2. Si el Fallo Persiste** | **Alternator OFF** + **Equipos No Esenciales OFF** |\n| **3. Decisión Operativa** | **Aterrizar lo antes posible** (autonomía ~120 min en batería principal + 30 min en Backup Battery) |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3 (Page 3-13):**\n> \"ALTERNATOR WARNING LIGHT ILLUMINATES DURING FLIGHT: (1) Alternator Circuit Breaker - CHECK. (2) Alternator Switch - OFF, then ON. If warning light remains ON: (3) Alternator Switch - OFF. (4) Non-essential electrical equipment - OFF. (5) Land as soon as possible.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 3 Electrical Malfunctions](./manual-crops/fleet-c172f/supp_p84_emg_electrical_table.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Electrical Power Supply System Malfunctions (Page 3-11 to 3-13)",
+        "Blue Team Flight School - C172F Emergency Checklist V4 (Page 2)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-EMG-010",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "POH Supplement Sección 3 - Indicación de Sobrecarga en el Amperímetro (> 20 A Continuos en Vuelo)",
+    "stem": "Si durante el vuelo de crucero en la Reims/Cessna F172F el amperímetro del AED-125 continúa indicando una corriente elevada (> 20 A durante más de 15 minutos tras el despegue) o el voltaje supera los 15 V (rango rojo), ¿qué acción ordena la Sección 3 del Suplemento POH?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encender el calefactor del tubo pitot y la luz de aterrizaje para absorber el exceso de corriente del alternador",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Pasar el interruptor Alternator a OFF, desconectar los equipos eléctricos no esenciales y aterrizar lo antes posible",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Pasar el interruptor Battery a OFF manteniendo el Alternator en ON para evitar que la batería principal se recaliente",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pulsar el botón FADEC Reset cada 5 minutos para limitar electrónicamente la excitación del alternador",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 3 (*Ammeter Shows High Charging Current During Flight*, página 3-12) del Suplemento POH:\n- Si tras 15 minutos de vuelo la corriente de carga sigue siendo superior a **20 A** (o el voltaje supera el límite normal de 14–15 V), existe un fallo en el regulador de voltaje o un cortocircuito interno en la batería que puede provocar su sobrecalentamiento.\n- El piloto debe **desconectar el alternador (Alternator — OFF)**, **apagar los equipos eléctricos no esenciales** y **aterrizar lo antes posible**.\n*(Nota: Nunca se debe desconectar la batería principal dejando el alternador encendido en vuelo)*.\n\n| Anomalía en AED-125 | Acción Requerida (Sección 3 POH) |\n| :--- | :--- |\n| **Corriente $> 20\\text{ A}$ tras 15 min de vuelo / Voltaje $> 15\\text{ V}$** | **Alternator — OFF**, Equipos no esenciales — OFF y **aterrizar lo antes posible** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3 (Page 3-12):**\n> \"AMMETER SHOWS HIGH CHARGING CURRENT DURING FLIGHT (> 20 A for more than 15 minutes after take-off): (1) Alternator - OFF. (2) Non-essential electrical equipment - OFF. (3) Land as soon as possible.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 3 Electrical Malfunctions](./manual-crops/fleet-c172f/supp_p84_emg_electrical_table.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Ammeter Shows High Charging Current During Flight (Page 3-12)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "C172F-EMG-011",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "POH Supplement Sección 3 - Fallo Eléctrico Total (Total Electrical Failure)",
+    "stem": "En caso de fallo eléctrico total en vuelo (tanto el alternador como la batería principal han fallado y el motor opera alimentado únicamente por la FADEC Backup Battery), ¿de qué sistemas carece la aeronave y cuál es el tiempo máximo de operación restante del motor?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El motor operará máx. 120 min en ambos canales A y B; seguirán operativos el display CED-125 y los flaps eléctricos hasta 20°",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "El motor operará indefinidamente gracias al generador propio de la caja reductora, perdiéndose únicamente los equipos de radio",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El motor operará máx. 30 min en A-FADEC; quedarán inoperativos CED/AED, aviónica, luces, bomba de combustible y flaps eléctricos",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "El motor operará máx. 60 min siempre que se active el interruptor Force B y se mantenga conectada la bomba eléctrica auxiliar",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Sección 3 (*Total Electrical Failure*, página 3-15) del Suplemento POH:\n- Si fallan tanto el alternador como la batería principal, la **batería de reserva del FADEC (FADEC Backup Battery)** alimenta **únicamente el A-FADEC durante un máximo de 30 minutos**.\n- En esta condición **fallan todos los consumidores de la barra principal**: pantallas **CED-125 y AED-125**, radios/aviónica, bomba eléctrica de combustible, luces y el **motor eléctrico de los flaps** (habrá que realizar un aterrizaje sin flaps —*Flapless Landing*— a **70 KIAS**).\n- El piloto debe **aterrizar tan pronto como sea posible (antes de 30 minutos)** y **NUNCA activar el interruptor \"Force B\"**.\n\n| Sistema de la Aeronave | Estado en Fallo Eléctrico Total (Solo Backup Battery) |\n| :--- | :--- |\n| **Canal A-FADEC e Inyección Common-Rail** | **OPERATIVO durante máximo 30 minutos** |\n| **Canal B-FADEC** | **INOPERATIVO (Prohibido activar Force B)** |\n| **Displays CED-125 / AED-125 y Aviónica** | **INOPERATIVOS (Apagados)** |\n| **Flaps Eléctricos y Bomba Eléctrica Fuel** | **INOPERATIVOS (Aterrizaje con Flaps UP a 70 KIAS)** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Total Electrical Failure (Page 3-15):**\n> \"TOTAL ELECTRICAL FAILURE: When both main battery and alternator have failed, the engine is supplied by the FADEC backup battery for a maximum of 30 minutes. Land as soon as possible! Note: All electrically powered equipment (including CED-125, AED-125, electrically operated wing flaps, fuel pump, avionics) is inoperative. Prepare for a flapless landing (70 KIAS). WARNING: Do not operate the 'Force B' switch!\"\n\n![Recorte Oficial del Manual — Supplement POH Section 3 Total Electrical Failure](./manual-crops/fleet-c172f/supp_p88_emg_total_elec.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Total Electrical Failure (Page 3-15)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "C172F-EMG-012",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "POH Supplement Sección 3 - Funcionamiento Irregular del Motor o Pérdida de Potencia (Rough Engine Operation)",
+    "stem": "Si en vuelo el motor TAE 125 presenta funcionamiento irregular o pérdida parcial de potencia (Rough Engine Operation or Loss of Power), ¿cuáles son los primeros pasos de comprobación y actuación según la Sección 3 del Suplemento POH?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cerrar inmediatamente la válvula selectora de combustible, apagar el alternador y extender Flaps 40° en vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Desconectar la batería principal durante 20 segundos y pulsar el botón FADEC Test con la palanca en IDLE",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Seleccionar únicamente el tanque derecho (RIGHT), apagar la bomba eléctrica y ascender a máxima potencia",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Comprobar selector en BOTH, encender Fuel Pump ON, abrir Alternate Air ON y verificar las luces del FADEC",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 3 (*Rough Engine Operation or Loss of Power*, página 3-16) del Suplemento POH y el Emergency Checklist V4:\n1. **Thrust Lever — CHECK**.\n2. **Fuel Shut-Off Valve — CHECK ON (BOTH)**.\n3. **Fuel Pump — ON** (para suplir un posible fallo de la bomba mecánica de alimentación).\n4. **Alternate Air — PULL (ON)** (por si el filtro de admisión estuviera obstruido o engelado).\n5. **FADEC Warning Lights — CHECK** (si están encendidas, aplicar el procedimiento de fallo FADEC; si están apagadas y persiste el fallo, activar **Force B — ON**).\n\n| Paso en Pérdida Parcial de Potencia | Propósito Técnico |\n| :--- | :--- |\n| **1. Fuel Shut-Off Valve — ON (BOTH)** | Asegurar alimentación desde ambos depósitos |\n| **2. Fuel Pump — ON** | Respaldar la presión de entrada a la bomba de alta presión |\n| **3. Alternate Air — ON (Pull)** | Bypasear posible obstrucción o hielo en el filtro de aire |\n| **4. Luces FADEC / Force B** | Aislar fallo electrónico entre canales A y B |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3 (Page 3-16):**\n> \"ROUGH ENGINE OPERATION OR LOSS OF POWER: (1) Thrust Lever - CHECK. (2) Fuel Shut-Off Valve - CHECK ON. (3) Fuel Pump - ON. (4) Alternate Air - PULL (ON). (5) FADEC Warning Lights - CHECK.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 3 Total Electrical Failure & Rough Engine](./manual-crops/fleet-c172f/supp_p88_emg_total_elec.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Rough Engine Operation or Loss of Power (Page 3-16)",
+        "Blue Team Flight School - C172F Emergency Checklist V4 (Page 1)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-EMG-013",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "POH Supplement Sección 3 - Baja Presión de Aceite en Vuelo (< 2.3 bar vs Rango Rojo < 1.2 bar)",
+    "stem": "En vuelo de crucero en la Reims/Cessna F172F (TAE 125), la presión de aceite desciende por debajo de 2,3 bar (rango ámbar) o entra en el rango rojo (< 1,2 bar) acompañada de aumento en las temperaturas de aceite y refrigerante. ¿Cómo debe actuar el piloto según la Sección 3 del Suplemento POH?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En ámbar (<2,3 bar) con temp. normales, reducir potencia y aterrizar pronto; en rojo con subida térmica, potencia mínima y aterrizaje inmediato",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Aumentar la potencia al 100% de carga para incrementar el caudal de la bomba mecánica de aceite y continuar el vuelo hacia el aeródromo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Activar el interruptor de emergencia Force B para conmutar al segundo sensor de presión de aceite sin modificar el ajuste de potencia",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Abrir por completo el mando de Aire Alternativo y encender la bomba eléctrica de combustible para refrigerar el cárter del motor en vuelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Sección 3 (*Oil Pressure Too Low*, página 3-17) del Suplemento POH:\n1. Si la presión de aceite cae por debajo de **2,3 bar en crucero (rango ámbar)** pero las temperaturas de aceite y refrigerante permanecen normales: **reducir potencia** y **aterrizar lo antes posible**.\n2. Si la presión de aceite cae al **rango rojo ($< 1,2\\text{ bar}$)** o va acompañada de un **aumento de la temperatura de aceite (OT) y/o refrigerante (CT)**: reducir la potencia al mínimo indispensable, **aterrizar inmediatamente** y estar preparado para un fallo inminente del motor y pérdida de control del paso de hélice.\n\n| Indicación de Presión de Aceite en Vuelo | Temperaturas OT / CT | Acción del Piloto (Sección 3 POH) |\n| :--- | :--- | :--- |\n| **Ámbar ($< 2,3\\text{ bar}$ en crucero)** | Normales (en verde) | Reducir potencia y **aterrizar lo antes posible** |\n| **Roja ($< 1,2\\text{ bar}$)** | Subiendo / Anormales | Reducir potencia al mínimo y **aterrizar inmediatamente (riesgo de fallo de motor)** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Oil Pressure Too Low (Page 3-17):**\n> \"OIL PRESSURE TOO LOW (< 2.3 BAR IN CRUISE (YELLOW RANGE) OR RED RANGE): (1) Thrust Lever - REDUCE to minimum required. (2) Oil Temperature and Coolant Temperature - CHECK. If oil pressure is in the red range and oil/coolant temperatures are rising: expect engine failure, land immediately!\"\n\n![Recorte Oficial del Manual — Supplement POH Section 3 Low Oil Pressure](./manual-crops/fleet-c172f/supp_p90_emg_oil_press.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Oil Pressure Too Low (Page 3-17)",
+        "Blue Team Flight School - C172F Emergency Checklist V4 (Page 2)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-EMG-014",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "POH Supplement Sección 3 - Alta Temperatura de Refrigerante (CT > 105°C) y Luz «Water Level»",
+    "stem": "Si en vuelo la temperatura del líquido refrigerante (Coolant Temperature - CT) entra en el rango rojo (> 105°C), ¿qué indicador adicional en el AED-125 debe comprobar inmediatamente el piloto y cuál es el procedimiento a seguir?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Verificar la luz ámbar Glow en el panel, levantar el morro para reducir la velocidad a 55 KIAS y cerrar la calefacción para aislar el radiador",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Verificar luz amarilla Water Level (AED-125), reducir potencia y aumentar velocidad; si Water Level está ON o CT sigue en rojo, aterrizar pronto",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Verificar las luces Fuel L/R, abrir el mando de Aire Alternativo al máximo y activar el interruptor Force B para enfriar el circuito grande",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Verificar el amperímetro digital, desconectar el alternador principal para detener la bomba de agua y evitar sobrepresión en el circuito",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 3 (*Coolant Temperature 'CT' Too High (Red Range)*, página 3-18) del Suplemento POH y el Emergency Checklist V4:\n1. Comprobar la luz amarilla **\"Water Level\"** en el **AED-125** (que alerta de bajo nivel de refrigerante en el vaso de expansión).\n2. **Reducir la potencia (Thrust Lever — REDUCE)** y **aumentar la velocidad de vuelo** para incrementar el flujo de aire por el radiador (además de abrir la **calefacción de cabina al máximo** para disipar calor a través del intercambiador del circuito pequeño).\n3. Si la luz **\"Water Level\" está encendida** (fuga de refrigerante) o la temperatura **CT no regresa al rango verde**, existe riesgo inminente de gripado del motor: **aterrizar lo antes posible / inmediatamente**.\n\n| Indicación de Refrigeración | Significado Técnico | Actuación del Piloto |\n| :--- | :--- | :--- |\n| **CT $> 105^\\circ\\text{C}$ (Rojo) + Water Level OFF** | Sobrecalentamiento térmico | Reducir potencia, aumentar velocidad, Cabin Heat ON |\n| **CT $> 105^\\circ\\text{C}$ (Rojo) + Water Level ON** | **Pérdida de líquido refrigerante** | Reducir potencia al mínimo y **aterrizar inmediatamente** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Coolant Temperature Too High (Page 3-18):**\n> \"COOLANT TEMPERATURE 'CT' TOO HIGH (RED RANGE): (1) Warning light 'Water Level' - CHECK. (2) Thrust Lever - REDUCE. (3) Airspeed - INCREASE. If 'Water Level' warning light is ON or coolant temperature does not drop within green range: Land as soon as possible (expect engine failure)!\"\n\n![Recorte Oficial del Manual — Supplement POH Section 3 High Coolant Temp](./manual-crops/fleet-c172f/supp_p91_emg_coolant_temp.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Coolant Temperature Too High (Page 3-18)",
+        "Blue Team Flight School - C172F Emergency Checklist V4 (Page 2)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "C172F-EMG-015",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "POH Supplement Sección 3 - Baja Temperatura de Combustible en Vuelo (Fuel Temperature Too Low)",
+    "stem": "¿En qué situación de temperatura de combustible en el AED-125 debe el piloto aplicar el procedimiento de emergencia por «Fuel Temperature Too Low» (descender a aire más cálido y aterrizar lo antes posible), según opere con Diesel o con Jet A-1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Al descender por debajo de +15°C con combustible Diesel o por debajo de 0°C cuando se utiliza queroseno Jet A-1",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Únicamente cuando la temperatura de combustible baja de -45°C independientemente del tipo de combustible usado",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En rango ámbar (-1°C a -30°C) operando con Diesel (>10%), o en rango rojo (< -30°C) operando con Jet A-1",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "En rango ámbar (-1°C a -30°C) operando con Jet A-1, o al bajar de +10°C cuando se utiliza gasóleo Diesel EN 590",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Sección 3 (*Fuel Temperature Too Low*, página 3-19) del Suplemento POH:\n- El rango **ámbar ($-1^\\circ\\text{C}$ a $-30^\\circ\\text{C}$)** representa temperatura demasiado baja **cuando se utiliza Diesel (o mezcla con $> 10\\%$ de Diesel)**, debido al riesgo de gelificación de parafinas (*waxing*) en el filtro.\n- El rango **rojo ($< -30^\\circ\\text{C}$)** representa temperatura demasiado baja **cuando se utiliza Jet A-1 / Jet A / JP-8**.\nEn ambos casos, el piloto debe buscar niveles de vuelo con mayor temperatura exterior y **aterrizar lo antes posible**.\n\n| Combustible en Uso | Rango de Alerta en AED-125 | Riesgo / Acción Requerida |\n| :--- | :--- | :--- |\n| **Diesel EN 590 ($> 10\\%$ Diesel)** | **Ámbar ($-1^\\circ\\text{C}$ a $-30^\\circ\\text{C}$) o Rojo** | Gelificación del gasóleo $\\rightarrow$ Aterrizar lo antes posible |\n| **Jet A-1 / Jet A / JP-8** | **Rojo ($< -30^\\circ\\text{C}$)** | Límite en vuelo $-35^\\circ\\text{C}$ $\\rightarrow$ Aterrizar lo antes posible |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3 (Page 3-19):**\n> \"FUEL TEMPERATURE TOO LOW (AMBER RANGE for Diesel fuel, RED RANGE for Kerosene): Land as soon as possible.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 3 Coolant & Fuel Temp](./manual-crops/fleet-c172f/supp_p91_emg_coolant_temp.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Fuel Temperature Too Low (Page 3-19)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "C172F-EMG-016",
+    "subject_id": "c172f_emergency",
+    "learning_objective": "POH Supplement Sección 1 y 3 - Retorno de Combustible al Tanque Izquierdo y Gestión de Fuel L / Fuel R",
+    "stem": "En la Reims/Cessna F172F equipada con motor TAE 125, la línea de retorno de combustible del sistema common-rail devuelve el combustible sobrante caliente exclusivamente al depósito IZQUIERDO (Left Tank). ¿Qué precaución operativa implica este diseño si se vuela con el selector en un solo tanque?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Está prohibido seleccionar el tanque izquierdo (LEFT) en vuelo porque carece de tubería de aspiración hacia la bomba de alta",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "El combustible de retorno se envía siempre al tanque derecho (RIGHT), haciendo que el depósito izquierdo se vacíe el doble de rápido",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "La línea de retorno de combustible solo permanece abierta cuando la bomba eléctrica auxiliar (Fuel Pump) está conectada en ON",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Si se vuela en RIGHT con el tanque izquierdo lleno, el retorno hacia el tanque izquierdo puede desbordarse por la ventilación",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 1 (*Fuel System*, páginas 1-8 y 1-9, Figura 1-3) del Suplemento POH:\n- El motor TAE 125 bombea un caudal elevado de combustible para refrigerar y lubricar la bomba de alta presión y los inyectores, devolviendo el excedente a través de una **línea de retorno conectada exclusivamente al depósito izquierdo (Left Fuel Tank)**.\n- En operación normal la válvula selectora debe llevarse en **BOTH**.\n- Si se opera desde el depósito derecho (**RIGHT**) cuando el depósito izquierdo está lleno o casi lleno, el combustible retornado al depósito izquierdo acabará **desbordándose al exterior por el tubo de ventilación izquierdo**, reduciendo la autonomía total.\n\n| Componente del Circuito de Combustible | Conexión en Reims/Cessna F172F (TAE 125) |\n| :--- | :--- |\n| **Alimentación al Motor** | Desde **BOTH** (o seleccionable LEFT / RIGHT / OFF) |\n| **Retorno de Combustible (Return Line)** | **Exclusivamente hacia el Tanque IZQUIERDO (Left Tank)** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Fuel System (Page 1-8 & 1-9):**\n> \"The return line from the engine is connected to the left fuel tank... CAUTION: When operating on the RIGHT tank, fuel is returned to the LEFT tank. If the left tank is full, fuel will overflow through the tank vent line!\"\n\n![Recorte Oficial del Manual — Supplement POH Section 1 Fuel System](./manual-crops/fleet-c172f/supp_p52_fuel_system.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Fuel System - Figure 1-3 (Page 1-8 & 1-9)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  }
+]

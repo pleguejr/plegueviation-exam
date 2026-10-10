@@ -1,0 +1,743 @@
+[
+  {
+    "id": "DA40D-LIM-001",
+    "subject_id": "da40d_limitations",
+    "learning_objective": "AFM 2.2 - Velocidad de Nunca Exceder (Vne)",
+    "stem": "En la Diamond DA 40 D (EC-OKC), ¿cuál es la Velocidad de Nunca Exceder (Vne) marcada con la línea roja del anemómetro?",
+    "options": [
+      {
+        "id": "A",
+        "text": "165 KIAS, velocidad que no debe sobrepasarse en ninguna operación",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "178 KIAS, velocidad que no debe sobrepasarse en ninguna operación",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "190 KIAS, velocidad que no debe sobrepasarse en ninguna operación",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "152 KIAS, velocidad que no debe sobrepasarse en ninguna operación",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La Sección 2.2 del AFM fija la **$V_{NE}$ en 178 KIAS** (línea roja). El arco amarillo se extiende de **129 a 178 KIAS** (solo aire en calma).\n\n| Marca | Valor |\n| :--- | :--- |\n| **$V_{NE}$ (línea roja)** | **178 KIAS** |\n| **$V_{NO}$** | 129 KIAS |\n| **Arco amarillo** | 129 – 178 KIAS |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.2: Airspeed (Page 2-3):**\n> \"vNE Never exceed speed in smooth air 178 KIAS. Do not exceed this speed in any operation.\"\n\n![Recorte Oficial del Manual — DA 40 D Airspeed Limitations](./manual-crops/fleet-da40d/da40_lim_airspeeds_table.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.2: Airspeed (Page 2-3)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "DA40D-LIM-002",
+    "subject_id": "da40d_limitations",
+    "learning_objective": "AFM 2.2 & 2.3 - Velocidad Máxima Estructural de Crucero (Vno) y Arco Amarillo",
+    "stem": "¿Cuál es la velocidad máxima estructural de crucero (Vno) de la DA 40 D, que marca el final del arco verde y el inicio del arco amarillo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "129 KIAS; por encima solo se vuela en aire en calma y con precaución",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "108 KIAS; por encima solo se vuela en aire en calma y con precaución",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "140 KIAS; por encima solo se vuela en aire en calma y con precaución",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "118 KIAS; por encima solo se vuela en aire en calma y con precaución",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según las Secciones 2.2 y 2.3 del AFM, **$V_{NO} = V_C = 129$ KIAS**. El arco verde va de **52 a 129 KIAS** y el amarillo de **129 a 178 KIAS** («Only in smooth air»).\n\n| Arco | Rango |\n| :--- | :--- |\n| **Verde** | 52 – 129 KIAS |\n| **Amarillo** | **129 – 178 KIAS** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.3: Airspeed Indicator Markings (Page 2-4):**\n> \"Green arc 52 KIAS - 129 KIAS Normal operating range. Yellow arc 129 KIAS - 178 KIAS 'Caution' range - Only in smooth air.\"\n\n![Recorte Oficial del Manual — DA 40 D ASI Markings](./manual-crops/fleet-da40d/da40_lim_asi_markings.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.3: Airspeed Indicator Markings (Page 2-4)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.25
+    }
+  },
+  {
+    "id": "DA40D-LIM-003",
+    "subject_id": "da40d_limitations",
+    "learning_objective": "AFM 2.2 - Velocidad de Maniobra (Va) en función de la masa",
+    "stem": "¿Qué Velocidad de Maniobra (Va) establece el AFM de la DA 40 D según la masa del avión?",
+    "options": [
+      {
+        "id": "A",
+        "text": "108 KIAS por encima de 980 kg y 94 KIAS entre 780 kg y 980 kg",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "118 KIAS por encima de 980 kg y 100 KIAS entre 780 kg y 980 kg",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "94 KIAS por encima de 980 kg y 108 KIAS entre 780 kg y 980 kg",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "121 KIAS por encima de 980 kg y 108 KIAS entre 780 kg y 980 kg",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La $V_A$ disminuye con la masa: **108 KIAS** (más de 980 kg hasta 1150 kg) y **94 KIAS** (780 kg a 980 kg). Por encima de $V_A$ no deben realizarse movimientos completos o bruscos de mandos.\n\n| Masa | $V_A$ |\n| :--- | :--- |\n| 980 – 1150 kg | **108 KIAS** |\n| 780 – 980 kg | **94 KIAS** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.2: Airspeed (Page 2-3):**\n> \"vA Maneuvering speed 108 KIAS above: 980 kg / 2161 lb up to: 1150 kg / 2535 lb; 94 KIAS above: 780 kg / 1720 lb up to: 980 kg / 2161 lb. Do not make full or abrupt control surface movement above this speed.\"\n\n![Recorte Oficial del Manual — DA 40 D Airspeed Limitations](./manual-crops/fleet-da40d/da40_lim_airspeeds_table.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.2: Airspeed (Page 2-3)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "DA40D-LIM-004",
+    "subject_id": "da40d_limitations",
+    "learning_objective": "AFM 2.2 - Velocidades Máximas con Flaps Extendidos (Vfe)",
+    "stem": "¿Cuáles son las velocidades máximas con flaps extendidos (Vfe) de la DA 40 D para las posiciones T/O y LDG?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flaps T/O: 91 KIAS; Flaps LDG: 108 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Flaps T/O: 108 KIAS; Flaps LDG: 91 KIAS",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Flaps T/O: 120 KIAS; Flaps LDG: 98 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Flaps T/O: 100 KIAS; Flaps LDG: 85 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El AFM (2.2) y el placard junto al selector de flaps fijan **$V_{FE}$ T/O = 108 KIAS** y **$V_{FE}$ LDG = 91 KIAS** (tope del arco blanco).\n\n| Posición | $V_{FE}$ |\n| :--- | :--- |\n| **T/O** | **108 KIAS** |\n| **LDG** | **91 KIAS** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.2 (Page 2-3) & Section 2.15 Placards (Page 2-28):**\n> \"vFE Max. flaps extended speed LDG: 91 KIAS T/O: 108 KIAS. Do not exceed these speeds with the given flap setting.\"\n\n![Recorte Oficial del Manual — DA 40 D Airspeed Limitations](./manual-crops/fleet-da40d/da40_lim_airspeeds_table.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.2 (Page 2-3) & Section 2.15 Placards (Page 2-28)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.25
+    }
+  },
+  {
+    "id": "DA40D-LIM-005",
+    "subject_id": "da40d_limitations",
+    "learning_objective": "AFM 2.3 - Arco Blanco y Arco Verde del Anemómetro",
+    "stem": "En el anemómetro de la DA 40 D, ¿qué rangos cubren el arco blanco y el arco verde?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Arco blanco 44–108 KIAS y arco verde 52–129 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Arco blanco 49–91 KIAS y arco verde 58–140 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Arco blanco 52–100 KIAS y arco verde 49–118 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Arco blanco 49–91 KIAS y arco verde 52–129 KIAS",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "Sección 2.3: **arco blanco 49–91 KIAS** (rango con flaps totalmente extendidos) y **arco verde 52–129 KIAS** (rango normal).\n\n| Marca | Rango | Significado |\n| :--- | :--- | :--- |\n| **Blanco** | **49 – 91 KIAS** | Flaps LDG |\n| **Verde** | **52 – 129 KIAS** | Operación normal |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.3: Airspeed Indicator Markings (Page 2-4):**\n> \"White arc 49 KIAS - 91 KIAS Operating range with flaps fully extended. Green arc 52 KIAS - 129 KIAS Normal operating range.\"\n\n![Recorte Oficial del Manual — DA 40 D ASI Markings](./manual-crops/fleet-da40d/da40_lim_asi_markings.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.3: Airspeed Indicator Markings (Page 2-4)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "DA40D-LIM-006",
+    "subject_id": "da40d_limitations",
+    "learning_objective": "AFM 2.7 - Masa Máxima de Despegue en Categoría Normal y Utility",
+    "stem": "¿Cuál es la masa máxima de despegue de la DA 40 D en Categoría Normal y en Categoría Utility?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1150 kg en Categoría Normal y 980 kg en Categoría Utility",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "1200 kg en Categoría Normal y 1050 kg en Categoría Utility",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "1150 kg en Categoría Normal y 1092 kg en Categoría Utility",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "1092 kg en Categoría Normal y 900 kg en Categoría Utility",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Sección 2.7: **MTOM Normal = 1150 kg (2535 lb)** y **MTOM Utility = 980 kg (2161 lb)**.\n\n| Categoría | MTOM |\n| :--- | :--- |\n| **Normal** | **1150 kg (2535 lb)** |\n| **Utility** | **980 kg (2161 lb)** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.7: Mass (Page 2-13):**\n> \"Maximum take-off mass (Normal Category) : 1150 kg (2535 lb). Maximum take-off mass (Utility Category) : 980 kg (2161 lb).\"\n\n![Recorte Oficial del Manual — DA 40 D Mass Limits](./manual-crops/fleet-da40d/da40_lim_mass_limits.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.7: Mass (Page 2-13)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.2
+    }
+  },
+  {
+    "id": "DA40D-LIM-007",
+    "subject_id": "da40d_limitations",
+    "learning_objective": "AFM 2.7 & 4B.7 - Masa Máxima de Aterrizaje según Amortiguadores (MÄM 40-123)",
+    "stem": "¿De qué depende que la masa máxima de aterrizaje de la DA 40 D sea 1150 kg o 1092 kg?",
+    "options": [
+      {
+        "id": "A",
+        "text": "De llevar instalado el depósito de largo alcance (OÄM 40-130); si no, 1092 kg",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "De llevar instalados amortiguadores de tren de 18 mm (MÄM 40-123); si no, 1092 kg",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "De operar con motor TAE 125-02-99 (MÄM 40-256); si no, el límite es 1092 kg",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "De llevar carenados de rueda instalados en el tren principal; si no, 1092 kg",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Con **patas de tren de 18 mm de espesor (MÄM 40-123)** la masa máxima de aterrizaje es **1150 kg**; en otro caso es **1092 kg (2407 lb)**, y aterrizar por encima pasa a ser un procedimiento anormal (4B.7, $V_{APP}$ 71 KIAS).\n\n| Configuración | MLM |\n| :--- | :--- |\n| Struts 18 mm (MÄM 40-123) | **1150 kg** |\n| Resto | **1092 kg** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.7: Mass (Page 2-13):**\n> \"Maximum landing mass : 1150 kg (2535 lb) if landing gear struts with 18 mm (0.71 in) thickness are installed (if MÄM 40-123 is installed); 1092 kg (2407 lb) otherwise.\"\n\n![Recorte Oficial del Manual — DA 40 D Mass Limits](./manual-crops/fleet-da40d/da40_lim_mass_limits.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.7: Mass (Page 2-13)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "DA40D-LIM-008",
+    "subject_id": "da40d_limitations",
+    "learning_objective": "AFM 2.7 & 7.7 - Carga Máxima en Compartimento de Equipaje",
+    "stem": "¿Cuál es la carga máxima autorizada en el compartimento de equipaje de la DA 40 D y qué condición adicional impone el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "45 kg, y sin red de equipaje instalada no puede cargarse equipaje",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "30 kg, y sin red de equipaje se limita la carga a solo 10 kg",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "54 kg, y sin red de equipaje se limita la carga a solo 20 kg",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "30 kg, y sin red de equipaje instalada no puede cargarse equipaje",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "Sección 2.7: **máximo 30 kg (66 lb)**. Sección 7.7: «Without a baggage net, no baggage may be loaded».\n\n| Elemento | Límite |\n| :--- | :--- |\n| **Equipaje** | **30 kg (66 lb)** |\n| **Sin red** | **0 kg** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.7 (Page 2-13) & Section 7.7 (Page 7-13):**\n> \"Max. load in baggage compartment : 30 kg (66 lb). The baggage compartment is behind the seat backs of the rear seats. Without a baggage net, no baggage may be loaded.\"\n\n![Recorte Oficial del Manual — DA 40 D Mass Limits](./manual-crops/fleet-da40d/da40_lim_mass_limits.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.7 (Page 2-13) & Section 7.7 (Page 7-13)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "DA40D-LIM-009",
+    "subject_id": "da40d_limitations",
+    "learning_objective": "AFM 2.10 - Factores de Carga Estructurales en Categoría Normal",
+    "stem": "¿Qué factores de carga estructurales máximos admite la DA 40 D en Categoría Normal a Va y con flaps T/O o LDG?",
+    "options": [
+      {
+        "id": "A",
+        "text": "+4,4 g / −1,76 g a Va y +2,0 g con flaps T/O o LDG",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "+3,8 g / −1,52 g a Va y +3,0 g con flaps T/O o LDG",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "+3,8 g / −1,52 g a Va y +2,0 g con flaps T/O o LDG",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "+6,0 g / −3,00 g a Va y +2,0 g con flaps T/O o LDG",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Tabla 2.10 (Categoría Normal): **+3,8 / −1,52 g a $V_A$**, **+3,8 / 0 g a $V_{NE}$**, **+2,0 g con flaps**. En Utility: +4,4 / −1,76 g a $V_A$.\n\n| Categoría | a $V_A$ | a $V_{NE}$ | Flaps |\n| :--- | :--- | :--- | :--- |\n| **Normal** | **+3,8 / −1,52** | +3,8 / 0 | **+2,0** |\n| Utility | +4,4 / −1,76 | +4,4 / −1,0 | +2,0 |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.10: Maneuvering Load Factors (Page 2-17):**\n> \"Normal Category: at vA Positive 3.8 Negative -1.52; at vNE Positive 3.8 Negative 0; with flaps in T/O or LDG position 2.0.\"\n\n![Recorte Oficial del Manual — DA 40 D Load Factors](./manual-crops/fleet-da40d/da40_lim_load_factors.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.10: Maneuvering Load Factors (Page 2-17)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "DA40D-LIM-010",
+    "subject_id": "da40d_limitations",
+    "learning_objective": "AFM 2.9 & 2.12 - Condiciones de la Categoría Utility",
+    "stem": "¿Qué condiciones de operación aplican a la DA 40 D en Categoría Utility según el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Máximo 1150 kg, cuatro ocupantes a bordo y alabeo de hasta 60°",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Máximo 980 kg, dos ocupantes en cualquier asiento y barrena permitida",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Máximo 1092 kg, tres ocupantes a bordo y alabeo de hasta 75° máximo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Máximo 980 kg, dos ocupantes en asientos delanteros y alabeo hasta 90°",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "En Utility: **MTOM 980 kg**, **2 ocupantes, ambos delante** (2.12) y maniobras con **alabeo hasta 90°** (2.9). Acrobacia y barrena prohibidas en ambas categorías.\n\n| Parámetro | Normal | Utility |\n| :--- | :--- | :--- |\n| MTOM | 1150 kg | **980 kg** |\n| Ocupantes | 4 | **2 (delante)** |\n| Alabeo máx. | 60° | **90°** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.9 (Page 2-16) & Section 2.12 (Page 2-18):**\n> \"Utility Category: Lazy Eights, Chandelles, as well as steep turns and similar maneuvers, in which an angle of bank of not more than 90° is attained. Maximum number of occupants Utility Category: 2 (two persons, both must sit in front).\"\n\n![Recorte Oficial del Manual — DA 40 D Approved Maneuvers](./manual-crops/fleet-da40d/da40_lim_maneuvers_normal.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.9 (Page 2-16) & Section 2.12 (Page 2-18)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "DA40D-LIM-011",
+    "subject_id": "da40d_limitations",
+    "learning_objective": "AFM 2.11 - Altitud Máxima de Operación Demostrada",
+    "stem": "¿Cuál es la altitud máxima de operación demostrada de la DA 40 D según el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "18.000 ft (5486 m) de altitud de presión",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "14.000 ft (4267 m) de altitud de presión",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "20.000 ft (6096 m) de altitud de presión",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "16.400 ft (5000 m) de altitud de presión",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "Sección 2.11: **16.400 ft (5000 m) pressure altitude**. A gran altitud se requiere oxígeno según la normativa (4A.3.19).\n\n| Parámetro | Valor |\n| :--- | :--- |\n| **Altitud máx. demostrada** | **16.400 ft PA** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.11: Operating Altitude (Page 2-18):**\n> \"The maximum demonstrated operating altitude is 16400 ft (5000 m) pressure altitude.\"\n\n![Recorte Oficial del Manual — DA 40 D Limitations](./manual-crops/fleet-da40d/da40_lim_load_factors.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.11: Operating Altitude (Page 2-18)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.25
+    }
+  },
+  {
+    "id": "DA40D-LIM-012",
+    "subject_id": "da40d_limitations",
+    "learning_objective": "AFM 2.14 - Capacidad del Depósito Estándar",
+    "stem": "¿Cuál es la capacidad total y utilizable del sistema de depósitos estándar de la DA 40 D?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Total 2 × 20,5 US gal y utilizable 2 × 19,5 US gal",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Total 2 × 15,0 US gal y utilizable 2 × 14,0 US gal",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Total 2 × 15,0 US gal y utilizable 2 × 13,0 US gal",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Total 2 × 14,0 US gal y utilizable 2 × 12,5 US gal",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Depósito estándar (2.14): **total 2 × 15,0 US gal (2 × 56,8 L)**, **utilizable 2 × 14,0 US gal (2 × 53,0 L)**. Los valores 20,5/19,5 corresponden al Long Range Tank.\n\n| Depósito | Total | Utilizable |\n| :--- | :--- | :--- |\n| **Estándar** | **2 × 15,0 gal** | **2 × 14,0 gal** |\n| Long Range | 2 × 20,5 gal | 2 × 19,5 gal |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.14: Fuel (Page 2-23):**\n> \"Standard tank: Total fuel quantity : 2 x 15.0 US gal (2 x 56.8 liters). Usable fuel : 2 x 14.0 US gal (2 x 53.0 liters).\"\n\n![Recorte Oficial del Manual — DA 40 D Fuel Limitations](./manual-crops/fleet-da40d/da40_lim_fuel_grades_std.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.14: Fuel (Page 2-23)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "DA40D-LIM-013",
+    "subject_id": "da40d_limitations",
+    "learning_objective": "AFM 2.14 - Depósito de Largo Alcance: Indicación Máxima y Desequilibrio",
+    "stem": "Con depósito de largo alcance, el indicador de un tanque marca 15 US gal. ¿Qué valor debe asumirse para calcular el desequilibrio y cuál es la diferencia máxima LH/RH?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Asumir 15,0 US gal en ese tanque; diferencia máxima LH/RH de 9 US gal",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Asumir 19,5 US gal en ese tanque; diferencia máxima LH/RH de 5 US gal",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Asumir 19,5 US gal en ese tanque; diferencia máxima LH/RH de 9 US gal",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Asumir 20,5 US gal en ese tanque; diferencia máxima LH/RH de 12 US gal",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El indicador satura en **15 US gal**; si marca 15, el CAUTION del AFM obliga a **asumir 19,5 US gal** para el cálculo del desequilibrio. **Diferencia máxima: 9 US gal (≈34 L)**.\n\n| Dato LRT | Valor |\n| :--- | :--- |\n| Utilizable | 2 × 19,5 gal |\n| Indicación máx. | 15 gal |\n| **Desequilibrio máx.** | **9 gal** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.14: Fuel (Page 2-24):**\n> \"Max. indicated fuel quantity : 15 US gal per tank. Max. permissible difference between right and left tank : 9 US gal. CAUTION: If an indicator shows 15 US gal, then 19.5 US gal must be assumed for the calculation of the difference between right and left tank.\"\n\n![Recorte Oficial del Manual — DA 40 D Long Range Tank](./manual-crops/fleet-da40d/da40_lim_fuel_long_range.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.14: Fuel (Page 2-24)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    }
+  },
+  {
+    "id": "DA40D-LIM-014",
+    "subject_id": "da40d_limitations",
+    "learning_objective": "AFM 2.4 - Límites de RPM del TAE 125-02-99",
+    "stem": "Con motor TAE 125-02-99 (MÄM 40-256), ¿cuáles son las RPM máximas de hélice y el límite de sobrevelocidad?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Máximo 2500 RPM; sobrevelocidad de 2700 RPM durante 20 segundos como máximo",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Máximo 2300 RPM; sobrevelocidad de 2500 RPM durante 5 minutos como máximo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Máximo 2300 RPM; sobrevelocidad de 2500 RPM durante 20 segundos como máximo",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Máximo 2400 RPM; sobrevelocidad de 2600 RPM durante 10 segundos como máximo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Sección 2.4c: TAE 125-02-99 **máximo 2300 RPM** y **overspeed 2500 RPM (máx. 20 s)**. El TAE 125-01 tiene máximo 2500 RPM sin sobrevelocidad listada.\n\n| Motor | Máx. | Overspeed |\n| :--- | :--- | :--- |\n| **TAE 125-02-99** | **2300 RPM** | **2500 RPM / 20 s** |\n| TAE 125-01 | 2500 RPM | — |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.4: Power-Plant Limitations (Page 2-5):**\n> \"RPM limitations (shown as propeller RPM): TAE 125-02-99 (MÄM 40-256 carried out) Maximum 2300 RPM, Maximum overspeed 2500 RPM (max. 20 sec).\"\n\n![Recorte Oficial del Manual — DA 40 D Power-Plant Limitations](./manual-crops/fleet-da40d/da40_lim_powerplant_1.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.4: Power-Plant Limitations (Page 2-5)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "DA40D-LIM-015",
+    "subject_id": "da40d_limitations",
+    "learning_objective": "AFM 2.4 - Cantidad y Consumo de Aceite del Motor",
+    "stem": "¿Cuáles son las cantidades mínima y máxima de aceite del motor y el consumo máximo admisible en la DA 40 D?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mínimo 4,5 L, máximo 6,0 L y consumo máximo de 0,1 L/h",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mínimo 5,0 L, máximo 7,0 L y consumo máximo de 0,2 L/h",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mínimo 4,5 L, máximo 6,0 L y consumo máximo de 0,5 L/h",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mínimo 3,5 L, máximo 5,0 L y consumo máximo de 0,1 L/h",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Sección 2.4f: **mín. 4,5 L**, **máx. 6,0 L**, **consumo máx. 0,1 L/h**. El SOP Blue Team añade operar entre **1/4 y máximo** de varilla.\n\n| Parámetro | Valor |\n| :--- | :--- |\n| Mínimo | **4,5 L** |\n| Máximo | **6,0 L** |\n| Consumo máx. | **0,1 L/h** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.4: Power-Plant Limitations (Page 2-5):**\n> \"Oil quantity Minimum : 4.5 liters (appr. 4.8 US qts) Maximum : 6.0 liters (appr. 6.3 US qts) Maximum oil consumption : 0.1 liters/hr.\"\n\n![Recorte Oficial del Manual — DA 40 D Power-Plant Limitations](./manual-crops/fleet-da40d/da40_lim_powerplant_1.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.4: Power-Plant Limitations (Page 2-5)",
+        "Blue Team Flight School SOP Rev 04 - Section 5.7: Aceite (Page 13)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "DA40D-LIM-016",
+    "subject_id": "da40d_limitations",
+    "learning_objective": "AFM 2.4 & 4B.2.4 - Límites de Presión de Aceite",
+    "stem": "¿Qué límites de presión de aceite establece el AFM de la DA 40 D y qué excepción existe en arranque en frío?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mínimo 1,2 bar y máximo 6,5 bar; en frío hasta 6,5 bar durante 20 s",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mínimo 2,3 bar y máximo 5,2 bar; en frío hasta 7,0 bar durante 60 s",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mínimo 1,2 bar y máximo 6,5 bar; en frío hasta 8,0 bar durante 60 s",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mínimo 1,0 bar y máximo 5,2 bar; en frío hasta 6,5 bar durante 30 s",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Sección 2.4e: **mín. 1,2 bar / máx. 6,5 bar**. Arco verde **2,3–5,2 bar**. En arranque en frío la presión puede llegar a **6,5 bar durante un máximo de 20 s** (4A.3.3 / 4B.2.4).\n\n| Zona | Rango |\n| :--- | :--- |\n| Rojo inferior | < 1,2 bar |\n| **Verde** | **2,3 – 5,2 bar** |\n| Rojo superior | > 6,5 bar |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.4 (Page 2-5) & 4B.2.4 (Page 4B-8):**\n> \"Oil pressure Minimum : 1.2 bar Maximum : 6.5 bar. CAUTION: When starting a cold engine, the oil pressure can be as high as 6.5 bar for a maximum of 20 seconds.\"\n\n![Recorte Oficial del Manual — DA 40 D Engine Instrument Markings](./manual-crops/fleet-da40d/da40_lim_instrument_markings.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.4 (Page 2-5) & 4B.2.4 (Page 4B-8)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "DA40D-LIM-017",
+    "subject_id": "da40d_limitations",
+    "learning_objective": "AFM 2.5 - Marcas de Temperatura del Refrigerante (CT)",
+    "stem": "¿Cuál es el arco verde de temperatura del refrigerante (CT) y su valor máximo en la DA 40 D?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Verde de 60 a 96 °C y máximo (línea roja) de 105 °C",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Verde de 50 a 125 °C y máximo (línea roja) de 140 °C",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Verde de 60 a 105 °C y máximo (línea roja) de 115 °C",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Verde de 70 a 90 °C y máximo (línea roja) de 100 °C",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Sección 2.5: CT **verde 60–96 °C**, amarillo 96–105 °C, **rojo > 105 °C**. (50–125 °C es el verde del aceite OT; 120 °C el máximo de la caja reductora).\n\n| Indicación | Verde | Máx. |\n| :--- | :--- | :--- |\n| **CT** | **60 – 96 °C** | **105 °C** |\n| OT | 50 – 125 °C | 140 °C |\n| GT | ≤ 115 °C | 120 °C |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.5: Engine Instrument Markings (Page 2-9):**\n> \"Coolant temp. below -32 °C | -32 to 60 °C | 60 to 96 °C | 96 to 105 °C | above 105 °C.\"\n\n![Recorte Oficial del Manual — DA 40 D Engine Instrument Markings](./manual-crops/fleet-da40d/da40_lim_instrument_markings.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.5: Engine Instrument Markings (Page 2-9)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "DA40D-LIM-018",
+    "subject_id": "da40d_limitations",
+    "learning_objective": "AFM 2.16.2 & 7.9.5 - Temperatura de Combustible con Diésel o Mezcla Desconocida",
+    "stem": "Si la DA 40 D opera con gasóleo o con un grado de combustible desconocido, ¿qué temperaturas mínimas de combustible se exigen?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Arranque con mínimo −30 °C y despegue con mínimo −5 °C en el depósito izquierdo",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Arranque con mínimo +5 °C y despegue con mínimo +15 °C en el depósito derecho",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Arranque con mínimo −10 °C y despegue con mínimo 0 °C en cualquiera de los depósitos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Arranque con mínimo −5 °C y despegue con mínimo +5 °C en el depósito izquierdo",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "Con Diésel o mezcla desconocida (2.16.2): **arranque mín. −5 °C** y **despegue mín. +5 °C (depósito izquierdo)**. En el AED, la barra amarilla parpadeante (−30 a −6 °C) = no arrancar; fija (−5 a +4 °C) = no despegar. Con JET A-1 sí se permite operar en amarillo.\n\n| Indicación | Diésel / desconocido |\n| :--- | :--- |\n| Amarillo parpadeante | **No arranque** |\n| Amarillo fijo | **No despegue** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.16.2 (Page 2-31) & 7.9.5 (Page 7-33):**\n> \"Diesel Fuel, blends of Jet Fuel grades with Diesel Fuel or unknown fuel blend: Engine starting fuel temperature: min. -5 °C (+23 °F). Take-off fuel temperature left: min. +5 °C (+41 °F).\"\n\n![Recorte Oficial del Manual — DA 40 D Temperature Limitations](./manual-crops/fleet-da40d/da40_lim_temp_fuel_limits.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.16.2 (Page 2-31) & 7.9.5 (Page 7-33)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.55
+    }
+  },
+  {
+    "id": "DA40D-LIM-019",
+    "subject_id": "da40d_limitations",
+    "learning_objective": "AFM 2.16.1 - Temperatura del Avión antes de Operar",
+    "stem": "¿Entre qué temperaturas del avión permite el AFM operar la DA 40 D y qué se exige por debajo del límite inferior?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Entre −30 °C y +50 °C; por debajo de −30 °C es obligatorio precalentar",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Entre −20 °C y +54 °C; por debajo de −20 °C basta con 3 ciclos Glow",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Entre −20 °C y +54 °C; por debajo de −20 °C es obligatorio precalentar",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Entre −10 °C y +45 °C; por debajo de −10 °C es obligatorio precalentar",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Sección 2.16.1: temperatura del avión antes de operar **no inferior a −20 °C ni superior a +54 °C**. Si está «cold soaked» por debajo de −20 °C, el **precalentador externo** de motor y cabina es **obligatorio**.\n\n| Condición | Requisito |\n| :--- | :--- |\n| −20 °C a +54 °C | Operación permitida |\n| **< −20 °C** | **Precalentador obligatorio** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.16.1: Temperature (Page 2-31):**\n> \"The airplane may only be operated when its temperature prior to operation is not less than -20 °C (-4 °F) and not higher than 54 °C (129 °F). With the airplane cold soaked and its temperature below -20 °C the use of an external pre-heater for the engine and pilot compartment prior to operation is mandatory.\"\n\n![Recorte Oficial del Manual — DA 40 D Temperature Limitations](./manual-crops/fleet-da40d/da40_lim_temp_fuel_limits.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.16.1: Temperature (Page 2-31)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "DA40D-LIM-020",
+    "subject_id": "da40d_limitations",
+    "learning_objective": "AFM 2.15 - Limitaciones del Piloto Automático KAP 140",
+    "stem": "Si la DA 40 D lleva instalado el piloto automático KAP 140 (OÄM 40-153), ¿qué limitaciones de velocidad y altura mínima aplican?",
+    "options": [
+      {
+        "id": "A",
+        "text": "60–178 KIAS; mínimo 500 ft AGL en ruta y 100 ft AGL en aproximación",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "70–165 KIAS; mínimo 1000 ft AGL en ruta y 400 ft AGL en aproximación",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "70–165 KIAS; mínimo 800 ft AGL en ruta y 200 ft AGL en aproximación",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "80–129 KIAS; mínimo 800 ft AGL en ruta y 300 ft AGL en aproximación",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Placard KAP 140: **máx. 165 KIAS**, **mín. 70 KIAS**, altura mínima **800 ft AGL** (crucero, ascenso, descenso, maniobra) y **200 ft AGL** en aproximación. AP OFF en despegue y aterrizaje y no usar con Alternate Static abierto.\n\n| Límite KAP 140 | Valor |\n| :--- | :--- |\n| Velocidad | **70 – 165 KIAS** |\n| En ruta | **800 ft AGL** |\n| Aproximación | **200 ft AGL** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.15: Limitation Placards (Page 2-25):**\n> \"Limitations for KAP 140 Autopilot System: Do not use AP if Alternate Static is open. Autopilot OFF during take-off and landing. Maximum speed for autopilot operation is 165 KIAS. Minimum speed for autopilot operation is 70 KIAS. Minimum altitude: Cruise, Climb, Descent and Maneuvering: 800 feet AGL; Approach: 200 feet AGL.\"\n\n![Recorte Oficial del Manual — DA 40 D KAP 140 Limitations](./manual-crops/fleet-da40d/da40_lim_autopilot_kap140.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 2.15: Limitation Placards (Page 2-25)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  }
+]

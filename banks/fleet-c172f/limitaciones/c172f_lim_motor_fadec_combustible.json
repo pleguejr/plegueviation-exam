@@ -1,0 +1,640 @@
+[
+  {
+    "id": "C172F-LIM-016",
+    "subject_id": "c172f_limitations",
+    "learning_objective": "POH Supplement Sección 2 - Potencia Máxima y Régimen de RPM del Motor TAE 125",
+    "stem": "En la Reims/Cessna F172F equipada con el motor diésel Technify TAE 125-02-99 (Centurion 2.0), ¿cuál es la potencia máxima de despegue y máxima continua certificada, y a qué régimen máximo de hélice se alcanza?",
+    "options": [
+      {
+        "id": "A",
+        "text": "114 kW (155 HP) a un régimen máximo de 2500 RPM en el eje de la hélice",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "110 kW (150 HP) a un régimen máximo de 2700 RPM en el eje de la hélice",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "99 kW (135 HP) a un régimen máximo de 2300 RPM en el eje de la hélice",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "92 kW (125 HP) a un régimen máximo de 2100 RPM en el eje de la hélice",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según las Secciones 1 y 2 del Suplemento POH (páginas 1-2 y 2-2), el motor diésel turboalimentado **TAE 125-01 / TAE 125-02-99** desarrolla una potencia máxima de despegue y máxima continua de **99 kW (135 HP)** a una velocidad de rotación en el eje de la hélice de **2300 RPM** (con caja reductora integrada de relación $i = 1.69$, lo que equivale a 3887 RPM del cigüeñal).\n\n| Parámetro del Motor TAE 125 | Especificación Oficial |\n| :--- | :--- |\n| **Potencia de Despegue y Máx. Continua** | **99 kW (135 HP)** |\n| **Régimen Máximo de Hélice (Arco Verde)** | **0 – 2300 RPM** |\n| **Línea Roja del Tacómetro (CED-125)** | **> 2300 RPM** |\n| **Relación de Caja Reductora ($i$)** | **1.69 : 1** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 2: Engine Operating Limits (Page 2-2):**\n> \"Take-off and max. continuous power: 99 kW (135 HP). Max. RPM: 2300 min-1. Note: All rotational speeds shown refer to the propeller RPM.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 2 Engine Limits](./manual-crops/fleet-c172f/supp_p63_engine_limits.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Engine (Page 1-2)",
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 2: Engine Operating Limits (Page 2-2)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.25
+    }
+  },
+  {
+    "id": "C172F-LIM-017",
+    "subject_id": "c172f_limitations",
+    "learning_objective": "POH Supplement Sección 2 - Umbrales de Sobrerrégimen de Hélice (Overspeed)",
+    "stem": "Aunque la línea roja del tacómetro en el CED-125 está situada por encima de 2300 RPM, ¿a partir de qué valores y duración de sobrerrégimen exige el Suplemento POH aplicar el procedimiento de emergencia por Overspeed?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Al operar entre 2310 y 2400 RPM durante más de 5 segundos o al superar 2400 RPM instantáneamente",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Al operar entre 2350 y 2450 RPM durante más de 30 segundos o al superar 2450 RPM instantáneamente",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Al operar entre 2500 y 2600 RPM durante más de 20 segundos o al superar 2600 RPM instantáneamente",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Al operar entre 2400 y 2500 RPM durante más de 10 segundos o al superar 2500 RPM instantáneamente",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Sección 2 (página 2-2) del Suplemento POH del motor TAE 125, el procedimiento de emergencia por sobrerrégimen (*Propeller Speed Control Failure / Overspeed*) debe aplicarse cuando las RPM se sitúen entre **2400 y 2500 $\\text{min}^{-1}$ durante más de 10 segundos**, o bien inmediatamente si superan las **2500 $\\text{min}^{-1}$**.\n\n| Condición de Régimen de Hélice | Estado / Acción Requerida |\n| :--- | :--- |\n| **0 – 2300 RPM** | Rango de operación normal (Verde en CED-125) |\n| **> 2300 RPM** | Indicación roja en el tacómetro del CED-125 |\n| **2400 – 2500 RPM por > 10 s** | Seguir procedimiento de emergencia por Overspeed |\n| **> 2500 RPM (instantáneo)** | Seguir procedimiento de emergencia por Overspeed |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 2: Engine Operating Limits (Page 2-2):**\n> \"Max. RPM: 2300 min-1. Overspeed (follow emergency procedure): 2400 - 2500 min-1 for more than 10 sec; > 2500 min-1.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 2 Engine Limits](./manual-crops/fleet-c172f/supp_p63_engine_limits.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 2: Engine Operating Limits (Page 2-2)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "C172F-LIM-018",
+    "subject_id": "c172f_limitations",
+    "learning_objective": "POH Supplement Sección 2 - Límites de Presión de Aceite del Motor",
+    "stem": "¿Cuáles son los límites operativos de presión de aceite del motor TAE 125 en la Reims/Cessna F172F (mínimo al ralentí, mínimo en despegue/vuelo, máximo normal y máximo en arranque en frío)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mínimo ralentí: 1.2 bar, mínimo vuelo: 2.3 bar, máximo normal: 6.0 bar y arranque en frío (<20 s): 6.5 bar",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mínimo ralentí: 1.0 bar, mínimo vuelo: 2.0 bar, máximo normal: 5.5 bar y arranque en frío (<30 s): 6.0 bar",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mínimo ralentí: 1.5 bar, mínimo vuelo: 2.8 bar, máximo normal: 6.5 bar y arranque en frío (<20 s): 7.0 bar",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mínimo ralentí: 1.8 bar, mínimo vuelo: 3.0 bar, máximo normal: 5.1 bar y arranque en frío (<10 s): 6.0 bar",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 2 (página 2-2 y 2-3) del Suplemento POH, los límites de presión de aceite del motor TAE 125 y sus marcas en el CED-125 son:\n\n| Parámetro de Presión de Aceite | Valor en bar | Marcación en CED-125 |\n| :--- | :--- | :--- |\n| **Rango Rojo Inferior** | **0 a 1.1 bar** (0–16 psi) | Rojo (Apagar motor inmediatamente) |\n| **Mínimo al Ralentí (Idle)** | **1.2 bar** (17.4 psi) | Ámbar: **1.2 a 2.2 bar** (17.4–32 psi) |\n| **Mínimo Despegue y Vuelo** | **2.3 bar** (33.4 psi) | Verde: **2.3 a 5.1 bar** (33.4–74 psi) |\n| **Máximo Operación Normal** | **6.0 bar** | Ámbar superior: **5.2 a 6.5 bar** |\n| **Máximo Arranque en Frío (< 20 s)** | **6.5 bar** (87.0 psi) | Rojo superior: **> 6.5 bar** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 2: Engine Operating Limits (Page 2-2):**\n> \"Oil pressure: Min. oil pressure Idle: 1.2 bar | Min. oil pressure at T/O & in flight: 2.3 bar | Max. oil pressure: 6.0 bar | Max. oil pressure Cold start (< 20 s): 6.5 bar.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 2 Engine Limits](./manual-crops/fleet-c172f/supp_p63_engine_limits.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 2: Engine Operating Limits (Page 2-2 & 2-3)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "C172F-LIM-019",
+    "subject_id": "c172f_limitations",
+    "learning_objective": "POH Supplement Sección 2 - Límites de Temperatura de Refrigerante (Coolant Temperature - CT)",
+    "stem": "En el instrumento compacto de motor (CED-125) de la Cessna 172F (EC-NNX), ¿cuáles son los rangos de temperatura del líquido refrigerante (Coolant Temperature - CT)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mínimo arranque -25°C, rango verde 50°C a 110°C, precaución ámbar 111°C a 120°C y línea roja > 120°C",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Mínimo arranque -32°C, rango verde 60°C a 100°C, precaución ámbar 101°C a 105°C y línea roja > 105°C",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Mínimo arranque -30°C, rango verde 70°C a 95°C, precaución ámbar 96°C a 100°C y línea roja > 100°C",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mínimo arranque -20°C, rango verde 60°C a 115°C, precaución ámbar 116°C a 125°C y línea roja > 125°C",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "La temperatura del líquido refrigerante (**Coolant Temperature - CT**) tiene los siguientes límites y marcas en el CED-125 (Sección 2, páginas 2-2 y 2-3):\n- **Mínimo para arranque:** **$-32^\\circ\\text{C}$** (rojo $< -32^\\circ\\text{C}$, ámbar de calentamiento de $-32^\\circ\\text{C}$ a $+59^\\circ\\text{C}$).\n- **Mínimo para operación / despegue (inicio arco verde):** **$60^\\circ\\text{C}$**.\n- **Rango verde normal:** **$60^\\circ\\text{C}$ a $100^\\circ\\text{C}$**.\n- **Rango ámbar superior (precaución):** **$101^\\circ\\text{C}$ a $105^\\circ\\text{C}$**.\n- **Límite máximo (línea roja):** **$> 105^\\circ\\text{C}$**.\n\n| Rango en CED-125 | Temperatura de Refrigerante (CT) |Temperatura de Aceite (OT) |\n| :--- | :--- | :--- |\n| **Rojo Inferior** | $< -32^\\circ\\text{C}$ | $< -32^\\circ\\text{C}$ |\n| **Ámbar Inferior (Calentamiento)** | $-32^\\circ\\text{C}$ a $+59^\\circ\\text{C}$ | $-32^\\circ\\text{C}$ a $+49^\\circ\\text{C}$ |\n| **Verde (Operación Normal)** | **$60^\\circ\\text{C}$ a $100^\\circ\\text{C}$** | **$50^\\circ\\text{C}$ a $129^\\circ\\text{C}$** |\n| **Ámbar Superior (Precaución)** | **$101^\\circ\\text{C}$ a $105^\\circ\\text{C}$** | **$130^\\circ\\text{C}$ a $140^\\circ\\text{C}$** |\n| **Rojo Superior (Exceso)** | **$> 105^\\circ\\text{C}$** | **$> 140^\\circ\\text{C}$** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 2 (Page 2-2 & 2-3):**\n> \"Coolant temperature: Min. (Starting): -32°C | Min. (Operating): 60°C | Max.: 105°C. CED-125: Red < -32°C, Amber -32 to +59°C, Green 60 to 100°C, Amber 101 to 105°C, Red > 105°C.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 2 Instrument Markings](./manual-crops/fleet-c172f/supp_p65_instrument_markings.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 2: Engine Operating Limits & Instrument Markings (Page 2-2 & 2-3)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-LIM-020",
+    "subject_id": "c172f_limitations",
+    "learning_objective": "POH Supplement Sección 2 - Límites de Temperatura de Aceite (Oil Temperature - OT)",
+    "stem": "¿Cuáles son los límites de temperatura de aceite (Oil Temperature - OT) del motor TAE 125 y sus correspondientes marcas verde, ámbar y roja en el pantalla CED-125?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mínimo operativo 60°C, rango verde 60°C a 115°C, rango ámbar 116°C a 125°C y línea roja > 125°C",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Mínimo operativo 40°C, rango verde 40°C a 120°C, rango ámbar 121°C a 130°C y línea roja > 130°C",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mínimo operativo 50°C, rango verde 50°C a 129°C, rango ámbar 130°C a 140°C y línea roja > 140°C",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Mínimo operativo 55°C, rango verde 55°C a 135°C, rango ámbar 136°C a 145°C y línea roja > 145°C",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Sección 2 (páginas 2-2 y 2-3) del Suplemento POH, la temperatura de aceite del motor (**Oil Temperature - OT**) requiere un mínimo de **$-32^\\circ\\text{C}$** para el arranque y un mínimo de **$50^\\circ\\text{C}$** para aplicar potencia de operación/despegue. El rango verde normal abarca de **$50^\\circ\\text{C}$ a $129^\\circ\\text{C}$**, el rango ámbar superior va de **$130^\\circ\\text{C}$ a $140^\\circ\\text{C}$**, y el límite máximo (rojo) es **$> 140^\\circ\\text{C}$**.\n\n| Estado / Marcación CED-125 | Temperatura de Aceite (OT) |\n| :--- | :--- |\n| **Mínimo para Arranque** | **$-32^\\circ\\text{C}$** |\n| **Mínimo Operación / Prueba FADEC** | **$50^\\circ\\text{C}$** |\n| **Rango Verde Normal** | **$50^\\circ\\text{C}$ a $129^\\circ\\text{C}$** |\n| **Rango Ámbar Superior** | **$130^\\circ\\text{C}$ a $140^\\circ\\text{C}$** |\n| **Límite Máximo (Rojo)** | **$> 140^\\circ\\text{C}$** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 2 (Page 2-2 & 2-3):**\n> \"Oil temperature: Min. (Starting): -32°C | Min. (Operating): 50°C | Max.: 140°C. CED-125: Red < -32°C, Amber -32 to +49°C, Green 50 to 129°C, Amber 130 to 140°C, Red > 140°C.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 2 Instrument Markings](./manual-crops/fleet-c172f/supp_p65_instrument_markings.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 2: Engine Operating Limits & Instrument Markings (Page 2-2 & 2-3)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-LIM-021",
+    "subject_id": "c172f_limitations",
+    "learning_objective": "POH Supplement Sección 2 - Límites de Temperatura de la Caja Reductora (Gearbox Temperature)",
+    "stem": "¿Cuáles son los límites y marcas en el CED-125 para la temperatura de la caja reductora (Gearbox Temperature) del motor TAE 125 en la Reims/Cessna F172F?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mínimo -30°C, rango verde < 100°C, rango ámbar de 100°C a 110°C y línea roja > 110°C",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Mínimo -20°C, rango verde < 125°C, rango ámbar de 125°C a 135°C y línea roja > 135°C",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mínimo -32°C, rango verde < 105°C, rango ámbar de 105°C a 115°C y línea roja > 115°C",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mínimo -30°C, rango verde < 115°C, rango ámbar de 115°C a 120°C y línea roja > 120°C",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 2 (páginas 2-3 y 2-4) del Suplemento POH, la temperatura de la caja reductora (**Gearbox Temperature**) tiene un mínimo de **$-30^\\circ\\text{C}$**, un rango verde normal **$< 115^\\circ\\text{C}$**, una franja ámbar de precaución de **$115^\\circ\\text{C}$ a $120^\\circ\\text{C}$** y un límite máximo (rojo) **$> 120^\\circ\\text{C}$**.\n\n| Parámetro de Caja Reductora | Valor Oficial |\n| :--- | :--- |\n| **Temperatura Mínima** | **$-30^\\circ\\text{C}$** |\n| **Rango Verde (Normal)** | **$< 115^\\circ\\text{C}$** |\n| **Rango Ámbar (Precaución)** | **$115^\\circ\\text{C}$ a $120^\\circ\\text{C}$** |\n| **Rango Rojo (Máximo)** | **$> 120^\\circ\\text{C}$** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 2 (Page 2-3):**\n> \"Gearbox temperature: Min.: -30°C | Max.: 120°C. CED-125: Green < 115°C, Amber 115 to 120°C, Red > 120°C.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 2 Instrument Markings](./manual-crops/fleet-c172f/supp_p65_instrument_markings.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 2: Engine Operating Limits & Instrument Markings (Page 2-3)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-LIM-022",
+    "subject_id": "c172f_limitations",
+    "learning_objective": "POH Supplement Sección 2 - Capacidad y Consumo Máximo de Aceite del Motor",
+    "stem": "Según la Sección 2 del Suplemento POH del motor TAE 125, ¿cuál es la capacidad de aceite del motor (rango entre mínimo y máximo) y cuál es el consumo máximo admisible de aceite?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Capacidad de 4,5 a 6,0 litros y consumo máximo admisible de 0,10 litros por hora",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Capacidad de 3,5 a 5,0 litros y consumo máximo admisible de 0,25 litros por hora",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Capacidad de 5,0 a 7,0 litros y consumo máximo admisible de 0,50 litros por hora",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Capacidad de 4,0 a 5,5 litros y consumo máximo admisible de 0,15 litros por hora",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En el motor TAE 125 (Sección 2, página 2-3 y Sección 4, página 4-4), la capacidad de aceite del cárter del motor está comprendida entre **4,5 y 6,0 litros** (en la inspección pre-vuelo la varilla debe encontrarse entre el 50% y el 100%, lo que corresponde a **5,0 – 6,0 L**), y el consumo máximo permitido es de **0,1 L/h**.\n\n| Parámetro de Lubricación TAE 125 | Valor Oficial |\n| :--- | :--- |\n| **Capacidad de Aceite del Motor** | **4,5 – 6,0 litros** |\n| **Nivel Pre-vuelo en Varilla (50%–100%)** | **5,0 – 6,0 litros** |\n| **Consumo Máximo de Aceite** | **0,1 litros / hora** |\n| **Nivel Mínimo tras Arranque (en 3 s)** | **Mínimo 1,0 bar** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 2 (Page 2-3):**\n> \"Oil quantity: 4.5 - 6.0 l | Max. oil consumption: 0.1 l/h.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 2 Engine Limits](./manual-crops/fleet-c172f/supp_p63_engine_limits.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 2: Engine Operating Limits (Page 2-3)",
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Preflight Inspection (Page 4-4)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-LIM-023",
+    "subject_id": "c172f_limitations",
+    "learning_objective": "POH Supplement Sección 2 - Temperaturas Mínimas de Combustible (Jet A-1 vs Diesel)",
+    "stem": "El motor TAE 125 de la Reims/Cessna F172F puede operar con queroseno (Jet A-1 / Jet A / JP-8) o con gasóleo (Diesel EN 590). ¿Cuáles son las temperaturas mínimas del combustible en los depósitos antes del despegue y en vuelo para ambos tipos de combustible?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Jet A-1: -25°C antes del despegue y -30°C en vuelo; Diesel (o mezcla >10% Diesel): -5°C antes del despegue y -10°C en vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Jet A-1: -30°C antes del despegue y -35°C en vuelo; Diesel (o mezcla >10% Diesel): > 0°C antes del despegue y -5°C en vuelo",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Jet A-1: -35°C antes del despegue y -40°C en vuelo; Diesel (o mezcla >10% Diesel): +5°C antes del despegue y 0°C en vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Jet A-1: -20°C antes del despegue y -25°C en vuelo; Diesel (o mezcla >10% Diesel): 0°C antes del despegue y -15°C en vuelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 2 (páginas 2-5 y 2-6, *Permissible Fuel Grades*) del Suplemento POH, las temperaturas mínimas permitidas del combustible en los tanques dependen de si se utiliza queroseno de aviación o gasóleo:\n\n| Tipo de Combustible | Temp. Mínima Antes del Despegue | Temp. Mínima en Vuelo | Temp. Máxima |\n| :--- | :--- | :--- | :--- |\n| **Jet A-1, Jet A, JP-8 (o $\\le 10\\%$ Diesel)** | **$-30^\\circ\\text{C}$** | **$-35^\\circ\\text{C}$** | **$75^\\circ\\text{C}$** |\n| **Diesel EN 590 (o mezcla $> 10\\%$ Diesel)** | **$> 0^\\circ\\text{C}$** | **$-5^\\circ\\text{C}$** | **$75^\\circ\\text{C}$** |\n\nEn el AED-125, las marcas de temperatura de combustible son: Rojo $< -30^\\circ\\text{C}$, Ámbar $-30^\\circ\\text{C}$ a $-1^\\circ\\text{C}$ (válido para Jet A-1 pero precaución para Diesel), Verde $0^\\circ\\text{C}$ a $69^\\circ\\text{C}$, Ámbar $70^\\circ\\text{C}$ a $75^\\circ\\text{C}$ y Rojo $> 75^\\circ\\text{C}$.\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 2 (Page 2-5 & 2-6):**\n> \"Minimum fuel temperature in the tanks before take-off when using Diesel and mixtures of Diesel and Kerosene with a Diesel content of more than 10%: > 0°C (in flight: -5°C). When using Jet A-1, Jet A, JP-8 or mixtures with a Diesel content up to 10%: -30°C before take-off (-35°C in flight).\"\n\n![Recorte Oficial del Manual — Supplement POH Section 2 Permissible Fuel Grades](./manual-crops/fleet-c172f/supp_p67_fuel_grades.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 2: Permissible Fuel Grades (Page 2-5 & 2-6)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "C172F-LIM-024",
+    "subject_id": "c172f_limitations",
+    "learning_objective": "POH Supplement Sección 1 y 2 - Capacidad de Combustible Estándar en Cessna 172 F, G, H",
+    "stem": "De acuerdo con las Secciones 1 y 2 del Suplemento POH, ¿cuál es la capacidad total de combustible, el combustible utilizable y el no utilizable en los tanques estándar de los modelos Reims/Cessna 172 F, G y H?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Total de 135,1 litros (35,7 gal), con 120,0 litros utilizables y 15,1 litros no utilizables",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Total de 167,3 litros (44,2 gal), con 152,2 litros utilizables y 15,1 litros no utilizables",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Total de 125,7 litros (33,2 gal), con 114,3 litros utilizables y 11,4 litros no utilizables",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Total de 147,6 litros (39,0 gal), con 140,0 litros utilizables y 7,6 litros no utilizables",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Es fundamental distinguir en el Suplemento POH (Sección 1, página 1-9 y Sección 2, página 2-7) entre los tanques estándar de los modelos **F, G, H** y los de los modelos posteriores **I, K, L, M**:\n- En la **Cessna 172 F, G, H (Standard Tanks)**: dispone de 2 depósitos de **62,85 L (16,60 US gal)** cada uno, sumando una capacidad total de **125,7 L (33,2 US gal)**, de los cuales **11,4 L (3 US gal)** son no utilizables y **114,3 L (30,2 US gal)** son utilizables (**57,2 L / 15,1 US gal** por tanque).\n\n| Configuración de Depósitos | Capacidad Total | Combustible No Utilizable | Combustible Total Utilizable |\n| :--- | :--- | :--- | :--- |\n| **Standard Tanks (Modelos F, G, H)** | **125,7 L (33,2 US gal)** | **11,4 L (3,0 US gal)** | **114,3 L (30,2 US gal)** |\n| **Standard Tanks (Modelos I, K, L, M)** | 135,1 L (35,7 US gal) | 15,1 L (4,0 US gal) | 120,0 L (31,7 US gal) |\n| **Long-Range Tanks (Modelos F – M)** | 167,3 L (44,2 US gal) | 15,1 L (4,0 US gal) | 152,2 L (40,2 US gal) |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 2: Maximum Fuel Quantities (Page 2-7):**\n> \"F, G, H (Standard Tanks): Maximum usable fuel quantity: each 57.2 l (15.1 gal), total 114.3 l (30.2 gal). Total non-usable fuel: 11.4 l (3 gal).\"\n\n![Recorte Oficial del Manual — Supplement POH Section 2 Maximum Fuel Quantities](./manual-crops/fleet-c172f/supp_p68_fuel_quantities.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Fuel System (Page 1-9)",
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 2: Maximum Fuel Quantities (Page 2-7)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "C172F-LIM-025",
+    "subject_id": "c172f_limitations",
+    "learning_objective": "POH Supplement Sección 1 - Aviso de Bajo Nivel de Combustible (Fuel L / Fuel R)",
+    "stem": "En el panel de instrumentos de la Reims/Cessna F172F (EC-NNX), ¿a partir de qué cantidad de combustible utilizable remanente se ilumina la luz ámbar de aviso «Fuel L» o «Fuel R»?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cuando el combustible utilizable en el depósito correspondiente desciende por debajo de 5 litros (1,3 US gal)",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Cuando el combustible utilizable en el depósito correspondiente desciende por debajo de 15 litros (4,0 US gal)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Cuando el combustible utilizable en el depósito correspondiente desciende por debajo de 20 litros (5,3 US gal)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Cuando el combustible utilizable en el depósito correspondiente desciende por debajo de 10 litros (2,6 US gal)",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 1 (páginas 1-7 y 1-9) y la Sección 3 (página 3-20) del Suplemento POH, los sensores de bajo nivel activan la luz ámbar **\"Fuel L\"** o **\"Fuel R\"** cuando la cantidad de combustible utilizable en el depósito respectivo cae por debajo de **10 litros (2,6 US gal)**.\n\n| Indicador / Limitación de Combustible | Umbral de Activación |\n| :--- | :--- |\n| **Luz Ámbar \"Fuel L\" / \"Fuel R\"** | **$< 10\\text{ litros}$ ($2,6\\text{ US gal}$) de combustible utilizable en ese tanque** |\n| **Prohibición de Vuelo Descoordinado** | **Con $\\le 1/4$ de depósito** operando en posición LEFT o RIGHT |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Fuel System (Page 1-7):**\n> \"A warning light (Item 70, Fig. 1-1) illuminates when the usable fuel quantity in the respective fuel tank drops below 10 l (2.6 gal).\"\n\n![Recorte Oficial del Manual — Supplement POH Section 1 Fuel System](./manual-crops/fleet-c172f/supp_p52_fuel_system.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Fuel System (Page 1-7 & 1-9)",
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Fuel Quantity Warning Light (Page 3-20)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172F-LIM-026",
+    "subject_id": "c172f_limitations",
+    "learning_objective": "POH Supplement Sección 2 - Prohibición de Vuelo Descoordinado según Nivel de Combustible",
+    "stem": "¿Qué limitación operacional establece la placa del sistema de combustible y la Sección 2 del Suplemento POH cuando los depósitos contienen 1/4 de su capacidad o menos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Está prohibido el vuelo descoordinado prolongado cuando la válvula selectora está en LEFT o RIGHT",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Está prohibido seleccionar la posición BOTH durante el ascenso o descenso por debajo de 3000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Es obligatorio encender la bomba eléctrica auxiliar de combustible durante todo el crucero",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La potencia máxima del motor queda limitada al 75% de carga para evitar cavitación en el retorno",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En la Sección 2 (página 2-8, *Placards*) y Sección 4 (página 4-23) del Suplemento POH se advierte que con **1/4 de tanque o menos**, el **vuelo descoordinado prolongado (resbales o derrapes superiores a 30 segundos) está prohibido** cuando el selector de combustible se encuentra en **LEFT** o **RIGHT**, ya que el combustible puede desplazarse lejos de la toma del depósito y provocar la entrada de aire al sistema de inyección.\n\n| Condición de Depósitos | Posición Selector | Restricción Operativa |\n| :--- | :--- | :--- |\n| **$\\le 1/4$ de tanque** | **LEFT o RIGHT** | **Prohibido el vuelo descoordinado prolongado ($> 30\\text{ s}$)** |\n| **Despegue y Aterrizaje** | **BOTH** | Posición obligatoria en despegue y aterrizaje |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 2: Placards (Page 2-8):**\n> \"With 1/4 tank or less, prolonged uncoordinated flight is prohibited when operating on the left or right tank.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 2 Maximum Fuel Quantities](./manual-crops/fleet-c172f/supp_p68_fuel_quantities.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 2: Placards (Page 2-8)",
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Cruise (Page 4-23)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-LIM-027",
+    "subject_id": "c172f_limitations",
+    "learning_objective": "POH Supplement Sección 2 - Marcaciones de Corriente del Alternador y Voltaje en el AED-125",
+    "stem": "En el display auxiliar de motor (AED-125) de la Reims/Cessna F172F, ¿cuáles son los rangos verde, ámbar y rojo para la corriente del alternador (Ammeter) y para el voltaje de a bordo (Voltage)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alternador: verde 0–45 A, ámbar 46–55 A, rojo > 55 A; Voltaje: verde 12,0–14,5 V, ámbar 14,6–16 V, rojo > 16 V",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Alternador: verde 0–52,4 A, ámbar 52,5–60 A, rojo > 60 A; Voltaje: verde 12,6–14 V, ámbar 11–12,5 V y 15 V, rojo 0–10 V y > 15 V",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Alternador: verde 0–60 A, ámbar 60,1–70 A, rojo > 70 A; Voltaje: verde 24,0–28 V, ámbar 22–23,9 V, rojo < 22 V y > 29 V",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Alternador: verde 0–40 A, ámbar 40,1–50 A, rojo > 50 A; Voltaje: verde 13,0–15 V, ámbar 11,5–12,9 V, rojo < 11,5 V y > 15,5 V",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la tabla de marcaciones de instrumentos de la Sección 2 (página 2-3) del Suplemento POH, el **AED-125** presenta los siguientes umbrales:\n\n| Instrumento (AED-125) | Rango Rojo Inferior | Rango Ámbar Inferior | Rango Verde (Normal) | Rango Ámbar Superior | Rango Rojo Superior |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| **Corriente Alternador** | — | — | **0 – 52,4 A** | **52,5 – 60 A** | **> 60 A** |\n| **Voltaje (Sistema 14V)** | **0 – 10 V** | **11 – 12,5 V** | **12,6 – 14 V** | **15,0 V** | **> 15 V** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 2: Instrument Markings (Page 2-3):**\n> \"Alternator current: Green 0 - 52.4 A | Amber 52.5 - 60 A | Red > 60 A.\n> Voltage: Red 0 - 10 V | Amber 11 - 12.5 V | Green 12.6 - 14 V | Amber 15.0 V | Red > 15 V.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 2 Instrument Markings](./manual-crops/fleet-c172f/supp_p65_instrument_markings.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 2: Instrument Markings (Page 2-3)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "C172F-LIM-028",
+    "subject_id": "c172f_limitations",
+    "learning_objective": "POH Supplement Sección 4 - Ciclo de Trabajo (Duty Cycle) del Motor de Arranque",
+    "stem": "Para proteger el motor de arranque contra el sobrecalentamiento durante la puesta en marcha de la Reims/Cessna F172F (TAE 125), ¿cuál es el ciclo de trabajo máximo permitido?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Accionar máximo 15 segundos con 30 segundos de pausa; tras 3 intentos, enfriar durante 15 minutos",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Accionar máximo 20 segundos con 60 segundos de pausa; tras 4 intentos, enfriar durante 20 minutos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Accionar máximo 10 segundos con 20 segundos de pausa; tras 6 intentos, enfriar durante 30 minutos",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Accionar máximo 30 segundos con 60 segundos de pausa; tras 5 intentos, enfriar durante 45 minutos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 4 (página 4-7 y 4-10, *Starting Engine*) del Suplemento POH, para evitar daños térmicos en el motor de arranque:\n1. No se debe accionar el motor de arranque durante más de **10 segundos** seguidos.\n2. Debe dejarse enfriar durante **20 segundos** entre cada intento.\n3. Tras **6 intentos** infructuosos, debe esperarse **media hora (30 minutos)** para que el motor de arranque se enfríe completamente antes de realizar nuevos intentos.\n\n| Parámetro del Motor de Arranque | Límite Operacional |\n| :--- | :--- |\n| **Tiempo máximo de accionamiento continuo** | **10 segundos** |\n| **Pausa mínima entre intentos consecutivos** | **20 segundos** |\n| **Enfriamiento tras 6 intentos fallidos** | **30 minutos (media hora)** |\n| **RPM mínimas antes de soltar el arranque** | **500 RPM (POH) / 600 RPM (Checklist V6)** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Starting Engine (Page 4-7):**\n> \"CAUTION: Do not overheat the starter motor. Do not operate the starter motor for more than 10 seconds. After operating the starter motor, let it cool off for 20 seconds. After 6 attempts to start the engine, let the starter motor cool off for half an hour.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 4 Starting Engine](./manual-crops/fleet-c172f/supp_p100_norm_start.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Starting Engine (Page 4-7 & 4-10)",
+        "Blue Team Flight School - C172F Normal Checklist V6 - Limitations"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172F-LIM-029",
+    "subject_id": "c172f_limitations",
+    "learning_objective": "POH Supplement Sección 1 y 4 - Prohibición de Arranque con Fuente de Alimentación Externa",
+    "stem": "¿Está permitido arrancar el motor TAE 125 de la Reims/Cessna F172F utilizando una unidad de potencia externa (GPU / External Power Supply)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sí, siempre que la tensión de la fuente externa esté regulada exactamente a 14,0 V y no supere los 50 A",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Sí, pero únicamente cuando la temperatura ambiente sea inferior a -10°C y se desconecte el alternador",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Sí, siempre que se mantenga el interruptor Force B activado durante toda la secuencia de puesta en marcha",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "No, arrancar el motor utilizando energía externa está prohibido; solo se permite para mantenimiento o carga de batería",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "Tanto la Sección 1 (página 1-11, *External Power Supply*) como la Sección 4 (página 4-20, *Battery Check*) del Suplemento POH contienen un **WARNING** explícito: **está terminantemente prohibido arrancar el motor con una fuente de alimentación externa**. Si la batería principal no es capaz de arrancar el motor por sí sola, no está en condiciones aeronavegables para garantizar el suministro eléctrico de respaldo al FADEC en caso de fallo del alternador en vuelo.\n\n| Uso de Fuente Externa (GPU) | Condición de Autorización |\n| :--- | :--- |\n| **Arranque del motor TAE 125** | **PROHIBIDO (riesgo de despegar con batería degradada)** |\n| **Trabajos de mantenimiento o carga previa** | **PERMITIDO en tierra con motor parado** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Electrical System (Page 1-11):**\n> \"WARNING: External power may be used for maintenance work or for charging the battery prior to starting the engine only. Starting the engine using external power is prohibited.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 1 Electrical System](./manual-crops/fleet-c172f/supp_p54_electrical_fadec.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Electrical System (Page 1-11)",
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Battery Check (Page 4-20)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172F-LIM-030",
+    "subject_id": "c172f_limitations",
+    "learning_objective": "POH Supplement Sección 2 y 3 - Autonomía de la Batería de Reserva del FADEC vs Batería Principal",
+    "stem": "En el sistema eléctrico del motor TAE 125, ¿durante cuánto tiempo máximo garantiza la batería de reserva del FADEC (FADEC Backup Battery) la alimentación exclusiva del canal A-FADEC si fallan simultáneamente el alternador y la batería principal, y qué autonomía aproximada ofrece la batería principal tras un fallo simple de alternador?",
+    "options": [
+      {
+        "id": "A",
+        "text": "30 minutos con la batería de reserva del FADEC (en canal A) y aproximadamente 120 minutos con la batería principal",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "60 minutos con la batería de reserva del FADEC (en canal B) y 90 minutos con la batería principal",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "45 minutos con la batería de reserva del FADEC (en ambos canales) y 180 minutos con la batería principal",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "15 minutos con la batería de reserva del FADEC (en canal A) y aproximadamente 60 minutos con la batería principal",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Sección 1 (página 1-10) y la Sección 3 (páginas 3-11 y 3-15) del Suplemento POH:\n1. Si fallan tanto el alternador como la batería principal, la **batería de reserva del FADEC (FADEC Backup Battery)** alimenta **únicamente el A-FADEC durante un máximo de 30 minutos**.\n2. Si falla únicamente el alternador en vuelo y se desconectan los equipos no esenciales, se ha demostrado una operación segura alimentada por la batería principal más la batería de respaldo de aproximadamente **120 minutos (2 horas)**.\n\n| Escenario de Fallo Eléctrico | Fuente de Energía Activa | Duración / Autonomía |\n| :--- | :--- | :--- |\n| **Fallo de Alternador (Batería Principal operativa)** | Batería Principal + Backup Battery | **~120 minutos** (desconectando cargas no esenciales) |\n| **Fallo Total (Alternador + Batería Principal agotada)** | **FADEC Backup Battery (solo A-FADEC)** | **Máximo 30 minutos** (aterrizar de inmediato) |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1 (Page 1-10) & Section 3 (Page 3-11):**\n> \"The backup battery represents the last resort stream optimizing the engine functions. It will assure the function of the A-FADEC for a max. of 30 minutes... For an alternator failure during the flight, a safe operation in the airplanes included in this manual was demonstrated for approximately 120 minutes.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 1 Electrical System](./manual-crops/fleet-c172f/supp_p54_electrical_fadec.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Electrical System (Page 1-10)",
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Electrical Power Supply System Malfunctions (Page 3-11 & 3-15)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "C172F-LIM-031",
+    "subject_id": "c172f_limitations",
+    "learning_objective": "POH Supplement Sección 2 - Tiempo Máximo para Alcanzar Presión de Aceite tras el Arranque",
+    "stem": "Tras la puesta en marcha del motor TAE 125 en la Reims/Cessna F172F, ¿qué presión mínima de aceite debe indicarse en el CED-125 y en qué tiempo máximo antes de que sea obligatorio apagar el motor inmediatamente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Al menos 2,3 bar en un máximo de 15 segundos tras el arranque del motor",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Al menos 1,0 bar en un máximo de 3 segundos tras el arranque del motor",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Al menos 1,2 bar en un máximo de 30 segundos tras el arranque del motor",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Al menos 1,5 bar en un máximo de 10 segundos tras el arranque del motor",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según el procedimiento de arranque de la Sección 4 (páginas 4-7 y 4-11) del Suplemento POH, si el indicador de presión de aceite en el CED-125 **no muestra una presión mínima de 1 bar dentro de los 3 segundos posteriores al arranque**, el piloto debe **apagar el motor inmediatamente**.\n\n| Fase tras el Arranque | Presión Mínima Requerida | Acción si no se cumple |\n| :--- | :--- | :--- |\n| **Primeros 3 segundos tras arranque** | **$\\ge 1,0\\text{ bar}$** | **Apagar el motor inmediatamente** |\n| **Ralentí estabilizado (Idle)** | **$\\ge 1,2\\text{ bar}$** | Rango ámbar inferior (1,2 – 2,2 bar) |\n| **Despegue y Vuelo** | **$\\ge 2,3\\text{ bar}$** | Rango verde normal (2,3 – 5,1 bar) |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Starting Engine (Page 4-7):**\n> \"(10) Oil pressure - CHECK. Note: If the oil pressure indicator does not indicate a min. pressure of 1 bar within 3 seconds after starting, switch off the engine immediately.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 4 Starting Engine](./manual-crops/fleet-c172f/supp_p100_norm_start.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 4: Starting Engine (Page 4-7 & 4-11)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-LIM-032",
+    "subject_id": "c172f_limitations",
+    "learning_objective": "POH Supplement Sección 2 - Placas Obligatorias en Cabina (Placards)",
+    "stem": "¿Qué advertencia específica figura en la placa obligatoria situada junto al interruptor «Force B» en el panel de instrumentos de la Reims/Cessna F172F equipada con motor TAE 125?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No activar el interruptor Force B por encima de 10.000 ft de altitud de presión ni durante el despegue",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Antes de activar el interruptor Force B es obligatorio pulsar el botón FADEC Reset durante 5 segundos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El interruptor Force B es exclusivamente un mando de emergencia y su uso en operación normal está prohibido",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Al activar el interruptor Force B la potencia máxima del motor se reduce automáticamente al 75% de carga",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Sección 1 (página 1-13) y la Sección 2 (página 2-8, *Placards*) del Suplemento POH, el interruptor asegurado **\"Force B\"** sirve únicamente para forzar manualmente el canal B del FADEC en caso de que ambos canales A y B muestren fallo simultáneo y el canal A esté degradado. Su uso en operación normal está **prohibido**.\n\n| Mando del Sistema FADEC | Función Operacional | Restricción |\n| :--- | :--- | :--- |\n| **Botón \"FADEC Test\"** | Prueba pre-vuelo de canales A/B y paso de hélice | Solo en tierra con palanca en IDLE |\n| **Botón \"FADEC Reset\"** | Borra avisos no críticos (luz parpadeante) o conmuta canal | Según procedimiento Sección 3 |\n| **Interruptor \"Force B\"** | Fuerza el control del motor al canal B-FADEC | **Prohibido en operación normal y prohibido con Backup Battery sola** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Electrical System (Page 1-13):**\n> \"CAUTION: The switch 'Force B' is an emergency switch only. Its use in normal operation is prohibited!\"\n\n![Recorte Oficial del Manual — Supplement POH Section 1 Electrical System](./manual-crops/fleet-c172f/supp_p54_electrical_fadec.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Electrical System (Page 1-13)",
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 2: Placards (Page 2-8)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  }
+]

@@ -106,8 +106,8 @@ export async function loadManifest(forceRefresh = false): Promise<BankManifest> 
   const titles: Record<string, { title: string; icon: string; color: string }> = {
     'netjets-interview': { title: 'NetJets Europe Interview Prep (EASA Air Ops & Aircrew)', icon: 'Briefcase', color: 'amber' },
     'command-upgrade': { title: 'Command Upgrade / Prueba de Comandante (Command Course)', icon: 'ShieldCheck', color: 'rose' },
-    'fleet-c172n': { title: 'Flota Cessna 172N', icon: 'Compass', color: 'amber' },
-    'fleet-p2010tdi': { title: 'Flota Tecnam P2010 TDI', icon: 'Gauge', color: 'indigo' },
+    'fleet-c172f': { title: 'Flota Cessna 172F (TAE 125 / EC-NNX)', icon: 'Compass', color: 'amber' },
+    'fleet-da40d': { title: 'Flota Diamond DA40 TDI (EC-OKC)', icon: 'Compass', color: 'cyan' },
     'simulador-e2': { title: 'Simulador E2', icon: 'Cpu', color: 'sky' },
     'binter-ops': { title: 'Binter Ops (MOA/MOB)', icon: 'PlaneTakeoff', color: 'emerald' },
     'fleet-e195e2': { title: 'Flota Embraer 195-E2', icon: 'Plane', color: 'sky' }

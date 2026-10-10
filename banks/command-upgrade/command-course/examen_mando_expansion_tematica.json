@@ -421,16 +421,16 @@
     "id": "CMD-EXP26-012",
     "subject_id": "command-upgrade",
     "learning_objective": "MOA 8.1.7.2.5 (Tabla 1B) - Plan Básico con Variaciones: 2 aproximaciones de precisión a pistas independientes",
-    "stem": "Al seleccionar un aeródromo alternativo de destino que cuenta con dos pistas independientes utilizables con aproximaciones de precisión ILS operativas (mínimos publicados: DA/H 200 ft y RVR 550 m), aplicando el Plan Básico con Variaciones de Binter (Tabla 1B del MOA 8.1.7.2.5 para categoría B), ¿qué mínimos meteorológicos de planificación deben pronosticarse en ETA ±1h?",
+    "stem": "En el despacho de un vuelo bajo el Plan Básico con Variaciones (MOA 8.1.7.2.5, Tabla 1A), el aeródromo alternativo de destino dispone de DOS aproximaciones por instrumentos Tipo B a pistas separadas (independientes), cuyos mínimos de operación son DA/H 200 ft y RVR 550 m. ¿Cuáles son los mínimos meteorológicos de planificación aplicables?",
     "options": [
       {
         "id": "A",
-        "text": "Techo 200 ft y RVR 550 m (mínimos de aproximación sin aplicar ningún incremento)",
+        "text": "Techo de nubes: DA/H + 150 ft (350 ft) y Visibilidad/RVR: RVR + 450 m (1.000 m)",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Techo 400 ft y visibilidad 1.500 m fijos independientemente de las pistas disponibles",
+        "text": "Techo de nubes: DA/H + 200 ft (400 ft) y Visibilidad/RVR: RVR/VIS + 800 m (1.350 m)",
         "is_correct": false
       },
       {
@@ -440,12 +440,12 @@
       },
       {
         "id": "D",
-        "text": "Mínimos de No Precisión (MDH + 200 ft de techo y RVR + 1.000 m)",
+        "text": "Techo de nubes: DA/MDA + 200 ft (400 ft) y Visibilidad/RVR: RVR/VIS + 1.000 m (1.550 m)",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "De acuerdo con la **Tabla 1B del MOA 8.1.7.2.5 (Plan Básico con Variaciones de Binter / AMC1 CAT.OP.MPA.185)**:\n- Cuando el alternativo dispone de **al menos dos aproximaciones de precisión utilizables a pistas independientes**:\n  * Para aeronaves de Categoría B: el incremento reglamentario sobre los mínimos de aproximación en uso es de **+100 ft a la DA/H** y **+300 m al RVR/visibilidad** (resultando en 300 ft de techo y 850 m de RVR a partir de una aproximación base de 200 ft / 550 m).\n  * (En contraste, el Plan Básico Estándar de la Tabla 1A exigiría mínimos de aproximación de no precisión: MDH + 200 ft / RVR + 1.000 m).\n\n> 📖 **Extracto Literal del Manual — MOA Binter ED06 RN27 - Subcapítulo 8.1.7.2.5: Tabla 1B de Mínimos de Planificación (Plan Básico con Variaciones) (Pág. 378):**\n> \"asignado, por lo que podría ser obsoleto. Por favor, verifique el gestor documental para asegurarse de que está usando la versión vigente. a) 3% del combustible del vuelo (trip fuel) o, en el caso de re-planificación en vuelo, 3% del combustible de vuelo (trip fuel) necesario para el resto del vuelo, siempre que se disponga de un aeropuerto alternativo en ruta (Fuel ERA) en las condiciones especificadas en MO(A) 8.1.7.2.5; o b) el combustible necesario para volar 5 minutos a la velocidad de h...\"\n\n![Recorte Oficial del Manual — MOA Binter ED06 RN27 - Subcapítulo 8.1.7.2.5: Tabla 1B de Mínimos de Planificación (Plan Básico con Variaciones)](./manual-crops/command-upgrade/CMD-EXP26-012.png)",
+      "text": "De acuerdo con el **MOA 8.1.7.2.5 (Tabla 1A — Plan Básico con Variaciones)**, cuando un aeródromo alternativo dispone de **dos o más operaciones de aproximación por instrumentos de Tipo B a pistas separadas**, los incrementos de planificación son **Techo: DA/H + 100 ft** (200 + 100 = **300 ft**) y **Visibilidad/RVR: RVR + 300 m** (550 + 300 = **850 m**).\n- El distractor A (+150 ft / +450 m) corresponde a la fila de **1 sola aproximación Tipo B**.\n- El distractor B (+200 ft / +800 m) corresponde a la fila de **3D Tipo A (≤ 200 ft)** o **Tabla 1B Tipo B**.\n- El distractor D (+200 ft / +1.000 m) corresponde a la fila de **2 o más aproximaciones Tipo A en ayudas distintas**.\n\n| Aproximaciones disponibles en el aeródromo | Techo de nubes (Tabla 1A: Básico con Variaciones) | RVR / VIS (Tabla 1A) | Tabla 1B (Sin Variaciones) |\n| :--- | :--- | :--- | :--- |\n| **2 o más Tipo B** a pistas separadas | **DA/H + 100 ft** | **RVR + 300 m** | DA/H + 200 ft / RVR + 800 m |\n| **1 Tipo B** | **DA/H + 150 ft** | **RVR + 450 m** | DA/H + 200 ft / RVR + 800 m |\n| **3D Tipo A** (incremento RVR ≤ 200 m y DH ≤ 200 ft) | **DA/H + 200 ft** | **RVR/VIS + 800 m** | MDA/H + 400 ft / RVR/VIS + 1.500 m |\n| **2 o más Tipo A** (cada una basada en ayuda distinta) | **DA/MDA + 200 ft*** | **RVR/VIS + 1.000 m**** | MDA/H + 400 ft / RVR/VIS + 1.500 m |\n| **1 Tipo A** | **MDA/H + 400 ft** | **RVR/VIS + 1.500 m** | MDA/H + 400 ft / RVR/VIS + 1.500 m |\n| **Circuito (Circling)** | **MDH + 400 ft** | **VIS + 1.500 m** | MDH + 400 ft / VIS + 1.500 m |\n\n*Nota \\* y \\*\\*: En 2 o más Tipo A en ayudas distintas, se suma al más alto de la DA/H o MDA/H en uso y al más alto de la RVR o VIS en uso.*",
       "references": [
         "MOA Binter ED06 RN27 - Subcapítulo 8.1.7.2.5: Tabla 1B de Mínimos de Planificación (Plan Básico con Variaciones)",
         "EASA AMC1 CAT.OP.MPA.185(c): Selection of aerodromes - Planning minima"
@@ -535,26 +535,26 @@
     "id": "CMD-EXP26-015",
     "subject_id": "command-upgrade",
     "learning_objective": "MOA 8.1.8.3 - Pesos Estándar de Pasajeros y Equipaje en Operaciones de Línea",
-    "stem": "En la confección de la hoja de carga con pesos estándar de pasaje según el MOA 8.1.8.3 (y EASA CAT.POL.MAB.100), ¿cuáles son los pesos estándar asignados a los pasajeros (incluyendo equipaje de mano)?",
+    "stem": "Según el MOA 8.1.8.3 (Tabla 1 de valores de masa estándar para aeronaves de 30 o más asientos, vuelos no chárter), ¿cuáles son las masas estándar de pasajeros aplicables en el Embraer 195-E2 (incluyendo equipaje de mano) para Varón, Mujer, Adulto mixto, Niños (2 a 12 años) y Bebés (< 2 años sin asiento)?",
     "options": [
       {
         "id": "A",
-        "text": "Varón: 75 kg | Mujer: 60 kg | Adulto mixto: 70 kg | Niños: 25 kg | Bebés: 0 kg",
+        "text": "Varón: 84 kg | Mujer: 76 kg | Adulto mixto: 80 kg | Niños: 35 kg | Bebés: 0 kg",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Varón: 84 kg | Mujer: 67 kg | Adulto mixto: 76 kg | Niños: 30 kg | Bebés: 5 kg",
+        "text": "Varón: 93 kg | Mujer: 75 kg | Adulto mixto: 84 kg | Niños: 38 kg | Bebés: 5 kg",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Varón: 95 kg | Mujer: 80 kg | Adulto mixto: 90 kg | Niños: 40 kg | Bebés: 10 kg",
+        "text": "Varón: 85 kg | Mujer: 75 kg | Adulto mixto: 80 kg | Niños: 30 kg | Bebés: 10 kg",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Varón: 88 kg | Mujer: 70 kg | Adulto mixto (todos): 84 kg | Niños (2 a 12 años): 35 kg | Bebés (< 2 años sin asiento): 0 kg",
+        "text": "Varón: 88 kg | Mujer: 70 kg | Adulto mixto: 84 kg | Niños: 35 kg | Bebés: 0 kg",
         "is_correct": true
       }
     ],
@@ -573,31 +573,31 @@
     "id": "CMD-EXP26-016",
     "subject_id": "command-upgrade",
     "learning_objective": "MOA 8.1.8.6 - Límite Máximo de Corrección por LMC (Last Minute Change)",
-    "stem": "¿Qué acción es imperativa si un cambio de última hora (LMC) de pasajeros o carga hace que el centro de gravedad (CG) calculado se desplace fuera de los límites de la envolvente permitida en la hoja de carga?",
+    "stem": "Según el MOA 8.2 (y 8.1.8.6) para la flota Embraer 195-E2, ¿cuáles son los límites máximos de Cambio de Última Hora (LMC) permitidos antes de que sea obligatorio emitir una nueva hoja de carga (Loadsheet)?",
     "options": [
       {
         "id": "A",
-        "text": "El Comandante puede compensarlo aumentando la velocidad de rotación Vr en 5 nudos.",
+        "text": "±500 kg para movimiento interno de carga o pasaje, ±250 kg al añadir o quitar pasaje/carga, y ±500 kg cuando se combinan ambos tipos de cambio.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Debe solicitarse la emisión de una nueva hoja de carga (New Loadsheet) completa y no se puede aplicar el procedimiento manual de LMC.",
+        "text": "±500 kg al añadir o quitar pasaje y/o carga, 250 kg por movimiento interno de carga o pasaje, y el más restrictivo (250 kg) si se combinan ambos.",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "Se autoriza el despegue siempre que el peso total en despegue sea inferior al MTOW en 2.000 kg.",
+        "text": "±300 kg al añadir o quitar pasaje y/o carga, 150 kg por movimiento interno de carga o pasaje, y la suma de ambos (450 kg) si ocurren a la vez.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Se debe descargar combustible inmediatamente hasta volver a centrar el avión.",
+        "text": "±1.000 kg al añadir o quitar pasaje y/o carga, 500 kg por movimiento interno de carga o pasaje, y el más restrictivo (500 kg) si se combinan ambos.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Conforme al MOA 8.1.8.6, el procedimiento manual LMC solo es legal si la masa total se mantiene dentro de los límites numéricos de LMC (ej. ±500 kg) Y el centro de gravedad resultante permanece dentro de la envolvente certificada de masa y centrado. Si el CG sale de la envolvente o se superan los límites, es mandatorio generar una nueva hoja de carga.\n\n> 📖 **Extracto Literal del Manual — MOA Binter ED06 RN27 - Subcapítulo 8.1.8.6: Procedimientos de Corrección LMC (Pág. 400):**\n> \"8.1.8.6 INSTRUCCIÓN E INFORMACIÓN GENERAL NECESARIA PARA VERIFICAR LOS DIVERSOS TIPOS DE DOCUMENTACIÓN DE MASA Y CENTRADO EMPLEADOS La documentación de carga y centrado de cada vuelo será almacenada de acuerdo con lo establecido en el MO(A) 2.1.6. Binter Airlines dispone de la Hoja de masa y centrado, generada para cada vuelo, que garantiza que se respetan los límites operacionales, estructurales y regulados por performances de la aeronave para la operación prevista. Dicho documento, según se...\"\n\n![Recorte Oficial del Manual — MOA Binter ED06 RN27 - Subcapítulo 8.1.8.6: Procedimientos de Corrección LMC](./manual-crops/command-upgrade/CMD-EXP26-016.png)",
+      "text": "De acuerdo con el **MOA 8.1.8.6 y 8.2 (Límites de Cambio de Última Hora - LMC en Embraer 195-E2)**, los márgenes máximos admitidos mediante anotación manual LMC sin necesidad de recalcular una nueva hoja de carga (Loadsheet) son:\n- **±500 kg totales** cuando se trata de **añadir o quitar** pasajeros y/o carga.\n- **250 kg** cuando se trata de **movimiento interno** de carga o cambio de bloque/zona de pasajeros.\n- Si concurren simultáneamente **ambos tipos de cambios** (añadir/quitar y mover carga o pasaje), **aplica el límite más restrictivo de 250 kg**; superar dicho valor obliga a emitir una nueva Loadsheet.",
       "references": [
         "MOA Binter ED06 RN27 - Subcapítulo 8.1.8.6: Procedimientos de Corrección LMC",
         "Binter Weight and Balance Manual"
@@ -840,31 +840,31 @@
     "id": "CMD-EXP26-023",
     "subject_id": "command-upgrade",
     "learning_objective": "QRH Sección 1 / MOB 3.1 - Comunicación NITS Briefing en Situaciones de Emergencia",
-    "stem": "En una situación de emergencia o anormal que aconseje preparar la cabina para una posible evacuación, el Comandante debe impartir el briefing al Sobrecargo de Vuelo (SCC) siguiendo la estructura mnemotécnica:",
+    "stem": "En una situación de emergencia en vuelo que requiere preparar la cabina para un aterrizaje forzoso o evacuación imprevista, ¿qué acrónimo oficial utiliza el Comandante en Binter Canarias (MOA 8.3.15 / Tarjeta de Emergencia) para realizar el briefing de emergencia al Sobrecargo (SCCM)?",
     "options": [
       {
         "id": "A",
-        "text": "FAST: Fire, Altitude, Speed, Time.",
-        "is_correct": false
-      },
-      {
-        "id": "B",
-        "text": "NITS: Nature (Naturaleza del problema), Intentions (Intenciones del Comandante), Time (Tiempo disponible hasta la toma), Special instructions (Instrucciones especiales para tripulación de cabina).",
+        "text": "TELSI: Tipo de emergencia, Estimated Time of Arrival (Tiempo disponible), Lugar de aterrizaje (tierra/agua), Señales de protección a 30s e Instrucciones especiales.",
         "is_correct": true
       },
       {
+        "id": "B",
+        "text": "NITS: Nature of the emergency (Naturaleza de la avería), Intentions of the Commander (Intenciones de vuelo), Time available (Tiempo) y Special instructions (Especiales).",
+        "is_correct": false
+      },
+      {
         "id": "C",
-        "text": "SOP: Standard, Operations, Pilot, Action.",
+        "text": "TEST: Type of emergency (Tipo de emergencia), Evacuation expected (Evacuación prevista), Signals before impact (Señales previas) y Time remaining (Tiempo restante).",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "PAPA: Passengers, Alternates, Power, Actions.",
+        "text": "TWIN: Threat identification (Amenaza identificada), Weather conditions (Meteorología en destino), Intentions for landing (Intenciones) y Notification to cabin crew.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Conforme al MOB 3.1 y MOA 8.3 de Binter, el modelo estandarizado para comunicar una situación anormal o de emergencia a la tripulación de cabina es el briefing **NITS**:\n- **N**: Nature of the emergency (Naturaleza).\n- **I**: Intentions (Intenciones: desvío, toma inmediata, etc.).\n- **T**: Time remaining to landing (Tiempo disponible para preparar cabina).\n- **S**: Special instructions / Specific signals (Instrucciones específicas: evacuación por un solo lado, etc.).\n\n> 📖 **Extracto Literal del Manual — MOB Binter E195-E2 - Subcapítulo 3.1: Briefings de Emergencia (NITS) (Pág. 5):**\n> \"Total folios: 4 ( 3 de 4 ) - Código Seguro de Verifi Este documento puede ser verificado en / This do 100 ORO.FC.105(b)(2) competencia en ruta/aeródromo. Genérico A0394 D.2.1.1 ED06 RN23 101 ORO.FC.120 ORO.FC.115 ORO.FC.220 ORO.FC.145 ORO.FC.146 Entrenamiento de conversión y verificación al operador, incluye UPRT. CRM. (Sección 2 ORO.FC). ERJ 190-400 FR-1109, CH-130, EU- A0394 D.2.1.4, D.2.4.3.10, D.2.4.3.9, D.2.4.4.5, D.2.4.3.1, D.2.4.3.7, D.2.4.3.6, D.2.4.3.2, D.2.4.3.3, D.2.4.3.4, D.2.4.3....\"\n\n![Recorte Oficial del Manual — MOB Binter E195-E2 - Subcapítulo 3.1: Briefings de Emergencia (NITS)](./manual-crops/command-upgrade/CMD-EXP26-023.png)",
+      "text": "De acuerdo con el **MOA 8.3.15 y los Procedimientos de Emergencia de Binter Canarias**, el briefing del Comandante al Sobrecargo (SCCM) ante una emergencia o aterrizaje forzoso se estructura mediante el acrónimo **TELSI**:\n- **T — Tipo de emergencia:** qué ocurre y cómo afectará a la cabina.\n- **E — Estimated Time of Arrival (Tiempo disponible):** tiempo restante hasta el aterrizaje.\n- **L — Lugar de aterrizaje:** en tierra o en agua (amaraje).\n- **S — Señales:** aviso previo al impacto (30 segundos antes: *«TRIPULACIÓN DE CABINA, A SUS ESTACIONES»*).\n- **I — Instrucciones especiales:** puertas inutilizadas, uso de oxígeno, traslado de pasajeros, etc.",
       "references": [
         "MOB Binter E195-E2 - Subcapítulo 3.1: Briefings de Emergencia (NITS)",
         "MOA Binter ED06 RN27 - Subcapítulo 8.3: Coordinación Técnica-Cabina"
@@ -916,31 +916,31 @@
     "id": "CMD-EXP26-025",
     "subject_id": "command-upgrade",
     "learning_objective": "MOB 3.1.0 - Cancelación de Orden de Evacuación",
-    "stem": "Si tras una parada de emergencia en pista el Comandante determina que la situación está bajo control y no es necesaria una evacuación de emergencia, ¿cuál es la llamada oficial por PA que debe realizar?",
+    "stem": "Tras una emergencia en tierra o detención de la aeronave en pista, si el Comandante evalúa la situación y decide que NO es necesaria la evacuación y que la tripulación de cabina debe esperar instrucciones y emitir los anuncios (PAs) oportunos al pasaje, ¿qué comando estándar dará por el sistema PA?",
     "options": [
       {
         "id": "A",
-        "text": "\"TODO ESTÁ BIEN, PUEDEN LEVANTARSE\".",
+        "text": "\"TRIPULACIÓN DE CABINA, ESPEREN INSTRUCCIONES\".",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "\"TRIPULACIÓN DE CABINA Y PASAJEROS, CANCELAR EVACUACIÓN, CANCELAR EVACUACIÓN, PERMANEZCAN SENTADOS\".",
-        "is_correct": true
-      },
-      {
-        "id": "C",
-        "text": "\"PASAJEROS DESABROCHEN CINTURONES Y ESPEREN A LA ESCALERA\".",
+        "text": "\"TRIPULACIÓN DE CABINA, FINALIZAR PREPARACIÓN\".",
         "is_correct": false
       },
       {
+        "id": "C",
+        "text": "\"TRIPULACIÓN DE CABINA, PERMANEZCAN SENTADAS\".",
+        "is_correct": true
+      },
+      {
         "id": "D",
-        "text": "\"ATENCIÓN TRIPULACIÓN, EMBARQUE REANUDADO\".",
+        "text": "\"TRIPULACIÓN DE CABINA, A SUS ESTACIONES\".",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Conforme a los procedimientos estandarizados del MOB 3.1.0 y MOA 8.3 de Binter, para cancelar una alerta o evitar una evacuación no deseada por parte del pasaje tras una parada imprevista, la llamada oficial e imperativa es: **\"TRIPULACIÓN DE CABINA Y PASAJEROS, CANCELAR EVACUACIÓN, CANCELAR EVACUACIÓN, PERMANEZCAN SENTADOS\"**.\n\n> 📖 **Extracto Literal del Manual — MOB Binter E195-E2 - Subcapítulo 3.1.0: Comunicaciones y Llamadas Normalizadas (Pág. 646):**\n> \"los procedimientos anormales o de emergencia según se establece en el QRH y con el siguiente orden de prioridades: Listas de Emergencia  Listas de Operación Normal  Listas de Operación Anormal. Se establece el método MEANA para establecer el orden de prioridad según se detalla en el MOB 3.1.0. Las acciones críticas o irreversibles (p.e. la selección de una palanca de combustible o un maneral cortafuego, etc…) deben ser realizadas por el PM después de la confirmación del PF. Toma de decision...\"\n\n![Recorte Oficial del Manual — MOB Binter E195-E2 - Subcapítulo 3.1.0: Comunicaciones y Llamadas Normalizadas](./manual-crops/command-upgrade/CMD-EXP26-025.png)",
+      "text": "De acuerdo con los **SOP de Emergencia y Evacuación de Binter Canarias (MOA 8.3.15 / MOB)**, cuando la aeronave se detiene tras una anormalidad o emergencia en pista:\n- Al detenerse el avión y poner el *Parking Brake*: **«TRIPULACIÓN DE CABINA, A SUS ESTACIONES»**.\n- Si el Comandante determina que **NO es necesaria la evacuación** y que los TCP deben permanecer en sus puestos, esperar instrucciones y realizar los anuncios (PAs) tranquilizadores al pasaje, el anuncio estándar por PA es: **«TRIPULACIÓN DE CABINA, PERMANEZCAN SENTADAS»**.",
       "references": [
         "MOB Binter E195-E2 - Subcapítulo 3.1.0: Comunicaciones y Llamadas Normalizadas",
         "MOA Binter ED06 RN27 - Subcapítulo 8.3: Coordinación de Emergencia"
@@ -958,27 +958,27 @@
     "options": [
       {
         "id": "A",
-        "text": "800 ft AGL.",
+        "text": "400 ft AGL.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "1.500 ft AGL.",
+        "text": "80 ft AGL.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "400 ft AGL.",
+        "text": "200 ft AGL.",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "100 ft AGL.",
+        "text": "500 ft AGL.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "De acuerdo con la Sección 2 del AFM (Limitations) del Embraer 195-E2, la altura mínima para el enganche del sistema de piloto automático (Autopilot Engagement Altitude) tras el despegue es de **400 ft AGL**.\n\n> 📖 **Extracto Literal del Manual — Embraer 195-E2 AFM - Section 2: Operating Limitations - Autoflight System (Pág. 318):**\n> \"utilizados por el operador, información que estará siempre disponible y será compartida por el personal de CCO, OFT y tripulantes de vuelo. Generalmente, durante el despegue la aeronave parte de un punto inferior a cualquier altitud mínima de seguridad, no obstante el cumplimiento de los gradientes de salida y los procedimientos de fallo de motor (EOSID) garantizan el debido franqueamiento. A su vez, durante una aproximación frustrada los procedimientos de aproximación y su gradiente asociado...\"\n\n![Recorte Oficial del Manual — Embraer 195-E2 AFM - Section 2: Operating Limitations - Autoflight System](./manual-crops/command-upgrade/CMD-EXP26-026.png)",
+      "text": "Según el **AFM (Sección 2 - Limitaciones de Autopilot) y el AOM/MOB del Embraer 195-E2**, la altura mínima certificada para **conectar el piloto automático (AP Minimum Engagement Height) después del despegue es de 200 ft AGL**.\n\n| Fase de Vuelo (Embraer 195-E2) | Altura Mínima de Uso / Conexión AP |\n| :--- | :--- |\n| **Despegue (Takeoff Engagement)** | **200 ft AGL** |\n| **En ruta / Crucero / Descenso** | **1.000 ft AGL** |\n| **Aproximación de No Precisión (NPA)** | **190 ft AGL** |\n| **Aproximación de Precisión (ILS / LPV)** | **80 ft AGL** |",
       "references": [
         "Embraer 195-E2 AFM - Section 2: Operating Limitations - Autoflight System",
         "AOM Volume 1 - Limitations 1-04"
@@ -1068,31 +1068,31 @@
     "id": "CMD-EXP26-029",
     "subject_id": "command-upgrade",
     "learning_objective": "MOA 8.3 / CRM Binter - Mnemónico IMFLOCC para Gestión de Desvíos",
-    "stem": "Durante la toma de decisiones y ejecución de un desvío a un aeródromo alternativo en vuelo, ¿qué representa el mnemónico operacional IMFLOCC utilizado en Binter?",
+    "stem": "En la gestión de fallos y toma de decisiones operativas en el Embraer 195-E2 (MOB 3.1.0), una vez completadas las listas del QRH, la tripulación utiliza el acrónimo IMFLOCC. ¿Qué significan exactamente las siglas de esta herramienta de gestión?",
     "options": [
       {
         "id": "A",
-        "text": "Informe, Mantenimiento, Facturación, LMC, OFP, Control, Checklists.",
+        "text": "I: Identify the failure; M: Memory Items; F: Flight Path Control; L: Landing Distance; O: Operational Consequences; C: Cabin Crew Briefing; C: Company Dispatch.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "I: Información / Intenciones; M: Meteorología / Mínimos; F: Fuel / Combustible; L: Legalidad / FTL; O: Operaciones / Handling; C: Cabin Crew / Pasajeros; C: ATC / Coordinación.",
+        "text": "I: Inoperative Items / Incidents; M: Meteorological Report; F: Fuel Management; L: Landing Performance; O: Options (Aerodromes); C: Choose an Option; C: Communications.",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "ILS, MDA, FAF, Localizer, Obstáculos, Circling, Cartas.",
+        "text": "I: Immediate Actions; M: Manual Flight; F: Failure Analysis; L: Logbook / MEL Entry; O: Oxygen Requirements; C: Checklist Completion; C: Crew Coordination.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Instrumentos, Motores, Flaps, Luces, Oxígeno, Circuitos, Calzos.",
+        "text": "I: Icing & Weather; M: Minimum Safe Altitude; F: Flight Plan Revision; L: Loadsheet & CG; O: Overweight Landing; C: Cabin Preparation; C: Control Handover.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "En los procedimientos de CRM y gestión de desvíos de Binter (MOA 8.3 y manual de formación de mandos), **IMFLOCC** estructura la revisión integral de un desvío:\n- **I**: Information / Intenciones generales.\n- **M**: Meteorology & Minima en alternativo.\n- **F**: Fuel management (Trip al alternativo + Final Reserve + márgenes).\n- **L**: Legal aspects (FTL de tripulación, restricciones de aeropuerto).\n- **O**: Operations (Handling, pasarela, repostaje disponible).\n- **C**: Cabin crew & Passengers (comunicación al pasaje).\n- **C**: Communications / ATC / Despacho OCC.\n\n> 📖 **Extracto Literal del Manual — MOA Binter ED06 RN27 - Subcapítulo 8.3: Gestión del Vuelo y Desvíos (Pág. 4):**\n> \"Total folios: 4 ( 2 de 4 ) - Código Seguro de Verificación (CSV/CID) : AE Este documento puede ser verificado en / This document may be verifie 15 CAT.OP.MPA.145(b) Método de establecimiento de altitudes mínimas de vuelo. A.8.1.1 ED05 RN96 16 CAT.OP.MPA.180. Plan de combustible/energía. A.8.3.7; A.8.1.7 ED05 RN51; ED06 RN14 18 CAT.OP.MPA.200 Carga o descarga especial de combustible/energía. A.8.2.1.2 B-EMB 2.2.24 ED06 RN20 ED06 RN14 33 SPA.RVSM.105 Operaciones con separación vertical mínima r...\"\n\n![Recorte Oficial del Manual — MOA Binter ED06 RN27 - Subcapítulo 8.3: Gestión del Vuelo y Desvíos](./manual-crops/command-upgrade/CMD-EXP26-029.png)",
+      "text": "De acuerdo con el **MOB 3.1.0 (Gestión de Anormalidades y Toma de Decisiones)** de Binter Canarias, el acrónimo **IMFLOCC** estructura la evaluación tras aplicar el QRH:\n- **I — Inoperative Items / Incidents:** sistemas inoperativos y consecuencias operacionales.\n- **M — Meteorological Report:** análisis meteorológico en destino y alternativos.\n- **F — Fuel Management:** cálculo de combustible disponible, consumos penalizados y bingo.\n- **L — Landing Performance:** cálculo de distancia de aterrizaje (LDF) y configuración.\n- **O — Options:** evaluación de aeródromos disponibles y servicios en tierra.\n- **C — Choose an Option:** decisión firme del Comandante tras consensuar con el PM.\n- **C — Communications:** comunicaciones a ATC, Tripulación de Cabina (TELSI), Operaciones/Mantenimiento y Pasaje.",
       "references": [
         "MOA Binter ED06 RN27 - Subcapítulo 8.3: Gestión del Vuelo y Desvíos",
         "Manual de Curso de Mando Binter - Toma de Decisiones y Mnemónicos Operacionales"
@@ -1340,22 +1340,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Se puede seleccionar la fila más ventajosa aplicando los incrementos de 1 aproximación Tipo B (+150 ft / +450 m) a los mínimos CAT III, resultando en 150 ft de techo y 525 m de RVR (en lugar de 300 ft / 850 m de CAT I).",
+        "text": "Seleccionando la fila más ventajosa (1 aproximación Tipo B sobre CAT III: +150 ft y +450 m), resultando en 150 ft y 525 m.",
         "is_correct": true
       },
       {
         "id": "B",
-        "text": "No se pueden utilizar mínimos CAT III para planificación bajo ninguna circunstancia.",
+        "text": "Seleccionando obligatoriamente los mínimos de CAT I con el incremento de una aproximación Tipo B, resultando en 350 ft y 1.000 m.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Es obligatorio aplicar siempre los mínimos de CAT I con incremento de 2 aproximaciones independientes (+100 ft / +300 m).",
+        "text": "Aplicando el incremento de dos aproximaciones Tipo B a pistas separadas (+100 ft y +300 m) a CAT I, resultando en 300 ft y 850 m.",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Debe calcularse la media aritmética entre los mínimos de CAT I y CAT III.",
+        "text": "Calculando el valor medio aritmético entre los mínimos de planificación de CAT III y de CAT I, resultando en 250 ft y 760 m.",
         "is_correct": false
       }
     ],
@@ -1535,7 +1535,7 @@
       },
       {
         "id": "B",
-        "text": "140 kg (equivalente al consumo de 5 minutos de espera a 1.500 ft en condiciones estándar).",
+        "text": "140 kg.",
         "is_correct": true
       },
       {
@@ -1640,31 +1640,31 @@
     "id": "CMD-EXP26-044",
     "subject_id": "command-upgrade",
     "learning_objective": "MOA 8.2.1.2.1 - Distancias y Zonas de Seguridad en Plataforma durante el Repostaje",
-    "stem": "Durante las operaciones de reabastecimiento de combustible en plataforma según el MOA 8.2.1.2.1, ¿cuál es el radio de la zona de seguridad libre de fuentes de ignición que debe mantenerse alrededor de las aperturas de ventilación (desaire) de los tanques y puntos de repostaje?",
+    "stem": "Según el MOA 8.2.1.1.1 (Precauciones durante el repostaje con pasajeros a bordo), ¿cuáles son las distancias mínimas de seguridad respecto a las aperturas de desaire (ventilación) de los tanques en las puntas de plano, del grupo eléctrico (GPU) respecto a la cuba de combustible y de las mangueras respecto a las ruedas del avión?",
     "options": [
       {
         "id": "A",
-        "text": "2 metros de distancia fija uniforme para cualquier equipo de handling.",
+        "text": "2 metros respecto a las salidas de ventilación de tanques, 4 metros del GPU a la cuba y 2 metros de las ruedas.",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "6 metros de radio respecto a los motores para todo el personal de rampa.",
+        "text": "6 metros respecto a las salidas de ventilación de tanques, 4 metros del GPU a la cuba y 3 metros de las ruedas.",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "4 metros de radio alrededor de las aperturas de ventilación (desaire) de los tanques en puntas de plano y bocas de carga.",
+        "text": "4 metros respecto a las aperturas de desaire de tanques, 6 metros del GPU a la cuba y 1 metro de las ruedas.",
         "is_correct": true
       },
       {
         "id": "D",
-        "text": "10 metros en todo el perímetro exterior del stand.",
+        "text": "10 metros respecto a las aperturas de desaire de tanques, 8 metros del GPU a la cuba y 2 metros de las ruedas.",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Conforme al **MOA 8.2.1.2.1 (Procedimientos para el Agente de Handling / Repostaje)**:\n- **4 metros de radio**: Área de seguridad obligatoria alrededor de las aperturas de desaire (ventilación) de los tanques de combustible en las puntas de los planos y puntos de conexión de mangueras.\n- **6 metros**: Distancia mínima para el posicionamiento del GPU / fuentes de energía motorizadas respecto al vehículo cisterna y zonas de ventilación.\n- **1 metro**: Distancia libre de seguridad para el paso de mangueras respecto a los neumáticos del tren de aterrizaje.\n\n> 📖 **Extracto Literal del Manual — MOA Binter ED06 RN27 - Subcapítulo 8.2.1.2.1 (pág. 459): Zonas de Seguridad en Repostaje (Pág. 459):**\n> \"q y p g y p g p y de evacuación de emergencia. 8.2.1.2.1 PROCEDIMIENTOS PARA EL AGENTE DE HANDLING Los procedimientos específicos que llevará a cabo el agente de handling durante el reabastecimiento de combustible con pasajeros embarcando contemplarán: • El coordinador se asegurará de que se ha obtenido el permiso de la autoridad competente, que se ha informado al responsable de la carga/descarga y a los distintos servicios del avión. • Consultará con la tripulación las salidas de emergencia ...\"\n\n![Recorte Oficial del Manual — MOA Binter ED06 RN27 - Subcapítulo 8.2.1.2.1 (pág. 459): Zonas de Seguridad en Repostaje](./manual-crops/command-upgrade/CMD-EXP26-044.png)",
+      "text": "De acuerdo con el **MOA 8.2.1.1.1 (Carga de combustible con pasajeros a bordo, embarcando o desembarcando)**, se deben respetar las siguientes distancias de seguridad en plataforma:\n- **4 metros de radio** de área de seguridad alrededor de las **aperturas de desaire (ventilación) de los tanques** en la punta de las alas y de las conexiones de llenado.\n- **6 metros de separación** mínima en el posicionamiento del **GPU** (grupo eléctrico externo) con respecto a la cuba de combustible y puntos de acoplamiento.\n- **1 metro de distancia** mínima entre las **mangueras de combustible y las ruedas** de la aeronave (por riesgo de temperatura de frenos).",
       "references": [
         "MOA Binter ED06 RN27 - Subcapítulo 8.2.1.2.1 (pág. 459): Zonas de Seguridad en Repostaje",
         "Reglamento de Seguridad en Plataforma Aena"
@@ -2481,22 +2481,22 @@
     "options": [
       {
         "id": "A",
-        "text": "Tripulación técnica: 90 kg por piloto | Tripulación de cabina: 85 kg por TCP",
+        "text": "Tripulación técnica: 88 kg por piloto | Tripulación de cabina: 70 kg por TCP",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Tripulación técnica (Flight Crew): 85 kg por piloto | Tripulación de cabina (Cabin Crew / TCP): 75 kg por TCP",
+        "text": "Tripulación técnica: 85 kg por piloto | Tripulación de cabina: 75 kg por TCP",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "Tripulación técnica: 80 kg por piloto | Tripulación de cabina: 65 kg por TCP",
+        "text": "Tripulación técnica: 84 kg por piloto | Tripulación de cabina: 76 kg por TCP",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Tripulación técnica: 88 kg por piloto | Tripulación de cabina: 70 kg por TCP",
+        "text": "Tripulación técnica: 90 kg por piloto | Tripulación de cabina: 80 kg por TCP",
         "is_correct": false
       }
     ],

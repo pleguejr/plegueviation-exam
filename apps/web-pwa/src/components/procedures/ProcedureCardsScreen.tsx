@@ -21,6 +21,7 @@ interface ProcedureCardsScreenProps {
 const STEP_TONES = ['sky', 'teal', 'amber', 'indigo', 'rose', 'emerald'] as const;
 
 export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBackToDashboard }) => {
+  const [selectedOperator, setSelectedOperator] = useState<'all' | 'binter' | 'blueteam' | 'netjets'>('all');
   const [selectedCategory, setSelectedCategory] = useState<'all' | 'briefings' | 'normal' | 'emergency' | 'special'>('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [expandedCardIds, setExpandedCardIds] = useState<Record<string, boolean>>(() => {
@@ -54,8 +55,22 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
 
   const collapseAll = () => setExpandedCardIds({});
 
+  const cardMatchesOperator = (card: ProcedureCard, op: 'all' | 'binter' | 'blueteam' | 'netjets') => {
+    if (op === 'all') return true;
+    const a = card.airplane.toLowerCase();
+    const b = card.badges.join(' ').toLowerCase();
+    if (op === 'binter') return a.includes('binter') || a.includes('e195') || b.includes('binter');
+    if (op === 'blueteam') return a.includes('blue team') || a.includes('c172') || a.includes('da40') || b.includes('blue team');
+    if (op === 'netjets') return a.includes('netjets') || b.includes('netjets');
+    return true;
+  };
+
+  const operatorFilteredCards = useMemo(() => {
+    return PROCEDURE_CARDS.filter((card) => cardMatchesOperator(card, selectedOperator));
+  }, [selectedOperator]);
+
   const filteredCards = useMemo(() => {
-    return PROCEDURE_CARDS.filter((card) => {
+    return operatorFilteredCards.filter((card) => {
       if (selectedCategory !== 'all' && card.category !== selectedCategory) return false;
       if (!searchQuery.trim()) return true;
       const query = searchQuery.toLowerCase();
@@ -64,6 +79,7 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
         card.subtitle.toLowerCase().includes(query) ||
         card.summary.toLowerCase().includes(query) ||
         card.manualRef.toLowerCase().includes(query) ||
+        card.airplane.toLowerCase().includes(query) ||
         card.badges.some((b) => b.toLowerCase().includes(query)) ||
         card.goldenRules?.some((r) => r.toLowerCase().includes(query)) ||
         card.memoryItems?.some((m) => m.toLowerCase().includes(query)) ||
@@ -79,15 +95,25 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
         )
       );
     });
-  }, [selectedCategory, searchQuery]);
+  }, [operatorFilteredCards, selectedCategory, searchQuery]);
 
   const counts = useMemo(
     () => ({
+      all: operatorFilteredCards.length,
+      briefings: operatorFilteredCards.filter((c) => c.category === 'briefings').length,
+      normal: operatorFilteredCards.filter((c) => c.category === 'normal').length,
+      special: operatorFilteredCards.filter((c) => c.category === 'special').length,
+      emergency: operatorFilteredCards.filter((c) => c.category === 'emergency').length
+    }),
+    [operatorFilteredCards]
+  );
+
+  const operatorCounts = useMemo(
+    () => ({
       all: PROCEDURE_CARDS.length,
-      briefings: PROCEDURE_CARDS.filter((c) => c.category === 'briefings').length,
-      normal: PROCEDURE_CARDS.filter((c) => c.category === 'normal').length,
-      special: PROCEDURE_CARDS.filter((c) => c.category === 'special').length,
-      emergency: PROCEDURE_CARDS.filter((c) => c.category === 'emergency').length
+      binter: PROCEDURE_CARDS.filter((c) => cardMatchesOperator(c, 'binter')).length,
+      blueteam: PROCEDURE_CARDS.filter((c) => cardMatchesOperator(c, 'blueteam')).length,
+      netjets: PROCEDURE_CARDS.filter((c) => cardMatchesOperator(c, 'netjets')).length
     }),
     []
   );
@@ -179,6 +205,34 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
             con hitos resaltados; consulta el PDF a bordo como referencia definitiva.
           </p>
         </div>
+      </div>
+
+      <div id="procedures-operator-tabs" className="flex flex-wrap items-center gap-2 pt-1 border-b border-slate-800/40 pb-3">
+        <span className="text-xs font-bold uppercase tracking-wider text-slate-400 mr-1 flex items-center gap-1.5">
+          <Compass className="w-3.5 h-3.5 text-cyan-400" />
+          Operador / Flota:
+        </span>
+        {(
+          [
+            ['all', 'Todos los Operadores', operatorCounts.all],
+            ['binter', 'Binter Canarias (E195-E2)', operatorCounts.binter],
+            ['blueteam', 'Blue Team (C172F / DA40D)', operatorCounts.blueteam],
+            ['netjets', 'NetJets Europe', operatorCounts.netjets]
+          ] as const
+        ).map(([id, label, count]) => (
+          <button
+            key={id}
+            type="button"
+            onClick={() => {
+              setSelectedOperator(id);
+              setSelectedCategory('all');
+            }}
+            className={`procedure-tab ${selectedOperator === id ? 'procedure-tab-active' : ''}`}
+          >
+            {label}
+            <span className="procedure-tab-count">{count}</span>
+          </button>
+        ))}
       </div>
 
       <div id="procedures-category-tabs" className="flex flex-col sm:flex-row gap-3 sm:items-center pt-1">

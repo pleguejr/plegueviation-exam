@@ -1874,7 +1874,7 @@
     "id": "CMD-EXAM-050",
     "subject_id": "cmd_flight_planning",
     "learning_objective": "MOA 8.1.7.2.5 Tabla 1A - Mínimos de Planificación para Alternativo con 2 o más Aproximaciones Tipo A en Ayudas Distintas",
-    "stem": "De acuerdo con el Plan Básico con Variaciones (Tabla 1A del MOA 8.1.7.2.5), para la selección de un aeródromo alternativo que dispone de DOS o más aproximaciones por instrumentos Tipo A basadas en ayudas de navegación distintas (ej. VOR y RNP), ¿cuáles son los incrementos de mínimos de planificación exigidos?",
+    "stem": "En la planificación de un vuelo acogido al Plan Básico con Variaciones (Tabla 1A del MOA 8.1.7.2.5), si el aeródromo alternativo dispone de DOS o más aproximaciones por instrumentos de Tipo A basadas en ayudas de navegación distintas, ¿qué incremento se debe sumar a los mínimos de operación para obtener los mínimos de planificación?",
     "options": [
       {
         "id": "A",
@@ -1883,22 +1883,22 @@
       },
       {
         "id": "B",
-        "text": "Techo: DA/MDA + 400 ft | Visibilidad/RVR: RVR/VIS + 1.500 m",
-        "is_correct": false
+        "text": "Techo: DA/MDA + 200 ft | Visibilidad/RVR: RVR/VIS + 1.000 m",
+        "is_correct": true
       },
       {
         "id": "C",
-        "text": "Techo: MDA/H + 400 ft | Visibilidad/RVR: VIS + 1.500 m",
+        "text": "Techo: DA/H + 200 ft | Visibilidad/RVR: RVR/VIS + 800 m",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Techo: DA/MDA + 200 ft | Visibilidad/RVR: RVR/VIS + 1.000 m",
-        "is_correct": true
+        "text": "Techo: MDA/H + 400 ft | Visibilidad/RVR: RVR/VIS + 1.500 m",
+        "is_correct": false
       }
     ],
     "explanation": {
-      "text": "De acuerdo con el **MOA 8.1.7.2.5 (Tabla 1A - Plan Básico con Variaciones)**, para 'Dos o más operaciones de aproximación por instrumentos del tipo A en uso, cada una de ellas basada en una ayuda de navegación distinta':\n- **Techo:** DA/H o MDA/H + 200 ft (el más alto de las aproximaciones en uso).\n- **RVR/VIS:** RVR/VIS + 1.000 m (el más alto de las aproximaciones en uso).\n\n*(Si hubiera una sola aproximación Tipo A disponible, o si se aplicase el Plan Básico de la Tabla 1B, los incrementos requeridos serían DA/MDA + 400 ft y RVR/VIS + 1.500 m)*.\n\n> 📖 **Extracto Literal del Manual — MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 Tabla 1A (Pág. 378):**\n> \"asignado, por lo que podría ser obsoleto. Por favor, verifique el gestor documental para asegurarse de que está usando la versión vigente. a) 3% del combustible del vuelo (trip fuel) o, en el caso de re-planificación en vuelo, 3% del combustible de vuelo (trip fuel) necesario para el resto del vuelo, siempre que se disponga de un aeropuerto alternativo en ruta (Fuel ERA) en las condiciones especificadas en MO(A) 8.1.7.2.5; o b) el combustible necesario para volar 5 minutos a la velocidad de h...\"\n\n![Recorte Oficial del Manual — MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 Tabla 1A](./manual-crops/command-upgrade/CMD-EXAM-050.png)",
+      "text": "De acuerdo con el **MOA 8.1.7.2.5 (Tabla 1A — Mínimos de planificación de aeródromo alternativo en el Plan Básico con Variaciones)**, cuando se dispone de **dos o más operaciones de aproximación por instrumentos de Tipo A**, cada una basada en una ayuda de navegación distinta, el incremento de planificación es **Techo: DA/MDA + 200 ft** (al más alto de la DA/H o MDA/H en uso) y **Visibilidad: RVR/VIS + 1.000 m** (al más alto de la RVR o VIS en uso).\n\n| Aproximaciones disponibles en el aeródromo | Techo de nubes (Tabla 1A: Básico con Variaciones) | RVR / VIS (Tabla 1A) | Tabla 1B (Sin Variaciones) |\n| :--- | :--- | :--- | :--- |\n| **2 o más Tipo B** a pistas separadas | **DA/H + 100 ft** | **RVR + 300 m** | DA/H + 200 ft / RVR + 800 m |\n| **1 Tipo B** | **DA/H + 150 ft** | **RVR + 450 m** | DA/H + 200 ft / RVR + 800 m |\n| **3D Tipo A** (incremento RVR ≤ 200 m y DH ≤ 200 ft) | **DA/H + 200 ft** | **RVR/VIS + 800 m** | MDA/H + 400 ft / RVR/VIS + 1.500 m |\n| **2 o más Tipo A** (cada una basada en ayuda distinta) | **DA/MDA + 200 ft*** | **RVR/VIS + 1.000 m**** | MDA/H + 400 ft / RVR/VIS + 1.500 m |\n| **1 Tipo A** | **MDA/H + 400 ft** | **RVR/VIS + 1.500 m** | MDA/H + 400 ft / RVR/VIS + 1.500 m |\n| **Circuito (Circling)** | **MDH + 400 ft** | **VIS + 1.500 m** | MDH + 400 ft / VIS + 1.500 m |\n\n*Nota \\* y \\*\\*: En 2 o más Tipo A en ayudas distintas, se suma al más alto de la DA/H o MDA/H en uso y al más alto de la RVR o VIS en uso.*",
       "references": [
         "MOA Binter ED06 RN27, Capítulo 8.1.7.2.5 Tabla 1A",
         "Examen Mando Binter FOR-ENT-006 (P50)"

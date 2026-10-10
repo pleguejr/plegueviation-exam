@@ -46,16 +46,11 @@ MANUAL_MAPPINGS = {
         "MEL EMB BA RN24.pdf",
         "DDPM-6130-100-REV TR7.1.PDF"
     ],
-    "fleet-c172n": [
-        "Cessna-172N-POH-1978.pdf",
-        "Analisis_maniobras_C172N.pdf",
-        "C-172N_mini.pdf"
-    ],
-    "fleet-p2010tdi": [
-        "AFM P2010 TDI - Ed.2 Rev.13.pdf",
-        "procedimientos_tecnam_p2010tdi.pdf",
-        "tecnam_p2010tdi_briefing_specs.pdf",
-        "G1000 NXi.pdf"
+    "fleet-c172f": [
+        "cessna-172F/OM+EC-NNX+++suplemento+motor.pdf",
+        "cessna-172F/NORMAL+VERTICAL+V6.pdf",
+        "cessna-172F/EMERGENCIAS+VERTICAL+V4.pdf",
+        "cessna-172F/STANDAR+OPERATIONAL+PROCEDURES+rev+04+signed.pdf"
     ],
     "netjets-interview": [
         "4E4220_2026-03-27_19.46.27_EAR-for-Air-Operations_0.pdf",

@@ -1494,5 +1494,371 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
       }
     ]
   }
+,
+// =========================================================================
+  // BLUE TEAM FLIGHT SCHOOL — SOPs OPERACIÓN NORMAL (C172F & DA40D)
+  // =========================================================================
+  {
+    id: 'card-bt-briefing-normal-ifr',
+    category: 'briefings',
+    title: 'Blue Team: Briefing Normal IFR y Briefing Visual Corto',
+    subtitle: 'Estructura formal para briefing instrumental extendido y briefing corto en visual (C172 / DA40)',
+    manualRef: 'Blue Team SOP Rev 04 Caps 6.8 & 6.9',
+    airplane: 'Blue Team Flight School (C172F / DA40D)',
+    badges: ['Blue Team', 'Briefing IFR', 'Briefing Corto VFR', 'SOP Rev 04'],
+    goldenRules: [
+      'El briefing debe ser breve, estructurado y claro; nunca rodando hacia la pista.',
+      'En IFR: repasar SID completa, altitudes mínimas (MSA), primer nivel asignado, frecuencias y radios 1 y 2.',
+      'En VFR Corto: pista en servicio, tipo de despegue, viento esperado, salida visual y altitud máxima.'
+    ],
+    summary: 'Procedimiento operativo de Blue Team Flight School para la realización de briefings de salida normalizados tanto en operativa instrumental extendida (IFR) como en operaciones visuales reducidas (VFR).',
+    diagramImage: './sop-diagrams/bt_sop_briefing_corto_c172.png',
+    diagramCaption: 'Blue Team SOP: Guía de Briefing Corto VFR y Normal IFR',
+    diagramNote: 'Briefing IFR Extendido · Briefing Corto VFR · Radios COM1/COM2 · MSA y Altitudes',
+    sections: [
+      {
+        title: '1. Normal Briefing Extendido (IFR) — Estructura',
+        color: 'sky',
+        items: [
+          { role: 'STEP', action: 'Meteorología y NOTAMs:', details: 'Revisión de METAR/TAF de salida, destino y alternativos; NOTAMs activos y estado de la aeronave.' },
+          { role: 'STEP', action: 'Rodaje y Pista:', details: 'Ruta de rodaje autorizada, puntos calientes (hot spots), pista en servicio y punto de espera para run-up.' },
+          { role: 'STEP', action: 'Salida Instrumental (SID):', details: 'Nombre de la SID, ruta inicial, primer fix, restricciones de velocidad y altitud, altitud de transición y nivel inicial.' },
+          { role: 'STEP', action: 'Frecuencias de Radio y Radionavegación:', details: 'COM1 en Torre/Salidas; COM2 en emergencia/tierra; NAV1/NAV2 sintonizados e identificados con rumbos y radiales.' }
+        ]
+      },
+      {
+        title: '2. Briefing Corto VFR (C172F / DA40D)',
+        color: 'emerald',
+        items: [
+          { role: 'STEP', action: 'Pista y Tipo de Despegue:', details: 'Pista en uso, longitud disponible, despegue normal, campo corto o campo blando.' },
+          { role: 'STEP', action: 'Viento y Corrección:', details: 'Componente de viento en cara y cruzado; aplicación de alerones al viento en la carrera inicial.' },
+          { role: 'STEP', action: 'Salida Visual:', details: 'Rumbo de salida, altitud de incorporación al circuito o abandono hacia puntos visuales (W/E en TFS, N en TFN).' },
+          { role: 'ALERT', action: 'Esterilidad en Cabina:', details: 'Cabina estéril estricta desde encendido y rodaje hasta 1.000 ft AGL; cero distracciones hasta 3.000 ft AGL.' }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'card-bt-briefing-emg-takeoff',
+    category: 'briefings',
+    title: 'Blue Team: Briefing de Despegue y 4 Escenarios de Fallo Monomotor',
+    subtitle: 'Protocolo mandatorio de emergencia en despegue y toma de decisiones según altura sobre el terreno',
+    manualRef: 'Blue Team SOP Rev 04 Cap 6.10',
+    airplane: 'Blue Team Flight School (C172F / DA40D)',
+    badges: ['Blue Team', 'Take-off Emergency', '4 Escenarios', 'Fallo Motor'],
+    goldenRules: [
+      'Escenario 1 (en pista): Cortar gases inmediatamente, mantener eje con timón, frenar según sea necesario y notificar despegue abortado.',
+      'Escenario 2 (en aire con pista remanente): Gases a IDLE, BAJAR MORRO (mínimo 60 kt), flap as required, aterrizar y comunicar.',
+      'Escenario 3 (<1000 ft AGL sin pista): Morro abajo para 65 kt (sin flap) / 60 kt (con flap), aterrizar ±30°-45° del morro, contra el viento. ¡PROHIBIDO virar a pista!',
+      'Escenario 4 (>1000 ft AGL sin pista): Morro abajo para 65 kt (C172) / 73 kt (DA40), viraje 180° hacia la pista SIEMPRE contra el viento.'
+    ],
+    summary: 'Briefing verbal obligatorio que debe realizarse antes de cada despegue, repasando las acciones inmediatas ante parada de motor en pista, en el aire con pista remanente, a menos de 1.000 ft AGL y por encima de 1.000 ft AGL.',
+    diagramImage: './sop-diagrams/bt_sop_briefing_emg_single_engine.png',
+    diagramCaption: 'Blue Team SOP: Briefing de Emergencia Monomotor y 4 Escenarios',
+    diagramNote: 'Pista remanente · <1000 ft AGL (±30-45°) · >1000 ft AGL (Viraje 180° al viento) · Mando de instructor en real',
+    sections: [
+      {
+        title: '1. Caso 1 y Caso 2: Pista Disponible',
+        color: 'rose',
+        items: [
+          { role: 'STEP', action: 'Caso 1 — Fallo durante la carrera en pista:', details: 'Cortar gases inmediatamente a IDLE, mantener control direccional con pedales, aplicar frenos firmes según necesidad, notificar a ATC despegue abortado y ejecutar Checklist de Emergencia.' },
+          { role: 'STEP', action: 'Caso 2 — Fallo en el aire con pista remanente:', details: 'Cortar gases a IDLE, BAJAR EL MORRO de inmediato (mantener velocidad mínima 60 kt), configurar flaps según necesidad para detener la aeronave dentro de la pista, aterrizar, avisar a ATC y ejecutar Checklist.' }
+        ]
+      },
+      {
+        title: '2. Caso 3 y Caso 4: Sin Pista Remanente',
+        color: 'amber',
+        items: [
+          { role: 'ALERT', action: 'Caso 3 — Fallo sin pista a MENOS de 1.000 ft AGL:', details: '¡NUNCA INTENTAR VOLVER A LA PISTA! Bajar morro de inmediato para velocidad de mejor planeo (65 kt sin flaps, 60 kt con flaps en C172; 73 kt en DA40). Seleccionar aterrizaje forzoso dentro de un cono de ±30° a 45° con respecto al morro, preferiblemente viento en cara. Declarar MAYDAY si el tiempo lo permite y asegurar corte de combustible/eléctrico antes del impacto.' },
+          { role: 'STEP', action: 'Caso 4 — Fallo sin pista a MÁS de 1.000 ft AGL:', details: 'Bajar morro buscando mejor planeo (65 kt C172 / 73 kt DA40). Realizar viraje coordinado de 180° hacia la pista de despegue SIEMPRE virando en contra del viento. Comunicar MAYDAY a ATC, configurar para aterrizaje forzoso en pista o calle de rodaje y aplicar checklist.' },
+          { role: 'NOTE', action: 'Mando en Emergencia Real:', details: 'Durante una emergencia real, el Instructor de Vuelo (PIC) asume inmediatamente los mandos (“I have controls”).' }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'card-bt-despegue-luces-camara-accion',
+    category: 'normal',
+    title: 'Blue Team: Despegue, «Luces, Cámara y Acción» y Flujo 500 ft AGL',
+    subtitle: 'Mnemónico de entrada en pista, callouts de despegue y transición After Take-off a 500 ft',
+    manualRef: 'Blue Team SOP Rev 04 Cap 6.11',
+    airplane: 'Blue Team Flight School (C172F / DA40D)',
+    badges: ['Blue Team', 'Luces Cámara Acción', 'Take-off Flow', 'Flujo 500 ft'],
+    goldenRules: [
+      'Al recibir autorización para entrar en pista: ejecutar de memoria «Luces, Cámara y Acción».',
+      'Pies abajo talones al suelo para evitar frenar involuntariamente al aplicar potencia.',
+      'Comprobación mandatoria: 40 kt («Anemómetro vivo»), 55 kt («Instrumentos de motor en verde»), 60 kt («Rotate»).',
+      'A 500 ft AGL: Flap 0°, BAJAR MORRO para Vy (75 kt C172 / 66 kt DA40), reducir potencia a 92% aprox, Fuel Pump OFF, Landing Light OFF.'
+    ],
+    summary: 'Procedimiento normalizado paso a paso para la alineación en pista («Luces, Cámara y Acción»), aceleración, callouts verbales de cabina y reconfiguración del avión al cruzar 500 ft AGL.',
+    diagramImage: './sop-diagrams/bt_sop_takeoff_luces_camara_accion.png',
+    diagramCaption: 'Blue Team SOP: Flujo de Despegue, Callouts y Mnemónico',
+    diagramNote: 'Luces · Cámara · Acción · Callouts 40/55/60 kt · Transición y Flujo 500 ft AGL',
+    sections: [
+      {
+        title: '1. Entrada en Pista: Mnemónico «Luces, Cámara, Acción»',
+        color: 'sky',
+        items: [
+          { role: 'STEP', action: 'LUCES:', details: 'Taxi Light OFF, Landing Light ON (y luces estroboscópicas activadas).' },
+          { role: 'STEP', action: 'CÁMARA:', details: 'Transpondedor verificado y ajustado en modo ALT con código asignado por ATC.' },
+          { role: 'STEP', action: 'ACCIÓN:', details: 'Fuel Pump ON (o chequeada), sector de aproximación final y pista completamente libres de tráfico.' }
+        ]
+      },
+      {
+        title: '2. Carrera de Despegue y Callouts Verbales',
+        color: 'emerald',
+        items: [
+          { role: 'STEP', action: 'Alineación y Pies:', details: 'Pies abajo con talones apoyados en el suelo para no presionar frenos de punta. Comprobar concordancia: "RWY Heading [XXX]".' },
+          { role: 'STEP', action: 'Potencia al Máximo:', details: 'Aplicar potencia al 100% de forma progresiva. Comprobar al menos 94% de carga y 2.240 RPM. Cantar en voz alta: "Take-off power set".' },
+          { role: 'STEP', action: 'Callout 40 KIAS:', callout: '"Airspeed alive"', details: 'Comprobar que la aguja del anemómetro se mueve y marca velocidad fiable.' },
+          { role: 'STEP', action: 'Callout 55 KIAS:', callout: '"Instrumentos de motor en verde"', details: 'Comprobar presiones, temperaturas y parámetros FADEC/CED en arco verde.' },
+          { role: 'STEP', action: 'Rotación:', callout: '"Rotate"', details: 'Al alcanzar Vr (60 kt C172 / 59 kt DA40), levantar suavemente la rueda de morro para adoptar actitud de Vx (65 kt C172 / 66 kt DA40).' }
+        ]
+      },
+      {
+        title: '3. Transición After Take-off al cruzar 500 ft AGL',
+        color: 'indigo',
+        items: [
+          { role: 'STEP', action: 'Flaps a 0° (Up):', details: 'Retraer flap si se utilizó despegue con flap (C172 Flap 10° o DA40 Flap T/O).' },
+          { role: 'STEP', action: 'Actitud de Morro y Potencia:', details: 'BAJAR MORRO para adoptar velocidad Vy (75 kt C172 / 66 kt DA40) y reducir potencia a régimen de ascenso (92% aprox).' },
+          { role: 'STEP', action: 'Sistemas:', details: 'Electric Fuel Pump OFF, Landing Light OFF.' },
+          { role: 'STEP', action: 'After Take-off Checklist:', details: 'Ejecutar After Take-off Checklist por lectura cuando la carga de trabajo lo permita.' }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'card-bt-crucero-freda',
+    category: 'normal',
+    title: 'Blue Team: Régimen de Crucero y Chequeo Periódico FREDA',
+    subtitle: 'Gestión de potencia (45%–55%), velocidades y regla nemotécnica FREDA cada 20 minutos',
+    manualRef: 'Blue Team SOP Rev 04 Cap 6.13',
+    airplane: 'Blue Team Flight School (C172F / DA40D)',
+    badges: ['Blue Team', 'Crucero', 'FREDA', 'Gestión Motor'],
+    goldenRules: [
+      'Potencia normal en crucero: ajustar entre un 45% y un 55% de carga.',
+      'C172 velocidades: Crucero bajo 80 KIAS, crucero medio 90 KIAS, crucero alto 100 KIAS.',
+      'Ejecutar el chequeo nemotécnico FREDA periódicamente cada 20 minutos de vuelo nivelado.',
+      'Discrepancia altimétrica en chequeo cruzado (Cross-check) no debe superar los 50 ft.'
+    ],
+    summary: 'Procedimiento de crucero para el monitoreo sistemático de la aeronave mediante el chequeo nemotécnico FREDA (Fuel, Radio, Engine, Directional, Altitude), asegurando el equilibrio de combustible y navegación precisa.',
+    diagramImage: './sop-diagrams/bt_sop_cruise_freda.png',
+    diagramCaption: 'Blue Team SOP: Mnemónico FREDA y Chequeos en Vuelo de Crucero',
+    diagramNote: 'Fuel · Radio · Engine · Directional · Altitude cada 20 minutos',
+    sections: [
+      {
+        title: '1. Desglose del Mnemónico FREDA',
+        color: 'sky',
+        items: [
+          { role: 'STEP', action: 'F — FUEL (Combustible):', details: 'Verificar cantidad restante en cada depósito, comprobar equilibrio entre tanques (en C172 selector BOTH; en DA40 trasvase según proceda), estado de la bomba eléctrica de combustible y consumo estimado.' },
+          { role: 'STEP', action: 'R — RADIO (Comunicaciones y Radionavegación):', details: 'Ajustar frecuencias activas y en espera, comprobar volumen y selector de audio; sintonizar e identificar ayudas a la navegación (VOR/DME).' },
+          { role: 'STEP', action: 'E — ENGINE (Parámetros de Motor):', details: 'Monitorear instrumentos en arco verde: presión y temperatura de aceite, temperatura de refrigerante (coolant), temperatura de caja reductora (gearbox) y carga eléctrica del alternador/batería.' },
+          { role: 'STEP', action: 'D — DIRECTIONAL (Girodireccional / Rumbos):', details: 'Nivelar planos perfectamente en vuelo recto y calar el girodireccional comparándolo con el rumbo indicado por la brújula magnética actual.' },
+          { role: 'STEP', action: 'A — ALTITUDE (Altimetría y Nivel):', details: 'Comprobar calaje altimétrico más reciente (QNH de la estación más cercana o 1013.25 QNE si se vuela en nivel de vuelo). Realizar cross-check entre altímetros primario y secundario (máxima discrepancia permitida 50 ft).' }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'card-bt-aproximacion-estabilizada',
+    category: 'normal',
+    title: 'Blue Team: Criterios de Aproximación Estabilizada y Técnicas de Viento',
+    subtitle: 'Ventana de estabilización (1.000 ft IMC / 500 ft VMC), técnica Sideslip vs De-crab y viento cruzado',
+    manualRef: 'Blue Team SOP Rev 04 Caps 4 & 6.16',
+    airplane: 'Blue Team Flight School (C172F / DA40D)',
+    badges: ['Blue Team', 'Aproximación Estabilizada', 'Sideslip', 'De-crab', 'Viento Cruzado'],
+    goldenRules: [
+      'Estabilización obligatoria: a 1.000 ft AGL en IMC y a 500 ft AGL en VMC.',
+      'Criterios de velocidad: estrictamente entre Vref -5 kt y Vref +10 kt.',
+      'Régimen de descenso no mayor a 1.000 ft/min. Planos nivelados y sin virajes por debajo de 300 ft AGL en visual.',
+      'Técnicas de viento cruzado: Sideslip preferente en plano alto (C172); De-crab preferente en plano bajo (DA40).',
+      'Desestabilización por debajo de la altura mínima: ¡Go-Around INMEDIATO y MANDATORIO!'
+    ],
+    summary: 'Estándar operacional para aproximaciones estabilizadas según Blue Team SOP, incluyendo límites de velocidad y descenso, política de frustrada obligatoria y diferenciación de técnicas de corrección de deriva según la arquitectura alar.',
+    diagramImage: './sop-diagrams/bt_sop_stabilized_approach.png',
+    diagramCaption: 'Blue Team SOP: Criterios de Aproximación Estabilizada y Ventana 1000/500 ft',
+    diagramNote: '1000 ft IMC / 500 ft VMC · Vref -5/+10 kt · Max 1000 ft/min · No virajes <300 ft AGL',
+    sections: [
+      {
+        title: '1. Requisitos Mandatorios de Estabilización',
+        color: 'rose',
+        items: [
+          { role: 'ALERT', action: 'Altura de Estabilización:', details: '1.000 ft AGL en condiciones meteorológicas instrumentales (IMC) / 500 ft AGL en condiciones meteorológicas visuales (VMC).' },
+          { role: 'STEP', action: 'Velocidad y Configuración:', details: 'Velocidad entre Vref -5 kt y Vref +10 kt; flaps y tren (si aplica) en configuración final de aterrizaje; lista Before Landing completada.' },
+          { role: 'STEP', action: 'Régimen y Trayectoria:', details: 'Régimen de descenso máximo 1.000 ft/min; desviaciones en aproximación instrumental no superiores a 1 punto de localizador y senda de planeo.' },
+          { role: 'ALERT', action: 'Aproximaciones Visuales:', details: 'Alas niveladas alineadas con el eje de pista antes de 300 ft AGL; prohibido realizar virajes por debajo de 300 ft AGL.' },
+          { role: 'ALERT', action: 'Política de Go-Around:', details: 'Si en cualquier punto por debajo de 1.000 ft AGL el vuelo deja de estar estabilizado, la frustrada es MANDATORIA.' }
+        ]
+      },
+      {
+        title: '2. Técnicas de Aterrizaje con Viento Cruzado',
+        color: 'amber',
+        items: [
+          { role: 'STEP', action: 'Técnica Sideslip (Resbale de ala baja):', details: 'Técnica preferente para aviones de plano alto (C172F). Se baja el plano hacia el viento para compensar la deriva y se aplica timón contrario para mantener el morro alineado con el eje de la pista. Nota: En C172 no se permite resbale con flap 40°.' },
+          { role: 'STEP', action: 'Técnica De-crab (Alineación en la recogida):', details: 'Técnica preferente para aviones de plano bajo (DA40D) para evitar el riesgo de impacto de punta de plano contra la pista. Se mantiene el ángulo de corrección de deriva en final y, justo antes de la toma (en la recogida/flare), se aplica pedal para alinear el morro con la pista mientras se mantiene el avión nivelado.' }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'card-bt-go-around',
+    category: 'normal',
+    title: 'Blue Team: Maniobra de Motor y al Aire «POTENCIA, MORRO Y FLAP»',
+    subtitle: 'Secuencia de memoria para frustrada normal y escape ante aproximación no estabilizada o rebote',
+    manualRef: 'Blue Team SOP Rev 04 Cap 6.17',
+    airplane: 'Blue Team Flight School (C172F / DA40D)',
+    badges: ['Blue Team', 'Go-Around', 'Potencia Morro Flap', 'Maniobra Normal'],
+    goldenRules: [
+      'El Go-Around es una maniobra normal que nunca requiere justificación.',
+      'Secuencia de memoria inalterable: POTENCIA, MORRO y FLAP.',
+      'Potencia: Full power compensando con pie derecho el par motor.',
+      'Morro: Actitud de cabeceo para velocidad de mejor ángulo de ascenso Vx (65 kt).',
+      'Flap: Retraer inicialmente solo UN punto (si flap 30° -> flap 20°; al confirmar ascenso positivo -> flap 10°).'
+    ],
+    summary: 'Procedimiento de frustrada normalizado por Blue Team Flight School. Destaca su carácter seguro y no sancionador ante cualquier situación de duda, pista ocupada, aproximación inestable o rebote en la toma.',
+    diagramImage: './sop-diagrams/bt_sop_go_around.png',
+    diagramCaption: 'Blue Team SOP: Secuencia de Go-Around (Potencia, Morro y Flap)',
+    diagramNote: 'Potencia al Máximo · Actitud Morro Vx 65 kt · Retracción escalonada de Flaps',
+    sections: [
+      {
+        title: '1. Secuencia de Memoria «POTENCIA, MORRO y FLAP»',
+        color: 'rose',
+        items: [
+          { role: 'PF', action: '1. POTENCIA:', callout: '"GO-AROUND / MOTOR Y AL AIRE"', details: 'Aplicar potencia al máximo (100% / full power) de forma decidida. Pisar pedal derecho con firmeza para compensar el par motor y mantener rigurosamente el rumbo de pista.' },
+          { role: 'PF', action: '2. MORRO:', details: 'Ajustar la actitud de cabeceo para buscar y mantener velocidad Vx (65 kt C172 / 66 kt DA40) y asegurar ascenso positivo.' },
+          { role: 'PF', action: '3. FLAP (Retracción escalonada):', details: 'Según POH, subir únicamente UN punto de flap inicialmente (si estábamos con flap 30°, subir a flap 20°). Una vez confirmado régimen de ascenso positivo en el variómetro, retraer a flap 10°. A partir de este momento se continúa el ascenso como un despegue normal con flap 10°.' },
+          { role: 'NOTE', action: 'Caso sin flaps previos:', details: 'Si durante el Go-Around no teníamos flaps seleccionados (aterrizaje sin flaps), ¡NO se seleccionan flaps 10°! Se ejecuta la maniobra limpia a velocidad Vx.' },
+          { role: 'STEP', action: 'Aterrizaje con Rebote (Bounce Landing):', details: 'Si se produce un rebote en la recogida, no forzar la toma: ejecutar de inmediato la maniobra de Go-Around (POTENCIA, MORRO Y FLAP).' }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'card-bt-maniobras-vfr-perdidas',
+    category: 'normal',
+    title: 'Blue Team: Maniobras Avanzadas VFR, Pérdidas y Vuelo Lento',
+    subtitle: 'Requisitos de zona (3.000 ft AGL / barrido), 5 tipos de pérdidas y recuperación estándar',
+    manualRef: 'Blue Team SOP Rev 04 Cap 9.9',
+    airplane: 'Blue Team Flight School (C172F / DA40D)',
+    badges: ['Blue Team', 'Pérdidas', 'Vuelo Lento', 'Maniobras VFR', 'SOP 9.9'],
+    goldenRules: [
+      '3 Requisitos previos mandatorios: Altitud mínima 3.000 ft AGL, virajes de barrido y Fuel Pump ON.',
+      'Recuperación de cualquier pérdida: altura final nunca inferior a 1.500 ft AGL.',
+      'Secuencia de recuperación: morro abajo aliviando presión -> planos nivelados por debajo del horizonte -> potencia suave.',
+      'En pérdida con motor / viraje: centrar la bola estrictamente con pedal, jamás con alerones.',
+      'En vuelo lento: volar a Vref para la configuración sin caer por debajo ni perder altitud.'
+    ],
+    summary: 'Guía detallada de entrenamiento de maniobras visuales avanzadas de Blue Team, cubriendo la preparación de cabina en zona de maniobras, los cinco perfiles de pérdidas reglamentarios y el ejercicio de vuelo lento.',
+    diagramImage: './sop-diagrams/bt_sop_stalls_maneuvers.png',
+    diagramCaption: 'Blue Team SOP: Maniobras de Pérdida, Vuelo Lento y Requisitos de Zona',
+    diagramNote: 'Altitud 3000 ft AGL · Virajes de barrido · Recuperación >1500 ft AGL · Morro, Planos, Potencia',
+    sections: [
+      {
+        title: '1. Requisitos Previos al Ingreso en Zona de Maniobras',
+        color: 'sky',
+        items: [
+          { role: 'STEP', action: '1. Altitud de Seguridad:', details: 'Nunca realizar maniobras por debajo de 3.000 ft AGL. Chequear altitud antes de cada maniobra.' },
+          { role: 'STEP', action: '2. Virajes de Barrido (Clearing Turns):', details: 'Realizar dos virajes de 90° o uno de 180° para verificar visualmente la ausencia de tráficos antes de iniciar el ejercicio.' },
+          { role: 'STEP', action: '3. Bomba Eléctrica (Fuel Pump):', details: 'Electric Fuel Pump ON durante todas las maniobras de pérdidas.' }
+        ]
+      },
+      {
+        title: '2. Cinco Tipos de Pérdidas Entrenadas',
+        color: 'rose',
+        items: [
+          { role: 'STEP', action: '1. Pérdida sin motor (Power-off stall):', details: 'Gases a IDLE, mantener altitud subiendo morro, alas niveladas. Al sonar avisador: reducir cabeceo aliviando presión del mando, por debajo del horizonte nivelar planos y aplicar potencia solo tras nivelar.' },
+          { role: 'STEP', action: '2. Pérdida con motor (Power-on stall):', details: 'Potencia 20%, a 65 kt subir morro a 15° Nose Up, bola centrada con pedal. Al sonar la pérdida: morro abajo y gases a IDLE (para contrarrestar par motor); bajo el horizonte nivelar planos y meter potencia suavemente.' },
+          { role: 'STEP', action: '3. Pérdida en viraje (Turning stall):', details: 'Potencia 20%, 15° cabeceo y 20° de alabeo. Al sonar avisador: morro abajo sin importar el alabeo; al estar por debajo del horizonte nivelar planos y aplicar potencia.' },
+          { role: 'STEP', action: '4. Pérdida característica en recogida (Flare / Landing stall):', details: 'Simula pérdida durante la recogida en pista imaginaria a 3.500 ft AGL (límite inferior 3.000 ft AGL). Al sonar avisador: FULL POWER, mantener altitud y rumbo, y al llegar a 60 kt ejecutar Go-Around estándar.' },
+          { role: 'STEP', action: '5. Pérdida acelerada / Virajes escarpados:', details: 'Reconocimiento de entrada en pérdida por incremento del factor de carga (g) a alta velocidad en virajes de gran inclinación.' }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'card-bt-operativa-bases-gcts-gcxo',
+    category: 'special',
+    title: 'Blue Team: Procedimientos Locales Tenerife Sur (GCTS) y Norte (GCXO)',
+    subtitle: 'Circuito visual GCTS, abandono a 500 ft mar, Zona Norte GCXO (3 NM costa), F22 Anaga y Hot Spots',
+    manualRef: 'Blue Team SOP Rev 04 Cap 7 (7.6 & 7.7)',
+    airplane: 'Blue Team Flight School (C172F / DA40D)',
+    badges: ['Blue Team', 'GCTS', 'GCXO', 'Procedimientos Locales', 'Tenerife'],
+    goldenRules: [
+      'TFS (GCTS): Abandono de circuito de tráfico a 500 ft sobre el mar bordeando la costa hacia punto W o E.',
+      'TFS llegada: En final de pista 07 cruzar umbral a altitud AIP; prever turbulencia por vientos de ladera.',
+      'TFN (GCXO): Zona Norte delimitada desde Punto N hasta el Este del Parque Rural de Anaga, con separación mínima de 3 NM de la costa.',
+      'TFN F22 Anaga: Respeto estricto del pasillo visual de salida/entrada F22 y vigilancia de Hot Spots en calles de rodaje.'
+    ],
+    summary: 'Instrucciones locales de operación para las bases de entrenamiento de Blue Team en el archipiélago canario: circuito de tráfico costero en Tenerife Sur y sectores de maniobra sobre el mar en Tenerife Norte.',
+    diagramImage: './sop-diagrams/bt_sop_gcts_circuit.png',
+    diagramCaption: 'Blue Team SOP: Procedimientos de Base Tenerife Sur (GCTS) y Tráfico Visual',
+    diagramNote: 'Salida costera a 500 ft sobre el mar · Puntos visuales W/E · Zonas GCXO Anaga',
+    sections: [
+      {
+        title: '1. Tenerife Sur (GCTS) — Operativa Local',
+        color: 'sky',
+        items: [
+          { role: 'STEP', action: 'Salida y Abandono:', details: 'Seguir rigurosamente el AIP. En TFS siempre se abandona el circuito de tráfico descendiendo/manteniendo 500 ft sobre el mar bordeando la línea de costa hacia los puntos W o E para no interferir con las sendas IFR comerciales.' },
+          { role: 'STEP', action: 'Circuito de Tráfico:', details: 'Tráfico visual VFR estándar al sur del campo sobre el mar. Reportes obligatorios en viento en cola, base y final.' }
+        ]
+      },
+      {
+        title: '2. Tenerife Norte (GCXO) — Zonas de Maniobra y Hot Spots',
+        color: 'emerald',
+        items: [
+          { role: 'STEP', action: 'Delimitación de la Zona Norte:', details: 'Desde el punto visual N hasta el extremo este del Parque Rural de Anaga. Se establece obligatoriamente una zona de separación de al menos 3 NM mar adentro respecto a la línea de costa para seguridad orográfica y atenuación de ruidos.' },
+          { role: 'STEP', action: 'Pasillo F22 y Parque de Anaga:', details: 'Cumplimiento exhaustivo de altitudes y puntos de notificación en el pasillo visual F22. Especial atención a la meteorología cambiante del norte de Tenerife (mar de nubes y vientos del noreste).' },
+          { role: 'ALERT', action: 'Hot Spots en Rodaje:', details: 'Verificar minuciosamente el plano de aeródromo de GCXO en intersecciones conflictivas entre calles de rodaje y accesos a pista activa.' }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'card-bt-callouts-estandar',
+    category: 'normal',
+    title: 'Blue Team: Callouts Oficiales de Cabina y Parámetros Operacionales',
+    subtitle: 'Fraseología estándar de cabina obligatoria en voz alta durante todas las fases de vuelo',
+    manualRef: 'Blue Team SOP Rev 04 Cap 11',
+    airplane: 'Blue Team Flight School (C172F / DA40D)',
+    badges: ['Blue Team', 'Callouts', 'Cockpit Communication', 'SOP 11'],
+    goldenRules: [
+      'Los callouts se dicen alto y claro ante procedimientos críticos o cambios de parámetros.',
+      'Prevuelo y rodaje: «Clear prop», «Left side clear / Right side clear».',
+      'Despegue: «RWY Heading [XXX]», «Take-off power set», «Airspeed alive» (40 kt), «Engine instruments on green» (55 kt), «Rotate» (60 kt).',
+      'Ascenso e IFR: «Positive rate», «500 ft», «One thousand to level off», «Transition level / Standard set».',
+      'Aproximación: «Localizer alive / Glideslope alive», «Flaps T/O / Flaps LDG», «Stable».'
+    ],
+    summary: 'Compendio de llamadas estándar de cabina de Blue Team Flight School diseñadas para promover la disciplina operativa de un solo piloto y la conciencia situacional compartida con el instructor.',
+    diagramImage: './sop-diagrams/bt_sop_callouts_table_1.png',
+    diagramCaption: 'Blue Team SOP: Tabla de Callouts Estandarizados de Cabina',
+    diagramNote: 'Puesta en marcha · Rodaje · Despegue · Ascenso · Aproximación y Frustrada',
+    sections: [
+      {
+        title: '1. Prevuelo, Rodaje y Despegue',
+        color: 'sky',
+        items: [
+          { role: 'STEP', action: 'Antes de puesta en marcha:', callout: '"Clear prop"' },
+          { role: 'STEP', action: 'En rodaje antes de virajes e intersecciones:', callout: '"Left side clear, Right side clear"' },
+          { role: 'STEP', action: 'Listas de chequeo:', callout: '"[Name] checklist" / "[Name] checklist completed"' },
+          { role: 'STEP', action: 'Alineación en pista:', callout: '"Runway heading [XXX]"' },
+          { role: 'STEP', action: 'Al aplicar potencia de despegue:', callout: '"Take off power set"' },
+          { role: 'STEP', action: 'Al alcanzar 40 KIAS:', callout: '"Airspeed alive"' },
+          { role: 'STEP', action: 'Al alcanzar 55 KIAS:', callout: '"Engine instruments on green"' },
+          { role: 'STEP', action: 'Al alcanzar Vr (60 kt C172 / 59 kt DA40):', callout: '"Rotate"' }
+        ]
+      },
+      {
+        title: '2. Ascenso, Crucero y Aproximación',
+        color: 'emerald',
+        items: [
+          { role: 'STEP', action: 'Confirmación de ascenso positivo:', callout: '"Positive rate"' },
+          { role: 'STEP', action: 'Al cruzar 500 ft AGL en ascenso:', callout: '"500 ft"' },
+          { role: 'STEP', action: 'A 1.000 ft de la altitud o nivel asignado:', callout: '"One thousand to level off"' },
+          { role: 'STEP', action: 'Paso por nivel / altitud de transición:', callout: '"Transition level, Standard set" / "Transition altitude, QNH [XXXX] set"' },
+          { role: 'STEP', action: 'Captura de guiado instrumental:', callout: '"Localizer alive" / "Glideslope alive" / "Approaching final track"' },
+          { role: 'STEP', action: 'Selección y confirmación de flaps:', callout: '"Flaps T/O" / "Flaps LDG"' }
+        ]
+      }
+    ]
+  }
 ];
-

@@ -105,10 +105,8 @@ export const AuditModificationsPanel: React.FC<AuditModificationsPanelProps> = (
         return 'NetJets / EASA';
       case 'operational-tables':
         return 'Tablas Operativas';
-      case 'p2010':
-        return 'Tecnam P2010';
-      case 'c172n':
-        return 'Cessna 172N';
+      case 'c172f':
+        return 'Cessna 172F';
       default:
         return 'General';
     }
@@ -217,8 +215,7 @@ export const AuditModificationsPanel: React.FC<AuditModificationsPanelProps> = (
                     <option value="fleet-e195e2">Flota Embraer 195-E2</option>
                     <option value="netjets">NetJets & EASA Air Ops</option>
                     <option value="operational-tables">Tablas Operativas (SOP & Minima)</option>
-                    <option value="p2010">Tecnam P2010 TDI</option>
-                    <option value="c172n">Cessna 172N</option>
+                    <option value="c172f">Cessna 172F (TAE 125)</option>
                     <option value="general">General / App</option>
                   </select>
                 </div>

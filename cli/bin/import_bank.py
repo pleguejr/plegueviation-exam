@@ -58,21 +58,20 @@ SUBJECT_DIR_MAP = {
     "e195e2_ddpm": "banks/fleet-e195e2/ddpm",
     "e195e2_mel": "banks/fleet-e195e2/mel",
 
-    # Cessna 172N
-    "c172n_limitations": "banks/fleet-c172n/limitaciones",
-    "c172n": "banks/fleet-c172n/limitaciones",
-    "c172n_normal": "banks/fleet-c172n/operacion-normal",
-    "c172n_emergency": "banks/fleet-c172n/emergencias",
-    "c172n_memory": "banks/fleet-c172n/memory-items",
-    "c172n_systems": "banks/fleet-c172n/sistemas-aeronave",
+    # Cessna 172F (TAE 125 / EC-NNX)
+    "c172f_limitations": "banks/fleet-c172f/limitaciones",
+    "c172f": "banks/fleet-c172f/limitaciones",
+    "c172f_normal": "banks/fleet-c172f/operacion-normal",
+    "c172f_emergency": "banks/fleet-c172f/emergencias",
+    "c172f_memory": "banks/fleet-c172f/memory-items",
+    "c172f_systems": "banks/fleet-c172f/sistemas-aeronave",
 
-    # Tecnam P2010 TDI
-    "p2010_limitations": "banks/fleet-p2010tdi/limitaciones",
-    "p2010_tdi": "banks/fleet-p2010tdi/limitaciones",
-    "p2010_normal": "banks/fleet-p2010tdi/operacion-normal",
-    "p2010_emergency": "banks/fleet-p2010tdi/emergencias",
-    "p2010_memory": "banks/fleet-p2010tdi/memory-items",
-    "p2010_systems": "banks/fleet-p2010tdi/sistemas-aeronave",
+    # Diamond DA40 TDI (EC-OKC)
+    "da40d_limitations": "banks/fleet-da40d/limitaciones",
+    "da40d": "banks/fleet-da40d/limitaciones",
+    "da40d_normal": "banks/fleet-da40d/operacion-normal",
+    "da40d_emergency": "banks/fleet-da40d/emergencias",
+    "da40d_systems": "banks/fleet-da40d/sistemas-aeronave",
 
     # Normativa EASA & SERA
     "reg_sera": "banks/regulations-easa-sera/reglas-del-aire-sera",

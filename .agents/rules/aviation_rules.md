@@ -8,8 +8,7 @@ When generating or editing aviation questions, flight manuals, operations checkl
 - **MEL Binter (RN24)**: `C:\Users\plegu\My Drive\My drive\BINTER\BA tripulantes EMB\Manuales del operador\MEL EMB BA RN24.pdf`
 - **AOM Embraer E2 (Rev.11)**: `C:\Users\plegu\My Drive\My drive\BINTER\BA tripulantes EMB\Manuales fabricante Embraer\AOM-5875-174-REV11-FULL 11.2.pdf`
 - **SOPM Embraer E2 (Rev.14)**: `C:\Users\plegu\My Drive\My drive\BINTER\BA tripulantes EMB\Manuales fabricante Embraer\SOPM-1755-200-REV14-FULL_1760451613050.PDF`
-- **Tecnam P2010 TDI (Ed.2 Rev.13 & G1000)**: `C:\Users\plegu\My Drive\My drive\ATPL(A)\type ratings\Tecnam\`
-- **Cessna 172N Skyhawk (POH 1978-1980 & Supl)**: `C:\Users\plegu\My Drive\My drive\ATPL(A)\type ratings\cessna 172\`
+- **Reims/Cessna F172F (EC-NNX — Owner's Manual 1965, Suplemento POH TAE 125, Checklists V6/V4 y SOP Blue Team Rev 04)**: `manuales/cessna-172F/`
 
 ---
 
@@ -32,18 +31,12 @@ When generating or editing aviation questions, flight manuals, operations checkl
 
 ---
 
-## 3. Velocidades de la Tecnam P2010 TDI (Continental CD-170)
-* $V_{NE} = 163\text{ KIAS}$, $V_{NO} = 130\text{ KIAS}$, $V_A = 119\text{ KIAS}$, $V_{FE}\text{ (T/O)} = 100\text{ KIAS}$, $V_{FE}\text{ (LAND)} = 90\text{ KIAS}$.
-* $V_{SO} = 52\text{ KIAS}$, $V_{S1} = 58\text{ KIAS}$, $V_R = 60\text{ KIAS}$, $V_X = 65/72\text{ KIAS}$, $V_Y = 75/82\text{ KIAS}$.
-* **Planeo ($V_{GLIDE}$)**: **`84 KIAS`** (Flap 0° / Clean, ratio 1:12).
-* **Aproximación final**: Flap LAND = `65 KIAS`, Flap T/O = `70 KIAS`, No-Flap = `75 KIAS`.
-
----
-
-## 4. Velocidades de la Cessna 172N Skyhawk (Lycoming O-320-H2AD)
-* $V_{NE} = 160\text{ KIAS}$, $V_{NO} = 128\text{ KIAS}$, $V_A = 97\text{ KIAS}$, $V_{FE} = 85\text{ KIAS}$, $V_{SO} = 40\text{ KIAS}$, $V_{S1} = 47\text{ KIAS}$.
-* $V_R = 55\text{ KIAS}$, $V_X = 59\text{ KIAS}$, $V_Y = 73\text{ KIAS}$, $V_{GLIDE} = 65\text{ KIAS}$.
-* **Aproximación final**: Flaps 40° = `60-70 KIAS`, Short Field = `61 KIAS`.
+## 3. Velocidades y Límites de la Reims/Cessna F172F (TAE 125 / EC-NNX)
+* **Anemómetro**: $V_{NE} = 174\text{ MPH (151 KCAS)}$, $V_{NO} = 140\text{ MPH (122 KCAS)}$, $V_A = 106\text{ KTS (122 MPH)}$, $V_{FE}\text{ (10°)} = 110\text{ KIAS}$, $V_{FE}\text{ (10°-40°)} = 85\text{ KIAS (100 MPH)}$.
+* **Pérdida (MTOM 2300 lb, 0° bank)**: Flap UP = `49 KIAS`, Flap 10° = `45 KIAS`, Flap 40° = `43 KIAS` (con 60° bank: `70 / 64 / 60 KIAS`).
+* **Despegue y Ascenso**: $V_R = 60\text{ KIAS (Flap 10°)} / 65\text{ KIAS (Flap 0°)}$ (Short Field: lift-off `44 KIAS`, ascenso `50/58 KIAS`), $V_X = 60/65\text{ KIAS}$, $V_Y = 75\text{ KIAS}$, Normal Climb = `75–85 KIAS`.
+* **Aproximación ($V_{\text{REF}}$) y Planeo**: Flap 0°–10° = `70 KIAS`, Flap 20°–30° = `65 KIAS`, Flap 40° = `60 KIAS`; Mejor Planeo ($V_{\text{GLIDE}}$) = `65 KIAS (Flaps UP) / 60 KIAS (Flaps DOWN)`.
+* **Motor TAE 125**: `99 kW (135 HP) @ 2300 RPM`, caja reductora $i = 1,69$, techo certificado `17.500 ft`, rearranque en vuelo `65–85 KIAS` (máx `100 KIAS`, $\le 13.000\text{ ft}$), Backup Battery FADEC `30 min` (solo A-FADEC; prohibido activar Force B sin batería/alternador principal).
 
 ---
 

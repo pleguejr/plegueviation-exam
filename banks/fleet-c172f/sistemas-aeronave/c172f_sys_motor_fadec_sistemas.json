@@ -1,0 +1,597 @@
+[
+  {
+    "id": "C172F-SYS-001",
+    "subject_id": "c172f_systems",
+    "learning_objective": "POH Supplement Sección 1 - Arquitectura y Cilindrada de los Motores TAE 125-01 y TAE 125-02-99",
+    "stem": "¿Cuál es la arquitectura constructiva del motor Technify TAE 125 instalado en la Reims/Cessna F172F (EC-NNX) y cuál es la diferencia de cilindrada entre las versiones TAE 125-01 (Centurion 1.7) y TAE 125-02-99 (Centurion 2.0)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Motor diésel de 4 cilindros en línea, 4 tiempos, DOHC, refrigerado por líquido, con inyección directa common-rail y turbocompresor; cilindrada de 1689 cm³ en el TAE 125-01 y de 1991 cm³ en el TAE 125-02-99",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Motor diésel de 6 cilindros bóxer opuestos, 2 tiempos, refrigerado por aire, con inyección mecánica indirecta; cilindrada de 2400 cm³ en el TAE 125-01 y de 2800 cm³ en el TAE 125-02-99",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Motor de gasolina de 4 cilindros opuestos Lycoming O-320 modificado para queroseno con encendido por magnetos; cilindrada de 320 pulgadas cúbicas en ambas versiones",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Motor diésel de 3 cilindros en V, refrigerado por aceite sin radiador de agua y de aspiración atmosférica; cilindrada de 1400 cm³ en el TAE 125-01 y de 1600 cm³ en el TAE 125-02-99",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 1 (*Engine*, página 1-2) del Suplemento POH, tanto el **TAE 125-01** como el **TAE 125-02-99** son motores diésel de **4 cilindros en línea, 4 tiempos, doble árbol de levas en cabeza (DOHC)**, refrigerados por líquido, con **inyección directa common-rail**, **turbocompresor con intercooler**, controlados por **FADEC** y con caja reductora integrada ($i = 1,69$).\n\n| Característica Técnica | TAE 125-01 (Centurion 1.7) | TAE 125-02-99 (Centurion 2.0) |\n| :--- | :--- | :--- |\n| **Cilindrada (Displacement)** | **$1689\\text{ cm}^3$** | **$1991\\text{ cm}^3$** |\n| **Diámetro $\\times$ Carrera** | $79,0\\text{ mm} \\times 86,4\\text{ mm}$ | $83,0\\text{ mm} \\times 92,0\\text{ mm}$ |\n| **Relación de Compresión** | $19 : 1$ | $18 : 1$ |\n| **Potencia Máxima Despegue / Continua** | **99 kW (135 HP) @ 2300 RPM** | **99 kW (135 HP) @ 2300 RPM** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Engine (Page 1-2):**\n> \"Liquid-cooled in-line 4-stroke 4-cylinder DOHC engine with direct Diesel injection (common-rail technology) and turbocharging, controlled by a FADEC, with integrated reduction gearbox (i=1.69). Displacement: TAE 125-01: 1689 ccm | TAE 125-02-99: 1991 ccm.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 1 Engine & Propeller](./manual-crops/fleet-c172f/supp_p45_engine_prop.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Engine (Page 1-2)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-SYS-002",
+    "subject_id": "c172f_systems",
+    "learning_objective": "POH Supplement Sección 1 - Caja Reductora (Gearbox) y Relación de Reducción i = 1.69",
+    "stem": "¿Qué funciones desempeñan la caja reductora integrada (Reduction Gearbox) y su circuito de lubricación en el motor TAE 125 de la Reims/Cessna F172F?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Multiplica las RPM del cigüeñal por 1,69 para que la hélice gire a 3887 RPM y comparte el mismo aceite del cárter del motor sin visor propio",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Reduce el giro con relación 1,69:1 (3887 a 2300 RPM), amortigua vibraciones, libera sobrecargas y alimenta el gobernador con su propio aceite",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Permite seleccionar en vuelo dos relaciones de cambio mediante el botón FADEC Reset y refrigera las palas de la hélice con agua y glicol",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Conecta directamente el cigüeñal a la hélice con relación 1:1 y utiliza líquido hidráulico de frenos para accionar los flaps eléctricos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Sección 1 (páginas 1-2 y 1-3) del Suplemento POH, la caja reductora (**Reduction Gearbox**) integrada en el frontal del motor TAE 125:\n1. Reduce la velocidad de giro del cigüeñal en una relación **$i = 1,69$** (cuando el cigüeñal gira a **3887 RPM**, el eje de la hélice gira a **2300 RPM**).\n2. Cuenta con un **amortiguador mecánico de vibraciones torsionales (mechanical vibration dampening)** y un embrague de **liberación por sobrecarga (overload release)** en caso de impacto de hélice.\n3. Dispone de su **propio circuito de aceite independiente** (comprobado por mirilla en pre-vuelo), cuya bomba suministra además la presión de aceite que utiliza el **gobernador electrohidráulico para regular el paso de la hélice**.\n\n| Parámetro de la Caja Reductora | Especificación Oficial |\n| :--- | :--- |\n| **Relación de Reducción ($i$)** | **$1,69 : 1$** ($3887\\text{ RPM motor} \\rightarrow 2300\\text{ RPM hélice}$) |\n| **Protecciones Mecánicas** | Amortiguación torsional y desacoplamiento por sobrecarga |\n| **Circuito de Aceite Propio** | Lubrica engranajes y suministra presión al gobernador de hélice |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Engine & Propeller (Page 1-2 & 1-3):**\n> \"Integrated reduction gearbox (i=1.69) with mechanical vibration dampening and overload release... The propeller pitch control is operated hydraulically by the gearbox oil circuit.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 1 Engine & Propeller](./manual-crops/fleet-c172f/supp_p45_engine_prop.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Engine & Propeller (Page 1-2 & 1-3)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "C172F-SYS-003",
+    "subject_id": "c172f_systems",
+    "learning_objective": "POH Supplement Sección 1 - Sistema de Inyección Common-Rail y Modo de Emergencia de la Válvula Reguladora",
+    "stem": "En el sistema de inyección directa common-rail del motor TAE 125, ¿qué ocurre si falla eléctricamente la válvula de control de presión del conducto común (Rail Pressure Control Valve)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "La presión en el conducto común cae instantáneamente a 0 bar y el motor se detiene sin posibilidad de rearranque en vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "La presión aumenta sin control hasta dañar los inyectores salvo que el piloto apague de inmediato la bomba eléctrica auxiliar",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Una función mecánica de emergencia mantiene presión fija en el rail permitiendo al motor seguir operando con potencia reducida",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "El combustible pasa a inyectarse directamente en el colector de escape para mantener girando la turbina del turbocompresor",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 1 (*Engine — Fuel Injection System*, página 1-2) del Suplemento POH, la presión dentro del acumulador de alta presión (*common-rail*) es regulada electrónicamente por el FADEC a través de la **válvula de control de presión del rail (Rail Pressure Control Valve)**. En caso de fallo eléctrico de dicha válvula o de su sensor, el sistema incorpora una **función mecánica de emergencia (emergency / limp-home function)** que mantiene una presión fija de seguridad en el rail, permitiendo que el motor **continúe operando con potencia reducida** hasta el aterrizaje.\n\n| Estado de la Válvula del Common-Rail | Comportamiento del Motor TAE 125 |\n| :--- | :--- |\n| **Operación Normal** | El FADEC modula la presión del rail según la demanda de carga |\n| **Fallo de la Válvula Reguladora** | **Modo de emergencia mecánico:** mantiene presión fija con **potencia reducida** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Engine (Page 1-2):**\n> \"In case of a failure of the rail pressure control valve, an emergency function ensures that the engine continues to run at reduced power.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 1 Engine & Propeller](./manual-crops/fleet-c172f/supp_p45_engine_prop.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Engine (Page 1-2)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "C172F-SYS-004",
+    "subject_id": "c172f_systems",
+    "learning_objective": "POH Supplement Sección 1 - Mecanismo de Cambio de Paso de la Hélice MT-Propeller MTV-6-A",
+    "stem": "¿Cómo funciona el mecanismo de cambio de paso de la hélice tripala de velocidad constante MT-Propeller MTV-6-A instalada en la Reims/Cessna F172F (TAE 125), y hacia qué posición se desplazan las palas si se pierde la presión de aceite de la caja reductora?",
+    "options": [
+      {
+        "id": "A",
+        "text": "La presión de aceite del gobernador lleva las palas hacia paso fino y los contrapesos las llevan a posición de abanderamiento al perder presión",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Un servomotor eléctrico de 14 V alojado en el buje ajusta el ángulo de las palas sin intervención hidráulica ni contrapesos centrífugos",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El piloto regula manualmente el ángulo de las palas mediante una palanca azul independiente situada a la derecha de la palanca de gases",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La presión de aceite de la reductora aumenta el paso (altas cargas/bajas RPM), y el muelle/contrapesos llevan las palas a paso fino si cae la presión",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Sección 1 (*Propeller*, página 1-3) del Suplemento POH:\n- La hélice **MT-Propeller MTV-6-A** es una hélice tripala de madera compuesta (*wood-composite*) de velocidad constante controlada automáticamente por el **FADEC** (mediante una única palanca de potencia *Single-Lever Control*, sin palanca de paso en cabina).\n- La **presión de aceite de la caja reductora** actúa sobre el pistón del buje para llevar las palas hacia **paso grueso (high pitch / bajas RPM)**.\n- En sentido opuesto, un **muelle interno y los contrapesos centrífugos** empujan las palas hacia **paso fino (low pitch / altas RPM)**. Por ello, ante una pérdida de presión de aceite en la caja reductora, la hélice tiende al **paso fino (riesgo de sobrerrégimen / overspeed si se vuela a alta velocidad)**.\n\n| Fuerza Actuante en el Buje MTV-6-A | Sentido de Movimiento de las Palas |\n| :--- | :--- |\n| **Presión de Aceite de la Caja Reductora** | Hacia **Paso Grueso (High Pitch)** $\\rightarrow$ Disminuye las RPM |\n| **Muelle + Contrapesos Centrífugos** | Hacia **Paso Fino (Low Pitch)** $\\rightarrow$ Aumenta las RPM |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Propeller (Page 1-3):**\n> \"Oil pressure increases the propeller pitch (high pitch / low RPM). Counterweights and a spring force the blades towards low pitch (high RPM) in case of oil pressure loss.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 1 Engine & Propeller](./manual-crops/fleet-c172f/supp_p45_engine_prop.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Propeller (Page 1-3)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "C172F-SYS-005",
+    "subject_id": "c172f_systems",
+    "learning_objective": "POH Supplement Sección 1 - Sistema de Refrigeración y Rangos del Termostato",
+    "stem": "El sistema de refrigeración por líquido del motor TAE 125 consta de un circuito pequeño (con el intercambiador de la calefacción de cabina) y un circuito grande (con el radiador principal). ¿A qué temperaturas del refrigerante abre el termostato el paso hacia el circuito grande?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A < 84°C opera solo el circuito pequeño; entre 84°C y 94°C operan ambos circuitos; a > 94°C circula todo por el circuito grande (radiador)",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "A < 50°C opera solo el circuito pequeño; entre 50°C y 60°C operan ambos circuitos; a > 60°C circula todo por el circuito grande (radiador)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Por debajo de 100°C circula únicamente por el circuito pequeño y solo abre el paso al radiador cuando se supera el límite ámbar de 105°C",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "La apertura del termostato es controlada manualmente por el piloto desde la cabina mediante la posición del tirador Cabin Heat",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 1 (*Cooling System*, página 1-14) del Suplemento POH, la válvula termostática regula el flujo de la mezcla 50:50 de agua y anticongelante (punto de congelación $-36^\\circ\\text{C}$) en tres etapas térmicas:\n1. **Temperatura $< 84^\\circ\\text{C}$:** el refrigerante circula exclusivamente por el **circuito pequeño** (motor e intercambiador de calefacción de cabina) para acelerar el calentamiento.\n2. **Temperatura entre $84^\\circ\\text{C}$ y $94^\\circ\\text{C}$:** el termostato abre progresivamente, circulando por **ambos circuitos (pequeño y grande)**.\n3. **Temperatura $> 94^\\circ\\text{C}$:** todo el caudal pasa a través del **circuito grande (radiador principal)** para máxima disipación térmica.\n\n| Temperatura del Refrigerante (CT) | Circuito Activo según Termostato |\n| :--- | :--- |\n| **$< 84^\\circ\\text{C}$** | **Solo Circuito Pequeño** (calentamiento rápido + calefacción cabina) |\n| **$84^\\circ\\text{C}$ a $94^\\circ\\text{C}$** | **Circuito Mixto** (pequeño + radiador principal) |\n| **$> 94^\\circ\\text{C}$** | **Circuito Grande completo** (100% por radiador principal) |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Cooling System (Page 1-14):**\n> \"Below 84°C only the small cooling circuit is active. Between 84°C and 94°C both cooling circuits are active. Above 94°C only the large cooling circuit (with the radiator) is active.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 1 FADEC Reset & Cooling](./manual-crops/fleet-c172f/supp_p58_fadec_reset_glow.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Cooling System (Page 1-14)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "C172F-SYS-006",
+    "subject_id": "c172f_systems",
+    "learning_objective": "POH Supplement Sección 1 - Parámetros Presentados en el CED-125 vs AED-125",
+    "stem": "En el panel de instrumentos de la Reims/Cessna F172F (EC-NNX), ¿qué parámetros se visualizan en el instrumento principal CED-125 (Compact Engine Display) y cuáles en el instrumento auxiliar AED-125 (Auxiliary Engine Display)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "CED-125: velocidad indicada, altitud, horizonte artificial y rumbo magnético; AED-125: presión de admisión en pulgadas Hg y temperatura de escape EGT",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "CED-125: RPM, Load %, presión/temp. aceite, temp. refrigerante y caja reductora; AED-125: flujo/temp. combustible, voltaje, amperios y luz Water Level",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "CED-125: flujo de combustible, nivel de los tanques L/R y voltaje de batería; AED-125: RPM del cigüeñal, presión del common-rail y temp. del turbo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "CED-125: únicamente el tacómetro digital y el porcentaje de carga del motor; AED-125: todas las presiones y temperaturas de aceite y refrigerante",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Sección 1 (*Engine Instruments*, páginas 1-5 y 1-6) y la Sección 2 (páginas 2-3 y 2-4, Figuras 2-1 y 2-1a) del Suplemento POH, la monitorización del motor se divide en dos unidades digitales con barras LED:\n\n| Instrumento Digital | Parámetros Monitorizados |\n| :--- | :--- |\n| **CED-125 (Compact Engine Display)** | 1. **Propeller RPM** ($\\text{min}^{-1}$)<br>2. **Engine Load** (%)<br>3. **Oil Pressure** (bar / psi)<br>4. **Coolant Temperature — CT** ($^\\circ\\text{C}$)<br>5. **Oil Temperature — OT** ($^\\circ\\text{C}$)<br>6. **Gearbox Temperature — GT** ($^\\circ\\text{C}$) |\n| **AED-125 (Auxiliary Engine Display)** | 1. **Fuel Flow** (L/h o gal/h)<br>2. **Fuel Temperature Left & Right** ($^\\circ\\text{C}$)<br>3. **Voltage** (V)<br>4. **Alternator Current / Ammeter** (A)<br>5. **Luz amarilla \"Water Level\"** (bajo nivel de refrigerante) |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1 (Page 1-5 & 1-6) & Section 2 (Page 2-4):**\n> \"The Compact Engine Display CED-125 indicates: Propeller RPM, Load, Oil pressure, Coolant temperature, Oil temperature, Gearbox temperature. The Auxiliary Engine Display AED-125 indicates: Fuel flow, Fuel temperature (left & right), Voltage, Current (Ammeter) and the yellow 'Water Level' warning light.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 1 Instrument Panel](./manual-crops/fleet-c172f/supp_p48_panel_ced_aed.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Engine Instruments (Page 1-5 & 1-6)",
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 2: Figure 2-1 & 2-1a (Page 2-4)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-SYS-007",
+    "subject_id": "c172f_systems",
+    "learning_objective": "POH Supplement Sección 1 - Autotest de Encendido y Indicación de Fallo de Sensor en CED-125 / AED-125",
+    "stem": "¿Cómo indican los instrumentos digitales CED-125 y AED-125 que uno de los sensores de motor ha fallado o proporciona una señal fuera de rango?",
+    "options": [
+      {
+        "id": "A",
+        "text": "La pantalla completa se apaga automáticamente y suena una alarma acústica continua en el panel de audio de cabina",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Todos los indicadores pasan a mostrar el valor fijo de 999 en color verde brillante durante el resto del vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En la barra afectada se iluminan simultáneamente el LED rojo superior y el LED rojo inferior (fallo de sensor)",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Se ilumina la luz ámbar Glow de forma permanente hasta que el piloto pulsa el botón de prueba FADEC Test",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 1 (*Engine Instruments — Sensor Failure*, página 1-6) del Suplemento POH, cuando el CED-125 o el AED-125 detectan un defecto en un sensor o en su cableado:\n- En la columna de barras correspondiente a ese parámetro **se iluminan simultáneamente el LED rojo superior y el LED rojo inferior** (y en las pantallas numéricas parpadea el punto decimal o se apaga la barra intermedia), alertando claramente de un fallo de indicación/sensor y no de un valor físico real.\n\n| Estado en Barra LED del CED-125 / AED-125 | Significado Técnico |\n| :--- | :--- |\n| **Al Conectar Battery ON** | Autotest inicial (todas las luces LED y segmentos se iluminan brevemente) |\n| **LED Rojo Superior + LED Rojo Inferior encendidos a la vez** | **Fallo de Sensor (Sensor Failure / fuera de rango eléctrico)** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Engine Instruments (Page 1-6):**\n> \"Sensor failure: If a sensor fails, both the upper and the lower red LEDs of the respective bar graph illuminate simultaneously.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 1 Instrument Panel](./manual-crops/fleet-c172f/supp_p48_panel_ced_aed.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Engine Instruments (Page 1-6)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "C172F-SYS-008",
+    "subject_id": "c172f_systems",
+    "learning_objective": "POH Supplement Sección 1 - Lógica de Control de Un Solo Mando (Single-Lever Control) y Sensores de Posición",
+    "stem": "En la Reims/Cessna F172F con motor TAE 125, el piloto controla tanto la potencia como el régimen de hélice con una única palanca (Thrust Lever). ¿Cómo transmite esta palanca la demanda del piloto al FADEC?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mediante un cable mecánico conectado a la mariposa del carburador y otro cable conectado a las dos magnetos del motor",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Mediante una tubería neumática conectada al tubo pitot que varía la presión de combustible según la velocidad indicada",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mediante un enlace inalámbrico con el instrumento CED-125, el cual envía señales analógicas hacia el motor de arranque",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mediante un doble potenciómetro leído por los canales A-FADEC y B-FADEC, que regulan inyección, turbo y RPM de hélice",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "De acuerdo con la Sección 1 (*Engine & FADEC*, páginas 1-2 y 1-12) del Suplemento POH, la Reims/Cessna F172F con motor TAE 125 carece de mandos de mezcla y de paso de hélice en cabina:\n- La palanca única de potencia (**Thrust Lever**) está conectada mecánicamente a un **sensor doble de valor de pedal/gases (dual throttle position sensor / potentiometer)**.\n- Cada canal del FADEC (**A-FADEC y B-FADEC**) lee de forma independiente la posición de la palanca (de 0% a 100% Load) y regula automáticamente la presión del *common-rail*, el tiempo de inyección, la presión de sobrealimentación del turbocompresor (*wastegate*) y el gobernador hidráulico de la hélice.\n\n| Elemento del Sistema Single-Lever (TAE 125) | Función |\n| :--- | :--- |\n| **Thrust Lever (Palanca Única)** | Comanda simultáneamente el porcentaje de **Carga (Load %)** y las **RPM de hélice** |\n| **Dual Potentiometer Sensor** | Envía señal eléctrica redundante a **A-FADEC** y **B-FADEC** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Engine (Page 1-2):**\n> \"Engine power and propeller speed are controlled together by one thrust lever (single-lever control) via the FADEC.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 1 Engine & Propeller](./manual-crops/fleet-c172f/supp_p45_engine_prop.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Engine & FADEC (Page 1-2 & 1-12)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-SYS-009",
+    "subject_id": "c172f_systems",
+    "learning_objective": "Owner's Manual Sección I - Sistema de Flaps Eléctricos «Para-Lift» (0° a 40°)",
+    "stem": "Según la Sección I (Description — Flight Controls and Flaps) del Owner's Manual de la Cessna 172F (1965), ¿cómo se accionan los flaps de tipo «Para-Lift» y cuál es su rango de extensión?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mediante un motor eléctrico accionado por un interruptor en el panel (de 0° a 40°) junto a un indicador de posición de flaps",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Mediante una palanca mecánica de trinquete situada en el suelo entre ambos asientos, con posiciones fijas de 10°, 20° y 30°",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Mediante un actuador hidráulico alimentado por la presión de aceite de la caja reductora con posiciones únicas de 0° y 40°",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Mediante resortes aerodinámicos que extienden automáticamente los flaps cuando la velocidad baja del arco blanco (85 KIAS)",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "El modelo **1965 Cessna 172F** fue el primero en introducir el accionamiento **eléctrico** de los grandes flaps ranurados **\"Para-Lift\"** de **0° a 40°** (Sección I, página 1-3 del Owner's Manual). En la C172F original, el interruptor de flaps en el panel central es de tipo momentáneo (*UP / DOWN*) sin preselector de muescas: el piloto mantiene presionado el interruptor observando el **indicador de posición de flaps (0°, 10°, 20°, 30°, 40°)** y lo suelta al alcanzar el ángulo deseado.\n\n| Característica Flaps Cessna 172F | Especificación del Owner's Manual (Pág. 1-3) |\n| :--- | :--- |\n| **Tipo de Flaps** | **Single-slot \"Para-Lift\" Flaps** |\n| **Rango de Deflexión** | **$0^\\circ$ a $40^\\circ$** |\n| **Accionamiento** | **Motor eléctrico** (protegido por disyuntor de 15 A) |\n\n> 📖 **Extracto Literal del Manual — 1965 Cessna Model 172F Owner's Manual - Section I: Description (Page 1-3):**\n> \"Large 'Para-Lift' flaps, electrically operated from 0° to 40°, supply the high lift for short-field take-offs and steep approaches... To extend or retract the wing flaps, hold the flap switch in the 'DOWN' or 'UP' position until the desired flap setting is registered on the flap position indicator.\"\n\n![Recorte Oficial del Manual — Cessna 172F Flight Controls & Flaps](./manual-crops/fleet-c172f/om_p07_controls_flaps.png)",
+      "references": [
+        "1965 Cessna Model 172F Owner's Manual - Section I: Description - Flight Controls and Flaps (Page 1-3)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-SYS-010",
+    "subject_id": "c172f_systems",
+    "learning_objective": "POH Supplement Sección 1 - Componentes del Circuito de Baja y Alta Presión de Combustible",
+    "stem": "En el esquema del sistema de combustible de la Reims/Cessna F172F con motor TAE 125 (Figura 1-3 del Suplemento POH), ¿qué recorrido sigue el combustible desde los depósitos de las alas hasta los inyectores?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tanques L/R -> Bomba de alta presión en los planos -> Carburador de flotador -> Válvula selectora -> Colector de admisión -> Válvulas de cilindros",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Tanques L/R -> Selector -> Separador de agua -> Bomba eléctrica -> Filtro con purga -> Bomba mecánica -> Bomba alta presión -> Rail -> Inyectores",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Tanque izquierdo exclusivamente -> Bomba eléctrica auxiliar -> Radiador de refrigerante -> Gobernador de hélice -> Inyectores del common-rail",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Tanques L/R -> Filtro de aire de admisión -> Compresor del turbo -> Válvula selectora de cabina -> Depósito acumulador de la batería del FADEC",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según las Figuras 1-2 y 1-3 (páginas 1-7 a 1-9) de la Sección 1 del Suplemento POH, el circuito de combustible de la Reims/Cessna F172F comprende:\n1. **Depósitos de ala izquierdo y derecho** (con sensores de nivel y sensores de bajo nivel $< 10\\text{ L}$).\n2. **Válvula selectora de combustible** (*Left, Right, Both, Off*).\n3. **Colador / separador de agua (Fuel Strainer / Water Separator)** con drenaje rápido.\n4. **Bomba eléctrica auxiliar de combustible (Electric Fuel Booster Pump)**.\n5. **Filtro de combustible con válvula de purga automática (Fuel Filter with Bleeding Valve)**.\n6. **Bomba mecánica de baja presión (Mechanical Feed Pump)** y **Bomba de alta presión (High-Pressure Pump)** que presuriza el **Common-Rail** y los **4 inyectores piezoeléctricos/solenoide**, retornando el sobrante al **tanque izquierdo**.\n\n| Etapa del Circuito de Combustible | Componente Clave |\n| :--- | :--- |\n| **Filtrado Previo y Bombeo Auxiliar** | Válvula Selectora $\\rightarrow$ Separador de Agua $\\rightarrow$ **Bomba Eléctrica Auxiliar** |\n| **Alimentación en el Motor** | Filtro Fino $\\rightarrow$ Bomba Mecánica $\\rightarrow$ **Bomba Alta Presión** $\\rightarrow$ **Common-Rail** |\n| **Línea de Retorno** | Retorno desde bomba/rail/inyectores hacia el **Tanque Izquierdo** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Figure 1-3 (Page 1-8 & 1-9):**\n> \"Fuel System Schematic: Fuel Tank Left/Right -> Fuel Selector Valve -> Water Separator (Drain) -> Electric Fuel Pump -> Fuel Filter with Bleeding Valve -> Mechanical Feed Pump -> High Pressure Pump -> Rail -> Injectors -> Return line to Left Fuel Tank.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 1 Fuel System](./manual-crops/fleet-c172f/supp_p52_fuel_system.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Fuel System - Figure 1-3 (Page 1-8 & 1-9)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "C172F-SYS-011",
+    "subject_id": "c172f_systems",
+    "learning_objective": "POH Supplement Sección 1 - Arquitectura del Sistema Eléctrico de 14 V y Relés de Alimentación FADEC",
+    "stem": "¿Cuál es la tensión nominal del sistema eléctrico de la Reims/Cessna F172F (EC-NNX) equipada con el motor TAE 125 y cómo se recarga la batería de reserva del FADEC durante el vuelo normal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sistema de 28 V DC con dos alternadores de 100 A; la batería de reserva del FADEC solo puede recargarse desmontándola en el taller de mantenimiento",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Sistema de corriente alterna trifásica de 115 V; la batería de reserva del FADEC solo recibe carga cuando el piloto mantiene pulsado el botón FADEC Reset",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Sistema de 14 V DC (batería de 12 V y alternador de 14 V / 60 A); la batería de reserva del FADEC se recarga automáticamente en vuelo desde la barra principal",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Sistema de 14 V DC alimentado por una dinamo de 15 A; la batería de reserva del FADEC es una batería primaria de litio no recargable de un solo uso",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 1 (*Electrical System*, páginas 1-10 a 1-12, Figuras 1-4a/1-4b) y la Sección 2 (página 2-3) del Suplemento POH:\n- La aeronave cuenta con un sistema eléctrico de **14 V DC** (rango verde de voltaje **12,6 – 14 V**, alimentado por una batería principal de 12 V y un **alternador de 14 V / 60 A**).\n- La **batería de reserva del FADEC (FADEC Backup Battery)** de 12 V se mantiene cargada automáticamente desde la red principal durante el funcionamiento normal del alternador y conmuta sin interrupción para alimentar al **A-FADEC** si cae la tensión de la barra principal.\n\n| Componente Eléctrico (C172F TAE 125) | Especificación |\n| :--- | :--- |\n| **Tensión Nominal del Sistema** | **14 V DC** (Verde en AED-125: **12,6 – 14,0 V**) |\n| **Capacidad del Alternador** | **60 A** (Verde: $0 - 52,4\\text{ A}$, Ámbar: $52,5 - 60\\text{ A}$) |\n| **FADEC Backup Battery** | Recarga automática en vuelo; respalda al **A-FADEC por 30 min** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Electrical System (Page 1-10):**\n> \"The airplane is equipped with a 14 V DC electrical system powered by an engine-driven alternator and the main battery. An additional backup battery is installed to ensure power supply to the A-FADEC in case of a failure of the alternator and the main battery.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 1 Electrical System](./manual-crops/fleet-c172f/supp_p54_electrical_fadec.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Electrical System (Page 1-10 to 1-12)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-SYS-012",
+    "subject_id": "c172f_systems",
+    "learning_objective": "POH Supplement Sección 1 - Función del Interruptor «Engine Master»",
+    "stem": "¿Qué circuitos controla exactamente el interruptor «Engine Master» en la cabina de la Reims/Cessna F172F equipada con motor TAE 125?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pone a masa los circuitos primarios de las magnetos izquierda y derecha para interrumpir la chispa en las bujías al apagar el motor",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Cierra mecánicamente mediante un cable la válvula selectora de combustible de las alas y bloquea el freno de estacionamiento",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Conecta exclusivamente la barra de radios y navegación (Avionics Bus) sin intervenir en el funcionamiento ni parada del motor",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Conecta y desconecta la alimentación eléctrica de ambos canales del FADEC (A y B) y del sistema Glow, activando o cortando la inyección",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "En el motor diésel **TAE 125** (de encendido por compresión, **sin magnetos**), el interruptor **\"Engine Master\"** (provisto de bloqueo de seguridad contra accionamiento involuntario) controla la energía hacia las unidades electrónicas **A-FADEC y B-FADEC** (tanto desde la barra principal como desde la batería de reserva del FADEC) y hacia la unidad de control de incandescencia (**Glow Control Unit**). Al pasar el **Engine Master a OFF**, el FADEC interrumpe inmediatamente la inyección en el *common-rail* y el motor se detiene.\n\n| Posición del Interruptor Engine Master | Efecto sobre el Motor TAE 125 |\n| :--- | :--- |\n| **ON** | Energiza los canales **A-FADEC y B-FADEC** e inicia el ciclo **Glow** si el motor está frío |\n| **OFF** | Corta la inyección electrónica y desconecta el FADEC (incluyendo la Backup Battery) |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Electrical System (Page 1-10 & 1-11):**\n> \"The 'Engine Master' switch connects both FADEC channels (A and B) to the electrical power supply (main battery/alternator and FADEC backup battery) and activates the glow system. Switching the 'Engine Master' to OFF shuts down the engine.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 1 Electrical System](./manual-crops/fleet-c172f/supp_p54_electrical_fadec.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Electrical System (Page 1-10 & 1-11)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172F-SYS-013",
+    "subject_id": "c172f_systems",
+    "learning_objective": "Owner's Manual Sección I & VI - Tren de Aterrizaje Triciclo «Land-O-Matic» y Dirección de Rueda de Morro",
+    "stem": "¿Cómo está construido el tren de aterrizaje principal y de morro de la Cessna 172F y qué ángulos de giro permite la rueda de morro mediante los pedales de dirección y el frenado diferencial?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tren principal de acero elástico tipo ballesta y pata de morro óleo-neumática; gira ~10° a cada lado con pedales y hasta 30° con frenado diferencial",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Tren retráctil electrohidráulico en las tres patas; la rueda de morro gira libremente (free-castering) sin conexión mecánica a los pedales del timón",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Tren principal de amortiguadores de goma y rueda de cola orientable hasta 90° mediante cables conectados directamente al volante de alerones",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Tren principal rígido sin amortiguación y rueda de morro dirigible hasta 45° exclusivamente mediante una palanca hidráulica manual en el pedestal",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "En la **Cessna 172F**, el tren de aterrizaje triciclo fijo **\"Land-O-Matic\"** consta de:\n- **Tren principal:** patas de acero cromovanadio de ballesta elástica (*spring steel struts*) con frenos de disco hidráulicos accionados por la parte superior de los pedales.\n- **Pata de morro:** amortiguador óleo-neumático (*air-oil shock strut*, extensión normal de 2 in / 5 cm) dirigible directamente mediante los pedales del timón de dirección hasta **~10° a cada lado**, pudiendo pivotar hasta **30° a cada lado** con ayuda de frenado diferencial.\n\n| Componente del Tren de Aterrizaje C172F | Característica Técnica |\n| :--- | :--- |\n| **Tren Principal (Main Gear)** | Acero elástico tipo ballesta (24 PSI) + frenos de disco hidráulicos |\n| **Pata de Morro (Nose Gear)** | Amortiguador óleo-neumático (26 PSI, 2 in de extensión) |\n| **Dirección Rueda de Morro** | Dirigible con pedales (~$10^\\circ$) y hasta **$30^\\circ$** con frenado diferencial |\n\n> 📖 **Extracto Literal del Manual — 1965 Cessna Model 172F Owner's Manual - Section I & IV:**\n> \"Effective ground control while taxiing is accomplished through nose wheel steering by using the rudder pedals... The nose wheel is steerable through an arc of approximately 10° each side of neutral with rudder pedals, and up to 30° with differential braking.\"\n\n![Recorte Oficial del Manual — Cessna 172F Controls & Flaps](./manual-crops/fleet-c172f/om_p07_controls_flaps.png)",
+      "references": [
+        "1965 Cessna Model 172F Owner's Manual - Section I & Section IV (Page 1-3 & 4-4)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "C172F-SYS-014",
+    "subject_id": "c172f_systems",
+    "learning_objective": "POH Supplement Sección 1 - Sobrealimentación por Turbocompresor e Intercooler en el Motor TAE 125",
+    "stem": "¿Qué función cumplen el turbocompresor accionado por gases de escape y el intercooler (cambiador de calor aire-aire) en el sistema de admisión del motor diésel TAE 125 de la Reims/Cessna F172F?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El turbocompresor inyecta líquido refrigerante dentro de los cilindros y el intercooler calienta el gasóleo hasta 105°C antes de entrar al common-rail",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "El turbocompresor (con wastegate) comprime el aire de admisión en altitud y el intercooler lo enfría para aumentar su densidad antes de los cilindros",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "El turbocompresor solo se acopla mecánicamente cuando el piloto pulsa el botón FADEC Test en tierra o activa el interruptor Force B durante el vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El intercooler extrae aire caliente del colector de escape para presurizar la cabina de pasajeros cuando se vuela por encima de 10.000 ft de altitud",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 1 (*Engine*, página 1-2) del Suplemento POH, el motor **TAE 125** incorpora un **turbocompresor de gases de escape con válvula de descarga (wastegate)** gestionada por el FADEC y un **intercooler (radiador de aire de sobrealimentación)**:\n1. El **turbocompresor** comprime el aire de admisión, permitiendo mantener elevada potencia en altitud hasta el techo certificado de **17.500 ft**.\n2. Al comprimirse, el aire se calienta; el **intercooler** lo enfría con aire de impacto exterior antes de introducirlo en los cilindros, aumentando la masa de oxígeno admitida y reduciendo las cargas térmicas de la combustión.\n\n| Componente de Admisión TAE 125 | Función Termodinámica |\n| :--- | :--- |\n| **Turbocompresor con Wastegate** | Comprime el aire de admisión bajo control del FADEC |\n| **Intercooler (Charge Air Cooler)** | Enfría el aire comprimido para aumentar su densidad antes de los cilindros |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Engine (Page 1-2):**\n> \"Liquid-cooled in-line 4-stroke 4-cylinder DOHC engine with direct Diesel injection (common-rail technology) and turbocharging with intercooler, controlled by a FADEC.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 1 Engine & Propeller](./manual-crops/fleet-c172f/supp_p45_engine_prop.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 1: Engine (Page 1-2)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "C172F-SYS-015",
+    "subject_id": "c172f_systems",
+    "learning_objective": "POH Supplement Sección 2 y 6 - Especificación del Líquido Refrigerante y Proporción de Mezcla",
+    "stem": "De acuerdo con la Sección 2 (Engine Operating Limits) y la Sección 6 (Servicing) del Suplemento POH del motor TAE 125, ¿cuál es la proporción obligatoria de mezcla del líquido refrigerante y qué punto de protección contra congelación proporciona?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Proporción 100% de agua pura sin aditivos en verano y 80:20 con queroseno Jet A-1 en invierno, protegiendo hasta -15°C",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Proporción 70:30 de aceite sintético de caja reductora y agua desmineralizada, ofreciendo protección hasta -50°C",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Proporción 50:50 (1:1) de agua destilada y agente protector de radiador aprobado, con punto de congelación de -36°C",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Proporción 25:75 de alcohol isopropílico y fluido hidráulico MIL-H-5606, ofreciendo protección térmica hasta -20°C",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "Según la Sección 2 (página 2-3, *Coolant*) y la Sección 6 (página 6-3, *Coolant Servicing*) del Suplemento POH, el sistema de refrigeración del motor TAE 125 debe rellenarse exclusivamente con una **mezcla en proporción 1:1 (50:50) de agua destilada/desmineralizada y anticongelante/protector de radiador aprobado (ej. BASF Glysantin Alu Protect / G30)**, lo que proporciona un punto de congelación de **$-36^\\circ\\text{C}$** (acorde con la temperatura mínima de arranque de $-32^\\circ\\text{C}$) y eleva el punto de ebullición bajo presión por encima de $105^\\circ\\text{C}$.\n\n| Parámetro del Líquido Refrigerante | Especificación Oficial |\n| :--- | :--- |\n| **Relación de Mezcla (Agua : Protector)** | **1 : 1 (50% agua destilada / 50% protector)** |\n| **Protección contra Congelación** | **Hasta $-36^\\circ\\text{C}$** |\n| **Temperatura Mínima de Arranque Motor** | **$-32^\\circ\\text{C}$** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 2 (Page 2-3) & Section 6 (Page 6-3):**\n> \"Coolant: Water / Radiator protection agent in ratio 1:1 (50:50); freezing point -36°C.\"\n\n![Recorte Oficial del Manual — Supplement POH Section 2 Engine Limits](./manual-crops/fleet-c172f/supp_p63_engine_limits.png)",
+      "references": [
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 2: Engine Operating Limits (Page 2-3)",
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 6: Servicing - Coolant (Page 6-3)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "C172F-SYS-016",
+    "subject_id": "c172f_systems",
+    "learning_objective": "Owner's Manual & Checklist V6 - Sistema Pitot-Estático y Instrumentos Giroscópicos de Vuelo",
+    "stem": "En la Cessna 172F, ¿qué instrumentos dependen del sistema de presión total y estática (Pitot-Static System) y qué ocurre si se obstruye el tubo Pitot en vuelo sin encender la calefacción Pitot (Pitot Heat)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El horizonte artificial, el giroscópico direccional y el coordinador de virajes usan el tubo Pitot; si se bloquea el Pitot, el altímetro queda congelado en vuelo",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Los instrumentos digitales CED-125 y AED-125 dependen de la presión del tubo Pitot para medir la presión de aceite y el caudal de combustible del motor TAE 125",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Únicamente el variómetro (VSI) está conectado al tubo Pitot del plano izquierdo, mientras que el anemómetro calcula la velocidad mediante pulsos del receptor GPS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "El anemómetro (ASI), altímetro y variómetro (VSI) usan el sistema pitot-estático; si se bloquea la toma de impacto del Pitot (con drenaje libre), la IAS cae a cero",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "En la **Cessna 172F**, el sistema **Pitot-Estático** alimenta a tres instrumentos de vuelo:\n- **Anemómetro (Airspeed Indicator — ASI):** utiliza tanto la presión total del tubo Pitot (bajo el plano izquierdo, provisto de resistencia eléctrica **Pitot Heat**) como la presión estática.\n- **Altímetro y Variómetro (VSI):** utilizan únicamente la presión estática de las tomas estáticas del fuselaje.\nSi el tubo Pitot se obstruye por hielo (y su orificio de drenaje sigue abierto), la presión dinámica cae a la estática y el **anemómetro cae a cero**; si se bloquean tanto la entrada como el drenaje del Pitot, el anemómetro se comporta como un altímetro (aumentando la lectura al ascender y disminuyendo al descender).\n\n| Instrumento Pitot-Estático | Fuente de Presión Requerida |\n| :--- | :--- |\n| **Anemómetro (ASI)** | **Presión Pitot (Total) + Presión Estática** |\n| **Altímetro (Altimeter)** | **Solo Presión Estática** |\n| **Variómetro (Vertical Speed Indicator)** | **Solo Presión Estática** |\n\n> 📖 **Extracto Literal del Manual — Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Flight in Icing Conditions (Page 3-9):**\n> \"(1) Pitot Heat - ON (to prevent loss of airspeed indication due to pitot tube icing).\"\n\n![Recorte Oficial del Manual — Supplement POH Section 1 Instrument Panel](./manual-crops/fleet-c172f/supp_p48_panel_ced_aed.png)",
+      "references": [
+        "1965 Cessna Model 172F Owner's Manual - Section I & III",
+        "Supplement POH Reims/Cessna (F)172 F-M (TAE 125) - Section 3: Flight in Icing Conditions (Page 3-9)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  }
+]

@@ -67,11 +67,23 @@ def sync_cloud_reviews(pin='070707'):
     for r in cloud_reviews:
         rid = r.get('id') or r.get('questionId')
         if rid:
-            combined_map[rid] = r
+            existing = combined_map.get(rid)
+            if existing and existing.get('status') == 'resolved' and r.get('status') == 'pending':
+                merged = dict(r)
+                merged['status'] = 'resolved'
+                if 'resolvedAt' in existing:
+                    merged['resolvedAt'] = existing['resolvedAt']
+                if 'resolutionNote' in existing:
+                    merged['resolutionNote'] = existing['resolutionNote']
+                combined_map[rid] = merged
+            else:
+                combined_map[rid] = r
             
     final_list = list(combined_map.values())
+    pending_count = sum(1 for item in final_list if item.get('status') == 'pending')
+    resolved_count = sum(1 for item in final_list if item.get('status') == 'resolved')
     review_file.write_text(json.dumps(final_list, indent=2, ensure_ascii=False), encoding='utf-8')
-    print(f"[SUCCESS] {len(final_list)} solicitudes de revision registradas en {review_file.name}.")
+    print(f"[SUCCESS] {len(final_list)} solicitudes de revision registradas en {review_file.name} ({pending_count} pendientes, {resolved_count} resueltas).")
     return final_list
 
 if __name__ == '__main__':

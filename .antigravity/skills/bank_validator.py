@@ -17,7 +17,9 @@ def validate(banks_dir: str, schema_file: str) -> int:
     seen_ids = set()
     errors = 0
 
-    for json_file in b_path.rglob("*.json"):
+    for json_file in sorted(b_path.rglob("*.json")):
+        if json_file.name in ["deleted_questions.json", "questions_for_review.json", "package.json"] or json_file.name.startswith("_") or json_file.name.startswith("user_backup"):
+            continue
         try:
             with open(json_file, 'r', encoding='utf-8') as f:
                 data = json.load(f)

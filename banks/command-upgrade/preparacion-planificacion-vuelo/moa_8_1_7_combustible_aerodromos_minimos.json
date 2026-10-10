@@ -233,27 +233,27 @@
     "options": [
       {
         "id": "A",
-        "text": "Aeronave despachada con un ítem de la MEL en Categoría A O viento cruzado superior a 15 nudos en destino",
+        "text": "Siempre que el vuelo tenga una duración superior a 2 horas o cuando la pista de destino tenga una LDA inferior a 2.000 metros",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Meteo en destino bajo mínimos de planificación O falta de información meteorológica fiable en destino",
+        "text": "Cuando las predicciones en destino (ETA ± 1h) estén por debajo de los mínimos de operación aplicables, o no haya información",
         "is_correct": true
       },
       {
         "id": "C",
-        "text": "Operación en horario nocturno O cuando el aeródromo alternativo principal esté situado a más de 320 NM",
+        "text": "Únicamente cuando el aeródromo de destino disponga de una sola pista operativa y no cuente con servicio de aproximación radar",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Destino con una sola pista operativa O vuelo regular comercial con duración programada superior a 2 horas",
+        "text": "Cuando el techo de nubes en destino sea inferior a 2.000 ft o la visibilidad sea menor de 5 km durante las dos horas previas",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "De acuerdo con el MOA 8.1.7.2.3 y CAT.OP.MPA.180, para cualquier vuelo IFR se debe designar al menos un aeródromo alternativo de destino, y es OBLIGATORIO seleccionar DOS (2) alternativos cuando:\n\n1. Los informes/pronósticos meteorológicos para el destino indiquen que las condiciones estarán **por debajo de los mínimos de planificación aplicables** durante el periodo de utilización (ETA -1h a ETA +1h).\n2. **No se disponga de información meteorológica** del aeródromo de destino.\n\n> 📖 **Extracto Literal del Manual — Binter Canarias MOA - Subcapítulo 8.1.7.2.3 Aeródromo alternativo de destino (Pág. 385):**\n> \"g , y g p , g el aterrizaje en el aeródromo alternativo de despegue. 8.1.7.2.3 SELECCIÓN AERÓDROMO ALTERNATIVO DE DESTINO: Normativamente existen tres posibilidades respecto a la necesidad de selección de alternativos de destino: 1. Vuelos que NO requieren alternativo de destino, o 2. Vuelos que requieren al menos un (1) alternativo de destino, o 3. Vuelos que requieren dos (2) alternativos de destino. 8.1.7.2.3.0 DESPACHO SIN AERÓDROMO ALTERNATIVO DE DESTINO (PLAN BÁSICO DE COMBUSTIBLE CON V...\"\n\n![Recorte Oficial del Manual — Binter Canarias MOA - Subcapítulo 8.1.7.2.3 Aeródromo alternativo de destino](./manual-crops/command-upgrade/CMD-MOA-AER-002.png)",
+      "text": "Según el MOA 8.1.7.2.1 y 8.1.7.2.3 (CAT.OP.MPA.182), se deberán seleccionar DOS aeródromos alternativos de destino en el plan de vuelo operacional cuando:\n1. Los informes o predicciones meteorológicas para el aeródromo de destino (desde 1h antes hasta 1h después de la ETA) indiquen condiciones por debajo de los **mínimos de operación (aterrizaje) aplicables**, o\n2. No se disponga de información meteorológica en destino.",
       "references": [
         "Binter Canarias MOA - Subcapítulo 8.1.7.2.3 Aeródromo alternativo de destino",
         "EASA Part-CAT CAT.OP.MPA.180(c)"
@@ -1726,27 +1726,27 @@
     "options": [
       {
         "id": "A",
-        "text": "Únicamente si la aeronave tiene un motor alquilado a otro operador",
+        "text": "Siempre que el vuelo tenga una duración superior a 2 horas o cuando la pista de destino tenga una LDA inferior a 2.000 metros",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Cuando el avión transporte equipaje en los asientos de pasajeros",
-        "is_correct": false
+        "text": "Cuando las predicciones en destino (ETA ± 1h) estén por debajo de los mínimos de operación aplicables, o no haya información",
+        "is_correct": true
       },
       {
         "id": "C",
-        "text": "Siempre que el vuelo se realice en viernes o víspera de festivo",
+        "text": "Únicamente cuando el aeródromo de destino disponga de una sola pista operativa y no cuente con servicio de aproximación radar",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Cuando las previsiones meteorológicas en destino indiquen condiciones por debajo de los mínimos de planificación, o cuando no se disponga de información meteorológica de destino",
-        "is_correct": true
+        "text": "Cuando el techo de nubes en destino sea inferior a 2.000 ft o la visibilidad sea menor de 5 km durante las dos horas previas",
+        "is_correct": false
       }
     ],
     "explanation": {
-      "text": "Es mandatorio designar **2 alternativos de destino** si: 1° La meteo en destino está por debajo de los mínimos de planificación, o 2° No se dispone de información meteorológica en destino (CAT.OP.MPA.180 / MOA 8.1.7.2).\n\n> 📖 **Extracto Literal del Manual — Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible (Pág. 4):**\n> \"Total folios: 4 ( 2 de 4 ) - Código Seguro de Verificación (CSV/CID Este documento puede ser verificado en / This document may be 16 CAT.OP.MPA.180. Plan de combustible/energía. A.8.3.7; A.8.1.7 ED05 RN51; ED06 RN14 18 CAT.OP.MPA.200 Carga o descarga especial de combustible/energía. A.8.2.1.2 B-EMB 2.2.24 ED06 RN20 ED06 RN14 33 SPA.RVSM.105 Operaciones con separación vertical mínima reducida (RVSM). A.8.3.2.21 B.1 (EMB) ED05 RN05; ED06 RN11 34 SPA.LVO.100(a) Operaciones con baja visibilidad L...\"\n\n![Recorte Oficial del Manual — Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible](./manual-crops/command-upgrade/CMD-MOA-FUEL-034.png)",
+      "text": "Según el MOA 8.1.7.2.1 y 8.1.7.2.3 (CAT.OP.MPA.182), se deberán seleccionar DOS aeródromos alternativos de destino en el plan de vuelo operacional cuando:\n1. Los informes o predicciones meteorológicas para el aeródromo de destino (desde 1h antes hasta 1h después de la ETA) indiquen condiciones por debajo de los **mínimos de operación (aterrizaje) aplicables**, o\n2. No se disponga de información meteorológica en destino.",
       "references": [
         "Binter Canarias MOA - Capítulo 8: Procedimientos Operativos - Subcapítulo 8.1.7 Plan de Combustible"
       ]

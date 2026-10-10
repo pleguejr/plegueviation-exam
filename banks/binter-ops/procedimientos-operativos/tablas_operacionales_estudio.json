@@ -446,35 +446,35 @@
   {
     "id": "BIN-SOP-113",
     "subject_id": "binter_ops",
-    "learning_objective": "E195-E2 QRH - Memory Items de Mandos: STEERING RUNAWAY vs Gestión Trim FBW",
-    "stem": "En el Embraer 195-E2 con mandos Fly-by-Wire, ¿cuál es la acción Memory Item requerida ante un desvío no comandado de la dirección de morro (STEERING RUNAWAY)?",
+    "learning_objective": "E195-E2 QRH - Memory Items de Mandos de Vuelo (Pitch / Roll Disconnect)",
+    "stem": "En el Embraer 195-E2, ante un atasco del mando de cabeceo o alabeo ('JAMMED CONTROL COLUMN (PITCH)' o 'JAMMED CONTROL WHEEL (ROLL)'), ¿cuál es el Memory Item inmediato de acuerdo con el QRH Sección 1?",
     "options": [
       {
         "id": "A",
-        "text": "PITCH TRIM RUNAWAY → PITCH TRIM SYS 1 & 2 CUTOUT PUSH IN (procedimiento exclusivo de la generación E1)",
+        "text": "1. AP DISC Button: PRESS and HOLD | 2. PITCH TRIM SYS 1 & 2 CUTOUT Buttons: PUSH IN",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "NOSE WHEEL FAILURE → APU SHUTOFF Switch PUSH",
-        "is_correct": false
-      },
-      {
-        "id": "C",
-        "text": "STEERING RUNAWAY → STEER DISC Switch PRESS (presionar y mantener el pulsador de desconexión de dirección)",
+        "text": "1. ELEVATOR / AILERON DISCONNECT Handle: PULL (según el eje afectado por el atasco)",
         "is_correct": true
       },
       {
+        "id": "C",
+        "text": "1. STEER DISC Switch: PRESS | 2. NW STEERING Switch: OFF | 3. Rudder Pedals: USE",
+        "is_correct": false
+      },
+      {
         "id": "D",
-        "text": "RUDDER RUNAWAY → PEDAL DISCONNECT Handle PULL en cabina",
+        "text": "1. DN LOCK REL Button: PRESS and HOLD | 2. LANDING GEAR Lever: UP | 3. RELEASE",
         "is_correct": false
       }
     ],
     "explanation": {
-      "text": "En el **Embraer 195-E2**, el trim es completamente Fly-by-Wire (FBW) y las desviaciones no comandadas son gestionadas y aisladas automáticamente por los FCCs (no existen pulsadores de CUTOUT en pedestal como en E1). En los mandos de tierra, el Memory Item crítico es: **STEERING RUNAWAY → STEER DISC Switch: PRESS**.\n\n> 📖 **Extracto Literal del Manual — Embraer 195-E2 QRH - Emergency & Abnormal Procedures: STEERING RUNAWAY (Pág. 139):**\n> \"asignado, por lo que podría ser obsoleto. Por favor, verifique el gestor documental para asegurarse de que está usando la versión vigente. comprobación tanto de la posición geográfica del avión como de la evitación segura de obstáculos y del terreno. • Llevar a cabo el vuelo de manera segura y apropiada de acuerdo al plan de vuelo activo y de las instrucciones del Comandante cuando éste no esté a los mandos. Cualquier cambio en el plan de vuelo activo debe ser notificado al Comandante. • Dar ...\"\n\n![Recorte Oficial del Manual — Embraer 195-E2 QRH - Emergency & Abnormal Procedures: STEERING RUNAWAY](./manual-crops/binter-ops/BIN-SOP-113.png)",
+      "text": "En el **Embraer 195-E2** (QRH Sección 1 - Memory Items de Flight Controls), los únicos procedimientos de memoria de desconexión de mandos primarios son:\n- **JAMMED CONTROL COLUMN (PITCH):** `1. ELEVATOR DISCONNECT Handle: PULL`.\n- **JAMMED CONTROL WHEEL (ROLL):** `1. AILERON DISCONNECT Handle: PULL`.\n\nAl tirar del tirador correspondiente se desacoplan mecánicamente ambos lados (LH y RH), permitiendo que el piloto con el mando libre mantenga el control de la aeronave. *(Nota: Pitch Trim Runaway y Steering Runaway no son Memory Items de sección 1 del E195-E2)*.\n\n![Recorte Oficial del Manual — QRH Flight Controls Memory Items](./manual-crops/simulador-e2/SIM-MEM-020.png)",
       "references": [
-        "Embraer 195-E2 QRH - Emergency & Abnormal Procedures: STEERING RUNAWAY",
-        "Binter E195-E2 FCOM / SOPM: Memory Items"
+        "QRH Section 1 • Flight Controls Memory Items • Embraer 195-E2",
+        "TABLAS memory-items-e2 · Embraer 195-E2"
       ]
     },
     "metadata": {
@@ -694,7 +694,7 @@
       }
     ],
     "explanation": {
-      "text": "**Vlo** (tren en movimiento): extensión **250 KIAS**, retracción **220 KIAS**. **Vle** (tren ya extendido y bloqueado): **265 KIAS**. Confundir Vlo ext con Vle es el error típico de estudio.\n\n> 📖 **Extracto Literal del Manual — TABLAS limitations-e2 · AFM 2-05 / AOM 1-03 (Pág. 290):**\n> \"LIMITACIONES DE TIEMPO DE VUELO Limitación del Tiempo de Vuelo, Actividad y Requisitos de Descanso 7.1-14 RN26 RT00 Los SPI de fatiga son los siguientes: - Indice de recuperación de fatiga: Compara la diferencia entre el mínimo legal de descanso previos entre actividades y el programado-realizado, siendo 1 el descanso mínimo legal. - Porcentaje de FDP con respecto al máximo permitido: Compara la diferencia entre el máximo legal de actividad y el relizado, siendo 1 la actividad máxima legal. -...\"\n\n![Recorte Oficial del Manual — TABLAS limitations-e2 · AFM 2-05 / AOM 1-03](./manual-crops/binter-ops/BIN-SOP-119.png)",
+      "text": "**Vlo** (tren en movimiento): extensión **250 KIAS**, retracción **220 KIAS**. **Vle** (tren ya extendido y bloqueado): **265 KIAS**. Confundir Vlo extensión con Vle es el error típico de estudio.",
       "references": [
         "TABLAS limitations-e2 · AFM 2-05 / AOM 1-03",
         "RemNote NUMBERS — Landing Gear"
@@ -880,7 +880,7 @@
       }
     ],
     "explanation": {
-      "text": "**Vra / Mra** (penetración en turbulencia severa): **por debajo de 10.000 ft → 250 KIAS**; **por encima de 10.000 ft → 270 KIAS / M 0.76** (la más restrictiva). No confundir con Vmo/Mmo (320 / 0.82).\n\n> 📖 **Extracto Literal del Manual — TABLAS limitations-e2 · AOM 1-03 / QRH (Pág. 730):**\n> \"p g p sido notificada cizalladura. - La dirección de las rachas en una tormenta coincide con la dirección del movimiento de la célula, aunque debajo de la misma se pueden esperar rachas verticales o en cualquier dirección. - Los bordes frontales de las tormentas deben evitarse. - En caso de llevar conectado el piloto automático, se debe tener en cuenta que se pueden superar las limitaciones de certificación, dando lugar a respuestas inadecuadas, por lo que puede ser necesario desconectarlos. ...\"\n\n![Recorte Oficial del Manual — TABLAS limitations-e2 · AOM 1-03 / QRH](./manual-crops/binter-ops/BIN-SOP-124.png)",
+      "text": "**Vra / Mra** (penetración en turbulencia severa): **por debajo de 10.000 ft → 250 KIAS**; **por encima de 10.000 ft → 270 KIAS / M 0.76** (la más restrictiva). No confundir con Vmo/Mmo (320 KIAS / M 0.82).",
       "references": [
         "TABLAS limitations-e2 · AOM 1-03 / QRH",
         "RemNote NUMBERS — Max turbulence speed"
@@ -1379,27 +1379,27 @@
     "options": [
       {
         "id": "A",
-        "text": "Solo en tierra y por debajo de 80 kt",
+        "text": "Hasta 10.000 ft y 250 KIAS",
         "is_correct": false
       },
       {
         "id": "B",
-        "text": "Hasta 20.000 ft sin límite de velocidad",
+        "text": "Hasta 20.000 ft y 270 KIAS",
         "is_correct": false
       },
       {
         "id": "C",
-        "text": "Hasta FL410 a cualquier IAS",
+        "text": "Hasta 15.000 ft y 230 KIAS",
         "is_correct": false
       },
       {
         "id": "D",
-        "text": "Hasta 14.000 ft y 253 KIAS (velocidad máxima operativa de limpiaparabrisas)",
+        "text": "Hasta 14.000 ft y 253 KIAS",
         "is_correct": true
       }
     ],
     "explanation": {
-      "text": "De acuerdo con el AFM del E195-E2 (Sección 2 - Operating Limitations), la velocidad máxima de operación de los limpiaparabrisas es de **253 KIAS** (Vw). Adicionalmente, los procedimientos operativos prohíben su uso por encima de 14.000 ft.\n\n> 📖 **Extracto Literal del Manual — TABLAS limitations-e2 · AFM 2-08 (Windshield Wiper Operating Speed: 253 KIAS) (Pág. 376):**\n> \"El estudio trimestral se basa en un histórico de datos de vuelo por avión extraídos del FDM. Los datos se analizan a través de la herramienta “Degradación de performances Embraer”. Para aeronaves nuevas se incluirá un factor de degradación de performances 0 hasta no disponer de datos de la aeronave de al menos 3 meses. Binter Airlines únicamente tendrá en consideración valores que impliquen un aumento en la cantidad de combustible requerido. Nota: las particularidades del proceso de cálculo, ...\"\n\n![Recorte Oficial del Manual — TABLAS limitations-e2 · AFM 2-08 (Windshield Wiper Operating Speed: 253 KIAS)](./manual-crops/binter-ops/BIN-SOP-138.png)",
+      "text": "En el **Embraer 195-E2**, la operación de los limpiaparabrisas (**Wipers**) está limitada por certificación (AFM Sección 2 / AOM Limitations) a una altitud máxima de **14.000 ft** y una velocidad máxima de **253 KIAS** (velocidad máxima operativa de limpiaparabrisas).",
       "references": [
         "TABLAS limitations-e2 · AFM 2-08 (Windshield Wiper Operating Speed: 253 KIAS)"
       ]

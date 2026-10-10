@@ -20,7 +20,7 @@ detallada vive en los skills enlazados (léelos y aplícalos en cada lote).
 | `aviation-question-authoring` | Fidelidad al manual, stem claro, citas con página, dual MCQ/flashcard |
 | `easa-distractor-engineering` | Distractores difíciles pero legítimos; sin micro-números ni absurdos |
 | `manual-bank-expansion` | Seguridad Drive + pipeline NotebookLM/Gemini + Antigravity |
-| Fleet/ops experts (`binter-operations-auditor`, `tecnam-p2010-afm-expert`, `cessna-172n-poh-expert`) | Solo cuando el lote es de esa flota/manual |
+| Fleet/ops experts (`binter-operations-auditor`, `cessna-172f-tae125-expert`) | Solo cuando el lote es de esa flota/manual |
 
 ## Flujo paso a paso (agente)
 

@@ -3,8 +3,7 @@ export type TargetModule =
   | 'fleet-e195e2'
   | 'netjets'
   | 'operational-tables'
-  | 'p2010'
-  | 'c172n'
+  | 'c172f'
   | 'general';
 
 export type ModificationPriority = 'urgent' | 'high' | 'normal';

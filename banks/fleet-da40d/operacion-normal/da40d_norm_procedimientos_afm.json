@@ -1,0 +1,743 @@
+[
+  {
+    "id": "DA40D-NORM-001",
+    "subject_id": "da40d_normal",
+    "learning_objective": "AFM 4A.2 & 4A.3.7 - Velocidad de Rotación (Vr) según Masa",
+    "stem": "En la DA 40 D, ¿a qué velocidad de rotación (Vr, Flaps T/O) debe levantarse la rueda de morro con 1150 kg, 1000 kg y 850 kg?",
+    "options": [
+      {
+        "id": "A",
+        "text": "66 KIAS (1150 kg), 60 KIAS (1000 kg) y 54 KIAS (850 kg)",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "73 KIAS (1150 kg), 68 KIAS (1000 kg) y 60 KIAS (850 kg)",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "63 KIAS (1150 kg), 58 KIAS (1000 kg) y 52 KIAS (850 kg)",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "59 KIAS (1150 kg), 55 KIAS (1000 kg) y 49 KIAS (850 kg)",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "Tabla 4A.2 y checklist 4A.3.7: **$V_R$ = 59 / 55 / 49 KIAS** para 1150 / 1000 / 850 kg. 66/60/54 es $V_Y$ con flaps T/O y 73/68/60 la velocidad de ascenso en crucero.\n\n| Masa | $V_R$ | $V_Y$ (T/O) | Cruise climb |\n| :--- | :--- | :--- | :--- |\n| 1150 kg | **59** | 66 | 73 |\n| 1000 kg | **55** | 60 | 68 |\n| 850 kg | **49** | 54 | 60 |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.2 (Page 4A-2) & 4A.3.7 (Page 4A-21):**\n> \"Nose wheel lift-off at vR = 59 KIAS (1150 kg, 2535 lb), at vR = 55 KIAS (1000 kg, 2205 lb), at vR = 49 KIAS (850 kg, 1874 lb).\"\n\n![Recorte Oficial del Manual — DA 40 D Normal Airspeeds](./manual-crops/fleet-da40d/da40_norm_airspeeds_table.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.2 (Page 4A-2) & 4A.3.7 (Page 4A-21)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "DA40D-NORM-002",
+    "subject_id": "da40d_normal",
+    "learning_objective": "AFM 4A.3.8 - Ascenso de Máximo Régimen (Vy) con Flaps T/O",
+    "stem": "Según el procedimiento «Best Rate of Climb» del AFM, ¿qué configuración y velocidad se emplean a 1150 kg?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flaps UP y 73 KIAS, reducible a 68 KIAS con 1000 kg",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Flaps T/O y 59 KIAS, reducible a 55 KIAS con 1000 kg",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Flaps UP y 66 KIAS, reducible a 54 KIAS con 1000 kg",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Flaps T/O y 66 KIAS, reducible a 60 KIAS con 1000 kg",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "4A.3.8: **Flaps T/O, 66 KIAS (1150 kg)**, con menor masa **60 KIAS (1000 kg) / 54 KIAS (850 kg)**, potencia MAX y motor en verde.\n\n| Procedimiento | Flaps | Velocidad (1150 kg) |\n| :--- | :--- | :--- |\n| **Best Rate of Climb** | **T/O** | **66 KIAS** |\n| Cruise Climb | UP | 73 KIAS |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.8: Climb (Page 4A-22):**\n> \"Procedure for Best Rate of Climb: 1. Flaps T/O. 2. Airspeed 66 KIAS (1150 kg). With lower mass the air speeds can be reduced: 1000 kg 60 KIAS; 850 kg 54 KIAS.\"\n\n![Recorte Oficial del Manual — DA 40 D Climb Procedure](./manual-crops/fleet-da40d/da40_norm_climb.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.8: Climb (Page 4A-22)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "DA40D-NORM-003",
+    "subject_id": "da40d_normal",
+    "learning_objective": "AFM 4A.3.8 - Precaución por Temperaturas Altas en Ascenso",
+    "stem": "Si durante el ascenso en la DA 40 D la temperatura de aceite o de refrigerante alcanza el arco amarillo, ¿qué indica el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reducir la velocidad 5 kt y aumentar la potencia un 10 % para enfriar",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Aumentar la velocidad 15 kt y reducir la potencia un 30 % para enfriar",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Aumentar la velocidad 5 kt y reducir la potencia un 10 % para enfriar",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Mantener la velocidad y seleccionar ECU B para enfriar el motor diésel",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "CAUTION 4A.3.8: con OT/CT en amarillo, continuar con **velocidad +5 kt y potencia −10 %** (menor régimen de ascenso, mejor refrigeración).\n\n| Acción | Valor |\n| :--- | :--- |\n| Velocidad | **+5 kt** |\n| Potencia | **−10 %** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.8: Climb (Page 4A-22):**\n> \"If the oil temperature and/or coolant temperature reaches the yellow range during climb, flight should be continued with an airspeed increased by 5 kts and power reduced by 10 % (reduced climb rate) for better engine cooling.\"\n\n![Recorte Oficial del Manual — DA 40 D Climb Procedure](./manual-crops/fleet-da40d/da40_norm_climb.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.8: Climb (Page 4A-22)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "DA40D-NORM-004",
+    "subject_id": "da40d_normal",
+    "learning_objective": "AFM 4A.3.12 - Velocidades de Aproximación con Flaps LDG",
+    "stem": "¿Qué velocidades de aproximación final con Flaps LDG indica el AFM de la DA 40 D para 1150 kg y 1000 kg?",
+    "options": [
+      {
+        "id": "A",
+        "text": "73 KIAS con 1150 kg y 68 KIAS con 1000 kg",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "66 KIAS con 1150 kg y 60 KIAS con 1000 kg",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "71 KIAS con 1150 kg y 63 KIAS con 1000 kg",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "76 KIAS con 1150 kg y 70 KIAS con 1000 kg",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "4A.3.12: $V_{APP}$ Flaps LDG **71 KIAS (1150 kg)**, 67 KIAS (1092 kg), **63 KIAS (1000 kg)**, 58 KIAS (850 kg). Con viento fuerte o cizalladura seleccionar mayor velocidad.\n\n| Masa | $V_{APP}$ LDG |\n| :--- | :--- |\n| 1150 kg | **71 KIAS** |\n| 1092 kg | 67 KIAS |\n| 1000 kg | **63 KIAS** |\n| 850 kg | 58 KIAS |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.12: Landing Approach (Page 4A-27):**\n> \"Approach speed 71 KIAS (1150 kg, 2535 lb), 67 KIAS (1092 kg, 2407 lb), 63 KIAS (1000 kg, 2205 lb), 58 KIAS (850 kg, 1874 lb).\"\n\n![Recorte Oficial del Manual — DA 40 D Landing Approach](./manual-crops/fleet-da40d/da40_norm_landing_approach.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.12: Landing Approach (Page 4A-27)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "DA40D-NORM-005",
+    "subject_id": "da40d_normal",
+    "learning_objective": "AFM 4A.3.3 - Limitaciones del Motor de Arranque",
+    "stem": "¿Qué limitaciones de uso del motor de arranque establece el AFM de la DA 40 D?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Máx. 30 s por intento, 60 s de enfriamiento y 10 min tras 3 intentos",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Máx. 10 s por intento, 20 s de enfriamiento y 30 min tras 6 intentos",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Máx. 10 s por intento, 60 s de enfriamiento y 15 min tras 4 intentos",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Máx. 20 s por intento, 20 s de enfriamiento y 30 min tras 6 intentos",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "CAUTION 4A.3.3: no accionar el arranque **más de 10 s**, dejar enfriar **20 s**, y tras **6 intentos** esperar **media hora**.\n\n| Límite | Valor |\n| :--- | :--- |\n| Accionamiento | **≤ 10 s** |\n| Enfriamiento | **20 s** |\n| Tras 6 intentos | **30 min** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.3: Starting Engine (Page 4A-13):**\n> \"Do not operate the starter motor for more than 10 seconds. After operating the starter motor, let it cool off for 20 seconds. After 6 attempts to start the engine, let the starter cool off for half an hour.\"\n\n![Recorte Oficial del Manual — DA 40 D Starting Engine](./manual-crops/fleet-da40d/da40_norm_starting_engine.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.3: Starting Engine (Page 4A-13)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "DA40D-NORM-006",
+    "subject_id": "da40d_normal",
+    "learning_objective": "AFM 4A.3.3 - Comprobación de Presión de Aceite tras el Arranque",
+    "stem": "Tras arrancar el motor de la DA 40 D, ¿en cuánto tiempo debe salir la presión de aceite del arco rojo y qué hacer si no ocurre?",
+    "options": [
+      {
+        "id": "A",
+        "text": "En 3 segundos; si no, ENGINE MASTER a OFF e investigar el problema",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "En 10 segundos; si no, ENGINE MASTER a OFF e investigar el problema",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "En 3 segundos; si no, aumentar a 1400 RPM y esperar el calentamiento",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "En 30 segundos; si no, seleccionar ECU B y repetir la prueba ECU TEST",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "WARNING 4A.3.3: si la presión de aceite **no abandona el rojo en 3 s**, poner **ENGINE MASTER OFF** e investigar. En frío puede llegar a 6,5 bar durante 20 s. (El SOP Blue Team exige igualmente verde en 3 s.)\n\n| Condición | Acción |\n| :--- | :--- |\n| OP en rojo > 3 s | **ENGINE MASTER OFF** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.3: Starting Engine (Page 4A-13):**\n> \"If the oil pressure has not moved from the red range within 3 seconds after starting, set the ENGINE MASTER switch to OFF and investigate problem.\"\n\n![Recorte Oficial del Manual — DA 40 D Starting Engine](./manual-crops/fleet-da40d/da40_norm_starting_engine.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.3: Starting Engine (Page 4A-13)",
+        "Blue Team Flight School SOP Rev 04 - Section 6.6: Starting Engine (Page 26)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.25
+    }
+  },
+  {
+    "id": "DA40D-NORM-007",
+    "subject_id": "da40d_normal",
+    "learning_objective": "AFM 4A.3.3 - Calentamiento del Motor tras el Arranque",
+    "stem": "¿Cómo debe calentarse el motor de la DA 40 D después del arranque según el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "IDLE durante 5 min y luego 1800 RPM hasta OT y CT en verde",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "IDLE durante 2 min y luego 1400 RPM hasta OT y CT en verde",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "1400 RPM durante 2 min y luego IDLE hasta OT y CT en verde",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "IDLE durante 2 min y luego 2000 RPM hasta OP y GT en verde",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "4A.3.3 pasos 6–7: **IDLE 2 minutos** y después **1400 RPM** hasta que la temperatura de aceite y de refrigerante estén en verde.\n\n| Fase | Régimen |\n| :--- | :--- |\n| 1 | **IDLE 2 min** |\n| 2 | **1400 RPM** hasta OT/CT verde |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.3: Starting Engine (Page 4A-14):**\n> \"6. Warm up IDLE for 2 minutes. 7. Warm up 1400 RPM until oil temperature and coolant temperature are in the green range.\"\n\n![Recorte Oficial del Manual — DA 40 D Starting Engine](./manual-crops/fleet-da40d/da40_norm_starting_engine.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.3: Starting Engine (Page 4A-14)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "DA40D-NORM-008",
+    "subject_id": "da40d_normal",
+    "learning_objective": "AFM 4A.3.4 - Comprobación de RPM de Ralentí",
+    "stem": "En la lista «Before Taxiing» del AFM de la DA 40 D, ¿qué valor de RPM de ralentí debe comprobarse?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1400 ± 50 RPM con la palanca de potencia en IDLE",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "690 ± 20 RPM con la palanca de potencia en IDLE",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "890 ± 20 RPM con la palanca de potencia en IDLE",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "1100 ± 30 RPM con la palanca de potencia en IDLE",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "4A.3.4 paso 10: **Idle RPM check, 890 ± 20 RPM**. (1400 RPM es el régimen de calentamiento.)\n\n| Comprobación | Valor |\n| :--- | :--- |\n| **Ralentí** | **890 ± 20 RPM** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.4: Before Taxiing (Page 4A-15):**\n> \"10. Idle RPM check, 890 ±20 RPM.\"\n\n![Recorte Oficial del Manual — DA 40 D Before Taxiing](./manual-crops/fleet-da40d/da40_norm_before_taxiing.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.4: Before Taxiing (Page 4A-15)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "DA40D-NORM-009",
+    "subject_id": "da40d_normal",
+    "learning_objective": "AFM 4A.3.6 - Prueba de Potencia Máxima antes del Despegue",
+    "stem": "Durante la prueba de motor «Before Take-Off» de la DA 40 D, ¿qué valores deben obtenerse con la palanca en MAX durante 10 segundos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "RPM estabilizadas en 2100–2200 y LOAD entre 80 y 90 %",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "RPM estabilizadas en 2300–2500 y LOAD entre 95 y 100 %",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "RPM estabilizadas en 2240–2300 y LOAD entre 70 y 80 %",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "RPM estabilizadas en 2240–2300 y LOAD entre 90 y 100 %",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "4A.3.6 pasos 12–15: palanca **MAX 10 s**, presión de aceite en verde, **RPM 2240–2300** y **LOAD 90–100 %** (con calor y altitud puede ser < 90 %).\n\n| Parámetro | Valor |\n| :--- | :--- |\n| Tiempo | 10 s |\n| **RPM** | **2240 – 2300** |\n| **LOAD** | **90 – 100 %** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.6: Before Take-Off (Page 4A-18):**\n> \"12. Power lever MAX for 10 seconds. 13. Oil pressure check green range. 14. RPM stabilizes at 2240 to 2300 RPM. 15. LOAD indication stabilizes at 90 to 100 %.\"\n\n![Recorte Oficial del Manual — DA 40 D Before Take-Off](./manual-crops/fleet-da40d/da40_norm_before_takeoff_runup.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.6: Before Take-Off (Page 4A-18)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "DA40D-NORM-010",
+    "subject_id": "da40d_normal",
+    "learning_objective": "AFM 4A.3.6 - Prueba ECU TEST y Fallo de la Prueba",
+    "stem": "Durante el ECU TEST de la DA 40 D, las luces de precaución y la ECU BACKUP UNSAFE no se iluminan. ¿Qué consecuencia indica el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Es normal con el motor caliente y puede continuarse sin restricción alguna",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Existe un error en el procedimiento y debe repetirse la prueba con 1400 RPM",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Existe un error en el procedimiento de prueba y los vuelos IFR quedan prohibidos",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Se debe seleccionar ECU B y continuar el vuelo VFR limitado al circuito",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "WARNING 4A.3.6: si las luces de precaución y la ECU BACKUP UNSAFE **no se iluminan**, hay un error en la prueba y **los vuelos IFR están prohibidos**. Además, cualquier error en la prueba obliga a terminar la preparación del vuelo.\n\n| Resultado ECU TEST | Consecuencia |\n| :--- | :--- |\n| Luces no se iluminan | **IFR prohibido** |\n| Error en la prueba | Terminar preparación |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.6: Before Take-Off (Page 4A-19):**\n> \"WARNING: If the caution lights and the 'ECU BACKUP UNSAFE'-light do not illuminate, there is an error in the test procedure. IFR-flights are prohibited.\"\n\n![Recorte Oficial del Manual — DA 40 D ECU Test](./manual-crops/fleet-da40d/da40_norm_ecu_test.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.6: Before Take-Off (Page 4A-19)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.5
+    }
+  },
+  {
+    "id": "DA40D-NORM-011",
+    "subject_id": "da40d_normal",
+    "learning_objective": "AFM 4A.3.6 - Comprobación del Selector ECU SWAP",
+    "stem": "Tras completar el ECU TEST en la prueba previa al despegue de la DA 40 D, ¿cómo se comprueba el selector ECU SWAP?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Seleccionar ECU A, comprobar caída de 100 RPM y volver a AUTOMATIC",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Seleccionar ECU B, despegar en ECU B y volver a AUTOMATIC a 1000 ft",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Seleccionar ECU B, apagar ENGINE MASTER y volver a AUTOMATIC en tierra",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Seleccionar ECU B, comprobar el motor sin cambios y volver a AUTOMATIC",
+        "is_correct": true
+      }
+    ],
+    "explanation": {
+      "text": "4A.3.6 pasos 27–29: **ECU SWAP → ECU B**, comprobar que el motor funciona **sin cambios**, y **ECU SWAP → AUTOMATIC**. Puede notarse una ligera sacudida al conmutar.\n\n| Paso | Acción |\n| :--- | :--- |\n| 27 | ECU SWAP — **ECU B** |\n| 28 | Motor — sin cambios |\n| 29 | ECU SWAP — **AUTOMATIC** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.6: Before Take-Off (Page 4A-20):**\n> \"27. ECU SWAP ECU B. 28. Engine check running without a change. 29. ECU SWAP AUTOMATIC.\"\n\n![Recorte Oficial del Manual — DA 40 D ECU Test](./manual-crops/fleet-da40d/da40_norm_ecu_test.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.6: Before Take-Off (Page 4A-20)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "DA40D-NORM-012",
+    "subject_id": "da40d_normal",
+    "learning_objective": "AFM 4A.3.9 - Potencia de Crucero Recomendada por el Fabricante del Motor",
+    "stem": "¿Qué ajuste de potencia de crucero recomienda el fabricante del motor según el AFM de la DA 40 D?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Un 70 % de LOAD como potencia de crucero recomendada",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Un 55 % de LOAD como potencia de crucero recomendada",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Un 85 % de LOAD como potencia de crucero recomendada",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Un 92 % de LOAD como potencia de crucero recomendada",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "NOTE 4A.3.9: «The engine manufacturer recommends a cruise power setting of **70 %**». (El 55 % es la potencia que usa el SOP Blue Team para calcular reservas.)\n\n| Fuente | Potencia |\n| :--- | :--- |\n| **AFM (fabricante)** | **70 %** |\n| SOP reservas | 55 % / 2000 ft |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.9: Cruise (Page 4A-24):**\n> \"NOTE: The engine manufacturer recommends a cruise power setting of 70 %.\"\n\n![Recorte Oficial del Manual — DA 40 D Cruise & Fuel Transfer](./manual-crops/fleet-da40d/da40_norm_fuel_transfer.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.9: Cruise (Page 4A-24)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  },
+  {
+    "id": "DA40D-NORM-013",
+    "subject_id": "da40d_normal",
+    "learning_objective": "AFM 4A.3.10 - Trasvase Normal de Combustible AUX → MAIN",
+    "stem": "En operación normal de la DA 40 D, ¿cómo funciona el trasvase de combustible con la bomba eléctrica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pasa del MAIN al AUX a unos 60 US gal/h y se para sola con el AUX lleno",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Pasa del AUX al MAIN a unos 60 US gal/h y se para sola con el MAIN lleno",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Pasa del AUX al MAIN a unos 20 US gal/h y debe pararse a mano siempre",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Pasa del AUX al MAIN a unos 60 US gal/h y no se detiene automáticamente",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "4A.3.10: el motor solo consume del **MAIN**; la bomba de trasvase pasa combustible del **AUX al MAIN a ≈60 US gal/h (227 L/h)** y **se apaga automáticamente** para no sobrellenar el MAIN. Si la luz FUEL TRANS parpadea, apagar la bomba.\n\n| Dato | Valor |\n| :--- | :--- |\n| Sentido | **AUX → MAIN** |\n| Caudal | **≈60 US gal/h** |\n| Parada | Automática |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.10: Fuel Transfer (Page 4A-25):**\n> \"During normal operation fuel is taken from the main tank only. Therefore fuel must be transferred from the auxiliary tank to the main tank by activating the fuel transfer pump. The transfer rate is approximately 60 US gal/h (227 liters/h). The transfer pump turns off automatically to avoid overfilling the main tank.\"\n\n![Recorte Oficial del Manual — DA 40 D Fuel Transfer](./manual-crops/fleet-da40d/da40_norm_fuel_transfer.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.10: Fuel Transfer (Page 4A-25)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "DA40D-NORM-014",
+    "subject_id": "da40d_normal",
+    "learning_objective": "AFM 4A.3.11 - Potencia Mínima en Descenso por Encima de 5000 ft",
+    "stem": "En descenso con la DA 40 D por encima de 5000 ft, ¿qué potencia mínima exige el AFM y por qué?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No menos del 50 %, porque el turbo puede sufrir daños por exceso de calor",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "No menos del 30 %, porque la hélice pasa a paso grueso y pierde control",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "No menos del 30 %, porque la combustión puede pararse sin detectarse",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "No menos del 10 %, porque el refrigerante podría congelarse en el radiador",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "4A.3.11: por encima de 5000 ft, potencia **no inferior al 30 %**. CAUTION: la combustión puede **detenerse sin ser reconocida** en descensos al ralentí por encima de 5000 ft con **OAT < −10 °C**. Limpiar el motor ocasionalmente.\n\n| Altitud | Potencia mínima |\n| :--- | :--- |\n| < 5000 ft | Según necesidad |\n| **> 5000 ft** | **≥ 30 %** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.11: Descent (Page 4A-26):**\n> \"1. Power lever as required (below 5000 ft), above 5000 ft not less than 30%. CAUTION: Engine combustion may stop unrecognized during descents with idle power at altitudes above 5000 ft with outside air temperatures below -10 °C.\"\n\n![Recorte Oficial del Manual — DA 40 D Descent](./manual-crops/fleet-da40d/da40_norm_descent.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.11: Descent (Page 4A-26)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.45
+    }
+  },
+  {
+    "id": "DA40D-NORM-015",
+    "subject_id": "da40d_normal",
+    "learning_objective": "AFM 4A.3.13 - Procedimiento de Motor y al Aire (Go-Around)",
+    "stem": "¿Cuál es el procedimiento de Go-Around del AFM de la DA 40 D a 1150 kg?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Potencia MAX, 73 KIAS y Flaps UP; a altura segura 66 KIAS y Flaps T/O",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Potencia MAX, 59 KIAS y Flaps LDG; a altura segura 66 KIAS y Flaps T/O",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Potencia MAX, 66 KIAS y Flaps T/O; a altura segura 73 KIAS y Flaps UP",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "Potencia 92 %, 66 KIAS y Flaps UP; a altura segura 80 KIAS y Flaps UP",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "4A.3.13: **1. Power lever MAX, 2. 66 KIAS (1150 kg) / 60 / 54, 3. Flaps T/O**. Por encima de una altura segura: **73 KIAS** y **Flaps UP**.\n\n| Paso | Acción |\n| :--- | :--- |\n| 1 | Potencia **MAX** |\n| 2 | **66 KIAS** |\n| 3 | Flaps **T/O** |\n| Altura segura | **73 KIAS, Flaps UP** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.13: Go-Around (Page 4A-28):**\n> \"GO-AROUND 1. Power lever MAX 2. Airspeed 66 KIAS (1150 kg) 60 KIAS (1000 kg) 54 KIAS (850 kg) 3. Flaps T/O. Above a safe height: 4. Airspeed 73 KIAS 5. Flaps UP.\"\n\n![Recorte Oficial del Manual — DA 40 D Go-Around](./manual-crops/fleet-da40d/da40_norm_landing_approach.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.13: Go-Around (Page 4A-28)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "DA40D-NORM-016",
+    "subject_id": "da40d_normal",
+    "learning_objective": "AFM 4A.3.15 - Parada del Motor y Protección del Turbocompresor",
+    "stem": "Antes de apagar el motor de la DA 40 D, ¿cuánto tiempo debe funcionar al ralentí y cuál es el motivo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Al menos 5 minutos en IDLE para enfriar el líquido refrigerante del motor",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Al menos 2 minutos en IDLE para evitar daño térmico al turbocompresor",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Al menos 30 segundos en IDLE para purgar el combustible del common-rail",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Al menos 2 minutos a 1400 RPM para descargar la batería de respaldo ECU",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "4A.3.15: power lever **IDLE durante 2 minutos**. CAUTION: el motor debe girar al menos 2 min en IDLE **para evitar daños por calor en el turbocompresor**.\n\n| Paso | Acción |\n| :--- | :--- |\n| 2 | **IDLE 2 min** |\n| 6 | ENGINE MASTER OFF |\n| 7 | ELECTRIC MASTER OFF |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.15: Engine Shut-Down (Page 4A-29):**\n> \"CAUTION: Before shut-down the engine must run for at least 2 minutes with the power lever at IDLE to avoid heat damage of the turbo charger.\"\n\n![Recorte Oficial del Manual — DA 40 D Engine Shut-Down](./manual-crops/fleet-da40d/da40_norm_shutdown.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.15: Engine Shut-Down (Page 4A-29)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.25
+    }
+  },
+  {
+    "id": "DA40D-NORM-017",
+    "subject_id": "da40d_normal",
+    "learning_objective": "AFM 4A.3.16 - Comprobación del ELT tras el Vuelo",
+    "stem": "En la inspección posterior al vuelo de la DA 40 D, ¿cómo se comprueba que el ELT no se ha activado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Con AVIONIC MASTER en ON, escuchando en la frecuencia 121,5 MHz",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Con AVIONIC MASTER en ON, escuchando en la frecuencia 123,45 MHz",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Con ENGINE MASTER en ON, escuchando en la frecuencia 243,0 MHz",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Con AVIONIC MASTER en OFF, comprobando el LED rojo del panel ELT",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "4A.3.16: ENGINE MASTER OFF, ELECTRIC MASTER ON, **AVIONIC MASTER ON**, **ELT: check activated — listen on 121.5 MHz**, y después apagar los masters.\n\n| Paso | Acción |\n| :--- | :--- |\n| 3 | AVIONIC MASTER ON |\n| 4 | **Escuchar 121,5 MHz** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.16: Post-Flight Inspection (Page 4A-29):**\n> \"4. ELT check activated: listen on 121.5 MHz.\"\n\n![Recorte Oficial del Manual — DA 40 D Post-Flight](./manual-crops/fleet-da40d/da40_norm_shutdown.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.16: Post-Flight Inspection (Page 4A-29)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.25
+    }
+  },
+  {
+    "id": "DA40D-NORM-018",
+    "subject_id": "da40d_normal",
+    "learning_objective": "AFM 7.8 & 2.16.3 - Posición «Cooling Gap» y Bloqueo de Puertas",
+    "stem": "Respecto a la cúpula delantera y la puerta trasera de la DA 40 D, ¿qué establece el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "El «Cooling Gap» en ascenso y bloquear con llave para evitar aperturas",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "El «Cooling Gap» en crucero y bloquear solo la puerta trasera con llave",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "El «Cooling Gap» solo en tierra y nunca bloquear con llave antes del vuelo",
+        "is_correct": true
+      },
+      {
+        "id": "D",
+        "text": "El «Cooling Gap» solo en tierra y bloquear con llave la cúpula en vuelo",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "WARNING 7.8: la cúpula en posición **«cooling gap» solo en tierra**; antes del despegue debe estar cerrada y bloqueada con la maneta. **No bloquear con llave** cúpula ni puerta antes del vuelo, para garantizar la evacuación desde fuera (2.16.3).\n\n| Elemento | Norma |\n| :--- | :--- |\n| Cooling gap | **Solo en tierra** |\n| Llave | **Nunca en vuelo** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.8 (Page 7-14) & 2.16.3 (Page 2-32):**\n> \"The airplane may be operated with the front canopy in the 'cooling gap' position on the ground only. Before take-off the front canopy must be completely closed and locked. Do not block the front canopy with the locking key before flight in order to assure emergency evacuation from outside.\"\n\n![Recorte Oficial del Manual — DA 40 D Canopy](./manual-crops/fleet-da40d/da40_lim_maneuvers_normal.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 7.8 (Page 7-14) & 2.16.3 (Page 2-32)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.35
+    }
+  },
+  {
+    "id": "DA40D-NORM-019",
+    "subject_id": "da40d_normal",
+    "learning_objective": "AFM 4B.5 - Despegue desde Pista Corta de Hierba",
+    "stem": "En un despegue desde pista corta de hierba con la DA 40 D (4B.5), ¿qué técnica indica el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flaps LDG, potencia MAX con frenos, palanca adelante y rotar a 73 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "B",
+        "text": "Flaps T/O, potencia MAX con frenos, palanca atrás y despegar lo antes posible",
+        "is_correct": true
+      },
+      {
+        "id": "C",
+        "text": "Flaps UP, potencia MAX rodando, palanca neutra y rotar a 66 KIAS",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Flaps T/O, potencia 90 % rodando, palanca adelante y rotar a 59 KIAS",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "4B.5: frenos aplicados, **Flaps T/O**, **potencia MAX**, **palanca totalmente atrás**, soltar frenos, aflojar la palanca tras levantar la rueda de morro, **despegar lo antes posible** y acelerar en efecto suelo a 66/60/54 KIAS; Flaps UP a altura segura.\n\n| Paso | Acción |\n| :--- | :--- |\n| Flaps | **T/O** |\n| Palanca | **Totalmente atrás** |\n| Velocidad | 66 KIAS (1150 kg) |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4B.5: Take-Off from a Short Grass Strip (Page 4B-19):**\n> \"1. Brakes apply 2. Flaps T/O 3. Power lever MAX 4. Elevator (control stick) fully aft 5. Brakes release ... 7. Elevator Release slowly after nose wheel has lifted. Allow airplane to lift off as soon as possible and increase speed at low level.\"\n\n![Recorte Oficial del Manual — DA 40 D Short Grass Take-Off](./manual-crops/fleet-da40d/da40_perf_stall_speeds.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4B.5: Take-Off from a Short Grass Strip (Page 4B-19)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.4
+    }
+  },
+  {
+    "id": "DA40D-NORM-020",
+    "subject_id": "da40d_normal",
+    "learning_objective": "AFM 4A.3.18 - Toma de Tierra Eléctrica en el Repostaje",
+    "stem": "Antes de repostar la DA 40 D, ¿qué precaución exige el AFM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Conectar el avión a tierra eléctrica en las zonas sin pintar de los estribos",
+        "is_correct": true
+      },
+      {
+        "id": "B",
+        "text": "Conectar el avión a tierra eléctrica en la punta del tubo pitot izquierdo",
+        "is_correct": false
+      },
+      {
+        "id": "C",
+        "text": "Conectar el avión a tierra eléctrica en el borde de salida de los flaps",
+        "is_correct": false
+      },
+      {
+        "id": "D",
+        "text": "Conectar el avión a tierra eléctrica en el cono de la hélice tripala MT",
+        "is_correct": false
+      }
+    ],
+    "explanation": {
+      "text": "CAUTION 4A.3.18: antes de repostar, el avión debe estar **conectado a tierra eléctrica**. **Puntos de conexión: zonas sin pintar de los estribos (steps) izquierdo y derecho**. Con JET, comprobar que no queda Diésel en los depósitos.\n\n| Elemento | Requisito |\n| :--- | :--- |\n| **Toma de tierra** | **Estribos sin pintar (L/R)** |\n\n> 📖 **Extracto Literal del Manual — Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.18: Refueling (Page 4A-30):**\n> \"CAUTION: Before refueling, the airplane must be connected to electrical ground. Grounding points: unpainted areas on steps, left and right.\"\n\n![Recorte Oficial del Manual — DA 40 D Refueling](./manual-crops/fleet-da40d/da40_norm_shutdown.png)",
+      "references": [
+        "Diamond DA 40 D AFM (Doc. 6.01.05-E Rev 6) - Section 4A.3.18: Refueling (Page 4A-30)"
+      ]
+    },
+    "metadata": {
+      "difficulty": 0.3
+    }
+  }
+]
