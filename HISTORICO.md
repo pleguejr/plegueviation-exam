@@ -4,7 +4,54 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 
 ---
 
-## 🚀 Versión Actual: v3.4.6 (2026-09-19)
+## 🚀 Versión Actual: v3.5.6 (2026-10-10)
+
+### 📖 Evidencia Literal de Manuales + Recortes PDF (200 DPI) + Infografías SOP 1600×1150 y Compilación de Bancos
+- **Enriquecimiento con extractos literales y recortes visuales (200 DPI):** Script `cli/bin/enrich_explanations_with_crops.py` y skill `manual-literal-extractor` para inyectar citas textuales (`> 📖 Extracto Literal del Manual...`) y recortes PNG a 200 DPI (`apps/web-pwa/public/manual-crops/`) extraídos de los manuales oficiales (MOA, MOB, QRH, AFM, POH, MEL, DDPM, EASA) en las explicaciones de los **2.573 reactivos**, renderizados en `FormattedText.tsx`.
+- **Rediseño de las 16 infografías vectoriales SOP (`1600×1150`):** Sustitución de imágenes raster por diagramas SVG vectoriales de alta resolución con librea oficial Binter Canarias del Embraer 195-E2 en todas las tarjetas SOP (normales, especiales, emergencias y NetJets).
+- **Flujo de Emergencia del Comandante (`flow-emergencia-comandante`):** Tarjeta e infografía dedicada con secuencia íntegra Binter (Golden Rules, Fuel/Time, MEANA, IMFLOCC, E-DALTA, TELSI y las 4 Últimas Listas).
+- **Compilación general de bancos (`build_banks.py`):** Empaquetado y validación de los **2.573 reactivos** en `apps/web-pwa/public/banks/all_questions.json` y `manifest.json`, sincronizando versión y caché PWA a `v3.5.6`.
+
+---
+
+## 🎯 Versión v3.5.1 (2026-10-08)
+
+### 🎯 Optimización Psicométrica NetJets & Espectro de Velocidades Jet (`0 – VDF`)
+- **NetJets Europe (9 bancos):** Rebalanceo integral de distractores y eliminación de sesgo de longitud en todas las preguntas de preparación de entrevista.
+- **Aerodinámica y V-Speeds:** Optimización de distractores de performance jet e incorporación de infografía técnica de espectro continuo de velocidades (`0 – VDF`).
+
+---
+
+## 🃏 Versión v3.4.9 (2026-10-07)
+
+### 🃏 Flashcards en las 18 Tablas Operacionales, Panel de Auditoría y Purga Psicométrica
+- **Flashcards interactivas en TABLAS:** Mazo completo de flashcards y botones disparadores en las **18 tablas operacionales**, más botones de navegación rápida `Volver arriba` en cada tabla y tarjeta SOP.
+- **Panel de Auditoría (`AuditModificationsPanel`):** Sustitución del panel de PDF por registro interactivo de auditoría y adición de nuevos reactivos de velocidades V y MOA 8.2 / 9.
+- **Purga de muletillas y balanceo de claves:** Eliminación de 170 cláusulas repetitivas en 16 bancos, limpieza de artefactos de fórmulas y distribución equilibrada (~25% A/B/C/D) en todo el catálogo.
+- **Fix de rendimiento UI:** Eliminación de bucle de re-renderizado en cascada al montar el Dashboard.
+
+---
+
+## 🌍 Versión v3.4.8 (2026-10-05)
+
+### 🌍 NetJets Europe 100% English (121 preguntas), Tablas 1/1A/1B Alternativos y Diagramas Técnicos
+- **NetJets Europe Interview Prep:** Implementación y traducción íntegra al inglés de 9 subbancos (121 reactivos: Historia, Fuel Schemes, LVO/Approach Ban, ORO.FTL, RVSM/PBN, Aircrew, Jet Aero, Meteo IFR y CRM), tablas sintéticas EASA y simulador de entrevista ampliado con 8 modos de lanzamiento rápido.
+- **Mínimos de Planificación de Alternativos (Tabla 1 / 1A vs 1B):** Banco específico de mínimos de planificación y rectificación de mínimos Circling (`MDA/H + 400 ft` y `VIS + 1500 m`).
+- **Flashcards Típicas Comandante:** Modo de estudio con repetición espaciada **Leitner** y presets en el banco Command Course.
+- **Diagramas vectoriales en TABLAS:** Infografías técnicas vectoriales con soporte nativo modo día/noche en todas las tablas operacionales y sustitución de tokens LaTeX por símbolos Unicode limpios.
+
+---
+
+## 📋 Versión v3.4.7 (2026-09-24)
+
+### 📋 Alineación MOA ED06 RN27 RT00, APU INOP, Pesos Estándar y Consolidación Command Course
+- **Alineación MOA ED06 RN27 RT00:** Sincronización 100% fiel de tarjetas SOP y tablas operacionales; nueva pestaña de procedimientos especiales/complementarios con tarjetas de **Arranque con APU INOP** y **Llegada con APU INOP**.
+- **Tabla de Masas Estándar (MOA 8.1.8):** Nueva tabla operacional de pesos estándar de pasajeros (88 kg / 70 kg), equipaje y tripulación, actualizando `CMD-EXP26-015`, `CMD-EXP26-066` y añadiendo 8 preguntas de MOA 8.2 y 8.1.8.
+- **Consolidación Command Course:** Integración de «Típicas Preguntas Comandante» en el banco especial (190 ítems), filtro estricto de las 25 preguntas oficiales en inglés (`FOR-ENT-006`) y guía de referencias de estudio con contraste mejorado en modo día.
+
+---
+
+## ☀️ Versión v3.4.6 (2026-09-19)
 
 ### ☀️ Command Course — título y contraste día
 - Eliminado el encabezado «Examen Convocatoria Anterior (Command Course)» del banco especial (queda el badge + descripción).
