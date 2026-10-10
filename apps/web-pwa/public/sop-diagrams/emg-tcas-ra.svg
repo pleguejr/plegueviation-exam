@@ -80,12 +80,65 @@
       <path d="M 50,110 Q 250,110 450,35" fill="none" stroke="#10b981" stroke-width="3.5" stroke-dasharray="6,3"/>
       
       <!-- Binter E195-E2 Climbing in Fly to Zone -->
-      <g transform="translate(320, 60) rotate(-14) scale(0.65)">
-        <path d="M -160,0 L 160,0 Q 200,0 180,5 L -140,5 Z" fill="#f8fafc" stroke="#94a3b8"/>
-        <path d="M 0,0 L -50,-45 L -25,-45 L 30,0 Z" fill="#059669"/>
-        <path d="M 0,0 L -50,45 L -25,45 L 30,0 Z" fill="#059669"/>
-        <path d="M -120,0 L -160,-35 L -140,-35 L -100,0 Z" fill="#0284c7"/>
-      </g>
+      <g transform="translate(560, 65) rotate(-12) scale(0.65)">
+<g id="realistic-e195-lateral">
+  <!-- Fuselage Profile (Side View) -->
+  <path d="M -170,4 C -170,0 -140,-8 -90,-9 L 110,-9 C 145,-9 175,-5 195,1 C 205,4 205,7 195,9 C 175,13 145,15 110,15 L -90,15 C -135,15 -160,11 -170,4 Z" fill="#ffffff" stroke="#94a3b8" stroke-width="1.8"/>
+  <!-- Nose Radome Cone -->
+  <path d="M 185,-3 C 198,1 204,4 204,5 C 204,6 198,9 185,12 Z" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <!-- Cockpit Windshield (4-panel E2 cockpit) -->
+  <path d="M 160,-6 L 180,-4 L 183,1 L 162,0 Z" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <!-- Passenger Windows (2-by-2 E-Jets cabin) -->
+  <g fill="#1e293b" opacity="0.85">
+    <rect x="-65" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="-55" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="-45" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="-35" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="-25" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="-15" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="-5" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="5" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="15" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="25" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="35" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="45" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="55" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="65" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="75" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="85" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="95" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="105" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="115" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="125" y="-3" width="3.5" height="5" rx="1.2"/>
+  </g>
+  <!-- Passenger Doors -->
+  <rect x="142" y="-4" width="7" height="15" rx="1.5" fill="none" stroke="#94a3b8" stroke-width="1"/>
+  <rect x="-85" y="-4" width="7" height="15" rx="1.5" fill="none" stroke="#94a3b8" stroke-width="1"/>
+  <!-- Binter Livery Dynamic Swoosh (Green & Blue) -->
+  <path d="M -80,4 C -10,4 60,6 150,2 L 155,7 C 65,11 -5,9 -75,9 Z" fill="#059669"/>
+  <path d="M -70,9 C 0,9 70,11 160,7 L 163,12 C 73,15 5,14 -65,14 Z" fill="#0284c7"/>
+  <!-- Binter Green Tailfin (Vertical Stabilizer) -->
+  <path d="M -115,-8 L -175,-72 L -140,-72 L -80,-8 Z" fill="#059669" stroke="#047857" stroke-width="1.2"/>
+  <path d="M -155,-72 L -140,-72 L -85,-8 L -100,-8 Z" fill="#10b981"/>
+  <path d="M -145,-72 L -140,-72 L -90,-8 L -95,-8 Z" fill="#0284c7"/>
+  <!-- Horizontal Stabilizer Side Profile -->
+  <path d="M -155,-60 L -185,-60 L -180,-55 L -150,-55 Z" fill="#cbd5e1"/>
+  <!-- Main Wing Low Profile & Flap Fairings -->
+  <path d="M 0,10 L 40,28 L 50,28 L 25,10 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="1"/>
+  <!-- PW1900G Geared Turbofan Engine (Side View) -->
+  <!-- Pylon -->
+  <path d="M 35,4 L 45,4 L 40,12 L 30,12 Z" fill="#64748b"/>
+  <!-- Nacelle -->
+  <path d="M 15,10 L 65,10 C 72,10 75,15 75,22 C 75,29 72,34 65,34 L 15,34 C 10,34 8,29 8,22 C 8,15 10,10 15,10 Z" fill="#f8fafc" stroke="#475569" stroke-width="1.2"/>
+  <!-- Engine Intake Lip (Silver) -->
+  <path d="M 62,10 C 68,10 72,14 72,22 C 72,30 68,34 62,34 Z" fill="#334155" stroke="#94a3b8" stroke-width="1"/>
+  <!-- Exhaust Cone -->
+  <path d="M 8,17 L 0,22 L 8,27 Z" fill="#1e293b"/>
+  <!-- Binter Green Accent on Nacelle -->
+  <path d="M 30,12 L 52,12 L 52,32 L 30,32 Z" fill="#059669"/>
+  <!-- Nose & Main Landing Gear (optional / retracted or extended) -->
+</g>
+    </g>
       <text x="320" y="25" font-family="sans-serif" font-size="13" font-weight="800" fill="#34d399">TRAYECTORIA DE ESCAPE TCAS RA (0.25g / ≤5 seg)</text>
     </g>
 
@@ -119,10 +172,10 @@
         <g transform="translate(0, 140)">
           <rect width="445" height="135" rx="8" fill="#18263e" stroke="#10b981" stroke-width="1.5"/>
           <text x="20" y="28" font-size="15" font-weight="800" fill="#34d399">2. Volar al Trapecio Verde (Fly-to-Zone)</text>
-          <text x="20" y="52" font-size="13.5" font-weight="500" fill="#e2e8f0">• Ajustar cabeceo con suavidad para llevar el índice</text>
+          <text x="20" y="52" font-size="13.5" font-weight="500" fill="#e2e8f0">• Ajustar cabeceo suave al índice verde</text>
           <text x="20" y="74" font-size="13.5" font-weight="500" fill="#e2e8f0">del variómetro dentro de la franja verde del PFD.</text>
           <text x="20" y="98" font-size="13.5" font-weight="700" fill="#fbbf24">• Factor de carga estándar: ±0.25 g.</text>
-          <text x="20" y="120" font-size="13" font-weight="500" fill="#cbd5e1">• Escanear visualmente tráfico exterior y pantalla TCAS.</text>
+          <text x="20" y="120" font-size="13" font-weight="500" fill="#cbd5e1">• Escanear tráfico exterior y pantalla TCAS.</text>
         </g>
 
         <g transform="translate(0, 290)">
@@ -164,7 +217,7 @@
           <rect width="445" height="110" rx="8" fill="#18263e" stroke="#334155" stroke-width="1"/>
           <text x="20" y="28" font-size="15" font-weight="800" fill="#38bdf8">3. Monitoreo Activo</text>
           <text x="20" y="52" font-size="13.5" font-weight="500" fill="#cbd5e1">• Verificar que el PF sigue fielmente el trapecio verde.</text>
-          <text x="20" y="74" font-size="13.5" font-weight="500" fill="#cbd5e1">• Escanear visualmente tráfico exterior y en pantalla.</text>
+          <text x="20" y="74" font-size="13.5" font-weight="500" fill="#cbd5e1">• Escanear tráfico exterior y en pantalla.</text>
           <text x="20" y="94" font-size="13.5" font-weight="500" fill="#cbd5e1">• Estar atentos a avisos de inversión (Reversal RA).</text>
         </g>
       </g>

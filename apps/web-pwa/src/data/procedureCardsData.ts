@@ -1675,9 +1675,9 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
       'Desestabilización por debajo de la altura mínima: ¡Go-Around INMEDIATO y MANDATORIO!'
     ],
     summary: 'Estándar operacional para aproximaciones estabilizadas según Blue Team SOP, incluyendo límites de velocidad y descenso, política de frustrada obligatoria y diferenciación de técnicas de corrección de deriva según la arquitectura alar.',
-    diagramImage: './sop-diagrams/bt_sop_stabilized_approach.png',
-    diagramCaption: 'Blue Team SOP: Criterios de Aproximación Estabilizada y Ventana 1000/500 ft',
-    diagramNote: '1000 ft IMC / 500 ft VMC · Vref -5/+10 kt · Max 1000 ft/min · No virajes <300 ft AGL',
+    diagramImage: './sop-diagrams/bt_sop_stabilized_approach_vector.svg',
+    diagramCaption: 'Blue Team SOP: Infografía Vectorial de Aproximación Estabilizada (C172F & DA40D)',
+    diagramNote: '1000 ft IMC / 500 ft VMC · Vref -5/+10 kt · Max 1000 ft/min · Sideslip (C172) vs De-crab (DA40)',
     sections: [
       {
         title: '1. Requisitos Mandatorios de Estabilización',

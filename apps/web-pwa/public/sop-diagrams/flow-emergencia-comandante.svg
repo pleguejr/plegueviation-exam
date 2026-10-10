@@ -56,7 +56,74 @@
     <line x1="0" y1="900" x2="1600" y2="900"/>
     <line x1="530" y1="120" x2="530" y2="1200"/>
     <line x1="1060" y1="120" x2="1060" y2="1200"/>
+  
+    <!-- Realistic E195-E2 Top-View Silhouette -->
+    <g transform="translate(1360, 68) scale(0.35) rotate(-35)">
+      <g id="realistic-e195-e2" transform="translate(0,0)">
+  <!-- Fuselage Base -->
+  <path d="M -180,0 C -180,-10 -150,-14 -100,-15 L 120,-15 C 160,-15 190,-12 210,-4 C 225,2 225,5 210,9 C 190,14 160,15 120,15 L -100,15 C -150,15 -170,10 -180,0 Z" fill="#ffffff" stroke="#94a3b8" stroke-width="1.8"/>
+  <!-- Cockpit Windows -->
+  <path d="M 185,-5 L 202,-2 L 200,3 L 182,1 Z" fill="#0f172a" stroke="#38bdf8" stroke-width="0.8"/>
+  <path d="M 168,-6 L 183,-5 L 180,1 L 166,0 Z" fill="#1e293b"/>
+  <!-- Binter Livery Cheatline (Emerald Green & Sky Blue) -->
+  <path d="M -90,-2 L 180,-2 L 175,3 L -95,3 Z" fill="#059669"/>
+  <path d="M -80,3 L 175,3 L 170,7 L -85,7 Z" fill="#0284c7"/>
+  <!-- Passenger Windows Stripe -->
+  <g fill="#1e293b" opacity="0.85">
+    <!-- Cabin Windows dots -->
+    <rect x="-70" y="-8" width="3.5" height="4.5" rx="1.2"/>
+    <rect x="-60" y="-8" width="3.5" height="4.5" rx="1.2"/>
+    <rect x="-50" y="-8" width="3.5" height="4.5" rx="1.2"/>
+    <rect x="-40" y="-8" width="3.5" height="4.5" rx="1.2"/>
+    <rect x="-30" y="-8" width="3.5" height="4.5" rx="1.2"/>
+    <rect x="-20" y="-8" width="3.5" height="4.5" rx="1.2"/>
+    <rect x="-10" y="-8" width="3.5" height="4.5" rx="1.2"/>
+    <rect x="0" y="-8" width="3.5" height="4.5" rx="1.2"/>
+    <rect x="10" y="-8" width="3.5" height="4.5" rx="1.2"/>
+    <rect x="20" y="-8" width="3.5" height="4.5" rx="1.2"/>
+    <rect x="30" y="-8" width="3.5" height="4.5" rx="1.2"/>
+    <rect x="40" y="-8" width="3.5" height="4.5" rx="1.2"/>
+    <rect x="50" y="-8" width="3.5" height="4.5" rx="1.2"/>
+    <rect x="60" y="-8" width="3.5" height="4.5" rx="1.2"/>
+    <rect x="70" y="-8" width="3.5" height="4.5" rx="1.2"/>
+    <rect x="80" y="-8" width="3.5" height="4.5" rx="1.2"/>
+    <rect x="90" y="-8" width="3.5" height="4.5" rx="1.2"/>
+    <rect x="100" y="-8" width="3.5" height="4.5" rx="1.2"/>
+    <rect x="110" y="-8" width="3.5" height="4.5" rx="1.2"/>
+    <rect x="120" y="-8" width="3.5" height="4.5" rx="1.2"/>
+    <rect x="130" y="-8" width="3.5" height="4.5" rx="1.2"/>
+    <rect x="140" y="-8" width="3.5" height="4.5" rx="1.2"/>
   </g>
+  <!-- Main Wing Left (Top in 2D Planform) with High Aspect Ratio & Raked Wingtip -->
+  <path d="M 20,-12 L -25,-95 Q -28,-102 -20,-102 L -10,-100 L 45,-12 Z" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+  <!-- Winglet / Raked Tip Left (Binter Green) -->
+  <path d="M -25,-95 L -20,-105 L -10,-102 L -15,-95 Z" fill="#059669"/>
+  <!-- PW1900G Turbofan Engine Left with Pylon -->
+  <rect x="0" y="-38" width="16" height="6" fill="#64748b"/>
+  <path d="M -10,-42 L 35,-42 C 42,-42 45,-37 45,-30 C 45,-23 42,-18 35,-18 L -10,-18 Z" fill="#f1f5f9" stroke="#475569" stroke-width="1.2"/>
+  <!-- Engine Cowling Binter Stripe -->
+  <path d="M 5,-42 L 25,-42 L 25,-18 L 5,-18 Z" fill="#059669"/>
+  <!-- Engine Nacelle Intake -->
+  <ellipse cx="35" cy="-30" rx="4" ry="11" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+  <!-- Main Wing Right (Bottom in Planform) -->
+  <path d="M 20,12 L -25,95 Q -28,102 -20,102 L -10,100 L 45,12 Z" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+  <!-- Winglet / Raked Tip Right (Binter Green) -->
+  <path d="M -25,95 L -20,105 L -10,100 L -15,95 Z" fill="#059669"/>
+  <!-- PW1900G Turbofan Engine Right with Pylon -->
+  <rect x="0" y="32" width="16" height="6" fill="#64748b"/>
+  <path d="M -10,18 L 35,18 C 42,18 45,23 45,30 C 45,37 42,42 35,42 L -10,42 Z" fill="#f1f5f9" stroke="#475569" stroke-width="1.2"/>
+  <!-- Engine Cowling Binter Stripe Right -->
+  <path d="M 5,18 L 25,18 L 25,42 L 5,42 Z" fill="#059669"/>
+  <!-- Engine Nacelle Intake Right -->
+  <ellipse cx="35" cy="30" rx="4" ry="11" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+  <!-- Horizontal Stabilizer Left & Right -->
+  <path d="M -135,-8 L -175,-48 L -165,-48 L -120,-8 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="1.2"/>
+  <path d="M -135,8 L -175,48 L -165,48 L -120,8 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="1.2"/>
+  <!-- Vertical Fin / Tail with Binter B Logo Colors -->
+  <path d="M -130,-3 L -178,-1 L -190,0 L -178,1 L -130,3 Z" fill="#059669"/>
+</g>
+    </g>
+</g>
 
   <!-- ==================== HEADER BANNER ==================== -->
   <g transform="translate(40, 25)">

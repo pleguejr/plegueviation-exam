@@ -20,25 +20,24 @@
      - Sistemas de Aeronave (`DA40D-SYS-*`): 20 preguntas
    - 0% asimetría fuera de ±15%, distribución 25% A/B/C/D exacta (23 de cada una), citas literales y 58 recortes visuales oficiales a 200 DPI (`public/manual-crops/fleet-da40d/`).
 4. **Tarjetas SOP Blue Team Flight School (Normal Operations):**
-   - Añadidas 8 tarjetas operacionales completas en `apps/web-pwa/src/data/procedureCardsData.ts` con 37 recortes de alta resolución en `public/sop-diagrams/`:
-     - Briefing Normal IFR y Briefing Visual Corto (SOP 6.8 & 6.9)
-     - Briefing de Despegue y 4 Escenarios de Fallo Monomotor (SOP 6.10)
-     - Despegue, «Luces, Cámara y Acción» y Flujo 500 ft AGL (SOP 6.11)
-     - Crucero y Chequeo Periódico FREDA cada 20 min (SOP 6.13)
-     - Criterios de Aproximación Estabilizada y Viento Cruzado De-crab / Sideslip (SOP 4 & 6.16)
-     - Go-Around «POTENCIA, MORRO Y FLAP» (SOP 6.17)
-     - Maniobras Avanzadas VFR, 5 Tipos de Pérdidas y Vuelo Lento (SOP 9.9)
-     - Procedimientos Locales Tenerife Sur (GCTS) y Norte (GCXO / Anaga F22) (SOP 7)
-     - Callouts Estandarizados de Cabina (SOP 11)
+   - Añadidas 8 tarjetas operacionales completas en `apps/web-pwa/src/data/procedureCardsData.ts` con 37 recortes de alta resolución en `public/sop-diagrams/`.
    - Selector por Operador en `ProcedureCardsScreen.tsx`: Todos, Binter Canarias, Blue Team y NetJets Europe.
    - Cumplimiento estricto de contraste modo día (`.theme-light`) según skill `day-mode-ui-contrast`.
-5. **Cuadro Resumen de Velocidades y Reglas de Flota:**
-   - Soporte nativo de `da40d` en `aircraftRules.ts` y tabla comparativa de velocidades oficiales en `SpeedSummaryTable.tsx`.
-   - Registro de `fleet-da40d` en `build_banks.py`, `import_bank.py`, `bank_validator.py`, `questionsService.ts` y `Dashboard.tsx`.
-   - Verificado con 0 errores de esquema, 0 errores TypeScript (`tsc --noEmit`), compilación de Vite completada (`dist/`).
+5. **Corrección de Desbordamiento de Texto en Infografías y UI:**
+   - Reestructurado el layout de `.procedure-sop-step-overlay` y `.procedure-sop-step-grid` con `word-break: break-word`, `minmax(220px, 1fr)` y padding controlado para evitar que ningún texto se corte o sobresalga de sus tarjetas.
+   - Ajustadas las cajas de texto y rotulación en las infografías SVG (`briefing-twin-autoland.svg`, `emg-egpws-terrain.svg`, `emg-tcas-ra.svg`, `emg-windshear.svg`, `briefing-lvo-lvto.svg`).
+6. **Rediseño Ultrarrealista de Siluetas de Aeronaves en Infografías SVG:**
+   - Sustituidos los polígonos geométricos simples por modelos vectoriales fieles a la realidad:
+     - **Embraer 195-E2**: Turbofán PW1900G con góndolas y pilones, morro parabólico, parabrisas de 4 paneles, ventanillas de cabina, puertas y deriva con librea verde/azul de Binter Canarias (vista lateral y de planta).
+     - **Diamond DA40 TDI (EC-OKC)**: Cola en T, cabina de burbuja de composite, hélice MT-Propeller tripala con cono de ogiva y carenados de ruedas aerodinámicos.
+     - **Cessna 172F (EC-NNX)**: Ala alta arriostrada con montantes, hélice tripala MT-Propeller, empenaje Omni-Vision y tren triciclo.
+   - Generada la nueva infografía vectorial `bt_sop_stabilized_approach_vector.svg` (Criterios de Aproximación Estabilizada 1000/500 ft, puertas de chequeo, técnicas Sideslip vs De-crab) conectada a la tarjeta SOP de Blue Team.
+7. **Verificación y Calidad:**
+   - 0 errores de TypeScript (`tsc`).
+   - Compilación completa con Vite (`npm run build`) validada.
 
 ## 🎯 Próximos pasos / Pendientes al retomar
 - Continuar con simulaciones de examen de flotas ligeras (`fleet-c172f` y `fleet-da40d`).
 - Realizar pruebas interactivas de las tarjetas SOP de Blue Team en la PWA.
-- Expandir bancos o tarjetas adicionales a petición del usuario.
+- Añadir infografías vectoriales adicionales con los modelos de Cessna 172F y Diamond DA40 si se solicita.
 

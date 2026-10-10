@@ -72,11 +72,64 @@
     <path d="M 350,120 Q 550,135 750,55 L 1050,25" fill="none" stroke="#22c55e" stroke-width="3.5" stroke-dasharray="6,3"/>
 
     <!-- Aircraft Climbing at 15° Pitch towards PLI (Binter E195-E2) -->
-    <g transform="translate(680, 80) rotate(-18) scale(0.65)">
-      <path d="M -160,0 L 160,0 Q 200,0 180,5 L -140,5 Z" fill="#f8fafc" stroke="#94a3b8"/>
-      <path d="M 0,0 L -50,-45 L -25,-45 L 30,0 Z" fill="#059669"/>
-      <path d="M 0,0 L -50,45 L -25,45 L 30,0 Z" fill="#059669"/>
-      <path d="M -120,0 L -160,-35 L -140,-35 L -100,0 Z" fill="#0284c7"/>
+    <g transform="translate(560, 65) rotate(15) scale(0.65)">
+<g id="realistic-e195-lateral">
+  <!-- Fuselage Profile (Side View) -->
+  <path d="M -170,4 C -170,0 -140,-8 -90,-9 L 110,-9 C 145,-9 175,-5 195,1 C 205,4 205,7 195,9 C 175,13 145,15 110,15 L -90,15 C -135,15 -160,11 -170,4 Z" fill="#ffffff" stroke="#94a3b8" stroke-width="1.8"/>
+  <!-- Nose Radome Cone -->
+  <path d="M 185,-3 C 198,1 204,4 204,5 C 204,6 198,9 185,12 Z" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <!-- Cockpit Windshield (4-panel E2 cockpit) -->
+  <path d="M 160,-6 L 180,-4 L 183,1 L 162,0 Z" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <!-- Passenger Windows (2-by-2 E-Jets cabin) -->
+  <g fill="#1e293b" opacity="0.85">
+    <rect x="-65" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="-55" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="-45" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="-35" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="-25" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="-15" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="-5" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="5" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="15" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="25" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="35" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="45" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="55" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="65" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="75" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="85" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="95" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="105" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="115" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="125" y="-3" width="3.5" height="5" rx="1.2"/>
+  </g>
+  <!-- Passenger Doors -->
+  <rect x="142" y="-4" width="7" height="15" rx="1.5" fill="none" stroke="#94a3b8" stroke-width="1"/>
+  <rect x="-85" y="-4" width="7" height="15" rx="1.5" fill="none" stroke="#94a3b8" stroke-width="1"/>
+  <!-- Binter Livery Dynamic Swoosh (Green & Blue) -->
+  <path d="M -80,4 C -10,4 60,6 150,2 L 155,7 C 65,11 -5,9 -75,9 Z" fill="#059669"/>
+  <path d="M -70,9 C 0,9 70,11 160,7 L 163,12 C 73,15 5,14 -65,14 Z" fill="#0284c7"/>
+  <!-- Binter Green Tailfin (Vertical Stabilizer) -->
+  <path d="M -115,-8 L -175,-72 L -140,-72 L -80,-8 Z" fill="#059669" stroke="#047857" stroke-width="1.2"/>
+  <path d="M -155,-72 L -140,-72 L -85,-8 L -100,-8 Z" fill="#10b981"/>
+  <path d="M -145,-72 L -140,-72 L -90,-8 L -95,-8 Z" fill="#0284c7"/>
+  <!-- Horizontal Stabilizer Side Profile -->
+  <path d="M -155,-60 L -185,-60 L -180,-55 L -150,-55 Z" fill="#cbd5e1"/>
+  <!-- Main Wing Low Profile & Flap Fairings -->
+  <path d="M 0,10 L 40,28 L 50,28 L 25,10 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="1"/>
+  <!-- PW1900G Geared Turbofan Engine (Side View) -->
+  <!-- Pylon -->
+  <path d="M 35,4 L 45,4 L 40,12 L 30,12 Z" fill="#64748b"/>
+  <!-- Nacelle -->
+  <path d="M 15,10 L 65,10 C 72,10 75,15 75,22 C 75,29 72,34 65,34 L 15,34 C 10,34 8,29 8,22 C 8,15 10,10 15,10 Z" fill="#f8fafc" stroke="#475569" stroke-width="1.2"/>
+  <!-- Engine Intake Lip (Silver) -->
+  <path d="M 62,10 C 68,10 72,14 72,22 C 72,30 68,34 62,34 Z" fill="#334155" stroke="#94a3b8" stroke-width="1"/>
+  <!-- Exhaust Cone -->
+  <path d="M 8,17 L 0,22 L 8,27 Z" fill="#1e293b"/>
+  <!-- Binter Green Accent on Nacelle -->
+  <path d="M 30,12 L 52,12 L 52,32 L 30,32 Z" fill="#059669"/>
+  <!-- Nose & Main Landing Gear (optional / retracted or extended) -->
+</g>
     </g>
     <text x="760" y="50" font-family="sans-serif" font-size="13.5" font-weight="900" fill="#34d399">PITCH 15° NOSE UP / PLI</text>
 
@@ -119,7 +172,7 @@
           <rect width="445" height="125" rx="8" fill="rgba(220, 38, 38, 0.2)" stroke="#ef4444" stroke-width="1.5"/>
           <text x="20" y="28" font-size="15" font-weight="800" fill="#f87171">Reactiva en Vuelo (Sistema WSHR)</text>
           <text x="20" y="52" font-size="14" font-weight="900" fill="#ffffff">"WINDSHEAR, WINDSHEAR, WINDSHEAR"</text>
-          <text x="20" y="76" font-size="13" font-weight="500" fill="#fecaca">Activación de la guía de escape entre 10 ft y 1.500 ft AGL.</text>
+          <text x="20" y="76" font-size="13" font-weight="500" fill="#fecaca">Guía de escape activa de 10 a 1.500 ft AGL.</text>
           <text x="20" y="98" font-size="13" font-weight="700" fill="#facc15">➔ ¡EJECUTAR MANIOBRA DE ESCAPE INMEDIATA!</text>
         </g>
       </g>
@@ -154,7 +207,7 @@
           <rect width="445" height="100" rx="8" fill="#18263e" stroke="#334155" stroke-width="1"/>
           <text x="20" y="28" font-size="15" font-weight="800" fill="#38bdf8">3. Monitoreo Activo PM</text>
           <text x="20" y="52" font-size="13.5" font-weight="500" fill="#cbd5e1">• Verificar empuje máximo de reserva en EICAS.</text>
-          <text x="20" y="74" font-size="13.5" font-weight="500" fill="#cbd5e1">• Cantar activamente altitud y variómetro de ascenso.</text>
+          <text x="20" y="74" font-size="13.5" font-weight="500" fill="#cbd5e1">• Cantar altitud y régimen de variómetro.</text>
         </g>
       </g>
     </g>
@@ -181,7 +234,7 @@
           <text x="20" y="52" font-size="13.5" font-weight="700" fill="#ffffff">PF: "GO AROUND, FLAP 2 (4)"</text>
           <text x="20" y="74" font-size="13.5" font-weight="700" fill="#38bdf8">PM: "POSITIVE RATE"</text>
           <text x="20" y="96" font-size="13.5" font-weight="700" fill="#ffffff">PF: "GEAR UP"</text>
-          <text x="20" y="118" font-size="13" font-weight="500" fill="#cbd5e1">• Acelerar a VFS y continuar navegación a altitud segura.</text>
+          <text x="20" y="118" font-size="13" font-weight="500" fill="#cbd5e1">• Acelerar a VFS y continuar a altitud segura.</text>
         </g>
 
         <g transform="translate(0, 300)">

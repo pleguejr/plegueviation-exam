@@ -24,9 +24,15 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
     - Procedimientos Locales Tenerife Sur (GCTS) y Norte (GCXO / Anaga F22) (SOP 7)
     - Callouts Oficiales de Cabina y Parámetros (SOP 11)
   - Filtro por Operador en `ProcedureCardsScreen.tsx`: Todos, Binter Canarias, Blue Team Flight School y NetJets Europe.
-  - Pleno cumplimiento de contraste modo día (`.theme-light`) verificado según `day-mode-ui-contrast`.
+- **Rediseño Ultrarrealista de Infografías Vectoriales & Corrección de Textos:**
+  - Sustituidos los polígonos geométricos simples por siluetas detalladas con libreas y fisonomía real:
+    - **Embraer 195-E2**: Motores PW1900G con pilones, 4 paneles de cabina, ventanillas y librea oficial Binter Canarias (verde y azul) en planta y perfil.
+    - **Diamond DA40 TDI (EC-OKC)**: Cola en T, cabina de composite, hélice tripala MT-Propeller con cono y carenados de ruedas.
+    - **Cessna 172F (EC-NNX)**: Ala alta con montantes de arriostramiento, hélice MT-Propeller, deriva Omni-Vision de 1965 y tren triciclo.
+  - Corrección integral de desbordamientos de texto en el overlay de pasos SOP (`.procedure-sop-step-overlay`, `ProcedureCardsScreen.tsx` e `index.css`) y en las infografías SVG.
+  - Nueva infografía vectorial `bt_sop_stabilized_approach_vector.svg` incorporada en la tarjeta SOP de Blue Team sobre aproximación estabilizada (1.000 ft / 500 ft, puertas y técnicas de viento Sideslip vs De-crab).
 - **Cuadro Resumen de Velocidades (`SpeedSummaryTable`):** Implementada tabla técnica para DA40 D (Vne, Vno, Va, Vfe, Vso, Vs1, Vr, Vx, Vy, Vref, Vglide).
-- **Compilación de catálogo:** Compilados y validados los 2.262 reactivos activos con 0 errores de esquema y 0 errores de TypeScript.
+- **Compilación de catálogo:** Compilados y validados los 2.262 reactivos activos con 0 errores de esquema y 0 errores de TypeScript (`npm run build` exitoso).
 
 ---
 

@@ -81,16 +81,64 @@
     <g transform="translate(1005, 0)">
       <rect width="515" height="110" rx="12" fill="url(#cardGrad)" stroke="#253856" stroke-width="2" filter="url(#shadow)"/>
       <!-- Small Binter E195-E2 Profile -->
-      <g transform="translate(30, 60) scale(0.85)">
-        <path d="M 0,-5 Q 40,-10 180,-10 L 320,-8 Q 380,-5 420,0 Q 380,5 320,8 L 180,10 Q 40,10 0,5 Z" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
-        <path d="M 100,-9 Q 180,0 260,-9 L 300,-8 Q 220,1 140,-8 Z" fill="#059669"/>
-        <path d="M 120,-8 Q 200,3 280,-6 L 320,-5 Q 240,4 160,-5 Z" fill="#0284c7"/>
-        <path d="M 390,-3 L 410,-1 L 400,1 L 385,-1 Z" fill="#1e293b"/>
-        <path d="M 170,0 L 220,48 L 240,48 L 205,0 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="1.5"/>
-        <path d="M 240,48 L 250,60 L 236,60 L 228,48 Z" fill="#059669"/>
-        <rect x="180" y="15" width="48" height="15" rx="6" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
-        <path d="M 20,-6 L -35,-48 L -10,-48 L 45,-6 Z" fill="#059669"/>
-        <path d="M 5,-6 L -25,-48 L -10,-48 L 25,-6 Z" fill="#0284c7"/>
+      <g transform="translate(180, 50) scale(0.72)">
+<g id="realistic-e195-lateral">
+  <!-- Fuselage Profile (Side View) -->
+  <path d="M -170,4 C -170,0 -140,-8 -90,-9 L 110,-9 C 145,-9 175,-5 195,1 C 205,4 205,7 195,9 C 175,13 145,15 110,15 L -90,15 C -135,15 -160,11 -170,4 Z" fill="#ffffff" stroke="#94a3b8" stroke-width="1.8"/>
+  <!-- Nose Radome Cone -->
+  <path d="M 185,-3 C 198,1 204,4 204,5 C 204,6 198,9 185,12 Z" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <!-- Cockpit Windshield (4-panel E2 cockpit) -->
+  <path d="M 160,-6 L 180,-4 L 183,1 L 162,0 Z" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <!-- Passenger Windows (2-by-2 E-Jets cabin) -->
+  <g fill="#1e293b" opacity="0.85">
+    <rect x="-65" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="-55" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="-45" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="-35" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="-25" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="-15" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="-5" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="5" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="15" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="25" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="35" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="45" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="55" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="65" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="75" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="85" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="95" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="105" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="115" y="-3" width="3.5" height="5" rx="1.2"/>
+    <rect x="125" y="-3" width="3.5" height="5" rx="1.2"/>
+  </g>
+  <!-- Passenger Doors -->
+  <rect x="142" y="-4" width="7" height="15" rx="1.5" fill="none" stroke="#94a3b8" stroke-width="1"/>
+  <rect x="-85" y="-4" width="7" height="15" rx="1.5" fill="none" stroke="#94a3b8" stroke-width="1"/>
+  <!-- Binter Livery Dynamic Swoosh (Green & Blue) -->
+  <path d="M -80,4 C -10,4 60,6 150,2 L 155,7 C 65,11 -5,9 -75,9 Z" fill="#059669"/>
+  <path d="M -70,9 C 0,9 70,11 160,7 L 163,12 C 73,15 5,14 -65,14 Z" fill="#0284c7"/>
+  <!-- Binter Green Tailfin (Vertical Stabilizer) -->
+  <path d="M -115,-8 L -175,-72 L -140,-72 L -80,-8 Z" fill="#059669" stroke="#047857" stroke-width="1.2"/>
+  <path d="M -155,-72 L -140,-72 L -85,-8 L -100,-8 Z" fill="#10b981"/>
+  <path d="M -145,-72 L -140,-72 L -90,-8 L -95,-8 Z" fill="#0284c7"/>
+  <!-- Horizontal Stabilizer Side Profile -->
+  <path d="M -155,-60 L -185,-60 L -180,-55 L -150,-55 Z" fill="#cbd5e1"/>
+  <!-- Main Wing Low Profile & Flap Fairings -->
+  <path d="M 0,10 L 40,28 L 50,28 L 25,10 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="1"/>
+  <!-- PW1900G Geared Turbofan Engine (Side View) -->
+  <!-- Pylon -->
+  <path d="M 35,4 L 45,4 L 40,12 L 30,12 Z" fill="#64748b"/>
+  <!-- Nacelle -->
+  <path d="M 15,10 L 65,10 C 72,10 75,15 75,22 C 75,29 72,34 65,34 L 15,34 C 10,34 8,29 8,22 C 8,15 10,10 15,10 Z" fill="#f8fafc" stroke="#475569" stroke-width="1.2"/>
+  <!-- Engine Intake Lip (Silver) -->
+  <path d="M 62,10 C 68,10 72,14 72,22 C 72,30 68,34 62,34 Z" fill="#334155" stroke="#94a3b8" stroke-width="1"/>
+  <!-- Exhaust Cone -->
+  <path d="M 8,17 L 0,22 L 8,27 Z" fill="#1e293b"/>
+  <!-- Binter Green Accent on Nacelle -->
+  <path d="M 30,12 L 52,12 L 52,32 L 30,32 Z" fill="#059669"/>
+  <!-- Nose & Main Landing Gear (optional / retracted or extended) -->
+</g>
       </g>
       <text x="500" y="30" font-family="sans-serif" font-size="13" font-weight="800" fill="#10b981" text-anchor="end">EMBRAER 195-E2</text>
       <text x="500" y="50" font-family="sans-serif" font-size="11.5" font-weight="600" fill="#94a3b8" text-anchor="end">Binter Canarias</text>

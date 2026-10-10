@@ -2725,64 +2725,95 @@ table th {
   min-width: 0;
 }
 .procedure-sop-step-overlay {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.75rem 0.85rem;
+  background: linear-gradient(180deg, rgba(15,23,42,0.95), rgba(7,13,24,0.98));
+  border-top: 1px solid rgba(56,189,248,0.25);
+}
+.procedure-sop-step-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 0.4rem;
-  padding: 0.55rem 0.6rem 0.65rem;
-  background: linear-gradient(180deg, rgba(248,250,252,0.92), rgba(241,245,249,0.98));
-  border-top: 1px solid rgba(148,163,184,0.35);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.6rem;
 }
 .procedure-sop-step-box {
   display: flex;
-  gap: 0.45rem;
+  gap: 0.6rem;
   align-items: flex-start;
-  padding: 0.45rem 0.55rem;
-  border-radius: 0.65rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.75rem;
   border: 1px solid transparent;
-  background: #fff;
-  box-shadow: 0 1px 2px rgba(15,23,42,0.06);
+  background: rgba(30, 41, 59, 0.7);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.15s ease;
+}
+.procedure-sop-step-box:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 .procedure-sop-step-num {
   flex-shrink: 0;
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1.4rem;
+  height: 1.4rem;
   border-radius: 999px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 900;
   color: #fff;
+  margin-top: 0.1rem;
 }
 .procedure-sop-step-label {
   margin: 0;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 800;
-  line-height: 1.25;
-  color: #0f172a;
+  line-height: 1.35;
+  color: #f8fafc;
+  word-break: break-word;
 }
 .procedure-sop-step-detail {
-  margin: 0.15rem 0 0;
-  font-size: 9px;
-  line-height: 1.3;
-  color: #475569;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  margin: 0.25rem 0 0;
+  font-size: 10px;
+  line-height: 1.4;
+  color: #cbd5e1;
+  word-break: break-word;
 }
-.procedure-sop-step-sky { border-color: #7dd3fc; background: #f0f9ff; }
+.procedure-sop-step-sky { border-color: rgba(56,189,248,0.4); background: rgba(14,165,233,0.12); }
 .procedure-sop-step-sky .procedure-sop-step-num { background: #0284c7; }
-.procedure-sop-step-teal { border-color: #5eead4; background: #f0fdfa; }
+.procedure-sop-step-teal { border-color: rgba(45,212,191,0.4); background: rgba(20,184,166,0.12); }
 .procedure-sop-step-teal .procedure-sop-step-num { background: #0d9488; }
-.procedure-sop-step-amber { border-color: #fcd34d; background: #fffbeb; }
+.procedure-sop-step-amber { border-color: rgba(251,191,36,0.4); background: rgba(245,158,11,0.12); }
 .procedure-sop-step-amber .procedure-sop-step-num { background: #d97706; }
-.procedure-sop-step-indigo { border-color: #a5b4fc; background: #eef2ff; }
+.procedure-sop-step-indigo { border-color: rgba(129,140,248,0.4); background: rgba(99,102,241,0.12); }
 .procedure-sop-step-indigo .procedure-sop-step-num { background: #4f46e5; }
-.procedure-sop-step-rose { border-color: #fda4af; background: #fff1f2; }
+.procedure-sop-step-rose { border-color: rgba(251,113,133,0.4); background: rgba(244,63,94,0.12); }
 .procedure-sop-step-rose .procedure-sop-step-num { background: #e11d48; }
-.procedure-sop-step-emerald { border-color: #6ee7b7; background: #ecfdf5; }
+.procedure-sop-step-emerald { border-color: rgba(52,211,153,0.4); background: rgba(16,185,129,0.12); }
 .procedure-sop-step-emerald .procedure-sop-step-num { background: #059669; }
+
+/* Day mode overrides for procedure-sop-step */
+.theme-light .procedure-sop-step-overlay {
+  background: linear-gradient(180deg, #f8fafc, #f1f5f9) !important;
+  border-top-color: #cbd5e1 !important;
+}
+.theme-light .procedure-sop-step-box {
+  background: #ffffff !important;
+  box-shadow: 0 1px 3px rgba(15,23,42,0.08) !important;
+}
+.theme-light .procedure-sop-step-label {
+  color: #0f172a !important;
+}
+.theme-light .procedure-sop-step-detail {
+  color: #334155 !important;
+}
+.theme-light .procedure-sop-step-sky { border-color: #7dd3fc !important; background: #f0f9ff !important; }
+.theme-light .procedure-sop-step-teal { border-color: #5eead4 !important; background: #f0fdfa !important; }
+.theme-light .procedure-sop-step-amber { border-color: #fcd34d !important; background: #fffbeb !important; }
+.theme-light .procedure-sop-step-indigo { border-color: #a5b4fc !important; background: #eef2ff !important; }
+.theme-light .procedure-sop-step-rose { border-color: #fda4af !important; background: #fff1f2 !important; }
+.theme-light .procedure-sop-step-emerald { border-color: #6ee7b7 !important; background: #ecfdf5 !important; }
 .procedure-sop-figure-caption {
   display: flex;
   flex-direction: column;
