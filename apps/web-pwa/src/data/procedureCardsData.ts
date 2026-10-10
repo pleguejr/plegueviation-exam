@@ -1860,5 +1860,190 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
         ]
       }
     ]
+  },
+  {
+    id: 'card-bt-c172f-normal-checklist',
+    category: 'normal',
+    title: 'Blue Team: Cessna 172F Normal Checklist V.6 (EC-NNX / TAE 125)',
+    subtitle: 'Flujo completo oficial desde cabina y prevuelo hasta parada de motor y abandono de aeronave',
+    manualRef: 'Blue Team Flight School Checklist Normal V.6 & POH TAE 125',
+    airplane: 'Blue Team Flight School / Reims-Cessna F172F (EC-NNX)',
+    badges: ['Blue Team', 'C172F', 'Normal Checklist V.6', 'TAE 125', 'FADEC'],
+    goldenRules: [
+      'Engine Master OFF antes de conectar batería y main bus.',
+      'Comprobación de FADEC Test Button en Before Takeoff: mantener pulsado durante todo el ciclo hasta finalizar chequeo.',
+      'Al arrancar el TAE 125: comprobar ascenso de presión de aceite en menos de 3 segundos (< 3 sec).',
+      'FADEC Back-up Battery Test: Battery & Main Bus OFF durante 10 segundos, el motor DEBE operar con total normalidad.',
+      'Parada de motor: esperar obligatoriamente 2 MINUTOS a ralentí antes de cortar Engine Master para refrigerar el turbocompresor.'
+    ],
+    summary: 'Lista de verificación normal oficial completa para la Cessna 172F diésel de Blue Team Flight School (V.6), abarcando inspección exterior, arranque del motor TAE 125-02, chequeo FADEC dual, despegue, crucero, aproximación, aterrizaje y enfriamiento de turbo.',
+    diagramImage: './sop-diagrams/bt_c172f_normal_checklist_page-1.png',
+    diagramCaption: 'Blue Team Checklist Oficial: Cessna 172F Normal Checklist V.6 (Página 1/2)',
+    diagramNote: 'Cabina · Exterior · Before Engine Start · Engine Start · FADEC Backup Test · Rodaje · Despegue',
+    sections: [
+      {
+        title: '1. Cabin & Preflight Walkaround',
+        color: 'sky',
+        items: [
+          { role: 'STEP', action: 'Documents:', callout: 'ONBOARD' },
+          { role: 'STEP', action: 'Fire Extinguisher:', callout: 'CHECK GREEN' },
+          { role: 'STEP', action: 'Control Lock:', callout: 'REMOVE' },
+          { role: 'ALERT', action: 'Engine Master:', callout: 'OFF' },
+          { role: 'STEP', action: 'Avionic Switch:', callout: 'OFF' },
+          { role: 'STEP', action: 'Battery & Main Bus Switch:', callout: 'ON' },
+          { role: 'STEP', action: 'Fuel Qty & Fuel Temp:', callout: 'CHECK' },
+          { role: 'STEP', action: 'Light "Water Level":', callout: 'CHECK OFF' },
+          { role: 'STEP', action: 'Lights:', callout: 'CHECK' },
+          { role: 'STEP', action: 'Flaps:', callout: 'DOWN' },
+          { role: 'STEP', action: 'Pitot Heat & Stall Warning:', callout: 'CHECK' },
+          { role: 'STEP', action: 'Battery & Main Bus Switch:', callout: 'OFF' },
+          { role: 'STEP', action: 'Static Alt:', callout: 'OFF' },
+          { role: 'ALERT', action: 'Fuel Selector Valve / Fuel Shut-off:', callout: 'BOTH / ON (PUSH FULL IN)' },
+          { role: 'STEP', action: 'Exterior Walkaround:', details: 'Fuselaje, empenaje, timones libres, ala derecha, morro (drenaje reservoir, aceite motor >medio, hélice MT sin daños, pata de morro) y ala izquierda.' }
+        ]
+      },
+      {
+        title: '2. Before Engine Start & Engine Start',
+        color: 'emerald',
+        items: [
+          { role: 'STEP', action: 'Wheel Chocks:', callout: 'ONBOARD' },
+          { role: 'STEP', action: 'Preflight Inspection:', callout: 'DONE' },
+          { role: 'STEP', action: 'Seat & Seatbelts:', callout: 'SET & FASTEN' },
+          { role: 'STEP', action: 'Doors & Windows:', callout: 'CLOSED & LOCKED' },
+          { role: 'STEP', action: 'Fuel Selector / Fuel Shut-off:', callout: 'BOTH / ON (PUSH FULL IN)' },
+          { role: 'STEP', action: 'Avionics, Electrical Equip & Lights:', callout: 'OFF' },
+          { role: 'STEP', action: 'Circuit Breakers:', callout: 'CHECK ALL IN' },
+          { role: 'STEP', action: 'Parking Brake:', callout: 'SET' },
+          { role: 'STEP', action: 'Battery, Main Bus & Alternator Switch:', callout: 'ON' },
+          { role: 'STEP', action: 'Thrust Lever / Load Display:', callout: 'CHECK FREE MOVEMENT / 0% AT 0 RPM' },
+          { role: 'STEP', action: 'Electrical Fuel Pump:', callout: 'ON' },
+          { role: 'STEP', action: 'Beacon & Nav Lights:', callout: 'ON' },
+          { role: 'STEP', action: 'Thrust Lever:', callout: 'IDLE' },
+          { role: 'ALERT', action: 'Propeller:', callout: '"PROP CLEAR"' },
+          { role: 'STEP', action: 'Engine Master:', callout: 'ON (UNTIL GLOW LIGHT IS OFF)' },
+          { role: 'STEP', action: 'Starter Switch:', callout: 'ACTIVATE UNTIL REACHING 600 RPM' },
+          { role: 'ALERT', action: 'Oil Pressure:', callout: 'CHECK RISING < 3 SEC' },
+          { role: 'STEP', action: 'CED 125 Test Knob:', callout: 'PRESS 2 SEC' },
+          { role: 'STEP', action: 'Ammeter & Voltmeter:', callout: 'CHARGING - GREEN' },
+          { role: 'ALERT', action: 'FADEC Backup Battery Test:', details: 'Battery & Main Bus Switch OFF durante 10 segundos. El motor debe operar con total normalidad. Battery & Main Bus ON de nuevo.' },
+          { role: 'STEP', action: 'Avionics Switch & Radios:', callout: 'ON' },
+          { role: 'STEP', action: 'Electric Fuel Pump:', callout: 'OFF' },
+          { role: 'STEP', action: 'Transponder & Flaps:', callout: 'STBY + CODE / RETRACT' }
+        ]
+      },
+      {
+        title: '3. Taxi & Before Takeoff (FADEC Test)',
+        color: 'amber',
+        items: [
+          { role: 'STEP', action: 'Taxi Light & Brakes:', callout: 'ON / CHECK' },
+          { role: 'STEP', action: 'Instrumentos de Viraje / Giróscopo:', callout: 'CHECK (Turn Coord, Gyro, Attitude)' },
+          { role: 'STEP', action: 'Alineación Cara al Viento & Freno:', callout: 'PARKING BRAKE SET / TAXI LIGHT OFF' },
+          { role: 'STEP', action: 'Throttle / Doors & Windows:', callout: 'IDLE / CLSD & LOCKED' },
+          { role: 'STEP', action: 'Flight Controls & Trim:', callout: 'FREE & CORRECT / SET FOR T/O' },
+          { role: 'STEP', action: 'Flaps:', callout: '10º T/O' },
+          { role: 'STEP', action: 'Fuel Selector:', callout: 'BOTH' },
+          { role: 'ALERT', action: 'FADEC Test:', details: 'Thrust Lever en IDLE. Mantener pulsado el botón FADEC TEST durante TODO el ciclo de prueba. FADEC comprueba canales A y B; soltar al terminar.' },
+          { role: 'ALERT', action: 'Force B Switch Check:', details: 'Seleccionar interruptor FORCE B: el motor debe funcionar normalmente. Regresar a AUTOMATIC.' },
+          { role: 'STEP', action: 'Engine Instruments & Ammeter:', callout: 'GREEN / GREEN (Suction 5 PSI)' },
+          { role: 'STEP', action: 'Electric Fuel Pump & Briefing:', callout: 'ON / DONE' }
+        ]
+      },
+      {
+        title: '4. Line Up, Takeoff, Climb & Cruise',
+        color: 'sky',
+        items: [
+          { role: 'STEP', action: 'Line Up:', callout: 'Clearance RECVD · LDG Light ON · Strobe ON · Transponder ALT · RWY Hdg CHECK' },
+          { role: 'STEP', action: 'Normal Takeoff Power:', callout: 'Gently apply full power · Engine instruments all green' },
+          { role: 'ALERT', action: 'Velocidades de Despegue:', callout: 'Vr 60 KIAS · Vx 60-65 KIAS · Vy 75 KIAS' },
+          { role: 'STEP', action: 'After Takeoff (500 ft AGL):', callout: 'Vy 75 KIAS · Flaps UP · LDG Light OFF · Electric Fuel Pump OFF' },
+          { role: 'STEP', action: 'Climb Speed:', callout: '75 - 85 KIAS' },
+          { role: 'STEP', action: 'Cruise Power & Monitoring:', callout: '70-75% Power setting · Trim adjust · Fuel Qty & Temp monitor' }
+        ]
+      },
+      {
+        title: '5. Descent, Landing, Go-Around & Shutdown',
+        color: 'rose',
+        items: [
+          { role: 'STEP', action: 'Before Landing:', callout: 'Fuel BOTH · Seats FASTEN · LDG Light ON · Fuel Pump ON · <110 KIAS Flaps 10º' },
+          { role: 'ALERT', action: 'Velocidades de Aterrizaje (Vref):', callout: 'Flap 0º-10º: 70 KIAS · Flap 20º-30º: 65 KIAS · Flap 40º: 60 KIAS' },
+          { role: 'ALERT', action: 'Go-Around (Frustrada):', callout: 'Throttle FULL · Flaps 10º hasta 500 ft AGL · Speed 60 KIAS' },
+          { role: 'STEP', action: 'After Landing:', callout: 'Flaps UP · Transponder STBY · LDG & Strobe OFF · Pump OFF · Taxi Light ON' },
+          { role: 'ALERT', action: 'Turbo Cooldown Mandatorio:', details: '¡ESPERAR 2 MINUTOS a ralentí antes de cortar para enfriar el turbocompresor del motor TAE 125!' },
+          { role: 'STEP', action: 'Engine Shutdown:', callout: 'Throttle IDLE · Main Bus OFF · Avionics OFF · Lights OFF · Engine Master OFF · Beacon OFF · Battery OFF · Control Lock SET' },
+          { role: 'STEP', action: 'Leaving Airplane:', callout: 'Chocks SET · Doors & Windows CLOSED · Fuel Selector LEFT OR RIGHT' }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'card-bt-c172f-emergency-checklist',
+    category: 'emergency',
+    title: 'Blue Team: Cessna 172F Emergency & Abnormal Checklist V.4 (EC-NNX / TAE 125)',
+    subtitle: 'Procedimientos de fallo de motor, gestión FADEC, fuegos, aterrizajes de emergencia y contingencias',
+    manualRef: 'Blue Team Flight School Checklist Emergency V.4 & POH Supplement 20-0310-21023',
+    airplane: 'Blue Team Flight School / Reims-Cessna F172F (EC-NNX)',
+    badges: ['Blue Team', 'C172F', 'Emergency Checklist V.4', 'FADEC Dual', 'TAE 125', 'Memory Items'],
+    goldenRules: [
+      'Fallo de motor tras despegue: 65 KIAS Flaps UP / 60 KIAS Flaps DOWN. Fuel Shut-off OFF, Engine Master OFF.',
+      'Planeo óptimo sin motor (L/D max): velocidad mandatoria de 65 KIAS.',
+      'Fallo / luz FADEC: pulsar FADEC Test Knob durante 2 segundos. Si luz fija, aterrizar cuanto antes.',
+      'Fuego eléctrico en vuelo: desconectar Main Bus y Avionics Master; mantener Alternator, Battery y Engine Master ON (¡el FADEC requiere electricidad para seguir alimentando el motor!).',
+      'Parada de turbo en vuelo: velocidad 75 KIAS antes de proceder a la lista de rearranque en vuelo.'
+    ],
+    summary: 'Guía oficial de emergencias y procedimientos anormales para Cessna 172F diésel de Blue Team (V.4). Incluye fallos de motor en despegue y en vuelo, rearranque, luces FADEC y Force B, aterrizajes forzosos sin potencia, amerizaje (ditching), fuegos de motor y eléctricos, formación inadvertida de hielo y fallo de estática.',
+    diagramImage: './sop-diagrams/bt_c172f_emergency_checklist_page-1.png',
+    diagramCaption: 'Blue Team Checklist Oficial: Cessna 172F Emergency Checklist V.4 (Página 1/2)',
+    diagramNote: 'Fallo Motor · Rearranque · Malfunciones FADEC · Aterrizaje Forzoso · Ditching · Fuegos · Icing',
+    sections: [
+      {
+        title: '1. Engine Failure (Despegue, Vuelo y Rearranque)',
+        color: 'rose',
+        items: [
+          { role: 'ALERT', action: 'Fallo Durante la Carrera de Despegue:', callout: 'THROTTLE IDLE · BRAKES APPLY · FLAPS UP · ENGINE MASTER OFF · ALT/MAIN BUS/BATT OFF' },
+          { role: 'ALERT', action: 'Fallo Inmediato Tras el Despegue:', details: 'Speed: 65 KIAS (Flap UP) / 60 KIAS (Flap DOWN) · Fuel Shut-off Valve: OFF · Engine Master: OFF · Flaps: AS REQUIRED · Alternator, Main Bus & Battery: OFF' },
+          { role: 'ALERT', action: 'Fallo de Motor en Vuelo (Planeo):', details: 'Speed: 65 KIAS · Fuel Shut-off: OPEN (PUSH FULL IN) · Electric Fuel Pump: ON · Engine: CHECK PARAMETERS · Transponder 7700 · Mayday 121.5 · Seleccionar campo para toma.' },
+          { role: 'STEP', action: 'Rearranque en Vuelo (Restart):', details: 'Speed 65 KIAS · Fuel Shut-off OPEN · Fuel Selector BOTH · Electric Fuel Pump ON · Thrust Lever IDLE · Engine Master OFF and then ON. Si la hélice no gira en molinete: STARTER ON.' }
+        ]
+      },
+      {
+        title: '2. FADEC Malfunctions & Abnormal Behavior',
+        color: 'amber',
+        items: [
+          { role: 'ALERT', action: 'Una Luz FADEC Parpadea (One Flashing):', details: 'Pulsar FADEC Test Knob durante 2 segundos. Si se apaga: continuar vuelo normalmente. Si queda FIJA: observar el otro canal, aterrizar cuanto antes (LAND ASAP), evitar sobrevelocidad de motor y reportar a mantenimiento.' },
+          { role: 'ALERT', action: 'Ambas Luces FADEC Parpadean (Both Flashing):', details: 'Pulsar FADEC Test Knob durante 2 segundos. Si quedan FIJAS: comprobar potencia disponible, prever posible parada de motor y ATERRIZAR CUANTO ANTES (LAND ASAP).' },
+          { role: 'STEP', action: 'Comportamiento Anormal del Motor (Abnormal Behavior):', details: 'Speed 75 KIAS · Conmutar FORCE-B SWITCH a B-FADEC · Land ASAP · Prepararse para aterrizaje de emergencia.' },
+          { role: 'STEP', action: 'Parada Programada de Motor en Vuelo (Engine Shutdown):', callout: 'Speed 75 KIAS · Engine Master OFF · Fuel Shut-off CLOSED · Electric Fuel Pump OFF' }
+        ]
+      },
+      {
+        title: '3. Aterrizajes de Emergencia, Preventivos & Ditching',
+        color: 'emerald',
+        items: [
+          { role: 'ALERT', action: 'Aterrizaje Sin Potencia (No Power Landing):', details: 'Speed: 65 KIAS Flap UP / 60 KIAS Flap DOWN · Fuel Shut-off: CLOSED · Engine Master: OFF · Flaps: AS REQ (Recomendado 40º) · Battery & Main Bus: OFF · Puertas abiertas antes de tocar tierra · Ruedas principales primero · Frenada máxima.' },
+          { role: 'STEP', action: 'Aterrizaje Preventivo con Motor (Precautionary Landing):', details: 'Flaps 20º a 60 KIAS para sobrevolar el campo y evaluar obstáculos. En final: Flaps 40º a 60 KIAS, Avionics OFF, desasegurar puertas, toma principal y cortar ignición al tocar.' },
+          { role: 'ALERT', action: 'Amerizaje (Ditching):', details: 'Mayday 121.5 · Transponder 7700 · Objetos pesados asegurados o arrojados · Con viento/oleaje fuerte: contra el viento; con oleaje bajo: paralelo al oleaje · Con motor: 300 ft/min a 55 KIAS; sin motor: 65 KIAS Flap UP / 60 KIAS Flap 10º · Puertas desaseguradas · Impacto con morro alto · Chalecos inflados SIEMPRE FUERA del avión.' }
+        ]
+      },
+      {
+        title: '4. Fuegos (Puesta en Marcha, Vuelo y Eléctrico)',
+        color: 'rose',
+        items: [
+          { role: 'ALERT', action: 'Fuego en Puesta en Marcha (Start-up):', callout: 'ENGINE MASTER OFF · FUEL SHUT-OFF CLOSED · ELECTRIC FUEL PUMP OFF · EXTINTOR ACTIVATE' },
+          { role: 'ALERT', action: 'Fuego de Motor en Vuelo:', details: 'Engine Master: OFF · Fuel Shut-off: CLOSED · Speed: 75 KIAS · Electric Pump: OFF · Calefacción y tomas de cabina: CLOSED · Land ASAP.' },
+          { role: 'ALERT', action: 'Fuego Eléctrico en Vuelo (Electrical Fire):', details: 'Main Bus: OFF · Avionics Master: OFF · Calefacción: OFF · Extintor: Activar y ventilar cabina · Mantener Alternador, Batería y Engine Master ON mientras sea necesario (el FADEC necesita 12V para alimentar inyectores TAE 125).' },
+          { role: 'STEP', action: 'Fuego en el Ala (Wing Fire):', callout: 'Wing Lights OFF · Pitot Heat OFF · Descenso con resbale para alejar llamas del fuselaje · Land ASAP' }
+        ]
+      },
+      {
+        title: '5. Icing, Fallo de Estática y Rueda Desinflada',
+        color: 'indigo',
+        items: [
+          { role: 'ALERT', action: 'Encuentro Inadvertido con Hielo:', details: 'Pitot Heat: ON · Viraje de 180º y cambiar de nivel inmediatamente · Throttle: Aumentar RPM para evitar engelamiento en hélice · Flaps: UP · Aproximación: 65-75 KIAS · Land ASAP.' },
+          { role: 'STEP', action: 'Toma Estática Bloqueada (Blocked Static):', details: 'Alternate Static Source: ON. Nota: el anemómetro experimentará una variación de aproximadamente 1 kt con tomas o ventanas abiertas.' },
+          { role: 'STEP', action: 'Aterrizaje con Neumático Desinflado (Flat Tyre):', details: 'Aproximación normal. Tocar primero con el neumático operativo y mantener la rueda pinchada en el aire el mayor tiempo posible.' }
+        ]
+      }
+    ]
   }
 ];
+

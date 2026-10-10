@@ -12,8 +12,8 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 - **Nueva Flota Diamond DA40 TDI (TAE 125 / EC-OKC):**
   - Banco de 92 preguntas EASA en `banks/fleet-da40d/` (Limitaciones, Operación Normal AFM, SOPs Blue Team, Emergencias y Sistemas).
   - Distribución perfectamente equilibrada (~25% por opción: 23 A, 23 B, 23 C, 23 D), 0% asimetría fuera de ±15%, y 58 recortes visuales a 200 DPI extraídos del AFM oficial (`DA40-TDI-AFM.pdf`, Doc. # 6.01.05-E).
-- **Tarjetas SOP Blue Team Flight School (Normal Operations):**
-  - 8 tarjetas operacionales completas en `procedureCardsData.ts` integrando 37 figuras/diagramas oficiales en `public/sop-diagrams/`:
+- **Tarjetas SOP Blue Team Flight School (Normal Operations & Checklists):**
+  - **10 tarjetas operacionales completas** en `procedureCardsData.ts` integrando figuras oficiales en `public/sop-diagrams/`:
     - Briefing Normal IFR y Briefing Visual Corto (SOP 6.8 & 6.9)
     - Briefing de Despegue y 4 Escenarios de Fallo Monomotor (SOP 6.10)
     - Despegue «Luces, Cámara y Acción» y Flujo 500 ft AGL (SOP 6.11)
@@ -23,6 +23,8 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
     - Maniobras Avanzadas VFR, 5 Tipos de Pérdidas y Vuelo Lento (SOP 9.9)
     - Procedimientos Locales Tenerife Sur (GCTS) y Norte (GCXO / Anaga F22) (SOP 7)
     - Callouts Oficiales de Cabina y Parámetros (SOP 11)
+    - **Cessna 172F Normal Checklist V.6 (EC-NNX / TAE 125)**: Cabina, prevuelo, arranque TAE 125, comprobación de presión de aceite <3s, FADEC backup battery test, prueba de botón FADEC, Force B, rodaje, despegue (Vr 60, Vx 60-65, Vy 75), crucero, aproximación, Vref, frustrada, enfriamiento mandatorio de turbo 2 min y parada.
+    - **Cessna 172F Emergency & Abnormal Checklist V.4 (EC-NNX / TAE 125)**: Fallos de motor en despegue y en vuelo, rearranque (65 kt), gestión de luces FADEC y Force B, aterrizaje sin potencia, amerizaje (ditching), fuegos en arranque/vuelo/ala, fuego eléctrico en vuelo (aislamiento de buses manteniendo alimentación FADEC), engelamiento inadvertido y fallo de estática.
   - Filtro por Operador en `ProcedureCardsScreen.tsx`: Todos, Binter Canarias, Blue Team Flight School y NetJets Europe.
 - **Rediseño Ultrarrealista de Infografías Vectoriales & Corrección de Textos:**
   - Sustituidos los polígonos geométricos simples por siluetas detalladas con libreas y fisonomía real:

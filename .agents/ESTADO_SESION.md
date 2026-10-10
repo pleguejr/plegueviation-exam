@@ -39,9 +39,14 @@
      - Accesos directos para *«Marcar todas»* y *«Desmarcar»* dentro de cada banco, junto con contador en tiempo real de subtemas seleccionados (`X/Y subtemas`) y preguntas disponibles en el pool.
      - Presets directos añadidos para *Cessna 172F (EC-NNX)* y *Diamond DA40 TDI (EC-OKC)*.
      - Total compatibilidad con modo oscuro y modo día (`.theme-light`).
-8. **Verificación y Calidad:**
+8. **Incorporación de Checklists Oficiales Cessna 172F (Normal V.6 y Emergencias V.4):**
+   - Creadas 2 tarjetas SOP exhaustivas añadidas a la sección de Blue Team (`procedureCardsData.ts`):
+     - **Cessna 172F Normal Checklist V.6 (EC-NNX / TAE 125)**: Cabina y prevuelo, Before Engine Start, arranque motor TAE 125, comprobación de presión de aceite <3s, FADEC Backup Battery Test (10s), prueba de FADEC Test Button mantenido, Force B, rodaje, velocidades de despegue (Vr 60, Vx 60-65, Vy 75), crucero, aproximación, Vref (Flap 0-10º: 70 kt, Flap 20-30º: 65 kt, Flap 40º: 60 kt), frustrada (60 kt), enfriamiento obligatorio de turbo compresor de 2 minutos y parada.
+     - **Cessna 172F Emergency & Abnormal Checklist V.4 (EC-NNX / TAE 125)**: Fallo de motor en despegue, fallo tras despegue (65/60 kt), planeo y rearranque en vuelo (65 kt), gestión de luces de aviso FADEC (un canal vs ambos canales parpadeando), comportamiento anormal y Force B, aterrizaje sin potencia, aterrizaje preventivo, amerizaje (ditching), fuegos en arranque/vuelo/ala, fuego eléctrico en vuelo (Main Bus/Avionics OFF manteniendo Alternador, Batería y Engine Master ON para el FADEC), engelamiento inadvertido, estática alternativa y rueda desinflada.
+   - Generados los recortes visuales oficiales a 150 DPI de las páginas de checklist: `public/sop-diagrams/bt_c172f_normal_checklist_page-1.png` y `bt_c172f_emergency_checklist_page-1.png`.
+9. **Verificación y Calidad:**
    - 0 errores de TypeScript (`tsc`).
-   - Compilación completa con Vite (`npm run build`) validada.
+   - Compilación completa con Vite (`npm run build`) validada con 10 tarjetas Blue Team activas.
 
 ## 🎯 Próximos pasos / Pendientes al retomar
 - Probar exámenes personalizados combinando subdivisiones de Flota Cessna 172F y Flota Diamond DA40 TDI.
