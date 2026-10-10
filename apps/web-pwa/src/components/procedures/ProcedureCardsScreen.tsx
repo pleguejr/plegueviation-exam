@@ -31,6 +31,7 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
     });
     return initial;
   });
+  const [activePageIndices, setActivePageIndices] = useState<Record<string, number>>({});
 
   const scrollToCategoryTabs = () => {
     const el = document.getElementById('procedures-category-tabs');
@@ -341,10 +342,42 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
                   <div className="procedure-card-body px-4 sm:px-6 pb-6 pt-2 border-t border-slate-800/50 space-y-5 animate-fade-in">
                   {card.diagramImage && (
                     <figure className="procedure-sop-figure">
+                      {card.diagramImages && card.diagramImages.length > 1 && (
+                        <div className="flex items-center justify-between pb-2 mb-2 border-b border-slate-700/40">
+                          <span className="text-[11px] font-extrabold uppercase tracking-wider text-sky-400 flex items-center gap-1.5">
+                            <Layers className="w-3.5 h-3.5" />
+                            Páginas de la Lista Oficial ({card.diagramImages.length}):
+                          </span>
+                          <div className="flex items-center gap-1.5">
+                            {card.diagramImages.map((_, pIdx) => {
+                              const activeP = activePageIndices[card.id] ?? 0;
+                              return (
+                                <button
+                                  key={`${card.id}-page-${pIdx}`}
+                                  type="button"
+                                  onClick={() => setActivePageIndices((prev) => ({ ...prev, [card.id]: pIdx }))}
+                                  className={`px-2.5 py-1 rounded-lg text-xs font-black transition-all ${
+                                    activeP === pIdx
+                                      ? 'bg-sky-500 text-white shadow-glow-sky'
+                                      : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
+                                  }`}
+                                >
+                                  Pág. {pIdx + 1}
+                                </button>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      )}
+
                       <div className="procedure-sop-figure-scroll">
                         <div className="procedure-sop-figure-frame">
                           <img
-                            src={card.diagramImage}
+                            src={
+                              card.diagramImages && card.diagramImages.length > 0
+                                ? card.diagramImages[activePageIndices[card.id] ?? 0] || card.diagramImage
+                                : card.diagramImage
+                            }
                             alt={card.diagramCaption || card.title}
                             className="procedure-sop-figure-img"
                             loading="lazy"
@@ -380,11 +413,17 @@ export const ProcedureCardsScreen: React.FC<ProcedureCardsScreenProps> = ({ onBa
                         </div>
                       </div>
                       <figcaption className="procedure-sop-figure-caption">
-                        <span className="procedure-sop-figure-badge">Figura SOPM</span>
+                        <span className="procedure-sop-figure-badge">
+                          {card.diagramImages && card.diagramImages.length > 1
+                            ? `Página ${(activePageIndices[card.id] ?? 0) + 1} de ${card.diagramImages.length}`
+                            : 'Figura SOPM'}
+                        </span>
                         {card.diagramCaption && <span>{card.diagramCaption}</span>}
                         {card.diagramNote && <span className="procedure-sop-figure-note">{card.diagramNote}</span>}
                         <span className="procedure-sop-figure-hint">
-                          Hitos coloreados sobre la figura · desliza en horizontal si hace falta
+                          {card.diagramImages && card.diagramImages.length > 1
+                            ? 'Usa los botones superiores para alternar entre páginas de la lista · desliza en horizontal si hace falta'
+                            : 'Hitos coloreados sobre la figura · desliza en horizontal si hace falta'}
                         </span>
                       </figcaption>
                     </figure>

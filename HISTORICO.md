@@ -23,8 +23,9 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
     - Maniobras Avanzadas VFR, 5 Tipos de Pérdidas y Vuelo Lento (SOP 9.9)
     - Procedimientos Locales Tenerife Sur (GCTS) y Norte (GCXO / Anaga F22) (SOP 7)
     - Callouts Oficiales de Cabina y Parámetros (SOP 11)
-    - **Cessna 172F Normal Checklist V.6 (EC-NNX / TAE 125)**: Cabina, prevuelo, arranque TAE 125, comprobación de presión de aceite <3s, FADEC backup battery test, prueba de botón FADEC, Force B, rodaje, despegue (Vr 60, Vx 60-65, Vy 75), crucero, aproximación, Vref, frustrada, enfriamiento mandatorio de turbo 2 min y parada.
-    - **Cessna 172F Emergency & Abnormal Checklist V.4 (EC-NNX / TAE 125)**: Fallos de motor en despegue y en vuelo, rearranque (65 kt), gestión de luces FADEC y Force B, aterrizaje sin potencia, amerizaje (ditching), fuegos en arranque/vuelo/ala, fuego eléctrico en vuelo (aislamiento de buses manteniendo alimentación FADEC), engelamiento inadvertido y fallo de estática.
+    - **Cessna 172F Normal Checklist V.6 (EC-NNX / TAE 125)**: Integradas las 2 páginas oficiales. Pág. 1: Cabina, prevuelo, arranque TAE 125, presión aceite <3s, FADEC backup test, botón FADEC, Force B y rodaje. Pág. 2: Despegue (Vr 60, Vx 60-65, Vy 75), crucero, aproximación, Vref, frustrada, enfriamiento de turbo 2 min y parada.
+    - **Cessna 172F Emergency & Abnormal Checklist V.4 (EC-NNX / TAE 125)**: Integradas las 2 páginas oficiales. Pág. 1: Fallo motor despegue/vuelo, planeo (65 kt), rearranque, luces FADEC y Force B, toma forzosa y amerizaje. Pág. 2: Fuegos (puesta en marcha, vuelo, ala, fuego eléctrico aislando buses sin cortar FADEC), engelamiento, toma estática y rueda pinchada.
+    - **Visor Multipágina con selector interactivo**: Botones `[Pág. 1]` y `[Pág. 2]` en cada tarjeta para alternar cómodamente entre ambas carillas de la lista original.
   - Filtro por Operador en `ProcedureCardsScreen.tsx`: Todos, Binter Canarias, Blue Team Flight School y NetJets Europe.
 - **Rediseño Ultrarrealista de Infografías Vectoriales & Corrección de Textos:**
   - Sustituidos los polígonos geométricos simples por siluetas detalladas con libreas y fisonomía real:

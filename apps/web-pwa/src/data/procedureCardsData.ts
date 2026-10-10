@@ -26,6 +26,8 @@ export interface ProcedureCard {
   diagramNote?: string;
   /** Ruta pública a figura SOPM (ej. ./sop-diagrams/visual-approach-fig.jpg) */
   diagramImage?: string;
+  /** Múltiples figuras / páginas para checklists de varias páginas */
+  diagramImages?: string[];
   diagramCaption?: string;
   sections: ProcedureSection[];
 }
@@ -1878,8 +1880,12 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
     ],
     summary: 'Lista de verificación normal oficial completa para la Cessna 172F diésel de Blue Team Flight School (V.6), abarcando inspección exterior, arranque del motor TAE 125-02, chequeo FADEC dual, despegue, crucero, aproximación, aterrizaje y enfriamiento de turbo.',
     diagramImage: './sop-diagrams/bt_c172f_normal_checklist_page-1.png',
-    diagramCaption: 'Blue Team Checklist Oficial: Cessna 172F Normal Checklist V.6 (Página 1/2)',
-    diagramNote: 'Cabina · Exterior · Before Engine Start · Engine Start · FADEC Backup Test · Rodaje · Despegue',
+    diagramImages: [
+      './sop-diagrams/bt_c172f_normal_checklist_page-1.png',
+      './sop-diagrams/bt_c172f_normal_checklist_page-2.png'
+    ],
+    diagramCaption: 'Blue Team Checklist Oficial: Cessna 172F Normal Checklist V.6 (2 Páginas)',
+    diagramNote: 'Página 1: Cabina, Prevuelo, Start, FADEC Backup, Rodaje · Página 2: Despegue, Crucero, Aterrizaje, Parada',
     sections: [
       {
         title: '1. Cabin & Preflight Walkaround',
@@ -1992,8 +1998,12 @@ export const PROCEDURE_CARDS: ProcedureCard[] = [
     ],
     summary: 'Guía oficial de emergencias y procedimientos anormales para Cessna 172F diésel de Blue Team (V.4). Incluye fallos de motor en despegue y en vuelo, rearranque, luces FADEC y Force B, aterrizajes forzosos sin potencia, amerizaje (ditching), fuegos de motor y eléctricos, formación inadvertida de hielo y fallo de estática.',
     diagramImage: './sop-diagrams/bt_c172f_emergency_checklist_page-1.png',
-    diagramCaption: 'Blue Team Checklist Oficial: Cessna 172F Emergency Checklist V.4 (Página 1/2)',
-    diagramNote: 'Fallo Motor · Rearranque · Malfunciones FADEC · Aterrizaje Forzoso · Ditching · Fuegos · Icing',
+    diagramImages: [
+      './sop-diagrams/bt_c172f_emergency_checklist_page-1.png',
+      './sop-diagrams/bt_c172f_emergency_checklist_page-2.png'
+    ],
+    diagramCaption: 'Blue Team Checklist Oficial: Cessna 172F Emergency Checklist V.4 (2 Páginas)',
+    diagramNote: 'Página 1: Fallo Motor, Rearranque, FADEC, Aterrizaje Forzoso, Ditching · Página 2: Fuegos, Engelamiento, Estática Alternativa',
     sections: [
       {
         title: '1. Engine Failure (Despegue, Vuelo y Rearranque)',
