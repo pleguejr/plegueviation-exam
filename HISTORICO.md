@@ -13,12 +13,13 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
   - Modo Práctica sin tiempo con sistema interactivo de pistas de deducción paso a paso y descarte guiado.
   - Soporte ergonómico para teclado físico numérico (`1..5`) y teclado táctil de alto rendimiento adaptado a iPad/tabletas.
   - Métricas de rendimiento, precisión neta y baremo NetJets Europe Pass/Review con persistencia local en `localStorage`.
-- **Simulador AON Multitasking & Mental Arithmetic (`scales mt` / Capacidad Multitarea):**
-  - Motor de doble tarea concurrente a 60 FPS en HTML5 Canvas con avión esquivando obstáculos en corredor vertical (`[←][→]`, `A/D` y controles táctiles en pantalla).
-  - Tarea concurrente de cálculo mental rápido de sumas y restas en formato oficial **`[ CORRECTO / INCORRECTO ]`** generado por `AonMathEngine.ts` con distractores sutiles ($\pm 1, \pm 2, \pm 10$). Atajos de teclado: `1` / `C` para Correcto, `2` / `I` para Incorrecto.
-  - Modo Examen Oficial de 8 minutos (480s) con cálculo de penalizaciones por colisión e impacto ponderado en el Net Score.
-  - Modalidad exclusiva **«Entrenamiento Puro de Cálculo Mental AON»** para práctica intensiva aislada de operaciones mentales rápidas bajo presión temporal antes del dual-task.
-  - Síntesis de sonido procedural vía Web Audio API (pitidos correctos, errores, advertencias de tiempo) con control de silencio.
+- **Simulador AON Multitasking Capability (Triple-Task Oficial 3-en-1):**
+  - **Tarea 1: Flechas y Carriles de Obstáculos (`[←][→]` / `A/D` y controles táctiles iPad):** Campo de 4 carriles a 60 FPS con oleadas descendentes de barreras rojas donde exactamente 1 carril queda libre. El candidato debe posicionar el avión en el carril seguro antes del impacto.
+  - **Tarea 2: Sumas y Restas Mentales (`AonMathEngine.ts`):** Verificación aritmética rápida de operaciones continuas en formato `[ CORRECTO / INCORRECTO ]` (atajos: teclas `1` / `2`).
+  - **Tarea 3: Detección de Duplicados (`AonDuplicateEngine.ts`):** Reconocimiento de patrones en secuencias de 7 figuras geométricas de colores en formato `[ DUPLICADO (2X) / ÚNICOS (1X) ]` (atajos: teclas `3` / `4`).
+  - **Ponderación y Baremo NetJets Europe:** Puntuación global combinada (30% Flechas + 40% Mates + 30% Duplicados), con umbral de pase `PASS` (≥75% global y ≤3 colisiones).
+  - **Modos Aislados de Entrenamiento Puro:** Modos dedicados para entrenar cada tarea por separado (Solo Flechas, Solo Sumas y Restas, Solo Duplicados) y examen completo (3, 5 y 8 minutos).
+  - Síntesis de sonido procedural vía Web Audio API (pitidos de acierto, error, evasión de barrera y alarma de colisión) con control de silencio.
 - **Fortificación y Soporte 100% Offline (PWA Offline-First):**
   - **Inyección Automática de Bundles Vite (`vite.config.ts`):** Extendido el hook de cierre de bundle (`closeBundle`) para escanear `dist/assets/` e inyectar automáticamente los hashes exactos de los chunks de JavaScript (`index-[hash].js`) y estilos CSS (`index-[hash].css`) en `ASSETS_TO_CACHE` dentro de `dist/sw.js`.
   - **Pre-caching Atómico Resiliente (`public/sw.js`):** Sustituido el `cache.addAll()` bloqueante por `Promise.allSettled()`, garantizando que la caché almacene íntegramente el HTML, bundles JS/CSS, banco de 2.262 preguntas y SVGs sin fallar si un recurso opcional estuviera inaccesible.

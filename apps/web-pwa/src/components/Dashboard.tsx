@@ -366,10 +366,10 @@ export const Dashboard: React.FC<DashboardProps> = ({
               </span>
             </div>
             <h2 className="text-base sm:text-lg font-black text-white mt-0.5">
-              Simuladores Oficiales AON Deductive Logic & Multitasking
+              Simuladores Oficiales AON Deductive Logic & Multitasking Capability
             </h2>
             <p className="text-xs text-slate-300">
-              Practica el razonamiento deductivo (Sudoku 4×4 a 5×5) y la multitarea dual (Canal de vuelo + sumas y restas mentales).
+              Practica el razonamiento deductivo (Sudoku 4×4 a 5×5) y el examen Triple-Task oficial (Flechas en 4 carriles + Sumas y restas + Duplicados o no).
             </p>
           </div>
         </div>
@@ -387,10 +387,10 @@ export const Dashboard: React.FC<DashboardProps> = ({
           <button
             type="button"
             onClick={onStartAonMultitasking}
-            className="flex-1 sm:flex-none px-4 py-2.5 rounded-xl font-black text-xs bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-slate-950 shadow-md shadow-emerald-950/40 transition-all active:scale-95 flex items-center justify-center gap-1.5"
+            className="flex-1 sm:flex-none px-4 py-2.5 rounded-xl font-black text-xs bg-gradient-to-r from-rose-500 via-amber-500 to-teal-500 hover:from-rose-400 hover:to-teal-400 text-slate-950 shadow-md shadow-rose-950/40 transition-all active:scale-95 flex items-center justify-center gap-1.5"
           >
             <Zap className="w-4 h-4" />
-            <span>Multitasking (8m)</span>
+            <span>Multitasking 3-en-1</span>
           </button>
         </div>
       </div>
@@ -1373,30 +1373,30 @@ export const Dashboard: React.FC<DashboardProps> = ({
               </div>
             </button>
 
-            {/* Card 2: AON Multitasking & Mental Math */}
+            {/* Card 2: AON Multitasking Capability (Triple-Task) */}
             <button
               type="button"
               onClick={onStartAonMultitasking}
-              className="p-4 rounded-2xl bg-gradient-to-br from-[#061e16] to-[#0f172a] hover:from-[#0a2e22] hover:to-[#172544] border-2 border-emerald-500/50 hover:border-emerald-400 text-left transition-all group flex flex-col justify-between shadow-xl active:scale-98"
+              className="p-4 rounded-2xl bg-gradient-to-br from-[#1c0812] to-[#0f172a] hover:from-[#2a0e1c] hover:to-[#172544] border-2 border-rose-500/50 hover:border-rose-400 text-left transition-all group flex flex-col justify-between shadow-xl active:scale-98"
             >
               <div>
                 <div className="flex items-center justify-between mb-2">
-                  <span className="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 flex items-center gap-1">
-                    <Zap className="w-3.5 h-3.5 text-emerald-400" />
-                    <span>8 MIN EXAM • CANAL + CÁLCULO MENTAL</span>
+                  <span className="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-rose-500/20 text-rose-300 border border-rose-500/40 flex items-center gap-1">
+                    <Zap className="w-3.5 h-3.5 text-rose-400" />
+                    <span>TRIPLE-TASK • FLECHAS + SUMAS + DUPLICADOS</span>
                   </span>
-                  <ArrowRight className="w-4 h-4 text-emerald-400 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-4 h-4 text-rose-400 group-hover:translate-x-1 transition-transform" />
                 </div>
-                <h4 className="text-sm font-black text-white group-hover:text-emerald-300 transition-colors">
-                  AON Multitasking & Mental Arithmetic (scales mt)
+                <h4 className="text-sm font-black text-white group-hover:text-rose-300 transition-colors">
+                  AON Multitasking Capability (3-en-1 Oficial)
                 </h4>
                 <p className="text-xs text-slate-300 mt-1.5 leading-relaxed">
-                  Navegación de aeronave por canal vertical esquivando obstáculos (<span className="text-sky-300 font-mono font-bold">[←][→]</span> o táctil) mientras resuelves operaciones continuas de sumas y restas en formato <span className="text-emerald-300 font-bold">[CORRECTO / INCORRECTO]</span>. Cuenta con modo examen oficial de 8 minutos y modo de entrenamiento puro de cálculo mental.
+                  Tres tareas simultáneas sin pausas: 1) <strong className="text-sky-300">Flechas [←][→]</strong> en 4 carriles esquivando barreras; 2) <strong className="text-amber-300">Sumas y restas</strong> en formato [CORRECTO / INCORRECTO]; y 3) <strong className="text-purple-300">Detección de duplicados</strong> [1X / 2X] en secuencias de 7 símbolos. Incluye modos aislados de entrenamiento puro.
                 </p>
               </div>
-              <div className="flex items-center justify-between mt-3 pt-2.5 border-t border-emerald-500/20 text-[11px] font-bold text-emerald-400">
-                <span>⚡ Iniciar Simulador Multitarea</span>
-                <span className="text-[10px] font-mono text-slate-400">8:00 min</span>
+              <div className="flex items-center justify-between mt-3 pt-2.5 border-t border-rose-500/20 text-[11px] font-bold text-rose-400">
+                <span>⚡ Iniciar Simulador Multitarea 3-en-1</span>
+                <span className="text-[10px] font-mono text-slate-400">5:00 / 8:00 min</span>
               </div>
             </button>
           </div>

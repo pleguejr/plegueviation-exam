@@ -58,13 +58,14 @@
         - **Modo Examen Oficial**: 9 minutos (540s) de cuenta atrás, avance instantáneo, evaluación NetJets Performance Goal (≥80% aciertos, ≥18 resueltas).
         - **Modo Práctica**: Sin tiempo, con pistas lógicas interactivas (resaltado de fila/columna) y desglose paso a paso de la deducción.
         - Soporte para teclado numérico (teclas 1..5) y toques táctiles para iPad.
-      - **AON Multitasking & Mental Arithmetic (`scales mt` / Capacidad Multitarea)**:
-        - Archivo: `apps/web-pwa/src/components/psychometrics/AonMultitaskingScreen.tsx` y motor de cálculo `AonMathEngine.ts`.
-        - Tarea motriz: Canal vertical de vuelo a 60 FPS (HTML5 Canvas) esquivando obstáculos con flechas `[←][→]`, teclas `A/D` o botones táctiles en iPad.
-        - Tarea cognitiva: Cálculo mental continuo de sumas y restas en formato **`[ CORRECTO / INCORRECTO ]`** con distractores sutiles (±1, ±2, ±10) que obligan a evaluar la ecuación mentalmente. Teclado: tecla `1` / `C` para Correcto, `2` / `I` para Incorrecto.
-        - **Modo Examen Oficial**: 8 minutos (480s) de cuenta atrás con cálculo concurrente y puntuación ponderada (precisión matemática % + precisión de trayectoria de vuelo %).
-        - **Modo Entrenamiento Puro de Cálculo Mental AON**: Selector directo para practicar únicamente las operaciones matemáticas a máxima velocidad sin carga motriz, para automatizar el cálculo mental previo al dual-task.
-        - Efectos de sonido con sintetizador Web Audio API (acierto, fallo, colisión) con toggle de silenciado.
+      - **AON Multitasking Capability (`scales mt` / Triple-Task Oficial 3-en-1)**:
+        - Archivo: `apps/web-pwa/src/components/psychometrics/AonMultitaskingScreen.tsx`, motor de cálculo `AonMathEngine.ts` y motor de duplicados `AonDuplicateEngine.ts`.
+        - **Tarea 1 (Flechas & Obstáculos)**: 4 carriles a 60 FPS (HTML5 Canvas) con oleadas descendentes de barreras y exactamente 1 carril libre/seguro. Control de aeronave con flechas `[←][→]`, teclas `A/D` o botones táctiles en iPad.
+        - **Tarea 2 (Sumas y Restas Mentales)**: Operaciones continuas en formato `[ CORRECTO / INCORRECTO ]` (teclas `1` / `2`).
+        - **Tarea 3 (Duplicados o No)**: Fila de 7 figuras geométricas de colores con detección inmediata de repeticiones en formato `[ DUPLICADO (2X) / ÚNICOS (1X) ]` (teclas `3` / `4`).
+        - **Modo Examen Oficial**: 5 min (oficial), 8 min (resistencia) o 3 min (rápido) con ponderación oficial (30% Flechas + 40% Mates + 30% Duplicados).
+        - **Modos Aislados de Entrenamiento Puro**: Selector directo para entrenar cada una de las 3 tareas por separado (Solo Flechas, Solo Mates, Solo Duplicados).
+        - Efectos de sonido con sintetizador Web Audio API (acierto, fallo, paso de barrera, colisión) con control de silencio.
         - Historial local de intentos guardado en `localStorage` con indicadores de pase NetJets.
     - Acceso directo y badges integrados en el dashboard principal dentro del bloque **NetJets Europe Interview Prep**.
     - Compatibilidad plena con Modo Noche (Cockpit) y Modo Día (`.theme-light`).
