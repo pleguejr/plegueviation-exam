@@ -15,7 +15,7 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
   - Soporte ergonómico para teclado físico numérico (`1..5`) y teclado táctil de alto rendimiento adaptado a iPad/tabletas.
 - **Simulador AON Multitasking Capability (`scales mt` / Triple-Task Oficial 3-en-1 Actualizado):**
   - Arquitectura en pantalla dividida conforme a la especificación oficial de Kura / NetJets:
-    - **Tarea 1 (Izquierda)**: Fila de 7 figuras geométricas con orientación de triángulo hacia la izquierda `[ ◀ ]` o derecha `[ ▶ ]` y barra temporal azul vertical que se vacía progresivamente (timeout dinámico de 3.8s).
+    - **Tarea 1 (Izquierda)**: Fila de 7 figuras geométricas con orientación de triángulo hacia la izquierda `[ ◀ ]` o derecha `[ ▶ ]` y barra temporal azul vertical que se vacía progresivamente (timeout oficial AON de 5.5s).
     - **Tarea 2 (Superior Derecha)**: Ecuaciones aritméticas de 4 términos (sumas y restas) en formato `[ CORRECTO ]` / `[ INCORRECTO ]` (teclas `1` / `2`).
     - **Tarea 3 (Inferior Derecha)**: Secuencias numéricas de 7 dígitos con detección de duplicados en formato `[ DUPLICADO ]` / `[ NO DUPLICADO ]` (teclas `3` / `4`).
   - Motor procedural continuo `AonMultitaskingEngine.ts` y síntesis de sonido procedural vía Web Audio API 100% offline.

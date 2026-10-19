@@ -91,7 +91,7 @@
     - Interacción ergonómica: pulsar cualquier celda vacía permite colocar y alternar figuras rayadas de ayuda; pulsar la casilla objetivo `[ ? ]` activa la selección final de la respuesta correcta en la botonera azul inferior idéntica a la plataforma oficial.
 14. **Reestructuración Oficial AON Multitasking Capability (`scales mt` 3-en-1):**
     - Arquitectura fiel a la plataforma oficial de Kura / NetJets dividida en 3 zonas concurrentes:
-      - **Zona Izquierda**: Fila de 7 figuras con 1 triángulo direccional `[ ◀ ]` o `[ ▶ ]` y barra temporal azul vertical que se vacía progresivamente (timeout de 3.8s).
+      - **Zona Izquierda**: Fila de 7 figuras con 1 triángulo direccional `[ ◀ ]` o `[ ▶ ]` y barra temporal azul vertical que se vacía progresivamente (timeout oficial AON de 5.5s).
       - **Zona Superior Derecha**: Ecuación aritmética de 4 términos `[ CORRECTO ]` / `[ INCORRECTO ]`.
       - **Zona Inferior Derecha**: Secuencia numérica de 7 dígitos `[ DUPLICADO ]` / `[ NO DUPLICADO ]`.
     - Motor procedural `AonMultitaskingEngine.ts` con generación continua balanceada 50/50 y efectos sonoros sintetizados por Web Audio API 100% offline.

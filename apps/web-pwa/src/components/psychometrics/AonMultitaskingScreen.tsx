@@ -94,7 +94,7 @@ export const AonMultitaskingScreen: React.FC<AonMultitaskingScreenProps> = ({ on
   // ==========================================================================
   // ESTADOS DE LA TAREA 1: TRIÁNGULO IZQ / DER + BARRA TEMPORAL
   // ==========================================================================
-  const TRIANGLE_TIMEOUT_MS = 3800; // 3.8 segundos por ensayo
+  const TRIANGLE_TIMEOUT_MS = 5500; // 5.5 segundos oficiales AON / cut-e
   const [currentTriangleTask, setCurrentTriangleTask] = useState<TriangleTaskQuestion | null>(null);
   const [triangleTimeLeftMs, setTriangleTimeLeftMs] = useState<number>(TRIANGLE_TIMEOUT_MS);
   const [triangleCorrect, setTriangleCorrect] = useState<number>(0);
