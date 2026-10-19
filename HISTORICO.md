@@ -19,10 +19,11 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
   - Modo Examen Oficial de 8 minutos (480s) con cálculo de penalizaciones por colisión e impacto ponderado en el Net Score.
   - Modalidad exclusiva **«Entrenamiento Puro de Cálculo Mental AON»** para práctica intensiva aislada de operaciones mentales rápidas bajo presión temporal antes del dual-task.
   - Síntesis de sonido procedural vía Web Audio API (pitidos correctos, errores, advertencias de tiempo) con control de silencio.
-- **Integración de Navegación y Visibilidad PWA:**
-  - Nueva pestaña permanente **«Psicotécnicos AON»** con icono cerebral (`Brain`) en el `Navbar.tsx` superior para acceso directo sin necesidad de scroll.
-  - Banner destacado de lanzamiento rápido en la cabecera superior del `Dashboard.tsx` y sección dedicada dentro de la tarjeta de NetJets Europe Interview Prep.
-  - Soporte completo y contraste optimizado en Modo Día (`.theme-light`) y Modo Noche en `index.css`.
+- **Fortificación y Soporte 100% Offline (PWA Offline-First):**
+  - **Inyección Automática de Bundles Vite (`vite.config.ts`):** Extendido el hook de cierre de bundle (`closeBundle`) para escanear `dist/assets/` e inyectar automáticamente los hashes exactos de los chunks de JavaScript (`index-[hash].js`) y estilos CSS (`index-[hash].css`) en `ASSETS_TO_CACHE` dentro de `dist/sw.js`.
+  - **Pre-caching Atómico Resiliente (`public/sw.js`):** Sustituido el `cache.addAll()` bloqueante por `Promise.allSettled()`, garantizando que la caché almacene íntegramente el HTML, bundles JS/CSS, banco de 2.262 preguntas y SVGs sin fallar si un recurso opcional estuviera inaccesible.
+  - **Registro Eager de Service Worker (`App.tsx`):** Registro inmediato si `document.readyState === 'complete'` o en evento `load`, evitando pérdidas de registro en iPadOS y navegadores móviles al montar la SPA.
+  - **Caché Versionada v3.7.0:** Sincronizado `CACHE_NAME` a `plegueviation-cache-v3.7.0` en `package.json`, `apps/web-pwa/package.json` y Service Worker, purgando automáticamente cualquier caché antigua y garantizando que el simulador y los psicotécnicos AON funcionen al 100% sin conexión a internet ni WiFi.
 
 ---
 

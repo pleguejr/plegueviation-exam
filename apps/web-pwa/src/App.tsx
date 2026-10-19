@@ -141,21 +141,31 @@ export function App() {
   // Register service worker for offline PWA & listen for updates
   useEffect(() => {
     if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
+      const registerSW = () => {
         const baseUrl = import.meta.env.BASE_URL || './';
         const swUrl = `${baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`}sw.js`;
         navigator.serviceWorker.register(swUrl).then((reg) => {
-          console.log('[PWA] Service Worker registrado.');
+          console.log('[PWA] Service Worker registrado exitosamente.');
           // Comprobar actualización al iniciar
           reg.update().catch(() => {});
         }).catch((err) => {
           console.warn('Service Worker registration error:', err);
         });
-      });
+      };
+
+      if (document.readyState === 'complete') {
+        registerSW();
+      } else {
+        window.addEventListener('load', registerSW);
+      }
 
       registerServiceWorkerUpdateListener(() => {
         setUpdateAvailable(true);
       });
+
+      return () => {
+        window.removeEventListener('load', registerSW);
+      };
     }
   }, []);
 

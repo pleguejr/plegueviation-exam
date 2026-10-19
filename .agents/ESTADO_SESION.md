@@ -69,6 +69,12 @@
     - Acceso directo y badges integrados en el dashboard principal dentro del bloque **NetJets Europe Interview Prep**.
     - Compatibilidad plena con Modo Noche (Cockpit) y Modo Día (`.theme-light`).
     - 0 errores de TypeScript (`tsc`) y compilación Vite verificada.
+11. **Fortificación y Soporte 100% Offline (PWA Offline-First):**
+    - Sincronizado `CACHE_NAME` a `plegueviation-cache-v3.7.0` en Service Worker y package.json.
+    - Plugin de Vite (`vite.config.ts`) configurado para inyectar automáticamente los bundles JS (`index-[hash].js`) y CSS (`index-[hash].css`) en `ASSETS_TO_CACHE` en `dist/sw.js`.
+    - Pre-caching resiliente en `install` con `Promise.allSettled`, asegurando la descarga completa de la SPA, manifest y bancos de 2.262 preguntas.
+    - Registro de Service Worker robusto en `App.tsx` para arranque inmediato en iPad y dispositivos móviles.
+    - Acceso 100% offline garantizado tanto para los exámenes de preguntas como para los nuevos simuladores psicotécnicos AON.
 
 ## 🎯 Próximos pasos / Pendientes al retomar
 - Probar sesiones de entrenamiento de los simuladores AON en iPad y PC.

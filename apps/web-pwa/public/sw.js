@@ -1,16 +1,24 @@
-const CACHE_NAME = 'plegueviation-cache-v3.5.6';
+const CACHE_NAME = 'plegueviation-cache-v3.7.0';
 const ASSETS_TO_CACHE = [
   './',
+  '/',
   './index.html',
+  '/index.html',
   './manifest.webmanifest',
+  '/manifest.webmanifest',
   './favicon.svg',
+  '/favicon.svg',
   './banks/manifest.json',
+  '/banks/manifest.json',
   './banks/all_questions.json',
+  '/banks/all_questions.json',
   './banks/deleted_questions.json',
+  '/banks/deleted_questions.json',
   './sop-diagrams/flow-emergencia-comandante.svg',
   './sop-diagrams/briefing-prep-vuelo.svg',
   './sop-diagrams/briefing-lvo-lvto.svg',
   './sop-diagrams/briefing-twin-autoland.svg',
+  './sop-diagrams/bt_sop_stabilized_approach_vector.svg',
   './sop-diagrams/visual-approach-fig.jpg',
   './sop-diagrams/circling-approach-fig.jpg',
   './sop-diagrams/npa-gps-rnav-fig.jpg',
@@ -37,10 +45,17 @@ const ASSETS_TO_CACHE = [
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(ASSETS_TO_CACHE).catch((err) => {
-        console.warn('SW pre-cache warning:', err);
-      });
+    caches.open(CACHE_NAME).then(async (cache) => {
+      // Pre-cache con Promise.allSettled para robustez absoluta:
+      // Si un recurso opcional falla, los bundles de código, HTML y bancos se guardan
+      // igualmente sin romper la instalación del Service Worker.
+      await Promise.allSettled(
+        ASSETS_TO_CACHE.map((url) =>
+          cache.add(url).catch((err) => {
+            console.warn(`[SW] Pre-cache advertencia en ${url}:`, err);
+          })
+        )
+      );
     }).then(() => self.skipWaiting())
   );
 });
@@ -51,6 +66,7 @@ self.addEventListener('activate', (event) => {
       return Promise.all(
         keys.map((key) => {
           if (key !== CACHE_NAME) {
+            console.log('[SW] Purgando caché obsoleta:', key);
             return caches.delete(key);
           }
         })
@@ -67,13 +83,18 @@ self.addEventListener('fetch', (event) => {
 
   if (event.request.method !== 'GET') return;
 
+  // Filtrar protocolos no soportados (chrome-extension, etc.)
+  if (!event.request.url.startsWith('http://') && !event.request.url.startsWith('https://')) {
+    return;
+  }
+
   event.respondWith(
     caches.match(event.request, { ignoreSearch: true }).then((cached) => {
       if (cached) {
         // En segundo plano, si hay red, refrescar caché de forma silenciosa
         fetch(event.request)
           .then((response) => {
-            if (response && response.status === 200) {
+            if (response && response.status === 200 && response.type === 'basic') {
               const cacheCopy = response.clone();
               caches.open(CACHE_NAME).then((cache) => cache.put(event.request, cacheCopy));
             }
@@ -92,18 +113,21 @@ self.addEventListener('fetch', (event) => {
           return response;
         })
         .catch(async () => {
-          // Robustez para iOS / iPadOS: Si falla la red y es una navegación HTML o reinicio tras suspensión
+          // Robustez para iOS / iPadOS / PWA Offline:
+          // Si falla la red y es una navegación HTML o reinicio tras suspensión:
           if (event.request.mode === 'navigate' || event.request.headers.get('accept')?.includes('text/html')) {
             const indexFallback = (await caches.match('./index.html', { ignoreSearch: true })) ||
                                   (await caches.match('/index.html', { ignoreSearch: true })) ||
-                                  (await caches.match('./', { ignoreSearch: true }));
+                                  (await caches.match('./', { ignoreSearch: true })) ||
+                                  (await caches.match('/', { ignoreSearch: true }));
             if (indexFallback) return indexFallback;
           }
 
           // Fallback para archivos estáticos
           const url = new URL(event.request.url);
           const staticFallback = (await caches.match(url.pathname, { ignoreSearch: true })) ||
-                                 (await caches.match('.' + url.pathname, { ignoreSearch: true }));
+                                 (await caches.match('.' + url.pathname, { ignoreSearch: true })) ||
+                                 (await caches.match(event.request.url, { ignoreSearch: true }));
           if (staticFallback) return staticFallback;
 
           return cached;
