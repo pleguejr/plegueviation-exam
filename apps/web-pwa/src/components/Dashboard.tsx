@@ -33,7 +33,9 @@ import {
   ChevronDown,
   ChevronUp,
   Briefcase,
-  Table as TableIcon
+  Table as TableIcon,
+  Brain,
+  Calculator
 } from 'lucide-react';
 import { Question, BankManifest, QuestionStats, ExamSession, ExamMode, ExamSelectionStrategy } from '../types';
 import { loadAllQuestions, loadManifest } from '../services/questionsService';
@@ -58,6 +60,8 @@ interface DashboardProps {
   onOpenImporter: () => void;
   onOpenQuestionSearch?: (term: string) => void;
   onPracticeQuestions?: (questionIds: string[], mode?: ExamMode) => void;
+  onStartAonDeductive?: () => void;
+  onStartAonMultitasking?: () => void;
 }
 
 export const Dashboard: React.FC<DashboardProps> = ({
@@ -69,7 +73,9 @@ export const Dashboard: React.FC<DashboardProps> = ({
   onNavigateTab,
   onOpenImporter,
   onOpenQuestionSearch,
-  onPracticeQuestions
+  onPracticeQuestions,
+  onStartAonDeductive,
+  onStartAonMultitasking
 }) => {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [manifest, setManifest] = useState<BankManifest | null>(null);
@@ -347,6 +353,48 @@ export const Dashboard: React.FC<DashboardProps> = ({
   return (
     <div className="max-w-6xl mx-auto space-y-6 pb-20 font-sans">
       
+      {/* 🚀 BANNER SUPERIOR DE ACCESO RÁPIDO: AON / CUT-E PSICOTÉCNICOS NETJETS */}
+      <div className="rounded-2xl bg-gradient-to-r from-[#171203] via-[#0d172e] to-[#071d18] border-2 border-amber-500/50 p-4 sm:p-5 shadow-xl flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="flex items-center gap-3.5">
+          <div className="w-12 h-12 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-400 shrink-0 shadow-glow-amber">
+            <Brain className="w-6 h-6" />
+          </div>
+          <div>
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40">
+                NetJets Stage 1 • Tests Psicotécnicos AON / cut-e
+              </span>
+            </div>
+            <h2 className="text-base sm:text-lg font-black text-white mt-0.5">
+              Simuladores Oficiales AON Deductive Logic & Multitasking
+            </h2>
+            <p className="text-xs text-slate-300">
+              Practica el razonamiento deductivo (Sudoku 4×4 a 5×5) y la multitarea dual (Canal de vuelo + sumas y restas mentales).
+            </p>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-2.5 w-full sm:w-auto shrink-0 flex-wrap">
+          <button
+            type="button"
+            onClick={onStartAonDeductive}
+            className="flex-1 sm:flex-none px-4 py-2.5 rounded-xl font-black text-xs bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 shadow-md shadow-amber-950/40 transition-all active:scale-95 flex items-center justify-center gap-1.5"
+          >
+            <Brain className="w-4 h-4" />
+            <span>Deductive Logic (9m)</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={onStartAonMultitasking}
+            className="flex-1 sm:flex-none px-4 py-2.5 rounded-xl font-black text-xs bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-slate-950 shadow-md shadow-emerald-950/40 transition-all active:scale-95 flex items-center justify-center gap-1.5"
+          >
+            <Zap className="w-4 h-4" />
+            <span>Multitasking (8m)</span>
+          </button>
+        </div>
+      </div>
+
       {/* 1. Buscador de información sobre el banco de preguntas */}
       <div className="dashboard-info-search rounded-2xl border p-4 sm:p-5 shadow-lg space-y-3">
         <div className="flex items-start justify-between gap-3">
@@ -1280,6 +1328,78 @@ export const Dashboard: React.FC<DashboardProps> = ({
               Spaced repetition active recall flashcards in English for acronyms and limits.
             </p>
           </button>
+        </div>
+
+        {/* 🚀 STAGE 1: AON / cut-e Psychometric Simulators (NetJets Pilot Assessment) */}
+        <div className="pt-4 border-t border-amber-500/25 space-y-3 relative z-10">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div className="flex items-center gap-2">
+              <span className="w-2 h-4 rounded-full bg-amber-400" />
+              <h3 className="text-xs sm:text-sm font-black text-amber-300 uppercase tracking-wider flex items-center gap-1.5">
+                <Brain className="w-4 h-4 text-amber-400" />
+                <span>Stage 1: AON / cut-e Aptitude & Reasoning Simulators</span>
+              </h3>
+            </div>
+            <span className="text-[10px] font-mono text-slate-400 font-bold px-2.5 py-0.5 rounded-full bg-black/50 border border-slate-700 w-fit">
+              NetJets Pilot Selection Stage 1
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+            {/* Card 1: AON Deductive Logical Reasoning */}
+            <button
+              type="button"
+              onClick={onStartAonDeductive}
+              className="p-4 rounded-2xl bg-gradient-to-br from-[#1a1405] to-[#0f172a] hover:from-[#241c08] hover:to-[#172544] border-2 border-amber-500/50 hover:border-amber-400 text-left transition-all group flex flex-col justify-between shadow-xl active:scale-98"
+            >
+              <div>
+                <div className="flex items-center justify-between mb-2">
+                  <span className="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-500/40 flex items-center gap-1">
+                    <Brain className="w-3.5 h-3.5 text-amber-400" />
+                    <span>9 MIN EXAM • 4×4 & 5×5 LATIN SQUARE</span>
+                  </span>
+                  <ArrowRight className="w-4 h-4 text-amber-400 group-hover:translate-x-1 transition-transform" />
+                </div>
+                <h4 className="text-sm font-black text-white group-hover:text-amber-300 transition-colors">
+                  AON Deductive Logical Reasoning (scales sx)
+                </h4>
+                <p className="text-xs text-slate-300 mt-1.5 leading-relaxed">
+                  Cuadrículas de símbolos geométricos (círculo, cuadrado, triángulo, cruz, rombo). Deducción por descarte de fila/columna para resolver la incógnita <span className="text-amber-400 font-mono font-bold">[ ? ]</span>. Arranque 4×4 con aumento progresivo a 5×5. Incluye modo examen de 9 minutos y modo práctica con pistas lógicas paso a paso.
+                </p>
+              </div>
+              <div className="flex items-center justify-between mt-3 pt-2.5 border-t border-amber-500/20 text-[11px] font-bold text-amber-400">
+                <span>🎯 Iniciar Simulador Deductivo</span>
+                <span className="text-[10px] font-mono text-slate-400">9:00 min</span>
+              </div>
+            </button>
+
+            {/* Card 2: AON Multitasking & Mental Math */}
+            <button
+              type="button"
+              onClick={onStartAonMultitasking}
+              className="p-4 rounded-2xl bg-gradient-to-br from-[#061e16] to-[#0f172a] hover:from-[#0a2e22] hover:to-[#172544] border-2 border-emerald-500/50 hover:border-emerald-400 text-left transition-all group flex flex-col justify-between shadow-xl active:scale-98"
+            >
+              <div>
+                <div className="flex items-center justify-between mb-2">
+                  <span className="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 flex items-center gap-1">
+                    <Zap className="w-3.5 h-3.5 text-emerald-400" />
+                    <span>8 MIN EXAM • CANAL + CÁLCULO MENTAL</span>
+                  </span>
+                  <ArrowRight className="w-4 h-4 text-emerald-400 group-hover:translate-x-1 transition-transform" />
+                </div>
+                <h4 className="text-sm font-black text-white group-hover:text-emerald-300 transition-colors">
+                  AON Multitasking & Mental Arithmetic (scales mt)
+                </h4>
+                <p className="text-xs text-slate-300 mt-1.5 leading-relaxed">
+                  Navegación de aeronave por canal vertical esquivando obstáculos (<span className="text-sky-300 font-mono font-bold">[←][→]</span> o táctil) mientras resuelves operaciones continuas de sumas y restas en formato <span className="text-emerald-300 font-bold">[CORRECTO / INCORRECTO]</span>. Cuenta con modo examen oficial de 8 minutos y modo de entrenamiento puro de cálculo mental.
+                </p>
+              </div>
+              <div className="flex items-center justify-between mt-3 pt-2.5 border-t border-emerald-500/20 text-[11px] font-bold text-emerald-400">
+                <span>⚡ Iniciar Simulador Multitarea</span>
+                <span className="text-[10px] font-mono text-slate-400">8:00 min</span>
+              </div>
+            </button>
+          </div>
         </div>
       </div>
 

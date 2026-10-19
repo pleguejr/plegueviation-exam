@@ -2,8 +2,8 @@
 
 > Este archivo sirve como memoria compartida entre ordenadores. Se actualiza automáticamente al decir **«graba para continuar luego»** y se lee tras hacer `git pull` al decir **«vamos a continuar desde donde lo dejamos»**.
 
-- **Última sincronización:** 2026-10-11
-- **Versión / Commit base:** `v3.6.0`
+- **Última sincronización:** 2026-10-19
+- **Versión / Commit base:** `v3.7.0`
 - **Total de reactivos compilados:** 2.262 preguntas activas (13 excluidas en `deleted_questions.json`)
 
 ## ✅ Trabajos completados en esta sesión
@@ -48,9 +48,31 @@
 9. **Verificación y Calidad:**
    - 0 errores de TypeScript (`tsc`).
    - Compilación completa con Vite (`npm run build`) validada con 10 tarjetas Blue Team activas y soporte interactivo multipágina.
+10. **Simuladores Psicotécnicos AON / cut-e para Selección NetJets Europe (Stage 1 Aptitude & Reasoning Tests):**
+    - Implementados dos simuladores completos con estándar oficial AON / cut-e bajo especificaciones exactas del candidato NetJets:
+      - **AON Deductive Logical Reasoning (`scales sx` / Cuadrado Latino Sudoku)**:
+        - Archivo: `apps/web-pwa/src/components/psychometrics/AonDeductiveScreen.tsx` y motor procedural `AonDeductiveGenerator.ts`.
+        - Símbolos oficiales: Círculo (ámbar), Cuadrado (azul), Triángulo (verde), Cruz (rojo) y Rombo (púrpura).
+        - Generador con algoritmo de satisfacción de restricciones y garantía matemática de solución única sin conjeturas.
+        - Arranque progresivo en 4×4 que escala automáticamente a 5×5 al encadenar aciertos.
+        - **Modo Examen Oficial**: 9 minutos (540s) de cuenta atrás, avance instantáneo, evaluación NetJets Performance Goal (≥80% aciertos, ≥18 resueltas).
+        - **Modo Práctica**: Sin tiempo, con pistas lógicas interactivas (resaltado de fila/columna) y desglose paso a paso de la deducción.
+        - Soporte para teclado numérico (teclas 1..5) y toques táctiles para iPad.
+      - **AON Multitasking & Mental Arithmetic (`scales mt` / Capacidad Multitarea)**:
+        - Archivo: `apps/web-pwa/src/components/psychometrics/AonMultitaskingScreen.tsx` y motor de cálculo `AonMathEngine.ts`.
+        - Tarea motriz: Canal vertical de vuelo a 60 FPS (HTML5 Canvas) esquivando obstáculos con flechas `[←][→]`, teclas `A/D` o botones táctiles en iPad.
+        - Tarea cognitiva: Cálculo mental continuo de sumas y restas en formato **`[ CORRECTO / INCORRECTO ]`** con distractores sutiles (±1, ±2, ±10) que obligan a evaluar la ecuación mentalmente. Teclado: tecla `1` / `C` para Correcto, `2` / `I` para Incorrecto.
+        - **Modo Examen Oficial**: 8 minutos (480s) de cuenta atrás con cálculo concurrente y puntuación ponderada (precisión matemática % + precisión de trayectoria de vuelo %).
+        - **Modo Entrenamiento Puro de Cálculo Mental AON**: Selector directo para practicar únicamente las operaciones matemáticas a máxima velocidad sin carga motriz, para automatizar el cálculo mental previo al dual-task.
+        - Efectos de sonido con sintetizador Web Audio API (acierto, fallo, colisión) con toggle de silenciado.
+        - Historial local de intentos guardado en `localStorage` con indicadores de pase NetJets.
+    - Acceso directo y badges integrados en el dashboard principal dentro del bloque **NetJets Europe Interview Prep**.
+    - Compatibilidad plena con Modo Noche (Cockpit) y Modo Día (`.theme-light`).
+    - 0 errores de TypeScript (`tsc`) y compilación Vite verificada.
 
 ## 🎯 Próximos pasos / Pendientes al retomar
+- Probar sesiones de entrenamiento de los simuladores AON en iPad y PC.
+- Analizar métricas de velocidad de respuesta en cálculo mental para calibrar dificultad si el usuario lo solicita.
 - Probar exámenes personalizados combinando subdivisiones de Flota Cessna 172F y Flota Diamond DA40 TDI.
 - Realizar pruebas interactivas de las tarjetas SOP de Blue Team en la PWA.
-- Añadir infografías vectoriales adicionales con los modelos de Cessna 172F y Diamond DA40 si se solicita.
 

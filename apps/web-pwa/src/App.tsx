@@ -11,6 +11,8 @@ import { SyncModal } from './components/SyncModal';
 import { FlashcardScreen } from './components/FlashcardScreen';
 import { ProcedureCardsScreen } from './components/procedures/ProcedureCardsScreen';
 import { OperationalTablesScreen } from './components/tables/OperationalTablesScreen';
+import { AonDeductiveScreen } from './components/psychometrics/AonDeductiveScreen';
+import { AonMultitaskingScreen } from './components/psychometrics/AonMultitaskingScreen';
 import { Question, BankManifest, QuestionStats, ExamConfig, ExamSession, ExamMode, ExamSelectionStrategy } from './types';
 import { evaluateExam } from '@plegue/core-engine';
 import { loadAllQuestions, loadManifest, generateExamQuestions, randomizeQuestionOptions } from './services/questionsService';
@@ -37,7 +39,7 @@ import {
 } from 'lucide-react';
 
 export function App() {
-  const [currentView, setCurrentView] = useState<'dashboard' | 'explorer' | 'reports' | 'settings' | 'exam' | 'results' | 'flashcards' | 'procedures' | 'tables'>('dashboard');
+  const [currentView, setCurrentView] = useState<'dashboard' | 'explorer' | 'reports' | 'settings' | 'exam' | 'results' | 'flashcards' | 'procedures' | 'tables' | 'aon-deductive' | 'aon-multitasking'>('dashboard');
   const [flashcardCategory, setFlashcardCategory] = useState<string>('all');
   const [flashcardQuestionIds, setFlashcardQuestionIds] = useState<string[] | undefined>(undefined);
   const [flashcardDeckTitle, setFlashcardDeckTitle] = useState<string | undefined>(undefined);
@@ -333,7 +335,7 @@ export function App() {
     <div className="min-h-screen bg-[#070e1e] text-slate-100 flex flex-col font-sans">
       {/* Top AviationExam Navbar */}
       <Navbar
-        currentTab={currentView === 'explorer' ? 'explorer' : currentView === 'reports' ? 'reports' : currentView === 'settings' ? 'settings' : currentView === 'flashcards' ? 'flashcards' : currentView === 'procedures' ? 'procedures' : currentView === 'tables' ? 'tables' : 'dashboard'}
+        currentTab={currentView as any}
         theme={theme}
         onToggleTheme={toggleTheme}
         onSelectTab={(tab) => {
@@ -393,6 +395,20 @@ export function App() {
               setCurrentView('explorer');
             }}
             onPracticeQuestions={(ids, mode) => handleStartCustomQuiz(ids, mode)}
+            onStartAonDeductive={() => setCurrentView('aon-deductive')}
+            onStartAonMultitasking={() => setCurrentView('aon-multitasking')}
+          />
+        )}
+
+        {currentView === 'aon-deductive' && (
+          <AonDeductiveScreen
+            onBackToDashboard={() => setCurrentView('dashboard')}
+          />
+        )}
+
+        {currentView === 'aon-multitasking' && (
+          <AonMultitaskingScreen
+            onBackToDashboard={() => setCurrentView('dashboard')}
           />
         )}
 

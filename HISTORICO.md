@@ -4,7 +4,29 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 
 ---
 
-## 🚀 Versión Actual: v3.6.0 (2026-10-11)
+## 🚀 Versión Actual: v3.7.0 (2026-10-19)
+
+### 🧠 Simuladores Psicotécnicos AON / cut-e para Selección NetJets Europe (Deductive Logic & Multitasking)
+- **Simulador AON Deductive-Logical Reasoning (`scales sx` / Cuadrado Latino Sudoku):**
+  - Motor generativo procedural `AonDeductiveGenerator.ts` para matrices Sudoku / Cuadrado Latino (4×4 y 5×5) con figuras geométricas retina (Círculo, Cuadrado, Triángulo, Cruz, Rombo) garantizando unicidad matemática de solución lógica sin adivinación.
+  - Modo Examen Oficial de 9 minutos (540s) con cuenta atrás estricta y progresión dinámica (arranque en 4×4 que escala automáticamente a 5×5 al encadenar aciertos).
+  - Modo Práctica sin tiempo con sistema interactivo de pistas de deducción paso a paso y descarte guiado.
+  - Soporte ergonómico para teclado físico numérico (`1..5`) y teclado táctil de alto rendimiento adaptado a iPad/tabletas.
+  - Métricas de rendimiento, precisión neta y baremo NetJets Europe Pass/Review con persistencia local en `localStorage`.
+- **Simulador AON Multitasking & Mental Arithmetic (`scales mt` / Capacidad Multitarea):**
+  - Motor de doble tarea concurrente a 60 FPS en HTML5 Canvas con avión esquivando obstáculos en corredor vertical (`[←][→]`, `A/D` y controles táctiles en pantalla).
+  - Tarea concurrente de cálculo mental rápido de sumas y restas en formato oficial **`[ CORRECTO / INCORRECTO ]`** generado por `AonMathEngine.ts` con distractores sutiles ($\pm 1, \pm 2, \pm 10$). Atajos de teclado: `1` / `C` para Correcto, `2` / `I` para Incorrecto.
+  - Modo Examen Oficial de 8 minutos (480s) con cálculo de penalizaciones por colisión e impacto ponderado en el Net Score.
+  - Modalidad exclusiva **«Entrenamiento Puro de Cálculo Mental AON»** para práctica intensiva aislada de operaciones mentales rápidas bajo presión temporal antes del dual-task.
+  - Síntesis de sonido procedural vía Web Audio API (pitidos correctos, errores, advertencias de tiempo) con control de silencio.
+- **Integración de Navegación y Visibilidad PWA:**
+  - Nueva pestaña permanente **«Psicotécnicos AON»** con icono cerebral (`Brain`) en el `Navbar.tsx` superior para acceso directo sin necesidad de scroll.
+  - Banner destacado de lanzamiento rápido en la cabecera superior del `Dashboard.tsx` y sección dedicada dentro de la tarjeta de NetJets Europe Interview Prep.
+  - Soporte completo y contraste optimizado en Modo Día (`.theme-light`) y Modo Noche en `index.css`.
+
+---
+
+## 🚀 Versión: v3.6.0 (2026-10-11)
 
 ### 🛩️ Incorporación Diamond DA40 TDI (EC-OKC), Flota C172F, Purga C172N/P2010 y Tarjetas SOP Blue Team
 - **Desinstalación y purga de flotas descontinuadas:** Retirada completa de los bancos y recursos de `fleet-c172n` y `fleet-p2010tdi`.

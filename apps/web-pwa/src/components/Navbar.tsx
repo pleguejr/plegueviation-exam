@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Plane, Compass, BarChart3, BookOpen, PlusCircle, Wifi, WifiOff, Sparkles, User, Settings, FileText, Cloud, RefreshCw, Zap, Sun, Moon } from 'lucide-react';
+import { Plane, Compass, BarChart3, BookOpen, PlusCircle, Wifi, WifiOff, Sparkles, User, Settings, FileText, Cloud, RefreshCw, Zap, Sun, Moon, Brain } from 'lucide-react';
 import { getStoredSyncPin, getLastSyncTimestamp } from '../services/sync';
 
 interface NavbarProps {
-  currentTab: 'dashboard' | 'explorer' | 'reports' | 'settings' | 'flashcards' | 'procedures' | 'tables';
+  currentTab: 'dashboard' | 'explorer' | 'reports' | 'settings' | 'flashcards' | 'procedures' | 'tables' | 'aon-deductive' | 'aon-multitasking';
   theme: 'dark' | 'light';
   onToggleTheme: () => void;
-  onSelectTab: (tab: 'dashboard' | 'explorer' | 'reports' | 'settings' | 'flashcards' | 'procedures' | 'tables') => void;
+  onSelectTab: (tab: 'dashboard' | 'explorer' | 'reports' | 'settings' | 'flashcards' | 'procedures' | 'tables' | 'aon-deductive' | 'aon-multitasking') => void;
   onOpenNewExam: () => void;
   onOpenFlashcards: () => void;
   onOpenImporter: () => void;
@@ -116,6 +116,18 @@ export const Navbar: React.FC<NavbarProps> = ({
           >
             <FileText className="w-3.5 h-3.5" />
             <span>Tablas</span>
+          </button>
+
+          <button
+            onClick={() => onSelectTab('aon-deductive')}
+            className={`transition-colors py-1 flex items-center gap-1 ${
+              currentTab === 'aon-deductive' || currentTab === 'aon-multitasking'
+                ? 'text-amber-300 border-b-2 border-amber-400 font-bold'
+                : 'text-amber-300 hover:text-amber-200 font-semibold'
+            }`}
+          >
+            <Brain className="w-3.5 h-3.5 text-amber-400" />
+            <span>Psicotécnicos AON</span>
           </button>
 
           <button
