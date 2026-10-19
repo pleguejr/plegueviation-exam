@@ -89,6 +89,7 @@
     - Colores canónicos exactos según especificación de Kura/AON: Cuadrado Rojo (`#dc2626`), Círculo Verde (`#65a30d`), Cruz Azul (`#0284c7`), Triángulo Amarillo (`#eab308`) y Rombo Púrpura (`#9333ea`).
     - Patrón SVG diagonal de figuras rayadas (`isHatched: true`) para marcas de borrador/lápiz.
     - Interacción ergonómica: pulsar cualquier celda vacía permite colocar y alternar figuras rayadas de ayuda; pulsar la casilla objetivo `[ ? ]` activa la selección final de la respuesta correcta en la botonera azul inferior idéntica a la plataforma oficial.
+    - **Transición Automática Instantánea y Feedback Auditivo:** Al resolver correctamente un puzzle en cualquiera de los dos modos (Examen o Práctica), la celda `[ ? ]` se ilumina en verde con el símbolo resuelto, suena un chime armónico (Web Audio API) y la plataforma avanza automáticamente al siguiente puzzle (200-350ms) sin pausas manuales. En caso de error en modo práctica, se detiene para mostrar la deducción lógica paso a paso. Al colocar una figura rayada, el foco vuelve automáticamente a `[ ? ]` para responder de inmediato.
 14. **Reestructuración Oficial AON Multitasking Capability (`scales mt` 3-en-1):**
     - Arquitectura fiel a la plataforma oficial de Kura / NetJets dividida en 3 zonas concurrentes:
       - **Zona Izquierda**: Fila de 7 figuras con 1 triángulo direccional `[ ◀ ]` o `[ ▶ ]` y barra temporal azul vertical que se vacía progresivamente (timeout oficial AON de 5.5s).

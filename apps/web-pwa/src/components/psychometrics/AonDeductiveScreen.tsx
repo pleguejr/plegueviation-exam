@@ -96,6 +96,56 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
   });
 
   const timerRef = useRef<any>(null);
+  const audioCtxRef = useRef<AudioContext | null>(null);
+
+  const getAudioContext = useCallback(() => {
+    if (!audioCtxRef.current) {
+      const AudioCtx = window.AudioContext || (window as any).webkitAudioContext;
+      if (AudioCtx) {
+        audioCtxRef.current = new AudioCtx();
+      }
+    }
+    if (audioCtxRef.current && audioCtxRef.current.state === 'suspended') {
+      audioCtxRef.current.resume();
+    }
+    return audioCtxRef.current;
+  }, []);
+
+  const playSuccessChime = useCallback(() => {
+    try {
+      const ctx = getAudioContext();
+      if (!ctx) return;
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(880, ctx.currentTime); // A5
+      osc.frequency.exponentialRampToValueAtTime(1174, ctx.currentTime + 0.12); // D6
+      gain.gain.setValueAtTime(0.12, ctx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.18);
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.start();
+      osc.stop(ctx.currentTime + 0.18);
+    } catch {}
+  }, [getAudioContext]);
+
+  const playErrorBuzz = useCallback(() => {
+    try {
+      const ctx = getAudioContext();
+      if (!ctx) return;
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.type = 'sawtooth';
+      osc.frequency.setValueAtTime(220, ctx.currentTime);
+      osc.frequency.exponentialRampToValueAtTime(140, ctx.currentTime + 0.2);
+      gain.gain.setValueAtTime(0.15, ctx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.2);
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.start();
+      osc.stop(ctx.currentTime + 0.2);
+    } catch {}
+  }, [getAudioContext]);
 
   // Cargar siguiente puzzle
   const loadNextPuzzle = useCallback((targetLevel: number) => {
@@ -211,12 +261,28 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
 
       setAttempts((prev) => [...prev, newAttempt]);
 
-      if (mode === 'exam') {
-        const nextLvl = isCorrect ? currentLevel + 1 : Math.max(1, currentLevel);
-        setCurrentLevel(nextLvl);
-        loadNextPuzzle(nextLvl);
+      if (isCorrect) {
+        playSuccessChime();
+        setFeedback({ isCorrect: true, chosen: shapeId });
+        const nextLvl = currentLevel + 1;
+        // Pasa automáticamente al siguiente puzzle tras breve confirmación visual
+        setTimeout(() => {
+          setCurrentLevel(nextLvl);
+          loadNextPuzzle(nextLvl);
+        }, mode === 'exam' ? 200 : 350);
       } else {
-        setFeedback({ isCorrect, chosen: shapeId });
+        playErrorBuzz();
+        if (mode === 'exam') {
+          setFeedback({ isCorrect: false, chosen: shapeId });
+          const nextLvl = Math.max(1, currentLevel);
+          setTimeout(() => {
+            setCurrentLevel(nextLvl);
+            loadNextPuzzle(nextLvl);
+          }, 300);
+        } else {
+          // En modo práctica muestra la explicación del error
+          setFeedback({ isCorrect: false, chosen: shapeId });
+        }
       }
     } else {
       // 2. Coloca o conmuta figura rayada de ayuda en celda vacía seleccionada
@@ -229,6 +295,8 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
         }
         return { ...prev, [cellKey]: shapeId };
       });
+      // Vuelve a enfocar automáticamente la incógnita [?] para que la siguiente pulsación resuelva directamente
+      setSelectedCell({ r: currentPuzzle.targetRow, c: currentPuzzle.targetCol });
     }
   };
 
@@ -839,7 +907,11 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
                       : ''
                   } ${
                     isTarget
-                      ? 'bg-gradient-to-br from-amber-500/20 to-amber-600/30 border-2 border-amber-400 shadow-glow-amber'
+                      ? feedback
+                        ? feedback.isCorrect
+                          ? 'bg-emerald-500/30 border-2 border-emerald-400 shadow-glow-emerald scale-105 z-20'
+                          : 'bg-rose-500/30 border-2 border-rose-400 shadow-glow-rose'
+                        : 'bg-gradient-to-br from-amber-500/20 to-amber-600/30 border-2 border-amber-400 shadow-glow-amber'
                       : isRowColOfTarget
                       ? 'bg-sky-950/40 border border-sky-400/40'
                       : isClue
@@ -848,11 +920,22 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
                   }`}
                 >
                   {isTarget ? (
-                    <div className="flex flex-col items-center justify-center">
-                      <span className="text-2xl sm:text-3xl font-black text-amber-400 animate-pulse font-mono">
-                        ?
-                      </span>
-                    </div>
+                    feedback ? (
+                      <div className="flex flex-col items-center justify-center p-1 sm:p-2 animate-scale-up">
+                        {renderShapeIcon(
+                          feedback.chosen,
+                          'w-8 h-8 sm:w-10 sm:h-10',
+                          false,
+                          `target-feedback-${rIdx}-${cIdx}`
+                        )}
+                      </div>
+                    ) : (
+                      <div className="flex flex-col items-center justify-center">
+                        <span className="text-2xl sm:text-3xl font-black text-amber-400 animate-pulse font-mono">
+                          ?
+                        </span>
+                      </div>
+                    )
                   ) : isClue ? (
                     <div className="p-1 sm:p-2 pointer-events-none">
                       {renderShapeIcon(cellShape, 'w-8 h-8 sm:w-10 sm:h-10', false, `clue-${rIdx}-${cIdx}`)}
