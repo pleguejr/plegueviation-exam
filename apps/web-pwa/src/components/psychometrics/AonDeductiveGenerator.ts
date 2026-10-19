@@ -18,48 +18,48 @@ export interface DeductiveSymbol {
 
 export const SYMBOLS_LIST: DeductiveSymbol[] = [
   {
+    id: 'triangle',
+    name: 'Triángulo',
+    nameEn: 'Triangle',
+    color: '#eab308', // Amarillo oficial AON
+    bgLight: 'rgba(234, 179, 8, 0.15)',
+    borderColor: '#ca8a04',
+    keyNumber: '1',
+  },
+  {
     id: 'circle',
     name: 'Círculo',
     nameEn: 'Circle',
-    color: '#f59e0b', // Amber / Naranja
-    bgLight: 'rgba(245, 158, 11, 0.15)',
-    borderColor: '#f59e0b',
-    keyNumber: '1',
+    color: '#65a30d', // Verde hoja oficial AON
+    bgLight: 'rgba(101, 163, 13, 0.15)',
+    borderColor: '#4d7c0f',
+    keyNumber: '2',
   },
   {
     id: 'square',
     name: 'Cuadrado',
     nameEn: 'Square',
-    color: '#0ea5e9', // Sky / Azul
-    bgLight: 'rgba(14, 165, 233, 0.15)',
-    borderColor: '#0ea5e9',
-    keyNumber: '2',
-  },
-  {
-    id: 'triangle',
-    name: 'Triángulo',
-    nameEn: 'Triangle',
-    color: '#10b981', // Emerald / Verde
-    bgLight: 'rgba(16, 185, 129, 0.15)',
-    borderColor: '#10b981',
+    color: '#dc2626', // Rojo oficial AON
+    bgLight: 'rgba(220, 38, 38, 0.15)',
+    borderColor: '#b91c1c',
     keyNumber: '3',
   },
   {
     id: 'cross',
     name: 'Cruz',
     nameEn: 'Cross',
-    color: '#f43f5e', // Rose / Rojo
-    bgLight: 'rgba(244, 63, 94, 0.15)',
-    borderColor: '#f43f5e',
+    color: '#0284c7', // Azul cielo oficial AON
+    bgLight: 'rgba(2, 132, 199, 0.15)',
+    borderColor: '#0369a1',
     keyNumber: '4',
   },
   {
     id: 'diamond',
     name: 'Rombo',
     nameEn: 'Diamond',
-    color: '#a855f7', // Purple / Violeta (para 5x5)
-    bgLight: 'rgba(168, 85, 247, 0.15)',
-    borderColor: '#a855f7',
+    color: '#9333ea', // Púrpura oficial AON (5x5)
+    bgLight: 'rgba(147, 51, 234, 0.15)',
+    borderColor: '#7e22ce',
     keyNumber: '5',
   },
 ];

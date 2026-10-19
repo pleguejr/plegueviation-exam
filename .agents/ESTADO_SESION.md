@@ -76,10 +76,32 @@
     - Pre-caching resiliente en `install` con `Promise.allSettled`, asegurando la descarga completa de la SPA, manifest y bancos de 2.262 preguntas.
     - Registro de Service Worker robusto en `App.tsx` para arranque inmediato en iPad y dispositivos móviles.
     - Acceso 100% offline garantizado tanto para los exámenes de preguntas como para los nuevos simuladores psicotécnicos AON.
+12. **Estandarización Psicométrica Científica AON / cut-e (TCT, TRI, Stanine 1-9 y Percentiles):**
+    - Archivo central: `apps/web-pwa/src/components/psychometrics/AonPsychometricsNorms.ts`.
+    - Implementada aproximación analítica de alta precisión de la función de distribución acumulada normal estándar $\Phi(z)$ (Abramowitz & Stegun, error residual $< 7.5 \times 10^{-8}$).
+    - Mapeo exacto de puntuaciones Z a **Escala Típica Stanine (1 a 9, $\mu=5, \sigma=2$)** y **Rango Percentil (PR 1% a 99%)**.
+    - Calibración estricta contra baremos de grupos normativos de pilotos comerciales europeos (EASA Airline Pilot Applicants):
+      - *Deductive Logic (`scales sx`)*: Examen oficial de 9 min, media $\mu = 18.2$, desviación típica $\sigma = 3.6$, con corrección de azar por fórmula psicométrica TCT $X_{\text{net}} = C - \frac{W}{k-1} = C - \frac{W}{3}$.
+      - *Multitasking Capability (`scales mt`)*: Examen oficial de 5 min, baremos individuales para Triángulo ($\mu=72, \sigma=14$), Mates ($\mu=38, \sigma=7.5$) y Números ($\mu=42, \sigma=8$). Z-Score compuesto ponderado: $Z_{\text{comp}} = 0.35 Z_{\text{tri}} + 0.35 Z_{\text{math}} + 0.30 Z_{\text{num}}$.
+      - Criterio de corte NetJets Europe / EASA Command: **Stanine $\ge 6$ (Percentil $\ge 60\%$)** calificado como *APTO / COMPETITIVO*, y **Stanine $\ge 7$ (Percentil $\ge 77\%$)** como *SUPERIOR / SOBRESALIENTE*.
+    - Informes visuales en pantalla con barra gráfica de los 9 Estaninos (Campana de Gauss), percentil alcanzado, net score y dictamen psicométrico sin complacencia.
+13. **Fidelidad Canónica AON / cut-e y Mecánica de Borradores Rayados (Deductive Logic):**
+    - Colores canónicos exactos según especificación de Kura/AON: Cuadrado Rojo (`#dc2626`), Círculo Verde (`#65a30d`), Cruz Azul (`#0284c7`), Triángulo Amarillo (`#eab308`) y Rombo Púrpura (`#9333ea`).
+    - Patrón SVG diagonal de figuras rayadas (`isHatched: true`) para marcas de borrador/lápiz.
+    - Interacción ergonómica: pulsar cualquier celda vacía permite colocar y alternar figuras rayadas de ayuda; pulsar la casilla objetivo `[ ? ]` activa la selección final de la respuesta correcta en la botonera azul inferior idéntica a la plataforma oficial.
+14. **Reestructuración Oficial AON Multitasking Capability (`scales mt` 3-en-1):**
+    - Arquitectura fiel a la plataforma oficial de Kura / NetJets dividida en 3 zonas concurrentes:
+      - **Zona Izquierda**: Fila de 7 figuras con 1 triángulo direccional `[ ◀ ]` o `[ ▶ ]` y barra temporal azul vertical que se vacía progresivamente (timeout de 3.8s).
+      - **Zona Superior Derecha**: Ecuación aritmética de 4 términos `[ CORRECTO ]` / `[ INCORRECTO ]`.
+      - **Zona Inferior Derecha**: Secuencia numérica de 7 dígitos `[ DUPLICADO ]` / `[ NO DUPLICADO ]`.
+    - Motor procedural `AonMultitaskingEngine.ts` con generación continua balanceada 50/50 y efectos sonoros sintetizados por Web Audio API 100% offline.
+15. **Cumplimiento Riguroso de Contraste Modo Día (`day-mode-ui-contrast`):**
+    - Estilos semánticos `.theme-light` en `apps/web-pwa/src/index.css` cubriendo tarjetas, cuadrículas, celdas de Cuadrado Latino, botonera azul, paneles de tareas y tarjetas de Estaninos y Percentiles, garantizando legibilidad perfecta sin fondos oscuros residuales.
 
 ## 🎯 Próximos pasos / Pendientes al retomar
-- Probar sesiones de entrenamiento de los simuladores AON en iPad y PC.
-- Analizar métricas de velocidad de respuesta en cálculo mental para calibrar dificultad si el usuario lo solicita.
+- Entrenar sesiones diarias de 9 min en Deductive Logic y 5 min en Multitasking apuntando a Stanine $\ge 6$ (Percentil $\ge 60\%$).
+- Probar el manejo táctil con figuras rayadas y atajos en iPad para maximizar la velocidad de resolución (<25s por reactivo).
 - Probar exámenes personalizados combinando subdivisiones de Flota Cessna 172F y Flota Diamond DA40 TDI.
 - Realizar pruebas interactivas de las tarjetas SOP de Blue Team en la PWA.
+
 

@@ -8,23 +8,32 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 
 ### 🧠 Simuladores Psicotécnicos AON / cut-e para Selección NetJets Europe (Deductive Logic & Multitasking)
 - **Simulador AON Deductive-Logical Reasoning (`scales sx` / Cuadrado Latino Sudoku):**
-  - Motor generativo procedural `AonDeductiveGenerator.ts` para matrices Sudoku / Cuadrado Latino (4×4 y 5×5) con figuras geométricas retina (Círculo, Cuadrado, Triángulo, Cruz, Rombo) garantizando unicidad matemática de solución lógica sin adivinación.
+  - Motor generativo procedural `AonDeductiveGenerator.ts` para matrices Sudoku / Cuadrado Latino (4×4 y 5×5) con figuras geométricas y colores oficiales canónicos AON: **Cuadrado Rojo**, **Círculo Verde**, **Cruz Azul**, **Triángulo Amarillo** y **Rombo Púrpura**.
+  - **Mecánica de Figuras Rayadas (Draft / Pencil Marks):** Selección de celdas vacías para colocar hipótesis y marcas de descarte intermedias rayadas en diagonal (patrón vectorial SVG) antes de resolver la incógnita `[ ? ]` con la botonera azul inferior idéntica a la plataforma oficial.
   - Modo Examen Oficial de 9 minutos (540s) con cuenta atrás estricta y progresión dinámica (arranque en 4×4 que escala automáticamente a 5×5 al encadenar aciertos).
   - Modo Práctica sin tiempo con sistema interactivo de pistas de deducción paso a paso y descarte guiado.
   - Soporte ergonómico para teclado físico numérico (`1..5`) y teclado táctil de alto rendimiento adaptado a iPad/tabletas.
-  - Métricas de rendimiento, precisión neta y baremo NetJets Europe Pass/Review con persistencia local en `localStorage`.
-- **Simulador AON Multitasking Capability (Triple-Task Oficial 3-en-1):**
-  - **Tarea 1: Flechas y Carriles de Obstáculos (`[←][→]` / `A/D` y controles táctiles iPad):** Campo de 4 carriles a 60 FPS con oleadas descendentes de barreras rojas donde exactamente 1 carril queda libre. El candidato debe posicionar el avión en el carril seguro antes del impacto.
-  - **Tarea 2: Sumas y Restas Mentales (`AonMathEngine.ts`):** Verificación aritmética rápida de operaciones continuas en formato `[ CORRECTO / INCORRECTO ]` (atajos: teclas `1` / `2`).
-  - **Tarea 3: Detección de Duplicados (`AonDuplicateEngine.ts`):** Reconocimiento de patrones en secuencias de 7 figuras geométricas de colores en formato `[ DUPLICADO (2X) / ÚNICOS (1X) ]` (atajos: teclas `3` / `4`).
-  - **Ponderación y Baremo NetJets Europe:** Puntuación global combinada (30% Flechas + 40% Mates + 30% Duplicados), con umbral de pase `PASS` (≥75% global y ≤3 colisiones).
-  - **Modos Aislados de Entrenamiento Puro:** Modos dedicados para entrenar cada tarea por separado (Solo Flechas, Solo Sumas y Restas, Solo Duplicados) y examen completo (3, 5 y 8 minutos).
-  - Síntesis de sonido procedural vía Web Audio API (pitidos de acierto, error, evasión de barrera y alarma de colisión) con control de silencio.
+- **Simulador AON Multitasking Capability (`scales mt` / Triple-Task Oficial 3-en-1 Actualizado):**
+  - Arquitectura en pantalla dividida conforme a la especificación oficial de Kura / NetJets:
+    - **Tarea 1 (Izquierda)**: Fila de 7 figuras geométricas con orientación de triángulo hacia la izquierda `[ ◀ ]` o derecha `[ ▶ ]` y barra temporal azul vertical que se vacía progresivamente (timeout dinámico de 3.8s).
+    - **Tarea 2 (Superior Derecha)**: Ecuaciones aritméticas de 4 términos (sumas y restas) en formato `[ CORRECTO ]` / `[ INCORRECTO ]` (teclas `1` / `2`).
+    - **Tarea 3 (Inferior Derecha)**: Secuencias numéricas de 7 dígitos con detección de duplicados en formato `[ DUPLICADO ]` / `[ NO DUPLICADO ]` (teclas `3` / `4`).
+  - Motor procedural continuo `AonMultitaskingEngine.ts` y síntesis de sonido procedural vía Web Audio API 100% offline.
+  - Modos de práctica aislada para entrenar cada habilidad individualmente y examen completo (3, 5 y 8 min).
+- **Estandarización Psicométrica Científica AON / cut-e (TCT, TRI, Stanine 1-9 y Percentiles):**
+  - Motor matemático `AonPsychometricsNorms.ts` con cálculo gaussiano continuo $\Phi(z)$ mediante aproximación de Abramowitz & Stegun ($|ε| < 7.5 \times 10^{-8}$).
+  - Transformación estandarizada de puntuaciones Z a **Escala Stanine (1 a 9, $\mu=5, \sigma=2$)** y **Rango Percentil (PR 1% a 99%)**.
+  - Calibrado con grupos normativos de aspirantes a piloto de aerolínea europea:
+    - *Deductive Logic*: 9 min, $\mu=18.2$, $\sigma=3.6$, con penalización neta por azar $-(W/3)$.
+    - *Multitasking*: 5 min, baremos individuales para Triángulo ($\mu=72, \sigma=14$), Mates ($\mu=38, \sigma=7.5$) y Números ($\mu=42, \sigma=8$), con Z-score compuesto ponderado ($0.35 Z_{\text{tri}} + 0.35 Z_{\text{math}} + 0.30 Z_{\text{num}}$).
+    - Criterio de corte NetJets Europe / EASA Command: **Stanine $\ge 6$ (Percentil $\ge 60\%$)** = Apto, **Stanine $\ge 7$ (Percentil $\ge 77\%$)** = Superior / Competitivo.
+  - Representación visual con barra de 9 Estaninos (Campana de Gauss), percentil, desglose por tareas y dictamen psicométrico.
 - **Fortificación y Soporte 100% Offline (PWA Offline-First):**
-  - **Inyección Automática de Bundles Vite (`vite.config.ts`):** Extendido el hook de cierre de bundle (`closeBundle`) para escanear `dist/assets/` e inyectar automáticamente los hashes exactos de los chunks de JavaScript (`index-[hash].js`) y estilos CSS (`index-[hash].css`) en `ASSETS_TO_CACHE` dentro de `dist/sw.js`.
-  - **Pre-caching Atómico Resiliente (`public/sw.js`):** Sustituido el `cache.addAll()` bloqueante por `Promise.allSettled()`, garantizando que la caché almacene íntegramente el HTML, bundles JS/CSS, banco de 2.262 preguntas y SVGs sin fallar si un recurso opcional estuviera inaccesible.
-  - **Registro Eager de Service Worker (`App.tsx`):** Registro inmediato si `document.readyState === 'complete'` o en evento `load`, evitando pérdidas de registro en iPadOS y navegadores móviles al montar la SPA.
-  - **Caché Versionada v3.7.0:** Sincronizado `CACHE_NAME` a `plegueviation-cache-v3.7.0` en `package.json`, `apps/web-pwa/package.json` y Service Worker, purgando automáticamente cualquier caché antigua y garantizando que el simulador y los psicotécnicos AON funcionen al 100% sin conexión a internet ni WiFi.
+  - **Inyección Automática de Bundles Vite (`vite.config.ts`):** Inyección de hashes JS (`index-[hash].js`) y CSS (`index-[hash].css`) en `ASSETS_TO_CACHE` en `dist/sw.js`.
+  - **Pre-caching Atómico Resiliente (`public/sw.js`):** Uso de `Promise.allSettled()`, garantizando almacenamiento offline completo de la SPA, manifest y bancos de 2.262 preguntas.
+  - **Caché Versionada v3.7.0:** Purga automática de cachés obsoletas y disponibilidad completa offline en iPads y dispositivos móviles sin WiFi.
+- **Contraste Modo Día (`day-mode-ui-contrast`):**
+  - Overrides exhaustivos `.theme-light` en `apps/web-pwa/src/index.css` para todas las tarjetas, subpaneles y pantallas de resultados de psicotécnicos AON.
 
 ---
 

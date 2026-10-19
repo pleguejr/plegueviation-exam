@@ -15,7 +15,11 @@ import {
   Brain, 
   Layers,
   Sparkles,
-  Info
+  Info,
+  Edit3,
+  Trash2,
+  TrendingUp,
+  Target
 } from 'lucide-react';
 import { 
   DeductivePuzzle, 
@@ -24,6 +28,10 @@ import {
   SYMBOLS_LIST, 
   generateDeductivePuzzle 
 } from './AonDeductiveGenerator';
+import { 
+  evaluateAonDeductiveScore, 
+  PsychometricResult 
+} from './AonPsychometricsNorms';
 
 interface AonDeductiveScreenProps {
   onBackToDashboard: () => void;
@@ -46,33 +54,41 @@ interface SessionSummary {
   wrongCount: number;
   accuracy: number;
   avgTimeSeconds: number;
-  score: number;
+  netScore: number;
+  stanine: number;
+  percentile: number;
+  zScore: number;
+  classification: string;
   passed: boolean;
 }
 
 export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackToDashboard }) => {
-  // Modes: 'intro' | 'playing' | 'results'
+  // Estados de navegación: 'intro' | 'playing' | 'results'
   const [gameState, setGameState] = useState<'intro' | 'playing' | 'results'>('intro');
   const [mode, setMode] = useState<'exam' | 'practice'>('exam');
   
-  // Timer: 9 minutes (540 seconds) for exam mode
+  // Temporizador oficial: 9 minutos (540 segundos)
   const EXAM_DURATION_SECONDS = 9 * 60; // 540s
   const [timeLeft, setTimeLeft] = useState<number>(EXAM_DURATION_SECONDS);
   const [isPaused, setIsPaused] = useState<boolean>(false);
 
-  // Puzzle State
+  // Estados del puzzle activo
   const [currentPuzzle, setCurrentPuzzle] = useState<DeductivePuzzle | null>(null);
-  const [currentLevel, setCurrentLevel] = useState<number>(1); // 1..5 = 4x4, 6+ = 5x5
+  const [currentLevel, setCurrentLevel] = useState<number>(1);
   const [currentGridSize, setCurrentGridSize] = useState<4 | 5>(4);
   const [attempts, setAttempts] = useState<AttemptResult[]>([]);
   const [startTime, setStartTime] = useState<number>(Date.now());
   const [feedback, setFeedback] = useState<{ isCorrect: boolean; chosen: ShapeId } | null>(null);
   const [showHint, setShowHint] = useState<boolean>(false);
 
-  // Historical local storage
+  // Sistema de figuras rayadas de ayuda (Pencil Marks / Draft notes oficiales de Aon)
+  const [draftMarks, setDraftMarks] = useState<Record<string, ShapeId>>({});
+  const [selectedCell, setSelectedCell] = useState<{ r: number; c: number } | null>(null);
+
+  // Historial en LocalStorage con métricas psicométricas (Stanine + Percentil)
   const [history, setHistory] = useState<SessionSummary[]>(() => {
     try {
-      const saved = localStorage.getItem('plegueviation_aon_deductive_history');
+      const saved = localStorage.getItem('plegueviation_aon_deductive_history_v2');
       return saved ? JSON.parse(saved) : [];
     } catch {
       return [];
@@ -81,7 +97,7 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
 
   const timerRef = useRef<any>(null);
 
-  // Iniciar puzzle
+  // Cargar siguiente puzzle
   const loadNextPuzzle = useCallback((targetLevel: number) => {
     const size: 4 | 5 = targetLevel <= 5 ? 4 : 5;
     let diff: 'basic_4x4' | 'intermediate_4x4' | 'advanced_5x5' = 'basic_4x4';
@@ -93,6 +109,8 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
     setCurrentPuzzle(p);
     setFeedback(null);
     setShowHint(false);
+    setDraftMarks({});
+    setSelectedCell({ r: p.targetRow, c: p.targetCol }); // Por defecto se enfoca la incógnita [?]
     setStartTime(Date.now());
   }, []);
 
@@ -107,12 +125,11 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
     loadNextPuzzle(1);
   };
 
-  // Finalizar examen
+  // Finalizar examen y procesar baremo psicométrico de pilotos
   const handleFinishExam = useCallback(() => {
     if (timerRef.current) clearInterval(timerRef.current);
     setGameState('results');
 
-    // Calcular estadísticas
     setAttempts((prevAttempts) => {
       const total = prevAttempts.length;
       const correct = prevAttempts.filter((a) => a.isCorrect).length;
@@ -121,10 +138,8 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
       const totalTimeMs = prevAttempts.reduce((acc, a) => acc + a.timeSpentMs, 0);
       const avgTime = total > 0 ? Math.round((totalTimeMs / total / 1000) * 10) / 10 : 0;
       
-      // En cut-e, cada acierto suma 1 y fallo penaliza 0.5 (o net score)
-      const netScore = Math.max(0, correct - Math.floor(wrong * 0.5));
-      // Meta NetJets: >= 20 preguntas contestadas con >= 80% de aciertos
-      const passed = total >= 18 && accuracy >= 80;
+      // Evaluación psicométrica estandarizada en grupo normativo de pilotos comerciales
+      const psycho = evaluateAonDeductiveScore(total, correct, wrong, 540);
 
       const summary: SessionSummary = {
         date: new Date().toISOString(),
@@ -134,14 +149,18 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
         wrongCount: wrong,
         accuracy,
         avgTimeSeconds: avgTime,
-        score: netScore,
-        passed,
+        netScore: psycho.netScore,
+        stanine: psycho.stanine,
+        percentile: psycho.percentile,
+        zScore: psycho.zScore,
+        classification: psycho.classification,
+        passed: psycho.easaPass,
       };
 
       setHistory((prevHist) => {
         const updated = [summary, ...prevHist].slice(0, 30);
         try {
-          localStorage.setItem('plegueviation_aon_deductive_history', JSON.stringify(updated));
+          localStorage.setItem('plegueviation_aon_deductive_history_v2', JSON.stringify(updated));
         } catch {}
         return updated;
       });
@@ -150,7 +169,7 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
     });
   }, [mode]);
 
-  // Manejador del temporizador
+  // Temporizador de cuenta atrás (9 min en modo examen)
   useEffect(() => {
     if (gameState !== 'playing' || mode !== 'exam' || isPaused) return;
 
@@ -170,36 +189,50 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
     };
   }, [gameState, mode, isPaused, handleFinishExam]);
 
-  // Manejo de respuesta del usuario
-  const handleSelectShape = (shapeId: ShapeId) => {
+  // Manejo de entrada de figura (teclado o botón)
+  const handleShapeInput = (shapeId: ShapeId) => {
     if (!currentPuzzle || feedback) return;
 
-    const timeSpent = Date.now() - startTime;
-    const isCorrect = shapeId === currentPuzzle.correctShape;
+    const isTargetSelected = !selectedCell || (selectedCell.r === currentPuzzle.targetRow && selectedCell.c === currentPuzzle.targetCol);
 
-    const newAttempt: AttemptResult = {
-      puzzleId: currentPuzzle.id,
-      gridSize: currentPuzzle.gridSize,
-      chosen: shapeId,
-      correct: currentPuzzle.correctShape,
-      isCorrect,
-      timeSpentMs: timeSpent,
-    };
+    if (isTargetSelected) {
+      // 1. Resuelve la incógnita [?]
+      const timeSpent = Date.now() - startTime;
+      const isCorrect = shapeId === currentPuzzle.correctShape;
 
-    setAttempts((prev) => [...prev, newAttempt]);
+      const newAttempt: AttemptResult = {
+        puzzleId: currentPuzzle.id,
+        gridSize: currentPuzzle.gridSize,
+        chosen: shapeId,
+        correct: currentPuzzle.correctShape,
+        isCorrect,
+        timeSpentMs: timeSpent,
+      };
 
-    if (mode === 'exam') {
-      // En modo examen, avance instantáneo
-      const nextLvl = isCorrect ? currentLevel + 1 : Math.max(1, currentLevel);
-      setCurrentLevel(nextLvl);
-      loadNextPuzzle(nextLvl);
+      setAttempts((prev) => [...prev, newAttempt]);
+
+      if (mode === 'exam') {
+        const nextLvl = isCorrect ? currentLevel + 1 : Math.max(1, currentLevel);
+        setCurrentLevel(nextLvl);
+        loadNextPuzzle(nextLvl);
+      } else {
+        setFeedback({ isCorrect, chosen: shapeId });
+      }
     } else {
-      // En modo práctica, mostrar feedback visual antes de pasar
-      setFeedback({ isCorrect, chosen: shapeId });
+      // 2. Coloca o conmuta figura rayada de ayuda en celda vacía seleccionada
+      const cellKey = `${selectedCell.r}-${selectedCell.c}`;
+      setDraftMarks((prev) => {
+        if (prev[cellKey] === shapeId) {
+          const next = { ...prev };
+          delete next[cellKey];
+          return next;
+        }
+        return { ...prev, [cellKey]: shapeId };
+      });
     }
   };
 
-  // Teclado físico: teclas 1..5 para los símbolos
+  // Teclado físico: teclas 1..5 para símbolos, Delete/Backspace para borrar nota
   useEffect(() => {
     if (gameState !== 'playing') return;
 
@@ -207,10 +240,22 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
       if (e.key >= '1' && e.key <= '5') {
         const idx = parseInt(e.key, 10) - 1;
         if (currentPuzzle && idx < currentPuzzle.availableSymbols.length) {
-          handleSelectShape(currentPuzzle.availableSymbols[idx].id);
+          handleShapeInput(currentPuzzle.availableSymbols[idx].id);
+        }
+      } else if (e.key === 'Backspace' || e.key === 'Delete') {
+        if (selectedCell && (selectedCell.r !== currentPuzzle?.targetRow || selectedCell.c !== currentPuzzle?.targetCol)) {
+          const cellKey = `${selectedCell.r}-${selectedCell.c}`;
+          setDraftMarks((prev) => {
+            const next = { ...prev };
+            delete next[cellKey];
+            return next;
+          });
+        }
+      } else if (e.key === 'Escape') {
+        if (currentPuzzle) {
+          setSelectedCell({ r: currentPuzzle.targetRow, c: currentPuzzle.targetCol });
         }
       } else if (e.key === ' ' && mode === 'practice' && feedback) {
-        // Espacio para continuar en modo práctica
         const nextLvl = feedback.isCorrect ? currentLevel + 1 : currentLevel;
         setCurrentLevel(nextLvl);
         loadNextPuzzle(nextLvl);
@@ -219,7 +264,7 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [gameState, currentPuzzle, feedback, mode, currentLevel, loadNextPuzzle]);
+  }, [gameState, currentPuzzle, feedback, mode, currentLevel, selectedCell, loadNextPuzzle]);
 
   // Formato mm:ss
   const formatTime = (secs: number) => {
@@ -228,54 +273,154 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
     return `${m}:${s < 10 ? '0' : ''}${s}`;
   };
 
-  // Renderizar Símbolo SVG
-  const renderShapeIcon = (shapeId: ShapeId, sizeClass = 'w-9 h-9 sm:w-11 sm:h-11') => {
+  /**
+   * Renderizador SVG oficial de símbolos AON con soporte para modo sólido o RAYADO (hatched)
+   * Colores oficiales:
+   * - Triángulo: Amarillo (#eab308)
+   * - Círculo: Verde (#65a30d)
+   * - Cuadrado: Rojo (#dc2626)
+   * - Cruz: Azul (#0284c7)
+   * - Rombo: Púrpura (#9333ea)
+   */
+  const renderShapeIcon = (
+    shapeId: ShapeId, 
+    sizeClass = 'w-9 h-9 sm:w-11 sm:h-11', 
+    isHatched = false, 
+    idSuffix = ''
+  ) => {
+    const hatchId = `hatch-${shapeId}-${idSuffix || Math.floor(Math.random() * 100000)}`;
+
     switch (shapeId) {
-      case 'circle':
+      case 'triangle': {
+        const baseColor = '#eab308';
+        const strokeColor = '#ca8a04';
         return (
           <svg className={sizeClass} viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="38" fill="#f59e0b" stroke="#d97706" strokeWidth="6" />
+            {isHatched && (
+              <defs>
+                <pattern id={hatchId} width="10" height="10" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+                  <rect width="10" height="10" fill={baseColor} />
+                  <line x1="0" y1="0" x2="0" y2="10" stroke="#ffffff" strokeWidth="3.5" />
+                </pattern>
+              </defs>
+            )}
+            <polygon 
+              points="50,14 86,82 14,82" 
+              fill={isHatched ? `url(#${hatchId})` : baseColor} 
+              stroke={strokeColor} 
+              strokeWidth="6" 
+              strokeLinejoin="round" 
+            />
           </svg>
         );
-      case 'square':
+      }
+      case 'circle': {
+        const baseColor = '#65a30d';
+        const strokeColor = '#4d7c0f';
         return (
           <svg className={sizeClass} viewBox="0 0 100 100">
-            <rect x="16" y="16" width="68" height="68" rx="8" fill="#0ea5e9" stroke="#0284c7" strokeWidth="6" />
+            {isHatched && (
+              <defs>
+                <pattern id={hatchId} width="10" height="10" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+                  <rect width="10" height="10" fill={baseColor} />
+                  <line x1="0" y1="0" x2="0" y2="10" stroke="#ffffff" strokeWidth="3.5" />
+                </pattern>
+              </defs>
+            )}
+            <circle 
+              cx="50" 
+              cy="50" 
+              r="38" 
+              fill={isHatched ? `url(#${hatchId})` : baseColor} 
+              stroke={strokeColor} 
+              strokeWidth="6" 
+            />
           </svg>
         );
-      case 'triangle':
+      }
+      case 'square': {
+        const baseColor = '#dc2626';
+        const strokeColor = '#b91c1c';
         return (
           <svg className={sizeClass} viewBox="0 0 100 100">
-            <polygon points="50,14 86,82 14,82" fill="#10b981" stroke="#059669" strokeWidth="6" strokeLinejoin="round" />
+            {isHatched && (
+              <defs>
+                <pattern id={hatchId} width="10" height="10" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+                  <rect width="10" height="10" fill={baseColor} />
+                  <line x1="0" y1="0" x2="0" y2="10" stroke="#ffffff" strokeWidth="3.5" />
+                </pattern>
+              </defs>
+            )}
+            <rect 
+              x="16" 
+              y="16" 
+              width="68" 
+              height="68" 
+              rx="8" 
+              fill={isHatched ? `url(#${hatchId})` : baseColor} 
+              stroke={strokeColor} 
+              strokeWidth="6" 
+            />
           </svg>
         );
-      case 'cross':
+      }
+      case 'cross': {
+        const baseColor = '#0284c7';
+        const strokeColor = '#0369a1';
         return (
           <svg className={sizeClass} viewBox="0 0 100 100">
+            {isHatched && (
+              <defs>
+                <pattern id={hatchId} width="10" height="10" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+                  <rect width="10" height="10" fill={baseColor} />
+                  <line x1="0" y1="0" x2="0" y2="10" stroke="#ffffff" strokeWidth="3.5" />
+                </pattern>
+              </defs>
+            )}
             <path
               d="M38,12 L62,12 L62,38 L88,38 L88,62 L62,62 L62,88 L38,88 L38,62 L12,62 L12,38 L38,38 Z"
-              fill="#f43f5e"
-              stroke="#e11d48"
+              fill={isHatched ? `url(#${hatchId})` : baseColor}
+              stroke={strokeColor}
               strokeWidth="5"
               strokeLinejoin="round"
             />
           </svg>
         );
-      case 'diamond':
+      }
+      case 'diamond': {
+        const baseColor = '#9333ea';
+        const strokeColor = '#7e22ce';
         return (
           <svg className={sizeClass} viewBox="0 0 100 100">
-            <polygon points="50,12 88,50 50,88 12,50" fill="#a855f7" stroke="#7e22ce" strokeWidth="6" strokeLinejoin="round" />
+            {isHatched && (
+              <defs>
+                <pattern id={hatchId} width="10" height="10" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+                  <rect width="10" height="10" fill={baseColor} />
+                  <line x1="0" y1="0" x2="0" y2="10" stroke="#ffffff" strokeWidth="3.5" />
+                </pattern>
+              </defs>
+            )}
+            <polygon 
+              points="50,12 88,50 50,88 12,50" 
+              fill={isHatched ? `url(#${hatchId})` : baseColor} 
+              stroke={strokeColor} 
+              strokeWidth="6" 
+              strokeLinejoin="round" 
+            />
           </svg>
         );
+      }
       default:
         return null;
     }
   };
 
-  // 1. PANTALLA INTRODUCCIÓN / REGLAS
+  // ==========================================================================
+  // 1. PANTALLA INTRODUCCIÓN / REGLAS & BAREMO PSICOMÉTRICO
+  // ==========================================================================
   if (gameState === 'intro') {
     return (
-      <div className="max-w-4xl mx-auto space-y-6 animate-fade-in p-4 sm:p-6">
+      <div className="aon-deductive-screen max-w-4xl mx-auto space-y-6 animate-fade-in p-4 sm:p-6">
         {/* Cabecera */}
         <div className="flex items-center justify-between pb-4 border-b border-sky-500/20">
           <button
@@ -286,12 +431,12 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
             <span>Volver al Dashboard</span>
           </button>
           <span className="text-xs font-mono px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30 font-bold">
-            AON / cut-e • NetJets Assessment
+            AON cut-e • NetJets Pilot Assessment
           </span>
         </div>
 
         {/* Hero Card */}
-        <div className="bg-gradient-to-br from-[#0c1c3d] via-[#09152b] to-[#060e1d] border border-amber-500/40 rounded-3xl p-6 sm:p-8 space-y-6 shadow-2xl relative overflow-hidden">
+        <div className="aon-deductive-intro-card bg-gradient-to-br from-[#0c1c3d] via-[#09152b] to-[#060e1d] border border-amber-500/40 rounded-3xl p-6 sm:p-8 space-y-6 shadow-2xl relative overflow-hidden">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div className="flex items-center gap-4">
               <div className="w-16 h-16 rounded-2xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-400 shadow-glow-amber">
@@ -310,7 +455,7 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
 
           {/* Reglas de la prueba */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="p-4 rounded-2xl bg-black/40 border border-sky-500/20 space-y-2">
+            <div className="aon-deductive-subcard p-4 rounded-2xl bg-black/40 border border-sky-500/20 space-y-2">
               <div className="flex items-center gap-2 text-sky-400 font-bold text-xs uppercase tracking-wider">
                 <Layers className="w-4 h-4" />
                 <span>1. Regla de Cuadrícula</span>
@@ -320,37 +465,37 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
               </p>
             </div>
 
-            <div className="p-4 rounded-2xl bg-black/40 border border-emerald-500/20 space-y-2">
+            <div className="aon-deductive-subcard p-4 rounded-2xl bg-black/40 border border-emerald-500/20 space-y-2">
               <div className="flex items-center gap-2 text-emerald-400 font-bold text-xs uppercase tracking-wider">
-                <Zap className="w-4 h-4" />
-                <span>2. Progresión 4×4 a 5×5</span>
+                <Edit3 className="w-4 h-4" />
+                <span>2. Figuras Rayadas de Ayuda</span>
               </div>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Inicias en cuadrículas 4×4 con 4 símbolos. Al ir acertando, aumentará la dificultad y pasarás a 5×5 con 5 símbolos.
+                Pulsa cualquier celda vacía para colocar <strong>figuras rayadas de lápiz</strong> y anotar tus deducciones intermedias antes de resolver la incógnita [ ? ].
               </p>
             </div>
 
-            <div className="p-4 rounded-2xl bg-black/40 border border-amber-500/20 space-y-2">
+            <div className="aon-deductive-subcard p-4 rounded-2xl bg-black/40 border border-amber-500/20 space-y-2">
               <div className="flex items-center gap-2 text-amber-400 font-bold text-xs uppercase tracking-wider">
-                <Timer className="w-4 h-4" />
-                <span>3. Formato Examen NetJets</span>
+                <TrendingUp className="w-4 h-4" />
+                <span>3. Baremo Stanine & Percentil</span>
               </div>
               <p className="text-xs text-slate-300 leading-relaxed">
-                <strong>9 minutos</strong> oficiales de cuenta atrás. El objetivo es resolver la mayor cantidad posible con alta precisión ($\ge 80\%$).
+                <strong>9 minutos</strong> oficiales. Evaluación bajo modelos TCT y TRI con baremo de pilotos: corte NetJets en <strong>Stanine ≥ 6 (Percentil ≥ 60%)</strong>.
               </p>
             </div>
           </div>
 
-          {/* Símbolos del test */}
-          <div className="p-4 rounded-2xl bg-black/30 border border-slate-800 space-y-2">
-            <p className="text-xs font-bold text-slate-300">Símbolos utilizados en el test:</p>
+          {/* Símbolos del test con colores oficiales AON */}
+          <div className="aon-deductive-symbols-card p-4 rounded-2xl bg-black/30 border border-slate-800 space-y-2">
+            <p className="text-xs font-bold text-slate-300">Símbolos y códigos oficiales AON / cut-e:</p>
             <div className="flex items-center justify-around sm:justify-start sm:gap-6 pt-1">
               {SYMBOLS_LIST.map((sym) => (
                 <div key={sym.id} className="flex flex-col items-center gap-1">
-                  <div className="w-12 h-12 rounded-xl bg-slate-900 border border-slate-700 flex items-center justify-center p-1.5 shadow-md">
-                    {renderShapeIcon(sym.id, 'w-8 h-8')}
+                  <div className="aon-deductive-symbol-box w-12 h-12 rounded-xl bg-white border border-slate-300 flex items-center justify-center p-1.5 shadow-md">
+                    {renderShapeIcon(sym.id, 'w-8 h-8', false, `intro-solid-${sym.id}`)}
                   </div>
-                  <span className="text-[10px] font-bold text-slate-400">{sym.name}</span>
+                  <span className="text-[10px] font-bold text-slate-300">{sym.name}</span>
                   <span className="text-[9px] font-mono text-sky-400 font-black">[{sym.keyNumber}]</span>
                 </div>
               ))}
@@ -377,35 +522,40 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
           </div>
         </div>
 
-        {/* Historial de Intentos */}
+        {/* Historial con Stanine y Percentil */}
         {history.length > 0 && (
-          <div className="bg-[#09152b] border border-sky-500/20 rounded-2xl p-5 space-y-3">
+          <div className="aon-deductive-history-card bg-[#09152b] border border-sky-500/20 rounded-2xl p-5 space-y-3">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2 text-sky-400 font-bold text-xs uppercase tracking-wider">
                 <BarChart3 className="w-4 h-4" />
-                <span>Historial de Simulacros Recientes</span>
+                <span>Historial de Simulacros (Baremo Pilotos EASA)</span>
               </div>
               <span className="text-[11px] text-slate-400">{history.length} sesiones guardadas</span>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5">
               {history.slice(0, 6).map((item, idx) => (
-                <div key={idx} className="p-3 rounded-xl bg-slate-900/70 border border-slate-800 flex items-center justify-between">
+                <div key={idx} className="aon-deductive-history-item p-3 rounded-xl bg-slate-900/70 border border-slate-800 flex items-center justify-between">
                   <div>
-                    <span className={`text-[10px] font-black uppercase px-2 py-0.5 rounded-full ${
-                      item.passed ? 'bg-emerald-500/20 text-emerald-300' : 'bg-rose-500/20 text-rose-300'
-                    }`}>
-                      {item.passed ? 'PASS NETJETS' : 'REVIEW'}
-                    </span>
+                    <div className="flex items-center gap-2">
+                      <span className={`text-[10px] font-black uppercase px-2 py-0.5 rounded-full ${
+                        item.passed ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40' : 'bg-rose-500/20 text-rose-300 border border-rose-500/40'
+                      }`}>
+                        {item.passed ? 'APTO NETJETS' : 'NO COMPETITIVO'}
+                      </span>
+                      <span className="text-[11px] font-mono font-bold text-amber-400">
+                        Stanine {item.stanine}
+                      </span>
+                    </div>
                     <p className="text-xs font-bold text-white mt-1">
                       {item.correctCount} / {item.totalAnswered} aciertos ({item.accuracy}%)
                     </p>
                     <p className="text-[10px] text-slate-400">
-                      {item.avgTimeSeconds}s por puzzle • {new Date(item.date).toLocaleDateString()}
+                      Percentil {item.percentile}% • Net: {item.netScore} pts
                     </p>
                   </div>
-                  <span className="text-lg font-black font-mono text-amber-400">
-                    +{item.score}
+                  <span className="text-lg font-black font-mono text-sky-400">
+                    PR {item.percentile}%
                   </span>
                 </div>
               ))}
@@ -416,7 +566,9 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
     );
   }
 
-  // 2. PANTALLA DE RESULTADOS
+  // ==========================================================================
+  // 2. PANTALLA DE RESULTADOS & INFORME PSICOMÉTRICO NETJETS
+  // ==========================================================================
   if (gameState === 'results') {
     const total = attempts.length;
     const correct = attempts.filter((a) => a.isCorrect).length;
@@ -424,57 +576,128 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
     const accuracy = total > 0 ? Math.round((correct / total) * 100) : 0;
     const totalTimeMs = attempts.reduce((acc, a) => acc + a.timeSpentMs, 0);
     const avgTime = total > 0 ? Math.round((totalTimeMs / total / 1000) * 10) / 10 : 0;
-    const netScore = Math.max(0, correct - Math.floor(wrong * 0.5));
-    const passed = total >= 18 && accuracy >= 80;
+
+    // Evaluación psicométrica estandarizada
+    const psycho = evaluateAonDeductiveScore(total, correct, wrong, 540);
 
     return (
-      <div className="max-w-2xl mx-auto space-y-6 animate-fade-in p-4 sm:p-6">
-        <div className="bg-gradient-to-br from-[#0c1c3d] via-[#09152b] to-[#060e1d] border border-amber-500/40 rounded-3xl p-6 sm:p-8 space-y-6 text-center shadow-2xl">
-          <div className="w-20 h-20 rounded-full mx-auto flex items-center justify-center text-3xl shadow-lg border-2 ${
-            passed ? 'bg-emerald-500/20 border-emerald-400 text-emerald-400 shadow-glow-emerald' : 'bg-rose-500/20 border-rose-400 text-rose-400 shadow-glow-rose'
-          }">
-            {passed ? <Trophy className="w-10 h-10 text-emerald-400" /> : <Award className="w-10 h-10 text-amber-400" />}
+      <div className="aon-deductive-screen max-w-3xl mx-auto space-y-6 animate-fade-in p-4 sm:p-6">
+        <div className="aon-deductive-results-card bg-gradient-to-br from-[#0c1c3d] via-[#09152b] to-[#060e1d] border-2 border-amber-500/40 rounded-3xl p-6 sm:p-8 space-y-6 text-center shadow-2xl">
+          <div className={`w-20 h-20 rounded-full mx-auto flex items-center justify-center text-3xl shadow-lg border-2 ${
+            psycho.easaPass ? 'bg-emerald-500/20 border-emerald-400 text-emerald-400 shadow-glow-emerald' : 'bg-rose-500/20 border-rose-400 text-rose-400 shadow-glow-rose'
+          }`}>
+            {psycho.easaPass ? <Trophy className="w-10 h-10 text-emerald-400" /> : <Award className="w-10 h-10 text-rose-400" />}
           </div>
 
           <div>
-            <span className={`inline-block text-xs font-black uppercase px-3 py-1 rounded-full mb-2 ${
-              passed ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40' : 'bg-amber-500/20 text-amber-300 border border-amber-500/40'
-            }`}>
-              {passed ? 'AON CUT-E: PASS PERFORMANCE GOAL' : 'AON CUT-E: REPASO REQUERIDO'}
-            </span>
+            <div className="inline-flex items-center gap-2 mb-2">
+              <span className={`text-xs font-black uppercase px-3.5 py-1 rounded-full border ${
+                psycho.easaPass 
+                  ? 'bg-emerald-500/20 text-emerald-300 border-emerald-400' 
+                  : 'bg-rose-500/20 text-rose-300 border-rose-400'
+              }`}>
+                {psycho.easaPass ? 'APTO SELECCIÓN NETJETS EUROPE (STANINE ≥ 6)' : 'NO APTO / REQUIERE ENTRENAMIENTO'}
+              </span>
+            </div>
             <h2 className="text-2xl sm:text-3xl font-black text-white">
-              {passed ? '¡Excelente Rendimiento Lógico!' : 'Simulacro Completado'}
+              {psycho.easaPass ? '¡Rendimiento Psicométrico Competitivo!' : 'Sesión Finalizada'}
             </h2>
-            <p className="text-xs text-slate-300 max-w-md mx-auto mt-1">
-              {passed 
-                ? 'Has alcanzado los estándares psicométricos exigidos por NetJets en razonamiento deductivo.'
-                : 'Para asegurar el apto en la fase 1 de NetJets se recomienda superar 18 reactivos con un 80% o más de precisión.'}
+            <p className="text-xs text-slate-300 max-w-xl mx-auto mt-2 leading-relaxed">
+              {psycho.interpretation}
             </p>
+          </div>
+
+          {/* Tarjeta de Stanine y Percentil Destacada */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 p-4 rounded-2xl bg-black/50 border border-sky-500/30">
+            <div className="text-center p-3 rounded-xl bg-slate-900/80 border border-slate-700">
+              <span className="text-[10px] font-mono uppercase tracking-wider text-slate-400 block mb-1">
+                Escala Típica Stanine (1 - 9)
+              </span>
+              <div className="text-3xl sm:text-4xl font-black font-mono text-amber-400">
+                {psycho.stanine} <span className="text-sm font-normal text-slate-400">/ 9</span>
+              </div>
+              <span className="text-[10px] font-bold text-amber-300">{psycho.classification}</span>
+            </div>
+
+            <div className="text-center p-3 rounded-xl bg-slate-900/80 border border-slate-700">
+              <span className="text-[10px] font-mono uppercase tracking-wider text-slate-400 block mb-1">
+                Rango Percentil (Pilotos)
+              </span>
+              <div className="text-3xl sm:text-4xl font-black font-mono text-sky-400">
+                PR {psycho.percentile}%
+              </div>
+              <span className="text-[10px] font-bold text-sky-300">
+                Superas al {psycho.percentile}% de aspirantes
+              </span>
+            </div>
+
+            <div className="text-center p-3 rounded-xl bg-slate-900/80 border border-slate-700">
+              <span className="text-[10px] font-mono uppercase tracking-wider text-slate-400 block mb-1">
+                Puntuación Z (TCT / TRI)
+              </span>
+              <div className="text-3xl sm:text-4xl font-black font-mono text-emerald-400">
+                {psycho.zScore > 0 ? `+${psycho.zScore}` : psycho.zScore}
+              </div>
+              <span className="text-[10px] font-bold text-slate-300">Net Score: {psycho.netScore} pts</span>
+            </div>
+          </div>
+
+          {/* Barra Visual de Estaninos (Campana de Gauss Estandarizada) */}
+          <div className="p-4 rounded-2xl bg-slate-900/60 border border-slate-800 text-left space-y-2">
+            <div className="flex items-center justify-between text-xs font-bold text-slate-300">
+              <span>Posición en Escala Stanine (Grupo Normativo Pilotos):</span>
+              <span className="font-mono text-amber-400">Corte NetJets = Stanine 6</span>
+            </div>
+            <div className="grid grid-cols-9 gap-1 h-7 rounded-lg overflow-hidden p-1 bg-black/60 border border-slate-700">
+              {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((st) => {
+                const isUser = st === psycho.stanine;
+                const isPassZone = st >= 6;
+                return (
+                  <div
+                    key={st}
+                    className={`rounded flex items-center justify-center font-mono text-xs font-black transition-all ${
+                      isUser
+                        ? 'bg-amber-400 text-slate-950 ring-2 ring-white scale-105 z-10 shadow-lg'
+                        : isPassZone
+                        ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30'
+                        : 'bg-slate-800 text-slate-500'
+                    }`}
+                  >
+                    {st}
+                  </div>
+                );
+              })}
+            </div>
+            <div className="flex justify-between text-[10px] text-slate-500 font-mono">
+              <span>Stanine 1 (PR &lt; 4%)</span>
+              <span>Stanine 5 (Promedio PR 50%)</span>
+              <span>Stanine 9 (PR &gt; 96%)</span>
+            </div>
           </div>
 
           {/* Métricas clave */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-            <div className="p-3.5 rounded-2xl bg-black/40 border border-slate-800">
+            <div className="aon-deductive-metric-box p-3 rounded-xl bg-black/40 border border-slate-800">
               <span className="text-[10px] font-bold text-slate-400 uppercase block">Resueltas</span>
               <span className="text-2xl font-black text-white font-mono">{total}</span>
             </div>
-            <div className="p-3.5 rounded-2xl bg-black/40 border border-emerald-500/20">
+            <div className="aon-deductive-metric-box p-3 rounded-xl bg-black/40 border border-emerald-500/20">
               <span className="text-[10px] font-bold text-emerald-400 uppercase block">Aciertos</span>
               <span className="text-2xl font-black text-emerald-400 font-mono">{correct}</span>
             </div>
-            <div className="p-3.5 rounded-2xl bg-black/40 border border-rose-500/20">
+            <div className="aon-deductive-metric-box p-3 rounded-xl bg-black/40 border border-rose-500/20">
               <span className="text-[10px] font-bold text-rose-400 uppercase block">Fallos</span>
               <span className="text-2xl font-black text-rose-400 font-mono">{wrong}</span>
             </div>
-            <div className="p-3.5 rounded-2xl bg-black/40 border border-sky-500/20">
+            <div className="aon-deductive-metric-box p-3 rounded-xl bg-black/40 border border-sky-500/20">
               <span className="text-[10px] font-bold text-sky-400 uppercase block">Precisión</span>
               <span className="text-2xl font-black text-sky-400 font-mono">{accuracy}%</span>
             </div>
           </div>
 
-          <div className="p-3.5 rounded-2xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 flex items-center justify-around font-mono">
-            <span>⏱️ Tiempo medio: <strong>{avgTime}s</strong> / puzzle</span>
-            <span>⭐ Puntuación Neta: <strong>+{netScore}</strong></span>
+          <div className="aon-deductive-time-box p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 flex items-center justify-around font-mono">
+            <span>⏱️ Ritmo medio: <strong>{avgTime}s</strong> / reactivo</span>
+            <span>🎯 Penalización Formula: <strong>-(W / 3)</strong></span>
           </div>
 
           {/* Acciones */}
@@ -498,13 +721,15 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
     );
   }
 
+  // ==========================================================================
   // 3. PANTALLA DE JUEGO (PLAYING)
+  // ==========================================================================
   if (!currentPuzzle) return null;
 
   return (
-    <div className="max-w-2xl mx-auto space-y-4 animate-fade-in p-3 sm:p-5 select-none">
+    <div className="aon-deductive-screen max-w-2xl mx-auto space-y-4 animate-fade-in p-3 sm:p-5 select-none">
       {/* Barra de Estado Superior */}
-      <div className="flex items-center justify-between bg-[#09152b] border border-sky-500/20 px-4 py-2.5 rounded-2xl shadow-md">
+      <div className="aon-deductive-play-header flex items-center justify-between bg-[#09152b] border border-sky-500/20 px-4 py-2.5 rounded-2xl shadow-md">
         <button
           onClick={() => {
             if (confirm('¿Deseas salir del simulador actual?')) {
@@ -546,21 +771,45 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
       </div>
 
       {/* Contenedor Principal del Tablero */}
-      <div className="bg-gradient-to-br from-[#0c1c3d] via-[#09152b] to-[#071120] border border-sky-500/30 rounded-3xl p-4 sm:p-6 space-y-5 shadow-2xl flex flex-col items-center">
+      <div className="aon-deductive-grid-card bg-gradient-to-br from-[#0c1c3d] via-[#09152b] to-[#071120] border border-sky-500/30 rounded-3xl p-4 sm:p-6 space-y-5 shadow-2xl flex flex-col items-center">
         
-        {/* Instrucción visual breve */}
-        <div className="text-center space-y-0.5">
-          <p className="text-xs sm:text-sm font-bold text-slate-200">
-            ¿Qué figura corresponde en la casilla incógnita <span className="text-amber-400 font-black font-mono">[ ? ]</span>?
-          </p>
-          <p className="text-[11px] text-slate-400">
-            Cada símbolo aparece solo una vez por fila y por columna.
-          </p>
+        {/* Cabecera del Tablero */}
+        <div className="w-full flex items-center justify-between">
+          <div className="text-left space-y-0.5">
+            <p className="text-xs sm:text-sm font-bold text-slate-200">
+              {selectedCell && (selectedCell.r !== currentPuzzle.targetRow || selectedCell.c !== currentPuzzle.targetCol) ? (
+                <span className="text-sky-300 font-bold">
+                  Editando figura rayada en fila {selectedCell.r + 1}, columna {selectedCell.c + 1}:
+                </span>
+              ) : (
+                <span>
+                  ¿Qué figura corresponde en la incógnita <span className="text-amber-400 font-black font-mono">[ ? ]</span>?
+                </span>
+              )}
+            </p>
+            <p className="text-[11px] text-slate-400">
+              Pulsa cualquier casilla vacía para anotar figuras rayadas. Pulsa [ ? ] para resolver.
+            </p>
+          </div>
+
+          {/* Botón Pista / Bombilla */}
+          <button
+            onClick={() => setShowHint((prev) => !prev)}
+            title="Pistas lógicas: resalta fila y columna de la incógnita"
+            className={`p-2.5 rounded-xl border transition-all flex items-center gap-1 text-xs font-bold ${
+              showHint
+                ? 'bg-amber-500 text-slate-950 border-amber-400 shadow-glow-amber animate-pulse'
+                : 'bg-slate-800 text-amber-400 border-amber-500/40 hover:bg-slate-700'
+            }`}
+          >
+            <HelpCircle className="w-4 h-4" />
+            <span className="hidden sm:inline">Pista</span>
+          </button>
         </div>
 
-        {/* La Cuadrícula (Grid) */}
+        {/* La Cuadrícula (Grid) - Diseño Oficial AON */}
         <div 
-          className="grid gap-2 sm:gap-2.5 p-3 rounded-2xl bg-black/60 border border-sky-500/40 shadow-inner"
+          className="aon-deductive-grid-board grid gap-2 sm:gap-2.5 p-3 rounded-2xl bg-black/60 border border-sky-500/40 shadow-inner"
           style={{
             gridTemplateColumns: `repeat(${currentGridSize}, minmax(0, 1fr))`,
           }}
@@ -568,19 +817,34 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
           {currentPuzzle.displayGrid.map((row, rIdx) =>
             row.map((cellShape, cIdx) => {
               const isTarget = rIdx === currentPuzzle.targetRow && cIdx === currentPuzzle.targetCol;
+              const isSelected = selectedCell?.r === rIdx && selectedCell?.c === cIdx;
               const isRowColOfTarget = showHint && (rIdx === currentPuzzle.targetRow || cIdx === currentPuzzle.targetCol);
+              const draftShape = draftMarks[`${rIdx}-${cIdx}`];
+              const isClue = cellShape !== null;
 
               return (
                 <div
                   key={`${rIdx}-${cIdx}`}
-                  className={`w-14 h-14 sm:w-20 sm:h-20 rounded-xl sm:rounded-2xl flex items-center justify-center transition-all ${
+                  onClick={() => {
+                    if (feedback) return;
+                    if (isTarget) {
+                      setSelectedCell({ r: rIdx, c: cIdx });
+                    } else if (!isClue) {
+                      setSelectedCell({ r: rIdx, c: cIdx });
+                    }
+                  }}
+                  className={`aon-deductive-cell w-14 h-14 sm:w-20 sm:h-20 rounded-xl sm:rounded-2xl flex items-center justify-center transition-all cursor-pointer select-none relative ${
+                    isSelected
+                      ? 'ring-4 ring-sky-400 scale-[1.03] shadow-lg z-10'
+                      : ''
+                  } ${
                     isTarget
-                      ? 'bg-gradient-to-br from-amber-500/20 to-amber-600/30 border-2 border-amber-400 shadow-glow-amber scale-105'
+                      ? 'bg-gradient-to-br from-amber-500/20 to-amber-600/30 border-2 border-amber-400 shadow-glow-amber'
                       : isRowColOfTarget
                       ? 'bg-sky-950/40 border border-sky-400/40'
-                      : cellShape !== null
+                      : isClue
                       ? 'bg-slate-900/90 border border-slate-700/80 shadow-md'
-                      : 'bg-black/30 border border-dashed border-slate-800'
+                      : 'bg-black/30 border border-slate-800 hover:border-slate-600'
                   }`}
                 >
                   {isTarget ? (
@@ -589,12 +853,16 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
                         ?
                       </span>
                     </div>
-                  ) : cellShape !== null ? (
-                    <div className="p-1 sm:p-2">
-                      {renderShapeIcon(cellShape)}
+                  ) : isClue ? (
+                    <div className="p-1 sm:p-2 pointer-events-none">
+                      {renderShapeIcon(cellShape, 'w-8 h-8 sm:w-10 sm:h-10', false, `clue-${rIdx}-${cIdx}`)}
+                    </div>
+                  ) : draftShape ? (
+                    <div className="p-1 sm:p-2 pointer-events-none relative flex items-center justify-center">
+                      {renderShapeIcon(draftShape, 'w-8 h-8 sm:w-10 sm:h-10', true, `draft-${rIdx}-${cIdx}`)}
                     </div>
                   ) : (
-                    <span className="text-[10px] text-slate-700">•</span>
+                    <span className="text-xs text-slate-700 select-none">•</span>
                   )}
                 </div>
               );
@@ -602,25 +870,65 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
           )}
         </div>
 
-        {/* Botones de Selección de Símbolo (Keypad) */}
-        <div className="w-full space-y-2 pt-2">
-          <p className="text-[11px] font-bold text-center text-slate-400 uppercase tracking-wider">
-            Selecciona la figura correcta (o pulsa teclas 1 - {currentPuzzle.availableSymbols.length}):
-          </p>
+        {/* Barra Azul Inferior de Selección de Símbolo (Keypad Oficial AON) */}
+        <div className="w-full space-y-2 pt-1">
+          <div className="flex items-center justify-between px-2 text-xs">
+            <span className="text-[11px] font-bold text-slate-300">
+              {selectedCell && (selectedCell.r !== currentPuzzle.targetRow || selectedCell.c !== currentPuzzle.targetCol) ? (
+                <span className="text-sky-400 font-mono flex items-center gap-1">
+                  <Edit3 className="w-3.5 h-3.5" />
+                  <span>Celda ({selectedCell.r + 1}, {selectedCell.c + 1}): pulsa para figura rayada</span>
+                </span>
+              ) : (
+                <span className="text-amber-400 font-mono font-bold flex items-center gap-1">
+                  <Target className="w-3.5 h-3.5" />
+                  <span>Incógnita [ ? ] activa: pulsa para enviar respuesta final</span>
+                </span>
+              )}
+            </span>
 
-          <div className="flex items-center justify-center gap-2 sm:gap-3 flex-wrap">
+            {selectedCell && (selectedCell.r !== currentPuzzle.targetRow || selectedCell.c !== currentPuzzle.targetCol) && (
+              <div className="flex items-center gap-2">
+                {draftMarks[`${selectedCell.r}-${selectedCell.c}`] && (
+                  <button
+                    onClick={() => {
+                      const cellKey = `${selectedCell.r}-${selectedCell.c}`;
+                      setDraftMarks((prev) => {
+                        const next = { ...prev };
+                        delete next[cellKey];
+                        return next;
+                      });
+                    }}
+                    className="text-[10px] px-2 py-0.5 rounded bg-rose-500/20 text-rose-300 border border-rose-500/40 hover:bg-rose-500/30 transition-all font-bold flex items-center gap-1"
+                  >
+                    <Trash2 className="w-3 h-3" />
+                    <span>Borrar</span>
+                  </button>
+                )}
+                <button
+                  onClick={() => setSelectedCell({ r: currentPuzzle.targetRow, c: currentPuzzle.targetCol })}
+                  className="text-[10px] px-2 py-0.5 rounded bg-sky-500/20 text-sky-300 border border-sky-500/40 hover:bg-sky-500/30 transition-all font-bold"
+                >
+                  Ir a [ ? ]
+                </button>
+              </div>
+            )}
+          </div>
+
+          {/* Barra Azul Oficial */}
+          <div className="aon-deductive-keypad-bar p-3 sm:p-4 rounded-2xl bg-[#0284c7] shadow-xl flex items-center justify-around gap-2 sm:gap-4">
             {currentPuzzle.availableSymbols.map((sym) => {
               const isChosenInFeedback = feedback?.chosen === sym.id;
               const isCorrectInFeedback = feedback && currentPuzzle.correctShape === sym.id;
 
-              let btnStyle = 'bg-slate-900/90 border-slate-700 hover:border-sky-400 text-white';
+              let cardStyle = 'bg-white hover:bg-slate-50 text-slate-900 border-2 border-transparent hover:border-amber-400';
               if (feedback) {
                 if (isCorrectInFeedback) {
-                  btnStyle = 'bg-emerald-950 border-emerald-400 text-emerald-300 ring-2 ring-emerald-400';
+                  cardStyle = 'bg-emerald-100 border-2 border-emerald-500 text-emerald-950 ring-2 ring-emerald-400';
                 } else if (isChosenInFeedback) {
-                  btnStyle = 'bg-rose-950 border-rose-400 text-rose-300 ring-2 ring-rose-400';
+                  cardStyle = 'bg-rose-100 border-2 border-rose-500 text-rose-950 ring-2 ring-rose-400';
                 } else {
-                  btnStyle = 'opacity-40 bg-slate-900 border-slate-800';
+                  cardStyle = 'opacity-40 bg-white/70 border-slate-300';
                 }
               }
 
@@ -628,14 +936,14 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
                 <button
                   key={sym.id}
                   disabled={feedback !== null}
-                  onClick={() => handleSelectShape(sym.id)}
-                  className={`flex flex-col items-center justify-center p-2.5 sm:p-3 rounded-2xl border transition-all active:scale-95 shadow-lg min-w-[70px] sm:min-w-[90px] ${btnStyle}`}
+                  onClick={() => handleShapeInput(sym.id)}
+                  className={`aon-deductive-keypad-btn flex flex-col items-center justify-center p-2 sm:p-3 rounded-xl sm:rounded-2xl transition-all active:scale-95 shadow-md min-w-[65px] sm:min-w-[85px] ${cardStyle}`}
                 >
                   <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
-                    {renderShapeIcon(sym.id, 'w-8 h-8 sm:w-10 sm:h-10')}
+                    {renderShapeIcon(sym.id, 'w-8 h-8 sm:w-10 sm:h-10', false, `keypad-${sym.id}`)}
                   </div>
-                  <span className="text-[11px] font-extrabold mt-1">{sym.name}</span>
-                  <span className="text-[9px] font-mono text-sky-400 font-bold">[{sym.keyNumber}]</span>
+                  <span className="text-[10px] sm:text-[11px] font-black text-slate-800 mt-1">{sym.name}</span>
+                  <span className="text-[9px] font-mono text-slate-500 font-bold">[{sym.keyNumber}]</span>
                 </button>
               );
             })}
@@ -679,23 +987,7 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
                   <ChevronRight className="w-4 h-4" />
                 </button>
               </div>
-            ) : (
-              <div className="flex items-center justify-between text-xs pt-1">
-                <button
-                  onClick={() => setShowHint((prev) => !prev)}
-                  className="flex items-center gap-1 text-amber-400 hover:text-amber-300 font-bold transition-colors"
-                >
-                  <HelpCircle className="w-3.5 h-3.5" />
-                  <span>{showHint ? 'Ocultar Pista' : 'Ver Pista Lógica'}</span>
-                </button>
-
-                {showHint && (
-                  <span className="text-[11px] text-slate-400 italic">
-                    (Fila {currentPuzzle.targetRow + 1} y Columna {currentPuzzle.targetCol + 1} resaltadas)
-                  </span>
-                )}
-              </div>
-            )}
+            ) : null}
           </div>
         )}
       </div>

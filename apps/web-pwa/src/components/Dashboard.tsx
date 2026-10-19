@@ -354,7 +354,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
     <div className="max-w-6xl mx-auto space-y-6 pb-20 font-sans">
       
       {/* 🚀 BANNER SUPERIOR DE ACCESO RÁPIDO: AON / CUT-E PSICOTÉCNICOS NETJETS */}
-      <div className="rounded-2xl bg-gradient-to-r from-[#171203] via-[#0d172e] to-[#071d18] border-2 border-amber-500/50 p-4 sm:p-5 shadow-xl flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="dashboard-aon-banner rounded-2xl bg-gradient-to-r from-[#171203] via-[#0d172e] to-[#071d18] border-2 border-amber-500/50 p-4 sm:p-5 shadow-xl flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-3.5">
           <div className="w-12 h-12 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-400 shrink-0 shadow-glow-amber">
             <Brain className="w-6 h-6" />
@@ -1350,7 +1350,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
             <button
               type="button"
               onClick={onStartAonDeductive}
-              className="p-4 rounded-2xl bg-gradient-to-br from-[#1a1405] to-[#0f172a] hover:from-[#241c08] hover:to-[#172544] border-2 border-amber-500/50 hover:border-amber-400 text-left transition-all group flex flex-col justify-between shadow-xl active:scale-98"
+              className="netjets-aon-deductive-card p-4 rounded-2xl bg-gradient-to-br from-[#1a1405] to-[#0f172a] hover:from-[#241c08] hover:to-[#172544] border-2 border-amber-500/50 hover:border-amber-400 text-left transition-all group flex flex-col justify-between shadow-xl active:scale-98"
             >
               <div>
                 <div className="flex items-center justify-between mb-2">
@@ -1377,7 +1377,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
             <button
               type="button"
               onClick={onStartAonMultitasking}
-              className="p-4 rounded-2xl bg-gradient-to-br from-[#1c0812] to-[#0f172a] hover:from-[#2a0e1c] hover:to-[#172544] border-2 border-rose-500/50 hover:border-rose-400 text-left transition-all group flex flex-col justify-between shadow-xl active:scale-98"
+              className="netjets-aon-multitask-card p-4 rounded-2xl bg-gradient-to-br from-[#1c0812] to-[#0f172a] hover:from-[#2a0e1c] hover:to-[#172544] border-2 border-rose-500/50 hover:border-rose-400 text-left transition-all group flex flex-col justify-between shadow-xl active:scale-98"
             >
               <div>
                 <div className="flex items-center justify-between mb-2">
