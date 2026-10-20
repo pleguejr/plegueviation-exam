@@ -123,7 +123,7 @@ export const ExamConfigModal: React.FC<ExamConfigModalProps> = ({
     setSelectedSubtopics([]);
   };
 
-  const handleApplyPreset = (preset: 'command_course' | 'command_all' | 'fleet_e2' | 'fleet_c172f' | 'fleet_da40d' | 'all') => {
+  const handleApplyPreset = (preset: 'command_course' | 'command_all' | 'fleet_e2' | 'fleet_c172f' | 'fleet_da40d' | 'netjets_stage2' | 'all') => {
     if (preset === 'command_course') {
       setSelectedCategories(['command-upgrade']);
       setSelectedSubtopics(['command-course', 'examen-convocatoria-anterior']);
@@ -149,6 +149,11 @@ export const ExamConfigModal: React.FC<ExamConfigModalProps> = ({
       setSelectedSubtopics([]);
       setExpandedCategories({ 'fleet-da40d': true });
       setCount(30);
+    } else if (preset === 'netjets_stage2') {
+      setSelectedCategories(['netjets-interview']);
+      setSelectedSubtopics([]);
+      setExpandedCategories({ 'netjets-interview': true });
+      setCount(25);
     } else {
       setSelectedCategories([]);
       setSelectedSubtopics([]);
@@ -430,6 +435,17 @@ export const ExamConfigModal: React.FC<ExamConfigModalProps> = ({
                 }`}
               >
                 Flota E195-E2
+              </button>
+              <button
+                type="button"
+                onClick={() => handleApplyPreset('netjets_stage2')}
+                className={`px-3 py-1.5 rounded-xl text-xs font-bold border transition-all ${
+                  selectedCategories.length === 1 && selectedCategories.includes('netjets-interview') && selectedSubtopics.length === 0
+                    ? 'bg-amber-500/20 text-amber-300 border-amber-400 shadow-glow-amber'
+                    : 'bg-slate-900 text-slate-300 border-slate-800 hover:border-slate-700'
+                }`}
+              >
+                NetJets Stage 2
               </button>
               <button
                 type="button"

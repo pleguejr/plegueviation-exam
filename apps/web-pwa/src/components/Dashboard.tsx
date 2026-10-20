@@ -362,14 +362,14 @@ export const Dashboard: React.FC<DashboardProps> = ({
           <div>
             <div className="flex items-center gap-2 flex-wrap">
               <span className="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40">
-                NetJets Stage 1 • Tests Psicotécnicos AON / cut-e
+                NetJets Stage 2 • Tests Psicotécnicos AON / cut-e & Expresiones
               </span>
             </div>
             <h2 className="text-base sm:text-lg font-black text-white mt-0.5">
-              Simuladores Oficiales AON Deductive Logic & Multitasking Capability
+              Simuladores Oficiales AON (Deductive Logic & Multitasking) y Expresiones en Inglés
             </h2>
             <p className="text-xs text-slate-300">
-              Practica el razonamiento deductivo (Sudoku 4×4 a 5×5) y el examen Triple-Task oficial (Flechas en 4 carriles + Sumas y restas + Duplicados o no).
+              Practica el razonamiento deductivo (Sudoku 4×4 a 5×5), el examen Triple-Task oficial y las 25 expresiones en inglés del test de personalidad (IPIP-NEO / CRM).
             </p>
           </div>
         </div>
@@ -391,6 +391,21 @@ export const Dashboard: React.FC<DashboardProps> = ({
           >
             <Zap className="w-4 h-4" />
             <span>Multitasking 3-en-1</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => onStartConfiguredExam({
+              category: 'netjets-interview',
+              subtopics: ['expresiones-ingles-psicotecnico'],
+              mode: 'practice',
+              strategy: 'random',
+              count: 25,
+            })}
+            className="flex-1 sm:flex-none px-4 py-2.5 rounded-xl font-black text-xs bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-400 hover:to-indigo-500 text-white shadow-md shadow-sky-950/40 transition-all active:scale-95 flex items-center justify-center gap-1.5"
+          >
+            <BookOpen className="w-4 h-4" />
+            <span>Expresiones Inglés (25)</span>
           </button>
         </div>
       </div>
@@ -1330,22 +1345,22 @@ export const Dashboard: React.FC<DashboardProps> = ({
           </button>
         </div>
 
-        {/* 🚀 STAGE 1: AON / cut-e Psychometric Simulators (NetJets Pilot Assessment) */}
+        {/* 🚀 STAGE 2: AON / cut-e Psychometric Simulators & Personality English Expressions */}
         <div className="pt-4 border-t border-amber-500/25 space-y-3 relative z-10">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
             <div className="flex items-center gap-2">
               <span className="w-2 h-4 rounded-full bg-amber-400" />
               <h3 className="text-xs sm:text-sm font-black text-amber-300 uppercase tracking-wider flex items-center gap-1.5">
                 <Brain className="w-4 h-4 text-amber-400" />
-                <span>Stage 1: AON / cut-e Aptitude & Reasoning Simulators</span>
+                <span>Stage 2: AON / cut-e Aptitude, Reasoning & Psychometrics</span>
               </h3>
             </div>
             <span className="text-[10px] font-mono text-slate-400 font-bold px-2.5 py-0.5 rounded-full bg-black/50 border border-slate-700 w-fit">
-              NetJets Pilot Selection Stage 1
+              NetJets Pilot Selection Stage 2
             </span>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5">
             {/* Card 1: AON Deductive Logical Reasoning */}
             <button
               type="button"
@@ -1397,6 +1412,39 @@ export const Dashboard: React.FC<DashboardProps> = ({
               <div className="flex items-center justify-between mt-3 pt-2.5 border-t border-rose-500/20 text-[11px] font-bold text-rose-400">
                 <span>⚡ Iniciar Simulador Multitarea 3-en-1</span>
                 <span className="text-[10px] font-mono text-slate-400">5:00 / 8:00 min</span>
+              </div>
+            </button>
+
+            {/* Card 3: Expresiones en Inglés del Test Psicotécnico (IPIP-NEO / PILOT CRM) */}
+            <button
+              type="button"
+              onClick={() => onStartConfiguredExam({
+                category: 'netjets-interview',
+                subtopics: ['expresiones-ingles-psicotecnico'],
+                mode: 'practice',
+                strategy: 'random',
+                count: 25,
+              })}
+              className="netjets-aon-english-card p-4 rounded-2xl bg-gradient-to-br from-[#0c1a2e] to-[#0d1527] hover:from-[#132845] hover:to-[#17223b] border-2 border-sky-500/50 hover:border-sky-400 text-left transition-all group flex flex-col justify-between shadow-xl active:scale-98"
+            >
+              <div>
+                <div className="flex items-center justify-between mb-2">
+                  <span className="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-sky-500/20 text-sky-300 border border-sky-500/40 flex items-center gap-1">
+                    <BookOpen className="w-3.5 h-3.5 text-sky-400" />
+                    <span>25 REACTIVOS • IPIP-NEO & CRM</span>
+                  </span>
+                  <ArrowRight className="w-4 h-4 text-sky-400 group-hover:translate-x-1 transition-transform" />
+                </div>
+                <h4 className="text-sm font-black text-white group-hover:text-sky-300 transition-colors">
+                  Expresiones en Inglés (Test Psicotécnico)
+                </h4>
+                <p className="text-xs text-slate-300 mt-1.5 leading-relaxed">
+                  25 expresiones complejas y modismos del cuestionario de personalidad (<em className="text-sky-300">"on a whim"</em>, <em className="text-sky-300">"soft-hearted"</em>, <em className="text-sky-300">"seldom get mad"</em>, <em className="text-sky-300">"down in the dumps"</em>, <em className="text-sky-300">"coddle"</em>). Con traducción literal, dimensión Big Five y orientación psicométrica recomendada.
+                </p>
+              </div>
+              <div className="flex items-center justify-between mt-3 pt-2.5 border-t border-sky-500/20 text-[11px] font-bold text-sky-400">
+                <span>📖 Entrenar Banco de Expresiones</span>
+                <span className="text-[10px] font-mono text-slate-400">25 preguntas</span>
               </div>
             </button>
           </div>

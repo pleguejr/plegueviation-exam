@@ -4,7 +4,29 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 
 ---
 
-## 🚀 Versión Actual: v3.7.0 (2026-10-19)
+## 🚀 Versión Actual: v3.8.0 (2026-10-20)
+
+### 🇬🇧 Expresiones en Inglés del Test Psicotécnico & Actualización NetJets Stage 2
+- **Corrección de Nomenclatura NetJets Stage 2:**
+  - Actualizada la denominación en toda la suite de la PWA: los simuladores psicotécnicos de AON / cut-e y las evaluaciones de razonamiento y personalidad corresponden al **Stage 2** del proceso de selección de NetJets Europe.
+  - Actualizado el banner superior, tarjetas del dashboard, encabezados de sección y el simulador de multitarea.
+- **Nuevo Banco de Preguntas Psicométricas (IPIP-NEO / PILOT CRM):**
+  - Incorporadas 25 preguntas de alta precisión en `banks/netjets-interview/expresiones-ingles-psicotecnico/netjets_eng_psychometrics.json` a partir de la compilación oficial de modismos complejos de personality testing en inglés (`English expressions kura.docx`).
+  - Cobertura exhaustiva de expresiones críticas: *\"Tend to dislike soft-hearted people\"*, *\"Like to act on a whim\"*, *\"Seldom get mad\"*, *\"Keep in the background\"*, *\"Seldom feel blue\"*, *\"Am able to control my cravings\"*, *\"Amuse my friends\"*, *\"Believe that we coddle criminals too much\"*, *\"Am wary of others\"*, *\"Keep my cool\"*, *\"Am not bothered by difficult social situations\"*, *\"Get back at others\"*, *\"Boast about my virtues\"*, *\"Readily overcome setbacks\"*, *\"Am not easily amused\"*, *\"Believe people should fend for themselves\"*, *\"Have difficulty imagining things\"*, *\"Hold back my opinions\"*, *\"Hold a grudge\"*, *\"Never splurge\"*, *\"Rarely overindulge\"*, *\"Feel sympathy for those who are worse off than myself\"*, *\"Am often down in the dumps\"*, *\"Am always on the go\"*, *\"Cheat to get ahead\"*.
+  - Explicaciones pedagógicas detalladas con traducción idiomática literal al español, constructo Big Five y faceta IPIP-NEO, análisis de factores humanos y CRM en cabina multipiloto, y baremo Likert de respuesta óptimo (1 a 5) para evaluación de aerolínea.
+  - Distribución psicométrica balanceada de la clave de respuestas: A (6), B (6), C (6), D (7), longitudes homogéneas sin sesgos de longitud y distractores realistas.
+- **Acceso Directo y Selector Granular en Configuración de Examen:**
+  - Nueva tarjeta de acceso en el Dashboard con badge distintivo y acceso rápido en un clic en el banner superior.
+  - Nuevo preset *«NetJets Stage 2»* en el modal de configuración de examen (`ExamConfigModal.tsx`), con soporte de selección granular de subtemas en el acordeón interactivo.
+- **Disponibilidad 100% Offline Garantizada (PWA Offline-First):**
+  - Manifiesto y base de datos compilados a 2.287 preguntas activas en `apps/web-pwa/public/banks/all_questions.json`.
+  - Caché de Service Worker actualizada a `plegueviation-cache-v3.8.0` con inyección de hashes de Vite (`dist/sw.js`) y pre-caching resiliente.
+- **Contraste Modo Día (`day-mode-ui-contrast`):**
+  - Estilos específicos `.theme-light .netjets-aon-english-card` en `apps/web-pwa/src/index.css` asegurando legibilidad sin fondos residuales oscuros.
+
+---
+
+## 🚀 Versión: v3.7.0 (2026-10-19)
 
 ### 🧠 Simuladores Psicotécnicos AON / cut-e para Selección NetJets Europe (Deductive Logic & Multitasking)
 - **Simulador AON Deductive-Logical Reasoning (`scales sx` / Cuadrado Latino Sudoku):**

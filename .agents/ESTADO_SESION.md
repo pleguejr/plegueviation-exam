@@ -2,32 +2,35 @@
 
 > Este archivo sirve como memoria compartida entre ordenadores. Se actualiza automáticamente al decir **«graba para continuar luego»** y se lee tras hacer `git pull` al decir **«vamos a continuar desde donde lo dejamos»**.
 
-- **Última sincronización:** 2026-10-19
-- **Versión / Commit base:** `v3.7.0`
-- **Total de reactivos compilados:** 2.262 preguntas activas (13 excluidas en `deleted_questions.json`)
+- **Última sincronización:** 2026-10-20
+- **Versión / Commit base:** `v3.8.0`
+- **Total de reactivos compilados:** 2.287 preguntas activas (13 excluidas en `deleted_questions.json`)
 
 ## ✅ Trabajos completados en esta sesión
-1. **Desinstalación y purga de flotas descontinuadas:**
-   - Eliminados por completo los bancos y recursos de `fleet-c172n` y `fleet-p2010tdi`.
-2. **Creación e integración de Flota Cessna 172F (TAE 125 / EC-NNX):**
-   - Banco completo de 90 preguntas EASA en `banks/fleet-c172f/` con recortes visuales del AFM de Cessna 172F, suplemento TAE 125 y SOPs Blue Team.
-3. **Creación e integración de Flota Diamond DA40 TDI (TAE 125 / EC-OKC):**
-   - Banco completo de 92 preguntas EASA en `banks/fleet-da40d/` divididas en:
-     - Limitaciones (`DA40D-LIM-*`): 20 preguntas
-     - AFM Operación Normal (`DA40D-NORM-*`): 20 preguntas
-     - Blue Team SOPs (`DA40D-SOP-*`): 8 preguntas
-     - Emergencias AFM (`DA40D-EMG-*`): 24 preguntas
-     - Sistemas de Aeronave (`DA40D-SYS-*`): 20 preguntas
-   - 0% asimetría fuera de ±15%, distribución 25% A/B/C/D exacta (23 de cada una), citas literales y 58 recortes visuales oficiales a 200 DPI (`public/manual-crops/fleet-da40d/`).
-4. **Tarjetas SOP Blue Team Flight School (Normal Operations):**
-   - Añadidas 8 tarjetas operacionales completas en `apps/web-pwa/src/data/procedureCardsData.ts` con 37 recortes de alta resolución en `public/sop-diagrams/`.
-   - Selector por Operador en `ProcedureCardsScreen.tsx`: Todos, Binter Canarias, Blue Team y NetJets Europe.
-   - Cumplimiento estricto de contraste modo día (`.theme-light`) según skill `day-mode-ui-contrast`.
-5. **Corrección de Desbordamiento de Texto en Infografías y UI:**
-   - Reestructurado el layout de `.procedure-sop-step-overlay` y `.procedure-sop-step-grid` con `word-break: break-word`, `minmax(220px, 1fr)` y padding controlado para evitar que ningún texto se corte o sobresalga de sus tarjetas.
-   - Ajustadas las cajas de texto y rotulación en las infografías SVG (`briefing-twin-autoland.svg`, `emg-egpws-terrain.svg`, `emg-tcas-ra.svg`, `emg-windshear.svg`, `briefing-lvo-lvto.svg`).
-6. **Rediseño Ultrarrealista de Siluetas de Aeronaves en Infografías SVG:**
-   - Sustituidos los polígonos geométricos simples por modelos vectoriales fieles a la realidad:
+1. **Actualización de Terminología NetJets (Stage 1 ➔ Stage 2):**
+   - Corregida la denominación oficial del proceso de selección de NetJets Europe en la interfaz de la PWA:
+     - Banner superior del Dashboard: *«NetJets Stage 2 • Tests Psicotécnicos AON / cut-e & Expresiones»*.
+     - Subtítulo del panel: *«Simuladores Oficiales AON (Deductive Logic & Multitasking) y Expresiones en Inglés»*.
+     - Encabezado de sección: *«Stage 2: AON / cut-e Aptitude, Reasoning & Psychometrics»* y badge *«NetJets Pilot Selection Stage 2»*.
+     - Simulador Multitarea (`AonMultitaskingScreen.tsx`): actualizado a *«Stage 2 NetJets Europe»*.
+2. **Nuevo Banco de Expresiones Psicotécnicas en Inglés (IPIP-NEO / PILOT CRM):**
+   - Creado el banco `banks/netjets-interview/expresiones-ingles-psicotecnico/netjets_eng_psychometrics.json` con 25 preguntas psicométricas de alta fidelidad basadas en el documento `manuales/INGLES/English expressions kura.docx`:
+     - Reactivos cubren expresiones complejas como: *\"on a whim\"*, *\"soft-hearted\"*, *\"seldom get mad\"*, *\"keep in the background\"*, *\"down in the dumps\"*, *\"coddle\"*, *\"wary of others\"*, *\"get back at others\"*, *\"splurge\"*, *\"overindulge\"*, etc.
+     - Cada pregunta analiza: traducción literal, constructo Big Five (Agreeableness, Conscientiousness, Neuroticism, Extraversion, Openness), subfaceta IPIP-NEO, implicación CRM en cabina multipiloto y baremo Likert óptimo de 1 a 5 para el proceso de selección de aerolínea.
+     - Distribución rigurosamente balanceada de opciones correctas: A (6), B (6), C (6), D (7) con longitud simétrica (±15%) y distractores plausibles sin pistas obvias.
+3. **Integración en la UI y Presets de Configuración:**
+   - Añadida tarjeta interactiva directa en el grid del Dashboard (*«Expresiones en Inglés (Test Psicotécnico)»*) y botón de acceso rápido en el banner superior (*«Expresiones Inglés (25)»*).
+   - Añadido preset dedicado en el modal de configuración de exámenes (`ExamConfigModal.tsx`): botón *«NetJets Stage 2»* que preselecciona la categoría y permite elegir el subtema granularmente en el acordeón interactivo.
+4. **Garantía 100% Offline-First en la PWA:**
+   - Compilación exitosa del catálogo completo a `apps/web-pwa/public/banks/all_questions.json` (2.287 preguntas) y `manifest.json`.
+   - Service Worker actualizado a la caché versionada `plegueviation-cache-v3.8.0`.
+   - Inyección automática por Vite de los nuevos bundles JS/CSS generados (`index-DNkoMajv.js`, `index-BAWR2ifm.css`) y recursos críticos en `dist/sw.js` con pre-cacheo atómico en segundo plano.
+5. **Cumplimiento de Contraste Modo Día (`day-mode-ui-contrast`):**
+   - Agregada regla `.theme-light .netjets-aon-english-card` en `apps/web-pwa/src/index.css` garantizando legibilidad perfecta y contraste superior sobre fondos claros.
+6. **Verificación Técnica:**
+   - 0 errores de TypeScript (`tsc`).
+   - Compilación Vite limpia sin errores.
+   - Suite de tests unitarios ejecutada exitosamente con Vitest (7/7 tests pasando).
      - **Embraer 195-E2**: Turbofán PW1900G con góndolas y pilones, morro parabólico, parabrisas de 4 paneles, ventanillas de cabina, puertas y deriva con librea verde/azul de Binter Canarias (vista lateral y de planta).
      - **Diamond DA40 TDI (EC-OKC)**: Cola en T, cabina de burbuja de composite, hélice MT-Propeller tripala con cono de ogiva y carenados de ruedas aerodinámicos.
      - **Cessna 172F (EC-NNX)**: Ala alta arriostrada con montantes, hélice tripala MT-Propeller, empenaje Omni-Vision y tren triciclo.

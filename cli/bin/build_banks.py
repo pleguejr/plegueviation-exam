@@ -112,6 +112,7 @@ def compile_banks() -> int:
         "escenarios-netjets-despacho-crm": "Escenarios Operativos NetJets, Despacho MEL & CRM",
         "aerodinamica-performance-jet": "Aerodinámica, Performance & Operaciones Jet (EN)",
         "meteorologia-avanzada-ifr": "Meteorología Avanzada, Icing & Cartas IFR (EN)",
+        "expresiones-ingles-psicotecnico": "Expresiones en Inglés - Test Psicotécnico (IPIP-NEO / PILOT CRM)",
         "command-course": "Banco Especial - Command Course (Exámenes Oficiales, Típicas Preguntas Comandante P1-100 y Satélites)",
         "examen-convocatoria-anterior": "Command Course / Examen Convocatoria Anterior (Oficial + Satélites)",
         "moa": "Manual de Operaciones Parte A (MOA)",

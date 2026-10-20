@@ -580,7 +580,7 @@ export const AonMultitaskingScreen: React.FC<AonMultitaskingScreenProps> = ({ on
                   AON cut-e Assessment
                 </span>
                 <span className="text-xs font-mono font-bold text-amber-400 flex items-center gap-1">
-                  <Sparkles className="w-3.5 h-3.5" /> Stage 1 NetJets Europe
+                  <Sparkles className="w-3.5 h-3.5" /> Stage 2 NetJets Europe
                 </span>
               </div>
               <h1 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
