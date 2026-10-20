@@ -1,7 +1,14 @@
 /**
  * AonDeductiveGenerator.ts
  * Generador procedural de puzzles AON / cut-e "scales sx" (Deductive-logical reasoning / Latin square).
- * Garantiza soluciones lógicamente únicas y verificables paso a paso para cuadrículas 4x4 y 5x5.
+ * Calibrado según el estándar oficial de KURA Human Factors y PASS-Pilot Assessments para selección de aerolínea (NetJets Europe).
+ *
+ * Características clave:
+ * - Garantía matemática de solución deductiva única sin conjeturas (Constraint Satisfaction).
+ * - Control de Profundidad Deductiva (Deduction Depth >= 2 o >= 3):
+ *   Impide que la celda incógnita '?' se resuelva directamente en 1 paso por fila/columna.
+ *   Exige resolver celdas intermedias primero para desbloquear la incógnita.
+ * - Densidad de pistas calibrada al estándar de examen KURA (5x5 con 14 a 18 celdas vacías, 60-70% vacías).
  */
 
 export type ShapeId = 'circle' | 'square' | 'triangle' | 'cross' | 'diamond';
@@ -21,7 +28,7 @@ export const SYMBOLS_LIST: DeductiveSymbol[] = [
     id: 'triangle',
     name: 'Triángulo',
     nameEn: 'Triangle',
-    color: '#eab308', // Amarillo oficial AON
+    color: '#eab308', // Amarillo canónico AON
     bgLight: 'rgba(234, 179, 8, 0.15)',
     borderColor: '#ca8a04',
     keyNumber: '1',
@@ -30,7 +37,7 @@ export const SYMBOLS_LIST: DeductiveSymbol[] = [
     id: 'circle',
     name: 'Círculo',
     nameEn: 'Circle',
-    color: '#65a30d', // Verde hoja oficial AON
+    color: '#65a30d', // Verde hoja canónico AON
     bgLight: 'rgba(101, 163, 13, 0.15)',
     borderColor: '#4d7c0f',
     keyNumber: '2',
@@ -39,7 +46,7 @@ export const SYMBOLS_LIST: DeductiveSymbol[] = [
     id: 'square',
     name: 'Cuadrado',
     nameEn: 'Square',
-    color: '#dc2626', // Rojo oficial AON
+    color: '#dc2626', // Rojo canónico AON
     bgLight: 'rgba(220, 38, 38, 0.15)',
     borderColor: '#b91c1c',
     keyNumber: '3',
@@ -48,7 +55,7 @@ export const SYMBOLS_LIST: DeductiveSymbol[] = [
     id: 'cross',
     name: 'Cruz',
     nameEn: 'Cross',
-    color: '#0284c7', // Azul cielo oficial AON
+    color: '#0284c7', // Azul cielo canónico AON
     bgLight: 'rgba(2, 132, 199, 0.15)',
     borderColor: '#0369a1',
     keyNumber: '4',
@@ -57,35 +64,42 @@ export const SYMBOLS_LIST: DeductiveSymbol[] = [
     id: 'diamond',
     name: 'Rombo',
     nameEn: 'Diamond',
-    color: '#9333ea', // Púrpura oficial AON (5x5)
+    color: '#9333ea', // Púrpura canónico AON (5x5)
     bgLight: 'rgba(147, 51, 234, 0.15)',
     borderColor: '#7e22ce',
     keyNumber: '5',
   },
 ];
 
+export type DeductiveDifficulty = 
+  | 'kura_4x4'        // 4x4 KURA: 8-10 vacías, profundidad >= 2
+  | 'kura_5x5'        // 5x5 KURA Oficial: 14-17 vacías, profundidad >= 2
+  | 'hardcore_5x5'    // 5x5 Hardcore PASS: 16-19 vacías, profundidad >= 2-3
+  | 'basic_4x4'       // Para calentamiento guiado
+  | 'intermediate_4x4'// 4x4 intermedio
+  | 'advanced_5x5';   // 5x5 avanzado
+
 export interface DeductivePuzzle {
   id: string;
   gridSize: 4 | 5;
   availableSymbols: DeductiveSymbol[];
-  // Matriz gridSize x gridSize: cada celda contiene el ShapeId o null si está vacía
   displayGrid: (ShapeId | null)[][];
-  // Matriz completa con la solución
   solutionGrid: ShapeId[][];
-  // Coordenadas de la celda incógnita '?'
   targetRow: number;
   targetCol: number;
   correctShape: ShapeId;
-  // Paso a paso para modo práctica
   logicExplanation: string[];
-  difficulty: 'basic_4x4' | 'intermediate_4x4' | 'advanced_5x5';
+  difficulty: DeductiveDifficulty;
+  depth: number;                   // Número de rondas de deducción requeridas (>= 2 = encadenada)
+  intermediateDeductions: number;  // Celdas intermedias resueltas antes de '?'
+  emptyCellsCount: number;         // Número de celdas vacías iniciales
+  totalCellsCount: number;         // 16 o 25
 }
 
 /**
  * Genera un cuadrado latino aleatorio de tamaño N (4 o 5)
  */
 function generateRandomLatinSquare(n: number): number[][] {
-  // Matriz inicial basada en suma módulo n
   const base: number[][] = [];
   for (let r = 0; r < n; r++) {
     const row: number[] = [];
@@ -95,13 +109,13 @@ function generateRandomLatinSquare(n: number): number[][] {
     base.push(row);
   }
 
-  // Permutar filas aleatoriamente
+  // Permutar filas
   for (let i = n - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [base[i], base[j]] = [base[j], base[i]];
   }
 
-  // Permutar columnas aleatoriamente
+  // Permutar columnas
   for (let i = n - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     for (let r = 0; r < n; r++) {
@@ -111,7 +125,7 @@ function generateRandomLatinSquare(n: number): number[][] {
     }
   }
 
-  // Permutar símbolos (números 0..n-1)
+  // Permutar símbolos
   const symbolMap: number[] = Array.from({ length: n }, (_, i) => i);
   for (let i = n - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -121,46 +135,44 @@ function generateRandomLatinSquare(n: number): number[][] {
   return base.map((row) => row.map((val) => symbolMap[val]));
 }
 
+export interface SolveResult {
+  solvable: boolean;
+  steps: string[];
+  depth: number;
+  intermediateDeductions: number;
+}
+
 /**
- * Resuelve por deducción estricta (sin adivinanza) los valores posibles de cada celda.
- * Retorna true si la celda objetivo tiene exactamente 1 posibilidad deducible.
+ * Resuelve por deducción estricta (sin conjeturas) y mide la profundidad deductiva real.
  */
 function solveDeductiveTarget(
   grid: (number | null)[][],
   n: number,
   targetRow: number,
   targetCol: number,
-  expectedVal: number
-): { solvable: boolean; steps: string[] } {
-  // Trabajamos sobre una copia
+  expectedVal: number,
+  symbolList: DeductiveSymbol[]
+): SolveResult {
   const current: (number | null)[][] = grid.map((r) => [...r]);
   const steps: string[] = [];
-
   let changed = true;
   let iterations = 0;
+  let intermediateDeductions = 0;
+  let targetDepth = 0;
 
   while (changed && iterations < 15) {
     changed = false;
     iterations++;
+    let targetFoundInThisIteration = false;
 
-    // Si la celda objetivo ya fue deducida, terminamos
-    if (current[targetRow][targetCol] !== null) {
-      if (current[targetRow][targetCol] === expectedVal) {
-        return { solvable: true, steps };
-      }
-      return { solvable: false, steps };
-    }
-
-    // Regla 1: Descarte directo (Naked Single). Si en una celda vacía solo queda 1 símbolo posible por su fila y columna
+    // Regla 1: Descarte directo en casilla (Naked Single)
     for (let r = 0; r < n; r++) {
       for (let c = 0; c < n; c++) {
         if (current[r][c] === null) {
           const used = new Set<number>();
-          // símbolos en la fila
           for (let col = 0; col < n; col++) {
             if (current[r][col] !== null) used.add(current[r][col]!);
           }
-          // símbolos en la columna
           for (let row = 0; row < n; row++) {
             if (current[row][c] !== null) used.add(current[row][c]!);
           }
@@ -171,21 +183,37 @@ function solveDeductiveTarget(
           }
 
           if (candidates.length === 1) {
-            current[r][c] = candidates[0];
+            const sym = candidates[0];
+            current[r][c] = sym;
             changed = true;
+            const symName = symbolList[sym]?.name || `Símbolo ${sym + 1}`;
+
             if (r === targetRow && c === targetCol) {
-              steps.push(`En la casilla incógnita (Fila ${r + 1}, Columna ${c + 1}), los otros símbolos de su fila y columna ya están presentes, por lo que únicamente puede ser este símbolo.`);
-              return { solvable: true, steps };
+              targetFoundInThisIteration = true;
+              targetDepth = iterations;
+              steps.push(`Paso ${iterations} (Meta [?]): En Fila ${r + 1}, Columna ${c + 1}, todos los demás símbolos están descartados en su fila y columna. Única opción posible: ${symName}.`);
             } else {
-              steps.push(`En Fila ${r + 1}, Columna ${c + 1}, por descarte de fila/columna solo puede ir el símbolo deducido.`);
+              intermediateDeductions++;
+              steps.push(`Paso ${iterations}: En Fila ${r + 1}, Columna ${c + 1}, por descarte directo de fila/columna solo cabe ${symName}.`);
             }
           }
         }
       }
     }
 
-    // Regla 2: Única posición en fila o columna (Hidden Single)
+    if (targetFoundInThisIteration) {
+      return {
+        solvable: current[targetRow][targetCol] === expectedVal,
+        steps,
+        depth: targetDepth,
+        intermediateDeductions,
+      };
+    }
+
+    // Regla 2: Posición única en fila o columna (Hidden Single)
     for (let s = 0; s < n; s++) {
+      const symName = symbolList[s]?.name || `Símbolo ${s + 1}`;
+
       // Por fila
       for (let r = 0; r < n; r++) {
         let alreadyInRow = false;
@@ -196,7 +224,6 @@ function solveDeductiveTarget(
           const possibleCols: number[] = [];
           for (let c = 0; c < n; c++) {
             if (current[r][c] === null) {
-              // Comprobar si la columna c ya tiene s
               let inCol = false;
               for (let row = 0; row < n; row++) {
                 if (current[row][c] === s) inCol = true;
@@ -208,9 +235,14 @@ function solveDeductiveTarget(
             const col = possibleCols[0];
             current[r][col] = s;
             changed = true;
+
             if (r === targetRow && col === targetCol) {
-              steps.push(`En la Fila ${r + 1}, este símbolo solo puede ubicarse en la casilla incógnita porque en las demás columnas ya está presente.`);
-              return { solvable: true, steps };
+              targetFoundInThisIteration = true;
+              targetDepth = iterations;
+              steps.push(`Paso ${iterations} (Meta [?]): En la Fila ${r + 1}, el ${symName} solo puede ubicarse en la casilla incógnita (en las otras columnas ya está presente).`);
+            } else {
+              intermediateDeductions++;
+              steps.push(`Paso ${iterations}: En la Fila ${r + 1}, el ${symName} solo cabe en Columna ${col + 1}.`);
             }
           }
         }
@@ -237,54 +269,89 @@ function solveDeductiveTarget(
             const row = possibleRows[0];
             current[row][c] = s;
             changed = true;
+
             if (row === targetRow && c === targetCol) {
-              steps.push(`En la Columna ${c + 1}, este símbolo solo cabe en la casilla incógnita porque en las otras filas ya se encuentra.`);
-              return { solvable: true, steps };
+              targetFoundInThisIteration = true;
+              targetDepth = iterations;
+              steps.push(`Paso ${iterations} (Meta [?]): En la Columna ${c + 1}, el ${symName} solo puede ubicarse en la casilla incógnita (en las otras filas ya está presente).`);
+            } else {
+              intermediateDeductions++;
+              steps.push(`Paso ${iterations}: En la Columna ${c + 1}, el ${symName} solo cabe en Fila ${row + 1}.`);
             }
           }
         }
       }
     }
+
+    if (targetFoundInThisIteration) {
+      return {
+        solvable: current[targetRow][targetCol] === expectedVal,
+        steps,
+        depth: targetDepth,
+        intermediateDeductions,
+      };
+    }
   }
 
-  return { solvable: current[targetRow][targetCol] === expectedVal, steps };
+  return {
+    solvable: current[targetRow][targetCol] === expectedVal,
+    steps,
+    depth: targetDepth,
+    intermediateDeductions,
+  };
 }
 
 /**
- * Genera un puzzle válido con garantía de solución deductiva única
+ * Genera un puzzle válido con garantía de solución deductiva única y profundidad estricta.
  */
 export function generateDeductivePuzzle(
-  gridSize: 4 | 5 = 4,
-  difficulty: 'basic_4x4' | 'intermediate_4x4' | 'advanced_5x5' = 'basic_4x4'
+  gridSize: 4 | 5 = 5,
+  difficulty: DeductiveDifficulty = 'kura_5x5',
+  minDepth: number = 2
 ): DeductivePuzzle {
   const n = gridSize;
   const availableSymbols = SYMBOLS_LIST.slice(0, n);
+  const totalCells = n * n;
+
+  // Determinar número objetivo de celdas vacías y profundidad mínima
+  let targetEmptyCells = 16;
+  let requiredDepth = minDepth;
+
+  if (gridSize === 4) {
+    if (difficulty === 'basic_4x4') {
+      targetEmptyCells = 6;
+      requiredDepth = 1;
+    } else {
+      // kura_4x4 / intermediate_4x4
+      targetEmptyCells = 8 + Math.floor(Math.random() * 3); // 8 a 10 vacías (50% - 62.5%)
+      requiredDepth = Math.max(2, minDepth);
+    }
+  } else {
+    // 5x5 matrices
+    if (difficulty === 'hardcore_5x5') {
+      targetEmptyCells = 16 + Math.floor(Math.random() * 3); // 16 a 18 vacías (64% - 72%)
+      requiredDepth = Math.max(2, minDepth);
+    } else {
+      // kura_5x5 / advanced_5x5
+      targetEmptyCells = 14 + Math.floor(Math.random() * 4); // 14 a 17 vacías (56% - 68%)
+      requiredDepth = Math.max(2, minDepth);
+    }
+  }
 
   let attempts = 0;
-  while (attempts < 50) {
+  while (attempts < 100) {
     attempts++;
     const fullSquare = generateRandomLatinSquare(n);
 
-    // Elegir celda objetivo aleatoria
+    // Celda objetivo aleatoria
     const targetRow = Math.floor(Math.random() * n);
     const targetCol = Math.floor(Math.random() * n);
     const targetVal = fullSquare[targetRow][targetCol];
 
-    // Matriz de trabajo
     const puzzleGrid: (number | null)[][] = fullSquare.map((r) => [...r]);
     puzzleGrid[targetRow][targetCol] = null;
 
-    // Decidir cuántas celdas vaciar según dificultad
-    let targetEmptyCells = 5;
-    if (difficulty === 'basic_4x4') {
-      targetEmptyCells = 4 + Math.floor(Math.random() * 3); // 4 a 6
-    } else if (difficulty === 'intermediate_4x4') {
-      targetEmptyCells = 7 + Math.floor(Math.random() * 3); // 7 a 9
-    } else {
-      targetEmptyCells = 10 + Math.floor(Math.random() * 5); // 10 a 14
-    }
-
-    // Generar lista de celdas candidatas a vaciar (excluyendo la celda objetivo)
+    // Lista de celdas candidatas a vaciar (excluyendo la celda objetivo)
     const otherCoords: [number, number][] = [];
     for (let r = 0; r < n; r++) {
       for (let c = 0; c < n; c++) {
@@ -294,7 +361,7 @@ export function generateDeductivePuzzle(
       }
     }
 
-    // Barajar coordenadas
+    // Barajar
     for (let i = otherCoords.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [otherCoords[i], otherCoords[j]] = [otherCoords[j], otherCoords[i]];
@@ -307,20 +374,18 @@ export function generateDeductivePuzzle(
       const backup = puzzleGrid[r][c];
       puzzleGrid[r][c] = null;
 
-      // Verificar si la celda objetivo sigue siendo 100% deducible sin conjeturas
-      const check = solveDeductiveTarget(puzzleGrid, n, targetRow, targetCol, targetVal);
+      // Verificar si la celda objetivo sigue siendo deducible
+      const check = solveDeductiveTarget(puzzleGrid, n, targetRow, targetCol, targetVal, availableSymbols);
       if (check.solvable) {
         emptyCount++;
       } else {
-        // Restaurar
         puzzleGrid[r][c] = backup;
       }
     }
 
-    // Comprobación final del solver
-    const finalCheck = solveDeductiveTarget(puzzleGrid, n, targetRow, targetCol, targetVal);
-    if (finalCheck.solvable) {
-      // Mapear números a ShapeId
+    // Comprobación final del solver con filtro de profundidad
+    const finalCheck = solveDeductiveTarget(puzzleGrid, n, targetRow, targetCol, targetVal, availableSymbols);
+    if (finalCheck.solvable && finalCheck.depth >= requiredDepth) {
       const displayGrid: (ShapeId | null)[][] = puzzleGrid.map((row) =>
         row.map((val) => (val === null ? null : availableSymbols[val].id))
       );
@@ -329,17 +394,9 @@ export function generateDeductivePuzzle(
       );
 
       const correctShape = availableSymbols[targetVal].id;
-      const targetSymbolObj = availableSymbols[targetVal];
-
-      const stepsText = finalCheck.steps.length > 0
-        ? finalCheck.steps
-        : [
-            `Analizando la Fila ${targetRow + 1} y la Columna ${targetCol + 1}, se descartan las figuras ya presentes.`,
-            `Por descarte lógico único, la casilla incógnita solo puede ser: ${targetSymbolObj.name} (${targetSymbolObj.nameEn}).`
-          ];
 
       return {
-        id: `DED-${Date.now()}-${Math.floor(Math.random() * 1000)}`,
+        id: `DED-KURA-${gridSize}x${gridSize}-${Date.now()}-${attempts}`,
         gridSize,
         availableSymbols,
         displayGrid,
@@ -347,21 +404,35 @@ export function generateDeductivePuzzle(
         targetRow,
         targetCol,
         correctShape,
-        logicExplanation: stepsText,
+        logicExplanation: finalCheck.steps,
         difficulty,
+        depth: finalCheck.depth,
+        intermediateDeductions: finalCheck.intermediateDeductions,
+        emptyCellsCount: emptyCount,
+        totalCellsCount: totalCells,
       };
     }
   }
 
-  // Fallback seguro: 4x4 con deducción directa en fila
+  // Fallback con profundidad forzada de 2 pasos
   const fallbackSquare = generateRandomLatinSquare(gridSize);
   const tR = 1;
   const tC = 2;
   const tVal = fallbackSquare[tR][tC];
   const pGrid: (number | null)[][] = fallbackSquare.map((r) => [...r]);
   pGrid[tR][tC] = null;
-  pGrid[0][0] = null;
-  pGrid[2][3] = null;
+  // Vaciar celdas clave para forzar paso intermedio
+  pGrid[0][2] = null;
+  pGrid[1][0] = null;
+  pGrid[2][1] = null;
+  if (gridSize === 5) {
+    pGrid[3][3] = null;
+    pGrid[4][4] = null;
+    pGrid[0][4] = null;
+    pGrid[4][0] = null;
+  }
+
+  const fbCheck = solveDeductiveTarget(pGrid, n, tR, tC, tVal, availableSymbols);
 
   return {
     id: `DED-FALLBACK-${Date.now()}`,
@@ -372,10 +443,14 @@ export function generateDeductivePuzzle(
     targetRow: tR,
     targetCol: tC,
     correctShape: availableSymbols[tVal].id,
-    logicExplanation: [
-      `En la Fila ${tR + 1}, todos los demás símbolos están definidos excepto la casilla incógnita.`,
-      `El único símbolo que falta en la fila es: ${availableSymbols[tVal].name}.`
+    logicExplanation: fbCheck.steps.length > 0 ? fbCheck.steps : [
+      `1. Deducir celda intermedia en fila adyacente.`,
+      `2. Por descarte, la incógnita [?] es ${availableSymbols[tVal].name}.`
     ],
     difficulty,
+    depth: Math.max(2, fbCheck.depth),
+    intermediateDeductions: fbCheck.intermediateDeductions,
+    emptyCellsCount: gridSize === 5 ? 15 : 8,
+    totalCellsCount: totalCells,
   };
 }

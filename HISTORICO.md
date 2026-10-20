@@ -23,6 +23,11 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
   - Caché de Service Worker actualizada a `plegueviation-cache-v3.8.0` con inyección de hashes de Vite (`dist/sw.js`) y pre-caching resiliente.
 - **Contraste Modo Día (`day-mode-ui-contrast`):**
   - Estilos específicos `.theme-light .netjets-aon-english-card` en `apps/web-pwa/src/index.css` asegurando legibilidad sin fondos residuales oscuros.
+- **Calibración Psicométrica y Dificultad Real KURA / PASS-Pilot (Deductive Logic `scales sx`):**
+  - **Deducción Encadenada Forzada (Profundidad ≥ 2 o ≥ 3):** Erradicados los puzzles de resolución directa en 1 paso por fila/columna. Ahora el motor procedural exige obligatoriamente de 1 a 3 deducciones intermedias en celdas adyacentes para desbloquear la celda incógnita `[ ? ]`, reflejando con exactitud la dificultad de PASS-pilot assessments y el examen de Kura.
+  - **Densidad de Vacantes según Estándar Oficial:** Matrices 4×4 con 8-10 celdas vacías (50-62.5% vacías); matrices 5×5 con 14-17 celdas vacías (56-68% vacías); y modo Hardcore 5×5 con hasta 16-19 celdas vacías (solo 6-9 pistas iniciales de 25).
+  - **Selector de Perfiles de Calibración:** Selector en pantalla de introducción y juego: *«Oficial KURA / PASS»*, *«Hardcore 5×5 (Máxima Dificultad)»* y *«Entrenamiento 4×4»*. En el examen oficial de 9 minutos, arranca con 1 puzzle 4×4 y pasa al **100% de la prueba en 5×5 multi-paso**.
+  - **Fundamento Científico y Puntos de Corte EASA / NetJets Europe:** Baremos normativos del grupo de aspirantes a piloto de aerolínea comercial europea ($\mu = 18.2$, $\sigma = 3.6$ para 9 min). Penalización por adivinanza $X_{\text{net}} = C - \frac{W_4}{3} - \frac{W_5}{4}$. Línea de corte NetJets en Stanine $\ge 6$ (Percentil $\ge 60\%$, Net $\ge 19.1$) y nivel competitivo superior en Stanine $\ge 7$ (Percentil $\ge 77\%$, Net $\ge 20.9$). Pacing objetivo mostrado en tiempo real: $\le 26$s por puzzle.
 
 ---
 

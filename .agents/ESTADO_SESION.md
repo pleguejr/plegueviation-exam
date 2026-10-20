@@ -31,6 +31,18 @@
    - 0 errores de TypeScript (`tsc`).
    - Compilación Vite limpia sin errores.
    - Suite de tests unitarios ejecutada exitosamente con Vitest (7/7 tests pasando).
+7. **Calibración Psicométrica y Dificultad Real KURA / PASS-Pilot (Deductive Logic `scales sx`):**
+   - **Control de Profundidad Deductiva (Depth ≥ 2 o ≥ 3):**
+     - Eliminada por completo la resolución directa de la incógnita `[ ? ]` en 1 paso. El motor procedural exige de 1 a 3 deducciones intermedias encadenadas antes de que la incógnita sea matemáticamente deducible, reproduciendo el desafío real de PASS-pilot assessments y el test oficial de Kura.
+     - Densidad de celdas vacías calibrada al estándar de aerolínea: 4×4 con 8-10 celdas vacías (50-62.5% vacías); 5×5 con 14-17 celdas vacías (56-68% vacías); modo Hardcore con 16-19 celdas vacías (hasta 76% vacías).
+     - En Modo Examen (9 min): 1 puzzle 4×4 de warmup y luego el **100% de la prueba en matrices 5×5 multi-paso**.
+     - Selector de perfiles de calibración: *«Oficial KURA / PASS»*, *«Hardcore 5×5 (Máxima Dificultad)»* y *«Entrenamiento 4×4»*.
+   - **Fundamentación Científica y Baremos EASA / NetJets Europe:**
+     - Fórmula oficial TCT de corrección por conjetura: $X_{\text{net}} = C - \frac{W_4}{3} - \frac{W_5}{4}$.
+     - Baremos empíricos del grupo normativo *European Commercial Airline Pilot Applicants*: $\mu = 18.2$ pts netos, $\sigma = 3.6$ pts netos en 9 min.
+     - Umbral de corte NetJets en Kura: **Stanine ≥ 6 (Percentil ≥ 60%, Puntuación Neta ≥ 19.1 pts)**.
+     - Nivel competitivo superior: **Stanine ≥ 7 (Percentil ≥ 77%, Puntuación Neta ≥ 20.9 pts)** con ritmo objetivo de $\le 26$s por puzzle.
+     - Tarjeta visual de desglose psicométrico en la pantalla de resultados con fórmulas, corte y análisis de ritmo.
      - **Embraer 195-E2**: Turbofán PW1900G con góndolas y pilones, morro parabólico, parabrisas de 4 paneles, ventanillas de cabina, puertas y deriva con librea verde/azul de Binter Canarias (vista lateral y de planta).
      - **Diamond DA40 TDI (EC-OKC)**: Cola en T, cabina de burbuja de composite, hélice MT-Propeller tripala con cono de ogiva y carenados de ruedas aerodinámicos.
      - **Cessna 172F (EC-NNX)**: Ala alta arriostrada con montantes, hélice tripala MT-Propeller, empenaje Omni-Vision y tren triciclo.

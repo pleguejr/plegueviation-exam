@@ -25,12 +25,17 @@ import {
   DeductivePuzzle, 
   DeductiveSymbol, 
   ShapeId, 
+  DeductiveDifficulty,
   SYMBOLS_LIST, 
   generateDeductivePuzzle 
 } from './AonDeductiveGenerator';
 import { 
   evaluateAonDeductiveScore, 
-  PsychometricResult 
+  PsychometricResult,
+  DEDUCTIVE_NORM_MEAN,
+  DEDUCTIVE_NORM_SD,
+  DEDUCTIVE_STANINE_6_NET,
+  DEDUCTIVE_STANINE_7_NET
 } from './AonPsychometricsNorms';
 
 interface AonDeductiveScreenProps {
@@ -66,6 +71,8 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
   // Estados de navegación: 'intro' | 'playing' | 'results'
   const [gameState, setGameState] = useState<'intro' | 'playing' | 'results'>('intro');
   const [mode, setMode] = useState<'exam' | 'practice'>('exam');
+  // Perfil de dificultad calibrado a KURA y PASS-Pilot
+  const [difficultyProfile, setDifficultyProfile] = useState<'kura_standard' | 'hardcore_5x5' | 'pure_4x4'>('kura_standard');
   
   // Temporizador oficial: 9 minutos (540 segundos)
   const EXAM_DURATION_SECONDS = 9 * 60; // 540s
@@ -147,22 +154,45 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
     } catch {}
   }, [getAudioContext]);
 
-  // Cargar siguiente puzzle
-  const loadNextPuzzle = useCallback((targetLevel: number) => {
-    const size: 4 | 5 = targetLevel <= 5 ? 4 : 5;
-    let diff: 'basic_4x4' | 'intermediate_4x4' | 'advanced_5x5' = 'basic_4x4';
-    if (size === 4 && targetLevel >= 3) diff = 'intermediate_4x4';
-    if (size === 5) diff = 'advanced_5x5';
+  // Cargar siguiente puzzle calibrado a estándares KURA / PASS
+  const loadNextPuzzle = useCallback((targetLevel: number, profileOverride?: 'kura_standard' | 'hardcore_5x5' | 'pure_4x4') => {
+    const activeProfile = profileOverride || difficultyProfile;
+    let size: 4 | 5 = 5;
+    let diff: DeductiveDifficulty = 'kura_5x5';
+    let minDepth = 2;
+
+    if (activeProfile === 'pure_4x4') {
+      size = 4;
+      diff = 'kura_4x4';
+      minDepth = 2;
+    } else if (activeProfile === 'hardcore_5x5') {
+      size = 5;
+      diff = 'hardcore_5x5';
+      minDepth = 2;
+    } else {
+      // kura_standard (Oficial):
+      // Level 1: warmup 4x4 (8-10 vacías, profundidad >= 2)
+      // Level >= 2: 100% 5x5 matrices con 14-17 vacías y profundidad >= 2
+      if (targetLevel === 1) {
+        size = 4;
+        diff = 'kura_4x4';
+        minDepth = 2;
+      } else {
+        size = 5;
+        diff = targetLevel >= 8 ? 'hardcore_5x5' : 'kura_5x5';
+        minDepth = 2;
+      }
+    }
 
     setCurrentGridSize(size);
-    const p = generateDeductivePuzzle(size, diff);
+    const p = generateDeductivePuzzle(size, diff, minDepth);
     setCurrentPuzzle(p);
     setFeedback(null);
     setShowHint(false);
     setDraftMarks({});
     setSelectedCell({ r: p.targetRow, c: p.targetCol }); // Por defecto se enfoca la incógnita [?]
     setStartTime(Date.now());
-  }, []);
+  }, [difficultyProfile]);
 
   // Iniciar partida
   const handleStartGame = (selectedMode: 'exam' | 'practice') => {
@@ -170,7 +200,7 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
     setTimeLeft(EXAM_DURATION_SECONDS);
     setAttempts([]);
     setCurrentLevel(1);
-    setCurrentGridSize(4);
+    setCurrentGridSize(difficultyProfile === 'pure_4x4' ? 4 : (difficultyProfile === 'hardcore_5x5' ? 5 : 4));
     setGameState('playing');
     loadNextPuzzle(1);
   };
@@ -188,8 +218,11 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
       const totalTimeMs = prevAttempts.reduce((acc, a) => acc + a.timeSpentMs, 0);
       const avgTime = total > 0 ? Math.round((totalTimeMs / total / 1000) * 10) / 10 : 0;
       
+      const wrong4x4 = prevAttempts.filter((a) => !a.isCorrect && a.gridSize === 4).length;
+      const wrong5x5 = prevAttempts.filter((a) => !a.isCorrect && a.gridSize === 5).length;
+
       // Evaluación psicométrica estandarizada en grupo normativo de pilotos comerciales
-      const psycho = evaluateAonDeductiveScore(total, correct, wrong, 540);
+      const psycho = evaluateAonDeductiveScore(total, correct, wrong, 540, wrong4x4, wrong5x5);
 
       const summary: SessionSummary = {
         date: new Date().toISOString(),
@@ -570,6 +603,75 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
             </div>
           </div>
 
+          {/* Selector de Nivel de Calibración KURA / PASS */}
+          <div className="p-4 rounded-2xl bg-black/50 border border-amber-500/30 space-y-3">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+              <span className="text-xs font-black text-amber-300 uppercase tracking-wider flex items-center gap-1.5">
+                <Target className="w-4 h-4 text-amber-400" />
+                <span>Calibración de Dificultad (Estándar Oficial KURA / PASS)</span>
+              </span>
+              <span className="text-[10px] font-mono text-emerald-400 font-bold">
+                Profundidad deductiva forzada (sin resolución directa en 1 paso)
+              </span>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+              <button
+                type="button"
+                onClick={() => setDifficultyProfile('kura_standard')}
+                className={`p-3 rounded-xl border text-left transition-all ${
+                  difficultyProfile === 'kura_standard'
+                    ? 'bg-amber-500/20 border-amber-400 text-white shadow-glow-amber ring-1 ring-amber-400'
+                    : 'bg-slate-900/60 border-slate-800 text-slate-400 hover:border-slate-700'
+                }`}
+              >
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-black text-amber-300">Oficial KURA / PASS</span>
+                  {difficultyProfile === 'kura_standard' && <CheckCircle2 className="w-3.5 h-3.5 text-amber-400" />}
+                </div>
+                <p className="text-[11px] text-slate-300 mt-1 leading-relaxed">
+                  1 puzzle 4×4 warmup y luego <strong>100% 5×5 multi-paso</strong> (14-17 celdas vacías, profundidad ≥ 2).
+                </p>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setDifficultyProfile('hardcore_5x5')}
+                className={`p-3 rounded-xl border text-left transition-all ${
+                  difficultyProfile === 'hardcore_5x5'
+                    ? 'bg-rose-500/20 border-rose-400 text-white shadow-glow-rose ring-1 ring-rose-400'
+                    : 'bg-slate-900/60 border-slate-800 text-slate-400 hover:border-slate-700'
+                }`}
+              >
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-black text-rose-300">Hardcore 5×5 (Máx.)</span>
+                  {difficultyProfile === 'hardcore_5x5' && <CheckCircle2 className="w-3.5 h-3.5 text-rose-400" />}
+                </div>
+                <p className="text-[11px] text-slate-300 mt-1 leading-relaxed">
+                  <strong>100% 5×5</strong> con 16-19 celdas vacías (solo 6-9 pistas) y deducción encadenada profunda obligatoria.
+                </p>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setDifficultyProfile('pure_4x4')}
+                className={`p-3 rounded-xl border text-left transition-all ${
+                  difficultyProfile === 'pure_4x4'
+                    ? 'bg-sky-500/20 border-sky-400 text-white shadow-glow-sky ring-1 ring-sky-400'
+                    : 'bg-slate-900/60 border-slate-800 text-slate-400 hover:border-slate-700'
+                }`}
+              >
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-black text-sky-300">Entrenamiento 4×4</span>
+                  {difficultyProfile === 'pure_4x4' && <CheckCircle2 className="w-3.5 h-3.5 text-sky-400" />}
+                </div>
+                <p className="text-[11px] text-slate-300 mt-1 leading-relaxed">
+                  Cuadrículas 4×4 profundas (8-10 celdas vacías, profundidad ≥ 2) para entrenar velocidad de descarte.
+                </p>
+              </button>
+            </div>
+          </div>
+
           {/* Botones de lanzamiento */}
           <div className="flex flex-col sm:flex-row items-center gap-3 pt-2">
             <button
@@ -763,9 +865,41 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
             </div>
           </div>
 
-          <div className="aon-deductive-time-box p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 flex items-center justify-around font-mono">
+          <div className="aon-deductive-time-box p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 flex items-center justify-around font-mono flex-wrap gap-2">
             <span>⏱️ Ritmo medio: <strong>{avgTime}s</strong> / reactivo</span>
-            <span>🎯 Penalización Formula: <strong>-(W / 3)</strong></span>
+            <span>🎯 Pacing objetivo: <strong>≤ 26s</strong></span>
+            <span>📐 Fórmula: <strong>C - (W₄/3) - (W₅/4)</strong></span>
+          </div>
+
+          {/* Desglose Científico de la Puntuación Oficial AON / cut-e */}
+          <div className="p-4 rounded-2xl bg-black/60 border border-slate-700 text-left space-y-3">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-black text-amber-300 uppercase tracking-wider flex items-center gap-1.5">
+                <Brain className="w-4 h-4 text-amber-400" />
+                <span>Fundamento Psicométrico Oficial AON / cut-e (scales sx)</span>
+              </span>
+              <span className="text-[10px] font-mono font-bold text-sky-400">
+                Grupo Normativo: Airline Pilot Applicants EASA
+              </span>
+            </div>
+            <div className="text-[11px] text-slate-300 space-y-2 leading-relaxed">
+              <p>
+                • <strong>Fórmula de Corrección por Adivinanza (TCT Formula Scoring):</strong> Se aplica la penalización oficial de AON / cut-e donde cada fallo resta según las opciones disponibles (<span className="font-mono text-amber-300 font-bold">W₄ / 3</span> en 4×4 y <span className="font-mono text-amber-300 font-bold">W₅ / 4</span> en 5×5). Adivinar a ciegas tiene un valor esperado de 0 puntos netos.
+              </p>
+              <p>
+                • <strong>Baremo Científico de Aspirantes a Piloto de Aerolínea:</strong> Baremos empíricos oficiales de <em>European Commercial Airline Pilot Applicants</em> (ATPL/CPL) para el test estándar de 9 minutos: Media <span className="font-mono text-sky-300 font-bold">µ = {DEDUCTIVE_NORM_MEAN}</span> puntos netos, Desviación típica <span className="font-mono text-sky-300 font-bold">σ = {DEDUCTIVE_NORM_SD}</span>.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1 font-mono text-[10px]">
+                <div className="p-2 rounded-lg bg-slate-900 border border-slate-800">
+                  <span className="text-amber-400 font-bold block">Umbral Mínimo Apto (NetJets):</span>
+                  <span>Stanine ≥ 6 (Percentil ≥ 60%) ➔ <strong>≥ {DEDUCTIVE_STANINE_6_NET} pts netos</strong></span>
+                </div>
+                <div className="p-2 rounded-lg bg-slate-900 border border-slate-800">
+                  <span className="text-emerald-400 font-bold block">Nivel Competitivo Superior:</span>
+                  <span>Stanine ≥ 7 (Percentil ≥ 77%) ➔ <strong>≥ {DEDUCTIVE_STANINE_7_NET} pts netos</strong></span>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Acciones */}
@@ -841,6 +975,54 @@ export const AonDeductiveScreen: React.FC<AonDeductiveScreenProps> = ({ onBackTo
       {/* Contenedor Principal del Tablero */}
       <div className="aon-deductive-grid-card bg-gradient-to-br from-[#0c1c3d] via-[#09152b] to-[#071120] border border-sky-500/30 rounded-3xl p-4 sm:p-6 space-y-5 shadow-2xl flex flex-col items-center">
         
+        {/* Barra de Complejidad y Profundidad del Puzzle */}
+        <div className="w-full flex items-center justify-between gap-2 flex-wrap pb-2 border-b border-sky-500/20 text-[10px] font-mono">
+          <div className="flex items-center gap-1.5 flex-wrap">
+            <span className="px-2 py-0.5 rounded font-black bg-sky-500/20 text-sky-300 border border-sky-500/30">
+              Matriz {currentGridSize}×{currentGridSize}
+            </span>
+            <span className="px-2 py-0.5 rounded font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">
+              Profundidad: {currentPuzzle.depth} pasos ({currentPuzzle.intermediateDeductions} celdas previas)
+            </span>
+            <span className="px-2 py-0.5 rounded font-bold bg-purple-500/20 text-purple-300 border border-purple-500/30">
+              {currentPuzzle.emptyCellsCount}/{currentPuzzle.totalCellsCount} vacías ({Math.round((currentPuzzle.emptyCellsCount / currentPuzzle.totalCellsCount) * 100)}%)
+            </span>
+          </div>
+
+          {mode === 'practice' && (
+            <div className="flex items-center gap-1">
+              <button
+                type="button"
+                onClick={() => {
+                  setDifficultyProfile('kura_standard');
+                  loadNextPuzzle(currentLevel, 'kura_standard');
+                }}
+                className={`px-2 py-0.5 rounded text-[10px] font-bold transition-all ${
+                  difficultyProfile === 'kura_standard'
+                    ? 'bg-amber-500 text-slate-950 font-black'
+                    : 'bg-slate-800 text-slate-400 hover:text-white'
+                }`}
+              >
+                KURA Oficial
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setDifficultyProfile('hardcore_5x5');
+                  loadNextPuzzle(currentLevel, 'hardcore_5x5');
+                }}
+                className={`px-2 py-0.5 rounded text-[10px] font-bold transition-all ${
+                  difficultyProfile === 'hardcore_5x5'
+                    ? 'bg-rose-500 text-white font-black'
+                    : 'bg-slate-800 text-slate-400 hover:text-white'
+                }`}
+              >
+                Hardcore 5×5
+              </button>
+            </div>
+          )}
+        </div>
+
         {/* Cabecera del Tablero */}
         <div className="w-full flex items-center justify-between">
           <div className="text-left space-y-0.5">
