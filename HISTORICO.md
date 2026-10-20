@@ -7,6 +7,19 @@ Registro cronológico y técnico de la evolución de la plataforma **Plegueviati
 ## 🚀 Versión Actual: v3.8.0 (2026-10-20)
 
 ### 🇬🇧 Expresiones en Inglés del Test Psicotécnico & Actualización NetJets Stage 2
+- **Enfoque Directo en Traducción y Significado en Español:**
+  - Reformuladas las 25 preguntas del banco `banks/netjets-interview/expresiones-ingles-psicotecnico/netjets_eng_psychometrics.json` para preguntar de forma directa, inequívoca y pedagógica por la **traducción exacta y el significado en español** de cada afirmación psicométrica compleja en inglés.
+  - Opciones de respuesta en español concisas y equilibradas (A: 6, B: 6, C: 6, D: 7) con distractores plausibles derivados de falsos amigos y malas interpretaciones comunes.
+  - Explicaciones estructuradas conservando la traducción literal, constructo Big Five (Agreeableness, Conscientiousness, Neuroticism, Extraversion, Openness), faceta IPIP-NEO, perfil CRM en cabina de vuelo y respuesta psicométrica recomendada (1 a 5 en escala Likert).
+- **Nuevo Mazo de Flashcards de Expresiones en Inglés (25 Tarjetas):**
+  - Creado mazo de estudio interactivo en `FlashcardScreen.tsx` bajo la categoría especial `custom_english_expressions` (*«🇬🇧 Expresiones en Inglés Psicotécnico (25)»*).
+  - Integrado en el selector de mazos especiales y con badge visual temático *«🇬🇧 Inglés / Traducción»*.
+  - Modo dual en el anverso: *Recuerdo Activo Puro* (oculta opciones para forzar evocación mental de la traducción antes de voltear) y *Con Opciones* (para repasar reconocimiento).
+  - Al voltear, muestra de forma destacada la traducción correcta en español y la explicación psicométrica completa con autoevaluación (Difícil / Regular / Dominada).
+- **Botón Dual de Acceso Rápido en el Dashboard:**
+  - En la tarjeta del Dashboard de NetJets Stage 2 se incorporan dos botones de acceso con un solo clic:
+    - `📖 Modo Test (25)`: Inicia el test de evaluación de traducción y significado.
+    - `🗂️ Flashcards (25)`: Abre inmediatamente el mazo de tarjetas de memoria espaciada.
 - **Corrección de Nomenclatura NetJets Stage 2:**
   - Actualizada la denominación en toda la suite de la PWA: los simuladores psicotécnicos de AON / cut-e y las evaluaciones de razonamiento y personalidad corresponden al **Stage 2** del proceso de selección de NetJets Europe.
   - Actualizado el banner superior, tarjetas del dashboard, encabezados de sección y el simulador de multitarea.

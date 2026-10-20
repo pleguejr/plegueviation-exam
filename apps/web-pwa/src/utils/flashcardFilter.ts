@@ -6,7 +6,7 @@ const NUMERICAL_STEM_REGEX = /(cu[aá]l es (la velocidad|el peso|la masa|la alti
 const NUMERICAL_SPEED_REGEX = /\b(V1|VR|V2|VREF|VAPP|VFE|VLE|VLO|VNE|VNO|VMO|MMO|VMCA|VMCG|VX|VY|VXSE|VYSE|VS|VS0|VS1|VSR)\b/i;
 
 // Expresiones regulares para detección de siglas, acrónimos y mnemónicos
-const ACRONYM_STEM_REGEX = /\b(siglas?|acr[oó]nimo|significa|significan|definici[oó]n de|concepto de|mnem[oó]nico|abreviatura|stands for|significado de)\b/i;
+const ACRONYM_STEM_REGEX = /\b(siglas?|acr[oó]nimo|significa|significan|definici[oó]n de|concepto de|mnem[oó]nico|abreviatura|stands for|significado de|traducci[oó]n)\b/i;
 const KNOWN_ACRONYMS_REGEX = /\b(RETSE|E-DALTA|IMFLOCC|TELSI|MEANA|TWIN|NITS|CDFA|DDA|NPA|LPV|LVO|LVTO|LVP|AWO|RVR|MEL|CDL|MMEL|HIL|NOTOC|DGR|LRBL|AVSEC|SMS|MOR|ASR|CSR|CIAIAC|SERA|SAR|PBE|FDM|SPI|ALOSP|RVSM|RFFS|TCAS|TAWS|EGPWS|FADEC|APU|GPU|ASU|MTOW|MLW|MZFW|ZFW|TOW|LW|OEW|DOW|VMC|IMC|SVFR|VFR|IFR|CTR|CTA|TMA|ATZ|FIR|UIR|NOTAM|AIP|AIC|AIRAC|ATIS|VOLMET|METAR|TAF|SIGMET|AIRMET|PIREP|EASA|AESA|OACI|ICAO|FAA|FTL|FDP|WOCL|LMA|CAMO|CPDLC|ADS-B|ADS-C|SSR|PSR|IFF|DME|VOR|NDB|ADF|ILS|MLS|GLS|GBAS|SBAS|WAAS|EGNOS|ELT)\b/i;
 
 /**
@@ -47,9 +47,13 @@ export function isAcronymQuestion(question: Question): boolean {
 }
 
 /**
- * Determina si una pregunta es elegible para el Modo Flashcards (Numérica O Siglas/Acrónimos).
+ * Determina si una pregunta es elegible para el Modo Flashcards (Numérica, Siglas/Acrónimos o Expresiones de Inglés).
  */
 export function isFlashcardEligible(question: Question): boolean {
+  if (!question) return false;
+  if (question.id?.startsWith('NETJETS-ENG-') || question._subtopic === 'expresiones-ingles-psicotecnico') {
+    return true;
+  }
   return isNumericalQuestion(question) || isAcronymQuestion(question);
 }
 
@@ -70,6 +74,9 @@ export function getFlashcardType(question: Question): 'numerical' | 'acronym' | 
  * Retorna metadatos visuales (etiqueta, icono, colores) para la tarjeta de memoria.
  */
 export function getFlashcardBadge(question: Question): { label: string; type: 'numerical' | 'acronym' | 'both' | 'concept' } {
+  if (question?.id?.startsWith('NETJETS-ENG-') || question?._subtopic === 'expresiones-ingles-psicotecnico') {
+    return { label: '🇬🇧 Inglés / Traducción', type: 'concept' };
+  }
   const type = getFlashcardType(question);
   if (type === 'both') {
     return { label: '🔢 Dato Numérico & Sigla', type: 'both' };
@@ -93,7 +100,7 @@ export function filterFlashcards(
   allowedQuestionIds?: string[]
 ): Question[] {
   return questions.filter((q) => {
-    // 0. Filtro de IDs permitidos específicos (ej. Típicas de Comandante)
+    // 0. Filtro de IDs permitidos específicos (ej. Típicas de Comandante, Expresiones en Inglés)
     if (allowedQuestionIds && allowedQuestionIds.length > 0) {
       if (!allowedQuestionIds.includes(q.id)) {
         return false;
@@ -101,7 +108,7 @@ export function filterFlashcards(
     }
 
     // 1. Filtro de Categoría si está especificada
-    if (category && category !== 'all' && category !== 'custom_tipicas' && category !== 'custom_official' && category !== 'custom') {
+    if (category && category !== 'all' && !category.startsWith('custom')) {
       if (q._category !== category && q.subject_id !== category) {
         return false;
       }

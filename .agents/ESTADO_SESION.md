@@ -7,31 +7,38 @@
 - **Total de reactivos compilados:** 2.287 preguntas activas (13 excluidas en `deleted_questions.json`)
 
 ## ✅ Trabajos completados en esta sesión
-1. **Actualización de Terminología NetJets (Stage 1 ➔ Stage 2):**
+1. **Reorientación del Banco de Expresiones en Inglés a Traducción y Significado Directo:**
+   - Reformulado el 100% del banco `banks/netjets-interview/expresiones-ingles-psicotecnico/netjets_eng_psychometrics.json` (25 preguntas):
+     - Enunciados enfocados directamente en la traducción exacta y significado en español: *«En el test psicotécnico de personalidad en inglés (IPIP-NEO / cut-e), ¿cuál es la traducción y significado correcto en español de la afirmación: «...»?»*.
+     - Opciones A, B, C, D limpias, plausibles y equilibradas (6/6/6/7) con expresiones comunes (*«on a whim»*, *«soft-hearted»*, *«seldom get mad»*, *«down in the dumps»*, *«coddle»*, *«splurge»*, *«wary of others»*, etc.).
+     - Explicación estructurada conservando la traducción literal, constructo IPIP-NEO Big Five, subfaceta, relevancia CRM para tripulación y orientación de respuesta psicométrica recomendada (1 a 5).
+2. **Nuevo Mazo de Flashcards de Expresiones en Inglés (25 Tarjetas):**
+   - Integrado en `FlashcardScreen.tsx` bajo la categoría especial `custom_english_expressions` con título *«🇬🇧 Expresiones en Inglés Psicotécnico (25)»*.
+   - Añadido en el selector desplegable de mazos especiales (`<optgroup label="⭐ Mazos Especiales">`).
+   - Insignia visual propia (`getFlashcardBadge`): *«🇬🇧 Inglés / Traducción»*.
+   - Compatible con modo de recuerdo activo puro (ocultando opciones en el anverso para evocar mentalmente el significado de la expresión) y modo con opciones.
+3. **Acceso Dual en el Dashboard (Stage 2 NetJets):**
+   - Tarjeta de Stage 2 en el Dashboard actualizada con dos botones de acción directa:
+     - `📖 Modo Test (25)`: Lanza el examen de práctica para poner a prueba las traducciones.
+     - `🗂️ Flashcards (25)`: Abre inmediatamente el mazo de tarjetas de memoria con repetición espaciada y recuerdo activo.
+   - Ajuste de contraste para modo claro (`.theme-light .netjets-aon-english-card button`) cumpliendo estrictamente con `day-mode-ui-contrast`.
+4. **Actualización de Terminología NetJets (Stage 1 ➔ Stage 2):**
    - Corregida la denominación oficial del proceso de selección de NetJets Europe en la interfaz de la PWA:
      - Banner superior del Dashboard: *«NetJets Stage 2 • Tests Psicotécnicos AON / cut-e & Expresiones»*.
      - Subtítulo del panel: *«Simuladores Oficiales AON (Deductive Logic & Multitasking) y Expresiones en Inglés»*.
      - Encabezado de sección: *«Stage 2: AON / cut-e Aptitude, Reasoning & Psychometrics»* y badge *«NetJets Pilot Selection Stage 2»*.
      - Simulador Multitarea (`AonMultitaskingScreen.tsx`): actualizado a *«Stage 2 NetJets Europe»*.
-2. **Nuevo Banco de Expresiones Psicotécnicas en Inglés (IPIP-NEO / PILOT CRM):**
-   - Creado el banco `banks/netjets-interview/expresiones-ingles-psicotecnico/netjets_eng_psychometrics.json` con 25 preguntas psicométricas de alta fidelidad basadas en el documento `manuales/INGLES/English expressions kura.docx`:
-     - Reactivos cubren expresiones complejas como: *\"on a whim\"*, *\"soft-hearted\"*, *\"seldom get mad\"*, *\"keep in the background\"*, *\"down in the dumps\"*, *\"coddle\"*, *\"wary of others\"*, *\"get back at others\"*, *\"splurge\"*, *\"overindulge\"*, etc.
-     - Cada pregunta analiza: traducción literal, constructo Big Five (Agreeableness, Conscientiousness, Neuroticism, Extraversion, Openness), subfaceta IPIP-NEO, implicación CRM en cabina multipiloto y baremo Likert óptimo de 1 a 5 para el proceso de selección de aerolínea.
-     - Distribución rigurosamente balanceada de opciones correctas: A (6), B (6), C (6), D (7) con longitud simétrica (±15%) y distractores plausibles sin pistas obvias.
-3. **Integración en la UI y Presets de Configuración:**
-   - Añadida tarjeta interactiva directa en el grid del Dashboard (*«Expresiones en Inglés (Test Psicotécnico)»*) y botón de acceso rápido en el banner superior (*«Expresiones Inglés (25)»*).
-   - Añadido preset dedicado en el modal de configuración de exámenes (`ExamConfigModal.tsx`): botón *«NetJets Stage 2»* que preselecciona la categoría y permite elegir el subtema granularmente en el acordeón interactivo.
-4. **Garantía 100% Offline-First en la PWA:**
+5. **Garantía 100% Offline-First en la PWA:**
    - Compilación exitosa del catálogo completo a `apps/web-pwa/public/banks/all_questions.json` (2.287 preguntas) y `manifest.json`.
    - Service Worker actualizado a la caché versionada `plegueviation-cache-v3.8.0`.
-   - Inyección automática por Vite de los nuevos bundles JS/CSS generados (`index-DNkoMajv.js`, `index-BAWR2ifm.css`) y recursos críticos en `dist/sw.js` con pre-cacheo atómico en segundo plano.
-5. **Cumplimiento de Contraste Modo Día (`day-mode-ui-contrast`):**
-   - Agregada regla `.theme-light .netjets-aon-english-card` en `apps/web-pwa/src/index.css` garantizando legibilidad perfecta y contraste superior sobre fondos claros.
-6. **Verificación Técnica:**
+   - Inyección automática por Vite de los nuevos bundles JS/CSS generados y recursos críticos en `dist/sw.js` con pre-cacheo atómico en segundo plano.
+6. **Cumplimiento de Contraste Modo Día (`day-mode-ui-contrast`):**
+   - Agregada regla `.theme-light .netjets-aon-english-card` y botones asociados en `apps/web-pwa/src/index.css` garantizando legibilidad y contraste superior sobre fondos claros.
+7. **Verificación Técnica:**
    - 0 errores de TypeScript (`tsc`).
-   - Compilación Vite limpia sin errores.
+   - Compilación Vite limpia sin errores (`npm --prefix apps/web-pwa run build`).
    - Suite de tests unitarios ejecutada exitosamente con Vitest (7/7 tests pasando).
-7. **Calibración Psicométrica y Dificultad Real KURA / PASS-Pilot (Deductive Logic `scales sx`):**
+8. **Calibración Psicométrica y Dificultad Real KURA / PASS-Pilot (Deductive Logic `scales sx`):**
    - **Control de Profundidad Deductiva (Depth ≥ 2 o ≥ 3):**
      - Eliminada por completo la resolución directa de la incógnita `[ ? ]` en 1 paso. El motor procedural exige de 1 a 3 deducciones intermedias encadenadas antes de que la incógnita sea matemáticamente deducible, reproduciendo el desafío real de PASS-pilot assessments y el test oficial de Kura.
      - Densidad de celdas vacías calibrada al estándar de aerolínea: 4×4 con 8-10 celdas vacías (50-62.5% vacías); 5×5 con 14-17 celdas vacías (56-68% vacías); modo Hardcore con 16-19 celdas vacías (hasta 76% vacías).

@@ -175,6 +175,12 @@ export const Dashboard: React.FC<DashboardProps> = ({
     return questions.filter((q) => q._category === 'netjets-interview');
   }, [questions]);
 
+  const englishExpressionsQuestions = useMemo(() => {
+    return questions.filter(
+      (q) => q.id.startsWith('NETJETS-ENG-') || q._subtopic === 'expresiones-ingles-psicotecnico'
+    );
+  }, [questions]);
+
   const netjetsStats = useMemo(() => {
     let answered = 0;
     let correct = 0;
@@ -1416,37 +1422,60 @@ export const Dashboard: React.FC<DashboardProps> = ({
             </button>
 
             {/* Card 3: Expresiones en Inglés del Test Psicotécnico (IPIP-NEO / PILOT CRM) */}
-            <button
-              type="button"
-              onClick={() => onStartConfiguredExam({
-                category: 'netjets-interview',
-                subtopics: ['expresiones-ingles-psicotecnico'],
-                mode: 'practice',
-                strategy: 'random',
-                count: 25,
-              })}
-              className="netjets-aon-english-card p-4 rounded-2xl bg-gradient-to-br from-[#0c1a2e] to-[#0d1527] hover:from-[#132845] hover:to-[#17223b] border-2 border-sky-500/50 hover:border-sky-400 text-left transition-all group flex flex-col justify-between shadow-xl active:scale-98"
+            <div
+              className="netjets-aon-english-card p-4 rounded-2xl bg-gradient-to-br from-[#0c1a2e] to-[#0d1527] border-2 border-sky-500/50 hover:border-sky-400 text-left transition-all flex flex-col justify-between shadow-xl"
             >
               <div>
                 <div className="flex items-center justify-between mb-2">
                   <span className="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-sky-500/20 text-sky-300 border border-sky-500/40 flex items-center gap-1">
                     <BookOpen className="w-3.5 h-3.5 text-sky-400" />
-                    <span>25 REACTIVOS • IPIP-NEO & CRM</span>
+                    <span>25 REACTIVOS • TRADUCCIÓN & SIGNIFICADO</span>
                   </span>
-                  <ArrowRight className="w-4 h-4 text-sky-400 group-hover:translate-x-1 transition-transform" />
+                  <span className="text-[10px] font-mono text-sky-400 font-bold px-2 py-0.5 rounded-md bg-sky-500/10 border border-sky-500/30">
+                    KURA / NETJETS
+                  </span>
                 </div>
-                <h4 className="text-sm font-black text-white group-hover:text-sky-300 transition-colors">
+                <h4 className="text-sm font-black text-white">
                   Expresiones en Inglés (Test Psicotécnico)
                 </h4>
                 <p className="text-xs text-slate-300 mt-1.5 leading-relaxed">
-                  25 expresiones complejas y modismos del cuestionario de personalidad (<em className="text-sky-300">"on a whim"</em>, <em className="text-sky-300">"soft-hearted"</em>, <em className="text-sky-300">"seldom get mad"</em>, <em className="text-sky-300">"down in the dumps"</em>, <em className="text-sky-300">"coddle"</em>). Con traducción literal, dimensión Big Five y orientación psicométrica recomendada.
+                  25 expresiones complejas y modismos del cuestionario de personalidad (<em className="text-sky-300">"on a whim"</em>, <em className="text-sky-300">"soft-hearted"</em>, <em className="text-sky-300">"seldom get mad"</em>, <em className="text-sky-300">"down in the dumps"</em>, <em className="text-sky-300">"coddle"</em>). Aprende su traducción exacta en español, contexto y orientación CRM/psicométrica.
                 </p>
               </div>
-              <div className="flex items-center justify-between mt-3 pt-2.5 border-t border-sky-500/20 text-[11px] font-bold text-sky-400">
-                <span>📖 Entrenar Banco de Expresiones</span>
-                <span className="text-[10px] font-mono text-slate-400">25 preguntas</span>
+
+              {/* Botones de acción dual: Test y Flashcards */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-3 pt-2.5 border-t border-sky-500/20">
+                <button
+                  type="button"
+                  onClick={() => onStartConfiguredExam({
+                    category: 'netjets-interview',
+                    subtopics: ['expresiones-ingles-psicotecnico'],
+                    mode: 'practice',
+                    strategy: 'random',
+                    count: 25,
+                  })}
+                  className="px-3 py-2 rounded-xl bg-sky-600/30 hover:bg-sky-600/50 text-sky-200 border border-sky-500/40 text-xs font-black flex items-center justify-center gap-1.5 transition-all active:scale-95 shadow-sm"
+                  title="Practicar el banco de preguntas tipo test sobre traducciones"
+                >
+                  <BookOpen className="w-3.5 h-3.5 text-sky-300" />
+                  <span>📖 Modo Test (25)</span>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => onStartFlashcards({
+                    category: 'custom_english_expressions',
+                    questionIds: englishExpressionsQuestions.map((q) => q.id),
+                    title: '🇬🇧 Expresiones en Inglés Psicotécnico (25)'
+                  })}
+                  className="px-3 py-2 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/40 text-xs font-black flex items-center justify-center gap-1.5 transition-all active:scale-95 shadow-sm"
+                  title="Estudiar en modo Flashcards con recuerdo activo y repetición espaciada"
+                >
+                  <Zap className="w-3.5 h-3.5 text-amber-400 fill-current" />
+                  <span>🗂️ Flashcards (25)</span>
+                </button>
               </div>
-            </button>
+            </div>
           </div>
         </div>
       </div>

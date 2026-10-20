@@ -70,7 +70,9 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
   const [activeQuestionIds, setActiveQuestionIds] = useState<string[] | undefined>(initialQuestionIds);
   const [deckCustomTitle, setDeckCustomTitle] = useState<string | undefined>(initialTitle);
   const [selectedCategory, setSelectedCategory] = useState<string>(
-    initialQuestionIds && initialQuestionIds.length > 0 ? 'custom_tipicas' : initialCategory
+    initialQuestionIds && initialQuestionIds.length > 0
+      ? (initialCategory && initialCategory !== 'all' ? initialCategory : 'custom_tipicas')
+      : initialCategory
   );
   const [filterType, setFilterType] = useState<'all' | 'numerical' | 'acronym'>('all');
   const [studyMode, setStudyMode] = useState<'pure_recall' | 'with_options'>('pure_recall');
@@ -145,7 +147,12 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
   }, [combinedPool, selectedCategory, filterType, batchSize, activeQuestionIds]);
 
   const handleCategoryChange = (newCat: string) => {
-    if (newCat === 'custom_all_tables') {
+    if (newCat === 'custom_english_expressions') {
+      const engIds = questions.filter((q) => q.id.startsWith('NETJETS-ENG-') || q._subtopic === 'expresiones-ingles-psicotecnico').map((q) => q.id);
+      setActiveQuestionIds(engIds);
+      setDeckCustomTitle('🇬🇧 Expresiones en Inglés Psicotécnico (25)');
+      setSelectedCategory('custom_english_expressions');
+    } else if (newCat === 'custom_all_tables') {
       const tableCards = getAllTableFlashcards().map((q) => q.id);
       setActiveQuestionIds(tableCards);
       setDeckCustomTitle('📊 Todas las Tablas Operativas');
@@ -503,6 +510,7 @@ export const FlashcardScreen: React.FC<FlashcardScreenProps> = ({
                 <option value="custom_ftl_rffs">⏱️ FTL, RFFS & Normativa MOA</option>
               </optgroup>
               <optgroup label="⭐ Mazos Especiales">
+                <option value="custom_english_expressions">🇬🇧 Expresiones Inglés Psicotécnico (25)</option>
                 <option value="custom_tipicas">⭐ Típicas Comandante (100)</option>
                 <option value="custom_official">🎯 Examen Oficial 2026 (25)</option>
               </optgroup>
